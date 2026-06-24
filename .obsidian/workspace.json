@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Partnership_Agent/Databases/Merk & Bedrijf Database.md",
+                "file": "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Merk & Bedrijf Database"
+              "title": "Evaluatiecriteria"
             }
           }
         ]
@@ -183,12 +183,14 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
-    "02_Partnership_Agent/Databases/Retailer Database.md",
-    "02_Partnership_Agent/Databases/Merk & Bedrijf Database.md",
-    "02_Partnership_Agent/Databases/Influencer Database.md",
     "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
-    "02_Partnership_Agent/Operationeel/Pipeline Tracker.md",
+    "02_Partnership_Agent/Operationeel/Outreach Templates.md",
+    "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",
     "02_Partnership_Agent/Operationeel/Actieve Samenwerkingen.md",
+    "02_Partnership_Agent/Databases/Retailer Database.md",
+    "02_Partnership_Agent/Databases/Influencer Database.md",
+    "02_Partnership_Agent/Databases/Merk & Bedrijf Database.md",
+    "02_Partnership_Agent/Operationeel/Pipeline Tracker.md",
     "01_Content_Agent/Copy & Tekst/Copy Bank.md",
     "01_Content_Agent/Copy & Tekst/CTA Bibliotheek.md",
     "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
@@ -197,8 +199,6 @@
     "01_Content_Agent/Strategie & Planning/Content Pillars.md",
     "01_Content_Agent/Strategie & Planning/Content Kalender Template.md",
     "01_Content_Agent/Strategie & Planning/Content Strategie.md",
-    "02_Partnership_Agent/Operationeel/Outreach Templates.md",
-    "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",
     "00_Brand_Coretest_submap.md",
     "Naamloos.canvas",
     "_test_uri.md",

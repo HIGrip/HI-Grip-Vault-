@@ -78,7 +78,7 @@ Referentie-accounts om reacties te scannen:
 
 - Tennis: @timtopspin
 - Padel: @menno.nolten · @jospadel
-- Voetbal: @finnpicard_ · @iamyasinflits · @abelfreestylevoetbal
+- Voetbal: 
 - Rugby: @rugby.nederland · @ereklasserugby
 - Basketball: @3x3nl · @basketballnederland
 

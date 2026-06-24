@@ -45,27 +45,27 @@ python C:\Users\lars\create_influencer_list.py
 
 ### Voetbal
 
-| Kanaal | Zoektermen |
-|---|---|
+| Kanaal             | Zoektermen                                                                                |
+| ------------------ | ----------------------------------------------------------------------------------------- |
 | Instagram hashtags | #voetbalnederland · #skillsnl · #zaalvoetbal · #futsalnl · #pannavoetbal · #straatvoetbal |
-| TikTok | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland |
-| Slimste plek | Kijk bij comments op @abelfreestylevoetbal content |
+| TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |
+| Slimste plek       | Kijk bij comments op @abelfreestylevoetbal content                                        |
 
 ### Rugby
 
-| Kanaal | Zoektermen |
-|---|---|
-| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife |
-| TikTok | rugby nederland vlog · rugby training nl · rugby speler |
-| Slimste plek | Kijk bij @rugby.nederland / @ereklasserugby — kleine creators die reageren |
+| Kanaal             | Zoektermen                                                                 |
+| ------------------ | -------------------------------------------------------------------------- |
+| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife                      |
+| TikTok             | rugby nederland vlog · rugby training nl · rugby speler                    |
+| Slimste plek       | Kijk bij @rugby.nederland / @ereklasserugby — kleine creators die reageren |
 
 ### Basketball
 
-| Kanaal | Zoektermen |
-|---|---|
-| Instagram hashtags | #basketballnl · #dutchhoops · #streetballnl · #3x3nl |
-| TikTok | basketball nederland · streetball nl · 3x3 basketball vlog |
-| Slimste plek | Kijk bij @3x3nl volgers — actieve kleine creators |
+| Kanaal             | Zoektermen                                                 |
+| ------------------ | ---------------------------------------------------------- |
+| Instagram hashtags | #basketballnl · #dutchhoops · #streetballnl · #3x3nl       |
+| TikTok             | basketball nederland · streetball nl · 3x3 basketball vlog |
+| Slimste plek       | Kijk bij @3x3nl volgers — actieve kleine creators          |
 
 ---
 

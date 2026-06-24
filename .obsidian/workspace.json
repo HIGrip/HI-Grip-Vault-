@@ -11,10 +11,14 @@
             "id": "f90726eea62d6631",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Grafiek weergave"
+              "type": "markdown",
+              "state": {
+                "file": "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Partnership Voorwaarden Template"
             }
           }
         ]
@@ -179,12 +183,15 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "02_Partnership_Agent/Operationeel/Outreach Templates.md",
+    "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",
+    "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
+    "00_Brand_Coretest_submap.md",
+    "Naamloos.canvas",
     "02_Partnership_Agent/Operationeel/Actieve Samenwerkingen.md",
     "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
-    "00_Brand_Coretest_submap.md",
     "_test_uri.md",
     "Naamloos.md",
-    "Naamloos.canvas",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "Socials - HÏ Grip.pdf",
@@ -202,15 +209,11 @@
     "01_Content_Agent/Visuele Productie/Video Productie Checklist.md",
     "01_Content_Agent/Visuele Productie/Editing Stijl Gids Video.md",
     "02_Partnership_Agent/Databases/Influencer Database.md",
-    "02_Partnership_Agent/Operationeel/Outreach Templates.md",
     "01_Content_Agent/Visuele Productie/Template Overzicht.md",
     "01_Content_Agent/Strategie & Planning/Platform Richtlijnen.md",
     "01_Content_Agent/Visuele Productie/Brand Sound.md",
-    "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
     "02_Partnership_Agent/Operationeel/Pipeline Tracker.md",
-    "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",
     "02_Partnership_Agent/Strategie/Ideale Partner Profiel.md",
-    "02_Partnership_Agent/Strategie/Partnership Strategie.md",
     "01_Content_Agent/Copy & Tekst/Tekst-overlay Gids.md.tmp.10076.7fff80624b33",
     "01_Content_Agent/Visuele Productie/Tekst-overlay Gids.md.tmp.10076.93c808d43b08",
     "01_Content_Agent/Visuele Productie/Geluidseffecten Bibliotheek.md.tmp.10076.1e4a85976895",

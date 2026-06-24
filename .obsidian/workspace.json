@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00_Brand_Coretest_submap.md",
+                "file": "02_Partnership_Agent/Operationeel/Actieve Samenwerkingen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_Brand_Coretest_submap"
+              "title": "Actieve Samenwerkingen"
             }
           }
         ]
@@ -177,11 +177,15 @@
       "daily-notes:Open de notitie van vandaag": false,
       "templates:Sjabloon invoegen": false,
       "command-palette:Open opdrachtenpaneel": false,
-      "bases:Nieuwe basis maken": false
+      "bases:Nieuwe basis maken": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
+    "02_Partnership_Agent/Operationeel/Actieve Samenwerkingen.md",
+    "00_Brand_Coretest_submap.md",
     "_test_uri.md",
     "Naamloos.md",
     "Naamloos.canvas",
@@ -198,7 +202,6 @@
     "01_Content_Agent/Copy & Tekst/Hashtag Bibliotheek.md",
     "01_Content_AgentStrategie & Planning",
     "01_Content_AgentStrategie+&+Planning",
-    "00_Brand_Coretest_submap.md",
     "01_Content_Agent/Copy & Tekst/Copy Bank.md",
     "01_Content_Agent/Visuele Productie/Video Productie Checklist.md",
     "01_Content_Agent/Visuele Productie/Editing Stijl Gids Video.md",
@@ -207,7 +210,6 @@
     "01_Content_Agent/Visuele Productie/Template Overzicht.md",
     "01_Content_Agent/Strategie & Planning/Platform Richtlijnen.md",
     "01_Content_Agent/Visuele Productie/Brand Sound.md",
-    "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
     "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
     "02_Partnership_Agent/Operationeel/Pipeline Tracker.md",
     "02_Partnership_Agent/Operationeel/Evaluatiecriteria.md",

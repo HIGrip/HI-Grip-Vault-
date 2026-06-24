@@ -171,14 +171,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Open snel wisselen": false,
       "graph:Open grafiek weergave": false,
       "canvas:Nieuw doek aanmaken": false,
       "daily-notes:Open de notitie van vandaag": false,
       "templates:Sjabloon invoegen": false,
       "command-palette:Open opdrachtenpaneel": false,
-      "bases:Nieuwe basis maken": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Nieuwe basis maken": false
     }
   },
   "active": "f90726eea62d6631",

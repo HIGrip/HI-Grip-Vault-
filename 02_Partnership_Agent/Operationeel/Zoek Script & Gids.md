@@ -29,11 +29,11 @@ python C:\Users\lars\create_influencer_list.py
 
 ### Tennis
 
-| Kanaal | Zoektermen |
-|---|---|
+| Kanaal             | Zoektermen                                                               |
+| ------------------ | ------------------------------------------------------------------------ |
 | Instagram hashtags | #tennisnederland · #tennisnl · #tennismatch · #tennislife · #tennisreels |
-| TikTok | tennis vlog nl · tennis journey nederland · tennis training |
-| Slimste plek | Kijk wie reageert op @timtopspin / @liviatennisnld posts |
+| TikTok             | tennis vlog nl · tennis journey nederland · tennis training              |
+| Slimste plek       | Kijk wie reageert op @timtopspin / @tennistomy posts                     |
 
 ### Padel
 
@@ -49,7 +49,7 @@ python C:\Users\lars\create_influencer_list.py
 | ------------------ | ----------------------------------------------------------------------------------------- |
 | Instagram hashtags | #voetbalnederland · #skillsnl · #zaalvoetbal · #futsalnl · #pannavoetbal · #straatvoetbal |
 | TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |
-| Slimste plek       | Kijk bij comments op @abelfreestylevoetbal content                                        |
+| Slimste plek       |                                                                                           |
 
 ### Rugby
 

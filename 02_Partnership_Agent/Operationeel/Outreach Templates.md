@@ -58,3 +58,5 @@
 - [[Partnership Strategie]] — De bredere aanpak
 - [[Doelgroep & Persona's]] — B2B doelgroep-beschrijvingen
 - [[Brand Voice & Tone of Voice]] — Tone bij communicatie
+- [[Influencer Database]] — Influencers klaar voor outreach
+- [[Zoek Script & Gids]] — Hoe influencers gevonden worden

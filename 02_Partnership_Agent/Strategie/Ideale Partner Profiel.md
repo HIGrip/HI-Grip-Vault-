@@ -38,3 +38,6 @@
 - [[Outreach Templates]] — Scripts voor bellen en mailen
 - [[Partnership Strategie]] — De bredere aanpak
 - [[Strategische Keuzes]] — B2B groeikeuzes en roadmap
+- [[Influencer Database]] — Gevonden en te zoeken influencers per sport
+- [[Evaluatiecriteria]] — Selectie- en verificatiecriteria voor influencers
+- [[Zoek Script & Gids]] — Zoekproces, hashtags en Python script

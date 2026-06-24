@@ -7,17 +7,17 @@
 
 ## Niche / Content type (prioriteit)
 
-| Prioriteit | Sport / Niche |
-|---|---|
-| ⭐ Hoog | Tennis |
-| ⭐ Hoog | Padel |
-| ⭐ Hoog | Voetbal (street, panna, zaal) |
-| Normaal | Urban sports / streetball |
-| Normaal | Basketball |
-| Normaal | Rugby |
-| Normaal | Gym / fitness lifestyle |
-| Normaal | Hardlopen / running |
-| Normaal | Pilates / yoga |
+| Prioriteit | Sport / Niche                 |
+| ---------- | ----------------------------- |
+| ⭐ Hoog     | Tennis                        |
+| ⭐ Hoog     | Padel                         |
+| ⭐ Hoog     | Voetbal (street, panna, zaal) |
+| Normaal    | Urban sports / streetball     |
+| Normaal    | Basketball                    |
+| Normaal    | Rugby                         |
+| Normaal    | Gym / fitness lifestyle       |
+| Normaal    | Hardlopen / running           |
+| Normaal    | Pilates / yoga                |
 
 ---
 
@@ -34,13 +34,13 @@
 
 > **Metric:** VIEWS per post (niet alleen volgers)
 
-| Tier | Volgersband | Views per post |
-|---|---|---|
-| Nano- | 500–2.000 | 500–2.000 |
-| Nano | 2.000–5.000 | 2.000–5.000 |
-| **Nano/micro ⭐** | **5.000–30.000** | **5.000–30.000** |
-| Micro | 30.000–100.000 | 30.000–100.000 |
-| Mid-tier | 100.000–500.000 | 100.000–500.000 |
+| Tier            | Volgersband      | Views per post   |
+| --------------- | ---------------- | ---------------- |
+| Nano-           | 500–2.000        | 500–2.000        |
+| Nano⭐           | 2.000–5.000      | 2.000–5.000      |
+| **Nano/micro ** | **5.000–30.000** | **5.000–30.000** |
+| Micro           | 30.000–100.000   | 30.000–100.000   |
+| Mid-tier        | 100.000–500.000  | 100.000–500.000  |
 
 - **Minimum volgers:** 500
 - **Maximum volgers:** 100.000

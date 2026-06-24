@@ -54,16 +54,15 @@
 
 ## VOETBAL
 
-| Status | Account | Volgers | Gem. Views | Prioriteit | Notities |
-|---|---|---|---|---|---|
-| ✅ Bevestigd | [@finnpicard_](https://www.instagram.com/finnpicard_/) | verifieer <5K | verifieer >5K | Hoog | Door lars aangedragen. Eigen karakter, sportcontent met persoonlijk gezicht. Verifieer: <5K volgers? views >5K? |
-| 🔍 Verifieer | [@iamyasinflits](https://www.instagram.com/iamyasinflits/) | verifieer | verifieer | Zeer hoog | 'Yasine Flits' — panna/straatvoetbal creator. Gevonden #pannavoetbal. Check: eigen gezicht? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@joelvandun](https://www.instagram.com/joelvandun/) | verifieer | verifieer | Hoog | Joel van Dun — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/) | verifieer | verifieer | Hoog | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@bergdelano27](https://www.instagram.com/bergdelano27/) | verifieer | verifieer | Medium | Delano Berg — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Zoeken | → vul in | <5K | >5K views | Zeer hoog | Panna / street. Kijk wie reageert op @finnpicard_ en @iamyasinflits content |
-| 🔍 Zoeken | → vul in | <5K | >5K views | Hoog | Training / matchvlog. Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert |
-| 🔍 Zoeken | → vul in | <5K | >5K views | Zeer hoog | Zaalvoetbal / futsal. Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks |
+| Status       | Account                                                    | Volgers       | Gem. Views    | Prioriteit | Notities                                                                                                        |
+| ------------ | ---------------------------------------------------------- | ------------- | ------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
+| 🔍 Verifieer | [@iamyasinflits](https://www.instagram.com/iamyasinflits/) | verifieer     | verifieer     | Zeer hoog  | 'Yasine Flits' — panna/straatvoetbal creator. Gevonden #pannavoetbal. Check: eigen gezicht? NL? <5K? views >5K? |
+| 🔍 Verifieer | [@joelvandun](https://www.instagram.com/joelvandun/)       | verifieer     | verifieer     | Hoog       | Joel van Dun — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?         |
+| 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer     | verifieer     | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
+| 🔍 Verifieer | [@bergdelano27](https://www.instagram.com/bergdelano27/)   | verifieer     | verifieer     | Medium     | Delano Berg — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?          |
+| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Zeer hoog  | Panna / street. Kijk wie reageert op @finnpicard_ en @iamyasinflits content                                     |
+| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Hoog       | Training / matchvlog. Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert           |
+| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Zeer hoog  | Zaalvoetbal / futsal. Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks                        |
 
 ---
 
@@ -86,16 +85,4 @@
 
 ---
 
-## Content ideeën per sport
-
-| Sport | Content idee voor HÏ Grip |
-|---|---|
-| Tennis | Slow-mo footwork: HÏ Grip zool in beeld bij iedere afzet |
-| Tennis | Journey-reel: 'van beginner naar competitie — HÏ Grip al vanaf dag 1 in mijn kit' |
-| Padel | Tip-reel: 'voor deze beweging heb je grip nodig — HÏ Grip is mijn keuze' |
-| Padel | Match close-up: snelle diagonaal + 'mijn geheim voor grip in de hoek' |
-| Voetbal | Panna-clip: 'de sleutel is je voetplaatsing — HÏ Grip geeft je die control' |
-| Voetbal | Matchvlog: 'mijn routine voor de wedstrijd' — HÏ Grip als eerste bij het aankleden |
-| Zaalvoetbal | Prep-vlog: HÏ Grip als eerste ding dat aangetrokken wordt |
-| Rugby | Wedstrijdvlog: warme fase + 'zo kleed ik me aan' — HÏ Grip als prep-detail |
-| Basketball | Court-vlog: 'wat zit er in mijn tas' — HÏ Grip als vast onderdeel van zijn kit |
+##

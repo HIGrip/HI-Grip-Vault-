@@ -22,17 +22,11 @@
 
 ## TENNIS
 
-| Status | Account | Volgers | Gem. Views | Prioriteit | Notities |
-|---|---|---|---|---|---|
-| ✅ Bevestigd | [@timtopspin](https://www.instagram.com/timtopspin/) | verifieer <5K | verifieer >5K | Zeer hoog | **Referentie-account** — alle andere creators hierop matchen. Authentiek, herkenbaar, niet te commercieel. Content idee: slow-mo footwork met HÏ Grip zool in beeld |
-| 🔍 Verifieer | [@vanrallytotrose](https://www.instagram.com/vanrallytotrose/) | verifieer | verifieer | Hoog | Gevonden #tennisnl. Naam suggereert tennis-journey. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@talithabijland](https://www.instagram.com/talithabijland/) | verifieer | verifieer | Hoog | Gevonden #tennisnl. NL naam, persoonlijk account. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@jurrebraaf](https://www.instagram.com/jurrebraaf/) | verifieer | verifieer | Hoog | Gevonden #tennisnederland. NL naam. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@wiboplijnaar](https://www.instagram.com/wiboplijnaar/) | verifieer | verifieer | Medium | Gevonden #tennisnederland. NL naam. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@karsten_tennis](https://www.instagram.com/karsten_tennis/) | verifieer | verifieer | Medium | Gevonden #tennisnl. Persoonlijk account. Check: eigen gezicht? video-first? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@effensii](https://www.instagram.com/effensii/) | ~229 ✓ | ~692 views | Hoog | Gevonden #tennisreels. 10 reels actief. Check: NL? eigen gezicht? video-first? actief? |
-| 🔍 Verifieer | [@shereenstennis](https://www.instagram.com/shereenstennis/) | ~700 ✓ | verifieer | Hoog | NL naam Shereen, gevonden #tennisreels. Check: eigen gezicht? views >5K? NL publiek? actief? |
-| 🔍 Zoeken | → vul in | <5K | >5K views | Hoog | Tennis vlog / progressie. Kijk wie reageert op @timtopspin — kleine actieve volgers zijn zelf creators |
+| Status       | Account                                                        | Volgers       | Gem. Views    | Prioriteit | Notities                                                                                                                                                            |
+| ------------ | -------------------------------------------------------------- | ------------- | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅ Bevestigd  | [@timtopspin](https://www.instagram.com/timtopspin/)           | verifieer <5K | verifieer >5K | Zeer hoog  | **Referentie-account** — alle andere creators hierop matchen. Authentiek, herkenbaar, niet te commercieel. Content idee: slow-mo footwork met HÏ Grip zool in beeld |
+| 🔍 Verifieer | [@vanrallytotrose](https://www.instagram.com/vanrallytotrose/) | verifieer     | verifieer     | Hoog       | Gevonden #tennisnl. Naam suggereert tennis-journey. Check: eigen gezicht? video-first? NL? <5K? views >5K?                                                          |
+| 🔍 Zoeken    | → vul in                                                       | <5K           | >5K views     | Hoog       | Tennis vlog / progressie. Kijk wie reageert op @timtopspin — kleine actieve volgers zijn zelf creators                                                              |
 
 ---
 

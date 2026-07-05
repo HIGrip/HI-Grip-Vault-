@@ -7,7 +7,7 @@
 
 ## Wat doet het script?
 
-Het Python-script `ig_find_creators.py` zoekt via een echte browser (Playwright) automatisch naar Instagram-creators op hashtags per sport, en filtert op:
+Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) zoekt via een echte browser (Playwright) automatisch naar Instagram-creators op hashtags per sport, en filtert op:
 
 1. **Primair:** gemiddelde reel-views per creator (`MIN_AVG_VIEWS` = 3.000)
 2. **Secundair:** aantal volgers (`MAX_FOLLOWERS` = 20.000)
@@ -29,10 +29,10 @@ Voor elke hashtag worden posts geopend om de auteur-username op te halen; per un
 ```
 pip install playwright playwright-stealth
 playwright install chromium
-python C:\Users\lars\ig_find_creators.py
+python "$env:USERPROFILE\HI-Grip-claude-setup\scripts\ig_find_creators.py"
 ```
 
-Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py`.
+Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py` (lokaal, niet in de git-repo — bevat inloggegevens).
 
 ---
 
@@ -95,37 +95,11 @@ Referentie-accounts om reacties te scannen:
 
 ---
 
-## Python script (volledige broncode)
+## Python script (broncode)
 
-```python
-"""
-HiGrip — Instagram creator zoeker via echte browser.
-Primair filter: gem. views per reel > 5K.
-Secundair: volgers <= 5K.
-Focus: persoonlijke video-creators (eigen gezicht, eigen content).
-"""
-import sys, time, json, os, re
-sys.stdout.reconfigure(encoding="utf-8")
+De volledige broncode staat niet meer hier, maar in de git-repo: [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`.
 
-from playwright.sync_api import sync_playwright
-from playwright_stealth import Stealth
-
-SESSION_FILE = r"C:\Users\lars\.ig_session.json"
-OUTPUT_FILE  = r"C:\Users\lars\Downloads\HiGrip_Creators_Voetbal.txt"
-
-HASHTAGS = {
-    "Voetbal_vlog":     ["voetbalvlog", "matchdayvlog", "voetbaljourney"],
-    "Voetbal_panna":    ["pannavoetbal", "pannacup", "pannanederland"],
-    "Zaalvoetbal":      ["zaalvoetbal", "futsalnl", "futsalnederland"],
-    "Straatvoetbal":    ["straatvoetbal", "streetvoetbal", "voetbalstraat"],
-}
-
-POSTS_PER_TAG  = 25
-MIN_AVG_VIEWS  = 3_000   # primair filter
-MAX_FOLLOWERS  = 20_000  # max 20K
-
-
-# ── helpers ──────────────────────────────────────────────────────────────────
+REMOVE_FROM_HERE
 
 def dismiss_cookies(page):
     for sel in [

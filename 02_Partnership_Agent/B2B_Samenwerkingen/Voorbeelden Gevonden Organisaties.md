@@ -1,36 +1,37 @@
-# Pipeline Tracker — HÏ Grip Partnership Agent
+# Voorbeelden Gevonden Organisaties — B2B Samenwerkingen
 
-> Zie ook: [[Evaluatiecriteria]] · [[Partnership Strategie]] · [[Outreach Templates]]
+> Status: **voorbeelden/kandidaten** — nog niet benaderd, nog niks mee gedaan. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]].
+> Zie ook: [[Evaluatiecriteria]] (in `Influencers_Creators`, alleen voor influencers) — voor B2B-samenwerking criteria zie het document `HiGrip_B2B_Samenwerking_Criteria.docx` (OneDrive/Documents).
 
 ---
 
 ## Geleerde criteria (sessie 2026-07-05, Lijn B zoekactie)
 
-Aanvulling op bestaande B2B/samenwerking-criteria, nog niet formeel in criteria-document verwerkt:
+Aanvulling op bestaande B2B/samenwerking-criteria, nog niet formeel verwerkt in het criteria-document:
 
-- **Schaal/budget-check**: Mega-tier events (stadion-niveau, bv. Ahoy) vallen af — te groot/te duur voor HÏ Grip budget. Ook "groot" bereik kan al te veel zijn afhankelijk van sponsorkosten.
+- **Schaal/budget-check**: Mega-tier events (stadion-niveau, bv. Ahoy) vallen af — te groot/te duur voor HÏ Grip budget.
 - **Event vs. infrastructuur**: Alleen organisaties met een echt evenement/activatiemoment tellen mee. Kale infrastructuur (bv. een sportcourt zonder eigen events) of een club zonder eigen event/verkooppunt = afwijzen.
-- **Winkel ≠ samenwerking**: Als een organisatie puur retail is (webshop/winkel), hoort die bij B2B-klanten (Lijn A: inkoop), niet bij samenwerkingen/events (Lijn B).
-- **Sponsoring = win-win**: Doel van samenwerking is HÏ Grip zichtbaarheid/marketing op locatie geven, in ruil voor sponsoring (geld/product) die de organisatie helpt hun event te draaien.
+- **Winkel ≠ samenwerking**: Puur retail (webshop/winkel) hoort bij B2B-klanten (inkoop), niet bij samenwerkingen/events.
+- **Sponsoring = win-win**: HÏ Grip krijgt zichtbaarheid/marketing op locatie, organisatie krijgt sponsoring (geld/product) om event te draaien.
 
 ---
 
-## Lijn B — Samenwerkingen/Events (zoekactie 2026-07-05)
+## Lijn B — Samenwerkingen/Events
 
-### Status: Nieuw — HOOG prioriteit
+### HOOG prioriteit
 
 | Naam | Type organisatie | Locatie | Contact | Type samenwerking | Reden |
 |---|---|---|---|---|---|
 | Powerleague Rotterdam | 5-a-side voetbalvenue/events | Rotterdam | IG [@powerleague_rotterdam](https://www.instagram.com/powerleague_rotterdam/) · [website](https://www.powerleague.com/nl/lokaliteit/rotterdam) | Event co-host / pop-up / sponsoring | Performance-fit voetbal, Rotterdam, actief, regelmatig toernooien |
 | Panna Knock Out | Straatvoetbal 1v1-events | Rotterdam (HQ), 50+ toernooien/jaar NL | 📞 010-3101048 · ✉️ info@pannaknockout.com · [pannaknockout.nl](https://pannaknockout.nl/) | Sponsoring / activatie | Sterke straat/performance-fit, Rotterdam-basis, juiste schaal, echt evenement met publiek |
 | Rotterdam Basketbal (3x3) | 3x3 streetball community | Rotterdam (Alexanderhal) | [rotterdambasketbal.nl](https://www.rotterdambasketbal.nl/3x3/) | Sponsoring / clubdeal | Urban sport fit, lokaal, echt terugkerend evenement, haalbare schaal |
-| Sport Ondernemers Expo + Nationale Sport Vakbeurs | Sportbeurs (B2B) | Gorinchem, 4 nov 2026 | [sportondernemersexpo.nl](https://sportondernemersexpo.nl/) | Stand / exposeren | B2B-fit, dicht bij Rotterdam, raakt zowel klanten als samenwerkingsdoel |
+| Sport Ondernemers Expo + Nationale Sport Vakbeurs | Sportbeurs (B2B) | Gorinchem, 4 nov 2026 | [sportondernemersexpo.nl](https://sportondernemersexpo.nl/) | Stand / exposeren | B2B-fit, dicht bij Rotterdam, raakt zowel klanten- als samenwerkingsdoel |
 
-### Status: Nieuw — MIDDEL prioriteit
+### MIDDEL prioriteit
 
 | Naam | Type organisatie | Locatie | Contact | Reden |
 |---|---|---|---|---|
-| Sportloaded.nl | Sportmedia/platform | Nationaal | [sportloaded.nl](https://sportloaded.nl/) | Content/blog-feature voor SEO-backlink — indirecte waarde, minder directe opbrengst dan sponsoring-events |
+| Sportloaded.nl | Sportmedia/platform | Nationaal | [sportloaded.nl](https://sportloaded.nl/) | Content/blog-feature voor SEO-backlink — indirecte waarde, minder opbrengst dan sponsoring-events |
 
 ### Afgewezen (niet opnieuw benaderen)
 
@@ -46,7 +47,7 @@ Aanvulling op bestaande B2B/samenwerking-criteria, nog niet formeel in criteria-
 | USWA (Urban Sports Week Amsterdam) | Buiten Rotterdam |
 | Body&Fit | Mogelijk te groot merk voor gelijkwaardige samenwerking |
 | FIVE — 5 vs 5 app | Klein platform, niet verder opgepakt |
-| Ultrapadel | Is webshop, geen event — verplaatst naar Lijn A (B2B klant kandidaat) |
+| Ultrapadel | Is webshop, geen event — zie Lijn A kandidaat hieronder |
 
 ---
 
@@ -60,6 +61,7 @@ Aanvulling op bestaande B2B/samenwerking-criteria, nog niet formeel in criteria-
 
 ## Gerelateerde bestanden
 
-- [[Evaluatiecriteria]] — Selectiecriteria (influencers)
-- [[Partnership Strategie]] — Aanpak en outreach-volgorde
+- [[Pipeline Tracker]] — Actieve outreach-status (leeg tot benaderd)
+- [[Ideale Partner Profiel]] — Doelgroepbeschrijving B2B
+- [[Partnership Strategie]] — Aanpak en volgorde
 - [[Outreach Templates]] — Scripts voor bellen/mailen

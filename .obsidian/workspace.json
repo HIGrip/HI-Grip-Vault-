@@ -11,14 +11,10 @@
             "id": "f90726eea62d6631",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Zoek Script & Gids"
+              "title": "Nieuw tabblad"
             }
           }
         ]
@@ -181,8 +177,23 @@
       "bases:Nieuwe basis maken": false
     }
   },
-  "active": "f90726eea62d6631",
+  "active": "597c9458f12a4dff",
   "lastOpenFiles": [
+    "02_Partnership_Agent/B2B_Samenwerkingen/Voorbeelden Gevonden Organisaties.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Pipeline Tracker.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Partnership Strategie.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Partnership Voorwaarden Template.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Outreach Templates.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Ideale Partner Profiel.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Actieve Samenwerkingen.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Retailer Database.md",
+    "02_Partnership_Agent/B2B_Samenwerkingen/Merk & Bedrijf Database.md",
+    "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md",
+    "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md",
+    "02_Partnership_Agent/Influencers_Creators/Evaluatiecriteria.md",
+    "02_Partnership_Agent/Influencers_Creators/Influencer Database.md",
+    "02_Partnership_Agent/Influencers_Creators",
+    "02_Partnership_Agent/B2B_Samenwerkingen",
     "02_Partnership_Agent/Databases/Influencer Database.md",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.5f9c9cf1c61d",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp",
@@ -192,7 +203,6 @@
     "02_Partnership_Agent/Operationeel/Outreach Templates.md",
     "02_Partnership_Agent/Operationeel/Pipeline Tracker.md",
     "02_Partnership_Agent/Operationeel/Partnership Voorwaarden Template.md",
-    "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md",
     "01_Content_Agent/Copy & Tekst/Hashtag Bibliotheek.md",
     "01_Content_Agent/Copy & Tekst/Emoji Gebruik Gids.md",
     "01_Content_Agent/Copy & Tekst/CTA Bibliotheek.md",
@@ -200,25 +210,12 @@
     "00_Brand_Core/Identiteit/Brand Voice & Tone of Voice.md",
     "02_Partnership_Agent/Strategie/Partnership Strategie.md",
     "02_Partnership_Agent/Strategie/Ideale Partner Profiel.md",
-    "02_Partnership_Agent/Databases/Merk & Bedrijf Database.md",
-    "02_Partnership_Agent/Databases/Retailer Database.md",
-    "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
-    "01_Content_Agent/Strategie & Planning/Posting Frequentie per Platform.md",
-    "01_Content_Agent/Strategie & Planning/Platform Richtlijnen.md",
-    "01_Content_Agent/Strategie & Planning/Content Pillars.md",
-    "01_Content_Agent/Strategie & Planning/Content Kalender Template.md",
-    "01_Content_Agent/Strategie & Planning/Content Strategie.md",
-    "00_Brand_Coretest_submap.md",
     "Naamloos.canvas",
-    "_test_uri.md",
-    "Naamloos.md",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "Socials - HÏ Grip.pdf",
     "01_Content_AgentStrategie & Planning",
     "01_Content_AgentStrategie+&+Planning",
-    "01_Content_Agent/Copy & Tekst/Tekst-overlay Gids.md.tmp.10076.7fff80624b33",
-    "01_Content_Agent/Visuele Productie/Tekst-overlay Gids.md.tmp.10076.93c808d43b08",
     "Naamloos 1.canvas"
   ]
 }

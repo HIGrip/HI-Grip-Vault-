@@ -38,31 +38,22 @@
 
 ## PADEL
 
-| Status | Account | Volgers | Gem. Views | Prioriteit | Notities |
-|---|---|---|---|---|---|
-| 📌 Referentie | [@jospadel](https://www.instagram.com/jospadel/) | verifieer <5K | verifieer >5K | Zeer hoog | **STIJL-REFERENTIE** — zoek NL versie: tips + eigen gezicht + court. Jo's Padel Pointers |
-| 🔎 Gevonden | [@menno.nolten](https://www.instagram.com/menno.nolten/) | ~3K ✓ | verifieer >5K | Hoog | Menno Nolten. Eigen wedstrijdclips en trainingsmomentjes. Meerdere merksponsordeals. Verifieer: views >5K per reel? |
-| 🔍 Verifieer | [@shez_n_padel](https://www.instagram.com/shez_n_padel/) | verifieer | verifieer | Hoog | Gevonden #padelnederland. Check: <5K? eigen gezicht? reels? NL publiek? |
-| 🔍 Verifieer | [@alainappelboom](https://www.instagram.com/alainappelboom/) | ~671 ✓ | ~988 views | Hoog | NL naam. 12 reels actief. Check: eigen gezicht? NL? actief <3 weken? |
-| 🔍 Verifieer | [@padelverde_herten](https://www.instagram.com/padelverde_herten/) | ~732 ✓ | ~869 views | Hoog | Herten = NL (Limburg). 12 reels. Check: eigen gezicht? actief? |
-| 🔍 Verifieer | [@padelbroeders](https://www.instagram.com/padelbroeders/) | ~538 ✓ | verifieer | Medium | NL woord 'broeders', gevonden #padelnl. Views niet geladen. Check: views? eigen gezicht? actief? |
-| 🔍 Verifieer | [@padelbarendrecht](https://www.instagram.com/padelbarendrecht/) | ~650 ✓ | verifieer | Medium | Barendrecht = NL (Zuid-Holland). Check: eigen gezicht? views? actief? |
-| 🔍 Verifieer | [@padel25haarlem](https://www.instagram.com/padel25haarlem/) | ~741 ✓ | verifieer | Medium | Haarlem = NL. Check: eigen gezicht? views? actief? |
-| 🔍 Zoeken | → vul in | <5K | >5K views | Zeer hoog | NL versie van @jospadel: tips, eigen gezicht, progressie, court-footage. Zoek #padelnl |
+| Status        | Account                                                            | Volgers       | Gem. Views    | Prioriteit | Notities                                                                                                            |
+| ------------- | ------------------------------------------------------------------ | ------------- | ------------- | ---------- | ------------------------------------------------------------------------------------------------------------------- |
+| 📌 Referentie | [@jospadel](https://www.instagram.com/jospadel/)                   | verifieer <5K | verifieer >5K | Zeer hoog  | **STIJL-REFERENTIE** — zoek NL versie: tips + eigen gezicht + court. Jo's Padel Pointers                            |
+| 🔎 Gevonden   | [@menno.nolten](https://www.instagram.com/menno.nolten/)           | ~3K ✓         | verifieer >5K | Hoog       | Menno Nolten. Eigen wedstrijdclips en trainingsmomentjes. Meerdere merksponsordeals. Verifieer: views >5K per reel? |
+| 🔍 Zoeken     | → vul in                                                           | <5K           | >5K views     | Zeer hoog  | NL versie van @jospadel: tips, eigen gezicht, progressie, court-footage. Zoek #padelnl                              |
 
 ---
 
 ## VOETBAL
 
-| Status       | Account                                                    | Volgers       | Gem. Views    | Prioriteit | Notities                                                                                                        |
-| ------------ | ---------------------------------------------------------- | ------------- | ------------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| 🔍 Verifieer | [@iamyasinflits](https://www.instagram.com/iamyasinflits/) | verifieer     | verifieer     | Zeer hoog  | 'Yasine Flits' — panna/straatvoetbal creator. Gevonden #pannavoetbal. Check: eigen gezicht? NL? <5K? views >5K? |
-| 🔍 Verifieer | [@joelvandun](https://www.instagram.com/joelvandun/)       | verifieer     | verifieer     | Hoog       | Joel van Dun — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?         |
-| 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer     | verifieer     | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
-| 🔍 Verifieer | [@bergdelano27](https://www.instagram.com/bergdelano27/)   | verifieer     | verifieer     | Medium     | Delano Berg — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?          |
-| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Zeer hoog  | Panna / street. Kijk wie reageert op @finnpicard_ en @iamyasinflits content                                     |
-| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Hoog       | Training / matchvlog. Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert           |
-| 🔍 Zoeken    | → vul in                                                   | <5K           | >5K views     | Zeer hoog  | Zaalvoetbal / futsal. Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks                        |
+| Status       | Account                                                    | Volgers   | Gem. Views | Prioriteit | Notities                                                                                                        |
+| ------------ | ---------------------------------------------------------- | --------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
+| 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer | verifieer  | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
+| 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Zeer hoog  | Panna / street. Kijk wie reageert  content                                                                      |
+| 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Hoog       | Training / matchvlog. Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert           |
+| 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Zeer hoog  | Zaalvoetbal / futsal. Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks                        |
 
 ---
 

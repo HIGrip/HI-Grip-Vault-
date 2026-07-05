@@ -30,6 +30,18 @@ Beoordeel samenwerkingen via [[Evaluatiecriteria]].
 
 ---
 
+## Verkoopvormen via partners
+
+Deze horen bij Lijn A (verkoop), ook al gebeurt de promotie vaak samen met de partner — de insteek is dat het product tussen de clubkleding/gear komt zodat leden het kunnen kopen, niet een activatiemoment (dat is [[Samenwerking Strategie]], Lijn B).
+
+| Type | Omschrijving | Waarom Lijn A |
+|---|---|---|
+| **Clubdeal** | HÏ Grip als ledenvoordeel | Kern is verkoop aan leden — sterk bij sportscholen/pilates/clubs, directe distributie naar eindgebruiker |
+| **Bundeldeal** | HÏ Grip in welkomstpakket voor nieuwe leden | Instapverkoop, lage drempel voor partner om mee te doen |
+| **Verkooppunt bij partner** | HÏ Grip te koop tussen clubkleding/gear, op locatie of webshop | Directe verkoop via clubkanaal — wordt vaak wel samen gepromoot, maar geen activatiemoment nodig |
+
+---
+
 ## Prioriteit volgorde outreach
 
 1. **Pilates/sportscholen** — direct praktische behoefte aan gripsokken voor leden

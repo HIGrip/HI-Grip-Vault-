@@ -8,9 +8,9 @@
 
 Organisaties en events vinden waar HÏ Grip **zichtbaarheid/marketing** krijgt op locatie, in ruil voor **sponsoring** (geld of product) die de organisatie helpt hun event te draaien. Win-win: wij krijgen doelgroep-contact op locatie, zij krijgen middelen om het event te laten slagen.
 
-Twee sub-doelen:
-1. **Events en activaties** — co-host, sponsoring, pop-up/stand, productlancering, gezamenlijke social promotie
-2. **Commerciële samenwerking** — co-marketing, clubdeal (ledenvoordeel), bundeldeal (welkomstpakket), verkooppunt bij partner
+Sub-doel: **Events en activaties** — co-host, sponsoring, pop-up/stand, productlancering, gezamenlijke social promotie, co-marketing.
+
+> Clubdeal, bundeldeal en verkooppunt bij partner horen bij **Lijn A** (zie [[Partnership Strategie]]) — dat is in de kern verkoop (product tussen clubkleding/gear zodat leden het kopen), ook al promoot je het samen.
 
 ---
 
@@ -34,9 +34,8 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 | **Productlancering samen met partner** | Nieuw product samen introduceren                  | Versterkt innovatie-waarde, genereert content en nieuwswaarde                         |
 | **Gezamenlijke social promotie**       | Cross-promotie op social/website                  | Lage kosten, bereikt elkaars doelgroep, goed voor kleinere partners                   |
 | **Co-marketing**                       | Gezamenlijke campagne/content                     | Werkt goed met merken die dezelfde performance-mindset delen                          |
-| **Clubdeal**                           | HÏ Grip als ledenvoordeel                         | Sterk bij sportscholen/pilates/clubs — directe distributie naar eindgebruiker         |
-| **Bundeldeal**                         | HÏ Grip in welkomstpakket                         | Goed instapmoment bij nieuwe leden, lage drempel voor partner                         |
-| **Verkooppunt bij partner**            | HÏ Grip te koop op locatie/webshop partner        | Grensgeval met Lijn A — puur verkoop zonder activatie hoort daar                      |
+
+> Clubdeal, bundeldeal en verkooppunt bij partner zijn verplaatst naar Lijn A — [[Partnership Strategie]] (zie sectie "Verkoopvormen via partners"). Kern is verkoop naar leden, geen activatiemoment nodig.
 
 ---
 

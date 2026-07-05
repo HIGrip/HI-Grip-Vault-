@@ -47,21 +47,11 @@ Aanvulling op bestaande B2B/samenwerking-criteria, nog niet formeel verwerkt in 
 | USWA (Urban Sports Week Amsterdam) | Buiten Rotterdam |
 | Body&Fit | Mogelijk te groot merk voor gelijkwaardige samenwerking |
 | FIVE — 5 vs 5 app | Klein platform, niet verder opgepakt |
-| Ultrapadel | Is webshop, geen event — zie Lijn A kandidaat hieronder |
-
----
-
-## Lijn A — B2B Klanten (nog te starten)
-
-| Naam | Type organisatie | Locatie | Contact | Reden |
-|---|---|---|---|---|
-| Ultrapadel | Padel webshop/retailer | Rotterdam-regio | [ultrapadel.nl](https://ultrapadel.nl/) | Eerste kandidaat, ontdekt tijdens Lijn B zoekactie — mogelijk verkooppunt grip socks |
+| Ultrapadel | Is webshop, geen event — verplaatst naar `Lijn A - B2B Klanten/Voorbeelden Gevonden Organisaties.md` |
 
 ---
 
 ## Gerelateerde bestanden
 
-- [[Pipeline Tracker]] — Actieve outreach-status (leeg tot benaderd)
-- [[Ideale Partner Profiel]] — Doelgroepbeschrijving B2B
-- [[Partnership Strategie]] — Aanpak en volgorde
-- [[Outreach Templates]] — Scripts voor bellen/mailen
+- [[Pipeline Tracker]] — Actieve outreach-status (leeg tot benaderd, gedeeld tussen Lijn A en Lijn B)
+- Lijn A staat in de map ernaast: `../Lijn A - B2B Klanten/`

@@ -83,7 +83,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 ## Slimste zoektruc
 
 > Zoek niet alleen op hashtag — **kijk wie reageert op posts van al bekende creators.**
-> Kleine actieve commenters zijn vaak zelf ook creators.
+> Kleine actieve commenters zijn vaak zelf ook creators. Zoek daarnaast ook tussen de volgers ze volgen elkaar ook vaak.
 
 Referentie-accounts om reacties te scannen:
 

@@ -1,3 +1,9 @@
+# Actieve Samenwerkingen (B2B Klanten) — Lijn A
+
+> Zie ook: [[Ideale Partner Profiel]] · [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] · [[Pipeline Tracker]]
+
+---
+
 B2B:
 ---
 ## Sportclubs 

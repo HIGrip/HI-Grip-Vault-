@@ -26,17 +26,17 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 
 ## Type samenwerking — wat we zoeken en waarom
 
-| Type | Omschrijving | Hoe het matcht met HÏ Grip |
-|---|---|---|
-| **Event co-hosten** | HÏ Grip en partner organiseren samen een event | Directe controle over merkbeleving, sterkste vorm van performance-storytelling |
-| **Sponsoring van bestaand event** | HÏ Grip zichtbaar bij partner-event | Laagdrempelig, win-win: partner krijgt middelen, wij podium bij passend publiek |
-| **Pop-up / stand op toernooi** | Fysieke aanwezigheid, direct contact met sporters | Sporters kunnen product voelen/passen — belangrijk bij tactiel product als grip socks |
-| **Productlancering samen met partner** | Nieuw product samen introduceren | Versterkt innovatie-waarde, genereert content en nieuwswaarde |
-| **Gezamenlijke social promotie** | Cross-promotie op social/website | Lage kosten, bereikt elkaars doelgroep, goed voor kleinere partners |
-| **Co-marketing** | Gezamenlijke campagne/content | Werkt goed met merken die dezelfde performance-mindset delen |
-| **Clubdeal** | HÏ Grip als ledenvoordeel | Sterk bij sportscholen/pilates/clubs — directe distributie naar eindgebruiker |
-| **Bundeldeal** | HÏ Grip in welkomstpakket | Goed instapmoment bij nieuwe leden, lage drempel voor partner |
-| **Verkooppunt bij partner** | HÏ Grip te koop op locatie/webshop partner | Grensgeval met Lijn A — puur verkoop zonder activatie hoort daar |
+| Type                                   | Omschrijving                                      | Hoe het matcht met HÏ Grip                                                            |
+| -------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| **Event co-hosten**                    | HÏ Grip en partner organiseren samen een event    | Directe controle over merkbeleving, sterkste vorm van performance-storytelling        |
+| **Sponsoring van bestaand event**      | HÏ Grip zichtbaar bij partner-event               | Laagdrempelig, win-win: partner krijgt middelen, wij podium bij passend publiek       |
+| **Pop-up / stand op toernooi**         | Fysieke aanwezigheid, direct contact met sporters | Sporters kunnen product voelen/passen — belangrijk bij tactiel product als grip socks |
+| **Productlancering samen met partner** | Nieuw product samen introduceren                  | Versterkt innovatie-waarde, genereert content en nieuwswaarde                         |
+| **Gezamenlijke social promotie**       | Cross-promotie op social/website                  | Lage kosten, bereikt elkaars doelgroep, goed voor kleinere partners                   |
+| **Co-marketing**                       | Gezamenlijke campagne/content                     | Werkt goed met merken die dezelfde performance-mindset delen                          |
+| **Clubdeal**                           | HÏ Grip als ledenvoordeel                         | Sterk bij sportscholen/pilates/clubs — directe distributie naar eindgebruiker         |
+| **Bundeldeal**                         | HÏ Grip in welkomstpakket                         | Goed instapmoment bij nieuwe leden, lage drempel voor partner                         |
+| **Verkooppunt bij partner**            | HÏ Grip te koop op locatie/webshop partner        | Grensgeval met Lijn A — puur verkoop zonder activatie hoort daar                      |
 
 ---
 

@@ -1,13 +1,13 @@
-# Zoek Script & Gids — Lijn B Samenwerkingen
+# Zoek Script & Gids (Samenwerkingen) — Lijn B
 
 > Handleiding voor het zoeken naar samenwerkingspartners (events/activaties). Dit is een **levend document**: bij elke zoekactie aanvullen met kanalen/zoektermen die werken, en schrappen wat niet werkt. Doel is de agent bij elke ronde sterker te maken.
-> Zie ook: [[Partnership Voorwaarden Template]] (toetsingscriteria) · [[Samenwerking Strategie]] (waarom) · [[Voorbeelden Gevonden Organisaties]] (kalibratie)
+> Zie ook: [[Voorwaarden Samenwerking]] (toetsingscriteria) · [[Samenwerking Strategie]] (waarom) · [[Voorbeelden Gevonden Organisaties (Events)]] (kalibratie)
 
 ---
 
 ## Zoekmethode
 
-Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/NL] + [toernooi/event/jaartal]**, check daarna direct de organisatie-website/Instagram voor activiteit en contactgegevens. Toets meteen tegen [[Partnership Voorwaarden Template]] voordat iets bij [[Voorbeelden Gevonden Organisaties]] komt.
+Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/NL] + [toernooi/event/jaartal]**, check daarna direct de organisatie-website/Instagram voor activiteit en contactgegevens. Toets meteen tegen [[Voorwaarden Samenwerking]] voordat iets bij [[Voorbeelden Gevonden Organisaties (Events)]] komt.
 
 ---
 
@@ -31,13 +31,13 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 - Voeg altijd **[stad]** toe aan de generieke zoekterm, Rotterdam eerst — landelijke/internationale toernooien zijn vaak te groot/te duur.
 - Check de organisator-website op een "contact" of "sponsoring/partners"-pagina — sterk signaal dat sponsoring bespreekbaar is.
 - Zoekresultaten die een **platform/app** zijn (Tournify, FIVE, Mingle Sport) zijn tools, geen sponsor-partners — zoek dóór naar de organisatoren die zulke tools gebruiken.
-- Onderscheid meteen: is dit een **terugkerend evenement** (goed) of een **venue/court zonder eigen event** (afwijzen — zie [[Partnership Voorwaarden Template]])?
+- Onderscheid meteen: is dit een **terugkerend evenement** (goed) of een **venue/court zonder eigen event** (afwijzen — zie [[Voorwaarden Samenwerking]])?
 - Grote sportfederaties (KNVB, KNLTB) zijn goede bronnen voor clubinformatie, maar de clubs zelf moeten een eigen event/activiteit hebben om mee te tellen.
 
 ---
 
 ## Gerelateerde bestanden
 
-- [[Partnership Voorwaarden Template]] — Criteria en uitsluitingen om te toetsen
+- [[Voorwaarden Samenwerking]] — Criteria en uitsluitingen om te toetsen
 - [[Samenwerking Strategie]] — Waarom dit past bij HÏ Grip
-- [[Voorbeelden Gevonden Organisaties]] — Goede voorbeelden ter kalibratie
+- [[Voorbeelden Gevonden Organisaties (Events)]] — Goede voorbeelden ter kalibratie

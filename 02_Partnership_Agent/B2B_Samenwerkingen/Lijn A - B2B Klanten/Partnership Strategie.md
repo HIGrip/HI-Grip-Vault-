@@ -1,6 +1,6 @@
 # Partnership Strategie — HÏ Grip
 
-> Aanpak voor het binnenhalen en onderhouden van B2B partnerships. Voor specifieke doelgroepen: zie [[Ideale Partner Profiel]]. Voor bel- en mailscripts: zie [[Outreach Templates]].
+> Aanpak voor het binnenhalen en onderhouden van B2B partnerships (Lijn A: klanten/inkoop). Voor specifieke doelgroepen: zie [[Ideale Partner Profiel]]. Voor bel- en mailscripts: zie [[Outreach Templates]]. Voor samenwerkingen/events (Lijn B): zie [[Samenwerking Strategie]].
 
 ---
 
@@ -43,5 +43,7 @@ Beoordeel samenwerkingen via [[Evaluatiecriteria]].
 - [[Ideale Partner Profiel]] — Wie we targeten
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - [[Pipeline Tracker]] — Lopende gesprekken bijhouden
-- [[Evaluatiecriteria]] — Hoe we samenwerkingen beoordelen
+- [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] — Gevonden kandidaten, nog niet benaderd
+- [[Evaluatiecriteria]] — Hoe we (influencer-)samenwerkingen beoordelen
 - [[Strategische Keuzes]] — Roadmap en financiële doelen
+- [[Samenwerking Strategie]] — Lijn B: events/activaties in plaats van klanten

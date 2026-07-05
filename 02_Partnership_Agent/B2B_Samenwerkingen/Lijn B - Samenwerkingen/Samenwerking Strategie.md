@@ -1,6 +1,6 @@
 # Samenwerking Strategie — HÏ Grip (Lijn B: Events & Activaties)
 
-> Waarom en wat we zoeken. Voor de toetsingscriteria en uitsluitingen: zie [[Partnership Voorwaarden Template]]. Voor hoe te zoeken: zie [[Zoek Script & Gids]]. Voor B2B klanten (inkoop): zie Lijn A. Merkfundament: [[Brand Identity Overview]].
+> Waarom en wat we zoeken. Voor de toetsingscriteria en uitsluitingen: zie [[Voorwaarden Samenwerking]]. Voor hoe te zoeken: zie [[Zoek Script & Gids (Samenwerkingen)]]. Voor B2B klanten (inkoop): zie [[Partnership Strategie]] in Lijn A. Merkfundament: [[Brand Identity Overview]].
 
 ---
 
@@ -58,7 +58,7 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 
 ## Gerelateerde bestanden
 
-- [[Partnership Voorwaarden Template]] — Toetsingscriteria, scoreformule, uitsluitingen
-- [[Zoek Script & Gids]] — Hoe kandidaten gevonden worden
-- [[Voorbeelden Gevonden Organisaties]] — Goedgekeurde kandidaten
+- [[Voorwaarden Samenwerking]] — Toetsingscriteria, scoreformule, uitsluitingen
+- [[Zoek Script & Gids (Samenwerkingen)]] — Hoe kandidaten gevonden worden
+- [[Voorbeelden Gevonden Organisaties (Events)]] — Goedgekeurde kandidaten
 - [[Brand Identity Overview]] — Merkverhaal, missie, waarden

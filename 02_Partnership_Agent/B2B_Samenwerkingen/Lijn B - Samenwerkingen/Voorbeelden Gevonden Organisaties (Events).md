@@ -1,6 +1,6 @@
-# Voorbeelden Gevonden Organisaties — Lijn B Samenwerkingen
+# Voorbeelden Gevonden Organisaties (Events) — Lijn B
 
-> Status: **goedgekeurde kandidaten** — nog niet benaderd. Dienen als kalibratie: zo ziet een goede match eruit. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]]. Voor redenen waarom andere organisaties NIET goedgekeurd zijn: zie [[Partnership Voorwaarden Template]] (uitsluitingen).
+> Status: **goedgekeurde kandidaten** — nog niet benaderd. Dienen als kalibratie: zo ziet een goede match eruit. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]]. Voor redenen waarom andere organisaties NIET goedgekeurd zijn: zie [[Voorwaarden Samenwerking]] (uitsluitingen).
 
 ---
 
@@ -23,7 +23,7 @@
 
 ## Gerelateerde bestanden
 
-- [[Partnership Voorwaarden Template]] — Criteria + waarom andere kandidaten afvielen
-- [[Zoek Script & Gids]] — Hoe deze kandidaten gevonden zijn
+- [[Voorwaarden Samenwerking]] — Criteria + waarom andere kandidaten afvielen
+- [[Zoek Script & Gids (Samenwerkingen)]] — Hoe deze kandidaten gevonden zijn
 - [[Samenwerking Strategie]] — Waarom dit past bij HÏ Grip
 - [[Pipeline Tracker]] — Actieve outreach-status

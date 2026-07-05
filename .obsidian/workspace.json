@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Partnership_Agent/Databases/Influencer Database.md",
+                "file": "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Influencer Database"
+              "title": "Zoek Script & Gids"
             }
           }
         ]
@@ -183,6 +183,7 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "02_Partnership_Agent/Databases/Influencer Database.md",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.5f9c9cf1c61d",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.34d777dc3dbd",
@@ -199,7 +200,6 @@
     "00_Brand_Core/Identiteit/Brand Voice & Tone of Voice.md",
     "02_Partnership_Agent/Strategie/Partnership Strategie.md",
     "02_Partnership_Agent/Strategie/Ideale Partner Profiel.md",
-    "02_Partnership_Agent/Databases/Influencer Database.md",
     "02_Partnership_Agent/Databases/Merk & Bedrijf Database.md",
     "02_Partnership_Agent/Databases/Retailer Database.md",
     "01_Content_Agent/Copy & Tekst/Caption Gids per Platform.md",
@@ -219,7 +219,6 @@
     "01_Content_AgentStrategie+&+Planning",
     "01_Content_Agent/Copy & Tekst/Tekst-overlay Gids.md.tmp.10076.7fff80624b33",
     "01_Content_Agent/Visuele Productie/Tekst-overlay Gids.md.tmp.10076.93c808d43b08",
-    "01_Content_Agent/Visuele Productie/Geluidseffecten Bibliotheek.md.tmp.10076.1e4a85976895",
     "Naamloos 1.canvas"
   ]
 }

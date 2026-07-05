@@ -7,21 +7,32 @@
 
 ## Wat doet het script?
 
-Het Python-script `create_influencer_list.py` genereert een opgemaakte Excel-werkmap met twee tabbladen:
+Het Python-script `ig_find_creators.py` zoekt via een echte browser (Playwright) automatisch naar Instagram-creators op hashtags per sport, en filtert op:
 
-1. **Influencer Lijst** — alle gevonden en te zoeken accounts, per sport gesectioneerd, met directe Instagram-links
-2. **Zoekgids** — verificatiechecklist, zoektermen per sport, en alle gevonden accounts met te-checken-punten
+1. **Primair:** gemiddelde reel-views per creator (`MIN_AVG_VIEWS` = 3.000)
+2. **Secundair:** aantal volgers (`MAX_FOLLOWERS` = 20.000)
 
-**Output:** `C:\Users\lars\Downloads\HiGrip_Nano_Influencers_NL.xlsx`
+Voor elke hashtag worden posts geopend om de auteur-username op te halen; per uniek profiel worden vervolgens volgers en gem. reel-views gescraped. Resultaten die aan de filters voldoen worden per sport weggeschreven naar een tekstbestand.
+
+**Output:** `C:\Users\lars\Downloads\HiGrip_Creators_Voetbal.txt`
+
+**Huidige hashtag-configuratie (alleen voetbal):**
+- Voetbal_vlog: voetbalvlog, matchdayvlog, voetbaljourney
+- Voetbal_panna: pannavoetbal, pannacup, pannanederland
+- Zaalvoetbal: zaalvoetbal, futsalnl, futsalnederland
+- Straatvoetbal: straatvoetbal, streetvoetbal, voetbalstraat
 
 ---
 
 ## Script uitvoeren
 
 ```
-pip install openpyxl
-python C:\Users\lars\create_influencer_list.py
+pip install playwright playwright-stealth
+playwright install chromium
+python C:\Users\lars\ig_find_creators.py
 ```
+
+Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py`.
 
 ---
 
@@ -87,290 +98,512 @@ Referentie-accounts om reacties te scannen:
 ## Python script (volledige broncode)
 
 ```python
-import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
-from openpyxl.utils import get_column_letter
+"""
+HiGrip — Instagram creator zoeker via echte browser.
+Primair filter: gem. views per reel > 5K.
+Secundair: volgers <= 5K.
+Focus: persoonlijke video-creators (eigen gezicht, eigen content).
+"""
+import sys, time, json, os, re
+sys.stdout.reconfigure(encoding="utf-8")
 
-wb = openpyxl.Workbook()
+from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
 
-COLOR_BG    = "111111"
-COLOR_GREEN = "1B5E20"; COLOR_GREEN_L = "C8E6C9"
-COLOR_BLUE  = "1565C0"; COLOR_BLUE_L  = "BBDEFB"
-COLOR_ORG   = "E65100"; COLOR_ORG_L   = "FFE0B2"
-COLOR_GOLD  = "F57F17"; COLOR_GOLD_L  = "FFF9C4"
-COLOR_PURP  = "E8EAF6"
+SESSION_FILE = r"C:\Users\lars\.ig_session.json"
+OUTPUT_FILE  = r"C:\Users\lars\Downloads\HiGrip_Creators_Voetbal.txt"
 
-thin   = Side(style="thin",   color="DDDDDD")
-medium = Side(style="medium", color="999999")
-tb     = Border(left=thin, right=thin, top=thin, bottom=thin)
-hb     = Border(left=medium, right=medium, top=medium, bottom=medium)
+HASHTAGS = {
+    "Voetbal_vlog":     ["voetbalvlog", "matchdayvlog", "voetbaljourney"],
+    "Voetbal_panna":    ["pannavoetbal", "pannacup", "pannanederland"],
+    "Zaalvoetbal":      ["zaalvoetbal", "futsalnl", "futsalnederland"],
+    "Straatvoetbal":    ["straatvoetbal", "streetvoetbal", "voetbalstraat"],
+}
 
-ws = wb.active
-ws.title = "Influencer Lijst"
-
-headers = [
-    "Status", "Account", "Platform", "Volgers (max 5K)", "Gem. views/likes",
-    "Sport", "Wat maakt hun content goed", "Merkfit HI GRIP",
-    "Content idee", "Contact", "Prioriteit", "Notities",
-]
-
-ws.row_dimensions[1].height = 36
-for ci, h in enumerate(headers, 1):
-    c = ws.cell(row=1, column=ci, value=h)
-    c.font = Font(name="Calibri", bold=True, color="FFFFFF", size=11)
-    c.fill = PatternFill("solid", fgColor=COLOR_BG)
-    c.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-    c.border = hb
-
-for i, w in enumerate([14, 26, 14, 14, 20, 16, 32, 34, 34, 20, 12, 30], 1):
-    ws.column_dimensions[get_column_letter(i)].width = w
+POSTS_PER_TAG  = 25
+MIN_AVG_VIEWS  = 3_000   # primair filter
+MAX_FOLLOWERS  = 20_000  # max 20K
 
 
-def plain(ws, row, col, value, bg="FFFFFF", bold=False, color="222222"):
-    c = ws.cell(row=row, column=col, value=value)
-    c.font = Font(name="Calibri", size=10, bold=bold, color=color)
-    c.fill = PatternFill("solid", fgColor=bg)
-    c.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
-    c.border = tb
-    return c
+# ── helpers ──────────────────────────────────────────────────────────────────
+
+def dismiss_cookies(page):
+    for sel in [
+        "button:has-text('Alle cookies toestaan')",
+        "button:has-text('Allow all cookies')",
+        "button:has-text('Accepteren')",
+    ]:
+        try:
+            page.click(sel, timeout=3000)
+            time.sleep(1)
+            return
+        except:
+            pass
 
 
-def section_header(ws, row, label, color):
-    for ci in range(1, len(headers)+1):
-        c = ws.cell(row=row, column=ci, value=label if ci == 1 else "")
-        c.font = Font(name="Calibri", bold=True, size=10, color="222222")
-        c.fill = PatternFill("solid", fgColor=color)
-        c.border = tb
-        c.alignment = Alignment(horizontal="left", vertical="center")
-    ws.row_dimensions[row].height = 20
+def is_logged_in(page):
+    try:
+        page.wait_for_selector(
+            'a[href="/direct/inbox/"], svg[aria-label="Direct"], nav a[href="/"]',
+            timeout=5000,
+        )
+        return True
+    except:
+        return False
 
 
-def add_row(ws, row, status, ig_handle, platform, volgers, views,
-            sport, content_goed, merkfit, idee, contact, prio, notities):
-    ws.row_dimensions[row].height = 22
-    bg = "FFFFFF" if row % 2 == 0 else "F7F7F7"
+def login(context, page):
+    from ig_search_higrip import USERNAME, PASSWORD
 
-    if "Bevestigd" in status:
-        s_bg, s_col, bold = COLOR_GREEN_L, COLOR_GREEN, True
-    elif "Gevonden" in status:
-        s_bg, s_col, bold = COLOR_BLUE_L, COLOR_BLUE, True
-    elif "Verifieer" in status:
-        s_bg, s_col, bold = COLOR_PURP, "4527A0", False
-    elif "Zoeken" in status:
-        s_bg, s_col, bold = COLOR_GOLD_L, COLOR_GOLD, False
-    else:
-        s_bg, s_col, bold = bg, "222222", False
-    plain(ws, row, 1, status, s_bg, bold, s_col)
+    page.goto("https://www.instagram.com/", timeout=30000)
+    time.sleep(3)
+    dismiss_cookies(page)
+    try:
+        page.wait_for_load_state("networkidle", timeout=10000)
+    except:
+        pass
+    time.sleep(2)
 
-    if ig_handle and ig_handle != "→ vul in":
-        handle_clean = ig_handle.lstrip("@")
-        url = f"https://www.instagram.com/{handle_clean}/"
-        c = ws.cell(row=row, column=2)
-        c.value = f'=HYPERLINK("{url}","{ig_handle}")'
-        c.font = Font(name="Calibri", size=10, color="1565C0", underline="single")
-        c.fill = PatternFill("solid", fgColor=bg)
-        c.alignment = Alignment(horizontal="left", vertical="center")
-        c.border = tb
-    else:
-        plain(ws, row, 2, ig_handle, bg)
+    if is_logged_in(page):
+        print("✅ Ingelogd via sessie\n")
+        return
 
-    plain(ws, row, 3, platform, bg)
-    plain(ws, row, 4, volgers, bg)
-    plain(ws, row, 5, views, bg)
-    plain(ws, row, 6, sport, bg)
-    plain(ws, row, 7, content_goed, bg)
-    plain(ws, row, 8, merkfit, bg)
-    plain(ws, row, 9, idee, bg)
-    plain(ws, row, 10, contact, bg)
+    page.goto("https://www.instagram.com/accounts/login/", timeout=30000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=10000)
+    except:
+        pass
+    time.sleep(2)
+    dismiss_cookies(page)
+    time.sleep(1)
 
-    prio_map = {
-        "Zeer hoog": (COLOR_GREEN_L, COLOR_GREEN),
-        "Hoog":      (COLOR_BLUE_L,  COLOR_BLUE),
-        "Medium":    (COLOR_ORG_L,   COLOR_ORG),
-    }
-    p_bg, p_col = prio_map.get(prio, (bg, "222222"))
-    plain(ws, row, 11, prio, p_bg, prio in prio_map, p_col)
-    plain(ws, row, 12, notities, bg)
+    for sel in ['input[name="username"]', 'input[autocomplete="username"]', 'input[type="text"]']:
+        try:
+            page.wait_for_selector(sel, timeout=6000)
+            page.fill(sel, USERNAME)
+            break
+        except:
+            pass
+    time.sleep(0.5)
+    for sel in ['input[name="password"]', 'input[type="password"]']:
+        try:
+            page.wait_for_selector(sel, timeout=4000)
+            page.fill(sel, PASSWORD)
+            break
+        except:
+            pass
+    time.sleep(0.5)
+    for sel in ['button[type="submit"]', "button:has-text('Aanmelden')", "button:has-text('Log in')"]:
+        try:
+            page.click(sel, timeout=3000)
+            break
+        except:
+            pass
+
+    try:
+        page.wait_for_load_state("networkidle", timeout=20000)
+    except:
+        pass
+    time.sleep(4)
+
+    if "challenge" in page.url or "two_factor" in page.url:
+        print("\n⚠️  Verificatie vereist. Los op in de browser en druk ENTER.")
+        input("ENTER om door te gaan...")
+        time.sleep(3)
+
+    for label in ["Niet nu", "Not Now", "Nu niet"]:
+        try:
+            page.click(f"text={label}", timeout=3000)
+            break
+        except:
+            pass
+
+    with open(SESSION_FILE, "w") as f:
+        json.dump(context.cookies(), f)
+    print(f"✅ Ingelogd — sessie opgeslagen\n")
 
 
-r = 2
+def parse_count(text):
+    if not text:
+        return 0
+    text = str(text).strip().replace(",", ".").replace("\xa0", "").replace(" ", "")
+    # Verwijder punten als duizendtalscheiding (bijv. "1.234" → "1234")
+    # maar bewaar "1.2K" etc.
+    m = re.search(r"([\d]+(?:[.,][\d]+)?)\s*([KkMm]?)", text)
+    if not m:
+        return 0
+    num_str = m.group(1).replace(",", ".")
+    try:
+        num = float(num_str)
+    except:
+        return 0
+    suf = m.group(2).upper()
+    if suf == "K":
+        num *= 1_000
+    elif suf == "M":
+        num *= 1_000_000
+    return int(num)
 
-# TENNIS
-section_header(ws, r, "── TENNIS ──", "FFF9C4"); r += 1
-add_row(ws, r, "✅ Bevestigd", "@timtopspin", "Instagram", "verifieer <5K", "verifieer >5K",
-    "Tennis", "Voelt als je vriend die tennist — eigen gezicht in alles, vertelt zijn verhaal",
-    "Dé contentstijl die HI GRIP zoekt: authentiek, herkenbaar, niet te commercieel",
-    "Slow-mo footwork: HI GRIP zool in beeld, 'deel van mijn kit'",
-    "DM Instagram", "Zeer hoog", "Referentie-account — alle andere creators hierop matchen"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@vanrallytotrose", "Instagram", "verifieer", "verifieer",
-    "Tennis", "Naam suggereert tennis-journey content — gevonden via #tennisnl",
-    "Potentieel: persoonlijke tennis-journey is perfecte HI GRIP fit",
-    "Journey-reel: 'van beginner naar competitie — HI GRIP al vanaf dag 1 in mijn kit'",
-    "DM Instagram", "Hoog", "Gevonden #tennisnl. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@talithabijland", "Instagram", "verifieer", "verifieer",
-    "Tennis", "NL naam, gevonden via #tennisnl — persoonlijk tennis-account",
-    "Persoonlijke NL creator = directe HI GRIP fit als het content klopt",
-    "Match-reel: voetbeweging close-up — HI GRIP zool zichtbaar",
-    "DM Instagram", "Hoog", "Gevonden #tennisnl. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@jurrebraaf", "Instagram", "verifieer", "verifieer",
-    "Tennis", "NL naam, gevonden via #tennisnederland — klinkt als persoonlijke creator",
-    "NL tenniscreator met eigen naam = authentieke merkfit",
-    "Trainingsvlog: footwork-routine met HI GRIP in beeld",
-    "DM Instagram", "Hoog", "Gevonden #tennisnederland. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@wiboplijnaar", "Instagram", "verifieer", "verifieer",
-    "Tennis", "Nederlandse naam, gevonden via #tennisnederland",
-    "NL tenniscreator — als video-first en eigen gezicht klopt dan directe match",
-    "Slow-mo footwork: HI GRIP zool in iedere stap",
-    "DM Instagram", "Medium", "Gevonden #tennisnederland. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@karsten_tennis", "Instagram", "verifieer", "verifieer",
-    "Tennis", "Persoonlijk account met tennis in naam — gevonden via #tennisnl",
-    "Eigen naam + tennis = herkenbaarheid, past bij HI GRIP authentiek profiel",
-    "Tip-reel: bewegingsdetail met HI GRIP",
-    "DM Instagram", "Medium", "Gevonden #tennisnl. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@effensii", "Instagram", "~229 volgers ✓", "~692 views",
-    "Tennis", "Gevonden via #tennisreels — 692 gem. views, 229 volgers, 10 reels",
-    "Kleine account met verrassend goede views per reel = authentiek bereik",
-    "Reel: rallymomenten met HI GRIP zool bij elke beweging close-up",
-    "DM Instagram", "Hoog", "Scraper: 229 volgers, 692 views, 10 reels ✓. Check: NL? eigen gezicht? video-first?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@shereenstennis", "Instagram", "~700 volgers ✓", "verifieer",
-    "Tennis", "Shereen — NL naam, persoonlijk account met tennis in naam, gevonden via #tennisreels",
-    "Persoonlijke NL tennis-creator = directe HI GRIP fit als views en content kloppen",
-    "Match-reel: voetbeweging close-up — HI GRIP zool zichtbaar bij elke afzet",
-    "DM Instagram", "Hoog", "Scraper: ~700 volgers ✓, views niet geladen. Check: eigen gezicht? views >5K? actief?"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Tennis — vlog / progressie", "Eigen gezicht in iedere reel, deelt zijn tennis-leven — zelfde vibe als @timtopspin",
-    "Journey-content: speler groeit mee met HI GRIP als vaste kit-keuze",
-    "Trainingsvlog: 'deze week gefocust op footwork — HI GRIP maakt echt verschil'",
-    "DM platform", "Hoog", "Kijk wie reageert op @timtopspin content — kleine actieve volgers zijn zelf creators"); r += 1
 
-# PADEL
-section_header(ws, r, "── PADEL ──", "E8F5E9"); r += 1
-add_row(ws, r, "📌 Referentie", "@jospadel", "Instagram", "verifieer <5K", "verifieer >5K",
-    "Padel", "Jo's Padel Pointers — tips, uitleg, eigen persoonlijkheid op court",
-    "Persoonlijke padel-uitleg = HI GRIP past als performance-detail in iedere tip-reel",
-    "Tip-reel: 'voor deze beweging heb je grip nodig — HI GRIP is mijn keuze'",
-    "DM Instagram", "Zeer hoog", "REFERENTIE voor stijl — zoek NL versie: tips + eigen gezicht + court"); r += 1
-add_row(ws, r, "🔎 Gevonden", "@menno.nolten", "Instagram", "~3K ✓", "verifieer >5K",
-    "Padel", "Post eigen wedstrijdclips en trainingsmomentjes — geen grote show, gewoon zijn spel",
-    "Klein maar geloofwaardig — meerdere merksponsordeals, publiek vertrouwt zijn keuzes",
-    "Match close-up: snelle diagonaal + HI GRIP zool: 'mijn geheim voor grip in de hoek'",
-    "DM Instagram", "Hoog", "Menno Nolten, ~3K volgers ✓. Verifieer: views >5K per reel?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@shez_n_padel", "Instagram", "verifieer", "verifieer >5K",
-    "Padel", "Gevonden via #padelnederland — nog te checken of content-stijl persoonlijk is",
-    "Potentieel goede NL padel-creator als content klopt",
-    "Court-reel: HI GRIP zool zichtbaar bij iedere stap",
-    "DM Instagram", "Hoog", "Alles te verifiëren: <5K? Eigen gezicht? Reels? NL publiek?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@alainappelboom", "Instagram", "~671 volgers ✓", "~988 views",
-    "Padel", "NL naam (appelboom), 671 volgers, ~1K gem. views — gevonden via #padelnederland, 12 reels",
-    "NL naam + padel + bijna 1K views per reel = sterke merkfit als content persoonlijk is",
-    "Padel tip-reel: explosieve stap — 'grip begint bij je zool' met HI GRIP zichtbaar",
-    "DM Instagram", "Hoog", "Scraper: 671 volgers, 988 views, 12 reels ✓. Check: eigen gezicht? NL? actief?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@padelverde_herten", "Instagram", "~732 volgers ✓", "~869 views",
-    "Padel", "Padel account uit Herten (NL, Limburg) — 732 volgers, 869 gem. views",
-    "Lokale NL creator met goede views = authentiek publiek, geografisch bereik past bij HI GRIP",
-    "Court-reel: eigen stijl op de baan — HI GRIP zool bij iedere sidestep in beeld",
-    "DM Instagram", "Hoog", "Scraper: 732 volgers, 869 views, 12 reels ✓. Herten = NL ✓. Check: eigen gezicht?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@padelbroeders", "Instagram", "~538 volgers ✓", "verifieer",
-    "Padel", "'Broeders' = NL woord, 538 volgers, gevonden via #padelnl",
-    "Duo/broers-format = herkenbaar en persoonlijk, groot potentieel als views kloppen",
-    "Challenge-reel: broer vs broer op de baan — HI GRIP als kit-detail in de prep",
-    "DM Instagram", "Medium", "Scraper: 538 volgers ✓, views niet geladen. Check: views per reel? eigen gezicht?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@padelbarendrecht", "Instagram", "~650 volgers ✓", "verifieer",
-    "Padel", "Padel account uit Barendrecht (NL, Zuid-Holland) — 650 volgers",
-    "Lokale NL padel-creator — geografisch NL publiek gegarandeerd als account persoonlijk is",
-    "Match clip: snelle beweging op court — HI GRIP zool zichtbaar bij elke cut",
-    "DM Instagram", "Medium", "Scraper: 650 volgers ✓, views niet geladen. Barendrecht = NL ✓. Check: eigen gezicht?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@padel25haarlem", "Instagram", "~741 volgers ✓", "verifieer",
-    "Padel", "Padel account uit Haarlem (NL) — 741 volgers",
-    "Haarlem-based padel creator = NL publiek ✓, klopt qua doelgroep als content persoonlijk is",
-    "Court-reel: wedstrijdmoment — HI GRIP als kit-detail in iedere afzet",
-    "DM Instagram", "Medium", "Scraper: 741 volgers ✓, views niet geladen. Haarlem = NL ✓. Check: eigen gezicht?"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Padel — tips / journey NL", "NL versie van @jospadel: tips geven met eigen gezicht, progressie tonen",
-    "Tip + HI GRIP = organische samenwerking: het product past in de tip",
-    "Tip-reel: 'stap sneller zetten? Grip begint bij je zool' — HI GRIP in beeld",
-    "DM platform", "Zeer hoog", "Zoek #padelnl — kijk wie reageert op @menno.nolten content"); r += 1
+# ── profiel data ──────────────────────────────────────────────────────────────
 
-# VOETBAL
-section_header(ws, r, "── VOETBAL ──", "E3F2FD"); r += 1
-add_row(ws, r, "✅ Bevestigd", "@finnpicard_", "Instagram", "verifieer <5K", "verifieer >5K",
-    "Voetbal / Sport", "Eigen karakter in iedere post — sportcontent met een persoonlijk gezicht",
-    "Authentieke personal creator — HI GRIP past als vanzelfsprekend kit-detail",
-    "Skills clip: eigen benen, eigen zool — HI GRIP zichtbaar in de beweging",
-    "DM Instagram", "Hoog", "Door lars aangedragen. Verifieer: <5K volgers? Views >5K per video?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@iamyasinflits", "Instagram", "verifieer", "verifieer",
-    "Voetbal / Panna", "'Yasine Flits' — panna/straatvoetbal creator met persoonlijke branding",
-    "Panna + eigen naam + NL = sterke authentieke fit voor HI GRIP",
-    "Panna-clip: voetplaatsing close-up — 'de grip in mijn zool geeft me die fractie extra control'",
-    "DM Instagram", "Zeer hoog", "Gevonden #pannavoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@joelvandun", "Instagram", "verifieer", "verifieer",
-    "Voetbal / Straatvoetbal", "Joel van Dun — NL naam, gevonden via #straatvoetbal",
-    "NL straatvoetbal met eigen naam = geloofwaardig en herkenbaar profiel",
-    "Straatvoetbal clip: eigen stijl op court — HI GRIP als kit-detail",
-    "DM Instagram", "Hoog", "Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@boazsmits11", "Instagram", "verifieer", "verifieer",
-    "Voetbal / Straatvoetbal", "Boaz Smits — typisch NL naam, gevonden via #straatvoetbal",
-    "Persoonlijke creator met eigen voetbalstijl = HI GRIP fit als content klopt",
-    "Voetbal clip: moves op straat — HI GRIP zool in iedere afzet zichtbaar",
-    "DM Instagram", "Hoog", "Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔎 Verifieer", "@bergdelano27", "Instagram", "verifieer", "verifieer",
-    "Voetbal / Straatvoetbal", "Delano Berg — NL naam, gevonden via #straatvoetbal",
-    "Straatvoetbal creator met persoonlijke stijl — goede merkfit als views en content kloppen",
-    "Street skills clip: HI GRIP zool bij iedere cut en afzet in beeld",
-    "DM Instagram", "Medium", "Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Voetbal — panna / street", "Panna-content: straatvoetbal-moves, eigen stijl, eigen karakter",
-    "Panna-beweging = voetafzet + grip — HI GRIP zool zichtbaar bij iedere move",
-    "Panna-clip: 'de sleutel is je voetplaatsing — HI GRIP geeft je die control'",
-    "DM platform", "Zeer hoog", "Kijk wie reageert op @finnpicard_ en @iamyasinflits content"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "TikTok / Instagram", "<5K", ">5K views",
-    "Voetbal — training / matchvlog", "Creator die zijn voetbalseizon deelt — trainingen, wedstrijden, progressie",
-    "Serieuze speler = serieuze kit — HI GRIP als vast onderdeel van zijn prep",
-    "Matchvlog: 'mijn routine voor de wedstrijd' — HI GRIP als eerste onderdeel van aankleden",
-    "TikTok DM", "Hoog", "Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "TikTok", "<5K", ">5K views",
-    "Zaalvoetbal / Futsal", "Indoor creator — wedstrijdvlog, training, eigen stem voor de camera",
-    "Indoor court = gripsokken IN zaalschoen: sterkste productuse case van alle voetbalformats",
-    "Prep-vlog: 'mijn ritual voor de wedstrijd' — HI GRIP als eerste ding dat aangetrokken wordt",
-    "TikTok DM", "Zeer hoog", "Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks"); r += 1
+def get_reel_views(page, username):
+    """
+    Open /reels/ tab van het profiel.
+    Methode 1: pak view-counts uit de thumbnail-overlays via JS.
+    Methode 2 (fallback): open individuele reels en lees views uit body-tekst.
+    Geeft gemiddelde views van laatste ≤6 reels terug (0 = geen data).
+    """
+    try:
+        page.goto(
+            f"https://www.instagram.com/{username}/reels/",
+            wait_until="domcontentloaded",
+            timeout=12000,
+        )
+        time.sleep(2)
 
-# RUGBY
-section_header(ws, r, "── RUGBY ──", "F3E5F5"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Rugby — speler vlog", "Rugby-speler die zijn wedstrijd- en trainingsleven deelt",
-    "Rugby = grip-sport nummer 1: explosieve start, tackle, run — HI GRIP use case zit overal",
-    "Wedstrijdvlog: warme fase + 'zo kleed ik me aan' — HI GRIP als prep-detail",
-    "DM platform", "Hoog", "Vorige kandidaat (@monty_lev) bleek privé-account. Zoek via @rugby.nederland @ereklasserugby followers"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Rugby — speler vlog", "Speler die zijn rugby-leven deelt — training, wedstrijd, humor in de kleedkamer",
-    "Rugby = grip-sport nummer 1: voetstand bij tackle en run = HI GRIP use case",
-    "Wedstrijdvlog: warme fase + HI GRIP als prep-detail — 'zo bereid ik me voor'",
-    "DM platform", "Hoog", "Zoek via @rugby.nederland @ereklasserugby — kijk wie er reageert op hun posts"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "Instagram / TikTok", "<5K", ">5K views",
-    "Rugby — female", "Vrouwelijke rugby-creator — sport-lifestyle, eigen karakter, NL-gebaseerd",
-    "Groeiende doelgroep + niche-fit: rugbyvrouwen zijn nog weinig bereikt door sportmerken",
-    "Kit-video: 'mijn outfit voor de wedstrijd — inclusief HI GRIP want grip is alles in rugby'",
-    "DM platform", "Hoog", "Zoek: #damesrugby #rugbygirl #rugbynederland — kijk bij Pleuni Kievit / Famke Deelstra comments"); r += 1
+        # Methode 1 — view-counts zitten als tekst in de thumbnail-links
+        raw = page.evaluate("""
+            () => {
+                const links = document.querySelectorAll('a[href*="/reel/"]');
+                const out = [];
+                for (const lnk of links) {
+                    const spans = lnk.querySelectorAll('span');
+                    for (const s of spans) {
+                        const t = s.textContent.trim();
+                        if (/^\\d+(\\.\\d+)?\\s*[KkMm]?$/.test(t) && !s.children.length) {
+                            out.push(t);
+                            break;
+                        }
+                    }
+                    if (out.length >= 6) break;
+                }
+                return out;
+            }
+        """)
+        counts = [parse_count(v) for v in (raw or []) if parse_count(v) > 100]
+        if counts:
+            avg = int(sum(counts) / len(counts))
+            print(f"      views (grid): {counts} → gem. {avg:,}")
+            return avg
 
-# BASKETBALL
-section_header(ws, r, "── BASKETBALL ──", "FCE4EC"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "TikTok", "<5K", ">5K views",
-    "Basketball — skills / vlog", "Eigen persoonlijkheid op court — praat naar camera, deelt zijn basketball-leven",
-    "Court-cuts op hardcourt = sterkste visuele HI GRIP use case: grip bij iedere stop en cut",
-    "Court-vlog: 'wat zit er in mijn tas' — HI GRIP als vast onderdeel van zijn kit",
-    "TikTok DM", "Zeer hoog", "Basketball <5K NL creators zijn schaars. Zoek via @3x3nl @basketballnederland"); r += 1
-add_row(ws, r, "🔍 Zoeken", "→ vul in", "TikTok / Instagram", "<5K", ">5K views",
-    "Streetball / 3x3", "Outdoor court, urban energie, casual maar eigen stijl — geen highlight-reel maar echt verhaal",
-    "Urban vibe matcht HI GRIP look: zwart/wit, performance, street",
-    "Session-vlog op outdoor court: HI GRIP zool bij iedere stop en cut in beeld",
-    "DM platform", "Hoog", "Zoek: #streetballnl #3x3nl — kijk bij @3x3nl followers, klein en actief"); r += 1
+        # Methode 2 — klik tot 4 individuele reels open
+        reel_links = page.query_selector_all("a[href*='/reel/']")
+        if not reel_links:
+            return 0
 
-ws.freeze_panes = "B2"
-ws.auto_filter.ref = f"A1:{get_column_letter(len(headers))}{r - 1}"
+        counts = []
+        for link in reel_links[:4]:
+            try:
+                href = link.get_attribute("href") or ""
+                if not href.startswith("/"):
+                    href = "/" + href.lstrip("/")
+                page.goto(
+                    f"https://www.instagram.com{href}",
+                    wait_until="domcontentloaded",
+                    timeout=12000,
+                )
+                time.sleep(2)
 
-output_path = r"C:\Users\lars\Downloads\HiGrip_Nano_Influencers_NL.xlsx"
-wb.save(output_path)
-print(f"Saved: {output_path}")
+                body = page.inner_text("body")
+                # Instagram toont "X weergaven" of "X views" of "X keer bekeken"
+                m_v = re.search(
+                    r"([\d.,]+\s*[KkMm]?)\s*(weergaven?|views?|keer bekeken)",
+                    body, re.I,
+                )
+                if m_v:
+                    c = parse_count(m_v.group(1))
+                    if c > 0:
+                        counts.append(c)
+
+                # Also try: big number right before a play/like section
+                # Sometimes shown as plain number in a span
+                js_view = page.evaluate("""
+                    () => {
+                        // Views often appear in a specific section near video controls
+                        const all = document.querySelectorAll('span[class]');
+                        for (const el of all) {
+                            const t = el.textContent.trim();
+                            if (/^\\d+(\\.\\d+)?[KkMm]?$/.test(t) && !el.children.length) {
+                                return t;
+                            }
+                        }
+                        return null;
+                    }
+                """)
+                if js_view and not counts:
+                    c = parse_count(js_view)
+                    if c > 100:
+                        counts.append(c)
+
+                page.go_back()
+                time.sleep(1)
+            except:
+                try:
+                    page.go_back()
+                except:
+                    pass
+                time.sleep(0.5)
+
+        if counts:
+            avg = int(sum(counts) / len(counts))
+            print(f"      views (individueel): {counts} → gem. {avg:,}")
+            return avg
+
+    except Exception as e:
+        pass
+
+    return 0
+
+
+def get_profile_data(page, username):
+    """
+    Laad het profiel, check privé, pak volgers en gem. reel-views.
+    Returns: (followers, avg_views, bio, is_private)
+    """
+    try:
+        page.goto(
+            f"https://www.instagram.com/{username}/",
+            wait_until="domcontentloaded",
+            timeout=15000,
+        )
+        time.sleep(2)
+
+        # Privé-check
+        try:
+            body_text = page.inner_text("body")
+        except:
+            body_text = ""
+
+        if "Dit account is privé" in body_text or "This Account is Private" in body_text:
+            return None, None, None, True
+
+        # Volgers uit zichtbare body-tekst
+        followers = 0
+        m_fol = re.search(
+            r"([\d.,\xa0]+\s*[KkMm]?)\s*(volgers?|followers?)",
+            body_text, re.I,
+        )
+        if m_fol:
+            followers = parse_count(m_fol.group(1))
+
+        # Fallback: page title
+        if followers == 0:
+            try:
+                title = page.title()
+                m_t = re.search(r"([\d.,]+[KkMm]?)\s*(volgers?|followers?)", title, re.I)
+                if m_t:
+                    followers = parse_count(m_t.group(1))
+            except:
+                pass
+
+        # Bio
+        bio = ""
+        try:
+            bio_el = page.query_selector("section main header section span")
+            if bio_el:
+                bio = bio_el.inner_text().strip()[:120]
+        except:
+            pass
+
+        # Reel views (dit is de kernmeting)
+        avg_views = get_reel_views(page, username)
+
+        return followers, avg_views, bio, False
+
+    except Exception as e:
+        return None, None, None, False
+
+
+# ── hashtag scrapen ───────────────────────────────────────────────────────────
+
+def get_post_usernames(page, hashtag):
+    """Open hashtagpagina, klik posts open, pak username uit overlay."""
+    url = f"https://www.instagram.com/explore/tags/{hashtag}/"
+    print(f"  📷 #{hashtag}")
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=20000)
+    except:
+        page.goto(url, timeout=20000)
+    time.sleep(3)
+    dismiss_cookies(page)
+    time.sleep(1)
+
+    usernames = []
+    seen = set()
+
+    for _ in range(2):
+        page.evaluate("window.scrollBy(0, 800)")
+        time.sleep(1.5)
+
+    post_links = page.query_selector_all("a[href*='/p/']")
+    print(f"    {len(post_links)} post-links gevonden")
+
+    for link in post_links[:POSTS_PER_TAG]:
+        try:
+            href = link.get_attribute("href") or ""
+            if "/p/" not in href:
+                continue
+            link.click()
+            time.sleep(2.5)
+
+            uname = None
+            for sel in [
+                "article header a[href]:not([href*='/p/'])",
+                "div[role='dialog'] header a[href]:not([href*='/p/'])",
+                "div[role='dialog'] a[role='link'][href^='/']:not([href*='/p/'])",
+                "header section a[href^='/']:not([href*='/p/'])",
+            ]:
+                try:
+                    el = page.query_selector(sel)
+                    if el:
+                        h = (el.get_attribute("href") or "").strip("/").split("/")[0]
+                        if h and len(h) > 1 and "." not in h and h not in seen:
+                            uname = h
+                            break
+                except:
+                    pass
+
+            if not uname:
+                try:
+                    cur_url = page.url
+                    m = re.search(r"instagram\.com/([^/]+)/p/", cur_url)
+                    if m:
+                        uname = m.group(1)
+                except:
+                    pass
+
+            if uname and uname not in seen:
+                seen.add(uname)
+                usernames.append(uname)
+                print(f"    → @{uname}")
+
+            page.keyboard.press("Escape")
+            time.sleep(1)
+        except Exception:
+            try:
+                page.keyboard.press("Escape")
+            except:
+                pass
+            time.sleep(0.5)
+
+    return usernames
+
+
+# ── main ──────────────────────────────────────────────────────────────────────
+
+def main():
+    results = []
+    seen_profiles = set()
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=False,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+            ignore_default_args=["--enable-automation"],
+        )
+        context = browser.new_context(
+            viewport={"width": 1280, "height": 900},
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+        )
+
+        if os.path.exists(SESSION_FILE):
+            with open(SESSION_FILE) as f:
+                context.add_cookies(json.load(f))
+            print(f"Sessie geladen")
+
+        page = context.new_page()
+        Stealth().apply_stealth_sync(page)
+        page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=25000)
+        time.sleep(3)
+        print("✅ Browser open")
+
+        for sport, tags in HASHTAGS.items():
+            print(f"\n{'='*40}")
+            print(f"SPORT: {sport}")
+            print(f"{'='*40}")
+
+            sport_users = []
+            for tag in tags:
+                unames = get_post_usernames(page, tag)
+                sport_users.extend(unames)
+                time.sleep(2)
+
+            unique_users = []
+            for u in sport_users:
+                if u not in seen_profiles:
+                    seen_profiles.add(u)
+                    unique_users.append(u)
+
+            print(f"\n  🔍 {len(unique_users)} unieke profielen checken voor {sport}...")
+
+            for uname in unique_users:
+                time.sleep(1.5)
+                followers, avg_views, bio, is_private = get_profile_data(page, uname)
+
+                if is_private:
+                    print(f"    🔒 @{uname} — privé")
+                    continue
+                if followers is None:
+                    print(f"    ⚠️  @{uname} — laden mislukt")
+                    continue
+
+                views_ok     = avg_views >= MIN_AVG_VIEWS
+                followers_ok = followers == 0 or followers <= MAX_FOLLOWERS
+                # (followers == 0 = kon niet uitlezen, niet direct afwijzen)
+
+                if not views_ok:
+                    views_str = f"{avg_views:,}" if avg_views else "?"
+                    print(f"    ✗  @{uname} — {views_str} gem. views (te weinig)")
+                    continue
+
+                if followers > 0 and followers > MAX_FOLLOWERS:
+                    print(f"    ✗  @{uname} — {followers:,} volgers (te veel)")
+                    continue
+
+                result = {
+                    "sport":      sport,
+                    "handle":     f"@{uname}",
+                    "url":        f"https://www.instagram.com/{uname}/",
+                    "followers":  followers,
+                    "avg_views":  avg_views,
+                    "bio":        bio or "",
+                }
+                results.append(result)
+                fol_str  = f"{followers:,}" if followers else "?"
+                view_str = f"{avg_views:,}" if avg_views else "?"
+                print(f"    ✅ @{uname} — {fol_str} volgers | {view_str} gem. views | {bio[:50]}")
+
+            time.sleep(3)
+
+        browser.close()
+
+    # ── output schrijven ──
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("HIGRIP — Gevonden creators op Instagram\n")
+        f.write("Primair filter: gem. reel-views > 5K | Secundair: volgers ≤ 5K\n")
+        f.write("=" * 60 + "\n\n")
+        for sport in HASHTAGS:
+            sport_results = [r for r in results if r["sport"] == sport]
+            f.write(f"\n── {sport.upper()} ({len(sport_results)} gevonden) ──\n")
+            for r in sport_results:
+                fol_str  = f"{r['followers']:,}" if r["followers"] else "onbekend"
+                view_str = f"{r['avg_views']:,}" if r["avg_views"] else "onbekend"
+                f.write(f"  {r['handle']:30s} {fol_str:>8} volgers | {view_str:>8} gem. views\n")
+                f.write(f"  {r['url']}\n")
+                if r["bio"]:
+                    f.write(f"  Bio: {r['bio']}\n")
+                f.write("\n")
+
+    print(f"\n\n✅ {len(results)} creators gevonden → {OUTPUT_FILE}")
+    for r in results:
+        fol_str  = f"{r['followers']:,}" if r["followers"] else "?"
+        view_str = f"{r['avg_views']:,}" if r["avg_views"] else "?"
+        print(f"  {r['sport']:12} {r['handle']:28} {fol_str:>7} volgers | {view_str:>8} gem. views  {r['url']}")
+
+
+if __name__ == "__main__":
+    main()
 ```
 
 ---

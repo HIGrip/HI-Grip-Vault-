@@ -64,11 +64,11 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 ### Rugby
 
-| Kanaal             | Zoektermen                                                                 |
-| ------------------ | -------------------------------------------------------------------------- |
-| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife                      |
-| TikTok             | rugby nederland vlog · rugby training nl · rugby speler                    |
-| Slimste plek       | Kijk bij @rugby.nederland / @ereklasserugby — kleine creators die reageren |
+| Kanaal             | Zoektermen                                              |
+| ------------------ | ------------------------------------------------------- |
+| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife   |
+| TikTok             | rugby nederland vlog · rugby training nl · rugby speler |
+| Slimste plek       |                                                         |
 
 ### Basketball
 
@@ -76,7 +76,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | ------------------ | ---------------------------------------------------------- |
 | Instagram hashtags | #basketballnl · #dutchhoops · #streetballnl · #3x3nl       |
 | TikTok             | basketball nederland · streetball nl · 3x3 basketball vlog |
-| Slimste plek       | Kijk bij @3x3nl volgers — actieve kleine creators          |
+| Slimste plek       |                                                            |
 
 ---
 
@@ -90,8 +90,8 @@ Referentie-accounts om reacties te scannen:
 - Tennis: @timtopspin
 - Padel: @menno.nolten · @jospadel
 - Voetbal: 
-- Rugby: @rugby.nederland · @ereklasserugby
-- Basketball: @3x3nl · @basketballnederland
+- Rugby:
+- Basketball: 
 
 ---
 

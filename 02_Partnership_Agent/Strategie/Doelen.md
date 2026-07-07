@@ -12,8 +12,8 @@
 
 **Maandelijks doel (voorstel — nog niet officieel vastgesteld):**
 - Minimaal 1 nieuwe **bevestigde** samenwerking per maand
-- Minimaal 3–5 nieuwe kandidaten per maand toevoegen aan de database (status Gevonden/Verifieer)
-- Prioriteit: eerst de "Zeer hoog"-prioriteit lege plekken vullen (panna/street, zaalvoetbal, basketball skills/vlog)
+- Minimaal 3–5 nieuwe kandidaten per week toevoegen aan de database (status Gevonden/Verifieer)
+- Prioriteit: eerst de "Zeer hoog"-prioriteit lege plekken vullen voetbal, basketbal
 
 ---
 

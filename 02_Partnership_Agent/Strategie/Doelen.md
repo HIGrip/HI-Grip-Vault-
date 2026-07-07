@@ -1,16 +1,6 @@
-# Strategie — HÏ Grip Zoek Agent (overkoepelend)
+# Doelen — HÏ Grip Zoek Agent
 
-> Dit is de strategie voor de overkoepelende **zoek agent** (Partnership Agent): wat zijn de doelen van alle drie de zoeklijnen samen, hoeveel per maand moet er gebeuren, en wat moet daarvoor worden uitgevoerd. Dit gaat niet over content posten (dat is de Content Agent, `01_Content_Agent`) maar over het vinden en binnenhalen van influencers, B2B klanten en samenwerkingen. Details per lijn staan in de submappen. Financiële/roadmap-basis: [[Strategische Keuzes]] (00_Brand_Core).
-
----
-
-## De drie zoeklijnen
-
-| Lijn | Doel | Map |
-|---|---|---|
-| **1. Influencers & Content Creators** | Sport-influencers vinden voor gifting/betaalde content | `Influencers_Creators/` |
-| **2. B2B Klanten** | Vaste inkoop-klanten (clubs, sportscholen, retail) | `B2B_Samenwerkingen/Lijn A - B2B Klanten/` |
-| **3. Samenwerkingen & Events** | Sponsoring/activaties bij events voor zichtbaarheid | `B2B_Samenwerkingen/Lijn B - Samenwerkingen/` |
+> Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.
 
 ---
 
@@ -24,12 +14,6 @@
 - Minimaal 1 nieuwe **bevestigde** samenwerking per maand
 - Minimaal 3–5 nieuwe kandidaten per maand toevoegen aan de database (status Gevonden/Verifieer)
 - Prioriteit: eerst de "Zeer hoog"-prioriteit lege plekken vullen (panna/street, zaalvoetbal, basketball skills/vlog)
-
-**Wat moet er gebeuren:**
-1. Zoeken via [[Zoek Script & Gids]] (hashtags/script per sport)
-2. Toetsen aan [[Evaluatiecriteria]]
-3. Outreach via [[Outreach Templates]]
-4. Bijhouden in [[Influencer Database]] en [[Pipeline Tracker]]
 
 ---
 
@@ -53,13 +37,6 @@
 - **2027:** +10 op 12 maanden → **gemiddeld 1 nieuwe klant per maand** (grootste groeijaar)
 - **2028–2031:** +5 op 12 maanden → gemiddeld 1 nieuwe klant per 2–3 maanden
 
-**Wat moet er gebeuren** (zie [[Partnership Strategie]] voor volledige aanpak):
-1. Identificeer partner via [[Ideale Partner Profiel]]
-2. Outreach via [[Outreach Templates]] (bellen/mailen)
-3. Opvolging via [[Pipeline Tracker]]
-4. Prioriteit: pilates/sportscholen eerst, dan sportclubs, dan performance retailers
-5. Kandidaten die nog niet benaderd zijn: zie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]
-
 ---
 
 ## 3. Samenwerkingen & Events (Lijn B)
@@ -73,13 +50,6 @@
 - Minimaal 1 outreach-gesprek per maand starten vanuit de HOOG-lijst
 - Streefrichting: 2–4 actieve samenwerkingen per jaar (events zijn vaak seizoensgebonden, dus concentreren rond geschikte periodes)
 
-**Wat moet er gebeuren:**
-1. Zoeken via [[Zoek Script & Gids (Samenwerkingen)]]
-2. Toetsen aan [[Voorwaarden Samenwerking]] (criteria + uitsluitingen)
-3. Goedgekeurde kandidaten in [[Voorbeelden Gevonden Organisaties (Events)]]
-4. Outreach starten, bijhouden in [[Pipeline Tracker]]
-5. Actief lopende samenwerkingen in [[Actieve Samenwerkingen (Events)]]
-
 ---
 
 ## Openstaande vragen voor Lars
@@ -92,8 +62,6 @@
 
 ## Gerelateerde bestanden
 
-- [[Strategische Keuzes]] — Financiële roadmap en omzetdoelen (00_Brand_Core)
-- [[Brand Identity Overview]] — Merkfundament
-- [[Partnership Strategie]] — Lijn A detail-aanpak
-- [[Samenwerking Strategie]] — Lijn B detail-aanpak
-- [[Evaluatiecriteria]] — Influencer-criteria
+- [[Overzicht]] — De drie zoeklijnen
+- [[Aanpak]] — Wat er per lijn moet gebeuren
+- [[Strategische Keuzes]] — Financiële roadmap (00_Brand_Core)

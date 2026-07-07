@@ -11,10 +11,14 @@
             "id": "f90726eea62d6631",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Grafiek weergave"
+              "type": "markdown",
+              "state": {
+                "file": "00_Brand_Core/Strategie/Strategische Keuzes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Strategische Keuzes"
             }
           }
         ]
@@ -179,6 +183,7 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "00_Brand_Core/Strategie/Concurrentieanalyse.md",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "00_Brand_Core/Doelgroep & Persona's.md",
@@ -207,7 +212,6 @@
     "Naamloos 2.base",
     "02_Partnership_Agent/B2B_Samenwerkingen/Pipeline Tracker.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/Outreach Templates.md",
-    "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/Merk & Bedrijf Database.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten",
     "02_Partnership_Agent/Influencers_Creators",

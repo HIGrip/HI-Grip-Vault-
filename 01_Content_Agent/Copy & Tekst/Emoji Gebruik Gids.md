@@ -33,3 +33,4 @@
 - [[Brand Voice & Tone of Voice]] — Tone of voice en schrijfstijl
 - [[Caption Gids per Platform]] — Hoe captions schrijven per platform
 - [[Hashtag Bibliotheek]] — Hashtags per platform
+- [[Logo & Kleurenpalet]] — Merkkleuren die de kleur-emoji's volgen

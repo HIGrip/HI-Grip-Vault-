@@ -6,7 +6,7 @@
 
 ## Positionering
 
-HÏ Grip positioneert zich als een **Nederlands performance gedreven sportswear merk** — want sporters moeten vertrouwen op hun gear en sportswear mag nooit een obstakel zijn voor presteren. We positioneren onszelf als **energiek, jong, deskundig, sportief, modern en presterend** naar sporters. Onze kernwaarden zijn **comfort, innovatie en vertrouwen**. Dit is de basis van presteren.
+HÏ Grip positioneert zich als een **Nederlands performance gedreven sportswear merk** — want sporters moeten vertrouwen op hun gear en sportswear mag nooit een obstakel zijn voor presteren. We positioneren onszelf als **energiek, jong, deskundig, sportief, modern en presterend** naar sporters. Onze kernwaarden zijn **comfort, innovatie en vertrouwen** (zie [[Brand Identity Overview]]). Dit is de basis van presteren.
 
 Content wordt beheerd en gepland via **Buffer, Canva en Adobe**.
 

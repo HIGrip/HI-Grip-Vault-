@@ -1,6 +1,6 @@
 # Partnership Strategie — HÏ Grip
 
-> Aanpak voor het binnenhalen en onderhouden van B2B partnerships (Lijn A: klanten/inkoop). Voor specifieke doelgroepen: zie [[Ideale Partner Profiel]]. Voor bel- en mailscripts: zie [[Outreach Templates]]. Voor samenwerkingen/events (Lijn B): zie [[Samenwerking Strategie]].
+> Aanpak voor het binnenhalen en onderhouden van B2B partnerships (Lijn A: klanten/inkoop) — dit bestaat om het merk te laten groeien, zie [[Brand Identity Overview]]. Voor specifieke doelgroepen: zie [[Ideale Partner Profiel]]. Voor bel- en mailscripts: zie [[Outreach Templates]]. Voor samenwerkingen/events (Lijn B): zie [[Samenwerking Strategie]].
 
 ---
 
@@ -59,3 +59,4 @@ Deze horen bij Lijn A (verkoop), ook al gebeurt de promotie vaak samen met de pa
 - [[Evaluatiecriteria]] — Hoe we (influencer-)samenwerkingen beoordelen
 - [[Strategische Keuzes]] — Roadmap en financiële doelen
 - [[Samenwerking Strategie]] — Lijn B: events/activaties in plaats van klanten
+- [[Brand Identity Overview]] — Merkfundament: waarom we deze klanten zoeken

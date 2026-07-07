@@ -1,7 +1,7 @@
 # Influencer Database — HÏ Grip
 
 > Bijgewerkt: 2026-06-24
-> Criteria: [[Evaluatiecriteria]] · Script: [[Zoek Script & Gids]] · Outreach: [[Outreach Templates]] · Pipeline: [[Pipeline Tracker]]
+> Criteria: [[Evaluatiecriteria]] · Script: [[Zoek Script & Gids]] · Outreach: [[Outreach Templates]] · Pipeline: [[Pipeline Tracker]] · Merkfundament: [[Brand Identity Overview]]
 
 ---
 

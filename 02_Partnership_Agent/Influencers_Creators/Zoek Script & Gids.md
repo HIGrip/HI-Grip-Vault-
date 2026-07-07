@@ -1,1 +1,919 @@
-"# Zoek Script & Gids — HÏ Grip Influencer Zoek Agent\n\n> Bijgewerkt: 2026-07-07\n> Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]\n\n---\n\n## Wat doet het script?\n\nHet Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v2: hashtag-scan, following-lijst-scan en commenter-scan zitten nu in één script (voorheen los in `ig_find_creators.py` + `ig_commenter_search.py`).\n\n**Drie bronnen per run:**\n\n1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.\n2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie [[project_ig_following]]). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.\n3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.\n\n**Profielbeoordeling (nieuw):** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count en post-datum. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers in dat geval.\n\n**Filters (uit [[Evaluatiecriteria]]):**\n\n| Filter | Waarde |\n|---|---|\n| Volgers | 500 – 100.000 |\n| Gem. views per post | ≥ 1.000 |\n| Engagement rate (ER%) | ≥ 2% |\n| Activiteit | ≥ 3 posts in de laatste 21 dagen |\n| Taal | NL-signaal in bio → anders status \"review\" i.p.v. automatisch afwijzen |\n| Dedupe | Handles die al in [[Influencer Database]] staan worden overgeslagen |\n\n**Output:** `C:\\Users\\lars\\Downloads\\HiGrip_Creators.txt`, met aparte secties \"KANDIDATEN\" en \"HANDMATIG CHECKEN (taal onduidelijk)\".\n\n**Huidige hashtag-configuratie (alleen voetbal):**\n- Voetbal_vlog: voetbalvlog, voetbalweekend, voetbalclips\n- Voetbal_panna: pannanederland, pannaskills, pannaspeler\n- Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler\n- Straatvoetbal: straatvoetbal, straatvoetballer, voetbalskills\n\n---\n\n## Script uitvoeren\n\n```\npip install playwright playwright-stealth\nplaywright install chromium\npython \"$env:USERPROFILE\\HI-Grip-claude-setup\\scripts\\ig_find_creators.py\"\n```\n\nVereist een opgeslagen IG-sessie in `C:\\Users\\lars\\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py` (lokaal, niet in de git-repo — bevat inloggegevens).\n\n---\n\n## Zoektermen per sport\n\n### Tennis\n\n| Kanaal             | Zoektermen                                                               |\n| ------------------ | ------------------------------------------------------------------------ |\n| Instagram hashtags | #tennisnederland · #tennisnl · #tennismatch · #tennislife · #tennisreels |\n| TikTok             | tennis vlog nl · tennis journey nederland · tennis training              |\n| Slimste plek       | Kijk wie reageert op @timtopspin / @tennistomy posts                     |\n\n### Padel\n\n| Kanaal | Zoektermen |\n|---|---|\n| Instagram hashtags | #padelnederland · #padelholland · #padellife · #padelmatch · #padelnl · #padelrotterdam · #padelen |\n| TikTok | padel vlog nl · padel progressie nederland · padel journey |\n| Slimste plek | Kijk bij comments op @menno.nolten reels |\n\n### Voetbal\n\n| Kanaal             | Zoektermen                                                                                |\n| ------------------ | ----------------------------------------------------------------------------------------- |\n| Instagram hashtags | #voetbalnederland · #skillsnl · #zaalvoetbal · #futsalnl · #pannavoetbal · #straatvoetbal |\n| TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |\n| Slimste plek       | Kijk wie reageert op @iamyasinflits posts                                                 |\n\n### Rugby\n\n| Kanaal             | Zoektermen                                              |\n| ------------------ | ---------------------------------------------------- |\n| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife   |\n| TikTok             | rugby nederland vlog · rugby training nl · rugby speler |\n| Slimste plek       | Kijk wie reageert op @prorugby_nl posts               |\n\n### Basketball\n\n| Kanaal             | Zoektermen                                                 |\n| ------------------ | ---------------------------------------------------------- |\n| Instagram hashtags | #basketballnl · #dutchhoops · #streetballnl · #3x3nl       |\n| TikTok             | basketball nederland · streetball nl · 3x3 basketball vlog |\n| Slimste plek       | Kijk wie reageert op @tweeboomcourt / @3x3nl posts         |\n\n---\n\n## Slimste zoektruc\n\n> Zoek niet alleen op hashtag — **kijk wie reageert op posts van al bekende creators.**\n> Kleine actieve commenters zijn vaak zelf ook creators. Zoek daarnaast ook tussen de volgers ze volgen elkaar ook vaak.\n\nReferentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):\n\n- Tennis: @timtopspin\n- Padel: @menno.nolten · @jospadel\n- Voetbal: @iamyasinflits *(@finnpicard_ is bewust verwijderd — bevestigd geen voetbal-account)*\n- Rugby: @prorugby_nl\n- Basketball: @tweeboomcourt · @3x3nl\n\n---\n\n## Gerelateerde bestanden\n\n- [[Evaluatiecriteria]] — Alle selectie- en verificatiecriteria\n- [[Influencer Database]] — Overzicht van alle gevonden accounts (ook de bron voor automatische dedupe in het script)\n- [[Pipeline Tracker]] — Status per account (benaderd, in gesprek, actief)\n- [[Outreach Templates]] — DM templates per situatie\n\n---\n\n## Bijlage: volledige broncode (back-up)\n\n> Bron van waarheid is [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van het script moet deze kopie mee-geüpdatet worden (zie [[feedback_ig_script_sync]]).\n\n```python\n\"\"\"\nHI Grip - Instagram creator zoek-script (v2, samengevoegd).\n\nCombineert drie bronnen in een script:\n  1. Hashtag-scan per sport\n  2. Following-lijst van eigen/seed-accounts (curated shortlist)\n  3. Commenters op referentie-accounts per sport\n\nProfielbeoordeling gebeurt via Instagram's eigen web_profile_info JSON-endpoint\n(exacte cijfers, inclusief like/comment-counts en post-datums) i.p.v. het\nuitlezen van zichtbare, taal-afhankelijke tekst in de pagina. Als dat endpoint\neen keer faalt/geblokkeerd wordt, valt het script terug op de oudere\nDOM-scraping methode zodat een los profiel nooit de hele run laat crashen.\n\nFilters volgen Evaluatiecriteria.md in de Obsidian vault:\n  - Volgers: 500 - 100.000\n  - Gem. views per post: minimaal MIN_AVG_VIEWS\n  - Engagement rate (ER%): minimaal MIN_ER_PCT\n  - Activiteit: minimaal MIN_RECENT_POSTS posts in de laatste MAX_INACTIVE_DAYS dagen\n  - Taal: NL-signaal in bio (anders \"review\" i.p.v. automatische afwijzing)\n  - Dedupe tegen de bestaande Influencer Database (al gevonden/benaderd wordt overgeslagen)\n\"\"\"\nimport sys, time, json, os, re\nfrom datetime import datetime, timezone\n\nsys.stdout.reconfigure(encoding=\"utf-8\")\n\nfrom playwright.sync_api import sync_playwright\nfrom playwright_stealth import Stealth\n\nSESSION_FILE = r\"C:\\Users\\lars\\.ig_session.json\"\nOUTPUT_FILE  = r\"C:\\Users\\lars\\Downloads\\HiGrip_Creators.txt\"\nDATABASE_FILE = r\"C:\\Users\\lars\\Documents\\ObsidianVault\\02_Partnership_Agent\\Influencers_Creators\\Influencer Database.md\"\n\nIG_APP_ID = \"936619743392459\"  # publieke web-app-id die instagram.com zelf gebruikt\n\n# ── Bronnen ──────────────────────────────────────────────────────────────────\n\n# Following-lijst van deze account(s) scannen (bv. het eigen HI Grip account —\n# dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.\nSEED_ACCOUNTS = []\n\nHASHTAGS = {\n    \"Voetbal_vlog\":     [\"voetbalvlog\", \"voetbalweekend\", \"voetbalclips\"],\n    \"Voetbal_panna\":    [\"pannanederland\", \"pannaskills\", \"pannaspeler\"],\n    \"Zaalvoetbal\":      [\"zaalvoetbal\", \"futsalnederland\", \"futsalspeler\"],\n    \"Straatvoetbal\":    [\"straatvoetbal\", \"straatvoetballer\", \"voetbalskills\"],\n}\nPOSTS_PER_TAG = 20\n\n# Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.\n# LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).\nREFERENCE_ACCOUNTS = {\n    \"Tennis\":     [\"timtopspin\"],\n    \"Padel\":      [\"jospadel\", \"menno.nolten\"],\n    \"Voetbal\":    [\"iamyasinflits\"],\n    \"Basketball\": [\"tweeboomcourt\", \"3x3nl\"],\n    \"Rugby\":      [\"prorugby_nl\"],\n}\nREELS_PER_REF_ACCOUNT = 5\n\n# Accounts die nooit meegenomen mogen worden, ongeacht bron.\nEXCLUDED_ACCOUNTS = {\"finnpicard_\"}\n\n# ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────\n\nMIN_FOLLOWERS     = 500\nMAX_FOLLOWERS     = 100_000\nMIN_AVG_VIEWS     = 1_000\nMIN_ER_PCT        = 2.0\nMAX_INACTIVE_DAYS = 21   # \"3 posts in de afgelopen 3 weken\"\nMIN_RECENT_POSTS  = 3\n\nDUTCH_HINTS = re.compile(\n    r\"\\b(en|de|het|een|met|voor|niet|jij|jouw|mijn|wij|onze|nederland|nederlandse|\"\n    r\"amsterdam|rotterdam|utrecht|eindhoven|nl|holland|belgie|belgië)\\b\",\n    re.I,\n)\n\n\n# ── auth ─────────────────────────────────────────────────────────────────────\n\ndef dismiss_cookies(page):\n    for sel in [\n        \"button:has-text('Alle cookies toestaan')\",\n        \"button:has-text('Allow all cookies')\",\n        \"button:has-text('Accepteren')\",\n    ]:\n        try:\n            page.click(sel, timeout=3000)\n            time.sleep(1)\n            return\n        except Exception:\n            pass\n\n\ndef is_logged_in(page):\n    try:\n        page.wait_for_selector(\n            'a[href=\"/direct/inbox/\"], svg[aria-label=\"Direct\"], nav a[href=\"/\"]',\n            timeout=5000,\n        )\n        return True\n    except Exception:\n        return False\n\n\ndef login(context, page):\n    from ig_search_higrip import USERNAME, PASSWORD\n\n    page.goto(\"https://www.instagram.com/\", timeout=30000)\n    time.sleep(3)\n    dismiss_cookies(page)\n    try:\n        page.wait_for_load_state(\"networkidle\", timeout=10000)\n    except Exception:\n        pass\n    time.sleep(2)\n\n    if is_logged_in(page):\n        print(\"Ingelogd via sessie\\n\")\n        return\n\n    page.goto(\"https://www.instagram.com/accounts/login/\", timeout=30000)\n    try:\n        page.wait_for_load_state(\"networkidle\", timeout=10000)\n    except Exception:\n        pass\n    time.sleep(2)\n    dismiss_cookies(page)\n    time.sleep(1)\n\n    for sel in ['input[name=\"username\"]', 'input[autocomplete=\"username\"]', 'input[type=\"text\"]']:\n        try:\n            page.wait_for_selector(sel, timeout=6000)\n            page.fill(sel, USERNAME)\n            break\n        except Exception:\n            pass\n    time.sleep(0.5)\n    for sel in ['input[name=\"password\"]', 'input[type=\"password\"]']:\n        try:\n            page.wait_for_selector(sel, timeout=4000)\n            page.fill(sel, PASSWORD)\n            break\n        except Exception:\n            pass\n    time.sleep(0.5)\n    for sel in ['button[type=\"submit\"]', \"button:has-text('Aanmelden')\", \"button:has-text('Log in')\"]:\n        try:\n            page.click(sel, timeout=3000)\n            break\n        except Exception:\n            pass\n\n    try:\n        page.wait_for_load_state(\"networkidle\", timeout=20000)\n    except Exception:\n        pass\n    time.sleep(4)\n\n    if \"challenge\" in page.url or \"two_factor\" in page.url:\n        print(\"\\nVerificatie vereist. Los op in de browser en druk ENTER.\")\n        input(\"ENTER om door te gaan...\")\n        time.sleep(3)\n\n    for label in [\"Niet nu\", \"Not Now\", \"Nu niet\"]:\n        try:\n            page.click(f\"text={label}\", timeout=3000)\n            break\n        except Exception:\n            pass\n\n    try:\n        with open(SESSION_FILE, \"w\") as f:\n            json.dump(context.cookies(), f)\n        print(\"Ingelogd - sessie opgeslagen\\n\")\n    except Exception as e:\n        print(f\"Kon sessie niet opslaan: {e}\\n\")\n\n\n# ── helpers ──────────────────────────────────────────────────────────────────\n\ndef parse_count(text):\n    if not text:\n        return 0\n    text = str(text).strip().replace(\",\", \".\").replace(\"\\xa0\", \"\").replace(\" \", \"\")\n    m = re.search(r\"([\\d]+(?:[.,][\\d]+)?)\\s*([KkMm]?)\", text)\n    if not m:\n        return 0\n    num_str = m.group(1).replace(\",\", \".\")\n    try:\n        num = float(num_str)\n    except Exception:\n        return 0\n    suf = m.group(2).upper()\n    if suf == \"K\":\n        num *= 1_000\n    elif suf == \"M\":\n        num *= 1_000_000\n    return int(num)\n\n\ndef load_known_handles():\n    \"\"\"Leest bestaande handles uit de Influencer Database (dedupe: al gevonden/benaderd).\"\"\"\n    handles = set()\n    try:\n        with open(DATABASE_FILE, encoding=\"utf-8\") as f:\n            text = f.read()\n        for m in re.finditer(r\"\\[@([\\w.]+)\\]\\(https://www\\.instagram\\.com/\", text):\n            handles.add(m.group(1).lower())\n        print(f\"{len(handles)} bekende accounts geladen uit Influencer Database (dedupe)\\n\")\n    except Exception as e:\n        print(f\"Kon Influencer Database niet lezen voor dedupe ({e}) - ga verder zonder\\n\")\n    return handles\n\n\n# ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────\n\ndef fetch_profile_json(page, username):\n    \"\"\"Haalt profieldata op via Instagram's web_profile_info endpoint. None bij fout.\"\"\"\n    url = f\"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}\"\n    try:\n        resp = page.request.get(\n            url,\n            headers={\n                \"x-ig-app-id\": IG_APP_ID,\n                \"accept\": \"*/*\",\n                \"referer\": f\"https://www.instagram.com/{username}/\",\n            },\n        )\n        if resp.status != 200:\n            return None\n        data = resp.json()\n        return (data.get(\"data\") or {}).get(\"user\")\n    except Exception:\n        return None\n\n\ndef fetch_profile_dom_fallback(page, username):\n    \"\"\"\n    Oudere DOM-scraping methode, alleen als fallback wanneer het JSON-endpoint\n    faalt. Geeft geen ER%/activiteit terug (die info zit niet los in de DOM),\n    wel volgers/bio/gem. views zodat een profiel niet zomaar overgeslagen wordt.\n    \"\"\"\n    try:\n        page.goto(f\"https://www.instagram.com/{username}/\", wait_until=\"domcontentloaded\", timeout=15000)\n        time.sleep(2)\n        try:\n            body_text = page.inner_text(\"body\")\n        except Exception:\n            body_text = \"\"\n\n        if \"Dit account is privé\" in body_text or \"This Account is Private\" in body_text:\n            return {\"is_private\": True}\n\n        followers = 0\n        m_fol = re.search(r\"([\\d.,\\xa0]+\\s*[KkMm]?)\\s*(volgers?|followers?)\", body_text, re.I)\n        if m_fol:\n            followers = parse_count(m_fol.group(1))\n\n        bio = \"\"\n        try:\n            bio_el = page.query_selector(\"section main header section span\")\n            if bio_el:\n                bio = bio_el.inner_text().strip()[:150]\n        except Exception:\n            pass\n\n        avg_views = 0\n        try:\n            page.goto(f\"https://www.instagram.com/{username}/reels/\", wait_until=\"domcontentloaded\", timeout=12000)\n            time.sleep(2)\n            raw = page.evaluate(\"\"\"\n                () => {\n                    const links = document.querySelectorAll('a[href*=\"/reel/\"]');\n                    const out = [];\n                    for (const lnk of links) {\n                        const spans = lnk.querySelectorAll('span');\n                        for (const s of spans) {\n                            const t = s.textContent.trim();\n                            if (/^\\\\d+(\\\\.\\\\d+)?\\\\s*[KkMm]?$/.test(t) && !s.children.length) {\n                                out.push(t);\n                                break;\n                            }\n                        }\n                        if (out.length >= 6) break;\n                    }\n                    return out;\n                }\n            \"\"\")\n            counts = [parse_count(v) for v in (raw or []) if parse_count(v) > 100]\n            if counts:\n                avg_views = int(sum(counts) / len(counts))\n        except Exception:\n            pass\n\n        return {\n            \"is_private\": False,\n            \"edge_followed_by\": {\"count\": followers},\n            \"biography\": bio,\n            \"_dom_fallback\": True,\n            \"_avg_views\": avg_views,\n        }\n    except Exception:\n        return None\n\n\ndef evaluate_profile(page, username):\n    \"\"\"\n    Beoordeelt een profiel tegen alle criteria uit Evaluatiecriteria.md.\n    Retourneert een dict met status \"candidate\" / \"review\" / \"reject\",\n    of None als het profiel helemaal niet geladen kon worden.\n    \"\"\"\n    if username in EXCLUDED_ACCOUNTS:\n        return {\"status\": \"reject\", \"reason\": \"uitgesloten account\", \"handle\": f\"@{username}\"}\n\n    user = fetch_profile_json(page, username)\n    used_fallback = False\n    if user is None:\n        user = fetch_profile_dom_fallback(page, username)\n        used_fallback = True\n    if user is None:\n        return None\n\n    if user.get(\"is_private\"):\n        return {\"status\": \"reject\", \"reason\": \"privé account\", \"handle\": f\"@{username}\"}\n\n    followers = int((user.get(\"edge_followed_by\") or {}).get(\"count\") or 0)\n    bio = (user.get(\"biography\") or \"\").strip()\n\n    if used_fallback:\n        avg_views = user.get(\"_avg_views\", 0)\n        er_pct = None\n        recent_count = None\n    else:\n        posts = (user.get(\"edge_owner_to_timeline_media\") or {}).get(\"edges\") or []\n        now = datetime.now(timezone.utc).timestamp()\n\n        views, engagements, recent_count = [], [], 0\n        for edge in posts:\n            node = edge.get(\"node\", {})\n            taken_at = node.get(\"taken_at_timestamp\") or 0\n            age_days = (now - taken_at) / 86400 if taken_at else 9999\n            if age_days <= MAX_INACTIVE_DAYS:\n                recent_count += 1\n\n            likes = int((node.get(\"edge_liked_by\") or {}).get(\"count\") or 0)\n            comments = int((node.get(\"edge_media_to_comment\") or {}).get(\"count\") or 0)\n            engagements.append(likes + comments)\n\n            if node.get(\"is_video\") and node.get(\"video_view_count\"):\n                views.append(int(node[\"video_view_count\"]))\n\n        avg_views = int(sum(views) / len(views)) if views else 0\n        avg_engagement = (sum(engagements) / len(engagements)) if engagements else 0\n        er_pct = round((avg_engagement / followers) * 100, 2) if followers else 0.0\n\n    is_dutch = bool(DUTCH_HINTS.search(bio))\n\n    result = {\n        \"status\": \"candidate\",\n        \"handle\": f\"@{username}\",\n        \"url\": f\"https://www.instagram.com/{username}/\",\n        \"followers\": followers,\n        \"avg_views\": avg_views,\n        \"er_pct\": er_pct,\n        \"recent_posts\": recent_count,\n        \"bio\": bio[:150],\n        \"is_dutch_bio\": is_dutch,\n        \"fallback\": used_fallback,\n    }\n\n    if followers and (followers < MIN_FOLLOWERS or followers > MAX_FOLLOWERS):\n        result[\"status\"] = \"reject\"\n        result[\"reason\"] = f\"volgers buiten bereik ({followers:,})\"\n        return result\n\n    if avg_views < MIN_AVG_VIEWS:\n        result[\"status\"] = \"reject\"\n        result[\"reason\"] = f\"te weinig views ({avg_views:,})\"\n        return result\n\n    if er_pct is not None and er_pct < MIN_ER_PCT:\n        result[\"status\"] = \"reject\"\n        result[\"reason\"] = f\"ER te laag ({er_pct}%)\"\n        return result\n\n    if recent_count is not None and recent_count < MIN_RECENT_POSTS:\n        result[\"status\"] = \"reject\"\n        result[\"reason\"] = f\"te weinig recente activiteit ({recent_count} posts / {MAX_INACTIVE_DAYS}d)\"\n        return result\n\n    if not is_dutch:\n        result[\"status\"] = \"review\"\n        result[\"reason\"] = \"geen NL-signaal in bio - handmatig checken\"\n\n    return result\n\n\n# ── bron 1: hashtags ──────────────────────────────────────────────────────────\n\ndef get_post_usernames(page, hashtag):\n    \"\"\"Open hashtagpagina, klik posts open, pak username uit overlay.\"\"\"\n    url = f\"https://www.instagram.com/explore/tags/{hashtag}/\"\n    print(f\"  #{hashtag}\")\n    try:\n        page.goto(url, wait_until=\"domcontentloaded\", timeout=20000)\n    except Exception:\n        try:\n            page.goto(url, timeout=20000)\n        except Exception:\n            return []\n    time.sleep(3)\n    dismiss_cookies(page)\n    time.sleep(1)\n\n    usernames = []\n    seen = set()\n\n    for _ in range(2):\n        try:\n            page.evaluate(\"window.scrollBy(0, 800)\")\n        except Exception:\n            pass\n        time.sleep(1.5)\n\n    post_links = page.query_selector_all(\"a[href*='/p/']\")\n    print(f\"    {len(post_links)} post-links gevonden\")\n\n    for link in post_links[:POSTS_PER_TAG]:\n        try:\n            href = link.get_attribute(\"href\") or \"\"\n            if \"/p/\" not in href:\n                continue\n            link.click()\n            time.sleep(2.5)\n\n            uname = None\n            for sel in [\n                \"article header a[href]:not([href*='/p/'])\",\n                \"div[role='dialog'] header a[href]:not([href*='/p/'])\",\n                \"div[role='dialog'] a[role='link'][href^='/']:not([href*='/p/'])\",\n                \"header section a[href^='/']:not([href*='/p/'])\",\n            ]:\n                try:\n                    el = page.query_selector(sel)\n                    if el:\n                        h = (el.get_attribute(\"href\") or \"\").strip(\"/\").split(\"/\")[0]\n                        if h and len(h) > 1 and \".\" not in h and h not in seen:\n                            uname = h\n                            break\n                except Exception:\n                    pass\n\n            if not uname:\n                try:\n                    cur_url = page.url\n                    m = re.search(r\"instagram\\.com/([^/]+)/p/\", cur_url)\n                    if m:\n                        uname = m.group(1)\n                except Exception:\n                    pass\n\n            if uname and uname not in seen:\n                seen.add(uname)\n                usernames.append(uname)\n                print(f\"    -> @{uname}\")\n\n            page.keyboard.press(\"Escape\")\n            time.sleep(1)\n        except Exception:\n            try:\n                page.keyboard.press(\"Escape\")\n            except Exception:\n                pass\n            time.sleep(0.5)\n\n    return usernames\n\n\n# ── bron 2: following-lijst van seed-accounts ────────────────────────────────\n\ndef get_following_list(page, username, max_scroll=15):\n    \"\"\"Open de following-lijst van een account, scroll erdoor, pak usernames.\"\"\"\n    print(f\"\\n  Following van @{username} scannen...\")\n    try:\n        page.goto(f\"https://www.instagram.com/{username}/following/\", wait_until=\"domcontentloaded\", timeout=15000)\n        time.sleep(3)\n\n        page.goto(f\"https://www.instagram.com/{username}/\", wait_until=\"domcontentloaded\", timeout=12000)\n        time.sleep(3)\n\n        clicked = False\n        for sel in ['a:has-text(\"volgend\")', 'a:has-text(\"following\")']:\n            try:\n                page.click(sel, timeout=4000)\n                clicked = True\n                break\n            except Exception:\n                pass\n\n        if not clicked:\n            print(\"    Kon following-knop niet klikken\")\n            return []\n\n        time.sleep(2.5)\n\n        try:\n            page.wait_for_selector('div[role=\"dialog\"]', timeout=5000)\n        except Exception:\n            print(\"    Dialog niet verschenen na klik\")\n            return []\n\n        following = []\n        seen = {username}\n\n        for i in range(max_scroll):\n            raw = page.evaluate(\"\"\"\n                () => {\n                    const container = document.querySelector('div[role=\"dialog\"]')\n                        || document.querySelector('main') || document.body;\n                    const links = container.querySelectorAll('a[href^=\"/\"]');\n                    const out = [];\n                    for (const l of links) {\n                        let h = (l.getAttribute('href') || '');\n                        h = h.replace(/^[/]+|[/]+$/g, '');\n                        if (h && !h.includes('/') && !h.includes('?') && !h.includes('.')\n                            && h.length >= 2 && h.length <= 30) {\n                            out.push(h);\n                        }\n                    }\n                    return out;\n                }\n            \"\"\")\n\n            new_count = 0\n            for h in (raw or []):\n                if h not in seen:\n                    seen.add(h)\n                    following.append(h)\n                    new_count += 1\n\n            if new_count == 0 and i > 2:\n                break\n\n            try:\n                page.evaluate(\"\"\"\n                    () => {\n                        const d = document.querySelector('div[role=\"dialog\"]');\n                        if (!d) return;\n                        const s = d.querySelector('div[style*=\"overflow\"]') || d;\n                        s.scrollTop += 600;\n                    }\n                \"\"\")\n            except Exception:\n                pass\n            time.sleep(1.5)\n\n        try:\n            page.keyboard.press(\"Escape\")\n        except Exception:\n            pass\n\n        print(f\"    {len(following)} accounts gevonden in following-lijst\")\n        return following\n\n    except Exception as e:\n        print(f\"    Fout: {e}\")\n        return []\n\n\n# ── bron 3: commenters op referentie-accounts ────────────────────────────────\n\nSKIP_PATHS = {\n    \"explore\", \"accounts\", \"about\", \"privacy\", \"terms\", \"p\", \"reel\", \"tv\",\n    \"stories\", \"live\", \"locations\", \"directory\", \"hashtag\", \"challenge\",\n    \"audio\", \"reels\", \"direct\", \"inbox\", \"ar\", \"music\", \"nametag\", \"login\",\n    \"signup\", \"legal\", \"help\", \"press\", \"api\", \"blog\", \"jobs\", \"shop\",\n}\n\n\ndef get_reel_urls(page, username, limit):\n    print(f\"    @{username} - reels ophalen...\")\n    try:\n        page.goto(f\"https://www.instagram.com/{username}/reels/\", wait_until=\"domcontentloaded\", timeout=15000)\n        time.sleep(2)\n        links = page.query_selector_all(\"a[href*='/reel/']\")\n        hrefs = []\n        for lnk in links[:limit]:\n            h = lnk.get_attribute(\"href\") or \"\"\n            if \"/reel/\" in h and h not in hrefs:\n                hrefs.append(h)\n        print(f\"      {len(hrefs)} reels gevonden\")\n        return hrefs\n    except Exception:\n        return []\n\n\ndef get_commenters_from_reel(page, reel_href):\n    url = f\"https://www.instagram.com{reel_href}\" if reel_href.startswith(\"/\") else reel_href\n    try:\n        page.goto(url, wait_until=\"domcontentloaded\", timeout=15000)\n        time.sleep(2)\n\n        for label in [\"Bekijk alle\", \"View all\", \"alle opmerkingen\"]:\n            try:\n                btn = page.locator(f\"text={label}\").first\n                if btn.is_visible(timeout=2000):\n                    btn.click()\n                    time.sleep(1.5)\n                    break\n            except Exception:\n                pass\n\n        for _ in range(5):\n            try:\n                page.evaluate(\"\"\"\n                    () => {\n                        const scrollable = [...document.querySelectorAll('div')]\n                            .find(d => d.scrollHeight > d.clientHeight + 50\n                                   && d.clientHeight > 200\n                                   && d.clientHeight < 900);\n                        if (scrollable) scrollable.scrollTop += 700;\n                        window.scrollBy(0, 500);\n                    }\n                \"\"\")\n            except Exception:\n                pass\n            time.sleep(1.2)\n\n        commenters = page.evaluate(\n            \"\"\"\n            (skipSet) => {\n                const links = document.querySelectorAll('a[href^=\"/\"]');\n                const users = new Set();\n                for (const lnk of links) {\n                    const href = (lnk.getAttribute('href') || '').replace(/\\\\/$/, '');\n                    const parts = href.split('/').filter(p => p);\n                    if (parts.length === 1) {\n                        const u = parts[0];\n                        if (/^[a-zA-Z0-9._]{2,30}$/.test(u) && !skipSet.includes(u)) {\n                            users.add(u);\n                        }\n                    }\n                }\n                return Array.from(users);\n            }\n            \"\"\",\n            list(SKIP_PATHS),\n        )\n        return commenters or []\n    except Exception:\n        return []\n\n\n# ── main ──────────────────────────────────────────────────────────────────────\n\ndef new_context(p):\n    browser = p.chromium.launch(\n        headless=False,\n        args=[\"--disable-blink-features=AutomationControlled\", \"--no-sandbox\"],\n        ignore_default_args=[\"--enable-automation\"],\n    )\n    context = browser.new_context(\n        viewport={\"width\": 1280, \"height\": 900},\n        user_agent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36\",\n    )\n    if os.path.exists(SESSION_FILE):\n        try:\n            with open(SESSION_FILE) as f:\n                context.add_cookies(json.load(f))\n            print(\"Sessie geladen\")\n        except Exception as e:\n            print(f\"Kon sessie niet laden: {e}\")\n    page = context.new_page()\n    Stealth().apply_stealth_sync(page)\n    return browser, context, page\n\n\ndef main():\n    known_handles = load_known_handles()\n    seen = set(known_handles)\n    results = {\"candidate\": [], \"review\": []}\n\n    with sync_playwright() as p:\n        browser, context, page = new_context(p)\n        try:\n            page.goto(\"https://www.instagram.com/\", wait_until=\"domcontentloaded\", timeout=25000)\n            time.sleep(3)\n        except Exception:\n            pass\n        login(context, page)\n        print(\"Browser open\\n\")\n\n        candidates_by_source = {}\n\n        # Bron 1: following-lijst van seed-accounts\n        for seed in SEED_ACCOUNTS:\n            names = get_following_list(page, seed)\n            candidates_by_source[f\"Following_{seed}\"] = names\n\n        # Bron 2: hashtags per sport\n        for sport, tags in HASHTAGS.items():\n            print(f\"\\n{'='*40}\\nSPORT (hashtag): {sport}\\n{'='*40}\")\n            sport_users = []\n            for tag in tags:\n                sport_users.extend(get_post_usernames(page, tag))\n                time.sleep(2)\n            candidates_by_source[sport] = sport_users\n\n        # Bron 3: commenters op referentie-accounts per sport\n        for sport, refs in REFERENCE_ACCOUNTS.items():\n            print(f\"\\n{'='*40}\\nSPORT (commenters): {sport}\\n{'='*40}\")\n            sport_commenters = []\n            for ref in refs:\n                for href in get_reel_urls(page, ref, REELS_PER_REF_ACCOUNT):\n                    commenters = get_commenters_from_reel(page, href)\n                    sport_commenters.extend(u for u in commenters if u not in refs)\n                    time.sleep(1.5)\n            candidates_by_source[f\"{sport}_commenters\"] = sport_commenters\n\n        # Evalueer alle unieke kandidaten uit alle bronnen\n        print(f\"\\n{'='*40}\\nPROFIELEN EVALUEREN\\n{'='*40}\")\n        for source, usernames in candidates_by_source.items():\n            unique = []\n            for u in usernames:\n                if u not in seen:\n                    seen.add(u)\n                    unique.append(u)\n            if not unique:\n                continue\n            print(f\"\\n  {len(unique)} unieke profielen checken voor {source}...\")\n\n            for idx, uname in enumerate(unique):\n                time.sleep(1.5)\n                if idx > 0 and idx % 10 == 0:\n                    time.sleep(6)\n\n                result = evaluate_profile(page, uname)\n                if result is None:\n                    print(f\"    ! @{uname} - kon niet laden\")\n                    continue\n\n                result[\"source\"] = source\n\n                if result[\"status\"] == \"reject\":\n                    print(f\"    x  @{uname} - {result['reason']}\")\n                    continue\n\n                results[result[\"status\"]].append(result)\n                fol_str = f\"{result['followers']:,}\" if result[\"followers\"] else \"?\"\n                view_str = f\"{result['avg_views']:,}\" if result[\"avg_views\"] else \"?\"\n                er_str = f\"{result['er_pct']}%\" if result[\"er_pct\"] is not None else \"onbekend\"\n                mark = \"OK\" if result[\"status\"] == \"candidate\" else \"??\"\n                print(f\"    {mark} @{uname} - {fol_str} volgers | {view_str} gem. views | ER {er_str}\")\n\n        browser.close()\n\n    # ── output schrijven ──\n    try:\n        with open(OUTPUT_FILE, \"w\", encoding=\"utf-8\") as f:\n            f.write(\"HIGRIP - Gevonden creators op Instagram\\n\")\n            f.write(\n                f\"Filters: {MIN_FOLLOWERS:,}-{MAX_FOLLOWERS:,} volgers | \"\n                f\">= {MIN_AVG_VIEWS:,} gem. views | >= {MIN_ER_PCT}% ER | \"\n                f\">= {MIN_RECENT_POSTS} posts / {MAX_INACTIVE_DAYS}d\\n\"\n            )\n            f.write(\"=\" * 60 + \"\\n\")\n\n            for status, label in [(\"candidate\", \"KANDIDATEN\"), (\"review\", \"HANDMATIG CHECKEN (taal onduidelijk)\")]:\n                items = results[status]\n                f.write(f\"\\n\\n-- {label} ({len(items)}) --\\n\")\n                for r in items:\n                    fol_str = f\"{r['followers']:,}\" if r[\"followers\"] else \"onbekend\"\n                    view_str = f\"{r['avg_views']:,}\" if r[\"avg_views\"] else \"onbekend\"\n                    er_str = f\"{r['er_pct']}%\" if r[\"er_pct\"] is not None else \"onbekend (fallback-methode gebruikt)\"\n                    f.write(f\"\\n  {r['handle']:30s} bron: {r['source']}\\n\")\n                    f.write(f\"  {r['url']}\\n\")\n                    f.write(f\"  {fol_str} volgers | {view_str} gem. views | ER {er_str} | recente posts: {r['recent_posts']}\\n\")\n                    if r[\"bio\"]:\n                        f.write(f\"  Bio: {r['bio']}\\n\")\n                    if r.get(\"reason\"):\n                        f.write(f\"  Let op: {r['reason']}\\n\")\n\n        print(f\"\\n\\n{len(results['candidate'])} kandidaten, {len(results['review'])} om handmatig te checken -> {OUTPUT_FILE}\")\n    except Exception as e:\n        print(f\"\\nKon output niet wegschrijven: {e}\")\n        print(json.dumps(results, ensure_ascii=False, indent=2))\n\n\nif __name__ == \"__main__\":\n    main()\n```\n"
+# Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
+
+> Bijgewerkt: 2026-07-07
+> Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
+
+---
+
+## Wat doet het script?
+
+Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v2: hashtag-scan, following-lijst-scan en commenter-scan zitten nu in één script (voorheen los in `ig_find_creators.py` + `ig_commenter_search.py`).
+
+**Drie bronnen per run:**
+
+1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.
+2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie [[project_ig_following]]). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
+3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.
+
+**Profielbeoordeling (nieuw):** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count en post-datum. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers in dat geval.
+
+**Filters (uit [[Evaluatiecriteria]]):**
+
+| Filter | Waarde |
+|---|---|
+| Volgers | 500 – 100.000 |
+| Gem. views per post | ≥ 1.000 |
+| Engagement rate (ER%) | ≥ 2% |
+| Activiteit | ≥ 3 posts in de laatste 21 dagen |
+| Taal | NL-signaal in bio → anders status "review" i.p.v. automatisch afwijzen |
+| Dedupe | Handles die al in [[Influencer Database]] staan worden overgeslagen |
+
+**Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
+
+**Huidige hashtag-configuratie (alleen voetbal):**
+- Voetbal_vlog: voetbalvlog, voetbalweekend, voetbalclips
+- Voetbal_panna: pannanederland, pannaskills, pannaspeler
+- Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
+- Straatvoetbal: straatvoetbal, straatvoetballer, voetbalskills
+
+---
+
+## Script uitvoeren
+
+```
+pip install playwright playwright-stealth
+playwright install chromium
+python "$env:USERPROFILE\HI-Grip-claude-setup\scripts\ig_find_creators.py"
+```
+
+Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py` (lokaal, niet in de git-repo — bevat inloggegevens).
+
+---
+
+## Zoektermen per sport
+
+### Tennis
+
+| Kanaal             | Zoektermen                                                               |
+| ------------------ | ------------------------------------------------------------------------ |
+| Instagram hashtags | #tennisnederland · #tennisnl · #tennismatch · #tennislife · #tennisreels |
+| TikTok             | tennis vlog nl · tennis journey nederland · tennis training              |
+| Slimste plek       | Kijk wie reageert op @timtopspin / @tennistomy posts                     |
+
+### Padel
+
+| Kanaal | Zoektermen |
+|---|---|
+| Instagram hashtags | #padelnederland · #padelholland · #padellife · #padelmatch · #padelnl · #padelrotterdam · #padelen |
+| TikTok | padel vlog nl · padel progressie nederland · padel journey |
+| Slimste plek | Kijk bij comments op @menno.nolten reels |
+
+### Voetbal
+
+| Kanaal             | Zoektermen                                                                                |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| Instagram hashtags | #voetbalnederland · #skillsnl · #zaalvoetbal · #futsalnl · #pannavoetbal · #straatvoetbal |
+| TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |
+| Slimste plek       | Kijk wie reageert op @iamyasinflits posts                                                 |
+
+### Rugby
+
+| Kanaal             | Zoektermen                                              |
+| ------------------ | ---------------------------------------------------- |
+| Instagram hashtags | #rugbynederland · #rugbynl · #damesrugby · #rugbylife   |
+| TikTok             | rugby nederland vlog · rugby training nl · rugby speler |
+| Slimste plek       | Kijk wie reageert op @prorugby_nl posts               |
+
+### Basketball
+
+| Kanaal             | Zoektermen                                                 |
+| ------------------ | ---------------------------------------------------------- |
+| Instagram hashtags | #basketballnl · #dutchhoops · #streetballnl · #3x3nl       |
+| TikTok             | basketball nederland · streetball nl · 3x3 basketball vlog |
+| Slimste plek       | Kijk wie reageert op @tweeboomcourt / @3x3nl posts         |
+
+---
+
+## Slimste zoektruc
+
+> Zoek niet alleen op hashtag — **kijk wie reageert op posts van al bekende creators.**
+> Kleine actieve commenters zijn vaak zelf ook creators. Zoek daarnaast ook tussen de volgers ze volgen elkaar ook vaak.
+
+Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
+
+- Tennis: @timtopspin
+- Padel: @menno.nolten · @jospadel
+- Voetbal: @iamyasinflits *(@finnpicard_ is bewust verwijderd — bevestigd geen voetbal-account)*
+- Rugby: @prorugby_nl
+- Basketball: @tweeboomcourt · @3x3nl
+
+---
+
+## Gerelateerde bestanden
+
+- [[Evaluatiecriteria]] — Alle selectie- en verificatiecriteria
+- [[Influencer Database]] — Overzicht van alle gevonden accounts (ook de bron voor automatische dedupe in het script)
+- [[Pipeline Tracker]] — Status per account (benaderd, in gesprek, actief)
+- [[Outreach Templates]] — DM templates per situatie
+
+---
+
+## Bijlage: volledige broncode (back-up)
+
+> Bron van waarheid is [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van het script moet deze kopie mee-geüpdatet worden (zie [[feedback_ig_script_sync]]).
+
+```python
+"""
+HI Grip - Instagram creator zoek-script (v2, samengevoegd).
+
+Combineert drie bronnen in een script:
+  1. Hashtag-scan per sport
+  2. Following-lijst van eigen/seed-accounts (curated shortlist)
+  3. Commenters op referentie-accounts per sport
+
+Profielbeoordeling gebeurt via Instagram's eigen web_profile_info JSON-endpoint
+(exacte cijfers, inclusief like/comment-counts en post-datums) i.p.v. het
+uitlezen van zichtbare, taal-afhankelijke tekst in de pagina. Als dat endpoint
+een keer faalt/geblokkeerd wordt, valt het script terug op de oudere
+DOM-scraping methode zodat een los profiel nooit de hele run laat crashen.
+
+Filters volgen Evaluatiecriteria.md in de Obsidian vault:
+  - Volgers: 500 - 100.000
+  - Gem. views per post: minimaal MIN_AVG_VIEWS
+  - Engagement rate (ER%): minimaal MIN_ER_PCT
+  - Activiteit: minimaal MIN_RECENT_POSTS posts in de laatste MAX_INACTIVE_DAYS dagen
+  - Taal: NL-signaal in bio (anders "review" i.p.v. automatische afwijzing)
+  - Dedupe tegen de bestaande Influencer Database (al gevonden/benaderd wordt overgeslagen)
+"""
+import sys, time, json, os, re
+from datetime import datetime, timezone
+
+sys.stdout.reconfigure(encoding="utf-8")
+
+from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
+
+SESSION_FILE = r"C:\Users\lars\.ig_session.json"
+OUTPUT_FILE  = r"C:\Users\lars\Downloads\HiGrip_Creators.txt"
+DATABASE_FILE = r"C:\Users\lars\Documents\ObsidianVault\02_Partnership_Agent\Influencers_Creators\Influencer Database.md"
+
+IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebruikt
+
+# ── Bronnen ──────────────────────────────────────────────────────────────────
+
+# Following-lijst van deze account(s) scannen (bv. het eigen HI Grip account —
+# dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.
+SEED_ACCOUNTS = []
+
+HASHTAGS = {
+    "Voetbal_vlog":     ["voetbalvlog", "voetbalweekend", "voetbalclips"],
+    "Voetbal_panna":    ["pannanederland", "pannaskills", "pannaspeler"],
+    "Zaalvoetbal":      ["zaalvoetbal", "futsalnederland", "futsalspeler"],
+    "Straatvoetbal":    ["straatvoetbal", "straatvoetballer", "voetbalskills"],
+}
+POSTS_PER_TAG = 20
+
+# Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
+# LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
+REFERENCE_ACCOUNTS = {
+    "Tennis":     ["timtopspin"],
+    "Padel":      ["jospadel", "menno.nolten"],
+    "Voetbal":    ["iamyasinflits"],
+    "Basketball": ["tweeboomcourt", "3x3nl"],
+    "Rugby":      ["prorugby_nl"],
+}
+REELS_PER_REF_ACCOUNT = 5
+
+# Accounts die nooit meegenomen mogen worden, ongeacht bron.
+EXCLUDED_ACCOUNTS = {"finnpicard_"}
+
+# ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
+
+MIN_FOLLOWERS     = 500
+MAX_FOLLOWERS     = 100_000
+MIN_AVG_VIEWS     = 1_000
+MIN_ER_PCT        = 2.0
+MAX_INACTIVE_DAYS = 21   # "3 posts in de afgelopen 3 weken"
+MIN_RECENT_POSTS  = 3
+
+DUTCH_HINTS = re.compile(
+    r"\b(en|de|het|een|met|voor|niet|jij|jouw|mijn|wij|onze|nederland|nederlandse|"
+    r"amsterdam|rotterdam|utrecht|eindhoven|nl|holland|belgie|belgië)\b",
+    re.I,
+)
+
+
+# ── auth ─────────────────────────────────────────────────────────────────────
+
+def dismiss_cookies(page):
+    for sel in [
+        "button:has-text('Alle cookies toestaan')",
+        "button:has-text('Allow all cookies')",
+        "button:has-text('Accepteren')",
+    ]:
+        try:
+            page.click(sel, timeout=3000)
+            time.sleep(1)
+            return
+        except Exception:
+            pass
+
+
+def is_logged_in(page):
+    try:
+        page.wait_for_selector(
+            'a[href="/direct/inbox/"], svg[aria-label="Direct"], nav a[href="/"]',
+            timeout=5000,
+        )
+        return True
+    except Exception:
+        return False
+
+
+def login(context, page):
+    from ig_search_higrip import USERNAME, PASSWORD
+
+    page.goto("https://www.instagram.com/", timeout=30000)
+    time.sleep(3)
+    dismiss_cookies(page)
+    try:
+        page.wait_for_load_state("networkidle", timeout=10000)
+    except Exception:
+        pass
+    time.sleep(2)
+
+    if is_logged_in(page):
+        print("Ingelogd via sessie\n")
+        return
+
+    page.goto("https://www.instagram.com/accounts/login/", timeout=30000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=10000)
+    except Exception:
+        pass
+    time.sleep(2)
+    dismiss_cookies(page)
+    time.sleep(1)
+
+    for sel in ['input[name="username"]', 'input[autocomplete="username"]', 'input[type="text"]']:
+        try:
+            page.wait_for_selector(sel, timeout=6000)
+            page.fill(sel, USERNAME)
+            break
+        except Exception:
+            pass
+    time.sleep(0.5)
+    for sel in ['input[name="password"]', 'input[type="password"]']:
+        try:
+            page.wait_for_selector(sel, timeout=4000)
+            page.fill(sel, PASSWORD)
+            break
+        except Exception:
+            pass
+    time.sleep(0.5)
+    for sel in ['button[type="submit"]', "button:has-text('Aanmelden')", "button:has-text('Log in')"]:
+        try:
+            page.click(sel, timeout=3000)
+            break
+        except Exception:
+            pass
+
+    try:
+        page.wait_for_load_state("networkidle", timeout=20000)
+    except Exception:
+        pass
+    time.sleep(4)
+
+    if "challenge" in page.url or "two_factor" in page.url:
+        print("\nVerificatie vereist. Los op in de browser en druk ENTER.")
+        input("ENTER om door te gaan...")
+        time.sleep(3)
+
+    for label in ["Niet nu", "Not Now", "Nu niet"]:
+        try:
+            page.click(f"text={label}", timeout=3000)
+            break
+        except Exception:
+            pass
+
+    try:
+        with open(SESSION_FILE, "w") as f:
+            json.dump(context.cookies(), f)
+        print("Ingelogd - sessie opgeslagen\n")
+    except Exception as e:
+        print(f"Kon sessie niet opslaan: {e}\n")
+
+
+# ── helpers ──────────────────────────────────────────────────────────────────
+
+def parse_count(text):
+    if not text:
+        return 0
+    text = str(text).strip().replace(",", ".").replace("\xa0", "").replace(" ", "")
+    m = re.search(r"([\d]+(?:[.,][\d]+)?)\s*([KkMm]?)", text)
+    if not m:
+        return 0
+    num_str = m.group(1).replace(",", ".")
+    try:
+        num = float(num_str)
+    except Exception:
+        return 0
+    suf = m.group(2).upper()
+    if suf == "K":
+        num *= 1_000
+    elif suf == "M":
+        num *= 1_000_000
+    return int(num)
+
+
+def load_known_handles():
+    """Leest bestaande handles uit de Influencer Database (dedupe: al gevonden/benaderd)."""
+    handles = set()
+    try:
+        with open(DATABASE_FILE, encoding="utf-8") as f:
+            text = f.read()
+        for m in re.finditer(r"\[@([\w.]+)\]\(https://www\.instagram\.com/", text):
+            handles.add(m.group(1).lower())
+        print(f"{len(handles)} bekende accounts geladen uit Influencer Database (dedupe)\n")
+    except Exception as e:
+        print(f"Kon Influencer Database niet lezen voor dedupe ({e}) - ga verder zonder\n")
+    return handles
+
+
+# ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────
+
+def fetch_profile_json(page, username):
+    """Haalt profieldata op via Instagram's web_profile_info endpoint. None bij fout."""
+    url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
+    try:
+        resp = page.request.get(
+            url,
+            headers={
+                "x-ig-app-id": IG_APP_ID,
+                "accept": "*/*",
+                "referer": f"https://www.instagram.com/{username}/",
+            },
+        )
+        if resp.status != 200:
+            return None
+        data = resp.json()
+        return (data.get("data") or {}).get("user")
+    except Exception:
+        return None
+
+
+def fetch_profile_dom_fallback(page, username):
+    """
+    Oudere DOM-scraping methode, alleen als fallback wanneer het JSON-endpoint
+    faalt. Geeft geen ER%/activiteit terug (die info zit niet los in de DOM),
+    wel volgers/bio/gem. views zodat een profiel niet zomaar overgeslagen wordt.
+    """
+    try:
+        page.goto(f"https://www.instagram.com/{username}/", wait_until="domcontentloaded", timeout=15000)
+        time.sleep(2)
+        try:
+            body_text = page.inner_text("body")
+        except Exception:
+            body_text = ""
+
+        if "Dit account is privé" in body_text or "This Account is Private" in body_text:
+            return {"is_private": True}
+
+        followers = 0
+        m_fol = re.search(r"([\d.,\xa0]+\s*[KkMm]?)\s*(volgers?|followers?)", body_text, re.I)
+        if m_fol:
+            followers = parse_count(m_fol.group(1))
+
+        bio = ""
+        try:
+            bio_el = page.query_selector("section main header section span")
+            if bio_el:
+                bio = bio_el.inner_text().strip()[:150]
+        except Exception:
+            pass
+
+        avg_views = 0
+        try:
+            page.goto(f"https://www.instagram.com/{username}/reels/", wait_until="domcontentloaded", timeout=12000)
+            time.sleep(2)
+            raw = page.evaluate("""
+                () => {
+                    const links = document.querySelectorAll('a[href*="/reel/"]');
+                    const out = [];
+                    for (const lnk of links) {
+                        const spans = lnk.querySelectorAll('span');
+                        for (const s of spans) {
+                            const t = s.textContent.trim();
+                            if (/^\\d+(\\.\\d+)?\\s*[KkMm]?$/.test(t) && !s.children.length) {
+                                out.push(t);
+                                break;
+                            }
+                        }
+                        if (out.length >= 6) break;
+                    }
+                    return out;
+                }
+            """)
+            counts = [parse_count(v) for v in (raw or []) if parse_count(v) > 100]
+            if counts:
+                avg_views = int(sum(counts) / len(counts))
+        except Exception:
+            pass
+
+        return {
+            "is_private": False,
+            "edge_followed_by": {"count": followers},
+            "biography": bio,
+            "_dom_fallback": True,
+            "_avg_views": avg_views,
+        }
+    except Exception:
+        return None
+
+
+def evaluate_profile(page, username):
+    """
+    Beoordeelt een profiel tegen alle criteria uit Evaluatiecriteria.md.
+    Retourneert een dict met status "candidate" / "review" / "reject",
+    of None als het profiel helemaal niet geladen kon worden.
+    """
+    if username in EXCLUDED_ACCOUNTS:
+        return {"status": "reject", "reason": "uitgesloten account", "handle": f"@{username}"}
+
+    user = fetch_profile_json(page, username)
+    used_fallback = False
+    if user is None:
+        user = fetch_profile_dom_fallback(page, username)
+        used_fallback = True
+    if user is None:
+        return None
+
+    if user.get("is_private"):
+        return {"status": "reject", "reason": "privé account", "handle": f"@{username}"}
+
+    followers = int((user.get("edge_followed_by") or {}).get("count") or 0)
+    bio = (user.get("biography") or "").strip()
+
+    if used_fallback:
+        avg_views = user.get("_avg_views", 0)
+        er_pct = None
+        recent_count = None
+    else:
+        posts = (user.get("edge_owner_to_timeline_media") or {}).get("edges") or []
+        now = datetime.now(timezone.utc).timestamp()
+
+        views, engagements, recent_count = [], [], 0
+        for edge in posts:
+            node = edge.get("node", {})
+            taken_at = node.get("taken_at_timestamp") or 0
+            age_days = (now - taken_at) / 86400 if taken_at else 9999
+            if age_days <= MAX_INACTIVE_DAYS:
+                recent_count += 1
+
+            likes = int((node.get("edge_liked_by") or {}).get("count") or 0)
+            comments = int((node.get("edge_media_to_comment") or {}).get("count") or 0)
+            engagements.append(likes + comments)
+
+            if node.get("is_video") and node.get("video_view_count"):
+                views.append(int(node["video_view_count"]))
+
+        avg_views = int(sum(views) / len(views)) if views else 0
+        avg_engagement = (sum(engagements) / len(engagements)) if engagements else 0
+        er_pct = round((avg_engagement / followers) * 100, 2) if followers else 0.0
+
+    is_dutch = bool(DUTCH_HINTS.search(bio))
+
+    result = {
+        "status": "candidate",
+        "handle": f"@{username}",
+        "url": f"https://www.instagram.com/{username}/",
+        "followers": followers,
+        "avg_views": avg_views,
+        "er_pct": er_pct,
+        "recent_posts": recent_count,
+        "bio": bio[:150],
+        "is_dutch_bio": is_dutch,
+        "fallback": used_fallback,
+    }
+
+    if followers and (followers < MIN_FOLLOWERS or followers > MAX_FOLLOWERS):
+        result["status"] = "reject"
+        result["reason"] = f"volgers buiten bereik ({followers:,})"
+        return result
+
+    if avg_views < MIN_AVG_VIEWS:
+        result["status"] = "reject"
+        result["reason"] = f"te weinig views ({avg_views:,})"
+        return result
+
+    if er_pct is not None and er_pct < MIN_ER_PCT:
+        result["status"] = "reject"
+        result["reason"] = f"ER te laag ({er_pct}%)"
+        return result
+
+    if recent_count is not None and recent_count < MIN_RECENT_POSTS:
+        result["status"] = "reject"
+        result["reason"] = f"te weinig recente activiteit ({recent_count} posts / {MAX_INACTIVE_DAYS}d)"
+        return result
+
+    if not is_dutch:
+        result["status"] = "review"
+        result["reason"] = "geen NL-signaal in bio - handmatig checken"
+
+    return result
+
+
+# ── bron 1: hashtags ──────────────────────────────────────────────────────────
+
+def get_post_usernames(page, hashtag):
+    """Open hashtagpagina, klik posts open, pak username uit overlay."""
+    url = f"https://www.instagram.com/explore/tags/{hashtag}/"
+    print(f"  #{hashtag}")
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=20000)
+    except Exception:
+        try:
+            page.goto(url, timeout=20000)
+        except Exception:
+            return []
+    time.sleep(3)
+    dismiss_cookies(page)
+    time.sleep(1)
+
+    usernames = []
+    seen = set()
+
+    for _ in range(2):
+        try:
+            page.evaluate("window.scrollBy(0, 800)")
+        except Exception:
+            pass
+        time.sleep(1.5)
+
+    post_links = page.query_selector_all("a[href*='/p/']")
+    print(f"    {len(post_links)} post-links gevonden")
+
+    for link in post_links[:POSTS_PER_TAG]:
+        try:
+            href = link.get_attribute("href") or ""
+            if "/p/" not in href:
+                continue
+            link.click()
+            time.sleep(2.5)
+
+            uname = None
+            for sel in [
+                "article header a[href]:not([href*='/p/'])",
+                "div[role='dialog'] header a[href]:not([href*='/p/'])",
+                "div[role='dialog'] a[role='link'][href^='/']:not([href*='/p/'])",
+                "header section a[href^='/']:not([href*='/p/'])",
+            ]:
+                try:
+                    el = page.query_selector(sel)
+                    if el:
+                        h = (el.get_attribute("href") or "").strip("/").split("/")[0]
+                        if h and len(h) > 1 and "." not in h and h not in seen:
+                            uname = h
+                            break
+                except Exception:
+                    pass
+
+            if not uname:
+                try:
+                    cur_url = page.url
+                    m = re.search(r"instagram\.com/([^/]+)/p/", cur_url)
+                    if m:
+                        uname = m.group(1)
+                except Exception:
+                    pass
+
+            if uname and uname not in seen:
+                seen.add(uname)
+                usernames.append(uname)
+                print(f"    -> @{uname}")
+
+            page.keyboard.press("Escape")
+            time.sleep(1)
+        except Exception:
+            try:
+                page.keyboard.press("Escape")
+            except Exception:
+                pass
+            time.sleep(0.5)
+
+    return usernames
+
+
+# ── bron 2: following-lijst van seed-accounts ────────────────────────────────
+
+def get_following_list(page, username, max_scroll=15):
+    """Open de following-lijst van een account, scroll erdoor, pak usernames."""
+    print(f"\n  Following van @{username} scannen...")
+    try:
+        page.goto(f"https://www.instagram.com/{username}/following/", wait_until="domcontentloaded", timeout=15000)
+        time.sleep(3)
+
+        page.goto(f"https://www.instagram.com/{username}/", wait_until="domcontentloaded", timeout=12000)
+        time.sleep(3)
+
+        clicked = False
+        for sel in ['a:has-text("volgend")', 'a:has-text("following")']:
+            try:
+                page.click(sel, timeout=4000)
+                clicked = True
+                break
+            except Exception:
+                pass
+
+        if not clicked:
+            print("    Kon following-knop niet klikken")
+            return []
+
+        time.sleep(2.5)
+
+        try:
+            page.wait_for_selector('div[role="dialog"]', timeout=5000)
+        except Exception:
+            print("    Dialog niet verschenen na klik")
+            return []
+
+        following = []
+        seen = {username}
+
+        for i in range(max_scroll):
+            raw = page.evaluate("""
+                () => {
+                    const container = document.querySelector('div[role="dialog"]')
+                        || document.querySelector('main') || document.body;
+                    const links = container.querySelectorAll('a[href^="/"]');
+                    const out = [];
+                    for (const l of links) {
+                        let h = (l.getAttribute('href') || '');
+                        h = h.replace(/^[/]+|[/]+$/g, '');
+                        if (h && !h.includes('/') && !h.includes('?') && !h.includes('.')
+                            && h.length >= 2 && h.length <= 30) {
+                            out.push(h);
+                        }
+                    }
+                    return out;
+                }
+            """)
+
+            new_count = 0
+            for h in (raw or []):
+                if h not in seen:
+                    seen.add(h)
+                    following.append(h)
+                    new_count += 1
+
+            if new_count == 0 and i > 2:
+                break
+
+            try:
+                page.evaluate("""
+                    () => {
+                        const d = document.querySelector('div[role="dialog"]');
+                        if (!d) return;
+                        const s = d.querySelector('div[style*="overflow"]') || d;
+                        s.scrollTop += 600;
+                    }
+                """)
+            except Exception:
+                pass
+            time.sleep(1.5)
+
+        try:
+            page.keyboard.press("Escape")
+        except Exception:
+            pass
+
+        print(f"    {len(following)} accounts gevonden in following-lijst")
+        return following
+
+    except Exception as e:
+        print(f"    Fout: {e}")
+        return []
+
+
+# ── bron 3: commenters op referentie-accounts ────────────────────────────────
+
+SKIP_PATHS = {
+    "explore", "accounts", "about", "privacy", "terms", "p", "reel", "tv",
+    "stories", "live", "locations", "directory", "hashtag", "challenge",
+    "audio", "reels", "direct", "inbox", "ar", "music", "nametag", "login",
+    "signup", "legal", "help", "press", "api", "blog", "jobs", "shop",
+}
+
+
+def get_reel_urls(page, username, limit):
+    print(f"    @{username} - reels ophalen...")
+    try:
+        page.goto(f"https://www.instagram.com/{username}/reels/", wait_until="domcontentloaded", timeout=15000)
+        time.sleep(2)
+        links = page.query_selector_all("a[href*='/reel/']")
+        hrefs = []
+        for lnk in links[:limit]:
+            h = lnk.get_attribute("href") or ""
+            if "/reel/" in h and h not in hrefs:
+                hrefs.append(h)
+        print(f"      {len(hrefs)} reels gevonden")
+        return hrefs
+    except Exception:
+        return []
+
+
+def get_commenters_from_reel(page, reel_href):
+    url = f"https://www.instagram.com{reel_href}" if reel_href.startswith("/") else reel_href
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=15000)
+        time.sleep(2)
+
+        for label in ["Bekijk alle", "View all", "alle opmerkingen"]:
+            try:
+                btn = page.locator(f"text={label}").first
+                if btn.is_visible(timeout=2000):
+                    btn.click()
+                    time.sleep(1.5)
+                    break
+            except Exception:
+                pass
+
+        for _ in range(5):
+            try:
+                page.evaluate("""
+                    () => {
+                        const scrollable = [...document.querySelectorAll('div')]
+                            .find(d => d.scrollHeight > d.clientHeight + 50
+                                   && d.clientHeight > 200
+                                   && d.clientHeight < 900);
+                        if (scrollable) scrollable.scrollTop += 700;
+                        window.scrollBy(0, 500);
+                    }
+                """)
+            except Exception:
+                pass
+            time.sleep(1.2)
+
+        commenters = page.evaluate(
+            """
+            (skipSet) => {
+                const links = document.querySelectorAll('a[href^="/"]');
+                const users = new Set();
+                for (const lnk of links) {
+                    const href = (lnk.getAttribute('href') || '').replace(/\\/$/, '');
+                    const parts = href.split('/').filter(p => p);
+                    if (parts.length === 1) {
+                        const u = parts[0];
+                        if (/^[a-zA-Z0-9._]{2,30}$/.test(u) && !skipSet.includes(u)) {
+                            users.add(u);
+                        }
+                    }
+                }
+                return Array.from(users);
+            }
+            """,
+            list(SKIP_PATHS),
+        )
+        return commenters or []
+    except Exception:
+        return []
+
+
+# ── main ──────────────────────────────────────────────────────────────────────
+
+def new_context(p):
+    browser = p.chromium.launch(
+        headless=False,
+        args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+        ignore_default_args=["--enable-automation"],
+    )
+    context = browser.new_context(
+        viewport={"width": 1280, "height": 900},
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    )
+    if os.path.exists(SESSION_FILE):
+        try:
+            with open(SESSION_FILE) as f:
+                context.add_cookies(json.load(f))
+            print("Sessie geladen")
+        except Exception as e:
+            print(f"Kon sessie niet laden: {e}")
+    page = context.new_page()
+    Stealth().apply_stealth_sync(page)
+    return browser, context, page
+
+
+def main():
+    known_handles = load_known_handles()
+    seen = set(known_handles)
+    results = {"candidate": [], "review": []}
+
+    with sync_playwright() as p:
+        browser, context, page = new_context(p)
+        try:
+            page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=25000)
+            time.sleep(3)
+        except Exception:
+            pass
+        login(context, page)
+        print("Browser open\n")
+
+        candidates_by_source = {}
+
+        # Bron 1: following-lijst van seed-accounts
+        for seed in SEED_ACCOUNTS:
+            names = get_following_list(page, seed)
+            candidates_by_source[f"Following_{seed}"] = names
+
+        # Bron 2: hashtags per sport
+        for sport, tags in HASHTAGS.items():
+            print(f"\n{'='*40}\nSPORT (hashtag): {sport}\n{'='*40}")
+            sport_users = []
+            for tag in tags:
+                sport_users.extend(get_post_usernames(page, tag))
+                time.sleep(2)
+            candidates_by_source[sport] = sport_users
+
+        # Bron 3: commenters op referentie-accounts per sport
+        for sport, refs in REFERENCE_ACCOUNTS.items():
+            print(f"\n{'='*40}\nSPORT (commenters): {sport}\n{'='*40}")
+            sport_commenters = []
+            for ref in refs:
+                for href in get_reel_urls(page, ref, REELS_PER_REF_ACCOUNT):
+                    commenters = get_commenters_from_reel(page, href)
+                    sport_commenters.extend(u for u in commenters if u not in refs)
+                    time.sleep(1.5)
+            candidates_by_source[f"{sport}_commenters"] = sport_commenters
+
+        # Evalueer alle unieke kandidaten uit alle bronnen
+        print(f"\n{'='*40}\nPROFIELEN EVALUEREN\n{'='*40}")
+        for source, usernames in candidates_by_source.items():
+            unique = []
+            for u in usernames:
+                if u not in seen:
+                    seen.add(u)
+                    unique.append(u)
+            if not unique:
+                continue
+            print(f"\n  {len(unique)} unieke profielen checken voor {source}...")
+
+            for idx, uname in enumerate(unique):
+                time.sleep(1.5)
+                if idx > 0 and idx % 10 == 0:
+                    time.sleep(6)
+
+                result = evaluate_profile(page, uname)
+                if result is None:
+                    print(f"    ! @{uname} - kon niet laden")
+                    continue
+
+                result["source"] = source
+
+                if result["status"] == "reject":
+                    print(f"    x  @{uname} - {result['reason']}")
+                    continue
+
+                results[result["status"]].append(result)
+                fol_str = f"{result['followers']:,}" if result["followers"] else "?"
+                view_str = f"{result['avg_views']:,}" if result["avg_views"] else "?"
+                er_str = f"{result['er_pct']}%" if result["er_pct"] is not None else "onbekend"
+                mark = "OK" if result["status"] == "candidate" else "??"
+                print(f"    {mark} @{uname} - {fol_str} volgers | {view_str} gem. views | ER {er_str}")
+
+        browser.close()
+
+    # ── output schrijven ──
+    try:
+        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+            f.write("HIGRIP - Gevonden creators op Instagram\n")
+            f.write(
+                f"Filters: {MIN_FOLLOWERS:,}-{MAX_FOLLOWERS:,} volgers | "
+                f">= {MIN_AVG_VIEWS:,} gem. views | >= {MIN_ER_PCT}% ER | "
+                f">= {MIN_RECENT_POSTS} posts / {MAX_INACTIVE_DAYS}d\n"
+            )
+            f.write("=" * 60 + "\n")
+
+            for status, label in [("candidate", "KANDIDATEN"), ("review", "HANDMATIG CHECKEN (taal onduidelijk)")]:
+                items = results[status]
+                f.write(f"\n\n-- {label} ({len(items)}) --\n")
+                for r in items:
+                    fol_str = f"{r['followers']:,}" if r["followers"] else "onbekend"
+                    view_str = f"{r['avg_views']:,}" if r["avg_views"] else "onbekend"
+                    er_str = f"{r['er_pct']}%" if r["er_pct"] is not None else "onbekend (fallback-methode gebruikt)"
+                    f.write(f"\n  {r['handle']:30s} bron: {r['source']}\n")
+                    f.write(f"  {r['url']}\n")
+                    f.write(f"  {fol_str} volgers | {view_str} gem. views | ER {er_str} | recente posts: {r['recent_posts']}\n")
+                    if r["bio"]:
+                        f.write(f"  Bio: {r['bio']}\n")
+                    if r.get("reason"):
+                        f.write(f"  Let op: {r['reason']}\n")
+
+        print(f"\n\n{len(results['candidate'])} kandidaten, {len(results['review'])} om handmatig te checken -> {OUTPUT_FILE}")
+    except Exception as e:
+        print(f"\nKon output niet wegschrijven: {e}")
+        print(json.dumps(results, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()
+```

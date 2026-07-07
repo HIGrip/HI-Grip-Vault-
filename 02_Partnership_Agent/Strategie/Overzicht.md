@@ -19,6 +19,7 @@
 - [[Doelen]] — Cijfers en targets per lijn (jaarlijks/maandelijks)
 - [[Aanpak]] — Wat er per lijn moet gebeuren om de doelen te halen
 - [[Strategische Keuzes]] — Financiële roadmap en omzetdoelen (00_Brand_Core)
-- [[Brand Identity Overview]] — Merkfundament
+- [[Brand Identity Overview]] — Merkfundament: alles wat de zoek agent doet, dient dit fundament
+- [[Doelgroep & Persona's]] — Wie we met alle drie de lijnen willen bereiken
 - [[Partnership Strategie]] — Lijn A detail-aanpak
 - [[Samenwerking Strategie]] — Lijn B detail-aanpak

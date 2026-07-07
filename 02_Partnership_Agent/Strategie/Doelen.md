@@ -1,6 +1,6 @@
 # Doelen — HÏ Grip Zoek Agent
 
-> Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.
+> Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Deze doelen bestaan om één reden: het merk laten groeien (zie [[Brand Identity Overview]]) — elke nieuwe klant, creator of samenwerking moet bijdragen aan HI Grip als marktleider in performance sportswear (zie [[Strategische Keuzes]]). Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.
 
 ---
 
@@ -65,3 +65,5 @@
 - [[Overzicht]] — De drie zoeklijnen
 - [[Aanpak]] — Wat er per lijn moet gebeuren
 - [[Strategische Keuzes]] — Financiële roadmap (00_Brand_Core)
+- [[Brand Identity Overview]] — Waarom deze doelen bestaan: het merkfundament
+- [[Doelgroep & Persona's]] — Wie we met alle drie de lijnen proberen te bereiken

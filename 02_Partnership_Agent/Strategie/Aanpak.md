@@ -1,6 +1,6 @@
 # Aanpak — HÏ Grip Zoek Agent
 
-> Wat er per zoeklijn moet gebeuren om de doelen in [[Doelen]] te halen. Zie [[Overzicht]] voor context.
+> Wat er per zoeklijn moet gebeuren om de doelen in [[Doelen]] te halen. Zie [[Overzicht]] voor context. Elke actie hieronder — outreach, contentkeuze, welke partner je aanspreekt — is een uiting van het merk: toon en stijl volgen [[Brand Voice & Tone of Voice]], fit volgt uit [[Brand Identity Overview]].
 
 ---
 
@@ -39,3 +39,5 @@ Zie [[Partnership Strategie]] voor de volledige aanpak.
 
 - [[Overzicht]] — De drie zoeklijnen
 - [[Doelen]] — Cijfers en targets per lijn
+- [[Brand Voice & Tone of Voice]] — Hoe we communiceren in outreach
+- [[Brand Identity Overview]] — Merkfundament waar elke actie op toetst

@@ -7,12 +7,13 @@
 
 ## Wat doet het script?
 
-Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v2: hashtag-scan, following-lijst-scan en commenter-scan zitten nu in één script
-**Drie bronnen per run:**
+Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v4: hashtag-scan, following-lijst-scan, commenter-scan én NL-creator-following-scan zitten nu in één script.
+**Vier bronnen per run:**
 
 1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.
 2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie [[project_ig_following]]). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
 3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.
+4. **Following-lijsten van NL creator-accounts** — wie NL creators zoals @iamyasinflits volgen zijn vaak kleine creators in dezelfde niche die via hashtags moeilijk te vinden zijn. Ingesteld via `CREATOR_FOLLOW_LISTS`.
 
 **Profielbeoordeling:** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count, post-datum en caption-tekst. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers en zonder captions in dat geval.
 
@@ -105,7 +106,11 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Voetbal: @akkamist · @nabileljackson · @randalldorosario 
+- Voetbal: @akkamist · @nabileljackson · @randalldorosario · @iamyasinflits
+
+NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
+
+- @iamyasinflits (panna/voetbal, ~179 volgend)
 ---
 
 ## Gerelateerde bestanden
@@ -123,12 +128,13 @@ Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
 ```python
 """
-HI Grip - Instagram creator zoek-script (v2, samengevoegd).
+HI Grip - Instagram creator zoek-script (v4, samengevoegd).
 
-Combineert drie bronnen in een script:
+Combineert vier bronnen in een script:
   1. Hashtag-scan per sport
   2. Following-lijst van eigen/seed-accounts (curated shortlist)
   3. Commenters op referentie-accounts per sport
+  4. Following-lijsten van NL creator-accounts (wie volgt iamyasinflits e.d.)
 
 Profielbeoordeling gebeurt via Instagram's eigen web_profile_info JSON-endpoint
 (exacte cijfers, inclusief like/comment-counts en post-datums) i.p.v. het
@@ -180,6 +186,11 @@ IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebr
 # dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.
 SEED_ACCOUNTS = []
 
+# Following-lijsten van NL creators scannen: wie zij volgen zijn vaak kleine creators
+# in dezelfde niche die anders moeilijk te vinden zijn via hashtags of commenters.
+CREATOR_FOLLOW_LISTS = ["iamyasinflits"]
+CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following lijst
+
 HASHTAGS = {
     "Voetbal_vlog":     ["voetbalvlog", "voetbalclips", "voetbalvlogger"],
     "Voetbal_amateur":  ["amateurvoetbal", "voetballer", "wedstrijddag"],
@@ -192,7 +203,7 @@ POSTS_PER_TAG = 20
 # Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
-    "Voetbal":    ["akkamist", "nabileljackson", "randalldorosario"],
+    "Voetbal":    ["akkamist", "nabileljackson", "randalldorosario", "iamyasinflits"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
@@ -855,6 +866,11 @@ def main():
         for seed in SEED_ACCOUNTS:
             names = get_following_list(page, seed)
             candidates_by_source[f"Following_{seed}"] = names
+
+        # Bron 1b: following-lijsten van NL creator-accounts
+        for creator in CREATOR_FOLLOW_LISTS:
+            names = get_following_list(page, creator)
+            candidates_by_source[f"CreatorFollowing_{creator}"] = names[:CREATOR_FOLLOW_MAX]
 
         # Bron 2: hashtags per sport
         for sport, tags in HASHTAGS.items():

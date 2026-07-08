@@ -11,10 +11,14 @@
             "id": "f90726eea62d6631",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Grafiek weergave"
+              "type": "markdown",
+              "state": {
+                "file": "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Zoek Script & Gids"
             }
           }
         ]
@@ -190,6 +194,10 @@
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
     "02_Partnership_Agent/Influencers_Creators/Influencer Database.md",
+    "02_Partnership_Agent/Influencers_Creators/Evaluatiecriteria.md",
+    "02_Partnership_Agent/Strategie/Doelen.md",
+    "02_Partnership_Agent/Strategie/Overzicht.md",
+    "02_Partnership_Agent/Strategie/Aanpak.md",
     "00_Brand_Core/Strategie/Strategische Keuzes.md",
     "00_Brand_Core/Strategie/Concurrentieanalyse.md",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
@@ -199,9 +207,6 @@
     "00_Brand_Core/Identiteit/Brand Symbolen.md",
     "00_Brand_Core/Identiteit/Brand Voice & Tone of Voice.md",
     "00_Brand_Core/Identiteit/Logo & Kleurenpalet.md",
-    "02_Partnership_Agent/Strategie/Overzicht.md",
-    "02_Partnership_Agent/Strategie/Doelen.md",
-    "02_Partnership_Agent/Strategie/Aanpak.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Samenwerking Strategie.md",
     "02_Partnership_Agent/Strategie.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Actieve Samenwerkingen (Events).md",
@@ -209,7 +214,6 @@
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Voorwaarden Samenwerking.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Zoek Script & Gids (Samenwerkingen).md",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md",
-    "02_Partnership_Agent/Influencers_Creators/Evaluatiecriteria.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/Retailer Database.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/Partnership Voorwaarden Template.md",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/Partnership Strategie.md",

@@ -7,8 +7,7 @@
 
 ## Wat doet het script?
 
-Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v2: hashtag-scan, following-lijst-scan en commenter-scan zitten nu in één script (voorheen los in `ig_find_creators.py` + `ig_commenter_search.py`).
-
+Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) (in de `HI-Grip-claude-setup` git-repo) is de samengevoegde v2: hashtag-scan, following-lijst-scan en commenter-scan zitten nu in één script
 **Drie bronnen per run:**
 
 1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.

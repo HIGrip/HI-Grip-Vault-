@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-07-07
+> Bijgewerkt: 2026-07-08
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -15,7 +15,11 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie [[project_ig_following]]). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
 3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.
 
-**Profielbeoordeling (nieuw):** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count en post-datum. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers in dat geval.
+**Profielbeoordeling:** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count, post-datum en caption-tekst. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers en zonder captions in dat geval.
+
+**Sport-fit / concurrentie-check:** géén losse LLM-API-call in het script (dat kost apart geld, los van je Claude-abonnement). In plaats daarvan verzamelt het script bio + laatste captions per kandidaat in de output, zodat de sport/lifestyle-fit en concurrentie-check uit [[Evaluatiecriteria]] achteraf handmatig of door Claude Code beoordeeld worden — gratis onder het abonnement, gewoon even vragen na een run.
+
+**Onbemand draaien:** met de vlag `--unattended` (bv. vanuit een geplande Windows-taak) stopt het script netjes zodra Instagram een 2FA/verificatiescherm toont, in plaats van voor altijd te wachten op een ENTER die nooit komt.
 
 **Filters (uit [[Evaluatiecriteria]]):**
 
@@ -31,10 +35,11 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
 **Huidige hashtag-configuratie (alleen voetbal):**
-- Voetbal_vlog: voetbalvlog, voetbalweekend, voetbalclips
-- Voetbal_panna: pannanederland, pannaskills, pannaspeler
+- Voetbal_vlog: voetbalvlog, voetbalclips, voetbalvlogger
+- Voetbal_amateur: amateurvoetbal, voetballer, wedstrijddag
+- Voetbal_training: voetbaltraining, jongevoetballer, voetballife
+- Voetbal_panna: pannanederland, pannaskills, straatvoetbal
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
-- Straatvoetbal: straatvoetbal, straatvoetballer, voetbalskills
 
 ---
 
@@ -101,11 +106,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Tennis: @timtopspin
-- Padel: @menno.nolten · @jospadel
-- Voetbal: @iamyasinflits *(@finnpicard_ is bewust verwijderd — bevestigd geen voetbal-account)*
-- Rugby: @prorugby_nl
-- Basketball: @tweeboomcourt · @3x3nl
+- Voetbal: @akkamist · @nabileljackson · @randalldorosario *(@finnpicard_ is bewust verwijderd — bevestigd geen voetbal-account)*
 
 ---
 
@@ -137,13 +138,23 @@ uitlezen van zichtbare, taal-afhankelijke tekst in de pagina. Als dat endpoint
 een keer faalt/geblokkeerd wordt, valt het script terug op de oudere
 DOM-scraping methode zodat een los profiel nooit de hele run laat crashen.
 
-Filters volgen Evaluatiecriteria.md in de Obsidian vault:
+Filters volgen Evaluatiecriteria.md in de Obsidian vault. Alles hier is een harde,
+deterministische cijferfilter (snel, gratis, geen LLM nodig):
   - Volgers: 500 - 100.000
   - Gem. views per post: minimaal MIN_AVG_VIEWS
   - Engagement rate (ER%): minimaal MIN_ER_PCT
   - Activiteit: minimaal MIN_RECENT_POSTS posts in de laatste MAX_INACTIVE_DAYS dagen
   - Taal: NL-signaal in bio (anders "review" i.p.v. automatische afwijzing)
   - Dedupe tegen de bestaande Influencer Database (al gevonden/benaderd wordt overgeslagen)
+
+Het script verzamelt ook bio + recente captions per kandidaat (in de output),
+zodat de sport/lifestyle-fit en concurrentie-check (zie Evaluatiecriteria.md)
+achteraf handmatig of door Claude Code beoordeeld kunnen worden - geen losse
+Anthropic API-key/kosten nodig voor dit script zelf.
+
+Draai met `--unattended` (bv. vanuit een geplande taak) om de handmatige
+2FA/verificatie-pauze over te slaan: het script stopt dan netjes i.p.v. voor
+altijd te wachten op een ENTER die nooit komt.
 """
 import sys, time, json, os, re
 from datetime import datetime, timezone
@@ -152,6 +163,12 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 from playwright.sync_api import sync_playwright
 from playwright_stealth import Stealth
+
+UNATTENDED = "--unattended" in sys.argv
+
+
+class LoginRequiresVerification(Exception):
+    pass
 
 SESSION_FILE = r"C:\Users\lars\.ig_session.json"
 OUTPUT_FILE  = r"C:\Users\lars\Downloads\HiGrip_Creators.txt"
@@ -166,21 +183,18 @@ IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebr
 SEED_ACCOUNTS = []
 
 HASHTAGS = {
-    "Voetbal_vlog":     ["voetbalvlog", "voetbalweekend", "voetbalclips"],
-    "Voetbal_panna":    ["pannanederland", "pannaskills", "pannaspeler"],
+    "Voetbal_vlog":     ["voetbalvlog", "voetbalclips", "voetbalvlogger"],
+    "Voetbal_amateur":  ["amateurvoetbal", "voetballer", "wedstrijddag"],
+    "Voetbal_training": ["voetbaltraining", "jongevoetballer", "voetballife"],
+    "Voetbal_panna":    ["pannanederland", "pannaskills", "straatvoetbal"],
     "Zaalvoetbal":      ["zaalvoetbal", "futsalnederland", "futsalspeler"],
-    "Straatvoetbal":    ["straatvoetbal", "straatvoetballer", "voetbalskills"],
 }
 POSTS_PER_TAG = 20
 
 # Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
-    "Tennis":     ["timtopspin"],
-    "Padel":      ["jospadel", "menno.nolten"],
-    "Voetbal":    ["iamyasinflits"],
-    "Basketball": ["tweeboomcourt", "3x3nl"],
-    "Rugby":      ["prorugby_nl"],
+    "Voetbal":    ["akkamist", "nabileljackson", "randalldorosario"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
@@ -201,6 +215,8 @@ DUTCH_HINTS = re.compile(
     r"amsterdam|rotterdam|utrecht|eindhoven|nl|holland|belgie|belgië)\b",
     re.I,
 )
+
+MAX_CAPTIONS_STORED = 5
 
 
 # ── auth ─────────────────────────────────────────────────────────────────────
@@ -285,6 +301,10 @@ def login(context, page):
     time.sleep(4)
 
     if "challenge" in page.url or "two_factor" in page.url:
+        if UNATTENDED:
+            raise LoginRequiresVerification(
+                "Instagram vraagt om verificatie - kan niet onbemand doorgaan"
+            )
         print("\nVerificatie vereist. Los op in de browser en druk ENTER.")
         input("ENTER om door te gaan...")
         time.sleep(3)
@@ -454,6 +474,7 @@ def evaluate_profile(page, username):
     followers = int((user.get("edge_followed_by") or {}).get("count") or 0)
     bio = (user.get("biography") or "").strip()
 
+    captions = []
     if used_fallback:
         avg_views = user.get("_avg_views", 0)
         er_pct = None
@@ -477,6 +498,12 @@ def evaluate_profile(page, username):
             if node.get("is_video") and node.get("video_view_count"):
                 views.append(int(node["video_view_count"]))
 
+            cap_edges = (node.get("edge_media_to_caption") or {}).get("edges") or []
+            if cap_edges:
+                cap_text = (cap_edges[0].get("node") or {}).get("text", "")
+                if cap_text:
+                    captions.append(cap_text[:300])
+
         avg_views = int(sum(views) / len(views)) if views else 0
         avg_engagement = (sum(engagements) / len(engagements)) if engagements else 0
         er_pct = round((avg_engagement / followers) * 100, 2) if followers else 0.0
@@ -492,6 +519,7 @@ def evaluate_profile(page, username):
         "er_pct": er_pct,
         "recent_posts": recent_count,
         "bio": bio[:150],
+        "captions": captions[:MAX_CAPTIONS_STORED],
         "is_dutch_bio": is_dutch,
         "fallback": used_fallback,
     }
@@ -815,7 +843,12 @@ def main():
             time.sleep(3)
         except Exception:
             pass
-        login(context, page)
+        try:
+            login(context, page)
+        except LoginRequiresVerification as e:
+            print(f"\nGestopt: {e}")
+            browser.close()
+            return
         print("Browser open\n")
 
         candidates_by_source = {}
@@ -905,6 +938,8 @@ def main():
                     f.write(f"  {fol_str} volgers | {view_str} gem. views | ER {er_str} | recente posts: {r['recent_posts']}\n")
                     if r["bio"]:
                         f.write(f"  Bio: {r['bio']}\n")
+                    for cap in r.get("captions") or []:
+                        f.write(f"  Caption: {cap}\n")
                     if r.get("reason"):
                         f.write(f"  Let op: {r['reason']}\n")
 

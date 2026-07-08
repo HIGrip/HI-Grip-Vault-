@@ -105,8 +105,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Voetbal: @akkamist · @nabileljackson · @randalldorosario *(@finnpicard_ is bewust verwijderd — bevestigd geen voetbal-account)*
-
+- Voetbal: @akkamist · @nabileljackson · @randalldorosario 
 ---
 
 ## Gerelateerde bestanden

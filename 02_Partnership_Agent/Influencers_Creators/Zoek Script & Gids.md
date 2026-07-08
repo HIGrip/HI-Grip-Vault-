@@ -225,6 +225,14 @@ DUTCH_HINTS = re.compile(
     re.I,
 )
 
+SPORT_HINTS = re.compile(
+    r"\b(voetbal|football|soccer|keeper|doelman|panna|futsal|zaalvoetbal|"
+    r"basketbal|basketball|tennis|padel|rugby|sport|training|wedstrijd|"
+    r"skills?|tricks?|freestyle|goals?|assist|match|coach|speler|player|"
+    r"kick|dribbl|shoot|penalty|striker|midfielder|verdediger|aanvaller)\b",
+    re.I,
+)
+
 MAX_CAPTIONS_STORED = 5
 
 
@@ -551,6 +559,14 @@ def evaluate_profile(page, username):
     if recent_count is not None and recent_count < MIN_RECENT_POSTS:
         result["status"] = "reject"
         result["reason"] = f"te weinig recente activiteit ({recent_count} posts / {MAX_INACTIVE_DAYS}d)"
+        return result
+
+    # Sport-content check: bio + captions moeten sport-keywords bevatten.
+    # Alleen toepassen als er tekst beschikbaar is (bij fallback kan dit leeg zijn).
+    all_text = " ".join([bio] + captions).strip()
+    if all_text and not SPORT_HINTS.search(all_text):
+        result["status"] = "reject"
+        result["reason"] = "geen sport-content in bio/captions"
         return result
 
     if not is_dutch:

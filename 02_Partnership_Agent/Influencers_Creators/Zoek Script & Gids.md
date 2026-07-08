@@ -110,7 +110,7 @@ Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
-- @iamyasinflits (panna/voetbal, ~179 volgend)
+- Momenteel leeg — @iamyasinflits bleek profvoetballers te volgen (Ziyech, Güler), niet bruikbaar als discovery vector.
 ---
 
 ## Gerelateerde bestanden
@@ -188,7 +188,7 @@ SEED_ACCOUNTS = []
 
 # Following-lijsten van NL creators scannen: wie zij volgen zijn vaak kleine creators
 # in dezelfde niche die anders moeilijk te vinden zijn via hashtags of commenters.
-CREATOR_FOLLOW_LISTS = ["iamyasinflits"]
+CREATOR_FOLLOW_LISTS = []  # iamyasinflits volgt profvoetballers (Ziyech, Güler) — niet bruikbaar
 CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following lijst
 
 HASHTAGS = {

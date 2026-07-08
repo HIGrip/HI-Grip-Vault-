@@ -1,6 +1,6 @@
 # Influencer Database — HÏ Grip
 
-> Bijgewerkt: 2026-06-24
+> Bijgewerkt: 2026-07-08
 > Criteria: [[Evaluatiecriteria]] · Script: [[Zoek Script & Gids]] · Outreach: [[Outreach Templates]] · Pipeline: [[Pipeline Tracker]] · Merkfundament: [[Brand Identity Overview]]
 
 ---
@@ -44,6 +44,7 @@
 | Status       | Account                                                    | Volgers   | Gem. Views | Prioriteit | Notities                                                                                                        |
 | ------------ | ---------------------------------------------------------- | --------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
 | 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer | verifieer  | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
+| 🔍 Verifieer | [@boersma_goalkeeping](https://www.instagram.com/boersma_goalkeeping/) | ~35K | ~30K gem. | Hoog | Keeperstraining content, Nederlandse naam. Directe productfit (keepershandschoenen). Volgers aan hoge kant maar keeper-niche is klein. Verifieer: NL? eigen gezicht? sport-fit HÏ Grip? |
 | 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Zeer hoog  | Panna / street. Kijk wie reageert  content                                                                      |
 | 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Hoog       | Training / matchvlog. Zoek: #voetbalnederland #voetbaltraining — iemand die zijn seizoen documenteert           |
 | 🔍 Zoeken    | → vul in                                                   | <5K       | >5K views  | Zeer hoog  | Zaalvoetbal / futsal. Zoek: #zaalvoetbal #futsalnl — verhaal-creator, niet alleen tricks                        |

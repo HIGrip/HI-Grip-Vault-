@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-07-08
+> Bijgewerkt: 2026-07-10
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -35,10 +35,10 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
 **Huidige hashtag-configuratie (alleen voetbal):**
-- Voetbal_vlog: voetbalvlog, voetbalclips, voetbalvlogger
-- Voetbal_amateur: amateurvoetbal, voetballer, wedstrijddag
+- Voetbal_vlog: voetbalvlog, voetbalvlogger, voetballer
+- Voetbal_amateur: amateurvoetbal, wedstrijddag, voetbalseizoen
 - Voetbal_training: voetbaltraining, jongevoetballer, voetballife
-- Voetbal_panna: pannanederland, pannaskills, straatvoetbal
+- Voetbal_wedstrijd: voetbalmatch, matchdaynl, voetbalwedstrijd
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
 
 ---
@@ -106,7 +106,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Voetbal: @akkamist · @nabileljackson · @randalldorosario · @iamyasinflits
+- Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
@@ -192,23 +192,23 @@ CREATOR_FOLLOW_LISTS = []  # iamyasinflits volgt profvoetballers (Ziyech, Güler
 CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following lijst
 
 HASHTAGS = {
-    "Voetbal_vlog":     ["voetbalvlog", "voetbalclips", "voetbalvlogger"],
-    "Voetbal_amateur":  ["amateurvoetbal", "voetballer", "wedstrijddag"],
-    "Voetbal_training": ["voetbaltraining", "jongevoetballer", "voetballife"],
-    "Voetbal_panna":    ["pannanederland", "pannaskills", "straatvoetbal"],
-    "Zaalvoetbal":      ["zaalvoetbal", "futsalnederland", "futsalspeler"],
+    "Voetbal_vlog":      ["voetbalvlog", "voetbalvlogger", "voetballer"],
+    "Voetbal_amateur":   ["amateurvoetbal", "wedstrijddag", "voetbalseizoen"],
+    "Voetbal_training":  ["voetbaltraining", "jongevoetballer", "voetballife"],
+    "Voetbal_wedstrijd": ["voetbalmatch", "matchdaynl", "voetbalwedstrijd"],
+    "Zaalvoetbal":       ["zaalvoetbal", "futsalnederland", "futsalspeler"],
 }
 POSTS_PER_TAG = 20
 
 # Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
-    "Voetbal":    ["akkamist", "nabileljackson", "randalldorosario", "iamyasinflits"],
+    "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
 # Accounts die nooit meegenomen mogen worden, ongeacht bron.
-EXCLUDED_ACCOUNTS = {"finnpicard_"}
+EXCLUDED_ACCOUNTS = {"finnpicard_", "fienvermeulen", "luukornstein", "skillafootball"}
 
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
@@ -228,7 +228,7 @@ DUTCH_HINTS = re.compile(
 SPORT_HINTS = re.compile(
     r"\b(voetbal|football|soccer|keeper|doelman|panna|futsal|zaalvoetbal|"
     r"basketbal|basketball|tennis|padel|rugby|sport|training|wedstrijd|"
-    r"skills?|tricks?|freestyle|goals?|assist|match|coach|speler|player|"
+    r"skills?|goals?|assist|match|coach|speler|player|"
     r"kick|dribbl|shoot|penalty|striker|midfielder|verdediger|aanvaller)\b",
     re.I,
 )
@@ -380,20 +380,34 @@ def load_known_handles():
 # ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────
 
 def fetch_profile_json(page, username):
-    """Haalt profieldata op via Instagram's web_profile_info endpoint. None bij fout."""
-    url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
+    """Haalt profieldata op via directe navigatie naar het web_profile_info endpoint.
+
+    Navigeert naar de API-URL als een gewone pagina zodat de browser alle
+    cookies/sessie automatisch meestuurt. Instagram geeft JSON terug als
+    plaintext in een <pre>-tag. page.request.get() wordt hier NIET gebruikt
+    omdat Instagram dat blokkeert (403/401 ondanks geldige sessie).
+    """
     try:
-        resp = page.request.get(
-            url,
-            headers={
-                "x-ig-app-id": IG_APP_ID,
-                "accept": "*/*",
-                "referer": f"https://www.instagram.com/{username}/",
-            },
-        )
-        if resp.status != 200:
+        api_url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
+        resp = page.goto(api_url, wait_until="domcontentloaded", timeout=10000)
+        if not resp or resp.status != 200:
             return None
-        data = resp.json()
+        time.sleep(0.5)
+
+        content = ""
+        try:
+            content = page.inner_text("pre")
+        except Exception:
+            pass
+        if not content:
+            try:
+                content = page.inner_text("body")
+            except Exception:
+                pass
+        if not content:
+            return None
+
+        data = json.loads(content)
         return (data.get("data") or {}).get("user")
     except Exception:
         return None

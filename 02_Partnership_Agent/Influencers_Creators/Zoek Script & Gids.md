@@ -79,7 +79,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | ------------------ | ----------------------------------------------------------------------------------------- |
 | Instagram hashtags | #voetbalnederland · #skillsnl · #zaalvoetbal · #futsalnl · #pannavoetbal · #straatvoetbal |
 | TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |
-| Slimste plek       | Kijk wie reageert op @iamyasinflits posts                                                 |
+| Slimste plek       | Kijk wie reageert op  posts                                                               |
 
 ### Rugby
 

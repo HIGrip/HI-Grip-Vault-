@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-07-10
+> Bijgewerkt: 2026-07-10 (v4.1)
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -215,6 +215,7 @@ EXCLUDED_ACCOUNTS = {"finnpicard_", "fienvermeulen", "luukornstein", "skillafoot
 MIN_FOLLOWERS     = 500
 MAX_FOLLOWERS     = 100_000
 MIN_AVG_VIEWS     = 1_000
+MAX_AVG_VIEWS     = 200_000   # boven dit: duidelijk geen micro-creator
 MIN_ER_PCT        = 2.0
 MAX_INACTIVE_DAYS = 21   # "3 posts in de afgelopen 3 weken"
 MIN_RECENT_POSTS  = 3
@@ -380,34 +381,39 @@ def load_known_handles():
 # ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────
 
 def fetch_profile_json(page, username):
-    """Haalt profieldata op via directe navigatie naar het web_profile_info endpoint.
+    """Haalt profieldata op via JS fetch() vanuit de Instagram-paginacontext.
 
-    Navigeert naar de API-URL als een gewone pagina zodat de browser alle
-    cookies/sessie automatisch meestuurt. Instagram geeft JSON terug als
-    plaintext in een <pre>-tag. page.request.get() wordt hier NIET gebruikt
-    omdat Instagram dat blokkeert (403/401 ondanks geldige sessie).
+    Navigeert eerst naar het profiel zodat de browser volledig in de instagram.com
+    context zit, dan doet een async fetch() naar de API via page.evaluate(). De browser
+    stuurt dan automatisch alle sessie-cookies en Instagram-specifieke headers mee.
     """
     try:
-        api_url = f"https://www.instagram.com/api/v1/users/web_profile_info/?username={username}"
-        resp = page.goto(api_url, wait_until="domcontentloaded", timeout=10000)
-        if not resp or resp.status != 200:
-            return None
-        time.sleep(0.5)
+        page.goto(
+            f"https://www.instagram.com/{username}/",
+            wait_until="domcontentloaded",
+            timeout=15000,
+        )
+        time.sleep(1)
 
-        content = ""
-        try:
-            content = page.inner_text("pre")
-        except Exception:
-            pass
-        if not content:
-            try:
-                content = page.inner_text("body")
-            except Exception:
-                pass
-        if not content:
-            return None
+        data = page.evaluate(
+            """
+            async (args) => {
+                const resp = await fetch(
+                    '/api/v1/users/web_profile_info/?username=' + args.username,
+                    {
+                        credentials: 'include',
+                        headers: {'x-ig-app-id': args.appId}
+                    }
+                );
+                if (!resp.ok) return null;
+                return await resp.json();
+            }
+            """,
+            {"username": username, "appId": IG_APP_ID},
+        )
 
-        data = json.loads(content)
+        if not data:
+            return None
         return (data.get("data") or {}).get("user")
     except Exception:
         return None
@@ -555,7 +561,7 @@ def evaluate_profile(page, username):
         "fallback": used_fallback,
     }
 
-    if followers and (followers < MIN_FOLLOWERS or followers > MAX_FOLLOWERS):
+    if followers > MAX_FOLLOWERS or (followers > 0 and followers < MIN_FOLLOWERS):
         result["status"] = "reject"
         result["reason"] = f"volgers buiten bereik ({followers:,})"
         return result
@@ -563,6 +569,12 @@ def evaluate_profile(page, username):
     if avg_views < MIN_AVG_VIEWS:
         result["status"] = "reject"
         result["reason"] = f"te weinig views ({avg_views:,})"
+        return result
+
+    if avg_views > MAX_AVG_VIEWS:
+        result["status"] = "reject"
+        result["reason"] = f"te veel views — geen micro-creator ({avg_views:,})"
+        return result
         return result
 
     if er_pct is not None and er_pct < MIN_ER_PCT:

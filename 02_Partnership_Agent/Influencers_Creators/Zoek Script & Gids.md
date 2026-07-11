@@ -208,7 +208,17 @@ REFERENCE_ACCOUNTS = {
 REELS_PER_REF_ACCOUNT = 5
 
 # Accounts die nooit meegenomen mogen worden, ongeacht bron.
-EXCLUDED_ACCOUNTS = {"finnpicard_", "fienvermeulen", "luukornstein", "skillafootball"}
+EXCLUDED_ACCOUNTS = {
+    "finnpicard_",        # geen voetbal-account
+    "fienvermeulen",      # lifestyle, geen sport
+    "luukornstein",       # filmmaker, geen sport
+    "skillafootball",     # te groot
+    "de_voetbal_vlog",    # account van een kind
+    "joshuaagteres",      # geen voetbalcontent
+    "ninourbann",         # geen video's, geen voetbal
+    "luca_van_ammers",    # stemacteur, Frans, geen voetbal
+    "michiel_pilaar",     # vis-contentcreator, geen sport
+}
 
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 

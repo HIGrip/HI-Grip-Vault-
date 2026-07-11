@@ -191,6 +191,13 @@ SEED_ACCOUNTS = []
 CREATOR_FOLLOW_LISTS = []  # iamyasinflits volgt profvoetballers (Ziyech, Güler) — niet bruikbaar
 CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following lijst
 
+# Scan commenters op reels van accounts die dit account volgt.
+# lars_a.i.h volgt bewust voetbal-influencers als curated shortlist — commenters
+# op hun content zijn veel gerichter dan willekeurige hashtag-posters.
+COMMENTER_SEED_ACCOUNTS  = ["lars_a.i.h"]
+COMMENTER_SEED_FOLLOW_MAX = 60   # max accounts uit de following-lijst te scannen
+REELS_PER_COMMENTER_SEED  = 3    # reels per gevolgd account
+
 HASHTAGS = {
     "Voetbal_vlog":      ["voetbalvlog", "voetbalvlogger", "voetballer"],
     "Voetbal_amateur":   ["amateurvoetbal", "wedstrijddag", "voetbalseizoen"],

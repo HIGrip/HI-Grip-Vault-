@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-07-10 (v4.1)
+> Bijgewerkt: 2026-07-14 (v4.2)
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -192,7 +192,7 @@ CREATOR_FOLLOW_LISTS = []  # iamyasinflits volgt profvoetballers (Ziyech, Güler
 CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following lijst
 
 # Scan commenters op reels van accounts die dit account volgt.
-# lars_a.i.h volgt bewust voetbal-influencers als curated shortlist — commenters
+# lars_a.i.h volgt bewust sport-influencers als curated shortlist — commenters
 # op hun content zijn veel gerichter dan willekeurige hashtag-posters.
 COMMENTER_SEED_ACCOUNTS  = ["lars_a.i.h"]
 COMMENTER_SEED_FOLLOW_MAX = 60   # max accounts uit de following-lijst te scannen
@@ -225,14 +225,23 @@ EXCLUDED_ACCOUNTS = {
     "ninourbann",         # geen video's, geen voetbal
     "luca_van_ammers",    # stemacteur, Frans, geen voetbal
     "michiel_pilaar",     # vis-contentcreator, geen sport
+    "voetbalgiveaways_",  # giveaway-account, geen creator
+    "footballculture_com",# media-pagina, geen persoonlijke creator
 }
+
+# Usernames die wijzen op media/nieuws/giveaway-accounts — geen persoonlijke creators.
+EXCLUDED_USERNAME_PATTERNS = re.compile(
+    r"(giveaway|nieuws|news|alert|update|club|fc[._]|vv[._]|official|culture_com|"
+    r"magazine|media|tv[._]|highlight|scout|transfer|fanpage|community)",
+    re.I,
+)
 
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
 MIN_FOLLOWERS     = 500
 MAX_FOLLOWERS     = 100_000
 MIN_AVG_VIEWS     = 1_000
-MAX_AVG_VIEWS     = 200_000   # boven dit: duidelijk geen micro-creator
+MAX_AVG_VIEWS     = 30_000    # boven dit: te groot voor micro-creator
 MIN_ER_PCT        = 2.0
 MAX_INACTIVE_DAYS = 21   # "3 posts in de afgelopen 3 weken"
 MIN_RECENT_POSTS  = 3

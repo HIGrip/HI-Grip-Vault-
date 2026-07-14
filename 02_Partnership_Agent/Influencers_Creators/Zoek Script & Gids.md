@@ -174,9 +174,11 @@ UNATTENDED = "--unattended" in sys.argv
 class LoginRequiresVerification(Exception):
     pass
 
-SESSION_FILE = r"C:\Users\lars\.ig_session.json"
-OUTPUT_FILE  = r"C:\Users\lars\Downloads\HiGrip_Creators.txt"
-DATABASE_FILE = r"C:\Users\lars\Documents\ObsidianVault\02_Partnership_Agent\Influencers_Creators\Influencer Database.md"
+_HOME         = os.path.expanduser("~")
+SESSION_FILE  = os.path.join(_HOME, ".ig_session.json")
+OUTPUT_FILE   = os.path.join(_HOME, "Downloads", "HiGrip_Creators.txt")
+DATABASE_FILE = os.path.join(_HOME, "Documents", "ObsidianVault", "02_Partnership_Agent",
+                             "Influencers_Creators", "Influencer Database.md")
 
 IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebruikt
 

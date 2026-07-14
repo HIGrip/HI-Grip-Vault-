@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
+                "file": "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Website Structuur & Sitemap"
+              "title": "SEO Strategie & Keywords"
             }
           }
         ]
@@ -193,10 +193,10 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
     "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
     "03_Website_Agent/Technisch/Technische Procedures.md",
     "03_Website_Agent/Technisch/Shopify App Stack.md",
-    "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "03_Website_Agent/Content/Product Pagina Gids.md",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Website_Agent/Technisch/Technische Procedures.md",
+                "file": "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Technische Procedures"
+              "title": "Website Structuur & Sitemap"
             }
           }
         ]
@@ -191,11 +191,12 @@
       "bases:Nieuwe basis maken": false
     }
   },
-  "active": "597c9458f12a4dff",
+  "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
+    "03_Website_Agent/Technisch/Technische Procedures.md",
     "03_Website_Agent/Technisch/Shopify App Stack.md",
     "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
-    "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "03_Website_Agent/Content/Product Pagina Gids.md",
@@ -203,7 +204,6 @@
     "02_Partnership_Agent/Influencers_Creators/Evaluatiecriteria.md",
     "02_Partnership_Agent/Influencers_Creators/Influencer Database.md",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md",
-    "03_Website_Agent/Technisch/Technische Procedures.md",
     "03_Website_Agent/Technisch/Update Log.md",
     "02_Partnership_Agent/Strategie/Doelen.md",
     "02_Partnership_Agent/Strategie/Overzicht.md",

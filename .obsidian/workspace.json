@@ -11,17 +11,14 @@
             "id": "f90726eea62d6631",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Naamloos.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Naamloos"
+              "icon": "lucide-file",
+              "title": "Agent Bestandsschema (Soul, Identiteit, User)"
             }
           }
         ]
@@ -194,8 +191,20 @@
       "bases:Nieuwe basis maken": false
     }
   },
-  "active": "597c9458f12a4dff",
+  "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "03_Website_Agent/Doel/Website Doel & KPI's.md",
+    "03_Website_Agent/Doel",
+    "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
+    "04_Agent_Infrastructuur/System Prompts/System Prompt - Website Agent.md",
+    "04_Agent_Infrastructuur/System Prompts/System Prompt - Partnership Agent.md",
+    "04_Agent_Infrastructuur/System Prompts/System Prompt - Content Agent.md",
+    "04_Agent_Infrastructuur/Context & Output/Prompt Templates per Taak.md",
+    "04_Agent_Infrastructuur/Context & Output/Output Format Specificaties.md",
+    "04_Agent_Infrastructuur/Context & Output/Context Injection Template.md",
+    "04_Agent_Infrastructuur/Beheer/Agent Takenverdeling & Grenzen.md",
+    "04_Agent_Infrastructuur/Beheer/API & Tool Connections.md",
+    "Naamloos.canvas",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "02_Partnership_Agent/user.md",
     "02_Partnership_Agent/soul.md",
@@ -206,23 +215,12 @@
     "03_Website_Agent/user.md",
     "03_Website_Agent/soul.md",
     "03_Website_Agent/identiteit.md",
-    "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "03_Website_Agent/Content/Homepage Copy & Structuur.md",
     "03_Website_Agent/Content/Product Pagina Gids.md",
     "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
     "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
     "03_Website_Agent/Technisch/Technische Procedures.md",
-    "03_Website_Agent/Technisch/Shopify App Stack.md",
-    "02_Partnership_Agent/Influencers_Creators/Evaluatiecriteria.md",
-    "02_Partnership_Agent/Influencers_Creators/Influencer Database.md",
-    "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md",
-    "03_Website_Agent/Technisch/Update Log.md",
-    "02_Partnership_Agent/Strategie/Doelen.md",
-    "02_Partnership_Agent/Strategie/Overzicht.md",
-    "02_Partnership_Agent/Strategie/Aanpak.md",
-    "00_Brand_Core/Strategie/Strategische Keuzes.md",
-    "Naamloos.canvas",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",
@@ -232,7 +230,6 @@
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.5f9c9cf1c61d",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp",
     "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.34d777dc3dbd",
-    "Socials - HÏ Grip.pdf",
     "Naamloos 1.canvas"
   ]
 }

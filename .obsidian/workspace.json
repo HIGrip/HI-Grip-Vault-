@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
+                "file": "00_Brand_Core/Identiteit/Brand Identity Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agent Hiërarchie & Structuurschema"
+              "title": "Brand Identity Overview"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
     "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
     "04_Agent_Infrastructuur/Beheer/Goedkeuringsworkflow.md",
     "04_Agent_Infrastructuur/Context & Output/Context Injection Template.md",
@@ -201,7 +202,6 @@
     "04_Agent_Infrastructuur/user.md",
     "04_Agent_Infrastructuur/soul.md",
     "04_Agent_Infrastructuur/identiteit.md",
-    "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
     "03_Website_Agent/Doel/Website Doel & KPI's.md",
     "03_Website_Agent/Doel",
     "04_Agent_Infrastructuur/System Prompts/System Prompt - Website Agent.md",

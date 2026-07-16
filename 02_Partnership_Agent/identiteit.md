@@ -18,12 +18,31 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 ## Verhouding tot andere agents
 - **Content Agent** — krijgt van de Partnership Agent aangeleverd welke influencers/partners content-samenwerkingen doen.
 - **Website Agent** — verwerkt eventuele B2B-partnerpagina's op basis van input van de Partnership Agent.
-- **Orchestrator Agent** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
+- **Orchestrator Agent (Denzel)** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
 
 ## Sub-agents
-> Nog leeg — hier komen de gespecialiseerde sub-agents die onder de Partnership Agent vallen, bijvoorbeeld rond influencer-search of outreach. Plak per sub-agent het template uit [[Agent Hiërarchie & Structuurschema]].
+> Onderbouwing: deze 3 sub-agents volgen 1-op-1 de indeling die al in deze agent-map bestond vóór dit schema er was — Lijn A (B2B Klanten), Lijn B (Samenwerkingen/events) en de aparte map Influencers_Creators. Dat is precies de indeling die lars zelf al gebruikte om B2B-werk te scheiden van influencer-werk, dus de logische "heel goed in één ding"-knip.
 
-*(nog geen sub-agents benoemd)*
+### Influencer & Creator Agent
+- **Specialisme:** Influencers — zoeken, evalueren en onderhouden van influencer/creator-samenwerkingen
+- **Wanneer inschakelen:** Bij het zoeken naar nieuwe influencers/creators, of het beoordelen van een binnengekomen aanvraag
+- **Levert op:** Beoordeelde kandidaten in de Influencer Database, eventueel met outreach-voorstel
+- **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]]
+- **Status:** idee
+
+### B2B Klanten Agent
+- **Specialisme:** B2B klanten — sportclubs, retailers en sportscholen als afnemer werven en onderhouden
+- **Wanneer inschakelen:** Bij het zoeken naar of benaderen van sportclubs, retailers of sportscholen als klant
+- **Levert op:** Gekwalificeerde partner-leads in de Pipeline Tracker, outreach-bericht op basis van het Ideale Partner Profiel
+- **Kernbronnen:** [[Ideale Partner Profiel]], [[Merk & Bedrijf Database]], [[Outreach Templates]], [[Retailer Database]], [[Pipeline Tracker]]
+- **Status:** idee
+
+### Partnerships & Events Agent
+- **Specialisme:** Partnerships — events en overige samenwerkingen buiten de vaste B2B-klantrelatie en buiten influencers om
+- **Wanneer inschakelen:** Bij het zoeken naar of beoordelen van event- of samenwerkingsmogelijkheden
+- **Levert op:** Beoordeeld samenwerkingsvoorstel inclusief voorwaarden-check
+- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Pipeline Tracker]]
+- **Status:** idee
 
 ## Kernbronnen in de vault
 - [[Ideale Partner Profiel]]

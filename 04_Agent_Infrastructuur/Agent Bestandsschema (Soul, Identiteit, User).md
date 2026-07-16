@@ -1,6 +1,6 @@
 # Agent Bestandsschema — Soul, Identiteit, User
 
-> Legt vast hoe de 3 kernbestanden per agent (`soul.md`, `identiteit.md`, `user.md`) zijn opgebouwd en wat erin hoort. Elke agent — de Orchestrator én de 3 hoofdagents (Content, Partnership, Website) — heeft deze 3 bestanden in zijn eigen map. Voor de laagstructuur eromheen (Orchestrator boven, sub-agents onder de hoofdagents): zie [[Agent Hiërarchie & Structuurschema]].
+> Legt vast hoe de 3 kernbestanden per agent (`soul.md`, `identiteit.md`, `user.md`) zijn opgebouwd en wat erin hoort. Elke agent — Denzel (de Orchestrator) én de 3 hoofdagents (Content, Partnership, Website) — heeft deze 3 bestanden in zijn eigen map. Voor de laagstructuur eromheen (Denzel boven, sub-agents onder de hoofdagents): zie [[Agent Hiërarchie & Structuurschema]].
 
 ---
 
@@ -37,7 +37,7 @@ Door dit te splitsen kan elk deel apart worden bijgewerkt zonder de rest opnieuw
 - Content Agent: ...
 - Partnership Agent: ...
 - Website Agent: ...
-- Orchestrator Agent: ...
+- Orchestrator Agent (Denzel): ...
 
 ## Sub-agents
 [Alleen voor de 3 hoofdagents — catalogus-items, zie [[Agent Hiërarchie & Structuurschema]]]
@@ -96,17 +96,17 @@ Door dit te splitsen kan elk deel apart worden bijgewerkt zonder de rest opnieuw
 
 | Agent | identiteit.md | soul.md | user.md |
 |---|---|---|---|
-| Orchestrator Agent | Concept-versie | Concept-versie, autonomie nog te bevestigen | Concept-versie |
-| Website Agent | Ingevuld | Grotendeels ingevuld — overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] | Ingevuld |
-| Content Agent | Basis ingevuld | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen | Ingevuld |
-| Partnership Agent | Basis ingevuld | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen; technische guardrails (IG-zoekscript) wel al bekend | Ingevuld |
+| Denzel (Orchestrator) | Ingevuld, naam vastgesteld | Concept-versie, autonomie nog te bevestigen | Ingevuld |
+| Website Agent | Ingevuld incl. 4 sub-agents | Grotendeels ingevuld — overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] | Ingevuld |
+| Content Agent | Ingevuld incl. 3 sub-agents | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen | Ingevuld |
+| Partnership Agent | Ingevuld incl. 3 sub-agents | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen; technische guardrails (IG-zoekscript) wel al bekend | Ingevuld |
 
 ## Openstaand
 
-- Voor **Orchestrator**, **Content Agent** en **Partnership Agent** moet nog hetzelfde gesprek gevoerd worden als voor de Website Agent (14 juli 2026, interactief grenzen-formulier) om de autonomie-tabel in `soul.md` te vullen.
+- Voor **Denzel**, **Content Agent** en **Partnership Agent** moet nog hetzelfde gesprek gevoerd worden als voor de Website Agent (14 juli 2026, interactief grenzen-formulier) om de autonomie-tabel in `soul.md` te vullen.
 - [[API & Tool Connections]] staat nog leeg — daar horen straks technische tool-regels die voor meerdere agents gelden, bv. de Chrome-kill regel bij IG-automatisering (nu tijdelijk alleen in Partnership Agent's soul.md genoemd).
 - De lege bestanden in `System Prompts/` (System Prompt - Content Agent.md, etc.) zijn nu overbodig geworden door dit 3-bestanden-schema — laat het weten of die verwijderd mogen worden of dat je ze nog ergens anders voor gebruikt.
-- Sub-agents per hoofdagent nog te benoemen — zie [[Agent Hiërarchie & Structuurschema]].
+- Alle 10 sub-agents staan nog op status "idee" — zie [[Agent Hiërarchie & Structuurschema]] voor het overzicht en de onderbouwing per keuze.
 
 ---
 

@@ -1,7 +1,7 @@
-# User — wie wij zijn (voor Orchestrator Agent)
+# User — wie wij zijn (voor Denzel, de Orchestrator Agent)
 
 ## Lars
-Eigenaar van HÏ Grip, enige opdrachtgever. Werkt liever met één aanspreekpunt dat weet welke hoofdagent (en sub-agent) een taak oppakt, in plaats van zelf te moeten bepalen welke agent iets doet.
+Eigenaar van HÏ Grip, enige opdrachtgever. Werkt liever met één aanspreekpunt (Denzel) dat weet welke hoofdagent (en sub-agent) een taak oppakt, in plaats van zelf te moeten bepalen welke agent iets doet.
 
 ## HÏ Grip in het kort
 Nederlands performance-sportswear merk, gestart vanuit passie voor sport. Draait om comfort, vertrouwen en innovatie; kwaliteit boven kwantiteit, eerlijk verhaal zonder loze beloftes. Volledige versie: [[Brand Identity Overview]].

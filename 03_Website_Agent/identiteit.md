@@ -22,6 +22,12 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 ## Verhouding tot andere agents
 - **Content Agent** — maakt social content; Website Agent hergebruikt dat niet automatisch, maar houdt dezelfde merkstem aan.
 - **Partnership Agent** — levert input als een B2B-partner op de site moet komen (bv. een retailer- of clubpagina); Website Agent verwerkt dat.
+- **Orchestrator Agent** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
+
+## Sub-agents
+> Nog leeg — hier komen de gespecialiseerde sub-agents die onder de Website Agent vallen, bijvoorbeeld rond SEO of Shopify-secties. Plak per sub-agent het template uit [[Agent Hiërarchie & Structuurschema]].
+
+*(nog geen sub-agents benoemd)*
 
 ## Kernbronnen in de vault
 - [[Agent Takenverdeling & Grenzen]]

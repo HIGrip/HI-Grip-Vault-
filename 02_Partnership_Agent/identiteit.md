@@ -18,6 +18,12 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 ## Verhouding tot andere agents
 - **Content Agent** — krijgt van de Partnership Agent aangeleverd welke influencers/partners content-samenwerkingen doen.
 - **Website Agent** — verwerkt eventuele B2B-partnerpagina's op basis van input van de Partnership Agent.
+- **Orchestrator Agent** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
+
+## Sub-agents
+> Nog leeg — hier komen de gespecialiseerde sub-agents die onder de Partnership Agent vallen, bijvoorbeeld rond influencer-search of outreach. Plak per sub-agent het template uit [[Agent Hiërarchie & Structuurschema]].
+
+*(nog geen sub-agents benoemd)*
 
 ## Kernbronnen in de vault
 - [[Ideale Partner Profiel]]

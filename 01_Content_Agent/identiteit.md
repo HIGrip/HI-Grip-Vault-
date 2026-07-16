@@ -17,6 +17,12 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 ## Verhouding tot andere agents
 - **Partnership Agent** — levert influencer/creator-samenwerkingen aan; de zoektocht en selectie zelf is een taak van de Partnership Agent, Content Agent verwerkt het resultaat in content.
 - **Website Agent** — houdt dezelfde merkstem aan, maar maakt geen site-copy.
+- **Orchestrator Agent** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
+
+## Sub-agents
+> Nog leeg — hier komen de gespecialiseerde sub-agents die onder de Content Agent vallen. Plak per sub-agent het template uit [[Agent Hiërarchie & Structuurschema]].
+
+*(nog geen sub-agents benoemd)*
 
 ## Kernbronnen in de vault
 - [[Content Strategie]]

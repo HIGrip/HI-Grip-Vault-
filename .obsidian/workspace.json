@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
+                "file": "04_Agent_Infrastructuur/Beheer/Agent Takenverdeling & Grenzen.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agent Bestandsschema (Soul, Identiteit, User)"
+              "title": "Agent Takenverdeling & Grenzen"
             }
           }
         ]
@@ -193,9 +193,13 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
+    "04_Agent_Infrastructuur/user.md",
+    "04_Agent_Infrastructuur/soul.md",
+    "04_Agent_Infrastructuur/identiteit.md",
+    "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
     "03_Website_Agent/Doel/Website Doel & KPI's.md",
     "03_Website_Agent/Doel",
-    "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
     "04_Agent_Infrastructuur/System Prompts/System Prompt - Website Agent.md",
     "04_Agent_Infrastructuur/System Prompts/System Prompt - Partnership Agent.md",
     "04_Agent_Infrastructuur/System Prompts/System Prompt - Content Agent.md",
@@ -217,10 +221,6 @@
     "03_Website_Agent/identiteit.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "03_Website_Agent/Content/Homepage Copy & Structuur.md",
-    "03_Website_Agent/Content/Product Pagina Gids.md",
-    "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
-    "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
-    "03_Website_Agent/Technisch/Technische Procedures.md",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",

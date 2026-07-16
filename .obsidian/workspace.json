@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/Beheer/Agent Takenverdeling & Grenzen.md",
+                "file": "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Agent Takenverdeling & Grenzen"
+              "title": "Agent Hiërarchie & Structuurschema"
             }
           }
         ]
@@ -194,6 +194,10 @@
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
     "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
+    "04_Agent_Infrastructuur/Beheer/Goedkeuringsworkflow.md",
+    "04_Agent_Infrastructuur/Context & Output/Context Injection Template.md",
+    "04_Agent_Infrastructuur/Beheer/API & Tool Connections.md",
+    "04_Agent_Infrastructuur/Beheer/Agent Takenverdeling & Grenzen.md",
     "04_Agent_Infrastructuur/user.md",
     "04_Agent_Infrastructuur/soul.md",
     "04_Agent_Infrastructuur/identiteit.md",
@@ -205,9 +209,6 @@
     "04_Agent_Infrastructuur/System Prompts/System Prompt - Content Agent.md",
     "04_Agent_Infrastructuur/Context & Output/Prompt Templates per Taak.md",
     "04_Agent_Infrastructuur/Context & Output/Output Format Specificaties.md",
-    "04_Agent_Infrastructuur/Context & Output/Context Injection Template.md",
-    "04_Agent_Infrastructuur/Beheer/Agent Takenverdeling & Grenzen.md",
-    "04_Agent_Infrastructuur/Beheer/API & Tool Connections.md",
     "Naamloos.canvas",
     "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "02_Partnership_Agent/user.md",
@@ -220,7 +221,6 @@
     "03_Website_Agent/soul.md",
     "03_Website_Agent/identiteit.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
-    "03_Website_Agent/Content/Homepage Copy & Structuur.md",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",

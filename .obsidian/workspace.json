@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/soul.md",
+                "file": "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "soul"
+              "title": "Stappenplan — Verdere Bouw"
             }
           }
         ]
@@ -191,14 +191,18 @@
       "bases:Nieuwe basis maken": false
     }
   },
-  "active": "597c9458f12a4dff",
+  "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "04_Agent_Infrastructuur/identiteit Denzel.md",
+    "04_Agent_Infrastructuur/soul Denzel.md",
+    "04_Agent_Infrastructuur/Website Agent/identiteit.md",
+    "04_Agent_Infrastructuur/Website Agent/soul.md",
+    "04_Agent_Infrastructuur/Website Agent/Content/Website Copy Agent/_Werkplek.md",
+    "04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md.tmp.27584.48a52dba8adb",
     "04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md.tmp.27584.1d84062ffc6e",
     "04_Agent_Infrastructuur/Website Agent/Analyse/Conversie & Analyse Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/Website Agent/Content/Website Copy Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Website Agent/Technisch/Design Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent/_Werkplek.md",
@@ -210,9 +214,6 @@
     "04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent",
     "04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",
     "04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten",
-    "04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent",
-    "04_Agent_Infrastructuur/Website Agent/soul.md",
-    "04_Agent_Infrastructuur/Website Agent/identiteit.md",
     "04_Agent_Infrastructuur/Partnership Agent/soul.md",
     "04_Agent_Infrastructuur/Partnership Agent/identiteit.md",
     "04_Agent_Infrastructuur/Content Agent/soul.md",
@@ -220,12 +221,10 @@
     "04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/identiteit.md",
     "04_Agent_Infrastructuur/Beheer/user.md",
     "01_Content_Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek.md",
     "01_Content_Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md",
     "01_Content_Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/soul.md",
     "04_Agent_Infrastructuur/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/Beheer/Agent Bestandsschema (Soul, Identiteit, User).md",

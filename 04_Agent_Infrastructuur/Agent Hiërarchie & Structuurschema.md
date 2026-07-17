@@ -74,14 +74,13 @@ Plak dit blok in de `## Sub-agents`-sectie van het `identiteit.md` van de betref
 
 ## Openstaand
 
-- Autonomie-tabel van Denzel (in `soul.md`) nog niet doorgesproken — zelfde soort gesprek als het grenzen-formulier van de Website Agent.
-- Autonomie-tabel van Content Agent en Partnership Agent (hun `soul.md`) nog niet doorgesproken.
-- Elke sub-agent staat nu op status "idee" — bij de eerste die echt gebouwd wordt, de status en het veld "Levert op"/"Wanneer inschakelen" concreter maken op basis van praktijkervaring.
+Zie [[Stappenplan — Verdere Bouw]] voor de volledige, gefaseerde aanpak (autonomie vastleggen → vakinhoud vullen → één sub-agent als pilot bouwen → resterende infra → opschalen).
 
 ---
 
 ## Gerelateerde bestanden
 
+- [[Stappenplan — Verdere Bouw]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
 - [[Agent Takenverdeling & Grenzen]]
 - [[Goedkeuringsworkflow]]

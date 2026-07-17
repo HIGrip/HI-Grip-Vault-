@@ -27,7 +27,7 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Specialisme:** Influencers — zoeken, evalueren en onderhouden van influencer/creator-samenwerkingen
 - **Wanneer inschakelen:** Bij het zoeken naar nieuwe influencers/creators, of het beoordelen van een binnengekomen aanvraag
 - **Levert op:** Beoordeelde kandidaten in de Influencer Database, eventueel met outreach-voorstel
-- **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]]
+- **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]], [[Brand Identity Overview]]
 - **Status:** idee
 
 ### B2B Klanten Agent
@@ -41,7 +41,7 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Specialisme:** Partnerships — events en overige samenwerkingen buiten de vaste B2B-klantrelatie en buiten influencers om
 - **Wanneer inschakelen:** Bij het zoeken naar of beoordelen van event- of samenwerkingsmogelijkheden
 - **Levert op:** Beoordeeld samenwerkingsvoorstel inclusief voorwaarden-check
-- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Pipeline Tracker]]
+- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Pipeline Tracker]], [[Brand Identity Overview]]
 - **Status:** idee
 
 ## Kernbronnen in de vault

@@ -38,7 +38,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Specialisme:** Design
 - **Wanneer inschakelen:** Bij het bouwen of aanpassen van secties, kleuren of spacing in het Shopify-testtheme
 - **Levert op:** Zorgt voor strakke moderne designs die aansluiten bij het merk HÏ Grip
-- **Kernbronnen:** [[Shopify App Stack]], [[Logo & Kleurenpalet]]
+- **Kernbronnen:** [[Shopify App Stack]], [[Logo & Kleurenpalet]], [[Brand Identity Overview]]
 - **Status:** idee
 
 ### Website Copy Agent

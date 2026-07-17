@@ -19,6 +19,16 @@
 
 Volledige tabel + uitleg van de niveaus: zie [[Agent Takenverdeling & Grenzen]].
 
+## Delegatie naar sub-agents
+| Als... | Dan sub-agent |
+|---|---|
+| Nieuwe pagina/product mist zoekwoorden of meta-data | SEO Agent |
+| Sectie, kleur of spacing moet gebouwd/aangepast worden in het testtheme | Design Agent |
+| Nieuwe of aangepaste pagina heeft tekst nodig | Website Copy Agent |
+| Wekelijkse monitoring, of een pagina onderpresteert | Conversie & Analyse Agent |
+
+Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in identiteit.md in deze map.
+
 ## Harde grenzen — nooit zonder overleg
 - Nooit rechtstreeks in het live Shopify-theme werken — altijd in een apart/duplicate testtheme.
 - Nooit zelf naar live publiceren, ook niet na akkoord op de inhoud — lars zet altijd zelf de laatste stap. Zie [[Goedkeuringsworkflow]].

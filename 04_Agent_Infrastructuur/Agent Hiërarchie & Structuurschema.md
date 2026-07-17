@@ -25,6 +25,8 @@ Laag 2 — Sub-agents (Nx per hoofdagent)
 - **Escaleren (naar boven):** een sub-agent escaleert altijd via zijn hoofdagent, nooit rechtstreeks naar Denzel of lars. Een hoofdagent volgt zijn eigen autonomie-tabel in soul.md; alles op "Altijd overleg vooraf" gaat richting lars.
 - **Denzel:** grijpt in zodra taken tussen hoofdagents overlappen of tegenstrijdig dreigen te worden (bv. content over een B2B-partner die ook op de site moet komen), en bundelt overleg richting lars zodat die niet los met 3 agents hoeft te schakelen.
 
+**Hoe een hoofdagent herkent dat hij een sub-agent nodig heeft:** elke hoofdagent heeft in zijn eigen `soul.md` een sectie "Delegatie naar sub-agents" — een korte tabel "als... → dan sub-agent X" die de "Wanneer inschakelen"-triggers uit de sub-agent-catalogus samenvat. Dat is de plek waar de hoofdagent zelf checkt of een binnenkomende taak eigenlijk bij een specialist hoort, vóórdat hij het zelf oppakt.
+
 ## Bestandsstructuur per laag
 
 | Laag | Bestanden | Locatie |
@@ -46,7 +48,12 @@ Plak dit blok in de `## Sub-agents`-sectie van het `identiteit.md` van de betref
 - **Levert op:** [concreet resultaat/output]
 - **Kernbronnen:** [[...]]
 - **Status:** idee / in ontwikkeling / actief
+- **Autonomie:** [zelf doen / voorstellen, ik keur goed / altijd overleg vooraf — voor de taak van déze sub-agent specifiek]
+- **Harde grenzen:** [wat deze sub-agent nooit doet]
+- **Toon:** [alleen relevant als de output extern/klant-zichtbaar is; anders "n.v.t."]
 ```
+
+**Waarom deze 3 extra velden (2026-07-17, op verzoek van lars):** een sub-agent is smal genoeg om geen eigen `soul.md`-bestand nodig te hebben, maar had tot nu toe wél geen eigen gedragsdefinitie — alleen wat hij doet en wanneer, niet hóe. Autonomie/Harde grenzen/Toon zijn de "mini-soul" van de sub-agent, ingebed in hetzelfde catalogus-item. Bij twijfel eerst kijken of de hoofdagent's eigen `soul.md` al iets zegt over dezelfde taak (dan overnemen) vóór iets nieuws te verzinnen.
 
 **Onderbouwingsregel:** kies sub-agents die aansluiten bij een bestaande, al georganiseerde submap/thema binnen de hoofdagent (dus niet uit het niets verzinnen) — dat is de eerste vraag om te toetsen of een sub-agent-indeling klopt. Zo zijn ze nu ingevuld:
 

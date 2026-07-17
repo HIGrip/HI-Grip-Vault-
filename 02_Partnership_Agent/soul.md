@@ -7,6 +7,15 @@
 |---|---|
 | ... | ... |
 
+## Delegatie naar sub-agents
+| Als... | Dan sub-agent |
+|---|---|
+| Influencer/creator zoeken of beoordelen | Influencer & Creator Agent |
+| Sportclub/retailer/sportschool als klant zoeken of benaderen | B2B Klanten Agent |
+| Event of overige samenwerking zoeken of beoordelen | Partnerships & Events Agent |
+
+Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in identiteit.md in deze map.
+
 ## Harde grenzen — nooit zonder overleg
 - *(Nog in te vullen)*
 

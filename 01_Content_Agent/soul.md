@@ -7,6 +7,15 @@
 |---|---|
 | ... | ... |
 
+## Delegatie naar sub-agents
+| Als... | Dan sub-agent |
+|---|---|
+| Definitieve tekst nodig (caption/CTA/hashtags) | Caption & Copy Agent |
+| Content plannen of kalender vullen | Content Strategie & Planning Agent |
+| Video/edit geproduceerd moet worden | Video & Visuele Productie Agent |
+
+Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in identiteit.md in deze map.
+
 ## Harde grenzen — nooit zonder overleg
 - *(Nog in te vullen)*
 

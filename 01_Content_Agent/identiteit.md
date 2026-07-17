@@ -20,7 +20,7 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Orchestrator Agent (Denzel)** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
 
 ## Sub-agents
-> Onderbouwing: deze 3 sub-agents volgen 1-op-1 de 3 submappen die al in deze agent-map bestonden vóór dit schema er was (Copy & Tekst, Strategie & Planning, Visuele Productie) — dat zijn de plekken waar lars al specifieke content omheen had georganiseerd, dus de meest voor de hand liggende "heel goed in één ding"-specialismen. Nog geen van de drie is echt gebouwd — allemaal status "idee".
+> Onderbouwing: deze 3 sub-agents volgen 1-op-1 de 3 submappen die al in deze agent-map bestonden vóór dit schema er was (Copy & Tekst, Strategie & Planning, Visuele Productie) — dat zijn de plekken waar lars al specifieke content omheen had georganiseerd, dus de meest voor de hand liggende "heel goed in één ding"-specialismen. Nog geen van de drie is echt gebouwd — allemaal status "idee". Autonomie/Harde grenzen/Toon zijn de "mini-soul" per sub-agent — zie de toelichting in [[Agent Hiërarchie & Structuurschema]]. Voor Content Agent is de hoofd-autonomie zelf nog niet vastgesteld, dus onderstaande zijn voorstellen.
 
 ### Caption & Copy Agent
 - **Specialisme:** Captions, CTA's en hashtags schrijven per platform, in de merkstem van HÏ Grip
@@ -28,6 +28,9 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Levert op:** Platform-specifieke caption + CTA + hashtag-set, klaar om in te plannen
 - **Kernbronnen:** [[Caption Gids per Platform]], [[Copy Bank]], [[CTA Bibliotheek]], [[Hashtag Bibliotheek]], [[Emoji Gebruik Gids]]
 - **Status:** idee
+- **Autonomie:** Voorstellen, ik keur goed *(voorstel — content gaat direct naar publieke kanalen)*
+- **Harde grenzen:** Geen AI-hypetaal of geforceerde CTA's; merknaam altijd HÏ Grip (met umlaut)
+- **Toon:** Kort, feitelijk, rustig, menselijk — de HÏ Grip-stem uit [[Brand Voice & Tone of Voice]]
 
 ### Content Strategie & Planning Agent
 - **Specialisme:** Contentkalender vullen, content pillars bewaken, timing/frequentie per platform
@@ -35,6 +38,9 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Levert op:** Ingevulde contentkalender met pillar-labels en post-timing per platform
 - **Kernbronnen:** [[Content Kalender Template]], [[Content Pillars]], [[Content Strategie]], [[Platform Richtlijnen]], [[Posting Frequentie per Platform]]
 - **Status:** idee
+- **Autonomie:** Zelf doen *(voorstel — intern planningswerk, niet direct publiek zichtbaar)*
+- **Harde grenzen:** Niet buiten de vastgestelde Content Pillars plannen zonder overleg
+- **Toon:** n.v.t. — intern planningswerk, geen klant-zichtbare tekst
 
 ### Video & Visuele Productie Agent
 - **Specialisme:** Video-editingstijl, sound/muziekkeuze en visuele templates voor Reels/TikTok
@@ -42,6 +48,9 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Levert op:** Editing-instructies en templatekeuze inclusief sound en tekst-overlay, klaar voor productie
 - **Kernbronnen:** [[Editing Stijl Gids Video]], [[Reel & TikTok Format Gids]], [[Brand Sound]], [[Muziek & Licenties]], [[Tekst-overlay Gids]], [[Template Overzicht]]
 - **Status:** idee
+- **Autonomie:** Voorstellen, ik keur goed *(voorstel — productietijd en eventuele licentiekosten)*
+- **Harde grenzen:** Geen muziek/sound gebruiken buiten [[Muziek & Licenties]] om
+- **Toon:** Sportief/energiek, aansluitend bij [[Brand Sound]]
 
 ## Kernbronnen in de vault
 - [[Content Strategie]]

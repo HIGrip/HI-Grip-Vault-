@@ -25,9 +25,11 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Orchestrator Agent (Denzel)** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
 
 ## Sub-agents
-> Onderbouwing: deze 4 sub-agents volgen 1-op-1 de 4 submappen die al in deze agent-map bestonden vóór dit schema er was (Strategie, Technisch, Content, Analyse). SEO en Design waren al door lars benoemd; Website Copy en Conversie & Analyse zijn aangevuld zodat elke bestaande submap een eigen specialist heeft. Autonomie/Harde grenzen/Toon zijn de "mini-soul" per sub-agent — hier het makkelijkst te onderbouwen, want Website Agent heeft als enige al een vastgestelde autonomie-tabel om 1-op-1 uit over te nemen.
+> Onderbouwing: elke categorie hieronder is een submap die al in deze agent-map bestond vóór dit schema er was (Strategie, Technisch, Content, Analyse). SEO en Design waren al door lars benoemd; Website Copy en Conversie & Analyse zijn aangevuld zodat elke bestaande submap een eigen specialist heeft. Autonomie/Harde grenzen/Toon zijn hier het makkelijkst te onderbouwen, want Website Agent heeft als enige al een vastgestelde autonomie-tabel om 1-op-1 uit over te nemen.
 
-### SEO Agent
+### Categorie: Strategie
+
+#### SEO Agent
 - **Specialisme:** SEO — onderzoek en opzetten
 - **Wanneer inschakelen:** Bij een nieuwe pagina of nieuw product, of als bestaande content niet goed scoort op de gewenste zoekwoorden
 - **Levert op:** Keyword-onderzoek, meta title/description en structured data-voorstellen — dit zijn al bestaande taken in [[Agent Takenverdeling & Grenzen]] ("SEO-keyword onderzoek", "Meta title/description & structured data")
@@ -37,7 +39,9 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Harde grenzen:** Zelfde als Website Agent — nooit in het live theme werken
 - **Toon:** Bondig en zoekwoord-gericht, maar leesbaar voor mensen
 
-### Design Agent
+### Categorie: Technisch
+
+#### Design Agent
 - **Specialisme:** Design
 - **Wanneer inschakelen:** Bij het bouwen of aanpassen van secties, kleuren of spacing in het Shopify-testtheme
 - **Levert op:** Zorgt voor strakke moderne designs die aansluiten bij het merk HÏ Grip
@@ -47,7 +51,9 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Harde grenzen:** Nooit rechtstreeks in het live theme werken, nooit zelf publiceren
 - **Toon:** n.v.t. (visueel werk), sluit aan bij [[Logo & Kleurenpalet]]
 
-### Website Copy Agent
+### Categorie: Content
+
+#### Website Copy Agent
 - **Specialisme:** Concept-copy voor homepage en productpagina's
 - **Wanneer inschakelen:** Bij een nieuwe of aangepaste pagina die tekst nodig heeft
 - **Levert op:** Definitieve homepage-/productpagina-copy, aansluitend bij [[Brand Voice & Tone of Voice]]
@@ -57,7 +63,9 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Harde grenzen:** Merknaam altijd HÏ Grip, geen AI-hypetaal
 - **Toon:** Direct, sportief, ondersteunend — [[Brand Voice & Tone of Voice]]
 
-### Conversie & Analyse Agent
+### Categorie: Analyse
+
+#### Conversie & Analyse Agent
 - **Specialisme:** Conversie-optimalisatie en het lezen van analytics/KPI's
 - **Wanneer inschakelen:** Bij de wekelijkse monitoring-taak, of als een pagina onderpresteert
 - **Levert op:** Conversie-checklist-bevindingen en KPI-signalering met verbetervoorstel
@@ -68,6 +76,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Toon:** n.v.t. — data/analysewerk, bondig en cijfermatig onderbouwd
 
 ## Kernbronnen in de vault
+- [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Agent Takenverdeling & Grenzen]]
 - [[Goedkeuringsworkflow]]
 - [[Shopify App Stack]]

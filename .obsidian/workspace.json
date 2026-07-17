@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/Stappenplan — Verdere Bouw.md",
+                "file": "04_Agent_Infrastructuur/soul.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stappenplan — Verdere Bouw"
+              "title": "soul"
             }
           }
         ]
@@ -193,13 +193,18 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "04_Agent_Infrastructuur/Stappenplan — Verdere Bouw.md",
+    "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md.tmp.27584.4a744762e205",
+    "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
+    "04_Agent_Infrastructuur/Beheer/Agent Bestandsschema (Soul, Identiteit, User).md",
+    "04_Agent_Infrastructuur/Beheer/Agent Hiërarchie & Structuurschema.md",
+    "04_Agent_Infrastructuur/Beheer/user.md",
     "01_Content_Agent/soul.md.tmp.27584.7bc17b8e7720",
     "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md.tmp.27584.75f0bda8b2db",
     "04_Agent_Infrastructuur/soul.md",
     "04_Agent_Infrastructuur/identiteit.md",
     "04_Agent_Infrastructuur/Agent Hiërarchie & Structuurschema.md",
     "04_Agent_Infrastructuur/Agent Bestandsschema (Soul, Identiteit, User).md",
-    "04_Agent_Infrastructuur/Stappenplan — Verdere Bouw.md",
     "00_Brand_Core/Identiteit/Brand Identity Overview.md",
     "03_Website_Agent/identiteit.md.tmp.27584.7ddaad96b0ae",
     "04_Agent_Infrastructuur/Beheer/Goedkeuringsworkflow.md",
@@ -219,17 +224,11 @@
     "02_Partnership_Agent/user.md",
     "02_Partnership_Agent/soul.md",
     "02_Partnership_Agent/identiteit.md",
-    "01_Content_Agent/user.md",
-    "01_Content_Agent/soul.md",
-    "01_Content_Agent/identiteit.md",
-    "03_Website_Agent/user.md",
     "Naamloos 1.base",
     "Naamloos 2.base",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen",
     "02_Partnership_Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten",
     "02_Partnership_Agent/Influencers_Creators",
-    "02_Partnership_Agent/B2B_Samenwerkingen",
-    "02_Partnership_Agent/Operationeel/Zoek Script & Gids.md.tmp.32276.5f9c9cf1c61d",
     "Naamloos 1.canvas"
   ]
 }

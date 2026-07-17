@@ -7,7 +7,7 @@
 ## Waar we nu staan
 
 - **Brand Core** — volledig gevuld, bron van waarheid voor alle agents.
-- **Structuur staat** — Denzel (Orchestrator) + 3 hoofdagents (Content, Partnership, Website), elk met `identiteit.md`/`soul.md`/`user.md`; 10 sub-agents zijn uitgewerkt als catalogus-item, allemaal status "idee".
+- **Structuur staat** — Denzel (Orchestrator) + 3 hoofdagents (Content, Partnership, Website), elk met `identiteit.md`/`soul.md` (plus één gedeelde `user.md` in Beheer); 10 sub-agents zijn uitgewerkt als catalogus-item per categorie, allemaal status "idee".
 - **Website Agent loopt voorop** — als enige al een compleet grenzen-formulier doorlopen (14 juli 2026): [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] staan er. Ook al 4 vakinhoudelijke notities gevuld: [[SEO Strategie & Keywords]], [[Website Structuur & Sitemap]], [[Homepage Copy & Structuur]], [[Conversie Optimalisatie Checklist]].
 - **Denzel, Content Agent, Partnership Agent** — hun `soul.md` (autonomie-tabel: wat mag zelf, wat moet overleg) is nog niet doorgesproken.
 - **Content Agent en Partnership Agent** — de vakinhoudelijke notities eronder (Content Pillars, Content Strategie, Ideale Partner Profiel, etc.) staan grotendeels nog leeg.
@@ -44,9 +44,8 @@ Dit is de content die de sub-agents straks daadwerkelijk gebruiken: zonder gevul
 
 ## Fase 4 — Resterende infrastructuur
 
-- [ ] [[API & Tool Connections]] invullen — tool-regels die voor meerdere (sub-)agents gelden (bv. de Chrome-kill regel, nu alleen genoemd in Partnership Agent's `soul.md`)
-- [ ] Besluiten wat er gebeurt met de lege bestanden in `System Prompts/` — overbodig geworden sinds het soul/identiteit/user-schema
-- [ ] [[Context Injection Template]] en [[Output Format Specificaties]] invullen zodra er echt met een sub-agent gewerkt wordt
+- [x] [[API & Tool Connections]] invullen met de eerste cross-agent tool-regel (Chrome-kill) — verder aanvullen zodra er meer van dit soort regels ontstaan
+- [x] `System Prompts/` en `Context & Output/` waren overbodig geworden sinds het soul/identiteit-schema — verwijderd op 2026-07-17, die informatie staat nu per agent in identiteit.md/soul.md
 
 ## Fase 5 — Opschalen
 

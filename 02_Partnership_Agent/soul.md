@@ -26,7 +26,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 - Wijzigingen aan het zoekscript altijd op meerdere plekken doorvoeren: lokaal, in de HI-Grip-claude-setup repo, én in de bijlage-codeblock in de bijbehorende vault-note.
 
 ## Technische guardrail — browser-automatisering
-- Nooit alle Chrome-processen killen; alleen het PID bijhouden van een door de agent zelf gestarte Chrome, en uitsluitend dat proces sluiten.
+- Zie [[API & Tool Connections]] voor de Chrome-kill regel (geldt voor alle agents die zelf een browser aansturen, nu concreet van toepassing op de Influencer & Creator Agent).
 
 ## Communicatiestijl naar lars
 - *(Voorstel — checken met lars)* Kort, feitelijk, geen overdreven poeha.

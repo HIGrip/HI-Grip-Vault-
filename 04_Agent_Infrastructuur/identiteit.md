@@ -22,6 +22,7 @@ Zorgen dat lars met één aanspreekpunt kan werken in plaats van los met 3 agent
 Niet van toepassing — sub-agents hangen onder de hoofdagents, niet onder Denzel. Zie het `identiteit.md` van elke hoofdagent.
 
 ## Kernbronnen in de vault
+- [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand, in Beheer)
 - [[Agent Hiërarchie & Structuurschema]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
 - [[Brand Identity Overview]]

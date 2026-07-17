@@ -32,14 +32,20 @@ Laag 2 — Sub-agents (Nx per hoofdagent)
 
 ---
 
-## Bestandsstructuur per laag (2026-07-17 herzien)
+## Bestandsstructuur per laag (2026-07-17, tweede herziening)
+
+**Kernprincipe: 04_Agent_Infrastructuur bevat het hele "systeem" (wie elke agent is en hoe hij zich gedraagt), 01/02/03 bevatten alleen nog de vakinhoudelijke bronkennis.** Niet omgekeerd — identiteit.md/soul.md staan dus NIET meer in de hoofdagent-mappen zelf.
 
 | Laag | Bestanden | Locatie |
 |---|---|---|
-| Orchestrator (Denzel) | `identiteit.md`, `soul.md` | `04_Agent_Infrastructuur/` |
-| Hoofdagent | `identiteit.md`, `soul.md` | `01_Content_Agent/`, `02_Partnership_Agent/`, `03_Website_Agent/` |
-| Sub-agent | geen eigen bestanden — catalogus-item, gegroepeerd per categorie, in de "Sub-agents"-sectie van het `identiteit.md` van zijn hoofdagent | binnen het `identiteit.md` van de hoofdagent |
+| Orchestrator (Denzel) | `identiteit.md`, `soul.md` | `04_Agent_Infrastructuur/` (root) |
+| Hoofdagent | `identiteit.md`, `soul.md` | `04_Agent_Infrastructuur/Content Agent/`, `.../Partnership Agent/`, `.../Website Agent/` |
+| Sub-agent (catalogus) | geen eigen bestanden — catalogus-item, gegroepeerd per categorie, in de "Sub-agents"-sectie van het `identiteit.md` van zijn hoofdagent | binnen `04_Agent_Infrastructuur/[Hoofdagent]/identiteit.md` |
+| Sub-agent werkplek | `_Werkplek.md` — gereserveerd voor toekomstige output zodra een sub-agent van "idee" naar "in ontwikkeling" gaat | `04_Agent_Infrastructuur/[Hoofdagent]/[Categorie]/[Sub-agent naam]/` — dezelfde categorie-submap-naam als in 01/02/03 |
 | **Gedeeld (alle agents)** | `user.md` (wie is lars/HÏ Grip), [[API & Tool Connections]] (tool-regels), [[Agent Takenverdeling & Grenzen]], [[Goedkeuringsworkflow]], [[Feedback & Iteratie Log]] | `04_Agent_Infrastructuur/Beheer/` |
+| **Vakinhoudelijke bronkennis** | de originele notities per submap/categorie (bv. Content Pillars, SEO Strategie & Keywords) | `01_Content_Agent/`, `02_Partnership_Agent/`, `03_Website_Agent/` — puur kennisbank, geen agent-definities meer |
+
+Elk `identiteit.md`/`soul.md`/`_Werkplek.md` in 04 linkt terug naar de bronkennis in 01/02/03 (via wikilink of een expliciete padverwijzing) — de "kennis" en het "systeem" zijn zo gescheiden, maar wel aan elkaar gekoppeld.
 
 **Waarom user.md gedeeld is:** de 4 losse versies (Denzel + 3 hoofdagents) waren voor 90% identiek — merk, lars, tone of voice. Sinds 2026-07-17 is dat één bestand in Beheer; alleen wat écht per agent verschilt (scope, sub-agents, autonomie) staat nog in het eigen `identiteit.md`/`soul.md`.
 

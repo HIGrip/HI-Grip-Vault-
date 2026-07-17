@@ -1,6 +1,6 @@
 # Agent Bestandsschema — Soul, Identiteit, User
 
-> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 herzien: **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `04_Agent_Infrastructuur/Beheer/user.md`. Elke agent — Denzel én de 3 hoofdagents — heeft dus zelf alleen nog `identiteit.md` en `soul.md`. Voor de laagstructuur eromheen (Denzel boven, sub-agents onder de hoofdagents, per categorie gegroepeerd): zie [[Agent Hiërarchie & Structuurschema]].
+> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 tweemaal herzien: (1) **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `04_Agent_Infrastructuur/Beheer/user.md`; (2) **identiteit.md en soul.md van de 3 hoofdagents staan niet meer in hun eigen map (01/02/03), maar centraal in `04_Agent_Infrastructuur/[Hoofdagent]/`.** 01/02/03 zijn nu pure kennisbank-mappen (de vakinhoudelijke bronnotities), 04 bevat het hele "systeem" — wie elke agent is en hoe hij zich gedraagt, inclusief de sub-agent-catalogus en hun werkplek-mapjes. Voor de laagstructuur eromheen: zie [[Agent Hiërarchie & Structuurschema]].
 
 ---
 

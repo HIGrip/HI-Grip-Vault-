@@ -26,16 +26,20 @@
 
 **Status:** wachten op input van lars, kan niet door de agent zelf opgezet worden (vereist zijn Shopify-adminlogin).
 
-**Waarom geen kant-en-klare MCP-server:** de bekendste community-server (GeLi2001/shopify-mcp) ondersteunt alleen producten/klanten/orders/metafields/inventory/tags — geen theme-assets. Voor theme-bestanden (title-tag, JSON-LD, alt-teksten, FAQ-schema) is direct de Shopify Admin REST Asset API nodig, aangeroepen vanuit Bash/PowerShell met een custom-app-token — geen aparte MCP-server voor nodig.
+**Waarom geen kant-en-klare MCP-server:** de bekendste community-server (GeLi2001/shopify-mcp) ondersteunt alleen producten/klanten/orders/metafields/inventory/tags — geen theme-assets.
 
-**Correctie 2026-08-01:** sinds 1 januari 2026 kan een nieuwe custom app niet meer via het oude pad (Instellingen → Apps en verkoopkanalen → App-ontwikkeling) — dat admin-scherm is dicht voor nieuwe apps. Moet nu via de nieuwe **Dev Dashboard**.
+**Correctie 2026-08-01 (2x):**
+- Eerste poging (custom app via Dev Dashboard, OAuth client ID/secret) bleek onnodig omslachtig — tokens verlopen na 24 uur, scopes zitten verstopt in de "Versions"-pagina.
+- Tweede doodlopend spoor: het "App-automatiseringstoken" (App Automation Token) uit de Dev Dashboard — dat is uitsluitend voor Shopify CLI om app-code/extensies te deployen, geeft geen store-/thema-data-toegang.
+- **Uiteindelijke, simpele weg: de officiële Shopify App Store-app "Theme Access".** Geen Dev Dashboard, geen OAuth, geen scopes-scherm.
 
-**Wat lars moet doen (eenmalig, ±5‑10 min):**
-1. Naar de Dev Dashboard (dev.shopify.com) → app maken, koppelen aan de higrip.nl-store
-2. Admin API scopes: minimaal `read_themes`, `write_themes`
-3. App installeren op de store → Admin API access token staat op de credentials-pagina — meteen kopiëren (functioneel hetzelfde als het oude eenmalige token, alleen de aanmaakflow is nu OAuth-based via de Dev Dashboard i.p.v. direct in de winkeladmin)
-4. Token **niet** in vault/chat plakken (blijft anders permanent in git-historie/geheugen staan) — als lokale environment variable zetten, bv. `[Environment]::SetEnvironmentVariable("SHOPIFY_ADMIN_TOKEN","shpat_xxx","User")`, daarna sessie herstarten
-5. Shop-domein (`iets.myshopify.com`) en het theme-ID van het duplicate/testtheme doorgeven (theme-ID staat in de URL van de Theme Editor)
+**Wat lars moet doen (eenmalig, ±2 min):**
+1. Shopify App Store → zoek "Theme Access" → App toevoegen → installeren op de higrip.nl-store (gewone app-install)
+2. In de app: "Create theme password" → genereert een token (`shptka_...`), scope is standaard `write_themes` (bevat ook read)
+3. Token **niet** in vault/chat plakken — als lokale environment variable zetten, bv. `[Environment]::SetEnvironmentVariable("SHOPIFY_THEME_TOKEN","shptka_xxx","User")`, daarna sessie herstarten
+4. Shop-domein (`iets.myshopify.com`) en het theme-ID van het duplicate/testtheme (Horizon 4.1.3) doorgeven — theme-ID staat in de URL van de Theme Editor
+
+Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin REST Asset API-calls als voor Shopify CLI (`SHOPIFY_CLI_THEME_TOKEN`) — geen verval zoals bij de OAuth-route hierboven. De eerder aangemaakte custom app in de Dev Dashboard is niet meer nodig, mag blijven staan of verwijderd worden.
 
 **Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[shopify-theme-workflow]]), geen technische restrictie van Shopify zelf.
 

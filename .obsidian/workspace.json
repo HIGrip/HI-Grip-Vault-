@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
+                "file": "03_Website_Agent/Doel/Website Doel & KPI's.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Stappenplan — Verdere Bouw"
+              "title": "Website Doel & KPI's"
             }
           }
         ]
@@ -193,6 +193,7 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/identiteit Denzel.md",
     "04_Agent_Infrastructuur/soul Denzel.md",
     "04_Agent_Infrastructuur/Website Agent/identiteit.md",
@@ -226,7 +227,6 @@
     "01_Content_Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md",
     "01_Content_Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Stappenplan — Verdere Bouw.md",
-    "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/Beheer/Agent Bestandsschema (Soul, Identiteit, User).md",
     "Naamloos.canvas",
     "Naamloos 1.canvas"

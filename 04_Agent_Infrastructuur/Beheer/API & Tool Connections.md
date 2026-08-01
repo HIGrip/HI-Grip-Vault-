@@ -28,10 +28,12 @@
 
 **Waarom geen kant-en-klare MCP-server:** de bekendste community-server (GeLi2001/shopify-mcp) ondersteunt alleen producten/klanten/orders/metafields/inventory/tags — geen theme-assets. Voor theme-bestanden (title-tag, JSON-LD, alt-teksten, FAQ-schema) is direct de Shopify Admin REST Asset API nodig, aangeroepen vanuit Bash/PowerShell met een custom-app-token — geen aparte MCP-server voor nodig.
 
-**Wat lars moet doen (eenmalig, ±5 min):**
-1. Shopify admin → Instellingen → Apps en verkoopkanalen → App-ontwikkeling → App maken (**custom app**, niet public — public apps hebben sinds Admin API 2023-04 geen Asset API write meer, custom apps wel)
+**Correctie 2026-08-01:** sinds 1 januari 2026 kan een nieuwe custom app niet meer via het oude pad (Instellingen → Apps en verkoopkanalen → App-ontwikkeling) — dat admin-scherm is dicht voor nieuwe apps. Moet nu via de nieuwe **Dev Dashboard**.
+
+**Wat lars moet doen (eenmalig, ±5‑10 min):**
+1. Naar de Dev Dashboard (dev.shopify.com) → app maken, koppelen aan de higrip.nl-store
 2. Admin API scopes: minimaal `read_themes`, `write_themes`
-3. App installeren → Admin API access token verschijnt éénmalig (`shpat_...`) — meteen kopiëren
+3. App installeren op de store → Admin API access token staat op de credentials-pagina — meteen kopiëren (functioneel hetzelfde als het oude eenmalige token, alleen de aanmaakflow is nu OAuth-based via de Dev Dashboard i.p.v. direct in de winkeladmin)
 4. Token **niet** in vault/chat plakken (blijft anders permanent in git-historie/geheugen staan) — als lokale environment variable zetten, bv. `[Environment]::SetEnvironmentVariable("SHOPIFY_ADMIN_TOKEN","shpat_xxx","User")`, daarna sessie herstarten
 5. Shop-domein (`iets.myshopify.com`) en het theme-ID van het duplicate/testtheme doorgeven (theme-ID staat in de URL van de Theme Editor)
 

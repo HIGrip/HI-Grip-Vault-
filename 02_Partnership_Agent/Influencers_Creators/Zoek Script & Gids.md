@@ -146,7 +146,7 @@ DOM-scraping methode zodat een los profiel nooit de hele run laat crashen.
 
 Filters volgen Evaluatiecriteria.md in de Obsidian vault. Alles hier is een harde,
 deterministische cijferfilter (snel, gratis, geen LLM nodig):
-  - Volgers: 500 - 100.000
+  - Volgers: 500 - 30.000
   - Gem. views per post: minimaal MIN_AVG_VIEWS
   - Engagement rate (ER%): minimaal MIN_ER_PCT
   - Activiteit: minimaal MIN_RECENT_POSTS posts in de laatste MAX_INACTIVE_DAYS dagen
@@ -208,6 +208,8 @@ HASHTAGS = {
     "Voetbal_training":  ["voetbaltraining", "jongevoetballer", "voetballife"],
     "Voetbal_wedstrijd": ["voetbalmatch", "matchdaynl", "voetbalwedstrijd"],
     "Zaalvoetbal":       ["zaalvoetbal", "futsalnederland", "futsalspeler"],
+    # Seizoensstart eind zomer (~aug/sep) - zie Evaluatiecriteria.md.
+    "Basketbal":         ["basketballnl", "dutchhoops", "streetballnl", "3x3nl"],
 }
 POSTS_PER_TAG = 20
 
@@ -215,6 +217,7 @@ POSTS_PER_TAG = 20
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
     "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11"],
+    "Basketbal":  ["tweeboomcourt", "3x3nl"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
@@ -243,7 +246,7 @@ EXCLUDED_USERNAME_PATTERNS = re.compile(
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
 MIN_FOLLOWERS     = 500
-MAX_FOLLOWERS     = 100_000
+MAX_FOLLOWERS     = 30_000   # nano/micro sweet spot, ipv officiele 100k-plafond (te groot bevonden)
 MIN_AVG_VIEWS     = 1_000
 MAX_AVG_VIEWS     = 30_000    # boven dit: te groot voor micro-creator
 MIN_ER_PCT        = 2.0

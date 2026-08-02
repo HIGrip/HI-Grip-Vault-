@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Website_Agent/Doel/Website Doel & KPI's.md",
+                "file": "03_Website_Agent/Technisch/Shopify App Stack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Website Doel & KPI's"
+              "title": "Shopify App Stack"
             }
           }
         ]
@@ -193,6 +193,12 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "03_Website_Agent/Technisch/Technische Procedures.md",
+    "03_Website_Agent/Technisch/Update Log.md",
+    "03_Website_Agent/Technisch/Shopify App Stack.md",
+    "03_Website_Agent/Strategie/Website Structuur & Sitemap.md",
+    "03_Website_Agent/Strategie/SEO Strategie & Keywords.md",
+    "03_Website_Agent/Doel/Website Doel & KPI's.md",
     "03_Website_Agent/Content/Product Pagina Gids.md",
     "03_Website_Agent/Content/Homepage Copy & Structuur.md",
     "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
@@ -207,7 +213,6 @@
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.812fd2178a25",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.c0c9973456c6",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.5b6e10a11d8f",
-    "03_Website_Agent/Doel/Website Doel & KPI's.md",
     "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/identiteit Denzel.md",
     "04_Agent_Infrastructuur/soul Denzel.md",
@@ -224,11 +229,6 @@
     "04_Agent_Infrastructuur/Partnership Agent/identiteit.md",
     "04_Agent_Infrastructuur/Content Agent/soul.md",
     "04_Agent_Infrastructuur/Content Agent/identiteit.md",
-    "04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
-    "04_Agent_Infrastructuur/Beheer/user.md",
-    "01_Content_Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek.md",
     "Naamloos.canvas",
     "Naamloos 1.canvas"
   ]

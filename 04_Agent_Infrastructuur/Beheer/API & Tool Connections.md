@@ -45,6 +45,14 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 **Consequentie:** programmatische thema-bewerking via API/CLI zit vast totdat het abonnement wordt geüpgraded (Basic of hoger). Tot die tijd: checklist-content (title-tag, JSON-LD, alt-teksten, FAQ-schema) moet handmatig door lars in de Shopify Theme Editor/code-editor geplakt worden — die blijft wel gewoon werken, alleen de 3rd-party Admin API/CLI-route niet.
 
+**Doorbraak 2026-08-02: native CLI-login werkt wel.** Niet via een Theme Access-apptoken, maar via `shopify theme list --store hi-grip.myshopify.com` zonder `--password`-flag — dit triggert een normale device-code browserlogin als lars zelf (`shopify auth login`-stijl), geen appinstallatie nodig. Dat spoor werd NIET geblokkeerd door het Starter-abonnement (in tegenstelling tot de Theme Access-app). Voorwaarden om dit te laten werken:
+- Shopify CLI globaal geïnstalleerd (`npm install -g @shopify/cli`) — gedaan
+- Officieel Shopify Liquid VS Code-extensie (`Shopify.theme-check-vscode`) — gedaan
+- PowerShell execution policy stond op Restricted, blokkeerde de npm-gegenereerde `shopify.ps1`-wrapper — opgelost met `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
+- Login gebeurt interactief via device-code + browser, moet dus door lars zelf in zijn eigen zichtbare terminal (niet iets wat de agent zelf non-interactief kan draaien)
+
+**Thema-lijst opgehaald (2026-08-02) — zie [[shopify-theme-workflow]] voor de volledige, dwingende regel:** de store heeft 10 thema's. Alleen **#198505464135 "HÏ Grip website AI Workspace"** mag bewerkt worden. Live (**#198094127431**, nooit aanraken) en de overige 8 oude/duplicate thema's zijn allemaal uitgesloten.
+
 **Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[shopify-theme-workflow]]), geen technische restrictie van Shopify zelf.
 
 ## Nog aan te vullen

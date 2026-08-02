@@ -1,19 +1,23 @@
 # Evaluatiecriteria — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-06-24
+> Bijgewerkt: 2026-08-02
 > Zie ook: [[Influencer Database]] · [[Zoek Script & Gids]] · [[Ideale Partner Profiel]]
 
 ---
 
 ## Niche / Content type (prioriteit)
 
+> **Seizoensgebonden:** prioriteit volgt welke sportseizoenen net weer beginnen (eind zomer/begin
+> herfst). Tennis en Padel zijn zomersporten en tijdelijk gedeprioriteerd; voetbal en basketbal
+> beginnen nu weer en staan daarom op ⭐ Hoog. Bij een volgende seizoenswissel opnieuw beoordelen.
+
 | Prioriteit | Sport / Niche                 |
 | ---------- | ----------------------------- |
-| ⭐ Hoog     | Tennis                        |
-| ⭐ Hoog     | Padel                         |
 | ⭐ Hoog     | Voetbal (street, panna, zaal) |
+| ⭐ Hoog     | Basketball                    |
+| Normaal    | Tennis                        |
+| Normaal    | Padel                         |
 | Normaal    | Urban sports / streetball     |
-| Normaal    | Basketball                    |
 | Normaal    | Rugby                         |
 | Normaal    | Gym / fitness lifestyle       |
 | Normaal    | Hardlopen / running           |
@@ -39,11 +43,14 @@
 | Nano-           | 500–2.000        | 500–2.000        |
 | Nano⭐           | 2.000–5.000      | 2.000–5.000      |
 | **Nano/micro ** | **5.000–30.000** | **5.000–30.000** |
-| Micro           | 30.000–100.000   | 30.000–100.000   |
-| Mid-tier        | 100.000–500.000  | 100.000–500.000  |
+| ~~Micro~~       | ~~30.000–100.000~~ | ~~30.000–100.000~~ |
+| ~~Mid-tier~~    | ~~100.000–500.000~~ | ~~100.000–500.000~~ |
+
+> Micro (30k-100k) en Mid-tier zijn per 2026-08-02 uitgesloten: te groot bevonden in de praktijk
+> (bv. @smudallas, 65k volgers). Harde plafond is nu de "Nano/micro" sweet spot.
 
 - **Minimum volgers:** 500
-- **Maximum volgers:** 100.000
+- **Maximum volgers:** 30.000
 - **Minimum activiteit:** 3 posts in de afgelopen 3 weken
 
 ---
@@ -95,7 +102,7 @@
 
 | Criterium | Wat checken | Goed | Afwijzen |
 |---|---|---|---|
-| Volgers | Tel exact | Max. 100.000 volgers | Meer dan 100.000 |
+| Volgers | Tel exact | Max. 30.000 volgers | Meer dan 30.000 |
 | Views | Laatste 5 videos | >5K views consistent | 1 viral hit, rest laag |
 | Content-stijl | Engaging? Wil je doorkijken? | Eigen stijl, eigen stem, verhaal | Compilatie, geen persoon |
 | Persoonlijk | Eigen gezicht in iedere video? | Creator IS de content | Alleen reposts van anderen |

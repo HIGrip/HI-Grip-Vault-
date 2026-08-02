@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-07-14 (v4.2)
+> Bijgewerkt: 2026-08-02 (v4.3)
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -25,7 +25,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 | Filter | Waarde |
 |---|---|
-| Volgers | 500 – 100.000 |
+| Volgers | 500 – 30.000 (nano/micro sweet spot; 30k-100k "Micro"-tier per 2026-08-02 uitgesloten) |
 | Gem. views per post | ≥ 1.000 |
 | Engagement rate (ER%) | ≥ 2% |
 | Activiteit | ≥ 3 posts in de laatste 21 dagen |
@@ -34,12 +34,13 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 **Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
-**Huidige hashtag-configuratie (alleen voetbal):**
+**Huidige hashtag-configuratie (voetbal + basketbal — seizoensgebonden, zie [[Evaluatiecriteria]]):**
 - Voetbal_vlog: voetbalvlog, voetbalvlogger, voetballer
 - Voetbal_amateur: amateurvoetbal, wedstrijddag, voetbalseizoen
 - Voetbal_training: voetbaltraining, jongevoetballer, voetballife
 - Voetbal_wedstrijd: voetbalmatch, matchdaynl, voetbalwedstrijd
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
+- Basketbal: basketballnl, dutchhoops, streetballnl, 3x3nl
 
 ---
 
@@ -107,6 +108,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
 - Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11
+- Basketbal: @tweeboomcourt · @3x3nl
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 

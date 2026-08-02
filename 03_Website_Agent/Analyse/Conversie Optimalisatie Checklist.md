@@ -25,7 +25,11 @@
 
 ## Uitvoering — kant-en-klare content (2026-08-01)
 
-> Concept-content per checklist-punt, gebaseerd op de audit van 14 juli. Nog niet live geverifieerd — live fetch van www.higrip.nl gaf een 429 (rate-limited), dus onderstaande gaat uit van de audit-notities, niet van een verse check. Items met **[LARS]** hebben een korte input van lars nodig voordat ze klaar zijn om in het duplicate theme te zetten.
+> Concept-content per checklist-punt. Items met **[LARS]** hebben een korte input van lars nodig.
+
+**Update 2026-08-02: punt 2 en 6 zijn geïmplementeerd en geverifieerd**, rechtstreeks via Shopify CLI (native merchant-login werkt, zie [[shopify-theme-workflow]] en API & Tool Connections in de vault) op theme `198505464135` ("AI Workspace", unpublished, nooit live). Inhoud kwam uit de echte theme-bestanden zelf (niet gegokt): `templates/index.json` voor de 8 echte FAQ-vragen+antwoorden, `config/settings_data.json` voor het echte logo-bestand. Nieuwe snippets: `snippets/organization-schema.liquid`, `snippets/faq-schema.liquid`, gerenderd vanuit `layout/theme.liquid` (alleen op homepage). Geverifieerd op de preview-URL: geen Liquid-errors, beide schema's renderen correct. Social-links (`sameAs`) zijn leeg gelaten — er staan nog geen social-URL's in de theme-instellingen, dus niets verzonnen; zodra lars die invult via Theme Editor pakt de schema-code ze automatisch op, geen codewijziging nodig.
+
+**Punt 1 bleek geen theme-code te zijn** — de homepage-title/meta-description worden bepaald door Admin → Online Store → Preferences (2 tekstvelden), niet door theme-Liquid. Lars kan dit dus zelf direct invullen, geen CLI/code voor nodig.
 
 ### 1. Homepage `<title>`
 Voorstel (mirrort het patroon van de productpagina-title):

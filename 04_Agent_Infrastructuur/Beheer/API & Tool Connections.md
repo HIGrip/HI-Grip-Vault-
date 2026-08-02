@@ -51,9 +51,9 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 - PowerShell execution policy stond op Restricted, blokkeerde de npm-gegenereerde `shopify.ps1`-wrapper — opgelost met `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - Login gebeurt interactief via device-code + browser, moet dus door lars zelf in zijn eigen zichtbare terminal (niet iets wat de agent zelf non-interactief kan draaien)
 
-**Thema-lijst opgehaald (2026-08-02) — zie [[shopify-theme-workflow]] voor de volledige, dwingende regel:** de store heeft 10 thema's. Alleen **#198505464135 "HÏ Grip website AI Workspace"** mag bewerkt worden. Live (**#198094127431**, nooit aanraken) en de overige 8 oude/duplicate thema's zijn allemaal uitgesloten.
+**Thema-lijst opgehaald (2026-08-02) — zie [[Technische Procedures]] voor de volledige, dwingende regel:** de store heeft 10 thema's. Alleen **#198505464135 "HÏ Grip website AI Workspace"** mag bewerkt worden. Live (**#198094127431**, nooit aanraken) en de overige 8 oude/duplicate thema's zijn allemaal uitgesloten.
 
-**Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[shopify-theme-workflow]]), geen technische restrictie van Shopify zelf.
+**Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[Technische Procedures]] en [[Goedkeuringsworkflow]]), geen technische restrictie van Shopify zelf.
 
 ## Nog aan te vullen
 
@@ -66,3 +66,4 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 - [[Agent Hiërarchie & Structuurschema]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
+- [[Technische Procedures]] — De uiteindelijke werkende procedure (Shopify CLI + native login) die uit dit hele uitzoekproces kwam

@@ -34,7 +34,7 @@
 
 | Taak | Niveau |
 |---|---|
-| Secties bouwen in test-/duplicate-theme | Zelf doen |
+| Secties bouwen in theme #198505464135 ("AI Workspace") | Zelf doen |
 | Wijzigingen live publiceren | Altijd overleg vooraf — zie [[Goedkeuringsworkflow]], lars kopieert zelf naar het live theme |
 | Alt-teksten toevoegen | Zelf doen |
 | Secties/kleuren/spacing aanpassen | Zelf doen |
@@ -59,5 +59,6 @@
 ## Gerelateerde bestanden
 
 - [[Goedkeuringsworkflow]] — Hoe Shopify-wijzigingen van test-theme naar live gaan
+- [[Technische Procedures]] — Hoe de agent daadwerkelijk in het AI Workspace-theme werkt
 - [[Brand Identity Overview]] — Merkverhaal en waarden
 - [[Shopify App Stack]] — Technische basis

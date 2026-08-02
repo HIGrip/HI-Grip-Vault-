@@ -25,7 +25,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 | Filter | Waarde |
 |---|---|
-| Volgers | 500 – 30.000 (nano/micro sweet spot; 30k-100k "Micro"-tier per 2026-08-02 uitgesloten) |
+| Volgers | 500 – 50.000 (nano/micro sweet spot 5k-30k als voorkeur; tot 50k toegestaan, 100k-plafond per 2026-08-02 verlaagd) |
 | Gem. views per post | ≥ 1.000 |
 | Engagement rate (ER%) | ≥ 2% |
 | Activiteit | ≥ 3 posts in de laatste 21 dagen |
@@ -40,7 +40,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 - Voetbal_training: voetbaltraining, jongevoetballer, voetballife
 - Voetbal_wedstrijd: voetbalmatch, matchdaynl, voetbalwedstrijd
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
-- Basketbal: basketballnl, dutchhoops, streetballnl, 3x3nl
+- Basketbal: basketballnl, streetballnl, 3x3nl (dutchhoops verwijderd: internationale/niet-sport tag, gaf ruis)
 
 ---
 
@@ -209,7 +209,7 @@ HASHTAGS = {
     "Voetbal_wedstrijd": ["voetbalmatch", "matchdaynl", "voetbalwedstrijd"],
     "Zaalvoetbal":       ["zaalvoetbal", "futsalnederland", "futsalspeler"],
     # Seizoensstart eind zomer (~aug/sep) - zie Evaluatiecriteria.md.
-    "Basketbal":         ["basketballnl", "dutchhoops", "streetballnl", "3x3nl"],
+    "Basketbal":         ["basketballnl", "streetballnl", "3x3nl"],
 }
 POSTS_PER_TAG = 20
 
@@ -246,7 +246,7 @@ EXCLUDED_USERNAME_PATTERNS = re.compile(
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
 MIN_FOLLOWERS     = 500
-MAX_FOLLOWERS     = 30_000   # nano/micro sweet spot, ipv officiele 100k-plafond (te groot bevonden)
+MAX_FOLLOWERS     = 50_000   # tussen nano/micro sweet spot (30k) en officiele 100k-plafond
 MIN_AVG_VIEWS     = 1_000
 MAX_AVG_VIEWS     = 30_000    # boven dit: te groot voor micro-creator
 MIN_ER_PCT        = 2.0

@@ -46,11 +46,13 @@
 | ~~Micro~~       | ~~30.000–100.000~~ | ~~30.000–100.000~~ |
 | ~~Mid-tier~~    | ~~100.000–500.000~~ | ~~100.000–500.000~~ |
 
-> Micro (30k-100k) en Mid-tier zijn per 2026-08-02 uitgesloten: te groot bevonden in de praktijk
-> (bv. @smudallas, 65k volgers). Harde plafond is nu de "Nano/micro" sweet spot.
+> Micro (30k-100k) en Mid-tier zijn per 2026-08-02 grotendeels uitgesloten: te groot bevonden in
+> de praktijk (bv. @smudallas, 65k volgers). Een strikte 30k-cap leverde echter 0 kandidaten op
+> (te veel grensgevallen vielen net weg, zoals @matthewkingballer met 30.965 volgers) - het plafond
+> is daarom verruimd naar 50.000 als praktisch compromis. "Nano/micro" (5k-30k) blijft de voorkeur.
 
 - **Minimum volgers:** 500
-- **Maximum volgers:** 30.000
+- **Maximum volgers:** 50.000
 - **Minimum activiteit:** 3 posts in de afgelopen 3 weken
 
 ---
@@ -102,7 +104,7 @@
 
 | Criterium | Wat checken | Goed | Afwijzen |
 |---|---|---|---|
-| Volgers | Tel exact | Max. 30.000 volgers | Meer dan 30.000 |
+| Volgers | Tel exact | Max. 50.000 volgers | Meer dan 50.000 |
 | Views | Laatste 5 videos | >5K views consistent | 1 viral hit, rest laag |
 | Content-stijl | Engaging? Wil je doorkijken? | Eigen stijl, eigen stem, verhaal | Compilatie, geen persoon |
 | Persoonlijk | Eigen gezicht in iedere video? | Creator IS de content | Alleen reposts van anderen |

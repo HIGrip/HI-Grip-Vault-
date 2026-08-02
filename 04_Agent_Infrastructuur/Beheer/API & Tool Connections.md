@@ -41,6 +41,10 @@
 
 Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin REST Asset API-calls als voor Shopify CLI (`SHOPIFY_CLI_THEME_TOKEN`) — geen verval zoals bij de OAuth-route hierboven. De eerder aangemaakte custom app in de Dev Dashboard is niet meer nodig, mag blijven staan of verwijderd worden.
 
+**Root cause gevonden 2026-08-02: geblokkeerd door het Shopify-abonnement, niet door het token.** HÏ Grip staat op het **Starter-abonnement** (goedkoopste tier). Getest met 2 verse Theme Access-tokens, zowel via directe Admin REST-calls als via de officiële Shopify CLI — allebei gaven exact dezelfde 401 "invalid access token", ook al was de app correct geïnstalleerd en het wachtwoord correct via de e-maillink onthuld. Shopify-docs bevestigen: op Starter is maar één thema (**Spotlight**) volledig bruikbaar en is er geen volledige thema-personalisatie/API-toegang — Shopify blokkeert dit blijkbaar met een generieke auth-fout i.p.v. een duidelijke "niet beschikbaar op je plan"-melding. Het huidige concept-thema **Horizon 4.1.3** valt hier dus buiten.
+
+**Consequentie:** programmatische thema-bewerking via API/CLI zit vast totdat het abonnement wordt geüpgraded (Basic of hoger). Tot die tijd: checklist-content (title-tag, JSON-LD, alt-teksten, FAQ-schema) moet handmatig door lars in de Shopify Theme Editor/code-editor geplakt worden — die blijft wel gewoon werken, alleen de 3rd-party Admin API/CLI-route niet.
+
 **Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[shopify-theme-workflow]]), geen technische restrictie van Shopify zelf.
 
 ## Nog aan te vullen

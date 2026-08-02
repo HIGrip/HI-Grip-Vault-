@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
+                "file": "03_Website_Agent/Doel/Website Doel & KPI's.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Conversie Optimalisatie Checklist"
+              "title": "Website Doel & KPI's"
             }
           }
         ]
@@ -193,6 +193,10 @@
   },
   "active": "f90726eea62d6631",
   "lastOpenFiles": [
+    "03_Website_Agent/Content/Product Pagina Gids.md",
+    "03_Website_Agent/Content/Homepage Copy & Structuur.md",
+    "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
+    "03_Website_Agent/Analyse/Conversie Optimalisatie Checklist.md",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.a26d5c4e363a",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.15df8fd3629a",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.b24e9f6707a0",
@@ -203,8 +207,6 @@
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.812fd2178a25",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.c0c9973456c6",
     "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.5b6e10a11d8f",
-    "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md.tmp.33244.9ac69eddf8c4",
-    "03_Website_Agent/Analyse/Analytics & KPI Dashboard.md",
     "03_Website_Agent/Doel/Website Doel & KPI's.md",
     "04_Agent_Infrastructuur/Beheer/Stappenplan — Verdere Bouw.md",
     "04_Agent_Infrastructuur/identiteit Denzel.md",
@@ -227,8 +229,6 @@
     "04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
     "04_Agent_Infrastructuur/Beheer/user.md",
     "01_Content_Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek.md",
-    "01_Content_Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek.md",
-    "01_Content_Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek.md",
     "Naamloos.canvas",
     "Naamloos 1.canvas"
   ]

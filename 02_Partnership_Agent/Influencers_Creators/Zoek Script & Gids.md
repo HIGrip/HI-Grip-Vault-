@@ -300,7 +300,7 @@ def is_logged_in(page):
 def login(context, page):
     from ig_search_higrip import USERNAME, PASSWORD
 
-    page.goto("https://www.instagram.com/", timeout=30000)
+    page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=30000)
     time.sleep(3)
     dismiss_cookies(page)
     try:
@@ -351,7 +351,8 @@ def login(context, page):
         pass
     time.sleep(4)
 
-    if "challenge" in page.url or "two_factor" in page.url:
+    print(f"  URL na login: {page.url}")
+    if any(x in page.url for x in ("challenge", "two_factor", "checkpoint", "verify", "accounts/login")):
         if UNATTENDED:
             raise LoginRequiresVerification(
                 "Instagram vraagt om verificatie - kan niet onbemand doorgaan"
@@ -368,9 +369,14 @@ def login(context, page):
             pass
 
     try:
-        with open(SESSION_FILE, "w") as f:
-            json.dump(context.cookies(), f)
-        print("Ingelogd - sessie opgeslagen\n")
+        saved = context.cookies()
+        has_session = any(c.get("name") == "sessionid" for c in saved)
+        with open(SESSION_FILE, "w", encoding="utf-8", newline="") as f:
+            json.dump(saved, f)
+        if has_session:
+            print("Ingelogd - sessie opgeslagen\n")
+        else:
+            print("WAARSCHUWING: sessionid ontbreekt in cookies — login mogelijk niet compleet\n")
     except Exception as e:
         print(f"Kon sessie niet opslaan: {e}\n")
 
@@ -530,6 +536,9 @@ def evaluate_profile(page, username):
     if username in EXCLUDED_ACCOUNTS:
         return {"status": "reject", "reason": "uitgesloten account", "handle": f"@{username}"}
 
+    if EXCLUDED_USERNAME_PATTERNS.search(username):
+        return {"status": "reject", "reason": f"username-patroon wijst op media/club/giveaway-account", "handle": f"@{username}"}
+
     user = fetch_profile_json(page, username)
     used_fallback = False
     if user is None:
@@ -565,8 +574,12 @@ def evaluate_profile(page, username):
             comments = int((node.get("edge_media_to_comment") or {}).get("count") or 0)
             engagements.append(likes + comments)
 
-            if node.get("is_video") and node.get("video_view_count"):
-                views.append(int(node["video_view_count"]))
+            if node.get("is_video"):
+                # Instagram stuurt video views soms als video_view_count, soms als play_count
+                vc = (node.get("video_view_count") or node.get("play_count") or
+                      (node.get("clips_metadata") or {}).get("play_count") or 0)
+                if vc:
+                    views.append(int(vc))
 
             cap_edges = (node.get("edge_media_to_caption") or {}).get("edges") or []
             if cap_edges:
@@ -575,6 +588,35 @@ def evaluate_profile(page, username):
                     captions.append(cap_text[:300])
 
         avg_views = int(sum(views) / len(views)) if views else 0
+
+        # Als JSON geen views geeft (veld hernoemd of leeg), DOM-reels-pagina gebruiken
+        if avg_views == 0:
+            try:
+                page.goto(f"https://www.instagram.com/{username}/reels/", wait_until="domcontentloaded", timeout=12000)
+                time.sleep(2)
+                raw = page.evaluate("""
+                    () => {
+                        const links = document.querySelectorAll('a[href*="/reel/"]');
+                        const out = [];
+                        for (const lnk of links) {
+                            const spans = lnk.querySelectorAll('span');
+                            for (const s of spans) {
+                                const t = s.textContent.trim();
+                                if (/^\\d+(\\.\\d+)?\\s*[KkMm]?$/.test(t) && !s.children.length) {
+                                    out.push(t);
+                                    break;
+                                }
+                            }
+                            if (out.length >= 6) break;
+                        }
+                        return out;
+                    }
+                """)
+                dom_counts = [parse_count(v) for v in (raw or []) if parse_count(v) > 100]
+                if dom_counts:
+                    avg_views = int(sum(dom_counts) / len(dom_counts))
+            except Exception:
+                pass
         avg_engagement = (sum(engagements) / len(engagements)) if engagements else 0
         er_pct = round((avg_engagement / followers) * 100, 2) if followers else 0.0
 
@@ -599,6 +641,12 @@ def evaluate_profile(page, username):
         result["reason"] = f"volgers buiten bereik ({followers:,})"
         return result
 
+    # Onbekende follower-count + hoge views = waarschijnlijk mega-account
+    if followers == 0 and avg_views > 20_000:
+        result["status"] = "reject"
+        result["reason"] = f"volgers onbekend maar views te hoog ({avg_views:,}) — waarschijnlijk te groot"
+        return result
+
     if avg_views < MIN_AVG_VIEWS:
         result["status"] = "reject"
         result["reason"] = f"te weinig views ({avg_views:,})"
@@ -607,7 +655,6 @@ def evaluate_profile(page, username):
     if avg_views > MAX_AVG_VIEWS:
         result["status"] = "reject"
         result["reason"] = f"te veel views — geen micro-creator ({avg_views:,})"
-        return result
         return result
 
     if er_pct is not None and er_pct < MIN_ER_PCT:
@@ -662,23 +709,24 @@ def get_post_usernames(page, hashtag):
             pass
         time.sleep(1.5)
 
-    post_links = page.query_selector_all("a[href*='/p/']")
-    print(f"    {len(post_links)} post-links gevonden")
+    # Instagram toont nu voornamelijk Reels op hashtag-pagina's (/reel/), niet meer /p/
+    post_links = page.query_selector_all("a[href*='/p/'], a[href*='/reel/']")
+    print(f"    {len(post_links)} post/reel-links gevonden")
 
     for link in post_links[:POSTS_PER_TAG]:
         try:
             href = link.get_attribute("href") or ""
-            if "/p/" not in href:
+            if "/p/" not in href and "/reel/" not in href:
                 continue
             link.click()
             time.sleep(2.5)
 
             uname = None
             for sel in [
-                "article header a[href]:not([href*='/p/'])",
-                "div[role='dialog'] header a[href]:not([href*='/p/'])",
-                "div[role='dialog'] a[role='link'][href^='/']:not([href*='/p/'])",
-                "header section a[href^='/']:not([href*='/p/'])",
+                "article header a[href]:not([href*='/p/']):not([href*='/reel/'])",
+                "div[role='dialog'] header a[href]:not([href*='/p/']):not([href*='/reel/'])",
+                "div[role='dialog'] a[role='link'][href^='/']:not([href*='/p/']):not([href*='/reel/'])",
+                "header section a[href^='/']:not([href*='/p/']):not([href*='/reel/'])",
             ]:
                 try:
                     el = page.query_selector(sel)
@@ -693,7 +741,7 @@ def get_post_usernames(page, hashtag):
             if not uname:
                 try:
                     cur_url = page.url
-                    m = re.search(r"instagram\.com/([^/]+)/p/", cur_url)
+                    m = re.search(r"instagram\.com/([^/]+)/(p|reel)/", cur_url)
                     if m:
                         uname = m.group(1)
                 except Exception:
@@ -905,7 +953,7 @@ def new_context(p):
     )
     if os.path.exists(SESSION_FILE):
         try:
-            with open(SESSION_FILE) as f:
+            with open(SESSION_FILE, encoding="utf-8-sig") as f:
                 context.add_cookies(json.load(f))
             print("Sessie geladen")
         except Exception as e:
@@ -956,7 +1004,19 @@ def main():
                 time.sleep(2)
             candidates_by_source[sport] = sport_users
 
-        # Bron 3: commenters op referentie-accounts per sport
+        # Bron 3: commenters op reels van accounts die lars_a.i.h volgt
+        for seed_account in COMMENTER_SEED_ACCOUNTS:
+            print(f"\n{'='*40}\nCOMMENTERS via following @{seed_account}\n{'='*40}")
+            followed = get_following_list(page, seed_account)
+            seed_commenters = []
+            for followed_account in followed[:COMMENTER_SEED_FOLLOW_MAX]:
+                for href in get_reel_urls(page, followed_account, REELS_PER_COMMENTER_SEED):
+                    commenters = get_commenters_from_reel(page, href)
+                    seed_commenters.extend(u for u in commenters if u != followed_account)
+                time.sleep(1.5)
+            candidates_by_source[f"FollowingCommenters_{seed_account}"] = seed_commenters
+
+        # Bron 4: commenters op referentie-accounts per sport
         for sport, refs in REFERENCE_ACCOUNTS.items():
             print(f"\n{'='*40}\nSPORT (commenters): {sport}\n{'='*40}")
             sport_commenters = []
@@ -980,9 +1040,15 @@ def main():
             print(f"\n  {len(unique)} unieke profielen checken voor {source}...")
 
             for idx, uname in enumerate(unique):
-                time.sleep(1.5)
-                if idx > 0 and idx % 10 == 0:
-                    time.sleep(6)
+                time.sleep(2.5)
+                if idx > 0 and idx % 8 == 0:
+                    # Korte pauze + terug naar homepage om rate-limit te vermijden
+                    print(f"    [pauze na {idx} profielen]")
+                    try:
+                        page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=15000)
+                    except Exception:
+                        pass
+                    time.sleep(8)
 
                 result = evaluate_profile(page, uname)
                 if result is None:

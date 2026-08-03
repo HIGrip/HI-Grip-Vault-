@@ -55,9 +55,23 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 **Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[Technische Procedures]] en [[Goedkeuringsworkflow]]), geen technische restrictie van Shopify zelf.
 
+## Google Analytics 4 (GA4) — in opzet, wacht op lars
+
+**Status 2026-08-02:** al gedaan door de agent (geen login voor nodig): `pipx` geïnstalleerd, **Google Cloud CLI (`gcloud`)** geïnstalleerd via winget.
+
+**Nog te doen door lars zelf (browser-login, kan niet door de agent):**
+1. `gcloud init` — inloggen, Google Cloud-project kiezen/aanmaken
+2. In dat project 2 API's enablen: **Google Analytics Admin API** + **Google Analytics Data API**
+3. `gcloud auth application-default login --scopes=https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/cloud-platform` — print een **"Credentials saved to file: ..."**-pad, dat heeft de agent nodig
+4. In GA4 zelf (Beheer → Property Access Management) checken dat lars' Google-account minimaal Viewer is op de higrip.nl-property
+5. GA4 **Property-ID** opzoeken (Beheer → Property-instellingen)
+
+Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registreert de `analytics-mcp`-server (pipx-package, zelfde `mcp.json`-patroon als `shopify-dev`) en de koppeling is actief.
+
+**Doel:** dit voedt de diagnostische KPI-laag uit [[Website KPI-filosofie]] (funnel-drop-off, cart-abandonment, etc.) — los van maar aanvullend op de Shopify-thema-toegang in [[Technische Procedures]]. Zie ook: `shopify store execute`/`shopify store auth` (aparte browser-login, scopes bv. `read_orders,read_customers,read_products`) kan losse Shopify-orderdata geven, maar vervangt GA4 niet voor gedrags-/funnelanalyse.
+
 ## Nog aan te vullen
 
-- GA4-koppeling (Google-official `google-analytics-mcp`, vereist gcloud-login door lars — zie [[Stappenplan — Verdere Bouw]])
 - Overige tool/API-koppelingen zodra ze ontstaan
 
 ---

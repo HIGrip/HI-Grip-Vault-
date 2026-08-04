@@ -255,7 +255,8 @@ MIN_RECENT_POSTS  = 3
 
 DUTCH_HINTS = re.compile(
     r"\b(en|de|het|een|met|voor|niet|jij|jouw|mijn|wij|onze|nederland|nederlandse|"
-    r"amsterdam|rotterdam|utrecht|eindhoven|nl|holland|belgie|belgië)\b",
+    r"amsterdam|rotterdam|utrecht|eindhoven|nl|holland|belgie|belgië)\b"
+    r"|\U0001F1F3\U0001F1F1|\U0001F1E7\U0001F1EA",  # vlag-emoji NL / BE - vaak gebruikt ipv tekst
     re.I,
 )
 

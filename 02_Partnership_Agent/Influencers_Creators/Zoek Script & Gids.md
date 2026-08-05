@@ -109,6 +109,7 @@ Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
 - Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11
 - Basketbal: @tweeboomcourt · @3x3nl
+- Partners (bestaande samenwerkingen, ijkpunt voor gewenste grootte/stijl): @perrypanna · @jaidenpadel
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
@@ -218,6 +219,8 @@ POSTS_PER_TAG = 20
 REFERENCE_ACCOUNTS = {
     "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11"],
     "Basketbal":  ["tweeboomcourt", "3x3nl"],
+    # Bestaande HI Grip-samenwerkingen - qua grootte/stijl exact het gewenste profiel.
+    "Partners":   ["perrypanna", "jaidenpadel"],
 }
 REELS_PER_REF_ACCOUNT = 5
 

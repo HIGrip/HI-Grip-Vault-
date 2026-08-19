@@ -19,6 +19,19 @@
 
 ---
 
+## 2026-08-19 — Grenzen-formulieren Partnership Agent, Content Agent, Denzel (Fase 1 afgerond)
+
+**Wat er gebeurde:** Alle 3 resterende grenzen-formulieren van Fase 1 zijn ingevuld. Voor Partnership Agent en Content Agent leverde het gebruikelijke vragen-format (per taakcategorie: zelf doen / voorstellen / altijd overleg) meteen een bruikbare tabel op. Bij Denzel ging de eerste ronde mis: die vragen gingen alleen over vault-onderhoud en het aanpassen van andermans grenzen — geen van beide is Denzel's kernrol.
+
+**Bevindingen:**
+- **Bij een orchestrator-achtige agent dekt het standaard taakcategorie-format niet automatisch de kernrol.** Voor de 3 hoofdagents is "wat mag je zelf, wat moet overleg" een directe vertaling van hun identiteit.md-scope (content maken, outreach sturen, etc.). Bij Denzel — wiens werk juist over de ándere agents gaat — was de eerste vragenronde te smal: hij miste "hoofdagents proactief aan het werk zetten" en "hun werk controleren voordat het bij lars komt", terwijl dat letterlijk in Denzel's eigen Rol-omschrijving staat ("hoofd van alle agents"). Les: bij een grenzen-formulier eerst de Rol/Missie-tekst in identiteit.md naast de conceptvragen leggen — dekken de vragen echt de kernfunctie, of alleen de zijkanten (administratie, edge cases)?
+- **lars corrigeerde dit zelf** ("Denzel is de hoofd van alle agents die moet ze ook soort van aan het werk zetten, controleren") — geen fout die ik zelf had opgemerkt vóór het afronden. Tweede vragenronde voegde 4 gerichte vragen toe (proactief starten, kwaliteitscontrole, wat bij afwijking, controle-moment) en breidde identiteit.md's Scope en soul.md's Autonomie/Werkwijze navenant uit.
+- **Resultaat qua niveaus:** vaste/terugkerende taken proactief starten = zelf doen; werk van een hoofdagent controleren tegen Brand Core/soul.md-grenzen = zelf doen; bij afwijking eerst terugsturen naar de hoofdagent voor correctie, pas escaleren naar lars als het niet lukt of een patroon wordt; controle-moment = bij élk voorstel/overleg-punt van een hoofdagent, vóórdat lars het ziet.
+
+**Resultaat:** [[Stappenplan — Verdere Bouw]] Fase 1 is nu volledig afgerond (Website Agent, Partnership Agent, Content Agent, Denzel). Denzel's volledige tabel staat direct in `soul Denzel.md` (geen aparte Beheer-tabel nodig, want geen sub-agents en geen eigen content/code).
+
+---
+
 ## Gerelateerde bestanden
 
 - [[Stappenplan — Verdere Bouw]]

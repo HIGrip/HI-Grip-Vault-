@@ -98,7 +98,8 @@ Plak dit blok onder de juiste categorie-kop in de `## Sub-agents`-sectie van het
 |---|---|
 | Orchestrator Agent (identiteit/soul) | Naam vastgesteld: **Denzel**. Scope-concept staat er; autonomie-tabel nog te bevestigen door lars |
 | Gedeelde user.md | Geconsolideerd in Beheer, 2026-07-17 |
-| Sub-agents-sectie in identiteit.md | Ingevuld en gecategoriseerd voor Content (3), Partnership (3) en Website (4) — allemaal status "idee", nog niets gebouwd |
+| Sub-agents-sectie in identiteit.md | Ingevuld en gecategoriseerd voor Content (3), Partnership (3) en Website (4). 5 sub-agents zijn sinds 2026-08-09 "in ontwikkeling" met een echte skill (zie hieronder); 5 blijven "idee" (2 gedekt door generieke skills, 3 zijn workflow-automatisering, geen skill-kandidaat) |
+| Skills-laag (nieuw) | Uitvoerende laag naast de vault: `/`-activeerbare skills in `github.com/HIGrip/HI-Grip-claude-setup` (`commands/*.md`). Zie [[Stappenplan — Verdere Bouw]] § Skills-laag voor de volledige uitleg en [[Feedback & Iteratie Log]] voor bevindingen |
 
 ## Openstaand
 

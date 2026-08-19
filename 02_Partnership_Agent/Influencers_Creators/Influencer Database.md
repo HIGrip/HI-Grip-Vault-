@@ -1,6 +1,6 @@
 # Influencer Database — HÏ Grip
 
-> Bijgewerkt: 2026-07-14
+> Bijgewerkt: 2026-08-18
 > Criteria: [[Evaluatiecriteria]] · Script: [[Zoek Script & Gids]] · Outreach: [[Outreach Templates]] · Pipeline: [[Pipeline Tracker]] · Merkfundament: [[Brand Identity Overview]]
 
 ---
@@ -46,6 +46,7 @@
 
 | Status       | Account                                                    | Volgers   | Gem. Views | Prioriteit | Notities                                                                                                        |
 | ------------ | ---------------------------------------------------------- | --------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
+| 📌 Referentie | [@jayjay.wav](https://www.instagram.com/jayjay.wav/)      | ~3.000 (opgave Lars, niet geverifieerd) | verifieer | Zeer hoog | **Beste match tot nu toe** — nano-creator, voetbalcontent, exact de gewenste grootte/stijl. Toegevoegd als size/style-referentie 2026-08-18 (zie [[project_ig_search_calibration]]) en als bron in het zoekscript (`REFERENCE_ACCOUNTS`, commenters op zijn reels worden nu gescand). Volgers/ER/activiteit nog verifiëren via `web_profile_info` — WebFetch op het profiel gaf alleen username + displaynaam terug, geen cijfers. |
 | 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer | verifieer  | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
 | 🔍 Verifieer | [@boersma_goalkeeping](https://www.instagram.com/boersma_goalkeeping/) | ~35K | ~30K gem. | Hoog | Keeperstraining content, Nederlandse naam. Directe productfit (keepershandschoenen). Volgers aan hoge kant maar keeper-niche is klein. Verifieer: NL? eigen gezicht? sport-fit HÏ Grip? |
 | 🔎 Gevonden   | [@nexttalentkeepersschool](https://www.instagram.com/nexttalentkeepersschool/) | 17.8K ✓ | 4.8K ✓ | Hoog | Keeperstraining school, NL. Directe productfit (keepershandschoenen). Verifieer: eigen gezicht/creator achter account? |

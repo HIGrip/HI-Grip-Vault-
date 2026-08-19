@@ -8,10 +8,10 @@
 
 - **Brand Core** — volledig gevuld, bron van waarheid voor alle agents.
 - **Structuur staat** — Denzel (Orchestrator) + 3 hoofdagents (Content, Partnership, Website), elk met `identiteit.md`/`soul.md` (plus één gedeelde `user.md` in Beheer); 10 sub-agents zijn uitgewerkt als catalogus-item per categorie, allemaal status "idee".
-- **Website Agent loopt voorop** — als enige al een compleet grenzen-formulier doorlopen (14 juli 2026): [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] staan er. Ook al 4 vakinhoudelijke notities gevuld: [[SEO Strategie & Keywords]], [[Website Structuur & Sitemap]], [[Homepage Copy & Structuur]], [[Conversie Optimalisatie Checklist]].
-- **Denzel, Content Agent, Partnership Agent** — hun `soul.md` (autonomie-tabel: wat mag zelf, wat moet overleg) is nog niet doorgesproken.
-- **Content Agent en Partnership Agent** — de vakinhoudelijke notities eronder (Content Pillars, Content Strategie, Ideale Partner Profiel, etc.) staan grotendeels nog leeg.
-- Geen van de 10 sub-agents is al echt in gebruik — allemaal status "idee".
+- **Website Agent liep voorop** — als eerste een compleet grenzen-formulier doorlopen (14 juli 2026): [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] staan er. Ook al 4 vakinhoudelijke notities gevuld: [[SEO Strategie & Keywords]], [[Website Structuur & Sitemap]], [[Homepage Copy & Structuur]], [[Conversie Optimalisatie Checklist]].
+- **Partnership Agent, Content Agent en Denzel volgden** (19 augustus 2026): alle 4 grenzen-formulieren nu ingevuld — [[Agent Takenverdeling & Grenzen — Partnership Agent]], [[Agent Takenverdeling & Grenzen — Content Agent]] en de tabel direct in `soul Denzel.md`. **Fase 1 is hiermee volledig afgerond.**
+- **Content Agent en Partnership Agent** — de vakinhoudelijke notities eronder (Content Pillars, Content Strategie, Ideale Partner Profiel, etc.) staan grotendeels nog leeg — behalve Visuele Productie, die is wél volledig gevuld.
+- **5 van de 10 sub-agents zijn nu "in ontwikkeling"** (2026-08-09): SEO Agent, Design Agent, Website Copy Agent, Conversie & Analyse Agent (Website Agent) en Video & Visuele Productie Agent (Content Agent) hebben elk een echte, `/`-activeerbare Claude Code Skill gekregen in de gedeelde `HI-Grip-claude-setup`-repo — zie per sub-agent de eigen `_Werkplek.md` en de nieuwe sectie "Skills-laag" verderop in dit document. Caption & Copy Agent en Content Strategie & Planning Agent bleven bewust "idee": hun functie wordt al grotendeels gedekt door de generieke `/social-content`- en `/content-strategy`-skills. De overige 3 (Influencer & Creator, B2B Klanten, Partnerships & Events, allemaal Partnership Agent) blijven "idee" — dat zijn automatische workflows (zoals het bestaande IG-zoekscript), geen `/`-geactiveerde skills.
 
 **Waarom deze volgorde:** eerst de laag die alles daaronder veilig maakt (autonomie/soul.md), dan de vakinhoud die sub-agents nodig hebben om daadwerkelijk iets te kunnen opleveren, en pas dán één sub-agent als pilot echt bouwen. Dat is exact het pad dat Website Agent al heeft afgelegd — dit stappenplan herhaalt dat voor de rest.
 
@@ -19,9 +19,9 @@
 
 ## Fase 1 — Autonomie vastleggen (soul.md invullen)
 
-- [ ] Grenzen-formulier voor **Denzel** — zelfde gesprek als bij Website Agent op 14 juli
-- [ ] Grenzen-formulier voor **Content Agent**
-- [ ] Grenzen-formulier voor **Partnership Agent**
+- [x] Grenzen-formulier voor **Denzel** — ingevuld 19 augustus 2026, volledige tabel staat direct in `soul Denzel.md` (geen aparte Beheer-tabel nodig, Denzel heeft geen sub-agents en maakt zelf geen content/code)
+- [x] Grenzen-formulier voor **Content Agent** — ingevuld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Content Agent]] en soul.md/identiteit.md in de Content Agent-map
+- [x] Grenzen-formulier voor **Partnership Agent** — ingevuld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] en soul.md/identiteit.md in de Partnership Agent-map
 
 Zonder deze tabel weet geen enkele sub-agent onder deze hoofdagents wanneer hij zelf mag handelen of eerst moet overleggen met lars.
 
@@ -37,10 +37,23 @@ Dit is de content die de sub-agents straks daadwerkelijk gebruiken: zonder gevul
 
 ## Fase 3 — Eén sub-agent als pilot bouwen
 
-- [ ] Eén sub-agent kiezen om als eerste van "idee" → "in ontwikkeling" → "actief" te brengen
-- [ ] **Voorstel:** SEO Agent of Design Agent (beide onder Website Agent) — die hoofdagent heeft al de meeste vakinhoud én een werkende goedkeuringsworkflow, dus de kortste afstand tot iets bruikbaars. Geen besluit, een uitgangspunt.
-- [ ] Bij deze pilot meteen vastleggen hóe een sub-agent technisch wordt "aangeroepen" — apart systeem/project, of een sectie die erbij komt als er met de hoofdagent gewerkt wordt. Dit ligt nog helemaal open.
-- [ ] Bevindingen van de pilot vastleggen in [[Feedback & Iteratie Log]] vóórdat de volgende sub-agent aan de beurt is
+- [x] Eén sub-agent kiezen om als eerste van "idee" → "in ontwikkeling" te brengen — **werd Design Agent** (2026-08-08), en is daarna dezelfde dag doorgetrokken naar 4 andere sub-agents (2026-08-09) toen bleek dat het patroon direct herbruikbaar was — zie "Skills-laag" hieronder.
+- [x] Hóe een sub-agent technisch wordt "aangeroepen" ligt nu vast: **als `/`-activeerbare Claude Code Skill** in de gedeelde `HI-Grip-claude-setup`-repo (`commands/*.md`), niet als apart systeem/project. Zie "Skills-laag" hieronder voor de volledige uitleg.
+- [x] Bevindingen van de pilot vastgelegd in [[Feedback & Iteratie Log]].
+
+### Skills-laag (nieuw, 2026-08-09)
+
+Naast de vault (identiteit.md/soul.md = wie een sub-agent is) bestaat er nu een **tweede, uitvoerende laag**: een echte Claude Code Skill per sub-agent, in de gedeelde team-repo `github.com/HIGrip/HI-Grip-claude-setup` (`commands/`). Een sub-agent "bouwen" betekent in de praktijk: zo'n skill schrijven.
+
+**Elke skill heeft twee lagen, naar het voorbeeld van de bestaande `/marketing-psychology`-skill:**
+1. **HÏ Grip-operationeel** — de regels, harde grenzen en huidige status uit de vault (bv. welk Shopify-theme-ID, welke structured data al live staat, de KPI-filosofie).
+2. **Algemene vaktheorie ("pure stof")** — hoe het vakgebied zelf werkt, los van HÏ Grip (bv. hoe crawling/indexing/ranking werkt voor SEO, het LIFT-model voor CRO, het Kuleshov-effect voor video-editing). Dit maakt de skill ook bruikbaar/sterker in situaties die de vault nog niet heeft gedocumenteerd.
+
+**Gebouwd (2026-08-09):** `/shopify-design`, `/shopify-seo`, `/shopify-copy`, `/shopify-cro`, `/video-productie` — telkens met verwijzing naar de vault-bronkennis, niet als kopie ervan (vault blijft bron van waarheid, skill is de uitvoerende laag).
+
+**Bewust overgeslagen:**
+- Caption & Copy Agent, Content Strategie & Planning Agent — al grotendeels gedekt door de generieke `/social-content` en `/content-strategy`-skills.
+- Influencer & Creator, B2B Klanten, Partnerships & Events (Partnership Agent) — dit zijn automatische workflows (zoals het IG-zoekscript), geen `/`-geactiveerde skills. Blijven status "idee" tot dat onderscheid opnieuw relevant wordt.
 
 ## Fase 4 — Resterende infrastructuur
 
@@ -56,9 +69,9 @@ Dit is de content die de sub-agents straks daadwerkelijk gebruiken: zonder gevul
 
 ## Openstaande keuzes voor lars
 
-- Volgorde tussen Content Agent en Partnership Agent in Fase 1/2 — hierboven bewust geen voorkeur op gezet.
-- Welke sub-agent echt als eerste pilot (Fase 3) — SEO/Design zijn een voorstel, geen besluit.
-- Hoe een sub-agent straks technisch draait — bepaalt hoeveel bouwwerk Fase 3 kost.
+- Content Agent — "follow-up content van derden verwerken" (categorie D in [[Agent Takenverdeling & Grenzen — Content Agent]]) en "Copy Bank bijhouden zonder overleg" (categorie B) stonden niet in het formulier zelf, zijn als voorstel ingevuld — nog te bevestigen.
+- Partnership Agent — of follow-up-berichten aan een al lopend contact hetzelfde strenge niveau moeten hebben als het allereerste bericht (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]], categorie C) — nog te bevestigen.
+- Fase 2 volgorde: Content Agent vakinhoud vs. Partnership Agent vakinhoud vs. Website Agent-restant — geen voorkeur op gezet.
 
 ---
 
@@ -67,4 +80,6 @@ Dit is de content die de sub-agents straks daadwerkelijk gebruiken: zonder gevul
 - [[Agent Hiërarchie & Structuurschema]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
 - [[Agent Takenverdeling & Grenzen]]
+- [[Agent Takenverdeling & Grenzen — Partnership Agent]]
+- [[Agent Takenverdeling & Grenzen — Content Agent]]
 - [[Goedkeuringsworkflow]]

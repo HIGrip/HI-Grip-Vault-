@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-08-02 (v4.3)
+> Bijgewerkt: 2026-08-18 (v4.4 — @jayjay.wav toegevoegd als voetbal-referentie)
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -25,7 +25,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 | Filter | Waarde |
 |---|---|
-| Volgers | 500 – 50.000 (nano/micro sweet spot 5k-30k als voorkeur; tot 50k toegestaan, 100k-plafond per 2026-08-02 verlaagd) |
+| Volgers | 300 – 50.000 (ondergrens per 2026-08-05 verlaagd op basis van echte partnerdata: @jaidenpadel heeft maar 815 volgers) |
 | Gem. views per post | ≥ 1.000 |
 | Engagement rate (ER%) | ≥ 2% |
 | Activiteit | ≥ 3 posts in de laatste 21 dagen |
@@ -107,9 +107,9 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11
+- Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11 · @jayjay.wav (nieuw 2026-08-18 — beste "size/style"-match tot nu toe binnen voetbal, ~3.000 volgers naar schatting Lars, zie [[Influencer Database]] en [[project_ig_search_calibration]])
 - Basketbal: @tweeboomcourt · @3x3nl
-- Partners (bestaande samenwerkingen, ijkpunt voor gewenste grootte/stijl): @perrypanna · @jaidenpadel
+- Partners (bestaande samenwerkingen, ijkpunt voor gewenste grootte/stijl): @perrrypanna (Perry Hoogerheijde, 4.207 volgers) · @jaidenpadel (Jaiden Tolenaar, 815 volgers)
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
@@ -147,7 +147,7 @@ DOM-scraping methode zodat een los profiel nooit de hele run laat crashen.
 
 Filters volgen Evaluatiecriteria.md in de Obsidian vault. Alles hier is een harde,
 deterministische cijferfilter (snel, gratis, geen LLM nodig):
-  - Volgers: 500 - 30.000
+  - Volgers: 300 - 50.000
   - Gem. views per post: minimaal MIN_AVG_VIEWS
   - Engagement rate (ER%): minimaal MIN_ER_PCT
   - Activiteit: minimaal MIN_RECENT_POSTS posts in de laatste MAX_INACTIVE_DAYS dagen
@@ -187,9 +187,9 @@ IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebr
 
 # ── Bronnen ──────────────────────────────────────────────────────────────────
 
-# Following-lijst van deze account(s) scannen (bv. het eigen HI Grip account —
+# Following-lijst van deze account(s) scannen (het account waarmee is ingelogd —
 # dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.
-SEED_ACCOUNTS = []
+SEED_ACCOUNTS = ["lars_a.i.h"]
 
 # Following-lijsten van NL creators scannen: wie zij volgen zijn vaak kleine creators
 # in dezelfde niche die anders moeilijk te vinden zijn via hashtags of commenters.
@@ -217,10 +217,10 @@ POSTS_PER_TAG = 20
 # Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
-    "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11"],
+    "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11", "jayjay.wav"],
     "Basketbal":  ["tweeboomcourt", "3x3nl"],
     # Bestaande HI Grip-samenwerkingen - qua grootte/stijl exact het gewenste profiel.
-    "Partners":   ["perrypanna", "jaidenpadel"],
+    "Partners":   ["perrrypanna", "jaidenpadel"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
@@ -237,18 +237,22 @@ EXCLUDED_ACCOUNTS = {
     "michiel_pilaar",     # vis-contentcreator, geen sport
     "voetbalgiveaways_",  # giveaway-account, geen creator
     "footballculture_com",# media-pagina, geen persoonlijke creator
+    "fcdeifferdeng03",    # voetbalclub, geen persoonlijke creator
+    "sprotselaar",        # voetbalclub (Sp. Rotselaar), geen persoonlijke creator
+    "klyralierse",        # voetbalclub (K Lyra Lierse), geen persoonlijke creator
 }
 
 # Usernames die wijzen op media/nieuws/giveaway-accounts — geen persoonlijke creators.
 EXCLUDED_USERNAME_PATTERNS = re.compile(
     r"(giveaway|nieuws|news|alert|update|club|fc[._]|vv[._]|official|culture_com|"
-    r"magazine|media|tv[._]|highlight|scout|transfer|fanpage|community)",
+    r"magazine|media|tv[._]|highlight|scout|transfer|fanpage|community|"
+    r"^fc[a-z]|^vv[a-z]|^kfc|^rksv|^kvv)",
     re.I,
 )
 
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
-MIN_FOLLOWERS     = 500
+MIN_FOLLOWERS     = 300   # verlaagd: echte partner @jaidenpadel heeft maar 815 volgers
 MAX_FOLLOWERS     = 50_000   # tussen nano/micro sweet spot (30k) en officiele 100k-plafond
 MIN_AVG_VIEWS     = 1_000
 MAX_AVG_VIEWS     = 30_000    # boven dit: te groot voor micro-creator
@@ -770,7 +774,7 @@ def get_post_usernames(page, hashtag):
 
 # ── bron 2: following-lijst van seed-accounts ────────────────────────────────
 
-def get_following_list(page, username, max_scroll=15):
+def get_following_list(page, username, max_scroll=40):
     """Open de following-lijst van een account, scroll erdoor, pak usernames."""
     print(f"\n  Following van @{username} scannen...")
     try:
@@ -803,6 +807,7 @@ def get_following_list(page, username, max_scroll=15):
 
         following = []
         seen = {username}
+        stale_rounds = 0
 
         for i in range(max_scroll):
             raw = page.evaluate("""
@@ -830,7 +835,10 @@ def get_following_list(page, username, max_scroll=15):
                     following.append(h)
                     new_count += 1
 
-            if new_count == 0 and i > 2:
+            # Pas na 2 opeenvolgende scrolls zonder nieuwe namen echt stoppen -
+            # 1 trage/nog-ladende batch mag niet de hele scan afkappen.
+            stale_rounds = stale_rounds + 1 if new_count == 0 else 0
+            if stale_rounds >= 2 and i > 3:
                 break
 
             try:
@@ -844,7 +852,7 @@ def get_following_list(page, username, max_scroll=15):
                 """)
             except Exception:
                 pass
-            time.sleep(1.5)
+            time.sleep(2.2)
 
         try:
             page.keyboard.press("Escape")

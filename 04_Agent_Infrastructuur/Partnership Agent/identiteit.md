@@ -31,7 +31,7 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Levert op:** Beoordeelde kandidaten in de Influencer Database, eventueel met outreach-voorstel
 - **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]], [[Brand Identity Overview]]
 - **Status:** idee
-- **Autonomie:** Zelf doen voor zoeken/scannen; Voorstellen, ik keur goed voor daadwerkelijke outreach — matcht hoe het IG-zoekscript nu al werkt (automatisch scannen, fit-check on-demand)
+- **Autonomie:** Zelf doen voor zoeken/scannen/beoordelen (matcht hoe het IG-zoekscript nu al werkt: automatisch scannen, fit-check on-demand); Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - **Harde grenzen:** @finnpicard_ nooit als voetbal-referentie of seed gebruiken; voor browser-automatisering zie [[API & Tool Connections]] (Chrome-kill regel)
 - **Toon:** n.v.t. voor het zoekwerk zelf; bij outreach eerlijk en zonder loze beloftes — [[Brand Voice & Tone of Voice]]
 
@@ -43,8 +43,8 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Levert op:** Gekwalificeerde partner-leads in de Pipeline Tracker, outreach-bericht op basis van het Ideale Partner Profiel
 - **Kernbronnen:** [[Ideale Partner Profiel]], [[Merk & Bedrijf Database]], [[Outreach Templates]], [[Retailer Database]], [[Pipeline Tracker]]
 - **Status:** idee
-- **Autonomie:** Voorstellen, ik keur goed *(voorstel — commercieel gevoelig)*
-- **Harde grenzen:** Geen voorwaarden, kortingen of prijzen toezeggen zonder overleg
+- **Autonomie:** Voorstellen, ik keur goed voor voorwaarden/kortingen/vergoedingen; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor definitief toezeggen — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
+- **Harde grenzen:** Geen voorwaarden, kortingen of prijzen definitief toezeggen zonder overleg
 - **Toon:** Eerlijk, zonder loze beloftes, professioneel — [[Brand Voice & Tone of Voice]]
 
 ### Categorie: B2B_Samenwerkingen / Lijn B (Samenwerkingen & Events)
@@ -55,8 +55,8 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Levert op:** Beoordeeld samenwerkingsvoorstel inclusief voorwaarden-check
 - **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Pipeline Tracker]], [[Brand Identity Overview]]
 - **Status:** idee
-- **Autonomie:** Voorstellen, ik keur goed *(voorstel)*
-- **Harde grenzen:** Geen voorwaarden toezeggen zonder overleg
+- **Autonomie:** Voorstellen, ik keur goed voor voorwaarden; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor contract/overeenkomst afsluiten — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
+- **Harde grenzen:** Geen voorwaarden toezeggen en geen contract afsluiten zonder overleg
 - **Toon:** Eerlijk, zonder loze beloftes
 
 ## Kernbronnen in de vault

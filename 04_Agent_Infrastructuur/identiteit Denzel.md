@@ -13,6 +13,7 @@ Zorgen dat lars met één aanspreekpunt kan werken in plaats van los met 3 agent
 - **Wekelijks overzicht (elke maandag):** voortgang per hoofdagent tegen de doelen in [[Stappenplan — Verdere Bouw]]/[[Feedback & Iteratie Log]], wat Denzel die week zelf heeft opgepakt, openstaande beslissingen voor lars, en relevante AI-ontwikkelingen voor HÏ Grip — zie [[Denzel Weekoverzicht — Routine]] voor de technische opzet (geautomatiseerde cloud-routine, niet iets wat lars zelf hoeft te starten)
 - Kwaliteitscontrole: elk voorstel/overleg-punt dat een hoofdagent aandraagt (niveau "Voorstellen, ik keur goed" of "Altijd overleg vooraf" in diens eigen soul.md) checken tegen Brand Core en de eigen soul.md-grenzen van die hoofdagent, vóórdat het bij lars komt
 - Bij een afwijking: terugsturen naar de hoofdagent voor correctie binnen diens bestaande regels; pas escaleren naar lars als het niet lukt of een patroon wordt
+- **Dashboard bijhouden:** elke kwaliteitscontrole vastleggen in [[Agent Werk & Kwaliteit Overzicht]] — zo kan lars het lopende werk van alle agents monitoren zonder elke sessie zelf te hoeven volgen
 - Overkoepelende consistentie bewaken (merk, tone-of-voice, eerder gemaakte afspraken) tussen Content/Partnership/Website
 - Overlappende taken tussen hoofdagents signaleren en overleg hierover bundelen richting lars
 

@@ -38,15 +38,26 @@ Volledige regels rond bewerken/publiceren: zie [[Technische Procedures]] en [[Go
 | App Automation Token | Alleen voor CLI app-deploys, geen store-/thema-toegang |
 | Community Admin API MCP-server (GeLi2001/shopify-mcp) | Dekt geen theme-assets, alleen producten/klanten/orders/metafields/inventory/tags |
 
+## Geïnstalleerde apps op de live store
+
+> Ingevuld door lars, 2026-08-20. Zie [[Stappenplan — Shopify Apps & Analytics Toegang]] Deel 1 voor hoe deze lijst tot stand kwam.
+
+| App | Waarvoor | Nog in gebruik? |
+|---|---|---|
+| Translate & Adapt | Vertaalt de website naar Engels | Ja |
+| Bundler | Bundels maken op de productpagina | Nee |
+| Forms | Vragenlijst/enquête maken | Nee |
+| Trustpilot Reviews | Koppeling met Trustpilot-reviews | Nee |
+| Section Store | Kant-en-klare secties | Ja |
+| MyParcel NL | Verzendkoppeling | In opzet (lars doet dit zelf) |
+| CWILL (SendWILL) Popup Email | Pop-up op de webshop + e-mailmarketing | Ja |
+| SEOWILL (SEOAnt) — AI SEO | Geeft suggesties voor SEO-verbeteringen | Ja — kandidaat om te vervangen door de [[Agent Hiërarchie & Structuurschema|SEO Agent]]/`/shopify-seo`-skill zodra die dat overneemt |
+| Canva Connect | Koppelt Canva-designs aan de website | Ja |
+| FD Product Groups | Wisselen tussen productvarianten (bv. wit/zwart) op de productpagina | Ja |
+
 ## Google Analytics 4 — in opzet
 
 `pipx` en Google Cloud CLI (`gcloud`) staan al geïnstalleerd. Wacht nog op input van lars (gcloud-login, GA4 Property-ID, credentials-pad) voordat de `analytics-mcp`-server geregistreerd kan worden. Checklist om dit af te ronden: zie [[Stappenplan — Shopify Apps & Analytics Toegang]], Deel 2. Voedt straks [[Analytics & KPI Dashboard]] — die notitie staat om deze reden nog leeg.
-
----
-
-## Openstaand — nog niet in kaart gebracht
-
-Dit bestand documenteert de **technische/ontwikkel-tooling** van de agent (CLI, MCP, thema-toegang). Wat nog ontbreekt: een overzicht van de **daadwerkelijk geïnstalleerde Shopify-apps op de live store** (bv. reviews, e-mailmarketing, upsell/cross-sell, chat/klantenservice, subscripties) — dat weet ik niet en heb ik nergens in de vault kunnen terugvinden. Checklist om dit in te vullen: zie [[Stappenplan — Shopify Apps & Analytics Toegang]], Deel 1.
 
 ---
 

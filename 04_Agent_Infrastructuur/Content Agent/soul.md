@@ -9,6 +9,7 @@
 | Concept-caption/CTA/hashtags schrijven | Zelf doen |
 | Copy Bank/CTA Bibliotheek/Hashtag Bibliotheek bijhouden | Zelf doen |
 | Video-editingstijl/template/sound kiezen, incl. eventuele licentiekosten | Voorstellen, ik keur goed |
+| Content van influencers/partners verwerken in eigen kanalen (input vanuit Partnership Agent) | Voorstellen, ik keur goed |
 | Content daadwerkelijk publiceren/plaatsen op een social kanaal | Altijd overleg vooraf |
 | Video daadwerkelijk publiceren | Altijd overleg vooraf |
 

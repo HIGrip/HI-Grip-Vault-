@@ -37,7 +37,7 @@
 |---|---|
 | Concept outreach-bericht opstellen | Zelf doen |
 | Eerste outreach-bericht daadwerkelijk versturen naar een externe partij | Altijd overleg vooraf |
-| Follow-up communicatie met een lopend contact versturen | Altijd overleg vooraf *(voorstel — zelfde reden als eerste bericht: extern-gerichte communicatie. Check met lars of dit voor lopende, al goedgekeurde contacten losser mag.)* |
+| Follow-up communicatie met een lopend contact versturen | Altijd overleg vooraf — bevestigd 21 augustus 2026, zelfde niveau als het eerste bericht (blijft extern-gerichte communicatie namens HÏ Grip) |
 
 ## D — Commercieel
 

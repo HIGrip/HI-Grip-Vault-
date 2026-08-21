@@ -69,9 +69,9 @@ Naast de vault (identiteit.md/soul.md = wie een sub-agent is) bestaat er nu een 
 
 ## Openstaande keuzes voor lars
 
-- Content Agent — "follow-up content van derden verwerken" (categorie D in [[Agent Takenverdeling & Grenzen — Content Agent]]) en "Copy Bank bijhouden zonder overleg" (categorie B) stonden niet in het formulier zelf, zijn als voorstel ingevuld — nog te bevestigen.
-- Partnership Agent — of follow-up-berichten aan een al lopend contact hetzelfde strenge niveau moeten hebben als het allereerste bericht (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]], categorie C) — nog te bevestigen.
-- Fase 2 volgorde: Content Agent vakinhoud vs. Partnership Agent vakinhoud vs. Website Agent-restant — geen voorkeur op gezet.
+- **Alle drie voormalige open punten zijn bevestigd (21 augustus 2026):** Content Agent's "content van derden verwerken" (Voorstellen, ik keur goed) en "Copy Bank bijhouden" (Zelf doen) — zie [[Agent Takenverdeling & Grenzen — Content Agent]]; Partnership Agent's follow-up-berichten (zelfde niveau als eerste bericht: Altijd overleg vooraf) — zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]. Alle 3 doorgevoerd in de bijbehorende soul.md's.
+- GA4-toegang (Fase 2, Analytics & KPI Dashboard) — lars koos voor de GA4-route, maar voert de stappen later uit. Zie [[Stappenplan — Shopify Apps & Analytics Toegang]].
+- Fase 5 — welke van de 2 resterende sub-agents eerst (B2B Klanten Agent of Partnerships & Events Agent) — nog geen keuze gemaakt.
 
 ---
 

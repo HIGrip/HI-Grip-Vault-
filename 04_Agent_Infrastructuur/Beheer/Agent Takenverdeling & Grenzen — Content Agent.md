@@ -27,7 +27,7 @@
 | Taak | Niveau |
 |---|---|
 | Concept-caption/CTA/hashtags schrijven | Zelf doen |
-| Copy Bank / CTA Bibliotheek / Hashtag Bibliotheek bijhouden | Zelf doen *(voorstel — intern naslagwerk, niet publiek zichtbaar, check dit)* |
+| Copy Bank / CTA Bibliotheek / Hashtag Bibliotheek bijhouden | Zelf doen — bevestigd 21 augustus 2026 |
 
 ## C — Publiceren & video-productie
 
@@ -41,7 +41,7 @@
 
 | Taak | Niveau |
 |---|---|
-| Content van influencers/partners verwerken in eigen kanalen (input vanuit Partnership Agent) | Voorstellen, ik keur goed *(voorstel — nog niet expliciet besproken, check dit)* |
+| Content van influencers/partners verwerken in eigen kanalen (input vanuit Partnership Agent) | Voorstellen, ik keur goed — bevestigd 21 augustus 2026 |
 
 ## E — Monitoring & consistentie
 

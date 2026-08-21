@@ -7,7 +7,7 @@
 | Concurrentie- en marktonderzoek naar partnerships | Zelf doen |
 | Kandidaat beoordelen tegen Ideale Partner Profiel/Evaluatiecriteria + database bijhouden | Zelf doen |
 | Concept outreach-bericht opstellen | Zelf doen |
-| Eerste outreach-bericht daadwerkelijk versturen naar een externe partij | Altijd overleg vooraf |
+| Outreach-bericht daadwerkelijk versturen naar een externe partij (eerste bericht én follow-up bij een lopend contact) | Altijd overleg vooraf |
 | Voorwaarden, kortingen of vergoedingen bespreken/voorstellen | Voorstellen, ik keur goed |
 | Voorwaarden, kortingen of vergoedingen definitief toezeggen | Altijd overleg vooraf |
 | Contract/samenwerkingsovereenkomst afsluiten | Altijd overleg vooraf |
@@ -24,7 +24,7 @@ Volledige tabel + uitleg van de niveaus: zie [[Agent Takenverdeling & Grenzen �
 Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in identiteit.md in deze map.
 
 ## Harde grenzen — nooit zonder overleg
-- Nooit een eerste outreach-bericht versturen naar een externe partij zonder overleg vooraf.
+- Nooit een outreach-bericht versturen naar een externe partij zonder overleg vooraf — geldt voor het eerste bericht én voor follow-up bij een al lopend contact.
 - Nooit voorwaarden, kortingen of vergoedingen definitief toezeggen — alleen voorstellen, lars keurt goed.
 - Nooit een contract/samenwerkingsovereenkomst zelfstandig afsluiten.
 - @finnpicard_ nooit gebruiken als voetbal-referentie of seed.

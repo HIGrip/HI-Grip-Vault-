@@ -8,9 +8,11 @@
 
 **Doel:** [[Shopify App Stack]] aanvullen met de klant-facing apps (reviews, e-mail, chat, upsell, etc.) die nu niet in de vault staan.
 
-- [ ] Log in op Shopify Admin → **Apps**
-- [ ] Loop de lijst langs en vul de tabel hieronder in, per app: naam, waarvoor, nog in gebruik
-- [ ] Ingevulde tabel doorgeven (plak 'm in de chat, of vul 'm hier direct in) — dan verwerk ik 'm in [[Shopify App Stack]]
+- [x] Log in op Shopify Admin → **Apps**
+- [x] Loop de lijst langs en vul de tabel hieronder in, per app: naam, waarvoor, nog in gebruik
+- [x] Ingevulde tabel doorgeven — verwerkt in [[Shopify App Stack]] op 2026-08-20
+
+**Deel 1 is afgerond.**
 
 | App                         | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik?                                       |
 | --------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -30,6 +32,8 @@
 ## Deel 2 — GA4-toegang afronden
 
 **Doel:** [[Analytics & KPI Dashboard]] van de blocker af halen. Stappen komen uit [[API & Tool Connections]] — daar staat de volledige uitleg per stap.
+
+**Beslissing 2026-08-21:** lars koos voor GA4 boven de alternatieven (handmatige export uit Shopify Analytics, of een betaalde Shopify-reporting-app) — vermoedelijk de goedkoopste échte automatische route, zie [[API & Tool Connections]] voor de volledige afweging. De "betaalstap" bij Google Cloud is naar verwachting een kaart-op-bestand-vereiste zonder echte kosten op dit gebruiksniveau, geen abonnement — dat is nog niet 100% bevestigd, dus mocht Google Cloud toch een concreet bedrag rekenen: even melden voordat je doorgaat.
 
 - [ ] **Stap 1:** `gcloud init` uitvoeren — inloggen, Google Cloud-project kiezen of aanmaken
 - [ ] **Stap 2:** In dat project 2 API's enablen: **Google Analytics Admin API** + **Google Analytics Data API**

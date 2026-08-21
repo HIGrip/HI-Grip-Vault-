@@ -12,11 +12,15 @@
 - [ ] Loop de lijst langs en vul de tabel hieronder in, per app: naam, waarvoor, nog in gebruik
 - [ ] Ingevulde tabel doorgeven (plak 'm in de chat, of vul 'm hier direct in) — dan verwerk ik 'm in [[Shopify App Stack]]
 
-| App                   | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik? |
-| --------------------- | ------------------------------------------------------------------- | --------------- |
-| <br>Translate & Adapt | translate van de website naar engels                                | ja              |
-| Bundler               |                                                                     |                 |
-|                       |                                                                     |                 |
+| App                | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik? |
+| ------------------ | ------------------------------------------------------------------- | --------------- |
+| Translate & Adapt  | translate van de website naar engels                                | ja              |
+| Bundler            | voor het creeren van bundels op productpagina                       | nee             |
+| Forms              | Voor het maken van een vragen lijst/ enquete                        | nee             |
+| Trustpilot Reviews | koppeling met trustpilot reviews                                    | nee             |
+|                    |                                                                     |                 |
+|                    |                                                                     |                 |
+|                    |                                                                     |                 |
 
 ---
 

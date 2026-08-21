@@ -62,7 +62,9 @@ Naast de vault (identiteit.md/soul.md = wie een sub-agent is) bestaat er nu een 
 
 ## Fase 5 — Opschalen
 
-- [ ] De overige 9 sub-agents één voor één dezelfde weg laten volgen (idee → in ontwikkeling → actief)
+- [x] **B2B Klanten Agent** — idee → in ontwikkeling (2026-08-21). Evaluatiecriteria overgezet uit `HiGrip_B2B_Samenwerking_Criteria.docx` (was nog nergens in de vault verwerkt) naar [[Evaluatiecriteria (B2B Klanten)]]. Zoekmethode vastgesteld: gewone websearch op trefwoord+locatie, on-demand door de agent — geen script/API nodig, in tegenstelling tot het IG-zoekscript. Getest met een echte zoekactie: 5 nieuwe pilates-studio's in Rotterdam gevonden en verwerkt in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]. Nog niet getest: outreach/pipeline-doorstroom.
+- [ ] **Partnerships & Events Agent** — nog "idee". Deel 2 van dezelfde criteria-docx (Samenwerkingen & Events) staat al klaar om overgezet te worden, net als bij B2B Klanten Agent.
+- [ ] De overige sub-agents (Influencer & Creator Agent formaliseren als "in ontwikkeling" i.p.v. impliciet via het bestaande script) één voor één dezelfde weg laten volgen
 - [ ] Denzel's routerende rol pas echt testen zodra minstens 2 hoofdagents met actieve sub-agents tegelijk draaien — pas dan is er iets om te routeren/bewaken
 
 ---

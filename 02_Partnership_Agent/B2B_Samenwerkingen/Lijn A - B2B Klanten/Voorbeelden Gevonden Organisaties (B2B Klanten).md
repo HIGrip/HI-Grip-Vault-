@@ -19,7 +19,7 @@
 
 ## Werkwijze bij een nieuwe zoekactie
 
-1. Websearch op trefwoord + locatie, volgend uit [[Partnership Strategie]] se prioriteitsvolgorde (pilates/sportscholen → sportclubs → retailers) en [[Evaluatiecriteria (B2B Klanten)]]'s locatie-prioriteit (Rotterdam-regio → heel NL → Vlaanderen).
+1. Websearch op trefwoord + locatie, volgend uit de prioriteitsvolgorde in [[Partnership Strategie]] (pilates/sportscholen → sportclubs → retailers) en de locatie-prioriteit in [[Evaluatiecriteria (B2B Klanten)]] (Rotterdam-regio → heel NL → Vlaanderen).
 2. Elke treffer toetsen aan de uitsluitingen (sport/performance-fit, actief, niet al benaderd, geen concurrentiebelang).
 3. Score toekennen (HOOG/MIDDEL/LAAG/NEE) — zonder direct contact is HOOG zelden te onderbouwen; MIDDEL is de realistische standaard tot na eerste contact.
 4. Toevoegen aan de tabel hierboven in het vaste output-format.

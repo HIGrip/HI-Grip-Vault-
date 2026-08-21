@@ -32,6 +32,20 @@
 
 ---
 
+## 2026-08-21 — B2B Klanten Agent (eerste Fase 5 sub-agent, idee → in ontwikkeling)
+
+**Wat er gebeurde:** Bij het kiezen van een eerste sub-agent voor Fase 5 bleek er al een kant-en-klaar, door lars geschreven criteria-document te bestaan (`HiGrip_B2B_Samenwerking_Criteria.docx`, OneDrive/Documents, versie 2.0) dat nergens in de vault was verwerkt — alleen indirect genoemd als bronverwijzing in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]. Docx kon niet met de standaard Read-tool geopend worden (binair bestand); omweg: kopiëren naar .zip, uitpakken met PowerShell `Expand-Archive`, `word/document.xml` uitlezen en XML-tags strippen met regex. Werkte in één keer.
+
+**Bevindingen:**
+- **Bij "hier is een extern brondocument" eerst checken of het al in de vault is overgezet, vóór je zelf criteria gaat verzinnen.** Dit document bestond al, dekte zowel Lijn A (B2B Klanten) als Lijn B (Samenwerkingen & Events) in één bestand — Deel 2 ligt klaar voor wanneer de Partnerships & Events Agent aan de beurt is, hoeft niet opnieuw uitgezocht te worden.
+- **Niet elke sub-agent heeft een script/API nodig om "gebouwd" te zijn.** Vergeleken met het IG-zoekscript (draait ongevraagd op schema, geen LLM-call, kost geld) stelde lars zelf voor: "kan jij niet gewoon Google gebruiken?" — een gewone websearch, on-demand door de agent uitgevoerd, zonder API-key of Google Cloud-account. Dit is ook inhoudelijk logischer: B2B-kandidaten zijn een kleiner, lager-frequent zoekvolume dan de duizenden Instagram-accounts die het IG-script doorzoekt. Les: bij "hoe wordt dit gevonden/aangeroepen" niet automatisch naar het zwaarste patroon (script + API) grijpen — eerst checken of een simpelere, al beschikbare tool (hier: WebSearch) volstaat.
+- **Direct getest, niet alleen beschreven:** een echte websearch op "pilates studio sportschool Rotterdam regio" (hoogste prioriteit uit [[Partnership Strategie]] én [[Evaluatiecriteria (B2B Klanten)]]'s locatie-prioriteit) leverde 5 bruikbare, echte kandidaten op, verwerkt in het vaste output-format uit de criteria (naam, type, locatie, website, doel, prioriteit, reden, status). Zonder direct contact is een score "HOOG" zelden te onderbouwen — realistische standaard is MIDDEL tot na eerste contact.
+- **Legacy-bestanden gevonden die vermoedelijk overbodig zijn:** [[Merk & Bedrijf Database]] en [[Retailer Database]] stonden leeg en lijken gedekt door de al bestaande, actief gebruikte combinatie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] + [[Actieve Samenwerkingen (B2B Klanten)]] + [[Pipeline Tracker]]. Niet verwijderd — geflagd voor bevestiging door lars, zelfde voorzichtige aanpak als eerder bij twijfelachtige content.
+
+**Resultaat:** B2B Klanten Agent staat op "in ontwikkeling". Nog niet getest: daadwerkelijke outreach en pipeline-doorstroom (het volgende logische vervolg zodra lars klaar is om een van deze 5 kandidaten te benaderen). Partnerships & Events Agent kan dit patroon direct hergebruiken: Deel 2 van dezelfde docx, zelfde websearch-methode, zelfde output-format.
+
+---
+
 ## Gerelateerde bestanden
 
 - [[Stappenplan — Verdere Bouw]]

@@ -23,7 +23,7 @@
 | CWILL(SendWILL) Popup Email | voor pop up op de webshop en e-mail marketing                       | ja                                                    |
 | SEOWILL (SEOAnt) - AI SEO   | geeft suggesties voor verbeteringen van seo                         | (af en toe mag vervangen worden door een beter agent) |
 | Canva Connect               | het koppelen van Canva desgins naar de website.                     | ja                                                    |
-| FD Product Groups           | het switchen van wit product naar zwart op product pagina           |                                                       |
+| FD Product Groups           | het switchen van wit product naar zwart op product pagina           | ja                                                    |
 
 ---
 

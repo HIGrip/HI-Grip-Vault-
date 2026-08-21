@@ -30,7 +30,7 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Wanneer inschakelen:** Bij het zoeken naar nieuwe influencers/creators, of het beoordelen van een binnengekomen aanvraag
 - **Levert op:** Beoordeelde kandidaten in de Influencer Database, eventueel met outreach-voorstel
 - **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]], [[Brand Identity Overview]]
-- **Status:** idee
+- **Status:** actief — stond nog op "idee", maar het `ig_find_creators.py`-zoekscript draait al sinds eerder via Task Scheduler (2x/week, automatisch scannen inclusief following-lijst @lars_a.i.h), met fit-check on-demand via Claude Code. Statusveld gecorrigeerd 2026-08-21, geen nieuw werk nodig.
 - **Autonomie:** Zelf doen voor zoeken/scannen/beoordelen (matcht hoe het IG-zoekscript nu al werkt: automatisch scannen, fit-check on-demand); Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - **Harde grenzen:** @finnpicard_ nooit als voetbal-referentie of seed gebruiken; voor browser-automatisering zie [[API & Tool Connections]] (Chrome-kill regel)
 - **Toon:** n.v.t. voor het zoekwerk zelf; bij outreach eerlijk en zonder loze beloftes — [[Brand Voice & Tone of Voice]]

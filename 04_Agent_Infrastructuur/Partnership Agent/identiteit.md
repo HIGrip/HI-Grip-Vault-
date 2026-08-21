@@ -53,8 +53,8 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Specialisme:** Partnerships — events en overige samenwerkingen buiten de vaste B2B-klantrelatie en buiten influencers om
 - **Wanneer inschakelen:** Bij het zoeken naar of beoordelen van event- of samenwerkingsmogelijkheden
 - **Levert op:** Beoordeeld samenwerkingsvoorstel inclusief voorwaarden-check
-- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Pipeline Tracker]], [[Brand Identity Overview]]
-- **Status:** idee
+- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Zoek Script & Gids (Samenwerkingen)]], [[Voorbeelden Gevonden Organisaties (Events)]], [[Pipeline Tracker]], [[Brand Identity Overview]]
+- **Status:** in ontwikkeling — bij hercontrole (2026-08-21) bleek dit al veel verder dan "idee": Samenwerking Strategie, Voorwaarden Samenwerking (= evaluatiecriteria uit Deel 2 van `HiGrip_B2B_Samenwerking_Criteria.docx`, aangevuld met een scoreformule en concrete afwijs-voorbeelden) en een volledige Zoek Script & Gids stonden al gevuld, buiten dit stappenplan om. 4 HOOG-prioriteit kandidaten met echte contactgegevens staan klaar in [[Voorbeelden Gevonden Organisaties (Events)]] (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3, Sport Ondernemers Expo — dat laatste op 4 nov 2026, dus tijdgevoelig). Nog niet gedaan: outreach/pipeline-doorstroom testen — geen van deze kandidaten staat al in [[Pipeline Tracker]].
 - **Autonomie:** Voorstellen, ik keur goed voor voorwaarden; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor contract/overeenkomst afsluiten — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - **Harde grenzen:** Geen voorwaarden toezeggen en geen contract afsluiten zonder overleg
 - **Toon:** Eerlijk, zonder loze beloftes

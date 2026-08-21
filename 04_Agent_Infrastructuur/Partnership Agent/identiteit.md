@@ -41,8 +41,8 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Specialisme:** B2B klanten — sportclubs, retailers en sportscholen als afnemer werven en onderhouden
 - **Wanneer inschakelen:** Bij het zoeken naar of benaderen van sportclubs, retailers of sportscholen als klant
 - **Levert op:** Gekwalificeerde partner-leads in de Pipeline Tracker, outreach-bericht op basis van het Ideale Partner Profiel
-- **Kernbronnen:** [[Ideale Partner Profiel]], [[Merk & Bedrijf Database]], [[Outreach Templates]], [[Retailer Database]], [[Pipeline Tracker]]
-- **Status:** idee
+- **Kernbronnen:** [[Ideale Partner Profiel]], [[Evaluatiecriteria (B2B Klanten)]], [[Outreach Templates]], [[Voorbeelden Gevonden Organisaties (B2B Klanten)]], [[Actieve Samenwerkingen (B2B Klanten)]], [[Pipeline Tracker]] — *[[Merk & Bedrijf Database]] en [[Retailer Database]] staan nog leeg en lijken inmiddels overbodig (hun functie wordt al gedekt door Voorbeelden Gevonden Organisaties + Actieve Samenwerkingen + Pipeline Tracker); nog te bevestigen met lars of ze verwijderd kunnen worden*
+- **Status:** idee — vakinhoud (Evaluatiecriteria) staat er sinds 2026-08-21, zoekautomatisering (vergelijkbaar met het IG-zoekscript) nog niet gebouwd
 - **Autonomie:** Voorstellen, ik keur goed voor voorwaarden/kortingen/vergoedingen; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor definitief toezeggen — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - **Harde grenzen:** Geen voorwaarden, kortingen of prijzen definitief toezeggen zonder overleg
 - **Toon:** Eerlijk, zonder loze beloftes, professioneel — [[Brand Voice & Tone of Voice]]

@@ -10,7 +10,7 @@
 - **Structuur staat** — Denzel (Orchestrator) + 3 hoofdagents (Content, Partnership, Website), elk met `identiteit.md`/`soul.md` (plus één gedeelde `user.md` in Beheer); 10 sub-agents zijn uitgewerkt als catalogus-item per categorie, allemaal status "idee".
 - **Website Agent liep voorop** — als eerste een compleet grenzen-formulier doorlopen (14 juli 2026): [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] staan er. Ook al 4 vakinhoudelijke notities gevuld: [[SEO Strategie & Keywords]], [[Website Structuur & Sitemap]], [[Homepage Copy & Structuur]], [[Conversie Optimalisatie Checklist]].
 - **Partnership Agent, Content Agent en Denzel volgden** (19 augustus 2026): alle 4 grenzen-formulieren nu ingevuld — [[Agent Takenverdeling & Grenzen — Partnership Agent]], [[Agent Takenverdeling & Grenzen — Content Agent]] en de tabel direct in `soul Denzel.md`. **Fase 1 is hiermee volledig afgerond.**
-- **Content Agent en Partnership Agent** — de vakinhoudelijke notities eronder (Content Pillars, Content Strategie, Ideale Partner Profiel, etc.) staan grotendeels nog leeg — behalve Visuele Productie, die is wél volledig gevuld.
+- **Fase 2 (vakinhoud) is vrijwel afgerond** (2026-08-20) — Content Agent en Partnership Agent bleken bij hercontrole al grotendeels gevuld (buiten dit stappenplan om), CTA Bibliotheek en Shopify App Stack zijn aangevuld. Alleen Analytics & KPI Dashboard staat nog open, wacht op bevestiging van lars over GA4-toegang.
 - **5 van de 10 sub-agents zijn nu "in ontwikkeling"** (2026-08-09): SEO Agent, Design Agent, Website Copy Agent, Conversie & Analyse Agent (Website Agent) en Video & Visuele Productie Agent (Content Agent) hebben elk een echte, `/`-activeerbare Claude Code Skill gekregen in de gedeelde `HI-Grip-claude-setup`-repo — zie per sub-agent de eigen `_Werkplek.md` en de nieuwe sectie "Skills-laag" verderop in dit document. Caption & Copy Agent en Content Strategie & Planning Agent bleven bewust "idee": hun functie wordt al grotendeels gedekt door de generieke `/social-content`- en `/content-strategy`-skills. De overige 3 (Influencer & Creator, B2B Klanten, Partnerships & Events, allemaal Partnership Agent) blijven "idee" — dat zijn automatische workflows (zoals het bestaande IG-zoekscript), geen `/`-geactiveerde skills.
 
 **Waarom deze volgorde:** eerst de laag die alles daaronder veilig maakt (autonomie/soul.md), dan de vakinhoud die sub-agents nodig hebben om daadwerkelijk iets te kunnen opleveren, en pas dán één sub-agent als pilot echt bouwen. Dat is exact het pad dat Website Agent al heeft afgelegd — dit stappenplan herhaalt dat voor de rest.
@@ -27,13 +27,13 @@ Zonder deze tabel weet geen enkele sub-agent onder deze hoofdagents wanneer hij 
 
 ## Fase 2 — Vakinhoud vullen per hoofdagent
 
-- [ ] **Content Agent** — [[Content Strategie]], [[Content Pillars]], [[Platform Richtlijnen]], [[Posting Frequentie per Platform]]
-- [ ] **Content Agent** — [[Copy Bank]], [[Caption Gids per Platform]], [[CTA Bibliotheek]], [[Hashtag Bibliotheek]]
-- [ ] **Partnership Agent** — [[Ideale Partner Profiel]], [[Partnership Strategie]], [[Evaluatiecriteria]]
-- [ ] **Website Agent (restant)** — Technisch/[[Shopify App Stack]], Technische Procedures, Update Log
-- [ ] **Website Agent (restant)** — [[Analytics & KPI Dashboard]] — *geblokkeerd tot Shopify-admin/GA4-toegang, 1 augustus 2026*
+- [x] **Content Agent** — [[Content Strategie]], [[Content Pillars]], [[Platform Richtlijnen]], [[Posting Frequentie per Platform]] — bleken bij hercontrole (2026-08-20) al volledig gevuld, buiten dit stappenplan om
+- [x] **Content Agent** — [[Copy Bank]], [[Caption Gids per Platform]], [[Hashtag Bibliotheek]] al gevuld; **[[CTA Bibliotheek]] was nog leeg — nu aangevuld (2026-08-20)** op basis van bestaande Brand Voice/Copy Bank-bouwstenen
+- [x] **Partnership Agent** — [[Ideale Partner Profiel]], [[Partnership Strategie]], [[Evaluatiecriteria]] — bleken bij hercontrole (2026-08-20) al volledig gevuld, buiten dit stappenplan om
+- [x] **Website Agent (restant)** — Technische Procedures en Update Log waren al gevuld; **[[Shopify App Stack]] was nog leeg — nu aangevuld (2026-08-20)** (store/abonnement, thema's, tooling, wat níet werkte). Bevat een open vraag voor lars: welke klant-facing apps (reviews, e-mail, chat, upsell) daadwerkelijk op de live store draaien — dat weet de agent niet en is nergens in de vault gedocumenteerd.
+- [ ] **Website Agent (restant)** — [[Analytics & KPI Dashboard]] — nog steeds leeg. De datum-blocker (1 augustus 2026) is voorbij, maar er staat geen bevestiging dat lars de GA4-stappen (gcloud-login, Property-ID, credentials) echt heeft afgerond — zie [[API & Tool Connections]]. **Niet aannemen dat dit klaar is zonder navraag bij lars.**
 
-Dit is de content die de sub-agents straks daadwerkelijk gebruiken: zonder gevulde bron kan bv. de Content Strategie & Planning Agent geen kalender vullen, en de B2B Klanten Agent geen partner beoordelen.
+**Fase 2 is hiermee vrijwel afgerond** — de 2 laatste losse eindjes (welke apps op de live store draaien, en GA4-toegang) staan als concrete invul-checklist in [[Stappenplan — Shopify Apps & Analytics Toegang]], klaar voor lars om zelf af te vinken.
 
 ## Fase 3 — Eén sub-agent als pilot bouwen
 

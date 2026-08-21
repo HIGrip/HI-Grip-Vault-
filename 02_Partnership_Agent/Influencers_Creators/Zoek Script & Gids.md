@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-08-18 (v4.4 — @jayjay.wav toegevoegd als voetbal-referentie)
+> Bijgewerkt: 2026-08-20 (v4.5 — following-lijst scroll-bug gefixt (vond maar 9 van 74 accounts) + 0-views telt nu als "review" i.p.v. automatische afwijzing)
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -20,6 +20,8 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Sport-fit / concurrentie-check:** géén losse LLM-API-call in het script (dat kost apart geld, los van je Claude-abonnement). In plaats daarvan verzamelt het script bio + laatste captions per kandidaat in de output, zodat de sport/lifestyle-fit en concurrentie-check uit [[Evaluatiecriteria]] achteraf handmatig of door Claude Code beoordeeld worden — gratis onder het abonnement, gewoon even vragen na een run.
 
 **Onbemand draaien:** met de vlag `--unattended` (bv. vanuit een geplande Windows-taak) stopt het script netjes zodra Instagram een 2FA/verificatiescherm toont, in plaats van voor altijd te wachten op een ENTER die nooit komt.
+
+**Bekende fix (2026-08-20):** de following-lijst-scan (bron 2) vond structureel maar een fractie van de echte lijst (bv. 9 van 74 accounts van @lars_a.i.h) — de scroll-code mikte op een `div[style*="overflow"]`-selector die niet meer matcht met Instagram's huidige dialoog-DOM, dus scrollde er in de praktijk niets en werd alleen de eerste, ongescrolde batch gelezen. Nu zoekt het script het echte scrollbare element dynamisch. Daarnaast telde `0 gemeten views` altijd als harde afwijzing ("te weinig views"), terwijl dat net zo goed een foto-only account (zoals partner @jaidenpadel, 0 Reels) of een meetfout kan zijn — dat gaat nu naar status "review" i.p.v. automatisch weggefilterd worden.
 
 **Filters (uit [[Evaluatiecriteria]]):**
 
@@ -655,10 +657,18 @@ def evaluate_profile(page, username):
         result["reason"] = f"volgers onbekend maar views te hoog ({avg_views:,}) — waarschijnlijk te groot"
         return result
 
+    # avg_views == 0 is dubbelzinnig: kan een echt foto-only account zijn (zoals
+    # bestaande partner @jaidenpadel, 0 reels) of een meetfout (JSON/DOM-fallback
+    # vond geen bruikbare cijfers). Dat is geen hard "te weinig", dus -> review i.p.v.
+    # reject. Een gemeten, niet-nul aantal ONDER de grens blijft wel een echte reject.
+    views_reason = None
     if avg_views < MIN_AVG_VIEWS:
-        result["status"] = "reject"
-        result["reason"] = f"te weinig views ({avg_views:,})"
-        return result
+        if avg_views == 0:
+            views_reason = "geen meetbare views (mogelijk foto-only account of meetfout) - handmatig beoordelen"
+        else:
+            result["status"] = "reject"
+            result["reason"] = f"te weinig views ({avg_views:,})"
+            return result
 
     if avg_views > MAX_AVG_VIEWS:
         result["status"] = "reject"
@@ -683,9 +693,13 @@ def evaluate_profile(page, username):
         result["reason"] = "geen sport-content in bio/captions"
         return result
 
+    reasons = [views_reason] if views_reason else []
     if not is_dutch:
+        reasons.append("geen NL-signaal in bio - handmatig checken")
+
+    if reasons:
         result["status"] = "review"
-        result["reason"] = "geen NL-signaal in bio - handmatig checken"
+        result["reason"] = " + ".join(reasons)
 
     return result
 
@@ -835,21 +849,35 @@ def get_following_list(page, username, max_scroll=40):
                     following.append(h)
                     new_count += 1
 
-            # Pas na 2 opeenvolgende scrolls zonder nieuwe namen echt stoppen -
-            # 1 trage/nog-ladende batch mag niet de hele scan afkappen.
+            # Pas na 3 opeenvolgende scrolls zonder nieuwe namen echt stoppen -
+            # een paar trage/nog-ladende batches mogen niet de hele scan afkappen.
             stale_rounds = stale_rounds + 1 if new_count == 0 else 0
-            if stale_rounds >= 2 and i > 3:
+            if stale_rounds >= 3 and i > 4:
                 break
 
             try:
-                page.evaluate("""
+                # Zoek het echte scrollbare element in de dialog i.p.v. te gokken op een
+                # inline style="overflow..." selector - die matcht Instagram's huidige DOM
+                # niet meer, waardoor scrollTop nooit het juiste element raakte en de lijst
+                # na de eerste, ongescrolde batch (~9-12 namen) al "klaar" leek.
+                scrolled = page.evaluate("""
                     () => {
                         const d = document.querySelector('div[role="dialog"]');
-                        if (!d) return;
-                        const s = d.querySelector('div[style*="overflow"]') || d;
-                        s.scrollTop += 600;
+                        if (!d) return false;
+                        let target = null;
+                        for (const el of d.querySelectorAll('*')) {
+                            if (el.scrollHeight > el.clientHeight + 40 && el.clientHeight > 100) {
+                                target = el;
+                                break;
+                            }
+                        }
+                        if (!target) target = d;
+                        target.scrollTop = target.scrollTop + 700;
+                        return true;
                     }
                 """)
+                if not scrolled:
+                    print("    Kon scrollcontainer niet vinden")
             except Exception:
                 pass
             time.sleep(2.2)

@@ -68,6 +68,7 @@ Naast de vault (identiteit.md/soul.md = wie een sub-agent is) bestaat er nu een 
 - [x] Influencer & Creator Agent — statusveld gecorrigeerd naar **actief** (2026-08-21): draaide al via het bestaande IG-zoekscript, stond alleen nog op "idee". Geen nieuw werk nodig.
 - [ ] Website Agent's 4 sub-agents (SEO, Design, Website Copy, Conversie & Analyse) en Content Agent's Video & Visuele Productie Agent staan op "in ontwikkeling" (werkende `/`-skills sinds 2026-08-09) — nog niet "actief". Onduidelijk of dat een aparte bouwstap vereist, of puur een kwestie van daadwerkelijk gebruiken; nog niet gedefinieerd wat "actief" concreet vereist bovenop een werkende skill.
 - [ ] Denzel's routerende rol pas echt testen zodra minstens 2 hoofdagents met actieve sub-agents tegelijk draaien — pas dan is er iets om te routeren/bewaken
+- [x] **Denzel's mandaat uitgebreid (2026-08-21, op verzoek van lars):** verantwoordelijk voor het najagen van de doelen zelf — bepaalt het tempo van terugkerende "Zelf doen"-zoekacties (nooit hoger dan het bestaande autonomie-niveau), en levert wekelijks (maandag) een overzicht van voortgang, eigen acties en relevante AI-ontwikkelingen. Uitgevoerd als een echte, geautomatiseerde cloud-routine — zie [[Denzel Weekoverzicht — Routine]] voor de technische opzet en de routine-link. **Let op:** de routine kan pas de wijzigingen van vandaag zien zodra de openstaande lokale vault-commit naar GitHub gepusht is — lars moet dit zelf doen (Bash-push werd geblokkeerd door de auto-mode classifier).
 
 ---
 

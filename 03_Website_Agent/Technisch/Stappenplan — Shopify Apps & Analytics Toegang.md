@@ -12,15 +12,16 @@
 - [ ] Loop de lijst langs en vul de tabel hieronder in, per app: naam, waarvoor, nog in gebruik
 - [ ] Ingevulde tabel doorgeven (plak 'm in de chat, of vul 'm hier direct in) — dan verwerk ik 'm in [[Shopify App Stack]]
 
-| App                | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik? |
-| ------------------ | ------------------------------------------------------------------- | --------------- |
-| Translate & Adapt  | translate van de website naar engels                                | ja              |
-| Bundler            | voor het creeren van bundels op productpagina                       | nee             |
-| Forms              | Voor het maken van een vragen lijst/ enquete                        | nee             |
-| Trustpilot Reviews | koppeling met trustpilot reviews                                    | nee             |
-|                    |                                                                     |                 |
-|                    |                                                                     |                 |
-|                    |                                                                     |                 |
+| App                         | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik?                         |
+| --------------------------- | ------------------------------------------------------------------- | --------------------------------------- |
+| Translate & Adapt           | translate van de website naar engels                                | ja                                      |
+| Bundler                     | voor het creeren van bundels op productpagina                       | nee                                     |
+| Forms                       | Voor het maken van een vragen lijst/ enquete                        | nee                                     |
+| Trustpilot Reviews          | koppeling met trustpilot reviews                                    | nee                                     |
+| Section Store               | voor mooie kant en klare sectie                                     | ja                                      |
+| MyParcel NL                 | verzending door koppelen naar software                              | ben ik bezig met koppelen (doe ik zelf) |
+| CWILL(SendWILL) Popup Email | voor pop up op de webshop en e-mail marketing                       | ja                                      |
+|                             |                                                                     |                                         |
 
 ---
 

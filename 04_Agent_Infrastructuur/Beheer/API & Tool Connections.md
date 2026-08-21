@@ -68,7 +68,14 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registreert de `analytics-mcp`-server (pipx-package, zelfde `mcp.json`-patroon als `shopify-dev`) en de koppeling is actief.
 
-**Doel:** dit voedt de diagnostische KPI-laag uit [[Website KPI-filosofie]] (funnel-drop-off, cart-abandonment, etc.) — los van maar aanvullend op de Shopify-thema-toegang in [[Technische Procedures]]. Zie ook: `shopify store execute`/`shopify store auth` (aparte browser-login, scopes bv. `read_orders,read_customers,read_products`) kan losse Shopify-orderdata geven, maar vervangt GA4 niet voor gedrags-/funnelanalyse.
+**Doel:** dit voedt de diagnostische KPI-laag uit [[Website KPI-filosofie]] (funnel-drop-off, cart-abandonment, etc.) — los van maar aanvullend op de Shopify-thema-toegang in [[Technische Procedures]].
+
+**Correctie 2026-08-21 — het alternatief "gewoon Shopify's eigen orderdata/reports gebruiken" bleek geen shortcut:**
+- De eerder genoemde `shopify store execute`/`shopify store auth` bestaat niet (meer) — het juiste commando is **`shopify app execute`**, en dat vereist een geregistreerde custom app met scopes, geïnstalleerd op de store (dezelfde soort custom-app-setup als de afgevallen OAuth-poging hierboven, niet de simpele native theme-login).
+- Shopify's eigen Reports/ShopifyQL-API (`shopifyqlQuery`) — die de Analytics-rapporten (sessies, funnel, top-pagina's) programmatisch zou kunnen ontsluiten — vereist naast de `read_reports`-scope ook **"Level 2 access to protected customer data"**: hetzelfde goedkeuringsproces bij Shopify als voor `read_orders`/`read_customers`. Geen garantie op snelheid of uitkomst.
+- lars stelde voor om Shopify's Analytics-dashboard (in de Admin, zelf aan te klikken: sessies per pagina, funnel) gewoon handmatig te exporteren (CSV) i.p.v. een API-koppeling te bouwen — dat werkt, maar is niet automatisch.
+- Onderzocht: betaalde Shopify-reporting-apps (bv. Better Reports, €5–30/mnd) kunnen wél automatisch een CSV mailen op schema — reële, terugkerende kosten, en vereist nog een stap om die e-mail bij de agent te krijgen.
+- **Beslissing 2026-08-21 (lars):** toch GA4 opzetten (zie hieronder) — vermoedelijk de goedkoopste échte automatische route, want de Google Cloud-"betaalstap" is naar verwachting een kaart-op-bestand-vereiste zonder echte kosten bij dit gebruiksniveau, niet een abonnement.
 
 ## Nog aan te vullen
 

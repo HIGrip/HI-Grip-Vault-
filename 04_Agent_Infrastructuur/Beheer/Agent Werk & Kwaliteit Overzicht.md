@@ -42,12 +42,14 @@
 | Influencer & Creator Agent | IG-zoekscript, lopende database-uitbreiding (o.a. @jayjay.wav als voetbal-referentie) | 2026-08-18 | ✅ OK | Draait actief via Task Scheduler, 2x/week. Zie [[Influencer Database]]. |
 | B2B Klanten Agent | Websearch "pilates studio sportschool Rotterdam" — 5 nieuwe kandidaten toegevoegd | 2026-08-21 | ✅ OK | Zie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]. Scores allemaal MIDDEL (nog geen direct contact) — dat is correct volgens de criteria, geen afwijking. |
 | Partnerships & Events Agent | 4 HOOG-kandidaten met contactgegevens (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3, Sport Ondernemers Expo) | onbekend (al aanwezig, datum niet vastgelegd) | ⏳ Wacht op lars | Kandidaten zijn goedgekeurd en klaar, maar niemand is nog benaderd. Sport Ondernemers Expo is 4 nov 2026 — tijdgevoelig, zie [[Voorbeelden Gevonden Organisaties (Events)]]. |
+| Partnerships & Events Agent | Websearch (voetbaltoernooien, padel, hardlopen, CrossFit/obstacle run) — 2 nieuwe MIDDEL-kandidaten toegevoegd: Urban Trail Rotterdam (Golazo), Rotterdam Charity Run (Erasmus MC Foundation) | 2026-08-24 | ⏳ Wacht op lars | Uitgevoerd door Denzel (wekelijkse routine), lijst stond sinds 2026-07-17 stil. Getoetst aan [[Voorwaarden Samenwerking]] — geen dubbelingen met [[Pipeline Tracker]]. Zie [[Voorbeelden Gevonden Organisaties (Events)]] en [[Weekoverzicht/Week 2026-08-24]]. Wacht op beoordeling/budget-check door lars. |
 
 ## Denzel (Orchestrator)
 
 | Actie | Datum | Status | Toelichting |
 |---|---|---|---|
 | Wekelijkse weekoverzicht-routine aangemaakt | 2026-08-21 | ⏳ Wacht op lars | Eerste run 24-08-2026. Routine kan pas de laatste vault-stand zien zodra lars de openstaande commit naar GitHub pusht — zie [[Denzel Weekoverzicht — Routine]]. |
+| Eerste weekoverzicht uitgevoerd | 2026-08-24 | ✅ OK | Zie [[Weekoverzicht/Week 2026-08-24]]. B2B-lijst was recent genoeg (geen zoekactie nodig), Events-lijst 5+ weken stil — zoekactie uitgevoerd (zie rij hierboven bij Partnerships & Events Agent). |
 
 ---
 

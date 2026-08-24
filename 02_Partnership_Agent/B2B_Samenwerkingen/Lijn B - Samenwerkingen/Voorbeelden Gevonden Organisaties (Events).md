@@ -18,6 +18,8 @@
 | Naam | Type organisatie | Locatie | Contact | Reden |
 |---|---|---|---|---|
 | Sportloaded.nl | Sportmedia/platform | Nationaal | [sportloaded.nl](https://sportloaded.nl/) | Content/blog-feature voor SEO-backlink — indirecte waarde, minder opbrengst dan sponsoring-events |
+| Urban Trail Rotterdam (Golazo) | Hardloopevenement (stadsloop 5-12km door Rotterdam-Zuid), jaarlijks, 27 sep 2026 | Rotterdam | ✉️ sponsoring@golazo.com · [rotterdamurbantrail.nl](https://www.rotterdamurbantrail.nl/sponsormogelijkheden/) | Terugkerend Rotterdam-evenement met eigen sponsorpagina en -contact; performance/sportief karakter. Schaal (deelnemersaantal) nog niet bevestigd — eerst budget-check voordat HOOG, zie [[Voorwaarden Samenwerking]] bereik/schaal-tier |
+| Rotterdam Charity Run (Erasmus MC Foundation) | Hardloop-/wandelevenement incl. Business Run-categorie, jaarlijks, 5 jun 2026 | Rotterdam (Kralingse Bos) | 📞 010-7034802 · ✉️ foundation@erasmusmc.nl · [rotterdamcharityrun.nl](https://www.rotterdamcharityrun.nl/) | Doelgroep-overlap (bedrijven/sportievelingen) en jaarlijks terugkerend, maar charity- i.p.v. puur performance-karakter — zwakkere fit dan de HOOG-kandidaten, vandaar MIDDEL i.p.v. HOOG |
 
 ---
 

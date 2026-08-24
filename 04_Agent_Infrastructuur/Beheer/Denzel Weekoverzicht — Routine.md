@@ -12,10 +12,14 @@
 2. Leest de voortgang tegen de doelen: [[Stappenplan — Verdere Bouw]], [[Feedback & Iteratie Log]], en de status-velden in elk hoofdagent-`identiteit.md`.
 3. Beslist zelf (binnen de "Zelf doen"-grens van de betreffende hoofdagent, nooit hoger) of een terugkerende zoekactie deze week aan de beurt is — op dit moment concreet: B2B Klanten Agent en Partnerships & Events Agent (websearch-methode, zie hun eigen vault-bestanden). Zo ja: voert die zelf uit en verwerkt de resultaten in de juiste vault-bestanden (Voorbeelden Gevonden Organisaties, in het vaste output-format).
 4. Zoekt naar recente AI-ontwikkelingen die relevant zijn voor HÏ Grip's manier van werken (contentcreatie, marketing-automatisering, e-commerce, beeld/video-generatie, agent-tooling) — geen generiek AI-nieuws, alleen wat concreet toepasbaar is.
-5. Schrijft een nieuwe, gedateerde notitie in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week YYYY-MM-DD.md` met: voortgang per hoofdagent, wat Denzel deze week zelf heeft opgepakt, openstaande beslissingen voor lars, en het AI-nieuws-overzicht.
-6. Commit + push naar de vault-repo.
+5. Bepaalt een concrete vooruitblik voor komende week (3-5 actiegerichte punten), gebaseerd op het Stappenplan, logische vervolgstappen op eigen acties deze week, en naderende deadlines.
+6. Schrijft een nieuwe, gedateerde notitie in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week YYYY-MM-DD.md` met: voortgang per hoofdagent, wat Denzel deze week zelf heeft opgepakt, openstaande beslissingen voor lars, **vooruitblik komende week**, en het AI-nieuws-overzicht.
+7. Werkt [[Agent Werk & Kwaliteit Overzicht]] bij.
+8. Commit + push naar de vault-repo.
 
 **Nooit door de routine:** outreach versturen, content publiceren, voorwaarden/prijzen bespreken of toezeggen, of iets anders dat in een hoofdagent's soul.md boven "Zelf doen" staat. De routine rapporteert en doet uitsluitend het onderzoekswerk dat al "Zelf doen" is — de beslissing/actie erop blijft bij lars.
+
+**Wijziging 24 augustus 2026 (op verzoek van lars):** het eerste weekoverzicht toonde alleen wat er gedaan was, niet wat er nog moet gebeuren. De sectie "Vooruitblik — komende week" is daarom een vast, verplicht onderdeel geworden vanaf de volgende run (31 augustus 2026). De routine leest voortaan ook het weekoverzicht van de vorige week, zodat de vooruitblik van toen kan worden meegenomen bij het bepalen van wat er deze week is gebeurd.
 
 ---
 

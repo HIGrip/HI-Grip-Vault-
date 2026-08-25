@@ -4,6 +4,26 @@
 
 ---
 
+## 2026-08-25 — Kritische kwaliteitsreview (op verzoek van lars: "eerlijke mening, wees kritisch")
+
+**Wat er gebeurde:** lars vroeg een eerlijk, kritisch oordeel: hebben de agents alles wat nodig is om topkwaliteit te leveren, of is het halfwerk? In plaats van het te beweren, zijn een aantal juli-notities (SEO Strategie & Keywords, Homepage Copy & Structuur, Conversie Optimalisatie Checklist) daadwerkelijk herlezen om het oordeel ergens op te baseren.
+
+**Oordeel:**
+- **Het denkwerk is op plekken echt goed** — de juli-audit (Cialdini/Kahneman-analyse op de echte homepage-tekst, concrete code-voorstellen) en de B2B/Events-criteria zijn scherp en specifiek, geen generieke adviesteksten.
+- **Uitvoering loopt structureel vast.** Van de 8 actiepunten uit de juli-audit (6 weken oud) zijn er 2 gecodeerd en 0 live. De rest wacht op input van lars die nooit kwam (bv. welk klantenaantal-cijfer klopt: 2.000+ of 1500+?), of is simpelweg nooit opgepakt (og:image genereren, performance-check).
+- **Automatische zoekacties waren oppervlakkig.** De eigen B2B-zoekactie (21-08) leverde alleen naam+categorie+locatie op — geen contactpersoon, geen concurrentiecheck. Vergeleken met de met de hand samengestelde Events-kandidaten (die wél telefoon/e-mail en scherpe onderbouwing hadden) was dit duidelijk een lagere kwaliteitslaag, ook al stonden ze in dezelfde tabel-vorm.
+- **Zelfs de meest volwassen sub-agent (Influencer & Creator, draait al het langst) heeft losse eindjes:** de Influencer Database staat vol placeholder-rijen ("🔍 Zoeken → vul in") en ongeverifieerde volgers/ER-cijfers.
+- **Fundamenteel gat:** geen enkele agent heeft ooit feedback uit de echte wereld gezien (verkocht een kandidaat iets, presteerde een post goed, steeg een SEO-positie) — GA4, Buffer en volledige Shopify-data ontbreken alle drie. Zonder dat werkt alles op aannames/best-practices, nooit op bewezen resultaat voor HÏ Grip specifiek.
+
+**Acties die dezelfde sessie zijn ondernomen (lars: "fundamenteel gat moet opgelost worden, zoekacties oppervlakkig oplossen, losse eindjes oplossen"):**
+1. **B2B-kandidatenlijst verdiept** — alle 6 kandidaten aangevuld met echte contactgegevens (WebFetch per site + gerichte websearch) en een concurrentiecheck (bv. Ultrapadel verkoopt nog geen grip socks). Eerste echte test van de kwaliteitscontrole-loop: gevonden probleem → zelf gecorrigeerd, zonder escalatie naar lars nodig.
+2. **IG-zoekscript handmatig gedraaid** (met akkoord van lars, buiten het normale 2x/week-schema) om placeholder-rijen in de Influencer Database met echte cijfers te vullen.
+3. **Fundamenteel gat: niet zelf op te lossen.** Alle drie de ontbrekende databronnen (GA4, Buffer, volledige Shopify-data) vereisen een actie die alleen lars kan zetten — interactieve browserlogin (`gcloud init`), connector-autorisatie via claude.ai, of een betaalde abonnementsupgrade. Tooling voor GA4 staat al klaar (Google Cloud SDK geïnstalleerd, geverifieerd 25-08); de sessie kan niet verder zonder dat lars die ene stap zet.
+
+**Les:** een sub-agent kan pas écht topkwaliteit leveren als (a) het denkwerk klopt (vaak al zo), (b) er daadwerkelijk wordt doorgepakt tot uitvoering (vaak niet zo — dit is de grootste makkelijk-te-onderschatten faalfactor), en (c) er een feedback-loop met echte resultaten is (nog nergens aanwezig). Bij een volgende kwaliteitsclaim ("dit is klaar") altijd checken welke van deze drie lagen het betreft, niet aannemen dat goed denkwerk gelijkstaat aan goed resultaat.
+
+---
+
 ## 2026-08-08/09 — Eerste 5 sub-agent-skills (Design, SEO, Copy, CRO, Video)
 
 **Wat er gebeurde:** Design Agent werd als pilot gekozen (Website Agent had als enige al een complete autonomie-tabel en goedkeuringsworkflow — kortste afstand tot bruikbaar). Na de eerste skill bleek het patroon zo direct herbruikbaar dat dezelfde dag nog 4 andere sub-agents zijn gedaan.

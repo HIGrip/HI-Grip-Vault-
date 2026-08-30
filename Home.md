@@ -69,7 +69,4 @@ Bijgewerkt tijdens een opschoonronde. Zie ook de losse acties hieronder.
 
 **Nog te doen — input van lars nodig**
 - **Lege notities invullen of verwijderen:** [[Concurrentieanalyse]], [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
-- **Shopify theme-ID's verifiëren** — de "harde regel" in [[Technische Procedures]] dateert van 2026-08-02; draai `shopify theme list` en werk bij
-- **Bestandsnamen gelijktrekken** — meerdere `identiteit.md` / `soul.md` / `_Werkplek.md` maken bare wikilinks dubbelzinnig (aparte ronde)
-- **[[Brand Identity Overview]]** leest als eerste versie (herhaling in merkverhaal/missie) — redactieslag door lars
-- **Verouderingsdatums** — `00_Brand_Core` en het meeste van `01_` niet aangeraakt sinds mei–juni; overweeg een `laatst geverifieerd`-regel per referentienotitie
+- **Shopify `theme list` draaien** — werkthema-ID is bijgewerkt naar `199980286279` in [[Technische Procedures]]; nog te bevestigen: de themanaam en of het live-ID nog `198094127431` is

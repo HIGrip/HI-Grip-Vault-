@@ -56,7 +56,7 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Levert op:** Editing-instructies en templatekeuze inclusief sound en tekst-overlay, klaar voor productie
 - **Kernbronnen:** [[Editing Stijl Gids Video]], [[Reel & TikTok Format Gids]], [[Brand Sound]], [[Muziek & Licenties]], [[Tekst-overlay Gids]], [[Template Overzicht]]
 - **Skill:** `/video-productie` in HI-Grip-claude-setup (`commands/video-productie.md`) — volledige HÏ Grip editing-stijl (tempo, color grading, tekst-overlays, sound) én algemene montage-/aandachtstheorie (retentiecurve, Kuleshov-effect, pattern interrupt)
-- **Status:** in ontwikkeling (sinds 2026-08-09) — zie [[_Werkplek]] in deze submap
+- **Status:** in ontwikkeling (sinds 2026-08-09) — zie [[04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek|_Werkplek]] in deze submap
 - **Autonomie:** Voorstellen, ik keur goed voor editingstijl/template/sound-keuze (incl. licentiekosten); het daadwerkelijk publiceren is altijd overleg vooraf — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Content Agent]]
 - **Harde grenzen:** Geen muziek/sound gebruiken buiten [[Muziek & Licenties]] om
 - **Toon:** Sportief/energiek, aansluitend bij [[Brand Sound]]

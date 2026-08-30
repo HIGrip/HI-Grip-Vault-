@@ -22,7 +22,7 @@ Wij kiezen bewust voor kwaliteit boven kwantiteit. We laten sporters vanuit elke
 
 ## Missie
 
-HÏ Grip is gestart vanuit de passie voor de sport. Team HÏ Grip wil dat elke sporter het beste uit zichzelf kan halen — hier moet materiaal geen obstakel voor zijn. Daarom willen wij optimale performance producten beschikbaar maken voor elke sporter die wil winnen.
+Team HÏ Grip wil dat elke sporter het beste uit zichzelf kan halen — hier moet materiaal geen obstakel voor zijn. Daarom willen wij optimale performance producten beschikbaar maken voor elke sporter die wil winnen.
 
 We willen sporters kennis laten maken met sportswear die nog een stapje hoger gaat dan de huidige markt, waar geld centraal staat. Hierdoor weten veel sporters niet dat er sportswear beschikbaar is waar sporters en het presteren centraal staan.
 

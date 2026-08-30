@@ -1,6 +1,6 @@
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-08-20 (v4.5 — following-lijst scroll-bug gefixt (vond maar 9 van 74 accounts) + 0-views telt nu als "review" i.p.v. automatische afwijzing)
+> Bijgewerkt: 2026-08-25 (v4.6 — bio-extractie in DOM-fallback gefixt (was 0/166) + parse_count las duizendtal-getallen fout ("1.594" → 1))
 > Zie ook: [[Evaluatiecriteria]] · [[Influencer Database]] · [[Outreach Templates]] · [[Pipeline Tracker]]
 
 ---
@@ -11,7 +11,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Vier bronnen per run:**
 
 1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.
-2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie [[project_ig_following]]). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
+2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie de IG-following-strategie in Claude Code memory). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
 3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.
 4. **Following-lijsten van NL creator-accounts** — wie NL creators zoals @iamyasinflits volgen zijn vaak kleine creators in dezelfde niche die via hashtags moeilijk te vinden zijn. Ingesteld via `CREATOR_FOLLOW_LISTS`.
 
@@ -22,6 +22,8 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Onbemand draaien:** met de vlag `--unattended` (bv. vanuit een geplande Windows-taak) stopt het script netjes zodra Instagram een 2FA/verificatiescherm toont, in plaats van voor altijd te wachten op een ENTER die nooit komt.
 
 **Bekende fix (2026-08-20):** de following-lijst-scan (bron 2) vond structureel maar een fractie van de echte lijst (bv. 9 van 74 accounts van @lars_a.i.h) — de scroll-code mikte op een `div[style*="overflow"]`-selector die niet meer matcht met Instagram's huidige dialoog-DOM, dus scrollde er in de praktijk niets en werd alleen de eerste, ongescrolde batch gelezen. Nu zoekt het script het echte scrollbare element dynamisch. Daarnaast telde `0 gemeten views` altijd als harde afwijzing ("te weinig views"), terwijl dat net zo goed een foto-only account (zoals partner @jaidenpadel, 0 Reels) of een meetfout kan zijn — dat gaat nu naar status "review" i.p.v. automatisch weggefilterd worden.
+
+**Bekende fix (2026-08-25):** na de vorige fix bleek de "review"-lijst nog vol rotzooi te staan (nagelstudio's, wildlife-fotografie, grote merkaccounts) — lars merkte dit zelf op na een volle run. Oorzaak: de bio-selector in `fetch_profile_dom_fallback` (`section main header section span`) gaf bij een volle run 0 van de 166 profielen een bio terug, waardoor de NL- en sport-content-filters (die alleen draaien als er tekst is) voor praktisch elk fallback-profiel werden overgeslagen. Geverifieerd tegen live profielen dat de bio wél gewoon in `header.innerText` staat; die wordt nu geparsed. Los daarvan bleek `parse_count()` duizendtal-genoteerde hele getallen fout te lezen — "1.594" (NL) of "1,594" (US) werden allebei afgekapt tot 1, "10.900" tot 10 - dat trof vrijwel elk DOM-fallback-gescraped volgers-/views-getal. Beide gefixt en losstaand tegen live accounts geverifieerd vóór het syncen.
 
 **Filters (uit [[Evaluatiecriteria]]):**
 
@@ -109,9 +111,9 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 Referentie-accounts die het script scant (`REFERENCE_ACCOUNTS` in de code):
 
-- Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11 · @jayjay.wav (nieuw 2026-08-18 — beste "size/style"-match tot nu toe binnen voetbal, ~3.000 volgers naar schatting Lars, zie [[Influencer Database]] en [[project_ig_search_calibration]])
+- Voetbal: @akkamist · @iamyasinflits · @boersma_goalkeeping · @boazsmits11
 - Basketbal: @tweeboomcourt · @3x3nl
-- Partners (bestaande samenwerkingen, ijkpunt voor gewenste grootte/stijl): @perrrypanna (Perry Hoogerheijde, 4.207 volgers) · @jaidenpadel (Jaiden Tolenaar, 815 volgers)
+- Partners (bestaande samenwerkingen, ijkpunt voor gewenste grootte/stijl): @perrrypanna (Perry Hoogerheijde, 4.207 volgers) · @jaidenpadel (Jaiden Tolenaar, 815 volgers) · @jayjay.wav (3.077 volgers, geverifieerd 2026-08-25 — begon oorspronkelijk als DJ/artiest maar maakt sinds kort ook voetbalcontent; actieve samenwerking, zie [[Influencer Database]] en de zoekcalibratie-historie in Claude Code memory)
 
 NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
@@ -129,7 +131,7 @@ NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
 ## Bijlage: volledige broncode (back-up)
 
-> Bron van waarheid is [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van het script moet deze kopie mee-geüpdatet worden (zie [[feedback_ig_script_sync]]).
+> Bron van waarheid is [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van het script moet deze kopie mee-geüpdatet worden (memory-regel `feedback_ig_script_sync` in Claude Code).
 
 ```python
 """
@@ -219,10 +221,10 @@ POSTS_PER_TAG = 20
 # Referentie-accounts per sport: wie reageert op hun reels is vaak zelf creator.
 # LET OP: finnpicard_ hoort hier NIET in (bevestigd geen voetbal-account).
 REFERENCE_ACCOUNTS = {
-    "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11", "jayjay.wav"],
+    "Voetbal":    ["akkamist", "iamyasinflits", "boersma_goalkeeping", "boazsmits11"],
     "Basketbal":  ["tweeboomcourt", "3x3nl"],
     # Bestaande HI Grip-samenwerkingen - qua grootte/stijl exact het gewenste profiel.
-    "Partners":   ["perrrypanna", "jaidenpadel"],
+    "Partners":   ["perrrypanna", "jaidenpadel", "jayjay.wav"],
 }
 REELS_PER_REF_ACCOUNT = 5
 
@@ -394,18 +396,35 @@ def login(context, page):
 # ── helpers ──────────────────────────────────────────────────────────────────
 
 def parse_count(text):
+    """Parseert een volgers/views-getal, incl. duizendtal-notatie.
+
+    Instagram toont hele getallen als "1.594" (NL, punt als duizendtal-
+    scheiding) of "1,594" (EN/US, komma als duizendtal-scheiding) - beide
+    zonder decimalen. K/M-afkortingen ("4.9K") gebruiken altijd een punt als
+    decimaalteken. De oude implementatie verving elke "," blind door "." en
+    parste het resultaat als decimaal getal, waardoor "1.594" en "10.900"
+    werden afgekapt tot 1 en 10 (99,9% dataverlies) - precies het soort getal
+    dat de meeste DOM-fallback-profielen opleverden.
+    """
     if not text:
         return 0
-    text = str(text).strip().replace(",", ".").replace("\xa0", "").replace(" ", "")
-    m = re.search(r"([\d]+(?:[.,][\d]+)?)\s*([KkMm]?)", text)
+    text = str(text).strip().replace("\xa0", "").replace(" ", "")
+    m = re.search(r"([\d.,]+)\s*([KkMm]?)", text)
     if not m:
         return 0
-    num_str = m.group(1).replace(",", ".")
+    num_str, suf = m.group(1), m.group(2).upper()
+
+    if re.fullmatch(r"\d{1,3}([.,]\d{3})+", num_str):
+        # Duizendtal-gegroepeerd heel getal (elke groep exact 3 cijfers) -
+        # scheidingstekens zijn geen decimaalteken, gewoon weghalen.
+        num_str = re.sub(r"[.,]", "", num_str)
+    else:
+        num_str = num_str.replace(",", ".")
+
     try:
         num = float(num_str)
     except Exception:
         return 0
-    suf = m.group(2).upper()
     if suf == "K":
         num *= 1_000
     elif suf == "M":
@@ -490,11 +509,39 @@ def fetch_profile_dom_fallback(page, username):
         if m_fol:
             followers = parse_count(m_fol.group(1))
 
+        # De oude "section main header section span"-selector bleek bij een volle
+        # run vrijwel altijd leeg (0 bio's op 166 review-items) - waardoor de NL-
+        # en sport-content-check verderop niets hadden om op te filteren en
+        # duidelijke rotzooi (nagelstudio's, wildlife-fotografie, grote merk-
+        # accounts) gewoon meeliep als "review". Geverifieerd (2026-08-25) dat
+        # de bio wél gewoon in header.innerText zit, als platte tekstregel(s) na
+        # de "X volgend/following"-regel, tot een bekende afsluiter ("meer",
+        # "Volgen(d)", "Gevolgd door...", "Chatbericht sturen"). og:description
+        # bleek voor ingelogde NL-sessies GEEN bio te bevatten (alleen "X
+        # volgers, Y volgend, Z berichten - ..."), dus niet bruikbaar hiervoor.
         bio = ""
         try:
-            bio_el = page.query_selector("section main header section span")
-            if bio_el:
-                bio = bio_el.inner_text().strip()[:150]
+            header_text = page.evaluate(
+                "() => { const h = document.querySelector('header'); return h ? h.innerText : ''; }"
+            )
+            lines = [l.strip() for l in (header_text or "").split("\n") if l.strip()]
+            stop_re = re.compile(
+                r"^(meer|more|volgen|volgend|volg|gevolgd door.*|chatbericht sturen|"
+                r"message|follow|bekijk professioneel dashboard)$",
+                re.I,
+            )
+            start = None
+            for i, l in enumerate(lines):
+                if re.search(r"\bvolgend\b|\bfollowing\b", l, re.I):
+                    start = i + 1
+                    break
+            if start is not None:
+                bio_lines = []
+                for l in lines[start:start + 3]:
+                    if stop_re.match(l) or l.lower() == username.lower():
+                        break
+                    bio_lines.append(l)
+                bio = " ".join(bio_lines).strip()[:150]
         except Exception:
             pass
 

@@ -14,6 +14,7 @@
 | 🔎 Gevonden | Gevonden, voldoet aan de basics |
 | 🔍 Verifieer | Gevonden, nog alles te checken |
 | 🔍 Zoeken | Profiel nog te vinden |
+| ⚠️ Let op | Verified, maar content-fit of concurrentie-signaal roept twijfel op — niet benaderen zonder overleg |
 | 📩 Benaderd | DM verstuurd |
 | 💬 In gesprek | Reactie ontvangen |
 | 🤝 Actief | Samenwerking loopt |
@@ -46,7 +47,7 @@
 
 | Status       | Account                                                    | Volgers   | Gem. Views | Prioriteit | Notities                                                                                                        |
 | ------------ | ---------------------------------------------------------- | --------- | ---------- | ---------- | --------------------------------------------------------------------------------------------------------------- |
-| 📌 Referentie | [@jayjay.wav](https://www.instagram.com/jayjay.wav/)      | ~3.000 (opgave Lars, niet geverifieerd) | verifieer | Zeer hoog | **Beste match tot nu toe** — nano-creator, voetbalcontent, exact de gewenste grootte/stijl. Toegevoegd als size/style-referentie 2026-08-18 (zie [[project_ig_search_calibration]]) en als bron in het zoekscript (`REFERENCE_ACCOUNTS`, commenters op zijn reels worden nu gescand). Volgers/ER/activiteit nog verifiëren via `web_profile_info` — WebFetch op het profiel gaf alleen username + displaynaam terug, geen cijfers. |
+| 🤝 Actief | [@jayjay.wav](https://www.instagram.com/jayjay.wav/)      | 3.077 ✓ (geverifieerd 2026-08-25) | onbekend | — | **Actieve HÏ Grip-samenwerking** (bevestigd door Lars, 2026-08-25). Bio leest nog als DJ/artiest ("Artiest 🎥 CREATOR: Derbystar - Stanno - Reece / HARDHOUSE - EURODANCE - HIGH ENERGY ACT") — dat was zijn hoofdprofiel, maar hij is sinds kort ook voetbalcontent gaan maken, vandaar de samenwerking. Derbystar/Stanno/Reece-vermelding in bio is zijn (oudere) DJ-merch-hoek, geen actief concurrerend grip-sock-conflict. Volgersaantal (3.077) bevestigt de eerdere schatting (~3.000) en de "Nano⭐"-ijkwaarde. Reclassified als `REFERENCE_ACCOUNTS["Partners"]` in het zoekscript (naast @perrrypanna/@jaidenpadel), niet meer als losse "Voetbal"-referentie. Zie de zoekcalibratie-historie in Claude Code memory. |
 | 🔍 Verifieer | [@boazsmits11](https://www.instagram.com/boazsmits11/)     | verifieer | verifieer  | Hoog       | Boaz Smits — NL naam. Gevonden #straatvoetbal. Check: eigen gezicht? video-first? NL? <5K? views >5K?           |
 | 🔍 Verifieer | [@boersma_goalkeeping](https://www.instagram.com/boersma_goalkeeping/) | ~35K | ~30K gem. | Hoog | Keeperstraining content, Nederlandse naam. Directe productfit (keepershandschoenen). Volgers aan hoge kant maar keeper-niche is klein. Verifieer: NL? eigen gezicht? sport-fit HÏ Grip? |
 | 🔎 Gevonden   | [@nexttalentkeepersschool](https://www.instagram.com/nexttalentkeepersschool/) | 17.8K ✓ | 4.8K ✓ | Hoog | Keeperstraining school, NL. Directe productfit (keepershandschoenen). Verifieer: eigen gezicht/creator achter account? |

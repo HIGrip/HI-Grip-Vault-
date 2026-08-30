@@ -6,15 +6,17 @@
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **⚠️ TE VERIFIËREN (2026-08-30):** onderstaande ID's zijn vastgelegd op 2026-08-02. Volgens de werkafspraak kan het werkthema inmiddels een opvolger hebben (kandidaat: `199814873415`) en kan ook het live-ID gewijzigd zijn. Draai `shopify theme list --store hi-grip.myshopify.com` en werk deze tabel bij. **Dit is de enige plek waar de ID's staan** — [[Shopify App Stack]] en [[Goedkeuringsworkflow]] verwijzen hiernaar, dupliceren ze niet.
+> **Bijgewerkt 2026-08-30 (lars):** het werkthema-ID is nu `199980286279` — opvolger van `199814873415`, dat weer de opvolger was van `198505464135`. Zowel het werkthema- als het live-ID krijgen periodiek een nieuw nummer, dus: **draai vóór elke theme-actie `shopify theme list --store hi-grip.myshopify.com`** en lees het actuele `[live]`-ID en het werkthema-ID af; neem nooit "een" unpublished theme aan.
+>
+> **Dit is de enige plek waar de ID's staan** — [[Shopify App Stack]] en [[Goedkeuringsworkflow]] verwijzen hiernaar, dupliceren ze niet.
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| HÏ Grip website AI Workspace | `198505464135` | unpublished | **Ja — het enige toegestane thema** |
-| HÏ Grip WEBSITE | `198094127431` | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Horizon oude thema (×2), HÏ Grip WEBSITE oude, Kopie van HÏ Grip WEBSITE, Test website van HÏ Grip WEBSITE, SHOPIFY TS \| HÏ Grip WEBSITE, HÏ Grip WEBSITE WK Campagne (×2) | overige 8 | unpublished | **Nee** — oude/losse duplicaten, geen actieve werkkopie |
+| Actueel AI Workspace-werkthema | `199980286279` | unpublished | **Ja — het enige toegestane thema** |
+| Live op www.higrip.nl | laatst gezien `199039975751` (2026-08-26) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Alle overige — oude werkthema's (`198505464135`, `199814873415`), oud live-ID `198094127431`, Horizon-duplicaten, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
-Vastgelegd door lars op 2026-08-02 na `shopify theme list`. Vóór elke theme-actie (pull/push) dit ID controleren — nooit "een" unpublished theme aannemen, er zijn er 9.
+Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 
 **Publiceren naar live gebeurt nooit door de agent**, ook niet na inhoudelijke goedkeuring — lars kopieert zelf over. Zie [[Goedkeuringsworkflow]]. Dit geldt onverkort, ook al is bewerken van het AI Workspace-thema nu "zelf doen"-niveau.
 
@@ -35,9 +37,9 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
 
 ## Werkwijze per wijziging
 
-1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\shopify-ai-workspace-theme`):
+1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\shopify-ai-workspace-theme`). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `199980286279` — verifieer met `theme list`):
    ```
-   shopify theme pull --store hi-grip.myshopify.com --theme 198505464135
+   shopify theme pull --store hi-grip.myshopify.com --theme 199980286279
    ```
 2. **Bewerk** de relevante bestanden lokaal (Liquid/JSON) — inhoud altijd baseren op wat er echt in de theme-bestanden staat (bv. `templates/index.json` voor sectie-content, `config/settings_data.json` voor instellingen als logo), niet op aannames of een verouderde site-audit.
 3. **Lint** vóór het pushen:
@@ -47,12 +49,12 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
    Let op: bij lange output via een niet-interactieve shell kan de voortgangsbalk de tekst verminken — bij twijfel de output naar een bestand redirecten (`> check.txt 2>&1`) en daar doorheen zoeken i.p.v. vertrouwen op wat er direct in de terminal verschijnt.
 4. **Push** — altijd expliciet het theme-ID meegeven, en waar mogelijk scopen tot alleen de gewijzigde bestanden:
    ```
-   shopify theme push --store hi-grip.myshopify.com --theme 198505464135 --only <bestand> --only <bestand>
+   shopify theme push --store hi-grip.myshopify.com --theme 199980286279 --only <bestand> --only <bestand>
    ```
    **Nooit** `--live` of een publish-commando gebruiken.
 5. **Verifiëren** op de preview-URL (niet zomaar aannemen dat het werkt):
    ```
-   https://hi-grip.myshopify.com?preview_theme_id=198505464135
+   https://hi-grip.myshopify.com?preview_theme_id=199980286279
    ```
    Check op "Liquid error" in de pagina-inhoud en dat de bedoelde wijziging (bv. een nieuw `application/ld+json`-blok) er echt staat. Live fetches op `www.higrip.nl` zelf geven vaak 429 (rate-limited door een bot-check) — de `.myshopify.com`-preview-URL werkt hiervoor betrouwbaarder.
 6. **Presenteren aan lars** (preview-link + wat er veranderd is) — pas na zijn goedkeuring kopieert hij het zelf naar live. De agent publiceert nooit.

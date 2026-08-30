@@ -50,10 +50,19 @@ De actuele theme-ID's + de dwingende regel staan op één plek: [[Technische Pro
 | SEOWILL (SEOAnt) — AI SEO | Geeft suggesties voor SEO-verbeteringen | Ja — kandidaat om te vervangen door de [[Agent Hiërarchie & Structuurschema|SEO Agent]]/`/shopify-seo`-skill zodra die dat overneemt |
 | Canva Connect | Koppelt Canva-designs aan de website | Ja |
 | FD Product Groups | Wisselen tussen productvarianten (bv. wit/zwart) op de productpagina | Ja |
+| Microsoft Clarity: AI Insights | Sessierecordings, heatmaps, AI-frictiesamenvattingen (kwalitatieve analytics-laag) | Ja — sinds 2026-08-30, gekoppeld aan GA4 |
 
-## Google Analytics 4 — in opzet
+## Google Analytics 4 — ✅ actief sinds 2026-08-30
 
-`pipx` en Google Cloud CLI (`gcloud`) staan al geïnstalleerd. Wacht nog op input van lars (gcloud-login, GA4 Property-ID, credentials-pad) voordat de `analytics-mcp`-server geregistreerd kan worden. Checklist om dit af te ronden: zie [[Stappenplan — Shopify Apps & Analytics Toegang]], Deel 2. Voedt straks [[Analytics & KPI Dashboard]] — die notitie staat om deze reden nog leeg.
+De `analytics-mcp`-server draait en is getest — Claude Code kan direct GA4-rapporten trekken (sessies, kanalen, funnel, conversies, realtime).
+
+- **Auth:** service account (`ga4-mcp@higrip-analytics.iam.gserviceaccount.com`), niet de gcloud user-login — Google blokkeert de `analytics.readonly`-scope voor de standaard gcloud client-ID.
+- **GA4 Property:** `www.higrip.nl` = `properties/476032345` · **Cloud-project:** `higrip-analytics`
+- **Let op — datagat:** data mrt–dec 2025, daarna dood tot 30-8-2026 (tag verdween ~1-1-2026). Zie [[API & Tool Connections]] § GA4.
+- Volledige eindopzet + from-scratch-runbook: [[API & Tool Connections]] en `analytics-mcp-setup.md` in de HI-Grip-claude-setup repo.
+- Voedt [[Analytics & KPI Dashboard]] — daar staan de eerste cijfers.
+
+**Microsoft Clarity** is los hiervan opgezet als kwalitatieve laag (zie de app-tabel hierboven) en aan GA4 gekoppeld. Vervangt GA4 niet: GA4 = "wat/waar haken bezoekers af", Clarity = "waarom". Clarity zet cookies (`_clck`, `_clsk`) → moet in de cookiebanner / achter consent (AVG).
 
 ---
 
@@ -63,4 +72,4 @@ De actuele theme-ID's + de dwingende regel staan op één plek: [[Technische Pro
 - [[API & Tool Connections]] — Volledige uitzoekgeschiedenis van elke toegangsroute
 - [[Goedkeuringsworkflow]] — Hoe een wijziging van test-theme naar live gaat
 - [[Update Log]] — Datumgewijze log van doorgevoerde wijzigingen
-- [[Analytics & KPI Dashboard]] — Wacht op GA4-toegang
+- [[Analytics & KPI Dashboard]] — GA4-cijfers en KPI-opbouw (toegang actief sinds 2026-08-30)

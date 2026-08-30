@@ -33,19 +33,27 @@
 
 **Doel:** [[Analytics & KPI Dashboard]] van de blocker af halen. Stappen komen uit [[API & Tool Connections]] — daar staat de volledige uitleg per stap.
 
-**Beslissing 2026-08-21:** lars koos voor GA4 boven de alternatieven (handmatige export uit Shopify Analytics, of een betaalde Shopify-reporting-app) — vermoedelijk de goedkoopste échte automatische route, zie [[API & Tool Connections]] voor de volledige afweging. De "betaalstap" bij Google Cloud is naar verwachting een kaart-op-bestand-vereiste zonder echte kosten op dit gebruiksniveau, geen abonnement — dat is nog niet 100% bevestigd, dus mocht Google Cloud toch een concreet bedrag rekenen: even melden voordat je doorgaat.
+**Beslissing 2026-08-21:** lars koos voor GA4 boven de alternatieven (handmatige export uit Shopify Analytics, of een betaalde Shopify-reporting-app) — vermoedelijk de goedkoopste échte automatische route, zie [[API & Tool Connections]] voor de volledige afweging.
 
-- [ ] **Stap 1:** `gcloud init` uitvoeren — inloggen, Google Cloud-project kiezen of aanmaken
-- [ ] **Stap 2:** In dat project 2 API's enablen: **Google Analytics Admin API** + **Google Analytics Data API**
-- [ ] **Stap 3:** Uitvoeren:
-  ```
-  gcloud auth application-default login --scopes=https://www.googleapis.com/auth/analytics.readonly,https://www.googleapis.com/auth/cloud-platform
-  ```
-  Credentials-pad dat verschijnt ("Credentials saved to file: ...") noteren: `_______________________________`
-- [ ] **Stap 4:** In GA4 zelf (Beheer → Property Access Management) checken dat je Google-account minimaal **Viewer** is op de higrip.nl-property
-- [ ] **Stap 5:** GA4 **Property-ID** opzoeken (Beheer → Property-instellingen): `_______________________________`
-- [ ] **Stap 6:** Google Cloud **Project-ID** noteren (stond bij stap 1): `_______________________________`
-- [ ] **Stap 7:** Deze 3 waarden (credentials-pad, Property-ID, Project-ID) doorgeven → agent registreert de `analytics-mcp`-server en [[Analytics & KPI Dashboard]] kan gevuld worden
+**✅ Deel 2 is afgerond op 2026-08-30.** De koppeling `analytics-mcp` draait en is getest. Volledige eindopzet + from-scratch-runbook: [[API & Tool Connections]] (sectie GA4) en `analytics-mcp-setup.md` in de HI-Grip-claude-setup repo.
+
+Kort wat er uiteindelijk gebeurde (afweek van de checklist hieronder):
+- **Geen `gcloud auth application-default login`** — Google blokkeert de `analytics.readonly`-scope voor de standaard gcloud client-ID. In plaats daarvan een **service account** (`ga4-mcp@higrip-analytics.iam.gserviceaccount.com`) met JSON-key, toegevoegd als Viewer op de property.
+- Cloud-project: `higrip-analytics` · GA4 Property-ID: **`properties/476032345`** (`www.higrip.nl`)
+- MCP-server geregistreerd in `~/.claude.json` (niet alleen `~/.claude/mcp.json` — dát leest de VS Code-extensie).
+- Bij de eerste test bleek de tag rond 1 jan 2026 gestopt te zijn; data loopt mrt–dec 2025 en daarna pas weer vanaf 30-8-2026. Zie [[API & Tool Connections]].
+
+<details><summary>Oorspronkelijke checklist (achterhaald, ter referentie)</summary>
+
+- [x] **Stap 1:** Google Cloud-project aanmaken (`higrip-analytics`)
+- [x] **Stap 2:** API's enablen: Google Analytics Admin API + Data API
+- [x] **Stap 3:** ~~`gcloud auth application-default login`~~ → vervangen door service-account-key
+- [x] **Stap 4:** Service account als Viewer op de higrip.nl-property gezet
+- [x] **Stap 5:** GA4 Property-ID: `properties/476032345`
+- [x] **Stap 6:** Google Cloud Project-ID: `higrip-analytics`
+- [x] **Stap 7:** `analytics-mcp`-server geregistreerd en getest
+
+</details>
 
 ---
 

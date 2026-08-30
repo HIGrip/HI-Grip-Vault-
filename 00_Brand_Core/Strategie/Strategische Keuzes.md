@@ -53,4 +53,5 @@
 - [[Brand Identity Overview]] — Missie en visie achter de groeidoelen
 - [[Doelgroep & Persona's]] — B2B doelgroepen die de klantendoelen invullen
 - [[Ideale Partner Profiel]] — Hoe we B2B klanten aantrekken
+- [[Concurrentieanalyse]] — Positie t.o.v. andere aanbieders
 - [[Content Strategie]] — Hoe marketing de roadmap ondersteunt

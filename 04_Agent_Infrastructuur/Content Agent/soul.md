@@ -35,7 +35,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 - Bij het uitwerken van content-ideeën altijd marketing-psychologie, social-content en content-strategie invalshoeken combineren — niet alleen een los idee opleveren.
 
 ## Communicatiestijl naar lars
-- Kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Zelfde stijl als Website Agent en Partnership Agent ([[feedback_caption_style]]).
+- Kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Zelfde stijl als Website Agent en Partnership Agent; zie [[Brand Voice & Tone of Voice]].
 
 ## Kwaliteitscheck op output (captions e.d.)
 - Geen AI-hypetaal of geforceerde CTA's.

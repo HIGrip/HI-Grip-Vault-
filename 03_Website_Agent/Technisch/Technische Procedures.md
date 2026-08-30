@@ -6,6 +6,8 @@
 
 ## Harde regel — theme-ID's (nooit negeren)
 
+> **⚠️ TE VERIFIËREN (2026-08-30):** onderstaande ID's zijn vastgelegd op 2026-08-02. Volgens de werkafspraak kan het werkthema inmiddels een opvolger hebben (kandidaat: `199814873415`) en kan ook het live-ID gewijzigd zijn. Draai `shopify theme list --store hi-grip.myshopify.com` en werk deze tabel bij. **Dit is de enige plek waar de ID's staan** — [[Shopify App Stack]] en [[Goedkeuringsworkflow]] verwijzen hiernaar, dupliceren ze niet.
+
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
 | HÏ Grip website AI Workspace | `198505464135` | unpublished | **Ja — het enige toegestane thema** |

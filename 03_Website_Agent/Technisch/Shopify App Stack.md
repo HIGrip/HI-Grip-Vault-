@@ -10,15 +10,11 @@
 - **Abonnement:** Starter — goedkoopste tier. Blokkeert volledige thema-personalisatie/API-toegang (alleen het Spotlight-thema is op dit plan volledig bruikbaar); dit is de reden dat de Theme Access-app en Admin API-tokens een 401 gaven. Zie [[API & Tool Connections]] voor de volledige uitzoekgeschiedenis.
 - **Consequentie:** programmatische thema-bewerking via de officiële Admin API/Theme Access-app zit vast tot een upgrade naar Basic of hoger.
 
-## Thema's (10 totaal)
+## Thema's
 
-| Thema | ID | Rol | Mag de agent bewerken? |
-|---|---|---|---|
-| HÏ Grip website AI Workspace | `198505464135` | unpublished | **Ja — het enige toegestane thema** |
-| HÏ Grip WEBSITE | `198094127431` | **live** | **Nooit** |
-| Overige 8 (Horizon oude thema's ×2, HÏ Grip WEBSITE oude, Kopie van HÏ Grip WEBSITE, Test website van HÏ Grip WEBSITE, SHOPIFY TS \| HÏ Grip WEBSITE, HÏ Grip WEBSITE WK Campagne ×2) | overige 8 | unpublished | Nee — oude/losse duplicaten |
+De store heeft ~10 thema's. Alleen het **AI Workspace**-thema mag bewerkt worden, **nooit** het live-thema.
 
-Volledige regels rond bewerken/publiceren: zie [[Technische Procedures]] en [[Goedkeuringsworkflow]].
+De actuele theme-ID's + de dwingende regel staan op één plek: [[Technische Procedures]] § "Harde regel — theme-ID's". Publiceren naar live doet lars altijd zelf — zie [[Goedkeuringsworkflow]].
 
 ## Technische tooling (werkend, in gebruik)
 

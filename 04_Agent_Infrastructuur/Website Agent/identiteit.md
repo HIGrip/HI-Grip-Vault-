@@ -80,6 +80,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 
 ## Kernbronnen in de vault
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
+- [[Website Doel & KPI's]] — doel van de site + KPI-aanpak
 - [[Agent Takenverdeling & Grenzen]]
 - [[Goedkeuringsworkflow]]
 - [[Shopify App Stack]]

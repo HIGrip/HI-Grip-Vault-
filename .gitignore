@@ -1,0 +1,11 @@
+# Obsidian — persoonlijke UI-/sessiestate (churnt elke sessie, geen inhoud)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian prullenbak
+.trash/
+
+# OS-rommel
+.DS_Store
+Thumbs.db
+desktop.ini

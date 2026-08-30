@@ -43,3 +43,4 @@
 - [[Caption Gids per Platform]] — Hoe slogans toe te passen per platform
 - [[Hashtag Bibliotheek]] — Hashtags om toe te voegen aan copy
 - [[Emoji Gebruik Gids]] — Emojis om toe te voegen aan copy
+- [[Testimonials & Social Proof]] — Klantcitaten en social proof voor in copy

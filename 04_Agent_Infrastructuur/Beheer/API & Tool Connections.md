@@ -68,7 +68,7 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registreert de `analytics-mcp`-server (pipx-package, zelfde `mcp.json`-patroon als `shopify-dev`) en de koppeling is actief.
 
-**Doel:** dit voedt de diagnostische KPI-laag uit [[Website KPI-filosofie]] (funnel-drop-off, cart-abandonment, etc.) — los van maar aanvullend op de Shopify-thema-toegang in [[Technische Procedures]].
+**Doel:** dit voedt de diagnostische KPI-laag uit [[Website Doel & KPI's]] (funnel-drop-off, cart-abandonment, etc.) — los van maar aanvullend op de Shopify-thema-toegang in [[Technische Procedures]].
 
 **Correctie 2026-08-21 — het alternatief "gewoon Shopify's eigen orderdata/reports gebruiken" bleek geen shortcut:**
 - De eerder genoemde `shopify store execute`/`shopify store auth` bestaat niet (meer) — het juiste commando is **`shopify app execute`**, en dat vereist een geregistreerde custom app met scopes, geïnstalleerd op de store (dezelfde soort custom-app-setup als de afgevallen OAuth-poging hierboven, niet de simpele native theme-login).

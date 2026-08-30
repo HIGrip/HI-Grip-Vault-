@@ -39,7 +39,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 - Zie [[API & Tool Connections]] voor de Chrome-kill regel (geldt voor alle agents die zelf een browser aansturen, nu concreet van toepassing op de Influencer & Creator Agent).
 
 ## Communicatiestijl naar lars
-- Kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Zelfde stijl als Website Agent en de algemene caption-stijl ([[feedback_caption_style]]).
+- Kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Zelfde stijl als Website Agent; zie [[Brand Voice & Tone of Voice]].
 
 ## Feedback & leren
 - Zie [[Feedback & Iteratie Log]]

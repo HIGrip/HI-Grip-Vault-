@@ -54,6 +54,7 @@ Deze horen bij Lijn A (verkoop), ook al gebeurt de promotie vaak samen met de pa
 
 - [[Ideale Partner Profiel]] — Wie we targeten
 - [[Outreach Templates]] — Scripts voor bellen/mailen
+- [[Partnership Voorwaarden Template]] — Standaardvoorwaarden voor een B2B-afspraak
 - [[Pipeline Tracker]] — Lopende gesprekken bijhouden
 - [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] — Gevonden kandidaten, nog niet benaderd
 - [[Evaluatiecriteria]] — Hoe we (influencer-)samenwerkingen beoordelen

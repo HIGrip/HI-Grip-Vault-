@@ -144,5 +144,6 @@ Voor de juiste tone of voice: zie [[Brand Voice & Tone of Voice]].
 - [[Platform Richtlijnen]] — Hoe we per platform te werk gaan
 - [[Content Pillars]] — Content ideeën per doelgroep
 - [[Posting Frequentie per Platform]] — Wanneer we posten
-- [[Brand Voice & Tone of Voice]] — Hoe we schrijven en reageren
-- [[Style Guide]] — Emojis, muziek, taal, productnamen, slogans
+- [[Brand Voice & Tone of Voice]] — Hoe we schrijven en reageren, taal, productnamen, slogans
+- [[Emoji Gebruik Gids]] — Emojigebruik per platform
+- [[Muziek & Licenties]] — Muziekkeuze per contenttype

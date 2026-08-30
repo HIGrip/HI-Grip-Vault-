@@ -65,6 +65,8 @@
 
 - [[Editing Stijl Gids Video]]
 - [[Reel & TikTok Format Gids]]
+- [[Geluidseffecten Bibliotheek]]
+- [[Stock Bronnen]]
 - [[Caption Gids per Platform]]
 - [[Hashtag Bibliotheek]]
 - [[Posting Frequentie per Platform]]

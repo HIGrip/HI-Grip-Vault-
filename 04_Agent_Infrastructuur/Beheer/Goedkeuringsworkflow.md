@@ -6,7 +6,7 @@
 
 ## Shopify: apart theme, nooit live
 
-De agent werkt altijd in **theme #198505464135 ("HÏ Grip website AI Workspace")**, nooit rechtstreeks in het theme dat live staat op www.higrip.nl (#198094127431) en nooit in een van de overige 8 oude/duplicate thema's op de store. Zie [[Technische Procedures]] voor het volledige technische hoe.
+De agent werkt altijd in het **"HÏ Grip website AI Workspace"**-theme, nooit rechtstreeks in het live theme op www.higrip.nl en nooit in een van de overige oude/duplicate thema's. De actuele theme-ID's staan op één plek: [[Technische Procedures]] § "Harde regel — theme-ID's" (daar ook het volledige technische hoe).
 
 1. Agent bouwt/wijzigt secties in het AI Workspace-theme
 2. Lars beoordeelt de wijziging (preview-URL)

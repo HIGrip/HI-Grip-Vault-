@@ -54,13 +54,13 @@
 > **Ondergrens verlaagd (2026-08-05):** geverifieerd via de twee bestaande HÏ Grip-partners
 > @perrrypanna (Perry Hoogerheijde, 4.207 volgers) en @jaidenpadel (Jaiden Tolenaar, 815 volgers) -
 > de laatste valt zelfs onder de oude "Nano-" ondergrens van 500. Minimum volgers daarom verlaagd
-> naar 300. Zie [[project_ig_search_calibration]] voor de volledige uitzoekgeschiedenis.
+> naar 300. Zie de zoekcalibratie-historie in Claude Code memory voor de volledige uitzoekgeschiedenis.
 
 > **Voetbal-specifieke ijkwaarde (2026-08-18):** tot nu toe was de grootte/stijl-kalibratie alleen
 > onderbouwd met tennis/padel-partners. @jayjay.wav (voetbal, ~3.000 volgers naar schatting Lars —
 > "beste match tot nu toe") is de eerste voetbal-specifieke ijkwaarde en bevestigt dat "Nano⭐"
 > (2.000-5.000) voor deze niche het gewenste profiel is. Exacte volgers/ER nog te verifiëren.
-> Zie [[project_ig_search_calibration]] en [[Influencer Database]].
+> Zie de zoekcalibratie-historie (Claude Code memory) en [[Influencer Database]].
 
 - **Minimum volgers:** 300
 - **Maximum volgers:** 50.000
@@ -126,7 +126,7 @@
 > **Let op (2026-08-05):** @jaidenpadel heeft 0 Reels (alleen foto's/carrousels) en voldoet dus
 > niet aan "Video-first" - toch een bestaande, gewaardeerde partner. Deze eis dus niet te hard
 > toepassen; de reels-gebaseerde zoekbronnen in het script missen dit type creator structureel
-> (zie [[project_ig_search_calibration]]).
+> (zie de zoekcalibratie-historie in Claude Code memory).
 
 ---
 

@@ -4,6 +4,29 @@
 
 ---
 
+## 2026-08-30 — GA4 → Claude Code koppeling live (`analytics-mcp`) — 1 van de 3 "fundamenteel gat"-databronnen dicht
+
+**Wat er gebeurde:** de GA4-toegang die sinds 1 aug als blocker openstond ([[Analytics & KPI Dashboard]], Fase 2) is opgezet en getest. `analytics-mcp` draait in Claude Code; er is direct een testrapport uit GA4 getrokken. Volledige eindopzet: [[API & Tool Connections]] § GA4. Dit sluit de eerste van de drie ontbrekende feedback-bronnen uit de kwaliteitsreview van 25-08 (GA4 ✅ / Buffer ✗ / volledige Shopify-data ✗).
+
+**Bevindingen:**
+- **De oorspronkelijke checklist klopte niet meer.** `gcloud auth application-default login` met de `analytics.readonly`-scope wordt door Google geblokkeerd voor de gedeelde gcloud client-ID ("deze app is geblokkeerd"). Opgelost met een **service account + JSON-key** i.p.v. user-login — omzeilt de scope-blokkade en is robuuster voor een achtergrond-MCP (geen tokenverval). Les: bij een Google-Cloud-koppeling niet uitgaan van ADC-user-login; service account is de nettere route voor tooling.
+- **Nieuwe MCP-servers moeten in `~/.claude.json`**, niet (alleen) in `~/.claude/mcp.json` — de VS Code-extensie leest `~/.claude.json`. Kostte een extra herstart-ronde. Voor volgende MCP-koppelingen: beide bijwerken.
+- **De GA4-property was niet leeg — er zat een datagat in.** Data mrt–dec 2025 (~250 sessies/mnd), daarna dood vanaf ~1 jan 2026 tot heropgekoppeld op 30-8 via de Shopify Google & YouTube-integratie. Lars' waarneming "geen data over 28 dagen" klopte dus. Oorzaak van het stoppen (thema-republicatie / app-wijziging rond de jaarwisseling) nog niet achterhaald.
+- **Eerste inhoudelijke signaal:** 43% van de sessies staat op "Direct" — onwaarschijnlijk hoog, vrijwel zeker untagged social/influencer-verkeer zonder UTM. Raakt het "kanaal → identiteit"-gat uit [[Conversie Optimalisatie Checklist]] en [[Website Doel & KPI's]].
+- **Aanvullend opgezet: Microsoft Clarity** (gratis "Microsoft Clarity: AI Insights" Shopify-app) als kwalitatieve laag (sessierecordings, heatmaps, AI-frictiesamenvattingen), gekoppeld aan GA4. Vervangt GA4 niet — GA4 = "wat/waar", Clarity = "waarom". Nog te regelen: Clarity-cookies (`_clck`, `_clsk`) in de cookiebanner / achter consent (AVG).
+
+**Vervolgstappen (voor de vooruitblik):**
+1. **~2 weken verse data laten opbouwen** vóór resultaat-KPI's (conversieratio, AOV, omzet/bezoeker) worden opgezet — tot dan Shopify Analytics als omzetbron. Ná die periode: [[Analytics & KPI Dashboard]] vullen volgens de KPI-aanpak uit [[Website Doel & KPI's]].
+2. **Funnel-rapport op de historische data** (`run_funnel_report`, mrt–dec 2025): grootste absolute drop-off product → cart → checkout → betaling zoeken → concreet CRO-startpunt voor de [[Conversie Optimalisatie Checklist]].
+3. **Checken of de nieuwe koppeling `purchase`/e-commerce-events doorgeeft** (afhankelijk van de Shopify-koppelmethode) — zonder dat zijn er geen conversies in GA4.
+4. **UTM-discipline invoeren** op alle uitgaande links (bio, posts, influencer-briefings, e-mail) om de Direct-oververtegenwoordiging op te lossen.
+5. **Clarity in de cookiebanner / achter consent zetten** (AVG).
+6. **Achterhalen waarom de GA4-tag rond 1-1-2026 stopte**, zodat het niet opnieuw gebeurt.
+
+**Let op voor de maandagroutine:** deze wijzigingen zitten in lokale vault-commits — de routine ziet ze pas na een `git push` naar GitHub. Obsidian Git pusht automatisch (elke 2 min, mits Obsidian openstaat); anders moet lars zelf pushen vóór de run van 31-08 06:00 UTC.
+
+---
+
 ## 2026-08-25 — Kritische kwaliteitsreview (op verzoek van lars: "eerlijke mening, wees kritisch")
 
 **Wat er gebeurde:** lars vroeg een eerlijk, kritisch oordeel: hebben de agents alles wat nodig is om topkwaliteit te leveren, of is het halfwerk? In plaats van het te beweren, zijn een aantal juli-notities (SEO Strategie & Keywords, Homepage Copy & Structuur, Conversie Optimalisatie Checklist) daadwerkelijk herlezen om het oordeel ergens op te baseren.

@@ -55,7 +55,34 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 **Belangrijke beperking:** Shopify kent geen "alleen theme X"-scope — een token met `write_themes` kan technisch elk theme bewerken, ook het live theme. De grens "nooit live, altijd apart theme" blijft dus afspraak/discipline (zie [[Technische Procedures]] en [[Goedkeuringsworkflow]]), geen technische restrictie van Shopify zelf.
 
-## Google Analytics 4 (GA4) — in opzet, wacht op lars
+## Google Analytics 4 (GA4) — ✅ ACTIEF sinds 2026-08-30
+
+> Koppeling `analytics-mcp` draait en is getest (`/mcp`: connected). Runbook + from-scratch-stappen: `analytics-mcp-setup.md` in de HI-Grip-claude-setup repo. De uitzoekgeschiedenis hieronder blijft staan als context.
+
+**Eindopzet (2026-08-30):**
+
+| Onderdeel | Waarde |
+|---|---|
+| Server | `analytics-mcp` 0.7.0 (officiële `google-analytics-mcp` van Google), via `pipx` → `C:\Users\lars\.local\bin\google-analytics-mcp.exe` |
+| Wrapper | `C:\Users\lars\.claude\analytics-mcp.cmd` (zet `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_CLOUD_PROJECT`) |
+| Config | geregistreerd in **`C:\Users\lars\.claude.json`** (dat leest de VS Code-extensie) én in `C:\Users\lars\.claude\mcp.json` (CLI/SDK) |
+| Auth | **service account** `ga4-mcp@higrip-analytics.iam.gserviceaccount.com`, key op `C:\Users\lars\.claude\ga4-mcp-key.json` (secret — niet in vault/repo), toegevoegd als Viewer op de GA4-property |
+| Cloud project | `higrip-analytics` — API's aan: `analyticsdata.googleapis.com`, `analyticsadmin.googleapis.com` |
+| GA4 property | `www.higrip.nl` = `properties/476032345` |
+| Tools | `run_report`, `run_realtime_report`, `run_funnel_report`, `run_conversions_report`, `get_account_summaries`, `get_property_details`, `get_custom_dimensions_and_metrics`, `list_google_ads_links`, `list_property_annotations` |
+
+**Afwijkingen van het oorspronkelijke plan:**
+- **Geen `gcloud auth application-default login`** (stap 3 van de oude checklist). Google blokkeert de scope `analytics.readonly` voor de gedeelde gcloud client-ID ("deze app is geblokkeerd"). Daarom een **service account met JSON-key** — omzeilt de scope-blokkade en is robuuster voor een achtergrond-MCP (geen token-verval).
+- **Nieuwe MCP-servers moeten in `~/.claude.json`**, niet (alleen) in `~/.claude/mcp.json` — de VS Code-extensie leest `~/.claude.json`. Kostte een extra herstart-ronde om te vinden.
+- Server start traag (~15-20s door z'n ADK-framework); bij connect-timeout `MCP_TIMEOUT=60000`.
+
+**Datagat ontdekt bij de eerste test:** de GA4-property is niet nieuw — er zit data in van **~2025-03-13 t/m 2025-12-31** (~250 sessies/mnd), daarna **dood vanaf ~2026-01-01** (tag verdween, waarschijnlijk door een thema-republicatie / app-wijziging) tot heropgekoppeld op 2026-08-30 via de Shopify Google & YouTube-integratie. Lars' waarneming "geen data over 28 dagen" klopte dus. Verse data van 30-8 verschijnt pas na 24-48u in de standaardrapporten (realtime werkte meteen: 2 users). Kanaalmix mrt–dec 2025: Direct 1083 / Organic Search 829 / Organic Social 360 / Referral 258 sessies — hoge Direct-share = vermoedelijk untagged social/influencer (raakt het kanaal→identiteit-gat uit [[Website Doel & KPI's]]).
+
+**Aanvullend: Microsoft Clarity** (via de gratis "Microsoft Clarity: AI Insights" Shopify-app) is los hiervan opgezet als kwalitatieve laag (sessierecordings, heatmaps, AI-frictiesamenvattingen) en gekoppeld aan GA4. Vervangt GA4 niet — het is de "waarom"-laag naast GA4's "wat". Cookies (`_clck`, `_clsk`) → moet in de cookiebanner / achter consent (AVG).
+
+---
+
+### Uitzoekgeschiedenis (context, afgerond)
 
 **Status 2026-08-02:** al gedaan door de agent (geen login voor nodig): `pipx` geïnstalleerd, **Google Cloud CLI (`gcloud`)** geïnstalleerd via winget.
 

@@ -43,7 +43,7 @@
 
 **Doel:** geen officieel cijfer vastgesteld in de financiële roadmap — sponsoring/activaties zijn primair voor zichtbaarheid/merkbeleving, niet direct voor omzet.
 
-**Huidige stand** (zie [[Voorbeelden Gevonden Organisaties (Events)]]): 4 HOOG-kandidaten gevonden (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3, Sport Ondernemers Expo), 1 MIDDEL (Sportloaded), 0 actief lopend.
+**Huidige stand** (zie [[Voorbeelden Gevonden Organisaties (Events)]]): 3 HOOG-kandidaten gevonden (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3), 3 MIDDEL (Sportloaded, Urban Trail Rotterdam, Rotterdam Charity Run), 0 actief lopend. Sport Ondernemers Expo is 31-08-2026 door lars geschrapt (B2B-vakbeurs, geen sportpubliek/activatie — zie [[Voorwaarden Samenwerking]]).
 
 **Maandelijks doel (voorstel — nog niet bevestigd door Lars):**
 - Minimaal 2–3 nieuwe kandidaten per maand vinden en toetsen aan [[Voorwaarden Samenwerking]]

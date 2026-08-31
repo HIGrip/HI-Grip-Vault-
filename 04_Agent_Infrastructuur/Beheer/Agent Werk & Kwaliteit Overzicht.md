@@ -25,7 +25,8 @@
 | SEO Agent | — Nog geen output | — | — | Skill (`/shopify-seo`) gebouwd 2026-08-09, nog niet ingezet sindsdien |
 | Design Agent | — Nog geen output | — | — | Skill (`/shopify-design`) gebouwd 2026-08-09, nog niet ingezet sindsdien |
 | Website Copy Agent | — Nog geen output | — | — | Skill (`/shopify-copy`) gebouwd 2026-08-09, nog niet ingezet sindsdien |
-| Conversie & Analyse Agent | — Nog geen output | — | — | Skill (`/shopify-cro`) gebouwd 2026-08-09, nog niet ingezet sindsdien |
+| Conversie & Analyse Agent | Live-site-check (eerste geplande run) | 2026-08-31 | 🚩 Geëscaleerd naar lars | Kon niet worden uitgevoerd: WebFetch én directe `curl` naar `higrip.nl`/`www.higrip.nl` werden geblokkeerd door organisatiebeleid van de egress-proxy in deze cloud-omgeving ("CONNECT tunnel failed, response 403"). Geen inhoudelijke bevinding — technische blocker, actie van lars nodig (allowlist/omgeving-instelling). Zie [[Week 2026-08-31]]. |
+| SEO Agent | SEO-check (eerste geplande run) | 2026-08-31 | 🚩 Geëscaleerd naar lars | Zelfde blocker als de live-site-check hierboven (rij Conversie & Analyse Agent) — kon niet worden uitgevoerd. Meta title/description, sitemap.xml en FAQPage-inhoud dus nog niet gecontroleerd. Skill (`/shopify-seo`) zelf staat sinds 2026-08-09 op "in ontwikkeling", nog niet los daarvan ingezet. |
 
 ## Content Agent
 
@@ -52,6 +53,7 @@
 | Wekelijkse weekoverzicht-routine aangemaakt | 2026-08-21 | ⏳ Wacht op lars | Eerste run 24-08-2026. Routine kan pas de laatste vault-stand zien zodra lars de openstaande commit naar GitHub pusht — zie [[Denzel Weekoverzicht — Routine]]. |
 | Eerste weekoverzicht uitgevoerd | 2026-08-24 | ✅ OK | Zie [[Week 2026-08-24]]. B2B-lijst was recent genoeg (geen zoekactie nodig), Events-lijst 5+ weken stil — zoekactie uitgevoerd (zie rij hierboven bij Partnerships & Events Agent). |
 | Kritische kwaliteitsreview uitgevoerd (op verzoek van lars) | 2026-08-25 | 🚩 Geëscaleerd naar lars | Zie [[Feedback & Iteratie Log]] voor het volledige oordeel. Fundamenteel gat (GA4/Buffer/volledige Shopify-data) blijft geblokkeerd — vereist stuk voor stuk een actie die alleen lars kan zetten (browserlogin, connector-autorisatie, abonnementsupgrade). Niet op te lossen door de agent zelf, hoe vaak ook gevraagd. |
+| Weekoverzicht uitgevoerd | 2026-08-31 | 🚩 Geëscaleerd naar lars | Zie [[Week 2026-08-31]]. B2B- en Events-lijst beide recent genoeg (geen zoekactie nodig). Eerste geplande live-site-check en SEO-check konden niet draaien door een egress-blokkade naar higrip.nl in de cloud-omgeving — actie van lars nodig. AI-ontwikkelingen-sectie bevat een relevante vondst (Buffer MCP-server) die het "Buffer ✗"-gat uit de 25-08-review kan dichten. |
 
 ---
 

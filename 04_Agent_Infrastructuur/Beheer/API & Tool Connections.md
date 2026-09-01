@@ -104,6 +104,35 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 - Onderzocht: betaalde Shopify-reporting-apps (bv. Better Reports, €5–30/mnd) kunnen wél automatisch een CSV mailen op schema — reële, terugkerende kosten, en vereist nog een stap om die e-mail bij de agent te krijgen.
 - **Beslissing 2026-08-21 (lars):** toch GA4 opzetten (zie hieronder) — vermoedelijk de goedkoopste échte automatische route, want de Google Cloud-"betaalstap" is naar verwachting een kaart-op-bestand-vereiste zonder echte kosten bij dit gebruiksniveau, niet een abonnement.
 
+## Buffer (social planning + ideeën) — ✅ ACTIEF sinds 2026-09-01
+
+> MCP-koppeling `buffer` staat en is getest (token geverifieerd, `get_account` gaf het HÏ Grip-account terug). Wordt volledig actief in Claude Code na een herstart (zelfde patroon als GA4 / `shopify-dev`); tot die tijd bereikbaar via directe JSON-RPC-calls naar de endpoint.
+
+**Waarvoor de Content Agent Buffer gebruikt:**
+- **Planning / inplannen** — de échte contentkalender staat hier, niet in de vault (zie [[Content Kalender Template]]). Posts plannen en herschikken per kanaal.
+- **Ideeën wegzetten** — losse content-ideeën in de idea-kolommen (idea groups), optioneel met tags.
+- **Vastleggen wat een idee nodig heeft** — per idee noteren welke copy / beeld / video nog gemaakt moet worden voordat het ingepland kan worden.
+- **Analytics uitlezen** — geaggregeerde post-metrics per kanaal over een periode (feedbackbron, zie kwaliteitsreview 25-08).
+
+**Eindopzet (2026-09-01):**
+
+| Onderdeel | Waarde |
+|---|---|
+| Server | `buffer` — HTTP MCP-transport, endpoint `https://mcp.buffer.com/mcp` (officiële Buffer MCP-server, gelanceerd 27 mei 2026, werkt op elk abonnement incl. gratis) |
+| Auth | **API-key als Bearer-token** (aangemaakt op `https://publish.buffer.com/settings/api`). Opgeslagen als `headers.Authorization` in `C:\Users\lars\.mcp.json` én `C:\Users\lars\.claude\mcp.json`, en als env `BUFFER_ACCESS_TOKEN` in `C:\Users\lars\.claude\settings.local.json`. Secret — **niet in vault/repo**. |
+| Config | geregistreerd als `buffer` in beide `mcp.json`-bestanden (zelfde patroon als `shopify-dev` / `analytics-mcp`). Als de VS Code-extensie 'm niet oppikt: ook in `C:\Users\lars\.claude.json` zetten (zoals bij `analytics-mcp` bleek). |
+| Account | HÏ Grip (`info@higrip.nl`), org-id `69b6d476e4bc4b63e1f6854d`, tijdzone Europe/Amsterdam, week start maandag |
+| Planlimieten | 3 kanalen, 10 geplande posts, 3 tags, 100 ideeën |
+| Tools | `get_account`, `list_channels`, `get_channel`, `list_posts`, `get_post`, `create_post`, `edit_post`, `delete_post`, `list_idea_groups`, `list_ideas`, `create_idea`, `get_aggregated_post_metrics`, `list_post_templates` + `get_` / `create_` / `update_` / `delete_post_template`, `introspect_schema`, `execute_query`, `execute_mutation` |
+
+**Grens:** publiceren blijft **"altijd overleg vooraf"** — de Content Agent mag posts/ideeën opstellen, plannen en analytics lezen, maar zet nooit zelf de publiceer-stap (zie soul.md Content Agent en [[Agent Takenverdeling & Grenzen — Content Agent]]). `create_post` als directe publish-actie en `delete_post` alleen na akkoord van lars.
+
+**Sluit twee bekende blockers:**
+- "Buffer ✗" uit de kritische kwaliteitsreview van 25-08 → nu de 2e van de 3 ontbrekende feedbackbronnen dicht (GA4 ✅ / Buffer ✅ / volledige Shopify-data ✗).
+- De reden waarom Content Agent's contentkalender-automatisering niet gebouwd kon worden (zie [[Stappenplan — Verdere Bouw]]) — de routine kan nu wél zien wat er al gepland staat. De inhoudelijke reden (lars wil eerst intern afstemmen) staat los daarvan nog open.
+
+---
+
 ## Nog aan te vullen
 
 - Overige tool/API-koppelingen zodra ze ontstaan

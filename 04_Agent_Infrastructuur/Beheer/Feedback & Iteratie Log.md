@@ -4,6 +4,19 @@
 
 ---
 
+## 2026-09-01 — Buffer → Claude Code koppeling live (`buffer` MCP) — 2 van de 3 "fundamenteel gat"-databronnen dicht
+
+**Wat er gebeurde:** de Buffer-koppeling die sinds de kwaliteitsreview van 25-08 als blocker openstond, is opgezet met een API-key (Bearer-token) i.p.v. de OAuth-connector. Token geverifieerd tegen `https://mcp.buffer.com/mcp` — `get_account` gaf het HÏ Grip-account terug, alle 20 tools zichtbaar. Volledige eindopzet: [[API & Tool Connections]] § Buffer. Dit sluit de tweede van de drie ontbrekende feedbackbronnen uit de review van 25-08 (GA4 ✅ / Buffer ✅ / volledige Shopify-data ✗).
+
+**Bevindingen:**
+- **OAuth-connector was niet nodig.** Het weekoverzicht van 31-08 stelde de OAuth-route voor (paar klikken in claude.ai). lars had al een API-key; die als `Authorization: Bearer` header op de HTTP-MCP-server werkt net zo goed en is niet sessie-gebonden aan een claude.ai-connectorautorisatie. Zelfde patroon als `rubik-combined-listings` in `mcp.json`.
+- **Zelfde herstart-lag als GA4 / `shopify-dev`.** De draaiende sessie had `buffer` al zonder auth geladen; de header wordt pas na een herstart opgepikt. Tot die tijd werkt de endpoint wel via directe JSON-RPC-calls (getest).
+- **Token op 3 plekken** (`.mcp.json`, `.claude\mcp.json`, `settings.local.json` als env) — secret, niet in vault/repo.
+
+**Openstaand:** de inhoudelijke reden waarom Content Agent-automatisering nog niet gebouwd is (lars wil eerst intern afstemmen met de content-afdeling) staat los van de techniek nog open — zie [[Stappenplan — Verdere Bouw]].
+
+---
+
 ## 2026-08-30 — GA4 → Claude Code koppeling live (`analytics-mcp`) — 1 van de 3 "fundamenteel gat"-databronnen dicht
 
 **Wat er gebeurde:** de GA4-toegang die sinds 1 aug als blocker openstond ([[Analytics & KPI Dashboard]], Fase 2) is opgezet en getest. `analytics-mcp` draait in Claude Code; er is direct een testrapport uit GA4 getrokken. Volledige eindopzet: [[API & Tool Connections]] § GA4. Dit sluit de eerste van de drie ontbrekende feedback-bronnen uit de kwaliteitsreview van 25-08 (GA4 ✅ / Buffer ✗ / volledige Shopify-data ✗).

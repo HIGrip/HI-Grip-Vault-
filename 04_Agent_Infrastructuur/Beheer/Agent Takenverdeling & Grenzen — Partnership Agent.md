@@ -30,6 +30,8 @@
 | Kandidaat beoordelen tegen [[Ideale Partner Profiel]]/[[Evaluatiecriteria]] | Zelf doen |
 | Kandidaat toevoegen aan database (Influencer/Merk & Bedrijf/Retailer Database) | Zelf doen |
 | Pipeline Tracker bijhouden | Zelf doen |
+| Nieuwe prospect toevoegen aan Bigin (B2B CRM) — intake-pipeline, eerste stage | Zelf doen |
+| Bestaand Bigin-record bewerken, van stage veranderen of verwijderen | Niet toegestaan — Bigin is verder alleen-lezen (zie [[API & Tool Connections]]) |
 
 ## C — Outreach & communicatie
 

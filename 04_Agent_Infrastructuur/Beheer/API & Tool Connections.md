@@ -133,6 +133,49 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 
 ---
 
+## Bigin (B2B CRM) — 🟡 KLAARGEZET 2026-09-02 (lars regelt de MCP-koppeling zelf)
+
+> Voor de B2B-tak wordt **Bigin by Zoho CRM** gebruikt. De Partnership Agent / sub-agent **B2B Klanten Agent** (Lijn A) krijgt hier toegang toe zodat hij ziet wat het team met de aangedragen leads doet. Lars zet de MCP-koppeling zelf op; deze notitie legt het rechtenmodel en de sloten vast.
+
+**Waarvoor de Partnership Agent Bigin gebruikt:**
+- **Meelezen** — contacten, bedrijven, pipeline/deals + stages, taken, events, calls, notities. Voedt o.a. de wekelijkse pipeline-rapportage aan lars (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] sectie E).
+- **Prospects toevoegen** — nieuwe potentiële klanten aan het **begin van de funnel** aanmaken (nieuw contact / bedrijf / pipeline-record in de eerste stage van de intake-pipeline).
+
+**Rechtenmodel — lezen alles, aanmaken alleen top-of-funnel, verder niets:**
+
+| Actie | Mag |
+|---|---|
+| Alle B2B-data lezen | ✅ |
+| Nieuw contact / bedrijf / pipeline-record aanmaken (eerste stage intake-pipeline) | ✅ |
+| Bestaand record bewerken, van stage veranderen, notitie/activiteit aanpassen | ❌ |
+| Iets verwijderen, converteren, bulk-updaten | ❌ |
+
+**Drie sloten (laag 1 is de echte grendel; met 1 + 2 is 3 overbodig):**
+
+1. **Bigin custom-profiel** voor de gekoppelde gebruiker (bv. "MCP Prospecting"): Contacts / Companies / Pipelines = **View + Create aan, Edit + Delete uit**; alle overige modules (Notes, Activities, Dashboards, Settings) = **alleen View**. Create/Edit/Delete/View zijn per module los instelbaar in Bigin — Bigin weigert dan zelf elke bewerking/verwijdering, ongeacht welke tool het probeert.
+2. **Tool-selectie in de Zoho MCP-server** — alleen de ophaal-tools + "Create Contact / Create Company / Create Pipeline record" toevoegen; géén update-/delete-/convert-/stage-tools. De server mist dan de mogelijkheid om te bewerken.
+3. *(optioneel, alleen met een eigen mini-MCP-server i.p.v. de Zoho-portal)* **OAuth-scopes** = `ZohoBigin.modules.{contacts,accounts,deals}.CREATE` + `.READ`, en `.READ` op de rest — nergens `.WRITE` / `.UPDATE` / `.DELETE` / `.ALL`. De officiële Zoho MCP-portal geeft geen scope-keuze (all-or-nothing per gebruiker), dus laag 3 vereist maatwerk.
+
+**Kosten:** Zoho MCP zit in élke Bigin-editie inclusief de gratis; geen aparte kosten, loopt binnen de bestaande API-limieten. Geen plan-blokkade zoals bij Shopify.
+
+**Wat lars doet (regelt hij zelf):**
+1. Custom-profiel + koppel-gebruiker in Bigin aanmaken volgens slot 1.
+2. Op het Zoho MCP-portaal een MCP-server bouwen, service = Bigin, alleen de tools uit slot 2 aanvinken, autoriseren met die gebruiker.
+3. MCP Server-URL doorgeven (zit er een token in: als env-var, niet in vault/chat — zelfde patroon als Buffer/GA4).
+
+**Wat de agent daarna doet:**
+- Registreren als `bigin` in `C:\Users\lars\.claude.json` én `C:\Users\lars\.claude\mcp.json` (HTTP MCP-transport, zelfde patroon als `buffer`).
+- OAuth-autorisatie via `/mcp` in een **interactieve** Claude Code-sessie (kan niet non-interactief), daarna herstart → actief.
+
+**Open beslissing — waar landen agent-prospects:**
+- **A (aanbeveling)** — aparte pipeline "Prospecting" / "Nieuwe leads", zodat agent-invoer gescheiden blijft van deals waar het team aan werkt.
+- **B** — eerste stage van de bestaande B2B-pipeline.
+- Bepaalt de exacte profiel-config en de instructie in de Partnership Agent `soul.md`.
+
+**Gedragsregel** (staat ook in de Partnership Agent `soul.md`): altijd eerst zoeken, alleen aanmaken als geen duplicaat; nieuwe records altijd in de eerste stage; nooit bestaande records aanraken. Sluit aan op de bestaande grens "outreach versturen = overleg vooraf".
+
+---
+
 ## Nog aan te vullen
 
 - Overige tool/API-koppelingen zodra ze ontstaan

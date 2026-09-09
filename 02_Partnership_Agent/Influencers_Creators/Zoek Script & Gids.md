@@ -133,7 +133,7 @@ NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
 > Bron van waarheid zijn de bestanden in `scripts/` van de [`HI-Grip-claude-setup`](https://github.com/HIGrip/HI-Grip-claude-setup) repo. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van een script moet deze kopie mee-geüpdatet worden (memory-regel `feedback_ig_script_sync` in Claude Code).
 
-> Bijgewerkt 2026-09-09: het zoeken is gesplitst in drie bestanden. Aanleiding was de run van 08-09 die 24 uur draaide, 1.508 profielen langsliep en 8 bruikbare creators opleverde — met alle metingen via de trage DOM-route omdat het JSON-endpoint geblokkeerd was.
+> Bijgewerkt 2026-09-09: het zoeken is gesplitst in vier bestanden. Aanleiding was de run van 08-09 die 24 uur draaide, 1.508 profielen langsliep en 8 bruikbare creators opleverde — met alle metingen via de trage DOM-route omdat het JSON-endpoint geblokkeerd was.
 
 ### ig_zoek_trapAB.py
 
@@ -500,6 +500,413 @@ if __name__ == "__main__":
     main()
 ```
 
+### ig_zoek_trapC.py
+
+Zoek-pijplijn trap C (nieuw 2026-09-09). Meet views, engagement rate, activiteit en captions voor wie trap B overleefde, door het antwoord op Instagram's eigen posts- en reels-query te onderscheppen in plaats van een eigen request na te bouwen.
+
+```python
+"""
+HI Grip - zoek-pijplijn trap C (2026-09-09).
+
+Meet views, engagement rate, activiteit en captions voor de profielen die
+trap B overleefd hebben. Draait dus over tientallen profielen, niet duizenden.
+
+Waarom niet gewoon web_profile_info: dat endpoint geeft al sinds de run van
+08-09 een 429 (opnieuw geverifieerd op 09-09 om 12:00). Handmatig een
+GraphQL-POST nabouwen is ook geen optie - die vereist sessie-specifieke
+tokens (fb_dtsg, lsd, __spin_*, jazoest) die per pagina-load verschillen.
+
+De gekozen route: navigeer naar het profiel en ONDERSCHEP het antwoord op de
+query die de pagina zelf al doet (herkenbaar aan de header
+x-fb-friendly-name). Daarmee gebruiken we exact wat Instagram's eigen frontend
+gebruikt - dat blijft werken als het doc_id verandert, en er is geen los
+request dat opvalt.
+
+Er zijn TWEE navigaties nodig, want geen van beide bronnen heeft alles:
+  /{user}/reels/  -> play_count, maar geen enkel datumveld
+  /{user}/        -> taken_at, like_count, comment_count, captions,
+                     maar play_count ontbreekt en view_count is overal null
+
+Kosten: ~7s per profiel. Voor 77 profielen ongeveer 9 minuten.
+
+Gebruik:
+    python ig_zoek_trapC.py                       # HOUDEN uit de nieuwste trap B
+    python ig_zoek_trapC.py --ook-twijfel         # ook de TWIJFEL-bak
+    python ig_zoek_trapC.py --bestand <jsonl>     # specifieke trap B-uitvoer
+    python ig_zoek_trapC.py --limit 5             # proeven
+"""
+import glob, json, os, sys, time
+from datetime import datetime, timezone
+
+sys.stdout.reconfigure(encoding="utf-8")
+
+from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
+
+_HOME = os.path.expanduser("~")
+SESSION_FILE = os.path.join(_HOME, ".ig_session.json")
+_STAMP = datetime.now().strftime("%Y-%m-%d_%H%M")
+UIT_JSONL = os.path.join(_HOME, "Downloads", f"HiGrip_trapC_{_STAMP}.jsonl")
+UIT_TXT = os.path.join(_HOME, "Downloads", f"HiGrip_eindlijst_{_STAMP}.txt")
+
+# Criteria uit Evaluatiecriteria.md
+MIN_AVG_VIEWS = 1_000
+MAX_AVG_VIEWS = 30_000
+MIN_ER_PCT = 2.0
+MAX_INACTIVE_DAYS = 21
+MIN_RECENT_POSTS = 3
+
+THROTTLE = 2.0
+MAX_OPEENVOLGENDE_FOUTEN = 6
+
+ARGS = sys.argv[1:]
+OOK_TWIJFEL = "--ook-twijfel" in ARGS
+LIMIET = int(ARGS[ARGS.index("--limit") + 1]) if "--limit" in ARGS else None
+BESTAND = ARGS[ARGS.index("--bestand") + 1] if "--bestand" in ARGS else None
+
+
+def nieuwste_trapB():
+    # Let op de suffix-check: "_trapA" als losse substring sluit ook
+    # "HiGrip_trapAB_..." uit, want daar zit "_trapA" gewoon in.
+    kand = [f for f in glob.glob(os.path.join(_HOME, "Downloads", "HiGrip_trapAB_*.jsonl"))
+            if not f.endswith("_trapA.jsonl")]
+    if not kand:
+        raise SystemExit("Geen trap B-uitvoer gevonden - draai eerst ig_zoek_trapAB.py")
+    return sorted(kand)[-1]
+
+
+def _friendly(resp):
+    try:
+        if "/graphql/query" not in resp.url:
+            return ""
+        return resp.request.headers.get("x-fb-friendly-name", "")
+    except Exception:
+        return ""
+
+
+def is_reels_query(resp):
+    return "ReelsTabContent" in _friendly(resp)
+
+
+def is_posts_query(resp):
+    return "PolarisProfilePosts" in _friendly(resp)
+
+
+def zoek_edges(obj):
+    """De respons nest de posts onder een lange xdt_api__v1__feed__...-sleutel."""
+    if isinstance(obj, dict):
+        if isinstance(obj.get("edges"), list) and obj["edges"]:
+            return obj["edges"]
+        for v in obj.values():
+            r = zoek_edges(v)
+            if r:
+                return r
+    elif isinstance(obj, list):
+        for v in obj:
+            r = zoek_edges(v)
+            if r:
+                return r
+    return None
+
+
+def meet(node):
+    """Haalt de cijfers uit één post.
+
+    De reels-tab verpakt elke post nog een laag dieper (node.media); de
+    profielgrid doet dat niet. Views zitten in play_count - `view_count` is
+    in beide bronnen null en dus onbruikbaar.
+    """
+    m = node.get("media") if isinstance(node.get("media"), dict) else node
+
+    # Als de maker like- en view-tellingen verbergt, is like_count een
+    # betekenisloos restje (@joranengelen toont 3 likes op een reel met 2.810
+    # afspelingen). Dan mag er geen ER uit berekend worden.
+    verborgen = bool(m.get("like_and_view_counts_disabled"))
+
+    likes = m.get("like_count")
+    if likes is None:
+        likes = (m.get("edge_liked_by") or m.get("edge_media_preview_like") or {}).get("count")
+    comments = m.get("comment_count")
+    if comments is None:
+        comments = (m.get("edge_media_to_comment") or {}).get("count")
+    views = (m.get("play_count") or m.get("ig_play_count")
+             or m.get("video_view_count")
+             or (m.get("clips_metadata") or {}).get("play_count"))
+    ts = m.get("taken_at") or m.get("taken_at_timestamp")
+    cap = m.get("caption")
+    if isinstance(cap, dict):
+        cap = cap.get("text")
+    elif cap is None:
+        edges = (m.get("edge_media_to_caption") or {}).get("edges") or []
+        cap = ((edges[0].get("node") or {}).get("text") if edges else None)
+    # Wie is de auteur? Bij collab-posts staat hier een ANDER account, en dan
+    # horen de cijfers ook bij dat account. @joelvdwilt (4.136 volgers) leverde
+    # zo 18,9 miljoen gemiddelde views en ER 3.760% op, want zijn grid bevat
+    # collabs van @almerecityfc_academy en @gino_gk1.
+    eigenaar = ((m.get("user") or {}).get("username") or "").lower() or None
+
+    return {"likes": int(likes or 0), "comments": int(comments or 0),
+            "views": int(views) if views else None, "ts": ts,
+            "caption": (cap or "")[:200], "verborgen": verborgen,
+            "eigenaar": eigenaar}
+
+
+def _haal(page, url, matcher):
+    try:
+        with page.expect_response(matcher, timeout=20000) as info:
+            page.goto(url, wait_until="domcontentloaded", timeout=25000)
+        return zoek_edges(info.value.json().get("data") or {})
+    except Exception:
+        return None
+
+
+def doormeten(page, username, volgers):
+    """Twee bronnen, want geen van beide heeft alles.
+
+    - reels-tab    : play_count (de enige plek met echte afspeelcijfers),
+                     maar bevat GEEN enkel datumveld
+    - profielgrid  : taken_at, like_count en comment_count, maar play_count
+                     staat er niet in (view_count is overal null)
+
+    Een account zonder reels (zoals partner @jaidenpadel, 0 reels) levert bij
+    de eerste bron niets op; dan blijft het profielgrid over en meten we geen
+    views. Dat is een vlag, geen afwijzing.
+    """
+    nu = datetime.now(timezone.utc).timestamp()
+    doel = username.lower()
+    views, verborgen_n, posts_reels, vreemd = [], 0, 0, 0
+
+    def van_iemand_anders(p):
+        # Alleen uitsluiten als we de eigenaar KENNEN en die iemand anders is.
+        return p["eigenaar"] is not None and p["eigenaar"] != doel
+
+    reels = _haal(page, f"https://www.instagram.com/{username}/reels/", is_reels_query)
+    if reels:
+        posts_reels = len(reels)
+        for e in reels:
+            p = meet(e.get("node") or {})
+            if van_iemand_anders(p):
+                vreemd += 1
+                continue
+            if p["verborgen"]:
+                verborgen_n += 1
+            if p["views"]:
+                views.append(p["views"])
+        time.sleep(1.5)
+
+    grid = _haal(page, f"https://www.instagram.com/{username}/", is_posts_query)
+    engagements, recent, captions, posts_grid = [], 0, [], 0
+    if grid:
+        posts_grid = len(grid)
+        for e in grid:
+            p = meet(e.get("node") or {})
+            if van_iemand_anders(p):
+                vreemd += 1
+                continue
+            if p["verborgen"]:
+                verborgen_n += 1
+            else:
+                engagements.append(p["likes"] + p["comments"])
+            if p["ts"] and (nu - float(p["ts"])) / 86400 <= MAX_INACTIVE_DAYS:
+                recent += 1
+            if p["caption"]:
+                captions.append(p["caption"])
+
+    if not reels and not grid:
+        return {"gemeten": False, "reden": "geen posts-respons opgevangen"}
+
+    gem_views = int(sum(views) / len(views)) if views else 0
+    er = None
+    if engagements and volgers:
+        er = round((sum(engagements) / len(engagements) / volgers) * 100, 2)
+
+    return {"gemeten": True,
+            "bron": ("reels+grid" if reels and grid else ("reels" if reels else "grid")),
+            "posts_bekeken": max(posts_reels, posts_grid),
+            # beide bronnen samen, want de verborgen-teller loopt over allebei
+            "posts_totaal": posts_reels + posts_grid,
+            "avg_views": gem_views, "posts_met_views": len(views),
+            "er_pct": er, "tellingen_verborgen": verborgen_n,
+            "activiteit_gemeten": bool(grid),
+            "collab_posts_overgeslagen": vreemd,
+            "recent_posts": recent, "captions": captions[:5]}
+
+
+def onmogelijk(m, volgers):
+    """Laatste vangnet: cijfers die niet kunnen kloppen nooit als feit melden.
+
+    Zelfs met de eigenaar-filter kan er data doorglippen (bij reels is het
+    user-veld niet altijd gevuld). Een ER boven de 100% betekent meer
+    interacties dan volgers, en een views/volgers-verhouding boven ~60 is voor
+    een nano-creator geen meting maar een meetfout.
+    """
+    if m.get("er_pct") is not None and m["er_pct"] > 100:
+        return f"ER van {m['er_pct']}% kan niet - meer interacties dan volgers"
+    if volgers and m.get("avg_views") and m["avg_views"] / volgers > 60:
+        return (f"{m['avg_views']:,} gem. views op {volgers:,} volgers "
+                f"(factor {m['avg_views']//volgers}) - vrijwel zeker cijfers van "
+                f"een collab-partner").replace(",", ".")
+    return None
+
+
+def toets(m, volgers):
+    """Past de criteria toe. Niet gemeten is NIET hetzelfde als niet gehaald."""
+    redenen, vlaggen = [], []
+    if not m.get("gemeten"):
+        return "ONGEMETEN", [m.get("reden", "onbekend")]
+
+    fout = onmogelijk(m, volgers)
+    if fout:
+        return "ONGEMETEN", [fout]
+
+    if m.get("collab_posts_overgeslagen"):
+        vlaggen.append(f"{m['collab_posts_overgeslagen']} collab-posts van andere "
+                       f"accounts niet meegeteld")
+
+    if m["posts_met_views"] == 0:
+        vlaggen.append("geen views meetbaar (mogelijk foto-first account, zoals partner @jaidenpadel)")
+    elif m["avg_views"] < MIN_AVG_VIEWS:
+        redenen.append(f"te weinig views ({m['avg_views']:,})".replace(",", "."))
+    elif m["avg_views"] > MAX_AVG_VIEWS:
+        vlaggen.append(f"veel views ({m['avg_views']:,})".replace(",", "."))
+
+    # ER alleen toepassen als hij echt meetbaar was. Een maker die zijn
+    # tellingen verbergt mag niet afvallen op een cijfer dat niet bestaat -
+    # dat is dezelfde fout als de oude "ER te laag (0.0%)"-afwijzing die
+    # partner @perrrypanna wegfilterde.
+    if m.get("tellingen_verborgen"):
+        vlaggen.append(f"maker verbergt like-/viewtellingen op "
+                       f"{m['tellingen_verborgen']} van {m.get('posts_totaal') or m['posts_bekeken']} posts - "
+                       f"ER niet te bepalen")
+    elif m["er_pct"] is None:
+        vlaggen.append("ER niet te berekenen")
+    elif m["er_pct"] < MIN_ER_PCT:
+        redenen.append(f"ER te laag ({m['er_pct']}%)")
+
+    if not m.get("activiteit_gemeten"):
+        vlaggen.append("activiteit niet gemeten (geen profielgrid-respons)")
+    elif m["recent_posts"] < MIN_RECENT_POSTS:
+        vlaggen.append(f"weinig recente posts ({m['recent_posts']} in {MAX_INACTIVE_DAYS}d)")
+
+    if redenen:
+        return "AFGEVALLEN", redenen
+    return ("GESLAAGD" if not vlaggen else "GESLAAGD_MET_VLAG"), vlaggen
+
+
+def main():
+    bron = BESTAND or nieuwste_trapB()
+    rows = [json.loads(l) for l in open(bron, encoding="utf-8")]
+    buckets = ("HOUDEN", "TWIJFEL") if OOK_TWIJFEL else ("HOUDEN",)
+    lijst = [r for r in rows if r.get("bucket") in buckets]
+    lijst.sort(key=lambda r: -(r.get("score") or 0))
+    if LIMIET:
+        lijst = lijst[:LIMIET]
+    print(f"Bron: {bron}")
+    print(f"{len(lijst)} profielen doormeten (buckets: {', '.join(buckets)})\n")
+
+    uit = open(UIT_JSONL, "w", encoding="utf-8")
+    resultaten, fouten_op_rij, ongemeten = [], 0, 0
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=False,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+            ignore_default_args=["--enable-automation"])
+        ctx = browser.new_context(viewport={"width": 1280, "height": 900})
+        with open(SESSION_FILE, encoding="utf-8-sig") as f:
+            ctx.add_cookies(json.load(f))
+        page = ctx.new_page()
+        Stealth().apply_stealth_sync(page)
+        page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(3)
+        if "login" in page.url:
+            print("Niet ingelogd - sessie is geflagd. Vraag Lars om een verse cookie-export.")
+            browser.close()
+            return
+
+        t0 = time.time()
+        for i, r in enumerate(lijst, 1):
+            un = r["username"]
+            volgers = r.get("follower_count") or 0
+            m = doormeten(page, un, volgers)
+            status, notities = toets(m, volgers)
+
+            regel = {**r, **m, "trapC_status": status, "trapC_notities": notities}
+            uit.write(json.dumps(regel, ensure_ascii=False) + "\n")
+            uit.flush()
+            resultaten.append(regel)
+
+            if status == "ONGEMETEN":
+                ongemeten += 1
+                fouten_op_rij += 1
+            else:
+                fouten_op_rij = 0
+
+            v = f"{m.get('avg_views') or 0:,}".replace(",", ".")
+            er = f"{m['er_pct']}%" if m.get("er_pct") is not None else "?"
+            print(f"  [{i:3d}/{len(lijst)}] {status:18s} @{un:24s} "
+                  f"{v:>7s} views | ER {er:>6s} | {m.get('recent_posts', '?')} recent"
+                  + (f" | {notities[0]}" if notities else ""))
+
+            # Niet stilletjes doorgaan als het meten structureel mislukt.
+            if fouten_op_rij >= MAX_OPEENVOLGENDE_FOUTEN:
+                print(f"\n!! {fouten_op_rij} keer op rij niets kunnen meten - GESTOPT na {i} profielen.")
+                print("   Doorgaan levert een lijst zonder cijfers op, en dat is precies")
+                print("   de fout die de run van 08-09 24 uur lang maakte.")
+                break
+            time.sleep(THROTTLE)
+
+        browser.close()
+    uit.close()
+    duur = time.time() - t0
+
+    # ── eindlijst ──
+    volgorde = {"GESLAAGD": 0, "GESLAAGD_MET_VLAG": 1, "AFGEVALLEN": 2, "ONGEMETEN": 3}
+    resultaten.sort(key=lambda r: (volgorde.get(r["trapC_status"], 9), -(r.get("avg_views") or 0)))
+    with open(UIT_TXT, "w", encoding="utf-8") as f:
+        f.write("HI GRIP - eindlijst na trap C (views, ER, activiteit)\n")
+        f.write(f"Gemeten: {datetime.now():%Y-%m-%d %H:%M} | bron: {os.path.basename(bron)}\n")
+        f.write(f"Criteria: >= {MIN_AVG_VIEWS:,} views | >= {MIN_ER_PCT}% ER | "
+                f">= {MIN_RECENT_POSTS} posts / {MAX_INACTIVE_DAYS}d\n".replace(",", "."))
+        f.write("=" * 74 + "\n")
+        for status in ("GESLAAGD", "GESLAAGD_MET_VLAG", "AFGEVALLEN", "ONGEMETEN"):
+            groep = [r for r in resultaten if r["trapC_status"] == status]
+            if not groep:
+                continue
+            f.write(f"\n\n-- {status} ({len(groep)}) --\n")
+            for r in groep:
+                v = f"{r.get('avg_views') or 0:,}".replace(",", ".")
+                vlg = f"{r.get('follower_count') or 0:,}".replace(",", ".")
+                er = f"{r['er_pct']}%" if r.get("er_pct") is not None else "onbekend"
+                f.write(f"\n  @{r['username']:26s} {vlg:>8s} vlg | {v:>7s} views | ER {er}\n")
+                f.write(f"  https://www.instagram.com/{r['username']}/\n")
+                f.write(f"  trap B: score {r.get('score')} - {', '.join(r.get('labels') or [])}\n")
+                if r.get("trapC_notities"):
+                    f.write(f"  let op: {'; '.join(r['trapC_notities'])}\n")
+                bio = (r.get("biography") or "").replace("\n", " ")[:150]
+                if bio:
+                    f.write(f"  bio: {bio}\n")
+                for c in (r.get("captions") or [])[:2]:
+                    f.write(f"  caption: {c[:120]}\n")
+
+    telling = {}
+    for r in resultaten:
+        telling[r["trapC_status"]] = telling.get(r["trapC_status"], 0) + 1
+    print(f"\n{'='*66}\nSAMENVATTING\n{'='*66}")
+    for k, n in sorted(telling.items()):
+        print(f"  {k:20s} {n:3d}")
+    print(f"\n  {len(resultaten)} profielen in {duur/60:.1f} min "
+          f"({duur/max(len(resultaten),1):.1f}s per profiel)")
+    if ongemeten:
+        print(f"  {ongemeten} niet kunnen meten - die zijn NIET afgewezen, alleen ongemeten")
+    print(f"\n  eindlijst -> {UIT_TXT}")
+    print(f"  ruwe data -> {UIT_JSONL}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
 ### ig_beoordeling.py
 
 De beoordelaar (nieuw 2026-09-09). Bepaalt HOUDEN / TWIJFEL / WEG / GEEN_DATA op de goedkope velden, zonder LLM. Afgesteld op 242 handmatig beoordeelde profielen; harde afwijzing alleen op prive-account, volgersband en het categorieveld van Instagram zelf.
@@ -604,7 +1011,14 @@ BUITENLAND = re.compile(
     r"\b(barcelona|madrid|london|malaysia|malaysian|jordanian|qatari|"
     r"brasil|brazil|switzerland|suisse|hong kong|scotland|geordie|"
     r"philippines|lithuania|uruguayo|california|mistrz|campeon|"
-    r"latino americano)\b", re.I)
+    r"latino americano|"
+    # Taal is wél een geldig signaal (in tegenstelling tot naamherkomst, zie
+    # regel 5 boven): een bio in het Portugees of Spaans betekent een
+    # Portugees/Spaanstalig publiek, en dus niet de NL-markt. Zonder dit kwamen
+    # 7 van de 16 eindkandidaten uit Brazilie.
+    r"atleta|goleiro|zagueiro|lateral direito|preparador|consultoria|"
+    r"sonho|futebol|jogador|treinador|profissional|educação|"
+    r"jugador|entrenador|equipo|seleccion|deportista)\b", re.I)
 
 CREATOR_SIGNAAL = re.compile(
     r"(creator|content|vlog|maker van reel|digitale maker|collab|samenwerking|"

@@ -1,6 +1,8 @@
 # Posting Frequentie per Platform — HÏ Grip
 
-> Beste tijden om te posten per platform. Voor de platformstrategie: zie [[Platform Richtlijnen]].
+> Beste tijden om te posten per platform. Komt overeen met het brandbook (hfst. 07). Voor de platformstrategie: zie [[Platform Richtlijnen]].
+
+**Beste tijd** = de vetgedrukte slots hieronder: LinkedIn tijdslot 1, Meta ochtend + na werk, TikTok piekmoment. De overige slots zijn redelijke tijden.
 
 ---
 

@@ -21,7 +21,8 @@
 **Merk**
 - [[Brand Identity Overview]] — verhaal, missie, visie, waarden (enige plek)
 - [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, slogans
-- [[Logo & Kleurenpalet]] · [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]]
+- [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[Iconografie]] · [[Fotografie & Art-Direction]]
+- [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]]
 
 **Agent-systeem**
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents

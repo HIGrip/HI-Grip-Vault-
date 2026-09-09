@@ -16,15 +16,21 @@
 
 ## Toegestane emojis
 
+**Vaste set uit het brandbook (hfst. 06):**
+
+💪 ✌️ 🙌 🚀 💯 🔗 👀 ⚽ 🧡 👏 ⚡ 🇳🇱 🔥 🥇 🏆 📍 💎 ⌛
+
 | Categorie | Emojis |
 |---|---|
 | Kracht / Sport | 💪 ✌️ 🙌 🚀 💯 👏 ⚡ 🔥 🏅 🏆 |
 | Locatie / Link | 🔗 📍 |
-| Sfeer | 👀 💎 ⏳ 🔜 🔛 |
+| Sfeer | 👀 💎 ⌛ ⏳ 🔜 🔛 |
 | Ballen (per sport) | ⚽ 🏀 🎾 🏈 🏒 etc. |
 | Kleuren | 🧡 ❤️ (oranje/rood/bijpassende kleur) |
 | Vlag | 🇳🇱 |
 | Prestatie | 🥇 |
+
+De categorietabel is ruimer dan de brandbook-set en blijft bruikbaar; wijkt alleen af in de sport-emoji's en 🔜 / 🔛.
 
 ---
 

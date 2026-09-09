@@ -9,7 +9,7 @@
 - Schrijf **direct** — geen wollige of twijfelende taal
 - Gebruik **Nederlands** als basis, Engelse woorden zijn oké (bijv. "performance")
 - Houd het **sportief en energiek**
-- Voeg **sociale proof** toe waar mogelijk: *"De keuze van 1000+ sporters"*
+- Voeg **sociale proof** toe waar mogelijk: *"De keuze van 2000+ sporters"* (cijfer checken — zie [[Testimonials & Social Proof]])
 - Gebruik emojis spaarzaam — zie [[Emoji Gebruik Gids]]
 - Sluit af met relevante hashtags — zie [[Hashtag Bibliotheek]]
 

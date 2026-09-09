@@ -35,13 +35,22 @@ Mensen die fanatiek bezig zijn om zo sportief en fit mogelijk te zijn.
 ## B2B Doelgroepen
 
 ### 1. Innovatieve Sportclubs
-Vooruitstrevende vrijwilligers en bestuursleden die hun club kennis laten maken met de nieuwste trends. Clubs kunnen ook te maken hebben met spelers die hun sokken afknippen — gripsokken aanbieden als club met voetloze kousen is de oplossing.
+Vooruitstrevende vrijwilligers en bestuursleden die hun club kennis laten maken met de nieuwste trends. Clubs kunnen ook te maken hebben met spelers die hun sokken afknippen — de oplossing is gripsokken plus **Performance Tubes** vanuit de club (zie productnamen in [[Brand Voice & Tone of Voice]]).
 
 ### 2. Performance Retailers
 (Franchise)eigenaren en inkopers die hun assortiment willen differentiëren met innovatieve performance sportswear.
 
 ### 3. Pilates / Sportscholen
 Ondernemers/eigenaren die op zoek zijn naar gripsokken voor hun leden, het liefst met personalisatie.
+
+---
+
+## Toon per kanaal
+
+| Kanaal | Toon |
+|---|---|
+| **B2C** | Emotie en prestatie. Beeld voorop, korte zinnen, het gevoel van winnen. |
+| **B2B** | Zekerheid en bewijs. Specificaties, prijs-kwaliteit, levertijd en personalisatie. Hier draait het om assortiment, ledenbinding en personalisatie — niet om individuele prestatie. |
 
 ---
 

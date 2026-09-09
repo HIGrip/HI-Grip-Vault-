@@ -14,9 +14,9 @@
 
 | Content type | Stijl |
 |---|---|
-| Announcements | Trending house / trance |
-| Lifestyle | Rap (Drake, NL hiphop) |
-| Milestones | Klassieke euforische muziek |
+| Announcement | Trending house & trance |
+| Performance · Lifestyle · Persoonlijk | Rap — Drake & NL hiphop |
+| *Milestones* | *Klassieke euforische muziek — losse playlist, zie [[Brand Symbolen]]* |
 
 ---
 

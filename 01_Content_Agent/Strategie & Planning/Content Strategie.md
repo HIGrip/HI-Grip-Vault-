@@ -65,6 +65,15 @@ Het centrale begrip van HÏ Grip is **presteren**. Het verhaal dat we op social 
 
 HÏ Grip plaatst 4 soorten content op de socials. Door deze mix plaatsen we genoeg content door de haalbaarheid, stralen we onze merkidentiteit uit en gaan we mee met de tijd.
 
+**Streefverdeling: elk type ¼ van de output** (brandbook hfst. 07). In de praktijk stuurt capaciteit dat bij — Performance zoveel mogelijk, Persoonlijk als opvulling.
+
+| Type | Visueel | Caption-formule | Voorbeeld |
+|---|---|---|---|
+| **Performance** | Snelle, scherpe, krachtige beelden | Hook + performance-moment + product + CTA + hashtags | "Die ene redding die alles verandert. 🎾 Performance begint bij grip." |
+| **Persoonlijk** | Rauw, authentiek, behind-the-scenes | Persoonlijk + herkenbaar + luchtig | "Vandaag 200 bestellingen ingepakt. 📦 Dankjewel! 🙌" |
+| **Announcement** | Strak, deskundig, professioneel | Nieuws + waarde + context + hashtags | "Nieuwe partner aan boord. 🤝 Samen bouwen aan performance." |
+| **Lifestyle** | Consistente templates, sportieve angles, sfeer | Kort + sfeer + hashtag | "Grip locked in. 🔒 #Performance" |
+
 ---
 
 ### 1. Performance Content
@@ -147,3 +156,5 @@ Voor de juiste tone of voice: zie [[Brand Voice & Tone of Voice]].
 - [[Brand Voice & Tone of Voice]] — Hoe we schrijven en reageren, taal, productnamen, slogans
 - [[Emoji Gebruik Gids]] — Emojigebruik per platform
 - [[Muziek & Licenties]] — Muziekkeuze per contenttype
+- [[Design Elementen]] — Sjablonen en designregels achter de visuals
+- [[Fotografie & Art-Direction]] — Beeldregels per type

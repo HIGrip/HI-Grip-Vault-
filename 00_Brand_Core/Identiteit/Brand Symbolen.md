@@ -6,13 +6,13 @@
 
 ## Audio-identiteit
 
-Per type content hanteren we bepaalde audio. Overeenkomst: het moet altijd **energiek, trending en sportief** zijn.
+Per contenttype hoort een geluid. Per type content hanteren we bepaalde audio. Overeenkomst: het moet altijd **energiek, trending en sportief** zijn.
 
-| Content type | Muziekstijl |
-|---|---|
-| Aankondigingen / announcements | Trending house / trance |
-| Lifestyle | Rap (Drake, NL hiphop) |
-| Mijlpalen / milestones | Klassieke euforische muziek |
+| Content type | Muziekstijl | Waarom |
+|---|---|---|
+| **Announcement** | Trending house & trance | Energiek en actueel. Onderstreept nieuws, lanceringen en mijlpalen met momentum. |
+| **Performance · Lifestyle · Persoonlijk** | Rap — Drake & NL hiphop | Zelfverzekerd en straatslim. Past bij het gevoel van winnen en de jonge, moderne toon. |
+| *Mijlpalen / milestones* | *Klassieke euforische muziek* | *Aparte playlist uit de oude opzet. Het brandbook schaart mijlpalen onder Announcement — gebruik die tenzij je bewust de milestones-playlist wilt.* |
 
 Voor de bijbehorende Spotify-playlists: zie [[Muziek & Licenties]].
 

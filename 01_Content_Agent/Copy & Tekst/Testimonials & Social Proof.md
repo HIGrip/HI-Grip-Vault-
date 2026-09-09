@@ -9,7 +9,13 @@
 - B2B-referenties — clubs/studio's die HÏ Grip gebruiken
 - Waar elk item wél/niet gebruikt mag worden
 
-⚠️ **Cijfer nog niet uitgelijnd.** Brandbook (2026) zegt **"De keuze van 2000+ sporters"**, de live site toont **"3000+ sporters"** (week 2026-09-07), oudere vault-copy zei 1000+. Kies één onderbouwd getal en trek het door in [[Copy Bank]], [[Brand Voice & Tone of Voice]] en op de site. Vaste zinsvorm uit [[Copy Bank]]: "De keuze van [X]+ sporters." — houd het onderbouwde getal hier bij zodat site en copy hetzelfde cijfer noemen.
+**Actueel cijfer: 3000+** (vastgesteld 2026-09-09 door Lars). Onderbouwing: **3000+ verkochte sokken**. Dit is het getal dat overal gebruikt wordt — site, captions, copy.
+
+Vaste zin uit [[Copy Bank]]: **"De keuze van 3000+ sporters."**
+
+Eerdere getallen: 1000+ (oude vault-copy), 2000+ (brandbook 2026) — beide achterhaald. Als het brandbook opnieuw wordt uitgegeven, moet hfst. 01 en 06 mee naar 3000+.
+
+> Let op bij het formuleren: de teller loopt op **verkochte sokken**, de zin claimt **sporters**. Zolang het aantal sokken hoger ligt dan het aantal klanten is "3000+ sporters" niet één-op-één onderbouwd. Alternatief zonder dat risico: "3000+ sokken onderweg naar sporters."
 
 ## Gerelateerde bestanden
 

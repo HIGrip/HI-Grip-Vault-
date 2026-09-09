@@ -32,7 +32,7 @@
 | Toepassing | Zin |
 |---|---|
 | Positionering | "Wij leggen de basis, jij presteert." |
-| Social proof | "De keuze van 2000+ sporters." (cijfer checken — zie [[Testimonials & Social Proof]]) |
+| Social proof | "De keuze van 3000+ sporters." |
 | Merkbelofte | "Doorgaan wanneer anderen stoppen. Daar staat HÏ Grip." |
 
 ---

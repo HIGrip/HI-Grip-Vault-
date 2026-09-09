@@ -13,11 +13,11 @@ Direct, sportief en energiek. Nederlands als basis, met moderne Engelse woorden 
 | **Direct** | Geen wollige of twijfelende taal. Kort, sportief, to the point. | "Resultaat telt." |
 | **Nederlands + EN** | Nederlands als basis, met moderne woorden als performance, winning, on fire en play. | "On fire vandaag." |
 | **Ondersteunend · expertise** | We staan naast de sporter als kenner en coach. | "Wij leggen de basis, jij presteert." |
-| **Social proof** | We laten zien dat sporters ons al vertrouwen. | "De keuze van 2000+ sporters." |
+| **Social proof** | We laten zien dat sporters ons al vertrouwen. | "De keuze van 3000+ sporters." |
 | **Energiek** | Vol energie, altijd vooruit, nooit vlak. | "Ga door waar anderen stoppen." |
 | **Sportief · modern · jong** | Fris en hip, herkenbaar voor de nieuwe generatie. | "Made for winning." |
 
-> ⚠️ **Social proof — cijfer checken.** Brandbook zegt "2000+ sporters", de live site toont "3000+" (geconstateerd week 2026-09-07). Houd het onderbouwde getal bij in [[Testimonials & Social Proof]] en gebruik overal hetzelfde cijfer.
+> **Social proof — actueel cijfer: 3000+** (per 2026-09-09). Het brandbook drukt nog "2000+" af; dat is achterhaald. Onderbouwing en bijhouden: [[Testimonials & Social Proof]].
 
 ---
 
@@ -25,7 +25,7 @@ Direct, sportief en energiek. Nederlands als basis, met moderne Engelse woorden 
 
 - "Ga door waar anderen stoppen."
 - "Wij leggen de basis, jij presteert."
-- "De keuze van 2000+ sporters."
+- "De keuze van 3000+ sporters."
 - "More grip, better performance."
 
 ## Niet zo schrijven

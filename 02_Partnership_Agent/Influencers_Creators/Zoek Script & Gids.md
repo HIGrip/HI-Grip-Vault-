@@ -131,7 +131,607 @@ NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
 ## Bijlage: volledige broncode (back-up)
 
-> Bron van waarheid is [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-Grip-claude-setup/blob/main/scripts/ig_find_creators.py) in `HI-Grip-claude-setup`. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van het script moet deze kopie mee-geüpdatet worden (memory-regel `feedback_ig_script_sync` in Claude Code).
+> Bron van waarheid zijn de bestanden in `scripts/` van de [`HI-Grip-claude-setup`](https://github.com/HIGrip/HI-Grip-claude-setup) repo. Deze bijlage is een back-up-kopie voor het geval GitHub niet bereikbaar is — bij een update van een script moet deze kopie mee-geüpdatet worden (memory-regel `feedback_ig_script_sync` in Claude Code).
+
+> Bijgewerkt 2026-09-09: het zoeken is gesplitst in drie bestanden. Aanleiding was de run van 08-09 die 24 uur draaide, 1.508 profielen langsliep en 8 bruikbare creators opleverde — met alle metingen via de trage DOM-route omdat het JSON-endpoint geblokkeerd was.
+
+### ig_zoek_trapAB.py
+
+Zoek-pijplijn trap A + B (nieuw 2026-09-09). Vindt kandidaten via Instagram's eigen `discover/chaining`-graaf en zeeft ze op volgers, bio en categorie via `users/{pk}/info/`. Vervangt het per-profiel browsen.
+
+```python
+"""
+HI Grip - zoek-pijplijn trap A + B (2026-09-09).
+
+Vervangt de dure "bezoek elk profiel met de browser"-aanpak door twee
+API-trappen die vanuit de ingelogde paginacontext draaien:
+
+  Trap A - vinden    : /api/v1/discover/chaining/?target_id={pk}
+                       1 request -> 40-80 vergelijkbare accounts, inclusief pk
+  Trap B - zeven     : /api/v1/users/{pk}/info/
+                       1 request (~0,5s) -> volgers, bio, categorie, naam
+
+Trap C (views/ER/postdatums) zit hier bewust NIET in: die is duur en hoort
+alleen te draaien voor wie trap B overleeft. Dit script levert de shortlist.
+
+Gemeten op 2026-09-09, kort na een run van 24 uur:
+  - /api/v1/users/web_profile_info/  -> 429 (geblokkeerd)
+  - /api/v1/users/{pk}/info/         -> 200 in 468ms
+  - /api/v1/discover/chaining/       -> 200 in ~900ms
+De limieten staan dus per endpoint los van elkaar.
+
+Alles wordt per profiel direct weggeschreven (JSONL), inclusief afwijzingen
+met reden - een run van uren mag nooit meer een alles-of-niets-gok zijn.
+
+Gebruik:
+    python ig_zoek_trapAB.py                # volledige run
+    python ig_zoek_trapAB.py --limit 40     # eerst even proeven
+    python ig_zoek_trapAB.py --alleen-trapA # alleen verzamelen, niet zeven
+"""
+import json, os, re, sys, time
+from datetime import datetime
+
+sys.stdout.reconfigure(encoding="utf-8")
+
+from playwright.sync_api import sync_playwright
+from playwright_stealth import Stealth
+
+from ig_beoordeling import beoordeel
+
+_HOME = os.path.expanduser("~")
+SESSION_FILE = os.path.join(_HOME, ".ig_session.json")
+DATABASE_FILE = os.path.join(_HOME, "Documents", "ObsidianVault", "02_Partnership_Agent",
+                             "Influencers_Creators", "Influencer Database.md")
+BEOORDEELD_FILE = os.path.join(_HOME, ".ig_al_beoordeeld.json")
+_STAMP = datetime.now().strftime("%Y-%m-%d_%H%M")
+UIT_JSONL = os.path.join(_HOME, "Downloads", f"HiGrip_trapAB_{_STAMP}.jsonl")
+UIT_LOG = os.path.join(_HOME, "Downloads", f"HiGrip_trapAB_{_STAMP}.log")
+
+IG_APP_ID = "936619743392459"
+
+# Seeds voor trap A. Bewust gekozen op CONTENT, niet op relatie: chaining
+# weerspiegelt de gevestigde volgersgraaf, en loopt dus achter op een creator
+# die recent van niche wisselde (gemeten op @jayjay.wav - actieve partner die
+# nu voetbalcontent maakt, maar wiens graaf nog vol DJ-accounts zit).
+# Lage opbrengst wordt gemeld, NOOIT automatisch verwijderd.
+SEEDS = [
+    "esmaastyle",          # freestyle/panna/futsal NL - beste chaining-opbrengst gemeten
+    "perrrypanna",         # partner, panna
+    "aya.rmx",             # wereldkampioen panna, HFC
+    "saifeljackson",       # panna, El Jackson-netwerk
+    "duncan.g9",           # zaalvoetbal Heracles
+    "jessemarlet",         # freestyle football NL
+    "klaas.clipper",       # freestyle NL
+    "ayoubboukhari10",     # futsal international NL
+    "fabriciorpaiva",      # futsal BR-NL
+    "akkamist",            # bestaand referentie-account voetbal
+    "boersma_goalkeeping", # keepers
+    "boazsmits11",         # voetbal
+]
+
+THROTTLE_TRAP_A = 3.0    # seconden tussen chaining-calls
+THROTTLE_TRAP_B = 1.5    # seconden tussen info-calls
+MAX_OPEENVOLGENDE_FOUTEN = 5   # daarna: stoppen, niet degraderen
+
+ARGS = sys.argv[1:]
+LIMIET = None
+if "--limit" in ARGS:
+    LIMIET = int(ARGS[ARGS.index("--limit") + 1])
+ALLEEN_A = "--alleen-trapA" in ARGS
+
+
+_logfile = open(UIT_LOG, "w", encoding="utf-8")
+
+
+def log(msg=""):
+    print(msg)
+    _logfile.write(msg + "\n")
+    _logfile.flush()
+
+
+def laad_bekende_handles():
+    """Dedupe: alles wat al in de Influencer Database staat of al beoordeeld is."""
+    handles = set()
+    try:
+        with open(DATABASE_FILE, encoding="utf-8") as f:
+            text = f.read()
+        for m in re.finditer(r"\[@([\w.]+)\]\(https://www\.instagram\.com/", text):
+            handles.add(m.group(1).lower())
+        log(f"{len(handles)} accounts uit de Influencer Database geladen (dedupe)")
+    except Exception as e:
+        log(f"Influencer Database niet leesbaar ({e}) - ga verder zonder")
+    try:
+        with open(BEOORDEELD_FILE, encoding="utf-8") as f:
+            eerder = json.load(f)
+        handles |= {h.lower() for h in eerder}
+        log(f"{len(eerder)} eerder beoordeelde accounts geladen (dedupe over runs heen)")
+    except Exception:
+        log("Nog geen eerder-beoordeeld-lijst - die wordt na deze run aangemaakt")
+    return handles
+
+
+# ── API-aanroepen vanuit de paginacontext ────────────────────────────────────
+
+JS_CHAINING = """
+async (a) => {
+    const t0 = performance.now();
+    const resp = await fetch('/api/v1/discover/chaining/?target_id=' + a.pk,
+        {credentials: 'include', headers: {'x-ig-app-id': a.appId}});
+    const txt = await resp.text();
+    let body = null;
+    try { body = JSON.parse(txt); }
+    catch (e) { return {ok: false, status: resp.status, ms: Math.round(performance.now()-t0),
+                        reden: 'geen JSON (waarschijnlijk geblokkeerd)'}; }
+    return {ok: resp.ok, status: resp.status, ms: Math.round(performance.now()-t0),
+            melding: body.message || null,
+            users: (body.users || []).map(u => ({
+                pk: String(u.pk), username: u.username, full_name: u.full_name,
+                is_private: !!u.is_private, is_verified: !!u.is_verified}))};
+}
+"""
+
+JS_INFO = """
+async (a) => {
+    const t0 = performance.now();
+    const resp = await fetch('/api/v1/users/' + a.pk + '/info/',
+        {credentials: 'include', headers: {'x-ig-app-id': a.appId}});
+    const txt = await resp.text();
+    let body = null;
+    try { body = JSON.parse(txt); }
+    catch (e) { return {ok: false, status: resp.status, ms: Math.round(performance.now()-t0),
+                        reden: 'geen JSON (waarschijnlijk geblokkeerd)'}; }
+    const u = body.user || {};
+    return {ok: resp.ok, status: resp.status, ms: Math.round(performance.now()-t0),
+            profiel: {
+                username: u.username, full_name: u.full_name,
+                biography: u.biography, category: u.category,
+                follower_count: u.follower_count, following_count: u.following_count,
+                media_count: u.media_count, is_private: !!u.is_private,
+                is_verified: !!u.is_verified, is_business: !!u.is_business,
+                external_url: u.external_url}};
+}
+"""
+
+
+def pk_van_seed(page, username):
+    """Seeds hebben nog geen pk - die staat in de profielpagina zelf."""
+    try:
+        page.goto(f"https://www.instagram.com/{username}/",
+                  wait_until="domcontentloaded", timeout=25000)
+        time.sleep(2)
+        html = page.content()
+        for pat in [r'"profilePage_(\d+)"', r'"user_id":"(\d+)"', r'"id":"(\d{6,})"']:
+            m = re.search(pat, html)
+            if m:
+                return m.group(1)
+    except Exception as e:
+        log(f"    kon @{username} niet laden: {e}")
+    return None
+
+
+def main():
+    bekend = laad_bekende_handles()
+    gevonden = {}          # username -> {pk, full_name, ...}
+    seed_opbrengst = {}
+    fouten_op_rij = 0
+    uit = open(UIT_JSONL, "w", encoding="utf-8")
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=False,
+            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+            ignore_default_args=["--enable-automation"],
+        )
+        # Geen user_agent-override: die zette de UA op Chrome/124 terwijl de
+        # browser via client hints Chromium 148 meldt. Die mismatch is een
+        # bekend detectiesignaal en levert niets op.
+        context = browser.new_context(viewport={"width": 1280, "height": 900})
+        try:
+            with open(SESSION_FILE, encoding="utf-8-sig") as f:
+                context.add_cookies(json.load(f))
+        except Exception as e:
+            log(f"Kon sessie niet laden: {e}")
+            return
+        page = context.new_page()
+        Stealth().apply_stealth_sync(page)
+
+        page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=30000)
+        time.sleep(3)
+        if "login" in page.url:
+            log("Niet ingelogd - sessie is geflagd. Vraag Lars om een verse cookie-export.")
+            browser.close()
+            return
+
+        # ── TRAP A ──
+        log(f"\n{'='*66}\nTRAP A - vergelijkbare accounts ophalen ({len(SEEDS)} seeds)\n{'='*66}")
+        for seed in SEEDS:
+            pk = pk_van_seed(page, seed)
+            if not pk:
+                log(f"  @{seed:22s} geen pk gevonden - overgeslagen")
+                continue
+            r = page.evaluate(JS_CHAINING, {"pk": pk, "appId": IG_APP_ID})
+            if not r.get("ok"):
+                fouten_op_rij += 1
+                log(f"  @{seed:22s} status {r.get('status')} - {r.get('reden') or r.get('melding')}")
+                if fouten_op_rij >= MAX_OPEENVOLGENDE_FOUTEN:
+                    log(f"\n!! {fouten_op_rij} fouten op rij in trap A - gestopt in plaats van "
+                        f"door te gaan op halve kracht.")
+                    break
+                time.sleep(THROTTLE_TRAP_A)
+                continue
+            fouten_op_rij = 0
+            users = r.get("users") or []
+            nieuw = 0
+            for u in users:
+                un = (u["username"] or "").lower()
+                if not un or un in bekend or un in gevonden:
+                    continue
+                gevonden[un] = u
+                nieuw += 1
+            seed_opbrengst[seed] = {"terug": len(users), "nieuw": nieuw}
+            log(f"  @{seed:22s} {len(users):3d} accounts, {nieuw:3d} nieuw  ({r['ms']}ms)")
+            time.sleep(THROTTLE_TRAP_A)
+
+        log(f"\nTrap A klaar: {len(gevonden)} unieke nieuwe accounts")
+
+        # Lage opbrengst melden, nooit zelf een seed schrappen.
+        mager = [s for s, v in seed_opbrengst.items() if v["nieuw"] <= 3]
+        if mager:
+            log(f"\nLET OP - deze seeds leverden weinig nieuws op: {', '.join('@'+s for s in mager)}")
+            log("  Dat kan betekenen dat hun volgersgraaf achterloopt op hun huidige content")
+            log("  (zoals bij @jayjay.wav). Beoordeel zelf of ze seed moeten blijven -")
+            log("  het script verwijdert ze bewust niet.")
+
+        # Trap A ALTIJD eerst wegschrijven, voor trap B ook maar begint. In de
+        # eerste proefrun stond hier alleen een schrijfactie achter --alleen-trapA,
+        # waardoor een run met --limit 60 de andere 665 gevonden accounts liet
+        # verdampen. Exact dezelfde fout als het oude script maakte.
+        trapA_bestand = UIT_JSONL.replace(".jsonl", "_trapA.jsonl")
+        with open(trapA_bestand, "w", encoding="utf-8") as fa:
+            for un, u in gevonden.items():
+                fa.write(json.dumps({"fase": "trapA", **u}, ensure_ascii=False) + "\n")
+        log(f"Trap A weggeschreven -> {trapA_bestand}")
+
+        if ALLEEN_A:
+            uit.close()
+            browser.close()
+            return
+
+        # ── TRAP B ──
+        kandidaten = list(gevonden.items())
+        if LIMIET:
+            kandidaten = kandidaten[:LIMIET]
+        log(f"\n{'='*66}\nTRAP B - zeven op volgers/bio/categorie ({len(kandidaten)} accounts)\n{'='*66}")
+
+        tellers = {}
+        tijden = []
+        beoordeeld_deze_run = set()
+        fouten_op_rij = 0
+        t_start = time.time()
+
+        for i, (un, basis) in enumerate(kandidaten, 1):
+            if basis.get("is_private"):
+                regel = {"fase": "trapB", "username": un, "pk": basis["pk"],
+                         "full_name": basis.get("full_name"),
+                         "bucket": "WEG", "score": -99, "labels": ["prive account"],
+                         "bron": "chaining"}
+                uit.write(json.dumps(regel, ensure_ascii=False) + "\n")
+                uit.flush()
+                tellers["WEG"] = tellers.get("WEG", 0) + 1
+                beoordeeld_deze_run.add(un)
+                continue
+
+            r = page.evaluate(JS_INFO, {"pk": basis["pk"], "appId": IG_APP_ID})
+            if not r.get("ok"):
+                fouten_op_rij += 1
+                log(f"  [{i:3d}/{len(kandidaten)}] @{un:24s} status {r.get('status')} - {r.get('reden')}")
+                uit.write(json.dumps({"fase": "trapB", "username": un, "pk": basis["pk"],
+                                      "bucket": "FOUT", "status": r.get("status")},
+                                     ensure_ascii=False) + "\n")
+                uit.flush()
+                if fouten_op_rij >= MAX_OPEENVOLGENDE_FOUTEN:
+                    log(f"\n!! {fouten_op_rij} fouten op rij na {i} profielen "
+                        f"({time.time()-t_start:.0f}s) - GESTOPT.")
+                    log("   Dit is precies waar de oude opzet stilletjes terugviel op de "
+                        "trage DOM-route en 24 uur doorging met slechte data.")
+                    break
+                time.sleep(THROTTLE_TRAP_B * 3)
+                continue
+
+            fouten_op_rij = 0
+            tijden.append(r["ms"])
+            prof = r["profiel"]
+            bucket, score, labels = beoordeel(prof)
+            tellers[bucket] = tellers.get(bucket, 0) + 1
+
+            regel = {"fase": "trapB", "username": un, "pk": basis["pk"],
+                     "bucket": bucket, "score": score, "labels": labels,
+                     "bron": "chaining", **prof}
+            uit.write(json.dumps(regel, ensure_ascii=False) + "\n")
+            uit.flush()
+
+            if bucket in ("HOUDEN", "TWIJFEL"):
+                vlg = f"{prof.get('follower_count') or 0:,}".replace(",", ".")
+                log(f"  [{i:3d}/{len(kandidaten)}] {bucket:8s} @{un:24s} {vlg:>8s} vlg "
+                    f"| score {score:2d} | {', '.join(labels)}")
+
+            time.sleep(THROTTLE_TRAP_B)
+
+        uit.close()
+        duur = time.time() - t_start
+
+        # ── samenvatting ──
+        log(f"\n{'='*66}\nSAMENVATTING\n{'='*66}")
+        for b in ("HOUDEN", "TWIJFEL", "WEG", "GEEN_DATA", "FOUT"):
+            if tellers.get(b):
+                log(f"  {b:10s} {tellers[b]:4d}")
+        if tijden:
+            log(f"\n  trap B: {len(tijden)} gelukte calls, gemiddeld {sum(tijden)//len(tijden)}ms")
+            log(f"  totale duur trap B: {duur/60:.1f} min "
+                f"({duur/max(len(tijden),1):.1f}s per profiel incl. throttle)")
+        log(f"\n  per profiel weggeschreven -> {UIT_JSONL}")
+        log(f"  log -> {UIT_LOG}")
+
+        # dedupe-lijst bijwerken zodat afwijzingen niet elke run terugkomen
+        try:
+            eerder = set()
+            if os.path.exists(BEOORDEELD_FILE):
+                with open(BEOORDEELD_FILE, encoding="utf-8") as f:
+                    eerder = set(json.load(f))
+            # Alleen wie daadwerkelijk beoordeeld is. Bij een vroegtijdige stop
+            # (rate limit) mogen de niet-bereikte accounts niet als "al gezien"
+            # gemarkeerd worden - dan zou je ze nooit meer tegenkomen.
+            eerder |= beoordeeld_deze_run
+            with open(BEOORDEELD_FILE, "w", encoding="utf-8") as f:
+                json.dump(sorted(eerder), f)
+            log(f"  al-beoordeeld-lijst nu {len(eerder)} accounts -> {BEOORDEELD_FILE}")
+        except Exception as e:
+            log(f"  kon al-beoordeeld-lijst niet bijwerken: {e}")
+
+        browser.close()
+    _logfile.close()
+
+
+if __name__ == "__main__":
+    main()
+```
+
+### ig_beoordeling.py
+
+De beoordelaar (nieuw 2026-09-09). Bepaalt HOUDEN / TWIJFEL / WEG / GEEN_DATA op de goedkope velden, zonder LLM. Afgesteld op 242 handmatig beoordeelde profielen; harde afwijzing alleen op prive-account, volgersband en het categorieveld van Instagram zelf.
+
+```python
+"""
+HI Grip - beoordeling van een profiel op de goedkope velden.
+
+Gebruikt alleen wat trap B (`/api/v1/users/{pk}/info/`) teruggeeft: bio,
+full_name, categorie, volgers, prive-vlag. Geen LLM, geen extra requests.
+
+Ontwerpregels (gemeten op 242 handmatig beoordeelde profielen, 2026-09-09):
+
+1. HARDE AFWIJZING alleen op wat machinaal zeker is: prive-account,
+   volgersband, en het categorieveld van Instagram zelf. Elke andere harde
+   regel die geprobeerd is produceerde valse afwijzingen - waaronder twee
+   profielen uit de GOED-lijst.
+2. AL HET ANDERE IS EEN GEWICHT, geen veto. Een onterechte afwijzing zie je
+   nooit meer terug; een onterechte doorlater kost drie seconden lezen. Dus
+   royaal afstellen.
+3. LEEFTIJD IS EEN LABEL, geen afwijzing - de categorie "prima, alleen jong"
+   bestaat (bv. @klaas.clipper, beste cijfers van de hele run van 08-09).
+4. CREATOR-SIGNALEN WEGEN OP tegen organisatie-signalen. "Contact:
+   naam@management.com" wijst op een professionele creator, niet op een bedrijf.
+5. GEEN OORDEEL OP NAAMHERKOMST. De niche van HI Grip (street football, panna,
+   futsal) is sterk multicultureel: @esmaastyle, @ayoubboukhari10 en
+   @saifeljackson staan alle drie op de GOED-lijst. Filteren op naamherkomst
+   zou precies de doelgroep wegsnijden. Alleen niet-Latijns SCHRIFT telt als
+   signaal, en dan nog als gewicht, niet als veto.
+"""
+import re
+
+# ── harde grenzen (de enige veto's) ──────────────────────────────────────────
+MIN_VOLGERS = 300
+MAX_VOLGERS = 50_000
+
+# Instagram's eigen categorieveld. Deze waarden zijn per definitie geen
+# persoonlijke creator. Gemeten: 10 terechte afwijzingen op 1 onterechte.
+CATEGORIE_AFWIJZEN = {
+    "sportclub", "sportbond", "sportevenement", "sportteam",
+    "kleding (merk)", "merk", "product/dienst", "webshop", "winkel",
+    "supermarkt", "restaurant", "school", "onderwijs",
+    "non-profitorganisatie", "religieuze organisatie", "overheidsorganisatie",
+    "sports club", "sports league", "sports team", "clothing (brand)",
+    "product/service", "grocery store", "nonprofit organization",
+    # Toegevoegd 2026-09-09 op basis van waarden die de proefrun echt teruggaf -
+    # niet bedacht maar waargenomen. Deze lieten @telstar1963nv (voetbalclub),
+    # @psvinsideofficial (fanmedia) en @voetbal_nutrition_official (supplementen)
+    # ten onrechte door als TWIJFEL/HOUDEN.
+    "professioneel sportteam", "media", "media-/nieuwsbedrijf",
+    "nieuws- en mediawebsite", "sportwinkel", "vitaminen/supplementen",
+    "community", "tijdschrift", "podcast", "professional sports team",
+    "media/news company", "news & media website", "sporting goods store",
+}
+
+# ── gewichten ────────────────────────────────────────────────────────────────
+# Niche bewust ZONDER \b aan het eind: "futsal" moet ook matchen binnen
+# @heraclesalmelofutsal - daarop sneuvelde @duncan.g9 in de eerste versie.
+NICHE_HOOG = re.compile(
+    r"(voetbal|football|soccer|panna|futsal|zaalvoetbal|freestyle|"
+    r"keeper|goalkeep|doelman|basketbal|basketball|streetball|dribbl)"
+    # Emoji tellen mee als niche-signaal: in deze niche is de bio vaak vooral
+    # emoji. @isabella.lim_ had letterlijk "⚽️⚽️⚽️" als hele bio en werd
+    # daardoor afgewezen op "geen sportwoord gevonden".
+    r"|⚽|\U0001F945|\U0001F3C0|\U0001F9E4", re.I)
+NICHE_NORMAAL = re.compile(
+    r"(tennis|padel|rugby|gym|fitness|running|hardlopen|pilates|yoga|"
+    r"ironman|triatlon|atleet|athlete|sport)"
+    r"|\U0001F3BE|\U0001F3C9|\U0001F3CB|\U0001F3C3|\U0001F9D8", re.I)
+
+# Nederlandse clubnamen bevatten vaak geen sportwoord, waardoor een bio als
+# "@gaeagles_vrouwen" (Go Ahead Eagles) of "Creative @rscanderlecht" op
+# "geen sportwoord" sneuvelde terwijl het juist raak is.
+CLUB_VERMELDING = re.compile(
+    r"@\w*(ajax|psv|feyenoord|az\b|utrecht|twente|vitesse|heracles|willem2|"
+    r"nec\b|sparta|excelsior|fortuna|rkc|nac|dordrecht|cambuur|emmen|"
+    r"eagles|graafschap|telstar|volendam|zwolle|groningen|heerenveen|"
+    r"anderlecht|genk|brugge|standard|antwerp|gent)\w*", re.I)
+
+NL_SIGNAAL = re.compile(
+    r"(nederland|nederlandse|dutch|holland|belgie|belgië|belgisch|"
+    r"amsterdam|rotterdam|utrecht|eindhoven|tilburg|almere|leiden|delft|"
+    r"groningen|sneek|zoetermeer|aalsmeer|breda|nijmegen|arnhem|haarlem|"
+    r"eredivisie|knvb|knltb|oranje)"
+    r"|\.nl\b|\bnl\b"
+    r"|\U0001F1F3\U0001F1F1|\U0001F1E7\U0001F1EA", re.I)
+
+# Alleen SCHRIFT en expliciete plaats/land-claims - nooit naamherkomst.
+NIET_LATIJNS = re.compile(r"[؀-ۿЀ-ӿ가-힯一-鿿֐-׿]")
+BUITENLAND = re.compile(
+    r"\U0001F1E7\U0001F1F7|\U0001F1F5\U0001F1ED|\U0001F1F2\U0001F1FE|"
+    r"\U0001F1EE\U0001F1F7|\U0001F1F6\U0001F1E6|\U0001F1EF\U0001F1F4|"
+    r"\U0001F1F1\U0001F1F9|\U0001F1E8\U0001F1ED|\U0001F1F0\U0001F1F7|"
+    r"\U0001F1EA\U0001F1F8|\U0001F1F5\U0001F1F9|\U0001F1EC\U0001F1E7|"
+    r"\b(barcelona|madrid|london|malaysia|malaysian|jordanian|qatari|"
+    r"brasil|brazil|switzerland|suisse|hong kong|scotland|geordie|"
+    r"philippines|lithuania)\b", re.I)
+
+CREATOR_SIGNAAL = re.compile(
+    r"(creator|content|vlog|maker van reel|digitale maker|collab|samenwerking|"
+    r"linktr|link in bio|tiktok|youtube|snapchat|management|"
+    r"\bdm\b|📩|📨|📧|contact:|booking)", re.I)
+PERSOON_SIGNAAL = re.compile(
+    r"(player|speler|atleet|athlete|freestyler|champion|kampioen|"
+    r"i play|ik ben|my |mijn |pro |ex-pro|ex\. pro|prof)", re.I)
+ORGANISATIE = re.compile(
+    r"(official account|officieel account|opgericht|voetbalschool|academie|"
+    r"academy|vereniging|stichting|foundation|organized by|register now|"
+    r"the world.s leading|join to connect|premier .{0,20}team|"
+    r"burgemeester|\bstraat \d|openingstijden)", re.I)
+MERK_PROMO = re.compile(
+    r"(dutch sneaker brand|a padel brand|% off|\bdiscount\b|try for free|"
+    r"shot & edited with|gebruik code|use code|bestel nu|shop now)", re.I)
+
+JONG_SIGNAAL = re.compile(
+    r"(born in 20\d\d|geboren 20\d\d|\b\d{1,2} years old\b|\b\d{1,2} jaar\b|"
+    r"(managed|run) by (my )?(mom|dad|mother|father)|beheerd door|"
+    r"\bu ?1[0-8]\b|\bo1[0-8]\b|\bjo1[0-8]\b|lichting 20\d\d)", re.I)
+
+# Concurrerende gripsokken-merken (Evaluatiecriteria: uitsluiting)
+CONCURRENT = re.compile(
+    r"(trusox|tapedesign|gripsock|grip sock|gripsokken|soxpro|liiteguard)", re.I)
+
+DREMPEL_HOUDEN = 7
+DREMPEL_TWIJFEL = 2
+
+
+def beoordeel(profiel):
+    """
+    profiel: dict met keys username, full_name, biography, category,
+             follower_count, is_private.
+
+    Retourneert (bucket, score, labels) waarbij bucket een van:
+      HOUDEN     - kandidaat, door naar trap C (views/ER meten)
+      TWIJFEL    - door naar trap C, maar met lagere prioriteit
+      WEG        - afgewezen, met reden
+      GEEN_DATA  - te weinig informatie om over te oordelen
+    """
+    labels = []
+    bio = (profiel.get("biography") or "").strip()
+    naam = (profiel.get("full_name") or "").strip()
+    cat = (profiel.get("category") or "").strip()
+    volgers = profiel.get("follower_count")
+
+    # ── veto 1: prive ──
+    if profiel.get("is_private"):
+        return "WEG", -99, ["prive account"]
+
+    # ── veto 2: categorieveld van Instagram zelf ──
+    if cat and cat.lower() in CATEGORIE_AFWIJZEN:
+        return "WEG", -99, [f"IG-categorie: {cat}"]
+
+    # ── veto 3: volgersband ──
+    if volgers is not None and volgers > 0:
+        if volgers < MIN_VOLGERS:
+            return "WEG", -99, [f"te weinig volgers ({volgers:,})".replace(",", ".")]
+        if volgers > MAX_VOLGERS:
+            return "WEG", -99, [f"te veel volgers ({volgers:,})".replace(",", ".")]
+
+    # ── vanaf hier: alleen gewichten ──
+    tekst = f"{bio} {naam} {cat}"
+    if not bio and not cat:
+        return "GEEN_DATA", 0, ["geen bio en geen categorie opgehaald"]
+
+    # Een bio van een paar tekens ("ye") of alleen een @vermelding zegt niets.
+    # Die hoort in GEEN_DATA, niet in WEG: we hebben geen bewijs, geen oordeel.
+    kaal = re.sub(r"[@\w.]+", "", bio).strip()
+    if len(bio) < 12 and not NICHE_HOOG.search(tekst) and not NICHE_NORMAAL.search(tekst):
+        return "GEEN_DATA", 0, ["bio te kort om over te oordelen"]
+
+    score = 0
+
+    if NICHE_HOOG.search(tekst):
+        score += 4
+        labels.append("niche hoog")
+    elif NICHE_NORMAAL.search(tekst):
+        score += 2
+        labels.append("niche normaal")
+    elif CLUB_VERMELDING.search(tekst):
+        score += 3
+        labels.append("clubvermelding")
+    else:
+        score -= 3
+        labels.append("geen sportwoord gevonden")
+
+    nl = bool(NL_SIGNAAL.search(tekst))
+    if nl:
+        score += 3
+        labels.append("NL-signaal")
+    if NIET_LATIJNS.search(tekst):
+        score -= 2 if not nl else 0
+        labels.append("niet-Latijns schrift")
+    if BUITENLAND.search(tekst):
+        score -= 3 if not nl else 1
+        labels.append("buitenlandsignaal")
+
+    creator = bool(CREATOR_SIGNAAL.search(tekst))
+    if creator:
+        score += 3
+        labels.append("creator-signaal")
+    if PERSOON_SIGNAAL.search(tekst):
+        score += 2
+        labels.append("persoon")
+
+    if ORGANISATIE.search(tekst):
+        if creator:
+            score -= 1
+            labels.append("organisatiewoorden, maar ook creator-signaal")
+        else:
+            score -= 4
+            labels.append("organisatie")
+    if MERK_PROMO.search(tekst):
+        score -= 3
+        labels.append("merk/promo")
+
+    if CONCURRENT.search(tekst):
+        return "WEG", -99, ["promoot een concurrerend gripsokken-merk"]
+
+    # Label, bewust geen aftrek (regel 3).
+    if JONG_SIGNAAL.search(tekst):
+        labels.append("LET OP: mogelijk jong")
+
+    if volgers and 2000 <= volgers <= 30000:
+        score += 1
+        labels.append("ideale volgersband")
+
+    if score >= DREMPEL_HOUDEN:
+        return "HOUDEN", score, labels
+    if score >= DREMPEL_TWIJFEL:
+        return "TWIJFEL", score, labels
+    return "WEG", score, labels
+```
+
+### ig_find_creators.py
+
+Het oorspronkelijke script. Blijft in gebruik voor de content-gebaseerde bronnen (hashtags, commenters op partner-reels) en voor het doormeten van views/ER, maar niet meer voor breed zoeken.
 
 ```python
 """
@@ -181,6 +781,11 @@ UNATTENDED = "--unattended" in sys.argv
 class LoginRequiresVerification(Exception):
     pass
 
+
+class SystemExit_Degradatie(Exception):
+    """JSON-endpoint geblokkeerd; doorgaan levert alleen schijnresultaat."""
+    pass
+
 _HOME         = os.path.expanduser("~")
 SESSION_FILE  = os.path.join(_HOME, ".ig_session.json")
 OUTPUT_FILE   = os.path.join(_HOME, "Downloads", "HiGrip_Creators.txt")
@@ -203,8 +808,18 @@ CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following l
 # Scan commenters op reels van accounts die dit account volgt.
 # lars_a.i.h volgt bewust voetbal-influencers als curated shortlist — commenters
 # op hun content zijn veel gerichter dan willekeurige hashtag-posters.
+#
+# INGEPERKT 2026-09-09 na meting op de run van 08-09: deze bron leverde 1.221
+# van de 1.810 profielen (67% van de looptijd, ~44 min alleen al voor het
+# verzamelen) en daaruit kwam GEEN ENKELE bruikbare creator. Reageerders op
+# reels zijn overwegend gewone volgers, geen makers.
+# Niet geschrapt maar ingeperkt: voor een creator die recent van niche wisselde
+# (zoals partner @jayjay.wav, die nu voetbalcontent maakt terwijl zijn
+# volgersgraaf nog vol DJ-accounts zit) is een content-gebaseerde bron juist
+# actueler dan de graaf-gebaseerde chaining uit ig_zoek_trapAB.py.
+# Breed zoeken hoort nu in ig_zoek_trapAB.py; dit is de gerichte variant.
 COMMENTER_SEED_ACCOUNTS  = ["lars_a.i.h"]
-COMMENTER_SEED_FOLLOW_MAX = 60   # max accounts uit de following-lijst te scannen
+COMMENTER_SEED_FOLLOW_MAX = 8    # was 60 - alleen de dichtstbijzijnde accounts
 REELS_PER_COMMENTER_SEED  = 3    # reels per gevolgd account
 
 HASHTAGS = {
@@ -683,6 +1298,13 @@ def evaluate_profile(page, username):
         "status": "candidate",
         "handle": f"@{username}",
         "url": f"https://www.instagram.com/{username}/",
+        # full_name en category werden nooit opgeslagen, terwijl ze wél in de
+        # respons zitten. Bij de handmatige beoordeling van 09-09 bleken 46 van
+        # de 47 "niet nederlands"-oordelen op de NAAM te berusten, en het
+        # categorieveld ("Sportclub", "Media-/nieuwsbedrijf") wijst organisaties
+        # direct aan. Zie ig_beoordeling.py, dat op deze velden werkt.
+        "full_name": (user.get("full_name") or "").strip(),
+        "category": (user.get("category") or user.get("category_name") or "").strip(),
         "followers": followers,
         "avg_views": avg_views,
         "er_pct": er_pct,
@@ -1034,10 +1656,13 @@ def new_context(p):
         args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
         ignore_default_args=["--enable-automation"],
     )
-    context = browser.new_context(
-        viewport={"width": 1280, "height": 900},
-        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    )
+    # Geen user_agent-override meer (2026-09-09). Die stond op Chrome/124 terwijl
+    # de browser via Sec-CH-UA client hints Chromium 148 meldt - Playwright werkt
+    # de client hints namelijk niet bij als je alleen de UA-string overschrijft.
+    # Zo'n mismatch is een bekend detectiesignaal. In een A/B-test gaven beide
+    # varianten hetzelfde resultaat (429), dus het leverde niets op en kostte
+    # alleen risico.
+    context = browser.new_context(viewport={"width": 1280, "height": 900})
     if os.path.exists(SESSION_FILE):
         try:
             with open(SESSION_FILE, encoding="utf-8-sig") as f:
@@ -1054,6 +1679,23 @@ def main():
     known_handles = load_known_handles()
     seen = set(known_handles)
     results = {"candidate": [], "review": []}
+
+    # Per profiel direct wegschrijven, inclusief afwijzingen mét reden.
+    # De run van 08-09 draaide 24 uur en hield alles in geheugen tot het eind;
+    # bij afbreken was alles weg (die is uiteindelijk met een debugger uit het
+    # levende proces gered). Bovendien waren de ~1.266 afwijzingen alleen naar
+    # de console geprint, zodat achteraf niet te controleren was of de filters
+    # goede kandidaten weggooiden.
+    stamp = datetime.now().strftime("%Y-%m-%d_%H%M")
+    jsonl_path = os.path.join(_HOME, "Downloads", f"HiGrip_profielen_{stamp}.jsonl")
+    jsonl = open(jsonl_path, "w", encoding="utf-8")
+    print(f"Live-uitvoer per profiel -> {jsonl_path}\n")
+
+    # Als het JSON-endpoint structureel faalt, valt het script terug op de
+    # DOM-route. Die is 3x trager én levert geen ER/activiteit/captions op,
+    # waardoor de helft van de criteria stilzwijgend niet meer wordt toegepast.
+    # Op 08-09 gebeurde dat voor 242 van 242 profielen, 24 uur lang.
+    fallback_teller = {"n": 0, "totaal": 0}
 
     with sync_playwright() as p:
         browser, context, page = new_context(p)
@@ -1116,45 +1758,76 @@ def main():
 
         # Evalueer alle unieke kandidaten uit alle bronnen
         print(f"\n{'='*40}\nPROFIELEN EVALUEREN\n{'='*40}")
-        for source, usernames in candidates_by_source.items():
-            unique = []
-            for u in usernames:
-                if u not in seen:
-                    seen.add(u)
-                    unique.append(u)
-            if not unique:
-                continue
-            print(f"\n  {len(unique)} unieke profielen checken voor {source}...")
+        try:
+          for source, usernames in candidates_by_source.items():
+              unique = []
+              for u in usernames:
+                  if u not in seen:
+                      seen.add(u)
+                      unique.append(u)
+              if not unique:
+                  continue
+              print(f"\n  {len(unique)} unieke profielen checken voor {source}...")
 
-            for idx, uname in enumerate(unique):
-                time.sleep(2.5)
-                if idx > 0 and idx % 8 == 0:
-                    # Korte pauze + terug naar homepage om rate-limit te vermijden
-                    print(f"    [pauze na {idx} profielen]")
-                    try:
-                        page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=15000)
-                    except Exception:
-                        pass
-                    time.sleep(8)
+              for idx, uname in enumerate(unique):
+                  time.sleep(2.5)
+                  if idx > 0 and idx % 8 == 0:
+                      # Korte pauze + terug naar homepage om rate-limit te vermijden
+                      print(f"    [pauze na {idx} profielen]")
+                      try:
+                          page.goto("https://www.instagram.com/", wait_until="domcontentloaded", timeout=15000)
+                      except Exception:
+                          pass
+                      time.sleep(8)
 
-                result = evaluate_profile(page, uname)
-                if result is None:
-                    print(f"    ! @{uname} - kon niet laden")
-                    continue
+                  result = evaluate_profile(page, uname)
+                  if result is None:
+                      print(f"    ! @{uname} - kon niet laden")
+                      jsonl.write(json.dumps({"handle": f"@{uname}", "source": source,
+                                              "status": "niet_geladen"},
+                                             ensure_ascii=False) + "\n")
+                      jsonl.flush()
+                      continue
 
-                result["source"] = source
+                  result["source"] = source
 
-                if result["status"] == "reject":
-                    print(f"    x  @{uname} - {result['reason']}")
-                    continue
+                  # Degradatie bewaken: bij >50% fallback op een redelijke steekproef
+                  # klopt er iets niet en is doorgaan zinloos - dan meet je alleen
+                  # nog volgers en lever je zwakke kandidaten zonder dat iemand het ziet.
+                  fallback_teller["totaal"] += 1
+                  if result.get("fallback"):
+                      fallback_teller["n"] += 1
+                  if fallback_teller["totaal"] >= 25:
+                      aandeel = fallback_teller["n"] / fallback_teller["totaal"]
+                      if aandeel > 0.5:
+                          print(f"\n!! GESTOPT: {fallback_teller['n']} van "
+                                f"{fallback_teller['totaal']} profielen viel terug op de "
+                                f"DOM-route ({aandeel:.0%}).")
+                          print("   Het JSON-endpoint is geblokkeerd. ER, activiteit en")
+                          print("   captions worden dan niet gemeten, dus de helft van de")
+                          print("   criteria wordt niet toegepast. Doorgaan levert alleen")
+                          print("   schijnresultaat op. Probeer het later opnieuw.")
+                          raise SystemExit_Degradatie()
 
-                results[result["status"]].append(result)
-                fol_str = f"{result['followers']:,}" if result["followers"] else "?"
-                view_str = f"{result['avg_views']:,}" if result["avg_views"] else "?"
-                er_str = f"{result['er_pct']}%" if result["er_pct"] is not None else "onbekend"
-                mark = "OK" if result["status"] == "candidate" else "??"
-                print(f"    {mark} @{uname} - {fol_str} volgers | {view_str} gem. views | ER {er_str}")
+                  # Alles wegschrijven, ook de afwijzingen - die zijn nodig om
+                  # achteraf te kunnen controleren of de filters te streng waren.
+                  jsonl.write(json.dumps(result, ensure_ascii=False) + "\n")
+                  jsonl.flush()
 
+                  if result["status"] == "reject":
+                      print(f"    x  @{uname} - {result['reason']}")
+                      continue
+
+                  results[result["status"]].append(result)
+                  fol_str = f"{result['followers']:,}" if result["followers"] else "?"
+                  view_str = f"{result['avg_views']:,}" if result["avg_views"] else "?"
+                  er_str = f"{result['er_pct']}%" if result["er_pct"] is not None else "onbekend"
+                  mark = "OK" if result["status"] == "candidate" else "??"
+                  print(f"    {mark} @{uname} - {fol_str} volgers | {view_str} gem. views | ER {er_str}")
+
+        except SystemExit_Degradatie:
+            print("   Wat al beoordeeld is staat in het JSONL-bestand en"
+                  " komt hieronder ook in het tekstrapport.")
         browser.close()
 
     # ── output schrijven ──

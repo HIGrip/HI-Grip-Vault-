@@ -411,8 +411,11 @@ def main():
 
         for i, (un, basis) in enumerate(kandidaten, 1):
             if basis.get("is_private"):
+                # is_private MOET mee: zonder dat veld is de regel niet
+                # zelfbeschrijvend en komt een prive-account bij het offline
+                # herbeoordelen als GEEN_DATA terug in plaats van als afwijzing.
                 regel = {"fase": "trapB", "username": un, "pk": basis["pk"],
-                         "full_name": basis.get("full_name"),
+                         "full_name": basis.get("full_name"), "is_private": True,
                          "bucket": "WEG", "score": -99, "labels": ["prive account"],
                          "bron": "chaining"}
                 uit.write(json.dumps(regel, ensure_ascii=False) + "\n")
@@ -449,6 +452,7 @@ def main():
                      "bron": "chaining", **prof}
             uit.write(json.dumps(regel, ensure_ascii=False) + "\n")
             uit.flush()
+            beoordeeld_deze_run.add(un)
 
             if bucket in ("HOUDEN", "TWIJFEL"):
                 vlg = f"{prof.get('follower_count') or 0:,}".replace(",", ".")
@@ -527,6 +531,7 @@ Ontwerpregels (gemeten op 242 handmatig beoordeelde profielen, 2026-09-09):
    signaal, en dan nog als gewicht, niet als veto.
 """
 import re
+import unicodedata
 
 # ── harde grenzen (de enige veto's) ──────────────────────────────────────────
 MIN_VOLGERS = 300
@@ -590,9 +595,16 @@ BUITENLAND = re.compile(
     r"\U0001F1EE\U0001F1F7|\U0001F1F6\U0001F1E6|\U0001F1EF\U0001F1F4|"
     r"\U0001F1F1\U0001F1F9|\U0001F1E8\U0001F1ED|\U0001F1F0\U0001F1F7|"
     r"\U0001F1EA\U0001F1F8|\U0001F1F5\U0001F1F9|\U0001F1EC\U0001F1E7|"
+    # Toegevoegd na de run van 11:16: AR, PL, MX, UY, EE, TR, DK, US, IT
+    # kwamen er allemaal doorheen (@maximasifs, @pawelskora28, @m3mofs,
+    # @fbarba_gk1, @karlhynerson).
+    r"\U0001F1E6\U0001F1F7|\U0001F1F5\U0001F1F1|\U0001F1F2\U0001F1FD|"
+    r"\U0001F1FA\U0001F1FE|\U0001F1EA\U0001F1EA|\U0001F1F9\U0001F1F7|"
+    r"\U0001F1E9\U0001F1F0|\U0001F1FA\U0001F1F8|\U0001F1EE\U0001F1F9|"
     r"\b(barcelona|madrid|london|malaysia|malaysian|jordanian|qatari|"
     r"brasil|brazil|switzerland|suisse|hong kong|scotland|geordie|"
-    r"philippines|lithuania)\b", re.I)
+    r"philippines|lithuania|uruguayo|california|mistrz|campeon|"
+    r"latino americano)\b", re.I)
 
 CREATOR_SIGNAAL = re.compile(
     r"(creator|content|vlog|maker van reel|digitale maker|collab|samenwerking|"
@@ -605,19 +617,23 @@ ORGANISATIE = re.compile(
     r"(official account|officieel account|opgericht|voetbalschool|academie|"
     r"academy|vereniging|stichting|foundation|organized by|register now|"
     r"the world.s leading|join to connect|premier .{0,20}team|"
-    r"burgemeester|\bstraat \d|openingstijden)", re.I)
+    r"burgemeester|\bstraat \d|openingstijden|"
+    # Makelaars/management-bureaus zijn geen creator (@hugovliese).
+    r"licensed football agent|spelersmakelaar|player manager|"
+    r"officiële pagina|official page|landskampioen \d{4})", re.I)
 MERK_PROMO = re.compile(
     r"(dutch sneaker brand|a padel brand|% off|\bdiscount\b|try for free|"
     r"shot & edited with|gebruik code|use code|bestel nu|shop now)", re.I)
 
 JONG_SIGNAAL = re.compile(
     r"(born in 20\d\d|geboren 20\d\d|\b\d{1,2} years old\b|\b\d{1,2} jaar\b|"
+    r"\b\d{1,2} ?y/?o\b|\bjeugd\b|\btalent u ?\d\d\b|"
     r"(managed|run) by (my )?(mom|dad|mother|father)|beheerd door|"
     r"\bu ?1[0-8]\b|\bo1[0-8]\b|\bjo1[0-8]\b|lichting 20\d\d)", re.I)
 
 # Concurrerende gripsokken-merken (Evaluatiecriteria: uitsluiting)
 CONCURRENT = re.compile(
-    r"(trusox|tapedesign|gripsock|grip sock|gripsokken|soxpro|liiteguard)", re.I)
+    r"(trusox|tapedesign|gripsock|grip sock|gripsokken|soxpro|liiteguard|gripmode|gripgrab|nonbi|storelli|falke grip)", re.I)
 
 DREMPEL_HOUDEN = 7
 DREMPEL_TWIJFEL = 2
@@ -656,6 +672,13 @@ def beoordeel(profiel):
             return "WEG", -99, [f"te veel volgers ({volgers:,})".replace(",", ".")]
 
     # ── vanaf hier: alleen gewichten ──
+    # Instagram-bio's staan vol wiskundige/schreefloze unicode-varianten
+    # (𝗢𝗳𝗳... i.p.v. gewone letters). Zonder normalisatie matcht geen enkele
+    # regex daarop: zo kwam @svdso_zoetermeer ("Officieel account van SV DSO")
+    # met score 11 als HOUDEN binnen.
+    def _norm(s):
+        return unicodedata.normalize('NFKC', s or '')
+    bio, naam, cat = _norm(bio), _norm(naam), _norm(cat)
     tekst = f"{bio} {naam} {cat}"
     if not bio and not cat:
         return "GEEN_DATA", 0, ["geen bio en geen categorie opgehaald"]

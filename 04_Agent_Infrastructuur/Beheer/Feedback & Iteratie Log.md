@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-09-14 — Denzel's weekroutine deed alleen nog checken/signaleren, niet het werk waarvoor hij al mandaat had
+
+**Wat er gebeurde:** lars merkte dat Denzel's wekelijkse routine (`trig_01D9XwMiVvuq1FWr7CLoYTmN`) technisch prima draaide (elke maandag succesvol, pusht ook echt naar GitHub — de eerdere push-blokkade uit augustus speelt niet meer), maar inhoudelijk elke week hetzelfde deed: zelfde 3 open punten steeds opnieuw signaleren (structured data 2 weken kapot op live, SEO-meta-voorstel 4 weken op de plank, 6 partnership-kandidaten 3 weken onbeoordeeld) zonder er zelf iets mee te doen.
+
+Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autonomie die simpelweg niet in de routine gebruikt werd — geen nieuw autonomie-besluit nodig, alleen de routine-prompt bijwerken:
+- **Partnership Agent**: "Kandidaat beoordelen tegen Evaluatiecriteria/Ideale Partner Profiel" staat al op Zelf doen (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] sectie B).
+- **Website Agent**: "Meta title/description & structured data" staat al op Zelf doen (zie [[Agent Takenverdeling & Grenzen]] sectie B) — maar de cloud-routine heeft geen Shopify-inloggegevens/CLI-toegang, dus kan niet zelf pushen. Oplossing: Denzel schrijft nu de kant-en-klare fix (exacte HTML/JSON-LD) uit in het weekoverzicht, zodat een lokale sessie het zonder heruitzoeken kan doorvoeren.
+- **Content Agent**: content-ideeën/kalender staat op "Voorstellen, ik keur goed" (niet geblokkeerd) — automatisering hiervan lag bewust stil omdat lars dit eerst intern met de content-afdeling wilde afstemmen. Lars heeft deze hold op 2026-09-14 zelf opgeheven; dus vanaf nu wekelijks een concreet content-voorstel (nog steeds ter goedkeuring, nooit direct gepubliceerd).
+
+**Wat is aangepast:** routine-prompt bijgewerkt via `RemoteTrigger update` (stappen 2b/2c/4b toegevoegd) — zelfde trigger_id, geen dubbele routine aangemaakt. Harde grenzen (nooit outreach, nooit publiceren, nooit live pushen, nooit voorwaarden toezeggen) blijven ongewijzigd.
+
+**Why:** lars: "hij moet de andere [agents] meer aan het werk zetten en hun werk controleren." Het patroon was dat Denzel's mandaat groter was dan zijn gedrag — de kwaliteitscontrole-loop uit [[soul Denzel]] werkt, maar alleen als de routine ook daadwerkelijk om die acties vraagt.
+
+**How to apply:** bij een volgende klacht van lars over stilstand, eerst checken of het een *mandaat*-probleem is (routine vraagt er niet om) of een *autonomie*-probleem (hoofdagent mag het niet) — dat onderscheid bepaalt of je de routine-prompt aanpast of een echt nieuw autonomie-besluit met lars nodig hebt. Check de actuele `Agent Takenverdeling & Grenzen*.md`-bestanden, neem nooit een niveau aan uit een oude routine-prompt.
+
 ## 2026-09-01 — Buffer → Claude Code koppeling live (`buffer` MCP) — 2 van de 3 "fundamenteel gat"-databronnen dicht
 
 **Wat er gebeurde:** de Buffer-koppeling die sinds de kwaliteitsreview van 25-08 als blocker openstond, is opgezet met een API-key (Bearer-token) i.p.v. de OAuth-connector. Token geverifieerd tegen `https://mcp.buffer.com/mcp` — `get_account` gaf het HÏ Grip-account terug, alle 20 tools zichtbaar. Volledige eindopzet: [[API & Tool Connections]] § Buffer. Dit sluit de tweede van de drie ontbrekende feedbackbronnen uit de review van 25-08 (GA4 ✅ / Buffer ✅ / volledige Shopify-data ✗).

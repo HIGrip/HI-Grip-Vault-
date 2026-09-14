@@ -6,6 +6,7 @@
 | Content-ideeën bedenken | Voorstellen, ik keur goed |
 | Content-idee zelf in Buffer's ideeënbord zetten (Unassigned-kolom, met juiste pillar-tag) | Zelf doen — vastgesteld 14-9-2026 |
 | Sparringpartner zijn: proactief idee aandragen én reageren op idee van de content-persoon | Zelf doen, doorlopend gesprek — vastgesteld 14-9-2026 |
+| Ideeën in Buffer's "Nog inplannen"-groep voorzien van een korte, globale beschrijving (hoek + ruw script + benodigdheden/locatie) | Zelf doen — vastgesteld 14-9-2026 |
 | Contentkalender vullen | Voorstellen, ik keur goed |
 | Content pillars bewaken / timing-frequentie per platform plannen | Voorstellen, ik keur goed |
 | Concept-caption/CTA/hashtags schrijven | Zelf doen |

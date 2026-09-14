@@ -25,11 +25,19 @@
 - **Gmail dark-mode CSS-hooks gecombineerd houden**: `.foo, [data-ogsc] .foo, [data-ogsb] .foo` moet als **één** CSS-regel blijven staan. Los splitsen draaide Gmail's kleuren eerder om (zwart/wit verwisseld).
 - **Geen nep-countdown/nep-mechanismen** — een statisch (merge-tag-)element mag nooit de visuele grammatica krijgen van een live klok/countdown/mechanisme als het dat niet daadwerkelijk is (bv. een groot cijfer dat er als aflopende klok uitziet, maar bij later openen niet meer klopt). Geldt voor elke e-mail, niet alleen kortingsacties.
 
-## Merk-stijl (gedeeld met de rest van de site)
+## Merk-stijl (bron: Brand Core, hetzelfde brandbook als de rest van de site)
+
+> De e-mailontwerpen tot nu toe (dark-hero/radial-glow-systeem) zijn in de praktijk ontstaan, los van het onderstaande brandbook. Ze komen grotendeels overeen met de brandbook-regels (donker, accent als glow niet als vulling, performance-gevoel), maar zijn er nooit expliciet naast gelegd — bij een volgende ontwerpronde dit wél doen, met name het halftone-raster en de iconenset hieronder zijn nog niet gebruikt in e-mail.
 
 - Merknaam altijd **HÏ Grip** (umlaut), nooit "HI Grip"/"Hi Grip"
-- Toon: energiek, direct, zelfverzekerd, geen corporate taal — zie [[Brand Voice & Tone of Voice]]
-- Kleuren/logo: [[Logo & Kleurenpalet]]
+- **Merkverhaal/missie/visie/waarden:** [[Brand Identity Overview]] — de kern-driehoek **comfort · vertrouwen · innovatie** hoort in elk ontwerp herkenbaar terug te komen, ook in e-mail
+- **Toon:** energiek, direct, zelfverzekerd, geen corporate taal — [[Brand Voice & Tone of Voice]]
+- **Kleuren/logo/typografie:** [[Logo & Kleurenpalet]]
+- **De 5 designprincipes** (elk ontwerp hierop toetsen — [[Design Elementen]]): 01 Performance (scherp, in beweging, nooit statisch), 02 Whitespace (genoeg lucht), 03 Emoties, 04 Branding (de driehoek), 05 Stijl (volwassen/sportief/energiek, grid patterns als handtekening)
+- **Halftone-raster** (het grid van de sok als dots — de merk-handtekening): max. 1 rasterelement per uiting, wit-op-zwart is standaard, dotafstand nooit ongelijk oprekken — zie [[Design Elementen]]. Nog niet toegepast in de bestaande e-mails; kandidaat voor een volgende iteratie i.p.v. alleen de radial-glow
+- **Fotografie:** sportieve, dynamische angles, hard gericht licht, macro-detail op grip/mesh, cinematisch hoog contrast — nooit vlak studiolicht, geen stockfoto-poses, geen wit-tafel-productshots — [[Fotografie & Art-Direction]]
+- **Iconografie:** witte line-art op zwart, gelijke stroke, **outline is de standaard variant** (fill/motion/triangle alleen voor gerichte nadruk) — de webshop-categorie (11 iconen: performance/comfort/verzending/vinkje/kruisje) is het meest relevant voor e-mail-USP-balken — [[Iconografie]]
+- **Audio/geur** ([[Brand Symbolen]]) — niet relevant voor statische e-mail, wel voor eventuele video-content in een mail
 - Caption/copy-stijl (geen AI-hypetaal, geen geforceerde CTA's, kort/feitelijk/rustig) geldt ook voor e-mailcopy
 
 ## Werkwijze bij een nieuwe e-mail
@@ -46,5 +54,10 @@
 - [[E-mail Mailflows Artifact]]
 - [[E-mail Lijst Strategie]]
 - [[E-mail Marketing Benchmarks]]
+- [[Brand Identity Overview]]
 - [[Brand Voice & Tone of Voice]]
 - [[Logo & Kleurenpalet]]
+- [[Design Elementen]]
+- [[Fotografie & Art-Direction]]
+- [[Iconografie]]
+- [[Brand Symbolen]]

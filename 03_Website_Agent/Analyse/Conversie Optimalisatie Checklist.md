@@ -15,6 +15,34 @@
 - [ ] Performance check laten draaien (PageSpeed Insights) — homepage weegt 357KB HTML met 5 Shopify-app-extensies, exacte Core Web Vitals nog niet gemeten
 - [ ] Autoriteit-cue (wetenschappelijke onderbouwing) eerder op de pagina zichtbaar maken, niet pas in de FAQ onderaan
 
+## Blog-structuur & content (voorstel, 2026-09-14)
+
+> Aanleiding: GA4 laat zien dat de 24 bestaande blogposts nauwelijks bezoek krijgen (2-4 views/2 weken per post). Root cause is geen contenttekort maar **interne linking** — zie onderbouwing hieronder. Status: **voorstel — nog niet doorgevoerd.**
+
+**Fase 1 — technische fix (hoogste impact, laagste moeite):**
+- [ ] Hub-pagina `/pages/blogs` linkt nu naar maar 10 van de 24 posts — uitbreiden naar alle posts, gegroepeerd per pijler
+- [ ] `/blogs/hi-grip` en `/blogs/trends` (blog-indexpagina's, tonen wel alle posts van hun blog) zelf linken vanuit hub/footer — nu nergens intern gelinkt, alleen via sitemap vindbaar
+- [ ] "Lees ook"-blok (2-3 gerelateerde posts) + duidelijke CTA naar `/collections/gripsokken` toevoegen aan het eind van elke post
+
+**Fase 2 — consolideren i.p.v. toevoegen (voorkomt keyword-cannibalisatie):**
+- [ ] Pilates-duo samenvoegen: `gripsokken-pilates-yoga` + `waarom-gripsokken-verplicht-bij-pilates`
+- [ ] Onderhoud-duo samenvoegen: `hoe-zorg-ik-voor-mijn-gripsokken` + `hoe-verleng-je-de-levensduur`
+- [ ] Blessure-duo samenvoegen: `waarom-gripsokken-het-verschil-maken` + `hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures`
+- [ ] Oude URL's 301-redirecten naar de samengevoegde pagina
+
+**Fase 3 — pijlerstructuur (hub-and-spoke, merk-breed conform [[SEO Strategie & Keywords]] — sporten blijven long-tail spokes, geen eigen landingspagina's):**
+1. Wat zijn gripsokken (awareness, target "gripsokken")
+2. Grip per situatie (pilates/yoga, krachttraining, voetbal, comfort — long-tail spokes)
+3. Prestatie & blessurepreventie (E-E-A-T, wetenschappelijke bronnen)
+4. Onderhoud (post-aankoop, retentie)
+5. Merkverhaal & innovatie (differentiatie)
+
+**Nieuwe kansen (nog niet opgepakt):**
+- `waarom-steeds-meer-sportclubs-gripsokken-toevoegen` is eigenlijk een B2B-hoek — kruislinken met Partnership Agent (Lijn A/B) i.p.v. los laten staan
+- `de-twee-grootste-problemen-in-de-sportwereld` (thought-leadership) is een goede kandidaat om te knippen tot social-content
+
+**Publicatiefrequentie (voorstel):** eerst Fase 1-2 afronden (bestaande 24 posts goed benutten) vóór nieuwe content — met dit volume is meer schrijven zinloos zolang het merendeel onvindbaar blijft. Daarna een **haalbaar, vol te houden ritme van 1 nieuwe blog per 2 weken** (± 2/maand), i.p.v. een hoog tempo dat niet vol te houden is naast de rest van de contentplanning. Frequentie is sowieso ondergeschikt aan interne linking en onderwerpdiepte — een consistent ritme van 2/maand met goede linking presteert beter dan 4/maand zonder.
+
 ## Bewust nog niet opgepakt (input/toegang nodig)
 
 - Sport-specifieke landingspagina's — bewust *niet* prioriteit, want SEO is merk-breed (zie [[SEO Strategie & Keywords]])

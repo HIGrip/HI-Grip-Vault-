@@ -45,7 +45,8 @@
 1. Eerst het bestaande artifact ([[E-mail Mailflows Artifact]]) raadplegen voor de stijl (layout, kleurgebruik, blokopbouw) — nooit een nieuwe stijl verzinnen los daarvan.
 2. Content komt uit [[E-mail Lijst Strategie]] (welke flow/pijler) en, bij een relationele mail, uit de bijbehorende blogpost (zie [[Conversie Optimalisatie Checklist]] § Blog-structuur & content).
 3. CSS-regels hierboven altijd toepassen (Gmail-hooks gecombineerd, geen nep-countdown).
-4. Nooit zelf versturen — output is een voorstel, zie de autonomie-tabel bij de sub-agent in identiteit.md van Website Agent.
+4. Dynamische velden (productlink, prijs, kortingscode e.d.) als merge-tag/variabele opnemen, nooit hardcoded — zie [[E-mail Verzending & Techniek]] voor het verzendplatform (SendWILL) en welke variabelen al bekend zijn.
+5. Nooit zelf versturen — output is een voorstel, zie de autonomie-tabel bij de sub-agent in identiteit.md van Website Agent.
 
 ---
 

@@ -21,5 +21,6 @@ De echte productie-`.html`-bestanden (met echte gehoste higrip.nl CDN-afbeelding
 ## Gerelateerde bestanden
 
 - [[E-mail Design & Stijlgids]] — de gedestilleerde ontwerpregels
+- [[E-mail Verzending & Techniek]] — verzendplatform (SendWILL), dynamische merge-tags/links, UTM-aandachtspunt
 - [[E-mail Lijst Strategie]]
 - [[E-mail Marketing Benchmarks]]

@@ -8,6 +8,8 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 
 ## Scope — wat valt hieronder
 - Content-ideeën, content kalender en content pillars
+- Content-ideeën zelf aanmaken in Buffer's ideeënbord (met juiste pillar-tag), zie [[Content Pillars]]
+- Sparringpartner voor de content-persoon: proactief ideeën aandragen én kritisch reageren op ingebrachte concepten
 - Captions, copy bank, CTA's, hashtags
 - Video-productierichtlijnen (editing stijl, sound, templates)
 

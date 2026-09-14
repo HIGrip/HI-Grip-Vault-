@@ -6,14 +6,14 @@
 
 ## Broadcast / nieuwsbrief
 
-| Metric | Gemiddeld (e-commerce/fashion) | Toelichting |
-|---|---|---|
-| Open rate | ~15-25% | Sterk afhankelijk van lijstkwaliteit en onderwerpregel |
-| Click rate | ~1,5-3% | Van totaal verzonden mails |
-| Click-to-open rate | ~10-15% | Van de mensen die 'm openden — betrouwbaarder dan open rate alleen (minder vervuild door Apple Mail Privacy Protection) |
-| Conversie (→ aankoop) | ~1-3% | Van verzonden mails |
-| Unsubscribe rate | < 0,2-0,5% | Boven 0,5% is een waarschuwingssignaal |
-| Bounce rate | < 2% | Hoger duidt op een lijsthygiëne-probleem |
+| Metric                | Gemiddeld (e-commerce/fashion) | Toelichting                                                                                                             |
+| --------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Open rate             | ~15-25%                        | Sterk afhankelijk van lijstkwaliteit en onderwerpregel                                                                  |
+| Click rate            | ~1,5-3%                        | Van totaal verzonden mails                                                                                              |
+| Click-to-open rate    | ~10-15%                        | Van de mensen die 'm openden — betrouwbaarder dan open rate alleen (minder vervuild door Apple Mail Privacy Protection) |
+| Conversie (→ aankoop) | ~1-3%                          | Van verzonden mails                                                                                                     |
+| Unsubscribe rate      | < 0,2-0,5%                     | Boven 0,5% is een waarschuwingssignaal                                                                                  |
+| Bounce rate           | < 2%                           | Hoger duidt op een lijsthygiëne-probleem                                                                                |
 
 ## Per flow-type (liggen structureel hoger dan broadcasts)
 

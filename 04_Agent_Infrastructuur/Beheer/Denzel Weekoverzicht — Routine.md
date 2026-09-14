@@ -13,11 +13,12 @@
 3. Beslist zelf (binnen de "Zelf doen"-grens van de betreffende hoofdagent, nooit hoger) of een terugkerende zoekactie deze week aan de beurt is — op dit moment concreet: B2B Klanten Agent en Partnerships & Events Agent (websearch-methode, zie hun eigen vault-bestanden). Zo ja: voert die zelf uit en verwerkt de resultaten in de juiste vault-bestanden (Voorbeelden Gevonden Organisaties, in het vaste output-format).
 4. **Live-site-check** (sinds 25-08-2026): WebFetch op higrip.nl — bereikbaarheid, status van de structured data (2026-08-02, nog niet naar live gekopieerd), opvallende merk-inconsistenties. Alleen signaleren, nooit zelf de site/theme aanpassen.
 5. **SEO-check** (sinds 25-08-2026): meta title/description-aanwezigheid+lengte op de homepage, of `sitemap.xml` bereikbaar is, of de FAQPage-structured-data inhoudelijk nog klopt. Puur technisch (geen Search Console/GA4 nodig), lichte check, alleen signaleren.
-6. Zoekt naar recente AI-ontwikkelingen die relevant zijn voor HÏ Grip's manier van werken (contentcreatie, marketing-automatisering, e-commerce, beeld/video-generatie, agent-tooling) — geen generiek AI-nieuws, alleen wat concreet toepasbaar is.
-7. Bepaalt een concrete vooruitblik voor komende week (3-5 actiegerichte punten), gebaseerd op het Stappenplan, logische vervolgstappen op eigen acties deze week, en naderende deadlines.
-8. Schrijft een nieuwe, gedateerde notitie in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week YYYY-MM-DD.md` met: voortgang per hoofdagent, wat Denzel deze week zelf heeft opgepakt, openstaande beslissingen voor lars, **vooruitblik komende week**, en het AI-nieuws-overzicht.
-9. Werkt [[Agent Werk & Kwaliteit Overzicht]] bij.
-10. Commit + push naar de vault-repo.
+6. **GA4-funnel-check** (sinds 14-09-2026): via de `analytics-mcp` (property 476032345) een rapport van de laatste 7 dagen t.o.v. de 7 dagen ervoor — sessies, gebruikers, paginaweergaven, top-kanalen, en de conversiefunnel `view_item → add_to_cart → begin_checkout → add_shipping_info → purchase`. Elke stap wordt afgezet tegen algemene e-commerce-benchmarks (o.a. Baymard Institute: gemiddelde cart-abandonment ~70%, checkout-abandonment ~17-20% bovenop, gemiddelde sessie→purchase-conversie ~2-3%). Puur signaleren, geen wijzigingen doorvoeren. Vermeld altijd expliciet als het sessievolume te laag is voor een betrouwbare vergelijking (vuistregel: onder de ~100 sessies/week zijn ratio's op stapniveau indicatief, geen trend).
+7. Zoekt naar recente AI-ontwikkelingen die relevant zijn voor HÏ Grip's manier van werken (contentcreatie, marketing-automatisering, e-commerce, beeld/video-generatie, agent-tooling) — geen generiek AI-nieuws, alleen wat concreet toepasbaar is.
+8. Bepaalt een concrete vooruitblik voor komende week (3-5 actiegerichte punten), gebaseerd op het Stappenplan, logische vervolgstappen op eigen acties deze week, en naderende deadlines.
+9. Schrijft een nieuwe, gedateerde notitie in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week YYYY-MM-DD.md` met: voortgang per hoofdagent, wat Denzel deze week zelf heeft opgepakt, openstaande beslissingen voor lars, **vooruitblik komende week**, de **GA4-funnel-check t.o.v. benchmarks**, en het AI-nieuws-overzicht.
+10. Werkt [[Agent Werk & Kwaliteit Overzicht]] bij.
+11. Commit + push naar de vault-repo.
 
 **Nooit door de routine:** outreach versturen, content publiceren, voorwaarden/prijzen bespreken of toezeggen, of iets anders dat in een hoofdagent's soul.md boven "Zelf doen" staat. De routine rapporteert en doet uitsluitend het onderzoekswerk dat al "Zelf doen" is — de beslissing/actie erop blijft bij lars.
 
@@ -26,6 +27,8 @@
 **Wijziging 25 augustus 2026 (op verzoek van lars, "automatiseer meer bestaande sub-agents"):** de routine voert nu ook een lichte, wekelijkse live-site-check uit (WebFetch op higrip.nl: bereikbaarheid, of de structured data van 2026-08-02 inmiddels naar live is gekopieerd, opvallende merk-inconsistenties). Dit operationaliseert regels die al in [[Agent Takenverdeling & Grenzen]] stonden ("Live site monitoren — Wekelijks", "Design-consistentie checken — Wekelijks") maar nog nooit waren uitgevoerd sinds ze zijn vastgelegd (14 juli 2026). De routine mag hierbij nooit zelf iets aan de site/theme aanpassen — alleen signaleren met een voorstel, net als bij een gevonden probleem in de kwaliteitscontrole-loop.
 
 **Wijziging 25 augustus 2026, later dezelfde dag:** ook een lichte SEO-check toegevoegd voor SEO Agent — meta title/description, sitemap.xml, FAQPage-inhoud. lars wilde hetzelfde patroon eerst ook voor Content Agent (periodieke content-ideeën als voorstel), maar dat is bewust **niet** gebouwd: hij wil dit eerst intern afstemmen met de content-afdeling van HÏ Grip. Niet vanzelf oppakken totdat lars daarop terugkomt.
+
+**Wijziging 14 september 2026 (op verzoek van lars, "wil dat dit overzicht elke week wordt toegevoegd"):** de GA4-funnel-check is een vast, wekelijks onderdeel geworden (stap 6 hierboven). Aanleiding: bij het Week 2026-09-14-overzicht bleek uit deze check dat de webshop die week 0 orders/€0 omzet had — een reëel checkout-conversieprobleem (7x `begin_checkout`, 0x `purchase`), bevestigd door lars als géén trackingprobleem. Sindsdien hoort de sessies/kanalen/funnel-vergelijking t.o.v. benchmarks structureel bij elke week, niet alleen als incident-check. Zie [[Week 2026-09-14]] voor het format.
 
 ---
 
@@ -39,6 +42,7 @@
 
 - **Schrijftoegang tot de vault-repo:** de routine moet kunnen `git push`. Als de cloud-omgeving geen schrijftoegang tot deze (privé?) repo heeft, faalt de laatste stap — dan moet dat eerst geregeld worden via de omgeving-instellingen.
 - **Kwaliteit van de "Zelf doen"-beslissing:** de routine bepaalt zelf of een zoekactie "aan de beurt" is; als dat te vaak/te weinig blijkt, bijstellen in de routine-prompt (via `update`).
+- **GA4-toegang vanuit de cloud-omgeving (ongeverifieerd, sinds 14-09-2026):** de GA4-funnel-check (stap 6) is toegevoegd en getest vanuit lars' eigen laptop-sessie (waar `analytics-mcp` werkt), niet vanuit de Denzel-cloud-routine zelf. Nog niet bevestigd of de cloud-omgeving dezelfde `analytics-mcp`-toegang (met het `ga4-mcp-key.json`-service-account) heeft. Als de eerstvolgende maandag-run deze sectie niet kan vullen, is dit de oorzaak — dan moet GA4-toegang eerst in de cloud-omgeving geregeld worden, net als het git-push-punt hierboven.
 
 ---
 

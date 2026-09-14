@@ -89,6 +89,7 @@ Plak dit blok onder de juiste categorie-kop in de `## Sub-agents`-sectie van het
 | Website Agent | Technisch | Design Agent |
 | Website Agent | Content | Website Copy Agent |
 | Website Agent | Analyse | Conversie & Analyse Agent |
+| Website Agent | E-mail Marketing *(nieuw, 2026-09-14)* | E-mail Marketing Agent |
 
 ---
 

@@ -41,6 +41,8 @@
 - `waarom-steeds-meer-sportclubs-gripsokken-toevoegen` is eigenlijk een B2B-hoek — kruislinken met Partnership Agent (Lijn A/B) i.p.v. los laten staan
 - `de-twee-grootste-problemen-in-de-sportwereld` (thought-leadership) is een goede kandidaat om te knippen tot social-content
 
+**Koppeling met e-mail (2026-09-14):** elke nieuwe blogpost levert vanaf nu ook een bijpassende e-mail op — zie de nieuwe E-mail Marketing Agent-sub-agent in `04_Agent_Infrastructuur/Website Agent/identiteit.md` en [[E-mail Lijst Strategie]].
+
 **Publicatiefrequentie (voorstel):** eerst Fase 1-2 afronden (bestaande 24 posts goed benutten) vóór nieuwe content — met dit volume is meer schrijven zinloos zolang het merendeel onvindbaar blijft. Daarna een **haalbaar, vol te houden ritme van 1 nieuwe blog per 2 weken** (± 2/maand), i.p.v. een hoog tempo dat niet vol te houden is naast de rest van de contentplanning. Frequentie is sowieso ondergeschikt aan interne linking en onderwerpdiepte — een consistent ritme van 2/maand met goede linking presteert beter dan 4/maand zonder.
 
 ## Bewust nog niet opgepakt (input/toegang nodig)

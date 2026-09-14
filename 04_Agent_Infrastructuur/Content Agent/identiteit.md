@@ -9,6 +9,7 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 ## Scope — wat valt hieronder
 - Content-ideeën, content kalender en content pillars
 - Content-ideeën zelf aanmaken in Buffer's ideeënbord (met juiste pillar-tag), zie [[Content Pillars]]
+- Reels/TikTok-covers (thumbnails) ontwerpen in Canva op basis van een aangeleverde still uit de video (9:16, tekst/hook + branding) — niet zelfstandig een frame uit de video trekken, dat kan de agent technisch niet
 - Sparringpartner voor de content-persoon: proactief ideeën aandragen én kritisch reageren op ingebrachte concepten
 - Captions, copy bank, CTA's, hashtags
 - Video-productierichtlijnen (editing stijl, sound, templates)

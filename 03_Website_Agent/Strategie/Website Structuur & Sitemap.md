@@ -1,6 +1,6 @@
 # Website Structuur & Sitemap — HÏ Grip
 
-> Baseline vastgelegd 2026-07-14 op basis van live-audit van www.higrip.nl. Voor SEO-koppeling: zie [[SEO Strategie & Keywords]]. Voor het merkverhaal achter de structuur: zie [[Brand Identity Overview]].
+> Baseline vastgelegd 2026-07-14, **gecorrigeerd 2026-09-16** op basis van de volledige `/seo audit` via claude-seo (12 deelaudits, incl. root-cause-onderzoek) — een deel van de 07-14-baseline klopte niet meer (assortiment gegroeid incl. een ongewenste duplicate, sitemap-omvang, footer heeft 4 kolommen, sport-pagina's beperkter dan gedacht). Volledige audit + actieplan: [[Claude SEO Plugin — Skills & Agents]] (`03_Website_Agent/SEO/Technisch`). Voor SEO-koppeling: zie [[SEO Strategie & Keywords]]. Voor het merkverhaal achter de structuur: zie [[Brand Identity Overview]].
 
 ---
 

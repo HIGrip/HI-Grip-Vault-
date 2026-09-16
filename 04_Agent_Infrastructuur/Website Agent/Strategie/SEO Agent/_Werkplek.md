@@ -6,6 +6,16 @@ Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen,
 
 ---
 
+## 2026-09-16 (vervolg) — Eerste volledige audit + Critical-actieplan
+
+**Wat:** Volledige `/seo audit` (12 deelaudits) op higrip.nl gedraaid, health score 59/100. Alle 5 Critical-punten uitgezocht en vergeleken tegen het werktheme (`#200269168967`) om te weten wat al is opgelost bij publicatie vs. wat los in Admin moet. Root cause van de trycloudflare-devtunnel-bug gevonden (vergeten test-URL in de Amose-bundle-app, geen reden om over te stappen). Bijvangst: oud, ongebruikt "Bundler"-app-blok verwijderd uit het werktheme.
+
+**Waar:** volledig uitgeschreven in [[Claude SEO Plugin — Skills & Agents]] (`03_Website_Agent/SEO/Technisch`), inclusief tabel met [LARS]-acties voor morgen. Visueel overzicht: [HÏ Grip SEO Audit](https://claude.ai/artifact/J4pGSpFe1TmWN5HLBqgMm3).
+
+**Open beslissing voor lars:** collectiepagina "gripsokken voetbal" botst met het merk-brede-principe uit [[SEO Strategie & Keywords]] — nog niet doorgevoerd, wacht op akkoord.
+
+---
+
 ## 2026-09-16 — Claude SEO plugin toegevoegd
 
 **Wat:** De `claude-seo` Claude Code plugin geïnstalleerd — 25 sub-skills + 18 specialist-agents voor technische SEO, E-E-A-T, schema, GEO/AI Overviews, lokaal, e-commerce en i18n via `/seo <subcommando>`. Veel breder dan `/shopify-seo`; die laatste blijft de HÏ Grip-specifieke laag. Volledige documentatie: [[Claude SEO Plugin — Skills & Agents]] in `03_Website_Agent/SEO/Technisch`.

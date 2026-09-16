@@ -7,21 +7,22 @@
 
 ## Niche / Content type (prioriteit)
 
-> **Seizoensgebonden:** prioriteit volgt welke sportseizoenen net weer beginnen (eind zomer/begin
-> herfst). Tennis en Padel zijn zomersporten en tijdelijk gedeprioriteerd; voetbal en basketbal
-> beginnen nu weer en staan daarom op ⭐ Hoog. Bij een volgende seizoenswissel opnieuw beoordelen.
+> **Beachhead-strategie (vanaf 16-9-2026):** HÏ Grip focust nu bewust op drie sporten — tennis, rugby
+> en voetbal — in plaats van breed op alle sporten. Deze drie staan op ⭐ Hoog ongeacht seizoen; alle
+> overige sporten zijn gedeprioriteerd (niet uitgesloten — bestaande partners/leads blijven geldig,
+> maar geen actieve nieuwe zoekacties meer op deze niches). Zie [[Doelgroep & Persona's]].
 
 | Prioriteit | Sport / Niche                 |
 | ---------- | ----------------------------- |
 | ⭐ Hoog     | Voetbal (street, panna, zaal) |
-| ⭐ Hoog     | Basketball                    |
-| Normaal    | Tennis                        |
-| Normaal    | Padel                         |
-| Normaal    | Urban sports / streetball     |
-| Normaal    | Rugby                         |
-| Normaal    | Gym / fitness lifestyle       |
-| Normaal    | Hardlopen / running           |
-| Normaal    | Pilates / yoga                |
+| ⭐ Hoog     | Rugby                         |
+| ⭐ Hoog     | Tennis                        |
+| Laag       | Basketball                    |
+| Laag       | Padel                         |
+| Laag       | Urban sports / streetball     |
+| Laag       | Gym / fitness lifestyle       |
+| Laag       | Hardlopen / running           |
+| Laag       | Pilates / yoga                |
 
 ---
 

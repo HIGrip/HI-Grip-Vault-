@@ -4,6 +4,12 @@
 
 ---
 
+## Beachhead-strategie (vanaf 16-9-2026)
+
+> HÏ Grip focust nu op **tennis, rugby en voetbal** (de fanatieke sporter binnen deze 3 sporten — zie [[Doelgroep & Persona's]]) i.p.v. breed op alle sporten. Merkidentiteit en positionering hieronder blijven ongewijzigd; alleen welke sporten/momenten prioriteit krijgen in content verschuift.
+
+---
+
 ## Positionering
 
 HÏ Grip positioneert zich als een **Nederlands performance gedreven sportswear merk** — want sporters moeten vertrouwen op hun gear en sportswear mag nooit een obstakel zijn voor presteren. We positioneren onszelf als **energiek, jong, deskundig, sportief, modern en presterend** naar sporters. Onze kernwaarden zijn **comfort, innovatie en vertrouwen** (zie [[Brand Identity Overview]]). Dit is de basis van presteren.

@@ -10,6 +10,8 @@ HÏ Grip is een **merk voor performance sportswear**, niet een single-sport merk
 
 Dit is ook waarom de structuur uitbreidbaar moet zijn: er komt op termijn een **tweede productlijn (skisokken)** bij. De sitemap moet daar nu al ruimte voor open houden (bv. `/collections/gripsokken` en `/collections/skisokken` naast elkaar, in plaats van alles plat onder één ongedifferentieerde catalogus).
 
+> **Beachhead-strategie (vanaf 16-9-2026):** de skisokken-lancering is uitgesteld en marketing focust nu op tennis, rugby en voetbal (zie [[Doelgroep & Persona's]]). De site-architectuur zelf verandert hierdoor niet automatisch — zie de open vraag in [[SEO Strategie & Keywords]] over of tennis/rugby/voetbal wel eigen landingspagina's/URL's moeten krijgen. Wat wel meteen kan zonder structuurwijziging: binnen bestaande secties (zoals "Sport-specifieke voordelen" op de homepage, zie [[Homepage Copy & Structuur]]) en de Sportgidsen tennis/rugby/voetbal vooraan/prominent zetten t.o.v. padel/basketbal/hardlopen/fitness/futsal. Let op: er is nog geen rugby-sportgids (`Content/Sportgidsen/`) — alleen tennis en voetbal bestaan al.
+
 ---
 
 ## Huidige structuur (live-audit 2026-07-14)

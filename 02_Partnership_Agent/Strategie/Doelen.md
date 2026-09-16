@@ -6,7 +6,7 @@
 
 ## 1. Influencers & Content Creators
 
-**Doel:** Per sport (tennis, padel, voetbal, rugby, basketball) minimaal enkele bevestigde nano/micro-creators (500–100.000 volgers, zie [[Evaluatiecriteria]]) die structureel content maken met HÏ Grip.
+**Doel:** Per beachhead-sport (tennis, rugby, voetbal — zie [[Doelgroep & Persona's]]) minimaal enkele bevestigde nano/micro-creators (500–100.000 volgers, zie [[Evaluatiecriteria]]) die structureel content maken met HÏ Grip. Padel en basketball zijn gedeprioriteerd.
 
 **Huidige stand** (zie [[Influencer Database]]): 1 bevestigd (@timtopspin, tennis), rest van de database staat nog op "🔍 Zoeken" of "🔎 Gevonden/te verifiëren" per sport.
 

@@ -4,6 +4,12 @@
 
 ---
 
+## Beachhead-strategie (vanaf 16-9-2026)
+
+> HÏ Grip focust vanaf nu bewust op drie doelgroepen: **fanatieke tennissers, fanatieke rugbyers en fanatieke voetballers** — in plaats van breed op "alle sporters". De merkidentiteit verandert niet, alleen de focus van waar marketing, content, influencer-search en partnerships zich op richten (zie [[Doelgroep & Persona's]]). **De lancering van de skisokken is uitgesteld** tot deze focus is uitgewerkt — zie roadmap hieronder. Per sport werken we de beachhead-kernvragen (bereik, locatie, behoefte e.a.) uit in [[Beachhead Strategie]].
+
+---
+
 ## Roadmap 2026 — €100.000 omzet & 10 B2B vaste klanten
 
 ### Q1
@@ -18,18 +24,18 @@
 - Project: gift ziekenhuismedewerkers (moeder Luuk)
 - Leveren MyHealth Club
 - Vast B2B klantenbestand creëren
-- Voorbereiding skisokken
+- ~~Voorbereiding skisokken~~ — **uitgesteld, zie Beachhead-strategie hierboven**
 - Voorbereiding voetloze kousen
 - 1 april marketingstunt
 - Koningsdag marketing
 - WK campagne
 
 ### Q3
-- Voorbereiding skisokken
+- ~~Voorbereiding skisokken~~ — **uitgesteld**
 - **Introductie voetloze kousen**
 
 ### Q4
-- **Lancering skisokken**
+- ~~Lancering skisokken~~ — **uitgesteld, nieuwe datum nog te bepalen**
 - Black Friday campagne
 - Eindejaarssale campagne
 
@@ -51,6 +57,7 @@
 ## Gerelateerde bestanden
 
 - [[Brand Identity Overview]] — Missie en visie achter de groeidoelen
+- [[Beachhead Strategie]] — Beachhead-kernvragen per sport (tennis, rugby, voetbal)
 - [[Doelgroep & Persona's]] — B2B doelgroepen die de klantendoelen invullen
 - [[Ideale Partner Profiel]] — Hoe we B2B klanten aantrekken
 - [[Concurrentieanalyse]] — Positie t.o.v. andere aanbieders

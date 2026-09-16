@@ -2,6 +2,8 @@
 
 > De 5 contentpilaren en content ideeën per doelgroep. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
 
+> **Beachhead-strategie (vanaf 16-9-2026):** content prioriteert nu tennis, rugby en voetbal (de fanatieke sporter binnen deze 3 sporten) — zie [[Doelgroep & Persona's]]. Voorbeelden hieronder die andere sporten noemen (hockey, pilates) blijven bruikbaar als format-idee, maar vertaal ze bij voorkeur naar tennis/rugby/voetbal.
+
 ---
 
 ## Overzicht — 5 pilaren

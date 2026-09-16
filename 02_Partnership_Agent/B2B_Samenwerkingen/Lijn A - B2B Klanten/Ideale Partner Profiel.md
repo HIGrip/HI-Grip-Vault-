@@ -6,6 +6,8 @@
 
 ## 1. Innovatieve Sportclubs
 
+> **Beachhead-strategie (vanaf 16-9-2026):** prioriteit ligt nu bij tennis-, rugby- en voetbalclubs (zie [[Doelgroep & Persona's]]) — andere sportclubs blijven mogelijk maar zijn gedeprioriteerd.
+
 **Wie:** Vooruitstrevende vrijwilligers en bestuursleden die hun club kennis laten maken met de nieuwste trends.
 
 **Specifieke kans:** Clubs met veel spelers die hun sokken afknippen — gripsokken aanbieden als club met voetloze kousen is de directe oplossing.

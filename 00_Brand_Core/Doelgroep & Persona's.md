@@ -4,6 +4,12 @@
 
 ---
 
+## Beachhead-focus (vanaf 16-9-2026)
+
+> HÏ Grip richt zich nu primair op drie sporten: **tennis, rugby en voetbal** — en binnen elke sport specifiek op de **fanatieke sporter** (zie persona hieronder). Dit is een focus-keuze, geen identiteitswijziging: alle persona's hieronder blijven geldig, maar content, influencer-search en partnerships prioriteren deze 3 sporten. Skisokken-lancering is uitgesteld (zie [[Strategische Keuzes]]). Per sport is het bereik/behoefte/koopreden-vragenkader uitgewerkt in [[Beachhead Strategie]].
+
+---
+
 ## B2C Doelgroepen
 
 ### 1. Betrokken Ouders
@@ -14,8 +20,8 @@ Ouders die de sportuitrusting voor hun kinderen beheren en alleen genoegen nemen
 Jonge, ambitieuze sporters die prestaties willen combineren met de nieuwste sporttrends.
 **Winmoment:** Wanneer ze een mooie actie maken of erkend worden dat ze goed zijn.
 
-### 3. Fanatieke Sporters
-De mensen die willen winnen. Competitief en resultaatgericht.
+### 3. Fanatieke Sporters — primaire beachhead-doelgroep
+De mensen die willen winnen. Competitief en resultaatgericht. **Primair binnen tennis, rugby en voetbal** (zie Beachhead-focus hierboven).
 **Winmoment:** Wanneer de sporter wint, wedstrijden wint, kampioen wordt.
 
 ### 4. Toekomstige Pro's
@@ -64,6 +70,7 @@ Voor de B2B aanpak en sales: zie [[Ideale Partner Profiel]] en [[Outreach Templa
 ## Gerelateerde bestanden
 
 - [[Brand Identity Overview]] — Merkverhaal en positionering
+- [[Beachhead Strategie]] — Bereik/behoefte/koopreden-vragenkader per sport
 - [[Content Strategie]] — Welk verhaal we vertellen per doelgroep
 - [[Platform Richtlijnen]] — Welke doelgroep per social media platform
 - [[Content Pillars]] — Content ideeën per doelgroep

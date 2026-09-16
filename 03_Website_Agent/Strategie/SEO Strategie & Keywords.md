@@ -4,9 +4,15 @@
 
 ---
 
+## Beachhead-strategie (vanaf 16-9-2026) — spanning met kernprincipe hieronder
+
+> HÏ Grip focust nu bewust op drie doelgroepen — fanatieke tennissers, rugbyers en voetballers (zie [[Doelgroep & Persona's]]) — en de skisokken-lancering (de reden achter het "merk-breed, geen sport-silo's"-principe hieronder) is uitgesteld (zie [[Strategische Keuzes]]). Dat verandert de oorspronkelijke afweging: **open vraag voor Lars** of tennis/rugby/voetbal nu wél eigen SEO-landingspagina's/pijlers moeten krijgen (bv. `/gripsokken-tennis`), of dat het merk-brede principe voorlopig blijft staan en alleen content/marketing (niet SEO-structuur) de 3 sporten prioriteert. Tot die keuze is gemaakt: onderstaand kernprincipe blijft leidend, met tennis/rugby/voetbal als eerste keuze zodra sport-specifieke content/long-tail wél wordt ingezet.
+
+---
+
 ## Kernprincipe
 
-HÏ Grip focust niet op één sport — de SEO-strategie moet daarom rond het **merk en de productcategorie** gebouwd worden, niet rond individuele sporten (tennis/rugby/hockey/badminton blijven navigatie-filters, geen SEO-pijlers). Reden: er komt een **tweede productlijn (skisokken)** aan — een sport-specifieke SEO-opzet zou daar niet in meeschalen.
+HÏ Grip focust niet op één sport — de SEO-strategie moet daarom rond het **merk en de productcategorie** gebouwd worden, niet rond individuele sporten (tennis/rugby/hockey/badminton blijven navigatie-filters, geen SEO-pijlers). Reden: er komt een **tweede productlijn (skisokken)** aan — een sport-specifieke SEO-opzet zou daar niet in meeschalen. (Skisokken zijn per 16-9-2026 uitgesteld, zie beachhead-notitie hierboven — dit maakt de oorspronkelijke reden tijdelijk minder dwingend.)
 
 **Wel expliciet gewenst:** #1 positie op de zoekterm **"gripsokken"** — dit is en blijft het kernproduct, ook binnen een merk-brede strategie.
 
@@ -21,7 +27,7 @@ HÏ Grip focust niet op één sport — de SEO-strategie moet daarom rond het **
 | Categorie/generiek | "sportsokken met grip", "anti-slip sokken sport" | Middel |
 | Toekomstig (nog niet live) | "skisokken", "ski sokken met grip" | Voorbereiden, nog niet actief promoten |
 
-Sport-specifieke termen (bv. "tennissokken grip") kunnen als secundaire long-tail meelopen in productcontent, maar worden geen eigen landingspagina's of primaire targeting.
+Sport-specifieke termen (bv. "tennissokken grip") kunnen als secundaire long-tail meelopen in productcontent, maar worden geen eigen landingspagina's of primaire targeting — **tenzij** Lars kiest om dit voor tennis/rugby/voetbal (de beachhead-sporten) wel te doen, zie notitie hierboven. Bij die long-tail-inzet krijgen tennis/rugby/voetbal voorrang boven padel/basketbal/hardlopen/fitness/futsal.
 
 ---
 

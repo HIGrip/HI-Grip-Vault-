@@ -14,6 +14,12 @@ Sub-doel: **Events en activaties** — co-host, sponsoring, pop-up/stand, produc
 
 ---
 
+## Beachhead-strategie (vanaf 16-9-2026)
+
+> HÏ Grip focust nu op **tennis, rugby en voetbal** als primaire sporten voor events/activaties — zie [[Doelgroep & Persona's]]. Organisatietypes in de tabel hieronder buiten deze 3 sporten (padel, urban sport, sportvoeding-crossover) blijven mogelijk maar zijn gedeprioriteerd t.o.v. tennis-, rugby- en voetbalevents.
+
+---
+
 ## Waarom dit past bij HÏ Grip
 
 HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Brand Identity Overview]]) — "doorgaan wanneer anderen stoppen". Samenwerkingen moeten dit merkgevoel versterken:
@@ -43,15 +49,17 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 
 | Organisatietype | Waarom interessant | Let op |
 |---|---|---|
-| Voetbalclubs met actieve community/events | Directe niche-match, kousen-probleem al bekend | Moet eigen event hebben, niet alleen een club-zijn |
-| Voetbaltoernooi-organisatoren (5-a-side, zaalvoetbal) | Terugkerend, herkenbaar format, makkelijk te sponsoren | Check frequentie en publieksgrootte |
-| Padel centra en padel-events | Snelgroeiende sport, past bij "nieuwste trend"-verhaal | Grote toernooien (FIP/Premier Padel) vaak te duur |
-| Urban sport venues (streetball, freestyle) | Sterkste straatcultuur-fit, motiverend/stoer imago | Moet een **evenement** zijn, geen kale infrastructuur |
+| **Voetbalclubs met actieve community/events** ⭐ | Directe niche-match, kousen-probleem al bekend | Moet eigen event hebben, niet alleen een club-zijn |
+| **Voetbaltoernooi-organisatoren (5-a-side, zaalvoetbal)** ⭐ | Terugkerend, herkenbaar format, makkelijk te sponsoren | Check frequentie en publieksgrootte |
+| **Tennisclubs/-toernooien en tennisacademies** ⭐ | Directe beachhead-match, fanatieke tennissers | Check ledenbestand/publieksgrootte, prijs KNLTB-toernooien |
+| **Rugbyclubs en rugbytoernooien/-events** ⭐ | Directe beachhead-match, kleinere maar zeer betrokken community | Nederland heeft relatief weinig clubs — breed zoeken (ook regionaal) |
+| Padel centra en padel-events | Snelgroeiende sport, past bij "nieuwste trend"-verhaal | Gedeprioriteerd t.o.v. tennis/rugby/voetbal; grote toernooien (FIP/Premier Padel) vaak te duur |
+| Urban sport venues (streetball, freestyle) | Sterkste straatcultuur-fit, motiverend/stoer imago | Gedeprioriteerd; moet een **evenement** zijn, geen kale infrastructuur |
 | Sportbeurzen/expo organisatoren | B2B-zichtbaarheid voor veel prospects tegelijk | Vaak overlap met Lijn A-doel — dubbele waarde |
 | Sportmedia/lokale platforms | Bereik en SEO/contentwaarde | Vaak indirecte opbrengst — eerlijk wegen tegen sponsoringkosten |
-| Performance academies | Lesmateriaal-fit (grip socks tijdens training) | Check locatie/schaal, vaak kleinschalig maar consistent |
-| Sportvoeding/lifestyle merken (co-activatie) | Zelfde doelgroep, performance-mindset | Let op merkgrootte — te groot merk = ongelijke deal |
-| Sportapps (wedstrijd-hosting) | Digitaal bereik binnen exacte doelgroep | Nieuw partnertype, nog weinig ervaring mee |
+| Performance academies (tennis/rugby/voetbal) | Lesmateriaal-fit (grip socks tijdens training) | Check locatie/schaal, vaak kleinschalig maar consistent |
+| Sportvoeding/lifestyle merken (co-activatie) | Zelfde doelgroep, performance-mindset | Gedeprioriteerd; let op merkgrootte — te groot merk = ongelijke deal |
+| Sportapps (wedstrijd-hosting) | Digitaal bereik binnen exacte doelgroep | Gedeprioriteerd; nieuw partnertype, nog weinig ervaring mee |
 
 ---
 

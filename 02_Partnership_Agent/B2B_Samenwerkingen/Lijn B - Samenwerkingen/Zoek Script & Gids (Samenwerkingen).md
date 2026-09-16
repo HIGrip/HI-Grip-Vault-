@@ -13,12 +13,16 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 
 ## Kanalen + zoektermen per organisatietype
 
+> **Beachhead-strategie (vanaf 16-9-2026):** voetbal, rugby en tennis zijn nu de prioriteit — de nieuwe tennis- en rugby-rijen hieronder zijn nog niet in de praktijk getest, aanvullen na de eerste zoekronde. Padel/urban sport blijven bruikbaar maar zijn gedeprioriteerd.
+
 | Organisatietype | Kanaal/bron | Zoektermen die werken |
 |---|---|---|
-| Voetbaltoernooien (5-a-side/zaal) | Google, Tournify, voetbaltoernooien.info | "5-tegen-5 voetbaltoernooi" NL; "zaalvoetbaltoernooi organisator"; tournifyapp.com/nl/sporten/voetbal |
-| Straatvoetbal/panna | Google, direct organisator | "panna knockout [stad]"; pannaknockout.nl (landelijke organisator, check agenda per stad) |
-| Padel centra/events | Google, KNLTB, AllesPadel, NLpadel | "padel toernooi [stad] [jaar]"; let op: FIP/Premier Padel-namen = mega-tier, meestal te groot |
-| Urban sport / streetball / 3x3 | Google, lokale basketbalbond, 3x3NL | "3x3 toernooi [stad]"; "streetball evenement [stad]"; "[stad]basketbal.nl" |
+| **Voetbaltoernooien (5-a-side/zaal)** ⭐ | Google, Tournify, voetbaltoernooien.info | "5-tegen-5 voetbaltoernooi" NL; "zaalvoetbaltoernooi organisator"; tournifyapp.com/nl/sporten/voetbal |
+| **Straatvoetbal/panna** ⭐ | Google, direct organisator | "panna knockout [stad]"; pannaknockout.nl (landelijke organisator, check agenda per stad) |
+| **Tennistoernooien/-clubs (amateur/open)** ⭐ | Google, KNLTB (toernooi.nl) | "open tennistoernooi [stad] [jaar]"; "tennisclub [stad] evenement"; toernooi.nl (KNLTB-platform, check per regio) |
+| **Rugbyclubs/-toernooien** ⭐ | Google, Rugby Nederland (bond) | "rugbytoernooi [stad] [jaar]"; "rugbyclub [stad] evenement/dag"; check verenigingenlijst via rugby.nl |
+| Padel centra/events | Google, KNLTB, AllesPadel, NLpadel | Gedeprioriteerd — "padel toernooi [stad] [jaar]"; let op: FIP/Premier Padel-namen = mega-tier, meestal te groot |
+| Urban sport / streetball / 3x3 | Google, lokale basketbalbond, 3x3NL | Gedeprioriteerd — "3x3 toernooi [stad]"; "streetball evenement [stad]"; "[stad]basketbal.nl" |
 | Sportbeurzen/expo | Google | "sportbeurs Nederland [jaar]"; "sport expo B2B" |
 | Sport performance academies | Google | "[sport] academy Nederland [stad]" |
 | Sportvoeding/lifestyle merken | Google, LinkedIn | "sportvoeding merk co-activatie Nederland"; kijk naar precedenten (bv. HEMA × More Nutrition, Golazo × Lotus Bakeries) |

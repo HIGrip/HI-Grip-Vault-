@@ -176,6 +176,55 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 
 ---
 
+## Watch-skill (video-analyse) — ✅ ACTIEF sinds 2026-09-16
+
+> Claude Code-plugin `claude-video` (bradautomates/claude-video), geeft de Content Agent het `/watch`-commando: een video-URL of lokaal bestand + vraag erbij, Claude analyseert 'm frame-voor-frame + transcript.
+
+**Waarvoor de Content Agent dit gebruikt:**
+- Concurrent-/trend-video's (TikTok/Reels) analyseren op hook, opbouw, tekst-overlays, sound-gebruik
+- Eigen video's controleren vóór publicatie (klopt de hook, is de tekst leesbaar, timing)
+- Losse vragen over de inhoud van een video beantwoorden ("wat gebeurt er rond 0:15", "wat wordt er gezegd")
+
+**Hoe het werkt:** `yt-dlp` (download + ondertitels) → `ffmpeg` (frames extraheren) → Whisper API (Groq/OpenAI) als fallback-transcript wanneer er geen native captions zijn. Alleen de audio gaat naar de Whisper-API, nooit de video zelf; geen platform-login of posting.
+
+**Installatie (2026-09-16):**
+
+| Onderdeel | Waarde |
+|---|---|
+| Installatiepad | losse Claude Code CLI (`npm install -g @anthropic-ai/claude-code`) — de VS Code-extensie ondersteunt `/plugin`-commando's zelf niet, maar gebruikt wel dezelfde gedeelde plugin-config (`~/.claude/plugins`), dus `/watch` werkt ook daar |
+| Marketplace + install | `/plugin marketplace add bradautomates/claude-video` gevolgd door `/plugin install watch@claude-video` |
+| Dependencies | `ffmpeg`/`ffprobe` (winget: `Gyan.FFmpeg`) + `yt-dlp` (winget: `yt-dlp.yt-dlp`) — geïnstalleerd |
+| Config | `~/.config/watch/.env` (detail-niveau, optionele Whisper-API-key) |
+
+**Open:** Whisper API-key (Groq of OpenAI) nog niet gezet — zonder key werkt `/watch` alleen met native ondertitels; anders frames-only (geen transcript) als die ontbreken.
+
+---
+
+## Claude-SEO plugin (SEO Agent) — ✅ ACTIEF sinds 2026-09-16
+
+> Claude Code-plugin `claude-seo` (AgriciDaniel/claude-seo), geeft de SEO Agent het `/seo`-commando: 24 sub-skills + 18 sub-agents voor technische SEO, content-kwaliteit (E-E-A-T), schema-markup, sitemaps, performance (CWV/INP), GEO/AI-search-optimalisatie, lokale SEO en e-commerce SEO.
+
+**Waarvoor de SEO Agent dit gebruikt:**
+- `/seo audit <url>` — volledige site-audit met parallelle subagents + SEO Health Score (0-100)
+- `/seo page <url>` — diepe analyse van één pagina
+- `/seo schema <url>` — structured data detecteren/valideren/genereren
+- `/seo content-brief` — SEO-briefs met doelkeywords, outline, interne links
+- `/seo geo <url>` — AI Overviews/ChatGPT/Perplexity-optimalisatie
+
+**Installatie (2026-09-16):** via de terminal-sessie (losse CLI, zelfde reden als bij [[API & Tool Connections#Watch-skill (video-analyse)|de watch-skill]] — `/plugin` werkt niet in de VS Code-extensie zelf, wel gedeeld via `~/.claude/plugins`):
+```
+/plugin marketplace add AgriciDaniel/claude-seo
+/plugin install claude-seo@agricidaniel-claude-seo
+/seo setup
+```
+`claude-seo doctor --json` bevestigt: runtime ready (Python 3.12, Chromium ready).
+
+**Google-koppeling: eigen, nog niet actief.** Deze plugin gebruikt een **eigen** credential-bestand (`~/.config/claude-seo/google-api.json`), los van de al werkende `analytics-mcp`-koppeling (zie hierboven) — hergebruikt die dus niet automatisch. Zonder key/OAuth werken PageSpeed Insights, CrUX, Search Console, Indexing API en GA4-data binnen deze plugin niet; de audit draait dan zonder de `seo-google`-subagent. Optioneel later op te zetten: `google_auth.py --setup` voor instructies, of de bestaande GA4 service-account-key hergebruiken indien de plugin dat toestaat.
+
+**Publiceer-grens:** deze plugin kan in theorie via de Google Indexing API pagina's aanmelden bij Google — dat mag alleen na expliciet akkoord van lars, nooit automatisch tijdens een audit of setup (zelfde "altijd overleg vooraf"-regel als publiceren via Buffer).
+
+---
+
 ## Nog aan te vullen
 
 - Overige tool/API-koppelingen zodra ze ontstaan

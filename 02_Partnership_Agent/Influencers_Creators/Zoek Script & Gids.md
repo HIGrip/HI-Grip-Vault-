@@ -38,13 +38,19 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 **Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
-**Huidige hashtag-configuratie (voetbal + basketbal — seizoensgebonden, zie [[Evaluatiecriteria]]):**
+> **Beachhead-strategie (vanaf 16-9-2026):** focus verschoven naar tennis, rugby en voetbal (zie
+> [[Evaluatiecriteria]] en [[Doelgroep & Persona's]]). **TODO:** de hashtag-configuratie hieronder
+> is de laatst bekende scriptstand (voetbal + basketbal) en moet in `ig_find_creators.py` nog worden
+> aangepast: basketbal-hashtags eruit, tennis- en rugby-hashtags (zie sport-tabellen verderop in dit
+> document) erin. Vergeet niet ook de bijlage-codeblock onderaan dit bestand mee te updaten.
+
+**Huidige hashtag-configuratie (voetbal + basketbal — verouderd, zie TODO hierboven):**
 - Voetbal_vlog: voetbalvlog, voetbalvlogger, voetballer
 - Voetbal_amateur: amateurvoetbal, wedstrijddag, voetbalseizoen
 - Voetbal_training: voetbaltraining, jongevoetballer, voetballife
 - Voetbal_wedstrijd: voetbalmatch, matchdaynl, voetbalwedstrijd
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
-- Basketbal: basketballnl, streetballnl, 3x3nl (dutchhoops verwijderd: internationale/niet-sport tag, gaf ruis)
+- ~~Basketbal: basketballnl, streetballnl, 3x3nl~~ — te vervangen door tennis + rugby hashtags (gedeprioriteerd)
 
 ---
 
@@ -62,7 +68,9 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 
 ## Zoektermen per sport
 
-### Tennis
+> Prioriteitsvolgorde vanaf de beachhead-strategie: **Voetbal, Rugby, Tennis** eerst; Padel en Basketball alleen bij overcapaciteit.
+
+### Tennis — ⭐ beachhead-prioriteit
 
 | Kanaal             | Zoektermen                                                               |
 | ------------------ | ------------------------------------------------------------------------ |
@@ -70,7 +78,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok             | tennis vlog nl · tennis journey nederland · tennis training              |
 | Slimste plek       | Kijk wie reageert op @timtopspin / @tennistomy posts                     |
 
-### Padel
+### Padel — gedeprioriteerd (beachhead-strategie)
 
 | Kanaal | Zoektermen |
 |---|---|
@@ -78,7 +86,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok | padel vlog nl · padel progressie nederland · padel journey |
 | Slimste plek | Kijk bij comments op @menno.nolten reels |
 
-### Voetbal
+### Voetbal — ⭐ beachhead-prioriteit
 
 | Kanaal             | Zoektermen                                                                                |
 | ------------------ | ----------------------------------------------------------------------------------------- |
@@ -86,7 +94,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok             | voetbal vlog nl · zaalvoetbal training · freestyle voetbal nederland                      |
 | Slimste plek       | Kijk wie reageert op  posts                                                               |
 
-### Rugby
+### Rugby — ⭐ beachhead-prioriteit
 
 | Kanaal             | Zoektermen                                              |
 | ------------------ | ---------------------------------------------------- |
@@ -94,7 +102,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok             | rugby nederland vlog · rugby training nl · rugby speler |
 | Slimste plek       | Kijk wie reageert op @prorugby_nl posts               |
 
-### Basketball
+### Basketball — gedeprioriteerd (beachhead-strategie)
 
 | Kanaal             | Zoektermen                                                 |
 | ------------------ | ---------------------------------------------------------- |

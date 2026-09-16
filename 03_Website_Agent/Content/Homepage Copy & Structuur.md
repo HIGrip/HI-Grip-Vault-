@@ -2,6 +2,8 @@
 
 > Baseline + psychologie-audit vastgelegd 2026-07-14 op basis van live www.higrip.nl. Voor tone of voice: zie [[Brand Voice & Tone of Voice]]. Voor bredere actiepunten: zie [[Conversie Optimalisatie Checklist]].
 
+> **Beachhead-strategie (vanaf 16-9-2026):** HÏ Grip focust nu op tennis, rugby en voetbal (zie [[Doelgroep & Persona's]]). Concreet effect op deze pagina: sectie 9 "Sport-specifieke voordelen" moet deze 3 sporten prioriteren/uitlichten i.p.v. breed alle sporten tonen. Overige secties (banner, kernwaarden, FAQ) blijven merk-breed — zie de open vraag in [[SEO Strategie & Keywords]] over hoe ver deze focus in de sitestructuur doorgetrokken wordt.
+
 ---
 
 ## Huidige opbouw (baseline)

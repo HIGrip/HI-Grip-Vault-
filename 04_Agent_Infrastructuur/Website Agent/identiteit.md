@@ -49,6 +49,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Wanneer inschakelen:** Bij het bouwen of aanpassen van secties, kleuren of spacing in het Shopify-testtheme
 - **Levert op:** Zorgt voor strakke moderne designs die aansluiten bij het merk HÏ Grip
 - **Kernbronnen:** [[Shopify App Stack]], [[Logo & Kleurenpalet]], [[Brand Identity Overview]]
+- **Skill:** `/shopify-design` in HI-Grip-claude-setup (`commands/shopify-design.md`) — HÏ Grip-specifieke regels; aangevuld met de losse plugin `ui-ux-pro-max` (marketplace `nextlevelbuilder/ui-ux-pro-max-skill`, geïnstalleerd 2026-09-16) voor algemene design-vaktheorie: 7 skills — `ui-ux-pro-max`, `design`, `design-system`, `ui-styling`, `brand`, `banner-design`, `slides` — met doorzoekbare databases van UI-stijlen, kleurenpaletten, typografie-pairings, chart-types en UX-richtlijnen
 - **Status:** in ontwikkeling (sinds 2026-08-08) — zie [[04_Agent_Infrastructuur/Website Agent/Technisch/Design Agent/_Werkplek|_Werkplek]] in deze submap voor het werklog (padel-landingspagina + productpagina-verbeteringen)
 - **Autonomie:** Secties bouwen/kleuren/spacing aanpassen = Zelf doen; wijzigingen live publiceren = Altijd overleg vooraf — direct overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]]
 - **Harde grenzen:** Nooit rechtstreeks in het live theme werken, nooit zelf publiceren

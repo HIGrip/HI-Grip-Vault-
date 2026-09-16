@@ -8,6 +8,23 @@ Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen,
 
 ---
 
+## 2026-09-16 — Plugin `ui-ux-pro-max` geïnstalleerd
+
+**Wat:** Op verzoek van lars de GitHub-repo [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) geïnstalleerd als Claude Code-plugin, via:
+```
+claude plugin marketplace add nextlevelbuilder/ui-ux-pro-max-skill
+claude plugin install ui-ux-pro-max@ui-ux-pro-max-skill
+```
+Installatie is user-scope, dus beschikbaar in elke sessie/project op deze machine — niet projectgebonden zoals `/shopify-design`.
+
+**Bevat 7 skills:** `ui-ux-pro-max`, `design`, `design-system`, `ui-styling`, `brand`, `banner-design`, `slides` — met doorzoekbare databases: 79 UI-stijlen, 192 industry-specifieke kleurenpaletten, 74 typografie-pairings (Google Fonts), 25 chart-types, 119 UX-richtlijnen (accessibility, resilient layouts).
+
+**Verhouding tot bestaande skills:** algemene design-vaktheorie, geen HÏ Grip-regels — vult `/shopify-design` aan zoals de losse SEO-plugin `/shopify-seo` aanvult (zie identiteit.md). Voor HÏ Grip-specifiek Shopify-sectiewerk blijft `/shopify-design` de eerste keuze; `ui-ux-pro-max` is bruikbaar bij bredere design-vraagstukken (kleursystemen, typografie-keuzes, UI-stijlverkenning) buiten Shopify.
+
+**Nog open:** nog niet in de praktijk getest binnen een HÏ Grip-sectie/pagina-taak.
+
+---
+
 ## 2026-08-08 (a) — Padel-landingspagina
 
 **Wat:** Volledige nieuwe landingspagina "Gripsokken voor Padel" gebouwd: 14 secties.

@@ -36,16 +36,18 @@ Dit is ook waarom de structuur uitbreidbaar moet zijn: er komt op termijn een **
 13. FAQ (6 vragen incl. wetenschappelijke bronnen)
 14. Footer
 
-**Bekende URL's:**
+**Bekende URL's (gecorrigeerd 2026-09-16, bron: volledige sitemap-audit, ±55 URL's totaal, alle 200 OK):**
 - Homepage: `/`
-- Collectie: `/collections/all`
-- Product: `/products/hi-grip-gripsokken-1` (enige gevonden product-URL — bevestigt dat het huidige assortiment klein is)
+- Collecties: `/collections/all` (bestaat, niet geoptimaliseerd — title is kaal "Producten") en `/collections/gripsokken`
+- Producten (3 bedoeld, 4 live): `/products/hi-grip-gripsokken-1`, `/products/performance-grip-socks-2-0-wit`, `/products/performance-grip-socks-2-0-zwart`, plus een **ongewenste duplicate** `/products/performance-grip-socks-2-0-wit-1` (identieke titel, allebei indexeerbaar — [LARS]-actie: verwijderen/301-redirecten, zie [[Claude SEO Plugin — Skills & Agents]])
+- Sport-specifieke pagina's: **beperkter dan eerder aangenomen** — alleen `/pages/gripsokken-padel` en een pilates-pagina bestaan live als aparte pagina's. De 7 Sportgidsen in de vault (`Content/Sportgidsen/`) zijn contentkennis, geen 1-op-1 live pagina's. Geen "gripsokken voetbal"-pagina, terwijl 7 van 10 SERP-resultaten voor het hoofd-keywordcluster voetbal-gericht zijn — open [LARS]-beslissing, botst met het merk-brede-principe hierboven, zie [[SEO Strategie & Keywords]]
+- Overig: `/pages/over-ons`, `/pages/zakelijk`, `/pages/blogs`, `/pages/ontdek-jouw-sport`, `/pages/veelgestelde-vragen`, `/pages/contact`, `/pages/privacybeleid`, `/pages/retourbeleid`, `/policies/terms-of-service`
 
-**Footer-structuur:**
-- Legal: voorwaarden, verklaring, verzending, retour, betaling, privacy
-- Bedrijf: FAQ, over ons, zakelijk, contact, reviews, voordelen
-- Social: Facebook, Instagram, TikTok, LinkedIn
-- Contact: info@higrip.nl, +31 6 24 56 65 47
+**Footer-structuur (4 kolommen, gecorrigeerd 2026-09-16):**
+- Algemeen/Legal: voorwaarden, verklaring, verzending, retour, betaling, privacy
+- HÏ Grip/Bedrijf: FAQ, over ons, zakelijk, contact, reviews, voordelen
+- Social media: Facebook, Instagram, TikTok, LinkedIn + contactgegevens (info@higrip.nl, +31 6 24 56 65 47)
+- Betaalmethoden: 11 betaalopties (iDEAL, Klarna, PayPal, e.a.)
 - KVK 97210129, BTW NL867952283B01
 
 ---
@@ -61,5 +63,6 @@ Dit is ook waarom de structuur uitbreidbaar moet zijn: er komt op termijn een **
 ## Gerelateerde bestanden
 
 - [[SEO Strategie & Keywords]] — Zoekwoordstrategie op merk/categorie-niveau
+- [[Claude SEO Plugin — Skills & Agents]] — Volledige audit + actieplan (16-09-2026), bron van de correcties hierboven
 - [[Brand Identity Overview]] — Merkverhaal en positionering
 - [[Doelgroep & Persona's]] — B2C/B2B doelgroepen per sectie

@@ -1,6 +1,6 @@
 # SEO Strategie & Keywords — HÏ Grip
 
-> Vastgelegd 2026-07-14 op basis van live-audit www.higrip.nl. Uitgangspunt bevestigd door lars: **SEO is merk-breed, niet product- of sport-specifiek.** Voor sitestructuur: zie [[Website Structuur & Sitemap]].
+> Vastgelegd 2026-07-14 op basis van live-audit www.higrip.nl. Uitgangspunt bevestigd door lars: **SEO is merk-breed, niet product- of sport-specifiek.** Voor sitestructuur: zie [[Website Structuur & Sitemap]]. **Update 2026-09-16:** de technische bevindingen hieronder zijn vervangen door een veel bredere audit (12 deelaudits, health score 59/100) — zie [[Claude SEO Plugin — Skills & Agents]] voor het actuele actieplan. Relevant voor de open vraag hieronder over sport-landingspagina's: die audit vond concrete SERP-evidence dat een "gripsokken voetbal"-collectiepagina ontbreekt terwijl 7 van 10 concurrerende resultaten voetbal-gericht zijn — nog geen besluit, botst met het kernprincipe hieronder.
 
 ---
 

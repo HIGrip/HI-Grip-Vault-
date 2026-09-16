@@ -97,6 +97,8 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 
 Naast de 5 `/`-skills (die inline in de hoofdsessie draaien) heeft elke sub-agent nu ook een losse **agent-definitie** in `HI-Grip-claude-setup/agents/` (`seo-agent`, `design-agent`, `website-copy-agent`, `conversie-analyse-agent`, `email-marketing-agent`), gesynct naar `~/.claude/agents` net als `commands/` en `skills/`. De nieuwe orchestrator-skill **`/website-agent <opdracht>`** (`commands/website-agent.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als `/seo audit` uit de Claude SEO-plugin. De losse `/shopify-*`-skills blijven bestaan voor snel, inline gebruik zonder dat aparte tabjes nodig zijn.
 
+**Verplichte structuur (op verzoek van lars, 2026-09-16):** elk bestand in `agents/` volgt 1-op-1 het `identiteit.md` + `soul.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — samengevoegd in één bestand (Rol → Missie → Scope wel/niet → Verhouding tot andere agents → Autonomie per taak → Harde grenzen → Werkwijze → Communicatiestijl → Vaktheorie → Kernbronnen), omdat een subagent geen aparte identiteit/soul-bestanden kan hebben. Dit is **geen eenmalige opzet maar een doorlopende sync-verplichting**: wijzigt de autonomie-tabel, status of een harde grens hier in de vault, dan moet het bijbehorende `agents/*.md`-bestand in dezelfde sessie worden bijgewerkt — en andersom. `CLAUDE.md` in de repo (en de actieve kopie in `~/.claude/`) bevat dezelfde sync-regel expliciet.
+
 ## Kernbronnen in de vault
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Website Doel & KPI's]] — doel van de site + KPI-aanpak

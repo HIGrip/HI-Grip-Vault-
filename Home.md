@@ -24,6 +24,12 @@
 - [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[Iconografie]] · [[Fotografie & Art-Direction]]
 - [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]]
 
+**Product**
+- [[Performance Grip Socks 2.0]] — productwaarheid: specs, features, claims, designsysteem B2B (enige plek)
+
+**Compliance**
+- [[Compliance To-Do Lijst]] — alle NL/EU-verplichtingen (UPV, GPSR, claims, privacy) met waar en hoe
+
 **Agent-systeem**
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe identiteit.md / soul.md / user.md werken

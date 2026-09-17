@@ -80,7 +80,7 @@ Sinds het herstel op 30-08 om 19:42 vuren alle andere e-commerce-events wel (`vi
 
 - [ ] P2 · Resultaat-KPI's opzetten (conversieratio, AOV, omzet/bezoeker) met Shopify Analytics als omzetbron
 - [ ] P2 · Funnel-rapport product → cart → checkout → betaling via `run_funnel_report`; grootste absolute drop-off zoeken
-- [ ] P2 · UTM-discipline op alle uitgaande links (bio, posts, influencer-briefings, e-mail)
+- [x] P2 · UTM-discipline op alle uitgaande links (bio, posts, influencer-briefings, e-mail)
 - [ ] P3 · Microsoft Clarity koppelen aan de diagnoses: bij een funnel-drop recordings/heatmaps erbij pakken
 - [ ] P3 · Achterhalen waarom de GA4-tag rond 1 januari 2026 stopte
 - [x] P2 · Controleren of de koppeling purchase-events doorgeeft — gecontroleerd 3 september: nee

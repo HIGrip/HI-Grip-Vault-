@@ -5,7 +5,7 @@ datum: 2026-09-17
 bron: routine
 routine: "growth-radar"
 categorie: CRO
-status: nieuw
+status: bekeken
 prioriteit: P1
 samenvatting: "Shopify's deadline voor Checkout Extensibility (26 augustus 2026) heeft bij niet-Plus winkels stilzwijgend alle trackingscripts uit het oude checkoutveld gewist — mogelijk een tweede verklaring voor de GA4-storing naast het ontbrekende key event. Daarnaast: een prijs per paar bij multipacks levert 5–15% conversiewinst op en ontbreekt op de productpagina."
 gerelateerd: [2026-09-14-weekoverzicht, 2026-09-03-analytics-kpi-meetgat, 2026-09-15-regressiecheck]
@@ -70,3 +70,5 @@ _Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en 
 - Origineel: `C:\Users\Test\.claude\research\growth-radar\rapporten\2026-09-17-cro.md`
 
 ## Aantekeningen
+
+- **Test · 2026-09-17 11:06** — Round-trip-test: deze aantekening hoort na /research-sync onder ## Aantekeningen in de vault te staan.

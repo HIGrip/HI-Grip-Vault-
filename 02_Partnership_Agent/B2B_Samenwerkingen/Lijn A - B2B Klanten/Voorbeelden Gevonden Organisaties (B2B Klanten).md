@@ -21,6 +21,15 @@
 | Fervor Pilates | Pilates studio (mat + reformer, ook dans/peuteroudergym) | Theo D'Orsingel 30, 2652 LC Berkel en Rodenrijs (Rotterdam-regio) | ✉️ info@fervor.nl · 📞 085-0478378 · [fervor.nl](https://fervor.nl/) | MIDDEL | Actieve studio met breed lesaanbod, geen bestaande merchandise/accessoire-verkoop gevonden — ruimte voor grip socks als lesmateriaal, zelfde profiel als PLTS/Pilates Rotterdam | Nieuw (07-09) |
 | bbb health boutique Rotterdam | Ladies-only boutique gym (pilates, hot pilates, kickboksen, barre, HIIT, yoga) | Zwart Janstraat 138, 3035 AZ Rotterdam | ✉️ rotterdam@bbbhealthboutique.nl · 📞 +31 88 644 0010 · [bbbhealthboutique.nl](https://bbbhealthboutique.nl/bbb-rotterdam/) | MIDDEL | Breder lesaanbod dan pure pilates-studio's (kickboksen/HIIT past ook bij grip/stabiliteit-behoefte), boutique-format met eigen "health"-merkbeleving — potentieel voor co-branded productaanbod | Nieuw (07-09) |
 
+| TennisDirect.nl / PassaTennis | Tennis-webshop + 2 fysieke winkels NL + 1 BE (rackets, schoenen, kleding, snaren) | Landelijk NL/BE | Contactgegevens nog te achterhalen | HOOG | Grote landelijke tennisspeciaalzaak met duidelijke tennisfocus — logische plek voor schap/assortiment | Nieuw (17-09) |
+| Tennisplanet.nl | Tennis-webshop, pure-play specialist sinds 1984 | Landelijk NL | Contactgegevens nog te achterhalen | HOOG | Claimt grootste tennisassortiment van Europa | Nieuw (17-09) |
+| Tennis-Point.nl | Internationale tennis-webshop, breed assortiment incl. grips/accessoires | Landelijk NL/BE/DE | Contactgegevens nog te achterhalen | MIDDEL | Signalen over matige klantenservice (2021, mogelijk verouderd) — verifiëren voor outreach | Nieuw (17-09) |
+| TennisFirst Rotterdam | Lokale tennisspecialist, fysieke winkel (Head, Tecnifibre, Babolat) | Rotterdam-regio | Contactgegevens nog te achterhalen | HOOG | Past bij Rotterdam-locatieprioriteit | Nieuw (17-09) |
+| Sportzaak Sportief (Naarden) | Sportzaak met tennisafdeling + webshop (Sport en Bestel Online) | Naarden (niet Rotterdam-regio) | Contactgegevens nog te achterhalen | MIDDEL | Geen pure tennisspecialist maar wel uitgesproken tennisafdeling | Nieuw (17-09) |
+| De Tenniswinkel / Tennisshoponline.nl / Tennis-Voordeel.nl / Tennis Store NL | Kleinere/middelgrote tennis-webshops | Landelijk NL | Contactgegevens nog te achterhalen | LAAG/MIDDEL | Niet diepgaand geverifieerd op omzet/schaal, wel duidelijke tennisfocus — nader onderzoeken per shop | Nieuw (17-09) |
+| DAKA Rotterdam Centrum (Coolsingel) | Grote generieke sportzaak (1250m²) met racketsport-afdeling + bespanservice | Rotterdam centrum | Contactgegevens nog te achterhalen | LAAG | Geen exclusieve tennisfocus, vergelijkbaar met Decathlon/Intersport-uitzonderingscategorie | Nieuw (17-09) |
+| TennisPro.nl | Landelijke tennis-retailketen (fysieke winkels + webshop), technisch advies | Landelijk NL | Contactgegevens nog te achterhalen | MIDDEL | Grote potentiële retailpartner, maar centrale inkoop = langere salescyclus | Nieuw (17-09) |
+
 ---
 
 ## Werkwijze bij een nieuwe zoekactie

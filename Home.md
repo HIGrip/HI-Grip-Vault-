@@ -18,6 +18,9 @@
 
 ## Kern-ingangen
 
+**Onderzoek**
+- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
+
 **Merk**
 - [[Brand Identity Overview]] — verhaal, missie, visie, waarden (enige plek)
 - [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, slogans

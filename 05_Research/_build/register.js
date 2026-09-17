@@ -201,7 +201,7 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-17T08:40:45+00:00",
+ "gebouwd": "2026-09-17T08:43:56+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -228,6 +228,55 @@ window.HI_RESEARCH = {
    "vervangt": []
   },
   {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-16-seo-onderzoek-cloud-routine-website#3e155aa4",
+     "prioriteit": "P3",
+     "tekst": "Verouderde URL's met numeriek ID en zonder `/pages/`-prefix in de Google-index controleren (HTTP-status) en 301'en naar de Shopify-equivalenten"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-16-seo-onderzoek-cloud-routine-website#5f5bdcde",
+     "prioriteit": "P3",
+     "tekst": "hreflang en canonicals tussen higrip.nl en /en controleren — of besluit 4 uit het werkdossier (Engels uitzetten) nemen"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-16-seo-onderzoek-cloud-routine-website#875468b1",
+     "prioriteit": "P3",
+     "tekst": "Maattabel-widget met schoenmaat-omrekening bij de variant-selector overwegen"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-16-seo-onderzoek-cloud-routine-website#999a1dd0",
+     "prioriteit": "P3",
+     "tekst": "Cloud-routine \"website\" (`trig_01BKt9WCeR9H92FDcS9HtPvV`) uitzetten of voorzien van repo + egress-toegang tot higrip.nl — draait nu dagelijks zonder de site te kunnen bereiken"
+    }
+   ],
+   "body_md": "# SEO-onderzoek cloud-routine \"website\" — publieke data, 16 september 2026\n\n## In het kort\n\nRapport van de claude.ai-routine \"website\" (`trig_01BKt9WCeR9H92FDcS9HtPvV`, dagelijks 23:30 UTC, run `cse_016RYYiEW6zpxYL4gdBoz47n`). De routine had geen Shopify-toegang en geen netwerktoegang tot higrip.nl, dus alles is afgeleid van wat Google en Trustpilot tonen. Het rapport bevat twee content-drafts (padel-landingspagina, blog \"gripsokken vs. sportsokken\") en een actieplan. Geregistreerd op 17 september via `/research-nieuw` als eerste echte run van dat command.\n\n**Tegenstrijdig met geverifieerde vault-feiten — niet overnemen:**\n\n| Claim in het rapport | Wat de vault (geverifieerd) zegt |\n|---|---|\n| Trustpilot 4,5★ over 15 reviews | 4,6 uit 5 op 17 reviews (bij de bron opgehaald 3 sep, [Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md)) |\n| \"Geen sport-specifieke landingspagina's\" | `/pages/gripsokken-padel` bestaat en is goed (SEO-audit 15 sep); voetbalpagina staat lokaal klaar |\n| Alleen witte sok, twee maten 34-39 / 40-46 | Gripsok 1.0 (34-39/40-46) én 2.0 wit/zwart in 35-38/39-42/43-47 ([Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md)) |\n| \"Structured data ontbreekt vermoedelijk; voeg Product-schema met aggregateRating toe\" | Organization/WebSite/FAQPage zijn gebouwd; `aggregateRating` is juist **verwijderd** omdat er geen zichtbare reviews zijn — eerst reviewapp, dan schema (backlog punt 2) |\n| FAQPage-schema als groeihefboom | Google toont sinds 7 mei 2026 geen FAQ rich results meer ([2026-09-15-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md)) |\n\nConcurrent \"Trusox\" komt in de vault niet voor (wel FitSockr, Tapedesign, Optigrip, Proskary) — onbevestigd.\n\n## Bevindingen\n\n### Wat wél nieuw is\n\n- **Verouderde URL-patronen in de Google-index.** Naast nette Shopify-slugs staan er pagina's zonder `/pages/`-prefix (`/algemene-voorwaarden`, `/winkel`) en URL's met een numeriek ID vóór de slug (`/2697390_hi-grip-zaalvoetbalsokken`, `/blogs/2630309_gripsokken-tijdens-pilates-yoga…`) — vermoedelijk restanten van het platform vóór Shopify. Ook minstens twee blog-handles (`/blogs/hi-grip/…` en `/blogs/trends/…`). Versnippert linkwaarde; controleren welke nog 200 geven en 301'en naar de Shopify-equivalenten.\n- **hreflang NL/EN.** `higrip.nl` en `higrip.nl/en` bestaan naast elkaar; het rapport vraagt om een check of `hreflang` en canonicals goed staan. Het werkdossier adviseert de Engelse versie uit te zetten — dat besluit staat nog open (beslispunt 4).\n- **Maatkeuze als afhaakreden.** Voorstel: maattabel-widget met schoenmaat-omrekening direct bij de variant-selector, niet alleen op de FAQ-pagina.\n- **Contentclusters die ontbreken volgens de index:** vergelijking (gripsokken vs. sportsokken, vs. concurrenten), onderhoud/gebruik (wassen, hoe vaak dragen), maatgids als eigen pagina, kids/jeugd. Sluit aan bij de hub-and-spoke-strategie uit het werkdossier.\n\n### Wat het rapport bevestigt (al in de vault)\n\n- Reviews opschalen via post-purchase-flow en zichtbaar op de productpagina (backlog punt 2).\n- Sport-specifieke landingspagina's (SEO-audit: 8 van 10 nog te vullen via `hi-sport-landing`).\n- Core Web Vitals / app-bloat auditen (werkdossier: 241 requests, 70 script-tags).\n- AI-zoekmachines: vraag-antwoordblokken, consistente feiten op één canonieke pagina, merkvermeldingen bij derden (basislijn §2, ai-search).\n- Bundel/herhaalaankoop en interne links blog ↔ product.\n\n### Content-drafts in het rapport\n\nTwee kant-en-klare drafts: een padel-landingspagina (SEO-titel \"Gripsokken voor Padel | Maximale Grip & Stabiliteit — HÏ Grip\") en een blogartikel \"Gripsokken vs. gewone sportsokken\" (~650 woorden, vraag/antwoord-opbouw). Beide gebruiken de verouderde productfeiten (2 maten, wit) en missen de merkstem (geen 1,17 / 95%, geen \"jij/je\"-toon consequent) — vóór gebruik herschrijven volgens [Brand Voice & Tone of Voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) en de vaste cijfers uit het werkdossier.\n\n### Actieplan van het rapport\n\nWeek 1 redirects + hreflang · week 1-2 structured data · week 2 drafts publiceren en meten in Search Console · week 2-3 reviewflow · week 3-4 maattabel-widget + bundel · doorlopend CWV-audit en 1 contentcluster per maand.\n\n## Acties\n\n- [ ] P3 · Verouderde URL's met numeriek ID en zonder `/pages/`-prefix in de Google-index controleren (HTTP-status) en 301'en naar de Shopify-equivalenten\n- [ ] P3 · hreflang en canonicals tussen higrip.nl en /en controleren — of besluit 4 uit het werkdossier (Engels uitzetten) nemen\n- [ ] P3 · Maattabel-widget met schoenmaat-omrekening bij de variant-selector overwegen\n- [ ] P3 · Cloud-routine \"website\" (`trig_01BKt9WCeR9H92FDcS9HtPvV`) uitzetten of voorzien van repo + egress-toegang tot higrip.nl — draait nu dagelijks zonder de site te kunnen bereiken\n\n## Bronnen\n\n- Rapport-artifact: https://claude.ai/artifact/H5KiVWmh665yX9yTTKUseH (16 sep 2026)\n- Routine-run: `cse_016RYYiEW6zpxYL4gdBoz47n` (claude.ai/code/routines → \"website\")\n- Shopify — Latest SEO Trends in 2026: https://www.shopify.com/blog/seo-trends\n- Ice Cube Digital — Shopify SEO Checklist 2026: https://www.icecubedigital.com/blog/shopify-seo-checklist-2026/\n- SpearPoint — SEO for Shopify 2026: https://www.thespearpoint.com/blog/seo-for-shopify-complete-guide\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "https://claude.ai/artifact/H5KiVWmh665yX9yTTKUseH",
+   "bronbestand_url": "https://claude.ai/artifact/H5KiVWmh665yX9yTTKUseH",
+   "categorie": "SEO",
+   "datum": "2026-09-16",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-15-seo-audit",
+    "2026-09-04-werkdossier-stand-van-zaken",
+    "2026-09-15-growth-radar-seo-content",
+    "2026-09-16-growth-radar-ai-search"
+   ],
+   "id": "2026-09-16-seo-onderzoek-cloud-routine-website",
+   "prioriteit": "P3",
+   "routine": "",
+   "samenvatting": "De dagelijkse cloud-routine \"website\" maakte op 16 september een SEO/CRO-rapport op basis van alleen publieke data (Google-index, Trustpilot) — higrip.nl zelf was geblokkeerd. Nieuw en bruikbaar: verouderde numerieke URL's in de index, een hreflang-check NL/EN en een maattabel-widget; vijf claims spreken geverifieerde vault-feiten tegen en zijn hier gemarkeerd.",
+   "status": "bekeken",
+   "titel": "SEO-onderzoek cloud-routine \"website\" — publieke data, 16 september 2026",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-seo-onderzoek-cloud-routine-website.md",
+   "vervangt": []
+  },
+  {
    "acties": [],
    "body_md": "# Growth Radar — AI-search (checkout in AI is dood, feed is de ingang)\n\n## In het kort\n\nVier bevindingen die vooral bestaande prioriteiten bevestigen: bewijspagina, gratis-verzendingsdrempel, productvideo en variant-ID's (verplaatst naar P1). Eén open vraag: verzendt higrip.nl naar de VS?\n\n## Bevindingen\n\n**16 september 2026 · woensdag**\n\n### In het kort\nHet grootste nieuws is dat ChatGPT's native checkout dood is: OpenAI stopte Instant Checkout in maart 2026 nadat het bij Walmart drie keer slechter converteerde dan een gewone doorklik. Het model dat wint is \"ontdekken in AI, kopen op je eigen site\" — dat bevestigt de bestaande backlogprioriteiten in plaats van nieuwe te creëren. Daarnaast is er een concreet gratis kanaal (Perplexity Merchant Program) dat mogelijk niet inzetbaar is zolang HÏ Grip niet naar de VS verzendt.\n\n---\n\n### ChatGPT's native checkout is gestopt — \"ontdekken in AI, kopen op je eigen site\" wint\nOpenAI lanceerde Instant Checkout op 29 september 2025, eerst met Etsy en daarna met Shopify-merken als Glossier, Vuori en Spanx. In maart 2026 werd de functie alweer stopgezet. Walmart mat dat checkout binnen ChatGPT ongeveer drie keer slechter converteerde dan doorklikken naar de eigen site — ook al leverde ChatGPT wel ongeveer twee keer zoveel nieuwe klanten op als reguliere zoekopdrachten.\n\nHet model dat nu standaard is: AI-assistenten (ChatGPT, Google AI Mode, Perplexity) doen de productontdekking en aanbeveling, maar de daadwerkelijke aankoop gebeurt op de eigen webshop van de retailer. De onderliggende protocollen (ACP van Stripe/OpenAI, UCP van Shopify/Google) faciliteren vooral productdata-uitwisseling voor die aanbevelingen, niet een volledige in-chat kassa.\n\n> **Voor higrip.nl:** Dit betekent dat je geen tijd hoeft te steken in een native AI-checkout-integratie. De winst zit op twee plekken die al in je backlog staan: geciteerd worden in het AI-gesprek (backlogpunt 4, bewijspagina) én een productpagina die converteert zodra iemand doorklikt vanuit ChatGPT of Gemini (backlogpunt 1, gratis-verzendingsdrempel, en punt 6, productvideo). Deze vondst verhoogt het belang van die punten, ze zijn niet langer \"aardig om te hebben\" maar de kern van je AI-zichtbaarheidsstrategie.\n\n**Actie:** Alleen volgen — geen nieuwe actie, wel prioriteitsbevestiging voor bestaande punten 1, 4 en 6.\n\n---\n\n### Schema-markup verhoogt AI-citaties zelf niet — specifieke cijfers en attribuutrijke data wel\nAhrefs volgde 1.885 pagina's die tussen augustus 2025 en maart 2026 JSON-LD-schema toevoegden en vond geen betekenisvolle stijging in citaties door Google AI Overviews, AI Mode of ChatGPT. Belangrijke kanttekening: de onderzochte pagina's hadden vooraf al 100+ AI Overview-citaties, dus de conclusie geldt vooral voor pagina's die al zichtbaar zijn — niet per se voor een pagina die nog moet doorbreken.\n\nWel bleek dat attribuutrijke schema — met ingevulde prijs, rating, specificaties — de citatiekans voor domeinen met lager gezag bijna verdubbelt, terwijl generieke schema niets doet. De sterkste hefboom blijft je organische positie zelf, gevolgd door het toevoegen van citeerbare bronnen, concrete cijfers en naam-en-toenaam-citaten in de tekst.\n\n> **Voor higrip.nl:** Dit onderbouwt met data waarom de volgorde in je backlog klopt: eerst echte reviews zichtbaar maken en dan pas `aggregateRating` vullen (punt 2), en een bewijspagina bouwen rond je eigen meetdata (punt 4). Niet het schema zelf overtuigt AI-modellen — de concrete cijfers erachter (1.17 wrijvingscoëfficiënt, 95% meer grip) doen dat, mits ze leesbaar in de tekst staan én, zodra je reviews live zijn, volledig ingevuld zijn in het schema.\n\n**Actie:** Geen nieuwe actie — bevestigt bestaande prioriteit van punt 2 en 4. Zorg dat het `aggregateRating`-schema straks volledig ingevuld is (rating, aantal, geen lege velden) zodra de reviewapp staat.\n\n---\n\n### Google Merchant Center wordt ook de ingang voor AI Mode-shopping, niet alleen voor Shopping-ads\nOp NRF 2026 kondigde Google vier AI-shoppingfuncties aan die allemaal op Merchant Center-feeddata leunen: Universal Commerce Protocol, Native Checkout, Business Agent en Direct Offers. Universal Cart laat gebruikers producten toevoegen vanuit Search, Gemini, YouTube of Gmail — weer gevoed door dezelfde productfeed. Eerste deelnemers zijn onder meer geselecteerde Shopify-winkels.\n\n> **Voor higrip.nl:** Backlogpunt 7 (variant-ID's controleren tegen de Merchant Center-eis van maart 2026) stond er al vanuit feed-compliance, maar diezelfde feed is nu ook de poort naar zichtbaarheid in Google's AI Mode-shoppinglaag. Eén foutieve of ontbrekende variant-ID kost je dus niet alleen een Shopping-ad, maar ook een aanbeveling in AI Mode.\n\n**Actie:** Punt 7 verplaatst van P2 naar P1 — zie bijgewerkte backlog.\n\n---\n\n### Perplexity's Merchant Program is gratis voor Shopify — mits je naar de VS verzendt\nPerplexity's Merchant Program kost niets: geen listingkosten, geen commissie. Shopify-winkels in de VS krijgen automatische productsynchronisatie zonder aparte aanmelding. \"Buy with Pro\" is een one-click checkout voor Perplexity Pro-gebruikers met gratis verzending — betaald door Perplexity, niet door de verkoper. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten sinds de functie verder open ging dan alleen Pro-gebruikers.\n\nDe voorwaarde is scherp: bedrijven moeten verkopen én verzenden naar de VS om in aanmerking te komen.\n\n> **Voor higrip.nl:** Onbekend of higrip.nl momenteel naar de VS verzendt — dat is nu de enige vraag die bepaalt of dit kanaal open staat. Zo niet, dan is dit een kanaal om te volgen voor het moment dat internationale verzending een overweging wordt, niet iets om nu op te bouwen.\n\n**Actie:** Controleer of higrip.nl naar de VS verzendt. Zo ja: gratis aanmelden bij het Perplexity Merchant Program. Zo nee: alleen volgen — nieuw backlogpunt toegevoegd onder voorbehoud.\n\n---\n\n### Bronnen\n- [Why AI Checkout Stalled: Discover in AI, Buy on Site](https://www.digitalapplied.com/blog/ai-agentic-commerce-discover-in-ai-buy-on-site-2026)\n- [Stripe powers Instant Checkout in ChatGPT and releases Agentic Commerce Protocol](https://stripe.com/newsroom/news/stripe-openai-instant-checkout)\n- [We Tracked 1,885 Pages Adding Schema. AI Citations Barely Moved. — Ahrefs](https://ahrefs.com/blog/schema-ai-citations/)\n- [Does Schema Markup Predict AI Citation? — SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6284518)\n- [Google's AI Shopping Announcements: What They Mean — Brainlabs](https://www.brainlabsdigital.com/google-2026-ai-shopping-announcements-explained/)\n- [Google unveils shopping ads in AI Mode — ppc.land](https://ppc.land/google-unveils-shopping-ads-in-ai-mode-doubling-down-on-conversational-commerce/)\n- [Perplexity Shopping: How to Optimize Your Store for AI — Shopify](https://www.shopify.com/blog/perplexity-shopping)\n- [Perplexity Merchant Program: What Most Sellers Miss (2026)](https://alhena.ai/blog/perplexity-shopping-merchants-setup-guide/)\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en komen via het dashboard onder NU AANDACHT binnen — hier niet gedupliceerd._\n\n## Bronnen\n\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-16-ai-search.md`\n\n## Aantekeningen",
    "bron": "routine",
@@ -239,7 +288,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-15-growth-radar-basislijn",
     "2026-09-15-growth-radar-seo-content",
-    "2026-09-15-seo-audit"
+    "2026-09-15-seo-audit",
+    "2026-09-16-seo-onderzoek-cloud-routine-website"
    ],
    "id": "2026-09-16-growth-radar-ai-search",
    "prioriteit": "P2",
@@ -300,7 +350,8 @@ window.HI_RESEARCH = {
     "2026-09-15-regressiecheck",
     "2026-09-16-growth-radar-ai-search",
     "2026-09-04-werkdossier-stand-van-zaken",
-    "2026-09-15-growth-radar-seo-content"
+    "2026-09-15-growth-radar-seo-content",
+    "2026-09-16-seo-onderzoek-cloud-routine-website"
    ],
    "id": "2026-09-15-seo-audit",
    "prioriteit": "P1",
@@ -344,7 +395,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-15-growth-radar-basislijn",
-    "2026-09-16-growth-radar-ai-search"
+    "2026-09-16-growth-radar-ai-search",
+    "2026-09-16-seo-onderzoek-cloud-routine-website"
    ],
    "id": "2026-09-15-growth-radar-seo-content",
    "prioriteit": "P3",
@@ -873,7 +925,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-15-seo-audit",
     "2026-09-03-analytics-kpi-meetgat",
-    "2026-09-14-weekoverzicht"
+    "2026-09-14-weekoverzicht",
+    "2026-09-16-seo-onderzoek-cloud-routine-website"
    ],
    "id": "2026-09-04-werkdossier-stand-van-zaken",
    "prioriteit": "P1",
@@ -1050,13 +1103,13 @@ window.HI_RESEARCH = {
   "open_per_prioriteit": {
    "P1": 22,
    "P2": 41,
-   "P3": 26
+   "P3": 30
   },
   "per_categorie": {
    "CRO": 3,
    "Compliance": 1,
    "Merk": 3,
-   "SEO": 5,
+   "SEO": 6,
    "Techniek": 1
   },
   "per_week": [
@@ -1116,12 +1169,12 @@ window.HI_RESEARCH = {
     "week": "2026-W37"
    },
    {
-    "aantal": 7,
+    "aantal": 8,
     "start": "2026-09-14",
     "week": "2026-W38"
    }
   ],
-  "totaal_notities": 13
+  "totaal_notities": 14
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

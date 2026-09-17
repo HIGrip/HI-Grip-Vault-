@@ -8,7 +8,7 @@ categorie: Techniek
 status: in-uitvoering
 prioriteit: P1
 samenvatting: "Vier audits van 3 september samengebracht: twee blokkades (producten koppelen aan collectie gripsokken, purchase-event aan de checkout), 18 beslispunten en zeven tegenspraken (besteldeadline, retourtermijn, verzenddrempel) die in thema 200269168967 zijn rechtgezet. De officiële Shopify-policies lopen nu achter op wat de site belooft."
-gerelateerd: [2026-09-15-seo-audit, 2026-09-03-analytics-kpi-meetgat, 2026-09-14-weekoverzicht]
+gerelateerd: [2026-09-15-seo-audit, 2026-09-03-analytics-kpi-meetgat, 2026-09-14-weekoverzicht, 2026-09-16-seo-onderzoek-cloud-routine-website]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Analyse\\Stand van Zaken — Werkdossier 2026-09-04.md"
 deadline: ""

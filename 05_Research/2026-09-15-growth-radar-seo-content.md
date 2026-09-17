@@ -8,7 +8,7 @@ categorie: SEO
 status: bekeken
 prioriteit: P3
 samenvatting: "Google toont sinds 7 mei 2026 geen FAQ rich results meer en zegt in de AI Overviews-gids (15 mei 2026) dat structured data niet nodig is voor AI-citaties. Het backlogpunt over de vraagpagina's is aangepast: schema-stap geschrapt, antwoord-eerst-opbouw blijft het werk dat telt."
-gerelateerd: [2026-09-15-growth-radar-basislijn, 2026-09-16-growth-radar-ai-search]
+gerelateerd: [2026-09-15-growth-radar-basislijn, 2026-09-16-growth-radar-ai-search, 2026-09-16-seo-onderzoek-cloud-routine-website]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-15-seo-content.md"
 deadline: ""

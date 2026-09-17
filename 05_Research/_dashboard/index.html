@@ -1,0 +1,836 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HÏ Grip Research Dashboard</title>
+<meta name="description" content="Alle onderzoeken, routines en bevindingen van HÏ Grip op één plek — de vault is de bron.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;0,900;1,400&display=swap">
+<style>
+  /* ── Tokens: licht op :root, donker via media + data-theme ─────────────── */
+  :root {
+    --grond: #FFFFFF;
+    --vlak: #EAE8E5;
+    --tekst: #000000;
+    --blauw: #0011A7;
+    --oranje: #FF6A00;
+    --rood: #E10600;
+    --kop-grond: #000000;
+    --kop-tekst: #FFFFFF;
+    --grijs: color-mix(in oklab, var(--tekst) 58%, var(--grond));
+    --lijn: color-mix(in oklab, var(--tekst) 14%, var(--grond));
+    --staaf-rand: transparent;
+    --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --gutter: 16px;
+    --max: 1120px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --grond: #111111;
+      --vlak: #1a1a1a;
+      --tekst: #FFFFFF;
+      --kop-grond: #000000;
+      --kop-tekst: #FFFFFF;
+      --staaf-rand: rgba(255, 255, 255, 0.28);
+    }
+  }
+  :root[data-theme="dark"] {
+    --grond: #111111;
+    --vlak: #1a1a1a;
+    --tekst: #FFFFFF;
+    --kop-grond: #000000;
+    --kop-tekst: #FFFFFF;
+    --staaf-rand: rgba(255, 255, 255, 0.28);
+  }
+
+  * { box-sizing: border-box; }
+  html { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--grond);
+    color: var(--tekst);
+    font: 400 15px/1.6 var(--font);
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (min-width: 769px) { body { font-size: 16px; } }
+  h1, h2, h3 { text-transform: uppercase; text-wrap: balance; margin: 0; line-height: 1.05; }
+  h1 { font-weight: 900; font-size: clamp(2rem, 6vw, 3.5rem); letter-spacing: -1px; }
+  h2 { font-weight: 900; font-size: clamp(1.5rem, 4vw, 2.25rem); }
+  h3 { font-weight: 800; font-size: 1.05rem; }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--tekst); outline-offset: 2px; }
+  [hidden] { display: none !important; }
+  .micro { font-weight: 600; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; }
+  .num { font-variant-numeric: tabular-nums; }
+  .wrap { max-width: var(--max); margin-inline: auto; padding-inline: var(--gutter); }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+  /* ── Kop ──────────────────────────────────────────────────────────────── */
+  .kop { background: var(--kop-grond); color: var(--kop-tekst); padding-block: 40px 44px; }
+  .kop .wrap { display: grid; gap: 28px; }
+  .kop-eyebrow { color: var(--kop-tekst); opacity: 0.75; }
+  .kop-meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 12px; font-size: 14px; opacity: 0.85; }
+  .kop-invoer { display: grid; gap: 12px; grid-template-columns: 1fr; }
+  @media (min-width: 769px) { .kop-invoer { grid-template-columns: 2fr 1fr; align-items: end; } }
+  .veld { display: grid; gap: 6px; }
+  .veld label { font-weight: 600; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; opacity: 0.8; }
+  .veld input, .veld select, .veld textarea {
+    width: 100%; padding: 12px 14px; border: 2px solid var(--lijn); border-radius: 8px;
+    background: var(--grond); color: var(--tekst);
+  }
+  .kop .veld input { background: var(--kop-grond); color: var(--kop-tekst); border-color: rgba(255,255,255,0.35); }
+  .kop .veld input::placeholder { color: rgba(255,255,255,0.55); }
+  .cijfers { display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: flex-end; }
+  .cijfer { display: grid; gap: 4px; }
+  .cijfer b { font-weight: 900; font-size: clamp(3.5rem, 12vw, 6.5rem); line-height: 0.9; letter-spacing: -2px; }
+  .cijfer span { display: inline-flex; align-items: center; gap: 8px; }
+  .toegang { margin-top: 4px; font-size: 14px; padding: 10px 14px; border: 1px solid rgba(255,255,255,0.35); border-radius: 8px; display: inline-block; }
+
+  /* ── Chips en pillen ───────────────────────────────────────────────────── */
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; border-radius: 999px;
+    font-weight: 600; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; line-height: 1.2;
+    background: var(--vlak); color: var(--tekst); border: 1px solid transparent; white-space: nowrap;
+  }
+  .kop .chip { background: rgba(255,255,255,0.12); color: var(--kop-tekst); }
+  .chip--p1, .kop .chip--p1 { background: var(--oranje); color: #000000; }
+  .chip--p2 { background: transparent; border-color: var(--tekst); }
+  .kop .chip--p2 { border-color: var(--kop-tekst); background: transparent; }
+  .chip--p3 { background: transparent; border-color: var(--grijs); color: var(--grijs); }
+  .kop .chip--p3 { border-color: rgba(255,255,255,0.5); color: rgba(255,255,255,0.8); background: transparent; }
+  .chip--actief { background: var(--blauw); color: #FFFFFF; border-color: var(--blauw); }
+  .chip--status-nieuw { background: var(--blauw); color: #FFFFFF; }
+  .chip--status-in-uitvoering { background: var(--tekst); color: var(--grond); }
+  .chip--status-verwerkt, .chip--status-gearchiveerd { background: transparent; border-color: var(--grijs); color: var(--grijs); }
+  .chip--status-bekeken { background: transparent; border-color: var(--tekst); }
+  .chip--sync { background: transparent; border: 1px dashed var(--grijs); color: var(--grijs); letter-spacing: 1px; }
+  button.chip { cursor: pointer; }
+  .deadline { color: var(--rood); font-weight: 600; white-space: nowrap; }
+  .knop {
+    display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 30px; border: 2px solid var(--tekst);
+    background: var(--tekst); color: var(--grond); font-weight: 700; font-size: 14px; letter-spacing: 1px; cursor: pointer;
+  }
+  .knop:disabled { opacity: 0.45; cursor: not-allowed; }
+  .knop--licht { background: transparent; color: var(--tekst); }
+
+  /* ── Secties ──────────────────────────────────────────────────────────── */
+  .sectie { padding-block: 56px; }
+  .sectie--vlak { background: var(--vlak); }
+  .sectie-kop { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 24px; }
+  .sectie-kop p { margin: 0; color: var(--grijs); font-size: 14px; }
+  .leeg { color: var(--grijs); font-style: italic; }
+
+  /* NU AANDACHT */
+  .aandacht { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .aandacht li {
+    display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start;
+    padding: 18px 16px; background: var(--grond); border-left: 6px solid var(--oranje);
+  }
+  .aandacht li.is-af { border-left-color: var(--grijs); }
+  .aandacht li.is-af .a-tekst { text-decoration: line-through; color: var(--grijs); }
+  .aandacht input[type=checkbox], .acties input[type=checkbox] { width: 22px; height: 22px; margin: 3px 0 0; accent-color: var(--blauw); cursor: pointer; }
+  .a-tekst { font-weight: 600; font-size: clamp(1rem, 2.2vw, 1.2rem); line-height: 1.35; }
+  .a-meta { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-top: 8px; font-size: 13px; color: var(--grijs); }
+  .a-meta .link { background: none; border: 0; padding: 0; color: var(--tekst); text-decoration: underline; cursor: pointer; font-weight: 600; }
+  details.rest { margin-top: 24px; }
+  details.rest summary { cursor: pointer; font-weight: 600; }
+  details.rest .aandacht li { border-left-color: var(--lijn); }
+
+  /* Filters */
+  .filters { display: grid; gap: 14px; margin-bottom: 28px; }
+  .filter-rij { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .filter-rij .micro { color: var(--grijs); margin-right: 6px; min-width: 88px; }
+
+  /* Feed */
+  .feed { display: grid; gap: 14px; }
+  .kaart {
+    display: grid; gap: 10px; padding: 22px 20px; background: var(--vlak); border: 0; text-align: left; cursor: pointer; width: 100%; color: inherit;
+    border-left: 6px solid transparent;
+  }
+  .kaart.p-P1 { border-left-color: var(--oranje); }
+  .kaart:hover { outline: 2px solid var(--tekst); }
+  .kaart-boven { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 13px; color: var(--grijs); }
+  .kaart p { margin: 0; }
+  .kaart-onder { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; font-size: 13px; color: var(--grijs); }
+  .banner { padding: 10px 14px; background: var(--grond); border: 1px solid var(--lijn); font-size: 13px; }
+  .banner .link { background: none; border: 0; padding: 0; color: var(--tekst); text-decoration: underline; cursor: pointer; font-weight: 600; }
+
+  /* Grafieken */
+  .grafieken { display: grid; gap: 40px; }
+  @media (min-width: 769px) { .grafieken { grid-template-columns: 1fr 1fr; gap: 48px; } }
+  .grafiek h3 { margin-bottom: 4px; }
+  .grafiek p { margin: 0 0 14px; color: var(--grijs); font-size: 13px; }
+  .grafiek svg { width: 100%; height: auto; display: block; font-family: inherit; }
+  .grafiek svg text { fill: var(--tekst); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .grafiek svg .as { stroke: var(--lijn); stroke-width: 1; }
+  .grafiek svg .staaf { fill: var(--blauw); stroke: var(--staaf-rand); stroke-width: 1; }
+  .grafiek svg .hit { fill: transparent; cursor: default; }
+  .grafiek svg .hit:hover + .staaf, .grafiek svg .staaf:hover { opacity: 0.85; }
+  .tip {
+    position: fixed; z-index: 30; pointer-events: none; padding: 8px 12px; border-radius: 6px;
+    background: var(--tekst); color: var(--grond); font-size: 13px; font-weight: 600; white-space: nowrap;
+  }
+
+  /* Kaart (markdown) */
+  .md { max-width: 72ch; }
+  .md--breed { max-width: none; }
+  .md h1, .md h2, .md h3, .md h4 { text-transform: none; text-wrap: pretty; margin: 1.6em 0 0.5em; line-height: 1.25; }
+  .md h2 { font-size: 1.35rem; font-weight: 800; }
+  .md h3 { font-size: 1.1rem; font-weight: 800; }
+  .md h4 { font-size: 1rem; font-weight: 700; }
+  .md p, .md ul, .md ol { margin: 0.6em 0; }
+  .md li { margin: 0.25em 0; }
+  .md blockquote { margin: 1em 0; padding: 4px 16px; border-left: 4px solid var(--blauw); color: inherit; }
+  .md code { font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace; font-size: 0.9em; background: var(--vlak); padding: 1px 5px; border-radius: 4px; }
+  .md pre { overflow-x: auto; background: var(--vlak); padding: 14px; }
+  .md pre code { background: none; padding: 0; }
+  .md hr { border: 0; border-top: 1px solid var(--lijn); margin: 1.5em 0; }
+  .md .tabel { overflow-x: auto; margin: 1em 0; }
+  .md table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  .md th, .md td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--lijn); }
+  .md th { font-weight: 700; }
+  .md input[type=checkbox] { margin-right: 6px; }
+  .drawer .md { background: transparent; }
+  .drawer .md code { background: var(--grond); }
+  .drawer .md pre { background: var(--grond); }
+  .sectie--vlak .md code, .sectie--vlak .md pre { background: var(--grond); }
+
+  /* Voettekst */
+  .voet { padding-block: 40px 56px; border-top: 1px solid var(--lijn); font-size: 14px; color: var(--grijs); }
+  .voet p { margin: 0.35em 0; }
+
+  /* Drawer */
+  .scherm { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 40; }
+  .drawer {
+    position: fixed; top: 0; right: 0; bottom: 0; width: min(760px, 100vw); z-index: 41;
+    background: var(--vlak); color: var(--tekst); overflow-y: auto; overscroll-behavior: contain;
+    padding: 24px var(--gutter) 64px; box-shadow: -8px 0 32px rgba(0,0,0,0.25);
+  }
+  .drawer-kop { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; margin-bottom: 16px; }
+  .drawer h2 { font-size: clamp(1.3rem, 3vw, 1.9rem); }
+  .sluit { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--tekst); background: transparent; cursor: pointer; font-size: 20px; line-height: 1; }
+  .drawer-meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 18px; font-size: 13px; color: var(--grijs); }
+  .drawer-blok { padding-block: 22px; border-top: 1px solid var(--lijn); }
+  .drawer-blok h3 { margin-bottom: 12px; }
+  .status-rij { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+  .status-rij select { padding: 8px 12px; border: 2px solid var(--lijn); border-radius: 8px; background: var(--grond); }
+  .acties { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .acties li { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; }
+  .acties li.is-af .a-tekst { text-decoration: line-through; color: var(--grijs); }
+  .acties .a-tekst { font-size: 1rem; font-weight: 500; }
+  .verwant { display: flex; flex-wrap: wrap; gap: 8px; }
+  .aantekeningen { list-style: none; margin: 0 0 16px; padding: 0; display: grid; gap: 12px; }
+  .aantekeningen li { padding: 12px 14px; background: var(--grond); border-left: 4px solid var(--blauw); }
+  .aantekeningen .wie { font-size: 13px; color: var(--grijs); display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 4px; }
+  .aantekeningen .wat { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .invoer { display: grid; gap: 12px; }
+  .invoer textarea { min-height: 96px; resize: vertical; }
+  .melding { font-size: 14px; color: var(--rood); font-weight: 600; min-height: 1.4em; }
+  .melding:empty { display: none; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .drawer { animation: schuif 180ms ease-out; }
+    @keyframes schuif { from { transform: translateX(24px); opacity: 0.6; } to { transform: none; opacity: 1; } }
+  }
+</style>
+
+<header class="kop">
+  <div class="wrap">
+    <div>
+      <p class="micro kop-eyebrow">HÏ Grip · onderzoek, routines en bevindingen</p>
+      <h1>Research Dashboard</h1>
+      <div class="kop-meta">
+        <span>Bijgewerkt: <b id="gebouwd" class="num">—</b></span>
+        <span>De vault is de bron — <b id="tel-notities" class="num">0</b> notities</span>
+      </div>
+    </div>
+    <div class="cijfers" id="cijfers" aria-label="Open acties per prioriteit">
+      <div class="cijfer"><b class="num" id="c-p1">0</b><span class="micro"><span class="chip chip--p1">P1</span> open · deze week</span></div>
+      <div class="cijfer"><b class="num" id="c-p2">0</b><span class="micro"><span class="chip chip--p2">P2</span> open · deze maand</span></div>
+      <div class="cijfer"><b class="num" id="c-p3">0</b><span class="micro"><span class="chip chip--p3">P3</span> open · op de radar</span></div>
+    </div>
+    <div class="kop-invoer">
+      <div class="veld">
+        <label for="zoek">Zoeken in titel, samenvatting en inhoud</label>
+        <input type="search" id="zoek" placeholder="bijv. checkout, GPSR, structured data" autocomplete="off">
+      </div>
+      <div class="veld" id="naam-veld" hidden>
+        <label for="naam">Jouw naam (bij afvinken, status en aantekeningen)</label>
+        <input type="text" id="naam" placeholder="Naam" autocomplete="name" maxlength="60">
+      </div>
+    </div>
+    <p class="toegang" id="toegang">Verbinding met de gedeelde opslag wordt gecontroleerd…</p>
+  </div>
+</header>
+
+<section class="sectie" id="s-aandacht">
+  <div class="wrap">
+    <div class="sectie-kop">
+      <h2>Nu aandacht</h2>
+      <p>Alle open P1-acties uit notities én de growth-radar-backlog. Afvinken schrijft naar de gedeelde opslag; de eerstvolgende sync zet het in de vault.</p>
+    </div>
+    <ul class="aandacht" id="aandacht"></ul>
+    <details class="rest" id="rest-details">
+      <summary>Overige open backlog-acties (P2 · P3): <span class="num" id="rest-tel">0</span></summary>
+      <ul class="aandacht" id="rest"></ul>
+    </details>
+  </div>
+</section>
+
+<section class="sectie sectie--vlak" id="s-feed">
+  <div class="wrap">
+    <div class="sectie-kop">
+      <h2>Onderzoeksfeed</h2>
+      <p><span class="num" id="feed-tel">0</span> notities, nieuwste eerst. Klik een kaart voor de volledige notitie.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+    <div class="feed" id="feed"></div>
+  </div>
+</section>
+
+<section class="sectie" id="s-grafieken">
+  <div class="wrap">
+    <div class="sectie-kop">
+      <h2>In cijfers</h2>
+      <p>Aantal notities in het register; het weekvenster eindigt bij de nieuwste notitie.</p>
+    </div>
+    <div class="grafieken">
+      <div class="grafiek">
+        <h3>Notities per categorie</h3>
+        <p>Alle notities, gesorteerd op aantal</p>
+        <div id="g-categorie"></div>
+      </div>
+      <div class="grafiek">
+        <h3>Onderzoeken per week</h3>
+        <p>Laatste 12 ISO-weken</p>
+        <div id="g-week"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sectie sectie--vlak" id="s-kaart">
+  <div class="wrap">
+    <div class="sectie-kop">
+      <h2>Waar staat wat</h2>
+      <p>Uit <code>05_Research\Waar staat wat.md</code></p>
+    </div>
+    <div class="md md--breed" id="kaart"></div>
+  </div>
+</section>
+
+<footer class="voet">
+  <div class="wrap">
+    <p>De Obsidian-vault (<code>05_Research\</code>) is de bron van waarheid; dit dashboard toont het gebouwde register.</p>
+    <p>Wat je hier afvinkt, wijzigt of noteert, wordt bij de eerstvolgende <code>/research-sync</code> naar de vault geschreven — tot die tijd staat er "nog niet in vault" bij.</p>
+    <p>Bewerken lukt alleen met interact-rechten op dit artifact: vraag ze aan via info@higrip.nl.</p>
+  </div>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="scherm" id="scherm" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-titel" hidden></aside>
+
+<script src="data/register.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.12/marked.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  const R = window.HI_RESEARCH || { notities: [], backlog: [], kaart_md: '', stats: {}, gebouwd: '' };
+  const $ = (id) => document.getElementById(id);
+
+  // ── Staat ─────────────────────────────────────────────────────────────────
+  const state = {
+    db: null,
+    writable: false,     // true zodra db er is en schrijven niet expliciet geweigerd is
+    readOnlyReason: '',
+    overrides: { status: {}, checks: {}, aantekeningen: {} },
+    filters: { categorie: '', bron: '', status: '', prioriteit: '' },
+    zoek: '',
+    open: null,          // { type: 'notitie', id } of { type: 'backlog', id }
+  };
+  const notitieById = Object.fromEntries(R.notities.map(n => [n.id, n]));
+  const backlogById = Object.fromEntries(R.backlog.map(b => [b.id, b]));
+  const STATUSSEN = ['nieuw', 'bekeken', 'in-uitvoering', 'verwerkt', 'gearchiveerd'];
+  const CATEGORIEEN = ['SEO', 'CRO', 'Social', 'Product', 'B2B', 'Merk', 'Compliance', 'Techniek'];
+  const ROUTINE_LABEL = { 'growth-radar': 'Growth Radar', 'seo-regressiecheck': 'Regressiecheck', 'denzel-week': 'Denzel week' };
+
+  // ── Helpers ───────────────────────────────────────────────────────────────
+  function el(tag, attrs, ...kids) {
+    const node = document.createElement(tag);
+    if (attrs) for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === 'class') node.className = v;
+      else if (k === 'text') node.textContent = v;
+      else if (k.startsWith('on')) node.addEventListener(k.slice(2), v);
+      else if (k === 'checked' || k === 'disabled' || k === 'hidden' || k === 'open') node[k] = !!v;
+      else node.setAttribute(k, v);
+    }
+    for (const kid of kids.flat()) if (kid != null) node.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    return node;
+  }
+  const MAANDEN = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+  function datumNL(iso) {
+    if (!iso) return '';
+    const [j, m, d] = iso.slice(0, 10).split('-').map(Number);
+    return `${d} ${MAANDEN[m - 1]} ${j}`;
+  }
+  function tijdNL(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    return d.toLocaleString('nl-NL', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+  }
+  function tsKort(iso) { // JJJJ-MM-DD HH:MM in Amsterdam-tijd
+    const d = new Date(iso);
+    if (isNaN(d)) return iso;
+    const p = new Intl.DateTimeFormat('nl-NL', { timeZone: 'Europe/Amsterdam', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(d);
+    const g = (t) => p.find(x => x.type === t).value;
+    return `${g('year')}-${g('month')}-${g('day')} ${g('hour')}:${g('minute')}`;
+  }
+  const encActie = (id) => id.replace('#', '~');
+  function opslaan(sleutel, waarde) { try { localStorage.setItem(sleutel, waarde); } catch (e) { /* privé venster */ } }
+  function lezen(sleutel) { try { return localStorage.getItem(sleutel) || ''; } catch (e) { return ''; } }
+
+  // Markdown → HTML; links openen in een nieuw tabblad, tabellen scrollen zelfstandig
+  function renderMd(md, doel) {
+    doel.innerHTML = window.marked ? window.marked.parse(md || '', { gfm: true }) : '';
+    doel.querySelectorAll('a[href]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+    doel.querySelectorAll('table').forEach(t => { const w = el('div', { class: 'tabel' }); t.replaceWith(w); w.append(t); });
+    doel.querySelectorAll('input[type=checkbox]').forEach(c => { c.disabled = true; });
+  }
+  // Splits een notitie in secties op '## '-koppen zodat Acties en Aantekeningen apart gerenderd worden
+  function secties(md) {
+    const out = { intro: '', overige: [], acties: '', aantekeningen: '' };
+    const delen = (md || '').split(/\n(?=## )/);
+    delen.forEach((deel, i) => {
+      const m = deel.match(/^## (.+)\n?/);
+      if (!m) { if (i === 0) out.intro = deel.replace(/^# .*\n?/, ''); return; }
+      const kop = m[1].trim().toLowerCase();
+      if (kop === 'acties') out.acties = deel;
+      else if (kop === 'aantekeningen') out.aantekeningen = deel;
+      else out.overige.push(deel);
+    });
+    return out;
+  }
+  function vaultAantekeningen(sectie) {
+    const re = /^- \*\*(.+?) · (\d{4}-\d{2}-\d{2} \d{2}:\d{2})\*\* — (.*)$/;
+    return (sectie || '').split('\n').map(l => l.match(re)).filter(Boolean).map(m => ({ naam: m[1], ts: m[2], tekst: m[3], inVault: true }));
+  }
+
+  // ── Afgeleide gegevens (register + overrides) ─────────────────────────────
+  function statusVan(n) { const o = state.overrides.status[n.id]; return o && STATUSSEN.includes(o.status) ? o.status : n.status; }
+  function afgevinkt(a) { const o = state.overrides.checks[encActie(a.id)]; return o ? !!o.afgevinkt : a.afgevinkt; }
+  function heeftOverride(a) { return !!state.overrides.checks[encActie(a.id)]; }
+  function vervangenDoor(n) { return R.notities.filter(m => (m.vervangt || []).includes(n.id)); }
+
+  function alleActies() {
+    const lijst = [];
+    for (const n of R.notities) for (const a of n.acties) lijst.push({ ...a, notitie: n, bronType: 'notitie' });
+    for (const b of R.backlog) lijst.push({ id: b.id, tekst: b.kop, prioriteit: b.prioriteit, afgevinkt: b.afgevinkt, backlog: b, bronType: 'backlog' });
+    return lijst;
+  }
+  function tellers() {
+    const t = { P1: 0, P2: 0, P3: 0 };
+    for (const a of alleActies()) if (!afgevinkt(a)) t[a.prioriteit]++;
+    return t;
+  }
+
+  // ── Kop ───────────────────────────────────────────────────────────────────
+  function renderKop() {
+    $('gebouwd').textContent = tijdNL(R.gebouwd);
+    $('tel-notities').textContent = R.notities.length;
+    const t = tellers();
+    $('c-p1').textContent = t.P1; $('c-p2').textContent = t.P2; $('c-p3').textContent = t.P3;
+  }
+
+  // ── NU AANDACHT ───────────────────────────────────────────────────────────
+  function actieRij(a, mag) {
+    const af = afgevinkt(a);
+    const li = el('li', { class: af ? 'is-af' : '' });
+    const cb = el('input', { type: 'checkbox', checked: af, disabled: !mag, 'aria-label': 'Afvinken: ' + a.tekst, onchange: (e) => schrijfCheck(a, e.target) });
+    if (!mag) cb.hidden = true;
+    const meta = el('div', { class: 'a-meta' });
+    meta.append(el('span', { class: 'chip chip--' + a.prioriteit.toLowerCase(), text: a.prioriteit }));
+    if (a.bronType === 'backlog') {
+      meta.append(el('span', { class: 'chip', text: 'Backlog' }));
+      const gevonden = a.backlog.velden['Gevonden op'];
+      if (gevonden) meta.append(el('span', { text: 'gevonden ' + gevonden }));
+      meta.append(el('button', { class: 'link', type: 'button', text: 'Details', onclick: () => openDrawer({ type: 'backlog', id: a.id }) }));
+    } else {
+      const n = a.notitie;
+      meta.append(el('span', { class: 'chip', text: n.bron === 'routine' ? (ROUTINE_LABEL[n.routine] || n.routine) : n.categorie }));
+      if (n.deadline) meta.append(el('span', { class: 'deadline num', text: 'deadline notitie ' + datumNL(n.deadline) }));
+      meta.append(el('button', { class: 'link', type: 'button', text: n.titel, onclick: () => openDrawer({ type: 'notitie', id: n.id }) }));
+    }
+    if (heeftOverride(a)) meta.append(el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }));
+    li.append(mag ? cb : el('span', { 'aria-hidden': 'true' }), el('div', null, el('div', { class: 'a-tekst', text: a.tekst }), meta));
+    return li;
+  }
+  function renderAandacht() {
+    const mag = state.writable;
+    const acties = alleActies();
+    const p1 = acties.filter(a => a.prioriteit === 'P1' && !afgevinkt(a));
+    // Backlog eerst (geverifieerde breuk en dagelijkse acties), dan notitie-acties: met deadline vooraan, daarna nieuwste notitie eerst
+    const gewicht = (a) => a.bronType === 'backlog' ? 0 : a.notitie.deadline ? 1 : 2;
+    p1.sort((x, y) => gewicht(x) - gewicht(y)
+      || (x.notitie && y.notitie ? (x.notitie.deadline || '9').localeCompare(y.notitie.deadline || '9') || y.notitie.datum.localeCompare(x.notitie.datum) : 0));
+    const ul = $('aandacht'); ul.replaceChildren();
+    if (!p1.length) ul.append(el('li', { class: 'leeg', text: 'Geen open P1-acties — alles is opgepakt.' }));
+    p1.forEach(a => ul.append(actieRij(a, mag)));
+    // P2/P3 uit de backlog staan nergens anders — ingeklapt zodat de tellers ergens naartoe leiden
+    const rest = acties.filter(a => a.bronType === 'backlog' && a.prioriteit !== 'P1' && !afgevinkt(a));
+    $('rest-tel').textContent = rest.length;
+    const rul = $('rest'); rul.replaceChildren();
+    rest.forEach(a => rul.append(actieRij(a, mag)));
+    $('rest-details').hidden = !rest.length;
+  }
+
+  // ── Filters + feed ────────────────────────────────────────────────────────
+  function filterRij(label, sleutel, opties) {
+    const rij = el('div', { class: 'filter-rij', role: 'group', 'aria-label': label });
+    rij.append(el('span', { class: 'micro', text: label }));
+    const maakChip = (waarde, tekst) => el('button', {
+      type: 'button', class: 'chip' + (state.filters[sleutel] === waarde ? ' chip--actief' : ''), text: tekst,
+      'aria-pressed': String(state.filters[sleutel] === waarde),
+      onclick: () => { state.filters[sleutel] = waarde; renderFeed(); },
+    });
+    rij.append(maakChip('', 'Alle'));
+    opties.forEach(o => rij.append(maakChip(o.waarde, o.tekst)));
+    return rij;
+  }
+  function renderFilters() {
+    const f = $('filters'); f.replaceChildren();
+    const aanwezig = new Set(R.notities.map(n => n.categorie));
+    f.append(filterRij('Categorie', 'categorie', CATEGORIEEN.filter(c => aanwezig.has(c)).map(c => ({ waarde: c, tekst: c }))));
+    f.append(filterRij('Bron', 'bron', [{ waarde: 'los', tekst: 'Los' }, { waarde: 'growth-radar', tekst: 'Growth Radar' }, { waarde: 'seo-regressiecheck', tekst: 'Regressiecheck' }, { waarde: 'denzel-week', tekst: 'Denzel week' }]));
+    f.append(filterRij('Status', 'status', STATUSSEN.map(s => ({ waarde: s, tekst: s.replace('-', ' ') }))));
+    f.append(filterRij('Prioriteit', 'prioriteit', ['P1', 'P2', 'P3'].map(p => ({ waarde: p, tekst: p }))));
+  }
+  function zichtbaar(n) {
+    const f = state.filters;
+    if (f.categorie && n.categorie !== f.categorie) return false;
+    if (f.bron === 'los' ? n.bron !== 'los' : f.bron && n.routine !== f.bron) return false;
+    if (f.status && statusVan(n) !== f.status) return false;
+    if (f.prioriteit && n.prioriteit !== f.prioriteit) return false;
+    if (state.zoek) {
+      const q = state.zoek.toLowerCase();
+      if (!(n.titel + '\n' + n.samenvatting + '\n' + n.body_md).toLowerCase().includes(q)) return false;
+    }
+    return true;
+  }
+  function kaart(n) {
+    const status = statusVan(n);
+    const open = n.acties.filter(a => !afgevinkt(a)).length;
+    const k = el('button', { type: 'button', class: 'kaart p-' + n.prioriteit, onclick: () => openDrawer({ type: 'notitie', id: n.id }) });
+    const boven = el('div', { class: 'kaart-boven' },
+      el('span', { class: 'num', text: datumNL(n.datum) }),
+      el('span', { class: 'chip', text: n.categorie }),
+      el('span', { class: 'chip chip--status-' + status, text: status.replace('-', ' ') }),
+      el('span', { class: 'chip chip--' + n.prioriteit.toLowerCase(), text: n.prioriteit }),
+      n.bron === 'routine' ? el('span', { text: ROUTINE_LABEL[n.routine] || n.routine }) : null,
+      state.overrides.status[n.id] ? el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }) : null,
+    );
+    k.append(boven, el('h3', { text: n.titel }), el('p', { text: n.samenvatting }));
+    const onder = el('div', { class: 'kaart-onder' });
+    onder.append(el('span', { class: 'num', text: n.acties.length ? `${open} open / ${n.acties.length} acties` : 'acties via backlog' }));
+    if (n.deadline) onder.append(el('span', { class: 'deadline num', text: 'deadline ' + datumNL(n.deadline) }));
+    k.append(onder);
+    const door = vervangenDoor(n);
+    if (door.length) {
+      const b = el('div', { class: 'banner' }, 'Vervangen door ');
+      door.forEach((d, i) => b.append(i ? ', ' : '', el('span', { class: 'link', text: d.titel, role: 'link', tabindex: '0',
+        onclick: (e) => { e.stopPropagation(); openDrawer({ type: 'notitie', id: d.id }); },
+        onkeydown: (e) => { if (e.key === 'Enter') { e.stopPropagation(); openDrawer({ type: 'notitie', id: d.id }); } } })));
+      k.append(b);
+    }
+    return k;
+  }
+  function renderFeed() {
+    renderFilters();
+    const lijst = R.notities.filter(zichtbaar);
+    $('feed-tel').textContent = lijst.length;
+    const f = $('feed'); f.replaceChildren();
+    if (!lijst.length) f.append(el('p', { class: 'leeg', text: 'Geen notities voor deze filters.' }));
+    lijst.forEach(n => f.append(kaart(n)));
+  }
+
+  // ── Grafieken (één serie, blauw, directe labels, tooltip) ─────────────────
+  const NS = 'http://www.w3.org/2000/svg';
+  function svgEl(tag, attrs, text) {
+    const n = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) n.setAttribute(k, v);
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  const tip = $('tip');
+  function toonTip(e, tekst) { tip.textContent = tekst; tip.hidden = false; verplaatsTip(e); }
+  function verplaatsTip(e) { tip.style.left = Math.min(e.clientX + 14, window.innerWidth - tip.offsetWidth - 8) + 'px'; tip.style.top = (e.clientY + 16) + 'px'; }
+  function verbergTip() { tip.hidden = true; }
+  function hoverbaar(node, tekst) {
+    node.addEventListener('pointerenter', (e) => toonTip(e, tekst));
+    node.addEventListener('pointermove', verplaatsTip);
+    node.addEventListener('pointerleave', verbergTip);
+    node.append(svgEl('title', null, tekst));
+  }
+  function renderCategorieGrafiek() {
+    const data = Object.entries(R.stats.per_categorie || {}).sort((a, b) => b[1] - a[1]);
+    const W = 600, rij = 30, links = 118, rechts = 44, H = data.length * rij + 8;
+    const max = Math.max(1, ...data.map(d => d[1]));
+    const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Notities per categorie' });
+    svg.append(svgEl('line', { class: 'as', x1: links, y1: 0, x2: links, y2: H }));
+    data.forEach(([cat, n], i) => {
+      const y = i * rij + 4, h = 20, b = Math.round((W - links - rechts) * n / max);
+      const g = svgEl('g');
+      g.append(svgEl('text', { x: links - 10, y: y + h / 2 + 4, 'text-anchor': 'end' }, cat));
+      const r = 4;
+      const pad = `M${links},${y} h${Math.max(0, b - r)} a${r},${r} 0 0 1 ${r},${r} v${h - 2 * r} a${r},${r} 0 0 1 -${r},${r} h-${Math.max(0, b - r)} z`;
+      g.append(svgEl('path', { class: 'staaf', d: pad }));
+      g.append(svgEl('text', { x: links + b + 8, y: y + h / 2 + 4 }, String(n)));
+      g.append(svgEl('rect', { class: 'hit', x: 0, y, width: W, height: h }));
+      hoverbaar(g, `${cat}: ${n} ${n === 1 ? 'notitie' : 'notities'}`);
+      svg.append(g);
+    });
+    $('g-categorie').replaceChildren(svg);
+  }
+  function renderWeekGrafiek() {
+    const data = R.stats.per_week || [];
+    const W = 600, H = 170, onder = 26, top = 22, slot = W / Math.max(1, data.length), bw = Math.min(24, slot * 0.6);
+    const max = Math.max(1, ...data.map(d => d.aantal));
+    const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Onderzoeken per week' });
+    const basis = H - onder;
+    svg.append(svgEl('line', { class: 'as', x1: 0, y1: basis, x2: W, y2: basis }));
+    data.forEach((d, i) => {
+      const x = i * slot + (slot - bw) / 2, h = Math.round((basis - top) * d.aantal / max), y = basis - h, r = Math.min(4, h);
+      const g = svgEl('g');
+      const pad = h > 0 ? `M${x},${basis} v-${h - r} a${r},${r} 0 0 1 ${r},-${r} h${bw - 2 * r} a${r},${r} 0 0 1 ${r},${r} v${h - r} z` : '';
+      if (pad) g.append(svgEl('path', { class: 'staaf', d: pad }));
+      if (d.aantal) g.append(svgEl('text', { x: x + bw / 2, y: y - 6, 'text-anchor': 'middle' }, String(d.aantal)));
+      g.append(svgEl('text', { x: x + bw / 2, y: H - 8, 'text-anchor': 'middle', 'font-size': '11' }, 'W' + d.week.slice(-2)));
+      g.append(svgEl('rect', { class: 'hit', x: i * slot, y: 0, width: slot, height: H }));
+      hoverbaar(g, `Week ${d.week.slice(-2)} (vanaf ${datumNL(d.start)}): ${d.aantal} ${d.aantal === 1 ? 'onderzoek' : 'onderzoeken'}`);
+      svg.append(g);
+    });
+    $('g-week').replaceChildren(svg);
+  }
+
+  // ── Drawer ────────────────────────────────────────────────────────────────
+  let laatsteFocus = null;
+  function openDrawer(doel) {
+    state.open = doel;
+    laatsteFocus = document.activeElement;
+    renderDrawer();
+    $('scherm').hidden = false; $('drawer').hidden = false;
+    document.body.style.overflow = 'hidden';
+    $('drawer').querySelector('.sluit').focus();
+  }
+  function sluitDrawer() {
+    state.open = null;
+    $('scherm').hidden = true; $('drawer').hidden = true; $('drawer').replaceChildren();
+    document.body.style.overflow = '';
+    if (laatsteFocus && laatsteFocus.focus) laatsteFocus.focus();
+  }
+  function renderDrawer() {
+    if (!state.open) return;
+    const d = $('drawer'); d.replaceChildren();
+    if (state.open.type === 'backlog') return renderBacklogDrawer(d, backlogById[state.open.id]);
+    const n = notitieById[state.open.id]; if (!n) return;
+    const mag = state.writable;
+    const status = statusVan(n);
+    d.append(el('div', { class: 'drawer-kop' }, el('h2', { id: 'drawer-titel', text: n.titel }), el('button', { class: 'sluit', type: 'button', 'aria-label': 'Sluiten', text: '×', onclick: sluitDrawer })));
+    const meta = el('div', { class: 'drawer-meta' },
+      el('span', { class: 'num', text: datumNL(n.datum) }),
+      el('span', { class: 'chip', text: n.categorie }),
+      el('span', { class: 'chip chip--' + n.prioriteit.toLowerCase(), text: n.prioriteit }),
+      el('span', { text: n.bron === 'routine' ? 'routine · ' + (ROUTINE_LABEL[n.routine] || n.routine) : 'los onderzoek' }),
+      n.deadline ? el('span', { class: 'deadline num', text: 'deadline ' + datumNL(n.deadline) }) : null,
+      el('a', { href: n.vault_url, target: '_blank', rel: 'noopener', text: 'Notitie in de vault' }),
+      n.bronbestand_url ? el('a', { href: n.bronbestand_url, target: '_blank', rel: 'noopener', text: 'Bronbestand' }) : (n.bronbestand ? el('span', { text: 'Bron: ' + n.bronbestand }) : null),
+    );
+    d.append(meta);
+    const door = vervangenDoor(n);
+    if (door.length) {
+      const b = el('div', { class: 'banner' }, 'Vervangen door ');
+      door.forEach((v, i) => b.append(i ? ', ' : '', el('button', { class: 'link', type: 'button', text: v.titel, onclick: () => openDrawer({ type: 'notitie', id: v.id }) })));
+      d.append(b);
+    }
+
+    // Status
+    const sb = el('div', { class: 'drawer-blok' }, el('h3', { text: 'Status' }));
+    const rij = el('div', { class: 'status-rij' }, el('span', { class: 'chip chip--status-' + status, text: status.replace('-', ' ') }));
+    if (mag) {
+      const sel = el('select', { id: 'status-select', 'aria-label': 'Status wijzigen', onchange: (e) => schrijfStatus(n, e.target) });
+      STATUSSEN.forEach(s => sel.append(el('option', { value: s, text: s.replace('-', ' ') })));
+      sel.value = status;
+      rij.append(sel);
+    }
+    if (state.overrides.status[n.id]) {
+      const o = state.overrides.status[n.id];
+      rij.append(el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }), el('span', { class: 'num', text: `${o.naam || 'onbekend'} · ${tsKort(o.ts)}` }));
+    }
+    sb.append(rij, el('div', { class: 'melding', id: 'status-melding' }));
+    d.append(sb);
+
+    // Inhoud
+    const s = secties(n.body_md);
+    const inhoud = el('div', { class: 'drawer-blok' }, el('h3', { text: 'Notitie' }));
+    const md = el('div', { class: 'md' });
+    renderMd([s.intro, ...s.overige].join('\n'), md);
+    inhoud.append(md);
+    d.append(inhoud);
+
+    // Acties
+    const ab = el('div', { class: 'drawer-blok' }, el('h3', { text: 'Acties' }));
+    if (n.acties.length) {
+      const ul = el('ul', { class: 'acties' });
+      n.acties.forEach(a => {
+        const af = afgevinkt(a);
+        const li = el('li', { class: af ? 'is-af' : '' });
+        const cb = el('input', { type: 'checkbox', checked: af, 'aria-label': 'Afvinken: ' + a.tekst, onchange: (e) => schrijfCheck({ ...a, notitie: n, bronType: 'notitie' }, e.target) });
+        const meta = el('div', { class: 'a-meta' }, el('span', { class: 'chip chip--' + a.prioriteit.toLowerCase(), text: a.prioriteit }));
+        if (heeftOverride(a)) { const o = state.overrides.checks[encActie(a.id)]; meta.append(el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }), el('span', { class: 'num', text: `${o.naam || 'onbekend'} · ${tsKort(o.ts)}` })); }
+        li.append(mag ? cb : el('span', { text: af ? '☑' : '☐', 'aria-hidden': 'true' }), el('div', null, el('div', { class: 'a-tekst', text: a.tekst }), meta));
+        ul.append(li);
+      });
+      ab.append(ul);
+    } else {
+      const amd = el('div', { class: 'md' }); renderMd(s.acties.replace(/^## Acties\n?/, '') || '_Geen acties in deze notitie._', amd); ab.append(amd);
+    }
+    ab.append(el('div', { class: 'melding', id: 'check-melding' }));
+    d.append(ab);
+
+    // Gerelateerd
+    const verwant = (n.gerelateerd || []).map(id => notitieById[id]).filter(Boolean);
+    const vervangt = (n.vervangt || []).map(id => notitieById[id]).filter(Boolean);
+    if (verwant.length || vervangt.length) {
+      const gb = el('div', { class: 'drawer-blok' }, el('h3', { text: 'Gerelateerd' }));
+      const w = el('div', { class: 'verwant' });
+      verwant.forEach(v => w.append(el('button', { type: 'button', class: 'chip', text: v.titel, onclick: () => openDrawer({ type: 'notitie', id: v.id }) })));
+      gb.append(w);
+      if (vervangt.length) {
+        const w2 = el('div', { class: 'verwant' }, el('span', { class: 'micro', text: 'Vervangt' }));
+        vervangt.forEach(v => w2.append(el('button', { type: 'button', class: 'chip chip--status-gearchiveerd', text: v.titel, onclick: () => openDrawer({ type: 'notitie', id: v.id }) })));
+        gb.append(el('div', { style: 'height:10px' }), w2);
+      }
+      d.append(gb);
+    }
+
+    // Aantekeningen
+    const nb = el('div', { class: 'drawer-blok' }, el('h3', { text: 'Aantekeningen' }));
+    const lijst = vaultAantekeningen(s.aantekeningen);
+    Object.entries(state.overrides.aantekeningen).filter(([, v]) => v.noteId === n.id).forEach(([, v]) => lijst.push({ naam: v.naam, ts: tsKort(v.ts), tekst: v.tekst, inVault: false }));
+    lijst.sort((a, b) => a.ts.localeCompare(b.ts));
+    const ul = el('ul', { class: 'aantekeningen' });
+    if (!lijst.length) ul.append(el('li', { class: 'leeg', text: 'Nog geen aantekeningen.' }));
+    lijst.forEach(a => ul.append(el('li', null,
+      el('div', { class: 'wie' }, el('b', { text: a.naam || 'onbekend' }), el('span', { class: 'num', text: a.ts }), a.inVault ? null : el('span', { class: 'chip chip--sync', text: 'nog niet in vault' })),
+      el('div', { class: 'wat', text: a.tekst }))));  // altijd textContent — nooit HTML uit de db
+    nb.append(ul);
+    if (mag) {
+      const ta = el('textarea', { id: 'aantekening-tekst', placeholder: 'Wat wil je bij deze notitie vastleggen?', maxlength: '2000' });
+      const knop = el('button', { class: 'knop', type: 'button', text: 'Aantekening opslaan', onclick: () => schrijfAantekening(n, ta, knop) });
+      nb.append(el('div', { class: 'invoer' }, el('div', { class: 'veld' }, el('label', { for: 'aantekening-tekst', text: 'Nieuwe aantekening — naam staat bovenaan de pagina' }), ta), el('div', null, knop), el('div', { class: 'melding', id: 'aantekening-melding' })));
+    } else {
+      nb.append(el('p', { class: 'leeg', text: state.readOnlyReason || 'Alleen lezen — vraag bewerkrechten aan via info@higrip.nl' }));
+    }
+    d.append(nb);
+  }
+  function renderBacklogDrawer(d, b) {
+    if (!b) return;
+    d.append(el('div', { class: 'drawer-kop' }, el('h2', { id: 'drawer-titel', text: b.kop }), el('button', { class: 'sluit', type: 'button', 'aria-label': 'Sluiten', text: '×', onclick: sluitDrawer })));
+    d.append(el('div', { class: 'drawer-meta' }, el('span', { class: 'chip', text: 'Growth-radar-backlog' }), el('span', { class: 'chip chip--' + b.prioriteit.toLowerCase(), text: b.prioriteit }), el('span', { text: 'Bron: ACTIEBACKLOG.md' })));
+    const md = el('div', { class: 'md' }); renderMd(b.body_md, md);
+    d.append(el('div', { class: 'drawer-blok' }, md));
+  }
+
+  // ── Schrijven naar de gedeelde opslag ─────────────────────────────────────
+  function naamOfMelding(meldingId) {
+    const naam = ($('naam').value || '').trim();
+    if (!naam) {
+      const m = meldingId && $(meldingId); if (m) m.textContent = 'Vul eerst je naam in (bovenaan de pagina).';
+      $('naam').focus();
+      return null;
+    }
+    opslaan('hi-research-naam', naam);
+    return naam;
+  }
+  function zetAlleenLezen(reden) {
+    state.writable = false;
+    state.readOnlyReason = reden || 'Alleen lezen — vraag bewerkrechten aan via info@higrip.nl';
+    $('toegang').textContent = state.readOnlyReason;
+    $('naam-veld').hidden = true;
+    herrender();
+  }
+  function geweigerd(e, meldingId) {
+    const code = e && e.code;
+    if (code === 'invalid_argument' || code === 'not_granted' || code === 'revoked') { zetAlleenLezen('Alleen lezen — je hebt geen bewerkrechten op dit artifact. Vraag ze aan via info@higrip.nl'); return; }
+    const m = meldingId && $(meldingId); if (m) m.textContent = 'Opslaan mislukt (' + (code || 'onbekend') + '). Probeer het zo nog eens.';
+  }
+  async function schrijfCheck(a, cb) {
+    const naam = naamOfMelding('check-melding'); if (!naam) { cb.checked = !cb.checked; return; }
+    cb.disabled = true;
+    try {
+      await state.db.doc('checks/' + encActie(a.id)).set({ actionId: a.id, afgevinkt: cb.checked, naam, ts: new Date().toISOString() });
+    } catch (e) { cb.checked = !cb.checked; geweigerd(e, 'check-melding'); }
+    cb.disabled = false;
+  }
+  async function schrijfStatus(n, sel) {
+    const naam = naamOfMelding('status-melding'); if (!naam) { sel.value = statusVan(n); return; }
+    sel.disabled = true;
+    try {
+      await state.db.doc('status/' + n.id).set({ status: sel.value, naam, ts: new Date().toISOString() });
+    } catch (e) { sel.value = statusVan(n); geweigerd(e, 'status-melding'); }
+    sel.disabled = false;
+  }
+  async function schrijfAantekening(n, ta, knop) {
+    const tekst = (ta.value || '').trim();
+    if (!tekst) { $('aantekening-melding').textContent = 'Schrijf eerst een aantekening.'; ta.focus(); return; }
+    const naam = naamOfMelding('aantekening-melding'); if (!naam) return;
+    knop.disabled = true;
+    const ts = new Date().toISOString();
+    try {
+      await state.db.doc(`aantekeningen/${n.id}_${Date.now()}`).set({ noteId: n.id, naam, ts, tekst });
+      ta.value = '';
+    } catch (e) { geweigerd(e, 'aantekening-melding'); }
+    knop.disabled = false;
+  }
+
+  // ── Verbinding: register eerst renderen, daarna de db erbij ───────────────
+  function herrender() {
+    renderKop(); renderAandacht(); renderFeed();
+    if (state.open) renderDrawer();
+  }
+  function luister(collectie) {
+    state.db.collection(collectie).onSnapshot(
+      (snap) => { const map = {}; snap.docs.forEach(doc => { map[doc.id] = doc.data() || {}; }); state.overrides[collectie] = map; herrender(); },
+      (e) => { if (e && e.code === 'revoked') zetAlleenLezen('Toegang tot de gedeelde opslag is ingetrokken — de pagina is nu alleen-lezen.'); }
+    );
+  }
+  async function verbind() {
+    if (!window.claude || typeof window.claude.use !== 'function') { zetAlleenLezen('Alleen lezen — lokale weergave zonder gedeelde opslag.'); return; }
+    const db = await window.claude.use('db');
+    if (!db) { zetAlleenLezen(); return; }
+    state.db = db;
+    const user = await window.claude.use('user');
+    const mag = user ? await user.can('data.write') : null;
+    if (mag === false) { zetAlleenLezen(); }
+    else {
+      state.writable = true;   // null = onbekend: knoppen tonen, een geweigerde schrijfactie beslist
+      $('toegang').textContent = 'Bewerken staat aan — wijzigingen gaan bij de eerstvolgende sync naar de vault.';
+      $('naam-veld').hidden = false;
+      $('naam').value = lezen('hi-research-naam');
+    }
+    ['status', 'checks', 'aantekeningen'].forEach(luister);   // één keer per collectie, nooit in render
+    herrender();
+  }
+
+  // ── Start ─────────────────────────────────────────────────────────────────
+  $('zoek').addEventListener('input', (e) => { state.zoek = e.target.value.trim(); renderFeed(); });
+  $('naam').addEventListener('change', (e) => opslaan('hi-research-naam', e.target.value.trim()));
+  $('scherm').addEventListener('click', sluitDrawer);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && state.open) sluitDrawer(); });
+  renderKop(); renderAandacht(); renderFeed(); renderCategorieGrafiek(); renderWeekGrafiek();
+  renderMd(R.kaart_md, $('kaart'));
+  verbind();
+})();
+</script>

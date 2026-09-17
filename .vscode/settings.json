@@ -1,0 +1,14 @@
+{
+  "workbench.colorTheme": "Light 2026",
+  "workbench.sideBar.location": "left",
+  "window.commandCenter": false,
+  "breadcrumbs.enabled": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 16,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 1.6,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "editor.stickyScroll.enabled": false
+}

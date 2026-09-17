@@ -4,7 +4,7 @@
 
 ---
 
-## De 5 mappen
+## De 6 mappen
 
 | Map | Waarvoor | Begin bij |
 |---|---|---|
@@ -13,16 +13,26 @@
 | **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[Overzicht]] · [[Partnership Strategie]] |
 | **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[Website Doel & KPI's]] · [[Technische Procedures]] |
 | **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`identiteit.md`), hoe hij zich gedraagt (`soul.md`), en de gedeelde regels. | [[Agent Hiërarchie & Structuurschema]] |
+| **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
 
 ---
 
 ## Kern-ingangen
+
+**Onderzoek**
+- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
 
 **Merk**
 - [[Brand Identity Overview]] — verhaal, missie, visie, waarden (enige plek)
 - [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, slogans
 - [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[Iconografie]] · [[Fotografie & Art-Direction]]
 - [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]]
+
+**Product**
+- [[Performance Grip Socks 2.0]] — productwaarheid: specs, features, claims, designsysteem B2B (enige plek)
+
+**Compliance**
+- [[Compliance To-Do Lijst]] — alle NL/EU-verplichtingen (UPV, GPSR, claims, privacy) met waar en hoe
 
 **Agent-systeem**
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
@@ -52,16 +62,28 @@
 | **Zoekscript** | `ig_find_creators.py` (2×/week via Task Scheduler) | zelfde repo (`scripts/`) — back-up-kopie in [[Zoek Script & Gids]] |
 | **Werkafspraken/correcties voor Claude** | losse feedback- en projectregels | Claude Code memory (`MEMORY.md` + `memory/*.md`) |
 | **Wekelijkse routine** | Denzel-weekoverzicht (maandag) | claude.ai cloud-routine — zie [[Denzel Weekoverzicht — Routine]] |
+| **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `05_Research/` in deze vault — [[Waar staat wat]] |
+| **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV (claude.ai, org-intern) |
+| **Dagelijkse routines** | Growth Radar (dagelijks ~05:30) en SEO-regressiecheck (maandag 07:00) — rapporten + `ACTIEBACKLOG.md` | `C:\Users\Test\.claude\research\growth-radar\` (fase 2: naar de vault); registratie in `05_Research/` |
+| **Projecten (code)** | padel-landing, redesign, skisokken | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` |
+| **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |
 
 > Let op: de vault linkt op een paar plekken naar memory-slugs (bv. `feedback_ig_script_sync`). Dat zijn geen vault-notities — het zijn regels die in Claude Code memory leven. Waar zo'n verwijzing belangrijk is, hoort de inhoud op termijn naar de vault verplaatst te worden.
 
 ---
 
-## Opschoonstatus (2026-08-30)
+## Opschoonstatus (2026-09-17)
 
-Bijgewerkt tijdens een opschoonronde. Zie ook de losse acties hieronder.
+Bijgewerkt bij de bouw van het Research Dashboard (17-09); eerdere ronde 30-08.
 
-**Gedaan**
+**Gedaan 2026-09-17**
+- `05_Research/` aangemaakt met 14 notities (migratie van SEO-audit, growth-radar-rapporten, regressiecheck, 4 Denzel-weekoverzichten, werkdossier, compliance-lijst, analytics-meetgat) + [[Waar staat wat]]
+- Research Dashboard gepubliceerd en gepind; procedure in `05_Research/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `05_Research/` (prompttekst: [[Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)]] — handmatig te plakken)
+- Oud werk uit `.claude\` naar `.claude\archief\` (README aanwezig); Claude-memory zonder Franklin Gothic, klantenaantal 3000+, verzenddrempel €35
+- [[Content Pillars]] (01_) aangevuld met de Buffer-tagkoppeling uit de 04_-kopie
+- Weekoverzichten t/m 2026-09-14 blijven in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/` als archief; nieuwe weken komen in `05_Research/`
+
+**Gedaan 2026-08-30**
 - Losse `Naamloos*`-bestanden uit de root verwijderd
 - `.gitignore` toegevoegd; `.obsidian/workspace.json` niet meer getrackt
 - Kapotte wikilinks opgeruimd (op 3 na, in bestanden met niet-gecommitte wijzigingen)

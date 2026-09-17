@@ -48,25 +48,26 @@ Primair werken we in **wit en zwart**. Vier accentkleuren staan voor performance
 
 ### Primair
 
-| Kleur | Hex | Rol |
-|---|---|---|
-| **Wit** | `#FFFFFF` | Primair · licht |
-| **Zwart** | `#000000` | Primair · donker |
+| Kleur | Hex | CSS-variabele | Rol |
+|---|---|---|---|
+| **Wit** | `#FFFFFF` | `--hi-white` | Primair · licht |
+| **Zwart** | `#000000` | `--hi-black` | Primair · donker |
 
 ### Performance-accenten
 
-| # | Naam | Hex | Wanneer inzetten |
-|---|---|---|---|
-| 01 | **Volt** | `#CCFF00` | CTA's, highlights en actieve staat. Maximaal contrast op zwart. |
-| 02 | **Royal Blue** | `#0011A7` | Rust en diepte. Secundaire vlakken en verlopen. |
-| 03 | **Pumpkin** | `#FF6A00` | Subtiel accent, corner-ticks, warmte. |
-| 04 | **Tangerine** | `#E10600` | Alarm en urgentie. Spaarzaam inzetten. |
+| # | Naam | Hex | CSS-variabele | Wanneer inzetten |
+|---|---|---|---|---|
+| 01 | **Volt** | `#CCFF00` | `--hi-yellow` | CTA's, highlights en actieve staat. Maximaal contrast op zwart. |
+| 02 | **Royal Blue** | `#0011A7` | `--hi-blue` | Rust en diepte. Secundaire vlakken en verlopen. |
+| 03 | **Pumpkin** | `#FF6A00` | `--hi-orange` | Subtiel accent, corner-ticks, warmte. |
+| 04 | **Tangerine** | `#E10600` | `--hi-red` | Alarm en urgentie. Spaarzaam inzetten. |
 
 **Regels**
 - Accenten zijn **secundair**: nét genoeg om te sturen, nooit dominant.
 - Combineer **maximaal één accent per uiting**.
 - Voor tekst geldt: **wit op zwart, of zwart op wit.**
 - Volt op zwart geeft maximale leesbaarheid en energie, maar gebruik neon **niet voor lange bodyteksten** — het leest slecht in grote hoeveelheden.
+- In code en Liquid heten deze kleuren `--hi-*` (zie de kolom hierboven). Zelfde hexwaarden, andere naam — gebruik in CSS **altijd de variabele**, nooit een losse hex.
 
 ---
 

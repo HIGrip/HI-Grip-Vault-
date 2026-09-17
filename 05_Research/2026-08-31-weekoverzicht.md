@@ -1,0 +1,94 @@
+---
+id: 2026-08-31-weekoverzicht
+titel: "Denzel Weekoverzicht — 2026-08-31"
+datum: 2026-08-31
+bron: routine
+routine: "denzel-week"
+categorie: Merk
+status: gearchiveerd
+prioriteit: P3
+samenvatting: "Structured data bleek op 31-08 wél live (Organization/WebSite/FAQPage); de homepage-title is maar 7 tekens en de description 175. Buffer heeft een gratis MCP-server gelanceerd. Sport Ondernemers Expo geschrapt door lars."
+gerelateerd: [2026-08-24-weekoverzicht, 2026-09-07-weekoverzicht]
+vervangt: [2026-08-24-weekoverzicht]
+bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-08-31.md"
+deadline: ""
+---
+# Denzel Weekoverzicht — 2026-08-31
+
+## In het kort
+
+Eerste week met live-site-check en SEO-check. Vervangen door het weekoverzicht van 7 september. Bewaard als archief.
+
+## Bevindingen
+
+### Voortgang per hoofdagent
+
+- **Content Agent** — geen verandering. Video & Visuele Productie Agent (`/video-productie`, sinds 2026-08-09) nog steeds zonder output. Automatisering van periodieke content-ideeën blijft bewust niet gebouwd (lars wil dit eerst intern afstemmen) — de technische blocker daarachter (Buffer-koppeling stond op "requires authentication") lijkt inmiddels weg te vallen, zie AI-ontwikkelingen hieronder.
+- **Partnership Agent** — B2B Klanten Agent: lijst laatst bijgewerkt 2026-08-25 (6 dagen geleden), binnen de 1-2 weken-marge, geen nieuwe zoekactie nodig. Partnerships & Events Agent: lijst laatst bijgewerkt 2026-08-24 (7 dagen geleden), ook binnen de marge, geen nieuwe zoekactie nodig. Influencer & Creator Agent draait ongewijzigd actief via het IG-zoekscript. De twee MIDDEL-kandidaten van vorige week (Urban Trail Rotterdam, Rotterdam Charity Run) wachten nog steeds op een eerste beoordeling van lars. **Update 31-08:** lars heeft Sport Ondernemers Expo geschrapt ("niet iets voor ons" — B2B-vakbeurs, geen sportpubliek/activatie); verwijderd uit [[Voorbeelden Gevonden Organisaties (Events)]] en als uitsluitingsregel vastgelegd in [[Voorwaarden Samenwerking]].
+- **Website Agent** — dit was de eerste geplande run van de live-site-check en SEO-check (vastgesteld 2026-08-25). **Update 31-08 (tweede check, later op de dag):** de egress-blokkade is niet meer aanwezig — WebFetch en curl naar `higrip.nl` werken nu gewoon (HTTP 200). Live-site-check en SEO-check alsnog uitgevoerd, zie hieronder. GA4-koppeling (`analytics-mcp`) draait sinds 2026-08-30 naar behoren, los van dit probleem.
+
+### Wat ik deze week zelf heb opgepakt
+
+**B2B Klanten (Lijn A):** geen zoekactie — lijst is recent genoeg (2026-08-25, binnen de marge).
+
+**Samenwerkingen/Events (Lijn B):** geen zoekactie — lijst is recent genoeg (2026-08-24, binnen de marge).
+
+**Live-site-check (alsnog uitgevoerd, 31-08 later op de dag):**
+- Bereikbaar: `https://www.higrip.nl/` geeft HTTP 200, geen 404/500, geen zichtbare Liquid-errors.
+- **Structured data staat nu wél live.** `<script type="application/ld+json">` voor Organization, WebSite én FAQPage (8 vragen) staat in de `<head>` van de productiepagina — de wachtende actie sinds 2026-08-02 ([[Update Log]]) blijkt afgerond. Denzel kan dit niet zelf in [[Update Log]] markeren (buiten schrijfrechten van deze routine) — signaal voor lars/Website Agent om die notitie bij te werken.
+- Merknaam: overal zichtbaar correct "HÏ Grip" (og:title, twitter:title, `<title>`, JSON-LD `name`, paginatekst). De enige "HI_Grip"-vermeldingen staan in bestandsnamen/URL's van het logo (bv. `HI_Grip_logo_high_res.png`) — niet zichtbaar voor bezoekers, geen actie nodig.
+- Vertrouwens-elementen uit [[Conversie Optimalisatie Checklist]] staan er: contactgegevens (e-mail, telefoon, KVK), Trustpilot-link, klantlogo's (Hogeschool Rotterdam, Concordia, SYTH, Sport2000), wetenschappelijke bronvermeldingen.
+
+**SEO-check (alsnog uitgevoerd, 31-08 later op de dag):**
+- `<title>` = **"HÏ Grip"** — slechts 7 tekens, ver onder de aanbevolen ~50-60. Geen keyword ("gripsokken", "performance sportswear") in de title — gemiste SEO-kans op de homepage. **Voorstel:** iets als "HÏ Grip — Performance Gripsokken voor Sporters" (past binnen 50-60 tekens, bevat het hoofdkeyword).
+- `<meta name="description">` = 175 tekens — iets boven de aanbevolen ~120-155, risico op afkappen in Google-resultaten. **Voorstel:** inkorten met ~20 tekens, kernboodschap (grip + comfort + minder blessures) behouden.
+- Sitemap bereikbaar op `https://www.higrip.nl/sitemap.xml` (HTTP 200) — een geldige sitemap-index met 9 sub-sitemaps (producten/pagina's/collecties/blogs, NL+EN), plus een "agentic discovery sitemap" (sluit aan bij de Shopify-agentic-commerce-ontwikkeling uit de AI-ontwikkelingen hieronder).
+- FAQPage-inhoud (8 vragen) inhoudelijk gecheckt: missie, verzorging, levertijd, zakelijk-aanbod-link, FAQ-paginalink — lijkt allemaal actueel, geen verwijzingen naar iets verouderds gevonden.
+- Zoals altijd: geen van deze twee bevindingen (title/description) is door Denzel zelf aangepast — alleen gesignaleerd met een concreet voorstel, wijziging is aan lars/Website Agent via de reguliere procedure ([[Technische Procedures]]).
+
+**AI-ontwikkelingen:** gerichte websearch gedaan naar wat er de afgelopen periode concreet is bijgekomen voor contentcreatie/marketing/e-commerce, zie hieronder — met één vondst die direct een bekende blocker raakt (Buffer-MCP).
+
+### Openstaande beslissingen voor lars
+
+- ~~**Egress-toegang tot higrip.nl vrijgeven voor deze cloud-routine.**~~ — **opgelost, bleek tijdelijk.** Bij een tweede check later op 31-08 werkten WebFetch én curl naar `higrip.nl` gewoon (HTTP 200) — de eerdere 403 op de CONNECT-tunnel was kennelijk een voorbijgaand probleem van de egress-proxy, geen permanente blokkade. Geen verdere actie van lars nodig, wel iets om in de gaten te houden als het volgende week weer optreedt.
+- **Structured data staat live, [[Update Log]] klopt niet meer.** Organization/WebSite/FAQPage JSON-LD staat op de productie-homepage (bevestigd 31-08) — de notitie zegt nog "nog niet door lars naar het live theme gekopieerd". Voorstel: lars of Website Agent werkt [[Update Log]] bij zodat de status klopt (buiten schrijfrechten van deze routine).
+- **SEO-titel en meta-description homepage aanpassen.** Title is nu alleen "HÏ Grip" (7 tekens, geen keyword); description is 175 tekens (net te lang). Voorstel staat hierboven bij de SEO-check — kleine, lage-risico wijziging via de reguliere theme-procedure.
+- **Buffer MCP-server koppelen** (zie AI-ontwikkelingen) — voorstel: koppel Buffer via de OAuth-custom-connector in Claude (geen API-key nodig, een paar klikken). Dit lost in één keer twee bekende blockers op: het "fundamenteel gat" uit de kritische kwaliteitsreview van 25-08 (Buffer als ontbrekende feedbackbron) én de reden waarom Content Agent's contentkalender-automatisering nog niet gebouwd kon worden.
+- ~~**Sport Ondernemers Expo (4 nov 2026)**~~ — afgehandeld 31-08: door lars geschrapt, geen HÏ Grip-fit (B2B-vakbeurs).
+- **Urban Trail Rotterdam & Rotterdam Charity Run** (MIDDEL, toegevoegd 2026-08-24) — wachten nog op een eerste beoordeling/budget-check.
+- **Merk & Bedrijf Database / Retailer Database** — nog steeds niet bevestigd of deze verwijderd mogen worden (lijken overbodig, functie al gedekt door andere bestanden).
+
+### Vooruitblik — komende week
+
+1. **Title tag en meta description van de homepage verbeteren** — concreet voorstel staat in de SEO-check hierboven; kleine wijziging, kan snel via de reguliere theme-procedure.
+2. **[[Update Log]] laten bijwerken** — structured data staat al live, de notitie zegt nog van niet.
+3. **Buffer-koppeling opzetten** via de nieuwe OAuth-MCP-server — daarna kan zowel de Buffer-feedbackloop als (op termijn) een voorstel voor Content Agent-automatisering opnieuw bekeken worden.
+4. **Beoordeling geven op de openstaande Events-kandidaten** (Urban Trail Rotterdam, Rotterdam Charity Run) — liggen al een week te wachten op een budget-check.
+5. **Analytics-vervolgstappen oppakken nu GA4 een week draait:** funnel-rapport op de historische data (mrt–dec 2025) om het grootste CRO-startpunt te vinden, en checken of purchase-events daadwerkelijk doorkomen.
+
+### AI-ontwikkelingen die relevant kunnen zijn
+
+1. **Buffer heeft een gratis MCP-server gelanceerd** (27 mei 2026, beschikbaar op elk abonnement incl. het gratis plan) — Claude kan als custom connector via OAuth verbinden (geen API-key), en kan dan posts opstellen, plannen, de wachtrij beheren en analytics uitlezen. Dit is direct relevant: lost het "Buffer ✗"-gat uit de kwaliteitsreview van 25-08 op én de reden waarom Content Agent-automatisering nog niet gebouwd was (contentkalender staat in Buffer, koppeling stond op "requires authentication").
+2. **Shopify's agentic-commerce-laag (Storefront MCP / Universal Commerce Protocol) is dit jaar breed uitgerold** — elke Shopify-store krijgt een eigen Storefront MCP-server, waardoor AI-shopassistenten (ChatGPT e.d.) productdata direct kunnen doorzoeken. Relevant voor `/shopify-seo`: goede structured data/productdata wordt niet alleen een Google-zoekwoordvraag maar ook een "vindbaar zijn voor AI-shopagents"-vraag — extra reden om de nog-niet-live structured data (zie hierboven) alsnog naar live te krijgen.
+3. **Pippit** (AI-tool die contentcreatie combineert met publiceren en analytics, gericht op commerce) — zet productpagina's/bronmateriaal automatisch om in video's en avatar-content, met een gedeelde kalender voor distributie. Kan relevant zijn voor `/video-productie` en `/social-content` als sneller startpunt voor productvideo's, zonder dat het de eigen HÏ Grip-beeldtaal (échte producten/mensen) hoeft te vervangen.
+
+### Gerelateerde bestanden
+
+- [[Stappenplan — Verdere Bouw]]
+- [[Feedback & Iteratie Log]]
+- [[Agent Werk & Kwaliteit Overzicht]]
+
+## Acties
+
+- [x] P2 · Homepage-title en meta description aanpassen — overgenomen in Week 2026-09-14
+- [x] P3 · Update Log bijwerken (structured data stond live) — overgenomen in Week 2026-09-14
+- [x] P2 · Buffer MCP-server koppelen — gedaan 01-09, zie Feedback & Iteratie Log
+- [x] P2 · Events-kandidaten Urban Trail / Charity Run beoordelen — overgenomen in Week 2026-09-14
+- [x] P2 · Funnel-rapport op historische GA4-data en purchase-events checken — overgenomen in Week 2026-09-14
+
+## Bronnen
+
+- Origineel: [[Week 2026-08-31]] (`04_Agent_Infrastructuur/Beheer/Weekoverzicht/`)
+- Routine: [[Denzel Weekoverzicht — Routine]]
+
+## Aantekeningen

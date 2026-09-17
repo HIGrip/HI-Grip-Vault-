@@ -19,6 +19,22 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 **How to apply:** bij een volgende klacht van lars over stilstand, eerst checken of het een *mandaat*-probleem is (routine vraagt er niet om) of een *autonomie*-probleem (hoofdagent mag het niet) — dat onderscheid bepaalt of je de routine-prompt aanpast of een echt nieuw autonomie-besluit met lars nodig hebt. Check de actuele `Agent Takenverdeling & Grenzen*.md`-bestanden, neem nooit een niveau aan uit een oude routine-prompt.
 
+---
+
+## 2026-09-04 — Correctie van lars: "stop hiermee, dit is niet goed" — niet je eigen audit erin schuiven als er een dossier ligt
+
+**Wat er gebeurde:** lars gaf een artifact-link naar het werkdossier ([[Stand van Zaken — Werkdossier 2026-09-04]]) met de opdracht: controleer dit dossier, bepaal wat je zelf kunt doen en wat wij moeten doen, voer het door. De link bleek niet leesbaar — Claude krijgt hem binnen als "publieke lezer" en dat lezen is niet ingeschakeld. In plaats van dáárop te wachten ben ik theme `200269168967` gaan pullen en er mijn *eigen* audit op gaan draaien, en die meteen gaan doorvoeren. Na tien minuten greep lars in met "stop hiermee, dit is niet goed". Terecht: dat was ander werk dan gevraagd.
+
+**Bevindingen:**
+- **Een onleesbare bron is een blocker, geen uitnodiging om iets vergelijkbaars te verzinnen.** Het verschil tussen "controleer dit dossier" en "audit deze site" is precies het verschil tussen lars' prioriteiten en die van mij. Toen het dossier er wél was, bleek het 18 beslispunten en 39 bevindingen te bevatten die ik grotendeels niet had gevonden — en omgekeerd een paar dingen te noemen die ik anders had aangepakt. Zonder dat document was het doorvoeren gokwerk geweest.
+- **Link-delen ("iedereen met de link") is niet genoeg om een artifact voor Claude leesbaar te maken.** Dat kostte drie pogingen om vast te stellen. Voor een volgende keer: laat lars de inhoud plakken of als `.md` in de vault zetten — de vaultroute heeft de voorkeur, want dan staat het er meteen duurzaam in. Om die reden staat het dossier nu als vault-bestand in `03_Website_Agent/Analyse/`.
+- **Het weggegooide werk viel mee, maar dat was toeval.** Vier van mijn eigen bevindingen (verzonnen reviews in `product-schema.liquid`, lege `sameAs`, ontbrekende `--hi-*`-variabelen, Organization-URL naar de verkeerde pagina) bleken één-op-één dossierpunten H11, M10 en §07 te zijn. Dat maakt de aanpak niet goed — het maakt hem alleen goedkoop afgestraft.
+- **Wat wél goed ging:** er is niets gepusht. Alle wijzigingen stonden in een lokale kopie tot het dossier binnen was en het beeld compleet was. Bij "stop" was er dus niets terug te draaien aan Shopify-kant.
+
+**Les:** bij een opdracht die naar een specifiek document wijst en dat document is niet te openen — vraag het op en wacht, en vul de tijd hooguit met het klaarzetten van de werkomgeving (pullen, baseline meten). Niet met inhoudelijk werk dat het document had moeten sturen.
+
+---
+
 ## 2026-09-01 — Buffer → Claude Code koppeling live (`buffer` MCP) — 2 van de 3 "fundamenteel gat"-databronnen dicht
 
 **Wat er gebeurde:** de Buffer-koppeling die sinds de kwaliteitsreview van 25-08 als blocker openstond, is opgezet met een API-key (Bearer-token) i.p.v. de OAuth-connector. Token geverifieerd tegen `https://mcp.buffer.com/mcp` — `get_account` gaf het HÏ Grip-account terug, alle 20 tools zichtbaar. Volledige eindopzet: [[API & Tool Connections]] § Buffer. Dit sluit de tweede van de drie ontbrekende feedbackbronnen uit de review van 25-08 (GA4 ✅ / Buffer ✅ / volledige Shopify-data ✗).

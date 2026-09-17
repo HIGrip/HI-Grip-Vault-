@@ -92,4 +92,4 @@ Bijgewerkt bij de bouw van het Research Dashboard (17-09); eerdere ronde 30-08.
 
 **Nog te doen — input van lars nodig**
 - **Lege notities invullen of verwijderen:** [[Concurrentieanalyse]], [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
-- **Shopify `theme list` draaien** — werkthema-ID is bijgewerkt naar `199980286279` in [[Technische Procedures]]; nog te bevestigen: de themanaam en of het live-ID nog `198094127431` is
+- ~~**Shopify `theme list` draaien**~~ — gedaan 17-9 (Denzel): werkthema `200269168967` (bevestigd door lars), live `200269398343`. Staat in [[Technische Procedures]].

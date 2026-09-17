@@ -30,6 +30,8 @@
 
 ## 3. Pilates / Sportscholen
 
+> **⏹ Pilates gestopt (17-9-2026, lars):** de pilates-zoekacties waren een test — er wordt niet meer op pilates gefocust. De 6 gevonden pilates-studio's staan op "Gestopt" in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]. Sportscholen blijven in principe mogelijk, maar vallen net als pilates buiten de beachhead (tennis/rugby/voetbal) en krijgen geen actieve zoekacties meer.
+
 **Wie:** Ondernemers/eigenaren die op zoek zijn naar gripsokken voor hun leden.
 
 **Specifieke kans:** Personalisatie-mogelijkheid is een sterk verkoopargument.

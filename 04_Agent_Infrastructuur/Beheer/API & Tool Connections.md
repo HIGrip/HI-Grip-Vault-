@@ -14,11 +14,21 @@
 
 ---
 
+## Tool-valkuilen voor sub-agents (testrun 17-9)
+
+- **`higrip-vault` `search_files` mist bestaande bestanden** ("No matches found" op bestanden die er wel zijn). Agents zoeken vault-bronnen daarom met Glob op `**/Naam.md`. Alle 11 agents hebben hiervoor `Glob` gekregen en een vindregel in hun agent-bestand.
+- **`[[wikilinks]]` zijn geen paden.** In de testrun meldden 3 agents bestaande, gevulde bronnen (Content Pillars, Tekst-overlay Gids, Content Strategie) als "bestaat niet" en gingen daarna gokken. Oorzaak: zelf een pad geraden uit de link.
+- **Buffer:** eerst `get_account` voor het organisatie-ID (HÏ Grip = `69b6d476e4bc4b63e1f6854d`); een geraden ID geeft "Organization not found". Content Strategie- en Caption-agent hebben `get_account` + `list_channels` gekregen.
+- **PageSpeed Insights-API zonder key → HTTP 429.** Vereist een gratis Google Cloud API-key van lars; nog niet aangemaakt.
+- **Skills/plugins** zijn alleen aanroepbaar met de `Skill`-tool. Tot 17-9 had alleen de Design Agent die — de plugin-laag van de andere agents werd daardoor nooit echt gebruikt.
+
+---
+
 ## Overpass API — lokale bedrijfsdata (gratis, actief)
 
 **Status:** getest en werkend 2026-09-17. Geen API-key, geen account, geen kosten.
 
-**Waarvoor:** de B2B Klanten Agent bouwt hiermee lokale bedrijvenlijsten (sportscholen, sportcomplexen, sportverenigingen, sportwinkels) uit OpenStreetMap-data.
+**Waarvoor:** de B2B Klanten Agent bouwt hiermee lokale lijsten van tennis-, rugby- en voetbalclubs en sportwinkels (beachhead) uit OpenStreetMap-data. Pilates/sportscholen zijn gestopt (17-9).
 
 **Endpoint:** `https://overpass.kumi.systems/api/interpreter` (mirror). De hoofdserver `overpass-api.de` is regelmatig overbelast en geeft dan "server is probably too busy" — de kumi-mirror werkte tijdens de test wel.
 
@@ -28,7 +38,7 @@
 
 **Limieten:** ~10.000 requests/dag, ~1 GB/dag, ~2 gelijktijdige queries per IP. Ruim voldoende voor on-demand leadonderzoek.
 
-**Testresultaat (17-9):** één query op `leisure=fitness_centre` in regio Rotterdam gaf **71 sportscholen**, waarvan 51 met website en 19 met telefoonnummer. Volledige query staat in [[Partnership Agent/identiteit|identiteit.md]] van de Partnership Agent, sectie B2B Klanten Agent.
+**Testresultaten (17-9):** beachhead-query (tennis/rugby/voetbal) in regio Rotterdam gaf **103 clubs — 77 voetbal, 19 tennis, 1 rugby — 43 met website**. Eerdere technische test op sportscholen: 71 resultaten. **Mirror is traag en wisselend:** zelfde query slaagde één keer en liep een andere keer na 50 s in een time-out — gebruik `--max-time 180` en probeer opnieuw bij een lege response. Rugby staat dun in OSM; aanvullen met websearch. Volledige query staat in [[Partnership Agent/identiteit|identiteit.md]] van de Partnership Agent, sectie B2B Klanten Agent.
 
 **Wat OSM niet geeft:** e-mailadressen, reviews, ratings. E-mail ophalen gaat via de `website`-URL uit het resultaat, met WebFetch.
 
@@ -88,6 +98,8 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 - Officieel Shopify Liquid VS Code-extensie (`Shopify.theme-check-vscode`) — gedaan
 - PowerShell execution policy stond op Restricted, blokkeerde de npm-gegenereerde `shopify.ps1`-wrapper — opgelost met `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - Login gebeurt interactief via device-code + browser, moet dus door lars zelf in zijn eigen zichtbare terminal (niet iets wat de agent zelf non-interactief kan draaien)
+
+> ⚠️ **Verouderd (17-9):** de ID's hieronder kloppen niet meer. Actueel: werkthema `200269168967`, live `200269398343` — zie [[Technische Procedures]], de enige plek voor actuele ID's.
 
 **Thema-lijst opgehaald (2026-08-02) — zie [[Technische Procedures]] voor de volledige, dwingende regel:** de store heeft 10 thema's. Alleen **#198505464135 "HÏ Grip website AI Workspace"** mag bewerkt worden. Live (**#198094127431**, nooit aanraken) en de overige 8 oude/duplicate thema's zijn allemaal uitgesloten.
 

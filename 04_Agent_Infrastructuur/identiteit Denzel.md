@@ -28,6 +28,22 @@ Zorgen dat lars met één aanspreekpunt kan werken in plaats van los met 3 agent
 ## Sub-agents
 Niet van toepassing — sub-agents hangen onder de hoofdagents, niet onder Denzel. Zie het `identiteit.md` van elke hoofdagent.
 
+## Lokale uitvoerbare vorm (nieuw, 2026-09-17)
+Denzel bestond tot nu toe alleen als vault-document plus de geautomatiseerde cloud-routine ([[Denzel Weekoverzicht — Routine]], `trig_01D9XwMiVvuq1FWr7CLoYTmN`, maandag 06:05 UTC) — er was geen manier om hem lokaal aan te roepen. Dat is nu opgelost met het slash-command **`/denzel <opdracht>`** (`commands/denzel.md` in HI-Grip-claude-setup).
+
+Bewust een **command** en geen sub-agent: Denzel staat bóven de orchestrators en moet ze kunnen activeren, wat een sub-agent niet kan. Het bestand is thin volgens dezelfde vault-only-regel als de `agents/*.md`: het leest bij elke run eerst dit bestand én [[soul Denzel]], en bevat verder alleen de Claude Code-mechaniek (welke orchestrator-skill bij welk onderwerp hoort). Inhoud en grenzen staan hier in de vault en overrulen dat bestand altijd.
+
+Routeringstabel: website-onderwerpen → `/website-agent`, social content → `/content-agent`, influencers/B2B/events → `/partnership-agent`. Elke orchestrator dispatcht daarna zelf zijn eigen sub-agents parallel. `/denzel weekoverzicht` spiegelt de 7 checks uit de maandagroutine on-demand, zonder de cloud-routine te dupliceren.
+
+## Vaktheorie-laag — `agent-orchestration` plugin (nieuw, 2026-09-17)
+Geïnstalleerd als `agent-orchestration@claude-code-workflows` (marketplace `wshobson/agents`). Drie onderdelen die specifiek Denzels eigen werk als orchestrator raken — niet het inhoudelijke werk van de hoofdagents:
+
+- **`context-manager`** (agent) — contextbeheer wanneer meerdere hoofdagents aan hetzelfde onderwerp werken en hun output dreigt te overlappen of tegen te spreken. Sluit aan op de bestaande scope-taak "overlappende taken tussen hoofdagents signaleren".
+- **`/improve-agent`** (command) — voor als een sub-agent structureel ondermaats werk levert. De verbetering hoort in de vault-`identiteit.md` van die sub-agent, nooit in `agents/*.md`.
+- **`/multi-agent-optimize`** (command) — voor het herzien van de structuur als geheel: wie doet wat, waar zit overlap tussen de 11 sub-agents.
+
+Deze plugin adviseert over agent-architectuur; hij bepaalt **nooit** autonomie-niveaus. Die staan in [[soul Denzel]] en in de `soul.md` van elke hoofdagent, en wijzigen alleen via een voorstel dat lars goedkeurt — zie de harde grenzen daar.
+
 ## Kernbronnen in de vault
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand, in Beheer)
 - [[Agent Hiërarchie & Structuurschema]]

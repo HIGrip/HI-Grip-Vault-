@@ -14,6 +14,44 @@
 
 ---
 
+## Overpass API — lokale bedrijfsdata (gratis, actief)
+
+**Status:** getest en werkend 2026-09-17. Geen API-key, geen account, geen kosten.
+
+**Waarvoor:** de B2B Klanten Agent bouwt hiermee lokale bedrijvenlijsten (sportscholen, sportcomplexen, sportverenigingen, sportwinkels) uit OpenStreetMap-data.
+
+**Endpoint:** `https://overpass.kumi.systems/api/interpreter` (mirror). De hoofdserver `overpass-api.de` is regelmatig overbelast en geeft dan "server is probably too busy" — de kumi-mirror werkte tijdens de test wel.
+
+**Twee valkuilen die een lege response geven:**
+1. **Zonder eigen User-Agent → HTTP 406.** Stuur altijd `-A "HiGrip-LeadResearch/1.0 (info@higrip.nl)"` mee.
+2. **Hoofdserver overbelast → geen JSON maar een XML-foutpagina.** Val terug op de mirror.
+
+**Limieten:** ~10.000 requests/dag, ~1 GB/dag, ~2 gelijktijdige queries per IP. Ruim voldoende voor on-demand leadonderzoek.
+
+**Testresultaat (17-9):** één query op `leisure=fitness_centre` in regio Rotterdam gaf **71 sportscholen**, waarvan 51 met website en 19 met telefoonnummer. Volledige query staat in [[Partnership Agent/identiteit|identiteit.md]] van de Partnership Agent, sectie B2B Klanten Agent.
+
+**Wat OSM niet geeft:** e-mailadressen, reviews, ratings. E-mail ophalen gaat via de `website`-URL uit het resultaat, met WebFetch.
+
+**Licentie:** ODbL — bronvermelding "Data from OpenStreetMap" verplicht zodra een lijst extern gedeeld wordt.
+
+**Tool-vereiste:** de `b2b-klanten-agent` heeft hiervoor de `Bash`-tool gekregen (17-9), uitsluitend voor deze queries.
+
+---
+
+## Apify — afgewezen (betaald)
+
+**Status:** geïnstalleerd en weer verwijderd op 2026-09-17, op verzoek van lars.
+
+**Waarom eruit:** Apify rekent **per run** af. Lars wil geen betaalde koppeling in de infrastructuur — alle andere koppelingen (GA4, Buffer, Shopify Dev, vault) zijn gratis.
+
+**Wat het gekost zou hebben aan functionaliteit — en wat niet:**
+- **B2B-leads: niets verloren.** De Apify-skill `apify-local-business-leads-osm` was feitelijk een betaalde wrapper om precies dezelfde OpenStreetMap-data die Overpass hierboven gratis levert.
+- **Influencer-data: wél een gat.** `apify-influencer-brand-collabs` (branded-content-historie) en `apify-creator-emails` zijn niet gratis te vervangen — Instagram geeft engagement- en samenwerkingsdata niet vrij via een open API. De Influencer & Creator Agent blijft daarom op het eigen `ig_find_creators.py`-script draaien.
+
+**Heroverwegen wanneer:** het volume aan influencer-outreach groot genoeg wordt dat handmatig profielen controleren meer kost dan een Apify-abonnement. Nu niet aan de orde.
+
+---
+
 ## Shopify — Dev MCP (docs/Liquid-validatie)
 
 **Status:** klaargezet 2026-08-01, wordt actief na herstart van de sessie/MCP-verbinding (zelfde patroon als de higrip-vault-fix).

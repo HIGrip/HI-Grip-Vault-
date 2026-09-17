@@ -153,6 +153,20 @@
 
 ---
 
+## Koppeling aan Buffer — 3 tags (vastgesteld 14-9-2026)
+
+Buffer staat maximaal 3 tags per organisatie toe. De 5 creatieve pilaren hierboven worden daarom in Buffer's ideeënbord op **3 tags** afgebeeld (tag = pillar, 1-op-1 op Buffer-niveau). De tags bestonden al in Buffer (door lars aangemaakt); de API kan geen tags aanmaken.
+
+| Buffer-tag | Wat erin valt | Creatieve pilaren (hierboven) | Tag-id | Kleur |
+|---|---|---|---|---|
+| **PERSOONLIJKE CONTENT** | Achter-de-schermen, oprichter/team, eerlijke/rauwe momenten — geen gepolijste productie | 3 Story / Series (deels) | `6a32de319c923d4b7e026a68` | `#87C221` |
+| **ANNOUNCEMENT CONTENT** | Product-launches, restocks, acties, seizoensgebonden aankondigingen | — (operationeel) | `6a32de2b355ff4514e0783f5` | `#1F35B3` |
+| **PERFORMANCE / LIFESTYLE / INFLUENCER CONTENT** | Sport-in-actie (tennis, padel, voetbal, Hyrox e.d.) én de brug naar dagelijks leven; omvat influencer-content | 1 Performance · 2 Humor/Viral · 4 Influencer · 5 Guerilla | `6a32de22b853eaf5dd01bac5` | `#E0364F` |
+
+**Werkregel:** nieuwe ideeën worden door de Content Agent altijd met exact één van deze 3 tags in Buffer's ideeënbord gezet (groep: Unassigned) — zie `04_Agent_Infrastructuur/Content Agent/soul.md`.
+
+---
+
 ## Gerelateerde bestanden
 
 - [[Doelgroep & Persona's]] — Uitgebreide doelgroep-beschrijvingen

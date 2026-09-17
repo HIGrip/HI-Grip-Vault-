@@ -6,6 +6,18 @@ Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen,
 
 ---
 
+## 2026-09-16 (vervolg 2) — Automatische doorschakeling naar claude-seo-plugin agents
+
+**Wat:** Op verzoek van lars is de SEO Agent nu structureel gekoppeld aan de 18 `claude-seo:seo-*`-subagents. De agent-definitie (`agents/seo-agent.md` in HI-Grip-claude-setup, gesynct naar `~/.claude/agents`) heeft de Agent-tool gekregen plus een routeringstabel (Werkwijze-sectie): zodra een taak buiten de eigen basisscope valt (diepe technische audit, uitgebreide schema-validatie, E-E-A-T/content-kwaliteit, e-commerce/marketplace-SEO, GEO/AI Overviews, sitemap, backlinks, SERP/intentie-mismatch, lokale SEO), dispatcht de SEO Agent zelf automatisch naar de juiste `claude-seo:seo-*`-subagent — lars hoeft dit niet apart te vragen. Bij een brede site-wide vraag dispatcht hij meerdere parallel, zelfde patroon als `/seo audit`.
+
+**Waarom nu:** de eerdere monitoring-check (zie hierboven, 2026-09-16) deed dit al informeel — de SEO Agent gebruikte de resultaten van een dezelfde dag handmatig gedraaide `/seo audit` als bron. Dit maakt die koppeling structureel in plaats van toevallig.
+
+**Waar:** `agents/seo-agent.md` (tools-regel + "Verhouding tot andere agents" + "Werkwijze"-routeringstabel — bron van waarheid voor de exacte mapping), [[identiteit]] in deze map (Sub-agents-sectie, SEO Agent-blok).
+
+**Nog niet gedaan:** nog niet in de praktijk getest of de Agent-tool vanuit een subagent (seo-agent zelf is al een subagent van de Website Agent-orchestrator) daadwerkelijk geneste dispatch toestaat — eerste keer dat dit gevraagd wordt, checken bij eerstvolgende `/website-agent`-run met een SEO-taak die buiten de basisscope valt.
+
+---
+
 ## 2026-09-16 (vervolg) — Eerste volledige audit + Critical-actieplan
 
 **Wat:** Volledige `/seo audit` (12 deelaudits) op higrip.nl gedraaid, health score 59/100. Alle 5 Critical-punten uitgezocht en vergeleken tegen het werktheme (`#200269168967`) om te weten wat al is opgelost bij publicatie vs. wat los in Admin moet. Root cause van de trycloudflare-devtunnel-bug gevonden (vergeten test-URL in de Amose-bundle-app, geen reden om over te stappen). Bijvangst: oud, ongebruikt "Bundler"-app-blok verwijderd uit het werktheme.

@@ -38,7 +38,8 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 - **Kernbronnen:** [[SEO Strategie & Keywords]]
 - **Skill:** `/shopify-seo` in HI-Grip-claude-setup (`commands/shopify-seo.md`) — bevat de HÏ Grip-regels (merk-breed i.p.v. sport-specifiek, huidige structured-data-status) én algemene SEO-theorie (crawling/indexing/ranking, E-E-A-T, entity-based SEO)
 - **Status:** in ontwikkeling (sinds 2026-08-09) — zie [[04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/_Werkplek|_Werkplek]] in deze submap
-- **Autonomie:** Meta title/description & structured data = Zelf doen; SEO-keyword onderzoek = Voorstellen, ik keur goed — direct overgenomen uit [[Agent Takenverdeling & Grenzen]]
+- **Automatische doorschakeling naar claude-seo (nieuw, 2026-09-16):** de losse `agents/seo-agent.md`-definitie heeft nu de Agent-tool en een routeringstabel — zodra een taak buiten de eigen basisscope (meta/title/structured-data-voorstellen) valt, dispatcht de SEO Agent zelf, zonder dat lars dit apart vraagt, naar de bijpassende `claude-seo:seo-*`-subagent (technical/schema/content/ecommerce/geo/sitemap/backlinks/sxo/local, of meerdere parallel bij een brede audit). Volledige routeringstabel staat in `agents/seo-agent.md` zelf (bron van waarheid voor de exacte mapping, niet dupliceren hier).
+- **Autonomie:** Meta title/description & structured data = Zelf doen; SEO-keyword onderzoek = Voorstellen, ik keur goed; doorschakelen naar `claude-seo:seo-*`-subagents voor diepere audits = Zelf doen (alleen signaleren/rapporteren, geen van deze subagents publiceert zelf) — direct overgenomen uit [[Agent Takenverdeling & Grenzen]]
 - **Harde grenzen:** Zelfde als Website Agent — nooit in het live theme werken
 - **Toon:** Bondig en zoekwoord-gericht, maar leesbaar voor mensen
 

@@ -59,6 +59,12 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Harde grenzen:** Geen voorwaarden toezeggen en geen contract afsluiten zonder overleg
 - **Toon:** Eerlijk, zonder loze beloftes
 
+## Parallelle dispatch (nieuw, 2026-09-16)
+
+Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in `HI-Grip-claude-setup/agents/` (`influencer-creator-agent`, `b2b-klanten-agent`, `partnerships-events-agent`), gesynct naar `~/.claude/agents`. De orchestrator-skill **`/partnership-agent <opdracht>`** (`commands/partnership-agent.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als bij Website Agent en `/seo audit`. Er waren voor deze 3 sub-agents nog geen `/`-skills (het zijn workflows, geen skill-kandidaten) — de agent-definities zijn dus hun eerste `/`-activeerbare vorm.
+
+**Verplichte structuur:** elk bestand in `agents/` volgt 1-op-1 het `identiteit.md` + `soul.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — zie de toelichting in `Website Agent/identiteit.md` § Parallelle dispatch voor de volledige regel (ook de doorlopende sync-verplichting met `CLAUDE.md`).
+
 ## Kernbronnen in de vault
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Ideale Partner Profiel]]

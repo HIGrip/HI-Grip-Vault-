@@ -64,6 +64,12 @@ Zorgen dat de socials van HÏ Grip de merkstem consistent laten zien en bijdrage
 - **Harde grenzen:** Geen muziek/sound gebruiken buiten [[Muziek & Licenties]] om
 - **Toon:** Sportief/energiek, aansluitend bij [[Brand Sound]]
 
+## Parallelle dispatch (nieuw, 2026-09-16)
+
+Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in `HI-Grip-claude-setup/agents/` (`content-strategie-planning-agent`, `caption-copy-agent`, `video-visuele-productie-agent`), gesynct naar `~/.claude/agents`. De orchestrator-skill **`/content-agent <opdracht>`** (`commands/content-agent.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als bij Website Agent en `/seo audit`. De losse `/social-content`/`/content-strategy`/`/video-productie`-skills blijven bestaan voor snel, inline gebruik.
+
+**Verplichte structuur:** elk bestand in `agents/` volgt 1-op-1 het `identiteit.md` + `soul.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — zie de toelichting in `Website Agent/identiteit.md` § Parallelle dispatch voor de volledige regel (ook de doorlopende sync-verplichting met `CLAUDE.md`).
+
 ## Kernbronnen in de vault
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Content Strategie]]

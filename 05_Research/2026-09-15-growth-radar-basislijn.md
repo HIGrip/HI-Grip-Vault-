@@ -8,7 +8,7 @@ categorie: SEO
 status: bekeken
 prioriteit: P2
 samenvatting: "Nulmeting over zes thema's: Google-updates 2026, AI-zoeken, structured data, conversie, social en funnel. Grootste kans: de eigen meetdata (1,17 / 95%) staan nergens in een vindbare, citeerbare pagina; grootste lek: 48% winkelwagenverlating door onverwachte verzendkosten bij het 1-pack van €14,99."
-gerelateerd: [2026-09-15-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-15-seo-audit]
+gerelateerd: [2026-09-15-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-15-seo-audit, 2026-09-18-growth-radar-social]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-15-basislijn.md"
 deadline: ""

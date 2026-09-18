@@ -6,15 +6,17 @@
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-08-30 (lars):** het werkthema-ID is nu `199980286279` — opvolger van `199814873415`, dat weer de opvolger was van `198505464135`. Zowel het werkthema- als het live-ID krijgen periodiek een nieuw nummer, dus: **draai vóór elke theme-actie `shopify theme list --store hi-grip.myshopify.com`** en lees het actuele `[live]`-ID en het werkthema-ID af; neem nooit "een" unpublished theme aan.
+> **Bijgewerkt 2026-09-17 (Denzel, werkthema bevestigd door lars):** werkthema is nu `200269168967`, live is `200269398343` — beide geverifieerd met `shopify theme list --json` (live = rol `main`). Live werd rond 7-9 gewisseld; sindsdien ontbreken WebSite/Breadcrumb/FAQPage-schema op live (zie [[Update Log]]). **Agents beschermen live voortaan op rol (`live`/`main`), niet op nummer** — zie Design Agent-grenzen in `Website Agent/identiteit.md`.
+>
+> *Vorige stand 2026-08-30:* werkthema `199980286279` — opvolger van `199814873415`, dat weer de opvolger was van `198505464135`. Zowel het werkthema- als het live-ID krijgen periodiek een nieuw nummer, dus: **draai vóór elke theme-actie `shopify theme list --store hi-grip.myshopify.com`** en lees het actuele `[live]`-ID en het werkthema-ID af; neem nooit "een" unpublished theme aan.
 >
 > **Dit is de enige plek waar de ID's staan** — [[Shopify App Stack]] en [[Goedkeuringsworkflow]] verwijzen hiernaar, dupliceren ze niet.
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Actueel AI Workspace-werkthema | `199980286279` | unpublished | **Ja — het enige toegestane thema** |
-| Live op www.higrip.nl | laatst gezien `199039975751` (2026-08-26) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Alle overige — oude werkthema's (`198505464135`, `199814873415`), oud live-ID `198094127431`, Horizon-duplicaten, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
+| Werkthema ("Bijgewerkte kopie van Bijgewerkte kopie...") | `200269168967` (17-9) | unpublished | **Ja — het enige toegestane thema** |
+| Live op www.higrip.nl ("HÏ Grip WEBSITE") | `200269398343` (17-9) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Alle overige — oude werkthema's (`198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`198094127431`, `199039975751`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 

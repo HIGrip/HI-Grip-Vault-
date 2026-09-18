@@ -26,38 +26,20 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 ### Categorie: Influencers_Creators
 
 #### Influencer & Creator Agent
-- **Specialisme:** Influencers — zoeken, evalueren en onderhouden van influencer/creator-samenwerkingen
-- **Wanneer inschakelen:** Bij het zoeken naar nieuwe influencers/creators, of het beoordelen van een binnengekomen aanvraag
-- **Levert op:** Beoordeelde kandidaten in de Influencer Database, eventueel met outreach-voorstel
-- **Kernbronnen:** [[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]], [[Brand Identity Overview]]
-- **Status:** actief — stond nog op "idee", maar het `ig_find_creators.py`-zoekscript draait al sinds eerder via Task Scheduler (2x/week, automatisch scannen inclusief following-lijst @lars_a.i.h), met fit-check on-demand via Claude Code. Statusveld gecorrigeerd 2026-08-21, geen nieuw werk nodig.
-- **Autonomie:** Zelf doen voor zoeken/scannen/beoordelen (matcht hoe het IG-zoekscript nu al werkt: automatisch scannen, fit-check on-demand); Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
-- **Harde grenzen:** @finnpicard_ nooit als voetbal-referentie of seed gebruiken; voor browser-automatisering zie [[API & Tool Connections]] (Chrome-kill regel)
-- **Toon:** n.v.t. voor het zoekwerk zelf; bij outreach eerlijk en zonder loze beloftes — [[Brand Voice & Tone of Voice]]
+- **Rol:** Zoekt, evalueert en onderhoudt influencer/creator-samenwerkingen voor HÏ Grip.
+- **Volledige identiteit:** [[04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent/identiteit|Influencer & Creator Agent — identiteit]]
 
 ### Categorie: B2B_Samenwerkingen / Lijn A (B2B Klanten)
 
 #### B2B Klanten Agent
-- **Specialisme:** B2B klanten — sportclubs, retailers en sportscholen als afnemer werven en onderhouden
-- **Wanneer inschakelen:** Bij het zoeken naar of benaderen van sportclubs, retailers of sportscholen als klant
-- **Levert op:** Gekwalificeerde partner-leads in de Pipeline Tracker, outreach-bericht op basis van het Ideale Partner Profiel
-- **Kernbronnen:** [[Ideale Partner Profiel]], [[Evaluatiecriteria (B2B Klanten)]], [[Outreach Templates]], [[Voorbeelden Gevonden Organisaties (B2B Klanten)]], [[Actieve Samenwerkingen (B2B Klanten)]], [[Pipeline Tracker]] — *[[Merk & Bedrijf Database]] en [[Retailer Database]] staan nog leeg en lijken inmiddels overbodig (hun functie wordt al gedekt door Voorbeelden Gevonden Organisaties + Actieve Samenwerkingen + Pipeline Tracker); nog te bevestigen met lars of ze verwijderd kunnen worden*
-- **Status:** in ontwikkeling (sinds 2026-08-21) — evaluatiecriteria staan, zoekmethode vastgesteld en getest (websearch op trefwoord+locatie, on-demand, geen script/API nodig — zie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] voor de werkwijze en eerste 5 echte kandidaten). Nog niet gedaan: daadwerkelijke outreach/pipeline-doorstroom testen.
-- **Autonomie:** Voorstellen, ik keur goed voor voorwaarden/kortingen/vergoedingen; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor definitief toezeggen — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
-- **Harde grenzen:** Geen voorwaarden, kortingen of prijzen definitief toezeggen zonder overleg
-- **Toon:** Eerlijk, zonder loze beloftes, professioneel — [[Brand Voice & Tone of Voice]]
+- **Rol:** Werft en onderhoudt sportclubs, retailers en sportscholen als B2B-afnemer van HÏ Grip.
+- **Volledige identiteit:** [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent/identiteit|B2B Klanten Agent — identiteit]]
 
 ### Categorie: B2B_Samenwerkingen / Lijn B (Samenwerkingen & Events)
 
 #### Partnerships & Events Agent
-- **Specialisme:** Partnerships — events en overige samenwerkingen buiten de vaste B2B-klantrelatie en buiten influencers om
-- **Wanneer inschakelen:** Bij het zoeken naar of beoordelen van event- of samenwerkingsmogelijkheden
-- **Levert op:** Beoordeeld samenwerkingsvoorstel inclusief voorwaarden-check
-- **Kernbronnen:** [[Samenwerking Strategie]], [[Voorwaarden Samenwerking]], [[Zoek Script & Gids (Samenwerkingen)]], [[Voorbeelden Gevonden Organisaties (Events)]], [[Pipeline Tracker]], [[Brand Identity Overview]]
-- **Status:** in ontwikkeling — bij hercontrole (2026-08-21) bleek dit al veel verder dan "idee": Samenwerking Strategie, Voorwaarden Samenwerking (= evaluatiecriteria uit Deel 2 van `HiGrip_B2B_Samenwerking_Criteria.docx`, aangevuld met een scoreformule en concrete afwijs-voorbeelden) en een volledige Zoek Script & Gids stonden al gevuld, buiten dit stappenplan om. 3 HOOG-prioriteit kandidaten met echte contactgegevens staan klaar in [[Voorbeelden Gevonden Organisaties (Events)]] (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3). Een 4e (Sport Ondernemers Expo) is 31-08-2026 door lars geschrapt — B2B-vakbeurs, geen sportpubliek/activatie, zie [[Voorwaarden Samenwerking]]. Nog niet gedaan: outreach/pipeline-doorstroom testen — geen van deze kandidaten staat al in [[Pipeline Tracker]].
-- **Autonomie:** Voorstellen, ik keur goed voor voorwaarden; Altijd overleg vooraf voor het daadwerkelijk versturen van een eerste outreach-bericht en voor contract/overeenkomst afsluiten — vastgesteld 19 augustus 2026, zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]
-- **Harde grenzen:** Geen voorwaarden toezeggen en geen contract afsluiten zonder overleg
-- **Toon:** Eerlijk, zonder loze beloftes
+- **Rol:** Zoekt en beoordeelt events en overige samenwerkingsmogelijkheden buiten de vaste B2B-klantrelatie en buiten influencers om.
+- **Volledige identiteit:** [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent/identiteit|Partnerships & Events Agent — identiteit]]
 
 ## Parallelle dispatch (nieuw, 2026-09-16)
 

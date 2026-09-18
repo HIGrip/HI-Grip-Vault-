@@ -34,7 +34,7 @@
 
 | Taak | Niveau |
 |---|---|
-| Secties bouwen in theme #198505464135 ("AI Workspace") | Zelf doen |
+| Secties bouwen in het werkthema (actueel ID: zie [[Technische Procedures]] — 17-9: #200269168967; nooit het theme met rol `live`) | Zelf doen |
 | Wijzigingen live publiceren | Altijd overleg vooraf — zie [[Goedkeuringsworkflow]], lars kopieert zelf naar het live theme |
 | Alt-teksten toevoegen | Zelf doen |
 | Secties/kleuren/spacing aanpassen | Zelf doen |

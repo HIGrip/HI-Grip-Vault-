@@ -29,7 +29,7 @@ Bron: SERP-analyse van concurrent-titels en resultaten; **geen zoekvolume, autoc
   - Rugby (**open gat**, geen NL-merkpagina met exacte match): gripsokken rugby / antislip rugbysokken (Decathlon gebruikt letterlijk deze woordvolgorde)
 - **Kannibalisatie:** alleen `/collections/gripsokken` mikt op de kale term "gripsokken". `/winkel` rankt nu op de hoofdterm en botst met de collectie: kies één hub. Productpagina `hi-grip-gripsokken-1` heeft een collectie-achtige title. Blog = uitleg, sportpagina = kopen + korte FAQ. "Tennis- en padelsokken" toewijzen aan padel.
 - **Onverifieerd / eerst doen:** de sportpagina's verschenen in geen enkele SERP — check indexatie in Search Console vóór verdere copy-aanpassingen. Handmatig autocomplete + PAA controleren.
-- **Doorgevoerd 21-9 (werkthema, nog niet live):** per sportpagina H2 "<Sport>sokken met grip: de Performance Gripsokken 2.0" + FAQ-vraag "Wat is het verschil tussen <sport>sokken en gripsokken?" (tennis, voetbal, padel).
+- **Doorgevoerd 21-9 (werkthema, nog niet live):** alleen een extra FAQ-vraag per sportpagina: "Wat is het verschil tussen <sport>sokken en gripsokken?" (tennis, voetbal, padel). **Lars wil bewust géén wijzigingen aan H1/H2-koppen** — keywords alleen via de FAQ.
 
 ---
 

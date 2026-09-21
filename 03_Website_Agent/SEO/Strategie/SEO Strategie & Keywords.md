@@ -16,6 +16,21 @@
 >
 > De tekst hieronder (kernprincipe, beachhead-blok) is historisch en waar hij "merk-breed / geen sport-silo's" zegt **niet meer leidend**.
 
+### Zoektermen per sport (SERP-onderzoek 2026-09-21, nl-NL, geen zoekvolume)
+
+Bron: SERP-analyse van concurrent-titels en resultaten; **geen zoekvolume, autocomplete of PAA-box gemeten** — vraagtermen zijn afgeleid uit concurrent-content.
+
+- **Hoofdwoord is "gripsokken"** (losse schrijfwijze "grip sokken" wordt als variant behandeld). "Antislip sokken" is een ander universum (medisch/zorg/Decathlon) — hooguit secundair.
+- **Kale termen niet targeten:** "tennissokken", "voetbalsokken", "rugbykousen" leiden naar gewone sokken/teamkleding (ander product). Gebruik altijd de combinatie mét grip: "tennissokken met grip", "voetbalsokken met grip", "padelsokken (met grip)", "antislip rugbysokken".
+- **Per sport:** primair H1/title "gripsokken <sport>"; secundair H2/intro/FAQ de "<sport>sokken met grip"-variant.
+  - Tennis: gripsokken tennis / tennissokken met grip
+  - Voetbal (zwaarste SERP, verzadigd): gripsokken voetbal / voetbalsokken met grip; "beste gripsokken voetbal" is kansloos (affiliate-sites)
+  - Padel (beste kans/verhouding): gripsokken padel / padelsokken
+  - Rugby (**open gat**, geen NL-merkpagina met exacte match): gripsokken rugby / antislip rugbysokken (Decathlon gebruikt letterlijk deze woordvolgorde)
+- **Kannibalisatie:** alleen `/collections/gripsokken` mikt op de kale term "gripsokken". `/winkel` rankt nu op de hoofdterm en botst met de collectie: kies één hub. Productpagina `hi-grip-gripsokken-1` heeft een collectie-achtige title. Blog = uitleg, sportpagina = kopen + korte FAQ. "Tennis- en padelsokken" toewijzen aan padel.
+- **Onverifieerd / eerst doen:** de sportpagina's verschenen in geen enkele SERP — check indexatie in Search Console vóór verdere copy-aanpassingen. Handmatig autocomplete + PAA controleren.
+- **Doorgevoerd 21-9 (werkthema, nog niet live):** per sportpagina H2 "<Sport>sokken met grip: de Performance Gripsokken 2.0" + FAQ-vraag "Wat is het verschil tussen <sport>sokken en gripsokken?" (tennis, voetbal, padel).
+
 ---
 
 ## Beachhead-strategie (vanaf 16-9-2026) — historisch, besloten 21-9 (zie boven)

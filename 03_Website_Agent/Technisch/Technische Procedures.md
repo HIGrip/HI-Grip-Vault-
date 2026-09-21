@@ -22,6 +22,12 @@
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 
+> **Toegevoegd 2026-09-21:** werkthema `201133490503` = "AI website workspace 2.0" (unpublished); live = `201132507463`. De lokale map **`C:\Users\lars\ai-workspace-2.0`** vervangt de verouderde `shopify-ai-workspace-theme*`-mappen.
+>
+> **Echte product-handles:** `performance-gripsokken-2-0-wit` en `performance-gripsokken-2-0-zwart` (dus `/products/performance-gripsokken-2-0-wit|zwart`) — **niet** `performance-grip-socks-2-0-*`.
+>
+> Sportlandingspagina's: zie [[Sportlanding-systeem (21-9-2026)]].
+
 **Publiceren naar live gebeurt nooit door de agent**, ook niet na inhoudelijke goedkeuring — lars kopieert zelf over. Zie [[Goedkeuringsworkflow]]. Dit geldt onverkort, ook al is bewerken van het AI Workspace-thema nu "zelf doen"-niveau.
 
 ---
@@ -41,9 +47,9 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
 
 ## Werkwijze per wijziging
 
-1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\shopify-ai-workspace-theme`). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `199980286279` — verifieer met `theme list`):
+1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\ai-workspace-2.0`; de oude `shopify-ai-workspace-theme*`-mappen zijn verouderd). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `201133490503` — verifieer met `theme list`):
    ```
-   shopify theme pull --store hi-grip.myshopify.com --theme 199980286279
+   shopify theme pull --store hi-grip.myshopify.com --theme 201133490503
    ```
 2. **Bewerk** de relevante bestanden lokaal (Liquid/JSON) — inhoud altijd baseren op wat er echt in de theme-bestanden staat (bv. `templates/index.json` voor sectie-content, `config/settings_data.json` voor instellingen als logo), niet op aannames of een verouderde site-audit.
 3. **Lint** vóór het pushen:
@@ -53,12 +59,12 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
    Let op: bij lange output via een niet-interactieve shell kan de voortgangsbalk de tekst verminken — bij twijfel de output naar een bestand redirecten (`> check.txt 2>&1`) en daar doorheen zoeken i.p.v. vertrouwen op wat er direct in de terminal verschijnt.
 4. **Push** — altijd expliciet het theme-ID meegeven, en waar mogelijk scopen tot alleen de gewijzigde bestanden:
    ```
-   shopify theme push --store hi-grip.myshopify.com --theme 199980286279 --only <bestand> --only <bestand>
+   shopify theme push --store hi-grip.myshopify.com --theme 201133490503 --only <bestand> --only <bestand>
    ```
    **Nooit** `--live` of een publish-commando gebruiken.
 5. **Verifiëren** op de preview-URL (niet zomaar aannemen dat het werkt):
    ```
-   https://hi-grip.myshopify.com?preview_theme_id=199980286279
+   https://hi-grip.myshopify.com?preview_theme_id=201133490503
    ```
    Check op "Liquid error" in de pagina-inhoud en dat de bedoelde wijziging (bv. een nieuw `application/ld+json`-blok) er echt staat. Live fetches op `www.higrip.nl` zelf geven vaak 429 (rate-limited door een bot-check) — de `.myshopify.com`-preview-URL werkt hiervoor betrouwbaarder.
 6. **Presenteren aan lars** (preview-link + wat er veranderd is) — pas na zijn goedkeuring kopieert hij het zelf naar live. De agent publiceert nooit.

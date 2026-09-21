@@ -44,7 +44,7 @@
 </ul>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a>:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a>:</p>
 <ul>
   <li><strong>Siliconen gripzones</strong> die je voet vasthouden in de schoen, ook bij snelle draaibewegingen.</li>
   <li><strong>Coolmax®</strong> — voert vocht direct af, voor droge voeten tot de laatste game.</li>

@@ -38,7 +38,7 @@
 <p>Een zaal is warm en de intensiteit hoog. Materiaal dat zweet afvoert houdt de grip gelijk van de eerste tot de laatste minuut.</p>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a> geven je:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a> geven je:</p>
 <ul>
   <li><strong>Siliconen gripzones</strong> die je voet vasthouden in je zaalschoen.</li>
   <li><strong>15–20 mmHg compressie</strong> voor een strakke pasvorm die niet dik aanvoelt.</li>

@@ -44,7 +44,7 @@
 </ul>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a>:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a>:</p>
 <ul>
   <li><strong>Naadloos gebreid</strong> — rondom zonder stiksels, dus geen wrijving of verslijting.</li>
   <li><strong>Coolmax®</strong> — voert vocht direct af, voor droge voeten tot het laatste kwartier.</li>

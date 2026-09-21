@@ -39,7 +39,7 @@
 <p>Een basketbalwedstrijd in een warme zaal zorgt voor natte voeten. Een droge voet houdt beter grip.</p>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a>:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a>:</p>
 <ul>
   <li><strong>Siliconen gripzones</strong> houden je voet vast in de schoen bij elke landing en cut.</li>
   <li><strong>Versterkte hiel</strong> met extra dikte precies waar de druk het grootst is.</li>

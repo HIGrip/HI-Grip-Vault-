@@ -40,7 +40,7 @@
 <p>Een crew-lengte beschermt je enkel tegen schuren van de schoenrand bij het draaien, zonder dat het warm wordt.</p>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a>:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a>:</p>
 <ul>
   <li><strong>Siliconen gripzones</strong> die je voet vasthouden in de schoen bij elke zijwaartse stop.</li>
   <li><strong>Ademende structuur</strong> bovenop de voet, voor koele voeten in een warme hal.</li>

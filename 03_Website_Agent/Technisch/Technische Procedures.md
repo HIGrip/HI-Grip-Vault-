@@ -6,7 +6,9 @@
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-09-17 (Denzel, werkthema bevestigd door lars):** werkthema is nu `200269168967`, live is `200269398343` — beide geverifieerd met `shopify theme list --json` (live = rol `main`). Live werd rond 7-9 gewisseld; sindsdien ontbreken WebSite/Breadcrumb/FAQPage-schema op live (zie [[Update Log]]). **Agents beschermen live voortaan op rol (`live`/`main`), niet op nummer** — zie Design Agent-grenzen in `Website Agent/identiteit.md`.
+> **Bijgewerkt 2026-09-21 (lars):** nieuw werkthema is **`201133490503` "AI website workspace 2.0"** (opvolger van `200269168967`). Live is intussen door lars gewisseld naar `201132507463` ("Bijgewerkte kopie van HÏ Grip WEBSITE", geverifieerd met `shopify theme list --json`); het schema-herstel van 21-09 (WebSite + FAQPage + Breadcrumb) is daar meegekomen. `200269398343` is nu unpublished en daarmee ook geen werkthema. Zie de tabel hieronder.
+>
+> *Vorige stand — bijgewerkt 2026-09-17 (Denzel, werkthema bevestigd door lars):** werkthema is nu `200269168967`, live is `200269398343` — beide geverifieerd met `shopify theme list --json` (live = rol `main`). Live werd rond 7-9 gewisseld; sindsdien ontbreken WebSite/Breadcrumb/FAQPage-schema op live (zie [[Update Log]]). **Agents beschermen live voortaan op rol (`live`/`main`), niet op nummer** — zie Design Agent-grenzen in `Website Agent/identiteit.md`.
 >
 > *Vorige stand 2026-08-30:* werkthema `199980286279` — opvolger van `199814873415`, dat weer de opvolger was van `198505464135`. Zowel het werkthema- als het live-ID krijgen periodiek een nieuw nummer, dus: **draai vóór elke theme-actie `shopify theme list --store hi-grip.myshopify.com`** en lees het actuele `[live]`-ID en het werkthema-ID af; neem nooit "een" unpublished theme aan.
 >
@@ -14,9 +16,9 @@
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Werkthema ("Bijgewerkte kopie van Bijgewerkte kopie...") | `200269168967` (17-9) | unpublished | **Ja — het enige toegestane thema** |
-| Live op www.higrip.nl ("HÏ Grip WEBSITE") | `200269398343` (17-9) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Alle overige — oude werkthema's (`198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`198094127431`, `199039975751`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
+| Werkthema ("AI website workspace 2.0") | `201133490503` (21-9) | unpublished | **Ja — het enige toegestane thema** |
+| Live op www.higrip.nl ("Bijgewerkte kopie van HÏ Grip WEBSITE") | `201132507463` (21-9) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Alle overige — oude werkthema's (`200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 

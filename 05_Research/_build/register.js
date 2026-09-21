@@ -1,16 +1,13 @@
 window.HI_RESEARCH = {
  "backlog": [
   {
-   "afgevinkt": false,
-   "body_md": "**Waarom:** `/products/hi-grip-gripsokken-1` is de canonical productpagina, maar de twee oude URL's geven nog steeds HTTP 200 in plaats van een 301. Ze trokken samen 13 sessies per 90 dagen — meer dan de hoofdpagina zelf (8).\n**Waar:** `/products/performance-grip-socks-2-0-zwart` en `-wit`\n**Wat:** 301-redirects instellen naar `/products/hi-grip-gripsokken-1` via Shopify admin → URL-omleidingen.\n**Gevonden op:** 15 september 2026 (regressiecheck)",
-   "id": "backlog#6d82a4f8",
-   "kop": "[regressie] Oude productpagina's kannibaliseren nog het hoofdkeyword",
+   "afgevinkt": true,
+   "body_md": "**Wat er is gebeurd:** De productpagina-handle is sindsdien veranderd: het hoofdproduct heet nu `/products/performance-gripsokken` (was `/products/hi-grip-gripsokken-1`), en de twee oude URL's zijn mee omgenoemd naar `/products/performance-gripsokken-2-0-zwart` en `-wit`. Alle drie de eerder gemelde oude adressen (`hi-grip-gripsokken-1`, `performance-grip-socks-2-0-zwart`, `-wit`) geven nu automatisch een redirect naar hun nieuwe tegenhanger — geverifieerd met een `fetch`-test op 21 september 2026, canonical-tag op de live pagina klopt.\n**Let op:** De canonical handle in je eigen documentatie (projectgeheugen, theme-editor preview-links, mobiel-testinstructies) verwijst nog overal naar het oude `hi-grip-gripsokken-1`. Die links werken dankzij de redirect nog wel, maar zijn niet meer accuraat.\n**Gevonden op:** 15 september 2026 (regressiecheck), opgelost/herzien 21 september 2026 (SEO-technisch)",
+   "id": "backlog#3621bd14",
+   "kop": "~~[regressie] Oude productpagina's kannibaliseren nog het hoofdkeyword~~ — opgelost, canonical URL wel gewijzigd (bijgewerkt 21 sep 2026)",
    "prioriteit": "P1",
    "velden": {
-    "Gevonden op": "15 september 2026 (regressiecheck)",
-    "Waar": "`/products/performance-grip-socks-2-0-zwart` en `-wit`",
-    "Waarom": "`/products/hi-grip-gripsokken-1` is de canonical productpagina, maar de twee oude URL's geven nog steeds HTTP 200 in plaats van een 301. Ze trokken samen 13 sessies per 90 dagen — meer dan de hoofdpagina zelf (8).",
-    "Wat": "301-redirects instellen naar `/products/hi-grip-gripsokken-1` via Shopify admin → URL-omleidingen."
+    "Gevonden op": "15 september 2026 (regressiecheck), opgelost/herzien 21 september 2026 (SEO-technisch)"
    }
   },
   {
@@ -113,7 +110,7 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Inspanning:** 2 uur\n\n---",
+   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).\n**Inspanning:** 2 uur\n\n---",
    "id": "backlog#6050edaa",
    "kop": "4. Controleer je variant-ID's tegen de Merchant Center-eis van maart 2026 (herzien 16 sep 2026 — opgewaardeerd naar P1)",
    "prioriteit": "P1",
@@ -182,6 +179,18 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
+   "body_md": "**Waarom:** 2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.\n**Waar:** Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).\n**Wat:** Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps.\n**Effect:** Core Web Vitals wegen mee in mobiele ranking; een slechte INP-score is bovendien vaak voelbaar in de conversie zelf.\n**Inspanning:** 1 uur meten, vervolgacties afhankelijk van bevindingen.",
+   "id": "backlog#2f69e0df",
+   "kop": "14. Controleer INP op productpagina en homepage — eigen JS is de waarschijnlijke boosdoener (nieuw 21 sep 2026)",
+   "prioriteit": "P2",
+   "velden": {
+    "Waar": "Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).",
+    "Waarom": "2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.",
+    "Wat": "Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps."
+   }
+  },
+  {
+   "afgevinkt": false,
    "body_md": "**Waarom:** TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt via een losse app (bijv. SlashCart vanaf $9,99/maand, Optima gratis) rechtstreeks aan Shopify voor productsync, voorraad en orderafhandeling. De hele klantreis — ontdekken, valideren via creators, afrekenen — vindt dan binnen TikTok zelf plaats, met een \"Fast Shipping\"-badge die conversie verder verhoogt. Platformkosten: 2-8% commissie + $0,30 per transactie, plus optioneel 10-20% creator-affiliate-commissie.\n**Waar:** TikTok Seller Center (seller-nl.tiktok.com) + Shopify App Store\n**Wat:** Aanmeldprocedure doorlopen (KVK-gegevens, vier stappen, beoordeling 1-2 werkdagen) en beslissen of dit een los kanaal wordt naast higrip.nl of gecombineerd met het creator-plan (punt 9).\n**Effect:** Extra verkoopkanaal in de grootste groeimarkt (padel) met lagere aankoopdrempel dan doorklikken naar een externe site — vereist wel bewaking van last-click-attributie, die dit verkeer mist.\n**Inspanning:** Verkenning en aanmelding een half dagdeel; app-koppeling en catalogus-setup 1 dag.\n\n---",
    "id": "backlog#aa7afb12",
    "kop": "13. Onderzoek TikTok Shop Nederland — directe verkoop via Shopify-koppeling (nieuw 18 sep 2026)",
@@ -213,9 +222,31 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-18T03:40:08+00:00",
+ "gebouwd": "2026-09-21T06:39:45+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — SEO Technisch (21 september 2026)\n\n## In het kort\n\nBelangrijkste vondst: de productpagina-URL is stilzwijgend veranderd sinds de laatste check, en dat lost toevallig het oudste openstaande regressiepunt op — maar het betekent ook dat verwijzingen in eigen documentatie nu verouderd zijn. Daarnaast twee kleinere technische signalen over Merchant Center-beeldeisen en Core Web Vitals.\n\n## Bevindingen\n\n### 1. Canonical productpagina-URL gewijzigd, oude-URL-kannibalisatie opgelost\n\nBij de regressiecheck van 15 september 2026 ([2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)) stond genoteerd dat `/products/hi-grip-gripsokken-1` de canonical productpagina was, en dat `/products/performance-grip-socks-2-0-zwart` en `-wit` nog HTTP 200 gaven in plaats van een 301 — interne kannibalisatie van het hoofdkeyword. Diezelfde bevinding stond ook in de audit van 15 september ([2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)).\n\nBij controle vandaag (21 september) bleek de producthandle zelf te zijn veranderd: het hoofdproduct heet nu `/products/performance-gripsokken` (was `hi-grip-gripsokken-1`), en de twee varianten zijn meeveranderd naar `/products/performance-gripsokken-2-0-zwart` en `-wit`. Geverifieerd met een `fetch`-test (redirect: follow) op alle drie de oude adressen: ze redirecten automatisch naar hun nieuwe tegenhanger, en de canonical-tag op de live pagina verwijst correct naar zichzelf. Dit is standaardgedrag van Shopify bij het hernoemen van een producthandle.\n\n**Aandachtspunt:** eigen documentatie (projectgeheugen, theme-editor previewlinks, testinstructies) verwijst nog overal naar de oude handle `hi-grip-gripsokken-1`. Die links werken dankzij de redirect nog, maar zijn niet meer accuraat — bijgewerkt in `project_higrip.md` onder SEO-inzichten. Een handlewijziging kan Search Console tijdelijk in de war brengen; de dekkingsrapportage is de moeite van het controleren waard over een paar dagen.\n\n### 2. Merchant Center: nieuw beeldminimum van 500×500px — higrip.nl al compliant\n\nGoogle voert een universele minimumeis van 500×500px in voor productafbeeldingen in Merchant Center-feeds (waarschuwingen sinds april 2026, hard afgedwongen vanaf 31 januari 2027), los van en strenger dan de eerdere 100×100px-eis. Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024px — ruim boven de nieuwe eis. Geen actie nodig nu; wel een blijvend checkpunt bij nieuwe productfoto's (bijv. skisokken).\n\n### 3. INP is in 2026 het meest voorkomende Shopify-knelpunt bij Core Web Vitals\n\nActuele benchmarks laten zien dat INP (Interaction to Next Paint) het metric is waar de meeste Shopify-winkels op vastlopen — meestal veroorzaakt door zware JavaScript in apps of custom secties, niet het thema zelf. Landelijk haalt 48% van mobiele sites nu alle drie de Core Web Vitals (was 44% in 2024). higrip.nl heeft een JS-zware WK-promosectie gebouwd (`hi-wk-promo.js`, count-up-animaties); de sectie zelf staat niet meer op de homepage, maar niet gecontroleerd of het script nog wordt geladen. Logisch moment voor een nulmeting vóór de skisokken-lancering.\n\n## Acties\n\n_Acties uit dit rapport staan al in de growth-radar-backlog (`ACTIEBACKLOG.md`, punten 4 en 14) en komen via de backlog-parser binnen — hier niet gedupliceerd. Het opgeloste regressiepunt is in de backlog afgevinkt._\n\n## Bronnen\n\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-21-seo-technisch.md`\n- [Merchant Center announcements change log](https://support.google.com/merchants/announcements/6192467?hl=en)\n- [Merchant Center product data specification update 2026](https://support.google.com/merchants/answer/16989427?hl=en)\n- [Core Web Vitals Benchmarks for Shopify Stores (2026 Data)](https://dev.to/apogeewatcher/core-web-vitals-benchmarks-for-shopify-stores-2026-data-1mel)\n- [Core Web Vitals for Shopify Stores: 2026 Benchmarks and Optimization Playbook](https://www.1digitalagency.com/blog/core-web-vitals-for-shopify-stores-2026-benchmarks-and-optimization-playbook-33932/)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-21-seo-technisch.md",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-21",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-15-regressiecheck",
+    "2026-09-15-seo-audit"
+   ],
+   "id": "2026-09-21-growth-radar-seo-technisch",
+   "prioriteit": "P2",
+   "routine": "growth-radar",
+   "samenvatting": "Productpagina-handle bleek stilzwijgend veranderd naar performance-gripsokken; de oude URL-kannibalisatie uit de regressiecheck van 15 september is daarmee feitelijk opgelost. Daarnaast: Merchant Center's nieuwe beeldminimum (500×500px) raakt higrip.nl niet, en INP is in 2026 het metric waar Shopify-winkels het vaakst op struikelen.",
+   "status": "nieuw",
+   "titel": "Growth Radar — SEO Technisch (21 september 2026)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-growth-radar-seo-technisch.md",
+   "vervangt": []
+  },
   {
    "acties": [],
    "body_md": "# Growth Radar — Social naar website (TikTok Shop NL, Meta-attributie)\n\n## In het kort\n\nTwee bevindingen op de vrijdagfocus \"social naar website\". TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt rechtstreeks aan Shopify — dat opent een route waarbij de hele klantreis (ontdekken, valideren via creators, afrekenen) binnen TikTok zelf plaatsvindt, in plaats van door te klikken naar higrip.nl. Daarnaast verwijderde Meta op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API, wat de noodzaak van server-side tracking (CAPI) vergroot zodra HÏ Grip met Meta-advertenties start.\n\n## Bevindingen\n\n**18 september 2026 · vrijdag**\n\n### TikTok Shop is live in Nederland en koppelt direct met Shopify\n\nTikTok Shop lanceerde op 15 juni 2026 officieel in Nederland, samen met België, Polen en Oostenrijk. Verkopers konden zich vanaf 1 juni aanmelden via seller-nl.tiktok.com; de registratie loopt in vier stappen (bedrijfsgegevens/KVK, hoofdvertegenwoordiger, winkelinformatie inclusief webshop-koppeling, beoordelingsaanvraag) met beoordeling binnen 1-2 werkdagen.\n\nHet kernverschil met de oude situatie: waar social eerder alleen doorverwees naar een externe webshop, vindt de hele klantreis nu binnen TikTok zelf plaats — ontdekken, zoeken, valideren via creators en reacties, en afrekenen zonder de app te verlaten. Producten met snelle verzending krijgen een \"Fast Shipping\"-badge die conversie verder verhoogt. Nederlandse marketingbronnen (Twinkle) noemen dit expliciet een verschuiving \"van funnel naar loop\", met de waarschuwing dat last-click-attributie een groot deel van dat verhaal mist.\n\nDe Shopify-koppeling verloopt via losse apps (SlashCart vanaf $9,99/maand, Optima gratis te installeren met betaalde upgrades) voor productsync, voorraad en orderafhandeling. Platformkosten: 2-8% commissie + $0,30 per transactie (meeste categorieën 5-6%), plus optioneel 10-20% creator-affiliate-commissie — vergelijkbaar met het commissiemodel dat al gepland stond voor Instagram/TikTok-creators in de growth-radar-backlog.\n\n> **Voor higrip.nl:** raakt rechtstreeks backlogpunt 9 (\"Padel-creators op prestatiebasis\"), dat ervan uitging dat creator-content doorklikt naar higrip.nl. Padel is de grootste groeimarkt van HÏ Grip en precies het soort product (laag prijspunt, visueel te demonstreren, herhaalaankoop) dat goed past bij TikTok Shop. Geen vervanging van het eigen-site-werk (bewijspagina, SEO) — wel een aanvullend kanaal dat nu pas geografisch beschikbaar is.\n\n### Meta heeft de 7- en 28-dagen view-attributievensters verwijderd\n\nOp 12 januari 2026 verwijderde Meta permanent de 7-dagen- en 28-dagen-view-attributievensters uit de Ads Insights API. Gerapporteerde conversies daalden daardoor 15 tot 40% bij veel adverteerders. Gecombineerd met bredere iOS-privacybeperkingen — de meeste iOS-gebruikers hebben ATT uitgeschakeld, waardoor pixel-tracking op mobiele Safari nagenoeg dood is — lopen de gaten in 2026 op tot 50-70% van de conversies. Meta's aanbevolen instelling voor e-commerce is nu 7-dagen klik, 1-dag view. Op 15 april 2026 bracht Meta een \"one-click\" CAPI-installatie uit die server-side tracking laagdrempeliger maakt.\n\n> **Voor higrip.nl:** geen actieve Meta-advertenties op dit moment, dus geen blokkerende actie. Verandert wel de volgorde van het bestaande CAPI-punt (10): server-side tracking moet vanaf dag 1 van een toekomstige Meta-campagne staan, niet als latere toevoeging.\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`, punt 13 nieuw, punten 9 en 10 bijgewerkt) en komen via het dashboard onder NU AANDACHT binnen — hier niet gedupliceerd._\n\n## Bronnen\n\n- [TikTok Shop in Nederland maakt de verschuiving zichtbaar: van funnel naar loop — Twinkle](https://twinklemagazine.nl/2026/06/tiktok-shop-in-nederland-maakt-de-verschuiving-zichtbaar-van-funnel-naar-lo/index.xml)\n- [TikTok introduceert TikTok Shop in Nederland — TikTok Newsroom](https://newsroom.tiktok.com/tiktok-introduceert-tiktok-shop-in-nederland?lang=nl-NL)\n- [Een TikTok Shop opzetten via Seller Center — TikTok for Business](https://ads.tiktok.com/resources/help/article/set-up-tiktok-shop-using-tiktok-seller-center?lang=nl-NL)\n- [TikTok Shop Fees Explained: Complete 2026 Cost Breakdown — Slayva](https://slayva.com/tiktok-shop-fees/)\n- [Shopify for TikTok Shop in 2026: Setup & Selling Guide — Mastroke](https://blog.mastroke.com/social-media-marketing/shopify-for-tiktok-shop-in-2026-how-to-connect-them-and-what-sells/)\n- [Meta Attribution Window Changes 2026: Fix Your Tracking — Conversios](https://www.conversios.io/blog/meta-attribution-window-changes-2026-fix-your-tracking/)\n- [Meta Ads Attribution in 2026: What Changed, Why It Matters, and How to Fix It — DOJO AI](https://www.dojoai.com/blog/meta-ads-attribution-2026-changes-fixes)\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-18-social.md`\n\n## Aantekeningen",
@@ -384,7 +415,8 @@ window.HI_RESEARCH = {
     "2026-09-16-growth-radar-ai-search",
     "2026-09-04-werkdossier-stand-van-zaken",
     "2026-09-15-growth-radar-seo-content",
-    "2026-09-16-seo-onderzoek-cloud-routine-website"
+    "2026-09-16-seo-onderzoek-cloud-routine-website",
+    "2026-09-21-growth-radar-seo-technisch"
    ],
    "id": "2026-09-15-seo-audit",
    "prioriteit": "P1",
@@ -406,7 +438,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-15-seo-audit",
-    "2026-09-14-weekoverzicht"
+    "2026-09-14-weekoverzicht",
+    "2026-09-21-growth-radar-seo-technisch"
    ],
    "id": "2026-09-15-regressiecheck",
    "prioriteit": "P1",
@@ -1135,24 +1168,19 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 22,
-   "P2": 42,
+   "P1": 21,
+   "P2": 43,
    "P3": 30
   },
   "per_categorie": {
    "CRO": 3,
    "Compliance": 1,
    "Merk": 3,
-   "SEO": 6,
+   "SEO": 7,
    "Social": 1,
    "Techniek": 1
   },
   "per_week": [
-   {
-    "aantal": 0,
-    "start": "2026-06-29",
-    "week": "2026-W27"
-   },
    {
     "aantal": 0,
     "start": "2026-07-06",
@@ -1207,9 +1235,14 @@ window.HI_RESEARCH = {
     "aantal": 9,
     "start": "2026-09-14",
     "week": "2026-W38"
+   },
+   {
+    "aantal": 1,
+    "start": "2026-09-21",
+    "week": "2026-W39"
    }
   ],
-  "totaal_notities": 15
+  "totaal_notities": 16
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

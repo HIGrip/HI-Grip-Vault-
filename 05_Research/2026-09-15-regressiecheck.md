@@ -8,7 +8,7 @@ categorie: SEO
 status: bekeken
 prioriteit: P1
 samenvatting: "Eerste wekelijkse controle: 5 afwijkingen, grotendeels terug te voeren op het niet-gepushte thema (schema's ontbreken op alle 8 URL's), oude product-URL's zonder 301, GA4 zonder key event, 2× H1 en een lege meta description op /collections/all. Direct-verkeer sprong van 15 naar 83 sessies."
-gerelateerd: [2026-09-15-seo-audit, 2026-09-14-weekoverzicht, 2026-09-21-growth-radar-seo-technisch]
+gerelateerd: [2026-09-15-seo-audit, 2026-09-14-weekoverzicht, 2026-09-21-growth-radar-seo-technisch, 2026-09-21-regressiecheck]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\regressiecheck-2026-09-15.md"
 deadline: ""

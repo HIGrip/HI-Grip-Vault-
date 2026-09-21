@@ -25,28 +25,38 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** `snippets/hi-seo-schema.liquid` en de herschreven `snippets/product-schema.liquid` staan lokaal klaar in `C:\\Users\\Test\\higrip-theme` maar zijn nooit gepusht (Shopify CLI niet ingelogd). Dit verklaart waarom `WebSite` op alle 8 gecontroleerde URL's ontbreekt, `BreadcrumbList` op 6 van de 8, `ItemList` op beide collectiepagina's, `FAQPage` op de productpagina, en waarom `/pages/gripsokken-voetbal` nog 404 geeft.\n**Waar:** `C:\\Users\\Test\\higrip-theme` → Shopify test-thema 194761425223\n**Wat:** Eerst `shopify auth login` (device-code flow), dan pushen — thema-bestanden en `page.gripsokken-voetbal.json` in **aparte** pushes.\n**Gevonden op:** 15 september 2026 (regressiecheck)",
-   "id": "backlog#93a9390e",
-   "kop": "[regressie] SEO-schema-thema-wijzigingen nog niet gepusht naar productie",
+   "body_md": "**Waarom:** Sinds 15 september is een deel van `hi-seo-schema.liquid` kennelijk live gezet: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina — niet op de productpagina, beide collectiepagina's of de blogpagina's. `ItemList` ontbreekt nog op beide collectiepagina's. `FAQPage` ontbreekt nog op de productpagina (de herschreven `product-schema.liquid` lijkt niet meegenomen). `/pages/gripsokken-voetbal` geeft nog steeds 404.\n**Waar:** `C:\\Users\\Test\\higrip-theme` → Shopify test-thema 194761425223\n**Wat:** Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`.\n**Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)",
+   "id": "backlog#fac26f6c",
+   "kop": "[regressie] SEO-schema-thema-wijzigingen gedeeltelijk gepusht, nog niet compleet (bijgewerkt 21 sep 2026)",
    "prioriteit": "P1",
    "velden": {
-    "Gevonden op": "15 september 2026 (regressiecheck)",
+    "Gevonden op": "15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)",
     "Waar": "`C:\\Users\\Test\\higrip-theme` → Shopify test-thema 194761425223",
-    "Waarom": "`snippets/hi-seo-schema.liquid` en de herschreven `snippets/product-schema.liquid` staan lokaal klaar in `C:\\Users\\Test\\higrip-theme` maar zijn nooit gepusht (Shopify CLI niet ingelogd). Dit verklaart waarom `WebSite` op alle 8 gecontroleerde URL's ontbreekt, `BreadcrumbList` op 6 van de 8, `ItemList` op beide collectiepagina's, `FAQPage` op de productpagina, en waarom `/pages/gripsokken-voetbal` nog 404 geeft.",
-    "Wat": "Eerst `shopify auth login` (device-code flow), dan pushen — thema-bestanden en `page.gripsokken-voetbal.json` in **aparte** pushes."
+    "Waarom": "Sinds 15 september is een deel van `hi-seo-schema.liquid` kennelijk live gezet: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina — niet op de productpagina, beide collectiepagina's of de blogpagina's. `ItemList` ontbreekt nog op beide collectiepagina's. `FAQPage` ontbreekt nog op de productpagina (de herschreven `product-schema.liquid` lijkt niet meegenomen). `/pages/gripsokken-voetbal` geeft nog steeds 404.",
+    "Wat": "Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`."
+   }
+  },
+  {
+   "afgevinkt": true,
+   "body_md": "**Wat er is gebeurd:** De homepage heeft nu precies één `<h1>` (de zichtbare hero-titel). De eerder gemelde verborgen `visually-hidden` H1 is niet meer aanwezig of niet meer als `<h1>` gerenderd.\n**Gevonden op:** 15 september 2026 (regressiecheck), opgelost/bevestigd 21 september 2026 (regressiecheck)",
+   "id": "backlog#6ad8d65d",
+   "kop": "~~[regressie] Homepage heeft 2× H1~~ — opgelost (bevestigd 21 sep 2026)",
+   "prioriteit": "P1",
+   "velden": {
+    "Gevonden op": "15 september 2026 (regressiecheck), opgelost/bevestigd 21 september 2026 (regressiecheck)"
    }
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** Eén verborgen `visually-hidden` H1 (\"HÏ Grip\") naast de zichtbare hero-H1 — al genoteerd in de audit van 15 september maar nog niet opgelost.\n**Waar:** homepage hero-sectie (visually-hidden titel-element)\n**Wat:** De verborgen H1 wijzigen naar een `<span>` of `<p>`, zodat de hero-titel de enige H1 is.\n**Gevonden op:** 15 september 2026 (regressiecheck)",
-   "id": "backlog#ee344d70",
-   "kop": "[regressie] Homepage heeft nog steeds 2× H1",
+   "body_md": "**Waarom:** `sitemap.xml` bevat sinds deze week vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) die er bij de vorige check niet waren — een Engelse marktuitbreiding die niet in het projectgeheugen staat. `hreflang` (x-default/nl/en) staat correct op zowel NL- als EN-homepage en de canonical klopt, maar de EN-title is enkel `HÏ Grip` — exact hetzelfde probleem dat de NL-homepage vóór 15 september had.\n**Waar:** `https://www.higrip.nl/en/`\n**Wat:** Engelse title en meta description toevoegen, analoog aan de bestaande NL-teksten.\n**Gevonden op:** 21 september 2026 (regressiecheck)",
+   "id": "backlog#bafff35d",
+   "kop": "[regressie] Nieuwe `/en/`-sectie heeft een lege, keyword-loze title-tag (nieuw 21 sep 2026)",
    "prioriteit": "P1",
    "velden": {
-    "Gevonden op": "15 september 2026 (regressiecheck)",
-    "Waar": "homepage hero-sectie (visually-hidden titel-element)",
-    "Waarom": "Eén verborgen `visually-hidden` H1 (\"HÏ Grip\") naast de zichtbare hero-H1 — al genoteerd in de audit van 15 september maar nog niet opgelost.",
-    "Wat": "De verborgen H1 wijzigen naar een `<span>` of `<p>`, zodat de hero-titel de enige H1 is."
+    "Gevonden op": "21 september 2026 (regressiecheck)",
+    "Waar": "`https://www.higrip.nl/en/`",
+    "Waarom": "`sitemap.xml` bevat sinds deze week vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) die er bij de vorige check niet waren — een Engelse marktuitbreiding die niet in het projectgeheugen staat. `hreflang` (x-default/nl/en) staat correct op zowel NL- als EN-homepage en de canonical klopt, maar de EN-title is enkel `HÏ Grip` — exact hetzelfde probleem dat de NL-homepage vóór 15 september had.",
+    "Wat": "Engelse title en meta description toevoegen, analoog aan de bestaande NL-teksten."
    }
   },
   {
@@ -222,9 +232,32 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-21T06:39:45+00:00",
+ "gebouwd": "2026-09-21T11:25:23+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# SEO-regressiecheck — 21 september 2026\n\n## In het kort\n\nControle-run, geen onderzoek. De kritieke check (geen `aggregateRating` op enige pagina) blijft schoon. Twee eerder gemelde regressiepunten zijn deze week opgelost; één bestaand punt is bijgewerkt (gedeeltelijke voortgang) en één nieuw punt toegevoegd. GA4 was dit keer niet bereikbaar.\n\n## Bevindingen\n\nReferentiepunt: de audit van 15 september 2026 ([2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)) en de regressiecheck van 15 september ([2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)). De Growth Radar-routine draaide dit keer vóór deze check en had de productpagina-URL-wijziging ([2026-09-21-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-growth-radar-seo-technisch.md)) al in de backlog verwerkt — hier alleen technisch bevestigd, niet dubbel toegevoegd.\n\n### Afwijkingen\n\n1. **GA4 kon deze week niet gecontroleerd worden.** `analytics-mcp` gaf een verbindings-timeout (30s) bij elke poging. Sessies per kanaal, de AI Assistant-trend en de status van `keyEvents` zijn dus niet geverifieerd — geen aanname dat de situatie ongewijzigd is.\n\n2. **SEO-schema staat gedeeltelijk live, nog niet compleet.** Sinds 15 september is `hi-seo-schema.liquid` kennelijk deels gepusht: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina, `ItemList` ontbreekt nog op beide collectiepagina's, `FAQPage` ontbreekt nog op de productpagina, en `/pages/gripsokken-voetbal` geeft nog steeds 404.\n\n3. **Geen `aggregateRating` gevonden** op één van de zeven bereikbare pagina's — kritieke check blijft schoon.\n\n4. **Productpagina-URL-wijziging technisch bevestigd** (al gemeld door Growth Radar): `/products/hi-grip-gripsokken-1` en de twee oude duplicaten redirecten (301) naar de nieuwe handle `/products/performance-gripsokken`. Zelfde patroon bij `/pages/gripsokken-padel` → `/pages/gripsokken-voor-padel`.\n\n5. **Nieuwe `/en/`-sitemapsectie ontdekt, met een zwakke title-tag.** Vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) staan sinds deze week in `sitemap.xml` — een Engelse marktuitbreiding die nergens in het projectgeheugen staat. `hreflang` en canonical kloppen, maar de EN-title is enkel `HÏ Grip` — hetzelfde probleem dat de NL-homepage vóór 15 september had.\n\n6. **`/collections/all` heeft nog steeds geen meta description.** Ongewijzigd sinds 15 september.\n\n### Ongewijzigd / opgelost\n\n- Homepage heeft nu precies 1 `<h1>` (was 2×) — opgelost.\n- Alle 7 bereikbare URL's laadden in 0,29–0,70s, elk met precies één niet-lege `<title>` en een kloppende canonical.\n- Homepage: 9 afbeeldingen met `alt=\"\"` (vorige week 12) — onder de meldgrens.\n- `shopify theme check`: 7 fouten, alle binnen de drie bekende, genegeerde typen. Geen nieuwe foutsoort.\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en komen via het dashboard binnen — hier niet gedupliceerd._\n\n## Bronnen\n\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\regressiecheck-2026-09-21.md`\n- Routine: `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-seo-regressiecheck\\SKILL.md`\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\regressiecheck-2026-09-21.md",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-21",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-15-regressiecheck",
+    "2026-09-15-seo-audit",
+    "2026-09-21-growth-radar-seo-technisch"
+   ],
+   "id": "2026-09-21-regressiecheck",
+   "prioriteit": "P1",
+   "routine": "seo-regressiecheck",
+   "samenvatting": "Twee backlogpunten opgelost sinds vorige week (oude product-URL's redirecten nu, homepage heeft nog maar 1 H1), maar het SEO-schema blijkt slechts gedeeltelijk gepusht (WebSite/ItemList/FAQPage missen nog op specifieke pagina's) en een nieuwe /en/-sectie heeft een keyword-loze title. GA4 kon deze week niet gecontroleerd worden door een tooling-storing.",
+   "status": "nieuw",
+   "titel": "SEO-regressiecheck — 21 september 2026",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-regressiecheck.md",
+   "vervangt": []
+  },
   {
    "acties": [],
    "body_md": "# Growth Radar — SEO Technisch (21 september 2026)\n\n## In het kort\n\nBelangrijkste vondst: de productpagina-URL is stilzwijgend veranderd sinds de laatste check, en dat lost toevallig het oudste openstaande regressiepunt op — maar het betekent ook dat verwijzingen in eigen documentatie nu verouderd zijn. Daarnaast twee kleinere technische signalen over Merchant Center-beeldeisen en Core Web Vitals.\n\n## Bevindingen\n\n### 1. Canonical productpagina-URL gewijzigd, oude-URL-kannibalisatie opgelost\n\nBij de regressiecheck van 15 september 2026 ([2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)) stond genoteerd dat `/products/hi-grip-gripsokken-1` de canonical productpagina was, en dat `/products/performance-grip-socks-2-0-zwart` en `-wit` nog HTTP 200 gaven in plaats van een 301 — interne kannibalisatie van het hoofdkeyword. Diezelfde bevinding stond ook in de audit van 15 september ([2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)).\n\nBij controle vandaag (21 september) bleek de producthandle zelf te zijn veranderd: het hoofdproduct heet nu `/products/performance-gripsokken` (was `hi-grip-gripsokken-1`), en de twee varianten zijn meeveranderd naar `/products/performance-gripsokken-2-0-zwart` en `-wit`. Geverifieerd met een `fetch`-test (redirect: follow) op alle drie de oude adressen: ze redirecten automatisch naar hun nieuwe tegenhanger, en de canonical-tag op de live pagina verwijst correct naar zichzelf. Dit is standaardgedrag van Shopify bij het hernoemen van een producthandle.\n\n**Aandachtspunt:** eigen documentatie (projectgeheugen, theme-editor previewlinks, testinstructies) verwijst nog overal naar de oude handle `hi-grip-gripsokken-1`. Die links werken dankzij de redirect nog, maar zijn niet meer accuraat — bijgewerkt in `project_higrip.md` onder SEO-inzichten. Een handlewijziging kan Search Console tijdelijk in de war brengen; de dekkingsrapportage is de moeite van het controleren waard over een paar dagen.\n\n### 2. Merchant Center: nieuw beeldminimum van 500×500px — higrip.nl al compliant\n\nGoogle voert een universele minimumeis van 500×500px in voor productafbeeldingen in Merchant Center-feeds (waarschuwingen sinds april 2026, hard afgedwongen vanaf 31 januari 2027), los van en strenger dan de eerdere 100×100px-eis. Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024px — ruim boven de nieuwe eis. Geen actie nodig nu; wel een blijvend checkpunt bij nieuwe productfoto's (bijv. skisokken).\n\n### 3. INP is in 2026 het meest voorkomende Shopify-knelpunt bij Core Web Vitals\n\nActuele benchmarks laten zien dat INP (Interaction to Next Paint) het metric is waar de meeste Shopify-winkels op vastlopen — meestal veroorzaakt door zware JavaScript in apps of custom secties, niet het thema zelf. Landelijk haalt 48% van mobiele sites nu alle drie de Core Web Vitals (was 44% in 2024). higrip.nl heeft een JS-zware WK-promosectie gebouwd (`hi-wk-promo.js`, count-up-animaties); de sectie zelf staat niet meer op de homepage, maar niet gecontroleerd of het script nog wordt geladen. Logisch moment voor een nulmeting vóór de skisokken-lancering.\n\n## Acties\n\n_Acties uit dit rapport staan al in de growth-radar-backlog (`ACTIEBACKLOG.md`, punten 4 en 14) en komen via de backlog-parser binnen — hier niet gedupliceerd. Het opgeloste regressiepunt is in de backlog afgevinkt._\n\n## Bronnen\n\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-21-seo-technisch.md`\n- [Merchant Center announcements change log](https://support.google.com/merchants/announcements/6192467?hl=en)\n- [Merchant Center product data specification update 2026](https://support.google.com/merchants/answer/16989427?hl=en)\n- [Core Web Vitals Benchmarks for Shopify Stores (2026 Data)](https://dev.to/apogeewatcher/core-web-vitals-benchmarks-for-shopify-stores-2026-data-1mel)\n- [Core Web Vitals for Shopify Stores: 2026 Benchmarks and Optimization Playbook](https://www.1digitalagency.com/blog/core-web-vitals-for-shopify-stores-2026-benchmarks-and-optimization-playbook-33932/)\n\n## Aantekeningen",
@@ -236,7 +269,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-15-regressiecheck",
-    "2026-09-15-seo-audit"
+    "2026-09-15-seo-audit",
+    "2026-09-21-regressiecheck"
    ],
    "id": "2026-09-21-growth-radar-seo-technisch",
    "prioriteit": "P2",
@@ -439,7 +473,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-15-seo-audit",
     "2026-09-14-weekoverzicht",
-    "2026-09-21-growth-radar-seo-technisch"
+    "2026-09-21-growth-radar-seo-technisch",
+    "2026-09-21-regressiecheck"
    ],
    "id": "2026-09-15-regressiecheck",
    "prioriteit": "P1",
@@ -1176,7 +1211,7 @@ window.HI_RESEARCH = {
    "CRO": 3,
    "Compliance": 1,
    "Merk": 3,
-   "SEO": 7,
+   "SEO": 8,
    "Social": 1,
    "Techniek": 1
   },
@@ -1237,12 +1272,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 1,
+    "aantal": 2,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 16
+  "totaal_notities": 17
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

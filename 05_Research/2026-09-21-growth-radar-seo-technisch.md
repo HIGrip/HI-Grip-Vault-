@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Productpagina-handle bleek stilzwijgend veranderd naar performance-gripsokken; de oude URL-kannibalisatie uit de regressiecheck van 15 september is daarmee feitelijk opgelost. Daarnaast: Merchant Center's nieuwe beeldminimum (500×500px) raakt higrip.nl niet, en INP is in 2026 het metric waar Shopify-winkels het vaakst op struikelen."
-gerelateerd: [2026-09-15-regressiecheck, 2026-09-15-seo-audit]
+gerelateerd: [2026-09-15-regressiecheck, 2026-09-15-seo-audit, 2026-09-21-regressiecheck]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-21-seo-technisch.md"
 deadline: ""

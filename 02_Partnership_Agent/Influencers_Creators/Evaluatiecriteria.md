@@ -12,17 +12,14 @@
 > overige sporten zijn gedeprioriteerd (niet uitgesloten — bestaande partners/leads blijven geldig,
 > maar geen actieve nieuwe zoekacties meer op deze niches). Zie [[Doelgroep & Persona's]].
 
-| Prioriteit | Sport / Niche                 |
-| ---------- | ----------------------------- |
-| ⭐ Hoog     | Voetbal (street, panna, zaal) |
-| ⭐ Hoog     | Rugby                         |
-| ⭐ Hoog     | Tennis                        |
-| Laag       | Basketball                    |
-| Laag       | Padel                         |
-| Laag       | Urban sports / streetball     |
-| Laag       | Gym / fitness lifestyle       |
-| Laag       | Hardlopen / running           |
-| Laag       | Pilates / yoga                |
+| Prioriteit | Sport / Niche |     |
+| ---------- | ------------- | --- |
+| ⭐ Hoog     | Voetbal       |     |
+| ⭐ Hoog     | Rugby         |     |
+| ⭐ Hoog     | Tennis        |     |
+| ⭐ Hoog     | Padel         |     |
+
+
 
 ---
 

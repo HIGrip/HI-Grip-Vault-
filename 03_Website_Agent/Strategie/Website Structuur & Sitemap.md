@@ -4,7 +4,9 @@
 
 ---
 
-## Uitgangspunt: merk-breed, niet per sport
+## Uitgangspunt: merk-breed, niet per sport — **VERVANGEN 2026-09-21: sportfocus**
+
+> **Besluit lars 2026-09-21:** de site is nu bewust méér sportgericht. Sportlandingspagina's (tennis, voetbal, padel live; rugby volgt) zijn primaire content-pijlers en horen intern gelinkt te worden vanuit menu/footer, collecties, productpagina's en blogs. Zie [[SEO Strategie & Keywords]]. De alinea hieronder is historisch.
 
 HÏ Grip is een **merk voor performance sportswear**, niet een single-sport merk. De site-architectuur en SEO moeten daarom rond **merk + productcategorie** gebouwd worden ("HÏ Grip", "gripsokken"), niet rond losse sport-silo's (tennis/rugby/hockey/badminton). Sport-categorieën blijven bestaan als filter/navigatie, niet als primaire content-pijler.
 

@@ -4,7 +4,21 @@
 
 ---
 
-## Beachhead-strategie (vanaf 16-9-2026) — spanning met kernprincipe hieronder
+## BESLUIT 2026-09-21: switch naar sportfocus (vervangt "merk-breed, geen sport-silo's")
+
+> **Lars heeft besloten dat HÏ Grip in SEO en sitestructuur nu bewust méér sportgericht is.** Sportlandingspagina's zijn al live (`/pages/gripsokken-voor-tennis`, `-voetbal`, `-padel`; rugby volgt, zie [[Beachhead Strategie]]). Gevolgen:
+> - Sportpagina's zijn nu **echte SEO-pijlers/spokes** naast de hub "gripsokken" (die blijft #1-doel), niet langer alleen navigatie-filters of long-tail in productcontent.
+> - Sport-specifieke termen ("tennissokken", "voetbalsokken", "padelsokken", "rugbysokken", "antislip sokken") horen op de sportpagina's (primair in title/H1, secundair in H2/intro/FAQ).
+> - Voorrang blijft tennis, rugby, voetbal; padel heeft wel een pagina maar is geen beachhead-sport.
+> - De skisokken-reden voor "merk-breed" is vervallen (lancering uitgesteld). Het merk blijft één identiteit; alleen de SEO-structuur wordt sportgericht.
+> - Effect is pas na ~1 week (nieuwe indexatie) te beoordelen, en bij het huidige volume (~12 sessies/dag) alleen als signaal, niet als bewijs.
+> - Keyword-onderzoek per sport (SERP-analyse, geen zoekvolume-tool) is op 2026-09-21 gestart; resultaat komt in deze notitie.
+>
+> De tekst hieronder (kernprincipe, beachhead-blok) is historisch en waar hij "merk-breed / geen sport-silo's" zegt **niet meer leidend**.
+
+---
+
+## Beachhead-strategie (vanaf 16-9-2026) — historisch, besloten 21-9 (zie boven)
 
 > HÏ Grip focust nu bewust op drie doelgroepen — fanatieke tennissers, rugbyers en voetballers (zie [[Doelgroep & Persona's]]) — en de skisokken-lancering (de reden achter het "merk-breed, geen sport-silo's"-principe hieronder) is uitgesteld (zie [[Strategische Keuzes]]). Dat verandert de oorspronkelijke afweging: **open vraag voor Lars** of tennis/rugby/voetbal nu wél eigen SEO-landingspagina's/pijlers moeten krijgen (bv. `/gripsokken-tennis`), of dat het merk-brede principe voorlopig blijft staan en alleen content/marketing (niet SEO-structuur) de 3 sporten prioriteert. Tot die keuze is gemaakt: onderstaand kernprincipe blijft leidend, met tennis/rugby/voetbal als eerste keuze zodra sport-specifieke content/long-tail wél wordt ingezet.
 

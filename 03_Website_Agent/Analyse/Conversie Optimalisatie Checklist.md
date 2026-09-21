@@ -30,7 +30,7 @@
 - [ ] Blessure-duo samenvoegen: `waarom-gripsokken-het-verschil-maken` + `hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures`
 - [ ] Oude URL's 301-redirecten naar de samengevoegde pagina
 
-**Fase 3 — pijlerstructuur (hub-and-spoke, merk-breed conform [[SEO Strategie & Keywords]] — sporten blijven long-tail spokes, geen eigen landingspagina's):**
+**Fase 3 — pijlerstructuur (hub-and-spoke; sinds besluit 2026-09-21 sportgericht conform [[SEO Strategie & Keywords]] — sporten hebben eigen landingspagina's als spokes; de "merk-breed, geen landingspagina's"-formulering was eerder):**
 1. Wat zijn gripsokken (awareness, target "gripsokken")
 2. Grip per situatie (pilates/yoga, krachttraining, voetbal, comfort — long-tail spokes)
 3. Prestatie & blessurepreventie (E-E-A-T, wetenschappelijke bronnen)
@@ -47,7 +47,7 @@
 
 ## Bewust nog niet opgepakt (input/toegang nodig)
 
-- Sport-specifieke landingspagina's — bewust *niet* prioriteit, want SEO is merk-breed (zie [[SEO Strategie & Keywords]])
+- ~~Sport-specifieke landingspagina's — bewust niet prioriteit~~ — **achterhaald 2026-09-21:** lars koos sportfocus, de pagina's staan live (zie [[SEO Strategie & Keywords]])
 - Shopify-app-audit (welke 5 extensies precies, nut per stuk) — vereist Shopify-adminbtoegang, zie [[Shopify App Stack]]
 - Analytics-baseline (huidige conversieratio, verkeer) — vereist toegang tot GA4/Shopify-analytics, zie [[Analytics & KPI Dashboard]]
 

@@ -73,3 +73,4 @@ Naast de 5 `/`-skills (die inline in de hoofdsessie draaien) heeft elke sub-agen
 - [[Shopify App Stack]]
 - [[SEO Strategie & Keywords]]
 - [[Website Structuur & Sitemap]]
+- [[Sportlanding-systeem (21-9-2026)]] — sportpagina's tennis/rugby/voetbal/padel + homepage-teaser (theme 201133490503, concept)

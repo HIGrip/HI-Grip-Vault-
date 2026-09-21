@@ -4,7 +4,36 @@
 
 ---
 
-## Beachhead-strategie (vanaf 16-9-2026) — spanning met kernprincipe hieronder
+## BESLUIT 2026-09-21: switch naar sportfocus (vervangt "merk-breed, geen sport-silo's")
+
+> **Lars heeft besloten dat HÏ Grip in SEO en sitestructuur nu bewust méér sportgericht is.** Sportlandingspagina's zijn al live (`/pages/gripsokken-voor-tennis`, `-voetbal`, `-padel`; rugby volgt, zie [[Beachhead Strategie]]). Gevolgen:
+> - Sportpagina's zijn nu **echte SEO-pijlers/spokes** naast de hub "gripsokken" (die blijft #1-doel), niet langer alleen navigatie-filters of long-tail in productcontent.
+> - Sport-specifieke termen ("tennissokken", "voetbalsokken", "padelsokken", "rugbysokken", "antislip sokken") horen op de sportpagina's (primair in title/H1, secundair in H2/intro/FAQ).
+> - Voorrang blijft tennis, rugby, voetbal; padel heeft wel een pagina maar is geen beachhead-sport.
+> - De skisokken-reden voor "merk-breed" is vervallen (lancering uitgesteld). Het merk blijft één identiteit; alleen de SEO-structuur wordt sportgericht.
+> - Effect is pas na ~1 week (nieuwe indexatie) te beoordelen, en bij het huidige volume (~12 sessies/dag) alleen als signaal, niet als bewijs.
+> - Keyword-onderzoek per sport (SERP-analyse, geen zoekvolume-tool) is op 2026-09-21 gestart; resultaat komt in deze notitie.
+>
+> De tekst hieronder (kernprincipe, beachhead-blok) is historisch en waar hij "merk-breed / geen sport-silo's" zegt **niet meer leidend**.
+
+### Zoektermen per sport (SERP-onderzoek 2026-09-21, nl-NL, geen zoekvolume)
+
+Bron: SERP-analyse van concurrent-titels en resultaten; **geen zoekvolume, autocomplete of PAA-box gemeten** — vraagtermen zijn afgeleid uit concurrent-content.
+
+- **Hoofdwoord is "gripsokken"** (losse schrijfwijze "grip sokken" wordt als variant behandeld). "Antislip sokken" is een ander universum (medisch/zorg/Decathlon) — hooguit secundair.
+- **Kale termen niet targeten:** "tennissokken", "voetbalsokken", "rugbykousen" leiden naar gewone sokken/teamkleding (ander product). Gebruik altijd de combinatie mét grip: "tennissokken met grip", "voetbalsokken met grip", "padelsokken (met grip)", "antislip rugbysokken".
+- **Per sport:** primair H1/title "gripsokken <sport>"; secundair H2/intro/FAQ de "<sport>sokken met grip"-variant.
+  - Tennis: gripsokken tennis / tennissokken met grip
+  - Voetbal (zwaarste SERP, verzadigd): gripsokken voetbal / voetbalsokken met grip; "beste gripsokken voetbal" is kansloos (affiliate-sites)
+  - Padel (beste kans/verhouding): gripsokken padel / padelsokken
+  - Rugby (**open gat**, geen NL-merkpagina met exacte match): gripsokken rugby / antislip rugbysokken (Decathlon gebruikt letterlijk deze woordvolgorde)
+- **Kannibalisatie:** alleen `/collections/gripsokken` mikt op de kale term "gripsokken". `/winkel` rankt nu op de hoofdterm en botst met de collectie: kies één hub. Productpagina `hi-grip-gripsokken-1` heeft een collectie-achtige title. Blog = uitleg, sportpagina = kopen + korte FAQ. "Tennis- en padelsokken" toewijzen aan padel.
+- **Onverifieerd / eerst doen:** de sportpagina's verschenen in geen enkele SERP — check indexatie in Search Console vóór verdere copy-aanpassingen. Handmatig autocomplete + PAA controleren.
+- **Doorgevoerd 21-9 (werkthema, nog niet live):** per sportpagina H2 "<Sport>sokken met grip: de Performance Gripsokken 2.0" + FAQ-vraag "Wat is het verschil tussen <sport>sokken en gripsokken?" (tennis, voetbal, padel).
+
+---
+
+## Beachhead-strategie (vanaf 16-9-2026) — historisch, besloten 21-9 (zie boven)
 
 > HÏ Grip focust nu bewust op drie doelgroepen — fanatieke tennissers, rugbyers en voetballers (zie [[Doelgroep & Persona's]]) — en de skisokken-lancering (de reden achter het "merk-breed, geen sport-silo's"-principe hieronder) is uitgesteld (zie [[Strategische Keuzes]]). Dat verandert de oorspronkelijke afweging: **open vraag voor Lars** of tennis/rugby/voetbal nu wél eigen SEO-landingspagina's/pijlers moeten krijgen (bv. `/gripsokken-tennis`), of dat het merk-brede principe voorlopig blijft staan en alleen content/marketing (niet SEO-structuur) de 3 sporten prioriteert. Tot die keuze is gemaakt: onderstaand kernprincipe blijft leidend, met tennis/rugby/voetbal als eerste keuze zodra sport-specifieke content/long-tail wél wordt ingezet.
 

@@ -76,7 +76,7 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 ## Open beslispunten
 
-- SEO/site-structuur: blijft merk-breed (geen sport-silo's, bevestigd 14-7-2026) of komen er alsnog eigen landingspagina's per sport nu skisokken zijn uitgesteld? Zie [[SEO Strategie & Keywords]] en [[Website Structuur & Sitemap]]. Nog niet beslist.
+- SEO/site-structuur: **BESLOTEN 2026-09-21 door lars: switch naar sportfocus.** Eigen landingspagina's per sport zijn live (tennis, voetbal, padel; rugby nog te bouwen) en zijn nu SEO-pijlers. Merk-breed (14-7-2026) is vervallen. Zie [[SEO Strategie & Keywords]] en [[Website Structuur & Sitemap]].
 - Vraag 9 (meetpunt "veroverd") en vraag 10 (volgende beachhead) zijn nog niet ingevuld voor geen van de drie sporten — nodig om de focus-periode een einddatum/vervolgstap te geven.
 
 ---

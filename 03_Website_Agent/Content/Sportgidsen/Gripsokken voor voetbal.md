@@ -48,7 +48,7 @@
 <p>Zo houd je de grip onderin, terwijl je er bovenin gewoon uitziet als je team.</p>
 
 <h2>Hoe HÏ Grip dit oplost</h2>
-<p>De <a href="/products/performance-grip-socks-2-0-wit">Performance Grip Socks 2.0</a> zijn ontworpen rond de drukpunten van sporters. Wat dat op het veld betekent:</p>
+<p>De <a href="/products/performance-gripsokken-2-0-wit">Performance Grip Socks 2.0</a> zijn ontworpen rond de drukpunten van sporters. Wat dat op het veld betekent:</p>
 <ul>
   <li><strong>Siliconen gripzones</strong> houden je voet vast in de schoen, precies waar je afzet en landt.</li>
   <li><strong>Naadloos gebreid</strong>, dus geen stiksels die na een uur gaan schuren.</li>

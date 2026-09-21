@@ -32,6 +32,14 @@
 
 **Wijziging 14 september 2026 (op verzoek van lars, "wil dat dit overzicht elke week wordt toegevoegd"):** de GA4-funnel-check is een vast, wekelijks onderdeel geworden (stap 6 hierboven). Aanleiding: bij het Week 2026-09-14-overzicht bleek uit deze check dat de webshop die week 0 orders/€0 omzet had — een reëel checkout-conversieprobleem (7x `begin_checkout`, 0x `purchase`), bevestigd door lars als géén trackingprobleem. Sindsdien hoort de sessies/kanalen/funnel-vergelijking t.o.v. benchmarks structureel bij elke week, niet alleen als incident-check. Zie [[Week 2026-09-14]] voor het format.
 
+**Wijziging 21 september 2026 (feedback van lars op Week 2026-09-21):**
+- **GA4-weekrapport is een verplicht, apart onderdeel** van elk weekoverzicht (naast de funnel-check): sessies/gebruikers t.o.v. vorige week, kanalen + bronnen (`sessionSource/Medium`), landingspagina's, apparaat, land, en per funnelstap waar bezoekers afhaken. **Filter altijd botverkeer eruit of vermeld het expliciet** (bv. Direct-sessies uit VS/China met <5% engagement) — in week 14-20 sept was ~60 van de 123 sessies bot. Format: zie [[Week 2026-09-21]] sectie "GA4-weekrapport".
+- **Uitgangspunt B2B:** voor de 8 tennisretailers wordt eerst een **contactpersoon** gezocht (vervolgzoekactie, B2B Klanten Agent) voordat de HOOG-score outreach-klaar heet.
+- **Uitgangspunt Content:** content-ideeën worden **beoordeeld door Tigo van de content-afdeling** vóór ze richting Buffer gaan; de routine stelt alleen voor. (Dit is de interne afstemming waar lars eerder op wachtte.)
+- **GEO** (zichtbaarheid in AI-zoekmachines) is belangrijker dan eerder gedacht: plan wordt gemaakt met de GEO-sub-agent, zie [[GEO Plan (2026-09-21)]]. De routine geeft in "AI-ontwikkelingen" voortaan ook aan wat GEO raakt.
+- **Partnership-kandidatenlijst** komt als dashboard (lars levert die in de week van 21-09); tot dan blijft de lijst in de vault leidend.
+- **Shopify-wijzigingen uit dit overzicht zijn door lars goedgekeurd om door te pushen** (structured data live gezet op 21-09; titel/meta en FAQ-tekst 16:00 → 22:00 past lars zelf aan).
+
 ---
 
 ## Planning

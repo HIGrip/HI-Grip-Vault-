@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Onderzoek van maart 2026 (Univ. Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines en dat het antwoordcapsule-patroon (40-60 woorden) +17,3% citatiekans geeft — dat draait de eerdere beslissing om FAQPage-schema te schrappen gedeeltelijk terug. Daarnaast is het generatieve-AI-impressierapport in Search Console sinds 31 augustus wereldwijd beschikbaar."
-gerelateerd: [2026-09-15-growth-radar-seo-content, 2026-09-15-seo-audit, 2026-09-16-growth-radar-ai-search, 2026-09-16-seo-onderzoek-cloud-routine-website]
+gerelateerd: [2026-09-15-growth-radar-seo-content, 2026-09-15-seo-audit, 2026-09-16-growth-radar-ai-search, 2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-23-seo-conversietest-run-1]
 vervangt: [2026-09-15-growth-radar-seo-content]
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-22-seo-content.md"
 deadline: ""

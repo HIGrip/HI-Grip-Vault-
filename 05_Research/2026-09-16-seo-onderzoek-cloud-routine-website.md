@@ -8,7 +8,7 @@ categorie: SEO
 status: bekeken
 prioriteit: P3
 samenvatting: "De dagelijkse cloud-routine \"website\" maakte op 16 september een SEO/CRO-rapport op basis van alleen publieke data (Google-index, Trustpilot) — higrip.nl zelf was geblokkeerd. Nieuw en bruikbaar: verouderde numerieke URL's in de index, een hreflang-check NL/EN en een maattabel-widget; vijf claims spreken geverifieerde vault-feiten tegen en zijn hier gemarkeerd."
-gerelateerd: [2026-09-15-seo-audit, 2026-09-04-werkdossier-stand-van-zaken, 2026-09-15-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-22-growth-radar-seo-content]
+gerelateerd: [2026-09-15-seo-audit, 2026-09-04-werkdossier-stand-van-zaken, 2026-09-15-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-22-growth-radar-seo-content, 2026-09-23-seo-conversietest-run-1]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/H5KiVWmh665yX9yTTKUseH"
 deadline: ""

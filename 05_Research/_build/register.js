@@ -144,12 +144,12 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** 31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat.\n**Welke:** \"Waarom glijdt mijn voet in mijn padelschoen?\" · \"Wat zijn gripsokken?\" · \"Tapedesign alternatief\"\n**Format:** Antwoord in de eerste twee zinnen. Daarna pas onderbouwing. ~~FAQPage JSON-LD eronder~~ — geschrapt: Google toont sinds 7 mei 2026 geen FAQ rich results meer, en de officiële AI Overviews-gids (15 mei 2026) zegt expliciet dat structured data niet vereist is voor AI-citaties. Schema voegt hier niks meer toe; de antwoord-eerst-opbouw zelf is het werk dat telt.\n**Inspanning:** 1 dag voor alle drie",
-   "id": "backlog#369a36c0",
-   "kop": "6. Schrijf de vraagpagina's antwoord-eerst (herzien 15 sep 2026)",
+   "body_md": "**Waarom:** 31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat. **Terugdraaiing t.o.v. 15 sep:** toen is `FAQPage`-schema geschrapt omdat de AI Overviews-gids zei dat structured data \"niet vereist\" is voor AI-citaties — dat klopt nog steeds, maar onderzoek van maart 2026 (Universiteit van Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines, en dat het specifieke \"antwoordcapsule\"-patroon een gemeten +17,3% citatiekans oplevert over zes engines. Niet vereist ≠ geen effect. Concurrent FitSockr heeft bovendien al een ongestructureerde blogpost live op exact de long-tail \"wat zijn gripsokken\" — reden om hier niet halfslachtig in te zitten.\n**Welke:** \"Waarom glijdt mijn voet in mijn padelschoen?\" · \"Wat zijn gripsokken?\" · \"Tapedesign alternatief\"\n**Format:** Direct onder elke vraag-H2 een zelfstandige alinea van 40-60 woorden die de vraag volledig beantwoordt, zonder link of opmaak erin. Onderbouwing en eventuele link komen in de alinea daarna. `FAQPage` JSON-LD eronder — niet voor rich results (die bestaan niet meer sinds mei 2026), maar als machineleesbare, vooraf afgebakende vraag-antwoordparen voor AI-crawlers.\n**Inspanning:** 1 dag voor alle drie",
+   "id": "backlog#b02ee884",
+   "kop": "6. Schrijf de vraagpagina's antwoord-eerst, mét FAQPage-schema (herzien 22 sep 2026)",
    "prioriteit": "P2",
    "velden": {
-    "Waarom": "31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat."
+    "Waarom": "31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat. **Terugdraaiing t.o.v. 15 sep:** toen is `FAQPage`-schema geschrapt omdat de AI Overviews-gids zei dat structured data \"niet vereist\" is voor AI-citaties — dat klopt nog steeds, maar onderzoek van maart 2026 (Universiteit van Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines, en dat het specifieke \"antwoordcapsule\"-patroon een gemeten +17,3% citatiekans oplevert over zes engines. Niet vereist ≠ geen effect. Concurrent FitSockr heeft bovendien al een ongestructureerde blogpost live op exact de long-tail \"wat zijn gripsokken\" — reden om hier niet halfslachtig in te zitten."
    }
   },
   {
@@ -201,6 +201,18 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
+   "body_md": "**Waarom:** Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.\n**Waar:** Google Search Console → higrip.nl-property → nieuw AI-rapport\n**Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.\n**Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.\n**Inspanning:** 15 minuten",
+   "id": "backlog#01dc4258",
+   "kop": "15. Bekijk het nieuwe Search Console-rapport voor generatieve AI-impressies (nieuw 22 sep 2026)",
+   "prioriteit": "P2",
+   "velden": {
+    "Waar": "Google Search Console → higrip.nl-property → nieuw AI-rapport",
+    "Waarom": "Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.",
+    "Wat": "Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn."
+   }
+  },
+  {
+   "afgevinkt": false,
    "body_md": "**Waarom:** TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt via een losse app (bijv. SlashCart vanaf $9,99/maand, Optima gratis) rechtstreeks aan Shopify voor productsync, voorraad en orderafhandeling. De hele klantreis — ontdekken, valideren via creators, afrekenen — vindt dan binnen TikTok zelf plaats, met een \"Fast Shipping\"-badge die conversie verder verhoogt. Platformkosten: 2-8% commissie + $0,30 per transactie, plus optioneel 10-20% creator-affiliate-commissie.\n**Waar:** TikTok Seller Center (seller-nl.tiktok.com) + Shopify App Store\n**Wat:** Aanmeldprocedure doorlopen (KVK-gegevens, vier stappen, beoordeling 1-2 werkdagen) en beslissen of dit een los kanaal wordt naast higrip.nl of gecombineerd met het creator-plan (punt 9).\n**Effect:** Extra verkoopkanaal in de grootste groeimarkt (padel) met lagere aankoopdrempel dan doorklikken naar een externe site — vereist wel bewaking van last-click-attributie, die dit verkeer mist.\n**Inspanning:** Verkenning en aanmelding een half dagdeel; app-koppeling en catalogus-setup 1 dag.\n\n---",
    "id": "backlog#aa7afb12",
    "kop": "13. Onderzoek TikTok Shop Nederland — directe verkoop via Shopify-koppeling (nieuw 18 sep 2026)",
@@ -232,9 +244,35 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-21T12:39:23+00:00",
+ "gebouwd": "2026-09-22T03:48:04+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — SEO content & keywords (FAQ-schema terug van weggeweest)\n\n## In het kort\n\nTwee bevindingen: één die een eerdere beslissing terugdraait ([2026-09-15-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md)), en één nieuw, gratis meetpunt in Search Console.\n\n## Bevindingen\n\n**22 september 2026 · dinsdag**\n\n### FAQ-schema is terug van weggeweest — maar dan voor AI, niet voor Google\n\nDe aanname in de backlog was gebaseerd op de officiële AI Overviews-gids van 15 mei 2026, die zei dat structured data \"niet vereist\" is voor AI-citaties. Dat klopt nog steeds letterlijk, maar recenter onderzoek (maart 2026, Universiteit van Tokio/Tsukuba, gepubliceerd via Machine Relations Research) laat zien dat het wél degelijk helpt: content met een schone kop-en-antwoordstructuur wordt ongeveer 2,8× vaker geciteerd door AI-antwoordmachines dan ongestructureerde tekst, en het specifieke \"antwoordcapsule\"-patroon geeft een gemeten +17,3% aan citatiekans over zes generatieve engines — los van de kwaliteit van de content zelf.\n\nHet patroon is specifiek: een zelfstandige alinea van 40-60 woorden direct onder elke H2, die de vraag volledig beantwoordt zonder links of opmaak. Verwijzingen (bronvermeldingen, links) horen in de alinea daarna, niet in de antwoordcapsule zelf — 9 van de 10 geciteerde capsules bevatten nul hyperlinks.\n\nConcurrent FitSockr heeft bovendien al een blogpost live op exact de long-tail uit de backlog (\"Wat zijn gripsokken en waarom zijn ze belangrijk voor voetballers?\") — ongestructureerde marketingtekst zonder antwoordcapsule. Dat is de opening om met een beter gestructureerd antwoord voorbij te gaan, mét de eigen cijfers (1,17 wrijvingscoëfficiënt, 95% meer grip) die FitSockr niet heeft.\n\n> **Voor higrip.nl:** Backlogpunt 6 (\"Schrijf de vraagpagina's antwoord-eerst\") is aangepast: de drie vraagpagina's krijgen alsnog `FAQPage`-schema, en het antwoord-eerst-principe is concreter gemaakt — 40-60 woorden direct onder elke vraag-H2, zonder link erin, gevolgd door de onderbouwende tekst. Zie [2026-09-15-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md) voor de eerdere (nu deels achterhaalde) beslissing.\n\n**Actie:** Zie ACTIEBACKLOG.md, punt 6 (bijgewerkt).\n\n---\n\n### Search Console toont nu AI-impressies per pagina\n\nGoogle rolde het generatieve-AI-prestatierapport in Search Console op 3 juni 2026 gefaseerd uit en heeft dit op 31 augustus 2026 wereldwijd beschikbaar gemaakt. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum — nog geen kliks, CTR of zoekterm.\n\n> **Voor higrip.nl:** Search Console staat al ingericht. Eenmalig bekijken welke pagina's nu al AI-impressies krijgen, om te bepalen of de geplande vraagpagina's vanaf nul beginnen of al ergens zichtbaar zijn.\n\n**Actie:** Zie ACTIEBACKLOG.md, punt 15 (nieuw).\n\n## Bronnen\n\n- [FAQ Schema Is Dead: What Actually Earns AI Citations in 2026](https://aifromthefield.substack.com/p/faq-schema-dead-ai-citations)\n- [How Content Structure Affects AI Citation Rates: The GEO-SFE Research Framework (2026)](https://machinerelations.ai/research/content-structure-ai-citation-rates-2026)\n- [The Answer Capsule Playbook: 40–60 Word Patterns That Turn Every H2 Into an AI Citation](https://www.averi.ai/blog/answer-capsules-40-60-word-patterns-that-turn-h2s-into-citations)\n- [Google Search Console AI Reports Rolled Out Worldwide](https://www.searchenginejournal.com/google-search-console-ai-reports-rolled-out-worldwide/587836/)\n- [Introducing Search Generative AI performance reports in Search Console — Google Search Central Blog](https://developers.google.com/search/blog/2026/06/gen-ai-performance-reports)\n- [FitSockr — Wat zijn gripsokken en waarom zijn ze belangrijk voor voetballers?](https://fitsockr.nl/blogs/blog/wat-zijn-gripsokken-en-waarom-zijn-ze-belangrijk-voor-voetballers)\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en komen via het dashboard binnen — hier niet gedupliceerd._\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-22-seo-content.md",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-22",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-15-growth-radar-seo-content",
+    "2026-09-15-seo-audit",
+    "2026-09-16-growth-radar-ai-search",
+    "2026-09-16-seo-onderzoek-cloud-routine-website"
+   ],
+   "id": "2026-09-22-growth-radar-seo-content",
+   "prioriteit": "P2",
+   "routine": "growth-radar",
+   "samenvatting": "Onderzoek van maart 2026 (Univ. Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines en dat het antwoordcapsule-patroon (40-60 woorden) +17,3% citatiekans geeft — dat draait de eerdere beslissing om FAQPage-schema te schrappen gedeeltelijk terug. Daarnaast is het generatieve-AI-impressierapport in Search Console sinds 31 augustus wereldwijd beschikbaar.",
+   "status": "nieuw",
+   "titel": "Growth Radar — SEO content & keywords (FAQ-schema terug van weggeweest)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-22-growth-radar-seo-content.md",
+   "vervangt": [
+    "2026-09-15-growth-radar-seo-content"
+   ]
+  },
   {
    "acties": [],
    "body_md": "# SEO-regressiecheck — 21 september 2026\n\n## In het kort\n\nControle-run, geen onderzoek. De kritieke check (geen `aggregateRating` op enige pagina) blijft schoon. Twee eerder gemelde regressiepunten zijn deze week opgelost; één bestaand punt is bijgewerkt (gedeeltelijke voortgang) en één nieuw punt toegevoegd. GA4 was dit keer niet bereikbaar.\n\n## Bevindingen\n\nReferentiepunt: de audit van 15 september 2026 ([2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)) en de regressiecheck van 15 september ([2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)). De Growth Radar-routine draaide dit keer vóór deze check en had de productpagina-URL-wijziging ([2026-09-21-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-growth-radar-seo-technisch.md)) al in de backlog verwerkt — hier alleen technisch bevestigd, niet dubbel toegevoegd.\n\n### Afwijkingen\n\n1. **GA4 kon deze week niet gecontroleerd worden.** `analytics-mcp` gaf een verbindings-timeout (30s) bij elke poging. Sessies per kanaal, de AI Assistant-trend en de status van `keyEvents` zijn dus niet geverifieerd — geen aanname dat de situatie ongewijzigd is.\n\n2. **SEO-schema staat gedeeltelijk live, nog niet compleet.** Sinds 15 september is `hi-seo-schema.liquid` kennelijk deels gepusht: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina, `ItemList` ontbreekt nog op beide collectiepagina's, `FAQPage` ontbreekt nog op de productpagina, en `/pages/gripsokken-voetbal` geeft nog steeds 404.\n\n3. **Geen `aggregateRating` gevonden** op één van de zeven bereikbare pagina's — kritieke check blijft schoon.\n\n4. **Productpagina-URL-wijziging technisch bevestigd** (al gemeld door Growth Radar): `/products/hi-grip-gripsokken-1` en de twee oude duplicaten redirecten (301) naar de nieuwe handle `/products/performance-gripsokken`. Zelfde patroon bij `/pages/gripsokken-padel` → `/pages/gripsokken-voor-padel`.\n\n5. **Nieuwe `/en/`-sitemapsectie ontdekt, met een zwakke title-tag.** Vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) staan sinds deze week in `sitemap.xml` — een Engelse marktuitbreiding die nergens in het projectgeheugen staat. `hreflang` en canonical kloppen, maar de EN-title is enkel `HÏ Grip` — hetzelfde probleem dat de NL-homepage vóór 15 september had.\n\n6. **`/collections/all` heeft nog steeds geen meta description.** Ongewijzigd sinds 15 september.\n\n### Ongewijzigd / opgelost\n\n- Homepage heeft nu precies 1 `<h1>` (was 2×) — opgelost.\n- Alle 7 bereikbare URL's laadden in 0,29–0,70s, elk met precies één niet-lege `<title>` en een kloppende canonical.\n- Homepage: 9 afbeeldingen met `alt=\"\"` (vorige week 12) — onder de meldgrens.\n- `shopify theme check`: 7 fouten, alle binnen de drie bekende, genegeerde typen. Geen nieuwe foutsoort.\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en komen via het dashboard binnen — hier niet gedupliceerd._\n\n## Bronnen\n\n- Origineel: `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\regressiecheck-2026-09-21.md`\n- Routine: `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-seo-regressiecheck\\SKILL.md`\n\n## Aantekeningen",
@@ -458,7 +496,8 @@ window.HI_RESEARCH = {
     "2026-09-15-seo-audit",
     "2026-09-04-werkdossier-stand-van-zaken",
     "2026-09-15-growth-radar-seo-content",
-    "2026-09-16-growth-radar-ai-search"
+    "2026-09-16-growth-radar-ai-search",
+    "2026-09-22-growth-radar-seo-content"
    ],
    "id": "2026-09-16-seo-onderzoek-cloud-routine-website",
    "prioriteit": "P3",
@@ -482,7 +521,8 @@ window.HI_RESEARCH = {
     "2026-09-15-growth-radar-basislijn",
     "2026-09-15-growth-radar-seo-content",
     "2026-09-15-seo-audit",
-    "2026-09-16-seo-onderzoek-cloud-routine-website"
+    "2026-09-16-seo-onderzoek-cloud-routine-website",
+    "2026-09-22-growth-radar-seo-content"
    ],
    "id": "2026-09-16-growth-radar-ai-search",
    "prioriteit": "P2",
@@ -546,7 +586,8 @@ window.HI_RESEARCH = {
     "2026-09-15-growth-radar-seo-content",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
     "2026-09-21-growth-radar-seo-technisch",
-    "2026-09-21-beachhead-rugby"
+    "2026-09-21-beachhead-rugby",
+    "2026-09-22-growth-radar-seo-content"
    ],
    "id": "2026-09-15-seo-audit",
    "prioriteit": "P1",
@@ -593,13 +634,14 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-15-growth-radar-basislijn",
     "2026-09-16-growth-radar-ai-search",
-    "2026-09-16-seo-onderzoek-cloud-routine-website"
+    "2026-09-16-seo-onderzoek-cloud-routine-website",
+    "2026-09-22-growth-radar-seo-content"
    ],
    "id": "2026-09-15-growth-radar-seo-content",
    "prioriteit": "P3",
    "routine": "growth-radar",
-   "samenvatting": "Google toont sinds 7 mei 2026 geen FAQ rich results meer en zegt in de AI Overviews-gids (15 mei 2026) dat structured data niet nodig is voor AI-citaties. Het backlogpunt over de vraagpagina's is aangepast: schema-stap geschrapt, antwoord-eerst-opbouw blijft het werk dat telt.",
-   "status": "bekeken",
+   "samenvatting": "Google toont sinds 7 mei 2026 geen FAQ rich results meer en zegt in de AI Overviews-gids (15 mei 2026) dat structured data niet nodig is voor AI-citaties. Het backlogpunt over de vraagpagina's is aangepast: schema-stap geschrapt, antwoord-eerst-opbouw blijft het werk dat telt. Achterhaald door [[2026-09-22-growth-radar-seo-content]]: structuur (incl. FAQPage-schema) blijkt AI-citatiekans wél te verhogen.",
+   "status": "gearchiveerd",
    "titel": "Growth Radar — SEO content & keywords (FAQ rich results weg)",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md",
    "vervangt": []
@@ -1301,14 +1343,14 @@ window.HI_RESEARCH = {
  "stats": {
   "open_per_prioriteit": {
    "P1": 25,
-   "P2": 49,
+   "P2": 50,
    "P3": 32
   },
   "per_categorie": {
    "CRO": 3,
    "Compliance": 1,
    "Merk": 4,
-   "SEO": 8,
+   "SEO": 9,
    "Social": 1,
    "Techniek": 1
   },
@@ -1369,12 +1411,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 3,
+    "aantal": 4,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 18
+  "totaal_notities": 19
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

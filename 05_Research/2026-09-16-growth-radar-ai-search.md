@@ -8,7 +8,7 @@ categorie: SEO
 status: bekeken
 prioriteit: P2
 samenvatting: "ChatGPT's Instant Checkout is gestopt (3× slechtere conversie dan doorklik bij Walmart): \"ontdekken in AI, kopen op eigen site\" wint. Schema alleen verhoogt AI-citaties niet, concrete cijfers in de tekst wel; de Merchant Center-feed wordt ook de ingang voor Google AI Mode; Perplexity Merchant Program alleen bij VS-verzending."
-gerelateerd: [2026-09-15-growth-radar-basislijn, 2026-09-15-growth-radar-seo-content, 2026-09-15-seo-audit, 2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-22-growth-radar-seo-content]
+gerelateerd: [2026-09-15-growth-radar-basislijn, 2026-09-15-growth-radar-seo-content, 2026-09-15-seo-audit, 2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-22-growth-radar-seo-content, 2026-09-23-growth-radar-ai-search]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-16-ai-search.md"
 deadline: ""

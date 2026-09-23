@@ -165,9 +165,9 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** Perplexity's Merchant Program is sinds januari 2026 gratis open voor Shopify-winkels: geen listingkosten, geen commissie, automatische productsynchronisatie voor Amerikaanse Shopify-winkels. \"Buy with Pro\" biedt gratis verzending betaald door Perplexity zelf. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten. Voorwaarde: bedrijven moeten verkopen én verzenden naar de VS.\n**Waar:** Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)\n**Wat:** Eerst controleren of higrip.nl momenteel naar de VS verzendt. Zo niet, dit punt geblokkeerd laten staan.\n**Effect:** Gratis extra AI-shoppingkanaal zonder commissie, mits geografisch van toepassing.\n**Inspanning:** Controle 15 minuten; aanmelding zelf een half dagdeel indien van toepassing.",
-   "id": "backlog#511e5acb",
-   "kop": "8. Perplexity Merchant Program — alleen als je naar de VS verzendt (nieuw 16 sep 2026)",
+   "body_md": "**Update 23 sep 2026:** De VS-vraag gaat nu over drie AI-kanalen tegelijk. ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit feeds, en Shopify levert die via Agentic Storefronts automatisch aan ChatGPT en Copilot, maar alleen voor winkels die aan Amerikaanse kopers verkopen. ChatGPT Shopping zelf is voorlopig alleen in de VS live. Extra check (5 min): Shopify admin → Verkoopkanalen → **Agentic**: staat het aan, en welke kanalen zijn actief? Nog geen VS-verzendbeslissing nemen puur hierom.\n**Waarom:** Perplexity's Merchant Program is sinds januari 2026 gratis open voor Shopify-winkels: geen listingkosten, geen commissie, automatische productsynchronisatie voor Amerikaanse Shopify-winkels. \"Buy with Pro\" biedt gratis verzending betaald door Perplexity zelf. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten. Voorwaarde: bedrijven moeten verkopen én verzenden naar de VS.\n**Waar:** Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)\n**Wat:** Eerst controleren of higrip.nl momenteel naar de VS verzendt. Zo niet, dit punt geblokkeerd laten staan.\n**Effect:** Gratis extra AI-shoppingkanaal zonder commissie, mits geografisch van toepassing.\n**Inspanning:** Controle 15 minuten; aanmelding zelf een half dagdeel indien van toepassing.",
+   "id": "backlog#8fb4a493",
+   "kop": "8. Perplexity Merchant Program — alleen als je naar de VS verzendt (nieuw 16 sep 2026, uitgebreid 23 sep 2026)",
    "prioriteit": "P2",
    "velden": {
     "Waar": "Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)",
@@ -244,7 +244,7 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-22T23:43:51+00:00",
+ "gebouwd": "2026-09-23T03:45:12+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -305,7 +305,8 @@ window.HI_RESEARCH = {
     "2026-09-21-growth-radar-seo-technisch",
     "2026-09-22-growth-radar-seo-content",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
-    "2026-09-07-compliance-todo"
+    "2026-09-07-compliance-todo",
+    "2026-09-23-growth-radar-ai-search"
    ],
    "id": "2026-09-23-seo-conversietest-run-1",
    "prioriteit": "P1",
@@ -314,6 +315,36 @@ window.HI_RESEARCH = {
    "status": "nieuw",
    "titel": "SEO- en conversietest run 1 — nulmeting en tegenstrijdige verzend/retourinfo",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md",
+   "vervangt": []
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-23-growth-radar-ai-search#76a1abe1",
+     "prioriteit": "P3",
+     "tekst": "ChatGPT Ads opnieuw bekijken zodra je vanuit Nederland een advertentieaccount kunt aanmaken"
+    }
+   ],
+   "body_md": "# Growth Radar — AI-search (ChatGPT Shopping draait op feeds, VS-verzending is de sleutel)\n\n## In het kort\n\nVervolg op [2026-09-16-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-growth-radar-ai-search.md): toen was Perplexity het enige AI-kanaal dat aan VS-verzending hing, nu geldt dat ook voor ChatGPT en Copilot. De feed neemt dezelfde verzendinfo over die in [2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md) tegenstrijdig bleek.\n\n## Bevindingen\n\n### ChatGPT Shopping draait nu op feeds, en dat gaf in één dag een grote verschuiving\nProfound volgde in juli 2026 1,76 miljoen ChatGPT Shopping-prompts. Op 10 juli, één dag na de release van GPT-5.6, steeg het aandeel producten uit geïntegreerde feeds van 8,26% naar 61,54%. Begin september kwam ongeveer 65% van de aanbevelingen uit feeds.\n\n| Meting (7–9 juli vs 10–12 juli) | Waarde |\n|---|---|\n| Merchants met ≥ ⅓ minder zichtbaarheid | 450 van 687 |\n| Merchants met ≥ ⅓ meer zichtbaarheid | 67 van 687 |\n| Unieke merchants genoemd | 13.524 → 10.607 (−22%) |\n| Aandeel top 10-winkels | 22,5% → 41,8% |\n| Deel feed-retrieval via Shopify | ~35% |\n\nShopify-winkels hoeven hiervoor niets te doen: via Shopify Catalog en *Agentic Storefronts* (sinds maart 2026 standaard aan, opt-out) gaan hun producten automatisch naar ChatGPT, Copilot, Google AI Mode en Gemini. Er zijn wel twee voorwaarden. ChatGPT en Copilot nemen alleen winkels op die **aan Amerikaanse kopers verkopen**, ongeacht waar de winkel zelf zit. Google AI Mode/Gemini is voorlopig beperkt tot een selectie Amerikaanse winkels. En OpenAI zegt zelf dat Shopping \"live for ChatGPT users in the U.S.\" is, met uitbreiding naar andere regio's \"later\".\n\nDe zichtbaarheid concentreert zich snel bij de winkels met de beste feeds. Het advies uit de markt is daarom om in de feed te investeren: duidelijke producttitels, gestructureerde attributen (maat, materiaal, sport) en beschrijvingen die de twijfels van kopers beantwoorden, zoals \"past dit in mijn schoen\" of \"welke maat\".\n\n> **Voor higrip.nl:** Dit vult backlogpunt 8 (Perplexity, alleen bij VS-verzending) aan. De vraag \"verzenden we naar de VS?\" gaat nu over drie AI-kanalen tegelijk: Perplexity, ChatGPT en Copilot. Nederlandse gebruikers krijgen ChatGPT Shopping nog niet te zien, dus een VS-verzendbeslissing puur hiervoor zou te vroeg zijn. Wat je nu al kunt doen: in Shopify admin → **Verkoopkanalen → Agentic** kijken of het kanaal aanstaat en welke kanalen actief zijn. Als OpenAI Shopping naar Europa uitbreidt, sta je dan al klaar. Ook belangrijk: de feed gebruikt dezelfde producttitel, varianten en verzendinfo als je site. De tegenstrijdige verzend- en retourinformatie uit de SEO-conversietest van vandaag komt dus ook in AI-feeds terecht.\n\n**Actie:** Backlogpunt 8 uitgebreid: de VS-check en de Agentic-kanaalcheck zijn samengevoegd tot één beslismoment. Geen nieuw punt.\n\n---\n\n### ChatGPT Ads zijn live in Nederland, maar nog niet voor jou\nSinds 24 augustus 2026 verschijnen ChatGPT-advertenties in 31 Europese landen, waaronder Nederland. Op 31 augustus ging de self-serve Ads Manager open. Een advertentie verschijnt als gelabelde \"sponsored\"-suggestie onder een antwoord, alleen voor gebruikers met een Free- of Go-abonnement (niet voor Plus/Pro/Business en niet voor gebruikers onder de 18). Sinds 4 september zijn productfeeds verplicht voor shopping-advertenties.\n\nEr zijn twee drempels. Een advertentieaccount aanmaken en betalen kan nu alleen vanuit negen landen (VS, VK, Canada, Australië, Brazilië, Japan, Zuid-Korea, Mexico, Nieuw-Zeeland), dus nog niet vanuit Nederland. En OpenAI adviseert een startbod van $3–5 per klik.\n\n> **Voor higrip.nl:** Met een 1-pack van €14,99 en een conversie rond het Shopify-gemiddelde (1,4%) kost één verkoop bij $3–5 per klik ruim €200 aan klikken. Dat is economisch zinloos tot er Nederlandse accounts en data over lagere klikprijzen zijn. Dit sluit ook aan bij backlogpunt 10 (CAPI pas bij een advertentiebudget-beslissing): eerst meten, dan pas een nieuw betaald kanaal.\n\n**Actie:** Alleen volgen, nog niet handelen. Opnieuw bekijken als accountregistratie vanuit Nederland mogelijk wordt.\n\n---\n\n## Acties\n- [ ] P3 · ChatGPT Ads opnieuw bekijken zodra je vanuit Nederland een advertentieaccount kunt aanmaken\n\n## Bronnen\n\n- [ChatGPT Shopping Results Lean Hard On Product Feeds — Search Engine Journal](https://www.searchenginejournal.com/chatgpt-shopping-results-lean-hard-on-product-feeds/589000/)\n- [ChatGPT 5.6 has transformed Shopping mode — Profound](https://www.tryprofound.com/blog/chatgpt-5.6-shopping-transformation)\n- [Shopify agentic storefronts — Shopify Help Center](https://help.shopify.com/en/manual/online-sales-channels/agentic-storefronts)\n- [Agentic Commerce on Shopify: How It Works (2026) — Shopify](https://www.shopify.com/blog/how-agentic-commerce-works)\n- [ChatGPT Ads expands across Europe — OpenAI](https://openai.com/index/chatgpt-ads-expands-across-europe/)\n- [OpenAI Ads Is Heading to Europe — Mergado](https://www.mergado.com/blog/openai-ads-is-heading-to-europe)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-23-ai-search.md",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-23",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-16-growth-radar-ai-search",
+    "2026-09-22-growth-radar-seo-content",
+    "2026-09-23-seo-conversietest-run-1"
+   ],
+   "id": "2026-09-23-growth-radar-ai-search",
+   "prioriteit": "P2",
+   "routine": "growth-radar",
+   "samenvatting": "ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit productfeeds. Shopify levert die automatisch via Agentic Storefronts, maar alleen voor winkels die aan VS-kopers verkopen, en Shopping is alleen in de VS live. ChatGPT Ads draaien sinds 24 augustus ook in Nederland, maar accounts kun je nog niet vanuit NL aanmaken en de klikprijs ($3–5) past niet bij een product van €14,99.",
+   "status": "nieuw",
+   "titel": "Growth Radar — AI-search (ChatGPT Shopping draait op feeds, VS-verzending is de sleutel)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-growth-radar-ai-search.md",
    "vervangt": []
   },
   {
@@ -330,7 +361,8 @@ window.HI_RESEARCH = {
     "2026-09-15-seo-audit",
     "2026-09-16-growth-radar-ai-search",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-23-growth-radar-ai-search"
    ],
    "id": "2026-09-22-growth-radar-seo-content",
    "prioriteit": "P2",
@@ -595,7 +627,8 @@ window.HI_RESEARCH = {
     "2026-09-15-growth-radar-seo-content",
     "2026-09-15-seo-audit",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
-    "2026-09-22-growth-radar-seo-content"
+    "2026-09-22-growth-radar-seo-content",
+    "2026-09-23-growth-radar-ai-search"
    ],
    "id": "2026-09-16-growth-radar-ai-search",
    "prioriteit": "P2",
@@ -1419,13 +1452,13 @@ window.HI_RESEARCH = {
   "open_per_prioriteit": {
    "P1": 27,
    "P2": 53,
-   "P3": 34
+   "P3": 35
   },
   "per_categorie": {
    "CRO": 3,
    "Compliance": 1,
    "Merk": 4,
-   "SEO": 10,
+   "SEO": 11,
    "Social": 1,
    "Techniek": 1
   },
@@ -1486,12 +1519,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 5,
+    "aantal": 6,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 20
+  "totaal_notities": 21
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

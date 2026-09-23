@@ -1,6 +1,6 @@
 # Evaluatiecriteria — HÏ Grip Influencer Zoek Agent
 
-> Bijgewerkt: 2026-08-18
+> Bijgewerkt: 2026-09-23
 > Zie ook: [[Influencer Database]] · [[Zoek Script & Gids]] · [[Ideale Partner Profiel]]
 
 ---
@@ -64,6 +64,12 @@
 - **Maximum volgers:** 50.000
 - **Minimum activiteit:** 3 posts in de afgelopen 3 weken
 
+> **Views = mediaan, niet gemiddelde (2026-09-23):** het script rekent met de mediaan van de
+> views over de laatste ~12 reels. Een paar virale reels trokken het gemiddelde ver omhoog,
+> waardoor normale micro-creators op de views-grens afketsten (@tennistomy: 30.688 gemiddeld
+> tegenover 8.000 mediaan, met reels van 3-8k en uitschieters van 43-80k). De mediaan laat zien
+> wat een creator *consistent* haalt, in lijn met "1 viral hit, rest laag" in de checklist hieronder.
+
 ---
 
 ## Locatie
@@ -77,6 +83,10 @@
 
 - Minimum: 2%
 - Voorkeur: 5–10%
+- **Boven 50%: niet afwijzen, wel handmatig checken** (2026-09-23). Een extreme ER kan echt zijn:
+  @parsarafia (515 volgers) gaat vaak viraal ten opzichte van zijn volgersaantal, bevestigd door lars.
+  Maar het kan ook om gekochte likes of één uitschieter gaan. Het script zet zo'n profiel daarom op
+  "handmatig checken" met de notitie *extreme ER*.
 
 ---
 
@@ -106,6 +116,10 @@
 - Gekochte volgers / fake engagement
 - Al benaderd (checken via [[Pipeline Tracker]])
 - Promoot concurrerende grip sock merken
+- Organisatie-accounts in plaats van een persoonlijke creator (2026-09-23). Het script wijst deze af
+  op hun Instagram-categorie: Sportclub, Amateursportteam, Sportteam, Sportbond, Sportwinkel,
+  Community, Krant, Tijdschrift, Festival en media- of nieuwsbedrijven. Aanleiding:
+  @concretelionsbasketball (een basketbalclub, categorie "Community") kwam door het naamfilter heen.
 
 ---
 

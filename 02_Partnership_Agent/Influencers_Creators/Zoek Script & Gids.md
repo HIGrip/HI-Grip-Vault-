@@ -11,11 +11,11 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 **Vier bronnen per run:**
 
 1. **Hashtags** — posts per sport-hashtag openen, auteur-username ophalen.
-2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie de IG-following-strategie in Claude Code memory). `SEED_ACCOUNTS` staat standaard leeg; vul het eigen handle in om deze bron te activeren.
+2. **Following-lijst van seed-accounts** — de following-lijst van een account scannen (bedoeld voor het eigen HÏ Grip-account, dat bewust influencers volgt als curated shortlist — zie de IG-following-strategie in Claude Code memory). `SEED_ACCOUNTS` staat op `lars_a.i.h` (teruggezet 23-09-2026).
 3. **Commenters op referentie-accounts** — wie reageert op reels van bekende referentie-accounts per sport is vaak zelf ook creator.
 4. **Following-lijsten van NL creator-accounts** — wie NL creators zoals @iamyasinflits volgen zijn vaak kleine creators in dezelfde niche die via hashtags moeilijk te vinden zijn. Ingesteld via `CREATOR_FOLLOW_LISTS`.
 
-**Profielbeoordeling:** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), haalt het script profieldata op via Instagram's eigen `web_profile_info` JSON-endpoint: exacte volgers, bio, en per recente post de like-/comment-count, post-datum en caption-tekst. Faalt dat endpoint (rate limit / blocked), dan valt het script terug op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers en zonder captions in dat geval.
+**Profielbeoordeling:** i.p.v. tekst uitlezen uit de zichtbare pagina (taal-afhankelijk, kwetsbaar voor UI-wijzigingen), leest het script de GraphQL-antwoorden die de profielpagina zelf ophaalt (sinds 23-09-2026; het oude `web_profile_info`-endpoint geeft sinds ~15-09 structureel 429): exacte volgers, bio, categorie, en per recente post de like-/comment-count, post-datum en caption-tekst. Views komen uit de reels-tab (`play_count`), en het script neemt de **mediaan** i.p.v. het gemiddelde, zodat een paar virale reels een micro-creator niet over de views-grens duwen. Lukt dat niet, dan valt het script terug op `web_profile_info` en daarna op de oude DOM-scraping methode zodat een los profiel de hele run niet laat crashen — wel zonder ER%/activiteit-cijfers en zonder captions in dat geval.
 
 **Sport-fit / concurrentie-check:** géén losse LLM-API-call in het script (dat kost apart geld, los van je Claude-abonnement). In plaats daarvan verzamelt het script bio + laatste captions per kandidaat in de output, zodat de sport/lifestyle-fit en concurrentie-check uit [[Evaluatiecriteria]] achteraf handmatig of door Claude Code beoordeeld worden — gratis onder het abonnement, gewoon even vragen na een run.
 
@@ -30,7 +30,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 | Filter | Waarde |
 |---|---|
 | Volgers | 300 – 50.000 (ondergrens per 2026-08-05 verlaagd op basis van echte partnerdata: @jaidenpadel heeft maar 815 volgers) |
-| Gem. views per post | ≥ 1.000 |
+| Views per reel (mediaan) | ≥ 1.000 |
 | Engagement rate (ER%) | ≥ 2% |
 | Activiteit | ≥ 3 posts in de laatste 21 dagen |
 | Taal | NL-signaal in bio → anders status "review" i.p.v. automatisch afwijzen |
@@ -1213,6 +1213,7 @@ Draai met `--unattended` (bv. vanuit een geplande taak) om de handmatige
 altijd te wachten op een ENTER die nooit komt.
 """
 import sys, time, json, os, re
+from statistics import median
 from datetime import datetime, timezone
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -1241,10 +1242,6 @@ IG_APP_ID = "936619743392459"  # publieke web-app-id die instagram.com zelf gebr
 
 # ── Bronnen ──────────────────────────────────────────────────────────────────
 
-# Following-lijst van deze account(s) scannen (het account waarmee is ingelogd —
-# dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.
-SEED_ACCOUNTS = ["lars_a.i.h"]
-
 # Following-lijsten van NL creators scannen: wie zij volgen zijn vaak kleine creators
 # in dezelfde niche die anders moeilijk te vinden zijn via hashtags of commenters.
 CREATOR_FOLLOW_LISTS = []  # iamyasinflits volgt profvoetballers (Ziyech, Güler) — niet bruikbaar
@@ -1264,6 +1261,11 @@ CREATOR_FOLLOW_MAX   = 150   # max accounts te verwerken per creator-following l
 # actueler dan de graaf-gebaseerde chaining uit ig_zoek_trapAB.py.
 # Breed zoeken hoort nu in ig_zoek_trapAB.py; dit is de gerichte variant.
 COMMENTER_SEED_ACCOUNTS  = ["lars_a.i.h"]
+
+# Following-lijst van deze account(s) scannen (het account waarmee is ingelogd —
+# dat volgt bewust influencers op als curated shortlist). Leeg = overslaan.
+# Teruggezet 2026-09-23 op verzoek van lars.
+SEED_ACCOUNTS = ["lars_a.i.h"]
 COMMENTER_SEED_FOLLOW_MAX = 8    # was 60 - alleen de dichtstbijzijnde accounts
 REELS_PER_COMMENTER_SEED  = 3    # reels per gevolgd account
 
@@ -1508,13 +1510,101 @@ def load_known_handles():
 
 # ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────
 
+def _wait_for_queries(page, captured, names, timeout_s):
+    for _ in range(int(timeout_s * 2)):
+        if all(n in captured for n in names):
+            return
+        page.wait_for_timeout(500)
+
+
+def fetch_profile_graphql(page, username):
+    """Leest de GraphQL-antwoorden die de profielpagina zelf ophaalt.
+
+    Sinds ~15-09-2026 geeft /api/v1/users/web_profile_info/ structureel 429,
+    ook op de eerste aanvraag na dagen rust, terwijl de profielpagina zelf haar
+    data gewoon krijgt via /graphql/query (PolarisProfilePageContentQuery,
+    PolarisProfilePostsQuery, PolarisProfileReelsTabContentQuery). Die worden
+    hier afgevangen en omgezet naar de oude web_profile_info-vorm, zodat
+    evaluate_profile ongewijzigd kan blijven. Views staan alleen in de
+    reels-tab, daarom een tweede navigatie naar /reels/.
+    """
+    captured = {}
+    wanted = ("PolarisProfilePageContentQuery", "PolarisProfilePostsQuery",
+              "PolarisProfileReelsTabContentQuery")
+
+    def on_resp(r):
+        name = r.request.headers.get("x-fb-friendly-name", "")
+        if name in wanted and name not in captured and r.status == 200:
+            captured[name] = r
+
+    page.on("response", on_resp)
+    try:
+        page.goto(f"https://www.instagram.com/{username}/",
+                  wait_until="domcontentloaded", timeout=15000)
+        _wait_for_queries(page, captured, wanted[:2], 10)
+        if "PolarisProfilePageContentQuery" not in captured:
+            return None
+        u = (captured["PolarisProfilePageContentQuery"].json().get("data") or {}).get("user")
+        if not u:
+            return None
+
+        posts = []
+        if "PolarisProfilePostsQuery" in captured:
+            conn = (captured["PolarisProfilePostsQuery"].json().get("data") or {}).get(
+                "xdt_api__v1__feed__user_timeline_graphql_connection") or {}
+            posts = [e.get("node") or {} for e in conn.get("edges") or []]
+
+        play_counts = []
+        if not u.get("is_private"):
+            page.goto(f"https://www.instagram.com/{username}/reels/",
+                      wait_until="domcontentloaded", timeout=12000)
+            _wait_for_queries(page, captured, wanted[2:], 8)
+            if "PolarisProfileReelsTabContentQuery" in captured:
+                d = (captured["PolarisProfileReelsTabContentQuery"].json().get("data") or {})
+                clips = ((d.get("fetch__XDTUserDict") or {}).get("clips_connection") or {})
+                for e in clips.get("edges") or []:
+                    pc = ((e.get("node") or {}).get("media") or {}).get("play_count")
+                    if pc:
+                        play_counts.append(int(pc))
+
+        edges = []
+        for n in posts:
+            cap = (n.get("caption") or {}).get("text") or ""
+            edges.append({"node": {
+                "taken_at_timestamp": n.get("taken_at") or 0,
+                "edge_liked_by": {"count": n.get("like_count") or 0},
+                "edge_media_to_comment": {"count": n.get("comment_count") or 0},
+                "is_video": False,  # views komen uit _reel_play_counts
+                "edge_media_to_caption": {"edges": [{"node": {"text": cap}}] if cap else []},
+            }})
+
+        return {
+            "is_private": u.get("is_private"),
+            "edge_followed_by": {"count": u.get("follower_count") or 0},
+            "biography": u.get("biography") or "",
+            "full_name": u.get("full_name") or "",
+            "category": u.get("category") or "",
+            "edge_owner_to_timeline_media": {"edges": edges},
+            "_reel_play_counts": play_counts[:12],
+        }
+    except Exception:
+        return None
+    finally:
+        page.remove_listener("response", on_resp)
+
+
 def fetch_profile_json(page, username):
     """Haalt profieldata op via JS fetch() vanuit de Instagram-paginacontext.
 
     Navigeert eerst naar het profiel zodat de browser volledig in de instagram.com
     context zit, dan doet een async fetch() naar de API via page.evaluate(). De browser
     stuurt dan automatisch alle sessie-cookies en Instagram-specifieke headers mee.
+
+    Eerst via fetch_profile_graphql; dit oude endpoint is alleen nog reserve.
     """
+    user = fetch_profile_graphql(page, username)
+    if user is not None:
+        return user
     try:
         page.goto(
             f"https://www.instagram.com/{username}/",
@@ -1704,7 +1794,13 @@ def evaluate_profile(page, username):
                 if cap_text:
                     captions.append(cap_text[:300])
 
-        avg_views = int(sum(views) / len(views)) if views else 0
+        if user.get("_reel_play_counts"):
+            views = user["_reel_play_counts"]
+        # Mediaan i.p.v. gemiddelde (2026-09-23): een paar virale reels trokken
+        # het gemiddelde ver omhoog (@tennistomy: 30.688 gem. bij reels van
+        # 3-8k plus uitschieters van 43-80k), waardoor normale micro-creators
+        # op MAX_AVG_VIEWS afketsten.
+        avg_views = int(median(views)) if views else 0
 
         # Als JSON geen views geeft (veld hernoemd of leeg), DOM-reels-pagina gebruiken
         if avg_views == 0:

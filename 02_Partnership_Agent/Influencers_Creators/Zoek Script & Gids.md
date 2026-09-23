@@ -31,6 +31,8 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 |---|---|
 | Volgers | 300 – 50.000 (ondergrens per 2026-08-05 verlaagd op basis van echte partnerdata: @jaidenpadel heeft maar 815 volgers) |
 | Views per reel (mediaan) | ≥ 1.000 |
+| Organisatie-categorie (Sportclub, Community, media e.d.) | afgewezen |
+| ER > 50% | niet afgewezen, wel naar handmatig checken |
 | Engagement rate (ER%) | ≥ 2% |
 | Activiteit | ≥ 3 posts in de laatste 21 dagen |
 | Taal | NL-signaal in bio → anders status "review" i.p.v. automatisch afwijzen |
@@ -1316,6 +1318,15 @@ EXCLUDED_USERNAME_PATTERNS = re.compile(
     re.I,
 )
 
+# Instagram-categorieën van organisaties, geen persoonlijke creators. De username-
+# regex hierboven mist bv. @concretelionsbasketball (categorie "Community",
+# een basketbalclub - bevestigd door lars 23-09). Exacte match op de NL-labels.
+EXCLUDED_CATEGORIES = {
+    "sportclub", "amateursportteam", "sportteam", "sportbond", "sportwinkel",
+    "community", "krant", "tijdschrift", "media-/nieuwsbedrijf",
+    "nieuws- en mediawebsite", "omroep- en mediaproductiebedrijf", "festival",
+}
+
 # ── filters (Evaluatiecriteria.md) ───────────────────────────────────────────
 
 MIN_FOLLOWERS     = 300   # verlaagd: echte partner @jaidenpadel heeft maar 815 volgers
@@ -1323,6 +1334,10 @@ MAX_FOLLOWERS     = 50_000   # tussen nano/micro sweet spot (30k) en officiele 1
 MIN_AVG_VIEWS     = 1_000
 MAX_AVG_VIEWS     = 30_000    # boven dit: te groot voor micro-creator
 MIN_ER_PCT        = 2.0
+# Boven deze ER niet afwijzen maar markeren: kan echt zijn (bevestigd door lars
+# 23-09: @parsarafia, 515 volgers, gaat vaak viraal t.o.v. zijn volgersaantal)
+# maar ook gekochte likes of één uitschieter. Altijd even met de hand bekijken.
+EXTREME_ER_PCT    = 50.0
 MAX_INACTIVE_DAYS = 21   # "3 posts in de afgelopen 3 weken"
 MIN_RECENT_POSTS  = 3
 
@@ -1856,6 +1871,11 @@ def evaluate_profile(page, username):
         "fallback": used_fallback,
     }
 
+    if result["category"].lower() in EXCLUDED_CATEGORIES:
+        result["status"] = "reject"
+        result["reason"] = f"organisatie-account (categorie: {result['category']})"
+        return result
+
     if followers > MAX_FOLLOWERS or (followers > 0 and followers < MIN_FOLLOWERS):
         result["status"] = "reject"
         result["reason"] = f"volgers buiten bereik ({followers:,})"
@@ -1904,6 +1924,8 @@ def evaluate_profile(page, username):
         return result
 
     reasons = [views_reason] if views_reason else []
+    if er_pct is not None and er_pct > EXTREME_ER_PCT:
+        reasons.append(f"extreme ER ({er_pct}%) - viraal of gekochte likes? handmatig checken")
     if not is_dutch:
         reasons.append("geen NL-signaal in bio - handmatig checken")
 

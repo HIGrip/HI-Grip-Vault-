@@ -37,7 +37,7 @@ REQUIRED_KEYS = [
 ]
 ALLOWED = {
     "bron": {"los", "routine"},
-    "routine": {"", "growth-radar", "seo-regressiecheck", "denzel-week"},
+    "routine": {"", "growth-radar", "seo-regressiecheck", "denzel-week", "seo-conversietest"},
     "categorie": {"SEO", "CRO", "Social", "Product", "B2B", "Merk", "Compliance", "Techniek"},
     "status": {"nieuw", "bekeken", "in-uitvoering", "verwerkt", "gearchiveerd"},
     "prioriteit": {"P1", "P2", "P3"},

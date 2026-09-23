@@ -23,7 +23,7 @@ id: 2026-09-15-seo-audit
 titel: "SEO-audit higrip.nl — september 2026"
 datum: 2026-09-15
 bron: los                # los | routine
-routine: ""              # growth-radar | seo-regressiecheck | denzel-week | "" bij los
+routine: ""              # growth-radar | seo-regressiecheck | denzel-week | seo-conversietest | "" bij los
 categorie: SEO           # SEO | CRO | Social | Product | B2B | Merk | Compliance | Techniek
 status: nieuw            # nieuw | bekeken | in-uitvoering | verwerkt | gearchiveerd
 prioriteit: P1           # P1 | P2 | P3
@@ -93,4 +93,5 @@ Geen docs in de db → alleen dat melden; geen build of publish nodig tenzij de 
 | `higrip-growth-radar` (dagelijks) | stap 5E: dagrapport óók als notitie `JJJJ-MM-DD-growth-radar-<focus>` (`bron: routine`, `routine: growth-radar`), daarna A4–A6 en B. Zondag: alleen B + build + publish |
 | `higrip-seo-regressiecheck` (maandag) | zelfde patroon, id `JJJJ-MM-DD-regressiecheck`, `routine: seo-regressiecheck` |
 | Denzel-weekroutine (cloud, maandag) | schrijft het weekoverzicht als `05_Research\JJJJ-MM-DD-weekoverzicht.md` (`routine: denzel-week`), voert A3, A4 en A6 uit — **geen publish** (dat doet de dagelijkse lokale routine) |
+| `website-seo-en-cconversietest` (wekelijks) | id `JJJJ-MM-DD-seo-conversietest-run-<n>`, `routine: seo-conversietest`; volledig rapport staat in de verborgen Shopify-pagina `seo-routine-logboek`, daarna A3–A6 |
 | Stop-hook `research-check.py` | vangnet: meldt niet-gecommitte wijzigingen in `05_Research` bij het einde van een sessie |

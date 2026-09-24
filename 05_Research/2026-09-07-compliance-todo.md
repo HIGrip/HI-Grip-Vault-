@@ -8,7 +8,7 @@ categorie: Compliance
 status: bekeken
 prioriteit: P1
 samenvatting: "Alle NL/EU-verplichtingen voor HÏ Grip op één lijst (7 september 2026, aangevuld 14 september): vijf punten lopen nu al rechtsrisico — UPV Textiel, GPSR-gegevens, bewijsdossier gripclaims, van-prijzen en vezelsamenstelling. Eerste harde datum: de richtlijn duurzaamheidsclaims is van toepassing per 27 september 2026."
-gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-23-seo-conversietest-run-1]
+gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-23-seo-conversietest-run-1, 2026-09-24-financieel-plan-2027-2031-bmc-2031]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\00_Brand_Core\\Compliance\\Compliance To-Do Lijst.md"
 deadline: "2026-09-27"

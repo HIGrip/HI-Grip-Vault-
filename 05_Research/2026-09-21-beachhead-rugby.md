@@ -8,7 +8,7 @@ categorie: Merk
 status: nieuw
 prioriteit: P1
 samenvatting: "Rugby in Nederland is klein (100 clubs, ruim 19.000 leden, 54% van de clubs in Zuid-Holland, Noord-Holland en Brabant) maar groeit, kent geen enkel verbod op gripsokken en heeft geen Nederlands gripsokkenmerk — de winkels die ze verkopen zijn in herenmaten uitverkocht. Voor HÏ Grip is rugby een geloofwaardigheids-beachhead (dominantie is haalbaar via een handvol Zuid-Hollandse clubs), geen volume-beachhead: zelfs bij dominantie blijft de omzet ver onder de €100k-doelstelling."
-gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-15-seo-audit]
+gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-15-seo-audit, 2026-09-24-financieel-plan-2027-2031-bmc-2031]
 vervangt: []
 bronbestand: ""
 deadline: ""

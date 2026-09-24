@@ -254,7 +254,7 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-24T03:45:57+00:00",
+ "gebouwd": "2026-09-24T14:11:10+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -285,6 +285,65 @@ window.HI_RESEARCH = {
    "status": "nieuw",
    "titel": "Growth Radar — CRO (prijsladder gewijzigd, verzenddrempel, script tags)",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-growth-radar-cro.md",
+   "vervangt": []
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#f9ed393b",
+     "prioriteit": "P1",
+     "tekst": "Omzet- en winstdoelen in Strategische Keuzes vervangen door de doelen uit het financieel plan (2031 ± € 2,5 mln omzet, winst vanaf 2031)"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#c9ea721c",
+     "prioriteit": "P1",
+     "tekst": "Kolom 2026 en het eigen vermogen per 1-1-2027 invullen in het Excel-model"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#00d41508",
+     "prioriteit": "P2",
+     "tekst": "Offertes aanvragen voor de schattingen: OEKO-TEX Standard 100, GRS, Portugese short-term partner"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#4ab13067",
+     "prioriteit": "P2",
+     "tekst": "Productie in Pakistan (GSP+, 0% invoerrecht) laten offreren als alternatief voor China"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#4021c8a0",
+     "prioriteit": "P2",
+     "tekst": "Voor de BV-omzetting per 1-1-2028 bespreken met een fiscalist: geruisloze inbreng, gebruikelijk loon, WBSO-starterstatus"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#95245701",
+     "prioriteit": "P3",
+     "tekst": "Scenario toevoegen met 25% lagere groei om de financieringsbehoefte in het slechtste geval te toetsen"
+    }
+   ],
+   "body_md": "# Financieel plan 2027-2031 op basis van BMC 2031\n\n## In het kort\n\nGevraagd waren een vermogensbehoefte, een financieringsplan en een exploitatiebegroting op basis van het Business Model Canvas 2031. 2026 vult het team zelf in; 2027 staat per kwartaal, 2028-2031 per jaar. Het vorige model (`J2 - Financieel Model Blok 7.xlsx`) klopte niet: vier founders in plaats van drie, geen onderbouwing per post en een financiering die niet aansloot op de vermogensbehoefte. Het nieuwe model heeft 11 tabbladen met 2.234 formules en 0 fouten (herberekend in Excel). Elke aanname staat in *Aannames*, met een bron of een onderbouwing.\n\n## Bevindingen\n\n**Kerncijfers (€, excl. btw)**\n\n| | 2027 | 2028 | 2029 | 2030 | 2031 |\n|---|---|---|---|---|---|\n| Omzet | 154.290 | 430.318 | 944.550 | 1.673.320 | 2.489.160 |\n| Brutomarge | 74% | 74% | 72% | 71% | 71% |\n| EBITDA | −99.870 | −201.672 | −185.445 | −38.676 | +186.314 |\n| Resultaat na belasting | −118.966 | −245.500 | −243.517 | −126.628 | +103.778 |\n| Vermogensbehoefte (begin jaar) | 169.329 | 380.556 | 484.707 | 511.022 | 547.520 |\n| Team incl. founders | 3 | 5 | 6 | 7 | 8 |\n\n1. **Break-even ligt bij ± € 2,3 mln omzet.** De vaste lasten uit de BMC (5 FTE, R&D, Academy, kantoor met lab) zijn in 2031 ± € 0,95 mln. De contributiemarge ligt rond de 40%: brutomarge 70%, min variabele marketing (± 15%), min logistiek (± 13%). De roadmap in [Strategische Keuzes](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) (2031: € 1,5 mln omzet en € 1 mln winst) is daarmee niet haalbaar. Een netto marge van 66% bestaat niet bij deze kostenstructuur.\n2. **Logistiek is de onderschatte kostenpost.** Sokken hebben een lage orderwaarde, waardoor fulfilment plus verzending ± € 4,60–5,50 per zending kost (13–19% van de omzet). Hogere aantallen per order (2,0 → 2,4 stuks) en volumetarieven zijn de hefbomen.\n3. **Productinkoop is geen probleem.** Een gripsok kost € 1,40–1,96 FOB (eigen batches en offerte). Bij de adviesprijs van € 17,99 ligt de brutomarge op ± 70–74%, zelfs met een Europese short-term partner voor 5–12% van het volume.\n4. **Invoerrecht is een verborgen besparing.** Sokken uit China betalen 12% invoerrecht (HS 6115), uit Pakistan 0% (GSP+). In 2031 scheelt dat ± € 50k per jaar.\n5. **De WBSO maakt het R&D-team betaalbaar.** Een starter krijgt 50% over het S&O-loon, in 2030 ± € 35–50k per jaar. Het eigen R&D-team start pas in 2030, samen met het lab. Tot dan loopt R&D via fabriek en kennisinstellingen.\n6. **Financiering sluit elk jaar.** 2027: founders € 15k + Qredits € 75k + crowd/FFF € 80k. 2028: BV + angel € 250k + UNIIQ € 150k voor de skisok met gelprotectie. 2029: seedronde € 500k. 2030: bank met BMKB € 200k. De rekening-courant (tot € 200k) is de sluitpost. De solvabiliteit is begin 2031 laag (6,5%), maar het garantievermogen inclusief de achtergestelde UNIIQ-lening is 38,5%.\n7. **De ondernemersvergoeding blijft laag tot er winst is.** Het minimum van € 2.000 p.p./mnd (eis uit het vak) geldt tot en met 2028. Pas daarna groeit de vergoeding naar € 3.250 in 2031. Bij een BV mag een verliesgevende start-up onder het gebruikelijk loon blijven.\n8. **Vpb speelt tot en met 2031 geen rol.** De BV-verliezen van 2028-2030 (± € 0,6 mln) worden verrekend met de winst van 2031. De VOF-verliezen van 2027 blijven bij de vennoten.\n\n**Belangrijkste benchmarks die de uitgaven onderbouwen:** DTC-marketing 12–20% van de omzet in de groeifase, apparel 6–22%. Commissie bol.com 12,4% + € 0,40, TikTok Shop 9%. Fulfilment € 1,50–3,50 per order, PostNL-brievenbuspakje € 4,55. Werkgeverslasten 20–40%. Qredits 7,95–9,95%, UNIIQ 8%, bank 4–9% plus 2–3% BMKB-provisie.\n\n## Acties\n- [ ] P1 · Omzet- en winstdoelen in Strategische Keuzes vervangen door de doelen uit het financieel plan (2031 ± € 2,5 mln omzet, winst vanaf 2031)\n- [ ] P1 · Kolom 2026 en het eigen vermogen per 1-1-2027 invullen in het Excel-model\n- [ ] P2 · Offertes aanvragen voor de schattingen: OEKO-TEX Standard 100, GRS, Portugese short-term partner\n- [ ] P2 · Productie in Pakistan (GSP+, 0% invoerrecht) laten offreren als alternatief voor China\n- [ ] P2 · Voor de BV-omzetting per 1-1-2028 bespreken met een fiscalist: geruisloze inbreng, gebruikelijk loon, WBSO-starterstatus\n- [ ] P3 · Scenario toevoegen met 25% lagere groei om de financieringsbehoefte in het slechtste geval te toetsen\n\n## Bronnen\n\n- Eigen administratie: `Financiën - HÏ Grip.xlsx` (WORKSPACE › Finance) met batches, offertes, B2B-staffels en maandkosten\n- [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md) (adviesprijs, B2B-prijzen), [2026-09-21-beachhead-rugby](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-beachhead-rugby.md) (19.000 rugbyers), [2026-09-07-compliance-todo](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-compliance-todo.md) (UPV, EPR, DPP)\n- bol.com-commissies 2026: https://www.boloo.co/blog/commissies-bol-com\n- TikTok Shop NL 9%: https://www.frankwatching.com/archive/2026/06/02/tiktok-shop-nederland-kansen-webwinkeliers/\n- Qredits: https://www.qredits.nl/zakelijk-krediet/mkb-krediet\n- WBSO 2026: https://www.rendement.nl/innovatie/nieuws/subsidieregeling-wbso-in-2026-onveranderd.html\n- Vpb 2026: https://www.mkbservicedesk.nl/nieuws/ondernemersnieuws/vpb-tarief-in-2025-en-2026\n- Fulfilment: https://www.chain-logistics.nl/kennis/wat-kost-fulfilment/ · PostNL: https://www.postnl.nl/zakelijk/tarieven/\n- Werkgeverslasten: https://www.ondernemenmetpersoneel.nl/orienteren/personeelskosten/dit-zijn-de-kosten-van-personeel\n- DTC-marketing %: https://eightx.co/blog/marketing-spend-by-dtc-vertical-2026 · CAC: https://eightx.co/blog/average-cac-ecommerce-vertical\n- UNIIQ: https://jtf-rijnmond.kansenvoorwest.nl/financieringsinstrumenten/uniiq-startups-zuid-holland-/\n- KNVB 1.261.967 leden: https://www.knvb.nl/nieuws/organisatie/berichten/71258/voetbal-blijft-groeien-knvb-leden%C2%ADaantal-stijgt-wederom · KNLTB 844.000 spelers: https://www.knltb.nl/nieuws/2025/02/groei-in-het-tennis-en-padelspeelveld-van-de-knltb-in-2024-een-succesvolle-strategie/\n- Volledige lijst (38 bronnen): tabblad *Bronnen* in het Excel-model\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "C:\\Users\\Test\\Downloads\\HÏ Grip - Financieel Plan 2026-2031 (BMC 2031).xlsx",
+   "bronbestand_url": null,
+   "categorie": "Merk",
+   "datum": "2026-09-24",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-21-beachhead-rugby",
+    "2026-09-07-compliance-todo"
+   ],
+   "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De BMC 2031 (team van 8 met eigen R&D, Performance Academy, abonnementen, uitrol naar Europa) wordt pas winstgevend vanaf ± € 2,3 mln omzet. Het plan groeit bottom-up van € 154k (2027) naar € 2,49 mln (2031), met ± € 0,73 mln aanloopverlies in 2027-2030 dat gedekt wordt door stapelfinanciering (Qredits, crowd/FFF, angel, UNIIQ, seedronde en een bank met BMKB); in elk jaar sluit de financiering.",
+   "status": "nieuw",
+   "titel": "Financieel plan 2027-2031 op basis van BMC 2031 (vermogensbehoefte, financieringsplan, exploitatiebegroting)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md",
    "vervangt": []
   },
   {
@@ -549,7 +608,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-04-werkdossier-stand-van-zaken",
-    "2026-09-15-seo-audit"
+    "2026-09-15-seo-audit",
+    "2026-09-24-financieel-plan-2027-2031-bmc-2031"
    ],
    "id": "2026-09-21-beachhead-rugby",
    "prioriteit": "P1",
@@ -1190,7 +1250,8 @@ window.HI_RESEARCH = {
    "deadline": "2026-09-27",
    "gerelateerd": [
     "2026-09-04-werkdossier-stand-van-zaken",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-24-financieel-plan-2027-2031-bmc-2031"
    ],
    "id": "2026-09-07-compliance-todo",
    "prioriteit": "P1",
@@ -1493,14 +1554,14 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 26,
-   "P2": 55,
-   "P3": 35
+   "P1": 28,
+   "P2": 58,
+   "P3": 36
   },
   "per_categorie": {
    "CRO": 4,
    "Compliance": 1,
-   "Merk": 4,
+   "Merk": 5,
    "SEO": 11,
    "Social": 1,
    "Techniek": 1
@@ -1562,12 +1623,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 7,
+    "aantal": 8,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 22
+  "totaal_notities": 23
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

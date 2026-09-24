@@ -74,14 +74,14 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** 48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €14,99, je drempel ligt op €30. Elke 1-pack-koper loopt in die verrassing.\n**Waar:** `snippets/product-information-content.liquid`, direct onder de prijs\n**Wat:** Voortgangsbalk met \"Nog €15,01 tot gratis verzending\" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in \"✓ Gratis verzending\".\n**Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.\n**Inspanning:** Half dagdeel",
-   "id": "backlog#c5274380",
-   "kop": "1. Toon de gratis-verzendingsdrempel op de productpagina",
+   "body_md": "**Update 24 sep 2026:** Live prijzen en drempel zijn veranderd: 1-pack €13,49, verzendkosten €4,50, drempel volgens announcementbar €35 (FAQ zegt nog €30 — eerst gelijktrekken, zie P1-actie in vault-notitie `2026-09-23-seo-conversietest-run-1`). Omdat het 3-pack per paar nog maar €0,17 goedkoper is dan een 1-pack, is gratis verzending nu hét argument voor het 3-pack — dit punt weegt daardoor zwaarder. Balktekst bij 1-pack: \"Nog €21,51 tot gratis verzending\". Laat het bedrag uit één theme-setting komen, niet hardcoded.\n**Waarom:** 48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €13,49, je drempel ligt op €35. Elke 1-pack-koper loopt in die verrassing.\n**Waar:** `snippets/product-information-content.liquid`, direct onder de prijs\n**Wat:** Voortgangsbalk met \"Nog €21,51 tot gratis verzending\" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in \"✓ Gratis verzending\".\n**Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.\n**Inspanning:** Half dagdeel",
+   "id": "backlog#6dd6caf8",
+   "kop": "1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)",
    "prioriteit": "P1",
    "velden": {
     "Waar": "`snippets/product-information-content.liquid`, direct onder de prijs",
-    "Waarom": "48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €14,99, je drempel ligt op €30. Elke 1-pack-koper loopt in die verrassing.",
-    "Wat": "Voortgangsbalk met \"Nog €15,01 tot gratis verzending\" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in \"✓ Gratis verzending\"."
+    "Waarom": "48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €13,49, je drempel ligt op €35. Elke 1-pack-koper loopt in die verrassing.",
+    "Wat": "Voortgangsbalk met \"Nog €21,51 tot gratis verzending\" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in \"✓ Gratis verzending\"."
    }
   },
   {
@@ -97,14 +97,12 @@ window.HI_RESEARCH = {
    }
   },
   {
-   "afgevinkt": false,
-   "body_md": "**Waarom:** Staat al klaar in het projectgeheugen maar is nog niet toegepast. Dit is gratis winst die al maanden wacht.\n**Titel:** `Gripsokken | Anti-Slip Sportsokken voor Elke Sport | HÏ Grip`\n**Beschrijving:** `Voorkom glijden in je schoen met HÏ Grip gripsokken. Voor padel, voetbal, rugby & fitness. ✓ 1500+ sporters ✓ Gratis verzending vanaf €30 ✓ Vandaag verzonden`\n**Inspanning:** 15 minuten",
-   "id": "backlog#1b3b78a6",
-   "kop": "3. Meta title en description live zetten",
+   "afgevinkt": true,
+   "body_md": "**Wat er is gebeurd:** Staat live met iets andere tekst: title `Gripsokken | Maximale Grip voor Elke Sport | HÏ Grip`, description met \"3000+ sporters\" en \"vanaf €35\". Let op: die €35 moet kloppen met de verzenddrempel-actie uit `2026-09-23-seo-conversietest-run-1`.\n**Oorspronkelijk:** Staat al klaar in het projectgeheugen maar is nog niet toegepast. Dit is gratis winst die al maanden wacht.\n**Titel:** `Gripsokken | Anti-Slip Sportsokken voor Elke Sport | HÏ Grip`\n**Beschrijving:** `Voorkom glijden in je schoen met HÏ Grip gripsokken. Voor padel, voetbal, rugby & fitness. ✓ 1500+ sporters ✓ Gratis verzending vanaf €30 ✓ Vandaag verzonden`\n**Inspanning:** 15 minuten",
+   "id": "backlog#341f8d60",
+   "kop": "~~3. Meta title en description live zetten~~ — live (bevestigd 24 sep 2026)",
    "prioriteit": "P1",
-   "velden": {
-    "Waarom": "Staat al klaar in het projectgeheugen maar is nog niet toegepast. Dit is gratis winst die al maanden wacht."
-   }
+   "velden": {}
   },
   {
    "afgevinkt": false,
@@ -177,14 +175,14 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** 2026-onderzoek naar prijsweergave laat zien dat het tonen van de prijs per stuk bij multipacks 5–15% meer conversie oplevert dan alleen de totaalprijs — ankering maakt de korting tastbaar. Jouw pack-structuur (1/3/5) is exact deze bundelvorm, maar de korting per paar staat nergens.\n**Waar:** `snippets/product-information-content.liquid`, bij de variant-selector\n**Wat:** \"€X,XX/paar\" tonen onder elke pack-optie: 1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar (herberekend per gekozen variant).\n**Effect:** Versterkt samen met de gratis-verzendbalk (punt 1) de duw richting het 3-pack.\n**Inspanning:** 1-2 uur",
-   "id": "backlog#d29f2f96",
-   "kop": "12. Toon prijs per paar naast de pack-selector (nieuw 17 sep 2026)",
+   "body_md": "**Update 24 sep 2026:** Live prijzen zijn nu 1-pack €13,49 (doorgestreept €14,95) / 3-pack €39,95 / 5-pack €61,95 = €13,49 / €13,32 / €12,39 per paar. Het 3-pack scheelt maar €0,17 per paar (−1%): een per-paar-prijs tegen het 1-pack overtuigt dan niet. Twee opties: (a) per-paar-prijs afzetten tegen het ankerbedrag €14,95 (\"€13,32/paar — 11% onder normaal\"), of (b) eerst de pack-prijsladder zelf herzien (commerciële keuze). De bedragen hieronder zijn achterhaald.\n**Waarom:** 2026-onderzoek naar prijsweergave laat zien dat het tonen van de prijs per stuk bij multipacks 5–15% meer conversie oplevert dan alleen de totaalprijs — ankering maakt de korting tastbaar. Jouw pack-structuur (1/3/5) is exact deze bundelvorm, maar de korting per paar staat nergens.\n**Waar:** `snippets/product-information-content.liquid`, bij de variant-selector\n**Wat:** \"€X,XX/paar\" tonen onder elke pack-optie, herberekend per gekozen variant — ~~1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar~~ (achterhaald door prijswijziging, zie update).\n**Effect:** Versterkt samen met de gratis-verzendbalk (punt 1) de duw richting het 3-pack.\n**Inspanning:** 1-2 uur",
+   "id": "backlog#a2e3406d",
+   "kop": "12. Toon prijs per paar naast de pack-selector (nieuw 17 sep 2026, herzien 24 sep 2026)",
    "prioriteit": "P2",
    "velden": {
     "Waar": "`snippets/product-information-content.liquid`, bij de variant-selector",
     "Waarom": "2026-onderzoek naar prijsweergave laat zien dat het tonen van de prijs per stuk bij multipacks 5–15% meer conversie oplevert dan alleen de totaalprijs — ankering maakt de korting tastbaar. Jouw pack-structuur (1/3/5) is exact deze bundelvorm, maar de korting per paar staat nergens.",
-    "Wat": "\"€X,XX/paar\" tonen onder elke pack-optie: 1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar (herberekend per gekozen variant)."
+    "Wat": "\"€X,XX/paar\" tonen onder elke pack-optie, herberekend per gekozen variant — ~~1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar~~ (achterhaald door prijswijziging, zie update)."
    }
   },
   {
@@ -209,6 +207,18 @@ window.HI_RESEARCH = {
     "Waar": "Google Search Console → higrip.nl-property → nieuw AI-rapport",
     "Waarom": "Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.",
     "Wat": "Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "body_md": "**Waarom:** Shopify stopt script tags in de Online Store op 1 maart 2027 (developer-changelog, 24 aug 2026). Op higrip.nl laden via script tags nu nog de Bundler-app (`cdn-bundler.nice-team.net`) en drie Trustpilot-scripts. Het projectgeheugen noemt de Bundler-app verwijderd na de WK-actie, maar live staan nog het script plus negen `bundler`-verwijzingen in de HTML — onnodig JavaScript dat ook punt 14 (INP) raakt. Trustpilot is je zichtbare review-proof; die mag niet stilletjes wegvallen.\n**Waar:** Shopify admin → Apps (Bundler: nog geïnstalleerd?) en Online Store → Thema aanpassen → App embeds; Trustpilot-app-instellingen.\n**Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.\n**Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.\n**Inspanning:** 1 uur",
+   "id": "backlog#b34063f3",
+   "kop": "16. Script-tag-apps overzetten vóór 1 maart 2027 — en Bundler-restanten opruimen (nieuw 24 sep 2026)",
+   "prioriteit": "P2",
+   "velden": {
+    "Waar": "Shopify admin → Apps (Bundler: nog geïnstalleerd?) en Online Store → Thema aanpassen → App embeds; Trustpilot-app-instellingen.",
+    "Waarom": "Shopify stopt script tags in de Online Store op 1 maart 2027 (developer-changelog, 24 aug 2026). Op higrip.nl laden via script tags nu nog de Bundler-app (`cdn-bundler.nice-team.net`) en drie Trustpilot-scripts. Het projectgeheugen noemt de Bundler-app verwijderd na de WK-actie, maar live staan nog het script plus negen `bundler`-verwijzingen in de HTML — onnodig JavaScript dat ook punt 14 (INP) raakt. Trustpilot is je zichtbare review-proof; die mag niet stilletjes wegvallen.",
+    "Wat": "1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn."
    }
   },
   {
@@ -244,9 +254,39 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-23T23:40:31+00:00",
+ "gebouwd": "2026-09-24T03:45:57+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-growth-radar-cro#76b6296e",
+     "prioriteit": "P2",
+     "tekst": "FAQ-blok en retourtekst op de productpagina van \"u\" naar \"je\" omzetten"
+    }
+   ],
+   "body_md": "# Growth Radar — CRO (prijsladder gewijzigd, verzenddrempel, script tags)\n\n## In het kort\nDe live productpagina wijkt af van alles wat in de backlog staat. De prijzen zijn verlaagd: een 3-pack is nu per paar nog maar €0,17 goedkoper dan een 1-pack. En dezelfde pagina noemt twee verschillende drempels voor gratis verzending: €35 in de balk en de meta description, €30 in de FAQ. Daardoor is gratis verzending het enige echte argument voor een groter pack. Die tegenstrijdigheid was gisteren al gemeld, maar weegt nu zwaarder. Punten 1 en 12 zijn daarop bijgewerkt. Verder stopt Shopify op 1 maart 2027 met script tags. Trustpilot en een Bundler-script laden nog via die weg.\n\n## Bevindingen\n\n### De prijsladder is veranderd: het 3-pack is nauwelijks voordeliger per paar\n\nEen check van de live productdata (`/products/performance-gripsokken.js`, 24 september 2026) laat andere prijzen zien dan in de backlog en het projectgeheugen staan:\n\n| Pack | Oude prijs (backlog) | Live prijs | Per paar live | Voordeel per paar t.o.v. 1-pack |\n|---|---|---|---|---|\n| 1-pack | €14,99 | €13,49 (van €14,95) | €13,49 | — |\n| 3-pack | €41,99 | €39,95 | €13,32 | €0,17 |\n| 5-pack | €64,99 | €61,95 | €12,39 | €1,10 |\n\nDrie losse 1-packs kosten samen €40,47, dus maar €0,52 meer dan één 3-pack. De prijsladder zelf geeft de koper dus nauwelijks een reden om groter te kopen. Het echte verschil zit in de verzendkosten. Onder de drempel betaal je €4,50, en een 1-pack van €13,49 blijft daar ruim onder. Twee 1-packs ook: €26,98.\n\nDat verandert twee backlogpunten. Een prijs per paar tonen (punt 12) zou nu vooral laten zien hoe klein het verschil is: \"€13,49 → €13,32/paar\" overtuigt niemand. De ankerwerking uit het onderzoek van 17 september werkt alleen als het verschil voelbaar is. Voor het 5-pack is het dat wel (−8%), voor het 3-pack niet. De verzendbalk (punt 1) wordt daarmee het belangrijkste argument voor het 3-pack. Die balk moet dan wel het juiste bedrag tonen, en daar gaat het nu mis.\n\n> **Voor higrip.nl:** In `snippets/product-information-content.liquid` (punt 12) kun je de prijs per paar beter afzetten tegen de doorgestreepte €14,95. Het 3-pack wordt dan \"€13,32/paar, 11% onder de normale prijs\" in plaats van −1%. Of je stelt de pack-prijzen zelf opnieuw vast. Dat is een commerciële keuze, geen code-fix. Voor punt 1 wordt de tekst bij een 1-pack \"Nog €21,51 tot gratis verzending\" (bij een drempel van €35).\n\n**Actie:** Punten 1 en 12 in de backlog zijn bijgewerkt met de nieuwe cijfers. Beslis eerst welke pack-prijzen je wilt aanhouden en bouw daarna.\n\n---\n\n### Twee verzenddrempels op dezelfde pagina: bevestigd en urgenter geworden\n\nDe seo-conversietest van 23 september ([2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md)) vond al dat higrip.nl zichzelf tegenspreekt over de verzenddrempel. Vandaag live bevestigd: de announcementbar en de meta description zeggen **€35**, het FAQ-blok op dezelfde productpagina zegt *\"Bij een bestelwaarde van €30 of meer profiteert u van gratis verzending\"*. De verzendkosten zijn €4,50.\n\nNieuw ten opzichte van gisteren: door de prijswijziging hierboven is gratis verzending het enige echte argument voor het 3-pack. Een drempel die niet klopt, raakt daarmee het belangrijkste argument om groter te kopen. Daarnaast spreken het FAQ-blok en de retourtekst de klant met \"u\" aan (\"profiteert u\", \"uw retourproces\"). De rest van de site gebruikt \"je\".\n\n> **Voor higrip.nl:** De P1-actie uit de notitie van 23 september (verzend- en retourinfo overal gelijktrekken) moet af zijn vóór backlogpunt 1 (de verzendbalk). Neem de omzetting van \"u\" naar \"je\" in het FAQ-blok en de retourtekst in dezelfde ronde mee. Laat de balk het bedrag uit één theme-setting halen, zodat hij niet opnieuw uit de pas kan lopen.\n\n**Actie:** Geen nieuw backlogpunt, want de actie staat al in de notitie van 23 september. Wel meegenomen in punt 1.\n\n---\n\n### Script tags stoppen op 1 maart 2027: Trustpilot en Bundler laden nog zo\n\nShopify kondigde op 24 augustus 2026 in de developer-changelog aan dat script tags (de oude manier waarop apps JavaScript in je webshop injecteren) op **1 maart 2027** stoppen met werken in de Online Store. Apps moeten overstappen op theme app extensions (app embeds). Scripts die dan nog via script tags lopen, vallen zonder foutmelding weg. Het is hetzelfde patroon als bij de Checkout Extensibility-deadline van 26 augustus (zie punt 11).\n\nOp de live productpagina laden via script tags (`asyncLoad`) nu vier scripts:\n- `cdn-bundler.nice-team.net/app/js/bundler.js` (Bundler-app)\n- drie Trustpilot-scripts (`header.min.js`, `success.min.js`, trustbox-instellingen)\n\n> **Voor higrip.nl:** Het projectgeheugen zegt dat de Bundler-app is verwijderd na de WK-actie. Live laden echter nog steeds het Bundler-script plus negen `bundler`-verwijzingen in de HTML (target-elementen, een app-block, statusscript). Óf de app is nog geïnstalleerd, óf er zijn restanten achtergebleven. Dat is ook JavaScript dat punt 14 (INP) zwaarder maakt. Trustpilot is je review-proof: als die widget straks stilletjes verdwijnt, raakt dat punt 2 (reviews) en de trust op de productpagina.\n\n**Actie:** Nieuw backlogpunt 16 (P2): Bundler-app verwijderen of de restanten opruimen, en bij Trustpilot controleren of er een app-embed-versie is die de script tags vervangt.\n\n---\n\n### Ook gecontroleerd, geen actie\n- **iDEAL → Wero:** De betaaliconen op higrip.nl tonen al het co-branded \"iDEAL | Wero\"-logo. Shopify Payments regelt dat automatisch. De volledige overstap op Wero loopt tot eind 2027 en vraagt nu niets van je.\n- **Meta title en description (punt 3):** Staan inmiddels live, met iets andere tekst dan in de backlog (\"Maximale Grip voor Elke Sport\", \"3000+ sporters\", \"vanaf €35\"). Punt 3 is afgevinkt.\n- **Retourbeleid op de productpagina:** Staat erop (\"30 dagen retour via deze link\"). Baymard meet dat 60% van de kopers dit op de productpagina zoekt, dus hier is geen actie nodig.\n\n## Acties\nBacklogpunten 1, 12 (herzien) en 16 (nieuw) staan in `ACTIEBACKLOG.md`. De verzenddrempel-actie staat in [2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md).\n- [ ] P2 · FAQ-blok en retourtekst op de productpagina van \"u\" naar \"je\" omzetten\n\n## Bronnen\n- [Shopify Developer Changelog — Online Store Script Tags deprecation (24 aug 2026)](https://shopify.dev/changelog)\n- [Wero uitgelegd — Thuiswinkel.org (bijgewerkt 24 aug 2026)](https://www.thuiswinkel.org/kennisbank/kennisartikelen/wero-uitgelegd-al-je-vragen-over-het-nieuwe-europese-betaalsysteem/)\n- [iDEAL to Wero: Your Complete Guide for 2026–2027 — CM.com](https://www.cm.com/blog/ideal-to-wero-what-merchants-need-to-know-about-the-transition/)\n- [Shopify Help Center — iDEAL | Wero](https://help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods/ideal)\n- [Product Details Page UX Research — Baymard](https://baymard.com/research/product-page)\n- Eigen meting: live `https://www.higrip.nl/products/performance-gripsokken` (HTML + `.js`-productdata), 24 september 2026\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-24-cro.md",
+   "bronbestand_url": null,
+   "categorie": "CRO",
+   "datum": "2026-09-24",
+   "deadline": "2027-03-01",
+   "gerelateerd": [
+    "2026-09-17-growth-radar-cro",
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-21-growth-radar-seo-technisch"
+   ],
+   "id": "2026-09-24-growth-radar-cro",
+   "prioriteit": "P1",
+   "routine": "growth-radar",
+   "samenvatting": "De live prijzen zijn verlaagd (€13,49 / €39,95 / €61,95), waardoor het 3-pack per paar maar €0,17 goedkoper is dan een 1-pack: gratis verzending is nu het enige echte pack-argument, en juist die drempel spreekt zichzelf tegen (€35 vs €30). Daarnaast stoppen Shopify-script tags op 1 maart 2027, terwijl Trustpilot en Bundler-restanten er nog via laden.",
+   "status": "nieuw",
+   "titel": "Growth Radar — CRO (prijsladder gewijzigd, verzenddrempel, script tags)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-growth-radar-cro.md",
+   "vervangt": []
+  },
   {
    "acties": [
     {
@@ -306,7 +346,8 @@ window.HI_RESEARCH = {
     "2026-09-22-growth-radar-seo-content",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
     "2026-09-07-compliance-todo",
-    "2026-09-23-growth-radar-ai-search"
+    "2026-09-23-growth-radar-ai-search",
+    "2026-09-24-growth-radar-cro"
    ],
    "id": "2026-09-23-seo-conversietest-run-1",
    "prioriteit": "P1",
@@ -412,7 +453,8 @@ window.HI_RESEARCH = {
     "2026-09-15-regressiecheck",
     "2026-09-15-seo-audit",
     "2026-09-21-regressiecheck",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-24-growth-radar-cro"
    ],
    "id": "2026-09-21-growth-radar-seo-technisch",
    "prioriteit": "P2",
@@ -551,7 +593,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-14-weekoverzicht",
     "2026-09-03-analytics-kpi-meetgat",
-    "2026-09-15-regressiecheck"
+    "2026-09-15-regressiecheck",
+    "2026-09-24-growth-radar-cro"
    ],
    "id": "2026-09-17-growth-radar-cro",
    "prioriteit": "P1",
@@ -1450,12 +1493,12 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 27,
-   "P2": 53,
+   "P1": 26,
+   "P2": 55,
    "P3": 35
   },
   "per_categorie": {
-   "CRO": 3,
+   "CRO": 4,
    "Compliance": 1,
    "Merk": 4,
    "SEO": 11,
@@ -1519,12 +1562,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 6,
+    "aantal": 7,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 21
+  "totaal_notities": 22
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

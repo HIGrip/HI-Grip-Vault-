@@ -254,9 +254,43 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-24T14:11:10+00:00",
+ "gebouwd": "2026-09-24T14:28:01+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-upfront-bestelvolume-schatting#3712b6e1",
+     "prioriteit": "P3",
+     "tekst": "Piekdag-mechaniek van Upfront (aangekondigde eenmalige actie, bundels, hoge AOV) uitwerken als test voor een HÏ Grip-actiedag"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-upfront-bestelvolume-schatting#8de73eba",
+     "prioriteit": "P3",
+     "tekst": "Groeiaannames in het financieel plan naast het groeitempo van Upfront leggen (2023→2025) als sanity check"
+    }
+   ],
+   "body_md": "# Upfront bestelvolume-schatting (dag/week/maand/jaar)\n\n## In het kort\n\nGevraagd: hoeveel bestellingen Upfront per dag, week, maand en jaar heeft. Upfront publiceert dat niet. Wel bekend zijn de omzet per kanaal over 2025 en een paar piekdagen, dus het volume is een schatting: online omzet gedeeld door een aangenomen gemiddelde orderwaarde (AOV).\n\n## Bevindingen\n\n**Harde cijfers (gepubliceerd)**\n\n| | Waarde | Bron |\n|---|---|---|\n| Omzet 2023 | € 6,3 mln | Wikipedia, MT/Sprout |\n| Omzet 2024 | € 23,4 mln | Wikipedia, MT/Sprout |\n| Omzet 2025 | ± € 70 mln (bedrijfsopgave; doel was € 90 mln) | AGF 20-01-2026 |\n| waarvan online | € 46 mln | AGF 14-07-2026 |\n| waarvan supermarkten | € 17 mln | AGF 14-07-2026 |\n| Piekdag (nieuwjaarsactie 2026) | 81.344 bestellingen × € 80 AOV = € 6,5 mln in 24 uur | Duo Diligence |\n| Vorig dagrecord | ± 42.000 bestellingen | Duo Diligence |\n| Eigen supermarkt, 2e weekend (dec 2025) | € 145k over 3 dagen, 3.458 klanten (± € 42 per bon) | RetailTrends 16-12-2025 |\n\n**Schatting online bestellingen 2025**\n\nDe € 80 van de piekdag geldt niet als normale AOV: op een actiedag slaan klanten in. Voor een gewone dag ligt € 50-65 realistischer (aanname, niet gepubliceerd).\n\n| Periode | AOV € 65 | AOV € 57,50 (midden) | AOV € 50 |\n|---|---|---|---|\n| Jaar | ± 708.000 | **± 800.000** | ± 920.000 |\n| Maand | ± 59.000 | **± 67.000** | ± 77.000 |\n| Week | ± 13.600 | **± 15.400** | ± 17.700 |\n| Dag (gemiddeld) | ± 1.940 | **± 2.190** | ± 2.520 |\n\n**Kanttekeningen**\n\n- *Gemiddelde ≠ normale dag.* Het volume komt in pieken binnen. De ene actiedag van januari 2026 leverde al € 6,5 mln op, ± 14% van de hele online omzet van 2025. Een gewone dag zonder actie ligt dus onder de ± 2.200.\n- *2026 ligt hoger.* De piekdag van januari valt in 2026, er is een tweede eigen winkel bij gekomen (± € 150k weekomzet) en België is opgestart. Het doel voor 2026 is € 250 mln, maar Upfront haalde het doel voor 2025 ook niet (€ 70 mln tegen € 90 mln). Een verdubbeling van de online omzet zou neerkomen op ± 1,5-1,8 mln bestellingen per jaar en ± 4.000-5.000 per dag. Dat is een scenario, geen gepubliceerd cijfer.\n- *Kwaliteit van de bronnen.* De cijfers over de piekdag komen uit een analyse die zelf zegt dat die deels op interviews en schattingen rust. De omzet per kanaal komt uit de vakpers en is door het bedrijf opgegeven.\n\n**Wat dit betekent voor HÏ Grip**\n\n- In het financieel plan (zie [2026-09-24-financieel-plan-2027-2031-bmc-2031](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md)) haalt HÏ Grip in 2031 een omzet van € 2,5 mln, ongeveer 1/28e van Upfront in 2025. Upfront groeide in twee jaar van € 6,3 mln naar € 70 mln, vooral via de eigen community en grote actiedagen. Dat is een bruikbaar referentiepunt voor de groeiaannames, geen doel om op te koersen.\n- Het mechanisme om na te bootsen is de gepiekte actiedag: een aangekondigde, eenmalige deal voor een warme community, met een hoge orderwaarde doordat klanten inslaan. Dat is iets anders dan een altijd-aan-korting.\n\n## Acties\n\n- [ ] P3 · Piekdag-mechaniek van Upfront (aangekondigde eenmalige actie, bundels, hoge AOV) uitwerken als test voor een HÏ Grip-actiedag\n- [ ] P3 · Groeiaannames in het financieel plan naast het groeitempo van Upfront leggen (2023→2025) als sanity check\n\n## Bronnen\n\n- [AGF — Upfront zette voor 70 miljoen euro om in 2025 (20-01-2026)](https://www.agf.nl/article/9802915/upfront-zette-voor-70-miljoen-euro-om-in-2025/)\n- [AGF — Upfront zet ook in op groei in België (14-07-2026)](https://www.agf.nl/article/9856689/upfront-zet-ook-in-op-groei-in-belgie/)\n- [Duo Diligence — Upfront: Organisch groeien, viraal oogsten](https://duodiligence.substack.com/p/upfront-organisch-groeien-viraal)\n- [MT/Sprout — Upfront gaat met eigen fabriek op weg naar 90 miljoen omzet](https://mtsprout.nl/groei/upfront-gaat-met-eigen-fabriek-op-weg-naar-90-miljoen-omzet-ook-uit-pindakaas-en-honing)\n- [RetailTrends — Upfront noteert hogere omzet in 2e weekend (16-12-2025)](https://retailtrends.nl/news/77743/upfront-noteert-hogere-omzet-in-tweede-weekend)\n- [Wikipedia — Upfront](https://nl.wikipedia.org/wiki/Upfront)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Merk",
+   "datum": "2026-09-24",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-24-financieel-plan-2027-2031-bmc-2031"
+   ],
+   "id": "2026-09-24-upfront-bestelvolume-schatting",
+   "prioriteit": "P3",
+   "routine": "",
+   "samenvatting": "Upfront maakt geen bestelaantallen bekend. Met € 46 mln online omzet in 2025 en een aangenomen orderwaarde van € 50-65 komt de webshop uit op ± 700.000-900.000 bestellingen per jaar, oftewel ± 65.000 per maand, ± 15.000 per week en ± 2.200 per dag. Het volume komt in pieken binnen (81.344 orders op één actiedag); voor HÏ Grip is vooral die actie- en communitymechaniek de les, niet het absolute volume.",
+   "status": "nieuw",
+   "titel": "Upfront bestelvolume-schatting (dag/week/maand/jaar)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-upfront-bestelvolume-schatting.md",
+   "vervangt": []
+  },
   {
    "acties": [
     {
@@ -335,7 +369,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-21-beachhead-rugby",
-    "2026-09-07-compliance-todo"
+    "2026-09-07-compliance-todo",
+    "2026-09-24-upfront-bestelvolume-schatting"
    ],
    "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031",
    "prioriteit": "P1",
@@ -1556,12 +1591,12 @@ window.HI_RESEARCH = {
   "open_per_prioriteit": {
    "P1": 28,
    "P2": 58,
-   "P3": 36
+   "P3": 38
   },
   "per_categorie": {
    "CRO": 4,
    "Compliance": 1,
-   "Merk": 5,
+   "Merk": 6,
    "SEO": 11,
    "Social": 1,
    "Techniek": 1
@@ -1623,12 +1658,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 8,
+    "aantal": 9,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 23
+  "totaal_notities": 24
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

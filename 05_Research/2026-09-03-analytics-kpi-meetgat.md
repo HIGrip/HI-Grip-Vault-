@@ -8,7 +8,7 @@ categorie: CRO
 status: bekeken
 prioriteit: P2
 samenvatting: "GA4 draait weer sinds 30 augustus 2026, maar de property heeft in de volledige historie nul purchase-events en de data van januari–augustus 2026 is definitief verloren. Direct is 43% van de sessies (mrt–dec 2025) — vrijwel zeker untagged social- en nieuwsbriefverkeer zonder UTM's."
-gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-14-weekoverzicht, 2026-09-15-seo-audit]
+gerelateerd: [2026-09-04-werkdossier-stand-van-zaken, 2026-09-14-weekoverzicht, 2026-09-15-seo-audit, 2026-09-25-growth-radar-social]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Analyse\\Analytics & KPI Dashboard.md"
 deadline: ""

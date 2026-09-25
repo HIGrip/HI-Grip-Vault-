@@ -8,7 +8,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "TikTok Shop is sinds 15 juni 2026 live in Nederland en koppelt direct met Shopify, wat de social-funnel verandert van doorklikken naar in-app afrekenen — relevant voor het bestaande creator-plan. Daarnaast verwijderde Meta in januari 2026 twee attributievensters uit de Ads Insights API, waardoor CAPI vanaf dag 1 van elke toekomstige campagne nodig is."
-gerelateerd: [2026-09-15-growth-radar-basislijn]
+gerelateerd: [2026-09-15-growth-radar-basislijn, 2026-09-25-growth-radar-social]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-18-social.md"
 deadline: ""

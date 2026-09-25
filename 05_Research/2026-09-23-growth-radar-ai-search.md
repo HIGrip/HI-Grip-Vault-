@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit productfeeds. Shopify levert die automatisch via Agentic Storefronts, maar alleen voor winkels die aan VS-kopers verkopen, en Shopping is alleen in de VS live. ChatGPT Ads draaien sinds 24 augustus ook in Nederland, maar accounts kun je nog niet vanuit NL aanmaken en de klikprijs ($3–5) past niet bij een product van €14,99."
-gerelateerd: [2026-09-16-growth-radar-ai-search, 2026-09-22-growth-radar-seo-content, 2026-09-23-seo-conversietest-run-1]
+gerelateerd: [2026-09-16-growth-radar-ai-search, 2026-09-22-growth-radar-seo-content, 2026-09-23-seo-conversietest-run-1, 2026-09-25-growth-radar-social]
 vervangt: []
 bronbestand: "C:\Users\Test\.claude\research\growth-radar\rapporten\2026-09-23-ai-search.md"
 deadline: ""

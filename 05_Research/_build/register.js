@@ -106,9 +106,9 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** Shopify's harde deadline voor niet-Plus winkels om te migreren naar Checkout Extensibility was 26 augustus 2026. Wie toen niet gemigreerd was, kreeg een automatische upgrade waarbij het complete \"Additional Scripts\"-veld werd leeggetrokken — Google Ads-tracking, Meta pixel en GTM-containers stoppen dan zonder zichtbare storefront-fout. Dit hangt direct samen met het al openstaande punt hieronder dat GA4 `keyEvents = 0` toont op elk kanaal: het kan zijn dat niet alleen de key-event-instelling ontbreekt, maar dat het onderliggende trackingscript zelf al drie weken dood is.\n**Waar:** Shopify admin → Instellingen → Checkout (Additional Scripts-veld + eventuele checkout-tracking-apps)\n**Wat:** Controleren of `hi-grip.myshopify.com` op een niet-Plus plan zit, of de migratie voor 26 augustus is afgerond, en of Meta pixel/Google Ads-tracking via een officiële app loopt in plaats van het oude scriptveld. Doe dit vóór je de GA4-key-event-actie hieronder als opgelost afvinkt.\n**Effect:** Kan de verklaring zijn voor drie weken (of meer) ontbrekende conversiedata — blokkeert elke CRO-uitspraak zolang dit niet is uitgesloten.\n**Inspanning:** 30 minuten controle",
-   "id": "backlog#3bab0fb9",
-   "kop": "11. Controleer of trackingscripts nog vuren na de Checkout Extensibility-deadline (nieuw 17 sep 2026)",
+   "body_md": "**Update 25 sep 2026 — begin hier:** In de live broncode staat de Google & YouTube-app-pixel (GA4 `G-MP0982HHKM` + Merchant Center `MC-8TZQW9T6Q7`, stuurt ook `purchase`) op `dataSharingState: optimized`. Sinds 13 jan 2026 mag Shopify in die stand de datadeling pauzeren als er dagen of weken geen signalen zijn. Dat kan de nul `purchase`-events verklaren. Stap 0: Instellingen → Klantgebeurtenissen → App-pixels → activity log van de Google-pixel bekijken (historie vanaf 3 juni 2026), dan Mode op **Always on** zetten. De tweede app-pixel (account `raqds3-tb`) staat ook op optimized: nagaan welke app dat is.\n**Waarom:** Shopify's harde deadline voor niet-Plus winkels om te migreren naar Checkout Extensibility was 26 augustus 2026. Wie toen niet gemigreerd was, kreeg een automatische upgrade waarbij het complete \"Additional Scripts\"-veld werd leeggetrokken — Google Ads-tracking, Meta pixel en GTM-containers stoppen dan zonder zichtbare storefront-fout. Dit hangt direct samen met het al openstaande punt hieronder dat GA4 `keyEvents = 0` toont op elk kanaal: het kan zijn dat niet alleen de key-event-instelling ontbreekt, maar dat het onderliggende trackingscript zelf al drie weken dood is.\n**Waar:** Shopify admin → Instellingen → Checkout (Additional Scripts-veld + eventuele checkout-tracking-apps)\n**Wat:** Controleren of `hi-grip.myshopify.com` op een niet-Plus plan zit, of de migratie voor 26 augustus is afgerond, en of Meta pixel/Google Ads-tracking via een officiële app loopt in plaats van het oude scriptveld. Doe dit vóór je de GA4-key-event-actie hieronder als opgelost afvinkt.\n**Effect:** Kan de verklaring zijn voor drie weken (of meer) ontbrekende conversiedata — blokkeert elke CRO-uitspraak zolang dit niet is uitgesloten.\n**Inspanning:** 30 minuten controle",
+   "id": "backlog#cc86cc1e",
+   "kop": "11. Controleer of trackingscripts nog vuren na de Checkout Extensibility-deadline (nieuw 17 sep 2026, aangevuld 25 sep 2026)",
    "prioriteit": "P1",
    "velden": {
     "Waar": "Shopify admin → Instellingen → Checkout (Additional Scripts-veld + eventuele checkout-tracking-apps)",
@@ -163,7 +163,7 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Update 23 sep 2026:** De VS-vraag gaat nu over drie AI-kanalen tegelijk. ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit feeds, en Shopify levert die via Agentic Storefronts automatisch aan ChatGPT en Copilot, maar alleen voor winkels die aan Amerikaanse kopers verkopen. ChatGPT Shopping zelf is voorlopig alleen in de VS live. Extra check (5 min): Shopify admin → Verkoopkanalen → **Agentic**: staat het aan, en welke kanalen zijn actief? Nog geen VS-verzendbeslissing nemen puur hierom.\n**Waarom:** Perplexity's Merchant Program is sinds januari 2026 gratis open voor Shopify-winkels: geen listingkosten, geen commissie, automatische productsynchronisatie voor Amerikaanse Shopify-winkels. \"Buy with Pro\" biedt gratis verzending betaald door Perplexity zelf. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten. Voorwaarde: bedrijven moeten verkopen én verzenden naar de VS.\n**Waar:** Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)\n**Wat:** Eerst controleren of higrip.nl momenteel naar de VS verzendt. Zo niet, dit punt geblokkeerd laten staan.\n**Effect:** Gratis extra AI-shoppingkanaal zonder commissie, mits geografisch van toepassing.\n**Inspanning:** Controle 15 minuten; aanmelding zelf een half dagdeel indien van toepassing.",
+   "body_md": "**Update 23 sep 2026:** De VS-vraag gaat nu over drie AI-kanalen tegelijk. ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit feeds, en Shopify levert die via Agentic Storefronts automatisch aan ChatGPT en Copilot, maar alleen voor winkels die aan Amerikaanse kopers verkopen. ChatGPT Shopping zelf is voorlopig alleen in de VS live. Extra check (5 min): Shopify admin → Verkoopkanalen → **Agentic**: staat het aan, en welke kanalen zijn actief? Sinds 8 sep 2026 staat ook Meta (AI-agent Muse, alleen VS) in die lijst, en producten worden standaard gedeeld. Nog geen VS-verzendbeslissing nemen puur hierom.\n**Waarom:** Perplexity's Merchant Program is sinds januari 2026 gratis open voor Shopify-winkels: geen listingkosten, geen commissie, automatische productsynchronisatie voor Amerikaanse Shopify-winkels. \"Buy with Pro\" biedt gratis verzending betaald door Perplexity zelf. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten. Voorwaarde: bedrijven moeten verkopen én verzenden naar de VS.\n**Waar:** Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)\n**Wat:** Eerst controleren of higrip.nl momenteel naar de VS verzendt. Zo niet, dit punt geblokkeerd laten staan.\n**Effect:** Gratis extra AI-shoppingkanaal zonder commissie, mits geografisch van toepassing.\n**Inspanning:** Controle 15 minuten; aanmelding zelf een half dagdeel indien van toepassing.",
    "id": "backlog#8fb4a493",
    "kop": "8. Perplexity Merchant Program — alleen als je naar de VS verzendt (nieuw 16 sep 2026, uitgebreid 23 sep 2026)",
    "prioriteit": "P2",
@@ -235,9 +235,9 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** TikTok Shop converteert op 4,7% — meer dan het dubbele van Instagram. 34% van de Nederlandse 18–35'ers kocht al via social. En: 85% van AI-merkvermeldingen komt uit derde partijen, dus creator-content voedt tegelijk je AI-zichtbaarheid. TikTok Shop is sinds 15 juni 2026 live in Nederland — dat opent een tweede route naast doorklikken naar higrip.nl: verkopen direct in de app via dezelfde creator-commissiestructuur. Zie ook punt 13 hieronder.\n**Aanpak:** Open plan op 10–12% commissie voor volume en reviews, daarna 18–25% voor de best presterende creators.\n**Wachten op:** Punt 7 eerst (eigen videomateriaal) én punt 13 (bepaalt of dit richting higrip.nl, TikTok Shop, of beide wordt ingericht).",
-   "id": "backlog#69ac5806",
-   "kop": "9. Padel-creators op prestatiebasis in plaats van vaste vergoeding (herzien 18 sep 2026)",
+   "body_md": "**Update 25 sep 2026:** Derde route naast doorklikken en TikTok Shop: Meta's Creator Marketing Hub (wereldwijde uitrol t/m eind 2026) zet een creatorpost met één klik om naar een partnership ad vanaf je eigen account. Werkt pas als punt 10 staat.\n**Waarom:** TikTok Shop converteert op 4,7% — meer dan het dubbele van Instagram. 34% van de Nederlandse 18–35'ers kocht al via social. En: 85% van AI-merkvermeldingen komt uit derde partijen, dus creator-content voedt tegelijk je AI-zichtbaarheid. TikTok Shop is sinds 15 juni 2026 live in Nederland — dat opent een tweede route naast doorklikken naar higrip.nl: verkopen direct in de app via dezelfde creator-commissiestructuur. Zie ook punt 13 hieronder.\n**Aanpak:** Open plan op 10–12% commissie voor volume en reviews, daarna 18–25% voor de best presterende creators.\n**Wachten op:** Punt 7 eerst (eigen videomateriaal) én punt 13 (bepaalt of dit richting higrip.nl, TikTok Shop, of beide wordt ingericht).",
+   "id": "backlog#eb6e2f26",
+   "kop": "9. Padel-creators op prestatiebasis in plaats van vaste vergoeding (herzien 18 sep 2026, aangevuld 25 sep 2026)",
    "prioriteit": "P3",
    "velden": {
     "Waarom": "TikTok Shop converteert op 4,7% — meer dan het dubbele van Instagram. 34% van de Nederlandse 18–35'ers kocht al via social. En: 85% van AI-merkvermeldingen komt uit derde partijen, dus creator-content voedt tegelijk je AI-zichtbaarheid. TikTok Shop is sinds 15 juni 2026 live in Nederland — dat opent een tweede route naast doorklikken naar higrip.nl: verkopen direct in de app via dezelfde creator-commissiestructuur. Zie ook punt 13 hieronder."
@@ -245,18 +245,42 @@ window.HI_RESEARCH = {
   },
   {
    "afgevinkt": false,
-   "body_md": "**Waarom:** Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro.\n**Wachten op:** Een lopende advertentiebudget-beslissing.\n**Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.\n\n---",
-   "id": "backlog#80f3e9b2",
-   "kop": "10. Conversions API (CAPI) instellen (herzien 18 sep 2026)",
+   "body_md": "**Update 25 sep 2026:** Op higrip.nl draait op dit moment géén Meta- of TikTok-pixel. Een nieuw geïnstalleerde pixel zonder advertentieverkeer valt precies in Shopify's Optimized-pauzeprofiel. Zet hem daarom bij installatie meteen op **Always on** (Instellingen → Klantgebeurtenissen → App-pixels). Meta's one-click CAPI (sinds 15 apr 2026) staat in Events Manager.\n**Waarom:** Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro.\n**Wachten op:** Een lopende advertentiebudget-beslissing.\n**Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.\n\n---",
+   "id": "backlog#aa17cef9",
+   "kop": "10. Conversions API (CAPI) instellen (herzien 18 sep 2026, aangevuld 25 sep 2026)",
    "prioriteit": "P3",
    "velden": {
     "Waarom": "Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro."
    }
   }
  ],
- "gebouwd": "2026-09-24T15:24:04+00:00",
+ "gebouwd": "2026-09-25T03:46:05+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — Social naar website (Google-pixel op Optimized, geen Meta-pixel, Creator Hub)\n\n## In het kort\nDe belangrijkste vondst van vandaag ligt niet op TikTok of Instagram. Hij zit in de eigen broncode van higrip.nl. De Google & YouTube-pixel, die GA4 én Merchant Center voedt met `purchase`, staat op Shopify's \"Optimized\"-stand. Shopify mag de datadeling van zo'n pixel dan stilletjes pauzeren. Dat is een concrete kandidaat-verklaring voor de `keyEvents = 0` die al sinds 15 september op P1 staat. Daarnaast staat er geen Meta- of TikTok-pixel op de site: social verkeer is nu alleen via GA4 zichtbaar. Meta bouwt verder aan creator-advertenties (Creator Marketing Hub, 17 sep) en is sinds 8 sep ook een AI-kanaal in Shopify, maar beide zijn voor nu alleen iets om te volgen.\n\n## Bevindingen\n### Je Google-pixel staat op \"Optimized\", en Shopify mag hem dan pauzeren\n\nOp 13 januari 2026 veranderde Shopify de standaardinstelling voor marketing-app-pixels van \"Always on\" naar \"Optimized\". Die stand kijkt naar verkeer en verkoop. Ziet Shopify dagen of weken geen attributiesignalen, dan stopt de datadeling naar die pixel tot er weer signalen komen. Custom pixels en server-side koppelingen (Meta CAPI, GA4 Measurement Protocol, TikTok Events API) vallen erbuiten. Tot 29 juni 2026 liet zo'n pauze geen enkel spoor achter. Sinds die datum is er een activity log per app-pixel, met geschiedenis vanaf 3 juni 2026.\n\nVanochtend is de broncode van `/products/performance-gripsokken` gecontroleerd. De `webPixelsConfigList` bevat twee app-pixels, en beide hebben `\"dataSharingState\":\"optimized\"`:\n\n| Pixel | Wat hij stuurt | Stand |\n|---|---|---|\n| Google & YouTube-app (`G-MP0982HHKM`, `GT-NCGVWN62`) | GA4-events incl. `purchase`, `begin_checkout`, `add_to_cart` + Merchant Center (`MC-8TZQW9T6Q7`) | optimized |\n| Tweede app-pixel (account `raqds3-tb`, de shop-ID) | analytics + marketing | optimized |\n\nEen Meta-pixel of TikTok-pixel is nergens te vinden. Er komt geen `fbq`, geen `connect.facebook.net` en geen `analytics.tiktok.com` in de pagina voor.\n\n> **Voor higrip.nl:** Het P1-punt \"GA4 key event voor `purchase` staat nog steeds uit\" en P1-punt 11 (trackingscripts na Checkout Extensibility) zoeken allebei naar de reden dat GA4 al weken nul conversies toont. De Optimized-stand is een derde, heel concrete kandidaat. Tijdens een stille periode kan Shopify de Google-pixel gepauzeerd hebben, en dan komen er geen `purchase`-events meer binnen. Zonder events is er ook niets om als key event te markeren. Dezelfde pixel levert conversies aan Merchant Center, dus backlogpunt 4 (feed en AI Mode-shopping) hangt er ook aan. Of de pixel echt gepauzeerd is geweest, zie je alleen in de activity log. Het past bij de notitie over het meetgat van 3 september: nul `purchase`-events in de volledige GA4-historie, en 43% van de sessies als \"Direct\". Dat laatste is vrijwel zeker social verkeer zonder UTM-tags.\n\n**Actie:** Instellingen → Klantgebeurtenissen → App-pixels: activity log van de Google & YouTube-pixel bekijken en de stand op \"Always on\" zetten. Toegevoegd aan P1-punt 11, als eerste controle.\n\n---\n\n### Geen Meta- of TikTok-pixel: social verkeer is alleen via GA4 zichtbaar\n\nOmdat er geen Meta- of TikTok-pixel draait, weet higrip.nl van bezoekers uit Instagram, TikTok of creatorlinks alleen wat GA4 via de referrer of UTM-tags opvangt. Voor organische social is dat genoeg, zolang links in bio's en creatorposts UTM-tags hebben. Voor betaalde social is het niet genoeg.\n\nDe Optimized-stand is juist voor een nieuwe pixel riskant. Een Meta-pixel die je installeert vóór de eerste campagne loopt, ziet dagen of weken geen advertentiesignalen. Dat is precies het profiel dat Shopify pauzeert. Meta heeft sinds 15 april 2026 ook een one-click Conversions API in Events Manager, en verrijkt pixel-events automatisch met product- en paginadata. Die verrijking stond na ~30 dagen standaard aan.\n\n> **Voor higrip.nl:** Dit scherpt P3-punt 10 (CAPI instellen) aan. Als de advertentiebeslissing valt, installeer je de Meta-app, zet je de pixel meteen op \"Always on\" en koppel je CAPI vanaf dag 1. Anders kan de pixel gepauzeerd zijn precies op het moment dat de eerste campagne start. Hetzelfde geldt voor een TikTok-pixel als punt 13 (TikTok Shop) doorgaat.\n\n**Actie:** Punt 10 in de backlog bijgewerkt. Verder alleen volgen, want er lopen geen advertenties.\n\n---\n\n### Meta Creator Marketing Hub: creatorposts worden met één klik advertenties\n\nMarketing Dive meldde op 17 september 2026 dat Meta Creator Marketplace en Partnership Ads Hub samenvoegt tot één Creator Marketing Hub. Die rolt wereldwijd uit tot het einde van 2026. Nieuw daarin:\n- zoekfilters die creators tonen die producten zoals het jouwe al laten zien\n- contentrechten per post met een vervaldatum\n- bewerkingstools die auteursrechtelijk beschermde muziek en stickers verwijderen, zodat een post als advertentie kan draaien\n- advertenties aanmaken met één klik vanuit de Hub\n\nInstagram voegt vanaf 29 september ook live-video-advertenties toe. Meta heeft geen prestatiecijfers voor partnership ads gepubliceerd.\n\n> **Voor higrip.nl:** P3-punt 9 (padel-creators op commissiebasis) gaat nu uit van twee routes: doorklik naar higrip.nl, of TikTok Shop. Met de Hub komt er een derde bij. Een goed presterende creatorpost van een padelspeler wordt dan, met diens toestemming, een partnership ad vanaf het HÏ Grip-account, gericht op de productpagina. Dat werkt pas met punt 10 (pixel + CAPI) op orde. Het zoekfilter kan wel nu al helpen om Nederlandse padel-creators te vinden die gripsokken of padelschoenen laten zien.\n\n**Actie:** Alleen volgen — nog niet handelen. Kort genoteerd bij punt 9.\n\n---\n\n### Meta is sinds 8 september een AI-kanaal in Shopify, maar alleen in de VS\n\nVolgens de Shopify-changelog staat Meta sinds 8 september 2026 tussen de AI-kanalen in Agentic Storefronts. Dat viel samen met de VS-lancering van Meta's persoonlijke AI-agent Muse. Producten worden standaard via Shopify Catalog met Meta gedeeld. Uitzetten kan via Verkoopkanalen → Agentic.\n\n> **Voor higrip.nl:** Dit hoort bij de bestaande VS-check in P2-punt 8. Daar staan ChatGPT en Copilot al, nu komt Meta erbij. Voor NL-kopers verandert er niets. Wel handig: bij de 5-minutencheck van Agentic zie je Meta nu ook in de lijst.\n\n**Actie:** Alleen volgen. Punt 8 met één regel aangevuld.\n\n---\n\n### Gecontroleerd, niet opgenomen\n- **Meta Andromeda / creatieve diversiteit** (8–12 echt verschillende concepten per campagne): er lopen geen advertenties, en het is vooral creatie-advies zonder nieuwe primaire bron. Dat hoort bij de zaterdagfocus.\n- **Instagram shoppable Reels-links** (tot 30 productlinks per Reel): nog niet live in Nederland (VS, Brazilië, India, Indonesië, Thailand).\n\n## Acties\nGeen nieuwe acties. Alle vervolgstappen zijn verwerkt in bestaande backlogpunten 11 (pixel op Always on, begin hier), 10, 9 en 8.\n\n## Bronnen\n- [New default setting for marketing pixel data sharing — Shopify Changelog (13 jan 2026)](https://changelog.shopify.com/posts/new-default-setting-for-pixel-data-sharing)\n- [App pixels — Shopify Help Center](https://help.shopify.com/en/manual/promoting-marketing/pixels/app-pixels)\n- [Shopify App Pixel Activity Log — WeltPixel](https://weltpixel.com/blogs/news/shopify-app-pixel-activity-log-what-it-records-and-how-to-use-it)\n- [Meta Changed How Conversions Are Counted in 2026 — WeltPixel](https://weltpixel.com/blogs/news/meta-changed-how-conversions-are-counted-in-2026-what-shopify-merchants-should-know)\n- [Meta streamlines creator, brand tie-ups with new marketing hub — Marketing Dive (17 sep 2026)](https://www.marketingdive.com/news/meta-streamlines-creator-brand-tie-ups-with-new-marketing-hub/830593/)\n- [Meta is now an AI channel in your admin — Shopify Changelog (8 sep 2026)](https://changelog.shopify.com/posts/meta-is-now-an-ai-channel-in-your-admin)\n- Eigen controle: broncode `https://www.higrip.nl/products/performance-gripsokken`, 25 sep 2026 (`webPixelsConfigList`)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-25-social.md",
+   "bronbestand_url": null,
+   "categorie": "Social",
+   "datum": "2026-09-25",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-03-analytics-kpi-meetgat",
+    "2026-09-18-growth-radar-social",
+    "2026-09-17-growth-radar-cro",
+    "2026-09-23-growth-radar-ai-search"
+   ],
+   "id": "2026-09-25-growth-radar-social",
+   "prioriteit": "P1",
+   "routine": "growth-radar",
+   "samenvatting": "De Google & YouTube-pixel op higrip.nl (GA4 + Merchant Center, incl. purchase) staat op Shopify's Optimized-stand, waarin Shopify de datadeling stil mag pauzeren. Dat is een concrete kandidaat-oorzaak voor GA4 keyEvents = 0. Er draait geen Meta- of TikTok-pixel, dus bij een advertentiestart direct Always on + CAPI; Meta Creator Hub en Meta als AI-kanaal (alleen VS) zijn nog alleen iets om te volgen.",
+   "status": "nieuw",
+   "titel": "Growth Radar — Social naar website (Google-pixel op Optimized, geen Meta-pixel, Creator Hub)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-growth-radar-social.md",
+   "vervangt": []
+  },
   {
    "acties": [
     {
@@ -465,7 +489,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-16-growth-radar-ai-search",
     "2026-09-22-growth-radar-seo-content",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-25-growth-radar-social"
    ],
    "id": "2026-09-23-growth-radar-ai-search",
    "prioriteit": "P2",
@@ -659,7 +684,8 @@ window.HI_RESEARCH = {
    "datum": "2026-09-18",
    "deadline": "",
    "gerelateerd": [
-    "2026-09-15-growth-radar-basislijn"
+    "2026-09-15-growth-radar-basislijn",
+    "2026-09-25-growth-radar-social"
    ],
    "id": "2026-09-18-growth-radar-social",
    "prioriteit": "P2",
@@ -683,7 +709,8 @@ window.HI_RESEARCH = {
     "2026-09-14-weekoverzicht",
     "2026-09-03-analytics-kpi-meetgat",
     "2026-09-15-regressiecheck",
-    "2026-09-24-growth-radar-cro"
+    "2026-09-24-growth-radar-cro",
+    "2026-09-25-growth-radar-social"
    ],
    "id": "2026-09-17-growth-radar-cro",
    "prioriteit": "P1",
@@ -1468,7 +1495,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-04-werkdossier-stand-van-zaken",
     "2026-09-14-weekoverzicht",
-    "2026-09-15-seo-audit"
+    "2026-09-15-seo-audit",
+    "2026-09-25-growth-radar-social"
    ],
    "id": "2026-09-03-analytics-kpi-meetgat",
    "prioriteit": "P2",
@@ -1592,7 +1620,7 @@ window.HI_RESEARCH = {
    "Compliance": 1,
    "Merk": 6,
    "SEO": 11,
-   "Social": 1,
+   "Social": 2,
    "Techniek": 1
   },
   "per_week": [
@@ -1652,12 +1680,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 9,
+    "aantal": 10,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 24
+  "totaal_notities": 25
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

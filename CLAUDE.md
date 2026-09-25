@@ -61,5 +61,11 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
 
 ## 8. Git
 
-- Branch: `HÏ-Grip-Vault-obsidian` (er is geen `main`). Altijd `git pull --rebase` vóór `git push`.
+- Branch: `HÏ-Grip-Vault-obsidian` (er is geen `main`).
+- **Werk nooit op een losse branch.** Cloudsessies en routines starten vaak op een eigen `claude/...`-branch. Dan komt het werk niet in de vault en niet op het dashboard. Push daarom altijd zo:
+  ```
+  git pull --rebase origin HÏ-Grip-Vault-obsidian
+  git push origin HEAD:HÏ-Grip-Vault-obsidian
+  ```
+  Wordt die push geweigerd, stop dan en meld het in je eindbericht, met de naam van de branch waar je werk nu staat.
 - Commitberichten in het Nederlands, kort: `research: <id> geregistreerd`, `feiten: <wat> bijgewerkt`.

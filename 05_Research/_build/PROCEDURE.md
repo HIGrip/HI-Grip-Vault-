@@ -61,7 +61,7 @@ Verplicht na élk onderzoek: een routine-run óf een losse vraag (bijv. "TikTok 
 3. **Verbanden verwerken**: zoek notities in dezelfde categorie of met dezelfde onderwerpen (`grep -il` op `05_Research\*.md`). Vul `gerelateerd` in **beide richtingen**. Is een oudere notitie achterhaald → zet haar id in `vervangt`, zet haar `status: gearchiveerd`, en vink vervallen acties in die oudere notitie af met één regel waarom (`- [x] P2 · … — vervallen: <reden>`).
 4. **Build**: `python 05_Research\_build\build_register.py` — moet exit 0 geven. Fout → repareer de notitie, niet het script.
 5. **Publiceren**: `Artifact read` op de dashboard-URL, dan `Artifact list scope:files` op die URL, dan `Artifact publish` met `url` = dashboard-URL, `file_path` = `05_Research\_dashboard\index.html`, `files: {"data/register.js": "05_Research/_build/register.js"}`. Geen `capabilities`/`favicon` meegeven (blijven behouden). Publish-conflict → stoppen en melden.
-6. **Commit**: `git add 05_Research` (+ andere aangeraakte notities) → `git commit -m "research: <id> geregistreerd"` → `git push`.
+6. **Commit**: `git add 05_Research` (+ andere aangeraakte notities) → `git commit -m "research: <id> geregistreerd"` → `git pull --rebase origin HÏ-Grip-Vault-obsidian` → `git push origin HEAD:HÏ-Grip-Vault-obsidian`. **Nooit** alleen naar een `claude/...`-branch pushen: dan mist de vault het werk en verdwijnt het bij de volgende build van het dashboard.
 7. **Afsluiten** met één regel: wat geregistreerd, hoeveel verbanden bijgewerkt, dashboard-URL.
 
 ---

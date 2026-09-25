@@ -181,7 +181,7 @@ Google organic **daalde** dus; het is wel de bron van 1 van de 2 orders. Instagr
 
 ## Acties
 - [ ] P1 · Structured data-herstelpakket van 17-09 uit het werkthema naar live kopiëren (thema-ID eerst verifiëren met shopify theme list)
-- [ ] P1 · Live FAQ-tekst en beleid gelijktrekken met de bevestigde waarden: vóór 22:00 verzonden, 30 dagen retour, gratis verzending vanaf €35
+- [ ] P1 · Live FAQ-tekst en beleid gelijktrekken met de vastgestelde waarden (besluit Lars 25-09): binnen 1 werkdag verzonden, €4,50 verzendkosten, gratis vanaf €35, 30 dagen retour
 - [ ] P2 · Homepage-title en meta description doorvoeren (kant-en-klare HTML in dit overzicht)
 - [ ] P2 · Checkout begin_checkout → purchase onderzoeken met een testbestelling op mobiel, en botverkeer (VS/China Direct) uit de GA4-rapportage filteren
 - [ ] P2 · Outreach-besluit nemen over Powerleague Rotterdam en Panna Knock Out

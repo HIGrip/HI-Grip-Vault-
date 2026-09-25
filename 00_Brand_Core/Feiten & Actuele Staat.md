@@ -43,16 +43,16 @@ laatst-geverifieerd: 2026-09-25
 - Adviesprijs retail 2.0: €17,99 (zie [[Performance Grip Socks 2.0]]).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
-## Verzending en retour (bevestigde waarden)
+## Verzending en retour — vastgesteld door Lars op 25 sep 2026
 
-| Feit | Bevestigde waarde | Live staat op 25 sep |
+| Feit | Vastgestelde waarde | Live staat op 25 sep |
 |---|---|---|
-| Verzendkosten | €4,50 | Algemene voorwaarden zeggen €4,25 → **conflict** |
+| Verzendkosten | **€4,50** | Algemene voorwaarden zeggen €4,25 → **conflict** |
 | Gratis verzending vanaf | **€35** | FAQ op de productpagina zegt €30 → **conflict** |
-| Verzendbelofte | **Vóór 22:00 besteld = vandaag verzonden** (PostNL) | FAQ-pagina zegt 16:00, productpagina "binnen 1 werkdag" → **conflict** |
-| Retour | **30 dagen** | Retourbeleid zegt 14 dagen, ongeopend, 25% herbevoorradingskosten → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]]) |
+| Verzendtijd | **Binnen 1 werkdag verzonden** | FAQ-pagina zegt "vóór 16:00 dezelfde dag", homepage/meta "vóór 22:00 vandaag verzonden" → **conflict**. De 22:00-belofte vervalt. |
+| Retour | **30 dagen** | Retourbeleid zegt 14 dagen, ongeopend, 25% herbevoorradingskosten → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]] §4.2) |
 
-Bron van de bevestigde waarden: [[Update Log]] (4 sep, als correcte waarden doorgevoerd in het werkthema) en [[2026-09-23-seo-conversietest-run-1]]. De conflicten verdwijnen pas als het werkthema en de beleidsteksten live staan.
+Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2.0]] §1 (vervangt de waarden uit [[Update Log]] van 4 sep). Gelijktrekken op: productpagina + FAQ-blok, homepage- en productmeta's, algemene voorwaarden, verzend- en retourbeleid, en daarna pas `shippingDetails` / `hasMerchantReturnPolicy` in het Product-schema.
 
 ## Claims
 
@@ -82,4 +82,5 @@ Bron van de bevestigde waarden: [[Update Log]] (4 sep, als correcte waarden door
 
 ## Wijzigingslog
 
+- 2026-09-25 — Verzendtijd gecorrigeerd naar "binnen 1 werkdag" (besluit Lars, stond vast in een losse branch en is nu samengevoegd).
 - 2026-09-25 — Bestand aangemaakt uit het projectgeheugen, [[Performance Grip Socks 2.0]], [[Update Log]] en een live controle van prijzen en handles.

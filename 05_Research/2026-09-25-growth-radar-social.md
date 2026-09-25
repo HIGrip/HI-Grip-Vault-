@@ -8,7 +8,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "De Google & YouTube-pixel op higrip.nl (GA4 + Merchant Center, incl. purchase) staat op Shopify's Optimized-stand, waarin Shopify de datadeling stil mag pauzeren. Dat is een concrete kandidaat-oorzaak voor GA4 keyEvents = 0. Er draait geen Meta- of TikTok-pixel, dus bij een advertentiestart direct Always on + CAPI; Meta Creator Hub en Meta als AI-kanaal (alleen VS) zijn nog alleen iets om te volgen."
-gerelateerd: [2026-09-03-analytics-kpi-meetgat, 2026-09-18-growth-radar-social, 2026-09-17-growth-radar-cro, 2026-09-23-growth-radar-ai-search]
+gerelateerd: [2026-09-03-analytics-kpi-meetgat, 2026-09-18-growth-radar-social, 2026-09-17-growth-radar-cro, 2026-09-23-growth-radar-ai-search, 2026-09-25-evaluatie-routines]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-25-social.md"
 deadline: ""

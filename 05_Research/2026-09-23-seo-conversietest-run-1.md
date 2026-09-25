@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Eerste run van de wekelijkse SEO- en conversietest (modus CONCEPT): nulmeting van 346 sessies, 16 via zoekmachines en 3 bestellingen (€72,74), plus een volledige audit. De grootste vondst is inhoudelijk: higrip.nl spreekt zichzelf tegen over verzendkosten, de drempel voor gratis verzending, de verzendtijd en de retourtermijn. Dat schaadt het vertrouwen van klanten en AI-zoekmachines. Er staan een verborgen maatgids en een voorstellenpakket (SEO-titels, redirects) klaar."
-gerelateerd: [2026-09-15-seo-audit, 2026-09-21-regressiecheck, 2026-09-21-growth-radar-seo-technisch, 2026-09-22-growth-radar-seo-content, 2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-07-compliance-todo, 2026-09-23-growth-radar-ai-search, 2026-09-24-growth-radar-cro]
+gerelateerd: [2026-09-15-seo-audit, 2026-09-21-regressiecheck, 2026-09-21-growth-radar-seo-technisch, 2026-09-22-growth-radar-seo-content, 2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-07-compliance-todo, 2026-09-23-growth-radar-ai-search, 2026-09-24-growth-radar-cro, 2026-09-25-evaluatie-routines]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

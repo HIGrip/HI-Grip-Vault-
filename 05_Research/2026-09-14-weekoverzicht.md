@@ -8,7 +8,7 @@ categorie: CRO
 status: bekeken
 prioriteit: P1
 samenvatting: "De webshop had deze week 0 orders / €0 omzet bij 7 begonnen checkouts — door lars bevestigd als echt conversieprobleem, geen trackingfout. Structured data staat twee weken op rij alleen als Organization; homepage-title/description staan 4 weken open; 6 partnership-kandidaten wachten op beoordeling."
-gerelateerd: [2026-09-07-weekoverzicht, 2026-09-15-regressiecheck, 2026-09-03-analytics-kpi-meetgat, 2026-09-04-werkdossier-stand-van-zaken]
+gerelateerd: [2026-09-07-weekoverzicht, 2026-09-15-regressiecheck, 2026-09-03-analytics-kpi-meetgat, 2026-09-04-werkdossier-stand-van-zaken, 2026-09-25-evaluatie-routines]
 vervangt: [2026-09-07-weekoverzicht]
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-09-14.md"
 deadline: ""

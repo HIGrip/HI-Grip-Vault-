@@ -254,7 +254,7 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-25T03:46:05+00:00",
+ "gebouwd": "2026-09-25T06:57:10+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\\Users\\Test\\.claude\\research\\growth-radar\\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |\n| **Growth-radar-dagrapporten** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -270,7 +270,8 @@ window.HI_RESEARCH = {
     "2026-09-03-analytics-kpi-meetgat",
     "2026-09-18-growth-radar-social",
     "2026-09-17-growth-radar-cro",
-    "2026-09-23-growth-radar-ai-search"
+    "2026-09-23-growth-radar-ai-search",
+    "2026-09-25-evaluatie-routines"
    ],
    "id": "2026-09-25-growth-radar-social",
    "prioriteit": "P1",
@@ -279,6 +280,74 @@ window.HI_RESEARCH = {
    "status": "nieuw",
    "titel": "Growth Radar — Social naar website (Google-pixel op Optimized, geen Meta-pixel, Creator Hub)",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-growth-radar-social.md",
+   "vervangt": []
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#759e403a",
+     "prioriteit": "P1",
+     "tekst": "Cloud-routine \"website\" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#b74873c4",
+     "prioriteit": "P1",
+     "tekst": "Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#889605b9",
+     "prioriteit": "P2",
+     "tekst": "Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#c11500b8",
+     "prioriteit": "P2",
+     "tekst": "Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#5c41af01",
+     "prioriteit": "P2",
+     "tekst": "Eén backlog: aanbevelingen uit het Shopify-logboek en de Denzel-beslissingen spiegelen naar ACTIEBACKLOG.md of andersom, met één eigenaar"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#03ec6b39",
+     "prioriteit": "P2",
+     "tekst": "Vast wekelijks afvinkmoment voor de eigenaar invoeren (bijv. maandag na Denzel), anders de instroom van de Growth Radar verlagen naar max. 1–2 punten per dag"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-25-evaluatie-routines#b46aa819",
+     "prioriteit": "P3",
+     "tekst": "Tijden en titels rechtzetten: Growth Radar-titel \"08:00\" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest"
+    }
+   ],
+   "body_md": "# Evaluatie routines — 25 september 2026\n\n## In het kort\n\nVijf automatische routines draaien voor HÏ Grip. Drie werken inhoudelijk goed, één is kapot en één mist sinds 17 september de koppeling met het dashboard. Het grootste probleem zit niet in één routine maar in het geheel: er wordt veel gevonden en weinig afgehandeld. Dezelfde bevindingen komen op meerdere plekken terug en de vaste context in de prompts veroudert.\n\n## Bevindingen\n\n### Overzicht\n\n| Routine | Waar | Schema | Runs | Oordeel |\n|---|---|---|---|---|\n| Growth Radar | lokaal (desktop-app) | dagelijks 05:30 (+ jitter) | 10 sinds 15 sep, 19 sep gemist | Werkt goed |\n| SEO-regressiecheck | lokaal | maandag 07:00 | 2 (15 en 21 sep) | Werkt goed |\n| Website SEO- en conversietest | lokaal, Shopify-MCP | maandag 09:00 | 1 (23 sep, handmatig gestart) | Veelbelovend |\n| Cloud-routine \"website\" (`trig_01BKt9WCeR9H92FDcS9HtPvV`) | claude.ai-cloud | dagelijks 01:30 | 10+ | Kapot, uitzetten |\n| Denzel-weekoverzicht (`trig_01D9XwMiVvuq1FWr7CLoYTmN`) | claude.ai-cloud, ander account | maandag 08:00 | wekelijks sinds 24 aug | Werkt, maar schrijft naar de verkeerde map |\n\n### Wat goed werkt\n- **Growth Radar** houdt zich aan de dagfocus, het LEDGER voorkomt herhaling en de bevindingen zijn concreet voor higrip.nl. Voorbeelden: de gewijzigde prijsladder (24 sep) en de App Pixel op `optimized` als mogelijke oorzaak van `purchase = 0` (25 sep). De zondagrun deed wat hij moest doen: hij signaleerde dat de backlog boven de 15 open punten zat.\n- **Regressiecheck** is bewust saai en verifieerbaar. Hij bevestigde opgeloste punten (H1, redirects), vond nieuwe regressies (lege `/en/`-titel) en meldde eerlijk dat GA4 die week een timeout gaf.\n- **SEO-conversietest** is de enige routine met echte Shopify-toegang. Run 1 vond de belangrijkste inhoudelijke fout tot nu toe: de site spreekt zichzelf tegen over verzendkosten, de drempel voor gratis verzending, de verzendtijd en de retourtermijn ([2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md)).\n\n### Wat niet werkt\n1. **De cloud-routine \"website\" faalt elke nacht structureel.** In de run van 24 september gaf WebFetch op higrip.nl `EGRESS_BLOCKED`. De Shopify-connector is wel gekoppeld maar niet ingeschakeld voor de routine, en er is geen vault-repo als bron. De routine heeft dus geen geheugen: elke nacht verschijnt een nieuw artifact met dezelfde foute claims (Trustpilot \"4,5 uit 15\", \"geen sportpagina's\", concurrent \"Trusox\"), die al op 16 september als onjuist zijn gemarkeerd ([2026-09-16-seo-onderzoek-cloud-routine-website](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-seo-onderzoek-cloud-routine-website.md)). De prompt (\"creëer optimale pagina's en blogs\") is vaag en vraagt dingen die de routine technisch niet kan. De SEO-conversietest doet hetzelfde werk wél goed, dus deze routine is volledig overbodig.\n2. **Denzel is nooit bijgewerkt naar 05_Research.** Het weekoverzicht van 21 september staat in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week 2026-09-21.md` en niet in `05_Research`, dus het staat niet op het dashboard. De routine hangt onder een ander claude.ai-account (via de API van dit account geeft hij 404). Daardoor is de prompttekst uit [Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routineprompt%20stap%209%20%282026-09-17%29.md) nooit doorgevoerd.\n3. **Lokale routines slaan runs over als de pc slaapt.** Op 19 september (zaterdag, social content) draaide de Growth Radar niet. Op 21 september startten de Growth Radar en de regressiecheck allebei om 06:32, als inhaalrun. De afgesproken volgorde \"regressiecheck vóór Growth Radar\" klopt ook zonder inhaalrun niet: de Growth Radar staat op 05:30 (de titel zegt \"08:00\") en de regressiecheck op 07:00.\n\n### Knelpunten in het geheel\n- **Drie backlogs.** Acties staan in `ACTIEBACKLOG.md` (Growth Radar en regressiecheck), in de verborgen Shopify-pagina `seo-routine-logboek` (SEO-conversietest) en in de lijsten \"openstaande beslissingen\" en \"vooruitblik\" van Denzel. Hetzelfde punt komt meerdere keren terug. Een voorbeeld is de titel/meta en structured data: Denzel meldt die al 5 weken, de regressiecheck heeft er een P1 voor en de conversietest een voorstellenpakket.\n- **Veel gevonden, niets afgevinkt.** De backlog telt 19 open koppen, 3 afgevinkt en 0 in `AFGEROND.md`, terwijl de zondagrun zelf een grens van 15 hanteert. Elke dag komen er tot 3 nieuwe punten bij, maar er is geen vast moment waarop de eigenaar punten afhandelt.\n- **Overvolle maandag.** Op maandag draaien vier routines binnen drie uur: Growth Radar (SEO-technisch), regressiecheck, Denzel (live-site- en SEO-check) en de conversietest. Drie daarvan controleren grotendeels dezelfde technische SEO.\n- **Verouderde vaste context.** De Growth Radar-prompt en `project_higrip.md` noemen nog de prijzen €14,99 / €41,99 / €64,99 (live: €13,49 / €39,95 / €61,95), \"1.500+ sporters\" (site: 3000+), gratis verzending vanaf €30 (voorwaarden: €35) en de handle `hi-grip-gripsokken-1`. Die handle loopt nu via twee redirects (`hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken`). De regressiecheck controleert daardoor een redirect in plaats van de echte productpagina. `/pages/gripsokken-voetbal` staat in de URL-lijst maar geeft al twee weken een 404.\n- **Kleine slordigheden.** De taaknaam `website-seo-en-cconversietest` heeft een typfout. Bij de conversietest is de description \"analyseer de HÏ Grip website op  SEO- en conversie\" niet informatief.\n\n## Acties\n- [ ] P1 · Cloud-routine \"website\" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang\n- [ ] P1 · Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren\n- [ ] P2 · Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt\n- [ ] P2 · Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen\n- [ ] P2 · Eén backlog: aanbevelingen uit het Shopify-logboek en de Denzel-beslissingen spiegelen naar ACTIEBACKLOG.md of andersom, met één eigenaar\n- [ ] P2 · Vast wekelijks afvinkmoment voor de eigenaar invoeren (bijv. maandag na Denzel), anders de instroom van de Growth Radar verlagen naar max. 1–2 punten per dag\n- [ ] P3 · Tijden en titels rechtzetten: Growth Radar-titel \"08:00\" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest\n\n## Bronnen\n- `mcp__scheduled-tasks` — lijst en runs van de drie lokale taken (opgevraagd op 25 sep 2026)\n- RemoteTrigger — `trig_01BKt9WCeR9H92FDcS9HtPvV` config + runlog `cse_01RJs7tH1CfsMKA6i2fphNov` (24 sep), `trig_01D9XwMiVvuq1FWr7CLoYTmN` → 404\n- `C:\\Users\\Test\\.claude\\scheduled-tasks\\*\\SKILL.md` — prompts van de lokale routines\n- `C:\\Users\\Test\\.claude\\research\\growth-radar\\` — ACTIEBACKLOG, LEDGER, AFGEROND, rapporten\n- [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md) en de git-log van de vault (Denzel-commits elke maandag om ~06:20 UTC)\n- curl op higrip.nl (redirectketen productpagina, 404 voetbalpagina) — 25 sep 2026\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-09-25",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-16-seo-onderzoek-cloud-routine-website",
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-21-regressiecheck",
+    "2026-09-14-weekoverzicht",
+    "2026-09-25-growth-radar-social"
+   ],
+   "id": "2026-09-25-evaluatie-routines",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "Van de vijf routines leveren Growth Radar, regressiecheck en de SEO-conversietest bruikbaar werk; de cloud-routine \"website\" faalt elke nacht (higrip.nl geblokkeerd, geen Shopify) en herhaalt foute claims, en Denzel schrijft nog naar de oude map zodat het weekoverzicht niet op het dashboard komt. Grootste systeemprobleem: acties landen op drie plekken en de backlog groeit (18 open, 0 afgerond) zonder dat er iets wordt afgevinkt.",
+   "status": "nieuw",
+   "titel": "Evaluatie routines — Growth Radar, regressiecheck, SEO-conversietest, cloud-routine website, Denzel",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-evaluatie-routines.md",
    "vervangt": []
   },
   {
@@ -459,7 +528,8 @@ window.HI_RESEARCH = {
     "2026-09-16-seo-onderzoek-cloud-routine-website",
     "2026-09-07-compliance-todo",
     "2026-09-23-growth-radar-ai-search",
-    "2026-09-24-growth-radar-cro"
+    "2026-09-24-growth-radar-cro",
+    "2026-09-25-evaluatie-routines"
    ],
    "id": "2026-09-23-seo-conversietest-run-1",
    "prioriteit": "P1",
@@ -542,7 +612,8 @@ window.HI_RESEARCH = {
     "2026-09-15-regressiecheck",
     "2026-09-15-seo-audit",
     "2026-09-21-growth-radar-seo-technisch",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-25-evaluatie-routines"
    ],
    "id": "2026-09-21-regressiecheck",
    "prioriteit": "P1",
@@ -761,7 +832,8 @@ window.HI_RESEARCH = {
     "2026-09-15-growth-radar-seo-content",
     "2026-09-16-growth-radar-ai-search",
     "2026-09-22-growth-radar-seo-content",
-    "2026-09-23-seo-conversietest-run-1"
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-25-evaluatie-routines"
    ],
    "id": "2026-09-16-seo-onderzoek-cloud-routine-website",
    "prioriteit": "P3",
@@ -998,7 +1070,8 @@ window.HI_RESEARCH = {
     "2026-09-07-weekoverzicht",
     "2026-09-15-regressiecheck",
     "2026-09-03-analytics-kpi-meetgat",
-    "2026-09-04-werkdossier-stand-van-zaken"
+    "2026-09-04-werkdossier-stand-van-zaken",
+    "2026-09-25-evaluatie-routines"
    ],
    "id": "2026-09-14-weekoverzicht",
    "prioriteit": "P1",
@@ -1611,9 +1684,9 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 28,
-   "P2": 57,
-   "P3": 38
+   "P1": 30,
+   "P2": 61,
+   "P3": 39
   },
   "per_categorie": {
    "CRO": 4,
@@ -1621,7 +1694,7 @@ window.HI_RESEARCH = {
    "Merk": 6,
    "SEO": 11,
    "Social": 2,
-   "Techniek": 1
+   "Techniek": 2
   },
   "per_week": [
    {
@@ -1680,12 +1753,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 10,
+    "aantal": 11,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 25
+  "totaal_notities": 26
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

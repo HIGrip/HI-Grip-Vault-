@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Twee backlogpunten opgelost sinds vorige week (oude product-URL's redirecten nu, homepage heeft nog maar 1 H1), maar het SEO-schema blijkt slechts gedeeltelijk gepusht (WebSite/ItemList/FAQPage missen nog op specifieke pagina's) en een nieuwe /en/-sectie heeft een keyword-loze title. GA4 kon deze week niet gecontroleerd worden door een tooling-storing."
-gerelateerd: [2026-09-15-regressiecheck, 2026-09-15-seo-audit, 2026-09-21-growth-radar-seo-technisch, 2026-09-23-seo-conversietest-run-1]
+gerelateerd: [2026-09-15-regressiecheck, 2026-09-15-seo-audit, 2026-09-21-growth-radar-seo-technisch, 2026-09-23-seo-conversietest-run-1, 2026-09-25-evaluatie-routines]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\regressiecheck-2026-09-21.md"
 deadline: ""

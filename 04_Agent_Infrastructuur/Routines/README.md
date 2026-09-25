@@ -24,7 +24,7 @@
 | — | Growth Radar | `Growth Radar.md` | Draait lokaal (brug); verhuist naar info@ |
 | — | SEO-regressiecheck | `SEO-regressiecheck.md` | Draait lokaal (brug); verhuist naar info@ |
 | — | SEO- en conversietest | `SEO- en conversietest.md` | Draait lokaal (brug); verhuist naar info@ |
-| — | Denzel-weekoverzicht | [[Denzel Weekoverzicht — Routine]] | Draait op info@; stap 9 moet nog worden bijgewerkt |
+| — | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | Draait op info@; prompt nog vervangen door de verwijzing |
 | 1 | Search Console & rankings | `Search Console & rankings.md` | Nieuw, eerste in de rij |
 | 2 | Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | Nieuw |
 | 3 | Maandelijkse strategiesynthese | `Strategiesynthese maandelijks.md` | Nieuw |

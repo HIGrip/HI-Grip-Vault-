@@ -82,3 +82,4 @@ De voorwaarden "alleen ongeopend" en "25% herbevoorradingskosten" lijken te bots
 - [Van iDEAL naar Wero — Frankwatching](https://www.frankwatching.com/archive/2026/08/15/van-ideal-naar-wero/)
 
 ## Aantekeningen
+- **Lars · 2026-09-25 09:26** — Besluit verzend/retour: verzendkosten €4,50, gratis verzending vanaf €35, binnen 1 werkdag verzonden, retour 30 dagen. Vastgelegd in [[Performance Grip Socks 2.0]] §1.

@@ -280,7 +280,7 @@ window.HI_RESEARCH = {
    }
   }
  ],
- "gebouwd": "2026-09-25T10:02:42+00:00",
+ "gebouwd": "2026-09-25T11:34:53+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -417,6 +417,72 @@ window.HI_RESEARCH = {
    "acties": [
     {
      "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#9105501b",
+     "prioriteit": "P1",
+     "tekst": "Q4 2026 invullen in het v3-model (verwachting ± € 11.000 omzet); eigen vermogen 2027 rekent automatisch mee"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#6d2f6acc",
+     "prioriteit": "P1",
+     "tekst": "Rente en aflossing van de investeerderslening controleren (model: 5%, aflossen 2028–2032)"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#a7e763f5",
+     "prioriteit": "P1",
+     "tekst": "Offerte skisok met gelprotectie aanvragen (FOB, MOQ, levertijd) vóór juni 2027 voor levering in september"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#83b47803",
+     "prioriteit": "P2",
+     "tekst": "Qredits € 25.000 voorbereiden voor aanvraag in Q4 2027"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#edd40a4a",
+     "prioriteit": "P2",
+     "tekst": "Ondernemersvergoeding 2027–2028 (€ 500 en € 1.000) motiveren in het verslag (richtlijn reader € 2.000)"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#9af07018",
+     "prioriteit": "P2",
+     "tekst": "Feitenbestand en Strategische Keuzes bijwerken: skisokken zijn niet meer uitgesteld maar gepland voor Q4 2027"
+    },
+    {
+     "afgevinkt": false,
+     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#8cdc0d8a",
+     "prioriteit": "P3",
+     "tekst": "Recenter aantal Nederlandse wintersporters zoeken (laatste harde cijfer: ± 1 mln, 2015)"
+    }
+   ],
+   "body_md": "# Financieel plan 2027-2031 op basis van BMC 2031\n\n## In het kort\n\nVermogensbehoefte, financieringsplan en exploitatiebegroting van HÏ Grip. 2027 staat per kwartaal, 2028–2031 per jaar. Versie 3 (25-09-2026) bouwt voort op het bestand waarin het team 2026 t/m Q3 heeft ingevuld: € 15.100 omzet, € 8.000 resultaat, een lening van een investeerder (€ 25.000) en een kortlopende lening (€ 4.200). Nieuw in v3:\n\n- de webshop 2027 per kwartaal zoals afgesproken (Q1 € 5.400, Q2 € 6.000, Q3 € 7.800);\n- de lancering van skisokken met gelprotectie in Q4 2027;\n- een groeicurve die eerst sneller stijgt en later meer afvlakt, met minstens € 500.000 webshopomzet in 2031.\n\nHet model telt 1.825 formules en geeft 0 fouten (herberekend in Excel).\n\n## Bevindingen\n\n**Kerncijfers v3 (€, excl. btw)**\n\n| | 2027 | 2028 | 2029 | 2030 | 2031 |\n|---|---|---|---|---|---|\n| Omzet | 114.800 | 323.000 | 720.000 | 1.142.000 | 1.499.000 |\n| …waarvan webshop | 45.800 | 130.000 | 276.000 | 438.000 | 554.000 |\n| …waarvan skisokken (webshop + retail) | 17.000 | 59.000 | 122.000 | 192.000 | 234.000 |\n| Groei | | ×2,8 | ×2,2 | ×1,6 | ×1,3 |\n| Aandeel B2B, alleen gripsokken | 61% | 56% | 57% | 56% | 56% |\n| EBITDA | 30.010 | 46.580 | 40.620 | 88.540 | 98.600 |\n| Resultaat na belasting | 27.900 | 38.320 | 22.367 | 51.825 | 58.667 |\n| Vermogensbehoefte (begin jaar) | 26.600 | 80.200 | 192.300 | 286.100 | 356.500 |\n\n1. **De 2026-cijfers laten een duidelijk seizoenspatroon zien.** Dat patroon is overgenomen in 2027, maar afgezwakt, omdat 2026 een opstartjaar is.\n   - Retail koopt in Q1 (€ 3.850) en Q3 (€ 2.290); Q2 is stil (€ 40).\n   - De hele clubomzet viel in Q2 (€ 6.330): clubs bestellen vóór het nieuwe seizoen.\n   - Verzendkosten waren maar € 188 t/m Q3, omdat de klant onder € 35 zelf € 4,50 betaalt. In het model is dat daarom € 1,75 netto per zending in plaats van € 3,50.\n   - Het subtotaal interne kosten in het ingevulde bestand miste de regel betalingsverschillen. Het model telt die wel mee, dus het resultaat over 2026 wordt € 7.963 in plaats van € 8.017.\n2. **Skisokken zijn een tweede omzetmotor met een betere marge.**\n   - Prijs: € 29,95 incl. btw, € 24 netto. Dat ligt onder de enige directe concurrent met scheenbescherming, de Sidas Ski Protect V2, die € 34,90 kost (normaal € 42,90).\n   - Inkoop is geschat op € 4,50 per paar. Premium sokken kosten in Turkije $ 1–2 bij 1.000+ paar; een lange sok met merino en gel is duurder.\n   - De verkoop komt in twee golven: Q4, en januari–maart. 49% van de Nederlandse wintersporters vertrekt in januari, slechts 12% met kerst.\n   - In 2031 gaat het om 7.000 paar via de webshop en 5.000 via retail. Dat is ± 1,2% van ± 1 miljoen wintersporters (cijfer uit 2015).\n3. **De groeicurve is steil in 2028–2029 en vlakt daarna af.** Na 2029 komt de groei vooral uit bestaande kanalen, en daar zeggen benchmarks: DTC-merken onder $ 10 mln groeiden in 2025 gemiddeld 24%. De extra groei in 2028–2029 komt uit nieuwe stappen: het eerste volle skiseizoen, 45 → 72 retailpartners en een retailketen vanaf 2029. Stapgroei vraagt zo'n nieuw product of kanaal.\n4. **2027 heeft geen nieuw geld nodig.** Het eigen vermogen (€ 8.750) en de lening van de investeerder (€ 25.000) dekken de vermogensbehoefte van € 26.600, inclusief de eerste skisok-run. Daarna:\n   - Qredits € 25.000 in 2028, aan te vragen in Q4 2027;\n   - een investeerder met € 80.000 aandelenkapitaal in 2029, bij de omzetting naar een BV;\n   - een banklening met BMKB van € 80.000 in 2030;\n   - een rekening-courant als sluitpost.\n\n   Elk jaar sluit het plan.\n5. **Het team groeit mee met het aantal orders.** Het eerste personeel komt in 2029: een marketeer en 0,5 fte operations. In 2031 zijn er 4 medewerkers (5,3 fte). De ondernemersvergoeding volgt de richtlijn van € 2.000 uit de reader vanaf 2029; in 2027 is die € 500 en in 2028 € 1.000.\n\n## Acties\n- [ ] P1 · Q4 2026 invullen in het v3-model (verwachting ± € 11.000 omzet); eigen vermogen 2027 rekent automatisch mee\n- [ ] P1 · Rente en aflossing van de investeerderslening controleren (model: 5%, aflossen 2028–2032)\n- [ ] P1 · Offerte skisok met gelprotectie aanvragen (FOB, MOQ, levertijd) vóór juni 2027 voor levering in september\n- [ ] P2 · Qredits € 25.000 voorbereiden voor aanvraag in Q4 2027\n- [ ] P2 · Ondernemersvergoeding 2027–2028 (€ 500 en € 1.000) motiveren in het verslag (richtlijn reader € 2.000)\n- [ ] P2 · Feitenbestand en Strategische Keuzes bijwerken: skisokken zijn niet meer uitgesteld maar gepland voor Q4 2027\n- [ ] P3 · Recenter aantal Nederlandse wintersporters zoeken (laatste harde cijfer: ± 1 mln, 2015)\n\n## Bronnen\n\n- Eigen realisatie 2026 t/m Q3 (ingevuld door het team) + `Financiën - HÏ Grip.xlsx` (batches, staffels)\n- [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md) (adviesprijs, B2B-prijzen), [2026-09-21-beachhead-rugby](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-beachhead-rugby.md), [2026-09-07-compliance-todo](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-compliance-todo.md)\n- Sidas Ski Protect V2: https://www.sportheaters.com/products/449/ski-socks-sidas-ski-protect-v2\n- Groothandelsmarge premium sokken (retail 55–65%, wholesale ≈ 0,4 × retail): https://deadsoxy.com/blogs/wholesale-socks/wholesale-socks-guide-retailers-resellers\n- Sokkenproductie Turkije ($ 1–2 bij 1.000+ paar): https://www.leelinesports.com/socks-manufacturers-in-turkey/ · MOQ merino 500 paar: https://deadsoxy.com/blogs/custom-socks/custom-wool-socks-a-buyers-guide-to-merino-blends-moqs-and-manufacturing\n- Wintersportonderzoek 2025–2026 (vertrekmaanden): https://www.snowplaza.nl/weblog/wintersportonderzoek-2025-2026-meer-geld-vaker-skien-en-trouw-aan-oostenrijk/\n- ± 1 mln Nederlandse wintersporters (NBTC-NIPO, 2015): https://skiinformatie.nl/aantal-wintersporters-stabiel-op-1-miljoen/\n- DTC-groeibenchmarks: https://ecomcfo.co/ecom-cfo-notebook-2026-annual-benchmark-report/ · https://www.projectionhub.com/post/direct-to-consumer-d2c-product-startup-revenue-stats-2022\n- Qredits: https://www.qredits.nl/zakelijk-krediet/mkb-krediet · PostNL: https://www.postnl.nl/zakelijk/tarieven/ · Vpb 2026: https://www.mkbservicedesk.nl/nieuws/ondernemersnieuws/vpb-tarief-in-2025-en-2026\n- Volledige lijst: tabblad *Bronnen* in het Excel-model\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "C:\\Users\\Test\\Downloads\\HÏ Grip - Financieel Plan 2026-2031 (v3 skisokken).xlsx",
+   "bronbestand_url": null,
+   "categorie": "Merk",
+   "datum": "2026-09-25",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-21-beachhead-rugby",
+    "2026-09-07-compliance-todo",
+    "2026-09-24-upfront-bestelvolume-schatting"
+   ],
+   "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "Versie 3 met de ingevulde 2026-cijfers en skisokken vanaf Q4 2027: 2027 € 115.000 omzet (gripsokken € 98.000 bij ± 15.000 stuks en 61% B2B, skisokken € 17.000), daarna ×2,8 → ×2,2 → ×1,6 → ×1,3 naar € 1,5 mln in 2031, waarvan € 554.000 webshop. Elk jaar winstgevend; in 2027 geen nieuw geld nodig dankzij de lening van de investeerder, daarna € 185.000 extern plus een rekening-courant.",
+   "status": "nieuw",
+   "titel": "Financieel plan 2027-2031 op basis van BMC 2031 (vermogensbehoefte, financieringsplan, exploitatiebegroting)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md",
+   "vervangt": []
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
      "id": "2026-09-24-upfront-bestelvolume-schatting#3712b6e1",
      "prioriteit": "P3",
      "tekst": "Piekdag-mechaniek van Upfront (aangekondigde eenmalige actie, bundels, hoge AOV) uitwerken als test voor een HÏ Grip-actiedag"
@@ -475,60 +541,6 @@ window.HI_RESEARCH = {
    "status": "nieuw",
    "titel": "Growth Radar — CRO (prijsladder gewijzigd, verzenddrempel, script tags)",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-growth-radar-cro.md",
-   "vervangt": []
-  },
-  {
-   "acties": [
-    {
-     "afgevinkt": false,
-     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#77141c03",
-     "prioriteit": "P1",
-     "tekst": "Kolom 2026 en het eigen vermogen per 1-1-2027 invullen in het v2-model"
-    },
-    {
-     "afgevinkt": false,
-     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#edfa3bdc",
-     "prioriteit": "P1",
-     "tekst": "Ondernemersvergoeding van € 500 p.p./mnd motiveren in het verslag (richtlijn reader: € 2.000)"
-    },
-    {
-     "afgevinkt": false,
-     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#3371612a",
-     "prioriteit": "P2",
-     "tekst": "Winstdoelen in Strategische Keuzes bijstellen naar het v2-plan (2031 ± € 1,27 mln omzet, ± € 48.000 winst)"
-    },
-    {
-     "afgevinkt": false,
-     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#6211e151",
-     "prioriteit": "P2",
-     "tekst": "Qredits-microkrediet van € 30.000 voorbereiden voor de inkoop van ± 15.000 stuks in 2027"
-    },
-    {
-     "afgevinkt": false,
-     "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031#10498b0b",
-     "prioriteit": "P3",
-     "tekst": "Offertes aanvragen voor OEKO-TEX/GRS en een Europese short-term partner (vanaf 2028)"
-    }
-   ],
-   "body_md": "# Financieel plan 2027-2031 op basis van BMC 2031\n\n## In het kort\n\nGevraagd waren een vermogensbehoefte, een financieringsplan en een exploitatiebegroting op basis van het Business Model Canvas 2031. 2026 vult het team zelf in; 2027 staat per kwartaal, 2028–2031 per jaar. De eerste versie (± € 2,5 mln omzet in 2031, ± € 1,3 mln externe financiering) was volgens het team te optimistisch. De v2 vertrekt vanuit hoe HÏ Grip nu werkt: 2026 ± € 27.000 omzet en ± € 6.000 kosten tot en met september. De 26 aanpassingen voor 2027 zijn per kwartaal verwerkt, posten zijn samengevoegd en de omzet is afgerond op € 1.000. Het model telt 1.692 formules met 0 fouten (herberekend in Excel).\n\n## Bevindingen\n\n**Kerncijfers v2 (€, excl. btw)**\n\n| | 2027 | 2028 | 2029 | 2030 | 2031 |\n|---|---|---|---|---|---|\n| Omzet | 99.000 | 232.000 | 480.000 | 835.000 | 1.272.000 |\n| Stuks | 14.880 | 33.250 | 69.120 | 119.790 | 178.020 |\n| Aandeel B2B | 61% | 57% | 59% | 60% | 59% |\n| EBITDA | 18.830 | 5.750 | −18.460 | 20.940 | 77.835 |\n| Resultaat na belasting | 14.985 | −1.518 | −30.283 | −4.513 | 47.951 |\n| Vermogensbehoefte (begin jaar) | 24.400 | 65.200 | 158.100 | 226.600 | 307.500 |\n| Team incl. founders | 3 | 3 | 4 | 6 | 7 |\n\n1. **2027 is winstgevend omdat de vaste lasten minimaal zijn.** De founders krijgen pas vanaf Q3 € 500 per maand. Er is geen personeel, geen huur en geen fulfilment, en er is € 200 per maand aan software. Op € 99.000 omzet blijft ± € 15.000 over.\n2. **B2B houdt de marge lager maar de logistiek goedkoper.** Door 60% B2B tegen staffelprijzen van € 5,30–6,60 ligt de brutomarge rond 62%. Het B2B-volume gaat in dozen, niet per pakketje.\n3. **2028–2030 draaien rond break-even.** De eerste medewerker (marketeer, 2029), de BV-omzetting, fulfilment en de uitrol naar BE/DE kosten geld vóór de schaal er is. Het grootste verlies is € 30.000 in 2029.\n4. **Groei kost werkkapitaal, geen verlies.** De vermogensbehoefte stijgt naar € 307.500 in 2031, vooral door voorraad en debiteuren voor de retailketen. Daarom komen er een investeerder (€ 100.000, 2029), een bank met BMKB (€ 100.000, 2030) en een rekening-courant tot € 120.000.\n5. **De ondernemersvergoeding ligt onder de richtlijn uit de reader.** In 2027 is dat € 500 per persoon per maand tegen een richtlijn van € 2.000. Die keuze moet in het verslag gemotiveerd worden.\n6. **De roadmap is iets bijgesteld.** 2031 komt uit op ± € 1,27 mln omzet in plaats van de € 1,5 mln uit [Strategische Keuzes](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md). De winst van € 1 mln uit de roadmap is bij geen enkele realistische kostenstructuur haalbaar.\n\n## Acties\n- [ ] P1 · Kolom 2026 en het eigen vermogen per 1-1-2027 invullen in het v2-model\n- [ ] P1 · Ondernemersvergoeding van € 500 p.p./mnd motiveren in het verslag (richtlijn reader: € 2.000)\n- [ ] P2 · Winstdoelen in Strategische Keuzes bijstellen naar het v2-plan (2031 ± € 1,27 mln omzet, ± € 48.000 winst)\n- [ ] P2 · Qredits-microkrediet van € 30.000 voorbereiden voor de inkoop van ± 15.000 stuks in 2027\n- [ ] P3 · Offertes aanvragen voor OEKO-TEX/GRS en een Europese short-term partner (vanaf 2028)\n\n## Bronnen\n\n- Eigen administratie: `Financiën - HÏ Grip.xlsx` (batches, staffels) + omzet/kosten 2026 volgens het team\n- [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md) (adviesprijs, B2B-prijzen), [2026-09-21-beachhead-rugby](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-beachhead-rugby.md) (19.000 rugbyers), [2026-09-07-compliance-todo](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-compliance-todo.md) (UPV, DPP)\n- Qredits: https://www.qredits.nl/zakelijk-krediet/mkb-krediet\n- bol.com-commissies: https://www.boloo.co/blog/commissies-bol-com · TikTok Shop: https://www.frankwatching.com/archive/2026/06/02/tiktok-shop-nederland-kansen-webwinkeliers/\n- PostNL: https://www.postnl.nl/zakelijk/tarieven/ · Fulfilment: https://www.chain-logistics.nl/kennis/wat-kost-fulfilment/\n- Werkgeverslasten: https://www.ondernemenmetpersoneel.nl/orienteren/personeelskosten/dit-zijn-de-kosten-van-personeel · WBSO: https://www.rendement.nl/innovatie/nieuws/subsidieregeling-wbso-in-2026-onveranderd.html\n- Vpb 2026: https://www.mkbservicedesk.nl/nieuws/ondernemersnieuws/vpb-tarief-in-2025-en-2026\n- Volledige lijst: tabblad *Bronnen* in het Excel-model\n\n## Aantekeningen",
-   "bron": "los",
-   "bronbestand": "C:\\Users\\Test\\Downloads\\HÏ Grip - Financieel Plan 2026-2031 (v2 realistisch).xlsx",
-   "bronbestand_url": null,
-   "categorie": "Merk",
-   "datum": "2026-09-24",
-   "deadline": "",
-   "gerelateerd": [
-    "2026-09-21-beachhead-rugby",
-    "2026-09-07-compliance-todo",
-    "2026-09-24-upfront-bestelvolume-schatting"
-   ],
-   "id": "2026-09-24-financieel-plan-2027-2031-bmc-2031",
-   "prioriteit": "P1",
-   "routine": "",
-   "samenvatting": "Herziene, realistische versie (v2): 2027 ± 15.000 stuks en € 99.000 omzet (61% B2B), zonder personeel en met € 30.000 Qredits; daarna groei ×2,3 → ×2,1 → ×1,7 → ×1,5 naar € 1,27 mln in 2031. Rond break-even in 2028–2030 door de eerste medewerkers en de BV; winst € 48.000 in 2031. Extern geld in totaal € 230.000 plus een rekening-courant.",
-   "status": "nieuw",
-   "titel": "Financieel plan 2027-2031 op basis van BMC 2031 (vermogensbehoefte, financieringsplan, exploitatiebegroting)",
-   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md",
    "vervangt": []
   },
   {
@@ -1833,8 +1845,8 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 31,
-   "P2": 67,
+   "P1": 32,
+   "P2": 68,
    "P3": 40
   },
   "per_categorie": {

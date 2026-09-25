@@ -36,7 +36,7 @@
 2. **Netwerk:** een omgeving met toegang tot higrip.nl en het open web. De verwijderde routine "website" faalde omdat higrip.nl geblokkeerd was.
 3. **Connectors:** per routine aanzetten, want wat niet aan staat bestaat niet voor de routine. Zie de tabel "Waar data vandaan komt" in [[Feiten & Actuele Staat]].
 4. **Google Analytics + Search Console:** claude.ai heeft hiervoor geen connector. De routines halen de cijfers op met `python 05_Research/_tools/google_data.py ga4|gsc|check`, via de servicesleutel `ga4-mcp@higrip-analytics.iam.gserviceaccount.com` (alleen-lezen). In de cloudomgeving op info@ zet je daarvoor:
-   - **Setup-script:** `pip install google-analytics-data google-api-python-client google-auth`
+   - **Setup-script:** `pip install --upgrade cffi cryptography google-analytics-data google-api-python-client google-auth` (zonder `cffi` crasht de import in de cloudcontainer)
    - **Omgevingsvariabele:** `GOOGLE_SA_JSON_B64` = de base64-versie van het sleutelbestand (zie de uitleg hieronder)
 5. **Skills:** in de vault onder `.claude/skills/`, zodat ze ook in de cloud beschikbaar zijn.
 

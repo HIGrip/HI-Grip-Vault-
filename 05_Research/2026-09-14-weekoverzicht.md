@@ -5,10 +5,10 @@ datum: 2026-09-14
 bron: routine
 routine: "denzel-week"
 categorie: CRO
-status: bekeken
+status: gearchiveerd
 prioriteit: P1
 samenvatting: "De webshop had deze week 0 orders / €0 omzet bij 7 begonnen checkouts — door lars bevestigd als echt conversieprobleem, geen trackingfout. Structured data staat twee weken op rij alleen als Organization; homepage-title/description staan 4 weken open; 6 partnership-kandidaten wachten op beoordeling."
-gerelateerd: [2026-09-07-weekoverzicht, 2026-09-15-regressiecheck, 2026-09-03-analytics-kpi-meetgat, 2026-09-04-werkdossier-stand-van-zaken, 2026-09-25-evaluatie-routines]
+gerelateerd: [2026-09-07-weekoverzicht, 2026-09-15-regressiecheck, 2026-09-03-analytics-kpi-meetgat, 2026-09-04-werkdossier-stand-van-zaken, 2026-09-25-evaluatie-routines, 2026-09-21-weekoverzicht]
 vervangt: [2026-09-07-weekoverzicht]
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-09-14.md"
 deadline: ""
@@ -120,13 +120,13 @@ Vanaf deze week is de GA4-funnel-check t.o.v. benchmarks een vast onderdeel van 
 
 ## Acties
 
-- [ ] P1 · Checkout onderzoeken: testbestelling op desktop én mobiel, Abandoned checkouts in Shopify Admin bekijken, eerdere weken vergelijken
-- [ ] P2 · Structured data-regressie op live herstellen — WebSite en FAQPage terug, oorzaak in de thema-historie zoeken
-- [ ] P2 · Homepage-title (nu "HÏ Grip", 7 tekens) en meta description (175 tekens) aanpassen
-- [ ] P2 · 6 partnership-kandidaten beoordelen: Urban Trail, Charity Run, Outdoor Valley, Fervor Pilates, bbb health boutique + 3 HOOG-Events
+- [x] P1 · Checkout onderzoeken: testbestelling op desktop én mobiel, Abandoned checkouts in Shopify Admin bekijken, eerdere weken vergelijken — vervallen: overgenomen in [[2026-09-21-weekoverzicht]]
+- [x] P2 · Structured data-regressie op live herstellen — WebSite en FAQPage terug, oorzaak in de thema-historie zoeken — vervallen: overgenomen in [[2026-09-21-weekoverzicht]]
+- [x] P2 · Homepage-title (nu "HÏ Grip", 7 tekens) en meta description (175 tekens) aanpassen — vervallen: overgenomen in [[2026-09-21-weekoverzicht]]
+- [x] P2 · 6 partnership-kandidaten beoordelen: Urban Trail, Charity Run, Outdoor Valley, Fervor Pilates, bbb health boutique + 3 HOOG-Events — vervallen: beoordeeld in [[2026-09-21-weekoverzicht]]
 - [ ] P2 · Padelclub Rotterdam-uitsluiting verifiëren (eigen clubshop gevonden)
 - [ ] P2 · Funnel-rapport op historische GA4-data (mrt–dec 2025)
-- [ ] P3 · Update Log bijwerken zodra de structured data-situatie is opgelost
+- [x] P3 · Update Log bijwerken zodra de structured data-situatie is opgelost — vervallen: overgenomen in [[2026-09-21-weekoverzicht]]
 - [ ] P3 · Merk & Bedrijf Database / Retailer Database: bevestigen of ze verwijderd mogen worden
 
 ## Bronnen

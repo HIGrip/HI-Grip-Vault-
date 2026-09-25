@@ -19,11 +19,10 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 # ── Paden en constanten ────────────────────────────────────────────────────────
-# Fase 2: de growth-radar-map verhuist naar de vault — dan alleen BACKLOG_PATH aanpassen.
-BACKLOG_PATH = Path(r"C:\Users\Test\.claude\research\growth-radar\ACTIEBACKLOG.md")
-
 VAULT = Path(__file__).resolve().parents[2]
 RESEARCH_DIR = VAULT / "05_Research"
+# Sinds 25-09-2026 in de vault, zodat ook cloudroutines de backlog kunnen bijwerken
+BACKLOG_PATH = RESEARCH_DIR / "_backlog" / "ACTIEBACKLOG.md"
 OUTPUT_PATH = RESEARCH_DIR / "_build" / "register.js"
 KAART_PATH = RESEARCH_DIR / "Waar staat wat.md"
 GITHUB_BRANCH = "HÏ-Grip-Vault-obsidian"
@@ -37,7 +36,8 @@ REQUIRED_KEYS = [
 ]
 ALLOWED = {
     "bron": {"los", "routine"},
-    "routine": {"", "growth-radar", "seo-regressiecheck", "denzel-week", "seo-conversietest"},
+    "routine": {"", "growth-radar", "seo-regressiecheck", "denzel-week", "seo-conversietest",
+                "search-console", "backlinks-merchant", "strategie-maand", "concurrentie"},
     "categorie": {"SEO", "CRO", "Social", "Product", "B2B", "Merk", "Compliance", "Techniek"},
     "status": {"nieuw", "bekeken", "in-uitvoering", "verwerkt", "gearchiveerd"},
     "prioriteit": {"P1", "P2", "P3"},

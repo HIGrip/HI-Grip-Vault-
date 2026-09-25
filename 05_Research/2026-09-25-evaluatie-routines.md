@@ -8,7 +8,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "Van de vijf routines leveren Growth Radar, regressiecheck en de SEO-conversietest bruikbaar werk; de cloud-routine \"website\" faalt elke nacht (higrip.nl geblokkeerd, geen Shopify) en herhaalt foute claims, en Denzel schrijft nog naar de oude map zodat het weekoverzicht niet op het dashboard komt. Grootste systeemprobleem: acties landen op drie plekken en de backlog groeit (18 open, 0 afgerond) zonder dat er iets wordt afgevinkt."
-gerelateerd: [2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-14-weekoverzicht, 2026-09-25-growth-radar-social]
+gerelateerd: [2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-14-weekoverzicht, 2026-09-25-growth-radar-social, 2026-09-21-weekoverzicht]
 vervangt: []
 bronbestand: ""
 deadline: ""

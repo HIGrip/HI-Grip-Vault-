@@ -12,7 +12,10 @@
 | Notities | `05_Research\<id>.md` — `id` = `JJJJ-MM-DD-slug` |
 | Build | `python 05_Research\_build\build_register.py` (`--check` = alleen valideren) → `05_Research\_build\register.js` |
 | Dashboard-bron | `05_Research\_dashboard\index.html` (canoniek — nooit terugwerken vanuit het gelezen artifact) |
-| Backlog (fase 1) | `C:\Users\Test\.claude\research\growth-radar\ACTIEBACKLOG.md` — fase 2: verhuist naar de vault, dan alleen `BACKLOG_PATH` in het buildscript aanpassen |
+| Backlog | `05_Research\_backlog\ACTIEBACKLOG.md` (+ `AFGEROND.md`) — sinds 25-09-2026 in de vault, één backlog voor alle routines |
+| Geheugen routines | `05_Research\_geheugen\<routine>.md` — regels in `_geheugen\README.md` |
+| Feiten | `00_Brand_Core\Feiten & Actuele Staat.md` — prijzen, handles, URL's, ID's, claims; nooit in prompts |
+| Routine-prompts | `04_Agent_Infrastructuur\Routines\` — rolverdeling in `README.md` |
 | Dashboard-URL | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
 
 ## Notitieformaat
@@ -53,7 +56,7 @@ Regels: platte keys, strings tussen dubbele aanhalingstekens, lijsten inline `[a
 
 Verplicht na élk onderzoek: een routine-run óf een losse vraag (bijv. "TikTok Shop-optimalisatie", een audit, een concurrentieanalyse). Naslag of procedure zonder gedateerde bevindingen is geen onderzoek.
 
-1. **Eerst B draaien** (dashboard-wijzigingen ophalen) zodat je op de actuele staat werkt.
+1. **Eerst B draaien** (dashboard-wijzigingen ophalen) zodat je op de actuele staat werkt. Routines lezen daarnaast eerst hun geheugen (`_geheugen\`) en het feitenbestand, en schrijven hun geheugen aan het eind bij.
 2. **Notitie aanmaken** volgens het formaat, met de volledige inhoud: bevindingen, redenering, bronnen, acties met P-code. `bronbestand` = het origineel als dat er is (rapport, memory-bestand, artifact-URL).
 3. **Verbanden verwerken**: zoek notities in dezelfde categorie of met dezelfde onderwerpen (`grep -il` op `05_Research\*.md`). Vul `gerelateerd` in **beide richtingen**. Is een oudere notitie achterhaald → zet haar id in `vervangt`, zet haar `status: gearchiveerd`, en vink vervallen acties in die oudere notitie af met één regel waarom (`- [x] P2 · … — vervallen: <reden>`).
 4. **Build**: `python 05_Research\_build\build_register.py` — moet exit 0 geven. Fout → repareer de notitie, niet het script.
@@ -73,7 +76,7 @@ Ook stap 1 van A en het slot van elke routine.
    - `aantekeningen/{noteId}_{ms}` → `{noteId, naam, ts, tekst}`
 2. **Toepassen**, per doc:
    - status → `status:` in de frontmatter van `05_Research\{noteId}.md`.
-   - check → zoek de actie **op actie-id** (herbereken: sha1 van de genormaliseerde tekst, eerste 8 hex), nooit op positie; zet `[ ]`↔`[x]` in de notitie of in `ACTIEBACKLOG.md` (`### [ ]`/`### [x]`). Onvindbaar id (tekst gewijzigd) → melden, niet gokken, doc laten staan.
+   - check → zoek de actie **op actie-id** (herbereken: sha1 van de genormaliseerde tekst, eerste 8 hex), nooit op positie; zet `[ ]`↔`[x]` in de notitie of in `_backlog\ACTIEBACKLOG.md` (`### [ ]`/`### [x]`). Onvindbaar id (tekst gewijzigd) → melden, niet gokken, doc laten staan.
    - aantekening → regel toevoegen onder `## Aantekeningen`: `- **Naam · JJJJ-MM-DD HH:MM** — tekst` (tijd in Europe/Amsterdam). Tekst letterlijk overnemen, geen markdown-opmaak toevoegen.
    - **Conflictregel**: is het bronbestand ná de override-`ts` gewijzigd (`git log -1 --format=%cI -- <bestand>` en werkboomstatus), dan wint de vault: override niet toepassen, wél in het rapport melden.
 3. **Opruimen**: verwijder de verwerkte docs uit de db (`delete`); genegeerde/onvindbare docs blijven staan en worden gemeld.
@@ -92,6 +95,6 @@ Geen docs in de db → alleen dat melden; geen build of publish nodig tenzij de 
 | `/research-sync` | voert B uit |
 | `higrip-growth-radar` (dagelijks) | stap 5E: dagrapport óók als notitie `JJJJ-MM-DD-growth-radar-<focus>` (`bron: routine`, `routine: growth-radar`), daarna A4–A6 en B. Zondag: alleen B + build + publish |
 | `higrip-seo-regressiecheck` (maandag) | zelfde patroon, id `JJJJ-MM-DD-regressiecheck`, `routine: seo-regressiecheck` |
-| Denzel-weekroutine (cloud, maandag) | schrijft het weekoverzicht als `05_Research\JJJJ-MM-DD-weekoverzicht.md` (`routine: denzel-week`), voert A3, A4 en A6 uit — **geen publish** (dat doet de dagelijkse lokale routine) |
+| Denzel-weekroutine (cloud op info@, maandag) | schrijft het weekoverzicht als `05_Research\JJJJ-MM-DD-weekoverzicht.md` (`routine: denzel-week`), voert A3, A4 en A6 uit — **geen publish** (dat doet de dagelijkse lokale routine) |
 | `website-seo-en-cconversietest` (wekelijks) | id `JJJJ-MM-DD-seo-conversietest-run-<n>`, `routine: seo-conversietest`; volledig rapport staat in de verborgen Shopify-pagina `seo-routine-logboek`, daarna A3–A6 |
 | Stop-hook `research-check.py` | vangnet: meldt niet-gecommitte wijzigingen in `05_Research` bij het einde van een sessie |

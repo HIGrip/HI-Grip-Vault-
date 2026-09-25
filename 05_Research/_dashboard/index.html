@@ -372,11 +372,15 @@
     { key: 'growth-radar', naam: 'Growth Radar', code: 'GR', uitleg: 'Dagelijkse trendscan, elke dag een ander thema (SEO, CRO, social, AI-search).' },
     { key: 'seo-conversietest', naam: 'SEO- & conversietest', code: 'SC', uitleg: 'Wekelijks: meten, auditen en concepten klaarzetten in Shopify. Volledig rapport in het Shopify-logboek.' },
     { key: 'seo-regressiecheck', naam: 'SEO-regressiecheck', code: 'RC', uitleg: 'Maandagcheck: is er sinds vorige week iets achteruitgegaan op higrip.nl?' },
+    { key: 'search-console', naam: 'Search Console & rankings', code: 'GS', uitleg: 'Wekelijks: posities, klikken, zoektermen en kansen in Google.' },
+    { key: 'backlinks-merchant', naam: 'Backlinks & Merchant Center', code: 'BL', uitleg: 'Maandelijks: autoriteit, links en Google Shopping-status.' },
+    { key: 'concurrentie', naam: 'Concurrentie-monitor', code: 'CM', uitleg: 'Tweewekelijks: concurrenten, hun pagina’s, prijzen en advertenties.' },
     { key: 'denzel-week', naam: 'Weekoverzicht', code: 'WK', uitleg: 'Weekoverzicht uit de cloud-routine van Denzel.' },
+    { key: 'strategie-maand', naam: 'Strategiesynthese', code: 'ST', uitleg: 'Maandelijks: alle onderzoek gebundeld tot onderbouwde strategische stappen.' },
     { key: 'los', naam: 'Losse onderzoeken', code: 'LO', uitleg: 'Audits, analyses en vragen buiten de vaste routines.' },
   ];
   const REEKS = Object.fromEntries(REEKSEN.map(r => [r.key, r]));
-  const FOCUS = { 'seo-content': 'SEO content', 'seo-technisch': 'SEO techniek', 'cro': 'CRO', 'social': 'Social', 'ai-search': 'AI search', 'basislijn': 'Basislijn' };
+  const FOCUS = { 'seo-content': 'SEO content', 'seo-technisch': 'SEO techniek', 'cro': 'CRO', 'social': 'Social', 'ai-search': 'AI search', 'basislijn': 'Basislijn', 'social-content': 'Social content' };
   const STATUSSEN = ['nieuw', 'bekeken', 'in-uitvoering', 'verwerkt', 'gearchiveerd'];
   const STATUS_LABEL = { 'nieuw': 'Nieuw', 'bekeken': 'Bekeken', 'in-uitvoering': 'In uitvoering', 'verwerkt': 'Verwerkt', 'gearchiveerd': 'Gearchiveerd' };
   const CATEGORIEEN = ['SEO', 'CRO', 'Social', 'Product', 'B2B', 'Merk', 'Compliance', 'Techniek'];
@@ -400,6 +404,10 @@
       case 'seo-conversietest': { const m = slug.match(/run-(\d+)/); return 'SEO- & conversietest · run ' + (m ? m[1] : nr); }
       case 'seo-regressiecheck': return 'Regressiecheck · week ' + isoWeek(n.datum);
       case 'denzel-week': return 'Weekoverzicht · week ' + isoWeek(n.datum);
+      case 'search-console': return 'Search Console · week ' + isoWeek(n.datum);
+      case 'backlinks-merchant': return 'Backlinks & Merchant · ' + MAANDEN[Number(n.datum.slice(5, 7)) - 1];
+      case 'concurrentie': return 'Concurrentie · week ' + isoWeek(n.datum);
+      case 'strategie-maand': return 'Strategie · ' + MAANDEN[Number(n.datum.slice(5, 7)) - 1] + ' ' + n.datum.slice(0, 4);
       default: return n.titel.split(' — ')[0];
     }
   }

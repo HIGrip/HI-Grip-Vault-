@@ -1,6 +1,6 @@
 # Waar staat wat — onderzoek, routines en werkbestanden
 
-> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-17.
+> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.
 
 | Wat | Waar | Bijgewerkt | Hoe kom je erbij |
 |---|---|---|---|
@@ -8,8 +8,12 @@
 | **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [[Home]] en `CLAUDE.md` §15; bewerken alleen met interact-rechten |
 | **Register + buildscript** | `05_Research\_build\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\_build\build_register.py` |
 | **Dashboard-bron (HTML)** | `05_Research\_dashboard\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |
-| **Growth-radar-backlog** (dagelijkse acties P1/P2/P3) | `C:\Users\Test\.claude\research\growth-radar\ACTIEBACKLOG.md` (fase 2: verhuist naar de vault) | dagelijks door de routine | open het bestand, of NU AANDACHT in het dashboard |
-| **Growth-radar-dagrapporten** | `C:\Users\Test\.claude\research\growth-radar\rapporten\` + `LEDGER.md` (anti-herhaling) | dagelijks ~08:00 | bestanden; sinds 17-09 ook als notitie in `05_Research\` |
+| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\_backlog\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |
+| **Geheugen van de routines** (anti-herhaling) | `05_Research\_geheugen\<routine>.md`; de regel staat in `_geheugen\README.md` | aan het eind van elke run | Obsidian |
+| **Feiten** (prijzen, handles, URL's, ID's, claims) | [[Feiten & Actuele Staat]] (`00_Brand_Core\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |
+| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |
+| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\Routines\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |
+| **Growth-radar-dagrapporten (archief)** | `C:\Users\Test\.claude\research\growth-radar\rapporten\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\` |
 | **Geplande lokale routines** | `C:\Users\Test\.claude\scheduled-tasks\higrip-growth-radar\SKILL.md` en `higrip-seo-regressiecheck\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |
 | **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [[Denzel Weekoverzicht — Routine]]; output tot 14-09 in `04_Agent_Infrastructuur\Beheer\Weekoverzicht\`, daarna `05_Research\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |
 | **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\Users\Test\.claude\commands\*.md` | bij wijziging | typ `/naam` in Claude Code |

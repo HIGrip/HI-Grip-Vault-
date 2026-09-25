@@ -88,6 +88,21 @@ Artikelcodes: **PGSW201 / PGSW202 / PGSW203** (wit 35–38 / 39–42 / 43–47) 
 Van elk B2B-drukwerk bestaat een variant **met** en **zonder** prijzen — dat patroon staat al
 in de 1.0-brochures. Besluit Lars 15 sep 2026: de 2.0-retailbrochure gaat **mét** prijzen.
 
+### Verzending & retour (webshop, consument) — vastgesteld door Lars 25 sep 2026
+
+| Onderwerp | Waarde |
+|---|---|
+| Verzendkosten | **€ 4,50** |
+| Gratis verzending | vanaf **€ 35** |
+| Verzendtijd | **binnen 1 werkdag verzonden** |
+| Retourtermijn | **30 dagen** |
+
+Dit vervangt alle afwijkende waarden op de site (€ 4,25 · drempel € 30 · "vóór 16:00 dezelfde dag" · "vóór 22:00 vandaag" · 14 dagen), zie [[2026-09-23-seo-conversietest-run-1]].
+Gelijktrekken op: productpagina + FAQ-blok, homepage- en productmeta's, algemene voorwaarden, verzend- en retourbeleid, en daarna pas `shippingDetails` / `hasMerchantReturnPolicy` in het Product-schema.
+
+> [!warning] Retourbeleid — niet alleen de termijn aanpassen
+> Het huidige retourbeleid zegt ook "alleen ongeopend" en "25% herbevoorradingskosten". Die voorwaarden botsen met het herroepingsrecht (zie [[Compliance To-Do Lijst]] §4.2) — schrappen of juridisch laten toetsen bij het omzetten naar 30 dagen.
+
 ---
 
 ## 2. Productfeatures — 7, vastgesteld door Lars (15 sep 2026)

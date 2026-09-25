@@ -76,7 +76,7 @@ Bron van de bevestigde waarden: [[Update Log]] (4 sep, als correcte waarden door
 | Bron | Toegang |
 |---|---|
 | Shopify (producten, orders, analytics, pagina's) | Shopify-connector op het info@-account |
-| Google Analytics 4 · Search Console | Google-koppeling op het info@-account (lokaal: `analytics-mcp`) |
+| Google Analytics 4 · Search Console | Geen claude.ai-connector. Gebruik `python 05_Research/_tools/google_data.py` met de servicesleutel `ga4-mcp@higrip-analytics.iam.gserviceaccount.com`, in de cloud via de omgevingsvariabele `GOOGLE_SA_JSON_B64`; lokaal kan ook `analytics-mcp`. |
 | Meta (Ads, Ad Library, pixel) | Meta-koppeling op het info@-account |
 | Live site | Direct ophalen (curl/WebFetch); de cloudomgeving moet netwerktoegang tot higrip.nl hebben |
 

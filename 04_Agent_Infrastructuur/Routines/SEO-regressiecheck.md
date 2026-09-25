@@ -31,7 +31,7 @@ Haal de ruwe HTML op met curl. Plak de regeleindes aan elkaar vóór je grept, w
 
 ## Stap 4 — Extra checks
 - `shopify theme check`, alleen als de thema-map beschikbaar is (lokaal `C:\Users\Test\higrip-theme`). Bekende fouten die je niet meldt: JSONMissingBlock (Bundler), ImgWidthAndHeight, ParserBlockingScript. Vraagt de CLI om in te loggen, meld dat dan en sla de check over.
-- **GA4** (property uit het feitenbestand): sessies per kanaal over de laatste 7 dagen tegenover de 7 dagen daarvoor, het aantal key events (0 = de conversiemeting werkt nog niet) en het kanaal "AI Assistant" over 30 dagen. Filter het botverkeer (Direct uit de VS of China met minder dan 5% engagement) eruit of vermeld het expliciet.
+- **GA4** via `python 05_Research/_tools/google_data.py ga4` (lokaal mag ook `analytics-mcp`): sessies per kanaal over de laatste 7 dagen tegenover de 7 dagen daarvoor, het aantal key events (0 = de conversiemeting werkt nog niet) en het kanaal "AI Assistant" over 30 dagen. Filter het botverkeer (Direct uit de VS of China met minder dan 5% engagement) eruit of vermeld het expliciet.
 - **PageSpeed Insights** (mobiel) voor de homepage, 1 collectie en 1 product: LCP, INP en CLS. Lukt dat niet (quotum), meld het dan.
 
 ## Stap 5 — Output

@@ -6,7 +6,8 @@
 Laten zien hoe higrip.nl het in Google doet: posities, vertoningen, klikken en zoektermen, en wat er deze week veranderd is. Daarnaast bewaken of de verbeteringen van andere routines in Google iets opleveren. Je controleert geen site-techniek (dat doet de regressiecheck) en je bouwt niets (dat doet de conversietest).
 
 ## Benodigd
-Search Console-toegang voor higrip.nl (Google-koppeling op info@), GA4, websearch en schrijfrechten op de vault.
+- **Search Console + GA4:** `python 05_Research/_tools/google_data.py gsc --dagen 7 --top 50` (en `--dagen 28`) en `... ga4`. Draai eerst `... check`. Geeft Search Console "FOUT"? Meld dan de foutmelding in je notitie en stop het Search Console-deel. Verzin geen cijfers.
+- Websearch, en schrijfrechten op de vault.
 
 ## Stap 1 — Lees eerst
 `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` (hoofdkeyword, long-tails, concurrenten), `05_Research/_geheugen/search-console.md` en de backlog. Volg de geheugenregel.

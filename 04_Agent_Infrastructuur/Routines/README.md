@@ -35,5 +35,17 @@
 1. **Bron:** de vault-repo `github.com/HIGrip/HI-Grip-Vault-`, met schrijfrechten (commit en push).
 2. **Netwerk:** een omgeving met toegang tot higrip.nl en het open web. De verwijderde routine "website" faalde omdat higrip.nl geblokkeerd was.
 3. **Connectors:** per routine aanzetten, want wat niet aan staat bestaat niet voor de routine. Zie de tabel "Waar data vandaan komt" in [[Feiten & Actuele Staat]].
-4. **Skills:** in de vault onder `.claude/skills/`, zodat ze ook in de cloud beschikbaar zijn.
+4. **Google Analytics + Search Console:** claude.ai heeft hiervoor geen connector. De routines halen de cijfers op met `python 05_Research/_tools/google_data.py ga4|gsc|check`, via de servicesleutel `ga4-mcp@higrip-analytics.iam.gserviceaccount.com` (alleen-lezen). In de cloudomgeving op info@ zet je daarvoor:
+   - **Setup-script:** `pip install google-analytics-data google-api-python-client google-auth`
+   - **Omgevingsvariabele:** `GOOGLE_SA_JSON_B64` = de base64-versie van het sleutelbestand (zie de uitleg hieronder)
+5. **Skills:** in de vault onder `.claude/skills/`, zodat ze ook in de cloud beschikbaar zijn.
+
+### Google-sleutel in de cloud zetten (eenmalig)
+1. Op de pc met het sleutelbestand, in PowerShell. Dit kopieert de sleutel naar je klembord zonder hem te tonen:
+   `[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\Test\.claude\ga4-mcp-key.json")) | Set-Clipboard`
+2. Ingelogd als info@: claude.ai/code → instellingen van de omgeving → omgevingsvariabelen → naam `GOOGLE_SA_JSON_B64`, waarde = plakken (`Ctrl + V`). Setup-script zoals hierboven. Opslaan.
+3. Plak de sleutel nergens anders (niet in een chat, niet in de vault).
+4. Test het met een routine of sessie in die omgeving: `python 05_Research/_tools/google_data.py check` moet bij beide "ok" geven.
+
+Search Console werkt pas als (a) de **Google Search Console API** aan staat in Google Cloud-project `higrip-analytics` en (b) het serviceaccount als gebruiker aan de property higrip.nl is toegevoegd.
 5. **Geheugen:** `05_Research/_geheugen/<routine>.md` volgens de regel in `_geheugen/README.md`.

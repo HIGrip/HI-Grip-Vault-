@@ -28,8 +28,8 @@ Elke week de vindbaarheid (Google én AI-zoekmachines) en de conversie van higri
 ## Stap 1 — Meten
 Voor de laatste 7 dagen, de 7 dagen daarvoor en de nulmeting (23 sep 2026):
 - **Shopify Analytics:** sessies, sessies via zoekmachines, conversieratio, add-to-cart, bereikte checkout, orders, gemiddelde orderwaarde, omzet, top-10 landingspagina's.
-- **GA4:** dezelfde funnel, met het botverkeer eruit gefilterd.
-- **Search Console:** vertoningen en klikken van de pagina's die deze routine eerder maakte of aanpaste.
+- **GA4** via `python 05_Research/_tools/google_data.py ga4`: dezelfde funnel, met het botverkeer eruit gefilterd.
+- **Search Console** via `python 05_Research/_tools/google_data.py gsc`: vertoningen en klikken van de pagina's die deze routine eerder maakte of aanpaste.
 - Weinig sessies? Dan trek je geen harde conclusies.
 
 ## Stap 2 — Audit (roulerend, één blok diep per run)

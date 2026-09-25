@@ -19,16 +19,20 @@
 
 ## Status
 
-| # | Routine | Promptbestand | Status |
+Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiksvenster van 5 uur op info@ rond 05:30 en reset het rond 10:30.
+
+| Routine (naam op info@) | Promptbestand | Wanneer | Status |
 |---|---|---|---|
-| — | Growth Radar | `Growth Radar.md` | Draait lokaal (brug); verhuist naar info@ |
-| — | SEO-regressiecheck | `SEO-regressiecheck.md` | Draait lokaal (brug); verhuist naar info@ |
-| — | SEO- en conversietest | `SEO- en conversietest.md` | Draait lokaal (brug); verhuist naar info@ |
-| — | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | ✅ Draait op info@ met de verwijzing (sinds 25-09) |
-| 1 | Search Console & rankings | `Search Console & rankings.md` | Nieuw, eerste in de rij |
-| 2 | Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | Nieuw |
-| 3 | Maandelijkse strategiesynthese | `Strategiesynthese maandelijks.md` | Nieuw |
-| 4 | Concurrentie-monitor | `Concurrentie-monitor.md` | Nieuw |
+| HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | ✅ Cloud op info@ (sinds 25-09) |
+| HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | ✅ Cloud op info@ |
+| Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | ✅ Cloud op info@ |
+| HÏ Grip — SEO- en conversietest | `SEO- en conversietest.md` | maandag 07:30 | ✅ Cloud op info@ |
+| HÏ Grip — Search Console & rankings | `Search Console & rankings.md` | woensdag 06:00 | ✅ Cloud op info@, getest 25-09 (GS-01) |
+| Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | maandelijks | Nog te bouwen (#2) |
+| Maandelijkse strategiesynthese | `Strategiesynthese maandelijks.md` | 1e maandag (Opus) | Nog te bouwen (#3) |
+| Concurrentie-monitor | `Concurrentie-monitor.md` | tweewekelijks | Nog te bouwen (#4) |
+
+De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-09 **uit**, zodat niets dubbel draait. Instellingen per cloudroutine: repository `HI-Grip-Vault-`, de omgeving met `GOOGLE_SA_JSON_B64`, model Sonnet 5, Shopify aan, BigQuery uit, auto-fix PR uit, notify aan.
 
 ## Wat elke cloudroutine op info@ nodig heeft
 

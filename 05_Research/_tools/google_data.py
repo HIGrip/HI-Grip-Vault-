@@ -11,7 +11,7 @@ Gebruik:
   python 05_Research/_tools/google_data.py gsc [--dagen 7] [--top 25]
 
 Uitvoer is JSON op stdout: huidige periode, vorige periode van gelijke lengte en het verschil.
-Installeren: pip install --upgrade cffi cryptography google-analytics-data google-api-python-client google-auth
+Installeren: pip install cffi google-analytics-data google-api-python-client google-auth  (geen --upgrade: cryptography van Debian is niet te vervangen)
 """
 
 import argparse

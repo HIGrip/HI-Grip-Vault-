@@ -26,7 +26,7 @@ Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiks
 
 | Routine (naam op info@) | Promptbestand | Wanneer | Status |
 |---|---|---|---|
-| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | Nog aanmaken op info@, met dezelfde instellingen als de andere cloudroutines: repo `HI-Grip-Vault-`, omgeving met `GOOGLE_SA_JSON_B64`, Sonnet 5, Shopify aan |
+| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | ✅ Cloud op info@ (sinds 26-09) |
 | HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | ✅ Cloud op info@ (sinds 25-09) |
 | HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | ✅ Cloud op info@ |
 | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | ✅ Cloud op info@ |

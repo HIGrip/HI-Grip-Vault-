@@ -8,8 +8,9 @@
 
 | Routine | Rol | Doet NIET |
 |---|---|---|
+| **Actiecontrole** (dagelijks 05:00) | **De enige die automatisch afvinkt:** alle open acties (backlog + notities) controleren op de live site, GA4, Search Console, Shopify of de vault, met bewijs vastleggen in `05_Research/_backlog/CONTROLE.json`, dubbelen markeren, de backlogkop bijwerken en op zondag opruimen naar `AFGEROND.md` | Onderzoek, notities, nieuwe acties, actieteksten wijzigen |
 | **Growth Radar** (dagelijks) | Nieuws en trends uit de markt (SEO, AI-search, CRO, social) vertalen naar HÏ Grip | De eigen site controleren |
-| **SEO-regressiecheck** (maandag) | **De enige technische controle van de site:** status, titels, H1, canonicals, schema, redirects, sitemap, theme check | Verbeteringen bouwen, trends zoeken |
+| **SEO-regressiecheck** (maandag) | **De enige technische controle van de site:** status, titels, H1, canonicals, schema, redirects, sitemap, theme check | Verbeteringen bouwen, trends zoeken, bestaande backlogpunten opnieuw controleren of afvinken |
 | **SEO- en conversietest** (wekelijks) | Meten → verbeteringen bouwen als concept in Shopify → testen of eerdere verbeteringen werken | Technische regressies zoeken (dat doet de regressiecheck) |
 | **Search Console & rankings** (wekelijks) | Posities, klikken, vertoningen, zoektermen, stijgers/dalers per pagina | Site-techniek |
 | **Backlinks & Merchant Center** (maandelijks) | Autoriteit, nieuwe en verloren links, Google Shopping-status en -fouten | On-page SEO |
@@ -17,12 +18,15 @@
 | **Maandelijkse strategiesynthese** (1e maandag) | Alle notities van de maand → 3–5 onderbouwde strategische stappen | Nieuw onderzoek |
 | **Concurrentie-monitor** (tweewekelijks) | Concurrenten: prijzen, pagina's, content, **Meta Ad Library** → input voor eigen ads | Eigen site |
 
+**Afvinken** gebeurt alleen door de actiecontrole (met bewijs) of door een mens via het dashboard of de vault. De andere routines lezen `05_Research/_backlog/CONTROLE.json`, controleren bestaande acties niet opnieuw en stellen niets voor wat daar als gedaan of dubbel staat.
+
 ## Status
 
 Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiksvenster van 5 uur op info@ rond 05:30 en reset het rond 10:30.
 
 | Routine (naam op info@) | Promptbestand | Wanneer | Status |
 |---|---|---|---|
+| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | Nog aanmaken op info@, met dezelfde instellingen als de andere cloudroutines: repo `HI-Grip-Vault-`, omgeving met `GOOGLE_SA_JSON_B64`, Sonnet 5, Shopify aan |
 | HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | ✅ Cloud op info@ (sinds 25-09) |
 | HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | ✅ Cloud op info@ |
 | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | ✅ Cloud op info@ |

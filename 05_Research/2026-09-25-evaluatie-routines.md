@@ -49,13 +49,13 @@ Vijf automatische routines draaien voor HÏ Grip. Drie werken inhoudelijk goed, 
 - **Kleine slordigheden.** De taaknaam `website-seo-en-cconversietest` heeft een typfout. Bij de conversietest is de description "analyseer de HÏ Grip website op  SEO- en conversie" niet informatief.
 
 ## Acties
-- [ ] P1 · Cloud-routine "website" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang
-- [ ] P1 · Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren
-- [ ] P2 · Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt
-- [ ] P2 · Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen
+- [x] P1 · Cloud-routine "website" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang
+- [x] P1 · Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren
+- [x] P2 · Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt
+- [x] P2 · Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen
 - [ ] P2 · Eén backlog: aanbevelingen uit het Shopify-logboek en de Denzel-beslissingen spiegelen naar ACTIEBACKLOG.md of andersom, met één eigenaar
 - [ ] P2 · Vast wekelijks afvinkmoment voor de eigenaar invoeren (bijv. maandag na Denzel), anders de instroom van de Growth Radar verlagen naar max. 1–2 punten per dag
-- [ ] P3 · Tijden en titels rechtzetten: Growth Radar-titel "08:00" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest
+- [x] P3 · Tijden en titels rechtzetten: Growth Radar-titel "08:00" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest
 
 ## Bronnen
 - `mcp__scheduled-tasks` — lijst en runs van de drie lokale taken (opgevraagd op 25 sep 2026)

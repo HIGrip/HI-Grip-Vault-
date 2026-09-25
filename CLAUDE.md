@@ -58,6 +58,7 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
 3. Blijf binnen je rol (zie de rolverdeling in `04_Agent_Infrastructuur/Routines/README.md`). Controleer niet wat een andere routine al controleert.
 4. Lukt iets niet (geen toegang, tool faalt)? Stop niet. Noteer het, ga door met wat wel kan en meld het in je notitie.
 5. Sluit af met je geheugen bijwerken, een notitie, de build, publicatie van het dashboard en een commit met push. Bij een publish-conflict of een geweigerde push stop je en meld je het. Nooit forceren.
+6. Afvinken doet alleen de actiecontrole (met bewijs) of een mens; routines lezen 05_Research/_backlog/CONTROLE.json en stellen geen acties voor die daar gedaan of dubbel zijn.
 
 ## 8. Git
 

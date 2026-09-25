@@ -14,7 +14,7 @@ Alleen onderzoek en markdown. Nooit het Shopify-thema wijzigen, nooit iets pushe
 1. `CLAUDE.md` (hoofdmap van de vault).
 2. `00_Brand_Core/Feiten & Actuele Staat.md`: prijzen, claims, markt, concurrenten, keywords. **Gebruik geen feiten uit je eigen kennis of uit oude rapporten.**
 3. `05_Research/_geheugen/growth-radar.md`: alles wat hier staat is al behandeld.
-4. `05_Research/_backlog/ACTIEBACKLOG.md`: bestaande acties stel je niet opnieuw voor, ook niet in andere woorden.
+4. `05_Research/_backlog/ACTIEBACKLOG.md`: bestaande acties stel je niet opnieuw voor, ook niet in andere woorden. Hetzelfde geldt voor wat in `05_Research/_backlog/CONTROLE.json` als `gedaan` of `dubbel` staat en voor `AFGEROND.md` (zoek daarin met grep, lees het niet helemaal). Je controleert en vinkt geen acties af: dat doet de actiecontrole.
 5. Volg de geheugenregel in `05_Research/_geheugen/README.md`.
 
 ## Stap 2 — Dagfocus
@@ -43,14 +43,15 @@ Maximaal 5 bevindingen en maximaal 3 nieuwe backlogpunten per dag. Niets nieuws 
 ## Stap 5 — Output
 **A. Notitie** `05_Research/JJJJ-MM-DD-growth-radar-<focus>.md` (focus: `seo-technisch`, `seo-content`, `ai-search`, `cro`, `social`, `social-content`), in het formaat uit `05_Research/_build/PROCEDURE.md`:
 - `bron: routine`, `routine: growth-radar`, `bronbestand: ""`.
+- Volg het sjabloon uit `PROCEDURE.md`: `kerntitel`, de eerste zin van de samenvatting is de conclusie, `## Kerncijfers` alleen met echte cijfers (anders weglaten) en de vaste sectievolgorde.
 - Onder `## Bevindingen` per item: wat er gebeurd is (met cijfers), dan een blok `> **Voor higrip.nl:** …`, dan `**Actie:** …`.
 - `## Bronnen` met links.
 - Acties die je in de backlog zet, herhaal je niet in de notitie.
 
 **B. Backlog** `05_Research/_backlog/ACTIEBACKLOG.md`:
 - Nieuwe acties onder P1, P2 of P3, in het bestaande format (`### [ ] titel` + Waarom / Waar / Wat / Gevonden op).
-- Nooit dupliceren. Achterhaalt een bevinding een bestaand punt? Dan werk je dat punt bij, of je streept het door met één regel uitleg.
-- Werk de tellerregel en de datum bovenaan bij.
+- Nooit dupliceren. Achterhaalt een bevinding een bestaand punt? Werk dan de body van dat punt bij met één regel uitleg en een datum. De kop verander je niet: die bepaalt het actie-id.
+- Werk daarna de tellerregel en de datum bovenaan bij met `python 05_Research/_tools/acties.py kop --door growth-radar`, niet met de hand.
 
 **C. Geheugen:** één regel per behandeld onderwerp in `05_Research/_geheugen/growth-radar.md`.
 
@@ -59,10 +60,10 @@ Maximaal 5 bevindingen en maximaal 3 nieuwe backlogpunten per dag. Niets nieuws 
 **E. Afronden:** eerst procedure B, dan A3 (verbanden), A4 (build), A5 (publish) en A6 (commit + push), volgens `PROCEDURE.md`.
 
 ## Stap 6 — Zondag: weekonderhoud
-1. Verplaats afgevinkte punten (`[x]`) uit de backlog naar `05_Research/_backlog/AFGEROND.md`, met datum.
-2. Staat een punt al drie weken op P1 zonder beweging? Verlaag het naar P2 en noteer waarom, of markeer het als blokkade.
-3. Staan er meer dan 15 open punten? Benoem welke geschrapt of samengevoegd kunnen worden.
-4. Draai procedure B, dan build, publish en commit. Maak geen nieuwe notitie.
+Afgevinkte punten verplaatst de actiecontrole om 05:00 al naar `AFGEROND.md`. Dat doe jij niet.
+1. Staat een punt al drie weken op P1 zonder beweging? Verlaag het naar P2 en noteer waarom in de body, of markeer het daar als blokkade. De kop blijft gelijk.
+2. Staan er meer dan 15 open punten? Benoem welke geschrapt of samengevoegd kunnen worden. Punten die in `CONTROLE.json` als `dubbel` staan, tel je niet mee.
+3. Draai procedure B, dan `acties.py kop --door growth-radar`, build, publish en commit. Maak geen nieuwe notitie.
 
 ## Afsluiting
 Meld in maximaal vijf regels: de dagfocus, het aantal bevindingen, het aantal nieuwe acties en het belangrijkste punt in één zin.

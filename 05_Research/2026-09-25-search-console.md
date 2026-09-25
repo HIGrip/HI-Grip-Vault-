@@ -7,6 +7,7 @@ routine: "search-console"
 categorie: SEO
 status: nieuw
 prioriteit: P2
+kerntitel: "Klikken groeien op maandbasis, maar 'grip socks' versnippert over vier pagina's"
 samenvatting: "Eerste run van de nieuwe wekelijkse Search Console-routine: 28-dagentrend is sterk positief (klikken +140%, vertoningen +79%), maar de laatste 7 dagen daalden klikken 39% op vrijwel gelijke vertoningen — bij kleine aantallen nog geen trend. 'Grip socks' is verdeeld over vier eigen URL's (kannibalisatie) en de oude productpagina-URL trekt de meeste vertoningen maar een CTR van 0,32%."
 gerelateerd: [2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck]
 vervangt: []
@@ -18,6 +19,13 @@ deadline: ""
 ## In het kort
 
 Eerste run van deze nieuwe routine (besluit 25 sep 2026). Geen eerder geheugen om tegen te vergelijken — deze run is de nulmeting. Search Console en GA4 waren beide bereikbaar (`check` gaf "ok"). Twee onderdelen uit de routine kon ik niet meten: het generatieve-AI-impressierapport en de indexeringsstatus — zie "Wat niet lukte" hieronder.
+
+## Kerncijfers
+
+- **139** · Klikken (28 dagen) · +139,7%
+- **3.972** · Vertoningen (28 dagen) · +78,7%
+- **3,5%** · CTR (28 dagen) · +0,89 pt
+- **9,8** · Gemiddelde positie (28 dagen) · 2,0 hoger
 
 ## Bevindingen
 

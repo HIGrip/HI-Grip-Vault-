@@ -3,8 +3,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 25 september 2026 (search-console)
-Open: 20 · Afgerond: 0 (3 opgelost, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 25 september 2026 (actiecontrole)
+Open: 20 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -17,7 +17,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Let op:** De canonical handle in je eigen documentatie (projectgeheugen, theme-editor preview-links, mobiel-testinstructies) verwijst nog overal naar het oude `hi-grip-gripsokken-1`. Die links werken dankzij de redirect nog wel, maar zijn niet meer accuraat.
 **Gevonden op:** 15 september 2026 (regressiecheck), opgelost/herzien 21 september 2026 (SEO-technisch)
 
-### [ ] [regressie] GA4 key event voor `purchase` staat nog steeds uit
+### [x] [regressie] GA4 key event voor `purchase` staat nog steeds uit
+**Bevestigd:** 25 september 2026 door actiecontrole — GA4 Admin API (google_data.py keyevents): purchase is key event sinds 2025-02-03 (ONCE_PER_EVENT); 28 dagen t/m 24-09: 3 purchase-events, keyEvents 3.
 **Waarom:** `keyEvents = 0` op elk kanaal, deze en vorige week. Blokkeert elke CRO-uitspraak (zie ook projectgeheugen, actie #1 uit de audit).
 **Waar:** GA4-property 476032345 → Admin → Events
 **Wat:** `purchase` markeren als key event.

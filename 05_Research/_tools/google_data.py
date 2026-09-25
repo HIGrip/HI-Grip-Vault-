@@ -9,8 +9,14 @@ Gebruik:
   python 05_Research/_tools/google_data.py check
   python 05_Research/_tools/google_data.py ga4 [--dagen 7]
   python 05_Research/_tools/google_data.py gsc [--dagen 7] [--top 25]
+  python 05_Research/_tools/google_data.py pagina --url /products/performance-gripsokken [--dagen 7]
+  python 05_Research/_tools/google_data.py keyevents
 
 Uitvoer is JSON op stdout: huidige periode, vorige periode van gelijke lengte en het verschil.
+  pagina:    Search Console voor één pagina (pad of volledige URL, www en zonder www tellen mee):
+             klikken, vertoningen, ctr en positie nu vs vorige periode + top 10 zoektermen.
+  keyevents: GA4 Admin API, de events die als key event staan: [{eventName, countingMethod, createTime}].
+             Vereist dat de Google Analytics Admin API aanstaat in het Cloud-project van de sleutel.
 Installeren: pip install cffi google-analytics-data google-api-python-client google-auth  (geen --upgrade: cryptography van Debian is niet te vervangen)
 """
 
@@ -18,7 +24,9 @@ import argparse
 import base64
 import json
 import os
+import re
 import sys
+import urllib.parse
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -126,22 +134,31 @@ def gsc_site(svc) -> str:
              f"(Instellingen → Gebruikers en rechten, recht 'Beperkt'). Zichtbare sites: {sites or 'geen'}")
 
 
-def gsc(dagen: int, top: int) -> dict:
-    svc = gsc_service()
-    site = gsc_site(svc)
-    # Search Console-data is pas na 2-3 dagen compleet: schuif het venster op
-    eind = date.today() - timedelta(days=3)
-    s, e = eind - timedelta(days=dagen - 1), eind
-    ve = s - timedelta(days=1)
-    vs = ve - timedelta(days=dagen - 1)
+class GscVergelijking:
+    """Search Console-query's voor een periode en de vorige periode van gelijke lengte."""
 
-    def query(start, end, dims, limit):
+    def __init__(self, dagen: int, filters=None):
+        self.svc = gsc_service()
+        self.site = gsc_site(self.svc)
+        self.filters = filters or []
+        # Search Console-data is pas na 2-3 dagen compleet: schuif het venster op
+        eind = date.today() - timedelta(days=3)
+        self.s, self.e = eind - timedelta(days=dagen - 1), eind
+        self.ve = self.s - timedelta(days=1)
+        self.vs = self.ve - timedelta(days=dagen - 1)
+
+    def periode(self) -> dict:
+        return {"nu": [str(self.s), str(self.e)], "vorige": [str(self.vs), str(self.ve)]}
+
+    def query(self, start, end, dims, limit):
         body = {"startDate": str(start), "endDate": str(end), "dimensions": dims, "rowLimit": limit}
-        return svc.searchanalytics().query(siteUrl=site, body=body).execute().get("rows", [])
+        if self.filters:
+            body["dimensionFilterGroups"] = [{"filters": self.filters}]
+        return self.svc.searchanalytics().query(siteUrl=self.site, body=body).execute().get("rows", [])
 
-    def samen(dims, limit):
-        nu = {tuple(r.get("keys", ["totaal"])): r for r in query(s, e, dims, limit)}
-        toen = {tuple(r.get("keys", ["totaal"])): r for r in query(vs, ve, dims, limit * 4)}
+    def samen(self, dims, limit, top=None):
+        nu = {tuple(r.get("keys", ["totaal"])): r for r in self.query(self.s, self.e, dims, limit)}
+        toen = {tuple(r.get("keys", ["totaal"])): r for r in self.query(self.vs, self.ve, dims, limit * 4)}
         uit = []
         for k, r in nu.items():
             o = toen.get(k)
@@ -152,30 +169,73 @@ def gsc(dagen: int, top: int) -> dict:
                 "positie_verschil": round(o["position"] - r["position"], 1) if o else None,  # + = gestegen
                 "nieuw": o is None,
             })
-        return sorted(uit, key=lambda x: -x["vertoningen"])
+        uit.sort(key=lambda x: -x["vertoningen"])
+        return uit[:top] if top else uit
 
-    totaal_nu = query(s, e, [], 1)
-    totaal_toen = query(vs, ve, [], 1)
-    t_nu = totaal_nu[0] if totaal_nu else {"clicks": 0, "impressions": 0, "ctr": 0, "position": 0}
-    t_toen = totaal_toen[0] if totaal_toen else {"clicks": 0, "impressions": 0, "ctr": 0, "position": 0}
-    zoektermen = samen(["query"], top)
-    paginas = samen(["page"], top)
-    return {
-        "bron": "Search Console", "site": site,
-        "periode": {"nu": [str(s), str(e)], "vorige": [str(vs), str(ve)]},
-        "totaal": {
+    def totaal(self) -> dict:
+        leeg = {"clicks": 0, "impressions": 0, "ctr": 0, "position": 0}
+        t_nu = (self.query(self.s, self.e, [], 1) or [leeg])[0]
+        t_toen = (self.query(self.vs, self.ve, [], 1) or [leeg])[0]
+        return {
             "klikken": [t_nu["clicks"], t_toen["clicks"], verschil(t_nu["clicks"], t_toen["clicks"])],
             "vertoningen": [t_nu["impressions"], t_toen["impressions"], verschil(t_nu["impressions"], t_toen["impressions"])],
             "ctr_pct": [round(t_nu["ctr"] * 100, 2), round(t_toen["ctr"] * 100, 2)],
             "positie": [round(t_nu["position"], 1), round(t_toen["position"], 1)],
-        },
+        }
+
+
+def gsc(dagen: int, top: int) -> dict:
+    v = GscVergelijking(dagen)
+    zoektermen = v.samen(["query"], top)
+    paginas = v.samen(["page"], top)
+    return {
+        "bron": "Search Console", "site": v.site,
+        "periode": v.periode(),
+        "totaal": v.totaal(),
         "zoektermen": zoektermen,
         "paginas": paginas,
         "striking_distance": [z for z in zoektermen if 5 <= z["positie"] <= 20 and z["vertoningen"] >= 20],
         "lage_ctr": [p for p in paginas if p["vertoningen"] >= 100 and p["ctr"] < 2],
-        "zoekterm_pagina": samen(["query", "page"], top * 2),   # voor kannibalisatie
+        "zoekterm_pagina": v.samen(["query", "page"], top * 2),   # voor kannibalisatie
         "let_op": "Data loopt 3 dagen achter. Onder ~100 vertoningen per zoekterm: geen conclusies.",
     }
+
+
+def re2_escape(tekst: str) -> str:
+    # Search Console gebruikt RE2; re.escape escapet ook '-', dus alleen echte regex-tekens
+    return re.sub(r"([.^$*+?()\[\]{}|\\])", r"\\\1", tekst)
+
+
+def pagina(url: str, dagen: int) -> dict:
+    """Eén pagina: pad of URL, met en zonder www en met of zonder slash aan het eind."""
+    if re.match(r"^[A-Za-z]:[/\\]", url):
+        sys.exit(f"--url {url!r} is een Windows-pad (Git Bash zet /pad om): gebruik MSYS_NO_PATHCONV=1 of de volledige URL.")
+    pad = urllib.parse.urlsplit(url).path if "://" in url else url.split("?")[0]
+    pad = "/" + pad.strip().strip("/")
+    patroon = rf"^https?://(www\.)?{re2_escape(GSC_DOMEIN)}{re2_escape(pad) if pad != '/' else ''}/?$"
+    v = GscVergelijking(dagen, [{"dimension": "page", "operator": "includingRegex", "expression": patroon}])
+    return {
+        "bron": "Search Console", "site": v.site, "pagina": pad, "patroon": patroon,
+        "periode": v.periode(),
+        "totaal": v.totaal(),
+        "zoektermen": v.samen(["query"], 500, top=10),
+        "let_op": "Data loopt 3 dagen achter. Onder ~100 vertoningen: geen conclusies.",
+    }
+
+
+# ── GA4 Admin ──────────────────────────────────────────────────────────────────
+def keyevents() -> list:
+    from googleapiclient.discovery import build
+    svc = build("analyticsadmin", "v1beta", credentials=credentials(), cache_discovery=False)
+    uit, token = [], None
+    while True:
+        resp = svc.properties().keyEvents().list(
+            parent=f"properties/{GA4_PROPERTY}", pageSize=200, pageToken=token).execute()
+        uit += [{"eventName": k.get("eventName"), "countingMethod": k.get("countingMethod"),
+                 "createTime": k.get("createTime")} for k in resp.get("keyEvents", [])]
+        token = resp.get("nextPageToken")
+        if not token:
+            return sorted(uit, key=lambda k: k["eventName"] or "")
 
 
 def check() -> dict:
@@ -198,11 +258,20 @@ def check() -> dict:
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("bron", choices=["check", "ga4", "gsc"])
+    p.add_argument("bron", choices=["check", "ga4", "gsc", "pagina", "keyevents"])
     p.add_argument("--dagen", type=int, default=7)
     p.add_argument("--top", type=int, default=25)
+    p.add_argument("--url", help="bij pagina: pad of volledige URL")
     a = p.parse_args()
-    data = check() if a.bron == "check" else ga4(a.dagen) if a.bron == "ga4" else gsc(a.dagen, a.top)
+    if a.bron == "pagina" and not a.url:
+        p.error("pagina vereist --url")
+    data = {
+        "check": check,
+        "ga4": lambda: ga4(a.dagen),
+        "gsc": lambda: gsc(a.dagen, a.top),
+        "pagina": lambda: pagina(a.url, a.dagen),
+        "keyevents": keyevents,
+    }[a.bron]()
     sys.stdout.reconfigure(encoding="utf-8")
     print(json.dumps(data, ensure_ascii=False, indent=1))
 

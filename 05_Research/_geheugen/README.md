@@ -12,6 +12,7 @@ Elke routine heeft hier één geheugenbestand. Omdat het in de vault staat (git)
 | `backlinks-merchant.md` | Backlinks & Merchant Center (nog te starten) |
 | `strategie-maand.md` | Maandelijkse strategiesynthese (nog te starten) |
 | `concurrentie.md` | Concurrentie-monitor (nog te starten) |
+| `actiecontrole.md` | Actiecontrole: welke controlemethode per soort actie werkt, wat niet te controleren is |
 
 ## De vaste geheugenregel (geldt voor élke routine)
 

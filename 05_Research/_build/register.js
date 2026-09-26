@@ -637,7 +637,7 @@ window.HI_RESEARCH = {
    "dubbel": 8,
    "gedaan": 11,
    "handmatig": 51,
-   "ongecontroleerd": 0,
+   "ongecontroleerd": 6,
    "open": 91
   },
   "vandaag_gedaan": [],
@@ -1770,9 +1770,183 @@ window.HI_RESEARCH = {
   },
   "sync": null
  },
- "gebouwd": "2026-09-26T04:09:26+00:00",
+ "gebouwd": "2026-09-26T09:06:53+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-09-26-onderzoek-nieuwe-routines#246b3e87",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: routine Subsidie- en financieringsradar bouwen (maandelijks; RVO, MIT, Innovatiekrediet, provinciale regelingen)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-09-26-onderzoek-nieuwe-routines#88b981ea",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: routine Kansenkalender bouwen (maandelijks; seizoensstarts, toernooien, beurzen, inkoopmomenten van clubs)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-onderzoek-nieuwe-routines#b267a978",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Retentie-/lifecycle-routine pas bouwen bij meer dan 50 orders per maand of zodra Klaviyo gekoppeld is",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-onderzoek-nieuwe-routines#a6b5f6c9",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Advertentie-monitor pas bouwen zodra er betaalde ads lopen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-onderzoek-nieuwe-routines#fc2e9aa5",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Bol.com/Amazon.nl eenmalig als los onderzoek bekijken, niet als routine",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Onderzoek nieuwe routines\n\n## In het kort\n\nGeen enkel extern cijfer over AI-routines hield stand bij controle. Het advies rust daarom op de eigen cijfers van HÏ Grip, niet op beloftes van leveranciers.\n\n## Kerncijfers\n\n- **22** · Gecontroleerde cijfers · alle 22 weerlegd\n- **37** · Orders dit jaar (Shopify) · te weinig voor retentie- of servicerobots\n\n## Acties\n\n- [ ] P2 · Besluit: routine Subsidie- en financieringsradar bouwen (maandelijks; RVO, MIT, Innovatiekrediet, provinciale regelingen)\n- [ ] P2 · Besluit: routine Kansenkalender bouwen (maandelijks; seizoensstarts, toernooien, beurzen, inkoopmomenten van clubs)\n- [ ] P3 · Retentie-/lifecycle-routine pas bouwen bij meer dan 50 orders per maand of zodra Klaviyo gekoppeld is\n- [ ] P3 · Advertentie-monitor pas bouwen zodra er betaalde ads lopen\n- [ ] P3 · Bol.com/Amazon.nl eenmalig als los onderzoek bekijken, niet als routine\n\n## Bevindingen\n\n### Leverancierscijfers\nAlle weerlegde beweringen kwamen van blogs van leveranciers (Retainful, Enrich Labs, Zipchat, Mesa, Prediko, Kore.ai, Omnia, Admetrics, Archive, Fini): conversiepercentages van flows, ROI van e-mail, voorspelnauwkeurigheid van voorraad-AI, oplossingspercentages van servicebots. Geen primaire bron, geen methode.\n\n### Wat wel past bij HÏ Grip nu\n- Het financieel plan rekent vanaf 2028 op 185.000 euro extern geld; een maandelijkse scan van subsidies en financiering levert direct besluiten op.\n- B2B (61% van de omzet in 2027 volgens plan) hangt aan inkoopmomenten van clubs; een kansenkalender voorkomt dat een seizoen gemist wordt.\n- Met 37 orders dit jaar is er te weinig volume voor retentie-, retour- of klantenserviceautomatisering.\n\n## Bronnen\n\n- Deep-research-run wf_b24d32f4-91b (journal in de sessiemap)\n- 05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md\n- 05_Research/_data/shopify.json\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-09-26",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-24-financieel-plan-2027-2031-bmc-2031",
+    "2026-09-25-evaluatie-routines"
+   ],
+   "id": "2026-09-26-onderzoek-nieuwe-routines",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Gecontroleerde cijfers",
+     "verschil": "alle 22 weerlegd",
+     "waarde": "22"
+    },
+    {
+     "label": "Orders dit jaar (Shopify)",
+     "verschil": "te weinig voor retentie- of servicerobots",
+     "waarde": "37"
+    }
+   ],
+   "kerntitel": "Geen enkel leverancierscijfer houdt stand; subsidie-radar en kansenkalender zijn nu zinvol",
+   "prioriteit": "P2",
+   "routine": "",
+   "samenvatting": "Een deep-research-run (Sonnet 5, 107 agents) vond 22 controleerbare cijfers over e-mailflows, voorraad-AI, prijsmonitoring, influencer- en klantenservicetools; alle 22 zijn door onafhankelijke controle weerlegd (leveranciersmarketing zonder bron). Op basis van de eigen cijfers (37 orders dit jaar, externe financiering nodig vanaf 2028, clubs bestellen in voorjaar/zomer) zijn nu alleen een subsidie- en financieringsradar en een kansenkalender zinvol; retentie, advertenties, influencers en klantenservice pas bij een drempel.",
+   "status": "nieuw",
+   "titel": "Onderzoek nieuwe routines — leverancierscijfers houden geen stand, twee routines nu zinvol",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-onderzoek-nieuwe-routines.md",
+   "vervangt": [],
+   "wat_niet_lukte": ""
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": true,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-dashboard-ux-onderzoek#12145159",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Eerst doen beperken tot top 5 met focusvolgorde (deadline binnen 14 dagen, dan wat Claude kan voorbereiden)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": true,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-dashboard-ux-onderzoek#61c4c4bc",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Actiecontrole op Vandaag inklappen tot één regel met tellers",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": true,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-26-dashboard-ux-onderzoek#5ce70d06",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Mobiele tabbalk (Vandaag, Acties, Onderzoek, Cijfers)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-09-26-dashboard-ux-onderzoek#8529e3a8",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: de P1-lijst terugbrengen naar maximaal 10 echte P1's; de rest naar P2 (via het actiemenu op het dashboard)",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Dashboard-UX — Vandaag was overladen\n\n## In het kort\n\nDe startpagina had veel meer dan 7 concurrerende blokken en elke actie 4–6 regels tekst. Met 35 open P1's zegt de prioriteit niets meer. Doorgevoerd in versie 26 van het dashboard.\n\n## Kerncijfers\n\n- **35** · Open P1-acties · te veel om \"deze week\" te zijn\n- **5** · Acties in Eerst doen (was 8, elk 4–6 regels)\n\n## Acties\n\n- [x] P2 · Eerst doen beperken tot top 5 met focusvolgorde (deadline binnen 14 dagen, dan wat Claude kan voorbereiden)\n- [x] P2 · Actiecontrole op Vandaag inklappen tot één regel met tellers\n- [x] P3 · Mobiele tabbalk (Vandaag, Acties, Onderzoek, Cijfers)\n- [ ] P2 · Besluit: de P1-lijst terugbrengen naar maximaal 10 echte P1's; de rest naar P2 (via het actiemenu op het dashboard)\n\n## Bevindingen\n\n### Overladen startpagina\nBoven de vouw stonden cijfers, een groot controlepaneel met drie kolommen bewijs en lange actierijen. Onderzoek van Nielsen Norman Group: gebruikers haken af bij meer dan 7 concurrerende elementen boven de vouw; progressive disclosure (samenvatting eerst, details op verzoek) verlaagt de belasting.\n\n### Prioriteit-inflatie\n35 P1's. Linear houdt daarom een kleine focuslijst aan en laat de rest in de backlog tot een triagemoment.\n\n## Bronnen\n\n- https://www.nngroup.com/videos/progressive-disclosure/\n- https://www.smashingmagazine.com/2025/09/ux-strategies-real-time-dashboards/\n- https://www.uxpin.com/studio/blog/dashboard-design-principles/\n- https://linear.app/docs/triage\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-09-26",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-25-evaluatie-routines"
+   ],
+   "id": "2026-09-26-dashboard-ux-onderzoek",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Open P1-acties",
+     "verschil": "te veel om \"deze week\" te zijn",
+     "waarde": "35"
+    },
+    {
+     "label": "Acties in Eerst doen (was 8, elk 4–6 regels)",
+     "verschil": "",
+     "waarde": "5"
+    }
+   ],
+   "kerntitel": "Vandaag was overladen: nu top 5, besluiten boven de vouw en een mobiele tabbalk",
+   "prioriteit": "P3",
+   "routine": "",
+   "samenvatting": "De startpagina had veel meer dan 7 concurrerende blokken en elke actie 4–6 regels tekst; onderzoek (NN/g, Linear Triage) wijst op progressive disclosure en een beperkte focuslijst. Doorgevoerd in dashboard-versie 26: top 5 Eerst doen, besluiten ernaast, actiecontrole ingeklapt tot één regel, lege hoofdnamen onder Binnenkort en een tabbalk op mobiel.",
+   "status": "verwerkt",
+   "titel": "Dashboard-UX — Vandaag was overladen, nu top 5 en besluiten boven de vouw",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-dashboard-ux-onderzoek.md",
+   "vervangt": [],
+   "wat_niet_lukte": ""
+  },
   {
    "acties": [
     {
@@ -5982,8 +6156,8 @@ window.HI_RESEARCH = {
  "stats": {
   "open_per_prioriteit": {
    "P1": 35,
-   "P2": 71,
-   "P3": 39
+   "P2": 74,
+   "P3": 42
   },
   "per_categorie": {
    "CRO": 4,
@@ -5991,7 +6165,7 @@ window.HI_RESEARCH = {
    "Merk": 6,
    "SEO": 14,
    "Social": 2,
-   "Techniek": 2
+   "Techniek": 4
   },
   "per_week": [
    {
@@ -6050,12 +6224,12 @@ window.HI_RESEARCH = {
     "week": "2026-W38"
    },
    {
-    "aantal": 14,
+    "aantal": 16,
     "start": "2026-09-21",
     "week": "2026-W39"
    }
   ],
-  "totaal_notities": 29
+  "totaal_notities": 31
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

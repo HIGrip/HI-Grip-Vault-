@@ -1,0 +1,101 @@
+{
+ "bijgewerkt": "2026-09-26T05:47:22+02:00",
+ "bronnen": [
+  {
+   "id": "ga4",
+   "naam": "Google Analytics 4",
+   "soort": "servicesleutel",
+   "status": "ok",
+   "detail": "323 sessies in 12 weken",
+   "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als Viewer op GA4-property 476032345 (Beheer → Toegangsbeheer voor property) en 'Google Analytics Data API' aan in Google Cloud-project higrip-analytics."
+  },
+  {
+   "id": "gsc",
+   "naam": "Search Console",
+   "soort": "servicesleutel",
+   "status": "ok",
+   "detail": "https://www.higrip.nl/, data t/m 2026-09-23",
+   "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als gebruiker (Beperkt) in Search Console → Instellingen → Gebruikers en rechten, en 'Google Search Console API' aan in project higrip-analytics."
+  },
+  {
+   "id": "agenda",
+   "naam": "Google Agenda",
+   "soort": "servicesleutel",
+   "status": "niet_gekoppeld",
+   "detail": "Google Calendar API staat uit in Google Cloud-project higrip-analytics.",
+   "hoe_koppelen": "1) 'Google Calendar API' aanzetten in project higrip-analytics. 2) Google Agenda van info@higrip.nl → Instellingen en delen → Delen met specifieke personen → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen met 'Alle afspraakdetails bekijken'. Andere agenda: agenda.calendar_id in 05_Research/_data/instellingen.json."
+  },
+  {
+   "id": "merchant",
+   "naam": "Merchant Center",
+   "soort": "servicesleutel",
+   "status": "niet_gekoppeld",
+   "detail": "Geen merchant.account_id in 05_Research/_data/instellingen.json.",
+   "hoe_koppelen": "1) 'Merchant API' aanzetten in project higrip-analytics. 2) Merchant Center → Instellingen → Mensen en toegang → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen (standaardtoegang). 3) Het Merchant Center-ID invullen als merchant.account_id in 05_Research/_data/instellingen.json."
+  },
+  {
+   "id": "pagespeed",
+   "naam": "PageSpeed Insights",
+   "soort": "servicesleutel",
+   "status": "niet_gekoppeld",
+   "detail": "PageSpeed Insights API staat uit in Google Cloud-project higrip-analytics. Openbaar quotum op (429).",
+   "hoe_koppelen": "'PageSpeed Insights API' aanzetten in project higrip-analytics (of een API-sleutel als omgevingsvariabele PAGESPEED_API_KEY). Zonder een van beide deelt het script het openbare quotum en krijgt het 429."
+  },
+  {
+   "id": "site",
+   "naam": "Live site higrip.nl",
+   "soort": "script",
+   "status": "ok",
+   "detail": "HTTP 200",
+   "hoe_koppelen": "Netwerktoegang tot www.higrip.nl in de omgeving van de routine (cloud: sta het domein toe)."
+  },
+  {
+   "id": "shopify",
+   "naam": "Shopify",
+   "soort": "connector",
+   "status": "ok",
+   "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-09-26",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Shopify koppelen"
+  },
+  {
+   "id": "meta",
+   "naam": "Meta",
+   "soort": "connector",
+   "status": "onbekend",
+   "detail": "Connector op claude.ai: alleen een routine op info@ kan hem gebruiken en controleren.",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Meta koppelen"
+  },
+  {
+   "id": "klaviyo",
+   "naam": "Klaviyo",
+   "soort": "connector",
+   "status": "onbekend",
+   "detail": "Connector op claude.ai: alleen een routine op info@ kan hem gebruiken en controleren.",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Klaviyo koppelen"
+  },
+  {
+   "id": "buffer",
+   "naam": "Buffer",
+   "soort": "connector",
+   "status": "onbekend",
+   "detail": "Connector op claude.ai: alleen een routine op info@ kan hem gebruiken en controleren.",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Buffer koppelen"
+  },
+  {
+   "id": "gmail",
+   "naam": "Gmail",
+   "soort": "connector",
+   "status": "onbekend",
+   "detail": "Connector op claude.ai: alleen een routine op info@ kan hem gebruiken en controleren.",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Gmail koppelen"
+  },
+  {
+   "id": "drive",
+   "naam": "Google Drive",
+   "soort": "connector",
+   "status": "onbekend",
+   "detail": "Connector op claude.ai: alleen een routine op info@ kan hem gebruiken en controleren.",
+   "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Google Drive koppelen"
+  }
+ ]
+}

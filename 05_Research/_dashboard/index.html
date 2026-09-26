@@ -261,7 +261,8 @@
   .zoek kbd { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font: 600 11px var(--font); color: var(--muted); box-shadow: inset 0 0 0 1px var(--rule-strong); border-radius: 4px; padding: 0 5px; }
   .kiezer { padding: 8px 10px; border: 0; border-radius: 10px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--rule-strong); font-size: 13px; }
   .schakel { display: inline-flex; border-radius: 10px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--rule-strong); background: var(--surface); }
-  .schakel button { border: 0; background: transparent; padding: 8px 12px; font-size: 13px; cursor: pointer; color: var(--muted); }
+  .schakel { max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+  .schakel button { border: 0; background: transparent; padding: 8px 12px; font-size: 13px; cursor: pointer; color: var(--muted); white-space: nowrap; flex: none; }
   .schakel button[aria-pressed="true"] { background: var(--ink); color: var(--surface); font-weight: 600; }
   .vink { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); cursor: pointer; }
   .telregel { font-size: 13px; color: var(--muted); }
@@ -454,6 +455,237 @@
     .res + .res { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule); }
     .tally { gap: 22px; }
   }
+
+  /* ── Cijferstrook + doelbalk (Vandaag) ─────────────────────────────── */
+  .strook { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--rule); border-radius: 14px; overflow: hidden; }
+  .kpi { background: var(--surface); padding: 18px 20px 16px; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .kpi .k-label { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+  .kpi b { font-weight: 800; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.05; letter-spacing: -.5px; overflow-wrap: anywhere; }
+  .kpi.is-leeg b { color: var(--muted); font-weight: 600; font-size: 15px; letter-spacing: 0; line-height: 1.4; }
+  .kpi .k-sub { font-size: 12px; color: var(--muted); }
+  .kpi .k-bron { font-size: 11px; color: var(--muted); margin-top: auto; padding-top: 6px; }
+  .kpi .k-bron a { color: var(--ink-2); font-weight: 600; }
+  .doel { grid-column: 1 / -1; background: var(--surface); padding: 16px 20px 18px; display: grid; gap: 10px; }
+  .doel-kop { display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+  .doel-kop b { color: var(--ink); font-weight: 700; }
+  .balk { position: relative; height: 10px; border-radius: 99px; background: var(--sunk); box-shadow: inset 0 0 0 1px var(--rule); }
+  .balk > i { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--ink); max-width: 100%; }
+  .balk > s { position: absolute; top: -4px; bottom: -4px; width: 2px; margin-left: -1px; background: var(--muted); border-radius: 1px; }
+  @media (max-width: 1020px) {
+    .strook { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .strook > .kpi:first-child { grid-column: span 2; }
+  }
+  @media (max-width: 600px) {
+    .strook { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .kpi { padding: 14px 16px; }
+    .doel { padding: 14px 16px 16px; }
+  }
+
+  /* ── Tweede bureau (besluit/kansen, agenda/deadlines) ───────────────── */
+  .duo { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+  @media (max-width: 1020px) { .duo { grid-template-columns: minmax(0, 1fr); } }
+  .uitleg-leeg { margin: 0; padding: 14px 0; font-size: 13px; color: var(--muted); max-width: 60ch; }
+  .uitleg-leeg a { color: var(--ink); font-weight: 600; }
+  .uitleg-leeg code { font-size: .92em; }
+
+  /* Kansen */
+  .kansen { list-style: none; margin: 0; padding: 0; }
+  .kans { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; }
+  .kans-kop { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+  .kans h3 { font-size: 15px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+  .kans-rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex: none; }
+  .impact { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .4px; padding: 1px 8px; border-radius: 99px; white-space: nowrap; line-height: 18px; }
+  .impact--hoog { background: var(--ink); color: var(--surface); }
+  .impact--middel { box-shadow: inset 0 0 0 1.5px var(--ink); color: var(--ink); }
+  .impact--laag { box-shadow: inset 0 0 0 1px var(--rule-strong); color: var(--muted); }
+  .keten { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); }
+  .keten a { font-weight: 600; text-decoration: none; color: var(--ink-2); padding: 1px 9px; border-radius: 99px; box-shadow: inset 0 0 0 1px var(--rule-strong); white-space: nowrap; }
+  .keten a:hover { color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+  .keten .plus { color: var(--muted); }
+  .stap { font-size: 13px; color: var(--ink-2); line-height: 1.5; overflow-wrap: anywhere; }
+  .stap b { color: var(--ink); font-weight: 600; }
+  .kans-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px; color: var(--muted); align-items: center; }
+  .kans-meta a { color: var(--ink-2); font-weight: 600; text-decoration: none; }
+  .kans-meta a:hover { text-decoration: underline; }
+  .kans.is-dicht { opacity: .6; }
+  .kans-menu:empty, .actie-menu:empty { display: none; }
+
+  /* Agenda en deadlines: datumkolom + items */
+  .kal { list-style: none; margin: 0; padding: 0; }
+  .kal-dag { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .kal-datum { display: flex; flex-direction: column; gap: 3px; }
+  .kal-datum b { font-weight: 800; font-size: 22px; line-height: 1; }
+  .kal-datum span { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .kal-dag.is-vandaag .kal-datum b { box-shadow: inset 0 -5px 0 var(--new); align-self: flex-start; }
+  .kal-items { display: grid; gap: 8px; font-size: 14px; min-width: 0; }
+  .kal-item { display: grid; gap: 1px; min-width: 0; }
+  .kal-item b { font-weight: 500; overflow-wrap: anywhere; }
+  .kal-item a { color: inherit; text-decoration: none; font-weight: 600; }
+  .kal-item a:hover { text-decoration: underline; }
+  .kal-item small { font-size: 12px; color: var(--muted); }
+
+  /* Afgerond deze week */
+  .af-kop { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .af-kop b { font-weight: 900; font-size: 34px; line-height: 1; }
+  .af-kop span { font-size: 13px; color: var(--muted); }
+  .af { list-style: none; margin: 14px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+  .af li { padding: 10px 0; border-top: 1px solid var(--rule); font-size: 13px; min-width: 0; }
+  .af li a { color: var(--ink); font-weight: 500; text-decoration: none; }
+  .af li a:hover { text-decoration: underline; }
+  .af li small { display: block; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; margin-top: 2px; }
+  .af .voor-mens { color: var(--ink); font-weight: 600; }
+  @media (max-width: 760px) { .af { grid-template-columns: minmax(0, 1fr); } }
+
+  /* Routines: gezondheid + maandlijst */
+  .lukte { margin: 16px 0 0; padding: 12px 0 0; border-top: 1px solid var(--rule); display: grid; gap: 6px; font-size: 12px; color: var(--muted); }
+  .lukte b { color: var(--ink); font-weight: 600; }
+  .sched td:first-child small.let { color: var(--ink-2); font-weight: 600; }
+  .maand-kop { font-size: 15px; font-weight: 600; margin: 26px 0 8px; }
+  .maand { list-style: none; margin: 0; padding: 0; }
+  .maand li { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; border-top: 1px solid var(--rule); font-size: 13px; align-items: baseline; }
+  .maand li > a { text-decoration: none; font-weight: 600; color: var(--ink); }
+  .maand li > a:hover { text-decoration: underline; }
+  .maand small { display: block; font-size: 11px; color: var(--muted); font-weight: 400; }
+  .maand .m-cel { color: var(--ink-2); }
+  .maand .m-cel span { display: block; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .maand .achter { font-weight: 700; color: var(--ink); }
+  .maand .m-niet { grid-column: 1 / -1; font-size: 12px; color: var(--muted); }
+  @media (max-width: 600px) { .maand li { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .maand li > a { grid-column: 1 / -1; } }
+
+  /* Actierij: eigenaar, uitvoerbaarheid, haakje voor het actiemenu */
+  .todo-rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .chip--eigenaar { background: var(--ink); color: var(--surface); }
+  .chip--uit { background: transparent; box-shadow: inset 0 0 0 1px var(--rule-strong); color: var(--muted); }
+  .todo-item.is-verborgen { opacity: .55; }
+
+  /* Status-chips (koppelingen, CWV) */
+  .stat { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; letter-spacing: .4px; padding: 1px 9px; border-radius: 99px; line-height: 18px; white-space: nowrap; }
+  .stat--ok { background: var(--ink); color: var(--surface); }
+  .stat--fout { box-shadow: inset 0 0 0 1.5px var(--ink); color: var(--ink); }
+  .stat--niet_gekoppeld { box-shadow: inset 0 0 0 1px var(--rule-strong); color: var(--muted); }
+  .stat--onbekend { background: var(--sunk); color: var(--muted); }
+
+  /* Koppelingen */
+  .route-uitleg { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .route-uitleg .panel { display: grid; gap: 8px; align-content: start; }
+  .route-uitleg h2 { font-size: 15px; font-weight: 700; }
+  .route-uitleg p, .route-uitleg ol { margin: 0; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
+  .route-uitleg ol { padding-left: 18px; display: grid; gap: 4px; }
+  @media (max-width: 760px) { .route-uitleg { grid-template-columns: minmax(0, 1fr); } }
+  .bron-rij { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .bron-rij:last-child { border-bottom: 0; }
+  .bron-rij h3 { font-size: 14.5px; font-weight: 600; }
+  .bron-rij h3 small { font-size: 11px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); margin-left: 8px; }
+  .bron-rij p { grid-column: 1 / -1; margin: 0; font-size: 13px; color: var(--ink-2); overflow-wrap: anywhere; }
+  .bron-rij p.hoe { color: var(--muted); }
+  .bron-rij p.hoe b { color: var(--ink); font-weight: 600; }
+  .versheid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); background: var(--surface); border-radius: 14px; overflow: hidden; }
+  .versheid li { box-shadow: 1px 1px 0 var(--rule); padding: 14px 16px; display: grid; gap: 4px; align-content: start; font-size: 13px; }
+  .versheid li b { font-weight: 700; }
+  .versheid li span { color: var(--muted); font-size: 12px; }
+
+  /* Cijfers: lijngrafieken, kernwoorden, CWV */
+  .grafiek-kop { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 16px; flex-wrap: wrap; }
+  .grafiek-kop .nu { display: flex; align-items: baseline; gap: 10px; }
+  .grafiek-kop .nu b { font-weight: 800; font-size: 26px; line-height: 1; letter-spacing: -.5px; }
+  .grafiek svg .lijn { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .grafiek svg .vlak { fill: var(--ink); opacity: .06; }
+  .grafiek svg .punt { fill: var(--surface); stroke: var(--ink); stroke-width: 1.5; }
+  .grafiek svg .punt.laatste { fill: var(--ink); }
+  .grafiek svg .aslabel { fill: var(--muted); }
+  .grafiek svg .staaf.nu { fill: var(--ink); }
+  .kw-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .kw-grid .grafiek h2 { font-size: 14px; overflow-wrap: anywhere; }
+  .cwv { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .cwv-kaart { display: grid; gap: 12px; align-content: start; }
+  .cwv-kaart h3 { font-size: 13px; font-weight: 600; overflow-wrap: anywhere; color: var(--ink-2); }
+  .cwv-score { display: flex; align-items: baseline; gap: 10px; }
+  .cwv-score b { font-weight: 900; font-size: 44px; line-height: 1; letter-spacing: -1px; }
+  .cwv-maat { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--rule); }
+  .cwv-maat div { padding: 10px 8px 0 0; display: grid; gap: 4px; font-size: 12px; color: var(--muted); }
+  .cwv-maat div + div { padding-left: 10px; border-left: 1px solid var(--rule); }
+  .cwv-maat b { font-size: 16px; font-weight: 700; color: var(--ink); }
+  .cwv-maat .oordeel { justify-self: start; }
+  /* Oordeel: hoe slechter, hoe opvallender (zwart vlak), zonder extra kleur */
+  .oordeel { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; padding: 0 7px; border-radius: 99px; line-height: 17px; white-space: nowrap; }
+  .oordeel--goed { box-shadow: inset 0 0 0 1px var(--rule-strong); color: var(--muted); }
+  .oordeel--verbeteren { box-shadow: inset 0 0 0 1.5px var(--ink); color: var(--ink); }
+  .oordeel--slecht { background: var(--ink); color: var(--surface); }
+  .grafiek svg.klein text { font-size: 11px; }
+  /* SVG-tekst schaalt mee met de grafiek: op smalle schermen groter zetten zodat hij leesbaar blijft */
+  @media (max-width: 600px) {
+    .grafiek svg text { font-size: 17px; }
+    .grafiek svg.klein text { font-size: 12px; }
+  }
+  .grafiek svg.echt text { font-size: 12px; }
+
+  /* ── Werken vanuit het dashboard: menu, dialoog, formulieren, Claude ── */
+  .menu-knop { width: 30px; height: 30px; border: 0; border-radius: 50%; background: transparent; color: var(--muted); display: grid; place-items: center; cursor: pointer; box-shadow: inset 0 0 0 1px var(--rule-strong); }
+  .menu-knop:hover { color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+  .menu-knop svg { width: 14px; height: 14px; }
+  button.chip { border: 0; cursor: pointer; font-family: inherit; }
+  .chip--claude { background: transparent; box-shadow: inset 0 0 0 1px var(--ink); color: var(--ink); }
+  button.chip--claude:hover { background: var(--ink); color: var(--surface); }
+  .knop2 { display: inline-flex; align-items: center; gap: 8px; border: 0; cursor: pointer; background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); border-radius: 99px; padding: 7px 14px; font-weight: 600; font-size: 13px; white-space: nowrap; }
+  .knop2:hover { background: var(--ink); color: var(--surface); }
+  .knop2:disabled { opacity: .45; cursor: not-allowed; background: transparent; color: var(--ink); }
+  .knop2--klein { padding: 4px 11px; font-size: 12px; box-shadow: inset 0 0 0 1px var(--rule-strong); }
+  .knoppen { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+  .dlg { border: 0; padding: 0; border-radius: 18px; background: var(--surface); color: var(--ink); width: min(580px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); overflow-y: auto; overscroll-behavior: contain; box-shadow: 0 24px 80px rgba(0, 0, 0, .35); }
+  .dlg::backdrop { background: rgba(0, 0, 0, .55); }
+  .dlg-kop { position: sticky; top: 0; z-index: 1; background: var(--surface); display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 20px 22px 14px; border-bottom: 1px solid var(--rule); }
+  .dlg-kop h2 { font-size: 18px; font-weight: 900; text-transform: uppercase; letter-spacing: -.2px; line-height: 1.15; }
+  .dlg-x { flex: none; width: 34px; height: 34px; border: 0; border-radius: 50%; background: var(--sunk); color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+  .dlg-x svg { width: 12px; height: 12px; }
+  .dlg-body { padding: 18px 22px 24px; display: grid; gap: 20px; }
+  .dlg-actie { font-size: 15px; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; }
+  .dlg-actie + .klein-tekst { margin-top: 4px; }
+  .dlg-sectie { display: grid; gap: 12px; padding-top: 18px; border-top: 1px solid var(--rule); min-width: 0; }
+  .dlg-sectie--eerste { padding-top: 0; border-top: 0; }
+  .dlg-sectie h3 { font-size: 11px; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--muted); }
+  @media (max-width: 600px) {
+    .dlg { width: 100%; max-width: 100%; margin: auto 0 0; border-radius: 18px 18px 0 0; max-height: 92dvh; }
+    .dlg-kop, .dlg-body { padding-inline: 16px; }
+  }
+  .veld { display: grid; gap: 6px; font-size: 13px; min-width: 0; }
+  .veld > span, fieldset.veld > legend { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+  .veld input:not([type=radio]), .veld select { width: 100%; padding: 9px 12px; border: 0; border-radius: 10px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--rule-strong); font-size: 14px; }
+  .veld textarea { min-height: 72px; }
+  fieldset.veld { border: 0; margin: 0; padding: 0; gap: 0; }
+  fieldset.veld > legend { padding: 0; margin-bottom: 4px; }
+  .keuze { display: flex; align-items: flex-start; gap: 10px; padding: 7px 0; font-size: 14px; cursor: pointer; }
+  .keuze input { margin: 4px 0 0; accent-color: var(--ink); flex: none; }
+  .keuze small { display: block; color: var(--muted); font-size: 12px; }
+  .keuze + .veld { padding: 0 0 6px 24px; }
+  .twee { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 480px) { .twee { grid-template-columns: minmax(0, 1fr); } }
+  .uitleg-dl { margin: 0; display: grid; gap: 12px; }
+  .uitleg-dl div { display: grid; gap: 2px; }
+  .uitleg-dl dt { font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); }
+  .uitleg-dl dd { margin: 0; font-size: 14px; line-height: 1.5; overflow-wrap: anywhere; }
+  .klein-tekst { margin: 0; font-size: 12.5px; color: var(--muted); line-height: 1.5; overflow-wrap: anywhere; }
+  .klein-tekst a { color: var(--ink-2); font-weight: 600; }
+  .vraag { display: grid; gap: 10px; min-width: 0; }
+  .vraag-knoppen { display: flex; flex-wrap: wrap; gap: 6px; }
+  .vraag-knoppen .knop2 { white-space: normal; text-align: left; }
+  .vraag-vrij { display: flex; gap: 6px; }
+  .vraag-vrij input { flex: 1; min-width: 0; padding: 6px 12px; border: 0; border-radius: 99px; background: transparent; box-shadow: inset 0 0 0 1px var(--rule-strong); font-size: 13px; }
+  .antwoord { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13.5px; line-height: 1.55; padding: 12px 14px; border-radius: 10px; box-shadow: inset 0 0 0 1px var(--rule-strong); color: var(--ink); }
+  .antwoord.bezig:empty::before { content: "Claude denkt na…"; color: var(--muted); }
+  .stappen { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; }
+  ul.lijst { list-style: none; margin: 0; }
+  .opdr { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 6px; font-size: 13px; }
+  .opdr:last-child { border-bottom: 0; }
+  .opdr-kop { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+  .opdr-kop a, .opdr-kop b { font-weight: 600; font-size: 14px; color: var(--ink); text-decoration: none; overflow-wrap: anywhere; min-width: 0; }
+  .opdr-kop a:hover { text-decoration: underline; }
+  .opdr p { margin: 0; color: var(--ink-2); overflow-wrap: anywhere; }
+  .opdr p a { color: var(--ink); font-weight: 600; }
+  .strook.live-strook { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .strook.live-strook > .kpi:first-child { grid-column: auto; }
+  @media (max-width: 600px) { .strook.live-strook { grid-template-columns: repeat(2, minmax(0, 1fr)); } .strook.live-strook > .kpi:last-child { grid-column: 1 / -1; } }
+  .toast:empty { display: none; }
+  .toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 70; width: max-content; max-width: calc(100vw - 32px); background: var(--ink); color: var(--surface); padding: 10px 18px; border-radius: 16px; font-size: 13px; font-weight: 600; box-shadow: 0 8px 30px rgba(0, 0, 0, .25); }
 </style>
 
 <div class="app">
@@ -471,6 +703,7 @@
       </div>
       <div id="toegang">Verbinding wordt gecontroleerd…</div>
       <div>Register bijgewerkt <span id="gebouwd" class="num">—</span></div>
+      <div id="sync-regel" hidden></div>
     </div>
   </nav>
   <div class="inhoud">
@@ -484,6 +717,8 @@
   </div>
 </div>
 <div class="tip" id="tip" role="tooltip" hidden></div>
+<dialog class="dlg" id="dlg" aria-labelledby="dlg-titel"></dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script src="data/register.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.12/marked.min.js"></script>
@@ -496,7 +731,16 @@
   R.stats = R.stats || {};
   R.notities.forEach(n => { n.acties = Array.isArray(n.acties) ? n.acties : []; n.kerncijfers = Array.isArray(n.kerncijfers) ? n.kerncijfers : []; });
   R.backlog.forEach(b => { b.velden = b.velden || {}; });
+  R.opdrachten = Array.isArray(R.opdrachten) ? R.opdrachten.filter(o => o && typeof o === 'object') : [];
+  R.notities.forEach(n => { n.kansen = Array.isArray(n.kansen) ? n.kansen.filter(k => k && k.titel) : []; n.wat_niet_lukte = typeof n.wat_niet_lukte === 'string' ? n.wat_niet_lukte.trim() : ''; });
   const C = R.controle && typeof R.controle === 'object' ? R.controle : null;
+  // Databestanden uit 05_Research/_data; elk los object of null (ontbreekt = nog niet gekoppeld)
+  const DATA = (() => {
+    const d = R.data && typeof R.data === 'object' ? R.data : {};
+    const o = {};
+    ['instellingen', 'kpi', 'agenda', 'cwv', 'koppelingen', 'shopify', 'sync'].forEach(k => { o[k] = d[k] && typeof d[k] === 'object' ? d[k] : null; });
+    return o;
+  })();
   const $ = (id) => document.getElementById(id);
   const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -509,15 +753,22 @@
     { key: 'seo-regressiecheck', naam: 'Regressiecheck', voorvoegsel: ['seo-regressiecheck', 'regressiecheck'], planning: { dagen: [0], tijd: '06:00' }, uitleg: 'Maandagcheck: is er sinds vorige week iets achteruitgegaan op higrip.nl?' },
     { key: 'seo-conversietest', naam: 'SEO-conversietest', voorvoegsel: ['seo- en conversietest', 'seo- & conversietest', 'seo-conversietest'], planning: { dagen: [0], tijd: '07:30' }, uitleg: 'Wekelijks: meten, auditen en concepten klaarzetten in Shopify.' },
     { key: 'search-console', naam: 'Search Console', voorvoegsel: ['search console'], planning: { dagen: [2], tijd: '06:00' }, uitleg: 'Wekelijks: posities, klikken, zoektermen en kansen in Google.' },
-    { key: 'backlinks-merchant', naam: 'Backlinks & Merchant Center', voorvoegsel: ['backlinks'], uitleg: 'Maandelijks: autoriteit, links en Google Shopping-status.' },
-    { key: 'concurrentie', naam: 'Concurrentie', voorvoegsel: ['concurrentie'], uitleg: 'Tweewekelijks: concurrenten, hun pagina’s, prijzen en advertenties.' },
-    { key: 'strategie-maand', naam: 'Strategie', voorvoegsel: ['strategie'], uitleg: 'Maandelijks: alle onderzoek gebundeld tot strategische stappen.' },
+    { key: 'verbanden', naam: 'Verbanden & kansen', voorvoegsel: ['verbanden & kansen', 'verbanden en kansen', 'verbanden'], planning: { dagen: [5], tijd: '06:30' }, extra: '1e za = maandeditie', uitleg: 'Elke zaterdag: legt verbanden tussen de routines van die week en maakt er kansen van, elk met bewijs uit meerdere onderzoeken. De eerste zaterdag van de maand is de maandeditie met 3 tot 5 strategische stappen.' },
+    // Maandelijks of tweewekelijks: vaste dagen van de maand, niet in het weekrooster
+    { key: 'klantstem', naam: 'Klantstem', voorvoegsel: ['klantstem'], maand: { dagen: [1, 15], tijd: '06:45' }, uitleg: 'Tweewekelijks: reviews van HÏ Grip en concurrenten plus sportcommunity’s, gebundeld tot de top 5 klachten en wensen in klanttaal, vertaald naar copy, FAQ en product.' },
+    { key: 'website-ux', naam: 'Website-UX', voorvoegsel: ['website-ux', 'website ux'], maand: { dagen: [4, 18], tijd: '06:45' }, uitleg: 'Tweewekelijks: één paginatype van higrip.nl op mobiel plus snelheid (CWV), met één ontwerpvoorstel en een code-snippet per run.' },
+    { key: 'productradar', naam: 'Productradar', voorvoegsel: ['productradar'], maand: { dagen: [8], tijd: '07:15' }, uitleg: 'Maandelijks: maximaal 3 nieuwe productkansen (per sport, maat, lengte, club) met een rekensom en de goedkoopste test.' },
+    { key: 'materialen', naam: 'Materialen & productie', voorvoegsel: ['materialen & productie', 'materialen en productie', 'materialen'], maand: { dagen: [22], tijd: '07:15' }, uitleg: 'Maandelijks: gripmaterialen, wasbestendigheid, certificering, leveranciers en EU-regels, met primaire bronnen.' },
+    { key: 'backlinks-merchant', naam: 'Backlinks & Merchant Center', voorvoegsel: ['backlinks'], maand: { dagen: [1], tijd: '07:30' }, uitleg: 'Maandelijks: autoriteit, links en Google Shopping-status.' },
+    { key: 'concurrentie', naam: 'Concurrentie', voorvoegsel: ['concurrentie-monitor', 'concurrentie'], maand: { dagen: [8, 22], tijd: '06:30' }, uitleg: 'Tweewekelijks: concurrenten, hun pagina’s, prijzen en advertenties.' },
+    { key: 'strategie-maand', naam: 'Strategie', voorvoegsel: ['strategie'], uitleg: 'Maandelijkse strategiesynthese uit de beginperiode. Vervangen door Verbanden & kansen (maandeditie op de eerste zaterdag).' },
     { key: 'los', naam: 'Los onderzoek', voorvoegsel: [], uitleg: 'Audits, analyses en vragen buiten de vaste routines.' },
   ];
   const REEKS = Object.fromEntries(REEKSEN.map(r => [r.key, r]));
-  // De actiecontrole is boekhouding, geen onderzoek: wel in het rooster, geen eigen notities
+  // Actiecontrole en Uitvoerder zijn boekhouding, geen onderzoek: wel in het rooster, geen eigen notities
   const ACTIECONTROLE = { key: 'actiecontrole', naam: 'Actiecontrole', planning: { dagen: ELKE_DAG, tijd: '05:00' } };
-  const ROOSTER = [ACTIECONTROLE, ...REEKSEN.filter(r => r.planning)].sort((a, b) => a.planning.tijd.localeCompare(b.planning.tijd));
+  const UITVOERDER = { key: 'uitvoerder', naam: 'Uitvoerder', planning: { dagen: ELKE_DAG, tijd: '06:15' }, geenGemist: true };
+  const ROOSTER = [ACTIECONTROLE, UITVOERDER, ...REEKSEN.filter(r => r.planning)].sort((a, b) => a.planning.tijd.localeCompare(b.planning.tijd));
 
   const STATUSSEN = ['nieuw', 'bekeken', 'in-uitvoering', 'verwerkt', 'gearchiveerd'];
   const STATUS_LABEL = { 'nieuw': 'Nieuw', 'bekeken': 'Bekeken', 'in-uitvoering': 'In uitvoering', 'verwerkt': 'Verwerkt', 'gearchiveerd': 'Gearchiveerd' };
@@ -611,20 +862,44 @@
   const inReeks = (key) => R.notities.filter(n => n._reeks === key);
 
   // Eén lijst van alle acties (notities + backlog), met vaste bronverwijzing
+  // prioriteit is een getter: beheer uit de vault of (straks) uit de gedeelde opslag gaat voor
+  const PRIOS = ['P1', 'P2', 'P3'];
   const ACTIES = [];
-  for (const n of R.notities) for (const a of n.acties) ACTIES.push({ id: a.id, tekst: a.tekst, prioriteit: a.prioriteit, afgevinkt: !!a.afgevinkt, controle: a.controle || null, notitie: n, bronType: 'notitie' });
-  for (const b of R.backlog) ACTIES.push({ id: b.id, tekst: b.kop, prioriteit: b.prioriteit, afgevinkt: !!b.afgevinkt, controle: b.controle || null, backlog: b, bronType: 'backlog' });
+  function nieuweActie(x, tekst, extra) {
+    const n = extra.notitie;
+    const a = Object.assign({
+      id: x.id, tekst, afgevinkt: !!x.afgevinkt, controle: x.controle || null,
+      beheer: x.beheer && typeof x.beheer === 'object' ? x.beheer : null,
+      uitvoerbaar: x.uitvoerbaar && typeof x.uitvoerbaar === 'object' ? x.uitvoerbaar : null,
+      besluit: typeof x.besluit === 'boolean' ? x.besluit : (/^\s*(\*\*)?besluit:/i.test(String(tekst || '')) || !!(n && n.routine === 'denzel-week')),
+      _prio: PRIOS.includes(x.prioriteit) ? x.prioriteit : PRIOS.includes(x.prioriteit_effectief) ? x.prioriteit_effectief : 'P3',
+    }, extra);
+    Object.defineProperty(a, 'prioriteit', { get() { const b = beheerVan(this); return b && PRIOS.includes(b.prioriteit) ? b.prioriteit : this._prio; }, enumerable: true });
+    return a;
+  }
+  for (const n of R.notities) for (const a of n.acties) ACTIES.push(nieuweActie(a, a.tekst, { notitie: n, bronType: 'notitie' }));
+  for (const b of R.backlog) ACTIES.push(nieuweActie(b, b.kop, { backlog: b, bronType: 'backlog' }));
   const actieById = Object.fromEntries(ACTIES.map(a => [a.id, a]));
+  // Opdrachten (uit OPDRACHTEN.json) per actie, nieuwste eerst
+  const opdrachtVan = (a) => R.opdrachten.filter(o => o.actie_id === a.id).sort((x, y) => String(y.bijgewerkt || '').localeCompare(String(x.bijgewerkt || '')))[0] || null;
+  // Kansen uit notities (sectie ## Kansen)
+  const KANS_STATUS = { open: 'Open', oppakken: 'Oppakken', parkeren: 'Geparkeerd', afwijzen: 'Afgewezen' };
+  const KANSEN = [];
+  for (const n of R.notities) n.kansen.forEach((k, i) => KANSEN.push(Object.assign({}, k, { id: k.id || n.id + '#k' + i, notitie: n, bewijs: Array.isArray(k.bewijs) ? k.bewijs : [] })));
+  const kansById = Object.fromEntries(KANSEN.map(k => [k.id, k]));
   const actieHref = (a) => a.bronType === 'backlog' ? '#' + backlogRoute(a.id) : '#n-' + a.notitie.id;
   const actieBron = (a) => a.bronType === 'backlog' ? 'Backlog' : a.notitie._naam;
 
   // ── Staat ─────────────────────────────────────────────────────────────────
   const state = {
     db: null, writable: false, readOnlyReason: '',
-    overrides: { status: {}, checks: {}, aantekeningen: {} },
+    // beheer/opdrachten/kansen/nieuwe_acties: gevuld zodra de schrijflaag (D2) die collecties beluistert
+    overrides: { status: {}, checks: {}, aantekeningen: {}, beheer: {}, opdrachten: {}, kansen: {}, nieuwe_acties: {} },
     lijst: { zoek: '', categorie: '', status: '', prioriteit: '', groep: lezen('hi-r-groep') || 'reeks', archief: false },
-    acties: { bron: '', afgevinkt: false },
+    acties: { bron: '', afgevinkt: false, mijn: lezen('hi-a-mijn') === '1', verborgen: lezen('hi-a-verborgen') === '1' },
+    kansen: { status: lezen('hi-k-status') || 'open' },
     drafts: {}, open: {},
+    sample: null, mcp: null, vraag: {}, shop: { status: 'idle' }, mcpLijst: null,
     route: '', animeer: false,
   };
 
@@ -663,9 +938,10 @@
   const prioChip = (p) => el('span', { class: 'prio ' + String(p || 'P3').toLowerCase(), text: p || 'P3' });
   const sname = (n) => el('div', { class: 'sname' }, REEKS[n._reeks].naam, el('span', { class: 'v num', text: n._versie }));
   function planningLabel(r) {
-    if (!r.planning) return r.key === 'los' ? 'Geen vaste planning' : 'Planning volgt';
+    if (r.maand) return r.maand.dagen.map(d => d + 'e').join(' en ') + ' van de maand ' + r.maand.tijd;
+    if (!r.planning) return r.key === 'los' ? 'Geen vaste planning' : r.key === 'strategie-maand' ? 'Vervangen door Verbanden & kansen' : 'Planning volgt';
     const d = r.planning.dagen;
-    return (d.length === 7 ? 'dagelijks' : d.map(i => DAGEN[i]).join(', ')) + ' ' + r.planning.tijd;
+    return (d.length === 7 ? 'dagelijks' : d.map(i => DAGEN[i]).join(', ')) + ' ' + r.planning.tijd + (r.extra ? ', ' + r.extra : '');
   }
 
   // Markdown → HTML; links naar andere notities blijven binnen het dashboard
@@ -714,10 +990,27 @@
   const isBevestigd = (a) => !!(a.controle && a.controle.uitkomst === 'gedaan');
   const isDubbel = (a) => !!(a.controle && a.controle.uitkomst === 'dubbel');
   function afgevinkt(a) { const o = state.overrides.checks[encActie(a.id)]; return o ? !!o.afgevinkt : (a.afgevinkt || isBevestigd(a)); }
-  // Telt mee in lijsten en tellers: geen dubbel en niet uit een gearchiveerd onderzoek
-  const telt = (a) => !isDubbel(a) && !(a.bronType === 'notitie' && statusVan(a.notitie) === 'gearchiveerd');
+  // Beheer: vault (BEHEER.json via het register) met een eventuele dashboardwijziging erover
+  function beheerVan(a) {
+    const o = state.overrides.beheer[encActie(a.id)];
+    return o ? Object.assign({}, a.beheer || {}, o) : a.beheer;
+  }
+  function isVerborgen(a) {
+    const b = beheerVan(a);
+    if (!b) return false;
+    if (b.niet_doen) return true;
+    return !!(b.uitgesteld_tot && String(b.uitgesteld_tot).slice(0, 10) > VANDAAG);
+  }
+  function kansStatus(k) {
+    const o = state.overrides.kansen[encActie(k.id)];
+    const s = (o && o.status) || (k.beheer && k.beheer.status) || 'open';
+    return KANS_STATUS[s] ? s : 'open';
+  }
+  // Telt mee in lijsten: geen dubbel en niet uit een gearchiveerd onderzoek; tellers slaan ook uitgesteld/niet doen over
+  const teltBasis = (a) => !isDubbel(a) && !(a.bronType === 'notitie' && statusVan(a.notitie) === 'gearchiveerd');
+  const telt = (a) => teltBasis(a) && !isVerborgen(a);
   const openActies = () => ACTIES.filter(a => telt(a) && !afgevinkt(a));
-  function openInNotitie(n) { return n.acties.filter(a => { const x = actieById[a.id]; return !isDubbel(x) && !afgevinkt(x); }).length; }
+  function openInNotitie(n) { return n.acties.filter(a => { const x = actieById[a.id]; return !isDubbel(x) && !isVerborgen(x) && !afgevinkt(x); }).length; }
   function tellers() { const t = { P1: 0, P2: 0, P3: 0 }; for (const a of openActies()) t[a.prioriteit] = (t[a.prioriteit] || 0) + 1; return t; }
   const vervangenDoor = (n) => R.notities.filter(m => (m.vervangt || []).includes(n.id));
   const prioGewicht = (p) => ({ P1: 0, P2: 1, P3: 2 }[p] ?? 3);
@@ -738,8 +1031,12 @@
     $('nav-hoofd').replaceChildren(
       navItem('vandaag', 'Vandaag'),
       navItem('acties', 'Acties', t.P1 ? t.P1 : t.P1 + t.P2 + t.P3, t.P1 ? 'tel--p1' : ''),
+      navItem('kansen', 'Kansen', KANSEN.filter(k => kansStatus(k) === 'open').length || null),
+      navItem('claude', 'Claude', kanGoedkeuren().length || null),
       navItem('onderzoeken', 'Onderzoeken', nieuw ? nieuw + ' nieuw' : R.notities.length, nieuw ? 'tel--nieuw' : ''),
+      navItem('cijfers', 'Cijfers'),
       navItem('overzicht', 'Overzicht'),
+      navItem('koppelingen', 'Koppelingen', koppelProblemen() || null),
       navItem('kaart', 'Waar staat wat'),
     );
     $('nav-reeksen').replaceChildren(...REEKSEN.map(r => { const n = inReeks(r.key).length; return navItem('reeks-' + r.key, r.naam, n, '', 'klein' + (n ? '' : ' is-leeg')); }));
@@ -782,6 +1079,10 @@
     else if (route.startsWith('reeks-') && REEKS[route.slice(6)]) titel = paginaLijst(p, route.slice(6));
     else if (route === 'acties') titel = paginaActies(p);
     else if (route === 'kaart') titel = paginaKaart(p);
+    else if (route === 'kansen') titel = paginaKansen(p);
+    else if (route === 'cijfers') titel = paginaCijfers(p);
+    else if (route === 'koppelingen') titel = paginaKoppelingen(p);
+    else if (route === 'claude') titel = paginaClaude(p);
     else if (route.startsWith('n-') && notitieById[route.slice(2)]) titel = paginaNotitie(p, notitieById[route.slice(2)]);
     else if (route.startsWith('b-') && backlogById['backlog#' + route.slice(2)]) titel = paginaBacklog(p, backlogById['backlog#' + route.slice(2)]);
     else titel = paginaNietGevonden(p);
@@ -795,6 +1096,7 @@
 
   // Tellers laten oplopen en de markeerstift zetten, alleen bij een nieuwe pagina
   function naRender(p) {
+    vulHaakjes(p);
     const zinnen = p.querySelectorAll('.zin');
     // smal scherm: rooster zo scrollen dat vandaag in beeld staat
     p.querySelectorAll('.tabel-scroll').forEach(s => { const t = s.querySelector('th.today'); if (t && s.scrollWidth > s.clientWidth) s.scrollLeft = Math.max(0, t.offsetLeft + t.offsetWidth - s.clientWidth + 8); });
@@ -877,11 +1179,32 @@
       const g = a.backlog.velden['Gevonden op']; if (g) meta.append(el('span', { text: 'gevonden ' + knip(g.split(/[,(]/)[0].trim(), 24) }));
     }
     const ci = controleInfo(a); if (ci) meta.append(ci);
-    if (heeftOverride(a)) { const o = state.overrides.checks[encActie(a.id)]; meta.append(el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }), el('span', { class: 'num', text: `${o.naam || 'onbekend'} · ${tsKort(o.ts)}` })); }
+    const wacht = [['checks', 'afvinken'], ['beheer', 'beheer'], ['opdrachten', 'opdracht']].map(([c, l]) => [state.overrides[c][encActie(a.id)], l]).filter(x => x[0]);
+    if (wacht.length) {
+      const o = wacht.map(x => x[0]).sort((p, q) => String(q.ts || '').localeCompare(String(p.ts || '')))[0];
+      meta.append(el('span', { class: 'chip chip--sync', title: 'Nog niet in de vault: ' + wacht.map(x => x[1]).join(', '), text: 'nog niet in vault' }), el('span', { class: 'num', text: `${o.naam || 'onbekend'} · ${tsKort(o.ts)}` }));
+    }
+    beheerMeta(a).forEach(x => meta.prepend(x));
     if (meta.childNodes.length) blok.append(meta);
     if (a.controle && a.controle.uitkomst === 'gedaan' && a.controle.bewijs && opts.bewijs !== false) blok.append(el('div', { class: 'bewijs', text: 'Bewijs: ' + a.controle.bewijs }));
-    li.append(vak, blok, opts.prio === false ? el('span') : prioChip(a.prioriteit));
+    if (opts.claudeKnop) blok.append(el('div', { class: 'knoppen', style: 'margin-top:8px' }, el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-haspopup': 'dialog', onclick: () => openClaude(a), text: 'Laat Claude dit doen' })));
+    if (isVerborgen(a)) li.classList.add('is-verborgen');
+    // .actie-menu is het haakje voor de schrijflaag (D2): leeg = onzichtbaar
+    li.append(vak, blok, el('div', { class: 'todo-rechts' }, opts.prio === false ? null : prioChip(a.prioriteit), el('div', { class: 'actie-menu', 'data-actie-id': a.id })));
     return li;
+  }
+  // Eigenaar, uitgesteld/niet doen, wat Claude kan en een lopende opdracht (in omgekeerde volgorde vooraan in de meta)
+  function beheerMeta(a) {
+    const b = beheerVan(a) || {};
+    const uit = [];
+    const o = opdrachtInfo(a), u = a.uitvoerbaar;
+    const chip = (tekst, title) => el('button', { type: 'button', class: 'chip chip--claude', 'aria-haspopup': 'dialog', title: title || null, onclick: () => openClaude(a), text: tekst });
+    if (o && o.status !== 'ingetrokken') uit.push(chip(opdrachtLabel(o), o.reg && o.reg.resultaat && o.reg.resultaat.samenvatting));
+    else if (kanClaude(a) && !afgevinkt(a)) uit.push(chip(u.claude === 'ja' ? 'Claude kan dit' : 'Claude kan een deel', [u.wat_claude_doet && 'Claude: ' + u.wat_claude_doet, u.wat_jij_doet && 'Jij: ' + u.wat_jij_doet].filter(Boolean).join('\n')));
+    if (b.niet_doen) uit.push(el('span', { class: 'chip chip--uit', title: (b.niet_doen && b.niet_doen.reden) || '', text: 'Niet doen' + (b.niet_doen.reden ? ': ' + knip(b.niet_doen.reden, 40) : '') }));
+    else if (b.uitgesteld_tot && String(b.uitgesteld_tot).slice(0, 10) > VANDAAG) uit.push(el('span', { class: 'chip chip--uit num', text: 'Uitgesteld tot ' + datumKort(b.uitgesteld_tot) }));
+    if (b.eigenaar) uit.push(el('span', { class: 'chip chip--eigenaar', title: 'Eigenaar', 'aria-label': 'Eigenaar: ' + b.eigenaar, text: b.eigenaar }));
+    return uit;
   }
 
   function onderzoekRij(n) {
@@ -922,14 +1245,16 @@
           el('a', { href: '#acties' }, el('b', { class: 'num', 'data-count': t.P2, text: t.P2 }), el('span', null, 'P2 open')),
           el('a', { href: '#onderzoeken', onclick: () => { state.lijst.status = 'nieuw'; } }, el('b', { class: 'num', 'data-count': nieuw.length, text: nieuw.length }), el('span', null, el('span', { class: 'newdot', 'aria-hidden': 'true' }), 'Nieuw')))))));
 
+    p.append(cijferStrook());
     p.append(controlePaneel());
 
-    // Eerst doen + Nieuw binnen
+    // Eerst doen + Nieuw binnen (besluiten staan apart)
     const open = openActies();
-    const p1 = open.filter(a => a.prioriteit === 'P1').sort(actieSortering);
+    const p1 = open.filter(a => a.prioriteit === 'P1' && !a.besluit).sort(actieSortering);
     const links = el('div', null,
-      blokTitel('Eerst doen', el('a', { href: '#acties', text: `Alle ${open.length} open acties` })),
+      blokTitel('Eerst doen', el('span', { class: 'knoppen' }, nieuweActieKnop(), el('a', { href: '#acties', text: `Alle ${open.length} open acties` }))),
       el('div', { class: 'melding', id: 'check-melding', role: 'status' }),
+      nieuweActies().length ? [el('p', { class: 'label', style: 'margin:14px 0 0', text: 'Net toegevoegd, nog niet in de vault' }), el('ul', { class: 'todo' }, nieuweActies().slice(0, 5).map(nieuweActieRij))] : null,
       p1.length ? el('ul', { class: 'todo' }, p1.slice(0, 8).map(a => actieRij(a, { waarom: true, bewijs: false }))) : el('p', { class: 'leeg', text: 'Geen open P1-acties. Kijk bij P2 wat er deze maand moet.' }),
       p1.length > 8 ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${p1.length - 8} P1-acties` })) : null);
     const rechts = el('div', null,
@@ -939,6 +1264,9 @@
         el('div', { class: 'meta' }, el('span', { class: 'newdot', 'aria-hidden': 'true' }), el('span', { text: 'Nieuw · ' + datumRelatief(n.datum) }), prioChip(n.prioriteit))))))
         : el('p', { class: 'leeg', text: 'Alles is gelezen.' }));
     p.append(rise(el('section', { class: 'desk' }, links, rechts)));
+    p.append(rise(el('section', { class: 'duo' }, besluitBlok(open), kansenBlok())));
+    p.append(rise(el('section', { class: 'duo' }, agendaBlok(), deadlineBlok())));
+    p.append(afgerondBlok());
 
     p.append(weekRooster());
     p.append(rise(el('div', { class: 'key', 'aria-label': 'Kleurbetekenis' },
@@ -950,6 +1278,214 @@
     return 'Vandaag';
   }
 
+  // ── Getallen ──────────────────────────────────────────────────────────────
+  const num = (v) => typeof v === 'number' ? (isFinite(v) ? v : null) : (v != null && v !== '' && isFinite(Number(v)) ? Number(v) : null);
+  const EUR = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+  const GETAL = new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 0 });
+  const COMPACT = new Intl.NumberFormat('nl-NL', { notation: 'compact', maximumFractionDigits: 1 });
+  const eur = (v) => num(v) == null ? '–' : EUR.format(num(v));
+  const getal = (v) => num(v) == null ? '–' : GETAL.format(num(v));
+  // conversie en CTR komen als percentage binnen (1.23 = 1,23%), net als in de bestaande GSC-rapporten
+  const pct = (v, dec) => num(v) == null ? '–' : num(v).toLocaleString('nl-NL', { minimumFractionDigits: dec == null ? 2 : dec, maximumFractionDigits: dec == null ? 2 : dec }) + '%';
+  function bijgewerkt(obj) {
+    if (!obj || !obj.bijgewerkt) return 'nog niet bijgewerkt';
+    const s = String(obj.bijgewerkt), d = new Date(s);
+    if (isNaN(d)) return 'bijgewerkt ' + s;
+    return 'bijgewerkt ' + datumRelatief(isoVan(d)) + (s.length > 10 ? ' ' + uurVan(s) : '');
+  }
+  function delta(nu, toen, soort) {
+    nu = num(nu); toen = num(toen);
+    if (nu == null || toen == null) return null;
+    let v, tekst;
+    if (soort === 'pp') { v = nu - toen; tekst = Math.abs(v).toLocaleString('nl-NL', { maximumFractionDigits: 2 }) + ' pp'; }
+    else { if (!toen) return null; v = (nu - toen) / toen * 100; tekst = Math.abs(Math.round(v)) + '%'; }
+    const r = Math.abs(v) < 0.005 ? '' : v > 0 ? ' up' : ' down';
+    return el('span', { class: 'delta num' + r, title: soort === 'pp' ? 'procentpunt' : null, 'aria-label': (r === ' up' ? 'hoger: ' : r === ' down' ? 'lager: ' : 'gelijk: ') + tekst, text: (r ? '' : '± ') + tekst });
+  }
+  const maandagVan = (iso) => plusDagen(iso, -weekdag(iso));
+
+  // ── Vandaag: cijferstrook met doelbalk ────────────────────────────────────
+  function cijferStrook() {
+    const S = DATA.shopify, K = DATA.kpi, I = DATA.instellingen;
+    const maandag = maandagVan(VANDAAG);
+    const bronNode = (naam, obj) => obj
+      ? el('span', { class: 'k-bron' }, naam + ', ' + bijgewerkt(obj))
+      : el('span', { class: 'k-bron' }, naam + ': ', el('a', { href: '#koppelingen', text: 'nog niet gekoppeld' }));
+    const tegel = (label, waarde, d, sub, bron) => el('div', { class: 'kpi' + (waarde == null ? ' is-leeg' : '') },
+      el('span', { class: 'k-label', text: label }),
+      el('b', { class: waarde == null ? null : 'num', text: waarde == null ? 'Nog geen cijfer' : waarde }),
+      waarde != null && (d || sub) ? el('span', { class: 'k-sub' }, d, d && sub ? ' ' : null, sub) : null,
+      bron);
+
+    // Shopify: deze week t/m de laatste dag met data, tegen dezelfde dagen vorige week
+    const dagen = S && Array.isArray(S.dagen) ? S.dagen.filter(d => d && /^\d{4}-\d{2}-\d{2}/.test(String(d.dag))).map(d => Object.assign({}, d, { dag: String(d.dag).slice(0, 10) })) : [];
+    let shop = null;
+    if (dagen.length) {
+      const sorted = dagen.map(d => d.dag).sort(), eerste = sorted[0], laatste = sorted[sorted.length - 1];
+      let van = maandag, tot = laatste < VANDAAG ? laatste : VANDAAG, label;
+      if (tot < maandag) { van = plusDagen(maandag, -7); tot = plusDagen(maandag, -1); label = 'week ' + isoWeek(van); }
+      else label = weekdag(tot) === 6 ? 'deze week' : 'deze week t/m ' + DAGEN[weekdag(tot)];
+      const som = (a, b, veld) => dagen.filter(d => d.dag >= a && d.dag <= b).reduce((s, d) => s + (num(d[veld]) || 0), 0);
+      const vergelijk = eerste <= plusDagen(van, -7);
+      shop = { label, omzet: som(van, tot, 'omzet'), orders: som(van, tot, 'orders'),
+        omzetV: vergelijk ? som(plusDagen(van, -7), plusDagen(tot, -7), 'omzet') : null, ordersV: vergelijk ? som(plusDagen(van, -7), plusDagen(tot, -7), 'orders') : null };
+    }
+    // GA4/GSC: laatste twee volledige weken (de lopende week is nog niet af)
+    const weken = K && Array.isArray(K.weken) ? K.weken.filter(w => w && w.start) : [];
+    const vol = weken.filter(w => String(w.start).slice(0, 10) < maandag);
+    const nu = vol[vol.length - 1] || null, toen = vol[vol.length - 2] || null;
+    const wSub = nu ? `week ${isoWeek(String(nu.start).slice(0, 10))} vs week ervoor` : '';
+
+    const strook = rise(el('section', { class: 'strook', 'aria-label': 'Cijfers van deze week' },
+      tegel('Omzet', shop ? eur(shop.omzet) : null, shop && delta(shop.omzet, shop.omzetV), shop ? shop.label + (shop.omzetV != null ? ' vs vorige week' : '') : '', bronNode('Shopify', S)),
+      tegel('Orders', shop ? getal(shop.orders) : null, shop && delta(shop.orders, shop.ordersV), shop ? shop.label : '', bronNode('Shopify', S)),
+      tegel('Sessies NL', nu ? getal(nu.sessies_nl) : null, nu && toen && delta(nu.sessies_nl, toen.sessies_nl), wSub, bronNode('GA4', K)),
+      tegel('Conversie', nu ? pct(nu.conversie) : null, nu && toen && delta(nu.conversie, toen.conversie, 'pp'), wSub, bronNode('GA4', K)),
+      tegel('Klikken uit Google', nu ? getal(nu.gsc_klikken) : null, nu && toen && delta(nu.gsc_klikken, toen.gsc_klikken), wSub, bronNode('Search Console', K))));
+
+    // Jaardoel: omzet dit jaar tegen het doel, met een streep waar je volgens schema zou staan
+    const jaar = VANDAAG.slice(0, 4);
+    const doelBedrag = I && I.doelen && typeof I.doelen === 'object' ? num(I.doelen[jaar]) : null;
+    const ytd = S && S.ytd ? num(S.ytd.omzet) : null;
+    const dagNr = Math.round((utc(VANDAAG) - utc(jaar + '-01-01')) / 864e5) + 1;
+    const schema = dagNr / (((+jaar % 4 === 0 && +jaar % 100 !== 0) || +jaar % 400 === 0) ? 366 : 365);
+    if (doelBedrag && ytd != null) {
+      const f = ytd / doelBedrag;
+      strook.append(el('div', { class: 'doel' },
+        el('div', { class: 'doel-kop' },
+          el('span', null, 'Omzet ' + jaar + ': ', el('b', { class: 'num', text: eur(ytd) }), ' van ', el('b', { class: 'num', text: eur(doelBedrag) }), ` (${Math.round(f * 100)}%)`),
+          el('span', { class: 'num', text: `Volgens schema nu ${eur(doelBedrag * schema)}` + (S.ytd.orders != null ? `, ${getal(S.ytd.orders)} orders dit jaar` : '') })),
+        el('div', { class: 'balk', role: 'img', 'aria-label': `${Math.round(f * 100)}% van het jaardoel bereikt; volgens schema ${Math.round(schema * 100)}%` },
+          el('i', { style: `width:${Math.min(100, f * 100).toFixed(1)}%` }), el('s', { style: `left:${(schema * 100).toFixed(1)}%`, title: 'Volgens schema' }))));
+    } else {
+      strook.append(el('div', { class: 'doel' }, el('div', { class: 'doel-kop' }, el('span', null, el('b', { text: 'Jaardoel ' + jaar })),
+        el('span', { text: !doelBedrag ? `Nog geen omzetdoel voor ${jaar}. Zet het bij doelen in 05_Research/_data/instellingen.json.` : 'De omzet van dit jaar verschijnt zodra de Shopify-cijfers binnen zijn.' }))));
+    }
+    return strook;
+  }
+
+  // ── Vandaag: besluiten, kansen, agenda, deadlines, afgerond ───────────────
+  function besluitBlok(open) {
+    const lijst = open.filter(a => a.besluit).sort(actieSortering);
+    return el('div', null,
+      blokTitel('Wacht op jouw besluit', lijst.length ? el('span', { class: 'tel num', text: lijst.length + (lijst.length === 1 ? ' besluit' : ' besluiten') }) : null),
+      lijst.length ? el('ul', { class: 'todo' }, lijst.slice(0, 6).map(a => actieRij(a, { waarom: true, bewijs: false })))
+        : el('p', { class: 'uitleg-leeg', text: 'Geen open besluiten. Acties die met "Besluit:" beginnen en de punten uit het Denzel-weekoverzicht verschijnen hier.' }),
+      lijst.length > 6 ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${lijst.length - 6} besluiten` })) : null);
+  }
+
+  const IMPACT = { hoog: 0, middel: 1, laag: 2 };
+  const kansSortering = (x, y) => (IMPACT[x.impact] ?? 3) - (IMPACT[y.impact] ?? 3) || y.notitie.datum.localeCompare(x.notitie.datum);
+  function kansKaart(k, opts) {
+    opts = opts || {};
+    const s = kansStatus(k);
+    const bewijs = k.bewijs.map(id => notitieById[id]).filter(Boolean);
+    const o = state.overrides.kansen[encActie(k.id)] || k.beheer || null;
+    return el('li', { class: 'kans' + (s === 'parkeren' || s === 'afwijzen' ? ' is-dicht' : '') },
+      el('div', { class: 'kans-kop' }, el('h3', { text: stripMd(k.titel) }),
+        el('div', { class: 'kans-rechts' },
+          IMPACT[k.impact] != null ? el('span', { class: 'impact impact--' + k.impact, text: 'Impact ' + k.impact }) : null,
+          el('div', { class: 'kans-menu', 'data-kans-id': k.id }))),
+      bewijs.length ? el('div', { class: 'keten' }, el('span', { text: 'Bewijs' }),
+        bewijs.flatMap((n, i) => [i ? el('span', { class: 'plus', 'aria-hidden': 'true', text: '+' }) : null, el('a', { href: '#n-' + n.id, title: n._kern, text: n._naam })])) : null,
+      k.stap ? el('div', { class: 'stap' }, el('b', { text: 'Eerste stap: ' }), stripMd(k.stap)) : null,
+      el('div', { class: 'kans-meta' },
+        s !== 'open' ? el('span', { class: 'chip', text: KANS_STATUS[s] + (o && (o.door || o.naam) ? ' door ' + (o.door || o.naam) : '') }) : null,
+        state.overrides.kansen[encActie(k.id)] ? el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }) : null,
+        o && o.notitie ? el('span', { text: knip(o.notitie, 80) }) : null,
+        opts.bron !== false ? el('a', { href: '#n-' + k.notitie.id, text: 'Uit ' + k.notitie._naam }) : null,
+        el('span', { class: 'num', text: datumKort(k.notitie.datum) })));
+  }
+  function kansenBlok() {
+    const verb = inReeks('verbanden').filter(n => n.kansen.length);
+    const recent = verb.filter(n => n.datum >= plusDagen(VANDAAG, -7));
+    const bron = recent.length ? recent : verb.slice(0, 1);
+    const lijst = KANSEN.filter(k => bron.includes(k.notitie) && (kansStatus(k) === 'open' || kansStatus(k) === 'oppakken')).sort(kansSortering);
+    const titel = recent.length || !bron.length ? 'Kansen van deze week' : 'Laatste kansen';
+    let inhoud;
+    if (!verb.length) inhoud = el('p', { class: 'uitleg-leeg' }, 'Nog geen kansen. Elke zaterdag om 06:30 legt de routine Verbanden & kansen verbanden tussen alle onderzoeken van die week. ', el('a', { href: '#kansen', text: 'Wat de routine doet' }));
+    else if (!lijst.length) inhoud = el('p', { class: 'uitleg-leeg', text: 'Alle kansen uit de laatste editie zijn opgepakt, geparkeerd of afgewezen.' });
+    else inhoud = el('ul', { class: 'kansen' }, lijst.slice(0, 4).map(k => kansKaart(k, { bron: false })));
+    return el('div', null,
+      blokTitel(titel, el('a', { href: '#kansen', text: 'Alle kansen' })),
+      bron.length && lijst.length ? el('p', { class: 'res-sub', style: 'margin:10px 0 0' }, 'Uit ', el('a', { href: '#n-' + bron[0].id, class: 'bronlink', text: bron[0]._naam }), ' van ' + datumKort(bron[0].datum) + (bron.length > 1 ? ` en ${bron.length - 1} eerdere` : '')) : null,
+      inhoud,
+      lijst.length > 4 ? el('p', { class: 'leeg' }, el('a', { href: '#kansen', text: `Nog ${lijst.length - 4} kansen` })) : null);
+  }
+
+  function datumKolom(dag) {
+    return el('div', { class: 'kal-datum' },
+      el('span', { text: dag === VANDAAG ? 'vandaag' : DAGEN[weekdag(dag)] }),
+      el('b', { class: 'num', text: Number(dag.slice(8)) }),
+      el('span', { text: MAANDEN[Number(dag.slice(5, 7)) - 1] }));
+  }
+  const kalDag = (dag, items) => el('li', { class: 'kal-dag' + (dag === VANDAAG ? ' is-vandaag' : '') }, datumKolom(dag), el('div', { class: 'kal-items' }, items));
+  function agendaDag(s) { s = String(s || ''); if (s.length <= 10) return s.slice(0, 10); const d = new Date(s); return isNaN(d) ? s.slice(0, 10) : isoVan(d); }
+  function agendaBlok() {
+    const A = DATA.agenda;
+    if (!A || A.status !== 'ok') {
+      const reden = A && A.uitleg ? A.uitleg : A && A.status === 'fout' ? 'De agenda kon bij de laatste run niet worden opgehaald.' : 'De agenda van info@higrip.nl is nog niet gekoppeld.';
+      return el('div', null, blokTitel('Agenda'), el('p', { class: 'uitleg-leeg' }, reden + ' ', el('a', { href: '#koppelingen', text: 'Zo koppel je hem' })));
+    }
+    const eind = plusDagen(VANDAAG, 6);
+    const items = (Array.isArray(A.items) ? A.items : []).filter(i => i && i.start).map(i => {
+      const start = agendaDag(i.start), stop = i.eind ? agendaDag(i.eind) : start;
+      // lopende meerdaagse items tonen op vandaag; hele-dag-eind is exclusief
+      const loopt = start < VANDAAG && (i.hele_dag ? stop > VANDAAG : stop >= VANDAAG);
+      return Object.assign({}, i, { dag: loopt ? VANDAAG : start });
+    }).filter(i => i.dag >= VANDAAG && i.dag <= eind).sort((a, b) => (a.dag + (a.hele_dag ? '0' : '1') + a.start).localeCompare(b.dag + (b.hele_dag ? '0' : '1') + b.start));
+    const perDag = new Map();
+    items.forEach(i => { if (!perDag.has(i.dag)) perDag.set(i.dag, []); perDag.get(i.dag).push(i); });
+    const tijd = (i) => i.hele_dag ? 'hele dag' : uurVan(i.start) + (i.eind ? ' - ' + uurVan(i.eind) : '');
+    return el('div', null,
+      blokTitel('Agenda', el('span', { class: 'tel', text: 'komende 7 dagen, ' + bijgewerkt(A) })),
+      perDag.size ? el('ul', { class: 'kal' }, [...perDag].map(([dag, lijst]) => kalDag(dag, lijst.map(i => el('div', { class: 'kal-item' }, el('b', { text: i.titel || '(geen titel)' }), el('small', { class: 'num', text: tijd(i) }))))))
+        : el('p', { class: 'uitleg-leeg', text: 'Niets gepland in de komende 7 dagen.' }));
+  }
+  function deadlineBlok() {
+    const tot = plusDagen(VANDAAG, 30), sinds = plusDagen(VANDAAG, -14);
+    const lijst = R.notities.filter(n => n.deadline && n.deadline >= sinds && n.deadline <= tot && statusVan(n) !== 'gearchiveerd' && (n.deadline >= VANDAAG || openInNotitie(n) > 0))
+      .sort((a, b) => a.deadline.localeCompare(b.deadline));
+    const perDag = new Map();
+    lijst.forEach(n => { if (!perDag.has(n.deadline)) perDag.set(n.deadline, []); perDag.get(n.deadline).push(n); });
+    const wanneer = (d) => { const n = Math.round((utc(d) - utc(VANDAAG)) / 864e5); return n === 0 ? 'vandaag' : n === 1 ? 'morgen' : n > 0 ? `over ${n} dagen` : `${-n} ${n === -1 ? 'dag' : 'dagen'} verlopen`; };
+    return el('div', null,
+      blokTitel('Deadlines', el('span', { class: 'tel', text: 'komende 30 dagen' })),
+      perDag.size ? el('ul', { class: 'kal' }, [...perDag].map(([dag, notes]) => kalDag(dag, notes.map(n => {
+        const open = openInNotitie(n);
+        return el('div', { class: 'kal-item' }, el('a', { href: '#n-' + n.id, text: n._naam + ': ' + knip(n._kern, 70) }),
+          el('small', { class: 'num', text: wanneer(dag) + (open ? `, ${open} ${open === 1 ? 'actie' : 'acties'} open` : ', geen acties open') }));
+      }))))
+        : el('p', { class: 'uitleg-leeg', text: 'Geen deadlines in de komende 30 dagen. Een deadline komt uit het veld deadline in de kop van een notitie.' }));
+  }
+  function afgerondBlok() {
+    const maandag = maandagVan(VANDAAG);
+    const sindsVan = (a) => String(a.controle.sinds || a.controle.gecontroleerd || '').slice(0, 10);
+    const acties = ACTIES.filter(a => isBevestigd(a) && sindsVan(a) >= maandag).sort((x, y) => sindsVan(y).localeCompare(sindsVan(x)));
+    const opdr = R.opdrachten.filter(o => o.status === 'klaar' && o.bijgewerkt && !isNaN(new Date(o.bijgewerkt)) && isoVan(new Date(o.bijgewerkt)) >= maandag);
+    const totaal = acties.length + opdr.length;
+    const paneel = rise(el('section', { class: 'panel', 'aria-labelledby': 'af-titel' },
+      el('div', { class: 'week-head' }, el('h2', { id: 'af-titel', text: `Afgerond deze week · week ${isoWeek(VANDAAG)}` })),
+      el('div', { class: 'af-kop' }, el('b', { class: 'num', 'data-count': totaal, text: totaal }),
+        el('span', { text: `${acties.length} ${acties.length === 1 ? 'actie' : 'acties'} bevestigd door de actiecontrole, ${opdr.length} ${opdr.length === 1 ? 'opdracht' : 'opdrachten'} uitgevoerd door Claude` }))));
+    if (!totaal) { paneel.append(el('p', { class: 'uitleg-leeg', text: 'Nog niets afgerond deze week. Wat de actiecontrole als gedaan ziet en wat Claude na jouw goedkeuring uitvoert, komt hier.' })); return paneel; }
+    paneel.append(el('ul', { class: 'af' },
+      opdr.map(o => {
+        const a = actieById[o.actie_id], r = o.resultaat && typeof o.resultaat === 'object' ? o.resultaat : {};
+        const links = veiligeLinks(r);
+        return el('li', null,
+          a ? el('a', { href: actieHref(a), text: knip(stripMd(o.titel || a.tekst), 90) }) : el('span', { text: knip(stripMd(o.titel || o.actie_id || 'Opdracht'), 90) }),
+          el('small', { text: 'Opdracht klaar' + (r.samenvatting ? ': ' + knip(r.samenvatting, 140) : '') }),
+          links.length ? el('small', null, links.map((l, i) => [i ? ', ' : '', el('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label || 'Bekijk' })])) : null,
+          r.voor_mens ? el('small', { class: 'voor-mens', text: 'Voor jou: ' + knip(r.voor_mens, 160) }) : null);
+      }),
+      acties.slice(0, 12).map(a => el('li', null, el('a', { href: actieHref(a), text: knip(stripMd(a.tekst), 90) }),
+        el('small', { text: (a.controle.bewijs ? knip(a.controle.bewijs, 120) : 'Bevestigd') + ', ' + datumKort(sindsVan(a)) })))));
+    if (acties.length > 12) paneel.append(el('p', { class: 'res-sub', style: 'margin-top:10px' }, el('a', { class: 'meer', href: '#acties', text: `en nog ${acties.length - 12}` })));
+    return paneel;
+  }
+
+  const veiligeLinks = (r) => (Array.isArray(r.links) ? r.links : []).filter(l => l && /^https?:\/\//i.test(String(l.url || ''))).slice(0, 3);
   function controlePaneel() {
     const paneel = rise(el('section', { class: 'panel check-panel', 'aria-labelledby': 'ac-titel' }));
     const uitleg = 'Elke ochtend om 05:00 kijkt een routine per open actie of hij al gedaan is: op de live site, in GA4, Search Console en Shopify. Gedaan wordt automatisch afgevinkt, met bewijs erbij. Wat niet te zien is, vink je zelf af.';
@@ -984,6 +1520,8 @@
     const dagen = DAGEN.map((_, i) => plusDagen(maandag, i));
     const runsVan = (r) => {
       if (r.key === 'actiecontrole') return new Map(((C && C.runs) || []).map(d => [d, null]));
+      // Uitvoerder: alleen dagen waarop een opdracht is bijgewerkt zijn zichtbaar
+      if (r.key === 'uitvoerder') return new Map(R.opdrachten.filter(o => o.bijgewerkt && !isNaN(new Date(o.bijgewerkt)) && o.status !== 'goedgekeurd').map(o => [isoVan(new Date(o.bijgewerkt)), null]));
       const m = new Map();
       inReeks(r.key).forEach(n => { if (!m.has(n.datum)) m.set(n.datum, n); });
       return m;
@@ -999,6 +1537,7 @@
         const attrs = { class: 'cell ran', style: '--i:' + (i++), title: label + 'gedraaid', 'aria-label': label + 'gedraaid' };
         return n ? el('a', Object.assign(attrs, { href: '#n-' + n.id, title: label + n._naam + ' · ' + n._kern })) : el('span', Object.assign(attrs, { role: 'img' }));
       }
+      if (gepland && dag < VANDAAG && r.geenGemist) return el('span', { class: 'cell off', role: 'img', title: label + 'geen opdrachten', 'aria-label': label + 'geen opdrachten uitgevoerd' });
       if (gepland && dag < VANDAAG) return el('span', { class: 'cell miss', role: 'img', title: label + 'gemist', 'aria-label': label + 'gemist' });
       if (gepland) return el('span', { class: 'cell plan', role: 'img', title: label + 'gepland ' + r.planning.tijd, 'aria-label': label + 'gepland' });
       return el('span', { class: 'cell off', role: 'img', 'aria-label': label + 'niet gepland' });
@@ -1006,16 +1545,58 @@
     const tabel = el('table', { class: 'sched', 'aria-label': `Routines per dag, week ${isoWeek(VANDAAG)}` },
       el('thead', null, el('tr', null, el('th', { scope: 'col', text: 'Routine' }),
         dagen.map(d => el('th', { scope: 'col', class: d === VANDAAG ? 'today' : null, text: `${DAGEN[weekdag(d)]} ${Number(d.slice(8))}` })))),
-      el('tbody', null, ROOSTER.map(r => { const runs = runsVan(r); return el('tr', null,
-        el('td', null, r.naam, el('small', { text: planningLabel(r) })),
-        dagen.map(d => el('td', { class: d === VANDAAG ? 'todaycol' : null }, cel(r, d, runs)))); })));
+      el('tbody', null, ROOSTER.map(r => {
+        const runs = runsVan(r);
+        const laatste = REEKS[r.key] ? inReeks(r.key)[0] : null;
+        const niet = laatste && laatste.wat_niet_lukte;
+        return el('tr', null,
+          el('td', { title: niet ? 'Lukte niet bij ' + laatste._naam + ': ' + niet : null }, r.naam,
+            el('small', { text: planningLabel(r) }), niet ? el('small', { class: 'let', text: 'Laatste run deels gelukt' }) : null),
+          dagen.map(d => el('td', { class: d === VANDAAG ? 'todaycol' : null }, cel(r, d, runs))));
+      })));
+    // Routinegezondheid: wat bij de laatste run van elke routine niet lukte
+    const problemen = REEKSEN.filter(r => r.planning).map(r => inReeks(r.key)[0]).filter(n => n && n.wat_niet_lukte);
     return rise(el('section', { class: 'panel' },
       el('div', { class: 'week-head' }, el('h2', { text: `Routines deze week · week ${isoWeek(VANDAAG)}` }),
         el('div', { class: 'legend' },
           el('span', null, el('span', { class: 'cell ran' }), 'Gedraaid'),
           el('span', null, el('span', { class: 'cell plan' }), 'Gepland'),
           el('span', null, el('span', { class: 'cell miss' }), 'Gemist'))),
-      el('div', { class: 'tabel-scroll' }, tabel)));
+      el('div', { class: 'tabel-scroll' }, tabel),
+      problemen.length ? el('div', { class: 'lukte', role: 'note' },
+        el('span', { text: 'Wat bij de laatste run niet lukte' }),
+        problemen.map(n => el('div', null, el('a', { href: '#n-' + n.id, class: 'bronlink', text: n._naam }), ': ', knip(n.wat_niet_lukte, 220)))) : null,
+      maandLijst()));
+  }
+
+  // Maandelijkse en tweewekelijkse routines: laatste en volgende run
+  function maandLijst() {
+    const lijst = REEKSEN.filter(r => r.maand);
+    const volgende = (r, laatste) => {
+      for (let i = 0; i < 70; i++) {
+        const d = plusDagen(VANDAAG, i);
+        if (r.maand.dagen.includes(Number(d.slice(8))) && !(laatste && laatste.datum >= d)) return d;
+      }
+      return null;
+    };
+    const vorigeGepland = (r) => {
+      for (let i = 1; i < 70; i++) { const d = plusDagen(VANDAAG, -i); if (r.maand.dagen.includes(Number(d.slice(8)))) return d; }
+      return null;
+    };
+    return el('div', null,
+      el('h3', { class: 'maand-kop', text: `Deze maand · ${MAANDEN_LANG[Number(VANDAAG.slice(5, 7)) - 1]}` }),
+      el('ul', { class: 'maand' }, lijst.map(r => {
+        const laatste = inReeks(r.key)[0] || null;
+        const vorige = vorigeGepland(r);
+        // achter pas na de eerste run, met een dag speling voor de guard (weekschema als terugval)
+        const achter = laatste && vorige && laatste.datum < vorige && plusDagen(vorige, 1) < VANDAAG;
+        const volg = volgende(r, laatste);
+        return el('li', null,
+          el('a', { href: '#reeks-' + r.key }, r.naam, el('small', { text: planningLabel(r) })),
+          el('div', { class: 'm-cel' }, el('span', { text: 'Laatst' }), laatste ? el('a', { class: 'bronlink', href: '#n-' + laatste.id, text: datumKort(laatste.datum) }) : 'nog niet gedraaid'),
+          el('div', { class: 'm-cel' + (achter ? ' achter' : '') }, el('span', { text: achter ? 'Achter' : 'Volgende' }), achter ? `verwacht ${datumKort(vorige)}` : volg ? (volg === VANDAAG ? 'vandaag ' + r.maand.tijd : datumKort(volg)) : '–'),
+          laatste && laatste.wat_niet_lukte ? el('div', { class: 'm-niet', text: 'Lukte niet: ' + knip(laatste.wat_niet_lukte, 160) }) : null);
+      })));
   }
 
   // ── Pagina: Overzicht (reeksen en cijfers) ───────────────────────────────
@@ -1230,7 +1811,9 @@
       ns.append(el('div', { class: 'invoer' }, ta, el('div', null, knop), el('div', { class: 'melding', id: 'aantekening-melding', role: 'status' })));
     } else ns.append(el('p', { class: 'leeg', style: 'font-size:13px', text: notities.length ? (state.readOnlyReason || 'Alleen lezen.') : 'Nog geen aantekeningen. ' + (state.readOnlyReason || 'Alleen lezen.') }));
 
-    p.append(rise(el('article', { class: 'dossier' }, kopBlok, el('div', { class: 'd-body' }, hoofd, el('aside', { class: 'd-side', 'aria-label': 'Eigenschappen' }, dl, ns)))));
+    const vb = vraagBlok('n-' + n.id, () => notitieContext(n), { noteId: n.id });
+    p.append(rise(el('article', { class: 'dossier' }, kopBlok, el('div', { class: 'd-body' }, hoofd, el('aside', { class: 'd-side', 'aria-label': 'Eigenschappen' }, dl,
+      vb ? el('div', { class: 'prop' }, el('p', { class: 'label', style: 'margin:0', text: 'Vraag Claude' }), vb) : null, ns)))));
     return n._naam;
   }
 
@@ -1240,17 +1823,30 @@
     p.append(kop({ eyebrow: 'Uit onderzoeken en de backlog', titel: 'Acties', tekst: 'Alles wat er te doen is, per prioriteit. Afvinken schrijft naar de gedeelde opslag; de eerstvolgende sync zet het in de vault. Blauw afgevinkt = bevestigd door de dagelijkse actiecontrole.' }));
     const bronKnop = (waarde, tekst) => el('button', { type: 'button', 'aria-pressed': String(A.bron === waarde), onclick: () => { A.bron = waarde; render(true); }, text: tekst });
     const dubbelen = ACTIES.filter(a => isDubbel(a) && !afgevinkt(a)).length;
+    const verborgen = ACTIES.filter(a => teltBasis(a) && isVerborgen(a) && !afgevinkt(a)).length;
+    const mijnNaam = (($('naam') && $('naam').value) || lezen('hi-research-naam')).trim();
+    const vink = (id, sleutel, opslagKey, tekst) => el('label', { class: 'vink' }, el('input', { type: 'checkbox', id, checked: A[sleutel],
+      onchange: (e) => { A[sleutel] = e.target.checked; if (opslagKey) opslaan(opslagKey, e.target.checked ? '1' : ''); render(true); } }), tekst);
+    const extra = [];
+    if (dubbelen) extra.push(`${dubbelen} dubbel${dubbelen === 1 ? '' : 'e'} verborgen`);
+    if (verborgen && !A.verborgen) extra.push(`${verborgen} uitgesteld of niet doen verborgen`);
     p.append(rise(el('div', { class: 'filterbalk' },
       el('div', { class: 'schakel', role: 'group', 'aria-label': 'Bron' }, bronKnop('', 'Alles'), bronKnop('notitie', 'Uit onderzoeken'), bronKnop('backlog', 'Backlog')),
-      el('label', { class: 'vink' }, el('input', { type: 'checkbox', id: 'a-af', checked: A.afgevinkt, onchange: (e) => { A.afgevinkt = e.target.checked; render(true); } }), 'Toon afgevinkt'),
-      dubbelen ? el('span', { class: 'telregel', text: `${dubbelen} dubbel${dubbelen === 1 ? '' : 'e'} verborgen` } ) : null)));
+      vink('a-mijn', 'mijn', 'hi-a-mijn', mijnNaam ? `Mijn acties (${mijnNaam})` : 'Mijn acties'),
+      vink('a-af', 'afgevinkt', null, 'Toon afgevinkt'),
+      vink('a-verborgen', 'verborgen', 'hi-a-verborgen', 'Toon uitgesteld/niet doen'),
+      extra.length ? el('span', { class: 'telregel', text: extra.join(', ') }) : null,
+      nieuweActieKnop())));
+    if (A.mijn && !mijnNaam) p.append(el('p', { class: 'uitleg-leeg', text: 'Vul onderaan het menu je naam in; dan zie je hier de acties waarvan jij eigenaar bent.' }));
     p.append(el('div', { class: 'melding', id: 'check-melding', role: 'status' }));
-    const alle = ACTIES.filter(a => telt(a) && (!A.bron || a.bronType === A.bron) && (A.afgevinkt || !afgevinkt(a)));
+    const isMijn = (a) => { const b = beheerVan(a); return !!(b && b.eigenaar && mijnNaam && String(b.eigenaar).trim().toLowerCase() === mijnNaam.toLowerCase()); };
+    const alle = ACTIES.filter(a => teltBasis(a) && (A.verborgen || !isVerborgen(a)) && (!A.bron || a.bronType === A.bron) && (A.afgevinkt || !afgevinkt(a)) && (!A.mijn || isMijn(a)));
     ['P1', 'P2', 'P3'].forEach(prio => {
       const lijst = alle.filter(a => a.prioriteit === prio).sort(actieSortering);
+      const nw = A.mijn || A.bron === 'notitie' ? [] : nieuweActies().filter(d => (PRIOS.includes(d.prioriteit) ? d.prioriteit : 'P3') === prio);
       p.append(rise(el('section', { class: 'sectie' },
-        blokTitel(PRIO_UITLEG[prio], el('span', { class: 'tel num', text: lijst.length + (lijst.length === 1 ? ' actie' : ' acties') }), [prioChip(prio), ' ']),
-        lijst.length ? el('ul', { class: 'todo' }, lijst.map(a => actieRij(a, { waarom: true, prio: false }))) : el('p', { class: 'leeg', text: 'Niets open.' }))));
+        blokTitel(PRIO_UITLEG[prio], el('span', { class: 'tel num', text: lijst.length + (lijst.length === 1 ? ' actie' : ' acties') + (nw.length ? ` + ${nw.length} nieuw` : '') }), [prioChip(prio), ' ']),
+        lijst.length || nw.length ? el('ul', { class: 'todo' }, nw.map(nieuweActieRij), lijst.map(a => actieRij(a, { waarom: true, prio: false }))) : el('p', { class: 'leeg', text: 'Niets open.' }))));
     });
     return 'Acties';
   }
@@ -1276,6 +1872,8 @@
       b.velden['Gevonden op'] ? prop('Gevonden', el('span', { text: b.velden['Gevonden op'] })) : null,
       b.velden['Waar'] ? prop('Waar', el('span', { html: inlineMd(b.velden['Waar']) })) : null,
       prop('Bron', el('span', { class: 'muted', text: '05_Research/_backlog/ACTIEBACKLOG.md' }))));
+    const vb = vraagBlok('b-' + encActie(b.id), () => backlogContext(b), { noteId: null });
+    if (vb) side.append(el('div', { class: 'prop' }, el('p', { class: 'label', style: 'margin:0', text: 'Vraag Claude' }), vb));
     p.append(rise(el('article', { class: 'dossier' }, kopBlok, el('div', { class: 'd-body' }, hoofd, side))));
     return 'Backlog';
   }
@@ -1289,6 +1887,203 @@
   function paginaNietGevonden(p) {
     p.append(kop({ titel: 'Niet gevonden', tekst: 'Deze pagina bestaat niet (meer). Misschien is het onderzoek hernoemd.' }), el('div', null, el('a', { class: 'knop', href: '#vandaag' }, 'Naar vandaag', el('i', { 'aria-hidden': 'true' }))));
     return 'Niet gevonden';
+  }
+
+  // ── Pagina: Kansen ────────────────────────────────────────────────────────
+  function paginaKansen(p) {
+    const K = state.kansen;
+    p.append(kop({ eyebrow: 'Verbanden tussen de routines', titel: 'Kansen', tekst: 'Wat meerdere onderzoeken samen laten zien, met bewijs en een eerste stap. Jij beslist: oppakken, parkeren of afwijzen.' }));
+    p.append(rise(el('section', { class: 'panel check-panel', 'aria-labelledby': 'vk-titel' },
+      el('div', null, el('h2', { id: 'vk-titel', text: 'Wat doet de routine Verbanden & kansen?' }),
+        el('p', { text: 'Elke zaterdag om 06:30 leest de routine alle notities van die week, van Growth Radar tot Klantstem en Concurrentie, plus de open acties. Ze zoekt waar signalen elkaar versterken: dezelfde oorzaak in meerdere routines, of een trend die een openstaande actie belangrijker maakt.' }),
+        el('p', { text: 'Elke kans krijgt een impact (hoog, middel of laag), een bewijsketen van de notities waar hij uit komt en één eerste stap. De eerste zaterdag van de maand is de maandeditie met 3 tot 5 strategische stappen; die vervangt de oude maandelijkse strategie.' }),
+        el('p', { class: 'num', text: 'Planning: ' + planningLabel(REEKS.verbanden) + '.' })))));
+
+    const telPer = (s) => s === 'alle' ? KANSEN.length : KANSEN.filter(k => kansStatus(k) === s).length;
+    const knop = (waarde, tekst) => el('button', { type: 'button', 'aria-pressed': String(K.status === waarde),
+      onclick: () => { K.status = waarde; opslaan('hi-k-status', waarde); render(true); }, text: `${tekst} ${telPer(waarde)}` });
+    p.append(rise(el('div', { class: 'filterbalk' },
+      el('div', { class: 'schakel', role: 'group', 'aria-label': 'Status' }, knop('open', 'Open'), knop('oppakken', 'Oppakken'), knop('parkeren', 'Geparkeerd'), knop('afwijzen', 'Afgewezen'), knop('alle', 'Alle')))));
+
+    const lijst = KANSEN.filter(k => K.status === 'alle' || kansStatus(k) === K.status);
+    if (!KANSEN.length) { p.append(rise(el('p', { class: 'uitleg-leeg', text: 'Nog geen kansen. Na de eerste run van Verbanden & kansen staan ze hier, gegroepeerd per editie.' }))); return 'Kansen'; }
+    if (!lijst.length) { p.append(rise(el('p', { class: 'uitleg-leeg', text: 'Geen kansen met deze status.' }))); return 'Kansen'; }
+    const perNotitie = new Map();
+    lijst.forEach(k => { if (!perNotitie.has(k.notitie)) perNotitie.set(k.notitie, []); perNotitie.get(k.notitie).push(k); });
+    const vak = el('div', { class: 'lijst' });
+    [...perNotitie].sort((a, b) => (b[0].datum + b[0].id).localeCompare(a[0].datum + a[0].id)).forEach(([n, ks]) => {
+      vak.append(el('div', { class: 'groep-kop' }, el('b', null, el('a', { href: '#n-' + n.id, style: 'text-decoration:none', text: n._naam })), el('span', { class: 'tel num', text: datumKort(n.datum) + ', ' + ks.length + (ks.length === 1 ? ' kans' : ' kansen') })));
+      vak.append(el('ul', { class: 'kansen' }, ks.sort(kansSortering).map(k => kansKaart(k, { bron: false }))));
+    });
+    p.append(rise(vak));
+    return 'Kansen';
+  }
+
+  // ── Pagina: Cijfers ───────────────────────────────────────────────────────
+  const koppelLink = () => el('a', { href: '#koppelingen', text: 'Koppelingen' });
+  function grafiekPaneel(titel, nuWaarde, d, sub, svg, leeg) {
+    return el('div', { class: 'grafiek panel' },
+      el('div', { class: 'grafiek-kop' }, el('h2', { text: titel }), nuWaarde != null ? el('div', { class: 'nu' }, el('b', { class: 'num', text: nuWaarde }), d) : null),
+      sub ? el('p', { text: sub }) : null,
+      svg || el('p', { class: 'uitleg-leeg', text: leeg || 'Nog geen data.' }));
+  }
+  function paginaCijfers(p) {
+    const K = DATA.kpi, CW = DATA.cwv, S = DATA.shopify;
+    p.append(kop({ eyebrow: 'GA4, Search Console, PageSpeed en Shopify', titel: 'Cijfers', tekst: 'Trends over de laatste 12 weken. De cijfers worden elke ochtend opgehaald en in de vault gezet; je ziet de stand van de laatste build. Alleen Shopify kun je hier ook live bekijken.' }));
+    if (state.mcp && state.shop.status === 'idle') laadShop(false);
+    p.append(shopLiveBlok());
+
+    // Verkeer en verkoop
+    const maandag = maandagVan(VANDAAG);
+    const weken = K && Array.isArray(K.weken) ? K.weken.filter(w => w && w.week) : [];
+    const wnr = (w) => Number(String(w.week).slice(-2));
+    const lopend = (w) => String(w.start || '').slice(0, 10) >= maandag;
+    const REEKS_KPI = [
+      { veld: 'sessies_nl', titel: 'Sessies uit Nederland', bron: 'GA4', fmt: getal, as: (v) => COMPACT.format(v) },
+      { veld: 'omzet', titel: 'Omzet', bron: 'GA4', fmt: eur, as: (v) => '€' + COMPACT.format(v) },
+      { veld: 'conversie', titel: 'Conversie', bron: 'GA4', fmt: (v) => pct(v), as: (v) => pct(v, 1), soort: 'pp' },
+      { veld: 'gsc_klikken', titel: 'Klikken uit Google', bron: 'Search Console', fmt: getal, as: (v) => COMPACT.format(v) },
+    ];
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Verkeer en verkoop', el('span', { class: 'tel', text: K ? bijgewerkt(K) : 'nog niet gekoppeld' })),
+      weken.length ? el('div', { class: 'grafieken' }, REEKS_KPI.map(r => {
+        // GA4 mat pas vanaf de eerste week met sessies; nullen daarvoor zijn 'geen meting', geen 0
+        const gaStart = weken.findIndex(w => num(w.sessies) > 0);
+        const waarde = (w, i) => r.bron === 'GA4' && (gaStart < 0 || i < gaStart) ? null : num(w[r.veld]);
+        const pts = weken.map((w, i) => ({ label: 'W' + wnr(w), v: waarde(w, i), lopend: lopend(w), tekst: `Week ${wnr(w)}${lopend(w) ? ' (loopt nog)' : ''}: ${waarde(w, i) == null ? 'geen meting' : r.fmt(w[r.veld])}` }));
+        const vol = weken.filter((w, i) => !lopend(w) && waarde(w, i) != null);
+        const nu = vol[vol.length - 1], toen = vol[vol.length - 2];
+        return grafiekPaneel(r.titel, nu ? r.fmt(nu[r.veld]) : null, nu && toen ? delta(nu[r.veld], toen[r.veld], r.soort) : null,
+          `Per week, bron ${r.bron}.` + (weken.some(lopend) ? ' De gestippelde lijn is de lopende week.' : ''),
+          lijnGrafiek(pts, { label: r.titel + ' per week', fmt: r.fmt, as: r.as }));
+      }))
+        : el('p', { class: 'uitleg-leeg' }, 'Nog geen weekcijfers. Ze komen uit python 05_Research/_tools/google_data.py dashboard, dat elke ochtend draait. Status per bron: ', koppelLink(), '.'))));
+
+    // Posities per kernwoord (lager is beter, as omgekeerd)
+    const kw = K && Array.isArray(K.kernwoorden) ? K.kernwoorden.filter(k => k && k.term) : [];
+    const pos = (v) => num(v) == null ? '–' : num(v).toLocaleString('nl-NL', { maximumFractionDigits: 1 });
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Posities per kernwoord', el('span', { class: 'tel', text: 'positie 1 staat bovenaan' })),
+      kw.length ? el('div', { class: 'kw-grid' }, kw.map(k => {
+        const ws = Array.isArray(k.weken) ? k.weken.filter(Boolean) : [];
+        const pts = ws.map(w => ({ label: 'W' + Number(String(w.week).slice(-2)), v: num(w.positie), tekst: `Week ${Number(String(w.week).slice(-2))}: ` + (num(w.positie) == null ? 'niet gevonden' : 'positie ' + pos(w.positie)) + (num(w.vertoningen) != null ? `, ${getal(w.vertoningen)} vertoningen` : '') }));
+        const idx = pts.map((x, i) => x.v != null ? i : -1).filter(i => i >= 0);
+        const li = idx[idx.length - 1], eerder = idx.filter(i => li != null && i <= li - 4).pop();
+        let d = null;
+        if (li != null && eerder != null) {
+          const verschil = pts[eerder].v - pts[li].v;   // positief = gestegen
+          const r = Math.abs(verschil) < 0.05 ? '' : verschil > 0 ? ' up' : ' down';
+          d = el('span', { class: 'delta num' + r, title: 'Tegen ' + pts[eerder].label, text: r ? `${pos(Math.abs(verschil))} ${verschil > 0 ? 'hoger' : 'lager'}` : 'gelijk' });
+        }
+        return grafiekPaneel(k.term, li != null ? '#' + pos(pts[li].v) : null, d, null,
+          lijnGrafiek(pts, { label: 'Positie voor ' + k.term, omgekeerd: true, breedte: 320, hoogte: 170, links: 34, klein: true, fmt: (v) => 'positie ' + pos(v), as: (v) => String(v) }),
+          'Nog niet gevonden in Google voor deze zoekterm.');
+      }))
+        : el('p', { class: 'uitleg-leeg' }, 'Nog geen posities. De kernwoorden staan in 05_Research/_data/instellingen.json; de posities komen uit Search Console. ', koppelLink(), '.'))));
+
+    // Core Web Vitals (mobiel)
+    const cwvPaginas = CW && CW.status === 'ok' && Array.isArray(CW.paginas) ? CW.paginas.filter(x => x && x.url) : [];
+    const OORDEEL = {
+      score: (v) => v >= 90 ? 'goed' : v >= 50 ? 'verbeteren' : 'slecht',
+      lcp: (v) => v <= 2500 ? 'goed' : v <= 4000 ? 'verbeteren' : 'slecht',
+      inp: (v) => v <= 200 ? 'goed' : v <= 500 ? 'verbeteren' : 'slecht',
+      cls: (v) => v <= 0.1 ? 'goed' : v <= 0.25 ? 'verbeteren' : 'slecht',
+    };
+    const oordeelChip = (soort, v) => v == null ? null : el('span', { class: 'oordeel oordeel--' + OORDEEL[soort](v), text: OORDEEL[soort](v) });
+    const pad = (u) => { try { const x = new URL(u); return x.pathname === '/' ? 'Homepage' : x.pathname; } catch (e) { return String(u); } };
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Snelheid op mobiel', el('span', { class: 'tel', text: CW ? 'PageSpeed Insights, ' + bijgewerkt(CW) : 'nog niet gekoppeld' })),
+      cwvPaginas.length ? el('div', { class: 'cwv' }, cwvPaginas.map(x => {
+        let score = num(x.score); if (score != null && score <= 1) score = Math.round(score * 100);
+        const lcp = num(x.lcp_ms), inp = num(x.inp_ms), cls = num(x.cls);
+        const maat = (label, waarde, soort, v) => el('div', null, el('span', { text: label }), el('b', { class: 'num', text: waarde }), oordeelChip(soort, v));
+        return el('div', { class: 'cwv-kaart panel' },
+          el('h3', null, el('a', { href: x.url, target: '_blank', rel: 'noopener', class: 'bronlink', text: pad(x.url) })),
+          el('div', { class: 'cwv-score' }, el('b', { class: 'num', text: score == null ? '–' : score }), el('span', { class: 'muted', text: 'van 100' }), oordeelChip('score', score)),
+          el('div', { class: 'cwv-maat' },
+            maat('LCP', lcp == null ? '–' : (lcp / 1000).toLocaleString('nl-NL', { maximumFractionDigits: 1 }) + ' s', 'lcp', lcp),
+            maat('INP', inp == null ? '–' : getal(inp) + ' ms', 'inp', inp),
+            maat('CLS', cls == null ? '–' : cls.toLocaleString('nl-NL', { maximumFractionDigits: 2 }), 'cls', cls)));
+      }))
+        : el('p', { class: 'uitleg-leeg' }, (CW && CW.status === 'fout' ? 'PageSpeed gaf bij de laatste run een fout. ' : 'Nog geen snelheidsmeting. PageSpeed draait elke ochtend mee met google_data.py dashboard. ') + (CW && CW.uitleg ? CW.uitleg + ' ' : '') + 'Status per bron: ', koppelLink(), '.'))));
+
+    // Shopify per dag
+    const dagen = S && Array.isArray(S.dagen) ? S.dagen.filter(d => d && /^\d{4}-\d{2}-\d{2}/.test(String(d.dag))).map(d => Object.assign({}, d, { dag: String(d.dag).slice(0, 10) })) : [];
+    const totaal = dagen.reduce((s, d) => s + (num(d.omzet) || 0), 0), orders = dagen.reduce((s, d) => s + (num(d.orders) || 0), 0);
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Shopify per dag', el('span', { class: 'tel', text: S ? bijgewerkt(S) : 'nog niet gekoppeld' })),
+      dagen.length ? grafiekPaneel('Omzet per dag', eur(totaal), el('span', { class: 'muted', text: `${getal(orders)} orders` }), `Laatste ${Math.min(90, dagen.length)} dagen. De donkere staven zijn deze week. Alleen totalen, nooit klantgegevens.`, dagGrafiek(dagen))
+        : el('p', { class: 'uitleg-leeg' }, 'Nog geen Shopify-cijfers. De Actiecontrole haalt ze elke ochtend op via de Shopify-connector (alleen totalen). ', koppelLink(), '.'))));
+    return 'Cijfers';
+  }
+
+  // ── Pagina: Koppelingen ───────────────────────────────────────────────────
+  const STANDAARD_BRONNEN = [
+    { id: 'ga4', naam: 'Google Analytics 4', soort: 'servicesleutel' },
+    { id: 'gsc', naam: 'Search Console', soort: 'servicesleutel' },
+    { id: 'agenda', naam: 'Google Agenda (info@higrip.nl)', soort: 'servicesleutel' },
+    { id: 'merchant', naam: 'Merchant Center', soort: 'servicesleutel' },
+    { id: 'pagespeed', naam: 'PageSpeed Insights', soort: 'script' },
+    { id: 'shopify', naam: 'Shopify', soort: 'connector' },
+    { id: 'meta', naam: 'Meta (Instagram en Facebook)', soort: 'connector' },
+    { id: 'klaviyo', naam: 'Klaviyo', soort: 'connector' },
+    { id: 'buffer', naam: 'Buffer', soort: 'connector' },
+    { id: 'gmail', naam: 'Gmail', soort: 'connector' },
+    { id: 'drive', naam: 'Google Drive', soort: 'connector' },
+  ];
+  const SOORT_LABEL = { servicesleutel: 'Servicesleutel', connector: 'Connector', script: 'Script' };
+  const KOPPEL_STATUS = { ok: 'Werkt', niet_gekoppeld: 'Niet gekoppeld', fout: 'Fout', onbekend: 'Onbekend' };
+  function bronnen() {
+    const echt = DATA.koppelingen && Array.isArray(DATA.koppelingen.bronnen) ? DATA.koppelingen.bronnen.filter(b => b && b.id) : [];
+    const ids = new Set(echt.map(b => b.id));
+    const standaardHoe = (b) => b.soort === 'connector' ? `claude.ai op info@higrip.nl → Instellingen → Connectors → ${b.naam} koppelen.`
+      : b.soort === 'script' ? 'Draait mee met python 05_Research/_tools/google_data.py dashboard. Een eigen PAGESPEED_API_KEY is optioneel.'
+      : 'Geef de Google-servicesleutel leesrechten op deze bron en draai daarna python 05_Research/_tools/google_data.py dashboard; de exacte stap staat dan hier.';
+    return echt.concat(STANDAARD_BRONNEN.filter(b => !ids.has(b.id)).map(b => Object.assign({}, b, { status: 'onbekend', detail: 'Nog niet gecontroleerd.', hoe_koppelen: standaardHoe(b) })))
+      .map(b => Object.assign({}, b, { status: KOPPEL_STATUS[b.status] ? b.status : 'onbekend', soort: SOORT_LABEL[b.soort] ? b.soort : 'script', hoe_koppelen: b.hoe_koppelen || standaardHoe(b) }));
+  }
+  const koppelProblemen = () => bronnen().filter(b => b.status === 'fout').length;
+  function paginaKoppelingen(p) {
+    p.append(kop({ eyebrow: 'Waar de cijfers vandaan komen', titel: 'Koppelingen', tekst: 'Per bron: werkt de koppeling, en zo niet, wat moet er gebeuren. Koppelen en rechten geven doet een mens; Claude leest alleen.' }));
+    p.append(rise(el('section', { class: 'route-uitleg' },
+      el('div', { class: 'panel' }, el('h2', { text: 'Elke ochtend via de servicesleutel' }),
+        el('ol', null,
+          el('li', { text: 'Een Google-servicesleutel is een robotaccount zonder wachtwoord. Hij heeft alleen leesrechten op GA4, Search Console, de agenda van info@higrip.nl en Merchant Center.' }),
+          el('li', { text: 'Elke ochtend draait python 05_Research/_tools/google_data.py dashboard. Dat haalt de cijfers op en zet ze in 05_Research/_data.' }),
+          el('li', { text: 'De build zet ze in het register en publiceert dit dashboard opnieuw. Je ziet dus de stand van vanochtend.' }))),
+      el('div', { class: 'panel' }, el('h2', { text: 'Via een connector tijdens een routine' }),
+        el('ol', null,
+          el('li', { text: 'Shopify, Gmail, Drive, Klaviyo, Meta en Buffer koppel je één keer in claude.ai op het account info@higrip.nl.' }),
+          el('li', { text: 'Een routine gebruikt die koppeling tijdens haar run. De Actiecontrole haalt zo de Shopify-omzet op: alleen totalen, nooit klantgegevens.' }),
+          el('li', { text: 'Het dashboard zelf leest alleen Shopify live, met jouw eigen koppeling en alleen totalen. Al het andere gaat via de vault, en de vault blijft de bron.' }))))));
+    if (state.mcp && !state.mcpLijst) laadMcpLijst();
+    p.append(weergaveBlok());
+
+    const lijst = bronnen();
+    const volgorde = { fout: 0, niet_gekoppeld: 1, onbekend: 2, ok: 3 };
+    const groepen = [['servicesleutel', 'Servicesleutel'], ['script', 'Script'], ['connector', 'Connectors']];
+    const vak = el('div', { class: 'lijst' });
+    groepen.forEach(([soort, label]) => {
+      const g = lijst.filter(b => b.soort === soort).sort((a, b) => volgorde[a.status] - volgorde[b.status]);
+      if (!g.length) return;
+      vak.append(el('div', { class: 'groep-kop' }, el('b', { text: label }), el('span', { class: 'tel num', text: `${g.filter(b => b.status === 'ok').length} van ${g.length} werkt` })));
+      g.forEach(b => vak.append(el('div', { class: 'bron-rij' },
+        el('h3', { text: b.naam || b.id }),
+        el('span', { class: 'stat stat--' + b.status, text: KOPPEL_STATUS[b.status] }),
+        b.detail ? el('p', { text: b.detail }) : null,
+        b.status !== 'ok' ? el('p', { class: 'hoe' }, el('b', { text: 'Hoe koppelen: ' }), b.hoe_koppelen) : null)));
+    });
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Bronnen', el('span', { class: 'tel', text: DATA.koppelingen ? 'gecontroleerd, ' + bijgewerkt(DATA.koppelingen) : 'nog niet gecontroleerd' })), vak)));
+
+    // Versheid per databestand
+    const S = DATA.sync;
+    const vers = [
+      ['Register', R.gebouwd ? 'gebouwd ' + tijdNL(R.gebouwd) : 'onbekend'],
+      ['Actiecontrole', C && C.laatste_run ? 'laatst ' + tijdNL(C.laatste_run) : 'nog niet gedraaid'],
+      ['Weekcijfers (kpi.json)', bijgewerkt(DATA.kpi)],
+      ['Agenda (agenda.json)', bijgewerkt(DATA.agenda)],
+      ['Snelheid (cwv.json)', bijgewerkt(DATA.cwv)],
+      ['Shopify (shopify.json)', bijgewerkt(DATA.shopify)],
+      ['Dashboard naar vault', S && S.laatste_sync ? `${tijdNL(S.laatste_sync)}${S.door ? ' door ' + S.door : ''}, ${num(S.toegepast) || 0} toegepast` + (num(S.overgeslagen) ? `, ${S.overgeslagen} overgeslagen` : '') : 'nog niet gesynchroniseerd'],
+    ];
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Hoe vers is alles'), el('ul', { class: 'versheid' }, vers.map(([k, v]) => el('li', null, el('b', { text: k }), el('span', { class: 'num', text: v })))))));
+    return 'Koppelingen';
   }
 
   // ── Grafieken ─────────────────────────────────────────────────────────────
@@ -1345,6 +2140,89 @@
     });
     return svg;
   }
+  function niceStap(bereik, n) {
+    if (!(bereik > 0)) return 1;
+    const ruw = bereik / n, mag = Math.pow(10, Math.floor(Math.log10(ruw))), f = ruw / mag;
+    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * mag;
+  }
+  // Lijngrafiek: punten [{label, v|null, lopend?, tekst?}]; omgekeerd = lager is beter (positie 1 bovenaan)
+  function lijnGrafiek(punten, o) {
+    o = o || {};
+    const W = o.breedte || 480, H = o.hoogte || 200, links = o.links || 50, rechts = 14, top = 18, onder = 26, basis = H - onder;
+    const vals = punten.map(p => p.v).filter(v => v != null);
+    if (!vals.length) return null;
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    if (!o.omgekeerd) lo = Math.min(0, lo);
+    if (hi === lo) { if (o.omgekeerd) { lo = Math.max(1, lo - 2); hi = hi + 2; } else hi = lo + Math.max(1, Math.abs(lo) * 0.2); }
+    const stap = niceStap(hi - lo, o.omgekeerd ? 3 : 4);
+    lo = Math.floor(lo / stap) * stap; hi = Math.ceil(hi / stap) * stap;
+    if (o.omgekeerd && lo < 1 && stap === 1) lo = 1;
+    const y = (v) => o.omgekeerd ? top + (v - lo) / (hi - lo) * (basis - top) : basis - (v - lo) / (hi - lo) * (basis - top);
+    const n = punten.length, slot = n > 1 ? (W - links - rechts) / (n - 1) : W - links - rechts;
+    const x = (i) => n === 1 ? (links + W - rechts) / 2 : links + i * slot;
+    const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': o.label || 'Lijngrafiek', class: o.klein ? 'klein' : '' });
+    for (let k = 0; lo + k * stap <= hi + stap / 1000; k++) {
+      const t = +(lo + k * stap).toFixed(6), yy = y(t);
+      const isAs = o.omgekeerd ? Math.abs(t - hi) < stap / 1000 : k === 0;
+      svg.append(svgEl('line', { class: isAs ? 'as' : 'raster', x1: links, y1: yy, x2: W - rechts, y2: yy }));
+      if (!(o.omgekeerd && t < 1)) svg.append(svgEl('text', { class: 'aslabel', x: links - 8, y: yy + 4, 'text-anchor': 'end' }, o.as ? o.as(t) : String(t)));
+    }
+    const px = (i) => x(i).toFixed(1), py = (i) => y(punten[i].v).toFixed(1);
+    // doorlopende stukken zonder gaten; de lopende week apart en gestippeld
+    const stukken = []; let cur = [];
+    punten.forEach((p, i) => { if (p.v == null || p.lopend) { if (cur.length) stukken.push(cur); cur = []; } else cur.push(i); });
+    if (cur.length) stukken.push(cur);
+    const pad = (s) => s.map((i, k) => (k ? 'L' : 'M') + px(i) + ',' + py(i)).join('');
+    stukken.forEach(s => {
+      if (!o.omgekeerd && s.length > 1) svg.append(svgEl('path', { class: 'vlak', d: pad(s) + `L${px(s[s.length - 1])},${basis}L${px(s[0])},${basis}Z` }));
+      svg.append(svgEl('path', { class: 'lijn', d: pad(s) }));
+    });
+    punten.forEach((p, i) => { if (p.lopend && p.v != null && i > 0 && punten[i - 1].v != null) svg.append(svgEl('path', { class: 'lijn', 'stroke-dasharray': '3 4', d: `M${px(i - 1)},${py(i - 1)}L${px(i)},${py(i)}` })); });
+    const laatste = punten.map((p, i) => (p.v != null && !p.lopend ? i : -1)).filter(i => i >= 0).pop();
+    const elke = Math.max(1, Math.ceil(n / (o.klein ? 4 : 6)));
+    punten.forEach((p, i) => {
+      const g = svgEl('g');
+      if (p.v != null) g.append(svgEl('circle', { class: 'punt' + (i === laatste ? ' laatste' : ''), cx: px(i), cy: py(i), r: i === laatste ? 4.5 : 3 }));
+      // laatste label rechts uitlijnen, anders valt het buiten de grafiek
+      if ((n - 1 - i) % elke === 0) g.append(svgEl('text', { class: 'aslabel', x: i === n - 1 && n > 1 ? W - 1 : px(i), y: H - 6, 'text-anchor': i === n - 1 && n > 1 ? 'end' : 'middle' }, p.label));
+      g.append(svgEl('rect', { class: 'hit', x: (x(i) - slot / 2).toFixed(1), y: 0, width: slot.toFixed(1), height: H }));
+      hoverbaar(g, p.tekst || `${p.label}: ${p.v == null ? 'geen data' : o.fmt ? o.fmt(p.v) : p.v}`);
+      svg.append(g);
+    });
+    if (laatste != null && !o.klein) {
+      const ly = y(punten[laatste].v);
+      svg.append(svgEl('text', { x: (x(laatste) - 8).toFixed(1), y: (ly < top + 16 ? ly + 20 : ly - 10).toFixed(1), 'text-anchor': 'end', 'font-weight': '700' }, o.fmt ? o.fmt(punten[laatste].v) : String(punten[laatste].v)));
+    }
+    return svg;
+  }
+  // Staven per dag (Shopify-omzet), deze week donker
+  function dagGrafiek(dagen) {
+    // viewBox op de echte breedte, zodat de tekst op elk scherm 12px blijft
+    const vak = $('pagina'), W = Math.round(Math.max(320, Math.min(1100, (vak ? vak.clientWidth : 600) - 44))), H = 220, links = 50, rechts = 8, top = 16, onder = 26, basis = H - onder;
+    const kaart = new Map(dagen.map(d => [d.dag, d]));
+    const sorted = [...kaart.keys()].sort(), laatste = sorted[sorted.length - 1];
+    const aantal = Math.min(90, Math.round((utc(laatste) - utc(sorted[0])) / 864e5) + 1);
+    const lijst = [];
+    for (let i = aantal - 1; i >= 0; i--) { const d = plusDagen(laatste, -i); lijst.push(kaart.get(d) || { dag: d, omzet: null, orders: null }); }
+    const max = Math.max(1, ...lijst.map(d => num(d.omzet) || 0));
+    const stap = niceStap(max, 4), boven = Math.ceil(max / stap) * stap;
+    const y = (v) => basis - v / boven * (basis - top);
+    const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, role: 'img', 'aria-label': 'Shopify-omzet per dag', class: 'echt' });
+    for (let t = 0; t <= boven + stap / 1000; t += stap) {
+      svg.append(svgEl('line', { class: t === 0 ? 'as' : 'raster', x1: links, y1: y(t), x2: W - rechts, y2: y(t) }));
+      svg.append(svgEl('text', { class: 'aslabel', x: links - 8, y: y(t) + 4, 'text-anchor': 'end' }, '€' + COMPACT.format(t)));
+    }
+    const slot = (W - links - rechts) / lijst.length, bw = Math.max(1.5, slot * 0.7), maandag = maandagVan(VANDAAG);
+    lijst.forEach((d, i) => {
+      const g = svgEl('g'), xx = links + i * slot + (slot - bw) / 2, v = num(d.omzet) || 0, h = basis - y(v);
+      if (h > 0) g.append(svgEl('rect', { class: 'staaf' + (d.dag >= maandag ? ' nu' : ''), x: xx.toFixed(1), y: y(v).toFixed(1), width: bw.toFixed(1), height: h.toFixed(1), rx: Math.min(2, bw / 2) }));
+      if (d.dag.slice(8) === '01' || (i === 0 && Number(d.dag.slice(8)) <= 20)) g.append(svgEl('text', { class: 'aslabel', x: (xx + bw / 2).toFixed(1), y: H - 6, 'text-anchor': i === 0 ? 'start' : 'middle' }, MAANDEN[Number(d.dag.slice(5, 7)) - 1]));
+      g.append(svgEl('rect', { class: 'hit', x: (links + i * slot).toFixed(1), y: 0, width: slot.toFixed(1), height: H }));
+      hoverbaar(g, `${DAGEN[weekdag(d.dag)]} ${datumKort(d.dag)}: ` + (d.omzet == null ? 'geen data' : `${eur(d.omzet)}, ${getal(d.orders)} ${num(d.orders) === 1 ? 'order' : 'orders'}`));
+      svg.append(g);
+    });
+    return svg;
+  }
 
   // ── Schrijven naar de gedeelde opslag (zelfde documentvormen als /research-sync verwacht) ──
   function naamOfMelding(meldingId) {
@@ -1365,10 +2243,15 @@
     $('naam-veld').hidden = true;
     render(true);
   }
-  function geweigerd(e, meldingId) {
+  function geweigerd(e, melding) {
     const code = e && e.code;
-    if (code === 'invalid_argument' || code === 'not_granted' || code === 'revoked') { zetAlleenLezen('Alleen lezen: je hebt geen bewerkrechten op dit artifact. Vraag ze aan via info@higrip.nl'); return; }
-    const m = meldingId && $(meldingId); if (m) m.textContent = 'Opslaan mislukt (' + (code || 'onbekend') + '). Probeer het zo nog eens.';
+    const m = typeof melding === 'string' ? $(melding) : melding;
+    if (code === 'invalid_argument' || code === 'not_granted' || code === 'revoked') {
+      zetAlleenLezen('Alleen lezen: je hebt geen bewerkrechten op dit artifact. Vraag ze aan via info@higrip.nl');
+      if (m) m.textContent = state.readOnlyReason;
+      return;
+    }
+    if (m) m.textContent = code === 'quota_exceeded' ? 'De gedeelde opslag is vol. Na de volgende sync (05:00) is er weer ruimte.' : 'Opslaan mislukt (' + (code || 'onbekend') + '). Probeer het zo nog eens.';
   }
   async function schrijfCheck(a, cb) {
     const terug = () => { cb.checked = !cb.checked; const li = cb.closest('.todo-item'); if (li) li.classList.toggle('done', cb.checked); };
@@ -1397,6 +2280,568 @@
     knop.disabled = false;
   }
 
+  // ── Werken vanuit het dashboard ───────────────────────────────────────────
+  // Alles schrijft naar de gedeelde opslag (contract C); de Actiecontrole zet het om 05:00 in de vault.
+  const DLG = $('dlg');
+  const nu = () => new Date().toISOString();
+  const SYNC_TEKST = 'Opgeslagen. Gaat bij de volgende sync (elke ochtend 05:00) naar de vault.';
+  const PRIO_LABEL = { P1: 'P1 · deze week', P2: 'P2 · deze maand', P3: 'P3 · op de radar' };
+  const ICON_X = '<svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>';
+  const ICON_MENU = '<svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="3" cy="8" r="1.5" fill="currentColor"/><circle cx="8" cy="8" r="1.5" fill="currentColor"/><circle cx="13" cy="8" r="1.5" fill="currentColor"/></svg>';
+  const GRENS = 'Iets live zetten, versturen of publiceren, en prijzen, kortingen, voorraad, bestellingen of de checkout aanpassen. Claude maakt alleen concepten: teksten, meta\'s, code in het testthema, e-mailconcepten, onderzoek en bestanden in de vault.';
+  const WANNEER = 'De Actiecontrole neemt je goedkeuring elke ochtend om 05:00 mee naar de vault. De Uitvoerder draait dagelijks om 06:15 en voert hem dan uit. Keur je vóór 05:00 goed, dan is het dezelfde ochtend klaar; anders de ochtend erna.';
+  const WAAR = 'Hier bij de actie en op de pagina Claude: een korte samenvatting, links naar de concepten en wat jij nog moet doen. Klaar-opdrachten staan ook bij Afgerond deze week op Vandaag.';
+
+  let dlgTerug = null, toastTimer = 0;
+  function openDialoog(titel, bouw, terugSel) {
+    if (!DLG.open) dlgTerug = { node: document.activeElement, sel: terugSel || null };
+    DLG.replaceChildren(
+      el('div', { class: 'dlg-kop' }, el('h2', { id: 'dlg-titel', text: titel }), el('button', { type: 'button', class: 'dlg-x', 'aria-label': 'Sluiten', svg: ICON_X, onclick: () => DLG.close() })),
+      el('div', { class: 'dlg-body' }, bouw()));
+    if (!DLG.open) { if (typeof DLG.showModal === 'function') DLG.showModal(); else DLG.setAttribute('open', ''); }
+    DLG.scrollTop = 0;
+    DLG.querySelector('.dlg-x').focus();
+  }
+  DLG.addEventListener('close', () => {
+    DLG.replaceChildren();
+    const t = dlgTerug; dlgTerug = null;
+    // de opener is weg als de actie verdween (uitgesteld, niet doen): dan naar het werkvlak
+    if (t) requestAnimationFrame(() => { const n = (t.node && t.node.isConnected ? t.node : t.sel && document.querySelector(t.sel)) || $('werk'); n.focus({ preventScroll: true }); });
+  });
+  DLG.addEventListener('click', (e) => { if (e.target === DLG) DLG.close(); });
+  function toast(t) { const n = $('toast'); n.textContent = t; clearTimeout(toastTimer); toastTimer = setTimeout(() => { n.textContent = ''; }, 5000); }
+  function klaar(t) { DLG.close(); toast(t || SYNC_TEKST); }
+  const alleenLezen = () => el('p', { class: 'klein-tekst', text: state.readOnlyReason || 'Alleen lezen.' });
+  const rij = (dt, dd) => el('div', null, el('dt', { text: dt }), el('dd', null, dd));
+  const melder = () => el('div', { class: 'melding', role: 'status' });
+  const opslaanKnop = (tekst) => el('button', { type: 'submit', class: 'knop' }, tekst || 'Opslaan', el('i', { 'aria-hidden': 'true' }));
+
+  // Naam: uit het menu; in een dialoog is het menu onbereikbaar, dus daar een eigen veld
+  const naamBekend = () => (($('naam') && $('naam').value) || lezen('hi-research-naam')).trim();
+  const naamVeld = () => naamBekend() ? null : el('label', { class: 'veld' }, el('span', { text: 'Jouw naam' }), el('input', { type: 'text', id: 'dlg-naam', maxlength: '60', autocomplete: 'name', placeholder: 'Komt bij je wijziging te staan' }));
+  function dlgNaam(melding) {
+    const veld = $('dlg-naam');
+    const naam = (veld ? veld.value : naamBekend()).trim();
+    if (!naam) { melding.textContent = 'Vul je naam in; die komt bij je wijziging te staan.'; if (veld) veld.focus(); return null; }
+    $('naam').value = naam; opslaan('hi-research-naam', naam);
+    return naam;
+  }
+  // Eén schrijfactie: data = document, null = verwijderen
+  async function schrijf(pad, data, melding, knop) {
+    if (!state.db) { geweigerd({ code: 'not_granted' }, melding); return false; }
+    if (knop) knop.disabled = true;
+    try { const ref = state.db.doc(pad); if (data) await ref.set(data); else await ref.delete(); return true; }
+    catch (e) { geweigerd(e, melding); return false; }
+    finally { if (knop) knop.disabled = false; }
+  }
+  const teamLijst = () => { const t = DATA.instellingen && Array.isArray(DATA.instellingen.team) ? DATA.instellingen.team.filter(x => typeof x === 'string' && x.trim()) : []; return t.length ? t : ['Lars', 'Tigo', 'Timo']; };
+  const terugSel = (attr, id) => `[${attr}="${window.CSS && CSS.escape ? CSS.escape(id) : id}"] button`;
+
+  // Haakjes uit de rijen vullen (D1): menu per actie, beslisknop per kans
+  function vulHaakjes(p) {
+    if (state.writable || state.sample) p.querySelectorAll('.actie-menu[data-actie-id]').forEach(h => {
+      const a = actieById[h.dataset.actieId];
+      if (a && !isDubbel(a)) h.append(el('button', { type: 'button', class: 'menu-knop', 'aria-haspopup': 'dialog', 'aria-label': 'Beheren: ' + knip(stripMd(a.tekst), 80), title: 'Eigenaar, uitstellen, prioriteit en Claude', svg: ICON_MENU, onclick: () => openBeheer(a) }));
+    });
+    if (state.writable) p.querySelectorAll('.kans-menu[data-kans-id]').forEach(h => {
+      const k = kansById[h.dataset.kansId];
+      if (k) h.append(el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-haspopup': 'dialog', 'aria-label': 'Beslissen over kans: ' + knip(stripMd(k.titel), 80), onclick: () => openKans(k), text: 'Beslissen' }));
+    });
+  }
+
+  // ── Actie beheren: eigenaar, prioriteit, uitstellen, niet doen ──
+  function actieKop(a) {
+    const b = beheerVan(a) || {};
+    return el('div', null, el('div', { class: 'dlg-actie', html: inlineMd(a.tekst) }),
+      el('p', { class: 'klein-tekst' }, el('a', { href: actieHref(a), onclick: () => DLG.close(), text: actieBron(a) }), ' · ' + a.prioriteit + (b.eigenaar ? ' · eigenaar ' + b.eigenaar : '')));
+  }
+  function openBeheer(a) {
+    openDialoog('Actie beheren', () => [
+      actieKop(a),
+      state.writable ? beheerFormulier(a) : alleenLezen(),
+      el('section', { class: 'dlg-sectie' }, el('h3', { text: 'Claude' }), el('p', { class: 'klein-tekst', text: claudeSamenvatting(a) }),
+        el('div', { class: 'knoppen' }, el('button', { type: 'button', class: 'knop2', onclick: () => openClaude(a), text: opdrachtInfo(a) ? 'Bekijk de opdracht' : kanClaude(a) ? 'Laat Claude dit doen' : !a.uitvoerbaar && state.sample ? 'Kan Claude dit?' : 'Meer over Claude' })))
+    ], terugSel('data-actie-id', a.id));
+  }
+  function claudeSamenvatting(a) {
+    const o = opdrachtInfo(a), u = a.uitvoerbaar;
+    if (o && o.status !== 'ingetrokken') return 'Opdracht: ' + opdrachtLabel(o) + '.';
+    if (!u) return 'De Actiecontrole heeft nog niet beoordeeld of Claude dit kan.';
+    if (u.claude === 'nee') return 'Volgens de Actiecontrole kan Claude dit niet.';
+    return (u.claude === 'ja' ? 'Claude kan dit: ' : 'Claude kan een deel: ') + (u.wat_claude_doet || 'een concept of voorbereiding.');
+  }
+  function beheerFormulier(a) {
+    const b = beheerVan(a) || {}, v = a.beheer || {};
+    const wacht = state.overrides.beheer[encActie(a.id)];
+    const team = teamLijst();
+    const eigen = el('select', { id: 'dlg-eigenaar' }, el('option', { value: '', text: 'Niemand' }), team.map(t => el('option', { value: t, text: t, selected: b.eigenaar === t })));
+    if (b.eigenaar && !team.includes(b.eigenaar)) eigen.append(el('option', { value: b.eigenaar, text: b.eigenaar, selected: true }));
+    const prio = el('select', { id: 'dlg-prio' }, PRIOS.map(x => el('option', { value: x, text: PRIO_LABEL[x], selected: a.prioriteit === x })));
+    const modus = b.niet_doen ? 'niet' : b.uitgesteld_tot && String(b.uitgesteld_tot).slice(0, 10) > VANDAAG ? 'uit' : 'open';
+    const datum = el('input', { type: 'date', id: 'dlg-datum', min: plusDagen(VANDAAG, 1), value: modus === 'uit' ? String(b.uitgesteld_tot).slice(0, 10) : plusDagen(VANDAAG, 7), 'aria-label': 'Uitstellen tot' });
+    const reden = el('textarea', { id: 'dlg-reden', maxlength: '300', placeholder: 'Waarom doe je dit niet? Verplicht.', 'aria-label': 'Reden om het niet te doen' });
+    reden.value = (b.niet_doen && b.niet_doen.reden) || '';
+    const datumVak = el('div', { class: 'veld', hidden: modus !== 'uit' }, datum);
+    const redenVak = el('div', { class: 'veld', hidden: modus !== 'niet' }, reden);
+    const keuze = () => (DLG.querySelector('input[name=dlg-modus]:checked') || {}).value || 'open';
+    const wissel = () => { datumVak.hidden = keuze() !== 'uit'; redenVak.hidden = keuze() !== 'niet'; };
+    const radio = (w, titel, sub) => el('label', { class: 'keuze' }, el('input', { type: 'radio', name: 'dlg-modus', value: w, checked: modus === w, onchange: wissel }), el('span', null, titel, sub ? el('small', { text: sub }) : null));
+    const melding = melder(), knop = opslaanKnop();
+    const pad = 'beheer/' + encActie(a.id);
+    const terug = wacht ? el('button', { type: 'button', class: 'knop2', onclick: async (e) => { if (await schrijf(pad, null, melding, e.currentTarget)) klaar('Wijziging teruggedraaid. De actie staat weer zoals in de vault.'); }, text: 'Wijziging terugdraaien' }) : null;
+    return el('form', { class: 'dlg-sectie dlg-sectie--eerste', novalidate: true, onsubmit: async (e) => {
+      e.preventDefault(); melding.textContent = '';
+      const m = keuze();
+      if (m === 'uit' && !(datum.value > VANDAAG)) { melding.textContent = 'Kies een datum na vandaag.'; datum.focus(); return; }
+      if (m === 'niet' && reden.value.trim().length < 3) { melding.textContent = 'Schrijf kort op waarom je het niet doet.'; reden.focus(); return; }
+      // alleen wat afwijkt van de vault; null wist een waarde uit de vault
+      const diff = {};
+      if ((eigen.value || null) !== (v.eigenaar || null)) diff.eigenaar = eigen.value || null;
+      if (prio.value !== (PRIOS.includes(v.prioriteit) ? v.prioriteit : a._prio)) diff.prioriteit = prio.value;
+      const uit = m === 'uit' ? datum.value : null;
+      if (uit !== (v.uitgesteld_tot ? String(v.uitgesteld_tot).slice(0, 10) : null)) diff.uitgesteld_tot = uit;
+      const niet = m === 'niet' ? reden.value.trim() : null;
+      if (niet !== (v.niet_doen ? String(v.niet_doen.reden || '') : null)) diff.niet_doen = niet == null ? null : { reden: niet };
+      const naam = dlgNaam(melding); if (!naam) return;
+      if (!Object.keys(diff).length) {
+        if (!wacht) { melding.textContent = 'Er is niets gewijzigd.'; return; }
+        if (await schrijf(pad, null, melding, knop)) klaar('Teruggezet naar de stand in de vault.');
+        return;
+      }
+      if (await schrijf(pad, Object.assign({ actionId: a.id }, diff, { naam, ts: nu() }), melding, knop)) klaar(m === 'niet' ? 'Opgeslagen als niet doen. Gaat bij de volgende sync (05:00) naar de vault.' : undefined);
+    } },
+      el('div', { class: 'twee' }, el('label', { class: 'veld' }, el('span', { text: 'Eigenaar' }), eigen), el('label', { class: 'veld' }, el('span', { text: 'Prioriteit' }), prio)),
+      el('fieldset', { class: 'veld' }, el('legend', { text: 'Wat gebeurt ermee' }),
+        radio('open', 'Gewoon doen'),
+        radio('uit', 'Uitstellen', 'Verdwijnt tot die datum uit de lijsten en tellers.'), datumVak,
+        radio('niet', 'Niet doen', 'Telt nergens meer mee. De reden blijft zichtbaar.'), redenVak),
+      naamVeld(),
+      el('div', { class: 'knoppen' }, knop, terug),
+      melding,
+      el('p', { class: 'klein-tekst', text: wacht ? `Er staat al een wijziging van ${wacht.naam || 'onbekend'} (${tsKort(wacht.ts)}) klaar voor de vault. Opslaan vervangt die.` : 'Je wijziging gaat bij de volgende sync (elke ochtend 05:00) naar de vault.' }));
+  }
+
+  // ── Nieuwe actie ──
+  const nieuweActies = () => Object.entries(state.overrides.nieuwe_acties).map(([key, d]) => Object.assign({ key }, d)).filter(d => d.kop).sort((x, y) => String(y.ts || '').localeCompare(String(x.ts || '')));
+  const nieuweActieKnop = () => state.writable ? el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-haspopup': 'dialog', onclick: () => openNieuweActie(), text: '+ Nieuwe actie' }) : null;
+  function nieuweActieRij(d) {
+    return el('li', { class: 'todo-item' },
+      el('span', { class: 'bol', role: 'img', 'aria-label': 'Nieuw, nog niet in de vault' }),
+      el('div', null, el('span', { class: 'todo-text', text: d.kop }),
+        d.waarom ? el('div', { class: 'why', text: knip(d.waarom, 180) }) : null,
+        el('div', { class: 'todo-meta' }, el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }), el('span', { class: 'num', text: `${d.naam || 'onbekend'} · ${tsKort(d.ts)}` }),
+          state.writable ? el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-label': 'Nieuwe actie intrekken: ' + knip(d.kop, 60), onclick: async (e) => { if (await schrijf('nieuwe_acties/' + d.key, null, 'check-melding', e.currentTarget)) toast('Nieuwe actie ingetrokken.'); }, text: 'Intrekken' }) : null)),
+      el('div', { class: 'todo-rechts' }, prioChip(PRIOS.includes(d.prioriteit) ? d.prioriteit : 'P3')));
+  }
+  function openNieuweActie(pre) {
+    pre = pre || {};
+    openDialoog('Nieuwe actie', () => {
+      if (!state.writable) return alleenLezen();
+      const kopIn = el('input', { type: 'text', id: 'dlg-kop', maxlength: '160', placeholder: 'Wat moet er gebeuren, in één regel' });
+      const prio = el('select', { id: 'dlg-prio' }, PRIOS.map(x => el('option', { value: x, text: PRIO_LABEL[x], selected: (pre.prioriteit || 'P2') === x })));
+      const wat = el('textarea', { id: 'dlg-wat', maxlength: '1000', placeholder: 'Welke pagina, welk bestand, welk resultaat' });
+      const waarom = el('textarea', { id: 'dlg-waarom', maxlength: '1000', placeholder: 'Wat levert het op, of welk probleem lost het op' });
+      kopIn.value = pre.kop || ''; wat.value = pre.wat || ''; waarom.value = pre.waarom || '';
+      const melding = melder(), knop = opslaanKnop('Toevoegen');
+      return el('form', { class: 'dlg-sectie dlg-sectie--eerste', novalidate: true, onsubmit: async (e) => {
+        e.preventDefault(); melding.textContent = '';
+        const kop = kopIn.value.trim().replace(/\s+/g, ' ');
+        if (kop.length < 5) { melding.textContent = 'Geef de actie een kop van een paar woorden.'; kopIn.focus(); return; }
+        const naam = dlgNaam(melding); if (!naam) return;
+        const ms = Date.now();
+        if (await schrijf('nieuwe_acties/' + ms, { kop, prioriteit: prio.value, wat: wat.value.trim(), waarom: waarom.value.trim(), naam, ts: new Date(ms).toISOString() }, melding, knop)) klaar('Actie toegevoegd. Gaat bij de volgende sync (05:00) naar de backlog.');
+      } },
+        el('label', { class: 'veld' }, el('span', { text: 'Kop' }), kopIn),
+        el('label', { class: 'veld' }, el('span', { text: 'Prioriteit' }), prio),
+        el('label', { class: 'veld' }, el('span', { text: 'Wat' }), wat),
+        el('label', { class: 'veld' }, el('span', { text: 'Waarom' }), waarom),
+        naamVeld(),
+        el('div', { class: 'knoppen' }, knop),
+        melding,
+        el('p', { class: 'klein-tekst', text: 'De actie staat meteen op het dashboard. Bij de volgende sync komt hij in de backlog (ACTIEBACKLOG.md) onder de gekozen prioriteit, met jouw naam en de datum.' }));
+    });
+  }
+
+  // ── Kans beslissen ──
+  function openKans(k) {
+    openDialoog('Kans beslissen', () => {
+      const s = kansStatus(k), wacht = state.overrides.kansen[encActie(k.id)], huidig = wacht || k.beheer || {};
+      const kop = el('div', null, el('div', { class: 'dlg-actie', text: stripMd(k.titel) }),
+        el('p', { class: 'klein-tekst', text: ['Impact ' + (k.impact || 'onbekend'), k.stap ? 'Eerste stap: ' + stripMd(k.stap) : ''].filter(Boolean).join(' · ') }));
+      if (!state.writable) return [kop, alleenLezen()];
+      const keuze = (w, t, sub) => el('label', { class: 'keuze' }, el('input', { type: 'radio', name: 'dlg-kans', value: w, checked: s === w }), el('span', null, t, el('small', { text: sub })));
+      const notitie = el('textarea', { id: 'dlg-kans-notitie', maxlength: '500', placeholder: 'Optioneel: waarom, of wat je gaat doen' });
+      notitie.value = huidig.notitie || '';
+      const melding = melder(), knop = opslaanKnop();
+      const pad = 'kansen/' + encActie(k.id);
+      const bewijs = k.bewijs.map(id => notitieById[id]).filter(Boolean).map(n => n._naam).join(', ');
+      return [kop, el('form', { class: 'dlg-sectie', novalidate: true, onsubmit: async (e) => {
+        e.preventDefault(); melding.textContent = '';
+        const status = (DLG.querySelector('input[name=dlg-kans]:checked') || {}).value;
+        if (!status) { melding.textContent = 'Kies oppakken, parkeren of afwijzen.'; return; }
+        const naam = dlgNaam(melding); if (!naam) return;
+        const doc = { kansId: k.id, status, naam, ts: nu() };
+        if (notitie.value.trim()) doc.notitie = notitie.value.trim();
+        if (await schrijf(pad, doc, melding, knop)) klaar();
+      } },
+        el('fieldset', { class: 'veld' }, el('legend', { text: 'Jouw besluit' }),
+          keuze('oppakken', 'Oppakken', 'We gaan hiermee aan de slag.'),
+          keuze('parkeren', 'Parkeren', 'Goed idee, maar nu niet.'),
+          keuze('afwijzen', 'Afwijzen', 'Doen we niet.')),
+        el('label', { class: 'veld' }, el('span', { text: 'Notitie' }), notitie),
+        naamVeld(),
+        el('div', { class: 'knoppen' }, knop,
+          el('button', { type: 'button', class: 'knop2', onclick: () => openNieuweActie({ kop: stripMd(k.titel), prioriteit: { hoog: 'P1', middel: 'P2' }[k.impact] || 'P3', wat: k.stap ? stripMd(k.stap) : '', waarom: `Kans uit ${k.notitie._naam} (impact ${k.impact || 'onbekend'}).` + (bewijs ? ' Bewijs: ' + bewijs + '.' : '') }), text: 'Maak er een actie van' }),
+          wacht ? el('button', { type: 'button', class: 'knop2', onclick: async (e) => { if (await schrijf(pad, null, melding, e.currentTarget)) klaar('Besluit teruggedraaid.'); }, text: 'Terugdraaien' }) : null),
+        melding,
+        el('p', { class: 'klein-tekst', text: 'Je besluit gaat bij de volgende sync (05:00) naar de vault. Maak er een actie van als je hem echt wilt plannen.' }))];
+    }, terugSel('data-kans-id', k.id));
+  }
+
+  // ── Opdrachten voor Claude ──
+  const OPDRACHT_LABEL = { goedgekeurd: 'Goedgekeurd', bezig: 'Claude is bezig', klaar: 'Klaar', mislukt: 'Mislukt', geweigerd: 'Geweigerd', ingetrokken: 'Ingetrokken' };
+  const kanClaude = (a) => !!(a.uitvoerbaar && (a.uitvoerbaar.claude === 'ja' || a.uitvoerbaar.claude === 'deels'));
+  // Gedeelde opslag (nog niet gesynct) gaat voor de vault; de vault kent goedgekeurd → bezig → klaar/mislukt/geweigerd
+  function opdrachtInfo(a) {
+    const d = state.overrides.opdrachten[encActie(a.id)], r = opdrachtVan(a);
+    if (d && (d.status === 'goedgekeurd' || d.status === 'ingetrokken')) return { status: d.status, wacht: true, doc: d, reg: r };
+    return r && OPDRACHT_LABEL[r.status] ? { status: r.status, wacht: false, reg: r } : null;
+  }
+  const opdrachtLabel = (o) => o.status === 'goedgekeurd' ? (o.wacht ? 'Goedgekeurd, wacht op sync' : 'Goedgekeurd, wacht op Uitvoerder') : OPDRACHT_LABEL[o.status];
+  const isLopend = (o) => !!o && (o.status === 'goedgekeurd' || o.status === 'bezig');
+  const kanGoedkeuren = () => ACTIES.filter(a => telt(a) && !afgevinkt(a) && kanClaude(a) && !isLopend(opdrachtInfo(a)));
+
+  function openClaude(a) {
+    openDialoog(kanClaude(a) || opdrachtInfo(a) ? 'Laat Claude dit doen' : 'Claude en deze actie', () => {
+      const u = a.uitvoerbaar, o = opdrachtInfo(a);
+      const delen = [actieKop(a)];
+      if (o) delen.push(opdrachtStatusBlok(a, o));
+      if (kanClaude(a) && !isLopend(o) && !(o && o.status === 'klaar')) delen.push(goedkeurBlok(a, o));
+      else if (!u) delen.push(inschattingBlok(a));
+      else if (u.claude === 'nee') delen.push(el('section', { class: 'dlg-sectie' }, el('h3', { text: 'Kan Claude dit?' }),
+        el('p', { class: 'klein-tekst', text: 'Nee, volgens de Actiecontrole' + (u.beoordeeld ? ' (' + datumKort(u.beoordeeld) + ')' : '') + '.' + (u.wat_jij_doet ? ' Wat jij doet: ' + u.wat_jij_doet : '') })));
+      const vb = vraagBlok('a-' + encActie(a.id), () => actieContext(a), { noteId: a.bronType === 'notitie' ? a.notitie.id : null });
+      if (vb) delen.push(el('section', { class: 'dlg-sectie' }, el('h3', { text: 'Vraag Claude over deze actie' }), vb));
+      return delen;
+    }, terugSel('data-actie-id', a.id));
+  }
+  function goedkeurBlok(a, o) {
+    const u = a.uitvoerbaar;
+    const sec = el('section', { class: 'dlg-sectie' }, el('h3', { text: u.claude === 'ja' ? 'Claude kan dit doen' : 'Claude kan een deel doen' }),
+      el('dl', { class: 'uitleg-dl' },
+        rij('Wat Claude doet', u.wat_claude_doet || 'Een concept of voorbereiding voor deze actie.'),
+        rij('Wat jij daarna doet', u.wat_jij_doet || 'Het resultaat nakijken en zelf live zetten of versturen.'),
+        rij('Wat Claude nooit doet', GRENS),
+        rij('Wanneer', WANNEER),
+        rij('Waar komt het resultaat', WAAR)));
+    if (!state.writable) { sec.append(alleenLezen()); return sec; }
+    const extra = el('textarea', { id: 'dlg-extra', maxlength: '1000', placeholder: 'Bijvoorbeeld: houd de meta onder 155 tekens, of gebruik de padel-invalshoek.' });
+    const melding = melder(), knop = opslaanKnop(o && o.status !== 'ingetrokken' ? 'Opnieuw goedkeuren' : 'Goedkeuren');
+    sec.append(el('form', { class: 'invoer', novalidate: true, onsubmit: async (e) => {
+      e.preventDefault(); melding.textContent = '';
+      const naam = dlgNaam(melding); if (!naam) return;
+      const doc = { actionId: a.id, titel: knip(stripMd(a.tekst), 200), toelichting: extra.value.trim(), status: 'goedgekeurd', naam, ts: nu() };
+      if (await schrijf('opdrachten/' + encActie(a.id), doc, melding, knop)) klaar('Goedgekeurd. Om 05:00 gaat het naar de vault, om 06:15 voert de Uitvoerder het uit.');
+    } },
+      el('label', { class: 'veld' }, el('span', { text: 'Extra instructie (optioneel)' }), extra),
+      naamVeld(),
+      el('div', { class: 'knoppen' }, knop),
+      melding));
+    return sec;
+  }
+  function opdrachtStatusBlok(a, o) {
+    const r = o.reg || {}, res = r.resultaat && typeof r.resultaat === 'object' ? r.resultaat : {};
+    const toel = (o.wacht ? o.doc.toelichting : r.toelichting) || '';
+    let uitleg;
+    if (o.status === 'goedgekeurd') uitleg = o.wacht ? `Goedgekeurd door ${o.doc.naam || 'onbekend'} op ${tsKort(o.doc.ts)}. Nog niet in de vault: de Actiecontrole neemt het om 05:00 mee, daarna voert de Uitvoerder het om 06:15 uit.`
+      : `Goedgekeurd door ${r.goedgekeurd_door || 'onbekend'}${r.goedgekeurd_ts ? ' op ' + tsKort(r.goedgekeurd_ts) : ''}. De Uitvoerder pakt het op bij zijn volgende run (06:15).`;
+    else if (o.status === 'ingetrokken') uitleg = `Ingetrokken door ${o.doc.naam || 'onbekend'} op ${tsKort(o.doc.ts)}. Gaat bij de volgende sync naar de vault.`;
+    else if (o.status === 'bezig') uitleg = 'Claude is ermee bezig' + (r.bijgewerkt ? ' (bijgewerkt ' + tijdNL(r.bijgewerkt) + ')' : '') + '.';
+    else uitleg = (res.samenvatting || (o.status === 'klaar' ? 'Klaar.' : o.status === 'mislukt' ? 'Het lukte de Uitvoerder niet.' : 'De Uitvoerder heeft deze opdracht geweigerd.')) + (r.bijgewerkt ? ' (' + tijdNL(r.bijgewerkt) + ')' : '');
+    const links = veiligeLinks(res);
+    const sec = el('section', { class: 'dlg-sectie' }, el('h3', { text: 'Opdracht' }),
+      el('div', { class: 'knoppen' }, el('span', { class: 'chip chip--claude', text: opdrachtLabel(o) })),
+      el('p', { class: 'klein-tekst', style: 'color:var(--ink-2)', text: uitleg }),
+      links.length ? el('p', { class: 'klein-tekst' }, 'Resultaat: ', links.map((l, i) => [i ? ', ' : '', el('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label || 'Bekijk' })])) : null,
+      res.voor_mens ? el('p', { class: 'klein-tekst', style: 'color:var(--ink)' }, el('b', { text: 'Wat jij nog doet: ' }), res.voor_mens) : null,
+      toel ? el('p', { class: 'klein-tekst', text: 'Extra instructie: ' + toel }) : null);
+    if (o.status === 'goedgekeurd' && state.writable) {
+      const melding = melder();
+      const knop = el('button', { type: 'button', class: 'knop2', text: 'Intrekken', onclick: async () => {
+        const naam = dlgNaam(melding); if (!naam) return;
+        const pad = 'opdrachten/' + encActie(a.id);
+        // Al in de vault goedgekeurd: intrekking moet mee naar de vault; anders is weghalen genoeg
+        const inVault = r.status === 'goedgekeurd';
+        const ok = inVault ? await schrijf(pad, { actionId: a.id, titel: r.titel || knip(stripMd(a.tekst), 200), toelichting: r.toelichting || '', status: 'ingetrokken', naam, ts: nu() }, melding, knop) : await schrijf(pad, null, melding, knop);
+        if (ok) klaar(inVault ? 'Ingetrokken. Gaat bij de volgende sync (05:00) naar de vault.' : 'Goedkeuring ingetrokken.');
+      } });
+      sec.append(naamVeld() || '', el('div', { class: 'knoppen' }, knop, el('span', { class: 'klein-tekst', text: 'Kan zolang de Uitvoerder er nog niet mee bezig is.' })), melding);
+    }
+    return sec;
+  }
+  // Zonder beoordeling: snelle inschatting via de eigen Claude van de kijker, niets opslaan
+  function inschattingBlok(a) {
+    const sec = el('section', { class: 'dlg-sectie' }, el('h3', { text: 'Kan Claude dit?' }),
+      el('p', { class: 'klein-tekst', text: 'De Actiecontrole heeft deze actie nog niet beoordeeld; dat doet hij bij een van zijn ochtendruns. Pas daarna kun je Claude een opdracht geven.' }));
+    if (!state.sample) return sec;
+    const uit = el('div', { class: 'antwoord', 'aria-live': 'polite', hidden: true });
+    const knop = el('button', { type: 'button', class: 'knop2', text: 'Vraag een snelle inschatting', onclick: async () => {
+      knop.disabled = true; uit.hidden = false; uit.textContent = ''; uit.classList.add('bezig');
+      try {
+        const j = await state.sample.json(`Beoordeel of Claude deze actie voor HÏ Grip (performance-gripsokken, Nederland) kan uitvoeren.
+Grenzen: Claude mag concepten maken (tekst, meta's, code in een Shopify-testthema, e-mailconcepten, onderzoek, bestanden in de vault), maar nooit iets live zetten, niets versturen en geen prijzen, kortingen, voorraad, bestellingen of checkout wijzigen. Live zetten of versturen is altijd werk voor een mens.
+Antwoord met alleen JSON in het Nederlands: {"claude":"ja"|"deels"|"nee","wat_claude_doet":"max 25 woorden","wat_jij_doet":"max 25 woorden"}
+
+${actieContext(a).slice(0, 3000)}`, { modelTier: 'quick' });
+        const oordeel = { ja: 'Waarschijnlijk wel', deels: 'Waarschijnlijk deels', nee: 'Waarschijnlijk niet' }[j && j.claude] || 'Onduidelijk';
+        uit.textContent = `${oordeel}.` + (j && j.wat_claude_doet ? `\nClaude: ${j.wat_claude_doet}` : '') + (j && j.wat_jij_doet ? `\nJij: ${j.wat_jij_doet}` : '');
+      } catch (e) { uit.textContent = sampleFout(e); }
+      uit.classList.remove('bezig'); knop.disabled = false;
+    } });
+    sec.append(el('div', { class: 'knoppen' }, knop), uit,
+      el('p', { class: 'klein-tekst', text: 'Een inschatting van je eigen Claude, niet opgeslagen en niet bindend. Gaat van je eigen Claude-gebruik.' }));
+    return sec;
+  }
+
+  // ── Vraag Claude (capability sample, op het eigen gebruik van de kijker) ──
+  const VASTE_VRAGEN = ['Leg dit uit in 3 zinnen', 'Maak een concreet voorstel', 'Wat is de snelste eerste stap?'];
+  const SAMPLE_UIT = new Set(['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed']);
+  const KNIP_CTX = 4000;
+  function sampleFout(e) {
+    const c = e && e.code;
+    if (SAMPLE_UIT.has(c)) { state.sample = null; herrender(); return 'Vragen aan Claude kan niet in deze weergave: niet toegestaan of niet beschikbaar.'; }
+    return ({ rate_limited: 'Je Claude-gebruik zit even aan zijn limiet. Probeer het later nog eens.', session_expired: 'Je sessie is verlopen. Log opnieuw in bij claude.ai.',
+      refused: 'Claude beantwoordt deze vraag niet. Stel hem anders.', prompt_too_large: 'Te veel tekst voor één vraag. Maak hem korter.',
+      empty_completion: 'Claude gaf geen antwoord. Stel de vraag anders.', invalid_json: 'De inschatting kwam niet goed terug. Probeer het nog eens.' })[c] || 'Het antwoord kwam niet door. Probeer het nog eens.';
+  }
+  function notitieContext(n) {
+    const open = n.acties.map(a => actieById[a.id]).filter(a => a && !isDubbel(a) && !afgevinkt(a)).slice(0, 12).map(a => `- ${a.prioriteit} ${stripMd(a.tekst)}`).join('\n');
+    return `Onderzoek: ${n._naam}: ${n._kern}\nDatum: ${n.datum}\nSamenvatting: ${n.samenvatting || ''}\n` + (open ? `Open acties:\n${open}\n` : '') + `\nTekst:\n${String(n.body_md || '').slice(0, KNIP_CTX)}`;
+  }
+  const backlogContext = (b) => `Backlog-actie (${b.prioriteit}): ${stripMd(b.kop)}\n` + Object.entries(b.velden).map(([k, v]) => `${k}: ${stripMd(v)}`).join('\n') + `\n\nDetails:\n${String(b.body_md || '').slice(0, KNIP_CTX)}`;
+  function actieContext(a) {
+    const u = a.uitvoerbaar;
+    const t = `Actie (${a.prioriteit}): ${stripMd(a.tekst)}\n` + (u ? `Volgens de Actiecontrole kan Claude: ${u.claude}. Claude doet: ${u.wat_claude_doet || '-'}. Een mens doet: ${u.wat_jij_doet || '-'}.\n` : '');
+    if (a.bronType === 'backlog') return t + '\n' + backlogContext(a.backlog).slice(0, KNIP_CTX);
+    return t + `\nUit onderzoek ${a.notitie._naam}: ${a.notitie._kern}\nSamenvatting: ${a.notitie.samenvatting || ''}\n\n${String(a.notitie.body_md || '').slice(0, 3000)}`;
+  }
+  // Het blok wordt bij elke render opnieuw gebouwd; de vraag, het antwoord en de stopknop leven in state.vraag
+  function vraagBlok(key, ctxFn, opts) {
+    if (!state.sample) return null;
+    const s = state.vraag[key] || (state.vraag[key] = { tekst: '', vraag: '', bezig: false, fout: '', concept: '' });
+    s.ctxFn = ctxFn; s.opts = opts || {};
+    const vrij = el('input', { type: 'text', id: 'vc-in-' + key, maxlength: '300', placeholder: 'Of stel je eigen vraag', 'aria-label': 'Eigen vraag aan Claude', oninput: (e) => { s.concept = e.target.value; } });
+    vrij.value = s.concept;
+    const blok = el('div', { class: 'vraag', id: 'vc-blok-' + key },
+      el('div', { class: 'vraag-knoppen', role: 'group', 'aria-label': 'Vaste vragen aan Claude' }, VASTE_VRAGEN.map(v => el('button', { type: 'button', class: 'knop2 knop2--klein', 'data-vraag': '', onclick: () => vraag(key, v, true), text: v }))),
+      el('form', { class: 'vraag-vrij', onsubmit: (e) => { e.preventDefault(); const t = vrij.value.trim(); if (t) vraag(key, t, false); } }, vrij, el('button', { type: 'submit', class: 'knop2 knop2--klein', 'data-vraag': '', text: 'Vraag' })),
+      el('div', { class: 'antwoord', 'data-rol': 'uit', 'aria-live': 'polite' }),
+      el('div', { class: 'knoppen' },
+        el('span', { class: 'klein-tekst', 'data-rol': 'st' }),
+        el('button', { type: 'button', class: 'knop2 knop2--klein', 'data-rol': 'stop', onclick: () => { if (s.ctl) s.ctl.abort(); }, text: 'Stop' }),
+        el('button', { type: 'button', class: 'knop2 knop2--klein', 'data-rol': 'bewaar', onclick: (e) => bewaarAntwoord(key, e.currentTarget), text: 'Bewaar als aantekening' })),
+      el('p', { class: 'klein-tekst', text: 'Gaat van je eigen Claude-gebruik. Claude ziet alleen de titel, samenvatting en tekst van deze pagina (tot 4.000 tekens) en onthoudt niets. Bewaren doe je zelf.' }));
+    werkBij(key, blok);
+    return blok;
+  }
+  function werkBij(key, root) {
+    const s = state.vraag[key]; root = root || $('vc-blok-' + key);
+    if (!s || !root) return;
+    const q = (r) => root.querySelector(`[data-rol="${r}"]`);
+    const uit = q('uit');
+    uit.hidden = !s.tekst && !s.bezig; uit.classList.toggle('bezig', s.bezig); uit.textContent = s.tekst;
+    q('st').textContent = s.bezig ? (s.tekst ? 'Claude schrijft…' : 'Wacht op Claude…') : s.fout || (s.vraag ? 'Vraag: ' + s.vraag : '');
+    q('stop').hidden = !s.bezig;
+    q('bewaar').hidden = !(s.tekst && !s.bezig && s.opts.noteId && state.writable && s.bewaard !== s.tekst);
+    root.querySelectorAll('[data-vraag]').forEach(b => { b.disabled = s.bezig; });
+  }
+  async function vraag(key, tekst, vast) {
+    const s = state.vraag[key];
+    if (!s || s.bezig || !state.sample) return;
+    s.ctl = new AbortController(); s.bezig = true; s.tekst = ''; s.fout = ''; s.vraag = tekst;
+    werkBij(key);
+    const prompt = 'Je helpt het team van HÏ Grip (performance-gripsokken, Nederland) met hun research-dashboard. Antwoord in het Nederlands, direct en informeel (je/jij), zonder inleiding, in platte tekst zonder markdown. Gebruik alleen de context hieronder, verzin geen cijfers en zeg het als iets ontbreekt.\n\n'
+      + `Vraag: ${tekst}\n\nContext:\n${s.ctxFn()}`;
+    try {
+      const r = await state.sample(prompt, { modelTier: 'quick', signal: s.ctl.signal, cache: vast, onText: ({ text }) => { s.tekst = text; werkBij(key); } });
+      s.tekst = r.text;
+      if (r.truncated) s.fout = 'Het antwoord is afgekapt. Vraag om minder tegelijk.';
+    } catch (e) {
+      s.tekst = e && e.code === 'refused' ? '' : (e && e.text) || '';
+      s.fout = e && e.code === 'cancelled' ? 'Gestopt.' : sampleFout(e);
+    }
+    s.bezig = false; s.ctl = null;
+    werkBij(key);
+  }
+  async function bewaarAntwoord(key, knop) {
+    const s = state.vraag[key], noteId = s && s.opts.noteId;
+    if (!noteId || !s.tekst) return;
+    const naam = naamBekend();
+    if (!naam) { s.fout = 'Vul eerst je naam in (onderaan het menu) en bewaar dan opnieuw.'; werkBij(key); return; }
+    const root = $('vc-blok-' + key), st = root && root.querySelector('[data-rol="st"]');
+    // vault-aantekeningen zijn één regel
+    const tekst = `Claude over "${s.vraag}": ${s.tekst}`.replace(/\s*\n+\s*/g, ' ').slice(0, 2000);
+    if (await schrijf(`aantekeningen/${noteId}_${Date.now()}`, { noteId, naam, ts: nu(), tekst }, st, knop)) {
+      s.bewaard = s.tekst; s.fout = 'Bewaard als aantekening.'; werkBij(key);
+      toast(SYNC_TEKST);
+    }
+  }
+
+  // ── Shopify live (capability mcp, alleen totalen) ──
+  const SHOP_QUERY = 'FROM sales SHOW orders, total_sales TIMESERIES day SINCE -6d UNTIL today';
+  const MCP_UIT = new Set(['not_granted', 'capability_disabled', 'capability_removed']);
+  const KOPPEL_HOE = 'claude.ai → Instellingen → Connectors → Shopify';
+  // Het resultaat kan als payload, structuredContent of JSON-tekst in content binnenkomen
+  function shopTabel(res) {
+    const kandidaten = [];
+    if (res && typeof res === 'object') {
+      kandidaten.push(res.payload, res.structuredContent, res);
+      (Array.isArray(res.content) ? res.content : []).forEach(b => { if (b && b.type === 'text') kandidaten.push(b.text); });
+    }
+    for (let c of kandidaten) {
+      if (typeof c === 'string') { try { c = JSON.parse(c); } catch (e) { continue; } }
+      if (c && Array.isArray(c.rows) && Array.isArray(c.columns)) return c;
+    }
+    return null;
+  }
+  async function laadShop(ververs) {
+    if (!state.mcp || state.shop.status === 'laden') return;
+    state.shop = Object.assign({}, state.shop, { status: 'laden' });
+    if (ververs) herrender();
+    try {
+      const res = await state.mcp.callTool('Shopify', 'run-analytics-query', { query: SHOP_QUERY }, ververs ? { cache: { refresh: true } } : undefined);
+      const t = shopTabel(res);
+      const kol = t ? t.columns.map(c => String(c && typeof c === 'object' ? c.name : c).toLowerCase()) : [];
+      const iDag = kol.findIndex(c => c === 'day' || c === 'date'), iOrd = kol.indexOf('orders'), iOmz = kol.indexOf('total_sales');
+      if (!t || iDag < 0 || iOrd < 0 || iOmz < 0) throw { code: 'vorm' };
+      const rijen = t.rows.filter(Array.isArray).map(r => ({ dag: String(r[iDag]).slice(0, 10), orders: num(r[iOrd]) || 0, omzet: num(r[iOmz]) || 0 }));
+      const som = (lijst, veld) => lijst.reduce((x, r) => x + r[veld], 0);
+      const vandaag = rijen.filter(r => r.dag === VANDAAG);
+      state.shop = { status: 'ok', ts: res && res.cache && res.cache.storedAt ? res.cache.storedAt : Date.now(),
+        vandaag: { orders: som(vandaag, 'orders'), omzet: som(vandaag, 'omzet') }, week: { orders: som(rijen, 'orders'), omzet: som(rijen, 'omzet') } };
+    } catch (e) {
+      const code = (e && e.code) || 'onbekend';
+      if (MCP_UIT.has(code)) state.mcp = null;
+      state.shop = { status: 'fout', code };
+    }
+    herrender();
+  }
+  function shopFout(code) {
+    return ({
+      server_not_connected: ['Shopify is niet gekoppeld in jouw claude.ai.', `Koppel hem via ${KOPPEL_HOE}.`],
+      server_not_found: ['De Shopify-koppeling bestaat niet meer.', `Koppel hem opnieuw via ${KOPPEL_HOE}.`],
+      selection_required: ['Je hebt meer dan één Shopify-koppeling.', 'Kies er één in de melding van claude.ai en klik op Ververs live.'],
+      needs_reauth: ['Je Shopify-koppeling is verlopen.', `Koppel opnieuw via ${KOPPEL_HOE}.`],
+      not_in_manifest: ['Je hebt Shopify voor dit dashboard niet toegestaan.', 'Herlaad de pagina; claude.ai vraagt het dan opnieuw.'],
+      blocked_by_policy: ['Je organisatie blokkeert deze Shopify-tool.', ''],
+      approval_required: ['Je organisatie wil elke Shopify-vraag apart goedkeuren; dat kan nog niet in een dashboard.', ''],
+      server_unavailable: ['Shopify reageert even niet.', 'Probeer het zo opnieuw met Ververs live.'],
+      tool_error: ['Shopify gaf een fout terug.', 'Probeer het later opnieuw met Ververs live.'],
+      vorm: ['Het antwoord van Shopify had een onverwachte vorm.', 'De cijfers hieronder uit de vault kloppen wel.'],
+    })[code] || ['Live cijfers ophalen lukte niet.', 'Probeer het later opnieuw met Ververs live.'];
+  }
+  function shopLiveBlok() {
+    const S = state.shop;
+    const tijd = S.status === 'ok' ? uurVan(new Date(S.ts).toISOString()) : '';
+    const bron = el('span', { class: 'k-bron', text: 'Shopify live, ' + tijd });
+    const knop = state.mcp ? el('button', { type: 'button', class: 'knop2 knop2--klein', disabled: S.status === 'laden', onclick: () => laadShop(true), text: S.status === 'laden' ? 'Bezig…' : 'Ververs live' }) : null;
+    let inhoud;
+    if (!state.mcp) inhoud = el('p', { class: 'uitleg-leeg' }, 'Live cijfers werken alleen in claude.ai, met je eigen Shopify-koppeling. Hieronder staat de stand van de laatste build. ', el('a', { href: '#koppelingen', text: 'Koppelingen' }));
+    else if (S.status === 'fout') { const [a, b] = shopFout(S.code); inhoud = el('p', { class: 'uitleg-leeg' }, a + ' ' + (b ? b + ' ' : ''), el('a', { href: '#koppelingen', text: 'Koppelingen' })); }
+    else if (S.status === 'ok') inhoud = el('div', { class: 'strook live-strook' },
+      el('div', { class: 'kpi' }, el('span', { class: 'k-label', text: 'Omzet vandaag' }), el('b', { class: 'num', text: eur(S.vandaag.omzet) }), bron.cloneNode(true)),
+      el('div', { class: 'kpi' }, el('span', { class: 'k-label', text: 'Orders vandaag' }), el('b', { class: 'num', text: getal(S.vandaag.orders) }), bron.cloneNode(true)),
+      el('div', { class: 'kpi' }, el('span', { class: 'k-label', text: 'Laatste 7 dagen' }), el('b', { class: 'num', text: eur(S.week.omzet) }), el('span', { class: 'k-sub', text: getal(S.week.orders) + (S.week.orders === 1 ? ' order' : ' orders') + ', incl. vandaag' }), bron));
+    else inhoud = el('p', { class: 'uitleg-leeg', role: 'status', text: 'Live cijfers worden opgehaald. De eerste keer vraagt claude.ai of dit dashboard Shopify mag lezen.' });
+    return rise(el('section', { class: 'sectie' },
+      blokTitel('Shopify live', el('span', { class: 'knoppen' }, S.status === 'ok' ? el('span', { class: 'tel num', text: 'om ' + tijd }) : null, knop)),
+      inhoud,
+      el('p', { class: 'klein-tekst', text: 'Omzet is de totale verkoop volgens Shopify. Alleen totalen, opgehaald met jouw eigen Shopify-koppeling als je deze pagina opent of op Ververs live klikt. Nooit klantgegevens.' })));
+  }
+
+  // ── Koppelingen: wat werkt in deze weergave ──
+  async function laadMcpLijst() {
+    if (!state.mcp || state.mcpLijst) return;
+    state.mcpLijst = { status: 'laden' };
+    try {
+      const r = await state.mcp.listTools('Shopify');
+      const s = (r && Array.isArray(r.servers) ? r.servers : []).find(x => x && x.server === 'Shopify');
+      state.mcpLijst = { status: 'ok', shopify: !s ? 'afwezig' : !(s.tools && s.tools.length) ? 'kiezen' : s.authStatus };
+    } catch (e) {
+      if (MCP_UIT.has(e && e.code)) state.mcp = null;
+      state.mcpLijst = { status: 'fout', code: e && e.code };
+    }
+    herrender();
+  }
+  function weergaveBlok() {
+    const L = state.mcpLijst;
+    let shop;
+    if (!state.mcp) shop = ['niet_gekoppeld', 'Niet in deze weergave', 'Live koppelingen werken alleen als je het dashboard in claude.ai opent.', ''];
+    else if (!L || L.status === 'laden') shop = ['onbekend', 'Wordt gecontroleerd', 'Even geduld.', ''];
+    else if (L.status === 'fout') shop = ['fout', 'Fout', 'De status kon niet worden opgehaald (' + (L.code || 'onbekend') + ').', 'Herlaad de pagina.'];
+    else shop = ({
+      connected: ['ok', 'Werkt', 'Gekoppeld in jouw claude.ai. Live cijfers staan bovenaan Cijfers.', ''],
+      needs_reauth: ['fout', 'Opnieuw koppelen', 'Je Shopify-koppeling is verlopen.', `Koppel opnieuw via ${KOPPEL_HOE}.`],
+      afwezig: ['niet_gekoppeld', 'Niet gekoppeld', 'Je hebt Shopify niet gekoppeld in claude.ai.', `${KOPPEL_HOE} koppelen.`],
+      kiezen: ['niet_gekoppeld', 'Kies een koppeling', 'Je hebt meer dan één Shopify-koppeling en nog niet gekozen welke.', 'Kies er één in de melding van claude.ai op de pagina Cijfers.'],
+    })[L.shopify] || ['onbekend', 'Nog niet gevraagd', 'claude.ai vraagt om toestemming zodra je Cijfers opent.', ''];
+    const regel = (naam, soort, [st, label, detail, hoe]) => el('div', { class: 'bron-rij' },
+      el('h3', null, naam, el('small', { text: soort })), el('span', { class: 'stat stat--' + st, text: label }),
+      el('p', { text: detail }), hoe ? el('p', { class: 'hoe' }, el('b', { text: 'Hoe: ' }), hoe) : null);
+    return rise(el('section', { class: 'sectie' }, blokTitel('In jouw weergave', el('span', { class: 'tel', text: 'per persoon, live gecontroleerd' })),
+      el('div', { class: 'lijst' },
+        regel('Shopify live', 'Connector', shop),
+        regel('Vraag Claude', 'Eigen Claude', state.sample ? ['ok', 'Werkt', 'Knoppen staan op elke onderzoeks- en backlogpagina en bij Laat Claude dit doen. Gaat van je eigen Claude-gebruik.', ''] : ['niet_gekoppeld', 'Niet beschikbaar', 'Vragen aan Claude werkt alleen als je het dashboard in claude.ai opent en het toestaat.', '']),
+        regel('Bewerken', 'Gedeelde opslag', state.writable ? ['ok', 'Werkt', 'Afvinken, beheren, goedkeuren en nieuwe acties gaan om 05:00 naar de vault.', ''] : ['niet_gekoppeld', 'Alleen lezen', state.readOnlyReason || 'Alleen lezen.', '']))));
+  }
+
+  // ── Pagina: Wat Claude voor je kan doen ──
+  function opdrachtRij({ a, o }) {
+    const r = o.reg || {}, res = r.resultaat && typeof r.resultaat === 'object' ? r.resultaat : {};
+    const titel = knip(stripMd(a ? a.tekst : r.titel || r.actie_id || 'Opdracht'), 110);
+    const wanneer = o.wacht ? `${o.doc.naam || 'onbekend'} · ${tsKort(o.doc.ts)}` : r.bijgewerkt ? 'bijgewerkt ' + tijdNL(r.bijgewerkt) : '';
+    const links = veiligeLinks(res);
+    return el('li', { class: 'opdr' },
+      el('div', { class: 'opdr-kop' }, a ? el('a', { href: actieHref(a), text: titel }) : el('b', { text: titel }), el('span', { class: 'chip chip--claude', text: opdrachtLabel(o) })),
+      res.samenvatting ? el('p', { text: res.samenvatting }) : null,
+      links.length ? el('p', null, 'Resultaat: ', links.map((l, i) => [i ? ', ' : '', el('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label || 'Bekijk' })])) : null,
+      res.voor_mens ? el('p', null, el('b', { text: 'Wat jij nog doet: ' }), res.voor_mens) : null,
+      el('div', { class: 'todo-meta' }, wanneer ? el('span', { class: 'num', text: wanneer }) : null, o.wacht ? el('span', { class: 'chip chip--sync', text: 'nog niet in vault' }) : null,
+        a ? el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-haspopup': 'dialog', onclick: () => openClaude(a), text: 'Details' }) : null));
+  }
+  function paginaClaude(p) {
+    p.append(kop({ eyebrow: 'Goedkeuren en laten uitvoeren', titel: 'Wat Claude voor je kan doen', tekst: 'Claude maakt concepten, onderzoek en voorbereidingen voor acties die jij goedkeurt. Live zetten en versturen doe je altijd zelf.' }));
+    p.append(rise(el('section', { class: 'route-uitleg' },
+      el('div', { class: 'panel' }, el('h2', { text: 'Zo werkt goedkeuren' }), el('ol', { class: 'stappen' },
+        el('li', { text: 'De Actiecontrole beoordeelt elke open actie één keer: kan Claude dit helemaal, deels of niet? Dat zie je als chip bij de actie.' }),
+        el('li', { text: 'Jij klikt op Laat Claude dit doen, leest wat Claude wel en niet doet, geeft eventueel een extra instructie en keurt goed.' }),
+        el('li', { text: 'Elke ochtend om 05:00 neemt de Actiecontrole je goedkeuring mee naar de vault. Tot de Uitvoerder begint, kun je hem intrekken.' }),
+        el('li', { text: 'Om 06:15 voert de Uitvoerder de opdracht uit. Het resultaat komt terug bij de actie en hieronder: een samenvatting, links naar de concepten en wat jij nog doet.' }))),
+      el('div', { class: 'panel' }, el('h2', { text: 'Grenzen' }), el('dl', { class: 'uitleg-dl' },
+        rij('Claude mag', 'Teksten, meta\'s, e-mailconcepten, code in het testthema, onderzoek en bestanden in de vault maken.'),
+        rij('Claude doet nooit', 'Iets live zetten, versturen of publiceren. Prijzen, kortingen, voorraad, bestellingen of de checkout aanpassen.'),
+        rij('Altijd bij jou', 'Nakijken, live zetten en versturen. Dat staat bij elke opdracht onder Wat jij nog doet.'),
+        rij('Kosten', 'De Uitvoerder draait op het Claude-account van info@higrip.nl. Vraag Claude op het dashboard gaat van je eigen Claude-gebruik.'))))));
+
+    const perActie = new Map();
+    ACTIES.forEach(a => { const o = opdrachtInfo(a); if (o && o.status !== 'ingetrokken') perActie.set(a.id, { a, o }); });
+    R.opdrachten.forEach(r => { if (!actieById[r.actie_id] && OPDRACHT_LABEL[r.status]) perActie.set('los:' + (r.id || r.actie_id), { a: null, o: { status: r.status, wacht: false, reg: r } }); });
+    const alle = [...perActie.values()];
+    const lopend = alle.filter(x => isLopend(x.o));
+    const af = alle.filter(x => !isLopend(x.o)).sort((x, y) => String((y.o.reg || {}).bijgewerkt || '').localeCompare(String((x.o.reg || {}).bijgewerkt || '')));
+    const kan = kanGoedkeuren().sort(actieSortering);
+    const tel = (n, een, meer) => el('span', { class: 'tel num', text: n + ' ' + (n === 1 ? een : meer) });
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Loopt nu', tel(lopend.length, 'opdracht', 'opdrachten')),
+      lopend.length ? el('ul', { class: 'lijst' }, lopend.map(opdrachtRij)) : el('p', { class: 'uitleg-leeg', text: 'Geen lopende opdrachten. Keur hieronder een actie goed om Claude aan het werk te zetten.' }))));
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Klaar voor jouw goedkeuring', tel(kan.length, 'actie', 'acties')),
+      el('div', { class: 'melding', id: 'check-melding', role: 'status' }),
+      kan.length ? el('ul', { class: 'todo' }, kan.map(a => actieRij(a, { waarom: true, claudeKnop: true })))
+        : el('p', { class: 'uitleg-leeg', text: 'Nog geen acties waarvan de Actiecontrole zegt dat Claude ze kan doen. Hij beoordeelt elke open actie één keer, tijdens zijn ochtendrun om 05:00.' }))));
+    p.append(rise(el('section', { class: 'sectie' }, blokTitel('Afgerond', tel(af.length, 'opdracht', 'opdrachten')),
+      af.length ? el('ul', { class: 'lijst' }, af.slice(0, 20).map(opdrachtRij)) : el('p', { class: 'uitleg-leeg', text: 'Nog geen afgeronde opdrachten.' }))));
+    return 'Claude';
+  }
+
   // ── Verbinding: register eerst tonen, daarna de db erbij ──────────────────
   let rerenderGepland = false;
   function herrender() {
@@ -1407,7 +2852,14 @@
       const actief = document.activeElement;
       const actiefId = actief && actief.id;
       const sel = actief && typeof actief.selectionStart === 'number' ? [actief.selectionStart, actief.selectionEnd] : null;
+      // knop zonder id in een actie- of kansrij: na de render dezelfde knop terugzoeken, anders het werkvlak
+      const haak = !actiefId && actief && actief.closest ? actief.closest('[data-actie-id],[data-kans-id]') : null;
+      const haakSel = haak ? (haak.dataset.actieId != null ? `[data-actie-id="${CSS.escape(haak.dataset.actieId)}"] button` : `[data-kans-id="${CSS.escape(haak.dataset.kansId)}"] button`) : null;
       render(true);
+      if (actief && !actief.isConnected && !DLG.open && document.activeElement === document.body) {
+        const n = (haakSel && document.querySelector(haakSel)) || $('werk');
+        if (n) n.focus({ preventScroll: true });
+      }
       if (actiefId && $(actiefId)) { const nieuw = $(actiefId); nieuw.focus({ preventScroll: true }); if (sel && nieuw.setSelectionRange) try { nieuw.setSelectionRange(sel[0], sel[1]); } catch (e) { /* geen tekstveld */ } }
     });
   }
@@ -1419,6 +2871,9 @@
   }
   async function verbind() {
     if (!window.claude || typeof window.claude.use !== 'function') { zetAlleenLezen('Alleen lezen: lokale weergave zonder gedeelde opslag.'); return; }
+    // sample en mcp los van de db: niets aanroepen, alleen de knoppen aanzetten
+    window.claude.use('sample').then(f => { if (typeof f === 'function') { state.sample = f; herrender(); } }).catch(() => {});
+    window.claude.use('mcp').then(m => { if (m) { state.mcp = m; herrender(); } }).catch(() => {});
     const db = await window.claude.use('db');
     if (!db) { zetAlleenLezen(); return; }
     state.db = db;
@@ -1431,17 +2886,18 @@
       $('naam-veld').hidden = false;
       $('naam').value = lezen('hi-research-naam');
     }
-    ['status', 'checks', 'aantekeningen'].forEach(luister);   // één keer per collectie, nooit in render
+    ['status', 'checks', 'aantekeningen', 'beheer', 'opdrachten', 'kansen', 'nieuwe_acties'].forEach(luister);   // één keer per collectie, nooit in render
     herrender();
   }
 
   // ── Start ─────────────────────────────────────────────────────────────────
   $('gebouwd').textContent = tijdNL(R.gebouwd);
+  if (DATA.sync && DATA.sync.laatste_sync) { $('sync-regel').hidden = false; $('sync-regel').textContent = 'Laatste sync naar vault ' + tijdNL(DATA.sync.laatste_sync); }
   $('naam').addEventListener('change', (e) => opslaan('hi-research-naam', e.target.value.trim()));
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') sluitMenu();
     const tag = (document.activeElement && document.activeElement.tagName) || '';
-    if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(tag)) {
+    if (e.key === '/' && !DLG.open && !/INPUT|TEXTAREA|SELECT/.test(tag)) {
       e.preventDefault();
       if (!$('zoek')) location.hash = 'onderzoeken';
       requestAnimationFrame(() => $('zoek') && $('zoek').focus());

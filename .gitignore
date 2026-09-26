@@ -13,3 +13,6 @@ desktop.ini
 # OneDrive-uploadmap en Python-cache
 .tmp.driveupload/
 __pycache__/
+
+# Agenda-titels kunnen klantnamen bevatten (AVG): elke run opnieuw gemaakt
+05_Research/_data/agenda.json

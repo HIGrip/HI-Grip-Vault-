@@ -1,4 +1,4 @@
-# Routine — Denzel-weekoverzicht (maandag 08:00)
+# Routine — Denzel-weekoverzicht (maandag 06:45)
 
 > Promptbestand. De routine op info@ bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md` in de vault-repo." Wijzig de werking hier.
 >
@@ -51,7 +51,7 @@ Niveau "Voorstellen, ik keur goed" (`Agent Takenverdeling & Grenzen — Content 
 - Denk vanuit marketing-psychology, social-content en content-strategy (vaste regel uit Brand Core).
 - Stel 3–5 concrete content-ideeën voor voor de komende 1–2 weken, passend bij de content pillars en de kalender (`01_Content_Agent/`). Focus op de beachhead-sporten.
 - Schrijf het als blok "Content-voorstel — Week [datum]": een nieuw bestand in `01_Content_Agent/Contentkalender/` als die map bestaat, anders in het weekoverzicht.
-- **Tigo (content-afdeling) beoordeelt** de ideeën voordat ze naar Buffer gaan (afspraak 21-09). Zet het voorstel bij de openstaande beslissingen, met "ter beoordeling door Tigo".
+- **Tigo (content-afdeling) beoordeelt** de ideeën voordat ze naar Buffer gaan (afspraak 21-09). Zet het voorstel bij de openstaande beslissingen, met "ter beoordeling door Tigo" (als actie: `- [ ] P2 · Besluit: content-voorstel week <datum> beoordelen (Tigo)`).
 
 ## 3. Website-stand (vervangt de oude live-site- en SEO-check)
 Je controleert de site niet zelf. Lees:
@@ -59,6 +59,8 @@ Je controleert de site niet zelf. Lees:
 - de nieuwste `*-seo-conversietest-run-*.md` (wat gebouwd of voorgesteld is)
 - de nieuwste `*-search-console.md` (posities en klikken), als die er al is
 - `05_Research/_backlog/CONTROLE.json` en `05_Research/_backlog/AFGEROND.md`: wat de actiecontrole de afgelopen 7 dagen als gedaan bevestigde. Dat zijn resultaten met `uitkomst: gedaan` en `sinds` in die 7 dagen, plus de regels `**Bevestigd:** … door actiecontrole` in `AFGEROND.md` (de zondagse opruiming haalt die uit `CONTROLE.json`). Rapporteer ze als "Afgevinkt door de actiecontrole deze week", met het bewijs in één regel. Open P1-punten die op `handmatig` staan, zijn werk voor een mens: noem ze bij de beslissingen voor Lars.
+
+- van de overige routines van de afgelopen 7 dagen (Klantstem, Website-UX, Concurrentie-monitor, Productradar, Materialen & productie, Backlinks & Merchant Center) alleen `## In het kort` en de acties, en van de nieuwste `*-verbanden*.md` de regels onder `## Kansen`. Noem ze in één regel per routine en verwijs naar de notitie; herhaal hun kansen en besluiten niet.
 
 Vat samen wat er speelt. Hoe lang staat elk website-punt al open? Dat haal je uit je geheugen.
 
@@ -113,7 +115,7 @@ deadline: ""
 ## Kerncijfers
 - **<waarde>** · <label> · <verschil>   (2–4 regels uit het GA4-weekrapport, alleen echte cijfers; geen cijfers = sectie weglaten)
 ## Acties
-- [ ] P1 · …   (elke openstaande beslissing voor Lars als één regel; niets overnemen uit de actiebacklog)
+- [ ] P1 · Besluit: …   (elke openstaande beslissing voor Lars als één regel die begint met "Besluit:"; niets overnemen uit de actiebacklog. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
 ## Bevindingen
 ### Voortgang per hoofdagent
 - Content Agent: [status + content-voorstel 2c]

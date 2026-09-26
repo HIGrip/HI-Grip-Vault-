@@ -19,7 +19,7 @@ Alleen onderzoek en markdown. Nooit het Shopify-thema wijzigen, nooit iets pushe
 
 ## Stap 2 — Dagfocus
 - **Maandag:** SEO-techniek als *nieuws*: Google-updates, Core Web Vitals-ontwikkelingen, structured-data-regels, Merchant Center-eisen, Shopify-changelog. Geen eigen sitecheck.
-- **Dinsdag:** SEO-content en keywords: long-tails, landingspagina's per sport, SERP-features, wat concurrenten publiceren.
+- **Dinsdag:** SEO-content en keywords: long-tails, landingspagina's per sport, SERP-features. Wat concurrenten publiceren (pagina's, prijzen, ads) volgt de Concurrentie-monitor; lees de nieuwste `*-concurrentie.md` en herhaal die niet.
 - **Woensdag:** AI-search: AI Overviews/AI Mode, ChatGPT/Perplexity/Gemini, AEO/GEO, agentic shopping.
 - **Donderdag:** CRO: productpagina, winkelwagen, checkout, prijsweergave, trust, mobiel, A/B-resultaten uit de markt.
 - **Vrijdag:** social naar website: paid social, creatives, attributie, CAPI, funnel.

@@ -214,6 +214,31 @@
   .bol.is-af.auto::after { border-color: #fff; }
   .todo-text { display: block; font-size: 14.5px; line-height: 1.5; font-weight: 500; overflow-wrap: anywhere; cursor: default; }
   label.todo-text { cursor: pointer; }
+  .todo--compact .todo-item { padding: 11px 0; gap: 12px; }
+  .todo--compact .todo-text { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 14px; }
+  .todo--compact .todo-meta { margin-top: 4px; }
+  .controle-kort { background: var(--surface); border-radius: 14px; }
+  .controle-kort > summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding: 16px 22px; }
+  .controle-kort > summary::-webkit-details-marker { display: none; }
+  .controle-kort > summary h2 { font-size: 15px; font-weight: 600; margin-right: auto; }
+  .controle-kort .ck-getal { display: inline-flex; align-items: baseline; gap: 6px; font-size: 12px; color: var(--muted); font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
+  .controle-kort .ck-getal b { font-size: 20px; color: var(--ink); letter-spacing: 0; }
+  .controle-kort .ck-getal.ok b { color: var(--auto-ink); }
+  .controle-kort .chev { flex: none; }
+  .controle-kort[open] .chev { transform: rotate(180deg); }
+  .controle-kort > .check-panel { padding-top: 0; }
+  .nav-binnenkort > summary { list-style: none; cursor: pointer; }
+  .nav-binnenkort > summary::-webkit-details-marker { display: none; }
+  .nav-binnenkort > summary.item { color: var(--rail-muted); display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 10px; border-radius: 8px; font-size: 13px; font-weight: 500; }
+  .nav-binnenkort > summary.item:hover { background: var(--rail-hover); }
+  .tabbalk { display: none; }
+  @media (max-width: 899px) {
+    .tabbalk { display: grid; grid-template-columns: repeat(4, 1fr); position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: var(--rail); padding: 6px 6px calc(6px + env(safe-area-inset-bottom, 0px)); border-top: 1px solid var(--rail-line); }
+    .tabbalk a { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; min-height: 44px; border-radius: 10px; color: var(--rail-muted); text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: .3px; position: relative; }
+    .tabbalk a[aria-current="page"] { color: var(--rail-ink); background: rgba(255, 255, 255, 0.08); }
+    .tabbalk .tb-tel { position: absolute; top: -4px; right: calc(50% - 38px); min-width: 18px; padding: 0 5px; border-radius: 99px; background: var(--p1); color: #fff; font-size: 10px; line-height: 16px; }
+    .werk { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+  }
   .why { font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.5; overflow-wrap: anywhere; }
   .todo-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; margin-top: 6px; font-size: 12px; color: var(--muted); }
   .todo-meta a { color: var(--ink-2); text-decoration: none; font-weight: 600; }
@@ -714,6 +739,7 @@
       <b>HÏ Grip</b><span id="topbar-titel">Vandaag</span>
     </header>
     <main class="werk" id="werk" tabindex="-1"><div class="werk-in" id="pagina"></div></main>
+    <nav class="tabbalk" id="tabbalk" aria-label="Snelmenu"></nav>
   </div>
 </div>
 <div class="tip" id="tip" role="tooltip" hidden></div>
@@ -1032,14 +1058,26 @@
       navItem('vandaag', 'Vandaag'),
       navItem('acties', 'Acties', t.P1 ? t.P1 : t.P1 + t.P2 + t.P3, t.P1 ? 'tel--p1' : ''),
       navItem('kansen', 'Kansen', KANSEN.filter(k => kansStatus(k) === 'open').length || null),
-      navItem('claude', 'Claude', kanGoedkeuren().length || null),
+      navItem('claude', 'Claude kan doen', kanGoedkeuren().length || null),
       navItem('onderzoeken', 'Onderzoeken', nieuw ? nieuw + ' nieuw' : R.notities.length, nieuw ? 'tel--nieuw' : ''),
       navItem('cijfers', 'Cijfers'),
       navItem('overzicht', 'Overzicht'),
       navItem('koppelingen', 'Koppelingen', koppelProblemen() || null),
       navItem('kaart', 'Waar staat wat'),
     );
-    $('nav-reeksen').replaceChildren(...REEKSEN.map(r => { const n = inReeks(r.key).length; return navItem('reeks-' + r.key, r.naam, n, '', 'klein' + (n ? '' : ' is-leeg')); }));
+    // Hoofdnamen zonder onderzoeken samen in één ingeklapte groep: minder ruis in de zijbalk
+    const met = REEKSEN.filter(r => inReeks(r.key).length), zonder = REEKSEN.filter(r => !inReeks(r.key).length);
+    const bk = el('details', { class: 'nav-binnenkort', open: state.open.binnenkort || null, ontoggle: (e) => { state.open.binnenkort = e.currentTarget.open; } },
+      el('summary', { class: 'item klein' }, el('span', { text: 'Binnenkort' }), el('span', { class: 'tel', text: zonder.length })),
+      zonder.map(r => navItem('reeks-' + r.key, r.naam, null, '', 'klein is-leeg')));
+    $('nav-reeksen').replaceChildren(...met.map(r => navItem('reeks-' + r.key, r.naam, inReeks(r.key).length, '', 'klein')), zonder.length ? bk : '');
+    $('tabbalk').replaceChildren(
+      navItem('vandaag', 'Vandaag'),
+      navItem('acties', 'Acties'),
+      navItem('onderzoeken', 'Onderzoek'),
+      navItem('cijfers', 'Cijfers'));
+    const tb = $('tabbalk').querySelector('[data-route="acties"]');
+    if (tb && t.P1) tb.append(el('span', { class: 'tb-tel num', text: t.P1 }));
     markeerNav();
   }
   function markeerNav() {
@@ -1047,7 +1085,7 @@
     let actief = r === 'overzicht' ? 'overzicht' : r;
     if (r.startsWith('n-')) { const n = notitieById[r.slice(2)]; actief = n ? 'reeks-' + n._reeks : 'onderzoeken'; }
     if (r.startsWith('b-')) actief = 'acties';
-    document.querySelectorAll('.nav a.item').forEach(a => {
+    document.querySelectorAll('.nav a.item, .tabbalk a.item').forEach(a => {
       if (a.dataset.route === actief) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
     });
   }
@@ -1164,9 +1202,9 @@
       ? el('input', { type: 'checkbox', class: 'check' + (auto ? ' auto' : ''), id: cbId, checked: af, 'aria-label': 'Afvinken: ' + knip(stripMd(a.tekst), 120),
           onchange: (e) => { li.classList.toggle('done', e.target.checked); schrijfCheck(a, e.target); } })
       : el('span', { class: 'bol' + (af ? ' is-af' : '') + (auto ? ' auto' : ''), role: 'img', 'aria-label': af ? 'Afgevinkt' : 'Open' });
-    const tekst = el(mag ? 'label' : 'span', { class: 'todo-text', for: mag ? cbId : null, html: inlineMd(a.tekst) });
+    const tekst = el(mag ? 'label' : 'span', { class: 'todo-text', for: mag ? cbId : null, title: opts.compact ? stripMd(a.tekst) : null, html: inlineMd(a.tekst) });
     const blok = el('div', null, tekst);
-    if (opts.waarom && a.bronType === 'backlog' && a.backlog.velden.Waarom) blok.append(el('div', { class: 'why', text: knip(eersteZin(stripMd(a.backlog.velden.Waarom)), 180) }));
+    if (opts.waarom && !opts.compact && a.bronType === 'backlog' && a.backlog.velden.Waarom) blok.append(el('div', { class: 'why', text: knip(eersteZin(stripMd(a.backlog.velden.Waarom)), 180) }));
     const meta = el('div', { class: 'todo-meta' });
     if (opts.bron !== false) {
       if (a.bronType === 'backlog') meta.append(el('a', { href: '#' + backlogRoute(a.id), text: 'Backlog' }));
@@ -1175,10 +1213,10 @@
     if (a.bronType === 'notitie') {
       if (opts.bron !== false) meta.append(el('span', { class: 'num', text: datumRelatief(a.notitie.datum) }));
       if (a.notitie.deadline) meta.append(el('span', { class: 'deadline num', text: 'deadline ' + datumKort(a.notitie.deadline) }));
-    } else {
+    } else if (!opts.compact) {
       const g = a.backlog.velden['Gevonden op']; if (g) meta.append(el('span', { text: 'gevonden ' + knip(g.split(/[,(]/)[0].trim(), 24) }));
     }
-    const ci = controleInfo(a); if (ci) meta.append(ci);
+    const ci = opts.compact && !(a.controle && a.controle.uitkomst === 'dubbel') ? null : controleInfo(a); if (ci) meta.append(ci);
     const wacht = [['checks', 'afvinken'], ['beheer', 'beheer'], ['opdrachten', 'opdracht']].map(([c, l]) => [state.overrides[c][encActie(a.id)], l]).filter(x => x[0]);
     if (wacht.length) {
       const o = wacht.map(x => x[0]).sort((p, q) => String(q.ts || '').localeCompare(String(p.ts || '')))[0];
@@ -1186,7 +1224,7 @@
     }
     beheerMeta(a).forEach(x => meta.prepend(x));
     if (meta.childNodes.length) blok.append(meta);
-    if (a.controle && a.controle.uitkomst === 'gedaan' && a.controle.bewijs && opts.bewijs !== false) blok.append(el('div', { class: 'bewijs', text: 'Bewijs: ' + a.controle.bewijs }));
+    if (!opts.compact && a.controle && a.controle.uitkomst === 'gedaan' && a.controle.bewijs && opts.bewijs !== false) blok.append(el('div', { class: 'bewijs', text: 'Bewijs: ' + a.controle.bewijs }));
     if (opts.claudeKnop) blok.append(el('div', { class: 'knoppen', style: 'margin-top:8px' }, el('button', { type: 'button', class: 'knop2 knop2--klein', 'aria-haspopup': 'dialog', onclick: () => openClaude(a), text: 'Laat Claude dit doen' })));
     if (isVerborgen(a)) li.classList.add('is-verborgen');
     // .actie-menu is het haakje voor de schrijflaag (D2): leeg = onzichtbaar
@@ -1246,26 +1284,28 @@
           el('a', { href: '#onderzoeken', onclick: () => { state.lijst.status = 'nieuw'; } }, el('b', { class: 'num', 'data-count': nieuw.length, text: nieuw.length }), el('span', null, el('span', { class: 'newdot', 'aria-hidden': 'true' }), 'Nieuw')))))));
 
     p.append(cijferStrook());
-    p.append(controlePaneel());
 
-    // Eerst doen + Nieuw binnen (besluiten staan apart)
+    // Eerst doen (top 5) naast Wacht op jouw besluit: beslissingen en werk boven de vouw
     const open = openActies();
-    const p1 = open.filter(a => a.prioriteit === 'P1' && !a.besluit).sort(actieSortering);
+    const p1 = open.filter(a => a.prioriteit === 'P1' && !a.besluit).sort(focusSortering);
+    const TOP = 5;
     const links = el('div', null,
-      blokTitel('Eerst doen', el('span', { class: 'knoppen' }, nieuweActieKnop(), el('a', { href: '#acties', text: `Alle ${open.length} open acties` }))),
+      blokTitel('Eerst doen', el('span', { class: 'knoppen' }, nieuweActieKnop(), el('a', { href: '#acties', text: `Alle ${open.length} open` }))),
       el('div', { class: 'melding', id: 'check-melding', role: 'status' }),
-      nieuweActies().length ? [el('p', { class: 'label', style: 'margin:14px 0 0', text: 'Net toegevoegd, nog niet in de vault' }), el('ul', { class: 'todo' }, nieuweActies().slice(0, 5).map(nieuweActieRij))] : null,
-      p1.length ? el('ul', { class: 'todo' }, p1.slice(0, 8).map(a => actieRij(a, { waarom: true, bewijs: false }))) : el('p', { class: 'leeg', text: 'Geen open P1-acties. Kijk bij P2 wat er deze maand moet.' }),
-      p1.length > 8 ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${p1.length - 8} P1-acties` })) : null);
+      nieuweActies().length ? [el('p', { class: 'label', style: 'margin:14px 0 0', text: 'Net toegevoegd, nog niet in de vault' }), el('ul', { class: 'todo todo--compact' }, nieuweActies().slice(0, 3).map(nieuweActieRij))] : null,
+      p1.length ? el('ul', { class: 'todo todo--compact' }, p1.slice(0, TOP).map(a => actieRij(a, { compact: true }))) : el('p', { class: 'leeg', text: 'Geen open P1-acties. Kijk bij P2 wat er deze maand moet.' }),
+      p1.length > TOP ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${p1.length - TOP} P1-acties` }), ' · eerst deadlines, dan wat Claude kan voorbereiden') : null);
+    p.append(rise(el('section', { class: 'desk' }, links, besluitBlok(open))));
+
     const rechts = el('div', null,
       blokTitel('Nieuw binnen', el('a', { href: '#onderzoeken', onclick: () => { state.lijst.status = 'nieuw'; }, text: `Alle ${nieuw.length} nieuw` })),
       nieuw.length ? el('ul', { class: 'feed' }, nieuw.slice(0, 6).map(n => el('li', null, el('a', { href: '#n-' + n.id },
         sname(n), el('h3', { text: n._kern }), el('p', { text: n.samenvatting }),
         el('div', { class: 'meta' }, el('span', { class: 'newdot', 'aria-hidden': 'true' }), el('span', { text: 'Nieuw · ' + datumRelatief(n.datum) }), prioChip(n.prioriteit))))))
         : el('p', { class: 'leeg', text: 'Alles is gelezen.' }));
-    p.append(rise(el('section', { class: 'desk' }, links, rechts)));
-    p.append(rise(el('section', { class: 'duo' }, besluitBlok(open), kansenBlok())));
+    p.append(rise(el('section', { class: 'duo' }, rechts, kansenBlok())));
     p.append(rise(el('section', { class: 'duo' }, agendaBlok(), deadlineBlok())));
+    p.append(controleKort());
     p.append(afgerondBlok());
 
     p.append(weekRooster());
@@ -1369,9 +1409,29 @@
     const lijst = open.filter(a => a.besluit).sort(actieSortering);
     return el('div', null,
       blokTitel('Wacht op jouw besluit', lijst.length ? el('span', { class: 'tel num', text: lijst.length + (lijst.length === 1 ? ' besluit' : ' besluiten') }) : null),
-      lijst.length ? el('ul', { class: 'todo' }, lijst.slice(0, 6).map(a => actieRij(a, { waarom: true, bewijs: false })))
+      lijst.length ? el('ul', { class: 'todo todo--compact' }, lijst.slice(0, 5).map(a => actieRij(a, { compact: true })))
         : el('p', { class: 'uitleg-leeg', text: 'Geen open besluiten. Acties die met "Besluit:" beginnen en de punten uit het Denzel-weekoverzicht verschijnen hier.' }),
-      lijst.length > 6 ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${lijst.length - 6} besluiten` })) : null);
+      lijst.length > 5 ? el('p', { class: 'leeg' }, el('a', { href: '#acties', text: `Nog ${lijst.length - 5} besluiten` })) : null);
+  }
+  // Focus binnen P1: eerst een deadline binnen 14 dagen, dan wat Claude kan voorbereiden, dan de rest
+  function focusSortering(x, y) {
+    const grens = plusDagen(VANDAAG, 14);
+    const w = (a) => (a.notitie && a.notitie.deadline && a.notitie.deadline <= grens ? 0 : kanClaude(a) ? 1 : 2);
+    return w(x) - w(y) || actieSortering(x, y);
+  }
+  // Actiecontrole als één regel; de drie kolommen pas na openklappen
+  function controleKort() {
+    const regel = controleRegel();
+    if (!C) return rise(el('section', { class: 'panel' }, el('p', { class: 'leeg', text: regel.tekst })));
+    const t = C.telling || {};
+    const vandaag = (C.vandaag_gedaan || []).length;
+    const getal = (n, label, ok) => el('span', { class: 'ck-getal' + (ok ? ' ok' : '') }, el('b', { class: 'num', text: n == null ? '–' : n }), label);
+    const d = el('details', { class: 'controle-kort', open: state.open.controle || null, ontoggle: (e) => { state.open.controle = e.currentTarget.open; } },
+      el('summary', null, el('h2', { text: 'Actiecontrole · ' + regel.tekst.replace(/ · volgende.*$/, '').replace(/^Laatst gecontroleerd /, '') }),
+        getal(vandaag, 'vandaag afgevinkt', true), getal(t.gedaan, 'bevestigd', false), getal(t.open, 'nog niet gedaan'), getal(t.handmatig, 'zelf afvinken'),
+        el('span', { class: 'chev', 'aria-hidden': 'true' })));
+    d.append(controlePaneel());
+    return rise(d);
   }
 
   const IMPACT = { hoog: 0, middel: 1, laag: 2 };

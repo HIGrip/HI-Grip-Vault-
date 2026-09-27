@@ -3,7 +3,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 25 september 2026 (actiecontrole)
+Laatst bijgewerkt: 27 september 2026 (growth-radar)
 Open: 20 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -187,3 +187,12 @@ Elke ochtend leest de routine dit bestand voordat hij nieuw onderzoek doet:
 - Al opgeschreven punten worden **niet opnieuw voorgesteld** in een andere formulering.
 - Nieuwe vondsten worden hier toegevoegd, met prioriteit — niet alleen in het dagrapport.
 - Als nieuw onderzoek een bestaand punt tegenspreekt of achterhaalt, wordt dat punt bijgewerkt of doorgestreept, met vermelding waarom.
+
+## Weekonderhoud (Growth Radar, elke zondag)
+
+**27 sep 2026:** 20 open punten (backlog, `dubbel` niet meegeteld) — meer dan de 15 uit de vuistregel. Geen enkel P1-punt staat al drie weken zonder beweging (oudste dateert van 15 sep, 12 dagen). Kandidaten om samen te voegen of te schrappen, ter beoordeling:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): beide wijzigen dezelfde sectie (`snippets/product-information-content.liquid`, direct bij de pack-selector) en raken dezelfde beslissing (prijsweergave 1-/3-/5-pack). Kandidaat om als één implementatiepunt te draaien.
+- **Punt 8** (Perplexity, wacht op VS-verzendbeslissing) **+ punt 13** (TikTok Shop, expliciet "of gecombineerd met punt 9") **+ punt 9** (creators, wacht op punt 13) **+ punt 10** (CAPI, wacht op budgetbeslissing): vier los genoteerde P2/P3-punten die allemaal op dezelfde soort besluit wachten (kanaal- of budgetkeuze). Kandidaat om te bundelen tot één `Besluit:`-punt voor Lars, met de vier uitwerkingen als sub-stappen zodra de keuze valt.
+Niet zelf samengevoegd — dat wijzigt koppen en dus actie-id's; ter beoordeling aan Lars via het dashboard.
+
+**Toegang:** De `ArtifactData`-database van het dashboard (collecties `status/checks/aantekeningen/beheer/nieuwe_acties/opdrachten/kansen`) is deze run niet leesbaar voor deze cloudsessie ("shared with you from another organization" — geen db-toegang voor uitgenodigde editors). Stap B (dashboard → vault) kon dus niet draaien; build en publish zijn wel gedaan vanuit de bestaande vaultstand.

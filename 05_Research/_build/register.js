@@ -243,7 +243,7 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
-   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).\n**Inspanning:** 2 uur\n\n---",
+   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).\n**Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante \"Optimized\"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?\n**Inspanning:** 2 uur\n\n---",
    "controle": {
     "bewijs": "GraphQL products(first:20): alle variant-sku's null en barcode leeg/null bij de 3 producten.",
     "controle": "Hebben alle varianten een uniek, stabiel ID in de Merchant Center-feed?",
@@ -1765,9 +1765,36 @@ window.HI_RESEARCH = {
   },
   "sync": null
  },
- "gebouwd": "2026-09-27T03:38:45+00:00",
+ "gebouwd": "2026-09-28T03:40:02+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — SEO Technisch (28 september 2026)\n\n## In het kort\nDe belangrijkste vondst van vandaag raakt niet de site zelf, maar de leidingen eronder: Google's oude Content API for Shopping — de weg waarlangs Shopify je Merchant Center-feed vult — geeft sinds 1 september 2026 al progressieve fouten voor wie nog niet is overgezet naar de nieuwe Merchant API, met volledige uitschakeling begin 2027. Dat loopt via dezelfde Google & YouTube-app die vorige week al op de riskante \"Optimized\"-pixelstand bleek te staan. Daarnaast twee kleinere ontwikkelingen om te volgen, geen van beide met eigen actie nu: een normale Google-spamupdate en een nieuw multimodaal filter in Search Console.\n\n## Acties\n_Geen nieuwe backlogpunten vandaag. Eén bestaand P1-punt (4) is bijgewerkt met een extra controlepunt — niet hier herhaald._\n\n## Bevindingen\n\n### 1. Content API for Shopping faalt al sinds 1 september; Merchant API-migratie is de kern van backlogpunt 4\n\nGoogle's Content API for Shopping — de klassieke weg waarlangs productdata in Merchant Center terechtkomt — is per 18 augustus 2026 vervangen door de nieuwe Merchant API. Sinds 1 september 2026 geven aanvragen zonder goedgekeurde uitzondering al periodiek een HTTP 410-fout, en Google heeft de volledige uitfasering van alle endpoints voor begin 2027 aangekondigd. Voor winkels die hun feed via een custom integratie, een oudere feed-app of een script laten lopen, moet die koppeling nu over naar de Merchant API of de datastroom stopt. Wie handmatig of via een Google Sheet uploadt, is niet geraakt.\n\nVoor winkels die het native Shopify \"Google & YouTube\"-kanaal gebruiken — zoals higrip.nl — loopt de migratie via een gefaseerde uitrol van diezelfde app, die al bezig is. Een concreet aandachtspunt daarbij: product-ID's kunnen tijdens de migratie wijzigen, wat een lopende Shopping-ads-opzet kan raken.\n\n> **Voor higrip.nl:** Dit is dezelfde Google & YouTube-app (`MC-8TZQW9T6Q7`, account `raqds3-tb`) die de Growth Radar van 25 september al op de \"Optimized\"-pixelstand aantrof — een stand waarin Shopify de datadeling zelf al kan pauzeren. Een migratieprobleem boven op een gepauzeerde pixel zou de Merchant Center-feed dubbel kunnen raken: geen productdata én geen conversiesignaal. Backlogpunt 4 (variant-ID's tegen de Merchant Center-eis) gaat al over deze feed en is de logische plek om dit erbij te controleren, niet een nieuw punt.\n\n**Actie:** Backlogpunt 4 bijgewerkt met een extra controlepunt: nagaan of de migratie van de Google & YouTube-app naar de Merchant API is voltooid, en of product-ID's daarbij zijn gewijzigd.\n\n### 2. Google's september-spamupdate: normale update, geen nieuw beleid — alleen volgen\n\nGoogle rolde op 24 september 2026 om 9:15 uur Pacific-tijd de \"September 2026 spam update\" uit, wereldwijd en in alle talen, met een verwachte rolloutduur tot twee weken (langer dan de drie eerdere spamupdates van dit jaar). Google noemt het expliciet een normale update: geen nieuwe spambeleidsregels, en niet gericht op linkspam specifiek.\n\n> **Voor higrip.nl:** Geen enkele eerdere melding over spamgerelateerde risico's op de site. Een normale update zonder nieuw beleid raakt in de praktijk vrijwel nooit een compliant webshop.\n\n**Actie:** Alleen volgen — nog niet handelen. Pas relevant als de Search Console & rankings-routine na afronding van de rollout (rond 8 oktober) een ongewone positieverandering signaleert; dat is niet iets wat Growth Radar zelf controleert.\n\n### 3. Search Console: nieuw multimodaal filter voor zoekopdrachten via afbeeldingen, Lens en Circle to Search\n\nSamen met de spamupdate voegde Google Search Console een multimodaal filter toe waarmee je zoekopdrachten via afbeeldingen, Google Lens en Circle to Search apart kunt bekijken, met data vanaf 10 september 2026.\n\n> **Voor higrip.nl:** Een nieuwe, gratis dimensie in bestaande Search Console-data — geen eigen actie voor Growth Radar, maar wel een filter dat de moeite waard is om mee te nemen zodra de kernwoorden-analyse (Search Console & rankings, woensdag) weer draait, gezien de productfoto's al ruim aan de Merchant Center-beeldeisen voldoen.\n\n**Actie:** Alleen volgen — geen eigen sitecheck, dat hoort bij de Search Console & rankings-routine.\n\n## Wat niet lukte\nStap B (dashboard → vault via `ArtifactData`) gaf dezelfde foutmelding als bij de weekonderhoud-run van 27 september: \"shared with you from another organization\" — geen db-toegang voor deze cloudsessie op de `status`-collectie. Niet opnieuw geprobeerd voor de overige zes collecties, om dezelfde fout niet zes keer te herhalen. Build en publish zijn gedaan vanuit de bestaande vaultstand.\n\n## Bronnen\n- [Migrate from Content API for Shopping to Merchant API — Google for Developers](https://developers.google.com/merchant/api/guides/compatibility/overview)\n- [Google's Content API Shuts Down August 18: What Shopify Merchants Actually Need to Check — Simple Product Feeds](https://www.simpleproductfeeds.com/blog/content-api-for-shopping-sunset-shopify)\n- [Shopify Merchant Google & YouTube API Migration — Channable](https://www.channable.com/blog/shopify-google-youtube-app-migration)\n- [Google September 2026 Spam Update Is Rolling Out — Search Engine Roundtable](https://www.seroundtable.com/google-september-2026-spam-update-42163.html)\n- [Google Releases September 2026 Spam Update — Search Engine Watch](https://searchenginewatch.com/google-releases-september-2026-spam-update/)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-28",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-21-growth-radar-seo-technisch",
+    "2026-09-25-growth-radar-social",
+    "2026-09-16-growth-radar-ai-search"
+   ],
+   "id": "2026-09-28-growth-radar-seo-technisch",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Content API voor Shopping geeft al 410-fouten — Merchant API-migratie checken",
+   "prioriteit": "P1",
+   "routine": "growth-radar",
+   "samenvatting": "Google's oude Content API for Shopping (die de Merchant Center-feed voedt) geeft sinds 1 september 2026 al progressieve 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API, met volledige uitschakeling begin 2027 — en dat loopt via dezelfde Google & YouTube-app die op higrip.nl al op de riskante Optimized-stand staat. Daarnaast twee kleinere signalen om te volgen: een normale Google-spamupdate (24 sep, ~2 weken rollout) en een nieuw multimodaal filter in Search Console voor zoekopdrachten via afbeeldingen, Lens en Circle to Search.",
+   "status": "nieuw",
+   "titel": "Growth Radar — SEO Technisch (28 september 2026)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-growth-radar-seo-technisch.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Stap B (dashboard → vault via `ArtifactData`) gaf dezelfde foutmelding als bij de weekonderhoud-run van 27 september: \"shared with you from another organization\" — geen db-toegang voor deze cloudsessie op de `status`-collectie. Niet opnieuw geprobeerd voor de overige zes collecties, om dezelfde fout niet zes keer te herhalen. Build en publish zijn gedaan vanuit de bestaande vaultstand."
+  },
   {
    "acties": [
     {
@@ -2618,7 +2645,8 @@ window.HI_RESEARCH = {
     "2026-09-18-growth-radar-social",
     "2026-09-17-growth-radar-cro",
     "2026-09-23-growth-radar-ai-search",
-    "2026-09-25-evaluatie-routines"
+    "2026-09-25-evaluatie-routines",
+    "2026-09-28-growth-radar-seo-technisch"
    ],
    "id": "2026-09-25-growth-radar-social",
    "kansen": [],
@@ -3644,7 +3672,8 @@ window.HI_RESEARCH = {
     "2026-09-15-seo-audit",
     "2026-09-21-regressiecheck",
     "2026-09-23-seo-conversietest-run-1",
-    "2026-09-24-growth-radar-cro"
+    "2026-09-24-growth-radar-cro",
+    "2026-09-28-growth-radar-seo-technisch"
    ],
    "id": "2026-09-21-growth-radar-seo-technisch",
    "kansen": [],
@@ -4134,7 +4163,8 @@ window.HI_RESEARCH = {
     "2026-09-15-seo-audit",
     "2026-09-16-seo-onderzoek-cloud-routine-website",
     "2026-09-22-growth-radar-seo-content",
-    "2026-09-23-growth-radar-ai-search"
+    "2026-09-23-growth-radar-ai-search",
+    "2026-09-28-growth-radar-seo-technisch"
    ],
    "id": "2026-09-16-growth-radar-ai-search",
    "kansen": [],
@@ -6158,16 +6188,11 @@ window.HI_RESEARCH = {
    "CRO": 4,
    "Compliance": 1,
    "Merk": 6,
-   "SEO": 14,
+   "SEO": 15,
    "Social": 2,
    "Techniek": 4
   },
   "per_week": [
-   {
-    "aantal": 0,
-    "start": "2026-07-06",
-    "week": "2026-W28"
-   },
    {
     "aantal": 0,
     "start": "2026-07-13",
@@ -6222,9 +6247,14 @@ window.HI_RESEARCH = {
     "aantal": 16,
     "start": "2026-09-21",
     "week": "2026-W39"
+   },
+   {
+    "aantal": 1,
+    "start": "2026-09-28",
+    "week": "2026-W40"
    }
   ],
-  "totaal_notities": 31
+  "totaal_notities": 32
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

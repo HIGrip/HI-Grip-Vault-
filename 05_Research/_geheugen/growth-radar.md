@@ -56,3 +56,6 @@ Format: `JJJJ-MM-DD | thema | onderwerp | waar behandeld`
 2026-09-25 | Social | Geen Meta- of TikTok-pixel op higrip.nl; nieuwe pixel direct "Always on" + CAPI (one-click sinds 15 apr 2026) | social
 2026-09-25 | Social | Meta Creator Marketing Hub (17 sep 2026, uitrol t/m eind 2026), Instagram live-video-ads vanaf 29 sep | social
 2026-09-25 | Social | Meta als AI-kanaal in Shopify Agentic Storefronts (8 sep 2026, Muse, alleen VS), producten standaard gedeeld | social
+2026-09-28 | SEO-technisch | Content API for Shopping → Merchant API-migratie: sinds 1 sep 2026 al progressieve HTTP 410-fouten, volledige uitschakeling begin 2027; raakt dezelfde Google & YouTube-app als de Optimized-pixelstand | seo-technisch
+2026-09-28 | SEO-technisch | Google september-spamupdate (24 sep, normale update, ~2 weken rollout, geen nieuw beleid) | seo-technisch
+2026-09-28 | SEO-technisch | Search Console multimodaal filter (afbeeldingen/Lens/Circle to Search), data vanaf 10 sep 2026 | seo-technisch

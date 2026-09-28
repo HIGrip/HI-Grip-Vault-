@@ -1819,7 +1819,7 @@ window.HI_RESEARCH = {
   },
   "sync": null
  },
- "gebouwd": "2026-09-28T04:56:11+00:00",
+ "gebouwd": "2026-09-28T05:56:18+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -1953,6 +1953,56 @@ window.HI_RESEARCH = {
   },
   {
    "acties": [],
+   "body_md": "# SEO- en conversietest run 2 — auditblok B, concepten voor 2.0-producten en collecties\n\n## In het kort\n\nTweede run van de wekelijkse SEO- en conversietest (modus CONCEPT: niets live gewijzigd). Auditblok deze run: **B — producten en collecties** (rotatie B→C→D→B, volgens `05_Research/_geheugen/seo-conversietest.md`). Het volledige rapport staat, zoals afgesproken, in de verborgen Shopify-pagina `seo-routine-logboek` (RUN 2-sectie, bovenaan). Deze notitie bevat de kern.\n\n## Kerncijfers\n\n- **248** · sessies deze week (Shopify Analytics, 21–27 sep) · −28% t.o.v. nulmeting (346)\n- **1** · bestellingen deze week / €41,99 · vorige week 2 / €30,75; nulmeting 3 / €72,74\n- **0,40%** · conversieratio deze week · nulmeting 0,87%\n- **7,9** · gemiddelde Search Console-positie (19–25 sep) · vorige periode 8,7 (verbeterd)\n\n## Acties\n\n_Geen nieuwe backlogpunten deze run: alle bevindingen in blok B waren al open (SEO-titel/meta 2.0-producten en collectie, producttype/SKU/GTIN, dubbele alt-teksten op de 2.0-producten, te smalle collectietekst, en de op 28 sep al gemelde ontbrekende meta op `/collections/frontpage`). Wat nieuw is: voor al deze punten staat nu een concreet concept klaar in het logboek (zie hieronder), zodat de eigenaar ze rechtstreeks kan overnemen in Shopify admin. Verder is de bestaande actie \"Productdata aanvullen: type, SKU, GTIN\" nu voor de 2.0-varianten volledig ingevuld met de EAN-lijst uit [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md) §1 — voor de 1.0 (Performance Gripsokken) ontbreekt nog een EAN/SKU-systeem in het feitenbestand [CHECK]._\n\n## Bevindingen\n\n### KPI's (Shopify Analytics; nulmeting = 23 sep 2026)\n\n| KPI | Deze week (21–27 sep) | Vorige week (14–20 sep) | Nulmeting (16–23 sep) |\n|---|---|---|---|\n| Sessies | 248 | 277 | 346 |\n| Sessies via zoekmachines | 15 | 25 | 16 |\n| Sessies met add-to-cart | 5 (2,0%) | 9 (3,2%) | 6 (1,7%) |\n| Checkout bereikt / voltooid | 2 / 1 | 7 / 2 | 4 / 3 |\n| Bestellingen / omzet | 1 / €41,99 | 2 / €30,75 | 3 / €72,74 |\n| Gem. orderwaarde | €34,70 | €11,96 | €19,54 |\n| Conversieratio | 0,40% | 0,72% | 0,87% |\n\nGA4 (476032345) toont voor dezelfde weken 54 resp. 123 sessies — ruim onder de Shopify-tellingen. Dit gat is deze run niet verklaard; het raakt mogelijk het al openstaande backlogpunt over de \"Optimized\"-pixelstand. Search Console (19–25 sep, loopt 3 dagen achter): 24 klikken (−48,9%), 1.018 vertoningen (−4,5%), positie 7,9 (verbeterd van 8,7). \"Gripsokken\" steeg naar positie 5,6, \"grip socks\" naar 10,4. Onder de 100 echte sessies per week blijft dit indicatief.\n\n### Auditblok B — producten en collecties (via de Shopify Admin API)\n\n- **SEO-titel/meta:** leeg (`null`/`null`) op Performance Gripsokken 2.0 Zwart, 2.0 Wit, collectie Gripsokken én — nieuw bevestigd — collectie \"Homepage\" (`frontpage`, 0 producten, wel in de sitemap; dit is dezelfde bevinding als de regressiecheck van 28 sep).\n- **Producttype:** leeg bij alle drie producten.\n- **SKU/barcode:** overal `null`. Voor de 2.0-varianten nu een concept-koppeling gemaakt met de EAN-lijst uit het feitenbestand (PGSZ201–203, PGSW201–203, 6 EAN's). Voor de 1.0 ontbreekt een bronbestand [CHECK].\n- **Alt-teksten:** 2.0 Zwart en 2.0 Wit hebben elk 5 gecontroleerde foto's met een identieke alt-tekst (0 van 10 uniek) — dezelfde onderliggende afwijking als het al bekende punt over de hoofdproductpagina, nu bevestigd voor de 2.0-producten.\n- **Collectietekst Gripsokken:** de huidige tekst (169 woorden) noemt alleen \"witte gripsokken\", de oude maten 34-39/40-46 en een onbevestigde doelgroep (\"kinderen\"), terwijl de collectie alle drie producten en vijf maten bevat. Herschreven naar 222 woorden (binnen de norm van 150–300), inclusief de wrijvingscoëfficiënt-claim met bron.\n- **Interne links:** niet volledig te controleren zonder rendering van het thema (bekende beperking in de cloudomgeving).\n\n### Gebouwd (concept, niets live)\n\nIn de logboekpagina staan volledig uitgewerkt: de herschreven collectiebeschrijving, SEO-titels en meta's voor de 2.0-producten en beide collecties (Gripsokken en Homepage/frontpage), 10 beschrijvende alt-tekstvoorstellen (gemarkeerd [CHECK], niet visueel geverifieerd) en de producttype/SKU/GTIN-koppeltabel voor de 2.0-varianten.\n\n### Resultaten eerdere testplannen\n\n**Maatgids gripsokken** (168287863111): nog steeds niet gepubliceerd (bevestigd door de actiecontrole op 26 sep). Testplan nog niet gestart. Label: **te vroeg**.\n\n## Wat niet lukte\n\n- Het verschil tussen Shopify-sessies (248/277) en GA4-sessies (54/123) in dezelfde weken is niet verklaard.\n- Interne links vanuit producten/collecties naar de maatgids en sportpagina's: niet te controleren zonder thema-rendering.\n- Shopify's gestructureerde Google-productcategorie (los van het vrije producttype-veld): niet gecontroleerd.\n- Merchant Center-status (`google_data.py merchant`): niet uitgevoerd deze run, hoort bij auditblok A (techniek).\n- Stap B (dashboard → vault) kon niet draaien: de `ArtifactData`-database van het dashboard is voor deze cloudsessie niet leesbaar (\"shared with you from another organization\" — geen db-toegang voor uitgenodigde editors), zelfde beperking als bij eerdere runs. Build en publish zijn wel gedaan vanuit de bestaande vaultstand.\n\n## Bronnen\n\n- Shopify Admin API (GraphQL) en ShopifyQL-analytics, HÏ Grip, 28-09-2026.\n- `python 05_Research/_tools/google_data.py ga4/gsc`, 28-09-2026.\n- `00_Brand_Core/Feiten & Actuele Staat.md` en [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Product/Performance%20Grip%20Socks%202.0.md) (EAN-lijst).\n- Verborgen Shopify-pagina `seo-routine-logboek` (volledig rapport, RUN 2).\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "bronbestand_url": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "categorie": "SEO",
+   "datum": "2026-09-28",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-23-seo-conversietest-run-1",
+    "2026-09-28-regressiecheck",
+    "2026-09-25-seo-audit",
+    "2026-09-25-search-console",
+    "2026-09-25-evaluatie-routines"
+   ],
+   "id": "2026-09-28-seo-conversietest-run-2",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "sessies deze week (Shopify Analytics, 21–27 sep)",
+     "verschil": "−28% t.o.v. nulmeting (346)",
+     "waarde": "248"
+    },
+    {
+     "label": "bestellingen deze week / €41,99",
+     "verschil": "vorige week 2 / €30,75; nulmeting 3 / €72,74",
+     "waarde": "1"
+    },
+    {
+     "label": "conversieratio deze week",
+     "verschil": "nulmeting 0,87%",
+     "waarde": "0,40%"
+    },
+    {
+     "label": "gemiddelde Search Console-positie (19–25 sep)",
+     "verschil": "vorige periode 8,7 (verbeterd)",
+     "waarde": "7,9"
+    }
+   ],
+   "kerntitel": "SEO-titels, meta's en collectietekst voor de 2.0-producten uitgewerkt als concept",
+   "prioriteit": "P2",
+   "routine": "seo-conversietest",
+   "samenvatting": "Tweede run (modus CONCEPT): diepe audit van blok B (producten en collecties) bevestigt alleen al bekende, open backlogpunten — geen nieuwe bevindingen — maar levert wel uitgewerkte concepten op: een herschreven collectiebeschrijving, SEO-titels/meta's voor de 2.0-producten en beide collecties, beschrijvende alt-tekstvoorstellen en een SKU/GTIN-koppeling per variant. Sessies en omzet liggen deze week onder de nulmeting van 23 sep, maar het volume blijft te klein voor harde conclusies, en er is een onverklaard verschil tussen Shopify- en GA4-sessietellingen.",
+   "status": "nieuw",
+   "titel": "SEO- en conversietest run 2 — auditblok B, concepten voor 2.0-producten en collecties",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-seo-conversietest-run-2.md",
+   "vervangt": [],
+   "wat_niet_lukte": "- Het verschil tussen Shopify-sessies (248/277) en GA4-sessies (54/123) in dezelfde weken is niet verklaard.\n- Interne links vanuit producten/collecties naar de maatgids en sportpagina's: niet te controleren zonder thema-rendering.\n- Shopify's gestructureerde Google-productcategorie (los van het vrije producttype-veld): niet gecontroleerd.\n- Merchant Center-status (`google_data.py merchant`): nie…"
+  },
+  {
+   "acties": [],
    "body_md": "# SEO-regressiecheck — 28 september 2026\n\n## In het kort\n\nControle-run, geen onderzoek. Dertien URL's gecontroleerd (sitemap-gedreven, zie hieronder). Kritieke check (geen `aggregateRating`) blijft schoon op alle dertien. Drie nieuwe afwijkingen dit keer, vier bekende afwijkingen blijven ongewijzigd open (geen nieuw backlogpunt, staat al open). GA4 werkte deze week wel; PageSpeed Insights zat op quotum.\n\n## Kerncijfers\n\n- **13** · gecontroleerde URL's · 0 met `aggregateRating`\n- **54** · GA4-sessies (7 dagen) · -56% t.o.v. vorige week (123)\n- **1** · GA4 key events (purchase) deze week · vorige week 2\n- **3** · nieuwe pagina's in `sitemap.xml` ontdekt (verzendbeleid, retourbeleid, terugbetalingsbeleid)\n\n## Acties\n\n_Acties uit dit rapport staan in de growth-radar-backlog (`ACTIEBACKLOG.md`) en komen via het dashboard binnen — hier niet gedupliceerd._\n\n## Bevindingen\n\nReferentiepunt: [2026-09-21-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-regressiecheck.md) en de audit [2026-09-25-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-seo-audit.md). URL-lijst dit keer sitemap-gedreven opgebouwd (zie Stap 2 van de routine): homepage, de drie productpagina's, beide collecties (`frontpage`, `gripsokken`), de drie `/pages/gripsokken-voor-*`-sportpagina's, beide blogindexen (`hi-grip`, `trends`), het nieuwste artikel (bepaald via de atom-feeds: \"De twee grootste problemen in de sportwereld\", gepubliceerd 15 feb 2026) en `/en/`.\n\n### Nieuw ontdekt in de sitemap t.o.v. vorige week\n\n1. `sitemap_agentic_discovery.xml` → `/agents.md` — Shopify's nieuwe agentic-commerce/UCP-bestand (200, `text/markdown`), standaard gegenereerd. Geen actie, informatief voor de Growth Radar.\n2. Drie nieuwe pagina's: `/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid` (zie afwijking 2 hieronder) — lijken een vervanging van de oude `/policies/*`-pagina's voor te bereiden, maar zijn dat nog niet.\n\n### Afwijkingen\n\n1. **Nieuwe `/en/`-homepage heeft 2× `<h1>` en een onvertaalde hero-tekst.** Naast de verwachte (verborgen) `<h1>HÏ GRIP</h1>` staat een tweede, zichtbare `<h1 class=\"sl-teaser__title\">HÏ Grip Performance Gripsokken voor Sporters</h1>` — dezelfde Nederlandse tekst als de NL-homepage, niet vertaald naar het Engels. Exact hetzelfde bugpatroon als de NL-homepage vóór 15 september (toen opgelost, bevestigd 21 sep). De title-tag van `/en/` is bovendien nog steeds enkel `HÏ Grip` — dat is het al bekende, nog open backlogpunt over de lege EN-title.\n   **Fix:** de verborgen H1 naar een `<span>`/`<p>` wijzigen (zoals eerder op de NL-homepage) en de hero-tekst vertalen.\n\n2. **Drie nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude beleidspagina's tegen.**\n   - `/pages/verzendbeleid` (nieuw): noemt \"binnen 1 werkdag verzonden\" (correct, conform het besluit van Lars van 25 sep) maar noemt nergens de verzendkosten (€4,50) of de gratis-verzenddrempel (€35).\n   - `/pages/retourbeleid` (nieuw): retourtermijn is gecorrigeerd naar 30 dagen (correct), maar rekent nog steeds **25% herbevoorradingskosten** en eist het product \"ongeopend\" terug — in strijd met de geest van het besluit van Lars en met het al genoteerde juridische risico in de Compliance To-Do Lijst §4.2 (herroepingsrecht mag geen kosten voor de consument met zich meebrengen anders dan de retourverzendkosten).\n   - Ondertussen bestaan `/policies/refund-policy` (14 dagen, 25%), `/policies/shipping-policy` (\"vóór 16:00\") en `/policies/terms-of-service` (€4,25) gewoon door met de oude, foute waarden — er zijn nu **twee parallelle bronnen** voor dezelfde beleidsinformatie.\n   - De homepage-meta-tekst \"Bestel vóór 22:00, vandaag verzonden\" (de vervallen belofte) blijkt via een gedeelde metafield ook op andere pagina's te verschijnen (gezien in de broncode van `/pages/terugbetalingsbeleid`, `/policies/refund-policy`, `/policies/shipping-policy`, `/policies/terms-of-service`) — breder dan eerder aangenomen.\n   **Fix:** één bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de \"ongeopend\"-eis uit het retourbeleid halen, en de verzendkosten/-drempel op `/pages/verzendbeleid` zetten.\n\n3. **`/collections/frontpage` heeft geen meta description** (0 `<meta name=\"description\">`-tags gevonden). Mogelijk dezelfde onderliggende oorzaak als het al openstaande punt over `/collections/all` (ontbrekende SEO-instellingen op automatische collecties), maar een andere URL dan tot nu toe gemeld.\n   **Fix:** beschrijving toevoegen via Shopify admin → SEO-instellingen, voor beide collecties.\n\n### Al bekend, blijft open (staat open in de backlog — geen nieuw punt, niet gewijzigd)\n\n- **Schema gedeeltelijk** (backlogpunt \"SEO-schema-thema-wijzigingen gedeeltelijk gepusht\"): `WebSite` staat nu alléén nog op de homepage en `/en/` — niet meer op de padel-pagina, waar hij op 21 september nog wel stond. `ItemList` ontbreekt nog op beide collecties. `FAQPage` ontbreekt nog op de productpagina('s) (wel aanwezig op homepage en de drie sportpagina's, nieuw t.o.v. eerdere metingen).\n- **Redirect-keten `/products/hi-grip-gripsokken-1`** is nog steeds 2 stappen (`hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken`), tegen de regel van maximaal 1 stap. Getrackt via `2026-09-23-seo-conversietest-run-1#b469a68a` (open). De twee 2.0-varianten (`performance-grip-socks-2-0-zwart/-wit`) redirecten wél in 1 stap — correct.\n- **Homepage-meta \"vóór 22:00 vandaag verzonden\"**: getrackt via `2026-09-21-weekoverzicht#611d66c8` (open).\n- **`/pages/gripsokken-voetbal`** (oude/typo-handle, niet hetzelfde als het nieuwe `/pages/gripsokken-voor-voetbal`) geeft nog steeds 404.\n\n### Ongewijzigd / schoon\n\n- Alle 13 URL's: HTTP 200, laadtijd 0,44–0,91s (ruim onder 1,5s).\n- 12 van de 13 URL's: precies één niet-lege `<title>` en precies één `<h1>` (uitzondering: `/en/`, zie afwijking 1).\n- Canonical en `hreflang` (nl/en/x-default) correct op alle 13 URL's.\n- **Geen enkele van de 13 pagina's bevat `aggregateRating`** — kritieke check blijft schoon.\n- Homepage: 9 van 25 afbeeldingen met `alt=\"\"` (vorige week ook 9/25) — onder de meldgrens van 12, ongewijzigd.\n- Live prijzen kloppen exact met het feitenbestand: 1-pack €13,49 / 3-pack €39,95 / 5-pack €61,95 (Performance Gripsokken) en €14,95 voor beide 2.0-varianten — geen tegenspraak.\n- GA4 `purchase` staat nog steeds gemarkeerd als key event (`ONCE_PER_EVENT`, sinds 3 feb 2025) — bevestigt het al afgevinkte backlogpunt blijft correct.\n- `shopify theme check`: niet uitgevoerd — thema-map niet beschikbaar in de cloudomgeving (bekende beperking).\n\n### Trend\n\nGA4-property 476032345, sessies per kanaal, laatste 7 dagen (21–27 sep) vs. de 7 dagen daarvoor (14–20 sep):\n\n| Kanaal | Deze week | Vorige week |\n|---|---|---|\n| Direct | 25 | 88 |\n| Organic Search | 23 | 24 |\n| Organic Social | 1 | 4 |\n| Referral | 1 | 4 |\n| Cross-network | 2 | 0 |\n| Unassigned | 2 | 2 |\n| AI Assistant | 1 | 0 |\n| Email | 0 | 1 |\n| **Totaal** | **54** | **123** |\n\nLet op botverkeer: \"United States | Direct\" daalde van 51 naar 7 sessies (0% engagement, waarschijnlijk bot) — de daling in Direct-verkeer is dus deels een opschoning van botverkeer, geen echt verlies. Na aftrek blijft ook het Nederlandse verkeer lager (40 vs 52 sessies), engagementrate steeg wel (57,5% vs 46,2%). Niet verder geduid — dat is werk voor de Growth Radar.\n\nAI Assistant-kanaal, laatste 30 dagen: **3 sessies** (was 1-2 in eerdere metingen — lichte groei, te klein om een trend te noemen).\n\nPageSpeed Insights (mobiel): **niet gemeten** — openbaar PSI-quotum zit vast op HTTP 429 voor het project `higrip-analytics` (zelfde probleem als eerdere runs). Zie \"Wat niet lukte\".\n\n## Wat niet lukte\n\n- **PageSpeed Insights** (homepage, `/collections/gripsokken`, `/products/performance-gripsokken`): HTTP 429, quotum op. PageSpeed Insights API staat uit in het Cloud-project `higrip-analytics`; nodig is óf de API aanzetten óf een `PAGESPEED_API_KEY`.\n- **`shopify theme check`**: thema-map `C:\\Users\\Test\\higrip-theme` is niet beschikbaar in deze cloudomgeving. Overgeslagen, zoals in elke eerdere cloud-run van deze routine.\n\n## Bronnen\n\n- Live site: curl op de 13 URL's + sitemap-bestanden, 28 september 2026.\n- `python 05_Research/_tools/google_data.py ga4 [--dagen 30]` en `keyevents`.\n- `python 05_Research/_tools/google_data.py cwv` (PageSpeed, gefaald op quotum).\n- Feitenbestand: `00_Brand_Core/Feiten & Actuele Staat.md`.\n\n## Aantekeningen",
    "bron": "routine",
    "bronbestand": "",
@@ -1966,7 +2016,8 @@ window.HI_RESEARCH = {
     "2026-09-21-weekoverzicht",
     "2026-09-23-seo-conversietest-run-1",
     "2026-09-25-seo-audit",
-    "2026-09-07-compliance-todo"
+    "2026-09-07-compliance-todo",
+    "2026-09-28-seo-conversietest-run-2"
    ],
    "id": "2026-09-28-regressiecheck",
    "kansen": [],
@@ -2755,7 +2806,8 @@ window.HI_RESEARCH = {
     "2026-09-21-beachhead-rugby",
     "2026-09-24-growth-radar-cro",
     "2026-09-07-compliance-todo",
-    "2026-09-25-search-console"
+    "2026-09-25-search-console",
+    "2026-09-28-seo-conversietest-run-2"
    ],
    "id": "2026-09-25-seo-audit",
    "kansen": [],
@@ -2829,7 +2881,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-23-seo-conversietest-run-1",
     "2026-09-21-regressiecheck",
-    "2026-09-15-regressiecheck"
+    "2026-09-15-regressiecheck",
+    "2026-09-28-seo-conversietest-run-2"
    ],
    "id": "2026-09-25-search-console",
    "kansen": [],
@@ -3045,7 +3098,8 @@ window.HI_RESEARCH = {
     "2026-09-21-regressiecheck",
     "2026-09-14-weekoverzicht",
     "2026-09-25-growth-radar-social",
-    "2026-09-21-weekoverzicht"
+    "2026-09-21-weekoverzicht",
+    "2026-09-28-seo-conversietest-run-2"
    ],
    "id": "2026-09-25-evaluatie-routines",
    "kansen": [],
@@ -3537,7 +3591,8 @@ window.HI_RESEARCH = {
     "2026-09-23-growth-radar-ai-search",
     "2026-09-24-growth-radar-cro",
     "2026-09-25-evaluatie-routines",
-    "2026-09-21-weekoverzicht"
+    "2026-09-21-weekoverzicht",
+    "2026-09-28-seo-conversietest-run-2"
    ],
    "id": "2026-09-23-seo-conversietest-run-1",
    "kansen": [],
@@ -6423,7 +6478,7 @@ window.HI_RESEARCH = {
    "CRO": 4,
    "Compliance": 1,
    "Merk": 6,
-   "SEO": 17,
+   "SEO": 18,
    "Social": 2,
    "Techniek": 4
   },
@@ -6484,12 +6539,12 @@ window.HI_RESEARCH = {
     "week": "2026-W39"
    },
    {
-    "aantal": 3,
+    "aantal": 4,
     "start": "2026-09-28",
     "week": "2026-W40"
    }
   ],
-  "totaal_notities": 34
+  "totaal_notities": 35
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

@@ -8,7 +8,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Eerste run van de nieuwe wekelijkse Search Console-routine: 28-dagentrend is sterk positief (klikken +140%, vertoningen +79%), maar de laatste 7 dagen daalden klikken 39% op vrijwel gelijke vertoningen — bij kleine aantallen nog geen trend. 'Grip socks' is verdeeld over vier eigen URL's (kannibalisatie) en de oude productpagina-URL trekt de meeste vertoningen maar een CTR van 0,32%."
-gerelateerd: [2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck]
+gerelateerd: [2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-09-25-seo-audit]
 vervangt: []
 bronbestand: ""
 deadline: ""

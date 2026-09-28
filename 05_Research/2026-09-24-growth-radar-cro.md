@@ -8,7 +8,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "De live prijzen zijn verlaagd (€13,49 / €39,95 / €61,95), waardoor het 3-pack per paar maar €0,17 goedkoper is dan een 1-pack: gratis verzending is nu het enige echte pack-argument, en juist die drempel spreekt zichzelf tegen (€35 vs €30). Daarnaast stoppen Shopify-script tags op 1 maart 2027, terwijl Trustpilot en Bundler-restanten er nog via laden."
-gerelateerd: [2026-09-17-growth-radar-cro, 2026-09-23-seo-conversietest-run-1, 2026-09-21-growth-radar-seo-technisch]
+gerelateerd: [2026-09-17-growth-radar-cro, 2026-09-23-seo-conversietest-run-1, 2026-09-21-growth-radar-seo-technisch, 2026-09-25-seo-audit]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\2026-09-24-cro.md"
 deadline: "2027-03-01"

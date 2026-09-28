@@ -402,7 +402,7 @@
         return 'Growth Radar · ' + (FOCUS[f] || f.replace(/-/g, ' '));
       }
       case 'seo-conversietest': { const m = slug.match(/run-(\d+)/); return 'SEO- & conversietest · run ' + (m ? m[1] : nr); }
-      case 'seo-regressiecheck': return 'Regressiecheck · week ' + isoWeek(n.datum);
+      case 'seo-regressiecheck': return slug === 'regressiecheck' ? 'Regressiecheck · week ' + isoWeek(n.datum) : n.titel.split(' — ')[0];
       case 'denzel-week': return 'Weekoverzicht · week ' + isoWeek(n.datum);
       case 'search-console': return 'Search Console · week ' + isoWeek(n.datum);
       case 'backlinks-merchant': return 'Backlinks & Merchant · ' + MAANDEN[Number(n.datum.slice(5, 7)) - 1];

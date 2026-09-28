@@ -1,0 +1,1808 @@
+{
+ "version": "2.2.5",
+ "seed_keyword": "gripsokken",
+ "created_at": "2026-09-25T00:00:00+02:00",
+ "site": "https://www.higrip.nl",
+ "market": "nl-NL (google.nl)",
+ "volume_note": "No DataForSEO/GSC available: volumes null; pillar choice by SERP breadth + business priority (beachhead sports).",
+ "hub": {
+  "id": "HUB",
+  "title": "Gripsokken (collectie)",
+  "keyword": "gripsokken kopen",
+  "intent": "Transactional",
+  "template": "landing-page (PLP)",
+  "wordCount": 600,
+  "url": "/collections/gripsokken",
+  "status": "written",
+  "action": "Keep as master commercial hub; add sport-selector links to all sport pillars",
+  "evidence": "'gripsokken' + 'gripsokken kopen' SERPs = PLPs (Decathlon, 11teamsports, Proskary)",
+  "volume": null
+ },
+ "pillars": [
+  {
+   "id": "P-VOET",
+   "title": "Gripsokken voor voetbal",
+   "keyword": "gripsokken voetbal",
+   "intent": "Commercial",
+   "template": "landing-page (hybrid pillar)",
+   "wordCount": 1800,
+   "url": "/pages/gripsokken-voor-voetbal",
+   "status": "written-thin",
+   "action": "EXPAND 253 -> 1500-1800 w",
+   "evidence": "SERP: 6/9 PLPs + 3 buying guides; 4 overlap with 'beste gripsokken voetbal' and 4 with 'gripsokken kopen'",
+   "volume": null,
+   "clusters": [
+    {
+     "name": "Kiezen & kopen",
+     "posts": [
+      {
+       "id": "V1",
+       "title": "Beste gripsokken voetbal 2026 (getest door spelers)",
+       "keyword": "beste gripsokken voetbal",
+       "intent": "Commercial",
+       "template": "best-of",
+       "wordCount": 1600,
+       "url": "/blogs/hi-grip/beste-gripsokken-voetbal",
+       "status": "planned",
+       "action": "CREATE; absorb + 301 'welke-gripsokken-bestaan-er-van-budget-tot-premium' (442 w)",
+       "evidence": "SERP = 5 affiliate 'beste ... 2026' lists; overlap 4 with pillar -> same cluster, differentiated by best-of intent",
+       "volume": null
+      },
+      {
+       "id": "G1",
+       "title": "Wat zijn gripsokken? Voordelen en verschil met gewone sokken",
+       "keyword": "wat zijn gripsokken",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1600,
+       "url": "/blogs/hi-grip/waarom-hi-grip-gripsokken",
+       "status": "written-thin",
+       "action": "SURVIVOR: retitle + expand 398 -> 1600; 301 /blogs/hi-grip/wat-zijn-gripsokken (340 w) and /blogs/trends/gripsokken-de-toekomst-van-jouw-sportoutfit here",
+       "evidence": "This URL ranks in 3 SERPs (wat zijn / verschil / blessures voorkomen); /wat-zijn-gripsokken ranks in none",
+       "volume": null
+      }
+     ]
+    },
+    {
+     "name": "Dragen & regels",
+     "posts": [
+      {
+       "id": "V2",
+       "title": "Afgeknipte voetbalsokken: waarom en hoe",
+       "keyword": "afgeknipte voetbalsokken",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1300,
+       "url": "/blogs/trends/afgeknipte-kousen-bij-amateurvoetbal-waarom-steeds-meer-spelers-kiezen-voor-gripsokken",
+       "status": "written-thin",
+       "action": "REFRESH 421 -> 1300 w; retitle (current <title> 'Waarom kiezen steeds meer sporters voor gripsokken?' lacks keyword)",
+       "evidence": "SERP: blogs (sockerwear, jouwzaken, prostec) + TikTok; overlap 3 with V3",
+       "volume": null
+      },
+      {
+       "id": "V3",
+       "title": "Hoe draag je gripsokken bij voetbal? (sleeves, tape, scheenbeschermers)",
+       "keyword": "hoe draag je gripsokken",
+       "intent": "Informational",
+       "template": "how-to",
+       "wordCount": 1300,
+       "url": "/blogs/hi-grip/hoe-draag-je-gripsokken-voetbal",
+       "status": "planned",
+       "action": "CREATE",
+       "evidence": "SERP: Stanno/Prostec/Stablesport how-to guides; overlap 3 with V2 (interlink, same cluster by intent tiebreak)",
+       "volume": null
+      },
+      {
+       "id": "V4",
+       "title": "Zijn gripsokken toegestaan door de KNVB?",
+       "keyword": "gripsokken toegestaan knvb",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1200,
+       "url": "/blogs/hi-grip/gripsokken-toegestaan-knvb",
+       "status": "planned",
+       "action": "CREATE (cite KNVB spelregels 2026/27)",
+       "evidence": "0 overlap with any keyword; SERP dominated by KNVB PDFs -> answer-gap, snippet/AI-overview candidate",
+       "volume": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P-TEN",
+   "title": "Gripsokken voor tennis",
+   "keyword": "gripsokken tennis",
+   "intent": "Commercial",
+   "template": "landing-page (hybrid pillar)",
+   "wordCount": 1500,
+   "url": "/pages/gripsokken-voor-tennis",
+   "status": "written-thin",
+   "action": "EXPAND 256 -> 1200-1500 w",
+   "evidence": "SERP: bol.com listings + Optigrip + skor; 0 overlap with 'tennissokken' (generic apparel PLPs) -> target 'gripsokken tennis', not 'tennissokken'",
+   "volume": null,
+   "clusters": [
+    {
+     "name": "Kiezen",
+     "posts": [
+      {
+       "id": "T1",
+       "title": "Beste sokken voor tennis: gripsokken vs tennissokken",
+       "keyword": "beste tennissokken",
+       "intent": "Commercial",
+       "template": "comparison",
+       "wordCount": 1400,
+       "url": "/blogs/hi-grip/beste-sokken-voor-tennis",
+       "status": "planned",
+       "action": "CREATE",
+       "evidence": "'beste sokken tennis grip' overlap 2 with pillar, 1 with 'tennissokken' -> own post bridging generic tennissok-searchers to gripsokken",
+       "volume": null
+      },
+      {
+       "id": "T2",
+       "title": "Gripsokken bij tennis en padel: verschil in bewegingen en ondergrond",
+       "keyword": "gripsokken tennis padel verschil",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1300,
+       "url": "/blogs/hi-grip/gripsokken-tennis-vs-padel",
+       "status": "planned",
+       "action": "CREATE (bridge post shared by tennis + padel clusters)",
+       "evidence": "overlap 3 tennis<->padel (shared bol.com listings, Optigrip 'tennis en padel') -> interlink bridge",
+       "volume": null
+      }
+     ]
+    },
+    {
+     "name": "Blessurevrij spelen",
+     "posts": [
+      {
+       "id": "T3",
+       "title": "Blaren bij tennis voorkomen",
+       "keyword": "blaren tennis voorkomen",
+       "intent": "Informational",
+       "template": "how-to",
+       "wordCount": 1200,
+       "url": "/blogs/hi-grip/blaren-tennis-voorkomen",
+       "status": "planned",
+       "action": "CREATE — HYPOTHESIS, validate SERP first",
+       "evidence": "not SERP-tested; derived from 'gripsokken blaren' SERP (sport-agnostic guides)",
+       "volume": null
+      },
+      {
+       "id": "G3",
+       "title": "Zijn gripsokken goed tegen blaren?",
+       "keyword": "gripsokken blaren",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1200,
+       "url": "/blogs/trends/smalle-voeten-brede-schoenen-zo-voorkomen-gripsokken-blaren",
+       "status": "written-thin",
+       "action": "REFRESH 301 -> 1200 w",
+       "evidence": "overlap 2 with G2 -> interlink",
+       "volume": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P-PAD",
+   "title": "Gripsokken voor padel",
+   "keyword": "gripsokken padel",
+   "intent": "Commercial",
+   "template": "landing-page (hybrid pillar)",
+   "wordCount": 1500,
+   "url": "/pages/gripsokken-voor-padel",
+   "status": "written-regressed",
+   "action": "RESTORE: was 747 w (findings/content.md, 2026-09-18), now 249 w",
+   "evidence": "SERP: bol/Optigrip/FitSockr/PadelHeld; overlap 3 with 'gripsokken tennis', 1 with 'padelsokken'",
+   "volume": null,
+   "clusters": [
+    {
+     "name": "Kiezen",
+     "posts": [
+      {
+       "id": "PA1",
+       "title": "Padelsokken kiezen: waar let je op?",
+       "keyword": "padelsokken",
+       "intent": "Commercial",
+       "template": "listicle",
+       "wordCount": 1300,
+       "url": "/blogs/hi-grip/padelsokken-kiezen",
+       "status": "planned",
+       "action": "CREATE",
+       "evidence": "'padelsokken' overlap 1 with pillar -> separate post; PadelHeld guide ranks for both -> guide format works",
+       "volume": null
+      },
+      {
+       "id": "T2",
+       "title": "Gripsokken bij tennis en padel: verschil in bewegingen en ondergrond",
+       "keyword": "gripsokken tennis padel verschil",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1300,
+       "url": "/blogs/hi-grip/gripsokken-tennis-vs-padel",
+       "status": "planned",
+       "action": "CREATE (bridge post shared by tennis + padel clusters)",
+       "evidence": "overlap 3 tennis<->padel (shared bol.com listings, Optigrip 'tennis en padel') -> interlink bridge",
+       "volume": null
+      }
+     ]
+    },
+    {
+     "name": "Blessurevrij spelen",
+     "posts": [
+      {
+       "id": "PA2",
+       "title": "Enkelblessures bij padel: helpen gripsokken?",
+       "keyword": "enkelblessure padel",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1200,
+       "url": "/blogs/hi-grip/enkelblessure-padel-gripsokken",
+       "status": "planned",
+       "action": "CREATE — HYPOTHESIS, validate SERP first",
+       "evidence": "not SERP-tested; bridges to G2 blessures spoke",
+       "volume": null
+      },
+      {
+       "id": "G2",
+       "title": "Blessures voorkomen met gripsokken",
+       "keyword": "gripsokken blessures voorkomen",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1500,
+       "url": "/blogs/trends/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+       "status": "written-thin",
+       "action": "SURVIVOR: merge 'waarom-gripsokken-het-verschil-maken-meer-stabiliteit-minder-blessures' + 'meer-grip-meer-vertrouwen...' (301)",
+       "evidence": "3 HÏ Grip posts on the same topic; none of them in 'blessures voorkomen gripsokken' SERP (G1 + FAQ rank instead) = dilution",
+       "volume": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P-RUG",
+   "title": "Gripsokken voor rugby",
+   "keyword": "gripsokken rugby",
+   "intent": "Commercial",
+   "template": "landing-page (hybrid pillar)",
+   "wordCount": 1500,
+   "url": "/pages/gripsokken-voor-rugby",
+   "status": "planned",
+   "action": "CREATE (URL returns 404 today)",
+   "evidence": "SERP: only product pages from niche shops (derugbyspecialist, rugbystuff, perfectlyperform), no Dutch guide -> low-competition gap; 0 overlap with 'rugby sokken'",
+   "volume": null,
+   "clusters": [
+    {
+     "name": "Dragen & kiezen",
+     "posts": [
+      {
+       "id": "R1",
+       "title": "Hoe draag je gripsokken bij rugby (tape, sleeves)",
+       "keyword": "gripsokken rugby dragen",
+       "intent": "Informational",
+       "template": "how-to",
+       "wordCount": 1200,
+       "url": "/blogs/hi-grip/gripsokken-rugby-dragen",
+       "status": "planned",
+       "action": "CREATE after pillar — HYPOTHESIS",
+       "evidence": "rugby SERP has zero Dutch info content -> first-mover",
+       "volume": null
+      },
+      {
+       "id": "R2",
+       "title": "Rugbysokken vs gripsokken: wat draag je in de scrum?",
+       "keyword": "rugbysokken",
+       "intent": "Commercial",
+       "template": "comparison",
+       "wordCount": 1200,
+       "url": "/blogs/hi-grip/rugbysokken-vs-gripsokken",
+       "status": "planned",
+       "action": "CREATE after pillar",
+       "evidence": "'rugby sokken' SERP = kit PLPs (Decathlon, Canterbury), 0 overlap with 'gripsokken rugby' -> needs own comparison page, not the pillar",
+       "volume": null
+      }
+     ]
+    },
+    {
+     "name": "Blessurevrij spelen",
+     "posts": [
+      {
+       "id": "G2",
+       "title": "Blessures voorkomen met gripsokken",
+       "keyword": "gripsokken blessures voorkomen",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1500,
+       "url": "/blogs/trends/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+       "status": "written-thin",
+       "action": "SURVIVOR: merge 'waarom-gripsokken-het-verschil-maken-meer-stabiliteit-minder-blessures' + 'meer-grip-meer-vertrouwen...' (301)",
+       "evidence": "3 HÏ Grip posts on the same topic; none of them in 'blessures voorkomen gripsokken' SERP (G1 + FAQ rank instead) = dilution",
+       "volume": null
+      },
+      {
+       "id": "G3",
+       "title": "Zijn gripsokken goed tegen blaren?",
+       "keyword": "gripsokken blaren",
+       "intent": "Informational",
+       "template": "explainer",
+       "wordCount": 1200,
+       "url": "/blogs/trends/smalle-voeten-brede-schoenen-zo-voorkomen-gripsokken-blaren",
+       "status": "written-thin",
+       "action": "REFRESH 301 -> 1200 w",
+       "evidence": "overlap 2 with G2 -> interlink",
+       "volume": null
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "P-PIL",
+   "title": "Gripsokken voor pilates",
+   "keyword": "grip sokken pilates",
+   "intent": "Commercial",
+   "template": "landing-page",
+   "wordCount": 1200,
+   "url": "/pages/pilates",
+   "status": "written-thin",
+   "action": "EXPAND 101 w, add H1 (none today); secondary, not beachhead",
+   "evidence": "overlap 6 'grip sokken pilates' <-> 'pilates sokken' -> one target page",
+   "volume": null,
+   "clusters": [],
+   "note": "secondary, off-beachhead; no new spokes"
+  }
+ ],
+ "evergreen_shared_spokes": [
+  {
+   "id": "G1",
+   "title": "Wat zijn gripsokken? Voordelen en verschil met gewone sokken",
+   "keyword": "wat zijn gripsokken",
+   "intent": "Informational",
+   "template": "explainer",
+   "wordCount": 1600,
+   "url": "/blogs/hi-grip/waarom-hi-grip-gripsokken",
+   "status": "written-thin",
+   "action": "SURVIVOR: retitle + expand 398 -> 1600; 301 /blogs/hi-grip/wat-zijn-gripsokken (340 w) and /blogs/trends/gripsokken-de-toekomst-van-jouw-sportoutfit here",
+   "evidence": "This URL ranks in 3 SERPs (wat zijn / verschil / blessures voorkomen); /wat-zijn-gripsokken ranks in none",
+   "volume": null
+  },
+  {
+   "id": "G2",
+   "title": "Blessures voorkomen met gripsokken",
+   "keyword": "gripsokken blessures voorkomen",
+   "intent": "Informational",
+   "template": "explainer",
+   "wordCount": 1500,
+   "url": "/blogs/trends/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+   "status": "written-thin",
+   "action": "SURVIVOR: merge 'waarom-gripsokken-het-verschil-maken-meer-stabiliteit-minder-blessures' + 'meer-grip-meer-vertrouwen...' (301)",
+   "evidence": "3 HÏ Grip posts on the same topic; none of them in 'blessures voorkomen gripsokken' SERP (G1 + FAQ rank instead) = dilution",
+   "volume": null
+  },
+  {
+   "id": "G3",
+   "title": "Zijn gripsokken goed tegen blaren?",
+   "keyword": "gripsokken blaren",
+   "intent": "Informational",
+   "template": "explainer",
+   "wordCount": 1200,
+   "url": "/blogs/trends/smalle-voeten-brede-schoenen-zo-voorkomen-gripsokken-blaren",
+   "status": "written-thin",
+   "action": "REFRESH 301 -> 1200 w",
+   "evidence": "overlap 2 with G2 -> interlink",
+   "volume": null
+  },
+  {
+   "id": "G4",
+   "title": "De wetenschap achter gripsokken",
+   "keyword": "gripsokken wetenschappelijk bewezen",
+   "intent": "Informational",
+   "template": "explainer",
+   "wordCount": 1400,
+   "url": "/blogs/hi-grip/de-wetenschap-achter-gripsokken",
+   "status": "written",
+   "action": "KEEP; E-E-A-T proof page (1,17 vs 0,60) — link from every pillar",
+   "evidence": "strongest proof asset; fix Article schema per findings/schema.md",
+   "volume": null
+  },
+  {
+   "id": "G5",
+   "title": "Gripsokken wassen: temperatuur en levensduur",
+   "keyword": "gripsokken wassen",
+   "intent": "Informational",
+   "template": "how-to",
+   "wordCount": 1200,
+   "url": "/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken",
+   "status": "written-thin",
+   "action": "SURVIVOR: merge 'hoe-verleng-je-de-levensduur-van-je-gripsokken' (301)",
+   "evidence": "two posts, same intent; SERP 'gripsokken wassen' = how-to guides (Maestro, Mastr), HÏ Grip absent",
+   "volume": null
+  }
+ ],
+ "links": [
+  {
+   "from": "P-VOET",
+   "to": "V1",
+   "type": "mandatory",
+   "anchor": "beste gripsokken voetbal"
+  },
+  {
+   "from": "V1",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "G1",
+   "type": "mandatory",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "G1",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "V1",
+   "to": "G1",
+   "type": "recommended",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "G1",
+   "to": "V1",
+   "type": "recommended",
+   "anchor": "beste gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "V2",
+   "type": "mandatory",
+   "anchor": "afgeknipte voetbalsokken"
+  },
+  {
+   "from": "V2",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "V3",
+   "type": "mandatory",
+   "anchor": "hoe draag je gripsokken"
+  },
+  {
+   "from": "V3",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "V4",
+   "type": "mandatory",
+   "anchor": "gripsokken toegestaan knvb"
+  },
+  {
+   "from": "V4",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "V2",
+   "to": "V3",
+   "type": "recommended",
+   "anchor": "hoe draag je gripsokken"
+  },
+  {
+   "from": "V2",
+   "to": "V4",
+   "type": "recommended",
+   "anchor": "gripsokken toegestaan knvb"
+  },
+  {
+   "from": "V3",
+   "to": "V2",
+   "type": "recommended",
+   "anchor": "afgeknipte voetbalsokken"
+  },
+  {
+   "from": "V3",
+   "to": "V4",
+   "type": "recommended",
+   "anchor": "gripsokken toegestaan knvb"
+  },
+  {
+   "from": "V4",
+   "to": "V2",
+   "type": "recommended",
+   "anchor": "afgeknipte voetbalsokken"
+  },
+  {
+   "from": "V4",
+   "to": "V3",
+   "type": "recommended",
+   "anchor": "hoe draag je gripsokken"
+  },
+  {
+   "from": "P-TEN",
+   "to": "T1",
+   "type": "mandatory",
+   "anchor": "beste tennissokken"
+  },
+  {
+   "from": "T1",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "P-TEN",
+   "to": "T2",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis padel verschil"
+  },
+  {
+   "from": "T2",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "T1",
+   "to": "T2",
+   "type": "recommended",
+   "anchor": "gripsokken tennis padel verschil"
+  },
+  {
+   "from": "T2",
+   "to": "T1",
+   "type": "recommended",
+   "anchor": "beste tennissokken"
+  },
+  {
+   "from": "P-TEN",
+   "to": "T3",
+   "type": "mandatory",
+   "anchor": "blaren tennis voorkomen"
+  },
+  {
+   "from": "T3",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "P-TEN",
+   "to": "G3",
+   "type": "mandatory",
+   "anchor": "gripsokken blaren"
+  },
+  {
+   "from": "G3",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "T3",
+   "to": "G3",
+   "type": "recommended",
+   "anchor": "gripsokken blaren"
+  },
+  {
+   "from": "G3",
+   "to": "T3",
+   "type": "recommended",
+   "anchor": "blaren tennis voorkomen"
+  },
+  {
+   "from": "P-PAD",
+   "to": "PA1",
+   "type": "mandatory",
+   "anchor": "padelsokken"
+  },
+  {
+   "from": "PA1",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "P-PAD",
+   "to": "T2",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis padel verschil"
+  },
+  {
+   "from": "T2",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "PA1",
+   "to": "T2",
+   "type": "recommended",
+   "anchor": "gripsokken tennis padel verschil"
+  },
+  {
+   "from": "T2",
+   "to": "PA1",
+   "type": "recommended",
+   "anchor": "padelsokken"
+  },
+  {
+   "from": "P-PAD",
+   "to": "PA2",
+   "type": "mandatory",
+   "anchor": "enkelblessure padel"
+  },
+  {
+   "from": "PA2",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "P-PAD",
+   "to": "G2",
+   "type": "mandatory",
+   "anchor": "gripsokken blessures voorkomen"
+  },
+  {
+   "from": "G2",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "PA2",
+   "to": "G2",
+   "type": "recommended",
+   "anchor": "gripsokken blessures voorkomen"
+  },
+  {
+   "from": "G2",
+   "to": "PA2",
+   "type": "recommended",
+   "anchor": "enkelblessure padel"
+  },
+  {
+   "from": "P-RUG",
+   "to": "R1",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby dragen"
+  },
+  {
+   "from": "R1",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "P-RUG",
+   "to": "R2",
+   "type": "mandatory",
+   "anchor": "rugbysokken"
+  },
+  {
+   "from": "R2",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "R1",
+   "to": "R2",
+   "type": "recommended",
+   "anchor": "rugbysokken"
+  },
+  {
+   "from": "R2",
+   "to": "R1",
+   "type": "recommended",
+   "anchor": "gripsokken rugby dragen"
+  },
+  {
+   "from": "P-RUG",
+   "to": "G2",
+   "type": "mandatory",
+   "anchor": "gripsokken blessures voorkomen"
+  },
+  {
+   "from": "G2",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "P-RUG",
+   "to": "G3",
+   "type": "mandatory",
+   "anchor": "gripsokken blaren"
+  },
+  {
+   "from": "G3",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "G2",
+   "to": "G3",
+   "type": "recommended",
+   "anchor": "gripsokken blaren"
+  },
+  {
+   "from": "G3",
+   "to": "G2",
+   "type": "recommended",
+   "anchor": "gripsokken blessures voorkomen"
+  },
+  {
+   "from": "HUB",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "HUB",
+   "type": "mandatory",
+   "anchor": "alle gripsokken"
+  },
+  {
+   "from": "HUB",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "P-TEN",
+   "to": "HUB",
+   "type": "mandatory",
+   "anchor": "alle gripsokken"
+  },
+  {
+   "from": "HUB",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "P-PAD",
+   "to": "HUB",
+   "type": "mandatory",
+   "anchor": "alle gripsokken"
+  },
+  {
+   "from": "HUB",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "P-RUG",
+   "to": "HUB",
+   "type": "mandatory",
+   "anchor": "alle gripsokken"
+  },
+  {
+   "from": "HUB",
+   "to": "P-PIL",
+   "type": "mandatory",
+   "anchor": "grip sokken pilates"
+  },
+  {
+   "from": "P-PIL",
+   "to": "HUB",
+   "type": "mandatory",
+   "anchor": "alle gripsokken"
+  },
+  {
+   "from": "P-TEN",
+   "to": "P-PAD",
+   "type": "recommended",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "P-PAD",
+   "to": "P-TEN",
+   "type": "recommended",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "P-VOET",
+   "to": "P-RUG",
+   "type": "recommended",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "P-RUG",
+   "to": "P-VOET",
+   "type": "recommended",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "P-VOET",
+   "to": "G4",
+   "type": "recommended",
+   "anchor": "wetenschappelijk bewezen grip"
+  },
+  {
+   "from": "P-VOET",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "P-TEN",
+   "to": "G4",
+   "type": "recommended",
+   "anchor": "wetenschappelijk bewezen grip"
+  },
+  {
+   "from": "P-TEN",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "P-TEN",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "P-PAD",
+   "to": "G4",
+   "type": "recommended",
+   "anchor": "wetenschappelijk bewezen grip"
+  },
+  {
+   "from": "P-PAD",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "P-PAD",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "P-RUG",
+   "to": "G4",
+   "type": "recommended",
+   "anchor": "wetenschappelijk bewezen grip"
+  },
+  {
+   "from": "P-RUG",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "P-RUG",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "P-PIL",
+   "to": "G4",
+   "type": "recommended",
+   "anchor": "wetenschappelijk bewezen grip"
+  },
+  {
+   "from": "P-PIL",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "P-PIL",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "SPORTHUB",
+   "to": "P-VOET",
+   "type": "mandatory",
+   "anchor": "gripsokken voetbal"
+  },
+  {
+   "from": "SPORTHUB",
+   "to": "P-TEN",
+   "type": "mandatory",
+   "anchor": "gripsokken tennis"
+  },
+  {
+   "from": "SPORTHUB",
+   "to": "P-PAD",
+   "type": "mandatory",
+   "anchor": "gripsokken padel"
+  },
+  {
+   "from": "SPORTHUB",
+   "to": "P-RUG",
+   "type": "mandatory",
+   "anchor": "gripsokken rugby"
+  },
+  {
+   "from": "SPORTHUB",
+   "to": "P-PIL",
+   "type": "mandatory",
+   "anchor": "grip sokken pilates"
+  },
+  {
+   "from": "HUB",
+   "to": "SPORTHUB",
+   "type": "recommended",
+   "anchor": "ontdek jouw sport"
+  },
+  {
+   "from": "V3",
+   "to": "R1",
+   "type": "optional",
+   "anchor": "gripsokken rugby dragen"
+  },
+  {
+   "from": "R1",
+   "to": "V3",
+   "type": "optional",
+   "anchor": "hoe draag je gripsokken"
+  },
+  {
+   "from": "T1",
+   "to": "PA1",
+   "type": "optional",
+   "anchor": "padelsokken"
+  },
+  {
+   "from": "PA1",
+   "to": "T1",
+   "type": "optional",
+   "anchor": "beste tennissokken"
+  },
+  {
+   "from": "G1",
+   "to": "G4",
+   "type": "optional",
+   "anchor": "gripsokken wetenschappelijk bewezen"
+  },
+  {
+   "from": "G4",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "G2",
+   "to": "G4",
+   "type": "optional",
+   "anchor": "gripsokken wetenschappelijk bewezen"
+  },
+  {
+   "from": "G5",
+   "to": "G1",
+   "type": "optional",
+   "anchor": "wat zijn gripsokken"
+  },
+  {
+   "from": "G1",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "V1",
+   "to": "G5",
+   "type": "optional",
+   "anchor": "gripsokken wassen"
+  },
+  {
+   "from": "V1",
+   "to": "G4",
+   "type": "optional",
+   "anchor": "gripsokken wetenschappelijk bewezen"
+  },
+  {
+   "from": "R2",
+   "to": "T1",
+   "type": "optional",
+   "anchor": "beste tennissokken"
+  },
+  {
+   "from": "G1",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "V1",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "T1",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "PA1",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "R2",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "G5",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "G4",
+   "to": "HUB",
+   "type": "optional",
+   "anchor": "gripsokken kopen"
+  },
+  {
+   "from": "PA2",
+   "to": "T3",
+   "type": "optional",
+   "anchor": "blaren tennis voorkomen"
+  },
+  {
+   "from": "T3",
+   "to": "PA2",
+   "type": "optional",
+   "anchor": "enkelblessure padel"
+  },
+  {
+   "from": "G4",
+   "to": "V1",
+   "type": "optional",
+   "anchor": "beste gripsokken voetbal"
+  },
+  {
+   "from": "G2",
+   "to": "R1",
+   "type": "optional",
+   "anchor": "gripsokken rugby dragen"
+  },
+  {
+   "from": "R1",
+   "to": "G2",
+   "type": "optional",
+   "anchor": "gripsokken blessures voorkomen"
+  },
+  {
+   "from": "T2",
+   "to": "G4",
+   "type": "optional",
+   "anchor": "gripsokken wetenschappelijk bewezen"
+  },
+  {
+   "from": "G1",
+   "to": "R2",
+   "type": "optional",
+   "anchor": "rugbysokken"
+  },
+  {
+   "from": "G1",
+   "to": "P-PIL",
+   "type": "optional",
+   "anchor": "grip sokken pilates"
+  }
+ ],
+ "serp_matrix": {
+  "keywords": [
+   "gripsokken",
+   "gripsokken kopen",
+   "gripsokken voetbal",
+   "beste gripsokken voetbal",
+   "afgeknipte voetbalsokken",
+   "hoe draag je gripsokken voetbal",
+   "gripsokken knvb toegestaan",
+   "gripsokken tennis",
+   "beste sokken tennis grip",
+   "tennissokken",
+   "gripsokken padel",
+   "padelsokken",
+   "gripsokken rugby",
+   "rugby sokken",
+   "wat zijn gripsokken",
+   "verschil gripsokken gewone sokken",
+   "blessures voorkomen gripsokken",
+   "gripsokken blaren",
+   "gripsokken wassen",
+   "gripsokken fitness",
+   "grip sokken pilates",
+   "pilates sokken",
+   "anti slip sokken"
+  ],
+  "scores": [
+   [
+    10,
+    2,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    10,
+    4,
+    2,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    3,
+    1,
+    1,
+    3,
+    0,
+    0,
+    0
+   ],
+   [
+    3,
+    4,
+    10,
+    4,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    2,
+    2,
+    4,
+    10,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    10,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    1,
+    0,
+    3,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    2,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    10,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    0,
+    10,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    10,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    1,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    10,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    3,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    2,
+    1,
+    10,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    2,
+    10,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    1,
+    1,
+    0
+   ],
+   [
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    1,
+    2,
+    1,
+    0,
+    10,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    10,
+    6,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    6,
+    10,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10
+   ]
+  ]
+ },
+ "consolidation": [
+  {
+   "from": "/blogs/hi-grip/wat-zijn-gripsokken",
+   "to": "/blogs/hi-grip/waarom-hi-grip-gripsokken",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/gripsokken-de-toekomst-van-jouw-sportoutfit",
+   "to": "/blogs/hi-grip/waarom-hi-grip-gripsokken",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/waarom-gripsokken-het-verschil-maken-meer-stabiliteit-minder-blessures",
+   "to": "/blogs/trends/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/meer-grip-meer-vertrouwen-hoe-de-juiste-sokken-je-sportprestatie-verbeteren",
+   "to": "/blogs/trends/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/hoe-verleng-je-de-levensduur-van-je-gripsokken",
+   "to": "/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/gripsokken-tijdens-pilates-en-yoga-optimale-grip-en-comfort-met-hi-grip",
+   "to": "/blogs/trends/waarom-gripsokken-verplicht-zijn-bij-pilates",
+   "action": "301"
+  },
+  {
+   "from": "/blogs/trends/welke-gripsokken-bestaan-er-van-budget-tot-premium-wat-kies-jij",
+   "to": "/blogs/hi-grip/beste-gripsokken-voetbal",
+   "action": "301 after V1 is live"
+  },
+  {
+   "from": "/blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-van-voetbal-tot-pilates",
+   "to": "/pages/ontdek-jouw-sport",
+   "action": "301 after sport-hub page is expanded"
+  },
+  {
+   "from": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding",
+   "to": "/blogs/trends",
+   "action": "301 (45 words, off-topic)"
+  },
+  {
+   "from": "/blogs/2630309_gripsokken-tijdens-pilates-yoga-optimale-grip-en-comfort-met-hi-grip",
+   "to": "/blogs/trends/waarom-gripsokken-verplicht-zijn-bij-pilates",
+   "action": "301 (legacy URL still in Google index, returns 404)"
+  },
+  {
+   "from": "/blogs/2590799_het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters",
+   "to": "/blogs/hi-grip/het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters",
+   "action": "301 + fix in-body link (404, linked from krachttraining post)"
+  }
+ ],
+ "not_clustered": {
+  "anti slip sokken": "excluded: SERP = elderly/medical/house socks (Medipoint, Vitaness, hulpmiddelenwijzer), 0 overlap with any grip keyword",
+  "tennissokken": "not targeted by pillar: generic apparel PLPs, 0 overlap with 'gripsokken tennis'",
+  "rugby sokken": "handled by R2 comparison only, 0 overlap with 'gripsokken rugby'",
+  "gripsokken fitness": "keep existing krachttraining post (ranks, pos ~6); off-beachhead, link to HUB only",
+  "brand/off-topic posts": [
+   "hoe-is-hi-grip-ontstaan",
+   "de-geschiedenis-van-gripsokken",
+   "de-twee-grootste-problemen...",
+   "het-innovatieve-hi-grip-grippatroon...",
+   "een-ochtendroutine-met-grip...",
+   "waarom-sporten-meer-is-dan-bewegen...",
+   "waarom-steeds-meer-sportclubs... (-> link /pages/zakelijk)"
+  ]
+ },
+ "scorecard": {
+  "coverage": 0.52,
+  "linkDensity": 5.0,
+  "orphanPages": 0,
+  "cannibalization": 6,
+  "contentGaps": 11
+ },
+ "validation": {
+  "duplicate_primary_keywords": [],
+  "spokes_below_3_incoming": {},
+  "orphans": [],
+  "spoke_to_pillar_missing": [],
+  "pillar_to_spoke_missing": []
+ }
+}

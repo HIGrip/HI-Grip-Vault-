@@ -5,10 +5,10 @@ datum: 2026-09-21
 bron: routine
 routine: "denzel-week"
 categorie: SEO
-status: nieuw
+status: gearchiveerd
 prioriteit: P1
 samenvatting: "De €0-week is doorbroken met 2 orders (€26,25), maar het echte Nederlandse verkeer daalde 22%: de groei is botverkeer uit de VS/China. WebSite- en FAQPage-schema staan 3 weken op rij niet live en de live FAQ spreekt de bevestigde waarden tegen (16:00/14 dagen/€30 i.p.v. 22:00/30 dagen/€35); het herstelpakket ligt klaar in het werkthema."
-gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines]
+gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines, 2026-09-28-weekoverzicht]
 vervangt: [2026-09-14-weekoverzicht]
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-09-21.md"
 deadline: ""

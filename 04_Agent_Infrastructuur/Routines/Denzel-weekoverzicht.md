@@ -144,7 +144,7 @@ deadline: ""
 
 ## 9. Build, publish, commit
 1. `python 05_Research/_build/build_register.py`. Exit 0 is verplicht; bij een validatiefout repareer je de notitie, niet het script.
-2. **Publish (A5)** naar https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV als je schrijfrechten hebt. Lukt het niet (geen rechten of een conflict)? Meld het en ga door. De dagelijkse Growth Radar publiceert ook.
+2. **Publish (A5)** naar https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS als je schrijfrechten hebt. Lukt het niet (geen rechten of een conflict)? Meld het en ga door. De dagelijkse Growth Radar publiceert ook.
 3. `git add` alleen de bestanden van deze run, commit `research: JJJJ-MM-DD-weekoverzicht geregistreerd`, `git pull --rebase`, `git push` naar `HÏ-Grip-Vault-obsidian`.
 
 Bestanden die je mag wijzigen:

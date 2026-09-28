@@ -13,14 +13,14 @@
 | **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[Overzicht]] · [[Partnership Strategie]] |
 | **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[Website Doel & KPI's]] · [[Technische Procedures]] |
 | **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`identiteit.md`), hoe hij zich gedraagt (`soul.md`), en de gedeelde regels. | [[Agent Hiërarchie & Structuurschema]] |
-| **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
+| **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 
 ---
 
 ## Kern-ingangen
 
 **Onderzoek**
-- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
+- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
 
 **Merk**
 - [[Brand Identity Overview]] — verhaal, missie, visie, waarden (enige plek)
@@ -63,7 +63,7 @@
 | **Werkafspraken/correcties voor Claude** | losse feedback- en projectregels | Claude Code memory (`MEMORY.md` + `memory/*.md`) |
 | **Wekelijkse routine** | Denzel-weekoverzicht (maandag) | claude.ai cloud-routine — zie [[Denzel Weekoverzicht — Routine]] |
 | **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `05_Research/` in deze vault — [[Waar staat wat]] |
-| **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV (claude.ai, org-intern) |
+| **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (claude.ai, org-intern) |
 | **Dagelijkse routines** | Growth Radar (dagelijks ~05:30) en SEO-regressiecheck (maandag 07:00) — rapporten + `ACTIEBACKLOG.md` | `C:\Users\Test\.claude\research\growth-radar\` (fase 2: naar de vault); registratie in `05_Research/` |
 | **Projecten (code)** | padel-landing, redesign, skisokken | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` |
 | **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |

@@ -64,7 +64,7 @@ De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-
 
 ## Werken vanuit het dashboard
 
-Het dashboard (https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV) schrijft alleen wensen in zijn eigen database. De **sync** (`acties.py importeer`, zie `PROCEDURE.md` B) zet ze in de vault; de vault blijft de waarheid. De sync draait aan het begin van de Actiecontrole (05:00) en de Uitvoerder (06:15) en aan het eind van elke onderzoeksroutine.
+Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) schrijft alleen wensen in zijn eigen database. De **sync** (`acties.py importeer`, zie `PROCEDURE.md` B) zet ze in de vault; de vault blijft de waarheid. De sync draait aan het begin van de Actiecontrole (05:00) en de Uitvoerder (06:15) en aan het eind van elke onderzoeksroutine.
 
 - **Afvinken, status, aantekening** → notitie of `ACTIEBACKLOG.md`.
 - **Beheer** (eigenaar, uitstellen tot, niet doen met reden, prioriteit) → `_backlog/BEHEER.json`. De Actiecontrole slaat acties op "niet doen" of met uitstel over.

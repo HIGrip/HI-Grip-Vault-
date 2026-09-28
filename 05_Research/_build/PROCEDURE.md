@@ -2,7 +2,7 @@
 
 > Eén bron voor alle afnemers: de commands `/research-nieuw` en `/research-sync` en alle routines in `04_Agent_Infrastructuur\Routines\` verwijzen hiernaar met "lees en volg PROCEDURE.md". Wijzig de procedure hier, nergens anders.
 >
-> **De vault is de waarheid.** Het dashboard (https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV) toont het gebouwde register; wat mensen daar afvinken, wijzigen, noteren, goedkeuren of toevoegen komt via stap B terug in de vault.
+> **De vault is de waarheid.** Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) toont het gebouwde register; wat mensen daar afvinken, wijzigen, noteren, goedkeuren of toevoegen komt via stap B terug in de vault.
 
 ## Vaste paden
 
@@ -19,7 +19,7 @@
 | Geheugen routines | `05_Research\_geheugen\<routine>.md` — regels in `_geheugen\README.md` |
 | Feiten | `00_Brand_Core\Feiten & Actuele Staat.md` — prijzen, handles, URL's, ID's, claims; nooit in prompts |
 | Routine-prompts | `04_Agent_Infrastructuur\Routines\` — rolverdeling in `README.md` |
-| Dashboard-URL | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
+| Dashboard-URL | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 
 ## Notitieformaat
 

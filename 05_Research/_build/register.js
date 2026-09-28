@@ -691,7 +691,7 @@ window.HI_RESEARCH = {
    "dubbel": 7,
    "gedaan": 10,
    "handmatig": 47,
-   "ongecontroleerd": 16,
+   "ongecontroleerd": 25,
    "open": 88
   },
   "vandaag_gedaan": [],
@@ -1824,7 +1824,7 @@ window.HI_RESEARCH = {
    "toegepast": 4
   }
  },
- "gebouwd": "2026-09-28T08:27:25+00:00",
+ "gebouwd": "2026-09-28T08:32:10+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
   {
@@ -1918,7 +1918,8 @@ window.HI_RESEARCH = {
     "2026-09-21-weekoverzicht",
     "2026-09-28-regressiecheck",
     "2026-09-23-seo-conversietest-run-1",
-    "2026-09-25-search-console"
+    "2026-09-25-search-console",
+    "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard"
    ],
    "id": "2026-09-28-weekoverzicht",
    "kansen": [],
@@ -2059,6 +2060,155 @@ window.HI_RESEARCH = {
    "wat_niet_lukte": "- **PageSpeed Insights** (homepage, `/collections/gripsokken`, `/products/performance-gripsokken`): HTTP 429, quotum op. PageSpeed Insights API staat uit in het Cloud-project `higrip-analytics`; nodig is óf de API aanzetten óf een `PAGESPEED_API_KEY`.\n- **`shopify theme check`**: thema-map `C:\\Users\\Test\\higrip-theme` is niet beschikbaar in deze cloudomgeving. Overgeslagen, zoals in elke eerdere…"
   },
   {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#47525a8b",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Routine \"HÏ Grip — Actiecontrole\" op info@ bewerken: repository HIGrip/higrip-vault met schrijfrechten toevoegen (nu leeg) en na de run van 29-09 controleren dat CONTROLE.json en _data/ die dag zijn bijgewerkt",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#a9d2df15",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: Research Dashboard via het Share-menu delen met Lars, Tigo en Timo (nu alleen zichtbaar voor info@)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#e6a6b0b2",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Weekoverzichten 2026-09-14 en 2026-09-21 van status gearchiveerd naar verwerkt zetten, zodat hun 11 open acties weer meetellen of bewust op niet doen gaan",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#bca6ece1",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Dubbele acties uit deze notitie (sectie Dubbele acties) laten markeren als dubbel door de actiecontrole, met het backlogpunt als hoofdactie",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1cd8b622",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Denzel-prompt aanvullen: bestaat er al een backlogpunt voor een besluit, verwijs ernaar in plaats van een nieuwe Besluit-actie te maken",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#3055da63",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Routines/README.md bijwerken: repository heet nu HIGrip/higrip-vault, en per routine de gekoppelde bron als controlepunt in de statustabel",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#649b98b0",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: Uitvoerder als cloudroutine op info@ aanmaken; zonder Uitvoerder blijven goedkeuringen op het dashboard liggen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#b4525640",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Achterhaalde acties op niet doen zetten via het dashboard: 2026-09-04-werkdossier-stand-van-zaken#7a54ab83 (22:00, feitenbestand zegt 1 werkdag), #f9369bdd (GSC-export, vervangen door google_data.py) en 2026-09-25-evaluatie-routines#5c41af01 (één backlog bestaat sinds 25-09)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1c8db1a7",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "9 claude/-branches zonder eigen commits verwijderen en claude/nifty-fermat-kr7pe6 (flyer in serif, juni) beoordelen: overnemen of weg",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Optimalisatiecheck werkwijze routines en dashboard — 28 september 2026\n\n## In het kort\nDe keten routine → vault → dashboard werkt voor de onderzoeksroutines: alles van vandaag staat op `HÏ-Grip-Vault-obsidian`. De Actiecontrole, het hart van het afvinken en de dashboardcijfers, legt sinds 26-09 niets meer vast. Oorzaak: de cloudroutine heeft geen bronrepository. Verder lekt er werk weg via archivering en dubbele acties.\n\n## Kerncijfers\n- **0** · Commits van de Actiecontrole sinds 26-09 · laatste run \"geslaagd\"\n- **11** · Open acties in gearchiveerde weekoverzichten\n- **9** · claude/-branches zonder eigen commits\n- **7 van 14** · Routines nog niet aangemaakt op info@\n\n## Acties\n- [ ] P1 · Routine \"HÏ Grip — Actiecontrole\" op info@ bewerken: repository HIGrip/higrip-vault met schrijfrechten toevoegen (nu leeg) en na de run van 29-09 controleren dat CONTROLE.json en _data/ die dag zijn bijgewerkt\n- [ ] P1 · Besluit: Research Dashboard via het Share-menu delen met Lars, Tigo en Timo (nu alleen zichtbaar voor info@)\n- [ ] P2 · Weekoverzichten 2026-09-14 en 2026-09-21 van status gearchiveerd naar verwerkt zetten, zodat hun 11 open acties weer meetellen of bewust op niet doen gaan\n- [ ] P2 · Dubbele acties uit deze notitie (sectie Dubbele acties) laten markeren als dubbel door de actiecontrole, met het backlogpunt als hoofdactie\n- [ ] P2 · Denzel-prompt aanvullen: bestaat er al een backlogpunt voor een besluit, verwijs ernaar in plaats van een nieuwe Besluit-actie te maken\n- [ ] P2 · Routines/README.md bijwerken: repository heet nu HIGrip/higrip-vault, en per routine de gekoppelde bron als controlepunt in de statustabel\n- [ ] P2 · Besluit: Uitvoerder als cloudroutine op info@ aanmaken; zonder Uitvoerder blijven goedkeuringen op het dashboard liggen\n- [ ] P3 · Achterhaalde acties op niet doen zetten via het dashboard: 2026-09-04-werkdossier-stand-van-zaken#7a54ab83 (22:00, feitenbestand zegt 1 werkdag), #f9369bdd (GSC-export, vervangen door google_data.py) en 2026-09-25-evaluatie-routines#5c41af01 (één backlog bestaat sinds 25-09)\n- [ ] P3 · 9 claude/-branches zonder eigen commits verwijderen en claude/nifty-fermat-kr7pe6 (flyer in serif, juni) beoordelen: overnemen of weg\n\n## Bevindingen\n\n### Actiecontrole: routine zonder repository\n- Trigger `trig_01NPCazQ7XMqTc5TkwYJXVrJ`, cron `1 3 * * *` (05:01 NL), laatste run 28-09 03:01 UTC met status SUCCEEDED, duur 2 minuten, 6.118 output-tokens.\n- De sessie van die run heeft **geen `sources`** (geen repository) en geen uitvoerbranch. De Growth Radar-sessie van dezelfde ochtend heeft wel `HIGrip/HI-Grip-Vault-` als bron en pusht naar `claude/lucid-thompson-lyt9hi` en de hoofdbranch.\n- Zonder repository kan de routine `Actiecontrole.md` niet lezen, dus niets doen: geen commit op de hoofdbranch en geen eigen `claude/...`-branch. Hij faalt dus niet en pusht niet naar een andere branch: hij stopt vroeg zonder werk.\n- `CONTROLE.json` `laatste_run` 26-09 05:04 komt uit commit 449133c van Lars (lokaal), niet uit de cloudroutine.\n- De prompt verwijst nog correct naar `04_Agent_Infrastructuur/Routines/Actiecontrole.md` (\"Werk op branch HÏ-Grip-Vault-obsidian en push met git push origin HEAD:HÏ-Grip-Vault-obsidian\").\n- Connectors op de routine: Canva, Claude-Docs, Shopify, visualize. Volgens de README hoort alleen Shopify aan; Canva, Claude-Docs en visualize kosten tokens zonder nut. Dat geldt voor alle 6 routines.\n\n### Dashboard\n- Gepubliceerde `data/register.js` was byte-gelijk aan de build van 7787c22 (08:18 UTC); na deze sync is versie 3 gepubliceerd met de build van 08:27 UTC.\n- De publish meldt \"readable by only you\": het artifact is **privé**. Lars, Tigo en Timo kunnen het niet openen tot het via het Share-menu gedeeld is. Niets aan gewijzigd.\n- Opmerking bij de sync: `acties.py importeer` geeft in `te_verwijderen` doc-id's met `@`, terwijl de db `~` gebruikt. Het command `/research-sync` vangt dat af (\"gebruik het id uit het list-resultaat\"), maar een routine die `te_verwijderen` letterlijk doorgeeft, verwijdert niets.\n\n### Dubbele acties (5a)\nOpen acties uit niet-gearchiveerde notities die inhoudelijk hetzelfde zijn:\n- Titel/meta oude productpagina: 2026-09-25-search-console#6ae3949f = backlog#52886b90.\n- \"Grip socks\" consolideren: 2026-09-25-search-console#0323b05e = backlog#8f8db388.\n- Structured data naar live: 2026-09-28-weekoverzicht#2eb8c419 = backlog#fac26f6c.\n- /en/-homepage: 2026-09-28-weekoverzicht#c7d8f1a0 = backlog#2c3eb956.\n- Verzend- en retourbeleid gelijktrekken: 2026-09-28-weekoverzicht#4bff672b = backlog#246c61d9 = 2026-09-25-seo-audit#5c1c6209 = 2026-09-23-seo-conversietest-run-1#db685bc3 (en achterhaald: 2026-09-04-werkdossier-stand-van-zaken#7a54ab83).\n- u-vorm naar je-vorm: 2026-09-24-growth-radar-cro#76b6296e = 2026-09-15-seo-audit#864864f2 = 2026-09-23-seo-conversietest-run-1#1b318f84.\n- Alt-teksten: 2026-09-25-seo-audit#d619f84b = 2026-09-23-seo-conversietest-run-1#b441fff5 = 2026-09-15-seo-audit#7dda01c0.\n- SEO-titels en meta's: 2026-09-23-seo-conversietest-run-1#52494c22 = 2026-09-04-werkdossier-stand-van-zaken#ee82c67c.\n- Trustpilot: 2026-09-25-seo-audit#13130060 = 2026-09-04-werkdossier-stand-van-zaken#98a99a09 (raakt backlog#10ef70ca).\n- Redirects oude URL's: 2026-09-23-seo-conversietest-run-1#b469a68a = 2026-09-16-seo-onderzoek-cloud-routine-website#3e155aa4; /pages/collection-301: 2026-09-25-seo-audit#6d7750aa = 2026-09-04-werkdossier-stand-van-zaken#b7ef376e.\n- Rugby-sportpagina: 2026-09-21-beachhead-rugby#5a25b546 overlapt met 2026-09-25-seo-audit#71f4fc5b en #f637edc0.\n\n`CONTROLE.json` telt nu 8 keer `dubbel`; bovenstaande groepen zijn grotendeels nog niet gemarkeerd, ook omdat de actiecontrole sinds 26-09 niet draaide.\n\n### Weekoverzichten op gearchiveerd met open acties (5b)\n- 2026-09-14-weekoverzicht: `gearchiveerd`, 3 open P-acties (plus 8 open outreach-regels zonder P-code).\n- 2026-09-21-weekoverzicht: `gearchiveerd`, 8 open acties, waarvan een deel (Powerleague/Panna, content-voorstel Tigo, Rotterdam Cup) in 2026-09-28 opnieuw als besluit staat en een deel niet (tennisretailers, checkout-test, Update Log).\n- Volgens PROCEDURE A3 (sinds 28-09) hoort dat `verwerkt` te zijn. Beide stammen van vóór de nieuwe regel. `acties.py open` slaat ze nu over, dus die acties staan nergens.\n\n### Routineprompts (5c)\n- Geen prompt in `04_Agent_Infrastructuur/Routines/` bevat de oude link KVXyNSCNEbKcj2EQGqkpuV of \"Nog geldige acties neem je over\".\n- Geen prompt stopt bij een ArtifactData-fout: Actiecontrole (\"ga altijd door\") en Uitvoerder (\"werk met wat in de vault staat\") gaan door. De enige stops zijn guards, een buildfout en een geweigerde push, zoals bedoeld.\n- De oude link staat nog in twee archiefdocumenten in `04_Agent_Infrastructuur/Beheer/` (Denzel stap 9, 17-09). Die worden niet door routines gelezen.\n- De Growth Radar publiceerde vanochtend 03:41 UTC nog naar het oude artifact (van vóór de verhuizing om ~08:00); vanaf morgen gebruikt hij de nieuwe link via CLAUDE.md.\n\n### Rolverdeling en opbrengst (5d)\n- Overlap: op 28-09 meldden SEO-regressiecheck, Denzel en SEO- en conversietest dezelfde twee problemen (/en/-homepage, verzend-/retourpagina's). Denzel maakte er nieuwe Besluit-acties van naast bestaande backlogpunten; de README zegt dat Denzel geen eigen site-check doet en kansen niet herhaalt.\n- 2026-09-25-seo-audit staat op `routine: seo-regressiecheck` maar is een volledige audit met 24 acties, wat eerder bij de SEO- en conversietest hoort.\n- Geen nieuwe punten: de SEO- en conversietest run 2 meldt \"geen nieuwe bevindingen, alles al open in de backlog\" (wel concepten gebouwd). De andere routines leverden de afgelopen 14 dagen wel nieuwe punten. De 7 routines met status \"Nog aanmaken\" hebben nog nooit gedraaid.\n- Growth Radar: geen notitie of commit op zaterdag 26-09; zondag 27-09 deed hij alleen onderhoud (volgens plan).\n\n### Git (5e)\nAlle routineruns van de laatste 7 dagen staan ook op `HÏ-Grip-Vault-obsidian`: elke `claude/...`-branch van 25–28 september heeft 0 eigen commits. Geen routine pusht alleen naar een losse branch. De enige branches met eigen werk: `claude/fervent-sagan-8bes8f` (1 commit, 25-09; dezelfde patch staat al op de hoofdbranch als ee49c53) en `claude/nifty-fermat-kr7pe6` (2 flyer-commits, juni).\n\n### Versheid data (5f)\nPeilmoment 28-09 ~10:30 NL.\n- `kpi.json` 26-09 05:47, `koppelingen.json` 26-09 05:47, `shopify.json` 26-09 02:40: ouder dan 2 dagen (schrijver: Actiecontrole).\n- `agenda.json` bestaat niet: het dashboard toont \"nog niet gekoppeld\".\n- `cwv.json` 28-09 06:08 en `sync.json` 28-09 10:26: vers.\n\n## Wat niet lukte\nDe transcripten van de Actiecontrole-runs van 27 en 28-09 zijn niet leesbaar vanuit deze sessie (geen list_events). De oorzaak is afgeleid uit de sessiegegevens: geen bronrepository, geen uitvoerbranch, 2 minuten looptijd. Met wie het dashboard buiten info@ gedeeld is, is niet uit te lezen; de publish meldt \"readable by only you\".\n\n## Bronnen\n- `list_triggers` en `get_session` (claude.ai/code/routines) voor Actiecontrole en Growth Radar, 28-09.\n- `git log` per `claude/...`-branch tegen `origin/HÏ-Grip-Vault-obsidian`.\n- `python 05_Research/_tools/acties.py open`, `05_Research/_backlog/CONTROLE.json`, `05_Research/_data/*.json`, `05_Research/_geheugen/*.md`.\n- `04_Agent_Infrastructuur/Routines/README.md` en de promptbestanden.\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-09-28",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-25-evaluatie-routines",
+    "2026-09-26-onderzoek-nieuwe-routines",
+    "2026-09-26-dashboard-ux-onderzoek",
+    "2026-09-28-weekoverzicht"
+   ],
+   "id": "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Commits van de Actiecontrole sinds 26-09",
+     "verschil": "laatste run \"geslaagd\"",
+     "waarde": "0"
+    },
+    {
+     "label": "Open acties in gearchiveerde weekoverzichten",
+     "verschil": "",
+     "waarde": "11"
+    },
+    {
+     "label": "claude/-branches zonder eigen commits",
+     "verschil": "",
+     "waarde": "9"
+    },
+    {
+     "label": "Routines nog niet aangemaakt op info@",
+     "verschil": "",
+     "waarde": "7 van 14"
+    }
+   ],
+   "kerntitel": "Actiecontrole draait sinds 26-09 zonder repository en legt dus niets vast",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De Actiecontrole draait sinds 26-09 elke nacht, maar de routine heeft geen repository gekoppeld: hij stopt na 2 minuten zonder commit, waardoor CONTROLE.json, de Shopify- en GA4-cijfers en de dashboardsync op 26-09 blijven staan. Daarnaast zijn 11 open acties onzichtbaar in twee gearchiveerde weekoverzichten, staan minstens 8 groepen acties dubbel en is het dashboard nog alleen voor info@ zichtbaar.",
+   "status": "nieuw",
+   "titel": "Optimalisatiecheck werkwijze routines en dashboard",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard.md",
+   "vervangt": [],
+   "wat_niet_lukte": "De transcripten van de Actiecontrole-runs van 27 en 28-09 zijn niet leesbaar vanuit deze sessie (geen list_events). De oorzaak is afgeleid uit de sessiegegevens: geen bronrepository, geen uitvoerbranch, 2 minuten looptijd. Met wie het dashboard buiten info@ gedeeld is, is niet uit te lezen; de publish meldt \"readable by only you\"."
+  },
+  {
    "acties": [],
    "body_md": "# Growth Radar — SEO Technisch (28 september 2026)\n\n## In het kort\nDe belangrijkste vondst van vandaag raakt niet de site zelf, maar de leidingen eronder: Google's oude Content API for Shopping — de weg waarlangs Shopify je Merchant Center-feed vult — geeft sinds 1 september 2026 al progressieve fouten voor wie nog niet is overgezet naar de nieuwe Merchant API, met volledige uitschakeling begin 2027. Dat loopt via dezelfde Google & YouTube-app die vorige week al op de riskante \"Optimized\"-pixelstand bleek te staan. Daarnaast twee kleinere ontwikkelingen om te volgen, geen van beide met eigen actie nu: een normale Google-spamupdate en een nieuw multimodaal filter in Search Console.\n\n## Acties\n_Geen nieuwe backlogpunten vandaag. Eén bestaand P1-punt (4) is bijgewerkt met een extra controlepunt — niet hier herhaald._\n\n## Bevindingen\n\n### 1. Content API for Shopping faalt al sinds 1 september; Merchant API-migratie is de kern van backlogpunt 4\n\nGoogle's Content API for Shopping — de klassieke weg waarlangs productdata in Merchant Center terechtkomt — is per 18 augustus 2026 vervangen door de nieuwe Merchant API. Sinds 1 september 2026 geven aanvragen zonder goedgekeurde uitzondering al periodiek een HTTP 410-fout, en Google heeft de volledige uitfasering van alle endpoints voor begin 2027 aangekondigd. Voor winkels die hun feed via een custom integratie, een oudere feed-app of een script laten lopen, moet die koppeling nu over naar de Merchant API of de datastroom stopt. Wie handmatig of via een Google Sheet uploadt, is niet geraakt.\n\nVoor winkels die het native Shopify \"Google & YouTube\"-kanaal gebruiken — zoals higrip.nl — loopt de migratie via een gefaseerde uitrol van diezelfde app, die al bezig is. Een concreet aandachtspunt daarbij: product-ID's kunnen tijdens de migratie wijzigen, wat een lopende Shopping-ads-opzet kan raken.\n\n> **Voor higrip.nl:** Dit is dezelfde Google & YouTube-app (`MC-8TZQW9T6Q7`, account `raqds3-tb`) die de Growth Radar van 25 september al op de \"Optimized\"-pixelstand aantrof — een stand waarin Shopify de datadeling zelf al kan pauzeren. Een migratieprobleem boven op een gepauzeerde pixel zou de Merchant Center-feed dubbel kunnen raken: geen productdata én geen conversiesignaal. Backlogpunt 4 (variant-ID's tegen de Merchant Center-eis) gaat al over deze feed en is de logische plek om dit erbij te controleren, niet een nieuw punt.\n\n**Actie:** Backlogpunt 4 bijgewerkt met een extra controlepunt: nagaan of de migratie van de Google & YouTube-app naar de Merchant API is voltooid, en of product-ID's daarbij zijn gewijzigd.\n\n### 2. Google's september-spamupdate: normale update, geen nieuw beleid — alleen volgen\n\nGoogle rolde op 24 september 2026 om 9:15 uur Pacific-tijd de \"September 2026 spam update\" uit, wereldwijd en in alle talen, met een verwachte rolloutduur tot twee weken (langer dan de drie eerdere spamupdates van dit jaar). Google noemt het expliciet een normale update: geen nieuwe spambeleidsregels, en niet gericht op linkspam specifiek.\n\n> **Voor higrip.nl:** Geen enkele eerdere melding over spamgerelateerde risico's op de site. Een normale update zonder nieuw beleid raakt in de praktijk vrijwel nooit een compliant webshop.\n\n**Actie:** Alleen volgen — nog niet handelen. Pas relevant als de Search Console & rankings-routine na afronding van de rollout (rond 8 oktober) een ongewone positieverandering signaleert; dat is niet iets wat Growth Radar zelf controleert.\n\n### 3. Search Console: nieuw multimodaal filter voor zoekopdrachten via afbeeldingen, Lens en Circle to Search\n\nSamen met de spamupdate voegde Google Search Console een multimodaal filter toe waarmee je zoekopdrachten via afbeeldingen, Google Lens en Circle to Search apart kunt bekijken, met data vanaf 10 september 2026.\n\n> **Voor higrip.nl:** Een nieuwe, gratis dimensie in bestaande Search Console-data — geen eigen actie voor Growth Radar, maar wel een filter dat de moeite waard is om mee te nemen zodra de kernwoorden-analyse (Search Console & rankings, woensdag) weer draait, gezien de productfoto's al ruim aan de Merchant Center-beeldeisen voldoen.\n\n**Actie:** Alleen volgen — geen eigen sitecheck, dat hoort bij de Search Console & rankings-routine.\n\n## Wat niet lukte\nStap B (dashboard → vault via `ArtifactData`) gaf dezelfde foutmelding als bij de weekonderhoud-run van 27 september: \"shared with you from another organization\" — geen db-toegang voor deze cloudsessie op de `status`-collectie. Niet opnieuw geprobeerd voor de overige zes collecties, om dezelfde fout niet zes keer te herhalen. Build en publish zijn gedaan vanuit de bestaande vaultstand.\n\n## Bronnen\n- [Migrate from Content API for Shopping to Merchant API — Google for Developers](https://developers.google.com/merchant/api/guides/compatibility/overview)\n- [Google's Content API Shuts Down August 18: What Shopify Merchants Actually Need to Check — Simple Product Feeds](https://www.simpleproductfeeds.com/blog/content-api-for-shopping-sunset-shopify)\n- [Shopify Merchant Google & YouTube API Migration — Channable](https://www.channable.com/blog/shopify-google-youtube-app-migration)\n- [Google September 2026 Spam Update Is Rolling Out — Search Engine Roundtable](https://www.seroundtable.com/google-september-2026-spam-update-42163.html)\n- [Google Releases September 2026 Spam Update — Search Engine Watch](https://searchenginewatch.com/google-releases-september-2026-spam-update/)\n\n## Aantekeningen",
    "bron": "routine",
@@ -2152,7 +2302,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-24-financieel-plan-2027-2031-bmc-2031",
-    "2026-09-25-evaluatie-routines"
+    "2026-09-25-evaluatie-routines",
+    "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard"
    ],
    "id": "2026-09-26-onderzoek-nieuwe-routines",
    "kansen": [],
@@ -2233,7 +2384,8 @@ window.HI_RESEARCH = {
    "datum": "2026-09-26",
    "deadline": "",
    "gerelateerd": [
-    "2026-09-25-evaluatie-routines"
+    "2026-09-25-evaluatie-routines",
+    "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard"
    ],
    "id": "2026-09-26-dashboard-ux-onderzoek",
    "kansen": [],
@@ -3104,7 +3256,8 @@ window.HI_RESEARCH = {
     "2026-09-14-weekoverzicht",
     "2026-09-25-growth-radar-social",
     "2026-09-21-weekoverzicht",
-    "2026-09-28-seo-conversietest-run-2"
+    "2026-09-28-seo-conversietest-run-2",
+    "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard"
    ],
    "id": "2026-09-25-evaluatie-routines",
    "kansen": [],
@@ -6475,9 +6628,9 @@ window.HI_RESEARCH = {
  "opdrachten": [],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 41,
-   "P2": 77,
-   "P3": 43
+   "P1": 43,
+   "P2": 82,
+   "P3": 45
   },
   "per_categorie": {
    "CRO": 4,
@@ -6485,7 +6638,7 @@ window.HI_RESEARCH = {
    "Merk": 6,
    "SEO": 18,
    "Social": 2,
-   "Techniek": 4
+   "Techniek": 5
   },
   "per_week": [
    {
@@ -6544,12 +6697,12 @@ window.HI_RESEARCH = {
     "week": "2026-W39"
    },
    {
-    "aantal": 4,
+    "aantal": 5,
     "start": "2026-09-28",
     "week": "2026-W40"
    }
   ],
-  "totaal_notities": 35
+  "totaal_notities": 36
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

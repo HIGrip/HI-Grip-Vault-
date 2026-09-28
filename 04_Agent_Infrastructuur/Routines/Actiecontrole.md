@@ -35,7 +35,9 @@ Voer B1–B3 uit `05_Research/_build/PROCEDURE.md` uit, zodat wat mensen op het 
 2. `python 05_Research/_tools/acties.py importeer /tmp/ac/db --door actiecontrole`
 3. Verwijder precies de docs uit `te_verwijderen` met `ArtifactData batch` (`op: delete`, max 50 per batch). Docs uit `overgeslagen` blijven staan: noem ze in je afsluitbericht.
 
-Build, publish en commit doe je één keer, in stap 8. Is `ArtifactData` niet beschikbaar? Noteer dat voor je afsluitbericht en ga door.
+Build, publish en commit doe je één keer, in stap 8.
+
+**Sync lukt niet?** Is `ArtifactData` niet beschikbaar of geeft de eerste `list` een fout (bijv. "shared with you from another organization", geen toegang), probeer dan de andere collecties niet meer. Noteer de fout voor je afsluitbericht en ga **altijd** door met stap 3. De controle zelf heeft de database niet nodig; een run zonder sync is beter dan geen run.
 
 ## Stap 3 — Start en lijst
 ```

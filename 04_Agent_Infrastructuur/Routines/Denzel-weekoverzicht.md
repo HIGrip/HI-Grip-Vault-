@@ -115,7 +115,7 @@ deadline: ""
 ## Kerncijfers
 - **<waarde>** · <label> · <verschil>   (2–4 regels uit het GA4-weekrapport, alleen echte cijfers; geen cijfers = sectie weglaten)
 ## Acties
-- [ ] P1 · Besluit: …   (elke openstaande beslissing voor Lars als één regel die begint met "Besluit:"; niets overnemen uit de actiebacklog. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
+- [ ] P1 · Besluit: …   (alleen **nieuwe** beslissingen van deze week, als één regel die begint met "Besluit:". Niets overnemen uit de actiebacklog of uit eerdere weekoverzichten, zie §8.1. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
 ## Bevindingen
 ### Voortgang per hoofdagent
 - Content Agent: [status + content-voorstel 2c]
@@ -134,7 +134,11 @@ deadline: ""
 ```
 
 ## 8. Verbanden, geheugen en kwaliteitsdashboard
-1. **Verbanden (A3):** zet de notitie van vorige week op `status: gearchiveerd` en vul `gerelateerd` in beide richtingen. Vink daar niets af en wijzig geen actietekst: een gearchiveerde notitie telt niet mee in de actiecontrole en op het dashboard. Nog geldige acties neem je over in de nieuwe notitie.
+1. **Verbanden (A3):** vul `gerelateerd` in beide richtingen tussen deze en de vorige weekoverzichten. Vink daar niets af en wijzig geen actietekst.
+   - **Oude acties nooit overnemen of herformuleren.** Een actie-id is `notitie-id + hash(tekst)`: dezelfde taak in een nieuwe notitie of met een iets andere tekst is een nieuw id, dus een vinkje van een mens gaat verloren en de taak komt terug. Een besluit dat nog openstaat, blijft staan in de notitie waar hij voor het eerst stond.
+   - Een vorig weekoverzicht met nog open `[ ]`-acties zet je op `status: verwerkt` (blijft zichtbaar op het dashboard en in de actiecontrole). Pas als er geen open acties meer in staan, zet je hem op `status: gearchiveerd`.
+   - Wil je een oud open besluit onder de aandacht brengen? Noem het onder "Openstaande beslissingen voor Lars" als verwijzing (`nog open sinds [[<notitie>]]: <korte naam>`), zonder checkbox.
+   - Staat een besluit al als punt in `ACTIEBACKLOG.md`, of staat het in `CONTROLE.json` als `gedaan` of `dubbel`? Dan maak je er geen actie van.
 2. **Geheugen:** één regel per behandeld onderwerp in `05_Research/_geheugen/denzel-week.md`.
 3. **Kwaliteitsdashboard:** voeg in `04_Agent_Infrastructuur/Beheer/Agent Werk & Kwaliteit Overzicht.md` voor elke actie van deze run een rij toe bij de juiste (sub-)agent: zoekactie, beoordelingen, content-voorstel, website-stand, fix-voorbereiding. Overschrijf nooit stilzwijgend oude rijen.
 

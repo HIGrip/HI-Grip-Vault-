@@ -162,3 +162,4 @@ Zie de Acties-lijst hierboven — dit weekoverzicht herhaalt de tekst niet twee 
 - [[Stappenplan — Verdere Bouw]] · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
 
 ## Aantekeningen
+- **lars · 2026-09-28 08:38** — vorige week heb ik de 2x h1 tekst gefixt controleer of dat hij u wel goed werkt

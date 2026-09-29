@@ -59,3 +59,4 @@ Format: `JJJJ-MM-DD | thema | onderwerp | waar behandeld`
 2026-09-28 | SEO-technisch | Content API for Shopping → Merchant API-migratie: sinds 1 sep 2026 al progressieve HTTP 410-fouten, volledige uitschakeling begin 2027; raakt dezelfde Google & YouTube-app als de Optimized-pixelstand | seo-technisch
 2026-09-28 | SEO-technisch | Google september-spamupdate (24 sep, normale update, ~2 weken rollout, geen nieuw beleid) | seo-technisch
 2026-09-28 | SEO-technisch | Search Console multimodaal filter (afbeeldingen/Lens/Circle to Search), data vanaf 10 sep 2026 | seo-technisch
+2026-09-29 | SEO-content | AI Overviews breiden zich sinds 28 aug 2026 automatisch uit tot volle lengte (geen "Toon meer" meer), blauwe links zakken verder weg — extra gewicht voor backlogpunt 6 (antwoordcapsules) | 2026-09-29-growth-radar-seo-content

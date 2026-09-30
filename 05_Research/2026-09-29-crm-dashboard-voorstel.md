@@ -25,7 +25,7 @@ deadline: "2026-12-31"
   - Vercel Hobby is volgens de voorwaarden alleen voor niet-commercieel gebruik. Neem Vercel Pro: $20/mnd, en alleen de bouwer betaalt een plek.
   - Hermes en de app mogen niet op Claude Max draaien. Gebruik een Claude API-sleutel, naar schatting $10–40/mnd [aanname].
   - Hermes draait continu en heeft daarom een kleine server nodig: Hetzner, ± € 6,60/mnd.
-- **Planning (schatting ± 72 bouwuren, bijgewerkt 30-09):**
+- **Planning (schatting ± 74 bouwuren, bijgewerkt 30-09):**
   - Eerst de kern zonder AI. De eerste bruikbare versie is er rond 20 oktober (8 u/week) of 10 november (4 u/week).
   - Daarna werk je 4–6 weken met de hand en meet je. Intussen bouw je de Gmail-koppeling en Moneybird.
   - AI-mail en Hermes komen na die meetperiode: bij 8 u/week vóór 2027, bij 4 u/week in het eerste kwartaal van 2027.
@@ -139,7 +139,12 @@ Het volledige model, met alle overgangen en termijnen, staat op Canva pagina 2 e
 - **Klant** = eerste order **óf** een actieve clubdeal met omzet via de kortingscode.
 - **Vaste klant** = 2e order binnen 12 maanden, of een clubdeal die 12 maanden actief is met omzet.
 - **De status gaat alleen vooruit.** 12 maanden stil geeft het label Slapend. Het doel telt vaste klanten zonder dat label.
-- **Herbestelcheck** = laatste order + het eigen interval (vanaf 2 orders); daarvoor een standaard per type.
+- **Herbestellen (na een order):**
+  - Het herbestelmoment is de eerste die bestaat: 1) de afgesproken datum (veld op de order) → 2) een termijn die je per klant instelt → 3) de standaard per type.
+  - Op dat moment staat er een concept-herbestelmail klaar in *Wacht op akkoord*, met de laatste order (aantallen, maten, personalisatie) en de actuele prijs. Jij verstuurt, of maakt er met één klik een offerte van.
+  - Daarna: een nieuwe order → het moment wordt opnieuw berekend; "later" → een nieuwe afgesproken datum; 7 dagen niets → taak bellen [voorstel].
+  - Tot fase 6 komt de mail uit een sjabloon; daarna maakt AI hem persoonlijker.
+  - Relaties met alleen een clubdeal krijgen geen herbestelmail.
 
 | Type | Na In gesprek | Huidig vanaf |
 |---|---|---|
@@ -185,7 +190,7 @@ Het volledige model, met alle overgangen en termijnen, staat op Canva pagina 2 e
 3. **Dag 28 zonder reactie** → wacht op datum (het volgende venster, minstens 6 maanden).
 4. **Wachtdatum bereikt** → Nieuw, met het label Opnieuw en een taak.
 5. **In gesprek, 30 dagen geen contact** → label Stil. Alleen een signaal.
-6. **Order geleverd** → de herbestelcheck wordt berekend. Verstreken → label Herbestelling nodig + een taak.
+6. **Herbestelmoment bereikt** (afgesproken datum → termijn per klant → standaard per type) → label Herbestelling nodig + een concept-herbestelmail in Wacht op akkoord. Verstuurd en 7 dagen niets → taak bellen. Een nieuwe order berekent het moment opnieuw.
 7. **2e order of 12 maanden actieve deal** → Vaste klant. **12 maanden stil** → label Slapend + een AI-concept voor heractivatie.
 8. **Moneybird meldt "betaald"** → de order staat op betaald.
 9. **Omzet per kortingscode** → elke nacht uit Shopify.
@@ -311,7 +316,7 @@ De uren zijn een schatting [aanname]: gebouwd met Claude Code, door iemand die h
 | 3 | Reeks als taken, termijnen, labels, statusgeschiedenis, Instellingen | 10 | 27 okt | 24 nov |
 | — | **4–6 weken met de hand werken en meten; intussen fase 4 en 5** | | | |
 | 4 | Gmail: reeks echt versturen, reactie herkennen, reeks stoppen | 10 | 10 nov | 15 dec |
-| 5 | Offertes & orders, Moneybird, kortingscode-omzet | 12 | 17 nov | 12 jan |
+| 5 | Offertes & orders, Moneybird, kortingscode-omzet, herbestelmoment + herbestelmail uit sjabloon | 14 | 17 nov | 12 jan |
 | 6 | AI: actuele punten, mail en belscript, reeks-goedkeuring | 8 | ± 8 dec | ± 26 jan |
 | 7 | Hermes: kandidatenpool, score, aanvulling op maandag | 10 | ± 22 dec | ± feb 2027 |
 

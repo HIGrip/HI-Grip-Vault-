@@ -8,7 +8,7 @@ routine: ""
 categorie: B2B
 status: nieuw
 prioriteit: P1
-samenvatting: "Bouw het CRM als één relatielijst met een status (zoals HubSpot en Attio), met een vast opvolgritme en een Vandaag-scherm, en laat facturen via Moneybird lopen in plaats van ze zelf te maken. Twee aannames kloppen niet: Vercel Hobby mag niet voor een bedrijfsdashboard (neem Pro, $20/mnd) en Hermes en de app moeten op een Claude API-sleutel draaien, niet op Claude Max."
+samenvatting: "Bouw het CRM als één relatielijst met een status (zoals HubSpot en Attio), met een vast opvolgritme en een CRM-home met taken voor nu, en laat facturen via Moneybird lopen in plaats van ze zelf te maken. Twee aannames kloppen niet: Vercel Hobby mag niet voor een bedrijfsdashboard (neem Pro, $20/mnd) en Hermes en de app moeten op een Claude API-sleutel draaien, niet op Claude Max."
 gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-26-dashboard-ux-onderzoek, 2026-09-26-onderzoek-nieuwe-routines]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\crm-onderzoek-prompt.md"
@@ -19,16 +19,16 @@ deadline: "2026-12-31"
 ## In het kort
 
 - **Eén relatielijst met een status.** Geen aparte lijsten voor huidig en potentieel: zo doen HubSpot en Attio het ook. "Huidig" en "potentieel" uit het Canva-ontwerp worden opgeslagen weergaven. Een club die klant wordt, verhuist niet; alleen de status verandert.
-- **Het opvolgritme uit Canva wordt drie uitkomstknoppen plus een herbenaderdatum.** Elke relatie heeft altijd één volgende actie met een datum, en het scherm Vandaag toont wat verlopen is. Dat pakt het grootste pijnpunt aan: vergeten opvolging.
+- **Een funnel per klanttype met een vaste reeks** (bijgewerkt 30-09). AI vult een kandidatenpool en zet de beste door naar Nieuw. AI schrijft ook de mail, de herinneringen en het belscript; jij keurt de reeks één keer goed. Geen reactie is het standaardpad: herinneringen op dag 7 en 14, bellen op dag 21. Bij een reactie kies je positief, later of negatief. Alles wat terugvalt, krijgt een wachtdatum. Dat pakt het grootste pijnpunt aan: vergeten opvolging.
 - **Facturen bouw je niet zelf.** Het CRM maakt de offerte met de staffel of de klantprijs. Moneybird maakt en verstuurt de factuur en meldt via een webhook wanneer er betaald is. Het fiscale risico ligt dan bij het pakket: nummering, btw verlegd voor België, bewaarplicht.
 - **Twee aannames uit de vragenronde kloppen niet.**
   - Vercel Hobby is volgens de voorwaarden alleen voor niet-commercieel gebruik. Neem Vercel Pro: $20/mnd, en alleen de bouwer betaalt een plek.
   - Hermes en de app mogen niet op Claude Max draaien. Gebruik een Claude API-sleutel, naar schatting $10–40/mnd [aanname].
   - Hermes draait continu en heeft daarom een kleine server nodig: Hetzner, ± € 6,60/mnd.
-- **Planning (schatting ± 64 bouwuren):**
-  - Bij 8 uur per week is de eerste bruikbare versie er rond 20 oktober, en is alles af eind november. Met uitloop wordt dat half december.
-  - Bij 4 uur per week is de eerste versie er rond 3 november, en schuift het AI- en Hermes-deel naar januari.
-  - Het fundament ligt er in beide gevallen ruim vóór het herbestelseizoen van de clubs (voorjaar).
+- **Planning (schatting ± 72 bouwuren, bijgewerkt 30-09):**
+  - Eerst de kern zonder AI. De eerste bruikbare versie is er rond 20 oktober (8 u/week) of 10 november (4 u/week).
+  - Daarna werk je 4–6 weken met de hand en meet je. Intussen bouw je de Gmail-koppeling en Moneybird.
+  - AI-mail en Hermes komen na die meetperiode: bij 8 u/week vóór 2027, bij 4 u/week in het eerste kwartaal van 2027.
 
 ## Acties
 
@@ -55,7 +55,7 @@ Onderzocht: HubSpot, Pipedrive, Attio, Teamleader en Twenty grondig. Salesforce,
 | Apart lead-object | Salesforce (conversie is onomkeerbaar), Pipedrive (leads zonder pijplijn) | **Nooit**: het geeft conversiegedoe |
 | Volgende stap verplicht | Pipedrive vraagt na elke afgeronde activiteit om de volgende | **Nu** |
 | Stilstand-signaal | Pipedrive "rotting": een deal kleurt rood na X dagen stilte | **Nu**, maar op "volgende actie verlopen", want rotting negeert geplande acties |
-| Vandaag-scherm | Attio Home, Pipedrive Focus, Folk-reminders | **Nu**, als startscherm |
+| Vandaag-scherm | Attio Home, Pipedrive Focus, Folk-reminders | **Nu**, als startscherm: CRM-home |
 | Sequences | Pipedrive en HubSpot: max 10 stappen, stopt bij een reactie | **Nu**, als mini-versie van jullie ritme (zie 4) |
 | Herbenaderdatum | HubSpot "Bad timing", Folk-reminders | **Nu** |
 | Snel toevoegen op mobiel | Pipedrive (visitekaartscan), HubSpot (QR) | **Nu**, met 3 velden |
@@ -74,7 +74,7 @@ Onderzocht: HubSpot, Pipedrive, Attio, Teamleader en Twenty grondig. Salesforce,
 Bigin scoort 4,7 op Capterra om de snelle start. De klachten komen zodra je tegen de grenzen aanloopt: beperkte automatisering, weinig eigen rapportage, alleen goede koppelingen binnen Zoho, en een aparte site. Samen met jullie eigen ervaring leidt dat tot deze regels:
 
 1. Het CRM zit ín het dashboard: geen aparte site, één login.
-2. Het startscherm is **Vandaag**: verlopen, vandaag, reacties en voorstellen. Bovenaan staan maximaal 5 punten "Eerst doen" (les uit [[2026-09-26-dashboard-ux-onderzoek]]).
+2. Het startscherm is **CRM-home**: verlopen, vandaag, reacties en voorstellen. Bovenaan staan maximaal 5 punten "Eerst doen" (les uit [[2026-09-26-dashboard-ux-onderzoek]]).
 3. Elke relatie heeft één volgende actie met een datum, of expliciet "geen, want …".
 4. Geen workflowbouwer, maar ± 10 vaste automatiseringen met een aan/uit-knop.
 5. Snel toevoegen vraagt maximaal 3 velden. Lege velden blijven verborgen.
@@ -105,79 +105,91 @@ Bigin scoort 4,7 op Capterra om de snelle start. De klachten komen zodra je tege
 
 **Waarom er geen deal-object is.** Grote CRM's hebben deals nodig omdat één bedrijf daar vaak meerdere kansen tegelijk heeft. Bij 10–40 klanten dekt de combinatie van status en offerte dat. Komen parallelle kansen per klant vaak voor, dan kan een deal-object er later alsnog bij.
 
-### 4. Status, opvolgritme en klantfases
+**Aanvullingen (30-09):**
+- **Statusgeschiedenis** (van, naar, door, op), vanaf dag 1. Die is nodig voor doorstroom en doorlooptijd.
+- **Reeks:** stappen, goedgekeurd door, gestopt door.
+- **Relatie:** krijgt type, wachtdatum + wachtreden, score, bron en een vastgepinde notitie.
+- **Events:** krijgen een eventdatum.
+- **Deal actief:** kortingscode + startdatum. Hiermee wordt een club Klant zonder eigen order.
 
-Eén statusveld, hetzelfde voor organisaties en creators:
+### 4. Status, funnel en klantfases (bijgewerkt 30-09)
 
-| Status | Betekenis | Weergave uit Canva |
+Het volledige model, met alle overgangen en termijnen, staat op Canva pagina 2 en in het structuurdocument (`plans/crm-structuur.md` bij de bouwer).
+
+| Status | Betekenis |
+|---|---|
+| Kandidaat | Door AI gevonden. Staat in de kandidatenpool (de AI-map), nog niet in de funnel |
+| Nieuw | Klaar om te benaderen |
+| Benaderd | Eerste contact gedaan; de reeks loopt |
+| In gesprek | Positieve reactie; gesprekken lopen |
+| Huidig (per type) | Klant / Vaste klant · Actief / Ambassadeur · Bevestigd / Uitgevoerd / Terugkerend · Huidige leverancier |
+| Wacht op datum | Tijdelijk uit de funnel, met reden: geen reactie · later · negatief |
+| Geen contact | Wil niet meer benaderd worden → blokkadelijst |
+
+- **Route B (geen reactie) is het standaardpad, geen keuze.** Na goedkeuring loopt de reeks: mail (dag 0) → herinnering 1 (dag 7) → herinnering 2 (dag 14) → belherinnering (dag 21) → geen reactie (dag 28) → wacht op datum. Een reactie stopt de reeks, en dan kies je:
+  - **A · Positief** → In gesprek, met een verplichte volgende actie. Veel heen-en-weer mailen vraagt geen keuze. Pas na 30 dagen *zonder* contact komt het label Stil.
+  - **C · Later** → wacht op datum: de afgesproken datum of het volgende benadervenster (standaard 6 mnd). Het eerste gesprek komt in een vastgepinde notitie.
+  - **D · Negatief** → wacht op datum over 1 of 2 jaar, met de reden erbij.
+- **Datum bereikt** → terug in Nieuw met het label Opnieuw. De geschiedenis blijft.
+- **Wil geen contact** kan vanuit elke stap, met een knop op de relatiepagina.
+- **Kandidatenpool:** AI zet elke maandag per type de beste kandidaten door naar Nieuw, tot maximaal 20. Vooraf checkt AI op dubbelen en de blokkadelijst.
+- **De wachtdatum volgt het seizoen.** Per type is er een benadervenster, bijvoorbeeld sportclubs november–februari en events 3–6 maanden vóór de eventdatum.
+
+**Klanten (verfijnt het voorstel in de besluit-actie hierboven):**
+- **Klant** = eerste order **óf** een actieve clubdeal met omzet via de kortingscode.
+- **Vaste klant** = 2e order binnen 12 maanden, of een clubdeal die 12 maanden actief is met omzet.
+- **De status gaat alleen vooruit.** 12 maanden stil geeft het label Slapend. Het doel telt vaste klanten zonder dat label.
+- **Herbestelcheck** = laatste order + het eigen interval (vanaf 2 orders); daarvoor een standaard per type.
+
+| Type | Na In gesprek | Huidig vanaf |
 |---|---|---|
-| Gevonden | Kandidaat, nog niet benaderd. Agents vullen dit aan, na goedkeuring | Potentieel |
-| Benaderd | De eerste benadering is gedaan | Potentieel |
-| In gesprek | Er kwam een positieve reactie | Potentieel |
-| Klant | Minstens 1 order (bij een creator: de samenwerking loopt) | Huidig |
-| Vaste klant | Voorstel: minstens 2 orders, waarvan de laatste in de afgelopen 12 maanden | Huidig |
-| Later opnieuw | Gepauzeerd, met een herbenaderdatum | Potentieel |
-| Nooit meer | Staat op de blokkadelijst | — |
+| Sportclubs · Pilates & sportscholen · Retail (later Inkooporganisaties) | Klant → Vaste klant | Klant |
+| Creators | Product verstuurd → Actief → Ambassadeur | Actief (eerste content live) |
+| Events | Bevestigd → Uitgevoerd → Terugkerend | Bevestigd; evaluatietaak 1 week na het event |
+| Leveranciers | Aangevraagd → Vergelijken → Huidige leverancier | Huidige leverancier; geen verkoopreeks, wel een offerte-aanvraag |
 
-Twee klantsignalen zijn geen aparte status maar een kleurlabel: **Herbestelling nodig** (de herbestelcheck is verstreken) en **Slapend** (12 maanden geen order).
+### 5. Schermen en navigatie (bijgewerkt 30-09)
 
-**Het opvolgritme, precies zoals in Canva:**
+**Menu:** CRM-home · Funnels · Huidige relaties · Offertes & orders · Instellingen. De schetsen staan op Canva pagina 3.
 
-1. Je logt de eerste benadering. De status wordt Benaderd, en er komt een herinneringstaak over 7 dagen.
-2. Bij elk contact kies je een uitkomst:
-   - **Positief:** de status wordt In gesprek, en je vult verplicht een volgende actie in.
-   - **Negatief:** je kiest Nooit meer (naar de blokkadelijst) of Opnieuw over 6 maanden, 1 jaar of 2 jaar. De status wordt dan Later opnieuw, met die datum.
-   - **Geen reactie**, ook niet na de herinnering: de status wordt Later opnieuw, standaard over 6 maanden.
-3. Is de herbenaderdatum bereikt, dan komt er een taak "opnieuw benaderen" op Vandaag en gaat de status terug naar Gevonden.
+- **CRM-home:**
+  - eerst doen (max 5)
+  - wacht op akkoord (AI-reeksen, offertes)
+  - stats (vaste klanten x/10, nieuwe klanten, benaderd deze week, code-omzet)
+  - mini-funnels per type
+  - signalen (herbestelling, stil, opnieuw benaderen, datameldingen)
+- **Funnels:** één scherm met labels Sportclubs · Pilates & sportscholen · Retail · Creators · Events · Leveranciers · Alle (later Inkooporganisaties).
+  - Kanban: Nieuw → Benaderd → In gesprek → Huidig deze maand. Ingeklapt daaronder: Wacht op datum en Kandidatenpool.
+  - **Benader ›** opent het benaderpaneel: actuele punten met bronnen, het concept voor de mail of het belscript, de reeks, en de knoppen "Keur reeks goed" en "Ik bel".
+- **Relatiepagina:**
+  - **boven:** naam · type · status · eigenaar · wachtdatum, plus de volgende actie;
+  - **midden:** de vastgepinde notitie en de tijdlijn;
+  - **rechts:** contactpersonen, prijsafspraken, orders & samples, kortingscode + omzet, bestanden.
 
-**Herbestelcheck.** De datum is de laatste order plus een interval. Heeft een klant 2 of meer orders, dan gebruikt het CRM het eigen gemiddelde van die klant. Daarvoor geldt een standaard per soort, die je zelf instelt [aanname]: pilates/sportschool ± 3 maanden, retail ± 2 maanden. Sportclubs krijgen een vaste check in februari en juni, omdat clubs in voorjaar en zomer bestellen ([[2026-09-26-onderzoek-nieuwe-routines]]).
+  Onder "Meer" staat "Wil geen contact".
+- **Huidige relaties:** labels Klanten · Creators · Events · Leveranciers.
+- **Instellingen:** termijnen, benadervensters, maximum per type, AI-aanvoer en automatiseringen aan/uit.
+- **Mobiel (PWA):** een tabbalk met Home · Funnels · ＋ · Akkoord · Meer.
+- **Kleur alleen voor status:**
+  - wit met rand = Nieuw/Benaderd
+  - royal blue = In gesprek
+  - volt = huidig
+  - pumpkin = actie nodig
+  - rood = verlopen / geen contact
+  - warm grijs = wacht op datum / kandidaat
 
-### 5. Schermen en navigatie (om in Canva te tekenen)
+### 6. Automatiseringen (bijgewerkt 30-09, vast, elk met een aan/uit-knop)
 
-**Dashboardniveau**, aansluitend op het Canva-ontwerp: een homepagina met daaronder CRM, Research, To-do en Content. De homepagina toont per module de hoofdpunten. Het CRM levert daarvoor: verlopen acties, herbestelsignalen, wachtende voorstellen en datameldingen.
-
-**Het CRM-menu heeft 5 onderdelen:**
-
-1. **Vandaag:** verlopen acties (rood), acties voor vandaag, nieuwe reacties en mails, en herbestelsignalen. Bovenaan maximaal 5 punten "Eerst doen".
-2. **Relaties:** tabs Sales · Creators · Leveranciers, met opgeslagen weergaven Huidig · Potentieel · Later opnieuw · Nooit meer. Je wisselt tussen tabel en kanban (de kolommen zijn de statussen).
-3. **Offertes & orders:** status, betaalstatus en samples.
-4. **Voorstellen:** de AI-wachtrij, waar je goedkeurt, aanpast of afwijst.
-5. **Doelen:** vaste klanten (x van 10 in 2026, x van 20 in 2027), nieuwe klanten per maand, doorstroom per status, en omzet via kortingscodes.
-
-**De relatiepagina:**
-- **Boven:** naam, soort, status (kleurchip), eigenaar, **volgende actie + datum**, en de knoppen "Log contact" en "Offerte".
-- **Midden:** de tijdlijn met alle contact, notities, mails en orders, te filteren per soort.
-- **Rechts:** contactpersonen, prijsafspraken, orders en samples, kortingscode + omzet, en bestanden (Drive).
-
-**Mobiel (PWA):** een tabbalk met Vandaag · Relaties · ＋ · Voorstellen · Meer. De ＋ opent snel toevoegen: organisatie of creator, kanaal + uitkomst, notitie. Op de iPhone kun je met een PWA niet delen naar de app. Daar komt een plakveld, en later een e-mailadres om berichten naar door te sturen.
-
-**Kleur, alleen voor status:**
-- volt = klant of actief (chip met zwarte tekst)
-- royal blue = in gesprek
-- pumpkin = actie nodig of herbestelling
-- rood = verlopen
-- grijs = later of nooit
-
-Achtergronden zijn wit of warm off-white (#EAE8E5), en alles is in Poppins.
-
-### 6. Automatiseringen (vast, elk met een aan/uit-knop)
-
-1. **Eerste benadering** → herinnering na 7 dagen. Die vervalt als er een reactie komt.
-2. **Uitkomst negatief** → je kiest: Nooit meer, of opnieuw over 6 maanden, 1 jaar of 2 jaar.
-3. **Herbenaderdatum bereikt** → taak op Vandaag, en de status wordt Gevonden.
-4. **Statuswissel of afgeronde taak** → een volgende actie is verplicht.
-5. **Order geleverd** → de herbestelcheck wordt berekend. Is die datum bereikt, dan komt er een taak "herbestelling bespreken".
-6. **Tweede order** → de status wordt Vaste klant (alleen vooruit, zoals bij HubSpot). **12 maanden geen order** → label Slapend, plus een AI-concept voor een heractivatiebericht.
-7. **Moneybird meldt "betaald"** → de order staat op betaald. Een factuur over de vervaldatum geeft een melding; de herinneringen zelf stuurt Moneybird.
-8. **Omzet per kortingscode** → wordt elke nacht per club en creator uit Shopify gehaald.
-9. **Elke maandag** → agents stellen nieuwe kandidaten voor. Eén klik voegt ze toe als Gevonden.
-10. **Datacontrole elke nacht** → meldingen op de homepagina bij:
-    - dubbele relaties (zelfde KvK-nummer, domein of e-mail)
-    - een relatie zonder volgende actie
-    - een klant zonder prijsafspraak
-    - een prijsafspraak onder de laagste staffel
-    - een persoon zonder bron
-    - "Later opnieuw" dat ouder is dan 24 maanden (AVG)
+1. **Elke maandag:** de kandidatenpool gaat door naar Nieuw (max 20 per type, na een check op dubbelen en de blokkadelijst).
+2. **De reeks:** herinnering 1 (dag 7), herinnering 2 (dag 14), belherinnering (dag 21). Die stopt bij een reactie. Vóór de Gmail-koppeling zijn het taken met de tekst al klaar.
+3. **Dag 28 zonder reactie** → wacht op datum (het volgende venster, minstens 6 maanden).
+4. **Wachtdatum bereikt** → Nieuw, met het label Opnieuw en een taak.
+5. **In gesprek, 30 dagen geen contact** → label Stil. Alleen een signaal.
+6. **Order geleverd** → de herbestelcheck wordt berekend. Verstreken → label Herbestelling nodig + een taak.
+7. **2e order of 12 maanden actieve deal** → Vaste klant. **12 maanden stil** → label Slapend + een AI-concept voor heractivatie.
+8. **Moneybird meldt "betaald"** → de order staat op betaald.
+9. **Omzet per kortingscode** → elke nacht uit Shopify.
+10. **Datacontrole elke nacht** → meldingen bij dubbelen, een ontbrekende volgende actie, een prijs onder de staffel, of Wacht op datum voorbij de bewaartermijn (wachtdatum + 3 mnd).
 
 ### 7. AI en agents
 
@@ -195,7 +207,7 @@ Achtergronden zijn wit of warm off-white (#EAE8E5), en alles is in Poppins.
 **Goedkeuringsflow:**
 1. Het dashboard krijgt een eigen MCP-endpoint met alleen lees- en voorsteltools (`read_*`, `propose_*`). Hermes krijgt een token per agent. Shopify- en Gmail-sleutels staan niet op de VPS.
 2. Elk voorstel komt in de tabel Voorstellen, met soort, inhoud, agent, status en wie er besliste.
-3. Een mens keurt goed, past aan of wijst af in het scherm Voorstellen, en krijgt daarvan een pushmelding.
+3. Een mens keurt goed, past aan of wijst af in het blok Wacht op akkoord op CRM-home, en krijgt daarvan een pushmelding.
 4. Pas daarna voert de server de actie uit, met het account van die mens. Een mail wordt eerst een Gmail-concept; versturen is een aparte klik.
 5. Alles komt in een wijzigingslog.
 
@@ -288,22 +300,22 @@ Dit is geen juridisch advies.
 4. **Importeer eerst een proef van 20 records**, daarna de rest. Zet Bigin 2 weken op alleen-lezen en zeg het daarna op.
 5. **Ruim de vault op:** [[Pipeline Tracker]], de Retailer Database en de Merk & Bedrijf Database gaan naar het CRM verwijzen. Ze zijn nu toch leeg.
 
-### 12. Bouwvolgorde
+### 12. Bouwvolgorde (bijgewerkt 30-09)
 
-Uren zijn een schatting [aanname], met Claude Code en door iemand die het naast ander werk doet. Startdatum is 30 september.
+De uren zijn een schatting [aanname]: gebouwd met Claude Code, door iemand die het naast ander werk doet. Start is 30 september.
 
-| Fase | Uren | Wat je daarna kunt | Klaar bij 8 u/week | Klaar bij 4 u/week |
+| Fase | Inhoud | Uren | Klaar bij 8 u/week | Klaar bij 4 u/week |
 |---|---|---|---|---|
-| 0 · Fundament | 8 | Login, database, online zetten, back-up | 6 okt | 13 okt |
-| 1 · CRM-kern | 12 | Relaties, relatiepagina, volgende actie, Vandaag, snel toevoegen, import. **Eerste bruikbare versie; Bigin kan uit** | 20 okt | 3 nov |
-| 2 · Opvolgritme en klantbeheer | 10 | Uitkomstknoppen, herbenaderen, blokkadelijst, orders, prijsafspraken, herbestelcheck | 27 okt | 24 nov |
-| 3 · Koppelingen | 12 | Shopify, Gmail, Tasks, Calendar | 10 nov | 15 dec |
-| 4 · Offerte → factuur | 10 | Offertes, Moneybird, VIES, samples | 17 nov | 29 dec |
-| 5 · AI en agents | 12 | Assistent, Voorstellen, MCP, Hermes, weekkandidaten, datacontroles, Doelen | 24 nov | januari 2027 |
+| 1 | Fundament: login, database, online zetten, back-up | 8 | 6 okt | 13 okt |
+| 2 | Lijsten per type, statussen, wachtdatum, relatiepagina, CRM-home, import. **Zonder AI; Bigin kan uit** | 14 | 20 okt | 10 nov |
+| 3 | Reeks als taken, termijnen, labels, statusgeschiedenis, Instellingen | 10 | 27 okt | 24 nov |
+| — | **4–6 weken met de hand werken en meten; intussen fase 4 en 5** | | | |
+| 4 | Gmail: reeks echt versturen, reactie herkennen, reeks stoppen | 10 | 10 nov | 15 dec |
+| 5 | Offertes & orders, Moneybird, kortingscode-omzet | 12 | 17 nov | 12 jan |
+| 6 | AI: actuele punten, mail en belscript, reeks-goedkeuring | 8 | ± 8 dec | ± 26 jan |
+| 7 | Hermes: kandidatenpool, score, aanvulling op maandag | 10 | ± 22 dec | ± feb 2027 |
 
-Reken bij tegenvallers op anderhalf keer zoveel tijd:
-- **Bij 8 uur per week** is alles dan af rond 22 december, nog steeds vóór de deadline.
-- **Bij 4 uur per week** schuiven fase 4 en 5 naar januari of februari. Fase 0–2 zijn dan wel ruim vóór het herbestelseizoen van de clubs klaar.
+Reken bij tegenvallers op ongeveer anderhalf keer zoveel tijd. Bij 4 u/week staat de kern (fase 1–4) vóór 2027; AI en Hermes volgen in het eerste kwartaal.
 
 ### 13. Succescriteria
 
@@ -317,7 +329,7 @@ Reken bij tegenvallers op anderhalf keer zoveel tijd:
 - Elke benaderde prospect is binnen 7 dagen opgevolgd.
 - Elke klant heeft een prijsafspraak en een herbestelcheck.
 - B2B-facturen lopen via het CRM naar Moneybird.
-- Het scherm Doelen toont de stand ten opzichte van 10 vaste klanten, zonder handwerk.
+- De stats op CRM-home tonen de stand ten opzichte van 10 vaste klanten, zonder handwerk.
 
 ### 14. Risico's
 

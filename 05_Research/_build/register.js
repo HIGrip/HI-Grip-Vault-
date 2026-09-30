@@ -604,6 +604,24 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
+   "body_md": "**Waarom:** Search Console-meting (routine \"Search Console & rankings\", tweede run): de pagina rankt sterk — gemiddelde positie 3,9 over 28 dagen (4,2 over 7 dagen) — maar trok in 28 dagen geen enkele klik op 120 vertoningen (0% CTR). Bij zo'n goede positie wijst 0% CTR op een titel/omschrijving die niet aansluit bij wat de zoeker verwacht, niet op een rankingprobleem.\n**Waar:** `/pages/ontdek-jouw-sport` — titel en meta description via Shopify admin\n**Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.\n**Gevonden op:** 30 september 2026 (Search Console & rankings)",
+   "controle": null,
+   "id": "backlog#bf53be16",
+   "kop": "19. [search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven (nieuw 30 sep 2026)",
+   "prioriteit": "P2",
+   "prioriteit_effectief": "P2",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "30 september 2026 (Search Console & rankings)",
+    "Waar": "`/pages/ontdek-jouw-sport` — titel en meta description via Shopify admin",
+    "Waarom": "Search Console-meting (routine \"Search Console & rankings\", tweede run): de pagina rankt sterk — gemiddelde positie 3,9 over 28 dagen (4,2 over 7 dagen) — maar trok in 28 dagen geen enkele klik op 120 vertoningen (0% CTR). Bij zo'n goede positie wijst 0% CTR op een titel/omschrijving die niet aansluit bij wat de zoeker verwacht, niet op een rankingprobleem.",
+    "Wat": "SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
    "body_md": "**Waarom:** TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt via een losse app (bijv. SlashCart vanaf $9,99/maand, Optima gratis) rechtstreeks aan Shopify voor productsync, voorraad en orderafhandeling. De hele klantreis — ontdekken, valideren via creators, afrekenen — vindt dan binnen TikTok zelf plaats, met een \"Fast Shipping\"-badge die conversie verder verhoogt. Platformkosten: 2-8% commissie + $0,30 per transactie, plus optioneel 10-20% creator-affiliate-commissie.\n**Waar:** TikTok Seller Center (seller-nl.tiktok.com) + Shopify App Store\n**Wat:** Aanmeldprocedure doorlopen (KVK-gegevens, vier stappen, beoordeling 1-2 werkdagen) en beslissen of dit een los kanaal wordt naast higrip.nl of gecombineerd met het creator-plan (punt 9).\n**Effect:** Extra verkoopkanaal in de grootste groeimarkt (padel) met lagere aankoopdrempel dan doorklikken naar een externe site — vereist wel bewaking van last-click-attributie, die dit verkeer mist.\n**Inspanning:** Verkenning en aanmelding een half dagdeel; app-koppeling en catalogus-setup 1 dag.\n\n---",
    "controle": {
     "bewijs": "Mensenwerk: aanmelding met KVK-gegevens en een besluit van het team.",
@@ -691,7 +709,7 @@ window.HI_RESEARCH = {
    "dubbel": 7,
    "gedaan": 10,
    "handmatig": 47,
-   "ongecontroleerd": 34,
+   "ongecontroleerd": 36,
    "open": 88
   },
   "vandaag_gedaan": [],
@@ -1824,9 +1842,70 @@ window.HI_RESEARCH = {
    "toegepast": 4
   }
  },
- "gebouwd": "2026-09-30T03:40:09+00:00",
+ "gebouwd": "2026-09-30T04:07:41+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\higrip-growth-radar\\SKILL.md` en `higrip-seo-regressiecheck\\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | `C:\\Users\\Test\\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n",
  "notities": [
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-09-30-search-console#0b8e490a",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "[search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven: gemiddelde positie 3,9 (28 dagen) maar 0% CTR over 120 vertoningen — titel/omschrijving sluiten vermoedelijk niet aan bij de zoekintentie",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Search Console & rankings — week 40\n\n## In het kort\n\nTweede meting van deze routine. Search Console en GA4 waren beide bereikbaar (`check` gaf \"ok\"). De maandtrend (28 dagen) blijft sterk positief op alle KPI's; de weektrend daalt voor de tweede week op rij in klikken, bij aantallen die nog te klein zijn voor een harde conclusie. Twee onderdelen kon ik weer niet meten: het generatieve-AI-impressierapport en de indexeringsstatus.\n\n## Kerncijfers\n\n- **146** · Klikken (28 dagen) · +160,7%\n- **3.979** · Vertoningen (28 dagen) · +55,3%\n- **3,67%** · CTR (28 dagen) · +1,48 pt\n- **9,2** · Gemiddelde positie (28 dagen) · 2,1 beter\n\n## Bevindingen\n\n### Kerncijfers — totaal higrip.nl\n\n| Periode | Klikken | Vertoningen | CTR | Gem. positie |\n|---|---|---|---|---|\n| Laatste 7 dagen (21–27 sep) | 24 | 911 | 2,63% | 7,6 |\n| Vorige 7 dagen (14–20 sep) | 37 | 1.065 | 3,47% | 8,6 |\n| Verschil | **−35,1%** | −14,5% | −0,84 pt | +1,0 (beter) |\n| Laatste 28 dagen (31 aug–27 sep) | 146 | 3.979 | 3,67% | 9,2 |\n| Vorige 28 dagen (3–30 aug) | 56 | 2.562 | 2,19% | 11,3 |\n| Verschil | **+160,7%** | +55,3% | +1,48 pt | +2,1 (beter) |\n\nZelfde patroon als vorige week: de maandtrend is op elke KPI positief, de weektrend niet. Vorige week daalden de wekelijkse klikken al 38,9%; deze week weer 35,1%, op een nog kleiner totaal (24). Bij zulke lage aantallen kan één dag het beeld kantelen — geen trendbreuk concluderen, wel blijven volgen. Let op: Search Console-data loopt 3 dagen achter, dus de meest recente dagen van elke periode zijn nog niet volledig.\n\n### Kernkeywords (7 dagen, 21–27 sep, tenzij anders vermeld)\n\n| Zoekterm | Positie | Vorige positie | Verschil | Rankende URL |\n|---|---|---|---|---|\n| gripsokken | 5,9 | 7,1 | **+1,2** | `/products/hi-grip-gripsokken-1` |\n| grip socks (28 dagen, meer volume) | 11,4 | 12,7 | +1,3 | verdeeld over 4 URL's (zie Kannibalisatie) |\n| grip socks (7 dagen) | 11,8 | 10,3 | −1,5 | idem |\n| gripsokken kopen | 14 (5 vert.) | 10 | −4 | `/products/hi-grip-gripsokken-1` |\n| gripsokken voetbal | 41,8 (4 vert.) | 57,7 | +15,9 | `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` |\n| gripsokken padel / tennis / rugby | geen data | — | — | — |\n| antislip sokken / anti slip sokken | 1,7–6 (1–3 vert., 28 dagen) | — | — | wisselend, te weinig data |\n\n\"Gripsokken\" is deze week op één pagina geconcentreerd (81 vertoningen, geen kannibalisatie zichtbaar) — een verbetering ten opzichte van de vorige meting. \"Gripsokken kopen\" en \"gripsokken voetbal\" blijven ver onder de 100 vertoningen; geen conclusie. \"Gripsokken padel\", \"-tennis\" en \"-rugby\" staan nog steeds niet in de top 50 (7 én 28 dagen) — ondanks dat `/pages/gripsokken-voor-padel` inmiddels wél bestaat en 5 vertoningen trekt (zie Pagina's), rankt die pagina niet zichtbaar op de exacte term \"gripsokken padel\".\n\n### Nieuwe zoektermen (7 dagen)\n\nVan de 50 gemeten termen zijn er 26 nieuw, bijna allemaal eenmalige tikfout-varianten van \"grip socks\"/\"gripsokken\" (bijv. \"grib socks\", \"gryp socks\", \"grid socks\", \"gripsokjes\", \"gripsokken action\") met 1 vertoning — geen nieuws. Eén curiositeit zonder genoeg volume om iets mee te doen: \"fibromyalgie drukpunten\" (1 vertoning, positie 15) landt op de blog over drukpunten van sporters — ander publiek dan bedoeld, te weinig data om op te reageren.\n\n### Kansen\n\n**Striking distance (positie 5–20, ≥ 20 vertoningen, 7 dagen):**\n\n| Zoekterm | Positie | Vertoningen |\n|---|---|---|\n| gripsokken | 5,9 | 81 |\n| grip sokken | 9,0 | 47 |\n| grip socks | 11,8 | 46 |\n| gripsocks | 6,7 | 22 |\n\nAllemaal al gevolgde kernkeywords — geen nieuwe actie.\n\n**Lage CTR — nieuw dit keer (28 dagen, ≥ 100 vertoningen):**\n\n| Pagina | Vertoningen | CTR | Positie |\n|---|---|---|---|\n| `/pages/ontdek-jouw-sport` | 120 | **0%** | 3,9 |\n| `/en/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 112 | 0% | 8,1 |\n| `/blogs/hi-grip/waarom-hi-grip-gripsokken` | 194 | 1,03% | 6,9 |\n| `/products/performance-grip-socks-2-0-zwart` | 167 | 0,6% | 4,9 |\n\nDe overige lage-CTR-pagina's uit deze meting (`/products/hi-grip-gripsokken-1`, `/en/collections/gripsokken`, `/collections/all`, `/collections/gripsokken`) hebben al een openstaand backlogpunt (17, 18 of het feitenbestand) — niet opnieuw voorgesteld. Nieuw en opvallend: **`/pages/ontdek-jouw-sport`** rankt sterk (gem. positie 3,9, ook al 27 vertoningen/7 dagen op positie 4,2) maar trok in 28 dagen geen enkele klik — actie hieronder. `/products/performance-grip-socks-2-0-zwart` (0,6% CTR) is al verklaard door het openstaande punt dat de SEO-titels voor de 2.0-producten nog op CONCEPT staan (niet live, zie `2026-09-23-seo-conversietest-run-1#52494c22`) — geen nieuwe actie, bevestiging van bestaand punt.\n\n### Kannibalisatie\n\n**\"grip socks\"** blijft verdeeld over dezelfde vier eigen URL's als vorige meting: `/en` (15 vert., pos. 10,5), `/collections/all` (14 vert., pos. 12,5), `/products/performance-grip-socks-2-0-zwart` (4 vert.) en `/` (5 vert., pos. 8,4) — al genoteerd als backlogpunt 18, niet opnieuw voorgesteld. **\"gripsokken\"** (hoofdkeyword) toont deze week geen kannibalisatie — geconcentreerd op `/products/hi-grip-gripsokken-1`.\n\n### Pagina's (7 dagen, top gesorteerd op klikken)\n\n| Pagina | Klikken | Vertoningen | Positieverschil |\n|---|---|---|---|\n| `/` | 15 | 140 | **+2,8** (beter) |\n| `/products/hi-grip-gripsokken-1` | 3 | 273 | +0,5 |\n| `/en` | 2 | 113 | −1,2 |\n| `/collections/all` | 1 | 107 | +1,1 |\n| `/en/collections/gripsokken` | 1 | 60 | −0,9 |\n| `/blogs/hi-grip/de-wetenschap-achter-gripsokken` | 1 | 27 | −0,8 |\n| `/pages/gripsokken-voor-padel` (nieuw) | 1 | 5 | — |\n\nGrootste daler: `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` (−3,9, van 4,1 naar 8,0, 49 vertoningen) — volgen, nog geen actie waard op dit volume. Grootste stijger: de homepage (+2,8, zie Doorwerking hieronder).\n\n### Indexering\n\nNiet te meten: `google_data.py` heeft geen commando voor het Index Coverage-rapport. Zelfde beperking als vorige meting, geen cijfer verzonnen.\n\n### Doorwerking van eerdere verbeteringen\n\n`CONTROLE.json` bevestigt sinds 25 september 2026 (`2026-09-21-weekoverzicht#fded3395`, methode `site`) dat de nieuwe homepage-titel (\"HÏ Grip | Performance Gripsokken voor Sporters\") en meta description live staan. Sindsdien is de positie van `/` duidelijk verbeterd: 7 dagen van gem. 9,4 naar 6,6 (+2,8), 28 dagen van 18,8 naar 11,9 (+6,9) — al valt een deel van dat 28-dagenvenster nog vóór de wijziging. CTR van de homepage is met 10,71% (7 dagen) en 11,58% (28 dagen) ruim boven de rest van de site. Voorzichtige conclusie: de titelwijziging lijkt te werken; volgende week bevestigt dit verder.\n\nOverige concepten uit `_geheugen/seo-conversietest.md` (SEO-titels 2.0-producten, herschreven collectiebeschrijving, alt-teksten) staan nog op CONCEPT, dus niets nieuws om op te meten. De verborgen maatgidspagina staat nog niet gepubliceerd.\n\n## Wat niet lukte\n\n- Generatieve-AI-impressierapport (AI Overviews/AI Mode): niet ondersteund door `google_data.py`. Blijft open als backlogpunt 15 (P2) — geen nieuwe actie nodig.\n- Indexeringsstatus (geïndexeerd/niet-geïndexeerd, foutredenen): zelfde beperking.\n\n## Acties\n\n- [ ] P2 · [search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven: gemiddelde positie 3,9 (28 dagen) maar 0% CTR over 120 vertoningen — titel/omschrijving sluiten vermoedelijk niet aan bij de zoekintentie\n\n## Bronnen\n\n- `python 05_Research/_tools/google_data.py check|gsc --dagen 7 --top 50|gsc --dagen 28 --top 50|ga4` (30 sep 2026)\n- `00_Brand_Core/Feiten & Actuele Staat.md`\n- `05_Research/_geheugen/search-console.md`, `05_Research/_geheugen/seo-conversietest.md`\n- `05_Research/_backlog/ACTIEBACKLOG.md`, `05_Research/_backlog/CONTROLE.json`\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-09-30",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-25-search-console",
+    "2026-09-28-regressiecheck",
+    "2026-09-28-seo-conversietest-run-2",
+    "2026-09-29-growth-radar-seo-content"
+   ],
+   "id": "2026-09-30-search-console",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Klikken (28 dagen)",
+     "verschil": "+160,7%",
+     "waarde": "146"
+    },
+    {
+     "label": "Vertoningen (28 dagen)",
+     "verschil": "+55,3%",
+     "waarde": "3.979"
+    },
+    {
+     "label": "CTR (28 dagen)",
+     "verschil": "+1,48 pt",
+     "waarde": "3,67%"
+    },
+    {
+     "label": "Gemiddelde positie (28 dagen)",
+     "verschil": "2,1 beter",
+     "waarde": "9,2"
+    }
+   ],
+   "kerntitel": "Homepage-titel duwt positie flink omhoog; /ontdek-jouw-sport blijft op 0% CTR",
+   "prioriteit": "P2",
+   "routine": "search-console",
+   "samenvatting": "De 28-dagentrend blijft sterk positief (klikken +160,7%, vertoningen +55,3%) en de homepage — waarvan de titel sinds 25 september bevestigd live staat — klom in positie van gemiddeld 9,4 naar 6,6 (7 dagen); de wekelijkse klikken daalden voor de tweede week op rij (−35,1%), maar dat blijft bij 24 klikken nog ruis. Nieuw: /pages/ontdek-jouw-sport scoort met gemiddelde positie 3,9 goed, maar trok over 120 vertoningen in 28 dagen geen enkele klik.",
+   "status": "nieuw",
+   "titel": "Search Console & rankings — week 40",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-30-search-console.md",
+   "vervangt": [],
+   "wat_niet_lukte": "- Generatieve-AI-impressierapport (AI Overviews/AI Mode): niet ondersteund door `google_data.py`. Blijft open als backlogpunt 15 (P2) — geen nieuwe actie nodig.\n- Indexeringsstatus (geïndexeerd/niet-geïndexeerd, foutredenen): zelfde beperking."
+  },
   {
    "acties": [],
    "body_md": "# Growth Radar — AI-search (Google's Universal Cart draait nu echt, maar nog niet in Nederland)\n\n## In het kort\n\nBij de vorige AI-search runs ([2026-09-16-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-growth-radar-ai-search.md), [2026-09-23-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-growth-radar-ai-search.md)) was Universal Cart/UCP nog een aankondiging (Google NRF 2026). Die is inmiddels een live product geworden — alleen niet voor Nederlandse webshops. Verder onderzoek deze week (ChatGPT/AI Mode-interfacewijzigingen, een vermeende uitbreiding van het Perplexity Merchant Program) leverde geen bevinding op die de harde filter doorstond: geen concrete datum, of geen aantoonbaar verschil met wat al bekend is.\n\n## Bevindingen\n\n### Universal Cart is sinds 19 mei 2026 live in de VS, met AP2 als betaallaag — Nederland (nog) niet genoemd\nGoogle's Universal Cart (aangekondigd op I/O 2026, zie basislijn) is geen concept meer: het rolde op 19 mei 2026 uit in de VS, met producten toevoegen vanuit Search, Gemini, YouTube en Gmail, prijsdaling-tracking en Google Wallet-koppeling. Uitbreiding naar de Gemini-app volgde \"deze zomer\" (dus inmiddels), YouTube en Gmail komen daarna. Canada, Australië en het VK staan gepland voor later; Nederland en de rest van Europa worden niet genoemd. Onder de motorkap zit AP2 (Agent Payments Protocol, sinds 16 september 2025 een open standaard met 60+ partners waaronder Mastercard, PayPal en Amex), dat in april 2026 naar v0.2.0 ging en inmiddels aan de FIDO Alliance is overgedragen — Google maakt er dus bewust een branche-brede standaard van in plaats van een eigen slot.\n\n> **Voor higrip.nl:** Dit raakt vooralsnog niets direct: geen NL-rollout, en het artikel spreekt over \"participating merchants\" die zelf UCP moeten adopteren, niet over een automatische opname zoals bij ChatGPT/Shopify Catalog. Het bevestigt wel de onderbouwing van het al bestaande P1-punt 4 (Merchant Center feed/variant-ID's): die feed is straks niet alleen voor Shopping-ads, maar ook de ingang voor Universal Cart zodra dat naar Europa komt. Geen nieuwe actie — de bestaande actie dekt dit al.\n\n**Actie:** Geen nieuwe actie. Backlogpunt 4 bijgewerkt met deze datum als extra controlepunt (zie backlog).\n\n## Wat niet lukte\n\nTwee sporen leverden geen bevinding op die de harde filter (Stap 4) doorstond, en zijn daarom niet opgenomen:\n- Het Google Search Central-webmasterrapport van september 2026 meldt dat Google \"AI Mode\" en \"AI Overviews\" verder samenvoegt en nieuwe knoppen op de homepage test (Create Images, Ask About Files, Brainstorm) — maar zonder concrete datum en zonder duidelijke relatie tot shopping-zoekopdrachten. Te vaag om als bevinding op te nemen; overlapt bovendien met de al gelogde trend (volle-lengte AI Overviews, 29 sep).\n- Een claim dat het Perplexity Merchant Program via een Firmly.ai/PayPal-partnerschap nu open zou staan voor webshops van elke omvang (niet meer alleen grote retailers) kon niet aan een datum of eerste-partij-bron worden opgehangen. Niet gemeld; backlogpunt 8 blijft ongewijzigd (VS-verzending blijft de voorwaarde).\n\n## Bronnen\n\n- [Google's new Universal Cart wants to follow your entire shopping journey across the internet — TechCrunch, 19 mei 2026](https://techcrunch.com/2026/05/19/googles-new-universal-cart-wants-to-follow-your-entire-shopping-journey-across-the-internet/)\n- [AP2 Protocol Explained: Google's Agentic Commerce Standard 2026](https://eco.com/support/en/articles/15192002-ap2-protocol-explained-google-s-agentic-commerce-standard-2026)\n- [Google Shopping introduces Universal Cart, agentic shopping — Google](https://blog.google/products-and-platforms/products/shopping/google-shopping-cart/)\n- [September 2026 Google Webmaster Report: Spam Update, AI Mode — Search Engine Roundtable](https://www.seroundtable.com/sept-2026-google-webmaster-report-41979.html)\n\n## Aantekeningen",
@@ -1865,7 +1944,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-22-growth-radar-seo-content",
     "2026-09-16-growth-radar-ai-search",
-    "2026-09-25-search-console"
+    "2026-09-25-search-console",
+    "2026-09-30-search-console"
    ],
    "id": "2026-09-29-growth-radar-seo-content",
    "kansen": [],
@@ -2151,7 +2231,8 @@ window.HI_RESEARCH = {
     "2026-09-28-regressiecheck",
     "2026-09-25-seo-audit",
     "2026-09-25-search-console",
-    "2026-09-25-evaluatie-routines"
+    "2026-09-25-evaluatie-routines",
+    "2026-09-30-search-console"
    ],
    "id": "2026-09-28-seo-conversietest-run-2",
    "kansen": [],
@@ -2203,7 +2284,8 @@ window.HI_RESEARCH = {
     "2026-09-23-seo-conversietest-run-1",
     "2026-09-25-seo-audit",
     "2026-09-07-compliance-todo",
-    "2026-09-28-seo-conversietest-run-2"
+    "2026-09-28-seo-conversietest-run-2",
+    "2026-09-30-search-console"
    ],
    "id": "2026-09-28-regressiecheck",
    "kansen": [],
@@ -3222,7 +3304,8 @@ window.HI_RESEARCH = {
     "2026-09-21-regressiecheck",
     "2026-09-15-regressiecheck",
     "2026-09-28-seo-conversietest-run-2",
-    "2026-09-29-growth-radar-seo-content"
+    "2026-09-29-growth-radar-seo-content",
+    "2026-09-30-search-console"
    ],
    "id": "2026-09-25-search-console",
    "kansen": [],
@@ -6817,7 +6900,7 @@ window.HI_RESEARCH = {
  "stats": {
   "open_per_prioriteit": {
    "P1": 49,
-   "P2": 85,
+   "P2": 87,
    "P3": 45
   },
   "per_categorie": {
@@ -6825,7 +6908,7 @@ window.HI_RESEARCH = {
    "CRO": 4,
    "Compliance": 1,
    "Merk": 6,
-   "SEO": 20,
+   "SEO": 21,
    "Social": 2,
    "Techniek": 5
   },
@@ -6886,12 +6969,12 @@ window.HI_RESEARCH = {
     "week": "2026-W39"
    },
    {
-    "aantal": 8,
+    "aantal": 9,
     "start": "2026-09-28",
     "week": "2026-W40"
    }
   ],
-  "totaal_notities": 39
+  "totaal_notities": 40
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

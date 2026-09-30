@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Google breidt AI Overviews sinds 28 augustus 2026 bevestigd automatisch uit tot de volle lengte zodra het systeem dat nuttig acht, zonder dat een gebruiker op 'Toon meer' hoeft te klikken. Voor higrip.nl betekent dit dat gewone organische resultaten op vraagvormige zoekwoorden nog verder onder de vouw komen — extra gewicht voor het al openstaande antwoordcapsule-plan."
-gerelateerd: [2026-09-22-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-25-search-console]
+gerelateerd: [2026-09-22-growth-radar-seo-content, 2026-09-16-growth-radar-ai-search, 2026-09-25-search-console, 2026-09-30-search-console]
 vervangt: []
 bronbestand: ""
 deadline: ""

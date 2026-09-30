@@ -3,8 +3,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 30 september 2026 (growth-radar)
-Open: 23 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 30 september 2026 (search-console)
+Open: 24 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -176,6 +176,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.
 **Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.
 **Inspanning:** 1 uur
+
+### [ ] 19. [search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven (nieuw 30 sep 2026)
+**Waarom:** Search Console-meting (routine "Search Console & rankings", tweede run): de pagina rankt sterk — gemiddelde positie 3,9 over 28 dagen (4,2 over 7 dagen) — maar trok in 28 dagen geen enkele klik op 120 vertoningen (0% CTR). Bij zo'n goede positie wijst 0% CTR op een titel/omschrijving die niet aansluit bij wat de zoeker verwacht, niet op een rankingprobleem.
+**Waar:** `/pages/ontdek-jouw-sport` — titel en meta description via Shopify admin
+**Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
+**Gevonden op:** 30 september 2026 (Search Console & rankings)
 
 ### [ ] 13. Onderzoek TikTok Shop Nederland — directe verkoop via Shopify-koppeling (nieuw 18 sep 2026)
 **Waarom:** TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt via een losse app (bijv. SlashCart vanaf $9,99/maand, Optima gratis) rechtstreeks aan Shopify voor productsync, voorraad en orderafhandeling. De hele klantreis — ontdekken, valideren via creators, afrekenen — vindt dan binnen TikTok zelf plaats, met een "Fast Shipping"-badge die conversie verder verhoogt. Platformkosten: 2-8% commissie + $0,30 per transactie, plus optioneel 10-20% creator-affiliate-commissie.

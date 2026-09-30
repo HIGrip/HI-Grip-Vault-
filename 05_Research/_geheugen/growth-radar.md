@@ -60,3 +60,4 @@ Format: `JJJJ-MM-DD | thema | onderwerp | waar behandeld`
 2026-09-28 | SEO-technisch | Google september-spamupdate (24 sep, normale update, ~2 weken rollout, geen nieuw beleid) | seo-technisch
 2026-09-28 | SEO-technisch | Search Console multimodaal filter (afbeeldingen/Lens/Circle to Search), data vanaf 10 sep 2026 | seo-technisch
 2026-09-29 | SEO-content | AI Overviews breiden zich sinds 28 aug 2026 automatisch uit tot volle lengte (geen "Toon meer" meer), blauwe links zakken verder weg — extra gewicht voor backlogpunt 6 (antwoordcapsules) | 2026-09-29-growth-radar-seo-content
+2026-09-30 | AI-search | Universal Cart/AP2 live in de VS sinds 19 mei 2026, AP2 overgedragen aan FIDO Alliance, Nederland/Europa nog niet op de rolluit-lijst — bevestigt backlogpunt 4 | 2026-09-30-growth-radar-ai-search

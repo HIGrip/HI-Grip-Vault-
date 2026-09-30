@@ -3,7 +3,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 29 september 2026 (growth-radar)
+Laatst bijgewerkt: 30 september 2026 (growth-radar)
 Open: 23 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -101,6 +101,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.
 **Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).
 **Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
+**Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
 **Inspanning:** 2 uur
 
 ---

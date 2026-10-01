@@ -57,3 +57,7 @@ Formaat: `- **Regel.** Reden. (datum, bron)`
 ## Voor alle agents (toegevoegd na testrun 2026-10-01)
 - **Schrijf nooit "niet te verifiëren" voordat je het kwaliteitsdashboard en het nieuwste weekoverzicht hebt doorzocht.** De maker van de proef concludeerde dat "rugby ontbreekt in de sportgrid" niet te bevestigen was; de reviewer vond het wel, in `Agent Werk & Kwaliteit Overzicht.md` en `05_Research/2026-09-21-weekoverzicht.md`. (2026-10-01, test Opdrachtprotocol)
 - **Geef bij tegenstrijdige documenten een ernst en de bron mee, en zeg welk document volgens jou gelijk heeft of dat het een vraag voor Lars is.** Een lijst zonder rangorde dwingt de lezer tot opnieuw beoordelen. (2026-10-01, test Opdrachtprotocol)
+
+## Voor Denzel
+- **Controleer thema-ID's met `shopify theme list` voordat je ze uit de vault overneemt.** Op 2026-10-01 stond de vault op live `200269398343`, terwijl de echte live-rol `201132507463` was. (2026-10-01, themacontrole)
+- **Verifieer de zwaarste bevindingen zelf in de bron** voordat je ze doorgeeft. (2026-10-01, test Opdrachtprotocol)

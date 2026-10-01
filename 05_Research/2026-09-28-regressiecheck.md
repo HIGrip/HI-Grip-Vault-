@@ -16,6 +16,8 @@ deadline: ""
 ---
 # SEO-regressiecheck — 28 september 2026
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Controle-run, geen onderzoek. Dertien URL's gecontroleerd (sitemap-gedreven, zie hieronder). Kritieke check (geen `aggregateRating`) blijft schoon op alle dertien. Drie nieuwe afwijkingen dit keer, vier bekende afwijkingen blijven ongewijzigd open (geen nieuw backlogpunt, staat al open). GA4 werkte deze week wel; PageSpeed Insights zat op quotum.

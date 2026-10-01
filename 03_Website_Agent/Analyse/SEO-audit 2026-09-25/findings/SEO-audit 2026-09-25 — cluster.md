@@ -152,3 +152,5 @@ Also change the default blog CTA from `/collections/all` to the matching sport p
  {"id":"CA-7","severity":"medium","title":"'anti slip sokken' is a care/elderly SERP - exclude from targeting; 'tennissokken'/'rugby sokken' 0 overlap with gripsokken variants","url":null},
  {"id":"CA-8","severity":"low","title":"Off-topic/near-empty posts (sportvoeding 45 w) dilute topical focus","url":"/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding"}]}
 ```
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

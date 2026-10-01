@@ -41,6 +41,9 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 - **Rol:** Zoekt en beoordeelt events en overige samenwerkingsmogelijkheden buiten de vaste B2B-klantrelatie en buiten influencers om.
 - **Volledige identiteit:** [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent/identiteit|Partnerships & Events Agent — identiteit]]
 
+## Scheiding B2C / B2B in de Collabs-sheet (vastgesteld 2026-10-01)
+De Google Sheet *Collabs - HÏ Grip* is alleen voor de B2C-kant: influencers, creators, atleten, mediaplatforms en bijzondere organisaties. Sportclubs en retail (B2B-afnemers) staan daar nooit in; die horen bij Lijn A (B2B Klanten Agent). De beste kandidaten uit de automatische influencer-zoekruns komen in deze sheet. Details: [[04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent/identiteit|Influencer & Creator Agent — identiteit]].
+
 ## Parallelle dispatch (nieuw, 2026-09-16)
 
 Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in `HI-Grip-claude-setup/agents/` (`influencer-creator-agent`, `b2b-klanten-agent`, `partnerships-events-agent`), gesynct naar `~/.claude/agents`. De orchestrator-skill **`/partnership-agent <opdracht>`** (`commands/partnership-agent.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als bij Website Agent en `/seo audit`. Er waren voor deze 3 sub-agents nog geen `/`-skills (het zijn workflows, geen skill-kandidaten) — de agent-definities zijn dus hun eerste `/`-activeerbare vorm.
@@ -53,3 +56,5 @@ Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in `HI-Grip-
 - [[Partnership Strategie]]
 - [[Evaluatiecriteria]]
 - [[Doelgroep & Persona's]]
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

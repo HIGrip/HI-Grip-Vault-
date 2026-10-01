@@ -16,3 +16,5 @@
 - [[Brand Voice & Tone of Voice]] — Toon
 - [[SEO Strategie & Keywords]] — Meta title/description per productpagina
 - [[Conversie Optimalisatie Checklist]] — Actiepunten die hier landen
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

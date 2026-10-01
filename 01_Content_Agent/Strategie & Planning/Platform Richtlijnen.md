@@ -1,6 +1,8 @@
 # Platform Richtlijnen — HÏ Grip
 
-> Per platform: doelgroep, content-type en aanpak. Doelgroep-beschrijvingen: zie [[Doelgroep & Persona's]]. Post-tijden: zie [[Posting Frequentie per Platform]].
+> Per platform: publiek, wat we plaatsen en aanpak. Doelgroep: de HÏ Grip sporter in tennis/padel, voetbal en rugby (zie [[Doelgroep & Persona's]]). Planning per platform volgt sinds 30-9-2026 het Canva-document *MERK & STRATEGIE* (zie [[Strategische Keuzes]], tactiek 02). Post-tijden: zie [[Posting Frequentie per Platform]].
+
+**Hoofdkanaal:** @higrip.nl — hier bouwen we het merk en komt de community (Performance Academy). **Hoofd-KPI voor alle socials:** engagement; organisch daarnaast volgers.
 
 ---
 
@@ -8,10 +10,7 @@
 
 **Publiek:** Jongeren en millennials (14–40), visueel ingesteld.
 
-**Doelgroepen:**
-- Trendbewuste Talenten
-- Toekomstige Pro's
-- Blessuregevoelige Sporters
+**Planning (Meta):** Trustpilot · zakelijk · e-mail-story · HÏ LIGHTS OF THE WEEK · gedeelde influencer-posts · productcampagnes · (guerilla-)series.
 
 **Content dat werkt:**
 - Korte Reels (7–15 sec) — in de eerste 3 seconden meteen aandacht trekken
@@ -29,9 +28,7 @@ Focus op kwaliteit boven kwantiteit. Reels met sterke opening voor organische gr
 
 **Publiek:** Gen Z en jongeren (13–24), trendgevoelig.
 
-**Doelgroepen:**
-- Trendbewuste Talenten
-- Toekomstige Pro's
+**Planning:** HÏ LIGHTS OF THE WEEK · productcampagnes · (guerilla-)series. Persoonlijke content en storytelling-video's: trending, kijkt goed weg en vertaalt de identiteit van een jong en doorzettend merk.
 
 **Content dat werkt:**
 - Korte, grappige challenges
@@ -47,10 +44,7 @@ Video's met een sterke hook die meteen de aandacht pakt. Content die aansluit bi
 
 **Publiek:** Breed, 25–65 jaar en lokale communities.
 
-**Doelgroepen:**
-- Blessuregevoelige Sporters
-- Betrokken Ouders
-- Kwaliteitsrecreanten (sportliefhebbers die voor plezier sporten maar vertrouwen op kwaliteitsmateriaal)
+**Planning:** valt onder Meta (zie Instagram). Meta ads draaien via @higrip.nl en via influencers: eerst testen, dan opschalen wat werkt.
 
 **Content dat werkt:**
 - Community-building: lokale events aankondigen, klantreacties delen, interactieve polls
@@ -65,10 +59,7 @@ Video's én posts met meer tekst. Focus op Facebookgroepen, niet te commercieel.
 
 **Publiek:** Professionals, B2B, 25–55 jaar, besluitvormers.
 
-**Doelgroepen:**
-- Kwaliteitsrecreanten
-- Innovatieve Sportclubs
-- Performance Retailers
+**Planning:** LinkedIn is simpel: zakelijke onderwerpen. Zakelijke announcements · productcampagnes · statusposts. Doelgroep: retail en sportclubs (HÏ Grip Zakelijk).
 
 **Content dat werkt:**
 - Thought leadership: branche-inzichten, case studies
@@ -82,8 +73,11 @@ Posts over het bedrijf en hoogtepunten — tekst of video. Zakelijke inkijk in h
 
 ## Gerelateerde bestanden
 
-- [[Doelgroep & Persona's]] — Uitgebreide doelgroep-beschrijvingen
+- [[Doelgroep & Persona's]] — De HÏ Grip sporter en B2B
+- [[Strategische Keuzes]] — Tactiek socials: waarom, KPI's, doel 2031
 - [[Content Strategie]] — Het verhaal en de momenten die we vertellen
 - [[Content Pillars]] — Content ideeën per doelgroep
 - [[Posting Frequentie per Platform]] — Beste posttijden per platform
 - [[Hashtag Bibliotheek]] — Hashtags per platform
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

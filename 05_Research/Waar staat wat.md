@@ -1,5 +1,7 @@
 # Waar staat wat — onderzoek, routines en werkbestanden
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+
 > Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.
 
 | Wat | Waar | Bijgewerkt | Hoe kom je erbij |
@@ -28,3 +30,69 @@
 | **Compliance** | [[Compliance To-Do Lijst]] (`00_Brand_Core\Compliance\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |
 | **Archief (oud werk)** | `C:\Users\Test\.claude\archief\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |
 | **KNVB-clubdata (B2B-outreach)** | `C:\Users\Test\.claude\archief\knvb-scraper\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\project_knvb_scraper.md` |
+
+## Alle notities in deze map (automatisch)
+
+Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+
+### Hoofdmap
+- [[2026-09-28-weekoverzicht]]
+- [[2026-09-28-seo-conversietest-run-2]]
+- [[2026-09-28-regressiecheck]]
+- [[2026-09-28-growth-radar-seo-technisch]]
+- [[2026-09-26-onderzoek-nieuwe-routines]]
+- [[2026-09-26-dashboard-ux-onderzoek]]
+- [[2026-09-25-seo-audit]]
+- [[2026-09-25-search-console]]
+- [[2026-09-25-growth-radar-social]]
+- [[2026-09-25-evaluatie-routines]]
+- [[2026-09-24-upfront-bestelvolume-schatting]]
+- [[2026-09-24-growth-radar-cro]]
+- [[2026-09-24-financieel-plan-2027-2031-bmc-2031]]
+- [[2026-09-23-seo-conversietest-run-1]]
+- [[2026-09-23-growth-radar-ai-search]]
+- [[2026-09-22-growth-radar-seo-content]]
+- [[2026-09-21-weekoverzicht]]
+- [[2026-09-21-regressiecheck]]
+- [[2026-09-21-growth-radar-seo-technisch]]
+- [[2026-09-21-beachhead-rugby]]
+- [[2026-09-18-growth-radar-social]]
+- [[2026-09-17-growth-radar-cro]]
+- [[2026-09-16-seo-onderzoek-cloud-routine-website]]
+- [[2026-09-16-growth-radar-ai-search]]
+- [[2026-09-15-seo-audit]]
+- [[2026-09-15-regressiecheck]]
+- [[2026-09-15-growth-radar-seo-content]]
+- [[2026-09-15-growth-radar-basislijn]]
+- [[2026-09-14-weekoverzicht]]
+- [[2026-09-07-weekoverzicht]]
+- [[2026-09-07-compliance-todo]]
+- [[2026-09-04-werkdossier-stand-van-zaken]]
+- [[2026-09-03-analytics-kpi-meetgat]]
+- [[2026-08-31-weekoverzicht]]
+- [[2026-08-24-weekoverzicht]]
+
+### _backlog
+- [[ACTIEBACKLOG]]
+- [[AFGEROND]]
+
+### _build
+- [[PROCEDURE]]
+
+### _geheugen
+- [[05_Research/_geheugen/README|_geheugen/README]]
+- [[05_Research/_geheugen/actiecontrole|_geheugen/actiecontrole]]
+- [[backlinks-merchant]]
+- [[concurrentie]]
+- [[denzel-week]]
+- [[growth-radar]]
+- [[05_Research/_geheugen/klantstem|_geheugen/klantstem]]
+- [[materialen]]
+- [[05_Research/_geheugen/productradar|_geheugen/productradar]]
+- [[search-console]]
+- [[seo-conversietest]]
+- [[05_Research/_geheugen/seo-regressiecheck|_geheugen/seo-regressiecheck]]
+- [[strategie-maand]]
+- [[05_Research/_geheugen/uitvoerder|_geheugen/uitvoerder]]
+- [[verbanden]]
+- [[05_Research/_geheugen/website-ux|_geheugen/website-ux]]

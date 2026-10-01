@@ -13,7 +13,7 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 
 ## Kanalen + zoektermen per organisatietype
 
-> **Beachhead-strategie (vanaf 16-9-2026):** voetbal, rugby en tennis zijn nu de prioriteit — de nieuwe tennis- en rugby-rijen hieronder zijn nog niet in de praktijk getest, aanvullen na de eerste zoekronde. Padel/urban sport blijven bruikbaar maar zijn gedeprioriteerd.
+> **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** kernsporten zijn tennis/padel, voetbal en rugby — de tennis- en rugby-rijen hieronder zijn nog niet in de praktijk getest, aanvullen na de eerste zoekronde. Padel hoort bij de kernsport tennis/padel; urban sport is gedeprioriteerd. Events en toernooien zijn een secundair kanaal (zie [[Strategische Keuzes]]).
 
 | Organisatietype | Kanaal/bron | Zoektermen die werken |
 |---|---|---|
@@ -21,7 +21,7 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 | **Straatvoetbal/panna** ⭐ | Google, direct organisator | "panna knockout [stad]"; pannaknockout.nl (landelijke organisator, check agenda per stad) |
 | **Tennistoernooien/-clubs (amateur/open)** ⭐ | Google, KNLTB (toernooi.nl) | "open tennistoernooi [stad] [jaar]"; "tennisclub [stad] evenement"; toernooi.nl (KNLTB-platform, check per regio) |
 | **Rugbyclubs/-toernooien** ⭐ | Google, Rugby Nederland (bond) | "rugbytoernooi [stad] [jaar]"; "rugbyclub [stad] evenement/dag"; check verenigingenlijst via rugby.nl |
-| Padel centra/events | Google, KNLTB, AllesPadel, NLpadel | Gedeprioriteerd — "padel toernooi [stad] [jaar]"; let op: FIP/Premier Padel-namen = mega-tier, meestal te groot |
+| Padel centra/events | Google, KNLTB, AllesPadel, NLpadel | Kernsport (tennis/padel) — "padel toernooi [stad] [jaar]"; let op: FIP/Premier Padel-namen = mega-tier, meestal te groot |
 | Urban sport / streetball / 3x3 | Google, lokale basketbalbond, 3x3NL | Gedeprioriteerd — "3x3 toernooi [stad]"; "streetball evenement [stad]"; "[stad]basketbal.nl" |
 | Sportbeurzen/expo | Google | "sportbeurs Nederland [jaar]"; "sport expo B2B" |
 | Sport performance academies | Google | "[sport] academy Nederland [stad]" |
@@ -50,3 +50,5 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 - [[Voorwaarden Samenwerking]] — Criteria en uitsluitingen om te toetsen
 - [[Samenwerking Strategie]] — Waarom dit past bij HÏ Grip
 - [[Voorbeelden Gevonden Organisaties (Events)]] — Goede voorbeelden ter kalibratie
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

@@ -60,3 +60,5 @@
 - [[Brand Voice & Tone of Voice]] — Tone bij communicatie
 - [[Influencer Database]] — Influencers klaar voor outreach
 - [[Zoek Script & Gids]] — Hoe influencers gevonden worden
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

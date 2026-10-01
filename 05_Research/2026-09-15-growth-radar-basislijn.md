@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — Basislijn (nulmeting zes thema's)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Startmeting van de dagelijkse Growth Radar-routine; vult het `LEDGER.md` zodat dagelijkse runs niet dezelfde koppen herhalen. Zes secties met per sectie een "Voor higrip.nl"-vertaling. Let op: sectie 3 noemt AggregateRating als ontbrekend — de audit van dezelfde dag heeft juist een verzonnen `aggregateRating` verwijderd; de juiste volgorde (eerst reviewapp, dan schema) staat in de backlog.

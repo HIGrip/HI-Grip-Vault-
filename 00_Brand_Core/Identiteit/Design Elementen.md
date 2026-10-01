@@ -1,6 +1,6 @@
 # Design Elementen — HÏ Grip
 
-> Het bouwpakket waarmee elk HÏ Grip-design herkenbaar wordt. Bron: Brandbook hfst. 05. Voor kleuren en typografie: zie [[Logo & Kleurenpalet]]. Voor iconen: zie [[Iconografie]]. Voor beeldregie: zie [[Fotografie & Art-Direction]].
+> Het bouwpakket waarmee elk HÏ Grip-design herkenbaar wordt. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 06–07: https://canva.link/a48n60z2ay1g7bp. Voor kleuren en typografie: zie [[Logo & Kleurenpalet]]. Voor iconen: zie [[Iconografie]]. Voor beeldregie: zie [[Fotografie & Art-Direction]].
 
 ---
 
@@ -16,18 +16,20 @@ Elk ontwerp toets je hieraan. **Valt er één weg, dan is het geen HÏ Grip-desi
 | 04 | **Branding** | De driehoek keert terug: comfort, vertrouwen, innovatie. Altijd herkenbaar aanwezig. |
 | 05 | **Stijl** | Volwassen, innovatief, sportief, modern, energiek, performance-gericht — met grid patterns als handtekening. |
 
-Het Canva-merkmateriaal is de **werkbibliotheek**; het brandbook is de **regel**.
+Het Canva-merkmateriaal is de **werkbibliotheek**; het Canva-document *MERK & STRATEGIE* is de **regel**.
 
 ---
 
 ## Basis-motieven
+
+Terugkerende motieven maken elk design herkenbaar HÏ Grip: het grid van de sok, het verloop van wit naar zwart, scherpe lijnen, quote-marks en de chevron, de piek uit het embleem.
 
 | Motief | Betekenis |
 |---|---|
 | **Grid / mesh** | Verwijzing naar de wireframe-sok. Structuur en techniek. |
 | **Gradient wit→zwart** | Diepte zonder kleur. Het basisverloop. |
 | **Scherpe lijnen** | Snelheid en richting. Diagonalen, nooit willekeurig. |
-| **Quote-marks** | Voor statements en social proof. Groot en zelfverzekerd. |
+| **Quote-marks** | Voor statements en social proof. Groot en zelfverzekerd. Openen en sluiten als paar. |
 | **Chevron / piek** | De piek uit het embleem. Sectiemarkers en richting. |
 | **Whitespace** | Veel lucht. Overzichtelijk, abstract, volwassen. |
 
@@ -57,25 +59,26 @@ Het grid van de sok, doorvertaald naar dots. Techniek die je ziet zonder dat er 
 
 ## Vormen & snelheid
 
+Scherpe vormen geven richting. Alles staat schuin, alles wijst dezelfde kant op, en kleur komt binnen als accent, nooit als vlakvulling over de hele uiting.
+
 | Vorm | Gebruik |
 |---|---|
 | **Schuine balken** | Drie schuine vlakken. Snelheid, ritme en richting. |
 | **Speed-strepen** | Dunne dubbele slant. Divider of labelaccent. |
 | **Parallellogram** | Vlak voor labels en badges. Nooit recht, altijd schuin. |
 | **Chevron-trio** | Drie pieken achter elkaar. Vooruit, altijd naar rechts. |
-| **Quote-mark** | Statements en social proof. Groot en zelfverzekerd. |
+| **Quote-mark** | Statements en social proof. Groot en zelfverzekerd. Het quote-teken is een blok met een gebogen staart: volt op zwart, zwart op wit of wit op zwart. Het openingsteken staat altijd, het sluitteken alleen als de quote het vraagt. Nooit schuin zetten of vervormen. |
 | **Sparkle** | Vierpuntige ster, los of met baan. Nieuw, launch, innovatie. |
 
 **Regels**
-- Diagonalen lopen **altijd dezelfde kant op** binnen één uiting.
-- Maximaal twee accentkleuren; **volt blijft de eerste keus**.
+- Alles staat schuin en wijst **dezelfde kant op** binnen één uiting.
 - Kleur komt binnen als accent, nooit als vlakvulling over de hele uiting.
 
 ---
 
 ## Licht & verloop
 
-Elk lichteffect gebruikt **precies één** merkkleur en staat **alleen op zwart**.
+Licht maakt het beeld energiek, verloop maakt het leesbaar. Elk lichteffect gebruikt **precies één** merkkleur (volt, royal, pumpkin of tangerine) en staat **alleen op zwart**.
 
 | Effect | Gebruik |
 |---|---|
@@ -95,7 +98,9 @@ Elk lichteffect gebruikt **precies één** merkkleur en staat **alleen op zwart*
 
 ## Interface-elementen
 
-Zelfde line-art als de iconenset: wit, gelijke stroke, geen vlakken.
+Kleine functionele elementen voor webshop, mailings en slides. Zelfde line-art als de iconenset: wit, gelijke stroke, geen vlakken.
+
+**Waar het heen gaat:** webshop (USP-balk, productfeatures en checkout) · socials (één icoon per slide) · sales (sell-sheets en slides, tekst kort).
 
 | Element | Regel |
 |---|---|
@@ -131,7 +136,9 @@ Formaat, logo-positie en marges niet aanpassen.
 ## Gerelateerde bestanden
 
 - [[Logo & Kleurenpalet]] — Logo system, kleuren, typografie
-- [[Iconografie]] — De 94-iconenset
+- [[Iconografie]] — De iconenset (86 iconen)
 - [[Fotografie & Art-Direction]] — Wat we wel en niet fotograferen
 - [[Template Overzicht]] — Waar de werkbestanden per sjabloon staan
 - [[Brand Identity Overview]] — De driehoek achter het design
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

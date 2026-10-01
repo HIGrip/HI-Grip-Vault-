@@ -24,7 +24,7 @@ Volledig overzicht (score-breakdown, alle 12 deelaudits, roadmap): **[HÏ Grip S
 | AI search (GEO) | 62/100 |
 | Afbeeldingen | 75/100 |
 | SXO (gap score) | 51/100 |
-| Backlinks | geen data (geen Moz/Bing-key) |
+| Backlinks | geen data (geen Moz/Bing-key) — Bing-key gekoppeld 28-9, zie [[Bing Webmaster Tools — GEO-aanvulling]] |
 | Hreflang | correct, geen issues |
 | Sitemap | gezond, geen issues |
 
@@ -57,3 +57,5 @@ Zie het [audit-artifact](https://claude.ai/artifact/J4pGSpFe1TmWN5HLBqgMm3) voor
 - [[SEO Strategie & Keywords]]
 - [[API & Tool Connections]] — installatie/technische opzet van de plugin
 - Werkplek: `04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/_Werkplek.md`
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

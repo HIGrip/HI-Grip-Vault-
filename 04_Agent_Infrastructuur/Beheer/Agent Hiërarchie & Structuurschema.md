@@ -115,3 +115,5 @@ Zie [[Stappenplan — Verdere Bouw]] voor de volledige, gefaseerde aanpak (auton
 - [[Agent Takenverdeling & Grenzen]]
 - [[Goedkeuringsworkflow]]
 - [[API & Tool Connections]]
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

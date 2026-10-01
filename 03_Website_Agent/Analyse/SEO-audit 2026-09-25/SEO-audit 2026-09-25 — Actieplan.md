@@ -53,3 +53,5 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 | 29 | Gratis Moz API-key toevoegen voor backlinkdata |
 | 30 | Drift-baseline vastleggen na de critical fixes (`/seo drift baseline https://www.higrip.nl`) zodat regressies zoals de padelpagina automatisch opvallen |
 | 31 | Her-audit over ±6 weken; GA4: organische landingen op sportpagina's volgen |
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

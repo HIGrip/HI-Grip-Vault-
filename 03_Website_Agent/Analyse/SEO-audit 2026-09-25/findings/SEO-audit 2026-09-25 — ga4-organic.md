@@ -35,3 +35,5 @@ Technical-agent ("/en/ genuinely translated") en sitemap-agent ("/en/ duplicate 
 De e-commerce-agent adviseerde AggregateRating-markup op basis van de getoonde "4.5 / 5". Geverifieerd: dit is statische tekst in een testimonial-sectie (`ss_testimonial_8`, kop "DIT ZEGGEN ONZE SPORTERS. 4.5 / 5"), niet gekoppeld aan een reviewplatform.
 → NIET als AggregateRating markeren (self-serving/niet-verifieerbare rating = schending Google review-snippet-richtlijnen, risico op manual action).
 → Wel: Trustpilot-reviews echt koppelen (to-do 21-9), daarna rating dynamisch in zowel UI als schema. Tot dan: overweeg de statische "4.5 / 5" te vervangen door echte reviewquotes of het aantal echte reviews.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

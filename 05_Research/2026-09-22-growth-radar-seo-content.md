@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — SEO content & keywords (FAQ-schema terug van weggeweest)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Twee bevindingen: één die een eerdere beslissing terugdraait ([[2026-09-15-growth-radar-seo-content]]), en één nieuw, gratis meetpunt in Search Console.

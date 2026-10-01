@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — Social naar website (Google-pixel op Optimized, geen Meta-pixel, Creator Hub)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 De belangrijkste vondst van vandaag ligt niet op TikTok of Instagram. Hij zit in de eigen broncode van higrip.nl. De Google & YouTube-pixel, die GA4 én Merchant Center voedt met `purchase`, staat op Shopify's "Optimized"-stand. Shopify mag de datadeling van zo'n pixel dan stilletjes pauzeren. Dat is een concrete kandidaat-verklaring voor de `keyEvents = 0` die al sinds 15 september op P1 staat. Daarnaast staat er geen Meta- of TikTok-pixel op de site: social verkeer is nu alleen via GA4 zichtbaar. Meta bouwt verder aan creator-advertenties (Creator Marketing Hub, 17 sep) en is sinds 8 sep ook een AI-kanaal in Shopify, maar beide zijn voor nu alleen iets om te volgen.
 

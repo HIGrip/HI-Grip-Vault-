@@ -1,25 +1,24 @@
 # Iconografie — HÏ Grip
 
-> De volledige iconenset: 94 iconen in vier categorieën. Bron: Brandbook hfst. 05. Voor de overige designelementen: zie [[Design Elementen]].
+> De volledige iconenset: **86 iconen in drie categorieën**. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 08: https://canva.link/a48n60z2ay1g7bp. Voor de overige designelementen: zie [[Design Elementen]].
 
 ---
 
 ## Het systeem
 
-Wit line-art met gelijke stroke op zwart. Functioneel en clean, **geen vlakken** — één stijl door de hele set.
+Wit line-art met gelijke stroke op zwart. Functioneel en clean, **geen vlakken**: één stijl door de hele set van 86 iconen, verdeeld over drie categorieën.
 
-**De standaardvoet:** elk voetgebaseerd icoon gebruikt hetzelfde silhouet. Zelfbedachte voet- of zoolvormen zijn **niet on-brand**.
+**De standaardvoet:** elk voetgebaseerd icoon gebruikt dit silhouet. Zelfbedachte voet- of zoolvormen zijn **niet on-brand**.
 
 ---
 
-## Vier categorieën — 94 iconen
+## Drie categorieën — 86 iconen
 
 | Categorie | Aantal | Wat |
 |---|---|---|
-| **Sport** | 8 | Per sport één 3D-icoon, zelfde wireframe-stijl als de features. |
-| **Features · basis** | 19 | Eerste generatie sokiconen: compressie, versterkte zones, naadloosheid, coolmax, anti-blaar. |
-| **Features · grid pattern** | 56 | Nieuwe generatie: veertien features op de wireframe-sok, elk in vier varianten. |
-| **Webshop** | 11 | USP's en interface: performance, comfort, verzending, vinkje, kruisje. |
+| **Features · basis** | 19 | De eerste generatie sokiconen: compressie, versterkte zones, naadloosheid, coolmax, anti-blaar. |
+| **Features · grid pattern** | 56 | De tweede generatie: veertien features op de wireframe-sok, elk in vier varianten. |
+| **Webshop** | 11 | USP's en interface: performance, comfort, verzending, vinkje en kruisje. |
 
 ---
 
@@ -32,25 +31,11 @@ Wit line-art met gelijke stroke op zwart. Functioneel en clean, **geen vlakken**
 | **Motion** | Ringen rond de zone. Voor beweging en video. |
 | **Triangle** | Driehoekmarkering. Verwijst naar het embleem. |
 
-> Kies **één variant per uiting** en houd die vol. Outline is de standaard; fill, motion en triangle zijn accenten voor nadruk, video en campagnebeeld.
-
-De markering zit altijd op de zone waar de feature werkt. Het bijschrift links van de sok is vast onderdeel van het icoon en wordt **niet losgeknipt**.
-
 ---
 
-## Categorie 1 · Sport (8)
+## Features · basis (19)
 
-Tennis · Padel · Voetbal · Hardlopen · Fitness · Hockey · Rugby · Pilates
-
-Geleverd op 4K, voor categoriepagina's in de webshop, clubcommunicatie en socials.
-
-- **Kernsporten:** tennis en padel staan vooraan — daar komen de Performance Grip Socks vandaan.
-- **Groeisporten:** voetbal, hockey, rugby, hardlopen, fitness, pilates — elk een eigen ingang.
-- **Nieuwe sport erbij?** Zelfde wireframe, zelfde lichtrichting, zelfde lijndikte als de rest van de set.
-
----
-
-## Categorie 2 · Features basis (19)
+De eerste generatie sokiconen. Vijf features, elk in de vier vaste varianten.
 
 | Feature | Claim |
 |---|---|
@@ -60,13 +45,11 @@ Geleverd op 4K, voor categoriepagina's in de webshop, clubcommunicatie en social
 | Coolmax | Vochtregulerend garen |
 | Anti-blaar | Wrijving weggenomen |
 
-> Coolmax en anti-blaar hebben nog **geen fill-variant** — gebruik daar de outline tot de set compleet is.
-
 ---
 
-## Categorie 3 · Features grid pattern (56)
+## Features · grid pattern (56)
 
-Veertien features op de wireframe-sok, elk in vier varianten.
+De tweede generatie feature-iconen op de wireframe-sok. Veertien features, elk in vier varianten.
 
 **Demping, steun en klimaat**
 
@@ -77,9 +60,9 @@ Veertien features op de wireframe-sok, elk in vier varianten.
 | Enkelsteun | Laterale stabiliteit |
 | Ventilatiezones | Mesh-kanalen op de wreef |
 | Anti-geur | Antibacteriële afwerking |
-| Snel drogend | Vocht direct afgevoerd |
+| Snel drogend | Vochtafvoerend |
 
-**Grip en pasvorm — de kern van de Performance Grip Socks 2.0**
+**Grip & pasvorm**
 
 | Feature | Claim |
 |---|---|
@@ -88,23 +71,25 @@ Veertien features op de wireframe-sok, elk in vier varianten.
 | Boordfixatie | Elastische boord zakt niet af |
 | Teenruimte | Brede, vrije teenbox |
 
-**Veerkracht, warmte, materiaal en pasvorm**
+**Veerkracht & warmte** — vier features rond veerkracht, warmte, materiaal en pasvorm, ook voor de Performance Ski Socks
 
 | Feature | Claim |
 |---|---|
 | Energy return | Veerkracht bij afzetten |
-| Thermo-isolatie | Warmtebehoud (ski-lijn) |
+| Thermo-isolatie | Warmtebehoud, voor de ALPINE PRO |
 | Recycled garen | Duurzaam materiaal |
 | Anatomische pasvorm | 3D-gebreid, volgt de voetvorm |
 
 ---
 
-## Categorie 4 · Webshop (11)
+## Webshop (11)
 
-**Merkwaarden (dragen de productpagina's):** performance · comfort · controle · stabiliteit · explosiviteit · innovatie
-**Service & interface:** snelle verzending · laptop · telefoon · vinkje · kruisje
+USP's, service en interface. Deze set draagt de webshop, de bevestigingsmails en de interface.
 
-**Twee uitvoeringen:** elk webshop-icoon bestaat in wit én zwart. Donkere achtergrond → wit. Lichte achtergrond → zwart.
+- **Merkwaarden** (dragen de productpagina's): performance · comfort · controle · stabiliteit · explosiviteit · innovatie
+- **Service & interface** (USP-balk, checkout en klantcontact): snelle verzending · laptop · telefoon · vinkje · kruisje
+
+**Twee uitvoeringen:** elk webshop-icoon bestaat in wit en in zwart. Donkere achtergrond → wit. Lichte achtergrond → zwart.
 
 ---
 
@@ -121,3 +106,5 @@ Veertien features op de wireframe-sok, elk in vier varianten.
 - [[Design Elementen]] — Raster, vormen, licht, interface en sjablonen
 - [[Logo & Kleurenpalet]] — Kleuren en typografie
 - [[Product Pagina Gids]] — Waar de feature-iconen landen op de webshop
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

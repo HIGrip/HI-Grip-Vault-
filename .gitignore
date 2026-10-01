@@ -16,3 +16,6 @@ __pycache__/
 
 # Agenda-titels kunnen klantnamen bevatten (AVG): elke run opnieuw gemaakt
 05_Research/_data/agenda.json
+
+# API-keys en andere geheimen: alleen lokaal, nooit naar GitHub
+_prive/

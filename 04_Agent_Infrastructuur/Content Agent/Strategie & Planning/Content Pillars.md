@@ -17,3 +17,5 @@ Buffer-tag: **PERFORMANCE / LIFESTYLE / INFLUENCER CONTENT** — id `6a32de22b85
 ## Koppeling aan Buffer
 - Elke pillar = exact 1 Buffer-tag. De 3 tags bestonden al in Buffer (lars had ze al aangemaakt) toen dit werd vastgelegd op 14-9-2026 — de agent hoefde ze dus niet zelf aan te maken (kan ook niet, de API kan geen tags aanmaken).
 - Nieuwe ideeën worden door de Content Agent altijd met exact één van deze 3 tags in Buffer's ideeënbord gezet (groep: Unassigned) — zie soul.md.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

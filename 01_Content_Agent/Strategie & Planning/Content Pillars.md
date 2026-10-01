@@ -1,8 +1,8 @@
 # Content Pillars — HÏ Grip
 
-> De 5 contentpilaren en content ideeën per doelgroep. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
+> De 5 contentpilaren, content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
 
-> **Beachhead-strategie (vanaf 16-9-2026):** content prioriteert nu tennis, rugby en voetbal (de fanatieke sporter binnen deze 3 sporten) — zie [[Doelgroep & Persona's]]. Voorbeelden hieronder die andere sporten noemen (hockey, pilates) blijven bruikbaar als format-idee, maar vertaal ze bij voorkeur naar tennis/rugby/voetbal.
+> **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** content richt zich op de HÏ Grip sporter in de drie kernsporten **tennis/padel, voetbal en rugby** — zie [[Doelgroep & Persona's]] en [[Beachhead Strategie]]. Voorbeelden die andere sporten noemen (hockey, pilates) blijven bruikbaar als format-idee, maar vertaal ze naar een kernsport.
 
 ---
 
@@ -20,7 +20,7 @@
 
 ## Pilaar 1 — Performance Content
 - Scoren / afwerkoefening
-- Sokken in actie (voetbal, hockey, pilates)
+- Sokken in actie (tennis/padel, voetbal, rugby)
 - Winnaars edits
 - Sportschule Duitsland — sokken opsturen, daar content van laten maken
 
@@ -31,6 +31,7 @@
 - Hogedrukspuit met slogan/logo
 
 ## Pilaar 3 — Story / Series
+- **HÏ LIGHTS OF THE WEEK** — vaste founders-journey-serie
 - Day in the life met gripsokken
 - Profwedstrijd serie (sokken gebruiken op hoog niveau)
 
@@ -40,116 +41,63 @@
 
 ## Pilaar 5 — Guerilla Marketing
 - QR stunt (bijv. "vreemdgaan"-actie op TikTok)
-- Standbeeltstunt met HÏ Grip spullen + nieuws bellen
+- Standbeeldstunt met HÏ Grip spullen + nieuws bellen
 - Campus stunt
 
 ---
 
-## Content per B2C doelgroep
+## Content voor de HÏ Grip sporter
 
-### Betrokken Ouders
-*Kijken naar plezier, ontwikkeling en veiligheid van hun kind.*
-
-| Content idee | Pilaar |
-|---|---|
-| Sketch trotse ouders langs de zijlijn | Humor |
-| Sketch: iemand raakt geblesseerd | Humor / Performance |
-| Sokken in actie (voetbal/hockey) | Performance |
-| Alles missen normaal → alles raak met gripsokken | Performance |
-| Day in the life met gripsokken | Story |
-| Unboxing van verpakking | Story |
-| Reacties van klanten of atleten | Social proof |
-
-### Trendbewuste Talenten
-*Reageert op humor, virale formats en trends.*
-
-| Content idee | Pilaar |
-|---|---|
-| "Bro said he knew a spot" | Humor / Viral |
-| Guerilla TikTok QR code | Guerilla |
-| Fake interview artikel | Humor / Viral |
-| Standbeeltstunt + nieuws bellen | Guerilla |
-| Medewerker die tweede keuze moet maken (grap) | Humor |
-| Kamperen op campus TikTok | Guerilla |
-| Bekende memes / reclames nadoen | Humor |
-| #GripChallenge | Viral |
-
-### Fanatieke Sporters
-*Focus op performance en winnen.*
+*Prestatiegericht, winnaarsmentaliteit, doorzetter, altijd op zoek naar iets beters (zie [[Doelgroep & Persona's]]). Vertaal elk idee naar een kernsport: tennis/padel, voetbal of rugby.*
 
 | Content idee | Pilaar |
 |---|---|
 | Scoren / afwerkoefening | Performance |
-| Sokken in actie (voetbal/hockey) | Performance |
-| Alles missen → alles raak met gripsokken | Performance |
+| Sokken in actie in de kernsport | Performance |
+| Alles missen normaal → alles raak met gripsokken | Performance |
 | Edit winnend team direct posten | Performance |
-| #GripChallenge | Viral |
-| Reacties van klanten of atleten | Social proof |
-
-### Toekomstige Pro's
-*Status, ambitie en link met profsport.*
-
-| Content idee | Pilaar |
-|---|---|
 | Serie: sokken in een profwedstrijd | Story |
-| DM'en naar voetbalclubs | Partnership |
-| Edit winnend team direct posten | Performance |
 | Day in the life met gripsokken | Story |
-| BN'ers / influencers kennismaken (serie) | Influencer |
-
-### Blessuregevoelige Sporters
-*Zekerheid en blessurepreventie.*
-
-| Content idee | Pilaar |
-|---|---|
-| Sketch: iemand raakt geblesseerd | Humor / Performance |
-| Alles missen normaal → raak met gripsokken | Performance |
-| Day in the life met gripsokken | Story |
-| Reacties van klanten of atleten | Social proof |
-
-### Bewuste Sporters
-*Sportieve lifestyle en doelen behalen.*
-
-| Content idee | Pilaar |
-|---|---|
-| Pilates les volgen met Team HÏ Grip | Story |
-| Day in the life met gripsokken | Story |
+| HÏ LIGHTS OF THE WEEK (founders-journey) | Story |
+| "Bro said he knew a spot" · meme-remakes · fake interview | Humor / Viral |
 | #GripChallenge | Viral |
-| Reacties van klanten of atleten | Social proof |
+| Creators kennismaken met het product (serie), gedeelde posts | Influencer |
+| Standbeeldstunt + nieuws bellen · QR-stunt · campusstunt | Guerilla |
+| Reacties van klanten of atleten, Trustpilot | Social proof |
+| Unboxing van de verpakking | Story |
 
 ---
 
-## Content per B2B doelgroep
+## Content voor B2B (HÏ Grip Zakelijk)
 
-### Innovatieve Sportclubs
+### Sportclubs
 
 | Content idee | Pilaar |
 |---|---|
-| DM'en naar voetbalclubs | Partnership |
 | Serie: sokken in een profwedstrijd | Story |
 | Edit winnend team direct posten | Performance |
-| Sokken in actie (voetbal/hockey) | Performance |
-| #GripChallenge | Viral |
-| Reacties van klanten / atleten | Social proof |
+| Gepersonaliseerde clubsokken in actie | Performance |
+| Reacties van clubs en spelers | Social proof |
 
-### Performance Retailers
-
-| Content idee | Pilaar |
-|---|---|
-| Unboxing van verpakking | Story |
-| Influencers kennismaken met product (serie) | Influencer |
-| Virale memes / reclames met product | Humor |
-| Standbeeltstunt + nieuws bellen | Guerilla |
-| Fake interview artikel | Humor / Viral |
-
-### Pilates / Sportscholen
+### Retail
 
 | Content idee | Pilaar |
 |---|---|
-| Pilates les volgen met Team HÏ Grip | Story |
-| Day in the life met gripsokken | Story |
-| #GripChallenge | Viral |
-| Reacties van klanten | Social proof |
+| Unboxing van de verpakking | Story |
+| Creators kennismaken met het product (serie) | Influencer |
+| Zakelijke announcements (nieuwe retailer, productcampagne) — LinkedIn | Announcement |
+
+---
+
+## Organische planning per platform (Canva *MERK & STRATEGIE*)
+
+| Platform | Wat we plaatsen |
+|---|---|
+| **Meta** | Trustpilot · zakelijk · e-mail-story · HÏ LIGHTS OF THE WEEK · gedeelde influencer-posts · productcampagnes · (guerilla-)series |
+| **TikTok** | HÏ LIGHTS OF THE WEEK · productcampagnes · (guerilla-)series |
+| **LinkedIn** | Zakelijke announcements · productcampagnes · statusposts |
+
+Zie [[Strategische Keuzes]] (tactiek 02 · socials) voor waarom, KPI's en doel 2031.
 
 ---
 
@@ -169,7 +117,9 @@ Buffer staat maximaal 3 tags per organisatie toe. De 5 creatieve pilaren hierbov
 
 ## Gerelateerde bestanden
 
-- [[Doelgroep & Persona's]] — Uitgebreide doelgroep-beschrijvingen
-- [[Platform Richtlijnen]] — Welk platform voor welke doelgroep
+- [[Doelgroep & Persona's]] — De HÏ Grip sporter en B2B
+- [[Platform Richtlijnen]] — Aanpak per platform
 - [[Content Strategie]] — Het verhaal en de momenten
 - [[Hashtag Bibliotheek]] — #GripChallenge en andere hashtags
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

@@ -72,3 +72,5 @@ Installatie is user-scope, dus beschikbaar in elke sessie/project op deze machin
 - [[Update Log]] — officiële datumgewijze log van doorgevoerde wijzigingen
 - [[Stappenplan — Verdere Bouw]] — Fase 3, pilot-sub-agent
 - [[Shopify App Stack]], [[Logo & Kleurenpalet]]
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

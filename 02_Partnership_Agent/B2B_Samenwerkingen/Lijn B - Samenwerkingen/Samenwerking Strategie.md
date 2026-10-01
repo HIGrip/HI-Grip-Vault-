@@ -16,7 +16,7 @@ Sub-doel: **Events en activaties** — co-host, sponsoring, pop-up/stand, produc
 
 ## Beachhead-strategie (vanaf 16-9-2026)
 
-> HÏ Grip focust nu op **tennis, rugby en voetbal** als primaire sporten voor events/activaties — zie [[Doelgroep & Persona's]]. Organisatietypes in de tabel hieronder buiten deze 3 sporten (padel, urban sport, sportvoeding-crossover) blijven mogelijk maar zijn gedeprioriteerd t.o.v. tennis-, rugby- en voetbalevents.
+> HÏ Grip focust op de kernsporten **tennis/padel, voetbal en rugby** (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026) — zie [[Beachhead Strategie]]. Events en toernooien zijn een **secundair kanaal** dat ondersteunt; voor nu (2026) willen we op events zichtbaar zijn, in 2031 eigen sportevents organiseren (Performance Academy, zie [[Strategische Keuzes]]). Organisatietypes buiten de kernsporten (urban sport, sportvoeding-crossover) blijven mogelijk maar zijn gedeprioriteerd.
 
 ---
 
@@ -51,9 +51,9 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 |---|---|---|
 | **Voetbalclubs met actieve community/events** ⭐ | Directe niche-match, kousen-probleem al bekend | Moet eigen event hebben, niet alleen een club-zijn |
 | **Voetbaltoernooi-organisatoren (5-a-side, zaalvoetbal)** ⭐ | Terugkerend, herkenbaar format, makkelijk te sponsoren | Check frequentie en publieksgrootte |
-| **Tennisclubs/-toernooien en tennisacademies** ⭐ | Directe beachhead-match, fanatieke tennissers | Check ledenbestand/publieksgrootte, prijs KNLTB-toernooien |
+| **Tennisclubs/-toernooien en tennisacademies** ⭐ | Directe beachhead-match, prestatiegerichte tennissers | Check ledenbestand/publieksgrootte, prijs KNLTB-toernooien |
 | **Rugbyclubs en rugbytoernooien/-events** ⭐ | Directe beachhead-match, kleinere maar zeer betrokken community | Nederland heeft relatief weinig clubs — breed zoeken (ook regionaal) |
-| Padel centra en padel-events | Snelgroeiende sport, past bij "nieuwste trend"-verhaal | Gedeprioriteerd t.o.v. tennis/rugby/voetbal; grote toernooien (FIP/Premier Padel) vaak te duur |
+| Padel centra en padel-events ⭐ | Kernsport tennis/padel; padel groeit en deze groep speelt het vaakst en het fanatiekst | Grote toernooien (FIP/Premier Padel) vaak te duur |
 | Urban sport venues (streetball, freestyle) | Sterkste straatcultuur-fit, motiverend/stoer imago | Gedeprioriteerd; moet een **evenement** zijn, geen kale infrastructuur |
 | Sportbeurzen/expo organisatoren | B2B-zichtbaarheid voor veel prospects tegelijk | Vaak overlap met Lijn A-doel — dubbele waarde |
 | Sportmedia/lokale platforms | Bereik en SEO/contentwaarde | Vaak indirecte opbrengst — eerlijk wegen tegen sponsoringkosten |
@@ -69,3 +69,5 @@ HÏ Grip staat voor **performance, comfort, vertrouwen en innovatie** (zie [[Bra
 - [[Zoek Script & Gids (Samenwerkingen)]] — Hoe kandidaten gevonden worden
 - [[Voorbeelden Gevonden Organisaties (Events)]] — Goedgekeurde kandidaten
 - [[Brand Identity Overview]] — Merkverhaal, missie, waarden
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

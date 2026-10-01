@@ -8,7 +8,7 @@
 |---|---|
 | **Feiten** (prijzen, handles, URL's, ID's, verzending, claims) | `00_Brand_Core/Feiten & Actuele Staat.md`. **Lees dit eerst.** Zet feiten nooit in een prompt. |
 | Productwaarheid 2.0 (maten, EAN, B2B-prijzen) | `00_Brand_Core/Product/Performance Grip Socks 2.0.md` |
-| Merk (verhaal, stem, kleuren, design) | `00_Brand_Core/`, begin bij `Brand Identity Overview.md` |
+| Merk en strategie (verhaal, stem, kleuren, design, kanalen) | **Leidend: Canva-document *MERK & STRATEGIE — HÏ Grip*** (https://canva.link/a48n60z2ay1g7bp). Uitgewerkt in `00_Brand_Core/`, begin bij `00 Brand Core.md`. |
 | Onderzoek (alle routines + losse onderzoeken) | `05_Research/`. De procedure staat in `05_Research/_build/PROCEDURE.md`. |
 | Acties (één backlog) | `05_Research/_backlog/ACTIEBACKLOG.md` |
 | Geheugen van de routines | `05_Research/_geheugen/`. De regels staan in `_geheugen/README.md`. |
@@ -20,23 +20,25 @@ De vault is de bron van waarheid. Spreekt iets anders (een geheugenbestand, een 
 
 ## 2. Identiteit
 
-- **HÏ Grip**, altijd met trema op de Ï. Performance-gripsokken; skisokken met gelprotection zijn uitgesteld.
-- Markt: Nederlandse consument + B2B (sportclubs, retailers, sportscholen).
-- Slogan: "More grip, better performance."
-- Taal: Nederlands voor alle consumentgerichte tekst; Engels mag voor code-comments.
+- **HÏ Grip**, altijd met trema op de Ï (in URL's en handles zonder: `higrip.nl`, `@higrip.nl`). Een Nederlands performance sportswear merk, te beginnen met de Performance Grip Socks; Performance Tubes en Performance Ski Socks (ALPINE PRO) komen binnenkort, zonder datum.
+- Missie: "Wij versnellen de beweging van iedere sporter." Kernwaarden: comfort, vertrouwen, innovatie.
+- Doelgroep: de prestatiegerichte sporter; kernsporten tennis/padel, voetbal, rugby. B2B (HÏ Grip Zakelijk): retail en sportclubs.
+- Primaire tagline: "Ga door waar anderen stoppen." Vaste slogans o.a. "More grip, better performance."
+- Productnamen: in communicatie PERFORMANCE GRIP SOCKS (2.0); op higrip.nl PERFORMANCE GRIPSOKKEN (2.0).
+- Taal: Nederlands voor alle consumentgerichte tekst, met moderne Engelse woorden (performance, winning, on fire, play); Engels mag voor code-comments.
 
 ## 3. Tone of voice
 
 - Direct en informeel: altijd "jij/je", nooit "u".
+- Energiek, sportief, modern en jong; ondersteunend als expert ("Wij leggen de basis, jij presteert.").
 - Performance eerst: noem de meetbare claim vóór het comfort. Gebruik alleen claims uit het feitenbestand.
 - Sportspecifiek jargon per sport (padel, voetbal, tennis, rugby, pilates).
 - Geen AI-openers ("Zeker!", "Natuurlijk!") en geen vulwoorden ("geweldig", "fantastisch").
 
 ## 4. Visueel
 
-- Merkkleuren: zwart `#000000`, wit `#FFFFFF`, volt `#CCFF00`, pumpkin `#FF6A00`, royal blue `#0011A7`, rood `#E10600`. Trustpilot-groen `#00b67a` alleen voor review-sterren.
-- Neutraal voor achtergronden: `#111111`, `#1a1a1a`, `#EAE8E5`.
-- Font: **alleen Poppins**. Koppen UPPERCASE 800–900. Nooit Franklin Gothic, Impact of serif.
+- Merkkleuren: primair zwart `#000000` en wit `#FFFFFF`; tekstgrijzen graphite `#5C5D5F` (op wit) en titanium `#909194` (op zwart); accenten volt `#CCFF00`, royal blue `#0011A7`, pumpkin `#FF6A00`, tangerine `#E10600`. Trustpilot-groen `#00b67a` alleen voor review-sterren.
+- Font: **alleen Poppins**. H1 Black Italic 900, H2 ExtraBold 800, H3 Bold 700, caption/label SemiBold 600: altijd in HOOFDLETTERS. Koppen tracking −0,04 em, body Regular 400 met −0,02 em. Nooit Franklin Gothic, Impact of serif.
 - CTA: een pill met chevron, zwart op wit of wit op zwart. Nooit gevuld met een accentkleur.
 
 ## 5. Harde grenzen
@@ -70,3 +72,11 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
   ```
   Wordt die push geweigerd, stop dan en meld het in je eindbericht, met de naam van de branch waar je werk nu staat.
 - Commitberichten in het Nederlands, kort: `research: <id> geregistreerd`, `feiten: <wat> bijgewerkt`.
+
+## 9. Links en Brand Core (verplicht)
+
+- De Brand Core is het fundament: `00_Brand_Core/00 Brand Core.md` is het hoofdbestand. Elke notitie verwijst ernaar via één navigatieregel die begint met `> **Brand Core (00):**` en linkt naar de Brand Core, de kernbestanden en de index van de eigen map.
+- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "04_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`) en meldt welke notities nog zonder inkomende link zijn.
+- Bewerk de sectie `## Alle notities in deze map (automatisch)` in een index niet met de hand.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

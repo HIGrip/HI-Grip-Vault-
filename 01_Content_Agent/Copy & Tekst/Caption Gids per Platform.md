@@ -48,3 +48,5 @@ Iets meer tekst is oké. Zakelijke toon maar nog steeds energiek. Focus op bedri
 - [[Hashtag Bibliotheek]] — Hashtags per platform
 - [[Emoji Gebruik Gids]] — Emojis toepassen
 - [[Copy Bank]] — Kant-en-klare slogans en zinnen
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

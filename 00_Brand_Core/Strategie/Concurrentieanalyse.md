@@ -14,3 +14,5 @@
 - [[Strategische Keuzes]] — Roadmap en financiële doelen
 - [[Brand Identity Overview]] — Positionering
 - [[Ideale Partner Profiel]] — B2B-doelgroep
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

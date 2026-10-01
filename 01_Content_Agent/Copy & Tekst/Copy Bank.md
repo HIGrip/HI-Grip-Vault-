@@ -1,29 +1,33 @@
 # Copy Bank — HÏ Grip
 
-> Gebruiksklare copy per situatie. De canonieke sloganlijst met categorisering staat in [[Brand Voice & Tone of Voice]].
+> Gebruiksklare copy per situatie. De canonieke lijst (primaire tagline, vaste slogans, core messages) staat in [[Brand Voice & Tone of Voice]] en volgt sinds 30-9-2026 het Canva-document *MERK & STRATEGIE — HÏ Grip*. Gebruik alleen onderstaande lijnen; andere slogans zijn geen merkslogan.
 
 ---
 
-## Slogans per situatie
+## Primaire tagline
 
-| Situatie              | Slogan                                                         |
-| --------------------- | -------------------------------------------------------------- |
-| Reel / overlay / edit | Resultaat telt.                                                |
-| Reel / overlay / edit | Gemaakt om te winnen.                                          |
-| Reel / overlay / edit | Light up your GRIP!                                            |
-| Reel / overlay / edit | Van uitglijden naar uitblinken.                                |
-| Reel / overlay / edit | More grip, better performance.                                 |
-| Caption / campagne    | Blijf staan waar anderen uitglijden. HÏ Grip.                  |
-| Caption / campagne    | Voel het verschil bij elke stap. HÏ Grip.                      |
-| Caption / campagne    | Winnen met je voeten begint bij HÏ Grip.                       |
-| Caption / campagne    | Elke sporter is ooit begonnen met de eerste stap.              |
-| Caption / campagne    | Jij beweegt. Wij zorgen dat je blijft staan.                   |
-| Met CTA               | Wil jij ook stevig in je schoenen staan? Koop nu. HÏ Grip!     |
-| Met CTA               | Zeg HÏ tegen Grip.                                             |
-| Met CTA               | Zeg HÏ tegen betere prestaties.                                |
-| Website / B2B         | Feel the Comfort. Own the Game.                                |
-| Website / B2B         | Where Comfort Meets Performance.                               |
-| Website / B2B         | Engineered for performance. Powered by grip. Made for winning. |
+| Situatie | Copy |
+|---|---|
+| Afsluiter van elke campagne, pitch, bio of video | **Ga door waar anderen stoppen.** |
+
+## Vaste slogans per situatie
+
+| Situatie | Slogan |
+|---|---|
+| Reel / overlay / edit | Resultaat telt. |
+| Reel / overlay / edit | Made for winning. · Gemaakt om te winnen. |
+| Reel / overlay / edit · product | More grip, better performance. |
+| Caption / campagne · beginners, eerste aankoop | Elke sporter is ooit begonnen met de eerste stap. |
+
+## Core messages — voor captions, overlays en statements
+
+- Wie er vol voor gaat, is niet te stoppen.
+- Wie doorzet, is een winnaar.
+- Wie alles geeft, heeft niks te verliezen.
+- Wie alles geeft, verliest nooit van zichzelf.
+- Wie alles geeft, is niet te stoppen.
+- Wie blijft gaan, bepaalt zelf waar het stopt.
+- Wie alles geeft, wordt zelf de grens.
 
 ---
 
@@ -32,15 +36,20 @@
 | Toepassing | Zin |
 |---|---|
 | Positionering | "Wij leggen de basis, jij presteert." |
-| Social proof | "De keuze van 3000+ sporters." |
-| Merkbelofte | "Doorgaan wanneer anderen stoppen. Daar staat HÏ Grip." |
+| Social proof | "De keuze van 3000+ sporters." (cijfer uit [[Feiten & Actuele Staat]]) |
+| Merkbelofte | "Geen 100%, maar 110%." |
+| Filosofie (EN) | "Sportswear as the foundation of performance." |
+| Missie | "Wij versnellen de beweging van iedere sporter." |
+| Pitch en bio | Zie de online pitch in [[Brand Identity Overview]]. |
 
 ---
 
 ## Gerelateerde bestanden
 
-- [[Brand Voice & Tone of Voice]] — Volledige sloganlijst + tone of voice regels
+- [[Brand Voice & Tone of Voice]] — Volledige sloganlijst, core messages en tone of voice
 - [[Caption Gids per Platform]] — Hoe slogans toe te passen per platform
 - [[Hashtag Bibliotheek]] — Hashtags om toe te voegen aan copy
-- [[Emoji Gebruik Gids]] — Emojis om toe te voegen aan copy
+- [[Emoji Gebruik Gids]] — Emoji's om toe te voegen aan copy
 - [[Testimonials & Social Proof]] — Klantcitaten en social proof voor in copy
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

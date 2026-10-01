@@ -72,3 +72,5 @@ Nieuwe kandidaten eerst in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]; 
 - [[Pipeline Tracker]] — Outreach-status
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - [[Partnership Strategie]] — Bredere aanpak en volgorde
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

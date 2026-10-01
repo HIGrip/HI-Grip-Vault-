@@ -1,5 +1,7 @@
 # Home — HÏ Grip Vault
 
+> **Fundament: [[00 Brand Core]]** — elke notitie verwijst daarnaar terug.
+>
 > Startpunt van de vault. De vault is de **bron van waarheid voor kennis** (merk, strategie, vakinhoud). De *uitvoerende* laag staat elders — zie "Waar staat wat" onderaan.
 
 ---
@@ -8,11 +10,11 @@
 
 | Map | Waarvoor | Begin bij |
 |---|---|---|
-| **00_Brand_Core** | Merkfundament: verhaal, waarden, doelgroep, visuele identiteit, strategie. Alles verwijst hiernaar terug. | [[Brand Identity Overview]] |
-| **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[Content Strategie]] · [[Content Pillars]] |
-| **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[Overzicht]] · [[Partnership Strategie]] |
-| **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[Website Doel & KPI's]] · [[Technische Procedures]] |
-| **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`identiteit.md`), hoe hij zich gedraagt (`soul.md`), en de gedeelde regels. | [[Agent Hiërarchie & Structuurschema]] |
+| **00_Brand_Core** | Merkfundament: verhaal, waarden, doelgroep, visuele identiteit, strategie. Alles verwijst hiernaar terug. | **[[00 Brand Core]]** · [[Brand Identity Overview]] |
+| **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[01 Content Agent — Index]] · [[Content Strategie]] |
+| **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[02 Partnership Agent — Index]] · [[Partnership Strategie]] |
+| **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[03 Website Agent — Index]] · [[Website Doel & KPI's]] |
+| **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`identiteit.md`), hoe hij zich gedraagt (`soul.md`), en de gedeelde regels. | [[04 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
 | **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
 
 ---
@@ -22,11 +24,12 @@
 **Onderzoek**
 - **HÏ Grip Research Dashboard** — https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
 
-**Merk**
-- [[Brand Identity Overview]] — verhaal, missie, visie, waarden (enige plek)
-- [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, slogans
+**Merk** — alles begint bij [[00 Brand Core]]
+- **Leidend document (sinds 30-9-2026):** Canva *MERK & STRATEGIE — HÏ Grip* — https://canva.link/a48n60z2ay1g7bp. Spreekt de vault dit tegen, dan wint het Canva-document.
+- [[Brand Identity Overview]] — oerverhaal, missie, visie, waarden, pitch (enige plek)
+- [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, core messages, slogans, productnamen
 - [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[Iconografie]] · [[Fotografie & Art-Direction]]
-- [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]]
+- [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]] (marketingstrategie, kanalen, Performance Academy) · [[Beachhead Strategie]]
 
 **Product**
 - [[Performance Grip Socks 2.0]] — productwaarheid: specs, features, claims, designsysteem B2B (enige plek)
@@ -35,6 +38,8 @@
 - [[Compliance To-Do Lijst]] — alle NL/EU-verplichtingen (UPV, GPSR, claims, privacy) met waar en hoe
 
 **Agent-systeem**
+- [[CLAUDE]] — gedeelde instructies voor elke Claude in deze vault
+- [[04_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe identiteit.md / soul.md / user.md werken
 - [[user]] — gedeeld: wie lars en HÏ Grip zijn

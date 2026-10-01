@@ -1,6 +1,18 @@
 # Beachhead Strategie — HÏ Grip
 
-> Sinds 16-9-2026 focust HÏ Grip bewust op drie beachhead-doelgroepen — **fanatieke tennissers, fanatieke rugbyers en fanatieke voetballers** — in plaats van breed op "alle sporters 18-35" (zie [[Strategische Keuzes]] en [[Doelgroep & Persona's]]). Beachhead-theorie (Moore, *Crossing the Chasm*) zegt: win eerst volledig één smalle, goed gedefinieerde markt voordat je verbreedt. Dit bestand werkt per sport de kernvragen uit die bepalen of we die markt ook echt kunnen veroveren.
+> **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 12 · De uitvoering: https://canva.link/a48n60z2ay1g7bp.
+
+## Van 3 sporten naar all-round sportmerk
+
+Onze doelgroep is de **prestatiegerichte sporter** (zie [[Doelgroep & Persona's]]). Omdat die sporter in allerlei sporten zit, is het moeilijk om hem via alle sporten tegelijk goed te bereiken. We **testen daarom met al onze kanalen op drie kernsporten, kiezen er één**, en bouwen vanuit daar de komende jaren naar nieuwe sporten, landen en producten. Aan andere sporten dan deze drie besteden we zo min mogelijk resources.
+
+| Kernsport | Omvang | Voor nu |
+|---|---|---|
+| **Tennis / padel** | 40.000–60.000 actieve sporters per maand | Timo en Tigo op tennis-/padelretailers en tennis- en padelclubs · Lars op de tennis-/padelinfluencers |
+| **Voetbal** | 10.000–50.000 actieve sporters in Nederland | Timo en Tigo op voetbalretailers en voetbalclubs · Lars op de voetbalinfluencers |
+| **Rugby** | 17.000 actieve sporters bij 101 rugbyclubs in NL | Timo en Tigo op rugbyretailers en rugbyclubs (rugbyspecialist, NL-rugbyteam) · Lars op de rugby-influencers (spelers NL-rugby, Eyes on Rugby-account) |
+
+Beachhead-theorie (Moore, *Crossing the Chasm*) ondersteunt deze keuze: win eerst volledig één smalle, goed gedefinieerde markt voordat je verbreedt. Hieronder staat per sport eerst wat het Canva-document vastlegt, daarna de verdieping met het vragenkader.
 
 ---
 
@@ -10,7 +22,7 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 1. **Wie zijn ze precies?** — Niet "voetballers", maar het scherpe profiel binnen de sport (niveau, leeftijd, ambitie, klasse/team).
 2. **Waar zijn ze?** — Fysiek (clubs, verenigingen, toernooien, scholen) én digitaal (accounts, hashtags, community's die ze volgen).
-3. **Wat willen ze?** — De concrete pijn/behoefte en het winmoment (koppelt aan persona "Fanatieke Sporter" in [[Doelgroep & Persona's]]).
+3. **Wat willen ze?** — De concrete pijn/behoefte en het winmoment (koppelt aan de HÏ Grip sporter in [[Doelgroep & Persona's]]).
 4. **Wat gebruiken ze nu in plaats van ons?** — Huidig alternatief: geen gripsokken, tape, een ander merk, gewoontegedrag. Dit is de eigenlijke concurrentie, niet alleen andere gripsok-merken.
 5. **Wat is de overtuigende koopreden (compelling reason to buy)?** — Waarom zou deze sporter *nu*, specifiek voor HÏ Grip kiezen? Wat gebeurt er als hij/zij dat niet doet?
 6. **Wat is het "whole product"?** — Naast de sok zelf: welk bewijs, welke content, welke distributie/beschikbaarheid en welke service heeft deze doelgroep nodig om echt over te stappen (bv. clubdeals, bewijs van topsporters, directe verkrijgbaarheid bij de club)?
@@ -21,13 +33,18 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 ---
 
-## 1. Tennis
+## 1. Tennis / padel
+
+**Waarom:** blue ocean. Gripsokken zijn hier onbekend, maar passen technisch perfect. Padel groeit, en deze groep speelt het vaakst en het fanatiekst.
+**Wie is hier de HÏ Grip sporter:** tennissers en padellers die competitie spelen op niveau 7 of hoger en willen klimmen in hun ranking.
+**Waar:** toernooien, tennisverenigingen, padelcentra en lokale tennis- en padelwinkels. Daarnaast online.
+**Voor nu:** Timo en Tigo op tennis-/padelretailers en tennis- en padelclubs; Lars op de tennis-/padelinfluencers.
 
 | Vraag | Antwoord |
 |---|---|
-| 1. Wie zijn ze precies? | *nog invullen* |
-| 2. Waar zijn ze? | *nog invullen* |
-| 3. Wat willen ze? | *nog invullen* |
+| 1. Wie zijn ze precies? | Tennissers en padellers die competitie spelen op niveau 7 of hoger en willen klimmen in hun ranking. |
+| 2. Waar zijn ze? | Toernooien, tennisverenigingen, padelcentra en lokale tennis- en padelwinkels; daarnaast online. |
+| 3. Wat willen ze? | Klimmen in hun ranking. *Verder uitwerken.* |
 | 4. Huidig alternatief? | *nog invullen* |
 | 5. Overtuigende koopreden? | *nog invullen* |
 | 6. Whole product nodig? | *nog invullen* |
@@ -40,7 +57,13 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 ## 2. Rugby
 
-> Ingevuld 21-9-2026 op basis van [[2026-09-21-beachhead-rugby]] (05_Research) — daar staan de cijfers, bronnen en de rekensom. Kern: rugby is klein (100 clubs, ruim 19.000 leden, 54% van de clubs in ZH/NH/NB), gripsokken zijn op elk niveau toegestaan, er is geen Nederlands gripsokkenmerk op rugby en de winkels zijn in herenmaten uitverkocht. Een geloofwaardigheids-beachhead (dominantie haalbaar), geen volume-beachhead (dominantie ≈ € 50–70k/jaar).
+**Waarom:** het product is bekend, maar er is amper concurrentie. Timo heeft er een netwerk, de sport groeit en doorzetten zit al in de cultuur.
+**Wie is hier de HÏ Grip sporter:** presterende rugbyers die vast willen staan bij scrum en sidestep, geen blaren willen en bij de club willen horen.
+**Waar:** clubdeals, studentenclubs, de rugbyspecialist, retail en toernooien. Online via rugby.nl en Instagram-community's.
+**Voor nu:** Timo en Tigo op rugbyretailers en rugbyclubs (rugbyspecialist, NL-rugbyteam); Lars op de rugby-influencers (spelers NL-rugby, Eyes on Rugby-account).
+**Omvang (Canva):** 17.000 actieve sporters bij 101 rugbyclubs in NL. *Het onderzoek hieronder telt ruim 19.000 leden bij 100 clubs; voor communicatie geldt het Canva-cijfer.*
+
+> Verdieping ingevuld 21-9-2026 op basis van [[2026-09-21-beachhead-rugby]] (05_Research) — daar staan de cijfers, bronnen en de rekensom. Kern: rugby is klein (100 clubs, ruim 19.000 leden, 54% van de clubs in ZH/NH/NB), gripsokken zijn op elk niveau toegestaan, er is geen Nederlands gripsokkenmerk op rugby en de winkels zijn in herenmaten uitverkocht. Een geloofwaardigheids-beachhead (dominantie haalbaar), geen volume-beachhead (dominantie ≈ € 50–70k/jaar).
 
 | Vraag | Antwoord |
 |---|---|
@@ -61,12 +84,17 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 ## 3. Voetbal
 
+**Waarom:** de categorie is al bekend (profs spelen met afgeknipte kousen), het is de grootste koop- en clubcommunity van Nederland, en we kennen deze markt zelf het best.
+**Wie is hier de HÏ Grip sporter:** selectievoetballers bij BVO's, in de selectiejeugd en de selectie, die nu goedkope gripsokken uit het buitenland kopen.
+**Waar:** clubkantine, jeugdtoernooien, voetbalscholen en voetbalretail. Online via de Voetbal.nl-app, TikTok, Instagram, Google en WhatsApp-teamgroepen.
+**Voor nu:** Timo en Tigo op voetbalretailers en voetbalclubs; Lars op de voetbalinfluencers.
+
 | Vraag | Antwoord |
 |---|---|
-| 1. Wie zijn ze precies? | *nog invullen* |
-| 2. Waar zijn ze? | *nog invullen* |
+| 1. Wie zijn ze precies? | Selectievoetballers bij BVO's, in de selectiejeugd en de selectie. |
+| 2. Waar zijn ze? | Clubkantine, jeugdtoernooien, voetbalscholen en voetbalretail; online via de Voetbal.nl-app, TikTok, Instagram, Google en WhatsApp-teamgroepen. |
 | 3. Wat willen ze? | *nog invullen* |
-| 4. Huidig alternatief? | *nog invullen* |
+| 4. Huidig alternatief? | Goedkope gripsokken uit het buitenland; afgeknipte kousen. |
 | 5. Overtuigende koopreden? | *nog invullen* |
 | 6. Whole product nodig? | *nog invullen* |
 | 7. Hoe bereiken we ze? | *nog invullen* |
@@ -79,14 +107,17 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 ## Open beslispunten
 
 - SEO/site-structuur: **BESLOTEN 2026-09-21 door lars: switch naar sportfocus.** Eigen landingspagina's per sport zijn live (tennis, voetbal, padel; rugby nog te bouwen) en zijn nu SEO-pijlers. Merk-breed (14-7-2026) is vervallen. Zie [[SEO Strategie & Keywords]] en [[Website Structuur & Sitemap]].
-- Vraag 9 (meetpunt "veroverd") en vraag 10 (volgende beachhead) zijn voor tennis en voetbal nog niet ingevuld — nodig om de focus-periode een einddatum/vervolgstap te geven. Voor rugby staan sinds 21-9-2026 voorstellen in de tabel (meetpunt einde seizoen 2027-2028, hockey als volgende pin) die Lars nog moet bevestigen.
+- **Welke van de drie wordt de ene beachhead?** Volgens het Canva-document testen we eerst met alle kanalen op alle drie en kiezen we daarna één. Die keuze is nog niet gemaakt.
+- Vraag 9 (meetpunt "veroverd") en vraag 10 (volgende beachhead) zijn voor tennis/padel en voetbal nog niet ingevuld — nodig om de focus-periode een einddatum/vervolgstap te geven. Voor rugby staan sinds 21-9-2026 voorstellen in de tabel (meetpunt einde seizoen 2027-2028, hockey als volgende pin) die Lars nog moet bevestigen.
 
 ---
 
 ## Gerelateerde bestanden
 
 - [[Strategische Keuzes]] — Roadmap en de beachhead-beslissing van 16-9-2026
-- [[Doelgroep & Persona's]] — Persona "Fanatieke Sporter" en beachhead-focus
+- [[Doelgroep & Persona's]] — De HÏ Grip sporter per kernsport
 - [[Concurrentieanalyse]] — Bredere concurrentiepositie
 - [[Content Strategie]] — Hoe content deze focus per sport uitvoert
 - [[Ideale Partner Profiel]] — B2B-kant van bereik (clubs, retailers)
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

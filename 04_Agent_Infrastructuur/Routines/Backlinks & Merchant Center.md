@@ -52,3 +52,5 @@ Het linkrapport van Search Console bestaat niet in de API. Werk daarom zo:
 
 ## Afsluiting
 Maximaal vier regels: de Merchant-stand, nieuwe en verloren links, het aantal acties en wat niet gekoppeld is.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

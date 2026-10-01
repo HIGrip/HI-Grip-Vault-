@@ -7,8 +7,8 @@
 
 ## Niche / Content type (prioriteit)
 
-> **Beachhead-strategie (vanaf 16-9-2026):** HÏ Grip focust nu bewust op drie sporten — tennis, rugby
-> en voetbal — in plaats van breed op alle sporten. Deze drie staan op ⭐ Hoog ongeacht seizoen; alle
+> **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** HÏ Grip test op drie kernsporten
+> — tennis/padel, voetbal en rugby — in plaats van breed op alle sporten; Lars doet per kernsport de influencers. Deze drie staan op ⭐ Hoog ongeacht seizoen; alle
 > overige sporten zijn gedeprioriteerd (niet uitgesloten — bestaande partners/leads blijven geldig,
 > maar geen actieve nieuwe zoekacties meer op deze niches). Zie [[Doelgroep & Persona's]].
 
@@ -171,3 +171,5 @@ Bij toevoegen aan [[Influencer Database]]:
 
 - Agent innoveert als strategie niet werkt — maar stelt voorstel voor, past niet zelf aan
 - Focus op content creators, niet per se influencers
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

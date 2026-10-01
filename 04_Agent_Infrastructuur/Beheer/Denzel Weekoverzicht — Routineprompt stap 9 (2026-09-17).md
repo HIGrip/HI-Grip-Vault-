@@ -58,3 +58,5 @@ Wikilinks naar andere vault-bestanden zijn gewenst.
 - Eerstvolgende maandag: staat er een `05_Research/JJJJ-MM-DD-weekoverzicht.md` in de repo en heeft de vorige week `status: gearchiveerd`?
 - Draait de lokale Growth Radar daarna, dan verschijnt de week vanzelf op het dashboard.
 - Werkt het niet: `git log` in de vault toont of de routine gepusht heeft; het run-log staat op https://claude.ai/code/routines.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

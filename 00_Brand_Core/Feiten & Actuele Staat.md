@@ -34,23 +34,23 @@ laatst-geverifieerd: 2026-09-25
 
 ## Producten en prijzen (consument, incl. btw)
 
-| Product | Handle | Maten | Prijs | Geverifieerd |
-|---|---|---|---|---|
-| Performance Gripsokken (1.0) | `performance-gripsokken` | 34–39 · 40–46 | 1-pack **€13,49** · 3-pack **€39,95** · 5-pack **€61,95** | 2026-09-25 (live `.js`) |
-| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€14,95** | 2026-09-25 (live `products.json`) |
-| Performance Gripsokken 2.0 Wit | `performance-gripsokken-2-0-wit` | 35–38 · 39–42 · 43–47 | **€14,95** | 2026-09-25 (live `products.json`) |
+| Product                          | Handle                             | Maten                 | Prijs                                                     | Geverifieerd                      |
+| -------------------------------- | ---------------------------------- | --------------------- | --------------------------------------------------------- | --------------------------------- |
+| Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€13,49** · 3-pack **€39,95** · 5-pack **€61,95** | 2026-09-25 (live `.js`)           |
+| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€14,95**                                                | 2026-09-25 (live `products.json`) |
+| Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€14,95**                                                | 2026-09-25 (live `products.json`) |
 
 - Adviesprijs retail 2.0: €17,99 (zie [[Performance Grip Socks 2.0]]).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
 ## Verzending en retour — vastgesteld door Lars op 25 sep 2026
 
-| Feit | Vastgestelde waarde | Live staat op 25 sep |
-|---|---|---|
-| Verzendkosten | **€4,50** | Algemene voorwaarden zeggen €4,25 → **conflict** |
-| Gratis verzending vanaf | **€35** | FAQ op de productpagina zegt €30 → **conflict** |
-| Verzendtijd | **Binnen 1 werkdag verzonden** | FAQ-pagina zegt "vóór 16:00 dezelfde dag", homepage/meta "vóór 22:00 vandaag verzonden" → **conflict**. De 22:00-belofte vervalt. |
-| Retour | **30 dagen** | Retourbeleid zegt 14 dagen, ongeopend, 25% herbevoorradingskosten → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]] §4.2) |
+| Feit                    | Vastgestelde waarde            | Live staat op 25 sep                                                                                                                  |
+| ----------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Verzendkosten           | **€4,50**                      | Algemene voorwaarden zeggen €4,25 → **conflict**                                                                                      |
+| Gratis verzending vanaf | **€35**                        | FAQ op de productpagina zegt €30 → **conflict**                                                                                       |
+| Verzendtijd             | **Binnen 1 werkdag verzonden** | FAQ-pagina zegt "vóór 16:00 dezelfde dag", homepage/meta "vóór 22:00 vandaag verzonden" → **conflict**. De 22:00-belofte vervalt.     |
+| Retour                  | **30 dagen**                   | Retourbeleid zegt 14 dagen, ongeopend, 25% herbevoorradingskosten → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]] §4.2) |
 
 Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2.0]] §1 (vervangt de waarden uit [[Update Log]] van 4 sep). Gelijktrekken op: productpagina + FAQ-blok, homepage- en productmeta's, algemene voorwaarden, verzend- en retourbeleid, en daarna pas `shippingDetails` / `hasMerchantReturnPolicy` in het Product-schema.
 
@@ -66,10 +66,17 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Markt en focus
 
-- **Beachhead-sporten (sinds 16 sep 2026):** tennis, rugby, voetbal. Padel blijft een groeimarkt (876.000 NL-spelers).
+> Merk, strategie en doelen volgen sinds 30-9-2026 het Canva-document *MERK & STRATEGIE — HÏ Grip* (https://canva.link/a48n60z2ay1g7bp). Uitwerking: [[Strategische Keuzes]] en [[Beachhead Strategie]].
+
+- **Doelgroep:** de prestatiegerichte sporter (de HÏ Grip sporter, zie [[Doelgroep & Persona's]]).
+- **Kernsporten (beachheads):** tennis/padel (één beachhead), voetbal, rugby. We testen op alle drie en kiezen er daarna één. Omvang volgens het Canva-document: tennis/padel 40.000–60.000 actieve sporters per maand · voetbal 10.000–50.000 · rugby 17.000 bij 101 clubs.
+- **Team:** drie founders (Lars, Timo, Tigo), naast hun studie. Kanaaleigenaren: zie [[Strategische Keuzes]].
+- **Kanalen:** SEO/e-mail · organisch/Meta ads/influencers/guerilla · koude acquisitie B2B · bol.com/TikTok Shop. Secundair: events en toernooien, mond-op-mond, presenteren.
+- **Nieuwsbrief:** elke drie weken een waardevolle mail naar alle adressen (automatiseringsmails staan al).
 - **Hoofdkeyword:** "gripsokken" (één woord). Long-tails: "waarom glijdt mijn voet in mijn padelschoen", "tapedesign alternatief", "wat zijn gripsokken".
 - **Concurrenten:** FitSockr, Tapedesign, Optigrip, Proskary. Op "gripsokken kopen" ook Decathlon, Match Fit Shop, Stanno, 11teamsports, Voetbalshop en bol.com.
-- **Skisokken met gelprotection:** lancering uitgesteld; niet in content of ads meenemen.
+- **Productnamen:** in communicatie PERFORMANCE GRIP SOCKS (1.0) en PERFORMANCE GRIP SOCKS 2.0; op higrip.nl, marketplaces en feeds PERFORMANCE GRIPSOKKEN en PERFORMANCE GRIPSOKKEN 2.0. Zie [[Brand Voice & Tone of Voice]].
+- **Binnenkort:** Performance Tubes (voetloze kousen) en Performance Ski Socks · ALPINE PRO (skisokken; op de site: Performance Skisokken). Mag als "binnenkort" genoemd worden, zoals in de pitch. **Geen lanceringsdatum en geen productclaims** noemen tot die hier staan.
 
 ## Waar data vandaan komt
 
@@ -82,5 +89,9 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-09-30 — Markt en focus gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (leidend): tennis/padel als één beachhead, doelgroep, team, kanalen, nieuwsbriefritme 3 weken, productnamen, skisokken van "uitgesteld" naar "binnenkort, geen datum".
+
 - 2026-09-25 — Verzendtijd gecorrigeerd naar "binnen 1 werkdag" (besluit Lars, stond vast in een losse branch en is nu samengevoegd).
 - 2026-09-25 — Bestand aangemaakt uit het projectgeheugen, [[Performance Grip Socks 2.0]], [[Update Log]] en een live controle van prijzen en handles.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

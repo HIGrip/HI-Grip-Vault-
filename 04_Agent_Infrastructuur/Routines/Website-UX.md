@@ -56,3 +56,5 @@ Is het voorstel van vorige keer nog niet opgepakt? Maak dan geen tweede voorstel
 
 ## Afsluiting
 Maximaal drie regels: het paginatype, het voorstel in één zin en de CWV-score.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

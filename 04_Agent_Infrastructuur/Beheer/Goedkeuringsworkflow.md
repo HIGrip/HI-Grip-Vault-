@@ -27,3 +27,5 @@ Voor voorstellen buiten Shopify-code (copy, SEO-meta, vault-documentatie) geldt 
 - [[Agent Takenverdeling & Grenzen]] — Volledige taakverdeling per categorie
 - [[Technische Procedures]] — Hoe de agent daadwerkelijk in het AI Workspace-theme werkt
 - [[Shopify App Stack]] — Technische basis van de theme-opzet
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

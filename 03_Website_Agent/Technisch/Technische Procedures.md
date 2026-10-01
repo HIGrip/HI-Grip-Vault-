@@ -89,3 +89,5 @@ Eerste keer dat deze procedure is toegepast — zie [[Conversie Optimalisatie Ch
 - [[Conversie Optimalisatie Checklist]] — Inhoudelijke checklist die deze procedure uitvoert
 - [[Shopify App Stack]] — Overige technische basis (nog te vullen)
 - [[Update Log]] — Datumgewijze log van doorgevoerde wijzigingen
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

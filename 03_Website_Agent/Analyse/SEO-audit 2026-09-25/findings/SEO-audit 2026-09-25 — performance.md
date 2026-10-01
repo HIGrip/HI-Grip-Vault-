@@ -260,3 +260,5 @@ pages tested; desktop alone averages ~82/100 "Good," mobile is effectively
 so this is a reasoned estimate from the LCP/TBT evidence above, not a
 Lighthouse-reported figure). **This is a lab-data estimate; treat as
 directional until confirmed against CrUX field data.**
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

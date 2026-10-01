@@ -52,3 +52,5 @@ Bij de funnel-analyse van deze week (zie [[Week 2026-09-14]]) kwam in het kanale
 - [[E-mail Lijst Strategie]]
 - [[E-mail Marketing Benchmarks]]
 - [[Week 2026-09-14]] — kanalenoverzicht waar het ontbrekende Email-kanaal opviel
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

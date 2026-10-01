@@ -53,3 +53,5 @@ Vakbronnen die tellen: Modint, Textile Exchange, Innovation in Textiles, Sourcin
 
 ## Afsluiting
 Maximaal vier regels: de eerstvolgende deadline, het diepte-onderwerp in één zin, het aantal acties en besluiten, en wat niet lukte.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

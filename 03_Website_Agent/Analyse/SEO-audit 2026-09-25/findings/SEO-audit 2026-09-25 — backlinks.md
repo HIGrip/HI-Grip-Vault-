@@ -67,3 +67,5 @@ These are qualitative, best-practice recommendations for a Dutch sport D2C brand
 ## 6. Validator check (mandatory pre-delivery step)
 
 Ran `validate_backlink_report.py` against the collected `cc_data`: **status PASS** (0 errors, 0 warnings, 1 info notice — the CC "not found ≠ low authority" caveat reproduced in Section 2 above). No health score was included in the input, consistent with the "insufficient data" conclusion.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

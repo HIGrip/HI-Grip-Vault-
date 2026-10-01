@@ -59,3 +59,5 @@ Some automated data extraction runs printed "�" in place of €/Ï characters 
 - `product-zwart_desktop_abovefold.png`, `product-zwart_desktop_fullpage.png`, `product-zwart_mobile_abovefold.png`, `product-zwart_mobile_fullpage.png`
 - `collection-gripsokken_desktop_abovefold.png`, `collection-gripsokken_desktop_fullpage.png`, `collection-gripsokken_mobile_abovefold.png`, `collection-gripsokken_mobile_fullpage.png`
 - `page-tennis_desktop_abovefold.png`, `page-tennis_desktop_fullpage.png`, `page-tennis_mobile_abovefold.png`, `page-tennis_mobile_fullpage.png`
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

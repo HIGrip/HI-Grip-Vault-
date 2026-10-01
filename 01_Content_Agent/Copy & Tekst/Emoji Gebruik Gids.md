@@ -40,3 +40,5 @@ De categorietabel is ruimer dan de brandbook-set en blijft bruikbaar; wijkt alle
 - [[Caption Gids per Platform]] — Hoe captions schrijven per platform
 - [[Hashtag Bibliotheek]] — Hashtags per platform
 - [[Logo & Kleurenpalet]] — Merkkleuren die de kleur-emoji's volgen
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

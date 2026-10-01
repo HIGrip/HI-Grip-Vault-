@@ -63,3 +63,5 @@ Kort wat er uiteindelijk gebeurde (afweek van de checklist hieronder):
 - [[Analytics & KPI Dashboard]] — Waar Deel 2 naartoe gaat
 - [[API & Tool Connections]] — Volledige technische achtergrond van beide routes
 - [[Stappenplan — Verdere Bouw]] — Fase 2 in de bredere agent-opbouw
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

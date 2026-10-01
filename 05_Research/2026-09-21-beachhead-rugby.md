@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Sinds 16 september is rugby één van de drie beachhead-sporten, maar in [[Beachhead Strategie]] stonden alle tien rugby-antwoorden nog op *nog invullen*. Dit onderzoek vult ze met publieke bronnen (Rugby Nederland-jaarverslag 2025-2026, World Rugby Law 4 en Regulation 12, het VWW 2026-2027, de Nederlandse rugbywinkels) en de productwaarheid uit [[Performance Grip Socks 2.0]]. De ingevulde tabel staat in §7 en is overgenomen in Beachhead Strategie.md.

@@ -133,3 +133,5 @@ Fallback web fetches were attempted and did not succeed:
 | 9 | og:image served over http | Low |
 | 10 | Title tag stray line break/whitespace | Low |
 | — | Marketplace/competitor data unavailable (DataForSEO approval needed) | Limitation |
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

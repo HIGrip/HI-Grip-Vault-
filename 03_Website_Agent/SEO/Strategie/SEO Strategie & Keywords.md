@@ -9,8 +9,8 @@
 > **Lars heeft besloten dat HÏ Grip in SEO en sitestructuur nu bewust méér sportgericht is.** Sportlandingspagina's zijn al live (`/pages/gripsokken-voor-tennis`, `-voetbal`, `-padel`; rugby volgt, zie [[Beachhead Strategie]]). Gevolgen:
 > - Sportpagina's zijn nu **echte SEO-pijlers/spokes** naast de hub "gripsokken" (die blijft #1-doel), niet langer alleen navigatie-filters of long-tail in productcontent.
 > - Sport-specifieke termen ("tennissokken", "voetbalsokken", "padelsokken", "rugbysokken", "antislip sokken") horen op de sportpagina's (primair in title/H1, secundair in H2/intro/FAQ).
-> - Voorrang blijft tennis, rugby, voetbal; padel heeft wel een pagina maar is geen beachhead-sport.
-> - De skisokken-reden voor "merk-breed" is vervallen (lancering uitgesteld). Het merk blijft één identiteit; alleen de SEO-structuur wordt sportgericht.
+> - Kernsporten (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026): tennis/padel, voetbal en rugby. Padel hoort bij de kernsport tennis/padel. SEO moet aansluiten op het focussegment; voor nu eerst de technische fouten eruit, dan bouwen. Hoofd-KPI's: aantal Google-bezoekers en percentage dat op een vervolgpagina klikt.
+> - De skisokken-reden voor "merk-breed" is vervallen (Performance Ski Socks komen "binnenkort", zonder datum; op de site heten ze Performance Skisokken). Het merk blijft één identiteit; alleen de SEO-structuur wordt sportgericht.
 > - Effect is pas na ~1 week (nieuwe indexatie) te beoordelen, en bij het huidige volume (~12 sessies/dag) alleen als signaal, niet als bewijs.
 > - Keyword-onderzoek per sport (SERP-analyse, geen zoekvolume-tool) is op 2026-09-21 gestart; resultaat komt in deze notitie.
 >
@@ -41,7 +41,7 @@ Bron: SERP-analyse van concurrent-titels en resultaten; **geen zoekvolume, autoc
 
 ## Kernprincipe
 
-HÏ Grip focust niet op één sport — de SEO-strategie moet daarom rond het **merk en de productcategorie** gebouwd worden, niet rond individuele sporten (tennis/rugby/hockey/badminton blijven navigatie-filters, geen SEO-pijlers). Reden: er komt een **tweede productlijn (skisokken)** aan — een sport-specifieke SEO-opzet zou daar niet in meeschalen. (Skisokken zijn per 16-9-2026 uitgesteld, zie beachhead-notitie hierboven — dit maakt de oorspronkelijke reden tijdelijk minder dwingend.)
+HÏ Grip focust niet op één sport — de SEO-strategie moet daarom rond het **merk en de productcategorie** gebouwd worden, niet rond individuele sporten (tennis/rugby/hockey/badminton blijven navigatie-filters, geen SEO-pijlers). Reden: er komt een **tweede productlijn (skisokken)** aan — een sport-specifieke SEO-opzet zou daar niet in meeschalen. (Historisch: vervangen door de sportgerichte keuze van 21-9 en de kernsporten uit het Canva-document.)
 
 **Wel expliciet gewenst:** #1 positie op de zoekterm **"gripsokken"** — dit is en blijft het kernproduct, ook binnen een merk-brede strategie.
 
@@ -87,3 +87,5 @@ Sport-specifieke termen (bv. "tennissokken grip") kunnen als secundaire long-tai
 - [[Website Structuur & Sitemap]] — Sitemap en URL-structuur
 - [[Conversie Optimalisatie Checklist]] — Bredere audit-actiepunten
 - [[Brand Identity Overview]] — Merkverhaal en positionering
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

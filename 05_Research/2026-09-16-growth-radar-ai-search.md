@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — AI-search (checkout in AI is dood, feed is de ingang)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Vier bevindingen die vooral bestaande prioriteiten bevestigen: bewijspagina, gratis-verzendingsdrempel, productvideo en variant-ID's (verplaatst naar P1). Eén open vraag: verzendt higrip.nl naar de VS?

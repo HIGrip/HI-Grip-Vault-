@@ -144,3 +144,5 @@ Supporting SERP signals:
  {"id":"SXO-8","severity":"low","title":"Homepage H1 in lower teaser section; 11/18 images without alt","url":"/","fix":"Move H1 to hero, add alts"}
 ]
 ```
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

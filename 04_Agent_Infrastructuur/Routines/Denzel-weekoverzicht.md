@@ -35,7 +35,7 @@ Kijk naar de laatst-toegevoegd-datum in `02_Partnership_Agent/B2B_Samenwerkingen
 - `Voorwaarden Samenwerking.md`
 
 Voeg gevonden kandidaten toe aan het juiste bestand, zonder dubbelingen met `Pipeline Tracker.md`.
-- **Beachhead-sporten:** tennis, rugby en voetbal eerst (zie het feitenbestand).
+- **Kernsporten:** tennis/padel, voetbal en rugby eerst (zie het feitenbestand).
 - **Eerst een contactpersoon** (afspraak 21-09): een kandidaat heet pas "outreach-klaar" als er een contactpersoon is gevonden. Voor kandidaten met een hoge score zonder contact doe je een kleine vervolgzoekactie naar contactgegevens.
 
 ## 2b. Partnership: kandidaten echt beoordelen (Zelf doen)
@@ -163,3 +163,5 @@ Nooit:
 
 ## Toon
 Kort en feitelijk, zonder poeha: een voorstel met de reden erbij, niet alleen een uitkomst. Merknaam altijd "HÏ Grip" (met trema), nooit "HI Grip" of "Hi Grip".
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

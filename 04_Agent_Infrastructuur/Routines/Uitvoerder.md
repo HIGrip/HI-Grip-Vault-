@@ -71,3 +71,5 @@ python 05_Research/_tools/acties.py open > /tmp/uv/open.json
 
 ## Afsluiting
 Maximaal vijf regels: per opdracht de status en de titel in een paar woorden, wat een mens nu moet doen, en problemen (sync, publish, push).
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

@@ -67,3 +67,5 @@ Vul `gerelateerd` in **beide richtingen**: tussen de notities die samen een kans
 
 ## Afsluiting
 Maximaal vier regels: de editie, het aantal kansen met de sterkste in één zin, opgepakte kansen die naar de backlog gingen, en wat niet lukte.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

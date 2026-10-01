@@ -220,3 +220,5 @@ Frame 3:  RESULTAAT TELT. ← volledig onthuld
 - [[Brand Voice & Tone of Voice]] — Welke slogans in de overlay
 - [[Logo & Kleurenpalet]] — Kleuren en typografie-regels
 - [[Reel & TikTok Format Gids]] — Waar tekst in de videostructuur valt
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

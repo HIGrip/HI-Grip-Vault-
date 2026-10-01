@@ -74,3 +74,5 @@ Naast de 5 `/`-skills (die inline in de hoofdsessie draaien) heeft elke sub-agen
 - [[SEO Strategie & Keywords]]
 - [[Website Structuur & Sitemap]]
 - [[Sportlanding-systeem (21-9-2026)]] — sportpagina's tennis/rugby/voetbal/padel + homepage-teaser (theme 201133490503, concept)
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

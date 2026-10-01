@@ -1,25 +1,29 @@
 # Doelen — HÏ Grip Zoek Agent
 
-> Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Deze doelen bestaan om één reden: het merk laten groeien (zie [[Brand Identity Overview]]) — elke nieuwe klant, creator of samenwerking moet bijdragen aan HI Grip als marktleider in performance sportswear (zie [[Strategische Keuzes]]). Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.
+> Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Deze doelen bestaan om één reden: het merk laten groeien (zie [[Brand Identity Overview]]) — elke nieuwe klant, creator of samenwerking moet bijdragen aan de visie van HÏ Grip: binnen vijf jaar een gewaardeerd merk in heel Europa, en in 2031 te vinden bij de grootste retailers en bekende sportclubs (zie [[Strategische Keuzes]]). Leidend sinds 30-9-2026: Canva-document *MERK & STRATEGIE*. Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.
 
 ---
 
 ## 1. Influencers & Content Creators
 
-**Doel:** Per beachhead-sport (tennis, rugby, voetbal — zie [[Doelgroep & Persona's]]) minimaal enkele bevestigde nano/micro-creators (500–100.000 volgers, zie [[Evaluatiecriteria]]) die structureel content maken met HÏ Grip. Padel en basketball zijn gedeprioriteerd.
+**Canva (leidend):** creators en atleten bouwen vertrouwen, herkenning, zichtbaarheid en revenue. In het begin **kleine influencers** (betaalbaar), veel met **kortingscodes, commissies of gratis product placements**, en gedeelde posts zodat wij content hebben zonder veel tijd en moeite. **Hoofd-KPI: omzet via creators en CTR.** Owner: Lars (per kernsport op de influencers). Doel 2031 (community): bekende influencers en profatleten.
+
+**Doel:** Per kernsport (tennis/padel, voetbal, rugby — zie [[Beachhead Strategie]]) minimaal enkele bevestigde nano/micro-creators (500–100.000 volgers, zie [[Evaluatiecriteria]]) die structureel content maken met HÏ Grip. Padel hoort bij de kernsport tennis/padel; basketbal is geen kernsport.
 
 **Huidige stand** (zie [[Influencer Database]]): 1 bevestigd (@timtopspin, tennis), rest van de database staat nog op "🔍 Zoeken" of "🔎 Gevonden/te verifiëren" per sport.
 
 **Maandelijks doel (voorstel — nog niet officieel vastgesteld):**
 - Minimaal 1 nieuwe **bevestigde** samenwerking per maand
 - Minimaal 3–5 nieuwe kandidaten per week toevoegen aan de database (status Gevonden/Verifieer)
-- Prioriteit: eerst de "Zeer hoog"-prioriteit lege plekken vullen voetbal, basketbal
+- Prioriteit: eerst de lege plekken in de kernsporten vullen (tennis/padel, voetbal, rugby)
 
 ---
 
 ## 2. B2B Klanten (Lijn A)
 
-**Doel** (uit [[Strategische Keuzes]] — cumulatief aantal vaste klanten):
+**Canva (leidend):** koude acquisitie op **retail en sportclubs** (owners: Tigo en Timo). Pipeline in het CRM: lead → kennismaking → sample → offerte → order → herhaalorder. **Hoofd-KPI: orders, omzet en aantal positieve leads voor validatie.** Doel 2031: in heel Nederland en Europa bij de grootste retailers en speciaalzaken, en personalisatie voor bekende sportclubs.
+
+**Aantal vaste klanten** (werkdoel uit [[Strategische Keuzes]]; staat niet in het Canva-document — cumulatief):
 
 | Jaar | Doel (totaal) | Nodig t.o.v. vorig jaar |
 |---|---|---|
@@ -41,7 +45,9 @@
 
 ## 3. Samenwerkingen & Events (Lijn B)
 
-**Doel:** geen officieel cijfer vastgesteld in de financiële roadmap — sponsoring/activaties zijn primair voor zichtbaarheid/merkbeleving, niet direct voor omzet.
+**Canva (leidend):** events en toernooien zijn een **secundair kanaal** dat ondersteunt. Performance Academy voor nu (2026): **op events zichtbaar zijn**; doel 2031: eigen sportevents. Guerilla-acties bij grote evenementen horen bij tactiek 02 (socials), niet hier.
+
+**Doel:** geen cijfer vastgesteld — sponsoring/activaties zijn primair voor zichtbaarheid/merkbeleving, niet direct voor omzet.
 
 **Huidige stand** (zie [[Voorbeelden Gevonden Organisaties (Events)]]): 3 HOOG-kandidaten gevonden (Powerleague Rotterdam, Panna Knock Out, Rotterdam Basketbal 3x3), 3 MIDDEL (Sportloaded, Urban Trail Rotterdam, Rotterdam Charity Run), 0 actief lopend. Sport Ondernemers Expo is 31-08-2026 door lars geschrapt (B2B-vakbeurs, geen sportpubliek/activatie — zie [[Voorwaarden Samenwerking]]).
 
@@ -67,3 +73,5 @@
 - [[Strategische Keuzes]] — Financiële roadmap (00_Brand_Core)
 - [[Brand Identity Overview]] — Waarom deze doelen bestaan: het merkfundament
 - [[Doelgroep & Persona's]] — Wie we met alle drie de lijnen proberen te bereiken
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

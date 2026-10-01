@@ -18,3 +18,5 @@ Nee. De volledige oude prompt staat letterlijk als back-up in [[Denzel-weekoverz
    - **Omgeving:** die met `GOOGLE_SA_JSON_B64`, het setup-script en netwerk "Full"
    - **Connector:** Shopify aan
 4. Opslaan. Na de eerstvolgende maandag-run hoort er een notitie `05_Research/JJJJ-MM-DD-weekoverzicht.md` te staan.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

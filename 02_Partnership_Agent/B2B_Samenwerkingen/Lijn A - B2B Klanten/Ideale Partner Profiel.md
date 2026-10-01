@@ -6,7 +6,7 @@
 
 ## 1. Innovatieve Sportclubs
 
-> **Beachhead-strategie (vanaf 16-9-2026):** prioriteit ligt nu bij tennis-, rugby- en voetbalclubs (zie [[Doelgroep & Persona's]]) — andere sportclubs blijven mogelijk maar zijn gedeprioriteerd.
+> **Canva *MERK & STRATEGIE* (leidend sinds 30-9-2026):** koude acquisitie richt zich op **retail en sportclubs** in de kernsporten tennis/padel, voetbal en rugby (Timo en Tigo). Sportclubs: aanbieden het eerste elftal te sponsoren in ruil voor verkoop op de club; lukt dat niet, het eerste team als team laten inkopen. Retail: de winst voor de winkelier centraal. Zie [[Strategische Keuzes]] (tactiek 03). Andere sportclubs blijven mogelijk maar zijn gedeprioriteerd.
 
 **Wie:** Vooruitstrevende vrijwilligers en bestuursleden die hun club kennis laten maken met de nieuwste trends.
 
@@ -24,7 +24,7 @@
 
 **Wat ze zoeken:** Een product dat verkoopt, merkbekendheid, vraag vanuit de markt.
 
-**Waarom dit past bij HÏ Grip:** groeit het merk richting marktleiderschap (zie [[Strategische Keuzes]]) door schaal, zonder in te leveren op kwaliteit boven kwantiteit.
+**Waarom dit past bij HÏ Grip:** groeit het merk richting het doel voor 2031: bij de grootste retailers en speciaalzaken in Nederland en Europa (zie [[Strategische Keuzes]]) door schaal, zonder in te leveren op kwaliteit boven kwantiteit.
 
 ---
 
@@ -51,3 +51,5 @@
 - [[Influencer Database]] — Gevonden en te zoeken influencers per sport
 - [[Evaluatiecriteria]] — Selectie- en verificatiecriteria voor influencers
 - [[Zoek Script & Gids]] — Zoekproces, hashtags en Python script
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

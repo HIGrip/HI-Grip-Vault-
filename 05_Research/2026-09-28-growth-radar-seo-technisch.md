@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Growth Radar — SEO Technisch (28 september 2026)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 De belangrijkste vondst van vandaag raakt niet de site zelf, maar de leidingen eronder: Google's oude Content API for Shopping — de weg waarlangs Shopify je Merchant Center-feed vult — geeft sinds 1 september 2026 al progressieve fouten voor wie nog niet is overgezet naar de nieuwe Merchant API, met volledige uitschakeling begin 2027. Dat loopt via dezelfde Google & YouTube-app die vorige week al op de riskante "Optimized"-pixelstand bleek te staan. Daarnaast twee kleinere ontwikkelingen om te volgen, geen van beide met eigen actie nu: een normale Google-spamupdate en een nieuw multimodaal filter in Search Console.
 

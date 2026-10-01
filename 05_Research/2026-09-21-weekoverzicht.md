@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Denzel Weekoverzicht — 2026-09-21 (structured data 3 weken uit, 2 orders)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Gemigreerd vanuit `04_Agent_Infrastructuur/Beheer/Weekoverzicht/` (de routine schreef nog naar de oude map). Belangrijkste punten: structured data en de live FAQ-waarden lopen achter op het werkthema, het echte verkeer daalt achter een laag botverkeer, en twee events-kandidaten zijn outreach-klaar.

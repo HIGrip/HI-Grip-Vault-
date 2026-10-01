@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — Social naar website (TikTok Shop NL, Meta-attributie)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Twee bevindingen op de vrijdagfocus "social naar website". TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt rechtstreeks aan Shopify — dat opent een route waarbij de hele klantreis (ontdekken, valideren via creators, afrekenen) binnen TikTok zelf plaatsvindt, in plaats van door te klikken naar higrip.nl. Daarnaast verwijderde Meta op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API, wat de noodzaak van server-side tracking (CAPI) vergroot zodra HÏ Grip met Meta-advertenties start.

@@ -15,7 +15,7 @@ Nederlands performance-sportswear merk, gestart vanuit passie voor sport. Draait
 Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/expertise, met social proof. Geen AI-hypetaal, geen geforceerde CTA's — kort, feitelijk, rustig, menselijk. Volledige versie: [[Brand Voice & Tone of Voice]].
 
 ## Doelgroep
-- **B2C** — fanatieke sporters, trendbewuste talenten, toekomstige pro's, betrokken ouders, blessuregevoelige en bewuste sporters. Vooral relevant voor Content Agent en de B2C-kant van Website Agent.
+- **B2C** — de prestatiegerichte HÏ Grip sporter, in de kernsporten tennis/padel, voetbal en rugby (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026). Vooral relevant voor Content Agent en de B2C-kant van Website Agent.
 - **B2B** — innovatieve sportclubs, performance retailers, pilates/sportscholen. Vooral relevant voor Partnership Agent en de B2B-kant van Website Agent.
 - Volledige versie: [[Doelgroep & Persona's]].
 
@@ -32,3 +32,5 @@ Volledig schema: [[Agent Hiërarchie & Structuurschema]].
 - Geen AI-hypetaal of geforceerde CTA's in klant-zichtbare copy — kort, feitelijk, rustig, menselijk.
 - @finnpicard_ nooit als voetbal-referentie of seed gebruiken.
 - Technische tool-regels die voor meerdere agents gelden: zie [[API & Tool Connections]].
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

@@ -134,3 +134,5 @@ Alle wijzigingen aan Shopify-code gaan via een apart/duplicate theme, nooit dire
 - [[SEO Strategie & Keywords]] — Onderbouwing SEO-punten
 - [[Homepage Copy & Structuur]] — Onderbouwing psychologie-punten
 - [[Agent Takenverdeling & Grenzen]] — Wie mag wat uitvoeren
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

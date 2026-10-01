@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Denzel Weekoverzicht — 2026-09-28
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 De structured-data-regressie en de titel/meta-fix staan nu al 6 respectievelijk 6 weken klaar zonder dat ze live zijn gezet — dat blijft de belangrijkste vertraging. Deze week kwamen daar twee nieuwe, vergelijkbare technische problemen bij: de nieuwe `/en/`-homepage heeft dezelfde 2×H1-fout die de NL-homepage half september ook had, en drie nieuwe verzend-/retour-/betalingspagina's spreken de oude `/policies/*`-pagina's tegen. Het echte Nederlandse verkeer daalt voor de derde week op rij. Partnership-kant: geen nieuwe zoekactie nodig (lijsten 7 dagen oud), wel een kleine vervolgzoekactie die 3 tennisretailers een contactpersoon gaf — TennisFirst Rotterdam is nu volledig outreach-klaar.

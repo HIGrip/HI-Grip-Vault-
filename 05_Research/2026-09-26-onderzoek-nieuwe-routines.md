@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Onderzoek nieuwe routines
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Geen enkel extern cijfer over AI-routines hield stand bij controle. Het advies rust daarom op de eigen cijfers van HÏ Grip, niet op beloftes van leveranciers.

@@ -1,53 +1,51 @@
 # Doelgroep & Persona's — HÏ Grip
 
-> Centrale bron voor alle B2C en B2B doelgroepen. Andere bestanden (Content Strategie, Platform Richtlijnen, Ideale Partner Profiel) linken hier naartoe.
+> Centrale bron voor wie HÏ Grip bedient, B2C en B2B. Andere bestanden (Content Strategie, Platform Richtlijnen, Ideale Partner Profiel) linken hier naartoe.
+>
+> **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 01 en 12: https://canva.link/a48n60z2ay1g7bp.
 
 ---
 
-## Beachhead-focus (vanaf 16-9-2026)
+## De doelgroep: prestatiegerichte sporters
 
-> HÏ Grip richt zich nu primair op drie sporten: **tennis, rugby en voetbal** — en binnen elke sport specifiek op de **fanatieke sporter** (zie persona hieronder). Dit is een focus-keuze, geen identiteitswijziging: alle persona's hieronder blijven geldig, maar content, influencer-search en partnerships prioriteren deze 3 sporten. Skisokken-lancering is uitgesteld (zie [[Strategische Keuzes]]). Per sport is het bereik/behoefte/koopreden-vragenkader uitgewerkt in [[Beachhead Strategie]].
+Onze doelgroep is **de prestatiegerichte sporter**. Omdat die sporter in allerlei sporten zit, testen we eerst in drie kernsporten (tennis/padel, voetbal, rugby), kiezen er één en bouwen van daaruit naar nieuwe sporten, landen en producten. Zie [[Beachhead Strategie]].
 
----
+## De HÏ Grip sporter — voor wie we alles maken
 
-## B2C Doelgroepen
+| Kenmerk | |
+|---|---|
+| Winnaarsmentaliteit | Wil presteren |
+| Serieus als het erop aankomt | Self-improvement |
+| Vaste routine | Doorzetter |
+| Eigenwijs | Uiterlijk |
+| Altijd op zoek naar iets nieuws, naar iets beters | |
 
-### 1. Betrokken Ouders
-Ouders die de sportuitrusting voor hun kinderen beheren en alleen genoegen nemen met kwaliteit.
-**Winmoment:** Wanneer hun kind plezier heeft.
+Aanvullend uit het merkhoofdstuk (hoe ziet de HÏ Grip sporter eruit?): **op zoek naar een edge**, houdt van **producten die een stap extra geven**, en wil **gezien worden**.
 
-### 2. Trendbewuste Talenten
-Jonge, ambitieuze sporters die prestaties willen combineren met de nieuwste sporttrends.
-**Winmoment:** Wanneer ze een mooie actie maken of erkend worden dat ze goed zijn.
+**Wat willen we deze sporter laten voelen?** Waardering · zelfvertrouwen · winnaarsmentaliteit (zie [[Brand Identity Overview]]).
 
-### 3. Fanatieke Sporters — primaire beachhead-doelgroep
-De mensen die willen winnen. Competitief en resultaatgericht. **Primair binnen tennis, rugby en voetbal** (zie Beachhead-focus hierboven).
-**Winmoment:** Wanneer de sporter wint, wedstrijden wint, kampioen wordt.
+### Per kernsport
 
-### 4. Toekomstige Pro's
-Competitieve kids met een profdroom die elke voorsprong op hun omgeving benutten.
-**Winmoment:** Wanneer ze dichterbij komen bij hun droom prof te worden.
+| Sport | Wie is hier de HÏ Grip sporter |
+|---|---|
+| **Tennis / padel** | Tennissers en padellers die competitie spelen op niveau 7 of hoger en willen klimmen in hun ranking. |
+| **Voetbal** | Selectievoetballers bij BVO's, in de selectiejeugd en de selectie, die nu goedkope gripsokken uit het buitenland kopen. |
+| **Rugby** | Presterende rugbyers die vast willen staan bij scrum en sidestep, geen blaren willen en bij de club willen horen. |
 
-### 5. Blessuregevoelige Sporters
-Sporters die medische zekerheid zoeken zonder op prestaties in te leveren.
-**Winmoment:** Wanneer de sporter pijnvrij speelt, geen last heeft of voor het eerst een hele wedstrijd heeft gespeeld.
-
-### 6. Bewuste Sporters
-Mensen die fanatiek bezig zijn om zo sportief en fit mogelijk te zijn.
-**Winmoment:** Wanneer de sporter zijn doel haalt (bepaalde tijd rennen, bepaald gewicht, etc.).
+Waar ze zijn en waarom deze sporten: [[Beachhead Strategie]].
 
 ---
 
-## B2B Doelgroepen
+## B2B — HÏ Grip Zakelijk
 
-### 1. Innovatieve Sportclubs
-Vooruitstrevende vrijwilligers en bestuursleden die hun club kennis laten maken met de nieuwste trends. Clubs kunnen ook te maken hebben met spelers die hun sokken afknippen — de oplossing is gripsokken plus **Performance Tubes** vanuit de club (zie productnamen in [[Brand Voice & Tone of Voice]]).
+| Doelgroep | Wat telt voor hen |
+|---|---|
+| **Sportclubs** | De vraag van leden naar gripsokken vervullen, personaliseren en uniformiteit, goede prijs-kwaliteitverhouding. We benaderen (grote) sportclubs, amateurs eerst, op weg naar bekende clubs. |
+| **Retail** (retailers en speciaalzaken) | De winst voor de winkelier: aantrekkelijke marges, innovatieve features, uitstekende prijs-kwaliteitverhouding, en marketingondersteuning (mannequins, online content). |
 
-### 2. Performance Retailers
-(Franchise)eigenaren en inkopers die hun assortiment willen differentiëren met innovatieve performance sportswear.
+Het Canva-document richt de koude acquisitie op **retail en sportclubs**. Studio's (pilates, sportscholen) staan alleen in de pitch als bestaande partners ("sportclubs, retail, studio's als partners"); daar zoeken we niet actief nieuwe klanten.
 
-### 3. Pilates / Sportscholen
-Ondernemers/eigenaren die op zoek zijn naar gripsokken voor hun leden, het liefst met personalisatie.
+Tactiek, pipeline en KPI's: [[Strategische Keuzes]] (koude acquisitie B2B). Uitwerking per lead: [[Ideale Partner Profiel]].
 
 ---
 
@@ -56,22 +54,23 @@ Ondernemers/eigenaren die op zoek zijn naar gripsokken voor hun leden, het liefs
 | Kanaal | Toon |
 |---|---|
 | **B2C** | Emotie en prestatie. Beeld voorop, korte zinnen, het gevoel van winnen. |
-| **B2B** | Zekerheid en bewijs. Specificaties, prijs-kwaliteit, levertijd en personalisatie. Hier draait het om assortiment, ledenbinding en personalisatie — niet om individuele prestatie. |
-
----
-
-## Doelgroepen per platform
-
-Voor de content per doelgroep per platform: zie [[Platform Richtlijnen]] en [[Content Pillars]].
-Voor de B2B aanpak en sales: zie [[Ideale Partner Profiel]] en [[Outreach Templates]].
+| **B2B** | Zekerheid en bewijs: winst voor de winkelier of club, prijs-kwaliteit, innovatieve features en personalisatie. |
 
 ---
 
 ## Gerelateerde bestanden
 
-- [[Brand Identity Overview]] — Merkverhaal en positionering
-- [[Beachhead Strategie]] — Bereik/behoefte/koopreden-vragenkader per sport
-- [[Content Strategie]] — Welk verhaal we vertellen per doelgroep
-- [[Platform Richtlijnen]] — Welke doelgroep per social media platform
-- [[Content Pillars]] — Content ideeën per doelgroep
+- [[Brand Identity Overview]] — Merkverhaal, wat we sporters laten voelen
+- [[Beachhead Strategie]] — Waarom, wie en waar per kernsport
+- [[Strategische Keuzes]] — Kanalen, tactiek, Performance Academy
+- [[Content Strategie]] — Welk verhaal we vertellen
+- [[Platform Richtlijnen]] — Wat we per platform plaatsen
 - [[Ideale Partner Profiel]] — B2B uitgewerkt
+
+---
+
+> [!note]- Vervallen per 30-9-2026: de zes oude B2C-persona's (niet meer gebruiken)
+> Het Canva-document *MERK & STRATEGIE* kent één doelgroep, de prestatiegerichte HÏ Grip sporter. Onderstaande persona's zijn daarom niet meer leidend en staan hier alleen ter archivering.
+> Betrokken Ouders · Trendbewuste Talenten · Fanatieke Sporters · Toekomstige Pro's · Blessuregevoelige Sporters · Bewuste Sporters. B2B-oud: Innovatieve Sportclubs · Performance Retailers · Pilates/Sportscholen.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

@@ -4,6 +4,15 @@
 >
 > **[LARS]** De 5 bestaande e-mailontwerpen (zie [[E-mail Mailflows Artifact]]) zijn nog niet 1-op-1 in deze strategie verwerkt — de exacte inhoud/flow-namen stonden alleen in een tijdelijke scratchpad en zijn niet bewaard in de vault. Onderstaande lifecycle-mapping (sectie 4) is dus een voorstel vanuit de theorie + persona's, geen audit van wat er al staat. Graag bevestigen welke van de 5 al bestaan, dan kan dit bestand 1-op-1 gemapt worden.
 
+> [!important] Leidend sinds 30-9-2026: Canva *MERK & STRATEGIE* (zie [[Strategische Keuzes]], tactiek 01)
+> - **Rol van e-mail:** zorgt dat sporters terugkomen en verbindt ze aan het merk; e-mail zorgt voor recurring revenue.
+> - **Waarde:** kortingscodes, early access en campagnes. Eerst feedback geven, dan krijgen klanten korting.
+> - **Hoofd-KPI:** CTR van mail naar site.
+> - **Voor nu:** de automatiseringsmails staan al; doel is **elke drie weken een waardevolle mail naar alle adressen**.
+> - **Performance Academy:** wie op de nieuwsbrief staat (of product bezit) hoort bij de Academy; members krijgen early access op drops en lanceringen.
+>
+> Waar dit bestand iets anders zegt, geldt het Canva-document.
+
 ---
 
 ## Uitgangspunt
@@ -45,7 +54,7 @@ Met het huidige lage verkeersvolume moet lijstopbouw via meerdere touchpoints, n
 | Nieuwe abonnee, nog niet gekocht | Aanmelding zonder order | Nurture: merkverhaal, wetenschap, social proof → eerste aankoop |
 | Eerste koper | 1 order | Onboarding: verzorging, hoe te gebruiken, community |
 | Herhaalkoper / loyaal | 2+ orders | VIP-gevoel, early access, minder korting nodig (al overtuigd) |
-| Sport-affiniteit bekend (klik-/aankoopgedrag) | Klikt op pilates-content, koopt voor voetbal, etc. | Match met de juiste persona uit [[Doelgroep & Persona's]] (bv. Blessuregevoelige Sporters krijgen blessurepreventie-content, Fanatieke Sporters krijgen performance-content) |
+| Sport-affiniteit bekend (klik-/aankoopgedrag) | Klikt op tennis-/padelcontent, koopt voor voetbal, etc. | Content per kernsport (tennis/padel, voetbal, rugby) voor de HÏ Grip sporter uit [[Doelgroep & Persona's]] |
 | Inactief (60+ dagen niet geopend) | Winback-trigger | Zie sectie 4 |
 
 ---
@@ -82,15 +91,15 @@ Met het huidige lage verkeersvolume moet lijstopbouw via meerdere touchpoints, n
 
 ## 5. Cadans
 
-- **Reguliere nieuwsbrief: 1x per 2 weken**, gelijk getrokken met de nieuwe blog-cadans uit [[Conversie Optimalisatie Checklist]] — content kan direct hergebruikt worden, geen dubbel werk in de planning.
-- Flows draaien automatisch/doorlopend naast de nieuwsbrief.
-- Bij te weinig content-voorraad: liever 1x per 2 weken overslaan dan een zwakke, puur promotionele mail sturen — beschermt de 70/30-balans.
+- **Reguliere nieuwsbrief: elke drie weken een waardevolle mail naar alle adressen** (Canva *MERK & STRATEGIE*). Hergebruik blogcontent uit [[Conversie Optimalisatie Checklist]] waar het past.
+- Flows (automatiseringsmails) draaien automatisch/doorlopend naast de nieuwsbrief.
+- Bij te weinig content-voorraad: liever een ronde overslaan dan een zwakke, puur promotionele mail sturen — beschermt de 70/30-balans.
 
 ---
 
 ## 6. Meten
 
-Zie [[E-mail Marketing Benchmarks]] voor de streefcijfers per flow-type. Belangrijkste om te volgen zodra er genoeg volume is:
+Zie [[E-mail Marketing Benchmarks]] voor de streefcijfers per flow-type. **Hoofd-KPI (Canva): CTR van mail naar site.** Daarnaast, zodra er genoeg volume is:
 - Open rate en click-to-open rate per segment (B2C vs. B2B apart meten — niet mengen)
 - Conversie per flow (vooral cart-recovery en herhaalaankoop-reminder)
 - Unsubscribe rate als signaal of de 70/30-balans in de praktijk klopt
@@ -104,3 +113,5 @@ Zie [[E-mail Marketing Benchmarks]] voor de streefcijfers per flow-type. Belangr
 - [[Doelgroep & Persona's]]
 - [[Content Pillars]]
 - [[Conversie Optimalisatie Checklist]] — blogplan waar de relationele content vandaan komt
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

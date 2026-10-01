@@ -23,3 +23,5 @@
   | Impact-moment voelt zwak | Ontbrekend/verkeerd getimed geluidseffect |
   | Video voelt "off-brand" | Color grade trekt naar warm i.p.v. koud |
 - Volledige uitwerking + algemene montagetheorie: `commands/video-productie.md` in HI-Grip-claude-setup
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

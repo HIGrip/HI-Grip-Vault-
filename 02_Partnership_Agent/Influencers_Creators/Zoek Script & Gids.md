@@ -40,10 +40,10 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 
 **Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
-> **Beachhead-strategie (vanaf 16-9-2026):** focus verschoven naar tennis, rugby en voetbal (zie
+> **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** kernsporten zijn tennis/padel, voetbal en rugby (zie
 > [[Evaluatiecriteria]] en [[Doelgroep & Persona's]]). **TODO:** de hashtag-configuratie hieronder
 > is de laatst bekende scriptstand (voetbal + basketbal) en moet in `ig_find_creators.py` nog worden
-> aangepast: basketbal-hashtags eruit, tennis- en rugby-hashtags (zie sport-tabellen verderop in dit
+> aangepast: basketbal-hashtags eruit, tennis-, padel- en rugby-hashtags (zie sport-tabellen verderop in dit
 > document) erin. Vergeet niet ook de bijlage-codeblock onderaan dit bestand mee te updaten.
 
 **Huidige hashtag-configuratie (voetbal + basketbal — verouderd, zie TODO hierboven):**
@@ -52,7 +52,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 - Voetbal_training: voetbaltraining, jongevoetballer, voetballife
 - Voetbal_wedstrijd: voetbalmatch, matchdaynl, voetbalwedstrijd
 - Zaalvoetbal: zaalvoetbal, futsalnederland, futsalspeler
-- ~~Basketbal: basketballnl, streetballnl, 3x3nl~~ — te vervangen door tennis + rugby hashtags (gedeprioriteerd)
+- ~~Basketbal: basketballnl, streetballnl, 3x3nl~~ — te vervangen door tennis-, padel- en rugby-hashtags (basketbal is geen kernsport)
 
 ---
 
@@ -80,7 +80,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok             | tennis vlog nl · tennis journey nederland · tennis training              |
 | Slimste plek       | Kijk wie reageert op @timtopspin / @tennistomy posts                     |
 
-### Padel — gedeprioriteerd (beachhead-strategie)
+### Padel — kernsport (tennis/padel, Canva *MERK & STRATEGIE*)
 
 | Kanaal | Zoektermen |
 |---|---|
@@ -104,7 +104,7 @@ Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisc
 | TikTok             | rugby nederland vlog · rugby training nl · rugby speler |
 | Slimste plek       | Kijk wie reageert op @prorugby_nl posts               |
 
-### Basketball — gedeprioriteerd (beachhead-strategie)
+### Basketball — geen kernsport
 
 | Kanaal             | Zoektermen                                                 |
 | ------------------ | ---------------------------------------------------------- |
@@ -2430,3 +2430,5 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

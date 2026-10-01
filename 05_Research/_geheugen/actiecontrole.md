@@ -1,5 +1,7 @@
 # Geheugen — actiecontrole
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 Zie [README](README.md) voor de geheugenregel. Afwijking: de actiecontrole maakt geen notitie en houdt geen logregel per run bij. De uitkomst per actie staat in `../_backlog/CONTROLE.json`. Dit bestand bewaart alleen wat de volgende run tokens scheelt. Houd het kort: werk bestaande regels bij in plaats van nieuwe te stapelen.
 
 ---

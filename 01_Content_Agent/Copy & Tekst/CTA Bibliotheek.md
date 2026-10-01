@@ -21,7 +21,7 @@
 ## Volgen / bereik
 
 - Volg ons voor meer.
-- Zeg HÏ tegen Grip — volg ons.
+- Word onderdeel van de Performance Academy — volg @higrip.nl.
 
 ## Community / UGC
 
@@ -55,3 +55,5 @@ Emoji's bij een CTA: spaarzaam, zie [[Emoji Gebruik Gids]] (bv. 🔗 bij een lin
 - [[Caption Gids per Platform]] — Hoe een CTA in een caption past
 - [[Hashtag Bibliotheek]] — Hashtags om te combineren met een CTA
 - [[Emoji Gebruik Gids]] — Emoji-regels
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

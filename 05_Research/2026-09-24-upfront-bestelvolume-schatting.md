@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Upfront bestelvolume-schatting (dag/week/maand/jaar)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Gevraagd: hoeveel bestellingen Upfront per dag, week, maand en jaar heeft. Upfront publiceert dat niet. Wel bekend zijn de omzet per kanaal over 2025 en een paar piekdagen, dus het volume is een schatting: online omzet gedeeld door een aangenomen gemiddelde orderwaarde (AOV).

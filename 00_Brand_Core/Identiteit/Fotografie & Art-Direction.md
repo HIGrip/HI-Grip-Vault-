@@ -1,6 +1,6 @@
 # Fotografie & Art-Direction — HÏ Grip
 
-> Hoe beeld eruitziet bij HÏ Grip. Bron: Brandbook hfst. 05. Voor de designelementen eromheen: zie [[Design Elementen]].
+> Hoe beeld eruitziet bij HÏ Grip. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 09: https://canva.link/a48n60z2ay1g7bp. Voor de designelementen eromheen: zie [[Design Elementen]].
 
 ---
 
@@ -18,7 +18,7 @@ In onze content laten we **performance** zien: snelle, scherpe, krachtige foto's
 
 ## ✕ Niet
 
-- Vlak, egaal studielicht zonder energie
+- Vlak, egaal studiolicht zonder energie
 - Gekunstelde stockfotografie of poses
 - Zachte pastelkleuren of drukke filters
 - Statisch product op witte tafel zonder context
@@ -32,3 +32,5 @@ In onze content laten we **performance** zien: snelle, scherpe, krachtige foto's
 - [[Editing Stijl Gids Video]] — Doorvertaling naar video
 - [[Stock Bronnen]] — Waar beeld vandaan komt als eigen beeld ontbreekt
 - [[Logo & Kleurenpalet]] — Kleuren en typografie in beeld
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

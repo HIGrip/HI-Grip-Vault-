@@ -40,3 +40,5 @@
 - [[Website Structuur & Sitemap]] — plek van de sportpagina's in de structuur
 - [[SEO Strategie & Keywords]]
 - [[Sportpagina Meta's (21-9-2026)]]
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — AI-search (ChatGPT Shopping draait op feeds, VS-verzending is de sleutel)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Vervolg op [[2026-09-16-growth-radar-ai-search]]: toen was Perplexity het enige AI-kanaal dat aan VS-verzending hing, nu geldt dat ook voor ChatGPT en Copilot. De feed neemt dezelfde verzendinfo over die in [[2026-09-23-seo-conversietest-run-1]] tegenstrijdig bleek.

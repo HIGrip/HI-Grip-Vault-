@@ -15,6 +15,8 @@ deadline: ""
 ---
 # SEO-regressiecheck — 15 september 2026
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Controle-run, geen onderzoek. De kritieke check (geen `aggregateRating` op enige pagina) is schoon. Alle vijf afwijkingen staan als `[regressie]`-punten op P1 in de growth-radar-backlog.

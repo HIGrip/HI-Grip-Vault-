@@ -23,3 +23,5 @@
 - [[Doelgroep & Persona's]] — Wie we met alle drie de lijnen willen bereiken
 - [[Partnership Strategie]] — Lijn A detail-aanpak
 - [[Samenwerking Strategie]] — Lijn B detail-aanpak
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

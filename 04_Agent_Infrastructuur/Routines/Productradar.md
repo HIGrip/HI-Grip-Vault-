@@ -15,7 +15,7 @@ Nieuwe productkansen vinden en onderbouwen: clubsokken met logo, kindermaten, va
 
 ## Harde grenzen
 - Alleen onderzoek en markdown. Geen producten, prijzen, kortingen of voorraad aanmaken of wijzigen in Shopify.
-- Skisokken met gelprotection zijn **uitgesteld** (zie het feitenbestand): alleen voorbereiding (vraag, timing, open vragen), nooit als content- of ad-idee.
+- Performance Ski Socks (ALPINE PRO) en Performance Tubes komen **binnenkort**, zonder datum (zie het feitenbestand): alleen voorbereiding (vraag, timing, open vragen); geen lanceringsdatum of productclaims verzinnen.
 - Marges, prijzen en maten uitsluitend uit de vault. Ontbreekt een getal? Schrijf `[ONBEKEND]` en reken niet met een gok.
 
 ## Stap 0 — Guard
@@ -55,3 +55,5 @@ Niets dat de drempel haalt? Dat is een geldige uitkomst: een korte notitie met w
 
 ## Afsluiting
 Maximaal vier regels: de sterkste kans met break-even-aantal, de voorgestelde test en wat niet lukte.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

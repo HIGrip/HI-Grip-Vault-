@@ -73,3 +73,5 @@ De `analytics-mcp`-server draait en is getest — Claude Code kan direct GA4-rap
 - [[Goedkeuringsworkflow]] — Hoe een wijziging van test-theme naar live gaat
 - [[Update Log]] — Datumgewijze log van doorgevoerde wijzigingen
 - [[Analytics & KPI Dashboard]] — GA4-cijfers en KPI-opbouw (toegang actief sinds 2026-08-30)
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

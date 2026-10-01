@@ -70,3 +70,5 @@ Dit is ook waarom de structuur uitbreidbaar moet zijn: er komt op termijn een **
 - [[Claude SEO Plugin — Skills & Agents]] — Volledige audit + actieplan (16-09-2026), bron van de correcties hierboven
 - [[Brand Identity Overview]] — Merkverhaal en positionering
 - [[Doelgroep & Persona's]] — B2C/B2B doelgroepen per sectie
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

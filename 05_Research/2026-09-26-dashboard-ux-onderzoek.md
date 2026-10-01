@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Dashboard-UX — Vandaag was overladen
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 De startpagina had veel meer dan 7 concurrerende blokken en elke actie 4–6 regels tekst. Met 35 open P1's zegt de prioriteit niets meer. Doorgevoerd in versie 26 van het dashboard.

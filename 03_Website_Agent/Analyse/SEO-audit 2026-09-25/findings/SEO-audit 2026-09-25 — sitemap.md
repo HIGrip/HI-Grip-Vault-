@@ -115,3 +115,5 @@ Given the beachhead strategy (tennis, rugby, voetbal, padel) and current flat `/
 - **Missing page (High, strategic):** No rugby landing page (`/pages/gripsokken-voor-rugby`) despite rugby being one of the 4 confirmed beachhead sports; tennis/padel/voetbal were built together on 2026-09-21 but rugby was not.
 - **Medium:** Three overlapping "shop all" URLs (`/pages/collection`, `/collections/frontpage`, `/collections/gripsokken`) with no clear differentiation.
 - **No quality-gate violations** — sport page count (3-4) is far below the 30-page warning threshold, and pages appear hand-built rather than templated/thin.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

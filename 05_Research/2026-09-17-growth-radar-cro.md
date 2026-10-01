@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — CRO (Checkout Extensibility-deadline, prijs per paar)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Twee bevindingen, beide direct gekoppeld aan bestaande P1-punten (GA4 purchase-event, gratis-verzendbalk richting 3-pack). Nieuwe backlogpunten 11 (P1) en 12 (P2) staan in de growth-radar-backlog.

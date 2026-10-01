@@ -61,3 +61,5 @@ Haal een pagina één keer op en lees gericht (reviews, niet de hele pagina). Br
 
 ## Afsluiting
 Maximaal vier regels: het sterkste thema met één citaat, het aantal nieuwe acties, en wat niet lukte.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

@@ -1,5 +1,7 @@
 # Geheugen van de routines
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 Elke routine heeft hier één geheugenbestand. Omdat het in de vault staat (git), overleeft het elke run, ook in de cloud, en kan iedereen die met de vault werkt het lezen.
 
 | Bestand | Routine |

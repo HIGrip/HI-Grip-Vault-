@@ -58,3 +58,5 @@ Harde grenzen die nooit veranderen, ook niet met deze mandaatuitbreiding: nooit 
 
 Toon/stijl: kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Merknaam altijd "HÏ Grip" (met umlaut, nooit "HI Grip" of "Hi Grip").
 ```
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

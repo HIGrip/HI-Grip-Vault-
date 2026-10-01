@@ -50,3 +50,5 @@
 - [[Partnership Strategie]] — Aanpak en volgorde
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - Lijn B staat in de map ernaast: `../Lijn B - Samenwerkingen Events/`
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

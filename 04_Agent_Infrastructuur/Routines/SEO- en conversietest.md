@@ -36,7 +36,7 @@ Voor de laatste 7 dagen, de 7 dagen daarvoor en de nulmeting (23 sep 2026):
 Welk blok aan de beurt is, staat in je geheugen. Volgorde: **B → C → D → B …**
 - **B. Producten en collecties:** SEO-titel (max 60 tekens, keyword vooraan), meta description (± 150–155 tekens), unieke beschrijving, alt-teksten, collectietekst van 150–300 woorden, complete productdata voor Google Shopping en AI-agents (merk, materiaal, kleur, maat, sport, categorie, GTIN uit de EAN-lijst), interne links.
 - **C. Content en AI-zichtbaarheid:** vragen als kop, direct antwoord in de eerste 1–2 zinnen, feiten en tabellen, E-E-A-T, content-gaten tegenover concurrenten, NL én EN.
-- **D. Conversie:** productpagina (sterren, maatgids, USP-balk, iDEAL | Wero, bestelknop op mobiel, bundels, cross-sell), vertrouwen, collectiepagina's, zakelijk-pagina, FAQ.
+- **D. Conversie:** productpagina (sterren, maatbereik consistent — géén aparte maatgids-pagina, afgewezen door Lars 28-9, USP-balk, iDEAL | Wero, bestelknop op mobiel, bundels, cross-sell), vertrouwen, collectiepagina's, zakelijk-pagina, FAQ.
 
 ## Stap 3 — Bouwen (1–3 items)
 Houd een backlog bij, gesorteerd op impact × zekerheid ÷ moeite, en voer de bovenste 1–3 items uit.
@@ -58,3 +58,5 @@ Vergelijk de KPI's van eerdere items met hun startmeting. Label: werkt / werkt n
 3. **Geheugen:** gebouwde items, lopende testplannen met evaluatiedatum en het volgende auditblok in `05_Research/_geheugen/seo-conversietest.md`.
 4. **Feiten:** vind je een afwijking tussen de site en het feitenbestand, meld die dan en werk de live-kolom bij.
 5. **Afronden:** procedure B, A3, A4, A5 en A6. Stuur daarna een melding: de eerste zin is de belangrijkste actie voor de eigenaar.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

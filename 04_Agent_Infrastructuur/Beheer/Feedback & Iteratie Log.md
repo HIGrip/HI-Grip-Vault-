@@ -140,3 +140,5 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 - [[Stappenplan — Verdere Bouw]]
 - [[Agent Hiërarchie & Structuurschema]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

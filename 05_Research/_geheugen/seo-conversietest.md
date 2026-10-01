@@ -1,5 +1,7 @@
 # Geheugen — seo-conversietest
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 Zie [README](README.md) voor de geheugenregel.
 
 Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
@@ -13,3 +15,4 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-09-28 | audit-rotatie | Blok B (producten & collecties) diep gedaan — geen nieuwe bevindingen, alles al open in de backlog; volgende run: blok C (content & AI-zichtbaarheid) | 2026-09-28-seo-conversietest-run-2
 2026-09-28 | gebouwd (concept) | Collectiebeschrijving Gripsokken herschreven (222 w.), SEO-titel/meta voor 2.0 Zwart/Wit + collecties Gripsokken en Homepage, 10 alt-tekstvoorstellen, producttype/SKU/GTIN-koppeling 2.0-varianten (bron: EAN-lijst) — alles in `seo-routine-logboek`, RUN 2 | 2026-09-28-seo-conversietest-run-2
 2026-09-28 | testplan | Maatgids gripsokken nog niet gepubliceerd — evaluatie: te vroeg | 2026-09-28-seo-conversietest-run-2
+2026-09-28 | AFGEWEZEN door Lars | Géén aparte maatgids-pagina: sokmaat = schoenmaat, dat snapt de klant zelf (het zijn sokken, geen kleding). Maatgids-concept (ID 168287863111) + testplan vervallen; niet opnieuw voorstellen, ook niet als "maatgids-link bij maatkeuze". Wel blijven melden: tegenstrijdige maatbereiken (34–39/40–46 vs 35–38/39–42/43–47, FAQ 43–46) | handmatig (Lars)

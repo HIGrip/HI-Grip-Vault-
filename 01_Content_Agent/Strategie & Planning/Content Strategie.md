@@ -4,15 +4,17 @@
 
 ---
 
-## Beachhead-strategie (vanaf 16-9-2026)
+## Leidend: Canva *MERK & STRATEGIE* (sinds 30-9-2026)
 
-> HÏ Grip focust nu op **tennis, rugby en voetbal** (de fanatieke sporter binnen deze 3 sporten — zie [[Doelgroep & Persona's]]) i.p.v. breed op alle sporten. Merkidentiteit en positionering hieronder blijven ongewijzigd; alleen welke sporten/momenten prioriteit krijgen in content verschuift.
+> Doel, kanalen en KPI's van social staan in [[Strategische Keuzes]] (tactiek 02 · socials): hoofd-KPI **engagement**, organisch daarnaast **volgers**, en doel 2031: @higrip.nl is een bekend en gewaardeerd account met een grote community (Performance Academy). Content richt zich op de HÏ Grip sporter in de kernsporten **tennis/padel, voetbal en rugby** (zie [[Doelgroep & Persona's]] en [[Beachhead Strategie]]).
+>
+> **Vaste serie:** HÏ LIGHTS OF THE WEEK (founders-journey), met daaromheen series, productcampagnes en announcements. Planning per platform: [[Platform Richtlijnen]].
 
 ---
 
 ## Positionering
 
-HÏ Grip positioneert zich als een **Nederlands performance gedreven sportswear merk** — want sporters moeten vertrouwen op hun gear en sportswear mag nooit een obstakel zijn voor presteren. We positioneren onszelf als **energiek, jong, deskundig, sportief, modern en presterend** naar sporters. Onze kernwaarden zijn **comfort, innovatie en vertrouwen** (zie [[Brand Identity Overview]]). Dit is de basis van presteren.
+HÏ Grip is een **Nederlands performance sportswear merk**: sportswear mag nooit een obstakel zijn voor presteren, het is het fundament eronder (*sportswear as the foundation of performance*). We positioneren onszelf als **energiek, jong, deskundig, sportief, modern en presterend** naar sporters. Onze kernwaarden zijn **comfort, vertrouwen en innovatie** (zie [[Brand Identity Overview]]). Primaire tagline: **Ga door waar anderen stoppen.**
 
 Content wordt beheerd en gepland via **Buffer, Canva en Adobe**.
 
@@ -20,12 +22,14 @@ Content wordt beheerd en gepland via **Buffer, Canva en Adobe**.
 
 ## Wat is performance?
 
-- Een gevoel van onsterfelijkheid
-- Doorgaan wanneer anderen stoppen
-- Resultaat behalen in de vorm van een score
-- De kortste weg vinden naar het beste resultaat
-- De uitvoering van de beste versie van jezelf
-- Wanneer je net langer doorgaat dan normaal gesproken
+- Een gevoel van onsterfelijkheid.
+- Doorgaan wanneer anderen stoppen.
+- Resultaat behalen, in de vorm van een score.
+- De kortste weg vinden naar het beste resultaat.
+- De uitvoering van de beste versie van jezelf.
+- Net langer doorgaan dan normaal.
+
+Performance is dus meer dan de winnende goal. Het is elk moment waarop iemand doorgaat waar anderen stoppen, op het veld én daarbuiten. **Die momenten zijn de brandstof voor onze content** (bron: [[Brand Identity Overview]]).
 
 ---
 
@@ -164,3 +168,5 @@ Voor de juiste tone of voice: zie [[Brand Voice & Tone of Voice]].
 - [[Muziek & Licenties]] — Muziekkeuze per contenttype
 - [[Design Elementen]] — Sjablonen en designregels achter de visuals
 - [[Fotografie & Art-Direction]] — Beeldregels per type
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

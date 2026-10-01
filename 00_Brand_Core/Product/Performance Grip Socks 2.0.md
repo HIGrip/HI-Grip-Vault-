@@ -68,6 +68,7 @@ De kolom "winst bij €17,99" in de sheet is intern — nooit afdrukken.
 | 360–498 | € 6,10 | € 6,20 |
 | 500+ | € 5,10 | € 5,80 |
 
+
 **Gepersonaliseerd** (eigen logo/kleuren) — minimaal **150 stuks**:
 
 | Aantal | Prijs p/st | Paper wrap p/st | Header card p/st |
@@ -253,3 +254,5 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 | V4 | Bewijs 95% / 1,17 | ✅ Gevonden en vastgelegd in §3 |
 | V5 | **Personalisatie-opties** | ⚠️ Deels: MOQ 150, prijzen en verpakkingen (paper wrap / header card) staan in de finance-sheet. Hoogtes, logo-technieken, stofcombinaties, kleuren-op-maat en levertijd **niet** — Lars vult die als placeholders in de brochure in (besluit 15 sep) |
 | V6 | Welke partnerlogo's mogen in print? | ✅ Alle (Lars, 15 sep) — zie §6b |
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

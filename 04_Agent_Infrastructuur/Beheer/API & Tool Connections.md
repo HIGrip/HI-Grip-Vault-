@@ -28,7 +28,7 @@
 
 **Status:** getest en werkend 2026-09-17. Geen API-key, geen account, geen kosten.
 
-**Waarvoor:** de B2B Klanten Agent bouwt hiermee lokale lijsten van tennis-, rugby- en voetbalclubs en sportwinkels (beachhead) uit OpenStreetMap-data. Pilates/sportscholen zijn gestopt (17-9).
+**Waarvoor:** de B2B Klanten Agent bouwt hiermee lokale lijsten van tennis-, padel-, rugby- en voetbalclubs en sportwinkels (kernsporten) uit OpenStreetMap-data. Pilates/sportscholen zijn gestopt (17-9).
 
 **Endpoint:** `https://overpass.kumi.systems/api/interpreter` (mirror). De hoofdserver `overpass-api.de` is regelmatig overbelast en geeft dan "server is probably too busy" — de kumi-mirror werkte tijdens de test wel.
 
@@ -286,3 +286,5 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 - [[Agent Hiërarchie & Structuurschema]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
 - [[Technische Procedures]] — De uiteindelijke werkende procedure (Shopify CLI + native login) die uit dit hele uitzoekproces kwam
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

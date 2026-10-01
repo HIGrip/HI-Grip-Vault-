@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Evaluatie routines — 25 september 2026
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Vijf automatische routines draaien voor HÏ Grip. Drie werken inhoudelijk goed, één is kapot en één mist sinds 17 september de koppeling met het dashboard. Het grootste probleem zit niet in één routine maar in het geheel: er wordt veel gevonden en weinig afgehandeld. Dezelfde bevindingen komen op meerdere plekken terug en de vaste context in de prompts veroudert.

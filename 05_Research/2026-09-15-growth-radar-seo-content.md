@@ -15,6 +15,8 @@ deadline: ""
 ---
 # Growth Radar — SEO content & keywords (FAQ rich results weg)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Eén scherpe bevinding met directe gevolgen voor een bestaand backlogpunt. Geen nieuwe acties.

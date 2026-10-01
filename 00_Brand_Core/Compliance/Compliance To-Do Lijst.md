@@ -560,3 +560,5 @@
 - [ ] Hoeveel medewerkers en welke omzet? Dit bepaalt de vrijstelling voor EAA en ESPR.
 - [ ] Naar welke landen wordt nu verkocht buiten NL?
 - [ ] Is er een bedrijfsaansprakelijkheidsverzekering met productdekking?
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Home]]

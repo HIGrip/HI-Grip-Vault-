@@ -41,7 +41,7 @@ Bron: SERP-analyse van concurrent-titels en resultaten; **geen zoekvolume, autoc
 
 ## Beachhead-strategie (vanaf 16-9-2026) — historisch, besloten 21-9 (zie boven)
 
-> HÏ Grip focust nu bewust op drie doelgroepen — fanatieke tennissers, rugbyers en voetballers (zie [[Doelgroep & Persona's]]) — en de skisokken-lancering (de reden achter het "merk-breed, geen sport-silo's"-principe hieronder) is uitgesteld (zie [[Strategische Keuzes]]). Dat verandert de oorspronkelijke afweging: **open vraag voor Lars** of tennis/rugby/voetbal nu wél eigen SEO-landingspagina's/pijlers moeten krijgen (bv. `/gripsokken-tennis`), of dat het merk-brede principe voorlopig blijft staan en alleen content/marketing (niet SEO-structuur) de 3 sporten prioriteert. Tot die keuze is gemaakt: onderstaand kernprincipe blijft leidend, met tennis/rugby/voetbal als eerste keuze zodra sport-specifieke content/long-tail wél wordt ingezet.
+> HÏ Grip focust nu bewust op drie doelgroepen — fanatieke tennis-/padelspelers, voetballers en rugbyers (zie [[Doelgroep & Persona's]]) — en de skisokken-lancering (de reden achter het "merk-breed, geen sport-silo's"-principe hieronder) staat sinds 30-9 op "binnenkort", zonder datum (zie [[Feiten & Actuele Staat]]). Dat verandert de oorspronkelijke afweging: **open vraag voor Lars** of tennis/rugby/voetbal nu wél eigen SEO-landingspagina's/pijlers moeten krijgen (bv. `/gripsokken-tennis`), of dat het merk-brede principe voorlopig blijft staan en alleen content/marketing (niet SEO-structuur) de 3 sporten prioriteert. Tot die keuze is gemaakt: onderstaand kernprincipe blijft leidend, met tennis/rugby/voetbal als eerste keuze zodra sport-specifieke content/long-tail wél wordt ingezet.
 
 ---
 

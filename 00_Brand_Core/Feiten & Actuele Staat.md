@@ -26,7 +26,7 @@ laatst-geverifieerd: 2026-09-25
 | Domein | https://www.higrip.nl (higrip.nl redirect naar www) | 2026-09-25 |
 | Shopify-winkel | `hi-grip.myshopify.com` · admin-slug `raqds3-tb` | 2026-09-23 |
 | Thema | Horizon (Online Store 2.0) | 2026-09-15 |
-| Live thema-ID | Wisselt. **Altijd `shopify theme list` draaien**, nooit een ID uit een document vertrouwen. Laatst bekend: `199814873415` (4 sep). Nooit naartoe pushen zonder opdracht van Lars. | 2026-09-04 |
+| Live thema-ID | Wisselt. **Altijd `shopify theme list` draaien**, nooit een ID uit een document vertrouwen. Laatst bekend: `201132507463` (21-9, zie [[Technische Procedures]]); `199814873415` van 4 sep is verouderd. Nooit naartoe pushen zonder opdracht van Lars. | 2026-09-04 |
 | Talen | NL (hoofd) + EN op `/en/` (sinds sep 2026, hreflang nl/en/x-default) | 2026-09-21 |
 | GA4-property | `476032345` | 2026-09-15 |
 | Search Console | Ingesteld voor higrip.nl, sitemap ingediend | 2026-09-15 |

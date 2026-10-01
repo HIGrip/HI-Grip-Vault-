@@ -42,7 +42,7 @@ bijgewerkt: 2026-10-01
 - [ ] Tekst-overlays toegevoegd (Poppins Bold, letterafstand -40)
 - [ ] Ondertitels toegevoegd indien gesproken woord aanwezig
 - [ ] Geluidseffecten op impactmomenten toegevoegd
-- [ ] HI Grip logo als afsluiter (laatste 1-2 sec)
+- [ ] HÏ Grip logo als afsluiter (laatste 1-2 sec)
 - [ ] Hele video een keer volledig terugkijken voor export
 
 ---

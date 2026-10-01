@@ -18,7 +18,7 @@ bijgewerkt: 2026-10-01
 2. Promotionele banner — "2+2 GRATIS", WK 2026-thema, tagline "Heel Nederland kijkt. Jij scoort dubbel.", CTA "Scoor nu je 2+2→"
 3. Hoe het werkt (3 stappen)
 4. Productvoordelen & Trustpilot 4,5/5
-5. Prijsopbouw: €14,99/paar, actie €29,98 voor 4 paar (normaal €59,96)
+5. Prijsopbouw (stand van de eerste baseline, **verouderd**: de actuele prijzen en verzendregels staan in [[Feiten & Actuele Staat]])
 6. Kernwaarden: Comfort, Vertrouwen, Innovatie (de merk-driehoek — zie [[Logo & Kleurenpalet]])
 7. "Ons verhaal" teaser
 8. Productshowcase

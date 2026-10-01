@@ -58,7 +58,7 @@ Het hoofdverhaal. Snel gemonteerd, harde cuts, muziek als ruggengraat.
 
 ### 3. Afsluiter (laatste 2-3 sec)
 - Brand slogan als tekst-overlay (zie [[Brand Voice & Tone of Voice]])
-- HI Grip logo fade-in op zwarte achtergrond
+- HÏ Grip logo fade-in op zwarte achtergrond
 - Optioneel: CTA tekst ("Link in bio" / "Shop nu")
 
 ---
@@ -86,7 +86,7 @@ Het hoofdverhaal. Snel gemonteerd, harde cuts, muziek als ruggengraat.
 ### Behind the Scenes
 - Laat het proces zien: verpakking, design, training, team
 - Minder gepolijst mag — authentiek gevoel past hier
-- Gebruik BTS om de menselijke kant van HI Grip te tonen
+- Gebruik BTS om de menselijke kant van HÏ Grip te tonen
 
 ---
 

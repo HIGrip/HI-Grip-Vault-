@@ -321,7 +321,7 @@ bijgewerkt: 2026-10-01
 - [ ] Bron van "95%" en "1.17" achterhalen
 - [ ] Zo nodig test laten uitvoeren
 - [ ] Goedgekeurde claimformulering vastleggen
-- [ ] "1.500+ sporters" onderbouwen
+- [ ] "3000+ sporters" onderbouwen (de oude 1.500+ en 2.000+ zijn vervangen, zie [[Feiten & Actuele Staat]])
 
 **Wat:** "95% meer grip" en "wrijvingscoëfficiënt 1.17" zijn meetbare claims en moeten bewijsbaar zijn. Zonder dossier is dit een misleidende handelspraktijk (art. 6:193a e.v. BW). Dit raakt de kernboodschap van het hele merk.
 

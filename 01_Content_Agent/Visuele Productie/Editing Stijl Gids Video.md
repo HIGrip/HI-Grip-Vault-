@@ -4,9 +4,9 @@ gebied: content-agent
 bijgewerkt: 2026-10-01
 ---
 
-# Editing Stijl Gids Video — HI Grip
+# Editing Stijl Gids Video — HÏ Grip
 
-> Hoe HI Grip video's eruit zien en aanvoelen. Referentie voor elke editor. Voor visuele brand identiteit: zie [[Logo & Kleurenpalet]].
+> Hoe HÏ Grip video's eruit zien en aanvoelen. Referentie voor elke editor. Voor visuele brand identiteit: zie [[Logo & Kleurenpalet]].
 
 ---
 
@@ -106,7 +106,7 @@ Wanneer productiecapaciteit het toelaat, bouwen we toe naar:
 - **Cinematic series** — vaste verhaalstructuur per aflevering
 - **Langere shots** met meer emotie en ademruimte
 - **Kleur als storytelling tool** — per campagne eigen kleurpalet binnen brand kleuren
-- **Professionele color grade** met LUT's specifiek voor HI Grip
+- **Professionele color grade** met LUT's specifiek voor HÏ Grip
 
 ---
 

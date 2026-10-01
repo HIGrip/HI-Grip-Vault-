@@ -39,7 +39,7 @@ Formaat: `- **Regel.** Reden. (datum, bron)`
 ## Content — Content Strategie & Planning Agent
 - **Gebruik de pillar-namen letterlijk uit Content Pillars.** Verzin geen eigen pillar. Begin Buffer-acties met `get_account`. (2026-09-17)
 - **Houd de verdeling over sporten in de gaten.** Buffer-ideeën waren 74% persoonlijk en 0 noemden tennis/rugby/voetbal. (2026-09-17)
-- **Plan geen skisokken-content zolang de lancering is uitgesteld.** (2026-09-17)
+- **Skisokken alleen als "binnenkort" noemen, zonder datum of productclaims; plan er geen eigen contentreeks voor.** (2026-09-17, bijgewerkt 2026-10-01 volgens [[Feiten & Actuele Staat]])
 
 ## Content — Caption & Copy Agent
 - **Hashtags eerst uit de Hashtag Bibliotheek.** Nederlands, je/jij; hype-adviezen uit generieke skills overrulen nooit de merkstem. (2026-09-17)

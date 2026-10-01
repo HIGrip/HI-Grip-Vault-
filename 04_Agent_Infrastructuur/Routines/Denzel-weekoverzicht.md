@@ -48,6 +48,9 @@ Dit blijft alleen beoordelen: nooit outreach versturen, nooit naar de Pipeline T
 
 ## 2c. Content Agent: wekelijks content-voorstel
 Niveau "Voorstellen, ik keur goed" (`Agent Takenverdeling & Grenzen — Content Agent.md` sectie A). Het blijft een voorstel: nooit publiceren, nooit in Buffer inplannen.
+
+**Stapelrem (nieuw 01-10-2026):** controleer eerst of er al een onbeoordeeld content-voorstel openstaat. Kijk in de acties van het vorige weekoverzicht: staat er een `- [ ] P2 · Besluit: content-voorstel week …` die nog niet afgevinkt is? Dan maak je **geen nieuw voorstel**, maar schrijf je in het weekoverzicht: "Content-voorstel van [datum] staat nog open — ter beoordeling door Tigo/Lars vóór een nieuw voorstel gemaakt wordt." Zo houdt de stapel maximaal één voorstel tegelijk. Alleen als het vorige voorstel beoordeeld is (of ouder dan 3 weken zonder reactie — dan meld je het expliciet) maak je een nieuw voorstel aan.
+
 - Denk vanuit marketing-psychology, social-content en content-strategy (vaste regel uit Brand Core).
 - Stel 3–5 concrete content-ideeën voor voor de komende 1–2 weken, passend bij de content pillars en de kalender (`01_Content_Agent/`). Focus op de beachhead-sporten.
 - Schrijf het als blok "Content-voorstel — Week [datum]": een nieuw bestand in `01_Content_Agent/Contentkalender/` als die map bestaat, anders in het weekoverzicht.
@@ -141,6 +144,7 @@ deadline: ""
    - Staat een besluit al als punt in `ACTIEBACKLOG.md`, of staat het in `CONTROLE.json` als `gedaan` of `dubbel`? Dan maak je er geen actie van.
 2. **Geheugen:** één regel per behandeld onderwerp in `05_Research/_geheugen/denzel-week.md`.
 3. **Kwaliteitsdashboard:** voeg in `04_Agent_Infrastructuur/Beheer/Agent Werk & Kwaliteit Overzicht.md` voor elke actie van deze run een rij toe bij de juiste (sub-)agent: zoekactie, beoordelingen, content-voorstel, website-stand, fix-voorbereiding. Overschrijf nooit stilzwijgend oude rijen.
+4. **Leerloop (nieuw 01-10-2026):** kijk of er deze week een patroon was dat toekomstige agents slim(mer) kan maken. Gaat iets voor de tweede keer fout, of is er een nieuwe les? Voeg dan een entry toe aan `04_Agent_Infrastructuur/Beheer/Feedback & Iteratie Log.md` (formaat: datum, patroon, wat is aangepast, why, how to apply). Eén bondig blok — geen herhaling van losse event-details. Sla deze stap over als er niets nieuws is.
 
 ## 9. Build, publish, commit
 1. `python 05_Research/_build/build_register.py`. Exit 0 is verplicht; bij een validatiefout repareer je de notitie, niet het script.

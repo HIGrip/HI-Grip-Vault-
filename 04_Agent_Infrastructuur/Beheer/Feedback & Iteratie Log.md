@@ -4,7 +4,11 @@
 
 ---
 
-## 2026-09-14 — Denzel's weekroutine deed alleen nog checken/signaleren, niet het werk waarvoor hij al mandaat had
+## 2026-10-01 — Twee structurele verbeteringen aangebracht na overzichtssessie
+
+**Wat er was:**
+
+**Patroon 1 — Content-voorstellen stapelen onbeoordeeld op.** De weekroutine maakte elke week trouw een nieuw content-voorstel (niveau \"Voorstellen, ik keur goed\"), ook als het voorstel van de week ervoor nog onbeoordeeld was. Op 01-10 stonden er twee: 21-09 (5 items) en 28-09 (4 items), samen 9 ideeën zonder beslissing van Lars. Een stapelend voorstel is slechter dan een herinnering — het verdunt de aandacht, en het signaal \"dit staat al open\" gaat verloren.\n\n**Patroon 2 — Sessie-lessen bereikten de Feedback & Iteratie Log niet.** De weekroutine had stap 8 voor geheugen en verbanden, maar geen expliciete stap om te vragen: \"wat leerden we deze week dat toekomstige agents beter maakt?\" Daardoor bleef de log alleen gevuld vanuit handmatige sessies, niet uit routinerunns.\n\n**Wat is aangepast:**\n1. **Stapelrem in stap 2c van de weekoverzicht-routine:** staat het voorstel van de vorige week nog onbeoordeeld, dan geen nieuw voorstel, maar een herinnering aan Lars met de exacte datum. Zo houdt de stapel maximaal één voorstel tegelijk.\n2. **Stap 8d toegevoegd aan de weekoverzicht-routine:** expliciete check — herhaalt een patroon zich dat al in deze log staat, of is er een nieuw patroon? Zo ja, nieuwe entry aanmaken. Routines leren nu ook actief.\n\n**Why:** voorstellen maken zonder beslissingsdruk leidt tot een groeiende stapel die uiteindelijk niemand meer aanraakt. De wekelijkse routine moet het gesprek actief houden, niet passief stapelen.\n\n**How to apply:** bij elke routine die een \"Voorstellen\"-output maakt: bouw een remregel in die controleert of de vorige ronde al beoordeeld is vóór een nieuwe gemaakt wordt. Het gaat niet om minder voorstellen — het gaat om beslissingsdruk houden.\n\n---\n\n## 2026-09-14 — Denzel's weekroutine deed alleen nog checken/signaleren, niet het werk waarvoor hij al mandaat had
 
 **Wat er gebeurde:** lars merkte dat Denzel's wekelijkse routine (`trig_01D9XwMiVvuq1FWr7CLoYTmN`) technisch prima draaide (elke maandag succesvol, pusht ook echt naar GitHub — de eerdere push-blokkade uit augustus speelt niet meer), maar inhoudelijk elke week hetzelfde deed: zelfde 3 open punten steeds opnieuw signaleren (structured data 2 weken kapot op live, SEO-meta-voorstel 4 weken op de plank, 6 partnership-kandidaten 3 weken onbeoordeeld) zonder er zelf iets mee te doen.
 

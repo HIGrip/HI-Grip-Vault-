@@ -3,8 +3,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 25 september 2026 (search-console)
-Open: 20 · Afgerond: 0 (3 opgelost, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 28 september 2026 (seo-regressiecheck)
+Open: 23 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -12,12 +12,31 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 ## P1 — Deze week
 
+### [ ] [regressie] Nieuwe /en/-homepage heeft 2× H1 en een onvertaalde hero-tekst (nieuw 28 sep 2026)
+**Waarom:** Naast de verwachte verborgen `<h1>HÏ GRIP</h1>` staat een tweede, zichtbare `<h1 class="sl-teaser__title">HÏ Grip Performance Gripsokken voor Sporters</h1>` — nog in het Nederlands, niet vertaald. Exact hetzelfde bugpatroon als de NL-homepage vóór 15 september (toen opgelost). De EN-title is bovendien nog steeds enkel "HÏ Grip" (al bekend, apart open punt hieronder).
+**Waar:** `https://www.higrip.nl/en/`
+**Wat:** De verborgen H1 naar een `<span>`/`<p>` wijzigen (zoals eerder op de NL-homepage) en de zichtbare hero-tekst naar het Engels vertalen.
+**Gevonden op:** 28 september 2026 (regressiecheck)
+
+### [ ] [regressie] Nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude beleidspagina's tegen (nieuw 28 sep 2026)
+**Waarom:** Deze week verschenen drie nieuwe pagina's (`/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`) die het besluit van Lars van 25 sep lijken te verwerken, maar dat nog niet volledig doen: `/pages/verzendbeleid` noemt nergens de verzendkosten (€4,50) of de gratis-verzenddrempel (€35); `/pages/retourbeleid` heeft de termijn wel naar 30 dagen gecorrigeerd, maar rekent nog steeds 25% herbevoorradingskosten en eist het product "ongeopend" terug — in strijd met de geest van het besluit en met het juridische risico dat al in de Compliance To-Do Lijst §4.2 staat. Tegelijk bestaan `/policies/refund-policy` (14 dagen, 25%), `/policies/shipping-policy` ("vóór 16:00") en `/policies/terms-of-service` (€4,25) gewoon door met de oude waarden: er zijn nu twee parallelle bronnen voor dezelfde informatie. De vervallen homepage-belofte "vóór 22:00 vandaag verzonden" staat via een gedeelde metafield ook op meerdere van deze pagina's.
+**Waar:** `/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`, `/policies/refund-policy`, `/policies/shipping-policy`, `/policies/terms-of-service`
+**Wat:** Eén bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de "ongeopend"-eis uit het retourbeleid halen, verzendkosten/-drempel op `/pages/verzendbeleid` zetten, en de 22:00-metatekst overal vervangen.
+**Gevonden op:** 28 september 2026 (regressiecheck)
+
+### [ ] [regressie] /collections/frontpage heeft geen meta description (nieuw 28 sep 2026)
+**Waarom:** 0 `<meta name="description">`-tags gevonden. Mogelijk dezelfde oorzaak als het al openstaande punt over `/collections/all` hieronder, maar een andere, nog niet eerder gemelde URL.
+**Waar:** `/collections/frontpage`
+**Wat:** Beschrijving toevoegen via Shopify admin → SEO-instellingen van de collectiepagina.
+**Gevonden op:** 28 september 2026 (regressiecheck)
+
 ### [x] ~~[regressie] Oude productpagina's kannibaliseren nog het hoofdkeyword~~ — opgelost, canonical URL wel gewijzigd (bijgewerkt 21 sep 2026)
 **Wat er is gebeurd:** De productpagina-handle is sindsdien veranderd: het hoofdproduct heet nu `/products/performance-gripsokken` (was `/products/hi-grip-gripsokken-1`), en de twee oude URL's zijn mee omgenoemd naar `/products/performance-gripsokken-2-0-zwart` en `-wit`. Alle drie de eerder gemelde oude adressen (`hi-grip-gripsokken-1`, `performance-grip-socks-2-0-zwart`, `-wit`) geven nu automatisch een redirect naar hun nieuwe tegenhanger — geverifieerd met een `fetch`-test op 21 september 2026, canonical-tag op de live pagina klopt.
 **Let op:** De canonical handle in je eigen documentatie (projectgeheugen, theme-editor preview-links, mobiel-testinstructies) verwijst nog overal naar het oude `hi-grip-gripsokken-1`. Die links werken dankzij de redirect nog wel, maar zijn niet meer accuraat.
 **Gevonden op:** 15 september 2026 (regressiecheck), opgelost/herzien 21 september 2026 (SEO-technisch)
 
-### [ ] [regressie] GA4 key event voor `purchase` staat nog steeds uit
+### [x] [regressie] GA4 key event voor `purchase` staat nog steeds uit
+**Bevestigd:** 25 september 2026 door actiecontrole — GA4 Admin API (google_data.py keyevents): purchase is key event sinds 2025-02-03 (ONCE_PER_EVENT); 28 dagen t/m 24-09: 3 purchase-events, keyEvents 3.
 **Waarom:** `keyEvents = 0` op elk kanaal, deze en vorige week. Blokkeert elke CRO-uitspraak (zie ook projectgeheugen, actie #1 uit de audit).
 **Waar:** GA4-property 476032345 → Admin → Events
 **Wat:** `purchase` markeren als key event.
@@ -81,6 +100,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Shopify Merchant Center-feedinstellingen
 **Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.
 **Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).
+**Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
 **Inspanning:** 2 uur
 
 ---
@@ -186,3 +206,12 @@ Elke ochtend leest de routine dit bestand voordat hij nieuw onderzoek doet:
 - Al opgeschreven punten worden **niet opnieuw voorgesteld** in een andere formulering.
 - Nieuwe vondsten worden hier toegevoegd, met prioriteit — niet alleen in het dagrapport.
 - Als nieuw onderzoek een bestaand punt tegenspreekt of achterhaalt, wordt dat punt bijgewerkt of doorgestreept, met vermelding waarom.
+
+## Weekonderhoud (Growth Radar, elke zondag)
+
+**27 sep 2026:** 20 open punten (backlog, `dubbel` niet meegeteld) — meer dan de 15 uit de vuistregel. Geen enkel P1-punt staat al drie weken zonder beweging (oudste dateert van 15 sep, 12 dagen). Kandidaten om samen te voegen of te schrappen, ter beoordeling:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): beide wijzigen dezelfde sectie (`snippets/product-information-content.liquid`, direct bij de pack-selector) en raken dezelfde beslissing (prijsweergave 1-/3-/5-pack). Kandidaat om als één implementatiepunt te draaien.
+- **Punt 8** (Perplexity, wacht op VS-verzendbeslissing) **+ punt 13** (TikTok Shop, expliciet "of gecombineerd met punt 9") **+ punt 9** (creators, wacht op punt 13) **+ punt 10** (CAPI, wacht op budgetbeslissing): vier los genoteerde P2/P3-punten die allemaal op dezelfde soort besluit wachten (kanaal- of budgetkeuze). Kandidaat om te bundelen tot één `Besluit:`-punt voor Lars, met de vier uitwerkingen als sub-stappen zodra de keuze valt.
+Niet zelf samengevoegd — dat wijzigt koppen en dus actie-id's; ter beoordeling aan Lars via het dashboard.
+
+**Toegang:** De `ArtifactData`-database van het dashboard (collecties `status/checks/aantekeningen/beheer/nieuwe_acties/opdrachten/kansen`) is deze run niet leesbaar voor deze cloudsessie ("shared with you from another organization" — geen db-toegang voor uitgenodigde editors). Stap B (dashboard → vault) kon dus niet draaien; build en publish zijn wel gedaan vanuit de bestaande vaultstand.

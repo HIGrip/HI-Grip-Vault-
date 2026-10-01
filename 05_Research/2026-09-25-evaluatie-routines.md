@@ -8,7 +8,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "Van de vijf routines leveren Growth Radar, regressiecheck en de SEO-conversietest bruikbaar werk; de cloud-routine \"website\" faalt elke nacht (higrip.nl geblokkeerd, geen Shopify) en herhaalt foute claims, en Denzel schrijft nog naar de oude map zodat het weekoverzicht niet op het dashboard komt. Grootste systeemprobleem: acties landen op drie plekken en de backlog groeit (18 open, 0 afgerond) zonder dat er iets wordt afgevinkt."
-gerelateerd: [2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-14-weekoverzicht, 2026-09-25-growth-radar-social, 2026-09-21-weekoverzicht]
+gerelateerd: [2026-09-16-seo-onderzoek-cloud-routine-website, 2026-09-23-seo-conversietest-run-1, 2026-09-21-regressiecheck, 2026-09-14-weekoverzicht, 2026-09-25-growth-radar-social, 2026-09-21-weekoverzicht, 2026-09-28-seo-conversietest-run-2]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -49,13 +49,13 @@ Vijf automatische routines draaien voor HÏ Grip. Drie werken inhoudelijk goed, 
 - **Kleine slordigheden.** De taaknaam `website-seo-en-cconversietest` heeft een typfout. Bij de conversietest is de description "analyseer de HÏ Grip website op  SEO- en conversie" niet informatief.
 
 ## Acties
-- [ ] P1 · Cloud-routine "website" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang
-- [ ] P1 · Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren
-- [ ] P2 · Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt
-- [ ] P2 · Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen
+- [x] P1 · Cloud-routine "website" (trig_01BKt9WCeR9H92FDcS9HtPvV) uitzetten — de SEO-conversietest dekt dit met echte Shopify-toegang
+- [x] P1 · Denzel-routineprompt stap 9 handmatig doorvoeren op het account waar de routine draait, en Week 2026-09-21 als notitie naar 05_Research migreren
+- [x] P2 · Vaste context (prijzen, sporters-claim, verzenddrempel, product-handle, URL-lijst regressiecheck) uit de prompts halen en naar één feitenbestand laten verwijzen dat na elke wijziging wordt bijgewerkt
+- [x] P2 · Technische SEO-check op maandag bij één routine beleggen (regressiecheck) en uit Denzel en de Growth Radar-maandagfocus halen
 - [ ] P2 · Eén backlog: aanbevelingen uit het Shopify-logboek en de Denzel-beslissingen spiegelen naar ACTIEBACKLOG.md of andersom, met één eigenaar
 - [ ] P2 · Vast wekelijks afvinkmoment voor de eigenaar invoeren (bijv. maandag na Denzel), anders de instroom van de Growth Radar verlagen naar max. 1–2 punten per dag
-- [ ] P3 · Tijden en titels rechtzetten: Growth Radar-titel "08:00" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest
+- [x] P3 · Tijden en titels rechtzetten: Growth Radar-titel "08:00" versus cron 05:30, volgorde met de regressiecheck, typfout in de taaknaam van de conversietest
 
 ## Bronnen
 - `mcp__scheduled-tasks` — lijst en runs van de drie lokale taken (opgevraagd op 25 sep 2026)

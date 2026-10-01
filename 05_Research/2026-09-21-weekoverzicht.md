@@ -5,10 +5,10 @@ datum: 2026-09-21
 bron: routine
 routine: "denzel-week"
 categorie: SEO
-status: nieuw
+status: gearchiveerd
 prioriteit: P1
 samenvatting: "De €0-week is doorbroken met 2 orders (€26,25), maar het echte Nederlandse verkeer daalde 22%: de groei is botverkeer uit de VS/China. WebSite- en FAQPage-schema staan 3 weken op rij niet live en de live FAQ spreekt de bevestigde waarden tegen (16:00/14 dagen/€30 i.p.v. 22:00/30 dagen/€35); het herstelpakket ligt klaar in het werkthema."
-gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines]
+gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines, 2026-09-28-weekoverzicht]
 vervangt: [2026-09-14-weekoverzicht]
 bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-09-21.md"
 deadline: ""
@@ -182,7 +182,7 @@ Google organic **daalde** dus; het is wel de bron van 1 van de 2 orders. Instagr
 ## Acties
 - [ ] P1 · Structured data-herstelpakket van 17-09 uit het werkthema naar live kopiëren (thema-ID eerst verifiëren met shopify theme list)
 - [ ] P1 · Live FAQ-tekst en beleid gelijktrekken met de vastgestelde waarden (besluit Lars 25-09): binnen 1 werkdag verzonden, €4,50 verzendkosten, gratis vanaf €35, 30 dagen retour
-- [ ] P2 · Homepage-title en meta description doorvoeren (kant-en-klare HTML in dit overzicht)
+- [x] P2 · Homepage-title en meta description doorvoeren (kant-en-klare HTML in dit overzicht)
 - [ ] P2 · Checkout begin_checkout → purchase onderzoeken met een testbestelling op mobiel, en botverkeer (VS/China Direct) uit de GA4-rapportage filteren
 - [ ] P2 · Outreach-besluit nemen over Powerleague Rotterdam en Panna Knock Out
 - [ ] P2 · Contactpersonen zoeken voor de 8 tennisretailers

@@ -14,7 +14,7 @@ Elke week de vindbaarheid (Google én AI-zoekmachines) en de conversie van higri
 ## Stap 0 — Lees eerst
 1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Product/Performance Grip Socks 2.0.md`. Dit is de enige bron voor prijzen, maten, claims en verzendregels.
 2. `05_Research/_geheugen/seo-conversietest.md`: wat is gebouwd, welke testplannen lopen, welk auditblok is aan de beurt.
-3. De nieuwste `*-regressiecheck.md` in `05_Research/` en `05_Research/_backlog/ACTIEBACKLOG.md`.
+3. De nieuwste `*-regressiecheck.md` in `05_Research/`, `05_Research/_backlog/ACTIEBACKLOG.md` en `05_Research/_backlog/CONTROLE.json` (wat de actiecontrole als gedaan, open, handmatig of dubbel heeft vastgelegd). Lees dat vóór je acties voorstelt. Je vinkt zelf niets af.
 4. Het Shopify-logboek. Bestaat het niet, maak het dan aan als verborgen pagina.
 
 ## Harde regels
@@ -48,13 +48,13 @@ Houd een backlog bij, gesorteerd op impact × zekerheid ÷ moeite, en voer de bo
 Vergelijk de KPI's van eerdere items met hun startmeting. Label: werkt / werkt niet / te vroeg / te weinig data. Werkt iets niet, stel dan een aanpassing of terugdraaien voor.
 
 ## Stap 5 — Output
-1. **Notitie** `05_Research/JJJJ-MM-DD-seo-conversietest-run-<n>.md`: `bron: routine`, `routine: seo-conversietest`, `bronbestand` = de admin-URL van het logboek. Inhoud:
+1. **Notitie** `05_Research/JJJJ-MM-DD-seo-conversietest-run-<n>.md`: `bron: routine`, `routine: seo-conversietest`, `bronbestand` = de admin-URL van het logboek. Volg het sjabloon in `PROCEDURE.md` (`kerntitel`, `## Kerncijfers` met de belangrijkste KPI's, vaste volgorde). Inhoud:
    - samenvatting in 3 zinnen
    - KPI-tabel (deze week, vorige week, nulmeting, verschil)
    - wat er is gemaakt of voorgesteld, met admin-links
    - resultaten van eerdere tests
    - wat de eigenaar zelf moet doen
-2. **Backlog:** aanbevelingen die de eigenaar moet uitvoeren gaan als `### [ ] [conversietest] …` in `05_Research/_backlog/ACTIEBACKLOG.md`. Zo is er één backlog. Nooit dupliceren met bestaande punten.
+2. **Backlog:** aanbevelingen die de eigenaar moet uitvoeren gaan als `### [ ] [conversietest] …` in `05_Research/_backlog/ACTIEBACKLOG.md`. Zo is er één backlog. Nooit dupliceren met bestaande punten of met wat in `CONTROLE.json` als `gedaan` of `dubbel` staat. Werk daarna de tellerregel bij met `python 05_Research/_tools/acties.py kop --door seo-conversietest`.
 3. **Geheugen:** gebouwde items, lopende testplannen met evaluatiedatum en het volgende auditblok in `05_Research/_geheugen/seo-conversietest.md`.
 4. **Feiten:** vind je een afwijking tussen de site en het feitenbestand, meld die dan en werk de live-kolom bij.
 5. **Afronden:** procedure B, A3, A4, A5 en A6. Stuur daarna een melding: de eerste zin is de belangrijkste actie voor de eigenaar.

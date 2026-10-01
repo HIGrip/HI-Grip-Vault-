@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """Build het research-register voor het HÏ Grip Research Dashboard.
 
-Leest alle notities in 05_Research\\*.md plus de growth-radar-backlog, valideert
-ze en schrijft register.js (window.HI_RESEARCH). Alleen stdlib, Python 3.
+Leest alle notities in 05_Research\\*.md plus de actiebacklog en (optioneel) de
+uitkomsten van de actiecontrole in _backlog\\CONTROLE.json, het werk vanuit het dashboard
+(_backlog\\BEHEER.json, OPDRACHTEN.json, UITVOERBAAR.json) en de databestanden in _data\\,
+valideert ze en schrijft register.js (window.HI_RESEARCH). Alleen stdlib, Python 3.
 
     python build_register.py          # valideren + bouwen
     python build_register.py --check  # alleen valideren
 
 Deterministisch: dezelfde input geeft dezelfde output, op `gebouwd` na.
+05_Research\\_tools\\acties.py importeert de parse-functies hieruit.
 """
 
 import hashlib
@@ -23,6 +26,14 @@ VAULT = Path(__file__).resolve().parents[2]
 RESEARCH_DIR = VAULT / "05_Research"
 # Sinds 25-09-2026 in de vault, zodat ook cloudroutines de backlog kunnen bijwerken
 BACKLOG_PATH = RESEARCH_DIR / "_backlog" / "ACTIEBACKLOG.md"
+AFGEROND_PATH = RESEARCH_DIR / "_backlog" / "AFGEROND.md"
+CONTROLE_PATH = RESEARCH_DIR / "_backlog" / "CONTROLE.json"
+BEHEER_PATH = RESEARCH_DIR / "_backlog" / "BEHEER.json"
+OPDRACHTEN_PATH = RESEARCH_DIR / "_backlog" / "OPDRACHTEN.json"
+UITVOERBAAR_PATH = RESEARCH_DIR / "_backlog" / "UITVOERBAAR.json"
+DATA_DIR = RESEARCH_DIR / "_data"
+# Machinaal geschreven databestanden: ontbreken of kapot → null in het register, geen buildfout
+DATA_BESTANDEN = ("instellingen", "kpi", "agenda", "cwv", "koppelingen", "shopify", "sync")
 OUTPUT_PATH = RESEARCH_DIR / "_build" / "register.js"
 KAART_PATH = RESEARCH_DIR / "Waar staat wat.md"
 GITHUB_BRANCH = "HÏ-Grip-Vault-obsidian"
@@ -37,7 +48,8 @@ REQUIRED_KEYS = [
 ALLOWED = {
     "bron": {"los", "routine"},
     "routine": {"", "growth-radar", "seo-regressiecheck", "denzel-week", "seo-conversietest",
-                "search-console", "backlinks-merchant", "strategie-maand", "concurrentie"},
+                "search-console", "backlinks-merchant", "strategie-maand", "concurrentie",
+                "klantstem", "productradar", "materialen", "website-ux", "verbanden"},
     "categorie": {"SEO", "CRO", "Social", "Product", "B2B", "Merk", "Compliance", "Techniek"},
     "status": {"nieuw", "bekeken", "in-uitvoering", "verwerkt", "gearchiveerd"},
     "prioriteit": {"P1", "P2", "P3"},
@@ -46,6 +58,17 @@ LIST_KEYS = {"gerelateerd", "vervangt"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-[a-z0-9][a-z0-9-]*$")
 ACTION_RE = re.compile(r"^- \[( |x)\] (P[123]) · (.+?)\s*$")
+BACKLOG_KOP_RE = re.compile(r"^### \[( |x)\] (.+?)\s*$")
+KERNCIJFER_RE = re.compile(r"^- \*\*(.+?)\*\* · (.+?)(?: · (.+?))?\s*$")
+KERNTITEL_MAX = 90
+UITKOMSTEN = ("gedaan", "open", "handmatig", "dubbel")
+METHODEN = ("site", "ga4", "gsc", "shopify", "vault", "geen")
+PRIORITEITEN = ("P1", "P2", "P3")
+KANS_STATUS = ("oppakken", "parkeren", "afwijzen")
+OPDRACHT_STATUS = ("goedgekeurd", "bezig", "klaar", "mislukt", "geweigerd")
+UITVOERBAAR_WAARDEN = ("ja", "deels", "nee")
+KANS_RE = re.compile(r"^- \[K\] (.+?) · impact: (hoog|middel|laag) · bewijs: (.+?) · stap: (.+?)\s*$")
+WAT_NIET_LUKTE_MAX = 400
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]")
 
 
@@ -126,6 +149,9 @@ def validate_meta(meta: dict, stem: str, name: str):
     for key in ("titel", "samenvatting"):
         if not meta[key].strip():
             raise BuildError(f"{name}: '{key}' is leeg")
+    kerntitel = meta.get("kerntitel", "").strip()  # optioneel, oude notities hebben hem niet
+    if len(kerntitel) > KERNTITEL_MAX:
+        raise BuildError(f"{name}: kerntitel is {len(kerntitel)} tekens, maximaal {KERNTITEL_MAX}")
     for d in (meta["datum"], meta["deadline"]):
         if d:
             try:
@@ -184,17 +210,23 @@ def short_hash(text: str) -> str:
     return hashlib.sha1(normalize(text).encode("utf-8")).hexdigest()[:8]
 
 
+def section_indices(lines: list, heading: str):
+    """Regelnummers onder een '## heading' tot de volgende '## ', of None als de kop ontbreekt."""
+    out, inside, found = [], False, False
+    for i, line in enumerate(lines):
+        if line.startswith("## "):
+            inside = line[3:].strip().lower() == heading.lower()
+            found = found or inside
+            continue
+        if inside:
+            out.append(i)
+    return out if found else None
+
+
 def section(body: str, heading: str) -> str:
     """Tekst onder een '## heading' tot de volgende '## '."""
     lines = body.splitlines()
-    out, inside = [], False
-    for line in lines:
-        if line.startswith("## "):
-            inside = line[3:].strip().lower() == heading.lower()
-            continue
-        if inside:
-            out.append(line)
-    return "\n".join(out)
+    return "\n".join(lines[i] for i in section_indices(lines, heading) or [])
 
 
 def parse_actions(body: str, note_id: str, name: str) -> list:
@@ -218,45 +250,316 @@ def parse_actions(body: str, note_id: str, name: str) -> list:
     return acties
 
 
+def parse_kerncijfers(body: str, name: str) -> list:
+    """Optionele sectie '## Kerncijfers' met regels '- **139** · Klikken (28 dagen) · +139,7%'."""
+    lines = body.splitlines()
+    idx = section_indices(lines, "Kerncijfers")
+    if idx is None:
+        return []
+    cijfers = []
+    for i in idx:
+        line = lines[i]
+        if not line.strip():
+            continue
+        m = KERNCIJFER_RE.match(line)
+        if not m:
+            raise BuildError(f"{name}: kerncijfer past niet in het formaat "
+                             f"'- **139** · Klikken (28 dagen) · +139,7%' (verschil optioneel) → {line!r}")
+        cijfers.append({"waarde": m.group(1).strip(), "label": m.group(2).strip(),
+                        "verschil": (m.group(3) or "").strip()})
+    if not cijfers:
+        raise BuildError(f"{name}: sectie '## Kerncijfers' is leeg — vul 2–4 cijfers in of haal de kop weg")
+    if not 2 <= len(cijfers) <= 4:
+        print(f"waarschuwing: {name}: {len(cijfers)} kerncijfers, het sjabloon vraagt 2–4", file=sys.stderr)
+    return cijfers
+
+
+def parse_kansen(body: str, note_id: str, name: str) -> list:
+    """Optionele sectie '## Kansen': '- [K] titel · impact: hoog · bewijs: <id>, <id> · stap: …'."""
+    lines = body.splitlines()
+    kansen = []
+    for i in section_indices(lines, "Kansen") or []:
+        line = lines[i]
+        if not line.strip():
+            continue
+        m = KANS_RE.match(line)
+        if not m:
+            raise BuildError(f"{name}: kans past niet in het formaat '- [K] <titel> · impact: hoog|middel|laag "
+                             f"· bewijs: <note-id>, <note-id> · stap: <eerste stap>' → {line!r}")
+        bewijs = [b.strip() for b in m.group(3).split(",")]
+        if not all(bewijs):
+            raise BuildError(f"{name}: kans met lege bewijs-verwijzing → {line!r}")
+        titel = m.group(1).strip()
+        kansen.append({"id": f"{note_id}#k{short_hash(titel)}", "titel": titel, "impact": m.group(2),
+                       "bewijs": bewijs, "stap": m.group(4).strip()})
+    ids = [k["id"] for k in kansen]
+    if len(ids) != len(set(ids)):
+        raise BuildError(f"{name}: twee kansen met dezelfde titel")
+    return kansen
+
+
+def wat_niet_lukte(body: str) -> str:
+    """Platte tekst onder '## Wat niet lukte', ingekort tot WAT_NIET_LUKTE_MAX tekens."""
+    tekst = WIKILINK_RE.sub(lambda m: (m.group(2) or m.group(1).rsplit("/", 1)[-1]).strip(),
+                            section(body, "Wat niet lukte")).strip()
+    if len(tekst) > WAT_NIET_LUKTE_MAX:
+        tekst = tekst[:WAT_NIET_LUKTE_MAX - 1].rstrip() + "…"
+    return tekst
+
+
 # ── Backlog ────────────────────────────────────────────────────────────────────
 BACKLOG_FIELDS = ("Waarom", "Waar", "Wat", "Gevonden op")
+
+
+def scan_backlog(lines: list) -> list:
+    """Backlog-items als (kopregel, eindregel exclusief, prioriteit, afgevinkt, kop).
+
+    Alleen '### [ ] kop' onder een '## P1/P2/P3'-sectie telt; een item loopt tot de
+    volgende kop of de volgende '## '-sectie."""
+    items, prio = [], None
+    for i, line in enumerate(lines):
+        if line.startswith("## "):
+            m = re.match(r"^## (P[123])\b", line)
+            prio = m.group(1) if m else None
+            if items and items[-1][1] is None:
+                items[-1][1] = i
+            continue
+        m = BACKLOG_KOP_RE.match(line)
+        if m and prio:
+            if items and items[-1][1] is None:
+                items[-1][1] = i
+            items.append([i, None, prio, m.group(1) == "x", m.group(2)])
+    if items and items[-1][1] is None:
+        items[-1][1] = len(lines)
+    return [tuple(item) for item in items]
+
+
+def backlog_id(kop: str) -> str:
+    return "backlog#" + short_hash(kop)
 
 
 def parse_backlog(path: Path) -> list:
     if not path.exists():
         print(f"waarschuwing: backlog niet gevonden op {path} — backlog blijft leeg", file=sys.stderr)
         return []
-    items, current, prio = [], None, None
-    for line in path.read_text(encoding="utf-8").splitlines():
-        m = re.match(r"^## (P[123])\b", line)
-        if m:
-            prio = m.group(1)
-            current = None
-            continue
-        if line.startswith("## "):
-            prio, current = None, None
-            continue
-        m = re.match(r"^### \[( |x)\] (.+?)\s*$", line)
-        if m and prio:
-            kop = m.group(2)
-            current = {
-                "id": "backlog#" + short_hash(kop),
-                "kop": kop,
-                "prioriteit": prio,
-                "afgevinkt": m.group(1) == "x",
-                "velden": {},
-                "body_md": "",
-            }
-            items.append(current)
-            continue
-        if current is not None:
-            current["body_md"] += line + "\n"
+    lines = path.read_text(encoding="utf-8").splitlines()
+    items = []
+    for start, end, prio, afgevinkt, kop in scan_backlog(lines):
+        velden = {}
+        for line in lines[start + 1:end]:
             m = re.match(r"^\*\*(Waarom|Waar|Wat|Gevonden op):\*\*\s*(.*)$", line)
             if m:
-                current["velden"][m.group(1)] = m.group(2).strip()
-    for item in items:
-        item["body_md"] = item["body_md"].strip("\n")
+                velden[m.group(1)] = m.group(2).strip()
+        items.append({
+            "id": backlog_id(kop),
+            "kop": kop,
+            "prioriteit": prio,
+            "afgevinkt": afgevinkt,
+            "velden": velden,
+            "body_md": "".join(line + "\n" for line in lines[start + 1:end]).strip("\n"),
+        })
     return items
+
+
+# ── Actiecontrole (CONTROLE.json) ──────────────────────────────────────────────
+def alle_acties(notities: list, backlog: list, ook_gearchiveerd: bool = False):
+    """(bron, bron_titel, actie): eerst de backlog, dan notitie-acties (standaard zonder gearchiveerde notities)."""
+    for item in backlog:
+        yield "backlog", "Actiebacklog", item
+    for n in notities:
+        if ook_gearchiveerd or n["status"] != "gearchiveerd":
+            for actie in n["acties"]:
+                yield n["id"], n["titel"], actie
+
+
+def load_controle(path: Path = CONTROLE_PATH):
+    """Inhoud van CONTROLE.json, of None als de actiecontrole nog nooit gedraaid heeft."""
+    if not path.exists():
+        return None
+    name = path.name
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        raise BuildError(f"{name}: geen geldige JSON ({e})")
+    if not (isinstance(data, dict) and isinstance(data.get("resultaten"), dict)
+            and isinstance(data.get("runs"), list)):
+        raise BuildError(f"{name}: verwacht een object met 'resultaten' {{…}} en 'runs' […]")
+    for key in ("laatste_run", "volgende_run"):
+        if not isinstance(data.get(key, ""), str):
+            raise BuildError(f"{name}: '{key}' moet een string zijn")
+    if data.get("laatste_run"):
+        try:
+            datetime.fromisoformat(data["laatste_run"])
+        except ValueError:
+            raise BuildError(f"{name}: laatste_run {data['laatste_run']!r} is geen ISO-tijdstip")
+    for d in data["runs"]:
+        if not (isinstance(d, str) and DATE_RE.match(d)):
+            raise BuildError(f"{name}: runs bevat {d!r}, verwacht JJJJ-MM-DD")
+    for aid, r in data["resultaten"].items():
+        if not isinstance(r, dict):
+            raise BuildError(f"{name}: resultaat van {aid} is geen object")
+        if r.get("uitkomst") not in UITKOMSTEN:
+            raise BuildError(f"{name}: {aid}: uitkomst {r.get('uitkomst')!r}, toegestaan: {list(UITKOMSTEN)}")
+        if r.get("methode") not in METHODEN:
+            raise BuildError(f"{name}: {aid}: methode {r.get('methode')!r}, toegestaan: {list(METHODEN)}")
+        if not DATE_RE.match(str(r.get("gecontroleerd", ""))):
+            raise BuildError(f"{name}: {aid}: gecontroleerd moet JJJJ-MM-DD zijn")
+        if r["uitkomst"] == "gedaan" and not DATE_RE.match(str(r.get("sinds", ""))):
+            raise BuildError(f"{name}: {aid}: 'gedaan' vereist sinds (JJJJ-MM-DD)")
+        if r["uitkomst"] == "dubbel" and not r.get("dubbel_van"):
+            raise BuildError(f"{name}: {aid}: 'dubbel' vereist dubbel_van")
+    return data
+
+
+def koppel_controle(notities: list, backlog: list, controle):
+    """Zet `controle` op elke actie en elk backlog-item; geeft de top-level samenvatting (of None)."""
+    resultaten = controle["resultaten"] if controle else {}
+    bekend = set()
+    for _, _, actie in alle_acties(notities, backlog, ook_gearchiveerd=True):
+        actie["controle"] = resultaten.get(actie["id"])
+        bekend.add(actie["id"])
+    if controle is None:
+        return None
+
+    onbekend = sorted(set(resultaten) - bekend)
+    if onbekend:
+        print(f"waarschuwing: {CONTROLE_PATH.name} noemt {len(onbekend)} onbekende actie(s): "
+              f"{', '.join(onbekend)}", file=sys.stderr)
+    for aid, r in sorted(resultaten.items()):
+        if r.get("dubbel_van") and r["dubbel_van"] not in bekend:
+            print(f"waarschuwing: {aid} is dubbel van onbekende actie {r['dubbel_van']}", file=sys.stderr)
+
+    # gedaan telt altijd; de rest alleen zolang de actie nog open staat
+    telling = dict.fromkeys(UITKOMSTEN + ("ongecontroleerd",), 0)
+    for _, _, actie in alle_acties(notities, backlog):
+        r = actie["controle"]
+        if r and r["uitkomst"] == "gedaan":
+            telling["gedaan"] += 1
+        elif not actie["afgevinkt"]:
+            telling[r["uitkomst"] if r else "ongecontroleerd"] += 1
+
+    dag = controle.get("laatste_run", "")[:10]
+    vandaag = sorted(aid for aid, r in resultaten.items()
+                     if dag and aid in bekend and r["uitkomst"] == "gedaan" and r.get("sinds") == dag)
+    return {
+        "laatste_run": controle.get("laatste_run", ""),
+        "volgende_run": controle.get("volgende_run", ""),
+        "runs": controle["runs"],
+        "telling": telling,
+        "vandaag_gedaan": vandaag,
+    }
+
+
+# ── Werk vanuit het dashboard (BEHEER / OPDRACHTEN / UITVOERBAAR) en _data ─────
+def load_json_object(path: Path):
+    """JSON-object uit de vault, of None als het bestand ontbreekt. Kapot = BuildError."""
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        raise BuildError(f"{path.name}: geen geldige JSON ({e})")
+    if not isinstance(data, dict):
+        raise BuildError(f"{path.name}: verwacht een JSON-object")
+    return data
+
+
+def _check_datum(waarde, wat: str):
+    if not (isinstance(waarde, str) and DATE_RE.match(waarde)):
+        raise BuildError(f"{wat}: verwacht JJJJ-MM-DD, kreeg {waarde!r}")
+
+
+def load_beheer(path: Path = BEHEER_PATH) -> dict:
+    data = load_json_object(path) or {}
+    acties, kansen = data.get("acties", {}), data.get("kansen", {})
+    if not (isinstance(acties, dict) and isinstance(kansen, dict)):
+        raise BuildError(f"{path.name}: 'acties' en 'kansen' moeten objecten zijn")
+    for aid, b in acties.items():
+        wat = f"{path.name}: acties.{aid}"
+        if not isinstance(b, dict):
+            raise BuildError(f"{wat} is geen object")
+        if "prioriteit" in b and b["prioriteit"] not in PRIORITEITEN:
+            raise BuildError(f"{wat}: prioriteit {b['prioriteit']!r}, toegestaan: {list(PRIORITEITEN)}")
+        if b.get("uitgesteld_tot") is not None:
+            _check_datum(b["uitgesteld_tot"], f"{wat}.uitgesteld_tot")
+        nd = b.get("niet_doen")
+        if nd is not None and not (isinstance(nd, dict) and isinstance(nd.get("reden"), str)):
+            raise BuildError(f"{wat}: niet_doen moet {{reden, door, datum}} of null zijn")
+    for kid, k in kansen.items():
+        if not (isinstance(k, dict) and k.get("status") in KANS_STATUS):
+            raise BuildError(f"{path.name}: kansen.{kid}: status moet een van {list(KANS_STATUS)} zijn")
+    return {"acties": acties, "kansen": kansen}
+
+
+def load_opdrachten(path: Path = OPDRACHTEN_PATH) -> dict:
+    data = load_json_object(path) or {}
+    for oid, o in data.items():
+        if not (isinstance(o, dict) and o.get("status") in OPDRACHT_STATUS):
+            raise BuildError(f"{path.name}: {oid}: status moet een van {list(OPDRACHT_STATUS)} zijn")
+        if not isinstance(o.get("actie_id"), str):
+            raise BuildError(f"{path.name}: {oid}: actie_id ontbreekt")
+        r = o.get("resultaat")
+        if r is not None and not (isinstance(r, dict) and isinstance(r.get("links", []), list)):
+            raise BuildError(f"{path.name}: {oid}: resultaat moet {{samenvatting, links: [], voor_mens}} zijn")
+    return data
+
+
+def load_uitvoerbaar(path: Path = UITVOERBAAR_PATH) -> dict:
+    data = load_json_object(path) or {}
+    for aid, u in data.items():
+        if not (isinstance(u, dict) and u.get("claude") in UITVOERBAAR_WAARDEN):
+            raise BuildError(f"{path.name}: {aid}: claude moet een van {list(UITVOERBAAR_WAARDEN)} zijn")
+        _check_datum(u.get("beoordeeld"), f"{path.name}: {aid}.beoordeeld")
+    return data
+
+
+def is_besluit(tekst: str, routine: str = "") -> bool:
+    return routine == "denzel-week" or tekst.lstrip().lower().startswith("besluit:")
+
+
+def koppel_werk(notities: list, backlog: list, beheer: dict, uitvoerbaar: dict, opdrachten: dict):
+    """Zet beheer, uitvoerbaar, besluit en prioriteit_effectief op elke actie en beheer op elke kans."""
+    routine = {n["id"]: n["routine"] for n in notities}
+    bekend = set()
+    for bron, _, actie in alle_acties(notities, backlog, ook_gearchiveerd=True):
+        b = beheer["acties"].get(actie["id"])
+        actie["beheer"] = b
+        actie["uitvoerbaar"] = uitvoerbaar.get(actie["id"])
+        actie["besluit"] = is_besluit(actie["kop"] if bron == "backlog" else actie["tekst"], routine.get(bron, ""))
+        actie["prioriteit_effectief"] = (b or {}).get("prioriteit") or actie["prioriteit"]
+        bekend.add(actie["id"])
+    kansen = set()
+    for n in notities:
+        for kans in n["kansen"]:
+            kans["beheer"] = beheer["kansen"].get(kans["id"])
+            kansen.add(kans["id"])
+    for naam, ids, geldig in (("BEHEER.json acties", beheer["acties"], bekend),
+                              ("BEHEER.json kansen", beheer["kansen"], kansen),
+                              ("UITVOERBAAR.json", uitvoerbaar, bekend),
+                              ("OPDRACHTEN.json", {o["actie_id"] for o in opdrachten.values()}, bekend)):
+        onbekend = sorted(set(ids) - geldig)
+        if onbekend:
+            print(f"waarschuwing: {naam} noemt {len(onbekend)} onbekend(e) id('s): {', '.join(onbekend)}",
+                  file=sys.stderr)
+
+
+def load_data(data_dir: Path = DATA_DIR) -> dict:
+    uit = {}
+    for naam in DATA_BESTANDEN:
+        path = data_dir / f"{naam}.json"
+        uit[naam] = None
+        if not path.exists():
+            continue
+        try:
+            waarde = json.loads(path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            print(f"waarschuwing: _data/{path.name} is geen geldige JSON ({e}) — null in het register", file=sys.stderr)
+            continue
+        if isinstance(waarde, dict):
+            uit[naam] = waarde
+        else:
+            print(f"waarschuwing: _data/{path.name} is geen JSON-object — null in het register", file=sys.stderr)
+    return uit
 
 
 # ── Statistieken ───────────────────────────────────────────────────────────────
@@ -265,15 +568,16 @@ def iso_week_label(d: date) -> str:
     return f"{y}-W{w:02d}"
 
 
+def telt_als_open(actie: dict) -> bool:
+    """Open en niet door de actiecontrole als dubbel gemarkeerd."""
+    return not actie["afgevinkt"] and (actie.get("controle") or {}).get("uitkomst") != "dubbel"
+
+
 def build_stats(notities: list, backlog: list) -> dict:
     open_per_p = {"P1": 0, "P2": 0, "P3": 0}
-    for n in notities:
-        for a in n["acties"]:
-            if not a["afgevinkt"]:
-                open_per_p[a["prioriteit"]] += 1
-    for b in backlog:
-        if not b["afgevinkt"]:
-            open_per_p[b["prioriteit"]] += 1
+    for _, _, actie in alle_acties(notities, backlog, ook_gearchiveerd=True):
+        if telt_als_open(actie):
+            open_per_p[actie["prioriteit"]] += 1
 
     per_categorie = {}
     for n in notities:
@@ -302,15 +606,22 @@ def build_stats(notities: list, backlog: list) -> dict:
 
 
 # ── Hoofdprogramma ─────────────────────────────────────────────────────────────
+def note_files() -> list:
+    return sorted(p for p in RESEARCH_DIR.glob("*.md") if p.name != KAART_PATH.name)
+
+
 def load_notes(index: dict) -> list:
     notities = []
-    files = sorted(p for p in RESEARCH_DIR.glob("*.md") if p.name != KAART_PATH.name)
-    for path in files:
+    for path in note_files():
         name = path.name
         meta, body = parse_frontmatter(path.read_text(encoding="utf-8"), name)
         validate_meta(meta, path.stem, name)
         note = dict(meta)
+        note["kerntitel"] = meta.get("kerntitel", "").strip()
+        note["kerncijfers"] = parse_kerncijfers(body, name)
         note["acties"] = parse_actions(body, meta["id"], name)
+        note["kansen"] = parse_kansen(body, meta["id"], name)
+        note["wat_niet_lukte"] = wat_niet_lukte(body)
         note["body_md"] = convert_wikilinks(body, index)
         note["bronbestand_url"] = bronbestand_url(meta["bronbestand"])
         note["vault_url"] = github_url(f"05_Research/{name}")
@@ -324,6 +635,10 @@ def load_notes(index: dict) -> list:
                     raise BuildError(f"{n['id']}.md: '{key}' verwijst naar onbekende notitie '{ref}'")
                 if ref == n["id"]:
                     raise BuildError(f"{n['id']}.md: '{key}' verwijst naar zichzelf")
+        for kans in n["kansen"]:
+            for ref in kans["bewijs"]:
+                if ref not in ids:
+                    raise BuildError(f"{n['id']}.md: kans '{kans['titel']}' noemt onbekende notitie '{ref}' als bewijs")
     notities.sort(key=lambda n: (n["datum"], n["id"]), reverse=True)
     return notities
 
@@ -343,6 +658,9 @@ def main(argv) -> int:
         index = index_vault()
         notities = load_notes(index)
         backlog = parse_backlog(BACKLOG_PATH)
+        controle = koppel_controle(notities, backlog, load_controle())
+        opdrachten = load_opdrachten()
+        koppel_werk(notities, backlog, load_beheer(), load_uitvoerbaar(), opdrachten)
     except BuildError as e:
         print(f"FOUT: {e}", file=sys.stderr)
         return 1
@@ -360,8 +678,13 @@ def main(argv) -> int:
         "vault_branch": GITHUB_BRANCH,
         "notities": notities,
         "backlog": backlog,
+        "controle": controle,
         "kaart_md": convert_wikilinks(KAART_PATH.read_text(encoding="utf-8"), index),
         "stats": build_stats(notities, backlog),
+        "data": load_data(),
+        "opdrachten": sorted(({"id": oid, **o} for oid, o in opdrachten.items()),
+                             key=lambda o: (o.get("bijgewerkt") or o.get("goedgekeurd_ts") or "", o["id"]),
+                             reverse=True),
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(register, ensure_ascii=False, indent=1, sort_keys=True)

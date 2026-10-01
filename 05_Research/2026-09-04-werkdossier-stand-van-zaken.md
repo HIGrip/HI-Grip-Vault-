@@ -190,8 +190,8 @@ Buiten de 39 uit het dossier, gevonden in theme `200269168967`:
 
 ## Acties
 
-- [ ] P1 · Producten koppelen aan collectie `gripsokken` — hub is leeg (Shopify Admin, lars)
-- [ ] P1 · Purchase-event aan de Shopify-checkout koppelen — bedankpagina-tag ontbreekt
+- [x] P1 · Producten koppelen aan collectie `gripsokken` — hub is leeg (Shopify Admin, lars)
+- [x] P1 · Purchase-event aan de Shopify-checkout koppelen — bedankpagina-tag ontbreekt
 - [ ] P1 · Template `gripsokken` toewijzen aan de collectie
 - [ ] P1 · Verzend- en retourbeleid in Shopify Admin bijwerken naar 22:00 en 30 dagen — policies lopen achter op de site
 - [ ] P2 · Besluit Engelse versie: afmaken of uitzetten (advies: uitzetten)

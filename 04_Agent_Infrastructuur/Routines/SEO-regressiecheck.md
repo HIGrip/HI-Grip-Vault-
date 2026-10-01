@@ -11,6 +11,7 @@ Voer de wekelijkse technische SEO-regressiecheck uit voor www.higrip.nl.
 1. `CLAUDE.md` en `00_Brand_Core/Feiten & Actuele Staat.md`. Hier haal je de actuele handles, thema-regels en claims vandaan. **Gebruik geen URL of ID uit je eigen kennis.**
 2. `05_Research/_geheugen/seo-regressiecheck.md` en de vorige regressiecheck-notitie in `05_Research/`.
 3. `05_Research/_backlog/ACTIEBACKLOG.md`: punten met `[regressie]` in de titel zijn van jou.
+4. `05_Research/_backlog/CONTROLE.json`: de actiecontrole controleert bestaande backlogpunten elke dag en vinkt ze af met bewijs. Jij controleert ze niet opnieuw en vinkt niets af.
 
 ## Stap 2 — URL-lijst samenstellen (niet hardcoded)
 - Haal `https://www.higrip.nl/sitemap.xml` en de sub-sitemaps op.
@@ -35,8 +36,11 @@ Haal de ruwe HTML op met curl. Plak de regeleindes aan elkaar vóór je grept, w
 - **PageSpeed Insights** (mobiel) voor de homepage, 1 collectie en 1 product: LCP, INP en CLS. Lukt dat niet (quotum), meld het dan.
 
 ## Stap 5 — Output
-1. **Notitie** `05_Research/JJJJ-MM-DD-regressiecheck.md`: `bron: routine`, `routine: seo-regressiecheck`, `categorie: SEO`. Secties: "Afwijkingen" (genummerd, de ernstigste eerst, met URL, wat er mis is en de fix), "Ongewijzigd" (het aantal schone URL's), "Trend" (GA4 en CWV). Geen afwijkingen? Schrijf dan letterlijk "Geen afwijkingen deze week".
-2. **Backlog:** elke afwijking als `### [ ] [regressie] …` onder P1, met Waarom / Waar / Wat / Gevonden op. Maximaal 5 per week. Stond een punt er vorige week al, werk dan die regel bij. Opgelost? Vink hem af met `[x]` en noteer "opgelost, bevestigd <datum>".
+1. **Notitie** `05_Research/JJJJ-MM-DD-regressiecheck.md`: `bron: routine`, `routine: seo-regressiecheck`, `categorie: SEO`, volgens het sjabloon in `PROCEDURE.md` (`kerntitel`, `## Kerncijfers`, vaste volgorde). Onder `## Bevindingen`: "Afwijkingen" (genummerd, de ernstigste eerst, met URL, wat er mis is en de fix), "Ongewijzigd" (het aantal schone URL's), "Trend" (GA4 en CWV). Geen afwijkingen? Schrijf dan letterlijk "Geen afwijkingen deze week".
+2. **Backlog:** alleen nieuwe afwijkingen als `### [ ] [regressie] …` onder P1, met Waarom / Waar / Wat / Gevonden op. Maximaal 5 per week.
+   - Staat de afwijking al als open punt in de backlog? Maak dan geen nieuw punt en wijzig het bestaande niet. De actiecontrole volgt het. In je notitie noem je het met één regel: "staat open in de backlog".
+   - Bevestigde de actiecontrole een punt als `gedaan` (in `CONTROLE.json` of `AFGEROND.md`) en is het nu weer kapot? Maak dan een nieuw punt `### [ ] [regressie] … (weer kapot, eerder bevestigd <datum>)`.
+   - Je vinkt niets af. Werk daarna de tellerregel bij met `python 05_Research/_tools/acties.py kop --door seo-regressiecheck`.
 3. **Geheugen:** de URL-lijst van deze week en één regel per afwijking in `05_Research/_geheugen/seo-regressiecheck.md`.
 4. **Feiten:** klopt een handle, ID of URL in het feitenbestand niet meer? Werk hem bij, met datum.
 5. **Afronden:** procedure B, dan A3 (koppel aan de vorige regressiecheck), A4, A5 en A6.

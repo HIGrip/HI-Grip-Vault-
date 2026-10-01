@@ -1,0 +1,503 @@
+{
+ "bijgewerkt": "2026-09-26T05:47:18+02:00",
+ "status": "ok",
+ "fouten": {},
+ "gsc_laatste_dag": "2026-09-23",
+ "weken": [
+  {
+   "week": "2026-W28",
+   "start": "2026-07-06",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 15,
+   "gsc_vertoningen": 346,
+   "gsc_ctr": 4.34,
+   "gsc_positie": 13.8
+  },
+  {
+   "week": "2026-W29",
+   "start": "2026-07-13",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 21,
+   "gsc_vertoningen": 348,
+   "gsc_ctr": 6.03,
+   "gsc_positie": 9.6
+  },
+  {
+   "week": "2026-W30",
+   "start": "2026-07-20",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 3,
+   "gsc_vertoningen": 303,
+   "gsc_ctr": 0.99,
+   "gsc_positie": 10.6
+  },
+  {
+   "week": "2026-W31",
+   "start": "2026-07-27",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 11,
+   "gsc_vertoningen": 346,
+   "gsc_ctr": 3.18,
+   "gsc_positie": 13.9
+  },
+  {
+   "week": "2026-W32",
+   "start": "2026-08-03",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 8,
+   "gsc_vertoningen": 394,
+   "gsc_ctr": 2.03,
+   "gsc_positie": 12.9
+  },
+  {
+   "week": "2026-W33",
+   "start": "2026-08-10",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 16,
+   "gsc_vertoningen": 585,
+   "gsc_ctr": 2.74,
+   "gsc_positie": 10.8
+  },
+  {
+   "week": "2026-W34",
+   "start": "2026-08-17",
+   "sessies": 0,
+   "sessies_nl": 0,
+   "gebruikers": 0,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 17,
+   "gsc_vertoningen": 742,
+   "gsc_ctr": 2.29,
+   "gsc_positie": 10.6
+  },
+  {
+   "week": "2026-W35",
+   "start": "2026-08-24",
+   "sessies": 4,
+   "sessies_nl": 0,
+   "gebruikers": 4,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 15,
+   "gsc_vertoningen": 841,
+   "gsc_ctr": 1.78,
+   "gsc_positie": 11.4
+  },
+  {
+   "week": "2026-W36",
+   "start": "2026-08-31",
+   "sessies": 61,
+   "sessies_nl": 52,
+   "gebruikers": 47,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 37,
+   "gsc_vertoningen": 953,
+   "gsc_ctr": 3.88,
+   "gsc_positie": 11.5
+  },
+  {
+   "week": "2026-W37",
+   "start": "2026-09-07",
+   "sessies": 87,
+   "sessies_nl": 67,
+   "gebruikers": 75,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 48,
+   "gsc_vertoningen": 1050,
+   "gsc_ctr": 4.57,
+   "gsc_positie": 9.3
+  },
+  {
+   "week": "2026-W38",
+   "start": "2026-09-14",
+   "sessies": 123,
+   "sessies_nl": 52,
+   "gebruikers": 98,
+   "aankopen": 2,
+   "omzet": 26.25,
+   "conversie": 1.63,
+   "gsc_klikken": 37,
+   "gsc_vertoningen": 1065,
+   "gsc_ctr": 3.47,
+   "gsc_positie": 8.6
+  },
+  {
+   "week": "2026-W39",
+   "start": "2026-09-21",
+   "sessies": 48,
+   "sessies_nl": 36,
+   "gebruikers": 34,
+   "aankopen": 1,
+   "omzet": 41.99,
+   "conversie": 2.08,
+   "gsc_klikken": 16,
+   "gsc_vertoningen": 458,
+   "gsc_ctr": 3.49,
+   "gsc_positie": 8.1
+  }
+ ],
+ "kernwoorden": [
+  {
+   "term": "gripsokken",
+   "weken": [
+    {
+     "week": "2026-W28",
+     "positie": 3.0,
+     "vertoningen": 1
+    },
+    {
+     "week": "2026-W29",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W30",
+     "positie": 23.8,
+     "vertoningen": 4
+    },
+    {
+     "week": "2026-W31",
+     "positie": 16.5,
+     "vertoningen": 2
+    },
+    {
+     "week": "2026-W32",
+     "positie": 17.2,
+     "vertoningen": 22
+    },
+    {
+     "week": "2026-W33",
+     "positie": 17.3,
+     "vertoningen": 15
+    },
+    {
+     "week": "2026-W34",
+     "positie": 16.1,
+     "vertoningen": 12
+    },
+    {
+     "week": "2026-W35",
+     "positie": 8.8,
+     "vertoningen": 42
+    },
+    {
+     "week": "2026-W36",
+     "positie": 9.9,
+     "vertoningen": 54
+    },
+    {
+     "week": "2026-W37",
+     "positie": 5.8,
+     "vertoningen": 53
+    },
+    {
+     "week": "2026-W38",
+     "positie": 7.1,
+     "vertoningen": 77
+    },
+    {
+     "week": "2026-W39",
+     "positie": 5.4,
+     "vertoningen": 43
+    }
+   ]
+  },
+  {
+   "term": "gripsokken kopen",
+   "weken": [
+    {
+     "week": "2026-W28",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W29",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W30",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W31",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W32",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W33",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W34",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W35",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W36",
+     "positie": 18.0,
+     "vertoningen": 1
+    },
+    {
+     "week": "2026-W37",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W38",
+     "positie": 10.0,
+     "vertoningen": 3
+    },
+    {
+     "week": "2026-W39",
+     "positie": 14.7,
+     "vertoningen": 3
+    }
+   ]
+  },
+  {
+   "term": "wat zijn gripsokken",
+   "weken": [
+    {
+     "week": "2026-W28",
+     "positie": 9.0,
+     "vertoningen": 23
+    },
+    {
+     "week": "2026-W29",
+     "positie": 9.4,
+     "vertoningen": 9
+    },
+    {
+     "week": "2026-W30",
+     "positie": 9.0,
+     "vertoningen": 12
+    },
+    {
+     "week": "2026-W31",
+     "positie": 9.5,
+     "vertoningen": 10
+    },
+    {
+     "week": "2026-W32",
+     "positie": 10.5,
+     "vertoningen": 8
+    },
+    {
+     "week": "2026-W33",
+     "positie": 10.8,
+     "vertoningen": 11
+    },
+    {
+     "week": "2026-W34",
+     "positie": 9.8,
+     "vertoningen": 13
+    },
+    {
+     "week": "2026-W35",
+     "positie": 9.8,
+     "vertoningen": 13
+    },
+    {
+     "week": "2026-W36",
+     "positie": 14.0,
+     "vertoningen": 13
+    },
+    {
+     "week": "2026-W37",
+     "positie": 9.0,
+     "vertoningen": 11
+    },
+    {
+     "week": "2026-W38",
+     "positie": 8.6,
+     "vertoningen": 12
+    },
+    {
+     "week": "2026-W39",
+     "positie": 9.0,
+     "vertoningen": 4
+    }
+   ]
+  },
+  {
+   "term": "waarom glijdt mijn voet in mijn padelschoen",
+   "weken": [
+    {
+     "week": "2026-W28",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W29",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W30",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W31",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W32",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W33",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W34",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W35",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W36",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W37",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W38",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W39",
+     "positie": null,
+     "vertoningen": 0
+    }
+   ]
+  },
+  {
+   "term": "tapedesign alternatief",
+   "weken": [
+    {
+     "week": "2026-W28",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W29",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W30",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W31",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W32",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W33",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W34",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W35",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W36",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W37",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W38",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W39",
+     "positie": null,
+     "vertoningen": 0
+    }
+   ]
+  }
+ ]
+}

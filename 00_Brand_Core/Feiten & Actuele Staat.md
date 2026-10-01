@@ -36,10 +36,12 @@ laatst-geverifieerd: 2026-09-25
 
 | Product                          | Handle                             | Maten                 | Prijs                                                     | Geverifieerd                      |
 | -------------------------------- | ---------------------------------- | --------------------- | --------------------------------------------------------- | --------------------------------- |
-| Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€13,49** · 3-pack **€39,95** · 5-pack **€61,95** | 2026-09-25 (live `.js`)           |
-| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€14,95**                                                | 2026-09-25 (live `products.json`) |
-| Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€14,95**                                                | 2026-09-25 (live `products.json`) |
+| Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€14,95** · 3-pack **€41,95** · 5-pack **€64,95** | 2026-10-01 (Shopify-koppeling) |
+| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
+| Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
 
+- Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, sinds de update van 28-9 weer €14,95 / €41,95 / €64,95 (per paar €14,95 / €13,98 / €12,99).
+- Voorraad 2.0 (zwart en wit) staat op 1-10 op 0, met negatieve aantallen per maat: controleer of de producten niet doorverkocht worden.
 - Adviesprijs retail 2.0: €17,99 (zie [[Performance Grip Socks 2.0]]).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 

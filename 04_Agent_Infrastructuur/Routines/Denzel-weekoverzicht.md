@@ -48,6 +48,9 @@ Dit blijft alleen beoordelen: nooit outreach versturen, nooit naar de Pipeline T
 
 ## 2c. Content Agent: wekelijks content-voorstel
 Niveau "Voorstellen, ik keur goed" (`Agent Takenverdeling & Grenzen — Content Agent.md` sectie A). Het blijft een voorstel: nooit publiceren, nooit in Buffer inplannen.
+
+**Stapelrem (nieuw 01-10-2026):** controleer eerst of er al een onbeoordeeld content-voorstel openstaat. Kijk in de acties van het vorige weekoverzicht: staat er een `- [ ] P2 · Besluit: content-voorstel week …` die nog niet afgevinkt is? Dan maak je **geen nieuw voorstel**, maar schrijf je in het weekoverzicht: "Content-voorstel van [datum] staat nog open — ter beoordeling door Tigo/Lars vóór een nieuw voorstel gemaakt wordt." Zo houdt de stapel maximaal één voorstel tegelijk. Alleen als het vorige voorstel beoordeeld is (of ouder dan 3 weken zonder reactie — dan meld je het expliciet) maak je een nieuw voorstel aan.
+
 - Denk vanuit marketing-psychology, social-content en content-strategy (vaste regel uit Brand Core).
 - Stel 3–5 concrete content-ideeën voor voor de komende 1–2 weken, passend bij de content pillars en de kalender (`01_Content_Agent/`). Focus op de beachhead-sporten.
 - Schrijf het als blok "Content-voorstel — Week [datum]": een nieuw bestand in `01_Content_Agent/Contentkalender/` als die map bestaat, anders in het weekoverzicht.
@@ -115,7 +118,7 @@ deadline: ""
 ## Kerncijfers
 - **<waarde>** · <label> · <verschil>   (2–4 regels uit het GA4-weekrapport, alleen echte cijfers; geen cijfers = sectie weglaten)
 ## Acties
-- [ ] P1 · Besluit: …   (elke openstaande beslissing voor Lars als één regel die begint met "Besluit:"; niets overnemen uit de actiebacklog. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
+- [ ] P1 · Besluit: …   (alleen **nieuwe** beslissingen van deze week, als één regel die begint met "Besluit:". Niets overnemen uit de actiebacklog of uit eerdere weekoverzichten, zie §8.1. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
 ## Bevindingen
 ### Voortgang per hoofdagent
 - Content Agent: [status + content-voorstel 2c]
@@ -134,13 +137,18 @@ deadline: ""
 ```
 
 ## 8. Verbanden, geheugen en kwaliteitsdashboard
-1. **Verbanden (A3):** zet de notitie van vorige week op `status: gearchiveerd` en vul `gerelateerd` in beide richtingen. Vink daar niets af en wijzig geen actietekst: een gearchiveerde notitie telt niet mee in de actiecontrole en op het dashboard. Nog geldige acties neem je over in de nieuwe notitie.
+1. **Verbanden (A3):** vul `gerelateerd` in beide richtingen tussen deze en de vorige weekoverzichten. Vink daar niets af en wijzig geen actietekst.
+   - **Oude acties nooit overnemen of herformuleren.** Een actie-id is `notitie-id + hash(tekst)`: dezelfde taak in een nieuwe notitie of met een iets andere tekst is een nieuw id, dus een vinkje van een mens gaat verloren en de taak komt terug. Een besluit dat nog openstaat, blijft staan in de notitie waar hij voor het eerst stond.
+   - Een vorig weekoverzicht met nog open `[ ]`-acties zet je op `status: verwerkt` (blijft zichtbaar op het dashboard en in de actiecontrole). Pas als er geen open acties meer in staan, zet je hem op `status: gearchiveerd`.
+   - Wil je een oud open besluit onder de aandacht brengen? Noem het onder "Openstaande beslissingen voor Lars" als verwijzing (`nog open sinds [[<notitie>]]: <korte naam>`), zonder checkbox.
+   - Staat een besluit al als punt in `ACTIEBACKLOG.md`, of staat het in `CONTROLE.json` als `gedaan` of `dubbel`? Dan maak je er geen actie van.
 2. **Geheugen:** één regel per behandeld onderwerp in `05_Research/_geheugen/denzel-week.md`.
 3. **Kwaliteitsdashboard:** voeg in `04_Agent_Infrastructuur/Beheer/Agent Werk & Kwaliteit Overzicht.md` voor elke actie van deze run een rij toe bij de juiste (sub-)agent: zoekactie, beoordelingen, content-voorstel, website-stand, fix-voorbereiding. Overschrijf nooit stilzwijgend oude rijen.
+4. **Leerloop (nieuw 01-10-2026):** kijk of er deze week een patroon was dat toekomstige agents slim(mer) kan maken. Gaat iets voor de tweede keer fout, of is er een nieuwe les? Voeg dan een entry toe aan `04_Agent_Infrastructuur/Beheer/Feedback & Iteratie Log.md` (formaat: datum, patroon, wat is aangepast, why, how to apply). Eén bondig blok — geen herhaling van losse event-details. Sla deze stap over als er niets nieuws is.
 
 ## 9. Build, publish, commit
 1. `python 05_Research/_build/build_register.py`. Exit 0 is verplicht; bij een validatiefout repareer je de notitie, niet het script.
-2. **Publish (A5)** naar https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV als je schrijfrechten hebt. Lukt het niet (geen rechten of een conflict)? Meld het en ga door. De dagelijkse Growth Radar publiceert ook.
+2. **Publish (A5)** naar https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS als je schrijfrechten hebt. Lukt het niet (geen rechten of een conflict)? Meld het en ga door. De dagelijkse Growth Radar publiceert ook.
 3. `git add` alleen de bestanden van deze run, commit `research: JJJJ-MM-DD-weekoverzicht geregistreerd`, `git pull --rebase`, `git push` naar `HÏ-Grip-Vault-obsidian`.
 
 Bestanden die je mag wijzigen:

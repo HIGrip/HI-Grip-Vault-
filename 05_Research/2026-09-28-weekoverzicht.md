@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Het echte Nederlandse verkeer daalt voor de derde week op rij (nu 40 sessies, −23%), terwijl de nieuwe /en/-homepage en de drie nieuwe verzend-/retour-/betalingspagina's zelf weer fouten bevatten die het vertrouwen schaden. Drie tennisretailers hebben nu een contactpersoon (TennisFirst Rotterdam is outreach-klaar) en de titel/meta-fix voor /en/ ligt klaar voor een lokale sessie."
-gerelateerd: [2026-09-21-weekoverzicht, 2026-09-28-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-25-search-console]
+gerelateerd: [2026-09-21-weekoverzicht, 2026-09-28-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-25-search-console, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard]
 vervangt: [2026-09-21-weekoverzicht]
 bronbestand: ""
 deadline: ""
@@ -164,3 +164,4 @@ Zie de Acties-lijst hierboven — dit weekoverzicht herhaalt de tekst niet twee 
 - [[Stappenplan — Verdere Bouw]] · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
 
 ## Aantekeningen
+- **lars · 2026-09-28 08:38** — vorige week heb ik de 2x h1 tekst gefixt controleer of dat hij u wel goed werkt

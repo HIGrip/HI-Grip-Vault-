@@ -12,7 +12,7 @@
 | Onderzoek (alle routines + losse onderzoeken) | `05_Research/`. De procedure staat in `05_Research/_build/PROCEDURE.md`. |
 | Acties (één backlog) | `05_Research/_backlog/ACTIEBACKLOG.md` |
 | Geheugen van de routines | `05_Research/_geheugen/`. De regels staan in `_geheugen/README.md`. |
-| Research Dashboard | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV (bron: `05_Research/`) |
+| Research Dashboard | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (bron: `05_Research/`) |
 | Agent-systeem (Denzel + hoofdagents) | `04_Agent_Infrastructuur/` |
 | Routine-prompts | `04_Agent_Infrastructuur/Routines/` |
 

@@ -4,7 +4,7 @@
 
 > Eén bron voor alle afnemers: de commands `/research-nieuw` en `/research-sync` en alle routines in `04_Agent_Infrastructuur\Routines\` verwijzen hiernaar met "lees en volg PROCEDURE.md". Wijzig de procedure hier, nergens anders.
 >
-> **De vault is de waarheid.** Het dashboard (https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV) toont het gebouwde register; wat mensen daar afvinken, wijzigen, noteren, goedkeuren of toevoegen komt via stap B terug in de vault.
+> **De vault is de waarheid.** Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) toont het gebouwde register; wat mensen daar afvinken, wijzigen, noteren, goedkeuren of toevoegen komt via stap B terug in de vault.
 
 ## Vaste paden
 
@@ -21,7 +21,7 @@
 | Geheugen routines | `05_Research\_geheugen\<routine>.md` — regels in `_geheugen\README.md` |
 | Feiten | `00_Brand_Core\Feiten & Actuele Staat.md` — prijzen, handles, URL's, ID's, claims; nooit in prompts |
 | Routine-prompts | `04_Agent_Infrastructuur\Routines\` — rolverdeling in `README.md` |
-| Dashboard-URL | https://claude.ai/artifact/KVXyNSCNEbKcj2EQGqkpuV |
+| Dashboard-URL | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 
 ## Notitieformaat
 
@@ -81,7 +81,7 @@ Verplicht na élk onderzoek: een routine-run óf een losse vraag (bijv. "TikTok 
 
 1. **Eerst B draaien** (dashboard-wijzigingen ophalen) zodat je op de actuele staat werkt. Routines lezen daarnaast eerst hun geheugen (`_geheugen\`) en het feitenbestand, en schrijven hun geheugen aan het eind bij.
 2. **Notitie aanmaken** volgens het formaat, met de volledige inhoud: bevindingen, redenering, bronnen, acties met P-code. `bronbestand` = het origineel als dat er is (rapport, memory-bestand, artifact-URL).
-3. **Verbanden verwerken**: zoek notities in dezelfde categorie of met dezelfde onderwerpen (`grep -il` op `05_Research\*.md`). Vul `gerelateerd` in **beide richtingen**. Is een oudere notitie achterhaald → zet haar id in `vervangt` en zet haar `status: gearchiveerd`. Vink haar acties niet af en wijzig hun tekst niet: acties uit gearchiveerde notities tellen niet mee in de actiecontrole en op het dashboard. Nog geldige acties neem je over in de nieuwe notitie.
+3. **Verbanden verwerken**: zoek notities in dezelfde categorie of met dezelfde onderwerpen (`grep -il` op `05_Research\*.md`). Vul `gerelateerd` in **beide richtingen**. Is een oudere notitie achterhaald → zet haar id in `vervangt` en zet haar `status: gearchiveerd`. Vink haar acties niet af en wijzig hun tekst niet: acties uit gearchiveerde notities tellen niet mee in de actiecontrole en op het dashboard. **Neem geen acties over in de nieuwe notitie**: een actie-id is `notitie-id + hash(tekst)`, dus overnemen maakt een nieuwe taak en een vinkje van een mens gaat verloren. Staan er in de oudere notitie nog open acties, zet haar dan op `status: verwerkt` in plaats van `gearchiveerd`; archiveren pas als er geen open acties meer zijn.
 4. **Build**: `python 05_Research\_build\build_register.py` — moet exit 0 geven. Fout → repareer de notitie, niet het script.
 5. **Publiceren**: `Artifact read` op de dashboard-URL, dan `Artifact list scope:files` op die URL, dan `Artifact publish` met `url` = dashboard-URL, `file_path` = `05_Research\_dashboard\index.html`, `files: {"data/register.js": "05_Research/_build/register.js"}`. Geen `capabilities`/`favicon` meegeven (blijven behouden). Publish-conflict → stoppen en melden.
 6. **Commit**: `git add 05_Research` (+ andere aangeraakte notities) → `git commit -m "research: <id> geregistreerd"` → `git pull --rebase origin HÏ-Grip-Vault-obsidian` → `git push origin HEAD:HÏ-Grip-Vault-obsidian`. **Nooit** alleen naar een `claude/...`-branch pushen: dan mist de vault het werk en verdwijnt het bij de volgende build van het dashboard.

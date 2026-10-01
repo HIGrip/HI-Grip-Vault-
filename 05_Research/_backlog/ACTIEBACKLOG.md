@@ -3,8 +3,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 30 september 2026 (search-console)
-Open: 24 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 1 oktober 2026 (growth-radar)
+Open: 25 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -182,6 +182,14 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `/pages/ontdek-jouw-sport` — titel en meta description via Shopify admin
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 30 september 2026 (Search Console & rankings)
+
+### [ ] 20. Shopify conversieratio-meetbreuk (21-23 sep 2026) meewegen vóór je volgende CRO-test (nieuw 1 okt 2026)
+**Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat "Reached checkout rate" en "Checkout conversion rate" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.
+**Waar:** Shopify Analytics-rapporten (sessies, reached checkout rate, checkout conversion rate) en het testlogboek van de SEO- en conversietest-routine (`seo-routine-logboek`)
+**Wat:** Zet bij de volgende voor-/na-meting van punt 1/12 een aantekening dat de periode vóór 21-23 sep niet 1-op-1 vergelijkbaar is met erna; vergelijk waar mogelijk op bestellingen/omzet in plaats van sessie-conversieratio, of meet pas vanaf na de meetbreuk.
+**Effect:** Voorkomt een foutieve conclusie ("de test werkte niet" of "de test werkte geweldig") die eigenlijk een meetartefact is.
+**Inspanning:** 15 minuten, bij de volgende testmeting
+**Gevonden op:** 1 oktober 2026 (Growth Radar, CRO)
 
 ### [ ] 13. Onderzoek TikTok Shop Nederland — directe verkoop via Shopify-koppeling (nieuw 18 sep 2026)
 **Waarom:** TikTok Shop is sinds 15 juni 2026 officieel live in Nederland en koppelt via een losse app (bijv. SlashCart vanaf $9,99/maand, Optima gratis) rechtstreeks aan Shopify voor productsync, voorraad en orderafhandeling. De hele klantreis — ontdekken, valideren via creators, afrekenen — vindt dan binnen TikTok zelf plaats, met een "Fast Shipping"-badge die conversie verder verhoogt. Platformkosten: 2-8% commissie + $0,30 per transactie, plus optioneel 10-20% creator-affiliate-commissie.

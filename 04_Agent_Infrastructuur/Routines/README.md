@@ -33,20 +33,20 @@ Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiks
 
 | Routine (naam op info@) | Promptbestand | Wanneer (terugval) | Model | Status |
 |---|---|---|---|---|
-| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | Sonnet 5 | ✅ Cloud op info@ (sinds 26-09) |
-| HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | Sonnet 5 | ✅ Cloud op info@ (sinds 25-09) |
-| HÏ Grip — Uitvoerder | `Uitvoerder.md` | dagelijks 06:15 | Sonnet 5 | Nog aanmaken op info@ |
-| HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | Sonnet 5 | ✅ Cloud op info@ |
-| Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | Sonnet 5 | ✅ Cloud op info@ |
-| HÏ Grip — SEO- en conversietest | `SEO- en conversietest.md` | maandag 07:30 | Sonnet 5 | ✅ Cloud op info@ |
-| HÏ Grip — Search Console & rankings | `Search Console & rankings.md` | woensdag 06:00 | Sonnet 5 | ✅ Cloud op info@, getest 25-09 (GS-01) |
-| HÏ Grip — Verbanden & kansen | `Verbanden & kansen.md` | zaterdag 06:30 | Opus | Nog aanmaken op info@ |
-| HÏ Grip — Klantstem | `Klantstem.md` | 1e en 15e 06:45 (donderdag) | Sonnet 5 | Nog aanmaken op info@ |
-| HÏ Grip — Website-UX | `Website-UX.md` | 4e en 18e 06:45 (vrijdag) | Sonnet 5 | Nog aanmaken op info@ |
-| HÏ Grip — Productradar | `Productradar.md` | 8e 07:15 (dinsdag) | Opus | Nog aanmaken op info@ |
-| HÏ Grip — Concurrentie-monitor | `Concurrentie-monitor.md` | 8e en 22e 06:30 (dinsdag) | Sonnet 5 | Nog aanmaken op info@ |
-| HÏ Grip — Materialen & productie | `Materialen & productie.md` | 22e 07:15 (donderdag) | Opus | Nog aanmaken op info@ |
-| HÏ Grip — Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | 1e 07:30 (woensdag) | Sonnet 5 | Nog aanmaken op info@ |
+| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | claude-sonnet-5-5 | ✅ Cloud op info@ (sinds 26-09) |
+| HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | claude-sonnet-5-5 | ✅ Cloud op info@ (sinds 25-09) |
+| HÏ Grip — Uitvoerder | `Uitvoerder.md` | dagelijks 06:15 | claude-sonnet-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | claude-sonnet-5-5 | ✅ Cloud op info@ |
+| Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | claude-sonnet-5-5 | ✅ Cloud op info@ |
+| HÏ Grip — SEO- en conversietest | `SEO- en conversietest.md` | maandag 07:30 | claude-sonnet-5-5 | ✅ Cloud op info@ |
+| HÏ Grip — Search Console & rankings | `Search Console & rankings.md` | woensdag 06:00 | claude-sonnet-5-5 | ✅ Cloud op info@, getest 25-09 (GS-01) |
+| HÏ Grip — Verbanden & kansen | `Verbanden & kansen.md` | zaterdag 06:30 | claude-opus-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Klantstem | `Klantstem.md` | 1e en 15e 06:45 (donderdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Website-UX | `Website-UX.md` | 4e en 18e 06:45 (vrijdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Productradar | `Productradar.md` | 8e 07:15 (dinsdag) | claude-opus-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Concurrentie-monitor | `Concurrentie-monitor.md` | 8e en 22e 06:30 (dinsdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Materialen & productie | `Materialen & productie.md` | 22e 07:15 (donderdag) | claude-opus-5-5 | Nog aanmaken op info@ |
+| HÏ Grip — Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | 1e 07:30 (woensdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | ~~Maandelijkse strategiesynthese~~ | — | — | — | Vervallen: opgegaan in de maandeditie van Verbanden & kansen |
 
 De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-09 **uit**, zodat niets dubbel draait.

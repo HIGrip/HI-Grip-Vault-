@@ -89,3 +89,8 @@ Elke briefing bevat de relevante leerregels, anders bestaan ze alleen op papier.
 ## Wat dit niet doet
 - Het verhoogt geen autonomie. Publiceren, versturen, live pushen, prijzen: blijft bij een mens.
 - Een agent die "klaar" zegt, is niet klaar. Klaar is: criteria gehaald, bewijs getoond, review gedaan.
+
+## Aanvulling na eerste test (2026-10-01)
+- **De reviewer krijgt het resultaat van de maker mee** (naast de criteria) en doet daarnaast zelf een eigen zoekronde. Alleen zo vergelijkt hij en vindt hij wat de maker miste. In de eerste test liepen maker en reviewer parallel zonder elkaars werk; dat gaf twee losse rapporten in plaats van een controle.
+- **Denzel verifieert minimaal de drie zwaarste bevindingen zelf in de bron** (regel of bestand openen) voordat hij ze doorgeeft.
+- Bij tegenstrijdige vault-documenten: Denzel stelt niet zelf vast welke gelijk heeft, maar legt het voor aan Lars met de bronnen erbij.

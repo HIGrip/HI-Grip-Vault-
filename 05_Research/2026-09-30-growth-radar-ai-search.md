@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Growth Radar — AI-search (Google's Universal Cart draait nu echt, maar nog niet in Nederland)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Bij de vorige AI-search runs ([[2026-09-16-growth-radar-ai-search]], [[2026-09-23-growth-radar-ai-search]]) was Universal Cart/UCP nog een aankondiging (Google NRF 2026). Die is inmiddels een live product geworden — alleen niet voor Nederlandse webshops. Verder onderzoek deze week (ChatGPT/AI Mode-interfacewijzigingen, een vermeende uitbreiding van het Perplexity Merchant Program) leverde geen bevinding op die de harde filter doorstond: geen concrete datum, of geen aantoonbaar verschil met wat al bekend is.

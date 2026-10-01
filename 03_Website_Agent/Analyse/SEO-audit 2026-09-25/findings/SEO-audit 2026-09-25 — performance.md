@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Core Web Vitals / Performance Audit — higrip.nl
 
 Date: 2026-09-25

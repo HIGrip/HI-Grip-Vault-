@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Brand Symbolen — HÏ Grip
 
 > Sensorische identiteit: geluid en geur. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 11: https://canva.link/a48n60z2ay1g7bp. Spotify-playlists staan in [[Muziek & Licenties]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Geluidseffecten Bibliotheek — HÏ Grip
 
 ---

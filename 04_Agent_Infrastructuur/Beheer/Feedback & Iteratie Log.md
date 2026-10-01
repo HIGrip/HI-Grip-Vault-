@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.

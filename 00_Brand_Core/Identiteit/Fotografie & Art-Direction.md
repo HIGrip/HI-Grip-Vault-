@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Fotografie & Art-Direction — HÏ Grip
 
 > Hoe beeld eruitziet bij HÏ Grip. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 09: https://canva.link/a48n60z2ay1g7bp. Voor de designelementen eromheen: zie [[Design Elementen]].

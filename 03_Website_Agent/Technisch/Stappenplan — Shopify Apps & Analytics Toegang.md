@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Stappenplan — Shopify Apps & Analytics Toegang
 
 > Twee losse checklists om de laatste twee open punten uit Fase 2 af te ronden. Beide vereisen een admin-login die de agent niet zelf heeft — dus voor lars om in te vullen. Zie [[Shopify App Stack]] en [[Analytics & KPI Dashboard]] voor waar het resultaat naartoe gaat.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — SEO- en conversietest (wekelijks)
 
 > Promptbestand. De routine bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/SEO- en conversietest.md` in de HÏ Grip-vault." Wijzig de werking hier.

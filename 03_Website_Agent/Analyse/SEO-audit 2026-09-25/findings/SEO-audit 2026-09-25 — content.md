@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Content Quality & On-Page SEO: higrip.nl
 
 Audit date: 2026-09-25 (supersedes the 2026-09-18 version of this file)

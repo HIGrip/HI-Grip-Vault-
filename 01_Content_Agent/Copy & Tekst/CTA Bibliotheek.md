@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # CTA Bibliotheek — HÏ Grip
 
 > Gebruiksklare calls-to-action per doel, in de HÏ Grip-stem. Geen AI-hypetaal of geforceerde CTA's — kort, feitelijk, rustig, menselijk. Voor volledige slogans: zie [[Copy Bank]]. Voor tone of voice: zie [[Brand Voice & Tone of Voice]].

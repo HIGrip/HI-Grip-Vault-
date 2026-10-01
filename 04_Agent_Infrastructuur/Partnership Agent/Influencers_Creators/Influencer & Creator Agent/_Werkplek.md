@@ -1,3 +1,9 @@
+---
+type: werkplek
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Werkplek — Influencer & Creator Agent
 
 Gereserveerd voor toekomstige output/werk van deze sub-agent, zodra hij van "idee" naar "in ontwikkeling" gaat (zie [[Stappenplan — Verdere Bouw]], Fase 3).

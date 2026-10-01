@@ -1,3 +1,9 @@
+---
+type: index
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Strategie — HÏ Grip Zoek Agent (overkoepelend)
 
 > Overkoepelend voor de **zoek agent** (Partnership Agent): niet over content posten (dat is `01_Content_Agent`), maar over het vinden en binnenhalen van influencers, B2B klanten en samenwerkingen. Zie [[Doelen]] voor de cijfers, [[Aanpak]] voor wat er per lijn moet gebeuren. Financiële/roadmap-basis: [[Strategische Keuzes]] (00_Brand_Core).

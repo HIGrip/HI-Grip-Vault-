@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Iconografie — HÏ Grip
 
 > De volledige iconenset: **86 iconen in drie categorieën**. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 08: https://canva.link/a48n60z2ay1g7bp. Voor de overige designelementen: zie [[Design Elementen]].

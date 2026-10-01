@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-mail Mailflows Artifact
 
 > De 5 HÏ Grip transactionele e-mailontwerpen (bedankt/order-bevestiging, review-verzoek, kortingscode-ontvangen, kortingscode-herinnering, winkelmandje/cart-abandonment) staan als preview-gallery gepubliceerd:

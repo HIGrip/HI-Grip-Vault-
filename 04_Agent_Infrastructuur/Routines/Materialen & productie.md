@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Materialen & productie (22e van de maand, 07:15)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Materialen & productie** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Materialen & productie.md` in de HÏ Grip-vault." Wijzig de werking hier.

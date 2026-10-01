@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Ideale Partner Profiel — HÏ Grip
 
 > Beschrijving van de B2B doelgroepen die we als partner willen binnenhalen. Volledige doelgroep-beschrijvingen: zie [[Doelgroep & Persona's]]. Merkfundament: zie [[Brand Identity Overview]].

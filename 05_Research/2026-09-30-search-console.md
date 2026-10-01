@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Search Console & rankings — week 40
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Tweede meting van deze routine. Search Console en GA4 waren beide bereikbaar (`check` gaf "ok"). De maandtrend (28 dagen) blijft sterk positief op alle KPI's; de weektrend daalt voor de tweede week op rij in klikken, bij aantallen die nog te klein zijn voor een harde conclusie. Twee onderdelen kon ik weer niet meten: het generatieve-AI-impressierapport en de indexeringsstatus.

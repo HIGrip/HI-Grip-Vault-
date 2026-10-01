@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Search Console & rankings (wekelijks, woensdag)
 
 > Promptbestand. De routine bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Search Console & rankings.md` in de HÏ Grip-vault." Nieuw, eerste in de rij (besluit 25 sep 2026).

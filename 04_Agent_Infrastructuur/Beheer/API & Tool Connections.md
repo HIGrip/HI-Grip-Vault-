@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # API & Tool Connections
 
 > Technische tool-regels die voor meerdere agents (kunnen) gelden — niet gebonden aan één hoofdagent. Agent-specifieke tool-afspraken (bv. het IG-zoekscript) blijven in het `soul.md` van die agent staan; hier komt het pas bij zodra een regel breder relevant wordt.

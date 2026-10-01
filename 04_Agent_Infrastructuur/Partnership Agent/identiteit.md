@@ -1,3 +1,9 @@
+---
+type: identiteit
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Identiteit — Partnership Agent
 
 ## Rol

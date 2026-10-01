@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Samenwerking Strategie — HÏ Grip (Lijn B: Events & Activaties)
 
 > Waarom en wat we zoeken. Voor de toetsingscriteria en uitsluitingen: zie [[Voorwaarden Samenwerking]]. Voor hoe te zoeken: zie [[Zoek Script & Gids (Samenwerkingen)]]. Voor B2B klanten (inkoop): zie [[Partnership Strategie]] in Lijn A. Merkfundament: [[Brand Identity Overview]].

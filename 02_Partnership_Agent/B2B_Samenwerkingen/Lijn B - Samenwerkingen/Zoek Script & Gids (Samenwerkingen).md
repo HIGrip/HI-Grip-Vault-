@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Zoek Script & Gids (Samenwerkingen) — Lijn B
 
 > Handleiding voor het zoeken naar samenwerkingspartners (events/activaties). Dit is een **levend document**: bij elke zoekactie aanvullen met kanalen/zoektermen die werken, en schrappen wat niet werkt. Doel is de agent bij elke ronde sterker te maken.

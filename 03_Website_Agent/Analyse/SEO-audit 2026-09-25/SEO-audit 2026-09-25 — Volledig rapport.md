@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # SEO-audit higrip.nl — 25 september 2026
 
 **Site:** https://www.higrip.nl (Shopify, Horizon-theme, NL + /en)  ·  **Type:** e-commerce (D2C + B2B)  ·  **Gecrawld:** 109 sitemap-URL's (54 NL + 54 EN + agents.md)

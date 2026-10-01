@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Actieplan SEO higrip.nl — 25-9-2026
 
 Geprioriteerd op impact × moeite. Details en bewijs per punt in `FULL-AUDIT-REPORT.md` en `findings/`.

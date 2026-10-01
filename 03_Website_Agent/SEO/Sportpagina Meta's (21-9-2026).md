@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Sportpagina Meta's (21-9-2026)
 
 Meta title (max 60) en description (max 155) voor de 4 sportpagina's. Plakken in Shopify admin → Pagina's → pagina → Zoekmachine-weergave. Opgesteld door de SEO Agent; keywords zijn aannames uit de vault, geen keyword-tooldata. Zie ook [[Sportlanding-systeem (21-9-2026)]].

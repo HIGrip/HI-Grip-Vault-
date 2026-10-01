@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Gripsokken voor futsal
 
 > Sportgids — blogartikel. Zie [[Sportgidsen — overzicht en instructies]] voor hoe je dit plaatst.

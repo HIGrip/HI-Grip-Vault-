@@ -1,3 +1,9 @@
+---
+type: soul
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Soul — Content Agent
 
 ## Autonomie per taak

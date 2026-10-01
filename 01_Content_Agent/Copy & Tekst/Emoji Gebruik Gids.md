@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Emoji Gebruik Gids — HÏ Grip
 
 > Welke emojis HÏ Grip gebruikt en hoe. Voor tone of voice: zie [[Brand Voice & Tone of Voice]].

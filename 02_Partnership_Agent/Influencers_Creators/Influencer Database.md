@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Influencer Database — HÏ Grip
 
 > Bijgewerkt: 2026-08-18

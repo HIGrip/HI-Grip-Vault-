@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # 00 Brand Core — het fundament van HÏ Grip
 
 > Hoofdbestand van de vault. Alles wat HÏ Grip maakt, schrijft, onderzoekt of beslist, bouwt hierop voort. **Elke notitie in de vault verwijst hiernaar terug** (de navigatieregel `Brand Core (00)` bovenaan of onderaan elke notitie). Spreekt een notitie de Brand Core tegen, dan wint de Brand Core.

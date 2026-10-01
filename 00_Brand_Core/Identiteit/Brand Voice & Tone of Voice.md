@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Brand Voice & Tone of Voice — HÏ Grip
 
 > Hoe HÏ Grip communiceert: verbale identiteit, tone of voice, core messages, slogans en productnamen. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 01 (core message) en 10 (verbale identiteit): https://canva.link/a48n60z2ay1g7bp. Voor merkverhaal en waarden: zie [[Brand Identity Overview]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Website-UX (4e en 18e van de maand, 06:45)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Website-UX** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Website-UX.md` in de HÏ Grip-vault." Wijzig de werking hier.

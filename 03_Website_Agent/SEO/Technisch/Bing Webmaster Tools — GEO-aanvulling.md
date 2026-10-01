@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Bing Webmaster Tools — GEO-aanvulling
 
 **Gekoppeld:** 2026-09-28 · **Site:** https://www.higrip.nl/ (geverifieerd in Bing)

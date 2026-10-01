@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Technical SEO Findings — higrip.nl
 
 Audited: 2026-09-25. Scope: all 109 URLs listed in the sitemap (product,

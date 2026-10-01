@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-mail Verzending & Techniek — HÏ Grip
 
 > Vastgelegd 2026-09-14, op basis van input van lars. Dit bestand is de technische tegenhanger van [[E-mail Design & Stijlgids]] (dat gaat over hoe een e-mail eruitziet, dit over hoe hij verstuurd wordt en hoe content erin automatisch meebeweegt).

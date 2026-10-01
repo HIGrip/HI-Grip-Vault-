@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Denzel-weekoverzicht (maandag 06:45)
 
 > Promptbestand. De routine op info@ bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md` in de vault-repo." Wijzig de werking hier.

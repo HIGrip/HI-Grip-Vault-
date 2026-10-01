@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-mail Design & Stijlgids — HÏ Grip
 
 > Vastgelegd 2026-09-14. Elke nieuwe e-mail moet qua stijl aansluiten bij de 5 eerder gemaakte e-mailontwerpen — zie [[E-mail Mailflows Artifact]] voor het overzicht/de links.

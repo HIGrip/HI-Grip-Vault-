@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Evaluatiecriteria — HÏ Grip Influencer Zoek Agent
 
 > Bijgewerkt: 2026-09-23

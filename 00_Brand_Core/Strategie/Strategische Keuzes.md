@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Strategische Keuzes — HÏ Grip
 
 > De marketingstrategie van HÏ Grip: uitgangspunt, tactiek en uitvoering. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, deel 3 (hoofdstuk 12): https://canva.link/a48n60z2ay1g7bp. Voor missie en visie: zie [[Brand Identity Overview]]. Voor de doelgroep: zie [[Doelgroep & Persona's]].

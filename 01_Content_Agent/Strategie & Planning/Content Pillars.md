@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Content Pillars — HÏ Grip
 
 > De 5 contentpilaren, content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].

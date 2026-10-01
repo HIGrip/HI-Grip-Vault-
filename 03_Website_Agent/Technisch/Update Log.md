@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Update Log — Website Agent
 
 > Datumgewijze log van daadwerkelijk doorgevoerde wijzigingen aan Shopify-thema's. Voor de procedure zelf: zie [[Technische Procedures]]. Voor de inhoudelijke checklist erachter: zie [[Conversie Optimalisatie Checklist]].

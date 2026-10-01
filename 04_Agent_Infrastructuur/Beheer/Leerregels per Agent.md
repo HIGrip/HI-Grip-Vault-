@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Leerregels per Agent
 
 > Het geheugen van het agent-systeem. Sub-agents starten koud en onthouden niets; hier staat wat ze van eerdere opdrachten, correcties en reviews moeten weten. Denzel voegt regels toe volgens [[Opdrachtprotocol]] (stap 8) en geeft de relevante regels mee in elke briefing. Regels hebben een reden en een datum. Verouderde of tegenstrijdige regels worden aangepast of verwijderd, niet opgestapeld. Een leerregel versoepelt nooit een harde grens of autonomie-niveau.
@@ -61,3 +67,5 @@ Formaat: `- **Regel.** Reden. (datum, bron)`
 ## Voor Denzel
 - **Controleer thema-ID's met `shopify theme list` voordat je ze uit de vault overneemt.** Op 2026-10-01 stond de vault op live `200269398343`, terwijl de echte live-rol `201132507463` was. (2026-10-01, themacontrole)
 - **Verifieer de zwaarste bevindingen zelf in de bron** voordat je ze doorgeeft. (2026-10-01, test Opdrachtprotocol)
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

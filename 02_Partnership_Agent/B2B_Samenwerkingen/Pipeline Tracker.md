@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Pipeline Tracker — B2B Samenwerkingen (gedeeld Lijn A + Lijn B)
 
 > Alleen echte outreach-status hier (nieuw / benaderd / in gesprek / klant of actief). Kandidaten die nog niet benaderd zijn horen niet hier, maar in:

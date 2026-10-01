@@ -1,3 +1,9 @@
+---
+type: index
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # 01 Content Agent — Index
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
@@ -20,7 +26,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### Strategie & Planning
 - [[Content Kalender Template]]
-- [[01_Content_Agent/Strategie & Planning/Content Pillars|Strategie & Planning/Content Pillars]]
+- [[Content Pillars]]
 - [[Content Strategie]]
 - [[Platform Richtlijnen]]
 - [[Posting Frequentie per Platform]]

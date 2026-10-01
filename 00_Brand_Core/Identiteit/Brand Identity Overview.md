@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Brand Identity Overview — HÏ Grip
 
 > Centrale bron voor oerverhaal, filosofie, missie, visie, kernwaarden, waarden en de pitch. Alle andere bestanden linken hier naartoe; dit is de enige plek waar deze informatie staat.

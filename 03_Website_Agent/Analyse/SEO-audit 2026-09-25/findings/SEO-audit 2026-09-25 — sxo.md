@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # SXO Findings: higrip.nl (Search Experience)
 
 Audit date: 2026-09-25 · Pages were fetched with render_page.py (`--mode auto`). All pages are server-rendered Shopify with `is_spa=false`. SERP data comes from WebSearch (NL queries).

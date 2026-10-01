@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Stock Bronnen — HÏ Grip
 
 > **Status: nog te vullen** (leeg aangetroffen 2026-08-30). Bedoeld voor: de vaste bronnen voor stockbeeld en -footage (foto, video, muziek staat apart in [[Muziek & Licenties]]), met licentievorm en kosten per bron. Tot dit gevuld is, is dit geen bruikbare bron.

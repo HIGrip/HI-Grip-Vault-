@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-mail Lijst Strategie — HÏ Grip
 
 > Vastgelegd 2026-09-14. Bouwt voort op [[E-mail Marketing Benchmarks]] (cijfers/ratio's) en gebruikt de bestaande [[Doelgroep & Persona's]] en [[Content Pillars]] als basis. Status: **voorstel — nog niet doorgevoerd.**

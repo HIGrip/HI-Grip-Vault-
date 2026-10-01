@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Conversie Optimalisatie Checklist — HÏ Grip
 
 > Actiepunten uit live-audit www.higrip.nl, 2026-07-14. Achtergrond/redenering per punt: zie [[SEO Strategie & Keywords]] en [[Homepage Copy & Structuur]]. Status: **voorstel — nog niet doorgevoerd**, wacht op akkoord conform [[Agent Takenverdeling & Grenzen]].

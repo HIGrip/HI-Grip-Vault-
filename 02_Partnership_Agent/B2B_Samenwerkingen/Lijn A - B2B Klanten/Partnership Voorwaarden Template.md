@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Partnership Voorwaarden Template — Lijn A (B2B Klanten)
 
 > **Status: nog te vullen** (leeg aangetroffen 2026-08-30). Bedoeld voor: de standaardvoorwaarden waaronder HÏ Grip een B2B-klant/afnemer aanneemt (clubdeal, bundeldeal, verkooppunt) — als invulbaar sjabloon. Voor Lijn B (events/activaties) bestaat dit al: [[Voorwaarden Samenwerking]].

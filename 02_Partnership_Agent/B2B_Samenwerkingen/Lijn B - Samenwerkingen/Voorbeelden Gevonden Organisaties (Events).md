@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Voorbeelden Gevonden Organisaties (Events) — Lijn B
 
 > Status: **goedgekeurde kandidaten** — nog niet benaderd. Dienen als kalibratie: zo ziet een goede match eruit. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]]. Voor redenen waarom andere organisaties NIET goedgekeurd zijn: zie [[Voorwaarden Samenwerking]] (uitsluitingen).

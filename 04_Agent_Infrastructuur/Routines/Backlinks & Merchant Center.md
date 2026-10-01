@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Backlinks & Merchant Center (1e van de maand, 07:30)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Backlinks & Merchant Center** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Backlinks & Merchant Center.md` in de HÏ Grip-vault." Wijzig de werking hier.

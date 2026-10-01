@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Outreach Templates — HÏ Grip
 
 > Scripts voor bellen en mailen naar sportswinkels, sportclubs en sportscholen. Voor de doelgroep-beschrijvingen: zie [[Doelgroep & Persona's]] en [[Ideale Partner Profiel]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Agent Takenverdeling & Grenzen — Partnership Agent
 
 > Legt vast wat de Partnership Agent zelfstandig mag doen, wat als voorstel langs lars moet, en wat altijd eerst overleg vereist. Ingevuld door lars op 19 augustus 2026 via het interactieve grenzen-formulier — zelfde format als [[Agent Takenverdeling & Grenzen]] (Website Agent).

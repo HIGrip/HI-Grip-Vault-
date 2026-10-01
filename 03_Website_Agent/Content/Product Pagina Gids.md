@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Product Pagina Gids — HÏ Grip
 
 > **Status: nog te vullen** (leeg aangetroffen 2026-08-30). Wordt in [[04_Agent_Infrastructuur/Website Agent/identiteit|Website Agent — identiteit]] als kernbron genoemd voor de Website Copy Agent, maar bevat nog geen inhoud. Voor de homepage bestaat het equivalent wél: [[Homepage Copy & Structuur]].

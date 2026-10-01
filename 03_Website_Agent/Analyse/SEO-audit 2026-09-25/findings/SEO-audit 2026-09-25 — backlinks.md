@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Backlink Profile — higrip.nl
 
 **Tier: 0** (Common Crawl + Verification Crawler only — no Moz, Bing, or DataForSEO keys configured)

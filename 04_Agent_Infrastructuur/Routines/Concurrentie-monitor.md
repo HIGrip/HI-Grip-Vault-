@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Concurrentie-monitor (8e en 22e van de maand, 06:30)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Concurrentie-monitor** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Concurrentie-monitor.md` in de HÏ Grip-vault." Wijzig de werking hier.

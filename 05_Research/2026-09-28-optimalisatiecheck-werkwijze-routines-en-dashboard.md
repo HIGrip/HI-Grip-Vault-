@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Optimalisatiecheck werkwijze routines en dashboard — 28 september 2026
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 De keten routine → vault → dashboard werkt voor de onderzoeksroutines: alles van vandaag staat op `HÏ-Grip-Vault-obsidian`. De Actiecontrole, het hart van het afvinken en de dashboardcijfers, legt sinds 26-09 niets meer vast. Oorzaak: de cloudroutine heeft geen bronrepository. Verder lekt er werk weg via archivering en dubbele acties.
 

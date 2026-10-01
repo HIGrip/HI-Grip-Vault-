@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Schema.org / Structured Data Audit — higrip.nl
 Date: 2026-09-25 | Fetched via render_page.py, mode=auto (all pages confirmed server-rendered, `is_spa: false`, JSON-LD present in raw HTML — not client-injected).
 

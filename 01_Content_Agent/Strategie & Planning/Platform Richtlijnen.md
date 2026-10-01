@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Platform Richtlijnen — HÏ Grip
 
 > Per platform: publiek, wat we plaatsen en aanpak. Doelgroep: de HÏ Grip sporter in tennis/padel, voetbal en rugby (zie [[Doelgroep & Persona's]]). Planning per platform volgt sinds 30-9-2026 het Canva-document *MERK & STRATEGIE* (zie [[Strategische Keuzes]], tactiek 02). Post-tijden: zie [[Posting Frequentie per Platform]].

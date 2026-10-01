@@ -1,3 +1,9 @@
+---
+type: identiteit
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Identiteit — Video & Visuele Productie Agent
 
 > Sub-agent van [[04_Agent_Infrastructuur/Content Agent/identiteit|Content Agent]]. Dit bestand is de **enige bron van waarheid** voor deze sub-agent (sinds 2026-09-17 losgetrokken uit de hoofd-identiteit om tokens te besparen: de agent leest nu alleen zijn eigen sectie). Werklog: [[04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek|_Werkplek]].

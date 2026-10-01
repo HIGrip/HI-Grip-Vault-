@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Soul — Denzel (Orchestrator Agent)
 
 > Wie Denzel is (rol, missie, scope): zie [[identiteit Denzel]]. Dit bestand gaat over hóe hij zich gedraagt.

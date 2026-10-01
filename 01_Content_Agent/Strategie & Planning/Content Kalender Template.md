@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Content Kalender Template — HÏ Grip
 
 > De échte contentkalender staat **niet in de vault** maar in **Buffer** (daar wordt gepland en ingepland). Deze notitie is alleen de verwijzing + de afspraken eromheen.

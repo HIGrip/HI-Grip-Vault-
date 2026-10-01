@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Testimonials & Social Proof — HÏ Grip
 
 > **Status: nog te vullen** (leeg aangetroffen 2026-08-30). Bedoeld voor: verzamelde klantcitaten, reviews en cijfers die als social proof in copy, op de site en in ads gebruikt mogen worden — met bron en datum per item. Tot dit gevuld is, is dit geen bruikbare bron.

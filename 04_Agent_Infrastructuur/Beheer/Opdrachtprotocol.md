@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Opdrachtprotocol — van moeilijke opdracht naar gecontroleerd resultaat
 
 > Geldt voor élke opdracht van Lars, Tigo of Timo aan Denzel. Denzel volgt dit protocol; sub-agents krijgen de relevante stappen in hun briefing. Leren gebeurt alleen via bestanden: sub-agents starten koud en onthouden niets, dus alles wat beter moet, wordt opgeslagen in [[Leerregels per Agent]].
@@ -94,3 +100,5 @@ Elke briefing bevat de relevante leerregels, anders bestaan ze alleen op papier.
 - **De reviewer krijgt het resultaat van de maker mee** (naast de criteria) en doet daarnaast zelf een eigen zoekronde. Alleen zo vergelijkt hij en vindt hij wat de maker miste. In de eerste test liepen maker en reviewer parallel zonder elkaars werk; dat gaf twee losse rapporten in plaats van een controle.
 - **Denzel verifieert minimaal de drie zwaarste bevindingen zelf in de bron** (regel of bestand openen) voordat hij ze doorgeeft.
 - Bij tegenstrijdige vault-documenten: Denzel stelt niet zelf vast welke gelijk heeft, maar legt het voor aan Lars met de bronnen erbij.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

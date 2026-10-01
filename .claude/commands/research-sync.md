@@ -18,3 +18,5 @@ Grenzen:
 - Publish-conflict of geweigerde push → stoppen en melden, niet forceren.
 
 Rapport: aantal toegepast per collectie, overgeslagen docs met reden, commit-hash.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

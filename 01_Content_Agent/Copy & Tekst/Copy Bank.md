@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Copy Bank — HÏ Grip
 
 > Gebruiksklare copy per situatie. De canonieke lijst (primaire tagline, vaste slogans, core messages) staat in [[Brand Voice & Tone of Voice]] en volgt sinds 30-9-2026 het Canva-document *MERK & STRATEGIE — HÏ Grip*. Gebruik alleen onderstaande lijnen; andere slogans zijn geen merkslogan.

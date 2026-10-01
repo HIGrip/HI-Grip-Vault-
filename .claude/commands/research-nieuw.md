@@ -26,3 +26,5 @@ Grenzen:
 - Kan dit account niet publiceren (dashboard is van info@)? Registreer en commit dan wel; het dashboard wordt bij de volgende routine-run bijgewerkt. Meld dat.
 
 Afsluiting: één regel met welke notitie, hoeveel verbanden en de dashboard-URL.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

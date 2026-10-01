@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Voorbeelden Gevonden Organisaties — B2B Klanten (Lijn A)
 
 > Status: **voorbeelden/kandidaten** — nog niet benaderd, nog niks mee gedaan. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Beachhead Strategie — HÏ Grip
 
 > **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 12 · De uitvoering: https://canva.link/a48n60z2ay1g7bp.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Productradar (8e van de maand, 07:15)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Productradar** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Productradar.md` in de HÏ Grip-vault." Wijzig de werking hier.

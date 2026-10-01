@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Agent Hiërarchie & Structuurschema
 
 > Legt de volledige laagstructuur vast: Denzel (Orchestrator Agent) boven de 3 hoofdagents, en sub-agents als catalogus-items ónder elke hoofdagent. Voor de bestandsopbouw van een los agent-profiel (soul/identiteit + de gedeelde user.md): zie [[Agent Bestandsschema (Soul, Identiteit, User)]].

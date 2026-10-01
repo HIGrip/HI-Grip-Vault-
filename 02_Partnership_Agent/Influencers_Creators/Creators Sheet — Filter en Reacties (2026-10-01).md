@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Creators-sheet — gefilterd door Lars, verwijderd en reacties (2026-10-01)
 
 > Bron: Google Sheet *Collabs - HÏ Grip*, tabblad **Creators**, gelezen op 2026-10-01 nadat Lars de lijst had gefilterd.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Aanpak — HÏ Grip Zoek Agent
 
 > Wat er per zoeklijn moet gebeuren om de doelen in [[Doelen]] te halen. Zie [[Overzicht]] voor context. Elke actie hieronder — outreach, contentkeuze, welke partner je aanspreekt — is een uiting van het merk: toon en stijl volgen [[Brand Voice & Tone of Voice]], fit volgt uit [[Brand Identity Overview]].

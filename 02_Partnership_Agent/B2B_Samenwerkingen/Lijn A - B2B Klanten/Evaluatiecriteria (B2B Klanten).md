@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Evaluatiecriteria — B2B Klanten (Lijn A)
 
 > Bron: `HiGrip_B2B_Samenwerking_Criteria.docx` (versie 2.0, OneDrive/Documents), Deel 1. Deel 2 van hetzelfde document (Samenwerkingen & Events) hoort bij de Partnerships & Events Agent — nog over te zetten wanneer die aan de beurt is. Voor de bredere doelgroepbeschrijving: zie [[Ideale Partner Profiel]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Zoek Script & Gids — HÏ Grip Influencer Zoek Agent
 
 > Bijgewerkt: 2026-08-25 (v4.6 — bio-extractie in DOM-fallback gefixt (was 0/166) + parse_count las duizendtal-getallen fout ("1.594" → 1))

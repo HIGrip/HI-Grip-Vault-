@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routines — overzicht en rolverdeling
 
 > Alle routines draaien (straks) als cloudroutine op het account **info@higrip.nl**, zodat ze altijd draaien en iedereen ze ziet. De prompt van elke routine staat in deze map; de routine op claude.ai/code/routines bevat alleen een korte verwijzing naar het promptbestand. Een prompt wijzigen = dit bestand wijzigen en committen, niet de routine zelf.

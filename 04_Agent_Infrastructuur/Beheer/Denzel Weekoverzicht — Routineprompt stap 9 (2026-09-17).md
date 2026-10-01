@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)
 
 > **Handmatige stap voor lars.** De routine-id uit [[Denzel Weekoverzicht — Routine]] (`trig_01D9XwMiVvuq1FWr7CLoYTmN`) gaf op 17-09-2026 een 404 via de routine-API, dus de prompt kon niet automatisch worden bijgewerkt. Open https://claude.ai/code/routines, zoek de maandag-routine van Denzel, en vervang in de prompt de stap die het weekoverzicht naar `04_Agent_Infrastructuur/Beheer/Weekoverzicht/` schrijft door de tekst hieronder. Alle andere stappen (voortgang, zoekacties, live-site-check, SEO-check, GA4-funnel-check, AI-nieuws, vooruitblik, Agent Werk & Kwaliteit Overzicht, commit + push) blijven exact zoals ze zijn.

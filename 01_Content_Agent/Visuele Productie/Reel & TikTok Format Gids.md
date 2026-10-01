@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 
 > Vaste structuur en regels voor Reels en TikToks. Voor editing stijl: zie [[Editing Stijl Gids Video]]. Voor captions: zie [[Caption Gids per Platform]].
 

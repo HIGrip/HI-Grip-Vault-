@@ -1,3 +1,9 @@
+---
+type: werkplek
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Werkplek — E-mail Marketing Agent
 
 ## Status: idee (sinds 2026-09-14)

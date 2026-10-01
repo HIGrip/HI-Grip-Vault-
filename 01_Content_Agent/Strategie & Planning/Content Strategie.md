@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Content Strategie — HÏ Grip
 
 > De sociale media strategie van HÏ Grip: positionering, de 4 content types, performance momenten en engagement aanpak. Voor doelgroepen: zie [[Doelgroep & Persona's]]. Voor platforms: zie [[Platform Richtlijnen]].

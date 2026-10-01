@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Goedkeuringsworkflow — Website Agent
 
 > Hoe voorstellen en wijzigingen van de Website Agent goedgekeurd worden voordat ze live gaan. Voor de volledige taakverdeling: zie [[Agent Takenverdeling & Grenzen]].

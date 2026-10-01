@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Visual / Mobile Audit — higrip.nl
 
 Date: 2026-09-25

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # GEO / AI Search Readiness — higrip.nl
 
 Audit date: 2026-09-25 (re-audit; supersedes the 2026-09-18 version)

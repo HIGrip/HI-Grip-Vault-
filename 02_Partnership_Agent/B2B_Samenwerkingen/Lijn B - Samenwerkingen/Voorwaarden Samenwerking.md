@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Voorwaarden Samenwerking — Lijn B
 
 > Toetsingscriteria: bepaalt of een gevonden organisatie een geldige kandidaat is. Altijd hier toetsen vóór iets bij [[Voorbeelden Gevonden Organisaties (Events)]] wordt gezet. Basis: `HiGrip_B2B_Samenwerking_Criteria.docx` (OneDrive/Documents) Deel 2, aangevuld met geleerde regels.

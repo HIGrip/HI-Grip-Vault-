@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Klantstem (1e en 15e van de maand, 06:45)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Klantstem** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Klantstem.md` in de HÏ Grip-vault." Wijzig de werking hier.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Brand Sound — HÏ Grip
 
 > Samenvatting van de audio-identiteit van HÏ Grip. Uitgebreide omschrijving: zie [[Brand Symbolen]]. Spotify-playlists: zie [[Muziek & Licenties]].

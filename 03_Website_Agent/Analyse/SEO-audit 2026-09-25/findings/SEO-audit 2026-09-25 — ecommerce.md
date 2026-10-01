@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-commerce SEO Audit — higrip.nl
 
 Date: 2026-09-25

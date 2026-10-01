@@ -1,3 +1,9 @@
+---
+type: identiteit
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Identiteit — Conversie & Analyse Agent
 
 > Sub-agent van [[04_Agent_Infrastructuur/Website Agent/identiteit|Website Agent]]. Dit bestand is de **enige bron van waarheid** voor deze sub-agent (sinds 2026-09-17 losgetrokken uit de hoofd-identiteit om tokens te besparen: de agent leest nu alleen zijn eigen sectie). Werklog: [[04_Agent_Infrastructuur/Website Agent/Analyse/Conversie & Analyse Agent/_Werkplek|_Werkplek]].

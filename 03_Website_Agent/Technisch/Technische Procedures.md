@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Technische Procedures — Website Agent
 
 > Hoe de agent daadwerkelijk in Shopify-code werkt. Voor wie dit mag beoordelen/goedkeuren: zie [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]]. Voor hoe de toegang tot stand kwam (en wat NIET werkte): zie [[API & Tool Connections]] in 04_Agent_Infrastructuur/Beheer.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Editing Stijl Gids Video — HI Grip
 
 > Hoe HI Grip video's eruit zien en aanvoelen. Referentie voor elke editor. Voor visuele brand identiteit: zie [[Logo & Kleurenpalet]].

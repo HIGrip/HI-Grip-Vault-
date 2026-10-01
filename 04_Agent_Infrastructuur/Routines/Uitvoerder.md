@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Uitvoerder (dagelijks 06:15)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Uitvoerder** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Uitvoerder.md` in de HÏ Grip-vault." Wijzig de werking hier.

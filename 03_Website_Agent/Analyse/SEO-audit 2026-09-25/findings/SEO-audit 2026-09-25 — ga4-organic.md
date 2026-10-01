@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # GA4 organic data (analytics-mcp, property 476032345, 2026-08-01 – 2026-09-24)
 
 Note: GA4 tag was dead Jan–Aug 2026, so only ~8 weeks of data. No GSC connection (plugin google_auth not configured) → no queries/impressions/indexation data.

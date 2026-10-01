@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Muziek & Licenties — HÏ Grip
 
 > Spotify-playlists per content type. Voor de muziekstijlen en audio-identiteit: zie [[Brand Symbolen]].

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Routine — Verbanden & kansen (zaterdag 06:30, 1e zaterdag = maandeditie)
 
 > Promptbestand. De routine op info@ heet **HÏ Grip — Verbanden & kansen** en bevat alleen: "Lees en volg `04_Agent_Infrastructuur/Routines/Verbanden & kansen.md` in de HÏ Grip-vault." Wijzig de werking hier.

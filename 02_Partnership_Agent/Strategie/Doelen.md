@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Doelen — HÏ Grip Zoek Agent
 
 > Cijfers en targets per zoeklijn: wat is het doel, wat is de huidige stand, hoeveel per maand. Deze doelen bestaan om één reden: het merk laten groeien (zie [[Brand Identity Overview]]) — elke nieuwe klant, creator of samenwerking moet bijdragen aan de visie van HÏ Grip: binnen vijf jaar een gewaardeerd merk in heel Europa, en in 2031 te vinden bij de grootste retailers en bekende sportclubs (zie [[Strategische Keuzes]]). Leidend sinds 30-9-2026: Canva-document *MERK & STRATEGIE*. Zie [[Overzicht]] voor context, [[Aanpak]] voor de uitvoering.

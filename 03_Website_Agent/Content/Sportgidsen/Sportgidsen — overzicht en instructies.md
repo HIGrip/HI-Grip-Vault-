@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Sportgidsen — overzicht en instructies
 
 > Overzicht van de zeven sportgidsen (blogartikelen voor SEO) en hoe je ze in Shopify plaatst. Aangemaakt op 2026-09-28: alle gidsen verwezen al naar deze notitie, maar ze bestond nog niet. De stappen hieronder komen uit de velden die elke gids zelf al noemt.

@@ -1,3 +1,9 @@
+---
+type: index
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # 04 Agent Infrastructuur — Index
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
@@ -26,7 +32,10 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)]]
 - [[Feedback & Iteratie Log]]
 - [[Goedkeuringsworkflow]]
+- [[Leerregels per Agent]]
+- [[Opdrachtprotocol]]
 - [[Stappenplan — Verdere Bouw]]
+- [[Verbeterlus]]
 - [[user]]
 
 ### Beheer/Weekoverzicht
@@ -45,7 +54,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/identiteit|Caption & Copy Agent/identiteit]]
 
 ### Content Agent/Strategie & Planning
-- [[04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Pillars|Strategie & Planning/Content Pillars]]
+- [[Content Pillars — Buffer-tags]]
 
 ### Content Agent/Strategie & Planning/Content Strategie & Planning Agent
 - [[04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek|Content Strategie & Planning Agent/_Werkplek]]

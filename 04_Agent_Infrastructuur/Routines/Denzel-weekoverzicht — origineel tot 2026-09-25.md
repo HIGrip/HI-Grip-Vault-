@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Denzel-weekoverzicht — originele routineprompt (tot 25 september 2026)
 
 > Letterlijke back-up van de prompt die op info@ in de Denzel-routine stond. Vervangen door [[Denzel-weekoverzicht]]. Niet meer gebruiken; alleen ter referentie.

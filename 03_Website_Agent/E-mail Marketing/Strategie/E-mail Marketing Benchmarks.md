@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # E-mail Marketing Benchmarks — HÏ Grip
 
 > Referentiecijfers vastgelegd 2026-09-14, op basis van de gebruikelijke branchecijfers voor e-commerce/fashion-webshops (Klaviyo/Omnisend/Mailchimp-achtige benchmarks — dichtst bij HÏ Grip qua sector). Geen eigen meting, bedoeld als vergelijkingspunt zodra er genoeg eigen verzendvolume is. Zie [[E-mail Mailflows Artifact]] voor de 5 bestaande flow-ontwerpen.

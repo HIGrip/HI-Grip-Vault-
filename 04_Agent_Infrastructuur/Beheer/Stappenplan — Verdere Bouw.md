@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Stappenplan — Agent-structuur verder bouwen
 
 > Volgorde en prioriteit hieronder volgen uit wat er nu al staat — niet uit het niets bedacht. Voor de structuur zelf: zie [[Agent Hiërarchie & Structuurschema]]. Voor de status per bestand: zie [[Agent Bestandsschema (Soul, Identiteit, User)]].

@@ -1,3 +1,9 @@
+---
+type: soul
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Soul — Website Agent
 
 ## Autonomie per taak

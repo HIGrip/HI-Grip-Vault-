@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Design Elementen — HÏ Grip
 
 > Het bouwpakket waarmee elk HÏ Grip-design herkenbaar wordt. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 06–07: https://canva.link/a48n60z2ay1g7bp. Voor kleuren en typografie: zie [[Logo & Kleurenpalet]]. Voor iconen: zie [[Iconografie]]. Voor beeldregie: zie [[Fotografie & Art-Direction]].

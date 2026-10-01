@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Homepage Copy & Structuur — HÏ Grip
 
 > Baseline + psychologie-audit vastgelegd 2026-07-14 op basis van live www.higrip.nl. Voor tone of voice: zie [[Brand Voice & Tone of Voice]]. Voor bredere actiepunten: zie [[Conversie Optimalisatie Checklist]].

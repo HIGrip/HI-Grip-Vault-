@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Semantic Cluster Analysis — higrip.nl (NL)
 
 Date: 2026-09-25 | Scope: NL URLs from urls.txt (23 blog posts, 5 sport/hub pages, collection) | Market: google.nl, Dutch

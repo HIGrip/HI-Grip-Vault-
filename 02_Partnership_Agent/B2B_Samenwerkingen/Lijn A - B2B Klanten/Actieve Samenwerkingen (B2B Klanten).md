@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Actieve Samenwerkingen (B2B Klanten) — Lijn A
 
 > Zie ook: [[Ideale Partner Profiel]] · [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] · [[Pipeline Tracker]]

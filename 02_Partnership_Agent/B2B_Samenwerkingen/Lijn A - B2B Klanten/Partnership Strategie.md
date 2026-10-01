@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: partnership-agent
+bijgewerkt: 2026-10-01
+---
+
 # Partnership Strategie — HÏ Grip
 
 > Aanpak voor het binnenhalen en onderhouden van B2B partnerships (Lijn A: klanten/inkoop) — dit bestaat om het merk te laten groeien, zie [[Brand Identity Overview]]. Voor specifieke doelgroepen: zie [[Ideale Partner Profiel]]. Voor bel- en mailscripts: zie [[Outreach Templates]]. Voor samenwerkingen/events (Lijn B): zie [[Samenwerking Strategie]].

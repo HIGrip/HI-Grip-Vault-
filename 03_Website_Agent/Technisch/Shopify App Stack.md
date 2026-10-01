@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Shopify App Stack — HÏ Grip
 
 > Technische basis waarmee de Website Agent werkt. Voor de werkwijze zelf: zie [[Technische Procedures]]. Voor hoe deze toegang tot stand kwam (en wat niet werkte): zie [[API & Tool Connections]] in 04_Agent_Infrastructuur/Beheer.

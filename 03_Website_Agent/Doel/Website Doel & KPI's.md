@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Website Doel & KPI's — HÏ Grip
 
 > Vastgelegd 2026-07-16 op basis van doelstelling lars, KPI-aanpak aangescherpt zelfde dag. Status: **voorstel — nog niet volledig ingevuld**, wacht op analytics-toegang (vanaf 2026-08-01).

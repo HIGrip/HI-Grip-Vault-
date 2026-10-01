@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Concurrentieanalyse — HÏ Grip
 
 > **Status: nog te vullen** (leeg aangetroffen 2026-08-30). Bedoeld voor: overzicht van andere aanbieders van gripsokken / performance-sportswear — positionering, prijs, kanalen, sterktes/zwaktes t.o.v. HÏ Grip. Tot dit gevuld is, is dit geen bruikbare bron.

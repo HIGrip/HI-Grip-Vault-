@@ -1,3 +1,9 @@
+---
+type: identiteit
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Identiteit — B2B Klanten Agent
 
 > Sub-agent van [[04_Agent_Infrastructuur/Partnership Agent/identiteit|Partnership Agent]]. Dit bestand is de **enige bron van waarheid** voor deze sub-agent (sinds 2026-09-17 losgetrokken uit de hoofd-identiteit om tokens te besparen: de agent leest nu alleen zijn eigen sectie). Werklog: [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent/_Werkplek|_Werkplek]].

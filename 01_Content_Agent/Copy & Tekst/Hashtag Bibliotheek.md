@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Hashtag Bibliotheek — HÏ Grip
 
 > Hashtags per platform. Voor de volledige platformstrategie: zie [[Platform Richtlijnen]].

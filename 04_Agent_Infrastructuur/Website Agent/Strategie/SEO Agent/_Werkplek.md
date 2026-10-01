@@ -1,3 +1,9 @@
+---
+type: werkplek
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Werkplek — SEO Agent
 
 ## Status: in ontwikkeling (sinds 2026-08-09)

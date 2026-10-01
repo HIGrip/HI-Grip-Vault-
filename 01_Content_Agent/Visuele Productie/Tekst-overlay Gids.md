@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Tekst-overlay Gids — HÏ Grip
 
 > Welke tekst-effecten passen bij het merk en wanneer gebruik je ze. Elk effect heeft een visueel voorbeeld zodat je het zelf kunt beoordelen. Voor typografie-regels: zie [[Logo & Kleurenpalet]]. Voor waar tekst in de video staat: zie [[Editing Stijl Gids Video]].

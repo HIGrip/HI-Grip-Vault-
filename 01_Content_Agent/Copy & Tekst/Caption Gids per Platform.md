@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Caption Gids per Platform — HÏ Grip
 
 > Hoe captions schrijven en hoe we omgaan met engagement. Voor tone of voice: zie [[Brand Voice & Tone of Voice]]. Voor hashtags: zie [[Hashtag Bibliotheek]].

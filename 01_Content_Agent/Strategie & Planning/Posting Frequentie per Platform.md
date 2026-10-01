@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Posting Frequentie per Platform — HÏ Grip
 
 > Beste tijden om te posten per platform. Komt overeen met het brandbook (hfst. 07). Voor de platformstrategie: zie [[Platform Richtlijnen]].

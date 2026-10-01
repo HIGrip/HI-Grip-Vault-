@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Analytics & KPI Dashboard — HÏ Grip
 
 > **GA4-toegang is live sinds 2026-08-30** via de `analytics-mcp`-koppeling (zie [[API & Tool Connections]]). Dit bestand wordt gevuld volgens de KPI-aanpak uit [[Website Doel & KPI's]]: resultaat-KPI's (omzet, conversie, AOV, omzet/bezoeker) + een diagnostische laag over *waarom* bezoekers wel/niet kopen. Shopify Analytics blijft bron van waarheid voor omzet/orders; GA4 is voor gedrags-/funnelinzicht.

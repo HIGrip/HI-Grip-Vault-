@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 
 > Stap-voor-stap werkwijze voor elke video — van idee tot gepubliceerd. Voor editing stijl: zie [[Editing Stijl Gids Video]]. Voor structuur per type: zie [[Reel & TikTok Format Gids]].
 

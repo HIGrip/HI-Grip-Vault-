@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Denzel Weekoverzicht — Routine
 
 > [!important] Sinds 25-09-2026

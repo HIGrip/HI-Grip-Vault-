@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Growth Radar — SEO content & keywords (AI Overviews breiden zichzelf nu automatisch uit)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 
 Dagfocus dinsdag: SEO-content en keywords (long-tails, landingspagina's per sport, SERP-features). Concurrentie-content volgt de Concurrentie-monitor (nog geen `*-concurrentie.md` gepubliceerd, dus niets te herhalen). Één harde, van Google bevestigde SERP-featurewijziging gevonden die aan de gate van stap 4 voldoet; overige zoekresultaten waren generieke tipslijsten zonder eigen data of niet terug te voeren op een bron uit de toegestane lijst, en zijn daarom niet opgenomen.

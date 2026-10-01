@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Verbeterlus — Denzel en de agents worden steeds beter, binnen de kaders
 
 > Aanvulling op [[Opdrachtprotocol]]. Het opdrachtprotocol verbetert één opdracht; deze lus verbetert het systeem zelf. Sub-agents onthouden niets, dus alle verbetering zit in bestanden: [[Leerregels per Agent]], de briefing-sjablonen, de zelfcheck-lijsten en de `identiteit.md`-bestanden.
@@ -68,3 +74,5 @@ Eén regel in elke oplevering als er iets is geleerd: `GELEERD: <regel> → vast
 ## Wat dit niet is
 - Geen zelfsturende uitbreiding van bevoegdheden. Meer leren betekent beter werken binnen dezelfde grenzen.
 - Geen reden om de vault vol te schrijven. Een leerregel hoort kort te zijn: regel, reden, datum.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

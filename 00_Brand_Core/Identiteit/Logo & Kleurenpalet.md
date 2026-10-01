@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: brand-core
+bijgewerkt: 2026-10-01
+---
+
 # Logo & Kleurenpalet — HÏ Grip
 
 > Visuele identiteit van HÏ Grip: logo system, naam, kleuren en typografie. **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip*, hoofdstuk 03–05: https://canva.link/a48n60z2ay1g7bp. Voor merkverhaal en waarden: zie [[Brand Identity Overview]]. Voor raster, vormen en sjablonen: zie [[Design Elementen]].

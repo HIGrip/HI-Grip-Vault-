@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Agent Takenverdeling & Grenzen — Website Agent
 
 > Legt vast wat de Website Agent zelfstandig mag doen, wat als voorstel langs lars moet, en wat altijd eerst overleg vereist. Ingevuld door lars op 14 juli 2026 via het interactieve grenzen-formulier. Voor de werkwijze rond Shopify-thema's (test-theme vs live): zie [[Goedkeuringsworkflow]].

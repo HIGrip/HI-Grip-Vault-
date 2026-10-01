@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Claude SEO Plugin — Skills & Agents
 
 > Documentatie van de `claude-seo` Claude Code-plugin (AgriciDaniel/claude-seo) én het resultaat van de eerste volledige audit op higrip.nl (16-09-2026). Installatiedetails staan in [[API & Tool Connections]] (`04_Agent_Infrastructuur/Beheer`). Dit bestand is de inhoudelijke laag: wat de audit vond en wat ermee gedaan is.

@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Content Pillars
 
 Vastgesteld 14-9-2026. Dit zijn letterlijk ook de 3 tags in Buffer's ideeënbord (Buffer staat maximaal 3 tags per organisatie toe, dus pillar = tag, 1-op-1).

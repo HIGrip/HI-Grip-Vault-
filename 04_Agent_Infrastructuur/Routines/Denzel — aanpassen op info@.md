@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Denzel-weekoverzicht aanpassen op info@ (te doen door iemand die op info@higrip.nl is ingelogd)
 
 > Denzel draait als cloudroutine onder **info@higrip.nl**. Vanaf andere accounts is de routine niet te bewerken.

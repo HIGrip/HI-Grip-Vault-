@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: website-agent
+bijgewerkt: 2026-10-01
+---
+
 # Sportlanding-systeem (21-9-2026)
 
 > Herbruikbaar systeem voor sportlandingspagina's op higrip.nl, gebouwd in theme `201133490503` "AI website workspace 2.0" (unpublished; lokaal `C:\Users\lars\ai-workspace-2.0`). Past bij de beachhead-strategie (tennis/rugby/voetbal) en de open vraag over sportpagina's in [[Website Structuur & Sitemap]] en [[SEO Strategie & Keywords]]. Werkwijze/theme-ID's: [[Technische Procedures]]. Meta's: zie [[Sportpagina Meta's (21-9-2026)]] (aparte notitie).

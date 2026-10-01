@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-01
+---
+
 # Template Overzicht — HÏ Grip
 
 > De vijf vaste sjablonen uit het brandbook (hfst. 05) plus waar de werkbestanden staan. Voor de designregels erachter: zie [[Design Elementen]].

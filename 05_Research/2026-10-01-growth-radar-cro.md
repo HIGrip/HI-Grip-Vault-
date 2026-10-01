@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Growth Radar — CRO (1 oktober 2026)
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 ## In het kort
 Shopify's eigen sessiemeting-update van 21-23 september 2026 kan de conversieratio in Shopify Analytics laten verschuiven zonder echte gedragsverandering — relevant omdat higrip.nl rond diezelfde periode een pack-prijs-/verzenddrempeltest plant waarvan het effect via diezelfde ratio gemeten zou worden.
 

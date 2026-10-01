@@ -1,3 +1,9 @@
+---
+type: kennis
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-01
+---
+
 # Identiteit — Denzel (Orchestrator Agent)
 
 ## Rol

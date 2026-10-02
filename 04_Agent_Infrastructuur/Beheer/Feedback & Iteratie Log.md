@@ -25,7 +25,7 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 **Wat is aangepast:** routine-prompt bijgewerkt via `RemoteTrigger update` (stappen 2b/2c/4b toegevoegd) — zelfde trigger_id, geen dubbele routine aangemaakt. Harde grenzen (nooit outreach, nooit publiceren, nooit live pushen, nooit voorwaarden toezeggen) blijven ongewijzigd.
 
-**Why:** lars: "hij moet de andere [agents] meer aan het werk zetten en hun werk controleren." Het patroon was dat Denzel's mandaat groter was dan zijn gedrag — de kwaliteitscontrole-loop uit [[soul Denzel]] werkt, maar alleen als de routine ook daadwerkelijk om die acties vraagt.
+**Why:** lars: "hij moet de andere [agents] meer aan het werk zetten en hun werk controleren." Het patroon was dat Denzel's mandaat groter was dan zijn gedrag — de kwaliteitscontrole-loop uit [[Soul Denzel]] werkt, maar alleen als de routine ook daadwerkelijk om die acties vraagt.
 
 **How to apply:** bij een volgende klacht van lars over stilstand, eerst checken of het een *mandaat*-probleem is (routine vraagt er niet om) of een *autonomie*-probleem (hoofdagent mag het niet) — dat onderscheid bepaalt of je de routine-prompt aanpast of een echt nieuw autonomie-besluit met lars nodig hebt. Check de actuele `Agent Takenverdeling & Grenzen*.md`-bestanden, neem nooit een niveau aan uit een oude routine-prompt.
 

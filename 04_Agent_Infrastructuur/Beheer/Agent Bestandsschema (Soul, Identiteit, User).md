@@ -6,23 +6,23 @@ bijgewerkt: 2026-10-01
 
 # Agent Bestandsschema — Soul, Identiteit, User
 
-> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 tweemaal herzien: (1) **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `04_Agent_Infrastructuur/Beheer/user.md`; (2) **identiteit.md en soul.md van de 3 hoofdagents staan niet meer in hun eigen map (01/02/03), maar centraal in `04_Agent_Infrastructuur/[Hoofdagent]/`.** 01/02/03 zijn nu pure kennisbank-mappen (de vakinhoudelijke bronnotities), 04 bevat het hele "systeem" — wie elke agent is en hoe hij zich gedraagt, inclusief de sub-agent-catalogus en hun werkplek-mapjes. Voor de laagstructuur eromheen: zie [[Agent Hiërarchie & Structuurschema]].
+> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 tweemaal herzien: (1) **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `04_Agent_Infrastructuur/Beheer/user.md`; (2) **Identiteit <Agent>.md en Soul <Agent>.md van de 3 hoofdagents staan niet meer in hun eigen map (01/02/03), maar centraal in `04_Agent_Infrastructuur/[Hoofdagent]/`.** 01/02/03 zijn nu pure kennisbank-mappen (de vakinhoudelijke bronnotities), 04 bevat het hele "systeem" — wie elke agent is en hoe hij zich gedraagt, inclusief de sub-agent-catalogus en hun werkplek-mapjes. Voor de laagstructuur eromheen: zie [[Agent Hiërarchie & Structuurschema]].
 
 ---
 
 ## Waarom deze opzet
 
-- **identiteit.md — Wie is de agent** → rol, missie, scope, verhouding tot de andere agents, (bij hoofdagents) de sub-agents-catalogus per categorie.
-- **soul.md — Hoe gedraagt de agent zich** → autonomie-niveaus, harde grenzen, werkwijze, delegatie naar sub-agents, communicatiestijl.
+- **Identiteit <Agent>.md — Wie is de agent** → rol, missie, scope, verhouding tot de andere agents, (bij hoofdagents) de sub-agents-catalogus per categorie.
+- **Soul <Agent>.md — Hoe gedraagt de agent zich** → autonomie-niveaus, harde grenzen, werkwijze, delegatie naar sub-agents, communicatiestijl.
 - **user.md (gedeeld) — Wie zijn wij** → HÏ Grip (het merk) en lars (opdrachtgever), identiek relevant voor elke agent, dus niet meer gedupliceerd.
 
-**Waarom user.md gedeeld werd:** de 4 losse versies waren voor het overgrote deel identieke tekst (merkverhaal, lars, tone of voice) met maar een klein per-agent verschil (welke doelgroep het meest relevant is). Dat laatste hoort al thuis in de "Scope"-sectie van het eigen `identiteit.md`, dus een apart user.md per agent voegde weinig toe en moest steeds dubbel bijgewerkt worden.
+**Waarom user.md gedeeld werd:** de 4 losse versies waren voor het overgrote deel identieke tekst (merkverhaal, lars, tone of voice) met maar een klein per-agent verschil (welke doelgroep het meest relevant is). Dat laatste hoort al thuis in de "Scope"-sectie van het eigen `Identiteit <Agent>.md`, dus een apart user.md per agent voegde weinig toe en moest steeds dubbel bijgewerkt worden.
 
-**Let op (Obsidian):** `identiteit.md` en `soul.md` bestaan nog steeds meerdere keren (één per agent) — een kale `[[soul]]`-wikilink is dus nog steeds ambigu, gebruik platte tekst ("soul.md in deze map") of het volledige pad. `[[user]]` is nu wél veilig, want dat bestand bestaat nog maar op één plek.
+**Naamgeving (sinds 2026-10-02):** elk bestand heet na de agent, bv. `Identiteit SEO Agent.md`, `Werkplek SEO Agent.md`, `Soul Website Agent.md`. Zo is elke bestandsnaam uniek en werkt een gewone `[[Identiteit SEO Agent]]`-wikilink. Elke agent staat in één eigen map direct onder zijn hoofdagent (geen tussenmappen per categorie meer). `[[user]]` is nu wél veilig, want dat bestand bestaat nog maar op één plek.
 
 ---
 
-## Template: identiteit.md
+## Template: Identiteit <Agent>.md
 
 ```markdown
 # Identiteit — [Agent naam]
@@ -52,7 +52,7 @@ bijgewerkt: 2026-10-01
 - [[...]]
 ```
 
-## Template: soul.md
+## Template: Soul <Agent>.md
 
 ```markdown
 # Soul — [Agent naam]
@@ -86,16 +86,16 @@ Ligt op `04_Agent_Infrastructuur/Beheer/user.md`. Bevat: Lars, HÏ Grip in het k
 
 ## Status per agent
 
-| Agent | identiteit.md | soul.md | user.md |
+| Agent | Identiteit <Agent>.md | Soul <Agent>.md | user.md |
 |---|---|---|---|
 | Denzel (Orchestrator) | Ingevuld, naam vastgesteld | Concept-versie, autonomie nog te bevestigen | Gedeeld — zie Beheer |
-| Website Agent | Ingevuld incl. 4 sub-agents (gecategoriseerd) | Grotendeels ingevuld — overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] | Gedeeld — zie Beheer |
+| Website Agent | Ingevuld incl. 5 sub-agents (gecategoriseerd) | Grotendeels ingevuld — overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] | Gedeeld — zie Beheer |
 | Content Agent | Ingevuld incl. 3 sub-agents (gecategoriseerd) | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen | Gedeeld — zie Beheer |
 | Partnership Agent | Ingevuld incl. 3 sub-agents (gecategoriseerd) | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen; technische guardrails (IG-zoekscript) wel al bekend | Gedeeld — zie Beheer |
 
 ## Openstaand
 
-- Voor **Denzel**, **Content Agent** en **Partnership Agent** moet nog hetzelfde gesprek gevoerd worden als voor de Website Agent (14 juli 2026, interactief grenzen-formulier) om de autonomie-tabel in `soul.md` te vullen.
+- Voor **Denzel**, **Content Agent** en **Partnership Agent** moet nog hetzelfde gesprek gevoerd worden als voor de Website Agent (14 juli 2026, interactief grenzen-formulier) om de autonomie-tabel in `Soul <Agent>.md` te vullen.
 - [[API & Tool Connections]] is ingevuld met de eerste cross-agent tool-regel (Chrome-kill) — verder aanvullen zodra er meer van dit soort regels ontstaan.
 - Alle 10 sub-agents staan nog op status "idee" — zie [[Agent Hiërarchie & Structuurschema]] voor het overzicht en de onderbouwing per keuze.
 

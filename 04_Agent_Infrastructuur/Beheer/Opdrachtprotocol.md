@@ -29,7 +29,7 @@ bijgewerkt: 2026-10-01
 Briefing volgt het sjabloon in `higrip-denzel/references/sub-agents.md` en bevat altijd:
 1. Taak + succescriteria uit stap 1
 2. Context (URL's, pagina's, deadline, eerdere beslissingen)
-3. Pad naar eigen `identiteit.md` + de eigen sectie in [[Leerregels per Agent]]
+3. Pad naar eigen `Identiteit <Agent>.md` + de eigen sectie in [[Leerregels per Agent]]
 4. De zelfcheck-opdracht uit stap 4
 5. Het gevraagde **uitvoerformaat** (zie hieronder)
 
@@ -70,7 +70,7 @@ Geen replay van het proces. Overgeslagen agents benoemen, zodat het een keuze li
 Na elke opdracht van gewicht, en direct bij elke correctie van een opdrachtgever:
 - Kwam er een correctie van Lars/Tigo/Timo, of vond de review een blokkerend punt? Schrijf een **leerregel** (zie hieronder).
 - Een leerregel die voor meerdere agents geldt, gaat naar de sectie "Voor alle agents".
-- Terugkerend patroon (2e keer)? Dan niet alleen een leerregel maar ook een aanpassing in de `identiteit.md` van die agent, als voorstel aan Lars wanneer het autonomie of grenzen raakt.
+- Terugkerend patroon (2e keer)? Dan niet alleen een leerregel maar ook een aanpassing in de `Identiteit <Agent>.md` van die agent, als voorstel aan Lars wanneer het autonomie of grenzen raakt.
 - Bijzonder inzicht over *hoe* we werken: entry in [[Feedback & Iteratie Log]].
 
 ## Leerregels — hoe "voortaan" werkt

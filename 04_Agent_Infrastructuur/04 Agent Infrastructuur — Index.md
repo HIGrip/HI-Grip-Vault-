@@ -17,8 +17,8 @@ Terug naar [[Home]].
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
-- [[identiteit Denzel]]
-- [[soul Denzel]]
+- [[Identiteit Denzel]]
+- [[Soul Denzel]]
 
 ### Beheer
 - [[API & Tool Connections]]
@@ -46,39 +46,37 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Week 2026-09-21]]
 
 ### Content Agent
-- [[04_Agent_Infrastructuur/Content Agent/identiteit|Content Agent/identiteit]]
-- [[04_Agent_Infrastructuur/Content Agent/soul|Content Agent/soul]]
-
-### Content Agent/Copy & Tekst/Caption & Copy Agent
-- [[04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek|Caption & Copy Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/identiteit|Caption & Copy Agent/identiteit]]
-
-### Content Agent/Strategie & Planning
 - [[Content Pillars — Buffer-tags]]
+- [[Identiteit Content Agent]]
+- [[Soul Content Agent]]
 
-### Content Agent/Strategie & Planning/Content Strategie & Planning Agent
-- [[04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek|Content Strategie & Planning Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/identiteit|Content Strategie & Planning Agent/identiteit]]
+### Content Agent/Caption & Copy Agent
+- [[Identiteit Caption & Copy Agent]]
+- [[Werkplek Caption & Copy Agent]]
 
-### Content Agent/Visuele Productie/Video & Visuele Productie Agent
-- [[04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/_Werkplek|Video & Visuele Productie Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Content Agent/Visuele Productie/Video & Visuele Productie Agent/identiteit|Video & Visuele Productie Agent/identiteit]]
+### Content Agent/Content Strategie & Planning Agent
+- [[Identiteit Content Strategie & Planning Agent]]
+- [[Werkplek Content Strategie & Planning Agent]]
+
+### Content Agent/Video & Visuele Productie Agent
+- [[Identiteit Video & Visuele Productie Agent]]
+- [[Werkplek Video & Visuele Productie Agent]]
 
 ### Partnership Agent
-- [[04_Agent_Infrastructuur/Partnership Agent/identiteit|Partnership Agent/identiteit]]
-- [[04_Agent_Infrastructuur/Partnership Agent/soul|Partnership Agent/soul]]
+- [[Identiteit Partnership Agent]]
+- [[Soul Partnership Agent]]
 
-### Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent
-- [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent/_Werkplek|B2B Klanten Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn A - B2B Klanten/B2B Klanten Agent/identiteit|B2B Klanten Agent/identiteit]]
+### Partnership Agent/B2B Klanten Agent
+- [[Identiteit B2B Klanten Agent]]
+- [[Werkplek B2B Klanten Agent]]
 
-### Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent
-- [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent/_Werkplek|Partnerships & Events Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Partnership Agent/B2B_Samenwerkingen/Lijn B - Samenwerkingen/Partnerships & Events Agent/identiteit|Partnerships & Events Agent/identiteit]]
+### Partnership Agent/Influencer & Creator Agent
+- [[Identiteit Influencer & Creator Agent]]
+- [[Werkplek Influencer & Creator Agent]]
 
-### Partnership Agent/Influencers_Creators/Influencer & Creator Agent
-- [[04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent/_Werkplek|Influencer & Creator Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Partnership Agent/Influencers_Creators/Influencer & Creator Agent/identiteit|Influencer & Creator Agent/identiteit]]
+### Partnership Agent/Partnerships & Events Agent
+- [[Identiteit Partnerships & Events Agent]]
+- [[Werkplek Partnerships & Events Agent]]
 
 ### Routines
 - [[04_Agent_Infrastructuur/Routines/Actiecontrole|Routines/Actiecontrole]]
@@ -100,25 +98,25 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[04_Agent_Infrastructuur/Routines/Website-UX|Routines/Website-UX]]
 
 ### Website Agent
-- [[04_Agent_Infrastructuur/Website Agent/identiteit|Website Agent/identiteit]]
-- [[04_Agent_Infrastructuur/Website Agent/soul|Website Agent/soul]]
+- [[Identiteit Website Agent]]
+- [[Soul Website Agent]]
 
-### Website Agent/Analyse/Conversie & Analyse Agent
-- [[04_Agent_Infrastructuur/Website Agent/Analyse/Conversie & Analyse Agent/_Werkplek|Conversie & Analyse Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Website Agent/Analyse/Conversie & Analyse Agent/identiteit|Conversie & Analyse Agent/identiteit]]
+### Website Agent/Conversie & Analyse Agent
+- [[Identiteit Conversie & Analyse Agent]]
+- [[Werkplek Conversie & Analyse Agent]]
 
-### Website Agent/Content/Website Copy Agent
-- [[04_Agent_Infrastructuur/Website Agent/Content/Website Copy Agent/_Werkplek|Website Copy Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Website Agent/Content/Website Copy Agent/identiteit|Website Copy Agent/identiteit]]
+### Website Agent/Design Agent
+- [[Identiteit Design Agent]]
+- [[Werkplek Design Agent]]
 
-### Website Agent/E-mail Marketing/E-mail Marketing Agent
-- [[04_Agent_Infrastructuur/Website Agent/E-mail Marketing/E-mail Marketing Agent/_Werkplek|E-mail Marketing Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Website Agent/E-mail Marketing/E-mail Marketing Agent/identiteit|E-mail Marketing Agent/identiteit]]
+### Website Agent/E-mail Marketing Agent
+- [[Identiteit E-mail Marketing Agent]]
+- [[Werkplek E-mail Marketing Agent]]
 
-### Website Agent/Strategie/SEO Agent
-- [[04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/_Werkplek|SEO Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/identiteit|SEO Agent/identiteit]]
+### Website Agent/SEO Agent
+- [[Identiteit SEO Agent]]
+- [[Werkplek SEO Agent]]
 
-### Website Agent/Technisch/Design Agent
-- [[04_Agent_Infrastructuur/Website Agent/Technisch/Design Agent/_Werkplek|Design Agent/_Werkplek]]
-- [[04_Agent_Infrastructuur/Website Agent/Technisch/Design Agent/identiteit|Design Agent/identiteit]]
+### Website Agent/Website Copy Agent
+- [[Identiteit Website Copy Agent]]
+- [[Werkplek Website Copy Agent]]

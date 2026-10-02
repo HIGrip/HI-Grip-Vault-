@@ -18,7 +18,7 @@ bijgewerkt: 2026-10-01
 - Looptijd, verlenging, opzegging
 - Wat HÏ Grip levert aan promotiemateriaal
 
-> Prijzen, kortingen en definitieve toezeggingen: altijd via lars (zie soul.md Partnership Agent).
+> Prijzen, kortingen en definitieve toezeggingen: altijd via lars (zie [[Soul Partnership Agent]]).
 
 ## Gerelateerde bestanden
 

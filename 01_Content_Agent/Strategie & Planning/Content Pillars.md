@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Content Pillars — HÏ Grip
 
-> De 5 contentpilaren, content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
+> De 5 contentpilaren (formats; de 3 tags in Buffer staan in [[Content Pillars — Buffer-tags]], hoe die bij elkaar horen is nog een open vraag), content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
 
 > **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** content richt zich op de HÏ Grip sporter in de drie kernsporten **tennis/padel, voetbal en rugby** — zie [[Doelgroep & Persona's]] en [[Beachhead Strategie]]. Voorbeelden die andere sporten noemen (hockey, pilates) blijven bruikbaar als format-idee, maar vertaal ze naar een kernsport.
 
@@ -117,7 +117,7 @@ Buffer staat maximaal 3 tags per organisatie toe. De 5 creatieve pilaren hierbov
 | **ANNOUNCEMENT CONTENT** | Product-launches, restocks, acties, seizoensgebonden aankondigingen | — (operationeel) | `6a32de2b355ff4514e0783f5` | `#1F35B3` |
 | **PERFORMANCE / LIFESTYLE / INFLUENCER CONTENT** | Sport-in-actie (tennis, padel, voetbal, Hyrox e.d.) én de brug naar dagelijks leven; omvat influencer-content | 1 Performance · 2 Humor/Viral · 4 Influencer · 5 Guerilla | `6a32de22b853eaf5dd01bac5` | `#E0364F` |
 
-**Werkregel:** nieuwe ideeën worden door de Content Agent altijd met exact één van deze 3 tags in Buffer's ideeënbord gezet (groep: Unassigned) — zie `04_Agent_Infrastructuur/Content Agent/soul.md`.
+**Werkregel:** nieuwe ideeën worden door de Content Agent altijd met exact één van deze 3 tags in Buffer's ideeënbord gezet (groep: Unassigned) — zie `04_Agent_Infrastructuur/Content Agent/Soul Content Agent.md`.
 
 ---
 

@@ -20,7 +20,7 @@ bijgewerkt: 2026-10-01
 
 ## Afspraken
 
-- Publiceren gebeurt nooit automatisch door een agent — lars zet altijd zelf de laatste stap (zie soul.md Content Agent).
+- Publiceren gebeurt nooit automatisch door een agent — lars zet altijd zelf de laatste stap (zie [[Soul Content Agent]]).
 - **Buffer-koppeling is actief sinds 2026-09-01** (MCP-server `buffer` — technische opzet in [[API & Tool Connections]] § Buffer). De Content Agent kan nu de kalender lezen, posts opstellen/plannen en ideeën wegzetten; publiceren blijft handmatig door lars.
 
 ## Gerelateerde bestanden

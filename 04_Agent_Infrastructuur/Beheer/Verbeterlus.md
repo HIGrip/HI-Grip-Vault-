@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Verbeterlus — Denzel en de agents worden steeds beter, binnen de kaders
 
-> Aanvulling op [[Opdrachtprotocol]]. Het opdrachtprotocol verbetert één opdracht; deze lus verbetert het systeem zelf. Sub-agents onthouden niets, dus alle verbetering zit in bestanden: [[Leerregels per Agent]], de briefing-sjablonen, de zelfcheck-lijsten en de `identiteit.md`-bestanden.
+> Aanvulling op [[Opdrachtprotocol]]. Het opdrachtprotocol verbetert één opdracht; deze lus verbetert het systeem zelf. Sub-agents onthouden niets, dus alle verbetering zit in bestanden: [[Leerregels per Agent]], de briefing-sjablonen, de zelfcheck-lijsten en de `Identiteit <Agent>.md`-bestanden.
 
 ## Kaders — wat Denzel zelf mag verbeteren
 
@@ -18,7 +18,7 @@ bijgewerkt: 2026-10-01
 | Entry in [[Feedback & Iteratie Log]], rij in [[Agent Werk & Kwaliteit Overzicht]] | Zelf doen |
 | Verouderde of tegenstrijdige vault-notitie signaleren | Zelf doen (melden) |
 | Verouderde notitie inhoudelijk corrigeren | Voorstellen, Lars keurt goed |
-| Wijziging in `identiteit.md` (rol, scope, werkwijze, vaktheorie) van een agent | Voorstellen, Lars keurt goed |
+| Wijziging in `Identiteit <Agent>.md` (rol, scope, werkwijze, vaktheorie) van een agent | Voorstellen, Lars keurt goed |
 | Tools, MCP's of model van een agent wijzigen | Voorstellen, Lars keurt goed |
 | Nieuwe routine of nieuwe agent | Voorstellen, Lars keurt goed |
 | Autonomie-niveaus, harde grenzen, merkregels, feiten in Brand Core | **Nooit zelf.** Alleen een voorstel; Lars beslist |
@@ -43,7 +43,7 @@ Denzel kijkt terug op de week en beantwoordt vier vragen, kort:
 Denzel doet een **systeemreview** en schrijft het resultaat als notitie in `05_Research/` volgens `PROCEDURE.md`:
 - **Leerregels opschonen:** samenvoegen wat dubbel is, schrappen wat achterhaald is (bron controleren), regels ouder dan 90 dagen opnieuw toetsen aan de vault. Een lijst die alleen groeit wordt niet meer gelezen.
 - **Scorekaart per agent bijwerken** (zie hieronder) en trend benoemen.
-- **Check op drift:** staan `identiteit.md`, de skills en de routine-prompts nog gelijk aan de werkelijkheid (thema-ID's, tools, modellen, status)? Afwijkingen melden aan Lars.
+- **Check op drift:** staan `Identiteit <Agent>.md`, de skills en de routine-prompts nog gelijk aan de werkelijkheid (thema-ID's, tools, modellen, status)? Afwijkingen melden aan Lars.
 - **Top 3 verbeteringen** voorstellen die Lars moet goedkeuren (alles wat boven de "Zelf doen"-regel valt).
 
 ## Scorekaart per agent

@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # User — wie wij zijn (geldt voor alle agents)
 
-> Gedeeld bestand: Denzel én de 3 hoofdagents gebruiken deze ene `user.md` — niet meer per agent gedupliceerd. Agent-specifieke nuance (bv. welke doelgroep het meest relevant is) staat in de "Verhouding tot andere agents"/"Scope"-sectie van het eigen `identiteit.md` van die agent, niet hier.
+> Gedeeld bestand: Denzel én de 3 hoofdagents gebruiken deze ene `user.md` — niet meer per agent gedupliceerd. Agent-specifieke nuance (bv. welke doelgroep het meest relevant is) staat in de "Verhouding tot andere agents"/"Scope"-sectie van het eigen `Identiteit <Agent>.md` van die agent, niet hier.
 
 ## Lars
 Eigenaar van HÏ Grip, enige opdrachtgever.

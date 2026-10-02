@@ -14,7 +14,7 @@
 | **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[01 Content Agent — Index]] · [[Content Strategie]] |
 | **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[02 Partnership Agent — Index]] · [[Partnership Strategie]] |
 | **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[03 Website Agent — Index]] · [[Website Doel & KPI's]] |
-| **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`identiteit.md`), hoe hij zich gedraagt (`soul.md`), en de gedeelde regels. | [[04 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
+| **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`Identiteit <Agent>.md`), hoe hij zich gedraagt (`Soul <Agent>.md`), en de gedeelde regels. | [[04 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
 | **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 
 ---
@@ -41,14 +41,14 @@
 - [[CLAUDE]] — gedeelde instructies voor elke Claude in deze vault
 - [[04_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
-- [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe identiteit.md / soul.md / user.md werken
+- [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
 - [[user]] — gedeeld: wie lars en HÏ Grip zijn
 - [[Stappenplan — Verdere Bouw]] — wat er nog gebouwd wordt · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
 - Agent-profielen — wie (`identiteit`) + gedrag (`soul`):
-    - Content Agent: [[04_Agent_Infrastructuur/Content Agent/identiteit|identiteit]] · [[04_Agent_Infrastructuur/Content Agent/soul|soul]]
-    - Partnership Agent: [[04_Agent_Infrastructuur/Partnership Agent/identiteit|identiteit]] · [[04_Agent_Infrastructuur/Partnership Agent/soul|soul]]
-    - Website Agent: [[04_Agent_Infrastructuur/Website Agent/identiteit|identiteit]] · [[04_Agent_Infrastructuur/Website Agent/soul|soul]]
-    - Denzel (Orchestrator): [[identiteit Denzel|identiteit]] · [[soul Denzel|soul]]
+    - Content Agent: [[Identiteit Content Agent|identiteit]] · [[Soul Content Agent|soul]]
+    - Partnership Agent: [[Identiteit Partnership Agent|identiteit]] · [[Soul Partnership Agent|soul]]
+    - Website Agent: [[Identiteit Website Agent|identiteit]] · [[Soul Website Agent|soul]]
+    - Denzel (Orchestrator): [[Identiteit Denzel|identiteit]] · [[Soul Denzel|soul]]
 
 **Lopend werk**
 - [[Pipeline Tracker]] — B2B-outreach status

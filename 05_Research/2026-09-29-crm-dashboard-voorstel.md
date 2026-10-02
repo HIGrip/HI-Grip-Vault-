@@ -9,7 +9,7 @@ categorie: B2B
 status: nieuw
 prioriteit: P1
 samenvatting: "Bouw het CRM als één relatielijst met een status (zoals HubSpot en Attio), met een vast opvolgritme en een CRM-home met taken voor nu, en laat facturen via Moneybird lopen in plaats van ze zelf te maken. Twee aannames kloppen niet: Vercel Hobby mag niet voor een bedrijfsdashboard (neem Pro, $20/mnd) en Hermes en de app moeten op een Claude API-sleutel draaien, niet op Claude Max."
-gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-26-dashboard-ux-onderzoek, 2026-09-26-onderzoek-nieuwe-routines, 2026-10-02-navigatie-en-takentijdlijn]
+gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-26-dashboard-ux-onderzoek, 2026-09-26-onderzoek-nieuwe-routines, 2026-10-02-navigatie-en-takentijdlijn, 2026-10-02-dashboard-apps-patronen]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\crm-onderzoek-prompt.md"
 deadline: "2026-12-31"

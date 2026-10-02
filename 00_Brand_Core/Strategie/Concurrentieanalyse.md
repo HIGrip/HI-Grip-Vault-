@@ -37,7 +37,7 @@ Bron en links: [[2026-09-21-beachhead-rugby]]. De echte concurrent bij rugby is 
 
 ## Waar HÏ Grip zich onderscheidt (volgens de vault)
 
-- **Prijs tussen budget en premium:** € 17,95 op higrip.nl (adviesprijs retail € 17,99) met 7 features, 15–20 mmHg compressie en Coolmax ([[Performance Grip Socks 2.0]]).
+- **Prijs tussen budget en premium:** € 17,95 op higrip.nl en als adviesprijs retail met 7 features, 15–20 mmHg compressie en Coolmax ([[Performance Grip Socks 2.0]]).
 - **Categoriebewijs met bron:** 1,17 vs 0,60 (Apps et al. 2022). Let op: dit is geen eigen meting van de HÏ Grip-sok. Volg de formuleringsregel in [[Feiten & Actuele Staat]].
 - **Rugby is onbezet:** geen Nederlands gripsokkenmerk positioneert zich op rugby ([[Beachhead Strategie]]).
 - **Content-gat:** vraaggerichte pagina's ("wat zijn gripsokken", "tapedesign alternatief") zijn bij concurrenten zwak gestructureerd.
@@ -54,5 +54,11 @@ Bron en links: [[2026-09-21-beachhead-rugby]]. De echte concurrent bij rugby is 
 - [[Beachhead Strategie]] — Kernsporten en positie per sport
 - [[Brand Identity Overview]] — Positionering
 - [[Ideale Partner Profiel]] — B2B-doelgroep
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

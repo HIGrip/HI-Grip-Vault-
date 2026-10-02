@@ -60,4 +60,10 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 | 30 | Drift-baseline vastleggen na de critical fixes (`/seo drift baseline https://www.higrip.nl`) zodat regressies zoals de padelpagina automatisch opvallen |
 | 31 | Her-audit over ±6 weken; GA4: organische landingen op sportpagina's volgen |
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-25-seo-audit]] — SEO-audit higrip.nl 25 september — 54/100, padel-regressie en rugby ontbreekt
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

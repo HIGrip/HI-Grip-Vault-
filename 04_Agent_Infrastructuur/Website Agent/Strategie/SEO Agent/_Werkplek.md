@@ -18,7 +18,7 @@ Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen,
 
 **Waarom nu:** de eerdere monitoring-check (zie hierboven, 2026-09-16) deed dit al informeel — de SEO Agent gebruikte de resultaten van een dezelfde dag handmatig gedraaide `/seo audit` als bron. Dit maakt die koppeling structureel in plaats van toevallig.
 
-**Waar:** `agents/seo-agent.md` (tools-regel + "Verhouding tot andere agents" + "Werkwijze"-routeringstabel — bron van waarheid voor de exacte mapping), [[identiteit]] in deze map (Sub-agents-sectie, SEO Agent-blok).
+**Waar:** `agents/seo-agent.md` (tools-regel + "Verhouding tot andere agents" + "Werkwijze"-routeringstabel — bron van waarheid voor de exacte mapping), [[04_Agent_Infrastructuur/Website Agent/Strategie/SEO Agent/identiteit|identiteit]] in deze map (Sub-agents-sectie, SEO Agent-blok).
 
 **Nog niet gedaan:** nog niet in de praktijk getest of de Agent-tool vanuit een subagent (seo-agent zelf is al een subagent van de Website Agent-orchestrator) daadwerkelijk geneste dispatch toestaat — eerste keer dat dit gevraagd wordt, checken bij eerstvolgende `/website-agent`-run met een SEO-taak die buiten de basisscope valt.
 

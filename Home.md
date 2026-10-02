@@ -105,4 +105,4 @@ Laatste ronde: vault-review van 02-10 (zie [[2026-10-02-vault-review]]); eerdere
 **Nog te doen — input van lars nodig**
 - **Lege notities invullen of verwijderen:** [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
 - ~~**Shopify `theme list` draaien**~~ — gedaan; de actuele thema-ID's staan alleen in [[Technische Procedures]].
-- **Rugby-sportgids** schrijven: rugby is een beachhead maar heeft nog geen website-content (zie [[Sportgidsen — overzicht en instructies]]).
+- **Rugby-sportgids:** concept staat klaar in [[Gripsokken voor rugby]]; nog een rugbyfoto en een check door een rugbyer nodig.

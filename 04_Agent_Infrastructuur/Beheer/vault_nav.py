@@ -9,7 +9,10 @@ Wat het doet (idempotent, veilig om vaak te draaien):
    - Overal elders staat hij onderaan.
 2. Elke map-index (01–04 en 'Waar staat wat' voor 05) krijgt een automatisch
    bijgewerkte sectie met links naar alle notities in die map.
-3. Aan het eind: een rapport van notities zonder inkomende links (wezen).
+3. Elke kennisnotitie (00–04) waar een onderzoeksnotitie uit 05_Research naar linkt,
+   krijgt onderaan een sectie 'Gerelateerd onderzoek (automatisch)' met de nieuwste
+   niet-gearchiveerde notities. Links in de navigatieregel tellen niet mee.
+4. Aan het eind: een rapport van notities zonder inkomende links (wezen).
 
 Slaat over: bestanden met mergeconflicten, Home.md, 00 Brand Core.md (handmatig),
 en .git/.obsidian/.trash/_dashboard.
@@ -27,6 +30,9 @@ SKIP_DIRS = {".git", ".obsidian", ".trash", ".vscode", "_dashboard", "node_modul
 SKIP_FILES = {"Home.md", "conflict-files-obsidian-git.md", "00_Brand_Core/00 Brand Core.md"}
 NAV_PREFIX = "> **Brand Core (00):**"
 AUTO_HEADING = "## Alle notities in deze map (automatisch)"
+RESEARCH_HEADING = "## Gerelateerd onderzoek (automatisch)"
+RESEARCH_MAX = 8
+RESEARCH_NOTE_RE = re.compile(r"^05_Research/\d{4}-\d{2}-\d{2}-[^/]+\.md$")
 
 HUBS = {
     "01_Content_Agent": "01_Content_Agent/01 Content Agent — Index.md",
@@ -189,6 +195,78 @@ def update_hub(top, notes, basenames, dry) -> bool:
     return write(rel, text, bom, crlf, dry)
 
 
+def resolver(notes):
+    basemap = {}
+    for n in notes:
+        basemap.setdefault(n.rsplit("/", 1)[-1][:-3].lower(), []).append(n)
+
+    def resolve(target):
+        t = target.strip().lower()
+        if t.endswith(".md"):
+            t = t[:-3]
+        if "/" in t:
+            return next((x for x in notes if x[:-3].lower().endswith(t)), None)
+        hits = basemap.get(t, [])
+        return hits[0] if len(hits) == 1 else None  # dubbelzinnige naam: niet raden
+    return resolve
+
+
+def frontmatter(text) -> dict:
+    meta = {}
+    lines = text.split("\n")
+    if not lines or lines[0].strip() != "---":
+        return meta
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        if ":" in line and not line.startswith(" "):
+            key, val = line.split(":", 1)
+            meta[key.strip()] = val.strip().strip('"')
+    return meta
+
+
+def research_index(notes) -> dict:
+    """kennisnotitie -> [(datum, id, titel)] van onderzoeksnotities die ernaar linken."""
+    resolve = resolver(notes)
+    index = {}
+    for n in notes:
+        if not RESEARCH_NOTE_RE.match(n):
+            continue
+        text, _, _ = read(n)
+        meta = frontmatter(text)
+        if meta.get("status") == "gearchiveerd":
+            continue
+        body = "\n".join(l for l in text.split("\n") if not l.startswith(NAV_PREFIX))
+        entry = (meta.get("datum", ""), n.rsplit("/", 1)[-1][:-3], meta.get("titel", ""))
+        for m in LINK_RE.finditer(body):
+            tgt = resolve(m.group(1))
+            if tgt and not tgt.startswith("05_Research/") and tgt not in SKIP_FILES and tgt not in HUBS.values():
+                index.setdefault(tgt, set()).add(entry)
+    return {k: sorted(v, reverse=True) for k, v in index.items()}
+
+
+def strip_research(text: str) -> str:
+    # alleen een echte kop aan het begin van een regel, niet de tekst ergens in een zin
+    found = re.search(r"^" + re.escape(RESEARCH_HEADING) + r"[ \t]*$", text, re.M)
+    if not found:
+        return text
+    idx = found.start()
+    rest = text[found.end():]
+    nxt = re.search(r"^## ", rest, re.M)
+    tail = rest[nxt.start():] if nxt else ""
+    return text[:idx].rstrip() + ("\n\n" + tail if tail else "\n")
+
+
+def research_section(entries) -> str:
+    out = [RESEARCH_HEADING, "",
+           "Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.", ""]
+    for datum, nid, titel in entries[:RESEARCH_MAX]:
+        out.append(f"- [[{nid}]]" + (f" — {titel}" if titel else ""))
+    if len(entries) > RESEARCH_MAX:
+        out.append(f"- … en {len(entries) - RESEARCH_MAX} oudere (zie [[Waar staat wat]])")
+    return "\n".join(out)
+
+
 def orphans(notes) -> list:
     basemap = {}
     for n in notes:
@@ -221,6 +299,8 @@ def main():
         stem = n.rsplit("/", 1)[-1][:-3].lower()
         basenames[stem] = basenames.get(stem, 0) + 1
 
+    related = research_index(notes)
+
     changed, skipped = [], []
     for top in HUBS:
         if HUBS[top] in skip:
@@ -240,6 +320,10 @@ def main():
             continue
         text = strip_nav(text)
         nav = nav_line(rel)
+        if not rel.startswith("05_Research/"):
+            text = strip_research(text)
+            if rel in related:
+                text = text.rstrip() + "\n\n" + research_section(related[rel]) + "\n"
         text = place_top(text, nav) if rel.startswith("05_Research/") else place_bottom(text, nav)
         if write(rel, text, bom, crlf, dry):
             changed.append(rel)

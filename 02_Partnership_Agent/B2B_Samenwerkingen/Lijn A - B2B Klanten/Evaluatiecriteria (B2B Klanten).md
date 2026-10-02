@@ -80,4 +80,11 @@ Nieuwe kandidaten eerst in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]; 
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - [[Partnership Strategie]] — Bredere aanpak en volgorde
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
+- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

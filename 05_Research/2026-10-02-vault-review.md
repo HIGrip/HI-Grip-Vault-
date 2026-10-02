@@ -31,14 +31,14 @@ Losse review op verzoek: hoe de vault gekoppeld is, wat dubbel staat, wat ontbre
 
 ## Acties
 
-- [ ] P1 · Besluit: welk reviewcijfer op drukwerk — 4,6 (Trustpilot) of 4,5 (higrip.nl)
-- [ ] P2 · Besluit: adviesprijs retail €17,99 naast webshopprijs €17,95 — bewust of gelijktrekken
+- [x] P1 · Besluit: welk reviewcijfer op drukwerk — 4,6 (Trustpilot) of 4,5 (higrip.nl)
+- [x] P2 · Besluit: adviesprijs retail €17,99 naast webshopprijs €17,95 — bewust of gelijktrekken
 - [ ] P2 · Besluit: B2B-minimum 5 paar (Evaluatiecriteria) tegenover prijsstaffel vanaf 6 stuks — één ondergrens kiezen
-- [ ] P2 · Rugby-sportgids schrijven: rugby is beachhead maar heeft geen website-content
+- [x] P2 · Rugby-sportgids schrijven: rugby is beachhead maar heeft geen website-content
 - [ ] P2 · Skills naar `.claude/skills/` in de vault zetten zodat cloudroutines ze kunnen gebruiken
 - [ ] P3 · Dubbele bestandsnamen hernoemen (14× identiteit.md, 11× _Werkplek.md, routine- en geheugenbestanden met gelijke naam) en agentdefinities meenemen
 - [ ] P3 · Oude claude/*-branches op origin opruimen (7 stuks, inhoud staat al in de vault of is off-brand)
-- [ ] P3 · Onderzoek met vakkennis koppelen: een automatische sectie "Gerelateerd onderzoek" per kennisnotitie in vault_nav.py
+- [x] P3 · Onderzoek met vakkennis koppelen: een automatische sectie "Gerelateerd onderzoek" per kennisnotitie in vault_nav.py
 
 ## Bevindingen
 
@@ -58,6 +58,16 @@ Losse review op verzoek: hoe de vault gekoppeld is, wat dubbel staat, wat ontbre
 - **Routines-README:** `.claude/skills/` bestaat niet in de vault; `BEHEER.json`/`OPDRACHTEN.json` ontstaan pas bij de eerste dashboardactie. Nu zo beschreven.
 - **Ontbrekend:** [[Concurrentieanalyse]] gevuld met wat de vault al wist.
 - **Buiten de vault:** de globale `~/.claude/CLAUDE.md` (€30, "vandaag verzonden", 1.500+, gele CTA, gelprotection-claim) en het Claude-geheugen (22:00, pilates, oude handle en thema) bijgewerkt; back-ups in de scratchpad van de sessie.
+
+### Vervolg 2 oktober: besluiten en uitgevoerd werk
+
+- **Reviewscore:** Lars koos **4,6 ★ (Trustpilot)** als merkcijfer; verwerkt in [[Feiten & Actuele Staat]] en [[Performance Grip Socks 2.0]].
+- **Adviesprijs:** retail en webshop allebei **€ 17,95**; de one-pagers met € 17,99 staan als te corrigeren fout in [[Performance Grip Socks 2.0]] §5.
+- **Rugbygids:** concept in [[Gripsokken voor rugby]] (regels, clubkous, scrum, natte velden); nog een rugbyfoto en een check door een rugbyer nodig.
+- **Gerelateerd onderzoek:** `vault_nav.py` zet nu onder 44 kennisnotities automatisch de onderzoeksnotities die ernaar linken.
+- **Hernoemen (niet gedaan, advies: niet doen):** de dubbele namen zitten in paden die 11 agentdefinities, `/denzel` en de Denzel-routine gebruiken, ook op de pc's van Lars en Tigo. Er waren maar twee kale, dubbelzinnige links; die zijn vervangen door volledige paden.
+- **Skills naar de vault (niet gedaan, advies: niet doen):** geen enkele routine roept een skill aan; kopiëren maakt een derde versie naast `~/.claude/commands` en de setup-repo. Uitgelegd in de Routines-README.
+- **B2B-minimum:** blijft open (zie acties), wacht op een besluit.
 
 ### Wat niet zonder besluit kon
 

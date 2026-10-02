@@ -57,4 +57,10 @@ bijgewerkt: 2026-10-01
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - Lijn B staat in de map ernaast: `../Lijn B - Samenwerkingen Events/`
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-28-weekoverzicht]] — Denzel Weekoverzicht — 2026-09-28 (NL-verkeer derde week op rij lager, nieuwe EN-/beleidspagina's hebben eigen fouten)
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

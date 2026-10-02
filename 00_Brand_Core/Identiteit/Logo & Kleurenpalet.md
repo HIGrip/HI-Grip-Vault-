@@ -125,4 +125,11 @@ Kan Poppins echt niet, bijvoorbeeld bij een snelle Instagram-story? Gebruik dan 
 - [[Brand Voice & Tone of Voice]] — Verbale stijl, slogans, productnamen
 - [[Brand Symbolen]] — Geluid en geur
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-15-seo-audit]] — SEO- en conversieaudit higrip.nl — september 2026
+- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

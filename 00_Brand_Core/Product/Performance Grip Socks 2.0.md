@@ -28,10 +28,10 @@ Zie ook: [[Brand Identity Overview]] · [[Brand Voice & Tone of Voice]] · [[Log
 | Kleuren | Zwart, Wit (2 kleuren) | One-pagers 2.0, [[Strategische Keuzes]] |
 | Maatvoering | 35–38 · 39–42 · **43–47** | EAN-lijst + Shopify-productpagina's. **Bevestigd door Lars 15 sep 2026.** ⚠️ De one-pagers 2.0 zeggen 43–46 — dat is fout, corrigeren. ([[Strategische Keuzes]] is al gecorrigeerd.) |
 | Klantenaantal | **3000+ sporters** | **Bevestigd door Lars 15 sep 2026.** ⚠️ Site zegt on-page 2.000+, meta descriptions 1.500+ — beide bijwerken. |
-| Adviesprijs retail | € 17,99 | One-pagers 2.0 |
+| Adviesprijs retail | **€ 17,95** | Besluit Lars 2-10-2026: gelijk aan de webshopprijs. ⚠️ De one-pagers 2.0 noemen € 17,99 — corrigeren. |
 | Coolmax-aandeel | 30% | One-pagers 2.0 |
 | Compressie | 15–20 mmHg | Productbeschrijving, [[Stand van Zaken — Werkdossier 2026-09-04]] |
-| Reviewscore | 4,6 ★ | One-pagers 2.0 |
+| Reviewscore | 4,6 ★ (Trustpilot) | One-pagers 2.0 · bevestigd als merkcijfer door Lars 2-10-2026 |
 | Vertrouwd door | 10+ organisaties | One-pagers 2.0 — niet geteld |
 | Contact op materiaal | info@higrip.nl · +31 6 24 56 65 47 | One-pagers 2.0 |
 
@@ -182,6 +182,7 @@ wisselen maar twee dingen: de accentkleur en drie tekstblokken.
 | Fout | Waar | Correctie |
 |---|---|---|
 | Maat **43–46** | Beide 2.0-one-pagers ([[Strategische Keuzes]] al gecorrigeerd) | **43–47** |
+| Adviesprijs **€ 17,99** | Statbalk van alle 2.0-one-pagers | **€ 17,95** (besluit Lars 2-10-2026) |
 | Klantenaantal 2.000+ / 1.500+ | Site on-page / meta descriptions | **3000+** |
 | "Extra **beschermag** op hiel" | Beide 2.0-one-pagers, kaart "Geen blaren" | "bescherming" |
 | "**ADMEND** VERMOGEN" | Infographic 2.0 | "ADEMEND" |
@@ -238,9 +239,9 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 | Eveline | 5 | "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!" |
 | Sharon B. | 4 | "Snel geleverd en goede kwaliteit!" |
 
-> [!warning] 4,5 of 4,6?
-> De one-pagers 2.0 tonen **4,6 ★**, de site toont **4,5 / 5**. Op drukwerk het cijfer gebruiken
-> dat een retailer live kan controleren: **4,5** — tenzij Lars een andere bron aanwijst.
+> [!note] 4,5 of 4,6? — besloten 2-10-2026
+> Op drukwerk, in de pitch en in ads gebruiken we **4,6 ★ met bron Trustpilot** (besluit Lars). Het sitegemiddelde
+> van 4,5 / 5 hierboven is alleen de stand van de reviews op higrip.nl en geen merkcijfer.
 
 ---
 
@@ -254,5 +255,17 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 | V4 | Bewijs 95% / 1,17 | ✅ Gevonden en vastgelegd in §3 |
 | V5 | **Personalisatie-opties** | ⚠️ Deels: MOQ 150, prijzen en verpakkingen (paper wrap / header card) staan in de finance-sheet. Hoogtes, logo-technieken, stofcombinaties, kleuren-op-maat en levertijd **niet** — Lars vult die als placeholders in de brochure in (besluit 15 sep) |
 | V6 | Welke partnerlogo's mogen in print? | ✅ Alle (Lars, 15 sep) — zie §6b |
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
+- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
+- [[2026-09-28-seo-conversietest-run-2]] — SEO- en conversietest run 2 — auditblok B, concepten voor 2.0-producten en collecties
+- [[2026-09-24-financieel-plan-2027-2031-bmc-2031]] — Financieel plan 2027-2031 op basis van BMC 2031 (vermogensbehoefte, financieringsplan, exploitatiebegroting)
+- [[2026-09-23-seo-conversietest-run-1]] — SEO- en conversietest run 1 — nulmeting en tegenstrijdige verzend/retourinfo
+- [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
+- [[2026-09-16-seo-onderzoek-cloud-routine-website]] — SEO-onderzoek cloud-routine \"website\" — publieke data, 16 september 2026
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

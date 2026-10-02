@@ -165,4 +165,10 @@ Cijfers in de pitch (3000+, 4,6) komen uit [[Feiten & Actuele Staat]]; controlee
 - [[Doelgroep & Persona's]] — De HÏ Grip sporter en de B2B-doelgroepen
 - [[Strategische Keuzes]] — Marketingstrategie, kanalen, Performance Academy, beachheads
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

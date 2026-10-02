@@ -49,6 +49,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Gripsokken voor futsal]]
 - [[Gripsokken voor hardlopen]]
 - [[Gripsokken voor padel]]
+- [[Gripsokken voor rugby]]
 - [[Gripsokken voor tennis]]
 - [[Gripsokken voor voetbal]]
 - [[Sportgidsen — overzicht en instructies]]

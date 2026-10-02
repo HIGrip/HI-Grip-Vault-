@@ -21,7 +21,7 @@ Alle vier `/pages/<handle>` waren vrij op higrip.nl (404). Handles in Shopify co
 ## Interne links
 - Alle pagina's: ankertekst "Performance Gripsokken 2.0" naar `/products/performance-gripsokken-2-0-wit`.
 - Tennis: terug naar sportgids tennis.
-- Rugby: nog geen sportgids; link pas na aanmaken.
+- Rugby: sportgids als concept in [[Gripsokken voor rugby]] (2-10-2026); link pas na plaatsen.
 - Voetbal: blog `afgeknipte-kousen-bij-amateurvoetbal-waarom-steeds-meer-spelers-kiezen-voor-gripsokken` + sportgids voetbal.
 - Padel: onderling naar tennis.
 

@@ -287,4 +287,10 @@ Notes:
 
 **Schema Score: 52/100** — solid Shopify-native foundation (breadcrumbs, product/offer, article dates/author all present and mostly correctly structured) undercut by a sitewide `http`/`https` context slip, a real `Organization.url` bug on several templates, missing Product return/shipping/identifier properties required for current Google rich-result eligibility, and a content-accuracy bug in `articleBody`/`description` on blog posts.
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-25-seo-audit]] — SEO-audit higrip.nl 25 september — 54/100, padel-regressie en rugby ontbreekt
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

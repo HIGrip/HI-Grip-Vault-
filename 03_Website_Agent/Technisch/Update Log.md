@@ -98,4 +98,12 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 - [[Conversie Optimalisatie Checklist]] — Volledige checklist waar dit uit voortkomt
 - [[Goedkeuringsworkflow]] — Hoe dit richting live gaat
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
+- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
+- [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

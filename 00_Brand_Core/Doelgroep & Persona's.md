@@ -3,7 +3,7 @@ type: kennis
 gebied: brand-core
 bijgewerkt: 2026-10-01
 ---
-
+	
 # Doelgroep & Persona's — HÏ Grip
 
 > Centrale bron voor wie HÏ Grip bedient, B2C en B2B. Andere bestanden (Content Strategie, Platform Richtlijnen, Ideale Partner Profiel) linken hier naartoe.

@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-01
 |---|---|---|---|
 | Tennis | [[Gripsokken voor tennis]] | /blogs/hi-grip/gripsokken-tennis | ja |
 | Voetbal | [[Gripsokken voor voetbal]] | /blogs/hi-grip/gripsokken-voetbal | ja |
-| Padel | [[Gripsokken voor padel]] | /blogs/hi-grip/gripsokken-padel | nee (zie let op) |
+| Padel | [[Gripsokken voor padel]] | /blogs/hi-grip/gripsokken-padel | ja (samen met tennis één beachhead; zie let op) |
 | Futsal | [[Gripsokken voor futsal]] | /blogs/hi-grip/gripsokken-futsal | nee |
 | Basketbal | [[Gripsokken voor basketbal]] | /blogs/hi-grip/gripsokken-basketbal | nee |
 | Fitness | [[Gripsokken voor fitness]] | /blogs/hi-grip/gripsokken-fitness | nee |

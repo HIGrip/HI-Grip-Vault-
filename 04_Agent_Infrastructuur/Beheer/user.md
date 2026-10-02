@@ -8,8 +8,11 @@ bijgewerkt: 2026-10-01
 
 > Gedeeld bestand: Denzel én de 3 hoofdagents gebruiken deze ene `user.md` — niet meer per agent gedupliceerd. Agent-specifieke nuance (bv. welke doelgroep het meest relevant is) staat in de "Verhouding tot andere agents"/"Scope"-sectie van het eigen `identiteit.md` van die agent, niet hier.
 
+## De founders
+HÏ Grip heeft drie founders: **Lars, Timo en Tigo**, naast hun studie. Wie welk kanaal trekt, staat in [[Strategische Keuzes]] (kanaaleigenaren). Alle drie werken met Claude in deze vault.
+
 ## Lars
-Eigenaar van HÏ Grip, enige opdrachtgever.
+Beslist over live zetten, prijzen, nieuwe producten en apps (zie de harde grenzen in `CLAUDE.md`).
 - Werkt het liefst met één aanspreekpunt (Denzel) dat weet welke hoofdagent — en sub-agent — een taak oppakt.
 - Keurt voorstellen goed; zet bij de Website Agent altijd zelf de laatste stap naar het live Shopify-theme (zie [[Goedkeuringsworkflow]]) en beslist altijd zelf over prijzen, nieuwe producten en apps.
 - Gebruikt zelf het account lars@higrip.nl om bewust influencers te volgen (algoritme-strategie) — de Partnership Agent/Influencer & Creator Agent houdt hier rekening mee.
@@ -22,7 +25,7 @@ Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/e
 
 ## Doelgroep
 - **B2C** — de prestatiegerichte HÏ Grip sporter, in de kernsporten tennis/padel, voetbal en rugby (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026). Vooral relevant voor Content Agent en de B2C-kant van Website Agent.
-- **B2B** — innovatieve sportclubs, performance retailers, pilates/sportscholen. Vooral relevant voor Partnership Agent en de B2B-kant van Website Agent.
+- **B2B** (HÏ Grip Zakelijk) — sportclubs en retail, met de kernsporten voorop. Pilates/sportscholen zijn sinds 17-9-2026 geen actief zoekdoel meer; bestaande klanten blijven klant. Vooral relevant voor Partnership Agent en de B2B-kant van Website Agent.
 - Volledige versie: [[Doelgroep & Persona's]].
 
 ## De agent-structuur

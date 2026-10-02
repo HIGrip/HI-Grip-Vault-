@@ -54,7 +54,7 @@ Is het voorstel van vorige keer nog niet opgepakt? Maak dan geen tweede voorstel
 ## Stap 4 — Output
 **A. Notitie** `05_Research/JJJJ-MM-DD-website-ux.md`, sjabloon uit `PROCEDURE.md`: `titel: "Website-UX — JJJJ-MM-DD (<paginatype>)"`, `kerntitel` = het probleem in één zin, `bron: routine`, `routine: website-ux`, `categorie: CRO`, `bronbestand: ""`. `## Kerncijfers` met de CWV-waarden als die er zijn.
 
-**B. Backlog:** precies 1 nieuw punt `### [ ] [website-ux] <voorstel>`, met Waarom (het bewijs), Waar (URL en sectie), **Wat** (het eindresultaat, plus "snippet en mockup in [[<notitie-id>]]") en Gevonden op. Daarna `python 05_Research/_tools/acties.py kop --door website-ux`.
+**B. Backlog:** precies 1 nieuw punt `### [ ] [website-ux] <voorstel>`, met Waarom (het bewijs), Waar (URL en sectie), **Wat** (het eindresultaat, plus "snippet en mockup in `[[<notitie-id>]]`") en Gevonden op. Daarna `python 05_Research/_tools/acties.py kop --door website-ux`.
 
 **C. Geheugen** `05_Research/_geheugen/website-ux.md`: één regel per voorstel (`JJJJ-MM-DD | <paginatype> | <voorstel> | <notitie-id>`) en als laatste `JJJJ-MM-DD | run | <paginatype> | <notitie-id>`.
 

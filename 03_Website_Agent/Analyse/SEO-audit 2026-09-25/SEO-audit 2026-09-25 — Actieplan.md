@@ -17,7 +17,7 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 | 3 | `/blogs/intern` unpublishen/verwijderen (valt dan vanzelf uit sitemap) | Admin → blogs | 5 min |
 | 4 | Padel-content (747 woorden + FAQ) terugzetten in `/pages/gripsokken-voor-padel` — oude tekst staat in `_archief-2026-09-20/findings/content.md` en mogelijk nog in Shopify | Theme/pagina | 1–2 u |
 | 5 | Rugby-pagina bouwen `/pages/gripsokken-voor-rugby` op het sport-template + in hub/nav | `sport-*`-secties, nieuw `page.sport-rugby.json` | 3–4 u |
-| 6 | Feitenblad maken en overal gelijktrekken: verzending "vóór 22:00 besteld = binnen 1 dag verzonden", gratis verzending vanaf €30, 4 oprichters, maten 35-38/39-42/43-47, oprichtingstijdlijn | Homepage-meta, FAQ, sportpagina's, aankondigingsbalk, collectie-meta | 1 u |
+| 6 | Feitenblad maken en overal gelijktrekken (**let op, 2-10: gebruik de waarden uit [[Feiten & Actuele Staat]]: binnen 1 werkdag verzonden, gratis vanaf €35, drie founders; de waarden die hier oorspronkelijk stonden zijn achterhaald**): ~~verzending "vóór 22:00 besteld = binnen 1 dag verzonden", gratis verzending vanaf €30, 4 oprichters~~, maten 35-38/39-42/43-47, oprichtingstijdlijn | Homepage-meta, FAQ, sportpagina's, aankondigingsbalk, collectie-meta | 1 u |
 
 ## High — binnen 1–2 weken
 | # | Actie | Moeite |

@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-01
 
 **Waar:** theme `200269168967` ("Bijgewerkte kopie van Bijgewerkte kopie van HÏ Grip WEBSITE", unpublished), op verzoek van lars. Lokale werkkopie: `C:\Users\Test\higrip-theme-ai2`. Bron van het werk: [[Stand van Zaken — Werkdossier 2026-09-04]].
 
-**Live is `199814873415` — daar is niets naartoe gegaan en gaat ook nooit iets naartoe zonder expliciete opdracht.**
+**Live was op dat moment `199814873415` (historisch: het live-ID is sindsdien gewisseld; de actuele stand staat alleen in [[Technische Procedures]]). Daar is niets naartoe gegaan en gaat ook nooit iets naartoe zonder expliciete opdracht.**
 
 **Kwaliteitscontrole:** `shopify theme check` vóór en na. Baseline van het onaangeraakte thema: 44 offenses over 23 bestanden. Na de wijzigingen: 43 over 22. Eén minder, nul nieuwe — de vier nieuwe bestanden zijn schoon. Alle 120 JSON-templates opnieuw gevalideerd na de tekstwijzigingen.
 

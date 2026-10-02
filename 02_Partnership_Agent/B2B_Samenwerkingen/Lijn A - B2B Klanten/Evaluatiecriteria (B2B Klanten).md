@@ -21,8 +21,9 @@ bijgewerkt: 2026-10-01
 **Clubs en verenigingen (bulk inkoop):**
 - Voetbalclubs die al afgeknipte kousen/tubes verkopen/aanbieden aan leden
 - Padel/tennis clubs met pro shop
-- Sportscholen die accessoires verkopen aan leden, of die ook pilates lessen geven
-- Pilates/yoga studio's — grip socks als lesmateriaal
+- Rugbyclubs (kernsport sinds 30-9-2026, zie [[Beachhead Strategie]])
+- ~~Sportscholen die accessoires verkopen aan leden, of die ook pilates lessen geven~~ — geen actief zoekdoel meer (17-9-2026)
+- ~~Pilates/yoga studio's — grip socks als lesmateriaal~~ — gestopt (17-9-2026, zie [[Ideale Partner Profiel]] §3)
 
 ## 2. Minimale inkoopdrempel
 

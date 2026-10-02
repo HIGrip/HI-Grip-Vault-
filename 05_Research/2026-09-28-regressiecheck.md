@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De kritieke check (geen aggregateRating) blijft schoon, maar drie nieuwe bevindingen: de /en/-homepage heeft 2× H1 met een onvertaalde Nederlandse hero-tekst, drie nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude /policies/*-pagina's tegen, en /collections/frontpage mist een meta description. Vier eerder gemelde afwijkingen staan nog steeds open, zonder verandering."
-gerelateerd: [2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-09-21-weekoverzicht, 2026-09-23-seo-conversietest-run-1, 2026-09-25-seo-audit, 2026-09-07-compliance-todo, 2026-09-28-seo-conversietest-run-2, 2026-09-30-search-console]
+gerelateerd: [2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-09-21-weekoverzicht, 2026-09-23-seo-conversietest-run-1, 2026-09-25-seo-audit, 2026-09-07-compliance-todo, 2026-09-28-seo-conversietest-run-2, 2026-09-30-search-console, 2026-10-02-vault-review]
 vervangt: []
 bronbestand: ""
 deadline: ""

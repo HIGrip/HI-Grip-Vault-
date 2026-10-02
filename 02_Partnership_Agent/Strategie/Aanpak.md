@@ -26,7 +26,7 @@ Zie [[Partnership Strategie]] voor de volledige aanpak.
 1. Identificeer partner via [[Ideale Partner Profiel]]
 2. Outreach via [[Outreach Templates]] (bellen/mailen)
 3. Opvolging via [[Pipeline Tracker]]
-4. Prioriteit: pilates/sportscholen eerst, dan sportclubs, dan performance retailers
+4. Prioriteit: sportclubs en retail in de kernsporten (tennis/padel, voetbal, rugby), zoals het Canva-document *MERK & STRATEGIE* voorschrijft. Pilates en sportscholen zijn op 17-9-2026 gestopt als zoekdoel (zie [[Ideale Partner Profiel]] §3); bestaande pilates-klanten blijven gewoon klant.
 5. Kandidaten die nog niet benaderd zijn: zie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]
 
 ---

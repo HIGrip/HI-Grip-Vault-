@@ -29,7 +29,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Agent Takenverdeling & Grenzen]]
 - [[Agent Werk & Kwaliteit Overzicht]]
 - [[Denzel Weekoverzicht — Routine]]
-- [[Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)]]
 - [[Feedback & Iteratie Log]]
 - [[Goedkeuringsworkflow]]
 - [[Leerregels per Agent]]
@@ -43,7 +42,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Week 2026-08-31]]
 - [[Week 2026-09-07]]
 - [[Week 2026-09-14]]
-- [[Week 2026-09-21]]
 
 ### Content Agent
 - [[04_Agent_Infrastructuur/Content Agent/identiteit|Content Agent/identiteit]]
@@ -52,9 +50,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Content Agent/Copy & Tekst/Caption & Copy Agent
 - [[04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/_Werkplek|Caption & Copy Agent/_Werkplek]]
 - [[04_Agent_Infrastructuur/Content Agent/Copy & Tekst/Caption & Copy Agent/identiteit|Caption & Copy Agent/identiteit]]
-
-### Content Agent/Strategie & Planning
-- [[Content Pillars — Buffer-tags]]
 
 ### Content Agent/Strategie & Planning/Content Strategie & Planning Agent
 - [[04_Agent_Infrastructuur/Content Agent/Strategie & Planning/Content Strategie & Planning Agent/_Werkplek|Content Strategie & Planning Agent/_Werkplek]]

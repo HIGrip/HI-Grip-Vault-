@@ -18,6 +18,11 @@
 
 De vault is de bron van waarheid. Spreekt iets anders (een geheugenbestand, een oud document, je eigen kennis) de vault tegen, dan wint de vault. Spreekt de live site de vault tegen, meld dat dan en werk de vault bij.
 
+Rangorde bij tegenspraak:
+1. **Merk en strategie:** het Canva-document *MERK & STRATEGIE* wint van de vault (werk de vault bij).
+2. **Operationele feiten** (prijzen, voorraad, thema-ID's): de live waarde wint van het feitenbestand (meld het en werk het bestand bij). Besluiten van Lars die nog niet live staan, gelden als de vastgestelde waarde; de live afwijking is dan een actie.
+3. **Al het andere:** de vault wint van geheugenbestanden, oude documenten en je eigen kennis. Binnen de vault winnen de Brand Core en het feitenbestand van de overige mappen.
+
 ## 2. Identiteit
 
 - **HÏ Grip**, altijd met trema op de Ï (in URL's en handles zonder: `higrip.nl`, `@higrip.nl`). Een Nederlands performance sportswear merk, te beginnen met de Performance Grip Socks; Performance Tubes en Performance Ski Socks (ALPINE PRO) komen binnenkort, zonder datum.

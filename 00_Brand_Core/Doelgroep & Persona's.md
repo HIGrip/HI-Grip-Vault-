@@ -57,10 +57,7 @@ Tactiek, pipeline en KPI's: [[Strategische Keuzes]] (koude acquisitie B2B). Uitw
 
 ## Toon per kanaal
 
-| Kanaal | Toon |
-|---|---|
-| **B2C** | Emotie en prestatie. Beeld voorop, korte zinnen, het gevoel van winnen. |
-| **B2B** | Zekerheid en bewijs: winst voor de winkelier of club, prijs-kwaliteit, innovatieve features en personalisatie. |
+B2C draait om emotie en prestatie, B2B om zekerheid en bewijs. De uitwerking staat op één plek: [[Brand Voice & Tone of Voice]] (§ Toon per kanaal).
 
 ---
 

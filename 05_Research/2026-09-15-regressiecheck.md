@@ -23,7 +23,7 @@ Controle-run, geen onderzoek. De kritieke check (geen `aggregateRating` op enige
 
 ## Bevindingen
 
-Eerste run van deze routine, dus zonder voorgaande week om tegen af te zetten. Referentiepunt is de audit van 15 september 2026 ([[project_higrip_seo]]) en de daar beschreven verwachte staat.
+Eerste run van deze routine, dus zonder voorgaande week om tegen af te zetten. Referentiepunt is de audit van 15 september 2026 ([[2026-09-15-seo-audit]]) en de daar beschreven verwachte staat.
 
 ### Afwijkingen
 

@@ -68,7 +68,7 @@ bijgewerkt: 2026-10-01
 <h3>Hoe was ik mijn loopsokken zonder dat ze slijten?</h3>
 <p>Binnenstebuiten, koud of lauw, en laat ze aan de lucht drogen. Zie <a href="/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken">hoe zorg ik voor mijn gripsokken</a>.</p>
 
-<p><strong>Klaar voor je volgende kilometer?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — voor 22:00 besteld, dezelfde werkdag verzonden.</p>
+<p><strong>Klaar voor je volgende kilometer?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — binnen 1 werkdag verzonden.</p>
 ```
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

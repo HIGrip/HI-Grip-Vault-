@@ -1,7 +1,7 @@
 ---
 type: feiten
 status: in-gebruik
-laatst-geverifieerd: 2026-09-25
+laatst-geverifieerd: 2026-10-01
 ---
 
 # Feiten & Actuele Staat — HÏ Grip
@@ -26,7 +26,7 @@ laatst-geverifieerd: 2026-09-25
 | Domein | https://www.higrip.nl (higrip.nl redirect naar www) | 2026-09-25 |
 | Shopify-winkel | `hi-grip.myshopify.com` · admin-slug `raqds3-tb` | 2026-09-23 |
 | Thema | Horizon (Online Store 2.0) | 2026-09-15 |
-| Live thema-ID | Wisselt. **Altijd `shopify theme list` draaien**, nooit een ID uit een document vertrouwen. Laatst bekend: `201132507463` (21-9, zie [[Technische Procedures]]); `199814873415` van 4 sep is verouderd. Nooit naartoe pushen zonder opdracht van Lars. | 2026-09-04 |
+| Live thema-ID | Wisselt. **Altijd `shopify theme list` draaien** en live beschermen op rol (`live`/`main`), niet op nummer. Het laatst bekende werk- en live-ID staat alleen in [[Technische Procedures]]. Nooit naartoe pushen zonder opdracht van Lars. | zie [[Technische Procedures]] |
 | Talen | NL (hoofd) + EN op `/en/` (sinds sep 2026, hreflang nl/en/x-default) | 2026-09-21 |
 | GA4-property | `476032345` | 2026-09-15 |
 | Search Console | Ingesteld voor higrip.nl, sitemap ingediend | 2026-09-15 |
@@ -47,12 +47,14 @@ laatst-geverifieerd: 2026-09-25
 
 ## Verzending en retour — vastgesteld door Lars op 25 sep 2026
 
-| Feit                    | Vastgestelde waarde            | Live staat op 25 sep                                                                                                                  |
-| ----------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Verzendkosten           | **€4,50**                      | Algemene voorwaarden zeggen €4,25 → **conflict**                                                                                      |
-| Gratis verzending vanaf | **€35**                        | FAQ op de productpagina zegt €30 → **conflict**                                                                                       |
-| Verzendtijd             | **Binnen 1 werkdag verzonden** | FAQ-pagina zegt "vóór 16:00 dezelfde dag", homepage/meta "vóór 22:00 vandaag verzonden" → **conflict**. De 22:00-belofte vervalt.     |
-| Retour                  | **30 dagen**                   | Retourbeleid zegt 14 dagen, ongeopend, 25% herbevoorradingskosten → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]] §4.2) |
+| Feit | Vastgestelde waarde | Live staat (laatst gezien 28 sep, regressiecheck) |
+| --- | --- | --- |
+| Verzendkosten | **€4,50** | `/policies/terms-of-service` zegt nog €4,25; de nieuwe `/pages/verzendbeleid` noemt geen bedrag → **conflict** |
+| Gratis verzending vanaf | **€35** | Announcementbar €35; `/pages/verzendbeleid` noemt geen drempel; FAQ op de productpagina zei op 25 sep €30 → **conflict** |
+| Verzendtijd | **Binnen 1 werkdag verzonden** | `/policies/shipping-policy` zegt "vóór 16:00"; "vóór 22:00 vandaag verzonden" staat via een gedeeld metafield op meerdere pagina's → **conflict**. De 22:00-belofte vervalt. |
+| Retour | **30 dagen** | `/pages/retourbeleid` zegt 30 dagen, maar nog "ongeopend" en 25% herbevoorradingskosten; `/policies/refund-policy` zegt 14 dagen → **conflict**, ook juridisch (zie [[Compliance To-Do Lijst]] §4.2) |
+
+Actuele stand en de bijbehorende actie: zie de backlog (`05_Research/_backlog/ACTIEBACKLOG.md`, punt "Nieuwe verzend-/retour-/betalingspagina's").
 
 Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2.0]] §1 (vervangt de waarden uit [[Update Log]] van 4 sep). Gelijktrekken op: productpagina + FAQ-blok, homepage- en productmeta's, algemene voorwaarden, verzend- en retourbeleid, en daarna pas `shippingDetails` / `hasMerchantReturnPolicy` in het Product-schema.
 
@@ -61,10 +63,13 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 | Claim | Waarde | Status |
 |---|---|---|
 | Aantal sporters | **3000+** | Bevestigd door Lars 15 sep. Oude teksten zeggen 1.500+ of 2.000+ — niet meer gebruiken. |
-| Wrijvingscoëfficiënt | 1,17 (tegen 0,60 bij gewone sokken) | Onderbouwd: Apps et al. 2020 en 2022, Friedl et al. 2023 |
-| Meer grip | 95% meer grip | In gebruik in merkmateriaal; afgeleid van de wrijvingscoëfficiënt |
-| Reviewscore | 4,6 ★ (Trustpilot, 17 reviews op 3 sep) | Alleen noemen met bron; nooit als schema-rating |
+| Wrijvingscoëfficiënt | 1,17 (tegen 0,60 bij gewone sokken) | Peer-reviewed: Apps et al. 2022, *Journal of Sports Sciences* (doi 10.1080/02640414.2022.2080163). Friedl et al. 2023 is **gemengd** bewijs (alleen +9,3% benutte tractie bij afremmen citeren). Details: [[Performance Grip Socks 2.0]] §3 |
+| Meer grip | 95% meer grip | Afgeleid: 1,17 ÷ 0,60 = 1,95. Zelfde bron. **Alleen met de formuleringsregel hieronder** |
+| Reviewscore | 4,6 ★ (Trustpilot, 17 reviews op 3 sep) · 4,5 / 5 (reviews op higrip.nl, 15 sep) | Twee bronnen, twee cijfers. Noem altijd de bron bij het cijfer; nooit als schema-rating. Welk cijfer op drukwerk: `[CHECK]` bij Lars (advies in [[Performance Grip Socks 2.0]] §6b: 4,5, want controleerbaar op de site) |
 | Vertrouwd door | 10+ organisaties | Niet geteld; voorzichtig gebruiken |
+
+> [!danger] Formuleringsregel voor grip-claims (verplicht in elke uiting)
+> Het onderzoek gaat over gripsokken in het algemeen, niet over een test van de HÏ Grip-sok zelf. Schrijf dus: *"Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17 — 95% meer grip (Apps et al. 2022)"*. Nooit: *"HÏ Grip getest: 95% meer grip"*, tenzij er een eigen meetrapport ligt. Zet de bronregel bij elk getal.
 
 ## Markt en focus
 
@@ -91,6 +96,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-10-02 — Vault-review: thema-ID alleen nog in [[Technische Procedures]]; live staat verzending/retour bijgewerkt naar de regressiecheck van 28-9; claimbronnen gelijkgetrokken met [[Performance Grip Socks 2.0]] §3 en formuleringsregel toegevoegd; beide reviewcijfers met bron (keuze `[CHECK]` bij Lars).
 - 2026-09-30 — Markt en focus gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (leidend): tennis/padel als één beachhead, doelgroep, team, kanalen, nieuwsbriefritme 3 weken, productnamen, skisokken van "uitgesteld" naar "binnenkort, geen datum".
 
 - 2026-09-25 — Verzendtijd gecorrigeerd naar "binnen 1 werkdag" (besluit Lars, stond vast in een losse branch en is nu samengevoegd).

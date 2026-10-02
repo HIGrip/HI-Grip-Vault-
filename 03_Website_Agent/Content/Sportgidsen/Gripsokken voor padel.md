@@ -64,7 +64,7 @@ bijgewerkt: 2026-10-01
 <h3>Hoe lang gaan gripsokken mee als ik vaak speel?</h3>
 <p>Dat hangt vooral af van hoe je ze wast. Koud of lauw, binnenstebuiten en niet in de droger — zie <a href="/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken">hoe zorg ik voor mijn gripsokken</a>.</p>
 
-<p><strong>Klaar voor je volgende wedstrijd?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — voor 22:00 besteld, dezelfde werkdag verzonden.</p>
+<p><strong>Klaar voor je volgende wedstrijd?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — binnen 1 werkdag verzonden.</p>
 ```
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

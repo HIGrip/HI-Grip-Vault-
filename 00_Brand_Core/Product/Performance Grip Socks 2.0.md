@@ -2,7 +2,7 @@
 type: product
 status: in-gebruik
 product: Performance Grip Socks 2.0
-laatst-geverifieerd: 2026-09-15
+laatst-geverifieerd: 2026-09-25
 ---
 
 # Performance Grip Socks 2.0 — productwaarheid
@@ -26,7 +26,7 @@ Zie ook: [[Brand Identity Overview]] · [[Brand Voice & Tone of Voice]] · [[Log
 |---|---|---|
 | Productnaam | Performance Grip Socks 2.0 | One-pagers B2B, productpagina's |
 | Kleuren | Zwart, Wit (2 kleuren) | One-pagers 2.0, [[Strategische Keuzes]] |
-| Maatvoering | 35–38 · 39–42 · **43–47** | EAN-lijst + Shopify-productpagina's. **Bevestigd door Lars 15 sep 2026.** ⚠️ De one-pagers 2.0 en [[Strategische Keuzes]] zeggen 43–46 — dat is fout, corrigeren. |
+| Maatvoering | 35–38 · 39–42 · **43–47** | EAN-lijst + Shopify-productpagina's. **Bevestigd door Lars 15 sep 2026.** ⚠️ De one-pagers 2.0 zeggen 43–46 — dat is fout, corrigeren. ([[Strategische Keuzes]] is al gecorrigeerd.) |
 | Klantenaantal | **3000+ sporters** | **Bevestigd door Lars 15 sep 2026.** ⚠️ Site zegt on-page 2.000+, meta descriptions 1.500+ — beide bijwerken. |
 | Adviesprijs retail | € 17,99 | One-pagers 2.0 |
 | Coolmax-aandeel | 30% | One-pagers 2.0 |
@@ -181,7 +181,7 @@ wisselen maar twee dingen: de accentkleur en drie tekstblokken.
 
 | Fout | Waar | Correctie |
 |---|---|---|
-| Maat **43–46** | Beide 2.0-one-pagers, [[Strategische Keuzes]] | **43–47** |
+| Maat **43–46** | Beide 2.0-one-pagers ([[Strategische Keuzes]] al gecorrigeerd) | **43–47** |
 | Klantenaantal 2.000+ / 1.500+ | Site on-page / meta descriptions | **3000+** |
 | "Extra **beschermag** op hiel" | Beide 2.0-one-pagers, kaart "Geen blaren" | "bescherming" |
 | "**ADMEND** VERMOGEN" | Infographic 2.0 | "ADEMEND" |
@@ -228,15 +228,15 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 
 **Reviews van higrip.nl** (opgehaald 15 sep 2026 van de 2.0-productpagina; sitegemiddelde **4,5 / 5**):
 
-| Naam | ★ | Quote |
+| Reviewer (alleen voornaam + initiaal, AVG) | ★ | Quote |
 |---|---|---|
 | Rox | 5 | "je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil" |
-| Adri Noorlander | 5 | "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming." |
-| Priscilla Verwaal | 5 | "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop" |
+| Adri N. | 5 | "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming." |
+| Priscilla V. | 5 | "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop" |
 | Lydia | 5 | "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken." |
 | Dick | 5 | "Sokken zitten uitstekend en sterke stof met goede grip. Snelle levering." |
 | Eveline | 5 | "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!" |
-| Sharon Burger | 4 | "Snel geleverd en goede kwaliteit!" |
+| Sharon B. | 4 | "Snel geleverd en goede kwaliteit!" |
 
 > [!warning] 4,5 of 4,6?
 > De one-pagers 2.0 tonen **4,6 ★**, de site toont **4,5 / 5**. Op drukwerk het cijfer gebruiken

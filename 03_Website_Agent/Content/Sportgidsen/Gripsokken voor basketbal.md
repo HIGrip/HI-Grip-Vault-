@@ -63,7 +63,7 @@ bijgewerkt: 2026-10-01
 <h3>Kan ik ze ook voor 3x3 buiten gebruiken?</h3>
 <p>Ja. Of je nu op een zaalvloer of op een buitenveld speelt: de grip werkt in je schoen, niet op de ondergrond.</p>
 
-<p><strong>Klaar voor de volgende rebound?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — voor 22:00 besteld, dezelfde werkdag verzonden.</p>
+<p><strong>Klaar voor de volgende rebound?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — binnen 1 werkdag verzonden.</p>
 ```
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

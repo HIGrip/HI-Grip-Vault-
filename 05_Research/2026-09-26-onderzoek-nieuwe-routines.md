@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Een deep-research-run (Sonnet 5, 107 agents) vond 22 controleerbare cijfers over e-mailflows, voorraad-AI, prijsmonitoring, influencer- en klantenservicetools; alle 22 zijn door onafhankelijke controle weerlegd (leveranciersmarketing zonder bron). Op basis van de eigen cijfers (37 orders dit jaar, externe financiering nodig vanaf 2028, clubs bestellen in voorjaar/zomer) zijn nu alleen een subsidie- en financieringsradar en een kansenkalender zinvol; retentie, advertenties, influencers en klantenservice pas bij een drempel."
-gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-25-evaluatie-routines, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-29-crm-dashboard-voorstel]
+gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-25-evaluatie-routines, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-29-crm-dashboard-voorstel, 2026-10-02-ai-in-het-dashboard]
 vervangt: []
 bronbestand: ""
 deadline: ""

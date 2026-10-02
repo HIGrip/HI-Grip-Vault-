@@ -38,6 +38,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Hoofdmap
 - [[2026-10-02-navigatie-en-takentijdlijn]]
 - [[2026-10-02-dashboard-apps-patronen]]
+- [[2026-10-02-ai-in-het-dashboard]]
 - [[2026-10-01-growth-radar-cro]]
 - [[2026-09-30-search-console]]
 - [[2026-09-30-growth-radar-ai-search]]

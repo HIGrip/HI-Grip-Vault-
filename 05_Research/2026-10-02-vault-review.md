@@ -9,7 +9,7 @@ categorie: Merk
 status: in-uitvoering
 prioriteit: P1
 samenvatting: "De vault is technisch gezond (4 kapotte links op 242 notities), maar feiten stonden op meer plekken dan de regel 'enige plek' toestaat, waardoor besluiten van 25-9 niet overal doorkwamen: 22:00-belofte in alle 7 sportgidsen, vier verschillende live-thema-ID's, pilates nog als B2B-prioriteit. Dit is op 2-10 rechtgezet; wat overblijft zijn besluiten voor Lars en structureel werk (hernoemen, skills naar de vault, rugbygids)."
-gerelateerd: [2026-09-28-regressiecheck, 2026-09-25-evaluatie-routines, 2026-09-21-beachhead-rugby, 2026-09-21-weekoverzicht, 2026-09-23-seo-conversietest-run-1]
+gerelateerd: [2026-09-28-regressiecheck, 2026-09-25-evaluatie-routines, 2026-09-21-beachhead-rugby, 2026-09-21-weekoverzicht, 2026-09-23-seo-conversietest-run-1, 2026-10-02-obsidian-structuur-ai-agents]
 vervangt: []
 bronbestand: ""
 deadline: ""

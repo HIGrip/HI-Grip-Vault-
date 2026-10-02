@@ -37,6 +37,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### Hoofdmap
 - [[2026-10-02-vault-review]]
+- [[2026-10-02-obsidian-structuur-ai-agents]]
 - [[2026-10-02-navigatie-en-takentijdlijn]]
 - [[2026-10-02-growth-radar-social]]
 - [[2026-10-02-dashboard-ontwerpregels-kpi]]

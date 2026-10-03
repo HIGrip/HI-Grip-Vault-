@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Het dashboard-prototype heeft nu een agenda, mail, ads en een leverancierspagina, en alles hangt aan elkaar: een akkoord op een mail kan een afspraak maken, afspraken tellen mee in de capaciteit en de tijdlijn van een relatie toont mail, chats en afspraken. Agents op Hermes doen het zoek- en rekenwerk, maar alleen als voorstel; versturen, publiceren en ads live zetten blijft mensenwerk. Daarnaast staan er 20 features voor later: 10 die andere dashboards hebben en 10 die HÏ Grip specifiek nodig heeft."
-gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel, 2026-10-02-ai-in-het-dashboard, 2026-10-02-dashboard-ontwerpregels-kpi]
+gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel, 2026-10-02-ai-in-het-dashboard, 2026-10-02-dashboard-ontwerpregels-kpi, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

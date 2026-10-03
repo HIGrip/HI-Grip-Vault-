@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "Prototype v2 voldeed al aan vijf van de zeven regels; het gat zat in de KPI-tegels: de vergelijking was een percentage zonder zichtbare basis, en niet te zien was wat de verandering veroorzaakte of dat je erop kon klikken. Nu tonen de tegels de vorige periode als stippellijn in de minigrafiek, een regel ‘Vooral …’ met het onderdeel dat het meest veranderde, en een › naar de bron."
-gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-26-dashboard-ux-onderzoek]
+gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-26-dashboard-ux-onderzoek, 2026-10-03-dashboard-agenda-mail-ads-leveranciers]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

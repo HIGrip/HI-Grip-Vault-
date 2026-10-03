@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Voor een team van drie levert AI het meest op bij schrijven (mails, belscripts, captions), samenvatten en uitleggen, vragen stellen aan je eigen data en concrete voorstellen doen. Steeds met een korte reden en altijd met een mens die goedkeurt. Voorraad, reeksen en signalen blijven vaste rekenregels: er is te weinig historie voor een voorspelmodel. In prototype v2 werken nu 13 van de 22 AI-functies, waaronder Denzel met tools, Mijn dag, Leg de cijfers uit en Slimme selectie."
-gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel, 2026-09-26-onderzoek-nieuwe-routines]
+gerelateerd: [2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel, 2026-09-26-onderzoek-nieuwe-routines, 2026-10-03-dashboard-agenda-mail-ads-leveranciers]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

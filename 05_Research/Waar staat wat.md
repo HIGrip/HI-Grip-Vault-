@@ -37,6 +37,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### Hoofdmap
 - [[2026-10-04-dashboard-herindeling-ai-mail-koppelingen]]
+- [[2026-10-04-dashboard-efferd-volgorde-cijfers]]
 - [[2026-10-04-dashboard-bruikbaarheidsaudit]]
 - [[2026-10-03-growth-radar-social-content]]
 - [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]]

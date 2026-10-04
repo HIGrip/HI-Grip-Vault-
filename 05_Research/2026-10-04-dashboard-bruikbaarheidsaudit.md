@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Een automatische klikronde over alle 80 schermen (ruim 2.500 klikken) vond twee echte fouten en acht knoppen die stil bleven bij een leeg formulier; die zijn opgelost en de ronde geeft nu 0 fouten op desktop en telefoon. Het drukke gevoel kwam vooral van de telefoon (grote KPI-tegels met grafiek vóór de taken, drie navigatielagen, tot zes witte knoppen per scherm) en van te zwakke randen: knoppen, velden en vinkjes hadden 1,1 tot 1,7:1 contrast, de norm is 3:1. Volt werd als vulling gebruikt op tegels die juist achterliepen, en de takentijdlijn kleurde per module in plaats van per status; beide zijn rechtgezet."
-gerelateerd: [2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-02-dashboard-ontwerpregels-kpi, 2026-09-26-dashboard-ux-onderzoek, 2026-10-02-dashboard-apps-patronen]
+gerelateerd: [2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-02-dashboard-ontwerpregels-kpi, 2026-09-26-dashboard-ux-onderzoek, 2026-10-02-dashboard-apps-patronen, 2026-10-04-dashboard-efferd-volgorde-cijfers]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

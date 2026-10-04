@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "WhatsApp kan echt aan het dashboard gekoppeld worden: met de WhatsApp Business Platform en coexistence blijft de app op de telefoon werken en lopen berichten ook via de API. WeChat kan alleen via WeCom met een externe archiveringskoppeling; dat is duur en ingewikkeld. Daarnaast is het prototype opnieuw ingedeeld op doel (Werk · Verkoop & marketing · Operatie · Kennis · Systeem), krijgt elke inkomende B2B-mail een AI-antwoord dat het team goedkeurt, en zijn sjablonen, flows, doelen met beachhead-scorebord, teamorders, evenementen en de kanalen van de centrale voorraad toegevoegd."
-gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel]
+gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-02-dashboard-apps-patronen, 2026-09-29-crm-dashboard-voorstel, 2026-10-04-dashboard-bruikbaarheidsaudit]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

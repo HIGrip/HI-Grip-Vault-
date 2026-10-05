@@ -108,6 +108,5 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
-- [[2026-09-28-weekoverzicht]] — Denzel Weekoverzicht — 2026-09-28 (NL-verkeer derde week op rij lager, nieuwe EN-/beleidspagina's hebben eigen fouten)
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

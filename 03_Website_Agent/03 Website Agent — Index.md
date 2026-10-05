@@ -73,6 +73,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Sportpagina Meta's (21-9-2026)]]
 
 ### SEO/Strategie
+- [[Blog SEO-plan (2026-10-02)]]
 - [[SEO Strategie & Keywords]]
 
 ### SEO/Technisch

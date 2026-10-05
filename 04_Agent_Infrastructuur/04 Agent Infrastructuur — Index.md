@@ -17,8 +17,8 @@ Terug naar [[Home]].
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
-- [[Identiteit Denzel]]
-- [[Soul Denzel]]
+- [[04_Agent_Infrastructuur/Identiteit Denzel|04_Agent_Infrastructuur/Identiteit Denzel]]
+- [[04_Agent_Infrastructuur/Soul Denzel|04_Agent_Infrastructuur/Soul Denzel]]
 
 ### Beheer
 - [[API & Tool Connections]]
@@ -29,7 +29,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Agent Takenverdeling & Grenzen]]
 - [[Agent Werk & Kwaliteit Overzicht]]
 - [[Denzel Weekoverzicht — Routine]]
-- [[Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)]]
 - [[Feedback & Iteratie Log]]
 - [[Goedkeuringsworkflow]]
 - [[Leerregels per Agent]]
@@ -43,7 +42,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Week 2026-08-31]]
 - [[Week 2026-09-07]]
 - [[Week 2026-09-14]]
-- [[Week 2026-09-21]]
 
 ### Content Agent
 - [[Content Pillars — Buffer-tags]]

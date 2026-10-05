@@ -23,4 +23,4 @@ Het contentvoorstel van week 28 september 2026 (4 items, in [[Agent Werk & Kwali
 | Bevestigen dat Tigo ideeën beoordeelt vóór ze naar Buffer gaan, en wat Tigo precies ziet | Lars |
 | Dunne agentbestand in `agents/` en de setup-repo bijwerken | Denzel |
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

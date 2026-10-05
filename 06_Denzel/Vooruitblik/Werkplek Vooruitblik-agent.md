@@ -34,4 +34,4 @@ Volledige definitie: [[Identiteit Vooruitblik-agent]]. Nog niet gebouwd als agen
 | Afbakening met de routines Concurrentie-monitor, Growth Radar, Productradar en Materialen & productie nalopen | Denzel |
 | Dunne agentbestand in `agents/` en de setup-repo bijwerken | Denzel |
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

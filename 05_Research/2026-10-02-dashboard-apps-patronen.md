@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "De beste werk-apps (Linear, Stripe, Shopify, Attio, HubSpot, Asana) delen een paar vaste patronen. Het belangrijkste: alle schermen rekenen uit één bron, en signalen en tellers worden berekend in plaats van ingevuld. Verder: ⌘K voor alles, opgeslagen weergaven als tabs, snel bekijken zonder de lijst te verlaten, en ongedaan maken in plaats van ‘weet je het zeker?’. Prototype v2 is op die manier herbouwd: elke actie werkt door in alle modules en niets staat meer dubbel."
-gerelateerd: [2026-10-02-navigatie-en-takentijdlijn, 2026-09-29-crm-dashboard-voorstel, 2026-09-26-dashboard-ux-onderzoek, 2026-10-02-ai-in-het-dashboard, 2026-10-02-dashboard-ontwerpregels-kpi]
+gerelateerd: [2026-10-02-navigatie-en-takentijdlijn, 2026-09-29-crm-dashboard-voorstel, 2026-09-26-dashboard-ux-onderzoek, 2026-10-02-ai-in-het-dashboard, 2026-10-02-dashboard-ontwerpregels-kpi, 2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-04-dashboard-bruikbaarheidsaudit]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

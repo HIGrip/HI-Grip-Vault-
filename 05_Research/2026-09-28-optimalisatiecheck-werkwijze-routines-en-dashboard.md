@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "De Actiecontrole draait sinds 26-09 elke nacht, maar de routine heeft geen repository gekoppeld: hij stopt na 2 minuten zonder commit, waardoor CONTROLE.json, de Shopify- en GA4-cijfers en de dashboardsync op 26-09 blijven staan. Daarnaast zijn 11 open acties onzichtbaar in twee gearchiveerde weekoverzichten, staan minstens 8 groepen acties dubbel en is het dashboard nog alleen voor info@ zichtbaar."
-gerelateerd: [2026-09-25-evaluatie-routines, 2026-09-26-onderzoek-nieuwe-routines, 2026-09-26-dashboard-ux-onderzoek, 2026-09-28-weekoverzicht]
+gerelateerd: [2026-09-25-evaluatie-routines, 2026-09-26-onderzoek-nieuwe-routines, 2026-09-26-dashboard-ux-onderzoek, 2026-09-28-weekoverzicht, 2026-10-02-obsidian-structuur-ai-agents]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 1 oktober 2026 (growth-radar)
+Laatst bijgewerkt: 4 oktober 2026 (growth-radar)
 Open: 25 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -235,3 +235,8 @@ Elke ochtend leest de routine dit bestand voordat hij nieuw onderzoek doet:
 Niet zelf samengevoegd — dat wijzigt koppen en dus actie-id's; ter beoordeling aan Lars via het dashboard.
 
 **Toegang:** De `ArtifactData`-database van het dashboard (collecties `status/checks/aantekeningen/beheer/nieuwe_acties/opdrachten/kansen`) is deze run niet leesbaar voor deze cloudsessie ("shared with you from another organization" — geen db-toegang voor uitgenodigde editors). Stap B (dashboard → vault) kon dus niet draaien; build en publish zijn wel gedaan vanuit de bestaande vaultstand.
+
+**4 okt 2026:** 25 open punten (backlog, `dubbel` niet meegeteld — die 8 id's horen bij onderzoeksnotities, niet bij de backlog) — nog steeds boven de 15 uit de vuistregel. Geen P1-punt staat al drie weken zonder beweging: oudst zijn `/collections/all` zonder meta description en punt 2 (reviewapp), beide sinds 15 sep — 19 dagen, nog geen 21. Dezelfde twee samenvoegkandidaten uit de vorige weekcheck (27 sep) staan nog open, want nog niet samengevoegd:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
+- **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Toegang tot de dashboard-database werkte deze run wel (alle 7 collecties leeg, dus niets te importeren uit stap B).

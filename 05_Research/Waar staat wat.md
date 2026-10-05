@@ -36,7 +36,17 @@
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
+- [[2026-10-05-weekoverzicht]]
+- [[2026-10-05-seo-conversietest-run-3]]
+- [[2026-10-05-regressiecheck]]
+- [[2026-10-05-growth-radar-seo-technisch]]
+- [[2026-10-04-dashboard-herindeling-ai-mail-koppelingen]]
+- [[2026-10-04-dashboard-efferd-volgorde-cijfers]]
+- [[2026-10-04-dashboard-bruikbaarheidsaudit]]
+- [[2026-10-03-growth-radar-social-content]]
+- [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]]
 - [[2026-10-02-vault-review]]
+- [[2026-10-02-obsidian-structuur-ai-agents]]
 - [[2026-10-02-navigatie-en-takentijdlijn]]
 - [[2026-10-02-growth-radar-social]]
 - [[2026-10-02-dashboard-ontwerpregels-kpi]]

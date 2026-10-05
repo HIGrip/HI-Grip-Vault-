@@ -15,3 +15,6 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-09-28 | website | Nieuwe /en/-homepage 2×H1 + onvertaalde hero; 3 nieuwe verzend-/retourpagina's spreken oude policies tegen; NL-verkeer 3e week op rij lager (-23%) | 2026-09-28-weekoverzicht
 2026-09-28 | partnerships | Contactgegevens gevonden voor 3 tennisretailers (TennisDirect, Tennisplanet, TennisFirst Rotterdam); TennisFirst Rotterdam nu outreach-klaar | 2026-09-28-weekoverzicht
 2026-09-28 | content | Content-voorstel week 28-09 (4 nieuwe ideeën); voorstel van 21-09 nog niet beoordeeld door Tigo | 2026-09-28-weekoverzicht
+2026-10-05 | website | /en/-H1-bug en lege EN-titel lijken opgelost (nog te bevestigen door actiecontrole); schema nu ook op de 3 sportpagina's; echte NL-sessies eerste stijging na 3 weken daling (+40%) | 2026-10-05-weekoverzicht
+2026-10-05 | partnerships | Beide kandidatenlijsten 3 dagen oud, alle kandidaten al beoordeeld — geen zoekactie nodig; outreach Powerleague/Panna/TennisFirst blijft voorlopig niet (besluit lars 30-09) | 2026-10-05-weekoverzicht
+2026-10-05 | content | Nieuw content-voorstel week 05-10 (5 ideeën) — voorstellen van 21-09 en 28-09 beide bevestigd beoordeeld op 30-09, stapelrem liet nieuw voorstel toe | 2026-10-05-weekoverzicht

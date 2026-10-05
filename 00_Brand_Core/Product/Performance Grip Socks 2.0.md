@@ -260,6 +260,7 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 - [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
 - [[2026-09-28-seo-conversietest-run-2]] — SEO- en conversietest run 2 — auditblok B, concepten voor 2.0-producten en collecties

@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Geen nieuwe afwijkingen deze week: de bekende /en/-H1-bug met onvertaalde hero-tekst en de lege EN-titel lijken opgelost, en /collections/frontpage is nu een directe 404 in plaats van de eerder gemelde ontbrekende meta description — beide horen bij al openstaande backlogpunten en krijgen geen nieuw punt. Prijzen kloppen exact met het feitenbestand en de kritieke aggregateRating-check blijft schoon op alle 12 gecontroleerde URL's."
-gerelateerd: [2026-09-28-regressiecheck, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-10-05-growth-radar-seo-technisch]
+gerelateerd: [2026-09-28-regressiecheck, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-10-05-growth-radar-seo-technisch, 2026-10-05-seo-conversietest-run-3]
 vervangt: []
 bronbestand: ""
 deadline: ""

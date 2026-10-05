@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over Google-updates, Core Web Vitals, structured data, Merchant Center of de Shopify-changelog haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. Bestaande P1-punten (Merchant Center variant-ID's, schema-thema, EN-title) blijven ongewijzigd staan."
-gerelateerd: [2026-09-28-growth-radar-seo-technisch, 2026-09-21-growth-radar-seo-technisch]
+gerelateerd: [2026-09-28-growth-radar-seo-technisch, 2026-09-21-growth-radar-seo-technisch, 2026-10-05-regressiecheck]
 vervangt: []
 bronbestand: ""
 deadline: ""

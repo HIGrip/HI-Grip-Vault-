@@ -7,6 +7,8 @@ status: concept — ter beoordeling door Lars
 
 # 06 Denzel — Index
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+
 > Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**, plus zijn vijf eigen sub-agents. Dit is voor Denzel wat `identiteit`, `soul` en `Werkplek` voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
 
 ## Verschil met 04_Agent_Infrastructuur
@@ -58,4 +60,49 @@ Gedeelde toetsregels voor de drie QA-agents: [[Toetsregels]].
 
 Concept van 2026-10-02. Alles hier is een voorstel zolang Lars het niet heeft goedgekeurd, vooral de autonomie-niveaus en grenzen van de nieuwe sub-agents. Voortgang en open punten: [[Werkplek Denzel]].
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+## Alle notities in deze map (automatisch)
+
+Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+
+### Hoofdmap
+- [[Huidig gebruik van Denzel]]
+- [[06_Denzel/Identiteit Denzel|06_Denzel/Identiteit Denzel]]
+- [[06_Denzel/Soul Denzel|06_Denzel/Soul Denzel]]
+- [[Werkplek Denzel]]
+
+### Handboek
+- [[Delegeren aan het eigen team]]
+- [[Escalatie en besluiten]]
+- [[Kwaliteitscontrole]]
+- [[Ritmes]]
+- [[Routeringsgids]]
+- [[Vaktheorie Denzel]]
+
+### Kwaliteitslog
+- [[Kwaliteitslog Overzicht]]
+
+### Kwaliteitspartners
+- [[Toetsregels]]
+
+### Kwaliteitspartners/Content-QA
+- [[Identiteit Content-QA]]
+- [[Toetslijst Content-QA]]
+- [[Werkplek Content-QA]]
+
+### Kwaliteitspartners/Partnership-QA
+- [[Identiteit Partnership-QA]]
+- [[Toetslijst Partnership-QA]]
+- [[Werkplek Partnership-QA]]
+
+### Kwaliteitspartners/Website-QA
+- [[Identiteit Website-QA]]
+- [[Toetslijst Website-QA]]
+- [[Werkplek Website-QA]]
+
+### Stafchef
+- [[Identiteit Stafchef]]
+- [[Werkplek Stafchef]]
+
+### Vooruitblik
+- [[Identiteit Vooruitblik-agent]]
+- [[Werkplek Vooruitblik-agent]]

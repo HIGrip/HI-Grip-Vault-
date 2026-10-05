@@ -42,4 +42,4 @@ status: concept — ter beoordeling door Lars
 - Een agent zonder zoektool vult handles en volgersaantallen in vanuit zijn geheugen. Dat is geen fout van de agent maar een tekort in de opzet.
 - Een samenwerkingskans bij een evenement is geen klant. Een evenement wordt niet als B2B-lead gescoord.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

@@ -73,4 +73,4 @@ Rechtstreeks overleg tussen agents bestaat niet. Alles loopt via een bestand, zo
 - Een feit uit het geheugen. Feiten staan in [[Feiten & Actuele Staat]], de briefing verwijst ernaar
 - Een beslissing die al op "Altijd overleg vooraf" staat, alsof ze genomen is
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

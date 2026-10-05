@@ -40,12 +40,14 @@ HUBS = {
     "03_Website_Agent": "03_Website_Agent/03 Website Agent — Index.md",
     "04_Agent_Infrastructuur": "04_Agent_Infrastructuur/04 Agent Infrastructuur — Index.md",
     "05_Research": "05_Research/Waar staat wat.md",
+    "06_Denzel": "06_Denzel/06 Denzel — Index.md",
 }
 HUB_INTRO = {
     "01_Content_Agent": "Kennisbank voor social content: copy, strategie en planning, visuele productie.",
     "02_Partnership_Agent": "Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers.",
     "03_Website_Agent": "Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail.",
     "04_Agent_Infrastructuur": "Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts.",
+    "06_Denzel": "Kernmap van Denzel, de Orchestrator Agent: wat hij doet en hoe, zijn handboek en zijn vijf eigen sub-agents.",
 }
 
 CORE_LINKS = ("[[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · "

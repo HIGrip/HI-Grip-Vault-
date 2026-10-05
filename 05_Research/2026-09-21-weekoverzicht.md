@@ -8,9 +8,9 @@ categorie: SEO
 status: gearchiveerd
 prioriteit: P1
 samenvatting: "De €0-week is doorbroken met 2 orders (€26,25), maar het echte Nederlandse verkeer daalde 22%: de groei is botverkeer uit de VS/China. WebSite- en FAQPage-schema staan 3 weken op rij niet live en de live FAQ spreekt de bevestigde waarden tegen (16:00/14 dagen/€30 i.p.v. 22:00/30 dagen/€35); het herstelpakket ligt klaar in het werkthema."
-gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines, 2026-09-28-weekoverzicht]
+gerelateerd: [2026-09-14-weekoverzicht, 2026-09-21-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-21-beachhead-rugby, 2026-09-25-evaluatie-routines, 2026-09-28-weekoverzicht, 2026-10-02-vault-review]
 vervangt: [2026-09-14-weekoverzicht]
-bronbestand: "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\Week 2026-09-21.md"
+bronbestand: ""
 deadline: ""
 ---
 # Denzel Weekoverzicht — 2026-09-21 (structured data 3 weken uit, 2 orders)
@@ -193,7 +193,7 @@ Google organic **daalde** dus; het is wel de bron van 1 van de 2 orders. Instagr
 - [ ] P3 · Update Log bijwerken (loopt 7 weken achter)
 
 ## Bronnen
-- Origineel: `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week 2026-09-21.md` (Denzel-cloudroutine, 21 sep 2026)
+- Origineel: `04_Agent_Infrastructuur/Beheer/Weekoverzicht/Week 2026-09-21.md` (Denzel-cloudroutine, 21 sep 2026) — kopie verwijderd op 2026-10-02, staat in de git-geschiedenis
 - [[Stappenplan — Verdere Bouw]] · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
 
 ## Aantekeningen

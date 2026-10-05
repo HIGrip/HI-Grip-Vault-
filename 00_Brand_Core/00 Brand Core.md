@@ -61,7 +61,7 @@ Terug naar [[Home]].
 
 - [[Strategische Keuzes]]: marketingstrategie en doelen
 - [[Beachhead Strategie]]: van 3 kernsporten (tennis/padel, voetbal, rugby) naar all-round sportmerk
-- [[Concurrentieanalyse]]: nog te vullen
+- [[Concurrentieanalyse]]: basis (concurrenten, rugbyprijzen, onderscheid); wordt aangevuld door de Concurrentie-monitor
 
 ## Compliance
 

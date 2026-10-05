@@ -2,7 +2,7 @@
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
 
-> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-09-25.
+> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.
 
 | Wat | Waar | Bijgewerkt | Hoe kom je erbij |
 |---|---|---|---|
@@ -16,14 +16,14 @@
 | **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |
 | **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\Routines\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |
 | **Growth-radar-dagrapporten (archief)** | `C:\Users\Test\.claude\research\growth-radar\rapporten\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\` |
-| **Geplande lokale routines** | `C:\Users\Test\.claude\scheduled-tasks\higrip-growth-radar\SKILL.md` en `higrip-seo-regressiecheck\SKILL.md` | bij wijziging van de routine | Claude-app (draait alleen als de app openstaat) |
-| **Denzel-weekoverzicht** (cloud-routine, maandag 08:00) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [[Denzel Weekoverzicht — Routine]]; output tot 14-09 in `04_Agent_Infrastructuur\Beheer\Weekoverzicht\`, daarna `05_Research\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |
+| **Geplande lokale routines** | `C:\Users\Test\.claude\scheduled-tasks\` | — | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `04_Agent_Infrastructuur\Routines\README.md`) |
+| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [[Denzel Weekoverzicht — Routine]]; output tot 14-09 in `04_Agent_Infrastructuur\Beheer\Weekoverzicht\`, daarna `05_Research\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |
 | **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\Users\Test\.claude\commands\*.md` | bij wijziging | typ `/naam` in Claude Code |
 | **Claude-geheugen** (werkafspraken, projectcontext) | `C:\Users\Test\.claude\memory\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |
 | **Merkregels voor Claude** | `C:\Users\Test\.claude\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |
 | **Plannen** | `C:\Users\Test\.claude\plans\` | per project | bestanden; `research-dashboard.md` = dit systeem |
 | **Projectmappen** | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |
-| **Shopify-thema (werkkopie)** | `C:\Users\Test\higrip-theme` (test-thema 194761425223); `higrip-theme-ai2` (thema 200269168967) | bij themawerk | Shopify CLI via Git Bash — nooit naar live 199814873415 zonder opdracht |
+| **Shopify-thema (werkkopie)** | thema-ID's en lokale werkmappen staan alleen in [[Technische Procedures]] | bij themawerk | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars |
 | **Website-analyse in de vault** | `03_Website_Agent\Analyse\` ([[Stand van Zaken — Werkdossier 2026-09-04]], [[Analytics & KPI Dashboard]], [[Conversie Optimalisatie Checklist]]) | bij audit | Obsidian |
 | **Doorgevoerde themawijzigingen** | [[Update Log]] (`03_Website_Agent\Technisch\`) | bij elke push | Obsidian |
 | **Procesleerpunten agents** | [[Feedback & Iteratie Log]] (`04_Agent_Infrastructuur\Beheer\`) | per iteratie | Obsidian |
@@ -36,8 +36,10 @@
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
+- [[2026-10-02-vault-review]]
 - [[2026-10-02-navigatie-en-takentijdlijn]]
 - [[2026-10-02-growth-radar-social]]
+- [[2026-10-02-dashboard-ontwerpregels-kpi]]
 - [[2026-10-02-dashboard-apps-patronen]]
 - [[2026-10-02-ai-in-het-dashboard]]
 - [[2026-10-01-growth-radar-cro]]

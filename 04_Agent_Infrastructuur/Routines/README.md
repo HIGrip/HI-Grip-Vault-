@@ -92,7 +92,7 @@ Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) schrijft allee
      - Agenda: de **Google Calendar API** aan en de agenda van info@higrip.nl delen met het serviceaccount ("Alle afspraakdetails bekijken").
      - Core Web Vitals: de **PageSpeed Insights API** aan, of een API-sleutel als `PAGESPEED_API_KEY`.
      - Merchant Center: de **Merchant API** aan, het serviceaccount toevoegen onder Mensen en toegang, en het account-ID invullen in `05_Research/_data/instellingen.json` (`merchant.account_id`).
-5. **Skills:** in de vault onder `.claude/skills/`, zodat ze ook in de cloud beschikbaar zijn.
+5. **Skills:** geen routine roept een skill aan; alles wat een routine moet doen, staat in zijn promptbestand. De vault heeft alleen de commands die in de vault nodig zijn (`.claude/commands/`: `/research-nieuw`, `/research-sync`). De agent-skills (`/shopify-*`, `/denzel`, `/content-agent`, …) leven in de repo `HIGrip/HI-Grip-claude-setup` en lokaal in `~/.claude/commands/`. Niet naar de vault kopiëren: dan ontstaat een derde versie die uit de pas loopt. Heeft een nieuwe routine toch een skill nodig, verplaats hem dan naar `.claude/skills/` in de vault en verwijder hem uit de setup-repo (één bron). `BEHEER.json` en `OPDRACHTEN.json` in `_backlog/` ontbreken bewust tot de eerste dashboardactie: `acties.py` maakt ze aan.
 6. **Geheugen:** `05_Research/_geheugen/<routine>.md` volgens de regel in `_geheugen/README.md`.
 
 ### Google-sleutel in de cloud zetten (eenmalig)

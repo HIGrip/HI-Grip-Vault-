@@ -42,7 +42,7 @@
 - [[04_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
-- [[user]] — gedeeld: wie lars en HÏ Grip zijn
+- [[user]] — gedeeld: wie de founders (Lars, Timo, Tigo) en HÏ Grip zijn
 - [[Stappenplan — Verdere Bouw]] — wat er nog gebouwd wordt · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
 - Agent-profielen — wie (`identiteit`) + gedrag (`soul`):
     - Content Agent: [[Identiteit Content Agent|identiteit]] · [[Soul Content Agent|soul]]
@@ -69,7 +69,7 @@
 | **Wekelijkse routine** | Denzel-weekoverzicht (maandag) | claude.ai cloud-routine — zie [[Denzel Weekoverzicht — Routine]] |
 | **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `05_Research/` in deze vault — [[Waar staat wat]] |
 | **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (claude.ai, org-intern) |
-| **Dagelijkse routines** | Growth Radar (dagelijks ~05:30) en SEO-regressiecheck (maandag 07:00) — rapporten + `ACTIEBACKLOG.md` | `C:\Users\Test\.claude\research\growth-radar\` (fase 2: naar de vault); registratie in `05_Research/` |
+| **Routines** | Actiecontrole, Growth Radar, regressiecheck, Search Console, Denzel en meer — notities + `ACTIEBACKLOG.md` | cloudroutines op info@; prompts, tijden en status in [[04_Agent_Infrastructuur/Routines/README\|Routines]]; output in `05_Research/` |
 | **Projecten (code)** | padel-landing, redesign, skisokken | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` |
 | **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |
 
@@ -77,13 +77,20 @@
 
 ---
 
-## Opschoonstatus (2026-09-17)
+## Opschoonstatus (2026-10-02)
 
-Bijgewerkt bij de bouw van het Research Dashboard (17-09); eerdere ronde 30-08.
+Laatste ronde: vault-review van 02-10 (zie [[2026-10-02-vault-review]]); eerdere rondes 17-09 en 30-08.
+
+**Gedaan 2026-10-02**
+- Feiten, productwaarheid en sportgidsen gelijkgetrokken met het verzendbesluit van 25-09 (geen 22:00-belofte meer)
+- Thema-ID's alleen nog in [[Technische Procedures]]; oude ID's elders weggehaald of als historisch gemarkeerd
+- B2B-koers (geen pilates meer) en founders bijgewerkt in [[user]], [[Aanpak]] en [[Evaluatiecriteria (B2B Klanten)]]
+- Duplicaten weg: `Week 2026-09-21` (staat in `05_Research/`), `Content Pillars — Buffer-tags` (staat in [[Content Pillars]]), `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]])
+- [[Concurrentieanalyse]] gevuld met wat de vault al wist
 
 **Gedaan 2026-09-17**
 - `05_Research/` aangemaakt met 14 notities (migratie van SEO-audit, growth-radar-rapporten, regressiecheck, 4 Denzel-weekoverzichten, werkdossier, compliance-lijst, analytics-meetgat) + [[Waar staat wat]]
-- Research Dashboard gepubliceerd en gepind; procedure in `05_Research/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `05_Research/` (prompttekst: [[Denzel Weekoverzicht — Routineprompt stap 9 (2026-09-17)]] — handmatig te plakken)
+- Research Dashboard gepubliceerd en gepind; procedure in `05_Research/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `05_Research/` (sinds 25-09 vervangen door het promptbestand [[Denzel-weekoverzicht]])
 - Oud werk uit `.claude\` naar `.claude\archief\` (README aanwezig); Claude-memory zonder Franklin Gothic, klantenaantal 3000+, verzenddrempel €35
 - [[Content Pillars]] (01_) aangevuld met de Buffer-tagkoppeling uit de 04_-kopie
 - Weekoverzichten t/m 2026-09-14 blijven in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/` als archief; nieuwe weken komen in `05_Research/`
@@ -96,5 +103,6 @@ Bijgewerkt bij de bouw van het Research Dashboard (17-09); eerdere ronde 30-08.
 - Lege notities voorzien van een eerlijke "nog te vullen"-status i.p.v. stilzwijgend leeg
 
 **Nog te doen — input van lars nodig**
-- **Lege notities invullen of verwijderen:** [[Concurrentieanalyse]], [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
-- ~~**Shopify `theme list` draaien**~~ — gedaan 17-9 (Denzel): werkthema `200269168967` (bevestigd door lars), live `200269398343`. Staat in [[Technische Procedures]].
+- **Lege notities invullen of verwijderen:** [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
+- ~~**Shopify `theme list` draaien**~~ — gedaan; de actuele thema-ID's staan alleen in [[Technische Procedures]].
+- **Rugby-sportgids:** concept staat klaar in [[Gripsokken voor rugby]]; nog een rugbyfoto en een check door een rugbyer nodig.

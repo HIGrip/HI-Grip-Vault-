@@ -9,7 +9,7 @@ categorie: Techniek
 status: verwerkt
 prioriteit: P3
 samenvatting: "De startpagina had veel meer dan 7 concurrerende blokken en elke actie 4–6 regels tekst; onderzoek (NN/g, Linear Triage) wijst op progressive disclosure en een beperkte focuslijst. Doorgevoerd in dashboard-versie 26: top 5 Eerst doen, besluiten ernaast, actiecontrole ingeklapt tot één regel, lege hoofdnamen onder Binnenkort en een tabbalk op mobiel."
-gerelateerd: [2026-09-25-evaluatie-routines, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-29-crm-dashboard-voorstel, 2026-10-02-navigatie-en-takentijdlijn, 2026-10-02-dashboard-apps-patronen]
+gerelateerd: [2026-09-25-evaluatie-routines, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-29-crm-dashboard-voorstel, 2026-10-02-navigatie-en-takentijdlijn, 2026-10-02-dashboard-apps-patronen, 2026-10-02-dashboard-ontwerpregels-kpi]
 vervangt: []
 bronbestand: ""
 deadline: ""

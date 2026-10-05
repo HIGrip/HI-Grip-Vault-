@@ -17,7 +17,7 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 | 3 | `/blogs/intern` unpublishen/verwijderen (valt dan vanzelf uit sitemap) | Admin → blogs | 5 min |
 | 4 | Padel-content (747 woorden + FAQ) terugzetten in `/pages/gripsokken-voor-padel` — oude tekst staat in `_archief-2026-09-20/findings/content.md` en mogelijk nog in Shopify | Theme/pagina | 1–2 u |
 | 5 | Rugby-pagina bouwen `/pages/gripsokken-voor-rugby` op het sport-template + in hub/nav | `sport-*`-secties, nieuw `page.sport-rugby.json` | 3–4 u |
-| 6 | Feitenblad maken en overal gelijktrekken: verzending "vóór 22:00 besteld = binnen 1 dag verzonden", gratis verzending vanaf €30, 4 oprichters, maten 35-38/39-42/43-47, oprichtingstijdlijn | Homepage-meta, FAQ, sportpagina's, aankondigingsbalk, collectie-meta | 1 u |
+| 6 | Feitenblad maken en overal gelijktrekken (**let op, 2-10: gebruik de waarden uit [[Feiten & Actuele Staat]]: binnen 1 werkdag verzonden, gratis vanaf €35, drie founders; de waarden die hier oorspronkelijk stonden zijn achterhaald**): ~~verzending "vóór 22:00 besteld = binnen 1 dag verzonden", gratis verzending vanaf €30, 4 oprichters~~, maten 35-38/39-42/43-47, oprichtingstijdlijn | Homepage-meta, FAQ, sportpagina's, aankondigingsbalk, collectie-meta | 1 u |
 
 ## High — binnen 1–2 weken
 | # | Actie | Moeite |
@@ -59,5 +59,11 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 | 29 | Gratis Moz API-key toevoegen voor backlinkdata |
 | 30 | Drift-baseline vastleggen na de critical fixes (`/seo drift baseline https://www.higrip.nl`) zodat regressies zoals de padelpagina automatisch opvallen |
 | 31 | Her-audit over ±6 weken; GA4: organische landingen op sportpagina's volgen |
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-25-seo-audit]] — SEO-audit higrip.nl 25 september — 54/100, padel-regressie en rugby ontbreekt
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

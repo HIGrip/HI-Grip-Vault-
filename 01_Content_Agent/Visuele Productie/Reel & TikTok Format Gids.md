@@ -114,4 +114,10 @@ Stijl: Poppins Bold, wit, onderaan beeld.
 - [[Video Productie Checklist]]
 - [[Tekst-overlay Gids]]
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Content Agent — Index]] · [[Home]]

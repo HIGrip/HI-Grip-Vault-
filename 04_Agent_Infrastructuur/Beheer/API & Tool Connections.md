@@ -293,4 +293,11 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
 - [[Technische Procedures]] — De uiteindelijke werkende procedure (Shopify CLI + native login) die uit dit hele uitzoekproces kwam
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
+- [[2026-09-03-analytics-kpi-meetgat]] — GA4 — het meetgat en de eerste cijfers
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

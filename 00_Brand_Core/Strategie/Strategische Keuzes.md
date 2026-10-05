@@ -213,4 +213,11 @@ We testen met al onze kanalen op drie kernsporten (**tennis/padel, voetbal, rugb
 - [[Partnership Strategie]] · [[Doelen]] — B2B en creators
 - [[Concurrentieanalyse]] — Positie t.o.v. andere aanbieders
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
+- [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

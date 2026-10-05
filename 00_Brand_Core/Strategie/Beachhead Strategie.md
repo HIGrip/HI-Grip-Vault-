@@ -77,7 +77,7 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 | 2. Waar zijn ze? | Fysiek: 55 van de 101 clubs in ZH/NH/NB — Rotterdamse RC, RSRC, drie Delftse clubs, Haagsche RC (landskampioen), DIOK Leiden binnen 30 km van Rotterdam; NRCA Amsterdam (finales), Rotterdam Cup, Amsterdam Sevens. Digitaal klein: @rugby.nederland 22K, clubaccounts 1–3K, rugby.nl, Rugbymagazijn-nieuwsbrief, team-WhatsApp. |
 | 3. Wat willen ze? | Vaste voet in de schoen bij scrum en sidestep, geen blaren in de pre-season en na 80 minuten, droge voeten op natte velden — en de clubkleuren zichtbaar houden. |
 | 4. Huidig alternatief? | Gewoonte: de dikke clubkous zonder gripsok, soms twee paar sokken of tape. Kleine groep koopt Decathlon Offload R500 (€ 8,99) of ATAK/Rugby Bricks bij Rugbymagazijn (herenmaten uitverkocht). Stepl (€ 28) is het premium-alternatief. |
-| 5. Overtuigende koopreden? | "Je scrum gaat vooruit omdat je voet niet meer schuift" + 95% meer grip (categoriebewijs Apps et al. 2022) + Nederlands merk dat wél op voorraad is, voor € 17,99 tussen budget en premium. Anders: kracht lekt weg in de scrum, blaren in augustus. |
+| 5. Overtuigende koopreden? | "Je scrum gaat vooruit omdat je voet niet meer schuift" + 95% meer grip (categoriebewijs Apps et al. 2022) + Nederlands merk dat wél op voorraad is, voor € 17,95 tussen budget en premium. Anders: kracht lekt weg in de scrum, blaren in augustus. |
 | 6. Whole product nodig? | Rugby-sportpagina + sportgids met het "mag het?"-antwoord (World Rugby Law 4/Reg. 12, VWW §3.0.7.5: toegestaan, geen kleurregel) en knip-je-clubkous-instructie; rugbyfoto; clubdeal met personalisatie (MOQ 150); listing bij Rugbymagazijn/All About Rugby; bewijs van een Ereklasse- en een dames XV-speler; wear-test na één seizoen contactsport. |
 | 7. Hoe bereiken we ze? | Clubdeals Zuid-Holland (Rotterdamse RC, RSRC, Delft, Haagsche RC, DIOK), samplepakketten in de kleedkamer, studentenclubs, Rugbymagazijn-listing, Rotterdam Cup (eind aug) en Amsterdam Sevens (juni), content per positie (forwards/backs/kicker), open sokkenpartner-slot bij Rugby Nederland (Errea kleding, Rhino materiaal, geen sokken). |
 | 8. Wie beïnvloedt de aankoop? | Teamgenoten (kleedkamer), coach/trainer, fysio, kledingcommissie van de club, studentenbestuur, ouders bij Cubs/Junioren, Oranje-spelers (Pleuni Kievit, Famke Deelstra in [[Influencer Database]]), Rugby Nederland. |
@@ -125,5 +125,11 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 - [[Concurrentieanalyse]] — Bredere concurrentiepositie
 - [[Content Strategie]] — Hoe content deze focus per sport uitvoert
 - [[Ideale Partner Profiel]] — B2B-kant van bereik (clubs, retailers)
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

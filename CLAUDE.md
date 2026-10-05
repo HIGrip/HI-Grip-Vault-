@@ -18,6 +18,11 @@
 
 De vault is de bron van waarheid. Spreekt iets anders (een geheugenbestand, een oud document, je eigen kennis) de vault tegen, dan wint de vault. Spreekt de live site de vault tegen, meld dat dan en werk de vault bij.
 
+Rangorde bij tegenspraak:
+1. **Merk en strategie:** het Canva-document *MERK & STRATEGIE* wint van de vault (werk de vault bij).
+2. **Operationele feiten** (prijzen, voorraad, thema-ID's): de live waarde wint van het feitenbestand (meld het en werk het bestand bij). Besluiten van Lars die nog niet live staan, gelden als de vastgestelde waarde; de live afwijking is dan een actie.
+3. **Al het andere:** de vault wint van geheugenbestanden, oude documenten en je eigen kennis. Binnen de vault winnen de Brand Core en het feitenbestand van de overige mappen.
+
 ## 2. Identiteit
 
 - **HÏ Grip**, altijd met trema op de Ï (in URL's en handles zonder: `higrip.nl`, `@higrip.nl`). Een Nederlands performance sportswear merk, te beginnen met de Performance Grip Socks; Performance Tubes en Performance Ski Socks (ALPINE PRO) komen binnenkort, zonder datum.
@@ -76,7 +81,7 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
 ## 9. Links en Brand Core (verplicht)
 
 - De Brand Core is het fundament: `00_Brand_Core/00 Brand Core.md` is het hoofdbestand. Elke notitie verwijst ernaar via één navigatieregel die begint met `> **Brand Core (00):**` en linkt naar de Brand Core, de kernbestanden en de index van de eigen map.
-- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "04_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`) en meldt welke notities nog zonder inkomende link zijn.
-- Bewerk de sectie `## Alle notities in deze map (automatisch)` in een index niet met de hand.
+- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "04_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`), zet onder elke kennisnotitie uit 00–04 een automatische sectie "Gerelateerd onderzoek" met de onderzoeksnotities die ernaar linken, en meldt welke notities nog zonder inkomende link zijn. Wil je dat een onderzoek bij een kennisnotitie verschijnt, link er dan naar in de body van je notitie.
+- Bewerk de automatische secties ("Alle notities in deze map" in een index, "Gerelateerd onderzoek" onder een kennisnotitie) niet met de hand.
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

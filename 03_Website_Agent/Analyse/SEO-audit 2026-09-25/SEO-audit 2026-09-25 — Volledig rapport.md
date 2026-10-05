@@ -139,4 +139,10 @@ Aanvullend: E-commerce 45, Content Architecture (cluster) 22, SXO-gap sportpagin
 ## Beperkingen
 Geen GSC-data (geen echte zoekwoorden, posities, indexatiestatus); geen CrUX-velddata; SERP-analyses via WebSearch (benadering van google.nl); geen backlink-API's; geen marketplace-data.
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-09-25-seo-audit]] — SEO-audit higrip.nl 25 september — 54/100, padel-regressie en rugby ontbreekt
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

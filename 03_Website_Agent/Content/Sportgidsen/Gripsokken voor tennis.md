@@ -68,7 +68,7 @@ bijgewerkt: 2026-10-01
 <h3>Zijn gripsokken voor tennis en padel hetzelfde?</h3>
 <p>De bewegingen lijken op elkaar en dezelfde gripsok werkt voor beide. Bij padel zijn de acties korter en is de baan kleiner; bij tennis zijn de sprints langer.</p>
 
-<p><strong>Klaar voor je volgende set?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — voor 22:00 besteld, dezelfde werkdag verzonden.</p>
+<p><strong>Klaar voor je volgende set?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — binnen 1 werkdag verzonden.</p>
 ```
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-01
 
 **Waar:** theme `200269168967` ("Bijgewerkte kopie van Bijgewerkte kopie van HÏ Grip WEBSITE", unpublished), op verzoek van lars. Lokale werkkopie: `C:\Users\Test\higrip-theme-ai2`. Bron van het werk: [[Stand van Zaken — Werkdossier 2026-09-04]].
 
-**Live is `199814873415` — daar is niets naartoe gegaan en gaat ook nooit iets naartoe zonder expliciete opdracht.**
+**Live was op dat moment `199814873415` (historisch: het live-ID is sindsdien gewisseld; de actuele stand staat alleen in [[Technische Procedures]]). Daar is niets naartoe gegaan en gaat ook nooit iets naartoe zonder expliciete opdracht.**
 
 **Kwaliteitscontrole:** `shopify theme check` vóór en na. Baseline van het onaangeraakte thema: 44 offenses over 23 bestanden. Na de wijzigingen: 43 over 22. Eén minder, nul nieuwe — de vier nieuwe bestanden zijn schoon. Alle 120 JSON-templates opnieuw gevalideerd na de tekstwijzigingen.
 
@@ -97,5 +97,13 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 - [[Stand van Zaken — Werkdossier 2026-09-04]] — Het dossier waar de wijzigingen van 04-09 uit voortkomen
 - [[Conversie Optimalisatie Checklist]] — Volledige checklist waar dit uit voortkomt
 - [[Goedkeuringsworkflow]] — Hoe dit richting live gaat
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
+- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
+- [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

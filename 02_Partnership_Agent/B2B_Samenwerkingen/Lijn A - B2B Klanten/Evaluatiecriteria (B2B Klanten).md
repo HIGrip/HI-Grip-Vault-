@@ -21,8 +21,9 @@ bijgewerkt: 2026-10-01
 **Clubs en verenigingen (bulk inkoop):**
 - Voetbalclubs die al afgeknipte kousen/tubes verkopen/aanbieden aan leden
 - Padel/tennis clubs met pro shop
-- Sportscholen die accessoires verkopen aan leden, of die ook pilates lessen geven
-- Pilates/yoga studio's — grip socks als lesmateriaal
+- Rugbyclubs (kernsport sinds 30-9-2026, zie [[Beachhead Strategie]])
+- ~~Sportscholen die accessoires verkopen aan leden, of die ook pilates lessen geven~~ — geen actief zoekdoel meer (17-9-2026)
+- ~~Pilates/yoga studio's — grip socks als lesmateriaal~~ — gestopt (17-9-2026, zie [[Ideale Partner Profiel]] §3)
 
 ## 2. Minimale inkoopdrempel
 
@@ -78,5 +79,12 @@ Nieuwe kandidaten eerst in [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]; 
 - [[Pipeline Tracker]] — Outreach-status
 - [[Outreach Templates]] — Scripts voor bellen/mailen
 - [[Partnership Strategie]] — Bredere aanpak en volgorde
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
+- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

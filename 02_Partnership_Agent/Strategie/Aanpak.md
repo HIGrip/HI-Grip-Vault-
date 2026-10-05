@@ -26,7 +26,7 @@ Zie [[Partnership Strategie]] voor de volledige aanpak.
 1. Identificeer partner via [[Ideale Partner Profiel]]
 2. Outreach via [[Outreach Templates]] (bellen/mailen)
 3. Opvolging via [[Pipeline Tracker]]
-4. Prioriteit: pilates/sportscholen eerst, dan sportclubs, dan performance retailers
+4. Prioriteit: sportclubs en retail in de kernsporten (tennis/padel, voetbal, rugby), zoals het Canva-document *MERK & STRATEGIE* voorschrijft. Pilates en sportscholen zijn op 17-9-2026 gestopt als zoekdoel (zie [[Ideale Partner Profiel]] §3); bestaande pilates-klanten blijven gewoon klant.
 5. Kandidaten die nog niet benaderd zijn: zie [[Voorbeelden Gevonden Organisaties (B2B Klanten)]]
 
 ---
@@ -47,5 +47,11 @@ Zie [[Partnership Strategie]] voor de volledige aanpak.
 - [[Doelen]] — Cijfers en targets per lijn
 - [[Brand Voice & Tone of Voice]] — Hoe we communiceren in outreach
 - [[Brand Identity Overview]] — Merkfundament waar elke actie op toetst
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]

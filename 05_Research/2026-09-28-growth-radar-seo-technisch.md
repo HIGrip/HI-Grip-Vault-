@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Google's oude Content API for Shopping (die de Merchant Center-feed voedt) geeft sinds 1 september 2026 al progressieve 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API, met volledige uitschakeling begin 2027 — en dat loopt via dezelfde Google & YouTube-app die op higrip.nl al op de riskante Optimized-stand staat. Daarnaast twee kleinere signalen om te volgen: een normale Google-spamupdate (24 sep, ~2 weken rollout) en een nieuw multimodaal filter in Search Console voor zoekopdrachten via afbeeldingen, Lens en Circle to Search."
-gerelateerd: [2026-09-21-growth-radar-seo-technisch, 2026-09-25-growth-radar-social, 2026-09-16-growth-radar-ai-search]
+gerelateerd: [2026-09-21-growth-radar-seo-technisch, 2026-09-25-growth-radar-social, 2026-09-16-growth-radar-ai-search, 2026-10-05-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""

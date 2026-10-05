@@ -10,6 +10,18 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-10-05 — Realiteitschecks met Lars landen niet automatisch in `CONTROLE.json`
+
+**Wat er gebeurde:** bij het schrijven van het weekoverzicht van 05-10 bleek dat de title/meta- en structured-data-fixes die op 30-09 al "Opgelost" gemeld stonden in [[Agent Werk & Kwaliteit Overzicht]], nergens in `CONTROLE.json` als `gedaan` stonden. Die bevestiging liep via een directe realiteitscheck met Lars in een sessie, niet via de dagelijkse actiecontrole-routine. Het weekoverzicht leest voor de sectie "Afgevinkt door de actiecontrole deze week" uitsluitend `CONTROLE.json` (zie stap 3 van de routine) — zonder de extra check op het kwaliteitsdashboard was dit bijna opnieuw als open/geëscaleerd gemeld, vier weken nadat het al was opgelost.
+
+**Waarom dit gebeurt:** `CONTROLE.json` wordt alleen door de geautomatiseerde actiecontrole-routine geschreven (via `acties.py`); een ad-hoc "ik heb het net zelf gecheckt en Lars bevestigt het"-moment in een andere sessie schrijft daar nooit naar. Dat is geen bug — de actiecontrole is bewust de enige die automatisch afvinkt — maar het betekent dat `CONTROLE.json` alléén niet compleet is voor "is dit al opgelost?".
+
+**Les:** bij het opstellen van de weekoverzicht-sectie "Afgevinkt door de actiecontrole deze week" (en bij elke andere check of een punt nog open is) niet alleen `CONTROLE.json` lezen, maar ook de meest recente rijen in [[Agent Werk & Kwaliteit Overzicht]] voor hetzelfde onderwerp — een rij met status "✅ Opgelost" of "✅ Opgelost na correctie" kan een eerdere escalatie al hebben afgesloten zonder dat de formele actiecontrole dat ooit bevestigde.
+
+**How to apply:** elke routine die een "is dit al gedaan?"-vraag stelt over een al eerder gesignaleerd punt, checkt zowel `CONTROLE.json`/`AFGEROND.md` als de relevante rijen in [[Agent Werk & Kwaliteit Overzicht]], vóórdat hij een punt opnieuw als open of geëscaleerd meldt.
+
+---
+
 ## 2026-10-01 — Twee structurele verbeteringen aangebracht na overzichtssessie
 
 **Wat er was:**
@@ -155,6 +167,7 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
 - [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
 - [[2026-09-28-weekoverzicht]] — Denzel Weekoverzicht — 2026-09-28 (NL-verkeer derde week op rij lager, nieuwe EN-/beleidspagina's hebben eigen fouten)
 

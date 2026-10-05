@@ -102,6 +102,7 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
 - [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026

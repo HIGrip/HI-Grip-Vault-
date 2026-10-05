@@ -105,7 +105,7 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 - PowerShell execution policy stond op Restricted, blokkeerde de npm-gegenereerde `shopify.ps1`-wrapper — opgelost met `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
 - Login gebeurt interactief via device-code + browser, moet dus door lars zelf in zijn eigen zichtbare terminal (niet iets wat de agent zelf non-interactief kan draaien)
 
-> ⚠️ **Verouderd (17-9):** de ID's hieronder kloppen niet meer. Actueel: werkthema `200269168967`, live `200269398343` — zie [[Technische Procedures]], de enige plek voor actuele ID's.
+> ⚠️ **Verouderd (17-9):** de ID's hieronder kloppen niet meer. Actueel (5-10): werkthema `201133490503`, live `201132507463` — zie [[Technische Procedures]], de enige plek voor actuele ID's.
 
 **Thema-lijst opgehaald (2026-08-02) — zie [[Technische Procedures]] voor de volledige, dwingende regel:** de store heeft 10 thema's. Alleen **#198505464135 "HÏ Grip website AI Workspace"** mag bewerkt worden. Live (**#198094127431**, nooit aanraken) en de overige 8 oude/duplicate thema's zijn allemaal uitgesloten.
 

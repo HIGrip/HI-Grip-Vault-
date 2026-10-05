@@ -80,6 +80,11 @@ Vind je in de uitkomsten van stap 3 een concreet, klein probleem waarvoor nog **
 - Staat een fix al in een eerder weekoverzicht of in de backlog? Verwijs ernaar en schrijf hem niet opnieuw uit.
 
 ## 4. GA4-weekrapport en funnel (verplicht)
+**Omzet en bestellingen komen uit Shopify, nooit uit GA4.** GA4 mist bestellingen (adblockers, cookie-weigering, snelle betaalknoppen): op 4-10 telde GA4 1 aankoop (€37,70) terwijl Shopify er 2 had (#1040 en #1041, samen €75,40). Haal ze op met de Shopify-connector (`run-analytics-query`, alleen lezen, alleen totalen, geen klantgegevens):
+- `FROM sales SHOW orders, total_sales TIMESERIES day SINCE <maandag vorige week> UNTIL <zondag deze week>` en tel per week op. Je ziet daarmee deze week én de week ervoor.
+- Faalt de query? Meld "omzet niet opgehaald (Shopify)" en laat omzet en bestellingen weg uit Kerncijfers. Val **niet** terug op het GA4-aankoopaantal als omzet.
+- GA4 blijft de bron voor sessies, kanalen, landingspagina's, apparaat, land en de funnel tot en met `begin_checkout`. Het GA4-`purchase`-aantal rapporteer je alleen als "GA4 telde N", naast het Shopify-aantal. Het verschil is het verlies van de meting, geen nieuws.
+
 Haal de cijfers op met `python 05_Research/_tools/google_data.py ga4`. Draai eerst `... check`. Faalt dat, meld het dan en verzin geen cijfers. Rapporteer, deze week tegenover vorige week:
 - sessies en gebruikers, kanalen en bronnen, landingspagina's, apparaat, land
 - de funnel `view_item_list → view_item → add_to_cart → begin_checkout → add_shipping_info → add_payment_info → purchase`, per stap tegenover benchmarks (Baymard: cart-abandonment ~70%, checkout-abandonment ~17–20% daarbovenop, sessie→aankoop ~2–3%)
@@ -122,7 +127,7 @@ deadline: ""
 # Denzel Weekoverzicht — JJJJ-MM-DD
 ## In het kort
 ## Kerncijfers
-- **<waarde>** · <label> · <verschil>   (2–4 regels uit het GA4-weekrapport, alleen echte cijfers; geen cijfers = sectie weglaten)
+- **<waarde>** · <label> · <verschil>   (2–4 regels, alleen echte cijfers; verkeer uit GA4, omzet en bestellingen uit Shopify; geen cijfers = sectie weglaten)
 ## Acties
 - [ ] P1 · Besluit: …   (alleen **nieuwe** beslissingen van deze week, als één regel die begint met "Besluit:". Niets overnemen uit de actiebacklog of uit eerdere weekoverzichten, zie §8.1. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
 ## Bevindingen

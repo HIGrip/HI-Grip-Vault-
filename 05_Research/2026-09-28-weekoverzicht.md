@@ -6,7 +6,7 @@ datum: 2026-09-28
 bron: routine
 routine: "denzel-week"
 categorie: SEO
-status: verwerkt
+status: gearchiveerd
 prioriteit: P1
 samenvatting: "Het echte Nederlandse verkeer daalt voor de derde week op rij (nu 40 sessies, −23%), terwijl de nieuwe /en/-homepage en de drie nieuwe verzend-/retour-/betalingspagina's zelf weer fouten bevatten die het vertrouwen schaden. Drie tennisretailers hebben nu een contactpersoon (TennisFirst Rotterdam is outreach-klaar) en de titel/meta-fix voor /en/ ligt klaar voor een lokale sessie."
 gerelateerd: [2026-09-21-weekoverzicht, 2026-09-28-regressiecheck, 2026-09-23-seo-conversietest-run-1, 2026-09-25-search-console, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-10-05-weekoverzicht]
@@ -30,11 +30,11 @@ De structured-data-regressie en de titel/meta-fix staan nu al 6 respectievelijk 
 - **1** · GA4 key events (purchase) · vorige week 2
 
 ## Acties
-- [ ] P1 · Besluit: structured data-herstelpakket (werkthema `200269168967`) en de titel/meta-fix eindelijk naar het live thema kopiëren — staat nu 6 weken klaar
+- [x] P1 · Besluit: structured data-herstelpakket (werkthema `200269168967`) en de titel/meta-fix eindelijk naar het live thema kopiëren — staat nu 6 weken klaar
 - [ ] P1 · Besluit: één bron van waarheid kiezen voor verzend-/retourbeleid (nieuwe `/pages/*` vs. oude `/policies/*`) en de 25%-herbevoorradingskosten + "ongeopend"-eis uit het retourbeleid halen
 - [ ] P1 · Besluit: `/en/`-homepage laten repareren (2×H1, onvertaalde hero-tekst) — kant-en-klare titel/meta-fix staat hieronder, de H1/hero-fix zelf is een theme-wijziging die een lokale sessie moet doen
 - [ ] P2 · Besluit: outreach naar Powerleague Rotterdam en Panna Knock Out (staat al 2 weken klaar) en nu ook TennisFirst Rotterdam (nieuw outreach-klaar)
-- [ ] P2 · Besluit: content-voorstel week 28-09 beoordelen (Tigo), ná het voorstel van 21-09 dat nog niet beoordeeld is
+- [x] P2 · Besluit: content-voorstel week 28-09 beoordelen (Tigo), ná het voorstel van 21-09 dat nog niet beoordeeld is
 - [ ] P2 · Besluit: waarom NL-verkeer 3 weken op rij daalt uitzoeken (Organic Search/Instagram al eerder gemeld, dit is nu een aanhoudend patroon, geen incident)
 - [ ] P3 · Besluit: Rotterdam Cup schaal/contact laten verifiëren (site niet uitleesbaar vanuit de cloud-routine)
 

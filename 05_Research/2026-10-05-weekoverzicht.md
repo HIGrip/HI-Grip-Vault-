@@ -26,7 +26,7 @@ Eerste goed-nieuws-week na drie weken dalend NL-verkeer: +40% deze week, en de S
 
 - **56** · echte NL-sessies (GA4, 7 dagen) · +40% t.o.v. vorige week (40) — eerste stijging na 3 weken daling
 - **116** · totaal GA4-sessies (7 dagen) · +114,8% — grotendeels VS-Direct botverkeer (43 sessies, 0% engagement)
-- **€37,70** · omzet · 1 aankoop (vorige week €41,99 / 1 aankoop)
+- **€75,40** · omzet (Shopify, 28 sep–4 okt) · 2 bestellingen (#1040 en #1041, beide op 4-10); vorige week €41,99 / 1. GA4 telde er maar 1, daarom komt omzet voortaan uit Shopify
 - **6,6** · gem. Search Console-positie homepage (7 dagen) · was 9,4 vóór de titelfix van 25-09
 
 ## Acties
@@ -111,9 +111,9 @@ Organic Search steeg van 25 naar 43 sessies (engagementrate 72%, de hoogste van 
 | begin_checkout | 5 / 5 | 2 / 2 |
 | add_shipping_info | 5 / 3 | 0 / 0 |
 | add_payment_info | 2 / 2 | 0 / 0 |
-| **purchase** | **1 / 1 (€37,70)** | 1 / 1 (€41,99) |
+| **purchase** | **GA4: 1 / 1 — Shopify telt 2 bestellingen (€75,40)** | GA4: 1 / 1 (Shopify: 1, €41,99) |
 
-**Duiding:** van 97 gebruikers bekijkt 26 (27%) een collectie, 37 (38%) een product — in absolute aantallen de beste week sinds het begin van deze meting. Opvallend: voor het eerst in meerdere weken zijn `add_shipping_info` (5) en `add_payment_info` (2) niet nul — in alle eerdere weken bleven die stappen op 0 omdat Shop Pay/Apple Pay ze overslaat. Te weinig volume (n=5) om te concluderen dat dit structureel is veranderd, maar wel vermeldenswaard: mogelijk rekenden deze week meer mensen af via de gewone checkout-flow in plaats van een snelle betaalknop. Van de 9 gebruikers die iets toevoegden aan het winkelwagentje bereikte 5 de checkout en kocht 1 — bij n=5-9 is elk percentage nog ruis. Sessie→aankoop (echte NL-sessies): 1/56 ≈ 1,8%, binnen de Baymard-bandbreedte van 2-3% maar bij n=1 toeval, geen bewijs.
+**Duiding:** van 97 gebruikers bekijkt 26 (27%) een collectie, 37 (38%) een product — in absolute aantallen de beste week sinds het begin van deze meting. Opvallend: voor het eerst in meerdere weken zijn `add_shipping_info` (5) en `add_payment_info` (2) niet nul — in alle eerdere weken bleven die stappen op 0 omdat Shop Pay/Apple Pay ze overslaat. Te weinig volume (n=5) om te concluderen dat dit structureel is veranderd, maar wel vermeldenswaard: mogelijk rekenden deze week meer mensen af via de gewone checkout-flow in plaats van een snelle betaalknop. Van de 9 gebruikers die iets toevoegden aan het winkelwagentje bereikte 5 de checkout; volgens Shopify kochten er 2 (GA4 zag er 1) — bij n=5-9 is elk percentage nog ruis. Sessie→aankoop (echte NL-sessies, Shopify-bestellingen): 2/56 ≈ 3,6%, boven de Baymard-bandbreedte van 2-3% maar bij n=2 toeval, geen bewijs.
 
 **Conclusie:** de belangrijkste observatie is niet de funnel zelf (te klein volume), maar dat het echte NL-verkeer voor het eerst in drie weken weer stijgt, gedragen door Organic Search — consistent met de verbeterde Search Console-positie van de homepage sinds de titelfix.
 
@@ -121,8 +121,9 @@ Organic Search steeg van 25 naar 43 sessies (engagementrate 72%, de hoogste van 
 
 Zie de Acties-lijst hierboven — dit weekoverzicht herhaalt de tekst niet twee keer. Aanvullend, ongewijzigd vanuit eerdere weken (geen checkbox, alleen ter herinnering):
 - nog open sinds [[2026-09-28-weekoverzicht]]: verzend-/retour-/betalingsbeleid — één bron van waarheid kiezen tussen de nieuwe `/pages/*`- en de oude `/policies/*`-pagina's, nu bijna 6 weken open.
-- nog open sinds [[2026-09-28-weekoverzicht]]: Rotterdam Cup (rugby) — schaal/contact nog te verifiëren, site niet uitleesbaar vanuit de cloud-routine.
-- ongewijzigd: [[Update Log]] klopt structureel niet meer (loopt nu 8+ weken achter op de praktijk).
+- Rotterdam Cup (rugby) is op 5-10 vervallen (lars: de site bestaat niet meer, het domein staat te koop) en uit de Events-lijst gehaald.
+- [[Update Log]] is op 5-10 bijgewerkt tot en met 2-10; werkthema is alleen `201133490503`.
+- Correctie 5-10: omzet in dit overzicht kwam uit GA4 (1 aankoop) en is vervangen door de Shopify-cijfers (2 bestellingen).
 
 ### Vooruitblik — komende week
 

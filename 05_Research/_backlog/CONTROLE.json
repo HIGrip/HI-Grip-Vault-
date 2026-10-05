@@ -999,6 +999,22 @@
    "methode": "site",
    "uitkomst": "open"
   },
+  "2026-09-28-weekoverzicht#4bff672b": {
+   "bewijs": "Staat open als backlog#246c61d9 (P1).",
+   "controle": "Zelfde doel als backlogpunt over verzend-/retour-/betalingspagina's?",
+   "dubbel_van": "backlog#246c61d9",
+   "gecontroleerd": "2026-10-05",
+   "methode": "vault",
+   "uitkomst": "dubbel"
+  },
+  "2026-09-28-weekoverzicht#c7d8f1a0": {
+   "bewijs": "Staat als backlog#2c3eb956; dat punt volgt de controle.",
+   "controle": "Zelfde doel als backlogpunt over /en/ 2xH1 en onvertaalde hero?",
+   "dubbel_van": "backlog#2c3eb956",
+   "gecontroleerd": "2026-10-05",
+   "methode": "vault",
+   "uitkomst": "dubbel"
+  },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: google_data.py heeft geen commando voor het rapport 'Prestaties in generatieve AI-functies'.",
    "controle": "Is het AI-rapport in Search Console bekeken?",

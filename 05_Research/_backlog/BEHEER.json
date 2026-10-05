@@ -1,0 +1,32 @@
+{
+ "acties": {
+  "2026-09-28-weekoverzicht#2f883dca": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-05",
+    "door": "lars",
+    "reden": "Achterhaald: NL-verkeer steeg in week 5-10 met +40% (56 tegen 40 sessies). Hervatten bij een nieuwe daling."
+   },
+   "ts": "2026-10-05T10:22:42+02:00"
+  },
+  "2026-09-28-weekoverzicht#37084c5c": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-05",
+    "door": "lars",
+    "reden": "Vervallen (5-10, lars): Rotterdam Cup bestaat niet meer, het domein staat te koop. Geen verificatie meer nodig."
+   },
+   "ts": "2026-10-05T10:22:41+02:00"
+  },
+  "2026-09-28-weekoverzicht#ca04b3fb": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-05",
+    "door": "lars",
+    "reden": "Besloten 30-9 (lars): voorlopig niet benaderen, eerst andere prioriteiten."
+   },
+   "ts": "2026-10-05T10:22:42+02:00"
+  }
+ },
+ "kansen": {}
+}

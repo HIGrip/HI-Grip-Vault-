@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-05
 ---
 
 # Update Log — Website Agent
@@ -10,7 +10,55 @@ bijgewerkt: 2026-10-01
 
 ---
 
-## 2026-09-04 — Werkdossier doorgevoerd in theme `200269168967`
+> **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
+
+---
+
+## 2026-10-02 — LIVE `201132507463`: 9 bestanden, op expliciet verzoek van lars
+
+**Wat:** `assets/hi-headings.css` (kopstijl h1-h3), `assets/hi-faq-hero.css`, `sections/faq-geo.liquid`, `sections/sport-guide.liquid`, `layout/theme.liquid`, `templates/page.sport-tennis.json`, `page.sport-padel.json`, `page.sport-voetbal.json` en `page.veelgestelde-vragen.json`. In de drie sportpagina-templates is de 22:00-verzendbelofte vervangen door "Binnen 1 werkdag verzonden". De sportpagina-templates zijn gebouwd uit de live-template plus alleen de FAQ-sectie uit het werkthema, zodat de live-foto's behouden bleven.
+
+**Hoe:** `shopify theme push` met `--only`, `--nodelete` en `--allow-live`, alleen die 9 bestanden. Back-up van de volledige live-stand van vóór de push: `C:\Users\lars\live-backup-0210`; het gepushte pakket staat in `C:\Users\lars\live-push`. Terugdraaien = die 9 bestanden uit de back-up terugpushen (de nieuwe `hi-*.css`, `faq-geo` en `sport-guide` mogen blijven staan).
+
+**Niet mee:** de rest van het werkthema (o.a. 14 `ai_gen`-blocks, gripsocks2-secties, collection-, index- en product-templates, `ss-*`-secties).
+
+**Open:** Engelse vertalingen van de nieuwe secties ontbreken (`/en` toont Nederlandse tekst in koopgids en FAQ). Overige 22:00-plekken staan nog op live: `shop-intro`, `sport-hero`, `sport-proof`, `faq-schema`. Het werkthema is al gecorrigeerd.
+
+**Wie:** hoofdsessie, op verzoek van lars. Zie ook [[Agent Werk & Kwaliteit Overzicht]] (rijen 2-10).
+
+---
+
+## 2026-10-02 — Werkthema `201133490503`: kopstijl, FAQ-pagina en sport-gids
+
+**Waar:** alleen het werkthema; niets live tot de push hierboven.
+
+**Wat:**
+- **Kopstijl:** `assets/hi-headings.css`, h1-h3 in Poppins 800, schuin, -0.04em, HOOFDLETTERS. Een regressie (woorden plakten aan elkaar) is opgelost met `word-spacing: .1em` en `overflow-wrap`; door Design Agent en Denzel op tennis mobiel gecontroleerd.
+- **Sport-gids:** `sections/sport-guide.liquid` herontworpen voor tennis, padel en voetbal: koopgids en sport-FAQ samengevoegd, uitklapbaar, FAQPage met 11 vragen, foto bij "Kort antwoord", nummering, accent-CTA. Mobiele tabel bijgewerkt met de `visually-hidden`-class.
+- **FAQ-pagina:** hero met grotere foto en witte gradient (`assets/hi-faq-hero.css`); logo-slot (TennisNation) in de sport-CTA.
+- 22:00-belofte in het werkthema gecorrigeerd naar "binnen 1 werkdag".
+
+**Controle:** Design Agent liep alle paginatypes langs (desktop en mobiel), geen horizontale overflow. `shopify theme check` geeft 14 errors in andere bestanden (o.a. `ss-comparison-table-6`), los van deze wijzigingen.
+
+**Open voor lars (design-keuzes):** heros op `/pages/ontdek-jouw-sport`, `/pages/zakelijk` en `/pages/over-ons` hebben donkere tekst op een donkere foto; homepage-FAQ-vragen staan in hoofdletter-italic; de cart-drawer-titel is oranje; de cookiebanner heeft een eigen kopstijl.
+
+**Wie:** Design Agent (via `/denzel` → Website Agent) en de hoofdsessie.
+
+---
+
+## 2026-09-21 — Nieuw werkthema `201133490503` en sportlanding-systeem
+
+**Waar:** theme `201133490503` "AI website workspace 2.0" (unpublished; lokaal `C:\Users\lars\ai-workspace-2.0`), opvolger van `200269168967`. Lars wisselde live intussen naar `201132507463`; het schema-herstel van 21-09 (WebSite, FAQPage en Breadcrumb) is daar meegekomen.
+
+**Wat:** sportlanding-systeem: secties `sport-hero`, `sport-proof`, `sport-story`, `sport-product`, `sport-faq`, `sport-related`, `sport-teaser`, stijl `assets/sport-landing.css`, templates `page.sport-{tennis,rugby,voetbal,padel}.json` en een homepage-teaser. Alle `ai_gen_*`-blocks en `gripsocks2-hero` kregen de setting `heading_tag` (H1-H4); de verborgen H1 in de header werd een `<p>`, zodat er precies één H1 per pagina is. Details: [[Sportlanding-systeem (21-9-2026)]].
+
+**Wie:** Website Agent / Design Agent, op verzoek van lars.
+
+---
+
+---
+
+## 2026-09-04 — Werkdossier doorgevoerd in theme `200269168967` (inmiddels vervangen door `201133490503`)
 
 **Waar:** theme `200269168967` ("Bijgewerkte kopie van Bijgewerkte kopie van HÏ Grip WEBSITE", unpublished), op verzoek van lars. Lokale werkkopie: `C:\Users\Test\higrip-theme-ai2`. Bron van het werk: [[Stand van Zaken — Werkdossier 2026-09-04]].
 

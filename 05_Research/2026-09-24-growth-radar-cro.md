@@ -75,7 +75,7 @@ Op de live productpagina laden via script tags (`asyncLoad`) nu vier scripts:
 
 ## Acties
 Backlogpunten 1, 12 (herzien) en 16 (nieuw) staan in `ACTIEBACKLOG.md`. De verzenddrempel-actie staat in [[2026-09-23-seo-conversietest-run-1]].
-- [ ] P2 · FAQ-blok en retourtekst op de productpagina van "u" naar "je" omzetten
+- [x] P2 · FAQ-blok en retourtekst op de productpagina van "u" naar "je" omzetten
 
 ## Bronnen
 - [Shopify Developer Changelog — Online Store Script Tags deprecation (24 aug 2026)](https://shopify.dev/changelog)

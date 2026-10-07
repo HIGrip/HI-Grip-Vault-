@@ -8,7 +8,7 @@ routine: ""
 categorie: CRO
 status: nieuw
 prioriteit: P2
-samenvatting: "De shoppagina blijft op /collections/gripsokken als simpele pagina met één groot beeld, twee producttegels (2.0 dominant met kleurwissel wit/zwart) en een knop naar een aparte vergelijkingspagina /pages/gripsokken-vergelijken, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
+samenvatting: "De shoppagina blijft op /collections/gripsokken als gewone collectiepagina met de 1.0 (prijsvriendelijk) en 2.0 (ultieme performance) als gelijkwaardige keuzes, plus een aparte vergelijkingspagina /pages/gripsokken-vergelijken in de stijl van Over ons, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
 gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/32qFKvpp9uHTntU1EGPvFU"
@@ -111,6 +111,29 @@ Feedback van Lars: de shoppagina moet beide opties tonen zonder scrollen en high
 - Voor de 1.0 staan compressie, naadloos, versterkte hiel, ademend en cushioning als "nee". Coolmax klopt (de live materiaallijst bevat het niet), de rest is afgeleid van de live collectietekst die deze features alleen bij de 2.0 noemt.
 - De kleur "wit" voor de 1.0 komt alleen van de productfoto's.
 - De voordeelregels bij Coolmax, ademend en cushioning ("Droge voeten, ook in de derde set" en vergelijkbare) zijn nieuwe copy.
+
+### Update 8-10 · Versie 4: basic shop, Over ons-stijl voor de vergelijking, 1.0 positief
+Feedback van Lars: versie 3 voelde te AI, en de shoppagina miste wat een gewone shoppagina heeft. Verder moest de 1.0 niet negatief worden weggezet: beide zijn top in hun klasse, de 1.0 prijsvriendelijk en de 2.0 ultieme performance.
+
+**Shoppagina** (versie 4): een gewone collectiepagina in Horizon-stijl, met:
+- USP-balk en kruimelpad;
+- H1 "Gripsokken" met een intro en "2 modellen · 3 varianten";
+- twee gelijkwaardige productkaarten: 1.0 "Prijsvriendelijk" eerst, 2.0 "Ultieme performance" ernaast. Bij hover verschijnt een actiefoto, de 2.0 heeft kleurwissel, elke kaart heeft drie positieve punten en een eigen "Shop"-knop;
+- een balk "Twijfel je? Vergelijk";
+- vier USP's, een SEO-tekst met de claim en de bron, een FAQ met vier vragen, en vertrouwen (3000+, 4,6 ★ Trustpilot).
+
+Op 1440×900 staan naam en prijs op 717–761 px, op 375 px staan beide producten met de knoppen op 645 px. De spec-vakjes met "—" bij de 1.0 zijn weg.
+
+**Vergelijkingspagina** (versie 3) volgt de secties en scripts van Over ons (`about-hero`, `about-mission`, `about-founders`, `about-values`, `about-outro`):
+- een hero met voetbalfoto en drie oplopende kopregels;
+- het sticky statement "Andere sokken houden je voeten warm. Wij houden ze vast.", waarin woorden oplichten, met snelheidslijnen en een voortgangsbalk;
+- twee uitschuivende kaarten (1.0 padel, 2.0 tennis);
+- contourwoorden die met volt vollopen: Grip (1.0 · 2.0), €14,95 (1.0), Compressie, Coolmax® en Afwerking (2.0). Een sticky productplaat wisselt mee tussen 1.0 en 2.0;
+- een tabel zonder "nee"-cellen, met de rij "Waar hij in uitblinkt";
+- het bewijs met de contourcijfers 1,17 en "Geldt voor allebei";
+- een outro met beide knoppen en het merkwoord "HÏ GRIP.".
+
+Geen blueprint-raster en geen spec-readouts meer. Gemeten: alle secties beginnen op dezelfde lijn en er is geen overflow op 375 en 1440 px.
 
 ## Wat niet lukte
 

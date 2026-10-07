@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "De controle van prototype v4 vond zes afwijkingen van de eigen afspraken; vier zijn opgelost (randen onder 3:1, tekst onder 11 px, de drukke telefoonweergave en tekst die uit een CRM-kaart liep), het aantal filters blijft (besluit Timo) en de volt-gevulde menuknop blijft. Een paginawissel kost nu 47 ms (was 91–136 ms) en de klikcrawler draait parallel, zodat een volledige controle van desktop en telefoon in ongeveer 45 minuten klaar is in plaats van vele uren."
-gerelateerd: [2026-10-06-dashboard-v4-opruimen-focusvensters, 2026-10-07-dashboard-stand-doel-optimalisaties, 2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-07-dashboard-v4-animaties-apple]
+gerelateerd: [2026-10-06-dashboard-v4-opruimen-focusvensters, 2026-10-07-dashboard-stand-doel-optimalisaties, 2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-07-dashboard-v4-animaties-apple, 2026-10-07-dashboard-content-funnel-routines-klanten]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\prototype-bron\\v4"
 deadline: ""

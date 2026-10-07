@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "Prototype v4 heeft nu één bewegingssysteem in Apple-stijl: een venster groeit uit het blok waarop je klikt en krimpt daar bij sluiten weer in, op de telefoon schuift het als vel van onderen, een laag dieper schuift van rechts in zoals op de iPhone, en sluiten, menu's, meldingen, tabs en afvinken bewegen mee op veercurves. Tijdens het laden uit Shopify staan grijze laadblokken waar de cijfers komen. Alles is decoratie bovenop de app: de stand verandert direct, alle tests blijven groen en met 'minder beweging' staat het uit."
-gerelateerd: [2026-10-07-dashboard-v4-controle-ui-snelheid, 2026-10-06-dashboard-v4-opruimen-focusvensters]
+gerelateerd: [2026-10-07-dashboard-v4-controle-ui-snelheid, 2026-10-06-dashboard-v4-opruimen-focusvensters, 2026-10-07-dashboard-content-funnel-routines-klanten]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\prototype-bron\\v4\\motion.js"
 deadline: ""
@@ -67,6 +67,7 @@ Het v4-artifact is nog niet opnieuw gepubliceerd met deze animaties. De crawler-
 
 ## Bronnen
 - `C:\Users\Test\.claude\plans\prototype-bron\v4\motion.js`, `v4.css` (blok "v4.2 · motion"), `layer.js` (`data-depth`), `webshop.js` en `orders.js` (laadblokken)
+- Vervolg: [[2026-10-07-dashboard-content-funnel-routines-klanten]]
 - Eerder: [[2026-10-07-dashboard-v4-controle-ui-snelheid]], [[2026-10-06-dashboard-v4-opruimen-focusvensters]]
 
 ## Aantekeningen

@@ -41,6 +41,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[2026-10-07-dashboard-v4-controle-ui-snelheid]]
 - [[2026-10-07-dashboard-v4-animaties-apple]]
 - [[2026-10-07-dashboard-stand-doel-optimalisaties]]
+- [[2026-10-07-dashboard-content-funnel-routines-klanten]]
 - [[2026-10-06-growth-radar-seo-content]]
 - [[2026-10-06-dashboard-v4-opruimen-focusvensters]]
 - [[2026-10-05-weekoverzicht]]

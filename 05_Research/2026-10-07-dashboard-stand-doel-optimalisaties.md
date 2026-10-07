@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "Het prototype (v4, stap 1–9) is klaar en getest, maar van de echte app (± 180 uur, blok A–J) is nog niets gebouwd, en het CRM op eind december haalt het team bij 8 uur per week alleen als blok A deze maand start. Daarnaast draait de Actiecontrole sinds 26 september niet, 8 van de 14 routines bestaan nog niet en de blauwdruk spreekt v4 tegen op voorraad en schermopbouw: die drie punten eerst rechtzetten maakt het bouwen sneller en het Research Dashboard weer actueel."
-gerelateerd: [2026-10-06-dashboard-v4-opruimen-focusvensters, 2026-10-04-dashboard-efferd-volgorde-cijfers, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard]
+gerelateerd: [2026-10-06-dashboard-v4-opruimen-focusvensters, 2026-10-04-dashboard-efferd-volgorde-cijfers, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-10-07-dashboard-v4-controle-ui-snelheid]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\dashboard-blauwdruk.md"
 deadline: ""

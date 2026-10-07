@@ -26,7 +26,9 @@ deadline: ""
 
 ## Kerncijfers
 - **210** · geslaagde regels in de functionele test van v4 (`test.py`)
-- **0** · fouten in diezelfde testrun (ERRS:0, gemeten 7 oktober)
+- **22** · geslaagde regels in de AI-test met nagemaakte AI (`_harness_ai.js`)
+- **9** · geslaagde regels in de test van de live Shopify-paden met een nagemaakte connector (`_harness_live.js`)
+- **0** · fouten in alle drie de testruns (ERRS:0, gemeten 7 oktober)
 
 ## Acties
 

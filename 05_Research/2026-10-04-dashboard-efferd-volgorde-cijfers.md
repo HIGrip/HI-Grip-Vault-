@@ -76,6 +76,7 @@ deadline: ""
 ## Bronnen
 - Efferd dashboard-blokken: https://efferd.com/blocks/dashboard · voorbeelden https://efferd.com/view/dashboard-3, https://efferd.com/view/dashboard-4, https://efferd.com/view/dashboard-5 · voorwaarden https://efferd.com/terms
 - Prototype v3.1: https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy · handboek: https://claude.ai/artifact/AEzJLbcMsYRYRbT1SFNik1
+- Vervolg: [[2026-10-06-dashboard-v4-opruimen-focusvensters]]
 - Eerder: [[2026-10-04-dashboard-bruikbaarheidsaudit]], [[2026-10-04-dashboard-herindeling-ai-mail-koppelingen]], [[2026-10-02-dashboard-ontwerpregels-kpi]]
 
 ## Aantekeningen

@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "De Efferd-dashboards 3, 4 en 5 lezen goed omdat elk blok een dunne lichte rand heeft op bijna-zwart, grafieken wit en grijs zijn, en kleur alleen plus en min aangeeft; dat ontbrak in de donkere modus van ons prototype. De gratis Efferd-code (2–5) is gecontroleerd en veilig (geen netwerkaanroepen, scripts of verborgen instructies), maar we nemen alleen patronen over. De To do is nu een genummerde volgorde (eerst, dan dat) in plaats van een tijdlijn, en elk hoofdcijfer opent een eigen pagina met periode, opbouw en de orders erachter."
-gerelateerd: [2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-02-dashboard-ontwerpregels-kpi]
+gerelateerd: [2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-02-dashboard-ontwerpregels-kpi, 2026-10-06-dashboard-v4-opruimen-focusvensters]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/XPnRocf1ZcG1J7pb82QBHy"
 deadline: ""

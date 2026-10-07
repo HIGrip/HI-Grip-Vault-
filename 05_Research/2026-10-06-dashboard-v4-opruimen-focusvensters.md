@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "Het prototype is in stap 1 t/m 9 opgeruimd op een kopie (v4), zodat v3.1 als origineel terug kan: elk blok opent een focusvenster in plaats van een pagina, en elke module heeft één lijst met hooguit één wissel. De webshop leest nu live uit Shopify (alleen lezen), de voorraad blijft centraal in het dashboard en het handboek is bijgewerkt. Daarmee is het prototype klaar om als ontwerp voor de echte app te dienen, met Supabase als opslag."
-gerelateerd: [2026-10-04-dashboard-efferd-volgorde-cijfers, 2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-07-dashboard-stand-doel-optimalisaties, 2026-10-07-dashboard-v4-controle-ui-snelheid]
+gerelateerd: [2026-10-04-dashboard-efferd-volgorde-cijfers, 2026-10-04-dashboard-bruikbaarheidsaudit, 2026-10-04-dashboard-herindeling-ai-mail-koppelingen, 2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-07-dashboard-stand-doel-optimalisaties, 2026-10-07-dashboard-v4-controle-ui-snelheid, 2026-10-07-dashboard-v4-animaties-apple]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/YUpv4tvpeUfNxQ2Bj3ahYj"
 deadline: ""

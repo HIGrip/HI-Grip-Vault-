@@ -135,6 +135,21 @@ Op 1440×900 staan naam en prijs op 717–761 px, op 375 px staan beide producte
 
 Geen blueprint-raster en geen spec-readouts meer. Gemeten: alle secties beginnen op dezelfde lijn en er is geen overflow op 375 en 1440 px.
 
+### Update 8-10 · Shoppagina definitief, vergelijking versie 4 (Apple/Nike-stijl)
+Lars vindt de shoppagina "perfect". Er zijn subtiele merkaccenten bij gekomen: een volt-markering onder "GRIP", het 2.0-label in volt, volt-cirkels achter de USP-iconen, volt-tekst in de vergelijkbalk en de slogan "More grip, better performance." in de footer.
+
+De vergelijkingspagina is via `/denzel` → Website Agent opnieuw ontworpen, naar Apple (`apple.com/nl/iphone/compare` bekeken), Nike/Adidas (callouts rond het product) en Whoop (keuzehulp):
+1. Een linksuitgelijnde hero met kleine productbeelden in de kop. Op mobiel zijn die verborgen.
+2. Een vaste koopbalk en twee productkolommen met kleurwissel.
+3. Samenvattingsrijen in Apple-stijl: grip, klasse, materiaal, ideaal voor, maten, kleuren, "Alleen 1.0 / Plus in 2.0" en prijs. Er staan geen "—"-cellen in.
+4. Een donker techniekblok met 7 genummerde callouts, gekoppeld aan punten op de sok.
+5. Een verhaal voor de 1.0 met padelfoto.
+6. Een keuzehulp met twee vragen die naar 1.0 of 2.0 leidt.
+7. Een wrijvingsmeter (gripsok "1.0 én 2.0").
+8. Een afsluiting met beide modellen.
+
+Gemeten: de koopbalk, de productkoppen en alle rijen staan op exact dezelfde kolommiddens (437/989 px op 1440). Geen overflow op 375 en 1440 px.
+
 ## Wat niet lukte
 
 De Website Copy-agent leverde niets: zijn identiteitsbestand stond niet op het verwachte pad. De SEO- en de Design-agent misten het ook, maar adviseerden wel. De copy is daarom zelf geschreven uit het feitenbestand. Playwright was bezet door een andere sessie; de test liep via een tijdelijke lokale server in de browserpane, en de tijdelijke bestanden zijn verwijderd. Het Research Dashboard is niet gesynct of gepubliceerd, omdat het van info@ is en deze sessie op het persoonlijke account draait. Er bestaan geen losse founderportretten: de gebruikte slide-11-foto's staan niet op Missie of Visie, maar wel op Over ons.

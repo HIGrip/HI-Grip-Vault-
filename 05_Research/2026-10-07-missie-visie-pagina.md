@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "De nieuwe Over ons in het werkthema linkt al naar /pages/onze-missie en /pages/onze-visie, dus de Missie & visie-pagina hoort op /pages/onze-missie, met 'missie en visie HÏ Grip' als keyword omdat Over ons al op de merknaam rankt. Het concept (versie 2) gebruikt dezelfde bewegingstaal als Over ons en is ontdubbeld: geen founderfoto's, geen kernwaardensectie en geen tagline-slot die Over ons al heeft."
-gerelateerd: [2026-09-25-seo-audit, 2026-09-04-werkdossier-stand-van-zaken]
+gerelateerd: [2026-09-25-seo-audit, 2026-09-04-werkdossier-stand-van-zaken, 2026-10-07-shoppagina-keuzepagina]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/Dy7Vmadcqj1N4iEYbeZx87"
 deadline: ""

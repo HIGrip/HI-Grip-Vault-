@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Tweede run (modus CONCEPT): diepe audit van blok B (producten en collecties) bevestigt alleen al bekende, open backlogpunten — geen nieuwe bevindingen — maar levert wel uitgewerkte concepten op: een herschreven collectiebeschrijving, SEO-titels/meta's voor de 2.0-producten en beide collecties, beschrijvende alt-tekstvoorstellen en een SKU/GTIN-koppeling per variant. Sessies en omzet liggen deze week onder de nulmeting van 23 sep, maar het volume blijft te klein voor harde conclusies, en er is een onverklaard verschil tussen Shopify- en GA4-sessietellingen."
-gerelateerd: [2026-09-23-seo-conversietest-run-1, 2026-09-28-regressiecheck, 2026-09-25-seo-audit, 2026-09-25-search-console, 2026-09-25-evaluatie-routines, 2026-09-30-search-console, 2026-10-01-growth-radar-cro, 2026-10-05-seo-conversietest-run-3]
+gerelateerd: [2026-09-23-seo-conversietest-run-1, 2026-09-28-regressiecheck, 2026-09-25-seo-audit, 2026-09-25-search-console, 2026-09-25-evaluatie-routines, 2026-09-30-search-console, 2026-10-01-growth-radar-cro, 2026-10-05-seo-conversietest-run-3, 2026-10-07-shoppagina-keuzepagina]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

@@ -1,7 +1,7 @@
 ---
 id: 2026-10-07-missie-visie-pagina
 titel: "Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept"
-kerntitel: "Missie & visie hoort op /pages/onze-missie, ontdubbeld tegen de nieuwe Over ons"
+kerntitel: "Missie en visie als twee pagina's, ontdubbeld tegen de nieuwe Over ons"
 datum: 2026-10-07
 bron: los
 routine: ""
@@ -30,7 +30,8 @@ Opdracht van 7-10 via `/denzel`: een Missie & Visie-pagina voor higrip.nl, opgel
 
 ## Acties
 
-- [ ] P1 · Besluit: Missie & visie op /pages/onze-missie zetten, /pages/onze-visie 301 laten doorsturen naar /pages/onze-missie#visie en de knop "Lees de visie" op Over ons daarnaar laten wijzen
+- [ ] P1 · Besluit: de oude dunne pagina's /pages/onze-missie en /pages/onze-visie vervangen door de twee nieuwe concepten (Over ons linkt er al naar)
+- [ ] P3 · Nagaan of de templates onze-waarden en ons-verhaal nog live pagina's voeden die Over ons dubbelen
 - [ ] P2 · Besluit: oprichtingsdatum vastleggen in het feitenbestand (Over ons-tijdlijn en -schema zeggen december 2024, de oude Over ons september 2024)
 - [ ] P2 · Besluit: Instagram, TikTok en LinkedIn van HÏ Grip in het feitenbestand zetten, zodat ze in sameAs mogen
 - [ ] P2 · Besluit: founderquotes op de nieuwe Over ons bevestigen als echte uitspraken van Lars, Timo en Tigo
@@ -77,6 +78,14 @@ Alleen gelezen (`shopify theme pull` naar een tijdelijke map; niets gepusht). De
 - Binnen de pagina: de FAQ is weg (geen zoekvolume in Search Console en elke vraag stond al als H2), de 3000+-badge in de hero is weg, en de visie staat nog maar één keer. Bewust blijven staan: de missiezin in de H1 en in de antwoordzin, en het keyword in twee H2's.
 
 **URL:** Over ons linkt "Lees de hele missie" naar `/pages/onze-missie` en "Lees de visie" naar `/pages/onze-visie`. Beide bestaan live als dunne oude pagina's (170 en 229 woorden, zonder meta description, met teksten van vóór Canva). Het concept staat nu op canonical `/pages/onze-missie`.
+
+### Update 7-10 · Gesplitst in twee pagina's
+Op verzoek van Lars zijn missie en visie twee aparte pagina's geworden, elk met een eigen zoekwoord en zonder overlap:
+- **Missie** (`/pages/onze-missie`, https://claude.ai/artifact/Dy7Vmadcqj1N4iEYbeZx87): keyword "missie HÏ Grip". Title "Missie van HÏ Grip: Nederlands sportsokkenmerk | HÏ Grip" (56), description 141 tekens, ~770 woorden. Secties: filosofie/missie/gevoel, oerverhaal + vijf werkprincipes, wat performance is (zes omschrijvingen uit Canva, als meeschuivende strook), founders, wat het voor jou betekent (claim met bron).
+- **Visie** (`/pages/onze-visie`, https://claude.ai/artifact/WgshFnrwqqFyLyBMEPj1Kc): keyword "visie HÏ Grip". Title "Visie van HÏ Grip: Nederlands sportmerk met impact | HÏ Grip" (60), description 150 tekens, ~670 woorden. Secties: visie + tijdlijn, vier pijlers, Performance Academy (uit [[Strategische Keuzes]]), vijf-jaar-statement, vier ambities (uitklappende panelen), wat het voor jou betekent (met link naar /pages/zakelijk).
+- Beide pagina's komen uit één bouwscript met gedeelde CSS en JS, dus stijl en beweging zijn gelijk. Eyebrows zijn weg (feedback van Lars: te AI-achtig). Ze linken naar elkaar via `relatedLink` en de slot-CTA, en hebben hetzelfde Organization-blok.
+- Dubbelingscheck (5-woordreeksen): geen overlap tussen Visie en Over ons. Tussen Missie en Over ons alleen de missiezin en de filosofie, bewust. Tussen Missie en Visie alleen de shop-knop en één vaste Canva-frase.
+- Beeld: geen foto staat op twee van de drie pagina's. Voor Visie zijn twee Shopify-foto's gebruikt die nergens in het thema staan (hardlopen, voetbal wit).
 
 ## Wat niet lukte
 

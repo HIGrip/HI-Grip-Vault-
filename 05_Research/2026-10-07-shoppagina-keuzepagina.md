@@ -35,6 +35,8 @@ Opdracht van 7-10 (prompt uit het Denzel-kwaliteitsoverzicht): een nieuwe shoppa
 - [ ] P2 · Oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1 uit de collectie gripsokken halen (ze staan als kaart-links op de live collectiepagina)
 - [ ] P2 · Identiteitspaden van de website-subagents (SEO, Design, Website Copy) gelijktrekken met de map 04_Agent_Infrastructuur/Website Agent: alle drie vonden hun identiteit.md niet en de copy-agent stopte
 - [ ] P2 · Besluit: vergelijkingspagina /pages/gripsokken-vergelijken aanmaken naast de shoppagina (concept https://claude.ai/artifact/2E6u9cpF5q9vDPE1ELJ2fq)
+- [ ] P1 · Besluit: bevestigen welke features de 1.0 wel en niet heeft (compressie, naadloos, versterkte hiel, ademend, cushioning) en welke kleur, voor de spec-tabel op de vergelijkingspagina
+- [ ] P3 · Vervolgpagina "Techniek van de 2.0" uitwerken (materialen, breiwijze, metingen), gelinkt vanuit de anatomie op de vergelijkingspagina
 - [ ] P3 · Vergelijking met concurrenten bij naam pas op de shoppagina zetten als de Concurrentie-monitor prijs en features per merk heeft vastgelegd
 - [ ] P3 · Besluit: echte portretfoto's van Lars, Tigo en Timo laten maken (Pitch/fotos heeft alleen actie- en jeugdfoto's die al op Over ons staan)
 
@@ -81,6 +83,34 @@ De shoppagina (zelfde artifact-URL, versie 2) is opnieuw opgebouwd en veel simpe
 5. Eén vertrouwensstrook: 3000+, 4,6 ★ Trustpilot, verzending en retour.
 
 "Beter dan concurrenten" is alleen onderbouwd met categoriebewijs (gewone sok tegen gripsok) en de 7 features. [[Concurrentieanalyse]] heeft nog geen feature- of prijsdata per merk, dus er is geen vergelijking met naam gemaakt. Getest op 375 en 1440 px: geen overflow, tap-targets ≥ 44 px, en de kleurwissel zet de knop op `-2-0-wit`.
+
+### Update 7-10 · Versie 3: conversie en high-tech
+Feedback van Lars: de shoppagina moet beide opties tonen zonder scrollen en high-tech, innovatief en premium aanvoelen. De vergelijking mag meer ego tonen, dieper op de features ingaan en meer visuals hebben. Ook de uitlijning moest beter.
+
+**Shoppagina** (versie 3)
+- Het eerste scherm is het grote beeld met beide productkaarten onderin.
+- Op 1440×900 eindigen de kaarten op 817 px. In het thema zet de variabele `--hdr` de Shopify-header (±110 px) van de schermhoogte af, zodat de kaarten boven de vouw blijven.
+- Op 375×812 eindigen de kaarten op 629 px; met de header erbij is dat ±740 px.
+- Beide kaarten hebben dezelfde interne opbouw, dus naam, prijs, specs en knop staan op exact dezelfde pixelhoogte.
+- Elke kaart heeft een spec-raster (grip, compressie, Coolmax®, naadloos): volt en verlicht bij de 2.0, gedimd bij de 1.0.
+- Een meetpaneel rechtsboven toont de wrijvingsbalk 0,60 tegen 1,17 met de verplichte formulering.
+- Onder de vouw staat het blok "Gemeten. Niet beloofd." met vier instrumenten: wrijving, compressiemeter, Coolmax-ring en 7 features.
+
+**Vergelijkingspagina** (versie 2)
+- Duel 2.0 VS 1.0 en een spec-tabel met 11 rijen, waarin de 2.0-kolom volt is.
+- Een interactieve anatomie: 7 hotspots op de 2.0 en een featurelijst die hetzelfde paneel aansturen, met een meter of ring per feature.
+- Lab: drie studie-uitkomsten met visuals. Wrijving staat op schaal; slalom en voetverschuiving zijn gemarkeerd als "illustratie, niet op schaal".
+- Momenten: sprint, draaien, afremmen en balans, gekoppeld aan sporten.
+- Het statement "Andere sokken houden je voeten warm. Wij houden ze vast." en daarna het advies.
+- Het ego zit in de toon en in categoriebewijs, niet in merknamen: [[Concurrentieanalyse]] heeft nog geen data per merk.
+- Plek gereserveerd voor de vervolgpagina "Techniek van de 2.0" (nog niet gebouwd).
+
+**Controle:** alle sectiekoppen, de tabel, de anatomie en het statement starten op dezelfde lijn. Kaarten in één rij zijn even hoog, met de titels op dezelfde hoogte. Geen overflow, en de tap-targets zijn ≥ 44 px op 375 en 1440 px.
+
+**Nog te bevestigen:**
+- Voor de 1.0 staan compressie, naadloos, versterkte hiel, ademend en cushioning als "nee". Coolmax klopt (de live materiaallijst bevat het niet), de rest is afgeleid van de live collectietekst die deze features alleen bij de 2.0 noemt.
+- De kleur "wit" voor de 1.0 komt alleen van de productfoto's.
+- De voordeelregels bij Coolmax, ademend en cushioning ("Droge voeten, ook in de derde set" en vergelijkbare) zijn nieuwe copy.
 
 ## Wat niet lukte
 

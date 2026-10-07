@@ -59,6 +59,7 @@ Bron en links: [[2026-09-21-beachhead-rugby]]. De echte concurrent bij rugby is 
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-07-shoppagina-keuzepagina]] — Shoppagina higrip.nl — keuzepagina 1.0 vs 2.0, SEO-keuzes en concept
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

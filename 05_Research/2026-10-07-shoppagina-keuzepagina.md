@@ -8,7 +8,7 @@ routine: ""
 categorie: CRO
 status: nieuw
 prioriteit: P2
-samenvatting: "De shoppagina blijft op /collections/gripsokken en wordt een keuzepagina met twee kaarten (2.0 dominant met kleurwissel wit/zwart, 1.0 kleiner), een keuzehulp en compact bewijs, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
+samenvatting: "De shoppagina blijft op /collections/gripsokken als simpele pagina met één groot beeld, twee producttegels (2.0 dominant met kleurwissel wit/zwart) en een knop naar een aparte vergelijkingspagina /pages/gripsokken-vergelijken, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
 gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/32qFKvpp9uHTntU1EGPvFU"
@@ -34,6 +34,8 @@ Opdracht van 7-10 (prompt uit het Denzel-kwaliteitsoverzicht): een nieuwe shoppa
 - [ ] P2 · Besluit: concept-shoppagina overnemen in het werkthema op /collections/gripsokken (H1 "Gripsokken. Kies je grip.", title en description uit het concept)
 - [ ] P2 · Oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1 uit de collectie gripsokken halen (ze staan als kaart-links op de live collectiepagina)
 - [ ] P2 · Identiteitspaden van de website-subagents (SEO, Design, Website Copy) gelijktrekken met de map 04_Agent_Infrastructuur/Website Agent: alle drie vonden hun identiteit.md niet en de copy-agent stopte
+- [ ] P2 · Besluit: vergelijkingspagina /pages/gripsokken-vergelijken aanmaken naast de shoppagina (concept https://claude.ai/artifact/2E6u9cpF5q9vDPE1ELJ2fq)
+- [ ] P3 · Vergelijking met concurrenten bij naam pas op de shoppagina zetten als de Concurrentie-monitor prijs en features per merk heeft vastgelegd
 - [ ] P3 · Besluit: echte portretfoto's van Lars, Tigo en Timo laten maken (Pitch/fotos heeft alleen actie- en jeugdfoto's die al op Over ons staan)
 
 ## Bevindingen
@@ -67,6 +69,18 @@ De tokens en beweging komen uit `assets/about-page.css` en `about-page.js` van h
 
 ### Controle
 Op 375 en 1440 px: geen horizontale scroll, alle links en knoppen ten minste 44 px. Op desktop is de 2.0-kaart 774 px hoog en de 1.0-kaart 670 px. De productfoto's van Shopify hebben een witte achtergrond, daarom staat de sok op een wit productvlak in de zwarte kaart.
+
+### Update 7-10 · Gesplitst in shoppagina en vergelijkingspagina
+Feedback van Lars: het eerste concept is een vergelijkingspagina, geen shoppagina. Het is daarom gekopieerd naar https://claude.ai/artifact/2E6u9cpF5q9vDPE1ELJ2fq, met canonical `/pages/gripsokken-vergelijken`. Title "Gripsokken vergelijken: 1.0 of 2.0? | HÏ Grip" (45), description 155, H1 "1.0 of 2.0? Vergelijk je grip.", kruimelpad en BreadcrumbList Home → Shop → Vergelijken, schema WebPage + ItemList. De intro gaat nu over het verschil in plaats van over "gripsokken kopen", zodat de twee pagina's niet op hetzelfde keyword concurreren.
+
+De shoppagina (zelfde artifact-URL, versie 2) is opnieuw opgebouwd en veel simpeler:
+1. Eén groot beeld: de voetbalfoto met grip-zool uit de 1.0-productfoto's (IMG_1478), 88vh, met H1 "Gripsokken." en één knop.
+2. Twee tegels. De 2.0 is breder, zwart, met "Onze aanrader", kleurwissel en de chips "Grip, plus: compressie · Coolmax® · naadloos · versterkte hiel". De 1.0 heeft "De basis: grip onder de voet · maat 34–46". Zo zie je het verschil zonder tabel.
+3. Daaronder één knop "Vergelijk 1.0 en 2.0".
+4. Premiumblok "7 features. Eén sok." met de 0,60-tegen-1,17-balk op schaal, plus de verplichte claimformulering en de bron.
+5. Eén vertrouwensstrook: 3000+, 4,6 ★ Trustpilot, verzending en retour.
+
+"Beter dan concurrenten" is alleen onderbouwd met categoriebewijs (gewone sok tegen gripsok) en de 7 features. [[Concurrentieanalyse]] heeft nog geen feature- of prijsdata per merk, dus er is geen vergelijking met naam gemaakt. Getest op 375 en 1440 px: geen overflow, tap-targets ≥ 44 px, en de kleurwissel zet de knop op `-2-0-wit`.
 
 ## Wat niet lukte
 

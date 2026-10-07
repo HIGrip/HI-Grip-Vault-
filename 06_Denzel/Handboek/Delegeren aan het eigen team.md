@@ -15,7 +15,7 @@ Een sub-agent van Denzel start koud en onthoudt niets. Alles wat hij moet weten 
 
 ## Briefing aan een eigen sub-agent
 
-Altijd deze zes velden:
+Altijd deze zeven velden:
 
 1. **Taak** in één zin, en het gewenste *resultaat*
 2. **Succescriteria**: 3 tot 6 controleerbare punten
@@ -23,6 +23,7 @@ Altijd deze zes velden:
 4. **Paden**: de eigen identiteit van de agent en de relevante regels uit [[Leerregels per Agent]]
 5. **Grenzen die nu gelden**: bijvoorbeeld "alleen lezen", "nog niet gepubliceerd"
 6. **Uitvoerformaat**: het verdict, de lijst of het item dat terug moet komen
+7. **Stopvoorwaarden**: wanneer de agent stopt en op een mens wacht (een harde grens, een ontbrekende bron, een tweede correctieronde zonder oplossing)
 
 ## Per sub-agent
 
@@ -69,5 +70,11 @@ Altijd deze zes velden:
 - Besluiten (kiezen tussen hoofdagents, "Voorstellen, ik keur goed"-onderdelen)
 - Het gesprek met Lars over wat openstaat
 - Wijzigingen in autonomie of grenzen
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

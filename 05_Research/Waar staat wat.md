@@ -42,6 +42,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[2026-10-08-growth-radar-cro]]
 - [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]]
 - [[2026-10-07-shoppagina-keuzepagina]]
+- [[2026-10-07-notebooklm-ai-agent-tiktoks]]
 - [[2026-10-07-missie-visie-pagina]]
 - [[2026-10-07-dashboard-v4-controle-ui-snelheid]]
 - [[2026-10-07-dashboard-v4-animaties-apple]]

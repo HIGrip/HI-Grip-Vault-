@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "De vault is voor agents goed opgezet (korte CLAUDE.md, één feitenbestand, 0 kapotte links, frontmatter op alle kennisnotities), maar mist een vangnet voor verouderde informatie: alle 170 bijgewerkt-stempels zijn een bulkdatum, er is geen status voor archief en geen automatische controle op vervallen waarden. Voor higrip.nl betekent dat dat een besluit zoals de vervallen 22:00-belofte alleen via een handmatige review overal doorkomt, en dat OneDrive, Google Drive en een autosave elke 2 minuten onnodig op dezelfde map schrijven."
-gerelateerd: [2026-10-02-vault-review, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-07-compliance-todo]
+gerelateerd: [2026-10-02-vault-review, 2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard, 2026-09-07-compliance-todo, 2026-10-07-notebooklm-ai-agent-tiktoks]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -77,11 +77,31 @@ Voor alles wat voorbereiding vraagt (content, voorraad, beleidspagina's, regels,
 | Lars krijgt te veel of te laat | Orchestrator doet alles zelf | Eigen team, bundelen, herinneren in plaats van nieuwe voorstellen |
 | Niemand ziet het aankomen | Vooruitkijken niet belegd | Vooruitblik-agent met een vaste 30-dagenregel |
 
+## 11. De vijf bewegingen als kaart
+
+Een manier om te zien waar elk stuk werk hoort: signaal en onderzoek, aantrekken, overtuigen, behouden en sturen. Zo ziet dat er voor HÏ Grip uit:
+
+| Beweging | Wie of wat doet het bij ons |
+|---|---|
+| Signaal en onderzoek | De routines (Growth Radar, Klantstem, Concurrentie-monitor, Search Console) en de Vooruitblik-agent |
+| Aantrekken | Content Agent en Partnership Agent (creators, B2B, events) |
+| Overtuigen | Website Agent: copy, ontwerp, conversie. Betaalde campagnes bestaan nog niet |
+| Behouden | E-mail Marketing Agent: flows na aankoop, herhaalaankoop, reviews |
+| Sturen | Denzel en zijn team |
+
+De kaart laat twee gaten zien. De routine Klantstem, die klantstemmen terug laat vloeien naar het onderzoek, staat volgens het routine-overzicht nog niet aangemaakt op info@. En er is geen pixel en geen campagne, dus de beweging "overtuigen met advertenties" bestaat nog niet. Beide zijn een reden om iets later te bouwen, niet om er nu iets bij te verzinnen.
+
 ## Gerelateerde bestanden
 
 - [[Opdrachtprotocol]]
 - [[Verbeterlus]]
 - [[Leerregels per Agent]]
 - [[Kwaliteitscontrole]]
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

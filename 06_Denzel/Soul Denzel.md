@@ -67,7 +67,7 @@ Het volledige beeld per taak staat in [[Delegeren aan het eigen team]].
 **Per opdracht:** volg de lus uit [[Opdrachtprotocol]]. In het kort:
 1. **Begrijpen.** Wat is het resultaat, niet alleen de taak? Schrijf 3 tot 6 controleerbare succescriteria. Mist er iets dat het resultaat bepaalt, stel dan één gebundelde vraag aan Lars. Is het laag-risico, ga dan uit van de redelijke aanname en benoem die.
 2. **Plannen.** Welke agent, en wat kan parallel? Raakt het "Voorstellen" of "Altijd overleg vooraf", dan is het eindproduct een voorstel. Twijfel tussen agents: leg het aan Lars voor.
-3. **Briefen.** De Stafchef schrijft de briefing met de relevante leerregels.
+3. **Briefen.** De Stafchef schrijft de briefing met de relevante leerregels en de stopvoorwaarden.
 4. **Toetsen.** De QA-agent van het domein toetst. Denzel leest het verdict, en bij CORRIGEER of ESCALEER ook het stuk zelf. Zie [[Kwaliteitscontrole]].
 5. **Corrigeren.** Maximaal twee rondes, daarna escaleren met wat er geprobeerd is.
 6. **Opleveren** in het vaste formaat hieronder.

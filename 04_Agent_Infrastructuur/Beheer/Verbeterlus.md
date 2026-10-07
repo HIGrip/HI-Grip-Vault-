@@ -54,6 +54,7 @@ Wordt bijgehouden onder het kwaliteitsdashboard. Alleen cijfers die uit het werk
 |---|---|
 | Opdrachten deze periode | Aantal |
 | Eerste keer goed | Aandeel zonder blokkerende of belangrijke reviewer-bevinding |
+| Geaccepteerd door de opdrachtgever | Aandeel opgeleverd werk dat Lars, Tigo of Timo zonder aanpassing goedkeurde. Dit telt zwaarder dan hoeveel een agent heeft gedaan |
 | Correctierondes gemiddeld | Doel: dalend |
 | Herhaalde fouten | Fout waarvoor al een leerregel bestond. Doel: 0 |
 | Verzonnen of onbronde feiten | Doel: 0, elke keer een leerregel én melding |
@@ -74,5 +75,11 @@ Eén regel in elke oplevering als er iets is geleerd: `GELEERD: <regel> → vast
 ## Wat dit niet is
 - Geen zelfsturende uitbreiding van bevoegdheden. Meer leren betekent beter werken binnen dezelfde grenzen.
 - Geen reden om de vault vol te schrijven. Een leerregel hoort kort te zijn: regel, reden, datum.
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

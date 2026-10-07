@@ -32,6 +32,7 @@ Briefing volgt het sjabloon in `higrip-denzel/references/sub-agents.md` en bevat
 3. Pad naar eigen `Identiteit <Agent>.md` + de eigen sectie in [[Leerregels per Agent]]
 4. De zelfcheck-opdracht uit stap 4
 5. Het gevraagde **uitvoerformaat** (zie hieronder)
+6. De **stopvoorwaarden**: wanneer de agent stopt en op een mens wacht, bijvoorbeeld een harde grens, een ontbrekende bron of een tweede correctieronde zonder oplossing. Een agent die niet weet wanneer hij moet stoppen, loopt door.
 
 ### 4. Zelfcheck (sub-agent, vóór oplevering)
 De agent controleert zijn eigen werk en rapporteert per punt ✅ / ⚠️ / ❌ met bewijs:
@@ -100,5 +101,11 @@ Elke briefing bevat de relevante leerregels, anders bestaan ze alleen op papier.
 - **De reviewer krijgt het resultaat van de maker mee** (naast de criteria) en doet daarnaast zelf een eigen zoekronde. Alleen zo vergelijkt hij en vindt hij wat de maker miste. In de eerste test liepen maker en reviewer parallel zonder elkaars werk; dat gaf twee losse rapporten in plaats van een controle.
 - **Denzel verifieert minimaal de drie zwaarste bevindingen zelf in de bron** (regel of bestand openen) voordat hij ze doorgeeft.
 - Bij tegenstrijdige vault-documenten: Denzel stelt niet zelf vast welke gelijk heeft, maar legt het voor aan Lars met de bronnen erbij.
+
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

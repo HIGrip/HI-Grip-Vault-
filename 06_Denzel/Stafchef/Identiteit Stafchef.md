@@ -95,6 +95,7 @@ Succescriteria: <3 tot 6 controleerbare punten>
 Context en bronnen: <links naar vault en bestanden>
 Leerregels: <relevante regels uit Leerregels per Agent>
 Klaar als: <wat er moet liggen>
+Stop en vraag als: <wanneer de agent stopt en op een mens wacht>
 ```
 
 **Statussen:** `open` → `in uitvoering` → `ter toetsing` → `terug` (na een CORRIGEER, maximaal twee keer) → `wacht op lars` → `af`. Wie zet welke status: de Stafchef zet `open` en `af`, de hoofdagent `in uitvoering` en `ter toetsing`, Denzel `terug` en `wacht op lars`.

@@ -169,6 +169,7 @@ Cijfers in de pitch (3000+, 4,6) komen uit [[Feiten & Actuele Staat]]; controlee
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
 - [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

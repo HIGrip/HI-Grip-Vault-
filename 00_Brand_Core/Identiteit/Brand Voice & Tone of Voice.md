@@ -134,6 +134,7 @@ Niet te vaak, alleen wanneer het iets toevoegt. Er staat altijd een **spatie** t
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 - [[2026-09-16-seo-onderzoek-cloud-routine-website]] — SEO-onderzoek cloud-routine \"website\" — publieke data, 16 september 2026
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie

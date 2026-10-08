@@ -9,7 +9,7 @@ status: nieuw
 prioriteit: P2
 kerntitel: "Homepage-titel duwt positie flink omhoog; /ontdek-jouw-sport blijft op 0% CTR"
 samenvatting: "De 28-dagentrend blijft sterk positief (klikken +160,7%, vertoningen +55,3%) en de homepage — waarvan de titel sinds 25 september bevestigd live staat — klom in positie van gemiddeld 9,4 naar 6,6 (7 dagen); de wekelijkse klikken daalden voor de tweede week op rij (−35,1%), maar dat blijft bij 24 klikken nog ruis. Nieuw: /pages/ontdek-jouw-sport scoort met gemiddelde positie 3,9 goed, maar trok over 120 vertoningen in 28 dagen geen enkele klik."
-gerelateerd: [2026-09-25-search-console, 2026-09-28-regressiecheck, 2026-09-28-seo-conversietest-run-2, 2026-09-29-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content]
+gerelateerd: [2026-09-25-search-console, 2026-09-28-regressiecheck, 2026-09-28-seo-conversietest-run-2, 2026-09-29-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content, 2026-10-08-search-console]
 vervangt: []
 bronbestand: ""
 deadline: ""

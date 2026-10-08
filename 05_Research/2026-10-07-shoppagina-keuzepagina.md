@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "De shoppagina blijft op /collections/gripsokken als gewone collectiepagina met de 1.0 (prijsvriendelijk) en 2.0 (ultieme performance) als gelijkwaardige keuzes, plus een aparte vergelijkingspagina /pages/gripsokken-vergelijken in de stijl van Over ons, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
-gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2]
+gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2, 2026-10-08-search-console]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/32qFKvpp9uHTntU1EGPvFU"
 deadline: ""

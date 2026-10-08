@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "Shopify's sessiemeting-update (21-23 september 2026) telt sessies en checkout_started anders, waardoor de ingebouwde Shopify Analytics-conversieratio kan verschuiven zonder dat het koopgedrag verandert. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (backlogpunt 1/12), dus een voor-/na-meting via Shopify Analytics moet deze meetbreuk eerst uitsluiten."
-gerelateerd: [2026-09-17-growth-radar-cro, 2026-09-24-growth-radar-cro, 2026-09-23-seo-conversietest-run-1, 2026-09-28-seo-conversietest-run-2, 2026-09-03-analytics-kpi-meetgat]
+gerelateerd: [2026-09-17-growth-radar-cro, 2026-09-24-growth-radar-cro, 2026-09-23-seo-conversietest-run-1, 2026-09-28-seo-conversietest-run-2, 2026-09-03-analytics-kpi-meetgat, 2026-10-08-growth-radar-cro]
 vervangt: []
 bronbestand: ""
 deadline: ""

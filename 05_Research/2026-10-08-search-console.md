@@ -9,7 +9,7 @@ status: nieuw
 prioriteit: P2
 kerntitel: "Klikken bijna verdubbeld door merknaam; twee blogs ranken goed maar krijgen geen klik"
 samenvatting: "Klikken en vertoningen stegen fors op zowel 7 als 28 dagen (28 dagen: klikken +89,7%, vertoningen +26,6%, positie 2,9 beter), grotendeels gedragen door merkzoektermen ('higrip'/'hi grip') en bevestigd door GA4 (Organic Search-sessies +235% w/w). Twee contentblogs ranken goed (positie 4,7 en 7,2) maar trekken op 200 resp. 189 vertoningen bijna geen klik — nieuwe kans. De twee bekende kannibalisatie-/oude-URL-problemen (backlogpunt 17 en 18) staan onverminderd open."
-gerelateerd: [2026-09-30-search-console, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina]
+gerelateerd: [2026-09-30-search-console, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]
 vervangt: []
 bronbestand: ""
 deadline: ""

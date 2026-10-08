@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De sportpagina's voor padel, tennis en voetbal zijn sinds 25-9 hersteld (630–650 woorden, FAQPage), titels en meta's zijn overal ingevuld en de verzend- en retourwaarden op de site komen overeen met het feitenbestand. Wat nog open staat, kost vooral vertrouwen en AI-zichtbaarheid: rugby geeft nog 404 terwijl drie pagina's het beloven, de demo-tekst op /pages/ons-verhaal staat live, de Organization-entiteit is kaal en het merk is in drie externe zoekopdrachten niet te vinden."
-gerelateerd: [2026-09-25-seo-audit, 2026-09-23-seo-conversietest-run-1, 2026-09-30-growth-radar-ai-search, 2026-10-05-seo-conversietest-run-3, 2026-10-05-regressiecheck, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby]
+gerelateerd: [2026-09-25-seo-audit, 2026-09-23-seo-conversietest-run-1, 2026-09-30-growth-radar-ai-search, 2026-10-05-seo-conversietest-run-3, 2026-10-05-regressiecheck, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]
 vervangt: []
 bronbestand: ""
 deadline: ""

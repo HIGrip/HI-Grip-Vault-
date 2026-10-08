@@ -1,0 +1,50 @@
+{
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "watch@claude-video": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-seo@agricidaniel-claude-seo": true,
+    "ui-ux-pro-max@ui-ux-pro-max-skill": true,
+    "agent-orchestration@claude-code-workflows": true,
+    "ab-test-playbook@ab-test-playbook": true,
+    "great-web-copy@great-web-copy": true
+  },
+  "extraKnownMarketplaces": {
+    "claude-video": {
+      "source": {
+        "source": "github",
+        "repo": "bradautomates/claude-video"
+      }
+    },
+    "agricidaniel-claude-seo": {
+      "source": {
+        "source": "github",
+        "repo": "AgriciDaniel/claude-seo"
+      }
+    },
+    "ui-ux-pro-max-skill": {
+      "source": {
+        "source": "github",
+        "repo": "nextlevelbuilder/ui-ux-pro-max-skill"
+      }
+    },
+    "claude-code-workflows": {
+      "source": {
+        "source": "github",
+        "repo": "wshobson/agents"
+      }
+    },
+    "ab-test-playbook": {
+      "source": {
+        "source": "github",
+        "repo": "ali-demirbas/ab-test-playbook"
+      }
+    },
+    "great-web-copy": {
+      "source": {
+        "source": "github",
+        "repo": "makash/great-web-copy"
+      }
+    }
+  }
+}

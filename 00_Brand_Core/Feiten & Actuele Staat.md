@@ -107,6 +107,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO op 8 oktober
 - [[2026-10-07-shoppagina-keuzepagina]] — Shoppagina higrip.nl — keuzepagina 1.0 vs 2.0, SEO-keuzes en concept
 - [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
 - [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later

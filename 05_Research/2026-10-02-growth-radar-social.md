@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over Meta-attributie, Meta-creatives of TikTok Shop haalde de drempel van een primaire bron, geldigheid voor Nederland en een concrete koppeling aan higrip.nl. Bestaande P3-punten 9, 10 en 13 (creators, CAPI, TikTok Shop) blijven ongewijzigd staan."
-gerelateerd: [2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social, 2026-10-03-growth-radar-social-content]
+gerelateerd: [2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social, 2026-10-03-growth-radar-social-content, 2026-10-09-growth-radar-social]
 vervangt: []
 bronbestand: ""
 deadline: ""

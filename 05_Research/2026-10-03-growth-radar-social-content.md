@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gecontroleerde ontwikkelingen in TikTok- en Instagram-algoritmes, TikTok's Q3-productupdate of TikTok Shop-creators haalde de drempel van primaire bron, NL-relevantie en een concrete koppeling aan higrip.nl. De bestaande P3-punten 9 en 13 (creators, TikTok Shop) blijven ongewijzigd staan."
-gerelateerd: [2026-10-02-growth-radar-social, 2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social]
+gerelateerd: [2026-10-02-growth-radar-social, 2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social, 2026-10-09-growth-radar-social]
 vervangt: []
 bronbestand: ""
 deadline: ""

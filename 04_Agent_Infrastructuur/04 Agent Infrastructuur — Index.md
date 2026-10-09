@@ -52,9 +52,17 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Identiteit Caption & Copy Agent]]
 - [[Werkplek Caption & Copy Agent]]
 
+### Content Agent/Content Maker
+- [[Identiteit Content Maker]]
+- [[Werkplek Content Maker]]
+
 ### Content Agent/Content Strategie & Planning Agent
 - [[Identiteit Content Strategie & Planning Agent]]
 - [[Werkplek Content Strategie & Planning Agent]]
+
+### Content Agent/Socials Analyzer
+- [[Identiteit Socials Analyzer]]
+- [[Werkplek Socials Analyzer]]
 
 ### Content Agent/Video & Visuele Productie Agent
 - [[Identiteit Video & Visuele Productie Agent]]

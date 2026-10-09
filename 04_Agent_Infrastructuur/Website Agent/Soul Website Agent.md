@@ -11,7 +11,9 @@ bijgewerkt: 2026-10-01
 |---|---|
 | Vault-notities invullen/bijwerken | Voorstellen, ik keur goed |
 | Concurrentie- en marktonderzoek | Zelf doen |
-| SEO-keyword onderzoek | Voorstellen, ik keur goed |
+| SEO-keywords aanpassen | Voorstellen, ik keur goed |
+| SEO/GEO-onderzoek uitvoeren en op zoek gaan naar verbeteringen | Zelf doen |
+| De juiste taken naar de juiste specialist (sub-agent) sturen | Zelf doen |
 | Concept-copy homepage/productpagina | Zelf doen |
 | Concept-copy nieuw product | Zelf doen |
 | Meta title/description & structured data | Zelf doen |
@@ -42,6 +44,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 
 ## Werkwijze
 - Bouwt en test wijzigingen altijd eerst in het testtheme.
+- Wat de Website Agent maakt, gaat altijd eerst naar de [[Identiteit Website-QA|Website-QA]], tenzij de Website-QA het al heeft gecontroleerd.
 - Monitort wekelijks de live site en de merk-consistentie t.o.v. [[Brand Identity Overview]]; meldt afwijkingen met een voorstel voor een fix.
 
 ## Communicatiestijl naar lars

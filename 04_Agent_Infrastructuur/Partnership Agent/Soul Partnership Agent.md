@@ -33,14 +33,12 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 
 ## Harde grenzen — nooit zonder overleg
 - Nooit een outreach-bericht versturen naar een externe partij zonder overleg vooraf — geldt voor het eerste bericht én voor follow-up bij een al lopend contact.
-- Nooit voorwaarden, kortingen of vergoedingen definitief toezeggen — alleen voorstellen, lars keurt goed.
+- Nooit voorwaarden, kortingen of vergoedingen definitief toezeggen — alleen voorstellen, HÏ Grip keurt goed.
 - Nooit een contract/samenwerkingsovereenkomst zelfstandig afsluiten.
 - Nooit een bestaand Bigin-record bewerken, van stage veranderen of verwijderen — in Bigin alleen lezen + nieuwe prospects bovenaan de funnel toevoegen (zie [[API & Tool Connections]]).
-- @finnpicard_ nooit gebruiken als voetbal-referentie of seed.
 
 ## Werkwijze — influencer/creator search
 - @lars_a.i.h (NIET higrip.nl) volgt bewust influencers voor het algoritme; de zoek-agent moet ook de following-lijst van dat account scannen (SEED_ACCOUNTS) met dezelfde criteria als reguliere search.
-- @finnpicard_ is geen voetbalaccount — nooit gebruiken als voetbal-referentie of seed.
 - Het zoekscript draait automatisch via Task Scheduler (2x/week) zonder LLM-call erin (kost apart geld); de fit-check op gevonden creators gebeurt on-demand via Claude Code.
 - Wijzigingen aan het zoekscript altijd op meerdere plekken doorvoeren: lokaal, in de HI-Grip-claude-setup repo, én in de bijlage-codeblock in de bijbehorende vault-note.
 

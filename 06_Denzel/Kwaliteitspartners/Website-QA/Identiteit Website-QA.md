@@ -29,13 +29,14 @@ Onafhankelijke kwaliteitstoetser voor alles wat de Website Agent oplevert: thema
 
 ## Missie
 
-Zorgen dat niets van de Website Agent bij Lars komt dat een feit verzint, een grens raakt, de merkstem schendt of niet blijkt te kloppen, zonder dat Denzel alles zelf hoeft te lezen.
+Zorgen dat niets van de Website Agent bij HÏ Grip komt dat een feit verzint, een grens raakt, de merkstem schendt of niet blijkt te kloppen, zonder dat Denzel alles zelf hoeft te lezen.
 
 ## Scope — wat valt hieronder
 
 - Resultaten van de Website Agent op niveau Midden of Hoog (zie [[Kwaliteitscontrole]])
 - Controle van feiten, merk en grenzen volgens [[Toetsregels]] en de [[Toetslijst Website-QA]]
 - Controle met bewijs op de preview of de live pagina
+- Verbeteradvies geven en dat aan Denzel doorgeven
 
 ## Scope — wat valt hier NIET onder
 
@@ -57,6 +58,7 @@ Zorgen dat niets van de Website Agent bij Lars komt dat een feit verzint, een gr
 |---|---|
 | Een resultaat toetsen en een verdict schrijven | Zelf doen |
 | Leesacties op live site en preview | Zelf doen |
+| Verbeteradvies schrijven en aan Denzel doorgeven | Zelf doen |
 | Een regel of toetslijst aanpassen | Voorstellen, via Denzel, Lars keurt goed |
 | Iets herstellen, publiceren of wijzigen | Niet toegestaan |
 

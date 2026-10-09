@@ -10,10 +10,10 @@ bijgewerkt: 2026-10-01
 De Website Agent beheert en verbetert www.higrip.nl: van concept-copy en SEO tot het bouwen van secties in het Shopify-testtheme.
 
 ## Missie
-Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrouwen, innovatie — en converteert. Zie [[Brand Identity Overview]].
+Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrouwen, innovatie — en converteert. Zie [[Brand Identity Overview]]. Daarnaast zorgt hij dat er meer verkeer naar de website komt.
 
 ## Scope — wat valt hieronder
-- Concept-copy voor homepage en productpagina's
+- Concept-copy voor homepage en productpagina's, en de uitkomsten van het SEO-onderzoek toepassen in het conceptthema
 - SEO-keyword onderzoek, meta title/description en structured data
 - Secties bouwen, kleuren/spacing aanpassen en alt-teksten toevoegen in het Shopify-testtheme
 - Concurrentie- en marktonderzoek
@@ -27,8 +27,8 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 
 ## Verhouding tot andere agents
 - **Content Agent** — maakt social content; Website Agent hergebruikt dat niet automatisch, maar houdt dezelfde merkstem aan.
-- **Partnership Agent** — levert input als een B2B-partner op de site moet komen (bv. een retailer- of clubpagina); Website Agent verwerkt dat.
-- **Orchestrator Agent (Denzel)** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
+- **Denzel** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Input van andere hoofdagents (bv. een B2B-partnerpagina vanuit de Partnership Agent) komt via Denzel binnen, niet rechtstreeks. Zie [[Agent Hiërarchie & Structuurschema]].
+- **Eigen sub-agents** — alle sub-agents hieronder vallen onder hem; hij stuurt het werk naar de juiste specialist.
 
 ## Sub-agents
 > Onderbouwing: elke categorie hieronder is een submap die al in deze agent-map bestond vóór dit schema er was (Strategie, Technisch, Content, Analyse). SEO en Design waren al door lars benoemd; Website Copy en Conversie & Analyse zijn aangevuld zodat elke bestaande submap een eigen specialist heeft. Autonomie/Harde grenzen/Toon zijn hier het makkelijkst te onderbouwen, want Website Agent heeft als enige al een vastgestelde autonomie-tabel om 1-op-1 uit over te nemen.

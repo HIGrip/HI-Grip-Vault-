@@ -30,6 +30,8 @@ Volledige tabel + uitleg van de niveaus: zie [[Agent Takenverdeling & Grenzen â€
 | Definitieve tekst nodig (caption/CTA/hashtags) | Caption & Copy Agent |
 | Content plannen of kalender vullen | Content Strategie & Planning Agent |
 | Video/edit geproduceerd moet worden | Video & Visuele Productie Agent |
+| Een idee als echte afbeelding of video gemaakt moet worden | Content Maker |
+| Prestaties van de eigen socials geanalyseerd moeten worden | Socials Analyzer |
 
 Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in Identiteit <Agent>.md in deze map.
 

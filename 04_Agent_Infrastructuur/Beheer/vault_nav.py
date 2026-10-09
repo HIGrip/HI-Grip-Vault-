@@ -15,7 +15,7 @@ Wat het doet (idempotent, veilig om vaak te draaien):
 4. Aan het eind: een rapport van notities zonder inkomende links (wezen).
 
 Slaat over: bestanden met mergeconflicten, Home.md, 00 Brand Core.md (handmatig),
-en .git/.obsidian/.trash/_dashboard.
+en .git/.obsidian/.trash/.claude/_dashboard.
 
 Gebruik:  python "04_Agent_Infrastructuur/Beheer/vault_nav.py" [--dry-run]
 """
@@ -26,7 +26,7 @@ import sys
 from pathlib import Path
 
 VAULT = Path(__file__).resolve().parents[2]
-SKIP_DIRS = {".git", ".obsidian", ".trash", ".vscode", "_dashboard", "node_modules"}
+SKIP_DIRS = {".git", ".obsidian", ".trash", ".vscode", ".claude", "_dashboard", "node_modules"}  # .claude = gegenereerde skills/agents (desktop-sync.py), geen notities
 SKIP_FILES = {"Home.md", "conflict-files-obsidian-git.md", "00_Brand_Core/00 Brand Core.md"}
 NAV_PREFIX = "> **Brand Core (00):**"
 AUTO_HEADING = "## Alle notities in deze map (automatisch)"

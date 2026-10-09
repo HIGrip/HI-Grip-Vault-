@@ -35,13 +35,13 @@ Zorgen dat een lijst die "outreach-klaar" heet dat ook is: scores die kloppen, c
 - Resultaten van de Partnership Agent op niveau Midden of Hoog
 - Een steekproef op scores en feiten per kandidaat
 - Controle of een kandidaat echt outreach-klaar is
+- Controle of de kandidaat bij HÏ Grip past
 - Controle van de grenzen rond contact en CRM
 
 ## Scope — wat valt hier NIET onder
 
 - Kandidaten zoeken of aanvullen
 - Contact opnemen met een kandidaat
-- Beslissen wie benaderd wordt of welke voorwaarden worden besproken
 - Resultaten van andere hoofdagents toetsen
 
 ## Verhouding tot andere agents

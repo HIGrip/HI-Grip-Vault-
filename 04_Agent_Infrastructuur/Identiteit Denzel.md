@@ -35,7 +35,7 @@ Zorgen dat lars met één aanspreekpunt kan werken in plaats van los met 3 agent
 Niet van toepassing — sub-agents hangen onder de hoofdagents, niet onder Denzel. Zie het `Identiteit <Agent>.md` van elke hoofdagent.
 
 ## Lokale uitvoerbare vorm (nieuw, 2026-09-17)
-Denzel bestond tot nu toe alleen als vault-document plus de geautomatiseerde cloud-routine ([[Denzel Weekoverzicht — Routine]], `trig_01D9XwMiVvuq1FWr7CLoYTmN`, maandag 06:05 UTC) — er was geen manier om hem lokaal aan te roepen. Dat is nu opgelost met het slash-command **`/denzel <opdracht>`** (`commands/denzel.md` in HI-Grip-claude-setup).
+Denzel bestond tot nu toe alleen als vault-document plus de geautomatiseerde cloud-routine ([[Denzel Weekoverzicht — Routine]], `trig_01D9XwMiVvuq1FWr7CLoYTmN`, maandag 06:05 UTC) — er was geen manier om hem lokaal aan te roepen. Dat is nu opgelost met het slash-command **`/denzel <opdracht>`** (`.claude/skills/denzel/SKILL.md` in de vault).
 
 Bewust een **command** en geen sub-agent: Denzel staat bóven de orchestrators en moet ze kunnen activeren, wat een sub-agent niet kan. Het bestand is thin volgens dezelfde vault-only-regel als de `agents/*.md`: het leest bij elke run eerst dit bestand én [[Soul Denzel]], en bevat verder alleen de Claude Code-mechaniek (welke orchestrator-skill bij welk onderwerp hoort). Inhoud en grenzen staan hier in de vault en overrulen dat bestand altijd.
 

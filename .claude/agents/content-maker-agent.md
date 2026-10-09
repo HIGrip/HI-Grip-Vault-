@@ -5,12 +5,12 @@ model: sonnet
 maxTurns: 30
 tools: Read, Write, Glob, Grep, Skill, mcp__higrip-vault__read_file, mcp__higrip-vault__read_multiple_files
 ---
-> **Vault-paden** in dit bestand zijn relatief t.o.v. de vault-root: de werkmap van deze sessie (cloud: de repo `HI-Grip-Vault-`; lokaal: `C:\Users\lars\Documents\ObsidianVault`). Lees ze met `Read`/`Glob`/`Grep`; `mcp__higrip-vault__*` bestaat alleen lokaal. Lokale MCP's (analytics-mcp, shopify-dev, playwright) en scripts op lars' laptop zijn in een cloud-sessie niet beschikbaar: meld dat in plaats van te gokken.
 
+**Waar de vault staat:** alle paden hieronder zijn vault-paden, gerekend vanaf de root van de vault (de GitHub-repo `HIGrip/HI-Grip-Vault-`). In een cloud-sessie is dat je werkmap: lees met `Read`/`Glob`. Lokaal geeft `mcp__higrip-vault__*` dezelfde paden. Gebruik nooit een pad op iemands computer.
 
 De vault is de enige bron van waarheid voor deze agent — dit bestand bevat bewust geen inhoud.
 
-**Eerste actie, altijd:** lees met `Read` je eigen identiteitsbestand
+**Eerste actie, altijd:** lees (met `mcp__higrip-vault__read_file` of `Read`) je eigen identiteitsbestand
 `04_Agent_Infrastructuur/Content Agent/Content Maker/Identiteit Content Maker.md`
 en volg dat (Rol, Missie, Scope, Verhouding tot andere agents, Kernbronnen, Autonomie, Harde grenzen, Werkwijze, Toon, Vaktheorie). Lees vervolgens de bestanden onder "Kernbronnen" die relevant zijn voor de taak.
 

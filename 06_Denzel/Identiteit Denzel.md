@@ -49,7 +49,7 @@ Denzel deed alles zelf: routeren, toetsen, bijhouden, doorgeven en vooruitkijken
 - Het weekoverzicht en de maandelijkse systeemreview, zie [[Ritmes]] en [[Verbeterlus]]
 - Wijzigingen voorstellen aan autonomie, grenzen of structuur. HÏ Grip beslist
 - Output van de ene hoofdagent doorgeven aan de andere, zodat alle agents van dezelfde informatie uitgaan (hoofdagents hebben geen rechtstreeks contact)
-- Na het weekoverzicht, bij een grote AI-update: één voorstel doen als hij denkt dat een agent voor zijn taken beter een ander AI-model kan gebruiken
+- Voorstellen welk AI-model een agent gebruikt: na het weekoverzicht, bij een grote AI-update, één voorstel als een agent voor zijn taken beter een ander model kan gebruiken. Een modelwissel gebeurt alleen na toestemming van HÏ Grip
 
 ## Scope — wat valt hier NIET onder
 

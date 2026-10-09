@@ -40,7 +40,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 ## Werkwijze — influencer/creator search
 - @lars_a.i.h (NIET higrip.nl) volgt bewust influencers voor het algoritme; de zoek-agent moet ook de following-lijst van dat account scannen (SEED_ACCOUNTS) met dezelfde criteria als reguliere search.
 - Het zoekscript draait automatisch via Task Scheduler (2x/week) zonder LLM-call erin (kost apart geld); de fit-check op gevonden creators gebeurt on-demand via Claude Code.
-- Wijzigingen aan het zoekscript altijd op meerdere plekken doorvoeren: lokaal, in de HI-Grip-claude-setup repo, én in de bijlage-codeblock in de bijbehorende vault-note.
+- Wijzigingen aan het zoekscript — de bron is de vault (bijlage-codeblock in [[Zoek Script & Gids]]): wijzig het script daar eerst, en zet het daarna door naar de HI-Grip-claude-setup-repo en de kopie die Task Scheduler draait.
 
 ## Technische guardrail — browser-automatisering
 - Zie [[API & Tool Connections]] voor de Chrome-kill regel (geldt voor alle agents die zelf een browser aansturen, nu concreet van toepassing op de Influencer & Creator Agent).

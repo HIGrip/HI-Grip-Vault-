@@ -52,7 +52,7 @@ De Google Sheet *Collabs - HÏ Grip* is alleen voor de B2C-kant: influencers, cr
 
 ## Parallelle dispatch (nieuw, 2026-09-16)
 
-Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in `HI-Grip-claude-setup/agents/` (`influencer-creator-agent`, `b2b-klanten-agent`, `partnerships-events-agent`), gesynct naar `~/.claude/agents`. De orchestrator-skill **`/partnership-agent <opdracht>`** (`commands/partnership-agent.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als bij Website Agent en `/seo audit`. Er waren voor deze 3 sub-agents nog geen `/`-skills (het zijn workflows, geen skill-kandidaten) — de agent-definities zijn dus hun eerste `/`-activeerbare vorm.
+Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in de vault onder `.claude/agents/` (`influencer-creator-agent`, `b2b-klanten-agent`, `partnerships-events-agent`). De orchestrator-skill **`/partnership-agent <opdracht>`** (`.claude/skills/partnership-agent/SKILL.md`) bepaalt welke sub-agents een taak nodig heeft en dispatcht ze **parallel via de Agent-tool** — zichtbaar als losse tabjes naast Sonnet, zelfde patroon als bij Website Agent en `/seo audit`. Er waren voor deze 3 sub-agents nog geen `/`-skills (het zijn workflows, geen skill-kandidaten) — de agent-definities zijn dus hun eerste `/`-activeerbare vorm.
 
 **Verplichte structuur:** elk bestand in `agents/` volgt 1-op-1 het `Identiteit <Agent>.md` + `Soul <Agent>.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — zie de toelichting in `Website Agent/Identiteit <Agent>.md` § Parallelle dispatch voor de volledige regel (ook de doorlopende sync-verplichting met `CLAUDE.md`).
 

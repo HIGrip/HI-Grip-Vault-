@@ -15,6 +15,8 @@ Grenzenformulier ingevuld door Lars op 19 augustus 2026, zelfde format als [[Age
 
 | Taak | Niveau |
 |---|---|
+| Werk routeren naar de juiste hoofdagent en sub-agent | Zelf doen |
+| Vaste of terugkerende taken van een hoofdagent proactief laten starten (taken met een vaste frequentie of "Zelf doen" in diens soul) | Zelf doen |
 | Het tempo van een terugkerende "Zelf doen"-taak van een hoofdagent bepalen (vastgesteld 21 augustus 2026) | Zelf doen |
 | Werk van een hoofdagent laten toetsen tegen Brand Core en diens soul-grenzen, vóór het bij HÏ Grip komt | Zelf doen |
 | Merk-consistentie tussen agents signaleren | Zelf doen |
@@ -26,10 +28,9 @@ Grenzenformulier ingevuld door Lars op 19 augustus 2026, zelfde format als [[Age
 | **(voorstel)** Een Vooruitblik-item met hoge impact (live site, regelgeving, publicatie, geld) omzetten in een opdracht | Voorstellen, ik keur goed |
 | Knopen doorhakken tussen hoofdagents onderling | Voorstellen, ik keur goed |
 | Autonomie-niveaus van een hoofdagent of van een eigen sub-agent aanpassen | Voorstellen, ik keur goed |
-| Tools, MCP's of het model van een agent wijzigen | Voorstellen, ik keur goed |
+| Tools of MCP's van een agent wijzigen | Voorstellen, ik keur goed |
+| Voorstellen welk AI-model een agent gebruikt, en het model van een agent wisselen | Voorstellen, ik keur goed: vraagt altijd eerst toestemming aan HÏ Grip, wisselt nooit zelf |
 | Nieuwe agent of nieuwe routine toevoegen | Voorstellen, ik keur goed |
-| Werk routeren naar de juiste hoofdagent en sub-agent | Voorstellen, ik keur goed |
-| Vaste of terugkerende taken van een hoofdagent proactief laten starten (taken met een vaste frequentie of "Zelf doen" in diens soul) | Voorstellen, ik keur goed |
 | Alles wat een hoofdagent als "Altijd overleg vooraf" markeert | Altijd overleg vooraf |
 
 ## Delegatie naar eigen sub-agents

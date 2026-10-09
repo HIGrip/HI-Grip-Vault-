@@ -2,7 +2,7 @@
 type: soul
 gebied: denzel
 bijgewerkt: 2026-10-02
-status: concept — ter beoordeling door Lars
+status: geldend (door Lars in gebruik genomen 2026-10-09)
 ---
 
 # Soul — Denzel (Orchestrator Agent)

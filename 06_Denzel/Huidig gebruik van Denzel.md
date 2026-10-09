@@ -73,7 +73,7 @@ Gevonden bij het nalopen van `commands/denzel.md`:
 
 - Het command noemt de weekroutine nog "maandag 06:05 UTC" met trigger `trig_01D9XwMiVvuq1FWr7CLoYTmN`. Sinds 25 sept draait de routine op info@ op maandag 06:45 Nederlandse tijd. Die oude trigger gaf op 17 sept al een 404 via de API.
 - Het noemt "de 7 checks" uit [[Denzel Weekoverzicht — Routine]]. De routine heeft inmiddels stappen 0 tot en met 11.
-- Het leest `04_Agent_Infrastructuur/identiteit Denzel.md` en `soul Denzel.md`. Na de verhuizing naar `06_Denzel` moet dat naar de nieuwe paden.
+- Het leest sinds 9 oktober 2026 alleen `06_Denzel/Identiteit Denzel.md` en `06_Denzel/Soul Denzel.md`. De oude bestanden in `04_Agent_Infrastructuur` zijn verwijzingen.
 - De agentbestanden in `~/.claude/agents/` zijn dunne verwijzingen (alleen frontmatter) en bestaan voor de 11 sub-agents van de hoofdagents. Voor Denzels vijf nieuwe sub-agents bestaat nog niets.
 
 ## 6. Beperkingen die bekend zijn

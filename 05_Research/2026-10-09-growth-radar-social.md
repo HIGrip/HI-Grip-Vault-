@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Meta heeft click-through-attributie beperkt tot echte linkkliks en telt likes, shares, saves en video-views van 5+ seconden nu apart onder een nieuwe 'engage-through-attributie', standaard aan met een venster van 1 dag. Voor higrip.nl is dit alleen relevant zodra er Meta-advertentiebudget komt (bestaand backlogpunt 10): de gerapporteerde conversies zullen dan hoger uitvallen dan het aantal daadwerkelijke doorkliks, dus dit moet meegenomen worden bij het inrichten van Ads Manager."
-gerelateerd: [2026-10-02-growth-radar-social, 2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social, 2026-10-03-growth-radar-social-content]
+gerelateerd: [2026-10-02-growth-radar-social, 2026-09-25-growth-radar-social, 2026-09-18-growth-radar-social, 2026-10-03-growth-radar-social-content, 2026-10-10-growth-radar-social-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

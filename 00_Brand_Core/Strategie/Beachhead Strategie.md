@@ -130,6 +130,7 @@ Voor elke beachhead-doelgroep beantwoorden we dezelfde 10 vragen. De eerste 3 zi
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
 - [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

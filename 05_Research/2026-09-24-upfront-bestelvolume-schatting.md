@@ -8,7 +8,7 @@ categorie: Merk
 status: nieuw
 prioriteit: P3
 samenvatting: "Upfront maakt geen bestelaantallen bekend. Met € 46 mln online omzet in 2025 en een aangenomen orderwaarde van € 50-65 komt de webshop uit op ± 700.000-900.000 bestellingen per jaar, oftewel ± 65.000 per maand, ± 15.000 per week en ± 2.200 per dag. Het volume komt in pieken binnen (81.344 orders op één actiedag); voor HÏ Grip is vooral die actie- en communitymechaniek de les, niet het absolute volume."
-gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031]
+gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-10-11-omzetgroei-koersbepaling]
 vervangt: []
 bronbestand: ""
 deadline: ""

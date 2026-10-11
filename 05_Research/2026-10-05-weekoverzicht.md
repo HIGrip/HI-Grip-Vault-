@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Het echte Nederlandse verkeer stijgt deze week voor het eerst in drie weken (+40%), en de twee /en/-regressies van vorige week (2×H1, lege titel) lijken opgelost — allebei nog te bevestigen door de actiecontrole. Partnership-kant stabiel (geen nieuwe zoekactie nodig, outreach blijft voorlopig stil op besluit van Lars) en er ligt een nieuw content-voorstel (5 ideeën) ter beoordeling bij Tigo."
-gerelateerd: [2026-09-28-weekoverzicht, 2026-10-05-regressiecheck, 2026-09-30-search-console, 2026-09-28-seo-conversietest-run-2]
+gerelateerd: [2026-09-28-weekoverzicht, 2026-10-05-regressiecheck, 2026-09-30-search-console, 2026-09-28-seo-conversietest-run-2, 2026-10-11-omzetgroei-koersbepaling]
 vervangt: [2026-09-28-weekoverzicht]
 bronbestand: ""
 deadline: ""

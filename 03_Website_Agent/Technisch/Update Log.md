@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-05
+bijgewerkt: 2026-10-11
 ---
 
 # Update Log — Website Agent
@@ -11,6 +11,22 @@ bijgewerkt: 2026-10-05
 ---
 
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
+
+---
+
+## 2026-10-11 — LIVE `201132507463`: 4 bestanden + EN-vertalingen + paginameta, op expliciet verzoek van lars
+
+**Wat (thema, via Shopify CLI in de cloudsessie):** `snippets/faq-schema.liquid` (3 sporters; "binnen 1 werkdag verzonden" in plaats van 22:00), `templates/page.ons-verhaal.json` (3 sporters, rij Luuk eruit, demoteksten vervangen door sport en quote uit de founders-sectie van /pages/over-ons), `templates/page.retourbeleid.json` ("ongeopend" en 25% herbevoorrading eruit), `templates/product.performance-grip-socks-1.json` (EN social-proof 3,500+). Eerst in werkthema `201133490503` gezet en door lars gecontroleerd.
+
+**Hoe:** live opnieuw gepulld, alleen tekstvervangingen met `05_Research/_uitvoer/2026-10-11-live-fixes/thema-patch.py`, dan `shopify theme push --only … --nodelete --allow-live`. Prijzen, links en overige instellingen van live zijn niet aangeraakt. Back-up van de 5 bestanden vóór de push: `05_Research/_uitvoer/2026-10-11-live-fixes/backup/live-thema-voor-push/`.
+
+**Geweigerd:** `templates/collection.json` (USP "3000+ sporters gingen je voor" → 3500+). Shopify weigert het bestand om een bestaande ongeldige instelling (`button_border_thickness` < 1), niet om de tekstwijziging. Lars past de USP aan in de thema-editor.
+
+**Via de Admin API (niet het thema):** EN-vertalingen bijgewerkt voor de aankondigingsbalk (3500+), shop-meta EN (zonder 10 PM en "Fewer injuries"), chip "Shipped within 1 business day" op de drie sportpagina's, levertijd en verzendkosten (€35) op de 2.0-productpagina, collectie-USP EN (3500+). Meta description /pages/over-ons NL en EN: 3 gedreven sporters.
+
+**Open bij lars:** beleid plakken (Instellingen → Beleid, tekst in `05_Research/_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`; de koppeling mist `write_legal_policies`), homepage-meta 3000+ → 3500+ (Online Store → Voorkeuren), collectie-USP in de thema-editor.
+
+**Wie:** cloudsessie 11-10, op verzoek van lars. Zie [[2026-10-11-seo-audit-weekdelta]].
 
 ---
 
@@ -150,6 +166,7 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
 - [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie

@@ -135,3 +135,9 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[05_Research/_geheugen/uitvoerder|_geheugen/uitvoerder]]
 - [[verbanden]]
 - [[05_Research/_geheugen/website-ux|_geheugen/website-ux]]
+
+### _uitvoer/2026-10-11-live-fixes
+- [[beleid-plakken]]
+
+### _uitvoer/2026-10-11-live-fixes/backup
+- [[policies-voor-11-10]]

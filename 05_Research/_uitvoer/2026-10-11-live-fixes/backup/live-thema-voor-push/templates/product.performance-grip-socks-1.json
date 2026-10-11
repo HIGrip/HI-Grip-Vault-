@@ -1,0 +1,1531 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "bundler_bundler_target_element_cfkjiP": {
+          "type": "shopify://apps/bundler/blocks/bundler-target-element/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        },
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "carousel",
+            "media_columns": "one",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "chevron_large",
+            "slideshow_controls_style": "thumbnails",
+            "slideshow_mobile_controls_style": "counter",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 72,
+            "thumbnail_radius": 0,
+            "aspect_ratio": "1",
+            "constrain_to_viewport": true,
+            "media_fit": "cover",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": true,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "custom",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 19,
+            "sticky_details_desktop": false,
+            "background_media": "none",
+            "background_color": "{{ settings.color_palette.background }}",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1><strong>{{ closest.product.title }}</strong></h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "2.5rem",
+                    "line_height": "tight",
+                    "letter_spacing": "tight",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 93
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_stock_status": {
+                  "type": "custom-liquid",
+                  "name": "Voorraadstatus",
+                  "settings": {
+                    "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}\n<span class=\"hi-stock-status\"><span class=\"hi-stock-status__dot\"></span>In stock</span>\n{%- else -%}\n<span class=\"hi-stock-status\"><span class=\"hi-stock-status__dot\"></span>Nu op voorraad</span>\n{%- endif -%}"
+                  },
+                  "blocks": {}
+                },
+                "review_igqdFR": {
+                  "type": "review",
+                  "name": "t:names.product_review_stars",
+                  "settings": {
+                    "stars_style": "outline",
+                    "show_number": true,
+                    "text_color": "",
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left"
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "h4",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1.6rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "text_color": "",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "custom_liquid_stock_status",
+                "review_igqdFR",
+                "price_tVjtKg"
+              ]
+            },
+            "section_store_block_bundle_4EK7ck": {
+              "type": "shopify://apps/section-store/blocks/block-bundle/d7a2e423-ea88-4344-b866-6d0fb487c3dd",
+              "settings": {
+                "padding_vertical": 0,
+                "padding_horizontal": 0
+              }
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": false,
+                "text_color": "",
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "recipient_button_style": "default",
+                "recipient_button_background": "{{ settings.color_palette.background }}",
+                "recipient_button_text": "{{ settings.color_palette.foreground }}",
+                "recipient_button_border": "{{ settings.color_palette.foreground }}",
+                "selected_recipient_button_style": "default",
+                "selected_recipient_button_background": "{{ settings.color_palette.foreground }}",
+                "selected_recipient_button_text": "{{ settings.color_palette.background }}",
+                "selected_recipient_button_border": "{{ settings.color_palette.foreground }}",
+                "input_style": "default",
+                "input_background_color": "{{ settings.color_palette.background }}",
+                "input_text_color": "{{ settings.color_palette.foreground }}",
+                "input_border_color": "{{ settings.color_palette.foreground }}",
+                "border_width": 1,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {
+                    "input_style": "default",
+                    "input_background_color": "{{ settings.color_palette.background }}",
+                    "input_text_color": "{{ settings.color_palette.foreground }}",
+                    "input_border_color": "{{ settings.color_palette.foreground }}",
+                    "border_width": 1,
+                    "border_radius": 0
+                  },
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button",
+                    "custom_button_background": "{{ settings.color_palette.foreground }}",
+                    "custom_button_text": "{{ settings.color_palette.background }}",
+                    "custom_button_border": "{{ settings.color_palette.background }}"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "disabled": true,
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "custom_liquid_4HQ6ii": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "disabled": true,
+              "settings": {
+                "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}\n<ul class=\"hi-g2-usp\">\n  <li><strong>Seamless knit:</strong> no stitching, so no friction against your skin.</li>\n  <li><strong>15–20 mmHg compression:</strong> supports your circulation during exercise.</li>\n  <li><strong>Coolmax®:</strong> wicks moisture away instantly, for dry feet right up to the final minutes.</li>\n  <li><strong>Ordered? Shipped within 1 business day</strong></li>\n</ul>\n{%- else -%}\n<ul class=\"hi-g2-usp\">\n  <li><strong>Naadloos gebreid:</strong> geen stiksels, dus geen wrijving tegen je huid.</li>\n  <li><strong>15–20 mmHg compressie:</strong> ondersteunt je doorbloeding tijdens inspanning.</li>\n  <li><strong>Coolmax®:</strong> voert vocht direct af, voor droge voeten tot het laatste kwartier.</li>\n  <li><strong>Besteld? Binnen 1 werkdag verzonden</strong></li>\n</ul>\n{%- endif -%}"
+              },
+              "blocks": {}
+            },
+            "custom_liquid_social_proof": {
+              "type": "custom-liquid",
+              "name": "Social proof",
+              "settings": {
+                "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}\n<div class=\"hi-social-strip\">\n  <span class=\"hi-social-strip__stars\" aria-hidden=\"true\">★★★★½</span>\n  <span class=\"hi-social-strip__dot\">·</span>\n  <span class=\"hi-social-strip__count\">3,000+ athletes went before you</span>\n  <span class=\"hi-social-strip__dot\">·</span>\n  <span class=\"hi-social-strip__claim\">\"More grip. More control. More wins.\"</span>\n</div>\n{%- else -%}\n<div class=\"hi-social-strip\">\n  <span class=\"hi-social-strip__stars\" aria-hidden=\"true\">★★★★½</span>\n  <span class=\"hi-social-strip__dot\">·</span>\n  <span class=\"hi-social-strip__count\">3.500+ sporters gingen je voor</span>\n  <span class=\"hi-social-strip__dot\">·</span>\n  <span class=\"hi-social-strip__claim\">\"Meer grip. Meer controle. Meer winnen.\"</span>\n</div>\n{%- endif -%}"
+              },
+              "blocks": {}
+            },
+            "custom_liquid_grip_tech": {
+              "type": "custom-liquid",
+              "name": "2.0 spec-strip",
+              "disabled": true,
+              "settings": {
+                "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}\n<div class=\"hi-g2-specs\">\n  <p class=\"hi-g2-specs__title\">New in the 2.0</p>\n  <dl class=\"hi-g2-specs__grid\">\n    <div class=\"hi-g2-spec\"><dt>Compression</dt><dd>15–20 mmHg</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Construction</dt><dd>Seamless</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Moisture control</dt><dd>Coolmax®</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Sizing</dt><dd>3 sizes, 35–47</dd></div>\n  </dl>\n  <a class=\"hi-g2-specs__link\" href=\"#anatomie\">View all seven zones</a>\n</div>\n{%- else -%}\n<div class=\"hi-g2-specs\">\n  <p class=\"hi-g2-specs__title\">Nieuw in de 2.0</p>\n  <dl class=\"hi-g2-specs__grid\">\n    <div class=\"hi-g2-spec\"><dt>Compressie</dt><dd>15–20 mmHg</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Constructie</dt><dd>Naadloos</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Vochtregulatie</dt><dd>Coolmax®</dd></div>\n    <div class=\"hi-g2-spec\"><dt>Maatvoering</dt><dd>3 maten, 35–47</dd></div>\n  </dl>\n  <a class=\"hi-g2-specs__link\" href=\"#anatomie\">Bekijk alle zeven zones</a>\n</div>\n{%- endif -%}"
+              },
+              "blocks": {}
+            },
+            "custom_liquid_product_info": {
+              "type": "custom-liquid",
+              "name": "Product info",
+              "settings": {
+                "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}\n<div class=\"hi-g2-product-info\"><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\"/><circle cx=\"7\" cy=\"7\" r=\"1.4\" fill=\"currentColor\" stroke=\"none\"/></svg></span><div><strong>Materials</strong><p>42% Katoen · 41% Polyester · 14% Nylon · 3% Spandex</p></div></div><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"1\" y=\"5\" width=\"14\" height=\"11\"/><path d=\"M15 9h4l3 3v4h-7z\"/><circle cx=\"6\" cy=\"18\" r=\"2\"/><circle cx=\"18\" cy=\"18\" r=\"2\"/></svg></span><div><strong>Shipping &amp; returns</strong><p>Ordered? Shipped within 1 business day. <a href=\"/policies/shipping-policy\">More info</a>. 30-day returns via <a href=\"https://www-higrip-nl.myparcel.me/returns/create\" target=\"_blank\">this link</a>.</p></div></div><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/></svg></span><div><strong>For your sport</strong><p>Football, pilates, tennis, running and more. <a href=\"/pages/ontdek-jouw-sport\">Discover your sport</a>.</p></div></div></div>\n{%- else -%}\n<div class=\"hi-g2-product-info\"><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z\"/><circle cx=\"7\" cy=\"7\" r=\"1.4\" fill=\"currentColor\" stroke=\"none\"/></svg></span><div><strong>Materialen</strong><p>42%   Katoen · 41% Polyester · 14% Nylon · 3% Spandex</p></div></div><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"1\" y=\"5\" width=\"14\" height=\"11\"/><path d=\"M15 9h4l3 3v4h-7z\"/><circle cx=\"6\" cy=\"18\" r=\"2\"/><circle cx=\"18\" cy=\"18\" r=\"2\"/></svg></span><div><strong>Verzending &amp; retour</strong><p>Besteld? Binnen 1 werkdag verzonden <a href=\"/policies/shipping-policy\">Meer info</a>. 30 dagen retour via <a href=\"https://www-higrip-nl.myparcel.me/returns/create\" target=\"_blank\">deze link</a>.</p></div></div><div class=\"hi-g2-info-row\"><span class=\"hi-g2-info-icon\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/></svg></span><div><strong>Voor jouw sport</strong><p>Voetbal, pilates, tennis, hardlopen en meer. <a href=\"/pages/ontdek-jouw-sport\">Ontdek jouw sport</a>.</p></div></div></div>\n{%- endif -%}\n{{ 'overflow-list.css' | asset_url | preload_tag: as: 'style' }}\n{{ 'base.css' | asset_url | stylesheet_tag: preload: true }}\n{{ 'hi-sale-price.css' | asset_url | stylesheet_tag }}\n{%- comment -%} HÏ Grip custom — hier houden, niet in sections/product-information.liquid (wordt overschreven bij Horizon-updates) {%- endcomment -%}\n{%- if template.name == 'product' -%}\n  {{ 'product-improvements.css' | asset_url | stylesheet_tag }}\n{%- endif -%}"
+              },
+              "blocks": {}
+            },
+            "text_9qPTtc": {
+              "type": "text",
+              "name": "t:names.text",
+              "disabled": true,
+              "settings": {
+                "text": "<p><strong>Optimale grip:</strong> Uniek grippatroon voor maximale stabiliteit en controle<br/><strong>Meer comfort:</strong> Verstevigde onderkant en ademend materiaal voor langdurig draagcomfort.<br/><strong>Voor elke sport:</strong> Geschikt voor voetbal, pilates, tennis, hardlopen en alle andere sporten.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "disabled": true,
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "section_store_block_bundle_4EK7ck",
+            "buy_buttons_eYQEYi",
+            "custom_liquid_4HQ6ii",
+            "custom_liquid_social_proof",
+            "custom_liquid_grip_tech",
+            "custom_liquid_product_info",
+            "text_9qPTtc",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "block_order": [
+        "bundler_bundler_target_element_cfkjiP"
+      ],
+      "settings": {
+        "content_width": "content-center-aligned",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "enable_sticky_add_to_cart": true,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "gripsocks2_expertise_main": {
+      "type": "gripsocks2-photo",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "disabled": true,
+          "settings": {
+            "number": "15–20",
+            "unit": "mmHg",
+            "label": "Compressie die je doorbloeding ondersteunt"
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "disabled": true,
+          "settings": {
+            "number": "7",
+            "unit": "Zones",
+            "label": "Elk met een eigen functie"
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "disabled": true,
+          "settings": {
+            "number": "2",
+            "unit": "Kleuren",
+            "label": "Wit X Zwart"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "title_outline": "Optimaal",
+        "title_accent": "Design.",
+        "copy": "De 1.0 is waar het bij HÏ Grip mee begon, de gripsok die je voet echt vastzet. Wetenschappelijk aangetoond verhogen gripsokken de wrijvingscoëfficiënt van 0,60 naar 1,17, dus 95% meer grip. Jij glijdt niet meer in je schoen, dus al je kracht gaat naar waar die nodig is.",
+        "cta_text": "",
+        "cta_url": "",
+        "cta2_text": "Bekijk alle zones",
+        "cta2_url": "#anatomie",
+        "watermark": "1.0",
+        "image": "shopify://shop_images/IMG_2569.jpg",
+        "placeholder_text": ""
+      }
+    },
+    "gripsocks2_anatomy": {
+      "type": "gripsocks2-anatomy",
+      "blocks": {
+        "zone_1": {
+          "type": "zone",
+          "settings": {
+            "title": "Performance materiaal",
+            "description": "Zorgvuldig geselecteerde materialen die voor langdurige comfort en optimaleprestaties zorgen",
+            "pos_x": 44,
+            "pos_y": 26
+          }
+        },
+        "zone_2": {
+          "type": "zone",
+          "settings": {
+            "title": "Versterkte hiel",
+            "description": "Extra dikte precies onder je hiel, waar de druk het grootst is.",
+            "pos_x": 66,
+            "pos_y": 54
+          }
+        },
+        "zone_3": {
+          "type": "zone",
+          "settings": {
+            "title": "Ademend vermogen",
+            "description": "Open structuur bovenop de voet laat lucht door, voor koele voeten bij elke training.",
+            "pos_x": 53,
+            "pos_y": 57
+          }
+        },
+        "zone_4": {
+          "type": "zone",
+          "settings": {
+            "title": "Maximale grip",
+            "description": "Siliconen zones houden je voet vast in de schoen.",
+            "pos_x": 71,
+            "pos_y": 63
+          }
+        },
+        "zone_5": {
+          "type": "zone",
+          "disabled": true,
+          "settings": {
+            "title": "Coolmax®",
+            "description": "Voert vocht direct af van je huid. Droge voeten, ook in het laatste kwartier.",
+            "pos_x": 61,
+            "pos_y": 73
+          }
+        },
+        "zone_6": {
+          "type": "zone",
+          "disabled": true,
+          "settings": {
+            "title": "Naadloos",
+            "description": "Rondom gebreid zonder stiksels, dus geen wrijving tegen je huid.",
+            "pos_x": 34,
+            "pos_y": 87
+          }
+        },
+        "zone_7": {
+          "type": "zone",
+          "settings": {
+            "title": "Verdikte boedem",
+            "description": "Verdikte bodem zodat jij op elk moment comfort hebt en prestaties kunt leveren.",
+            "pos_x": 50,
+            "pos_y": 90
+          }
+        }
+      },
+      "block_order": [
+        "zone_1",
+        "zone_2",
+        "zone_3",
+        "zone_4",
+        "zone_5",
+        "zone_6",
+        "zone_7"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "title_outline": "Zo is de",
+        "title_accent": "1.0 gebouwd.",
+        "copy": "Elke zone doet iets anders. Samen zorgen ze dat je voet stil staat in je schoen, koel blijft en niet gaat schuren.",
+        "blank_hint": "Nog in te vullen",
+        "footnote": "",
+        "image_alt": "Performance Grip Socks 2.0, opbouw van de sok"
+      }
+    },
+    "ss_testimonial_8_GXpV4d": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "testimonials_7Utpez": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Top service",
+            "text": "Wat een top service! Snel geleverd en goede kwaliteit!",
+            "author_date": "Sharon Burger | 4 sep 2025"
+          }
+        },
+        "testimonials_pXeWKc": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "top sokken voor pilates!",
+            "text": "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!",
+            "author_date": "Eveline | 30 jan 2026"
+          }
+        },
+        "testimonials_XqC9Rr": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Top sokken",
+            "text": "Het zijn goede sokken met een tof design en de website werkt handig. Ik heb meteen 3 paar gekocht voor kerstcadeaus. Iedereen blij.",
+            "author_date": "Rox | 18 dec 2025"
+          }
+        },
+        "testimonials_6PXVMY": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Super kwaliteit sokken",
+            "text": "De sokken doen echt wat er beloofd word, je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil. Kwaliteit ook super na diverse keren wassen. Een top product dus.",
+            "author_date": "Adri Noorlander | 31 aug 2025"
+          }
+        },
+        "testimonials_7KcbFy": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Goede aankoop",
+            "text": "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming.",
+            "author_date": "Priscilla Verwaal | 8 mei 2025"
+          }
+        },
+        "testimonials_4PVRrD": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Aanrader",
+            "text": "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop en wil het iedereen aanbevelen die kwalitatief goede sokken wil hebben.",
+            "author_date": "Lydia | 13 jan 2026"
+          }
+        },
+        "testimonials_9RQgXD": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Uitstekende sokken",
+            "text": "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken. Snelle levering.",
+            "author_date": "Dick | 12 juni 2025"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_7Utpez",
+        "testimonials_pXeWKc",
+        "testimonials_XqC9Rr",
+        "testimonials_6PXVMY",
+        "testimonials_7KcbFy",
+        "testimonials_4PVRrD",
+        "testimonials_9RQgXD"
+      ],
+      "name": "SS - Testimonial #8",
+      "settings": {
+        "heading": "DIT ZEGGEN ONZE SPORTERS.",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 18,
+        "heading_height": 80,
+        "content_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.5,
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_gap": 5,
+        "text": "",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_advanced": false,
+        "text_height": 130,
+        "text_mt": 16,
+        "slider_width": 78,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_advanced": false,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 36,
+        "card_advanced": false,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "card_align": "left",
+        "card_align_mobile": "left",
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_advanced": false,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_advanced": false,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Lees meer",
+        "card_text_less": "Lees minder",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_advanced": false,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_mt": 16,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": true,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "button": "Ontdek meer",
+        "button_url": "https://nl.trustpilot.com/review/higrip.nl",
+        "new_tab": true,
+        "button_style": "non_outline",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_advanced": false,
+        "button_height": 100,
+        "button_padding_horizontal": 16,
+        "button_padding_horizontal_mobile": 32,
+        "button_padding_vertical": 20,
+        "button_padding_vertical_mobile": 20,
+        "button_radius": 8,
+        "button_border_thickness": 2,
+        "button_mt": 24,
+        "button_mt_mobile": 24,
+        "button_align": "center",
+        "button_custom_styling": true,
+        "button_full_width_mobile": false,
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#121212",
+        "button_border_hover_color": "#121212",
+        "button_shadow_color": "#000000",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_date_text_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#121212",
+        "card_shadow_color": "#00b67a",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "dots_color": "#121212",
+        "stars_color": "#ffffff",
+        "stars_bg_color": "#00b67a",
+        "stars_bg_half_color": "#dddddd",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "text_color": "#000000",
+        "background_style": "gradient",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 25%, rgba(0, 17, 167, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "trust_heading": {
+      "type": "section",
+      "blocks": {
+        "text_trust": {
+          "type": "text",
+          "name": "Trust heading",
+          "settings": {
+            "text": "<p><strong>VERTROUWD DOOR</strong></p><p>Sportclubs, sportscholen en retail door heel Nederland</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.95rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_trust"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 56,
+        "padding-block-end": 0
+      }
+    },
+    "trust_logos": {
+      "type": "marquee",
+      "blocks": {
+        "icon_dkEgC6": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/hogeschool-rotterdam.webp",
+            "width": 52,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_jDfVMW": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Betere_grip_in_sportschoenen.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_KytjwF": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Gripsokken_voor_clubs.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_w7ygJL": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Gripsokken_bulk_bestellen.png",
+            "width": 80,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_Rq7eTq": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Zakelijke_gripsokken.png",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_BDKdA8": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/LOGO_CONCORDIA-removebg-preview.png",
+            "width": 78,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_GcepAQ": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/LOGO_SYTH.jpg",
+            "width": 56,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        },
+        "icon_MLYPa6": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/LOGO_SPORT2000.jpg",
+            "width": 60,
+            "link": "",
+            "open_in_new_tab": false,
+            "icon_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_dkEgC6",
+        "icon_jDfVMW",
+        "icon_KytjwF",
+        "icon_w7ygJL",
+        "icon_Rq7eTq",
+        "icon_BDKdA8",
+        "icon_GcepAQ",
+        "icon_MLYPa6"
+      ],
+      "custom_css": [],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 48,
+        "gap_between_elements": 60
+      }
+    },
+    "media_with_content_66bBcD": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Performance_Grip_Sock_1.0_side_view_6813bad8-7e95-46d1-8da9-306d9e90dd1a.png",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "contain",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 0
+          },
+          "blocks": {
+            "group_CF6kKT": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 22,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_eNHepE": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2><strong>Gripsokken</strong></h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "accordion_UdpKpW": {
+                  "type": "accordion",
+                  "name": "t:names.accordion",
+                  "settings": {
+                    "icon": "caret",
+                    "dividers": true,
+                    "divider_color": "",
+                    "type_preset": "h6",
+                    "background_color": "",
+                    "text_color": "",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "accordion_row_iWrBEG": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Wat zijn de voordelen van gripsokken?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 12
+                      },
+                      "blocks": {
+                        "text_QfNwzG": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>HÏ Grip gripsokken bieden <strong>maximale grip en controle</strong>, waardoor sporters stabieler bewegen en minder risico hebben op blessures of blaren. De <strong>versterkte onderzijde en ademende sportstof </strong>van HÏ Grip zorgen voor extra comfort en frisse, droge voeten tijdens elke training. Ontworpen door professionals en geschikt voor <strong>alle sporten</strong>, waardoor je altijd het beste uit je performance haalt.</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_QfNwzG"
+                      ]
+                    },
+                    "accordion_row_DjHB4g": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Zijn gripsokken wetenschappelijk bewezen?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 12
+                      },
+                      "blocks": {
+                        "text_YWEVgx": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Gripsokken zijn <strong>wetenschappelijk bewezen</strong> effectiever dan normale sokken: ze houden de voet beter op zijn plek, verbeteren stabiliteit en verminderen uitglijden tijdens snelle of explosieve bewegingen. Studies tonen aan dat gripsokken bijna <strong>twee keer zoveel grip</strong> bieden (wrijvingscoëfficiënt 1,17 vs. 0,60), wat direct zorgt voor meer controle en vertrouwen. Kortom: <strong>minder glijden, meer stabiliteit en betere performance</strong>.</p><p>(<a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\">Apps et al., 2020</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\">Apps et al., 2022</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\">Friedl et al., 2023</a>)</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_YWEVgx"
+                      ]
+                    },
+                    "accordion_row_79FFyY": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Hoe verzorg ik mijn gripsokken?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "text_bQqJfb": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Voor een lange levensduur van uw gripsokken is het belangrijk om ze goed te onderhouden. Was ze bij voorkeur met de hand in koud of lauw water, of in de wasmachine op een<strong>zacht programma (30–40°C)</strong>met een<strong>mild wasmiddel</strong>,<strong>altijd binnenstebuiten</strong>om de antislip te beschermen. Laat de gripsokken aan de lucht drogen en<strong>vermijd de droger</strong>, omdat hitte de elasticiteit en grip kan aantasten.<strong>Wring de sokken niet uit</strong>om vervorming van het grippatroon te voorkomen. Bewaar uw gripsokken op een droge plek, uit direct zonlicht en vocht, zodat de kwaliteit behouden blijft.<br/><br/></p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_bQqJfb"
+                      ]
+                    },
+                    "accordion_row_TqJAEL": {
+                      "type": "_accordion-row",
+                      "name": "t:names.accordion_row",
+                      "settings": {
+                        "heading": "Voor welke sporten zijn gripsokken goed?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "text_naN7er": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Ontdek <a href=\"/pages/ontdek-jouw-sport\" title=\"Ontdek jouw sport\">hier</a> waarom gripsokken ook voor jouw sport de beste keuze zijn. Meer stabiliteit & controle zodat jij doorgaat waar anderen stoppen.</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_naN7er"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "accordion_row_iWrBEG",
+                    "accordion_row_DjHB4g",
+                    "accordion_row_79FFyY",
+                    "accordion_row_TqJAEL"
+                  ]
+                }
+              },
+              "block_order": [
+                "text_eNHepE",
+                "accordion_UdpKpW"
+              ]
+            },
+            "spacer_NJ6LQU": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 32,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
+            "group_a4tgWJ": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 25,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_KYEK8B": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2><strong>Verzending & Retour</strong></h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "accordion_j8NThr": {
+                  "type": "accordion",
+                  "name": "t:names.accordion",
+                  "settings": {
+                    "icon": "caret",
+                    "dividers": true,
+                    "divider_color": "",
+                    "type_preset": "h6",
+                    "background_color": "",
+                    "text_color": "",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {
+                    "accordion_row_iRgij7": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Wat is de levertijd?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "text_HyNikN": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>Bij HÏ Grip streven we ernaar om uw bestelling zo snel mogelijk bij u te leveren. Daarom zorgen wij ervoor dat alle bestellingen worden binnen <strong>1 </strong>werkdag <strong>verzonden </strong>via PostNL. <br/></p><p>Lees <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">hier</a> meer.<br/></p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_HyNikN"
+                      ]
+                    },
+                    "accordion_row_zWE9Kp": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Wat zijn de verzendkosten?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "text_nj3VHc": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>De verzendkosten bedragen<strong> €4,50 per bestelling</strong>. Bij een bestelwaarde van <strong>€35</strong> of meer profiteert u van<strong> gratis verzending</strong>. Zo zorgen we ervoor dat uw HÏ Grip producten snel en zorgeloos bij u worden geleverd.<br/></p><p>Lees <a href=\"https://higrip.nl/policies/shipping-policy\" title=\"Shipping Policy\">hier</a> meer.</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_nj3VHc"
+                      ]
+                    },
+                    "accordion_row_MFdrLp": {
+                      "type": "_accordion-row",
+                      "settings": {
+                        "heading": "Hoe kan ik retourneren?",
+                        "open_by_default": false,
+                        "icon": "none",
+                        "width": 20
+                      },
+                      "blocks": {
+                        "text_jnnfBn": {
+                          "type": "text",
+                          "settings": {
+                            "text": "<p>We hopen dat uw <strong>performance</strong> naar het hoogste niveau gaan met uw aankoop bij HÏ Grip. Is het product toch niet helemaal wat u had verwacht?</p><p>U kunt uw bestelling <strong>binnen 30 dagen na ontvangst</strong> retourneren.</p><p>Klik <a href=\"https://www-higrip-nl.myparcel.me/returns/create\" target=\"_blank\" title=\"https://www-higrip-nl.myparcel.me/returns/create\">hier</a> om uw retourproces te starten.</p>",
+                            "width": "100%",
+                            "max_width": "normal",
+                            "alignment": "left",
+                            "type_preset": "rte",
+                            "font": "var(--font-body--family)",
+                            "font_size": "1rem",
+                            "line_height": "normal",
+                            "letter_spacing": "normal",
+                            "case": "none",
+                            "wrap": "pretty",
+                            "text_color": "",
+                            "background": false,
+                            "background_color": "#00000026",
+                            "corner_radius": 0,
+                            "padding-block-start": 0,
+                            "padding-block-end": 0,
+                            "padding-inline-start": 0,
+                            "padding-inline-end": 0
+                          },
+                          "blocks": {}
+                        }
+                      },
+                      "block_order": [
+                        "text_jnnfBn"
+                      ]
+                    }
+                  },
+                  "block_order": [
+                    "accordion_row_iRgij7",
+                    "accordion_row_zWE9Kp",
+                    "accordion_row_MFdrLp"
+                  ]
+                }
+              },
+              "block_order": [
+                "text_KYEK8B",
+                "accordion_j8NThr"
+              ]
+            }
+          },
+          "block_order": [
+            "group_CF6kKT",
+            "spacer_NJ6LQU",
+            "group_a4tgWJ"
+          ]
+        }
+      },
+      "name": "t:names.editorial",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "page-width",
+        "extend_media": true,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "divider_BjCtbj": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_color": "#ffffff",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 10,
+        "padding-block-end": 100
+      }
+    },
+    "marquee_qBjeww": {
+      "type": "marquee",
+      "blocks": {
+        "text_bGHQNj": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>More Grip Better Performance</strong></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 28,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_bGHQNj"
+      ],
+      "disabled": true,
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "background_color": "{{ settings.color_palette.foreground }}",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    }
+  },
+  "order": [
+    "main",
+    "gripsocks2_expertise_main",
+    "gripsocks2_anatomy",
+    "ss_testimonial_8_GXpV4d",
+    "trust_heading",
+    "trust_logos",
+    "media_with_content_66bBcD",
+    "divider_BjCtbj",
+    "marquee_qBjeww"
+  ]
+}

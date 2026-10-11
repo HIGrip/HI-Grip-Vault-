@@ -35,8 +35,13 @@ Losse audit op vraag van Lars: is higrip.nl de afgelopen week beter geworden, en
 
 Alle open acties uit [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]], [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en de backlog gelden nog; ze staan in de prioriteitenlijst hieronder, maar worden hier niet opnieuw als actie aangemaakt. Dit zijn alleen de nieuwe punten.
 
-- [ ] P1 · Besluit: aantal sporters vastleggen; de aankondigingsbalk op bijna elke NL-pagina en de productpagina's zeggen "3500+", de homepage-meta, `/en/` en het feitenbestand zeggen "3000+"
+- [x] P1 · Besluit: aantal sporters vastleggen; de aankondigingsbalk op bijna elke NL-pagina en de productpagina's zeggen "3500+", de homepage-meta, `/en/` en het feitenbestand zeggen "3000+"
 - [x] P1 · Meta description en AboutPage-schema van /pages/over-ons van "4 gedreven sporters" naar drie founders zetten; de paginatekst zegt sinds deze week "Drie founders één missie"
+- [ ] P1 · Beleid plakken in Instellingen → Beleid (refund, verzending, voorwaarden art. 4 en 6) uit `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`
+- [ ] P1 · Homepage-meta in Online Store → Voorkeuren van 3000+ naar 3500+ sporters zetten
+- [ ] P1 · Collectie-USP "3000+ sporters gingen je voor" naar 3500+ in de thema-editor (live `collection.json` is via de CLI geweigerd)
+- [ ] P2 · EN-H1 van de drie sportpagina's herstellen: titelvelden in de sport-hero invullen en "Grip socks for" als EN-vertaling registreren
+- [ ] P2 · Wekelijkse check op verouderde EN-vertalingen met feiten (tijden, bedragen, termijnen, aantallen) toevoegen aan de SEO-regressiecheck
 - [x] P1 · De routine Actiecontrole nakijken: CONTROLE.json staat sinds 26-9 stil, dus opgeloste punten (o.a. /en/-H1 en /en/-title in de backlog) worden niet bevestigd of afgevinkt
 
 ## Bevindingen
@@ -66,6 +71,20 @@ Volgorde op impact × moeite. Bij elk punt de bron van de bestaande actie; nieuw
 14. **Koppen en titels.** Geen H1 op `/pages/retail`, `/pages/pilates`, `/pages/retourbeleid` en `/pages/terugbetalingsbeleid` (die laatste heet nog "Betalingsbeleid"). Drie H1's op `/pages/verzendbeleid`. Korte titels op Over Ons, Retail, Pilates, Contact, Zakelijk en Clubwear. *Bron: 8-10.*
 15. **Trustpilot 4,6 tonen.** Op de homepage staat geen cijfer en geen bron. *Bron: 8-10.*
 16. **PageSpeed meten.** Het openbare quotum gaf opnieuw 429, en met de servicesleutel kwam 403 (API staat uit in het project). Er is dus nog steeds geen LCP-, INP- of CLS-meting. *Bron: 8-10.*
+
+### Uitgevoerd op 11-10 (besluit Lars) en nieuwe meting
+
+Lars besloot: overal 3500+ sporters (de tijdlijn op /pages/over-ons blijft 3000+), het feitenbestand houdt geen voorraad meer bij, en de punten 1, 3, 4, 5 en 6 van de prioriteitenlijst mochten live. Eerst gezet in werkthema `201133490503`, door Lars gecontroleerd, daarna live. Details en back-ups: [[Update Log]] en `05_Research/_uitvoer/2026-10-11-live-fixes/`.
+
+- **Live in het thema:** FAQ-schema (3 sporters, binnen 1 werkdag, geen 22:00), /pages/ons-verhaal (3 founders, demotekst weg), /pages/retourbeleid ("ongeopend" en 25% weg), 1.0-pagina EN 3,500+.
+- **Live via vertalingen en paginameta:** EN-aankondigingsbalk, EN-shopmeta, 22:00 weg op de drie EN-sportpagina's, €30 → €35 en "10 PM" weg op de EN 2.0-pagina's, /pages/over-ons-meta 3 sporters (NL en EN).
+- **Nog bij Lars:** beleid plakken (de koppeling mist `write_legal_policies`), homepage-meta (Online Store → Voorkeuren) en de collectie-USP in de thema-editor (Shopify weigert `collection.json` om een bestaande ongeldige knopinstelling).
+
+**Waarom EN niet meeging (drie oorzaken):** (1) EN-vertalingen staan los van de NL-tekst; na een NL-wijziging krijgen ze `outdated: true` maar blijven ze live staan, en bijna alle EN-vertalingen staan nu op verouderd. (2) Vaste Nederlandse tekst in de code: `sport-hero.liquid` plakt "Gripsokken voor" vóór de EN-paginatitel (vandaar de kapotte H1), en het FAQ-schema is een vaste NL-kopie die ook op /en verschijnt. (3) Custom-liquid-blokken met hardgecodeerd Engels (`if request.locale.iso_code == 'en'`) gaan niet mee met een NL-wijziging.
+
+**Vaste checklistscore (20 checks op techniek, feiten, beleid en schema; niet vergelijkbaar met de 62 van 8-10):** 12/100 vóór, **24/100** na de live-fixes van vandaag. Als Lars het beleid plakt en de twee tekstvelden aanpast, komt de checklist uit op ongeveer 57/100; de rest zijn de schema- en techniekpunten uit P2.
+
+**Posities (Search Console, 28 dagen tot 8-10; de fixes van vandaag zijn hier nog niet in te zien):** gripsokken 6,4 (was 9,6, 299 vertoningen), gripsocks 7,8 (was 9,7), higrip 2,6, hi grip 4,8 (was 6,1), high grip 4,0 (was 7,1), football grip socks 6,2, beste gripsokken 20,7 (was 23). Sportpagina's (7 dagen): padel 3,3, tennis 3,7, op kleine aantallen.
 
 ### Wat er sinds vorige week beter is
 

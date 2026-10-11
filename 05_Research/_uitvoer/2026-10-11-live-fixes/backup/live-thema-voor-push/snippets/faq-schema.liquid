@@ -1,0 +1,71 @@
+{% doc %}
+  Renders FAQPage structured data (schema.org) for the homepage FAQ accordion.
+  Mirrors the 8 Q&A entries in templates/index.json (faq section, block_order
+  jYYdma/rJzNEW/zGKLfa/X63kbm/L3JKNA/ypAAFc/LUHPia/LzCg6M as of 2026-08-02).
+  Update this snippet's text if that section's content changes.
+{% enddoc %}
+
+{%- capture faq_a1 -%}HÏ Grip gripsokken bieden maximale grip en controle, waardoor sporters stabieler bewegen en minder risico hebben op blessures of blaren. De versterkte onderzijde en ademende sportstof van HÏ Grip zorgen voor extra comfort en frisse, droge voeten tijdens elke training. Ontworpen door professionals en geschikt voor alle sporten, waardoor je altijd het beste uit je performance haalt.{%- endcapture -%}
+
+{%- capture faq_a2 -%}Gripsokken zijn wetenschappelijk bewezen effectiever dan normale sokken: ze houden de voet beter op zijn plek, verbeteren stabiliteit en verminderen uitglijden tijdens snelle of explosieve bewegingen. Studies tonen aan dat gripsokken bijna twee keer zoveel grip bieden (wrijvingscoëfficiënt 1,17 vs. 0,60), wat direct zorgt voor meer controle en vertrouwen. Kortom: minder glijden, meer stabiliteit en betere performance. Bronnen: Apps et al., 2020 (tandfonline.com/doi/full/10.1080/02640414.2019.1690618); Apps et al., 2022 (tandfonline.com/doi/full/10.1080/02640414.2022.2080163); Friedl et al., 2023 (tandfonline.com/doi/full/10.1080/19424280.2023.2212628).{%- endcapture -%}
+
+{%- capture faq_a3 -%}Ja, ontdek de zakelijke aanbiedingen van HÏ Grip op {{ shop.url }}/pages/zakelijk.{%- endcapture -%}
+
+{%- capture faq_a4 -%}Was uw gripsokken bij voorkeur met de hand in koud of lauw water, of in de wasmachine op een zacht programma (30–40°C) met een mild wasmiddel, altijd binnenstebuiten om de antislip te beschermen. Laat ze aan de lucht drogen en vermijd de droger, omdat hitte de elasticiteit en grip kan aantasten. Wring de sokken niet uit om vervorming van het grippatroon te voorkomen. Bewaar ze op een droge plek, uit direct zonlicht en vocht.{%- endcapture -%}
+
+{%- capture faq_a5 -%}Optimale performance voor elke sporter.{%- endcapture -%}
+
+{%- capture faq_a6 -%}Team HÏ Grip bestaat uit 4 sporters met een missie en een oprecht verhaal.{%- endcapture -%}
+
+{%- capture faq_a7 -%}Bestellingen die vóór 22:00 uur worden geplaatst, worden dezelfde dag verzonden via PostNL.{%- endcapture -%}
+
+{%- capture faq_a8 -%}Meer veelgestelde vragen zijn te vinden op {{ shop.url }}/pages/veelgestelde-vragen.{%- endcapture -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat zijn de voordelen van gripsokken?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a1 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn gripsokken wetenschappelijk bewezen?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a2 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft HÏ Grip ook een zakelijk aanbod?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a3 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe verzorg ik mijn gripsokken?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a4 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de missie van HÏ Grip?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a5 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie is Team HÏ Grip?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a6 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de levertijd?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a7 | strip_newlines | json }} }
+    },
+    {
+      "@type": "Question",
+      "name": "Vraag nog niet beantwoord?",
+      "acceptedAnswer": { "@type": "Answer", "text": {{ faq_a8 | strip_newlines | json }} }
+    }
+  ]
+}
+</script>

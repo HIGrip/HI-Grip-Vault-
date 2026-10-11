@@ -1,5 +1,7 @@
 # Beleidsteksten om te plakken — 11-10-2026
 
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+
 Waarom plakken: de Shopify-koppeling van Claude mist het recht `write_legal_policies`, en de Shopify CLI kan geen beleid wijzigen. Plakken duurt een paar minuten.
 
 **Waar:** Shopify-admin → Instellingen → Beleid. Per blok: klik het beleid, zet de editor op HTML (`<>`-knop), vervang alles, Opslaan.

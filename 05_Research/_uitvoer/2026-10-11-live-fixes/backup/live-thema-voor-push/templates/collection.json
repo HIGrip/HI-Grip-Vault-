@@ -1,0 +1,465 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shop_intro": {
+      "type": "shop-intro",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "text": "Gratis verzending boven €35"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "text": "binnen 1 werkdag verzonden"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "text": "30 dagen retour"
+          }
+        },
+        "u4": {
+          "type": "usp",
+          "settings": {
+            "text": "3000+ sporters gingen je voor"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "title_top": "",
+        "title_accent": "Kies je gripsok.",
+        "copy": "",
+        "deal_title": "",
+        "deal_sub": "",
+        "promo_label": "",
+        "promo_end_iso": "",
+        "promo_expired_text": ""
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "filters": {
+          "type": "filters",
+          "disabled": true,
+          "static": true,
+          "settings": {
+            "enable_filtering": true,
+            "filter_style": "horizontal",
+            "filter_width": "centered",
+            "text_label_case": "default",
+            "show_swatch_label": false,
+            "show_filter_label": false,
+            "enable_sorting": true,
+            "enable_grid_density": true,
+            "background_color": "",
+            "text_color": "",
+            "padding-block-start": 8,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0,
+            "facets_margin_bottom": 8,
+            "facets_margin_right": 20
+          },
+          "blocks": {}
+        },
+        "product-card": {
+          "type": "_product-card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 6,
+            "background_color": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "card-gallery": {
+              "type": "_product-card-gallery",
+              "settings": {
+                "image_ratio": "square",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_4nY4eT": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "narrow",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 5,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_EzJzMm": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "text_color": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "card-gallery",
+            "product_title_4nY4eT",
+            "price_EzJzMm"
+          ]
+        }
+      },
+      "settings": {
+        "layout_type": "grid",
+        "product_card_size": "extra-large",
+        "mobile_product_card_size": "large",
+        "enable_infinite_scroll": true,
+        "products_per_page": 24,
+        "product_grid_width": "centered",
+        "full_width_on_mobile": false,
+        "columns_gap_horizontal": 50,
+        "columns_gap_vertical": 50,
+        "padding-inline-start": 100,
+        "padding-inline-end": 100,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "shop_keuzehulp": {
+      "type": "shop-keuzehulp",
+      "blocks": {
+        "k1": {
+          "type": "keuze",
+          "settings": {
+            "tag": "Nieuw",
+            "name": "Performance Gripsokken 2.0",
+            "line": "Voor wie het maximale wil.",
+            "points": "15–20 mmHg compressie\nNaadloos, dus geen wrijving\nCoolmax® houdt je droog\nMaat 35–47, wit of zwart",
+            "highlight": true,
+            "cta_text": "Bekijk de 2.0",
+            "cta_url": "/products/performance-grip-socks-2-0-wit-1"
+          }
+        },
+        "k2": {
+          "type": "keuze",
+          "settings": {
+            "tag": "Bewezen",
+            "name": "Performance Gripsokken",
+            "line": "Voor de scherpste prijs.",
+            "points": "Hetzelfde grippatroon\nDirect uit voorraad\nVanaf €14,95",
+            "highlight": false,
+            "cta_text": "Bekijk de gripsok",
+            "cta_url": "/products/hi-grip-gripsokken-1"
+          }
+        }
+      },
+      "block_order": [
+        "k1",
+        "k2"
+      ],
+      "settings": {
+        "eyebrow": "Twijfel je nog?",
+        "title": "Welke past bij jou?"
+      }
+    },
+    "divider_QPAHPF": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "background_color": "{{ settings.color_palette.background }}",
+        "divider_color": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 100,
+        "padding-block-end": 0
+      }
+    },
+    "ss_testimonial_8_RNtW8E": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "testimonials_YAFeMB": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Top service",
+            "text": "Wat een top service! Snel geleverd en goede kwaliteit!",
+            "author_date": "Sharon Burger | 4 sep 2025"
+          }
+        },
+        "testimonials_pN76Yw": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "top sokken voor pilates!",
+            "text": "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!",
+            "author_date": "Eveline | 30 jan 2026"
+          }
+        },
+        "testimonials_7z98cF": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Top sokken",
+            "text": "Het zijn goede sokken met een tof design en de website werkt handig. Ik heb meteen 3 paar gekocht voor kerstcadeaus. Iedereen blij.",
+            "author_date": "Rox | 18 dec 2025"
+          }
+        },
+        "testimonials_Aqjq4H": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Super kwaliteit sokken",
+            "text": "De sokken doen echt wat er beloofd word, je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil. Kwaliteit ook super na diverse keren wassen. Een top product dus.",
+            "author_date": "Adri Noorlander | 31 aug 2025"
+          }
+        },
+        "testimonials_YWMHem": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Goede aankoop",
+            "text": "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming.",
+            "author_date": "Priscilla Verwaal | 8 mei 2025"
+          }
+        },
+        "testimonials_f3NqVj": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Aanrader",
+            "text": "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop en wil het iedereen aanbevelen die kwalitatief goede sokken wil hebben.",
+            "author_date": "Lydia | 13 jan 2026"
+          }
+        },
+        "testimonials_NMiTdA": {
+          "type": "testimonials",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Uitstekende sokken",
+            "text": "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken. Snelle levering.",
+            "author_date": "Dick | 12 juni 2025"
+          }
+        }
+      },
+      "block_order": [
+        "testimonials_YAFeMB",
+        "testimonials_pN76Yw",
+        "testimonials_7z98cF",
+        "testimonials_Aqjq4H",
+        "testimonials_YWMHem",
+        "testimonials_f3NqVj",
+        "testimonials_NMiTdA"
+      ],
+      "name": "SS - Testimonial #8",
+      "settings": {
+        "heading": "DIT ZEGGEN ONZE SPORTERS.",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 18,
+        "heading_height": 80,
+        "content_align": "center",
+        "rating_text_hide": false,
+        "rating_text": "",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating_hide": false,
+        "rating": 4.5,
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_gap": 5,
+        "text": "",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_advanced": false,
+        "text_height": 130,
+        "text_mt": 16,
+        "slider_width": 78,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_advanced": false,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 36,
+        "card_advanced": false,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "card_align": "left",
+        "card_align_mobile": "left",
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_advanced": false,
+        "card_heading_height": 130,
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_advanced": false,
+        "card_text_height": 150,
+        "card_text_mt": 16,
+        "card_text_more": "Lees meer",
+        "card_text_less": "Lees minder",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_advanced": false,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_mt": 16,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "dots_show_desktop": true,
+        "dots_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "button": "Ontdek meer",
+        "button_url": "https://nl.trustpilot.com/review/higrip.nl",
+        "new_tab": true,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_advanced": false,
+        "button_height": 100,
+        "button_padding_vertical": 20,
+        "button_padding_horizontal": 16,
+        "button_radius": 8,
+        "button_border_thickness": 0,
+        "button_mt": 24,
+        "button_align": "center",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#121212",
+        "button_border_hover_color": "#121212",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_date_text_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#121212",
+        "card_shadow_color": "#00b67a",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "dots_color": "#121212",
+        "stars_color": "#ffffff",
+        "stars_bg_color": "#00b67a",
+        "stars_bg_half_color": "#dddddd",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "text_color": "#000000",
+        "background_style": "gradient",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 25%, rgba(0, 17, 167, 1) 50%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "width": "page",
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    }
+  },
+  "order": [
+    "shop_intro",
+    "main",
+    "shop_keuzehulp",
+    "divider_QPAHPF",
+    "ss_testimonial_8_RNtW8E"
+  ]
+}

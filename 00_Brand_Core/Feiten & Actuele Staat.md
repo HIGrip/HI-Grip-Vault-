@@ -1,7 +1,7 @@
 ---
 type: feiten
 status: in-gebruik
-laatst-geverifieerd: 2026-10-01
+laatst-geverifieerd: 2026-10-11
 ---
 
 # Feiten & Actuele Staat — HÏ Grip
@@ -41,7 +41,6 @@ laatst-geverifieerd: 2026-10-01
 | Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
 
 - Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, sinds de update van 28-9 weer €14,95 / €41,95 / €64,95 (per paar €14,95 / €13,98 / €12,99).
-- Voorraad 2.0 (zwart en wit) staat op 1-10 op 0, met negatieve aantallen per maat: controleer of de producten niet doorverkocht worden.
 - Adviesprijs retail 2.0: **€17,95**, gelijk aan de webshopprijs (besluit Lars 2-10-2026; de one-pagers noemden €17,99).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
@@ -62,7 +61,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 | Claim | Waarde | Status |
 |---|---|---|
-| Aantal sporters | **3000+** | Bevestigd door Lars 15 sep. Oude teksten zeggen 1.500+ of 2.000+ — niet meer gebruiken. |
+| Aantal sporters | **3500+** | Besluit Lars 11-10-2026. Overal 3500+, behalve de tijdlijn op /pages/over-ons: die mijlpaal (juni 2026) blijft 3000+. Oude teksten met 1.500+, 2.000+ of 3000+ niet meer gebruiken. |
 | Wrijvingscoëfficiënt | 1,17 (tegen 0,60 bij gewone sokken) | Peer-reviewed: Apps et al. 2022, *Journal of Sports Sciences* (doi 10.1080/02640414.2022.2080163). Friedl et al. 2023 is **gemengd** bewijs (alleen +9,3% benutte tractie bij afremmen citeren). Details: [[Performance Grip Socks 2.0]] §3 |
 | Meer grip | 95% meer grip | Afgeleid: 1,17 ÷ 0,60 = 1,95. Zelfde bron. **Alleen met de formuleringsregel hieronder** |
 | Reviewscore | **4,6 ★** (Trustpilot, 17 reviews op 3 sep) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
@@ -96,6 +95,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-10-11 — Besluiten Lars: aantal sporters wordt 3500+ (tijdlijn over-ons blijft 3000+); het feitenbestand houdt geen voorraad meer bij (voorraad altijd live in Shopify bekijken).
 - 2026-10-02 — Besluiten Lars: reviewscore 4,6 (Trustpilot) is het merkcijfer; adviesprijs retail 2.0 = €17,95, gelijk aan de webshop.
 - 2026-10-02 — Vault-review: thema-ID alleen nog in [[Technische Procedures]]; live staat verzending/retour bijgewerkt naar de regressiecheck van 28-9; claimbronnen gelijkgetrokken met [[Performance Grip Socks 2.0]] §3 en formuleringsregel toegevoegd; beide reviewcijfers met bron (keuze `[CHECK]` bij Lars).
 - 2026-09-30 — Markt en focus gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (leidend): tennis/padel als één beachhead, doelgroep, team, kanalen, nieuwsbriefritme 3 weken, productnamen, skisokken van "uitgesteld" naar "binnenkort, geen datum".

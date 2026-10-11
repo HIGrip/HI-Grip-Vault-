@@ -107,6 +107,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
 - [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
 - [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO op 8 oktober
 - [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO, nieuwe run 8 oktober (met Search Console en GA4)
@@ -114,7 +115,6 @@ Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bij
 - [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
 - [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
-- … en 1 oudere (zie [[Waar staat wat]])
+- … en 2 oudere (zie [[Waar staat wat]])
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

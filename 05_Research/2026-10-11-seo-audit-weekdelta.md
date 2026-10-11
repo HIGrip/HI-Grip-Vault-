@@ -36,8 +36,8 @@ Losse audit op vraag van Lars: is higrip.nl de afgelopen week beter geworden, en
 Alle open acties uit [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]], [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en de backlog gelden nog; ze staan in de prioriteitenlijst hieronder, maar worden hier niet opnieuw als actie aangemaakt. Dit zijn alleen de nieuwe punten.
 
 - [ ] P1 · Besluit: aantal sporters vastleggen; de aankondigingsbalk op bijna elke NL-pagina en de productpagina's zeggen "3500+", de homepage-meta, `/en/` en het feitenbestand zeggen "3000+"
-- [ ] P1 · Meta description en AboutPage-schema van /pages/over-ons van "4 gedreven sporters" naar drie founders zetten; de paginatekst zegt sinds deze week "Drie founders één missie"
-- [ ] P1 · De routine Actiecontrole nakijken: CONTROLE.json staat sinds 26-9 stil, dus opgeloste punten (o.a. /en/-H1 en /en/-title in de backlog) worden niet bevestigd of afgevinkt
+- [x] P1 · Meta description en AboutPage-schema van /pages/over-ons van "4 gedreven sporters" naar drie founders zetten; de paginatekst zegt sinds deze week "Drie founders één missie"
+- [x] P1 · De routine Actiecontrole nakijken: CONTROLE.json staat sinds 26-9 stil, dus opgeloste punten (o.a. /en/-H1 en /en/-title in de backlog) worden niet bevestigd of afgevinkt
 
 ## Bevindingen
 

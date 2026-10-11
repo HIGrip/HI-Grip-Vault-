@@ -1,12 +1,12 @@
 {
- "bijgewerkt": "2026-09-26T05:47:22+02:00",
+ "bijgewerkt": "2026-10-11T14:23:19+02:00",
  "bronnen": [
   {
    "id": "ga4",
    "naam": "Google Analytics 4",
    "soort": "servicesleutel",
    "status": "ok",
-   "detail": "323 sessies in 12 weken",
+   "detail": "536 sessies in 12 weken",
    "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als Viewer op GA4-property 476032345 (Beheer → Toegangsbeheer voor property) en 'Google Analytics Data API' aan in Google Cloud-project higrip-analytics."
   },
   {
@@ -14,7 +14,7 @@
    "naam": "Search Console",
    "soort": "servicesleutel",
    "status": "ok",
-   "detail": "https://www.higrip.nl/, data t/m 2026-09-23",
+   "detail": "https://www.higrip.nl/, data t/m 2026-10-08",
    "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als gebruiker (Beperkt) in Search Console → Instellingen → Gebruikers en rechten, en 'Google Search Console API' aan in project higrip-analytics."
   },
   {
@@ -53,8 +53,8 @@
    "id": "shopify",
    "naam": "Shopify",
    "soort": "connector",
-   "status": "ok",
-   "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-09-26",
+   "status": "onbekend",
+   "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-05",
    "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Shopify koppelen"
   },
   {

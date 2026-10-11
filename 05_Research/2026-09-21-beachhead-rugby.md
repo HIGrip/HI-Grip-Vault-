@@ -175,7 +175,7 @@ Dominantie in rugby — een niveau dat geen enkel merk in Nederland bereikt heef
 ## Acties
 
 - [ ] P1 · Rugby-sportpagina `/pages/gripsokken-voor-rugby` afmaken en publiceren: rugbyfoto laten schieten (scrum, voet in schoen), FAQ "Mag je gripsokken dragen bij rugby?" met het Law 4/VWW-antwoord uit §3, link naar het product
-- [ ] P1 · Rugby-sportgids schrijven in `03_Website_Agent/Content/Sportgidsen/` per positie (forwards/scrum, backs/sevens, kicker) met knip-je-clubkous-instructie
+- [x] P1 · Rugby-sportgids schrijven in `03_Website_Agent/Content/Sportgidsen/` per positie (forwards/scrum, backs/sevens, kicker) met knip-je-clubkous-instructie
 - [ ] P1 · Pilot clubdeals Zuid-Holland: Rotterdamse RC, RSRC en de Delftse clubs benaderen met samples en een wear-test (10 spelers, één seizoen) in ruil voor foto's en quotes
 - [ ] P1 · Rugbymagazijn (Bussum, B2B-portaal) benaderen als retailer — beide gripsokken daar op 21-9-2026 in herenmaten uitverkocht, HÏ Grip als Nederlands alternatief met voorraad
 - [ ] P2 · Post-purchase vraag "Welke sport speel je?" toevoegen zodat het rugby-aandeel in D2C-orders meetbaar wordt (meetpunt vraag 9)

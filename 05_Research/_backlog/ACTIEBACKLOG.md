@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 9 oktober 2026 (growth-radar)
+Laatst bijgewerkt: 11 oktober 2026 (growth-radar)
 Open: 27 · Afgerond: 0 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -60,12 +60,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Engelse title en meta description toevoegen, analoog aan de bestaande NL-teksten.
 **Gevonden op:** 21 september 2026 (regressiecheck)
 
-### [ ] [regressie] `/collections/all` heeft geen meta description
-**Waarom:** Lege `<meta name="description">` — al genoteerd in de audit van 15 september, nog niet opgelost.
-**Waar:** `/collections/all`
-**Wat:** Beschrijving toevoegen via Shopify admin → SEO-instellingen van de collectiepagina.
-**Gevonden op:** 15 september 2026 (regressiecheck)
-
 ### [ ] 1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)
 **Update 2 okt 2026 (vault-review):** sinds 28-9 zijn de prijzen weer €14,95 / €41,95 / €64,95 (zie [[Feiten & Actuele Staat]]). Balktekst bij 1-pack wordt dus "Nog €20,05 tot gratis verzending"; de bedragen hieronder zijn achterhaald. Het punt blijft staan.
 **Update 24 sep 2026:** Live prijzen en drempel zijn veranderd: 1-pack €13,49, verzendkosten €4,50, drempel volgens announcementbar €35 (FAQ zegt nog €30 — eerst gelijktrekken, zie P1-actie in vault-notitie `2026-09-23-seo-conversietest-run-1`). Omdat het 3-pack per paar nog maar €0,17 goedkoper is dan een 1-pack, is gratis verzending nu hét argument voor het 3-pack — dit punt weegt daardoor zwaarder. Balktekst bij 1-pack: "Nog €21,51 tot gratis verzending". Laat het bedrag uit één theme-setting komen, niet hardcoded.
@@ -80,6 +74,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** eerst Shopify admin (reviewapp), daarna pas `snippets/product-schema.liquid`
 **Wat:** 1) Koppel een reviewapp die echte klantbeoordelingen verzamelt. 2) Zorg dat de beoordelingen zichtbaar op de productpagina staan. 3) Zet dan pas de `aggregateRating` terug, gevoed uit de metafields van die app — nooit met vaste waarden.
 **Let op:** Zolang stap 1 en 2 niet af zijn, is dit punt geblokkeerd. Niet vooruitlopen.
+**Update 11 okt 2026 (weekonderhoud):** staat sinds 15 sep (26 dagen) zonder beweging op P1 — de drieweken-regel slaat aan. Niet verlaagd naar P2, want de CTR-winst blijft relevant zodra een reviewapp gekoppeld is; wel expliciet als blokkade gemarkeerd: dit punt wacht op een menselijke keuze (reviewapp koppelen) en kan niet door Claude worden opgepakt.
 **Effect:** Hogere CTR op je belangrijkste zoekterm zonder dat je positie hoeft te stijgen.
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
 
@@ -110,6 +105,13 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 ---
 
 ## P2 — Deze maand
+
+### [ ] [regressie] `/collections/all` heeft geen meta description
+**Waarom:** Lege `<meta name="description">` — al genoteerd in de audit van 15 september, nog niet opgelost.
+**Waar:** `/collections/all`
+**Wat:** Beschrijving toevoegen via Shopify admin → SEO-instellingen van de collectiepagina.
+**Update 11 okt 2026 (weekonderhoud):** stond sinds 15 sep (26 dagen) zonder beweging op P1 — verlaagd naar P2. Blijft een simpele, niet-geblokkeerde taak; duidelijk geen "deze week"-prioriteit gebleken.
+**Gevonden op:** 15 september 2026 (regressiecheck)
 
 ### [ ] 5. Bouw een bewijspagina rond je eigen meetdata
 **Waarom:** De core update van maart/april beloonde webshops met eigen materiaal met ~22% meer zichtbaarheid. Jouw 1.17 wrijvingscoëfficiënt en 95%-claim zijn precies dat — maar ze staan nu alleen in campagnesecties, niet in een pagina die Google kan vinden en AI-modellen kunnen citeren.
@@ -253,3 +255,8 @@ Niet zelf samengevoegd — dat wijzigt koppen en dus actie-id's; ter beoordeling
 - **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
 - **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
 Toegang tot de dashboard-database werkte deze run wel (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**11 okt 2026:** 27 open punten (backlog, `dubbel` niet meegeteld) — nog steeds boven de 15 uit de vuistregel. Twee P1-punten stonden al 26 dagen zonder beweging (sinds 15 sep, dus over de drieweken-grens): `/collections/all` zonder meta description is daarom verlaagd naar P2 (geen blokkade, gewoon geen prioriteit gebleken — zie het punt onder P2). Punt 2 (reviewapp koppelen) staat nog op P1 maar is nu expliciet als blokkade gemarkeerd: wacht op een menselijke keuze, niet op Claude-werk. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep, 4 okt) staan nog open, want nog niet samengevoegd:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
+- **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

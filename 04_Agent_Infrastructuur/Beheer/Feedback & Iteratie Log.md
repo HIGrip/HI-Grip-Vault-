@@ -167,6 +167,7 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-12-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-12 (/en/-fixes bevestigd, B2B-outreach staat al 12 dagen stil)
 - [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
 - [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
 

@@ -18,3 +18,7 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-10-05 | website | /en/-H1-bug en lege EN-titel lijken opgelost (nog te bevestigen door actiecontrole); schema nu ook op de 3 sportpagina's; echte NL-sessies eerste stijging na 3 weken daling (+40%) | 2026-10-05-weekoverzicht
 2026-10-05 | partnerships | Beide kandidatenlijsten 3 dagen oud, alle kandidaten al beoordeeld — geen zoekactie nodig; outreach Powerleague/Panna/TennisFirst blijft voorlopig niet (besluit lars 30-09) | 2026-10-05-weekoverzicht
 2026-10-05 | content | Nieuw content-voorstel week 05-10 (5 ideeën) — voorstellen van 21-09 en 28-09 beide bevestigd beoordeeld op 30-09, stapelrem liet nieuw voorstel toe | 2026-10-05-weekoverzicht
+2026-10-12 | website | Actiecontrole draait weer na stilstand sinds 26-9; beide /en/-fixes (H1/hero, titel/meta) hard bevestigd; geen nieuwe afwijkingen; nieuw: NL-homepage-meta/collectie nog 3000+ tegen EN al 3500+ (fix staat al klaar) | 2026-10-12-weekoverzicht
+2026-10-12 | content | Content-voorstel 05-10 nog niet beoordeeld (1 week) — stapelrem hield stand, geen nieuw voorstel | 2026-10-12-weekoverzicht
+2026-10-12 | partnerships | Beide kandidatenlijsten 7 dagen oud, alle kandidaten al beoordeeld — geen zoekactie nodig; outreach-besluit blijft "voorlopig niet" maar koersbepaling 11-10 vraagt expliciet om heroverweging | 2026-10-12-weekoverzicht
+2026-10-12 | koers | B2B-koersbepaling van 11-10 (83% van de omzet uit B2B, outreach stil sinds 30-09) staat nog open bij Lars — belangrijkste besluit van de maand | 2026-10-12-weekoverzicht

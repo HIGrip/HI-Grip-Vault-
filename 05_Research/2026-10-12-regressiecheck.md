@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Geen nieuwe afwijkingen deze week: alle 12 gecontroleerde URL's zijn technisch schoon (200, één title/H1/meta, correcte canonical/hreflang, geen aggregateRating) en de prijzen kloppen exact met het feitenbestand. De al openstaande 3000+/3500+-sporterstegenspraak (2026-10-11-seo-audit-weekdelta) is gedeeltelijk voortgeschreden: de EN-homepage zegt nu overal 3500+, de NL-homepage-meta en de collectiepagina nog 3000+ — geen nieuw punt, de actiecontrole volgt het bestaande."
-gerelateerd: [2026-10-05-regressiecheck, 2026-09-28-regressiecheck, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-10-11-seo-audit-weekdelta]
+gerelateerd: [2026-10-05-regressiecheck, 2026-09-28-regressiecheck, 2026-09-21-regressiecheck, 2026-09-15-regressiecheck, 2026-10-11-seo-audit-weekdelta, 2026-10-12-seo-conversietest-run-4]
 vervangt: []
 bronbestand: ""
 deadline: ""

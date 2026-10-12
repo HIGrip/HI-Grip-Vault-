@@ -2569,7 +2569,8 @@
   }
   const opdrachtLabel = (o) => o.status === 'goedgekeurd' ? (o.wacht ? 'Goedgekeurd, wacht op sync' : 'Goedgekeurd, wacht op Uitvoerder') : OPDRACHT_LABEL[o.status];
   const isLopend = (o) => !!o && (o.status === 'goedgekeurd' || o.status === 'bezig');
-  const kanGoedkeuren = () => ACTIES.filter(a => telt(a) && !afgevinkt(a) && kanClaude(a) && !isLopend(opdrachtInfo(a)));
+  // klaar = Claude heeft zijn deel gedaan, de rest is mensenwerk: telt niet meer als 'Claude kan doen'
+  const kanGoedkeuren = () => ACTIES.filter(a => { const o = opdrachtInfo(a); return telt(a) && !afgevinkt(a) && kanClaude(a) && !isLopend(o) && !(o && o.status === 'klaar'); });
 
   function openClaude(a) {
     openDialoog(kanClaude(a) || opdrachtInfo(a) ? 'Laat Claude dit doen' : 'Claude en deze actie', () => {

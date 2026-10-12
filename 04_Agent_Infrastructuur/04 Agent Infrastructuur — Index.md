@@ -16,10 +16,6 @@ Terug naar [[Home]].
 
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
-### Hoofdmap
-- [[04_Agent_Infrastructuur/Identiteit Denzel|04_Agent_Infrastructuur/Identiteit Denzel]]
-- [[04_Agent_Infrastructuur/Soul Denzel|04_Agent_Infrastructuur/Soul Denzel]]
-
 ### Beheer
 - [[API & Tool Connections]]
 - [[Agent Bestandsschema (Soul, Identiteit, User)]]
@@ -28,6 +24,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - [[Agent Takenverdeling & Grenzen]]
 - [[Agent Werk & Kwaliteit Overzicht]]
+- [[Agents en het dashboard]]
 - [[Denzel Weekoverzicht — Routine]]
 - [[Feedback & Iteratie Log]]
 - [[Goedkeuringsworkflow]]

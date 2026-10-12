@@ -1,16 +1,26 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-12
 ---
 
 # Stappenplan — Agent-structuur verder bouwen
 
 > Volgorde en prioriteit hieronder volgen uit wat er nu al staat — niet uit het niets bedacht. Voor de structuur zelf: zie [[Agent Hiërarchie & Structuurschema]]. Voor de status per bestand: zie [[Agent Bestandsschema (Soul, Identiteit, User)]].
 
+## Stand 12 oktober 2026
+
+- **Structuur:** Team HÏ Grip (Lars, Tigo, Timo) → Denzel met eigen team (Stafchef, Vooruitblik-agent, drie QA-agents) → drie hoofdagents met dertien sub-agents. Volledig schema: [[Agent Hiërarchie & Structuurschema]].
+- **Invulschema verwerkt.** Alle agents zijn ingevuld via het invulschema (https://claude.ai/artifact/AUGt7FiK4K3qHqoruDCyYB), behalve de Ads-tak. Beoordeling met cijfers per agent: https://claude.ai/artifact/9QqJ4dLqK8E9hmgmNG3FKo.
+- **Besluiten van Lars van 12-10 doorgevoerd:** Stafchef vinkt af in het dashboard met bewijs en houdt de leerregels bij; Denzel routeert zelf en checkt QA-verdicten alleen snel; muziek mag rechtenvrij of gelicenseerd, per post checken op TikTok en Instagram; Partnership-QA checkt wie al benaderd is en of een kandidaat een match is; e-mailplatform verdeeld (Shopify transactiemails, SendWILL de rest); werkthema `202398040391`.
+- **Nieuw vastgelegd:** wie Team HÏ Grip is en wie waarover beslist, plus tien basisregels voor iedere agent, in [[user]]. De aansluiting op het dashboard staat in [[Agents en het dashboard]].
+- **Opgeruimd:** de vervallen kopieën van Denzel in `04_Agent_Infrastructuur` zijn weg, de leerregels zijn per agent geordend, Content Maker en Socials Analyzer hebben hun vaste mapnaam.
+
+**Hieronder:** eerst de fases tot nu toe (historie), daarna Fase 6 met de to-do's voor de komende weken.
+
 ---
 
-## Waar we nu staan
+## Waar we stonden (tot september 2026)
 
 - **Brand Core** — volledig gevuld, bron van waarheid voor alle agents.
 - **Structuur staat** — Denzel (Orchestrator) + 3 hoofdagents (Content, Partnership, Website), elk met `Identiteit <Agent>.md`/`Soul <Agent>.md` (plus één gedeelde `user.md` in Beheer); 10 sub-agents zijn uitgewerkt als catalogus-item per categorie, allemaal status "idee".
@@ -84,9 +94,48 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 - [x] **Parallelle dispatch uitgebreid naar Content Agent en Partnership Agent (2026-09-16, op verzoek van lars: "dit moet dus ook voor partner en content").** Zelfde schema en patroon als Website Agent, nu ook voor de andere 2 hoofdagents: 6 nieuwe `agents/*.md`-bestanden (`content-strategie-planning-agent`, `caption-copy-agent`, `video-visuele-productie-agent`, `influencer-creator-agent`, `b2b-klanten-agent`, `partnerships-events-agent`) + 2 orchestrator-skills (`/content-agent`, `/partnership-agent`). Voor Partnership Agent's 3 sub-agents was er nog geen `/`-skill (workflows, geen skill-kandidaat) — de agent-definities zijn hun eerste `/`-activeerbare vorm. `CLAUDE.md` bevat nu één tabel met alle 3 orchestrators + 11 sub-agents, en de schema-/sync-regels zijn gegeneraliseerd naar alle hoofdagents. **Nog niet getest in de praktijk** (Website Agent's laag wel al bevestigd werkend na sessie-herstart, dit volgt hetzelfde technische patroon).
 - [x] **Doorlopend kwaliteitsdashboard toegevoegd (2026-08-21, op verzoek van lars):** [[Agent Werk & Kwaliteit Overzicht]] — één levende notitie, per (sub-)agent een rij met laatste output, datum, kwaliteitsstatus en toelichting. Denzel werkt dit bij in élke sessie (niet alleen wekelijks) zodra zijn kwaliteitscontrole-loop wordt doorlopen; de wekelijkse routine is hiervoor ook bijgewerkt. Vult direct in: Website Agent's 4 skills en Video & Visuele Productie Agent hebben nog geen output sinds bouw (09-08); B2B/Events-werk van vandaag staat er al in.
 
+## Fase 6 — Van ingevuld naar draaiend (vanaf 12 oktober 2026)
+
+### Gedaan
+- [x] Invulschema door Team HÏ Grip ingevuld voor alle agents behalve de Ads-tak (9 t/m 12 oktober 2026)
+- [x] Content Maker en Socials Analyzer toegevoegd als sub-agents van de Content Agent (9-10), Content Maker afgemaakt (12-10)
+- [x] Besluiten van 12-10 doorgevoerd in de identiteiten, souls, handboek van Denzel en leerregels
+- [x] Team HÏ Grip en basisregels voor alle agents vastgelegd in [[user]]
+- [x] Dashboard-check: wat sluit aan en wat niet, in [[Agents en het dashboard]]
+- [x] Vault opgeruimd: dubbele Denzel-bestanden weg, leerregels geordend, structuurschema herschreven
+
+### To do — koppelingen (eerst)
+- [ ] **Model en tools voor de drie hoofdagents vastleggen.** Website, Content en Partnership Agent hebben nog geen Model & Tools-sectie.
+- [ ] **Tools afstemmen op de regels.** Een QA-agent zonder schrijftool kan echt niets schrijven; dat is sterker dan een zin in de vault. Controleer per agent in de setup-repo (`agents/*.md`) dat de tools overeenkomen met de identiteit. Terminal (Bash) alleen waar nodig.
+- [ ] **Content-QA beeld laten bekijken.** Hij toetst nu ook afbeeldingen maar kan alleen tekst lezen.
+- [ ] **Socials Analyzer:** Instagram- en TikTok-statistieken koppelen (nu alleen Buffer).
+- [ ] **Influencer & Creator Agent:** web zoeken toevoegen (open sinds 30-9).
+- [ ] **E-mail Marketing:** Pinterest heeft geen koppeling; tot die er is levert het team links of screenshots.
+- [ ] **Basisregels in de setup-repo:** controleer dat elke `agents/*.md` ook [[user]] laat lezen, zodat de basisregels bij elke run meegaan.
+
+### To do — keuzes van Team HÏ Grip
+- [ ] **Toolkeuze Content Maker:** Higgsfield, Claude Design, Adobe of Canva. Daarna een maandbudget vastleggen in [[Identiteit Content Maker]].
+- [ ] **Montageprogramma koppelen** voor de Content Maker (de Adobe Premiere- en Photoshop-koppelingen verbonden op 12-10 niet).
+- [ ] **Ads-tak uitwerken:** hoofdagent ADS met de sub-agents Ads-analyse en Ads-creator, plus ADS-QA in het team van Denzel. Grenzen: uitgeven altijd overleg vooraf; later eventueel automatisch binnen een limiet (± 20% budget, max € 10 per dag, zie het dashboardhandboek).
+
+### To do — afstemmen met de bouwer van het dashboard
+- [ ] Afvinken met bewijs door de Stafchef mogelijk maken (veld en tool, met log).
+- [ ] Soorten voorstellen in *Wacht op akkoord* uitbreiden: website-wijziging, beeld of video, QA-escalatie, wijziging AI-structuur.
+- [ ] Rechten per persoon: AI-structuur Lars en Timo, live zetten Lars.
+- [ ] Plek voor beeld en video van de Content Maker bij een post.
+- [ ] Afspreken welke agents via Hermes draaien en welke als Claude Code-sub-agent.
+- Volledige lijst en uitleg: [[Agents en het dashboard]].
+
+### Later
+- [ ] **B2B Klanten Agent meer rechten in het nieuwe dashboard** (verwacht over twee à drie maanden, rond januari 2027). Pas na vrijgave door Lars of Timo, en na aanpassing van zijn grenzen. Zie [[Werkplek B2B Klanten Agent]].
+- [ ] **Eerste echte proefrun per nieuwe agent** (Content Maker, Socials Analyzer, Stafchef met afvinken) en de uitkomst vastleggen in [[Agent Werk & Kwaliteit Overzicht]].
+- [ ] **Na een maand de scorekaart van de Stafchef bekijken:** hoeveel werk kwam zonder grote aanpassing door, en waar ontstonden de meeste correcties?
+
 ---
 
 ## Openstaande keuzes voor lars
+
+- **Nieuw (12-10-2026):** toolkeuze Content Maker, uitwerking Ads-tak, en de afstemming met de bouwer van het dashboard. Zie Fase 6 hierboven.
 
 - **Alle drie voormalige open punten zijn bevestigd (21 augustus 2026):** Content Agent's "content van derden verwerken" (Voorstellen, ik keur goed) en "Copy Bank bijhouden" (Zelf doen) — zie [[Agent Takenverdeling & Grenzen — Content Agent]]; Partnership Agent's follow-up-berichten (zelfde niveau als eerste bericht: Altijd overleg vooraf) — zie [[Agent Takenverdeling & Grenzen — Partnership Agent]]. Alle 3 doorgevoerd in de bijbehorende Soul <Agent>.md's.
 - ~~GA4-toegang (Fase 2, Analytics & KPI Dashboard)~~ — **afgerond 2026-08-30.** `analytics-mcp` draait via een service account. Vervolgstappen (funnel-rapport, ~2 weken data afwachten, purchase-events checken, UTM-discipline, Clarity in cookiebanner) staan in [[Analytics & KPI Dashboard]] en [[Feedback & Iteratie Log]] (2026-08-30).
@@ -102,6 +151,8 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 - [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - [[Agent Takenverdeling & Grenzen — Content Agent]]
 - [[Goedkeuringsworkflow]]
+- [[Agents en het dashboard]]
+- [[Leerregels per Agent]]
 
 ## Gerelateerd onderzoek (automatisch)
 

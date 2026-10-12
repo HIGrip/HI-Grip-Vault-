@@ -1,8 +1,8 @@
 ---
 type: index
 gebied: denzel
-bijgewerkt: 2026-10-02
-status: concept — ter beoordeling door Lars
+bijgewerkt: 2026-10-12
+status: concept — besluiten van Lars van 12-10-2026 verwerkt
 ---
 
 # 06 Denzel — Index
@@ -25,7 +25,7 @@ Regel: staat iets in 04 en gaat het over de spelregels voor iedereen, dan blijft
 
 1. `CLAUDE.md` in de vault-root en [[Feiten & Actuele Staat]].
 2. [[Identiteit Denzel]] en [[Soul Denzel]].
-3. [[Leerregels per Agent]], de secties "Voor alle agents" en "Voor Denzel".
+3. [[Leerregels per Agent]], de secties "Voor alle agents" en "Denzel", en de basisregels in [[user]].
 4. [[Kwaliteitslog Overzicht]] (tot de verhuizing: [[Agent Werk & Kwaliteit Overzicht]]): staat er iets op "wacht op Lars"? Stel dan de realiteitscheck-vraag (zie [[Ritmes]]).
 5. Daarna alleen de handboeknotitie die bij de opdracht past.
 
@@ -33,7 +33,7 @@ Regel: staat iets in 04 en gaat het over de spelregels voor iedereen, dan blijft
 
 | Agent | Rol in één zin | Map |
 |---|---|---|
-| **Stafchef** | Schrijft opdrachten, volgt open lussen, houdt het kwaliteitslog bij, stelt het weekoverzicht samen | [[Identiteit Stafchef]] |
+| **Stafchef** | Schrijft opdrachten, volgt open lussen, houdt het kwaliteitslog en de leerregels bij, werkt het dashboard bij en vinkt daar af met bewijs, stelt het weekoverzicht samen | [[Identiteit Stafchef]] |
 | **Vooruitblik-agent** | Zoekt uit wat er aankomt: evenementen, nieuwe regels, veranderingen bij tools. Minimaal 30 dagen vooraf gemeld | [[Identiteit Vooruitblik-agent]] |
 | **Website-QA** | Toetst het werk van de Website Agent | [[Identiteit Website-QA]] |
 | **Content-QA** | Toetst het werk van de Content Agent | [[Identiteit Content-QA]] |
@@ -58,7 +58,7 @@ Gedeelde toetsregels voor de drie QA-agents: [[Toetsregels]].
 
 ## Status
 
-Concept van 2026-10-02. Alles hier is een voorstel zolang Lars het niet heeft goedgekeurd, vooral de autonomie-niveaus en grenzen van de nieuwe sub-agents. Voortgang en open punten: [[Werkplek Denzel]].
+Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerregels, routeren en de QA-checks; die besluiten zijn verwerkt. De overige autonomie-niveaus van de nieuwe sub-agents blijven een voorstel tot Lars of Timo ze goedkeurt. Voortgang en open punten: [[Werkplek Denzel]]. Hoe Denzel en zijn team met het dashboard werken: [[Agents en het dashboard]].
 
 ## Alle notities in deze map (automatisch)
 
@@ -66,8 +66,8 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### Hoofdmap
 - [[Huidig gebruik van Denzel]]
-- [[06_Denzel/Identiteit Denzel|06_Denzel/Identiteit Denzel]]
-- [[06_Denzel/Soul Denzel|06_Denzel/Soul Denzel]]
+- [[Identiteit Denzel]]
+- [[Soul Denzel]]
 - [[Werkplek Denzel]]
 
 ### Handboek

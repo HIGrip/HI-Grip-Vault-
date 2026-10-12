@@ -1475,11 +1475,41 @@
   "wat_claude_doet": "B2B Klanten Agent spawnen om een herhaalorder-voorstel te schrijven",
   "wat_jij_doet": "Voorstel beoordelen"
  },
+ "2026-10-11-seo-audit-weekdelta#3b3f2113": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "concepttekst voor de collectie-USP (3500+) opstellen in het testthema",
+  "wat_jij_doet": "de tekst in de live thema-editor plakken (CLI-toegang is geweigerd)"
+ },
+ "2026-10-11-seo-audit-weekdelta#59822153": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "concepttekst voor de homepage-meta met 3500+ sporters opstellen",
+  "wat_jij_doet": "de tekst plakken in Online Store → Voorkeuren en opslaan"
+ },
+ "2026-10-11-seo-audit-weekdelta#8aead8f5": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "gecorrigeerde EN-H1-teksten en vertaling 'Grip socks for' voorbereiden in het testthema",
+  "wat_jij_doet": "de titelvelden in de live sport-hero en Translate & Adapt bijwerken"
+ },
+ "2026-10-11-seo-audit-weekdelta#a938ea37": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "de beleidstekst staat al klaar in _uitvoer/2026-10-11-live-fixes/beleid-plakken.md",
+  "wat_jij_doet": "de tekst plakken in Shopify Instellingen → Beleid (refund, verzending, voorwaarden) en live zetten"
+ },
  "2026-10-11-seo-audit-weekdelta#ad2fe88b": {
   "beoordeeld": "2026-10-11",
   "claude": "nee",
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-seo-audit-weekdelta#e9957d88": {
+  "beoordeeld": "2026-10-12",
+  "claude": "ja",
+  "wat_claude_doet": "de wekelijkse EN-vertaalcontrole toevoegen aan de SEO-regressiecheck-routineprompt in de vault",
+  "wat_jij_doet": "de aanpassing in de routineprompt controleren en goedkeuren"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

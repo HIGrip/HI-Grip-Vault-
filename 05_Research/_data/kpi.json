@@ -1,8 +1,8 @@
 {
- "bijgewerkt": "2026-10-11T14:23:16+02:00",
+ "bijgewerkt": "2026-10-12T05:33:06+02:00",
  "status": "ok",
  "fouten": {},
- "gsc_laatste_dag": "2026-10-08",
+ "gsc_laatste_dag": "2026-10-09",
  "weken": [
   {
    "week": "2026-W30",
@@ -161,16 +161,16 @@
   {
    "week": "2026-W41",
    "start": "2026-10-05",
-   "sessies": 91,
-   "sessies_nl": 64,
-   "gebruikers": 63,
+   "sessies": 98,
+   "sessies_nl": 68,
+   "gebruikers": 68,
    "aankopen": 3,
    "omzet": 62.98,
-   "conversie": 3.3,
-   "gsc_klikken": 31,
-   "gsc_vertoningen": 575,
-   "gsc_ctr": 5.39,
-   "gsc_positie": 8.4
+   "conversie": 3.06,
+   "gsc_klikken": 43,
+   "gsc_vertoningen": 735,
+   "gsc_ctr": 5.85,
+   "gsc_positie": 8.2
   }
  ],
  "kernwoorden": [
@@ -234,8 +234,8 @@
     },
     {
      "week": "2026-W41",
-     "positie": 6.2,
-     "vertoningen": 54
+     "positie": 6.0,
+     "vertoningen": 73
     }
    ]
   },
@@ -364,8 +364,8 @@
     },
     {
      "week": "2026-W41",
-     "positie": 9.7,
-     "vertoningen": 6
+     "positie": 9.4,
+     "vertoningen": 7
     }
    ]
   },

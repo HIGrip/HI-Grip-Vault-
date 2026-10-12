@@ -20,6 +20,8 @@ Format: `soort actie | methode | hoe (URL of commando) | laatst gebruikt JJJJ-MM
 - routine-inrichting (uitgezet, namen, tijden) | vault | `Routines/README.md` statustabel + `list_scheduled_tasks` (lokale taken staan uit); cloudtriggers staan op info@, niet via RemoteTrigger van dit account | 2026-09-25
 - compliance-administratie, outreach, besluiten van Lars, financieel plan (offertes, leningen), "Besluit:"-acties | geen | `handmatig`, niet opnieuw controleren | 2026-10-11
 - dashboard/CRM-prototype-project (v4, Next.js, blauwdruk, bronmap) | geen | niet in deze vault/repository, dus `niet te controleren` (methode vault) tenzij het specifiek over een vault-bestand gaat | 2026-10-11
+- thema-bestanden (liquid/json-snippets, FAQ/schema-inhoud) | shopify | `theme(id:"gid://shopify/OnlineStoreTheme/<id>"){ files(filenames:[...], first:20){ nodes{ filename body{ ... on OnlineStoreThemeFileBodyText{content} } } userErrors{filename code} } }`; `code: NOT_FOUND` = bestand bestaat niet. Max ~6 bestanden per call anders "exceeds maximum allowed tokens" (resultaat gaat dan naar een bestand in tool-results, lees dat met Bash/python). Live-theme-ID en testthema-ID staan in [[Technische Procedures]]/feitenbestand; op 2026-10-12 was het live-thema 201132507463 en het testthema 201133490503. | 2026-10-12
+- Shopify-orders/omzet voor vergelijkingen (niet het dashboardbestand) | shopify | `run-analytics-query`: `FROM sales SHOW orders, total_sales SINCE -28d UNTIL today` (alleen totalen, geen klantgegevens) | 2026-10-12
 
 ## Kan niet of lukt niet
 
@@ -31,3 +33,5 @@ Format: `JJJJ-MM-DD | bron | wat niet lukt | gevolg voor de controle`
 2026-09-25 | vault | RemoteTrigger van het lokale account ziet de info@-routines niet (list = leeg) | routinestatus via README en lokale scheduled tasks
 2026-10-11 | vault | CONTROLE.json stond sinds 26-9 stil (geen run tussendoor); deze run heeft alle 88 toen nog open acties herchecked plus 93 nieuwe + 42 Besluit-acties plus 120 ontbrekende `uitvoerbaar`-beoordelingen in één keer verwerkt | eenmalige inhaalslag; vanaf nu weer dagelijks bij te houden
 2026-10-11 | vault | Geen `acties.py`-commando om een losse verweesde actie-id (bv. `2026-09-25-seo-audit#118b76a0`) uit `CONTROLE.json`/`UITVOERBAAR.json` te knippen | backlogpunt `#035b0bdd` blijft `open` tot het script die optie krijgt
+2026-10-12 | ga4 | PageSpeed Insights API blijft 429 (quotum, staat nog niet aan in higrip-analytics) | INP/CWV-acties: `open`, "niet te controleren"
+2026-10-12 | geen | Geen tool voor cookiebanner-/popupgedrag, mobiele rendering of accessibility-audit (JS/viewport nodig) | zulke acties: `open`, "niet te controleren"

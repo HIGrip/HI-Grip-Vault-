@@ -50,10 +50,10 @@ Het verschil met [[2026-10-08-seo-aeo-geo-aio-sxo-audit]]: dit keer zijn alle 10
 
 Open acties uit [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en [[2026-09-25-seo-audit]] gelden nog en staan niet opnieuw hieronder (rugby, demo-tekst, oprichtersaantal, blessureclaim in schema, `InStock`, Organization uitbreiden, titels en H1's, gids herschrijven, B2B-pagina's, meting AI-zichtbaarheid). Dit zijn alleen nieuwe punten uit deze run.
 
-- [ ] P1 · Het "vóór 22:00 uur… dezelfde dag verzonden"-antwoord uit het FAQPage-JSON-LD van `/` en `/en` halen en gelijktrekken met "binnen 1 werkdag verzonden"
+- [x] P1 · Het "vóór 22:00 uur… dezelfde dag verzonden"-antwoord uit het FAQPage-JSON-LD van `/` en `/en` halen en gelijktrekken met "binnen 1 werkdag verzonden"
 - [x] P1 · Op `/en/pages/gripsokken-voor-padel`, `-tennis` en `-voetbal` de zin "Ordered before 22:00, shipped the same business day" vervangen, en op `/en/products/performance-gripsokken-2-0-zwart` en `-wit` "€30" naar €35 zetten
 - [ ] P1 · De kapotte H1 "Gripsokken voor grip socks for padel" op de drie EN-sportpagina's herstellen
-- [ ] P1 · Het FAQ-antwoord "Zijn gripsokken wetenschappelijk bewezen?" herschrijven volgens de formuleringsregel (gripsokken in het algemeen, Apps et al. 2022, Friedl 2023 als gemengd bewijs) en "wetenschappelijk bewezen effectiviteit" uit de v1-productbeschrijving in het Product-schema halen
+- [x] P1 · Het FAQ-antwoord "Zijn gripsokken wetenschappelijk bewezen?" herschrijven volgens de formuleringsregel (gripsokken in het algemeen, Apps et al. 2022, Friedl 2023 als gemengd bewijs) en "wetenschappelijk bewezen effectiviteit" uit de v1-productbeschrijving in het Product-schema halen
 - [ ] P1 · Besluit: socialprofielen en KvK-nummer van de footer (Instagram, TikTok, LinkedIn, Trustpilot, KvK) in het feitenbestand vastleggen, zodat ze als `sameAs` en `contactPoint` in het Organization-schema mogen
 - [ ] P1 · GA4-aankopen (5, €118,51 over 28 dagen) naast Shopify-orders van dezelfde periode leggen en pas dan conversieconclusies op GA4 baseren
 - [ ] P1 · Het merkcijfer 4,6 ★ met bron Trustpilot en link tonen op de homepage en de 2.0-productpagina; nu staat daar "★★★★½" zonder cijfer of bron

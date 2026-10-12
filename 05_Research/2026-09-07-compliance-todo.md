@@ -602,7 +602,7 @@ Prioriteit hieronder volgt de legenda van de bron: 🔴 rechtsrisico loopt nu al
 - [ ] P2 · §4.1 Footer en contactpagina aanvullen: vestigingsadres, KvK-nummer, btw-id
 - [ ] P2 · §4.2 Herroepingsrecht nalopen: retourpagina, modelformulier, terugbetaling incl. verzendkosten, bestelknop-tekst
 - [ ] P2 · §4.3 Garantieteksten herschrijven — geen "1 jaar garantie" naast de wettelijke conformiteit
-- [ ] P2 · §4.4 ODR-link uit footer en voorwaarden halen, vervangen door eigen klachtenprocedure
+- [x] P2 · §4.4 ODR-link uit footer en voorwaarden halen, vervangen door eigen klachtenprocedure
 - [ ] P3 · §4.5 Keurmerk overwegen: Thuiswinkel Waarborg of WebwinkelKeur
 - [ ] P1 · §5.1 Bewijsdossier gripclaims: bron van "95%" en "1.17" achterhalen, zo nodig labtest, goedgekeurde formulering vastleggen, "1.500+ sporters" onderbouwen
 - [ ] P1 · §5.2 Van-prijzen toetsen aan de 30-dagenregel en een prijslogboek aanleggen

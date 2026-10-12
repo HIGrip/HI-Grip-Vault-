@@ -35,9 +35,9 @@ Losse review op verzoek: hoe de vault gekoppeld is, wat dubbel staat, wat ontbre
 - [x] P2 · Besluit: adviesprijs retail €17,99 naast webshopprijs €17,95 — bewust of gelijktrekken
 - [ ] P2 · Besluit: B2B-minimum 5 paar (Evaluatiecriteria) tegenover prijsstaffel vanaf 6 stuks — één ondergrens kiezen
 - [x] P2 · Rugby-sportgids schrijven: rugby is beachhead maar heeft geen website-content
-- [ ] P2 · Skills naar `.claude/skills/` in de vault zetten zodat cloudroutines ze kunnen gebruiken
-- [ ] P3 · Dubbele bestandsnamen hernoemen (14× identiteit.md, 11× _Werkplek.md, routine- en geheugenbestanden met gelijke naam) en agentdefinities meenemen
-- [ ] P3 · Oude claude/*-branches op origin opruimen (7 stuks, inhoud staat al in de vault of is off-brand)
+- [x] P2 · Skills naar `.claude/skills/` in de vault zetten zodat cloudroutines ze kunnen gebruiken
+- [x] P3 · Dubbele bestandsnamen hernoemen (14× identiteit.md, 11× _Werkplek.md, routine- en geheugenbestanden met gelijke naam) en agentdefinities meenemen
+- [x] P3 · Oude claude/*-branches op origin opruimen (7 stuks, inhoud staat al in de vault of is off-brand)
 - [x] P3 · Onderzoek met vakkennis koppelen: een automatische sectie "Gerelateerd onderzoek" per kennisnotitie in vault_nav.py
 
 ## Bevindingen

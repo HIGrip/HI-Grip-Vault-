@@ -71,7 +71,7 @@ De voorwaarden "alleen ongeopend" en "25% herbevoorradingskosten" lijken te bots
 - [ ] P2 · Maatgids nalopen, [CHECK]'s oplossen, publiceren en linken vanaf de maatkeuze op de productpagina
 - [x] P2 · SEO-titels en meta-omschrijvingen voor Performance Gripsokken 2.0 Zwart/Wit en collectie Gripsokken overnemen uit het voorstel in het logboek
 - [ ] P2 · Productdata aanvullen: producttype, SKU's en GTIN/EAN
-- [ ] P3 · Alt-teksten productfoto's per foto beschrijvend maken
+- [x] P3 · Alt-teksten productfoto's per foto beschrijvend maken
 - [ ] P3 · u-vorm vervangen door je-vorm op zakelijk, FAQ en blogs; typfout "VETROUWD DOOR" herstellen
 
 ## Bronnen

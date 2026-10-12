@@ -65,7 +65,9 @@ Hoofdagents (04_Agent_Infrastructuur)
 | Vakkennis | de bronnotities per vakgebied | `01_Content_Agent/`, `02_Partnership_Agent/`, `03_Website_Agent/` |
 | Merk en strategie | Brand Core, leidend sinds 30-9-2026 (Canva *MERK & STRATEGIE*) | `00_Brand_Core/` |
 
-**De uitvoerende laag** staat in de setup-repo `HIGrip/HI-Grip-claude-setup` (`agents/`, `commands/`, `skills/`). Een `agents/*.md` bevat alleen de technische frontmatter en de instructie om het eigen vault-bestand te lezen. De inhoud staat alleen in de vault.
+**Waar de agents draaien (besloten door Lars, 12-10-2026):** alle agents worden gebouwd in **Hermes**. Een paar agents roepen Claude aan om iets echt te bouwen, zoals een nieuwe websitesectie (Design Agent). Schrijfwerk (captions, sitecopy, mails) doet Team HÏ Grip waarschijnlijk via de chat met Claude, omdat dat menselijker wordt; dat is nog niet definitief.
+
+**De Claude Code-laag** staat in de setup-repo `HIGrip/HI-Grip-claude-setup` (`agents/`, `commands/`, `skills/`). Een `agents/*.md` bevat alleen de technische frontmatter en de instructie om het eigen vault-bestand te lezen. De inhoud staat alleen in de vault.
 
 ## Sub-agents per hoofdagent
 

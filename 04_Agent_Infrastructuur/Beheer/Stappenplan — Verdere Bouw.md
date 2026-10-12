@@ -123,7 +123,8 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 - [ ] Soorten voorstellen in *Wacht op akkoord* uitbreiden: website-wijziging, beeld of video, QA-escalatie, wijziging AI-structuur.
 - [ ] Rechten per persoon: AI-structuur Lars en Timo, live zetten Lars.
 - [ ] Plek voor beeld en video van de Content Maker bij een post.
-- [ ] Afspreken welke agents via Hermes draaien en welke als Claude Code-sub-agent.
+- [x] Afspreken welke agents via Hermes draaien: **alle agents in Hermes** (Lars, 12-10). Een paar roepen Claude aan om echt te bouwen (bijvoorbeeld websitesecties); schrijfwerk waarschijnlijk via de chat.
+- [ ] Per agent vastleggen of hij Claude aanroept om te bouwen, en welk schrijfwerk via de chat gaat in plaats van via een agent.
 - Volledige lijst en uitleg: [[Agents en het dashboard]].
 
 ### Later

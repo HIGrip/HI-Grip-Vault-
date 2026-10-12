@@ -1068,11 +1068,12 @@
    "uitkomst": "open"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#3055da63": {
-   "bewijs": "repositorynaam klopt al (HIGrip/HI-Grip-Vault-), maar de statusbeschrijving bij Actiecontrole is verouderd (zegt nog 'zonder repository'/'geen geslaagde run sinds 26-09' terwijl deze routine nu wel draait)",
-   "controle": "Routines/README.md op repositorynaam en controlepunt per routine controleren",
+   "bewijs": "README.md 12-10 (commit 7057b8e): repository HIGrip/HI-Grip-Vault- gekoppeld, Actiecontrole ✅ met eerste geslaagde run 11-10 en 12-10, tabel 'gekoppelde bron per routine' aanwezig (Actiecontrole/Uitvoerder/SEO-test/Denzel → Shopify).",
+   "controle": "Staan de repositorynaam en per routine de gekoppelde bron in Routines/README.md, en is de Actiecontrole-status actueel?",
    "gecontroleerd": "2026-10-12",
    "methode": "vault",
-   "uitkomst": "open"
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#47525a8b": {
    "bewijs": "deze routine draait nu zelf met git push-toegang tot https://github.com/HIGrip/HI-Grip-Vault- (origin), dus de repository is gekoppeld; Routines/README.md is op dit punt nog niet bijgewerkt",

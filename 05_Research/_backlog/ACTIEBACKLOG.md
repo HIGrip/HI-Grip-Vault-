@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 12 oktober 2026 (seo-conversietest)
-Open: 21 · Afgerond: 4 (2 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 4 dubbel, zie dashboard)
+Laatst bijgewerkt: 12 oktober 2026 (Lars via Claude)
+Open: 21 · Afgerond: 4 (3 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -27,7 +27,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Eén bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de "ongeopend"-eis uit het retourbeleid halen, verzendkosten/-drempel op `/pages/verzendbeleid` zetten, en de 22:00-metatekst overal vervangen.
 **Gevonden op:** 28 september 2026 (regressiecheck)
 
-### [ ] [regressie] /collections/frontpage heeft geen meta description (nieuw 28 sep 2026)
+### [x] [regressie] /collections/frontpage heeft geen meta description (nieuw 28 sep 2026)
+**Bevestigd:** 11 oktober 2026 door Lars (via Claude) — /collections/frontpage geeft 404 en staat niet meer in de sitemap (crawl 11-10)
 **Waarom:** 0 `<meta name="description">`-tags gevonden. Mogelijk dezelfde oorzaak als het al openstaande punt over `/collections/all` hieronder, maar een andere, nog niet eerder gemelde URL.
 **Waar:** `/collections/frontpage`
 **Wat:** Beschrijving toevoegen via Shopify admin → SEO-instellingen van de collectiepagina.
@@ -161,6 +162,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Shopify admin → Apps (Bundler: nog geïnstalleerd?) en Online Store → Thema aanpassen → App embeds; Trustpilot-app-instellingen.
 **Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.
 **Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.
+**Update 11 okt 2026 (SEO Health Score, [[2026-10-11-seo-audit-weekdelta]]):** nog steeds open. Op mobiel formaat laden de homepage en de 2.0-productpagina nog `bundler.nice-team.net` en `cdn-bundler.nice-team.net`, naast drie Trustpilot-domeinen en Ecomsend; in totaal 273–302 requests per pagina.
 **Inspanning:** 1 uur
 
 ### [ ] 19. [search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven (nieuw 30 sep 2026)

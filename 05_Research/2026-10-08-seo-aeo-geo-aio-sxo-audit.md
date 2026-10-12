@@ -37,7 +37,7 @@ Losse audit van 8 oktober 2026 langs vijf lenzen: **SEO** (vindbaarheid in Googl
 
 Open acties uit [[2026-09-25-seo-audit]] (rugby aanmaken, demo-tekst, `/blogs/intern`, Organization.url, `http://schema.org`, retourbeleid gelijktrekken) gelden nog en staan niet opnieuw hieronder. Dit zijn alleen nieuwe punten.
 
-- [ ] P1 · Besluit: het aantal oprichters vastleggen (het feitenbestand zegt drie, /pages/over-ons zegt "de vier founders", /pages/ons-verhaal toont vier namen en de titel "4 sporters") en alle pagina's en het Organization-schema daarop gelijktrekken
+- [x] P1 · Besluit: het aantal oprichters vastleggen (het feitenbestand zegt drie, /pages/over-ons zegt "de vier founders", /pages/ons-verhaal toont vier namen en de titel "4 sporters") en alle pagina's en het Organization-schema daarop gelijktrekken
 - [x] P1 · De claim "minder risico op blessures" verwijderen uit de FAQPage-antwoorden van de homepage en uit de tekst op de productpagina's en /pages/over-ons: het onderzoek meet wrijving, geen blessures, en wat in schema staat wordt letterlijk door AI-systemen overgenomen
 - [ ] P1 · Besluit: alle drie de varianten van 2.0 melden `InStock` in het Product-schema, terwijl het feitenbestand op 1-10 voorraad 0 met negatieve aantallen noemt; vaststellen of doorverkopen bij voorraad 0 bewust aanstaat en zo niet de beschikbaarheid corrigeren
 - [ ] P2 · Rugby: tot de pagina live staat de belofte weghalen uit de titel van /collections/gripsokken, de FAQ ("voetbal, tennis, padel en rugby") en /pages/ontdek-jouw-sport, of de pagina vandaag publiceren (nu 13 dagen een belofte zonder pagina)
@@ -101,3 +101,5 @@ Na ±26 verzoeken blokkeerde Shopify's botbescherming mijn verbinding (HTTP 403 
 - Vault: [[Feiten & Actuele Staat]], [[2026-09-25-seo-audit]], [[2026-10-05-regressiecheck]], `05_Research/_backlog/ACTIEBACKLOG.md`
 
 ## Aantekeningen
+
+- **Lars via Claude · 2026-10-11 17:30** — Afgevinkt: "Besluit: het aantal oprichters vastleggen (het feitenbestand zegt drie…" Bewijs: besluit Lars 11-10: drie founders; /pages/over-ons en /pages/ons-verhaal zeggen nu drie (crawl 11-10).

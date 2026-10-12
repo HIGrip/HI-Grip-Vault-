@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De techniek van higrip.nl is in orde (alle 105 sitemap-URL's gecontroleerd, canonical en hreflang overal goed), maar de entiteit voor AI-systemen is kaal en verkeerde claims staan nog in schema en op EN-pagina's. Zoekverkeer groeit wel: Search Console toont +90% klikken, vooral op merktermen, en de GA4-aankooptracking werkt weer."
-gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-09-25-seo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby, 2026-10-11-seo-audit-weekdelta]
+gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-09-25-seo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby, 2026-10-11-seo-audit-weekdelta, 2026-10-11-concurrentie-seo-per-merk]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -132,3 +132,5 @@ PageSpeed Insights gaf op alle drie de geteste URL's 429 (daglimiet), dus er is 
 - Vault: [[Feiten & Actuele Staat]], [[2026-10-08-seo-aeo-geo-aio-sxo-audit]], [[2026-09-25-seo-audit]], [[2026-10-08-search-console]], `05_Research/_backlog/ACTIEBACKLOG.md`
 
 ## Aantekeningen
+
+- **Lars via Claude · 2026-10-11 17:30** — Afgevinkt: "Het "vóór 22:00 uur… dezelfde dag verzonden"-antwoord uit het FAQPage-…" Bewijs: geen 22:00 meer in het FAQPage-schema van / en /en, en ook niet in de tekst van de NL- en EN-pagina's (crawl 11-10).

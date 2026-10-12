@@ -81,6 +81,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 - **Nieuwsbrief:** elke drie weken een waardevolle mail naar alle adressen (automatiseringsmails staan al).
 - **Hoofdkeyword:** "gripsokken" (één woord). Long-tails: "waarom glijdt mijn voet in mijn padelschoen", "tapedesign alternatief", "wat zijn gripsokken".
 - **Concurrenten:** FitSockr, Tapedesign, Optigrip, Proskary. Op "gripsokken kopen" ook Decathlon, Match Fit Shop, Stanno, 11teamsports, Voetbalshop en bol.com.
+  - Stand 11-10-2026: online zijn alleen **FitSockr** (fitsockr.nl) en **Proskary** (proskary.nl) actief met een eigen site. **Tapedesign** heeft geen eigen NL-site (tapedesign.nl staat te koop) en verkoopt via dealer grip2perform.nl. **Optigrip** verkoopt alleen via bol.com (optigrip.nl bestaat niet). **Stepzz** is een Australisch merk (stepzz.co) zonder Nederlandse site. Bron: [[2026-10-11-concurrentie-seo-per-merk]].
 - **Productnamen:** in communicatie PERFORMANCE GRIP SOCKS (1.0) en PERFORMANCE GRIP SOCKS 2.0; op higrip.nl, marketplaces en feeds PERFORMANCE GRIPSOKKEN en PERFORMANCE GRIPSOKKEN 2.0. Zie [[Brand Voice & Tone of Voice]].
 - **Binnenkort:** Performance Tubes (voetloze kousen) en Performance Ski Socks · ALPINE PRO (skisokken; op de site: Performance Skisokken). Mag als "binnenkort" genoemd worden, zoals in de pitch. **Geen lanceringsdatum en geen productclaims** noemen tot die hier staan.
 
@@ -95,6 +96,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-10-11 — Concurrentenlijst aangevuld met de online stand per merk (live gecontroleerd): Optigrip alleen via bol.com, Tapedesign via grip2perform.nl, Stepzz zonder NL-site. Zie [[2026-10-11-concurrentie-seo-per-merk]].
 - 2026-10-11 — Besluiten Lars: aantal sporters wordt 3500+ (tijdlijn over-ons blijft 3000+); het feitenbestand houdt geen voorraad meer bij (voorraad altijd live in Shopify bekijken).
 - 2026-10-02 — Besluiten Lars: reviewscore 4,6 (Trustpilot) is het merkcijfer; adviesprijs retail 2.0 = €17,95, gelijk aan de webshop.
 - 2026-10-02 — Vault-review: thema-ID alleen nog in [[Technische Procedures]]; live staat verzending/retour bijgewerkt naar de regressiecheck van 28-9; claimbronnen gelijkgetrokken met [[Performance Grip Socks 2.0]] §3 en formuleringsregel toegevoegd; beide reviewcijfers met bron (keuze `[CHECK]` bij Lars).
@@ -109,12 +111,12 @@ Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bij
 
 - [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
 - [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
+- [[2026-10-11-concurrentie-seo-per-merk]] — SEO-concurrentievergelijking per merk — 11 oktober 2026
 - [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO op 8 oktober
 - [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO, nieuwe run 8 oktober (met Search Console en GA4)
 - [[2026-10-07-shoppagina-keuzepagina]] — Shoppagina higrip.nl — keuzepagina 1.0 vs 2.0, SEO-keuzes en concept
 - [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
 - [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- … en 2 oudere (zie [[Waar staat wat]])
+- … en 3 oudere (zie [[Waar staat wat]])
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

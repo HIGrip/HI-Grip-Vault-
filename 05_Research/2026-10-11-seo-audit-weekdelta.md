@@ -8,8 +8,8 @@ routine: ""
 categorie: SEO
 status: nieuw
 prioriteit: P1
-samenvatting: "Zoekverkeer is in een week sterk gegroeid (Search Console 61 klikken tegen 18, GA4 organisch 70 sessies tegen 32, 4 key events tegen 0), maar dat komt vooral door merkzoekopdrachten: op de site zelf is van de open punten uit de audits van 8-10 alleen de oprichterstekst op /pages/over-ons aangepast. De vertrouwens- en claimfouten (22:00-belofte en blessureclaim in schema, demo-tekst, tegenstrijdig retourbeleid) staan nog live, en er is een nieuwe tegenspraak bij gekomen: 3500+ sporters op bijna elke pagina tegen 3000+ in het feitenbestand."
-gerelateerd: [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-25-seo-audit, 2026-10-12-regressiecheck, 2026-10-12-seo-conversietest-run-4]
+samenvatting: "Zoekverkeer is in een week sterk gegroeid (Search Console 61 klikken tegen 18, GA4 organisch 70 sessies tegen 32, 4 key events tegen 0), maar dat komt vooral door merkzoekopdrachten: op de site zelf is van de open punten uit de audits van 8-10 alleen de oprichterstekst op /pages/over-ons aangepast. De vertrouwens- en claimfouten (22:00-belofte en blessureclaim in schema, demo-tekst, tegenstrijdig retourbeleid) staan nog live, en er is een nieuwe tegenspraak bij gekomen: 3500+ sporters op bijna elke pagina tegen 3000+ in het feitenbestand. Na de live-fixes van 11-10 komt de SEO Health Score uit op 58/100, tegen 54 op 25-9 met dezelfde methode."
+gerelateerd: [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-25-seo-audit, 2026-10-12-regressiecheck, 2026-10-12-seo-conversietest-run-4, 2026-10-11-concurrentie-seo-per-merk]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -22,7 +22,7 @@ deadline: ""
 
 Losse audit op vraag van Lars: is higrip.nl de afgelopen week beter geworden, en wat moet er gebeuren, op volgorde? Referentiepunt zijn de twee audits van 8 oktober ([[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]]) en de regressiecheck van 5 oktober ([[2026-10-05-regressiecheck]]). Alles is alleen gelezen: 43 URL's live opgehaald (NL, `/en/`, beleid, blogs, oude URL's), plus Search Console en GA4 via `google_data.py`, week op week.
 
-**Antwoord: verkeer ja, site nee.** De cijfers gaan duidelijk vooruit, maar dat komt vooral van merkzoekopdrachten ("higrip", "hi grip", "highgrip" zijn samen minstens 27 van de 61 klikken) en van minder botverkeer uit de VS. Op de site is in een week bijna niets veranderd: van de ruim twintig nieuwe punten van 8-10 is er één deels opgelost (`/pages/over-ons` zegt nu "Drie founders"). Er is geen nieuwe totaalscore berekend, omdat die niet te vergelijken zou zijn met de scores van 8-10.
+**Antwoord: verkeer ja, site nee.** De cijfers gaan duidelijk vooruit, maar dat komt vooral van merkzoekopdrachten ("higrip", "hi grip", "highgrip" zijn samen minstens 27 van de 61 klikken) en van minder botverkeer uit de VS. Op de site is in een week bijna niets veranderd: van de ruim twintig nieuwe punten van 8-10 is er één deels opgelost (`/pages/over-ons` zegt nu "Drie founders"). Later op 11-10, na de live-fixes, is alsnog een totaalscore berekend: **SEO Health Score 58/100**. Die is gemaakt met dezelfde zeven categorieën en wegingen als de 54/100 van 25-9, en is dus daarmee te vergelijken. Met de lensscores van 8-10 (62 voor "SEO technisch en on-page") is hij niet te vergelijken. Zie "SEO Health Score — 58/100" hieronder.
 
 ## Kerncijfers
 
@@ -42,6 +42,7 @@ Alle open acties uit [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run
 - [ ] P1 · Collectie-USP "3000+ sporters gingen je voor" naar 3500+ in de thema-editor (live `collection.json` is via de CLI geweigerd)
 - [ ] P2 · EN-H1 van de drie sportpagina's herstellen: titelvelden in de sport-hero invullen en "Grip socks for" als EN-vertaling registreren
 - [ ] P2 · Wekelijkse check op verouderde EN-vertalingen met feiten (tijden, bedragen, termijnen, aantallen) toevoegen aan de SEO-regressiecheck
+- [ ] P3 · /pages/ons-verhaal uitbouwen tot een echt oprichtersverhaal: sinds de demotekst weg is staan er nog 85 woorden (waarom gripsokken, wat de 2.0 anders maakt, links naar /pages/over-ons en de 2.0)
 - [x] P1 · De routine Actiecontrole nakijken: CONTROLE.json staat sinds 26-9 stil, dus opgeloste punten (o.a. /en/-H1 en /en/-title in de backlog) worden niet bevestigd of afgevinkt
 
 ## Bevindingen
@@ -52,12 +53,12 @@ Volgorde op impact × moeite. Bij elk punt de bron van de bestaande actie; nieuw
 
 **P1 — deze week (kleine tekst- en themawijzigingen, groot vertrouwens- en claimrisico)**
 
-1. **22:00-belofte overal weg.** Staat nog in het FAQPage-schema van `/` en `/en` ("vóór 22:00 uur … dezelfde dag verzonden"), op de drie EN-sportpagina's, in de EN-productpagina's ("before 10 PM … same day") en in de EN-homepage-meta ("Order before 10:00 PM, shipped today"). Op de EN-productpagina's staat ook nog gratis verzending vanaf €30 in plaats van €35. Open sinds 21-9. *Bron: 8-10 nieuwe run, backlog 2026-09-21-weekoverzicht.*
+1. ~~**22:00-belofte overal weg.**~~ **Opgelost op 11-10** (gecontroleerd met een nieuwe crawl: 22:00, "10 PM" en €30 staan niet meer in het schema en de tekst van NL en EN). Oorspronkelijke tekst: staat nog in het FAQPage-schema van `/` en `/en` ("vóór 22:00 uur … dezelfde dag verzonden"), op de drie EN-sportpagina's, in de EN-productpagina's ("before 10 PM … same day") en in de EN-homepage-meta ("Order before 10:00 PM, shipped today"). Op de EN-productpagina's staat ook nog gratis verzending vanaf €30 in plaats van €35. Open sinds 21-9. *Bron: 8-10 nieuwe run, backlog 2026-09-21-weekoverzicht.*
 2. **Blessureclaim en "wetenschappelijk bewezen" uit schema en tekst.** "Minder risico op blessures" staat nog in het FAQPage-schema van `/` en `/en`, op de productpagina's, op `/pages/ontdek-jouw-sport` en in de EN-homepage-meta ("Fewer injuries"). "Gripsokken zijn wetenschappelijk bewezen effectiever" staat in het schema en op de productpagina's. Herschrijven volgens de formuleringsregel in [[Feiten & Actuele Staat]]. *Bron: beide audits 8-10.*
-3. **Demo-tekst en oprichters op `/pages/ons-verhaal`.** De Shopify-demotekst ("We kunnen voor bepaalde artikelen geen retouren accepteren", "overtreft deze kenmerkende bestseller alle verwachtingen") en de kop "4 SPORTERS" staan er nog. Open sinds 25-9. *Bron: 2026-09-25-seo-audit, 8-10.*
+3. ~~**Demo-tekst en oprichters op `/pages/ons-verhaal`.**~~ **Opgelost op 11-10** (gecontroleerd: drie founders met naam en quote, demotekst weg; de pagina is nu wel dun, zie de nieuwe P3-actie). Oorspronkelijke tekst: de Shopify-demotekst ("We kunnen voor bepaalde artikelen geen retouren accepteren", "overtreft deze kenmerkende bestseller alle verwachtingen") en de kop "4 SPORTERS" staan er nog. Open sinds 25-9. *Bron: 2026-09-25-seo-audit, 8-10.*
 4. **Sporters-claim gelijktrekken (nieuw).** Zie de actie hierboven: "3500+" staat op bijna elke NL-pagina, "3000+" in het feitenbestand.
 5. **Beleid gelijktrekken (juridisch).** `/policies/refund-policy`: 14 dagen, "ongeopend" en 25%. `/pages/retourbeleid`: "ongeopend" en 25%. `/policies/terms-of-service`: €4,25 en 14 dagen. `/policies/shipping-policy`: "vóór 16:00". De vastgestelde waarden staan in [[Feiten & Actuele Staat]]. Ongewijzigd. *Bron: backlog "Nieuwe verzend-/retour-/betalingspagina's".*
-6. **Kapotte H1 op de drie EN-sportpagina's.** Nog steeds "Gripsokken voor grip socks for padel" (en ook voor tennis en football). *Bron: 8-10 nieuwe run.*
+6. **Kapotte H1 op de drie EN-sportpagina's.** Ook na de live-fixes nog kapot (gecontroleerd 11-10, 17:30). Nog steeds "Gripsokken voor grip socks for padel" (en ook voor tennis en football). *Bron: 8-10 nieuwe run.*
 7. **Rugby.** `/pages/gripsokken-voor-rugby` geeft nog 404, terwijl de titel van `/collections/gripsokken` ("voor voetbal, tennis & rugby"), de FAQ en `/pages/ontdek-jouw-sport` rugby beloven. Publiceren of de belofte weghalen. *Bron: 8-10.*
 8. **`InStock` bij voorraad 0.** Alle zes de 2.0-varianten staan op `available: true` en `InStock` in het schema. *Bron: besluit 8-10.*
 
@@ -71,6 +72,23 @@ Volgorde op impact × moeite. Bij elk punt de bron van de bestaande actie; nieuw
 14. **Koppen en titels.** Geen H1 op `/pages/retail`, `/pages/pilates`, `/pages/retourbeleid` en `/pages/terugbetalingsbeleid` (die laatste heet nog "Betalingsbeleid"). Drie H1's op `/pages/verzendbeleid`. Korte titels op Over Ons, Retail, Pilates, Contact, Zakelijk en Clubwear. *Bron: 8-10.*
 15. **Trustpilot 4,6 tonen.** Op de homepage staat geen cijfer en geen bron. *Bron: 8-10.*
 16. **PageSpeed meten.** Het openbare quotum gaf opnieuw 429, en met de servicesleutel kwam 403 (API staat uit in het project). Er is dus nog steeds geen LCP-, INP- of CLS-meting. *Bron: 8-10.*
+
+### SEO Health Score — 58/100 (berekend 11-10, na de live-fixes)
+
+Methode: de vaste zeven categorieën en wegingen van claude-seo, dezelfde als in [[2026-09-25-seo-audit]] (54/100). Basis: een nieuwe crawl van alle 52 NL-URL's uit de sitemap op 11-10 (alle 200), plus de meting in deze notitie. Het is een eigen beoordeling binnen deze sessie, niet extern gevalideerd.
+
+| Categorie | Gewicht | 11-10 | 25-9 | Waarom |
+|---|---|---|---|---|
+| Technical SEO | 22% | 80 | 78 | Alle 52 URL's geven 200, de canonical verwijst overal naar de pagina zelf en hreflang nl/en/x-default staat overal. Min: rugby-404 (wel gelinkt), `/blogs/intern` (1 woord) en `/pages/collection` in de sitemap, redirect van de oude URL in 2 stappen, `http://schema.org` |
+| Content Quality | 23% | 52 | 47 | Plus: sportpagina's 629–652 woorden, demotekst en tegenstrijdig retourbeleid weg. Min: dunne pagina's (`/pages/collection` 37 woorden, contact 46, ons-verhaal 85, retail 95, pilates 101, clubwear 110), blog "Wat zijn gripsokken?" 340 woorden, sportvoedingsblog 45 woorden. Ook min: blessureclaim en "wetenschappelijk bewezen" nog in tekst en schema, en 3000+ naast 3500+ op over-ons en de collectie |
+| On-Page SEO | 20% | 50 | 45 | Plus: sport- en productpagina's met een goede title en H1. Min: 21 titels onder 30 tekens (bijna alle /pages/ en de blogoverzichten), geen H1 op 4 pagina's (terugbetalingsbeleid, retourbeleid, retail, pilates), drie H1's op verzend- en privacybeleid, collectie-H1 "Kies je gripsok." zonder zoekwoord. Geen enkele van de 24 blogs linkt naar een product- of sportpagina |
+| Schema | 10% | 55 | 52 | Plus: 22:00 weg uit het FAQ-schema, Breadcrumb overal, Article met auteur, geen nep-`aggregateRating`. Min: blessureclaim en "wetenschappelijk bewezen" in het FAQ- en Product-schema, kale Organization zonder `sameAs`, geen `gtin`/`shippingDetails`/`hasMerchantReturnPolicy`, `InStock` bij voorraad 0 |
+| Performance | 10% | 45 | 35 | Indicatief: er is nog steeds geen CWV-meting, want PageSpeed geeft 429/403 en LCP was in de browser niet meetbaar. Labmeting op mobiel formaat: 273–302 requests, 790–940 kB, homepage geladen in 0,65 s en productpagina in 2,0 s (warme cache). De HTML is 348–542 kB met 107–122 scripts, en de Bundler-restanten (`nice-team.net`) laden nog |
+| AI Search Readiness | 10% | 52 | 60 | AI-bots zijn toegelaten, sportpagina's geven eerst het antwoord en er is een EN-versie. Min: `llms.txt` is de Shopify-standaard, Organization zonder `sameAs` of KvK, en claims in het schema wijken af van de formuleringsregel. Lager dan 25-9 omdat de GEO-meting van 8-10 (38) de zwakke entiteit liet zien |
+| Images | 5% | 60 | 50 | Per pagina meestal 1 afbeelding zonder alt; uitschieters zijn de homepage (4 van 25) en over-ons (5 van 20) |
+| **Totaal** | | **58** | **54** | |
+
+**Wat de score het snelst omhoog trekt:** de blessure- en bewijsclaim uit het schema en de tekst halen, en de 21 korte titels en zes ontbrekende of dubbele H1's rechtzetten. Daarna een link vanuit de 24 blogs naar een sport- of productpagina, en Organization met `sameAs` en `https`. Samen zijn die goed voor ongeveer +6 tot +8 (content, on-page, schema en AI). Al deze punten staan al in de prioriteitenlijst hierboven.
 
 ### Uitgevoerd op 11-10 (besluit Lars) en nieuwe meting
 

@@ -87,11 +87,12 @@
    "uitkomst": "handmatig"
   },
   "2026-09-04-werkdossier-stand-van-zaken#b7ef376e": {
-   "bewijs": "/pages/collection is nog een losse live pagina (200, titel 'HÏ Grip | Shop gripsokken'), geen 301 naar de hub en niet duidelijk ombouwd",
-   "controle": "/pages/collection op redirect of echte shoppagina controleren",
+   "bewijs": "C:/Program Files/Git/pages/collection 301 naar de shop zit in de redirectactie van 25-9.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-25-seo-audit#6d7750aa",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-09-04-werkdossier-stand-van-zaken#b83b8e37": {
    "bewijs": "niet te controleren: popupgedrag is alleen zichtbaar na JavaScript-rendering, geen browsertool beschikbaar",
@@ -108,11 +109,12 @@
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#cbad707e": {
-   "bewijs": "productpagina toont nog '4,5' in de testimonials-sectie",
-   "controle": "testimonials-sectie op 4,5 naar 4,6 controleren",
+   "bewijs": "Testimonials 4,5 naar 4,6 valt onder het merkcijfer 4,6 met Trustpilot-bron op homepage en 2.0-productpagina.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7a1b993a",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-09-04-werkdossier-stand-van-zaken#dbe12b46": {
    "bewijs": "Shopify: collectie gripsokken productsCount = 3 (alle actieve producten); /collections/gripsokken toont ze.",
@@ -433,11 +435,12 @@
    "uitkomst": "handmatig"
   },
   "2026-09-15-seo-audit#7dda01c0": {
-   "bewijs": "homepage heeft nog 4 afbeeldingen met alt=\"\"; geen twitter:image-meta gevonden",
-   "controle": "lege alt-teksten op homepage-afbeeldingen en twitter:image controleren",
+   "bewijs": "De 12 lege homepage-alts vallen onder de 64 ontbrekende alt-teksten; twitter:image staat als aantekening bij 2026-09-25-seo-audit.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-25-seo-audit#d619f84b",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-09-15-seo-audit#864864f2": {
    "bewijs": "/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken en /blogs/hi-grip/waarom-hi-grip-gripsokken gebruiken nog 'u'/'uw' in de meta description",
@@ -641,11 +644,12 @@
    "uitkomst": "handmatig"
   },
   "2026-09-23-seo-conversietest-run-1#1b318f84": {
-   "bewijs": "typo is al gecorrigeerd naar 'VERTROUWD DOOR'; /pages/retail gebruikt al je-vorm, maar de blogs gebruiken in de meta description nog 'u/uw'",
-   "controle": "u-vorm en typo 'VETROUWD DOOR' controleren",
+   "bewijs": "Beide: u/uw naar je/jij in FAQ en blogs; de typfout VERTROUWD is al hersteld.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-15-seo-audit#864864f2",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-09-23-seo-conversietest-run-1#52494c22": {
    "bewijs": "GraphQL op 11-10: collectie gripsokken SEO title/description ingevuld ('Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip'); Performance Gripsokken 2.0 Zwart en Wit hebben nu beide een ingevulde seo.title ('Gripsokken 2.0 zwart/wit met compressie | HÏ Grip') en seo.description — was allemaal null op 26-9.",
@@ -832,11 +836,12 @@
    "uitkomst": "dubbel"
   },
   "2026-09-25-seo-audit#001be532": {
-   "bewijs": "concepttheme is bevestigd als 'AI website workspace 2.0' (gid 201133490503, UNPUBLISHED); niet te verifiëren of theme pull is gedraaid vóór het werk",
-   "controle": "concepttheme-ID bevestigen",
+   "bewijs": "Admin API themes 12-10: 'AI website workspace 2.0' = 201133490503 (UNPUBLISHED), live = 201132507463; beide op 12-10 met shopify theme pull opgehaald (zie 2026-10-12-werkthema-vs-live).",
+   "controle": "Is het concepttheme-ID bevestigd en is ai-workspace-2.0 vers gepulld?",
    "gecontroleerd": "2026-10-12",
    "methode": "shopify",
-   "uitkomst": "open"
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-09-25-seo-audit#0ca90574": {
    "bewijs": "cluster-plan.json bestaat in 03_Website_Agent/Analyse/SEO-audit 2026-09-25/findings/; hoofdgids 'wat zijn gripsokken' is nog niet merkbaar herschreven naar 1200+ woorden",
@@ -911,11 +916,12 @@
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#71f4fc5b": {
-   "bewijs": "rugby-sjabloon heeft 604 ruwe woord-tokens tegen 1100+ voor padel/voetbal/tennis; geen 'nat gras' of 'geen verbod'-tekst gevonden",
-   "controle": "woordaantal en inhoud van templates/page.sport-rugby.json vergelijken met de andere sportsjablonen",
+   "bewijs": "Rugbytekst 800+ woorden valt onder de rugbypagina afmaken en publiceren.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-21-beachhead-rugby#5a25b546",
    "gecontroleerd": "2026-10-12",
-   "methode": "shopify",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-09-25-seo-audit#78cb1b3e": {
    "bewijs": "niet te controleren: vereist mobiele/visuele rendering, geen tool hiervoor beschikbaar",
@@ -1098,11 +1104,12 @@
    "uitkomst": "handmatig"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#b4525640": {
-   "bewijs": "geen niet_doen-vlag gevonden voor 2026-09-04-werkdossier-stand-van-zaken#7a54ab83 of #f9369bdd in BEHEER.json",
-   "controle": "niet_doen-vlag voor de genoemde achterhaalde acties in BEHEER.json controleren",
+   "bewijs": "BEHEER.json 12-10: #7a54ab83, #f9369bdd en 2026-09-25-evaluatie-routines#5c41af01 staan op niet doen met reden (door lars).",
+   "controle": "Staan de drie genoemde achterhaalde acties op niet doen?",
    "gecontroleerd": "2026-10-12",
    "methode": "vault",
-   "uitkomst": "open"
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#bca6ece1": {
    "bewijs": "alle genoemde paren (bv. 2026-09-25-search-console#6ae3949f, #0323b05e, backlog#246c61d9, seo-audit#13130060, #f637edc0) staan al als dubbel of handmatig in CONTROLE.json, met het backlogpunt/hoofdpunt als doel",
@@ -1568,11 +1575,12 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-shoppagina-keuzepagina#b0ee097c": {
-   "bewijs": "niet diepgaand te verifiëren zonder de agentconfiguraties zelf te draaien; geen bewijs van een fix gevonden",
-   "controle": "identiteitspaden van de website-subagents controleren",
+   "bewijs": "Commit e77a414 (9-10): agents verwijzen naar 04_Agent_Infrastructuur/Website Agent/<Agent>/Identiteit <Agent>.md; alle drie bestanden bestaan (gecontroleerd 12-10).",
+   "controle": "Verwijzen de SEO-, Design- en Website Copy-agent naar een bestaand identiteitsbestand?",
    "gecontroleerd": "2026-10-12",
    "methode": "vault",
-   "uitkomst": "open"
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-10-07-shoppagina-keuzepagina#c641fd01": {
    "bewijs": "Besluit-actie: vereist een menselijke keuze, niet automatisch waar te nemen; staat nog open.",
@@ -1596,11 +1604,12 @@
    "uitkomst": "handmatig"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#0e6e49ee": {
-   "bewijs": "beide gecontroleerde blogtitels beginnen nog met 'HÏ Grip |' in plaats van het keyword vooraan; niet alle 130+ titels gecontroleerd",
-   "controle": "titellengte en 'HÏ Grip |'-prefix van blogtitels steekproefsgewijs controleren",
+   "bewijs": "Lange en 'HÏ Grip |'-titels herschrijven valt onder titels en meta site-breed zoekwoord-eerst.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-04-werkdossier-stand-van-zaken#ee82c67c",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#132b156f": {
    "bewijs": "GA4 (14 sep-11 okt) telt nog 117 sessies uit United States (engagement 6%) en 9 uit China, geen botfilter actief",
@@ -1618,11 +1627,12 @@
    "uitkomst": "gedaan"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#2b06cf9e": {
-   "bewijs": "/pages/gripsokken-voor-padel en /pages/over-ons wijzen Organization.url nog naar de pagina zelf (niet naar homepage) en gebruiken @context http://schema.org (niet https)",
-   "controle": "Organization.url en @context op sportpagina's en over-ons controleren",
+   "bewijs": "Organization.url = shop.url en https://schema.org zitten allebei in de schema-snippet-actie van 25-9.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-25-seo-audit#54738768",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#3fea034e": {
    "bewijs": "Zelfde doel (barcode/GTIN invullen) als backlog#6050edaa en 2026-09-23-seo-conversietest-run-1#aef03a4a.",
@@ -1657,11 +1667,12 @@
    "uitkomst": "gedaan"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#77cac544": {
-   "bewijs": "blogs hoe-zorg-ik en waarom-hi-grip hebben articleBody als losse hashtag ('#Verzorging', '#Voordelen') en lege description",
-   "controle": "Article-schema (articleBody/description) van blogs controleren",
+   "bewijs": "BlogPosting articleBody/description zit in de schema-snippet-actie van 25-9.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-25-seo-audit#54738768",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7a1b993a": {
    "bewijs": "productpagina toont nog alleen '★★★★½' zonder cijfer of Trustpilot-link; geen '4,6' decimaalwaarde gevonden op home of productpagina",
@@ -1836,18 +1847,20 @@
    "uitkomst": "handmatig"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#e49e578c": {
-   "bewijs": "titels zijn nog kort ('HÏ Grip | Over Ons', 'HÏ Grip | Retail' etc.); /pages/terugbetalingsbeleid heeft nog titel 'Betalingsbeleid | HÏ Grip' en geen meta description",
-   "controle": "titellengte van over-ons/retail/pilates/clubwear en meta van terugbetalingsbeleid controleren",
+   "bewijs": "Korte titels herschrijven valt onder titels en meta site-breed zoekwoord-eerst.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-04-werkdossier-stand-van-zaken#ee82c67c",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#ee5f3bab": {
-   "bewijs": "auteur is nu wel aanwezig (Timo Heijligers), maar dateModified = datePublished (15-12-2025, niet bijgewerkt), geen 'Apps et al.'-bronvermelding en geen links naar de vier sportpagina's gevonden",
-   "controle": "hoofdgids 'wat zijn gripsokken' op auteur, bron en sportpagina-links controleren",
+   "bewijs": "Beide: de hoofdgids 'Wat zijn gripsokken?' herschrijven tot 1200+ woorden; de eisen van 8-10 (antwoord-eerst, auteur, dateModified, bron) staan als aantekening bij 2026-09-25-seo-audit.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-09-25-seo-audit#0ca90574",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-11-omzetgroei-koersbepaling#081017d7": {
    "bewijs": "Besluit-actie: vereist een menselijke keuze, niet automatisch waar te nemen; staat nog open.",
@@ -1936,11 +1949,12 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#8aead8f5": {
-   "bewijs": "zelfde bevinding als 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#96357028: H1 is nog 'Gripsokken voor grip socks for padel/football/tennis' op alle drie EN-sportpagina's",
-   "controle": "EN-H1 van de drie sportpagina's herstellen",
+   "bewijs": "Beide gaan over de kapotte EN-H1 op de drie EN-sportpagina's.",
+   "controle": "Zelfde eindtoestand als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#96357028",
    "gecontroleerd": "2026-10-12",
-   "methode": "site",
-   "uitkomst": "open"
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "2026-10-11-seo-audit-weekdelta#a938ea37": {
    "bewijs": "refund-policy heeft nog 14 dagen/25%/ongeopend en terms-of-service nog €4,25 — het geplakte beleid staat nog niet live",

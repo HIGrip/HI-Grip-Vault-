@@ -1,5 +1,32 @@
 {
  "acties": {
+  "2026-09-04-werkdossier-stand-van-zaken#7a54ab83": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-12",
+    "door": "lars",
+    "reden": "Achterhaald: het feitenbestand zegt 'binnen 1 werkdag verzonden', niet 22:00. Het beleid loopt via 'Beleid plakken' (2026-10-11-seo-audit-weekdelta)."
+   },
+   "ts": "2026-10-12T13:20:10+02:00"
+  },
+  "2026-09-04-werkdossier-stand-van-zaken#f9369bdd": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-12",
+    "door": "lars",
+    "reden": "Achterhaald: vervangen door google_data.py, dat Search Console dagelijks ophaalt (_data/kpi.json)."
+   },
+   "ts": "2026-10-12T13:20:11+02:00"
+  },
+  "2026-09-25-evaluatie-routines#5c41af01": {
+   "door": "lars",
+   "niet_doen": {
+    "datum": "2026-10-12",
+    "door": "lars",
+    "reden": "Achterhaald: ACTIEBACKLOG.md is sinds 25-09 de ene gedeelde backlog voor alle routines (CLAUDE.md §7)."
+   },
+   "ts": "2026-10-12T13:20:22+02:00"
+  },
   "2026-09-28-weekoverzicht#2f883dca": {
    "door": "lars",
    "niet_doen": {

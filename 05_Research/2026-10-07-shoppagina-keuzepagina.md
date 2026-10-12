@@ -30,7 +30,7 @@ Opdracht van 7-10 (prompt uit het Denzel-kwaliteitsoverzicht): een nieuwe shoppa
 
 ## Acties
 
-- [ ] P1 · Besluit: welke 1.0-packprijs geldt (feitenbestand €41,95/€64,95, bundel-app €35,95/€54,95) en moet de pack-keuze weer zichtbaar worden op de 1.0-productpagina
+- [x] P1 · Besluit: welke 1.0-packprijs geldt (feitenbestand €41,95/€64,95, bundel-app €35,95/€54,95) en moet de pack-keuze weer zichtbaar worden op de 1.0-productpagina
 - [ ] P2 · Besluit: concept-shoppagina overnemen in het werkthema op /collections/gripsokken (H1 "Gripsokken. Kies je grip.", title en description uit het concept)
 - [ ] P2 · Oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1 uit de collectie gripsokken halen (ze staan als kaart-links op de live collectiepagina)
 - [x] P2 · Identiteitspaden van de website-subagents (SEO, Design, Website Copy) gelijktrekken met de map 04_Agent_Infrastructuur/Website Agent: alle drie vonden hun identiteit.md niet en de copy-agent stopte

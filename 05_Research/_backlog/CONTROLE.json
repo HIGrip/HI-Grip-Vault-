@@ -1591,11 +1591,12 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-shoppagina-keuzepagina#def2b0a4": {
-   "bewijs": "Besluit-actie: vereist een menselijke keuze, niet automatisch waar te nemen; staat nog open.",
-   "controle": "Is dit besluit genomen door Lars/het team?",
-   "gecontroleerd": "2026-10-11",
-   "methode": "geen",
-   "uitkomst": "handmatig"
+   "bewijs": "Besluit Lars 12-10: de live prijzen zijn de juiste (3-pack €35,95, 5-pack €54,95); de pack-keuze staat live op de 1.0-productpagina; vastgelegd in het feitenbestand.",
+   "controle": "Is besloten welke 1.0-packprijs geldt en of de pack-keuze zichtbaar is?",
+   "gecontroleerd": "2026-10-12",
+   "methode": "vault",
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-10-07-shoppagina-keuzepagina#ebf60886": {
    "bewijs": "Besluit-actie: vereist een menselijke keuze, niet automatisch waar te nemen; staat nog open.",

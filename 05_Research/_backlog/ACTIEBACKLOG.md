@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 12 oktober 2026 (actiecontrole)
+Laatst bijgewerkt: 12 oktober 2026 (growth-radar)
 Open: 21 · Afgerond: 4 (2 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 4 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -64,7 +64,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Hogere CTR op je belangrijkste zoekterm zonder dat je positie hoeft te stijgen.
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
 
-### [ ] 11. Controleer of trackingscripts nog vuren na de Checkout Extensibility-deadline (nieuw 17 sep 2026, aangevuld 25 sep 2026)
+### [ ] 11. Controleer of trackingscripts nog vuren na de Checkout Extensibility-deadline (nieuw 17 sep 2026, aangevuld 25 sep 2026, bijgewerkt 12 okt 2026)
+**Update 12 okt 2026 (growth-radar):** Shopify's eigen deprecation-documentatie bevestigt dat apps sinds 1 oktober 2026 geen script tags meer kunnen aanmaken of bijwerken (`scriptTagCreate`/`scriptTagUpdate` falen); bestaande tags blijven draaien en kunnen nog gelezen/verwijderd worden tot de storefront-injectie zelf stopt op 1 maart 2027 (bevestigt de eerder genoteerde einddatum van 24 sep, nu met een tussenstap). Voor higrip.nl betekent dit: als Trustpilot of de Bundler-restanten (zie update 24 sep) hun script tag-configuratie via de API proberen te verversen, faalt dat voortaan stil. Check daarom nu ook of die apps al op theme-app-extensions/web-pixels draaien, niet alleen of ze nog vuren.
 **Update 25 sep 2026 — begin hier:** In de live broncode staat de Google & YouTube-app-pixel (GA4 `G-MP0982HHKM` + Merchant Center `MC-8TZQW9T6Q7`, stuurt ook `purchase`) op `dataSharingState: optimized`. Sinds 13 jan 2026 mag Shopify in die stand de datadeling pauzeren als er dagen of weken geen signalen zijn. Dat kan de nul `purchase`-events verklaren. Stap 0: Instellingen → Klantgebeurtenissen → App-pixels → activity log van de Google-pixel bekijken (historie vanaf 3 juni 2026), dan Mode op **Always on** zetten. De tweede app-pixel (account `raqds3-tb`) staat ook op optimized: nagaan welke app dat is.
 **Waarom:** Shopify's harde deadline voor niet-Plus winkels om te migreren naar Checkout Extensibility was 26 augustus 2026. Wie toen niet gemigreerd was, kreeg een automatische upgrade waarbij het complete "Additional Scripts"-veld werd leeggetrokken — Google Ads-tracking, Meta pixel en GTM-containers stoppen dan zonder zichtbare storefront-fout. Dit hangt direct samen met het al openstaande punt hieronder dat GA4 `keyEvents = 0` toont op elk kanaal: het kan zijn dat niet alleen de key-event-instelling ontbreekt, maar dat het onderliggende trackingscript zelf al drie weken dood is.
 **Waar:** Shopify admin → Instellingen → Checkout (Additional Scripts-veld + eventuele checkout-tracking-apps)

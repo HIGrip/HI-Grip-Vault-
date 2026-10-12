@@ -12,7 +12,9 @@ bijgewerkt: 2026-10-01
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-09-21 (lars):** nieuw werkthema is **`201133490503` "AI website workspace 2.0"** (opvolger van `200269168967`). Live is intussen door lars gewisseld naar `201132507463` ("Bijgewerkte kopie van HÏ Grip WEBSITE", geverifieerd met `shopify theme list --json`); het schema-herstel van 21-09 (WebSite + FAQPage + Breadcrumb) is daar meegekomen. `200269398343` is nu unpublished en daarmee ook geen werkthema. Zie de tabel hieronder.
+> **Bijgewerkt 2026-10-12 (lars):** nieuw werkthema is **`202398040391` "Bijgewerkte kopie van AI website workspace 2.0"** (opvolger van `201133490503`). Live is intussen `202394272071` ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list --json` op 12-10). `201132507463` is nu unpublished. Zie de tabel hieronder.
+>
+> *Vorige stand — bijgewerkt 2026-09-21 (lars):* nieuw werkthema is **`201133490503` "AI website workspace 2.0"** (opvolger van `200269168967`). Live is intussen door lars gewisseld naar `201132507463` ("Bijgewerkte kopie van HÏ Grip WEBSITE", geverifieerd met `shopify theme list --json`); het schema-herstel van 21-09 (WebSite + FAQPage + Breadcrumb) is daar meegekomen. `200269398343` is nu unpublished en daarmee ook geen werkthema. Zie de tabel hieronder.
 >
 > *Vorige stand — bijgewerkt 2026-09-17 (Denzel, werkthema bevestigd door lars):** werkthema is nu `200269168967`, live is `200269398343` — beide geverifieerd met `shopify theme list --json` (live = rol `main`). Live werd rond 7-9 gewisseld; sindsdien ontbreken WebSite/Breadcrumb/FAQPage-schema op live (zie [[Update Log]]). **Agents beschermen live voortaan op rol (`live`/`main`), niet op nummer** — zie Design Agent-grenzen in `Website Agent/Identiteit <Agent>.md`.
 >
@@ -22,13 +24,15 @@ bijgewerkt: 2026-10-01
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Werkthema ("AI website workspace 2.0") | `201133490503` (21-9) | unpublished | **Ja — het enige toegestane thema** |
-| Live op www.higrip.nl ("Bijgewerkte kopie van HÏ Grip WEBSITE") | `201132507463` (21-9) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Alle overige — oude werkthema's (`200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
+| Werkthema ("Bijgewerkte kopie van AI website workspace 2.0") | `202398040391` (12-10) | unpublished | **Ja — het enige toegestane thema** |
+| Live op www.higrip.nl ("Live HÏ Grip WEBSITE") | `202394272071` (12-10) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Alle overige — oude werkthema's (`201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 
-> **Toegevoegd 2026-09-21:** werkthema `201133490503` = "AI website workspace 2.0" (unpublished); live = `201132507463`. De lokale map **`C:\Users\lars\ai-workspace-2.0`** vervangt de verouderde `shopify-ai-workspace-theme*`-mappen.
+> **Toegevoegd 2026-10-12:** werkthema `202398040391` = "Bijgewerkte kopie van AI website workspace 2.0" (unpublished); live = `202394272071`. De lokale map `C:\Users\lars\ai-workspace-2.0` hoort bij het vórige werkthema — altijd vers pullen van `202398040391`.
+>
+> *Toegevoegd 2026-09-21:* werkthema `201133490503` = "AI website workspace 2.0" (unpublished); live = `201132507463`. De lokale map **`C:\Users\lars\ai-workspace-2.0`** vervangt de verouderde `shopify-ai-workspace-theme*`-mappen.
 >
 > **Echte product-handles:** `performance-gripsokken-2-0-wit` en `performance-gripsokken-2-0-zwart` (dus `/products/performance-gripsokken-2-0-wit|zwart`) — **niet** `performance-grip-socks-2-0-*`.
 >
@@ -53,9 +57,9 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
 
 ## Werkwijze per wijziging
 
-1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\ai-workspace-2.0`; de oude `shopify-ai-workspace-theme*`-mappen zijn verouderd). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `201133490503` — verifieer met `theme list`):
+1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\ai-workspace-2.0`; de oude `shopify-ai-workspace-theme*`-mappen zijn verouderd). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `202398040391` — verifieer met `theme list`):
    ```
-   shopify theme pull --store hi-grip.myshopify.com --theme 201133490503
+   shopify theme pull --store hi-grip.myshopify.com --theme 202398040391
    ```
 2. **Bewerk** de relevante bestanden lokaal (Liquid/JSON) — inhoud altijd baseren op wat er echt in de theme-bestanden staat (bv. `templates/index.json` voor sectie-content, `config/settings_data.json` voor instellingen als logo), niet op aannames of een verouderde site-audit.
 3. **Lint** vóór het pushen:

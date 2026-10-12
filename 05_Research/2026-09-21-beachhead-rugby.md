@@ -180,7 +180,7 @@ Dominantie in rugby — een niveau dat geen enkel merk in Nederland bereikt heef
 - [ ] P1 · Rugbymagazijn (Bussum, B2B-portaal) benaderen als retailer — beide gripsokken daar op 21-9-2026 in herenmaten uitverkocht, HÏ Grip als Nederlands alternatief met voorraad
 - [ ] P2 · Post-purchase vraag "Welke sport speel je?" toevoegen zodat het rugby-aandeel in D2C-orders meetbaar wordt (meetpunt vraag 9)
 - [ ] P2 · Twee rugby-ambassadeurs werven (één Ereklasse heren, één dames XV) via de RUGBY-rijen in de Influencer Database
-- [ ] P2 · Activatie beoordelen voor Rotterdam Cup (eind augustus 2027) en Amsterdam Sevens (juni 2027); Ameland en North Sea Beach Rugby alleen voor naamsbekendheid
+- [ ] P2 · Activatie beoordelen voor Amsterdam Sevens (juni 2027); Ameland en North Sea Beach Rugby alleen voor naamsbekendheid
 - [ ] P2 · Rugby Nederland vragen naar het open sokkenpartner-slot (Errea kleding, Rhino materiaal): voorwaarden en kosten opvragen bij het bestuurslid Commercie
 - [ ] P2 · All About Rugby (Den Bosch), Rugby-shop.nl, De RugbySpecialist en Ultimate Sports controleren op gripsok-assortiment en benaderen
 - [ ] P2 · Homepage-FAQ "Mag je gripsokken dragen bij rugby?" (GEO-plan actie 3) invullen met het geverifieerde antwoord: ja — Law 4 verbiedt alleen harde materialen, VWW §3.0.7.5 verwijst alleen naar Law 4/Regulation 12
@@ -212,3 +212,4 @@ Dominantie in rugby — een niveau dat geen enkel merk in Nederland bereikt heef
 
 ## Aantekeningen
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: de activatie-actie noemt Rotterdam Cup, maar die is vervallen (besluit Lars 5-10: het toernooi bestaat niet meer, het domein staat te koop). Alleen Amsterdam Sevens (juni 2027) en de beach-events blijven over.
+- **Lars via Claude · 2026-10-12 14:30** — Rotterdam Cup uit de activatie-actie gehaald (besluit Lars 12-10; het toernooi is vervallen, zie besluit 5-10). De actie heeft daardoor een nieuw id.

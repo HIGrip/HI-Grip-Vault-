@@ -45,11 +45,12 @@
    "uitkomst": "gedaan"
   },
   "2026-09-04-werkdossier-stand-van-zaken#30d11c31": {
-   "bewijs": "Beslissing van Lars.",
-   "controle": "Moment skisokken bepalen.",
-   "gecontroleerd": "2026-09-25",
-   "methode": "geen",
-   "uitkomst": "handmatig"
+   "bewijs": "Besluit Lars 12-10: geen lanceringsdatum; feitenbestand en Strategische Keuzes zeggen 'binnenkort, geen datum'.",
+   "controle": "Is het moment voor de skisokken bepaald?",
+   "gecontroleerd": "2026-10-12",
+   "methode": "vault",
+   "sinds": "2026-10-12",
+   "uitkomst": "gedaan"
   },
   "2026-09-04-werkdossier-stand-van-zaken#4cf0833c": {
    "bewijs": "Beslissing van Lars.",
@@ -543,10 +544,10 @@
    "methode": "site",
    "uitkomst": "open"
   },
-  "2026-09-21-beachhead-rugby#a87867c1": {
-   "bewijs": "Besluit van het team.",
-   "controle": "Activatie Rotterdam Cup en Amsterdam Sevens beoordelen.",
-   "gecontroleerd": "2026-09-25",
+  "2026-09-21-beachhead-rugby#a013dbb8": {
+   "bewijs": "Besluit van het team; niet automatisch waar te nemen.",
+   "controle": "Is de activatie voor Amsterdam Sevens beoordeeld?",
+   "gecontroleerd": "2026-10-12",
    "methode": "geen",
    "uitkomst": "handmatig"
   },

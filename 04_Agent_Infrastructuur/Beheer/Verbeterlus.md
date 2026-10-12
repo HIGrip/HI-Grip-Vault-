@@ -55,6 +55,7 @@ Wordt bijgehouden onder het kwaliteitsdashboard. Alleen cijfers die uit het werk
 | Opdrachten deze periode | Aantal |
 | Eerste keer goed | Aandeel zonder blokkerende of belangrijke reviewer-bevinding |
 | Geaccepteerd door de opdrachtgever | Aandeel opgeleverd werk dat Lars, Tigo of Timo zonder aanpassing goedkeurde. Dit telt zwaarder dan hoeveel een agent heeft gedaan |
+| Gemiddelde sterren | Gemiddelde van de [[Sterrenbeoordeling]] door Team HÏ Grip, met trend. Onder de 3 over de laatste vijf opleveringen: verbetervoorstel van Denzel |
 | Correctierondes gemiddeld | Doel: dalend |
 | Herhaalde fouten | Fout waarvoor al een leerregel bestond. Doel: 0 |
 | Verzonnen of onbronde feiten | Doel: 0, elke keer een leerregel én melding |

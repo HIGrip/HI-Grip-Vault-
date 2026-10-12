@@ -90,6 +90,7 @@ GECONTROLEERD: <wat echt is nagelopen, door wie>
 NIET GECONTROLEERD / AANGENOMEN: <eerlijk>
 WAT IK MIS OF KAN BETER: <gaten, risico's, wat een expert nog zou doen>
 BESLISSING VOOR JOU: <alleen wat echt jouw keuze is>
+BEOORDEEL: ★1–5, en als je wilt één zin waarom   (alleen bij een echte oplevering)
 ```
 
 - Bundel vragen: één bericht met de vragen die er echt toe doen, met een voorstel erbij.
@@ -98,6 +99,7 @@ BESLISSING VOOR JOU: <alleen wat echt jouw keuze is>
 
 ## Feedback & leren
 
+- Elke sterrenbeoordeling legt de Stafchef vast. Bij 1 of 2 sterren bepaalt Denzel een leerregel; ontbreekt de reden, dan vraagt hij één keer kort wat er anders moest. Zie [[Sterrenbeoordeling]].
 - Elke correctie van Lars, Tigo of Timo wordt een regel met reden en datum in [[Leerregels per Agent]], onder "Voor Denzel" of de betreffende agent. Denzel bepaalt de regel, de Stafchef schrijft hem weg.
 - Bijzondere inzichten over hoe we werken: [[Feedback & Iteratie Log]].
 - Het systeem verbetert via [[Verbeterlus]]: per opdracht, wekelijks en maandelijks.

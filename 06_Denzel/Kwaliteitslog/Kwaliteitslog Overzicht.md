@@ -26,6 +26,7 @@ Het huidige overzicht is één tabel van tientallen lange rijen. Dat leest niema
 
 - **Nieuwe rij of statuswijziging, nooit een oude rij stilzwijgend overschrijven.** (Overgenomen uit het huidige overzicht.)
 - Eén rij per verdict: sub-agent of hoofdagent, laatste output of actie, datum, status, toelichting met bewijs.
+- Kolom **Sterren** (1–5) met de beoordeling van Team HÏ Grip, de reden en wie beoordeelde. Leeg als er niet beoordeeld is. Zie [[Sterrenbeoordeling]].
 - Statuslegenda ongewijzigd: ✅ OK, 🔁 Teruggestuurd, ✅ Opgelost na correctie, 🚩 Geëscaleerd naar Lars, ⏳ Wacht op Lars, — Nog geen output, ⏹ Gestopt.
 - Wat op Lars wacht en langer dan een week openstaat, staat bovenaan met de datum van het voorstel.
 

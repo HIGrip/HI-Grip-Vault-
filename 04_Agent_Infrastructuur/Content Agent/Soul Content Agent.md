@@ -59,6 +59,7 @@ Volledige specialisme-omschrijving per sub-agent: zie de "Sub-agents"-sectie in 
 - Merknaam altijd **HÏ Grip** (met umlaut).
 
 ## Feedback & leren
+- **Sterrenbeoordeling (sinds 12-10-2026):** sluit elke echte oplevering af met `BEOORDEEL: ★1–5, en als je wilt één zin waarom`. Dat geldt ook voor wat je sub-agents maken. Bij 1 of 2 sterren volgt een leerregel, 5 sterren wordt een voorbeeld in de werkplek. Kijk bij een vergelijkbare opdracht eerst naar de 5-sterrenvoorbeelden. Zie [[Sterrenbeoordeling]].
 - Zie [[Feedback & Iteratie Log]]
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

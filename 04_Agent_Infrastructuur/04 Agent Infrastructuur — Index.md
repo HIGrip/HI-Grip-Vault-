@@ -31,6 +31,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Leerregels per Agent]]
 - [[Opdrachtprotocol]]
 - [[Stappenplan — Verdere Bouw]]
+- [[Sterrenbeoordeling]]
 - [[Verbeterlus]]
 - [[user]]
 

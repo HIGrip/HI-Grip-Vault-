@@ -63,13 +63,17 @@ GECONTROLEERD: <wat Denzel/reviewer echt heeft nagelopen>
 NIET GECONTROLEERD / AANGENOMEN: <eerlijk>
 WAT IK MIS OF KAN BETER: <gaten, risico's, wat een expert nog zou doen>
 BESLISSING VOOR JOU: <alleen wat echt jouw keuze is>
+BEOORDEEL: ★1–5, en als je wilt één zin waarom
 ```
+
+De sterrenvraag staat alleen onder een echte oplevering (iets gemaakt: sectie, post, mail, lijst, analyse). Zie [[Sterrenbeoordeling]].
 
 Geen replay van het proces. Overgeslagen agents benoemen, zodat het een keuze lijkt en geen omissie.
 
 ### 8. Leren (Denzel)
 Na elke opdracht van gewicht, en direct bij elke correctie van een opdrachtgever:
 - Kwam er een correctie van Lars/Tigo/Timo, of vond de review een blokkerend punt? Schrijf een **leerregel** (zie hieronder).
+- Kreeg de oplevering 1 of 2 sterren? Ook dan een leerregel. 5 sterren? Dan wordt het een voorbeeld in de werkplek van die agent. Zie [[Sterrenbeoordeling]].
 - Een leerregel die voor meerdere agents geldt, gaat naar de sectie "Voor alle agents".
 - Terugkerend patroon (2e keer)? Dan niet alleen een leerregel maar ook een aanpassing in de `Identiteit <Agent>.md` van die agent, als voorstel aan Lars wanneer het autonomie of grenzen raakt.
 - Bijzonder inzicht over *hoe* we werken: entry in [[Feedback & Iteratie Log]].

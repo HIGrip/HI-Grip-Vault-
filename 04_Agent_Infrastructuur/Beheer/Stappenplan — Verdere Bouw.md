@@ -103,6 +103,7 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 - [x] Team HÏ Grip en basisregels voor alle agents vastgelegd in [[user]]
 - [x] Dashboard-check: wat sluit aan en wat niet, in [[Agents en het dashboard]]
 - [x] Vault opgeruimd: dubbele Denzel-bestanden weg, leerregels geordend, structuurschema herschreven
+- [x] Sterrenbeoordeling ingevoerd: na elke echte oplevering 1 tot 5 sterren van Team HÏ Grip, bij alle hoofdagents (12-10)
 
 ### To do — koppelingen (eerst)
 - [ ] **Model en tools voor de drie hoofdagents vastleggen.** Website, Content en Partnership Agent hebben nog geen Model & Tools-sectie.
@@ -123,6 +124,7 @@ Naast de vault (Identiteit <Agent>.md / Soul <Agent>.md = wie een sub-agent is) 
 - [ ] Soorten voorstellen in *Wacht op akkoord* uitbreiden: website-wijziging, beeld of video, QA-escalatie, wijziging AI-structuur.
 - [ ] Rechten per persoon: AI-structuur Lars en Timo, live zetten Lars.
 - [ ] Plek voor beeld en video van de Content Maker bij een post.
+- [ ] Sterrenknop (1–5) bij elke oplevering, opgeslagen per agent. Zie [[Sterrenbeoordeling]].
 - [x] Afspreken welke agents via Hermes draaien: **alle agents in Hermes** (Lars, 12-10). Een paar roepen Claude aan om echt te bouwen (bijvoorbeeld websitesecties); schrijfwerk waarschijnlijk via de chat.
 - [ ] Per agent vastleggen of hij Claude aanroept om te bouwen, en welk schrijfwerk via de chat gaat in plaats van via een agent.
 - Volledige lijst en uitleg: [[Agents en het dashboard]].

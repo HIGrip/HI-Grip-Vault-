@@ -36,7 +36,7 @@ Zorgen dat niets van de Website Agent bij HÏ Grip komt dat een feit verzint, ee
 - Resultaten van de Website Agent op niveau Midden of Hoog (zie [[Kwaliteitscontrole]])
 - Controle van feiten, merk en grenzen volgens [[Toetsregels]] en de [[Toetslijst Website-QA]]
 - Controle met bewijs op de preview of de live pagina
-- Verbeteradvies geven en dat aan Denzel doorgeven
+- Per bevinding een verbeterrichting noemen in het verdict (wat moet anders, niet hoe het er precies uit moet zien). Het verdict gaat naar Denzel. Hij schrijft geen vervangende tekst of code
 
 ## Scope — wat valt hier NIET onder
 

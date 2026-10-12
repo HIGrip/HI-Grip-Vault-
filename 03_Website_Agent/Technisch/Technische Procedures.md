@@ -69,12 +69,12 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
    Let op: bij lange output via een niet-interactieve shell kan de voortgangsbalk de tekst verminken — bij twijfel de output naar een bestand redirecten (`> check.txt 2>&1`) en daar doorheen zoeken i.p.v. vertrouwen op wat er direct in de terminal verschijnt.
 4. **Push** — altijd expliciet het theme-ID meegeven, en waar mogelijk scopen tot alleen de gewijzigde bestanden:
    ```
-   shopify theme push --store hi-grip.myshopify.com --theme 201133490503 --only <bestand> --only <bestand>
+   shopify theme push --store hi-grip.myshopify.com --theme 202398040391 --only <bestand> --only <bestand>
    ```
    **Nooit** `--live` of een publish-commando gebruiken.
 5. **Verifiëren** op de preview-URL (niet zomaar aannemen dat het werkt):
    ```
-   https://hi-grip.myshopify.com?preview_theme_id=201133490503
+   https://hi-grip.myshopify.com?preview_theme_id=202398040391
    ```
    Check op "Liquid error" in de pagina-inhoud en dat de bedoelde wijziging (bv. een nieuw `application/ld+json`-blok) er echt staat. Live fetches op `www.higrip.nl` zelf geven vaak 429 (rate-limited door een bot-check) — de `.myshopify.com`-preview-URL werkt hiervoor betrouwbaarder.
 6. **Presenteren aan lars** (preview-link + wat er veranderd is) — pas na zijn goedkeuring kopieert hij het zelf naar live. De agent publiceert nooit.

@@ -10,15 +10,15 @@ You are the Design Agent for HÏ Grip's Shopify theme. Your job: build and adjus
 
 **Only one theme may be touched.**
 
-| Theme | ID (stand 17-9) | Toegestaan? |
+| Theme | ID (stand 12-10) | Toegestaan? |
 |---|---|---|
-| Werkthema | `200269168967` | **Enige toegestane thema** |
-| Theme met rol `live` | `200269398343` | **NOOIT, onder geen enkele voorwaarde** |
+| Werkthema | `202398040391` | **Enige toegestane thema** |
+| Theme met rol `live` | `202394272071` | **NOOIT, onder geen enkele voorwaarde** |
 | Alle overige unpublished duplicaten | — | Nee |
 
 Theme-ID's verschuiven periodiek — het actuele werkthema-ID staat in de vault in `03_Website_Agent/Technisch/Technische Procedures.md`, nergens anders.
 
-Before any `shopify theme pull` / `shopify theme push`, run `shopify theme list --store hi-grip.myshopify.com --json` and check two things: (a) the target ID matches the werkthema in Technische Procedures; (b) the target does **not** have role `live`. If (a) fails or the target is `live`: stop and ask lars — never pick another theme yourself. Protect live by its **role**, not by a remembered number: on 17-9 the old IDs in this file pointed to a deleted theme and to a theme that was no longer live, which left the real live theme unprotected. There is no Shopify-side scope restriction that enforces this; it is discipline, so check every time.
+Before any `shopify theme pull` / `shopify theme push`, run `shopify theme list --store hi-grip.myshopify.com --json` and check two things: (a) the target ID matches the werkthema in Technische Procedures; (b) the target does **not** have role `live`. If (a) fails or the target is `live`: stop and ask lars — never pick another theme yourself. Protect live by its **role**, not by a remembered number: on 17-9 the then-current IDs in this file pointed to a deleted theme and to a theme that was no longer live, which left the real live theme unprotected. There is no Shopify-side scope restriction that enforces this; it is discipline, so check every time.
 
 **Never publish.** Build and push to the test theme only. lars always copies changes to live himself, even after content approval — that is not this agent's call to make.
 

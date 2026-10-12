@@ -27,6 +27,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Eén bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de "ongeopend"-eis uit het retourbeleid halen, verzendkosten/-drempel op `/pages/verzendbeleid` zetten, en de 22:00-metatekst overal vervangen.
 **Gevonden op:** 28 september 2026 (regressiecheck)
 
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** in het werkthema zijn alle thema-teksten al "binnen 1 werkdag verzonden" (sport-hero, sport-proof, shop-intro, padel-onderdelen, rugby-template) en staat `page.json` op 30 dagen retour; live nog niet. Het Shopify-beleid zelf loopt via `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`.
 ### [x] [regressie] /collections/frontpage heeft geen meta description (nieuw 28 sep 2026)
 **Bevestigd:** 11 oktober 2026 door Lars (via Claude) — /collections/frontpage geeft 404 en staat niet meer in de sitemap (crawl 11-10)
 **Waarom:** 0 `<meta name="description">`-tags gevonden. Mogelijk dezelfde oorzaak als het al openstaande punt over `/collections/all` hieronder, maar een andere, nog niet eerder gemelde URL.
@@ -40,6 +41,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`.
 **Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)
 
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
 ### [x] [regressie] Nieuwe `/en/`-sectie heeft een lege, keyword-loze title-tag (nieuw 21 sep 2026)
 **Bevestigd:** 11 oktober 2026 door actiecontrole — https://www.higrip.nl/en/ op 11-10: <title> = 'HÏ Grip | Performance Grip Socks for Athletes'; meta description Engels met keyword ('Performance grip socks made for football, tennis, padel and rugby... Shipped within 1 business day').
 **Waarom:** `sitemap.xml` bevat sinds deze week vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) die er bij de vorige check niet waren — een Engelse marktuitbreiding die niet in het projectgeheugen staat. `hreflang` (x-default/nl/en) staat correct op zowel NL- als EN-homepage en de canonical klopt, maar de EN-title is enkel `HÏ Grip` — exact hetzelfde probleem dat de NL-homepage vóór 15 september had.
@@ -54,6 +56,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `snippets/product-information-content.liquid`, direct onder de prijs
 **Wat:** Voortgangsbalk met "Nog €21,51 tot gratis verzending" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in "✓ Gratis verzending".
 **Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** deels klaar in het werkthema, niet live: balk in het winkelwagenvenster (`snippets/free-shipping-bar.liquid`, drempel als thema-instelling, standaard €35) en een vertrouwensregel op de 2.0-productpagina uit dezelfde drempel. Nog niet: de balk op de productpagina die per pack meerekent.
 **Inspanning:** Half dagdeel
 
 ### [ ] 2. Reviewapp koppelen — pas dáárna AggregateRating (herzien 15 sep 2026)
@@ -129,6 +132,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `snippets/product-information-content.liquid`, bij de variant-selector
 **Wat:** "€X,XX/paar" tonen onder elke pack-optie, herberekend per gekozen variant — ~~1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar~~ (achterhaald door prijswijziging, zie update).
 **Effect:** Versterkt samen met de gratis-verzendbalk (punt 1) de duw richting het 3-pack.
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** prijs per paar staat in het werkthema alleen in de tabel van de nieuwe vergelijkpagina (`vg-2-tabel`), nog niet bij de pack-selector.
 **Inspanning:** 1-2 uur
 
 ### [ ] 14. Controleer INP op productpagina en homepage — eigen JS is de waarschijnlijke boosdoener (nieuw 21 sep 2026)

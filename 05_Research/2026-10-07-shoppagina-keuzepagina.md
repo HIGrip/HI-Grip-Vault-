@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "De shoppagina blijft op /collections/gripsokken als gewone collectiepagina met de 1.0 (prijsvriendelijk) en 2.0 (ultieme performance) als gelijkwaardige keuzes, plus een aparte vergelijkingspagina /pages/gripsokken-vergelijken in de stijl van Over ons, op keyword 'gripsokken kopen'. Live toont de 1.0 geen packs (alleen €14,95), terwijl de bundel-app 3-pack €35,95 en 5-pack €54,95 bevat en het feitenbestand €41,95/€64,95 noemt; daarom staat er geen 'vanaf €12,99'."
-gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2, 2026-10-08-search-console]
+gerelateerd: [2026-10-07-missie-visie-pagina, 2026-09-25-search-console, 2026-09-28-seo-conversietest-run-2, 2026-10-08-search-console, 2026-10-12-werkthema-vs-live]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/32qFKvpp9uHTntU1EGPvFU"
 deadline: ""
@@ -163,3 +163,7 @@ De Website Copy-agent leverde niets: zijn identiteitsbestand stond niet op het v
 - Subagents seo-agent en design-agent (advies, 7-10)
 
 ## Aantekeningen
+
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema (zie [[2026-10-12-werkthema-vs-live]]): het shopconcept staat in het werkthema als `collection.gripsokken.json` en `page.shop-2.json` (secties sh-1 t/m sh-6); de collectie gripsokken heeft nog geen template-suffix, dus het is pas actief na toewijzen. Niet live.
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema: de vergelijkpagina staat in het werkthema als `page.vergelijken.json` (vg-1 t/m vg-7); er bestaat nog geen pagina /pages/gripsokken-vergelijken. Niet live.
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema: oude handles. De collectie bevat alleen nog de drie nieuwe producten (Admin API 12-10); de oude handles staan live nog als kaartlinks in 10 themabestanden, in het werkthema in 0. Wacht op een push.

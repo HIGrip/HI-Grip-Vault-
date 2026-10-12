@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "De nieuwe Over ons in het werkthema linkt al naar /pages/onze-missie en /pages/onze-visie, dus de Missie & visie-pagina hoort op /pages/onze-missie, met 'missie en visie HÏ Grip' als keyword omdat Over ons al op de merknaam rankt. Het concept (versie 2) gebruikt dezelfde bewegingstaal als Over ons en is ontdubbeld: geen founderfoto's, geen kernwaardensectie en geen tagline-slot die Over ons al heeft."
-gerelateerd: [2026-09-25-seo-audit, 2026-09-04-werkdossier-stand-van-zaken, 2026-10-07-shoppagina-keuzepagina, 2026-10-08-search-console]
+gerelateerd: [2026-09-25-seo-audit, 2026-09-04-werkdossier-stand-van-zaken, 2026-10-07-shoppagina-keuzepagina, 2026-10-08-search-console, 2026-10-12-werkthema-vs-live]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/Dy7Vmadcqj1N4iEYbeZx87"
 deadline: ""
@@ -100,3 +100,5 @@ Het concept-artifact van de nieuwe Over ons (NhEKihrG6Y9MrWe1TM8smz) was niet le
 - about.nike.com/en/mission · on.com/en-us/explore/about-on · report.adidas-group.com/2024/en/at-a-glance/our-purpose-and-mission.html
 
 ## Aantekeningen
+
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema (zie [[2026-10-12-werkthema-vs-live]]): de nieuwe Missie- en Visie-pagina staan in het werkthema als `page.missie-2.json` en `page.visie-2.json` (mvm-/mvv-secties, met foundingDate en 4,6 ★). /pages/onze-missie en /pages/onze-visie gebruiken live nog hun oude templates. Niet live.

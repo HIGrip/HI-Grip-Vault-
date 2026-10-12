@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De techniek van higrip.nl is in orde (alle 105 sitemap-URL's gecontroleerd, canonical en hreflang overal goed), maar de entiteit voor AI-systemen is kaal en verkeerde claims staan nog in schema en op EN-pagina's. Zoekverkeer groeit wel: Search Console toont +90% klikken, vooral op merktermen, en de GA4-aankooptracking werkt weer."
-gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-09-25-seo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby, 2026-10-11-seo-audit-weekdelta, 2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-09-25-seo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-09-21-beachhead-rugby, 2026-10-11-seo-audit-weekdelta, 2026-10-11-concurrentie-seo-per-merk, 2026-10-12-werkthema-vs-live]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -134,3 +134,6 @@ PageSpeed Insights gaf op alle drie de geteste URL's 429 (daglimiet), dus er is 
 ## Aantekeningen
 
 - **Lars via Claude · 2026-10-11 17:30** — Afgevinkt: "Het "vóór 22:00 uur… dezelfde dag verzonden"-antwoord uit het FAQPage-…" Bewijs: geen 22:00 meer in het FAQPage-schema van / en /en, en ook niet in de tekst van de NL- en EN-pagina's (crawl 11-10).
+
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema (zie [[2026-10-12-werkthema-vs-live]]): Organization.url wijst in het werkthema (`sections/header.liquid`) naar `shop.url` met een @id; `@context` is daar nog `http://schema.org`. Niet live.
+- **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema: 4,6 ★ staat in het werkthema alleen op de nieuwe missie-, shop- en vergelijksecties, niet op de homepage of de 2.0-productpagina. "Voor jouw sport" op de 2.0-pagina noemt ook in het werkthema nog geen padel of rugby.

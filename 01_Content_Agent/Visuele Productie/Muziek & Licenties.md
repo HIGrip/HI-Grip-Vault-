@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: content-agent
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-12
 ---
 
 # Muziek & Licenties — HÏ Grip
@@ -19,6 +19,13 @@ bijgewerkt: 2026-10-01
 | Lifestyle | Rap (Drake, NL hiphop) | [Lifestyle playlist](https://open.spotify.com/playlist/2f5bwfOHIqZUMmhaK3Oays?si=ac00e5e2be5d465f) |
 
 ---
+
+## Wat mag (besloten door Lars, 12-10-2026)
+
+- **Rechtenvrije of gelicenseerde muziek mag**, bijvoorbeeld uit Shopify of een andere bron met een commerciële licentie.
+- **Per post checken of de sound op het platform mag.** HÏ Grip post vanaf bedrijfsaccounts. Op TikTok mag een bedrijfsaccount alleen muziek uit de Commercial Music Library gebruiken; op Instagram is niet alle muziek beschikbaar voor bedrijfsaccounts. Staat een nummer daar niet in, gebruik het dan niet.
+- **De Spotify-playlists hieronder zijn een stijlgids**, geen licentie. Een nummer uit de playlist gebruik je alleen als het ook op het platform voor bedrijfsaccounts beschikbaar is.
+- Twijfel over een sound: niet gebruiken en melden via de Content Agent.
 
 ## Richtlijn
 

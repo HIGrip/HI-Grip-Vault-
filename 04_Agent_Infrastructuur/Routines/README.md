@@ -29,7 +29,7 @@ bijgewerkt: 2026-10-01
 | **Materialen & productie** (22e) | Gripmaterialen, wasbestendigheid, garens, certificering, leveranciers/MOQ, EU-regels (met primaire bronnen) | Productkansen doorrekenen, claims op de site aanpassen, leveranciers benaderen |
 | **Backlinks & Merchant Center** (1e) | Nieuwe en verloren links, link-kansen, Google Shopping-status en -fouten | On-page SEO, rankings |
 
-**Afvinken** gebeurt alleen door de actiecontrole (met bewijs) of door een mens via het dashboard of de vault. De andere routines lezen `05_Research/_backlog/CONTROLE.json`, controleren bestaande acties niet opnieuw en stellen niets voor wat daar als gedaan of dubbel staat.
+**Afvinken** gebeurt alleen door de actiecontrole (met bewijs), door de Stafchef van Denzel in het dashboard (met bewijs, besloten 12-10-2026) of door een mens via het dashboard of de vault. De andere routines lezen `05_Research/_backlog/CONTROLE.json`, controleren bestaande acties niet opnieuw en stellen niets voor wat daar als gedaan of dubbel staat.
 
 **Tweewekelijks en maandelijks** draaien met een guard: staat in het eigen geheugen een run van minder dan 10 dagen (tweewekelijks) of 25 dagen (maandelijks) geleden, dan stopt de routine direct met "overgeslagen". Kan de planner op info@ geen dagen van de maand aan, zet de routine dan wekelijks op de terugvaldag uit de tabel: de guard zorgt voor het juiste ritme.
 

@@ -78,7 +78,7 @@ Na elke opdracht van gewicht, en direct bij elke correctie van een opdrachtgever
 
 Zegt een opdrachtgever "voortaan graag X", "dit moet anders", "je miste Y"? Denzel:
 1. Herformuleert het als **regel + reden** ("Voortaan: toets sportpagina's aan beachhead-volgorde, want rugby ontbrak op de homepage").
-2. Schrijft het in [[Leerregels per Agent]] bij de juiste agent (of "Voor alle agents"), met datum en wie het zei.
+2. Laat de Stafchef het vastleggen in [[Leerregels per Agent]] bij de juiste agent (of "Voor alle agents"), met datum en wie het zei. De Stafchef beheert dat bestand als administratie.
 3. Bevestigt in één regel aan de opdrachtgever dat het is vastgelegd, en bij welke agent.
 4. Een leerregel mag nooit een harde grens of autonomie-niveau versoepelen. Raakt het dat, dan is het een voorstel aan Lars.
 

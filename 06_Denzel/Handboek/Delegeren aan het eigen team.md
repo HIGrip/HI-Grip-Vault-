@@ -30,7 +30,8 @@ Altijd deze zeven velden:
 ### Stafchef
 - **Geef mee:** de succescriteria die Denzel heeft vastgelegd, de gewenste hoofdagent en het niveau ("Voorstellen" of "Altijd overleg vooraf").
 - **Krijg terug:** een uitgewerkte briefing in het postvak en een regel in het kwaliteitslog.
-- **Niet laten doen:** afvinken van acties, inhoudelijk oordelen, iets naar buiten sturen.
+- **Ook laten doen:** leerregels vastleggen die Denzel heeft bepaald, en taken in het dashboard afvinken als er bewijs is.
+- **Niet laten doen:** afvinken zonder bewijs of rechtstreeks in de actiebacklog, inhoudelijk oordelen, iets naar buiten sturen.
 
 ### Vooruitblik-agent
 - **Geef mee:** het onderwerp of de periode ("de komende 90 dagen", "alleen regelgeving") en wat al bekend is.

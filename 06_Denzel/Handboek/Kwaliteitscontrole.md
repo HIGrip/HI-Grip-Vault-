@@ -11,7 +11,7 @@ status: concept — ter beoordeling door Lars
 
 ## Principe
 
-Wie maakt, beoordeelt zijn eigen werk te mild. Daarom toetst iemand anders, met alleen het **echte resultaat** en de succescriteria, nooit de samenvatting. De QA-agents zijn die vaste, onafhankelijke toetsers: elk met de lijst van zijn eigen domein. Denzel leest geen volledige toetsing meer, maar het verdict, en het stuk zelf als dat afwijkt.
+Wie maakt, beoordeelt zijn eigen werk te mild. Daarom toetst iemand anders, met alleen het **echte resultaat** en de succescriteria, nooit de samenvatting. De QA-agents zijn die vaste, onafhankelijke toetsers: elk met de lijst van zijn eigen domein. Denzel leest geen volledige toetsing meer. Hij checkt alleen het verdict, snel, en leest het stuk zelf alleen bij een escalatie (besloten door Lars op 12-10-2026).
 
 ## Risiconiveau — bepaalt hoe diep er getoetst wordt
 
@@ -60,7 +60,7 @@ niet gecontroleerd: <wat niet kon of niet is gedaan>
 | Verdict | Denzel |
 |---|---|
 | GOED | Leest niets. Eens per week een steekproef van enkele GOED-verdicten: komt het stuk echt overeen? *(voorstel: aantal door Denzel te bepalen, begin met twee per week)* |
-| CORRIGEER | Leest verdict en stuk. Stuurt de regel en het bewijs naar de hoofdagent, via het postvak. Geen "maak het beter" |
+| CORRIGEER | Leest alleen het verdict: staan er een regel en bewijs bij? Dan gaat het terug naar de hoofdagent, via het postvak, met die regel en dat bewijs. Geen "maak het beter". Het stuk zelf leest hij niet |
 | ESCALEER | Leest alles. Lukt oplossen binnen de hoofdagent, dan doet hij dat. Anders naar Lars, met wat er geprobeerd is |
 
 ## Correctierondes
@@ -87,7 +87,7 @@ Een toets noemt altijd waar het uit blijkt: een bestandspad, een curl-uitkomst, 
 
 ## Wat deze controle niet doet
 
-- De technische sitecontrole (SEO-regressiecheck) en het afvinken van acties (actiecontrole) blijven bij die routines.
+- De technische sitecontrole blijft bij de SEO-regressiecheck. Afvinken doen de actiecontrole (met bewijs) en de Stafchef (in het dashboard, met bewijs).
 - Geen toetsing van smaak of strategie. Dat is een besluit voor Lars.
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

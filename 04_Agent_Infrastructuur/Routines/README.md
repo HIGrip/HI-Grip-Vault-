@@ -39,7 +39,7 @@ Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiks
 
 | Routine (naam op info@) | Promptbestand | Wanneer (terugval) | Model | Status |
 |---|---|---|---|---|
-| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | claude-sonnet-5-5 | ⚠️ Cloud op info@, maar **zonder repository**: sinds 26-09 geen enkele geslaagde run (stopt na 1–2 min, geen commit). Fix: op claude.ai/code/routines de routine bewerken en `HIGrip/HI-Grip-Vault-` als repository toevoegen (vastgesteld 11-10) |
+| HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | claude-sonnet-5-5 | ✅ Cloud op info@ (repository gekoppeld 11-10; eerste geslaagde run 11-10, daarna 12-10 05:01) |
 | HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | claude-sonnet-5-5 | ✅ Cloud op info@ (sinds 25-09) |
 | HÏ Grip — Uitvoerder | `Uitvoerder.md` | dagelijks 06:15 | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | claude-sonnet-5-5 | ✅ Cloud op info@ |

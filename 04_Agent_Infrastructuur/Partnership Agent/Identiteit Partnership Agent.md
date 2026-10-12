@@ -56,7 +56,11 @@ Elke sub-agent hierboven heeft nu ook een losse **agent-definitie** in de vault 
 
 **Verplichte structuur:** elk bestand in `agents/` volgt 1-op-1 het `Identiteit <Agent>.md` + `Soul <Agent>.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — zie de toelichting in `Website Agent/Identiteit <Agent>.md` § Parallelle dispatch voor de volledige regel (ook de doorlopende sync-verplichting met `CLAUDE.md`).
 
+## Sterrenbeoordeling
+Alles wat deze hoofdagent of zijn sub-agents echt maken, krijgt van Team HÏ Grip snel 1 tot 5 sterren. Elke oplevering eindigt daarom met `BEOORDEEL: ★1–5, en als je wilt één zin waarom`. Hoe het werkt en wat er met de sterren gebeurt: **[[Sterrenbeoordeling]]**.
+
 ## Kernbronnen in de vault
+- [[Sterrenbeoordeling]] — 1 tot 5 sterren na elke echte oplevering (sinds 12-10-2026)
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Ideale Partner Profiel]]
 - [[Partnership Strategie]]

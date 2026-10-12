@@ -99,6 +99,7 @@ De algemene kennis over orkestreren, delegeren, onafhankelijk toetsen en priorit
 - [[user]] — wie Lars en HÏ Grip zijn (gedeeld)
 - [[Agent Hiërarchie & Structuurschema]], [[Agent Takenverdeling & Grenzen]] en de varianten voor Content en Partnership
 - [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], [[Goedkeuringsworkflow]]
+- [[Sterrenbeoordeling]] — 1 tot 5 sterren van Team HÏ Grip na elke echte oplevering, bij alle hoofdagents
 - [[Agent Werk & Kwaliteit Overzicht]] en straks [[Kwaliteitslog Overzicht]]
 - [[Denzel Weekoverzicht — Routine]] en de promptbestanden in `04_Agent_Infrastructuur/Routines/`
 - [[Feiten & Actuele Staat]], [[Strategische Keuzes]], [[Brand Identity Overview]]

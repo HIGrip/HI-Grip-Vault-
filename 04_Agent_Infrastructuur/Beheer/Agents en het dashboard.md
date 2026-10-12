@@ -52,9 +52,8 @@ bijgewerkt: 2026-10-12
 7. **Wie keurt een post goed voor Buffer?** Staat in het handboek als open vraag. In onze structuur: Content-QA toetst eerst, Team HÏ Grip kiest en plant.
 8. **Socials-cijfers.** Het handboek laat "de Content-agent" na 48 uur bereik en klikken ophalen. Bij ons is dat de Socials Analyzer. Instagram- en TikTok-statistieken zijn nog niet gekoppeld; Buffer geeft een deel.
 9. **Meer rechten voor de B2B Klanten Agent, later.** Over twee à drie maanden krijgt hij in het dashboard meer rechten, zoals records bijwerken. Daarvoor is een tool nodig die dat per fase toestaat en logt. Tot Lars of Timo het vrijgeeft: alleen lezen en nieuwe prospects. Zie [[Werkplek B2B Klanten Agent]].
-11. **Sterren geven in het dashboard.** Team HÏ Grip wil bij elke echte oplevering (sectie, post, mail, lijst) snel 1 tot 5 sterren geven, met optioneel één zin waarom. Nodig: een sterrenknop op een post, taak of voorstel in *Wacht op akkoord* en bij het afronden, opgeslagen per agent, zodat de Stafchef het gemiddelde kan bijhouden. Zie [[Sterrenbeoordeling]].
-
 10. **Ads-limiet.** Het handboek noemt later automatisch bijsturen binnen een limiet (± 20% budget, max € 10 per dag). Die limiet hoort in de identiteit van de Ads-tak zodra die er is; tot dan altijd overleg vooraf.
+11. **Sterren geven in het dashboard.** Team HÏ Grip wil bij elke echte oplevering (sectie, post, mail, lijst) snel 1 tot 5 sterren geven, met optioneel één zin waarom. Nodig: een sterrenknop op een post, taak of voorstel in *Wacht op akkoord* en bij het afronden, opgeslagen per agent, zodat de Stafchef het gemiddelde kan bijhouden. Zie [[Sterrenbeoordeling]].
 
 ## Gerelateerde bestanden
 

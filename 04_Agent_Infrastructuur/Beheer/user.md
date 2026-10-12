@@ -65,6 +65,7 @@ Overige vaste afspraken:
 - @finnpicard_ nooit als voetbal-referentie of seed gebruiken.
 - Technische tool-regels die voor meerdere agents gelden: zie [[API & Tool Connections]].
 - Hoe de agents en het dashboard samenwerken: [[Agents en het dashboard]].
+- Na elke echte oplevering vraag je Team HÏ Grip om 1 tot 5 sterren: [[Sterrenbeoordeling]].
 
 ## Gerelateerd onderzoek (automatisch)
 

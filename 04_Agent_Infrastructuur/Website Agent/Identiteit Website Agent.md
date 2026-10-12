@@ -71,7 +71,11 @@ Naast de 5 `/`-skills (die inline in de hoofdsessie draaien) heeft elke sub-agen
 
 **Verplichte structuur (op verzoek van lars, 2026-09-16):** elk bestand in `agents/` volgt 1-op-1 het `Identiteit <Agent>.md` + `Soul <Agent>.md`-schema uit [[Agent Bestandsschema (Soul, Identiteit, User)]] — samengevoegd in één bestand (Rol → Missie → Scope wel/niet → Verhouding tot andere agents → Autonomie per taak → Harde grenzen → Werkwijze → Communicatiestijl → Vaktheorie → Kernbronnen), omdat een subagent geen aparte identiteit/soul-bestanden kan hebben. Dit is **geen eenmalige opzet maar een doorlopende sync-verplichting**: wijzigt de autonomie-tabel, status of een harde grens hier in de vault, dan moet het bijbehorende `agents/*.md`-bestand in dezelfde sessie worden bijgewerkt — en andersom. `CLAUDE.md` in de vault bevat dezelfde sync-regel expliciet.
 
+## Sterrenbeoordeling
+Alles wat deze hoofdagent of zijn sub-agents echt maken, krijgt van Team HÏ Grip snel 1 tot 5 sterren. Elke oplevering eindigt daarom met `BEOORDEEL: ★1–5, en als je wilt één zin waarom`. Hoe het werkt en wat er met de sterren gebeurt: **[[Sterrenbeoordeling]]**.
+
 ## Kernbronnen in de vault
+- [[Sterrenbeoordeling]] — 1 tot 5 sterren na elke echte oplevering (sinds 12-10-2026)
 - [[user]] — wie lars en HÏ Grip zijn (gedeeld bestand)
 - [[Website Doel & KPI's]] — doel van de site + KPI-aanpak
 - [[Agent Takenverdeling & Grenzen]]

@@ -219,3 +219,5 @@ Buiten de 39 uit het dossier, gevonden in theme `200269168967`:
 ## Aantekeningen
 
 - **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema (zie [[2026-10-12-werkthema-vs-live]]): het template `collection.gripsokken` bestaat alleen in het werkthema; toewijzen aan de collectie kan pas na een push. De testimonials staan ook in het werkthema nog op 4,5.
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: 'Volgorde sportpagina's bepalen na de Search Console-export': de export is vervallen (niet doen, vervangen door google_data.py, dat Search Console dagelijks ophaalt), en de sportfocus is sinds 30-9 vastgelegd als drie kernsporten. De actie kan op 'niet doen' of worden herschreven.
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: 'Skisokken: moment bepalen' hangt samen met het conflict tussen het financieel plan (Q4 2027) en het feitenbestand ('binnenkort, geen datum'); zie de aantekening bij het financieel plan.

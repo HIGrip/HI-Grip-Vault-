@@ -211,3 +211,4 @@ Dominantie in rugby — een niveau dat geen enkel merk in Nederland bereikt heef
 - Vault: [[Beachhead Strategie]], [[Performance Grip Socks 2.0]], [[GEO Plan (2026-09-21)]], [[SEO Strategie & Keywords]], [[Sportlanding-systeem (21-9-2026)]], [[Influencer Database]], [[Voorbeelden Gevonden Organisaties (Events)]], [[Strategische Keuzes]]
 
 ## Aantekeningen
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: de activatie-actie noemt Rotterdam Cup, maar die is vervallen (besluit Lars 5-10: het toernooi bestaat niet meer, het domein staat te koop). Alleen Amsterdam Sevens (juni 2027) en de beach-events blijven over.

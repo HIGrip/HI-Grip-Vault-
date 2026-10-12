@@ -29,7 +29,7 @@ Werkthema "AI website workspace 2.0" (`201133490503`, laatst gewijzigd 11-10 12:
 
 ## Acties
 - [ ] P2 · Werkthema bijwerken met wat alleen live staat (bronnen en FAQ-link op de sportpagina's padel en voetbal, knopinstellingen van de testimonials-sectie, taalwissel-app T-Lab, primaire knoprand 1) zodat een push niets live wegschrijft
-- [ ] P2 · Twee afwijkingen in het werkthema rechtzetten vóór een push: "Vanaf €13,49" in `templates/collection.json` en het producttrio (feitenbestand: 1-pack €14,95) en maat "43-47" in `snippets/product-schema.liquid` (live 43-46)
+- [ ] P2 · Prijzen in het werkthema rechtzetten vóór een push: "Vanaf €13,49" in `templates/collection.json` en het producttrio (live 1-pack €14,95), en de 2.0 als €14,95 met doorgestreept €17,95 in het producttrio en `page.shop.json` (live €17,95 zonder korting)
 
 ## Bevindingen
 
@@ -43,7 +43,7 @@ Werkthema "AI website workspace 2.0" (`201133490503`, laatst gewijzigd 11-10 12:
 - **Kopniveau instelbaar (H1-H4 of geen kop)** in 13 AI-blokken.
 - **Sale-badge** op productkaarten bij een doorgestreepte prijs (`card-gallery`, `_product-card-gallery`).
 - **Homepage:** twee extra blokken (infographic en "Ontdek jouw sport"), hero-uitsnede aangepast.
-- **Prijzen** €14,99/€17,99 → €14,95/€17,95 in het producttrio en `page.shop.json`.
+- **Prijzen** €14,99/€17,99 → €14,95/€17,95 in het producttrio en `page.shop.json`. Let op: de 2.0 staat daar als €14,95 met doorgestreept €17,95, maar live kost de 2.0 €17,95 zonder korting. De maat 43-47 in `product-schema.liquid` klopt wel (live 2.0: 35-38 / 39-42 / 43-47); live staat nog 43-46.
 - **Blog "problemen in de sportwereld":** "Vier" → "Drie ondernemende sporters". **`page.json`:** retourtermijn 14 → 30 dagen.
 
 ### Nieuwe paginaconcepten, nog nergens gekoppeld

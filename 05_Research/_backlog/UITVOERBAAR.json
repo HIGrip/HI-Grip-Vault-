@@ -1511,11 +1511,11 @@
   "wat_claude_doet": "de wekelijkse EN-vertaalcontrole toevoegen aan de SEO-regressiecheck-routineprompt in de vault",
   "wat_jij_doet": "de aanpassing in de routineprompt controleren en goedkeuren"
  },
- "2026-10-12-werkthema-vs-live#a51c62aa": {
+ "2026-10-12-werkthema-vs-live#5f409a57": {
   "beoordeeld": "2026-10-12",
   "claude": "ja",
-  "wat_claude_doet": "Zet in het werkthema 'Vanaf' op €14,95 en de maat terug op 43-46, volgens het feitenbestand.",
-  "wat_jij_doet": "Bevestigen dat 43-46 klopt; niets live."
+  "wat_claude_doet": "Zet in het werkthema 'Vanaf' op €14,95 en de 2.0-prijs op €17,95 zonder korting, volgens live.",
+  "wat_jij_doet": "Controleren in de thema-preview; niets live."
  },
  "2026-10-12-werkthema-vs-live#c757fc2d": {
   "beoordeeld": "2026-10-12",

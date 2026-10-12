@@ -102,3 +102,4 @@ Het concept-artifact van de nieuwe Over ons (NhEKihrG6Y9MrWe1TM8smz) was niet le
 ## Aantekeningen
 
 - **Lars via Claude · 2026-10-12 12:30** — Referentie werkthema (zie [[2026-10-12-werkthema-vs-live]]): de nieuwe Missie- en Visie-pagina staan in het werkthema als `page.missie-2.json` en `page.visie-2.json` (mvm-/mvv-secties, met foundingDate en 4,6 ★). /pages/onze-missie en /pages/onze-visie gebruiken live nog hun oude templates. Niet live.
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: bij het besluit over de oprichtingsdatum: live zegt /pages/ons-verhaal sinds 11-10 'opgericht in december 2024' (thema-patch), en de nieuwe missie/visie-concepten in het werkthema hebben foundingDate in de hero. In de praktijk wordt december 2024 dus al gebruikt; het feitenbestand heeft nog geen datum.

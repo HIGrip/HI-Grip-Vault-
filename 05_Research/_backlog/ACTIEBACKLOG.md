@@ -42,6 +42,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)
 
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
+**Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
 ### [x] [regressie] Nieuwe `/en/`-sectie heeft een lege, keyword-loze title-tag (nieuw 21 sep 2026)
 **Bevestigd:** 11 oktober 2026 door actiecontrole — https://www.higrip.nl/en/ op 11-10: <title> = 'HÏ Grip | Performance Grip Socks for Athletes'; meta description Engels met keyword ('Performance grip socks made for football, tennis, padel and rugby... Shipped within 1 business day').
 **Waarom:** `sitemap.xml` bevat sinds deze week vier extra `/en/`-sub-sitemaps (products, pages, collections, blogs) die er bij de vorige check niet waren — een Engelse marktuitbreiding die niet in het projectgeheugen staat. `hreflang` (x-default/nl/en) staat correct op zowel NL- als EN-homepage en de canonical klopt, maar de EN-title is enkel `HÏ Grip` — exact hetzelfde probleem dat de NL-homepage vóór 15 september had.
@@ -57,6 +58,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Voortgangsbalk met "Nog €21,51 tot gratis verzending" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in "✓ Gratis verzending".
 **Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** deels klaar in het werkthema, niet live: balk in het winkelwagenvenster (`snippets/free-shipping-bar.liquid`, drempel als thema-instelling, standaard €35) en een vertrouwensregel op de 2.0-productpagina uit dezelfde drempel. Nog niet: de balk op de productpagina die per pack meerekent.
+**Update 12 okt 2026 (verouderd-check):** de prijsupdates hierboven kloppen niet meer. Live staat de 1.0 op 1-pack €14,95 · 3-pack €35,95 · 5-pack €54,95 (Section Store bundle-block; 3- en 5-pack tonen al 'Gratis verzending'). De balktekst bij een 1-pack blijft 'Nog €20,05 tot gratis verzending'. Het argument 'het 3-pack is per paar maar €0,17 goedkoper' vervalt: het scheelt nu €2,97 per paar. De €30 in de FAQ staat niet meer live.
 **Inspanning:** Half dagdeel
 
 ### [ ] 2. Reviewapp koppelen — pas dáárna AggregateRating (herzien 15 sep 2026)
@@ -84,6 +86,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).
 **Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
 **Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
+**Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
 **Inspanning:** 2 uur
 
 ---
@@ -133,6 +136,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** "€X,XX/paar" tonen onder elke pack-optie, herberekend per gekozen variant — ~~1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar~~ (achterhaald door prijswijziging, zie update).
 **Effect:** Versterkt samen met de gratis-verzendbalk (punt 1) de duw richting het 3-pack.
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** prijs per paar staat in het werkthema alleen in de tabel van de nieuwe vergelijkpagina (`vg-2-tabel`), nog niet bij de pack-selector.
+**Update 12 okt 2026 (verouderd-check):** beide prijsupdates hierboven zijn achterhaald. Live per paar: €14,95 / €11,98 / €10,99 (1-, 3- en 5-pack via het Section Store bundle-block op de 1.0-pagina). De pack-keuze bestaat alleen op de 1.0; de 2.0 heeft geen packs. De actiecontrole keek op de 2.0-pagina, dus haar bewijs zegt hier niets over.
 **Inspanning:** 1-2 uur
 
 ### [ ] 14. Controleer INP op productpagina en homepage — eigen JS is de waarschijnlijke boosdoener (nieuw 21 sep 2026)
@@ -167,6 +171,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.
 **Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.
 **Update 11 okt 2026 (SEO Health Score, [[2026-10-11-seo-audit-weekdelta]]):** nog steeds open. Op mobiel formaat laden de homepage en de 2.0-productpagina nog `bundler.nice-team.net` en `cdn-bundler.nice-team.net`, naast drie Trustpilot-domeinen en Ecomsend; in totaal 273–302 requests per pagina.
+**Update 12 okt 2026 (verouderd-check):** de packs op de 1.0-pagina komen van Section Store (bundle-block), niet van Bundler; het Bundler-blok op de pagina is leeg, maar `bundler.js` laadt nog. Test vóór het verwijderen van Bundler of de 3- en 5-pack-korting (€9 en €20) in de winkelwagen blijft werken. Er laden nu 4 Trustpilot-scripts, niet 3.
 **Inspanning:** 1 uur
 
 ### [ ] 19. [search-console] Titel/meta van `/pages/ontdek-jouw-sport` herschrijven (nieuw 30 sep 2026)

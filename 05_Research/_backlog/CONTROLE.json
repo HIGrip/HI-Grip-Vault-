@@ -1519,11 +1519,12 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-missie-visie-pagina#ee0a98f2": {
-   "bewijs": "Besluit-actie: vereist een menselijke keuze, niet automatisch waar te nemen; staat nog open.",
-   "controle": "Is dit besluit genomen door Lars/het team?",
-   "gecontroleerd": "2026-10-11",
+   "bewijs": "Beide: socialprofielen in het feitenbestand vastleggen voor sameAs; de actie van 8-10 neemt ook Trustpilot en KvK mee.",
+   "controle": "Zelfde besluit als een andere open actie (opschoning 12-10, op verzoek van Lars).",
+   "dubbel_van": "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#e7779385",
+   "gecontroleerd": "2026-10-12",
    "methode": "geen",
-   "uitkomst": "handmatig"
+   "uitkomst": "dubbel"
   },
   "2026-10-07-notebooklm-ai-agent-tiktoks#11bb9243": {
    "bewijs": "niet te controleren: serververbinding van een losse integratie, geen tool hiervoor beschikbaar",

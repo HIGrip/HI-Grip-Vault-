@@ -630,3 +630,5 @@ Prioriteit hieronder volgt de legenda van de bron: 🔴 rechtsrisico loopt nu al
 - Portalen: upvtextiel.nl · verpact.nl · echa.europa.eu · acm.nl · autoriteitpersoonsgegevens.nl · belastingdienst.nl · douane.nl
 
 ## Aantekeningen
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: §5.1 noemt '1.500+ sporters onderbouwen'. Het claimcijfer is sinds 11-10 3500+ (besluit Lars), dus het bewijsdossier moet 3500+ onderbouwen.
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: §5.4 duurzaamheidsclaims: de deadline (richtlijn (EU) 2024/825, 27 september 2026) is verstreken. De actie is niet verouderd maar te laat; vandaag zijn er geen duurzaamheidsclaims op home of de productpagina gevonden.

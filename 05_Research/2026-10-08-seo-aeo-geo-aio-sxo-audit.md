@@ -103,3 +103,4 @@ Na ±26 verzoeken blokkeerde Shopify's botbescherming mijn verbinding (HTTP 403 
 ## Aantekeningen
 
 - **Lars via Claude · 2026-10-11 17:30** — Afgevinkt: "Besluit: het aantal oprichters vastleggen (het feitenbestand zegt drie…" Bewijs: besluit Lars 11-10: drie founders; /pages/over-ons en /pages/ons-verhaal zeggen nu drie (crawl 11-10).
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: het besluit over InStock in het 2.0-schema: de voorraad is op 12-10 nog negatiever (−77 paar over 6 varianten). Het feitenbestand houdt sinds 11-10 geen voorraad meer bij; kijk live in Shopify.

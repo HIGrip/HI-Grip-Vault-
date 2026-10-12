@@ -186,3 +186,4 @@ deadline: ""
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] voor de opzet van identiteit en soul
 
 ## Aantekeningen
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: het besluit 'waar staat de vault' gaat uit van OneDrive (C:\Users\Test\OneDrive\…). Op de pc van Lars staat de werkende vault in C:\Users\lars\Documents\ObsidianVault (git); de OneDrive-kopie daar is van juli en verouderd. Dat maakt de actie 'paden vault-relatief maken' belangrijker.

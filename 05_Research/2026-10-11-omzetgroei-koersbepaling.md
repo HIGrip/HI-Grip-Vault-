@@ -134,3 +134,4 @@ Niets hiervan wijkt af van het Canva-document. Tactiek 03 (B2B) staat er al in, 
 - [[Feiten & Actuele Staat]] · [[Performance Grip Socks 2.0]]
 
 ## Aantekeningen
+- **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: voorraad live op 12-10 (Shopify): 2.0 zwart −43 (−3/−19/−21) en wit −34 (−7/−9/−18), samen −77 paar in plaats van −67. De 1.0 heeft 161 paar (95 in 34-39, 66 in 40-46) in plaats van 162. De cijfers in de besluiten over de 2.0-voorraad en de Black Friday-actie zijn dus licht verouderd; de vraag zelf blijft staan.

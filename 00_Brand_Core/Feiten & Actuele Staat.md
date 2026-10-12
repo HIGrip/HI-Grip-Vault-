@@ -36,11 +36,12 @@ laatst-geverifieerd: 2026-10-11
 
 | Product                          | Handle                             | Maten                 | Prijs                                                     | Geverifieerd                      |
 | -------------------------------- | ---------------------------------- | --------------------- | --------------------------------------------------------- | --------------------------------- |
-| Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€14,95** · 3-pack **€41,95** · 5-pack **€64,95** | 2026-10-01 (Shopify-koppeling) |
+| Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€14,95** · 3-pack **€35,95** · 5-pack **€54,95** (live, via app-bundel; besluit open, zie hieronder) | 2026-10-12 (Shopify-koppeling + productpagina) |
 | Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
 | Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
 
-- Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, sinds de update van 28-9 weer €14,95 / €41,95 / €64,95 (per paar €14,95 / €13,98 / €12,99).
+- Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, na 28-9 €14,95 / €41,95 / €64,95. **Live op 12-10:** de packs zijn geen Shopify-varianten maar een Section Store bundle-block op de productpagina: 3-pack €35,95 (doorgestreept €44,85, "€9 korting") en 5-pack €54,95 (doorgestreept €74,75, "€20 korting"), beide met gratis verzending. Per paar: €14,95 / €11,98 / €10,99. Welke packprijs bedoeld is, is een open besluit van Lars (actie `2026-10-07-shoppagina-keuzepagina#def2b0a4`); tot dan geldt de live prijs.
+- Voorraad: niet in dit bestand (besluit 11-10). Ter info op 12-10: 1.0 161 paar, 2.0 zwart −43 en wit −34 (negatief).
 - Adviesprijs retail 2.0: **€17,95**, gelijk aan de webshopprijs (besluit Lars 2-10-2026; de one-pagers noemden €17,99).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
@@ -96,6 +97,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-10-12 — Packprijzen 1.0 bijgewerkt naar de live stand (3-pack €35,95, 5-pack €54,95 via Section Store bundle-block; €41,95/€64,95 staat nergens meer live). Besluit over de bedoelde packprijs blijft open bij Lars. Maten 2.0 live bevestigd: 35-38 · 39-42 · 43-47. Live gecontroleerd door Claude op verzoek van Lars.
 - 2026-10-11 — Concurrentenlijst aangevuld met de online stand per merk (live gecontroleerd): Optigrip alleen via bol.com, Tapedesign via grip2perform.nl, Stepzz zonder NL-site. Zie [[2026-10-11-concurrentie-seo-per-merk]].
 - 2026-10-11 — Besluiten Lars: aantal sporters wordt 3500+ (tijdlijn over-ons blijft 3000+); het feitenbestand houdt geen voorraad meer bij (voorraad altijd live in Shopify bekijken).
 - 2026-10-02 — Besluiten Lars: reviewscore 4,6 (Trustpilot) is het merkcijfer; adviesprijs retail 2.0 = €17,95, gelijk aan de webshop.

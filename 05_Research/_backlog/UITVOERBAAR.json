@@ -929,6 +929,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Dit besluit nemen"
  },
+ "2026-09-30-search-console#0b8e490a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven titel/meta voor /pages/ontdek-jouw-sport als concept",
+  "wat_jij_doet": "Concept plakken in Shopify admin"
+ },
  "2026-10-02-ai-in-het-dashboard#2cc0d27b": {
   "beoordeeld": "2026-10-11",
   "claude": "nee",
@@ -1283,6 +1289,24 @@
   "wat_claude_doet": "Organization.url en https://schema.org-context corrigeren in het testthema",
   "wat_jij_doet": "Controleren en live zetten"
  },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#3fea034e": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Lijst met EAN's per variant (onderzoek/opzoekwerk)",
+  "wat_jij_doet": "EAN's invullen als barcode in Shopify admin"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#5365674b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Canonical-codevoorstel in het testthema",
+  "wat_jij_doet": "301/canonical live instellen in Shopify admin"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#60ffc8ac": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Aangevuld artikelconcept of 301-voorstel",
+  "wat_jij_doet": "Artikel aanvullen/verwijderen en 301 instellen"
+ },
  "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#77cac544": {
   "beoordeeld": "2026-10-11",
   "claude": "deels",
@@ -1306,6 +1330,12 @@
   "claude": "ja",
   "wat_claude_doet": "Interne links van de 23 blogs naar sport-/productpagina's voorbereiden",
   "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7e8af504": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-titel/meta voor de canonieke productpagina",
+  "wat_jij_doet": "301 instellen of titel/meta plakken in Shopify admin"
  },
  "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#805ddfe0": {
   "beoordeeld": "2026-10-11",
@@ -1427,6 +1457,36 @@
   "wat_claude_doet": "Herschreven hoofdgids 'Wat zijn gripsokken?' (1200+ woorden, bronnen, links) als conceptartikel schrijven",
   "wat_jij_doet": "Beoordelen en publiceren"
  },
+ "2026-10-11-concurrentie-seo-per-merk#0496d928": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide keuzegids-tekst voor /pages/gripsokken-voor-voetbal als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven meta description als concept",
+  "wat_jij_doet": "Meta plakken in Shopify admin"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#4420908c": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Voorstel om backlogpunt 6 bij te werken (tekst schrappen)",
+  "wat_jij_doet": "Besluit bevestigen"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptcopy (title/H1/intro) voor witte/zwarte gripsokken-collecties",
+  "wat_jij_doet": "Nieuwe collecties aanmaken en live zetten in Shopify admin"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#d2cc641d": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Prijsanalyse/voorstel voor een 3-pack bij de 2.0",
+  "wat_jij_doet": "Besluit nemen en prijs/pack live instellen in Shopify"
+ },
  "2026-10-11-omzetgroei-koersbepaling#081017d7": {
   "beoordeeld": "2026-10-11",
   "claude": "nee",
@@ -1493,6 +1553,12 @@
   "wat_claude_doet": "gecorrigeerde EN-H1-teksten en vertaling 'Grip socks for' voorbereiden in het testthema",
   "wat_jij_doet": "de titelvelden in de live sport-hero en Translate & Adapt bijwerken"
  },
+ "2026-10-11-seo-audit-weekdelta#a37c4e83": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide oprichtersverhaal-tekst voor /pages/ons-verhaal als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
  "2026-10-11-seo-audit-weekdelta#a938ea37": {
   "beoordeeld": "2026-10-12",
   "claude": "deels",
@@ -1510,6 +1576,168 @@
   "claude": "ja",
   "wat_claude_doet": "de wekelijkse EN-vertaalcontrole toevoegen aan de SEO-regressiecheck-routineprompt in de vault",
   "wat_jij_doet": "de aanpassing in de routineprompt controleren en goedkeuren"
+ },
+ "2026-10-12-blogs-stappenplan#04c7ed95": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de verzorgingsblog",
+  "wat_jij_doet": "Oud artikel verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#0a106c79": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide verzorgingsblog-tekst (900-1.200 woorden) als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#0ad43436": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de pilatesblog",
+  "wat_jij_doet": "Oud artikel verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#1448275a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Auteurstekst (naam + één regel achtergrond) als concept",
+  "wat_jij_doet": "Foto van de auteur en plaatsing in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#16eea17b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Volledige hoofdgids-tekst (1.400-1.600 woorden) als concept",
+  "wat_jij_doet": "Concept plakken en publiceren in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#1b7a34a5": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "CSV-redirectregel en controle dat het doelartikel klaar is",
+  "wat_jij_doet": "Blogpost verwijderen en de 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#287aebbc": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "CSV-redirectregel en controle dat het doelartikel klaar is",
+  "wat_jij_doet": "Blogpost verwijderen en de 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#308272a7": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven voetbalblog-tekst \"Beste gripsokken voetbal 2026\" als concept",
+  "wat_jij_doet": "Concept publiceren en 301 instellen"
+ },
+ "2026-10-12-blogs-stappenplan#382a06c0": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept voor de 301-doelpagina (of een notitie voor over-ons)",
+  "wat_jij_doet": "Artikel verwijderen en 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#40c4a507": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Search Console-vergelijking per blog na 4/8 weken, met conclusie",
+  "wat_jij_doet": "Resultaat beoordelen"
+ },
+ "2026-10-12-blogs-stappenplan#41609879": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-301-planning",
+  "wat_jij_doet": "Hub afmaken en 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#42cbed6f": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Lichte tekstcorrecties per artikel als concept",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#4b1810bd": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven titels/meta's per artikel als concept",
+  "wat_jij_doet": "Concepten plakken in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#6fc78586": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-meta zonder \"nu beperkt op voorraad\"",
+  "wat_jij_doet": "Meta plakken in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#846846fc": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Voorstel voor 301-doel of nieuwe URL als concept",
+  "wat_jij_doet": "Besluit nemen en 301/URL live instellen"
+ },
+ "2026-10-12-blogs-stappenplan#9602726a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven wetenschapsblog-tekst volgens de formuleringsregel",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#a248abc5": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Twee nieuwe blogconcepten voor tennis/padel",
+  "wat_jij_doet": "Concepten publiceren in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#a2c621ef": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Herschreven blessureblog-concept met bronnen per claim",
+  "wat_jij_doet": "Concept laten nakijken door een fysio/trainer, dan publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#a40f4929": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Opgefriste pilatesblog-tekst als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#b12308d8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "CTA-link aangepast in het Shopify-testthema",
+  "wat_jij_doet": "Testthema selectief live zetten"
+ },
+ "2026-10-12-blogs-stappenplan#b56317d8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor waarom-hi-grip-gripsokken",
+  "wat_jij_doet": "Oude artikelen verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#bcecbd1c": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe titel/H1/intro voor /blogs/trends en /blogs/hi-grip als concept",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#debc3db4": {
+  "beoordeeld": "2026-10-13",
+  "claude": "nee",
+  "wat_claude_doet": "niets, wacht op de rugby-pagina",
+  "wat_jij_doet": "Rugby-sportpagina eerst publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#e2a7fd66": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de blessureblog",
+  "wat_jij_doet": "Oude artikelen verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#eb0152d7": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept met de gecorrigeerde link",
+  "wat_jij_doet": "Link vervangen in Shopify admin en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#f5b232b8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten met links naar sport-, product- en artikelpagina's per artikel",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#f73bcbeb": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Feitencheck per artikel met correcties als concept",
+  "wat_jij_doet": "Correcties plakken en publiceren"
  },
  "2026-10-12-werkthema-vs-live#5f409a57": {
   "beoordeeld": "2026-10-12",
@@ -1547,6 +1775,12 @@
   "wat_claude_doet": "Schrijft de bewijspagina (meetmethode, tabel, bron) als concept en pagina-template in het testthema.",
   "wat_jij_doet": "Meetdata en bron aanleveren, daarna pagina publiceren."
  },
+ "backlog#246c61d9": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten voor verzendbeleid/retourbeleid/terugbetalingsbeleid en de oude policies-pagina's, gelijkgetrokken",
+  "wat_jij_doet": "Teksten in Instellingen → Policies plakken en publiceren"
+ },
  "backlog#2f69e0df": {
   "beoordeeld": "2026-09-26",
   "claude": "ja",
@@ -1583,6 +1817,12 @@
   "wat_claude_doet": "Bouwt de verzenddrempel-balk (Liquid + CSS + vanilla JS, rekent mee per pack) in het testthema.",
   "wat_jij_doet": "Testthema bekijken en live publiceren."
  },
+ "backlog#8d435a25": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-titel en meta description voor de \"waarom HÏ Grip\"-blog",
+  "wat_jij_doet": "Tekst in Shopify admin plakken"
+ },
  "backlog#8f8db388": {
   "beoordeeld": "2026-09-26",
   "claude": "deels",
@@ -1594,6 +1834,12 @@
   "claude": "ja",
   "wat_claude_doet": "Controleert of higrip.nl naar de VS verzendt en meldt of het punt geblokkeerd blijft.",
   "wat_jij_doet": "Besluiten of VS-verzending gewenst is."
+ },
+ "backlog#a1f3e1a2": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-titel en meta description voor de verzorgingsblog, NL en EN",
+  "wat_jij_doet": "Teksten in Shopify admin plakken"
  },
  "backlog#a2e3406d": {
   "beoordeeld": "2026-09-26",

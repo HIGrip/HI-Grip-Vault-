@@ -60,7 +60,7 @@ Week 1 redirects + hreflang · week 1-2 structured data · week 2 drafts publice
 
 ## Acties
 
-- [ ] P3 · Verouderde URL's met numeriek ID en zonder `/pages/`-prefix in de Google-index controleren (HTTP-status) en 301'en naar de Shopify-equivalenten
+- [x] P3 · Verouderde URL's met numeriek ID en zonder `/pages/`-prefix in de Google-index controleren (HTTP-status) en 301'en naar de Shopify-equivalenten
 - [x] P3 · hreflang en canonicals tussen higrip.nl en /en controleren — of besluit 4 uit het werkdossier (Engels uitzetten) nemen
 - [ ] P3 · Maattabel-widget met schoenmaat-omrekening bij de variant-selector overwegen
 - [x] P3 · Cloud-routine "website" (`trig_01BKt9WCeR9H92FDcS9HtPvV`) uitzetten of voorzien van repo + egress-toegang tot higrip.nl — draait nu dagelijks zonder de site te kunnen bereiken

@@ -150,5 +150,15 @@
   "status": "klaar",
   "titel": "Beleid plakken in Instellingen → Beleid (refund, verzending, voorwaarden art. 4 en 6) uit `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`",
   "toelichting": ""
+ },
+ "backlog#6050edaa": {
+  "aangevraagd_door": "lars",
+  "actie_id": "backlog#6050edaa",
+  "bijgewerkt": "2026-10-13T05:02:50+02:00",
+  "goedgekeurd_door": "lars",
+  "goedgekeurd_ts": "2026-10-12T11:16:42.345000+00:00",
+  "status": "goedgekeurd",
+  "titel": "4. Controleer je variant-ID's tegen de Merchant Center-eis van maart 2026 (herzien 16 sep 2026 — opgewaardeerd naar P1)",
+  "toelichting": ""
  }
 }

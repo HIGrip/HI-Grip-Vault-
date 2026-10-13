@@ -605,7 +605,7 @@ Prioriteit hieronder volgt de legenda van de bron: 🔴 rechtsrisico loopt nu al
 - [x] P2 · §4.4 ODR-link uit footer en voorwaarden halen, vervangen door eigen klachtenprocedure
 - [ ] P3 · §4.5 Keurmerk overwegen: Thuiswinkel Waarborg of WebwinkelKeur
 - [ ] P1 · §5.1 Bewijsdossier gripclaims: bron van "95%" en "1.17" achterhalen, zo nodig labtest, goedgekeurde formulering vastleggen, "1.500+ sporters" onderbouwen
-- [ ] P1 · §5.2 Van-prijzen toetsen aan de 30-dagenregel en een prijslogboek aanleggen
+- [x] P1 · §5.2 Van-prijzen toetsen aan de 30-dagenregel en een prijslogboek aanleggen
 - [ ] P2 · §5.3 Reviewbeleid publiceren (alinea bij reviewsectie + pagina)
 - [ ] P2 · §5.4 Duurzaamheidsclaims screenen — richtlijn (EU) 2024/825 van toepassing vanaf 27 september 2026 (deadline)
 - [ ] P3 · §5.5 Influencer-clausule (#advertentie, geen onbewezen claims) in alle samenwerkingscontracten

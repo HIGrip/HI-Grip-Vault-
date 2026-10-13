@@ -104,6 +104,7 @@ Eerste keer dat deze procedure is toegepast — zie [[Conversie Optimalisatie Ch
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
 - [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
 

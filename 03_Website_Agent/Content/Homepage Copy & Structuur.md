@@ -58,4 +58,10 @@ Homepage opent goed op Systeem 1: actie/promotie, tagline, visuele banner — v�
 - [[Website Structuur & Sitemap]] — Volledige sitemap
 - [[Conversie Optimalisatie Checklist]] — Actiepunten
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

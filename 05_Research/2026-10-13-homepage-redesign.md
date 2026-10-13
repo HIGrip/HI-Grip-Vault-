@@ -148,6 +148,7 @@ PageSpeed Insights gaf HTTP 429, dus er zijn geen CrUX-veldwaarden (INP). Lighth
 - Volledige rapporten: `C:\Users\Test\.claude\plans\homepage-2026-10\` (BRIEF, out-design, out-copy, out-cro, out-seo, out-benchmark)
 - Werkthema "AI website workspace 2.0" `201133490503`, read-only gepulld naar `C:\Users\Test\ai-workspace-2.0`
 - Live: https://www.higrip.nl/ en https://www.higrip.nl/pages/over-ons (13-10)
+- **Prototype v4 (gebouwd 13-10 op basis van dit plan, niet live):** https://claude.ai/artifact/KWuQn9iWGcGtxCKsod1HGA. Bron: `C:\Users\Test\.claude\plans\homepage-2026-10\` (spec) en de scratchpad-HTML.
 - Artifacts: [HÏ Grip 2.0 in 360°](https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94), [Homepage-analyse 13-08](https://claude.ai/artifact/5XAT2gCpT7eeMhZvdmFW5M)
 - GA4 property uit het feitenbestand (29 aug – 12 okt); Littledata Shopify-benchmark jul–okt 2026; Apps et al. 2022 (doi 10.1080/02640414.2022.2080163)
 - Kennis: [[Homepage Copy & Structuur]], [[Technische Procedures]], [[Sportlanding-systeem (21-9-2026)]], [[Feiten & Actuele Staat]]

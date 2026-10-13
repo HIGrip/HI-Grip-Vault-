@@ -25,6 +25,8 @@ De homepage is de enige landingspagina die verkoopt (7 van 7 GA4-aankopen), maar
 
 Voorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° → bewijs 1,17 → productkeuze met prijs → missie → vertrouwen → zakelijk → FAQ), motion in de stijl van Over ons (kinetic outline→vol, ab-up-reveal, tellers, scroll-gestuurde 360° van de bestaande 206 frames, marquee die reageert op scrollsnelheid) met maximaal 14 KB extra JS en zonder GSAP. **Volgorde van werken:** eerst het meetfundament en het opruimen van JavaScript, dan structuur en copy, motion als laatste.
 
+**Let op: er bestaat al een homepage-concept v3 (07-10).** Het artifact staat op een ander account (https://claude.ai/artifact/5Tw9YZMfqT5xS8hqKruQz9) en was in deze sessie niet leesbaar; het werd pas na het onderzoek gevonden in [[Agent Werk & Kwaliteit Overzicht]]. Lars heeft het al drie keer bijgestuurd: lichte basis in Pitched-structuur, eigen HÏ Grip-header/-footer, gepinde horizontale merkboodschap, Insta/TikTok-feed. Dit onderzoek is daarom **input voor v4 van dat concept, geen vervanging.** De vergelijking staat onder Bevindingen.
+
 ## Kerncijfers
 - **47%** · Aandeel van / in GA4-sessies (263 van 560, 29 aug – 12 okt)
 - **64%** · Engagement op / tegen 26% op andere landingspagina's
@@ -32,6 +34,7 @@ Voorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° 
 - **3.886 px** · Positie H1 op mobiel (±4,8 schermen)
 
 ## Acties
+- [ ] P1 · Besluit: dit onderzoek verwerken in homepage-concept v3 (artifact 5Tw9YZMfqT5xS8hqKruQz9) als v4, in plaats van een nieuw concept te starten
 - [ ] P1 · Besluit: hero-kop A "STOP MET GLIJDEN." (probleem) of B "GA DOOR WAAR ANDEREN STOPPEN." (identiteit), met eyebrow PERFORMANCE GRIPSOKKEN en de vier sporten
 - [ ] P1 · Besluit: hoofd-CTA in de hero naar het 2.0-product of naar /collections/gripsokken
 - [ ] P1 · Besluit: 360°-onthulling in de eerste bouwronde of pas na het opruimen van JavaScript (Design wil sectie 3, Conversie zet hem op prioriteit 10)
@@ -50,6 +53,18 @@ Voorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° 
 - [ ] P3 · Technische Procedures bijwerken: live thema is nu 202394272071, er is ook 202398040391 "Bijgewerkte kopie van AI website workspace 2.0"
 
 ## Bevindingen
+
+### Vergelijking met homepage-concept v3 (07-10, beschrijving uit het dashboard)
+v3: hero → productkaarten wit/zwart → 360-video → merkboodschap "De laatste game/minuut/scrum" (gepinde horizontale scroll) + cijfers → sporten → logoband "Vertrouwd door:" + zakelijk → FAQ. Lichte basis, 50/50-splits, hairlines, pill-CTA.
+- **Klopt met dit onderzoek:** product met prijs vroeg (Conversie #3 en de sokkenmerken in de benchmark), 360° onder de vouw, partnerlogo's samen met zakelijk (benchmarkpatroon 8), founders/Over ons-stijl, één idee per sectie.
+- **Toevoegen aan v4:**
+  - H1 met claim en sport plus een trustregel (4,6 ★ Trustpilot · 3000+) in het eerste scherm.
+  - Bewijsregel 0,60 → 1,17 met bron bij de cijfers.
+  - Sportkiezer hoger (nu 5e).
+  - Motionbudget: 360° als scroll-gestuurde frames op canvas in plaats van video (zie motion-spec), pas laden na LCP.
+  - Meetevents.
+- **Niet overnemen uit het Design-voorstel van vandaag:** de donkere zwart/blauw-afwisseling botst met Lars' keuze voor een lichte basis in v2/v3. Pas de motion-spec toe op de lichte basis van v3.
+- **Open punten uit v3 die hier terugkomen:** h1-tekst (copy vs SEO), partners achter 4 logobestanden, rugbyfoto, voorraad 2.0, retour 14/30 dagen.
 
 ### Huidige homepage (live, gemeten 13-10 op 1440×900 en 375×812)
 Volgorde: hero (288 px desktop / 272 mobiel) → drie waarden COMFORT/VERTROUWEN/INNOVATIE → 2.0-hero → 2.0 zwart → drie tegels (verhaal, shop, zakelijk) → sport-teaser met H1 en tennis/voetbal/padel → B2B → "vertrouwd door" → marquee → FAQ. De hero is op desktop maar 288 px hoog, dus het eerste scherm toont al de waardenkaarten. Op mobiel bedekt de cookiebanner bij binnenkomst de onderste helft van het eerste scherm.

@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 13 oktober 2026 (actiecontrole)
-Open: 20 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
+Laatst bijgewerkt: 13 oktober 2026 (growth-radar)
+Open: 21 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -210,6 +210,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 ---
 
 ## P3 — Op de radar
+
+### [ ] 23. Handmatige factcheck verplichten voor AI-gegenereerde teksten vóór publicatie (nieuw 13 okt 2026)
+**Waarom:** Google's Search Central-documentatie noemt het sinds 1 oktober 2026 "critical" om AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie — titels, meta descriptions, structured data en alt-tekst vallen daaronder. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Geen nieuwe rankingfactor of penalty aangekondigd, wel een scherpere verwachting voor wie AI gebruikt bij het schrijven van content.
+**Waar:** Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.
+**Wat:** Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims.
+**Gevonden op:** 13 oktober 2026 (Growth Radar, SEO-content)
 
 ### [ ] 9. Padel-creators op prestatiebasis in plaats van vaste vergoeding (herzien 18 sep 2026, aangevuld 25 sep 2026)
 **Update 25 sep 2026:** Derde route naast doorklikken en TikTok Shop: Meta's Creator Marketing Hub (wereldwijde uitrol t/m eind 2026) zet een creatorpost met één klik om naar een partnership ad vanaf je eigen account. Werkt pas als punt 10 staat.

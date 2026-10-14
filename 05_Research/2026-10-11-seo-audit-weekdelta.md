@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Zoekverkeer is in een week sterk gegroeid (Search Console 61 klikken tegen 18, GA4 organisch 70 sessies tegen 32, 4 key events tegen 0), maar dat komt vooral door merkzoekopdrachten: op de site zelf is van de open punten uit de audits van 8-10 alleen de oprichterstekst op /pages/over-ons aangepast. De vertrouwens- en claimfouten (22:00-belofte en blessureclaim in schema, demo-tekst, tegenstrijdig retourbeleid) staan nog live, en er is een nieuwe tegenspraak bij gekomen: 3500+ sporters op bijna elke pagina tegen 3000+ in het feitenbestand. Na de live-fixes van 11-10 komt de SEO Health Score uit op 58/100, tegen 54 op 25-9 met dezelfde methode."
-gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-25-seo-audit, 2026-10-12-regressiecheck, 2026-10-12-seo-conversietest-run-4, 2026-10-11-concurrentie-seo-per-merk, 2026-10-12-werkthema-vs-live]
+gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-25-seo-audit, 2026-10-12-regressiecheck, 2026-10-12-seo-conversietest-run-4, 2026-10-11-concurrentie-seo-per-merk, 2026-10-12-werkthema-vs-live, 2026-10-14-search-console]
 vervangt: []
 bronbestand: ""
 deadline: ""

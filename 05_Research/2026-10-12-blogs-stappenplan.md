@@ -9,14 +9,14 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Van de 23 blogs leveren er 4 samen 90% van alle Search Console-vertoningen (1.634 van 1.815 in 90 dagen), 7 hebben er nul en 13 minder dan 15; samen 23 klikken in 90 dagen. Stappenplan: 2 lege/off-topic posts weg, 9 posts samenvoegen in 4 sterke artikelen met 301's, de survivors herschrijven volgens één vaste opbouw met actuele feiten, en daarna pas nieuwe posts voor de beachhead-sporten."
-gerelateerd: [2026-10-11-seo-audit-weekdelta, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-11-seo-audit-weekdelta, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-11-concurrentie-seo-per-merk, 2026-10-14-search-console]
 vervangt: []
 bronbestand: "03_Website_Agent/Analyse/SEO-audit 2026-09-25/findings/cluster-plan.json"
 deadline: ""
 ---
 # Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
 
 ## In het kort
 

@@ -1751,6 +1751,102 @@
   "wat_claude_doet": "Neemt de live-versies van de sportpagina-templates, ss-testimonial-8 en de instellingen over in het werkthema (alleen werkthema).",
   "wat_jij_doet": "Controleren in de thema-preview; niets live."
  },
+ "2026-10-13-homepage-redesign#166eeeb9": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen of de 360°-onthulling in de eerste bouwronde komt of pas na het opruimen van JavaScript."
+ },
+ "2026-10-13-homepage-redesign#26bbb772": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptpagina en liquid-sectie voor /pages/gripsokken-voor-rugby opzetten in het werkthema, inclusief rugbytegel in de sportkiezer (zonder foto).",
+  "wat_jij_doet": "Rugbyfoto laten schieten, concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4867b36b": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "FAQ-antwoorden 4 en 7 aanpassen van 'uw' naar 'je' in het werkthema (sectie + snippets/faq-schema.liquid).",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4916b32e": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptopschoning van inline ai_gen-scripts en dubbele CSS (gripsocks2-launch.css, padel-page.css) in het werkthema.",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4bf416c7": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptplan en eventuele code-snippets voor de events (sportkiezer-klik, 360°-interactie, scrolldiepte) in het werkthema.",
+  "wat_jij_doet": "Events in GA4 configureren/valideren en de 4 weken baseline-meting starten en afwachten."
+ },
+ "2026-10-13-homepage-redesign#5ab8bae9": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen tussen de blauwe bewijssectie of wit met volt-markering."
+ },
+ "2026-10-13-homepage-redesign#7aefe7a8": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of de H1/H2-afspraak ook voor de homepage geldt."
+ },
+ "2026-10-13-homepage-redesign#907cdb2d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets (brondata ontbreekt)",
+  "wat_jij_doet": "De 206 frames van het 360°-artifact aanleveren/exporteren naar Shopify Files, of Claude toegang geven tot de brondata."
+ },
+ "2026-10-13-homepage-redesign#98beb4c6": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptvariant B van title/meta (merk en entiteit) opstellen voor latere test.",
+  "wat_jij_doet": "Op het juiste moment (na lancering van variant A) testen en live zetten."
+ },
+ "2026-10-13-homepage-redesign#9bad2193": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of dit onderzoek als v4 in het bestaande concept v3 verwerkt wordt, of dat er een nieuw concept start."
+ },
+ "2026-10-13-homepage-redesign#9be19de6": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Beoordelen welke van de 8 marquee-afbeeldingen echte klantlogo's zijn."
+ },
+ "2026-10-13-homepage-redesign#c2d600ea": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen waar de hoofd-CTA in de hero naartoe gaat."
+ },
+ "2026-10-13-homepage-redesign#d831d95d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets (beide hero-kopopties staan al klaar in de notitie)",
+  "wat_jij_doet": "Kiezen tussen hero-kop A of B."
+ },
+ "2026-10-13-homepage-redesign#e1d8501a": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of page_transition_enabled bewust aan moet staan, afgewogen tegen de eerste-paint-vertraging."
+ },
+ "2026-10-13-homepage-redesign#f2c44e5d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Testtemplate page.home-nieuw.json opzetten in het werkthema (CSS → Liquid → JS) zodra de besluiten hierboven genomen zijn.",
+  "wat_jij_doet": "De besluiten nemen, daarna het concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#ff235e99": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptaanpassing in het werkthema: '3500+' teruugzetten naar '3000+' in header-group.json, de Over-ons-tijdlijnkop en de presets van gripsocks2-proof/sport-proof.",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
@@ -1894,6 +1990,12 @@
   "claude": "deels",
   "wat_claude_doet": "Checkt via connector en site welke trackingscripts vuren en of pixels via officiele apps lopen; levert een rapport met wat ontbreekt.",
   "wat_jij_doet": "Ontbrekende apps (Meta, Google) in Shopify installeren of koppelen."
+ },
+ "backlog#eaa40e7c": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptregel voor de verplichte factcheck opstellen (bijv. voor CLAUDE.md of een routine-prompt).",
+  "wat_jij_doet": "Besluiten of/hoe dit verplicht wordt en de regel vastleggen."
  },
  "backlog#eb6e2f26": {
   "beoordeeld": "2026-09-26",

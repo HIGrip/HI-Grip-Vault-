@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 13 oktober 2026 (growth-radar)
-Open: 21 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
+Laatst bijgewerkt: 14 oktober 2026 (search-console)
+Open: 24 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -87,6 +87,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
 **Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
 **Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
+**Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.
 **Inspanning:** 2 uur
 
 ---
@@ -164,6 +165,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Canonical tags en interne links tussen de vier genoemde URL's
 **Wat:** Bepalen welke pagina primair moet ranken voor "grip socks" (waarschijnlijk `/en/collections/gripsokken` of `/collections/gripsokken`) en de overige pagina's daarnaartoe laten doorverwijzen in interne links/canonical.
 **Gevonden op:** 25 september 2026 (Search Console & rankings)
+**Update 14 okt 2026 (Search Console & rankings):** hetzelfde patroon geldt nu ook voor de Nederlandse variant "grip sokken" — verdeeld over `/collections/all` (14 vert./7d, positie 19,4), de oude productURL (6 vert.) en `/` (3 vert.). "Grip socks" (EN) zelf is inmiddels over negen eigen URL's verdeeld (28 dagen) in plaats van vier. Zelfde actie, nu voor beide taalvarianten.
 
 ### [ ] 16. Script-tag-apps overzetten vóór 1 maart 2027 — en Bundler-restanten opruimen (nieuw 24 sep 2026)
 **Waarom:** Shopify stopt script tags in de Online Store op 1 maart 2027 (developer-changelog, 24 aug 2026). Op higrip.nl laden via script tags nu nog de Bundler-app (`cdn-bundler.nice-team.net`) en drie Trustpilot-scripts. Het projectgeheugen noemt de Bundler-app verwijderd na de WK-actie, maar live staan nog het script plus negen `bundler`-verwijzingen in de HTML — onnodig JavaScript dat ook punt 14 (INP) raakt. Trustpilot is je zichtbare review-proof; die mag niet stilletjes wegvallen.
@@ -192,6 +194,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 8 oktober 2026 (Search Console & rankings)
 
+### [ ] 25. [search-console] Titel/meta van `/en/pages/gripsokken-voor-voetbal` herschrijven (nieuw 14 okt 2026)
+**Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt goed — positie 7,6 (7 dagen, 65 vertoningen) resp. 7,3 (28 dagen, 107 vertoningen) — maar trok in geen van beide periodes één klik (0% CTR). Zelfde patroon als bij de al bekende punten 19, 21 en 22: een goede positie zonder klikken wijst op een titel/omschrijving die niet aansluit bij de zoekintentie.
+**Waar:** `/en/pages/gripsokken-voor-voetbal` — titel en meta description via Shopify admin
+**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie (o.a. "football grip socks", "grip socks football"); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
+**Gevonden op:** 14 oktober 2026 (Search Console & rankings)
+
+### [ ] 26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)
+**Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.
+**Waar:** `/en/products/performance-gripsokken` — titel en meta description via Shopify admin
+**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
+**Gevonden op:** 14 oktober 2026 (Search Console & rankings)
+
 ### [ ] 20. Shopify conversieratio-meetbreuk (21-23 sep 2026) meewegen vóór je volgende CRO-test (nieuw 1 okt 2026)
 **Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat "Reached checkout rate" en "Checkout conversion rate" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.
 **Waar:** Shopify Analytics-rapporten (sessies, reached checkout rate, checkout conversion rate) en het testlogboek van de SEO- en conversietest-routine (`seo-routine-logboek`)
@@ -216,6 +230,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.
 **Wat:** Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims.
 **Gevonden op:** 13 oktober 2026 (Growth Radar, SEO-content)
+
+### [ ] 24. Overweeg ChatGPT Ads mee te nemen in de advertentiebudgetbeslissing (nieuw 14 okt 2026)
+**Waarom:** Beslist.nl draaide begin september 2026 een praktijktest met ChatGPT Ads: in minder dan twee dagen ruim 1.700 advertenties en 61.711 vertoningen, een doorklikratio meer dan 2× hoger dan hun eigen Google Shopping-advertenties, en een kostprijs per klik van ongeveer €0,20 — ver onder de eerder genoteerde schatting van $3–5 (Growth Radar, 23 sep 2026). Beslist zegt dat de ChatGPT-advertenties in deze eerste periode presteren op het niveau van hun eigen Google Search-campagnes.
+**Waar:** ChatGPT Ads (zelfbediening, sinds 31 augustus 2026 ook voor Nederlandse adverteerders, productfeed verplicht sinds 4 sep)
+**Wat:** Meenemen als losse, goedkope optie zodra er een advertentiebudget-beslissing valt — hangt samen met punt 10 (CAPI) en de kanaalkeuzes uit punt 8/9/13. Niet apart oppakken vóór die beslissing er is.
+**Gevonden op:** 14 oktober 2026 (Growth Radar, AI-search), bron: Emerce (8 sep 2026) over de Beslist.nl-test.
 
 ### [ ] 9. Padel-creators op prestatiebasis in plaats van vaste vergoeding (herzien 18 sep 2026, aangevuld 25 sep 2026)
 **Update 25 sep 2026:** Derde route naast doorklikken en TikTok Shop: Meta's Creator Marketing Hub (wereldwijde uitrol t/m eind 2026) zet een creatorpost met één klik om naar een partnership ad vanaf je eigen account. Werkt pas als punt 10 staat.

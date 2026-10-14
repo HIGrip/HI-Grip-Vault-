@@ -153,9 +153,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Update 2 okt 2026 (vault-review):** sinds 28-9 zijn de prijzen weer €14,95 / €41,95 / €64,95 (zie [[Feiten & Actuele Staat]]). Balktekst bij 1-pack wordt dus \"Nog €20,05 tot gratis verzending\"; de bedragen hieronder zijn achterhaald. Het punt blijft staan.\n**Update 24 sep 2026:** Live prijzen en drempel zijn veranderd: 1-pack €13,49, verzendkosten €4,50, drempel volgens announcementbar €35 (FAQ zegt nog €30 — eerst gelijktrekken, zie P1-actie in vault-notitie `2026-09-23-seo-conversietest-run-1`). Omdat het 3-pack per paar nog maar €0,17 goedkoper is dan een 1-pack, is gratis verzending nu hét argument voor het 3-pack — dit punt weegt daardoor zwaarder. Balktekst bij 1-pack: \"Nog €21,51 tot gratis verzending\". Laat het bedrag uit één theme-setting komen, niet hardcoded.\n**Waarom:** 48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €13,49, je drempel ligt op €35. Elke 1-pack-koper loopt in die verrassing.\n**Waar:** `snippets/product-information-content.liquid`, direct onder de prijs\n**Wat:** Voortgangsbalk met \"Nog €21,51 tot gratis verzending\" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in \"✓ Gratis verzending\".\n**Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.\n**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** deels klaar in het werkthema, niet live: balk in het winkelwagenvenster (`snippets/free-shipping-bar.liquid`, drempel als thema-instelling, standaard €35) en een vertrouwensregel op de 2.0-productpagina uit dezelfde drempel. Nog niet: de balk op de productpagina die per pack meerekent.\n**Update 12 okt 2026 (verouderd-check):** de prijsupdates hierboven kloppen niet meer. Live staat de 1.0 op 1-pack €14,95 · 3-pack €35,95 · 5-pack €54,95 (Section Store bundle-block; 3- en 5-pack tonen al 'Gratis verzending'). De balktekst bij een 1-pack blijft 'Nog €20,05 tot gratis verzending'. Het argument 'het 3-pack is per paar maar €0,17 goedkoper' vervalt: het scheelt nu €2,97 per paar. De €30 in de FAQ staat niet meer live.\n**Inspanning:** Half dagdeel",
    "controle": {
-    "bewijs": "2.0-productpagina bevat geen tekst \"tot gratis verzending\"; balk nog niet live (wel klaar in werkthema cart-drawer, niet op productpagina zelf)",
-    "controle": "Toon gratis-verzendingsdrempel op productpagina",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "www.higrip.nl/products/performance-gripsokken-2-0-zwart toont alleen statische tekst 'Gratis verzending vanaf €35.', geen voortgangsbalk of herberekening per pack-variant.",
+    "controle": "Staat er een voortgangsbalk 'Nog €X tot gratis verzending' die meerekent met de pack-variant op de productpagina?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -224,11 +224,11 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
-   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).\n**Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante \"Optimized\"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?\n**Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.\n**Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.\n**Inspanning:** 2 uur\n\n---",
+   "body_md": "**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.\n**Waar:** Shopify Merchant Center-feedinstellingen\n**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.\n**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).\n**Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante \"Optimized\"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?\n**Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.\n**Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.\n**Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.\n**Inspanning:** 2 uur\n\n---",
    "controle": {
-    "bewijs": "alle 9 varianten (GS100/110, PGSZ201-203, PGSW201-203) hebben unieke SKU, maar barcode/GTIN leeg bij alle varianten; feed zelf niet gecontroleerd",
-    "controle": "Variant-ID's tegen Merchant Center-eis",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "niet te controleren: de Merchant Center-feed zelf is niet leesbaar via de Shopify-connector; Shopify's interne variant-ID's zijn wel uniek (bv. 53739088281927).",
+    "controle": "Geeft Shopify's Merchant Center-feed unieke, stabiele variant-ID's door?",
+    "gecontroleerd": "2026-10-14",
     "methode": "shopify",
     "uitkomst": "open"
    },
@@ -254,9 +254,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Lege `<meta name=\"description\">` — al genoteerd in de audit van 15 september, nog niet opgelost.\n**Waar:** `/collections/all`\n**Wat:** Beschrijving toevoegen via Shopify admin → SEO-instellingen van de collectiepagina.\n**Update 11 okt 2026 (weekonderhoud):** stond sinds 15 sep (26 dagen) zonder beweging op P1 — verlaagd naar P2. Blijft een simpele, niet-geblokkeerde taak; duidelijk geen \"deze week\"-prioriteit gebleken.\n**Gevonden op:** 15 september 2026 (regressiecheck)",
    "controle": {
-    "bewijs": "geen meta name=\"description\" gevonden op /collections/all, nog steeds leeg",
-    "controle": "/collections/all meta description",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "www.higrip.nl/collections/all: geen <meta name=\"description\"> in de paginabron.",
+    "controle": "Heeft /collections/all een meta description?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -283,9 +283,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** De core update van maart/april beloonde webshops met eigen materiaal met ~22% meer zichtbaarheid. Jouw 1.17 wrijvingscoëfficiënt en 95%-claim zijn precies dat — maar ze staan nu alleen in campagnesecties, niet in een pagina die Google kan vinden en AI-modellen kunnen citeren.\n**Waar:** Nieuwe pagina, bijv. `/pages/onderzoek` of `/pages/waarom-hi-grip-werkt`\n**Wat:** Hoe is er gemeten, waartegen, met welke uitkomst. Grafiek of tabel. Meetmethode benoemen.\n**Effect:** Dubbel — organische autoriteit én de citeerbare bron die AI-assistenten nodig hebben om jou aan te bevelen.\n**Inspanning:** 1 dag",
    "controle": {
-    "bewijs": "/pages/onderzoek en /pages/waarom-hi-grip-werkt geven beide 404, nog niet gemaakt",
-    "controle": "Bewijspagina rond eigen meetdata",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Beide URL's geven 404: www.higrip.nl/pages/onderzoek en www.higrip.nl/pages/waarom-hi-grip-werkt.",
+    "controle": "Bestaat er een bewijspagina (/pages/onderzoek of /pages/waarom-hi-grip-werkt) met eigen meetdata?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -311,9 +311,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Update 29 sep 2026:** Google breidt AI Overviews sinds 28 augustus 2026 bevestigd automatisch uit tot de volle lengte voor vragen waar het systeem dat nuttig acht — de knop \"Toon meer\" vervalt dan en de vervolgvraagbox opent vanzelf, richting AI Mode in plaats van terug naar de gewone resultaten. Effect: blauwe links (dus ook een eventuele toekomstige positie van higrip.nl) komen bij die vragen nog verder onder de vouw. Versterkt de al bestaande reden voor dit punt — geciteerd worden in het antwoord weegt zwaarder naarmate er minder organische ruimte overblijft. Geen nieuw punt, alleen extra gewicht.\n**Waarom:** 31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat. **Terugdraaiing t.o.v. 15 sep:** toen is `FAQPage`-schema geschrapt omdat de AI Overviews-gids zei dat structured data \"niet vereist\" is voor AI-citaties — dat klopt nog steeds, maar onderzoek van maart 2026 (Universiteit van Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines, en dat het specifieke \"antwoordcapsule\"-patroon een gemeten +17,3% citatiekans oplevert over zes engines. Niet vereist ≠ geen effect. Concurrent FitSockr heeft bovendien al een ongestructureerde blogpost live op exact de long-tail \"wat zijn gripsokken\" — reden om hier niet halfslachtig in te zitten.\n**Welke:** \"Waarom glijdt mijn voet in mijn padelschoen?\" · \"Wat zijn gripsokken?\" · \"Tapedesign alternatief\"\n**Format:** Direct onder elke vraag-H2 een zelfstandige alinea van 40-60 woorden die de vraag volledig beantwoordt, zonder link of opmaak erin. Onderbouwing en eventuele link komen in de alinea daarna. `FAQPage` JSON-LD eronder — niet voor rich results (die bestaan niet meer sinds mei 2026), maar als machineleesbare, vooraf afgebakende vraag-antwoordparen voor AI-crawlers.\n**Inspanning:** 1 dag voor alle drie",
    "controle": {
-    "bewijs": "/pages/gripsokken-voor-padel heeft al FAQPage-schema, maar \"wat zijn gripsokken\" en \"tapedesign alternatief\" niet gecontroleerd op het antwoord-eerst-format",
-    "controle": "Vraagpagina's antwoord-eerst met FAQPage-schema",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Geen van de vier gecontroleerde pagina's heeft \"@type\":\"FAQPage\" in de paginabron.",
+    "controle": "Staat er FAQPage-schema op de vraagpagina's (productpagina, ontdek-jouw-sport, pilates, retail)?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -337,9 +337,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Meest consistent bewezen CRO-tactiek van 2026: +10 tot 30% conversie. Geen enkele andere losse ingreep haalt dat betrouwbaarheidsniveau.\n**Wat:** De sok in actie — slide-out op de padelbaan, close-up van de grip. Geen praatvideo.\n**Bonus:** Dezelfde opname is direct TikTok- en Reels-materiaal (zie punt 9).\n**Inspanning:** 1 dag opname + montage",
    "controle": {
-    "bewijs": "geen <video>/youtube/vimeo-element gevonden op de 2.0-productpagina",
-    "controle": "Productvideo 30-60s op productpagina",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Geen <video>-element of mp4/webm-video op www.higrip.nl/products/performance-gripsokken-2-0-zwart (enige '.webm'-match was 'webmcp', geen video).",
+    "controle": "Staat er een productvideo (30-60s, sok in actie) op de productpagina?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -364,9 +364,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Update 23 sep 2026:** De VS-vraag gaat nu over drie AI-kanalen tegelijk. ChatGPT Shopping haalt sinds 10 juli 2026 ~65% van de aanbevelingen uit feeds, en Shopify levert die via Agentic Storefronts automatisch aan ChatGPT en Copilot, maar alleen voor winkels die aan Amerikaanse kopers verkopen. ChatGPT Shopping zelf is voorlopig alleen in de VS live. Extra check (5 min): Shopify admin → Verkoopkanalen → **Agentic**: staat het aan, en welke kanalen zijn actief? Sinds 8 sep 2026 staat ook Meta (AI-agent Muse, alleen VS) in die lijst, en producten worden standaard gedeeld. Nog geen VS-verzendbeslissing nemen puur hierom.\n**Waarom:** Perplexity's Merchant Program is sinds januari 2026 gratis open voor Shopify-winkels: geen listingkosten, geen commissie, automatische productsynchronisatie voor Amerikaanse Shopify-winkels. \"Buy with Pro\" biedt gratis verzending betaald door Perplexity zelf. Perplexity meldt 45 miljoen maandelijkse gebruikers en een vijfvoudige stijging in shopping-intentie-zoekopdrachten. Voorwaarde: bedrijven moeten verkopen én verzenden naar de VS.\n**Waar:** Perplexity Merchant Program (aanmelding via Shopify-app of Perplexity zelf)\n**Wat:** Eerst controleren of higrip.nl momenteel naar de VS verzendt. Zo niet, dit punt geblokkeerd laten staan.\n**Effect:** Gratis extra AI-shoppingkanaal zonder commissie, mits geografisch van toepassing.\n**Inspanning:** Controle 15 minuten; aanmelding zelf een half dagdeel indien van toepassing.",
    "controle": {
-    "bewijs": "niet te controleren: VS-verzending niet te verifiëren via site of Shopify-connector (verzendzones niet uitgelezen); blijft geblokkeerd op die vraag",
-    "controle": "Perplexity Merchant Program",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "niet te controleren: de policy-pagina's noemen geen specifieke verzendlanden; VS-verzending kan niet bevestigd of uitgesloten worden zonder checkout-test.",
+    "controle": "Verzendt higrip.nl momenteel naar de VS (voorwaarde voor het Perplexity Merchant Program)?",
+    "gecontroleerd": "2026-10-14",
     "methode": "geen",
     "uitkomst": "open"
    },
@@ -392,9 +392,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Update 2 okt 2026 (vault-review):** sinds 28-9 weer €14,95 / €41,95 / €64,95 = €14,95 / €13,98 / €12,99 per paar (zie [[Feiten & Actuele Staat]]). Het 3-pack scheelt nu €0,97 per paar (−6%), het 5-pack €1,96 (−13%): een per-paar-prijs tegen het 1-pack werkt weer. De update van 24 sep hieronder is achterhaald.\n**Update 24 sep 2026:** Live prijzen zijn nu 1-pack €13,49 (doorgestreept €14,95) / 3-pack €39,95 / 5-pack €61,95 = €13,49 / €13,32 / €12,39 per paar. Het 3-pack scheelt maar €0,17 per paar (−1%): een per-paar-prijs tegen het 1-pack overtuigt dan niet. Twee opties: (a) per-paar-prijs afzetten tegen het ankerbedrag €14,95 (\"€13,32/paar — 11% onder normaal\"), of (b) eerst de pack-prijsladder zelf herzien (commerciële keuze). De bedragen hieronder zijn achterhaald.\n**Waarom:** 2026-onderzoek naar prijsweergave laat zien dat het tonen van de prijs per stuk bij multipacks 5–15% meer conversie oplevert dan alleen de totaalprijs — ankering maakt de korting tastbaar. Jouw pack-structuur (1/3/5) is exact deze bundelvorm, maar de korting per paar staat nergens.\n**Waar:** `snippets/product-information-content.liquid`, bij de variant-selector\n**Wat:** \"€X,XX/paar\" tonen onder elke pack-optie, herberekend per gekozen variant — ~~1-pack €14,99/paar, 3-pack €13,99/paar, 5-pack €13,00/paar~~ (achterhaald door prijswijziging, zie update).\n**Effect:** Versterkt samen met de gratis-verzendbalk (punt 1) de duw richting het 3-pack.\n**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** prijs per paar staat in het werkthema alleen in de tabel van de nieuwe vergelijkpagina (`vg-2-tabel`), nog niet bij de pack-selector.\n**Update 12 okt 2026 (verouderd-check):** beide prijsupdates hierboven zijn achterhaald. Live per paar: €14,95 / €11,98 / €10,99 (1-, 3- en 5-pack via het Section Store bundle-block op de 1.0-pagina). De pack-keuze bestaat alleen op de 1.0; de 2.0 heeft geen packs. De actiecontrole keek op de 2.0-pagina, dus haar bewijs zegt hier niets over.\n**Inspanning:** 1-2 uur",
    "controle": {
-    "bewijs": "geen tekst \"per paar\" op 1.0- of 2.0-productpagina; staat alleen in de vergelijktabel (werkthema)",
-    "controle": "Prijs per paar naast pack-selector",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Geen '/paar' of 'per paar' tekst gevonden op www.higrip.nl/products/performance-gripsokken-2-0-zwart.",
+    "controle": "Staat er 'prijs per paar' bij de pack-selector op de productpagina?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -420,9 +420,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** 2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.\n**Waar:** Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).\n**Wat:** Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps.\n**Effect:** Core Web Vitals wegen mee in mobiele ranking; een slechte INP-score is bovendien vaak voelbaar in de conversie zelf.\n**Inspanning:** 1 uur meten, vervolgacties afhankelijk van bevindingen.",
    "controle": {
-    "bewijs": "niet te controleren: PageSpeed Insights API geeft nog 429 (quotum), zie geheugen 2026-10-12",
-    "controle": "Controleer INP op productpagina/homepage",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "niet te controleren: PageSpeed Insights API blijft 429 (quotum), zoals eerder vastgesteld op 2026-10-12.",
+    "controle": "Is er een INP-meting gedraaid voor productpagina/homepage?",
+    "gecontroleerd": "2026-10-14",
     "methode": "geen",
     "uitkomst": "open"
    },
@@ -448,9 +448,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.\n**Waar:** Google Search Console → higrip.nl-property → nieuw AI-rapport\n**Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.\n**Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.\n**Inspanning:** 15 minuten",
    "controle": {
-    "bewijs": "niet te controleren: geen tool voor dit Search Console-rapport",
-    "controle": "Nieuwe GSC-rapport generatieve AI-impressies",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "niet te controleren: geen tool beschikbaar voor het AI Overviews-/generatieve-impressies-rapport in Search Console.",
+    "controle": "Is het nieuwe Search Console-rapport voor generatieve AI-impressies bekeken?",
+    "gecontroleerd": "2026-10-14",
     "methode": "geen",
     "uitkomst": "open"
    },
@@ -476,9 +476,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Search Console-meting (routine \"Search Console & rankings\", eerste run): `/products/hi-grip-gripsokken-1` trekt met 310 vertoningen in 7 dagen (1.003 in 28 dagen) verreweg de meeste vertoningen van alle pagina's op higrip.nl, maar met een CTR van 0,32% — ruim onder elke andere pagina. De nieuwe canonieke handle `performance-gripsokken` (zie feitenbestand) trekt via de 2.0-varianten veel minder vertoningen (65–162), wat erop wijst dat Google het rankingsignaal nog niet volledig naar de nieuwe URL heeft overgezet ondanks de redirect (opgelost 21 sep, zie regressie-actie hierboven).\n**Waar:** Search Console → URL-inspectie/indexering, en de titel/meta die Google nu toont voor de oude URL\n**Wat:** Nagaan of de oude URL opnieuw geïndexeerd moet worden gemeld, en of de getoonde titel/meta in de SERP nog van de oude pagina komt.\n**Gevonden op:** 25 september 2026 (Search Console & rankings)",
    "controle": {
-    "bewijs": "niet te controleren: geen tool voor URL-inspectie/indexeringsstatus in Search Console",
-    "controle": "Titel/meta oude productpagina-URL in SERP",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "niet te controleren: vereist een Search Console-indexeringsstatus en een actuele SERP-snapshot waarvoor geen tool beschikbaar is.",
+    "controle": "Moet de oude productpagina-URL opnieuw geïndexeerd gemeld worden, of is de SERP-titel/meta nog van de oude pagina?",
+    "gecontroleerd": "2026-10-14",
     "methode": "geen",
     "uitkomst": "open"
    },
@@ -503,11 +503,11 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
-   "body_md": "**Waarom:** Search Console-meting: de zoekterm \"grip socks\" (112 vertoningen/7 dagen, 613/28 dagen) rankt afwisselend via `/en/collections/gripsokken`, `/collections/gripsokken`, `/collections/all` en `/`, zonder dat één pagina domineert. De gemiddelde positie voor de hele term (10,3) is zwakker dan wat de sterkste pagina alleen zou moeten kunnen halen — kannibalisatie.\n**Waar:** Canonical tags en interne links tussen de vier genoemde URL's\n**Wat:** Bepalen welke pagina primair moet ranken voor \"grip socks\" (waarschijnlijk `/en/collections/gripsokken` of `/collections/gripsokken`) en de overige pagina's daarnaartoe laten doorverwijzen in interne links/canonical.\n**Gevonden op:** 25 september 2026 (Search Console & rankings)",
+   "body_md": "**Waarom:** Search Console-meting: de zoekterm \"grip socks\" (112 vertoningen/7 dagen, 613/28 dagen) rankt afwisselend via `/en/collections/gripsokken`, `/collections/gripsokken`, `/collections/all` en `/`, zonder dat één pagina domineert. De gemiddelde positie voor de hele term (10,3) is zwakker dan wat de sterkste pagina alleen zou moeten kunnen halen — kannibalisatie.\n**Waar:** Canonical tags en interne links tussen de vier genoemde URL's\n**Wat:** Bepalen welke pagina primair moet ranken voor \"grip socks\" (waarschijnlijk `/en/collections/gripsokken` of `/collections/gripsokken`) en de overige pagina's daarnaartoe laten doorverwijzen in interne links/canonical.\n**Gevonden op:** 25 september 2026 (Search Console & rankings)\n**Update 14 okt 2026 (Search Console & rankings):** hetzelfde patroon geldt nu ook voor de Nederlandse variant \"grip sokken\" — verdeeld over `/collections/all` (14 vert./7d, positie 19,4), de oude productURL (6 vert.) en `/` (3 vert.). \"Grip socks\" (EN) zelf is inmiddels over negen eigen URL's verdeeld (28 dagen) in plaats van vier. Zelfde actie, nu voor beide taalvarianten.",
    "controle": {
-    "bewijs": "canonical van alle 4 URL's (/, /collections/all, /collections/gripsokken, /en/collections/gripsokken) wijst nog naar zichzelf, geen consolidatie",
-    "controle": "\"Grip socks\" consolideren (4 URL's)",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Geen <link rel=\"canonical\"> gevonden op /collections/gripsokken of /en/pages/gripsokken-voor-padel; geen consolidatie zichtbaar.",
+    "controle": "Is er een canonical/interne-link-keuze gemaakt tussen de 4 'grip socks'-concurrerende URL's?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -534,10 +534,10 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Shopify stopt script tags in de Online Store op 1 maart 2027 (developer-changelog, 24 aug 2026). Op higrip.nl laden via script tags nu nog de Bundler-app (`cdn-bundler.nice-team.net`) en drie Trustpilot-scripts. Het projectgeheugen noemt de Bundler-app verwijderd na de WK-actie, maar live staan nog het script plus negen `bundler`-verwijzingen in de HTML — onnodig JavaScript dat ook punt 14 (INP) raakt. Trustpilot is je zichtbare review-proof; die mag niet stilletjes wegvallen.\n**Waar:** Shopify admin → Apps (Bundler: nog geïnstalleerd?) en Online Store → Thema aanpassen → App embeds; Trustpilot-app-instellingen.\n**Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.\n**Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.\n**Update 11 okt 2026 (SEO Health Score, [[2026-10-11-seo-audit-weekdelta]]):** nog steeds open. Op mobiel formaat laden de homepage en de 2.0-productpagina nog `bundler.nice-team.net` en `cdn-bundler.nice-team.net`, naast drie Trustpilot-domeinen en Ecomsend; in totaal 273–302 requests per pagina.\n**Update 12 okt 2026 (verouderd-check):** de packs op de 1.0-pagina komen van Section Store (bundle-block), niet van Bundler; het Bundler-blok op de pagina is leeg, maar `bundler.js` laadt nog. Test vóór het verwijderen van Bundler of de 3- en 5-pack-korting (€9 en €20) in de winkelwagen blijft werken. Er laden nu 4 Trustpilot-scripts, niet 3.\n**Inspanning:** 1 uur",
    "controle": {
-    "bewijs": "2.0-productpagina laadt nog bundler.nice-team.net en cdn-bundler.nice-team.net, niet verwijderd",
-    "controle": "Script-tag-apps overzetten / Bundler opruimen",
-    "gecontroleerd": "2026-10-13",
-    "methode": "site",
+    "bewijs": "Werkthema 202398040391 settings_data.json heeft nog het blok 'shopify://apps/bundler/blocks/bundler-script-append/...' met disabled:false.",
+    "controle": "Is de Bundler-app verwijderd uit het thema (app-embed-block)?",
+    "gecontroleerd": "2026-10-14",
+    "methode": "shopify",
     "uitkomst": "open"
    },
    "id": "backlog#b34063f3",
@@ -562,9 +562,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Search Console-meting (routine \"Search Console & rankings\", tweede run): de pagina rankt sterk — gemiddelde positie 3,9 over 28 dagen (4,2 over 7 dagen) — maar trok in 28 dagen geen enkele klik op 120 vertoningen (0% CTR). Bij zo'n goede positie wijst 0% CTR op een titel/omschrijving die niet aansluit bij wat de zoeker verwacht, niet op een rankingprobleem.\n**Waar:** `/pages/ontdek-jouw-sport` — titel en meta description via Shopify admin\n**Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.\n**Gevonden op:** 30 september 2026 (Search Console & rankings)",
    "controle": {
-    "bewijs": "titel \"HÏ Grip | Ontdek Jouw Sport\" en meta nog generiek, niet herschreven op de 0%-CTR-zoekintentie",
-    "controle": "Titel/meta /pages/ontdek-jouw-sport herschrijven",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Titel is nog generiek 'HÏ Grip | Ontdek Jouw Sport'; geen bewijs dat de vereiste zoektermenanalyse in Search Console is gedaan vóór het herschrijven.",
+    "controle": "Is de titel/meta van /pages/ontdek-jouw-sport herschreven op basis van zoekwoordonderzoek?",
+    "gecontroleerd": "2026-10-14",
     "methode": "site",
     "uitkomst": "open"
    },
@@ -649,11 +649,47 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
+   "body_md": "**Waarom:** Search Console-meting (routine \"Search Console & rankings\", vierde run): de pagina rankt goed — positie 7,6 (7 dagen, 65 vertoningen) resp. 7,3 (28 dagen, 107 vertoningen) — maar trok in geen van beide periodes één klik (0% CTR). Zelfde patroon als bij de al bekende punten 19, 21 en 22: een goede positie zonder klikken wijst op een titel/omschrijving die niet aansluit bij de zoekintentie.\n**Waar:** `/en/pages/gripsokken-voor-voetbal` — titel en meta description via Shopify admin\n**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie (o.a. \"football grip socks\", \"grip socks football\"); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.\n**Gevonden op:** 14 oktober 2026 (Search Console & rankings)",
+   "controle": null,
+   "id": "backlog#3f65e547",
+   "kop": "25. [search-console] Titel/meta van `/en/pages/gripsokken-voor-voetbal` herschrijven (nieuw 14 okt 2026)",
+   "prioriteit": "P2",
+   "prioriteit_effectief": "P2",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "14 oktober 2026 (Search Console & rankings)",
+    "Waar": "`/en/pages/gripsokken-voor-voetbal` — titel en meta description via Shopify admin",
+    "Waarom": "Search Console-meting (routine \"Search Console & rankings\", vierde run): de pagina rankt goed — positie 7,6 (7 dagen, 65 vertoningen) resp. 7,3 (28 dagen, 107 vertoningen) — maar trok in geen van beide periodes één klik (0% CTR). Zelfde patroon als bij de al bekende punten 19, 21 en 22: een goede positie zonder klikken wijst op een titel/omschrijving die niet aansluit bij de zoekintentie.",
+    "Wat": "SERP-titel en meta description herschrijven voor de Engelse zoekintentie (o.a. \"football grip socks\", \"grip socks football\"); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
+   "body_md": "**Waarom:** Search Console-meting (routine \"Search Console & rankings\", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.\n**Waar:** `/en/products/performance-gripsokken` — titel en meta description via Shopify admin\n**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.\n**Gevonden op:** 14 oktober 2026 (Search Console & rankings)",
+   "controle": null,
+   "id": "backlog#4eb5ed8e",
+   "kop": "26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)",
+   "prioriteit": "P2",
+   "prioriteit_effectief": "P2",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "14 oktober 2026 (Search Console & rankings)",
+    "Waar": "`/en/products/performance-gripsokken` — titel en meta description via Shopify admin",
+    "Waarom": "Search Console-meting (routine \"Search Console & rankings\", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.",
+    "Wat": "SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
    "body_md": "**Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat \"Reached checkout rate\" en \"Checkout conversion rate\" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.\n**Waar:** Shopify Analytics-rapporten (sessies, reached checkout rate, checkout conversion rate) en het testlogboek van de SEO- en conversietest-routine (`seo-routine-logboek`)\n**Wat:** Zet bij de volgende voor-/na-meting van punt 1/12 een aantekening dat de periode vóór 21-23 sep niet 1-op-1 vergelijkbaar is met erna; vergelijk waar mogelijk op bestellingen/omzet in plaats van sessie-conversieratio, of meet pas vanaf na de meetbreuk.\n**Effect:** Voorkomt een foutieve conclusie (\"de test werkte niet\" of \"de test werkte geweldig\") die eigenlijk een meetartefact is.\n**Inspanning:** 15 minuten, bij de volgende testmeting\n**Gevonden op:** 1 oktober 2026 (Growth Radar, CRO)",
    "controle": {
-    "bewijs": "niet te controleren: dit is een aantekening voor de volgende test, er is nog geen nieuwe voor-/na-meting uitgevoerd",
-    "controle": "Shopify meetbreuk meewegen bij volgende CRO-test",
-    "gecontroleerd": "2026-10-13",
+    "bewijs": "Geen aantekening of nieuwe CRO-test gevonden die deze meetbreuk vermeldt; punt nog niet van toepassing geweest.",
+    "controle": "Is er bij de volgende voor-/na-meting een aantekening gezet over de Shopify-conversieratio-meetbreuk van 21-23 sep?",
+    "gecontroleerd": "2026-10-14",
     "methode": "geen",
     "uitkomst": "open"
    },
@@ -707,17 +743,46 @@ window.HI_RESEARCH = {
    "beheer": null,
    "besluit": false,
    "body_md": "**Waarom:** Google's Search Central-documentatie noemt het sinds 1 oktober 2026 \"critical\" om AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie — titels, meta descriptions, structured data en alt-tekst vallen daaronder. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Geen nieuwe rankingfactor of penalty aangekondigd, wel een scherpere verwachting voor wie AI gebruikt bij het schrijven van content.\n**Waar:** Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.\n**Wat:** Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims.\n**Gevonden op:** 13 oktober 2026 (Growth Radar, SEO-content)",
-   "controle": null,
+   "controle": {
+    "bewijs": "niet te controleren via de site: geen vermelding van een verplichte factcheck-stap gevonden in CLAUDE.md of de routine-prompts.",
+    "controle": "Is handmatige factcheck voor AI-gegenereerde teksten vóór publicatie al verplicht vastgelegd?",
+    "gecontroleerd": "2026-10-14",
+    "methode": "geen",
+    "uitkomst": "open"
+   },
    "id": "backlog#eaa40e7c",
    "kop": "23. Handmatige factcheck verplichten voor AI-gegenereerde teksten vóór publicatie (nieuw 13 okt 2026)",
    "prioriteit": "P3",
    "prioriteit_effectief": "P3",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-10-14",
+    "claude": "deels",
+    "wat_claude_doet": "Conceptregel voor de verplichte factcheck opstellen (bijv. voor CLAUDE.md of een routine-prompt).",
+    "wat_jij_doet": "Besluiten of/hoe dit verplicht wordt en de regel vastleggen."
+   },
    "velden": {
     "Gevonden op": "13 oktober 2026 (Growth Radar, SEO-content)",
     "Waar": "Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.",
     "Waarom": "Google's Search Central-documentatie noemt het sinds 1 oktober 2026 \"critical\" om AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie — titels, meta descriptions, structured data en alt-tekst vallen daaronder. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Geen nieuwe rankingfactor of penalty aangekondigd, wel een scherpere verwachting voor wie AI gebruikt bij het schrijven van content.",
     "Wat": "Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
+   "body_md": "**Waarom:** Beslist.nl draaide begin september 2026 een praktijktest met ChatGPT Ads: in minder dan twee dagen ruim 1.700 advertenties en 61.711 vertoningen, een doorklikratio meer dan 2× hoger dan hun eigen Google Shopping-advertenties, en een kostprijs per klik van ongeveer €0,20 — ver onder de eerder genoteerde schatting van $3–5 (Growth Radar, 23 sep 2026). Beslist zegt dat de ChatGPT-advertenties in deze eerste periode presteren op het niveau van hun eigen Google Search-campagnes.\n**Waar:** ChatGPT Ads (zelfbediening, sinds 31 augustus 2026 ook voor Nederlandse adverteerders, productfeed verplicht sinds 4 sep)\n**Wat:** Meenemen als losse, goedkope optie zodra er een advertentiebudget-beslissing valt — hangt samen met punt 10 (CAPI) en de kanaalkeuzes uit punt 8/9/13. Niet apart oppakken vóór die beslissing er is.\n**Gevonden op:** 14 oktober 2026 (Growth Radar, AI-search), bron: Emerce (8 sep 2026) over de Beslist.nl-test.",
+   "controle": null,
+   "id": "backlog#456f3072",
+   "kop": "24. Overweeg ChatGPT Ads mee te nemen in de advertentiebudgetbeslissing (nieuw 14 okt 2026)",
+   "prioriteit": "P3",
+   "prioriteit_effectief": "P3",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "14 oktober 2026 (Growth Radar, AI-search), bron: Emerce (8 sep 2026) over de Beslist.nl-test.",
+    "Waar": "ChatGPT Ads (zelfbediening, sinds 31 augustus 2026 ook voor Nederlandse adverteerders, productfeed verplicht sinds 4 sep)",
+    "Waarom": "Beslist.nl draaide begin september 2026 een praktijktest met ChatGPT Ads: in minder dan twee dagen ruim 1.700 advertenties en 61.711 vertoningen, een doorklikratio meer dan 2× hoger dan hun eigen Google Shopping-advertenties, en een kostprijs per klik van ongeveer €0,20 — ver onder de eerder genoteerde schatting van $3–5 (Growth Radar, 23 sep 2026). Beslist zegt dat de ChatGPT-advertenties in deze eerste periode presteren op het niveau van hun eigen Google Search-campagnes.",
+    "Wat": "Meenemen als losse, goedkope optie zodra er een advertentiebudget-beslissing valt — hangt samen met punt 10 (CAPI) en de kanaalkeuzes uit punt 8/9/13. Niet apart oppakken vóór die beslissing er is."
    }
   },
   {
@@ -774,28 +839,31 @@ window.HI_RESEARCH = {
   }
  ],
  "controle": {
-  "laatste_run": "2026-10-13T05:02:26+02:00",
+  "laatste_run": "2026-10-14T05:03:01+02:00",
   "runs": [
    "2026-09-25",
    "2026-09-26",
    "2026-10-11",
    "2026-10-12",
-   "2026-10-13"
+   "2026-10-13",
+   "2026-10-14"
   ],
   "telling": {
    "dubbel": 24,
-   "gedaan": 38,
-   "handmatig": 116,
-   "ongecontroleerd": 1,
-   "open": 136
+   "gedaan": 39,
+   "handmatig": 124,
+   "ongecontroleerd": 5,
+   "open": 145
   },
-  "vandaag_gedaan": [],
+  "vandaag_gedaan": [
+   "2026-10-13-homepage-redesign#af3a04a0"
+  ],
   "volgende_run": "dagelijks 05:00"
  },
  "data": {
   "agenda": null,
   "cwv": {
-   "bijgewerkt": "2026-10-13T05:25:34+02:00",
+   "bijgewerkt": "2026-10-14T05:26:43+02:00",
    "paginas": [
     {
      "cls": null,
@@ -850,10 +918,10 @@ window.HI_RESEARCH = {
    ]
   },
   "koppelingen": {
-   "bijgewerkt": "2026-10-13T05:25:37+02:00",
+   "bijgewerkt": "2026-10-14T05:26:45+02:00",
    "bronnen": [
     {
-     "detail": "556 sessies in 12 weken",
+     "detail": "580 sessies in 12 weken",
      "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als Viewer op GA4-property 476032345 (Beheer → Toegangsbeheer voor property) en 'Google Analytics Data API' aan in Google Cloud-project higrip-analytics.",
      "id": "ga4",
      "naam": "Google Analytics 4",
@@ -861,7 +929,7 @@ window.HI_RESEARCH = {
      "status": "ok"
     },
     {
-     "detail": "https://www.higrip.nl/, data t/m 2026-10-10",
+     "detail": "https://www.higrip.nl/, data t/m 2026-10-11",
      "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als gebruiker (Beperkt) in Search Console → Instellingen → Gebruikers en rechten, en 'Google Search Console API' aan in project higrip-analytics.",
      "id": "gsc",
      "naam": "Search Console",
@@ -901,7 +969,7 @@ window.HI_RESEARCH = {
      "status": "ok"
     },
     {
-     "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-12",
+     "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-13",
      "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Shopify koppelen",
      "id": "shopify",
      "naam": "Shopify",
@@ -951,9 +1019,9 @@ window.HI_RESEARCH = {
    ]
   },
   "kpi": {
-   "bijgewerkt": "2026-10-13T05:25:33+02:00",
+   "bijgewerkt": "2026-10-14T05:26:42+02:00",
    "fouten": {},
-   "gsc_laatste_dag": "2026-10-10",
+   "gsc_laatste_dag": "2026-10-11",
    "kernwoorden": [
     {
      "term": "gripsokken",
@@ -1009,8 +1077,8 @@ window.HI_RESEARCH = {
        "week": "2026-W40"
       },
       {
-       "positie": 6.4,
-       "vertoningen": 88,
+       "positie": 5.9,
+       "vertoningen": 111,
        "week": "2026-W41"
       },
       {
@@ -1139,8 +1207,8 @@ window.HI_RESEARCH = {
        "week": "2026-W40"
       },
       {
-       "positie": 9.4,
-       "vertoningen": 8,
+       "positie": 8.8,
+       "vertoningen": 11,
        "week": "2026-W41"
       },
       {
@@ -1427,10 +1495,10 @@ window.HI_RESEARCH = {
      "aankopen": 3,
      "conversie": 3.06,
      "gebruikers": 68,
-     "gsc_ctr": 5.26,
-     "gsc_klikken": 46,
+     "gsc_ctr": 4.78,
+     "gsc_klikken": 50,
      "gsc_positie": 8.3,
-     "gsc_vertoningen": 875,
+     "gsc_vertoningen": 1046,
      "omzet": 62.98,
      "sessies": 98,
      "sessies_nl": 68,
@@ -1438,29 +1506,24 @@ window.HI_RESEARCH = {
      "week": "2026-W41"
     },
     {
-     "aankopen": 0,
-     "conversie": 0.0,
-     "gebruikers": 13,
+     "aankopen": 2,
+     "conversie": 5.41,
+     "gebruikers": 33,
      "gsc_ctr": 0.0,
      "gsc_klikken": 0,
      "gsc_positie": null,
      "gsc_vertoningen": 0,
-     "omzet": 0.0,
-     "sessies": 13,
-     "sessies_nl": 8,
+     "omzet": 80.85,
+     "sessies": 37,
+     "sessies_nl": 27,
      "start": "2026-10-12",
      "week": "2026-W42"
     }
    ]
   },
   "shopify": {
-   "bijgewerkt": "2026-10-13T03:26:07+00:00",
+   "bijgewerkt": "2026-10-14T03:26:53+00:00",
    "dagen": [
-    {
-     "dag": "2026-07-15",
-     "omzet": 0.0,
-     "orders": 0
-    },
     {
      "dag": "2026-07-16",
      "omzet": 0.0,
@@ -1908,13 +1971,18 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-13",
+     "omzet": 80.85,
+     "orders": 2
+    },
+    {
+     "dag": "2026-10-14",
      "omzet": 0.0,
      "orders": 0
     }
    ],
    "ytd": {
-    "omzet": 1641.51,
-    "orders": 42
+    "omzet": 1722.36,
+    "orders": 44
    }
   },
   "sync": {
@@ -1924,9 +1992,532 @@ window.HI_RESEARCH = {
    "toegepast": 8
   }
  },
- "gebouwd": "2026-10-13T03:41:36+00:00",
- "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\` | — | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `04_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Technische%20Procedures.md) | bij themawerk | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n\n## Alle notities in deze map (automatisch)\n\nBijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.\n\n### Hoofdmap\n- [2026-10-12-werkthema-vs-live](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-werkthema-vs-live.md)\n- [2026-10-12-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-weekoverzicht.md)\n- [2026-10-12-seo-conversietest-run-4](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-seo-conversietest-run-4.md)\n- [2026-10-12-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-regressiecheck.md)\n- [2026-10-12-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-growth-radar-seo-technisch.md)\n- [2026-10-11-seo-audit-weekdelta](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-seo-audit-weekdelta.md)\n- [2026-10-11-omzetgroei-koersbepaling](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-omzetgroei-koersbepaling.md)\n- [2026-10-11-concurrentie-seo-per-merk](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-concurrentie-seo-per-merk.md)\n- [2026-10-10-growth-radar-social-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-10-growth-radar-social-content.md)\n- [2026-10-09-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-09-growth-radar-social.md)\n- [2026-10-08-seo-aeo-geo-aio-sxo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-seo-aeo-geo-aio-sxo-audit.md)\n- [2026-10-08-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-search-console.md)\n- [2026-10-08-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-growth-radar-cro.md)\n- [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run.md)\n- [2026-10-07-shoppagina-keuzepagina](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-shoppagina-keuzepagina.md)\n- [2026-10-07-notebooklm-ai-agent-tiktoks](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-notebooklm-ai-agent-tiktoks.md)\n- [2026-10-07-missie-visie-pagina](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-missie-visie-pagina.md)\n- [2026-10-07-dashboard-v4-controle-ui-snelheid](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-v4-controle-ui-snelheid.md)\n- [2026-10-07-dashboard-v4-animaties-apple](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-v4-animaties-apple.md)\n- [2026-10-07-dashboard-stand-doel-optimalisaties](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-stand-doel-optimalisaties.md)\n- [2026-10-07-dashboard-content-funnel-routines-klanten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-content-funnel-routines-klanten.md)\n- [2026-10-06-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-06-growth-radar-seo-content.md)\n- [2026-10-06-dashboard-v4-opruimen-focusvensters](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-06-dashboard-v4-opruimen-focusvensters.md)\n- [2026-10-05-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-weekoverzicht.md)\n- [2026-10-05-seo-conversietest-run-3](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-seo-conversietest-run-3.md)\n- [2026-10-05-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-regressiecheck.md)\n- [2026-10-05-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-growth-radar-seo-technisch.md)\n- [2026-10-04-dashboard-herindeling-ai-mail-koppelingen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-herindeling-ai-mail-koppelingen.md)\n- [2026-10-04-dashboard-efferd-volgorde-cijfers](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-efferd-volgorde-cijfers.md)\n- [2026-10-04-dashboard-bruikbaarheidsaudit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-bruikbaarheidsaudit.md)\n- [2026-10-03-growth-radar-social-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-03-growth-radar-social-content.md)\n- [2026-10-03-dashboard-agenda-mail-ads-leveranciers](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-03-dashboard-agenda-mail-ads-leveranciers.md)\n- [2026-10-02-vault-review](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-vault-review.md)\n- [2026-10-02-obsidian-structuur-ai-agents](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-obsidian-structuur-ai-agents.md)\n- [2026-10-02-navigatie-en-takentijdlijn](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-navigatie-en-takentijdlijn.md)\n- [2026-10-02-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-growth-radar-social.md)\n- [2026-10-02-dashboard-ontwerpregels-kpi](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-dashboard-ontwerpregels-kpi.md)\n- [2026-10-02-dashboard-apps-patronen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-dashboard-apps-patronen.md)\n- [2026-10-02-ai-in-het-dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-ai-in-het-dashboard.md)\n- [2026-10-01-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-01-growth-radar-cro.md)\n- [2026-09-30-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-30-search-console.md)\n- [2026-09-30-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-30-growth-radar-ai-search.md)\n- [2026-09-29-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-29-growth-radar-seo-content.md)\n- [2026-09-29-crm-dashboard-voorstel](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-29-crm-dashboard-voorstel.md)\n- [2026-09-28-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-weekoverzicht.md)\n- [2026-09-28-seo-conversietest-run-2](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-seo-conversietest-run-2.md)\n- [2026-09-28-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-regressiecheck.md)\n- [2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard.md)\n- [2026-09-28-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-growth-radar-seo-technisch.md)\n- [2026-09-26-onderzoek-nieuwe-routines](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-onderzoek-nieuwe-routines.md)\n- [2026-09-26-dashboard-ux-onderzoek](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-dashboard-ux-onderzoek.md)\n- [2026-09-25-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-seo-audit.md)\n- [2026-09-25-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-search-console.md)\n- [2026-09-25-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-growth-radar-social.md)\n- [2026-09-25-evaluatie-routines](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-evaluatie-routines.md)\n- [2026-09-24-upfront-bestelvolume-schatting](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-upfront-bestelvolume-schatting.md)\n- [2026-09-24-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-growth-radar-cro.md)\n- [2026-09-24-financieel-plan-2027-2031-bmc-2031](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md)\n- [2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md)\n- [2026-09-23-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-growth-radar-ai-search.md)\n- [2026-09-22-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-22-growth-radar-seo-content.md)\n- [2026-09-21-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-weekoverzicht.md)\n- [2026-09-21-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-regressiecheck.md)\n- [2026-09-21-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-growth-radar-seo-technisch.md)\n- [2026-09-21-beachhead-rugby](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-beachhead-rugby.md)\n- [2026-09-18-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-18-growth-radar-social.md)\n- [2026-09-17-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-17-growth-radar-cro.md)\n- [2026-09-16-seo-onderzoek-cloud-routine-website](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-seo-onderzoek-cloud-routine-website.md)\n- [2026-09-16-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-growth-radar-ai-search.md)\n- [2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)\n- [2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)\n- [2026-09-15-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md)\n- [2026-09-15-growth-radar-basislijn](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-basislijn.md)\n- [2026-09-14-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-14-weekoverzicht.md)\n- [2026-09-07-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-weekoverzicht.md)\n- [2026-09-07-compliance-todo](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-compliance-todo.md)\n- [2026-09-04-werkdossier-stand-van-zaken](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-04-werkdossier-stand-van-zaken.md)\n- [2026-09-03-analytics-kpi-meetgat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-03-analytics-kpi-meetgat.md)\n- [2026-08-31-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-08-31-weekoverzicht.md)\n- [2026-08-24-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-08-24-weekoverzicht.md)\n\n### _backlog\n- [ACTIEBACKLOG](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_backlog/ACTIEBACKLOG.md)\n- [AFGEROND](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_backlog/AFGEROND.md)\n\n### _build\n- PROCEDURE\n\n### _geheugen\n- [_geheugen/README](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/README.md)\n- [_geheugen/actiecontrole](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/actiecontrole.md)\n- [backlinks-merchant](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/backlinks-merchant.md)\n- [concurrentie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/concurrentie.md)\n- [denzel-week](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/denzel-week.md)\n- [growth-radar](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/growth-radar.md)\n- [_geheugen/klantstem](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/klantstem.md)\n- [materialen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/materialen.md)\n- [_geheugen/productradar](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/productradar.md)\n- [search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/search-console.md)\n- [seo-conversietest](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/seo-conversietest.md)\n- [_geheugen/seo-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/seo-regressiecheck.md)\n- [strategie-maand](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/strategie-maand.md)\n- [_geheugen/uitvoerder](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/uitvoerder.md)\n- [verbanden](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/verbanden.md)\n- [_geheugen/website-ux](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/website-ux.md)\n\n### _uitvoer/2026-10-11-live-fixes\n- [beleid-plakken](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_uitvoer/2026-10-11-live-fixes/beleid-plakken.md)\n\n### _uitvoer/2026-10-11-live-fixes/backup\n- [policies-voor-11-10](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_uitvoer/2026-10-11-live-fixes/backup/policies-voor-11-10.md)\n",
+ "gebouwd": "2026-10-14T04:10:53+00:00",
+ "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `05_Research\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `05_Research\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 05_Research\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `05_Research\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `05_Research\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `05_Research\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `04_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `05_Research\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\` | — | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `04_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `04_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `05_Research\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Technische%20Procedures.md) | bij themawerk | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars |\n| **Website-analyse in de vault** | `03_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Update%20Log.md) (`03_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Feedback%20%26%20Iteratie%20Log.md) (`04_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Compliance/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n\n## Alle notities in deze map (automatisch)\n\nBijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.\n\n### Hoofdmap\n- [2026-10-14-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-14-growth-radar-ai-search.md)\n- [2026-10-13-homepage-redesign](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-13-homepage-redesign.md)\n- [2026-10-13-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-13-growth-radar-seo-content.md)\n- [2026-10-12-werkthema-vs-live](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-werkthema-vs-live.md)\n- [2026-10-12-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-weekoverzicht.md)\n- [2026-10-12-seo-conversietest-run-4](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-seo-conversietest-run-4.md)\n- [2026-10-12-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-regressiecheck.md)\n- [2026-10-12-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-growth-radar-seo-technisch.md)\n- [2026-10-12-blogs-stappenplan](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-12-blogs-stappenplan.md)\n- [2026-10-11-seo-audit-weekdelta](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-seo-audit-weekdelta.md)\n- [2026-10-11-omzetgroei-koersbepaling](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-omzetgroei-koersbepaling.md)\n- [2026-10-11-concurrentie-seo-per-merk](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-concurrentie-seo-per-merk.md)\n- [2026-10-10-growth-radar-social-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-10-growth-radar-social-content.md)\n- [2026-10-09-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-09-growth-radar-social.md)\n- [2026-10-08-seo-aeo-geo-aio-sxo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-seo-aeo-geo-aio-sxo-audit.md)\n- [2026-10-08-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-search-console.md)\n- [2026-10-08-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-growth-radar-cro.md)\n- [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run.md)\n- [2026-10-07-shoppagina-keuzepagina](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-shoppagina-keuzepagina.md)\n- [2026-10-07-notebooklm-ai-agent-tiktoks](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-notebooklm-ai-agent-tiktoks.md)\n- [2026-10-07-missie-visie-pagina](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-missie-visie-pagina.md)\n- [2026-10-07-dashboard-v4-controle-ui-snelheid](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-v4-controle-ui-snelheid.md)\n- [2026-10-07-dashboard-v4-animaties-apple](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-v4-animaties-apple.md)\n- [2026-10-07-dashboard-stand-doel-optimalisaties](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-stand-doel-optimalisaties.md)\n- [2026-10-07-dashboard-content-funnel-routines-klanten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-07-dashboard-content-funnel-routines-klanten.md)\n- [2026-10-06-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-06-growth-radar-seo-content.md)\n- [2026-10-06-dashboard-v4-opruimen-focusvensters](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-06-dashboard-v4-opruimen-focusvensters.md)\n- [2026-10-05-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-weekoverzicht.md)\n- [2026-10-05-seo-conversietest-run-3](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-seo-conversietest-run-3.md)\n- [2026-10-05-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-regressiecheck.md)\n- [2026-10-05-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-05-growth-radar-seo-technisch.md)\n- [2026-10-04-dashboard-herindeling-ai-mail-koppelingen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-herindeling-ai-mail-koppelingen.md)\n- [2026-10-04-dashboard-efferd-volgorde-cijfers](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-efferd-volgorde-cijfers.md)\n- [2026-10-04-dashboard-bruikbaarheidsaudit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-04-dashboard-bruikbaarheidsaudit.md)\n- [2026-10-03-growth-radar-social-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-03-growth-radar-social-content.md)\n- [2026-10-03-dashboard-agenda-mail-ads-leveranciers](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-03-dashboard-agenda-mail-ads-leveranciers.md)\n- [2026-10-02-vault-review](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-vault-review.md)\n- [2026-10-02-obsidian-structuur-ai-agents](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-obsidian-structuur-ai-agents.md)\n- [2026-10-02-navigatie-en-takentijdlijn](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-navigatie-en-takentijdlijn.md)\n- [2026-10-02-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-growth-radar-social.md)\n- [2026-10-02-dashboard-ontwerpregels-kpi](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-dashboard-ontwerpregels-kpi.md)\n- [2026-10-02-dashboard-apps-patronen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-dashboard-apps-patronen.md)\n- [2026-10-02-ai-in-het-dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-02-ai-in-het-dashboard.md)\n- [2026-10-01-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-01-growth-radar-cro.md)\n- [2026-09-30-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-30-search-console.md)\n- [2026-09-30-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-30-growth-radar-ai-search.md)\n- [2026-09-29-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-29-growth-radar-seo-content.md)\n- [2026-09-29-crm-dashboard-voorstel](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-29-crm-dashboard-voorstel.md)\n- [2026-09-28-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-weekoverzicht.md)\n- [2026-09-28-seo-conversietest-run-2](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-seo-conversietest-run-2.md)\n- [2026-09-28-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-regressiecheck.md)\n- [2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard.md)\n- [2026-09-28-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-28-growth-radar-seo-technisch.md)\n- [2026-09-26-onderzoek-nieuwe-routines](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-onderzoek-nieuwe-routines.md)\n- [2026-09-26-dashboard-ux-onderzoek](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-26-dashboard-ux-onderzoek.md)\n- [2026-09-25-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-seo-audit.md)\n- [2026-09-25-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-search-console.md)\n- [2026-09-25-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-growth-radar-social.md)\n- [2026-09-25-evaluatie-routines](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-25-evaluatie-routines.md)\n- [2026-09-24-upfront-bestelvolume-schatting](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-upfront-bestelvolume-schatting.md)\n- [2026-09-24-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-growth-radar-cro.md)\n- [2026-09-24-financieel-plan-2027-2031-bmc-2031](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-24-financieel-plan-2027-2031-bmc-2031.md)\n- [2026-09-23-seo-conversietest-run-1](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-seo-conversietest-run-1.md)\n- [2026-09-23-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-23-growth-radar-ai-search.md)\n- [2026-09-22-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-22-growth-radar-seo-content.md)\n- [2026-09-21-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-weekoverzicht.md)\n- [2026-09-21-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-regressiecheck.md)\n- [2026-09-21-growth-radar-seo-technisch](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-growth-radar-seo-technisch.md)\n- [2026-09-21-beachhead-rugby](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-21-beachhead-rugby.md)\n- [2026-09-18-growth-radar-social](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-18-growth-radar-social.md)\n- [2026-09-17-growth-radar-cro](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-17-growth-radar-cro.md)\n- [2026-09-16-seo-onderzoek-cloud-routine-website](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-seo-onderzoek-cloud-routine-website.md)\n- [2026-09-16-growth-radar-ai-search](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-16-growth-radar-ai-search.md)\n- [2026-09-15-seo-audit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-seo-audit.md)\n- [2026-09-15-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-regressiecheck.md)\n- [2026-09-15-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-seo-content.md)\n- [2026-09-15-growth-radar-basislijn](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-15-growth-radar-basislijn.md)\n- [2026-09-14-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-14-weekoverzicht.md)\n- [2026-09-07-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-weekoverzicht.md)\n- [2026-09-07-compliance-todo](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-07-compliance-todo.md)\n- [2026-09-04-werkdossier-stand-van-zaken](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-04-werkdossier-stand-van-zaken.md)\n- [2026-09-03-analytics-kpi-meetgat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-03-analytics-kpi-meetgat.md)\n- [2026-08-31-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-08-31-weekoverzicht.md)\n- [2026-08-24-weekoverzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-08-24-weekoverzicht.md)\n\n### _backlog\n- [ACTIEBACKLOG](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_backlog/ACTIEBACKLOG.md)\n- [AFGEROND](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_backlog/AFGEROND.md)\n\n### _build\n- PROCEDURE\n\n### _geheugen\n- [_geheugen/README](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/README.md)\n- [_geheugen/actiecontrole](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/actiecontrole.md)\n- [backlinks-merchant](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/backlinks-merchant.md)\n- [concurrentie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/concurrentie.md)\n- [denzel-week](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/denzel-week.md)\n- [growth-radar](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/growth-radar.md)\n- [_geheugen/klantstem](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/klantstem.md)\n- [materialen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/materialen.md)\n- [_geheugen/productradar](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/productradar.md)\n- [search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/search-console.md)\n- [seo-conversietest](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/seo-conversietest.md)\n- [_geheugen/seo-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/seo-regressiecheck.md)\n- [strategie-maand](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/strategie-maand.md)\n- [_geheugen/uitvoerder](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/uitvoerder.md)\n- [verbanden](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/verbanden.md)\n- [_geheugen/website-ux](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_geheugen/website-ux.md)\n\n### _uitvoer/2026-10-11-live-fixes\n- [beleid-plakken](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_uitvoer/2026-10-11-live-fixes/beleid-plakken.md)\n\n### _uitvoer/2026-10-11-live-fixes/backup\n- [policies-voor-11-10](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/_uitvoer/2026-10-11-live-fixes/backup/policies-voor-11-10.md)\n",
  "notities": [
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-10-14-search-console#5b07ca2a",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "[search-console] Titel/meta van `/en/pages/gripsokken-voor-voetbal` herschrijven: positie 7,3–7,6 over 65–107 vertoningen (7/28 dagen), 0% CTR — Engelse zoekintentie dekken (o.a. \"football grip socks\", \"grip socks football\")",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-10-14-search-console#230c4e80",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "[search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven: positie 5,9–6,3 over 58–98 vertoningen (7/28 dagen), 0% CTR",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Search Console & rankings — week 42\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\n\nVierde meting van deze routine. `check` gaf eerst weer `ModuleNotFoundError` voor beide Google-koppelingen onder het standaard `python`-interpreter (3.11); de benodigde pakketten (`google-api-python-client`, `google-auth`, …) stonden wél geïnstalleerd, maar onder het systeem-Python 3.13. Draaien met `python3.13 05_Research/_tools/google_data.py …` gaf direct \"ok\" voor zowel Search Console als GA4 — geen installatie nodig, alleen het juiste interpreter. Daarna is de volledige meting (7 en 28 dagen, GSC + GA4) gedraaid. Klikken en vertoningen stijgen op beide periodes; twee nieuwe lage-CTR-pagina's (Engelstalig) komen bovenop drie al bekende CTR-problemen uit eerdere runs van deze routine. Dashboard-sync (stap B) kon niet uitgevoerd worden: `ArtifactData` stond niet in de directe toolset van deze sessie en is niet opnieuw geladen binnen de beschikbare tijd — zie Wat niet lukte.\n\n## Kerncijfers\n\n- **156** · Klikken (28 dagen) · +33,3%\n- **3.962** · Vertoningen (28 dagen) · +10,5%\n- **3,94%** · CTR (28 dagen) · +0,68 pt\n- **8,1** · Gemiddelde positie (28 dagen) · 2,6 beter\n\n## Acties\n\n- [ ] P2 · [search-console] Titel/meta van `/en/pages/gripsokken-voor-voetbal` herschrijven: positie 7,3–7,6 over 65–107 vertoningen (7/28 dagen), 0% CTR — Engelse zoekintentie dekken (o.a. \"football grip socks\", \"grip socks football\")\n- [ ] P2 · [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven: positie 5,9–6,3 over 58–98 vertoningen (7/28 dagen), 0% CTR\n\n## Bevindingen\n\n### Kerncijfers — totaal higrip.nl\n\n| Periode | Klikken | Vertoningen | CTR | Gem. positie |\n|---|---|---|---|---|\n| Laatste 7 dagen (5–11 okt) | 50 | 1.046 | 4,78% | 8,3 |\n| Vorige 7 dagen (28 sep–4 okt) | 45 | 940 | 4,79% | 7,8 |\n| Verschil | **+11,1%** | +11,3% | −0,01 pt | −0,5 (iets slechter) |\n| Laatste 28 dagen (14 sep–11 okt) | 156 | 3.962 | 3,94% | 8,1 |\n| Vorige 28 dagen (17 aug–13 sep) | 117 | 3.586 | 3,26% | 10,7 |\n| Verschil | **+33,3%** | +10,5% | +0,68 pt | +2,6 (beter) |\n\nDe 28-dagentrend is voor de tweede meting op rij duidelijk positief op alle vier de metrics. De 7-dagenpositie is licht slechter dan vorige week (8,3 vs. 7,8), maar dat is normale schommeling op dit volume — de maandtrend is het stabielere signaal. Search Console-data loopt 2–3 dagen achter.\n\n**GA4 ter controle (7 dagen):** totaal 100 sessies (vorige 97, +3,1%), 4 keyEvents (vorige 2), omzet €131,26 (vorige €50,27). Opvallend: het kanaal Organic Search daalt in GA4 van 67 naar 44 sessies (−34,3% w/w), terwijl Direct juist stijgt (19→42). Dat loopt niet synchroon met de GSC-klikgroei (+11,1%). Mogelijke verklaring is kanaal-misattributie (zie het al openstaande punt over de sessiemeetbreuk van 21–23 sep) of ruis op dit volume (100 sessies/week) — geen conclusie, buiten de rol van deze routine (dat is CRO-terrein), alleen gemeld als signaal.\n\n### Kernkeywords (7 dagen tenzij anders vermeld)\n\n| Zoekterm | Positie | Vorige positie | Verschil | Vertoningen | Rankende URL |\n|---|---|---|---|---|---|\n| gripsokken | 5,9 | 6,9 | +1,0 | 111 | `/products/hi-grip-gripsokken-1` (oude URL, 107 van de 111) |\n| gripsokken (28 dagen) | 6,4 | 8,7 | +2,4 | 336 | zelfde oude URL (330 van de 336) |\n| grip sokken | 14,3 | 12,0 | −2,3 | 23 | verdeeld: `/collections/all` (14), oude productURL (6), `/` (3) — kannibalisatie, zie onder |\n| grip socks | 10,4 | 12,4 | +2,0 | 73 | verdeeld over 6+ URL's (zie Kannibalisatie) |\n| grip socks (28 dagen) | ≈10,9 (handmatig berekend, zie Wat niet lukte) | — | — | ≈312 | verdeeld over 9 URL's |\n| gripsocks (28 dagen) | 8,6 | 9,6 | +1,0 | 104 | — |\n| gripsokken kopen | 1,0 | — | — | 1 (te weinig) | `/collections/all` |\n| gripsokken voetbal | 41,8 | 27,0 | −14,8 | 6 (te weinig) | `/pages/gripsokken-voor-voetbal` — juiste pagina, geen kannibalisatie, maar wel een forse positieval op minimaal volume |\n| gripsokken padel / tennis / rugby | geen data | — | — | 0 (7 én 28 dagen) | — |\n| antislip sokken (28 dagen) | 2,0 | 1,0 | −1,0 | 2 (te weinig) | — |\n\nAlle aantallen onder de 100 vertoningen: geen conclusie, alleen volgen. \"Gripsokken\" (hoofdkeyword) is het enige kernkeyword met voldoende volume voor een echte uitspraak: solide verbetering op beide periodes, nog steeds bijna volledig op de oude URL (zie Kannibalisatie).\n\n### Nieuwe zoektermen (7 dagen)\n\n26 van de 50 gemeten termen zijn nieuw, de meeste met 1–4 vertoningen — overwegend schrijfvarianten en NL-voetbalgerelateerde long-tails. Met iets meer volume: **\"grip sokken zwart\"** (6 vertoningen, positie 16,3), **\"grip sportsokken\"**, **\"grip voetbalsokken\"** en **\"grips socks\"** (elk 4 vertoningen), **\"highgrip\"**, **\"grip socks price\"** en **\"gripsocken\"** (elk 3 vertoningen). Allemaal te weinig volume voor een conclusie of actie; geen patroon dat afwijkt van eerdere metingen (vooral schrijf- en merkvarianten).\n\n### Kansen\n\n**Striking distance (positie 5–20, ≥ 20 vertoningen):**\n\n| Zoekterm | Periode | Positie | Vertoningen |\n|---|---|---|---|\n| gripsokken | 7 dagen | 5,9 | 111 |\n| gripsokken | 28 dagen | 6,4 | 336 |\n| grip socks | 7 dagen | 10,4 | 73 |\n| grip socks football | 7 dagen | 6,8 | 26 |\n| grip sokken | 7 dagen | 14,3 | 23 |\n| gripsocks | 28 dagen | 8,6 | 104 |\n\nAllemaal al gevolgde kernkeywords of al bekende kannibalisatieterm — geen nieuwe actie.\n\n**Lage CTR, nieuw gevonden deze week (≥ 50 vertoningen, 0% CTR, goede positie):**\n\n| Pagina | Periode | Vertoningen | CTR | Positie |\n|---|---|---|---|---|\n| `/en/pages/gripsokken-voor-voetbal` | 7 dagen | 65 | 0% | 7,6 |\n| `/en/pages/gripsokken-voor-voetbal` | 28 dagen | 107 | 0% | 7,3 |\n| `/en/products/performance-gripsokken` | 7 dagen | 58 | 0% | 5,9 |\n| `/en/products/performance-gripsokken` | 28 dagen | 98 | 0% | 6,3 |\n\nBeide zijn Engelse pagina's die goed genoeg ranken om klikken te verdienen (positie 5,9–7,6) maar in geen van beide periodes één klik trekken. Nieuwe acties hierboven.\n\n**Lage CTR, al bekend (≥ 100 vertoningen, 28 dagen) — alleen bevestiging, geen nieuwe actie:**\n\n| Pagina | Vertoningen | CTR | Positie | Bekend via |\n|---|---|---|---|---|\n| `/products/hi-grip-gripsokken-1` | 1.170 | 1,2% | 7,6 | backlogpunt 17 |\n| `/collections/all` | 383 | 1,57% | 7,0 | backlog P2 (ontbrekende meta description) |\n| `/en/collections/gripsokken` | 340 | 0,59% | 9,3 | backlogpunt 18 |\n| `/products/performance-grip-socks-2-0-zwart` | 226 | 0,44% | 5,9 | SEO-titels sinds 11 okt live, nog geen 4 weken data |\n| `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 199 | 1,01% | 4,9 | backlogpunt 21 |\n| `/blogs/hi-grip/waarom-hi-grip-gripsokken` | 174 | 0% | 7,6 | backlogpunt 22 |\n| `/en/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 166 | 0% | 7,6 | backlogpunt 21 |\n| `/collections/gripsokken` | 107 | 1,87% | 8,4 | SEO-titel sinds 11 okt live, nog geen 4 weken data |\n\n### Kannibalisatie\n\n**\"gripsokken\"** (hoofdkeyword, NL) rankt nog steeds vrijwel volledig via de oude URL `/products/hi-grip-gripsokken-1` in plaats van de canonieke `/products/performance-gripsokken` — 107 van de 111 vertoningen (7 dagen), 330 van de 336 (28 dagen). De nieuwe URL haalt voor deze term 0 vertoningen in beide periodes. Al backlogpunt 17, bevestigd, geen nieuwe actie.\n\n**\"grip socks\"** blijft verdeeld over meerdere eigen URL's: op 28 dagen over negen URL's (`/en/collections/gripsokken` 118 vert., `/en` 79, `/collections/gripsokken` 45, `/collections/all` 28, `/` 20, `/en/products/performance-gripsokken` 12, `/products/performance-grip-socks-2-0-zwart` 6, `/en/pages/gripsokken-voor-padel` 3, `/en/pages/gripsokken-voor-voetbal` 1). Al backlogpunt 18, bevestigd, geen nieuwe actie.\n\n**Nieuw opgemerkt — dezelfde kannibalisatie geldt voor de Nederlandse variant \"grip sokken\":** verdeeld over `/collections/all` (14 vert., positie 19,4), de oude productURL (6 vert., positie 7,7) en `/` (3 vert., positie 3,3). Dit is hetzelfde patroon als backlogpunt 18, maar dan voor de NL-term in plaats van de EN-term — update toegevoegd aan dat punt in de backlog in plaats van een nieuw punt.\n\n### Pagina's (top 15 op klikken, 7 dagen)\n\n| Pagina | Klikken | Vertoningen | Positieverschil |\n|---|---|---|---|\n| `/` | 24 | 139 | +0,3 |\n| `/en` | 12 | 192 | −0,3 |\n| `/products/hi-grip-gripsokken-1` | 6 | 358 | +0,6 |\n| `/pages/zakelijk` | 2 | 17 | +4,6 |\n| `/collections/all` | 1 | 94 | −1,0 |\n| `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 1 | 41 | −1,3 |\n| `/blogs/hi-grip/de-wetenschap-achter-gripsokken` | 1 | 25 | +2,9 |\n| `/pages/over-ons` | 1 | 25 | −0,2 |\n| `/pages/gripsokken-voor-padel` | 1 | 22 | +0,6 |\n| `/pages/gripsokken-voor-tennis` | 1 | 14 | −4,0 |\n\nOverige pagina's uit de top 50: 0 klikken deze week. Op 28 dagen is het beeld vergelijkbaar maar met meer volume: `/` 88 klikken op 587 vertoningen (positie 8,4, +7,5 t.o.v. vorige periode), `/en` 28 klikken op 533 vertoningen. Grootste daler (≥ 10 vertoningen, 7 dagen): `/pages/gripsokken-voor-voetbal` (NL), van positie 6,4 naar 12,2 (−5,8) op 64 vertoningen — op dit volume een echt signaal, geen ruis, maar zonder duidelijke oorzaak zichtbaar in Search Console zelf; de Engelse tegenhanger bleef stabiel (−0,6). Geen directe actie, wel iets om volgende week te volgen. Grootste stijger: `/pages/zakelijk` (+4,6, van positie 9 naar 4,4).\n\n### Indexering\n\nNiet te meten: `google_data.py` heeft geen commando voor het Index Coverage-rapport. Zelfde beperking als de drie vorige metingen.\n\n### Doorwerking van eerdere verbeteringen\n\n**Eigen backlogpunten van deze routine, nog steeds open:**\n- **Punt 19** (`/pages/ontdek-jouw-sport`, titel/meta): nog steeds 0% CTR op positie 4,3 (28 dagen) — en de vertoningen daalden zelfs van 106 naar 73 (−31,1%). Probleem onopgelost en verslechterend.\n- **Punt 21** (`/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken`, NL+EN): NL-CTR daalde verder van 2,18% naar 1,01% (2 klikken op 199 vertoningen, was 5 op 229). EN-versie kreeg voor het eerst echt volume (166 vertoningen, was 1) maar nog steeds 0% CTR. Probleem onopgelost.\n- **Punt 22** (`/blogs/hi-grip/waarom-hi-grip-gripsokken`): CTR daalde naar 0% (was 0,98%), 0 klikken op 174 vertoningen (was 2 op 204). Probleem onopgelost en verslechterend.\n- **Punt 17/18** (oude URL / kannibalisatie \"grip socks\"): bevestigd onveranderd, zie Kannibalisatie hierboven.\n\n**Wijzigingen van andere routines (uit `_geheugen/seo-conversietest.md` en `CONTROLE.json`):** de SEO-titels/meta's voor `/collections/gripsokken` en de 2.0-producten staan sinds 11 oktober 2026 live (bevestigd door de actiecontrole, `2026-09-23-seo-conversietest-run-1#52494c22` en `#070e0039`). Dat is pas 3 dagen voor Search Console-data beschikbaar is — te vroeg voor een CTR-evaluatie (de procedure in `seo-conversietest.md` rekent zelf ook met 4 weken). Geen conclusie deze week, wel een vinger aan de pols voor de volgende meting. Het waardebalk-thema-blok (gratis-verzendingsdrempel + prijs per paar) staat nog niet gepubliceerd — niets te meten.\n\n## Wat niet lukte\n\n- **Google-koppeling faalde eerst onder het verkeerde interpreter:** `python 05_Research/_tools/google_data.py check` gaf `ModuleNotFoundError` voor zowel `google` als `googleapiclient` onder het systeem-`python` (3.11). De benodigde pakketten stonden wél geïnstalleerd, maar onder `python3.13`. Opgelost door het script met `python3.13` aan te roepen in plaats van `python`; geen installatie nodig. Gemeld voor het geval dit bij de volgende cloudrun terugkomt — handig om in de routine-instructie `--data-map`/interpreter-pad vast te leggen als dit blijft voorkomen.\n- **Dashboard-sync (stap B) niet gedraaid:** `ArtifactData` stond niet in de direct beschikbare tools van deze sessie; binnen de beschikbare tijd niet via `ToolSearch` geladen en uitgevoerd. Geen wijzigingen uit het dashboard naar de vault gehaald deze run.\n- **Generatieve-AI-impressierapport (AI Overviews/AI Mode):** niet ondersteund door `google_data.py`. Blijft open als backlogpunt 15 (P2) — geen nieuwe actie.\n- **Indexeringsstatus:** zelfde beperking, geen commando beschikbaar.\n- **Aggregatie van \"grip socks\" (28 dagen) ontbreekt in de top-50-lijst op zoekterm:** de losse combinatie zoekterm+pagina toont in totaal wél ≈312 vertoningen verdeeld over 9 URL's (zie Kannibalisatie), maar de term zelf staat niet in de top-50-lijst per zoekterm — dezelfde inconsistentie die de meting van 8 oktober al meldde voor andere termen. De positie van 10,9 in de kernkeywordtabel is handmatig berekend als het vertoningsgewogen gemiddelde over de 9 URL's, niet rechtstreeks door de tool geleverd. Geen tool gerepareerd (buiten de rol van deze routine), wel gemeld zodat dit cijfer met een korrel zout wordt gelezen.\n\n## Bronnen\n\n- `python3.13 05_Research/_tools/google_data.py check|gsc --dagen 7 --top 50|gsc --dagen 28 --top 50|ga4` (14 okt 2026)\n- `00_Brand_Core/Feiten & Actuele Staat.md`\n- `05_Research/_geheugen/search-console.md`, `05_Research/_geheugen/seo-conversietest.md`\n- `05_Research/_backlog/ACTIEBACKLOG.md`, `05_Research/_backlog/CONTROLE.json`\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-10-14",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-30-search-console",
+    "2026-10-08-search-console",
+    "2026-10-11-seo-audit-weekdelta",
+    "2026-10-12-blogs-stappenplan",
+    "2026-10-13-growth-radar-seo-content",
+    "2026-10-13-homepage-redesign"
+   ],
+   "id": "2026-10-14-search-console",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Klikken (28 dagen)",
+     "verschil": "+33,3%",
+     "waarde": "156"
+    },
+    {
+     "label": "Vertoningen (28 dagen)",
+     "verschil": "+10,5%",
+     "waarde": "3.962"
+    },
+    {
+     "label": "CTR (28 dagen)",
+     "verschil": "+0,68 pt",
+     "waarde": "3,94%"
+    },
+    {
+     "label": "Gemiddelde positie (28 dagen)",
+     "verschil": "2,6 beter",
+     "waarde": "8,1"
+    }
+   ],
+   "kerntitel": "Klikken stijgen fors, maar twee Engelse pagina's met goede positie trekken 0% CTR",
+   "prioriteit": "P2",
+   "routine": "search-console",
+   "samenvatting": "Klikken en vertoningen stegen op zowel 7 als 28 dagen (28 dagen: klikken +33,3%, vertoningen +10,5%, positie 2,6 beter naar 8,1), vooral gedragen door het hoofdkeyword 'gripsokken' en merknaam. Twee nieuwe lage-CTR-kansen op Engelse pagina's met prima positie (voetbalpagina en productpagina) komen erbij, en de drie eerder gemelde CTR-problemen (punt 19, 21, 22) en de kannibalisatie-/oude-URL-problemen (punt 17, 18) staan onverminderd open — punt 18 (kannibalisatie 'grip socks') blijkt zich ook bij de Nederlandse variant 'grip sokken' voor te doen.",
+   "status": "nieuw",
+   "titel": "Search Console & rankings — week 42",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-14-search-console.md",
+   "vervangt": [],
+   "wat_niet_lukte": "- **Google-koppeling faalde eerst onder het verkeerde interpreter:** `python 05_Research/_tools/google_data.py check` gaf `ModuleNotFoundError` voor zowel `google` als `googleapiclient` onder het systeem-`python` (3.11). De benodigde pakketten stonden wél geïnstalleerd, maar onder `python3.13`. Opgelost door het script met `python3.13` aan te roepen in plaats van `python`; geen installatie nodig.…"
+  },
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — AI-search (ChatGPT Ads blijkt in de NL-praktijk veel goedkoper dan gedacht)\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\n\nTwee updates op al bekende AI-search-trends: (1) een Nederlandse webshop draaide inmiddels een echte ChatGPT Ads-test met cijfers die ver afwijken van de eerder geschatte kosten, en (2) Universal Cart krijgt voor Europa concretere (maar nog steeds niet-Nederlandse) contouren. Twee andere sporen (Google AI Mode-status in Nederland, een bredere ChatGPT Shopping-uitrol in de EU) leverden geen bevinding op die de datumtoets doorstond.\n\n## Bevindingen\n\n### Beslist.nl-praktijktest: ChatGPT Ads-CPC ~€0,20, niet de geschatte $3-5\nVergelijkingssite Beslist.nl testte begin september 2026 ChatGPT Ads: in minder dan twee dagen ruim 1.700 advertenties en 61.711 vertoningen, bij een kostprijs per klik van ongeveer €0,20 — ver onder de $3-5 die eerder als advies-CPC werd genoteerd (Growth Radar, 23 sep 2026). De doorklikratio lag meer dan 2× hoger dan bij Beslist's eigen Google Shopping-campagnes, op het niveau van hun Google Search-campagnes. Beslist noemt als mogelijke verklaring dat ChatGPT-gebruikers zich al verder in de aankoopfase bevinden dan gemiddelde Google-zoekers. (Bredere CTR-benchmarks lopen overigens sterk uiteen tussen bronnen — Beslist's cijfer is één praktijktest, geen marktstandaard.)\n\n> **Voor higrip.nl:** Dit verlaagt de drempel voor het eerder genoteerde punt dat ChatGPT Ads nog geen concrete NL-registratie had: de kosten lijken in de praktijk veel lager dan verwacht. Er is nog geen eigen advertentiebudget-beslissing, dus geen reden om dit nu los op te pakken — maar het is relevant genoeg om mee te nemen zodra die beslissing valt, naast de al wachtende punten 8 (Perplexity), 9/13 (TikTok Shop/creators) en 10 (CAPI).\n\n**Actie:** Nieuw backlogpunt P3 — zie backlog (punt 24).\n\n### Universal Cart in Europa: VK als eerste markt genoemd, Nederland nog niet\nVervolg op de bevinding van 30 september (Universal Cart/AP2 live in de VS, Europa nog niet genoemd): recentere berichtgeving noemt specifiek het Verenigd Koninkrijk als volgende markt na Canada en Australië; een Duitstalige (DACH-)uitrol is nog niet aangekondigd. Los daarvan tekenden Nexi Group en Google Cloud op 3 maart 2026 een intentieverklaring om agentic-commerce-infrastructuur volgens de UCP/AP2-standaarden in Europa op te bouwen — dat is infrastructuurwerk voor de sector, geen productlancering. Nederland wordt in geen van beide sporen genoemd.\n\n> **Voor higrip.nl:** Verandert niets aan de eerdere conclusie: nog geen NL-rollout, dus geen actie. Bevestigt wel opnieuw de onderbouwing van backlogpunt 4 (Merchant Center-feed/variant-ID's).\n\n**Actie:** Geen nieuwe actie. Backlogpunt 4 bijgewerkt met dit controlepunt (zie backlog).\n\n## Wat niet lukte\n\n- Een zoektocht naar een bevestigde NL- of Benelux-rollout van ChatGPT Shopping (los van de advertentiekant) leverde alleen een Duitse lancering op en een Nederlandse bron over het verdwijnen van organische Shopping-resultaten uit Google — geen primaire bron met een Nederlandse of Benelux-datum. Niet gemeld.\n- Een zoektocht naar \"Google AI Mode Nederland\" bracht vooral een artikel van 8 oktober **2025** naar boven (niet 2026) over de Europese uitrol van AI Mode destijds — een jaar oud en dus niet nieuw. Geen bruikbare recente bevestiging gevonden van de actuele AI Mode-status in Nederland; niet gemeld.\n\n## Bronnen\n\n- [Beslist.nl: twee keer hogere doorklikratio met ChatGPT-ads — Emerce, 8 sep 2026](https://emerce.nl/nieuws/beslistnl-twee-keer-hogere-doorklikratio-chatgpt-ads)\n- [Google's Universal Cart wants to follow you everywhere you shop — PPC Land](https://ppc.land/googles-universal-cart-wants-to-follow-you-everywhere-you-shop/)\n- [The Universal Commerce Protocol rollout in 2026 — wearepresta.com](https://wearepresta.com/the-universal-commerce-protocol-rollout-in-2026-what-every-e-commerce-brand-needs-to-know/)\n- [Nexi Google Cloud agentic commerce Europe — Stellagent](https://stellagent.ai/insights/nexi-google-cloud-agentic-commerce-europe)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-10-14",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-09-16-growth-radar-ai-search",
+    "2026-09-23-growth-radar-ai-search",
+    "2026-09-30-growth-radar-ai-search"
+   ],
+   "id": "2026-10-14-growth-radar-ai-search",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Beslist.nl-praktijktest: ChatGPT Ads-CPC ~€0,20, CTR 2× hoger dan Google Shopping",
+   "prioriteit": "P3",
+   "routine": "growth-radar",
+   "samenvatting": "Een Nederlandse praktijktest (Beslist.nl) laat zien dat ChatGPT Ads in de praktijk een fractie kosten van de eerder geschatte $3-5 per klik, met een beduidend hogere doorklikratio dan Google Shopping. Voor higrip.nl is dit nog geen actie, maar wel een reden om het kanaal mee te nemen zodra er een advertentiebudget-beslissing valt.",
+   "status": "nieuw",
+   "titel": "Growth Radar — AI-search (ChatGPT Ads blijkt in de NL-praktijk veel goedkoper dan gedacht)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-14-growth-radar-ai-search.md",
+   "vervangt": [],
+   "wat_niet_lukte": "- Een zoektocht naar een bevestigde NL- of Benelux-rollout van ChatGPT Shopping (los van de advertentiekant) leverde alleen een Duitse lancering op en een Nederlandse bron over het verdwijnen van organische Shopping-resultaten uit Google — geen primaire bron met een Nederlandse of Benelux-datum. Niet gemeld.\n- Een zoektocht naar \"Google AI Mode Nederland\" bracht vooral een artikel van 8 oktober *…"
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie. Een prototype v4 is al wel gebouwd (niet live) als voorbereiding.",
+      "controle": "Heeft Lars besloten dit onderzoek als v4 in homepage-concept v3 te verwerken?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#9bad2193",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: dit onderzoek verwerken in homepage-concept v3 (artifact 5Tw9YZMfqT5xS8hqKruQz9) als v4, in plaats van een nieuw concept te starten",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Besluiten of dit onderzoek als v4 in het bestaande concept v3 verwerkt wordt, of dat er een nieuw concept start."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars gekozen tussen hero-kop A of B?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#d831d95d",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: hero-kop A \"STOP MET GLIJDEN.\" (probleem) of B \"GA DOOR WAAR ANDEREN STOPPEN.\" (identiteit), met eyebrow PERFORMANCE GRIPSOKKEN en de vier sporten",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets (beide hero-kopopties staan al klaar in de notitie)",
+      "wat_jij_doet": "Kiezen tussen hero-kop A of B."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars gekozen waar de hoofd-CTA naartoe gaat (2.0-product of collectie)?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#c2d600ea",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: hoofd-CTA in de hero naar het 2.0-product of naar /collections/gripsokken",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Kiezen waar de hoofd-CTA in de hero naartoe gaat."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars gekozen wanneer de 360°-onthulling komt?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#166eeeb9",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: 360°-onthulling in de eerste bouwronde of pas na het opruimen van JavaScript (Design wil sectie 3, Conversie zet hem op prioriteit 10)",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Kiezen of de 360°-onthulling in de eerste bouwronde komt of pas na het opruimen van JavaScript."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars gekozen tussen de blauwe of witte bewijssectie?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#5ab8bae9",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: blauwe bewijssectie (#0011A7, 1,17 in volt) of wit met volt-markering",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Kiezen tussen de blauwe bewijssectie of wit met volt-markering."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars besloten of de H1/H2-afspraak ook voor de homepage geldt?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#7aefe7a8",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: geldt de afspraak \"H1/H2 niet wijzigen\" ook voor de homepage, of mag de H1 met dezelfde tekst naar de hero",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Besluiten of de H1/H2-afspraak ook voor de homepage geldt."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Homepage toont in de visually-hidden aankondigingstekst nog '3500+ S...' (DE KEUZE VAN 3500+ S...), niet gecorrigeerd naar 3000+.",
+      "controle": "Is '3500+ sporters' teruggezet naar 3000+ in announcementbar, Over-ons-tijdlijn en de presets?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "site",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#ff235e99",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "\"3500+ sporters\" corrigeren naar 3000+ in de announcementbar (header-group.json), de tijdlijnkop op Over ons en de presets van gripsocks2-proof en sport-proof",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "ja",
+      "wat_claude_doet": "Conceptaanpassing in het werkthema: '3500+' teruugzetten naar '3000+' in header-group.json, de Over-ons-tijdlijnkop en de presets van gripsocks2-proof/sport-proof.",
+      "wat_jij_doet": "Concept controleren en live zetten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Nieuwe actie van 13-10; geen bewijs van nieuwe GA4-events of een baseline-meting gevonden.",
+      "controle": "Is het meetfundament (events sportkiezer/360°/scrolldiepte + 4 weken baseline) al opgezet?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#4bf416c7",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Meetfundament vóór de bouw: events voor klik op sportkiezer, interactie met de 360° en scrolldiepte, plus 4 weken baseline van de huidige homepage",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "deels",
+      "wat_claude_doet": "Conceptplan en eventuele code-snippets voor de events (sportkiezer-klik, 360°-interactie, scrolldiepte) in het werkthema.",
+      "wat_jij_doet": "Events in GA4 configureren/valideren en de 4 weken baseline-meting starten en afwachten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Nieuwe actie van 13-10; geen bewijs van opschoning in de homepage-broncode.",
+      "controle": "Is het JavaScript-budget van de homepage opgeschoond (inline ai_gen-scripts, dubbele CSS)?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "site",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#4916b32e",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "JavaScript-budget homepage: inline-scripts van de ai_gen-blocks, dubbele gripsocks2-launch.css en padel-page.css van de homepage halen vóór er motion bij komt",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "ja",
+      "wat_claude_doet": "Conceptopschoning van inline ai_gen-scripts en dubbele CSS (gripsocks2-launch.css, padel-page.css) in het werkthema.",
+      "wat_jij_doet": "Concept controleren en live zetten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby bestaat nog niet live; werkthema-opbouw niet apart gecontroleerd maar rugby ontbreekt ook in de live sportkiezer/collectietitel.",
+      "controle": "Is de rugbypagina gebouwd in het werkthema, met rugbytegel in de sportkiezer?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "shopify",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#26bbb772",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Rugbypagina /pages/gripsokken-voor-rugby bouwen in het werkthema, daarna de rugbytegel in de sportkiezer en rugby in de title",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "deels",
+      "wat_claude_doet": "Conceptpagina en liquid-sectie voor /pages/gripsokken-voor-rugby opzetten in het werkthema, inclusief rugbytegel in de sportkiezer (zonder foto).",
+      "wat_jij_doet": "Rugbyfoto laten schieten, concept controleren en live zetten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Nieuwe actie van 13-10, afhankelijk van de besluiten hierboven die nog niet genomen zijn; geen bewijs van een gebouwde testtemplate.",
+      "controle": "Is er een nieuwe testtemplate page.home-nieuw.json gebouwd in het werkthema?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "shopify",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#f2c44e5d",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Nieuwe homepage bouwen als testtemplate page.home-nieuw.json in werkthema 201133490503 (CSS → Liquid → JS), pas na de besluiten hierboven",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "deels",
+      "wat_claude_doet": "Testtemplate page.home-nieuw.json opzetten in het werkthema (CSS → Liquid → JS) zodra de besluiten hierboven genomen zijn.",
+      "wat_jij_doet": "De besluiten nemen, daarna het concept controleren en live zetten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Productpagina-FAQ bevat nog 13 instanties van 'u'/'uw' (zie ook #864864f2).",
+      "controle": "Zijn FAQ-antwoorden 4 en 7 van 'uw' naar 'je' gezet (sectie + snippets/faq-schema.liquid)?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "site",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#4867b36b",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "FAQ-antwoorden 4 en 7 van \"uw\" naar \"je\", in de sectie en in snippets/faq-schema.liquid tegelijk",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "ja",
+      "wat_claude_doet": "FAQ-antwoorden 4 en 7 aanpassen van 'uw' naar 'je' in het werkthema (sectie + snippets/faq-schema.liquid).",
+      "wat_jij_doet": "Concept controleren en live zetten."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars besloten welke marquee-afbeeldingen echte klantlogo's zijn?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#9be19de6",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: welke van de 8 marquee-afbeeldingen echte klantlogo's zijn (4 lijken SEO-afbeeldingen)",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Beoordelen welke van de 8 marquee-afbeeldingen echte klantlogo's zijn."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": {
+      "bewijs": "Besluit voor Lars; nog niet aangevinkt in de notitie.",
+      "controle": "Heeft Lars besloten of page_transition_enabled bewust aan moet staan?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
+     "id": "2026-10-13-homepage-redesign#e1d8501a",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: staat page_transition_enabled bewust aan (rel=\"expect\" blocking=\"render\" kan de eerste paint tot 1,8 s vasthouden)",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "Besluiten of page_transition_enabled bewust aan moet staan, afgewogen tegen de eerste-paint-vertraging."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Nieuwe actie van 13-10; geen bewijs van geëxporteerde frames gecontroleerd in deze run.",
+      "controle": "Zijn de 206 frames van het 360°-artifact naar Shopify Files geëxporteerd?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "shopify",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#907cdb2d",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "206 frames van het 360°-artifact exporteren naar Shopify Files (desktop elk 2e frame ≤ 1080 px, mobiel elk 3e ≤ 640 px, WebP q70)",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "nee",
+      "wat_claude_doet": "niets (brondata ontbreekt)",
+      "wat_jij_doet": "De 206 frames van het 360°-artifact aanleveren/exporteren naar Shopify Files, of Claude toegang geven tot de brondata."
+     }
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "Nog niet van toepassing: variant A is nog niet gelanceerd (homepage-redesign nog in besluitfase).",
+      "controle": "Is title/meta-variant B getest (na lancering van variant A)?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "geen",
+      "uitkomst": "open"
+     },
+     "id": "2026-10-13-homepage-redesign#98beb4c6",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Title/meta-variant B (merk en entiteit) later testen; bij lancering variant A aanhouden",
+     "uitvoerbaar": {
+      "beoordeeld": "2026-10-14",
+      "claude": "ja",
+      "wat_claude_doet": "Conceptvariant B van title/meta (merk en entiteit) opstellen voor latere test.",
+      "wat_jij_doet": "Op het juiste moment (na lancering van variant A) testen en live zetten."
+     }
+    },
+    {
+     "afgevinkt": true,
+     "beheer": null,
+     "besluit": false,
+     "controle": {
+      "bewijs": "03_Website_Agent/Technisch/Technische Procedures.md regel 15/27-28 noemt al beide ID's (bijgewerkt 2026-10-12, vóór deze actie zelfs al correct).",
+      "controle": "Is Technische Procedures bijgewerkt met live-thema 202394272071 en werkthema-kopie 202398040391?",
+      "gecontroleerd": "2026-10-14",
+      "methode": "vault",
+      "sinds": "2026-10-14",
+      "uitkomst": "gedaan"
+     },
+     "id": "2026-10-13-homepage-redesign#af3a04a0",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Technische Procedures bijwerken: live thema is nu 202394272071, er is ook 202398040391 \"Bijgewerkte kopie van AI website workspace 2.0\"",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\nOpdracht van Lars via Denzel → Website Agent. Ingezet: Design, Website Copy, Conversie & Analyse, SEO en een los benchmark-onderzoek (28 sites zelf opgehaald). E-mail Marketing is bewust overgeslagen, omdat de homepage geen flow raakt. Alles is voorstel: er is niets gebouwd of gepusht.\n\nDe homepage is de enige landingspagina die verkoopt (7 van 7 GA4-aankopen), maar het eerste scherm doet niets. De hero zegt alleen \"HÏ GRIP\" met een knop. De enige H1 staat in de sport-teaser, op 2.737 px desktop en 3.886 px mobiel. Er is geen claim, prijs, reviewscore of rugby te zien, en 2.0 wit, 2.0 zwart en de drie tegels vertellen dezelfde route drie keer. De lengte is géén probleem: desktop ±5.070 px en mobiel ±6.130 px, net zo lang als Nike NL (5.351) en Gymshark (5.955).\n\nVoorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° → bewijs 1,17 → productkeuze met prijs → missie → vertrouwen → zakelijk → FAQ), motion in de stijl van Over ons (kinetic outline→vol, ab-up-reveal, tellers, scroll-gestuurde 360° van de bestaande 206 frames, marquee die reageert op scrollsnelheid) met maximaal 14 KB extra JS en zonder GSAP. **Volgorde van werken:** eerst het meetfundament en het opruimen van JavaScript, dan structuur en copy, motion als laatste.\n\n**Let op: er bestaat al een homepage-concept v3 (07-10).** Het artifact staat op een ander account (https://claude.ai/artifact/5Tw9YZMfqT5xS8hqKruQz9) en was in deze sessie niet leesbaar; het werd pas na het onderzoek gevonden in [Agent Werk & Kwaliteit Overzicht](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Agent_Infrastructuur/Beheer/Agent%20Werk%20%26%20Kwaliteit%20Overzicht.md). Lars heeft het al drie keer bijgestuurd: lichte basis in Pitched-structuur, eigen HÏ Grip-header/-footer, gepinde horizontale merkboodschap, Insta/TikTok-feed. Dit onderzoek is daarom **input voor v4 van dat concept, geen vervanging.** De vergelijking staat onder Bevindingen.\n\n## Kerncijfers\n- **47%** · Aandeel van / in GA4-sessies (263 van 560, 29 aug – 12 okt)\n- **64%** · Engagement op / tegen 26% op andere landingspagina's\n- **54** · Lighthouse mobiel homepage (lokaal, indicatief) · LCP 3,1 s, TBT 7,9 s\n- **3.886 px** · Positie H1 op mobiel (±4,8 schermen)\n\n## Acties\n- [ ] P1 · Besluit: dit onderzoek verwerken in homepage-concept v3 (artifact 5Tw9YZMfqT5xS8hqKruQz9) als v4, in plaats van een nieuw concept te starten\n- [ ] P1 · Besluit: hero-kop A \"STOP MET GLIJDEN.\" (probleem) of B \"GA DOOR WAAR ANDEREN STOPPEN.\" (identiteit), met eyebrow PERFORMANCE GRIPSOKKEN en de vier sporten\n- [ ] P1 · Besluit: hoofd-CTA in de hero naar het 2.0-product of naar /collections/gripsokken\n- [ ] P1 · Besluit: 360°-onthulling in de eerste bouwronde of pas na het opruimen van JavaScript (Design wil sectie 3, Conversie zet hem op prioriteit 10)\n- [ ] P1 · Besluit: blauwe bewijssectie (#0011A7, 1,17 in volt) of wit met volt-markering\n- [ ] P1 · Besluit: geldt de afspraak \"H1/H2 niet wijzigen\" ook voor de homepage, of mag de H1 met dezelfde tekst naar de hero\n- [ ] P1 · \"3500+ sporters\" corrigeren naar 3000+ in de announcementbar (header-group.json), de tijdlijnkop op Over ons en de presets van gripsocks2-proof en sport-proof\n- [ ] P1 · Meetfundament vóór de bouw: events voor klik op sportkiezer, interactie met de 360° en scrolldiepte, plus 4 weken baseline van de huidige homepage\n- [ ] P1 · JavaScript-budget homepage: inline-scripts van de ai_gen-blocks, dubbele gripsocks2-launch.css en padel-page.css van de homepage halen vóór er motion bij komt\n- [ ] P2 · Rugbypagina /pages/gripsokken-voor-rugby bouwen in het werkthema, daarna de rugbytegel in de sportkiezer en rugby in de title\n- [ ] P2 · Nieuwe homepage bouwen als testtemplate page.home-nieuw.json in werkthema 201133490503 (CSS → Liquid → JS), pas na de besluiten hierboven\n- [ ] P2 · FAQ-antwoorden 4 en 7 van \"uw\" naar \"je\", in de sectie en in snippets/faq-schema.liquid tegelijk\n- [ ] P2 · Besluit: welke van de 8 marquee-afbeeldingen echte klantlogo's zijn (4 lijken SEO-afbeeldingen)\n- [ ] P2 · Besluit: staat page_transition_enabled bewust aan (rel=\"expect\" blocking=\"render\" kan de eerste paint tot 1,8 s vasthouden)\n- [ ] P2 · 206 frames van het 360°-artifact exporteren naar Shopify Files (desktop elk 2e frame ≤ 1080 px, mobiel elk 3e ≤ 640 px, WebP q70)\n- [ ] P3 · Title/meta-variant B (merk en entiteit) later testen; bij lancering variant A aanhouden\n- [x] P3 · Technische Procedures bijwerken: live thema is nu 202394272071, er is ook 202398040391 \"Bijgewerkte kopie van AI website workspace 2.0\"\n\n## Bevindingen\n\n### Vergelijking met homepage-concept v3 (07-10, beschrijving uit het dashboard)\nv3: hero → productkaarten wit/zwart → 360-video → merkboodschap \"De laatste game/minuut/scrum\" (gepinde horizontale scroll) + cijfers → sporten → logoband \"Vertrouwd door:\" + zakelijk → FAQ. Lichte basis, 50/50-splits, hairlines, pill-CTA.\n- **Klopt met dit onderzoek:** product met prijs vroeg (Conversie #3 en de sokkenmerken in de benchmark), 360° onder de vouw, partnerlogo's samen met zakelijk (benchmarkpatroon 8), founders/Over ons-stijl, één idee per sectie.\n- **Toevoegen aan v4:**\n  - H1 met claim en sport plus een trustregel (4,6 ★ Trustpilot · 3000+) in het eerste scherm.\n  - Bewijsregel 0,60 → 1,17 met bron bij de cijfers.\n  - Sportkiezer hoger (nu 5e).\n  - Motionbudget: 360° als scroll-gestuurde frames op canvas in plaats van video (zie motion-spec), pas laden na LCP.\n  - Meetevents.\n- **Niet overnemen uit het Design-voorstel van vandaag:** de donkere zwart/blauw-afwisseling botst met Lars' keuze voor een lichte basis in v2/v3. Pas de motion-spec toe op de lichte basis van v3.\n- **Open punten uit v3 die hier terugkomen:** h1-tekst (copy vs SEO), partners achter 4 logobestanden, rugbyfoto, voorraad 2.0, retour 14/30 dagen.\n\n### Huidige homepage (live, gemeten 13-10 op 1440×900 en 375×812)\nVolgorde: hero (288 px desktop / 272 mobiel) → drie waarden COMFORT/VERTROUWEN/INNOVATIE → 2.0-hero → 2.0 zwart → drie tegels (verhaal, shop, zakelijk) → sport-teaser met H1 en tennis/voetbal/padel → B2B → \"vertrouwd door\" → marquee → FAQ. De hero is op desktop maar 288 px hoog, dus het eerste scherm toont al de waardenkaarten. Op mobiel bedekt de cookiebanner bij binnenkomst de onderste helft van het eerste scherm.\n\nMerkafwijkingen in het werkthema: accentgevulde knoppen (`.g2-btn`, oranje tegelknoppen met radius 4), hardcoded `#666666`/`#f5f5f5`, groen `#22c55e` en sterkleur `#007f4e`, drie gelijke kaarten (twee keer), twee lege `_blocks`, lege `.g2-hero__side`. Rugby is ooit uit de sport-teaser verwijderd (block `s_2` ontbreekt). Disabled secties bevatten verouderde kortingen (december 15%, 50% verjaardag) en \"2000+\": die mogen nooit terugkomen.\n\n### Waarom Over ons wel werkt\nEén typografisch systeem (Poppins 800 italic UPPERCASE, één accentwoord per kop), harde zwart/wit-ritmiek met veel lucht, en per sectie één scroll-mechaniek die op één voortgangswaarde draait: groeiende tijdlijnbalk, horizontale fotostrook, woord-voor-woord-missie, uitwaaierende polaroids. De reveal `ab-up` (0,9 s, `cubic-bezier(.2,.7,.1,1)`) start alleen met JS en zonder reduced motion: zonder JS is alles direct zichtbaar. Verhaalstructuur: overtuiging → bewijs (tijdlijn) → mensen. Voor de homepage een kleine dosis: één overtuigingszin, drie founders met één quote, drie tijdlijnpunten.\n\nNiet overnemen van Over ons: de volt gevulde knop, drie zwarte secties achter elkaar, een rAF-lus die ook onzichtbare items meet.\n\n### Data en snelheid (Conversie & Analyse)\n- GA4 heeft ±6 weken bruikbare data en ziet vermoedelijk maar ±20% van het verkeer (Shopify 248 tegen GA4 54 sessies in week 21–27 sep). 136 VS-sessies zijn waarschijnlijk bots. Bij 7 aankopen is alles richtinggevend.\n- Mobiel: 145 sessies, 74,5% engagement, alle 7 aankopen. Desktop: 118 sessies, 51,7% engagement, 0 aankopen.\n- Organic Search is het sterkste kanaal (121 sessies, 76% engagement).\n- Na de homepage doet 43% niets meer. 16% gaat naar /collections/gripsokken, 3% direct naar een 2.0-productpagina.\n- Mobiel laadt 2,3 MB en 157 scripts (920 KiB). 52% van de LCP is renderdelay door JavaScript. PageSpeed Insights gaf 429, dus er zijn geen veldwaarden.\n- Een A/B-test op aankopen is bij dit volume niet haalbaar. Meet micro-conversies 4 weken vooraf en 4–6 weken na livegang.\n\n### Benchmark (28 sites, 13-10)\n- Littledata (426 Shopify-stores, jul–okt 2026): mediaan 1,4% conversie, top 20% boven 2,7%, top 10% boven 3,5%.\n- Sterke homepages zetten claim, bewijs en één knop in het eerste scherm (Feetures \"America's #1 Running Sock\", Loop met reviewaantal en sterren). Sokkenmerken (Bombas, Stance, Tapedesign) verkopen op packs met prijs per paar en een keuzehulp.\n- Apple gebruikt nu sticky secties met video die meeloopt met het scrollen. Zware WebGL en Rive zie je alleen op campagne- en merksites, en die scoren het laagst op toegankelijkheid.\n- Alleen snelheid heeft hard bewijs (Vodafone: 31% snellere LCP gaf 8% meer verkoop). De cijfers over reviews, quizzen, UGC en sticky add-to-cart komen grotendeels van leveranciers.\n- Google toont sinds 7 mei 2026 geen FAQ-uitbreiding meer in de zoekresultaten. Houd FAQ-schema voor consistentie, niet voor rich results.\n- Horizon heeft view transitions al ingebouwd (`assets/view-transitions.js`).\n\n### Voorgestelde opbouw (Design)\n| # | Sectie | Achtergrond | Doel |\n|---|---|---|---|\n| 1 | Hero met H1, subline, één pill-CTA, trustregel (4,6 ★ Trustpilot · 3000+ sporters · gratis vanaf €35) | #111111 + foto | Belofte in 3 seconden |\n| 2 | Sportkiezer: tennis, padel, voetbal, rugby (accordeon op desktop, snap-rail op mobiel) | wit | Segmentatie |\n| 3 | 2.0 in 360°: sticky canvas met callouts hiel/grip/ademend/teen | zwart | Productbegrip |\n| 4 | Bewijs: 0,60 → 1,17 met verplichte bronregel (Apps et al. 2022) | Royal Blue | Geloofwaardigheid |\n| 5 | Productkeuze 1.0 / 2.0 wit / 2.0 zwart, prijs uit Liquid, beschikbaarheid via `product.available` | #EAE8E5 | Conversie |\n| 6 | Missie woord-voor-woord, CTA \"Ons verhaal\" | zwart | Merkband |\n| 7 | Vertrouwen: Trustpilot 4,6 ★ + echte clublogo's | wit | Risico wegnemen |\n| 8 | Zakelijk (split) | #111111 | Tweede doelgroep |\n| 9 | FAQ + outro-wordmark \"GA DOOR WAAR ANDEREN STOPPEN.\" | wit | Laatste twijfel |\n\n**Correctie door Denzel:** Design schat de nieuwe pagina op ±9.000 px desktop (met runways van 300vh en 240vh). Dat is langer dan nu, terwijl de benchmark op ±5.000–6.500 px uitkomt. Advies: runways inkorten (360° naar ±180vh, missie naar ±140vh) en op ±6.000–6.500 px uitkomen.\n\n### Motion-spec (Design, getoetst aan de benchmark)\n- **Hero:** kinetic type, regels schuiven in (700 ms, stagger 80 ms), kernwoord outline → volt via `clip-path`. Pure CSS, de H1 is nooit onzichtbaar voor LCP.\n- **CTA's:** magnetische pills (max 6 px, alleen bij muis), chevron schuift mee.\n- **Sportkiezer:** flex-accordeon met grijs → kleur, op mobiel een snap-rail waarin elke kaart direct een link is.\n- **360°:** sticky canvas, poster-img zonder JS, script pas na `load` + idle of bij 150% viewport. Ringbuffer van ±6 `ImageBitmap`s (alle frames gedecodeerd bewaren laat iOS crashen). Niet bij saveData, 2g/3g of reduced motion; dan een 2×2-grid met detailbeelden.\n- **Bewijs:** tellers 0,60 → 1,17 en 0 → 3000, balken met `scaleX`, eindwaarde staat in de HTML.\n- **Missie:** woord-voor-woord via `animation-timeline: view()` met de JS van Over ons als fallback.\n- **Marquee:** reageert op scrollsnelheid via WAAPI `updatePlaybackRate` en keert om bij omhoog scrollen.\n- **Techniek:** desktop scrolt in `.page-wrapper`, niet in het venster. Daarom één document-capture-listener, één rAF-lus en een IntersectionObserver-poort per sectie.\n- **Budget:** LCP < 2,5 s mobiel, INP < 200 ms, CLS < 0,1, ≤ 14 KB gz extra JS, 360° ≤ 1,2 MB mobiel.\n- **Niet doen:** GSAP, Lenis/smooth scroll, WebGL, custom cursor, parallax op mobiel, automatische carousels zonder pauze.\n\n### Copy-richting (Website Copy)\n- Hero A \"STOP MET GLIJDEN.\" / B \"GA DOOR WAAR ANDEREN STOPPEN.\". Advies: A voor koud verkeer; B gaat naar de afsluiter.\n- Bewijs A \"95% MEER GRIP.\" met 0,60 → 1,17, bronregel en eerlijkheidsregel (\"onderzoek naar gripsokken in het algemeen\"). Friedl et al. 2023 weglaten.\n- Product: één sectie voor wit en zwart, \"7 FEATURES. ÉÉN SOK.\". De 7e feature (cushioning) is nog niet bevestigd.\n- Sportkiezer zonder sectie-CTA: de tegels zijn de CTA.\n- Sticky CTA mobiel: \"SHOP 2.0 · €17,95\" zodra de voorraad bevestigd is, anders \"SHOP · GRATIS VANAF €35\".\n- Volledige A/B per sectie, Cialdini/Kahneman-toets en 14 open vragen staan in het copyrapport.\n- Denzel-check: het reviewcijfer is al beslist in het feitenbestand (4,6 ★ Trustpilot, besluit 2-10), net als 3000+ sporters. Die twee open vragen uit het copyrapport vervallen.\n\n### SEO-eisen voor het redesign\n- Eén H1 boven de vouw. Tekst niet alleen in canvas of afbeeldingen. Callouts als gewone HTML.\n- Verplichte interne links naar de sportpagina's. De hoofdnavigatie linkt er nu niet naar en de announcementbar linkt twee keer naar /collections/all.\n- FAQ-sectie en `faq-schema.liquid` in dezelfde wijziging aanpassen, anders ontstaat er een dubbele of afwijkende FAQPage. De Organization-snippet met `sameAs` wordt nu nergens gerenderd.\n- Homepage-title en collectie-title zijn bijna gelijk: kannibalisatie op \"performance gripsokken\". / krijgt 101 van 165 klikken (28 dagen), vooral op merknaam; \"hi grip\" zonder trema staat op positie 6,1.\n- Title A (lancering): `HÏ Grip | Performance gripsokken: tennis, padel & voetbal`. Rugby pas erin als de rugbypagina live is (nu 404).\n\n### Feiten die rechtgezet moeten worden\n- Sporters: 3000+ (feitenbestand, Lars 15-9). \"3500+\" staat op Over ons en in de announcementbar.\n- Reviewscore: 4,6 ★ Trustpilot. Niet 4,5 van de site en nooit als `aggregateRating`.\n- Verzending: drempel €35. Een oudere FAQ noemde €30. \"30 dagen retour\" pas in een USP-balk zodra de beleidspagina's kloppen.\n- Voorraad 2.0 stond op 1-10 op 0 (feitenbestand). Live lijkt het weer beschikbaar: controleer dat voordat de hero-CTA naar 2.0 wijst.\n\n## Wat niet lukte\nPageSpeed Insights gaf HTTP 429, dus er zijn geen CrUX-veldwaarden (INP). Lighthouse is lokaal als indicatie gedraaid. De 206 frames van het 360°-artifact konden niet worden uitgelezen (afmeting en gewicht onbekend). Hoka, Ciele, Salomon en een deel van TRU waren niet te verifiëren. De eerste sectiehoogtes zijn gemeten in een verborgen browserpaneel (viewport 0×0) en waren ongeldig (±16.600 px); hermeten op 1440×900 en 375×812 geeft ±5.070 en ±6.130 px. De rapporten van Design, Conversie en Benchmark noemen nog het oude getal en hebben daarom een correctiekop.\n\n## Bronnen\n- Volledige rapporten: `C:\\Users\\Test\\.claude\\plans\\homepage-2026-10\\` (BRIEF, out-design, out-copy, out-cro, out-seo, out-benchmark)\n- Werkthema \"AI website workspace 2.0\" `201133490503`, read-only gepulld naar `C:\\Users\\Test\\ai-workspace-2.0`\n- Live: https://www.higrip.nl/ en https://www.higrip.nl/pages/over-ons (13-10)\n- **Prototype v4 (gebouwd 13-10 op basis van dit plan, niet live):** https://claude.ai/artifact/KWuQn9iWGcGtxCKsod1HGA. Bron: `C:\\Users\\Test\\.claude\\plans\\homepage-2026-10\\` (spec) en de scratchpad-HTML.\n- Artifacts: [HÏ Grip 2.0 in 360°](https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94), [Homepage-analyse 13-08](https://claude.ai/artifact/5XAT2gCpT7eeMhZvdmFW5M)\n- GA4 property uit het feitenbestand (29 aug – 12 okt); Littledata Shopify-benchmark jul–okt 2026; Apps et al. 2022 (doi 10.1080/02640414.2022.2080163)\n- Kennis: [Homepage Copy & Structuur](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Content/Homepage%20Copy%20%26%20Structuur.md), [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Technische%20Procedures.md), [Sportlanding-systeem (21-9-2026)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Technisch/Sportlanding-systeem%20%2821-9-2026%29.md), [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "C:\\Users\\Test\\.claude\\plans\\homepage-2026-10",
+   "bronbestand_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/C%3A%5CUsers%5CTest%5C.claude%5Cplans%5Chomepage-2026-10",
+   "categorie": "CRO",
+   "datum": "2026-10-13",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-10-08-growth-radar-cro",
+    "2026-10-08-search-console",
+    "2026-09-21-beachhead-rugby",
+    "2026-10-07-shoppagina-keuzepagina",
+    "2026-10-07-missie-visie-pagina",
+    "2026-10-14-search-console"
+   ],
+   "id": "2026-10-13-homepage-redesign",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Aandeel van / in GA4-sessies (263 van 560, 29 aug – 12 okt)",
+     "verschil": "",
+     "waarde": "47%"
+    },
+    {
+     "label": "Engagement op / tegen 26% op andere landingspagina's",
+     "verschil": "",
+     "waarde": "64%"
+    },
+    {
+     "label": "Lighthouse mobiel homepage (lokaal, indicatief)",
+     "verschil": "LCP 3,1 s, TBT 7,9 s",
+     "waarde": "54"
+    },
+    {
+     "label": "Positie H1 op mobiel (±4,8 schermen)",
+     "verschil": "",
+     "waarde": "3.886 px"
+    }
+   ],
+   "kerntitel": "Homepage zegt boven de vouw niets: H1 pas na 4,8 schermen, geen claim, prijs of bewijs",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De homepage converteert relatief goed (alle 7 GA4-aankopen startten op /) maar verspilt het eerste scherm: de hero zegt alleen HÏ GRIP, de H1 staat op 3.886 px mobiel, en er is geen claim, prijs, bewijs of rugby. Voorstel: 9 secties met H1, sportkiezer en bewijs bovenaan en motion in Over ons-stijl, maar pas na het opruimen van JavaScript (mobiel Lighthouse 54, TBT 7,9 s).",
+   "status": "nieuw",
+   "titel": "Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-13-homepage-redesign.md",
+   "vervangt": [],
+   "wat_niet_lukte": "PageSpeed Insights gaf HTTP 429, dus er zijn geen CrUX-veldwaarden (INP). Lighthouse is lokaal als indicatie gedraaid. De 206 frames van het 360°-artifact konden niet worden uitgelezen (afmeting en gewicht onbekend). Hoka, Ciele, Salomon en een deel van TRU waren niet te verifiëren. De eerste sectiehoogtes zijn gemeten in een verborgen browserpaneel (viewport 0×0) en waren ongeldig (±16.600 px);…"
+  },
   {
    "acties": [],
    "body_md": "# Growth Radar — SEO content & keywords, 13 oktober 2026\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\nEén kwalificerende vondst binnen de dagfocus long-tails, sportlandingspagina's en SERP-features: Google scherpte op 1 oktober 2026 zijn richtlijn voor AI-gegenereerde content aan. De overige sporen (SERP-feature-cijfers, long-tail-onderzoek, sport-landingspagina's, Marketingfacts/Emerce) leverden vandaag niets op dat de harde filter doorstond. De nieuwste `*-concurrentie.md` (11 oktober, [2026-10-11-concurrentie-seo-per-merk](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-concurrentie-seo-per-merk.md)) is gelezen en niet herhaald.\n\n## Acties\nZie backlogpunt 23 (nieuw, hieronder).\n\n## Bevindingen\n\n### Google: handmatige factcheck van AI-content nu \"critical\" vóór publicatie\nGoogle's Search Central-documentatie over het gebruik van generatieve AI bij content is op 1 oktober 2026 bijgewerkt. De tekst noemt het nu \"critical\" om alle AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Google noemt dit geen nieuwe rankingfactor of penalty — het is een aanscherping van de bestaande verwachting, niet een nieuw algoritme-element.\n\n> **Voor higrip.nl:** Dit raakt rechtstreeks het al openstaande backlogpunt 6 (vraagpagina's/antwoordcapsules op de long-tails \"waarom glijdt mijn voet in mijn padelschoen\", \"wat zijn gripsokken\", \"tapedesign alternatief\" — zie [2026-09-22-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-22-growth-radar-seo-content.md) en [2026-09-29-growth-radar-seo-content](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-09-29-growth-radar-seo-content.md)) en elke andere tekst die via een contentagent met AI tot stand komt (blogs, e-mails, meta's). De bestaande formuleringsregel voor grip-claims in [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) dekt al cijfers over wrijving en grip, maar niet elk ander feit in AI-geschreven tekst.\n**Actie:** zie backlogpunt 23 — handmatige factcheck verplichten voor AI-gegenereerde teksten vóór publicatie.\n\n## Wat niet lukte\nGeen toegangsproblemen. De volgende sporen zijn gecontroleerd en vielen af op de harde filter:\n- **SERP-feature-cijfers voor 2026** (bijv. \"37 SERP-features in de VS\", CTR-verlies door AI Overviews): alleen gevonden via vendor-/agencyblogs (growbydata, quickseo, geekflare) zonder vindbare Search Engine Land/Roundtable- of Google-bron, en de cijfers lopen onderling fors uiteen (CTR-verlies 2,6% tot 58% voor dezelfde claim).\n- **Long-tail-keywordonderzoek voor e-commerce:** herhaling van bekende, niet-primaire cijfers (Ahrefs/Semrush-claims zonder vindbare publicatie); zelfde patroon als op 6 oktober al afgewezen.\n- **Sport-specifieke landingspagina-strategie (padel/voetbal/tennis):** alleen generieke agency-adviezen zonder eigen 2026-meetdata, geen van de toegestane bronnen.\n- **Marketingfacts/Emerce:** geen vindbare publicatie deze week op dit onderwerp.\n\n## Bronnen\n- [Google: Manually Factcheck & Review AI-Generated Content For Accuracy — Search Engine Roundtable](https://seroundtable.com/google-updates-ai-content-guidelines-factcheck-review-42217.html)\n\n## Aantekeningen",
@@ -1939,7 +2530,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-29-growth-radar-seo-content",
     "2026-09-22-growth-radar-seo-content",
-    "2026-10-06-growth-radar-seo-content"
+    "2026-10-06-growth-radar-seo-content",
+    "2026-10-14-search-console"
    ],
    "id": "2026-10-13-growth-radar-seo-content",
    "kansen": [],
@@ -1961,9 +2553,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "Bijgewerkte kopie 202398040391 heeft al bronnen+FAQ-link op page.sport-padel/voetbal.json, maar settings_data.json toont geen T-Lab app-embed en primary_button_border_width staat nog op 0 (moet 1)",
-      "controle": "Werkthema bijwerken met live-elementen (bronnen/FAQ-link sportpagina's, testimonials, T-Lab, knoprand)",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "config/settings_data.json van werkthema 202398040391 heeft nog primary_button_border_width: 0 (live: 1) en geen T-Lab-app-blok in de embeds.",
+      "controle": "Staat het werkthema (202398040391) gelijk met live (bronnen/FAQ-link padel+voetbal, testimonials-knoppen, T-Lab-embed, primary_button_border_width 1)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -1983,9 +2575,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "collection.json (kopie 202398040391) toont nog \"Vanaf €13,49\"; page.shop.json trio toont 2.0 nog met price_old €17,95/price_new €14,95 (korting i.p.v. live €17,95 zonder korting)",
-      "controle": "Prijzen in werkthema rechtzetten vóór push",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "templates/collection.json van werkthema 202398040391 toont in blok shop_keuzehulp nog 'Vanaf €13,49' voor Performance Gripsokken 1.0.",
+      "controle": "Zijn de prijzen in het werkthema rechtgezet (1.0 €14,95 i.p.v. €13,49; 2.0 €14,95 doorgestreept €17,95)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -2233,9 +2825,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "sitemap_articles_1.xml (12-10) telt nog 23 artikelen incl. /blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding",
-      "controle": "Blogpost sportvoeding verwijderen en 301",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding geeft nog 200, geen redirect.",
+      "controle": "Is de sportvoeding-blogpost verwijderd en 301'd naar /blogs/trends?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2255,9 +2847,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "sitemap_articles_1.xml telt nog /blogs/trends/waarom-sporten-meer-is-dan-bewegen-het-mentale-voordeel-van-actief-zijn",
-      "controle": "Blogpost \"waarom sporten meer is dan bewegen\" verwijderen en 301",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/blogs/trends/waarom-sporten-meer-is-dan-bewegen-het-mentale-voordeel-van-actief-zijn geeft nog 200, geen redirect.",
+      "controle": "Is de blogpost 'waarom sporten meer is dan bewegen' verwijderd en 301'd naar /blogs/trends?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2277,9 +2869,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/trends/voorkom-uitglijden-... linkt nog naar /blogs/2590799_het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters",
-      "controle": "Gebroken link in krachttraining-blog vervangen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "De krachttrainingblog (voorkom-uitglijden-...-krachttraining) linkt nog naar '2590799_het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters'.",
+      "controle": "Is de gebroken link /blogs/2590799_het-innovatieve-... in de krachttrainingblog vervangen?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2299,9 +2891,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "meta description van /blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-... noemt nog \"nu beperkt op voorraad\" (3x in paginabron)",
-      "controle": "\"nu beperkt op voorraad\" uit meta halen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "meta description van /blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-van-voetbal-tot-pilates eindigt nog op '... nu beperkt op voorraad!'.",
+      "controle": "Is 'nu beperkt op voorraad' uit de meta van de blog voor-welke-sport gehaald?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2321,9 +2913,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/trends en /blogs/hi-grip linken nog 4-5x naar /collections/all naast 3x naar /collections/gripsokken",
-      "controle": "Globale blog-CTA naar /collections/gripsokken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Krachttrainingblog bevat nog links naar zowel /collections/all als /collections/gripsokken.",
+      "controle": "Is de globale blog-CTA van /collections/all naar /collections/gripsokken gezet?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2343,9 +2935,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "beide URL's staan nog los in sitemap_articles_1.xml, niet samengevoegd",
-      "controle": "wat-zijn-gripsokken samenvoegen in waarom-hi-grip-gripsokken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'samenvoegen wat-zijn-gripsokken + toekomst-sportoutfit' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2365,9 +2957,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "beide URL's staan nog los in sitemap_articles_1.xml",
-      "controle": "waarom-gripsokken-het-verschil-maken + meer-grip-meer-vertrouwen samenvoegen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'samenvoegen verschil-maken + meer-vertrouwen in blessureblog' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2387,9 +2979,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "URL staat nog los in sitemap_articles_1.xml",
-      "controle": "hoe-verleng-je-de-levensduur samenvoegen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'samenvoegen hoe-verleng-je-de-levensduur' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2409,9 +3001,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "URL staat nog los in sitemap_articles_1.xml",
-      "controle": "gripsokken-tijdens-pilates-en-yoga samenvoegen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'samenvoegen pilates-en-yoga' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2431,9 +3023,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "URL staat nog in sitemap_articles_1.xml, niet verwijderd",
-      "controle": "hoe-is-hi-grip-ontstaan verwijderen en 301",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'hoe-is-hi-grip-ontstaan verwijderen + 301' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2475,9 +3067,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "titel nog \"HÏ Grip | Wat zijn de voordelen van gripsokken?\" en H1 nog \"Waarom HÏ Grip gripsokken?\", niet gewijzigd naar \"Wat zijn gripsokken?\"",
-      "controle": "waarom-hi-grip-gripsokken herschrijven tot hoofdgids",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'wat-zijn-gripsokken herschrijven tot hoofdgids' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2497,9 +3089,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "artikel-body circa 395 woorden, nog niet uitgebreid",
-      "controle": "Verzorgingsblog uitbreiden naar 900-1.200 woorden",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'verzorgingsblog uitbreiden' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2519,9 +3111,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina bevat nog 3x de tekst \"bewezen beter\"",
-      "controle": "Wetenschapsblog claims naar formuleringsregel",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'wetenschapsblog claims herformuleren' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2541,9 +3133,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen vermelding van \"fysio\" of \"trainer\" op de pagina, nog niet nagekeken",
-      "controle": "Blessureblog herschrijven en laten nakijken door fysio",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'blessureblog herschrijven' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2563,9 +3155,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing voor wijziging; sitemap/structuur ongewijzigd, fase 2 nog niet gestart",
-      "controle": "Pilatesblog opfrissen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'pilatesblog opfrissen' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2585,9 +3177,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "krachttraining-blog bevat geen link naar sport- of productpagina; fase 3 nog niet uitgevoerd",
-      "controle": "Elk artikel: link naar sport-, product- en ander artikel",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Steekproef hoe-zorg-ik-voor-mijn-gripsokken: wel links naar /products/... en /collections/gripsokken, maar geen link naar een /pages/gripsokken-voor-*-sportpagina.",
+      "controle": "Linkt elk overgebleven artikel naar een sportpagina, een product en 1-2 andere artikelen?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2607,9 +3199,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing voor wijziging; fase 3 nog niet gestart",
-      "controle": "Zichtbare auteur + bijgewerkt-datum op alle artikelen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'zichtbare auteur + laatst bijgewerkt' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2629,9 +3221,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "verzorgingsblog-titel nog \"HÏ Grip | Hoe was ik mijn gripsokken? ...\" (merknaam vooraan, niet het zoekwoord), niet herschreven",
-      "controle": "Titels zoekwoord vooraan, \"| HÏ Grip\" achteraan",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'titels/meta keyword-eerst' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2651,9 +3243,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "wetenschapsblog bevat nog verouderde claim \"bewezen beter\", feitencheck nog niet uitgevoerd",
-      "controle": "Feitencheck per artikel tegen feitenbestand",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'feitencheck per artikel' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2673,9 +3265,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing voor wijziging in de gecontroleerde pagina's",
-      "controle": "Overige behouden posts licht bijwerken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'overige posts bijwerken' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2695,9 +3287,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing voor wijziging in de gecontroleerde pagina's",
-      "controle": "/blogs/trends en /blogs/hi-grip titel/H1 en intro aanpassen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'trends/hi-grip titel+H1+intro' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2717,9 +3309,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/hi-grip/beste-gripsokken-voetbal geeft 404, nog niet aangemaakt",
-      "controle": "Voetbalblog herschrijven tot \"Beste gripsokken voetbal 2026\"",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'voetbalblog herschrijven + nieuwe artikelen' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2739,9 +3331,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/hi-grip/gripsokken-bij-tennis-en-padel-het-verschil en /blogs/hi-grip/padelsokken-kiezen geven beide 404",
-      "controle": "Tennis/padel: nieuwe blogposts",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'tennis/padel nieuwe artikelen' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2761,9 +3353,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/gripsokken-voor-rugby geeft 404, voorwaarde nog niet vervuld",
-      "controle": "Rugby: pas nadat /pages/gripsokken-voor-rugby bestaat",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby geeft nog 404.",
+      "controle": "Bestaat /pages/gripsokken-voor-rugby al (voorwaarde voor de rugby-blogcontent)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2783,9 +3375,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "voorwaarde (hub linkt naar alle sportpagina's) nog niet vervuld, URL staat nog in sitemap",
-      "controle": "voor-welke-sport 301'en naar ontdek-jouw-sport hub",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+      "controle": "Is 'voor-welke-sport 301 naar ontdek-jouw-sport' al doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2805,9 +3397,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: nulmeting is van 12-10, meting pas na 4-8 weken verwacht",
-      "controle": "Na 4/8 weken Search Console herhalen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Nulmeting is van 12-10-2026; 4 weken (zou rond 9-11 zijn) en 8 weken zijn nog niet verstreken, dus nog niet aan de orde.",
+      "controle": "Zijn de 4- en 8-weken Search Console-nametingen al gedraaid?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -2823,7 +3415,7 @@ window.HI_RESEARCH = {
      }
     }
    ],
-   "body_md": "# Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\n\nVraag van Lars: leveren de oude blogs überhaupt iets op, en hoe maken we ze goed? Antwoord: **bijna niets.** Vier artikelen dragen het hele blog: verzorging, \"waarom HÏ Grip\", de wetenschap en pilates. De rest is dun (284–424 woorden), overlapt elkaar (7 clusters vechten om hetzelfde zoekwoord), linkt nergens naar een product- of sportpagina en bevat verouderde feiten (4 founders, oude maten, oude sporterscijfers, ongefundeerde blessureclaims, formeel \"u\").\n\nDe oplossing is niet meer schrijven maar **eerst snoeien en samenvoegen**: 23 → ongeveer 12 artikelen. Elk overgebleven artikel krijgt één vaste opbouw (zie Bevindingen) en links naar de sport- en productpagina's. Pas daarna komen nieuwe posts voor voetbal, tennis/padel en rugby, volgens het clusterplan van 25-9.\n\n## Kerncijfers\n\n- **1.815** · Vertoningen alle 23 blogs samen in Search Console (12 jul–9 okt)\n- **23** · Klikken alle blogs samen in 90 dagen\n- **90%** · Aandeel van de top 4 blogs in de vertoningen\n- **7** · Blogs met nul vertoningen in 90 dagen\n\n## Acties\n\n### Fase 0 — opruimen (deze week, ±1 uur in Shopify Admin, Lars)\n- [ ] P1 · Blogpost sportvoeding verwijderen en 301 naar /blogs/trends (CSV Downloads/higrip-redirects-fase0.csv)\n- [ ] P1 · Blogpost \"waarom sporten meer is dan bewegen\" verwijderen en 301 naar /blogs/trends (zelfde CSV)\n- [ ] P1 · Gebroken link /blogs/2590799_het-innovatieve-... in de krachttraining-blog vervangen door /blogs/hi-grip/het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters\n- [ ] P1 · \"nu beperkt op voorraad\" uit de meta van de blog voor-welke-sport halen\n- [ ] P1 · Globale blog-CTA van /collections/all naar /collections/gripsokken zetten\n\n### Fase 1 — samenvoegen (week 1–2)\nWerkwijze per regel: eerst de bruikbare alinea's naar het doelartikel kopiëren, dan het oude artikel verwijderen, dan de 301 (CSV Downloads/higrip-redirects-fase1.csv). Een Shopify-redirect werkt pas als de oude URL 404 geeft.\n- [ ] P1 · wat-zijn-gripsokken en gripsokken-de-toekomst-van-jouw-sportoutfit samenvoegen in /blogs/hi-grip/waarom-hi-grip-gripsokken (die URL krijgt 121 vertoningen op \"wat zijn gripsokken\", wat-zijn-gripsokken zelf maar 48 in totaal)\n- [ ] P1 · waarom-gripsokken-het-verschil-maken en meer-grip-meer-vertrouwen samenvoegen in de blessure-blog (hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures)\n- [ ] P1 · hoe-verleng-je-de-levensduur samenvoegen in hoe-zorg-ik-voor-mijn-gripsokken\n- [ ] P2 · gripsokken-tijdens-pilates-en-yoga samenvoegen in waarom-gripsokken-verplicht-zijn-bij-pilates\n- [ ] P2 · hoe-is-hi-grip-ontstaan (56 woorden, tijdlijn klopt niet) verwijderen en 301 naar /pages/over-ons\n- [ ] P2 · Besluit: blog \"de twee grootste problemen ... 4 ondernemende sporters\" (5 vertoningen, URL noemt 4 founders, op 9-10 nog bewerkt) ook 301'en naar /pages/over-ons, of houden met nieuwe URL?\n\n### Fase 2 — de 5 survivors herschrijven (week 2–4, op volgorde van vertoningen)\n- [ ] P1 · \"Wat zijn gripsokken?\" (URL waarom-hi-grip-gripsokken): herschrijven tot hoofdgids van 1.400–1.600 woorden volgens de vaste opbouw; titel en H1 \"Wat zijn gripsokken? Voordelen en verschil met gewone sokken\"\n- [ ] P1 · Verzorgingsblog (hoe-zorg-ik-voor-mijn-gripsokken, 603 vertoningen, positie 3,8): uitbreiden naar 900–1.200 woorden met wasvoorschrift, levensduur en fouten, in \"je\"-vorm\n- [ ] P1 · Wetenschapsblog: alle claims naar de formuleringsregel uit het feitenbestand (Apps et al. 2022 met doi; Friedl et al. 2023 alleen +9,3% bij afremmen); geen \"bewezen beter\" meer in titel of tekst\n- [ ] P1 · Blessureblog: herschrijven met bronnen per claim, geen \"voorkomt blessures\"; laten nakijken door een fysio of trainer en dat vermelden\n- [ ] P2 · Pilatesblog opfrissen (110 vertoningen); laag in prioriteit want geen beachhead-sport\n\n### Fase 3 — overal hetzelfde goed zetten (parallel aan fase 2)\n- [ ] P1 · Elk overgebleven artikel: minimaal 1 link naar de passende sportpagina, 1 naar een product (2.0 zwart of wit) en 1–2 naar een ander artikel, met beschrijvende ankertekst\n- [ ] P2 · Zichtbare auteur met foto en één regel achtergrond, plus \"laatst bijgewerkt\"-datum, op alle artikelen\n- [ ] P2 · Titels met het zoekwoord vooraan en \"| HÏ Grip\" achteraan, maximaal 60 tekens; meta 120–155 tekens\n- [ ] P2 · Feitencheck per artikel tegen het feitenbestand: 3 founders, 3500+ sporters, maten 2.0 35–38/39–42/43–47, verzending €4,50 en gratis vanaf €35, retour 30 dagen, overal \"je\"\n- [ ] P2 · Overige behouden posts licht bijwerken: grippatroon (titel <60 tekens, puntkomma uit H1), geschiedenis, sportclubs (link naar /pages/zakelijk), krachttraining, blaren (H2 \"Trends in sportvoeding\" weghalen)\n- [ ] P2 · /blogs/trends en /blogs/hi-grip: titel en H1 met zoekwoord in plaats van \"Trends\" en \"Algemeen\", en een intro van 100–150 woorden\n\n### Fase 4 — pas daarna: nieuwe artikelen (week 4–10, 1 per week)\n- [ ] P2 · Voetbal: welke-gripsokken-bestaan herschrijven tot \"Beste gripsokken voetbal 2026\" op /blogs/hi-grip/beste-gripsokken-voetbal en de oude URL 301'en; daarna \"Afgeknipte voetbalsokken\" opfrissen met het zoekwoord in de titel, en \"Zijn gripsokken toegestaan door de KNVB?\" nieuw\n- [ ] P2 · Tennis/padel: \"Gripsokken bij tennis en padel: het verschil\" en \"Padelsokken kiezen\" nieuw\n- [ ] P3 · Rugby: pas nadat /pages/gripsokken-voor-rugby bestaat\n- [ ] P3 · voor-welke-sport-zijn-gripsokken-onmisbaar 301'en naar /pages/ontdek-jouw-sport zodra die hub naar alle sportpagina's linkt\n\n### Fase 5 — meten\n- [ ] P2 · Na 4 en na 8 weken Search Console per blog opnieuw draaien (google_data.py pagina --dagen 28) en vergelijken met de nulmeting in deze notitie\n\n## Bevindingen\n\n### Nulmeting per blog (Search Console, 90 dagen, 12 jul–9 okt 2026)\n\n| Blog (slug) | Klikken | Vertoningen | Positie | Oordeel |\n|---|---|---|---|---|\n| hoe-zorg-ik-voor-mijn-gripsokken | 6 | 603 | 3,8 | **Behouden + herschrijven** (vangt verzorg-blog op) |\n| waarom-hi-grip-gripsokken | 3 | 586 | 7,4 | **Behouden + herschrijven** tot \"Wat zijn gripsokken?\" |\n| de-wetenschap-achter-gripsokken | 8 | 335 | 6,0 | **Behouden + claims corrigeren** — beste blog |\n| waarom-gripsokken-verplicht-zijn-bij-pilates | 2 | 110 | 6,7 | Behouden, vangt pilates/yoga op |\n| wat-zijn-gripsokken | 0 | 48 | 7,7 | Samenvoegen → waarom-hi-grip |\n| hoe-gripsokken-kunnen-helpen-...-blessures | 1 | 43 | 5,7 | **Behouden + herschrijven** met bronnen |\n| het-innovatieve-hi-grip-grippatroon | 1 | 30 | 8,0 | Behouden, titel fixen |\n| de-geschiedenis-van-gripsokken | 1 | 10 | 4,0 | Behouden, licht bijwerken |\n| afgeknipte-kousen-bij-amateurvoetbal | 0 | 10 | 5,9 | Herschrijven (voetbal) |\n| hoe-verleng-je-de-levensduur | 0 | 9 | 4,1 | Samenvoegen → hoe-zorg-ik |\n| waarom-steeds-meer-sportclubs | 1 | 9 | 7,2 | Behouden, link naar zakelijk |\n| de-twee-grootste-problemen (4 sporters) | 0 | 5 | 5,8 | Besluit Lars → over-ons? |\n| gripsokken-tijdens-pilates-en-yoga | 0 | 4 | 4,2 | Samenvoegen → pilates-verplicht |\n| meer-grip-meer-vertrouwen | 0 | 4 | 4,2 | Samenvoegen → blessures |\n| hoe-is-hi-grip-ontstaan | 0 | 3 | 4,3 | Weg → /pages/over-ons |\n| gripsokken-de-toekomst-van-jouw-sportoutfit | 0 | 3 | 9,3 | Samenvoegen → waarom-hi-grip |\n| voor-welke-sport-zijn-gripsokken-onmisbaar | 0 | 2 | 8,5 | Later → /pages/ontdek-jouw-sport |\n| voorkom-uitglijden (krachttraining) | 0 | 1 | 5,0 | Behouden, 404-link fixen |\n| welke-gripsokken-bestaan-er | 0 | 0 | – | Herschrijven tot \"beste gripsokken voetbal\" |\n| smalle-voeten-...-blaren | 0 | 0 | – | Behouden, H2-fout weg (P3) |\n| waarom-gripsokken-het-verschil-maken | 0 | 0 | – | Samenvoegen → blessures |\n| waarom-sporten-meer-is-dan-bewegen | 0 | 0 | – | **Weg** (off-topic) |\n| de-laatste-gezonde-trends-sportvoeding | 0 | 0 | – | **Weg** (lege post) |\n\nAlle cijfers onder ~100 vertoningen zijn signalen, geen conclusies. Maar het patroon is duidelijk: alles buiten de top 4 doet niets.\n\n### Waarom de blogs niets opleveren\n1. **Te dun.** 0 van 23 halen 600 woorden; de langste (wetenschap) is 520. Concurrenten met vergelijkbare content winnen op diepte.\n2. **Kannibalisatie.** Vijf posts gaan over \"wat zijn / voordelen van gripsokken\", drie over blessures, twee over verzorging, twee over pilates. Google kiest er dan geen.\n3. **Geen links.** Geen enkel artikel linkt naar een sport- of productpagina; 17 hebben geen enkele link in de tekst. Het blog geeft dus geen autoriteit door aan de pagina's die moeten verkopen, en de lezer krijgt geen volgende stap.\n4. **Verouderd en tegenstrijdig.** 4 founders (het zijn er 3), andere tijdlijn dan /over-ons, oude sporterscijfers, ongefundeerde blessureclaims, \"u\" naast \"je\".\n5. **Geen afzender.** Auteur staat alleen in het schema; geen zichtbare byline. Voor sport- en blessurecontent weegt dat zwaar (E-E-A-T).\n6. **Batchgevoel.** 12 posts op 13–15 feb 2026, één uitgelichte afbeelding heet `ChatGPT_Image_...`. Leest als AI-vulling.\n\n### De vaste opbouw voor elk artikel\n1. **Titel**: zoekwoord vooraan, max 60 tekens, \"| HÏ Grip\" achteraan.\n2. **H1** gelijk aan de zoekvraag (\"Wat zijn gripsokken?\").\n3. **Direct antwoord** in de eerste 40–60 woorden. Dat stuk citeren Google en AI-tools.\n4. **Inhoud** met H2's als vragen die mensen echt stellen, korte zinnen (12–15 woorden), \"je\"-vorm.\n5. **Bewijs**: elk getal met bron (formuleringsregel uit het feitenbestand), plus minimaal één eigen element: foto van een echte wedstrijd, quote van een speler of club, eigen test.\n6. **Tabel** waar het kan (gripsok vs gewone sok, maten, wasvoorschrift).\n7. **Links**: sportpagina, product, 1–2 andere artikelen.\n8. **FAQ** van 3–5 vragen onderaan.\n9. **CTA** naar het product of /collections/gripsokken, niet naar /collections/all.\n10. **Auteur + bijgewerkt-datum** zichtbaar.\n\nLengte: hoofdgidsen 1.200–1.600 woorden, ondersteunende posts 800–1.200. Woorden zijn een ondergrens voor dekking, geen rankingfactor.\n\n### Keuze survivor \"wat zijn gripsokken\"\nHet actieplan van 25-9 (punt 16) zegt wat-zijn-gripsokken herschrijven; het clusterplan van dezelfde dag zegt waarom-hi-grip-gripsokken. De Search Console-cijfers beslissen: waarom-hi-grip-gripsokken krijgt 121 vertoningen op precies \"wat zijn gripsokken\", wat-zijn-gripsokken 48 in totaal. We bouwen dus verder op de URL die Google al kiest en passen alleen titel en H1 aan. De slug blijft, want een nieuwe URL kost de opgebouwde positie.\n\n### Engelse versies\nElk artikel heeft ook een `/en/`-versie. Bij verwijderen verdwijnt die mee; zet in de CSV's daarom ook de `/en/`-redirect (staat er al in).\n\n## Wat niet lukte\n\nDe woordaantallen en feitfouten komen uit de crawls van 25-9, 8-10 en 11-10 en zijn vandaag niet per artikel opnieuw geteld; alleen de lijst met artikelen (sitemap) en de Search Console-cijfers zijn vandaag live opgehaald. Er is geen zoekvolume-data (geen DataForSEO): de prioriteit volgt Search Console-vertoningen en de SERP-analyse uit het clusterplan.\n\n## Bronnen\n\n- Search Console via `05_Research/_tools/google_data.py pagina --dagen 90`, per blog-URL, opgehaald 12-10-2026\n- GA4 property 476032345, landingspagina's /blogs/ sinds 1-8-2026: maximaal 4 organische sessies per blog, 0 aankopen\n- `sitemap_articles_1.xml` live, 12-10-2026 (23 artikelen)\n- [2026-10-11-seo-audit-weekdelta](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-seo-audit-weekdelta.md), [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run.md)\n- SEO-audit 25-9: `03_Website_Agent/Analyse/SEO-audit 2026-09-25/findings/` (content.md, cluster-plan.json)\n- [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (stand 12-10)\n\n## Aantekeningen",
+   "body_md": "# Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs\n\n> **Brand Core (00):** [00 Brand Core](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/00%20Brand%20Core.md) · [Feiten](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) · [Identiteit](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Identity%20Overview.md) · [Tone of voice](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Identiteit/Brand%20Voice%20%26%20Tone%20of%20Voice.md) · [Doelgroep](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Doelgroep%20%26%20Persona%27s.md) · [Strategie](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Strategie/Strategische%20Keuzes.md) — **Map:** [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/Waar%20staat%20wat.md) · [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\n\nVraag van Lars: leveren de oude blogs überhaupt iets op, en hoe maken we ze goed? Antwoord: **bijna niets.** Vier artikelen dragen het hele blog: verzorging, \"waarom HÏ Grip\", de wetenschap en pilates. De rest is dun (284–424 woorden), overlapt elkaar (7 clusters vechten om hetzelfde zoekwoord), linkt nergens naar een product- of sportpagina en bevat verouderde feiten (4 founders, oude maten, oude sporterscijfers, ongefundeerde blessureclaims, formeel \"u\").\n\nDe oplossing is niet meer schrijven maar **eerst snoeien en samenvoegen**: 23 → ongeveer 12 artikelen. Elk overgebleven artikel krijgt één vaste opbouw (zie Bevindingen) en links naar de sport- en productpagina's. Pas daarna komen nieuwe posts voor voetbal, tennis/padel en rugby, volgens het clusterplan van 25-9.\n\n## Kerncijfers\n\n- **1.815** · Vertoningen alle 23 blogs samen in Search Console (12 jul–9 okt)\n- **23** · Klikken alle blogs samen in 90 dagen\n- **90%** · Aandeel van de top 4 blogs in de vertoningen\n- **7** · Blogs met nul vertoningen in 90 dagen\n\n## Acties\n\n### Fase 0 — opruimen (deze week, ±1 uur in Shopify Admin, Lars)\n- [ ] P1 · Blogpost sportvoeding verwijderen en 301 naar /blogs/trends (CSV Downloads/higrip-redirects-fase0.csv)\n- [ ] P1 · Blogpost \"waarom sporten meer is dan bewegen\" verwijderen en 301 naar /blogs/trends (zelfde CSV)\n- [ ] P1 · Gebroken link /blogs/2590799_het-innovatieve-... in de krachttraining-blog vervangen door /blogs/hi-grip/het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters\n- [ ] P1 · \"nu beperkt op voorraad\" uit de meta van de blog voor-welke-sport halen\n- [ ] P1 · Globale blog-CTA van /collections/all naar /collections/gripsokken zetten\n\n### Fase 1 — samenvoegen (week 1–2)\nWerkwijze per regel: eerst de bruikbare alinea's naar het doelartikel kopiëren, dan het oude artikel verwijderen, dan de 301 (CSV Downloads/higrip-redirects-fase1.csv). Een Shopify-redirect werkt pas als de oude URL 404 geeft.\n- [ ] P1 · wat-zijn-gripsokken en gripsokken-de-toekomst-van-jouw-sportoutfit samenvoegen in /blogs/hi-grip/waarom-hi-grip-gripsokken (die URL krijgt 121 vertoningen op \"wat zijn gripsokken\", wat-zijn-gripsokken zelf maar 48 in totaal)\n- [ ] P1 · waarom-gripsokken-het-verschil-maken en meer-grip-meer-vertrouwen samenvoegen in de blessure-blog (hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures)\n- [ ] P1 · hoe-verleng-je-de-levensduur samenvoegen in hoe-zorg-ik-voor-mijn-gripsokken\n- [ ] P2 · gripsokken-tijdens-pilates-en-yoga samenvoegen in waarom-gripsokken-verplicht-zijn-bij-pilates\n- [ ] P2 · hoe-is-hi-grip-ontstaan (56 woorden, tijdlijn klopt niet) verwijderen en 301 naar /pages/over-ons\n- [ ] P2 · Besluit: blog \"de twee grootste problemen ... 4 ondernemende sporters\" (5 vertoningen, URL noemt 4 founders, op 9-10 nog bewerkt) ook 301'en naar /pages/over-ons, of houden met nieuwe URL?\n\n### Fase 2 — de 5 survivors herschrijven (week 2–4, op volgorde van vertoningen)\n- [ ] P1 · \"Wat zijn gripsokken?\" (URL waarom-hi-grip-gripsokken): herschrijven tot hoofdgids van 1.400–1.600 woorden volgens de vaste opbouw; titel en H1 \"Wat zijn gripsokken? Voordelen en verschil met gewone sokken\"\n- [ ] P1 · Verzorgingsblog (hoe-zorg-ik-voor-mijn-gripsokken, 603 vertoningen, positie 3,8): uitbreiden naar 900–1.200 woorden met wasvoorschrift, levensduur en fouten, in \"je\"-vorm\n- [ ] P1 · Wetenschapsblog: alle claims naar de formuleringsregel uit het feitenbestand (Apps et al. 2022 met doi; Friedl et al. 2023 alleen +9,3% bij afremmen); geen \"bewezen beter\" meer in titel of tekst\n- [ ] P1 · Blessureblog: herschrijven met bronnen per claim, geen \"voorkomt blessures\"; laten nakijken door een fysio of trainer en dat vermelden\n- [ ] P2 · Pilatesblog opfrissen (110 vertoningen); laag in prioriteit want geen beachhead-sport\n\n### Fase 3 — overal hetzelfde goed zetten (parallel aan fase 2)\n- [ ] P1 · Elk overgebleven artikel: minimaal 1 link naar de passende sportpagina, 1 naar een product (2.0 zwart of wit) en 1–2 naar een ander artikel, met beschrijvende ankertekst\n- [ ] P2 · Zichtbare auteur met foto en één regel achtergrond, plus \"laatst bijgewerkt\"-datum, op alle artikelen\n- [ ] P2 · Titels met het zoekwoord vooraan en \"| HÏ Grip\" achteraan, maximaal 60 tekens; meta 120–155 tekens\n- [ ] P2 · Feitencheck per artikel tegen het feitenbestand: 3 founders, 3500+ sporters, maten 2.0 35–38/39–42/43–47, verzending €4,50 en gratis vanaf €35, retour 30 dagen, overal \"je\"\n- [ ] P2 · Overige behouden posts licht bijwerken: grippatroon (titel <60 tekens, puntkomma uit H1), geschiedenis, sportclubs (link naar /pages/zakelijk), krachttraining, blaren (H2 \"Trends in sportvoeding\" weghalen)\n- [ ] P2 · /blogs/trends en /blogs/hi-grip: titel en H1 met zoekwoord in plaats van \"Trends\" en \"Algemeen\", en een intro van 100–150 woorden\n\n### Fase 4 — pas daarna: nieuwe artikelen (week 4–10, 1 per week)\n- [ ] P2 · Voetbal: welke-gripsokken-bestaan herschrijven tot \"Beste gripsokken voetbal 2026\" op /blogs/hi-grip/beste-gripsokken-voetbal en de oude URL 301'en; daarna \"Afgeknipte voetbalsokken\" opfrissen met het zoekwoord in de titel, en \"Zijn gripsokken toegestaan door de KNVB?\" nieuw\n- [ ] P2 · Tennis/padel: \"Gripsokken bij tennis en padel: het verschil\" en \"Padelsokken kiezen\" nieuw\n- [ ] P3 · Rugby: pas nadat /pages/gripsokken-voor-rugby bestaat\n- [ ] P3 · voor-welke-sport-zijn-gripsokken-onmisbaar 301'en naar /pages/ontdek-jouw-sport zodra die hub naar alle sportpagina's linkt\n\n### Fase 5 — meten\n- [ ] P2 · Na 4 en na 8 weken Search Console per blog opnieuw draaien (google_data.py pagina --dagen 28) en vergelijken met de nulmeting in deze notitie\n\n## Bevindingen\n\n### Nulmeting per blog (Search Console, 90 dagen, 12 jul–9 okt 2026)\n\n| Blog (slug) | Klikken | Vertoningen | Positie | Oordeel |\n|---|---|---|---|---|\n| hoe-zorg-ik-voor-mijn-gripsokken | 6 | 603 | 3,8 | **Behouden + herschrijven** (vangt verzorg-blog op) |\n| waarom-hi-grip-gripsokken | 3 | 586 | 7,4 | **Behouden + herschrijven** tot \"Wat zijn gripsokken?\" |\n| de-wetenschap-achter-gripsokken | 8 | 335 | 6,0 | **Behouden + claims corrigeren** — beste blog |\n| waarom-gripsokken-verplicht-zijn-bij-pilates | 2 | 110 | 6,7 | Behouden, vangt pilates/yoga op |\n| wat-zijn-gripsokken | 0 | 48 | 7,7 | Samenvoegen → waarom-hi-grip |\n| hoe-gripsokken-kunnen-helpen-...-blessures | 1 | 43 | 5,7 | **Behouden + herschrijven** met bronnen |\n| het-innovatieve-hi-grip-grippatroon | 1 | 30 | 8,0 | Behouden, titel fixen |\n| de-geschiedenis-van-gripsokken | 1 | 10 | 4,0 | Behouden, licht bijwerken |\n| afgeknipte-kousen-bij-amateurvoetbal | 0 | 10 | 5,9 | Herschrijven (voetbal) |\n| hoe-verleng-je-de-levensduur | 0 | 9 | 4,1 | Samenvoegen → hoe-zorg-ik |\n| waarom-steeds-meer-sportclubs | 1 | 9 | 7,2 | Behouden, link naar zakelijk |\n| de-twee-grootste-problemen (4 sporters) | 0 | 5 | 5,8 | Besluit Lars → over-ons? |\n| gripsokken-tijdens-pilates-en-yoga | 0 | 4 | 4,2 | Samenvoegen → pilates-verplicht |\n| meer-grip-meer-vertrouwen | 0 | 4 | 4,2 | Samenvoegen → blessures |\n| hoe-is-hi-grip-ontstaan | 0 | 3 | 4,3 | Weg → /pages/over-ons |\n| gripsokken-de-toekomst-van-jouw-sportoutfit | 0 | 3 | 9,3 | Samenvoegen → waarom-hi-grip |\n| voor-welke-sport-zijn-gripsokken-onmisbaar | 0 | 2 | 8,5 | Later → /pages/ontdek-jouw-sport |\n| voorkom-uitglijden (krachttraining) | 0 | 1 | 5,0 | Behouden, 404-link fixen |\n| welke-gripsokken-bestaan-er | 0 | 0 | – | Herschrijven tot \"beste gripsokken voetbal\" |\n| smalle-voeten-...-blaren | 0 | 0 | – | Behouden, H2-fout weg (P3) |\n| waarom-gripsokken-het-verschil-maken | 0 | 0 | – | Samenvoegen → blessures |\n| waarom-sporten-meer-is-dan-bewegen | 0 | 0 | – | **Weg** (off-topic) |\n| de-laatste-gezonde-trends-sportvoeding | 0 | 0 | – | **Weg** (lege post) |\n\nAlle cijfers onder ~100 vertoningen zijn signalen, geen conclusies. Maar het patroon is duidelijk: alles buiten de top 4 doet niets.\n\n### Waarom de blogs niets opleveren\n1. **Te dun.** 0 van 23 halen 600 woorden; de langste (wetenschap) is 520. Concurrenten met vergelijkbare content winnen op diepte.\n2. **Kannibalisatie.** Vijf posts gaan over \"wat zijn / voordelen van gripsokken\", drie over blessures, twee over verzorging, twee over pilates. Google kiest er dan geen.\n3. **Geen links.** Geen enkel artikel linkt naar een sport- of productpagina; 17 hebben geen enkele link in de tekst. Het blog geeft dus geen autoriteit door aan de pagina's die moeten verkopen, en de lezer krijgt geen volgende stap.\n4. **Verouderd en tegenstrijdig.** 4 founders (het zijn er 3), andere tijdlijn dan /over-ons, oude sporterscijfers, ongefundeerde blessureclaims, \"u\" naast \"je\".\n5. **Geen afzender.** Auteur staat alleen in het schema; geen zichtbare byline. Voor sport- en blessurecontent weegt dat zwaar (E-E-A-T).\n6. **Batchgevoel.** 12 posts op 13–15 feb 2026, één uitgelichte afbeelding heet `ChatGPT_Image_...`. Leest als AI-vulling.\n\n### De vaste opbouw voor elk artikel\n1. **Titel**: zoekwoord vooraan, max 60 tekens, \"| HÏ Grip\" achteraan.\n2. **H1** gelijk aan de zoekvraag (\"Wat zijn gripsokken?\").\n3. **Direct antwoord** in de eerste 40–60 woorden. Dat stuk citeren Google en AI-tools.\n4. **Inhoud** met H2's als vragen die mensen echt stellen, korte zinnen (12–15 woorden), \"je\"-vorm.\n5. **Bewijs**: elk getal met bron (formuleringsregel uit het feitenbestand), plus minimaal één eigen element: foto van een echte wedstrijd, quote van een speler of club, eigen test.\n6. **Tabel** waar het kan (gripsok vs gewone sok, maten, wasvoorschrift).\n7. **Links**: sportpagina, product, 1–2 andere artikelen.\n8. **FAQ** van 3–5 vragen onderaan.\n9. **CTA** naar het product of /collections/gripsokken, niet naar /collections/all.\n10. **Auteur + bijgewerkt-datum** zichtbaar.\n\nLengte: hoofdgidsen 1.200–1.600 woorden, ondersteunende posts 800–1.200. Woorden zijn een ondergrens voor dekking, geen rankingfactor.\n\n### Keuze survivor \"wat zijn gripsokken\"\nHet actieplan van 25-9 (punt 16) zegt wat-zijn-gripsokken herschrijven; het clusterplan van dezelfde dag zegt waarom-hi-grip-gripsokken. De Search Console-cijfers beslissen: waarom-hi-grip-gripsokken krijgt 121 vertoningen op precies \"wat zijn gripsokken\", wat-zijn-gripsokken 48 in totaal. We bouwen dus verder op de URL die Google al kiest en passen alleen titel en H1 aan. De slug blijft, want een nieuwe URL kost de opgebouwde positie.\n\n### Engelse versies\nElk artikel heeft ook een `/en/`-versie. Bij verwijderen verdwijnt die mee; zet in de CSV's daarom ook de `/en/`-redirect (staat er al in).\n\n## Wat niet lukte\n\nDe woordaantallen en feitfouten komen uit de crawls van 25-9, 8-10 en 11-10 en zijn vandaag niet per artikel opnieuw geteld; alleen de lijst met artikelen (sitemap) en de Search Console-cijfers zijn vandaag live opgehaald. Er is geen zoekvolume-data (geen DataForSEO): de prioriteit volgt Search Console-vertoningen en de SERP-analyse uit het clusterplan.\n\n## Bronnen\n\n- Search Console via `05_Research/_tools/google_data.py pagina --dagen 90`, per blog-URL, opgehaald 12-10-2026\n- GA4 property 476032345, landingspagina's /blogs/ sinds 1-8-2026: maximaal 4 organische sessies per blog, 0 aankopen\n- `sitemap_articles_1.xml` live, 12-10-2026 (23 artikelen)\n- [2026-10-11-seo-audit-weekdelta](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-11-seo-audit-weekdelta.md), [2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/05_Research/2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run.md)\n- SEO-audit 25-9: `03_Website_Agent/Analyse/SEO-audit 2026-09-25/findings/` (content.md, cluster-plan.json)\n- [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (stand 12-10)\n\n## Aantekeningen",
    "bron": "los",
    "bronbestand": "03_Website_Agent/Analyse/SEO-audit 2026-09-25/findings/cluster-plan.json",
    "bronbestand_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/03_Website_Agent/Analyse/SEO-audit%202026-09-25/findings/cluster-plan.json",
@@ -2834,7 +3426,8 @@ window.HI_RESEARCH = {
     "2026-10-11-seo-audit-weekdelta",
     "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run",
     "2026-10-08-seo-aeo-geo-aio-sxo-audit",
-    "2026-10-11-concurrentie-seo-per-merk"
+    "2026-10-11-concurrentie-seo-per-merk",
+    "2026-10-14-search-console"
    ],
    "id": "2026-10-12-blogs-stappenplan",
    "kansen": [],
@@ -2917,9 +3510,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/retourbeleid is al op 30 dagen zonder \"ongeopend\"/25%, maar /policies/refund-policy nog 14 dagen/25% en /policies/terms-of-service nog €4,25; oude policies-pagina's nog niet bijgewerkt/doorverwezen",
-      "controle": "Beleid plakken in Instellingen → Policies",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend' en /policies/terms-of-service nog €4,25 — oude waarden, niet geplakt.",
+      "controle": "Zijn de beleidsteksten (refund, verzending, voorwaarden art 4/6) uit de uitvoer geplakt in Instellingen → Beleid?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2939,9 +3532,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "homepage bevat nog 3x \"3000+\" naast 2x \"3500+\", niet volledig doorgevoerd",
-      "controle": "Homepage-meta van 3000+ naar 3500+",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Homepage <meta name=\"description\"> zegt nog '... de keuze van 3000+ sporters ...'.",
+      "controle": "Is de homepage-meta van 3000+ naar 3500+ sporters gezet?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -2961,9 +3554,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/collections/gripsokken toont nog 1x \"3000+\" naast 2x \"3500+\", niet volledig doorgevoerd",
-      "controle": "Collectie-USP 3000+ naar 3500+",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/collections/gripsokken toont nog <li class=\"shop-intro__usp\">3000+ sporters gingen je voor</li>.",
+      "controle": "Is de collectie-USP '3000+ sporters' naar 3500+ gezet in de thema-editor?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3006,9 +3599,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "04_Agent_Infrastructuur/Routines/SEO-regressiecheck.md bevat nog geen apart punt voor een wekelijkse EN-vertaling-vs-feiten-check",
-      "controle": "Wekelijkse check verouderde EN-vertalingen toevoegen aan SEO-regressiecheck",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "04_Agent_Infrastructuur/Routines/SEO-regressiecheck.md bevat geen vermelding van een EN-vertalingscheck.",
+      "controle": "Is de wekelijkse EN-vertalingscheck toegevoegd aan de SEO-regressiecheck?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -3028,9 +3621,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina telt nog circa 85 woorden, niet uitgebreid",
-      "controle": "/pages/ons-verhaal uitbouwen tot oprichtersverhaal",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Pagina toont nog een korte hero-tekst ('3 sporters die de wereld kennis laten maken met de toekomst van performance'), geen uitgebreid verhaal; links naar /pages/over-ons en de 2.0-producten staan er wel al.",
+      "controle": "Is /pages/ons-verhaal uitgebouwd tot een echt oprichtersverhaal?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3081,7 +3674,8 @@ window.HI_RESEARCH = {
     "2026-10-12-regressiecheck",
     "2026-10-12-seo-conversietest-run-4",
     "2026-10-11-concurrentie-seo-per-merk",
-    "2026-10-12-werkthema-vs-live"
+    "2026-10-12-werkthema-vs-live",
+    "2026-10-14-search-console"
    ],
    "id": "2026-10-11-seo-audit-weekdelta",
    "kansen": [],
@@ -3352,9 +3946,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide 404",
-      "controle": "Collectiepagina's witte/zwarte gripsokken maken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide 404.",
+      "controle": "Bestaan de collectiepagina's 'witte gripsokken' en 'zwarte gripsokken' al?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3374,9 +3968,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina noemt \"pasvorm\" maar niet \"over of onder de clubkous\" of maat/lengte-keuzegids; nog niet uitgebreid",
-      "controle": "/pages/gripsokken-voor-voetbal uitbouwen tot keuzegids",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Pagina noemt 'pasvorm' maar niet 'over de kous'/'onder de kous'/specifieke lengte-uitleg — nog geen volledige keuzegids.",
+      "controle": "Is /pages/gripsokken-voor-voetbal uitgebouwd tot een volledige keuzegids (pasvorm, maat, lengte, over/onder de kous)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3440,9 +4034,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "meta description van /blogs/hi-grip/waarom-hi-grip-gripsokken bevat nog \"leest u meer\" (u-vorm), niet herschreven",
-      "controle": "Meta description wat-zijn-gripsokken herschrijven",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Meta description bevat nog letterlijk 'komt u' en 'witte gripsokken'.",
+      "controle": "Is de meta description van /blogs/hi-grip/wat-zijn-gripsokken herschreven (geen 'komt u' / 'witte gripsokken')?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3644,9 +4238,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/collections/gripsokken en /pages/ontdek-jouw-sport bevatten nog \"rugby\", niet verwijderd",
-      "controle": "Rugby-belofte weghalen tot pagina live",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/pages/gripsokken-voor-rugby bestaat nog niet (404), maar de titel van /collections/gripsokken is 'Performance Gripsokken voor voetbal, tennis & rugby' — rugby staat er nog in zonder dat de pagina bestaat.",
+      "controle": "Is de rugby-belofte weggehaald uit titel/collectietitel zolang de rugbypagina niet bestaat, of staat de pagina er inmiddels?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3666,9 +4260,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "homepage-schema heeft alleen name/logo/url (@context nog http), geen description/foundingDate/founder/sameAs/contactPoint",
-      "controle": "Organization-schema uitbreiden",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Homepage JSON-LD Organization heeft nog alleen name, logo en url.",
+      "controle": "Is het Organization-schema uitgebreid met description/foundingDate/founder/sameAs/contactPoint/KvK?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3688,9 +4282,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "barcode/GTIN leeg bij alle 9 varianten (zie backlog#6050edaa), dus gtin kan nog niet gevuld worden",
-      "controle": "Product-schema gtin/itemCondition/variesBy",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Shopify-productdata: barcode is leeg/null voor alle 3 producten (performance-gripsokken, -2-0-zwart, -2-0-wit) — geen GTIN beschikbaar voor het schema.",
+      "controle": "Heeft het Product-schema gtin/itemCondition/variesBy (zonder aggregateRating)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -3733,9 +4327,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet volledig gecontroleerd per pagina; retourbeleid/terugbetalingsbeleid niet apart getest op H1-aanwezigheid",
-      "controle": "H1 toevoegen op beleidspagina's",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/pages/retourbeleid, /pages/terugbetalingsbeleid, /pages/retail en /pages/pilates hebben 0 h1-tags; /pages/verzendbeleid en /pages/privacybeleid hebben nog 3 h1-tags elk (2 leeg + 1 met tekst).",
+      "controle": "Hebben retourbeleid/terugbetalingsbeleid/retail/pilates een H1, en is de dubbele H1 op verzendbeleid/privacybeleid naar 1 teruggebracht?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3778,9 +4372,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina's zijn al 1300-1600 woorden (ruim boven 95-110), maar geen \"minimale afname\" of prijsindicatie gevonden",
-      "controle": "retail/pilates/clubwear uitbreiden voor B2B-zoeker",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen van de drie pagina's noemt 'minimale afname' of 'contactformulier'.",
+      "controle": "Zijn /pages/retail, /pages/pilates en /pages/clubwear uitgebreid voor de B2B-zoeker (minimale afname, contactformulier, vervolgstap)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3822,9 +4416,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/en/pages/gripsokken-voor-padel bevat nog 38x \"gripsokken\" (NL) tegen 30x \"grip socks\" (EN), niet vertaald",
-      "controle": "NL-slugs/alt-teksten op /en/ vertalen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/en/pages/gripsokken-voor-padel gebruikt nog de Nederlandse slug 'gripsokken-voor-padel' i.p.v. een Engelse slug.",
+      "controle": "Zijn op /en/ de Nederlandse URL-slugs/alt-teksten vertaald?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3901,9 +4495,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "titel verzorgingsblog nog \"HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?\", geen aanwijzing voor herschrijving op zoekintentie",
-      "controle": "Titel/meta blog verzorging herschrijven NL+EN",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen bewijs van een recente herschrijving gevonden; positie/CTR-probleem uit de notitie niet opnieuw gemeten in deze controle (GSC-rapport niet opnieuw gedraaid voor losse paginacheck).",
+      "controle": "Is de titel/meta van /blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken (NL+EN) herschreven?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3923,9 +4517,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "titel nog \"HÏ Grip | Wat zijn de voordelen van gripsokken?\", meta nog \"u\"-vorm, niet herschreven",
-      "controle": "Titel/meta blog waarom-hi-grip herschrijven",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen bewijs van een recente herschrijving gevonden; positie/CTR niet opnieuw gemeten in deze controle.",
+      "controle": "Is de titel/meta van /blogs/hi-grip/waarom-hi-grip-gripsokken herschreven?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -3954,7 +4548,9 @@ window.HI_RESEARCH = {
     "2026-10-07-shoppagina-keuzepagina",
     "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run",
     "2026-10-11-omzetgroei-koersbepaling",
-    "2026-10-11-seo-audit-weekdelta"
+    "2026-10-11-seo-audit-weekdelta",
+    "2026-10-13-homepage-redesign",
+    "2026-10-14-search-console"
    ],
    "id": "2026-10-08-search-console",
    "kansen": [],
@@ -4002,7 +4598,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-09-17-growth-radar-cro",
     "2026-09-24-growth-radar-cro",
-    "2026-10-01-growth-radar-cro"
+    "2026-10-01-growth-radar-cro",
+    "2026-10-13-homepage-redesign"
    ],
    "id": "2026-10-08-growth-radar-cro",
    "kansen": [],
@@ -4065,9 +4662,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/en/pages/gripsokken-voor-padel H1 is nog letterlijk \"Gripsokken voor grip socks for padel\", niet herstelt",
-      "controle": "Kapotte EN-H1 op drie sportpagina's herstellen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/en/pages/gripsokken-voor-padel en /en/pages/gripsokken-voor-tennis tonen nog de gemengde NL/EN-H1 ('Gripsokken voor' + 'grip socks for padel/tennis').",
+      "controle": "Is de kapotte H1 'Gripsokken voor grip socks for padel' op de EN-sportpagina's herstelt?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4132,9 +4729,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "GA4 toont 7 purchase-events/€168,92 over 28 dagen; Shopify-analytics toont 8 orders/€220,12 over -28d; vergelijking nu gemaakt maar nog niet vastgelegd als staande praktijk vóór CRO-conclusies",
-      "controle": "GA4-aankopen naast Shopify-orders leggen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "GA4 (28d, 14-10): 9 key events / €249,77 omzet; Shopify (30d): 10 orders. Geen vastgelegde vergelijking/reconciliatie tussen beide gevonden.",
+      "controle": "Zijn GA4-aankopen naast Shopify-orders van dezelfde periode gelegd vóór conversieconclusies?",
+      "gecontroleerd": "2026-10-14",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -4154,9 +4751,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen \"4,6\" gevonden op homepage of 2.0-productpagina",
-      "controle": "4,6★ met bron Trustpilot tonen op homepage/2.0-productpagina",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Homepage en productpagina tonen nog alleen '★★★★½' zonder cijfer '4,6' of de tekst 'Trustpilot' erbij.",
+      "controle": "Toont de homepage/productpagina het merkcijfer 4,6★ met bron Trustpilot?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4217,9 +4814,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "GA4 28-dagen-pull toont nog altijd VS (72 sessies) en China (6 sessies) ongefilterd in de landen-tabel",
-      "controle": "Botverkeer (VS/China) filteren uit GA4",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "GA4-landenrapport (28d) toont nog steeds United States (75 sessies) en China (6 sessies) ongefilterd in de hoofdtelling naast Netherlands (225).",
+      "controle": "Is het botverkeer (VS, China) uit GA4 gefilterd zodat conversie op NL-sessies wordt berekend?",
+      "gecontroleerd": "2026-10-14",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -4285,9 +4882,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "krachttraining-blog (voorkom-uitglijden) bevat geen link naar een sport- of productpagina, nog niet uitgevoerd",
-      "controle": "23 blogs koppelen aan sport-/productpagina's",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Steekproef hoe-zorg-ik-voor-mijn-gripsokken linkt wel naar /collections/gripsokken maar naar geen enkele /pages/gripsokken-voor-*-sportpagina.",
+      "controle": "Linken alle 23 blogs naar een sportpagina en naar /collections/gripsokken?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4376,9 +4973,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet aangetroffen op de 2.0-productpagina (geen aparte sectiecontrole gedaan, geen aanwijzing voor wijziging)",
-      "controle": "Padel/rugby in \"voor jouw sport\"-blok op 2.0-productpagina",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Productpagina-blok 'Voor jouw sport' noemt nog alleen 'Voetbal, pilates, tennis, hardlopen'; collectietitel is 'Performance Gripsokken voor voetbal, tennis & rugby' (geen padel).",
+      "controle": "Zijn padel en rugby toegevoegd aan 'Voor jouw sport' op de productpagina en aan de collectietitel?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4398,9 +4995,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: API geeft nog 429 (quotum), zie geheugen 2026-10-12",
-      "controle": "PageSpeed Insights met API-key draaien",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: PageSpeed Insights API blijft 429 op alle URL's, zoals eerder vastgesteld op 2026-10-12.",
+      "controle": "Draait PageSpeed Insights inmiddels met een API-key?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -4442,9 +5039,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren zonder nieuwe GA4-query deze run; geen aanwijzing dat dit al onderzocht is",
-      "controle": "24 GA4-sessies (not set)/100% bounce onderzoeken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "GA4-landingspaginarapport (28d, 14-10) toont nu zelfs 28 sessies op '(not set)' met bounceRate 1.0 — probleem is niet opgelost en geen bewijs van onderzoek.",
+      "controle": "Is de oorzaak van de 24 GA4-sessies met landingspagina '(not set)' en 100% bounce onderzocht?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -4590,9 +5187,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet apart gecontroleerd op kaart-links deze run; geen aanwijzing voor wijziging",
-      "controle": "Oude handles uit collectie gripsokken halen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/collections/gripsokken bevat nog kaart-links naar beide oude handles.",
+      "controle": "Zijn de oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1 van de collectiepagina gehaald?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4753,7 +5350,8 @@ window.HI_RESEARCH = {
     "2026-09-25-search-console",
     "2026-09-28-seo-conversietest-run-2",
     "2026-10-08-search-console",
-    "2026-10-12-werkthema-vs-live"
+    "2026-10-12-werkthema-vs-live",
+    "2026-10-13-homepage-redesign"
    ],
    "id": "2026-10-07-shoppagina-keuzepagina",
    "kansen": [],
@@ -4813,9 +5411,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist toegang tot lokale agent-configuratie buiten deze sessie",
-      "controle": "adobe-premiere-server CONNECTION_CLOSED uitzoeken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: infrastructuur/MCP-serverstatus van een externe tool valt buiten het bereik van de actiecontrole.",
+      "controle": "Is uitgezocht of de adobe-premiere-server (CONNECTION_CLOSED) tekst-overlays kan maken voor de Video-agent?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -4883,9 +5481,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/onze-waarden (200) bestaat nog los van /pages/over-ons; niet onderzocht of dit dubbel is",
-      "controle": "Templates onze-waarden/ons-verhaal dubbelen met Over ons nagaan",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/pages/onze-waarden en /pages/ons-verhaal bestaan beide nog live naast /pages/over-ons, met vergelijkbare paginagrootte.",
+      "controle": "Voeden de templates onze-waarden/ons-verhaal nog live pagina's die Over ons dubbelen?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4972,9 +5570,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen Person-schema met jobTitle/namen Lars/Timo/Tigo gevonden op /pages/over-ons",
-      "controle": "Over ons-schema gelijktrekken met Missie & visie",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen \"@type\":\"Person\" met jobTitle gevonden in de paginabron van /pages/over-ons.",
+      "controle": "Is het Over ons-schema gelijkgetrokken met Missie & visie (volledige namen, gelijke jobTitle)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -4994,9 +5592,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet apart gecontroleerd deze run; geen aanwijzing voor wijziging",
-      "controle": "Over ons: knoppen/kleuren/typfout",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "'Snowbaorden' (typfout) staat nog letterlijk op /pages/over-ons.",
+      "controle": "Zijn de knopstijl (volt-fill/chevron), Timo's accentkleur en de typfout 'Snowbaorden' gecorrigeerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -5024,7 +5622,8 @@ window.HI_RESEARCH = {
     "2026-09-04-werkdossier-stand-van-zaken",
     "2026-10-07-shoppagina-keuzepagina",
     "2026-10-08-search-console",
-    "2026-10-12-werkthema-vs-live"
+    "2026-10-12-werkthema-vs-live",
+    "2026-10-13-homepage-redesign"
    ],
    "id": "2026-10-07-missie-visie-pagina",
    "kansen": [],
@@ -5238,9 +5837,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: acties.py heeft nog geen commando om een losse actie-id te verwijderen (zie geheugen 2026-10-11)",
-      "controle": "Verweesde actie-id uit CONTROLE.json/UITVOERBAAR.json halen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: acties.py heeft nog geen commando om een losse verweesde actie-id te verwijderen (ongewijzigd t.o.v. 2026-10-11).",
+      "controle": "Kan de verweesde actie-id 2026-09-25-seo-audit#118b76a0 al uit CONTROLE.json/UITVOERBAAR.json geknipt worden?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -6211,9 +6810,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "slechts 7 van 157 .md-bestanden in 00-04 hebben een status-veld",
-      "controle": "Status/bijgewerkt op alle notities 00-04",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "In 00_Brand_Core/ hebben sommige notities (bv. '00 Brand Core.md', \"Doelgroep & Persona's.md\") geen status:-veld, andere wel — niet consistent doorgevoerd.",
+      "controle": "Hebben alle notities in 00-04 een status-veld en correcte bijgewerkt-datum?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6233,9 +6832,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "bestand niet gevonden in 04_Agent_Infrastructuur/Beheer/",
-      "controle": "vault_lint.py bouwen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "04_Agent_Infrastructuur/Beheer/ bevat geen vault_lint.py.",
+      "controle": "Bestaat vault_lint.py al naast vault_nav.py?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6299,9 +6898,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "map 99_Archief bestaat niet in de vault",
-      "controle": "Map 99_Archief maken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Er is geen map 99_Archief in de vault-root.",
+      "controle": "Bestaat de map 99_Archief al?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6344,9 +6943,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": ".claude/settings.json heeft geen deny-regels voor 05_Research/_backlog/*.json; geen schrijfrechtentabel in CLAUDE.md",
-      "controle": "Schrijfrechten per map + deny-regels",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "CLAUDE.md bevat geen 'Schrijfrechten'-sectie; .claude/settings.json bevat geen deny-regels voor 05_Research/_backlog of _data.",
+      "controle": "Staat er een schrijfrechtentabel in CLAUDE.md en deny-regels in .claude/settings.json?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6366,9 +6965,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": ".obsidian/plugins/obsidian-git/data.json: autoSaveInterval en autoPullInterval staan nog op 2, commitmessage nog \"vault backup: {{date}}\"",
-      "controle": "obsidian-git intervallen aanpassen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": ".obsidian/plugins/obsidian-git/data.json heeft nog autoSaveInterval: 2, autoPullInterval: 2 en commitMessage 'vault backup: {{date}}'.",
+      "controle": "Zijn de obsidian-git-intervallen aangepast (autosave 15 min, pull 10 min, 'autosave'-bericht)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6388,9 +6987,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md is nog 110.425 bytes, niet ingekort",
-      "controle": "Zoek Script & Gids inkorten",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md is nog 110.425 bytes (~110 KB).",
+      "controle": "Is de notitie Zoek Script & Gids ingekort van 110 KB naar max 5 KB?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6410,9 +7009,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "26 bestanden in 05_Research bevatten nog C:\\Users\\Test-paden",
-      "controle": "bronbestand-paden vault-relatief maken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "27 notities in 05_Research/ bevatten nog een absoluut bronbestand-pad beginnend met 'C:\\\\Users'.",
+      "controle": "Zijn bronbestand-paden in de 32 notities vault-relatief gemaakt?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6869,7 +7468,8 @@ window.HI_RESEARCH = {
     "2026-09-28-seo-conversietest-run-2",
     "2026-09-29-growth-radar-seo-content",
     "2026-10-06-growth-radar-seo-content",
-    "2026-10-08-search-console"
+    "2026-10-08-search-console",
+    "2026-10-14-search-console"
    ],
    "id": "2026-09-30-search-console",
    "kansen": [],
@@ -6916,7 +7516,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-09-16-growth-radar-ai-search",
-    "2026-09-23-growth-radar-ai-search"
+    "2026-09-23-growth-radar-ai-search",
+    "2026-10-14-growth-radar-ai-search"
    ],
    "id": "2026-09-30-growth-radar-ai-search",
    "kansen": [],
@@ -7524,9 +8125,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "beide bestanden staan nog op status: gearchiveerd",
-      "controle": "Weekoverzichten 09-14/09-21 van gearchiveerd naar verwerkt",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Beide notities hebben nog status: gearchiveerd in de frontmatter.",
+      "controle": "Staan de weekoverzichten 2026-09-14 en 2026-09-21 op status 'verwerkt' i.p.v. 'gearchiveerd'?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -7569,9 +8170,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "Denzel-weekoverzicht.md checkt alleen het vorige weekoverzicht op een openstaand voorstel, niet de hele actiebacklog",
-      "controle": "Denzel-prompt: verwijs naar bestaand backlogpunt i.p.v. nieuw Besluit",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md bevat geen tekst over het hergebruiken van een bestaand backlogpunt voor besluiten.",
+      "controle": "Verwijst de Denzel-weekoverzicht-prompt al naar een bestaand backlogpunt i.p.v. een nieuwe Besluit-actie te maken?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -7807,9 +8408,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: ordervolume niet opnieuw opgehaald deze run; drempel vermoedelijk nog niet gehaald",
-      "controle": "Retentie-/lifecycle-routine pas bouwen bij >50 orders/maand",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Shopify run-analytics-query: 10 orders in de laatste 30 dagen — ruim onder de drempel van 50; geen Klaviyo-koppeling bekend. Voorwaarde nog niet vervuld.",
+      "controle": "Is de drempel van >50 orders/maand bereikt, of is Klaviyo gekoppeld (voorwaarde voor een retentie-/lifecycle-routine)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -7829,9 +8430,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: geen aanwijzing dat er al betaalde ads lopen",
-      "controle": "Advertentie-monitor pas bouwen zodra ads lopen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: geen advertentieplatform-koppeling beschikbaar om actieve betaalde campagnes te bevestigen of uit te sluiten.",
+      "controle": "Lopen er inmiddels betaalde ads (voorwaarde voor een advertentie-monitor)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -8080,9 +8681,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/gripsokken-voor-rugby geeft nog 404, rugby-template dus nog niet gepubliceerd",
-      "controle": "Sport-templates ontdubbelen en uitbreiden incl. rugby",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Padel en rugby ontbreken nog in het 'Voor jouw sport'-blok en de collectietitel; geen bewijs van uitbreiding van de sportpagina's zelf in deze controle.",
+      "controle": "Zijn de sport-templates ontdubbeld en uitgebreid (koopblok, vraag-H2's, friction-statistiek)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8102,9 +8703,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/trends/de-laatste-gezonde-trends-... bestaat nog, 314 woorden, geen aanwijzing voor een fix",
-      "controle": "Puntjes-placeholder uit sportvoeding-template halen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding bevat nog lange reeksen puntjes ('......', '....................').",
+      "controle": "Is de puntjes-placeholder uit het sportvoeding-template gehaald?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8124,9 +8725,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "homepage Organization-schema heeft nog @context http://schema.org en geen sameAs, niet gefixt",
-      "controle": "Schema-snippets fixen (Organization.url, https, sameAs)",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Organization-schema op de homepage heeft nog geen sameAs/alternateName, alleen name/logo/url.",
+      "controle": "Zijn de schema-snippets gefixt (Organization.url/schema.org, sameAs, alternateName)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8146,9 +8747,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "rugby-pagina bestaat nog niet (404) en blog-CTA's wijzen nog naar /collections/all (zie 2026-10-12-blogs-stappenplan#b12308d8)",
-      "controle": "Navigatie/ontdek-jouw-sport naar 4 sportpagina's; blog-CTA's",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Homepage-navigatie linkt naar padel/tennis/voetbal maar niet naar rugby (bestaat nog niet); krachttrainingblog heeft nog een CTA naar /collections/all naast /collections/gripsokken.",
+      "controle": "Linkt de hoofdnavigatie naar de 4 sportpagina's en gaan blog-CTA's naar /collections/gripsokken i.p.v. /collections/all?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8168,9 +8769,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "H1 in homepage-hero is al aanwezig (\"HÏ Grip Performance Gripsokken voor Sporters\"), maar og:image en theme-koppen niet gecontroleerd/bevestigd",
-      "controle": "og:image https, H1 homepage-hero, theme-koppen non-heading",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "og:image op de homepage is nog http:// (niet https); H1 in de hero is al aanwezig, maar omdat niet alle delen van deze actie zijn uitgevoerd blijft de actie open.",
+      "controle": "Is og:image https, staat er een H1 in de hero, en zijn theme-koppen niet-heading?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8190,9 +8791,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist mobiele viewport-rendering, niet via curl te beoordelen",
-      "controle": "Mobiele productpagina layout hoger",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: mobiele weergave vereist JS/viewport-rendering, niet beschikbaar in deze controle.",
+      "controle": "Staan titel/prijs/maat/ATC hoger op de mobiele productpagina?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -8212,9 +8813,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist performance-meting (Lighthouse/PageSpeed), API geeft nog 429",
-      "controle": "Performance: image_url/WebP, ecomsend.js/block-cart.js meten",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: scriptkosten vereisen PageSpeed/Lighthouse-meting, API blijft 429.",
+      "controle": "Gebruiken afbeeldingen image_url+width+WebP, en is gemeten hoeveel ecomsend.js/block-cart.js kosten?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -8234,9 +8835,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist mobiele/JS-rendering, niet via curl te beoordelen",
-      "controle": "Ghosting aankondigingsbalk mobiel, cookiebanner, tap-targets",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: mobiel rendergedrag (ghosting, cookiebanner, tap-targets) vereist JS/viewport-rendering.",
+      "controle": "Is de ghosting in de aankondigingsbalk op mobiel gefixt, de cookiebanner compacter, tap-targets ≥44px?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -8301,9 +8902,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/blogs/intern geeft nog 200 (niet unpublished); sportvoeding-blog staat nog in sitemap (zie 2026-10-12-blogs-stappenplan#287aebbc)",
-      "controle": "/blogs/intern unpublishen; sportvoeding verwijderen+301",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/blogs/intern geeft nog 200 (live) en de sportvoeding-blogpost bestaat nog zonder redirect.",
+      "controle": "Is /blogs/intern unpublished en het lege sportvoedingsartikel verwijderd+301?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8368,9 +8969,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/collection geeft nog 200 (geen redirect); /winkel redirect gaat naar /collections/all i.p.v. /collections/gripsokken; /pages/shop geeft nog 404",
-      "controle": "/collections/frontpage, /pages/collection, /winkel 301; /pages/shop fixen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/collections/frontpage geeft 404 (geen redirect), /pages/collection geeft nog 200 als eigen pagina, /winkel redirect naar /collections/all (niet naar /collections/gripsokken), /pages/shop geeft nog 404.",
+      "controle": "301'en /collections/frontpage, /pages/collection en /winkel naar /collections/gripsokken, en is /pages/shop gerepareerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8390,9 +8991,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "wetenschapsblog bevat nog ongefundeerde claim \"bewezen beter\" (zie 2026-10-12-blogs-stappenplan#9602726a)",
-      "controle": "Gezondheidsclaims afzwakken/onderbouwen met bron",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen bewijs gevonden van een update; niet alle blog/FAQ-content afzonderlijk doorzocht op de specifieke cijfers in deze controle.",
+      "controle": "Zijn gezondheidsclaims afgezwakt/onderbouwd met bronvermelding (1,17 vs 0,60)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8412,9 +9013,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "steekproef 2.0-productpagina: nog 1 van 45 afbeeldingen zonder alt-tekst; niet alle 64 site-breed gecontroleerd",
-      "controle": "64 ontbrekende alt-teksten invullen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Alleen al op de homepage zijn minstens 4 afbeeldingen met een leeg alt-attribuut gevonden.",
+      "controle": "Zijn de 64 ontbrekende alt-teksten ingevuld?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8434,9 +9035,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "sitemap telt nog altijd 23 artikelen, geen van de 11 redirects uitgevoerd (zie 2026-10-12-blogs-stappenplan)",
-      "controle": "Blog consolideren per cluster-plan.json",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Zelfde bewijs als de blogs-stappenplan-acties: sitemap toont nog alle 23 originele blog-URL's, geen redirects doorgevoerd.",
+      "controle": "Is de blogconsolidatie volgens cluster-plan.json (11 redirects) doorgevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8456,9 +9057,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/retourbeleid al op 30 dagen zonder \"ongeopend\"/25%, maar /policies/refund-policy nog 14 dagen/25% en /policies/terms-of-service nog €4,25 (zie 2026-10-11-seo-audit-weekdelta#a938ea37)",
-      "controle": "Retourbeleid/voorwaarden gelijktrekken met besluit 25-9",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend'; /pages/retourbeleid noemt zowel 14 als 30 dagen (intern inconsistent); /policies/terms-of-service nog €4,25.",
+      "controle": "Zijn retourbeleidspagina en voorwaarden gelijkgetrokken met het besluit van 25-9 (30 dagen, geen 'ongeopend'/25%, €4,50 verzending)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -8824,9 +9425,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing in Routines-bestanden of backlog van een ingesteld afvinkmoment",
-      "controle": "Vast wekelijks afvinkmoment voor eigenaar invoeren",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: proces-afspraak zonder controleerbaar kenmerk op de site of in de vault-structuur.",
+      "controle": "Is er een vast wekelijks afvinkmoment voor de eigenaar ingevoerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -9038,9 +9639,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist nieuw extern onderzoek, niet uitgevoerd deze run",
-      "controle": "Recenter cijfer Nederlandse wintersporters zoeken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: onderzoeksvraag buiten de site/connectors van deze routine.",
+      "controle": "Is een recenter cijfer voor Nederlandse wintersporters gezocht?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -9112,9 +9713,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist nieuw extern onderzoek, niet uitgevoerd deze run",
-      "controle": "Groeiaannames vergelijken met Upfront-groeitempo",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: onderzoeksvraag buiten de site/connectors van deze routine.",
+      "controle": "Zijn de groeiaannames in het financieel plan naast het groeitempo van Upfront gelegd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -9214,9 +9815,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/policies/terms-of-service nog €4,25 en /policies/refund-policy nog 14 dagen, spreken /pages/verzendbeleid en /pages/retourbeleid nog tegen",
-      "controle": "Verzendkosten/drempel/tijd/retour overal gelijktrekken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Zelfde bewijs als #5c1c6209/#a938ea37: policies, /pages/*-beleidspagina's en productpagina lopen nog uiteen (14 vs 30 dagen, €4,25 vs €4,50, 'vóór 16:00').",
+      "controle": "Zijn verzendkosten/-drempel/-tijd en retourtermijn overal gelijkgetrokken?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -9236,9 +9837,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/shop geeft nog 404; niet alle genoemde URL's uit het Shopify-logboek dit run apart gecontroleerd",
-      "controle": "Redirects herstellen (404's, ketens, pilates/sport-URL's)",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/collections/frontpage geeft nog 404 i.p.v. een redirect.",
+      "controle": "Zijn de bekende 404-redirects (frontpage, pilates-blog, oude sport-URL's) herstelt?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -9258,9 +9859,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/maatgids geeft 404, geen aanwijzing dat een maatgids elders gepubliceerd en gelinkt is",
-      "controle": "Maatgids nalopen en publiceren",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen link naar een maatgids/'size-guide' gevonden op de productpagina; /pages/maatgids geeft 404.",
+      "controle": "Is de maatgids nagelopen, gepubliceerd en gelinkt vanaf de maatkeuze op de productpagina?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -9303,9 +9904,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "SKU's aanwezig en uniek, maar barcode/GTIN leeg bij alle 9 varianten (zie backlog#6050edaa)",
-      "controle": "Productdata aanvullen: producttype, SKU's, GTIN/EAN",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Shopify-productdata: productType is leeg (\"\") voor alle 3 producten; SKU's zijn wel aanwezig (GS110, PGSZ201, ...), barcode/GTIN leeg of null.",
+      "controle": "Zijn producttype, SKU's en GTIN/EAN aangevuld?",
+      "gecontroleerd": "2026-10-14",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -9443,7 +10044,8 @@ window.HI_RESEARCH = {
     "2026-09-23-seo-conversietest-run-1",
     "2026-09-25-growth-radar-social",
     "2026-09-25-seo-audit",
-    "2026-09-30-growth-radar-ai-search"
+    "2026-09-30-growth-radar-ai-search",
+    "2026-10-14-growth-radar-ai-search"
    ],
    "id": "2026-09-23-growth-radar-ai-search",
    "kansen": [],
@@ -9793,9 +10395,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/gripsokken-voor-rugby geeft nog 404, niet gepubliceerd",
-      "controle": "Rugby-sportpagina afmaken en publiceren",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby geeft nog 404.",
+      "controle": "Is /pages/gripsokken-voor-rugby afgemaakt en gepubliceerd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -9992,9 +10594,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "rugby-pagina en dus -FAQ nog niet live; geen aanwijzing dat de homepage-FAQ al een rugby-vraag heeft",
-      "controle": "Homepage-FAQ rugby-vraag invullen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen FAQPage-schema of FAQ-tekst over rugby gevonden op de homepage in deze controle (FAQPage-schema staat sitebreed nog nergens, zie #b02ee884).",
+      "controle": "Is de homepage-FAQ 'Mag je gripsokken dragen bij rugby?' ingevuld?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -10069,7 +10671,8 @@ window.HI_RESEARCH = {
     "2026-09-25-seo-audit",
     "2026-10-02-vault-review",
     "2026-10-11-omzetgroei-koersbepaling",
-    "2026-10-11-concurrentie-seo-per-merk"
+    "2026-10-11-concurrentie-seo-per-merk",
+    "2026-10-13-homepage-redesign"
    ],
    "id": "2026-09-21-beachhead-rugby",
    "kansen": [],
@@ -10273,7 +10876,8 @@ window.HI_RESEARCH = {
     "2026-09-23-growth-radar-ai-search",
     "2026-09-28-growth-radar-seo-technisch",
     "2026-09-29-growth-radar-seo-content",
-    "2026-09-30-growth-radar-ai-search"
+    "2026-09-30-growth-radar-ai-search",
+    "2026-10-14-growth-radar-ai-search"
    ],
    "id": "2026-09-16-growth-radar-ai-search",
    "kansen": [],
@@ -10295,9 +10899,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "thema is nog niet gepusht (zie 2026-10-12-werkthema-vs-live); sportpagina's dus nog niet via deze route ingevuld",
-      "controle": "8 sportlandingspagina's invullen na thema-push",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Alleen padel, tennis en voetbal bestaan als /pages/gripsokken-voor-*; rugby en overige sportpagina's bestaan nog niet (404).",
+      "controle": "Zijn de resterende 8 sportlandingspagina's ingevuld?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -10317,9 +10921,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "meta description waarom-hi-grip-gripsokken bevat nog \"leest u meer\" (zie 2026-10-11-concurrentie-seo-per-merk#17bbd9e9)",
-      "controle": "\"u/uw\" naar \"je/jij\" in FAQ/collectie/blogs",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "FAQ-tekst op de productpagina bevat nog 13 instanties van 'u'/'uw' ('uw', 'u' meerdere keren).",
+      "controle": "Is 'u/uw' in FAQ-antwoorden, collectiebeschrijving en blogartikelen naar 'je/jij' omgezet?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -10860,9 +11464,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: het fysieke label is niet via de site te beoordelen; op de productpagina's niet apart dit run gecontroleerd",
-      "controle": "§2.1 Vezelsamenstelling op label en productpagina's",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren voor het fysieke label; op de productpagina is geen vezelsamenstelling met officiële EU-benamingen gevonden.",
+      "controle": "Staat de vezelsamenstelling (EU-benamingen) op het label én alle productpagina's?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -10926,9 +11530,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen copy-checklist-bestand met deze regel gevonden in de vault",
-      "controle": "§2.4 Biocide-claims in copy-checklist opnemen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Alleen de oorspronkelijke Compliance To-Do Lijst noemt antibacterieel/antimicrobieel; geen apart copy-checklist-document gevonden.",
+      "controle": "Zijn verboden biocide-claims opgenomen in een copy-checklist?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -10948,9 +11552,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: fysiek label/verpakking niet via site te beoordelen; vast blok op productpagina dit run niet apart gecontroleerd",
-      "controle": "§3.1 GPSR-gegevens op label/verpakking en productpagina",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen GPSR-blok of 'verantwoordelijke persoon' gevonden op de productpagina; batchnummering en labels zijn fysiek niet te controleren.",
+      "controle": "Staan GPSR-gegevens als vast blok op elke productpagina, en is er batchnummering?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11018,9 +11622,9 @@ window.HI_RESEARCH = {
      },
      "besluit": false,
      "controle": {
-      "bewijs": "geen claimstrategie voor skisokken/gelprotection gevonden in Feiten & Actuele Staat of Performance Grip Socks 2.0",
-      "controle": "§3.4 Claimstrategie skisokken vastleggen",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen bestand over een claimstrategie voor skisokken/gelprotection gevonden in de vault.",
+      "controle": "Is de claimstrategie voor skisokken met gelprotection vastgelegd?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -11062,9 +11666,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "KvK (97210129) en btw-id (NL867952283B01) staan op home/contact, maar geen vestigingsadres gevonden",
-      "controle": "§4.1 Footer/contact: adres, KvK, btw-id",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Footer toont KVK: 97210129 en BTW: NL867952283B01, maar geen vestigingsadres; /pages/contact bevat geen adres.",
+      "controle": "Staan vestigingsadres, KvK-nummer en btw-id in footer/contactpagina?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11084,9 +11688,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen \"modelformulier\"/\"herroepingsformulier\" gevonden op /pages/retourbeleid",
-      "controle": "§4.2 Herroepingsrecht: modelformulier etc.",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen 'herroepingsrecht' of 'modelformulier' gevonden op /policies/refund-policy of /pages/retourbeleid.",
+      "controle": "Staan herroepingsrecht, modelformulier en correcte terugbetaling (incl. verzendkosten) op de retourpagina?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11106,9 +11710,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen \"1 jaar garantie\" gevonden op home/productpagina/retail/zakelijk/contact (mogelijk al verwijderd, maar geen vervangende wettelijke conformiteitstekst bevestigd)",
-      "controle": "§4.3 Garantieteksten herschrijven",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "/policies/terms-of-service Artikel 8 noemt nog 'garantietermijn van 1 maand', zonder verwijzing naar de wettelijke conformiteit (≥2 jaar).",
+      "controle": "Zijn de garantieteksten herschreven (geen '1 jaar garantie' naast wettelijke conformiteit)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11225,9 +11829,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/pages/reviewbeleid geeft 404, niet gepubliceerd",
-      "controle": "§5.3 Reviewbeleid publiceren",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen 'reviewbeleid' gevonden op de homepage of productpagina; /pages/reviewbeleid geeft 404.",
+      "controle": "Is er een reviewbeleid gepubliceerd (alinea bij reviewsectie + pagina)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11247,9 +11851,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist juridische screening, geen vault-bewijs dat dit is gedaan",
-      "controle": "§5.4 Duurzaamheidsclaims screenen (deadline 27-9 verstreken)",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen duurzaamheidsclaims (duurzaam/eco-/CO2-neutraal) gevonden op homepage/productpagina in deze controle; niet alle content (blogs/FAQ) is doorzocht.",
+      "controle": "Zijn duurzaamheidsclaims gescreend tegen richtlijn (EU) 2024/825?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11335,9 +11939,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist JS-rendering in een schone browser",
-      "controle": "§6.3 Cookiebanner herzien",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: cookiebannergedrag vereist JS-rendering.",
+      "controle": "Is de cookiebanner herzien (gelijkwaardige weiger-knop, Consent Mode v2)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11357,9 +11961,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "privacybeleid noemt Ecomsend en Meta, maar geen \"Google Analytics\"/GA4, terwijl GA4 wel actief is op de site",
-      "controle": "§6.4 Privacyverklaring matchen met toolset",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen vergelijking tussen privacyverklaring en daadwerkelijk gebruikte tools uitgevoerd in deze controle; geen bewijs van een update.",
+      "controle": "Matcht de privacyverklaring de werkelijke toolset?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11489,9 +12093,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: RI&E nog niet van toepassing (geen personeel); B2B-betaaltermijn in voorwaarden niet apart gecontroleerd",
-      "controle": "§7.4/7.5 B2B-betaaltermijn/RI&E",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen 'B2B'-betaaltermijn van 30 dagen gevonden in /policies/terms-of-service; RI&E is personeelszaak en niet via de site te controleren.",
+      "controle": "Staat de B2B-betaaltermijn van 30 dagen in de voorwaarden, en is er een RI&E?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11511,9 +12115,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist volledige toegankelijkheidsaudit (contrast, focus-states, labels), niet via curl te beoordelen",
-      "controle": "§8.1 WCAG 2.1 AA in thema",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: vereist rendering-/accessibility-tools; alt-teksten zijn deels al als apart openstaand punt vastgesteld (#d619f84b).",
+      "controle": "Is het thema WCAG 2.1 AA-conform (contrast, alt-teksten, focus-states, ondertiteling)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11665,9 +12269,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "collectie \"gripsokken\" heeft templateSuffix \"\" (leeg), nog niet toegewezen",
-      "controle": "Template gripsokken toewijzen aan collectie",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "GraphQL collection(id: gid://shopify/Collection/659972129095) toont templateSuffix: \"\" (leeg) i.p.v. 'gripsokken'.",
+      "controle": "Is het template 'gripsokken' toegewezen aan de collectie?",
+      "gecontroleerd": "2026-10-14",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -11784,9 +12388,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend-popupgedrag alleen zichtbaar na JS-rendering",
-      "controle": "Kortingspopup EcomSend vertragen/Escape/sluitknop",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren: popupgedrag vereist JS-rendering.",
+      "controle": "Is de kortingspopup vertraagd, Escape-sluitbaar, met sluitknop ≥24px?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11806,9 +12410,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: widget-rendering alleen zichtbaar na JS; trustpilot.com wordt wel nog geladen op home/productpagina",
-      "controle": "Trustpilot-widget repareren",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren zonder JS-rendering; de Trustpilot-scripts laden wel nog steeds in de paginabron (header.min.js, success.min.js).",
+      "controle": "Is de Trustpilot-widget gerepareerd (laadde van 3 domeinen, toonde niets)?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -11828,9 +12432,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "meta description waarom-hi-grip-gripsokken begint nog met \"Waarom kiezen voor gripsokken?\" (zoekwoord niet vooraan in titel-tag \"HÏ Grip | Wat zijn de voordelen van gripsokken?\")",
-      "controle": "Titels/meta site-breed zoekwoord-eerst",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Meerdere gecontroleerde titels/meta's (o.a. /collections/all zonder meta, 'HÏ Grip | Ontdek Jouw Sport') zijn nog generiek, geen bewijs van een sitebrede herschrijving.",
+      "controle": "Zijn titels en meta descriptions site-breed zoekwoord-eerst gezet?",
+      "gecontroleerd": "2026-10-14",
       "methode": "site",
       "uitkomst": "open"
      },
@@ -11880,9 +12484,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen analytics-exportbestand gevonden in de vault",
-      "controle": "Shopify Analytics-export (12 maanden)",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "Geen bestand met een Shopify Analytics-export gevonden in de vault.",
+      "controle": "Is er een Shopify Analytics-export (12 maanden) in de vault?",
+      "gecontroleerd": "2026-10-14",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -12046,9 +12650,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren of dit als vaste KPI-opzet is vastgelegd; losse cijfers (8 orders/€220,12, 28d) wel op te vragen",
-      "controle": "Resultaat-KPI's opzetten met Shopify Analytics als omzetbron",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "05_Research/_data/kpi.json toont 'omzet' per week die overeenkomt met GA4-purchase-revenue (bv. W41 €62,98), niet met Shopify-dagomzet uit shopify.json — nog geen Shopify-gebaseerde omzetbron in de KPI's.",
+      "controle": "Zijn resultaat-KPI's (conversieratio, AOV, omzet/bezoeker) opgezet met Shopify Analytics als omzetbron?",
+      "gecontroleerd": "2026-10-14",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -12068,9 +12672,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "funnel nu opgevraagd: grootste absolute drop add_to_cart(47)→begin_checkout(21); nog niet vastgelegd als rapport/conclusie",
-      "controle": "Funnel-rapport, grootste drop-off zoeken",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "GA4-funnel (28d) laat de grootste drop in totalUsers zien tussen view_item (79) en add_to_cart (26); geen vastgelegde analyse/notitie hierover gevonden.",
+      "controle": "Is er een funnelrapport gedraaid en is de grootste absolute drop-off gevonden?",
+      "gecontroleerd": "2026-10-14",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -12123,9 +12727,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist historisch GA4-tag-onderzoek buiten de scope van deze controle",
-      "controle": "Achterhalen waarom GA4-tag rond 1 jan 2026 stopte",
-      "gecontroleerd": "2026-10-13",
+      "bewijs": "niet te controleren in deze routine: vereist historische GA4-taganalyse buiten de standaardrapporten.",
+      "controle": "Is achterhaald waarom de GA4-tag rond 1 januari 2026 stopte?",
+      "gecontroleerd": "2026-10-14",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -12508,16 +13112,16 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 63,
-   "P2": 142,
-   "P3": 61
+   "P1": 72,
+   "P2": 152,
+   "P3": 63
   },
   "per_categorie": {
    "B2B": 1,
-   "CRO": 9,
+   "CRO": 10,
    "Compliance": 1,
    "Merk": 9,
-   "SEO": 34,
+   "SEO": 36,
    "Social": 6,
    "Techniek": 22
   },
@@ -12578,12 +13182,12 @@ window.HI_RESEARCH = {
     "week": "2026-W41"
    },
    {
-    "aantal": 7,
+    "aantal": 10,
     "start": "2026-10-12",
     "week": "2026-W42"
    }
   ],
-  "totaal_notities": 82
+  "totaal_notities": 85
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

@@ -23,4 +23,13 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-09-30 | doorwerking | Homepage-titel (live sinds 25 sep) samen met positieverbetering / : 7d 9,4→6,6, 28d 18,8→11,9 | 2026-09-30-search-console
 2026-09-30 | kans (lage CTR) | /pages/ontdek-jouw-sport: pos. 3,9, 0% CTR op 120 vert. (28d) — backlogpunt 19 | 2026-09-30-search-console
 2026-09-30 | beperking | Geen tool voor AI-overviews-rapport en indexeringsstatus; niet gemeten (zelfde als vorige run) | 2026-09-30-search-console
+2026-10-14 | totaal | 7 dagen: 50 klikken/1.046 vert./CTR 4,78%/pos. 8,3 (klikken +11,1% w/w, positie iets slechter); 28 dagen: 156 klikken/3.962 vert. (+33,3% m/m, positie 2,6 beter naar 8,1) | 2026-10-14-search-console
+2026-10-14 | kernkeyword | gripsokken pos. 5,9 (was 6,9, +1,0), 28d pos. 6,4 (was 8,7, +2,4), nog 96-97% op de oude URL /products/hi-grip-gripsokken-1 | 2026-10-14-search-console
+2026-10-14 | kernkeyword | grip socks pos. 10,4 (7d, +2,0); 28d niet in de top-50-lijst op zoekterm, handmatig berekend op basis van zoekterm+pagina: ≈10,9 over 9 eigen URL's | 2026-10-14-search-console
+2026-10-14 | kernkeyword | grip sokken (NL) pos. 14,3 (was 12, −2,3), verdeeld over 3 URL's — zelfde kannibalisatiepatroon als "grip socks" (backlogpunt 18), nu ook voor de NL-term | 2026-10-14-search-console
+2026-10-14 | kernkeyword | gripsokken kopen/voetbal/padel/tennis/rugby, antislip sokken: te weinig vertoningen voor conclusie (zelfde als vorige runs) | 2026-10-14-search-console
+2026-10-14 | kans (lage CTR) | /en/pages/gripsokken-voor-voetbal: positie 7,3–7,6, 65–107 vert. (7d/28d), 0% CTR — backlogpunt 25 | 2026-10-14-search-console
+2026-10-14 | kans (lage CTR) | /en/products/performance-gripsokken: positie 5,9–6,3, 58–98 vert. (7d/28d), 0% CTR — backlogpunt 26 | 2026-10-14-search-console
+2026-10-14 | doorwerking | Punten 19, 21, 22 (eigen backlogpunten) nog steeds open en op CTR/vertoningen ongewijzigd of verslechterd; SEO-titels 2.0/collectie gripsokken sinds 11 okt live, nog te vroeg voor CTR-evaluatie | 2026-10-14-search-console
+2026-10-14 | beperking | Geen tool voor AI-overviews-rapport en indexeringsstatus; niet gemeten (zelfde als vorige runs). Dashboard-sync (stap B) niet gedraaid: ArtifactData niet geladen deze run | 2026-10-14-search-console
 

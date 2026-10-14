@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "De homepage converteert relatief goed (alle 7 GA4-aankopen startten op /) maar verspilt het eerste scherm: de hero zegt alleen HÏ GRIP, de H1 staat op 3.886 px mobiel, en er is geen claim, prijs, bewijs of rugby. Voorstel: 9 secties met H1, sportkiezer en bewijs bovenaan en motion in Over ons-stijl, maar pas na het opruimen van JavaScript (mobiel Lighthouse 54, TBT 7,9 s)."
-gerelateerd: [2026-10-08-growth-radar-cro, 2026-10-08-search-console, 2026-09-21-beachhead-rugby, 2026-10-07-shoppagina-keuzepagina, 2026-10-07-missie-visie-pagina, 2026-10-14-search-console]
+gerelateerd: [2026-10-08-growth-radar-cro, 2026-10-08-search-console, 2026-09-21-beachhead-rugby, 2026-10-07-shoppagina-keuzepagina, 2026-10-07-missie-visie-pagina, 2026-10-14-search-console, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\homepage-2026-10"
 deadline: ""

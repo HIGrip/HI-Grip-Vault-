@@ -50,7 +50,7 @@ Voorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° 
 - [ ] P2 · Besluit: staat page_transition_enabled bewust aan (rel="expect" blocking="render" kan de eerste paint tot 1,8 s vasthouden)
 - [ ] P2 · 206 frames van het 360°-artifact exporteren naar Shopify Files (desktop elk 2e frame ≤ 1080 px, mobiel elk 3e ≤ 640 px, WebP q70)
 - [ ] P3 · Title/meta-variant B (merk en entiteit) later testen; bij lancering variant A aanhouden
-- [ ] P3 · Technische Procedures bijwerken: live thema is nu 202394272071, er is ook 202398040391 "Bijgewerkte kopie van AI website workspace 2.0"
+- [x] P3 · Technische Procedures bijwerken: live thema is nu 202394272071, er is ook 202398040391 "Bijgewerkte kopie van AI website workspace 2.0"
 
 ## Bevindingen
 

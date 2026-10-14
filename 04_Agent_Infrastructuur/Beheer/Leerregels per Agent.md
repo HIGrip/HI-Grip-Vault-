@@ -30,6 +30,8 @@ beheer: Stafchef (06_Denzel)
 - **Verifieer de zwaarste bevindingen zelf in de bron** voordat je ze doorgeeft. (2026-10-01, test Opdrachtprotocol)
 - **Check een QA-verdict snel en lees het stuk zelf alleen bij een escalatie.** Het verdict moet bewijs en "niet gecontroleerd" bevatten; zo niet, dan gaat het terug naar de QA-agent. (2026-10-12, Lars)
 - **Routeren doe je zelf.** Welke agent een taak krijgt, is Zelf doen; alleen wat raakt aan "Voorstellen" of "Altijd overleg vooraf" komt als voorstel bij Team HÏ Grip. (2026-10-12, Lars)
+- **Een designoplevering toets je op smaak tegen echte referenties, niet alleen op bugs en de checklist.** Het homepage-prototype richting B haalde alle regels (H1 boven de vouw, grid-breuk, groot getal, JS-budget) en mijn eigen critique noemde geen kritieke punten; Lars gaf ★1: "super lelijk, echt AI slop". Wie zijn eigen team toetst, toetst te mild. (2026-10-14, Lars ★1)
+- **Bij visueel werk kiest Lars eerst een richting in beeld, niet in tekst.** Een conceptkeuze op basis van een beschrijving en een ASCII-wireframe is geen keuze voor een look. Lever eerst 2–3 echte visuele schetsen (hero op 375 en 1440) naast de referentiesites, en bouw pas daarna de hele pagina. (2026-10-14, Lars ★1)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)
@@ -40,6 +42,7 @@ beheer: Stafchef (06_Denzel)
 
 ### QA-agents (Website-QA, Content-QA, Partnership-QA)
 - **Partnership-QA checkt wie al benaderd is en of een kandidaat een potentiële match is.** Beslissen wie benaderd wordt doet Team HÏ Grip. (2026-10-12, Lars)
+- **Website-QA legt bij designwerk elke screenshot naast twee referentiesites op dezelfde breedte en beantwoordt: zou dit zo op nike.com of gymshark.com kunnen staan?** Nee of twijfel = CORRIGEER, ook als alle regels gehaald zijn. (2026-10-14, Lars ★1 op homepage-prototype)
 
 ## Website
 
@@ -51,6 +54,8 @@ beheer: Stafchef (06_Denzel)
 - **Grens op de rol `live`, niet op een thema-nummer.** Draai vóór elke theme-actie `shopify theme list`. Actuele ID's staan alleen in [[Technische Procedures]] (werkthema sinds 12-10-2026: `202398040391`). (2026-09-17, bijgewerkt 2026-10-12)
 - **Lees grote templates niet half.** Inventariseer eerst alle secties voordat je zegt wat er wel of niet op de pagina staat. (2026-09-17)
 - **Toets sportpagina's en homepage aan de beachhead-volgorde** (tennis/padel, voetbal, rugby). Rugby ontbrak in de sport-grid. (2026-09-17)
+- **Een designlat als checklist levert checklist-design op.** Eyebrow + oversized kop + lead per sectie, fotokaart met donker verloop, outline-cijfers en volt-labels zijn samen herkenbaar als AI-template. Begin bij één visueel idee en echte art direction (beeldkeuze, crop, compositie); vink de lat pas achteraf af. (2026-10-14, Lars ★1 op homepage-prototype)
+- **Geen fotokaart met tekst op een donker verloop als standaardoplossing.** Elk sportbeeld krijgt een eigen crop en compositie, of het beeld vervalt. Eigen foto's van wisselende kwaliteit niet gelijkwaardig naast elkaar zetten. (2026-10-14, Lars ★1 op homepage-prototype)
 
 ### Website Copy Agent
 - **Nooit zelf een cijfer kiezen.** Klantenaantal en ratings moeten overal identiek zijn; twijfel = **[HÏ GRIP]**. (2026-09-17)

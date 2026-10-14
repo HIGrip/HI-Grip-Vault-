@@ -36,11 +36,15 @@
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
+- [[2026-10-14-growth-radar-ai-search]]
+- [[2026-10-13-homepage-redesign]]
+- [[2026-10-13-growth-radar-seo-content]]
 - [[2026-10-12-werkthema-vs-live]]
 - [[2026-10-12-weekoverzicht]]
 - [[2026-10-12-seo-conversietest-run-4]]
 - [[2026-10-12-regressiecheck]]
 - [[2026-10-12-growth-radar-seo-technisch]]
+- [[2026-10-12-blogs-stappenplan]]
 - [[2026-10-11-seo-audit-weekdelta]]
 - [[2026-10-11-omzetgroei-koersbepaling]]
 - [[2026-10-11-concurrentie-seo-per-merk]]

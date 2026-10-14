@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 14 oktober 2026 (actiecontrole)
-Open: 21 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
+Laatst bijgewerkt: 14 oktober 2026 (growth-radar)
+Open: 22 · Afgerond: 4 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -87,6 +87,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
 **Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
 **Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
+**Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.
 **Inspanning:** 2 uur
 
 ---
@@ -216,6 +217,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.
 **Wat:** Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims.
 **Gevonden op:** 13 oktober 2026 (Growth Radar, SEO-content)
+
+### [ ] 24. Overweeg ChatGPT Ads mee te nemen in de advertentiebudgetbeslissing (nieuw 14 okt 2026)
+**Waarom:** Beslist.nl draaide begin september 2026 een praktijktest met ChatGPT Ads: in minder dan twee dagen ruim 1.700 advertenties en 61.711 vertoningen, een doorklikratio meer dan 2× hoger dan hun eigen Google Shopping-advertenties, en een kostprijs per klik van ongeveer €0,20 — ver onder de eerder genoteerde schatting van $3–5 (Growth Radar, 23 sep 2026). Beslist zegt dat de ChatGPT-advertenties in deze eerste periode presteren op het niveau van hun eigen Google Search-campagnes.
+**Waar:** ChatGPT Ads (zelfbediening, sinds 31 augustus 2026 ook voor Nederlandse adverteerders, productfeed verplicht sinds 4 sep)
+**Wat:** Meenemen als losse, goedkope optie zodra er een advertentiebudget-beslissing valt — hangt samen met punt 10 (CAPI) en de kanaalkeuzes uit punt 8/9/13. Niet apart oppakken vóór die beslissing er is.
+**Gevonden op:** 14 oktober 2026 (Growth Radar, AI-search), bron: Emerce (8 sep 2026) over de Beslist.nl-test.
 
 ### [ ] 9. Padel-creators op prestatiebasis in plaats van vaste vergoeding (herzien 18 sep 2026, aangevuld 25 sep 2026)
 **Update 25 sep 2026:** Derde route naast doorklikken en TikTok Shop: Meta's Creator Marketing Hub (wereldwijde uitrol t/m eind 2026) zet een creatorpost met één klik om naar een partnership ad vanaf je eigen account. Werkt pas als punt 10 staat.

@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-10-14T05:03:01+02:00",
+ "laatste_run": "2026-10-15T05:03:04+02:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "05_Research/_data/kpi.json toont 'omzet' per week die overeenkomt met GA4-purchase-revenue (bv. W41 €62,98), niet met Shopify-dagomzet uit shopify.json — nog geen Shopify-gebaseerde omzetbron in de KPI's.",
@@ -25,7 +25,7 @@
   "2026-09-03-analytics-kpi-meetgat#997d251e": {
    "bewijs": "niet te controleren in deze routine: vereist historische GA4-taganalyse buiten de standaardrapporten.",
    "controle": "Is achterhaald waarom de GA4-tag rond 1 januari 2026 stopte?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -76,7 +76,7 @@
   "2026-09-04-werkdossier-stand-van-zaken#98a99a09": {
    "bewijs": "niet te controleren zonder JS-rendering; de Trustpilot-scripts laden wel nog steeds in de paginabron (header.min.js, success.min.js).",
    "controle": "Is de Trustpilot-widget gerepareerd (laadde van 3 domeinen, toonde niets)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -98,7 +98,7 @@
   "2026-09-04-werkdossier-stand-van-zaken#b83b8e37": {
    "bewijs": "niet te controleren: popupgedrag vereist JS-rendering.",
    "controle": "Is de kortingspopup vertraagd, Escape-sluitbaar, met sluitknop ≥24px?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -255,7 +255,7 @@
   "2026-09-07-compliance-todo#841f80c9": {
    "bewijs": "niet te controleren voor het fysieke label; op de productpagina is geen vezelsamenstelling met officiële EU-benamingen gevonden.",
    "controle": "Staat de vezelsamenstelling (EU-benamingen) op het label én alle productpagina's?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -276,7 +276,7 @@
   "2026-09-07-compliance-todo#a41e0356": {
    "bewijs": "Geen duurzaamheidsclaims (duurzaam/eco-/CO2-neutraal) gevonden op homepage/productpagina in deze controle; niet alle content (blogs/FAQ) is doorzocht.",
    "controle": "Zijn duurzaamheidsclaims gescreend tegen richtlijn (EU) 2024/825?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -290,7 +290,7 @@
   "2026-09-07-compliance-todo#b8f1e4b9": {
    "bewijs": "Geen 'B2B'-betaaltermijn van 30 dagen gevonden in /policies/terms-of-service; RI&E is personeelszaak en niet via de site te controleren.",
    "controle": "Staat de B2B-betaaltermijn van 30 dagen in de voorwaarden, en is er een RI&E?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -318,7 +318,7 @@
   "2026-09-07-compliance-todo#c7eeb693": {
    "bewijs": "Geen GPSR-blok of 'verantwoordelijke persoon' gevonden op de productpagina; batchnummering en labels zijn fysiek niet te controleren.",
    "controle": "Staan GPSR-gegevens als vast blok op elke productpagina, en is er batchnummering?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -360,7 +360,7 @@
   "2026-09-07-compliance-todo#e2982cd0": {
    "bewijs": "niet te controleren: vereist rendering-/accessibility-tools; alt-teksten zijn deels al als apart openstaand punt vastgesteld (#d619f84b).",
    "controle": "Is het thema WCAG 2.1 AA-conform (contrast, alt-teksten, focus-states, ondertiteling)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -374,7 +374,7 @@
   "2026-09-07-compliance-todo#e2fd0adb": {
    "bewijs": "niet te controleren: cookiebannergedrag vereist JS-rendering.",
    "controle": "Is de cookiebanner herzien (gelijkwaardige weiger-knop, Consent Mode v2)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -720,7 +720,7 @@
   "2026-09-24-financieel-plan-2027-2031-bmc-2031#8cdc0d8a": {
    "bewijs": "niet te controleren: onderzoeksvraag buiten de site/connectors van deze routine.",
    "controle": "Is een recenter cijfer voor Nederlandse wintersporters gezocht?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -762,14 +762,14 @@
   "2026-09-24-upfront-bestelvolume-schatting#8de73eba": {
    "bewijs": "niet te controleren: onderzoeksvraag buiten de site/connectors van deze routine.",
    "controle": "Zijn de groeiaannames in het financieel plan naast het groeitempo van Upfront gelegd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-09-25-evaluatie-routines#03ec6b39": {
    "bewijs": "niet te controleren: proces-afspraak zonder controleerbaar kenmerk op de site of in de vault-structuur.",
    "controle": "Is er een vast wekelijks afvinkmoment voor de eigenaar ingevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -898,7 +898,7 @@
   "2026-09-25-seo-audit#5497f485": {
    "bewijs": "niet te controleren: mobiele weergave vereist JS/viewport-rendering, niet beschikbaar in deze controle.",
    "controle": "Staan titel/prijs/maat/ATC hoger op de mobiele productpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -927,7 +927,7 @@
   "2026-09-25-seo-audit#78cb1b3e": {
    "bewijs": "niet te controleren: mobiel rendergedrag (ghosting, cookiebanner, tap-targets) vereist JS/viewport-rendering.",
    "controle": "Is de ghosting in de aankondigingsbalk op mobiel gefixt, de cookiebanner compacter, tap-targets ≥44px?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -955,7 +955,7 @@
   "2026-09-25-seo-audit#bb55f568": {
    "bewijs": "niet te controleren: scriptkosten vereisen PageSpeed/Lighthouse-meting, API blijft 429.",
    "controle": "Gebruiken afbeeldingen image_url+width+WebP, en is gemeten hoeveel ecomsend.js/block-cart.js kosten?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1041,14 +1041,14 @@
   "2026-09-26-onderzoek-nieuwe-routines#a6b5f6c9": {
    "bewijs": "niet te controleren: geen advertentieplatform-koppeling beschikbaar om actieve betaalde campagnes te bevestigen of uit te sluiten.",
    "controle": "Lopen er inmiddels betaalde ads (voorwaarde voor een advertentie-monitor)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-09-26-onderzoek-nieuwe-routines#b267a978": {
    "bewijs": "Shopify run-analytics-query: 10 orders in de laatste 30 dagen — ruim onder de drempel van 50; geen Klaviyo-koppeling bekend. Voorwaarde nog niet vervuld.",
    "controle": "Is de drempel van >50 orders/maand bereikt, of is Klaviyo gekoppeld (voorwaarde voor een retentie-/lifecycle-routine)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1445,7 +1445,7 @@
   "2026-10-07-dashboard-stand-doel-optimalisaties#035b0bdd": {
    "bewijs": "niet te controleren: acties.py heeft nog geen commando om een losse verweesde actie-id te verwijderen (ongewijzigd t.o.v. 2026-10-11).",
    "controle": "Kan de verweesde actie-id 2026-09-25-seo-audit#118b76a0 al uit CONTROLE.json/UITVOERBAAR.json geknipt worden?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1530,7 +1530,7 @@
   "2026-10-07-notebooklm-ai-agent-tiktoks#11bb9243": {
    "bewijs": "niet te controleren: infrastructuur/MCP-serverstatus van een externe tool valt buiten het bereik van de actiecontrole.",
    "controle": "Is uitgezocht of de adobe-premiere-server (CONNECTION_CLOSED) tekst-overlays kan maken voor de Video-agent?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1687,7 +1687,7 @@
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7aefb63b": {
    "bewijs": "niet te controleren: PageSpeed Insights API blijft 429 op alle URL's, zoals eerder vastgesteld op 2026-10-12.",
    "controle": "Draait PageSpeed Insights inmiddels met een API-key?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1716,7 +1716,7 @@
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#82bad0c5": {
    "bewijs": "GA4-landingspaginarapport (28d, 14-10) toont nu zelfs 28 sessies op '(not set)' met bounceRate 1.0 — probleem is niet opgelost en geen bewijs van onderzoek.",
    "controle": "Is de oorzaak van de 24 GA4-sessies met landingspagina '(not set)' en 100% bounce onderzocht?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2088,7 +2088,7 @@
   "2026-10-12-blogs-stappenplan#40c4a507": {
    "bewijs": "Nulmeting is van 12-10-2026; 4 weken (zou rond 9-11 zijn) en 8 weken zijn nog niet verstreken, dus nog niet aan de orde.",
    "controle": "Zijn de 4- en 8-weken Search Console-nametingen al gedraaid?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2256,7 +2256,7 @@
   "2026-10-13-homepage-redesign#4bf416c7": {
    "bewijs": "Nieuwe actie van 13-10; geen bewijs van nieuwe GA4-events of een baseline-meting gevonden.",
    "controle": "Is het meetfundament (events sportkiezer/360°/scrolldiepte + 4 weken baseline) al opgezet?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2284,7 +2284,7 @@
   "2026-10-13-homepage-redesign#98beb4c6": {
    "bewijs": "Nog niet van toepassing: variant A is nog niet gelanceerd (homepage-redesign nog in besluitfase).",
    "controle": "Is title/meta-variant B getest (na lancering van variant A)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2345,10 +2345,75 @@
    "methode": "site",
    "uitkomst": "open"
   },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#32375533": {
+   "bewijs": "Expliciet een Besluit: van Lars.",
+   "controle": "Besluit over Hogeschool Rotterdam als partnerlogo",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#410fff71": {
+   "bewijs": "Expliciet een Besluit: van Lars tussen twee tekstvarianten.",
+   "controle": "Besluit over hero-kop en hoofd-CTA tekst",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#67b1ef30": {
+   "bewijs": "Expliciet een Besluit: van Lars.",
+   "controle": "Besluit over prototype richting B als basis",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#8feddc9a": {
+   "bewijs": "Expliciet een Besluit: van Lars tussen twee bestaande bronnen, geen automatisch waar te nemen kenmerk.",
+   "controle": "Besluit over sportersaantal 3500+ of 3000+",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#a8c78334": {
+   "bewijs": "Mensenwerk: een fotoshoot plannen is geen automatisch waar te nemen kenmerk.",
+   "controle": "Rugbyfotoshoot plannen",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ac100eca": {
+   "bewijs": "Mensenwerk: een nieuwe foto laten maken.",
+   "controle": "Foto met alleen de drie founders maken",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#f6eea3ca": {
+   "bewijs": "Expliciet een Besluit: van Lars.",
+   "controle": "Besluit over Poppins 900 italic toevoegen of 800 italic houden",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-10-14-search-console#230c4e80": {
+   "bewijs": "Beide vragen om /en/products/performance-gripsokken titel/meta herschrijven; backlog-variant is leidend.",
+   "controle": "Zelfde pagina en eindtoestand als backlog#4eb5ed8e?",
+   "dubbel_van": "backlog#4eb5ed8e",
+   "gecontroleerd": "2026-10-15",
+   "methode": "vault",
+   "uitkomst": "dubbel"
+  },
+  "2026-10-14-search-console#5b07ca2a": {
+   "bewijs": "Beide vragen om /en/pages/gripsokken-voor-voetbal titel/meta herschrijven; backlog-variant is leidend.",
+   "controle": "Zelfde pagina en eindtoestand als backlog#3f65e547?",
+   "dubbel_van": "backlog#3f65e547",
+   "gecontroleerd": "2026-10-15",
+   "methode": "vault",
+   "uitkomst": "dubbel"
+  },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: geen tool beschikbaar voor het AI Overviews-/generatieve-impressies-rapport in Search Console.",
    "controle": "Is het nieuwe Search Console-rapport voor generatieve AI-impressies bekeken?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2392,16 +2457,23 @@
   "backlog#2f69e0df": {
    "bewijs": "niet te controleren: PageSpeed Insights API blijft 429 (quotum), zoals eerder vastgesteld op 2026-10-12.",
    "controle": "Is er een INP-meting gedraaid voor productpagina/homepage?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
   "backlog#42f6eb88": {
    "bewijs": "Geen aantekening of nieuwe CRO-test gevonden die deze meetbreuk vermeldt; punt nog niet van toepassing geweest.",
    "controle": "Is er bij de volgende voor-/na-meting een aantekening gezet over de Shopify-conversieratio-meetbreuk van 21-23 sep?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
+  },
+  "backlog#456f3072": {
+   "bewijs": "Besluit van Lars nodig over ChatGPT Ads in het budget; geen meetbaar kenmerk op site/connector.",
+   "controle": "Afweging voor het advertentiebudget",
+   "gecontroleerd": "2026-10-15",
+   "methode": "geen",
+   "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
    "bewijs": "www.higrip.nl/collections/all: geen <meta name=\"description\"> in de paginabron.",
@@ -2413,7 +2485,7 @@
   "backlog#52886b90": {
    "bewijs": "niet te controleren: vereist een Search Console-indexeringsstatus en een actuele SERP-snapshot waarvoor geen tool beschikbaar is.",
    "controle": "Moet de oude productpagina-URL opnieuw geïndexeerd gemeld worden, of is de SERP-titel/meta nog van de oude pagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2449,7 +2521,7 @@
   "backlog#8fb4a493": {
    "bewijs": "niet te controleren: de policy-pagina's noemen geen specifieke verzendlanden; VS-verzending kan niet bevestigd of uitgesloten worden zonder checkout-test.",
    "controle": "Verzendt higrip.nl momenteel naar de VS (voorwaarde voor het Perplexity Merchant Program)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2528,7 +2600,7 @@
   "backlog#eaa40e7c": {
    "bewijs": "niet te controleren via de site: geen vermelding van een verplichte factcheck-stap gevonden in CLAUDE.md of de routine-prompts.",
    "controle": "Is handmatige factcheck voor AI-gegenereerde teksten vóór publicatie al verplicht vastgelegd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2561,7 +2633,8 @@
   "2026-10-11",
   "2026-10-12",
   "2026-10-13",
-  "2026-10-14"
+  "2026-10-14",
+  "2026-10-15"
  ],
  "volgende_run": "dagelijks 05:00"
 }

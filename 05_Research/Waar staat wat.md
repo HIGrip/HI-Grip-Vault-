@@ -36,6 +36,9 @@
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
+- [[2026-10-15-growth-radar-cro]]
+- [[2026-10-14-search-console]]
+- [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]]
 - [[2026-10-14-growth-radar-ai-search]]
 - [[2026-10-13-homepage-redesign]]
 - [[2026-10-13-growth-radar-seo-content]]

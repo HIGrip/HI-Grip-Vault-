@@ -111,6 +111,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] — Homepage herontwerp vanaf leeg canvas (richting B Doorgaan)
 - [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
 - [[2026-10-13-growth-radar-seo-content]] — Growth Radar — SEO content & keywords, 13 oktober 2026
 - [[2026-10-12-blogs-stappenplan]] — Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs
@@ -118,7 +119,6 @@ Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bij
 - [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
 - [[2026-10-11-concurrentie-seo-per-merk]] — SEO-concurrentievergelijking per merk — 11 oktober 2026
 - [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO op 8 oktober
-- [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO, nieuwe run 8 oktober (met Search Console en GA4)
-- … en 6 oudere (zie [[Waar staat wat]])
+- … en 7 oudere (zie [[Waar staat wat]])
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

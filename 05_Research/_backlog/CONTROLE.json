@@ -2,16 +2,16 @@
  "laatste_run": "2026-10-15T05:03:04+02:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
-   "bewijs": "05_Research/_data/kpi.json toont 'omzet' per week die overeenkomt met GA4-purchase-revenue (bv. W41 €62,98), niet met Shopify-dagomzet uit shopify.json — nog geen Shopify-gebaseerde omzetbron in de KPI's.",
-   "controle": "Zijn resultaat-KPI's (conversieratio, AOV, omzet/bezoeker) opgezet met Shopify Analytics als omzetbron?",
-   "gecontroleerd": "2026-10-14",
-   "methode": "ga4",
+   "bewijs": "omzet in kpi.json (W42: €80,85 bij 2 aankopen) komt nog overeen met GA4-purchase-revenue, geen Shopify-gebaseerde omzetbron toegevoegd.",
+   "controle": "05_Research/_data/kpi.json laatste week (W42) op omzetbron",
+   "gecontroleerd": "2026-10-15",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-09-03-analytics-kpi-meetgat#8d1d8e60": {
-   "bewijs": "GA4-funnel (28d) laat de grootste drop in totalUsers zien tussen view_item (79) en add_to_cart (26); geen vastgelegde analyse/notitie hierover gevonden.",
-   "controle": "Is er een funnelrapport gedraaid en is de grootste absolute drop-off gevonden?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Funnel 28d: view_item_list 73 → view_item 80 → add_to_cart 26 → begin_checkout 19 → add_shipping_info 9 → add_payment_info 8 → purchase 8; grootste drop blijft tussen view_item (80) en add_to_cart (26); geen vastgelegde analyse hierover gevonden.",
+   "controle": "GA4-funnel (28d) op grootste absolute drop-off in totalUsers",
+   "gecontroleerd": "2026-10-15",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -103,9 +103,9 @@
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#c1ccbbfc": {
-   "bewijs": "GraphQL collection(id: gid://shopify/Collection/659972129095) toont templateSuffix: \"\" (leeg) i.p.v. 'gripsokken'.",
-   "controle": "Is het template 'gripsokken' toegewezen aan de collectie?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "templateSuffix is nog \"\" (leeg) in plaats van \"gripsokken\".",
+   "controle": "GraphQL collection(gid 659972129095) op templateSuffix",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -126,9 +126,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-04-werkdossier-stand-van-zaken#ee82c67c": {
-   "bewijs": "Meerdere gecontroleerde titels/meta's (o.a. /collections/all zonder meta, 'HÏ Grip | Ontdek Jouw Sport') zijn nog generiek, geen bewijs van een sitebrede herschrijving.",
+   "bewijs": "Meerdere titels/meta's nog generiek: /collections/all zonder meta, /pages/ontdek-jouw-sport nog 'HÏ Grip | Ontdek Jouw Sport' — geen sitebrede herschrijving zichtbaar.",
    "controle": "Zijn titels en meta descriptions site-breed zoekwoord-eerst gezet?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -140,9 +140,9 @@
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#fc53b6be": {
-   "bewijs": "Geen bestand met een Shopify Analytics-export gevonden in de vault.",
-   "controle": "Is er een Shopify Analytics-export (12 maanden) in de vault?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Alleen een toegangs-stappenplan gevonden (Shopify Apps & Analytics Toegang.md), geen 12-maanden-export van orders/omzet/AOV/conversie.",
+   "controle": "vault op Shopify Analytics-export-bestand",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -154,9 +154,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#08f96665": {
-   "bewijs": "Geen bestand over een claimstrategie voor skisokken/gelprotection gevonden in de vault.",
-   "controle": "Is de claimstrategie voor skisokken met gelprotection vastgelegd?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "§3.4 \"Claimstrategie skisokken met gelprotection\" staat nog als open checkbox \"Besluit nemen en vastleggen in de productbriefing\"; niet vastgelegd.",
+   "controle": "Compliance To-Do Lijst §3.4 op vastgelegd besluit",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -168,9 +168,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#0dcfc0b5": {
-   "bewijs": "Alleen de oorspronkelijke Compliance To-Do Lijst noemt antibacterieel/antimicrobieel; geen apart copy-checklist-document gevonden.",
-   "controle": "Zijn verboden biocide-claims opgenomen in een copy-checklist?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Alleen de Compliance To-Do Lijst zelf noemt antibacterieel/antimicrobieel; geen apart copy-checklist-document gevonden.",
+   "controle": "losstaand copy-checklist-document op biocide-claims",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -232,16 +232,16 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#70978779": {
-   "bewijs": "Footer toont KVK: 97210129 en BTW: NL867952283B01, maar geen vestigingsadres; /pages/contact bevat geen adres.",
+   "bewijs": "Footer heeft KVK/BTW maar nog geen vestigingsadres; /pages/contact heeft nu wel alle drie (adres 'IJsseldijk-Noord 48 | 2935 BH Ouderkerk aan den IJssel', KVK, BTW) — contactpagina is dus klaar, footer nog niet.",
    "controle": "Staan vestigingsadres, KvK-nummer en btw-id in footer/contactpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#7c92cd94": {
-   "bewijs": "/policies/terms-of-service Artikel 8 noemt nog 'garantietermijn van 1 maand', zonder verwijzing naar de wettelijke conformiteit (≥2 jaar).",
+   "bewijs": "/policies/terms-of-service Artikel 8 noemt nog 'garantietermijn van 1 maand', zonder verwijzing naar de wettelijke conformiteit.",
    "controle": "Zijn de garantieteksten herschreven (geen '1 jaar garantie' naast wettelijke conformiteit)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -283,7 +283,7 @@
   "2026-09-07-compliance-todo#ad0b9d7c": {
    "bewijs": "Geen 'herroepingsrecht' of 'modelformulier' gevonden op /policies/refund-policy of /pages/retourbeleid.",
    "controle": "Staan herroepingsrecht, modelformulier en correcte terugbetaling (incl. verzendkosten) op de retourpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -309,9 +309,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#c5185af4": {
-   "bewijs": "Geen 'reviewbeleid' gevonden op de homepage of productpagina; /pages/reviewbeleid geeft 404.",
+   "bewijs": "Geen 'reviewbeleid' gevonden op homepage of productpagina; /pages/reviewbeleid geeft nog 404.",
    "controle": "Is er een reviewbeleid gepubliceerd (alinea bij reviewsectie + pagina)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -325,7 +325,7 @@
   "2026-09-07-compliance-todo#c92ff3a9": {
    "bewijs": "Geen vergelijking tussen privacyverklaring en daadwerkelijk gebruikte tools uitgevoerd in deze controle; geen bewijs van een update.",
    "controle": "Matcht de privacyverklaring de werkelijke toolset?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -422,9 +422,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-15-seo-audit#2fb3a15f": {
-   "bewijs": "Alleen padel, tennis en voetbal bestaan als /pages/gripsokken-voor-*; rugby en overige sportpagina's bestaan nog niet (404).",
+   "bewijs": "Alleen padel, tennis en voetbal bestaan als /pages/gripsokken-voor-*; rugby en de overige sportpagina's bestaan nog niet (404).",
    "controle": "Zijn de resterende 8 sportlandingspagina's ingevuld?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -444,9 +444,9 @@
    "uitkomst": "dubbel"
   },
   "2026-09-15-seo-audit#864864f2": {
-   "bewijs": "FAQ-tekst op de productpagina bevat nog 13 instanties van 'u'/'uw' ('uw', 'u' meerdere keren).",
+   "bewijs": "Productpagina-FAQ bevat nog 36 instanties van 'u' en 8 van 'uw'.",
    "controle": "Is 'u/uw' in FAQ-antwoorden, collectiebeschrijving en blogartikelen naar 'je/jij' omgezet?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -526,7 +526,7 @@
   "2026-09-21-beachhead-rugby#5a25b546": {
    "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby geeft nog 404.",
    "controle": "Is /pages/gripsokken-voor-rugby afgemaakt en gepubliceerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -538,9 +538,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-21-beachhead-rugby#6c704ca5": {
-   "bewijs": "Geen FAQPage-schema of FAQ-tekst over rugby gevonden op de homepage in deze controle (FAQPage-schema staat sitebreed nog nergens, zie #b02ee884).",
+   "bewijs": "Homepage FAQPage-schema bevat 8 vragen; geen daarvan is 'Mag je gripsokken dragen bij rugby?'.",
    "controle": "Is de homepage-FAQ 'Mag je gripsokken dragen bij rugby?' ingevuld?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -661,16 +661,16 @@
    "uitkomst": "gedaan"
   },
   "2026-09-23-seo-conversietest-run-1#6251497e": {
-   "bewijs": "Geen link naar een maatgids/'size-guide' gevonden op de productpagina; /pages/maatgids geeft 404.",
+   "bewijs": "Geen link naar een maatgids/'size-guide' gevonden op de productpagina; /pages/maatgids geeft nog 404.",
    "controle": "Is de maatgids nagelopen, gepubliceerd en gelinkt vanaf de maatkeuze op de productpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-23-seo-conversietest-run-1#aef03a4a": {
-   "bewijs": "Shopify-productdata: productType is leeg (\"\") voor alle 3 producten; SKU's zijn wel aanwezig (GS110, PGSZ201, ...), barcode/GTIN leeg of null.",
-   "controle": "Zijn producttype, SKU's en GTIN/EAN aangevuld?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "productType is nog \"\" voor alle 3 producten; SKUs zijn aanwezig, barcode/GTIN blijft leeg of null.",
+   "controle": "Shopify-productdata op productType/SKU/barcode",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -685,14 +685,14 @@
   "2026-09-23-seo-conversietest-run-1#b469a68a": {
    "bewijs": "/collections/frontpage geeft nog 404 i.p.v. een redirect.",
    "controle": "Zijn de bekende 404-redirects (frontpage, pilates-blog, oude sport-URL's) herstelt?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-23-seo-conversietest-run-1#db685bc3": {
-   "bewijs": "Zelfde bewijs als #5c1c6209/#a938ea37: policies, /pages/*-beleidspagina's en productpagina lopen nog uiteen (14 vs 30 dagen, €4,25 vs €4,50, 'vóór 16:00').",
+   "bewijs": "Policies, beleidspagina's en productpagina lopen nog uiteen (14 vs 30 dagen, €4,25 vs €4,50, 'vóór 16:00' op /policies/shipping-policy).",
    "controle": "Zijn verzendkosten/-drempel/-tijd en retourtermijn overal gelijkgetrokken?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -845,9 +845,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-25-seo-audit#0ca90574": {
-   "bewijs": "Zelfde bewijs als de blogs-stappenplan-acties: sitemap toont nog alle 23 originele blog-URL's, geen redirects doorgevoerd.",
+   "bewijs": "sitemap_articles_1.xml (15-10) toont nog alle 23 originele blog-URL's, geen van de cluster-plan-redirects doorgevoerd.",
    "controle": "Is de blogconsolidatie volgens cluster-plan.json (11 redirects) doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -876,7 +876,7 @@
   "2026-09-25-seo-audit#3e55cce2": {
    "bewijs": "/blogs/intern geeft nog 200 (live) en de sportvoeding-blogpost bestaat nog zonder redirect.",
    "controle": "Is /blogs/intern unpublished en het lege sportvoedingsartikel verwijderd+301?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -889,9 +889,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-25-seo-audit#54738768": {
-   "bewijs": "Organization-schema op de homepage heeft nog geen sameAs/alternateName, alleen name/logo/url.",
+   "bewijs": "Homepage-Organization-schema gebruikt nog \"@context\":\"http://schema.org\" (niet https) en heeft geen sameAs/alternateName.",
    "controle": "Zijn de schema-snippets gefixt (Organization.url/schema.org, sameAs, alternateName)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -903,16 +903,16 @@
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#5c1c6209": {
-   "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend'; /pages/retourbeleid noemt zowel 14 als 30 dagen (intern inconsistent); /policies/terms-of-service nog €4,25.",
+   "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend'; /pages/retourbeleid noemt zowel 14 als 30 dagen; /policies/terms-of-service nog €4,25.",
    "controle": "Zijn retourbeleidspagina en voorwaarden gelijkgetrokken met het besluit van 25-9 (30 dagen, geen 'ongeopend'/25%, €4,50 verzending)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#6d7750aa": {
-   "bewijs": "/collections/frontpage geeft 404 (geen redirect), /pages/collection geeft nog 200 als eigen pagina, /winkel redirect naar /collections/all (niet naar /collections/gripsokken), /pages/shop geeft nog 404.",
+   "bewijs": "/collections/frontpage geeft nog 404, /pages/collection geeft nog 200 als eigen pagina, /winkel redirect nog naar /collections/all (niet naar /collections/gripsokken), /pages/shop geeft nog 404.",
    "controle": "301'en /collections/frontpage, /pages/collection en /winkel naar /collections/gripsokken, en is /pages/shop gerepareerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -932,23 +932,23 @@
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#832a400e": {
-   "bewijs": "Homepage-navigatie linkt naar padel/tennis/voetbal maar niet naar rugby (bestaat nog niet); krachttrainingblog heeft nog een CTA naar /collections/all naast /collections/gripsokken.",
+   "bewijs": "Homepage-navigatie linkt naar padel/tennis/voetbal maar niet naar rugby (bestaat nog niet); krachttrainingblog heeft nog 6 CTA's naar /collections/all naast 2 naar /collections/gripsokken.",
    "controle": "Linkt de hoofdnavigatie naar de 4 sportpagina's en gaan blog-CTA's naar /collections/gripsokken i.p.v. /collections/all?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#9e6c49fd": {
-   "bewijs": "Geen bewijs gevonden van een update; niet alle blog/FAQ-content afzonderlijk doorzocht op de specifieke cijfers in deze controle.",
+   "bewijs": "Geen bewijs gevonden van afgezwakte/onderbouwde gezondheidsclaims; sportpagina's tonen de 1,17/0,60-claim al met wrijvingscoëfficiënt-tekst, maar niet gecontroleerd of elke blog/FAQ nu een bron noemt.",
    "controle": "Zijn gezondheidsclaims afgezwakt/onderbouwd met bronvermelding (1,17 vs 0,60)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#a96c6e4f": {
-   "bewijs": "og:image op de homepage is nog http:// (niet https); H1 in de hero is al aanwezig, maar omdat niet alle delen van deze actie zijn uitgevoerd blijft de actie open.",
+   "bewijs": "og:image op de homepage is nog http:// (niet https); H1 in de hero is al aanwezig, maar omdat niet alle delen van de actie zijn uitgevoerd blijft de actie open.",
    "controle": "Is og:image https, staat er een H1 in de hero, en zijn theme-koppen niet-heading?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -968,9 +968,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-25-seo-audit#d619f84b": {
-   "bewijs": "Alleen al op de homepage zijn minstens 4 afbeeldingen met een leeg alt-attribuut gevonden.",
+   "bewijs": "Alleen al op de homepage zijn nog minstens 4 afbeeldingen met een leeg alt-attribuut gevonden.",
    "controle": "Zijn de 64 ontbrekende alt-teksten ingevuld?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -989,9 +989,9 @@
    "uitkomst": "open"
   },
   "2026-09-25-seo-audit#e4c898cb": {
-   "bewijs": "Padel en rugby ontbreken nog in het 'Voor jouw sport'-blok en de collectietitel; geen bewijs van uitbreiding van de sportpagina's zelf in deze controle.",
+   "bewijs": "Sportpagina's (padel/tennis/voetbal) hebben inmiddels een 'Waar let je op'-tabel en de friction-statistiek (1,17 vs 0,60) met wrijvingscoëfficiënt, maar sportspecifieke invalshoeken ('anti blaren' tennis/padel, 'afgeknipte kousen' voetbal) zijn niet gevonden en rugby ontbreekt nog — actie dus niet volledig uitgevoerd.",
    "controle": "Zijn de sport-templates ontdubbeld en uitgebreid (koopblok, vraag-H2's, friction-statistiek)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1011,9 +1011,9 @@
    "uitkomst": "dubbel"
   },
   "2026-09-25-seo-audit#ffcf7cad": {
-   "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding bevat nog lange reeksen puntjes ('......', '....................').",
+   "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding bevat nog lange reeksen puntjes.",
    "controle": "Is de puntjes-placeholder uit het sportvoeding-template gehaald?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1068,9 +1068,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1cd8b622": {
-   "bewijs": "04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md bevat geen tekst over het hergebruiken van een bestaand backlogpunt voor besluiten.",
-   "controle": "Verwijst de Denzel-weekoverzicht-prompt al naar een bestaand backlogpunt i.p.v. een nieuwe Besluit-actie te maken?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Geen tekst gevonden over het hergebruiken van een bestaand backlogpunt voor besluiten.",
+   "controle": "04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md op hergebruik-tekst",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1121,9 +1121,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#e6a6b0b2": {
-   "bewijs": "Beide notities hebben nog status: gearchiveerd in de frontmatter.",
-   "controle": "Staan de weekoverzichten 2026-09-14 en 2026-09-21 op status 'verwerkt' i.p.v. 'gearchiveerd'?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Beide staan nog op status: gearchiveerd, niet verwerkt.",
+   "controle": "status: in 2026-09-14-weekoverzicht.md en 2026-09-21-weekoverzicht.md",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1271,16 +1271,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-02-obsidian-structuur-ai-agents#1493354a": {
-   "bewijs": "27 notities in 05_Research/ bevatten nog een absoluut bronbestand-pad beginnend met 'C:\\\\Users'.",
-   "controle": "Zijn bronbestand-paden in de 32 notities vault-relatief gemaakt?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Nog 27 bestanden met een absoluut C:\\\\Users-pad.",
+   "controle": "C:\\\\Users-paden in 05_Research/*.md",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#14960853": {
-   "bewijs": ".obsidian/plugins/obsidian-git/data.json heeft nog autoSaveInterval: 2, autoPullInterval: 2 en commitMessage 'vault backup: {{date}}'.",
-   "controle": "Zijn de obsidian-git-intervallen aangepast (autosave 15 min, pull 10 min, 'autosave'-bericht)?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "autoSaveInterval en autoPullInterval staan nog op 2; commitMessage nog \"vault backup: {{date}}\".",
+   "controle": ".obsidian/plugins/obsidian-git/data.json",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1293,23 +1293,23 @@
    "uitkomst": "gedaan"
   },
   "2026-10-02-obsidian-structuur-ai-agents#353f4bcb": {
-   "bewijs": "In 00_Brand_Core/ hebben sommige notities (bv. '00 Brand Core.md', \"Doelgroep & Persona's.md\") geen status:-veld, andere wel — niet consistent doorgevoerd.",
-   "controle": "Hebben alle notities in 00-04 een status-veld en correcte bijgewerkt-datum?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "\"00 Brand Core.md\" en \"Doelgroep & Persona's.md\" hebben nog geen status:-veld; nog niet overal consistent doorgevoerd.",
+   "controle": "status-veld in 00_Brand_Core/*.md",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3ebe2293": {
-   "bewijs": "Er is geen map 99_Archief in de vault-root.",
-   "controle": "Bestaat de map 99_Archief al?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Map 99_Archief bestaat nog niet in de vault-root.",
+   "controle": "vault-root op map 99_Archief",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3f6943bd": {
-   "bewijs": "CLAUDE.md bevat geen 'Schrijfrechten'-sectie; .claude/settings.json bevat geen deny-regels voor 05_Research/_backlog of _data.",
-   "controle": "Staat er een schrijfrechtentabel in CLAUDE.md en deny-regels in .claude/settings.json?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "CLAUDE.md heeft geen Schrijfrechten-sectie; .claude/settings.json bevat alleen plugin-config, geen deny-regels voor 05_Research/_backlog of _data.",
+   "controle": "CLAUDE.md en .claude/settings.json op schrijfrechten/deny-regels",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1328,16 +1328,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-02-obsidian-structuur-ai-agents#cad6d1f6": {
-   "bewijs": "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md is nog 110.425 bytes (~110 KB).",
-   "controle": "Is de notitie Zoek Script & Gids ingekort van 110 KB naar max 5 KB?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Nog 110.425 bytes (~110 KB), niet ingekort naar 5 KB.",
+   "controle": "bestandsgrootte Zoek Script & Gids.md",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#f4f04b6b": {
-   "bewijs": "04_Agent_Infrastructuur/Beheer/ bevat geen vault_lint.py.",
-   "controle": "Bestaat vault_lint.py al naast vault_nav.py?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "vault_lint.py bestaat nog niet in 04_Agent_Infrastructuur/Beheer/.",
+   "controle": "04_Agent_Infrastructuur/Beheer/ op vault_lint.py",
+   "gecontroleerd": "2026-10-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1478,16 +1478,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-missie-visie-pagina#55c2753f": {
-   "bewijs": "/pages/onze-waarden en /pages/ons-verhaal bestaan beide nog live naast /pages/over-ons, met vergelijkbare paginagrootte.",
+   "bewijs": "/pages/onze-waarden en /pages/ons-verhaal bestaan beide nog als losse live pagina's (200) naast /pages/over-ons.",
    "controle": "Voeden de templates onze-waarden/ons-verhaal nog live pagina's die Over ons dubbelen?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-07-missie-visie-pagina#7b1d85e3": {
-   "bewijs": "'Snowbaorden' (typfout) staat nog letterlijk op /pages/over-ons.",
+   "bewijs": "'Snowbaorden' staat nog letterlijk op /pages/over-ons.",
    "controle": "Zijn de knopstijl (volt-fill/chevron), Timo's accentkleur en de typfout 'Snowbaorden' gecorrigeerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1499,9 +1499,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-missie-visie-pagina#afcb0ad4": {
-   "bewijs": "Geen \"@type\":\"Person\" met jobTitle gevonden in de paginabron van /pages/over-ons.",
+   "bewijs": "Over-ons-schema heeft wel founder-Person-objecten met jobTitle (Lars: Merk & marketing, Timo: Product & operations, Tigo: Partners & zakelijk), maar nog met voornamen alleen, geen volledige namen.",
    "controle": "Is het Over ons-schema gelijkgetrokken met Missie & visie (volledige namen, gelijke jobTitle)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1549,9 +1549,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-07-shoppagina-keuzepagina#63251aa0": {
-   "bewijs": "/collections/gripsokken bevat nog kaart-links naar beide oude handles.",
+   "bewijs": "/collections/gripsokken bevat nog kaart-links naar beide oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1.",
    "controle": "Zijn de oude handles performance-grip-socks-2-0-wit-1 en hi-grip-gripsokken-1 van de collectiepagina gehaald?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1615,9 +1615,9 @@
    "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#132b156f": {
-   "bewijs": "GA4-landenrapport (28d) toont nog steeds United States (75 sessies) en China (6 sessies) ongefilterd in de hoofdtelling naast Netherlands (225).",
-   "controle": "Is het botverkeer (VS, China) uit GA4 gefilterd zodat conversie op NL-sessies wordt berekend?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "VS (76) en China (5) sessies staan nog ongefilterd in de hoofdtelling naast Nederland (229); geen botfilter op land toegepast.",
+   "controle": "GA4-landenrapport (28d) op VS/China-sessies",
+   "gecontroleerd": "2026-10-15",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -1678,9 +1678,9 @@
    "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7a1b993a": {
-   "bewijs": "Homepage en productpagina tonen nog alleen '★★★★½' zonder cijfer '4,6' of de tekst 'Trustpilot' erbij.",
+   "bewijs": "Homepage en productpagina tonen nog alleen '★★★★½' zonder het cijfer '4,6' of de tekst 'Trustpilot' erbij.",
    "controle": "Toont de homepage/productpagina het merkcijfer 4,6★ met bron Trustpilot?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1692,9 +1692,9 @@
    "uitkomst": "open"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7d33db5a": {
-   "bewijs": "Steekproef hoe-zorg-ik-voor-mijn-gripsokken linkt wel naar /collections/gripsokken maar naar geen enkele /pages/gripsokken-voor-*-sportpagina.",
+   "bewijs": "Steekproef krachttrainingblog linkt naar /collections/all en /collections/gripsokken maar naar geen enkele sportpagina.",
    "controle": "Linken alle 23 blogs naar een sportpagina en naar /collections/gripsokken?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1707,9 +1707,9 @@
    "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#805ddfe0": {
-   "bewijs": "GA4 (28d, 14-10): 9 key events / €249,77 omzet; Shopify (30d): 10 orders. Geen vastgelegde vergelijking/reconciliatie tussen beide gevonden.",
-   "controle": "Zijn GA4-aankopen naast Shopify-orders van dezelfde periode gelegd vóór conversieconclusies?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "GA4 (28d): 9 key events/€249,77 omzet; geen vastgelegde reconciliatie met Shopify-orders over dezelfde periode gevonden.",
+   "controle": "GA4-aankopen (28d, t/m 14-10) naast Shopify-orders dezelfde periode",
+   "gecontroleerd": "2026-10-15",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -1721,9 +1721,9 @@
    "uitkomst": "open"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#96357028": {
-   "bewijs": "/en/pages/gripsokken-voor-padel en /en/pages/gripsokken-voor-tennis tonen nog de gemengde NL/EN-H1 ('Gripsokken voor' + 'grip socks for padel/tennis').",
+   "bewijs": "/en/pages/gripsokken-voor-padel, -tennis en -voetbal tonen alle drie nog de gemengde H1 'Gripsokken voor' + 'grip socks for padel/tennis/football'.",
    "controle": "Is de kapotte H1 'Gripsokken voor grip socks for padel' op de EN-sportpagina's herstelt?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1751,9 +1751,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#fdd0fd77": {
-   "bewijs": "Productpagina-blok 'Voor jouw sport' noemt nog alleen 'Voetbal, pilates, tennis, hardlopen'; collectietitel is 'Performance Gripsokken voor voetbal, tennis & rugby' (geen padel).",
+   "bewijs": "Productpagina-blok 'Voor jouw sport' noemt nog alleen 'Voetbal, pilates, tennis, hardlopen'; collectietitel is nog '... voetbal, tennis & rugby' (geen padel).",
    "controle": "Zijn padel en rugby toegevoegd aan 'Voor jouw sport' op de productpagina en aan de collectietitel?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1765,23 +1765,23 @@
    "uitkomst": "handmatig"
   },
   "2026-10-08-search-console#5e288d50": {
-   "bewijs": "Geen bewijs van een recente herschrijving gevonden; positie/CTR niet opnieuw gemeten in deze controle.",
+   "bewijs": "Titel/meta van /blogs/hi-grip/waarom-hi-grip-gripsokken ('HÏ Grip | Wat zijn de voordelen van gripsokken?') is niet herschreven, meta nog in 'u'-vorm.",
    "controle": "Is de titel/meta van /blogs/hi-grip/waarom-hi-grip-gripsokken herschreven?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-08-search-console#8079e9bd": {
-   "bewijs": "Geen bewijs van een recente herschrijving gevonden; positie/CTR-probleem uit de notitie niet opnieuw gemeten in deze controle (GSC-rapport niet opnieuw gedraaid voor losse paginacheck).",
+   "bewijs": "Titel/meta van /blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken (NL: 'HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?') en de EN-versie zijn niet herschreven, nog in 'u'-vorm.",
    "controle": "Is de titel/meta van /blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken (NL+EN) herschreven?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#1b39facf": {
-   "bewijs": "/pages/retourbeleid, /pages/terugbetalingsbeleid, /pages/retail en /pages/pilates hebben 0 h1-tags; /pages/verzendbeleid en /pages/privacybeleid hebben nog 3 h1-tags elk (2 leeg + 1 met tekst).",
+   "bewijs": "/pages/retourbeleid, /pages/terugbetalingsbeleid, /pages/retail en /pages/pilates hebben nog 0 H1-tags; /pages/verzendbeleid en /pages/privacybeleid hebben nog 3 H1-tags elk.",
    "controle": "Hebben retourbeleid/terugbetalingsbeleid/retail/pilates een H1, en is de dubbele H1 op verzendbeleid/privacybeleid naar 1 teruggebracht?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1793,9 +1793,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#52f24e15": {
-   "bewijs": "/pages/gripsokken-voor-rugby bestaat nog niet (404), maar de titel van /collections/gripsokken is 'Performance Gripsokken voor voetbal, tennis & rugby' — rugby staat er nog in zonder dat de pagina bestaat.",
+   "bewijs": "/pages/gripsokken-voor-rugby bestaat nog niet (404); titel van /collections/gripsokken is nog 'Performance Gripsokken voor voetbal, tennis & rugby' en /pages/ontdek-jouw-sport noemt rugby nog in de tekst.",
    "controle": "Is de rugby-belofte weggehaald uit titel/collectietitel zolang de rugbypagina niet bestaat, of staat de pagina er inmiddels?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1808,16 +1808,16 @@
    "uitkomst": "gedaan"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#6e05857a": {
-   "bewijs": "Shopify-productdata: barcode is leeg/null voor alle 3 producten (performance-gripsokken, -2-0-zwart, -2-0-wit) — geen GTIN beschikbaar voor het schema.",
-   "controle": "Heeft het Product-schema gtin/itemCondition/variesBy (zonder aggregateRating)?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Schema-snippet in het werkthema heeft nog geen itemCondition of variesBy; mpn/gtin blijft leeg omdat barcode voor alle 3 producten leeg/null is. (Dit snippet wordt overigens nergens in layout/theme.liquid gerenderd, dus telt niet mee voor het live risico op zelfverzonnen aggregateRating — zie aantekening in het geheugen.)",
+   "controle": "snippets/product-schema.liquid (werkthema) + productdata op gtin/itemCondition/variesBy",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#729fc40f": {
-   "bewijs": "Homepage JSON-LD Organization heeft nog alleen name, logo en url.",
+   "bewijs": "Homepage-Organization-schema heeft nog alleen name/logo/url; de rijkere versie (founder/foundingDate/sameAs) staat alleen op /pages/over-ons, niet op de homepage.",
    "controle": "Is het Organization-schema uitgebreid met description/foundingDate/founder/sameAs/contactPoint/KvK?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1829,16 +1829,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#9dcf4145": {
-   "bewijs": "Geen van de drie pagina's noemt 'minimale afname' of 'contactformulier'.",
+   "bewijs": "/pages/retail, /pages/pilates en /pages/clubwear noemen nog geen 'minimale afname' of 'contactformulier'.",
    "controle": "Zijn /pages/retail, /pages/pilates en /pages/clubwear uitgebreid voor de B2B-zoeker (minimale afname, contactformulier, vervolgstap)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#bc54bfa3": {
-   "bewijs": "/en/pages/gripsokken-voor-padel gebruikt nog de Nederlandse slug 'gripsokken-voor-padel' i.p.v. een Engelse slug.",
+   "bewijs": "/en/pages/gripsokken-voor-padel gebruikt nog de Nederlandse slug 'gripsokken-voor-padel'.",
    "controle": "Zijn op /en/ de Nederlandse URL-slugs/alt-teksten vertaald?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1866,16 +1866,16 @@
    "uitkomst": "dubbel"
   },
   "2026-10-11-concurrentie-seo-per-merk#0496d928": {
-   "bewijs": "Pagina noemt 'pasvorm' maar niet 'over de kous'/'onder de kous'/specifieke lengte-uitleg — nog geen volledige keuzegids.",
+   "bewijs": "/pages/gripsokken-voor-voetbal noemt nog geen 'over de kous'/'onder de kous'-uitleg (geen treffer voor die termen).",
    "controle": "Is /pages/gripsokken-voor-voetbal uitgebouwd tot een volledige keuzegids (pasvorm, maat, lengte, over/onder de kous)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
-   "bewijs": "Meta description bevat nog letterlijk 'komt u' en 'witte gripsokken'.",
+   "bewijs": "Meta description van /blogs/hi-grip/wat-zijn-gripsokken bevat nog letterlijk 'komt u' en 'witte gripsokken'.",
    "controle": "Is de meta description van /blogs/hi-grip/wat-zijn-gripsokken herschreven (geen 'komt u' / 'witte gripsokken')?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1887,9 +1887,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
-   "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide 404.",
+   "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide nog 404.",
    "controle": "Bestaan de collectiepagina's 'witte gripsokken' en 'zwarte gripsokken' al?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1965,16 +1965,16 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#3b3f2113": {
-   "bewijs": "/collections/gripsokken toont nog <li class=\"shop-intro__usp\">3000+ sporters gingen je voor</li>.",
+   "bewijs": "/collections/gripsokken toont nog '3000+ sporters gingen je voor'.",
    "controle": "Is de collectie-USP '3000+ sporters' naar 3500+ gezet in de thema-editor?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-seo-audit-weekdelta#59822153": {
    "bewijs": "Homepage <meta name=\"description\"> zegt nog '... de keuze van 3000+ sporters ...'.",
    "controle": "Is de homepage-meta van 3000+ naar 3500+ sporters gezet?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1995,16 +1995,16 @@
    "uitkomst": "dubbel"
   },
   "2026-10-11-seo-audit-weekdelta#a37c4e83": {
-   "bewijs": "Pagina toont nog een korte hero-tekst ('3 sporters die de wereld kennis laten maken met de toekomst van performance'), geen uitgebreid verhaal; links naar /pages/over-ons en de 2.0-producten staan er wel al.",
+   "bewijs": "/pages/ons-verhaal toont nog de korte hero-tekst ('3 sporters die de wereld kennis laten maken met de toekomst van performance'), geen uitgebreid oprichtersverhaal.",
    "controle": "Is /pages/ons-verhaal uitgebouwd tot een echt oprichtersverhaal?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-seo-audit-weekdelta#a938ea37": {
-   "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend' en /policies/terms-of-service nog €4,25 — oude waarden, niet geplakt.",
+   "bewijs": "/policies/refund-policy toont nog 14 dagen/25%/'ongeopend' en /policies/terms-of-service nog €4,25 — beleidsteksten niet geplakt.",
    "controle": "Zijn de beleidsteksten (refund, verzending, voorwaarden art 4/6) uit de uitvoer geplakt in Instellingen → Beleid?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2016,72 +2016,72 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "04_Agent_Infrastructuur/Routines/SEO-regressiecheck.md bevat geen vermelding van een EN-vertalingscheck.",
-   "controle": "Is de wekelijkse EN-vertalingscheck toegevoegd aan de SEO-regressiecheck?",
-   "gecontroleerd": "2026-10-14",
-   "methode": "vault",
+   "bewijs": "Bestand bevat nog geen vermelding van een EN-vertalingscheck.",
+   "controle": "04_Agent_Infrastructuur/Routines/SEO-regressiecheck.md op EN-vertalingscheck",
+   "gecontroleerd": "2026-10-15",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "sitemap_articles_1.xml (15-10) toont hoe-verleng-je-de-levensduur nog als los artikel; geen samenvoeging.",
    "controle": "Is 'samenvoegen hoe-verleng-je-de-levensduur' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken heeft titel/meta nog in 'u'-vorm ('u terecht', 'uw gripsokken'), geen uitbreiding naar je-vorm zichtbaar.",
    "controle": "Is 'verzorgingsblog uitbreiden' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "sitemap_articles_1.xml (15-10) toont gripsokken-tijdens-pilates-en-yoga nog als los artikel; geen samenvoeging.",
    "controle": "Is 'samenvoegen pilates-en-yoga' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1448275a": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen zichtbare auteur met foto of 'laatst bijgewerkt'-datum gevonden op de gecontroleerde blogartikelen.",
    "controle": "Is 'zichtbare auteur + laatst bijgewerkt' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#16eea17b": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "/blogs/hi-grip/waarom-hi-grip-gripsokken heeft nog de korte titel 'Wat zijn de voordelen van gripsokken?', geen hoofdgids van 1.400-1.600 woorden met H1 'Wat zijn gripsokken?'.",
    "controle": "Is 'wat-zijn-gripsokken herschrijven tot hoofdgids' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
    "bewijs": "/blogs/trends/waarom-sporten-meer-is-dan-bewegen-het-mentale-voordeel-van-actief-zijn geeft nog 200, geen redirect.",
    "controle": "Is de blogpost 'waarom sporten meer is dan bewegen' verwijderd en 301'd naar /blogs/trends?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding geeft nog 200, geen redirect.",
+   "bewijs": "/blogs/trends/de-laatste-gezonde-trends-op-het-gebied-van-sportvoeding geeft nog 200, bevat nog puntjes-placeholders, geen redirect.",
    "controle": "Is de sportvoeding-blogpost verwijderd en 301'd naar /blogs/trends?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#308272a7": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "sitemap toont 'welke-gripsokken-bestaan-er-van-budget-tot-premium-wat-kies-jij' nog onder de oude naam; geen 'beste-gripsokken-voetbal'-URL en geen nieuwe KNVB-/afgeknipte-sokken-artikelen gevonden.",
    "controle": "Is 'voetbalblog herschrijven + nieuwe artikelen' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "/blogs/hi-grip/hoe-is-hi-grip-ontstaan staat nog in de sitemap, geen 301 naar /pages/over-ons.",
    "controle": "Is 'hoe-is-hi-grip-ontstaan verwijderen + 301' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2093,30 +2093,30 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "/blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-van-voetbal-tot-pilates staat nog live zonder redirect; /pages/ontdek-jouw-sport linkt in de body nog naar geen enkele sportpagina.",
    "controle": "Is 'voor-welke-sport 301 naar ontdek-jouw-sport' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#42cbed6f": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs van lichte bijwerking van de genoemde artikelen (grippatroon, geschiedenis, sportclubs, krachttraining, blaren).",
    "controle": "Is 'overige posts bijwerken' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#4b1810bd": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Titels van blog_waarom en blog_verzorging volgen nog niet het patroon zoekwoord-vooraan + '| HÏ Grip' (bv. 'HÏ Grip | Wat zijn de voordelen van gripsokken?' begint met de merknaam, niet het zoekwoord).",
    "controle": "Is 'titels/meta keyword-eerst' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "meta description van /blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-van-voetbal-tot-pilates eindigt nog op '... nu beperkt op voorraad!'.",
+   "bewijs": "Meta description van /blogs/trends/voor-welke-sport-zijn-gripsokken-onmisbaar-van-voetbal-tot-pilates eindigt nog op '... nu beperkt op voorraad!'.",
    "controle": "Is 'nu beperkt op voorraad' uit de meta van de blog voor-welke-sport gehaald?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2128,100 +2128,100 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#9602726a": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs van herschrijving van de wetenschapsblog volgens de formuleringsregel in deze controle.",
    "controle": "Is 'wetenschapsblog claims herformuleren' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a248abc5": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen nieuwe tennis/padel-artikelen ('Gripsokken bij tennis en padel: het verschil', 'Padelsokken kiezen') gevonden in de sitemap.",
    "controle": "Is 'tennis/padel nieuwe artikelen' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a2c621ef": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs van herschrijving van de blessureblog met bronnen per claim.",
    "controle": "Is 'blessureblog herschrijven' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs dat de pilatesblog is opgefrist.",
    "controle": "Is 'pilatesblog opfrissen' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "Krachttrainingblog bevat nog links naar zowel /collections/all als /collections/gripsokken.",
+   "bewijs": "Krachttrainingblog bevat nog 6 links naar /collections/all naast 2 naar /collections/gripsokken.",
    "controle": "Is de globale blog-CTA van /collections/all naar /collections/gripsokken gezet?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "sitemap_articles_1.xml (15-10) toont nog alle 23 originele blog-URL's inclusief beide te fuseren artikelen; geen samenvoeging.",
    "controle": "Is 'samenvoegen wat-zijn-gripsokken + toekomst-sportoutfit' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#bcecbd1c": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs dat /blogs/trends of /blogs/hi-grip titel/H1/intro hebben gekregen.",
    "controle": "Is 'trends/hi-grip titel+H1+intro' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
-   "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby geeft nog 404.",
+   "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby geeft nog 404, voorwaarde nog niet vervuld.",
    "controle": "Bestaat /pages/gripsokken-voor-rugby al (voorwaarde voor de rugby-blogcontent)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "sitemap_articles_1.xml (15-10) toont nog alle 23 originele blog-URL's inclusief beide te fuseren artikelen; geen samenvoeging.",
    "controle": "Is 'samenvoegen verschil-maken + meer-vertrouwen in blessureblog' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "De krachttrainingblog (voorkom-uitglijden-...-krachttraining) linkt nog naar '2590799_het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters'.",
+   "bewijs": "De krachttrainingblog linkt nog naar '2590799_het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters'.",
    "controle": "Is de gebroken link /blogs/2590799_het-innovatieve-... in de krachttrainingblog vervangen?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#f5b232b8": {
-   "bewijs": "Steekproef hoe-zorg-ik-voor-mijn-gripsokken: wel links naar /products/... en /collections/gripsokken, maar geen link naar een /pages/gripsokken-voor-*-sportpagina.",
+   "bewijs": "Steekproef krachttrainingblog: linkt naar /collections/all en /collections/gripsokken, maar naar geen enkele /pages/gripsokken-voor-*-sportpagina.",
    "controle": "Linkt elk overgebleven artikel naar een sportpagina, een product en 1-2 andere artikelen?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#f73bcbeb": {
-   "bewijs": "sitemap_articles_1.xml (14-10) toont nog alle 23 originele blog-URL's inclusief de sportvoeding- en 'waarom sporten meer is dan bewegen'-artikelen; geen van de fase 0-5 wijzigingen uit het stappenplan is doorgevoerd.",
+   "bewijs": "Geen bewijs van een feitencheck per artikel; sitemap en artikelen ongewijzigd t.o.v. de vorige controle.",
    "controle": "Is 'feitencheck per artikel' al doorgevoerd?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-werkthema-vs-live#5f409a57": {
-   "bewijs": "templates/collection.json van werkthema 202398040391 toont in blok shop_keuzehulp nog 'Vanaf €13,49' voor Performance Gripsokken 1.0.",
-   "controle": "Zijn de prijzen in het werkthema rechtgezet (1.0 €14,95 i.p.v. €13,49; 2.0 €14,95 doorgestreept €17,95)?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "shop_keuzehulp-blok k2 toont nog \"Vanaf €13,49\" voor de 1.0; nog niet gelijkgetrokken met live.",
+   "controle": "templates/collection.json (werkthema 202398040391) op \"Vanaf €13,49\"",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-12-werkthema-vs-live#c757fc2d": {
-   "bewijs": "config/settings_data.json van werkthema 202398040391 heeft nog primary_button_border_width: 0 (live: 1) en geen T-Lab-app-blok in de embeds.",
-   "controle": "Staat het werkthema (202398040391) gelijk met live (bronnen/FAQ-link padel+voetbal, testimonials-knoppen, T-Lab-embed, primary_button_border_width 1)?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "primary_button_border_width staat nog op 0 (live: 1); geen T-Lab-app-blok in de embeds (wel bundler, sendwill, seoant, microsoft-clarity, fd-product-groups, section-store block-cart).",
+   "controle": "config/settings_data.json (werkthema 202398040391) op button-rand en T-Lab",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2233,23 +2233,23 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#26bbb772": {
-   "bewijs": "www.higrip.nl/pages/gripsokken-voor-rugby bestaat nog niet live; werkthema-opbouw niet apart gecontroleerd maar rugby ontbreekt ook in de live sportkiezer/collectietitel.",
-   "controle": "Is de rugbypagina gebouwd in het werkthema, met rugbytegel in de sportkiezer?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Shopify-pagina \"gripsokken-voor-rugby\" bestaat als draft (isPublished:false, lege body); nog niet gebouwd of gepubliceerd. Nieuwe rugbybeelden (hg-rugby-hero.jpg, hg-rugby-backs.jpg) staan wel al in Shopify Files (14-10).",
+   "controle": "Shopify pages + themes op rugbypagina",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#4867b36b": {
-   "bewijs": "Productpagina-FAQ bevat nog 13 instanties van 'u'/'uw' (zie ook #864864f2).",
+   "bewijs": "Productpagina-FAQ bevat nog 36 instanties van 'u' en 8 van 'uw'; geen bewijs dat specifiek antwoord 4 en 7 zijn aangepast.",
    "controle": "Zijn FAQ-antwoorden 4 en 7 van 'uw' naar 'je' gezet (sectie + snippets/faq-schema.liquid)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#4916b32e": {
-   "bewijs": "Nieuwe actie van 13-10; geen bewijs van opschoning in de homepage-broncode.",
+   "bewijs": "Homepage laadt nog gripsocks2-launch.css en padel-page.css, en bevat nog een ai_gen-blok met inline stijl.",
    "controle": "Is het JavaScript-budget van de homepage opgeschoond (inline ai_gen-scripts, dubbele CSS)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2275,9 +2275,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
-   "bewijs": "Nieuwe actie van 13-10; geen bewijs van geëxporteerde frames gecontroleerd in deze run.",
-   "controle": "Zijn de 206 frames van het 360°-artifact naar Shopify Files geëxporteerd?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "20 meest recente files (9-10 t/m 14-10) zijn banners/logos/productfotos, geen reeks van 206 frames gevonden.",
+   "controle": "Shopify Files op recent geüploade frame-afbeeldingen",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2332,16 +2332,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#f2c44e5d": {
-   "bewijs": "Nieuwe actie van 13-10, afhankelijk van de besluiten hierboven die nog niet genomen zijn; geen bewijs van een gebouwde testtemplate.",
-   "controle": "Is er een nieuwe testtemplate page.home-nieuw.json gebouwd in het werkthema?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "NOT_FOUND in beide werkthema-kandidaten; nog niet gebouwd (wacht ook op de besluiten).",
+   "controle": "themes(202398040391 en 201133490503) op templates/page.home-nieuw.json",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#ff235e99": {
-   "bewijs": "Homepage toont in de visually-hidden aankondigingstekst nog '3500+ S...' (DE KEUZE VAN 3500+ S...), niet gecorrigeerd naar 3000+.",
+   "bewijs": "Homepage announcementbar toont nog '3500+ SPORTERS'; homepage-meta zegt juist nog '3000+ sporters' (nog steeds inconsistent, niet teruggedraaid naar 3000+ overal).",
    "controle": "Is '3500+ sporters' teruggezet naar 3000+ in announcementbar, Over-ons-tijdlijn en de presets?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2352,12 +2352,26 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
+   "bewijs": "Bestand snippets/fonts.liquid bestaat niet (NOT_FOUND) in het werkthema; preloaden dus niet te bevestigen op dit pad.",
+   "controle": "snippets/fonts.liquid in werkthema",
+   "gecontroleerd": "2026-10-15",
+   "methode": "shopify",
+   "uitkomst": "open"
+  },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#410fff71": {
    "bewijs": "Expliciet een Besluit: van Lars tussen twee tekstvarianten.",
    "controle": "Besluit over hero-kop en hoofd-CTA tekst",
    "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
+   "bewijs": "Geen schema-'description'-veld op de homepage (Organization-schema heeft alleen name/logo/url) en de hero-paragraaf is kort ('Kies je sport. Zie waarom grip in je schoen telt.'), geen 58-woorden entiteitsalinea met gripregel-dubbele-punt.",
+   "controle": "Zijn de entiteitsalinea en schema-description gelijkgetrokken met de ingekorte alinea uit het prototype (58 woorden, gripregel met dubbele punt)?",
+   "gecontroleerd": "2026-10-15",
+   "methode": "site",
+   "uitkomst": "open"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#67b1ef30": {
    "bewijs": "Expliciet een Besluit: van Lars.",
@@ -2373,6 +2387,13 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
+   "bewijs": "Beide app-embeds staan nog zonder zichtbare template-beperking in de blocks-lijst van het werkthema; geen beperking tot product-/cartpaginas gevonden.",
+   "controle": "config/settings_data.json (werkthema) op scope van block-cart.js/fd-product-groups",
+   "gecontroleerd": "2026-10-15",
+   "methode": "shopify",
+   "uitkomst": "open"
+  },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#a8c78334": {
    "bewijs": "Mensenwerk: een fotoshoot plannen is geen automatisch waar te nemen kenmerk.",
    "controle": "Rugbyfotoshoot plannen",
@@ -2386,6 +2407,13 @@
    "gecontroleerd": "2026-10-15",
    "methode": "geen",
    "uitkomst": "handmatig"
+  },
+  "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ba9f7771": {
+   "bewijs": "Alle 6 varianten negatief: zwart 35-38 -4, 39-42 -19, 43-47 -22; wit 35-38 -8, 39-42 -12, 43-47 -19. Homepage/keuzeblok nog niet gebouwd, dus nog niet van toepassing.",
+   "controle": "Shopify-voorraad Performance Gripsokken 2.0 (alle maten)",
+   "gecontroleerd": "2026-10-15",
+   "methode": "shopify",
+   "uitkomst": "open"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#f6eea3ca": {
    "bewijs": "Expliciet een Besluit: van Lars.",
@@ -2432,9 +2460,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "Beide URL's geven 404: www.higrip.nl/pages/onderzoek en www.higrip.nl/pages/waarom-hi-grip-werkt.",
+   "bewijs": "Beide URL's geven nog 404: www.higrip.nl/pages/onderzoek en www.higrip.nl/pages/waarom-hi-grip-werkt.",
    "controle": "Bestaat er een bewijspagina (/pages/onderzoek of /pages/waarom-hi-grip-werkt) met eigen meetdata?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2461,6 +2489,13 @@
    "methode": "geen",
    "uitkomst": "open"
   },
+  "backlog#3f65e547": {
+   "bewijs": "/en/pages/gripsokken-voor-voetbal heeft al een specifieke titel ('Grip socks for football | HÏ Grip') en meta, maar niet aantoonbaar herschreven op basis van de GSC-zoektermenanalyse uit deze actie; geen eerdere versie om tegen te vergelijken.",
+   "controle": "Is de titel/meta van /en/pages/gripsokken-voor-voetbal herschreven voor de Engelse zoekintentie op basis van zoekwoordonderzoek?",
+   "gecontroleerd": "2026-10-15",
+   "methode": "site",
+   "uitkomst": "open"
+  },
   "backlog#42f6eb88": {
    "bewijs": "Geen aantekening of nieuwe CRO-test gevonden die deze meetbreuk vermeldt; punt nog niet van toepassing geweest.",
    "controle": "Is er bij de volgende voor-/na-meting een aantekening gezet over de Shopify-conversieratio-meetbreuk van 21-23 sep?",
@@ -2476,9 +2511,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
-   "bewijs": "www.higrip.nl/collections/all: geen <meta name=\"description\"> in de paginabron.",
+   "bewijs": "www.higrip.nl/collections/all heeft geen <meta name=\"description\"> in de paginabron.",
    "controle": "Heeft /collections/all een meta description?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
+   "methode": "site",
+   "uitkomst": "open"
+  },
+  "backlog#4eb5ed8e": {
+   "bewijs": "/en/products/performance-gripsokken heeft al een keyword-rijke titel ('Grip Socks | Maximum Grip for Every Sport | HÏ Grip') en meta, maar niet aantoonbaar herschreven op basis van de GSC-zoektermenanalyse uit deze actie.",
+   "controle": "Is de titel/meta van /en/products/performance-gripsokken herschreven voor de Engelse zoekintentie op basis van zoekwoordonderzoek?",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2490,16 +2532,16 @@
    "uitkomst": "open"
   },
   "backlog#6050edaa": {
-   "bewijs": "niet te controleren: de Merchant Center-feed zelf is niet leesbaar via de Shopify-connector; Shopify's interne variant-ID's zijn wel uniek (bv. 53739088281927).",
-   "controle": "Geeft Shopify's Merchant Center-feed unieke, stabiele variant-ID's door?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Merchant Center-feed blijft niet leesbaar via de Shopify-connector; dit is niet live te verifiëren met de huidige tools.",
+   "controle": "niet te controleren: Merchant Center-feed",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#6dd6caf8": {
-   "bewijs": "www.higrip.nl/products/performance-gripsokken-2-0-zwart toont alleen statische tekst 'Gratis verzending vanaf €35.', geen voortgangsbalk of herberekening per pack-variant.",
+   "bewijs": "www.higrip.nl/products/performance-gripsokken-2-0-zwart toont nog alleen statische tekst 'Gratis verzending vanaf €35.', geen voortgangsbalk of herberekening per pack-variant.",
    "controle": "Staat er een voortgangsbalk 'Nog €X tot gratis verzending' die meerekent met de pack-variant op de productpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2512,9 +2554,9 @@
    "uitkomst": "dubbel"
   },
   "backlog#8f8db388": {
-   "bewijs": "Geen <link rel=\"canonical\"> gevonden op /collections/gripsokken of /en/pages/gripsokken-voor-padel; geen consolidatie zichtbaar.",
+   "bewijs": "Alle 4 URL's (/, /collections/all, /collections/gripsokken, /en/collections/gripsokken) hebben nog een zelf-verwijzende <link rel=\"canonical\">; geen keuze voor één primaire URL doorgevoerd.",
    "controle": "Is er een canonical/interne-link-keuze gemaakt tussen de 4 'grip socks'-concurrerende URL's?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2536,7 +2578,7 @@
   "backlog#a2e3406d": {
    "bewijs": "Geen '/paar' of 'per paar' tekst gevonden op www.higrip.nl/products/performance-gripsokken-2-0-zwart.",
    "controle": "Staat er 'prijs per paar' bij de pack-selector op de productpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2555,23 +2597,23 @@
    "uitkomst": "handmatig"
   },
   "backlog#b02ee884": {
-   "bewijs": "Geen van de vier gecontroleerde pagina's heeft \"@type\":\"FAQPage\" in de paginabron.",
+   "bewijs": "Geen van de vier gecontroleerde pagina's (productpagina, ontdek-jouw-sport, pilates, retail) heeft \"@type\":\"FAQPage\"; alleen de homepage heeft FAQPage-schema, met andere vragen.",
    "controle": "Staat er FAQPage-schema op de vraagpagina's (productpagina, ontdek-jouw-sport, pilates, retail)?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
-   "bewijs": "Werkthema 202398040391 settings_data.json heeft nog het blok 'shopify://apps/bundler/blocks/bundler-script-append/...' met disabled:false.",
-   "controle": "Is de Bundler-app verwijderd uit het thema (app-embed-block)?",
-   "gecontroleerd": "2026-10-14",
+   "bewijs": "Blok \"shopify://apps/bundler/blocks/bundler-script-append/...\" staat nog met disabled:false in het werkthema.",
+   "controle": "config/settings_data.json (werkthema 202398040391) op bundler-blok",
+   "gecontroleerd": "2026-10-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#b81d4226": {
-   "bewijs": "Geen <video>-element of mp4/webm-video op www.higrip.nl/products/performance-gripsokken-2-0-zwart (enige '.webm'-match was 'webmcp', geen video).",
+   "bewijs": "Geen <video>-element of mp4/webm-video op www.higrip.nl/products/performance-gripsokken-2-0-zwart (enige '.webm'-match is 'webmcp', geen video).",
    "controle": "Staat er een productvideo (30-60s, sok in actie) op de productpagina?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2584,9 +2626,9 @@
    "uitkomst": "gedaan"
   },
   "backlog#bf53be16": {
-   "bewijs": "Titel is nog generiek 'HÏ Grip | Ontdek Jouw Sport'; geen bewijs dat de vereiste zoektermenanalyse in Search Console is gedaan vóór het herschrijven.",
+   "bewijs": "Titel is nog generiek 'HÏ Grip | Ontdek Jouw Sport' en meta nog generiek; geen bewijs dat dit op zoekwoordonderzoek is gebaseerd.",
    "controle": "Is de titel/meta van /pages/ontdek-jouw-sport herschreven op basis van zoekwoordonderzoek?",
-   "gecontroleerd": "2026-10-14",
+   "gecontroleerd": "2026-10-15",
    "methode": "site",
    "uitkomst": "open"
   },

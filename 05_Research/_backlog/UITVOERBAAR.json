@@ -1847,6 +1847,72 @@
   "wat_claude_doet": "Conceptaanpassing in het werkthema: '3500+' teruugzetten naar '3000+' in header-group.json, de Over-ons-tijdlijnkop en de presets van gripsocks2-proof/sport-proof.",
   "wat_jij_doet": "Concept controleren en live zetten."
  },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#32375533": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen over Hogeschool Rotterdam als partnerlogo op de homepage"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Poppins 800 italic preloaden in snippets/fonts.liquid in het werkthema (testthema)",
+  "wat_jij_doet": "Controleren en live pushen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#410fff71": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen tussen de hero-kop- en CTA-varianten"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Entiteitsalinea en schema-description als conceptteksten gelijktrekken met het prototype",
+  "wat_jij_doet": "Teksten controleren en doorvoeren op de site/in het testthema"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#67b1ef30": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen of prototype richting B de basis wordt voor de homepage-bouw"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#8feddc9a": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen tussen 3500+ en 3000+ en dat vastleggen in het feitenbestand"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "App-embeds beperken tot product-/cartpaginas in het werkthema (testthema), na controle van de aigenblock-afhankelijkheid",
+  "wat_jij_doet": "Controleren en live pushen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#a8c78334": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een rugbyfotoshoot plannen en laten schieten"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ac100eca": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een nieuwe foto met alleen de drie founders laten maken"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ba9f7771": {
+  "beoordeeld": "2026-10-15",
+  "claude": "deels",
+  "wat_claude_doet": "De huidige voorraad van Performance Gripsokken 2.0 controleren en signaleren (nu overal negatief)",
+  "wat_jij_doet": "Besluiten of het keuzeblok toch naar 2.0 wijst of eerst voorraad aanvullen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#f6eea3ca": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen over Poppins 900 italic toevoegen of 800 italic houden"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
@@ -1883,17 +1949,35 @@
   "wat_claude_doet": "Meet INP via PageSpeed/CrUX (zodra de API aanstaat) en wijst zware scripts aan in een notitie.",
   "wat_jij_doet": "Aangewezen app of script uitzetten als dat nodig is."
  },
+ "backlog#3f65e547": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten (titel/meta) voor /en/pages/gripsokken-voor-voetbal in de vault",
+  "wat_jij_doet": "Teksten in Shopify plakken en publiceren"
+ },
  "backlog#42f6eb88": {
   "beoordeeld": "2026-10-11",
   "claude": "ja",
   "wat_claude_doet": "GA4/Shopify-data naast elkaar leggen en een advies voor de volgende CRO-test schrijven",
   "wat_jij_doet": "Advies beoordelen en de CRO-test plannen"
  },
+ "backlog#456f3072": {
+  "beoordeeld": "2026-10-15",
+  "claude": "deels",
+  "wat_claude_doet": "Een afwegingsnotitie over ChatGPT Ads (voor/tegen, kosteninschatting) in de vault",
+  "wat_jij_doet": "Het advertentiebudget vaststellen en het besluit nemen"
+ },
  "backlog#49691d90": {
   "beoordeeld": "2026-09-26",
   "claude": "ja",
   "wat_claude_doet": "Schrijft een meta description (max 155 tekens) voor /collections/all in _uitvoer.",
   "wat_jij_doet": "Tekst in Shopify admin bij de collectie plakken en opslaan."
+ },
+ "backlog#4eb5ed8e": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten (titel/meta) voor /en/products/performance-gripsokken in de vault",
+  "wat_jij_doet": "Teksten in Shopify plakken en publiceren"
  },
  "backlog#52886b90": {
   "beoordeeld": "2026-09-26",

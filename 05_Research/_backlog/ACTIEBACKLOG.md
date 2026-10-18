@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 18 oktober 2026 (actiecontrole)
+Laatst bijgewerkt: 18 oktober 2026 (growth-radar)
 Open: 24 · Afgerond: 8 (3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -244,6 +244,11 @@ Niet zelf samengevoegd — dat wijzigt koppen en dus actie-id's; ter beoordeling
 Toegang tot de dashboard-database werkte deze run wel (alle 7 collecties leeg, dus niets te importeren uit stap B).
 
 **11 okt 2026:** 27 open punten (backlog, `dubbel` niet meegeteld) — nog steeds boven de 15 uit de vuistregel. Twee P1-punten stonden al 26 dagen zonder beweging (sinds 15 sep, dus over de drieweken-grens): `/collections/all` zonder meta description is daarom verlaagd naar P2 (geen blokkade, gewoon geen prioriteit gebleken — zie het punt onder P2). Punt 2 (reviewapp koppelen) staat nog op P1 maar is nu expliciet als blokkade gemarkeerd: wacht op een menselijke keuze, niet op Claude-werk. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep, 4 okt) staan nog open, want nog niet samengevoegd:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
+- **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**18 okt 2026:** 27 open punten (backlog, `dubbel` niet meegeteld) — nog steeds boven de 15 uit de vuistregel, maar niet meer gestegen sinds 11 okt. Geen P1-punt staat al drie weken zonder beweging: alle vijf P1-punten (de twee regressiepunten, punt 1, punt 2, punt 4) zijn na 24 september bijgewerkt, de meeste nog op 12 of 14 oktober. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep, 4 okt, 11 okt) staan nog open, want nog niet samengevoegd:
 - **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
 - **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
 Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

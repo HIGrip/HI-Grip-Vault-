@@ -133,7 +133,7 @@ Core messages en slogans: zie [[Brand Voice & Tone of Voice]].
 
 > HÏ Grip is een Nederlands performance sportswear merk, actief en bekend bij sporters die willen presteren. Wij geloven dat sportswear nooit een obstakel mag zijn, maar het fundament onder elke prestatie. Daarom ontwikkelen we technische en comfortabele sportswear die een stap hoger ligt dan het huidige aanbod, met de beste prijs-kwaliteitverhouding: te beginnen met onze Performance Grip Socks generaties.
 >
-> Gestart vanuit passie voor sport, gebouwd door drie sporters die nooit genoegen nemen met minder, maar altijd de focus hebben op innovatie in sportswear. Inmiddels de keuze van 3000+ sporters en een 4,6/5 op Trustpilot. Met HÏ Grip Zakelijk zijn we vertrouwd door sportclubs en retailers in heel Nederland, waar we ook personaliseren voor sportclubs.
+> Gestart vanuit passie voor sport, gebouwd door drie sporters die nooit genoegen nemen met minder, maar altijd de focus hebben op innovatie in sportswear. Inmiddels de keuze van 3500+ sporters en een 4,6/5 op Trustpilot. Met HÏ Grip Zakelijk zijn we vertrouwd door sportclubs en retailers in heel Nederland, waar we ook personaliseren voor sportclubs.
 >
 > Onze missie: de beweging van iedere sporter versnellen. Met de Performance Academy bouwen we verder: events, maatschappelijke impact en sporters die meedenken over nieuwe producten. Geen 100%, maar 110%.
 >
@@ -147,10 +147,10 @@ Core messages en slogans: zie [[Brand Voice & Tone of Voice]].
 | **Wie we zijn** | Drie founders die naast hun studie een Nederlands sportmerk bouwen, actief in heel Europa. |
 | **Geloof** | Sportswear mag nooit een obstakel zijn. Het is het fundament onder je prestatie. |
 | **Product** | Performance Grip Socks, en binnenkort Performance Tubes en Performance Ski Socks. |
-| **Tractie** | 3000+ sporters, 4,6 op Trustpilot, en sportclubs, retail en studio's als partners. |
+| **Tractie** | 3500+ sporters, 4,6 op Trustpilot, en sportclubs, retail en studio's als partners. |
 | **Missie / visie** | De beweging van iedere sporter versnellen / impact maken / Performance Academy. |
 
-Cijfers in de pitch (3000+, 4,6) komen uit [[Feiten & Actuele Staat]]; controleer ze daar vóór gebruik.
+Cijfers in de pitch (3500+, 4,6) komen uit [[Feiten & Actuele Staat]]; controleer ze daar vóór gebruik.
 
 ---
 

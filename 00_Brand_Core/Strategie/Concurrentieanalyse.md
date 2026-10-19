@@ -66,7 +66,7 @@ Organische plek zonder video- en socialblokken; "–" = niet in de top ~40. Voor
 | Merk | Product | Prijs | Per paar | Verzending | Datum en bron |
 |---|---|---|---|---|---|
 | HÏ Grip | Performance Gripsokken 2.0 | € 17,95 | € 17,95 | € 4,50, gratis vanaf € 35, binnen 1 werkdag | 11-10-2026, productpagina-schema en [[Feiten & Actuele Staat]] |
-| HÏ Grip | Performance Gripsokken 1.0, 1 / 3 / 5 paar | € 14,95 / € 41,95 / € 64,95 | € 14,95 / € 13,98 / € 12,99 | idem | 11-10-2026, [[Feiten & Actuele Staat]] |
+| HÏ Grip | Performance Gripsokken 1.0, 1 / 3 / 5 paar | € 14,95 / € 35,95 / € 54,95 | € 14,95 / € 11,98 / € 10,99 | idem | 12-10-2026 (live bevestigd), [[Feiten & Actuele Staat]] |
 | FitSockr | Gripsokken One, 1 paar | € 19,95 | € 19,95 | Gratis vanaf € 35 (NL en BE), vóór 17:30 vandaag verzonden | 11-10-2026, fitsockr.nl productdata en verzendbeleid |
 | FitSockr | Gripsokken One, 3 paar | € 39,95 (doorgestreept € 60,00) | € 13,32 | idem | 11-10-2026, fitsockr.nl productpagina |
 | Proskary | Elite / Comfort | € 14,99 | € 14,99 | Altijd gratis (NL en BE), vóór 23:00 verzonden, retour 30 dagen op eigen kosten | 11-10-2026, proskary.nl product-JSON-LD en verzendpagina |

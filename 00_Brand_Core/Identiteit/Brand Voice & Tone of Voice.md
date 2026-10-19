@@ -18,18 +18,18 @@ bijgewerkt: 2026-10-01
 |---|---|---|
 | **Direct** | Geen wollige of twijfelende taal. Kort, sportief en to the point. | "Resultaat telt." |
 | **Energiek** | Vol energie, altijd vooruit, nooit vlak. | "Ga door waar anderen stoppen." |
-| **Social proof** | We laten zien dat sporters ons al vertrouwen. | "De keuze van 3000+ sporters." |
+| **Social proof** | We laten zien dat sporters ons al vertrouwen. | "De keuze van 3500+ sporters." |
 | **Nederlands + EN** | Nederlands als basis, met moderne woorden als performance, winning, on fire en play. | "On fire vandaag." |
 | **Sportief · modern · jong** | Fris en hip, herkenbaar voor de nieuwe generatie. | "Made for winning." |
 | **Ondersteunend · expertise** | We staan naast de sporter als kenner en coach. | "Wij leggen de basis, jij presteert." |
 
-Het sportersaantal (3000+) staat in [[Feiten & Actuele Staat]]; gebruik altijd het cijfer van daar.
+Het sportersaantal (3500+) staat in [[Feiten & Actuele Staat]]; gebruik altijd het cijfer van daar.
 
 ---
 
 ## Wél zo schrijven
 
-- "De keuze van 3000+ sporters."
+- "De keuze van 3500+ sporters."
 - "More grip, better performance."
 - "Ga door waar anderen stoppen."
 - "Wij leggen de basis, jij presteert."

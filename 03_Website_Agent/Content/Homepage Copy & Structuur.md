@@ -17,7 +17,7 @@ bijgewerkt: 2026-10-01
 1. Navigatie & taalkeuze
 2. Promotionele banner — "2+2 GRATIS", WK 2026-thema, tagline "Heel Nederland kijkt. Jij scoort dubbel.", CTA "Scoor nu je 2+2→"
 3. Hoe het werkt (3 stappen)
-4. Productvoordelen & Trustpilot 4,5/5
+4. Productvoordelen & Trustpilot 4,6 ★
 5. Prijsopbouw (stand van de eerste baseline, **verouderd**: de actuele prijzen en verzendregels staan in [[Feiten & Actuele Staat]])
 6. Kernwaarden: Comfort, Vertrouwen, Innovatie (de merk-driehoek — zie [[Logo & Kleurenpalet]])
 7. "Ons verhaal" teaser
@@ -37,7 +37,7 @@ bijgewerkt: 2026-10-01
 Homepage opent goed op Systeem 1: actie/promotie, tagline, visuele banner — vóór er specificaties komen. Dat is de juiste volgorde. Kernwaarden-sectie (Comfort/Vertrouwen/Innovatie) en FAQ met wetenschappelijke bronnen bedienen Systeem 2 verderop — ook correct gepositioneerd (later in de pagina, ná de emotionele hook).
 
 **Cialdini — aanwezig**
-- *Sociale bewijskracht*: Trustpilot 4,5/5, klantenaantal-claim, partner-logo's
+- *Sociale bewijskracht*: Trustpilot 4,6 ★, klantenaantal-claim, partner-logo's
 - *Schaarste*: actie loopt af (WK-finale periode), countdown-achtige framing
 - *Autoriteit*: wetenschappelijke bronnen in FAQ (3 citaties)
 - *Eenheid*: #TEAMHÏGRIP, "Team HÏ Grip"-sectie

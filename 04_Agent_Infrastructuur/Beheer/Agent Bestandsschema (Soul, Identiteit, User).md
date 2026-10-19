@@ -90,7 +90,7 @@ Ligt op `04_Agent_Infrastructuur/Beheer/user.md`. Bevat: Lars, HÏ Grip in het k
 |---|---|---|---|
 | Denzel (Orchestrator) | Ingevuld, naam vastgesteld | Concept-versie, autonomie nog te bevestigen | Gedeeld — zie Beheer |
 | Website Agent | Ingevuld incl. 5 sub-agents (gecategoriseerd) | Grotendeels ingevuld — overgenomen uit [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]] | Gedeeld — zie Beheer |
-| Content Agent | Ingevuld incl. 3 sub-agents (gecategoriseerd) | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen | Gedeeld — zie Beheer |
+| Content Agent | Ingevuld incl. 5 sub-agents (gecategoriseerd) | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen | Gedeeld — zie Beheer |
 | Partnership Agent | Ingevuld incl. 3 sub-agents (gecategoriseerd) | Autonomie-tabel nog leeg — grenzen-formulier nog niet doorlopen; technische guardrails (IG-zoekscript) wel al bekend | Gedeeld — zie Beheer |
 
 ## Openstaand

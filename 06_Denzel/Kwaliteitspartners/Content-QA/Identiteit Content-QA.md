@@ -7,7 +7,7 @@ status: concept — ter beoordeling door Lars
 
 # Identiteit — Content-QA
 
-> Sub-agent van [[Identiteit Denzel]]. Toetst het werk van de Content Agent en zijn drie sub-agents. Dit bestand is de enige bron van waarheid voor deze agent. Gedeelde basis: [[Toetsregels]]. Domeinlijst: [[Toetslijst Content-QA]]. Werklog: [[Werkplek Content-QA]].
+> Sub-agent van [[Identiteit Denzel]]. Toetst het werk van de Content Agent en zijn vijf sub-agents. Dit bestand is de enige bron van waarheid voor deze agent. Gedeelde basis: [[Toetsregels]]. Domeinlijst: [[Toetslijst Content-QA]]. Werklog: [[Werkplek Content-QA]].
 
 ## Model & Tools
 

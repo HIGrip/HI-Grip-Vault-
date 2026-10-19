@@ -42,6 +42,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Evaluatiecriteria]]
 - [[Influencer Database]]
 - [[Zoek Script & Gids]]
+- [[Zoek Script — broncode (back-up)]]
 
 ### Strategie
 - [[Aanpak]]

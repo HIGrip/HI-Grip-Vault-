@@ -30,7 +30,7 @@ bijgewerkt: 2026-10-01
 10. Werkt [[Agent Werk & Kwaliteit Overzicht]] bij.
 11. Commit + push naar de vault-repo.
 
-**Nooit door de routine:** outreach versturen, content publiceren, voorwaarden/prijzen bespreken of toezeggen, of iets anders dat in een hoofdagent's soul.md boven "Zelf doen" staat. De routine rapporteert en doet uitsluitend het onderzoekswerk dat al "Zelf doen" is — de beslissing/actie erop blijft bij lars.
+**Nooit door de routine:** outreach versturen, content publiceren, voorwaarden/prijzen bespreken of toezeggen, of iets anders dat in een hoofdagent's Soul-bestand ([[Soul Website Agent]], [[Soul Content Agent]], [[Soul Partnership Agent]]) boven "Zelf doen" staat. De routine rapporteert en doet uitsluitend het onderzoekswerk dat al "Zelf doen" is — de beslissing/actie erop blijft bij lars.
 
 **Wijziging 24 augustus 2026 (op verzoek van lars):** het eerste weekoverzicht toonde alleen wat er gedaan was, niet wat er nog moet gebeuren. De sectie "Vooruitblik — komende week" is daarom een vast, verplicht onderdeel geworden vanaf de volgende run (31 augustus 2026). De routine leest voortaan ook het weekoverzicht van de vorige week, zodat de vooruitblik van toen kan worden meegenomen bij het bepalen van wat er deze week is gebeurd.
 

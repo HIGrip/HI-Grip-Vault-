@@ -84,7 +84,7 @@ Onafhankelijk toetsen: toets het resultaat en niet de samenvatting, eis bewijs, 
 ## Kernbronnen in de vault
 
 - [[Feiten & Actuele Staat]], [[Brand Voice & Tone of Voice]], [[Technische Procedures]]
-- `soul.md` van de Website Agent en [[Agent Takenverdeling & Grenzen]]
+- [[Soul Website Agent]] en [[Agent Takenverdeling & Grenzen]]
 - [[Leerregels per Agent]] (secties Website en "Voor alle agents")
 - [[SEO Strategie & Keywords]]
 

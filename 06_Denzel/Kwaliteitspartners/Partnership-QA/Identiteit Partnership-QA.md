@@ -86,7 +86,7 @@ Onafhankelijk toetsen en steekproeven: [[Vaktheorie Denzel]], sectie 3 en 4.
 
 - [[Evaluatiecriteria (B2B Klanten)]], [[Ideale Partner Profiel]]
 - [[Influencer Database]], [[Pipeline Tracker]]
-- `soul.md` van de Partnership Agent en [[Agent Takenverdeling & Grenzen — Partnership Agent]]
+- [[Soul Partnership Agent]] en [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - [[Leerregels per Agent]] (sectie Partnership en "Voor alle agents")
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

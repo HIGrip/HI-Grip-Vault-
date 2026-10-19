@@ -44,7 +44,7 @@
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
 - [[user]] — gedeeld: wie de founders (Lars, Timo, Tigo) en HÏ Grip zijn
 - [[Stappenplan — Verdere Bouw]] — wat er nog gebouwd wordt · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
-- Agent-profielen — wie (`identiteit`) + gedrag (`soul`):
+- Agent-profielen — wie (Identiteit-bestand) + gedrag (Soul-bestand):
     - Content Agent: [[Identiteit Content Agent|identiteit]] · [[Soul Content Agent|soul]]
     - Partnership Agent: [[Identiteit Partnership Agent|identiteit]] · [[Soul Partnership Agent|soul]]
     - Website Agent: [[Identiteit Website Agent|identiteit]] · [[Soul Website Agent|soul]]

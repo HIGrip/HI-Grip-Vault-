@@ -29,7 +29,7 @@ Een onafhankelijke, vaste toetser per domein. Hij ziet alleen het resultaat, de 
 | 1 | **Feiten.** Elk getal, elke prijs, claim, URL, handle of beleidsregel staat in het feitenbestand. Wat niet te onderbouwen is, is gemarkeerd als **[LARS]** of weggelaten | [[Feiten & Actuele Staat]] |
 | 2 | **Merk.** HÏ Grip met trema in lopende tekst (in URL's en handles zonder). Je/jij, nooit u. Geen AI-openers ("Zeker!", "Natuurlijk!") en geen vulwoorden ("geweldig", "fantastisch"). Performance eerst, claims uit het feitenbestand | [[Brand Voice & Tone of Voice]] |
 | 3 | **Harde grenzen.** Niets naar het live thema gepusht. Geen prijzen, kortingen, voorraad, bestellingen of checkout aangepast. Geen verzonnen reviews, klantquotes, cijfers of keurmerken. Geen persoonsgegevens van klanten. Niets verstuurd of gepubliceerd namens HÏ Grip | `CLAUDE.md` sectie 5 |
-| 4 | **Niveau.** Is het een voorstel waar het een voorstel hoort te zijn? Is een "Altijd overleg vooraf"-onderdeel niet als uitgevoerd gepresenteerd? | `soul.md` van de hoofdagent, [[Agent Takenverdeling & Grenzen]] |
+| 4 | **Niveau.** Is het een voorstel waar het een voorstel hoort te zijn? Is een "Altijd overleg vooraf"-onderdeel niet als uitgevoerd gepresenteerd? | de Soul van de hoofdagent ([[Soul Website Agent]], [[Soul Content Agent]] of [[Soul Partnership Agent]]) en [[Agent Takenverdeling & Grenzen]] |
 | 5 | **Succescriteria.** Is elk criterium gehaald en waaruit blijkt dat? | Briefing |
 | 6 | **Zelfcheck van de maker.** Staat er een zelfcheck met ✅ / ⚠️ / ❌ en bewijs? Geen zelfcheck is een bevinding | [[Opdrachtprotocol]] stap 4 |
 | 7 | **Strategie.** Past het bij de kernsporten tennis/padel, voetbal en rugby, en bij het Canva-document *MERK & STRATEGIE*? | [[Strategische Keuzes]] |

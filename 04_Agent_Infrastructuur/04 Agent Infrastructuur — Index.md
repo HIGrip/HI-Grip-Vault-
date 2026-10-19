@@ -41,6 +41,9 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Week 2026-09-07]]
 - [[Week 2026-09-14]]
 
+### Beheer/_archief
+- [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]
+
 ### Content Agent
 - [[Content Pillars — Buffer-tags]]
 - [[Identiteit Content Agent]]

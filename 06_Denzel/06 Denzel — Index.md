@@ -9,7 +9,7 @@ status: concept — besluiten van Lars van 12-10-2026 verwerkt
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
 
-> Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**, plus zijn vijf eigen sub-agents. Dit is voor Denzel wat `identiteit`, `soul` en `Werkplek` voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
+> Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**, plus zijn vijf eigen sub-agents. Dit is voor Denzel wat de bestanden Identiteit, Soul en Werkplek voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
 
 ## Verschil met 04_Agent_Infrastructuur
 
@@ -106,3 +106,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Vooruitblik
 - [[Identiteit Vooruitblik-agent]]
 - [[Werkplek Vooruitblik-agent]]
+
+### _archief
+- [[Huidig gebruik van Denzel (Claude Code-tijd)]]

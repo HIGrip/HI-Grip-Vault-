@@ -6,10 +6,10 @@ datum: 2026-10-12
 bron: routine
 routine: "denzel-week"
 categorie: Merk
-status: nieuw
+status: gearchiveerd
 prioriteit: P2
 samenvatting: "De actiecontrole draait weer (na stilstand sinds 26-9) en heeft deze week ruim 20 punten bevestigd, waaronder de twee /en/-fixes die vorige week nog 'lijkt opgelost' heetten — dat is nu hard bevestigd. Belangrijker voor de koers: de P1-koersbepaling van 11-10 (B2B levert 83% van de omzet maar outreach staat al 12 dagen stil) en het content-voorstel van 05-10 wachten allebei nog op een besluit van Lars."
-gerelateerd: [2026-10-05-weekoverzicht, 2026-10-12-regressiecheck, 2026-10-08-search-console, 2026-10-05-seo-conversietest-run-3, 2026-10-11-omzetgroei-koersbepaling, 2026-10-11-seo-audit-weekdelta]
+gerelateerd: [2026-10-05-weekoverzicht, 2026-10-12-regressiecheck, 2026-10-08-search-console, 2026-10-05-seo-conversietest-run-3, 2026-10-11-omzetgroei-koersbepaling, 2026-10-11-seo-audit-weekdelta, 2026-10-19-weekoverzicht]
 vervangt: [2026-10-05-weekoverzicht]
 bronbestand: ""
 deadline: ""

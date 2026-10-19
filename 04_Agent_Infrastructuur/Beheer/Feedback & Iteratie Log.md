@@ -10,6 +10,16 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-10-19 — `google_data.py` faalt onder `python`/`python3` in de cloudomgeving, werkt onder `python3.13`
+
+**Wat er gebeurde:** zowel de Search Console-routine (14-10) als de regressiecheck (19-10) kregen bij het draaien van `05_Research/_tools/google_data.py` eerst een `ModuleNotFoundError` voor de Google-pakketten (`google`, `googleapiclient`) onder het systeem-`python`/`python3` (versie 3.11). De benodigde pakketten stonden allebei keren wél geïnstalleerd, maar onder het aparte systeem-`python3.13`. Beide routines losten het zelf op door het script met `python3.13` aan te roepen in plaats van `python`/`python3` — geen herinstallatie nodig — maar deden dat onafhankelijk van elkaar, twee keer dezelfde uitzoek-omweg.
+
+**Les:** in deze cloudomgeving heeft `python3.13` de Google-koppelingspakketten, niet het standaard `python3`-interpreter. Elke routine die `google_data.py` aanroept, kan dit vooraf vastleggen in plaats van het bij een fout te herontdekken.
+
+**Toegepast:** de instructie "draai `05_Research/_tools/google_data.py` met `python3.13`, niet `python`/`python3`, in de cloudomgeving" toegevoegd aan dit log zodat een volgende routine (seo-regressiecheck, search-console, denzel-week, growth-radar) hem hier kan vinden vóór het eerste `ModuleNotFoundError`. Niet in de routine-bestanden zelf hardcoded, want een lokale sessie (Lars/Tigo/Timo) heeft mogelijk een ander interpreterpad.
+
+---
+
 ## 2026-10-05 — Realiteitschecks met Lars landen niet automatisch in `CONTROLE.json`
 
 **Wat er gebeurde:** bij het schrijven van het weekoverzicht van 05-10 bleek dat de title/meta- en structured-data-fixes die op 30-09 al "Opgelost" gemeld stonden in [[Agent Werk & Kwaliteit Overzicht]], nergens in `CONTROLE.json` als `gedaan` stonden. Die bevestiging liep via een directe realiteitscheck met Lars in een sessie, niet via de dagelijkse actiecontrole-routine. Het weekoverzicht leest voor de sectie "Afgevinkt door de actiecontrole deze week" uitsluitend `CONTROLE.json` (zie stap 3 van de routine) — zonder de extra check op het kwaliteitsdashboard was dit bijna opnieuw als open/geëscaleerd gemeld, vier weken nadat het al was opgelost.
@@ -167,7 +177,7 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
-- [[2026-10-12-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-12 (/en/-fixes bevestigd, B2B-outreach staat al 12 dagen stil)
+- [[2026-10-19-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-19 (nieuwe SEO-fouten, homepage-herontwerp en B2B-koers wachten op Lars)
 - [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
 - [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
 

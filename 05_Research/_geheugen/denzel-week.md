@@ -22,3 +22,7 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-10-12 | content | Content-voorstel 05-10 nog niet beoordeeld (1 week) — stapelrem hield stand, geen nieuw voorstel | 2026-10-12-weekoverzicht
 2026-10-12 | partnerships | Beide kandidatenlijsten 7 dagen oud, alle kandidaten al beoordeeld — geen zoekactie nodig; outreach-besluit blijft "voorlopig niet" maar koersbepaling 11-10 vraagt expliciet om heroverweging | 2026-10-12-weekoverzicht
 2026-10-12 | koers | B2B-koersbepaling van 11-10 (83% van de omzet uit B2B, outreach stil sinds 30-09) staat nog open bij Lars — belangrijkste besluit van de maand | 2026-10-12-weekoverzicht
+2026-10-19 | website | Regressiecheck 19-10: 2 nieuwe P1's (dubbele H1 rugbypagina, titel/meta terugbetalingsbeleid — fix uitgeschreven); verzend-/retourconsolidatie bijna rond (alleen 2 oude /policies/*-pagina's resten); omzet hoogste van 5 weken (€195,88) bij dalende sessies | 2026-10-19-weekoverzicht
+2026-10-19 | partnerships | Beide kandidatenlijsten ongewijzigd, alles al beoordeeld — geen zoekactie nodig; B2B-outreach-besluit (koersbepaling 11-10) nu 8 dagen open | 2026-10-19-weekoverzicht
+2026-10-19 | content | Content-voorstel 05-10 nog niet beoordeeld, nu 2 weken open — stapelrem houdt stand tot 26-10 | 2026-10-19-weekoverzicht
+2026-10-19 | koers | Nieuw groot besluit erbij: homepage-herontwerp-prototype (richting B, 14-10) wacht op bouwbesluit Lars, naast B2B-outreach en content-voorstel 05-10 | 2026-10-19-weekoverzicht

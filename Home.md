@@ -1,4 +1,4 @@
-# Home — HÏ Grip Vault
+3# Home — HÏ Grip Vault
 
 > **Fundament: [[00 Brand Core]]** — elke notitie verwijst daarnaar terug.
 >

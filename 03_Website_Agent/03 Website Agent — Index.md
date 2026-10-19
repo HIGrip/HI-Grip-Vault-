@@ -60,6 +60,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### E-mail Marketing/Stijl
 - [[E-mail Design & Stijlgids]]
 - [[E-mail Mailflows Artifact]]
+- [[E-mail Review-verzoek Template]]
 
 ### E-mail Marketing/Strategie
 - [[E-mail Lijst Strategie]]

@@ -5,14 +5,26 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 19 oktober 2026 (actiecontrole)
-Open: 24 · Afgerond: 8 (3 dubbel, zie dashboard)
+Laatst bijgewerkt: 19 oktober 2026 (seo-regressiecheck)
+Open: 27 · Afgerond: 8 (3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
 ---
 
 ## P1 — Deze week
+
+### [ ] [regressie] `/pages/gripsokken-voor-rugby` heeft twee H1-tags (nieuw 19 okt 2026)
+**Waarom:** Precies één `<h1>` per pagina is een vaste regel in de regressiecheck en is al eerder geschonden (de EN-homepage, 28 sep 2026, inmiddels opgelost). De nieuwe sportpagina `/pages/gripsokken-voor-rugby` (deze week voor het eerst in de sitemap) heeft nu zelf twee `<h1>`-tags: een los tekstblok bovenaan met `<h1>Gripsokken voor rugby</h1>` (de omringende div-klasse suggereert zelf "h2") plus de eigen `<h1 class="sl-hero__title">` van de hero-sectie eronder. Op de drie bestaande sportpagina's (padel, tennis, voetbal) ontbreekt dit bovenste blok of rendert het op een lager niveau: daar is alleen de hero-h1 aanwezig.
+**Waar:** `/pages/gripsokken-voor-rugby` — het tekstblok direct boven de hero-sectie
+**Wat:** Het heading-niveau van dat tekstblok van `h1` naar `h2` zetten (of het blok verwijderen als het een duplicaat is van de hero-titel), zodat net als bij de andere drie sportpagina's precies één `<h1>` overblijft.
+**Gevonden op:** 19 oktober 2026 (regressiecheck)
+
+### [ ] [regressie] `/pages/terugbetalingsbeleid` heeft titel "American Express" en geen meta description (nieuw 19 okt 2026)
+**Waarom:** De pagina `/pages/terugbetalingsbeleid` (sinds deze week in de sitemap) gaat over het betalingsbeleid (H1: "Betalingsbeleid", met uitleg over betaalmethodes), maar de `<title>` die Google en browsers tonen is simpelweg "American Express" — een betaalmethode, geen paginatitel — en er is helemaal geen meta description. Dat is zowel verwarrend (het lijkt een American Express-pagina) als een gemiste SEO-kans.
+**Waar:** `/pages/terugbetalingsbeleid` — SEO-titel en meta description via Shopify admin
+**Wat:** Titel vervangen door iets herkenbaars zoals "Betalingsbeleid – HÏ Grip" en een meta description toevoegen die de beschikbare betaalmethodes samenvat.
+**Gevonden op:** 19 oktober 2026 (regressiecheck)
 
 ### [ ] [regressie] Nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude beleidspagina's tegen (nieuw 28 sep 2026)
 **Waarom:** Deze week verschenen drie nieuwe pagina's (`/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`) die het besluit van Lars van 25 sep lijken te verwerken, maar dat nog niet volledig doen: `/pages/verzendbeleid` noemt nergens de verzendkosten (€4,50) of de gratis-verzenddrempel (€35); `/pages/retourbeleid` heeft de termijn wel naar 30 dagen gecorrigeerd, maar rekent nog steeds 25% herbevoorradingskosten en eist het product "ongeopend" terug — in strijd met de geest van het besluit en met het juridische risico dat al in de Compliance To-Do Lijst §4.2 staat. Tegelijk bestaan `/policies/refund-policy` (14 dagen, 25%), `/policies/shipping-policy` ("vóór 16:00") en `/policies/terms-of-service` (€4,25) gewoon door met de oude waarden: er zijn nu twee parallelle bronnen voor dezelfde informatie. De vervallen homepage-belofte "vóór 22:00 vandaag verzonden" staat via een gedeelde metafield ook op meerdere van deze pagina's.
@@ -21,11 +33,13 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Gevonden op:** 28 september 2026 (regressiecheck)
 
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** in het werkthema zijn alle thema-teksten al "binnen 1 werkdag verzonden" (sport-hero, sport-proof, shop-intro, padel-onderdelen, rugby-template) en staat `page.json` op 30 dagen retour; live nog niet. Het Shopify-beleid zelf loopt via `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`.
+**Update 19 okt 2026 (regressiecheck):** grote voortgang, live. `/pages/verzendbeleid` noemt nu €4,50 en de €35-drempel; `/pages/retourbeleid` heeft geen 25%-herbevoorradingskosten en geen "ongeopend"-eis meer; `/policies/terms-of-service` toont nu ook €4,50. **Nog open:** `/policies/shipping-policy` zegt nog "vóór 16:00" (niet "binnen 1 werkdag"); `/policies/refund-policy` zegt nog "14 dagen" + 25% herbevoorradingskosten. Alleen deze twee oude `/policies/*`-pagina's resten nog.
 ### [ ] [regressie] SEO-schema-thema-wijzigingen gedeeltelijk gepusht, nog niet compleet (bijgewerkt 21 sep 2026)
 **Waarom:** Sinds 15 september is een deel van `hi-seo-schema.liquid` kennelijk live gezet: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina — niet op de productpagina, beide collectiepagina's of de blogpagina's. `ItemList` ontbreekt nog op beide collectiepagina's. `FAQPage` ontbreekt nog op de productpagina (de herschreven `product-schema.liquid` lijkt niet meegenomen). `/pages/gripsokken-voetbal` geeft nog steeds 404.
 **Waar:** `C:\Users\Test\higrip-theme` → Shopify test-thema 194761425223
 **Wat:** Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`.
 **Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)
+**Update 19 okt 2026 (regressiecheck):** live, `WebSite` staat nu op alle vier sportpagina's (padel, tennis, voetbal, rugby) naast homepage en `/en/`; ontbreekt nog op de collectie, de drie productpagina's en beide blogindexen. `ItemList` ontbreekt nog op de collectie. `FAQPage` ontbreekt nog op de drie productpagina's — wel inmiddels aanwezig op homepage en `/en/` (nieuw, lost dit punt niet op). De typo-handle `/pages/gripsokken-voetbal` (zonder "voor") geeft nog steeds 404; de echte sportpagina `/pages/gripsokken-voor-voetbal` bestaat en werkt prima.
 
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
 **Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
@@ -63,6 +77,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 ---
 
 ## P2 — Deze maand
+
+### [ ] [regressie] `/blogs/intern` staat publiek en zonder noindex in de sitemap (nieuw 19 okt 2026)
+**Waarom:** Sinds deze week staat `/blogs/intern` (titel "INTERN") in `sitemap_blogs_1.xml` en is hij publiek bereikbaar (HTTP 200, geen `noindex`-meta). De blog bevat nog geen artikelen, maar een blogindex met die naam lijkt bedoeld als intern werkblad en hoort niet voor Google en bezoekers open te staan.
+**Waar:** `/blogs/intern` — Shopify admin, blog-instellingen
+**Wat:** Nagaan of deze blog bedoeld is als publiek kanaal. Zo niet: op niet-gepubliceerd zetten of een `noindex`-meta toevoegen, zodat hij uit de sitemap en index verdwijnt.
+**Gevonden op:** 19 oktober 2026 (regressiecheck)
 
 ### [ ] [regressie] `/collections/all` heeft geen meta description
 **Waarom:** Lege `<meta name="description">` — al genoteerd in de audit van 15 september, nog niet opgelost.

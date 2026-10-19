@@ -48,3 +48,5 @@ Syntax is overgenomen uit de bestaande mailflows en **nog niet bevestigd voor Se
 4. **Merge-tag-syntax** SendWILL bevestigen en **UTM's** (`utm_source=email`, `utm_medium=email`, `utm_campaign=review`) op `{{review_url}}`.
 5. **Productnaam in de kop:** komt de tag als "PERFORMANCE GRIP SOCKS" of "PERFORMANCE GRIPSOKKEN"? Communicatie gebruikt de eerste, de webshop de tweede.
 6. **Niet getest** in echte mailclients (Gmail dark mode, Outlook). Alleen gerenderd in Chrome.
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

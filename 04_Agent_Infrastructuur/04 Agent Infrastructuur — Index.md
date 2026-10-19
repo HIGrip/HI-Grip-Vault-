@@ -94,6 +94,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Materialen & productie]]
 - [[04_Agent_Infrastructuur/Routines/Productradar|Routines/Productradar]]
 - [[04_Agent_Infrastructuur/Routines/README|Routines/README]]
+- [[Routine-basisregels]]
 - [[SEO- en conversietest]]
 - [[04_Agent_Infrastructuur/Routines/SEO-regressiecheck|Routines/SEO-regressiecheck]]
 - [[Search Console & rankings]]

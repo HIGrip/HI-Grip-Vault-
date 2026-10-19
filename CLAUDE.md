@@ -60,7 +60,7 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
 
 ## 7. Regels voor routines
 
-1. Lees eerst: dit bestand → het feitenbestand → je eigen geheugenbestand in `05_Research/_geheugen/` → de backlog.
+1. Lees eerst: dit bestand → `04_Agent_Infrastructuur/Routines/Routine-basisregels.md` (tokens en veiligheid, verplicht) → het feitenbestand (gericht zoeken) → je eigen geheugenbestand in `05_Research/_geheugen/` → de backlog (zoeken op je onderwerp of `acties.py open`, nooit volledig lezen).
 2. **Alleen nieuwe punten**, tenzij een oud punt veranderd of verlopen is. Dan werk je het bestaande punt bij in plaats van een nieuw punt te maken.
 3. Blijf binnen je rol (zie de rolverdeling in `04_Agent_Infrastructuur/Routines/README.md`). Controleer niet wat een andere routine al controleert.
 4. Lukt iets niet (geen toegang, tool faalt)? Stop niet. Noteer het, ga door met wat wel kan en meld het in je notitie.

@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Een volledig nieuw homepage-prototype (richting B Doorgaan, gekozen door Lars) zet H1 met claim, bronregel, prijs en CTA in de bovenste 400 px op 375 px, toont vier sportmomenten inclusief rugby en het gripbewijs 1,17 als groot getal, met 4,3 KB eigen JS en 6.446 px lengte. Voor de bouw moeten eerst het sportersaantal, het font en de app-JS-opruiming beslist worden."
-gerelateerd: [2026-10-13-homepage-redesign, 2026-10-07-missie-visie-pagina, 2026-10-12-werkthema-vs-live, 2026-10-08-growth-radar-cro, 2026-09-21-beachhead-rugby, 2026-10-07-shoppagina-keuzepagina, 2026-10-15-growth-radar-cro]
+gerelateerd: [2026-10-13-homepage-redesign, 2026-10-07-missie-visie-pagina, 2026-10-12-werkthema-vs-live, 2026-10-08-growth-radar-cro, 2026-09-21-beachhead-rugby, 2026-10-07-shoppagina-keuzepagina, 2026-10-15-growth-radar-cro, 2026-10-19-productpagina-2-0-inspiratie-en-prototype]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/BMpbfMzvEP5NnjS3TVuVLy"
 deadline: ""

@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 19 oktober 2026 (seo-regressiecheck)
-Open: 27 · Afgerond: 8 (3 dubbel, zie dashboard)
+Laatst bijgewerkt: 19 oktober 2026 (seo-conversietest)
+Open: 28 · Afgerond: 8 (3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -72,11 +72,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
 **Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
 **Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.
+**Update 19 okt 2026 (seo-conversietest, auditblok B):** concrete invulling klaar, niet live gezet. Voor de zes 2.0-varianten is een ondubbelzinnige GTIN-koppeling te maken uit de EAN-lijst in [[Performance Grip Socks 2.0]]: PGSZ201→9110024809242, PGSZ202→9110024809259, PGSZ203→9110024809266, PGSW201→9110024809211, PGSW202→9110024809228, PGSW203→9110024809235. Voor de 1.0-varianten (GS110, GS100) staat geen EAN in het bronbestand — blijft `[CHECK]`. Voorgestelde `productType` voor alle drie producten: "Sportsokken". Volledig mutatievoorstel (met `validate_graphql_codeblocks`-controle) in het Shopify-logboek `seo-routine-logboek`, RUN 5 — nog niet uitgevoerd, vereist een go van Lars.
 **Inspanning:** 2 uur
 
 ---
 
 ## P2 — Deze maand
+
+### [ ] [conversietest] Productbeschrijvingen 1.0 en 2.0 missen padel/tennis/rugby en bevatten een storende `<code>`-tag (nieuw 19 okt 2026)
+**Waarom:** Geen van de drie productbeschrijvingen noemt alle kernsporten. De 1.0-beschrijving noemt "padel, voetbal, hockey, fitness en meer" (tennis en rugby ontbreken uit de opsomming); de 2.0-beschrijving (zwart én wit) noemt alleen "tennis, basketbal, fitness en pilates" — padel (de grootste beachhead) en rugby (sinds deze week een eigen sportpagina) ontbreken volledig. Daarnaast staat er, al sinds de nulmeting van 23 sep gesignaleerd maar nooit als apart punt vastgelegd, nog steeds een `<code>`-tag in de 2.0-beschrijving rond "Voetbalsokken met grip, ook perfect voor tennis, basketbal, fitness en pilates" — dat tag rendert doorgaans in een monospace-fallbackfont, in strijd met de harde merkregel "alleen Poppins" (CLAUDE.md §4).
+**Waar:** Shopify admin → productbeschrijving van Performance Gripsokken (1.0), Performance Gripsokken 2.0 Zwart en 2.0 Wit
+**Wat:** 1.0: "Geschikt voor padel, voetbal, hockey, fitness en meer" → "Geschikt voor padel, voetbal, tennis, rugby, hockey, fitness en meer". 2.0 (zwart én wit): `<code>`-tag verwijderen en de zin aanvullen tot "Gripsok met grip, ook perfect voor padel, tennis, rugby, basketbal, fitness en pilates". Volledige voor/na-HTML in het Shopify-logboek `seo-routine-logboek`, RUN 5.
+**Gevonden op:** 19 oktober 2026 (SEO- en conversietest, auditblok B)
 
 ### [ ] [regressie] `/blogs/intern` staat publiek en zonder noindex in de sitemap (nieuw 19 okt 2026)
 **Waarom:** Sinds deze week staat `/blogs/intern` (titel "INTERN") in `sitemap_blogs_1.xml` en is hij publiek bereikbaar (HTTP 200, geen `noindex`-meta). De blog bevat nog geen artikelen, maar een blogindex met die naam lijkt bedoeld als intern werkblad en hoort niet voor Google en bezoekers open te staan.

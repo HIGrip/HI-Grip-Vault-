@@ -10,11 +10,11 @@ status: concept — ter goedkeuring door Lars
 
 ## Drie lagen
 
-| Laag | Wat | Wie mag wijzigen |
-|---|---|---|
-| **1 Bron** | Wat van buiten komt: exports, rapporten, pdf's, audit-ruwdata (`05_Research/*/raw`, bijlagen, `.xlsx`, afbeeldingen) | Alleen toevoegen, nooit aanpassen |
-| **2 Wiki** | Kennis en systeem: `00` t/m `06`, onderzoek in `05_Research` | Agents, via de procedure en de rechten in hun Identiteit |
-| **3 Schema** | Dit bestand + `CLAUDE.md` | Alleen Lars |
+| Laag         | Wat                                                                                                                  | Wie mag wijzigen                                         |
+| ------------ | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| **1 Bron**   | Wat van buiten komt: exports, rapporten, pdf's, audit-ruwdata (`05_Research/*/raw`, bijlagen, `.xlsx`, afbeeldingen) | Alleen toevoegen, nooit aanpassen                        |
+| **2 Wiki**   | Kennis en systeem: `00` t/m `06`, onderzoek in `05_Research`                                                         | Agents, via de procedure en de rechten in hun Identiteit |
+| **3 Schema** | Dit bestand + `CLAUDE.md`                                                                                            | Alleen Lars                                              |
 
 ## Waar staat wat
 

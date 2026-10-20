@@ -148,3 +148,4 @@ Gerichte websearch deze week leverde niets op dat de datumtoets doorstaat: zoeko
 - Websearch AI-ontwikkelingen: Shopify/e-commerce AI-tools, GEO-nieuws, Buffer/TikTok/Instagram AI-features (19 oktober 2026, geen harde oktober-vondst)
 
 ## Aantekeningen
+- **lars · 2026-10-19 08:45** — Blijft ongewijzigd open: schema gedeeltelijk (WebSite ontbreekt op de collectie, de drie productpagina's en beide blogindexen; FAQPage ontbreekt op de drie productpagina's); redirect-keten hi-grip-gripsokken-1 nog 2 stappen; /collections/all zonder meta description; /collections/frontpage directe 404; typo-handle /pages/gripsokken-voetbal 404; sporters-claim NL-homepage/collectie nog 3000+ tegen EN al 3500+ (fix staat al klaar in Los onderzoek 36 · Verkeer groeit hard, maar op de site is in een week bijna niets opgelost); nieuw gesignaleerd door de regressiecheck: /blogs/intern staat publiek zonder noindex (P2). dit klopt allemaal niet kijk maar in de live thema

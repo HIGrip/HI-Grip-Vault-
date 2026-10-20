@@ -1,23 +1,9 @@
 {
- "bijgewerkt": "2026-10-19T05:10:52+02:00",
+ "bijgewerkt": "2026-10-20T05:16:07+02:00",
  "status": "ok",
  "fouten": {},
- "gsc_laatste_dag": "2026-10-16",
+ "gsc_laatste_dag": "2026-10-17",
  "weken": [
-  {
-   "week": "2026-W31",
-   "start": "2026-07-27",
-   "sessies": 0,
-   "sessies_nl": 0,
-   "gebruikers": 0,
-   "aankopen": 0,
-   "omzet": 0.0,
-   "conversie": 0.0,
-   "gsc_klikken": 11,
-   "gsc_vertoningen": 346,
-   "gsc_ctr": 3.18,
-   "gsc_positie": 13.9
-  },
   {
    "week": "2026-W32",
    "start": "2026-08-03",
@@ -161,27 +147,36 @@
   {
    "week": "2026-W42",
    "start": "2026-10-12",
-   "sessies": 82,
-   "sessies_nl": 58,
+   "sessies": 83,
+   "sessies_nl": 59,
    "gebruikers": 65,
    "aankopen": 3,
    "omzet": 170.75,
-   "conversie": 3.66,
-   "gsc_klikken": 31,
-   "gsc_vertoningen": 923,
-   "gsc_ctr": 3.36,
-   "gsc_positie": 8.0
+   "conversie": 3.61,
+   "gsc_klikken": 33,
+   "gsc_vertoningen": 1044,
+   "gsc_ctr": 3.16,
+   "gsc_positie": 8.3
+  },
+  {
+   "week": "2026-W43",
+   "start": "2026-10-19",
+   "sessies": 3,
+   "sessies_nl": 3,
+   "gebruikers": 3,
+   "aankopen": 0,
+   "omzet": 0.0,
+   "conversie": 0.0,
+   "gsc_klikken": 0,
+   "gsc_vertoningen": 0,
+   "gsc_ctr": 0.0,
+   "gsc_positie": null
   }
  ],
  "kernwoorden": [
   {
    "term": "gripsokken",
    "weken": [
-    {
-     "week": "2026-W31",
-     "positie": 16.5,
-     "vertoningen": 2
-    },
     {
      "week": "2026-W32",
      "positie": 17.2,
@@ -234,19 +229,19 @@
     },
     {
      "week": "2026-W42",
-     "positie": 5.1,
-     "vertoningen": 216
+     "positie": 5.3,
+     "vertoningen": 234
+    },
+    {
+     "week": "2026-W43",
+     "positie": null,
+     "vertoningen": 0
     }
    ]
   },
   {
    "term": "gripsokken kopen",
    "weken": [
-    {
-     "week": "2026-W31",
-     "positie": null,
-     "vertoningen": 0
-    },
     {
      "week": "2026-W32",
      "positie": null,
@@ -301,17 +296,17 @@
      "week": "2026-W42",
      "positie": 12.0,
      "vertoningen": 3
+    },
+    {
+     "week": "2026-W43",
+     "positie": null,
+     "vertoningen": 0
     }
    ]
   },
   {
    "term": "wat zijn gripsokken",
    "weken": [
-    {
-     "week": "2026-W31",
-     "positie": 9.5,
-     "vertoningen": 10
-    },
     {
      "week": "2026-W32",
      "positie": 10.5,
@@ -364,19 +359,19 @@
     },
     {
      "week": "2026-W42",
-     "positie": 8.5,
-     "vertoningen": 11
+     "positie": 8.7,
+     "vertoningen": 12
+    },
+    {
+     "week": "2026-W43",
+     "positie": null,
+     "vertoningen": 0
     }
    ]
   },
   {
    "term": "waarom glijdt mijn voet in mijn padelschoen",
    "weken": [
-    {
-     "week": "2026-W31",
-     "positie": null,
-     "vertoningen": 0
-    },
     {
      "week": "2026-W32",
      "positie": null,
@@ -429,6 +424,11 @@
     },
     {
      "week": "2026-W42",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W43",
      "positie": null,
      "vertoningen": 0
     }
@@ -438,11 +438,6 @@
    "term": "tapedesign alternatief",
    "weken": [
     {
-     "week": "2026-W31",
-     "positie": null,
-     "vertoningen": 0
-    },
-    {
      "week": "2026-W32",
      "positie": null,
      "vertoningen": 0
@@ -494,6 +489,11 @@
     },
     {
      "week": "2026-W42",
+     "positie": null,
+     "vertoningen": 0
+    },
+    {
+     "week": "2026-W43",
      "positie": null,
      "vertoningen": 0
     }

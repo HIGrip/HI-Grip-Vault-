@@ -42,7 +42,7 @@ Rangorde bij tegenspraak:
 
 ## 4. Visueel
 
-- Merkkleuren: primair zwart `#000000` en wit `#FFFFFF`; tekstgrijzen graphite `#5C5D5F` (op wit) en titanium `#909194` (op zwart); accenten volt `#CCFF00`, royal blue `#0011A7`, pumpkin `#FF6A00`, tangerine `#E10600`. Trustpilot-groen `#00b67a` alleen voor review-sterren.
+- Merkkleuren: primair zwart `#0A0A0A` en wit `#FFFFFF`; grijzen titanium `#909194` (tekst op zwart), onyx `#111111` en carbon black `#1A1A1A`; accenten per kernsport: volt `#CCFF00` (voetbal, hoofdaccent), royal blue `#0011A7` (padel), pumpkin `#FF6A00` (tennis), tangerine `#E10600` (rugby). Trustpilot-groen `#00b67a` alleen voor review-sterren.
 - Font: **alleen Poppins**. H1 Black Italic 900, H2 ExtraBold 800, H3 Bold 700, caption/label SemiBold 600: altijd in HOOFDLETTERS. Koppen tracking −0,04 em, body Regular 400 met −0,02 em. Nooit Franklin Gothic, Impact of serif.
 - CTA: een pill met chevron, zwart op wit of wit op zwart. Nooit gevuld met een accentkleur.
 

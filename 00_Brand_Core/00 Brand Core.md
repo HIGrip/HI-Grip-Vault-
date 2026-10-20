@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # 00 Brand Core — het fundament van HÏ Grip
@@ -12,7 +12,7 @@ Terug naar [[Home]].
 
 ## Leidend document
 
-> [!important] MERK & STRATEGIE — HÏ Grip (Canva, 46 pagina's) · https://canva.link/a48n60z2ay1g7bp
+> [!important] MERK & STRATEGIE — HÏ Grip (Canva, 36 pagina's) · https://canva.link/a48n60z2ay1g7bp
 > Sinds **30-9-2026** is dit document de bron voor merkverhaal, huisstijl en marketingstrategie. De Brand Core hieronder is de uitwerking ervan in de vault. Spreekt iets in de vault dit document tegen, dan wint het Canva-document en werk je de vault bij.
 >
 > | Deel | Hoofdstuk in Canva | In de vault |

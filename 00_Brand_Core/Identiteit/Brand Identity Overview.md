@@ -1,14 +1,14 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # Brand Identity Overview — HÏ Grip
 
 > Centrale bron voor oerverhaal, filosofie, missie, visie, kernwaarden, waarden en de pitch. Alle andere bestanden linken hier naartoe; dit is de enige plek waar deze informatie staat.
 >
-> **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip* (46 pagina's, hoofdstuk 01–02): https://canva.link/a48n60z2ay1g7bp. Spreekt iets in de vault dit document tegen, dan wint het Canva-document.
+> **Bron (leidend sinds 30-9-2026):** Canva-document *MERK & STRATEGIE — HÏ Grip* (36 pagina's, hoofdstuk 01–02): https://canva.link/a48n60z2ay1g7bp. Spreekt iets in de vault dit document tegen, dan wint het Canva-document.
 
 ---
 

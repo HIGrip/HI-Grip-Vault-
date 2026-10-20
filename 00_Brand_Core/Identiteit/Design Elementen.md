@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # Design Elementen — HÏ Grip
@@ -23,6 +23,40 @@ Elk ontwerp toets je hieraan. **Valt er één weg, dan is het geen HÏ Grip-desi
 | 05 | **Stijl** | Volwassen, innovatief, sportief, modern, energiek, performance-gericht — met grid patterns als handtekening. |
 
 Het Canva-merkmateriaal is de **werkbibliotheek**; het Canva-document *MERK & STRATEGIE* is de **regel**.
+
+---
+
+## Designprincipes uit MERK & STRATEGIE
+
+De fundamentele ontwerpregels uit het Canva-document: zo voegen we alle visuele elementen samen tot één krachtig geheel. Ze gelden naast de vijf principes hierboven.
+
+| # | Principe | Wat het betekent |
+|---|---|---|
+| 01 | **60/30/10-regel** | De focus ligt eerst op het product of model (60), daarna op de features of de krachtige headline (30), tot slot op kleine afmakers zoals branding en effecten (10). |
+| 02 | **Performance in actie** | Alle content past bij de merkwaarden: jong, innovatief, sportief, modern, energiek en performance-gericht. Snelle, scherpe, krachtige foto's en video's waarin beweging zichtbaar is en zelfvertrouwen uitstraalt. Geen statische content. |
+| 03 | **Veel technische en innovatieve looks** | Subtiele technische details: dunne meetlijnen, kleine cijfers, technische labels, coördinaten en gridpatronen geven het product een high-end, ontwikkeld gevoel. Klein, strak en minimalistisch, zodat ze niet van het product afleiden. |
+| 04 | **Hoog contrast** | Product, tekst en modellen springen uit de content, zodat de focus op de kernboodschap ligt. Vooral zwart/wit met maximaal één krachtige accentkleur. |
+| 05 | **Genoeg whitespace / minimalistisch** | Genoeg lucht rond tekst en een design dat niet te druk is: overzichtelijk, abstract en volwassen. Het zit voor de hersenen logisch in elkaar. |
+| 06 | **Krachtige headlines** | Geen overvolle tekstvakken, maar een motiverende en energieke headline bij een design dat eruit popt (bijv. "RESULTAAT TELT" of "MOVE ON"). |
+
+De visuele elementen komen terug op alle communicatiemiddelen: van visitekaartjes, verpakking, labels en tape tot bedrijfskleding, gevelreclame, roll-up banners en event-displays. Zo gaan sporters het merk herkennen.
+
+---
+
+## Socialsprincipes
+
+Bovenop de designprincipes gelden deze regels voor Instagram en TikTok, zodat de feed consistent in onze stijl blijft.
+
+| # | Principe | Wat het betekent |
+|---|---|---|
+| 01 | **Overeenkomst in posts = een persoon** | Op elke reel, foto, carrousel en thumbnail is altijd een persoon te zien. Bij persoonlijke content zijn dat de founders, bij performance-content sporters. |
+| 02 | **Modellen en founders apart** | In persoonlijke content zijn de founders voortdurend te zien. In performance-content staan creators, modellen en atleten in beeld en zijn de founders minimaal zichtbaar. |
+| 03 | **Founders in beeld bij de HÏ LIGHTS-thumbnail** | Bij HÏ LIGHTS OF THE WEEK zie je de founders altijd: zo laten we de founders-journey en de mensen achter het merk zien. |
+| 04 | **Type content onder elkaar in de instafeed** | De feed is logisch gesorteerd op type content (performance, persoonlijk, announcement) en chronologisch, zodat hij netjes en verzorgd oogt. |
+| 05 | **Acties** | In performance-content zie je altijd iemand in actie, nooit statisch of geposeerd. |
+| 06 | **Focus op de hook** | We houden mensen vast met visuele effecten: light leaks, scherpe beelden, satisfying sounds en iets wat het menselijk brein niet verwacht. |
+
+Uitwerking per platform: [[Content Strategie]] · [[Platform Richtlijnen]].
 
 ---
 

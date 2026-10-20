@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # Logo & Kleurenpalet — HÏ Grip
@@ -46,35 +46,37 @@ Houd rondom het logo **minimaal de hoogte van de piek** vrij. Minimaal 24 px dig
 
 ## Kleurenpalet — zwart, wit & performance
 
-Primair werken we in **wit en zwart**. Twee tekstgrijzen brengen rust en hiërarchie. Vier accentkleuren staan voor performance en brengen energie.
+Primair werken we in **wit en zwart**. Drie achtergrond- en tekstgrijzen brengen rust en hiërarchie. Vier accentkleuren staan voor performance en brengen energie. **Elke kernsport heeft zijn eigen accentkleur.**
 
 ### Primair
 
 | Kleur | Hex | RGB | CSS-variabele |
 |---|---|---|---|
 | **Lichtwit** | `#FFFFFF` | 255 · 255 · 255 | `--hi-white` |
-| **Donkerzwart** | `#000000` | 0 · 0 · 0 | `--hi-black` |
+| **Donkerzwart** | `#0A0A0A` | 10 · 10 · 10 | `--hi-black` |
 
-### Secundair — tekstgrijzen
+### Secundair — achtergrond- en tekstgrijzen
 
-| Kleur | Hex | RGB | Contrast |
-|---|---|---|---|
-| **Graphite** (donkergrijs) | `#5C5D5F` | 92 · 93 · 95 | 6,6:1 op wit · 3,2:1 op zwart → tekstgrijs op **wit** |
-| **Titanium** (lichtgrijs) | `#909194` | 144 · 145 · 148 | 3,2:1 op wit · 6,7:1 op zwart → tekstgrijs op **zwart** |
-
-### Performance-accenten
-
-| # | Naam | Hex | RGB | CSS-variabele |
+| Kleur | Hex | RGB | Gebruik | CSS-variabele |
 |---|---|---|---|---|
-| 01 | **Volt** | `#CCFF00` | 204 · 255 · 0 | `--hi-yellow` |
-| 02 | **Royal Blue** | `#0011A7` | 0 · 17 · 167 | `--hi-blue` |
-| 03 | **Pumpkin** | `#FF6A00` | 255 · 106 · 0 | `--hi-orange` |
-| 04 | **Tangerine** | `#E10600` | 225 · 6 · 0 | `--hi-red` |
+| **Titanium** | `#909194` | 144 · 145 · 148 | Tekstgrijs op zwart (6,3:1 op Donkerzwart; 3,2:1 op wit, dus niet voor lopende tekst op wit) | — |
+| **Onyx** | `#111111` | 17 · 17 · 17 | Achtergrond- en tekstgrijs | `--hi-near-black` |
+| **Carbon Black** | `#1A1A1A` | 26 · 26 · 26 | Achtergrond- en tekstgrijs | `--hi-warm-dark` |
+
+### Performance-accenten — één per kernsport
+
+| # | Naam | Hex | RGB | Kernsport | CSS-variabele |
+|---|---|---|---|---|---|
+| 01 | **Volt** | `#CCFF00` | 204 · 255 · 0 | **Voetbal** · hoofdaccent | `--hi-yellow` |
+| 02 | **Royal Blue** | `#0011A7` | 0 · 17 · 167 | **Padel** | `--hi-blue` |
+| 03 | **Pumpkin** | `#FF6A00` | 255 · 106 · 0 | **Tennis** | `--hi-orange` |
+| 04 | **Tangerine** | `#E10600` | 225 · 6 · 0 | **Rugby** | `--hi-red` |
 
 **Regels**
 - Accenten brengen energie; wit en zwart dragen de uiting. Kleur komt binnen als accent, nooit als vlakvulling over de hele uiting (zie [[Design Elementen]]).
 - Is kleur nodig in een raster- of lichtelement, dan **één** accentkleur voor het hele element.
-- Voor tekst: wit op zwart, of zwart op wit; grijze tekst in Graphite (op wit) of Titanium (op zwart).
+- Gaat een uiting over één sport, dan gebruik je het accent van die sport. Volt is het hoofdaccent voor alles wat niet aan één sport hangt.
+- Voor tekst: wit op zwart, of zwart op wit; grijze tekst op zwart in Titanium. Op wit gebruik je Onyx of Carbon Black, geen Titanium voor lopende tekst.
 - In code en Liquid heten de kleuren `--hi-*` (zie de kolom hierboven). Zelfde hexwaarden, andere naam: gebruik in CSS **altijd de variabele**, nooit een losse hex.
 
 ---

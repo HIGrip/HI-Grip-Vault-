@@ -422,9 +422,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-15-seo-audit#2fb3a15f": {
-   "bewijs": "https://www.higrip.nl/pages/gripsokken-voor-hardlopen, -pilates, -yoga, -fitness, -wandelen en -hockey geven allemaal nog 404; alleen padel/tennis/voetbal/rugby bestaan",
-   "controle": "Of resterende sportlandingspagina's (naast padel/tennis/voetbal/rugby) ingevuld zijn",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "hardlopen, pilates, yoga, fitness, wandelen en hockey geven alle 404 (bv. https://www.higrip.nl/pages/gripsokken-voor-hardlopen); alleen padel/tennis/voetbal/rugby bestaan, ongewijzigd",
+   "controle": "404-check op de 8 resterende sportlandingspagina's",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -444,9 +444,9 @@
    "uitkomst": "dubbel"
   },
   "2026-09-15-seo-audit#864864f2": {
-   "bewijs": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart bevat nog 33 instanties van 'u' en 8 van 'uw', ongewijzigd",
-   "controle": "Of 'u/uw' in productpagina-FAQ vervangen is door 'je/jij'",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart bevat nog losse instanties van 'u' en 'uw' in de copy, ongewijzigd t.o.v. vorige run",
+   "controle": "'u/uw' op productpagina performance-gripsokken-2-0-zwart",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -524,9 +524,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-21-beachhead-rugby#5a25b546": {
-   "bewijs": "https://www.higrip.nl/pages/gripsokken-voor-rugby is live (200) maar alle img alt-teksten zijn generieke productfoto's (geen scrum/voet-in-schoen-foto) en de FAQ heeft nog de simpelere vraag 'Zijn gripsokken geschikt voor rugby?', niet de gevraagde vraag met Law 4/VWW-antwoord",
-   "controle": "Of de rugbypagina een eigen rugbyfoto en de specifieke FAQ 'Mag je gripsokken dragen bij rugby?' heeft",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/pages/gripsokken-voor-rugby is nog 200 maar de hero-media is een lege placeholder (sl-hero__media--empty), alle img alt-teksten zijn nog generieke productfoto's en de FAQ heeft nog 'Zijn gripsokken geschikt voor rugby?' zonder Law 4/VWW-verwijzing, ongewijzigd",
+   "controle": "rugbyfoto, FAQ Law4/VWW-antwoord en productlink op de rugbypagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -538,9 +538,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-21-beachhead-rugby#6c704ca5": {
-   "bewijs": "het FAQPage-schema op https://www.higrip.nl/ heeft 8 vragen, geen daarvan is 'Mag je gripsokken dragen bij rugby?'",
-   "controle": "Of de homepage-FAQ de vraag 'Mag je gripsokken dragen bij rugby?' bevat",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "FAQPage-schema op https://www.higrip.nl/ heeft nog 8 vragen (voordelen, wetenschappelijk bewezen, zakelijk, verzorging, missie, team, levertijd, vraag-niet-beantwoord), geen daarvan over rugby, ongewijzigd",
+   "controle": "homepage-FAQPage-schema op 'Mag je gripsokken dragen bij rugby?'",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1272,15 +1272,15 @@
   },
   "2026-10-02-obsidian-structuur-ai-agents#1493354a": {
    "bewijs": "nog 27 bestanden met een absoluut C:\\\\Users-pad in 05_Research, ongewijzigd",
-   "controle": "aantal notities met absoluut C:\\\\Users-pad",
-   "gecontroleerd": "2026-10-19",
+   "controle": "aantal bestanden met absoluut C:\\Users-pad in 05_Research",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#14960853": {
-   "bewijs": "autoSaveInterval en autoPullInterval staan nog op 2, commitMessage nog 'vault backup: {{date}}', ongewijzigd",
-   "controle": "obsidian-git instellingen autoSaveInterval/autoPullInterval/commitMessage",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "data.json: autoSaveInterval en autoPullInterval staan nog op 2, commitMessage nog 'vault backup: {{date}}'; core-plugins.json: Sync staat nog op true, ongewijzigd",
+   "controle": "obsidian-git autoSaveInterval/autoPullInterval/commitMessage en core-plugin Sync",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1293,23 +1293,23 @@
    "uitkomst": "gedaan"
   },
   "2026-10-02-obsidian-structuur-ai-agents#353f4bcb": {
-   "bewijs": "nog notities in 00_Brand_Core en 01_Content_Agent zonder status:-veld, ongewijzigd",
-   "controle": "status-veld in de frontmatter van notities in 00-04",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "circa 801 notities in 00_Brand_Core t/m 04_Agent_Infrastructuur missen nog een status:-veld; CLAUDE.md bevat nog geen regel dat status archief alleen op verzoek gelezen wordt, ongewijzigd",
+   "controle": "status:-veld op notities in 00-04 en archief-regel in CLAUDE.md",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3ebe2293": {
    "bewijs": "map 99_Archief bestaat nog niet, ongewijzigd",
-   "controle": "map 99_Archief in de vault-root",
-   "gecontroleerd": "2026-10-19",
+   "controle": "bestaan van map 99_Archief",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3f6943bd": {
-   "bewijs": "CLAUDE.md heeft geen 'Schrijfrechten'-sectie; .claude/settings.json bevat geen deny-regels voor 05_Research/_backlog of _data, ongewijzigd",
+   "bewijs": "CLAUDE.md heeft geen 'Schrijfrechten'-sectie; .claude/settings.json heeft geen permissions/deny-regels voor 05_Research/_backlog, _data of register.js, ongewijzigd",
    "controle": "Schrijfrechten-sectie in CLAUDE.md en deny-regels in .claude/settings.json",
-   "gecontroleerd": "2026-10-19",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1328,16 +1328,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-02-obsidian-structuur-ai-agents#cad6d1f6": {
-   "bewijs": "nog 110.425 bytes (~110 KB), niet ingekort naar 5 KB, ongewijzigd",
+   "bewijs": "notitie is intussen gesplitst (commit 034ee41, 2026-10-19: broncode apart) en nu 11.851 bytes (~11,6 KB) in plaats van 110 KB, maar nog boven het doel van hooguit 5 KB",
    "controle": "bestandsgrootte van 'Zoek Script & Gids.md'",
-   "gecontroleerd": "2026-10-19",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#f4f04b6b": {
    "bewijs": "vault_lint.py bestaat nog niet, ongewijzigd",
-   "controle": "bestaan van vault_lint.py in 04_Agent_Infrastructuur/Beheer/",
-   "gecontroleerd": "2026-10-19",
+   "controle": "bestaan van 04_Agent_Infrastructuur/Beheer/vault_lint.py",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },

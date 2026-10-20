@@ -2,16 +2,16 @@
  "laatste_run": "2026-10-20T05:15:47+02:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
-   "bewijs": "kpi.json bevat per week nog alleen GA4-gebaseerde velden (sessies/aankopen/omzet); geen apart Shopify-omzetveld toegevoegd, ongewijzigd",
-   "controle": "apart Shopify-gebaseerd omzetveld in kpi.json",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "05_Research/_data/kpi.json bevat per week nog alleen GA4/GSC-gebaseerde velden (sessies/aankopen/omzet/gsc_*); geen apart Shopify-omzetveld toegevoegd, ongewijzigd",
+   "controle": "apart Shopify-omzetveld in kpi.json naast GA4-velden",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-09-03-analytics-kpi-meetgat#8d1d8e60": {
-   "bewijs": "funnel 28d: view_item_list 111 -> view_item 150 -> add_to_cart 58 -> begin_checkout 26 -> add_shipping_info 19 -> add_payment_info 10 -> purchase 8; grootste drop blijft view_item naar add_to_cart; geen vastgelegde analyse gevonden",
-   "controle": "run_funnel_report grootste absolute drop-off",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "niet te controleren: GA4-funnel-tool (run_funnel_report) is in deze sessie niet beschikbaar (geen passend MCP-tool gevonden), kon niet opnieuw opgevraagd worden",
+   "controle": "funnel-rapport product -> cart -> checkout -> betaling",
+   "gecontroleerd": "2026-10-20",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -24,8 +24,8 @@
   },
   "2026-09-03-analytics-kpi-meetgat#997d251e": {
    "bewijs": "niet te controleren in deze routine: vereist historische GA4-taganalyse buiten de standaardrapporten, ongewijzigd",
-   "controle": "historische GA4-taganalyse rond 1 januari 2026",
-   "gecontroleerd": "2026-10-19",
+   "controle": "achterhalen waarom de GA4-tag rond 1 januari 2026 stopte",
+   "gecontroleerd": "2026-10-20",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -74,9 +74,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-04-werkdossier-stand-van-zaken#98a99a09": {
-   "bewijs": "niet te controleren zonder JS-rendering; op https://www.higrip.nl/ en de productpagina staat nu alleen een statische link naar nl.trustpilot.com/review/higrip.nl, geen widget-scripts (header.min.js/success.min.js) meer gevonden in de paginabron",
-   "controle": "Of de Trustpilot-widget nu reviews toont op home/productpagina",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "niet volledig te controleren zonder JS-rendering; op https://www.higrip.nl/ en de productpagina staat nog steeds alleen een statische link naar nl.trustpilot.com/review/higrip.nl, geen widget-scripts (header.min.js/success.min.js) in de paginabron, ongewijzigd",
+   "controle": "Trustpilot-widgetscripts op homepage en productpagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -97,15 +97,15 @@
   },
   "2026-09-04-werkdossier-stand-van-zaken#b83b8e37": {
    "bewijs": "niet te controleren: popupgedrag vereist JS-rendering, ongewijzigd",
-   "controle": "EcomSend-kortingspopup gedrag (vertraging/Escape/sluitknop)",
-   "gecontroleerd": "2026-10-19",
+   "controle": "kortingspopup vertraging, Escape-sluiting, sluitknop ≥24px",
+   "gecontroleerd": "2026-10-20",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#c1ccbbfc": {
-   "bewijs": "collections templateSuffix is nog '' (leeg), ongewijzigd t.o.v. vorige run",
-   "controle": "templateSuffix van collectie 'gripsokken'",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "Shopify GraphQL collections toont templateSuffix nog als '' (leeg) voor collectie gripsokken (gid://shopify/Collection/659972129095), ongewijzigd",
+   "controle": "templateSuffix van de collectie 'gripsokken'",
+   "gecontroleerd": "2026-10-20",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -127,8 +127,8 @@
   },
   "2026-09-04-werkdossier-stand-van-zaken#ee82c67c": {
    "bewijs": "https://www.higrip.nl/collections/all heeft nog geen meta description; https://www.higrip.nl/pages/ontdek-jouw-sport heeft nog titel 'HÏ Grip | Ontdek Jouw Sport' (merknaam-eerst), ongewijzigd",
-   "controle": "Of titels/meta descriptions site-breed zoekwoord-eerst staan",
-   "gecontroleerd": "2026-10-19",
+   "controle": "meta description collections/all en titel-volgorde ontdek-jouw-sport",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -140,9 +140,9 @@
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#fc53b6be": {
-   "bewijs": "geen losse 12-maanden-exportbestand gevonden in 05_Research, alleen vermeldingen in andere notities, ongewijzigd",
-   "controle": "12-maanden Shopify Analytics-export (orders/omzet/AOV/conversie) in de vault",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "geen losse 12-maanden-exportbestand gevonden in 05_Research (find op naam/omzet/analytics-export), alleen vermeldingen in andere notities, ongewijzigd",
+   "controle": "losse 12-maanden Shopify Analytics-exportbestand in 05_Research",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -154,9 +154,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#08f96665": {
-   "bewijs": "§3.4 staat nog als open punt '[ ] Besluit nemen en vastleggen in de productbriefing', ongewijzigd",
-   "controle": "§3.4 Claimstrategie skisokken in Compliance To-Do Lijst",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "Compliance To-Do Lijst.md §3.4 staat nog als open punt '[ ] Besluit nemen en vastleggen in de productbriefing', ongewijzigd",
+   "controle": "§3.4 besluit claimstrategie skisokken met gelprotection",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -168,9 +168,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#0dcfc0b5": {
-   "bewijs": "alleen Compliance To-Do Lijst zelf (§2.4) en de onderzoeksnotitie noemen dit; geen apart copy-checklist-document gevonden, ongewijzigd",
-   "controle": "apart copy-checklist-document met antibacterieel/antimicrobieel-verbod",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "§2.4 'Verboden woorden opnemen in de copy-checklist' staat nog als open punt in Compliance To-Do Lijst.md; geen los copy-checklist-bestand in de vault gevonden, ongewijzigd",
+   "controle": "apart copy-checklist-document met verboden biocide-woorden",
+   "gecontroleerd": "2026-10-20",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -232,16 +232,16 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#70978779": {
-   "bewijs": "Homepage-footer heeft KVK/BTW maar geen vestigingsadres; https://www.higrip.nl/pages/contact heeft alle drie, ongewijzigd t.o.v. vorige controle",
-   "controle": "Staan vestigingsadres, KvK-nummer en btw-id in footer/contactpagina",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "homepage-footer (https://www.higrip.nl/) heeft nog wel KVK: 97210129 en BTW: NL867952283B01 maar geen vestigingsadres; https://www.higrip.nl/pages/contact heeft alle drie (incl. IJsseldijk-Noord 48, 2935 BH Ouderkerk aan den IJssel), ongewijzigd",
+   "controle": "vestigingsadres, KvK-nummer en btw-id in footer en op contactpagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#7c92cd94": {
-   "bewijs": "https://www.higrip.nl/policies/terms-of-service Artikel 8 noemt nog '1 maand garantie op fabricage- of materiaalfouten', geen verwijzing naar wettelijke conformiteit",
-   "controle": "Of garantietekst wettelijke conformiteit noemt i.p.v. alleen '1 jaar/maand garantie'",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/policies/terms-of-service Artikel 8 noemt nog '1 maand garantie op fabricage- of materiaalfouten', 'conformiteit' komt nergens op de pagina voor, ongewijzigd",
+   "controle": "garantietekst Artikel 8 op terms-of-service vs. wettelijke conformiteit",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -253,9 +253,9 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#841f80c9": {
-   "bewijs": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart toont '30% Coolmax · 28% Katoen · 25% Polyester · 14% Nylon · 3% Spandex' — Coolmax (merknaam) en Spandex zijn geen officiële EU-textielbenamingen; fysiek label niet controleerbaar",
-   "controle": "Of vezelsamenstelling met officiële EU-benamingen op de productpagina staat",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart toont nog '30% Coolmax · 28% Katoen · 25% Polyester · 14% Nylon · 3% Spandex' (Coolmax is merknaam, geen officiële EU-benaming); fysiek label niet controleerbaar, ongewijzigd",
+   "controle": "officiële EU-textielbenamingen in de vezelsamenstelling op de productpagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -274,23 +274,23 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#a41e0356": {
-   "bewijs": "geen duurzaamheidsclaims (duurzaam/eco-/CO2-neutraal) gevonden op https://www.higrip.nl/ of de productpagina; niet alle content (blogs/FAQ) doorzocht",
-   "controle": "Of duurzaamheidsclaims op de site gescreend/aangepast zijn",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "geen duurzaamheidsclaims (duurzaam/eco-/CO2-neutraal) gevonden op https://www.higrip.nl/ of https://www.higrip.nl/products/performance-gripsokken-2-0-zwart; niet alle content (blogs/FAQ) doorzocht, ongewijzigd",
+   "controle": "duurzaamheidsclaims op homepage en productpagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#ad0b9d7c": {
-   "bewijs": "geen 'herroepingsrecht' of 'modelformulier' gevonden op https://www.higrip.nl/policies/refund-policy of https://www.higrip.nl/pages/retourbeleid",
-   "controle": "Of herroepingsrecht/modelformulier op retourpagina's staan",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "geen 'herroepingsrecht' of 'modelformulier' op https://www.higrip.nl/policies/refund-policy of https://www.higrip.nl/pages/retourbeleid; beide noemen wel terugbetaling en verzendkosten, ongewijzigd",
+   "controle": "herroepingsrecht/modelformulier/terugbetaling incl. verzendkosten op retourpagina's",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#b8f1e4b9": {
-   "bewijs": "https://www.higrip.nl/policies/terms-of-service bevat geen 'B2B'-betaaltermijn van 30 dagen (de '30 dagen' die er staat is de retourtermijn); RI&E is personeelszaak en niet via de site te controleren",
-   "controle": "Of B2B-betaaltermijn van 30 dagen in de voorwaarden staat",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/policies/terms-of-service bevat geen B2B-betaaltermijn van 30 dagen (de '30 dagen' op de pagina is de retourtermijn, en 'b2bEnabled:false' staat alleen in thema-config); RI&E is personeelszaak en niet via de site te controleren, ongewijzigd",
+   "controle": "B2B-betaaltermijn 30 dagen in voorwaarden",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -309,23 +309,23 @@
    "uitkomst": "handmatig"
   },
   "2026-09-07-compliance-todo#c5185af4": {
-   "bewijs": "geen 'reviewbeleid' gevonden op homepage of productpagina; https://www.higrip.nl/pages/reviewbeleid geeft nog 404",
-   "controle": "Of reviewbeleid gepubliceerd is (alinea + pagina)",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "geen 'reviewbeleid' op https://www.higrip.nl/ of de productpagina gevonden; https://www.higrip.nl/pages/reviewbeleid geeft nog 404, ongewijzigd",
+   "controle": "reviewbeleid-alinea bij reviewsectie en als pagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#c7eeb693": {
-   "bewijs": "geen GPSR-blok of 'verantwoordelijke persoon' gevonden op https://www.higrip.nl/products/performance-gripsokken-2-0-zwart; batchnummering/label fysiek niet controleerbaar",
-   "controle": "Of GPSR-blok/verantwoordelijke persoon op de productpagina staat",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "geen 'GPSR' of 'verantwoordelijke persoon' gevonden op https://www.higrip.nl/products/performance-gripsokken-2-0-zwart; batchnummering/fysiek label niet controleerbaar, ongewijzigd",
+   "controle": "GPSR-blok/verantwoordelijke persoon op de productpagina",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-09-07-compliance-todo#c92ff3a9": {
-   "bewijs": "https://www.higrip.nl/policies/privacy-policy noemt Meta en TikTok maar geen Google Analytics/GA4",
-   "controle": "Of de privacyverklaring GA4 i.p.v. alleen Meta/TikTok noemt",
-   "gecontroleerd": "2026-10-19",
+   "bewijs": "https://www.higrip.nl/policies/privacy-policy noemt Meta en TikTok maar geen Google Analytics/GA4, ongewijzigd",
+   "controle": "privacyverklaring vs. werkelijke toolset (GA4)",
+   "gecontroleerd": "2026-10-20",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -359,8 +359,8 @@
   },
   "2026-09-07-compliance-todo#e2982cd0": {
    "bewijs": "niet te controleren: vereist rendering-/accessibility-tools, ongewijzigd",
-   "controle": "WCAG 2.1 AA in het thema (contrast/alt-tekst/focus-states)",
-   "gecontroleerd": "2026-10-19",
+   "controle": "WCAG 2.1 AA: contrast, alt-teksten, focus-states, ondertiteling",
+   "gecontroleerd": "2026-10-20",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -373,8 +373,8 @@
   },
   "2026-09-07-compliance-todo#e2fd0adb": {
    "bewijs": "niet te controleren: cookiebannergedrag vereist JS-rendering, ongewijzigd",
-   "controle": "cookiebannergedrag (weiger-knop, Consent Mode v2)",
-   "gecontroleerd": "2026-10-19",
+   "controle": "cookiebanner weiger-knop en Consent Mode v2",
+   "gecontroleerd": "2026-10-20",
    "methode": "geen",
    "uitkomst": "open"
   },

@@ -13,7 +13,7 @@ status: concept — ter beoordeling door Lars
 
 Een orchestrator die zelf werk uitvoert, wordt de bottleneck van zijn eigen team: hij moet beoordelen en uitvoeren tegelijk en doet geen van beide goed. De waarde van Denzel zit in kiezen, bewaken en beslissen. Wat toetsen, administreren of onderzoeken is, gaat naar een specialist.
 
-Een praktische grens: een regisseur die meer dan een paar rechtstreekse rapporten moet bijhouden verliest overzicht. Daarom heeft Denzel drie hoofdagents en vijf eigen sub-agents, elk met een afgebakende taak, en praat elke sub-agent met zijn eigen hoofdagent.
+Een praktische grens: een regisseur die meer dan een paar rechtstreekse rapporten moet bijhouden verliest overzicht. Daarom heeft Denzel sinds 21-10-2026 alleen vier hoofdagents onder zich en geen eigen sub-agents, elk met een afgebakende taak, en praat elke sub-agent met zijn eigen hoofdagent.
 
 ## 2. Delegeren draait om het resultaat
 
@@ -74,7 +74,7 @@ Voor alles wat voorbereiding vraagt (content, voorraad, beleidspagina's, regels,
 | Het werk ziet er goed uit en blijkt niet te kloppen | Controle op samenvatting, geen bewijs gevraagd | Verdict met bewijs, steekproef op de GOED-verdicten |
 | Dezelfde fout komt terug | Leerregel staat er wel, staat niet in de briefing | Leerregel in elke briefing, of een controlepunt in de zelfcheck |
 | Een grens schuift langzaam op | Tijdsdruk, "een beetje" versoepelen | Autonomie en grenzen alleen via een voorstel dat Lars goedkeurt |
-| Lars krijgt te veel of te laat | Orchestrator doet alles zelf | Eigen team, bundelen, herinneren in plaats van nieuwe voorstellen |
+| Lars krijgt te veel of te laat | Orchestrator doet alles zelf | Werk bij de hoofdagents (Operations voor de administratie), bundelen, herinneren in plaats van nieuwe voorstellen |
 | Niemand ziet het aankomen | Vooruitkijken niet belegd | Vooruitblik-agent met een vaste 30-dagenregel |
 
 ## 11. De vijf bewegingen als kaart
@@ -87,7 +87,7 @@ Een manier om te zien waar elk stuk werk hoort: signaal en onderzoek, aantrekken
 | Aantrekken | Content Agent en Partnership Agent (creators, B2B, events) |
 | Overtuigen | Website Agent: copy, ontwerp, conversie. Betaalde campagnes bestaan nog niet |
 | Behouden | E-mail Marketing Agent: flows na aankoop, herhaalaankoop, reviews |
-| Sturen | Denzel en zijn team |
+| Sturen | Denzel, met de Operations Agent voor de administratie |
 
 De kaart laat twee gaten zien. De routine Klantstem, die klantstemmen terug laat vloeien naar het onderzoek, staat volgens het routine-overzicht nog niet aangemaakt op info@. En er is geen pixel en geen campagne, dus de beweging "overtuigen met advertenties" bestaat nog niet. Beide zijn een reden om iets later te bouwen, niet om er nu iets bij te verzinnen.
 

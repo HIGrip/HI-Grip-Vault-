@@ -9,13 +9,13 @@ status: concept — besluiten van Lars van 12-10-2026 verwerkt
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
 
-> Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**, plus zijn vijf eigen sub-agents. Dit is voor Denzel wat de bestanden Identiteit, Soul en Werkplek voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
+> Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**. Denzel is sinds 21-10-2026 alleen orchestrator en heeft geen eigen sub-agents meer; zijn vroegere team staat nu onder de hoofdagents in `04_Agent_Infrastructuur`. Dit is voor Denzel wat de bestanden Identiteit, Soul en Werkplek voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
 
 ## Verschil met 04_Agent_Infrastructuur
 
 | `04_Agent_Infrastructuur` | `06_Denzel` |
 |---|---|
-| De **structuur en spelregels** van het hele agent-systeem: wie rapporteert aan wie, wie vertelt wat aan wie, welke protocollen gelden voor iedereen | Alles over **Denzel zelf**: zijn rol, grenzen, werkwijze, ritmes, handboek en zijn eigen team |
+| De **structuur en spelregels** van het hele agent-systeem: wie rapporteert aan wie, wie vertelt wat aan wie, welke protocollen gelden voor iedereen | Alles over **Denzel zelf**: zijn rol, grenzen, werkwijze, ritmes en handboek |
 | Voorbeelden: [[Agent Hiërarchie & Structuurschema]], [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], [[Goedkeuringsworkflow]] | Voorbeelden: [[Identiteit Denzel]], [[Soul Denzel]], [[Routeringsgids]], [[Kwaliteitscontrole]] |
 | Verandert zelden en geldt voor alle agents | Verandert met Denzels werk; Lars keurt wijzigingen in scope en autonomie goed |
 
@@ -29,17 +29,18 @@ Regel: staat iets in 04 en gaat het over de spelregels voor iedereen, dan blijft
 4. [[Kwaliteitslog Overzicht]] (tot de verhuizing: [[Agent Werk & Kwaliteit Overzicht]]): staat er iets op "wacht op Lars"? Stel dan de realiteitscheck-vraag (zie [[Ritmes]]).
 5. Daarna alleen de handboeknotitie die bij de opdracht past.
 
-## Het team
+## Onder Denzel
 
-| Agent | Rol in één zin | Map |
-|---|---|---|
-| **Stafchef** | Schrijft opdrachten, volgt open lussen, houdt het kwaliteitslog en de leerregels bij, werkt het dashboard bij en vinkt daar af met bewijs, stelt het weekoverzicht samen | [[Identiteit Stafchef]] |
-| **Vooruitblik-agent** | Zoekt uit wat er aankomt: evenementen, nieuwe regels, veranderingen bij tools. Minimaal 30 dagen vooraf gemeld | [[Identiteit Vooruitblik-agent]] |
-| **Website-QA** | Toetst het werk van de Website Agent | [[Identiteit Website-QA]] |
-| **Content-QA** | Toetst het werk van de Content Agent | [[Identiteit Content-QA]] |
-| **Partnership-QA** | Toetst het werk van de Partnership Agent | [[Identiteit Partnership-QA]] |
+Denzel heeft alleen hoofdagents onder zich (sinds 21-10-2026):
 
-Gedeelde toetsregels voor de drie QA-agents: [[Toetsregels]].
+| Hoofdagent | Sub-agents, waaronder het vroegere team van Denzel |
+|---|---|
+| [[Identiteit Website Agent\|Website Agent]] | vijf makers en [[Identiteit Website-QA\|Website-QA]] |
+| [[Identiteit Content Agent\|Content Agent]] | vijf makers en [[Identiteit Content-QA\|Content-QA]] |
+| [[Identiteit Partnership Agent\|Partnership Agent]] | drie makers en [[Identiteit Partnership-QA\|Partnership-QA]] |
+| [[Identiteit Operations Agent\|Operations Agent]] | [[Identiteit Stafchef\|Stafchef]] en [[Identiteit Vooruitblik-agent\|Vooruitblik-agent]] |
+
+QA-verdicten gaan naar de eigen hoofdagent en altijd als kopie naar Denzel. Gedeelde toetsregels: [[Toetsregels]].
 
 ## Stand van zaken
 
@@ -50,7 +51,6 @@ Gedeelde toetsregels voor de drie QA-agents: [[Toetsregels]].
 | Notitie | Waarvoor |
 |---|---|
 | [[Routeringsgids]] | Welke taak naar welke agent, en wie vertelt wat aan wie |
-| [[Delegeren aan het eigen team]] | Wanneer Denzel welke eigen sub-agent inzet en wat de briefing bevat |
 | [[Kwaliteitscontrole]] | Risiconiveaus, verdicten, correctierondes en escalatie |
 | [[Escalatie en besluiten]] | Wat naar Lars gaat, in welk formaat, en hoe er gebundeld wordt |
 | [[Ritmes]] | Per sessie, wekelijks en maandelijks |
@@ -58,7 +58,7 @@ Gedeelde toetsregels voor de drie QA-agents: [[Toetsregels]].
 
 ## Status
 
-Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerregels, routeren en de QA-checks; die besluiten zijn verwerkt. De overige autonomie-niveaus van de nieuwe sub-agents blijven een voorstel tot Lars of Timo ze goedkeurt. Voortgang en open punten: [[Werkplek Denzel]]. Hoe Denzel en zijn team met het dashboard werken: [[Agents en het dashboard]].
+Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerregels, routeren en de QA-checks; die besluiten zijn verwerkt. De overige autonomie-niveaus van de nieuwe sub-agents blijven een voorstel tot Lars of Timo ze goedkeurt. Voortgang en open punten: [[Werkplek Denzel]]. Hoe Denzel en de agents met het dashboard werken: [[Agents en het dashboard]].
 
 ## Alle notities in deze map (automatisch)
 
@@ -71,7 +71,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Werkplek Denzel]]
 
 ### Handboek
-- [[Delegeren aan het eigen team]]
 - [[Escalatie en besluiten]]
 - [[Kwaliteitscontrole]]
 - [[Ritmes]]
@@ -80,32 +79,6 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### Kwaliteitslog
 - [[Kwaliteitslog Overzicht]]
-
-### Kwaliteitspartners
-- [[Toetsregels]]
-
-### Kwaliteitspartners/Content-QA
-- [[Identiteit Content-QA]]
-- [[Toetslijst Content-QA]]
-- [[Werkplek Content-QA]]
-
-### Kwaliteitspartners/Partnership-QA
-- [[Identiteit Partnership-QA]]
-- [[Toetslijst Partnership-QA]]
-- [[Werkplek Partnership-QA]]
-
-### Kwaliteitspartners/Website-QA
-- [[Identiteit Website-QA]]
-- [[Toetslijst Website-QA]]
-- [[Werkplek Website-QA]]
-
-### Stafchef
-- [[Identiteit Stafchef]]
-- [[Werkplek Stafchef]]
-
-### Vooruitblik
-- [[Identiteit Vooruitblik-agent]]
-- [[Werkplek Vooruitblik-agent]]
 
 ### _archief
 - [[Huidig gebruik van Denzel (Claude Code-tijd)]]

@@ -25,7 +25,7 @@ Wie hem gebruikt: Lars; het [[Opdrachtprotocol]] noemt Tigo en Timo ook als opdr
 
 ## 2. Wat Denzel doet
 
-Routeren naar de juiste hoofdagent, kwaliteit en merkconsistentie bewaken, de Stafchef laten administreren (briefings, kwaliteitslog, leerregels, weekoverzicht), de Vooruitblik-agent laten zoeken en de drie QA-agents laten toetsen. Mandaat "Zelf doen" sinds 14 sept 2026 (uitvoeren, niet alleen signaleren). Het weekoverzicht en het dashboard blijven zijn vaste ritme; zie [[Ritmes]].
+Routeren naar de juiste hoofdagent, kwaliteit en merkconsistentie bewaken, de Operations Agent laten administreren (Stafchef: briefings, kwaliteitslog, leerregels, weekoverzicht) en laten vooruitkijken (Vooruitblik-agent), en via de hoofdagents de drie QA-agents laten toetsen. Mandaat "Zelf doen" sinds 14 sept 2026 (uitvoeren, niet alleen signaleren). Het weekoverzicht en het dashboard blijven zijn vaste ritme; zie [[Ritmes]].
 
 ## 3. Afspraken uit het gebruik
 

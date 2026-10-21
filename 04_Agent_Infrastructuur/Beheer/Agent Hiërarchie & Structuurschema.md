@@ -1,14 +1,14 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-10-12
+bijgewerkt: 2026-10-21
 ---
 
 # Agent Hiërarchie & Structuurschema
 
-> De volledige structuur van het agent-systeem: wie onder wie hangt, wie wat doet en waar elk bestand staat. Stand 12-10-2026. Hoe een los agent-bestand is opgebouwd: [[Agent Bestandsschema (Soul, Identiteit, User)]]. Wie Team HÏ Grip is en de basisregels voor iedere agent: [[user]]. Hoe de agents met het dashboard samenwerken: [[Agents en het dashboard]].
+> De volledige structuur van het agent-systeem: wie onder wie hangt, wie wat doet en waar elk bestand staat. Stand 21-10-2026: Denzel is alleen orchestrator, zijn vroegere team hangt onder de hoofdagents. Hoe een los agent-bestand is opgebouwd: [[Agent Bestandsschema (Soul, Identiteit, User)]]. Wie Team HÏ Grip is en de basisregels voor iedere agent: [[user]]. Hoe de agents met het dashboard samenwerken: [[Agents en het dashboard]].
 
-**Interactief:** het invulschema met stamboom staat op https://claude.ai/artifact/AUGt7FiK4K3qHqoruDCyYB, de beoordeling van 12-10 op https://claude.ai/artifact/9QqJ4dLqK8E9hmgmNG3FKo. De vault blijft de bron van waarheid.
+**Interactief:** de stamboom staat op https://claude.ai/artifact/CB7kPsG8rXxGKZ2JEUpChf, het invulschema op https://claude.ai/artifact/AUGt7FiK4K3qHqoruDCyYB, de beoordeling van 12-10 op https://claude.ai/artifact/9QqJ4dLqK8E9hmgmNG3FKo. De vault blijft de bron van waarheid.
 
 ---
 
@@ -18,14 +18,14 @@ bijgewerkt: 2026-10-12
 Team HÏ Grip (Lars, Tigo, Timo)
    │   beslist; zet altijd zelf de laatste stap (live, publiceren, versturen, geld, contracten)
    ▼
-Denzel — orchestrator (06_Denzel)
-   │   routeert, bewaakt kwaliteit, één aanspreekpunt
-   ├── eigen team: Stafchef · Vooruitblik-agent · Website-QA · Content-QA · Partnership-QA
+Denzel — alleen orchestrator (06_Denzel), geen eigen sub-agents
+   │   routeert, bewaakt kwaliteit, één aanspreekpunt, krijgt een kopie van elk QA-verdict
    ▼
 Hoofdagents (04_Agent_Infrastructuur)
-   ├── Website Agent      → SEO · Design · Website Copy · Conversie & Analyse · E-mail Marketing
-   ├── Content Agent      → Content Strategie & Planning · Caption & Copy · Video & Visuele Productie · Content Maker · Socials Analyzer
-   ├── Partnership Agent  → Influencer & Creator · B2B Klanten · Partnerships & Events
+   ├── Website Agent      → SEO · Design · Website Copy · Conversie & Analyse · E-mail Marketing · Website-QA
+   ├── Content Agent      → Content Strategie & Planning · Caption & Copy · Video & Visuele Productie · Content Maker · Socials Analyzer · Content-QA
+   ├── Partnership Agent  → Influencer & Creator · B2B Klanten · Partnerships & Events · Partnership-QA
+   ├── Operations Agent   → Stafchef · Vooruitblik-agent
    └── Ads-tak            → nog niet uitgewerkt (zie Stappenplan)
 ```
 
@@ -34,8 +34,8 @@ Hoofdagents (04_Agent_Infrastructuur)
 - **Delegeren (naar beneden):** een hoofdagent zet een sub-agent in zodra een taak binnen diens specialisme valt. De "Delegatie naar sub-agents"-tabel in het `Soul <Agent>.md` van de hoofdagent zegt welke.
 - **Escaleren (naar boven):** een sub-agent escaleert altijd via zijn hoofdagent, nooit rechtstreeks naar Denzel of Team HÏ Grip. Alles op "Altijd overleg vooraf" gaat via Denzel naar Team HÏ Grip.
 - **Tussen hoofdagents:** geen rechtstreeks contact. Wat de ene hoofdagent van de andere nodig heeft, loopt via Denzel en het postvak, zodat er een spoor is.
-- **Toetsen:** de QA-agents toetsen het werk van "hun" hoofdagent en rapporteren aan Denzel, niet aan die hoofdagent. Denzel checkt het verdict snel en beslist: door, terug of escaleren.
-- **Administratie:** de Stafchef schrijft briefings, houdt het postvak, het kwaliteitslog en de [[Leerregels per Agent]] bij, en vinkt in het dashboard af wat met bewijs af is.
+- **Toetsen:** elke hoofdagent heeft zijn eigen QA-agent. Het verdict gaat naar die hoofdagent en altijd als kopie naar Denzel. De hoofdagent handelt GOED en CORRIGEER af en mag een verdict niet aanpassen of tegenhouden; Denzel grijpt in bij ESCALEER, een grensschending of een patroon. (Besloten door Lars op 21-10-2026; daarvoor hingen de QA-agents onder Denzel.)
+- **Administratie:** de Operations Agent, met de Stafchef die briefings schrijft, houdt het postvak, het kwaliteitslog en de [[Leerregels per Agent]] bij, en vinkt in het dashboard af wat met bewijs af is.
 
 ## Wie doet wat in de content-keten
 
@@ -48,7 +48,7 @@ Hoofdagents (04_Agent_Infrastructuur)
 | Filmen | Team HÏ Grip |
 | Monteren, foto's bewerken, cover en AI-beeld maken | Content Maker |
 | Caption, CTA en hashtags | Caption & Copy Agent |
-| Toetsen | Content-QA, verdict naar Denzel |
+| Toetsen | Content-QA, verdict naar de Content Agent, kopie naar Denzel |
 | Plaatsen | Altijd een mens |
 | Bereik, volgers en klikken meten en advies geven | Socials Analyzer, via de Content Agent |
 
@@ -57,10 +57,10 @@ Hoofdagents (04_Agent_Infrastructuur)
 | Wat | Bestanden | Locatie |
 |---|---|---|
 | Denzel | `Identiteit Denzel.md`, `Soul Denzel.md`, `Werkplek Denzel.md`, handboek | `06_Denzel/` |
-| Denzels eigen team | per agent `Identiteit <Agent>.md` + `Werkplek <Agent>.md`; QA-agents ook een toetslijst | `06_Denzel/Stafchef/`, `06_Denzel/Vooruitblik/`, `06_Denzel/Kwaliteitspartners/<QA>/` |
+| QA-agents | `Identiteit`, `Werkplek` en `Toetslijst <QA>.md`; gedeelde [[Toetsregels]] in `Beheer/` | `04_Agent_Infrastructuur/<Hoofdagent>/<QA>/` |
 | Hoofdagent | `Identiteit <Agent>.md`, `Soul <Agent>.md` | `04_Agent_Infrastructuur/<Hoofdagent>/` |
 | Sub-agent | `Identiteit <Agent>.md` + `Werkplek <Agent>.md`, één map per sub-agent | `04_Agent_Infrastructuur/<Hoofdagent>/<Sub-agent>/` |
-| Gedeeld voor alle agents | [[user]], [[Leerregels per Agent]], [[Opdrachtprotocol]], [[Verbeterlus]], [[API & Tool Connections]], [[Goedkeuringsworkflow]], [[Agents en het dashboard]] | `04_Agent_Infrastructuur/Beheer/` |
+| Gedeeld voor alle agents | [[user]], [[Leerregels per Agent]], [[Toetsregels]], [[Opdrachtprotocol]], [[Verbeterlus]], [[API & Tool Connections]], [[Goedkeuringsworkflow]], [[Agents en het dashboard]] | `04_Agent_Infrastructuur/Beheer/` |
 | Routines (cloud) | promptbestanden en README | `04_Agent_Infrastructuur/Routines/` |
 | Vakkennis | de bronnotities per vakgebied | `01_Content_Agent/`, `02_Partnership_Agent/`, `03_Website_Agent/` |
 | Merk en strategie | Brand Core, leidend sinds 30-9-2026 (Canva *MERK & STRATEGIE*) | `00_Brand_Core/` |
@@ -78,14 +78,19 @@ Hoofdagents (04_Agent_Infrastructuur)
 | Website Agent | Website Copy Agent | `Website Agent/Website Copy Agent/` | in ontwikkeling |
 | Website Agent | Conversie & Analyse Agent | `Website Agent/Conversie & Analyse Agent/` | in ontwikkeling |
 | Website Agent | E-mail Marketing Agent | `Website Agent/E-mail Marketing Agent/` | in ontwikkeling |
+| Website Agent | Website-QA | `Website Agent/Website-QA/` | concept (2-10, onder Website sinds 21-10) |
 | Content Agent | Content Strategie & Planning Agent | `Content Agent/Content Strategie & Planning Agent/` | idee |
 | Content Agent | Caption & Copy Agent | `Content Agent/Caption & Copy Agent/` | idee |
 | Content Agent | Video & Visuele Productie Agent | `Content Agent/Video & Visuele Productie Agent/` | in ontwikkeling |
 | Content Agent | Content Maker | `Content Agent/Content Maker/` | concept (9-10, afgemaakt 12-10) |
 | Content Agent | Socials Analyzer | `Content Agent/Socials Analyzer/` | concept (9-10) |
+| Content Agent | Content-QA | `Content Agent/Content-QA/` | concept (2-10, onder Content sinds 21-10) |
 | Partnership Agent | Influencer & Creator Agent | `Partnership Agent/Influencer & Creator Agent/` | actief |
 | Partnership Agent | B2B Klanten Agent | `Partnership Agent/B2B Klanten Agent/` | in ontwikkeling |
 | Partnership Agent | Partnerships & Events Agent | `Partnership Agent/Partnerships & Events Agent/` | in ontwikkeling |
+| Partnership Agent | Partnership-QA | `Partnership Agent/Partnership-QA/` | concept (2-10, onder Partnership sinds 21-10) |
+| Operations Agent | Stafchef | `Operations Agent/Stafchef/` | concept (2-10, onder Operations sinds 21-10) |
+| Operations Agent | Vooruitblik-agent | `Operations Agent/Vooruitblik-agent/` | concept (2-10, onder Operations sinds 21-10) |
 
 ## Een nieuwe agent toevoegen
 

@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: denzel
-bijgewerkt: 2026-10-02
+bijgewerkt: 2026-10-21
 status: concept — ter beoordeling door Lars
 ---
 
@@ -11,28 +11,28 @@ status: concept — ter beoordeling door Lars
 
 ## Principe
 
-Wie maakt, beoordeelt zijn eigen werk te mild. Daarom toetst iemand anders, met alleen het **echte resultaat** en de succescriteria, nooit de samenvatting. De QA-agents zijn die vaste, onafhankelijke toetsers: elk met de lijst van zijn eigen domein. Denzel leest geen volledige toetsing meer. Hij checkt alleen het verdict, snel, en leest het stuk zelf alleen bij een escalatie (besloten door Lars op 12-10-2026).
+Wie maakt, beoordeelt zijn eigen werk te mild. Daarom toetst iemand anders, met alleen het **echte resultaat** en de succescriteria, nooit de samenvatting. De QA-agents zijn die vaste, onafhankelijke toetsers: elk met de lijst van zijn eigen domein. Sinds 21-10-2026 hangt elke QA-agent onder zijn eigen hoofdagent (Website-QA onder de Website Agent, enzovoort). Het verdict gaat naar die hoofdagent en altijd als kopie naar Denzel. De hoofdagent mag een verdict niet aanpassen of tegenhouden. Denzel leest geen volledige toetsing. Hij checkt de kopie van het verdict, snel, en leest het stuk zelf alleen bij een escalatie (besloten door Lars op 12-10-2026).
 
 ## Risiconiveau — bepaalt hoe diep er getoetst wordt
 
-Denzel bepaalt het niveau bij het begin van de opdracht en legt het vast in de briefing.
+Denzel bepaalt het niveau bij het begin van de opdracht en legt het vast in de briefing. De hoofdagent houdt zich eraan.
 
 | Niveau | Voorbeelden | Wie toetst |
 |---|---|---|
 | **Laag** | Interne onderzoeksnotitie, ruwe kandidatenlijst, vault-documentatie | Zelfcheck door de maker en een steekproef door Denzel. De QA-agent alleen op feiten als er cijfers in staan |
 | **Midden** | Contentvoorstel, caption, websitecopy, e-mailconcept, SEO-titel en meta | De QA-agent van het domein: feiten, merk en grenzen |
-| **Hoog** | Alles wat live kan, naar buiten gaat of geld of claims raakt: themawijziging, outreachtekst, publicatie, partnerbenadering, regelgeving | De QA-agent volledig, en de Stafchef bewaakt dat het daarna op Lars wacht. Bij een claim of nieuwe regel: ook een bron van buiten de vault |
+| **Hoog** | Alles wat live kan, naar buiten gaat of geld of claims raakt: themawijziging, outreachtekst, publicatie, partnerbenadering, regelgeving | De QA-agent volledig, en de Stafchef (Operations Agent) bewaakt dat het daarna op Lars wacht. Bij een claim of nieuwe regel: ook een bron van buiten de vault |
 
 Twijfel tussen twee niveaus: neem het hogere.
 
 ## De route
 
 ```
-Hoofdagent levert → Denzel kiest niveau → QA-agent toetst (alleen lezen) → verdict
+Denzel kiest niveau → hoofdagent levert → eigen QA-agent toetst (alleen lezen) → verdict naar de hoofdagent, kopie naar Denzel
    GOED       → naar Lars of klaar bij "Zelf doen"; Denzel hoeft niet te lezen
-   CORRIGEER  → terug naar de hoofdagent met regel en bewijs; maximaal 2 rondes
+   CORRIGEER  → de hoofdagent stuurt regel en bewijs terug naar de maker; maximaal 2 rondes
    ESCALEER   → Denzel beslist en meldt zo nodig aan Lars
-→ Stafchef legt vast in het kwaliteitslog
+→ Stafchef (Operations Agent) legt vast in het kwaliteitslog
 ```
 
 ## Het verdict
@@ -55,13 +55,15 @@ niet gecontroleerd: <wat niet kon of niet is gedaan>
 - **Klein:** noteren in het verdict, geen ronde waard. Het werk kan door.
 - Een verdict zonder "niet gecontroleerd" is onvolledig. Een QA-agent die niets kan opnoemen heeft waarschijnlijk te weinig gecontroleerd.
 
-## Wat Denzel doet met een verdict
+## Wat de hoofdagent en Denzel doen met een verdict
+
+De hoofdagent handelt het verdict af. Denzel krijgt altijd een kopie en doet het volgende:
 
 | Verdict | Denzel |
 |---|---|
 | GOED | Leest niets. Eens per week een steekproef van enkele GOED-verdicten: komt het stuk echt overeen? *(voorstel: aantal door Denzel te bepalen, begin met twee per week)* |
-| CORRIGEER | Leest alleen het verdict: staan er een regel en bewijs bij? Dan gaat het terug naar de hoofdagent, via het postvak, met die regel en dat bewijs. Geen "maak het beter". Het stuk zelf leest hij niet |
-| ESCALEER | Leest alles. Lukt oplossen binnen de hoofdagent, dan doet hij dat. Anders naar Lars, met wat er geprobeerd is |
+| CORRIGEER | Leest alleen het verdict: staan er een regel en bewijs bij? De hoofdagent stuurt het zelf terug naar de maker, met die regel en dat bewijs. Geen "maak het beter". Denzel grijpt alleen in als de hoofdagent het verdict negeert, als het na twee rondes niet goed is, of als hetzelfde probleem terugkomt. Het stuk zelf leest hij niet |
+| ESCALEER | Leest alles. Lukt oplossen binnen de hoofdagent, dan laat hij die het oplossen. Anders naar Lars, met wat er geprobeerd is |
 
 ## Correctierondes
 
@@ -87,7 +89,7 @@ Een toets noemt altijd waar het uit blijkt: een bestandspad, een curl-uitkomst, 
 
 ## Wat deze controle niet doet
 
-- De technische sitecontrole blijft bij de SEO-regressiecheck. Afvinken doen de actiecontrole (met bewijs) en de Stafchef (in het dashboard, met bewijs).
+- De technische sitecontrole blijft bij de SEO-regressiecheck. Afvinken doen de actiecontrole (met bewijs) en de Stafchef van de Operations Agent (in het dashboard, met bewijs).
 - Geen toetsing van smaak of strategie. Dat is een besluit voor Lars.
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]

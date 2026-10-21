@@ -23,7 +23,7 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 
 ## Verhouding tot andere agents
 - **Content Agent** — krijgt aangeleverd welke influencers/partners content-samenwerkingen doen. Dat loopt via Denzel, niet rechtstreeks.
-- **Website Agent** — verwerkt eventuele B2B-partnerpagina's op basis van input van de Partnership Agent. Ook dit wordt via Denzel en zijn team doorgegeven: de twee hoofdagents hebben geen direct contact.
+- **Website Agent** — verwerkt eventuele B2B-partnerpagina's op basis van input van de Partnership Agent. Ook dit wordt via Denzel doorgegeven: de twee hoofdagents hebben geen direct contact.
 - **Orchestrator Agent (Denzel)** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Zie [[Agent Hiërarchie & Structuurschema]].
 
 ## Sub-agents
@@ -46,6 +46,13 @@ HÏ Grip laten groeien via partnerships die passen bij het merk — kwaliteit bo
 #### Partnerships & Events Agent
 - **Rol:** Zoekt en beoordeelt events en overige samenwerkingsmogelijkheden buiten de vaste B2B-klantrelatie en buiten influencers om.
 - **Volledige identiteit:** [[Identiteit Partnerships & Events Agent|Partnerships & Events Agent — identiteit]]
+
+### Categorie: Kwaliteit
+
+#### Partnership-QA *(sinds 21-10-2026 onder de Partnership Agent, daarvoor onder Denzel)*
+- **Rol:** Toetst onafhankelijk alles wat de Partnership Agent en zijn sub-agents opleveren op niveau Midden of Hoog: feiten, merk, grenzen en succescriteria. Alleen lezen, hij herstelt niets. Checkt ook wie al benaderd is en of een kandidaat een potentiële match is; wie benaderd wordt, beslist Team HÏ Grip.
+- **Verdict:** gaat naar de Partnership Agent en altijd als kopie naar Denzel. De Partnership Agent past een verdict niet aan en houdt het niet tegen. Bij CORRIGEER stuurt de Partnership Agent de regel en het bewijs terug naar de maker (maximaal twee rondes), daarna escaleert hij naar Denzel.
+- **Volledige identiteit:** [[Identiteit Partnership-QA|Partnership-QA — identiteit]] · gedeelde basis: [[Toetsregels]]
 
 ## Scheiding B2C / B2B in de Collabs-sheet (vastgesteld 2026-10-01)
 De Google Sheet *Collabs - HÏ Grip* is alleen voor de B2C-kant: influencers, creators, atleten, mediaplatforms en bijzondere organisaties. Sportclubs en retail (B2B-afnemers) staan daar nooit in; die horen bij Lijn A (B2B Klanten Agent). De beste kandidaten uit de automatische influencer-zoekruns komen in deze sheet. Details: [[Identiteit Influencer & Creator Agent|Influencer & Creator Agent — identiteit]].

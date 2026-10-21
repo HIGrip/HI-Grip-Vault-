@@ -39,7 +39,7 @@ Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/e
 - Volledige versie: [[Doelgroep & Persona's]].
 
 ## De agent-structuur
-- **Denzel**: orchestrator, één aanspreekpunt voor Team HÏ Grip. Eigen team: Stafchef, Vooruitblik-agent en drie QA-agents (Website-QA, Content-QA, Partnership-QA).
+- **Denzel**: alleen orchestrator, één aanspreekpunt voor Team HÏ Grip. Geen eigen sub-agents (sinds 21-10-2026). Elke hoofdagent heeft zijn eigen QA-agent (Website-QA, Content-QA, Partnership-QA); de Stafchef en de Vooruitblik-agent vallen onder de Operations Agent. QA-verdicten gaan naar de eigen hoofdagent, met altijd een kopie naar Denzel.
 - **Website Agent**: website, SEO, Shopify, e-mail. Sub-agents: SEO, Design, Website Copy, Conversie & Analyse, E-mail Marketing.
 - **Content Agent**: social content. Sub-agents: Content Strategie & Planning, Caption & Copy, Video & Visuele Productie, Content Maker, Socials Analyzer.
 - **Partnership Agent**: B2B-klanten, events en influencers. Sub-agents: Influencer & Creator, B2B Klanten, Partnerships & Events.

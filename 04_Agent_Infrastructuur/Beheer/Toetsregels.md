@@ -1,6 +1,6 @@
 ---
 type: kennis
-gebied: denzel
+gebied: agent-infrastructuur
 bijgewerkt: 2026-10-02
 status: concept — ter beoordeling door Lars
 ---
@@ -12,6 +12,8 @@ status: concept — ter beoordeling door Lars
 ## Wat een QA-agent is
 
 Een onafhankelijke, vaste toetser per domein. Hij ziet alleen het resultaat, de succescriteria en de opdracht. Hij start koud en onthoudt niets. Hij heeft **geen schrijfrechten**: hij levert een verdict, hij herstelt niets.
+
+Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Website-QA onder de Website Agent, Content-QA onder de Content Agent, Partnership-QA onder de Partnership Agent. Het verdict gaat naar die hoofdagent en altijd ook als kopie naar Denzel. De hoofdagent mag een verdict niet aanpassen of tegenhouden.
 
 ## Werkwijze, in deze volgorde
 
@@ -49,19 +51,19 @@ Een onafhankelijke, vaste toetser per domein. Hij ziet alleen het resultaat, de 
 - Een oordeel geven over smaak of strategie. Dat is een besluit voor Lars.
 - Een regel versoepelen omdat het werk er verder goed uitziet.
 - Een verdict geven zonder bewijs of zonder te zeggen wat niet gecontroleerd is.
-- Rechtstreeks met de maker overleggen. Het verdict gaat naar Denzel.
+- Rechtstreeks met de maker overleggen. Het verdict gaat naar de eigen hoofdagent, met altijd een kopie naar Denzel.
 
 ## Wat een QA-agent wel mag
 
 - Lezen: de vault, live pagina's, previews, openbare bronnen.
 - Tools die alleen lezen, zoals een `curl`, een thema-check of het opvragen van een lijst. Nooit een tool die iets wijzigt.
-- Melden dat een regel onduidelijk of verouderd lijkt. Aanpassen van de regel gebeurt via Denzel en Lars.
+- Melden dat een regel onduidelijk of verouderd lijkt. Aanpassen van de regel gebeurt via de hoofdagent, Denzel en Lars.
 
-## Een verdict dat Denzel kan gebruiken
+## Een verdict dat de hoofdagent en Denzel kunnen gebruiken
 
 - Begin met het oordeel, niet met het verhaal.
 - Eén bevinding per regel, elk met plek en bewijs.
 - Zeg wat er moet gebeuren, niet "maak het beter".
 - Noem altijd wat is gecontroleerd en wat niet.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

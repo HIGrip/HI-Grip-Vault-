@@ -19,7 +19,8 @@ status: leidend — bouwplan op HERMES
 |---|---|
 | Denzel (`06_Denzel/`) | Hoofdprofiel `denzel`. Zijn `SOUL.md` verwijst naar de vault; de definitie blijft in `Identiteit Denzel` en `Soul Denzel`. |
 | Website, Content, Partnership Agent | Eigen profielen `website`, `content`, `partnership`, elk met een korte `SOUL.md` |
-| Sub-agents (18) en Denzels eigen team (5) | Geen eigen proces: een `delegate_task`-briefing met alleen het pad naar de eigen Identiteit en Werkplek. Paden: skill `higrip-denzel`, `references/sub-agents.md` |
+| Operations Agent (nieuw, 21-10-2026) | Nog geen profiel. Voorstel: profiel `operations` met [[Soul Operations Agent]] als bron |
+| Sub-agents (23, waaronder de drie QA-agents, Stafchef en Vooruitblik-agent sinds 21-10-2026) | Geen eigen proces: een `delegate_task`-briefing met alleen het pad naar de eigen Identiteit en Werkplek. Paden: skill `higrip-denzel`, `references/sub-agents.md` |
 | Basisregels, merk, harde grenzen | Skill `higrip-vault` (laadt bij elke HÏ Grip-taak) |
 | Routines | Nu: cloudroutines op info@ die naar `04_Agent_Infrastructuur/Routines/` verwijzen. Straks: Hermes-cronjobs op dezelfde promptbestanden |
 | Feiten, merk, onderzoek | De vault blijft de bron van waarheid. Wiki-regels: `SCHEMA.md` |
@@ -59,7 +60,8 @@ De vault is leidend; skills en `SOUL.md` bevatten alleen paden en gedrag, nooit 
 - [ ] Routine op info@ pas uitzetten nadat de Hermes-versie twee runs goed heeft gedraaid.
 - [ ] Hermes heeft geen Shopify-CLI of inlog in de cloud: live-wijzigingen blijven handwerk of een aparte, expliciet goedgekeurde stap.
 
-**4. Denzels eigen team.**
+**4. Het vroegere team van Denzel (sinds 21-10-2026 onder de hoofdagents).**
+- [ ] Hermes bijwerken op de nieuwe structuur: paden in `references/sub-agents.md` van skill `higrip-denzel`, de `SOUL.md` van de profielen `denzel`, `website`, `content` en `partnership`, en een profiel `operations` aanmaken.
 - [ ] Eerste proefrun voor Stafchef (incl. afvinken met bewijs), Vooruitblik-agent en de drie QA-agents; uitkomst vastleggen.
 - [ ] Het Kwaliteitslog in `06_Denzel/Kwaliteitslog/` in gebruik nemen en [[Agent Werk & Kwaliteit Overzicht]] daarheen verhuizen (nu 53 KB; verhuizing nog niet gedaan).
 
@@ -70,7 +72,7 @@ De vault is leidend; skills en `SOUL.md` bevatten alleen paden en gedrag, nooit 
 
 **6. Keuzes voor Team HÏ Grip.**
 - [ ] Toolkeuze Content Maker (Higgsfield, Claude Design, Adobe of Canva) met maandbudget; montageprogramma koppelen.
-- [ ] Ads-tak uitwerken: hoofdagent ADS met Ads-analyse en Ads-creator, plus ADS-QA bij Denzel. Uitgeven altijd overleg vooraf.
+- [ ] Ads-tak uitwerken: hoofdagent ADS met Ads-analyse en Ads-creator, plus een eigen ADS-QA onder de ADS-hoofdagent (niet bij Denzel, besluit 21-10-2026). Uitgeven altijd overleg vooraf.
 
 **7. Dashboard.** Afstemmen met de bouwer: afvinken met bewijs door de Stafchef, extra soorten voorstellen, rechten per persoon, sterrenknop. Uitleg: [[Agents en het dashboard]], [[Sterrenbeoordeling]].
 

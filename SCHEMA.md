@@ -23,7 +23,7 @@ status: concept — ter goedkeuring door Lars
 | Wat is waar (prijzen, handles, claims)? | `00_Brand_Core/Feiten & Actuele Staat.md` |
 | Hoe praat/ziet HÏ Grip eruit? | `00_Brand_Core/` |
 | Vakkennis content / partnerships / website | `01_` / `02_` / `03_` |
-| Wie is welke agent, wat mag hij? | `04_Agent_Infrastructuur/` (hoofdagents, sub-agents, spelregels) en `06_Denzel/` (Denzel + eigen team) |
+| Wie is welke agent, wat mag hij? | `04_Agent_Infrastructuur/` (hoofdagents, sub-agents incl. QA en Operations, spelregels) en `06_Denzel/` (Denzel, alleen orchestrator) |
 | Onderzoek, routine-rapporten, acties | `05_Research/` (backlog: `_backlog/ACTIEBACKLOG.md`) |
 | Wat is er gedaan en wanneer? | [[log]] (nieuw) en de git-historie |
 

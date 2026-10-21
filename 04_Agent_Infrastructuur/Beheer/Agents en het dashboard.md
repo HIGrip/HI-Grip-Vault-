@@ -22,14 +22,14 @@ bijgewerkt: 2026-10-12
 
 | Dashboard | Agent |
 |---|---|
-| Home › Denzel-weekoverzicht, Vraag Denzel, Sparren | Denzel, met de Stafchef voor het weekoverzicht |
-| To do, Research › Acties & besluiten | Stafchef: bijhouden en afvinken met bewijs. Denzel: taken voorstellen |
+| Home › Denzel-weekoverzicht, Vraag Denzel, Sparren | Denzel, met de Operations Agent (Stafchef) voor het weekoverzicht |
+| To do, Research › Acties & besluiten | Operations Agent (Stafchef): bijhouden en afvinken met bewijs. Denzel: taken voorstellen |
 | Research › Opdrachten | Routine Uitvoerder |
-| Agenda › evenementen | Vooruitblik-agent levert data; Partnerships & Events Agent beoordeelt de samenwerking |
+| Agenda › evenementen | Operations Agent (Vooruitblik-agent) levert data; Partnerships & Events Agent beoordeelt de samenwerking |
 | CRM › Kandidaten zoeken en scoren (B2B) | B2B Klanten Agent |
 | CRM › pipeline Creators | Influencer & Creator Agent |
 | CRM › pipeline Partnerships & events | Partnerships & Events Agent |
-| CRM › mail en belscript (concept) | Agent van de betreffende pipeline; Partnership-QA toetst |
+| CRM › mail en belscript (concept) | Agent van de betreffende pipeline; Partnership-QA (onder de Partnership Agent) toetst |
 | Content › Ideeën per pilaar | Content Strategie & Planning Agent |
 | Content › idee uitwerken (shotlist, materiaal, locatie) | Video & Visuele Productie Agent (productielijst) |
 | Content › caption | Caption & Copy Agent |

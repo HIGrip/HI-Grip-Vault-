@@ -1,0 +1,90 @@
+{{ 'sport-feature.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sport-feature.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'spf' %}
+<section
+  class="spf spf-stat{% if s.rough_edge %} spf-stat--rough{% endif %}"
+  style="
+    {% if s.bg_color != blank %}--spf-bg:{{ s.bg_color }};{% endif %}
+    {% if s.text_color != blank %}--spf-fg:{{ s.text_color }};{% endif %}
+    {% if s.accent_color != blank %}--spf-accent:{{ s.accent_color }};{% endif %}
+    --spf-title-gap:{{ s.heading_gap | default: 64 }}px;--spf-why-gap:{{ s.card_gap | default: 16 }}px;--spf-claim-gap:{{ s.claim_gap | default: 56 }}px;
+    --spf-pt:{{ s.padding_top }}px;--spf-pb:{{ s.padding_bottom }}px;--spf-pt-m:{{ s.padding_top_mobile }}px;--spf-pb-m:{{ s.padding_bottom_mobile }}px;
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="spf__wrap">
+    {%- if s.heading != blank -%}<{{ tag }} class="spf-stat__title">{{ s.heading }}</{{ tag }}>{%- endif -%}
+    {%- if s.show_numbers -%}
+    <div class="spf-stat__nums">
+      <div>
+        <p class="spf-stat__num spf-stat__num--old" data-count="{{ s.value_old }}">{{ s.value_old | replace: '.', ',' }}</p>
+        <span class="spf-stat__lbl">{{ s.label_old }}</span>
+      </div>
+      <span class="spf-stat__arrow" aria-hidden="true"></span>
+      <div>
+        <p class="spf-stat__num spf-stat__num--new" data-count="{{ s.value_new }}">{{ s.value_new | replace: '.', ',' }}</p>
+        <span class="spf-stat__lbl">{{ s.label_new }}</span>
+      </div>
+    </div>
+    {%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <ol class="spf-stat__why">
+        {%- for block in section.blocks -%}
+          <li class="spf-stat__reason" {{ block.shopify_attributes }}>
+            <span class="spf-stat__idx" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+    {%- if s.claim != blank or s.claim_accent != blank -%}
+      <p class="spf-stat__claim">{{ s.claim }} {% if s.claim_accent != blank %}<em>{{ s.claim_accent }}</em>{% endif %}</p>
+    {%- endif -%}
+    {%- if s.source != blank -%}<p class="spf-stat__src">{{ s.source }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport: Cijfers",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Wrijving in je schoen" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "checkbox", "id": "show_numbers", "label": "Toon de twee getallen", "info": "Uit = alleen de redenen (blokken) eronder.", "default": true },
+    { "type": "text", "id": "value_old", "label": "Eerste getal (met punt)", "default": "0.60" },
+    { "type": "text", "id": "label_old", "label": "Label eerste getal", "default": "Gewone sok" },
+    { "type": "text", "id": "value_new", "label": "Tweede getal (met punt)", "default": "1.17" },
+    { "type": "text", "id": "label_new", "label": "Label tweede getal", "default": "Gripsok" },
+    { "type": "text", "id": "claim", "label": "Claim", "default": "Bijna het dubbele." },
+    { "type": "text", "id": "claim_accent", "label": "Claim (accentkleur)", "default": "95% meer grip." },
+    { "type": "textarea", "id": "source", "label": "Bronvermelding", "default": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17 (Apps et al. 2022). Het onderzoek ging over gripsokken in het algemeen, niet specifiek over HÏ Grip of rugby." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard (links)" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "checkbox", "id": "rough_edge", "label": "Ruwe bovenrand", "default": true },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#141414" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#f2f2f0" },
+    { "type": "color", "id": "heading_color", "label": "Kleur kop (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (tweede getal, claim)", "default": "#ccff00" },
+    { "type": "range", "id": "heading_gap", "label": "Ruimte tussen kop en blokjes", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "card_gap", "label": "Ruimte tussen de blokjes", "min": 0, "max": 48, "step": 2, "unit": "px", "default": 16 },
+    { "type": "range", "id": "claim_gap", "label": "Ruimte tussen blokjes en slotregel", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 148 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 140 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 }
+  ],
+  "blocks": [
+    { "type": "reason", "name": "Reden", "settings": [
+      { "type": "text", "id": "title", "label": "Titel", "default": "Je voet blijft staan" },
+      { "type": "textarea", "id": "text", "label": "Tekst", "default": "Het grip-patroon houdt je voet vast in je schoen." }
+    ] }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "Sport: Cijfers" } ]
+}
+{% endschema %}

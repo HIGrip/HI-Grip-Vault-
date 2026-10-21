@@ -1,0 +1,5 @@
+{% doc %}
+  Gemeenschappelijke data-attributen van een mv-sectie.
+  @param {object} s - section.settings
+{% enddoc %}
+{%- if s.custom_pad %} data-pad="custom"{% endif %} data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"

@@ -1,0 +1,6 @@
+/* Aansluiting (Denzel, Fase 2). Alleen correcties die tussen secties of na assemblage nodig zijn.
+   12: de regels drijven vanaf een uitgangspositie A naar binnen de container; de pill schuift A mee,
+   zodat pill en regels in de middenstand op één lijn staan. A = (x1 + x2) / 2. */
+@media (min-width: 769px) {
+  .hp-motion .hp-12-cta { transform: translate3d(calc((var(--hp-12-x1, 0px) + var(--hp-12-x2, 0px)) / 2), 0, 0); }
+}

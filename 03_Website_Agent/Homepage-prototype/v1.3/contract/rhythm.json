@@ -1,0 +1,116 @@
+{
+  "_uitleg": "1.2 (Lars 19-10): meer motion, kleur en spectakel. Basis blijft licht, maar met kleurmomenten: 03 volt, 07 de echte sportkleur, 08 zwart als Studio Freight. Donker: 08 en 12–13.",
+  "sections": [
+    {
+      "id": "01",
+      "name": "hero",
+      "bg": "--hi-near-black",
+      "fg": "--hi-white",
+      "note": "1.2 ronde 2 (Lars 19-10): de foto is de hele sectie, rand-tot-rand, geen witte rand. Near-black is alleen de laadkleur achter de foto."
+    },
+    {
+      "id": "02",
+      "name": "product",
+      "bg": "--hi-warm-dark",
+      "fg": "--hi-white",
+      "note": "1.3 (19-10): donker naar Studio Freight / landonorris.com. Kaarten wit op off-white (omgekeerd van de collectiepagina), zodat de witte productfoto's naadloos in hun kaart staan.",
+      "dark": true
+    },
+    {
+      "id": "03",
+      "name": "tussensectie",
+      "bg": "--hi-yellow",
+      "fg": "--hi-black",
+      "note": "1.2: energie-strook in volt (Lars: tussensectie 1 was saai). Volt als vlak is hier bewust toegestaan."
+    },
+    {
+      "id": "04",
+      "name": "social-proof",
+      "bg": "--hi-black",
+      "fg": "--hi-white",
+      "dark": true,
+      "note": "1.3 (19-10): donker naar Studio Freight / landonorris.com. "
+    },
+    {
+      "id": "05",
+      "name": "features",
+      "bg": "--hi-warm-dark",
+      "fg": "--hi-white",
+      "note": "1.3 (19-10): donker naar Studio Freight / landonorris.com. Exact de studiogrond van de 360°-opname, zodat de frames zonder rand in de sectie overlopen.",
+      "dark": true
+    },
+    {
+      "id": "06",
+      "name": "visuele-pauze",
+      "bg": "--hi-black",
+      "fg": "--hi-white",
+      "note": "1.3 (19-10): donker naar Studio Freight / landonorris.com. Warm na de koele studio; alleen typografie.",
+      "dark": true
+    },
+    {
+      "id": "07",
+      "name": "kies-je-sport",
+      "bg": "--hi-blue",
+      "fg": "--hi-white",
+      "dynamic": {
+        "padel": "--hi-blue",
+        "tennis": "--hi-orange",
+        "voetbal": "--hi-yellow",
+        "rugby": "--hi-red"
+      },
+      "transition": "background-color var(--hp-dur-2) var(--hp-ease)",
+      "note": "1.2 ronde 2 (Lars 19-10): de kleur van de sportpagina zelf. Bron: theme-ref/templates/page.sport-*.json accent_color (padel #0011A7, tennis #ff6a00, voetbal #ccff00, rugby #E10600). Op volt zwarte tekst.",
+      "fg_dynamic": {
+        "padel": "--hi-white",
+        "tennis": "--hi-white",
+        "voetbal": "--hi-black",
+        "rugby": "--hi-white"
+      }
+    },
+    {
+      "id": "08",
+      "name": "over-ons",
+      "bg": "--hi-black",
+      "fg": "--hi-white",
+      "dark": true,
+      "note": "1.2: split-screen zoals Studio Freight Battleface: zwart paneel met volt-looptekst, foto rand-tot-rand."
+    },
+    {
+      "id": "09",
+      "name": "tussensectie-zakelijk",
+      "bg": "--hi-white",
+      "fg": "--hi-black"
+    },
+    {
+      "id": "10",
+      "name": "zakelijk",
+      "bg": "--hi-black",
+      "fg": "--hi-white",
+      "dark": true,
+      "note": "1.3 (19-10): donker naar Studio Freight / landonorris.com. "
+    },
+    {
+      "id": "11",
+      "name": "faq",
+      "bg": "--hi-white",
+      "fg": "--hi-black",
+      "note": "Zoals de zakelijke FAQ in het thema (wit)."
+    },
+    {
+      "id": "12",
+      "name": "inspiratie",
+      "bg": "--hi-black",
+      "fg": "--hi-white",
+      "dark": true,
+      "note": "Donker moment 2: de afsluiting."
+    },
+    {
+      "id": "13",
+      "name": "footer",
+      "bg": "--hi-near-black",
+      "fg": "--hi-white",
+      "dark": true,
+      "note": "Buur 12 is ook donker: motivatie = één doorlopende donkere afsluiting; near-black tegenover zwart houdt de naad zichtbaar."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+[    4508ms] [INFO] Clear-Site-Data header on 'https://www.formswim.com/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://www.formswim.com/:0
+[    4680ms] [LOG] SHOPLIFT SCRIPT INITIALIZED! @ https://www.formswim.com/:16

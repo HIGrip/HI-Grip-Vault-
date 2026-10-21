@@ -1,0 +1,24 @@
+/* 12 INSPIRATIE · 1.6 (Lars 19-10: meer beweging, zonder achtergrond). Geen foto meer: zwart vlak met twee reuzenregels
+   die eindeloos tegen elkaar in lopen (wit en volt, om en om gevuld en als contour). Scrollen duwt de regels extra
+   opzij en laat ze hellen naar de scrollrichting (section.js: --hp-12-o en --hp-12-k), daarna veren ze terug.
+   Reduced motion: de regels staan stil en de zin is leesbaar. */
+.hp-12 { --hp-12-o: 0; --hp-12-k: 0; position: relative; overflow: clip; display: grid; align-content: center; gap: var(--hp-space-lg); min-height: min(90svh, 900px); background: var(--hi-black); color: var(--hi-white); padding-block: var(--hp-space-xl); }
+.hp-12-rows { display: grid; gap: 0.02em; font: italic 900 clamp(64px, 15vw, 260px)/0.86 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; }
+.hp-12-row { overflow: hidden; transform: skewX(calc(var(--hp-12-k) * 1deg)); }
+.hp-12-row--1 { translate: calc(var(--hp-12-o) * -1px) 0; }
+.hp-12-row--2 { translate: calc(var(--hp-12-o) * 1px) 0; color: var(--hi-yellow); }
+.hp-12-track { display: flex; width: max-content; }
+.hp-12-track { animation: hp-12-marq calc(var(--hp-dur-3) * 22) var(--hp-ease) infinite; animation-timing-function: linear; }
+.hp-12-row--2 .hp-12-track { animation-direction: reverse; }
+.hp-12.is-off .hp-12-track { animation-play-state: paused; }
+@keyframes hp-12-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.hp-12-w { flex: none; padding-right: 0.28em; white-space: nowrap; }
+.hp-12-w--o { color: transparent; -webkit-text-stroke: max(2px, 0.012em) currentColor; }
+.hp-12-row--1 .hp-12-w--o { -webkit-text-stroke-color: var(--hi-white); }
+.hp-12-row--2 .hp-12-w--o { -webkit-text-stroke-color: var(--hi-yellow); }
+.hp-12-inner { display: grid; justify-items: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-12-row { transform: none; translate: none; }
+  .hp-12-track { animation: none; }
+}

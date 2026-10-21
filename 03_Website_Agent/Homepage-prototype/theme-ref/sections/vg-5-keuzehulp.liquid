@@ -1,0 +1,520 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="vg2">
+<section class="sec{% if s.custom_pad %} vg2-pad{% endif %}" id="kies" aria-labelledby="kies-titel" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="wrap">
+      <div class="help__head rv">
+        <h2 class="xh2" id="kies-titel">{{ s.t1 | escape }} <em>{{ s.t2 | escape }}</em> {{ s.t3 | escape }}</h2>
+        <p class="lead">{{ s.t4 | escape }}</p>
+      </div>
+      <div class="help">
+        <div class="qs rv">
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t5 | escape }}</span>{{ s.t6 | escape }}</legend><div class="opts opts--sport"><span class="opt"><input type="radio" name="sport" id="s0" value="voetbal"><label for="s0">{{ s.t7 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s1" value="zaalvoetbal"><label for="s1">{{ s.t8 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s2" value="padel"><label for="s2">{{ s.t9 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s3" value="tennis"><label for="s3">{{ s.t10 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s4" value="rugby"><label for="s4">{{ s.t11 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s5" value="hockey"><label for="s5">{{ s.t12 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s6" value="basketbal"><label for="s6">{{ s.t13 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s7" value="volleybal"><label for="s7">{{ s.t14 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s8" value="pilates"><label for="s8">{{ s.t15 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s9" value="yoga"><label for="s9">{{ s.t16 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s10" value="fitness"><label for="s10">{{ s.t17 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s11" value="dans"><label for="s11">{{ s.t18 | escape }}</label></span><span class="opt"><input type="radio" name="sport" id="s12" value="anders" checked><label for="s12">{{ s.t19 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t20 | escape }}</span>{{ s.t21 | escape }}</legend><div class="opts"><span class="opt"><input type="radio" name="vaak" id="v0" value="laag" checked><label for="v0">{{ s.t22 | escape }}</label></span><span class="opt"><input type="radio" name="vaak" id="v1" value="hoog"><label for="v1">{{ s.t23 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t24 | escape }}</span>{{ s.t25 | escape }}</legend><div class="opts"><span class="opt"><input type="radio" name="voor" id="w0" value="training" checked><label for="w0">{{ s.t26 | escape }}</label></span><span class="opt"><input type="radio" name="voor" id="w1" value="wedstrijd"><label for="w1">{{ s.t27 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t28 | escape }}</span>{{ s.t29 | escape }}</legend><div class="opts"><span class="opt"><input type="radio" name="blaren" id="b0" value="vaak"><label for="b0">{{ s.t30 | escape }}</label></span><span class="opt"><input type="radio" name="blaren" id="b1" value="soms"><label for="b1">{{ s.t31 | escape }}</label></span><span class="opt"><input type="radio" name="blaren" id="b2" value="nee" checked><label for="b2">{{ s.t32 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t33 | escape }}</span>{{ s.t34 | escape }}</legend><div class="opts"><span class="opt"><input type="radio" name="prio" id="p0" value="prijs"><label for="p0">{{ s.t35 | escape }}</label></span><span class="opt"><input type="radio" name="prio" id="p1" value="comfort"><label for="p1">{{ s.t36 | escape }}</label></span><span class="opt"><input type="radio" name="prio" id="p2" value="beide" checked><label for="p2">{{ s.t37 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t38 | escape }}</span>{{ s.t39 | escape }}</legend><div class="opts opts--maat"><span class="opt"><input type="radio" name="maat" id="m0" value="34"><label for="m0">{{ s.t40 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m1" value="35"><label for="m1">{{ s.t41 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m2" value="36"><label for="m2">{{ s.t42 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m3" value="37"><label for="m3">{{ s.t43 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m4" value="38"><label for="m4">{{ s.t44 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m5" value="39"><label for="m5">{{ s.t45 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m6" value="40"><label for="m6">{{ s.t46 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m7" value="41"><label for="m7">{{ s.t47 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m8" value="42"><label for="m8">{{ s.t48 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m9" value="43"><label for="m9">{{ s.t49 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m10" value="44"><label for="m10">{{ s.t50 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m11" value="45"><label for="m11">{{ s.t51 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m12" value="46"><label for="m12">{{ s.t52 | escape }}</label></span><span class="opt"><input type="radio" name="maat" id="m13" value="47"><label for="m13">{{ s.t53 | escape }}</label></span></div></fieldset>
+        <fieldset class="q"><legend><span class="q__n" aria-hidden="true">{{ s.t54 | escape }}</span>{{ s.t55 | escape }}</legend><div class="opts"><span class="opt"><input type="radio" name="kleur" id="k0" value="wit"><label for="k0"><i class="dot dot--w"></i>{{ s.t56 | escape }}</label></span><span class="opt"><input type="radio" name="kleur" id="k1" value="zwart"><label for="k1"><i class="dot dot--k"></i>{{ s.t57 | escape }}</label></span><span class="opt"><input type="radio" name="kleur" id="k2" value="egaal" checked><label for="k2"><i class="dot dot--x"></i>{{ s.t58 | escape }}</label></span></div></fieldset>
+        </div>
+        <aside class="res rv d1" data-res aria-live="polite" aria-label="Jouw uitslag">
+          <span class="lbl">{{ s.t59 | escape }}</span>
+          <div class="res__img"><img data-res-img src="{%- if s.ima60 != blank -%}{{ s.ima60 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-10.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t61 | escape }}"></div>
+          <div class="res__head"><b data-res-name>{{ s.t62 | escape }}</b><span class="num" data-res-price>{{ s.t63 | escape }}</span></div>
+          <p class="res__tag" data-res-tag>{{ s.t64 | escape }}</p>
+          <ul class="res__why" data-res-why><li>{{ s.t65 | escape }}</li></ul>
+          <p class="res__size" data-res-size hidden></p>
+          <p class="res__note" data-res-note hidden></p>
+          <div class="res__act">
+            <a class="btn btn--k" data-res-link href="{{ s.url66 | default: "https://www.higrip.nl/products/performance-gripsokken" }}"><span data-res-cta>{{ s.t67 | escape }}</span> <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+            <a class="res__alt" data-res-alt href="{{ s.url68 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">{{ s.t69 | escape }}</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Keuzehulp",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "H2 · Wat heb",
+      "default": "Wat heb"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "EM · jij",
+      "default": "jij"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "H2 · nodig?",
+      "default": "nodig?"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "P · Eén sportvraag plus zes korte vragen. Je uit",
+      "default": "Eén sportvraag plus zes korte vragen. Je uitslag staat meteen naast je antwoorden."
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "SPAN · 1",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "LEGEND · Welke sport doe je vooral?",
+      "default": "Welke sport doe je vooral?"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "LABEL · Voetbal",
+      "default": "Voetbal"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "LABEL · Zaalvoetbal",
+      "default": "Zaalvoetbal"
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "LABEL · Padel",
+      "default": "Padel"
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "label": "LABEL · Tennis",
+      "default": "Tennis"
+    },
+    {
+      "type": "text",
+      "id": "t11",
+      "label": "LABEL · Rugby",
+      "default": "Rugby"
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "LABEL · Hockey",
+      "default": "Hockey"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "LABEL · Basketbal",
+      "default": "Basketbal"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "label": "LABEL · Volleybal",
+      "default": "Volleybal"
+    },
+    {
+      "type": "text",
+      "id": "t15",
+      "label": "LABEL · Pilates",
+      "default": "Pilates"
+    },
+    {
+      "type": "text",
+      "id": "t16",
+      "label": "LABEL · Yoga",
+      "default": "Yoga"
+    },
+    {
+      "type": "text",
+      "id": "t17",
+      "label": "LABEL · Fitness of CrossFit",
+      "default": "Fitness of CrossFit"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "label": "LABEL · Dans",
+      "default": "Dans"
+    },
+    {
+      "type": "text",
+      "id": "t19",
+      "label": "LABEL · Iets anders",
+      "default": "Iets anders"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "label": "SPAN · 2",
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "t21",
+      "label": "LEGEND · Hoe vaak sport je?",
+      "default": "Hoe vaak sport je?"
+    },
+    {
+      "type": "text",
+      "id": "t22",
+      "label": "LABEL · 1–2 keer per week",
+      "default": "1–2 keer per week"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "label": "LABEL · 3 keer of vaker",
+      "default": "3 keer of vaker"
+    },
+    {
+      "type": "text",
+      "id": "t24",
+      "label": "SPAN · 3",
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "t25",
+      "label": "LEGEND · Waarvoor draag je ze?",
+      "default": "Waarvoor draag je ze?"
+    },
+    {
+      "type": "text",
+      "id": "t26",
+      "label": "LABEL · Training of pilates",
+      "default": "Training of pilates"
+    },
+    {
+      "type": "text",
+      "id": "t27",
+      "label": "LABEL · Wedstrijden",
+      "default": "Wedstrijden"
+    },
+    {
+      "type": "text",
+      "id": "t28",
+      "label": "SPAN · 4",
+      "default": "4"
+    },
+    {
+      "type": "text",
+      "id": "t29",
+      "label": "LEGEND · Last van blaren of vermoeide voeten?",
+      "default": "Last van blaren of vermoeide voeten?"
+    },
+    {
+      "type": "text",
+      "id": "t30",
+      "label": "LABEL · Regelmatig",
+      "default": "Regelmatig"
+    },
+    {
+      "type": "text",
+      "id": "t31",
+      "label": "LABEL · Soms",
+      "default": "Soms"
+    },
+    {
+      "type": "text",
+      "id": "t32",
+      "label": "LABEL · Nauwelijks",
+      "default": "Nauwelijks"
+    },
+    {
+      "type": "text",
+      "id": "t33",
+      "label": "SPAN · 5",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "t34",
+      "label": "LEGEND · Wat vind je het belangrijkst?",
+      "default": "Wat vind je het belangrijkst?"
+    },
+    {
+      "type": "text",
+      "id": "t35",
+      "label": "LABEL · Een scherpe prijs",
+      "default": "Een scherpe prijs"
+    },
+    {
+      "type": "text",
+      "id": "t36",
+      "label": "LABEL · Comfort en vochtafvoer",
+      "default": "Comfort en vochtafvoer"
+    },
+    {
+      "type": "text",
+      "id": "t37",
+      "label": "LABEL · Maakt niet uit",
+      "default": "Maakt niet uit"
+    },
+    {
+      "type": "text",
+      "id": "t38",
+      "label": "SPAN · 6",
+      "default": "6"
+    },
+    {
+      "type": "text",
+      "id": "t39",
+      "label": "LEGEND · Welke maat heb je?",
+      "default": "Welke maat heb je?"
+    },
+    {
+      "type": "text",
+      "id": "t40",
+      "label": "LABEL · 34",
+      "default": "34"
+    },
+    {
+      "type": "text",
+      "id": "t41",
+      "label": "LABEL · 35",
+      "default": "35"
+    },
+    {
+      "type": "text",
+      "id": "t42",
+      "label": "LABEL · 36",
+      "default": "36"
+    },
+    {
+      "type": "text",
+      "id": "t43",
+      "label": "LABEL · 37",
+      "default": "37"
+    },
+    {
+      "type": "text",
+      "id": "t44",
+      "label": "LABEL · 38",
+      "default": "38"
+    },
+    {
+      "type": "text",
+      "id": "t45",
+      "label": "LABEL · 39",
+      "default": "39"
+    },
+    {
+      "type": "text",
+      "id": "t46",
+      "label": "LABEL · 40",
+      "default": "40"
+    },
+    {
+      "type": "text",
+      "id": "t47",
+      "label": "LABEL · 41",
+      "default": "41"
+    },
+    {
+      "type": "text",
+      "id": "t48",
+      "label": "LABEL · 42",
+      "default": "42"
+    },
+    {
+      "type": "text",
+      "id": "t49",
+      "label": "LABEL · 43",
+      "default": "43"
+    },
+    {
+      "type": "text",
+      "id": "t50",
+      "label": "LABEL · 44",
+      "default": "44"
+    },
+    {
+      "type": "text",
+      "id": "t51",
+      "label": "LABEL · 45",
+      "default": "45"
+    },
+    {
+      "type": "text",
+      "id": "t52",
+      "label": "LABEL · 46",
+      "default": "46"
+    },
+    {
+      "type": "text",
+      "id": "t53",
+      "label": "LABEL · 47",
+      "default": "47"
+    },
+    {
+      "type": "text",
+      "id": "t54",
+      "label": "SPAN · 7",
+      "default": "7"
+    },
+    {
+      "type": "text",
+      "id": "t55",
+      "label": "LEGEND · Welke kleur wil je?",
+      "default": "Welke kleur wil je?"
+    },
+    {
+      "type": "text",
+      "id": "t56",
+      "label": "LABEL · Wit",
+      "default": "Wit"
+    },
+    {
+      "type": "text",
+      "id": "t57",
+      "label": "LABEL · Zwart",
+      "default": "Zwart"
+    },
+    {
+      "type": "text",
+      "id": "t58",
+      "label": "LABEL · Maakt niet uit",
+      "default": "Maakt niet uit"
+    },
+    {
+      "type": "text",
+      "id": "t59",
+      "label": "SPAN · Jouw match",
+      "default": "Jouw match"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima60",
+      "label": "Afbeelding · sok-10.webp"
+    },
+    {
+      "type": "text",
+      "id": "t61",
+      "label": "Alt-tekst · Performance Gripsokken 1.0",
+      "default": "Performance Gripsokken 1.0"
+    },
+    {
+      "type": "text",
+      "id": "t62",
+      "label": "B · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "text",
+      "id": "t63",
+      "label": "SPAN · €14,95",
+      "default": "€14,95"
+    },
+    {
+      "type": "text",
+      "id": "t64",
+      "label": "P · Prijsvriendelijk",
+      "default": "Prijsvriendelijk"
+    },
+    {
+      "type": "text",
+      "id": "t65",
+      "label": "LI · Betrouwbare siliconen grip voor je traininge",
+      "default": "Betrouwbare siliconen grip voor je trainingen"
+    },
+    {
+      "type": "url",
+      "id": "url66",
+      "label": "Link · /products/performance-gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t67",
+      "label": "SPAN · Shop 1.0",
+      "default": "Shop 1.0"
+    },
+    {
+      "type": "url",
+      "id": "url68",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t69",
+      "label": "A · Bekijk ook de 2.0",
+      "default": "Bekijk ook de 2.0"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Keuzehulp"
+    }
+  ]
+}
+{% endschema %}

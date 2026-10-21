@@ -1,0 +1,188 @@
+{{ 'sh-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sh-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="sh">
+<script>document.currentScript.parentNode.classList.add("sh-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['sok-10.webp']={{ 'sh-sok-10.webp' | asset_url | json }};MV_ASSETS['sok-20-wit.webp']={{ 'sh-sok-20-wit.webp' | asset_url | json }};MV_ASSETS['sok-20-zwart.webp']={{ 'sh-sok-20-zwart.webp' | asset_url | json }};MV_ASSETS['sq-padel.webp']={{ 'sh-sq-padel.webp' | asset_url | json }};MV_ASSETS['sq-tennis.webp']={{ 'sh-sq-tennis.webp' | asset_url | json }};</script>
+{% raw %}<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"CollectionPage","@id":"https://www.higrip.nl/collections/gripsokken#webpage","url":"https://www.higrip.nl/collections/gripsokken","name":"Gripsokken kopen","description":"Performance Gripsokken 1.0 en 2.0 van HÏ Grip.","inLanguage":"nl-NL","publisher":{"@id":"https://www.higrip.nl/#organization"},"breadcrumb":{"@id":"https://www.higrip.nl/collections/gripsokken#breadcrumb"},"mainEntity":{"@id":"https://www.higrip.nl/collections/gripsokken#itemlist"},"relatedLink":"https://www.higrip.nl/pages/gripsokken-vergelijken"},
+{"@type":"ItemList","@id":"https://www.higrip.nl/collections/gripsokken#itemlist","numberOfItems":3,"itemListElement":[
+{"@type":"ListItem","position":1,"url":"https://www.higrip.nl/products/performance-gripsokken","name":"Performance Gripsokken"},
+{"@type":"ListItem","position":2,"url":"https://www.higrip.nl/products/performance-gripsokken-2-0-zwart","name":"Performance Gripsokken 2.0 Zwart"},
+{"@type":"ListItem","position":3,"url":"https://www.higrip.nl/products/performance-gripsokken-2-0-wit","name":"Performance Gripsokken 2.0 Wit"}]},
+{"@type":"BreadcrumbList","@id":"https://www.higrip.nl/collections/gripsokken#breadcrumb","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://www.higrip.nl/"},
+{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.higrip.nl/collections/gripsokken"}]},
+{"@type":"Organization","@id":"https://www.higrip.nl/#organization","name":"HÏ Grip","url":"https://www.higrip.nl/"}
+]}
+</script>{% endraw %}
+<div class="sh-bar{%- if s.custom_pad %} sh-custom-pad{% endif -%}" aria-label="Voordelen" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--sh-pt:{{ s.padding_top }}px;--sh-pb:{{ s.padding_bottom }}px;--sh-pt-m:{{ s.padding_top_mobile }}px;--sh-pb-m:{{ s.padding_bottom_mobile }}px;--sh-len:{{ s.scroll_length }}vh;--sh-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <ul> {%- for block in section.blocks -%}{%- if block.type == 'b1' -%}{%- assign b = block.settings -%}<li {{ block.shopify_attributes }}>{{ b.t1 | escape }}</li>{%- endif -%}{%- endfor -%}    {%- for block in section.blocks -%}{%- if block.type == 'b2' -%}{%- assign b = block.settings -%}<li aria-hidden="true" {{ block.shopify_attributes }}>{{ b.t1 | escape }}</li>{%- endif -%}{%- endfor -%}    </ul> </div>
+</div>
+{% schema %}
+{
+  "name": "Shop: USP-balk",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "b1",
+      "name": "1. li",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "LI · Gratis verzending vanaf €35",
+          "default": "Gratis verzending vanaf €35"
+        }
+      ]
+    },
+    {
+      "type": "b2",
+      "name": "2. li",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "LI · Gratis verzending vanaf €35",
+          "default": "Gratis verzending vanaf €35"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop: USP-balk"
+    }
+  ]
+}
+{% endschema %}

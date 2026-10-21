@@ -1,0 +1,47 @@
+/* 03 · tussensectie: lage strook met drie feiten, rust tussen 02 en 04 */
+.hp-03 { padding-block: var(--hp-space-md); background: var(--hi-white); }
+
+.hp-03-list {
+  display: grid;
+  gap: var(--hp-space-xs);
+  justify-items: center;
+  text-align: center;
+}
+
+.hp-03-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35em;
+  font-size: var(--hp-type-body);
+  line-height: 1.4;
+  color: var(--hi-graphite);
+}
+
+.hp-03-num { font-weight: 700; color: var(--hi-black); }
+
+.hp-03-star { font-size: 16px; line-height: 1; color: var(--hi-trust); }
+
+.hp-03-link {
+  color: var(--hi-black);
+  text-decoration: underline;
+  text-decoration-color: var(--hi-line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--hp-dur-1) var(--hp-ease);
+}
+@media (hover: hover) {
+  .hp-03-link:hover { text-decoration-color: currentColor; }
+}
+.hp-03-link:focus-visible,
+.hp-03-link:active { text-decoration-color: currentColor; }
+
+@media (min-width: 769px) {
+  .hp-03-list {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .hp-03-item { padding-inline: var(--hp-space-md); }
+  .hp-03-item + .hp-03-item { border-left: 1px solid var(--hi-line); }
+}

@@ -1,0 +1,156 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign tags = s.tags | newline_to_br | split: '<br />'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk--light zk-product zk-product--v2" id="{{ s.anchor | default: 'product' }}" style="{% render 'zk-vars', s: s %}--z-pin-bg:{{ s.pin_bg }};--z-pin-fg:{{ s.pin_fg }};{% if s.heading_2_color != blank %}--z-title2:{{ s.heading_2_color }};{% endif %}{% if s.stage_bg != blank %}--z-stage-bg:{{ s.stage_bg }};{% endif %}--z-valign:{{ s.v_align }};{% if s.rule_top %}border-top:1px solid var(--z-line);{% endif %}" {{ section.shopify_attributes }}>
+  {%- capture title -%}
+    {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+    {%- if s.heading != blank or s.heading_2 != blank -%}
+      <{{ tag }} class="zk__h2 zk-product__title">{{ s.heading }}{% if s.heading_2 != blank %} <span class="zk-product__title2">{{ s.heading_2 }}</span>{% endif %}</{{ tag }}>
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- if s.title_position == 'above' -%}
+    <div class="zk__wrap"><div class="zk__head" style="margin-bottom:0">{{ title }}</div></div>
+  {%- endif -%}
+  <div class="zk__wrap zk-split" data-zk-feats>
+    <div class="zk-stagewrap" data-zk-stage>
+    <div class="zk-stage">
+      {%- if s.image_1 != blank -%}
+        {{- s.image_1 | image_url: width: 900 | image_tag: class: 'is-on', loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 900px) 50vw, 100vw', alt: s.image_1.alt, data-sock: '1' -}}
+      {%- endif -%}
+      {%- if s.image_2 != blank -%}
+        {{- s.image_2 | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 900px) 50vw, 100vw', alt: s.image_2.alt, data-sock: '2' -}}
+      {%- endif -%}
+      {%- if s.show_pins -%}
+        {%- for block in section.blocks -%}
+          {%- if block.settings.show_pin -%}
+            <span class="zk-pin" data-f="{{ forloop.index }}" style="left:{{ block.settings.pos_x }}%;top:{{ block.settings.pos_y }}%" aria-hidden="true">{{ forloop.index }}</span>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+    {%- if s.image_1 != blank and s.image_2 != blank -%}
+      <div class="zk-swatches" role="group" aria-label="{{ s.swatch_aria | escape }}">
+        <button class="zk-swatch" type="button" data-sock="1" aria-pressed="true" style="--sw:{{ s.color_1 }}"><i></i>{{ s.label_1 }}</button>
+        <button class="zk-swatch" type="button" data-sock="2" aria-pressed="false" style="--sw:{{ s.color_2 }}"><i></i>{{ s.label_2 }}</button>
+      </div>
+    {%- endif -%}
+    </div>
+    <div>
+      {%- if s.title_position == 'beside' -%}<div class="zk__head" style="margin-bottom:32px">{{ title }}</div>{%- endif -%}
+      <ol class="zk-feats zk-feats--num{% unless s.show_numbers %} zk-feats--plain{% endunless %}">
+        {%- for block in section.blocks -%}
+          <li tabindex="0" data-f="{{ forloop.index }}" {{ block.shopify_attributes }}>
+            {%- if s.show_numbers -%}<i aria-hidden="true">{{ forloop.index }}</i>{%- endif -%}
+            <h3>{{ block.settings.title }}</h3><p>{{ block.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ol>
+      {%- comment -%} Regel "Maten: 35–38, 39–42" wordt een gelabelde rij; regels zonder dubbele punt komen samen in één rij {%- endcomment -%}
+      {%- capture loose -%}
+        {%- for t in tags -%}
+          {%- assign tt = t | strip -%}
+          {%- unless tt == blank or tt contains ':' -%}<span class="zk-tag">{{ tt }}</span>{%- endunless -%}
+        {%- endfor -%}
+      {%- endcapture -%}
+      <dl class="zk-specs">
+        {%- for t in tags -%}
+          {%- assign tt = t | strip -%}
+          {%- if tt contains ':' -%}
+            {%- assign spec_label = tt | split: ':' | first | strip -%}
+            {%- assign spec_values = tt | remove_first: spec_label | remove_first: ':' | split: ',' -%}
+            <div class="zk-specs__row">
+              <dt>{{ spec_label }}</dt>
+              <dd>
+                {%- for v in spec_values -%}
+                  {%- assign vv = v | strip -%}
+                  {%- if vv != blank -%}<span class="zk-tag">{{ vv }}</span>{%- endif -%}
+                {%- endfor -%}
+              </dd>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </dl>
+      {%- if loose != blank -%}<div class="zk-tags">{{ loose }}</div>{%- endif -%}
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var root = document.getElementById('shopify-section-{{ section.id }}');
+    if (!root) return;
+    var feats = root.querySelectorAll('.zk-feats li'), pins = root.querySelectorAll('.zk-pin');
+    function light(n) {
+      feats.forEach(function (f) { f.classList.toggle('is-on', f.dataset.f === n); });
+      pins.forEach(function (p) { p.classList.toggle('is-on', p.dataset.f === n); });
+    }
+    feats.forEach(function (f) {
+      ['mouseenter', 'focus', 'click'].forEach(function (ev) { f.addEventListener(ev, function () { light(f.dataset.f); }); });
+      f.addEventListener('mouseleave', function () { light(null); });
+      f.addEventListener('blur', function () { light(null); });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Zakelijk: Product",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "product" },
+    { "type": "header", "content": "Productfoto's" },
+    { "type": "image_picker", "id": "image_1", "label": "Foto 1 (vrijstaand, bij voorkeur transparant)" },
+    { "type": "text", "id": "label_1", "label": "Naam kleur 1", "default": "Zwart" },
+    { "type": "color", "id": "color_1", "label": "Kleurstip 1", "default": "#000000" },
+    { "type": "image_picker", "id": "image_2", "label": "Foto 2" },
+    { "type": "text", "id": "label_2", "label": "Naam kleur 2", "default": "Wit" },
+    { "type": "color", "id": "color_2", "label": "Kleurstip 2", "default": "#ffffff" },
+    { "type": "text", "id": "swatch_aria", "label": "Toegankelijke naam kleurkeuze", "default": "Kleur" },
+    { "type": "color", "id": "stage_bg", "label": "Achtergrond achter de foto (leeg = geen)" },
+    { "type": "header", "content": "Nummers op de sok" },
+    { "type": "checkbox", "id": "show_numbers", "label": "Kenmerken nummeren", "default": true },
+    { "type": "checkbox", "id": "show_pins", "label": "Nummers ook op de foto tonen", "default": true },
+    { "type": "color", "id": "pin_bg", "label": "Nummer op foto: achtergrond", "default": "#ffffff" },
+    { "type": "color", "id": "pin_fg", "label": "Nummer op foto: cijfer en rand", "default": "#000000" },
+    { "type": "paragraph", "content": "De plek van elk nummer stel je per kenmerk in (blok \"Kenmerk\")." },
+    { "type": "header", "content": "Tekst" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel (leeg = verborgen)" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Zes kenmerken." },
+    { "type": "text", "id": "heading_2", "label": "Kop, tweede deel (andere kleur)", "default": "Eén sok." },
+    { "type": "color", "id": "heading_2_color", "label": "Kleur tweede deel kop", "default": "#5c5d5f" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "select", "id": "title_position", "label": "Plaats van de kop", "options": [ { "value": "above", "label": "Boven foto en kenmerken" }, { "value": "beside", "label": "Naast de foto, boven de kenmerken" } ], "default": "above" },
+    { "type": "select", "id": "v_align", "label": "Foto en kenmerken uitlijnen", "options": [ { "value": "start", "label": "Bovenkant" }, { "value": "center", "label": "Midden" }, { "value": "end", "label": "Onderkant" } ], "default": "start" },
+    { "type": "textarea", "id": "tags", "label": "Labels onderaan (één rij per regel)", "info": "Schrijf 'Maten: 35–38, 39–42' voor een rij met label. Regels zonder dubbele punt komen samen in één rij.", "default": "Maten: 35–38, 39–42, 43–47\nKleuren: Zwart, Wit" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Kleur bovenregel", "default": "#5c5d5f" },
+    { "type": "checkbox", "id": "rule_top", "label": "Lijn boven de sectie", "default": true },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Kenmerk",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Titel", "default": "Compressie" },
+        { "type": "textarea", "id": "text", "label": "Tekst" },
+        { "type": "checkbox", "id": "show_pin", "label": "Nummer op de foto tonen", "default": true },
+        { "type": "range", "id": "pos_x", "label": "Plek op foto: van links", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 50 },
+        { "type": "range", "id": "pos_y", "label": "Plek op foto: van boven", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 50 }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Zakelijk: Product" } ]
+}
+{% endschema %}

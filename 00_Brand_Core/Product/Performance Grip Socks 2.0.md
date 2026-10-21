@@ -260,14 +260,14 @@ De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 
 Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
+- [[2026-10-19-productpagina-2-0-inspiratie-en-prototype]] — Productpagina 2.0 — inspiratie (On, Apple, Oura, AI-testthema) en prototype v1.0
+- [[2026-10-12-voordelenpagina-analyse]] — Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
+- [[2026-10-12-b2b-pagina-inspiratie]] — Inspiratie zakelijke pagina (HÏ Grip Zakelijk) — oktober 2026
 - [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
 - [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
 - [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] — Audit higrip.nl — SEO, AEO, GEO, AIO en SXO op 8 oktober
 - [[2026-10-07-shoppagina-keuzepagina]] — Shoppagina higrip.nl — keuzepagina 1.0 vs 2.0, SEO-keuzes en concept
 - [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
-- [[2026-09-28-seo-conversietest-run-2]] — SEO- en conversietest run 2 — auditblok B, concepten voor 2.0-producten en collecties
-- … en 4 oudere (zie [[Waar staat wat]])
+- … en 7 oudere (zie [[Waar staat wat]])
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

@@ -1,0 +1,742 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [ref=f31e1]:
+  - generic [ref=f31e2]: Free shipping to Nederland on all orders above €120.00
+  - link "Skip to content" [ref=f31e4] [cursor=pointer]:
+    - /url: "#MainContent"
+  - banner [ref=f31e7]:
+    - navigation "Top" [ref=f31e8]:
+      - generic [ref=f31e12]:
+        - link "Liquid Death" [ref=f31e14] [cursor=pointer]:
+          - /url: /en-nl
+        - generic [ref=f31e33]:
+          - link "Beverages" [expanded] [ref=f31e36] [cursor=pointer]:
+            - /url: /en-nl/collections/beverages-eu
+          - link "Merch" [expanded] [ref=f31e39] [cursor=pointer]:
+            - /url: /en-nl/collections/merch-store
+          - link "Store Locator" [ref=f31e40] [cursor=pointer]:
+            - /url: /en-nl/pages/where-to-buy
+          - link "Sell Your Soul" [ref=f31e41] [cursor=pointer]:
+            - /url: /en-nl/pages/sell-your-soul-eu
+          - link "About" [ref=f31e42] [cursor=pointer]:
+            - /url: /en-nl/pages/manifesto
+          - link "Timewaster 5000" [ref=f31e43] [cursor=pointer]:
+            - /url: /en-nl/pages/timewaster-5000
+        - generic [ref=f31e46]:
+          - link "Go to Account Page" [ref=f31e47] [cursor=pointer]:
+            - /url: /account
+          - link "0 items in cart, view bag" [ref=f31e51] [cursor=pointer]:
+            - /url: /en-nl/cart
+  - main [ref=f31e55]:
+    - generic [ref=f31e58]:
+      - button "prev slide" [ref=f31e59] [cursor=pointer]: prev
+      - button "next slide" [ref=f31e60] [cursor=pointer]: next
+      - generic [ref=f31e61]:
+        - generic [ref=f31e65]:
+          - heading [level=2] [ref=f31e67]: EASY-DRINKING ENERGY FOR PEOPLE-DRINKING VAMPIRES
+          - link [ref=f31e71] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0H7ZKH2K6?maas=maas_adg_29C90AD9322ECC85806EB391EF45A368_afap_abs&ref_=aa_maas&tag=maas
+            - text: SHOP NOW
+        - generic [ref=f31e75]:
+          - heading "BUY LIQUID DEATH ENERGY, GET A FREE CHAINSAW*" [level=2] [ref=f31e77]
+          - link "LEARN HOW" [ref=f31e81] [cursor=pointer]:
+            - /url: /en-nl/pages/freechainsaws
+        - generic [ref=f31e85]:
+          - heading [level=2] [ref=f31e87]: LIQUID DEATH X FEASTABLES PEANUT BUTTER CUP FLAVORED SPARKLING WATER
+          - link [ref=f31e91] [cursor=pointer]:
+            - /url: /en-nl/pages/peanutbuttercup
+            - text: WATCH VIDEO
+        - generic [ref=f31e95]:
+          - heading [level=2] [ref=f31e97]: WE MADE A BETTER-FOR-YOU ENERGY DRINK
+          - link [ref=f31e101] [cursor=pointer]:
+            - /url: /en-nl/products/scary-strawberry
+            - text: SHOP NOW
+        - generic [ref=f31e105]:
+          - heading [level=2] [ref=f31e107]: LESS SUGAR.* HUGE FLAVOR.
+          - link [ref=f31e111] [cursor=pointer]:
+            - /url: /en-nl/products/flavored-sparkling-variety-pack
+            - text: SHOP NOW
+        - generic [ref=f31e115]:
+          - heading [level=2] [ref=f31e117]: LESS SUGAR.* GREATER TEA.
+          - link [ref=f31e121] [cursor=pointer]:
+            - /url: /en-nl/products/variety-tea
+            - text: SHOP NOW
+        - generic [ref=f31e125]:
+          - heading [level=2] [ref=f31e127]: DEADLY MOUNTAINS. DELICIOUS WATER.
+          - link [ref=f31e131] [cursor=pointer]:
+            - /url: /en-nl/products/mountain-water-still
+            - text: SHOP NOW
+      - generic [ref=f31e132]:
+        - button "Go to slide 1" [ref=f31e133] [cursor=pointer]
+        - button "Go to slide 2" [ref=f31e134] [cursor=pointer]
+        - button "Go to slide 3" [ref=f31e135] [cursor=pointer]
+        - button "Go to slide 4" [ref=f31e136] [cursor=pointer]
+        - button "Go to slide 5" [ref=f31e137] [cursor=pointer]
+        - button "Go to slide 6" [ref=f31e138] [cursor=pointer]
+        - button "Go to slide 7" [ref=f31e139] [cursor=pointer]
+    - heading "MURDER YOUR THIRST" [level=2] [ref=f31e143]
+    - generic [ref=f31e145]:
+      - generic [ref=f31e146]:
+        - generic:
+          - link "BLUEBERRY BUZZSAW, Iced Tea, 20 Calories" [ref=f31e147] [cursor=pointer]:
+            - /url: /en-nl/products/blueberry-buzzsaw
+            - heading "BLUEBERRY BUZZSAW" [level=2] [ref=f31e149]
+            - paragraph [ref=f31e150]: Iced Tea
+            - generic [ref=f31e151]: 20 Calories
+          - link "SQUEEZED TO DEATH, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e153] [cursor=pointer]:
+            - /url: /en-nl/products/squeezed-to-death
+            - heading "SQUEEZED TO DEATH" [level=2] [ref=f31e155]
+            - paragraph [ref=f31e156]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e157]: 10 Calories
+          - link "MANGO CHAINSAW, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e159] [cursor=pointer]:
+            - /url: /en-nl/products/mango-chainsaw
+            - heading "MANGO CHAINSAW" [level=2] [ref=f31e161]
+            - paragraph [ref=f31e162]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e163]: 10 Calories
+          - link "GRAVE FRUIT, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e165] [cursor=pointer]:
+            - /url: /en-nl/products/grave-fruit
+            - heading "GRAVE FRUIT" [level=2] [ref=f31e167]
+            - paragraph [ref=f31e168]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e169]: 10 Calories
+          - link "GREEN GUILLOTINE, Iced Tea, 20 Calories" [ref=f31e171] [cursor=pointer]:
+            - /url: /en-nl/products/green-guillotine
+            - heading "GREEN GUILLOTINE" [level=2] [ref=f31e173]
+            - paragraph [ref=f31e174]: Iced Tea
+            - generic [ref=f31e175]: 20 Calories
+          - link "SCARY STRAWBERRY, Energy, 5 Calories" [ref=f31e177] [cursor=pointer]:
+            - /url: /en-nl/products/scary-strawberry
+            - heading "SCARY STRAWBERRY" [level=2] [ref=f31e179]
+            - paragraph [ref=f31e180]: Energy
+            - generic [ref=f31e181]: 5 Calories
+          - link "TROPICAL TERROR, Energy, 5 Calories" [ref=f31e183] [cursor=pointer]:
+            - /url: /en-nl/products/tropical-terror
+            - heading "TROPICAL TERROR" [level=2] [ref=f31e185]
+            - paragraph [ref=f31e186]: Energy
+            - generic [ref=f31e187]: 5 Calories
+          - link "ORANGE HORROR, Energy, 5 Calories" [ref=f31e189] [cursor=pointer]:
+            - /url: /en-nl/products/orange-horror
+            - heading "ORANGE HORROR" [level=2] [ref=f31e191]
+            - paragraph [ref=f31e192]: Energy
+            - generic [ref=f31e193]: 5 Calories
+          - link "MURDER MYSTERY, Energy, 5 Calories" [ref=f31e195] [cursor=pointer]:
+            - /url: /en-nl/products/murder-mystery
+            - heading "MURDER MYSTERY" [level=2] [ref=f31e197]
+            - paragraph [ref=f31e198]: Energy
+            - generic [ref=f31e199]: 5 Calories
+          - link "CHERRY OBITUARY, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e201] [cursor=pointer]:
+            - /url: /en-nl/products/cherry-obituary
+            - heading "CHERRY OBITUARY" [level=2] [ref=f31e203]
+            - paragraph [ref=f31e204]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e205]: 10 Calories
+          - link "DOCTOR DEATH, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e207] [cursor=pointer]:
+            - /url: /en-nl/products/doctor-death
+            - heading "DOCTOR DEATH" [level=2] [ref=f31e209]
+            - paragraph [ref=f31e210]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e211]: 10 Calories
+          - link "DEAD BILLIONAIRE, Iced Tea, 20 Calories" [ref=f31e213] [cursor=pointer]:
+            - /url: /en-nl/products/dead-billionaire
+            - heading "DEAD BILLIONAIRE" [level=2] [ref=f31e215]
+            - paragraph [ref=f31e216]: Iced Tea
+            - generic [ref=f31e217]: 20 Calories
+          - link "MOUNTAIN WATER, Still Mountain Water, 0 Calories" [ref=f31e219] [cursor=pointer]:
+            - /url: /en-nl/products/mountain-water-still
+            - heading "MOUNTAIN WATER" [level=2] [ref=f31e221]
+            - paragraph [ref=f31e222]: Still Mountain Water
+            - generic [ref=f31e223]: 0 Calories
+          - link "KILLER COLA, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e225] [cursor=pointer]:
+            - /url: /en-nl/products/killer-cola
+            - heading "KILLER COLA" [level=2] [ref=f31e227]
+            - paragraph [ref=f31e228]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e229]: 10 Calories
+          - link "SEVERED LIME, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e231] [cursor=pointer]:
+            - /url: /en-nl/products/severed-lime
+            - heading "SEVERED LIME" [level=2] [ref=f31e233]
+            - paragraph [ref=f31e234]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e235]: 10 Calories
+          - link "MOUNTAIN WATER, Sparkling Mountain Water, 0 Calories" [ref=f31e237] [cursor=pointer]:
+            - /url: /en-nl/products/mountain-water-sparkling
+            - heading "MOUNTAIN WATER" [level=2] [ref=f31e239]
+            - paragraph [ref=f31e240]: Sparkling Mountain Water
+            - generic [ref=f31e241]: 0 Calories
+          - link "REST IN PEACH, Iced Tea, 20 Calories" [ref=f31e243] [cursor=pointer]:
+            - /url: /en-nl/products/rest-in-peach
+            - heading "REST IN PEACH" [level=2] [ref=f31e245]
+            - paragraph [ref=f31e246]: Iced Tea
+            - generic [ref=f31e247]: 20 Calories
+          - link "SWEET REAPER, Iced Tea, 20 Calories" [ref=f31e249] [cursor=pointer]:
+            - /url: /en-nl/products/sweet-reaper
+            - heading "SWEET REAPER" [level=2] [ref=f31e251]
+            - paragraph [ref=f31e252]: Iced Tea
+            - generic [ref=f31e253]: 20 Calories
+          - link "ROOTBEER WRATH, Soda-Flavored Sparkling Water, 10 Calories" [ref=f31e255] [cursor=pointer]:
+            - /url: /en-nl/products/rootbeer-wrath
+            - heading "ROOTBEER WRATH" [level=2] [ref=f31e257]
+            - paragraph [ref=f31e258]: Soda-Flavored Sparkling Water
+            - generic [ref=f31e259]: 10 Calories
+      - link "Shop Now" [ref=f31e262] [cursor=pointer]:
+        - /url: /en-nl/products/murder-mystery
+    - generic [ref=f31e265]:
+      - heading "PLASTIC RECYCLING IS A MYTH. MOST PLASTIC IS SENT TO LANDFILLS. ALUMINUM IS INFINITELY RECYCLABLE." [level=2] [ref=f31e266]
+      - link "LEARN MORE" [ref=f31e269] [cursor=pointer]:
+        - /url: /en-nl/pages/death-to-plastic-bottles
+    - heading [level=2] [ref=f31e275]:
+      - link "KILLER MERCH" [ref=f31e276] [cursor=pointer]:
+        - /url: /en-nl/collections/merch-store
+    - generic [ref=f31e279]:
+      - heading [level=3]
+      - generic [ref=f31e285]:
+        - text: 
+        - generic [ref=f31e286]:
+          - generic "Carousel navigation"
+          - generic [ref=f31e288]:
+            - generic "product" [ref=f31e289]:
+              - link [ref=f31e291] [cursor=pointer]:
+                - /url: /en-nl/products/reusable-slaughter-bottle-white?variant=41591354654929&_rdiscovery-handle=reusable-slaughter-bottle-white&_rdiscovery-widget=89109
+                - img "White water bottle with 'Liquid Death' branding on a white background" [ref=f31e292]
+              - generic [ref=f31e293]:
+                - heading [level=5] [ref=f31e294] [cursor=pointer]:
+                  - link "View Reusable Slaughter Bottle (32oz)" [ref=f31e295]:
+                    - /url: /en-nl/products/reusable-slaughter-bottle-white?variant=41591354654929&_rdiscovery-handle=reusable-slaughter-bottle-white&_rdiscovery-widget=89109
+                    - text: Reusable Slaughter Bottle (32oz)
+                - generic [ref=f31e298]:
+                  - generic [ref=f31e299]: Price
+                  - text: €39,00
+              - button "Add the product, Reusable Slaughter Bottle (32oz) to Cart" [ref=f31e301] [cursor=pointer]: Add to Cart
+            - generic "product" [ref=f31e302]:
+              - link [ref=f31e304] [cursor=pointer]:
+                - /url: /en-nl/products/deaths-a-beach-chair?variant=42569057599697&_rdiscovery-handle=deaths-a-beach-chair&_rdiscovery-widget=89109
+                - img "View Death's A Beach Chair" [ref=f31e305]
+              - generic [ref=f31e306]:
+                - heading [level=5] [ref=f31e307] [cursor=pointer]:
+                  - link "View Death's A Beach Chair" [ref=f31e308]:
+                    - /url: /en-nl/products/deaths-a-beach-chair?variant=42569057599697&_rdiscovery-handle=deaths-a-beach-chair&_rdiscovery-widget=89109
+                    - text: Death's A Beach Chair
+                - generic [ref=f31e311]:
+                  - generic [ref=f31e312]: Price
+                  - text: €85,00
+              - button "Add the product, Death's A Beach Chair to Cart" [ref=f31e314] [cursor=pointer]: Add to Cart
+            - generic "product" [ref=f31e315]:
+              - link [ref=f31e317] [cursor=pointer]:
+                - /url: /en-nl/products/instant-death-sweatshirt-pink?variant=41475475570897&_rdiscovery-handle=instant-death-sweatshirt-pink&_rdiscovery-widget=89109
+                - img "View Instant Death Sweatshirt" [ref=f31e318]
+              - generic [ref=f31e319]:
+                - heading [level=5] [ref=f31e320] [cursor=pointer]:
+                  - link "View Instant Death Sweatshirt" [ref=f31e321]:
+                    - /url: /en-nl/products/instant-death-sweatshirt-pink?variant=41475475570897&_rdiscovery-handle=instant-death-sweatshirt-pink&_rdiscovery-widget=89109
+                    - text: Instant Death Sweatshirt
+                - generic [ref=f31e324]:
+                  - generic [ref=f31e325]: Price
+                  - text: €56,00
+              - button "Add the product, Instant Death Sweatshirt to Cart" [ref=f31e327] [cursor=pointer]: Add to Cart
+            - generic "product" [ref=f31e328]:
+              - link [ref=f31e330] [cursor=pointer]:
+                - /url: /en-nl/products/the-flasket?variant=41488356737233&_rdiscovery-handle=the-flasket&_rdiscovery-widget=89109
+                - img "Silver flask with skull and snake design on a white background" [ref=f31e331]
+              - generic [ref=f31e332]:
+                - heading [level=5] [ref=f31e333] [cursor=pointer]:
+                  - link "View The Flasket" [ref=f31e334]:
+                    - /url: /en-nl/products/the-flasket?variant=41488356737233&_rdiscovery-handle=the-flasket&_rdiscovery-widget=89109
+                    - text: The Flasket
+                - generic [ref=f31e337]:
+                  - generic [ref=f31e338]: Price
+                  - text: €35,00
+              - button "Add the product, The Flasket to Cart" [ref=f31e340] [cursor=pointer]: Add to Cart
+    - generic [ref=f31e343]:
+      - link [ref=f31e344] [cursor=pointer]:
+        - /url: /en-nl/pages/country-club
+        - button "JOIN THE CLUB" [ref=f31e347]
+      - link [ref=f31e351] [cursor=pointer]:
+        - /url: /en-nl/pages/death-peddlers
+        - button "SELL LIQUID DEATH" [ref=f31e354]
+    - paragraph [ref=f31e362]:
+      - text: "*Terms and conditions apply. Open only to individuals 18+ purchasing from authorized retailers in the 50 U.S. states or D.C. Campaign begins September 25, 2026 at 12:00AM PT and ends November 30, 2026 at 11:59PM PT, or when all Reward Codes are distributed, whichever is sooner. Reward: one (1) Xbox and one (1) Steam Gears of War: E-Day Reward Code via email. Codes unlock in-game content only; game sold separately. To enter, sign up on the official landing page with your email address and phone number, connect a listed retail account to Liquid Death, and purchase a qualifying Liquid Death Sparkling Energy Drink. Limit one (1) Valid Submission per user. Void where prohibited. View"
+      - link "Official Rules." [ref=f31e363] [cursor=pointer]:
+        - /url: https://liquiddeath.com/pages/gearsofwar-digital-official-rules
+  - contentinfo [ref=f31e365]:
+    - generic [ref=f31e366]:
+      - generic [ref=f31e367]:
+        - generic [ref=f31e368]:
+          - paragraph [ref=f31e369]: "For a good time call:"
+          - list [ref=f31e370]:
+            - listitem [ref=f31e371]:
+              - link "7.5M @liquiddeath" [ref=f31e372] [cursor=pointer]:
+                - /url: https://www.instagram.com/liquiddeath/
+                - generic [ref=f31e373]: 7.5M
+                - generic [ref=f31e379]: "@liquiddeath"
+            - listitem [ref=f31e380]:
+              - link "7.2M @liquiddeath" [ref=f31e381] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@liquiddeath
+                - generic [ref=f31e382]: 7.2M
+                - generic [ref=f31e386]: "@liquiddeath"
+        - generic [ref=f31e387]:
+          - heading "stay updated" [level=3] [ref=f31e388]
+          - generic [ref=f31e389]:
+            - generic [ref=f31e390]:
+              - textbox "Email" [ref=f31e391]:
+                - /placeholder: Enter Email
+              - button "Submit form" [ref=f31e393] [cursor=pointer]
+            - combobox "Select your country" [ref=f31e397]:
+              - option "Select Country" [disabled]
+              - option "Afghanistan"
+              - option "Aland Islands"
+              - option "Albania"
+              - option "Algeria"
+              - option "American Samoa"
+              - option "Andorra"
+              - option "Angola"
+              - option "Anguilla"
+              - option "Antarctica"
+              - option "Antigua and Barbuda"
+              - option "Argentina"
+              - option "Armenia"
+              - option "Aruba"
+              - option "Australia"
+              - option "Austria"
+              - option "Azerbaijan"
+              - option "Bahamas"
+              - option "Bahrain"
+              - option "Bangladesh"
+              - option "Barbados"
+              - option "Belarus"
+              - option "Belgium"
+              - option "Belize"
+              - option "Benin"
+              - option "Bermuda"
+              - option "Bhutan"
+              - option "Bolivia"
+              - option "Bonaire, Sint Eustatius and Saba"
+              - option "Bosnia and Herzegovina"
+              - option "Botswana"
+              - option "Bouvet Island"
+              - option "Brazil"
+              - option "British Indian Ocean Territory"
+              - option "Brunei Darussalam"
+              - option "Bulgaria"
+              - option "Burkina Faso"
+              - option "Burundi"
+              - option "Cambodia"
+              - option "Cameroon"
+              - option "Canada"
+              - option "Cape Verde"
+              - option "Cayman Islands"
+              - option "Central African Republic"
+              - option "Chad"
+              - option "Chile"
+              - option "China"
+              - option "Christmas Island"
+              - option "Cocos (Keeling) Islands"
+              - option "Colombia"
+              - option "Comoros"
+              - option "Congo"
+              - option "Congo, Democratic Republic of the Congo"
+              - option "Cook Islands"
+              - option "Costa Rica"
+              - option "Cote D'Ivoire"
+              - option "Croatia"
+              - option "Cuba"
+              - option "Curacao"
+              - option "Cyprus"
+              - option "Czech Republic"
+              - option "Denmark"
+              - option "Djibouti"
+              - option "Dominica"
+              - option "Dominican Republic"
+              - option "Ecuador"
+              - option "Egypt"
+              - option "El Salvador"
+              - option "Equatorial Guinea"
+              - option "Eritrea"
+              - option "Estonia"
+              - option "Ethiopia"
+              - option "Falkland Islands (Malvinas)"
+              - option "Faroe Islands"
+              - option "Fiji"
+              - option "Finland"
+              - option "France"
+              - option "French Guiana"
+              - option "French Polynesia"
+              - option "French Southern Territories"
+              - option "Gabon"
+              - option "Gambia"
+              - option "Georgia"
+              - option "Germany"
+              - option "Ghana"
+              - option "Gibraltar"
+              - option "Greece"
+              - option "Greenland"
+              - option "Grenada"
+              - option "Guadeloupe"
+              - option "Guam"
+              - option "Guatemala"
+              - option "Guernsey"
+              - option "Guinea"
+              - option "Guinea-Bissau"
+              - option "Guyana"
+              - option "Haiti"
+              - option "Heard Island and Mcdonald Islands"
+              - option "Holy See (Vatican City State)"
+              - option "Honduras"
+              - option "Hong Kong"
+              - option "Hungary"
+              - option "Iceland"
+              - option "India"
+              - option "Indonesia"
+              - option "Iran, Islamic Republic of"
+              - option "Iraq"
+              - option "Ireland"
+              - option "Isle of Man"
+              - option "Israel"
+              - option "Italy"
+              - option "Jamaica"
+              - option "Japan"
+              - option "Jersey"
+              - option "Jordan"
+              - option "Kazakhstan"
+              - option "Kenya"
+              - option "Kiribati"
+              - option "Korea, Democratic People's Republic of"
+              - option "Korea, Republic of"
+              - option "Kosovo"
+              - option "Kuwait"
+              - option "Kyrgyzstan"
+              - option "Lao People's Democratic Republic"
+              - option "Lebanon"
+              - option "Lesotho"
+              - option "Liberia"
+              - option "Libyan Arab Jamahiriya"
+              - option "Liechtenstein"
+              - option "Lithuania"
+              - option "Luxembourg"
+              - option "Macao"
+              - option "Macedonia, the Former Yugoslav Republic of"
+              - option "Madagascar"
+              - option "Malawi"
+              - option "Malaysia"
+              - option "Maldives"
+              - option "Mali"
+              - option "Malta"
+              - option "Marshall Islands"
+              - option "Martinique"
+              - option "Mauritania"
+              - option "Mauritius"
+              - option "Mayotte"
+              - option "Mexico"
+              - option "Micronesia, Federated States of"
+              - option "Moldova, Republic of"
+              - option "Monaco"
+              - option "Mongolia"
+              - option "Montenegro"
+              - option "Montserrat"
+              - option "Morocco"
+              - option "Mozambique"
+              - option "Myanmar"
+              - option "Namibia"
+              - option "Nauru"
+              - option "Nepal"
+              - option "Netherlands" [selected]
+              - option "Netherlands Antilles"
+              - option "New Caledonia"
+              - option "New Zealand"
+              - option "Nicaragua"
+              - option "Niger"
+              - option "Nigeria"
+              - option "Niue"
+              - option "Norfolk Island"
+              - option "Northern Mariana Islands"
+              - option "Norway"
+              - option "Oman"
+              - option "Pakistan"
+              - option "Palau"
+              - option "Palestinian Territory, Occupied"
+              - option "Panama"
+              - option "Papua New Guinea"
+              - option "Paraguay"
+              - option "Peru"
+              - option "Philippines"
+              - option "Pitcairn"
+              - option "Poland"
+              - option "Portugal"
+              - option "Puerto Rico"
+              - option "Qatar"
+              - option "Reunion"
+              - option "Romania"
+              - option "Russian Federation"
+              - option "Rwanda"
+              - option "Saint Barthelemy"
+              - option "Saint Helena"
+              - option "Saint Kitts and Nevis"
+              - option "Saint Lucia"
+              - option "Saint Martin"
+              - option "Saint Pierre and Miquelon"
+              - option "Saint Vincent and the Grenadines"
+              - option "Samoa"
+              - option "San Marino"
+              - option "Sao Tome and Principe"
+              - option "Saudi Arabia"
+              - option "Senegal"
+              - option "Serbia"
+              - option "Serbia and Montenegro"
+              - option "Seychelles"
+              - option "Sierra Leone"
+              - option "Singapore"
+              - option "Sint Maarten"
+              - option "Slovakia"
+              - option "Slovenia"
+              - option "Solomon Islands"
+              - option "Somalia"
+              - option "South Africa"
+              - option "South Georgia and the South Sandwich Islands"
+              - option "South Sudan"
+              - option "Spain"
+              - option "Sri Lanka"
+              - option "Sudan"
+              - option "Suriname"
+              - option "Svalbard and Jan Mayen"
+              - option "Sweden"
+              - option "Switzerland"
+              - option "Syrian Arab Republic"
+              - option "Taiwan, Province of China"
+              - option "Tajikistan"
+              - option "Tanzania, United Republic of"
+              - option "Thailand"
+              - option "Timor-Leste"
+              - option "Togo"
+              - option "Tokelau"
+              - option "Tonga"
+              - option "Trinidad and Tobago"
+              - option "Tunisia"
+              - option "Turkey"
+              - option "Turkmenistan"
+              - option "Turks and Caicos Islands"
+              - option "Tuvalu"
+              - option "Uganda"
+              - option "Ukraine"
+              - option "United Arab Emirates"
+              - option "United Kingdom"
+              - option "United States"
+              - option "United States Minor Outlying Islands"
+              - option "Uruguay"
+              - option "Uzbekistan"
+              - option "Vanuatu"
+              - option "Venezuela"
+              - option "Viet Nam"
+              - option "Virgin Islands, British"
+              - option "Virgin Islands, U.s."
+              - option "Wallis and Futuna"
+              - option "Western Sahara"
+              - option "Yemen"
+              - option "Zambia"
+              - option "Zimbabwe"
+            - generic [ref=f31e398]:
+              - checkbox "Opt in for updates" [ref=f31e400]
+              - paragraph [ref=f31e402]:
+                - text: By submitting your email, you agree to the
+                - link "Terms & Conditions" [ref=f31e403] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+                - text: ", including the mandatory individual arbitration provision, and the"
+                - link "Privacy Policy" [ref=f31e404] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+                - text: ", and agree to be brainwashed by Liquid Death marketing through rare (but hilarious) emails."
+      - generic [ref=f31e405]:
+        - generic [ref=f31e406]:
+          - heading "INFORMATION" [level=3] [ref=f31e407]
+          - list [ref=f31e408]:
+            - listitem [ref=f31e409]:
+              - link "Earn Skulls" [ref=f31e410] [cursor=pointer]:
+                - /url: /en-nl/pages/earn-rewards
+            - listitem [ref=f31e411]:
+              - link "Gift Card Balance" [ref=f31e412] [cursor=pointer]:
+                - /url: /en-nl/pages/check-gift-card-balance
+            - listitem [ref=f31e413]:
+              - link "Check Gift Card Balance" [ref=f31e414] [cursor=pointer]:
+                - /url: /en-nl/pages/check-gift-card-balance
+            - listitem [ref=f31e415]:
+              - link "Water Quality Report" [ref=f31e416] [cursor=pointer]:
+                - /url: https://cdn.shopify.com/s/files/1/0079/4289/7737/files/Liquid-Death-Water-Report-2021.pdf?v=1613501172
+            - listitem [ref=f31e417]:
+              - link "Contact Us" [ref=f31e418] [cursor=pointer]:
+                - /url: /en-nl/pages/summon-us
+        - generic [ref=f31e419]:
+          - heading "COMPANY" [level=3] [ref=f31e420]
+          - list [ref=f31e421]:
+            - listitem [ref=f31e422]:
+              - link "Timewaster 5000" [ref=f31e423] [cursor=pointer]:
+                - /url: /en-nl/pages/timewaster-5000
+            - listitem [ref=f31e424]:
+              - link "Death to Plastic Bottles" [ref=f31e425] [cursor=pointer]:
+                - /url: /en-nl/pages/death-to-plastic-eu
+            - listitem [ref=f31e426]:
+              - link "Murder Head Death Club" [ref=f31e427] [cursor=pointer]:
+                - /url: /en-nl/pages/murder-head-death-club
+            - listitem [ref=f31e428]:
+              - link "FAQ" [ref=f31e429] [cursor=pointer]:
+                - /url: /en-nl/pages/faq-eu
+            - listitem [ref=f31e430]:
+              - link "Careers" [ref=f31e431] [cursor=pointer]:
+                - /url: /en-nl/pages/careers
+            - listitem [ref=f31e432]:
+              - link "About" [ref=f31e433] [cursor=pointer]:
+                - /url: /en-nl/pages/manifesto
+    - generic [ref=f31e434]:
+      - generic [ref=f31e435]:
+        - list [ref=f31e436]:
+          - listitem [ref=f31e437]:
+            - link "Beverages" [ref=f31e438] [cursor=pointer]:
+              - /url: /en-nl/collections/beverages-eu
+          - listitem [ref=f31e439]:
+            - link "Merch" [ref=f31e440] [cursor=pointer]:
+              - /url: /en-nl/collections/merch-store
+          - listitem [ref=f31e441]:
+            - link "Account" [ref=f31e442] [cursor=pointer]:
+              - /url: /en-nl/account
+          - listitem [ref=f31e443]:
+            - button "Cookie Settings" [ref=f31e444] [cursor=pointer]
+          - listitem [ref=f31e445]:
+            - button "Your Privacy Choices" [ref=f31e446] [cursor=pointer]
+        - paragraph [ref=f31e449]:
+          - text: If you are visually-impaired and having difficulty with our website, call us at
+          - link "(888) 980-5384" [ref=f31e450] [cursor=pointer]:
+            - /url: tel:+8889805384
+          - text: . For all other inquiries, email
+          - link "info@liquiddeath.com" [ref=f31e451] [cursor=pointer]:
+            - /url: mailto:info@liquiddeath.com
+          - text: .
+        - paragraph [ref=f31e452]: © 2026 Liquid Death Mountain Water
+      - 'button "Select country and currency: Netherlands (EUR €)" [ref=f31e457] [cursor=pointer]': Netherlands (EUR €)
+  - status
+  - status
+  - generic:
+    - link [aria-hidden]:
+      - /url: /en-nl/cart
+  - dialog "Privacy" [ref=f31e461]:
+    - generic [ref=f31e463]:
+      - generic [ref=f31e466]:
+        - text: We use cookies and other tracking technologies to enhance the user experience on our website, for analytical purposes and for advertising and marketing. Some uses of these technologies involve sharing information about your use of our website with third parties. For more, please see our
+        - link "Privacy Policy" [ref=f31e467] [cursor=pointer]:
+          - /url: https://liquiddeath.com/policies/privacy-policy
+        - text: . By continuing to our website, you consent to our
+        - link "Terms" [ref=f31e468] [cursor=pointer]:
+          - /url: https://liquiddeath.com/policies/terms-of-service
+        - text: .
+      - generic [ref=f31e470]:
+        - button "Your Privacy Choices, Opens the preference center dialog" [ref=f31e471] [cursor=pointer]: Your Privacy Choices
+        - button "Continue to Site" [ref=f31e472] [cursor=pointer]
+  - generic [ref=f31e473]:
+    - generic [ref=f31e474]:
+      - heading [level=2] [ref=f31e476]: Your Cart
+      - button [ref=f31e477] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f31e478]: 
+    - generic [ref=f31e480]:
+      - generic [ref=f31e481]:
+        - heading [level=4] [ref=f31e482]: Your cart is empty!
+        - paragraph [ref=f31e483]
+        - paragraph [ref=f31e484]: Add your favorite items to your cart.
+        - paragraph [ref=f31e485]
+        - paragraph [ref=f31e486]:
+          - link [ref=f31e487] [cursor=pointer]:
+            - /url: /collections/merch-store
+            - text: Shop Now
+        - paragraph [ref=f31e488]
+        - paragraph [ref=f31e489]
+      - generic [ref=f31e495]:
+        - text: 
+        - heading [level=4] [ref=f31e496]: BUT WAIT, THERE'S MORE!
+        - generic [ref=f31e499]:
+          - generic [ref=f31e500]:
+            - link [ref=f31e502] [cursor=pointer]:
+              - /url: /en-nl/products/masked-death-can-cooler?variant=41488359260369&_rdiscovery-handle=masked-death-can-cooler&_rdiscovery-widget=140327
+            - generic [ref=f31e504]:
+              - heading [level=5] [ref=f31e505] [cursor=pointer]:
+                - link [ref=f31e506]:
+                  - /url: /en-nl/products/masked-death-can-cooler?variant=41488359260369&_rdiscovery-handle=masked-death-can-cooler&_rdiscovery-widget=140327
+                  - text: Masked Death Can Cooler (2-Pack)
+              - generic [ref=f31e507]: Tan
+              - generic [ref=f31e510]:
+                - generic [ref=f31e511]: Price
+                - text: €9,00
+            - button [ref=f31e513] [cursor=pointer]: Add to Cart
+          - generic [ref=f31e514]:
+            - link [ref=f31e516] [cursor=pointer]:
+              - /url: /en-nl/products/licwid-deth-kids-tee?variant=40858422313169&_rdiscovery-handle=licwid-deth-kids-tee&_rdiscovery-widget=140327
+            - generic [ref=f31e518]:
+              - heading [level=5] [ref=f31e519] [cursor=pointer]:
+                - link [ref=f31e520]:
+                  - /url: /en-nl/products/licwid-deth-kids-tee?variant=40858422313169&_rdiscovery-handle=licwid-deth-kids-tee&_rdiscovery-widget=140327
+                  - text: Licwid Deth Kids Tee
+              - generic [ref=f31e521]: Black / Toddler 2T
+              - generic [ref=f31e523]:
+                - generic [ref=f31e524]:
+                  - generic [ref=f31e525]: Sale price
+                  - text: €10,00
+                - generic [ref=f31e526]:
+                  - generic [ref=f31e527]: Original price
+                  - text: €26,00
+            - button [ref=f31e529] [cursor=pointer]: Add to Cart
+          - generic [aria-hidden] [ref=f31e530]:
+            - link [ref=f31e532] [cursor=pointer]:
+              - /url: /en-nl/products/future-death-tee-youth?variant=40866996486353&_rdiscovery-handle=future-death-tee-youth&_rdiscovery-widget=140327
+            - generic [ref=f31e534]:
+              - heading [level=5] [ref=f31e535] [cursor=pointer]:
+                - link [ref=f31e536]:
+                  - /url: /en-nl/products/future-death-tee-youth?variant=40866996486353&_rdiscovery-handle=future-death-tee-youth&_rdiscovery-widget=140327
+                  - text: Future Death Kids Tee
+              - generic [ref=f31e537]: Black / Toddler 2T
+              - generic [ref=f31e539]:
+                - generic [ref=f31e540]:
+                  - generic [ref=f31e541]: Sale price
+                  - text: €14,00
+                - generic [ref=f31e542]:
+                  - generic [ref=f31e543]: Original price
+                  - text: €26,00
+            - button [ref=f31e545] [cursor=pointer]: Add to Cart
+          - generic [aria-hidden] [ref=f31e546]:
+            - link [ref=f31e548] [cursor=pointer]:
+              - /url: /en-nl/products/thrashed-to-death-kids-tee?variant=40866996191441&_rdiscovery-handle=thrashed-to-death-kids-tee&_rdiscovery-widget=140327
+            - generic [ref=f31e550]:
+              - heading [level=5] [ref=f31e551] [cursor=pointer]:
+                - link [ref=f31e552]:
+                  - /url: /en-nl/products/thrashed-to-death-kids-tee?variant=40866996191441&_rdiscovery-handle=thrashed-to-death-kids-tee&_rdiscovery-widget=140327
+                  - text: Thrashed to Death Kids Tee
+              - generic [ref=f31e553]: Black / Toddler 2T
+              - generic [ref=f31e555]:
+                - generic [ref=f31e556]:
+                  - generic [ref=f31e557]: Sale price
+                  - text: €14,00
+                - generic [ref=f31e558]:
+                  - generic [ref=f31e559]: Original price
+                  - text: €26,00
+            - button [ref=f31e561] [cursor=pointer]: Add to Cart
+  - paragraph [ref=f31e563]: Your cart progress is 0% complete. YOU ARE €78,04 AWAY FROM FREE SHIPPING
+  - textbox "ftr-tmp-input" [ref=f31e564]

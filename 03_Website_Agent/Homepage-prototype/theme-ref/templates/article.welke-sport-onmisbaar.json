@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken worden vaak nog geassocieerd met voetbal. Dat is begrijpelijk, want daar werden ze als eerste breed zichtbaar. Maar inmiddels is duidelijk dat het voordeel van extra voetgrip veel breder toepasbaar is.</p><p>Van teamsporten tot fitness en van yoga tot pilates: overal waar stabiliteit en controle belangrijk zijn, winnen gripsokken terrein.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Teamsporten: explosiviteit onder controle</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>In sporten zoals voetbal, hockey en zaalvoetbal draait alles om snelle richtingswisselingen en korte sprints. Tijdens deze acties ontstaan hoge krachten tussen voet en schoen.</p><p>Wanneer de voet intern beweegt, gaat er energie verloren en neemt de kans op wrijving toe.</p><p>Daarom zijn gripsokken in teamsporten inmiddels een van de meest gekozen upgrades onder prestatiegerichte spelers. Ze helpen de voet beter te fixeren, wat vooral merkbaar is bij:</p><ul><li>kapbewegingen</li><li>versnellingen</li><li>plotselinge stops</li></ul><p>Steeds meer clubs en trainers adviseren het gebruik ervan als onderdeel van de standaarduitrusting.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Fitness en krachttraining: een stabiele basis voor jou</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Ook in de gym groeit de populariteit snel. Bij oefeningen zoals squats, lunges en sled pushes is stabiliteit van de voet essentieel voor een efficiënte krachtopbouw.</p><p>Wanneer de voet in de schoen schuift, kan dat leiden tot:</p><ul><li>verlies van kracht</li><li>extra correcties</li><li>minder stabiele uitvoering</li></ul><p>Gripsokken zorgen hier voor extra fixatie, wat bij zware sets duidelijk verschil kan maken. Daarom worden ze steeds vaker getest en goedgekeurd door performance-gerichte krachtsporters.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_YayyeY": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Yoga en pilates: controle zonder glijden</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_xY7VYX": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>In yoga- en pilatesstudio’s zijn gripsokken misschien wel de stilste doorbraak. In deze trainingen draait alles om balans, controle en lichaamsbewustzijn.</p><p>Zelfs minimale glijbewegingen op een mat kunnen de uitvoering verstoren. Antislipzones onder de sok bieden hier een praktische oplossing: meer grip zonder in te leveren op bewegingsvrijheid.</p><p>Het is dan ook niet verrassend dat gripsokken in veel studio’s inmiddels als beste beoordeeld door instructeurs.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_UcyXFP": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Eén oplossing voor meerdere sporten</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_3JHaR7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Voor sporters die verschillende trainingen combineren, is het voordeel duidelijk: één goed paar gripsokken werkt in vrijwel elke setting waar stabiliteit telt.</p><p>Wil je zelf ervaren waarom HÏ Grip zo populair en veel verkocht is onder fanatieke sporters? Bekijk de collectie, want op = op.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_cNYLke": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop gripsokken",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "text_YayyeY",
+        "text_xY7VYX",
+        "text_UcyXFP",
+        "text_3JHaR7",
+        "button_cNYLke"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

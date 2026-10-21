@@ -1,0 +1,561 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "about_hero": {
+      "type": "about-hero",
+      "settings": {
+        "media_type": "image",
+        "image": "shopify://shop_images/IMG_3844.jpg",
+        "image_alt": "Sporter in witte HÏ Grip gripsokken in actie",
+        "video_url": "",
+        "focus_x": 50,
+        "focus_y": 40,
+        "overlay": 100,
+        "height_desktop": 92,
+        "height_mobile": 72,
+        "line_1": "Sportswear mag nooit&nbsp;",
+        "line_1_align": "left",
+        "line_1_align_m": "left",
+        "line_2": "",
+        "line_2_align": "left",
+        "line_2_align_m": "left",
+        "line_3": "&nbsp;een obstakel zijn.",
+        "line_3_align": "left",
+        "line_3_align_m": "left",
+        "line_4": "<em>Het is je fundament.</em>",
+        "line_4_align": "left",
+        "line_4_align_m": "left",
+        "heading_tag": "h1",
+        "heading_size_desktop": 130,
+        "heading_size_mobile": 42,
+        "line_height": 90,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "animate": true,
+        "zoom": true
+      }
+    },
+    "about_timeline": {
+      "type": "about-timeline",
+      "blocks": {
+        "milestone_1": {
+          "type": "milestone",
+          "settings": {
+            "date": "Dec 2024",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "Oprichting op Hogeschool Rotterdam",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        },
+        "milestone_2": {
+          "type": "milestone",
+          "settings": {
+            "date": "Feb 2025",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "Pre-order fase",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        },
+        "milestone_3": {
+          "type": "milestone",
+          "settings": {
+            "date": "Mei 2025",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "Lancering eerste lijn gripsokken",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        },
+        "milestone_4": {
+          "type": "milestone",
+          "settings": {
+            "date": "Sep 2025",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "5+ B2B-partners",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        },
+        "milestone_5": {
+          "type": "milestone",
+          "settings": {
+            "date": "juni 2026",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "3000+ sporters dragen HÏ Grip",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        },
+        "milestone_6": {
+          "type": "milestone",
+          "settings": {
+            "date": "Aug 2026",
+            "date_align": "left",
+            "date_align_m": "left",
+            "title": "Lancering Grip Socks 2.0",
+            "title_align": "left",
+            "title_align_m": "left"
+          }
+        }
+      },
+      "block_order": [
+        "milestone_1",
+        "milestone_2",
+        "milestone_3",
+        "milestone_4",
+        "milestone_5",
+        "milestone_6"
+      ],
+      "settings": {
+        "line_1": "Van projectgroep",
+        "line_1_align": "left",
+        "line_1_align_m": "left",
+        "line_2": "naar <em>3500+ sporters.</em>",
+        "line_2_align": "left",
+        "line_2_align_m": "left",
+        "heading_tag": "h2",
+        "heading_size_desktop": 90,
+        "heading_size_mobile": 36,
+        "line_height": 90,
+        "padding_top": 140,
+        "padding_bottom": 96,
+        "padding_top_mobile": 72,
+        "padding_bottom_mobile": 32,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "line_color_1": "#ccff00",
+        "line_color_2": "#ff6a00",
+        "line_color_3": "#e10600",
+        "animate": true
+      }
+    },
+    "about_strip": {
+      "type": "about-strip",
+      "blocks": {
+        "photo_1": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/image00003.jpg",
+            "caption": "Pitch",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        },
+        "photo_2": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/image00008.jpg",
+            "caption": "Shoot",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        },
+        "photo_3": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/IMG_1655.jpg",
+            "caption": "Padel",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        },
+        "photo_4": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/Gripsokken_voetbal_eae56a39-e1de-4628-af81-080c53ca1414.jpg",
+            "caption": "Voetbal",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        },
+        "photo_5": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/IMG_1623.jpg",
+            "caption": "Gym",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        },
+        "photo_6": {
+          "type": "photo",
+          "settings": {
+            "alt": "",
+            "image": "shopify://shop_images/Tennis_actie_gripsokken.jpg",
+            "caption": "Tennis",
+            "caption_align": "left",
+            "caption_align_m": "left"
+          }
+        }
+      },
+      "block_order": [
+        "photo_1",
+        "photo_2",
+        "photo_3",
+        "photo_4",
+        "photo_5",
+        "photo_6"
+      ],
+      "settings": {
+        "height_desktop": 440,
+        "height_mobile": 220,
+        "gap": 12,
+        "grayscale": true,
+        "padding_top": 0,
+        "padding_bottom": 52,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 52,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "animate": true
+      }
+    },
+    "about_founders": {
+      "type": "about-founders",
+      "blocks": {
+        "founder_1": {
+          "type": "founder",
+          "settings": {
+            "name": "Lars",
+            "name_align": "left",
+            "name_align_m": "left",
+            "portrait": "shopify://shop_images/IMG_2569.jpg",
+            "focus_y": 20,
+            "sport": "Voetbal & Tennis",
+            "role": "",
+            "chips_align": "left",
+            "chips_align_m": "left",
+            "quote": "Elk detail telt op het veld, maar ook voor je sportswear",
+            "quote_align": "left",
+            "quote_align_m": "left",
+            "accent": "#e10600"
+          }
+        },
+        "founder_2": {
+          "type": "founder",
+          "settings": {
+            "name": "Timo",
+            "name_align": "left",
+            "name_align_m": "left",
+            "portrait": "shopify://shop_images/over_ons_foto_Timo.png",
+            "focus_y": 20,
+            "sport": "Snowbaorden & Gym",
+            "role": "",
+            "chips_align": "left",
+            "chips_align_m": "left",
+            "quote": "Een kleine verbetering merk je pas echt in de laatste minuut.",
+            "quote_align": "left",
+            "quote_align_m": "left",
+            "accent": "#4d63ff"
+          }
+        },
+        "founder_3": {
+          "type": "founder",
+          "settings": {
+            "name": "Tigo",
+            "name_align": "left",
+            "name_align_m": "left",
+            "portrait": "shopify://shop_images/Over_Ons_Foto_Tigo_HI_Grip.jpg",
+            "focus_y": 20,
+            "sport": "Voetbal",
+            "role": "",
+            "chips_align": "left",
+            "chips_align_m": "left",
+            "quote": "Iedere sporter moet op zijn spullen kunnen bouwen.",
+            "quote_align": "left",
+            "quote_align_m": "left",
+            "accent": "#ff6a00"
+          }
+        }
+      },
+      "block_order": [
+        "founder_1",
+        "founder_2",
+        "founder_3"
+      ],
+      "settings": {
+        "line_1": "Drie founders één missie",
+        "line_1_align": "left",
+        "line_1_align_m": "left",
+        "line_2": "",
+        "line_2_align": "left",
+        "line_2_align_m": "left",
+        "heading_tag": "h2",
+        "heading_size_desktop": 86,
+        "heading_size_mobile": 36,
+        "line_height": 100,
+        "padding_top": 132,
+        "padding_bottom": 132,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "accent_color": "#000000",
+        "animate": true
+      }
+    },
+    "about_mission": {
+      "type": "about-mission",
+      "settings": {
+        "heading": "Wij <em>versnellen</em> de <em>beweging</em> van iedere sporter.",
+        "heading_align": "left",
+        "heading_align_m": "left",
+        "button_label": "Lees onze missie",
+        "button_url": "/pages/onze-missie",
+        "button_align": "left",
+        "button_align_m": "left",
+        "heading_tag": "h2",
+        "heading_size_desktop": 130,
+        "heading_size_mobile": 42,
+        "line_height": 90,
+        "scroll_length": 240,
+        "scroll_length_mobile": 135,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "animate": true,
+        "show_lines": true
+      }
+    },
+    "about_first_step": {
+      "type": "about-first-step",
+      "blocks": {
+        "polaroid_1": {
+          "type": "polaroid",
+          "settings": {
+            "alt": "Founder als kind met een beker op het voetbalveld",
+            "caption": "Timo",
+            "caption_align": "left",
+            "caption_align_m": "left",
+            "tape": "#0011a7"
+          }
+        },
+        "polaroid_2": {
+          "type": "polaroid",
+          "settings": {
+            "image": "shopify://shop_images/Over_Ons_foto.png",
+            "alt": "Founder als kind neemt een bal aan",
+            "caption": "Tigo",
+            "caption_align": "left",
+            "caption_align_m": "left",
+            "tape": "#ffa600"
+          }
+        },
+        "polaroid_3": {
+          "type": "polaroid",
+          "settings": {
+            "image": "shopify://shop_images/witte_gripsokken_voetbal.png",
+            "alt": "Founder als kind strikt zijn voetbalschoenen",
+            "caption": "lars",
+            "caption_align": "left",
+            "caption_align_m": "left",
+            "tape": "#e10600"
+          }
+        }
+      },
+      "block_order": [
+        "polaroid_1",
+        "polaroid_2",
+        "polaroid_3"
+      ],
+      "settings": {
+        "heading": "Elke sporter is ooit begonnen met de eerste stap.",
+        "heading_align": "left",
+        "heading_align_m": "left",
+        "lead": "Dit zijn wij, jaren geleden. Die eerste stap bepaalt nog steeds hoe we naar sport kijken.",
+        "lead_align": "left",
+        "lead_align_m": "left",
+        "heading_tag": "h2",
+        "heading_size_desktop": 90,
+        "heading_size_mobile": 36,
+        "line_height": 90,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "accent_color": "#000000",
+        "animate": true
+      }
+    },
+    "about_values": {
+      "type": "about-values",
+      "blocks": {
+        "value_1": {
+          "type": "value",
+          "settings": {
+            "icon": "comfort",
+            "word": "Comfort",
+            "word_align": "left",
+            "word_align_m": "left",
+            "text": "Geen irritaties, alle focus op resultaat. In welke omstandigheden dan ook, van begin tot eind.",
+            "text_align": "left",
+            "text_align_m": "left",
+            "color": "#0011a7"
+          }
+        },
+        "value_2": {
+          "type": "value",
+          "settings": {
+            "icon": "vertrouwen",
+            "word": "Vertrouwen",
+            "word_align": "left",
+            "word_align_m": "left",
+            "text": "Wie vertrouwen haalt uit zijn materiaal, haalt het beste uit zichzelf.",
+            "text_align": "left",
+            "text_align_m": "left",
+            "color": "#ff6a00"
+          }
+        },
+        "value_3": {
+          "type": "value",
+          "settings": {
+            "icon": "innovatie",
+            "word": "Innovatie",
+            "word_align": "left",
+            "word_align_m": "left",
+            "text": "Altijd opzoek naar de volgende stap. Wij geloven dat wie stil staat achter blijft.",
+            "text_align": "left",
+            "text_align_m": "left",
+            "color": "#e10600"
+          }
+        }
+      },
+      "block_order": [
+        "value_1",
+        "value_2",
+        "value_3"
+      ],
+      "settings": {
+        "line_1": "Pure performance komt",
+        "line_1_align": "center",
+        "line_1_align_m": "center",
+        "line_2": "nooit van <em>één kant.</em>",
+        "line_2_align": "center",
+        "line_2_align_m": "center",
+        "button_label": "Lees de visie",
+        "button_url": "/pages/onze-visie",
+        "button_align": "left",
+        "button_align_m": "left",
+        "heading_tag": "h2",
+        "heading_size_desktop": 76,
+        "heading_size_mobile": 25,
+        "line_height": 116,
+        "padding_top": 160,
+        "padding_bottom": 160,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 32,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "animate": true
+      }
+    },
+    "about_outro": {
+      "type": "about-outro",
+      "disabled": true,
+      "settings": {
+        "heading": "Ga door waar anderen <em>stoppen.</em>",
+        "heading_align": "center",
+        "heading_align_m": "center",
+        "wordmark": "HÏ GRIP",
+        "show_dot": false,
+        "foot_text": "",
+        "foot_align": "left",
+        "foot_align_m": "center",
+        "heading_tag": "h2",
+        "heading_size_desktop": 60,
+        "heading_size_mobile": 40,
+        "line_height": 94,
+        "padding_top": 160,
+        "padding_bottom": 0,
+        "padding_top_mobile": 36,
+        "padding_bottom_mobile": 0,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "animate": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "about_hero",
+    "about_timeline",
+    "about_strip",
+    "about_founders",
+    "about_mission",
+    "about_first_step",
+    "about_values",
+    "about_outro"
+  ]
+}

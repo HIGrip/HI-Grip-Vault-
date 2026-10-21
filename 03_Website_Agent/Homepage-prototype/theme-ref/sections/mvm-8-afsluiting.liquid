@@ -1,0 +1,183 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['gripsokken-tennisclub.jpg']={{ 'mv-gripsokken-tennisclub.jpg' | asset_url | json }};MV_ASSETS['hero-tennis-serve.jpg']={{ 'mv-hero-tennis-serve.jpg' | asset_url | json }};MV_ASSETS['rotterdam-business-school.jpg']={{ 'mv-rotterdam-business-school.jpg' | asset_url | json }};</script>
+<section class="mv-band-black mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="outro" aria-label="Afsluiting" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-wrap"> <p class="mv-out__text" data-words>{{ s.t1 }}</p> <div class="mv-out__row mv-rv"> <p>{{ s.t2 | escape }} <a class="mv-textlink" href="{{ s.url3 | default: 'https://www.higrip.nl/pages/over-ons' }}">{{ s.t4 | escape }}</a>.</p> <a class="mv-pill mv-pill--light" href="{{ s.url5 | default: 'https://www.higrip.nl/pages/onze-visie' }}">{{ s.t6 | escape }}</a> </div> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Missie: Afsluiting",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "t1",
+      "label": "P · Wie blijft gaan, bepaalt zelf waar het stopt.",
+      "default": "Wie blijft gaan, bepaalt zelf waar het <em>stopt.</em>"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "P · De missie is waar we vandaag staan. Waar we naartoe gaan, lees",
+      "default": "De missie is waar we vandaag staan. Waar we naartoe gaan, lees je in de visie. Benieuwd hoe het begon? Lees"
+    },
+    {
+      "type": "url",
+      "id": "url3",
+      "label": "Link · het verhaal van Team HÏ Grip"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "A · het verhaal van Team HÏ Grip",
+      "default": "het verhaal van Team HÏ Grip"
+    },
+    {
+      "type": "url",
+      "id": "url5",
+      "label": "Link · Ontdek de visie"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "A · Ontdek de visie",
+      "default": "Ontdek de visie"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Missie: Afsluiting"
+    }
+  ]
+}
+{% endschema %}

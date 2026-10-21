@@ -1,0 +1,247 @@
+[    1829ms] [LOG] **[EnhancedSessionStorage] Initializing 'mcpData' as empty object** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1846ms] [LOG] **Initializing Sitemap** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1849ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1849ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1850ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1851ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1851ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1851ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1851ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1851ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1852ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1852ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1852ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1852ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1853ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1853ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1854ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1855ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1856ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1856ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1857ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1858ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1859ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1859ms] [LOG] ****Start Looking for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1859ms] [LOG] ****Existing Page Loaded Event***** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1859ms] [LOG] ****Waiting for PAGE LOAD***** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1861ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'user'** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1862ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1862ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1862ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1866ms] [LOG] **[EnhancedSessionStorage] Current store:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1866ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'user':** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1866ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1866ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1138
+[    1866ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1866ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1867ms] [LOG] **[EnhancedSessionStorage] Current store:** {} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1867ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** null @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    1867ms] [LOG] ****ACTION EVENT**** {source: Object, user: Object, interaction: Object, pageView: true} @ https://cdn.evgnet.com/beacon/arcteryx/eu_production/scripts/evergage.min.js:1136
+[    4113ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4113ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4123ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4123ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4124ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:46431)
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:121106)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94033)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    4125ms] Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at i (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:120765)
+    at oO (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:99090)
+    at oM (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:98960)
+    at ox (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:95731)
+    at oS (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:94286)
+    at x (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:130755)
+    at MessagePort.T (https://arcteryx.com/content-pages-app/_next/static/chunks/framework-97862ef36bc4065f.js:1:131285)
+[    3130ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    3284ms] [LOG] Missing accessToken z: Missing Refresh Token (audience: 'https://profiles.arcteryx.com', scope: 'openid read:profile-attributes update:profile-attributes update:guest-profile profile email offline_access')
+    at ob._getTokenUsingRefreshToken (https://arcteryx.com/content-pages-app/_next/static/chunks/27613f40-cc0eb90360fd6098.js:1:169784)
+    at async https://arcteryx.com/content-pages-app/_next/static/chunks/27613f40-cc0eb90360fd6098.js:1:162992
+    at async https://arcteryx.com/content-pages-app/_next/static/chunks/27613f40-cc0eb90360fd6098.js:1:15690 @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3774ms] [LOG] **[poll||User Detected]** {event: User Detected, user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3776ms] [LOG] **[User Detected]** {event: User Detected, user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3776ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'user'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3777ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3777ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3777ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3777ms] [LOG] **[EnhancedSessionStorage] Current store:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3778ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'user':** null @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3778ms] [LOG] **[EnhancedSessionStorage] setItem called with key: 'user', value:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3778ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3778ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3779ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3779ms] [LOG] **[EnhancedSessionStorage] Updated store:** {user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3779ms] [LOG] **[EnhancedSessionStorage] _setStore called for key 'mcpData' with value:** {user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3780ms] [LOG] **[EnhancedSessionStorage] sessionStorage updated for key 'mcpData':** {"user":{}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3780ms] [LOG] **[poll||Page Loaded]** {event: Page Loaded, currency: EUR, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3781ms] [LOG] **[Page Loaded]** {event: Page Loaded, currency: EUR, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3781ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3782ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3782ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3782ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3782ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3783ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** null @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3783ms] [LOG] **[EnhancedSessionStorage] setItem called with key: 'page', value:** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3783ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3783ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3784ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3784ms] [LOG] **[EnhancedSessionStorage] Updated store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3784ms] [LOG] **[EnhancedSessionStorage] _setStore called for key 'mcpData' with value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3785ms] [LOG] **[EnhancedSessionStorage] sessionStorage updated for key 'mcpData':** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3785ms] [LOG] ****pageloadcounter** 1 @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3785ms] [LOG] ****First PAGE LOAD | DO Not Re-Init***** 1 @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3787ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3788ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3788ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3788ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3789ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3789ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3789ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3789ms] [LOG] ****CUSTOM PAGE LOAD***** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3790ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3790ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3790ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3791ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3791ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3791ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3792ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3792ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3792ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3792ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3793ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3793ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3793ms] [LOG] **PRODUCT PAGE LOADING** {event: Page Loaded, currency: EUR, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3794ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3794ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3794ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3795ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3795ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3795ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3795ms] [LOG] ****CHECKING CHECKOUT PAGE MATCH***** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3796ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3796ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3796ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3796ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3797ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3797ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3797ms] [LOG] ****ACCOUNT PAGE MATCH***** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3798ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3798ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3798ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3798ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3798ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3799ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3799ms] [LOG] ****ACCOUNT PAGE MATCH***** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3800ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3800ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3800ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3800ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3801ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3801ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3801ms] [LOG] ****ACCOUNT PAGE MATCH***** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3802ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3802ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3804ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3804ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3804ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3805ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3805ms] [LOG] **[EnhancedSessionStorage] getItem called with key: 'page'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3806ms] [LOG] **[EnhancedSessionStorage] _getStore called for key 'mcpData'** @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3806ms] [LOG] **[EnhancedSessionStorage] Raw value from sessionStorage:** {"user":{},"page":{"pageCategory":"home","pageName":"home","pageType":"home","pageLocale":"en_NL","siteCountry":"NL","siteLanguage":"en"}} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3806ms] [LOG] **[EnhancedSessionStorage] Parsed value:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3806ms] [LOG] **[EnhancedSessionStorage] Current store:** {user: Object, page: Object} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    3807ms] [LOG] **[EnhancedSessionStorage] getItem result for key 'page':** {pageCategory: home, pageName: home, pageType: home, pageLocale: en_NL, siteCountry: NL} @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    4050ms] [LOG] Error @ :2
+[    4465ms] [LOG] Error @ :2
+[    4468ms] [LOG] Error @ :2
+[    4649ms] [LOG] Error @ :2
+[    4739ms] [LOG] Error @ :2
+[    4742ms] [LOG] Error @ :2
+[    6291ms] [WARNING] Unable to create a text session because the service is not running. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    6294ms] [ERROR] Loading media from  'data:audio/mpeg;base64,/+NIZAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAAAAACQABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgICAgICAgICAgICAgICAgICAgICAgICAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP////////////////////////////////8AAAAKTEFNRTMuOThyBCgAAAAAAAAAABQIJAbALQABmgAAAkDGbPjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+MYZAAAAAGkAAAAAAAAA0gAAAAATEFNRTMuOTguMlVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYZDMAAAGkAAAAAAAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV/+MYZGYAAAGkAAAAAAAAA0gAAAAAVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV' violates the following Content Security Policy directive: "media-src 'self' *.arcteryx.com videos.olapic-cdn.com images-dynamic-arcteryx.imgix.net www.youtube.com cdn.sanity.io". The action has been blocked. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    6610ms] [LOG] rule firing - default consent @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[    7179ms] [WARNING] Unable to create a text session because the service is not running. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    9132ms] [WARNING] Unable to create a text session because the service is not running. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    9254ms] [LOG] Error @ :2
+[    9620ms] [WARNING] Unable to create a text session because the service is not running. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[    9621ms] [WARNING] No available adapters. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10088ms] [WARNING] The requested language options are not supported. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10102ms] [ERROR] Unsupported Summarizer API languages were specified, and the request was aborted. API calls must only specify supported languages to ensure successful processing and guarantee output characteristics. Please only specify supported language codes: [de, en, es, fr, ja] @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10414ms] [WARNING] The requested language options are not supported. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10846ms] [WARNING] The requested language options are not supported. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10948ms] [WARNING] The requested language options are not supported. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   10959ms] [LOG] Document Loaded [SalesForce] @ https://arcteryx.com/content-pages-app/_next/static/chunks/main-99d3ff7e06696f64.js:0
+[   11211ms] [WARNING] Unable to create a text session because the service is not running. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0
+[   11236ms] [WARNING] The requested language options are not supported. @ https://arcteryx.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/fp?x-kpsdk-v=j-1.2.864:0

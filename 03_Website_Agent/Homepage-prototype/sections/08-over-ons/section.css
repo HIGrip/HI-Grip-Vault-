@@ -1,0 +1,36 @@
+/* 08 OVER ONS · donker moment. Links een looptekst die hard verspringt tussen drie letterstaten (Battleface, Studio Freight),
+   rechts de teamfoto in een afgerond frame. Mobiel: tekst boven, foto onder. */
+.hp-08 { background: var(--hi-near-black); color: var(--hi-white); }
+
+.hp-08-grid { display: grid; gap: var(--hp-space-ml); }
+.hp-08-text { display: grid; gap: var(--hp-space-md); align-content: start; }
+
+/* looptekst: vaste regelhoogte, breedte mag per staat verschillen */
+.hp-08-loop { font-size: min(calc(var(--hp-type-h2) * 1.1), 9.6vw); line-height: 1; letter-spacing: 0; } /* 9.6vw: de dunne staat (breedste) past ook op 320 px */
+.hp-08-lines { display: block; }
+.hp-08-line { display: block; height: 1.04em; line-height: 1.04; white-space: nowrap; }
+.hp-08-line[data-s="1"] { font-weight: 300; font-style: normal; letter-spacing: 0.08em; }
+.hp-08-line[data-s="2"] { font-weight: 900; font-style: normal; letter-spacing: var(--hp-type-track-head); }
+.hp-08-line[data-s="3"] { font-weight: 800; font-style: italic; letter-spacing: var(--hp-type-track-body); }
+
+.hp-08-foot { display: grid; gap: var(--hp-space-ms); justify-items: start; }
+.hp-08-body { max-width: 44ch; font-size: var(--hp-type-body); line-height: 1.6; color: var(--hi-titanium); }
+
+/* foto: vaste crop op het team (geen transition). In de opname (2000×924) staan de vier personen tussen x 728–1275 en vanaf y ≈ 130,
+   de lichtletters vanaf y ≈ 445. Mobiel 4:3, schaal 1.9 rond 50% 22%: zichtbaar x 676–1324, y 95–581. */
+.hp-08-media { position: relative; overflow: hidden; aspect-ratio: 4 / 3; border-radius: var(--hp-radius-media); background: var(--hi-black); }
+.hp-08-media__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; transform: scale(1.9); transform-origin: 50% 22%; }
+
+@media (min-width: 769px) {
+  .hp-08-grid { grid-template-columns: 1fr 1fr; gap: var(--hp-space-lg); align-items: stretch; }
+  /* tekstvlak even hoog als de foto (zoals Battleface): looptekst bovenaan, verhaal en pill onderaan op de onderrand van de foto, alles op één linkerlijn */
+  .hp-08-text { grid-template-rows: 1fr auto; gap: var(--hp-space-ml); }
+  .hp-08-loop { align-self: start; font-size: calc(var(--hp-type-h2) * 0.92); }
+  .hp-08-body { font-size: var(--hp-type-lead); line-height: 1.55; }
+  /* 1:1, schaal 1.55 rond 50% 24%: zichtbaar x 702–1298, y 80–676 */
+  .hp-08-media { aspect-ratio: 1 / 1; width: 100%; align-self: center; } /* center: op tabletbreedte is de tekst hoger dan de foto */
+  .hp-08-media__img { transform: scale(1.55); transform-origin: 50% 24%; }
+}
+@media (min-width: 1200px) {
+  .hp-08-loop { font-size: calc(var(--hp-type-h2) * 1.05); }
+}

@@ -1,0 +1,567 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="vg2">
+<section class="cmp{% if s.custom_pad %} vg2-pad{% endif %}" id="vergelijk" aria-labelledby="cmp-titel" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="bar" aria-label="Koopbalk">
+      <div class="wrap narrow">
+        <div class="bar__g">
+          <span class="sr">{{ s.t1 | escape }}</span>
+          <div class="bar__c"><b>{{ s.t2 | escape }}</b><a class="btn btn--o" href="{{ s.url3 | default: "https://www.higrip.nl/products/performance-gripsokken" }}">{{ s.t4 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a></div>
+          <div class="bar__c"><b>{{ s.t5 | escape }}</b><a class="btn btn--k" data-link-20 href="{{ s.url6 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">{{ s.t7 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap narrow">
+      <h2 class="xh2 cmp__h rv" id="cmp-titel">{{ s.t8 | escape }} <em>{{ s.t9 | escape }}</em></h2>
+      <table class="cmpt rv">
+        <caption class="sr">{{ s.t10 | escape }}</caption>
+        <colgroup><col class="c0"><col><col></colgroup>
+        <thead><tr>
+          <td></td>
+          <th scope="col"><div class="ph"><div class="ph__img"><img src="{%- if s.ima11 != blank -%}{{ s.ima11 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-10.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t12 | escape }}"></div><b>{{ s.t13 | escape }}</b><span class="ph__t">{{ s.t14 | escape }}</span><div class="pr__sw"><span class="sw__s" data-c="wit" title="Wit"><span></span></span></div></div></th>
+          <th scope="col" class="v2"><div class="ph"><div class="ph__img"><img data-img-20 src="{%- if s.ima15 != blank -%}{{ s.ima15 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-20-zwart.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t16 | escape }}"></div><b>{{ s.t17 | escape }}</b><span class="ph__t ph__t--v">{{ s.t18 | escape }}</span>
+            <div class="pr__sw" role="group" aria-label="Kleur">
+              <a class="sw__a" data-c="zwart" aria-current="true" href="{{ s.url19 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}"><span></span><b class="sr">{{ s.t20 | escape }}</b></a>
+              <a class="sw__a" data-c="wit" aria-current="false" href="{{ s.url21 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-wit" }}"><span></span><b class="sr">{{ s.t22 | escape }}</b></a>
+            </div></div></th>
+        </tr></thead>
+        <tbody>
+      <tr class="grp"><th scope="colgroup" colspan="3">{{ s.t23 | escape }}</th></tr>
+      <tr class="d"><th scope="row">{{ s.t24 | escape }}</th><td><span class="num">{{ s.t25 | escape }}</span><small>{{ s.t26 | escape }}</small></td><td class="v2"><span class="num">{{ s.t27 | escape }}</span><small>{{ s.t28 | escape }}</small></td></tr>
+      <tr class="d"><th scope="row">{{ s.t29 | escape }}</th><td>{{ s.t30 | escape }}</td><td class="v2">{{ s.t31 | escape }}</td></tr>
+      <tr class="d"><th scope="row">{{ s.t32 | escape }}</th><td>{{ s.t33 | escape }}<small class="num">{{ s.t34 | escape }}</small></td><td class="v2"><span class="num">{{ s.t35 | escape }}</span></td></tr>
+      <tr class="d"><th scope="row">{{ s.t36 | escape }}</th><td><i class="no"><span class="sr">{{ s.t37 | escape }}</span></i></td><td class="v2"><span class="num">{{ s.t38 | escape }}</span></td></tr>
+      <tr class="d"><th scope="row">{{ s.t39 | escape }}</th><td><i class="no"><span class="sr">{{ s.t40 | escape }}</span></i></td><td class="v2">{{ s.t41 | escape }}</td></tr>
+      <tr class="d"><th scope="row">{{ s.t42 | escape }}</th><td><i class="no"><span class="sr">{{ s.t43 | escape }}</span></i></td><td class="v2"><i class="yes"><span class="sr">{{ s.t44 | escape }}</span></i></td></tr>
+      <tr class="d"><th scope="row">{{ s.t45 | escape }}</th><td><i class="no"><span class="sr">{{ s.t46 | escape }}</span></i></td><td class="v2"><i class="yes"><span class="sr">{{ s.t47 | escape }}</span></i></td></tr>
+      <tr class="d"><th scope="row">{{ s.t48 | escape }}</th><td><i class="no"><span class="sr">{{ s.t49 | escape }}</span></i></td><td class="v2"><i class="yes"><span class="sr">{{ s.t50 | escape }}</span></i></td></tr>
+      <tr class="d"><th scope="row">{{ s.t51 | escape }}</th><td><i class="no"><span class="sr">{{ s.t52 | escape }}</span></i></td><td class="v2"><i class="yes"><span class="sr">{{ s.t53 | escape }}</span></i></td></tr>
+      <tr class="d"><th scope="row">{{ s.t54 | escape }}</th><td><span class="num">{{ s.t55 | escape }}<br>{{ s.t56 | escape }}</span></td><td class="v2"><span class="num">{{ s.t57 | escape }}<br>{{ s.t58 | escape }}<br>{{ s.t59 | escape }}</span></td></tr>
+      <tr class="d"><th scope="row">{{ s.t60 | escape }}</th><td>{{ s.t61 | escape }}</td><td class="v2">{{ s.t62 | escape }}</td></tr>
+        </tbody>
+        <tbody>
+      <tr class="grp"><th scope="colgroup" colspan="3">{{ s.t63 | escape }}</th></tr>
+      <tr><th scope="row">{{ s.t64 | escape }}</th><td><i class="yes"><span class="sr">{{ s.t65 | escape }}</span></i></td><td class="v2"><i class="yes"><span class="sr">{{ s.t66 | escape }}</span></i></td></tr>
+      <tr><th scope="row">{{ s.t67 | escape }}</th><td><span class="num">{{ s.t68 | escape }}</span><small>{{ s.t69 | escape }}</small></td><td class="v2"><span class="num">{{ s.t70 | escape }}</span><small>{{ s.t71 | escape }}</small></td></tr>
+        </tbody>
+        <tfoot><tr><th></th><td><a class="btn btn--o btn--sm" href="{{ s.url72 | default: "https://www.higrip.nl/products/performance-gripsokken" }}">{{ s.t73 | escape }}</a></td><td class="v2"><a class="btn btn--k btn--sm" data-link-20 href="{{ s.url74 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">{{ s.t75 | escape }}</a></td></tr></tfoot>
+      </table>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Tabel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "SPAN · Model",
+      "default": "Model"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "B · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "url",
+      "id": "url3",
+      "label": "Link · /products/performance-gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "A · Shop 1.0",
+      "default": "Shop 1.0"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "B · 2.0",
+      "default": "2.0"
+    },
+    {
+      "type": "url",
+      "id": "url6",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "A · Shop 2.0",
+      "default": "Shop 2.0"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "H2 · De verschillen",
+      "default": "De verschillen"
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "EM · in één oogopslag",
+      "default": "in één oogopslag"
+    },
+    {
+      "type": "textarea",
+      "id": "t10",
+      "label": "CAPTION · Vergelijking van de Performance Gripsokken 1",
+      "default": "Vergelijking van de Performance Gripsokken 1.0 en 2.0. Rijen met een gele rand zijn verschillen."
+    },
+    {
+      "type": "image_picker",
+      "id": "ima11",
+      "label": "Afbeelding · sok-10.webp"
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "Alt-tekst · Performance Gripsokken 1.0, zijaanzicht ",
+      "default": "Performance Gripsokken 1.0, zijaanzicht met grippatroon"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "B · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "label": "SPAN · Prijsvriendelijk",
+      "default": "Prijsvriendelijk"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima15",
+      "label": "Afbeelding · sok-20-zwart.webp"
+    },
+    {
+      "type": "text",
+      "id": "t16",
+      "label": "Alt-tekst · Performance Gripsokken 2.0 in zwart, zij",
+      "default": "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon"
+    },
+    {
+      "type": "text",
+      "id": "t17",
+      "label": "B · 2.0",
+      "default": "2.0"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "label": "SPAN · Ultieme performance",
+      "default": "Ultieme performance"
+    },
+    {
+      "type": "url",
+      "id": "url19",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "label": "B · Zwart",
+      "default": "Zwart"
+    },
+    {
+      "type": "url",
+      "id": "url21",
+      "label": "Link · /products/performance-gripsokken-2-0-wit"
+    },
+    {
+      "type": "text",
+      "id": "t22",
+      "label": "B · Wit",
+      "default": "Wit"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "label": "TH · Wat verschilt",
+      "default": "Wat verschilt"
+    },
+    {
+      "type": "text",
+      "id": "t24",
+      "label": "TH · Prijs",
+      "default": "Prijs"
+    },
+    {
+      "type": "text",
+      "id": "t25",
+      "label": "SPAN · €14,95",
+      "default": "€14,95"
+    },
+    {
+      "type": "text",
+      "id": "t26",
+      "label": "SMALL · per paar",
+      "default": "per paar"
+    },
+    {
+      "type": "text",
+      "id": "t27",
+      "label": "SPAN · €17,95",
+      "default": "€17,95"
+    },
+    {
+      "type": "text",
+      "id": "t28",
+      "label": "SMALL · per paar",
+      "default": "per paar"
+    },
+    {
+      "type": "text",
+      "id": "t29",
+      "label": "TH · Gemaakt voor",
+      "default": "Gemaakt voor"
+    },
+    {
+      "type": "text",
+      "id": "t30",
+      "label": "TD · Training, pilates en recreatief sporten",
+      "default": "Training, pilates en recreatief sporten"
+    },
+    {
+      "type": "text",
+      "id": "t31",
+      "label": "TD · Wedstrijden: voetbal, tennis, padel en rugby",
+      "default": "Wedstrijden: voetbal, tennis, padel en rugby"
+    },
+    {
+      "type": "text",
+      "id": "t32",
+      "label": "TH · Materiaal",
+      "default": "Materiaal"
+    },
+    {
+      "type": "text",
+      "id": "t33",
+      "label": "TD · Katoenmix",
+      "default": "Katoenmix"
+    },
+    {
+      "type": "text",
+      "id": "t34",
+      "label": "SMALL · 42% katoen · 41% polyester · 14% nylon · 3% ",
+      "default": "42% katoen · 41% polyester · 14% nylon · 3% spandex"
+    },
+    {
+      "type": "text",
+      "id": "t35",
+      "label": "SPAN · 30% Coolmax®",
+      "default": "30% Coolmax®"
+    },
+    {
+      "type": "text",
+      "id": "t36",
+      "label": "TH · Compressie",
+      "default": "Compressie"
+    },
+    {
+      "type": "text",
+      "id": "t37",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t38",
+      "label": "SPAN · 15–20 mmHg",
+      "default": "15–20 mmHg"
+    },
+    {
+      "type": "text",
+      "id": "t39",
+      "label": "TH · Vochtafvoer",
+      "default": "Vochtafvoer"
+    },
+    {
+      "type": "text",
+      "id": "t40",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t41",
+      "label": "TD · Coolmax® voert vocht af",
+      "default": "Coolmax® voert vocht af"
+    },
+    {
+      "type": "text",
+      "id": "t42",
+      "label": "TH · Ademende bovenkant",
+      "default": "Ademende bovenkant"
+    },
+    {
+      "type": "text",
+      "id": "t43",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t44",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t45",
+      "label": "TH · Naadloze teenzone",
+      "default": "Naadloze teenzone"
+    },
+    {
+      "type": "text",
+      "id": "t46",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t47",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t48",
+      "label": "TH · Versterkte hiel",
+      "default": "Versterkte hiel"
+    },
+    {
+      "type": "text",
+      "id": "t49",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t50",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t51",
+      "label": "TH · Special cushioning",
+      "default": "Special cushioning"
+    },
+    {
+      "type": "text",
+      "id": "t52",
+      "label": "SPAN · Nee",
+      "default": "Nee"
+    },
+    {
+      "type": "text",
+      "id": "t53",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t54",
+      "label": "TH · Maten",
+      "default": "Maten"
+    },
+    {
+      "type": "text",
+      "id": "t55",
+      "label": "SPAN · 34–39",
+      "default": "34–39"
+    },
+    {
+      "type": "text",
+      "id": "t56",
+      "label": "BR · 40–46",
+      "default": "40–46"
+    },
+    {
+      "type": "text",
+      "id": "t57",
+      "label": "SPAN · 35–38",
+      "default": "35–38"
+    },
+    {
+      "type": "text",
+      "id": "t58",
+      "label": "BR · 39–42",
+      "default": "39–42"
+    },
+    {
+      "type": "text",
+      "id": "t59",
+      "label": "BR · 43–47",
+      "default": "43–47"
+    },
+    {
+      "type": "text",
+      "id": "t60",
+      "label": "TH · Kleuren",
+      "default": "Kleuren"
+    },
+    {
+      "type": "text",
+      "id": "t61",
+      "label": "TD · Wit",
+      "default": "Wit"
+    },
+    {
+      "type": "text",
+      "id": "t62",
+      "label": "TD · Zwart · Wit",
+      "default": "Zwart · Wit"
+    },
+    {
+      "type": "text",
+      "id": "t63",
+      "label": "TH · Wat gelijk is",
+      "default": "Wat gelijk is"
+    },
+    {
+      "type": "text",
+      "id": "t64",
+      "label": "TH · Siliconen gripzones",
+      "default": "Siliconen gripzones"
+    },
+    {
+      "type": "text",
+      "id": "t65",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t66",
+      "label": "SPAN · Ja",
+      "default": "Ja"
+    },
+    {
+      "type": "text",
+      "id": "t67",
+      "label": "TH · Statische wrijving",
+      "default": "Statische wrijving"
+    },
+    {
+      "type": "text",
+      "id": "t68",
+      "label": "SPAN · 1,17",
+      "default": "1,17"
+    },
+    {
+      "type": "text",
+      "id": "t69",
+      "label": "SMALL · gripsok, tegen 0,60 gewone sok",
+      "default": "gripsok, tegen 0,60 gewone sok"
+    },
+    {
+      "type": "text",
+      "id": "t70",
+      "label": "SPAN · 1,17",
+      "default": "1,17"
+    },
+    {
+      "type": "text",
+      "id": "t71",
+      "label": "SMALL · gripsok, tegen 0,60 gewone sok",
+      "default": "gripsok, tegen 0,60 gewone sok"
+    },
+    {
+      "type": "url",
+      "id": "url72",
+      "label": "Link · /products/performance-gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t73",
+      "label": "A · Shop 1.0",
+      "default": "Shop 1.0"
+    },
+    {
+      "type": "url",
+      "id": "url74",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t75",
+      "label": "A · Shop 2.0",
+      "default": "Shop 2.0"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Tabel"
+    }
+  ]
+}
+{% endschema %}

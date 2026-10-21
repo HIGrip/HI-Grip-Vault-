@@ -1,0 +1,558 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_d9gFAj": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_4xmTPT": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/een-modern-sportcomplex-met-een-neutrale-en-professionele-uitstraling-op-een-mooie-natuurlijke-locatie-het-complex-heeft-meerdere-sportvelden-en-een-modern-gebouw-met-veel-glas-en-hou.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "background_color": "rgba(0,0,0,0)",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "text_LxmfXj": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1>CLUBWEAR </h1>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_4GNVhy": {
+              "type": "text",
+              "settings": {
+                "text": "<p><em>De keuze voor sportclubs.</em></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_67qGLz": {
+              "type": "button",
+              "settings": {
+                "label": "Neem vrijblijvend contact op",
+                "link": "mailto:info@higrip.nl",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.background }}",
+                "custom_button_text": "{{ settings.color_palette.foreground }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_LxmfXj",
+            "text_4GNVhy",
+            "button_67qGLz"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_4xmTPT"
+      ],
+      "name": "t:names.slideshow_full_frame",
+      "settings": {
+        "display_mode": "full_frame",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 12,
+        "corner_radius": 0,
+        "slide_height": "medium",
+        "content_position": "on-media",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_direction": "column",
+        "gap": 0,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "17736023297537401f": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2b9a8ac_LU8DfP": {
+          "type": "ai_gen_block_2b9a8ac",
+          "settings": {
+            "heading_text": "HÏ GRIP CLUBWEAR",
+            "font_size": 48,
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "glow_color": "#000000",
+            "glow_intensity": 20,
+            "text_color": "#ffffff",
+            "padding_vertical": 40,
+            "padding_horizontal": 20
+          },
+          "blocks": {}
+        },
+        "text_JREQzn": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>COMFORT, INNOVATIE & VERTROUWEN</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2b9a8ac_LU8DfP",
+        "text_JREQzn"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 28,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "17736033629114962e": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b41b925_BwydBB": {
+          "type": "ai_gen_block_b41b925",
+          "settings": {
+            "heading": "<p>JOIN THE MOVEMENT</p>",
+            "subheading": "<p>Ontdek de voordelen van HÏ Grip voor jouw sportclub:</p>",
+            "bullet_1": "Boost de uniformiteit door als club centraal aan te bieden",
+            "bullet_2": "Maximale grip voor leden in hun sportschoenen",
+            "bullet_3": "Effectief in combinatie met een kledingplan",
+            "bullet_4": "Extra inkomsten voor de club",
+            "bullet_5": "Mogelijkheid tot volledige branding met al uw wensen",
+            "bullet_6": "Wees andere sportclubs voor door innovatief te investeren in de toekomst",
+            "image": "shopify://shop_images/IMG_2084.jpg",
+            "image_border_radius": 6,
+            "desktop_width_percent": 100,
+            "section_padding": 60,
+            "content_gap": 60,
+            "content_spacing": 20,
+            "bullet_spacing": 16,
+            "mobile_image_position": "top",
+            "mobile_gap": 30,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "icon_background": "#000000",
+            "icon_color": "#ffffff",
+            "heading_size": 40,
+            "subheading_size": 16,
+            "bullet_text_size": 16,
+            "icon_size": 24
+          },
+          "blocks": {}
+        },
+        "spacer_9C8XDW": {
+          "type": "spacer",
+          "name": "t:names.spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 28,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b41b925_BwydBB",
+        "spacer_9C8XDW"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "17736051423c42f5e2": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f2ab4cc_6RMF8h": {
+          "type": "ai_gen_block_f2ab4cc",
+          "settings": {
+            "heading": "DEZE SPORTCLUBS GINGEN JE VOOR",
+            "subheading": "Sluit jouw club aan bij de toekomst van de sportwereld",
+            "heading_size": 32,
+            "subheading_size": 16,
+            "heading_color": "#000000",
+            "subheading_color": "#000000",
+            "text_alignment": "center",
+            "spacing_below_heading": 40,
+            "desktop_width_percent": 100,
+            "section_padding": 45,
+            "columns_desktop": "2",
+            "columns_mobile": "2",
+            "grid_gap": 30,
+            "logo_height": 120,
+            "spacing_below_logo": 15,
+            "item_padding": 25,
+            "item_border_radius": 8,
+            "item_background_color": "#ffffff",
+            "text_size": 14,
+            "text_color": "#000000",
+            "logo_1": "shopify://shop_images/IMG_2440.jpg",
+            "text_1": "SVS",
+            "logo_2": "shopify://shop_images/IMG_2074.jpg",
+            "text_2": "V.V. Spirit",
+            "logo_3": "shopify://shop_images/IMG_2391.jpg",
+            "text_3": "V.V. Lyra",
+            "logo_4": "shopify://shop_images/IMG_0156.jpg",
+            "text_4": "Concordia"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f2ab4cc_6RMF8h"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_D6XU39": {
+      "type": "section",
+      "blocks": {
+        "group_AQpTaP": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_rLzYzE": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_irrcy7": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3><strong>ELKE SPORTCLUB IS OOIT BEGONNEN MET DE EERSTE STAP.</strong></h3>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "spacer_7r7Dgg": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "pixel",
+                    "percent_size": 100,
+                    "pixel_size": 12,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "ai_gen_block_9f3c9cb_DkP4qj": {
+                  "type": "ai_gen_block_9f3c9cb",
+                  "settings": {
+                    "button_text": "Neem vrijblijvend contact op",
+                    "button_link": "mailto:info@higrip.nl",
+                    "font_size": 16,
+                    "button_font": "poppins_n5",
+                    "button_bg_color": "#000000",
+                    "button_text_color": "#ffffff",
+                    "button_hover_bg_color": "#333333",
+                    "button_hover_text_color": "#ffffff",
+                    "border_width": 0,
+                    "border_color": "#000000",
+                    "border_hover_color": "#333333",
+                    "border_radius": 26
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_irrcy7",
+                "spacer_7r7Dgg",
+                "ai_gen_block_9f3c9cb_DkP4qj"
+              ]
+            }
+          },
+          "block_order": [
+            "group_rLzYzE"
+          ]
+        }
+      },
+      "block_order": [
+        "group_AQpTaP"
+      ],
+      "name": "t:names.icons_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": [
+    "slideshow_d9gFAj",
+    "main",
+    "17736023297537401f",
+    "17736033629114962e",
+    "17736051423c42f5e2",
+    "section_D6XU39"
+  ]
+}

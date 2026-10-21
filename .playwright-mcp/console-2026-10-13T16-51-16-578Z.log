@@ -1,0 +1,23 @@
+[    9165ms] [LOG] %c[DiscountKit Cart]%c Script loaded font-weight: bold; color: #0078d4 color: inherit {debugMode: false} @ https://cdn.shopify.com/extensions/01a135cf-0895-7491-b5c9-cf638ffe0c03/discount-kit-648/assets/dk_cart.js:19
+[    9243ms] [LOG] [cart-sync] bootstrap load @ https://www.therabody.com/:20167
+[   10037ms] [LOG] [cart-sync] cart: snapshot initialized @ https://www.therabody.com/:20167
+[   10039ms] [LOG] [cart-sync] badge: updated to 0 domBefore=0 dirty=true (0ms) @ https://www.therabody.com/:20167
+[   10417ms] [LOG] [cart-sync] drawer: refreshed via native (335ms) @ https://edge.fullstory.com/s/fs.js:1
+[   10977ms] [LOG] [cart-sync] sync reason=pageshow persisted=false force=true @ https://edge.fullstory.com/s/fs.js:1
+[   11079ms] [LOG] [stoq-pixel] initialized, shop: usa-therabody.myshopify.com @ https://www.therabody.com/web-pixels/strict/app/web-pixel-2208137443@6e6b2e32fe6866115b7e49e2ae3c75b2.js:1
+[   11081ms] [LOG] [stoq-pixel] sessionId set (rank 3): e1b74536... @ https://www.therabody.com/web-pixels/strict/app/web-pixel-2208137443@6e6b2e32fe6866115b7e49e2ae3c75b2.js:1
+[   11091ms] [LOG] [cart-sync] cart: snapshot refreshed @ https://edge.fullstory.com/s/fs.js:1
+[   11091ms] [LOG] [cart-sync] badge: updated to 0 domBefore=0 dirty=true (114ms) @ https://edge.fullstory.com/s/fs.js:1
+[   11110ms] [LOG] [stoq-pixel] initialized {cart_token: , page_url: https://www.therabody.com/, page_type: index, shop_domain: usa-therabody.myshopify.com, market_id: 13977649379} @ https://www.therabody.com/web-pixels/strict/app/web-pixel-2208137443@6e6b2e32fe6866115b7e49e2ae3c75b2.js:2
+[   11111ms] [LOG] [stoq-pixel] bundle_ready {page_url: https://www.therabody.com/, page_type: index, shop_domain: usa-therabody.myshopify.com, market_id: 13977649379, cart_token: } @ https://www.therabody.com/web-pixels/strict/app/web-pixel-2208137443@6e6b2e32fe6866115b7e49e2ae3c75b2.js:2
+[   11447ms] [LOG] [klarna-osm] Current page type: home @ https://edge.fullstory.com/s/fs.js:1
+[   11447ms] [LOG] [klarna-osm] Initializing Klarna On-Site Messaging @ https://edge.fullstory.com/s/fs.js:1
+[   11448ms] [LOG] [klarna-osm] Selected currency: USD @ https://edge.fullstory.com/s/fs.js:1
+[   11448ms] [LOG] [klarna-osm] Shop currency: USD @ https://edge.fullstory.com/s/fs.js:1
+[   11449ms] [LOG] [klarna-osm] Page detected: home @ https://edge.fullstory.com/s/fs.js:1
+[   11449ms] [LOG] [klarna-osm] Loaded: 0. Failed: 0 @ https://edge.fullstory.com/s/fs.js:1
+[   11450ms] [LOG] [klarna-osm] Klarna OSM Script Tag has been added successfully @ https://edge.fullstory.com/s/fs.js:1
+[   11462ms] [LOG] [cart-sync] drawer: refreshed via native (214ms) @ https://edge.fullstory.com/s/fs.js:1
+[   11523ms] [LOG] Tracking script 1.0.16 - May 6, 2026 13:44:10 @ https://edge.fullstory.com/s/fs.js:1
+[   11782ms] [LOG] 200 @ https://www.therabody.com/web-pixels/strict/app/web-pixel-650281187@4d2ae310e7f99f154f33560b5c81cfa9.js:0
+[   17687ms] [LOG] GTM_Tags @ https://www.therabody.com/web-pixels@e990e96fw5665eac5pbd6f5b22m75757206/custom/web-pixel-49414371@15/sandbox/modern/:305

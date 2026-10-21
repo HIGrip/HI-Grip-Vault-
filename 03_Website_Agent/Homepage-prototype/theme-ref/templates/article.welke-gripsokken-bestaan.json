@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken zijn tegenwoordig niet meer weg te denken uit de uitrusting van sporters. Ze bieden extra grip, stabiliteit en comfort, waardoor je beter presteert en de kans op blessures verkleint. Maar niet alle gripsokken zijn hetzelfde. Wie erover nadenkt om een paar aan te schaffen, merkt al snel dat er grote verschillen zijn in kwaliteit, comfort, grip en prijs. Van budgetopties tot premium varianten: het is belangrijk om te weten wat je koopt en welk type het beste past bij jouw sportniveau en behoeften.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Budgetgripsokken: de ideale start</strong></h2><p></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Budgetgripsokken zijn vaak de eerste kennismaking voor sporters die hun prestaties willen verbeteren zonder direct veel te investeren.<br/>Deze sokken bieden basisgrip en voldoende comfort voor recreatieve sporten en incidenteel gebruik. Ze zijn meestal gemaakt van standaard materialen die goedademen en comfortabel aanvoelen, maar de slijtvastheid en gripprestaties zijn beperkt vergeleken met duurdere varianten. Voor wie vooral af en toe sport of experimenteert met gripsokken, zijn deze budgetopties een prima startpunt.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Middenklasse gripsokken: optimale balans voor frequente sporters</strong></h2><p></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Wie vaker sport en meer intensieve trainingen of wedstrijden speelt, zal merken dat de volgende categorie, de middenklasse gripsokken, aanzienlijk beter presteert. Deze sokken hebben geavanceerdere antislipzones en een betere pasvorm, waardoor de voet steviger in de schoen blijft. Het materiaal voelt zachter en duurzamer aan, blijft langer goed tijdens wasbeurten en biedt een hogere mate van comfort bij langere speelsessies. Voor serieuze amateurvoetballers, padel- of basketbalspelers die regelmatig trainen en wedstrijden spelen, zijn deze sokken vaak de meest gebalanceerde keuze tussen prijs en prestaties.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_UcyXFP": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Premium gripsokken: maximale prestaties en bescherming</strong></h2><p></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_3JHaR7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Premium gripsokken zijn ontworpen voor sporters die het uiterste uit hun prestaties willen halen en daarbij geen concessies doen aan kwaliteit en comfort. Deze sokken combineren de beste materialen, ergonomisch geplaatste gripzones en vaak extra ondersteuning bij de enkel en wreef. Ze<br/>zorgen voor maximale stabiliteit, verminderen het risico op blessures en bieden een hoog ademend vermogen waardoor de voeten koel en droog blijven, zelfs tijdens intensieve sessies. Voor topsporters of fanatieke amateurs die meerdere keren per week trainen en wedstrijden spelen, vormen premium gripsokken een waardevolle investering in prestaties en veiligheid.</p><p>Het kiezen van de juiste gripsokken is dus geen kwestie van alleen kijken naar de prijs. Het gaat om de combinatie van grip, comfort, duurzaamheid en hoe intensief je sport. Door bewust te kiezen, zorg je ervoor dat je voeten optimaal ondersteund worden. Gripsokken zijn daarmee niet alleen een accessoire, maar een slimme investering in je prestaties en je gezondheid.</p><p>Bij HÏ Grip vind je jouw ideale gripsokken van kwaliteit voor een eerlijke prijs. </p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_pFbrBw": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Ervaar HÏ Grip gripsokken",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "text_UcyXFP",
+        "text_3JHaR7",
+        "button_pFbrBw"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

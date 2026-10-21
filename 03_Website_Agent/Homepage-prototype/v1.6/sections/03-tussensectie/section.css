@@ -1,0 +1,128 @@
+/* 03 · tussensectie 1.2 ronde 2: volt-strook, alleen typografie (en de Trustpilot-ster).
+   Schaalcontrast: reuzencijfers met kleine gestapelde woorden, contour tegenover gevuld.
+   section.js verschuift en kantelt de tracks; zonder JS staat alles stil. */
+.hp-03 {
+  --hp-03-big: clamp(88px, 11vw, 176px);
+  --hp-03-slogan: clamp(30px, 4vw, 60px);
+  --hp-03-stroke: max(1.5px, 0.022em);
+  display: grid;
+  gap: var(--hp-space-sm);
+  padding-block: var(--hp-space-md);
+  background: var(--hi-yellow);
+  color: var(--hi-black);
+  overflow: hidden;
+}
+
+.hp-03-row { overflow: hidden; }
+.hp-03-track { display: flex; width: max-content; will-change: transform; }
+
+.hp-03-set {
+  display: flex;
+  flex: none;
+  align-items: last baseline;
+}
+
+.hp-03-item {
+  flex: none;
+  font-family: var(--hp-type-family);
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: var(--hp-type-track-head);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* reuzencijfer + kleine gestapelde woorden op de basislijn */
+.hp-03-stat {
+  display: flex;
+  align-items: last baseline;
+  gap: 0.06em;
+  padding-inline: 0.12em;
+  font-size: var(--hp-03-big);
+}
+.hp-03-big { display: inline-block; line-height: 0.82; font-variant-numeric: tabular-nums; }
+.hp-03-small {
+  display: block;
+  max-width: 7.2em;
+  font-size: max(16px, 0.21em);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+/* zwart, niet --hi-trust: groen haalt op volt ca. 2,3:1, zwart ca. 19:1 */
+.hp-03-star { display: inline-block; margin-right: 0.04em; font-size: 0.5em; font-style: normal; vertical-align: 0.62em; }
+
+.hp-03-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+  transition: text-decoration-thickness var(--hp-dur-1) var(--hp-ease);
+}
+@media (hover: hover) {
+  .hp-03-link:hover { text-decoration-thickness: 0.18em; }
+}
+.hp-03-link:focus-visible,
+.hp-03-link:active { text-decoration-thickness: 0.18em; }
+
+/* verzendbelofte als contourregel op tweederde schaal */
+.hp-03-line {
+  padding-inline: 0.2em;
+  font-size: calc(var(--hp-03-big) * 0.6);
+  line-height: 0.9;
+  color: transparent;
+  -webkit-text-stroke: var(--hp-03-stroke) var(--hi-black);
+  transition: color var(--hp-dur-2) var(--hp-ease);
+}
+
+/* dunne schuine streep als scheider, op cijferschaal */
+.hp-03-sep {
+  flex: none;
+  padding-inline: 0.08em;
+  font: 300 var(--hp-03-big)/0.82 var(--hp-type-family);
+}
+
+/* tweede rij: de slogan, om en om gevuld en als contour, loopt tegen de eerste in */
+.hp-03-slogan {
+  padding-inline: 0.4em;
+  font-size: var(--hp-03-slogan);
+  line-height: 1.1;
+}
+.hp-03-ghost {
+  color: transparent;
+  -webkit-text-stroke: var(--hp-03-stroke) var(--hi-black);
+  transition: color var(--hp-dur-2) var(--hp-ease);
+}
+
+/* pauze (hover, focus of tik): de contouren lopen vol, zodat je ziet dat de strook stilstaat */
+.hp-03.is-paused .hp-03-line,
+.hp-03.is-paused .hp-03-ghost { color: var(--hi-black); }
+
+@media (min-width: 769px) {
+  .hp-03 { gap: var(--hp-space-ms); padding-block: var(--hp-space-ml); }
+}
+
+/* reduced motion: geen beweging, één set per rij, gecentreerd en leesbaar */
+@media (prefers-reduced-motion: reduce) {
+  .hp-03 { --hp-03-big: clamp(64px, 8vw, 120px); --hp-03-slogan: clamp(24px, 3vw, 44px); padding-block: var(--hp-space-ml); }
+  .hp-03-track { width: auto; justify-content: center; transform: none !important; }
+  .hp-03-set { flex: 1 1 100%; min-width: 0; flex-wrap: wrap; justify-content: center; align-items: center; row-gap: var(--hp-space-md); column-gap: var(--hp-space-ml); padding-inline: var(--hp-space-gutter) var(--hp-space-gutter-r); }
+  .hp-03-set[aria-hidden="true"], .hp-03-sep, .hp-03-ghost { display: none; }
+  .hp-03-item { flex: 0 1 auto; max-width: 100%; white-space: normal; text-align: center; }
+  .hp-03-small { text-align: left; }
+}
+
+/* 1.5 (Lars 19-10) · de bewijsbalk is één dunne regel: alleen de rij met cijfers en de verzendbelofte, alles op één basislijn. */
+.hp-03 { --hp-03-big: clamp(26px, 2.6vw, 40px); gap: 0; padding-block: 12px; }
+.hp-03-small { max-width: none; white-space: nowrap; font-size: max(12px, 0.34em); line-height: 1; }
+.hp-03-stat { align-items: baseline; gap: 0.25em; }
+.hp-03-line { font-size: var(--hp-03-big); color: var(--hi-black); -webkit-text-stroke: 0; }
+.hp-03-sep { font-size: var(--hp-03-big); }
+@media (min-width: 769px) { .hp-03 { gap: 0; padding-block: 14px; } }
+
+/* 1.6 · verhouding: de verzendbelofte op de maat van de kleine tekst (niet die van de cijfers). */
+.hp-03-line { font-size: calc(var(--hp-03-big) * 0.42); font-style: normal; font-weight: 800; letter-spacing: 0; line-height: 1; }
+.hp-03-small { font-size: max(12px, 0.36em); }

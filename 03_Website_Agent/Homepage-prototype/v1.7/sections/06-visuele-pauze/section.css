@@ -1,0 +1,142 @@
+/* 06 VISUELE PAUZE · 1.7 (Lars 19-10: in de stijl van de HÏ Grip-brandvideo, sportief en bruut). Rand tot rand, 100svh.
+   Eén lus van 16 × --hp-dur-3 (~14 s). Scènes: 0–12 opstarten (embleem flikkert, loader) · 12–30 röntgenscan van de 2.0,
+   van x-ray naar de echte sok, met labels Boord/Mesh/Hiel/Gripzool · 30–46 licht: de sokken schuiven binnen, volt lichtlek ·
+   46–72 actie in volt-duotoon op de beat (stop, draai, sprint, tot de laatste bal) · 72–86 macro van de gripzool, strobe
+   x-ray ↔ echt · 86–100 GA DOOR. Elementen met --s (moment in de lus) delen één keyframe en schuiven met delay (s − 1) × lus.
+   section.js: pauze buiten beeld en via de knop, timecode, voortgang, loaderpercentage en het ontcijferen van de labels. */
+.hp-06 { --hp-06-p: 0; position: relative; height: 100svh; min-height: 560px; max-height: 1100px; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-film { position: absolute; inset: 0; overflow: hidden; isolation: isolate; }
+.hp-06.is-paused .hp-06-film *, .hp-06.is-paused .hp-06-film *::after, .hp-06.is-paused .hp-06-cta { animation-play-state: paused; }
+
+.hp-06-scene { position: absolute; inset: 0; overflow: hidden; display: grid; place-items: center; }
+.hp-06-s1 { animation: hp-06-v1 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s2 { animation: hp-06-v2 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s3 { animation: hp-06-v3 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; background: var(--hi-white); color: var(--hi-black); }
+.hp-06-s4 { animation: hp-06-v4 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s5 { animation: hp-06-v5 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; background: var(--hi-white); }
+.hp-06-s6 { animation: hp-06-v6 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-v1 { 0%, 11.9% { opacity: 1; } 12%, 100% { opacity: 0; } }
+@keyframes hp-06-v2 { 0%, 11.9% { opacity: 0; } 12%, 29.9% { opacity: 1; } 30%, 100% { opacity: 0; } }
+@keyframes hp-06-v3 { 0%, 29.9% { opacity: 0; } 30%, 45.9% { opacity: 1; } 46%, 100% { opacity: 0; } }
+@keyframes hp-06-v4 { 0%, 45.9% { opacity: 0; } 46%, 71.9% { opacity: 1; } 72%, 100% { opacity: 0; } }
+@keyframes hp-06-v5 { 0%, 71.9% { opacity: 0; } 72%, 85.9% { opacity: 1; } 86%, 100% { opacity: 0; } }
+@keyframes hp-06-v6 { 0%, 85.9% { opacity: 0; } 86%, 100% { opacity: 1; } }
+
+/* gedeelde inloop op --s */
+.hp-06-lab, .hp-06-row__s, .hp-06-cut, .hp-06-cut img, .hp-06-word { animation-duration: calc(var(--hp-dur-3) * 16); animation-timing-function: var(--hp-ease); animation-iteration-count: infinite; animation-delay: calc(var(--hp-dur-3) * 16 * (var(--s, 0) - 1)); }
+
+/* raster */
+.hp-06-grid { position: absolute; inset: 0; pointer-events: none;
+  background-image: repeating-linear-gradient(0deg, var(--hi-line-dark) 0 1px, transparent 1px 80px), repeating-linear-gradient(90deg, var(--hi-line-dark) 0 1px, transparent 1px 80px); }
+.hp-06-grid--fine { z-index: 3; background-image: repeating-linear-gradient(0deg, var(--hi-line-dark-soft) 0 1px, transparent 1px 40px), repeating-linear-gradient(90deg, var(--hi-line-dark-soft) 0 1px, transparent 1px 40px); }
+
+/* 1 · opstarten */
+.hp-06-s1 { align-content: center; gap: var(--hp-space-md); }
+.hp-06-emb { font: italic 900 clamp(56px, 12vw, 200px)/0.85 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; animation: hp-06-flick calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-timing-function: steps(1, end); }
+@keyframes hp-06-flick { 0% { opacity: 0; } 1% { opacity: 1; } 1.6% { opacity: 0.15; } 2.2% { opacity: 1; } 2.8% { opacity: 0.3; } 3.4%, 100% { opacity: 1; } }
+.hp-06-load { width: min(60vw, 520px); height: 4px; background: var(--hi-line-dark); }
+.hp-06-load__bar { display: block; height: 100%; background: var(--hi-yellow); transform-origin: 0 50%; animation: hp-06-load calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-timing-function: linear; }
+@keyframes hp-06-load { 0%, 2% { transform: scaleX(0); } 11%, 100% { transform: scaleX(1); } }
+.hp-06-load__pct { font: 700 13px/1 var(--hp-type-family); letter-spacing: 0.1em; color: var(--hi-titanium); font-variant-numeric: tabular-nums; }
+
+/* 2 · röntgenscan */
+.hp-06-xr { position: relative; width: min(74svh, 86vw); aspect-ratio: 1; }
+.hp-06-xr img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.hp-06-xr__x { filter: invert(1) grayscale(1) contrast(1.7) brightness(1.15); mix-blend-mode: screen; animation: hp-06-xrz calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-xr__real { background: var(--hi-white); clip-path: inset(0 0 100% 0); animation: hp-06-reveal calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-xrz { 0%, 12% { transform: scale(1.12); } 30%, 100% { transform: scale(1); } }
+@keyframes hp-06-reveal { 0%, 18% { clip-path: inset(0 0 100% 0); } 27%, 100% { clip-path: inset(0); } }
+.hp-06-xr__line { position: absolute; left: -6%; right: -6%; top: 0; height: 2px; background: var(--hi-yellow); box-shadow: 0 0 24px 4px var(--hi-yellow); animation: hp-06-line calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-line { 0%, 18% { top: 0; opacity: 1; } 27% { top: 100%; opacity: 1; } 28%, 100% { top: 100%; opacity: 0; } }
+.hp-06-lab { position: absolute; z-index: 2; display: flex; align-items: center; gap: 8px; animation-name: hp-06-wipe; }
+.hp-06-lab::before { content: ""; width: clamp(40px, 8vw, 120px); height: 1px; background: var(--hi-yellow); }
+.hp-06-lab > span { padding: 5px 9px; background: var(--hi-yellow); color: var(--hi-black); font: 800 clamp(11px, 1vw, 14px)/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; }
+.hp-06-lab--boord { left: 62%; top: 12%; }
+.hp-06-lab--mesh { left: 60%; top: 42%; }
+.hp-06-lab--hiel { right: 64%; top: 64%; flex-direction: row-reverse; }
+.hp-06-lab--zool { left: 58%; top: 80%; }
+@keyframes hp-06-wipe { 0% { clip-path: inset(0 100% 0 0); } 1.5%, 100% { clip-path: inset(0 -10% 0 0); } }
+.hp-06-cap { position: absolute; z-index: 3; left: var(--hp-space-sm); bottom: var(--hp-space-xl); max-width: 16ch; font: italic 900 clamp(28px, 4vw, 64px)/0.9 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; }
+.hp-06-cap--dark { color: var(--hi-black); max-width: 20ch; }
+
+/* 3 · licht met de sokken */
+.hp-06-row { display: flex; justify-content: center; gap: 0; width: 100%; padding-inline: 4vw; }
+.hp-06-row__s { width: min(24vw, 40svh); aspect-ratio: 1; object-fit: contain; animation-name: hp-06-in; }
+@keyframes hp-06-in { 0% { transform: translateX(60vw); opacity: 0; } 2.2% { transform: translateX(-2%); opacity: 1; } 3%, 100% { transform: none; opacity: 1; } }
+.hp-06-s3::after { content: ""; position: absolute; top: -20%; bottom: -20%; width: 40%; background: linear-gradient(90deg, transparent, var(--hi-yellow), transparent); filter: blur(40px); mix-blend-mode: multiply; animation: hp-06-sweep calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-sweep { 0%, 33% { transform: translateX(-120vw); } 44%, 100% { transform: translateX(160vw); } }
+
+/* 4 · actie in volt-duotoon */
+.hp-06-cut { position: absolute; inset: 0; animation-name: hp-06-cutv; }
+@keyframes hp-06-cutv { 0%, 5.9% { opacity: 1; } 6%, 100% { opacity: 0; } }
+.hp-06-cut::after { content: ""; position: absolute; inset: 0; background: var(--hi-yellow); mix-blend-mode: multiply; }
+.hp-06-cut img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.35) brightness(1.08); animation-name: hp-06-shake; }
+@keyframes hp-06-shake { 0% { transform: scale(1.35) translate(2%, -1%); } 1% { transform: scale(1.14) translate(-1%, 1%); } 6%, 100% { transform: scale(1.04); } }
+.hp-06-word {
+  position: absolute; z-index: 2; left: 0; right: 0; top: 50%; translate: 0 -50%; text-align: center;
+  font: italic 900 clamp(84px, 24vw, 420px)/0.8 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; color: var(--hi-black);
+  animation-name: hp-06-slam;
+}
+.hp-06-word--sm { font-size: clamp(40px, 9vw, 160px); }
+@keyframes hp-06-slam { 0% { opacity: 0; transform: scale(1.9); } 0.8% { opacity: 1; transform: scale(0.95); } 1.4%, 100% { opacity: 1; transform: scale(1); } }
+
+/* 5 · macro gripzool, strobe */
+.hp-06-macro { position: absolute; inset: 0; overflow: hidden; }
+.hp-06-macro img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 78%; animation: hp-06-macz calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-macz { 0%, 72% { transform: scale(1.4); } 86%, 100% { transform: scale(2.1); } }
+.hp-06-macro__x { filter: invert(1) grayscale(1) contrast(1.8); }
+.hp-06-macro__xw { position: absolute; inset: 0; animation: hp-06-strobe calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-timing-function: steps(1, end); }
+@keyframes hp-06-strobe { 0%, 72% { opacity: 1; } 74% { opacity: 0; } 75.5% { opacity: 1; } 77% { opacity: 0; } 78% { opacity: 1; } 79% { opacity: 0; } 80%, 100% { opacity: 0; } }
+.hp-06-tag { position: absolute; z-index: 2; left: var(--hp-space-sm); bottom: var(--hp-space-xl); padding: 8px 12px; background: var(--hi-black); color: var(--hi-yellow); font: 800 clamp(14px, 1.4vw, 20px)/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* 6 · GA DOOR */
+.hp-06-end { display: grid; justify-items: center; text-align: center; text-transform: uppercase; }
+.hp-06-end__big { font: italic 900 clamp(96px, 26vw, 460px)/0.8 var(--hp-type-family); letter-spacing: -0.05em; color: var(--hi-yellow); animation: hp-06-endslam calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-endslam { 0%, 86% { opacity: 0; transform: scale(2.2); } 87.5% { opacity: 1; transform: scale(0.96); } 88.5%, 100% { opacity: 1; transform: scale(1); } }
+.hp-06-end__sub { font: 800 clamp(20px, 3vw, 48px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); animation: hp-06-endsub calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-endsub { 0%, 89% { clip-path: inset(0 0 100% 0); transform: translateY(40%); } 91.5%, 100% { clip-path: inset(-0.2em); transform: none; } }
+
+/* lichtlekken, flits */
+.hp-06-leak { position: absolute; z-index: 4; top: -10%; bottom: -10%; width: 36vw; pointer-events: none; background: linear-gradient(90deg, transparent, var(--hi-yellow), transparent); filter: blur(60px); mix-blend-mode: screen; opacity: 0; }
+.hp-06-leak--a { animation: hp-06-leaka calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-leak--b { animation: hp-06-leakb calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-leaka { 0%, 10% { opacity: 0; transform: translateX(-60vw); } 12% { opacity: 0.9; } 15%, 100% { opacity: 0; transform: translateX(120vw); } }
+@keyframes hp-06-leakb { 0%, 84% { opacity: 0; transform: translateX(120vw); } 86% { opacity: 0.85; } 89%, 100% { opacity: 0; transform: translateX(-60vw); } }
+.hp-06-flash { position: absolute; inset: 0; z-index: 5; background: var(--hi-white); opacity: 0; pointer-events: none; animation: hp-06-flash calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-flash { 0%, 11.8% { opacity: 0; } 12% { opacity: 0.8; } 13%, 45.8% { opacity: 0; } 46% { opacity: 0.6; } 47%, 53.8% { opacity: 0; } 54% { opacity: 0.4; } 54.6%, 59.8% { opacity: 0; } 60% { opacity: 0.4; } 60.6%, 65.8% { opacity: 0; } 66% { opacity: 0.4; } 66.6%, 85.8% { opacity: 0; } 86% { opacity: 0.7; } 87.5%, 100% { opacity: 0; } }
+
+/* HUD */
+.hp-06-hud { position: absolute; inset: 0; z-index: 7; pointer-events: none; font: 600 11px/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; }
+.hp-06-brand, .hp-06-tc { position: absolute; top: var(--hp-space-sm); color: var(--hi-white); mix-blend-mode: difference; }
+.hp-06-brand { left: var(--hp-space-sm); font-style: italic; font-weight: 900; font-size: 14px; }
+.hp-06-tc { right: var(--hp-space-sm); font-variant-numeric: tabular-nums; }
+.hp-06-toggle {
+  position: absolute; left: var(--hp-space-sm); bottom: var(--hp-space-sm); pointer-events: auto;
+  display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--hi-line-dark); border-radius: 6px;
+  background: var(--hi-black); color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-toggle svg { width: 11px; height: 11px; }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play { display: block; }
+.hp-06-toggle:focus-visible { outline: 2px solid var(--hi-white); }
+.hp-06-toggle:active { border-color: var(--hi-white); }
+@media (hover: hover) { .hp-06-toggle:hover { border-color: var(--hi-white); } }
+.hp-06-progress { position: absolute; left: calc(var(--hp-space-sm) + 44px); right: var(--hp-space-sm); bottom: calc(var(--hp-space-sm) + 15px); height: 2px; background: var(--hi-line-dark); }
+.hp-06-progress__fill { position: absolute; inset: 0; background: var(--hi-yellow); transform-origin: 0 50%; transform: scaleX(var(--hp-06-p)); }
+.hp-06-cta { position: absolute; left: 50%; bottom: calc(var(--hp-space-xl) - 16px); translate: -50% 0; pointer-events: auto; animation: hp-06-ctav calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-ctav { 0%, 91.9% { visibility: hidden; opacity: 0; transform: translateY(16px); } 92%, 100% { visibility: visible; opacity: 1; transform: none; } }
+
+@media (min-width: 769px) {
+  .hp-06-brand, .hp-06-toggle, .hp-06-cap, .hp-06-tag { left: max(40px, env(safe-area-inset-left, 0px)); }
+  .hp-06-tc { right: max(40px, env(safe-area-inset-right, 0px)); }
+  .hp-06-progress { left: calc(max(40px, env(safe-area-inset-left, 0px)) + 44px); right: max(40px, env(safe-area-inset-right, 0px)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-06-s1, .hp-06-s2, .hp-06-s3, .hp-06-s4, .hp-06-s5, .hp-06-leak, .hp-06-flash, .hp-06-toggle, .hp-06-progress, .hp-06-tc { display: none; }
+  .hp-06-s6 { opacity: 1; }
+  .hp-06-cta { visibility: visible; opacity: 1; }
+}
+
+/* onderschrift in scène 2 linksboven, buiten het paneel */
+.hp-06-s2 .hp-06-cap { top: calc(var(--hp-space-xl) - 24px); bottom: auto; max-width: 12ch; font-size: clamp(24px, 3vw, 48px); }

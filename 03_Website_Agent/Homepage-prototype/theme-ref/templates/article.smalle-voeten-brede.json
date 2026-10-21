@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Het is frustrerend: eindelijk nieuwe sportschoenen, maar na een paar trainingen voel je alweer branderige plekken op je hielen. Vooral sporters met smalle voeten kennen het probleem. Je schoen past niet helemaal zoals je wilt, je voet schuift steeds iets naar voren of naar de zijkant en elke beweging zorgt voor wrijving. Voor je het weet, loop je met een blaar die je training flink verpest.<br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Geen onnodige wrijving</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Daarom kiezen steeds meer sporters voor gripsokken. Het principe is simpel, maar briljant effectief: door de antislipnoppen op de zool en hiel blijft je voet precies op z’n plek. Geen geschuif, geen onnodige wrijving. De siliconen zorgen voor stabiliteit, terwijl de sok zelf dun genoeg is om comfortabel in je schoen te passen. Dat maakt gripsokken een redding voor iedereen met smalle voeten of wat ruimere schoenen.<br/><br/></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3><strong>Trends in sportvoeding</strong></h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Naast de praktische voordelen, merk je ook het verschil in gevoel. Wanneer je voeten stabiel liggen, train je ontspannen. Je denkt niet meer aan dat pijnlijke plekje, maar kunt focussen op techniek, balans of tempo. En dat maakt niet alleen je training fijner, maar ook effectiever.<br/><br/></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_UcyXFP": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>De oplossing</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_3JHaR7": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Een goed paar gripsokken doet dus meer dan je voeten beschermen. Het verbetert je hele sportervaring. De materialen van HÏ Grip zijn ademend en elastisch, waardoor ze niet knellen, maar juist meebewegen met elke stap. En na de training? Geen rode plekken of irritaties alleen tevreden voeten.</p><p>Het klinkt misschien als een klein detail, maar het verschil is groot. Met de juiste sokken voel je je sterk, gecontroleerd en vrij om voluit te bewegen, ongeacht hoe je schoenen vallen. Geen gedoe meer met blaren of tape, maar gewoon comfort en vertrouwen precies wat je nodig hebt om beter te presteren.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_cNYLke": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop gripsokken",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "text_UcyXFP",
+        "text_3JHaR7",
+        "button_cNYLke"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

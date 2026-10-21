@@ -1,0 +1,9 @@
+{
+  "id": "01",
+  "name": "hero",
+  "bg": "--hi-near-black",
+  "assets": ["hero-padel-zool"],
+  "links": ["https://www.higrip.nl", "https://www.higrip.nl/collections/gripsokken", "#sporten", "https://www.higrip.nl/pages/over-ons", "https://www.higrip.nl/pages/zakelijk"],
+  "interactions": ["mobiel menu: tik opent/sluit, Esc sluit, linkklik sluit", "scroll: foto zet zich vast van 108% naar 100% (scroll-gekoppeld, uit bij reduced motion)", "hover nav: onderstreping groeit (desktop)", "pill: chevron schuift 3px bij hover/tik"],
+  "notes": "Gebouwd door Denzel als ijkpunt. Video-slot: <img class=hp-01-media__el> vervangen door <video class=hp-01-media__el autoplay muted loop playsinline>; het frame houdt zijn verhouding (9:14 mobiel, 16:10 tablet, 16:9 ≥1200px). Referentie: Hero-schetsen v3 (refs/01-hero/thumbs), foto groter dan in v3 (v3: 70svh full-bleed; nu bijna schermvullend frame), zonder eyebrow en zonder placeholderlabel."
+}

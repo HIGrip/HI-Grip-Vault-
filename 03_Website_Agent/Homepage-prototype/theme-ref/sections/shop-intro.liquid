@@ -1,0 +1,96 @@
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+{{ 'shop-intro.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'g2-countdown.js' | asset_url }}" defer></script>
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="shop-intro">
+  <div class="shop-intro__inner">
+    <div class="shop-intro__lead">
+      {%- if s.eyebrow != blank -%}
+        <span class="shop-intro__eyebrow"><span class="shop-intro__dot" aria-hidden="true"></span>{{ s.eyebrow }}</span>
+      {%- endif -%}
+
+      {%- comment -%}
+        De spatie tussen beide spans blijft bewust staan: ze staan visueel onder
+        elkaar, maar zonder spatie leest een schermlezer "Kies jegripsok."
+      {%- endcomment -%}
+      {%- comment -%}
+        Staat er maar één titelregel, dan wordt de kop volledig wit: het neon is
+        dan gereserveerd voor het actieblok, zodat er één accentmoment is.
+      {%- endcomment -%}
+      <h1 class="shop-intro__title{% if s.title_top == blank or s.title_accent == blank %} shop-intro__title--solid{% endif %}">
+        {%- if s.title_top != blank -%}<span class="shop-intro__title-top">{{ s.title_top }}</span>{% endif %} {% if s.title_accent != blank %}<span class="shop-intro__title-accent">{{ s.title_accent }}</span>{%- endif -%}
+      </h1>
+
+      {%- if s.copy != blank -%}<p class="shop-intro__copy">{{ s.copy }}</p>{%- endif -%}
+    </div>
+
+    {%- if s.deal_title != blank or s.promo_end_iso != blank -%}
+      <aside class="shop-intro__deal">
+        {%- if s.deal_title != blank -%}
+          <p class="shop-intro__deal-title">{{ s.deal_title }}</p>
+        {%- endif -%}
+        {%- if s.deal_sub != blank -%}
+          <p class="shop-intro__deal-sub">{{ s.deal_sub }}</p>
+        {%- endif -%}
+        {%- if s.promo_end_iso != blank -%}
+          {%- render 'g2-countdown',
+              end_iso: s.promo_end_iso,
+              label: s.promo_label,
+              expired_text: s.promo_expired_text -%}
+        {%- endif -%}
+      </aside>
+    {%- endif -%}
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <ul class="shop-intro__usps">
+      {%- for block in section.blocks -%}
+        <li class="shop-intro__usp" {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Shop — intro",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Drie modellen, één doel" },
+    { "type": "text", "id": "title_top", "label": "Titel — regel 1", "default": "Kies je" },
+    { "type": "text", "id": "title_accent", "label": "Titel — regel 2 (accentkleur)", "default": "gripsok." },
+    { "type": "textarea", "id": "copy", "label": "Introtekst", "default": "De 2.0 als je het maximale wil: compressie, naadloos en Coolmax®. De originele Performance Gripsok als je gaat voor bewezen grip tegen de scherpste prijs." },
+    { "type": "header", "content": "Actieblok" },
+    { "type": "text", "id": "deal_title", "label": "Actie — groot (leeg = weg)", "default": "2+2 gratis" },
+    { "type": "text", "id": "deal_sub", "label": "Actie — regel eronder", "default": "Bestel 2 paar van de 2.0, ontvang er 4" },
+    { "type": "text", "id": "promo_label", "label": "Label boven de teller", "default": "Nog" },
+    { "type": "text", "id": "promo_end_iso", "label": "Einddatum (ISO met tijdzone)", "info": "Bijv. 2026-08-28T23:59:00+02:00", "default": "2026-08-28T23:59:00+02:00" },
+    { "type": "text", "id": "promo_expired_text", "label": "Tekst na afloop", "default": "Pre-order gesloten" }
+  ],
+  "blocks": [
+    {
+      "type": "usp",
+      "name": "USP",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Tekst", "default": "Gratis verzending boven €35" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Shop — intro",
+      "blocks": [
+        { "type": "usp", "settings": { "text": "Gratis verzending boven €35" } },
+        { "type": "usp", "settings": { "text": "Binnen 1 werkdag verzonden" } },
+        { "type": "usp", "settings": { "text": "30 dagen retour" } },
+        { "type": "usp", "settings": { "text": "3.500+ sporters gingen je voor" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

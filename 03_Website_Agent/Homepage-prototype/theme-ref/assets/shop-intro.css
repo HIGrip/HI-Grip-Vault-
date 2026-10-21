@@ -1,0 +1,269 @@
+/* HÏ Grip — shoppagina (collectie)
+
+   Uitlijning: alle blokken hangen aan één kolom die van de themavariabele
+   --page-margin afhangt, zodat de kop, het productgrid en de keuzehulp
+   dezelfde linkerrand delen op elk schermformaat. Het thema zet binnen die
+   kolom nog eens 100px padding op het productgrid; die halen we hier weg,
+   anders begint het grid 100px verder naar binnen dan de rest.
+
+   Kleur: neutralen dragen de pagina. Eén accent (neon) en dat zit volledig in
+   het actieblok, zodat de korting het enige gekleurde vlak is. */
+
+.shop-intro {
+  --si-ground: #0a0a0a;
+  --si-ink: #ffffff;
+  --si-ink-soft: #b0ada6;
+  --si-neon: #ccff00;
+  --si-line: #242424;
+  --si-gutter: var(--page-margin, 40px);
+  --si-radius: 6px;
+
+  background: var(--si-ground);
+  color: var(--si-ink);
+  /* Onderruimte is nodig: zonder deze raakte de USP-regel de sectierand. */
+  padding: clamp(48px, 6vw, 84px) var(--si-gutter) clamp(20px, 2.4vw, 28px);
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.shop-intro *,
+.shop-intro *::before,
+.shop-intro *::after { box-sizing: border-box; }
+
+.shop-intro__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: clamp(28px, 4vw, 60px);
+  align-items: center;
+  padding-bottom: clamp(32px, 4vw, 48px);
+}
+
+.shop-intro__lead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.shop-intro__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--si-ink-soft);
+  margin-bottom: 18px;
+}
+.shop-intro__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--si-neon);
+}
+
+.shop-intro__title {
+  margin: 0;
+  font-size: clamp(2.4rem, 6.6vw, 4.4rem);
+  font-weight: 900;
+  line-height: .92;
+  letter-spacing: -.03em;
+  text-transform: uppercase;
+  word-break: normal;
+  hyphens: none;
+}
+.shop-intro__title-top,
+.shop-intro__title-accent { display: block; }
+.shop-intro__title-accent { color: var(--si-neon); }
+/* Eén titelregel: volledig wit, neon blijft voor het actieblok. */
+.shop-intro__title--solid .shop-intro__title-accent { color: var(--si-ink); }
+
+.shop-intro__copy {
+  margin: 18px 0 0;
+  max-width: 46ch;
+  font-size: clamp(.98rem, 1.4vw, 1.08rem);
+  line-height: 1.6;
+  color: var(--si-ink-soft);
+}
+
+/* ---------- Actieblok: het enige gekleurde vlak ---------- */
+.shop-intro__deal {
+  background: var(--si-neon);
+  color: #0a0a0a;
+  border-radius: var(--si-radius);
+  padding: clamp(20px, 2.4vw, 28px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.shop-intro__deal-title {
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 2.9rem);
+  font-weight: 900;
+  line-height: .9;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+.shop-intro__deal-sub {
+  margin: 0 0 14px;
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #2f3a00;
+}
+
+/* Countdown erft de zwarte tekst van het neonvlak. */
+.shop-intro__deal .g2-countdown {
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgba(10, 10, 10, .22);
+  border-radius: 0;
+  padding: 12px 0 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+.shop-intro__deal .g2-countdown__label {
+  color: #2f3a00;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.shop-intro__deal .g2-countdown__timer { gap: 14px; }
+.shop-intro__deal .g2-countdown__digits {
+  color: #0a0a0a;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+.shop-intro__deal .g2-countdown__unit-label {
+  color: #46550a;
+  letter-spacing: .1em;
+}
+.shop-intro__deal .g2-countdown__expired { color: #0a0a0a; font-weight: 800; }
+
+/* ---------- USP-balk ----------
+   Vier gelijke kolommen in plaats van een flexrij: die liet de items op hun
+   eigen tekstbreedte staan, waardoor de reeks 247px vóór de rechterrand
+   ophield en er geen kolom ontstond. Nu vult de balk exact dezelfde breedte
+   als de kop, het grid en de keuzehulp. */
+.shop-intro__usps {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--si-line);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px 24px;
+}
+.shop-intro__usp {
+  position: relative;
+  padding-left: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: var(--si-ink);
+}
+/* Vierkantje in plaats van een bolletje: sluit aan op de rechte vlakken. */
+.shop-intro__usp::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .42em;
+  width: 8px;
+  height: 8px;
+  background: var(--si-neon);
+}
+
+@media (min-width: 700px) {
+  .shop-intro__usps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1000px) {
+  .shop-intro__usps { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 899px) {
+  .shop-intro__inner {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 26px;
+  }
+  .shop-intro__usps { gap: 8px 20px; }
+  .shop-intro__usp { font-size: 11.5px; }
+}
+
+/* ============================================================
+   Productgrid — zelfde kolom als de rest van de pagina.
+   Gescoped via :has(): shop-intro staat alleen op dit template.
+   ============================================================ */
+
+/* Het thema duwt het grid op desktop 100px naar binnen; dat breekt de gedeelde
+   rand. Alleen daar weghalen: op mobiel levert diezelfde padding juist de
+   marge die de andere blokken van --page-margin krijgen. */
+@media (min-width: 900px) {
+  body:has(.shop-intro) .collection-wrapper > .grid {
+    padding-inline: 0 !important;
+  }
+}
+
+/* Het grid zat strak tegen de zwarte kop én tegen de keuzehulp aan. */
+body:has(.shop-intro) .collection-wrapper {
+  padding-block: clamp(44px, 5vw, 76px);
+}
+
+@media (min-width: 900px) {
+  body:has(.shop-intro) ul.product-grid:has(.product-grid__item--2) {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+body:has(.shop-intro) .product-grid__item { position: relative; }
+
+body:has(.shop-intro) .product-grid__item product-card {
+  display: block;
+  border-radius: 6px;
+  background: #eae8e5;
+  padding: 10px 10px 14px;
+  transition: transform .2s cubic-bezier(.22, 1, .36, 1),
+              box-shadow .2s cubic-bezier(.22, 1, .36, 1);
+}
+body:has(.shop-intro) .product-grid__item product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .12);
+}
+body:has(.shop-intro) .product-grid__item .product-media-container,
+body:has(.shop-intro) .product-grid__item product-card > a img {
+  border-radius: 4px;
+}
+
+body:has(.shop-intro) .product-grid__item:has(a[href*="performance-grip-socks-2-0"])::before {
+  content: "Nieuw";
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #ccff00;
+  color: #0a0a0a;
+  font-family: 'Poppins', system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+body:has(.shop-intro) .product-grid__item .product-title,
+body:has(.shop-intro) .product-grid__item [class*="product-title"] {
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body:has(.shop-intro) .product-grid__item product-card { transition: none; }
+  body:has(.shop-intro) .product-grid__item product-card:hover { transform: none; }
+}

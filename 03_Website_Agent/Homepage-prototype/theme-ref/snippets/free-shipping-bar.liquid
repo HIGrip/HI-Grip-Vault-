@@ -1,0 +1,91 @@
+{% doc %}
+  Renders the free-shipping progress bar for the cart drawer.
+  Reads its threshold from settings.hi_free_shipping_threshold (theme setting, editable by the merchant).
+  Server-rendered from `cart`, so it always reflects the current cart state on every section re-render
+  (add/remove/quantity-change all trigger a Section Rendering API fetch of the cart-drawer section).
+{% enddoc %}
+
+{%- if settings.hi_free_shipping_enabled -%}
+  {%- liquid
+    assign threshold_cents = settings.hi_free_shipping_threshold | times: 100
+    assign remaining_cents = threshold_cents | minus: cart.total_price
+    if threshold_cents <= 0
+      assign progress_percent = 100
+    else
+      assign progress_percent = cart.total_price | times: 100.0 | divided_by: threshold_cents
+      if progress_percent > 100
+        assign progress_percent = 100
+      endif
+    endif
+  -%}
+
+  <div
+    class="hi-free-shipping-bar{% if remaining_cents <= 0 %} hi-free-shipping-bar--reached{% endif %}"
+    data-hi-free-shipping-bar
+  >
+    <p class="hi-free-shipping-bar__text">
+      {%- if cart.item_count == 0 -%}
+        Vanaf {{ threshold_cents | money }} verzenden we gratis.
+      {%- elsif remaining_cents <= 0 -%}
+        Gratis verzending — zit erin.
+      {%- else -%}
+        Nog {{ remaining_cents | money }} tot gratis verzending.
+      {%- endif -%}
+    </p>
+    <div
+      class="hi-free-shipping-bar__track"
+      role="progressbar"
+      aria-valuenow="{{ progress_percent | round }}"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div
+        class="hi-free-shipping-bar__fill"
+        style="width: {{ progress_percent }}%;"
+      ></div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .hi-free-shipping-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    padding: 10px var(--cart-drawer-padding, var(--padding-lg)) 12px;
+    border-bottom: 1px solid rgb(var(--color-foreground-rgb) / var(--opacity-10-25));
+  }
+
+  .hi-free-shipping-bar__text {
+    margin: 0;
+    font-size: var(--font-size--2xs);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: var(--color-foreground);
+  }
+
+  .hi-free-shipping-bar--reached .hi-free-shipping-bar__text {
+    color: var(--color-foreground);
+  }
+
+  .hi-free-shipping-bar__track {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    border-radius: 999px;
+    background-color: rgb(var(--color-foreground-rgb) / 0.12);
+    overflow: hidden;
+  }
+
+  .hi-free-shipping-bar__fill {
+    height: 100%;
+    border-radius: 999px;
+    background-color: #ccff00;
+    transition: width 0.3s ease;
+  }
+
+  .hi-free-shipping-bar--reached .hi-free-shipping-bar__fill {
+    background-color: #000000;
+  }
+{% endstylesheet %}

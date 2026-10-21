@@ -1,0 +1,305 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+/*
+ * Sectiegroep voor het beleid op /policies/. Wordt in layout/theme.liquid gerenderd i.p.v. de standaard beleidstekst.
+ */
+{
+  "type": "custom.legal_terms",
+  "name": "Juridisch: Algemene voorwaarden",
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": {
+        "eyebrow": "Algemeen",
+        "heading": "Algemene voorwaarden",
+        "heading_tag": "h1"
+      }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "terms_article_1": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 1",
+            "heading": "Bedrijfsgegevens",
+            "heading_tag": "h2",
+            "body": "",
+            "in_toc": true
+          }
+        },
+        "terms_data_row_2": {
+          "type": "data_row",
+          "settings": {
+            "label": "Bedrijf",
+            "value": "<p>HÏ Grip</p>"
+          }
+        },
+        "terms_data_row_3": {
+          "type": "data_row",
+          "settings": {
+            "label": "Adres",
+            "value": "<p>IJsseldijk-Noord 48<br>2935 BH Ouderkerk aan den IJssel</p>"
+          }
+        },
+        "terms_data_row_4": {
+          "type": "data_row",
+          "settings": {
+            "label": "Rechtsvorm",
+            "value": "<p>Vennootschap onder firma (VOF)</p>"
+          }
+        },
+        "terms_data_row_5": {
+          "type": "data_row",
+          "settings": {
+            "label": "KvK",
+            "value": "<p>97210129</p>"
+          }
+        },
+        "terms_data_row_6": {
+          "type": "data_row",
+          "settings": {
+            "label": "Btw",
+            "value": "<p>NL867952283B01</p>"
+          }
+        },
+        "terms_data_row_7": {
+          "type": "data_row",
+          "settings": {
+            "label": "Telefoon",
+            "value": "<p>+31 6 24 56 65 47</p>"
+          }
+        },
+        "terms_data_row_8": {
+          "type": "data_row",
+          "settings": {
+            "label": "E-mail",
+            "value": "<p>info@higrip.nl</p>"
+          }
+        },
+        "terms_data_row_9": {
+          "type": "data_row",
+          "settings": {
+            "label": "Website",
+            "value": "<p><a href=\"https://www.higrip.nl\">www.higrip.nl</a></p>"
+          }
+        },
+        "terms_article_10": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 2",
+            "heading": "Toepasselijkheid",
+            "heading_tag": "h2",
+            "body": "<p>Deze algemene voorwaarden gelden voor elk aanbod van HÏ Grip en voor iedere overeenkomst op afstand die via de webshop tot stand komt tussen HÏ Grip en jou als consument.</p>",
+            "in_toc": true
+          }
+        },
+        "terms_article_11": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 3",
+            "heading": "Aanbod en producten",
+            "heading_tag": "h2",
+            "body": "<p>HÏ Grip verkoopt sportartikelen met grip, gericht op performance. De kenmerken van elk product staan duidelijk op de webshop.</p><p>Heeft een product een beperkte geldigheidsduur of is het onder voorwaarden beschikbaar, zoals bij een pre-order? Dan staat dat er expliciet bij.</p>",
+            "in_toc": true
+          }
+        },
+        "terms_article_12": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 4",
+            "heading": "Bestelling en levering",
+            "heading_tag": "h2",
+            "body": "<ul><li>Bestellingen die op voorraad zijn, worden binnen 1 werkdag verzonden (maandag t/m vrijdag).</li><li>We leveren voorlopig alleen binnen Nederland.</li><li>De verzendkosten zijn €4,50 per bestelling. Vanaf €35 verzenden we gratis.</li><li>Voor pre-orders geldt een andere levertijd. Die staat per product vermeld.</li></ul>",
+            "in_toc": true
+          }
+        },
+        "terms_article_13": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 5",
+            "heading": "Betaling",
+            "heading_tag": "h2",
+            "body": "<ul><li>Je betaalt vooraf via iDEAL, Bancontact, Klarna of creditcard.</li><li>We verzenden je bestelling pas als de volledige betaling binnen is.</li></ul>",
+            "in_toc": true
+          }
+        },
+        "terms_article_14": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 6",
+            "heading": "Herroepingsrecht",
+            "heading_tag": "h2",
+            "body": "<ul><li>Je mag de overeenkomst binnen 14 dagen zonder opgave van redenen herroepen.</li><li>Die termijn loopt tot 14 dagen na de dag waarop je het product hebt ontvangen.</li><li>Ga in die periode zorgvuldig om met het product en de verpakking. Pak het alleen uit of gebruik het voor zover nodig om de aard en kenmerken te beoordelen.</li><li>Gepersonaliseerde producten (zoals bedrukkingen) vallen niet onder het herroepingsrecht.</li><li>De kosten van het terugsturen zijn voor jou.</li></ul>",
+            "in_toc": true
+          }
+        },
+        "terms_note_15": {
+          "type": "note",
+          "settings": {
+            "text": "<p>Bij HÏ Grip heb je meer tijd dan de wet voorschrijft: je kunt binnen 30 dagen na ontvangst retourneren. Zie het <a href=\"/pages/retourbeleid\">retourbeleid</a>.</p>"
+          }
+        },
+        "terms_article_16": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 7",
+            "heading": "Retourneren",
+            "heading_tag": "h2",
+            "body": "<ul><li>Meld en verstuur je retour binnen de retourtermijn.</li><li>Stuur het product compleet en onbeschadigd terug, en waar redelijkerwijs mogelijk in de originele verpakking.</li><li>Het retouradres krijg je nadat je je retour hebt aangemeld via <a href=\"mailto:info@higrip.nl\">info@higrip.nl</a>.</li></ul>",
+            "in_toc": true
+          }
+        },
+        "terms_article_17": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 8",
+            "heading": "Garantie en klachten",
+            "heading_tag": "h2",
+            "body": "<ul><li>Op producten geldt 1 maand garantie op fabricage- of materiaalfouten, als het product normaal is gebruikt.</li><li>Voorbeeld: gaan je sokken bij normaal gebruik binnen een maand kapot, dan valt dat onder de garantie. Normale slijtage valt daar niet onder.</li><li>Een klacht meld je via <a href=\"mailto:info@higrip.nl\">info@higrip.nl</a>. We helpen je verder.</li></ul>",
+            "in_toc": true
+          }
+        },
+        "terms_article_18": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 9",
+            "heading": "Aansprakelijkheid",
+            "heading_tag": "h2",
+            "body": "<p>HÏ Grip is niet aansprakelijk voor schade die ontstaat door verkeerd gebruik van geleverde producten. De aansprakelijkheid is beperkt tot het bedrag van de aankoopprijs.</p>",
+            "in_toc": true
+          }
+        },
+        "terms_article_19": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 10",
+            "heading": "Privacy",
+            "heading_tag": "h2",
+            "body": "<p>HÏ Grip verwerkt persoonsgegevens volgens de geldende privacywetgeving. Hoe we dat doen, lees je in ons <a href=\"/pages/privacybeleid\">privacybeleid</a>.</p>",
+            "in_toc": true
+          }
+        },
+        "terms_article_20": {
+          "type": "article",
+          "settings": {
+            "number_label": "Artikel 11",
+            "heading": "Geschillen",
+            "heading_tag": "h2",
+            "body": "<p>Op overeenkomsten tussen HÏ Grip en jou waarop deze algemene voorwaarden van toepassing zijn, is uitsluitend Nederlands recht van toepassing.</p>",
+            "in_toc": true
+          }
+        }
+      },
+      "block_order": [
+        "terms_article_1",
+        "terms_data_row_2",
+        "terms_data_row_3",
+        "terms_data_row_4",
+        "terms_data_row_5",
+        "terms_data_row_6",
+        "terms_data_row_7",
+        "terms_data_row_8",
+        "terms_data_row_9",
+        "terms_article_10",
+        "terms_article_11",
+        "terms_article_12",
+        "terms_article_13",
+        "terms_article_14",
+        "terms_note_15",
+        "terms_article_16",
+        "terms_article_17",
+        "terms_article_18",
+        "terms_article_19",
+        "terms_article_20"
+      ],
+      "settings": {
+        "toc_numbers": true
+      }
+    },
+    "more": {
+      "type": "legal-more",
+      "blocks": {
+        "link_1": {
+          "type": "link",
+          "settings": {
+            "label": "Algemene voorwaarden",
+            "link": "/policies/terms-of-service",
+            "new_tab": false
+          }
+        },
+        "link_2": {
+          "type": "link",
+          "settings": {
+            "label": "Wettelijke kennisgeving",
+            "link": "/policies/legal-notice",
+            "new_tab": false
+          }
+        },
+        "link_3": {
+          "type": "link",
+          "settings": {
+            "label": "Verzendbeleid",
+            "link": "/pages/verzendbeleid",
+            "new_tab": false
+          }
+        },
+        "link_4": {
+          "type": "link",
+          "settings": {
+            "label": "Retourbeleid",
+            "link": "/pages/retourbeleid",
+            "new_tab": false
+          }
+        },
+        "link_5": {
+          "type": "link",
+          "settings": {
+            "label": "Betalingsbeleid",
+            "link": "/pages/terugbetalingsbeleid",
+            "new_tab": false
+          }
+        },
+        "link_6": {
+          "type": "link",
+          "settings": {
+            "label": "Privacybeleid",
+            "link": "/pages/privacybeleid",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "link_1",
+        "link_2",
+        "link_3",
+        "link_4",
+        "link_5",
+        "link_6"
+      ],
+      "settings": {
+        "label": "Ook onder Algemeen"
+      }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": {
+        "button_label": "Contact",
+        "button_link": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "body",
+    "more",
+    "help"
+  ]
+}

@@ -1,0 +1,47 @@
+[    4199ms] [LOG] %c
+🏆 Trusted by 20,000+ Shopify merchants
+📦 Flexible bundles for every type of store
+💡 Proven to lift sales and customer happiness
+
+Learn more at:
+https://apps.shopify.com/fast-bundle-product-bundles?utm_source=storefront-console&utm_medium=attribution&utm_campaign=bundle-banner&utm_content=learn-more&utm_term=tru.online font-size:14px; @ https://cdn.shopify.com/extensions/01a134c3-08d1-7620-87db-e17376522d29/fast-bundle-product-bundles-168/assets/main.min.js:180
+[    4450ms] [LOG] [gpo] guard v3 active. required: [] currently missing: [] @ https://tru.online/nl:23597
+[    5505ms] [LOG] ### @ https://api.fastbundle.co/scripts/cart.js?rgn=71038:0
+[    5652ms] [LOG] %c
+🧩 Unlimited product options — enable product personalization with live preview.
+⚙️ Easy to use, no coding required, fully compatible with all Shopify themes.
+🏆 Trusted by 50,000+ Shopify merchants worldwide.
+⭐ Over 3,300 positive reviews and growing!
+
+🔗 Learn more at:
+https://apps.shopify.com/product-options-pro?utm_source=storefront-console&utm_medium=attribution&utm_campaign=option-banner&utm_content=learn-more&utm_term=tru.online font-size:13px;line-height: 1.5 @ https://cdn.shopify.com/extensions/01a12e23-b342-752f-85e5-1bec1cdbebe6/globo-product-options-481/assets/gpomain.js:0
+[    6188ms] [WARNING] Redux devtools not installed @ https://cdn.shopify.com/extensions/019f3d61-88e9-72a9-bc16-22f9a495a57b/automatic-discounts-upsells-48/assets/automatic-discount-v2.js?shop=tru-official.myshopify.com:20
+[    7685ms] [LOG] %c
+🔒 Trusted by thousands of Shopify merchants
+🧩 Lock pages, products, and collections easily
+🚀 Control who sees your store and boost B2B sales
+
+Learn more at:
+https://apps.shopify.com/sami-b2b-lock?utm_source=storefront-console&utm_medium=attribution&utm_campaign=lock-samita&utm_content=learn-more&utm_term=tru.online font-size:14px; @ https://cdn.shopify.com/extensions/01a133fb-f899-787a-9c15-0cfdfed55e2d/wholesale-lock-hide-price-193/assets/samita.lock.chunk.handle-process-with-settings.c2beb09cbdf987acc688.min.js:0
+[    7837ms] [INFO] Clear-Site-Data header on 'https://tru.online/nl/cart/update.js?_tbn_ignored&tabarnapp': Cleared data types: "prefetchCache", "prerenderCache". @ https://tru.online/nl:0
+[    9032ms] [LOG] SRA - v1.3.0 @ https://tru.online/web-pixels/strict/app/web-pixel-27853029@7aaae93c56736e9df275e05ad7cdcadf.js:0
+[   10382ms] [INFO] Clear-Site-Data header on 'https://tru.online/nl/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://tru.online/nl:0
+[   10498ms] [INFO] BOGOS track: cart-events [init-page] init-page @ https://cdn.shopify.com/extensions/01a13338-e453-7028-865b-198af2ce0983/freegifts-237/assets/gift.min.js:404
+[   10655ms] [INFO] BOGOS track: cart-events [init-page, observer:/cart/update.js] observer:/cart/update.js @ https://cdn.shopify.com/extensions/01a13338-e453-7028-865b-198af2ce0983/freegifts-237/assets/gift.min.js:404
+[   13677ms] [LOG] [OM GlobalScripts Early] No scripts configured @ https://cdn-asset.optimonk.com/script.esm/embedded.ea33e2e3.js:0
+[   13736ms] Uncaught Error: Goaffpro is already loaded. This message prevents duplicate loading of the script. Kindly ignore.
+    at <anonymous> (https://cdn.shopify.com/proxy/306c90133f5d5fe5831603aecd0993b3669224539d4f54858b779b1eb6259edd/api.goaffpro.com/loader.js?shop=tru-official.myshopify.com&sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA:0:49)
+[   13750ms] Uncaught ReferenceError: revQuery is not defined
+    at window.RS_MODULES (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:936)
+    at n (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:109)
+    at window.RS_MODULES (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:11:9662)
+    at n (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:109)
+    at window.RS_MODULES (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:962)
+    at n (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:109)
+    at <anonymous> (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:901)
+    at <anonymous> (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/css1588316449.js?shop=tru-official.myshopify.com:0:910)
+[   13816ms] Uncaught ReferenceError: revQuery is not defined
+    at <anonymous> (https://cdn.shopify.com/s/files/1/0270/1102/2892/t/13/assets/note416114020.js?shop=tru-official.myshopify.com:37:9747)
+[   36038ms] [LOG] ev_scroll @ https://cdn.shopify.com/extensions/01a133fb-f899-787a-9c15-0cfdfed55e2d/wholesale-lock-hide-price-193/assets/samita.lock.chunk.handle-process-with-settings.c2beb09cbdf987acc688.min.js:0
+[   53316ms] [WARNING] In a sandboxed environment, addEventListener may not behave as expected. @ https://tru.online/web-pixels@000c43caw11aa9ebbp53097d09mf26b756f/custom/web-pixel-78807269@1/sandbox/modern/nl:6
+[   57349ms] [LOG] ev_scroll @ https://cdn.shopify.com/extensions/01a133fb-f899-787a-9c15-0cfdfed55e2d/wholesale-lock-hide-price-193/assets/samita.lock.chunk.handle-process-with-settings.c2beb09cbdf987acc688.min.js:0

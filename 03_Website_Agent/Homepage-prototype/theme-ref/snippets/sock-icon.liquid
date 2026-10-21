@@ -1,0 +1,13 @@
+{% comment %}
+  Herbruikbaar sok-icoon (placeholder tot echte productfoto's er zijn).
+  Gebruik: {% render 'sock-icon', color: 'wit', class: 'hgshop-card__sock' %}
+  color: 'wit' of 'zwart'
+{% endcomment %}
+<svg class="hgshop-sock{% if color == 'wit' %} hgshop-sock--white{% endif %}{% if class %} {{ class }}{% endif %}" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+  <path class="hgshop-sock-fill" d="M20 4h18v24l10 20a7 7 0 0 1-6 10H22a8 8 0 0 1-8-8V12a8 8 0 0 1 6-8z"/>
+  <path class="hgshop-sock-cuff" d="M20 4h18v9H20z"/>
+  <g class="hgshop-sock-grip">
+    <circle cx="30" cy="52" r="1.8"/><circle cx="36" cy="54" r="1.8"/><circle cx="42" cy="56" r="1.8"/>
+    <circle cx="26" cy="46" r="1.8"/><circle cx="32" cy="47" r="1.8"/><circle cx="38" cy="49" r="1.8"/><circle cx="44" cy="50" r="1.8"/>
+  </g>
+</svg>

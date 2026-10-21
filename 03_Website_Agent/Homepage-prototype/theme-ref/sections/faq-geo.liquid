@@ -1,0 +1,221 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- assign s = section.settings -%}
+{%- assign tag = s.heading_tag | default: 'h2' -%}
+{%- assign cats = section.blocks | where: 'type', 'category' -%}
+{%- assign facts = section.blocks | where: 'type', 'fact' -%}
+
+{% comment %}
+  FAQ voor mensen én AI-zoekmachines. Antwoord-eerst, gegroepeerd per onderwerp, met
+  FAQPage-schema dat 1-op-1 uit de faq-blocks komt. Feiten-strook = snel scanbare kerngegevens
+  (verzending, retour, grip). Sticky onderwerpnavigatie op desktop, scrollbare chips op mobiel.
+{% endcomment %}
+
+<style>
+  .sl-faq-geo { padding-block: clamp(48px, 7vw, 96px); scroll-behavior: smooth; }
+  .sl-faq-geo .sl__h2 { font-size: clamp(30px, 3.6vw, 48px); }
+
+  /* feitenstrook */
+  .sl-fg-facts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 0 0 clamp(36px, 5vw, 64px); padding: 0; list-style: none; }
+  .sl-fg-fact { position: relative; padding: 22px 20px 20px; border: 1px solid var(--sl-line); border-radius: var(--sl-radius); background: var(--sl-ground); }
+  .sl-fg-fact::before { content: ''; position: absolute; left: 20px; top: 0; width: 36px; height: 4px; background: var(--sl-accent); box-shadow: 0 0 0 1px rgba(10,10,10,.15); }
+  .sl-fg-fact__t { margin: 6px 0 4px; font-size: 15px; font-weight: 800; letter-spacing: -.01em; text-transform: uppercase; line-height: 1.2; }
+  .sl-fg-fact__d { margin: 0; font-size: 13px; line-height: 1.5; color: var(--sl-soft); }
+
+  /* layout */
+  .sl-fg-grid { display: grid; grid-template-columns: minmax(240px, 340px) 1fr; gap: clamp(28px, 6vw, 88px); align-items: start; }
+  .sl-fg-side, .sl-fg-main { min-width: 0; }
+  .sl-fg-side { position: sticky; top: 110px; }
+  .sl-fg-nav { margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--sl-line); }
+  .sl-fg-nav a { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--sl-line); font-size: 14px; font-weight: 700; color: var(--sl-ink); text-decoration: none; transition: padding-left .2s ease; }
+  .sl-fg-nav a:hover { padding-left: 8px; }
+  .sl-fg-nav__n { font-size: 11px; font-weight: 700; letter-spacing: .14em; color: var(--sl-soft); min-width: 22px; }
+  .sl-fg-nav__c { margin-left: auto; font-size: 12px; font-weight: 600; color: var(--sl-soft); }
+  .sl-fg-meta { margin: 24px 0 0; font-size: 13px; line-height: 1.6; color: var(--sl-soft); }
+
+  /* groepen */
+  .sl-fg-group { margin: 0 0 20px; padding: clamp(20px, 3vw, 36px); border-radius: 16px; background: var(--sl-surface); scroll-margin-top: 110px; }
+  .sl-fg-group__head { display: flex; align-items: baseline; gap: 16px; margin: 0 0 8px; }
+  .sl-fg-group__n { font-size: 13px; font-weight: 800; letter-spacing: .14em; padding: 4px 10px; border-radius: 999px; background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-fg-group__t { margin: 0; font-size: clamp(20px, 2.2vw, 26px); font-weight: 800; letter-spacing: -.02em; line-height: 1.15; }
+  .sl-fg-group .sl-faq__item { border-top: 1px solid color-mix(in srgb, var(--sl-ink) 14%, transparent); }
+  .sl-fg-group .sl-faq__item:last-child { border-bottom: 0; }
+  .sl-fg-group .sl-faq__item summary { padding: 20px 0; font-size: 17px; }
+  .sl-fg-group .sl-faq__item summary:hover { color: color-mix(in srgb, var(--sl-ink) 70%, transparent); }
+  .sl-fg-group .sl-faq__a { margin: 0 0 22px; padding: 2px 0 2px 18px; border-left: 3px solid var(--sl-accent); font-size: 16px; line-height: 1.7; color: var(--sl-ink); max-width: 66ch; }
+  .sl-fg-group .sl-faq__a a { color: var(--sl-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+  .sl-fg-group .sl-faq__a a:hover { background: var(--sl-accent); }
+
+  /* bronnen + CTA */
+  .sl-fg-sources { margin: 28px 0 0; padding: 0 4px; font-size: 13px; line-height: 1.7; color: var(--sl-soft); }
+  .sl-fg-sources a { color: var(--sl-ink); text-decoration: underline; text-underline-offset: 3px; }
+  .sl-fg-cta { margin: 36px 0 0; padding: clamp(28px, 4vw, 48px); border-radius: 16px; background: var(--sl-btn-bg); color: #fff; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+  .sl-fg-cta__h { margin: 0 0 6px; font-size: clamp(22px, 2.6vw, 32px); font-weight: 800; letter-spacing: -.02em; line-height: 1.1; text-transform: uppercase; }
+  .sl-fg-cta__p { margin: 0; max-width: 46ch; font-size: 15px; line-height: 1.6; color: rgba(255,255,255,.78); }
+  .sl-fg-cta__btns { display: flex; flex-wrap: wrap; gap: 12px; }
+  .sl-fg-cta .sl__btn--primary { background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-fg-cta .sl__btn--ghost { border-color: rgba(255,255,255,.5); color: #fff; }
+  .sl-fg-cta .sl__btn--ghost:hover { background: #fff; color: #0a0a0a; }
+
+  @media (max-width: 1099px) { .sl-fg-facts { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 899px) {
+    .sl-fg-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    .sl-fg-side { position: static; }
+    .sl-fg-nav { display: flex; gap: 8px; overflow-x: auto; margin-inline: calc(var(--sl-gutter) * -1); padding: 0 var(--sl-gutter) 4px; border-top: 0; scrollbar-width: none; }
+    .sl-fg-nav::-webkit-scrollbar { display: none; }
+    .sl-fg-nav li { flex: 0 0 auto; }
+    .sl-fg-nav a { padding: 10px 16px; border: 1px solid var(--sl-ink); border-radius: 999px; white-space: nowrap; }
+    .sl-fg-nav a:hover { padding-left: 16px; }
+    .sl-fg-nav__n, .sl-fg-nav__c { display: none; }
+    .sl-fg-group { scroll-margin-top: 80px; }
+  }
+  @media (max-width: 479px) { .sl-fg-facts { grid-template-columns: 1fr; } .sl-fg-group .sl-faq__a { padding-left: 14px; } }
+  @media (prefers-reduced-motion: reduce) { .sl-faq-geo { scroll-behavior: auto; } .sl-fg-nav a { transition: none; } }
+</style>
+
+<section class="sl sl-faq-geo" id="faq" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap">
+
+    {%- if facts.size > 0 -%}
+      <ul class="sl-fg-facts">
+        {%- for f in facts -%}
+          <li class="sl-fg-fact" {{ f.shopify_attributes }}>
+            <p class="sl-fg-fact__t">{{ f.settings.title }}</p>
+            <p class="sl-fg-fact__d">{{ f.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    <div class="sl-fg-grid">
+      <div class="sl-fg-side">
+        {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        <{{ tag }} class="sl__h2">{{ s.heading }}</{{ tag }}>
+        {%- if s.lead != blank -%}<p class="sl__lead">{{ s.lead }}</p>{%- endif -%}
+
+        {%- if cats.size > 1 -%}
+          <ul class="sl-fg-nav" aria-label="Onderwerpen">
+            {%- for c in cats -%}
+              <li>
+                <a href="#cat-{{ c.id }}">
+                  <span class="sl-fg-nav__n">{{ forloop.index | prepend: '0' }}</span>
+                  <span>{{ c.settings.title }}</span>
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if s.updated != blank or s.contact_text != blank -%}
+          <p class="sl-fg-meta">{{ s.updated }}{%- if s.updated != blank and s.contact_text != blank -%}<br>{%- endif -%}{{ s.contact_text }}</p>
+        {%- endif -%}
+      </div>
+
+      <div class="sl-fg-main">
+        {%- assign open_group = false -%}
+        {%- assign cat_n = 0 -%}
+        {%- assign q_n = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'category' -%}
+            {%- if open_group -%}</div>{%- endif -%}
+            {%- assign cat_n = cat_n | plus: 1 -%}
+            {%- assign open_group = true -%}
+            <div class="sl-fg-group" id="cat-{{ block.id }}" {{ block.shopify_attributes }}>
+              <div class="sl-fg-group__head">
+                <span class="sl-fg-group__n">{{ cat_n | prepend: '0' }}</span>
+                <h3 class="sl-fg-group__t">{{ block.settings.title }}</h3>
+              </div>
+          {%- elsif block.type == 'faq' -%}
+            {%- assign q_n = q_n | plus: 1 -%}
+            <details class="sl-faq__item" {% if q_n == 1 %}open{% endif %} {{ block.shopify_attributes }}>
+              <summary>{{ block.settings.question }}</summary>
+              <div class="sl-faq__a">{{ block.settings.answer }}</div>
+            </details>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if open_group -%}</div>{%- endif -%}
+
+        {%- if s.sources != blank -%}
+          <div class="sl-fg-sources">{{ s.sources }}</div>
+        {%- endif -%}
+
+        {%- if s.cta_heading != blank -%}
+          <div class="sl-fg-cta">
+            <div>
+              <p class="sl-fg-cta__h">{{ s.cta_heading }}</p>
+              {%- if s.cta_text != blank -%}<p class="sl-fg-cta__p">{{ s.cta_text }}</p>{%- endif -%}
+            </div>
+            <div class="sl-fg-cta__btns">
+              {%- if s.cta_primary_label != blank -%}<a class="sl__btn sl__btn--primary" href="{{ s.cta_primary_link }}">{{ s.cta_primary_label }}</a>{%- endif -%}
+              {%- if s.cta_secondary_label != blank -%}<a class="sl__btn sl__btn--ghost" href="{{ s.cta_secondary_link }}">{{ s.cta_secondary_label }}</a>{%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{%- assign faq_blocks = section.blocks | where: 'type', 'faq' -%}
+{%- if faq_blocks.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ request.origin | append: request.path | append: '#faq' | json }},
+  "inLanguage": {{ request.locale.iso_code | json }},
+  "mainEntity": [
+    {%- for block in faq_blocks -%}
+    {
+      "@type": "Question",
+      "name": {{ block.settings.question | json }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | strip | json }} }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "FAQ — GEO",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" },
+    { "type": "header", "content": "Inhoud" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "FAQ" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Veelgestelde vragen" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst" },
+    { "type": "text", "id": "updated", "label": "Laatst bijgewerkt (tekst)" },
+    { "type": "text", "id": "contact_text", "label": "Contactregel" },
+    { "type": "richtext", "id": "sources", "label": "Bronnenblok onderaan" },
+    { "type": "header", "content": "Afsluitende CTA (leeg = niet tonen)" },
+    { "type": "text", "id": "cta_heading", "label": "Kop" },
+    { "type": "textarea", "id": "cta_text", "label": "Tekst" },
+    { "type": "text", "id": "cta_primary_label", "label": "Knop 1 label" },
+    { "type": "url", "id": "cta_primary_link", "label": "Knop 1 link" },
+    { "type": "text", "id": "cta_secondary_label", "label": "Knop 2 label" },
+    { "type": "url", "id": "cta_secondary_link", "label": "Knop 2 link" }
+  ],
+  "blocks": [
+    { "type": "fact", "name": "Feit (strook bovenaan)", "settings": [
+      { "type": "text", "id": "title", "label": "Titel", "default": "Feit" },
+      { "type": "text", "id": "text", "label": "Toelichting" }
+    ] },
+    { "type": "category", "name": "Onderwerp (groep)", "settings": [
+      { "type": "text", "id": "title", "label": "Onderwerp", "default": "Onderwerp" }
+    ] },
+    { "type": "faq", "name": "Vraag", "settings": [
+      { "type": "text", "id": "question", "label": "Vraag", "default": "Vraag?" },
+      { "type": "richtext", "id": "answer", "label": "Antwoord (begin met het directe antwoord)", "default": "<p>Antwoord.</p>" }
+    ] }
+  ],
+  "max_blocks": 40,
+  "presets": [ { "name": "FAQ — GEO" } ]
+}
+{% endschema %}

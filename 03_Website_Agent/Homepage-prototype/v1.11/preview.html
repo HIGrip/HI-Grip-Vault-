@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sectiepreview</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800;1,900&display=swap">
+<link rel="stylesheet" href="contract/tokens.css">
+<link rel="stylesheet" href="contract/base.css">
+<style>
+  /* Alleen voor de preview: buurstroken in de achtergrond uit rhythm.json */
+  .pv-neighbour { height: 120px; display: flex; align-items: center; padding-inline: max(16px, env(safe-area-inset-left, 0px)); font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="pv-neighbour" id="pv-prev"></div>
+<div id="pv-slot"></div>
+<div class="pv-neighbour" id="pv-next"></div>
+<script src="contract/base.js"></script>
+<script>
+/* Gebruik: preview.html?s=NN (via een lokale server, bijv. `py -3 -m http.server 8765` in deze map).
+   ?rm=1 zet een reduced-motion-hint (data-pv-rm) voor screenshots; echte reduced motion via Playwright emulateMedia. */
+(async () => {
+  const q = new URLSearchParams(location.search);
+  const id = q.get('s') || '01';
+  const rhythm = await (await fetch('contract/rhythm.json')).json();
+  const list = rhythm.sections;
+  const i = list.findIndex(x => x.id === id);
+  const me = list[i];
+  const dir = `sections/${me.id}-${me.name}/`;
+  const paint = (el, s, label) => {
+    if (!s) { el.remove(); return; }
+    el.style.background = `var(${s.bg})`;
+    el.style.color = `var(${s.fg})`;
+    el.textContent = `${label} · ${s.id} ${s.name}`;
+  };
+  paint(document.getElementById('pv-prev'), list[i - 1], 'vorige');
+  paint(document.getElementById('pv-next'), list[i + 1], 'volgende');
+  document.body.style.background = `var(${me.bg})`;
+  document.title = `Preview ${me.id} ${me.name}`;
+  const css = document.createElement('link');
+  css.rel = 'stylesheet';
+  css.href = dir + 'section.css?v=' + Date.now();
+  document.head.appendChild(css);
+  const html = await (await fetch(dir + 'section.html?v=' + Date.now())).text();
+  document.getElementById('pv-slot').outerHTML = html;
+  const js = document.createElement('script');
+  js.src = dir + 'section.js?v=' + Date.now();
+  document.body.appendChild(js);
+})();
+</script>
+</body>
+</html>

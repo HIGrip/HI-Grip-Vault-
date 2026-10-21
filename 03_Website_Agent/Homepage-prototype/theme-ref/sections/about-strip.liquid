@@ -1,0 +1,252 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+-%}
+<section class="ab ab-strip-sec ab-pad" data-ab="strip" data-anim="{{ s.animate }}" aria-label="Achter de schermen"
+  style="{% render 'about-vars', s: s %}--ab-sh:{{ s.height_desktop }}px;--ab-sh-m:{{ s.height_mobile }}px;--ab-gap:{{ s.gap }}px;">
+  <div class="ab-strip__vp">
+    <div class="ab-strip" data-gray="{{ s.grayscale }}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <figure {{ block.shopify_attributes }}>
+          {%- if b.image != blank -%}
+            {%- assign img_alt = b.alt | default: b.image.alt | default: b.caption -%}
+            {{ b.image | image_url: height: 900 | image_tag: loading: 'lazy', alt: img_alt }}
+          {%- else -%}
+            {{ 'image' | placeholder_svg_tag: 'ab-strip__ph' }}
+          {%- endif -%}
+          {%- if b.caption != blank -%}<figcaption {% render 'about-ta', d: b.caption_align, m: b.caption_align_m %}>{{ b.caption | escape }}</figcaption>{%- endif -%}
+        </figure>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Fotostrook",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Strook"
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Hoogte desktop",
+      "min": 160,
+      "max": 600,
+      "step": 10,
+      "default": 440,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Hoogte mobiel",
+      "min": 120,
+      "max": 400,
+      "step": 10,
+      "default": 220,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Tussenruimte",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "grayscale",
+      "label": "Zwart-wit, kleur bij hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "photo",
+      "name": "Foto",
+      "settings": [
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst (SEO)",
+          "info": "Leeg = alt-tekst van het bestand of het bijschrift."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Bijschrift",
+          "default": "Pitch"
+        },
+        {
+          "type": "select",
+          "id": "caption_align",
+          "label": "Bijschrift uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "caption_align_m",
+          "label": "Bijschrift uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Over ons: Fotostrook",
+      "blocks": [
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Pitch"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Shoot"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Padel"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Voetbal"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Gym"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "caption": "Tennis"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,306 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['academy-tvb-open.jpg']={{ 'mv-academy-tvb-open.jpg' | asset_url | json }};MV_ASSETS['hardlopen-gripsokken.jpg']={{ 'mv-hardlopen-gripsokken.jpg' | asset_url | json }};MV_ASSETS['voetbal-gripsokken-wit.jpg']={{ 'mv-voetbal-gripsokken-wit.jpg' | asset_url | json }};</script>
+{% raw %}<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "AboutPage",
+   "@id": "https://www.higrip.nl/pages/onze-visie#webpage",
+   "url": "https://www.higrip.nl/pages/onze-visie",
+   "name": "Visie van HÏ Grip",
+   "description": "De visie, pijlers, ambities en Performance Academy van HÏ Grip, het Nederlandse performance sportswear merk achter de Performance Gripsokken.",
+   "inLanguage": "nl-NL",
+   "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.higrip.nl/#website",
+    "url": "https://www.higrip.nl/",
+    "name": "HÏ Grip"
+   },
+   "breadcrumb": {
+    "@id": "https://www.higrip.nl/pages/onze-visie#breadcrumb"
+   },
+   "about": {
+    "@id": "https://www.higrip.nl/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.higrip.nl/#organization"
+   },
+   "relatedLink": [
+    "https://www.higrip.nl/pages/onze-missie",
+    "https://www.higrip.nl/pages/over-ons"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://www.higrip.nl/#organization",
+   "name": "HÏ Grip",
+   "alternateName": [
+    "HI Grip",
+    "higrip"
+   ],
+   "url": "https://www.higrip.nl/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.higrip.nl/cdn/shop/files/HI_Grip_logo_high_res.png",
+    "width": 1000,
+    "height": 1000
+   },
+   "slogan": "Ga door waar anderen stoppen.",
+   "description": "Wij versnellen de beweging van iedere sporter.",
+   "foundingDate": "2024-12",
+   "foundingLocation": {
+    "@type": "Place",
+    "name": "Rotterdam"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "Nederland"
+   },
+   "knowsAbout": [
+    "gripsokken",
+    "performance sportswear",
+    "tennis",
+    "padel",
+    "voetbal",
+    "rugby"
+   ],
+   "founder": [
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-lars",
+     "name": "Lars Cretz",
+     "jobTitle": "Co-founder",
+     "description": "Finance, design, ads en AI bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    },
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-tigo",
+     "name": "Tigo Twigt",
+     "jobTitle": "Co-founder",
+     "description": "Sales, B2B en website bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    },
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-timo",
+     "name": "Timo Heijligers",
+     "jobTitle": "Co-founder",
+     "description": "Inkoop, import en B2B bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    }
+   ],
+   "sameAs": [
+    "https://nl.trustpilot.com/review/higrip.nl"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.higrip.nl/pages/onze-visie#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.higrip.nl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Over ons",
+     "item": "https://www.higrip.nl/pages/over-ons"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Visie",
+     "item": "https://www.higrip.nl/pages/onze-visie"
+    }
+   ]
+  }
+ ]
+}
+</script>{% endraw %}
+<section class="mv-hero mv-hero--run mv-band-black{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="hero" aria-labelledby="hero-title" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-hero__frame"> <div class="mv-hero__media"> <img width="1102" height="1102" fetchpriority="high" decoding="async" alt="{{ s.t2 | escape }}" src="{%- if s.ima1 != blank -%}{{ s.ima1 | image_url: width: 1102 }}{%- else -%}{{ 'mv-hardlopen-gripsokken.jpg' | asset_url }}{%- endif -%}"> </div> <div class="mv-hero__txt"> <div class="mv-wrap"> <h1 class="mv-h1" id="hero-title"> <span class="mv-l">{{ s.t3 | escape }}</span> <span class="mv-l">{{ s.t4 | escape }}</span> <span class="mv-l">{{ s.t5 }}</span> </h1> </div> </div> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Visie: Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "ima1",
+      "label": "Afbeelding · hardlopen-gripsokken.jpg"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "Alt-tekst · hardlopen-gripsokken.jpg",
+      "default": "Hardloper in witte HÏ Grip-gripsokken loopt over een fietspad tussen het groen, van achteren gezien"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "SPAN · Een generatie",
+      "default": "Een generatie"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "SPAN · die blijft gaan,",
+      "default": "die blijft gaan,"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "t5",
+      "label": "SPAN · blijft groeien.",
+      "default": "<em>blijft groeien.</em>"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visie: Hero"
+    }
+  ]
+}
+{% endschema %}

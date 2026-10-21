@@ -1,0 +1,89 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign p = s.product | default: all_products['performance-gripsokken-2-0-wit']
+  assign p2 = s.product_alt | default: all_products['performance-gripsokken-2-0-zwart']
+  assign tag = s.heading_tag | default: 'h2'
+  assign img = s.image | default: p.featured_image
+-%}
+
+<section class="sl sl-product" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap sl-product__grid">
+    <div class="sl-product__media">
+      {%- if img != blank -%}
+        {{ img | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 600px, 100vw', widths: '500, 800, 1200', alt: p.title }}
+      {%- endif -%}
+      {%- if s.tag != blank -%}<span class="sl-product__tag">{{ s.tag }}</span>{%- endif -%}
+    </div>
+
+    <div>
+      {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      <{{ tag }} class="sl-product__title">{{ s.heading | default: p.title }}</{{ tag }}>
+      {%- if p.price -%}
+        <p class="sl-product__price">
+          <span>{{ p.price | money }}</span>
+          {%- if p.compare_at_price > p.price -%}
+            <s class="sl-product__was">{{ p.compare_at_price | money }}</s>
+          {%- endif -%}
+        </p>
+        {%- if s.deal_text != blank -%}<p class="sl-product__deal">{{ s.deal_text }}</p>{%- endif -%}
+      {%- endif -%}
+      {%- if s.text != blank -%}<p class="sl__lead">{{ s.text }}</p>{%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <ul class="sl-product__list">
+          {%- for block in section.blocks -%}<li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>{%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if p2 != blank -%}
+        <div class="sl-product__colors">
+          <a class="sl-product__color" href="{{ p.url }}"><span class="sl-product__swatch" style="background:#fff"></span>Wit</a>
+          <a class="sl-product__color" href="{{ p2.url }}"><span class="sl-product__swatch" style="background:#000"></span>Zwart</a>
+        </div>
+      {%- endif -%}
+
+      <a class="sl__btn sl__btn--primary" href="{{ p.url }}">
+        {{ s.cta_text | default: 'Bekijk de Performance Gripsokken 2.0' }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      {%- if s.note != blank -%}<p class="sl-product__note">{{ s.note }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport — productblok",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "product", "id": "product", "label": "Product", "info": "Leeg = Performance Gripsokken 2.0 wit" },
+    { "type": "product", "id": "product_alt", "label": "Tweede kleur (zwart)", "info": "Leeg = Performance Gripsokken 2.0 zwart" },
+    { "type": "image_picker", "id": "image", "label": "Foto (leeg = productfoto)" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Onze gripsok voor sporters" },
+    { "type": "text", "id": "heading", "label": "Kop", "info": "Leeg = producttitel" },
+    { "type": "text", "id": "tag", "label": "Label op foto (leeg = geen)" },
+    { "type": "textarea", "id": "text", "label": "Tekst", "default": "Compressie, naadloos en Coolmax®. De sok waarmee je voet blijft waar hij hoort." },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Bekijk de Performance Gripsokken 2.0" },
+    { "type": "text", "id": "deal_text", "label": "Extra actieregel onder de prijs (leeg = geen)", "info": "Bijv. de bestaande 2+2 gratis. Prijs en doorgestreepte prijs komen automatisch uit het product." },
+    { "type": "text", "id": "note", "label": "Kleine regel onder knop", "default": "Gratis verzending boven €35" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "point", "name": "Voordeel", "settings": [ { "type": "text", "id": "text", "label": "Tekst", "default": "Antislip grip-patroon" } ] }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    { "name": "Sport — productblok", "blocks": [
+      { "type": "point", "settings": { "text": "Antislip grip-patroon voor stabiliteit in je schoen" } },
+      { "type": "point", "settings": { "text": "Compressie en naadloze pasvorm" } },
+      { "type": "point", "settings": { "text": "Coolmax®: ademend en droog" } }
+    ] }
+  ]
+}
+{% endschema %}

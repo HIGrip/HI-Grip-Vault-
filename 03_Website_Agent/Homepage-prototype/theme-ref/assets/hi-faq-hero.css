@@ -1,0 +1,25 @@
+/* HÏ Grip — FAQ-pagina: hero met witte gradient onderaan die zacht overloopt naar de volgende sectie.
+   Alleen geladen op page.veelgestelde-vragen (zie layout/theme.liquid). De foto-hoogte staat in de
+   sectie-instellingen (slide_height). */
+
+[id$="__slideshow_kjE9nV"] {
+  position: relative;
+}
+
+[id$="__slideshow_kjE9nV"]::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: -1px;
+  z-index: 5;
+  height: clamp(140px, 32%, 320px);
+  background: linear-gradient(
+    to top,
+    #fff 0%,
+    rgb(255 255 255 / 0.92) 18%,
+    rgb(255 255 255 / 0.6) 48%,
+    rgb(255 255 255 / 0.2) 78%,
+    rgb(255 255 255 / 0) 100%
+  );
+  pointer-events: none;
+}

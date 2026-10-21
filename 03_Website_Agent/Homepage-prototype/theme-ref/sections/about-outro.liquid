@@ -1,0 +1,283 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign chars = s.wordmark | strip | split: ''
+  assign cn = chars.size
+  if s.show_dot
+    assign cn = cn | plus: 1
+  endif
+  assign mk = cn | times: 0.515
+-%}
+<section class="ab ab-ou ab-pad" data-ab="outro" data-anim="{{ s.animate }}" aria-label="Afsluiting" style="{% render 'about-vars', s: s %}--ab-mk:{{ mk }};">
+  <div class="ab-wrap ab-ou__top">
+    <{{ tag }} class="ab-h rv"{% render 'about-ta', d: s.heading_align, m: s.heading_align_m %}>{{ s.heading }}</{{ tag }}>
+  </div>
+  <div class="ab-mark" aria-hidden="true">
+    {%- for c in chars -%}<span>{% if c == ' ' %}&nbsp;{% else %}{{ c | escape }}{% endif %}</span>{%- endfor -%}
+    {%- if s.show_dot -%}<span class="dot">.</span>{%- endif -%}
+  </div>
+  {%- if s.foot_text != blank -%}
+    <div class="ab-wrap ab-ou__foot"{% render 'about-ta', d: s.foot_align, m: s.foot_align_m %}><span>{{ s.foot_text | escape }}</span></div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Afsluiting",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Ga door waar anderen <em>stoppen.</em>",
+      "info": "Zet woorden tussen <em>…</em> voor de accentkleur. Op desktop op één regel, op mobiel op twee."
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Kop uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "heading_align_m",
+      "label": "Kop uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "wordmark",
+      "label": "Woordmerk",
+      "default": "HÏ GRIP",
+      "info": "Groot onderaan; de letters komen omhoog bij scrollen."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dot",
+      "label": "Punt achter het woordmerk (accentkleur)",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "foot_text",
+      "label": "Regel onderaan",
+      "default": "Sportswear as the foundation of performance · higrip.nl"
+    },
+    {
+      "type": "select",
+      "id": "foot_align",
+      "label": "Voettekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "foot_align_m",
+      "label": "Voettekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 90,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Over ons: Afsluiting"
+    }
+  ]
+}
+{% endschema %}

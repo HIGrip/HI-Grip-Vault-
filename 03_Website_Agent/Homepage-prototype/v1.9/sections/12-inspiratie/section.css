@@ -1,0 +1,39 @@
+/* 12 INSPIRATIE · 1.6 (Lars 19-10: meer beweging, zonder achtergrond). Geen foto meer: zwart vlak met twee reuzenregels
+   die eindeloos tegen elkaar in lopen (wit en volt, om en om gevuld en als contour). 1.7: geen scroll-koppeling meer.
+   Reduced motion: de regels staan stil en de zin is leesbaar. */
+.hp-12 { position: relative; overflow: clip; display: grid; align-content: center; gap: var(--hp-space-lg); min-height: min(90svh, 900px); background: var(--hi-black); color: var(--hi-white); padding-block: var(--hp-space-xl); }
+.hp-12-rows { display: grid; gap: 0.02em; font: italic 900 clamp(64px, 15vw, 260px)/0.86 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; }
+.hp-12-row { overflow: hidden; }
+.hp-12-row--2 { color: var(--hi-yellow); }
+.hp-12-track { display: flex; width: max-content; }
+.hp-12-track { animation: hp-12-marq calc(var(--hp-dur-3) * 22) var(--hp-ease) infinite; animation-timing-function: linear; }
+.hp-12-row--2 .hp-12-track { animation-direction: reverse; }
+.hp-12.is-off .hp-12-track { animation-play-state: paused; }
+@keyframes hp-12-marq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.hp-12-w { flex: none; padding-right: 0.28em; white-space: nowrap; }
+.hp-12-w--o { color: transparent; -webkit-text-stroke: max(2px, 0.012em) currentColor; }
+.hp-12-row--1 .hp-12-w--o { -webkit-text-stroke-color: var(--hi-white); }
+.hp-12-row--2 .hp-12-w--o { -webkit-text-stroke-color: var(--hi-yellow); }
+.hp-12-inner { display: grid; justify-items: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-12-track { animation: none; }
+}
+
+/* 1.9 (Lars 19-10: rustiger, beter leesbaar; de shopknop paste niet) · de regels lopen half zo snel en zijn allemaal
+   gevuld (geen contouren meer). De pill staat niet meer los eronder maar groot midden op de naad tussen de twee regels,
+   met een zwarte rand eromheen zodat hij als een sluiting over de lopende tekst ligt. */
+.hp-12 { min-height: min(80svh, 820px); }
+.hp-12-track { animation-duration: calc(var(--hp-dur-3) * 48); }
+.hp-12-stage { position: relative; }
+.hp-12-rows { gap: 0.06em; }
+.hp-12-cta {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; z-index: 2;
+  min-height: 72px; padding: 8px 8px 8px 34px; gap: 18px; font-size: 17px;
+  box-shadow: 0 0 0 10px var(--hi-black);
+}
+.hp-12-cta .hp-pill__chev { width: 56px; height: 56px; }
+@media (max-width: 768px) {
+  .hp-12-cta { min-height: 60px; font-size: 15px; padding-left: 24px; box-shadow: 0 0 0 6px var(--hi-black); }
+  .hp-12-cta .hp-pill__chev { width: 44px; height: 44px; }
+}

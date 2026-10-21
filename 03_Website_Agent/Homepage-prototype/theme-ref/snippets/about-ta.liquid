@@ -1,0 +1,7 @@
+{% doc %}
+  Uitlijning per tekstveld (desktop + mobiel) als data-attributen; CSS in about-page.css.
+  @param {string} d - left | center | right (desktop)
+  @param {string} m - left | center | right (mobiel)
+{% enddoc %}
+{%- if d != blank %} data-ta="{{ d }}"{% endif -%}
+{%- if m != blank %} data-ta-m="{{ m }}"{% endif -%}

@@ -1,0 +1,32 @@
+/* 12 INSPIRATIE · de afsluiting als moment. Padelfoto full-bleed achter een zwart scrim, twee randvullende regels
+   (wit / volt) en één witte pill. Alles scroll-gekoppeld uit section.js:
+   - foto zoomt uit (1.12 → 1.0) en schuift trager mee dan de pagina (--hp-12-s, --hp-12-y)
+   - de regels komen één voor één uit hun masker omhoog (--hp-12-r1, --hp-12-r2)
+   - desktop: de regels drijven tegen elkaar in, altijd binnen de container (--hp-12-x1, --hp-12-x2; transitions.css schuift de pill met (x1+x2)/2 mee)
+   In rust zonder JS en bij reduced motion: alles staat stil en leesbaar. */
+.hp-12 { position: relative; isolation: isolate; overflow: clip; display: grid; align-items: end; min-height: min(100svh, 980px); background: var(--hi-black); color: var(--hi-white); padding-block: var(--hp-space-xxl) var(--hp-space-xl); }
+
+/* foto + scrim: beeld op 42% over zwart (worst case wit pixel → sRGB 107, contrast wit ≥ 5,3:1, volt ≥ 4,5:1); onderaan loopt hij dicht naar zwart richting footer */
+.hp-12-bg { position: absolute; z-index: -1; inset: -12% 0; overflow: hidden; }
+.hp-12-bg__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 30% 50%; opacity: 0.42; }
+.hp-12::after { content: ""; position: absolute; z-index: -1; inset: 0; pointer-events: none; background: linear-gradient(to bottom, transparent 55%, var(--hi-black) 100%); }
+.hp-motion .hp-12-bg { transform: translate3d(0, calc(var(--hp-12-y, 0) * 1%), 0) scale(var(--hp-12-s, 1)); will-change: transform; }
+
+.hp-12-inner { display: grid; justify-items: start; gap: var(--hp-space-ml); }
+.hp-12-title { font-weight: 900; font-style: italic; font-size: min(18.5vw, 96px); line-height: 0.92; letter-spacing: var(--hp-type-track-head); text-wrap: initial; }
+.hp-12-l { display: block; padding-right: 0.08em; clip-path: inset(-0.3em -100vw 0 -100vw); } /* masker: alleen de onderrand snijdt */
+.hp-12-l--2 { color: var(--hi-yellow); }
+.hp-12-in { display: block; }
+.hp-motion .hp-12-l--1 .hp-12-in { transform: translate3d(0, var(--hp-12-r1, 0%), 0); }
+.hp-motion .hp-12-l--2 .hp-12-in { transform: translate3d(0, var(--hp-12-r2, 0%), 0); }
+
+@media (min-width: 769px) {
+  .hp-12 { padding-block: var(--hp-space-xxl) calc(var(--hp-space-xl) + var(--hp-space-md)); }
+  .hp-12-inner { gap: var(--hp-space-lg); }
+  /* randvullend: "anderen stoppen." is ±9,5× de korpsgrootte breed; zo vult hij ±90% van de container en blijft er ruimte voor de drift */
+  .hp-12-title { justify-self: stretch; font-size: calc(min(100vw - 80px, 1440px) * 0.095); }
+  /* regel even breed als de tekst, zodat section.js de vrije ruimte (container − regel) kan meten */
+  .hp-12-l { width: max-content; max-width: 100%; white-space: nowrap; will-change: transform; }
+  .hp-motion .hp-12-l--1 { transform: translate3d(var(--hp-12-x1, 0px), 0, 0); }
+  .hp-motion .hp-12-l--2 { transform: translate3d(var(--hp-12-x2, 0px), 0, 0); }
+}

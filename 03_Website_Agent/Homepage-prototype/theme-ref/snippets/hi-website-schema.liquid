@@ -1,0 +1,25 @@
+{% doc %}
+  WebSite + SearchAction structured data voor de homepage (sitelinks searchbox).
+  Organization staat al in sections/header.liquid — hier bewust niet herhaald,
+  dubbele Organization-nodes verwarren Google.
+{% enddoc %}
+
+{%- if template == 'index' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | json }},
+      "inLanguage": {{ request.locale.iso_code | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "{{ shop.url }}/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+{%- endif -%}

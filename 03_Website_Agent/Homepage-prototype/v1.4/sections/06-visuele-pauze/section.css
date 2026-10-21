@@ -1,0 +1,136 @@
+/* 06 VISUELE PAUZE · 1.4 (Lars 19-10: de edit van 1.3 v2 was beter). Een film in code, ~14 s in een lus.
+   Eén tijdlijn van 16 × --hp-dur-3; herhaalde bewegingen delen één keyframe en schuiven met een negatieve delay
+   (verschuiving s → delay (s − 1) × lus). Scènes: 0–20 de zool · 20–40 het grippatroon · 40–76 stop / draai / sprint
+   op de beat · 76–88 de laatste bal (wipe in drie banen, geen iris) · 88–100 de hele zin.
+   section.js pauzeert buiten beeld en met de knop, en schrijft timecode en voortgang. Reduced motion: alleen het eindbeeld. */
+.hp-06 { --hp-06-p: 0; position: relative; height: 100svh; min-height: 560px; max-height: 1100px; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-film { position: absolute; inset: 0; overflow: hidden; isolation: isolate; }
+.hp-06.is-paused .hp-06-film * { animation-play-state: paused; }
+
+/* scènes */
+.hp-06-scene { position: absolute; inset: 0; overflow: hidden; }
+.hp-06-scene::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, var(--hi-scrim-strong) 0%, var(--hi-scrim) 45%, transparent 75%); pointer-events: none; }
+.hp-06-s5::after { display: none; }
+.hp-06-shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hp-06-shot--zool { object-position: 62% 60%; }
+
+.hp-06-s1 { animation: hp-06-v1 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s2 { animation: hp-06-v2 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s3 { animation: hp-06-v3 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s4 { animation: hp-06-v4 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; background: var(--hi-black); }
+.hp-06-s5 { animation: hp-06-v5 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; display: grid; place-items: center; background: var(--hi-black); }
+@keyframes hp-06-v1 { 0%, 19.9% { opacity: 1; } 20%, 100% { opacity: 0; } }
+@keyframes hp-06-v2 { 0%, 19.9% { opacity: 0; } 20%, 39.9% { opacity: 1; } 40%, 100% { opacity: 0; } }
+@keyframes hp-06-v3 { 0%, 39.9% { opacity: 0; } 40%, 75.9% { opacity: 1; } 76%, 100% { opacity: 0; } }
+@keyframes hp-06-v4 { 0%, 75.9% { opacity: 0; } 76%, 87.9% { opacity: 1; } 88%, 100% { opacity: 0; } }
+@keyframes hp-06-v5 { 0%, 87.9% { opacity: 0; } 88%, 100% { opacity: 1; } }
+
+.hp-06-shot--zool { animation: hp-06-punch calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-punch { 0% { transform: scale(1.55); } 3% { transform: scale(1.14); } 20%, 100% { transform: scale(1.03); } }
+.hp-06-shot--patroon { animation: hp-06-spin calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-spin { 0%, 20% { transform: scale(1.8) rotate(-12deg); } 23% { transform: scale(1.3) rotate(-3deg); } 40%, 100% { transform: scale(1.12) rotate(4deg); } }
+
+/* tekstregels: inschuiven, oprijzen en inslaan */
+.hp-06-stack { position: absolute; z-index: 2; left: var(--hp-space-gutter); right: var(--hp-space-gutter-r); bottom: calc(9svh + var(--hp-space-ml)); display: grid; justify-items: start; }
+.hp-06-stack--right { justify-items: end; text-align: right; top: calc(9svh + var(--hp-space-ml)); bottom: auto; }
+.hp-06-l { display: block; font: italic 900 clamp(46px, 11vw, 190px)/0.86 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; padding-right: 0.06em; }
+.hp-06-stack--right .hp-06-l { font-size: clamp(38px, 8.4vw, 150px); }
+.hp-06-volt { color: var(--hi-yellow); }
+
+.hp-06-l--a { animation: hp-06-left calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-l--d { animation: hp-06-right calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.8); }
+.hp-06-l--b { animation: hp-06-slam calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; transform-origin: 0 70%; }
+.hp-06-l--f { animation: hp-06-slam calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.74); transform-origin: 100% 70%; }
+.hp-06-l--c { animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-l--e { animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.83); }
+@keyframes hp-06-left { 0%, 2% { transform: translateX(-110vw); } 6%, 100% { transform: none; } }
+@keyframes hp-06-right { 0%, 2% { transform: translateX(110vw); } 6%, 100% { transform: none; } }
+@keyframes hp-06-slam { 0%, 6% { opacity: 0; transform: scale(3); } 8% { opacity: 1; transform: scale(0.92); } 9.5%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes hp-06-rise { 0%, 10% { clip-path: inset(0 0 100% 0); transform: translateY(40%); } 13%, 100% { clip-path: inset(-0.2em 0 -0.2em 0); transform: none; } }
+
+/* scène 3: drie harde cuts van 12% met het woord als reuzenletter */
+.hp-06-cut { position: absolute; inset: 0; animation: hp-06-cutv calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-cut .hp-06-shot { animation: hp-06-shake calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-cut--2, .hp-06-cut--2 .hp-06-shot, .hp-06-cut--2 .hp-06-word { animation-delay: calc(var(--hp-dur-3) * 16 * -0.88); }
+.hp-06-cut--3, .hp-06-cut--3 .hp-06-shot, .hp-06-cut--3 .hp-06-word { animation-delay: calc(var(--hp-dur-3) * 16 * -0.76); }
+@keyframes hp-06-cutv { 0%, 39.9% { opacity: 0; } 40%, 51.9% { opacity: 1; } 52%, 100% { opacity: 0; } }
+@keyframes hp-06-shake { 0%, 40% { transform: scale(1.4) translate(2%, -1%); } 41% { transform: scale(1.2) translate(-1.5%, 1%); } 42% { transform: scale(1.22) translate(1%, 0); } 52%, 100% { transform: scale(1.08); } }
+.hp-06-word {
+  position: absolute; z-index: 2; left: 0; right: 0; top: 50%; translate: 0 -50%; text-align: center;
+  font: italic 900 clamp(84px, 23vw, 400px)/0.8 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase;
+  -webkit-text-stroke: max(2px, 0.012em) var(--hi-white);
+  animation: hp-06-beat calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite;
+}
+@keyframes hp-06-beat { 0%, 40% { transform: scale(1.7); color: var(--hi-yellow); } 41.5% { transform: scale(1); color: var(--hi-yellow); } 44%, 48% { transform: scale(1.03); color: var(--hi-white); } 51.9%, 100% { transform: scale(1.06); color: transparent; } }
+.hp-06-kicker {
+  position: absolute; z-index: 3; left: 0; right: 0; top: calc(9svh + var(--hp-space-md)); text-align: center;
+  font: 700 clamp(14px, 1.4vw, 20px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+  animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.7);
+}
+
+/* scène 4: de bal komt in drie horizontale banen binnen, om en om van links en rechts */
+.hp-06-band { position: absolute; inset: 0; animation: hp-06-band-l calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-band--2 { animation-name: hp-06-band-r; }
+.hp-06-band--3 { animation-delay: calc(var(--hp-dur-3) * 16 * -0.985); }
+@keyframes hp-06-band-l { 0%, 76% { transform: translateX(-102%); } 79%, 100% { transform: none; } }
+@keyframes hp-06-band-r { 0%, 76.8% { transform: translateX(102%); } 79.8%, 100% { transform: none; } }
+.hp-06-band--1 .hp-06-shot, .hp-06-band--2 .hp-06-shot, .hp-06-band--3 .hp-06-shot { object-position: 50% 45%; }
+.hp-06-band--1 { clip-path: polygon(0 0, 100% 0, 100% 33.4%, 0 33.4%); }
+.hp-06-band--2 { clip-path: polygon(0 33.3%, 100% 33.3%, 100% 66.7%, 0 66.7%); }
+.hp-06-band--3 { clip-path: polygon(0 66.6%, 100% 66.6%, 100% 100%, 0 100%); }
+.hp-06-last {
+  position: absolute; z-index: 2; left: var(--hp-space-gutter); right: var(--hp-space-gutter-r); bottom: calc(9svh + var(--hp-space-ml)); text-align: center;
+  font: italic 900 clamp(40px, 8vw, 140px)/0.9 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase;
+  animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.3);
+}
+
+/* scène 5: de hele zin als eindbeeld */
+.hp-06-end {
+  max-width: 24ch; padding-inline: var(--hp-space-gutter) var(--hp-space-gutter-r);
+  font: 800 clamp(26px, 4.4vw, 72px)/1.02 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase;
+  animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; animation-delay: calc(var(--hp-dur-3) * 16 * -0.21);
+}
+
+/* flits op elke cut, korrel, cinemabalken */
+.hp-06-flash { position: absolute; inset: 0; z-index: 4; background: var(--hi-white); opacity: 0; pointer-events: none; animation: hp-06-flash calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-flash {
+  0%, 19.8% { opacity: 0; } 20% { opacity: 0.9; } 21.5%, 39.8% { opacity: 0; } 40% { opacity: 0.7; } 41%, 51.8% { opacity: 0; }
+  52% { opacity: 0.45; } 52.8%, 63.8% { opacity: 0; } 64% { opacity: 0.45; } 64.8%, 75.8% { opacity: 0; } 76% { opacity: 0.8; } 77.5%, 87.8% { opacity: 0; } 88% { opacity: 0.5; } 89.5%, 100% { opacity: 0; }
+}
+.hp-06-grain { position: absolute; inset: -10%; z-index: 5; width: 120%; height: 120%; opacity: 0.14; filter: grayscale(1); mix-blend-mode: overlay; pointer-events: none; animation: hp-06-grain calc(var(--hp-dur-1) * 2) var(--hp-ease) infinite; }
+@keyframes hp-06-grain { 0% { transform: translate(0, 0); } 25% { transform: translate(-3%, 2%); } 50% { transform: translate(2%, -3%); } 75% { transform: translate(-2%, -1%); } 100% { transform: translate(0, 0); } }
+.hp-06-bar { position: absolute; z-index: 6; left: 0; right: 0; height: 9svh; background: var(--hi-black); }
+.hp-06-bar--top { top: 0; }
+.hp-06-bar--bottom { bottom: 0; }
+
+/* HUD op de balken */
+.hp-06-hud { position: absolute; inset: 0; z-index: 7; pointer-events: none; font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+.hp-06-brand, .hp-06-tc { position: absolute; top: calc(4.5svh - 6px); }
+.hp-06-brand { left: var(--hp-space-gutter); font-style: italic; font-weight: 900; color: var(--hi-white); }
+.hp-06-tc { right: var(--hp-space-gutter-r); font-variant-numeric: tabular-nums; }
+.hp-06-tc__now { color: var(--hi-white); }
+.hp-06-toggle {
+  position: absolute; left: var(--hp-space-gutter); bottom: calc(4.5svh - 18px); pointer-events: auto;
+  display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--hi-line-dark); border-radius: 6px;
+  background: transparent; color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-toggle svg { width: 12px; height: 12px; }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play { display: block; }
+.hp-06-toggle:focus-visible { outline: 2px solid var(--hi-white); }
+.hp-06-toggle:active { border-color: var(--hi-white); }
+@media (hover: hover) { .hp-06-toggle:hover { border-color: var(--hi-white); } }
+.hp-06-progress { position: absolute; left: calc(var(--hp-space-gutter) + 52px); right: var(--hp-space-gutter-r); bottom: 4.5svh; height: 2px; background: var(--hi-line-dark); }
+.hp-06-progress__fill { position: absolute; inset: 0; background: var(--hi-yellow); transform-origin: 0 50%; transform: scaleX(var(--hp-06-p)); }
+
+@media (min-width: 769px) {
+  .hp-06-stack, .hp-06-last { left: max(40px, env(safe-area-inset-left, 0px)); right: max(40px, env(safe-area-inset-right, 0px)); }
+  .hp-06-brand, .hp-06-toggle { left: max(40px, env(safe-area-inset-left, 0px)); }
+  .hp-06-tc, .hp-06-progress { right: max(40px, env(safe-area-inset-right, 0px)); }
+  .hp-06-progress { left: calc(max(40px, env(safe-area-inset-left, 0px)) + 52px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-06-s1, .hp-06-s2, .hp-06-s3, .hp-06-s4, .hp-06-flash, .hp-06-grain, .hp-06-toggle, .hp-06-progress, .hp-06-tc { display: none; }
+  .hp-06-s5 { opacity: 1; }
+}

@@ -1,0 +1,96 @@
+{{ 'padel-page.css' | asset_url | stylesheet_tag }}
+{{ 'shop-page.css' | asset_url | stylesheet_tag }}
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'g2-countdown.js' | asset_url }}" defer></script>
+
+{%- liquid
+  assign s = section.settings
+  assign theme = s.theme | default: 'dark'
+-%}
+
+<section class="g2 g2-trio{% if theme == 'light' %} g2-trio--light{% endif %}">
+  <div class="g2-trio__head">
+    <span class="g2-eyebrow{% if theme == 'light' %} g2-eyebrow--dark{% endif %}"><span class="dot"></span> {{ s.eyebrow | default: 'Kies je gripsok' }}</span>
+    <h2>{{ s.heading }}</h2>
+    {%- if s.subheading != blank -%}<p>{{ s.subheading }}</p>{%- endif -%}
+    {%- render 'g2-countdown', end_iso: s.promo_end_iso, label: s.promo_label, expired_text: s.promo_expired_text -%}
+  </div>
+
+  <div class="g2-trio__grid">
+    {%- for block in section.blocks -%}
+      {%- assign bs = block.settings -%}
+      <a href="{{ bs.link | default: '#' }}" class="g2-trio__card" {{ block.shopify_attributes }}>
+        {%- if bs.badge_text != blank -%}
+          <span class="g2-trio__badge{% if bs.badge_color != 'oranje' %} g2-trio__badge--{{ bs.badge_color }}{% endif %}">{{ bs.badge_text }}</span>
+        {%- endif -%}
+        <div class="g2-trio__media">
+          {%- if bs.image != blank -%}
+            {{ bs.image | image_url: width: 500 | image_tag: loading: 'lazy', alt: bs.name }}
+          {%- else -%}
+            {%- render 'sock-icon', color: bs.sock_kleur, class: '' -%}
+          {%- endif -%}
+        </div>
+        <div class="g2-trio__body">
+          {%- if bs.promo_text != blank -%}<span class="g2-trio__promo">{{ bs.promo_text }}</span>{%- endif -%}
+          <div class="g2-trio__name">{{ bs.name }}</div>
+          <div class="g2-trio__price">
+            {%- if bs.price_old != blank -%}<span class="g2-trio__price-old">{{ bs.price_old }}</span>{%- endif -%}
+            <span class="g2-trio__price-new">{{ bs.price_new }}</span>
+          </div>
+          <span class="g2-trio__cta">{{ bs.cta_text | default: 'Bekijk product' }} &rarr;</span>
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — producten",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "theme", "label": "Achtergrond", "options": [ { "value": "dark", "label": "Donker (zwart)" }, { "value": "light", "label": "Licht" } ], "default": "dark" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Kies je gripsok" },
+    { "type": "text", "id": "heading", "label": "Titel", "default": "3 gripsokken. Eén doel." },
+    { "type": "textarea", "id": "subheading", "label": "Ondertekst", "default": "Nieuw naast bewezen." },
+    { "type": "header", "content": "Pre-order 2+2 — countdown" },
+    { "type": "text", "id": "promo_label", "label": "Label (leeg = geen countdown)", "default": "2+2 gratis op de 2.0 — nog" },
+    { "type": "text", "id": "promo_end_iso", "label": "Einddatum pre-order (ISO met tijdzone)", "info": "Bijv. 2026-08-28T23:59:00+02:00", "default": "2026-08-28T23:59:00+02:00" },
+    { "type": "text", "id": "promo_expired_text", "label": "Tekst na afloop", "default": "Pre-order gesloten" }
+  ],
+  "blocks": [
+    {
+      "type": "product_tile",
+      "name": "Product-tegel",
+      "settings": [
+        { "type": "text", "id": "name", "label": "Naam", "default": "Gripsocks 2.0 — Wit" },
+        { "type": "text", "id": "promo_text", "label": "Actie-label (optioneel, bv. '2+2 gratis')" },
+        { "type": "text", "id": "price_old", "label": "Van-prijs (doorgestreept, rood)", "default": "€17,99" },
+        { "type": "text", "id": "price_new", "label": "Nu-prijs", "default": "€14,95" },
+        { "type": "text", "id": "badge_text", "label": "Badge (optioneel)", "default": "Nieuw" },
+        { "type": "select", "id": "badge_color", "label": "Badge-kleur", "options": [
+            { "value": "oranje", "label": "Oranje — actie" },
+            { "value": "groen", "label": "Groen — nieuw" },
+            { "value": "blauw", "label": "Blauw — bewezen" },
+            { "value": "zwart", "label": "Zwart" }
+          ], "default": "groen" },
+        { "type": "select", "id": "sock_kleur", "label": "Placeholder sok-kleur", "options": [ { "value": "wit", "label": "Wit" }, { "value": "zwart", "label": "Zwart" } ], "default": "wit" },
+        { "type": "url", "id": "link", "label": "Link naar product" },
+        { "type": "image_picker", "id": "image", "label": "Foto (leeg = placeholder sok-icoon)" },
+        { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Bekijk product" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Gripsocks 2.0 — producten",
+      "blocks": [
+        { "type": "product_tile", "settings": { "name": "Gripsocks 2.0 — Wit", "price_old": "€17,95", "price_new": "€14,95", "badge_text": "Nieuw", "badge_color": "groen", "sock_kleur": "wit" } },
+        { "type": "product_tile", "settings": { "name": "Gripsocks 2.0 — Zwart", "price_old": "€17,95", "price_new": "€14,95", "badge_text": "Nieuw", "badge_color": "groen", "sock_kleur": "zwart" } },
+        { "type": "product_tile", "settings": { "name": "Performance Gripsok", "price_old": "€14,95", "price_new": "€13,49", "badge_text": "Bewezen", "badge_color": "blauw", "sock_kleur": "zwart", "link": "/products/performance-gripsokken" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

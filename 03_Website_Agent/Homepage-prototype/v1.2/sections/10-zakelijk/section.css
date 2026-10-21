@@ -1,0 +1,141 @@
+/* 10 ZAKELIJK · 1.2 ronde 2: stapelkaarten.
+   Desktop: links staan kop, lead, index en de ene pill sticky; rechts schuiven drie grote kaarten over elkaar heen.
+   Elke kaart is sticky (telkens --hp-10-step lager), de volgende schuift eroverheen en de vorige schaalt terug.
+   Mobiel: dezelfde stapeling in één kolom, de pill onder de stapel. Reduced motion: gewone lijst, niets beweegt. */
+.hp-10 {
+  --hp-10-h: min(540px, calc(100svh - 120px));
+  --hp-10-step: 12px;
+  --hp-10-top: max(16px, calc((100svh - var(--hp-10-h)) / 2 - var(--hp-10-step)));
+  background: var(--hi-offwhite);
+  color: var(--hi-black);
+}
+.hp-10-inner { display: grid; row-gap: var(--hp-space-ml); }
+.hp-10-aside { display: contents; }
+.hp-10-head { order: 1; display: grid; gap: var(--hp-space-ms); }
+.hp-10-lead { color: var(--hi-graphite); }
+.hp-10-index { display: none; }
+.hp-10-stack { order: 2; display: grid; row-gap: 14svh; }
+.hp-10-cta { order: 3; justify-self: start; }
+
+/* stapel */
+/* tussenruimte via row-gap, niet via margin: een sticky kaart moet met zijn hele box binnen de lijst blijven */
+.hp-10-item { position: sticky; top: var(--hp-10-top); height: var(--hp-10-h); }
+.hp-10-item:nth-child(2) { top: calc(var(--hp-10-top) + var(--hp-10-step)); }
+.hp-10-item:nth-child(3) { top: calc(var(--hp-10-top) + var(--hp-10-step) * 2); }
+
+/* kaartkleuren: alleen merktokens; het accent zit alleen in de chevron-cirkel */
+.hp-10-item--club { --hp-10-bg: var(--hi-near-black); --hp-10-fg: var(--hi-white); --hp-10-mute: var(--hi-titanium); --hp-10-chev-bg: var(--hi-white); --hp-10-chev-fg: var(--hi-black); --hp-10-acc: var(--hi-yellow); --hp-10-acc-fg: var(--hi-black); }
+.hp-10-item--retail { --hp-10-bg: var(--hi-white); --hp-10-fg: var(--hi-black); --hp-10-mute: var(--hi-graphite); --hp-10-chev-bg: var(--hi-black); --hp-10-chev-fg: var(--hi-white); --hp-10-acc: var(--hi-orange); --hp-10-acc-fg: var(--hi-black); }
+.hp-10-item--studio { --hp-10-bg: var(--hi-black); --hp-10-fg: var(--hi-white); --hp-10-mute: var(--hi-titanium); --hp-10-chev-bg: var(--hi-white); --hp-10-chev-fg: var(--hi-black); --hp-10-acc: var(--hi-blue); --hp-10-acc-fg: var(--hi-white); }
+
+.hp-10-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  border-radius: var(--hp-radius-media);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--hp-10-bg);
+  color: var(--hp-10-fg);
+  text-decoration: none;
+  transform-origin: 50% 0;
+  box-shadow: 0 -16px 40px -28px var(--hi-scrim);
+  -webkit-tap-highlight-color: transparent;
+}
+.hp-10-card:focus-visible { outline: 2px solid var(--hi-black); outline-offset: 4px; }
+
+/* beeldvlak */
+.hp-10-media { position: relative; display: block; flex: 1 1 auto; min-height: 0; overflow: hidden; border-radius: calc(var(--hp-radius-media) - 6px); }
+.hp-10-img { transition: scale var(--hp-dur-2) var(--hp-ease), translate var(--hp-dur-2) var(--hp-ease); }
+.hp-10-media--photo .hp-10-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 64%; transform-origin: 50% 60%; }
+
+/* winkel: twee vrijstaande sokken op wit, naadloos in de witte kaart */
+.hp-10-media--product { background: var(--hi-white); }
+.hp-10-sock { position: absolute; top: 50%; left: 50%; width: auto; height: min(100%, 520px); aspect-ratio: 1; }
+.hp-10-sock--back { translate: -76% -50%; }
+.hp-10-sock--front { translate: -26% -47%; }
+
+/* studio: de soklengtes als productblad, wit vel in de zwarte kaart */
+.hp-10-media--sheet { background: var(--hi-white); }
+/* de illustratie heeft veel eigen witrand: iets groter dan het vlak, zodat de sokken het vel vullen (nog steeds kleiner dan 900 px) */
+.hp-10-heights { position: absolute; top: 50%; left: 50%; width: auto; max-width: none; height: 142%; translate: -50% -48%; filter: contrast(1.14) brightness(1.03); }
+
+/* tekstvoet */
+.hp-10-foot { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--hp-space-sm); row-gap: 6px; align-items: center; padding: 18px 8px 8px; }
+.hp-10-copy { display: contents; }
+.hp-10-title { grid-column: 1; grid-row: 1; font-weight: 800; font-size: clamp(24px, 2.6vw, 40px); line-height: 1; }
+.hp-10-text { grid-column: 1 / -1; grid-row: 2; max-width: 44ch; font-size: 15px; line-height: 1.5; color: var(--hp-10-mute); }
+.hp-10-cue { grid-column: 2; grid-row: 1; display: inline-flex; align-items: center; gap: 12px; }
+.hp-10-cue__label { display: none; font: 700 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-10-chev {
+  display: grid; place-items: center; flex: none;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--hp-10-chev-bg); color: var(--hp-10-chev-fg);
+  transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), translate var(--hp-dur-1) var(--hp-ease);
+}
+.hp-10-chev svg { width: 14px; height: 14px; }
+
+/* actieve kaart (bovenop de stapel): de chevron krijgt het accent van de kaart */
+.hp-10-item.is-current .hp-10-chev { background: var(--hp-10-acc); color: var(--hp-10-acc-fg); }
+
+/* hover en de tik-variant (is-pressed) delen dezelfde staat */
+@media (hover: hover) {
+  .hp-10-card:hover .hp-10-chev { translate: 4px 0; background: var(--hp-10-acc); color: var(--hp-10-acc-fg); }
+  .hp-10-card:hover .hp-10-media--photo .hp-10-img, .hp-10-card:hover .hp-10-heights { scale: 1.04; }
+  .hp-10-card:hover .hp-10-sock { scale: 1.03; }
+}
+.hp-10-item.is-pressed .hp-10-chev { translate: 4px 0; background: var(--hp-10-acc); color: var(--hp-10-acc-fg); }
+.hp-10-item.is-pressed .hp-10-media--photo .hp-10-img, .hp-10-item.is-pressed .hp-10-heights { scale: 1.04; }
+.hp-10-item.is-pressed .hp-10-sock { scale: 1.03; }
+.hp-10-card:focus-visible .hp-10-chev { translate: 4px 0; background: var(--hp-10-acc); color: var(--hp-10-acc-fg); }
+
+/* scroll-gekoppeld (section.js zet --hp-10-in en --hp-10-cover per kaart) */
+.hp-motion .hp-10-card { transform: scale(calc(1 - var(--hp-10-cover, 0) * 0.06)); }
+.hp-motion .hp-10-card::after { content: ""; position: absolute; inset: 0; z-index: 2; border-radius: inherit; background: var(--hi-black); opacity: calc(min(var(--hp-10-cover, 0), 1) * 0.28); pointer-events: none; }
+.hp-motion .hp-10-img { transform: scale(calc(1.14 - var(--hp-10-in, 1) * 0.14)); }
+
+/* desktop: sticky kolom links, stapel rechts */
+@media (min-width: 900px) {
+  .hp-10 { --hp-10-h: min(640px, calc(100svh - 144px)); --hp-10-step: 14px; }
+  .hp-10-inner { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); column-gap: clamp(40px, 6vw, 112px); align-items: start; }
+  .hp-10-aside {
+    position: sticky; top: var(--hp-10-top);
+    display: flex; flex-direction: column; justify-content: space-between; gap: var(--hp-space-md);
+    min-height: calc(var(--hp-10-h) + var(--hp-10-step) * 2);
+  }
+  .hp-10-cta { align-self: flex-start; }
+  .hp-10-index { display: grid; border-bottom: 1px solid var(--hi-line); }
+  .hp-10-index__i {
+    display: flex; align-items: baseline; gap: var(--hp-space-sm);
+    padding-block: 14px; border-top: 1px solid var(--hi-line);
+    font: 800 clamp(16px, 1.35vw, 20px)/1.1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase;
+    color: var(--hi-graphite);
+    transition: color var(--hp-dur-1) var(--hp-ease), padding var(--hp-dur-2) var(--hp-ease);
+  }
+  .hp-10-index__n { font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); }
+  .hp-10-index__i.is-current { color: var(--hi-black); padding-left: var(--hp-space-ms); }
+  .hp-10-stack { row-gap: 20svh; }
+  .hp-10-head { order: 1; }
+  .hp-10-index { order: 2; }
+  .hp-10-cta { order: 3; }
+  .hp-10-card { padding: 14px; }
+  .hp-10-foot { padding: 26px 14px 12px; row-gap: 10px; }
+  .hp-10-text { grid-column: 1; font-size: 16px; }
+  .hp-10-cue { grid-row: 1 / 3; align-self: end; }
+  .hp-10-cue__label { display: inline; }
+  .hp-10-chev { width: 52px; height: 52px; }
+  .hp-10-sock { height: min(104%, 600px); }
+}
+/* desktop-hover: de twee sokken schuiven iets uit elkaar (op mobiel zou dat de rand raken) */
+@media (min-width: 900px) and (hover: hover) {
+  .hp-10-card:hover .hp-10-sock { scale: 1; }
+  .hp-10-card:hover .hp-10-sock--back { translate: -84% -52%; }
+  .hp-10-card:hover .hp-10-sock--front { translate: -18% -45%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-10-stack { row-gap: var(--hp-space-md); }
+  .hp-10-item, .hp-10-item:nth-child(2), .hp-10-item:nth-child(3) { position: relative; top: auto; }
+}

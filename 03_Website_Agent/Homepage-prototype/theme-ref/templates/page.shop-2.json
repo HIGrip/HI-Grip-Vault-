@@ -1,0 +1,280 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "s1_usp_balk": {
+      "type": "sh-1-usp-balk",
+      "blocks": {
+        "blk1001": {
+          "type": "b1",
+          "settings": {
+            "t1": "Gratis verzending vanaf €35"
+          }
+        },
+        "blk1002": {
+          "type": "b1",
+          "settings": {
+            "t1": "Binnen 1 werkdag verzonden"
+          }
+        },
+        "blk1003": {
+          "type": "b1",
+          "settings": {
+            "t1": "30 dagen retour"
+          }
+        },
+        "blk1004": {
+          "type": "b1",
+          "settings": {
+            "t1": "3500+ sporters gingen je voor"
+          }
+        },
+        "blk1005": {
+          "type": "b2",
+          "settings": {
+            "t1": "Gratis verzending vanaf €35"
+          }
+        },
+        "blk1006": {
+          "type": "b2",
+          "settings": {
+            "t1": "Binnen 1 werkdag verzonden"
+          }
+        },
+        "blk1007": {
+          "type": "b2",
+          "settings": {
+            "t1": "30 dagen retour"
+          }
+        },
+        "blk1008": {
+          "type": "b2",
+          "settings": {
+            "t1": "3500+ sporters gingen je voor"
+          }
+        }
+      },
+      "block_order": [
+        "blk1001",
+        "blk1002",
+        "blk1003",
+        "blk1004",
+        "blk1005",
+        "blk1006",
+        "blk1007",
+        "blk1008"
+      ],
+      "settings": {}
+    },
+    "s2_kop": {
+      "type": "sh-2-kop",
+      "settings": {
+        "url1": "https://www.higrip.nl/"
+      }
+    },
+    "s3_producten": {
+      "type": "sh-3-producten",
+      "blocks": {
+        "blk3001": {
+          "type": "b1",
+          "settings": {
+            "t1": "Siliconen gripzones onder de voet"
+          }
+        },
+        "blk3002": {
+          "type": "b1",
+          "settings": {
+            "t1": "Katoenmix voor elke dag en elke training"
+          }
+        },
+        "blk3003": {
+          "type": "b1",
+          "settings": {
+            "t1": "Ideaal voor training, pilates en recreatief sporten"
+          }
+        },
+        "blk3004": {
+          "type": "b2",
+          "settings": {
+            "t1": "15–20 mmHg compressie en 30% Coolmax®"
+          }
+        },
+        "blk3005": {
+          "type": "b2",
+          "settings": {
+            "t1": "Naadloos, met versterkte hiel"
+          }
+        },
+        "blk3006": {
+          "type": "b2",
+          "settings": {
+            "t1": "Gebouwd voor wedstrijd en intensieve training"
+          }
+        }
+      },
+      "block_order": [
+        "blk3001",
+        "blk3002",
+        "blk3003",
+        "blk3004",
+        "blk3005",
+        "blk3006"
+      ],
+      "settings": {
+        "url1": "https://www.higrip.nl/products/performance-gripsokken",
+        "url7": "https://www.higrip.nl/products/performance-gripsokken",
+        "url12": "https://www.higrip.nl/products/performance-gripsokken",
+        "url14": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+        "url20": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+        "url24": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+        "url26": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+        "url29": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+        "url33": "https://www.higrip.nl/pages/gripsokken-vergelijken"
+      }
+    },
+    "s4_usp_s": {
+      "type": "sh-4-usp-s",
+      "settings": {}
+    },
+    "s5_info_en_faq": {
+      "type": "sh-5-info-en-faq",
+      "blocks": {
+        "blk5001": {
+          "type": "b1",
+          "settings": {
+            "url1": "https://www.higrip.nl/products/performance-gripsokken",
+            "t2": "Performance Gripsokken 1.0"
+          }
+        },
+        "blk5002": {
+          "type": "b1",
+          "settings": {
+            "url1": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+            "t2": "zwart"
+          }
+        },
+        "blk5003": {
+          "type": "b1",
+          "settings": {
+            "url1": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+            "t2": "wit"
+          }
+        },
+        "blk5004": {
+          "type": "b1",
+          "settings": {
+            "url1": "https://www.higrip.nl/pages/over-ons",
+            "t2": "Over ons"
+          }
+        },
+        "blk5005": {
+          "type": "b2",
+          "settings": {
+            "t1": "Welke maat heb ik nodig?",
+            "t2": "De 1.0 is er in 34–39 en 40–46. De 2.0 in 35–38, 39–42 en 43–47. Kies de maat die bij je schoenmaat past."
+          }
+        },
+        "blk5006": {
+          "type": "b2",
+          "settings": {
+            "t1": "Wat is het verschil tussen de 1.0 en de 2.0?",
+            "t2": "Beide hebben siliconen gripzones. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel, een ademende bovenkant en special cushioning toe."
+          }
+        },
+        "blk5007": {
+          "type": "b2",
+          "settings": {
+            "t1": "Wanneer heb ik mijn bestelling?",
+            "t2": "We verzenden binnen 1 werkdag. Vanaf €35 is de verzending gratis."
+          }
+        },
+        "blk5008": {
+          "type": "b2",
+          "settings": {
+            "t1": "Kan ik retourneren?",
+            "t2": "Ja, je hebt 30 dagen om te retourneren."
+          }
+        }
+      },
+      "block_order": [
+        "blk5001",
+        "blk5002",
+        "blk5003",
+        "blk5004",
+        "blk5005",
+        "blk5006",
+        "blk5007",
+        "blk5008"
+      ],
+      "settings": {}
+    },
+    "s6_vertrouwen": {
+      "type": "sh-6-vertrouwen",
+      "settings": {
+        "url3": "https://nl.trustpilot.com/review/higrip.nl"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "s1_usp_balk",
+    "s2_kop",
+    "s3_producten",
+    "s4_usp_s",
+    "s5_info_en_faq",
+    "s6_vertrouwen"
+  ]
+}

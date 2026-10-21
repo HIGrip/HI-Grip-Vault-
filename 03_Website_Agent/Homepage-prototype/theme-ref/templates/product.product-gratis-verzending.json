@@ -1,0 +1,609 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "media-gallery": {
+          "type": "_product-media-gallery",
+          "static": true,
+          "settings": {
+            "media_presentation": "carousel",
+            "media_columns": "one",
+            "image_gap": 4,
+            "large_first_image": false,
+            "icons_style": "chevron_large",
+            "slideshow_controls_style": "thumbnails",
+            "slideshow_mobile_controls_style": "counter",
+            "thumbnail_position": "bottom",
+            "thumbnail_width": 72,
+            "aspect_ratio": "adapt",
+            "constrain_to_viewport": true,
+            "media_fit": "cover",
+            "media_radius": 0,
+            "extend_media": false,
+            "zoom": true,
+            "video_loop": true,
+            "hide_variants": true,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "product-details": {
+          "type": "_product-details",
+          "static": true,
+          "settings": {
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "custom",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "details_position": "flex-start",
+            "gap": 28,
+            "sticky_details_desktop": true,
+            "background_media": "none",
+            "background_color": "{{ settings.color_palette.background }}",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_icgrde": {
+              "type": "group",
+              "name": "Header",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Product title",
+                  "settings": {
+                    "text": "<h1><strong>{{ closest.product.title }}</strong></h1>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_NN9bwA": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p><strong>GRATIS VERZENDING</strong></p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_tVjtKg": {
+                  "type": "price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": false,
+                    "show_tax_info": false,
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "padding-block-start": 4,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xrnftG",
+                "text_NN9bwA",
+                "price_tVjtKg"
+              ]
+            },
+            "divider_VJhene": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_9qPTtc": {
+              "type": "text",
+              "name": "t:names.text",
+              "disabled": true,
+              "settings": {
+                "text": "<p><strong>Optimale grip:</strong> Uniek grippatroon voor maximale stabiliteit en controle<br/><strong>Meer comfort:</strong> Verstevigde onderkant en ademend materiaal voor langdurig draagcomfort.<br/><strong>Voor elke sport:</strong> Geschikt voor voetbal, pilates, tennis, hardlopen en alle andere sporten.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "custom_liquid_4HQ6ii": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "{%- if request.locale.iso_code == 'en' -%}<div style=\"display:flex; flex-direction:column; gap:8px;\">\n\n  <!-- Eerste stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.71-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>Optimal grip:</strong> Unique grip pattern for maximum stability and control.</span>\n  </div>\n\n  <!-- Tweede stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.871-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>More comfort:</strong> Reinforced sole and breathable fabric for all-day comfort.</span>\n  </div>\n\n  <!-- Derde stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.871-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>Shipped within 1 business day</strong></span>\n  </div>\n\n</div>{%- else -%}<div style=\"display:flex; flex-direction:column; gap:8px;\">\n\n  <!-- Eerste stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.71-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>Optimale grip:</strong> Uniek grippatroon voor maximale stabiliteit en controle.</span>\n  </div>\n\n  <!-- Tweede stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.871-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>Meer comfort:</strong> Verstevigde onderkant en ademend materiaal voor langdurig draagcomfort.</span>\n  </div>\n\n  <!-- Derde stukje -->\n  <div style=\"display:flex; align-items:flex-start; gap:12px;\">\n    <div style=\"width:40px; flex-shrink:0;\">\n      <svg width=\"40\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"#28a745\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M20.285 6.709L9 18l-5.285-5.291 1.414-1.418L9 15.172l9.871-9.881 1.414 1.418z\"/>\n      </svg>\n    </div>\n    <span style=\"display:block; text-align:left;\"><strong>Binnen 1 werkdag verzonden</strong></span>\n  </div>\n\n</div>{%- endif -%}"
+              },
+              "blocks": {}
+            },
+            "variant_picker_R3rGDr": {
+              "type": "variant-picker",
+              "settings": {
+                "variant_style": "buttons",
+                "show_swatches": true,
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "buy_buttons_eYQEYi": {
+              "type": "buy-buttons",
+              "settings": {
+                "stacking": true,
+                "show_pickup_availability": false,
+                "gift_card_form": true,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "quantity": {
+                  "type": "quantity",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                },
+                "add-to-cart": {
+                  "type": "add-to-cart",
+                  "static": true,
+                  "settings": {
+                    "style_class": "button"
+                  },
+                  "blocks": {}
+                },
+                "accelerated-checkout": {
+                  "type": "accelerated-checkout",
+                  "static": true,
+                  "settings": {},
+                  "blocks": {}
+                }
+              },
+              "block_order": []
+            },
+            "accordion_cC78kj": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_cdMRdG": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "MATERIALEN",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_QB8AKc": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Met oog voor detail is de stofcombinatie samengesteld met hoogwaardige sportmaterialen.</p><ul><li>42% Katoen</li><li>41% Polyester</li><li>14% Nylon</li><li>3% Spandex.</li></ul><p><br/>Deze combinatie biedt optimale pasvorm, ademend comfort met maximale grip. </p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_QB8AKc"
+                  ]
+                },
+                "accordion_row_N4d79D": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "VERZENDING & RETOUR",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 18
+                  },
+                  "blocks": {
+                    "text_rqHXd7": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Verzending:</strong></p><p>Bij HÏ Grip streven we ernaar om uw bestelling zo snel mogelijk bij u te leveren. Daarom zorgen wij ervoor dat alle bestellingen die vóór 16:00uur zijn geplaatst, dezelfde dag verzonden worden via PostNL</p><p>Meer info? <a href=\"/policies/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\"><em>Klik hier</em></a>.</p><p></p><p><strong>Retourneren:</strong></p><p>U kunt uw bestelling binnen 14 dagen na ontvangst retourneren.<br/>Neem contact met ons op, dan helpen wij u met uw retour.</p><p>Meer info?<em> </em><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\"><em>Klik hier</em></a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_rqHXd7"
+                  ]
+                },
+                "accordion_row_nadg37": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "TE GEBRUIKEN VOOR JOUW SPORT",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_xqFmbN": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>HÏ Grip gripsokken zijn perfect voor jouw sport. Van voetbal tot pilates wordt je stabiliteit bij elke sport verbeterd zodat jij meer controle hebt.</p><p>Ontdek <a href=\"/pages/ontdek-jouw-sport\" target=\"_blank\" title=\"Ontdek jouw sport\">hier</a> jouw sport!</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_xqFmbN"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_cdMRdG",
+                "accordion_row_N4d79D",
+                "accordion_row_nadg37"
+              ]
+            },
+            "text_aEtTtq": {
+              "type": "text",
+              "name": "Product description",
+              "disabled": true,
+              "settings": {
+                "text": "{{ closest.product.description }}",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_icgrde",
+            "divider_VJhene",
+            "text_9qPTtc",
+            "custom_liquid_4HQ6ii",
+            "variant_picker_R3rGDr",
+            "buy_buttons_eYQEYi",
+            "accordion_cC78kj",
+            "text_aEtTtq"
+          ]
+        }
+      },
+      "settings": {
+        "content_width": "content-full-width",
+        "desktop_media_position": "left",
+        "equal_columns": false,
+        "limit_details_width": false,
+        "gap": 48,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "product_recommendations_qggXJq": {
+      "type": "product-recommendations",
+      "blocks": {
+        "text_cbcgyb": {
+          "type": "text",
+          "name": "t:names.header",
+          "settings": {
+            "text": "<h3>Let's level up! | Ontdek deze items</h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "static-product-card": {
+          "type": "_product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product_card_gap": 2,
+            "border": "none",
+            "border_width": 0,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_DNizbJ": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_card_media",
+              "settings": {
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_title_M7MJkb": {
+              "type": "product-title",
+              "name": "t:names.product_title",
+              "settings": {
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "price_gLWgA6": {
+              "type": "price",
+              "settings": {
+                "show_sale_price_first": true,
+                "show_installments": false,
+                "show_tax_info": false,
+                "type_preset": "h6",
+                "width": "100%",
+                "alignment": "left",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_card_gallery_DNizbJ",
+            "product_title_M7MJkb",
+            "price_gLWgA6"
+          ]
+        }
+      },
+      "block_order": [
+        "text_cbcgyb"
+      ],
+      "name": "t:names.product_recommendations",
+      "settings": {
+        "product": "{{ closest.product }}",
+        "recommendation_type": "related",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 4,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 12,
+        "rows_gap": 24,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 28,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_recommendations_qggXJq"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "11",
+  "name": "faq",
+  "bg": "--hi-white",
+  "assets": [],
+  "links": [],
+  "interactions": [
+    "tik/klik op een vraag: native details opent/sluit; open = vlak --hi-offwhite, nummer zwart, +-knop 45° gedraaid en zwart gevuld",
+    "hover (desktop, gesloten vraag): vlak --hi-offwhite en rij schuift 8px naar rechts; tik-variant = de open-staat zelf",
+    "toetsenbord: Tab focust een vraag (3px zwarte outline binnenin), Enter/Spatie opent",
+    "reduced motion: geen transitions"
+  ],
+  "notes": "Vertaling van zk-gf (hg-zakelijk-v2.css r228–262) zonder eyebrow. Vragen en antwoorden letterlijk uit facts.json → faq (7, in volgorde); FAQPage JSON-LD in section.html met dezelfde teksten. Kop gebruikt de themamaat clamp(28px, 4.2vw, 52px) i.p.v. --hp-type-h2 (brief: exact de themastijl). Thema-lijnkleur #e4e2dc → --hi-line; vlak #f2f1ef → --hi-offwhite. Breedte van de lijst: de themawrapper (.zk__wrap) staat niet in refs/; hier de volle .hp-container-breedte. Geen JS nodig (section.js leeg). Let op bij samenvoegen: als de pagina elders ook FAQPage-JSON-LD krijgt, mag er maar één FAQPage zijn."
+}

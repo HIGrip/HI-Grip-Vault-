@@ -1,0 +1,41 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+  assign words = s.words | newline_to_br | split: '<br />'
+-%}
+<div class="zk zk-marquee" style="{% render 'zk-vars', s: s %}--z-pt-m:{{ s.padding_top }}px;--z-pb-m:{{ s.padding_bottom }}px;--z-speed:{{ s.speed }}s;" {{ section.shopify_attributes }}>
+  <div class="zk-marquee__track" aria-hidden="true">
+    {%- for g in (1..2) -%}
+      <div class="zk-marquee__group">
+        {%- for r in (1..2) -%}
+          {%- for w in words -%}
+            {%- assign t = w | strip -%}
+            {%- if t != blank -%}<span>{{ t }}</span>{% render 'zk-chev' %}{%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+  {%- if s.sr_text != blank -%}
+    <p style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap">{{ s.sr_text }}</p>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Zakelijk: Looptekst",
+  "settings": [
+    { "type": "textarea", "id": "words", "label": "Woorden (één per regel)", "default": "Padel\nTennis\nVoetbal\nRugby\nPilates" },
+    { "type": "text", "id": "sr_text", "label": "Tekst voor schermlezers", "default": "Voor padel, tennis, voetbal, rugby en pilates." },
+    { "type": "range", "id": "speed", "label": "Duur van één rondje", "min": 20, "max": 120, "step": 5, "unit": "s", "default": 40 },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Kleur pijltjes", "default": "#ccff00" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven", "min": 0, "max": 80, "step": 2, "unit": "px", "default": 18 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder", "min": 0, "max": 80, "step": 2, "unit": "px", "default": 18 }
+  ],
+  "presets": [ { "name": "Zakelijk: Looptekst" } ]
+}
+{% endschema %}

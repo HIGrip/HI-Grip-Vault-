@@ -1,0 +1,122 @@
+/* 05 TECHNISCHE FEATURES · studiogrond met het 360°-beeld van de 2.0 in het midden, features eromheen.
+   Het beeld heeft geen kader: de frames hebben dezelfde grond als de sectie en lopen met een zachte rand over.
+   Mobiel: beeld bovenaan en sticky, features eronder, zodat je ziet wat een tik doet. */
+.hp-05 { background: var(--hi-studio); color: var(--hi-black); overflow-x: clip; }
+
+/* kop */
+.hp-05-head { display: grid; gap: var(--hp-space-sm); margin-bottom: var(--hp-space-md); }
+.hp-05-h2 { max-width: 12ch; }
+.hp-05-lead { color: var(--hi-graphite); max-width: 42ch; }
+
+/* raster: mobiel gestapeld, beeld eerst */
+.hp-05-grid { display: grid; grid-template-columns: minmax(0, 1fr); }
+.hp-05-media { order: -1; z-index: 2; background: var(--hi-studio); padding-bottom: var(--hp-space-xs); }
+
+/* 360°-podium */
+.hp-05-stage {
+  position: relative; aspect-ratio: 1 / 1;
+  width: min(100vw, 60svh); left: 50%; translate: -50% 0;
+  touch-action: pan-y; cursor: grab; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent;
+}
+.hp-05-stage.is-dragging { cursor: grabbing; }
+/* zodra de canvas tekent, neemt hij het over van het fallback-beeld (anders mengt darken ze tot een dubbelbeeld) */
+.hp-05-stage.is-live .hp-05-stage__img { visibility: hidden; }
+.hp-05-stage:focus-visible { outline-offset: -6px; border-radius: var(--hp-radius-media); }
+.hp-05-stage__img, .hp-05-stage__canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; pointer-events: none;
+  mix-blend-mode: darken; /* lichtere framegrond (tot 255) valt weg tegen --hi-studio: geen zichtbare naad */
+  -webkit-mask-image: linear-gradient(to right, transparent, var(--hi-black) 8%, var(--hi-black) 92%, transparent), linear-gradient(to bottom, transparent, var(--hi-black) 6%, var(--hi-black) 94%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, var(--hi-black) 8%, var(--hi-black) 92%, transparent), linear-gradient(to bottom, transparent, var(--hi-black) 6%, var(--hi-black) 94%, transparent);
+  mask-composite: intersect;
+}
+
+/* markering op de zone: zwarte ring met nummer, schaalt één keer in (geen pulsering) */
+.hp-05-mark { position: absolute; left: 0; top: 0; width: 0; height: 0; pointer-events: none; transform: translate(var(--hp-05-mx, 0px), var(--hp-05-my, 0px)); }
+.hp-05-mark__ring {
+  position: absolute; left: -30px; top: -30px; width: 60px; height: 60px; display: grid; place-items: center;
+  border: 2px solid var(--hi-black); border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--hi-white), inset 0 0 0 2px var(--hi-white);
+  opacity: 0; transform: scale(1.6);
+  transition: opacity var(--hp-dur-1) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-05-mark__no { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--hi-black); color: var(--hi-white); box-shadow: 0 0 0 3px var(--hi-white); font: 700 11px/1 var(--hp-type-family); letter-spacing: 0; font-variant-numeric: tabular-nums; }
+.hp-05-mark.is-on .hp-05-mark__ring { opacity: 1; transform: scale(1); }
+
+/* bediening onder het beeld */
+.hp-05-controls { display: flex; align-items: center; gap: var(--hp-space-sm); min-height: 48px; }
+.hp-05-hint { display: inline-flex; align-items: center; gap: var(--hp-space-xs); flex: none; font: 600 var(--hp-type-label)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); white-space: nowrap; }
+.hp-05-hint svg { width: 22px; height: 12px; }
+.hp-05-dial { position: relative; flex: 1 1 auto; min-width: 24px; height: 12px; overflow: hidden; }
+.hp-05-dial::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: var(--hi-line); }
+.hp-05-dial__tick { position: absolute; inset: 0; transform: translateX(calc(var(--hp-05-turn, 0) * 100%)); }
+.hp-05-dial__tick::before { content: ""; position: absolute; left: 0; top: 0; width: 2px; height: 100%; background: var(--hi-black); }
+.hp-05-reset {
+  flex: none; min-height: 40px; padding: 0 var(--hp-space-sm);
+  border: 1px solid var(--hi-line); border-radius: 999px; background: transparent; cursor: pointer;
+  font: 600 var(--hp-type-label)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+  transition: border-color var(--hp-dur-1) var(--hp-ease), background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-05.is-moved .hp-05-reset { border-color: var(--hi-black); }
+.hp-05-reset:active { background: var(--hi-black); color: var(--hi-white); }
+
+/* features */
+.hp-05-list { display: grid; }
+.hp-05-feat {
+  position: relative; display: grid; grid-template-columns: 28px minmax(0, 1fr); column-gap: var(--hp-space-sm); row-gap: 6px; align-content: start;
+  width: 100%; height: 100%; padding: var(--hp-space-sm) 0 var(--hp-space-ms);
+  border: 0; border-top: 1px solid var(--hi-line); background: none; text-align: left; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.hp-05-feat::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 2px; background: var(--hi-black); transform: scaleX(0); transform-origin: 0 50%; transition: transform var(--hp-dur-2) var(--hp-ease); }
+.hp-05-feat__no {
+  grid-row: span 2; display: grid; place-items: center; width: 28px; height: 28px; margin-top: -2px;
+  border: 1px solid var(--hi-line); border-radius: 50%;
+  font: 600 11px/1 var(--hp-type-family); letter-spacing: 0; font-variant-numeric: tabular-nums; color: var(--hi-graphite);
+  transition: background-color var(--hp-dur-1) var(--hp-ease), border-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-05-feat__name { font: 800 20px/1.1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; transition: color var(--hp-dur-1) var(--hp-ease); }
+.hp-05-feat__text { font-size: 15px; line-height: 1.5; color: var(--hi-graphite); max-width: 34ch; transition: color var(--hp-dur-1) var(--hp-ease); }
+
+.hp-05-feat[aria-pressed="true"]::before { transform: scaleX(1); }
+.hp-05-feat[aria-pressed="true"] .hp-05-feat__no { background: var(--hi-black); border-color: var(--hi-black); color: var(--hi-yellow); }
+.hp-05-feat[aria-pressed="true"] .hp-05-feat__text { color: var(--hi-black); }
+.hp-05.has-active .hp-05-feat:not([aria-pressed="true"]) .hp-05-feat__name { color: var(--hi-graphite); }
+
+/* koopblok: één CTA */
+.hp-05-buy { display: grid; gap: var(--hp-space-sm); justify-items: start; align-content: start; padding-top: var(--hp-space-ms); border-top: 1px solid var(--hi-line); }
+.hp-05-buy__name { font: 700 14px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-05-buy__meta { display: flex; flex-wrap: wrap; gap: var(--hp-space-xs); color: var(--hi-graphite); font-size: 15px; }
+.hp-05-buy__price { color: var(--hi-black); font-weight: 600; }
+.hp-05-cta { margin-top: var(--hp-space-xs); }
+
+@media (hover: hover) {
+  .hp-05-feat:hover .hp-05-feat__no { border-color: var(--hi-black); color: var(--hi-black); }
+  .hp-05-feat[aria-pressed="true"]:hover .hp-05-feat__no { color: var(--hi-yellow); }
+  .hp-05-reset:hover { border-color: var(--hi-black); }
+}
+
+/* mobiel: het beeld blijft staan terwijl de features eronder door scrollen */
+@media (max-width: 768px) and (min-height: 640px) {
+  .hp-05-media { position: sticky; top: env(safe-area-inset-top, 0px); }
+  .hp-05-stage { width: min(100vw, 52svh); }
+}
+
+/* tablet: beeld gecentreerd boven twee kolommen */
+@media (min-width: 769px) {
+  .hp-05-head { grid-template-columns: minmax(0, 1fr) minmax(0, 42ch); align-items: end; column-gap: var(--hp-space-lg); margin-bottom: var(--hp-space-lg); }
+  .hp-05-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--hp-space-ml); }
+  .hp-05-media { grid-column: 1 / -1; justify-self: center; width: min(100%, 620px); margin-bottom: var(--hp-space-md); }
+  .hp-05-stage { width: auto; left: auto; translate: none; }
+  .hp-05-feat__name { font-size: var(--hp-type-h3); }
+}
+
+/* desktop: 4 features links, beeld midden, 3 features en het koopblok rechts; het beeld loopt onder de kolommen door */
+@media (min-width: 1024px) {
+  .hp-05-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr) minmax(0, 1fr); align-items: stretch; }
+  .hp-05-media { grid-column: auto; order: 0; justify-self: stretch; width: auto; margin-bottom: 0; background: none; z-index: 0; display: flex; flex-direction: column; justify-content: center; }
+  .hp-05-stage { margin-left: calc(-1 * var(--hp-space-ml)); margin-right: calc(-1 * var(--hp-space-ml)); }
+  .hp-05-list--l, .hp-05-col { position: relative; z-index: 1; display: grid; grid-template-rows: repeat(4, minmax(0, 1fr)); }
+  .hp-05-list--r { display: contents; }
+  .hp-05-buy { align-content: end; padding-bottom: var(--hp-space-ms); }
+}

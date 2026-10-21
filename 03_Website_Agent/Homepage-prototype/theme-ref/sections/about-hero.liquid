@@ -1,0 +1,429 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h1'
+  assign alt = s.image.alt | default: s.image_alt
+-%}
+{% render 'about-schema' %}
+<style>
+  .ab-hero[data-anim="true"] .ab-l:nth-child(4) { animation-delay: .44s; }
+</style>
+<section class="ab ab-hero" data-ab="hero" data-anim="{{ s.animate }}" data-zoom="{{ s.zoom }}" aria-label="Manifest"
+  style="{% render 'about-vars', s: s %}--ab-hh:{{ s.height_desktop }};--ab-hh-m:{{ s.height_mobile }};--ab-fx:{{ s.focus_x }}%;--ab-fy:{{ s.focus_y }}%;--ab-ov:{{ s.overlay | divided_by: 100.0 }};">
+  <div class="ab-hero__frame">
+    <div class="ab-hero__media">
+      {%- if s.media_type == 'video' and s.video != blank -%}
+        {{ s.video | video_tag: autoplay: true, muted: true, loop: true, playsinline: true, controls: false, image_size: '1920x' }}
+      {%- elsif s.media_type == 'video' and s.video_url.type == 'youtube' -%}
+        <iframe src="https://www.youtube.com/embed/{{ s.video_url.id }}?autoplay=1&mute=1&loop=1&playlist={{ s.video_url.id }}&controls=0&playsinline=1&rel=0" title="{{ alt | escape }}" allow="autoplay; encrypted-media" loading="lazy"></iframe>
+      {%- elsif s.media_type == 'video' and s.video_url.type == 'vimeo' -%}
+        <iframe src="https://player.vimeo.com/video/{{ s.video_url.id }}?background=1&autoplay=1&loop=1&muted=1" title="{{ alt | escape }}" allow="autoplay" loading="lazy"></iframe>
+      {%- elsif s.image != blank -%}
+        {{ s.image | image_url: width: 2400 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '100vw', widths: '800, 1200, 1600, 2000, 2400', alt: alt }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'ab-hero__ph' }}
+      {%- endif -%}
+    </div>
+    <div class="ab-hero__txt ab-wrap">
+      <{{ tag }} class="ab-h">{%- if s.line_1 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_1_align, m: s.line_1_align_m %}>{{ s.line_1 }} </span>{%- endif -%}{%- if s.line_2 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_2_align, m: s.line_2_align_m %}>{{ s.line_2 }} </span>{%- endif -%}{%- if s.line_3 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_3_align, m: s.line_3_align_m %}>{{ s.line_3 }} </span>{%- endif -%}{%- if s.line_4 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_4_align, m: s.line_4_align_m %}>{{ s.line_4 }} </span>{%- endif -%}</{{ tag }}>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "select",
+      "id": "media_type",
+      "label": "Mediatype",
+      "options": [
+        {
+          "value": "image",
+          "label": "Foto"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Alt-tekst foto (als de foto er zelf geen heeft)",
+      "default": "Sporter in zwarte HÏ Grip gripsokken op het voetbalveld"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video (upload)",
+      "info": "Wordt zonder geluid in een lus afgespeeld."
+    },
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "label": "Video-link (YouTube of Vimeo)",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "info": "Alleen gebruikt als er geen upload is."
+    },
+    {
+      "type": "range",
+      "id": "focus_x",
+      "label": "Beeldpositie horizontaal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "focus_y",
+      "label": "Beeldpositie verticaal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "overlay",
+      "label": "Verduistering onder de kop",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Hoogte desktop",
+      "min": 50,
+      "max": 100,
+      "step": 2,
+      "default": 92,
+      "unit": "vh"
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Hoogte mobiel",
+      "min": 40,
+      "max": 100,
+      "step": 2,
+      "default": 72,
+      "unit": "vh"
+    },
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_1",
+      "label": "Regel 1",
+      "default": "Sportswear mag"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align",
+      "label": "Regel 1 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align_m",
+      "label": "Regel 1 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_2",
+      "label": "Regel 2",
+      "default": "nooit een"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align",
+      "label": "Regel 2 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align_m",
+      "label": "Regel 2 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_3",
+      "label": "Regel 3",
+      "default": "obstakel zijn."
+    },
+    {
+      "type": "select",
+      "id": "line_3_align",
+      "label": "Regel 3 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_3_align_m",
+      "label": "Regel 3 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_4",
+      "label": "Regel 4 (accent)",
+      "default": "<em>Het is je fundament.</em>",
+      "info": "Zet woorden tussen <em>…</em> voor de accentkleur. Laat leeg als je maar 3 regels wilt."
+    },
+    {
+      "type": "select",
+      "id": "line_4_align",
+      "label": "Regel 4 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_4_align_m",
+      "label": "Regel 4 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 130,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 42,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "zoom",
+      "label": "Beeld zoomt uit bij scrollen",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Over ons: Hero"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,11 @@
+[    2275ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/nl/en/:0
+[    3717ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/nl/en/:18
+[    3719ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/nl/en/:18
+[    5300ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:0
+[    5307ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:0
+[    5884ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/_next/static/chunks/58977-c4062822f1e87ca6.js:2
+[    5887ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://www.whoop.com/_next/static/chunks/58977-c4062822f1e87ca6.js:2
+[   10809ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://cdn.cookielaw.org/scripttemplates/202503.1.0/otBannerSdk.js:6
+[   10811ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://cdn.cookielaw.org/scripttemplates/202503.1.0/otBannerSdk.js:6
+[   10822ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://cdn.cookielaw.org/scripttemplates/202503.1.0/otBannerSdk.js:6
+[   10824ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://cdn.cookielaw.org/scripttemplates/202503.1.0/otBannerSdk.js:6

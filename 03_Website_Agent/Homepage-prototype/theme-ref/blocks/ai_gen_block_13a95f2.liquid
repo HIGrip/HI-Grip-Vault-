@@ -1,0 +1,590 @@
+{% doc %}
+  @prompt
+    creeër een sectie met een overzicht waar je drie elementen hebt (foto, tekst, knop) zodat je kan navigeren naar pagina's. ik wil dat het mooi eruit ziet in sportstijl, energiek, modern, sportmerk stijl. ik wil dat aanpasbaar is (TEKST, KLEUR, FOTO'S, HOOGTE, RUIMTES) , ALS MENSEN OP DE SITE KOMEN MOET HETIN BEELD KOMEN
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-navigation-cards-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .ai-navigation-cards__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.card_spacing }}px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    background-color: {{ block.settings.card_background_color }};
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: {{ block.settings.card_height }}px;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}.ai-card-visible-{{ ai_gen_id }} {
+    animation: ai-slide-up-{{ ai_gen_id }} 0.6s ease forwards;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes ai-slide-up-{{ ai_gen_id }} {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-navigation-card__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .ai-navigation-card__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:hover .ai-navigation-card__image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-navigation-card__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-navigation-card__image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-navigation-card__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    padding: {{ block.settings.content_padding }}px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background 0.3s ease;
+  }
+
+  .ai-navigation-card-{{ ai_gen_id }}:hover .ai-navigation-card__overlay-{{ ai_gen_id }} {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 100%);
+  }
+
+  .ai-navigation-card__title-{{ ai_gen_id }} {
+    color: {{ block.settings.title_color }};
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  .ai-navigation-card__text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .ai-navigation-card__button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    border: 2px solid {{ block.settings.button_border_color }};
+  }
+
+  .ai-navigation-card__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+    transform: translateX(4px);
+  }
+
+  .ai-navigation-card__button-icon-{{ ai_gen_id }} {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-navigation-card__button-{{ ai_gen_id }}:hover .ai-navigation-card__button-icon-{{ ai_gen_id }} {
+    transform: translateX(4px);
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-navigation-cards__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: {{ block.settings.card_spacing | times: 0.75 }}px;
+    }
+
+    .ai-navigation-card-{{ ai_gen_id }} {
+      height: {{ block.settings.card_height | times: 0.85 }}px;
+    }
+
+    .ai-navigation-card__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.85 }}px;
+    }
+
+    .ai-navigation-card__text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size | times: 0.9 }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-navigation-cards__container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.card_spacing | times: 0.5 }}px;
+    }
+
+    .ai-navigation-card-{{ ai_gen_id }} {
+      height: {{ block.settings.card_height | times: 0.7 }}px;
+    }
+
+    .ai-navigation-card__overlay-{{ ai_gen_id }} {
+      padding: {{ block.settings.content_padding | times: 0.75 }}px;
+    }
+  }
+{% endstyle %}
+
+<navigation-cards-{{ ai_gen_id }} class="ai-navigation-cards-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-navigation-cards__container-{{ ai_gen_id }}">
+    {% for i in (1..3) %}
+      {% liquid
+        assign image_key = 'card_' | append: i | append: '_image'
+        assign title_key = 'card_' | append: i | append: '_title'
+        assign text_key = 'card_' | append: i | append: '_text'
+        assign button_text_key = 'card_' | append: i | append: '_button_text'
+        assign link_key = 'card_' | append: i | append: '_link'
+
+        assign card_image = block.settings[image_key]
+        assign card_title = block.settings[title_key]
+        assign card_text = block.settings[text_key]
+        assign card_button_text = block.settings[button_text_key]
+        assign card_link = block.settings[link_key]
+      %}
+
+      <div class="ai-navigation-card-{{ ai_gen_id }}" data-card-index="{{ i }}">
+        <div class="ai-navigation-card__image-wrapper-{{ ai_gen_id }}">
+          {% if card_image %}
+            <img
+              src="{{ card_image | image_url: width: 800 }}"
+              alt="{{ card_image.alt | escape }}"
+              loading="lazy"
+              width="{{ card_image.width }}"
+              height="{{ card_image.height }}"
+              class="ai-navigation-card__image-{{ ai_gen_id }}"
+            >
+          {% else %}
+            <div class="ai-navigation-card__image-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+
+          <div class="ai-navigation-card__overlay-{{ ai_gen_id }}">
+            {% if card_title != blank %}
+              <{{ block.settings.heading_tag | default: "h3" }} class="ai-navigation-card__title-{{ ai_gen_id }}">{{ card_title }}</{{ block.settings.heading_tag | default: "h3" }}>
+            {% endif %}
+
+            {% if card_text != blank %}
+              <p class="ai-navigation-card__text-{{ ai_gen_id }}">{{ card_text }}</p>
+            {% endif %}
+
+            {% if card_button_text != blank %}
+              <a
+                href="{{ card_link | default: '#' }}"
+                class="ai-navigation-card__button-{{ ai_gen_id }}"
+              >
+                {{ card_button_text }}
+                <svg class="ai-navigation-card__button-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</navigation-cards-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class NavigationCards{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.observer = null;
+      }
+
+      connectedCallback() {
+        this.cards = this.querySelectorAll('.ai-navigation-card-{{ ai_gen_id }}');
+        this.setupIntersectionObserver();
+        this.setupAccessibility();
+      }
+
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+        };
+
+        this.observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('ai-card-visible-{{ ai_gen_id }}');
+              this.observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+
+        this.cards.forEach((card) => {
+          this.observer.observe(card);
+        });
+      }
+
+      setupAccessibility() {
+        this.cards.forEach((card) => {
+          const link = card.querySelector('.ai-navigation-card__button-{{ ai_gen_id }}');
+          if (link) {
+            card.setAttribute('role', 'article');
+          }
+        });
+      }
+
+      disconnectedCallback() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    }
+
+    customElements.define('navigation-cards-{{ ai_gen_id }}', NavigationCards{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Navigatie kaarten",
+  "tag": null,
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h3" },
+    {
+      "type": "header",
+      "content": "Sectie instellingen"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Kaart stijl"
+    },
+    {
+      "type": "range",
+      "id": "card_height",
+      "label": "Kaart hoogte",
+      "min": 200,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "card_spacing",
+      "label": "Ruimte tussen kaarten",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Kaart border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Kaart achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "Content padding",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Tekst stijl"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Titel grootte",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titel kleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Tekst grootte",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekst kleur",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Knop stijl"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Achtergrond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Tekst",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Hover achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover tekst",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Knop border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Kaart 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_1_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "Titel",
+      "default": "Training"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_text",
+      "label": "Tekst",
+      "default": "Ontdek onze trainingsproducten"
+    },
+    {
+      "type": "text",
+      "id": "card_1_button_text",
+      "label": "Knop tekst",
+      "default": "Bekijk meer"
+    },
+    {
+      "type": "url",
+      "id": "card_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Kaart 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_2_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "text",
+      "id": "card_2_title",
+      "label": "Titel",
+      "default": "Competitie"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_text",
+      "label": "Tekst",
+      "default": "Presteer op het hoogste niveau"
+    },
+    {
+      "type": "text",
+      "id": "card_2_button_text",
+      "label": "Knop tekst",
+      "default": "Bekijk meer"
+    },
+    {
+      "type": "url",
+      "id": "card_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Kaart 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "card_3_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "text",
+      "id": "card_3_title",
+      "label": "Titel",
+      "default": "Lifestyle"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_text",
+      "label": "Tekst",
+      "default": "Sport en stijl gecombineerd"
+    },
+    {
+      "type": "text",
+      "id": "card_3_button_text",
+      "label": "Knop tekst",
+      "default": "Bekijk meer"
+    },
+    {
+      "type": "url",
+      "id": "card_3_link",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Navigatie kaarten"
+    }
+  ]
+}
+{% endschema %}

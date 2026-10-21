@@ -1,0 +1,122 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign product = s.product | default: all_products['performance-gripsokken-2-0-wit']
+  assign sport = page.title | downcase | remove: 'gripsokken voor '
+  assign top = s.title_top | default: 'Gripsokken voor'
+  assign accent = s.title_accent | default: sport
+  assign tag = s.heading_tag | default: 'h1'
+  assign hero_alt = s.image.alt | default: page.title
+  assign cta_label = s.cta_text | default: 'Shop de Performance Gripsokken 2.0'
+-%}
+
+<section class="sl sl-hero" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %} --sl-focus: {{ s.focus_x }}% {{ s.focus_y }}%;" data-sl-hero>
+  <div class="sl__wrap sl-hero__grid">
+    <div class="sl-hero__text">
+      {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+
+      <{{ tag }} class="sl-hero__title"><span class="sl-hero__top">{{ top }}</span> <span class="sl-mark">{{ accent }}</span></{{ tag }}>
+
+      {%- if s.subline != blank -%}<p class="sl-hero__sub">{{ s.subline }}</p>{%- endif -%}
+
+      <div class="sl-hero__cta">
+        <a class="sl__btn sl__btn--primary" href="{{ product.url }}" data-sl-cta>
+          {{ cta_label }}
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        {%- if s.secondary_text != blank -%}
+          <a class="sl__btn sl__btn--ghost" href="{{ s.secondary_url | default: '#sl-verder' }}">{{ s.secondary_text }}</a>
+        {%- endif -%}
+      </div>
+
+      {%- if section.blocks.size > 0 -%}
+        <ul class="sl-hero__chips">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.text }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+
+    {%- if s.image != blank -%}
+      <div class="sl-hero__media">
+        {{ s.image | image_url: width: 1400 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 900px) 50vw, 100vw', widths: '600, 900, 1200, 1400', alt: hero_alt }}
+      </div>
+    {%- else -%}
+      <div class="sl-hero__media sl-hero__media--empty" aria-hidden="true"><span>{{ accent }}</span></div>
+    {%- endif -%}
+  </div>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page.title | json }},
+  "url": {{ canonical_url | json }},
+  "inLanguage": "nl-NL",
+  "isPartOf": { "@type": "WebSite", "name": "HÏ Grip", "url": {{ shop.url | json }} },
+  "significantLink": {{ shop.url | append: product.url | json }}
+}
+</script>
+
+<div class="sl sl-sticky" data-accent="{{ s.accent }}" data-sl-sticky aria-hidden="true">
+  <p class="sl-sticky__t">Performance Gripsokken 2.0<small>{% if product.price %}Vanaf {{ product.price | money }}{% endif %}</small></p>
+  <a class="sl__btn sl__btn--primary" href="{{ product.url }}" tabindex="-1">Shop nu</a>
+</div>
+<span id="sl-verder"></span>
+
+<script>
+  (function () {
+    var hero = document.querySelector('[data-sl-hero]');
+    var bar = document.querySelector('[data-sl-sticky]');
+    if (!hero || !bar || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (e) {
+      var show = !e[0].isIntersecting;
+      bar.classList.toggle('is-visible', show);
+      bar.setAttribute('aria-hidden', show ? 'false' : 'true');
+      var l = bar.querySelector('a'); if (l) l.tabIndex = show ? 0 : -1;
+    }, { threshold: 0.05 }).observe(hero);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Sport — hero",
+  "tag": "div",
+  "class": "sl-section",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "header", "content": "Kop" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h1" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Performance Gripsokken" },
+    { "type": "text", "id": "title_top", "label": "Titel — regel 1", "info": "Leeg = 'Gripsokken voor'" },
+    { "type": "text", "id": "title_accent", "label": "Titel — regel 2 (accentkleur)", "info": "Leeg = sport uit de paginatitel" },
+    { "type": "textarea", "id": "subline", "label": "Subtekst", "default": "Meer grip in je schoen. Minder wegglijden, meer controle." },
+    { "type": "header", "content": "Knoppen" },
+    { "type": "product", "id": "product", "label": "Product (CTA)", "info": "Leeg = Performance Gripsokken 2.0 wit" },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Shop de Performance Gripsokken 2.0" },
+    { "type": "text", "id": "secondary_text", "label": "Tweede knop (leeg = weg)", "default": "Waarom grip?" },
+    { "type": "url", "id": "secondary_url", "label": "Tweede knop — link" },
+    { "type": "header", "content": "Beeld & kleur" },
+    { "type": "image_picker", "id": "image", "label": "Achtergrondfoto" },
+    { "type": "range", "id": "focus_x", "label": "Beeldfocus horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "range", "id": "focus_y", "label": "Beeldfocus verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 40 },
+    { "type": "select", "id": "accent", "label": "Accentkleur (1 per pagina)", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "chip", "name": "Chip", "settings": [ { "type": "text", "id": "text", "label": "Tekst", "default": "Antislip grip-patroon" } ] }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    { "name": "Sport — hero", "blocks": [
+      { "type": "chip", "settings": { "text": "Antislip grip-patroon" } },
+      { "type": "chip", "settings": { "text": "Gratis verzending boven €35" } },
+      { "type": "chip", "settings": { "text": "Binnen 1 werkdag verzonden" } }
+    ] }
+  ]
+}
+{% endschema %}

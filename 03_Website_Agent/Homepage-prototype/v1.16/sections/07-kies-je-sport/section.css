@@ -1,0 +1,274 @@
+/* 07 KIES JE SPORT · kop gecentreerd, daaronder een rij grote sportkaarten met de actieve kaart in het midden
+   en de buren half zichtbaar achter vervagende randen (ref: Eight Sleep "A night on the Pod").
+   1.2 ronde 2: de sectie krijgt de merkkleur van de sportpagina (rhythm.json 07.dynamic): padel royal blue, tennis pumpkin,
+   voetbal volt, rugby tangerine. Inkt (tekst, knoppen, chevrons) volgt 07.fg_dynamic: wit, op volt zwart.
+   De sectie wisselt direct van kleur; .hp-07-wave legt de vorige kleur eroverheen met een gat dat vanuit de actieve kaart
+   openscheurt, zodat de nieuwe kleur als golf binnenkomt. */
+.hp-07 {
+  --hp-07-card-w: calc(100vw - 64px);
+  --hp-07-gap: 12px;
+  --hp-07-fade: 20px;
+  --hp-07-c: var(--hi-blue);      /* sportkleur */
+  --hp-07-ink: var(--hi-white);   /* tekst, rand, chevroncirkel */
+  --hp-07-inv: var(--hi-black);   /* chevron in een inktcirkel */
+  background-color: var(--hp-07-c);
+  color: var(--hp-07-ink);
+  isolation: isolate;
+  overflow: clip;
+  transition: color var(--hp-dur-3) var(--hp-ease);
+}
+.hp-07-wave[data-sport="padel"] { --hp-07-c: var(--hi-blue); }
+.hp-07[data-sport="tennis"], .hp-07-wave[data-sport="tennis"] { --hp-07-c: var(--hi-orange); }
+.hp-07[data-sport="voetbal"], .hp-07-wave[data-sport="voetbal"] { --hp-07-c: var(--hi-yellow); }
+.hp-07[data-sport="rugby"], .hp-07-wave[data-sport="rugby"] { --hp-07-c: var(--hi-red); }
+.hp-07[data-sport="voetbal"] { --hp-07-ink: var(--hi-black); --hp-07-inv: var(--hi-yellow); }
+
+/* kleurgolf: een vlak in de vorige kleur met een rond gat (box-shadow rond een cirkel) dat vanuit de actieve kaart groeit */
+.hp-07-wave { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; visibility: hidden; }
+.hp-07-wave.is-run { visibility: visible; }
+.hp-07-hole {
+  position: absolute; left: var(--hp-07-wx, 50%); top: var(--hp-07-wy, 50%);
+  width: 0; height: 0; border-radius: 50%; translate: -50% -50%;
+  box-shadow: 0 0 0 var(--hp-07-ws, 300vmax) var(--hp-07-c);
+}
+.hp-07-wave.is-open .hp-07-hole { width: var(--hp-07-wd, 300vmax); height: var(--hp-07-wd, 300vmax); transition: width var(--hp-dur-3) var(--hp-ease), height var(--hp-dur-3) var(--hp-ease); }
+
+/* kop */
+.hp-07-head { display: grid; justify-items: center; gap: var(--hp-space-sm); text-align: center; margin-bottom: var(--hp-space-md); }
+.hp-07-h2 { max-width: 14ch; }
+.hp-07-lead { max-width: 40ch; text-wrap: pretty; }
+
+/* rij */
+.hp-07-viewport {
+  position: relative;
+  overflow: hidden;
+  outline-offset: -3px;
+  cursor: grab;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, var(--hi-black) var(--hp-07-fade), var(--hi-black) calc(100% - var(--hp-07-fade)), transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, var(--hi-black) var(--hp-07-fade), var(--hi-black) calc(100% - var(--hp-07-fade)), transparent 100%);
+}
+.hp-07-viewport.is-dragging { cursor: grabbing; }
+.hp-07-track { position: relative; display: flex; gap: var(--hp-07-gap); width: max-content; padding-block: var(--hp-space-xs); user-select: none; -webkit-user-select: none; }
+.hp-07-item { flex: none; width: var(--hp-07-card-w); }
+
+/* kaart: foto rand-tot-rand in een afgerond frame, sportnaam en regel eronder op de sportkleur (de sok blijft vrij in beeld).
+   Buren krimpen naar de actieve kaart toe, worden gedimd en tonen alleen hun foto. */
+.hp-07-card {
+  display: grid;
+  gap: var(--hp-space-sm);
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  transform: scale(0.9);
+  transform-origin: 50% 0;
+  transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-07-item.is-before .hp-07-card { transform-origin: 100% 0; }
+.hp-07-item.is-after .hp-07-card { transform-origin: 0 0; }
+.hp-07-item.is-active .hp-07-card { transform: scale(1); }
+.hp-07-card:focus-visible { outline: 2px solid var(--hp-07-ink); outline-offset: 6px; border-radius: var(--hp-radius-media); }
+
+.hp-07-frame { position: relative; overflow: hidden; isolation: isolate; aspect-ratio: 4 / 5; border-radius: var(--hp-radius-media); background: var(--hi-near-black); }
+.hp-07-frame::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: var(--hi-scrim); transition: opacity var(--hp-dur-2) var(--hp-ease); }
+.hp-07-item.is-active .hp-07-frame::after { opacity: 0; }
+.hp-07-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; pointer-events: none; transform: scale(calc(var(--hp-07-zoom, 1) * 1.04)); transition: transform var(--hp-dur-2) var(--hp-ease); }
+/* padel: de speler staat klein op een brede baan; inzoomen rond zijn voeten, sokken blijven heel in beeld */
+.hp-07-item[data-sport="padel"] .hp-07-img { --hp-07-zoom: 1.2; object-position: 30% 60%; transform-origin: 34% 72%; }
+.hp-07-item[data-sport="tennis"] .hp-07-img { object-position: 45% 70%; }
+.hp-07-item[data-sport="voetbal"] .hp-07-img { object-position: 56% 50%; }
+.hp-07-item[data-sport="rugby"] .hp-07-img { object-position: 58% 60%; }
+.hp-07-item.is-active .hp-07-img { transform: scale(var(--hp-07-zoom, 1)); }
+
+.hp-07-copy { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: var(--hp-space-sm); row-gap: var(--hp-space-xs); padding-inline: var(--hp-space-xs); transition: opacity var(--hp-dur-2) var(--hp-ease); }
+.hp-07-item:not(.is-active) .hp-07-copy { opacity: 0; }
+.hp-07-name { grid-column: 1; font-weight: 900; font-style: italic; font-size: clamp(40px, 12vw, 72px); line-height: 0.92; padding-right: 0.06em; }
+.hp-07-line { grid-column: 1 / -1; font-size: 15px; line-height: 1.5; max-width: 38ch; }
+.hp-07-chev { grid-column: 2; grid-row: 1; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background-color: var(--hp-07-ink); color: var(--hp-07-inv); transition: transform var(--hp-dur-1) var(--hp-ease), background-color var(--hp-dur-3) var(--hp-ease), color var(--hp-dur-3) var(--hp-ease); }
+.hp-07-chev svg { width: 14px; height: 14px; }
+
+/* lus: de sprong terug naar de middelste set gebeurt zonder animatie */
+.hp-07.is-jumping .hp-07-card, .hp-07.is-jumping .hp-07-img, .hp-07.is-jumping .hp-07-copy, .hp-07.is-jumping .hp-07-frame::after { transition: none; }
+
+/* tik: dezelfde staat als hover */
+.hp-07-item.is-active .hp-07-card:active .hp-07-chev { transform: translateX(3px); }
+.hp-07-item.is-active .hp-07-card:active .hp-07-img { transform: scale(calc(var(--hp-07-zoom, 1) * 1.03)); }
+
+/* vorige / volgende */
+.hp-07-controls { display: flex; justify-content: center; gap: var(--hp-space-sm); margin-top: var(--hp-space-md); }
+.hp-07-btn { display: grid; place-items: center; width: 56px; height: 56px; padding: 0; border-radius: 50%; border: 1.5px solid currentColor; background-color: transparent; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease); }
+.hp-07-btn svg { width: 16px; height: 16px; }
+.hp-07-btn:active { background-color: var(--hp-07-ink); color: var(--hp-07-inv); }
+.hp-07-btn:focus-visible { outline-color: var(--hp-07-ink); }
+
+@media (hover: hover) {
+  .hp-07-item.is-active .hp-07-card:hover .hp-07-chev { transform: translateX(3px); }
+  .hp-07-item.is-active .hp-07-card:hover .hp-07-img { transform: scale(calc(var(--hp-07-zoom, 1) * 1.03)); }
+  .hp-07-item:not(.is-active) .hp-07-card:hover { transform: scale(0.92); }
+  .hp-07-btn:hover { background-color: var(--hp-07-ink); color: var(--hp-07-inv); }
+}
+
+@media (min-width: 769px) {
+  .hp-07 { --hp-07-card-w: min(72vw, 1100px); --hp-07-gap: var(--hp-space-md); --hp-07-fade: 6vw; }
+  .hp-07-head { gap: var(--hp-space-ms); margin-bottom: var(--hp-space-lg); }
+  .hp-07-card { gap: var(--hp-space-ms); transform: scale(0.86); }
+  .hp-07-item.is-active .hp-07-card { transform: scale(1); }
+  .hp-07-frame { aspect-ratio: 16 / 9; }
+  .hp-07-item[data-sport="padel"] .hp-07-img { --hp-07-zoom: 1.45; transform-origin: 35% 64%; }
+  .hp-07-copy { grid-template-columns: auto minmax(0, 1fr) auto; column-gap: var(--hp-space-md); padding-inline: var(--hp-space-xs); }
+  .hp-07-name { font-size: clamp(48px, 4.6vw, 72px); }
+  .hp-07-line { grid-column: 2; grid-row: 1; font-size: var(--hp-type-lead); max-width: 34ch; }
+  .hp-07-chev { grid-column: 3; width: 56px; height: 56px; }
+  .hp-07-controls { margin-top: var(--hp-space-ml); }
+}
+@media (min-width: 769px) and (hover: hover) {
+  .hp-07-item:not(.is-active) .hp-07-card:hover { transform: scale(0.88); }
+}
+
+/* 1.5 (Lars 19-10: het volle kleurvlak was te anders dan de rest). Het vlak is near-black zoals de andere donkere secties;
+   de sportkleur zit alleen nog in een brede band achter de kaarten, met veldlijnen erop (middenlijn en een raster
+   van dunne lijnen), die met de actieve sport van kleur wisselt. Tekst is altijd wit; de kleurgolf is uit. Kop links. */
+.hp-07, .hp-07[data-sport="voetbal"] { --hp-07-ink: var(--hi-white); --hp-07-inv: var(--hi-black); background-color: var(--hi-near-black); color: var(--hi-white); }
+.hp-07-wave { display: none; }
+.hp-07::before {
+  content: ""; position: absolute; z-index: -1; left: 0; right: 0; top: 46%; height: 30%;
+  background-color: var(--hp-07-c);
+  background-image:
+    linear-gradient(var(--hi-line-dark), var(--hi-line-dark)),
+    linear-gradient(90deg, var(--hi-line-dark), var(--hi-line-dark)),
+    repeating-linear-gradient(90deg, transparent 0 119px, var(--hi-line-dark) 119px 121px);
+  background-size: 100% 2px, 2px 100%, auto;
+  background-position: 0 50%, 50% 0, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
+  transition: background-color var(--hp-dur-3) var(--hp-ease);
+}
+.hp-07-head { justify-items: stretch; text-align: left; }
+.hp-07-h2 { max-width: 18ch; }
+.hp-07-lead { color: var(--hi-titanium); }
+.hp-07-line { color: var(--hi-titanium); }
+
+/* 1.13 (Lars 19-10: de pas met zolen was helemaal mis; de kleuren op een andere manier terug) · geen patroon meer.
+   De sportkleur zit nu in de kaarten zelf en in de kiezer eronder:
+   - elke buurkaart staat in een duotoon van zijn eigen sportkleur (mix-blend-mode: color over de foto), zodat de rij
+     als vier gekleurde sporten leest; wordt een kaart actief, dan trekt de kleur er als een gordijn naar rechts uit
+     en staat de echte foto er
+   - onder de kaart een kiezer van vier segmenten in de sportkleuren: het actieve klapt uit tot een balk met de naam,
+     de andere zijn korte streepjes. Klik op een segment = naar die sport. Vorige/volgende staan ernaast.
+   Reduced motion: kleur en kiezer wisselen direct. */
+.hp-07::before { content: none; }
+.hp-07-item[data-sport="padel"] { --hp-07-own: var(--hi-blue); --hp-07-own-ink: var(--hi-white); }
+.hp-07-item[data-sport="tennis"], .hp-07-seg[data-sport="tennis"] { --hp-07-own: var(--hi-orange); --hp-07-own-ink: var(--hi-black); }
+.hp-07-item[data-sport="voetbal"], .hp-07-seg[data-sport="voetbal"] { --hp-07-own: var(--hi-yellow); --hp-07-own-ink: var(--hi-black); }
+.hp-07-item[data-sport="rugby"], .hp-07-seg[data-sport="rugby"] { --hp-07-own: var(--hi-red); --hp-07-own-ink: var(--hi-white); }
+.hp-07-seg[data-sport="padel"] { --hp-07-own: var(--hi-blue); --hp-07-own-ink: var(--hi-white); }
+
+/* duotoon op de buren */
+.hp-07-frame::before {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background-color: var(--hp-07-own); mix-blend-mode: color;
+  clip-path: inset(0 0 0 0);
+  transition: clip-path var(--hp-dur-3) var(--hp-ease);
+}
+.hp-07-item.is-active .hp-07-frame::before { clip-path: inset(0 0 0 100%); }
+.hp-07-frame::after { z-index: 2; opacity: 0.35; }
+.hp-07.is-jumping .hp-07-frame::before { transition: none; }
+
+/* kiezer */
+.hp-07-controls { align-items: center; gap: var(--hp-space-sm); }
+.hp-07-segs { display: flex; align-items: center; gap: 6px; }
+.hp-07-seg {
+  position: relative; display: grid; place-items: center; overflow: hidden;
+  width: 28px; height: 44px; padding: 0; border: 0; background: none; cursor: pointer;
+  color: var(--hp-07-own-ink); -webkit-tap-highlight-color: transparent;
+  transition: width var(--hp-dur-2) var(--hp-ease);
+}
+.hp-07-seg::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 6px; translate: 0 -50%;
+  border-radius: 999px; background-color: var(--hp-07-own);
+  transition: height var(--hp-dur-2) var(--hp-ease);
+}
+.hp-07-seg__name { position: relative; font: italic 900 15px/1 var(--hp-type-family); text-transform: uppercase; letter-spacing: 0; white-space: nowrap; opacity: 0; transition: opacity var(--hp-dur-1) var(--hp-ease); }
+.hp-07-seg[aria-pressed="true"] { width: 116px; }
+.hp-07-seg[aria-pressed="true"]::before { height: 44px; }
+.hp-07-seg[aria-pressed="true"] .hp-07-seg__name { opacity: 1; transition-delay: calc(var(--hp-dur-1) * 1); }
+.hp-07-seg:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 3px; border-radius: 999px; }
+@media (hover: hover) { .hp-07-seg[aria-pressed="false"]:hover::before { height: 12px; } }
+.hp-07-seg[aria-pressed="false"]:active::before { height: 12px; }
+@media (min-width: 769px) {
+  .hp-07-seg { width: 40px; height: 56px; }
+  .hp-07-seg[aria-pressed="true"] { width: 152px; }
+  .hp-07-seg[aria-pressed="true"]::before { height: 56px; }
+  .hp-07-seg__name { font-size: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hp-07-frame::before, .hp-07-seg, .hp-07-seg::before, .hp-07-seg__name { transition: none; }
+}
+
+/* 1.16 (Lars 20-10: de baanlijnen toch minder; probeer de glanzende sportvloer, optie 2) · de kaarten staan op een
+   glanzende hal-vloer:
+   - onder elke foto een spiegeling (-webkit-box-reflect), die snel uitloopt; de buren spiegelen mee
+   - de vloer begint op de onderrand van de actieve foto (de horizon) en kleurt naar de sport: padel blauw, tennis
+     oranje, voetbal volt, rugby rood; hij loopt naar onder en naar de zijkanten uit in het donker
+   - bij een wissel glijdt er een lichtstreep over de vloer, alsof de hallampen erover strijken
+   - diepte: de zijkaarten kantelen in 3D weg, staan zwart-wit en iets doorzichtig; de foto erin schuift naar buiten
+   Reduced motion: geen lichtstreep, kleur wisselt direct. Firefox kent geen box-reflect: daar alleen de vloer. */
+.hp-07-frame::before { content: none; }
+.hp-07-frame::after { opacity: 0; }
+.hp-07-track { z-index: 1; }
+
+/* vloer */
+.hp-07-floor {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 0; overflow: hidden; pointer-events: none;
+  top: calc(var(--hp-space-xs) + var(--hp-07-card-w) * 5 / 4);
+  background-color: var(--hp-07-c); opacity: 0.32;
+  -webkit-mask-image: linear-gradient(var(--hi-black), transparent 85%);
+  mask-image: linear-gradient(var(--hi-black), transparent 85%);
+  transition: background-color var(--hp-dur-3) var(--hp-ease);
+}
+.hp-07-floor::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--hi-white); opacity: 0.5; }
+.hp-07-floor__sheen {
+  position: absolute; top: 0; bottom: 0; left: 0; width: 40%;
+  background: linear-gradient(90deg, transparent, var(--hi-white), transparent);
+  opacity: 0; transform: translateX(-100%);
+}
+.hp-07-floor.is-sheen .hp-07-floor__sheen { animation: hp-07-sheen calc(var(--hp-dur-3) * 1.3) var(--hp-ease) both; }
+@keyframes hp-07-sheen { 0% { opacity: 0; transform: translateX(-100%); } 30% { opacity: 0.45; } 100% { opacity: 0; transform: translateX(260%); } }
+@media (min-width: 769px) { .hp-07-floor { top: calc(var(--hp-space-xs) + var(--hp-07-card-w) * 9 / 16); } }
+
+/* spiegeling */
+.hp-07-frame { -webkit-box-reflect: below 2px linear-gradient(transparent 62%, var(--hi-scrim)); }
+.hp-07-item:not(.is-active) .hp-07-frame { -webkit-box-reflect: below 2px linear-gradient(transparent 55%, var(--hi-scrim-strong)); }
+/* de tekst onder de actieve kaart blijft leesbaar boven de spiegeling */
+.hp-07-copy { position: relative; }
+
+/* diepte op de zijkaarten */
+.hp-07-item { perspective: 1400px; }
+.hp-07-frame { transition: opacity var(--hp-dur-2) var(--hp-ease); }
+.hp-07-item:not(.is-active) .hp-07-frame { opacity: 0.7; }
+.hp-07-img { transition: transform var(--hp-dur-2) var(--hp-ease), filter var(--hp-dur-2) var(--hp-ease); }
+.hp-07-item:not(.is-active) .hp-07-img { filter: grayscale(1) brightness(0.8); }
+.hp-07-item.is-before .hp-07-img { transform: scale(calc(var(--hp-07-zoom, 1) * 1.12)) translateX(-4%); }
+.hp-07-item.is-after .hp-07-img { transform: scale(calc(var(--hp-07-zoom, 1) * 1.12)) translateX(4%); }
+.hp-07 .hp-07-item.is-before .hp-07-card { transform: scale(0.84) rotateY(14deg); }
+.hp-07 .hp-07-item.is-after .hp-07-card { transform: scale(0.84) rotateY(-14deg); }
+@media (min-width: 769px) {
+  .hp-07 .hp-07-item.is-before .hp-07-card { transform: scale(0.82) rotateY(24deg); }
+  .hp-07 .hp-07-item.is-after .hp-07-card { transform: scale(0.82) rotateY(-24deg); }
+}
+@media (hover: hover) {
+  .hp-07 .hp-07-item.is-before .hp-07-card:hover { transform: scale(0.84) rotateY(18deg); }
+  .hp-07 .hp-07-item.is-after .hp-07-card:hover { transform: scale(0.84) rotateY(-18deg); }
+  .hp-07 .hp-07-item:not(.is-active) .hp-07-card:hover .hp-07-frame { opacity: 0.85; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hp-07-floor, .hp-07-frame, .hp-07-img { transition: none; }
+  .hp-07-floor.is-sheen .hp-07-floor__sheen { animation: none; }
+}
+/* de vloer loopt onder de kaarten door: ruimte onder de rij, zodat spiegeling en kleur als vloer uitlopen */
+.hp-07-track { padding-bottom: var(--hp-space-xl); }
+.hp-07-floor { opacity: 0.38; -webkit-mask-image: linear-gradient(var(--hi-black), transparent 92%); mask-image: linear-gradient(var(--hi-black), transparent 92%); }
+.hp-07-controls { margin-top: 0; }
+@media (min-width: 769px) {
+  .hp-07-track { padding-bottom: var(--hp-space-xxl); }
+  .hp-07 .hp-07-controls { margin-top: calc(-1 * var(--hp-space-xl)); position: relative; z-index: 2; }
+}

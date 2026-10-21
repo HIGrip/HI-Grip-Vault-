@@ -1,0 +1,686 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - navigation "Page header" [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e10]:
+            - generic [ref=e11]:
+              - group "3 / 3" [ref=e12]:
+                - paragraph [ref=e14]:
+                  - link "Shoe Finder" [ref=e15] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/shoe-finder/
+                    - generic [ref=e16]: Find your perfect shoe in just a few minutes.
+                    - text: Shoe Finder
+              - group "1 / 3" [ref=e17]:
+                - paragraph [ref=e19]:
+                  - generic "Free next day delivery" [ref=e20]: Spend €200+ on full-price styles and get €25 off your next order.
+                  - link "Details" [ref=e21] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/exclusive-25-offer-terms.html
+              - group "2 / 3" [ref=e22]:
+                - paragraph [ref=e24]:
+                  - link "30-day test flight" [ref=e25] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/30-day-guarantee.html
+                    - generic [ref=e26]: Take a 30-day test flight. Learn More
+              - group "3 / 3" [ref=e27]:
+                - paragraph [ref=e29]:
+                  - link "Shoe Finder" [ref=e30] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/shoe-finder/
+                    - generic [ref=e31]: Find your perfect shoe in just a few minutes.
+                    - text: Shoe Finder
+              - group "1 / 3" [ref=e32]:
+                - paragraph [ref=e34]:
+                  - generic "Free next day delivery" [ref=e35]: Spend €200+ on full-price styles and get €25 off your next order.
+                  - link "Details" [ref=e36] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/exclusive-25-offer-terms.html
+            - button "Previous slide" [disabled] [ref=e37] [cursor=pointer]:
+              - generic [ref=e38]: 
+            - button "Next slide" [ref=e40] [cursor=pointer]:
+              - generic [ref=e41]: 
+          - text:   
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - button "Category Menu" [ref=e45] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e46]: 
+              - text: 
+              - generic [ref=e47]: Menu
+            - button "Search" [ref=e48] [cursor=pointer]:
+              - generic [aria-hidden] [ref=e49]: 
+          - generic [ref=e50]:
+            - link "Hoka One One® Home" [ref=e52] [cursor=pointer]:
+              - /url: https://www.hoka.com/en/nl/
+            - navigation "Main menu" [ref=e56]:
+              - generic [ref=e57]:
+                - button "Close" [ref=e59] [cursor=pointer]:
+                  - generic [aria-hidden] [ref=e60]: 
+                - text: 
+              - navigation "Main menu" [ref=e61]:
+                - list [ref=e62]:
+                  - listitem [ref=e63]:
+                    - button "New Releases" [ref=e64] [cursor=pointer]:
+                      - generic [ref=e65]: New
+                  - listitem [ref=e66]:
+                    - button "Men's Running Shoes & Accessories" [ref=e67] [cursor=pointer]:
+                      - generic [ref=e68]: Men
+                    - text: +  +  +  +            
+                  - listitem [ref=e69]:
+                    - button "Women’s Products" [ref=e70] [cursor=pointer]:
+                      - generic [ref=e71]: Women
+                    - text: +  +  +  +            
+                  - listitem [ref=e72]:
+                    - button "Kids Running & Hiking Shoes" [ref=e73] [cursor=pointer]:
+                      - generic [ref=e74]: Kids
+                    - text: +            
+                  - listitem [ref=e75]:
+                    - button "Explore" [ref=e76] [cursor=pointer]
+                    - text: +  +  +  +            
+                  - listitem [ref=e78]:
+                    - button "Shoe Finder" [ref=e79] [cursor=pointer]
+                  - listitem [ref=e81]:
+                    - button "HOKA Outlet" [ref=e82] [cursor=pointer]:
+                      - generic [ref=e83]: Outlet
+                - list [ref=e84]:
+                  - listitem [ref=e86]:
+                    - button "HOKA Rewards" [ref=e87] [cursor=pointer]:
+                      - generic [aria-hidden] [ref=e88]:
+                        - generic [ref=e89]: 
+                        - text: 
+                  - listitem [ref=e91]:
+                    - generic [ref=e92]:
+                      - generic [aria-hidden] [ref=e93]:   
+                      - link "Track a Package" [ref=e94] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/login/
+                  - listitem [ref=e96]:
+                    - link "Store Locator" [ref=e98] [cursor=pointer]:
+                      - /url: /en/nl/storelocator/brandify-store-locator.html
+                      - generic [aria-hidden] [ref=e99]:
+                        - generic [ref=e100]: 
+                        - text: 
+                  - listitem [ref=e102]:
+                    - generic [ref=e103]:
+                      - generic [aria-hidden] [ref=e104]:
+                        - generic [ref=e105]: 
+                        - text: 
+                      - link "Customer Service" [ref=e106] [cursor=pointer]:
+                        - /url: /en/nl/klantenservice.html
+                  - button "country selector" [ref=e108] [cursor=pointer]:
+                    - generic [ref=e109]:
+                      - generic [ref=e111]: Netherlands
+                      - generic [aria-hidden] [ref=e112]: "|"
+                      - generic [ref=e113]: English
+                  - text:  
+            - generic:
+              - navigation "Main menu":
+                - generic:
+                  - generic:
+                    - button "Close":
+                      - generic [aria-hidden]: 
+                  - text: 
+                - navigation "Main menu":
+                  - list:
+                    - listitem:
+                      - button "New Releases":
+                        - generic: New
+                    - listitem:
+                      - button "Men's Running Shoes & Accessories":
+                        - generic: Men
+                      - text: +  +  +  +            
+                    - listitem:
+                      - button "Women’s Products":
+                        - generic: Women
+                      - text: +  +  +  +            
+                    - listitem:
+                      - button "Kids Running & Hiking Shoes":
+                        - generic: Kids
+                      - text: +            
+                    - listitem:
+                      - button "Explore"
+                      - text: +  +  +  +            
+                    - listitem:
+                      - button "Shoe Finder"
+                    - listitem:
+                      - button "HOKA Outlet":
+                        - generic: Outlet
+                  - list:
+                    - generic:
+                      - listitem:
+                        - button "HOKA Rewards":
+                          - generic [aria-hidden]:
+                            - generic: 
+                            - text: 
+                    - listitem:
+                      - generic:
+                        - generic [aria-hidden]:   
+                        - link "Track a Package":
+                          - /url: https://www.hoka.com/en/nl/login/
+                    - listitem:
+                      - generic:
+                        - link "Store Locator":
+                          - /url: /en/nl/storelocator/brandify-store-locator.html
+                          - generic [aria-hidden]:
+                            - generic: 
+                            - text: 
+                    - listitem:
+                      - generic:
+                        - generic [aria-hidden]:
+                          - generic: 
+                          - text: 
+                        - link "Customer Service":
+                          - /url: /en/nl/klantenservice.html
+                    - button "country selector":
+                      - generic:
+                        - generic: Netherlands
+                        - generic [aria-hidden]: "|"
+                        - generic: English
+                    - text:  
+          - generic [ref=e114]:
+            - generic [ref=e116]:
+              - link "Account Menu" [ref=e117] [cursor=pointer]:
+                - /url: "#"
+                - generic [ref=e118]: 
+              - text: 
+            - generic [ref=e119]:
+              - text:      *  *        *  *      
+              - link "View Cart" [ref=e122] [cursor=pointer]:
+                - /url: https://www.hoka.com/en/nl/cart/
+                - generic [ref=e124]: 
+        - generic [ref=e125]:
+          - button "Close" [ref=e127] [cursor=pointer]:
+            - generic [aria-hidden] [ref=e128]: 
+          - search [ref=e129]:
+            - generic [ref=e131]:
+              - searchbox "Search" [ref=e132]
+              - generic [ref=e133]:
+                - button "Search " [disabled] [ref=e135]:
+                  - generic [ref=e136]: Search
+                  - generic [ref=e137]: 
+                - generic: 
+            - generic: 
+    - main [ref=e138]:
+      - generic [ref=e141]:
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - group "3 / 3" [ref=e145]:
+              - generic [ref=e148]:
+                - img "Autumn Days" [ref=e152]
+                - generic [ref=e157]:
+                  - generic [ref=e158]: Autumn essentials
+                  - generic [ref=e159]: Running shoes and apparel for cooler days.
+                  - button "Shop Autumn" [ref=e163] [cursor=pointer]
+            - group "1 / 3" [ref=e164]:
+              - generic [ref=e167]:
+                - img "HOKA GORE-TEX" [ref=e171]
+                - generic [ref=e176]:
+                  - generic [ref=e177]: Outlast the forecast
+                  - generic [ref=e178]: With GORE-TEX® protection that's waterproof, windproof and breathable.
+                  - generic [ref=e181]:
+                    - button "Shop Men's GORE-TEX" [ref=e182] [cursor=pointer]
+                    - button "Shop Women's GORE-TEX" [ref=e183] [cursor=pointer]
+            - group "2 / 3" [ref=e184]:
+              - generic [ref=e187]:
+                - img "HOKA New Colours" [ref=e191]
+                - generic [ref=e196]:
+                  - generic [ref=e197]: New season. New colours.
+                  - generic [ref=e198]: A fresh take on your favourites.
+                  - generic [ref=e201]:
+                    - button "Shop Trending Colours" [ref=e202] [cursor=pointer]
+                    - button "Shop New Arrivals" [ref=e203] [cursor=pointer]
+            - group "3 / 3" [ref=e204]:
+              - generic [ref=e207]:
+                - img "Autumn Days" [ref=e211]
+                - generic [ref=e216]:
+                  - generic [ref=e217]: Autumn essentials
+                  - generic [ref=e218]: Running shoes and apparel for cooler days.
+                  - button "Shop Autumn" [ref=e222] [cursor=pointer]
+            - group "1 / 3" [ref=e223]:
+              - generic [ref=e226]:
+                - img "HOKA GORE-TEX" [ref=e230]
+                - generic [ref=e235]:
+                  - generic [ref=e236]: Outlast the forecast
+                  - generic [ref=e237]: With GORE-TEX® protection that's waterproof, windproof and breathable.
+                  - generic [ref=e240]:
+                    - button "Shop Men's GORE-TEX" [ref=e241] [cursor=pointer]
+                    - button "Shop Women's GORE-TEX" [ref=e242] [cursor=pointer]
+          - generic [ref=e243]:
+            - button "Go to slide 1" [ref=e244] [cursor=pointer]
+            - button "Go to slide 2" [ref=e245] [cursor=pointer]
+            - button "Go to slide 3" [ref=e246] [cursor=pointer]
+          - text:      
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e250]: Shop by activity
+            - text:    
+            - generic [ref=e251] [cursor=pointer]
+          - generic [ref=e254]:
+            - group "1 / 8" [ref=e255]:
+              - generic [ref=e261]:
+                - link [ref=e264] [cursor=pointer]:
+                  - /url: /en/nl/road-selected-styles/
+                  - img "HOKA Road Running" [ref=e268]
+                - generic [ref=e270]:
+                  - generic [ref=e271]: Road Running
+                  - generic [ref=e273]:
+                    - button "Men's Road" [ref=e274] [cursor=pointer]
+                    - button "Women's Road" [ref=e275] [cursor=pointer]
+            - group "2 / 8" [ref=e276]:
+              - generic [ref=e282]:
+                - link [ref=e285] [cursor=pointer]:
+                  - /url: /en/nl/trail-performers/
+                  - img "HOKA Trail Running" [ref=e289]
+                - generic [ref=e291]:
+                  - generic [ref=e292]: Trail Running
+                  - generic [ref=e294]:
+                    - button "Men's Trail" [ref=e295] [cursor=pointer]
+                    - button "Women's Trail" [ref=e296] [cursor=pointer]
+            - group "3 / 8" [ref=e297]:
+              - generic [ref=e303]:
+                - link [ref=e306] [cursor=pointer]:
+                  - /url: /en/nl/race/
+                  - img "HOKA Race Running" [ref=e310]
+                - generic [ref=e312]:
+                  - generic [ref=e313]: Race
+                  - generic [ref=e315]:
+                    - button "Men's Race" [ref=e316] [cursor=pointer]
+                    - button "Women's Race" [ref=e317] [cursor=pointer]
+            - group "4 / 8" [ref=e318]:
+              - generic [ref=e324]:
+                - link [ref=e327] [cursor=pointer]:
+                  - /url: /en/nl/walking-styles/
+                  - img "Walking" [ref=e331]
+                - generic [ref=e333]:
+                  - generic [ref=e334]: Walking
+                  - generic [ref=e336]:
+                    - button "Men's Walking" [ref=e337] [cursor=pointer]
+                    - button "Women's Walking" [ref=e338] [cursor=pointer]
+            - group "5 / 8" [ref=e339]:
+              - generic [ref=e345]:
+                - link [ref=e348] [cursor=pointer]:
+                  - /url: /en/nl/hiking-range/
+                  - img "HOKA Hiking" [ref=e352]
+                - generic [ref=e354]:
+                  - generic [ref=e355]: Hiking
+                  - generic [ref=e357]:
+                    - button "Men's Hiking" [ref=e358] [cursor=pointer]
+                    - button "Women's Hiking" [ref=e359] [cursor=pointer]
+            - group "6 / 8" [ref=e360]:
+              - generic [ref=e366]:
+                - link [ref=e369] [cursor=pointer]:
+                  - /url: /en/nl/lifestyle/
+                  - img "HOKA Lifestyle" [ref=e373]
+                - generic [ref=e375]:
+                  - generic [ref=e376]: Lifestyle
+                  - generic [ref=e378]:
+                    - button "Men's Lifestyle" [ref=e379] [cursor=pointer]
+                    - button "Women's Lifestyle" [ref=e380] [cursor=pointer]
+            - group "7 / 8" [ref=e381]:
+              - generic [ref=e387]:
+                - link [ref=e390] [cursor=pointer]:
+                  - /url: /en/nl/recovery-comfort/
+                  - img "HOKA Active Recovery" [ref=e394]
+                - generic [ref=e396]:
+                  - generic [ref=e397]: Active Recovery
+                  - generic [ref=e399]:
+                    - button "Men's Recovery" [ref=e400] [cursor=pointer]
+                    - button "Women's Recovery" [ref=e401] [cursor=pointer]
+            - group "8 / 8" [ref=e402]:
+              - generic [ref=e408]:
+                - link [ref=e411] [cursor=pointer]:
+                  - /url: /en/nl/fitness/
+                  - img "HOKA Training & Gym" [ref=e415]
+                - generic [ref=e417]:
+                  - generic [ref=e418]: Gym & Fitness
+                  - generic [ref=e420]:
+                    - button "Men's Fitness" [ref=e421] [cursor=pointer]
+                    - button "Women's Fitness" [ref=e422] [cursor=pointer]
+        - generic [ref=e425]:
+          - group "1 / 2" [ref=e426]:
+            - generic [ref=e432]:
+              - generic [ref=e434]:
+                - link [ref=e435] [cursor=pointer]:
+                  - /url: /en/nl/marathon-pack/
+                - img "Marathon Pack" [ref=e439]
+              - generic [ref=e441]:
+                - generic [ref=e442]: Marathon Pack
+                - generic [ref=e443]: Fast shoes. Lightweight gear. No distractions.
+                - button "Shop the Collection" [ref=e447] [cursor=pointer]
+          - group "2 / 2" [ref=e448]:
+            - generic [ref=e454]:
+              - generic [ref=e456]:
+                - link [ref=e457] [cursor=pointer]:
+                  - /url: /en/nl/women-lifestyle/clifton-utl/1176644.html
+                - img "HOKA Clifton UTL" [ref=e461]
+              - generic [ref=e463]:
+                - generic [ref=e464]: Clifton UTL
+                - generic [ref=e465]: Built for life without limits.
+                - button "Shop Clifton UTL" [ref=e469] [cursor=pointer]
+        - generic [ref=e470]:
+          - generic [ref=e471]:
+            - generic [ref=e472]: Featured stories
+            - text:    
+          - generic [ref=e473]:
+            - generic [ref=e474]:
+              - group "1 / 9" [ref=e475]:
+                - generic [ref=e477]:
+                  - link [ref=e478] [cursor=pointer]:
+                    - /url: /en/nl/exclusives/
+                  - generic [ref=e481]:
+                    - generic [ref=e482]:
+                      - img "4x3-stinson-8" [ref=e488]
+                      - generic [ref=e490]:
+                        - generic [ref=e491]: Products exclusive to HOKA.com
+                        - button "Shop Exclusives" [ref=e494] [cursor=pointer]
+                    - link [ref=e495] [cursor=pointer]:
+                      - /url: /en/nl/exclusives/
+              - group "2 / 9" [ref=e496]:
+                - generic [ref=e498]:
+                  - link [ref=e499] [cursor=pointer]:
+                    - /url: /en/nl/fly-human-fly/
+                  - generic [ref=e502]:
+                    - generic [ref=e503]:
+                      - img "Together We Fly Higher" [ref=e509]
+                      - generic [ref=e511]:
+                        - generic [ref=e512]: We all run our own race but we’re never alone
+                        - button "Discover the Campaign" [ref=e515] [cursor=pointer]
+                    - link [ref=e516] [cursor=pointer]:
+                      - /url: /en/nl/fly-human-fly/
+              - group "3 / 9" [ref=e517]:
+                - generic [ref=e519]:
+                  - link [ref=e520] [cursor=pointer]:
+                    - /url: /en/nl/clifton-11-clifton-pro-comparison-guide/
+                  - generic [ref=e523]:
+                    - generic [ref=e524]:
+                      - img "HOKA Clifton Blog" [ref=e530]
+                      - generic [ref=e532]:
+                        - generic [ref=e533]: Clifton 11 & Clifton PRO Comparison Guide
+                        - generic [ref=e535]:
+                          - button "Read the Blog" [ref=e536] [cursor=pointer]
+                          - button "Which is right for you?" [ref=e537] [cursor=pointer]
+                    - link [ref=e538] [cursor=pointer]:
+                      - /url: /en/nl/clifton-11-clifton-pro-comparison-guide/
+              - group "4 / 9" [ref=e539]:
+                - generic [ref=e541]:
+                  - link [ref=e542] [cursor=pointer]:
+                    - /url: /en/nl/explore-running-guide/
+                  - generic [ref=e545]:
+                    - generic [ref=e546]:
+                      - img "HOKA Road Running Guide" [ref=e552]
+                      - generic [ref=e554]:
+                        - generic [ref=e555]: Love your miles.
+                        - button "Road Running Guide" [ref=e558] [cursor=pointer]
+                    - link [ref=e559] [cursor=pointer]:
+                      - /url: /en/nl/explore-running-guide/
+              - group "5 / 9" [ref=e560]:
+                - generic [ref=e562]:
+                  - link [ref=e563] [cursor=pointer]:
+                    - /url: /en/nl/explore-all-events/
+                  - generic [ref=e566]:
+                    - generic [ref=e567]:
+                      - img "HOKA Events" [ref=e573]
+                      - generic [ref=e575]:
+                        - generic [ref=e576]: Events Near You
+                        - button "Fly with Us" [ref=e579] [cursor=pointer]
+                    - link [ref=e580] [cursor=pointer]:
+                      - /url: /en/nl/explore-all-events/
+              - group "6 / 9" [ref=e581]:
+                - generic [ref=e583]:
+                  - link [ref=e584] [cursor=pointer]:
+                    - /url: /en/nl/styled-by-you/
+                  - generic [ref=e587]:
+                    - generic [ref=e588]:
+                      - img "HOKA Styled by You" [ref=e594]
+                      - generic [ref=e596]:
+                        - generic [ref=e597]: Celebrate your style with HOKA.
+                        - button "Discover Styled by You" [ref=e600] [cursor=pointer]
+                    - link [ref=e601] [cursor=pointer]:
+                      - /url: /en/nl/styled-by-you/
+              - group "7 / 9" [ref=e602]:
+                - generic [ref=e604]:
+                  - link [ref=e605] [cursor=pointer]:
+                    - /url: /en/nl/view-all-trail-hiking/
+                  - generic [ref=e608]:
+                    - generic [ref=e609]:
+                      - img "HOKA Trail Running Guide" [ref=e615]
+                      - generic [ref=e617]:
+                        - generic [ref=e618]: Meet the Icons.
+                        - button "Trail Running Guide" [ref=e621] [cursor=pointer]
+                    - link [ref=e622] [cursor=pointer]:
+                      - /url: /en/nl/view-all-trail-hiking/
+              - group "8 / 9" [ref=e623]:
+                - generic [ref=e625]:
+                  - link [ref=e626] [cursor=pointer]:
+                    - /url: /en/nl/about-carbon-plate-technology/
+                  - generic [ref=e629]:
+                    - generic [ref=e630]:
+                      - img "HOKA Skyward Blog" [ref=e636]
+                      - generic [ref=e638]:
+                        - generic [ref=e639]: Discover the Carbon Plated Technology in the new Skyward X 2.
+                        - button "Carbon Plate Technology" [ref=e642] [cursor=pointer]
+                    - link [ref=e643] [cursor=pointer]:
+                      - /url: /en/nl/about-carbon-plate-technology/
+              - group "9 / 9" [ref=e644]:
+                - generic [ref=e646]:
+                  - link [ref=e647] [cursor=pointer]:
+                    - /url: /en/nl/explore-about-hoka/
+                  - generic [ref=e650]:
+                    - generic [ref=e651]:
+                      - img "HOKA Our Mission" [ref=e657]
+                      - generic [ref=e659]:
+                        - generic [ref=e660]: Born in the Mountains. Our goal is to inspire people to move.
+                        - button "Our Mission" [ref=e663] [cursor=pointer]
+                    - link [ref=e664] [cursor=pointer]:
+                      - /url: /en/nl/explore-about-hoka/
+            - generic [ref=e666] [cursor=pointer]
+    - contentinfo [ref=e668]:
+      - generic [ref=e669]:
+        - generic [ref=e670]:
+          - generic [ref=e671]:
+            - text:  
+            - generic [ref=e673]:
+              - generic [ref=e674]:
+                - group "1 / 3" [ref=e675]:
+                  - link "Seamless Shipping Flexible shipping across Europe and beyond." [ref=e676] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/help/delivery/
+                    - heading "Seamless Shipping" [level=3] [ref=e677]
+                    - generic [ref=e678]: Flexible shipping across Europe and beyond.
+                  - link "Easy Returns Easy, hassle-free 30-day returns on all orders." [ref=e679] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/page/?cid=help-returns
+                    - heading "Easy Returns" [level=3] [ref=e680]
+                    - generic [ref=e681]: Easy, hassle-free 30-day returns on all orders.
+                  - link "Product exclusives Products you won't find anywhere else." [ref=e682] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/search/?cgid=hoka-exclusives
+                    - heading "Product exclusives" [level=3] [ref=e683]
+                    - generic [ref=e684]: Products you won't find anywhere else.
+                - group "2 / 3" [ref=e685]:
+                  - link "Shoe Finder A couple of questions between you and your perfect shoe." [ref=e686] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/search/?cgid=hoka-shoe-finder
+                    - heading "Shoe Finder" [level=3] [ref=e687]
+                    - generic [ref=e688]: A couple of questions between you and your perfect shoe.
+                  - link "Legal Guarantee Protected by a 2-year Legal Guarantee." [ref=e689] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/help/warranty/
+                    - heading "Legal Guarantee" [level=3] [ref=e690]
+                    - generic [ref=e691]: Protected by a 2-year Legal Guarantee.
+                  - link "Early Access Sign up for exclusive access to selected new launches." [ref=e692] [cursor=pointer]:
+                    - /url: https://www.hoka.com/en/nl/email-signup/
+                    - heading "Early Access" [level=3] [ref=e693]
+                    - generic [ref=e694]: Sign up for exclusive access to selected new launches.
+                - group "3 / 3" [ref=e695]:
+                  - heading "Flexible payment" [level=3] [ref=e696]
+                  - generic [ref=e697]: Pay in a way that suits you.
+              - generic [ref=e698]:
+                - button "Go to slide 1" [ref=e699] [cursor=pointer]
+                - button "Go to slide 2" [ref=e700] [cursor=pointer]
+                - button "Go to slide 3" [ref=e701] [cursor=pointer]
+          - generic [ref=e703]:
+            - generic [ref=e704]:
+              - generic [ref=e707]:
+                - heading "Stay Connected" [level=4] [ref=e709]
+                - generic [ref=e711]:
+                  - text: Sign up to receive emails about new collections and exclusive access to preview sales and offers, you can unsubscribe at any time. See more details about
+                  - link "HOKA (EMEA)s Privacy Policy" [ref=e712] [cursor=pointer]:
+                    - /url: /en/nl/privacy-policy.html
+                  - text: .
+                - generic [ref=e714]:
+                  - textbox "Stay Connected" [ref=e715]:
+                    - /placeholder: Email
+                  - button "Notify Me" [ref=e717] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e718]: 
+              - text:    
+            - generic [ref=e719]:
+              - generic [ref=e720]:
+                - generic [ref=e721]:
+                  - paragraph [ref=e722] [cursor=pointer]: Company 
+                  - list:
+                    - listitem [ref=e723]:
+                      - link "About HOKA" [ref=e724] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/meet-hoka.html
+                    - listitem [ref=e725]:
+                      - link "Our Story" [ref=e726] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/our-story.html
+                    - listitem [ref=e727]:
+                      - link "Our Impact" [ref=e728] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/hoka-sustainability/
+                    - listitem [ref=e729]:
+                      - link "Our Technology" [ref=e730] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/hoka-technology/
+                    - listitem [ref=e731]:
+                      - link "Careers" [ref=e732] [cursor=pointer]:
+                        - /url: http://www.deckers.com/careers
+                - generic [ref=e733]:
+                  - paragraph [ref=e734] [cursor=pointer]: Customer Care 
+                  - list:
+                    - listitem [ref=e735]:
+                      - link "Help Centre" [ref=e736] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/customer-service.html
+                    - listitem [ref=e737]:
+                      - link "Delivery" [ref=e738] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/help/delivery/
+                    - listitem [ref=e739]:
+                      - link "Track my order" [ref=e740] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/login/
+                    - listitem [ref=e741]:
+                      - link "Returns & Exchanges" [ref=e742] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/help/returns/
+                    - listitem [ref=e743]:
+                      - link "Create a Return" [ref=e744] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/gb/return-start
+                    - listitem [ref=e745]:
+                      - link "Right to Withdraw" [ref=e746] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/withdrawal-from-contract.html
+                    - listitem [ref=e747]:
+                      - link "Legal Guarantee" [ref=e748] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/help/warranty/
+                - generic [ref=e749]:
+                  - paragraph [ref=e750] [cursor=pointer]: Resources 
+                  - list:
+                    - listitem [ref=e751]:
+                      - link "Size Guide" [ref=e752] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/sizing-information.html
+                    - listitem [ref=e753]:
+                      - link "Find your Perfect HOKA shoe" [ref=e754] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/hoka-shoe-finder.html
+                    - listitem [ref=e755]:
+                      - link "Clean & Care" [ref=e756] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/cleaning-and-care-guide.html
+                    - listitem [ref=e757]:
+                      - link "Blog" [ref=e758] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/blog/
+                    - listitem [ref=e759]:
+                      - link "Store Locator" [ref=e760] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/store-locator.html
+                    - listitem [ref=e761]:
+                      - link "Events near You" [ref=e762] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/events-hub.html
+                - generic [ref=e763]:
+                  - paragraph [ref=e764] [cursor=pointer]: Shop 
+                  - list:
+                    - listitem [ref=e765]:
+                      - link "Sign In" [ref=e766] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/login/
+                    - listitem [ref=e767]:
+                      - link "Road Running" [ref=e768] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/road-selected-styles/
+                    - listitem [ref=e769]:
+                      - link "Trail Running" [ref=e770] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/trail-performers/
+                    - listitem [ref=e771]:
+                      - link "Hiking" [ref=e772] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/hiking-range/
+                    - listitem [ref=e773]:
+                      - link "Walking" [ref=e774] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/walking-styles/
+                    - listitem [ref=e775]:
+                      - link "Lifestyle" [ref=e776] [cursor=pointer]:
+                        - /url: https://www.hoka.com/en/nl/lifestyle/
+              - generic [ref=e778]:
+                - paragraph [ref=e780]: Stay Social
+                - list [ref=e781]:
+                  - listitem [ref=e782]:
+                    - link "Hoka Instagram" [ref=e783] [cursor=pointer]:
+                      - /url: https://www.instagram.com/hoka_eu/
+                      - generic [aria-hidden] [ref=e785]: 
+                  - listitem [ref=e786]:
+                    - link "Hoka Strava" [ref=e787] [cursor=pointer]:
+                      - /url: https://www.strava.com/clubs/1035537
+                      - generic [aria-hidden] [ref=e789]: 
+                  - listitem [ref=e790]:
+                    - link "Hoka Facebook" [ref=e791] [cursor=pointer]:
+                      - /url: https://www.facebook.com/HOKAEU/
+                      - generic [aria-hidden] [ref=e793]: 
+                  - listitem [ref=e794]:
+                    - link "Hoka YouTube" [ref=e795] [cursor=pointer]:
+                      - /url: https://www.youtube.com/user/HOKAONEONE
+                      - generic [aria-hidden] [ref=e797]: 
+              - generic [ref=e798]:
+                - img "Visa" [ref=e800]
+                - img "Mastercard" [ref=e802]
+                - img "ApplePay" [ref=e804]
+                - img "GooglePay" [ref=e806]
+                - img "PayPal" [ref=e808]
+                - img "Klarna" [ref=e810]
+                - img "ClearPay" [ref=e812]
+                - img "American Express" [ref=e814]
+        - generic [ref=e815]:
+          - generic [ref=e816]:
+            - button "Change Country selector" [ref=e817] [cursor=pointer]:
+              - text: Netherlands
+              - generic [ref=e819]: 
+            - text: 
+          - button "Change Language selector" [ref=e821] [cursor=pointer]:
+            - text: English
+            - generic [ref=e822]: 
+        - contentinfo [ref=e824]:
+          - generic [ref=e825]:
+            - list [ref=e832]:
+              - listitem [ref=e833]:
+                - link "Privacy Policy" [ref=e834] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/privacy-policy.html
+              - listitem [ref=e835]:
+                - link "Cookies Policy" [ref=e836] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/cookies-policy.html
+              - listitem [ref=e837]:
+                - link "Cookie Preferences" [ref=e838] [cursor=pointer]:
+                  - /url: javascript:void(0);
+              - listitem [ref=e839]:
+                - link "Terms & Conditions" [ref=e840] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/terms-and-conditions.html
+              - listitem [ref=e841]:
+                - link "Terms of Sale" [ref=e842] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/terms-of-sale.html
+              - listitem [ref=e843]:
+                - link "Withdrawal from Contract" [ref=e844] [cursor=pointer]:
+                  - /url: https://service.global-e.com/Categories/how-do-i-exercise-my-right-of-withdrawal?id=b1d1f59b-cbce-4598-bac6-972e13d2bcc3
+              - listitem [ref=e845]:
+                - link "UK Modern Slavery Act" [ref=e846] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/modern-slavery-act.html
+              - listitem [ref=e847]:
+                - link "Website Accessibility" [ref=e848] [cursor=pointer]:
+                  - /url: https://www.hoka.com/en/nl/website-accessibility.html
+              - listitem [ref=e849]:
+                - paragraph [ref=e850]: 130 Shaftesbury Avenue, London, W1D 5EU, United Kingdom
+            - generic [ref=e855]:
+              - img "Visa" [ref=e857]
+              - img "Mastercard" [ref=e859]
+              - img "American Express" [ref=e861]
+              - img "PayPal" [ref=e863]
+              - img "Klarna Pay now" [ref=e865]
+              - img "iDEAL | Wero" [ref=e867]
+  - text:   *  *  *        *  *        

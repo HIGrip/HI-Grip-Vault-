@@ -1,0 +1,496 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+<section class="ab ab-vl ab-pad" data-ab="values" data-anim="{{ s.animate }}" aria-label="Kernwaarden" style="{% render 'about-vars', s: s %}--ab-mask:url('{{ 'hi-logo-mask.png' | asset_url }}');">
+  <div class="ab-wrap">
+    <{{ tag }} class="ab-h">{%- if s.line_1 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_1_align, m: s.line_1_align_m %}>{{ s.line_1 }} </span>{%- endif -%}{%- if s.line_2 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_2_align, m: s.line_2_align_m %}>{{ s.line_2 }} </span>{%- endif -%}</{{ tag }}>
+  </div>
+  <div class="ab-wrap ab-vl__grid">
+    <div class="ab-vl__logocol">
+      <div class="ab-logo-wrap">
+        <div class="ab-logo ab-logo--base" role="img" aria-label="HÏ Grip-embleem"></div>
+        <div class="ab-logo ab-logo--fill" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div>
+      <div class="ab-vpanels">
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          <article class="ab-vp" style="--c:{{ b.color }};"{% render 'about-ta', d: b.word_align, m: b.word_align_m %} {{ block.shopify_attributes }}>
+            {%- case b.icon -%}
+              {%- when 'comfort' -%}<svg class="ab-vp__ico" viewBox="0 0 96 96" aria-hidden="true"><path d="M48 18 82 36 48 54 14 36Z M14 50l34 18 34-18 M14 64l34 18 34-18"/></svg>
+              {%- when 'vertrouwen' -%}<svg class="ab-vp__ico" viewBox="0 0 96 96" aria-hidden="true"><path d="M48 14v14 M48 68v14 M14 48h14 M68 48h14"/><circle cx="48" cy="48" r="24"/><circle cx="48" cy="48" r="9"/></svg>
+              {%- when 'innovatie' -%}<svg class="ab-vp__ico" viewBox="0 0 96 96" aria-hidden="true"><path d="M38 62c-6-5-10-11-10-19a20 20 0 0 1 40 0c0 8-4 14-10 19v8H38Z M40 78h16 M48 10v6 M20 22l4 4 M76 22l-4 4 M12 46h6 M78 46h6"/></svg>
+            {%- endcase -%}
+            <h3 class="ab-vp__big" data-w="{{ b.word | escape }}">{{ b.word | escape }}</h3>
+            {%- if b.text != blank -%}<p {% render 'about-ta', d: b.text_align, m: b.text_align_m %}>{{ b.text | escape }}</p>{%- endif -%}
+          </article>
+        {%- endfor -%}
+      </div>
+      {%- if s.button_label != blank and s.button_url != blank -%}
+        <a class="ab-btn ab-vl__btn"{% render 'about-ta', d: s.button_align, m: s.button_align_m %} href="{{ s.button_url }}">{{ s.button_label | escape }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Waarden",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_1",
+      "label": "Kop regel 1",
+      "default": "Pure performance komt",
+      "info": "De kop blijft op twee regels staan; de lettergrootte past zich aan de schermbreedte aan."
+    },
+    {
+      "type": "select",
+      "id": "line_1_align",
+      "label": "Regel 1 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align_m",
+      "label": "Regel 1 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_2",
+      "label": "Kop regel 2",
+      "default": "nooit van <em>één kant.</em>"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align",
+      "label": "Regel 2 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align_m",
+      "label": "Regel 2 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Knop"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Knoptekst",
+      "default": "Lees de visie",
+      "info": "Leeg laten verbergt de knop."
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Knoplink"
+    },
+    {
+      "type": "select",
+      "id": "button_align",
+      "label": "Knop uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "button_align_m",
+      "label": "Knop uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 90,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 32,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 102,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 32,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Waarde",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icoon",
+          "options": [
+            {
+              "value": "comfort",
+              "label": "Comfort (lagen)"
+            },
+            {
+              "value": "vertrouwen",
+              "label": "Vertrouwen (richtkruis)"
+            },
+            {
+              "value": "innovatie",
+              "label": "Innovatie (lamp)"
+            }
+          ],
+          "default": "comfort"
+        },
+        {
+          "type": "text",
+          "id": "word",
+          "label": "Woord",
+          "default": "Comfort"
+        },
+        {
+          "type": "select",
+          "id": "word_align",
+          "label": "Woord + icoon uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "word_align_m",
+          "label": "Woord + icoon uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Zin",
+          "default": "Geen irritaties, alle focus op het resultaat. In welke omstandigheden dan ook."
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Tekst uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "text_align_m",
+          "label": "Tekst uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Kleur",
+          "default": "#CCFF00"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Over ons: Waarden",
+      "blocks": [
+        {
+          "type": "value",
+          "settings": {
+            "icon": "comfort",
+            "word": "Comfort",
+            "text": "Geen irritaties, alle focus op het resultaat. In welke omstandigheden dan ook.",
+            "color": "#CCFF00"
+          }
+        },
+        {
+          "type": "value",
+          "settings": {
+            "icon": "vertrouwen",
+            "word": "Vertrouwen",
+            "text": "Wie gelooft in zijn materiaal, haalt het beste uit zichzelf.",
+            "color": "#0011A7"
+          }
+        },
+        {
+          "type": "value",
+          "settings": {
+            "icon": "innovatie",
+            "word": "Innovatie",
+            "text": "We blijven verbeteren. Er is altijd een volgende stap.",
+            "color": "#FF6A00"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

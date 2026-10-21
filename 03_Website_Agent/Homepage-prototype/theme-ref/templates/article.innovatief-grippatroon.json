@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><br/>Geen loze beloftes, gewoon: GRIP waar je het écht nodig hebt met stijl en comfort van hoge kwaliteit. In deze blog lees je alles over waarom ons grippatroon onderscheidend is van andere aanbieders.<br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Waarom jouw voeten HÏ Grip verdienen: GRIP waar je het écht voelt</strong></h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><br/>Je kent het wel: je staat op het veld, in de gym of op de mat en je voelt het meteen, die ene glijpartij, dat kleine verlies van grip, net op het verkeerde moment. Frustrerend toch? Bij HÏ Grip dachten we: dat moet veel beter kunnen. En dus deed Team HÏ Grip wat we het liefst doen, luisteren naar sporters, meten, testen en ontwikkelen. Het resultaat? Een nieuwe generatie gripsokken: <em><strong>HÏ Grip gripsokken</strong></em>. Geen loze beloftes, gewoon: GRIP waar je het écht nodig hebt met stijl en comfort van hoge kwaliteit.<br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Slimmere GRIP op jouw drukpunten</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Onze voeten zijn elke dag keihard aan het werk. Tijdens een training of wedstrijd belasten we bepaalde zones meer dan andere — denk aan je hiel, de bal van je voet en je tenen. Bij HÏ Grip vonden we het dus logisch om daar meer GRIP te plaatsen.</p><p>Bij HÏ Grip hebben we die wetenschap meegenomen in ons design. Waar andere gripsokken overal gelijkmatig grip aanbrengen, hebben wij gekeken naar de <strong>drukpunten van sporters</strong>. Wat bleek? Door <strong>extra grip te plaatsen op de plekken waar jij de meeste kracht zet</strong>, ontstaat een sok die veel effectiever presteert. Geen overkill aan noppen waar je ze niet nodig hebt, maar een <strong>doordacht patroon</strong> dat jouw prestaties nog veel beter ondersteunt.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_WBWFXE": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>HÏ Grip = meer dan een sok</strong></h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_CthjCk": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h3></h3><p>De beste GRIP is niet alleen wat HÏ Grip kenmerkt. Want wat heb je aan perfecte GRIP als je voeten na 20 minuten al beginnen te zeuren? Daarom hebben we de <strong>onderkant van onze sokken extra verstevigd met </strong><em><strong>de beste sportstof</strong></em>. Denk aan een fijne demping, ademend vermogen en vooral: langdurig comfort. Zo kun jij je focussen op je spel, je kracht, je beweging — zonder afleiding.</p><h3></h3><p>We zien onze gripsokken niet als accessoire, maar als <strong>essentieel onderdeel van jouw uitrusting</strong>. Net als je schoenen, je mindset of je warming-up. En dus steken we er liefde, aandacht en technologie in. Niet omdat het moet, maar omdat we zelf ook sporters zijn. En we heel de sportwereld kennis willen laten maken met <a href=\"/collections/all\" title=\"Alle producten\">HÏ Grip gripsokken</a>, zodat iedere sporters waar dan ook ter wereld optimaal presteert en alle plezier haalt uit bewegen.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_WBWFXE",
+        "text_CthjCk"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,128 @@
+/* 10 ZAKELIJK · 1.23 (Lars 20-10: sportclub opsplitsen in sportclub en sportteam, vier grote blokken, sample apart).
+   Kop links, daaronder vier grote fotoblokken: sportclubs, sportteams, sportwinkels, pilates en studio's. Elk blok is een
+   link naar de zakelijke pagina met het harde feit als zwart blokje linksboven, een volgnummer rechtsboven, en titel,
+   uitleg en pijl linksonder op een donker verloop. Op desktop staan ze 2×2 en zakt de rechterkolom een stap: het raster
+   breekt bewust. De sample staat los eronder als één breed ticket met perforatie: de enige primaire knop van de sectie.
+   Hover of tik: beeld zoomt in, tekst schuift iets omhoog, de pijl loopt mee. section.js telt 150 en 6 op bij binnenkomst. */
+.hp-10 { background: var(--hi-black); color: var(--hi-white); }
+.hp-10-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-10-head { display: grid; gap: var(--hp-space-sm); }
+.hp-10-h2 { max-width: 16ch; font: 800 clamp(36px, 5.4vw, 88px)/0.95 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-10-lead { max-width: 46ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-titanium); }
+
+/* blokken */
+.hp-10-cards { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+.hp-10-block {
+  position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; isolation: isolate;
+  border-radius: var(--hp-radius-media); background: var(--hi-near-black); color: var(--hi-white); text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.hp-10-block--light { background: var(--hi-white); }
+.hp-10-block::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(to top, var(--hi-scrim-strong) 0%, var(--hi-scrim) 34%, transparent 62%);
+}
+.hp-10-block--light::after { background: linear-gradient(to top, var(--hi-black) 0%, var(--hi-scrim-strong) 32%, transparent 64%); }
+.hp-10-block:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 4px; }
+
+.hp-10-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; transition: scale var(--hp-dur-3) var(--hp-ease); }
+.hp-10-img--team { object-position: 50% 45%; }
+.hp-10-img--contain { object-fit: contain; padding: 6% 18% 30%; }
+.hp-10-img--sheet { object-fit: contain; padding: 4% 8% 30%; filter: contrast(1.14) brightness(1.03); }
+
+.hp-10-no {
+  position: absolute; z-index: 2; top: 14px; right: 16px;
+  font: italic 900 15px/1 var(--hp-type-family); letter-spacing: 0; color: var(--hi-white);
+}
+.hp-10-block--light .hp-10-no { color: var(--hi-black); }
+
+.hp-10-stat {
+  position: absolute; z-index: 2; top: 12px; left: 12px; display: grid; gap: 3px;
+  padding: 10px 12px 9px; border-radius: 10px; background: var(--hi-black); color: var(--hi-white);
+}
+.hp-10-stat__k { font: 600 11px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+.hp-10-stat__v { font: italic 900 24px/0.95 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+
+.hp-10-body {
+  position: absolute; z-index: 2; left: 16px; right: 16px; bottom: 16px; display: grid; gap: 8px; justify-items: start;
+  transition: translate var(--hp-dur-2) var(--hp-ease);
+}
+.hp-10-title { font: italic 900 30px/0.92 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; padding-right: 0.06em; }
+.hp-10-text { max-width: 38ch; font-size: 13px; line-height: 1.45; color: var(--hi-white); opacity: 0.85; }
+.hp-10-cue { display: inline-flex; align-items: center; gap: 10px; margin-top: 2px; font: 700 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-10-chev {
+  flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%;
+  background: var(--hi-white); color: var(--hi-black); transition: translate var(--hp-dur-1) var(--hp-ease);
+}
+.hp-10-chev svg { width: 12px; height: 12px; }
+
+/* hover en tik delen dezelfde staat */
+.hp-10-block:active .hp-10-img { scale: 1.05; }
+.hp-10-block:active .hp-10-body { translate: 0 -6px; }
+.hp-10-block:active .hp-10-chev, .hp-10-block:focus-visible .hp-10-chev { translate: 4px 0; }
+@media (hover: hover) {
+  .hp-10-block:hover .hp-10-img { scale: 1.06; }
+  .hp-10-block:hover .hp-10-body { translate: 0 -8px; }
+  .hp-10-block:hover .hp-10-chev { translate: 4px 0; }
+}
+
+/* sample-ticket: los, breed, met perforatie en twee inkepingen in de zijkanten */
+.hp-10-sample {
+  position: relative; display: grid; gap: var(--hp-space-ms); justify-items: start;
+  padding: var(--hp-space-ms) var(--hp-space-ms) var(--hp-space-ms) var(--hp-space-md);
+  border-radius: var(--hp-radius-media); background: var(--hi-white); color: var(--hi-black); text-decoration: none;
+  -webkit-tap-highlight-color: transparent; transition: translate var(--hp-dur-2) var(--hp-ease);
+}
+.hp-10-sample::before, .hp-10-sample::after {
+  content: ""; position: absolute; top: 50%; width: 28px; height: 28px; margin-top: -14px; border-radius: 50%; background: var(--hi-black);
+}
+.hp-10-sample::before { left: -14px; }
+.hp-10-sample::after { right: -14px; }
+.hp-10-sample__top { display: grid; gap: 6px; width: 100%; padding-bottom: var(--hp-space-ms); border-bottom: 2px dashed var(--hi-line); }
+.hp-10-sample__big { font: italic 900 clamp(40px, 5vw, 84px)/0.9 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; padding-right: 0.06em; }
+.hp-10-sample__sub { font: 600 13px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); }
+.hp-10-sample:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 4px; }
+.hp-10-sample:active { translate: 0 -4px; }
+@media (hover: hover) {
+  .hp-10-sample:hover { translate: 0 -4px; }
+  .hp-10-sample:hover .hp-pill__chev { transform: translateX(3px); }
+}
+
+@media (min-width: 769px) {
+  .hp-10-inner { row-gap: var(--hp-space-lg); }
+  .hp-10-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 16px; row-gap: 16px; padding-bottom: var(--hp-space-lg); }
+  .hp-10-cell:nth-child(even) { translate: 0 var(--hp-space-lg); }
+  .hp-10-block { aspect-ratio: 16 / 11; }
+  .hp-10-no { top: 22px; right: 26px; font-size: 18px; }
+  .hp-10-stat { top: 20px; left: 20px; padding: 14px 18px 12px; }
+  .hp-10-stat__v { font-size: clamp(30px, 3vw, 46px); }
+  .hp-10-body { left: 28px; right: 28px; bottom: 26px; gap: 10px; }
+  .hp-10-title { font-size: clamp(40px, 4.4vw, 72px); }
+  .hp-10-text { font-size: 15px; }
+  .hp-10-cue { font-size: 13px; }
+  .hp-10-chev { width: 40px; height: 40px; }
+  .hp-10-img--contain { padding: 6% 24% 28%; }
+  .hp-10-img--sheet { padding: 4% 14% 30%; }
+
+  .hp-10-sample { grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: var(--hp-space-lg); padding: var(--hp-space-md) var(--hp-space-lg); }
+  .hp-10-sample__top { padding: 0 var(--hp-space-lg) 0 0; border-bottom: 0; border-right: 2px dashed var(--hi-line); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-10-img, .hp-10-body, .hp-10-chev, .hp-10-sample { transition: none; }
+}
+
+/* de soklengtes onder het feitenblok laten beginnen; niets steekt horizontaal buiten de sectie (inkepingen van het ticket) */
+.hp-10 { overflow-x: clip; }
+.hp-10-img--sheet { padding: 20% 10% 30%; }
+@media (min-width: 769px) { .hp-10-img--sheet { padding: 17% 16% 29%; } }
+/* de soklengtes rechtsboven in het vrije vlak naast het feitenblok, groter en vrij van de titel */
+.hp-10-img--sheet { padding: 24% 6% 30% 40%; object-position: 100% 0; }
+@media (min-width: 769px) { .hp-10-img--sheet { padding: 5% 6% 30% 48%; object-position: 100% 0; } }
+/* mobiel: de twee lichte blokken vierkant, zodat feitenblok, beeld en titel elk hun eigen plek hebben */
+@media (max-width: 768px) {
+  .hp-10-block--light { aspect-ratio: 1 / 1; }
+  .hp-10-img--sheet { padding: 27% 10% 40% 34%; }
+  .hp-10-img--contain { padding: 18% 22% 38%; }
+}

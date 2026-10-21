@@ -1,0 +1,507 @@
+- generic [ref=f89e1]:
+  - generic [ref=f89e2]:
+    - list [ref=f89e3]:
+      - listitem [ref=f89e4]:
+        - link "Skip to main content" [ref=f89e5] [cursor=pointer]:
+          - /url: "#un-main"
+      - listitem [ref=f89e6]:
+        - link "Skip to footer" [ref=f89e7] [cursor=pointer]:
+          - /url: "#un-footer"
+    - banner [ref=f89e8]:
+      - text: 
+      - generic [ref=f89e10]:
+        - link "COROS" [ref=f89e12] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f89e14]:
+          - button "Shopping Bag" [ref=f89e16] [cursor=pointer]
+          - button "More links" [ref=f89e22] [cursor=pointer]
+    - main [ref=f89e24]:
+      - generic [ref=f89e25]:
+        - generic [ref=f89e27]:
+          - heading "COROS PACE 4" [level=1] [ref=f89e28]
+          - link "BUY NOW" [ref=f89e30] [cursor=pointer]:
+            - /url: /buy/pace4
+        - generic [ref=f89e31]:
+          - region "OVERVIEW" [ref=f89e32]:
+            - generic [ref=f89e33]:
+              - button "Pause" [ref=f89e40] [cursor=pointer]
+              - generic [ref=f89e44]:
+                - generic [ref=f89e48]: THE ULTRALIGHT AMOLED GPS WATCH DESIGNED TO HELP YOU TRAIN SMARTER AND RUN FASTER.
+                - button "BUY NOW" [ref=f89e50] [cursor=pointer]
+          - generic [ref=f89e53]:
+            - paragraph [ref=f89e54]: PERSONAL BY DESIGN
+            - paragraph [ref=f89e55]: Choose from a range of colors like Black Crystal and Cloud White, or customize the standard PACE 4 with any color of nylon or silicone band.
+            - generic [ref=f89e56]:
+              - figure [ref=f89e58]
+              - figure [ref=f89e61]
+            - generic [ref=f89e63]:
+              - button "Watch color 1" [pressed] [ref=f89e65] [cursor=pointer]
+              - button "Watch color 2" [ref=f89e68] [cursor=pointer]
+              - button "Watch color 3" [ref=f89e71] [cursor=pointer]
+              - button "Watch color 4" [ref=f89e74] [cursor=pointer]
+              - button "Watch color 5" [ref=f89e77] [cursor=pointer]
+              - button "Watch color 6" [ref=f89e80] [cursor=pointer]
+            - generic [ref=f89e82]:
+              - link "Standard White" [ref=f89e83] [cursor=pointer]:
+                - /url: /buy/pace4?variant=47205352997076
+              - generic [ref=f89e87]: A clean, streamlined version of the PACE 4 featuring a durable fiber-reinforced polymer bezel.
+          - generic [ref=f89e88]:
+            - generic [ref=f89e89]: THE SPEED OF LIGHT
+            - generic [ref=f89e90]: Created for athletes looking for performance, speed, and simplicity, COROS PACE 4 combines ultralight engineering, long battery life, advanced training tools, and increased accuracy to help everyone from elite racers to first-timers discover their potential.
+            - figure [ref=f89e92]
+          - region "Highlights" [ref=f89e94]:
+            - generic [ref=f89e95]:
+              - generic [ref=f89e96]:
+                - generic [ref=f89e97]:
+                  - figure [ref=f89e99]
+                  - generic [ref=f89e101]:
+                    - generic [ref=f89e102]: ULTRALIGHT TECHNOLOGY
+                    - generic [ref=f89e103]: At just 32 grams with the nylon band, PACE 4 is lighter than the gel tucked into your pocket.
+                - generic [ref=f89e105]:
+                  - generic [ref=f89e106]:
+                    - generic [ref=f89e107]:
+                      - generic [ref=f89e108]: AMOLED AT ITS BEST
+                      - generic [ref=f89e109]: The 1.2" color touchscreen AMOLED display features a tapered edge for crystal-clear definition, smooth swipes, and a seamless finish—now with 164% higher resolution for the sharpest display yet.
+                    - figure [ref=f89e111]
+                  - generic [ref=f89e113]:
+                    - generic [ref=f89e114]:
+                      - generic [ref=f89e115]: GLOBAL MAPPING
+                      - generic [ref=f89e116]: View landscape and topo maps directly on you watch, making it easier than ever to navigate dense city streets and knowing which fork in the trail to take.
+                    - figure [ref=f89e118]
+              - generic [ref=f89e122]:
+                - figure [ref=f89e124]
+                - generic [ref=f89e126]:
+                  - generic [ref=f89e127]: BIG BATTERY LIFE
+                  - generic [ref=f89e128]: With 41 GPS hours and 19 days of daily use, ensure your training isn’t tied to a charger.
+                  - generic [ref=f89e130]:
+                    - generic [ref=f89e132]:
+                      - generic [ref=f89e133]: PACE 3
+                      - generic [ref=f89e135]:
+                        - generic [ref=f89e136]: "+16"
+                        - generic [ref=f89e137]: HRS
+                    - generic [ref=f89e139]:
+                      - generic [ref=f89e140]: PACE Pro
+                      - generic [ref=f89e142]:
+                        - generic [ref=f89e143]: "+3"
+                        - generic [ref=f89e144]: HRS
+                  - generic [ref=f89e145]: "*using HIGH (All Systems) GPS Mode"
+              - generic [ref=f89e146]:
+                - generic [ref=f89e148]:
+                  - figure [ref=f89e150]
+                  - generic [ref=f89e152]:
+                    - generic [ref=f89e153]: "VOICE FEATURES: A NEW WAY TO TRAIN"
+                    - generic [ref=f89e154]: Using PACE 4's voice recording tool, capture training logs at the completion of your activity to remember all the details from your session.
+                - generic [ref=f89e156]:
+                  - figure [ref=f89e158]
+                  - generic [ref=f89e160]:
+                    - generic [ref=f89e161]: DROP A PIN
+                    - generic [ref=f89e162]: Record Voice Pins about where you were, what you saw, and how you felt during your workouts.
+              - generic [ref=f89e165]:
+                - figure [ref=f89e167]
+                - generic [ref=f89e169]:
+                  - generic [ref=f89e170]: TRAIN SMARTER. RUN FASTER.
+                  - generic [ref=f89e171]: Track running fitness, build workouts, and test your limits with tools that support your training.
+          - button "Pause" [ref=f89e178] [cursor=pointer]
+          - generic [ref=f89e182]:
+            - generic [ref=f89e183]: PACE IS PROGRESS
+            - figure [ref=f89e185]
+          - generic [ref=f89e187]:
+            - generic [ref=f89e188]:
+              - heading "EASY ON THE EYES" [level=2] [ref=f89e189]
+              - paragraph [ref=f89e190]: The 1.2" touchscreen AMOLED display keeps colors vibrant and lines sharp, with auto-adjusting brightness that ensures the screen is easy to read in all environments.
+            - generic [ref=f89e191]:
+              - generic [ref=f89e192]:
+                - generic [ref=f89e193]: 164%
+                - generic [ref=f89e194]: Higher resolution display compared to PACE 3
+              - generic [ref=f89e195]:
+                - generic [ref=f89e196]: AMOLED
+                - generic [ref=f89e197]: 1.2" touchscreen AMOLED display
+            - button "Pause" [ref=f89e202] [cursor=pointer]
+          - generic [ref=f89e210]:
+            - generic [ref=f89e211]:
+              - generic [ref=f89e212]:
+                - heading "LONG RUN READY" [level=2] [ref=f89e214]
+                - generic [ref=f89e222]:
+                  - figure [ref=f89e224]
+                  - generic: "0"
+                  - generic:
+                    - generic: HRS
+                    - generic: on a single charge
+                - paragraph [ref=f89e228]: With 41 GPS hours on a single charge, enjoy up to 19 days of daily training and sleep before needing a charge.
+                - generic [ref=f89e230]:
+                  - generic [ref=f89e231]:
+                    - generic [ref=f89e232]:
+                      - generic [ref=f89e233]: "0"
+                      - generic [ref=f89e234]: DAYS
+                    - generic [ref=f89e235]: Continuous Daily Use
+                  - generic [ref=f89e237]:
+                    - generic [ref=f89e238]:
+                      - generic [ref=f89e239]: "0"
+                      - generic [ref=f89e240]: HRS
+                    - generic [ref=f89e241]: All Systems (High) GPS Mode
+              - generic [ref=f89e242]:
+                - heading "EASIER CHARGING" [level=2] [ref=f89e244]
+                - figure [ref=f89e247]
+                - paragraph [ref=f89e251]: Only carry one cable to quickly charge PACE 4 with the USB-C charging adapter.
+            - generic [ref=f89e252]:
+              - button "Show Long Run Ready slide" [ref=f89e253] [cursor=pointer]
+              - button "Show Easier Charging slide" [ref=f89e254] [cursor=pointer]
+          - generic [ref=f89e255]:
+            - generic [ref=f89e256]:
+              - generic [ref=f89e257]:
+                - heading "FAST AND LIGHT" [level=2] [ref=f89e258]
+                - paragraph [ref=f89e259]: At 11.8mm thin, it's the most comfortable AMOLED GPS watch that wears easily all-day and night.
+              - generic [ref=f89e260]:
+                - generic [ref=f89e261]:
+                  - generic [ref=f89e262]:
+                    - generic [ref=f89e263]: "32"
+                    - generic [ref=f89e264]: g
+                  - generic [ref=f89e265]: with nylon band
+                - generic [ref=f89e266]:
+                  - generic [ref=f89e267]:
+                    - generic [ref=f89e268]: "40"
+                    - generic [ref=f89e269]: g
+                  - generic [ref=f89e270]: with silicone band
+            - figure [ref=f89e272]
+          - generic [ref=f89e274]:
+            - generic [ref=f89e275]:
+              - button "Pause" [ref=f89e280] [cursor=pointer]
+              - generic [ref=f89e284]: Two easy-to-reach buttons, a super smooth touchscreen and a tactile digital dial make controlling your watch simple, even mid-stride.
+            - generic [ref=f89e286]:
+              - heading "EFFORTLESS CONTROL" [level=2] [ref=f89e287]
+              - paragraph [ref=f89e288]: Use the Action Button to switch from your main data screens to media controls, breadcrumb navigation, or to record Voice Pins.
+          - generic [ref=f89e289]:
+            - generic [ref=f89e290]:
+              - heading "MAKE IT YOURS" [level=2] [ref=f89e291]
+              - paragraph [ref=f89e292]: Change the look and feel with bands that fit your style and your training.
+            - generic [ref=f89e293]:
+              - generic [ref=f89e294]:
+                - figure [ref=f89e296]
+                - generic [ref=f89e298]:
+                  - generic [ref=f89e299]: SILICONE BAND
+                  - generic [ref=f89e300]: The soft and flexible silicone band provides all-day comfort and is easy to dry, with a quick button fastening for easy adjustment.
+              - generic [ref=f89e302]:
+                - figure [ref=f89e304]
+                - generic [ref=f89e306]:
+                  - generic [ref=f89e307]: NYLON BAND
+                  - generic [ref=f89e308]: For an even lighter weight and feel, nylon bands give you a breathable, sweat-wicking band that's simple to adjust mid-run.
+          - generic [ref=f89e309]:
+            - figure [ref=f89e311]
+            - generic [ref=f89e314]:
+              - generic [ref=f89e315]:
+                - generic [ref=f89e316]:
+                  - heading "TOOLS TO HELP YOU IMPROVE" [level=2] [ref=f89e317]
+                  - paragraph [ref=f89e318]: Race predictions, personalized marathon plans, a virtual pacer, and breadcrumb navigation let you know where you stand and where to go next.
+                - heading [level=2] [ref=f89e319]:
+                  - button "RACE PREDICTOR" [expanded] [ref=f89e320] [cursor=pointer]
+                - heading [level=2] [ref=f89e323]:
+                  - button "PERSONAL MARATHON PLANS" [ref=f89e324] [cursor=pointer]
+                - heading [level=2] [ref=f89e327]:
+                  - button "VIRTUAL PACER" [ref=f89e328] [cursor=pointer]
+                - button "Pause" [ref=f89e331] [cursor=pointer]
+              - generic [ref=f89e335]:
+                - region "RACE PREDICTOR" [ref=f89e336]:
+                  - figure [ref=f89e338]
+                - region [aria-hidden] [ref=f89e340]:
+                  - figure [ref=f89e342]
+                - region [aria-hidden] [ref=f89e344]:
+                  - figure [ref=f89e346]
+          - generic [ref=f89e348]:
+            - generic [ref=f89e349]:
+              - heading "RECOVERY AND WELLNESS HUB" [level=2] [ref=f89e350]
+              - paragraph [ref=f89e351]: Track recovery time, sleep stages, HRV, and menstrual cycles to understand how your body’s responding and adjust training accordingly.
+            - generic [ref=f89e352]:
+              - figure [ref=f89e354]
+              - figure [ref=f89e357]
+              - figure [ref=f89e360]
+              - figure [ref=f89e363]
+              - figure [ref=f89e366]
+          - generic [ref=f89e368]:
+            - figure [ref=f89e370]
+            - generic [ref=f89e375]:
+              - generic [ref=f89e376]:
+                - generic [ref=f89e377]:
+                  - generic [ref=f89e378]:
+                    - figure [ref=f89e380]
+                    - figure [ref=f89e385]
+                  - figure [ref=f89e388]
+                  - generic [ref=f89e391]:
+                    - generic [ref=f89e392]: BUILT-IN MIC
+                    - generic [ref=f89e393]: Use the microphone to save training notes or capture voice notes mid-run.
+                - generic [ref=f89e394]:
+                  - generic [ref=f89e395]:
+                    - figure [ref=f89e397]
+                    - figure [ref=f89e402]
+                  - figure [ref=f89e405]
+                  - generic [ref=f89e408]:
+                    - generic [ref=f89e409]: MEDIA CONTROLS
+                    - generic [ref=f89e410]: Skip to the next song or podcast, adjust volume, and more directly from your watch.
+              - generic [ref=f89e411]:
+                - button "Show Built-in Mic slide" [ref=f89e412] [cursor=pointer]
+                - button "Show Media Controls slide" [ref=f89e413] [cursor=pointer]
+          - generic [ref=f89e414]:
+            - generic [ref=f89e415]:
+              - generic [ref=f89e416]: DESIGNED TO GO THE DISTANCE
+              - generic [ref=f89e417]: Precision GPS, accurate heart rate, and software updates that keep coming. PACE 4 is made to last, lap after lap and season after season.
+            - figure [ref=f89e419]
+          - generic [ref=f89e421]:
+            - generic [ref=f89e426]:
+              - heading "RELIABLE HEART RATE" [level=2] [ref=f89e427]
+              - paragraph [ref=f89e428]: A redesigned heart rate sensor with larger LEDs and a more secure fit reduces spikes and drops for actionable data.
+            - generic [ref=f89e429]:
+              - generic [ref=f89e430]:
+                - heading "MAXIMUM COMPATIBILITY" [level=2] [ref=f89e431]
+                - paragraph [ref=f89e432]: Sync routes from Strava, RidewithGPS, Wikiloc, or create them directly in the COROS app. Follow structured workouts, build your own training plan, and keep your community close with instant data sync to your favorite platforms.
+              - figure [ref=f89e434]
+            - generic [ref=f89e436]:
+              - generic [ref=f89e437]:
+                - heading "SIGNAL IN A SECOND" [level=2] [ref=f89e438]
+                - paragraph [ref=f89e439]: All-Systems and Dual-Frequency satellite modes find and hold accurate signals fast, whether it's city streets, dense trails, or open roads.
+              - figure [ref=f89e442]
+              - figure [ref=f89e445]
+          - generic [ref=f89e447]:
+            - heading "Explore the PACE series through the years" [level=2] [ref=f89e449]
+            - generic [ref=f89e450]:
+              - generic [ref=f89e451]:
+                - button "Previous PACE series model" [ref=f89e452] [cursor=pointer]
+                - generic [ref=f89e455]:
+                  - figure [ref=f89e458]
+                  - figure [ref=f89e462]
+                  - figure [ref=f89e466]
+                  - figure [ref=f89e470]
+                - button "Next PACE series model" [ref=f89e472] [cursor=pointer]
+              - generic [ref=f89e477]:
+                - generic [ref=f89e479]:
+                  - generic [ref=f89e480]: PACE 1
+                  - generic [ref=f89e481]: MAY 2018
+                - generic [ref=f89e483]:
+                  - generic [ref=f89e484]: PACE 2
+                  - generic [ref=f89e485]: AUG 2020
+                - generic [ref=f89e487]:
+                  - generic [ref=f89e488]: PACE 3
+                  - generic [ref=f89e489]: SEP 2023
+                - generic [ref=f89e491]:
+                  - generic [ref=f89e492]: PACE 4
+                  - generic [ref=f89e493]: NOV 2025
+          - generic [ref=f89e530]:
+            - generic [ref=f89e531]:
+              - heading "HELP ME CHOOSE" [level=2] [ref=f89e532]
+              - paragraph [ref=f89e533]: Which watch is right for you?
+            - table [ref=f89e536]:
+              - rowgroup [ref=f89e537]:
+                - row [ref=f89e538]:
+                  - columnheader [ref=f89e539]
+                  - columnheader "COROS PACE" [ref=f89e540]:
+                    - generic [ref=f89e541]:
+                      - figure [ref=f89e544]
+                      - generic [ref=f89e546]: COROS PACE
+                  - columnheader "COROS NOMAD" [ref=f89e547]:
+                    - generic [ref=f89e548]:
+                      - figure [ref=f89e551]
+                      - generic [ref=f89e553]: COROS NOMAD
+                  - columnheader "COROS APEX" [ref=f89e554]:
+                    - generic [ref=f89e555]:
+                      - figure [ref=f89e558]
+                      - generic [ref=f89e560]: COROS APEX
+                  - columnheader "COROS VERTIX" [ref=f89e561]:
+                    - generic [ref=f89e562]:
+                      - figure [ref=f89e565]
+                      - generic [ref=f89e567]: COROS VERTIX
+              - rowgroup [ref=f89e568]:
+                - row [ref=f89e569]:
+                  - cell "What You Do" [ref=f89e570]
+                  - cell "Road running, track intervals, triathlons, and racing." [ref=f89e571]
+                  - cell "Multi-day hikes, off-grid adventures, fishing trips, and outdoor journaling." [ref=f89e573]
+                  - cell "Trail running, ski touring, alpine climbing, and steep vertical training." [ref=f89e575]
+                  - cell "Ultramarathons, mountaineering, big expeditions." [ref=f89e577]
+                - row [ref=f89e579]:
+                  - cell "Who You Are" [ref=f89e580]
+                  - cell "A runner, triathlete, or cyclist chasing speed and simplicity." [ref=f89e581]
+                  - cell "A weekend warrior who thrives off the grid—fishing, hiking, camping." [ref=f89e583]
+                  - cell "A mountain athlete training with purpose and precision." [ref=f89e585]
+                  - cell "An ultra-endurance athlete who needs a watch that goes the distance, and further." [ref=f89e587]
+                - row [ref=f89e589]:
+                  - cell "Built For" [ref=f89e590]
+                  - cell "Lightweight feel, GPS accuracy, high-performance, daily wear, and voice powered training tools." [ref=f89e591]
+                  - cell "Rugged design, environmental awareness, and a mic for Voice Pins." [ref=f89e593]
+                  - cell "Titanium bezel, sapphire glass, speaker + mic, climbing carabiner." [ref=f89e595]
+                  - cell "Full-metal case, best-in-class battery, extreme weather durability." [ref=f89e597]
+                - row [ref=f89e599]:
+                  - cell "Made to Support" [ref=f89e600]
+                  - cell "Fast workouts, structured road/triathlon training, running specific features." [ref=f89e601]
+                  - cell "Journal your trips, log Voice Pins, revisit routes and moments." [ref=f89e603]
+                  - cell "Climb, ski and trail running, route planning, and performance tracking." [ref=f89e605]
+                  - cell "Ultra-marathon specific training, multi-day (or week) projects, massive battery life, expedition planning." [ref=f89e607]
+          - generic [ref=f89e609]:
+            - figure [ref=f89e611]
+            - generic [ref=f89e613]:
+              - heading "What's in the box" [level=2] [ref=f89e614]
+              - generic [ref=f89e615]: "*USB-C charging cable not included."
+          - generic [ref=f89e618]:
+            - text: All battery claims depend on feature usage such as music, backlight, navigation, and many other factors; actual results will vary. Lithium-ion batteries have limited recharge cycles and may show degradation over time. Battery life and charge cycles vary by use and settings. View our
+            - link "Battery Specifications" [ref=f89e619] [cursor=pointer]:
+              - /url: https://support.coros.com/hc/en-us/articles/23476623096980-Battery-Specifications
+            - text: for more detailed information.
+    - contentinfo [ref=f89e620]:
+      - figure [ref=f89e622]
+      - generic [ref=f89e624]:
+        - navigation "footer links" [ref=f89e625]:
+          - generic [ref=f89e626]:
+            - heading "HARDWARE" [level=2] [ref=f89e628]
+            - list [ref=f89e629]:
+              - listitem [ref=f89e630]:
+                - link "All Products" [ref=f89e631] [cursor=pointer]:
+                  - /url: /products
+              - listitem [ref=f89e632]:
+                - link "COROS PACE 4 Pro" [ref=f89e633] [cursor=pointer]:
+                  - /url: /pace4pro
+              - listitem [ref=f89e634]:
+                - link "COROS PACE 4" [ref=f89e635] [cursor=pointer]:
+                  - /url: /pace4
+              - listitem [ref=f89e636]:
+                - link "COROS APEX 4" [ref=f89e637] [cursor=pointer]:
+                  - /url: /apex4
+              - listitem [ref=f89e638]:
+                - link "COROS NOMAD" [ref=f89e639] [cursor=pointer]:
+                  - /url: /nomad
+              - listitem [ref=f89e640]:
+                - link "COROS VERTIX 2S" [ref=f89e641] [cursor=pointer]:
+                  - /url: /vertix2s
+              - listitem [ref=f89e642]:
+                - link "COROS APEX 2/2 Pro" [ref=f89e643] [cursor=pointer]:
+                  - /url: /apex2
+              - listitem [ref=f89e644]:
+                - link "COROS HR Monitor" [ref=f89e645] [cursor=pointer]:
+                  - /url: /heart-rate-monitor
+              - listitem [ref=f89e646]:
+                - link "COROS DURA" [ref=f89e647] [cursor=pointer]:
+                  - /url: /dura
+              - listitem [ref=f89e648]:
+                - link "COROS HYDROP" [ref=f89e649] [cursor=pointer]:
+                  - /url: /product/hydrop
+              - listitem [ref=f89e650]:
+                - link "COROS POD 2" [ref=f89e651] [cursor=pointer]:
+                  - /url: /coros-pod2
+          - generic [ref=f89e652]:
+            - heading "SOFTWARE" [level=2] [ref=f89e654]
+            - list [ref=f89e655]:
+              - listitem [ref=f89e656]:
+                - link "TRAINING HUB" [ref=f89e657] [cursor=pointer]:
+                  - /url: /traininghub
+              - listitem [ref=f89e658]:
+                - link "Coaching Solutions" [ref=f89e659] [cursor=pointer]:
+                  - /url: /coaches
+              - listitem [ref=f89e660]:
+                - link "Download the COROS App" [ref=f89e661] [cursor=pointer]:
+                  - /url: /getapp
+              - listitem [ref=f89e662]:
+                - link "Latest Software Updates" [ref=f89e663] [cursor=pointer]:
+                  - /url: https://support.coros.com/hc/en-us/categories/4416357319956-Updates-and-Release-Notes
+          - generic [ref=f89e664]:
+            - heading "Program" [level=2] [ref=f89e666]
+            - list [ref=f89e667]:
+              - listitem [ref=f89e668]:
+                - link "Trade-in Program" [ref=f89e669] [cursor=pointer]:
+                  - /url: /trade-in
+              - listitem [ref=f89e670]:
+                - link "Refurbished Products" [ref=f89e671] [cursor=pointer]:
+                  - /url: /refurbished
+              - listitem [ref=f89e672]:
+                - link "Pay with HSA/FSA" [ref=f89e673] [cursor=pointer]:
+                  - /url: https://coros.com/us/stories/latest-news/c/coros-partners-with-truemed-for-easy-hsa-fsa-payments
+              - listitem [ref=f89e674]:
+                - link "For Students" [ref=f89e675] [cursor=pointer]:
+                  - /url: https://coros.com/us/stories/latest-news/c/student-beans
+              - listitem [ref=f89e676]:
+                - link "For Industry Partners" [ref=f89e677] [cursor=pointer]:
+                  - /url: https://coros.com/us/stories/latest-news/c/ipa-collective
+          - generic [ref=f89e678]:
+            - heading "Support" [level=2] [ref=f89e680]
+            - list [ref=f89e681]:
+              - listitem [ref=f89e682]:
+                - link "Help Center" [ref=f89e683] [cursor=pointer]:
+                  - /url: https://support.coros.com/hc/en-us
+              - listitem [ref=f89e684]:
+                - link "Maps" [ref=f89e685] [cursor=pointer]:
+                  - /url: /maps
+              - listitem [ref=f89e686]:
+                - link "Warranty" [ref=f89e687] [cursor=pointer]:
+                  - /url: https://support.coros.com/hc/en-us/articles/360039803532-COROS-Warranty-Policy
+              - listitem [ref=f89e688]:
+                - link "Shipping & Returns" [ref=f89e689] [cursor=pointer]:
+                  - /url: https://support.coros.com/hc/en-us/articles/360039803092-Order-from-us-coros-com-or-coros-com-us
+              - listitem [ref=f89e690]:
+                - link "Repair Service" [ref=f89e691] [cursor=pointer]:
+                  - /url: https://support.coros.com/hc/en-us/articles/14167788654740-COROS-Repair-Service
+              - listitem [ref=f89e692]:
+                - link "Vulnerability Reporting" [ref=f89e693] [cursor=pointer]:
+                  - /url: /report-vulnerability
+          - generic [ref=f89e694]:
+            - heading "COMPANY" [level=2] [ref=f89e696]
+            - list [ref=f89e697]:
+              - listitem [ref=f89e698]:
+                - link "About Us" [ref=f89e699] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=f89e700]:
+                - link "Contact" [ref=f89e701] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=f89e702]:
+                - link "Stories" [ref=f89e703] [cursor=pointer]:
+                  - /url: /stories
+              - listitem [ref=f89e704]:
+                - link "Careers" [ref=f89e705] [cursor=pointer]:
+                  - /url: /careers
+              - listitem [ref=f89e706]:
+                - link "Find a Store" [ref=f89e707] [cursor=pointer]:
+                  - /url: /retail
+              - listitem [ref=f89e708]:
+                - link "Retailer Login" [ref=f89e709] [cursor=pointer]:
+                  - /url: https://salesorder.coros.team:2970/login?location=us
+              - listitem [ref=f89e710]:
+                - link "Retailer Application" [ref=f89e711] [cursor=pointer]:
+                  - /url: /retailer-application
+        - list [ref=f89e713]:
+          - listitem [ref=f89e714]:
+            - link "Instagram" [ref=f89e715] [cursor=pointer]:
+              - /url: https://www.instagram.com/corosglobal
+          - listitem [ref=f89e720]:
+            - link "Facebook" [ref=f89e721] [cursor=pointer]:
+              - /url: https://www.facebook.com/corosglobal
+          - listitem [ref=f89e725]:
+            - link "TikTok" [ref=f89e726] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@corosglobal
+          - listitem [ref=f89e730]:
+            - link "Youtube" [ref=f89e731] [cursor=pointer]:
+              - /url: https://www.youtube.com/corosglobal
+          - listitem [ref=f89e736]:
+            - link "Linkedin" [ref=f89e737] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/coros-wearables-inc.
+      - generic [ref=f89e743]:
+        - button "United States (English)" [ref=f89e745] [cursor=pointer]
+        - generic [ref=f89e746]: © 2026 | COROS Wearables, Inc.
+        - generic [ref=f89e747]:
+          - link "Terms & Conditions" [ref=f89e749] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=f89e751] [cursor=pointer]:
+            - /url: /privacy
+          - button "Cookie Settings" [ref=f89e753] [cursor=pointer]
+          - link "Site Map" [ref=f89e755] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Privacy Rights Center" [ref=f89e757] [cursor=pointer]:
+            - /url: /privacy-rights-center
+          - link "Accessibility Statement" [ref=f89e759] [cursor=pointer]:
+            - /url: /accessibility
+      - button "Back to Top" [ref=f89e760] [cursor=pointer]
+  - dialog "cookieConsent.title" [ref=f89e764]:
+    - generic [ref=f89e765]:
+      - paragraph [ref=f89e767]:
+        - text: This website uses cookies (including third-party cookies as well as other tracking technologies) to make our site work, for marketing purposes and to improve your online experience. We won't set optional cookies unless you enable them. You can change your cookie settings at any time. Further information can be found in our
+        - link "Privacy Policy" [ref=f89e768] [cursor=pointer]:
+          - /url: privacy
+        - text: and
+        - link "Terms of Service" [ref=f89e769] [cursor=pointer]:
+          - /url: terms
+        - text: .
+      - generic [ref=f89e771]:
+        - button "Accept All" [ref=f89e772] [cursor=pointer]
+        - button "Reject All" [ref=f89e773] [cursor=pointer]

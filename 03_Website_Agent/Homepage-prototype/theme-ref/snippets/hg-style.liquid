@@ -1,0 +1,37 @@
+{% doc %}
+  Extra stijlinstellingen per sectie: knopkleuren, hoekafronding, kopkleur en tekstuitlijning.
+  @param {object} s - section.settings
+  @param {string} section_id - section.id
+  @param {string} cls - rootklasse van de sectie (zk, hgc of spf)
+  Tweede knop (--ghost / --alt) heeft eigen kleuren via button2_bg, button2_fg en button2_border.
+{% enddoc %}
+{%- assign sel = '#shopify-section-' | append: section_id -%}
+<style>
+{%- if s.text_align == 'center' or s.text_align == 'right' or s.text_align == 'left' -%}
+  {{ sel }} .{{ cls }} { text-align: {{ s.text_align }}; }
+  {{ sel }} .{{ cls }} [class*="lead"], {{ sel }} .{{ cls }} [class*="__sub"], {{ sel }} .{{ cls }} [class*="refs"] {
+    {% if s.text_align == 'center' %}margin-inline: auto;{% elsif s.text_align == 'right' %}margin-left: auto;{% endif %}
+  }
+  {{ sel }} .{{ cls }} [class*="cta"], {{ sel }} .{{ cls }} [class*="actions"], {{ sel }} .{{ cls }} [class*="__head"] {
+    {% if s.text_align == 'center' %}justify-content: center; justify-items: center;{% elsif s.text_align == 'right' %}justify-content: flex-end; justify-items: end;{% endif %}
+  }
+{%- endif -%}
+{%- if s.heading_color != blank -%}
+  {{ sel }} .{{ cls }} :is(h1, h2, h3) { color: {{ s.heading_color }}; }
+{%- endif -%}
+{%- if s.button_bg != blank or s.button_fg != blank or s.button_border != blank or s.button_radius != blank -%}
+  {{ sel }} .{{ cls }}__pill {
+    {% if s.button_bg != blank %}background: {{ s.button_bg }} !important;{% endif %}
+    {% if s.button_fg != blank %}color: {{ s.button_fg }} !important;{% endif %}
+    {% if s.button_border != blank %}border-color: {{ s.button_border }} !important;{% endif %}
+    {% if s.button_radius != blank %}border-radius: {{ s.button_radius }}px !important;{% endif %}
+  }
+{%- endif -%}
+{%- if s.button2_bg != blank or s.button2_fg != blank or s.button2_border != blank -%}
+  {{ sel }} .{{ cls }}__pill--ghost, {{ sel }} .{{ cls }}__pill--alt {
+    {% if s.button2_bg != blank %}background: {{ s.button2_bg }} !important;{% endif %}
+    {% if s.button2_fg != blank %}color: {{ s.button2_fg }} !important;{% endif %}
+    {% if s.button2_border != blank %}border-color: {{ s.button2_border }} !important;{% endif %}
+  }
+{%- endif -%}
+</style>

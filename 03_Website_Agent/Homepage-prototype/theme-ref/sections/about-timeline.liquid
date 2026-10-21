@@ -1,0 +1,448 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign n = section.blocks.size
+  assign nm = n | minus: 1
+-%}
+<section class="ab ab-tl-sec ab-pad" data-ab="timeline" data-anim="{{ s.animate }}" aria-label="Tijdlijn" style="{% render 'about-vars', s: s %}">
+  <div class="ab-wrap">
+    <{{ tag }} class="ab-h">{%- if s.line_1 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_1_align, m: s.line_1_align_m %}>{{ s.line_1 }} </span>{%- endif -%}{%- if s.line_2 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_2_align, m: s.line_2_align_m %}>{{ s.line_2 }} </span>{%- endif -%}</{{ tag }}>
+    <div class="ab-tl" style="--ab-n:{{ n }};--ab-tc1:{{ s.line_color_1 }};--ab-tc2:{{ s.line_color_2 }};--ab-tc3:{{ s.line_color_3 }};">
+      <span class="ab-tl__bar" aria-hidden="true"></span>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          if nm > 0
+            assign f = forloop.index0 | times: 100 | divided_by: nm
+          else
+            assign f = 0
+          endif
+          assign tone = 1
+          if f >= 100
+            assign tone = 3
+          elsif f >= 50
+            assign tone = 2
+          endif
+        -%}
+        <div class="ab-ms" data-tone="{{ tone }}"{% render 'about-ta', d: block.settings.title_align, m: block.settings.title_align_m %} {{ block.shopify_attributes }}>
+          <time {% render 'about-ta', d: block.settings.date_align, m: block.settings.date_align_m %}>{{ block.settings.date | escape }}</time>
+          <b>{{ block.settings.title | escape }}</b>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Tijdlijn",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_1",
+      "label": "Kop regel 1",
+      "default": "Van projectgroep"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align",
+      "label": "Regel 1 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align_m",
+      "label": "Regel 1 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_2",
+      "label": "Kop regel 2",
+      "default": "naar <em>3000+ sporters.</em>",
+      "info": "Zet woorden tussen <em>…</em> voor de accentkleur."
+    },
+    {
+      "type": "select",
+      "id": "line_2_align",
+      "label": "Regel 2 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align_m",
+      "label": "Regel 2 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 90,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 32,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Voortgangslijn"
+    },
+    {
+      "type": "color",
+      "id": "line_color_1",
+      "label": "Lijnkleur begin",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "color",
+      "id": "line_color_2",
+      "label": "Lijnkleur midden",
+      "default": "#FF6A00"
+    },
+    {
+      "type": "color",
+      "id": "line_color_3",
+      "label": "Lijnkleur eind",
+      "default": "#E10600"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "milestone",
+      "name": "Mijlpaal",
+      "settings": [
+        {
+          "type": "text",
+          "id": "date",
+          "label": "Datum",
+          "default": "Dec 2024"
+        },
+        {
+          "type": "select",
+          "id": "date_align",
+          "label": "Datum uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "date_align_m",
+          "label": "Datum uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Oprichting op RBS"
+        },
+        {
+          "type": "select",
+          "id": "title_align",
+          "label": "Titel uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "title_align_m",
+          "label": "Titel uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Over ons: Tijdlijn",
+      "blocks": [
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Dec 2024",
+            "title": "Oprichting op RBS"
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Feb 2025",
+            "title": "Pre-order"
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Mei 2025",
+            "title": "Lancering"
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Sep 2025",
+            "title": "5+ B2B-partners"
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Mei 2026",
+            "title": "3000+ sporters"
+          }
+        },
+        {
+          "type": "milestone",
+          "settings": {
+            "date": "Aug 2026",
+            "title": "Grip Socks 2.0"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

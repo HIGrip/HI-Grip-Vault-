@@ -1,0 +1,11 @@
+/* HÏ Grip — actieprijs-styling (product-tegels + productpagina)
+   Vergelijkingsprijs klein en gedempt doorgestreept, echte prijs groter en in Performance Rood. */
+.price-item__group.compare-at-price {
+  font-size: 0.82em;
+  margin-inline: 0.35em;
+}
+.price-item__group.price {
+  color: #e10600;
+  font-size: 1.15em;
+  font-weight: 800;
+}

@@ -1,0 +1,231 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="vg2">
+<section class="sec{% if s.custom_pad %} vg2-pad{% endif %}" aria-labelledby="end-titel" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="wrap">
+      <h2 class="xh2 end__head rv" id="end-titel">{{ s.t1 | escape }} <em>{{ s.t2 | escape }}</em></h2>
+      <div class="duo">
+        <a class="dc rv" href="{{ s.url3 | default: "https://www.higrip.nl/products/performance-gripsokken" }}">
+          <div class="dc__img"><img src="{%- if s.ima4 != blank -%}{{ s.ima4 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-10.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t5 | escape }}" loading="lazy"></div>
+          <div class="dc__txt"><b>{{ s.t6 | escape }}</b><span>{{ s.t7 | escape }}</span><span class="dc__go">{{ s.t8 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></div>
+        </a>
+        <a class="dc dc--20 rv d1" data-link-20 href="{{ s.url9 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">
+          <div class="dc__img"><img data-img-20b src="{%- if s.ima10 != blank -%}{{ s.ima10 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-20-zwart.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t11 | escape }}" loading="lazy"></div>
+          <div class="dc__txt"><b>{{ s.t12 | escape }}</b><span>{{ s.t13 | escape }}</span><span class="dc__go">{{ s.t14 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></div>
+        </a>
+      </div>
+      <ul class="proofbar" aria-label="Waarom HÏ Grip">
+        <li><b class="num">{{ s.t15 | escape }}</b><span>{{ s.t16 | escape }}</span></li>
+        <li><a href="{{ s.url17 | default: "https://nl.trustpilot.com/review/higrip.nl" }}"><b class="num">{{ s.t18 | escape }}</b><span><span class="stars" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.6 4.6L18.5 21 12 16.8 5.5 21l2.1-7.4L2 9h7z"/></svg><svg viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.6 4.6L18.5 21 12 16.8 5.5 21l2.1-7.4L2 9h7z"/></svg><svg viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.6 4.6L18.5 21 12 16.8 5.5 21l2.1-7.4L2 9h7z"/></svg><svg viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.6 4.6L18.5 21 12 16.8 5.5 21l2.1-7.4L2 9h7z"/></svg><svg viewbox="0 0 24 24"><path d="M12 2l3 7h7l-5.6 4.6L18.5 21 12 16.8 5.5 21l2.1-7.4L2 9h7z"/></svg></span> {{ s.t19 | escape }}</span></a></li>
+        <li><b class="num">{{ s.t20 | escape }}</b><span>{{ s.t21 | escape }}</span></li>
+        <li><b class="num">{{ s.t22 | escape }}</b><span>{{ s.t23 | escape }}</span></li>
+      </ul>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Slot",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "H2 · Kies je",
+      "default": "Kies je"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "EM · grip.",
+      "default": "grip."
+    },
+    {
+      "type": "url",
+      "id": "url3",
+      "label": "Link · /products/performance-gripsokken"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima4",
+      "label": "Afbeelding · sok-10.webp"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "Alt-tekst · Performance Gripsokken 1.0",
+      "default": "Performance Gripsokken 1.0"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "B · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "SPAN · Prijsvriendelijk · €14,95",
+      "default": "Prijsvriendelijk · €14,95"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "SPAN · Shop 1.0",
+      "default": "Shop 1.0"
+    },
+    {
+      "type": "url",
+      "id": "url9",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima10",
+      "label": "Afbeelding · sok-20-zwart.webp"
+    },
+    {
+      "type": "text",
+      "id": "t11",
+      "label": "Alt-tekst · Performance Gripsokken 2.0",
+      "default": "Performance Gripsokken 2.0"
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "B · 2.0",
+      "default": "2.0"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "SPAN · Ultieme performance · €17,95",
+      "default": "Ultieme performance · €17,95"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "label": "SPAN · Shop 2.0",
+      "default": "Shop 2.0"
+    },
+    {
+      "type": "text",
+      "id": "t15",
+      "label": "B · 3.500+",
+      "default": "3.500+"
+    },
+    {
+      "type": "text",
+      "id": "t16",
+      "label": "SPAN · sporters gingen je voor",
+      "default": "sporters gingen je voor"
+    },
+    {
+      "type": "url",
+      "id": "url17",
+      "label": "Link · https://nl.trustpilot.com/review/higrip.nl"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "label": "B · 4,6",
+      "default": "4,6"
+    },
+    {
+      "type": "text",
+      "id": "t19",
+      "label": "SPAN · op Trustpilot",
+      "default": "op Trustpilot"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "label": "B · €35",
+      "default": "€35"
+    },
+    {
+      "type": "text",
+      "id": "t21",
+      "label": "SPAN · gratis verzending vanaf",
+      "default": "gratis verzending vanaf"
+    },
+    {
+      "type": "text",
+      "id": "t22",
+      "label": "B · 30 dagen",
+      "default": "30 dagen"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "label": "SPAN · retour, past het niet, stuur het terug",
+      "default": "retour, past het niet, stuur het terug"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Slot"
+    }
+  ]
+}
+{% endschema %}

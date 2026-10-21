@@ -1,0 +1,60 @@
+{{ 'hg-contact.css' | asset_url | stylesheet_tag }}
+{%- assign s = section.settings -%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'hgc' %}
+<section
+  class="hgc hgc-help"
+  style="
+    {% if s.bg_color != blank %}--c-bg:{{ s.bg_color }};{% endif %}
+    {% if s.text_color != blank %}--c-fg:{{ s.text_color }};{% endif %}
+    {% if s.accent_color != blank %}--c-accent:{{ s.accent_color }};{% endif %}
+    --c-pt:{{ s.padding_top }}px;--c-pb:{{ s.padding_bottom }}px;--c-pt-m:{{ s.padding_top_mobile }}px;--c-pb-m:{{ s.padding_bottom_mobile }}px;
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="hgc__wrap">
+    <div class="hgc-help__row">
+      <p class="hgc-help__q">{{ s.question }}{% if s.answer != blank %} <span>{{ s.answer }}</span>{% endif %}</p>
+      {%- if s.button_label != blank and s.button_link != blank -%}
+        <a class="hgc__pill hgc__pill--ghost hgc__pill--sm" href="{{ s.button_link }}">
+          {{- s.button_label -}}
+          <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>
+        </a>
+      {%- endif -%}
+    </div>
+    {%- if s.company != blank or s.address != blank -%}
+      <div class="hgc-help__biz">
+        {%- if s.company != blank -%}<span><b>{{ s.company }}</b></span>{%- endif -%}
+        {%- if s.address != blank -%}<span>{{ s.address }}</span>{%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact: Hulp en gegevens",
+  "settings": [
+    { "type": "text", "id": "question", "label": "Vraag", "default": "Verzending, retour of maten?" },
+    { "type": "text", "id": "answer", "label": "Antwoord eronder", "default": "Het antwoord staat waarschijnlijk al in de FAQ." },
+    { "type": "text", "id": "button_label", "label": "Knop: tekst", "default": "Naar de FAQ" },
+    { "type": "url", "id": "button_link", "label": "Knop: link" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "text", "id": "company", "label": "Bedrijfsnaam", "default": "HÏ Grip" },
+    { "type": "text", "id": "address", "label": "Adres", "default": "IJsseldijk-Noord 48, 2935 BH Ouderkerk aan den IJssel" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur", "default": "#ccff00" },
+    { "type": "header", "content": "Ruimte" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 40 }
+  ],
+  "presets": [ { "name": "Contact: Hulp en gegevens" } ]
+}
+{% endschema %}

@@ -1,0 +1,351 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [active] [ref=f20e1]:
+  - alertdialog [ref=f20e2]:
+    - generic [ref=f20e3]:
+      - generic [ref=f20e4]:
+        - heading "Cookietoestemming" [level=2] [ref=f20e5]
+        - paragraph [ref=f20e6]:
+          - text: Wij en onze partners, waaronder Shopify, gebruiken cookies en andere technologieën om jouw ervaring te personaliseren, advertenties te tonen en analyses uit te voeren. We zullen deze cookies of technologieën pas voor deze doeleinden gebruiken nadat je hiermee hebt ingestemd. Bekijk voor meer informatie ons
+          - link "Privacybeleid" [ref=f20e7] [cursor=pointer]:
+            - /url: http://www.higrip.nl/policies/privacy-policy
+      - generic [ref=f20e8]:
+        - button "Voorkeuren beheren" [ref=f20e9]
+        - button "Accepteren" [ref=f20e10]
+        - button "Afwijzen" [ref=f20e11]
+  - link "Ga direct naar de content" [ref=f20e12] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f20e13]:
+    - generic [ref=f20e14]:
+      - banner [ref=f20e15]:
+        - generic [ref=f20e19]:
+          - navigation "Primair" [ref=f20e23]:
+            - list [ref=f20e25]:
+              - generic:
+                - listitem [ref=f20e26]:
+                  - link "HOME" [ref=f20e27] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f20e29]:
+                  - link "SHOP" [ref=f20e30] [cursor=pointer]:
+                    - /url: /collections/gripsokken
+                - listitem [ref=f20e32]:
+                  - link "OVER ONS" [ref=f20e33] [cursor=pointer]:
+                    - /url: /pages/over-ons
+                - listitem [ref=f20e35]:
+                  - link "ZAKELIJK" [ref=f20e36] [cursor=pointer]:
+                    - /url: /pages/zakelijk
+                - listitem [ref=f20e38]:
+                  - link "BLOGS" [ref=f20e39] [cursor=pointer]:
+                    - /url: /pages/blogs
+          - link [ref=f20e42] [cursor=pointer]:
+            - /url: /
+            - img "HÏ Grip - Home" [ref=f20e44]
+          - generic [ref=f20e45]:
+            - form "Regio en taal" [ref=f20e48]:
+              - generic [ref=f20e49]:
+                - heading "Taal" [level=2] [ref=f20e50]
+                - combobox "Taal" [ref=f20e51] [cursor=pointer]:
+                  - option "Nederlands" [selected]
+                  - option "English"
+            - button "Zoeken" [ref=f20e53] [cursor=pointer]
+            - generic [ref=f20e54]:
+              - button "Account" [ref=f20e59] [cursor=pointer]
+              - button "Winkelwagen" [ref=f20e63] [cursor=pointer]
+              - status [ref=f20e67]
+      - complementary [ref=f20e70]:
+        - generic [ref=f20e71]:
+          - generic:
+            - button "Vorige dia" [ref=f20e72] [cursor=pointer]
+            - button "Volgende dia" [ref=f20e73] [cursor=pointer]
+          - generic [ref=f20e75]:
+            - paragraph [ref=f20e76]:
+              - strong [ref=f20e77]: GRATIS VERZENDING BOVEN DE €35
+            - link "GRATIS VERZENDING BOVEN DE €35" [ref=f20e78] [cursor=pointer]:
+              - /url: /collections/all
+    - main [ref=f20e80]:
+      - region [ref=f20e83]:
+        - generic [ref=f20e84]:
+          - img "Hardloper in witte HÏ Grip-gripsokken loopt over een fietspad tussen het groen, van achteren gezien" [ref=f20e86]
+          - heading "Een generatie die blijft gaan, blijft groeien." [level=1] [ref=f20e89]:
+            - generic [ref=f20e90]: Een generatie
+            - generic [ref=f20e91]: die blijft gaan,
+            - emphasis [ref=f20e93]: blijft groeien.
+      - region [ref=f20e96]:
+        - generic [ref=f20e97]:
+          - generic [ref=f20e98]:
+            - heading [level=2] [ref=f20e99]:
+              - text: Wat is de visie van
+              - emphasis [ref=f20e100]: HÏ Grip?
+            - paragraph [ref=f20e101]: De visie van HÏ Grip is dat het merk de komende tien jaar niet alleen groeit, maar de beweging versnelt naar een generatie die blijft gaan, blijft groeien en geen genoegen neemt met minder, als Nederlands sportmerk dat sporters verbindt door performance, innovatie en maatschappelijke impact.
+          - generic "Tijdlijn van de visie" [ref=f20e102]:
+            - generic [ref=f20e105]:
+              - time [ref=f20e106]: Nu
+              - generic [ref=f20e107]: Performance Grip Socks
+            - generic [ref=f20e108]:
+              - time [ref=f20e109]: Binnen 5 jaar
+              - generic [ref=f20e110]: Gewaardeerd in heel Europa
+            - generic [ref=f20e111]:
+              - time [ref=f20e112]: Over 10 jaar
+              - generic [ref=f20e113]: Sporters verbonden door performance
+      - region [ref=f20e116]:
+        - generic [ref=f20e117]:
+          - generic [ref=f20e118]:
+            - heading [level=2] [ref=f20e119]:
+              - text: Op welke pijlers bouwt de visie van
+              - emphasis [ref=f20e120]: HÏ Grip?
+            - paragraph [ref=f20e121]: "De visie van HÏ Grip rust op vier pijlers die bepalen hoe het merk groeit: sportswear als fundament onder presteren, maatschappelijke impact door sport, meervoudige waarde samen met partners, en een team en cultuur waarin eerlijkheid, innovatie en teamgeest centraal staan."
+          - list [ref=f20e122]:
+            - listitem [ref=f20e123]:
+              - paragraph [aria-hidden] [ref=f20e124]: Geloof Geloof
+              - generic [ref=f20e125]:
+                - heading "Ons geloof" [level=3] [ref=f20e126]
+                - paragraph [ref=f20e127]: "Sportswear moet het fundament zijn waarop iedere sporter kan bouwen om het maximale uit zichzelf te halen. Daarom ontwikkelen we sportswear die verder gaat dan wat er al is: technisch, comfortabel en innovatief, zodat sporters hun eigen grenzen kunnen verleggen."
+            - listitem [ref=f20e128]:
+              - paragraph [aria-hidden] [ref=f20e129]: Impact Impact
+              - generic [ref=f20e130]:
+                - heading "Maatschappelijke impact" [level=3] [ref=f20e131]
+                - paragraph [ref=f20e132]: We investeren in maatschappelijke sportinitiatieven. We willen kinderen, tieners en studenten verbinden door sport en bijdragen aan een toekomst waarin toegang tot sport, bewegen, presteren, vitaliteit en gezond leven vanzelfsprekend onderdeel zijn van het dagelijks leven.
+            - listitem [ref=f20e133]:
+              - paragraph [aria-hidden] [ref=f20e134]: Waarde Waarde
+              - generic [ref=f20e135]:
+                - heading "Meervoudige waarde" [level=3] [ref=f20e136]
+                - paragraph [ref=f20e137]: Team HÏ Grip creëert meervoudige waarde door verantwoord te produceren, transparant te communiceren en langdurige samenwerkingen op te bouwen met atleten, leveranciers, clubs, scholen en universiteiten.
+            - listitem [ref=f20e138]:
+              - paragraph [aria-hidden] [ref=f20e139]: Team Team
+              - generic [ref=f20e140]:
+                - heading "Team & cultuur" [level=3] [ref=f20e141]
+                - paragraph [ref=f20e142]: Binnen Team HÏ Grip bouwen we aan een veilige, hands-on cultuur waarin mensen zich verbonden voelen, verantwoordelijk initiatief nemen en samen vooruitgaan.
+      - region [ref=f20e145]:
+        - generic [ref=f20e146]:
+          - generic [ref=f20e147]:
+            - heading [level=2] [ref=f20e148]:
+              - text: Wat is de Performance Academy van
+              - emphasis [ref=f20e149]: HÏ Grip?
+            - paragraph [ref=f20e150]: De Performance Academy is de community van HÏ Grip die sporters verbindt door events, sportswear en maatschappelijke impact, waarin members als eerste toegang krijgen tot nieuwe drops, productlanceringen en acties, en straks ook tot eigen HÏ Grip-sportevents en een online workout-omgeving.
+          - generic [ref=f20e151]:
+            - figure [ref=f20e152]:
+              - img "Tennisser met racket en weerstandsbanden loopt over een gravelbaan, met witte HÏ Grip-gripsokken" [ref=f20e153]
+            - generic [ref=f20e154]:
+              - generic [ref=f20e155]:
+                - heading "Wanneer hoor je erbij?" [level=3] [ref=f20e156]
+                - list [ref=f20e157]:
+                  - listitem [ref=f20e158]:
+                    - generic [ref=f20e159]: Nieuwsbrief
+                    - generic [ref=f20e160]: Je staat ingeschreven voor de nieuwsbrief en krijgt zo de updates van HÏ Grip als eerste.
+                  - listitem [ref=f20e161]:
+                    - generic [ref=f20e162]: Productbezit
+                    - generic [ref=f20e163]: Je draagt HÏ Grip tijdens het sporten.
+              - generic [ref=f20e164]:
+                - heading "Wat levert het je op?" [level=3] [ref=f20e165]
+                - list [ref=f20e166]:
+                  - listitem [ref=f20e167]:
+                    - generic [ref=f20e168]: Verbinding
+                    - generic [ref=f20e169]: Gedreven sporters die elkaar herkennen en versterken.
+                  - listitem [ref=f20e170]:
+                    - generic [ref=f20e171]: Early access
+                    - generic [ref=f20e172]: Als eerste toegang tot nieuwe drops, productlanceringen en exclusieve acties.
+                  - listitem [ref=f20e173]:
+                    - generic [ref=f20e174]:
+                      - text: Events
+                      - generic [ref=f20e175]: Straks
+                    - generic [ref=f20e176]: Eigen sport- en community-events van HÏ Grip.
+                  - listitem [ref=f20e177]:
+                    - generic [ref=f20e178]:
+                      - text: Online workouts
+                      - generic [ref=f20e179]: Straks
+                    - generic [ref=f20e180]: Een online omgeving die je prestaties inhoudelijk ondersteunt.
+      - region "De ambitie van HÏ Grip voor de komende vijf jaar" [ref=f20e183]:
+        - paragraph [ref=f20e186]: Sterke producten, personalisatie, volle focus op innovatie en de Performance Academy maken ons binnen vijf jaar een gewaardeerd merk in heel Europa.
+      - region [ref=f20e190]:
+        - generic [ref=f20e191]:
+          - generic [ref=f20e192]:
+            - heading [level=2] [ref=f20e193]:
+              - text: Welke ambities heeft
+              - emphasis [ref=f20e194]: HÏ Grip?
+            - paragraph [ref=f20e195]: "HÏ Grip heeft vier ambities die de visie de komende jaren concreet maken en laten zien hoe het merk wil groeien: als community voor sporters, als partner van het onderwijs, als assortiment voor clubs en retail, en als innovator met een eigen R&D-team."
+          - generic [ref=f20e196]:
+            - article [ref=f20e197] [cursor=pointer]:
+              - heading "Performance Academy" [level=3] [ref=f20e198]
+              - paragraph [ref=f20e199]: Eigen HÏ Grip-sportevents, meebeslissen over nieuwe producten en toegang tot ons educatieve sportplatform met workouts en tips.
+            - article [ref=f20e200] [cursor=pointer]:
+              - heading "Onderwijs & impact" [level=3] [ref=f20e201]
+              - paragraph: "Samenwerken met universiteiten en onderwijsinstellingen: maatschappelijke impact en wetenschappelijk bewezen vooruitgang."
+            - article [ref=f20e202] [cursor=pointer]:
+              - heading "Kwaliteitsassortiment" [level=3] [ref=f20e203]
+              - paragraph: Hoogwaardig assortiment met de beste prijs-kwaliteitverhouding. Ook gepersonaliseerd voor clubs en beschikbaar bij de grootste retailers in Europa.
+            - article [ref=f20e204] [cursor=pointer]:
+              - heading "Eigen R&D-team" [level=3] [ref=f20e205]
+              - paragraph: Altijd de focus op innovatie en vernieuwing door ons eigen R&D-team, als onderdeel van de HÏ Grip Performance Campus, met kantoor, gym, magazijn en spa.
+      - region [ref=f20e208]:
+        - generic [ref=f20e209]:
+          - figure [ref=f20e210]:
+            - img "Voetballer in een zwart HÏ Grip-shirt en witte gripsokken neemt de bal mee op een kunstgrasveld" [ref=f20e211]
+          - generic [ref=f20e212]:
+            - generic [ref=f20e213]:
+              - heading [level=2] [ref=f20e214]:
+                - text: Wat betekent de visie van HÏ Grip
+                - emphasis [ref=f20e215]: voor jou?
+              - paragraph [ref=f20e216]: "Voor jou betekent de visie van HÏ Grip dat je sportswear met je meegroeit: vandaag met gripsokken voor je kernsport, binnenkort met Performance Tubes en de Performance Skisokken (ALPINE PRO), en via de Performance Academy met een community die je als eerste meeneemt in wat er komt."
+              - paragraph [ref=f20e217]: Speel je bij een club? HÏ Grip personaliseert ook voor sportclubs, zodat je hele team in dezelfde sokken staat.
+            - generic [ref=f20e218]:
+              - link "Shop gripsokken" [ref=f20e219] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken
+              - link "Gripsokken voor je club via HÏ Grip Zakelijk" [ref=f20e220] [cursor=pointer]:
+                - /url: https://www.higrip.nl/pages/zakelijk
+      - region "Afsluiting" [ref=f20e223]:
+        - generic [ref=f20e224]:
+          - paragraph [ref=f20e225]:
+            - generic [ref=f20e226]: Wie
+            - generic [ref=f20e228]: alles
+            - generic [ref=f20e230]: geeft,
+            - generic [ref=f20e232]: wordt
+            - generic [ref=f20e234]: zelf
+            - generic [ref=f20e236]: de
+            - emphasis [ref=f20e238]:
+              - generic [ref=f20e239]: grens.
+          - generic [ref=f20e241]:
+            - paragraph [ref=f20e242]:
+              - text: De visie is waar we naartoe gaan. Waar het vandaag begint, lees je in de missie. Benieuwd wie erachter zitten? Maak kennis met
+              - link "de founders van HÏ Grip op Over ons" [ref=f20e243] [cursor=pointer]:
+                - /url: https://www.higrip.nl/pages/over-ons
+              - text: .
+            - link "Lees de missie" [ref=f20e244] [cursor=pointer]:
+              - /url: https://www.higrip.nl/pages/onze-missie
+    - contentinfo [ref=f20e245]:
+      - generic [ref=f20e250]:
+        - generic [ref=f20e252]:
+          - heading [level=4] [ref=f20e254]:
+            - strong [ref=f20e255]: ALGEMEEN
+          - generic [ref=f20e258]:
+            - link "Algemene voorwaarden" [ref=f20e259] [cursor=pointer]:
+              - /url: /policies/terms-of-service
+            - link "Wettelijke kennisgeving" [ref=f20e260] [cursor=pointer]:
+              - /url: /policies/legal-notice
+            - link "Verzendbeleid" [ref=f20e261] [cursor=pointer]:
+              - /url: /pages/verzendbeleid
+            - link "Retourbeleid" [ref=f20e262] [cursor=pointer]:
+              - /url: /pages/retourbeleid
+            - link "Betalingsbeleid" [ref=f20e263] [cursor=pointer]:
+              - /url: /pages/terugbetalingsbeleid
+            - link "Privacybeleid" [ref=f20e264] [cursor=pointer]:
+              - /url: /pages/privacybeleid
+        - generic [ref=f20e266]:
+          - heading [level=4] [ref=f20e268]:
+            - strong [ref=f20e269]: HÏ GRIP
+          - generic [ref=f20e272]:
+            - link "Veelgestelde Vragen" [ref=f20e273] [cursor=pointer]:
+              - /url: /pages/veelgestelde-vragen
+            - link "Over Ons" [ref=f20e274] [cursor=pointer]:
+              - /url: /pages/over-ons
+            - link "Zakelijk" [ref=f20e275] [cursor=pointer]:
+              - /url: /pages/zakelijk
+            - link "Contact" [ref=f20e276] [cursor=pointer]:
+              - /url: /pages/contact
+            - link "Reviews" [ref=f20e277] [cursor=pointer]:
+              - /url: https://nl.trustpilot.com/review/higrip.nl
+            - link "Voordelen" [ref=f20e278] [cursor=pointer]:
+              - /url: /blogs/hi-grip/waarom-hi-grip-gripsokken
+        - generic [ref=f20e280]:
+          - heading [level=4] [ref=f20e282]:
+            - strong [ref=f20e283]: VOLG ONS
+          - paragraph [ref=f20e285]: "JOIN #TEAMHÏGRIP"
+          - generic [ref=f20e286]:
+            - link "Facebook" [ref=f20e288] [cursor=pointer]:
+              - /url: https://facebook.com/profile.php?id=61569860846565
+            - link "Instagram" [ref=f20e292] [cursor=pointer]:
+              - /url: https://instagram.com/higrip.nl
+            - link "Tiktok" [ref=f20e296] [cursor=pointer]:
+              - /url: https://tiktok.com/@higrip.nl
+            - link "Linkedin" [ref=f20e300] [cursor=pointer]:
+              - /url: https://linkedin.com/company/h%C3%AF-grip/about/
+          - generic [ref=f20e304]:
+            - paragraph [ref=f20e305]:
+              - link "info@higrip.nl" [ref=f20e306] [cursor=pointer]:
+                - /url: mailto:info@higrip.nl
+            - paragraph [ref=f20e307]:
+              - link "+31 6 24 56 65 47" [ref=f20e308] [cursor=pointer]:
+                - /url: mailto:info@higrip.nl
+            - paragraph [ref=f20e309]: "KVK: 97210129BTW: NL867952283B01"
+      - generic [ref=f20e313]:
+        - generic [ref=f20e317]:
+          - text: © 2026
+          - link "HÏ Grip" [ref=f20e318] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f20e319]:
+          - generic [ref=f20e320]: Betaalmethoden
+          - list [ref=f20e321]:
+            - listitem [ref=f20e322]:
+              - img "American Express" [ref=f20e323]
+            - listitem [ref=f20e328]:
+              - img "Apple Pay" [ref=f20e329]
+            - listitem [ref=f20e340]:
+              - img "Google Pay" [ref=f20e341]
+            - listitem [ref=f20e349]:
+              - img "iDEAL Wero" [ref=f20e350]
+            - listitem [ref=f20e365]:
+              - img "Klarna" [ref=f20e366]
+            - listitem [ref=f20e370]:
+              - img "Maestro" [ref=f20e371]
+            - listitem [ref=f20e377]:
+              - img "Mastercard" [ref=f20e378]
+            - listitem [ref=f20e385]:
+              - img "PayPal" [ref=f20e386]
+            - listitem [ref=f20e392]:
+              - img "Union Pay" [ref=f20e393]
+            - listitem [ref=f20e399]:
+              - img "Visa" [ref=f20e400]
+  - dialog [aria-hidden] [ref=f20e405]:
+    - generic [ref=f20e406]:
+      - heading [level=2] [ref=f20e415]: Jouw winkelwagen
+      - button [ref=f20e416] [cursor=pointer]
+    - generic [ref=f20e420]:
+      - heading [level=3] [ref=f20e421]: Je winkelwagen is nog leeg
+      - paragraph [ref=f20e422]: Bekijk onze Performance Gripsokken hieronder.
+    - link [ref=f20e425] [cursor=pointer]:
+      - /url: /collections/gripsokken
+      - text: Bekijk producten
+  - iframe [ref=f20e427]:
+    - generic [ref=f21e4]:
+      - button [ref=f21e7] [cursor=pointer]
+      - generic [ref=f21e15]:
+        - generic [ref=f21e18]:
+          - link [ref=f21e19] [cursor=pointer]:
+            - /url: https://admin.shopify.com/store/raqds3-tb
+            - img "Logo" [ref=f21e20]
+          - generic [ref=f21e22]:
+            - generic [ref=f21e23]: AI website workspace 2.0
+            - generic [ref=f21e24]: Draft
+        - generic [ref=f21e26]:
+          - button "Hide bar" [ref=f21e28] [cursor=pointer]
+          - button "Exit preview" [ref=f21e31] [cursor=pointer]
+          - button "Copy link" [ref=f21e35] [cursor=pointer]

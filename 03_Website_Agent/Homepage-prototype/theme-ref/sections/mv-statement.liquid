@@ -1,0 +1,227 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add('mv-js');</script>
+<section class="mv-st mv-band-black{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="statement" aria-label="Statement" {% render 'mv-attrs', s: s %} style="{% render 'mv-vars', s: s %}">
+  <div class="mv-st__stick">
+    <div class="mv-speedbg" aria-hidden="true"><i data-s="2.4" style="top:14%;width:34%"></i><i data-s="3.2" style="top:24%;width:22%"></i><i data-s="1.8" style="top:38%;width:46%"></i><i data-s="3.8" style="top:52%;width:28%"></i><i data-s="3.0" style="top:63%;width:40%"></i><i data-s="2.2" style="top:74%;width:18%"></i><i data-s="3.6" style="top:84%;width:30%"></i><i data-s="4.4" style="top:31%;width:26%"></i><i data-s="4.0" style="top:46%;width:36%"></i><i data-s="2.8" style="top:69%;width:24%"></i></div>
+    <div class="mv-wrap">
+      <p class="mv-st__text" data-reveal{% render 'mv-ta', d: s.tekst_align, m: s.tekst_align_m %}>{{ s.tekst }}</p>
+    </div>
+    <div class="mv-st__bar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+</div>
+{% schema %}
+{
+  "name": "Missie: Statement",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "tekst",
+      "label": "Tekst",
+      "default": "Wie alles geeft, <em>verliest</em> nooit.",
+      "info": "Woorden tussen <em>…</em> krijgen de accentkleur. Alle woorden lichten één voor één op bij scrollen."
+    },
+    {
+      "type": "select",
+      "id": "tekst_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "tekst_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Alles uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Alles uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "scroll_length",
+      "label": "Scrolllengte desktop",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "default": 230,
+      "unit": "vh"
+    },
+    {
+      "type": "range",
+      "id": "scroll_length_mobile",
+      "label": "Scrolllengte mobiel",
+      "min": 100,
+      "max": 400,
+      "step": 10,
+      "default": 150,
+      "unit": "vh"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Missie: Statement"
+    }
+  ]
+}
+{% endschema %}

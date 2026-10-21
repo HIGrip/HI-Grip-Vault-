@@ -1,0 +1,170 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="vg2">
+<section class="dark sec{% if s.custom_pad %} vg2-pad{% endif %}" aria-labelledby="proof-titel" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="wrap proof">
+      <div class="rv">
+        <div class="meter" data-meter role="img" aria-label="Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17">
+          <div class="meter__r"><div class="meter__l"><span>{{ s.t1 | escape }}</span><b class="num">{{ s.t2 | escape }}</b></div><div class="track"><i style="--v:.60"></i></div></div>
+          <div class="meter__r meter__r--hi"><div class="meter__l"><span>{{ s.t3 | escape }}</span><b class="num">{{ s.t4 | escape }}</b></div><div class="track"><i style="--v:1.17"></i></div></div>
+        </div>
+      </div>
+      <div class="proof__txt rv d1">
+        <h2 class="xh2" id="proof-titel">{{ s.t5 | escape }} <em>{{ s.t6 | escape }}</em></h2>
+        <p class="proof__claim">{{ s.t7 | escape }}</p>
+        <p class="lead">{{ s.t8 | escape }}</p>
+        <p class="src">{{ s.t9 | escape }} <i>{{ s.t10 | escape }}</i> {{ s.t11 | escape }} <a href="{{ s.url12 | default: "https://doi.org/10.1080/02640414.2022.2080163" }}">{{ s.t13 | escape }}</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Bewijs",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "SPAN · Gewone sok",
+      "default": "Gewone sok"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "B · 0,60",
+      "default": "0,60"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "SPAN · Gripsok · 1.0 én 2.0",
+      "default": "Gripsok · 1.0 én 2.0"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "B · 1,17",
+      "default": "1,17"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "H2 · Gewone sok?",
+      "default": "Gewone sok?"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "EM · Geen wedstrijd.",
+      "default": "Geen wedstrijd."
+    },
+    {
+      "type": "textarea",
+      "id": "t7",
+      "label": "P · Wetenschappelijk aangetoond: gripsokken verh",
+      "default": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)."
+    },
+    {
+      "type": "textarea",
+      "id": "t8",
+      "label": "P · Sporters met gripsokken waren ook sneller op",
+      "default": "Sporters met gripsokken waren ook sneller op een slalomparcours en hun voorvoet schoof minder bij afremmen. Dat geldt voor allebei: het zijn gripsokken."
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "P · Bron: Apps et al. (2022),",
+      "default": "Bron: Apps et al. (2022),"
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "label": "I · Journal of Sports Sciences",
+      "default": "Journal of Sports Sciences"
+    },
+    {
+      "type": "text",
+      "id": "t11",
+      "label": "P · 40(12) ·",
+      "default": "40(12) ·"
+    },
+    {
+      "type": "url",
+      "id": "url12",
+      "label": "Link · https://doi.org/10.1080/02640414.2022.208016"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "A · doi 10.1080/02640414.2022.2080163",
+      "default": "doi 10.1080/02640414.2022.2080163"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Bewijs"
+    }
+  ]
+}
+{% endschema %}

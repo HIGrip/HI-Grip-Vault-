@@ -1,0 +1,712 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [ref=f39e1]:
+  - alert [ref=f39e2]: Press Alt+1 for screen-reader mode, Alt+0 to cancel
+  - button "Use Website In a Screen-Reader Mode" [ref=f39e3]
+  - link "Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window" [ref=f39e4] [cursor=pointer]:
+    - /url: https://accessibe.com/blog/knowledgebase/screen-reader-guide
+  - generic:
+    - generic:
+      - region "Skip Links":
+        - generic:
+          - link "Skip to Content":
+            - /url: "#acsbContent"
+            - text: Skip to Content
+            - generic [aria-hidden]:
+              - generic: ↵
+              - text: ENTER
+  - dialog [aria-hidden] [ref=f39e5]:
+    - generic [ref=f39e6]: Simplify Text
+    - button [ref=f39e9] [cursor=pointer]
+  - 'button "Open accessiBe: accessibility options, statement and help" [ref=f39e13] [cursor=pointer]'
+  - link "Skip to content" [ref=f39e17] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f39e18]:
+    - banner [ref=f39e19]:
+      - generic [ref=f39e20]:
+        - link "Ember home" [ref=f39e21] [cursor=pointer]:
+          - /url: /
+          - img "Ember" [ref=f39e22]
+        - navigation "Primary" [ref=f39e23]:
+          - list [ref=f39e24]:
+            - listitem [ref=f39e25]:
+              - link "Shop" [ref=f39e26] [cursor=pointer]:
+                - /url: /collections/all-drinkware
+            - listitem [ref=f39e27]:
+              - link "Coffee Club" [ref=f39e28] [cursor=pointer]:
+                - /url: /pages/coffee-club
+            - listitem [ref=f39e29]:
+              - link "Gift" [ref=f39e30] [cursor=pointer]:
+                - /url: /pages/gift
+            - listitem [ref=f39e31]:
+              - link "Corporate" [ref=f39e32] [cursor=pointer]:
+                - /url: /pages/corporate
+        - generic [ref=f39e33]:
+          - link "Search" [ref=f39e34] [cursor=pointer]:
+            - /url: /search
+          - link "Support" [ref=f39e38] [cursor=pointer]:
+            - /url: https://support.ember.com
+          - link "Account" [ref=f39e39] [cursor=pointer]:
+            - /url: /account
+          - button "Cart · 0" [ref=f39e40] [cursor=pointer]:
+            - text: Cart ·
+            - generic [ref=f39e41]: "0"
+    - text: + + + + +
+  - main [ref=f39e42]:
+    - region "Featured Ember products" [ref=f39e44]:
+      - generic "Swipe or use the controls to explore featured products" [ref=f39e45]:
+        - 'group "1 of 2: Ember Mug 3" [ref=f39e46]':
+          - generic [ref=f39e49]:
+            - paragraph [ref=f39e50]: Introducing Ember Mug 3
+            - heading "Your coffee. Perfectly warm." [level=1] [ref=f39e51]
+            - paragraph [ref=f39e52]: A self-heating mug that keeps every sip at your temperature. Now with on-mug control, a sliding lid, and dishwasher-safe care.
+            - generic [ref=f39e53]:
+              - link "Buy Mug 3" [ref=f39e54] [cursor=pointer]:
+                - /url: /products/ember-mug-3?variant=47905282162873
+              - link "How Ember works" [ref=f39e55] [cursor=pointer]:
+                - /url: "#how-ember-works"
+          - button "Pause background video" [ref=f39e56] [cursor=pointer]: Pause video
+        - group [aria-hidden] [ref=f39e57]:
+          - generic [ref=f39e60]:
+            - paragraph [ref=f39e61]: Introducing Ember Tumbler 2
+            - heading [level=2] [ref=f39e62]: Your perfect sip. Now on the go.
+            - paragraph [ref=f39e63]: A slimmer fit for car cupholders. Temperature control on the tumbler. Top-rack dishwasher safe.
+            - link [ref=f39e65] [cursor=pointer]:
+              - /url: /products/ember-tumbler-2
+              - text: Discover Tumbler 2
+            - paragraph [ref=f39e66]: Black & Sandstone · $179.95
+      - generic [ref=f39e67]:
+        - button "Previous featured product" [ref=f39e68] [cursor=pointer]: ←
+        - generic "Choose a featured product" [ref=f39e69]:
+          - button "Mug 3" [ref=f39e70] [cursor=pointer]
+          - button "Tumbler 2 New" [ref=f39e71] [cursor=pointer]
+        - button "Next featured product" [ref=f39e72] [cursor=pointer]: →
+    - generic [ref=f39e76]:
+      - paragraph [ref=f39e77]: Recognized Ember design & technology
+      - generic "Ember awards" [ref=f39e78]:
+        - article [ref=f39e79]:
+          - link "Read more about TIME Best Inventions" [ref=f39e80] [cursor=pointer]:
+            - /url: https://time.com/5023212/best-inventions-of-2017/
+            - generic [ref=f39e81]:
+              - img "TIME logo" [ref=f39e82]
+              - generic [ref=f39e83]: Best Inventions
+        - article [ref=f39e84]:
+          - link "Read more about GQ Tech Awards" [ref=f39e85] [cursor=pointer]:
+            - /url: https://www.gq.com/story/gq-tech-awards-2025
+            - generic [ref=f39e86]:
+              - img "GQ logo" [ref=f39e87]
+              - generic [ref=f39e88]: Tech Awards
+        - article [ref=f39e89]:
+          - link "Read more about Serious Eats Gear Awards" [ref=f39e90] [cursor=pointer]:
+            - /url: https://www.seriouseats.com/serious-eats-gear-awards-2025-11833919
+            - generic [ref=f39e91]:
+              - img "Serious Eats logo" [ref=f39e92]
+              - generic [ref=f39e93]: Gear Awards
+        - article [ref=f39e94]:
+          - link "Read more about Good Housekeeping Kitchen Gear & Coffee Awards" [ref=f39e95] [cursor=pointer]:
+            - /url: https://www.goodhousekeeping.com/cooking-tools/a41690457/kitchen-gear-coffee-awards-2022/
+            - generic [ref=f39e96]:
+              - img "Good Housekeeping logo" [ref=f39e97]
+              - generic [ref=f39e98]: Kitchen Gear & Coffee Awards
+        - article [ref=f39e99]:
+          - link "Read more about Men’s Health Kitchen Awards" [ref=f39e100] [cursor=pointer]:
+            - /url: https://www.menshealth.com/nutrition/a35480744/best-kitchen-products-2021/
+            - generic [ref=f39e101]:
+              - img "Men’s Health logo" [ref=f39e102]
+              - generic [ref=f39e103]: Kitchen Awards
+        - article [ref=f39e104]:
+          - link "Read more about PEOPLE Products Worth the Hype" [ref=f39e105] [cursor=pointer]:
+            - /url: https://people.com/lifestyle/products-worth-the-hype-2020/
+            - generic [ref=f39e106]:
+              - img "PEOPLE logo" [ref=f39e107]
+              - generic [ref=f39e108]: Products Worth the Hype
+      - paragraph [ref=f39e110]:
+        - text: Over
+        - strong [ref=f39e111]: 4 Million
+        - text: Sold
+    - generic [ref=f39e114]:
+      - generic [ref=f39e115]:
+        - generic [ref=f39e116]:
+          - paragraph [ref=f39e117]: Ember Mug 3
+          - heading "Meet your new morning ritual." [level=2] [ref=f39e118]
+          - paragraph [ref=f39e119]: Everything you love about Ember, made easier with Mug 3.
+        - link "Shop Mug 3 →" [ref=f39e120] [cursor=pointer]:
+          - /url: /products/ember-mug-3
+      - generic [ref=f39e121]:
+        - article [ref=f39e122]:
+          - generic [ref=f39e125]:
+            - paragraph [ref=f39e126]: "01"
+            - heading "Set temperature on the mug" [level=3] [ref=f39e127]
+            - paragraph [ref=f39e128]: Choose your preferred temperature using the button on the mug, or fine-tune it in the Ember app.
+        - article [ref=f39e129]:
+          - generic [ref=f39e132]:
+            - paragraph [ref=f39e133]: "02"
+            - heading "More time with every cup" [level=3] [ref=f39e134]
+            - paragraph [ref=f39e135]: The sliding lid is included free ($14.95 value). Use it to keep your drink warm for over 3 hours on a charge.
+        - article [ref=f39e136]:
+          - img "A simpler clean-up" [ref=f39e138]
+          - generic [ref=f39e139]:
+            - paragraph [ref=f39e140]: "03"
+            - heading "A simpler clean-up" [level=3] [ref=f39e141]
+            - paragraph [ref=f39e142]: Mug 3 is top-rack dishwasher safe. Let it dry completely before charging.
+    - generic [ref=f39e145]:
+      - generic [ref=f39e146]:
+        - generic [ref=f39e147]: How Ember works
+        - heading "Pour. Set. Savor." [level=2] [ref=f39e148]
+        - paragraph [ref=f39e149]: The heater and sensors are built into the mug, so your coffee stays at the temperature you choose, even away from the coaster.
+      - region "How Ember works" [ref=f39e150]:
+        - generic [ref=f39e151]:
+          - article "1 of 3" [ref=f39e152]:
+            - img "Pouring freshly brewed coffee into a white Ember Mug 3" [ref=f39e154]
+            - generic [ref=f39e155]: "01"
+            - heading "Pour your favorite hot drink" [level=3] [ref=f39e156]
+            - paragraph [ref=f39e157]: Start with freshly brewed coffee or tea. The built-in heater maintains your chosen temperature.
+          - article "2 of 3" [ref=f39e158]:
+            - img "Sage green Ember Mug 3 with its indicator lights visible beside a notebook" [ref=f39e160]
+            - generic [ref=f39e161]: "02"
+            - heading "Set your perfect temperature" [level=3] [ref=f39e162]
+            - paragraph [ref=f39e163]: Set your preferred temperature directly on Mug 3, or use the optional Ember app.
+          - article "3 of 3" [ref=f39e164]:
+            - img "Taking a coffee break with Ember Mug 3 while reading" [ref=f39e166]
+            - generic [ref=f39e167]: "03"
+            - heading "Enjoy it at your pace" [level=3] [ref=f39e168]
+            - paragraph [ref=f39e169]: Use the included sliding lid for over 3 hours of warmth, or keep it on the charging coaster for all-day use.
+    - generic [ref=f39e172]:
+      - generic [ref=f39e173]:
+        - generic [ref=f39e174]: The shelf
+        - heading "Every Ember." [level=2] [ref=f39e175]
+      - generic [ref=f39e176]:
+        - article [ref=f39e177]:
+          - link "View 14oz Ember Mug 3" [ref=f39e178] [cursor=pointer]:
+            - /url: /products/ember-mug-3?variant=47905282162873
+            - generic [ref=f39e179]:
+              - img "14oz Ember Mug 3" [ref=f39e180]
+              - generic [ref=f39e181]: New Mug 3
+          - generic [ref=f39e182]:
+            - link "14oz Ember Mug 3 $149.95 USD Best for slow desk coffee." [ref=f39e183] [cursor=pointer]:
+              - /url: /products/ember-mug-3?variant=47905282162873
+              - generic [ref=f39e184]: 14oz Ember Mug 3
+              - generic [ref=f39e185]: $149.95 USD
+              - generic [ref=f39e186]: Best for slow desk coffee.
+            - button "Add to cart" [ref=f39e188] [cursor=pointer]
+        - article [ref=f39e189]:
+          - link "View 10oz Ember Mug 3" [ref=f39e190] [cursor=pointer]:
+            - /url: /products/ember-mug-3?variant=47905282261177&view=mug3-10oz
+            - generic [ref=f39e191]:
+              - img "10oz Ember Mug 3" [ref=f39e192]
+              - generic [ref=f39e193]: Smaller sips
+          - generic [ref=f39e194]:
+            - link "10oz Ember Mug 3 $129.95 USD Best for smaller pours." [ref=f39e195] [cursor=pointer]:
+              - /url: /products/ember-mug-3?variant=47905282261177&view=mug3-10oz
+              - generic [ref=f39e196]: 10oz Ember Mug 3
+              - generic [ref=f39e197]: $129.95 USD
+              - generic [ref=f39e198]: Best for smaller pours.
+            - button "Add to cart" [ref=f39e200] [cursor=pointer]
+        - article [ref=f39e201]:
+          - link "View Ember Tumbler 2" [ref=f39e202] [cursor=pointer]:
+            - /url: /products/ember-tumbler-2?variant=47905524940985
+            - generic [ref=f39e203]:
+              - img "Ember Tumbler 2 in Sandstone" [ref=f39e204]
+              - generic [ref=f39e205]: New Tumbler 2
+          - generic [ref=f39e206]:
+            - link "Ember Tumbler 2 $179.95 USD Best for coffee on the go." [ref=f39e207] [cursor=pointer]:
+              - /url: /products/ember-tumbler-2?variant=47905524940985
+              - generic [ref=f39e208]: Ember Tumbler 2
+              - generic [ref=f39e209]: $179.95 USD
+              - generic [ref=f39e210]: Best for coffee on the go.
+            - button "Add to cart" [ref=f39e212] [cursor=pointer]
+        - article [ref=f39e213]:
+          - link "View Ember Cold Tumbler" [ref=f39e214] [cursor=pointer]:
+            - /url: /products/ember-cold-tumbler
+            - generic [ref=f39e215]:
+              - img "Ember Cold Tumbler" [ref=f39e216]
+              - generic [ref=f39e217]: Cold drinks
+          - generic [ref=f39e218]:
+            - link "Ember Cold Tumbler $39.95 USD $29.99 USD Best for iced coffee and matcha." [ref=f39e219] [cursor=pointer]:
+              - /url: /products/ember-cold-tumbler
+              - generic [ref=f39e220]: Ember Cold Tumbler
+              - generic [ref=f39e222]:
+                - generic [ref=f39e223]: $39.95 USD
+                - generic [ref=f39e224]: $29.99 USD
+              - generic [ref=f39e225]: Best for iced coffee and matcha.
+            - button "Add to cart" [ref=f39e227] [cursor=pointer]
+        - article [ref=f39e228]:
+          - link "View Coffee Club" [ref=f39e229] [cursor=pointer]:
+            - /url: /pages/coffee-club
+            - generic [ref=f39e230]:
+              - img "New Ember Coffee Club" [ref=f39e231]
+              - generic [ref=f39e232]: Subscribe
+          - generic [ref=f39e233]:
+            - link "Coffee Club $25.00 USD Best for monthly coffee drops." [ref=f39e234] [cursor=pointer]:
+              - /url: /pages/coffee-club
+              - generic [ref=f39e235]: Coffee Club
+              - generic [ref=f39e236]: $25.00 USD
+              - generic [ref=f39e237]: Best for monthly coffee drops.
+            - link "Choose options" [ref=f39e238] [cursor=pointer]:
+              - /url: /pages/coffee-club
+      - link "Shop everything →" [ref=f39e240] [cursor=pointer]:
+        - /url: /collections/all-drinkware
+    - region [ref=f39e242]:
+      - generic [ref=f39e243]:
+        - img "Heading out with Ember Tumbler 2 in Sandstone" [ref=f39e244]
+        - generic [ref=f39e245]: 16 oz. Made to move.
+      - generic [ref=f39e246]:
+        - paragraph [ref=f39e247]: Introducing Ember Tumbler 2
+        - heading "Your perfect coffee. Wherever the day goes." [level=2] [ref=f39e248]: Your perfect coffee.Wherever the day goes.
+        - paragraph [ref=f39e249]: From the morning commute to the sidelines. Your chosen temperature, in a slimmer tumbler that goes with you.
+        - list [ref=f39e250]:
+          - listitem [ref=f39e251]: ✓Fits car cupholders
+          - listitem [ref=f39e252]: ✓Top-rack dishwasher safe
+          - listitem [ref=f39e253]: ✓Set the temperature on the tumbler
+        - link "Discover Tumbler 2" [ref=f39e254] [cursor=pointer]:
+          - /url: /products/ember-tumbler-2
+          - text: Discover Tumbler 2
+          - generic [aria-hidden] [ref=f39e255]: →
+        - paragraph [ref=f39e256]: Black & Sandstone · 16 oz · $179.95 USD
+    - region [ref=f39e259]:
+      - generic [ref=f39e261]:
+        - paragraph [ref=f39e262]: The Ember community
+        - heading "Ember, in everyday life." [level=2] [ref=f39e263]
+        - paragraph [ref=f39e264]: See how to make Ember part of your day.
+      - list "Creator videos" [ref=f39e265]:
+        - listitem [ref=f39e266]:
+          - generic [ref=f39e267]:
+            - generic "@siddissiereads" [ref=f39e268]
+            - generic [ref=f39e269]:
+              - button "Play video by @siddissiereads" [ref=f39e270] [cursor=pointer]
+              - button "Turn sound on for @siddissiereads" [ref=f39e273] [cursor=pointer]
+            - generic:
+              - paragraph: "@siddissiereads"
+              - paragraph: Spend a cozy reading night with me!
+              - link "Shop Ember Mug 3" [ref=f39e277] [cursor=pointer]:
+                - /url: /products/ember-mug-3
+                - text: Shop Ember Mug 3
+                - generic [aria-hidden] [ref=f39e278]: →
+        - listitem [ref=f39e279]:
+          - generic [ref=f39e280]:
+            - generic "@agirlinthepnw" [ref=f39e281]
+            - generic [ref=f39e282]:
+              - button "Play video by @agirlinthepnw" [ref=f39e283] [cursor=pointer]
+              - button "Turn sound on for @agirlinthepnw" [ref=f39e286] [cursor=pointer]
+            - generic:
+              - paragraph: "@agirlinthepnw"
+              - paragraph: A slow morning in the Pacific Northwest.
+              - link "Shop Ember Mug 3" [ref=f39e290] [cursor=pointer]:
+                - /url: /products/ember-mug-3
+                - text: Shop Ember Mug 3
+                - generic [aria-hidden] [ref=f39e291]: →
+        - listitem [ref=f39e292]:
+          - generic [ref=f39e293]:
+            - generic "@healthywith.alex" [ref=f39e294]
+            - generic [ref=f39e295]:
+              - button "Play video by @healthywith.alex" [ref=f39e296] [cursor=pointer]
+              - button "Turn sound on for @healthywith.alex" [ref=f39e299] [cursor=pointer]
+            - generic:
+              - paragraph: "@healthywith.alex"
+              - paragraph: Your morning coffee just got an upgrade.
+              - link "Shop Ember Mug 3" [ref=f39e303] [cursor=pointer]:
+                - /url: /products/ember-mug-3
+                - text: Shop Ember Mug 3
+                - generic [aria-hidden] [ref=f39e304]: →
+        - listitem [ref=f39e305]:
+          - generic [ref=f39e306]:
+            - generic "@ashton_hehr" [ref=f39e307]
+            - generic [ref=f39e308]:
+              - button "Play video by @ashton_hehr" [ref=f39e309] [cursor=pointer]
+              - button "Turn sound on for @ashton_hehr" [ref=f39e312] [cursor=pointer]
+            - generic:
+              - paragraph: "@ashton_hehr"
+              - paragraph: How I get through the 9-to-5.
+              - link "Shop Ember Mug 3" [ref=f39e316] [cursor=pointer]:
+                - /url: /products/ember-mug-3
+                - text: Shop Ember Mug 3
+                - generic [aria-hidden] [ref=f39e317]: →
+    - generic [ref=f39e320]:
+      - generic [ref=f39e321]:
+        - paragraph [ref=f39e322]: Compare
+        - heading "Find the right Ember." [level=2] [ref=f39e323]
+        - paragraph [ref=f39e324]: Choose by how you drink, where you sip, and how much you want to carry.
+      - list [ref=f39e325]:
+        - listitem [ref=f39e326]:
+          - generic [ref=f39e327]:
+            - heading "14oz Mug" [level=3] [ref=f39e328]
+            - link "Shop 14oz Mug →" [ref=f39e329] [cursor=pointer]:
+              - /url: /products/ember-mug-3
+          - generic [ref=f39e330]:
+            - generic [ref=f39e331]:
+              - term [ref=f39e332]: Best for
+              - definition [ref=f39e333]: Everyday coffee at a desk
+            - generic [ref=f39e334]:
+              - term [ref=f39e335]: Handle
+              - definition [ref=f39e336]: "Yes"
+            - generic [ref=f39e337]:
+              - term [ref=f39e338]: Capacity
+              - definition [ref=f39e339]: 14 oz
+            - generic [ref=f39e340]:
+              - term [ref=f39e341]: Battery
+              - definition [ref=f39e342]: 3+ hrs with included sliding lid
+            - generic [ref=f39e343]:
+              - term [ref=f39e344]: Temperature
+              - definition [ref=f39e345]: On-mug or app control
+        - listitem [ref=f39e346]:
+          - generic [ref=f39e347]:
+            - heading "10oz Mug" [level=3] [ref=f39e348]
+            - link "Shop 10oz Mug →" [ref=f39e349] [cursor=pointer]:
+              - /url: /products/ember-mug-3?variant=47905282195641&view=mug3-10oz
+          - generic [ref=f39e350]:
+            - generic [ref=f39e351]:
+              - term [ref=f39e352]: Best for
+              - definition [ref=f39e353]: Smaller pours and tea
+            - generic [ref=f39e354]:
+              - term [ref=f39e355]: Handle
+              - definition [ref=f39e356]: "Yes"
+            - generic [ref=f39e357]:
+              - term [ref=f39e358]: Capacity
+              - definition [ref=f39e359]: 10 oz
+            - generic [ref=f39e360]:
+              - term [ref=f39e361]: Battery
+              - definition [ref=f39e362]: 3+ hrs with included sliding lid
+            - generic [ref=f39e363]:
+              - term [ref=f39e364]: Temperature
+              - definition [ref=f39e365]: On-mug or app control
+        - listitem [ref=f39e366]:
+          - generic [ref=f39e367]:
+            - heading "6oz Cup" [level=3] [ref=f39e368]
+            - link "Shop 6oz Cup →" [ref=f39e369] [cursor=pointer]:
+              - /url: /products/ember-cup?view=cup-6
+          - generic [ref=f39e370]:
+            - generic [ref=f39e371]:
+              - term [ref=f39e372]: Best for
+              - definition [ref=f39e373]: Espresso and smaller pours
+            - generic [ref=f39e374]:
+              - term [ref=f39e375]: Handle
+              - definition [ref=f39e376]: "No"
+            - generic [ref=f39e377]:
+              - term [ref=f39e378]: Capacity
+              - definition [ref=f39e379]: 6 oz
+            - generic [ref=f39e380]:
+              - term [ref=f39e381]: Battery
+              - definition [ref=f39e382]: Up to 90 min
+            - generic [ref=f39e383]:
+              - term [ref=f39e384]: Temperature
+              - definition [ref=f39e385]: 120°–145°F
+        - listitem [ref=f39e386]:
+          - generic [ref=f39e387]:
+            - heading "Tumbler 2" [level=3] [ref=f39e388]
+            - link "Discover Tumbler 2 →" [ref=f39e389] [cursor=pointer]:
+              - /url: /products/ember-tumbler-2
+          - generic [ref=f39e390]:
+            - generic [ref=f39e391]:
+              - term [ref=f39e392]: Best for
+              - definition [ref=f39e393]: Commutes, walks, and days on the go
+            - generic [ref=f39e394]:
+              - term [ref=f39e395]: Handle
+              - definition [ref=f39e396]: handle lid included
+            - generic [ref=f39e397]:
+              - term [ref=f39e398]: Capacity
+              - definition [ref=f39e399]: 16 fl oz
+            - generic [ref=f39e400]:
+              - term [ref=f39e401]: Battery
+              - definition [ref=f39e402]: 3+ hours with lid
+            - generic [ref=f39e403]:
+              - term [ref=f39e404]: Temperature
+              - definition [ref=f39e405]: 125°F to 145°F on tumbler
+        - listitem [ref=f39e406]:
+          - generic [ref=f39e407]:
+            - heading "Cold Tumbler" [level=3] [ref=f39e408]
+            - link "Shop Cold Tumbler →" [ref=f39e409] [cursor=pointer]:
+              - /url: /products/ember-cold-tumbler
+          - generic [ref=f39e410]:
+            - generic [ref=f39e411]:
+              - term [ref=f39e412]: Best for
+              - definition [ref=f39e413]: Iced coffee and matcha
+            - generic [ref=f39e414]:
+              - term [ref=f39e415]: Handle
+              - definition [ref=f39e416]: "No"
+            - generic [ref=f39e417]:
+              - term [ref=f39e418]: Capacity
+              - definition [ref=f39e419]: 16 oz
+            - generic [ref=f39e420]:
+              - term [ref=f39e421]: Battery
+              - definition [ref=f39e422]: Not heated
+            - generic [ref=f39e423]:
+              - term [ref=f39e424]: Temperature
+              - definition [ref=f39e425]: Cold drinks
+    - generic [ref=f39e428]:
+      - generic [ref=f39e429]:
+        - generic [ref=f39e445]: Uniform temperature
+        - generic [ref=f39e446]: Precision sensors
+        - generic [ref=f39e447]: Auto sleep
+        - generic [ref=f39e448]: Long-lasting battery
+        - generic [ref=f39e449]: Temperature + battery LEDs
+      - generic [ref=f39e450]:
+        - generic [ref=f39e451]: Inside Ember
+        - heading "The heater is the mug." [level=2] [ref=f39e452]
+        - paragraph [ref=f39e453]: A built-in heater and precision sensors maintain your preferred drinking temperature. Set it directly on the mug or in the optional Ember app. The LEDs show your temperature setting and battery level while charging.
+        - generic [ref=f39e454]:
+          - generic [ref=f39e455]:
+            - generic [ref=f39e456]: On-mug
+            - generic [ref=f39e457]: Temperature control
+          - generic [ref=f39e458]:
+            - generic [ref=f39e459]: Included
+            - generic [ref=f39e460]: sliding lid
+          - generic [ref=f39e461]:
+            - generic [ref=f39e462]: Top rack
+            - generic [ref=f39e463]: Dishwasher safe
+          - generic [ref=f39e464]:
+            - generic [ref=f39e465]: 3+ hrs
+            - generic [ref=f39e466]: With sliding lid
+        - link "See how it works →" [ref=f39e467] [cursor=pointer]:
+          - /url: /pages/technology
+    - generic "Purchase reassurance" [ref=f39e470]:
+      - generic [ref=f39e471]:
+        - strong [ref=f39e472]: 30-day returns
+        - generic [ref=f39e473]: Unused mugs
+      - generic [ref=f39e474]:
+        - strong [ref=f39e475]: Lifetime coaster warranty
+        - generic [ref=f39e476]: 1-year mug warranty for manufacturing defects
+      - generic [ref=f39e477]:
+        - strong [ref=f39e478]: Free shipping
+        - generic [ref=f39e479]: Mug 3 orders
+      - generic [ref=f39e480]:
+        - strong [ref=f39e481]: Free sliding lid
+        - generic [ref=f39e482]: ($14.95 value) · coaster included
+    - generic [ref=f39e485]:
+      - img "Powder blue Ember Mug 3 resting on a stack of books" [ref=f39e487]
+      - generic [ref=f39e488]:
+        - heading "14oz Ember Mug 3" [level=2] [ref=f39e489]
+        - paragraph [ref=f39e490]: The mug you know and love, now easier than ever to use. Set your temperature in the app or right on the mug, and enjoy every sip at the perfect temperature.
+        - generic "Product highlights" [ref=f39e491]:
+          - generic [ref=f39e492]: On-mug temperature control
+          - generic [ref=f39e493]: Free sliding lid ($14.95 value)
+          - generic [ref=f39e494]: Charging coaster included
+        - generic [ref=f39e495]: $149.95 USD
+        - generic [ref=f39e496]:
+          - group "Color Black" [ref=f39e497]:
+            - generic [ref=f39e498]:
+              - generic [ref=f39e499]: Color
+              - strong [ref=f39e500]: Black
+            - generic [ref=f39e501]:
+              - generic [ref=f39e502] [cursor=pointer]:
+                - radio "Black" [checked] [ref=f39e503]
+                - generic [ref=f39e505]: Black
+              - generic [ref=f39e506] [cursor=pointer]:
+                - radio "White" [ref=f39e507]
+                - generic [ref=f39e509]: White
+              - generic [ref=f39e510] [cursor=pointer]:
+                - radio "Matcha Green" [ref=f39e511]
+                - generic [ref=f39e513]: Matcha Green
+              - generic [ref=f39e514] [cursor=pointer]:
+                - radio "Salt Blue" [ref=f39e515]
+                - generic [ref=f39e517]: Salt Blue
+              - generic [ref=f39e518] [cursor=pointer]:
+                - radio "Sage Green" [ref=f39e519]
+                - generic [ref=f39e521]: Sage Green
+              - generic [ref=f39e522] [cursor=pointer]:
+                - radio "Sandstone" [ref=f39e523]
+                - generic [ref=f39e525]: Sandstone
+              - generic [ref=f39e526] [cursor=pointer]:
+                - radio "Lavender" [ref=f39e527]
+                - generic [ref=f39e529]: Lavender
+              - generic [ref=f39e530] [cursor=pointer]:
+                - radio "Powder Blue" [ref=f39e531]
+                - generic [ref=f39e533]: Powder Blue
+          - generic [ref=f39e534]:
+            - button "Buy 14oz Mug 3" [ref=f39e535] [cursor=pointer]
+            - link "Shop 10 oz ($129.95)" [ref=f39e536] [cursor=pointer]:
+              - /url: /products/ember-mug-3?variant=47905282195641&view=mug3-10oz
+    - generic [ref=f39e538]:
+      - generic [ref=f39e539]:
+        - generic [ref=f39e540]: Coffee Club
+        - heading "A year of coffee. A grey 14 oz Mug 2 on us." [level=2] [ref=f39e541]
+        - paragraph [ref=f39e543]: "Annual Coffee Club: $300 for the year, with a grey 14 oz Ember Mug 2 in your first shipment. Monthly membership is $25 per shipment."
+        - link "Explore Coffee Club" [ref=f39e544] [cursor=pointer]:
+          - /url: /pages/coffee-club
+      - generic [ref=f39e545]:
+        - generic [ref=f39e546]: Gift
+        - heading "A gift they’ll use tomorrow morning. And every morning after." [level=2] [ref=f39e547]
+        - paragraph [ref=f39e549]: Give them perfect-temperature mornings with Mug 3. Choose a size and color they’ll love.
+        - link "Shop gifts →" [ref=f39e550] [cursor=pointer]:
+          - /url: /pages/gift
+    - region [ref=f39e552]:
+      - generic [ref=f39e553]:
+        - link "View nomination at CSS Design Awards (opens in a new tab)" [ref=f39e554] [cursor=pointer]:
+          - /url: https://www.cssdesignawards.com/sites/ember/50296/
+          - img "CSS Design Awards nominee" [ref=f39e555]
+        - generic [ref=f39e556]:
+          - paragraph [ref=f39e557]: CSS Design Awards · 2026 nominee
+          - heading "Our new website is nominated." [level=2] [ref=f39e558]
+          - paragraph [ref=f39e559]: Explore Ember’s website design nomination at the CSS Design Awards.
+        - generic [ref=f39e560]:
+          - link "View nomination at CSS Design Awards (opens in a new tab)" [ref=f39e561] [cursor=pointer]:
+            - /url: https://www.cssdesignawards.com/sites/ember/50296/
+            - text: View nomination
+            - generic [aria-hidden] [ref=f39e562]: ↗
+          - paragraph [ref=f39e563]: View the entry on CSSDA.
+  - contentinfo [ref=f39e565]:
+    - generic [ref=f39e566]:
+      - generic [ref=f39e567]:
+        - generic [ref=f39e568]:
+          - heading "Shop Ember" [level=2] [ref=f39e569]
+          - list [ref=f39e570]:
+            - listitem [ref=f39e571]:
+              - link "Shop Drinkware" [ref=f39e572] [cursor=pointer]:
+                - /url: /collections/all-drinkware
+            - listitem [ref=f39e573]:
+              - link "Coffee & Tea" [ref=f39e574] [cursor=pointer]:
+                - /url: /collections/ember-brews
+            - listitem [ref=f39e575]:
+              - link "Accessories" [ref=f39e576] [cursor=pointer]:
+                - /url: /collections/accessories
+            - listitem [ref=f39e577]:
+              - link "Gift Cards" [ref=f39e578] [cursor=pointer]:
+                - /url: /products/gift-card?variant=49115490353337&view=gift-card
+            - listitem [ref=f39e579]:
+              - link "Where To Buy" [ref=f39e580] [cursor=pointer]:
+                - /url: /pages/retailers
+            - listitem [ref=f39e581]:
+              - link "Corporate & Wholesale" [ref=f39e582] [cursor=pointer]:
+                - /url: /pages/corporate
+        - generic [ref=f39e583]:
+          - heading "Resources" [level=2] [ref=f39e584]
+          - list [ref=f39e585]:
+            - listitem [ref=f39e586]:
+              - link "Blog | Degrees° of Ember" [ref=f39e587] [cursor=pointer]:
+                - /url: /blogs/degrees
+            - listitem [ref=f39e588]:
+              - link "Our Story" [ref=f39e589] [cursor=pointer]:
+                - /url: /pages/ourstory
+            - listitem [ref=f39e590]:
+              - link "Support Center" [ref=f39e591] [cursor=pointer]:
+                - /url: https://ember.gorgias.help/
+            - listitem [ref=f39e592]:
+              - link "Return Policy" [ref=f39e593] [cursor=pointer]:
+                - /url: /policies/refund-policy
+            - listitem [ref=f39e594]:
+              - link "Warranty" [ref=f39e595] [cursor=pointer]:
+                - /url: /pages/ember-warranty-request-form
+            - listitem [ref=f39e596]:
+              - link "Careers" [ref=f39e597] [cursor=pointer]:
+                - /url: /pages/careers
+            - listitem [ref=f39e598]:
+              - link "Contact Us" [ref=f39e599] [cursor=pointer]:
+                - /url: /pages/contact-us
+        - generic [ref=f39e600]:
+          - heading "Legal" [level=2] [ref=f39e601]
+          - list [ref=f39e602]:
+            - listitem [ref=f39e603]:
+              - link "Disclaimer" [ref=f39e604] [cursor=pointer]:
+                - /url: /pages/disclaimer
+            - listitem [ref=f39e605]:
+              - link "Accessibility" [ref=f39e606] [cursor=pointer]:
+                - /url: /pages/accessibility-statement
+            - listitem [ref=f39e607]:
+              - link "CA Privacy Policy" [ref=f39e608] [cursor=pointer]:
+                - /url: /pages/california-privacy-notice
+            - listitem [ref=f39e609]:
+              - link "Privacy Policy" [ref=f39e610] [cursor=pointer]:
+                - /url: /policies/privacy-policy
+      - generic [ref=f39e611]:
+        - generic [ref=f39e612]:
+          - heading "Stay in touch." [level=2] [ref=f39e613]
+          - generic [ref=f39e616]:
+            - textbox "Email" [ref=f39e617]
+            - generic: Email
+            - button "Subscribe" [ref=f39e618] [cursor=pointer]
+        - button [ref=f39e625] [cursor=pointer]:
+          - generic [ref=f39e630]:
+            - text: Follow on
+            - img "Shop" [ref=f39e631]
+        - list [ref=f39e633]:
+          - listitem [ref=f39e634]:
+            - link "Facebook" [ref=f39e635] [cursor=pointer]:
+              - /url: https://www.facebook.com/ember
+          - listitem [ref=f39e640]:
+            - link "Instagram" [ref=f39e641] [cursor=pointer]:
+              - /url: https://instagram.com/ember
+          - listitem [ref=f39e646]:
+            - link "YouTube" [ref=f39e647] [cursor=pointer]:
+              - /url: https://youtube.com/@ember
+          - listitem [ref=f39e652]:
+            - link "TikTok" [ref=f39e653] [cursor=pointer]:
+              - /url: https://tiktok.com/@ember
+    - generic [ref=f39e658]:
+      - generic [ref=f39e661]:
+        - generic [ref=f39e662]: Payment methods
+        - list [ref=f39e663]:
+          - listitem [ref=f39e664]:
+            - img "Amazon" [ref=f39e665]
+          - listitem [ref=f39e670]:
+            - img "American Express" [ref=f39e671]
+          - listitem [ref=f39e676]:
+            - img "Apple Pay" [ref=f39e677]
+          - listitem [ref=f39e688]:
+            - img "Diners Club" [ref=f39e689]
+          - listitem [ref=f39e693]:
+            - img "Discover" [ref=f39e694]
+          - listitem [ref=f39e703]:
+            - img "Google Pay" [ref=f39e704]
+          - listitem [ref=f39e712]:
+            - img "Mastercard" [ref=f39e713]
+          - listitem [ref=f39e720]:
+            - img "PayPal" [ref=f39e721]
+          - listitem [ref=f39e727]:
+            - img "Shop Pay" [ref=f39e728]
+          - listitem [ref=f39e732]:
+            - img "Venmo" [ref=f39e733]
+          - listitem [ref=f39e738]:
+            - img "Visa" [ref=f39e739]
+      - generic [ref=f39e745]:
+        - generic [ref=f39e746]:
+          - text: © 2026,
+          - link "Ember®" [ref=f39e747] [cursor=pointer]:
+            - /url: /
+        - link "Powered by Shopify" [ref=f39e749] [cursor=pointer]:
+          - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic:
+    - dialog "Privacy" [ref=f39e751]:
+      - generic [ref=f39e752]:
+        - generic [ref=f39e755]:
+          - text: We use first and third-party cookies and similar technologies to better understand your use of our website, personalize content, and provide you with social media features and tailored advertisements. By clicking "Accept All Cookies", you agree to our use of the above cookies. You can reject all cookies (other than those strictly necessary for website operations) or some cookies only by clicking on "Cookie settings" or "Reject All."
+          - link "Please read our Privacy Policy for more info, opens in a new tab" [ref=f39e756] [cursor=pointer]:
+            - /url: https://ember.com/pages/privacy-policy
+            - text: Please read our privacy policy for more information.
+        - generic [ref=f39e758]:
+          - button "My Privacy Choices, Opens the preference center dialog" [ref=f39e759] [cursor=pointer]: My Privacy Choices
+          - generic [ref=f39e760]:
+            - button "Reject All" [ref=f39e761] [cursor=pointer]
+            - button "Accept All Cookies" [ref=f39e762] [cursor=pointer]
+        - button "Close" [ref=f39e764] [cursor=pointer]
+    - text: My Privacy Choices

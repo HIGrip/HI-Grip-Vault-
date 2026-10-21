@@ -1,0 +1,144 @@
+/* ==============================================
+   HÏ Grip — Shop overzicht (maten × kleuren)
+   assets/shop-page.css
+   Deelt kleur-/knop-tokens met padel-page.css (--padel-accent etc.)
+   ============================================== */
+
+:root{
+  --hgshop-accent: #ff6a00;
+  --hgshop-grey-50: #fafaf9;
+  --hgshop-section-padding: 72px;
+}
+
+.hgshop-hero{
+  background:#0b0b0b;color:#fff;
+  padding:var(--hgshop-section-padding) 32px 56px;
+  position:relative;overflow:hidden;
+}
+.hgshop-hero::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+  background:radial-gradient(circle,rgba(255,106,0,0.22),transparent 70%);
+}
+.hgshop-hero__inner{position:relative;max-width:760px;margin:0 auto;}
+
+.hgshop-eyebrow{
+  display:inline-flex;align-items:center;gap:6px;
+  border:1px solid rgba(255,255,255,0.3);border-radius:999px;
+  padding:5px 13px;font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  margin-bottom:16px;color:#fff;
+}
+.hgshop-eyebrow--dark{border-color:rgba(0,0,0,0.25);color:#000;}
+.hgshop-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--hgshop-accent);}
+
+.hgshop-hero h1{
+  font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;margin:0 0 14px;
+  text-transform:uppercase;font-weight:900;letter-spacing:-0.02em;max-width:640px;
+  text-wrap:balance;
+}
+.hgshop-hero p.hgshop-sub{
+  font-size:1rem;line-height:1.6;color:rgba(255,255,255,0.82);max-width:520px;margin:0 0 22px;
+}
+.hgshop-hero-trust{display:flex;align-items:center;gap:18px;flex-wrap:wrap;font-size:0.82rem;color:rgba(255,255,255,0.75);}
+.hgshop-stars{color:var(--hgshop-accent);letter-spacing:0.06em;}
+.hgshop-chip{border:1px solid rgba(255,255,255,0.22);border-radius:999px;padding:4px 11px;font-size:0.72rem;font-weight:600;}
+
+/* ---- size sections ---- */
+.hgshop-size-section{padding:var(--hgshop-section-padding) 32px;}
+.hgshop-size-section--light{background:var(--hgshop-grey-50);}
+.hgshop-size-section--dark{background:#000;color:#fff;}
+
+.hgshop-size-head{text-align:center;max-width:520px;margin:0 auto 30px;}
+.hgshop-size-head h2{font-size:clamp(1.5rem,2.6vw,2.1rem);text-transform:uppercase;margin:0 0 8px;font-weight:900;letter-spacing:-0.02em;}
+.hgshop-size-head p{color:rgba(0,0,0,0.55);font-size:0.92rem;margin:0;}
+.hgshop-size-section--dark .hgshop-size-head p{color:rgba(255,255,255,0.62);}
+
+.hgshop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:920px;margin:0 auto;}
+
+.hgshop-card{
+  background:#fff;border:1.5px solid rgba(0,0,0,0.09);border-radius:14px;
+  padding:22px 20px 20px;text-align:center;position:relative;
+  transition:border-color .2s,box-shadow .2s,transform .2s;
+  text-decoration:none;color:inherit;display:block;
+}
+.hgshop-card:hover{border-color:var(--hgshop-accent);box-shadow:0 10px 30px rgba(255,106,0,0.18);transform:translateY(-3px);}
+.hgshop-size-section--dark .hgshop-card{background:#141414;border-color:rgba(255,255,255,0.12);}
+.hgshop-size-section--dark .hgshop-card:hover{border-color:var(--hgshop-accent);}
+
+.hgshop-card__badge{
+  position:absolute;top:-11px;left:50%;transform:translateX(-50%);
+  background:var(--hgshop-accent);color:#fff;font-size:0.62rem;font-weight:800;letter-spacing:0.06em;
+  padding:4px 11px;border-radius:999px;white-space:nowrap;text-transform:uppercase;
+}
+
+.hgshop-card__sock{width:74px;height:74px;margin:6px auto 10px;display:block;}
+.hgshop-card__num{font-size:1.5rem;font-weight:900;letter-spacing:-0.01em;margin-bottom:3px;}
+.hgshop-card__hint{font-size:0.76rem;color:rgba(0,0,0,0.5);margin-bottom:10px;min-height:2.2em;}
+.hgshop-size-section--dark .hgshop-card__hint{color:rgba(255,255,255,0.5);}
+.hgshop-card__price{font-size:0.78rem;font-weight:700;color:var(--hgshop-accent);margin-bottom:12px;}
+
+.hgshop-card__cta{
+  display:block;width:100%;background:transparent;border:1.5px solid #000;color:#000;
+  font-weight:700;font-size:0.78rem;padding:9px;border-radius:999px;
+  transition:background .2s,color .2s;
+}
+.hgshop-card:hover .hgshop-card__cta{background:#000;color:#fff;}
+.hgshop-size-section--dark .hgshop-card__cta{border-color:#fff;color:#fff;}
+.hgshop-size-section--dark .hgshop-card:hover .hgshop-card__cta{background:#fff;color:#000;}
+
+/* ---- sock icon color states ---- */
+.hgshop-sock .hgshop-sock-fill{fill:#111;}
+.hgshop-sock .hgshop-sock-cuff{fill:#111;opacity:0.35;}
+.hgshop-sock .hgshop-sock-grip{fill:var(--hgshop-accent);}
+.hgshop-sock--white .hgshop-sock-fill{fill:#fff;stroke:#111;stroke-width:1.4;}
+.hgshop-sock--white .hgshop-sock-cuff{fill:#111;opacity:0.12;}
+
+@media (max-width:860px){
+  .hgshop-grid{grid-template-columns:1fr;max-width:340px;margin-left:auto;margin-right:auto;}
+  :root{--hgshop-section-padding:48px;}
+}
+
+/* ---- grid-patroon textuur (merkstijl: "grid patterns") ---- */
+.hgshop-grid-bg{position:relative;}
+.hgshop-grid-bg::before{
+  content:"";position:absolute;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(var(--hgshop-grid-line,rgba(255,255,255,0.06)) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hgshop-grid-line,rgba(255,255,255,0.06)) 1px, transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse at 30% 0%, #000 55%, transparent 100%);
+  mask-image:radial-gradient(ellipse at 30% 0%, #000 55%, transparent 100%);
+}
+.hgshop-grid-bg--light{--hgshop-grid-line:rgba(0,0,0,0.055);}
+.hgshop-grid-bg > *{position:relative;z-index:1;}
+
+/* ---- kenmerken-strip (shop-pagina) ---- */
+.hgshop-features{padding:34px 32px;background:#fff;border-bottom:1px solid rgba(0,0,0,0.08);}
+.hgshop-features__row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:920px;margin:0 auto;}
+.hgshop-features__item{display:flex;gap:14px;align-items:flex-start;}
+.hgshop-features__icon{
+  flex-shrink:0;width:32px;height:32px;border-radius:50%;background:rgba(255,106,0,0.1);
+  display:flex;align-items:center;justify-content:center;color:var(--hgshop-accent);font-weight:800;font-size:0.85rem;
+}
+.hgshop-features__title{font-weight:800;font-size:0.9rem;margin-bottom:2px;}
+.hgshop-features__text{font-size:0.82rem;color:rgba(0,0,0,0.55);line-height:1.45;margin:0;}
+
+/* ---- Gripsocks 2.0 — launch (homepage) ---- */
+.hgshop-launch{background:#0b0b0b;color:#fff;padding:76px 32px;position:relative;overflow:hidden;}
+.hgshop-launch__watermark{
+  position:absolute;right:-0.05em;top:50%;transform:translateY(-50%);
+  font-size:min(38vw,420px);font-weight:900;color:rgba(255,255,255,0.045);
+  line-height:1;letter-spacing:-0.04em;pointer-events:none;z-index:0;user-select:none;
+}
+.hgshop-launch__inner{position:relative;z-index:1;max-width:640px;margin:0 auto;text-align:center;}
+.hgshop-launch h2{font-size:clamp(2rem,4.4vw,3.2rem);text-transform:uppercase;font-weight:900;letter-spacing:-0.02em;margin:0 0 14px;text-wrap:balance;}
+.hgshop-launch p.hgshop-sub{margin:0 auto 30px;max-width:520px;}
+.hgshop-launch__features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:left;margin:0 0 34px;}
+.hgshop-launch__feature{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px 16px 14px;}
+.hgshop-launch__feature-title{font-weight:800;font-size:0.85rem;margin-bottom:4px;}
+.hgshop-launch__feature-text{font-size:0.78rem;color:rgba(255,255,255,0.62);line-height:1.5;margin:0;}
+
+@media (max-width:860px){
+  .hgshop-features__row{grid-template-columns:1fr;max-width:400px;margin:0 auto;}
+  .hgshop-launch__features{grid-template-columns:1fr;text-align:center;}
+  .hgshop-launch__watermark{display:none;}
+}

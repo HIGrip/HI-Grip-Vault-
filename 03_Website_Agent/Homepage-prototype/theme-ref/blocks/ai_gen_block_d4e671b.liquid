@@ -1,0 +1,397 @@
+{% doc %}
+  @prompt
+    Maak een knop die er sportief uit ziet die we zelf kunnen aanpassen welke positie die horizontaal staat
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-sport-button-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-sport-button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    width: 100%;
+    {% if block.settings.horizontal_alignment == 'left' %}
+      justify-content: flex-start;
+    {% elsif block.settings.horizontal_alignment == 'center' %}
+      justify-content: center;
+    {% elsif block.settings.horizontal_alignment == 'right' %}
+      justify-content: flex-end;
+    {% endif %}
+  }
+
+  .ai-sport-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    background: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    text-decoration: none;
+    text-transform: {{ block.settings.text_transform }};
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-sport-button-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .ai-sport-button-{{ ai_gen_id }}:hover::before {
+    left: 100%;
+  }
+
+  .ai-sport-button-{{ ai_gen_id }}:hover {
+    background: {{ block.settings.button_hover_background }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.border_hover_color }};
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-sport-button-{{ ai_gen_id }}:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-sport-button-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-sport-button-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-sport-button-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+      padding: {{ block.settings.padding_vertical | times: 0.8 }}px {{ block.settings.padding_horizontal | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-sport-button-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-sport-button-wrapper-{{ ai_gen_id }}">
+    <a href="{{ block.settings.button_link }}" class="ai-sport-button-{{ ai_gen_id }}">
+      {% if block.settings.show_icon and block.settings.icon_position == 'left' %}
+        <span class="ai-sport-button-icon-{{ ai_gen_id }}">
+          {% if block.settings.icon_type == 'arrow' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'play' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'star' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'lightning' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+            </svg>
+          {% endif %}
+        </span>
+      {% endif %}
+      
+      <span>{{ block.settings.button_text }}</span>
+      
+      {% if block.settings.show_icon and block.settings.icon_position == 'right' %}
+        <span class="ai-sport-button-icon-{{ ai_gen_id }}">
+          {% if block.settings.icon_type == 'arrow' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'play' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'star' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          {% elsif block.settings.icon_type == 'lightning' %}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/>
+            </svg>
+          {% endif %}
+        </span>
+      {% endif %}
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sportieve knop",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Knop inhoud"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Knoptekst",
+      "default": "Start nu"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Knop link"
+    },
+    {
+      "type": "header",
+      "content": "Positie"
+    },
+    {
+      "type": "select",
+      "id": "horizontal_alignment",
+      "label": "Horizontale uitlijning",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Achtergrondkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Tekstkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Randkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Hover achtergrondkleur",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover tekstkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_hover_color",
+      "label": "Hover randkleur",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Stijl"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Lettergrootte",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Letterdikte",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normaal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-vet"
+        },
+        {
+          "value": "700",
+          "label": "Vet"
+        },
+        {
+          "value": "800",
+          "label": "Extra vet"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Teksttransformatie",
+      "options": [
+        {
+          "value": "none",
+          "label": "Normaal"
+        },
+        {
+          "value": "uppercase",
+          "label": "Hoofdletters"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Verticale padding",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontale padding",
+      "min": 16,
+      "max": 64,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Hoekradius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Randbreedte",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Icoon"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icon",
+      "label": "Toon icoon",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "icon_type",
+      "label": "Icoontype",
+      "options": [
+        {
+          "value": "arrow",
+          "label": "Pijl"
+        },
+        {
+          "value": "play",
+          "label": "Afspelen"
+        },
+        {
+          "value": "star",
+          "label": "Ster"
+        },
+        {
+          "value": "lightning",
+          "label": "Bliksem"
+        }
+      ],
+      "default": "arrow"
+    },
+    {
+      "type": "select",
+      "id": "icon_position",
+      "label": "Icoonpositie",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icoongrootte",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sportieve knop"
+    }
+  ]
+}
+{% endschema %}

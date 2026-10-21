@@ -1,0 +1,317 @@
+- generic [ref=f51e7]:
+  - link "Skip to main content" [ref=f51e9] [cursor=pointer]:
+    - /url: "#mainContent"
+  - generic [ref=f51e11]:
+    - main [ref=f51e13]:
+      - generic [ref=f51e14]:
+        - article [ref=f51e15]:
+          - generic [ref=f51e24]:
+            - heading "The LightSpray™ running collection" [level=1] [ref=f51e25]
+            - paragraph [ref=f51e26]: The unearthly weightless technology behind our pinnacle running shoes.
+        - generic [ref=f51e27]:
+          - heading "Introducing the LightSpray Cloudboom Strike 2" [level=3] [ref=f51e28]
+          - paragraph [ref=f51e29]: Our lightest and fastest shoe ever. Proven by PBs and podiums worldwide.
+          - link "Buy now" [ref=f51e30] [cursor=pointer]:
+            - /url: /en-nl/products/cloudboom-strike-2-ls-u-3ug3002/unisex/white-lime-shoes-3UG30022929
+        - generic [ref=f51e32]:
+          - generic [ref=f51e35]:
+            - generic [ref=f51e36]:
+              - term [ref=f51e37]: Athlete
+              - definition [ref=f51e38]:
+                - generic [ref=f51e39]: Hellen Obiri
+                - generic [ref=f51e41]: Hellen Obiri
+            - generic [ref=f51e42]:
+              - term [ref=f51e43]: 2026 Route
+              - definition [ref=f51e44]:
+                - generic [ref=f51e45]: London
+                - generic [ref=f51e47]: London
+            - generic [ref=f51e48]:
+              - term [ref=f51e49]: Time
+              - definition [ref=f51e50]:
+                - generic [ref=f51e51]: 2:15:53
+                - generic [ref=f51e53]: 0:00:00
+            - generic [ref=f51e54]:
+              - term [ref=f51e55]: Shoe
+              - definition [ref=f51e56]:
+                - link "LightSpray Cloudboom Strike 2" [ref=f51e57] [cursor=pointer]:
+                  - /url: /en-nl/products/cloudboom-strike-2-ls-u-3ug3002/unisex/white-lime-shoes-3UG30022929
+          - blockquote [ref=f51e62]:
+            - paragraph [ref=f51e63]: “When you’re at mile 22, checking your pace just slows you down. You have to feel fast.”
+            - generic [ref=f51e64]: Hellen Obiri
+          - img "lightspray-strike2-shopthelook-image" [ref=f51e72]
+          - 'region "Athlete: Joe Klecker Route: Boston 2026 Time: 2:05:56 PB Improvement: 4:41 Shoe: The LightSpray Cloudboom Strike 2" [ref=f51e79]':
+            - paragraph [ref=f51e80]: "Athlete: Joe Klecker Route: Boston 2026 Time: 2:05:56 PB Improvement: 4:41 Shoe: The LightSpray Cloudboom Strike 2"
+          - generic [ref=f51e82]:
+            - generic:
+              - img "lightspray-strike2-yemancrippa-image"
+          - 'region "Athlete: Yeman Crippa Route: Paris 2026 Time: 2:05:18 PB Improvement: 00:48 Shoe: The LightSpray Cloudboom Strike 2" [ref=f51e84]':
+            - paragraph [ref=f51e85]: "Athlete: Yeman Crippa Route: Paris 2026 Time: 2:05:18 PB Improvement: 00:48 Shoe: The LightSpray Cloudboom Strike 2"
+        - generic [ref=f51e86]:
+          - heading "The LightSpray Cloudmonster 3 Hyper" [level=3] [ref=f51e87]
+          - paragraph [ref=f51e88]: Our most responsive super trainer. Worn by elite athletes on their road to 26.2
+          - link "Buy now" [ref=f51e89] [cursor=pointer]:
+            - /url: /en-nl/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670
+        - generic [ref=f51e99]:
+          - generic:
+            - img "lightspray-cloudmonster3hyper-yeman"
+        - generic [ref=f51e101]:
+          - generic [ref=f51e103]:
+            - generic:
+              - img "lightspray-monster-hyper-apollo"
+          - generic [ref=f51e105]:
+            - heading "Behind the tech" [level=2] [ref=f51e106]
+            - paragraph [ref=f51e107]: Most shoes take hours to build and many human hands. LightSpray™ takes just minutes to engineer an upper with a single robot arm. This manufacturing innovation minimizes waste and reduces carbon emissions from upper production, compared to other On racing shoes.
+            - link "Learn more" [ref=f51e108] [cursor=pointer]:
+              - /url: /en-nl/explore/technology/lightspray
+        - generic [ref=f51e109]:
+          - heading "The latest from LightSpray™" [level=2] [ref=f51e110]
+          - paragraph [ref=f51e111]: From lab to road. Around the world. Join the On LightSpray™ Tour and step into a space where dreams take shape, innovation comes to life up close and what was once imagined is made real.
+        - generic [ref=f51e113]:
+          - generic [ref=f51e115]:
+            - generic:
+              - img "lightspray-tour-running-group-image"
+          - generic [ref=f51e117]:
+            - heading "Sydney" [level=2] [ref=f51e118]
+            - paragraph [ref=f51e119]: August 27-30 2026
+            - link "Join us" [ref=f51e120] [cursor=pointer]:
+              - /url: http://events.on.com/lightspraytoursydney
+          - generic [ref=f51e122]:
+            - heading "Berlin" [level=2] [ref=f51e123]
+            - paragraph [ref=f51e124]: September 2026
+            - link "Notify me" [ref=f51e125] [cursor=pointer]:
+              - /url: /en-nl/explore/lightspray-berlin
+        - generic [ref=f51e127]:
+          - generic [ref=f51e129]:
+            - generic:
+              - img "event-image-grid-image-1"
+          - generic [ref=f51e131]:
+            - generic:
+              - img "event-image-grid-image-2"
+          - generic [ref=f51e133]:
+            - generic:
+              - img "event-image-grid-3"
+          - generic [ref=f51e135]:
+            - generic:
+              - img "ls-event-image-4"
+        - generic [ref=f51e136]:
+          - heading "FAQs" [level=1] [ref=f51e138]
+          - generic [ref=f51e139]:
+            - heading [level=2] [ref=f51e140]:
+              - button "Are LightSpray™ shoes waterproof or water-resistant?" [ref=f51e141] [cursor=pointer]
+            - region [ref=f51e149]:
+              - paragraph [ref=f51e150]: No. LightSpray™ shoes are engineered for maximum breathability and ultra-light performance, so they're not currently waterproof or water resistant.
+          - generic [ref=f51e151]:
+            - heading [level=2] [ref=f51e152]:
+              - button "How durable are LightSpray™ shoes for long-distance running?" [ref=f51e153] [cursor=pointer]
+            - region [ref=f51e161]:
+              - paragraph [ref=f51e162]: LightSpray™ uppers are tested to be just as tough as our standard running shoes. The key difference is the foam under your foot.
+              - paragraph [ref=f51e163]: The LightSpray Cloudboom Strike uses our ultra-responsive Helion™ HF super foam, which is optimized for peak performance over a shorter lifespan than a daily trainer.
+          - generic [ref=f51e164]:
+            - heading [level=2] [ref=f51e165]:
+              - button "What is the best way to clean LightSpray™ shoes?" [ref=f51e166] [cursor=pointer]
+            - region [ref=f51e174]:
+              - paragraph [ref=f51e175]: For daily care, simply brush off dry dirt. If a deeper clean is needed, gently hand wash the upper with warm water. Do not machine wash.
+          - generic [ref=f51e176]:
+            - heading [level=2] [ref=f51e177]:
+              - button "Can LightSpray™ running shoes handle off-road running?" [ref=f51e178] [cursor=pointer]
+            - region [ref=f51e186]:
+              - paragraph [ref=f51e187]: LightSpray™ is currently engineered purely for road running. We don't recommend them for trails or technical terrain.
+          - generic [ref=f51e188]:
+            - heading [level=2] [ref=f51e189]:
+              - button "How do LightSpray™ running shoes fit compared to other On shoes?" [ref=f51e190] [cursor=pointer]
+            - region [ref=f51e198]:
+              - paragraph [ref=f51e199]: LightSpray™ shoes fit true to size. The seamless upper is designed for absolute precision, creating a 'second-skin' feel without excess padding. So, for a locked-in, performance feel, stick to your standard On size.
+          - generic [ref=f51e200]:
+            - heading [level=2] [ref=f51e201]:
+              - button "Are LightSpray™ shoes good for daily runs or only races?" [ref=f51e202] [cursor=pointer]
+            - region [ref=f51e210]:
+              - paragraph [ref=f51e211]: Both. Originally a race-day tech, it is now built for training too. The LightSpray Cloudmonster 3 Hyper pairs that ultra-light, seamless upper with a max-cushioned bottom unit designed for high mileage.
+          - generic [ref=f51e212]:
+            - heading [level=2] [ref=f51e213]:
+              - button "Are LightSpray™ running shoes neutral?" [ref=f51e214] [cursor=pointer]
+            - region [ref=f51e222]:
+              - paragraph [ref=f51e223]: Yes. LightSpray™ supports a neutral running gait. The ultra-thin construction minimizes the material between your foot and the foam, providing a direct, responsive ride.
+          - generic [ref=f51e224]:
+            - heading [level=2] [ref=f51e225]:
+              - button "How are LightSpray™ uppers different from knit or mesh uppers?" [ref=f51e226] [cursor=pointer]
+            - region [ref=f51e234]:
+              - paragraph [ref=f51e235]: Traditional uppers are cut, sewn and glued from multiple pieces of fabric. LightSpray™ is fused. A robotic arm sprays a single 1.5km filament directly onto the midsole in just three minutes. The result is a seamless, glueless one-piece upper that's lighter than conventional materials and free of distinct pressure points.
+          - generic [ref=f51e236]:
+            - heading [level=2] [ref=f51e237]:
+              - button "Can LightSpray™ shoes be returned or exchanged if they don’t fit?" [ref=f51e238] [cursor=pointer]
+            - region [ref=f51e246]:
+              - paragraph [ref=f51e247]: Because LightSpray™ shoes are limited edition, we cannot offer direct exchanges. If the fit isn’t perfect, simply return them unworn and in their original packaging for a full refund.
+          - generic [ref=f51e248]:
+            - heading [level=2] [ref=f51e249]:
+              - button "Are LightSpray™ shoes good for runners with wide feet?" [ref=f51e250] [cursor=pointer]
+            - region [ref=f51e258]:
+              - paragraph [ref=f51e259]: LightSpray™ shoes currently come in standard width only. The precision one-piece upper stretches less than traditional mesh. So, if you typically require a wider fit, we strongly recommend trying them on in-store first.
+          - generic [ref=f51e260]:
+            - heading [level=2] [ref=f51e261]:
+              - button "Do LightSpray™ shoes require a break-in period?" [ref=f51e262] [cursor=pointer]
+            - region [ref=f51e270]:
+              - paragraph [ref=f51e271]: LightSpray™ shoes are race-ready out of the box. Over time, the upper will subtly adapt to your foot shape, creating a custom fit without ever becoming loose or losing stability.
+          - generic [ref=f51e272]:
+            - heading [level=2] [ref=f51e273]:
+              - button "How can LightSpray™ technology improve my running times?" [ref=f51e274] [cursor=pointer]
+            - region [ref=f51e282]:
+              - paragraph [ref=f51e283]: It comes down to weight and focus. A LightSpray™ upper weighs as little as 30 grams, saving critical weight. The seamless design helps you focus on your cadence and pace, rather than adjusting your gear.
+          - generic [ref=f51e284]:
+            - heading [level=2] [ref=f51e285]:
+              - button "What makes LightSpray™ better than traditional sewn uppers?" [ref=f51e286] [cursor=pointer]
+            - region [ref=f51e294]:
+              - paragraph [ref=f51e295]: Traditional uppers use seams and glue. That can create pressure points. A LightSpray™ upper is one piece – reducing the risk of blisters and creating a 'second-skin' feel.
+          - generic [ref=f51e296]:
+            - heading [level=2] [ref=f51e297]:
+              - button "Are LightSpray™ running shoes suitable for marathon training?" [ref=f51e298] [cursor=pointer]
+            - region [ref=f51e306]:
+              - paragraph [ref=f51e307]: Absolutely. The LightSpray Cloudmonster 3 Hyper is engineered for high mileage. With 77% more Helion™ HF hyper foam than the original Cloudmonster Hyper, it delivers elite energy return without a plate – maximizing impact protection and helping to keep your legs fresh.
+          - generic [ref=f51e308]:
+            - heading [level=2] [ref=f51e309]:
+              - button "How does LightSpray™ technology reduce waste?" [ref=f51e310] [cursor=pointer]
+            - region [ref=f51e318]:
+              - paragraph [ref=f51e319]: LightSpray™ reimagines shoe construction to minimize waste. We spray material directly onto the shoe mold and using only the exact amount of filament needed. Eliminating offcut scraps. The assembly process minimizes waste, eliminates the need for glues and produces 75% less CO₂ when produced at On Labs Zurich, compared to other On racing shoes
+          - generic [ref=f51e320]:
+            - heading [level=2] [ref=f51e321]:
+              - button "Will LightSpray™ shoes stretch over time?" [ref=f51e322] [cursor=pointer]
+            - region [ref=f51e330]:
+              - paragraph [ref=f51e331]: Yes, but intentionally. A LightSpray™ upper is designed to mold to your foot’s unique shape over time. It creates a personalized fit without over-stretching or sacrificing the secure lockdown you need for running.
+          - generic [ref=f51e332]:
+            - heading [level=2] [ref=f51e333]:
+              - button "Do LightSpray™ soles provide good traction in wet conditions?" [ref=f51e334] [cursor=pointer]
+            - region [ref=f51e342]:
+              - paragraph [ref=f51e343]: Yes. The outsoles of our LightSpray™ shoes feature the same high-traction compounds found in our standard road models, delivering reliable grip in wet and dry conditions.
+          - generic [ref=f51e344]:
+            - heading [level=2] [ref=f51e345]:
+              - button "Where can I try it and buy LightSpray™ running shoes?" [ref=f51e346] [cursor=pointer]
+            - region [ref=f51e354]:
+              - paragraph [ref=f51e355]: You can find LightSpray™ models on our website, at On retail stores and at select premium partners. Also, keep an eye out at major marathons. We might just be showcasing the technology live. Check our events page for more details.
+          - generic [ref=f51e356]:
+            - heading [level=2] [ref=f51e357]:
+              - button "Can I wash my LightSpray™ running shoes in the washing machine?" [ref=f51e358] [cursor=pointer]
+            - region [ref=f51e366]:
+              - paragraph [ref=f51e367]: No. To maintain the integrity of the LightSpray™ filament, do not use a washing machine. For daily care, simply brush off dry dirt. If a deeper clean is needed, gently hand wash the upper with warm water.
+    - contentinfo [ref=f51e369]:
+      - region "Our mission at On is to ignite the human spirit through movement. Inspired by athletes. Powered by Swiss engineering. Move with us, and Dream On. Learn more" [ref=f51e371]:
+        - paragraph [ref=f51e372]: Our mission at On is to ignite the human spirit through movement. Inspired by athletes. Powered by Swiss engineering. Move with us, and Dream On.
+        - paragraph [ref=f51e373]:
+          - link "Learn more" [ref=f51e374] [cursor=pointer]:
+            - /url: /en-nl/explore/about-on
+      - generic [ref=f51e376]:
+        - paragraph [ref=f51e377]: Stay in the loop, with exclusive offers and product previews.
+        - generic [ref=f51e378]:
+          - generic [ref=f51e379]:
+            - generic [ref=f51e380]:
+              - generic: Email *
+              - textbox "Email" [ref=f51e381]
+            - alert [ref=f51e384]: Required field
+          - generic [ref=f51e387]:
+            - generic [ref=f51e391] [cursor=pointer]:
+              - checkbox "Receive personalized content across digital media platforms based on your interactions with On. Read more" [ref=f51e393]
+              - generic [ref=f51e395]:
+                - text: Receive personalized content across digital media platforms based on your interactions with On.
+                - button "Read more" [ref=f51e396]
+            - button "Subscribe" [ref=f51e398] [cursor=pointer]
+            - region "By continuing, you accept our privacy policy. Your personal data will be passed on to On AG so we can contact you about our products and send you surveys via e-mail. Data processing and the statistical analysis of the data will be carried out by our service providers, Sailthru (USA) and Braze (USA). You can unsubscribe at any time by using the unsubscribe link in each e-mail. Please visit the On Group Privacy Notice for more information." [ref=f51e399]:
+              - paragraph [ref=f51e400]:
+                - text: By continuing, you accept our privacy policy. Your personal data will be passed on to On AG so we can contact you about our products and send you surveys via e-mail. Data processing and the statistical analysis of the data will be carried out by our service providers, Sailthru (USA) and Braze (USA). You can unsubscribe at any time by using the unsubscribe link in each e-mail. Please visit the
+                - link "On Group Privacy Notice" [ref=f51e401] [cursor=pointer]:
+                  - /url: https://customer-service.on-running.com/privacy_policy
+                - text: for more information.
+      - list [ref=f51e403]:
+        - listitem [ref=f51e404]:
+          - link "Help & support" [ref=f51e405] [cursor=pointer]:
+            - /url: /en-nl/support
+        - listitem [ref=f51e411]:
+          - button "Chat" [ref=f51e412] [cursor=pointer]
+      - navigation "primary footer" [ref=f51e420]:
+        - list [ref=f51e421]:
+          - listitem [ref=f51e422]:
+            - link "Become a member" [ref=f51e423] [cursor=pointer]:
+              - /url: /en-nl/login
+          - listitem [ref=f51e424]:
+            - link "Refer a friend" [ref=f51e425] [cursor=pointer]:
+              - /url: /en-nl/refer-a-friend
+          - listitem [ref=f51e426]:
+            - link "Gift cards" [ref=f51e427] [cursor=pointer]:
+              - /url: /en-nl/products/digital-gift-card-907644gc
+          - listitem [ref=f51e428]:
+            - link "On stores" [ref=f51e429] [cursor=pointer]:
+              - /url: /en-nl/explore/stores
+          - listitem [ref=f51e430]:
+            - link "Shop locator" [ref=f51e431] [cursor=pointer]:
+              - /url: https://customer-service.on-running.com/en-nl/dealers
+          - listitem [ref=f51e432]:
+            - link "Supplier portal" [ref=f51e433] [cursor=pointer]:
+              - /url: /en-nl/explore/on-coupa-supplier-portal
+      - navigation "Secondary footer" [ref=f51e435]:
+        - list [ref=f51e436]:
+          - listitem [ref=f51e437]:
+            - link "About On" [ref=f51e438] [cursor=pointer]:
+              - /url: /en-nl/explore/about-on
+          - listitem [ref=f51e439]:
+            - link "Ondesign" [ref=f51e440] [cursor=pointer]:
+              - /url: https://design.on.com/
+          - listitem [ref=f51e441]:
+            - link "Careers" [ref=f51e442] [cursor=pointer]:
+              - /url: https://culture.on.com/
+          - listitem [ref=f51e443]:
+            - link "Investors" [ref=f51e444] [cursor=pointer]:
+              - /url: https://investors.on-running.com/home/default.aspx
+          - listitem [ref=f51e445]:
+            - link "Press & media" [ref=f51e446] [cursor=pointer]:
+              - /url: https://press.on-running.com/
+          - listitem [ref=f51e447]:
+            - link "Affiliates" [ref=f51e448] [cursor=pointer]:
+              - /url: /en-nl/explore/affiliates
+          - listitem [ref=f51e449]:
+            - link "Backstage" [ref=f51e450] [cursor=pointer]:
+              - /url: https://backstage.on-running.com/#/login
+      - generic [ref=f51e452]:
+        - generic [ref=f51e453]:
+          - paragraph [ref=f51e454]: © On 2026
+          - navigation "utility footer" [ref=f51e455]:
+            - list [ref=f51e456]:
+              - listitem [ref=f51e457]:
+                - link "Terms & conditions" [ref=f51e458] [cursor=pointer]:
+                  - /url: /en-nl/terms-and-conditions
+              - listitem [ref=f51e459]:
+                - link "Privacy policy" [ref=f51e460] [cursor=pointer]:
+                  - /url: /en-nl/privacy-policy
+              - listitem [ref=f51e461]:
+                - link "Accessibility" [ref=f51e462] [cursor=pointer]:
+                  - /url: /en-nl/accessibility
+              - listitem [ref=f51e463]:
+                - link "Imprint" [ref=f51e464] [cursor=pointer]:
+                  - /url: /en-nl/company-information
+              - listitem [ref=f51e465]:
+                - link "Vulnerability reporting" [ref=f51e466] [cursor=pointer]:
+                  - /url: https://hackerone.com/on
+              - listitem [ref=f51e467]:
+                - link "Consent Settings" [ref=f51e468] [cursor=pointer]:
+                  - /url: /en-nl/explore/lightspray
+              - listitem [ref=f51e469]:
+                - link "Legal guarantee" [disabled] [ref=f51e470] [cursor=pointer]:
+                  - /url: "#"
+        - list [ref=f51e472]:
+          - listitem [ref=f51e473]:
+            - link "Facebook" [ref=f51e474] [cursor=pointer]:
+              - /url: https://www.facebook.com/on
+          - listitem [ref=f51e478]:
+            - link "Instagram" [ref=f51e479] [cursor=pointer]:
+              - /url: https://www.instagram.com/on
+          - listitem [ref=f51e483]:
+            - link "LinkedIn" [ref=f51e484] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/on-ag/mycompany/
+          - listitem [ref=f51e488]:
+            - link "Strava" [ref=f51e489] [cursor=pointer]:
+              - /url: https://www.strava.com/clubs/on-226387
+          - listitem [ref=f51e493]:
+            - link "TikTok" [ref=f51e494] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@on
+          - listitem [ref=f51e498]:
+            - link "Twitter" [ref=f51e499] [cursor=pointer]:
+              - /url: https://x.com/on_running
+          - listitem [ref=f51e503]:
+            - link "YouTube" [ref=f51e504] [cursor=pointer]:
+              - /url: https://www.youtube.com/On-Running

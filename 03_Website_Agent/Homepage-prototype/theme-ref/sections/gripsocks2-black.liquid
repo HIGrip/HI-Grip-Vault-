@@ -1,0 +1,38 @@
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="g2 g2-black">
+  <div class="g2-black__media">
+    {%- if s.image != blank -%}
+      {{ s.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '500,800,1100,1400', sizes: '(min-width:769px) 50vw, 100vw', alt: s.image.alt | default: 'Performance Grip Socks 2.0 Zwart' }}
+    {%- else -%}
+      <div class="g2-black__placeholder"><span>Foto zwarte gripsok ontbreekt nog</span></div>
+    {%- endif -%}
+  </div>
+  <div class="g2-black__content">
+    {%- if s.eyebrow != blank -%}<span class="g2-eyebrow g2-eyebrow--dark"><span class="dot"></span> {{ s.eyebrow }}</span>{%- endif -%}
+    <h2 class="g2-black__title">{{ s.title }}</h2>
+    {%- if s.copy != blank -%}<p class="g2-black__copy">{{ s.copy }}</p>{%- endif -%}
+    {%- if s.cta_text != blank -%}<a href="{{ s.cta_url | default: '#' }}" class="g2-black__btn">{{ s.cta_text }} &rarr;</a>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — zwart",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Nieuwe kleur" },
+    { "type": "text", "id": "title", "label": "Titel", "default": "Nu ook in het zwart." },
+    { "type": "textarea", "id": "copy", "label": "Tekst", "default": "Dezelfde grip, dezelfde 2.0-technologie — nu ook volledig in het zwart. Kies de kleur die bij jouw stijl past." },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Bekijk Gripsocks 2.0 — Zwart" },
+    { "type": "url", "id": "cta_url", "label": "Knop-link" },
+    { "type": "header", "content": "Foto" },
+    { "type": "image_picker", "id": "image", "label": "Foto zwarte gripsok" }
+  ],
+  "presets": [ { "name": "Gripsocks 2.0 — zwart" } ]
+}
+{% endschema %}

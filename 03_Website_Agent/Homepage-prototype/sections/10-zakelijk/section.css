@@ -1,0 +1,128 @@
+/* 10 ZAKELIJK · drie typekaarten (club, winkel, studio) met eigen beeld, één CTA naar de zakelijke pagina.
+   Desktop: de kaart onder de muis wordt breder, de foto groeit mee en de tekst schuift met de rand mee.
+   Mobiel: kaarten gestapeld; een tik zet dezelfde staat (.is-on). Reduced motion: geen breedte- of schaalbeweging. */
+.hp-10 { background: var(--hi-offwhite); color: var(--hi-black); }
+
+.hp-10-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "h2" "lead" "cards" "cta";
+}
+.hp-10-h2 { grid-area: h2; max-width: 13ch; }
+.hp-10-lead { grid-area: lead; margin-top: var(--hp-space-sm); color: var(--hi-graphite); }
+.hp-10-cta { grid-area: cta; justify-self: start; margin-top: var(--hp-space-ml); }
+
+/* kaarten */
+.hp-10-cards { grid-area: cards; display: grid; gap: var(--hp-space-ml); margin-top: var(--hp-space-ml); }
+.hp-10-item { min-width: 0; }
+.hp-10-card { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; border-radius: var(--hp-radius-media); -webkit-tap-highlight-color: transparent; }
+
+.hp-10-media {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--hp-radius-media);
+  background: var(--hi-white);
+}
+.hp-10-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(var(--hp-10-x, 0)) scale(calc(var(--hp-10-base, 1) * var(--hp-10-s, 1)));
+  transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+
+/* club: echte foto, uitsnede op de sokken */
+.hp-10-media--photo { background: var(--hi-near-black); }
+.hp-10-media--photo .hp-10-img { object-fit: cover; object-position: 50% 72%; transform-origin: 50% 80%; }
+
+/* winkel: zwart en wit naast elkaar, alsof ze in het schap hangen; bij focus schuiven ze uit elkaar */
+.hp-10-sock { inset: auto; top: 6%; left: 50%; width: auto; height: 88%; aspect-ratio: 1 / 1; object-fit: contain; }
+.hp-10-sock--wit { --hp-10-x: -84%; }
+.hp-10-sock--zwart { --hp-10-x: -16%; }
+
+/* studio: de zes lengtes, vrij in het witte frame (het bestand heeft veel witrand: basisschaal 1.4) */
+.hp-10-heights { inset: var(--hp-space-sm); width: calc(100% - 2 * var(--hp-space-sm)); height: calc(100% - 2 * var(--hp-space-sm)); object-fit: contain; --hp-10-base: 1.4; }
+
+/* tekst */
+.hp-10-body { display: grid; grid-template-rows: auto auto 1fr; gap: var(--hp-space-xs); justify-items: start; padding-top: var(--hp-space-ms); }
+.hp-10-title { font-weight: 800; font-size: var(--hp-type-h3); line-height: 1.05; }
+.hp-10-text { font-size: 15px; line-height: 1.55; color: var(--hi-graphite); max-width: 36ch; }
+.hp-10-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  align-self: end;
+  margin-top: var(--hp-space-xs);
+  font: 700 13px/1 var(--hp-type-family);
+  letter-spacing: var(--hp-type-track-label);
+  text-transform: uppercase;
+}
+.hp-10-chev {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--hi-black);
+  transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), transform var(--hp-dur-1) var(--hp-ease);
+}
+.hp-10-chev svg { width: 12px; height: 12px; }
+
+/* actieve staat: hover (desktop), focus (toetsenbord), tik (.is-on) */
+.hp-10-item.is-on .hp-10-media--photo .hp-10-img,
+.hp-10-card:focus-visible .hp-10-media--photo .hp-10-img { --hp-10-s: 1.06; }
+.hp-10-item.is-on .hp-10-sock--wit,
+.hp-10-card:focus-visible .hp-10-sock--wit { --hp-10-x: -96%; --hp-10-s: 1.04; }
+.hp-10-item.is-on .hp-10-sock--zwart,
+.hp-10-card:focus-visible .hp-10-sock--zwart { --hp-10-x: -4%; --hp-10-s: 1.04; }
+.hp-10-item.is-on .hp-10-heights,
+.hp-10-card:focus-visible .hp-10-heights { --hp-10-s: 1.06; }
+.hp-10-item.is-on .hp-10-chev,
+.hp-10-card:focus-visible .hp-10-chev { background-color: var(--hi-black); color: var(--hi-white); transform: translateX(3px); }
+
+@media (hover: hover) {
+  .hp-10-card:hover .hp-10-media--photo .hp-10-img { --hp-10-s: 1.06; }
+  .hp-10-card:hover .hp-10-sock--wit { --hp-10-x: -96%; --hp-10-s: 1.04; }
+  .hp-10-card:hover .hp-10-sock--zwart { --hp-10-x: -4%; --hp-10-s: 1.04; }
+  .hp-10-card:hover .hp-10-heights { --hp-10-s: 1.06; }
+  .hp-10-card:hover .hp-10-chev { background-color: var(--hi-black); color: var(--hi-white); transform: translateX(3px); }
+}
+
+@media (min-width: 769px) {
+  .hp-10-inner {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas: "h2 lead" "h2 cta" "cards cards";
+    column-gap: var(--hp-space-lg);
+    align-items: end;
+  }
+  .hp-10-h2 { max-width: 12ch; }
+  .hp-10-lead { margin-top: 0; align-self: end; }
+  .hp-10-cta { margin-top: var(--hp-space-ms); align-self: end; }
+  .hp-10-cards { margin-top: var(--hp-space-xl); grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--hp-space-ms); }
+  .hp-10-media { aspect-ratio: 4 / 5; }
+}
+
+/* Vanaf 900 px een rij die meebeweegt: de actieve kaart krijgt meer breedte.
+   De tekst heeft een vaste breedte (de smalste kaartbreedte), zodat hij meeschuift zonder opnieuw af te breken. */
+@media (min-width: 900px) {
+  .hp-10-cards { display: flex; align-items: stretch; container-type: inline-size; }
+  .hp-10-item { flex: 1 1 0; transition: flex-grow var(--hp-dur-2) var(--hp-ease); }
+  .hp-10-item.is-on, .hp-10-item:has(.hp-10-card:focus-visible) { flex-grow: 1.5; }
+  .hp-10-media { aspect-ratio: auto; height: clamp(380px, 34vw, 520px); }
+  .hp-10-sock { top: 15%; height: 70%; }
+  .hp-10-body { flex: 1; width: calc((100cqw - 2 * var(--hp-space-ms)) / 3.5); }
+}
+@media (min-width: 900px) and (hover: hover) {
+  .hp-10-item:has(.hp-10-card:hover) { flex-grow: 1.5; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-10-item.is-on, .hp-10-item:has(.hp-10-card:focus-visible), .hp-10-item:has(.hp-10-card:hover) { flex-grow: 1; }
+  .hp-10-img { transform: translateX(var(--hp-10-x, 0)) scale(var(--hp-10-base, 1)); }
+  .hp-10-sock--wit, .hp-10-item.is-on .hp-10-sock--wit, .hp-10-card:focus-visible .hp-10-sock--wit, .hp-10-card:hover .hp-10-sock--wit { --hp-10-x: -84%; }
+  .hp-10-sock--zwart, .hp-10-item.is-on .hp-10-sock--zwart, .hp-10-card:focus-visible .hp-10-sock--zwart, .hp-10-card:hover .hp-10-sock--zwart { --hp-10-x: -16%; }
+  .hp-10-item.is-on .hp-10-chev, .hp-10-card:focus-visible .hp-10-chev, .hp-10-card:hover .hp-10-chev { transform: none; }
+}

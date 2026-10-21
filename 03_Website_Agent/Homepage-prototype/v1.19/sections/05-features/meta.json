@@ -1,0 +1,35 @@
+{
+  "id": "05",
+  "name": "features",
+  "bg": "--hi-studio",
+  "assets": [
+    "frames360"
+  ],
+  "links": [
+    "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart"
+  ],
+  "interactions": [
+    "binnenscrollen (stage ≥45% in beeld): de sok draait één keer rond en landt in 2× --hp-dur-3 (1,8 s) op feature 1 Maximale grip, met marker 1",
+    "automatische doorloop daarna: de lijn boven de actieve feature vult zich in 5× --hp-dur-3 (4,5 s, lineair), bij animationend draait het model naar de volgende zone (1→8→1). Pauze (lijn staat stil) zolang de muis boven model of lijst is, de focus in de sectie staat of de sectie uit beeld is. Elke eigen keuze (hover, tik, swipe, slepen, pijltjes, Hele sok) stopt de doorloop definitief",
+    "hover (muis, 70 ms intentie) of tik/Enter op een feature: draai over de frames via de kortste weg met --hp-ease, 600–900 ms (schaalt met de afstand), zoom en middelpunt tweenen tegelijk; elke nieuwe tween start vanaf de huidige stand, dus geen sprongen bij snel wisselen",
+    "overmengen: tussen twee opeenvolgende frames wordt het volgende frame met de fractie over het huidige getekend (crossfade), dus de draai loopt zonder trappetjes",
+    "marker 1–8 op de zone van de actieve feature: zwarte ring met volt cijfer, draait mee met het model (draaimodel rond een verticale as, x = 0,5), gedimd als de zone achterlangs draait, verdwijnt buiten beeld",
+    "mobiel (≤768px): de acht features als swipebare kaartenrij onder het model (native scroll-snap, de volgende kaart piept). Tik op een kaart of swipe een kaart naar de startpositie: het model draait mee. Bij de automatische doorloop schuift de rij zelf mee",
+    "slepen (pointer events, touch-action pan-y) en pijltjes draaien vrij met korte uitrol; de actieve feature en marker blijven en bewegen mee",
+    "knop 'Hele sok': terug naar preset totaal, marker weg",
+    "frames: 0 bij paginalading; alle 137 laden via hpInView zodra de sectie binnen 1,5 schermhoogte komt (presets eerst, 6 tegelijk, mislukte frames 2× opnieuw)",
+    "reduced motion: geen rondgang, geen doorloop, geen uitrol; bij binnenscrollen staat feature 1 direct actief, presets springen, de rij springt, slepen werkt"
+  ],
+  "layout": "8 features (Lars 19-10, ronde 2): de zeven uit facts.json features_20 plus Hoogwaardige materialen, in de volgorde 1 Maximale grip, 2 Compressie, 3 Versterkte hiel, 4 Ademend, 5 Coolmax®, 6 Naadloos, 7 Special cushioning, 8 Hoogwaardige materialen. Desktop (≥1024): model links, rechts een compact raster van 2 × 4 met lijnen en het koopblok eronder, verticaal gecentreerd op de sok. Tablet (769–1023): model gecentreerd, raster 2 × 4 eronder. Mobiel: model, bediening, swipebare kaartenrij, koopblok.",
+  "feature_presets": {
+    "grip": "preset grip (frame 96, onderkant); marker op het siliconenpatroon",
+    "compressie": "ZELF GEKOZEN: frame 264, zoom 1,45, cx 0,5, cy 0,45 (zijaanzicht); marker op de geribde band boven de hiel rond de enkel",
+    "hiel": "preset hiel (frame 6); marker op de hielkap",
+    "ademend": "preset ademend (frame 300); marker op het open mesh-vlak",
+    "coolmax": "ZELF GEKOZEN: frame 360, zoom 1,5, cx 0,5, cy 0,4 (vooraanzicht); marker op het gebreide garen van de schacht",
+    "naadloos": "preset teen (frame 336); marker op de teenzone",
+    "cushioning": "ZELF GEKOZEN: frame 216, zoom 1,5, cx 0,5, cy 0,68 (schuin van achter-opzij op de zool); marker onder de voorvoet",
+    "materialen": "preset materialen (frame 0, zoom 1,15, hele sok); marker midden op de sok"
+  },
+  "notes": "Zelf gekozen presets (compressie, coolmax, cushioning) staan lokaal in section.js, niet in assets.json; door Lars te bevestigen. Markerpunten (x, y, diepte) heb ik zelf op de presetframes gezet; ze komen niet uit de vault. Teksten: grip, compressie en hiel in je-vorm uit copy.json, de andere vier letterlijk uit facts.json, materialen uit copy.json. Omdat facts.json geen slotpunt heeft, staan alle acht teksten zonder punt (een punt toevoegen zou de lint-tekstcontrole breken). Special cushioning is in facts.json een werkomschrijving (r121) en Hoogwaardige materialen staat niet in de productwaarheid: beide te bevestigen. De gedeelde server op 8766 weigerde onder last soms frame-verzoeken (ERR_CONNECTION_REFUSED); de retry in section.js vangt dat op."
+}

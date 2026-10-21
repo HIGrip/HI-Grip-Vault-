@@ -1,0 +1,55 @@
+{% doc %}
+  Rendert één generiek blok (kop, tekst, knop, afbeelding, ruimte) van een mv-sectie.
+  @param {object} block - het blok
+  @param {number} i - volgnummer, voor de vertraging van de onthulanimatie
+  @param {string} zone - boven | midden | onder (alleen blokken met die plek worden getoond)
+{% enddoc %}
+{%- liquid
+  assign b = block.settings
+  assign show = true
+  if b.plaats != blank and b.plaats != zone
+    assign show = false
+  endif
+  assign delay = i | times: 0.12
+-%}
+{%- if show -%}
+  {%- case block.type -%}
+    {%- when 'kop' -%}
+      {%- assign tag = b.tag | default: 'h2' -%}
+      <{{ tag }} class="{% unless b.niveau == 'label' %}mv-h2 {% endunless %}mv-rv{% if b.niveau == 'klein' %} mv-h2--s{% elsif b.niveau == 'label' %} mv-lbl{% endif %}"{% render 'mv-ta', d: b.align, m: b.align_m %} style="--d:{{ delay }}s" {{ block.shopify_attributes }}>{{ b.tekst }}</{{ tag }}>
+    {%- when 'tekst' -%}
+      {%- liquid
+        case b.stijl
+          when 'lead'
+            assign cls = 'mv-lead'
+          when 'gedempt'
+            assign cls = 'mv-muted'
+          when 'slogan'
+            assign cls = 'mv-slogan'
+          else
+            assign cls = 'mv-body'
+        endcase
+      -%}
+      <p class="{{ cls }} mv-rv"{% render 'mv-ta', d: b.align, m: b.align_m %} style="--d:{{ delay }}s" {{ block.shopify_attributes }}>{{ b.tekst }}
+        {%- if b.link_label != blank and b.link_url != blank %} <a class="mv-textlink" href="{{ b.link_url }}">{{ b.link_label | escape }}</a>{% endif -%}
+      </p>
+    {%- when 'knop' -%}
+      {%- if b.label != blank -%}
+        {%- if b.stijl == 'link' -%}
+          <p class="mv-btnrow mv-rv"{% render 'mv-ta', d: b.align, m: b.align_m %} style="--d:{{ delay }}s" {{ block.shopify_attributes }}><a class="mv-textlink" href="{{ b.url | default: '#' }}">{{ b.label | escape }}</a></p>
+        {%- else -%}
+          <p class="mv-btnrow mv-rv"{% render 'mv-ta', d: b.align, m: b.align_m %} style="--d:{{ delay }}s" {{ block.shopify_attributes }}><a class="mv-pill mv-pill--{{ b.stijl | default: 'dark' }}" href="{{ b.url | default: '#' }}">{{ b.label | escape }}</a></p>
+        {%- endif -%}
+      {%- endif -%}
+    {%- when 'afbeelding' -%}
+      <figure class="mv-fig mv-fig--{{ b.breedte | default: 'full' }} mv-rv"{% render 'mv-ta', d: b.align, m: b.align_m %} style="--d:{{ delay }}s" {{ block.shopify_attributes }}>
+        {%- if b.image != blank -%}
+          {{ b.image | image_url: width: 1800 | image_tag: loading: 'lazy', alt: b.alt, widths: '600, 1000, 1400, 1800', sizes: '(min-width: 1000px) 60vw, 100vw' }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'mv-fig__ph' }}
+        {%- endif -%}
+      </figure>
+    {%- when 'ruimte' -%}
+      <div class="mv-gap" style="--mv-gap:{{ b.hoogte }}px;--mv-gap-m:{{ b.hoogte_m }}px" aria-hidden="true" {{ block.shopify_attributes }}></div>
+  {%- endcase -%}
+{%- endif -%}

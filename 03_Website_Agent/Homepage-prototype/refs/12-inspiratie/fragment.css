@@ -1,0 +1,17 @@
+.outro { overflow: hidden; padding-block: var(--space-xl); view-timeline-name: --outro; view-timeline-axis: block; }
+.outro__title { margin: 0 0 var(--space-md); font: 900 italic clamp(3.25rem, 15vw, 5rem)/.92 var(--font); letter-spacing: var(--track-head); text-transform: uppercase; }
+.outro__l { display: block; }
+.outro__l--2 { color: var(--hi-yellow); }
+  .outro { padding-block: var(--space-xxl); }
+  .outro__title { font-size: 8.2vw; margin-bottom: var(--space-lg); }
+/* outro: two lines drift in opposite directions while you scroll (desktop only) */
+    @keyframes drift-l { from { transform: translateX(6%); } to { transform: translateX(-6%); } }
+    @keyframes drift-r { from { transform: translateX(-6%); } to { transform: translateX(6%); } }
+    .outro__l { white-space: nowrap; animation: drift-l linear both; animation-timeline: --outro; }
+    .outro__l--2 { animation-name: drift-r; }
+<section class="sec sec--black outro" aria-labelledby="h-outro">
+    <h2 class="outro__title" id="h-outro"><span class="outro__l outro__l--1">Ga door waar</span> <span class="outro__l outro__l--2">anderen stoppen.</span></h2>
+  /* Sticky mobile CTA: visible after the hero, hidden again at the outro */
+  var seen = { hero: true, outro: false };
+  function syncCta() { if (cta) cta.classList.toggle('is-visible', !seen.hero && !seen.outro); }
+  [['.hero', 'hero'], ['.outro', 'outro']].forEach(function (pair) {

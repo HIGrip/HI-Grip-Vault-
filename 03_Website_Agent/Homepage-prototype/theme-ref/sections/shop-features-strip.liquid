@@ -1,0 +1,44 @@
+{{ 'padel-page.css' | asset_url | stylesheet_tag }}
+{{ 'shop-page.css' | asset_url | stylesheet_tag }}
+
+<section class="hgshop-features">
+  <div class="page-width hgshop-features__row">
+    {%- for block in section.blocks -%}
+      <div class="hgshop-features__item" {{ block.shopify_attributes }}>
+        <span class="hgshop-features__icon" aria-hidden="true">&#10003;</span>
+        <div>
+          <div class="hgshop-features__title">{{ block.settings.title }}</div>
+          <p class="hgshop-features__text">{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop — kenmerken-strip",
+  "tag": "section",
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Kenmerk",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Titel" },
+        { "type": "text", "id": "text", "label": "Tekst" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Shop — kenmerken-strip",
+      "blocks": [
+        { "type": "feature", "settings": { "title": "Nauwkeurige maatvoering", "text": "3 maten voor een pasvorm die niet verschuift" } },
+        { "type": "feature", "settings": { "title": "Twee kleuren", "text": "Zwart of wit — kies je statement" } },
+        { "type": "feature", "settings": { "title": "Zelfde bewezen grip", "text": "95% meer grip, wetenschappelijk getest" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

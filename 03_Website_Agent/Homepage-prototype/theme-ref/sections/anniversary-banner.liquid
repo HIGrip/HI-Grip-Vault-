@@ -1,0 +1,192 @@
+{%- comment -%} hi-ann: 1 jaar HÏ Grip — 60/40 split layout {%- endcomment -%}
+
+{{ 'anniversary-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="hi-ann" aria-label="1 jaar HÏ Grip — 50% korting actie">
+
+  {%- comment -%} BLOK A — Hero foto (60%) {%- endcomment -%}
+  <div class="hi-ann__visual">
+    {%- if section.settings.image_1 != blank -%}
+      {{- section.settings.image_1 | image_url: width: 1400 | image_tag:
+          loading: 'eager',
+          fetchpriority: 'high',
+          alt: 'HÏ Grip — 1 jaar performance',
+          class: 'hi-ann__hero-img' -}}
+    {%- else -%}
+      <div class="hi-ann__hero-placeholder"></div>
+    {%- endif -%}
+
+    <div class="hi-ann__overlay">
+      <p class="hi-ann__eyebrow">8 · 5 · 2025</p>
+      <h2 class="hi-ann__headline">{{ section.settings.headline }}</h2>
+      <p class="hi-ann__subline">{{ section.settings.subline }}</p>
+    </div>
+  </div>
+
+  {%- comment -%} BLOK B — Deal (40%) {%- endcomment -%}
+  <div class="hi-ann__deal">
+
+    <div class="hi-ann__discount">
+      <span class="hi-ann__num">50%</span>
+      <span class="hi-ann__word">KORTING</span>
+    </div>
+
+    <p class="hi-ann__tagline">{{ section.settings.tagline }}</p>
+
+    <div class="hi-ann__countdown" id="hi-ann-countdown">
+      <p class="hi-ann__countdown-label">ACTIE VERLOOPT OVER</p>
+      <div class="hi-ann__units">
+        <div class="hi-ann__unit">
+          <span class="hi-ann__unit-n" id="hi-ann-days">--</span>
+          <span class="hi-ann__unit-l">DAGEN</span>
+        </div>
+        <span class="hi-ann__sep" aria-hidden="true">:</span>
+        <div class="hi-ann__unit">
+          <span class="hi-ann__unit-n" id="hi-ann-hours">--</span>
+          <span class="hi-ann__unit-l">UUR</span>
+        </div>
+        <span class="hi-ann__sep" aria-hidden="true">:</span>
+        <div class="hi-ann__unit">
+          <span class="hi-ann__unit-n" id="hi-ann-mins">--</span>
+          <span class="hi-ann__unit-l">MIN</span>
+        </div>
+        <span class="hi-ann__sep" aria-hidden="true">:</span>
+        <div class="hi-ann__unit">
+          <span class="hi-ann__unit-n" id="hi-ann-secs">--</span>
+          <span class="hi-ann__unit-l">SEC</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hi-ann__code-block">
+      <span class="hi-ann__code-lbl">CODE:</span>
+      <button
+        class="hi-ann__code-pill"
+        id="hi-ann-code-btn"
+        data-code="1JAAR50"
+        type="button"
+        aria-label="Kopieer kortingscode 1JAAR50"
+      >
+        1JAAR50
+        <svg class="hi-ann__copy-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+          <rect x="9" y="9" width="13" height="13" rx="2"/>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+        </svg>
+      </button>
+      <span class="hi-ann__code-ok" id="hi-ann-code-ok" aria-live="polite"></span>
+    </div>
+
+    <a href="{{ section.settings.cta_url }}" class="hi-ann__cta">
+      {{- section.settings.cta_text -}}
+    </a>
+
+  </div>
+
+</section>
+
+<script>
+(function () {
+  var DEADLINE = new Date('2026-05-15T21:30:00Z'); /* 23:30 CEST */
+  var section  = document.querySelector('.hi-ann');
+  if (!section) return;
+
+  if (DEADLINE.getTime() <= Date.now()) {
+    section.hidden = true;
+    return;
+  }
+
+  var countdown = document.getElementById('hi-ann-countdown');
+  var elDays    = document.getElementById('hi-ann-days');
+  var elHours   = document.getElementById('hi-ann-hours');
+  var elMins    = document.getElementById('hi-ann-mins');
+  var elSecs    = document.getElementById('hi-ann-secs');
+
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+
+  function tick() {
+    var diff = DEADLINE.getTime() - Date.now();
+    if (diff <= 0) { if (countdown) countdown.hidden = true; return; }
+    elDays.textContent  = pad(Math.floor(diff / 86400000));
+    elHours.textContent = pad(Math.floor(diff % 86400000 / 3600000));
+    elMins.textContent  = pad(Math.floor(diff % 3600000  / 60000));
+    elSecs.textContent  = pad(Math.floor(diff % 60000    / 1000));
+    setTimeout(tick, 1000);
+  }
+
+  tick();
+
+  var btn = document.getElementById('hi-ann-code-btn');
+  var ok  = document.getElementById('hi-ann-code-ok');
+
+  if (btn && ok) {
+    btn.addEventListener('click', function () {
+      var code = btn.dataset.code;
+      var copy = navigator.clipboard
+        ? navigator.clipboard.writeText(code)
+        : new Promise(function (resolve) {
+            var el = document.createElement('textarea');
+            el.value = code;
+            el.style.cssText = 'position:fixed;opacity:0;pointer-events:none';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            resolve();
+          });
+      copy.then(function () {
+        ok.textContent = 'Gekopieerd!';
+        setTimeout(function () { ok.textContent = ''; }, 2000);
+      });
+    });
+  }
+}());
+</script>
+
+{% schema %}
+{
+  "name": "Verjaardagsactie",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Hero foto (linkerkant)"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Headline",
+      "default": "1 JAAR PERFORMANCE"
+    },
+    {
+      "type": "text",
+      "id": "subline",
+      "label": "Subtekst",
+      "default": "SINDS EIND 2024 AAN HET BOUWEN. SINDS MEI 2025 OFFICIEEL TE VERTROUWEN."
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline (onder 50%)",
+      "default": "JIJ VERDIENT HET"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA-knoptekst",
+      "default": "CLAIM 50% KORTING"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA-link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Verjaardagsactie"
+    }
+  ]
+}
+{% endschema %}

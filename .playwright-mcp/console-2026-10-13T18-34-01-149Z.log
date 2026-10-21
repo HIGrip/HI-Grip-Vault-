@@ -1,0 +1,40 @@
+[    7133ms] [LOG] lib/bricks/utils/src/js/utils.js=$_1 function( selector, context ) {
+
+		// The jQuery object is actually just the init constructor 'enhanced'
+		// Need init if jQuery is called (just allow error to be thrown if not included)
+		return new jQuery.fn.init( selector, context );
+	} @ https://sitegenesis.production.deckers.coremedia.cloud/resource/themes/hoka-sfra/js/commons-1479904-52.js:245
+[    7138ms] [LOG] lib/bricks/utils/src/js/utils.js=$_2 function( selector, context ) {
+
+		// The jQuery object is actually just the init constructor 'enhanced'
+		// Need init if jQuery is called (just allow error to be thrown if not included)
+		return new jQuery.fn.init( selector, context );
+	} @ https://sitegenesis.production.deckers.coremedia.cloud/resource/themes/hoka-sfra/js/commons-1479904-52.js:247
+[    7138ms] [LOG] lib/bricks/utils/src/js/utils.js=$_3 function( selector, context ) {
+
+		// The jQuery object is actually just the init constructor 'enhanced'
+		// Need init if jQuery is called (just allow error to be thrown if not included)
+		return new jQuery.fn.init( selector, context );
+	} @ https://sitegenesis.production.deckers.coremedia.cloud/resource/themes/hoka-sfra/js/commons-1479904-52.js:249
+[    7139ms] [LOG] lib/bricks/utils/src/js/utils.js=$_4 function( selector, context ) {
+
+		// The jQuery object is actually just the init constructor 'enhanced'
+		// Need init if jQuery is called (just allow error to be thrown if not included)
+		return new jQuery.fn.init( selector, context );
+	} @ https://sitegenesis.production.deckers.coremedia.cloud/resource/themes/hoka-sfra/js/commons-1479904-52.js:251
+[   19656ms] ReferenceError: utag_data is not defined
+    at HTMLDocument.<anonymous> (https://www.hoka.com/en/nl/:19755:9)
+[    7491ms] [LOG] About to start Start Responsive @ https://sitegenesis.production.deckers.coremedia.cloud/resource/themes/hoka-sfra/js/index-1479906-59.js:297
+[    8562ms] [WARNING] jQuery.Deferred exception: d.emptyCartLinkClickEvent is not a function TypeError: d.emptyCartLinkClickEvent is not a function
+    at HTMLDocument.<anonymous> (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:40434)
+    at d (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:426678)
+    at c (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:426980) undefined @ https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:1
+[   19669ms] TypeError: d.emptyCartLinkClickEvent is not a function
+    at HTMLDocument.<anonymous> (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:40434)
+    at d (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:426678)
+    at c (https://www.hoka.com/on/demandware.static/Sites-HOKA-EMEA-Site/-/en_NL/v1791857366265/js/main.js:2:426980)
+[    9090ms] [WARNING] Unable to create a text session because the service is not running. @ https://www.hoka.com/en/nl/:0
+[    9091ms] [WARNING] No output language was specified in a Summarizer API request. An output language should be specified to ensure optimal output quality and properly attest to output safety. Please specify a supported output language code: [de, en, es, fr, ja] @ https://www.hoka.com/en/nl/:0
+[    9091ms] [WARNING] The language detection model was required but not available. @ https://www.hoka.com/en/nl/:0
+[    9180ms] [WARNING] Unable to create a text session because the service is not running. @ https://www.hoka.com/en/nl/:0
+[   39722ms] [ERROR] Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED @ https://region1.google-analytics.com/g/collect?v=2&tid=G-FZH5FXREG7&gtm=45je6ac1h2v894600408za200xf1&_p=1791916450895&gcs=G100&gcd=13p3pPp2p5l1&npa=1&dma_cps=-&dma=1&gdid=dYmQxMT&ecid=1950477188&_eu=EAAAAGAC&cid=1229306417.1791916459&frm=0&gtm_up=1&ir=1&pscdl=denied&rcb=12&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B154.0.8037.98%7CGoogle%2520Chrome%3B154.0.8037.98%7CNot%2520A(Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=nl-nl&gaf=2&_s=1&tag_exp=115616985~115938465~115938469~118869188~118897920~118897930~120213116~120385422~120420415~120469145~120469153~121046263~121046271~121246026~121246034~123235076&sid=1791916458&sct=1&seg=0&dl=https%3A%2F%2Fwww.hoka.com%2Fen%2Fnl%2F&dt=HOKA%C2%AE%20Running%20Shoes%20for%20Men%20and%20Women%20%7C%20Official%20HOKA%C2%AE%20Netherlands&_tu=CA&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&ep.content_group=home&ep.tealium_flag=prod&ep.country_code=NL&ep.customer_registered=false&ep.langlocale=en-NL&ep.backend=tealium&ep.site_id=HOKA-EMEA&up.user_registered=false&up.site_id=HOKA-EMEA&tfd=17539:0

@@ -1,0 +1,92 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk--light zk-trust" id="{{ s.anchor | default: 'vertrouwd' }}" style="{% render 'zk-vars', s: s %}" {{ section.shopify_attributes }}>
+  <div class="zk__wrap">
+    <div class="zk__head">
+      {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+    </div>
+
+    <div class="zk-logos">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'logo' and block.settings.image != blank -%}
+          <figure {{ block.shopify_attributes }}>
+            {{- block.settings.image | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 300, 400', sizes: '(min-width: 760px) 20vw, 40vw', alt: block.settings.image.alt -}}
+          </figure>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if s.refs != blank -%}<p class="zk-refs">{{ s.refs }}</p>{%- endif -%}
+
+    <div class="zk-stats">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'stat' -%}
+          {%- assign b = block.settings -%}
+          <div class="zk-stat" {{ block.shopify_attributes }}>
+            <strong data-zk-count data-to="{{ b.count_to }}" data-dec="{{ b.decimals }}">{{ b.display }}</strong>
+            <span class="zk__micro">
+              {%- if b.stars -%}
+                <span class="zk-stars" aria-hidden="true">
+                  {%- for i in (1..5) -%}<svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7.1L12 17.6 5.8 21.3l1.6-7.1L2 9.5l7.1-.6z" fill="currentColor"/></svg>{%- endfor -%}
+                </span>
+              {%- endif -%}
+              {{ b.label }}
+            </span>
+            {%- if b.link_label != blank and b.link != blank -%}<a href="{{ b.link }}" target="_blank" rel="noopener">{{ b.link_label }}</a>{%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Vertrouwd door",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "vertrouwd" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel", "default": "Vertrouwd door" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Ze gingen je voor" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "textarea", "id": "refs", "label": "Tekst onder de logo's", "default": "Ook bij SVS, V.V. Spirit en V.V. Lyra, en in de schappen van Sport 2000 in Naaldwijk en Nootdorp." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#eae8e5" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen en cijfers (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Kleur bovenregel", "default": "#5c5d5f" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [ { "type": "image_picker", "id": "image", "label": "Logo" } ]
+    },
+    {
+      "type": "stat",
+      "name": "Cijfer",
+      "settings": [
+        { "type": "text", "id": "display", "label": "Getal (zoals getoond)", "default": "3000+" },
+        { "type": "text", "id": "count_to", "label": "Telt op tot (getal, met punt)", "default": "3000" },
+        { "type": "select", "id": "decimals", "label": "Decimalen", "options": [ { "value": "0", "label": "0" }, { "value": "1", "label": "1" }, { "value": "2", "label": "2" } ], "default": "0" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Sporters gingen je voor" },
+        { "type": "checkbox", "id": "stars", "label": "Sterren tonen", "default": false },
+        { "type": "text", "id": "link_label", "label": "Link: tekst" },
+        { "type": "url", "id": "link", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Zakelijk: Vertrouwd door" } ]
+}
+{% endschema %}

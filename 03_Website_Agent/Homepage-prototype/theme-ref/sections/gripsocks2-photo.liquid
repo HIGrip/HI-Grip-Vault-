@@ -1,0 +1,118 @@
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+
+  # Zonder vaste foto: pak een sfeerfoto van het product dat nu getoond wordt,
+  # zodat wit en zwart allebei hun eigen beeld krijgen. De studioshots slaan we
+  # over — die staan al in de gallery en in de anatomie-sectie.
+  assign expertise_image = s.image
+  if expertise_image == blank and product != blank
+    for img in product.images
+      assign fname = img.src | downcase
+      unless fname contains 'achterkant' or fname contains 'voorkant' or fname contains 'firefly' or fname contains 'infographic'
+        assign expertise_image = img
+        break
+      endunless
+    endfor
+    if expertise_image == blank
+      assign expertise_image = product.featured_image
+    endif
+  endif
+-%}
+
+<section class="g2 g2-expertise g2-gridtex">
+  <div class="g2-expertise__grid">
+    <div class="g2-expertise__left">
+      {%- if s.eyebrow != blank -%}<span class="g2-eyebrow"><span class="dot"></span> {{ s.eyebrow }}</span>{%- endif -%}
+      <h2 class="g2-expertise__title">
+        {%- if s.title_outline != blank -%}<span class="outline">{{ s.title_outline }}</span>{%- endif -%}
+        {%- if s.title_accent != blank -%}<span class="accent">{{ s.title_accent }}</span>{%- endif -%}
+      </h2>
+      {%- if s.copy != blank -%}<p class="g2-expertise__copy">{{ s.copy }}</p>{%- endif -%}
+
+      {%- if section.blocks.size > 0 -%}
+        <div class="g2-expertise__stats">
+          {%- for block in section.blocks -%}
+            <div class="g2-expertise__stat" {{ block.shopify_attributes }}>
+              <b>{{ block.settings.number }}<span class="u">{{ block.settings.unit }}</span></b>
+              <span>{{ block.settings.label }}</span>
+            </div>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <div class="g2-expertise__ctas">
+        {%- if s.cta_text != blank -%}<a href="{{ s.cta_url | default: '#' }}" class="g2-btn">{{ s.cta_text }} &rarr;</a>{%- endif -%}
+        {%- if s.cta2_text != blank -%}<a href="{{ s.cta2_url | default: '#' }}" class="g2-btn g2-btn--ghost">{{ s.cta2_text }}</a>{%- endif -%}
+      </div>
+    </div>
+
+    <div class="g2-expertise__right">
+      {%- if s.watermark != blank -%}<span class="g2-expertise__watermark" aria-hidden="true">{{ s.watermark }}</span>{%- endif -%}
+      <div class="g2-expertise__platform" aria-hidden="true"></div>
+      {%- if expertise_image != blank -%}
+        <div class="g2-expertise__cutout g2-expertise__cutout--photo">
+          {{ expertise_image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '400,700,1000,1200', sizes: '(min-width:769px) 40vw, 80vw', alt: expertise_image.alt | default: 'Performance Grip Socks 2.0 in actie' }}
+        </div>
+      {%- else -%}
+        <div class="g2-expertise__cutout g2-expertise__cutout--placeholder">
+          <svg viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M118 18c30-10 62-8 84 10 14 11 18 27 16 44-3 24-14 45-14 70 0 30 10 55 28 78 22 28 30 62 20 96-9 32-38 54-78 60-46 7-92-10-112-46-14-25-16-56-8-92 7-32 8-58-2-84-9-24-12-46-6-68 8-30 32-56 72-68z" fill="url(#g2cutoutgrad)" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+            <path d="M96 300c30 14 78 14 108-4" stroke="rgba(255,255,255,.3)" stroke-width="1.5" stroke-dasharray="3 5"/>
+            <defs>
+              <linearGradient id="g2cutoutgrad" x1="60" y1="18" x2="260" y2="400" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#333230"/>
+                <stop offset="1" stop-color="#0f0e0d"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="g2-expertise__cutout-tag">{{ s.placeholder_text | default: 'Foto zonder achtergrond nog niet aangeleverd — vervangt dit silhouet 1-op-1, geen codewerk nodig.' }}</span>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — expertise",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Gebouwd op bewezen grip-technologie" },
+    { "type": "text", "id": "title_outline", "label": "Titel — regel 1 (contour)", "default": "Niet toevallig" },
+    { "type": "text", "id": "title_accent", "label": "Titel — regel 2 (accentkleur)", "default": "stabiel." },
+    { "type": "textarea", "id": "copy", "label": "Expertise-tekst", "default": "Elk grippatroon is getest, niet gegokt. Dezelfde technologie die al 3.500+ sporters gebruiken — nu met nauwkeurigere maten en een verstevigde onderzijde voor de 2.0." },
+    { "type": "text", "id": "cta_text", "label": "Knop 1 — tekst", "default": "Ontdek Gripsocks 2.0" },
+    { "type": "url", "id": "cta_url", "label": "Knop 1 — link" },
+    { "type": "text", "id": "cta2_text", "label": "Knop 2 — tekst (leeg = geen 2e knop)", "default": "Bekijk de wetenschap" },
+    { "type": "url", "id": "cta2_url", "label": "Knop 2 — link" },
+    { "type": "header", "content": "Productfoto" },
+    { "type": "text", "id": "watermark", "label": "Achtergrond-cijfer achter de foto (leeg = geen)", "default": "2.0" },
+    { "type": "image_picker", "id": "image", "label": "Foto zonder achtergrond (leeg = silhouet-placeholder)" },
+    { "type": "text", "id": "placeholder_text", "label": "Placeholder-tekst (alleen zichtbaar zonder foto)", "default": "Foto zonder achtergrond nog niet aangeleverd — vervangt dit silhouet 1-op-1, geen codewerk nodig." }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistiek",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Getal", "default": "1.17" },
+        { "type": "text", "id": "unit", "label": "Eenheid/symbool", "default": "×" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Gemeten wrijvingscoëfficiënt" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Gripsocks 2.0 — expertise",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "1.17", "unit": "×", "label": "Gemeten wrijvingscoëfficiënt" } },
+        { "type": "stat", "settings": { "number": "95", "unit": "%", "label": "Meer grip dan een gewone sok" } },
+        { "type": "stat", "settings": { "number": "3", "unit": "×", "label": "Nieuwe maten, 35 t/m 46" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

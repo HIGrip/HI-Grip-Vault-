@@ -1,0 +1,158 @@
+- generic [ref=f88e3]:
+  - generic [ref=f88e4]:
+    - generic [aria-hidden] [ref=f88e7] [cursor=pointer]:
+      - generic: Introducing Pulsomics. Contribute to science.
+    - banner [ref=f88e10]:
+      - generic [ref=f88e11]:
+        - link "Ultrahuman home" [ref=f88e14] [cursor=pointer]:
+          - /url: /nl/
+          - img "Logo / 53" [ref=f88e15]
+        - generic [ref=f88e21]:
+          - link "Buy Ring AIR" [ref=f88e23] [cursor=pointer]:
+            - /url: /nl/ring/buy/
+          - button [ref=f88e24] [cursor=pointer]:
+            - img "NL flag" [ref=f88e25]
+          - button "Open shopping cart" [ref=f88e26] [cursor=pointer]
+          - button "Navigation menu" [ref=f88e30] [cursor=pointer]
+  - main [ref=f88e32]:
+    - generic:
+      - img "Loading..."
+    - banner "Ultrahuman Ring AIR Hero Section" [ref=f88e33]:
+      - img "Ultrahuman Ring AIR render canvas" [ref=f88e34]
+      - generic [ref=f88e35]:
+        - heading "The world’s most comfortable sleep tracker." [level=2] [ref=f88e36]
+        - heading [level=1] [ref=f88e37]:
+          - text: Ultrahuman Ring AIR
+          - superscript [ref=f88e38]: ®
+        - paragraph [ref=f88e39]: Accurately tracks sleep, HRV, temperature, and movement with daily actionable health insights.
+      - link "Buy Ultrahuman Ring AIR now" [ref=f88e42] [cursor=pointer]:
+        - /url: /nl/ring/buy/
+        - text: Buy now
+      - button "Replay hero animation" [ref=f88e43] [cursor=pointer]
+    - generic [ref=f88e48]:
+      - generic [ref=f88e50]:
+        - heading "Wake up to your sleep insights" [level=4] [ref=f88e51]
+        - paragraph [ref=f88e52]: The Sleep Index, intelligently designed to be your sole metric for sleep health, assesses your total sleep duration, resting heart rate, and restfulness, creating a comprehensive picture of your sleep quality.
+      - generic [ref=f88e112]:
+        - img "Ultrahuman Ring Silver" [ref=f88e113]
+        - heading "Temperature tracking made easy" [level=4] [ref=f88e114]
+        - paragraph [ref=f88e115]: Skin temperature is vital for measuring your body's physiological states and responses to various factors, including exercise, stress, and illness.
+      - generic [ref=f88e132]:
+        - heading "Listen to your body clock" [level=4] [ref=f88e133]
+        - paragraph [ref=f88e134]: The Phase Response Curve (PRC) describes the intricate interplay between a stimulus, such as light exposure, food or exercise mapped to a shift in your body's circadian rhythm.
+        - img "Phase Alignment Clock - Circadian Rhythm"
+      - generic [ref=f88e136]:
+        - heading "Here’s to a more active you" [level=4] [ref=f88e137]
+        - paragraph [ref=f88e138]: The Movement Index is designed to keep you moving for optimum glucose metabolism and to increase your non-exercise energy usage.
+        - generic [ref=f88e140]:
+          - generic [ref=f88e141]:
+            - paragraph [ref=f88e142]: The Movement Index
+            - paragraph [ref=f88e143]: "84"
+          - generic [ref=f88e144]:
+            - paragraph [ref=f88e145]: STEPS
+            - paragraph [ref=f88e146]: "11812"
+          - generic [ref=f88e147]:
+            - paragraph [ref=f88e148]: CALORIES BURNT
+            - paragraph [ref=f88e149]: "2786"
+      - generic [ref=f88e270]:
+        - heading "Maximize recovery with key HRV insights" [level=4] [ref=f88e271]
+        - paragraph [ref=f88e272]: The correlation between HRV and recovery is pivotal to understanding the body's recuperative capabilities and its readiness to take on another day
+        - generic [ref=f88e273]:
+          - img "HRV graph"
+      - generic [ref=f88e275]:
+        - generic [ref=f88e276]:
+          - heading "The only nudges that you need" [level=4] [ref=f88e277]
+          - paragraph [ref=f88e278]: Personalised nudges for a healthier you. Get tailor-made insights and alerts to help you make better choices in real time.
+        - generic [ref=f88e279]:
+          - img "Nudges"
+    - generic [ref=f88e280]:
+      - img "healthspan-mbl" [ref=f88e281]
+      - generic [ref=f88e283]:
+        - heading "Discover metabolic health with M1" [level=2] [ref=f88e284]
+        - paragraph [ref=f88e285]: Ultrahuman M1 helps you measure the impact of food and activity on your body in real time through glucose as a biomarker.
+        - link "Explore Ultrahuman M1" [ref=f88e286] [cursor=pointer]:
+          - /url: /nl/pricing/
+      - generic [ref=f88e288]:
+        - paragraph [ref=f88e289]: Find Glucose response for your favourite foods
+        - link "Explore OGDb" [ref=f88e290] [cursor=pointer]:
+          - /url: /ogdb/
+    - generic [ref=f88e293]:
+      - generic [ref=f88e294]:
+        - heading "AIR with M1, uniquely powerful" [level=2] [ref=f88e295]
+        - paragraph [ref=f88e296]: The glucose data from the M1 in convergence with the movement, body and sleep data from Ring AIR will provide deep correlations to improve your metabolic health.
+      - generic [ref=f88e297]:
+        - img "R1_with_M1_mobile1" [ref=f88e299]
+        - img "R1_with_M1_mobile1" [ref=f88e301]
+  - contentinfo [ref=f88e302]:
+    - generic [ref=f88e303]:
+      - generic [ref=f88e304]:
+        - generic [ref=f88e306]:
+          - group [ref=f88e307]:
+            - generic "Smart Rings" [ref=f88e308] [cursor=pointer]
+            - navigation "Smart Rings" [ref=f88e311]:
+              - link "Ultrahuman Ring PRO New" [ref=f88e312] [cursor=pointer]:
+                - /url: /nl/ring-pro/buy/
+                - text: Ultrahuman Ring PRO
+                - generic [ref=f88e313]: New
+              - link "Ultrahuman Ring AIR" [ref=f88e314] [cursor=pointer]:
+                - /url: /nl/ring/buy/
+              - link "Diesel Ultrahuman Ring" [ref=f88e315] [cursor=pointer]:
+                - /url: /nl/diesel-ultrahuman-ring/
+              - link "Ultrahuman Ring Rare" [ref=f88e316] [cursor=pointer]:
+                - /url: /nl/rare/
+              - link "Ring Sizing" [ref=f88e317] [cursor=pointer]:
+                - /url: /blog/how-to-use-the-ultrahuman-ring-sizing-kit/
+          - group [ref=f88e318]:
+            - generic "Health Monitoring" [ref=f88e319] [cursor=pointer]
+        - generic [ref=f88e323]:
+          - group [ref=f88e324]:
+            - generic "Memberships & Add-ons" [ref=f88e325] [cursor=pointer]
+          - group [ref=f88e328]:
+            - generic "Learn" [ref=f88e329] [cursor=pointer]
+        - generic [ref=f88e333]:
+          - group [ref=f88e334]:
+            - generic "Company" [ref=f88e335] [cursor=pointer]
+          - group [ref=f88e338]:
+            - generic "Programs" [ref=f88e339] [cursor=pointer]
+        - generic [ref=f88e343]:
+          - group [ref=f88e344]:
+            - generic "Developers" [ref=f88e345] [cursor=pointer]
+          - group [ref=f88e348]:
+            - generic "Legal" [ref=f88e349] [cursor=pointer]
+      - generic [ref=f88e352]:
+        - generic [ref=f88e353]:
+          - paragraph [ref=f88e354]: Contact
+          - generic [ref=f88e355]:
+            - link "support@ultrahuman.com" [ref=f88e356] [cursor=pointer]:
+              - /url: mailto:support@ultrahuman.com
+            - link "+31 97006532048" [ref=f88e357] [cursor=pointer]:
+              - /url: tel:+3197006532048
+        - generic [ref=f88e358]:
+          - paragraph [ref=f88e359]: Follow Us
+          - generic [ref=f88e360]:
+            - link [ref=f88e361] [cursor=pointer]:
+              - /url: https://twitter.com/ultrahumanhq
+              - img "Ultrahuman on X" [ref=f88e362]
+            - link [ref=f88e363] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/ultrahumanhq/
+              - img "Ultrahuman on LinkedIn" [ref=f88e364]
+            - link [ref=f88e365] [cursor=pointer]:
+              - /url: https://www.instagram.com/ultrahumanhq/
+              - img "Ultrahuman on Instagram" [ref=f88e366]
+            - link [ref=f88e367] [cursor=pointer]:
+              - /url: https://www.youtube.com/@UltrahumanOfficial
+              - img "Ultrahuman on YouTube" [ref=f88e368]
+        - generic [ref=f88e369]:
+          - paragraph [ref=f88e370]: Download app
+          - generic [ref=f88e371]:
+            - link [ref=f88e372] [cursor=pointer]:
+              - /url: https://apps.apple.com/us/app/ultrahuman-meditation-sleep/id1491286709
+              - img "Download on the App Store" [ref=f88e373]
+            - link [ref=f88e374] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.ultrahuman.android
+              - img "Get it on Google Play" [ref=f88e375]
+      - generic [ref=f88e376]:
+        - paragraph [ref=f88e377]: © 2020-2026 Ultrahuman Healthcare Pvt Ltd. All rights reserved. ISO27001, GDPR, and HIPAA compliant.
+        - button "NL flag Netherlands" [ref=f88e379] [cursor=pointer]:
+          - img "NL flag" [ref=f88e380]
+          - generic [ref=f88e381]: Netherlands

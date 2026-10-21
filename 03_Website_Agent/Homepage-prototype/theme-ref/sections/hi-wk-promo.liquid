@@ -1,0 +1,254 @@
+{{ 'hi-wk-promo.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hi-wk-promo.js' | asset_url }}" defer></script>
+
+{%- liquid
+  assign s = section.settings
+  assign cta_url = s.cta_url | default: routes.all_products_collection_url
+  assign mlogo = s.marquee_logo | default: settings.logo
+-%}
+
+<section class="hi-wk" aria-labelledby="HiWkTitle-{{ section.id }}">
+
+  {%- if s.marquee_text != blank -%}
+    <div class="hi-wk__marquee" aria-hidden="true">
+      <div class="hi-wk__marquee-track" data-wk-marquee>
+        {%- assign hi_usps = s.marquee_text | split: '·' -%}
+        {%- for usp in hi_usps -%}
+          {%- assign hi_usp = usp | strip -%}
+          {%- if hi_usp != blank -%}
+            <span class="hi-wk__marquee-item">
+              {%- if mlogo != blank -%}{{ mlogo | image_url: width: 48 | image_tag: class: 'hi-wk__marquee-logo', alt: '', widths: '24,48', loading: 'lazy' }}{%- endif -%}
+              <span>{{ hi_usp }}</span>
+            </span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- comment -%} ═══════════════ HERO ═══════════════ {%- endcomment -%}
+  <div class="hi-wk__hero">
+    <div class="hi-wk__jewel">
+      <div class="hi-wk__jewel-inner" data-wk-reveal>
+        {%- if s.eyebrow != blank -%}<span class="hi-wk__eyebrow hi-wk__eyebrow--ondark">{{ s.eyebrow }}</span>{%- endif -%}
+        <h2 class="hi-wk__title" id="HiWkTitle-{{ section.id }}">{{ s.title_top }}<b>{{ s.title_accent }}</b></h2>
+        {%- if s.sub != blank -%}<p class="hi-wk__sub">{{ s.sub }}</p>{%- endif -%}
+
+        <div class="hi-wk__count" data-wk-countdown data-end="{{ s.end_iso | escape }}">
+          <span class="hi-wk__count-label">{{ s.count_label }}</span>
+          <div class="hi-wk__timer" aria-hidden="true">
+            <span class="hi-wk__unit"><span class="hi-wk__digits" data-wk-days>--</span><span class="hi-wk__unit-label">dgn</span></span>
+            <span class="hi-wk__unit"><span class="hi-wk__digits" data-wk-hours>--</span><span class="hi-wk__unit-label">uur</span></span>
+            <span class="hi-wk__unit"><span class="hi-wk__digits" data-wk-minutes>--</span><span class="hi-wk__unit-label">min</span></span>
+            <span class="hi-wk__unit"><span class="hi-wk__digits" data-wk-seconds>--</span><span class="hi-wk__unit-label">sec</span></span>
+          </div>
+          <span class="hi-wk__expired" hidden>{{ s.expired_text }}</span>
+          <span class="visually-hidden">Actie loopt tot en met {{ s.end_iso | date: '%d-%m-%Y' }}.</span>
+        </div>
+
+        <div class="hi-wk__cta-row"><a href="{{ cta_url }}" class="hi-wk__btn"><span>{{ s.cta_text }}</span><span aria-hidden="true">&rarr;</span></a></div>
+
+        {%- if s.trust_text != blank -%}
+          <div class="hi-wk__trust">
+            <span class="hi-wk__stars" aria-hidden="true">★★★★★</span><span>{{ s.trust_rating }}</span>
+            <span class="hi-wk__trust-sep" aria-hidden="true"></span><span>{{ s.trust_text }}</span>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="hi-wk__shot{% if s.image == blank %} hi-wk__shot--empty{% endif %} hi-wk__shot--focus-{{ s.image_focus | default: 'center' }}" data-wk-reveal>
+      {%- if s.image != blank -%}
+        {{ s.image | image_url: width: 1800 | image_tag:
+          loading: 'lazy', widths: '600,900,1200,1800', sizes: '(min-width:769px) 56vw, 100vw',
+          class: 'hi-wk__shot-img', alt: s.image.alt | default: 'Speler in actie' }}
+      {%- else -%}
+        <svg class="hi-wk__shot-pitch" viewBox="0 0 600 700" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+          <circle cx="300" cy="350" r="150" stroke="rgba(20,19,17,0.14)" stroke-width="2"/>
+          <circle cx="300" cy="350" r="5" fill="rgba(20,19,17,0.14)"/>
+          <path d="M0 350 H600 M300 120 V580" stroke="rgba(20,19,17,0.12)" stroke-width="2"/>
+        </svg>
+      {%- endif -%}
+      {%- if s.tag_text != blank -%}<span class="hi-wk__tag" aria-hidden="true">{{ s.tag_text }}</span>{%- endif -%}
+    </div>
+  </div>
+
+  {%- comment -%} ═══════════════ FLOW: actie → bewijs → waarde ═══════════════ {%- endcomment -%}
+  <div class="hi-wk__flow">
+    <div class="hi-wk__wrap">
+
+      {%- comment -%} 01 — Zo werkt het: de 3-zetten reis {%- endcomment -%}
+      <div class="hi-wk__beat hi-wk__beat--how">
+        <header class="hi-wk__bh" data-wk-reveal>
+          <span class="hi-wk__bh-index" aria-hidden="true">01</span>
+          <span class="hi-wk__bh-kicker">{{ s.how_kicker | default: 'De aanpak' }}</span>
+          <h3 class="hi-wk__bh-title">{{ s.how_label }}</h3>
+        </header>
+        <ol class="hi-wk__steps hi-wk__stagger" data-wk-reveal>
+          <li class="hi-wk__step">
+            <span class="hi-wk__step-num" aria-hidden="true">01</span>
+            <svg class="hi-wk__step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+            <h4 class="hi-wk__step-h">{{ s.step1_title }}</h4>
+            <p class="hi-wk__step-p">{{ s.step1_text }}</p>
+          </li>
+          <li class="hi-wk__step">
+            <span class="hi-wk__step-num" aria-hidden="true">02</span>
+            <svg class="hi-wk__step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+            <h4 class="hi-wk__step-h">{{ s.step2_title }}</h4>
+            <p class="hi-wk__step-p">{{ s.step2_text }}</p>
+          </li>
+          <li class="hi-wk__step">
+            <span class="hi-wk__step-num" aria-hidden="true">03</span>
+            <svg class="hi-wk__step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            <h4 class="hi-wk__step-h">{{ s.step3_title }}</h4>
+            <p class="hi-wk__step-p">{{ s.step3_text }}</p>
+          </li>
+        </ol>
+      </div>
+
+      {%- comment -%} 02 — Performance: het dashboard {%- endcomment -%}
+      <div class="hi-wk__beat hi-wk__beat--perf">
+        <header class="hi-wk__bh" data-wk-reveal>
+          <span class="hi-wk__bh-index" aria-hidden="true">02</span>
+          <span class="hi-wk__bh-kicker">{{ s.perf_kicker | default: 'Bewezen, niet beloofd' }}</span>
+          <h3 class="hi-wk__bh-title">{{ s.stats_label }}</h3>
+        </header>
+        <div class="hi-wk__dash" data-wk-reveal>
+          <article class="hi-wk__dash-hero" style="--gauge-val: {{ s.stat1_num | remove: '%' | remove: '+' | remove: '★' | strip | default: '95' }};">
+            <div class="hi-wk__gauge">
+              <svg viewBox="0 0 200 200" aria-hidden="true">
+                <circle class="hi-wk__gauge-track" cx="100" cy="100" r="84"/>
+                <circle class="hi-wk__gauge-val" cx="100" cy="100" r="84"/>
+              </svg>
+              <span class="hi-wk__gauge-num" data-count>{{ s.stat1_num }}</span>
+            </div>
+            <p class="hi-wk__dash-hero-label">{{ s.stat1_label }}</p>
+          </article>
+          <div class="hi-wk__metrics hi-wk__stagger">
+            <div class="hi-wk__metric">
+              <span class="hi-wk__metric-num" data-count>{{ s.stat2_num }}</span>
+              <span class="hi-wk__metric-label">{{ s.stat2_label }}</span>
+            </div>
+            <div class="hi-wk__metric">
+              <span class="hi-wk__metric-num" data-count>{{ s.stat3_num }}</span>
+              <span class="hi-wk__metric-label">{{ s.stat3_label }}</span>
+            </div>
+            <div class="hi-wk__metric">
+              <span class="hi-wk__metric-num" data-count>{{ s.stat4_num }}</span>
+              <span class="hi-wk__metric-label">{{ s.stat4_label }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%- comment -%} 03 — De aanbieding: de finale {%- endcomment -%}
+      <div class="hi-wk__beat hi-wk__beat--offer">
+        <header class="hi-wk__bh" data-wk-reveal>
+          <span class="hi-wk__bh-index" aria-hidden="true">03</span>
+          <span class="hi-wk__bh-kicker">{{ s.offer_kicker }}</span>
+          <h3 class="hi-wk__bh-title">{{ s.offer_label }}</h3>
+        </header>
+
+        <div class="hi-wk__deal" data-wk-reveal>
+          <div class="hi-wk__deal-main">
+            <p class="hi-wk__deal-head">{{ s.offer_head_top }} <b>{{ s.offer_head_accent }}</b></p>
+            <p class="hi-wk__deal-line">{{ s.offer_line }}</p>
+            <div class="hi-wk__deal-price">
+              {%- if s.price_old != blank -%}<span class="hi-wk__deal-old">{{ s.price_old }}</span>{%- endif -%}
+              <span class="hi-wk__deal-new">{{ s.price_new }}</span>
+              {%- if s.price_note != blank -%}<span class="hi-wk__deal-note">{{ s.price_note }}</span>{%- endif -%}
+              <span class="hi-wk__deal-badge">{{ s.deal_discount | default: '−50%' }}</span>
+            </div>
+            <div class="hi-wk__deal-cta">
+              <span class="hi-wk__offer-urgency">{{ s.offer_urgency }}</span>
+              <a href="{{ cta_url }}" class="hi-wk__btn hi-wk__btn--xl"><span>{{ s.cta_text }}</span><span aria-hidden="true">&rarr;</span></a>
+              {%- if s.offer_meta != blank -%}<span class="hi-wk__offer-meta">{{ s.offer_meta }}</span>{%- endif -%}
+            </div>
+          </div>
+
+          <div class="hi-wk__deal-viz">
+            <span class="visually-hidden">Je betaalt 2 paar en krijgt 2 paar gratis: samen 4 paar in huis.</span>
+            <div class="hi-wk__pairs" aria-hidden="true">
+              <div class="hi-wk__pair"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Betaald</span></div>
+              <div class="hi-wk__pair"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Betaald</span></div>
+              <div class="hi-wk__pair hi-wk__pair--free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Gratis</span></div>
+              <div class="hi-wk__pair hi-wk__pair--free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Gratis</span></div>
+            </div>
+            <div class="hi-wk__deal-sum" aria-hidden="true"><span class="hi-wk__deal-sum-num">4</span><span class="hi-wk__deal-sum-cap">paar in huis</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "WK promo",
+  "tag": "section",
+  "class": "hi-wk-promo-section",
+  "settings": [
+    { "type": "header", "content": "Marquee" },
+    { "type": "image_picker", "id": "marquee_logo", "label": "Marquee-logo", "info": "Leeg = winkel-logo. Wordt zwart weergegeven op oranje." },
+    { "type": "text", "id": "marquee_text", "label": "Marquee-tekst", "default": "2+2 gratis · het hele WK · korting automatisch toegepast" },
+
+    { "type": "header", "content": "Hero — value-blok" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "WK 2026 · HÏ Grip Support!" },
+    { "type": "text", "id": "title_top", "label": "Titel (wit)", "default": "Je rekent er 2 af." },
+    { "type": "text", "id": "title_accent", "label": "Titel (oranje)", "default": "Je speelt met 4." },
+    { "type": "textarea", "id": "sub", "label": "Ondersteunende tekst", "default": "2 paar gripsokken gratis, t.w.v. €29,98. Korting wordt automatisch verrekend in je winkelwagen — geen code nodig." },
+    { "type": "text", "id": "cta_text", "label": "CTA-tekst", "default": "Scoor je 2+2" },
+    { "type": "url", "id": "cta_url", "label": "CTA-bestemming" },
+    { "type": "text", "id": "trust_rating", "label": "Trust rating", "default": "4.8/5 op Trustpilot" },
+    { "type": "text", "id": "trust_text", "label": "Trust tekst", "default": "3.500+ sporters gingen je voor" },
+
+    { "type": "header", "content": "Hero — foto & label" },
+    { "type": "image_picker", "id": "image", "label": "Spelerfoto (bright, in kleur)" },
+    { "type": "select", "id": "image_focus", "label": "Foto-uitsnede", "info": "Kies 'Lager' als er branding/logo op de rug staat — toont dan de actie & voeten.", "options": [ { "value": "top", "label": "Boven" }, { "value": "center", "label": "Midden" }, { "value": "lower", "label": "Lager (actie/voeten)" }, { "value": "bottom", "label": "Onder" } ], "default": "center" },
+    { "type": "text", "id": "tag_text", "label": "Label op foto", "default": "2+2 GRATIS" },
+
+    { "type": "header", "content": "Urgentie — countdown" },
+    { "type": "text", "id": "count_label", "label": "Countdown-label", "default": "Stopt na de finale · 19 juli" },
+    { "type": "text", "id": "end_iso", "label": "Einddatum (ISO met tijdzone)", "info": "Bijv. 2026-07-19T23:59:00+02:00", "default": "2026-07-19T23:59:00+02:00" },
+    { "type": "text", "id": "expired_text", "label": "Tekst na afloop", "default": "Afgelopen — tot het volgende toernooi" },
+
+    { "type": "header", "content": "01 — Zo werkt het" },
+    { "type": "text", "id": "how_label", "label": "Label", "default": "Zo werkt het" },
+    { "type": "text", "id": "how_kicker", "label": "Kicker (eyebrow)", "default": "De aanpak" },
+    { "type": "text", "id": "step1_title", "label": "Stap 1 titel", "default": "Leg 4 paar in je mandje" },
+    { "type": "text", "id": "step1_text", "label": "Stap 1 tekst", "default": "Kies je maat en pack. Vier paar de winkelwagen in." },
+    { "type": "text", "id": "step2_title", "label": "Stap 2 titel", "default": "Korting telt automatisch" },
+    { "type": "text", "id": "step2_text", "label": "Stap 2 tekst", "default": "Geen code nodig — de actie wordt direct verrekend." },
+    { "type": "text", "id": "step3_title", "label": "Stap 3 titel", "default": "Betaal er 2, speel met 4" },
+    { "type": "text", "id": "step3_text", "label": "Stap 3 tekst", "default": "Twee paar cadeau. Klaar voor het hele toernooi." },
+
+    { "type": "header", "content": "02 — Performance stats" },
+    { "type": "text", "id": "stats_label", "label": "Label", "default": "Waarom HÏ Grip" },
+    { "type": "text", "id": "perf_kicker", "label": "Kicker (eyebrow)", "default": "Bewezen, niet beloofd" },
+    { "type": "text", "id": "stat1_num", "label": "Stat 1 getal", "default": "95%" },
+    { "type": "text", "id": "stat1_label", "label": "Stat 1 label", "default": "meer grip dan een gewone sok" },
+    { "type": "text", "id": "stat2_num", "label": "Stat 2 getal", "default": "1.17" },
+    { "type": "text", "id": "stat2_label", "label": "Stat 2 label", "default": "gemeten wrijvingscoëfficiënt" },
+    { "type": "text", "id": "stat3_num", "label": "Stat 3 getal", "default": "3.500+" },
+    { "type": "text", "id": "stat3_label", "label": "Stat 3 label", "default": "sporters gingen je voor" },
+    { "type": "text", "id": "stat4_num", "label": "Stat 4 getal", "default": "4.8" },
+    { "type": "text", "id": "stat4_label", "label": "Stat 4 label", "default": "gemiddeld op Trustpilot" },
+
+    { "type": "header", "content": "03 — De aanbieding" },
+    { "type": "text", "id": "offer_label", "label": "Label", "default": "Jouw voordeel" },
+    { "type": "text", "id": "deal_discount", "label": "Korting-badge", "default": "−50%" },
+    { "type": "text", "id": "offer_kicker", "label": "Kicker", "default": "Het hele WK" },
+    { "type": "text", "id": "offer_head_top", "label": "Kop (donker)", "default": "2+2" },
+    { "type": "text", "id": "offer_head_accent", "label": "Kop (oranje)", "default": "Gratis" },
+    { "type": "text", "id": "offer_line", "label": "Regel", "default": "Vier paar in huis. Je rekent er twee af. Geen addertjes — gewoon dubbel zoveel grip." },
+    { "type": "text", "id": "price_old", "label": "Prijs (doorgestreept)", "default": "€59,96" },
+    { "type": "text", "id": "price_new", "label": "Prijs (nieuw)", "default": "€29,98" },
+    { "type": "text", "id": "price_note", "label": "Prijs-notitie", "default": "jij betaalt" },
+    { "type": "text", "id": "offer_urgency", "label": "Urgentie-regel", "default": "Alleen t/m de finale · 19 juli" },
+    { "type": "text", "id": "offer_meta", "label": "Micro-copy", "default": "Binnen 1 werkdag verzonden · 30 dagen retour" }
+  ],
+  "presets": [ { "name": "WK promo" } ]
+}
+{% endschema %}

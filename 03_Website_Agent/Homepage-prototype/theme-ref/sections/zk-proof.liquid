@@ -1,0 +1,88 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-more.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign plain = s.plain_value | plus: 0.0
+  assign grip = s.grip_value | plus: 0.0
+  assign axis = s.axis_max | plus: 0.0
+  if axis <= 0
+    assign axis = 1.2
+  endif
+  assign bar_a = plain | divided_by: axis
+  assign bar_b = grip | divided_by: axis
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk-proof zk-proof--v2" id="{{ s.anchor | default: 'bewijs' }}" style="{% render 'zk-vars', s: s %}" {{ section.shopify_attributes }}>
+  {%- if s.image != blank -%}
+    <div class="zk-proof__bg" aria-hidden="true">
+      {{- s.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1200, 1400', sizes: '(min-width: 900px) 60vw, 100vw', alt: '' -}}
+    </div>
+  {%- endif -%}
+  <div class="zk__wrap zk-proof2">
+    <div class="zk-meter" data-zk-meter role="img" aria-label="{{ s.chart_aria | escape }}">
+      <div class="zk-meter__r">
+        <div class="zk-meter__l"><span>{{ s.plain_label }}</span><b data-to="{{ plain }}">{{ s.plain_value | replace: '.', ',' }}</b></div>
+        <div class="zk-meter__track"><i style="--v:{{ bar_a }}"></i></div>
+      </div>
+      <div class="zk-meter__r zk-meter__r--hi">
+        <div class="zk-meter__l"><span>{{ s.grip_label }}</span><b data-to="{{ grip }}">{{ s.grip_value | replace: '.', ',' }}</b></div>
+        <div class="zk-meter__track"><i style="--v:{{ bar_b }}"></i></div>
+      </div>
+    </div>
+    <div class="zk-proof2__txt">
+      {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank or s.heading_2 != blank -%}
+        <{{ tag }} class="zk-proof2__h">{{ s.heading }}{% if s.heading_2 != blank %} <em>{{ s.heading_2 }}</em>{% endif %}</{{ tag }}>
+      {%- endif -%}
+      {%- if s.claim != blank -%}<p class="zk-proof2__claim">{{ s.claim }}</p>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="zk-proof2__lead">{{ s.lead }}</p>{%- endif -%}
+      {%- if s.source != blank -%}
+        <p class="zk-proof2__src">
+          {{ s.source }}
+          {%- if s.source_link_label != blank %} <a href="{{ s.source_url | default: 'https://doi.org/10.1080/02640414.2022.2080163' }}" target="_blank" rel="noopener">{{ s.source_link_label }}</a>{%- endif -%}
+        </p>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Bewijs",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "bewijs" },
+    { "type": "image_picker", "id": "image", "label": "Achtergrondfoto (rechts, vaag)" },
+    { "type": "header", "content": "Balk (links)" },
+    { "type": "text", "id": "plain_value", "label": "Gewone sok (getal met punt)", "default": "0.60" },
+    { "type": "text", "id": "grip_value", "label": "Gripsok (getal met punt)", "default": "1.17" },
+    { "type": "text", "id": "axis_max", "label": "Schaal balk (maximum)", "default": "1.2" },
+    { "type": "text", "id": "plain_label", "label": "Label gewone sok", "default": "Gewone sok" },
+    { "type": "text", "id": "grip_label", "label": "Label gripsok", "default": "Gripsok · 1.0 én 2.0" },
+    { "type": "text", "id": "chart_aria", "label": "Beschrijving balk (schermlezers)", "default": "Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17" },
+    { "type": "header", "content": "Tekst (rechts)" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel (leeg = verborgen)" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Gewone sok?" },
+    { "type": "text", "id": "heading_2", "label": "Kop, tweede deel (accentkleur)", "default": "Geen wedstrijd." },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "textarea", "id": "claim", "label": "Claim (vet)", "default": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)." },
+    { "type": "textarea", "id": "lead", "label": "Toelichting", "default": "Sporters met gripsokken waren ook sneller op een slalomparcours en hun voorvoet schoof minder bij afremmen. Dat geldt voor allebei: het zijn gripsokken." },
+    { "type": "textarea", "id": "source", "label": "Bron", "default": "Bron: Apps et al. (2022), Journal of Sports Sciences 40(12) ·" },
+    { "type": "text", "id": "source_link_label", "label": "Bron: linktekst", "default": "doi 10.1080/02640414.2022.2080163" },
+    { "type": "url", "id": "source_url", "label": "Bron: link" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (tweede kopdeel, gripsok-balk)", "default": "#ccff00" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "presets": [ { "name": "Zakelijk: Bewijs" } ]
+}
+{% endschema %}

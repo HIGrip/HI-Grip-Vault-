@@ -1,0 +1,116 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk--light zk-routes" id="{{ s.anchor | default: 'route' }}" style="{% render 'zk-vars', s: s %}{% if s.or_bg != blank %}--z-or-bg:{{ s.or_bg }};{% endif %}{% if s.or_fg != blank %}--z-or-fg:{{ s.or_fg }};{% endif %}{% if s.or_line != blank %}--z-or-line:{{ s.or_line }};{% endif %}--z-route-gap:{{ s.panel_gap }}px;" {{ section.shopify_attributes }}>
+  <div class="zk__wrap">
+    {%- if s.eyebrow != blank or s.heading != blank -%}
+      <div class="zk__head">
+        {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      </div>
+    {%- endif -%}
+    <div class="zk-route zk-route--v2{% unless s.show_divider %} zk-route--gap{% endunless %}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        {%- assign lines = b.list | newline_to_br | split: '<br />' -%}
+        {%- if s.show_divider and forloop.index > 1 -%}
+          <div class="zk-route__or" aria-hidden="true"><span>{{ s.divider_text }}</span></div>
+        {%- endif -%}
+        <article class="zk-panel zk-panel--{{ b.style }}{% if b.border %} zk-panel--bordered{% endif %}" style="--z-focus:{{ b.focus_x }}% {{ b.focus_y }}%;--z-focus-m:{{ b.focus_x_mobile }}% {{ b.focus_y_mobile }}%;--z-ov:{{ b.overlay | divided_by: 100.0 }};{% if b.panel_bg != blank %}background:{{ b.panel_bg }};{% endif %}{% if b.panel_fg != blank %}color:{{ b.panel_fg }};{% endif %}" {{ block.shopify_attributes }}>
+          {%- if b.image != blank -%}
+            {%- assign img_alt = '' -%}
+            {%- if b.style != 'light' -%}{%- assign img_alt = b.image.alt -%}{%- endif -%}
+            {{- b.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '400, 800, 1200, 1400', sizes: '(min-width: 800px) 45vw, 100vw', alt: img_alt -}}
+          {%- endif -%}
+          <div class="zk-panel__body">
+            {%- if b.number != blank or b.micro != blank -%}
+              <p class="zk-panel__idx">{%- if b.number != blank -%}<b>{{ b.number }}</b>{%- endif -%}{{ b.micro }}</p>
+            {%- endif -%}
+            {%- if b.title != blank -%}<h3 class="zk__h3">{{ b.title }}</h3>{%- endif -%}
+            <ul class="zk-panel__list">
+              {%- for l in lines -%}
+                {%- assign t = l | strip -%}
+                {%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- if b.cta_label != blank -%}
+            <div>
+              <a class="zk__pill{% if b.style == 'light' %} zk__pill--dark{% endif %}" href="{{ b.cta_link | default: '#aanvragen' }}" {% if b.cta_segment != 'none' %}data-zk-segment="{{ b.cta_segment }}"{% endif %}{% if b.btn_bg != blank or b.btn_fg != blank %} style="{% if b.btn_bg != blank %}--pill-bg:{{ b.btn_bg }};--pill-bd:{{ b.btn_bg }};{% endif %}{% if b.btn_fg != blank %}--pill-fg:{{ b.btn_fg }};{% endif %}"{% endif %}>{{ b.cta_label }} {% render 'zk-chev' %}</a>
+            </div>
+          {%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Kies je route",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "route" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel (leeg = verborgen)", "default": "Kies je route" },
+    { "type": "text", "id": "heading", "label": "Kop (leeg = verborgen)", "default": "Wie ben jij?" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen (kop)", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Scheiding tussen de panelen" },
+    { "type": "checkbox", "id": "show_divider", "label": "Lijn met rondje tussen de panelen", "default": true },
+    { "type": "text", "id": "divider_text", "label": "Tekst in het rondje", "default": "of" },
+    { "type": "color", "id": "or_bg", "label": "Rondje: achtergrondkleur", "default": "#000000" },
+    { "type": "color", "id": "or_fg", "label": "Rondje: tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "or_line", "label": "Kleur scheidingslijn" },
+    { "type": "range", "id": "panel_gap", "label": "Ruimte tussen panelen (zonder rondje)", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 24 },
+    { "type": "header", "content": "Knoppen" },
+    { "type": "color", "id": "button_bg", "label": "Knoppen: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knoppen: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knoppen: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knoppen: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Kleur bovenregel", "default": "#5c5d5f" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "panel",
+      "name": "Route",
+      "settings": [
+        { "type": "select", "id": "style", "label": "Stijl", "options": [ { "value": "lightphoto", "label": "Licht met foto als achtergrond" }, { "value": "photo", "label": "Donker met foto als achtergrond" }, { "value": "light", "label": "Licht met productfoto rechtsboven" } ], "default": "lightphoto" },
+        { "type": "image_picker", "id": "image", "label": "Afbeelding" },
+        { "type": "range", "id": "overlay", "label": "Lichte stijl: hoe wit de laag over de foto is", "min": 50, "max": 100, "step": 2, "unit": "%", "default": 96 },
+        { "type": "range", "id": "focus_x", "label": "Beeldfocus horizontaal (desktop)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 70 },
+        { "type": "range", "id": "focus_y", "label": "Beeldfocus verticaal (desktop)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+        { "type": "range", "id": "focus_x_mobile", "label": "Beeldfocus horizontaal (mobiel)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 75 },
+        { "type": "range", "id": "focus_y_mobile", "label": "Beeldfocus verticaal (mobiel)", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 100 },
+        { "type": "checkbox", "id": "border", "label": "Dunne rand om het paneel", "default": false },
+        { "type": "color", "id": "panel_bg", "label": "Achtergrondkleur paneel (leeg = standaard)" },
+        { "type": "color", "id": "panel_fg", "label": "Tekstkleur paneel (leeg = standaard)" },
+        { "type": "header", "content": "Tekst" },
+        { "type": "text", "id": "number", "label": "Groot nummer (leeg = verborgen)", "default": "01" },
+        { "type": "text", "id": "micro", "label": "Klein label", "default": "Sportwinkels" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Grip in jouw schap" },
+        { "type": "textarea", "id": "list", "label": "Punten (één per regel)" },
+        { "type": "header", "content": "Knop" },
+        { "type": "text", "id": "cta_label", "label": "Knop: tekst (leeg = verborgen)", "default": "Ik heb een sportwinkel" },
+        { "type": "text", "id": "cta_link", "label": "Knop: link", "default": "#retailers" },
+        { "type": "select", "id": "cta_segment", "label": "Formulier voorselecteren", "options": [ { "value": "none", "label": "Niet" }, { "value": "retailer", "label": "Sportretailer" }, { "value": "club", "label": "Club of studio" } ], "default": "none" },
+        { "type": "color", "id": "btn_bg", "label": "Knop: achtergrondkleur (leeg = standaard)" },
+        { "type": "color", "id": "btn_fg", "label": "Knop: tekstkleur (leeg = standaard)" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [ { "name": "Zakelijk: Kies je route" } ]
+}
+{% endschema %}

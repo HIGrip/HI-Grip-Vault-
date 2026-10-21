@@ -1,0 +1,47 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": { "eyebrow": "Algemeen", "heading": "Retourbeleid", "heading_tag": "h1" }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "a1": { "type": "article", "settings": { "heading": "Retour aanvragen", "heading_tag": "h2", "body": "<ol><li><strong>Vraag je retour aan.</strong> Binnen 30 dagen na ontvangst, via ons <a href=\"/pages/contact\">contactformulier</a>.</li><li><strong>Je krijgt een retourlabel.</strong> Met instructies over hoe en waar je het pakket naartoe stuurt.</li><li><strong>Stuur het pakket terug.</strong> Bewaar het verzendbewijs van je retourzending.</li><li><strong>Je krijgt je geld terug.</strong> Binnen 14 dagen na je retourmelding, inclusief de verzendkosten van je bestelling.</li></ol>", "in_toc": true } },
+        "b1": { "type": "button", "settings": { "label": "Start je retour", "link": "/pages/contact", "new_tab": false, "style": "dark" } },
+        "n1": { "type": "note", "settings": { "text": "<p>Artikelen die we terugkrijgen zonder dat er een retour is aangevraagd, nemen we niet aan. Retourneren via MyParcel kan ook: <a href=\"https://myparcel.me/returns/create\" target=\"_blank\" rel=\"noopener\">myparcel.me/returns/create</a>.</p>" } },
+        "a2": { "type": "article", "settings": { "heading": "Voorwaarden", "heading_tag": "h2", "body": "<ul><li>Je mag het product uitpakken en bekijken zoals je dat in een winkel zou doen. Is het meer gebruikt dan nodig was om het te beoordelen, dan mogen we de waardevermindering verrekenen.</li><li>Gepersonaliseerde producten (zoals bedrukkingen) kun je niet retourneren.</li><li>De kosten van het terugsturen zijn voor jou.</li></ul>", "in_toc": true } },
+        "a3": { "type": "article", "settings": { "heading": "Schade of verkeerd artikel", "heading_tag": "h2", "body": "<p>Controleer je bestelling direct bij ontvangst. Is het product beschadigd of heb je het verkeerde artikel gekregen? Neem dan meteen contact met ons op. We lossen het voor je op.</p>", "in_toc": true } }
+      },
+      "block_order": ["a1", "b1", "n1", "a2", "a3"],
+      "settings": { "show_toc": true, "toc_title": "Op deze pagina", "toc_numbers": false }
+    },
+    "more": {
+      "type": "legal-more",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "label": "Algemene voorwaarden", "link": "/policies/terms-of-service", "new_tab": false } },
+        "l2": { "type": "link", "settings": { "label": "Wettelijke kennisgeving", "link": "/policies/legal-notice", "new_tab": false } },
+        "l3": { "type": "link", "settings": { "label": "Verzendbeleid", "link": "/pages/verzendbeleid", "new_tab": false } },
+        "l4": { "type": "link", "settings": { "label": "Retourbeleid", "link": "/pages/retourbeleid", "new_tab": false } },
+        "l5": { "type": "link", "settings": { "label": "Betalingsbeleid", "link": "/pages/terugbetalingsbeleid", "new_tab": false } },
+        "l6": { "type": "link", "settings": { "label": "Privacybeleid", "link": "/pages/privacybeleid", "new_tab": false } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4", "l5", "l6"],
+      "settings": { "label": "Ook onder Algemeen" }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": { "heading": "Vraag over dit beleid?", "text": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>.", "button_label": "Contact", "button_link": "/pages/contact" }
+    }
+  },
+  "order": ["hero", "body", "more", "help"]
+}

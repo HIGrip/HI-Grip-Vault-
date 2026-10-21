@@ -1,0 +1,107 @@
+{{ 'legal-page.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+-%}
+<div
+  class="legal legal-more"
+  data-width="{{ s.section_width }}"
+  data-align="{{ s.text_align }}"
+  style="
+    --legal-bg: {{ s.bg_color }};
+    --legal-fg: {{ s.text_color }};
+    --legal-pt: {{ s.padding_top }}px;
+    --legal-pb: {{ s.padding_bottom }}px;
+    --legal-pt-m: {{ s.padding_top_mobile }}px;
+    --legal-pb-m: {{ s.padding_bottom_mobile }}px;
+    --chip-radius: {{ s.chip_radius }}px;
+    --chip-size: {{ s.chip_size }}px;
+    {% if s.label_color != blank %}--legal-label-color: {{ s.label_color }};{% endif %}
+    {% if s.chip_bg != blank %}--chip-bg: {{ s.chip_bg }};{% endif %}
+    {% if s.chip_fg != blank %}--chip-fg: {{ s.chip_fg }};{% endif %}
+    {% if s.chip_border != blank %}--chip-border: {{ s.chip_border }};{% endif %}
+    {% if s.chip_hover_bg != blank %}--chip-hover-bg: {{ s.chip_hover_bg }};{% endif %}
+    {% if s.chip_hover_fg != blank %}--chip-hover-fg: {{ s.chip_hover_fg }};{% endif %}
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="legal__wrap">
+    {%- if s.label != blank -%}
+      <p class="legal-more__label">{{ s.label | escape }}</p>
+    {%- endif -%}
+    <ul class="legal-more__list">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.label != blank and block.settings.link != blank -%}
+          <li {{ block.shopify_attributes }}>
+            <a
+              class="legal-more__link"
+              href="{{ block.settings.link }}"
+              {% if block.settings.link == request.path %}aria-current="page"{% endif %}
+              {% if block.settings.new_tab %}target="_blank" rel="noopener"{% endif %}
+            >{{ block.settings.label | escape }}</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juridisch: Links",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Ook onder Algemeen" },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte van de inhoud",
+      "options": [
+        { "value": "narrow", "label": "Smal" },
+        { "value": "page", "label": "Pagina" },
+        { "value": "full", "label": "Volledige breedte" }
+      ],
+      "default": "page"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Uitlijnen",
+      "options": [
+        { "value": "left", "label": "Links" },
+        { "value": "center", "label": "Gecentreerd" },
+        { "value": "right", "label": "Rechts" }
+      ],
+      "default": "left"
+    },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#eae8e5" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "label_color", "label": "Kleur label" },
+    { "type": "header", "content": "Links (knoppen)" },
+    { "type": "color", "id": "chip_bg", "label": "Achtergrondkleur" },
+    { "type": "color", "id": "chip_fg", "label": "Tekstkleur" },
+    { "type": "color", "id": "chip_border", "label": "Randkleur" },
+    { "type": "color", "id": "chip_hover_bg", "label": "Achtergrondkleur bij hover / actief" },
+    { "type": "color", "id": "chip_hover_fg", "label": "Tekstkleur bij hover / actief" },
+    { "type": "range", "id": "chip_radius", "label": "Hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "range", "id": "chip_size", "label": "Tekstgrootte", "min": 10, "max": 22, "step": 1, "unit": "px", "default": 13 },
+    { "type": "header", "content": "Ruimte" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 40 }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Pagina" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "checkbox", "id": "new_tab", "label": "Openen in nieuw tabblad", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Juridisch: Links" }
+  ]
+}
+{% endschema %}

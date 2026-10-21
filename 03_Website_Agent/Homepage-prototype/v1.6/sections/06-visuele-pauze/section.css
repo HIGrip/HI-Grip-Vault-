@@ -1,0 +1,140 @@
+/* 06 VISUELE PAUZE · 1.6 (Lars 19-10: harde elementen van Studio Freight / Air Space Intelligence).
+   Een film in code van 16 × --hp-dur-3 (~14 s) in een afgerond kader. Monochrome beelden, tekst die zich ontcijfert
+   in losse labelblokken (section.js), blauwe selectiekaders, een gesplitst scherm met scanlijn en kruisraster,
+   een netwerkdiagram, registratiehoeken, kleurbalkjes en een liniaal. Eindbeeld licht, met een klikbare pill.
+   Scènes: 0–22 de zool · 22–44 gesplitst grippatroon · 44–72 netwerk stop/draai/sprint · 72–86 de laatste bal · 86–100 eindbeeld.
+   Elk element met --s (moment in de lus, 0–1) deelt één keyframe en schuift met delay (s − 1) × lus. */
+.hp-06 { --hp-06-p: 0; position: relative; height: 100svh; min-height: 560px; max-height: 1100px; padding: 12px; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-film, .hp-06-hud { position: absolute; inset: 12px; border-radius: var(--hp-radius-media); overflow: hidden; }
+.hp-06-film { isolation: isolate; background: var(--hi-near-black); }
+.hp-06.is-paused .hp-06-film *, .hp-06.is-paused .hp-06-cta { animation-play-state: paused; }
+
+/* scènes */
+.hp-06-scene { position: absolute; inset: 0; overflow: hidden; }
+.hp-06-s1 { animation: hp-06-v1 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s2 { animation: hp-06-v2 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; background: var(--hi-black); }
+.hp-06-s3 { animation: hp-06-v3 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; background: var(--hi-near-black); }
+.hp-06-s4 { animation: hp-06-v4 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-s5 { animation: hp-06-v5 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; display: grid; place-items: center; background: var(--hi-white); color: var(--hi-black); }
+@keyframes hp-06-v1 { 0%, 21.9% { opacity: 1; } 22%, 100% { opacity: 0; } }
+@keyframes hp-06-v2 { 0%, 21.9% { opacity: 0; } 22%, 43.9% { opacity: 1; } 44%, 100% { opacity: 0; } }
+@keyframes hp-06-v3 { 0%, 43.9% { opacity: 0; } 44%, 71.9% { opacity: 1; } 72%, 100% { opacity: 0; } }
+@keyframes hp-06-v4 { 0%, 71.9% { opacity: 0; } 72%, 85.9% { opacity: 1; } 86%, 100% { opacity: 0; } }
+@keyframes hp-06-v5 { 0%, 85.9% { opacity: 0; } 86%, 100% { opacity: 1; } }
+
+.hp-06-shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.12); }
+.hp-06-shot--zool { object-position: 62% 60%; animation: hp-06-push1 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-push1 { 0% { transform: scale(1.3); } 22%, 100% { transform: scale(1.04); } }
+.hp-06-shot--bal { animation: hp-06-push4 calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-push4 { 0%, 72% { transform: scale(1.25); } 86%, 100% { transform: scale(1.05); } }
+
+/* gedeelde inloop-bewegingen op --s */
+.hp-06-box, .hp-06-bbox, .hp-06-node, .hp-06-net__l { animation-duration: calc(var(--hp-dur-3) * 16); animation-timing-function: var(--hp-ease); animation-iteration-count: infinite; animation-delay: calc(var(--hp-dur-3) * 16 * (var(--s, 0) - 1)); }
+.hp-06-box { animation-name: hp-06-wipe; }
+.hp-06-bbox, .hp-06-node { animation-name: hp-06-pop; }
+.hp-06-net__l { animation-name: hp-06-draw; }
+@keyframes hp-06-wipe { 0% { clip-path: inset(0 100% 0 0); } 1.6%, 100% { clip-path: inset(0); } }
+@keyframes hp-06-pop { 0% { opacity: 0; transform: scale(1.5); } 1.2% { opacity: 1; transform: scale(0.96); } 2%, 100% { opacity: 1; transform: scale(1); } }
+@keyframes hp-06-draw { 0% { stroke-dashoffset: 1; } 3%, 100% { stroke-dashoffset: 0; } }
+
+/* labelblokken */
+.hp-06-boxes { position: absolute; z-index: 2; left: var(--hp-space-sm); top: calc(var(--hp-space-xl) - 8px); display: grid; justify-items: start; gap: 6px; }
+.hp-06-box {
+  display: inline-block; padding: 0.1em 0.22em 0.06em; background: var(--hi-white); color: var(--hi-black);
+  font: 700 clamp(26px, 5.6vw, 76px)/1 var(--hp-type-family); letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.hp-06-box--volt { background: var(--hi-yellow); }
+.hp-06-box--small { font-size: clamp(13px, 1.3vw, 18px); letter-spacing: 0.1em; }
+.hp-06-box--big { font-size: clamp(22px, 3.6vw, 56px); }
+.hp-06-boxes--bottom { top: auto; bottom: calc(var(--hp-space-xl) + 8px); }
+.hp-06-boxes--kicker { top: var(--hp-space-xl); }
+
+/* selectiekader */
+.hp-06-bbox { position: absolute; z-index: 1; border: 2px solid var(--hi-blue); box-shadow: inset 0 0 0 1px var(--hi-white); }
+.hp-06-bbox::before, .hp-06-bbox::after { content: ""; position: absolute; width: 10px; height: 10px; background: var(--hi-blue); }
+.hp-06-bbox::before { left: -6px; top: -6px; }
+.hp-06-bbox::after { right: -6px; bottom: -6px; }
+.hp-06-bbox--zool { left: 44%; top: 34%; width: 34%; height: 52%; }
+.hp-06-bbox--bal { left: 68%; top: 22%; width: 18%; height: 30%; }
+.hp-06-bbox__tag { position: absolute; left: -2px; bottom: 100%; display: inline-flex; gap: 8px; padding: 5px 8px; background: var(--hi-blue); color: var(--hi-white); font: 700 11px/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+.hp-06-bbox__n { color: var(--hi-yellow); }
+
+/* scène 2: gesplitst scherm */
+.hp-06-split { position: absolute; inset: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.hp-06-boxes--split { position: relative; left: auto; top: auto; padding: var(--hp-space-xl) var(--hp-space-sm) var(--hp-space-sm); }
+.hp-06-scan { position: relative; overflow: hidden; }
+.hp-06-shot--patroon { animation: hp-06-pan calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-pan { 0%, 22% { transform: scale(1.4) translateX(6%); } 44%, 100% { transform: scale(1.12) translateX(0); } }
+.hp-06-cross { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hp-06-cross path { fill: none; stroke: var(--hi-white); stroke-width: 1; opacity: 0.35; vector-effect: non-scaling-stroke; }
+.hp-06-cross .hp-06-cross__plus { stroke: var(--hi-yellow); stroke-width: 2; opacity: 1; }
+.hp-06-scanline { position: absolute; left: 0; right: 0; top: 0; height: 2px; background: var(--hi-yellow); box-shadow: 0 0 0 1px var(--hi-black); animation: hp-06-scanl calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-scanl { 0%, 23% { top: 0; } 33% { top: 100%; } 34% { top: 0; } 43%, 100% { top: 100%; } }
+
+/* scène 3: netwerk */
+.hp-06-net { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hp-06-net__l { fill: none; stroke: var(--hi-white); stroke-width: 2; stroke-dasharray: 1 1; vector-effect: non-scaling-stroke; }
+.hp-06-node { position: absolute; z-index: 1; left: var(--x); top: var(--y); width: clamp(110px, 22%, 300px); translate: -50% -50%; }
+.hp-06-node img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.12); border: 2px solid var(--hi-white); }
+.hp-06-node .hp-06-box { position: absolute; left: 0; top: calc(100% + 6px); }
+
+/* scène 5: licht eindbeeld */
+.hp-06-end { max-width: 22ch; padding: 0 var(--hp-space-sm) var(--hp-space-xl); font: 800 clamp(24px, 4.2vw, 68px)/1.04 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-06-mark { background: var(--hi-yellow); padding-inline: 0.08em; }
+
+/* flits op de cuts */
+.hp-06-flash { position: absolute; inset: 0; z-index: 4; background: var(--hi-white); opacity: 0; pointer-events: none; animation: hp-06-flash calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-flash { 0%, 21.8% { opacity: 0; } 22% { opacity: 0.7; } 23%, 43.8% { opacity: 0; } 44% { opacity: 0.7; } 45%, 71.8% { opacity: 0; } 72% { opacity: 0.6; } 73%, 100% { opacity: 0; } }
+
+/* HUD: registratiehoeken, merk, kleurbalkjes, timecode, liniaal, bediening */
+.hp-06-hud { z-index: 7; pointer-events: none; font: 600 11px/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; color: var(--hi-titanium); }
+.hp-06-reg { position: absolute; width: 18px; height: 18px; border: 0 solid var(--hi-orange); }
+.hp-06-reg--tl { left: 12px; top: 12px; border-left-width: 2px; border-top-width: 2px; }
+.hp-06-reg--tr { right: 12px; top: 12px; border-right-width: 2px; border-top-width: 2px; }
+.hp-06-reg--bl { left: 12px; bottom: 12px; border-left-width: 2px; border-bottom-width: 2px; }
+.hp-06-reg--br { right: 12px; bottom: 12px; border-right-width: 2px; border-bottom-width: 2px; }
+.hp-06-brand { position: absolute; left: 40px; top: 18px; font-style: italic; font-weight: 900; color: var(--hi-white); mix-blend-mode: difference; }
+.hp-06-bars { position: absolute; left: 112px; top: 20px; display: flex; gap: 3px; }
+.hp-06-bars span { width: 18px; height: 6px; }
+.hp-06-bars span:nth-child(1) { background: var(--hi-blue); } .hp-06-bars span:nth-child(2) { background: var(--hi-orange); }
+.hp-06-bars span:nth-child(3) { background: var(--hi-red); } .hp-06-bars span:nth-child(4) { background: var(--hi-yellow); }
+.hp-06-tc { position: absolute; right: 40px; top: 18px; font-variant-numeric: tabular-nums; color: var(--hi-white); mix-blend-mode: difference; }
+.hp-06-ruler { position: absolute; left: 40px; right: 40px; bottom: 54px; display: none; justify-content: space-between; color: var(--hi-white); mix-blend-mode: difference; font-variant-numeric: tabular-nums; }
+.hp-06-ruler span { position: relative; padding-top: 10px; }
+.hp-06-ruler span::before { content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 6px; background: currentColor; }
+.hp-06-toggle {
+  position: absolute; left: 40px; bottom: 18px; pointer-events: auto;
+  display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--hi-line-dark); border-radius: 6px;
+  background: var(--hi-black); color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-toggle svg { width: 11px; height: 11px; }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play { display: block; }
+.hp-06-toggle:focus-visible { outline: 2px solid var(--hi-white); }
+.hp-06-toggle:active { border-color: var(--hi-white); }
+@media (hover: hover) { .hp-06-toggle:hover { border-color: var(--hi-white); } }
+.hp-06-progress { position: absolute; left: 84px; right: 40px; bottom: 33px; height: 2px; background: var(--hi-line-dark); }
+.hp-06-progress__fill { position: absolute; inset: 0; background: var(--hi-yellow); transform-origin: 0 50%; transform: scaleX(var(--hp-06-p)); }
+.hp-06-cta {
+  position: absolute; left: 50%; bottom: 76px; translate: -50% 0; pointer-events: auto;
+  animation: hp-06-ctav calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite;
+}
+@keyframes hp-06-ctav { 0%, 87.9% { visibility: hidden; opacity: 0; transform: translateY(16px); } 88%, 100% { visibility: visible; opacity: 1; transform: none; } }
+
+@media (min-width: 769px) {
+  .hp-06 { padding: 24px max(40px, env(safe-area-inset-left, 0px)); }
+  .hp-06-film, .hp-06-hud { inset: 24px max(40px, env(safe-area-inset-left, 0px)); }
+  .hp-06-boxes { left: var(--hp-space-lg); }
+  .hp-06-split { grid-template-rows: none; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .hp-06-boxes--split { align-self: center; padding: 0 var(--hp-space-md) 0 var(--hp-space-lg); }
+  .hp-06-box { font-size: clamp(30px, 3.8vw, 64px); }
+  .hp-06-boxes--split .hp-06-box { font-size: clamp(24px, 2.6vw, 44px); }
+  .hp-06-ruler { display: flex; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-06-s1, .hp-06-s2, .hp-06-s3, .hp-06-s4, .hp-06-flash, .hp-06-toggle, .hp-06-progress, .hp-06-tc, .hp-06-ruler { display: none; }
+  .hp-06-s5 { opacity: 1; }
+  .hp-06-cta { visibility: visible; opacity: 1; }
+}

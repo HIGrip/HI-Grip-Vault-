@@ -1,0 +1,829 @@
+{% doc %}
+  @prompt
+    Een tijdlijn die interactief is en oplicht wanneer de klant scrollt. Er moeten fotos in de tijdlijn passen en niet alleen maar verticaal zijn ook soms horizon taal. Het gaat om 10 bulletpoints waar ook tekst onder past. het moet energiek zijn voor ons sportmerk., de tekst moet wat verder van de tijdlijn af en meer kleuren, ER MOET BOVEN ELKE TITEL EEN PLEK KOMEN VOOR EEN DATUM
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-timeline-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: 60px 20px;
+    display: block;
+  }
+
+  .ai-timeline-container-{{ ai_gen_id }} {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-timeline-line-{{ ai_gen_id }} {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, {{ block.settings.line_color_start }}, {{ block.settings.line_color_end }});
+    transform: translateX(-50%);
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }} {
+    position: relative;
+    margin-bottom: 80px;
+    opacity: 0.3;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}:nth-child(odd) .ai-timeline-content-{{ ai_gen_id }} {
+    flex-direction: row;
+    text-align: right;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}:nth-child(even) .ai-timeline-content-{{ ai_gen_id }} {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .ai-timeline-content-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+  }
+
+  .ai-timeline-text-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    max-width: calc(50% - 80px);
+  }
+
+  .ai-timeline-date-{{ ai_gen_id }} {
+    font-size: {{ block.settings.date_size }}px;
+    color: {{ block.settings.date_color }};
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-timeline-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .ai-timeline-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.6;
+  }
+
+  .ai-timeline-image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    max-width: calc(50% - 80px);
+    position: relative;
+  }
+
+  .ai-timeline-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}.active .ai-timeline-image-{{ ai_gen_id }} {
+    transform: scale(1.02);
+  }
+
+  .ai-timeline-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-timeline-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-timeline-dot-{{ ai_gen_id }} {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ block.settings.dot_size }}px;
+    height: {{ block.settings.dot_size }}px;
+    background: {{ block.settings.dot_color }};
+    border: 4px solid {{ block.settings.dot_border_color }};
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 0 {{ block.settings.dot_color }};
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}.active .ai-timeline-dot-{{ ai_gen_id }} {
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 0 0 8px {{ block.settings.dot_color }}33;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-timeline-line-{{ ai_gen_id }} {
+      left: 20px;
+    }
+
+    .ai-timeline-item-{{ ai_gen_id }}:nth-child(odd) .ai-timeline-content-{{ ai_gen_id }},
+    .ai-timeline-item-{{ ai_gen_id }}:nth-child(even) .ai-timeline-content-{{ ai_gen_id }} {
+      flex-direction: column;
+      text-align: left;
+      padding-left: 60px;
+    }
+
+    .ai-timeline-text-wrapper-{{ ai_gen_id }},
+    .ai-timeline-image-wrapper-{{ ai_gen_id }} {
+      max-width: 100%;
+    }
+
+    .ai-timeline-dot-{{ ai_gen_id }} {
+      left: 20px;
+      top: 40px;
+    }
+
+    .ai-timeline-content-{{ ai_gen_id }} {
+      gap: 20px;
+    }
+  }
+{% endstyle %}
+
+<interactive-timeline-{{ ai_gen_id }} class="ai-timeline-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-timeline-container-{{ ai_gen_id }}">
+    <div class="ai-timeline-line-{{ ai_gen_id }}"></div>
+
+    {% for i in (1..10) %}
+      {% liquid
+        assign date_key = 'item_' | append: i | append: '_date'
+        assign title_key = 'item_' | append: i | append: '_title'
+        assign description_key = 'item_' | append: i | append: '_description'
+        assign image_key = 'item_' | append: i | append: '_image'
+        assign orientation_key = 'item_' | append: i | append: '_orientation'
+
+        assign item_date = block.settings[date_key]
+        assign item_title = block.settings[title_key]
+        assign item_description = block.settings[description_key]
+        assign item_image = block.settings[image_key]
+        assign item_orientation = block.settings[orientation_key]
+      %}
+
+      {% if item_title != blank or item_description != blank or item_image != blank %}
+        <div class="ai-timeline-item-{{ ai_gen_id }}" data-timeline-item>
+          <div class="ai-timeline-content-{{ ai_gen_id }}">
+            <div class="ai-timeline-text-wrapper-{{ ai_gen_id }}">
+              {% if item_date != blank %}
+                <div class="ai-timeline-date-{{ ai_gen_id }}">{{ item_date }}</div>
+              {% endif %}
+              {% if item_title != blank %}
+                <{{ block.settings.heading_tag | default: "h3" }} class="ai-timeline-title-{{ ai_gen_id }}">{{ item_title }}</{{ block.settings.heading_tag | default: "h3" }}>
+              {% endif %}
+              {% if item_description != blank %}
+                <div class="ai-timeline-description-{{ ai_gen_id }}">{{ item_description }}</div>
+              {% endif %}
+            </div>
+
+            <div class="ai-timeline-image-wrapper-{{ ai_gen_id }}">
+              {% if item_image != blank %}
+                {% if item_orientation == 'landscape' %}
+                  <img
+                    src="{{ item_image | image_url: width: 800 }}"
+                    alt="{{ item_image.alt | escape }}"
+                    class="ai-timeline-image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="800"
+                    height="{{ 800 | divided_by: item_image.aspect_ratio | round }}"
+                    style="aspect-ratio: 16 / 9; object-fit: cover;"
+                  >
+                {% else %}
+                  <img
+                    src="{{ item_image | image_url: width: 600 }}"
+                    alt="{{ item_image.alt | escape }}"
+                    class="ai-timeline-image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="600"
+                    height="{{ 600 | divided_by: item_image.aspect_ratio | round }}"
+                    style="aspect-ratio: 3 / 4; object-fit: cover;"
+                  >
+                {% endif %}
+              {% else %}
+                <div class="ai-timeline-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="ai-timeline-dot-{{ ai_gen_id }}"></div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</interactive-timeline-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class InteractiveTimeline{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.items = [];
+        this.observer = null;
+      }
+
+      connectedCallback() {
+        this.items = this.querySelectorAll('[data-timeline-item]');
+        this.setupIntersectionObserver();
+      }
+
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '-20% 0px -20% 0px',
+          threshold: 0.1
+        };
+
+        this.observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+            }
+          });
+        }, options);
+
+        this.items.forEach((item) => {
+          this.observer.observe(item);
+        });
+      }
+
+      disconnectedCallback() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    }
+
+    customElements.define('interactive-timeline-{{ ai_gen_id }}', InteractiveTimeline{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Interactieve tijdlijn",
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h3" },
+    {
+      "type": "header",
+      "content": "Algemeen"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop breedte",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Tijdlijn lijn"
+    },
+    {
+      "type": "color",
+      "id": "line_color_start",
+      "label": "Lijn kleur start",
+      "default": "#FF6B00"
+    },
+    {
+      "type": "color",
+      "id": "line_color_end",
+      "label": "Lijn kleur einde",
+      "default": "#FF0000"
+    },
+    {
+      "type": "header",
+      "content": "Tijdlijn punt"
+    },
+    {
+      "type": "range",
+      "id": "dot_size",
+      "label": "Punt grootte",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Punt kleur",
+      "default": "#FF6B00"
+    },
+    {
+      "type": "color",
+      "id": "dot_border_color",
+      "label": "Punt rand kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Afbeeldingen"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Afbeelding hoekradius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Tekst stijl"
+    },
+    {
+      "type": "range",
+      "id": "date_size",
+      "label": "Datum grootte",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Datum kleur",
+      "default": "#FF6B00"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Titel grootte",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titel kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Beschrijving grootte",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Beschrijving kleur",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Item 1"
+    },
+    {
+      "type": "text",
+      "id": "item_1_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_1_title",
+      "label": "Titel",
+      "default": "Het begin"
+    },
+    {
+      "type": "textarea",
+      "id": "item_1_description",
+      "label": "Beschrijving",
+      "default": "Hier begon ons verhaal met een visie en passie voor sport."
+    },
+    {
+      "type": "image_picker",
+      "id": "item_1_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_1_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "landscape"
+    },
+    {
+      "type": "header",
+      "content": "Item 2"
+    },
+    {
+      "type": "text",
+      "id": "item_2_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_2_title",
+      "label": "Titel",
+      "default": "Eerste product"
+    },
+    {
+      "type": "textarea",
+      "id": "item_2_description",
+      "label": "Beschrijving",
+      "default": "Lancering van ons eerste innovatieve sportproduct."
+    },
+    {
+      "type": "image_picker",
+      "id": "item_2_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_2_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "header",
+      "content": "Item 3"
+    },
+    {
+      "type": "text",
+      "id": "item_3_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_3_title",
+      "label": "Titel",
+      "default": "Groei"
+    },
+    {
+      "type": "textarea",
+      "id": "item_3_description",
+      "label": "Beschrijving",
+      "default": "Uitbreiding naar nieuwe markten en producten."
+    },
+    {
+      "type": "image_picker",
+      "id": "item_3_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_3_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "landscape"
+    },
+    {
+      "type": "header",
+      "content": "Item 4"
+    },
+    {
+      "type": "text",
+      "id": "item_4_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_4_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_4_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_4_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_4_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "header",
+      "content": "Item 5"
+    },
+    {
+      "type": "text",
+      "id": "item_5_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_5_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_5_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_5_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_5_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "landscape"
+    },
+    {
+      "type": "header",
+      "content": "Item 6"
+    },
+    {
+      "type": "text",
+      "id": "item_6_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_6_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_6_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_6_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_6_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "header",
+      "content": "Item 7"
+    },
+    {
+      "type": "text",
+      "id": "item_7_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_7_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_7_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_7_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_7_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "landscape"
+    },
+    {
+      "type": "header",
+      "content": "Item 8"
+    },
+    {
+      "type": "text",
+      "id": "item_8_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_8_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_8_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_8_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_8_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "portrait"
+    },
+    {
+      "type": "header",
+      "content": "Item 9"
+    },
+    {
+      "type": "text",
+      "id": "item_9_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_9_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_9_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_9_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_9_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "landscape"
+    },
+    {
+      "type": "header",
+      "content": "Item 10"
+    },
+    {
+      "type": "text",
+      "id": "item_10_date",
+      "label": "Datum"
+    },
+    {
+      "type": "text",
+      "id": "item_10_title",
+      "label": "Titel"
+    },
+    {
+      "type": "textarea",
+      "id": "item_10_description",
+      "label": "Beschrijving"
+    },
+    {
+      "type": "image_picker",
+      "id": "item_10_image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "select",
+      "id": "item_10_orientation",
+      "label": "Afbeelding oriëntatie",
+      "options": [
+        {
+          "value": "landscape",
+          "label": "Liggend"
+        },
+        {
+          "value": "portrait",
+          "label": "Staand"
+        }
+      ],
+      "default": "portrait"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Interactieve tijdlijn"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

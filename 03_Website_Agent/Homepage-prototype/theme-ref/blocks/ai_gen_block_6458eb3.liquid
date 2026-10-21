@@ -1,0 +1,227 @@
+{% doc %}
+  @prompt
+    maak een trustpilot sterren die we zelf kunnen aanpassen met daarboven de tekst ''3500+ sporters waren jou voor'' die we ook kunnen aanpassen. niet te groot., de sterren moet worden afgerond op 1 decimaal. ''4,8'' bijvoorbeeld., uitlijnen naar links. 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-trustpilot-stars-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-trustpilot-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    text-align: left;
+    margin: 0;
+  }
+
+  .ai-trustpilot-stars-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .ai-trustpilot-star-container-{{ ai_gen_id }} {
+    position: relative;
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+  }
+
+  .ai-trustpilot-star-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-trustpilot-star-empty-{{ ai_gen_id }} {
+    fill: {{ block.settings.star_empty_color }};
+  }
+
+  .ai-trustpilot-star-filled-{{ ai_gen_id }} {
+    fill: {{ block.settings.star_color }};
+    clip-path: inset(0 var(--ai-star-empty-{{ ai_gen_id }}) 0 0);
+  }
+
+  .ai-trustpilot-rating-{{ ai_gen_id }} {
+    font-size: {{ block.settings.rating_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: 600;
+    margin-left: 4px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-trustpilot-text-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.text_size }}px * 0.9);
+    }
+
+    .ai-trustpilot-star-container-{{ ai_gen_id }} {
+      width: calc({{ block.settings.star_size }}px * 0.9);
+      height: calc({{ block.settings.star_size }}px * 0.9);
+    }
+
+    .ai-trustpilot-rating-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.rating_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-trustpilot-stars-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.text != blank %}
+    <p class="ai-trustpilot-text-{{ ai_gen_id }}">{{ block.settings.text }}</p>
+  {% endif %}
+
+  <div class="ai-trustpilot-stars-wrapper-{{ ai_gen_id }}">
+    {% assign rating = block.settings.rating %}
+    {% assign full_stars = rating | floor %}
+    {% assign decimal_part = rating | modulo: 1 %}
+    {% assign empty_percentage = decimal_part | times: -1 | plus: 1 | times: 100 %}
+    {% assign partial_star_index = full_stars | plus: 1 %}
+
+    {% for i in (1..5) %}
+      <div class="ai-trustpilot-star-container-{{ ai_gen_id }}">
+        <svg
+          class="ai-trustpilot-star-{{ ai_gen_id }} ai-trustpilot-star-empty-{{ ai_gen_id }}"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        {% if i <= full_stars %}
+          <svg
+            class="ai-trustpilot-star-{{ ai_gen_id }} ai-trustpilot-star-filled-{{ ai_gen_id }}"
+            style="--ai-star-empty-{{ ai_gen_id }}: 0%;"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {% endif %}
+        {% if i == partial_star_index and decimal_part > 0 %}
+          <svg
+            class="ai-trustpilot-star-{{ ai_gen_id }} ai-trustpilot-star-filled-{{ ai_gen_id }}"
+            style="--ai-star-empty-{{ ai_gen_id }}: {{ empty_percentage }}%;"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    {% if block.settings.show_rating %}
+      <span class="ai-trustpilot-rating-{{ ai_gen_id }}">{{ rating }}</span>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Trustpilot sterren",
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Tekst",
+      "default": "3500+ sporters waren jou voor"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Tekstgrootte",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Sterren"
+    },
+    {
+      "type": "range",
+      "id": "rating",
+      "label": "Beoordeling",
+      "min": 0,
+      "max": 5,
+      "step": 0.1,
+      "default": 4.8
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "label": "Toon beoordelingscijfer",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "rating_size",
+      "label": "Cijfergrootte",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Stergrootte",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Sterkleur (gevuld)",
+      "default": "#00b67a"
+    },
+    {
+      "type": "color",
+      "id": "star_empty_color",
+      "label": "Sterkleur (leeg)",
+      "default": "#dcdce6"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop breedte",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trustpilot sterren"
+    }
+  ]
+}
+{% endschema %}

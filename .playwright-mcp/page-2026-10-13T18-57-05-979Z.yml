@@ -1,0 +1,753 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [active] [ref=f74e1]:
+  - generic [ref=f74e5]:
+    - paragraph [ref=f74e10]: Gratis verzending vanaf €80
+    - paragraph [ref=f74e15]:
+      - link "Ontdek nieuwe items" [ref=f74e16] [cursor=pointer]:
+        - /url: /nl-nl/collections/new-in
+    - paragraph [ref=f74e21]:
+      - link "Seizoensgebonden bovenkleding" [ref=f74e22] [cursor=pointer]:
+        - /url: /nl-nl/collections/all-outerwear
+    - paragraph [ref=f74e27]:
+      - link "Shop op kleur" [ref=f74e28] [cursor=pointer]:
+        - /url: /nl-nl/collections/shop-by-color
+    - paragraph [ref=f74e33]:
+      - link "Jay – jouw lifestylecaddie" [ref=f74e34] [cursor=pointer]:
+        - /url: /nl-nl/blogs/news/theres-someone-we-like-you-to-meet
+    - paragraph [ref=f74e39]: Gratis verzending vanaf €80
+    - paragraph [ref=f74e44]:
+      - link "Ontdek nieuwe items" [ref=f74e45] [cursor=pointer]:
+        - /url: /nl-nl/collections/new-in
+  - banner [ref=f74e47]:
+    - generic [ref=f74e48]:
+      - generic [ref=f74e50]:
+        - button "Menu" [ref=f74e51] [cursor=pointer]
+        - button "Search" [ref=f74e53] [cursor=pointer]
+      - 'link "Translation missing: nl.general.general.logo" [ref=f74e58] [cursor=pointer]':
+        - /url: /nl-nl
+      - generic [ref=f74e61]:
+        - button "account" [ref=f74e62] [cursor=pointer]
+        - button "Wishlist" [ref=f74e68] [cursor=pointer]
+        - button "Cart" [ref=f74e74] [cursor=pointer]
+  - main [ref=f74e79]:
+    - generic [ref=f74e83]:
+      - link [ref=f74e84] [cursor=pointer]:
+        - /url: /nl-nl/collections/all-outerwear
+      - generic [ref=f74e87]:
+        - generic:
+          - generic [ref=f74e88]:
+            - generic [ref=f74e89]: FW26
+            - heading "Life in motion with Joel Kinnaman & Kelly Gale" [level=3] [ref=f74e90]
+            - paragraph [ref=f74e93]: Ontdek technische jassen en mantels met Solarcore®- en PrimaLoft®-isolatie.
+          - generic [ref=f74e95]:
+            - link "Ontdek nu" [ref=f74e96] [cursor=pointer]:
+              - /url: /nl-nl/collections/all-outerwear
+            - link "Shop op kleur" [ref=f74e99] [cursor=pointer]:
+              - /url: /nl-nl/collections/shop-by-color
+    - list [ref=f74e105]:
+      - listitem [ref=f74e106]:
+        - link "Down jackets Donzenjassen" [ref=f74e107] [cursor=pointer]:
+          - /url: /nl-nl/collections/all-down-jackets
+          - img "Down jackets" [ref=f74e109]
+          - generic [ref=f74e110]: Donzenjassen
+      - listitem [ref=f74e111]:
+        - link "Shop by color Shop op kleur" [ref=f74e112] [cursor=pointer]:
+          - /url: /nl-nl/collections/shop-by-color
+          - img "Shop by color" [ref=f74e114]
+          - generic [ref=f74e115]: Shop op kleur
+      - listitem [ref=f74e116]:
+        - link "Knitwear Breigoed" [ref=f74e117] [cursor=pointer]:
+          - /url: /nl-nl/collections/all-knitwear
+          - img "Knitwear" [ref=f74e119]
+          - generic [ref=f74e120]: Breigoed
+      - listitem [ref=f74e121]:
+        - link "Bottoms Onderkleding" [ref=f74e122] [cursor=pointer]:
+          - /url: /nl-nl/collections/bottoms
+          - img "Bottoms" [ref=f74e124]
+          - generic [ref=f74e125]: Onderkleding
+    - generic [ref=f74e132]:
+      - link [ref=f74e133] [cursor=pointer]:
+        - /url: /nl-nl/collections/weather-wear
+      - generic [ref=f74e137]:
+        - generic:
+          - generic [ref=f74e138]:
+            - generic [ref=f74e139]: FW26 Golf
+            - heading "Weather wear" [level=3] [ref=f74e140]
+            - paragraph [ref=f74e143]: Gemaakt voor vroege ochtenden, koelere middagen en onvoorspelbaar weer.
+          - generic [ref=f74e145]:
+            - link "Ontdek nu" [ref=f74e146] [cursor=pointer]:
+              - /url: /nl-nl/collections/weather-wear
+            - link "Nieuw binnen" [ref=f74e149] [cursor=pointer]:
+              - /url: /nl-nl/collections/golf
+    - generic [ref=f74e153]:
+      - generic [ref=f74e156]:
+        - button "Shop the look" [ref=f74e157] [cursor=pointer]
+        - button "Shop the look" [ref=f74e158] [cursor=pointer]
+      - generic [ref=f74e163]:
+        - button "Shop the look" [ref=f74e164] [cursor=pointer]
+        - button "Shop the look" [ref=f74e165] [cursor=pointer]
+      - generic [ref=f74e170]:
+        - button "Shop the look" [ref=f74e171] [cursor=pointer]
+        - button "Shop the look" [ref=f74e172] [cursor=pointer]
+      - generic [ref=f74e177]:
+        - button "Shop the look" [ref=f74e178] [cursor=pointer]
+        - button "Shop the look" [ref=f74e179] [cursor=pointer]
+    - generic [ref=f74e188]:
+      - heading "Recommendations for you" [level=4] [ref=f74e189]
+      - list [ref=f74e191]:
+        - generic [ref=f74e193]:
+          - listitem [ref=f74e194]:
+            - generic [ref=f74e195]:
+              - link [ref=f74e196] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/amaya-knitted-sweater-winetasting
+              - generic [ref=f74e200]:
+                - generic [ref=f74e201]:
+                  - link "Amaya Knitted Sweater" [ref=f74e203] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/amaya-knitted-sweater-winetasting
+                  - generic [ref=f74e204]: €140
+                - button [ref=f74e211] [cursor=pointer]
+          - listitem [ref=f74e215]:
+            - generic [ref=f74e216]:
+              - link [ref=f74e217] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/mia-bonded-pant-brindle
+              - generic [ref=f74e221]:
+                - generic [ref=f74e222]:
+                  - link "Mia Bonded Pant" [ref=f74e224] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/mia-bonded-pant-brindle
+                  - generic [ref=f74e225]: €179
+                - button [ref=f74e232] [cursor=pointer]
+          - listitem [ref=f74e236]:
+            - generic [ref=f74e237]:
+              - link [ref=f74e238] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/rudy-golf-glove-white-1
+              - generic [ref=f74e242]:
+                - generic [ref=f74e243]:
+                  - link "Rudy Golf Glove" [ref=f74e245] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/rudy-golf-glove-white-1
+                  - generic [ref=f74e246]: €32
+                - button [ref=f74e253] [cursor=pointer]
+          - listitem [ref=f74e257]:
+            - generic [ref=f74e258]:
+              - link [ref=f74e259] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/flare-pant-jl-navy
+              - generic [ref=f74e263]:
+                - generic [ref=f74e264]:
+                  - link "Flare Pant" [ref=f74e266] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/flare-pant-jl-navy
+                  - generic [ref=f74e267]: €147
+                - button [ref=f74e274] [cursor=pointer]
+          - listitem [ref=f74e278]:
+            - generic [ref=f74e279]:
+              - link [ref=f74e280] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/spin-short-sock-jl-navy
+              - generic [ref=f74e284]:
+                - generic [ref=f74e285]:
+                  - link "Spin Short Sock" [ref=f74e287] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/spin-short-sock-jl-navy
+                  - generic [ref=f74e288]: €19
+                - button [ref=f74e295] [cursor=pointer]
+          - listitem [ref=f74e299]:
+            - generic [ref=f74e300]:
+              - link [ref=f74e301] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/adia-knitted-sweater-jl-navy-5
+              - generic [ref=f74e305]:
+                - generic [ref=f74e306]:
+                  - link "Adia Knitted Sweater" [ref=f74e308] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/adia-knitted-sweater-jl-navy-5
+                  - generic [ref=f74e309]: €158
+                - button [ref=f74e316] [cursor=pointer]
+          - listitem [ref=f74e320]:
+            - generic [ref=f74e321]:
+              - link [ref=f74e322] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/ellott-fleece-twill-pant-jl-navy
+              - generic [ref=f74e326]:
+                - generic [ref=f74e327]:
+                  - link "Ellott Fleece Twill Pant" [ref=f74e329] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/ellott-fleece-twill-pant-jl-navy
+                  - generic [ref=f74e330]: €200
+                - button [ref=f74e337] [cursor=pointer]
+          - listitem [ref=f74e341]:
+            - generic [ref=f74e342]:
+              - link [ref=f74e343] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/alesia-skirt-moonbeam
+              - generic [ref=f74e347]:
+                - generic [ref=f74e348]:
+                  - link "Alesia Skirt" [ref=f74e350] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/alesia-skirt-moonbeam
+                  - generic [ref=f74e351]: €126
+                - button [ref=f74e358] [cursor=pointer]
+          - listitem [ref=f74e362]:
+            - generic [ref=f74e363]:
+              - link [ref=f74e364] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/dena-sleeveless-polo-jl-navy
+              - generic [ref=f74e368]:
+                - generic [ref=f74e369]:
+                  - link "Dena Sleeveless Polo" [ref=f74e371] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/dena-sleeveless-polo-jl-navy
+                  - generic [ref=f74e372]: €74
+                - button [ref=f74e379] [cursor=pointer]
+          - listitem [ref=f74e383]:
+            - generic [ref=f74e384]:
+              - link [ref=f74e385] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/ariadne-knit-quarter-zip-forest-biome
+              - generic [ref=f74e389]:
+                - generic [ref=f74e390]:
+                  - link "Ariadne Knit Quarter Zip" [ref=f74e392] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/ariadne-knit-quarter-zip-forest-biome
+                  - generic [ref=f74e393]: €168
+                - button [ref=f74e400] [cursor=pointer]
+          - listitem [ref=f74e404]:
+            - generic [ref=f74e405]:
+              - link [ref=f74e406] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/adia-knitted-sweater-brindle
+              - generic [ref=f74e410]:
+                - generic [ref=f74e411]:
+                  - link "Adia Knitted Sweater" [ref=f74e413] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/adia-knitted-sweater-brindle
+                  - generic [ref=f74e414]: €158
+                - button [ref=f74e421] [cursor=pointer]
+          - listitem [ref=f74e425]:
+            - generic [ref=f74e426]:
+              - link [ref=f74e427] [cursor=pointer]:
+                - /url: https://www.jlindeberg.com/nl-nl/products/fiona-flared-leggings-brindle
+              - generic [ref=f74e431]:
+                - generic [ref=f74e432]:
+                  - link "Fiona Flared Leggings" [ref=f74e434] [cursor=pointer]:
+                    - /url: https://www.jlindeberg.com/nl-nl/products/fiona-flared-leggings-brindle
+                  - generic [ref=f74e435]: €95
+                - button [ref=f74e442] [cursor=pointer]
+    - region "Category Collection" [ref=f74e447]:
+      - generic [ref=f74e448]:
+        - generic [ref=f74e449]:
+          - heading "Populaire categorieën" [level=2] [ref=f74e450]
+          - tablist "Category Collection" [ref=f74e452]:
+            - tab "Dames" [selected] [ref=f74e453] [cursor=pointer]
+            - generic [aria-hidden] [ref=f74e454]: /
+            - tab "Heren" [ref=f74e455] [cursor=pointer]
+        - tabpanel "Dames" [ref=f74e457]:
+          - generic [ref=f74e462]:
+            - link [ref=f74e465] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-racket-new-in
+              - heading "Racket" [level=3] [ref=f74e468]
+            - link [ref=f74e471] [cursor=pointer]:
+              - /url: /nl-nl/collections/30-year-collection
+              - heading "30 year collection" [level=3] [ref=f74e474]
+            - link [ref=f74e477] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-accessories
+              - heading "Accessoires" [level=3] [ref=f74e480]
+            - link [ref=f74e483] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-vests
+              - heading "Bodywarmers" [level=3] [ref=f74e486]
+            - link [ref=f74e489] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-knitwear
+              - heading "Knitwear" [level=3] [ref=f74e492]
+            - link [ref=f74e495] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-skirts-dresses
+              - heading "Rokken & jurken" [level=3] [ref=f74e498]
+            - link [ref=f74e501] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-hoodies
+              - heading "Hoodies" [level=3] [ref=f74e504]
+            - link [ref=f74e507] [cursor=pointer]:
+              - /url: /nl-nl/collections/all-jackets
+              - heading "Jassen" [level=3] [ref=f74e510]
+            - link [ref=f74e513] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-racket-new-in
+              - heading "Racket" [level=3] [ref=f74e516]
+            - link [ref=f74e519] [cursor=pointer]:
+              - /url: /nl-nl/collections/30-year-collection
+              - heading "30 year collection" [level=3] [ref=f74e522]
+            - link [ref=f74e525] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-accessories
+              - heading "Accessoires" [level=3] [ref=f74e528]
+            - link [ref=f74e531] [cursor=pointer]:
+              - /url: /nl-nl/collections/womens-vests
+              - heading "Bodywarmers" [level=3] [ref=f74e534]
+    - heading "In beweging" [level=2] [ref=f74e537]
+    - link "Alle tassen" [ref=f74e543] [cursor=pointer]:
+      - /url: /nl-nl/collections/all-bags
+    - generic [ref=f74e550]:
+      - link [ref=f74e552] [cursor=pointer]:
+        - /url: /nl-nl/products/anna-slouchy-bag-black-1
+        - img "FWAC14720_9999_001.jpg" [ref=f74e556]
+        - heading "Anna Slouchy Bag / Black" [level=3] [ref=f74e558]
+      - link [ref=f74e560] [cursor=pointer]:
+        - /url: /nl-nl/products/spencer-commuter-holdall-black
+        - img "FUAC15817_9999_001.jpg" [ref=f74e564]
+        - heading "Spencer Commuter Holdall / Black" [level=3] [ref=f74e566]
+      - link [ref=f74e568] [cursor=pointer]:
+        - /url: /nl-nl/products/tyler-commuter-tote-black
+        - img "FUAC15818_9999_001.jpg" [ref=f74e572]
+        - heading "Tyler Commuter Tote / Black" [level=3] [ref=f74e574]
+      - link [ref=f74e576] [cursor=pointer]:
+        - /url: /nl-nl/products/cooper-daypack-black
+        - img "FUAC15755_9999_001.jpg" [ref=f74e580]
+        - heading "Cooper Daypack / Black" [level=3] [ref=f74e582]
+      - link [ref=f74e584] [cursor=pointer]:
+        - /url: /nl-nl/products/tristan-backpack-black
+        - img "FUAC14736_9999_001.jpg" [ref=f74e588]
+        - heading "Tristan Backpack / Black" [level=3] [ref=f74e590]
+      - link [ref=f74e592] [cursor=pointer]:
+        - /url: /nl-nl/products/casper-crossbody-bag-black
+        - img "FUAC15865_9999_001.jpg" [ref=f74e596]
+        - heading "Casper Crossbody Bag / Black" [level=3] [ref=f74e598]
+    - generic [ref=f74e603]:
+      - heading "Laatste nieuws" [level=2] [ref=f74e604]
+      - generic [ref=f74e609]:
+        - link "There's someone we'd like you to meet Article 13 / 10 / 26 There's someone we'd like you to meet" [ref=f74e612] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/theres-someone-we-like-you-to-meet
+          - img "There's someone we'd like you to meet" [ref=f74e614]
+          - generic [ref=f74e615]:
+            - generic [ref=f74e616]: Article
+            - generic [ref=f74e617]: 13 / 10 / 26
+          - heading "There's someone we'd like you to meet" [level=3] [ref=f74e619]
+        - link "Darja Barannik's seasonal selection Article 06 / 10 / 26 Darja Barannik's seasonal selection" [ref=f74e622] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/darja-barannik-seasonal-selection
+          - img "Darja Barannik's seasonal selection" [ref=f74e624]
+          - generic [ref=f74e625]:
+            - generic [ref=f74e626]: Article
+            - generic [ref=f74e627]: 06 / 10 / 26
+          - heading "Darja Barannik's seasonal selection" [level=3] [ref=f74e629]
+        - link "FW26 Golf Campaign - a closer look Article 23 / 09 / 26 FW26 Golf Campaign - a closer look" [ref=f74e632] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/fw26-golf-campaign
+          - img "FW26 Golf Campaign - a closer look" [ref=f74e634]
+          - generic [ref=f74e635]:
+            - generic [ref=f74e636]: Article
+            - generic [ref=f74e637]: 23 / 09 / 26
+          - heading "FW26 Golf Campaign - a closer look" [level=3] [ref=f74e639]
+        - link "FW26 Life in motion - a closer look Article 23 / 09 / 26 FW26 Life in motion - a closer look" [ref=f74e642] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/life-in-motion-with-joel-kinnaman-kelly-gale
+          - img "FW26 Life in motion - a closer look" [ref=f74e644]
+          - generic [ref=f74e645]:
+            - generic [ref=f74e646]: Article
+            - generic [ref=f74e647]: 23 / 09 / 26
+          - heading "FW26 Life in motion - a closer look" [level=3] [ref=f74e649]
+        - link "FW26 looks from Wentworth Article 21 / 09 / 26 FW26 looks from Wentworth" [ref=f74e652] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/fw26-looks-from-wentworth
+          - img "FW26 looks from Wentworth" [ref=f74e654]
+          - generic [ref=f74e655]:
+            - generic [ref=f74e656]: Article
+            - generic [ref=f74e657]: 21 / 09 / 26
+          - heading "FW26 looks from Wentworth" [level=3] [ref=f74e659]
+        - link "With Ellie Collins at Wentworth Article 18 / 09 / 26 With Ellie Collins at Wentworth" [ref=f74e662] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/ellie-collins-at-wentworth
+          - img "With Ellie Collins at Wentworth" [ref=f74e664]
+          - generic [ref=f74e665]:
+            - generic [ref=f74e666]: Article
+            - generic [ref=f74e667]: 18 / 09 / 26
+          - heading "With Ellie Collins at Wentworth" [level=3] [ref=f74e669]
+        - link "BMW PGA Championship Capsule Article 16 / 09 / 26 BMW PGA Championship Capsule" [ref=f74e672] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bmw-pga-championship-capsule
+          - img "BMW PGA Championship Capsule" [ref=f74e674]
+          - generic [ref=f74e675]:
+            - generic [ref=f74e676]: Article
+            - generic [ref=f74e677]: 16 / 09 / 26
+          - heading "BMW PGA Championship Capsule" [level=3] [ref=f74e679]
+        - link "Lisa Olsson's seasonal selection Article 09 / 09 / 26 Lisa Olsson's seasonal selection" [ref=f74e682] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/lisa-olssons-seasonal-selection-fw26
+          - img "Lisa Olsson's seasonal selection" [ref=f74e684]
+          - generic [ref=f74e685]:
+            - generic [ref=f74e686]: Article
+            - generic [ref=f74e687]: 09 / 09 / 26
+          - heading "Lisa Olsson's seasonal selection" [level=3] [ref=f74e689]
+        - link "Our ambassadors arriving at Crans-sur-Sierre Golf Club Article 03 / 09 / 26 Our ambassadors arriving at Crans-sur-Sierre Golf Club" [ref=f74e692] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/our-ambassadors-arriving-at-crans-sur-sierre-golf-club
+          - img "Our ambassadors arriving at Crans-sur-Sierre Golf Club" [ref=f74e694]
+          - generic [ref=f74e695]:
+            - generic [ref=f74e696]: Article
+            - generic [ref=f74e697]: 03 / 09 / 26
+          - heading "Our ambassadors arriving at Crans-sur-Sierre Golf Club" [level=3] [ref=f74e699]
+        - link "Arrival fits at The Open Championship Article 14 / 07 / 26 Arrival fits at The Open Championship" [ref=f74e702] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/arrival-fits-at-the-open-championship
+          - img "Arrival fits at The Open Championship" [ref=f74e704]
+          - generic [ref=f74e705]:
+            - generic [ref=f74e706]: Article
+            - generic [ref=f74e707]: 14 / 07 / 26
+          - heading "Arrival fits at The Open Championship" [level=3] [ref=f74e709]
+        - link "Our ambassadors arriving at Genesis Scottish Open Article 09 / 07 / 26 Our ambassadors arriving at Genesis Scottish Open" [ref=f74e712] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/our-ambassadors-arriving-at-genesis-scottish-open
+          - img "Our ambassadors arriving at Genesis Scottish Open" [ref=f74e714]
+          - generic [ref=f74e715]:
+            - generic [ref=f74e716]: Article
+            - generic [ref=f74e717]: 09 / 07 / 26
+          - heading "Our ambassadors arriving at Genesis Scottish Open" [level=3] [ref=f74e719]
+        - link "Our ambassadors arriving at Shinnecock Hills Golf Club Article 12 / 06 / 26 Our ambassadors arriving at Shinnecock Hills Golf Club" [ref=f74e722] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/our-ambassadors-arriving-at-shinnecock-hills-golf-club
+          - img "Our ambassadors arriving at Shinnecock Hills Golf Club" [ref=f74e724]
+          - generic [ref=f74e725]:
+            - generic [ref=f74e726]: Article
+            - generic [ref=f74e727]: 12 / 06 / 26
+          - heading "Our ambassadors arriving at Shinnecock Hills Golf Club" [level=3] [ref=f74e729]
+        - link "30-Year anniversary celebration at Ullna Article 11 / 06 / 26 30-Year anniversary celebration at Ullna" [ref=f74e732] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/30-year-anniversary-celebration-with-exclusive-golf-experience-at-ullna
+          - img "30-Year anniversary celebration at Ullna" [ref=f74e734]
+          - generic [ref=f74e735]:
+            - generic [ref=f74e736]: Article
+            - generic [ref=f74e737]: 11 / 06 / 26
+          - heading "30-Year anniversary celebration at Ullna" [level=3] [ref=f74e739]
+        - link "Viktor's looks at US Open | Shinnecock Hills Golf Club Article 10 / 06 / 26 Viktor's looks at US Open | Shinnecock Hills Golf Club" [ref=f74e742] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/viktors-looks-at-us-open-shinnecock-hills-golf-club-southampton
+          - img "Viktor's looks at US Open | Shinnecock Hills Golf Club" [ref=f74e744]
+          - generic [ref=f74e745]:
+            - generic [ref=f74e746]: Article
+            - generic [ref=f74e747]: 10 / 06 / 26
+          - heading "Viktor's looks at US Open | Shinnecock Hills Golf Club" [level=3] [ref=f74e749]
+        - link "Katarina Krebs seasonal selection Article 09 / 06 / 26 Katarina Krebs seasonal selection" [ref=f74e752] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/katarina-krebs-seasonal-selection
+          - img "Katarina Krebs seasonal selection" [ref=f74e754]
+          - generic [ref=f74e755]:
+            - generic [ref=f74e756]: Article
+            - generic [ref=f74e757]: 09 / 06 / 26
+          - heading "Katarina Krebs seasonal selection" [level=3] [ref=f74e759]
+        - link "Viktor Hovland's looks at The Open Championship Article 07 / 06 / 26 Viktor Hovland's looks at The Open Championship" [ref=f74e762] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/viktor-hovlands-looks-at-the-open-championship
+          - img "Viktor Hovland's looks at The Open Championship" [ref=f74e764]
+          - generic [ref=f74e765]:
+            - generic [ref=f74e766]: Article
+            - generic [ref=f74e767]: 07 / 06 / 26
+          - heading "Viktor Hovland's looks at The Open Championship" [level=3] [ref=f74e769]
+        - link "The Pink Strategy - celebrating 30 years of making a dent. Article 04 / 06 / 26 The Pink Strategy - celebrating 30 years of making a dent." [ref=f74e772] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/the-pink-strategy-celebrating-30-years-of-making-a-dent
+          - img "The Pink Strategy - celebrating 30 years of making a dent." [ref=f74e774]
+          - generic [ref=f74e775]:
+            - generic [ref=f74e776]: Article
+            - generic [ref=f74e777]: 04 / 06 / 26
+          - heading "The Pink Strategy - celebrating 30 years of making a dent." [level=3] [ref=f74e779]
+        - link "The Omega European Masters Article 22 / 05 / 26 The Omega European Masters" [ref=f74e782] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/the-omega-european-masters
+          - img "The Omega European Masters" [ref=f74e784]
+          - generic [ref=f74e785]:
+            - generic [ref=f74e786]: Article
+            - generic [ref=f74e787]: 22 / 05 / 26
+          - heading "The Omega European Masters" [level=3] [ref=f74e789]
+        - link "Viktor's looks at PGA Championship Article 12 / 05 / 26 Viktor's looks at PGA Championship" [ref=f74e792] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/pga-championship
+          - img "Viktor's looks at PGA Championship" [ref=f74e794]
+          - generic [ref=f74e795]:
+            - generic [ref=f74e796]: Article
+            - generic [ref=f74e797]: 12 / 05 / 26
+          - heading "Viktor's looks at PGA Championship" [level=3] [ref=f74e799]
+        - link "A day in the lifestyle with Matthieu Pavon Article 04 / 05 / 26 A day in the lifestyle with Matthieu Pavon" [ref=f74e802] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-day-in-the-lifestyle-with-matthieu-pavon
+          - img "A day in the lifestyle with Matthieu Pavon" [ref=f74e804]
+          - generic [ref=f74e805]:
+            - generic [ref=f74e806]: Article
+            - generic [ref=f74e807]: 04 / 05 / 26
+          - heading "A day in the lifestyle with Matthieu Pavon" [level=3] [ref=f74e809]
+        - link "A day in the lifestyle with Dino Beganovic Article 17 / 04 / 26 A day in the lifestyle with Dino Beganovic" [ref=f74e812] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-day-in-the-lifestyle-with-dino-beganovic
+          - img "A day in the lifestyle with Dino Beganovic" [ref=f74e814]
+          - generic [ref=f74e815]:
+            - generic [ref=f74e816]: Article
+            - generic [ref=f74e817]: 17 / 04 / 26
+          - heading "A day in the lifestyle with Dino Beganovic" [level=3] [ref=f74e819]
+        - link "Sara Biderman’s seasonal selection Article 14 / 04 / 26 Sara Biderman’s seasonal selection" [ref=f74e822] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/sara-biderman-seasonal-selection
+          - img "Sara Biderman’s seasonal selection" [ref=f74e824]
+          - generic [ref=f74e825]:
+            - generic [ref=f74e826]: Article
+            - generic [ref=f74e827]: 14 / 04 / 26
+          - heading "Sara Biderman’s seasonal selection" [level=3] [ref=f74e829]
+        - link "Viktor's looks at Augusta Article 02 / 04 / 26 Viktor's looks at Augusta" [ref=f74e832] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/viktors-looks-at-augusta
+          - img "Viktor's looks at Augusta" [ref=f74e834]
+          - generic [ref=f74e835]:
+            - generic [ref=f74e836]: Article
+            - generic [ref=f74e837]: 02 / 04 / 26
+          - heading "Viktor's looks at Augusta" [level=3] [ref=f74e839]
+        - link "A day in the lifestyle with Kathryn Newton Article 23 / 03 / 26 A day in the lifestyle with Kathryn Newton" [ref=f74e842] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-day-in-the-lifestyle-with-kathryn-newton
+          - img "A day in the lifestyle with Kathryn Newton" [ref=f74e844]
+          - generic [ref=f74e845]:
+            - generic [ref=f74e846]: Article
+            - generic [ref=f74e847]: 23 / 03 / 26
+          - heading "A day in the lifestyle with Kathryn Newton" [level=3] [ref=f74e849]
+        - link "Our ambassadors arriving at TPC Sawgrass Article 10 / 03 / 26 Our ambassadors arriving at TPC Sawgrass" [ref=f74e852] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/ambassadors-arriving-at-tpc-sawgrass
+          - img "Our ambassadors arriving at TPC Sawgrass" [ref=f74e854]
+          - generic [ref=f74e855]:
+            - generic [ref=f74e856]: Article
+            - generic [ref=f74e857]: 10 / 03 / 26
+          - heading "Our ambassadors arriving at TPC Sawgrass" [level=3] [ref=f74e859]
+        - 'link "Lisa Olsson''s seasonal selection: top picks from SS26 Article 09 / 03 / 26 Lisa Olsson''s seasonal selection: top picks from SS26" [ref=f74e862] [cursor=pointer]':
+          - /url: /nl-nl/blogs/news/lisa-olssons-seasonal-selection
+          - 'img "Lisa Olsson''s seasonal selection: top picks from SS26" [ref=f74e864]'
+          - generic [ref=f74e865]:
+            - generic [ref=f74e866]: Article
+            - generic [ref=f74e867]: 09 / 03 / 26
+          - 'heading "Lisa Olsson''s seasonal selection: top picks from SS26" [level=3] [ref=f74e869]'
+        - link "A day in the lifestyle with Viktor Hovland Article 16 / 02 / 26 A day in the lifestyle with Viktor Hovland" [ref=f74e872] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-day-in-the-lifestyle-ss26
+          - img "A day in the lifestyle with Viktor Hovland" [ref=f74e874]
+          - generic [ref=f74e875]:
+            - generic [ref=f74e876]: Article
+            - generic [ref=f74e877]: 16 / 02 / 26
+          - heading "A day in the lifestyle with Viktor Hovland" [level=3] [ref=f74e879]
+        - link "A day in the lifestyle - a closer look Article 04 / 02 / 26 A day in the lifestyle - a closer look" [ref=f74e882] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-day-in-the-lifestyle
+          - img "A day in the lifestyle - a closer look" [ref=f74e884]
+          - generic [ref=f74e885]:
+            - generic [ref=f74e886]: Article
+            - generic [ref=f74e887]: 04 / 02 / 26
+          - heading "A day in the lifestyle - a closer look" [level=3] [ref=f74e889]
+        - link "Unveiling our new store concept at Mall of Scandinavia Article 28 / 01 / 26 Unveiling our new store concept at Mall of Scandinavia" [ref=f74e892] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/unveiling-our-new-store-concept-at-mall-of-scandinavia
+          - img "Unveiling our new store concept at Mall of Scandinavia" [ref=f74e894]
+          - generic [ref=f74e895]:
+            - generic [ref=f74e896]: Article
+            - generic [ref=f74e897]: 28 / 01 / 26
+          - heading "Unveiling our new store concept at Mall of Scandinavia" [level=3] [ref=f74e899]
+        - link "Visions From The North with Etienne Geoffroy-Gagnon Article 18 / 11 / 25 Visions From The North with Etienne Geoffroy-Gagnon" [ref=f74e902] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/etienne-geoffroy-gagnon
+          - img "Visions From The North with Etienne Geoffroy-Gagnon" [ref=f74e904]
+          - generic [ref=f74e905]:
+            - generic [ref=f74e906]: Article
+            - generic [ref=f74e907]: 18 / 11 / 25
+          - heading "Visions From The North with Etienne Geoffroy-Gagnon" [level=3] [ref=f74e909]
+        - link "FW25 Campaign From sea to summit with Mark Wystrach Article 18 / 11 / 25 FW25 Campaign From sea to summit with Mark Wystrach" [ref=f74e912] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/fw25-campaign
+          - img "FW25 Campaign From sea to summit with Mark Wystrach" [ref=f74e914]
+          - generic [ref=f74e915]:
+            - generic [ref=f74e916]: Article
+            - generic [ref=f74e917]: 18 / 11 / 25
+          - heading "FW25 Campaign From sea to summit with Mark Wystrach" [level=3] [ref=f74e919]
+        - link "Solarcore® store installation Article 14 / 11 / 25 Solarcore® store installation" [ref=f74e922] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/our-solarcore%C2%AE-store-installation
+          - img "Solarcore® store installation" [ref=f74e924]
+          - generic [ref=f74e925]:
+            - generic [ref=f74e926]: Article
+            - generic [ref=f74e927]: 14 / 11 / 25
+          - heading "Solarcore® store installation" [level=3] [ref=f74e929]
+        - link "Style Spotting at CPHFW Article 08 / 08 / 25 Style Spotting at CPHFW" [ref=f74e932] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/style-spotting-at-copenhagen-fashion-week
+          - img "Style Spotting at CPHFW" [ref=f74e934]
+          - generic [ref=f74e935]:
+            - generic [ref=f74e936]: Article
+            - generic [ref=f74e937]: 08 / 08 / 25
+          - heading "Style Spotting at CPHFW" [level=3] [ref=f74e939]
+        - link "Sweden’s Women’s National Team Suits Up in a Sneak Peek of SS26 Article 27 / 06 / 25 Sweden’s Women’s National Team Suits Up in a Sneak Peek of SS26" [ref=f74e942] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/swedens-womens-national-team-suits-up-in-a-sneak-peek-of-ss26
+          - img "Sweden’s Women’s National Team Suits Up in a Sneak Peek of SS26" [ref=f74e944]
+          - generic [ref=f74e945]:
+            - generic [ref=f74e946]: Article
+            - generic [ref=f74e947]: 27 / 06 / 25
+          - heading "Sweden’s Women’s National Team Suits Up in a Sneak Peek of SS26" [level=3] [ref=f74e949]
+        - link "Bridge Series Episode 32. Marcus Smith Article 10 / 06 / 25 Bridge Series Episode 32. Marcus Smith" [ref=f74e952] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-32-marcus-smith
+          - img "Bridge Series Episode 32. Marcus Smith" [ref=f74e954]
+          - generic [ref=f74e955]:
+            - generic [ref=f74e956]: Article
+            - generic [ref=f74e957]: 10 / 06 / 25
+          - heading "Bridge Series Episode 32. Marcus Smith" [level=3] [ref=f74e959]
+        - link "Mia Baker swinging club club dressed in J.Lindeberg Article 05 / 06 / 25 Bridge Series Episode 31. Mia Baker" [ref=f74e962] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-31-mia-baker
+          - img "Mia Baker swinging club club dressed in J.Lindeberg" [ref=f74e964]
+          - generic [ref=f74e965]:
+            - generic [ref=f74e966]: Article
+            - generic [ref=f74e967]: 05 / 06 / 25
+          - heading "Bridge Series Episode 31. Mia Baker" [level=3] [ref=f74e969]
+        - link "Bridge Series Episode 30. Chris Eubanks Article 27 / 05 / 25 Bridge Series Episode 30. Chris Eubanks" [ref=f74e972] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-30-chris-eubanks
+          - img "Bridge Series Episode 30. Chris Eubanks" [ref=f74e974]
+          - generic [ref=f74e975]:
+            - generic [ref=f74e976]: Article
+            - generic [ref=f74e977]: 27 / 05 / 25
+          - heading "Bridge Series Episode 30. Chris Eubanks" [level=3] [ref=f74e979]
+        - link "Celebrating the opening of our London Showroom Article 15 / 05 / 25 Celebrating the opening of our London Showroom" [ref=f74e982] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/celebrating-the-opening-of-our-london-showroom
+          - img "Celebrating the opening of our London Showroom" [ref=f74e984]
+          - generic [ref=f74e985]:
+            - generic [ref=f74e986]: Article
+            - generic [ref=f74e987]: 15 / 05 / 25
+          - heading "Celebrating the opening of our London Showroom" [level=3] [ref=f74e989]
+        - link "Grand Opening of our Clubhouse Store in Seoul Article 15 / 04 / 25 Grand Opening of our Clubhouse Store in Seoul" [ref=f74e992] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/grand-opening-of-clubhouse-store-in-seoul
+          - img "Grand Opening of our Clubhouse Store in Seoul" [ref=f74e994]
+          - generic [ref=f74e995]:
+            - generic [ref=f74e996]: Article
+            - generic [ref=f74e997]: 15 / 04 / 25
+          - heading "Grand Opening of our Clubhouse Store in Seoul" [level=3] [ref=f74e999]
+        - link "Bridge Series Episode 29. Morgane Metraux Article 31 / 03 / 25 Bridge Series Episode 29. Morgane Metraux" [ref=f74e1002] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-29-morgane-metraux
+          - img "Bridge Series Episode 29. Morgane Metraux" [ref=f74e1004]
+          - generic [ref=f74e1005]:
+            - generic [ref=f74e1006]: Article
+            - generic [ref=f74e1007]: 31 / 03 / 25
+          - heading "Bridge Series Episode 29. Morgane Metraux" [level=3] [ref=f74e1009]
+        - link "Unveiling our Five-story Clubhouse in the heart of Seoul Article 26 / 03 / 25 Unveiling our Five-story Clubhouse in the heart of Seoul" [ref=f74e1012] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/unveiling-our-five-story-clubhouse-in-the-heart-of-seoul
+          - img "Unveiling our Five-story Clubhouse in the heart of Seoul" [ref=f74e1014]
+          - generic [ref=f74e1015]:
+            - generic [ref=f74e1016]: Article
+            - generic [ref=f74e1017]: 26 / 03 / 25
+          - heading "Unveiling our Five-story Clubhouse in the heart of Seoul" [level=3] [ref=f74e1019]
+        - link "Bridge Series Ep 28. Viktor Hovland Article 26 / 03 / 25 Bridge Series Ep 28. Viktor Hovland" [ref=f74e1022] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-28-viktor-hovland
+          - img "Bridge Series Ep 28. Viktor Hovland" [ref=f74e1024]
+          - generic [ref=f74e1025]:
+            - generic [ref=f74e1026]: Article
+            - generic [ref=f74e1027]: 26 / 03 / 25
+          - heading "Bridge Series Ep 28. Viktor Hovland" [level=3] [ref=f74e1029]
+        - link "A new destination at Arlanda Article 20 / 03 / 25 A new destination at Arlanda" [ref=f74e1032] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/a-new-destination-at-arlanda
+          - img "A new destination at Arlanda" [ref=f74e1034]
+          - generic [ref=f74e1035]:
+            - generic [ref=f74e1036]: Article
+            - generic [ref=f74e1037]: 20 / 03 / 25
+          - heading "A new destination at Arlanda" [level=3] [ref=f74e1039]
+        - link "New Golf Ambassador Kevin Yu Article 12 / 03 / 25 Nieuwe golfambassadeur Kevin Yu" [ref=f74e1042] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/new-golf-ambassador-kevin-yu
+          - img "New Golf Ambassador Kevin Yu" [ref=f74e1044]
+          - generic [ref=f74e1045]:
+            - generic [ref=f74e1046]: Article
+            - generic [ref=f74e1047]: 12 / 03 / 25
+          - heading "Nieuwe golfambassadeur Kevin Yu" [level=3] [ref=f74e1049]
+        - link "Bridge Series Episode 27. Camilo Villegas Article 07 / 03 / 25 Bridge Series Episode 27. Camilo Villegas" [ref=f74e1052] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-27-camilo-villegas
+          - img "Bridge Series Episode 27. Camilo Villegas" [ref=f74e1054]
+          - generic [ref=f74e1055]:
+            - generic [ref=f74e1056]: Article
+            - generic [ref=f74e1057]: 07 / 03 / 25
+          - heading "Bridge Series Episode 27. Camilo Villegas" [level=3] [ref=f74e1059]
+        - link "Bridge Series Episode 26. Matthieu Pavon Article 07 / 03 / 25 Bridge Series Episode 26. Matthieu Pavon" [ref=f74e1062] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-26-matthieu-pavon
+          - img "Bridge Series Episode 26. Matthieu Pavon" [ref=f74e1064]
+          - generic [ref=f74e1065]:
+            - generic [ref=f74e1066]: Article
+            - generic [ref=f74e1067]: 07 / 03 / 25
+          - heading "Bridge Series Episode 26. Matthieu Pavon" [level=3] [ref=f74e1069]
+        - link "Yealimi Noh Article 07 / 03 / 25 Yealimi Noh" [ref=f74e1072] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/yealimi-noh
+          - img "Yealimi Noh" [ref=f74e1074]
+          - generic [ref=f74e1075]:
+            - generic [ref=f74e1076]: Article
+            - generic [ref=f74e1077]: 07 / 03 / 25
+          - heading "Yealimi Noh" [level=3] [ref=f74e1079]
+        - link "Anna Nordqvist named European Captain for Solheim Cup 2026 Article 24 / 02 / 25 Anna Nordqvist named European Captain for Solheim Cup 2026" [ref=f74e1082] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/anna-nordqvist-named-european-captain-for-solheim-cup
+          - img "Anna Nordqvist named European Captain for Solheim Cup 2026" [ref=f74e1084]
+          - generic [ref=f74e1085]:
+            - generic [ref=f74e1086]: Article
+            - generic [ref=f74e1087]: 24 / 02 / 25
+          - heading "Anna Nordqvist named European Captain for Solheim Cup 2026" [level=3] [ref=f74e1089]
+        - link "Bridge Series Episode 25. Kathryn Newton Article 31 / 01 / 25 Bridge Series Episode 25. Kathryn Newton" [ref=f74e1092] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/bridge-series-episode-25-kathryn-newton
+          - img "Bridge Series Episode 25. Kathryn Newton" [ref=f74e1094]
+          - generic [ref=f74e1095]:
+            - generic [ref=f74e1096]: Article
+            - generic [ref=f74e1097]: 31 / 01 / 25
+          - heading "Bridge Series Episode 25. Kathryn Newton" [level=3] [ref=f74e1099]
+        - link "SS25 Style spotting at CPHFW Article 29 / 01 / 25 SS25 Style spotting at CPHFW" [ref=f74e1102] [cursor=pointer]:
+          - /url: /nl-nl/blogs/news/ss25-style-spotting-at-cphfw
+          - img "SS25 Style spotting at CPHFW" [ref=f74e1104]
+          - generic [ref=f74e1105]:
+            - generic [ref=f74e1106]: Article
+            - generic [ref=f74e1107]: 29 / 01 / 25
+          - heading "SS25 Style spotting at CPHFW" [level=3] [ref=f74e1109]
+  - contentinfo [ref=f74e1110]:
+    - generic [ref=f74e1111]:
+      - generic [ref=f74e1113] [cursor=pointer]
+      - generic [ref=f74e1119]:
+        - heading "Volg ons" [level=3] [ref=f74e1120]
+        - list [ref=f74e1121]:
+          - listitem [ref=f74e1122]:
+            - link "Tiktok" [ref=f74e1123] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@jlindebergofficial
+          - listitem [ref=f74e1124]:
+            - link "Instagram" [ref=f74e1125] [cursor=pointer]:
+              - /url: https://www.instagram.com/jlindebergofficial/
+          - listitem [ref=f74e1126]:
+            - link "YouTube" [ref=f74e1127] [cursor=pointer]:
+              - /url: https://www.youtube.com/@jlindebergsthlm
+          - listitem [ref=f74e1128]:
+            - link "Facebook" [ref=f74e1129] [cursor=pointer]:
+              - /url: https://facebook.com/jlindebergofficial/
+      - generic [ref=f74e1130]:
+        - heading "Klantenservice" [level=3] [ref=f74e1131]
+        - list [ref=f74e1132]:
+          - listitem [ref=f74e1133]:
+            - link "Veelgestelde vragen (FAQ)" [ref=f74e1134] [cursor=pointer]:
+              - /url: /nl-nl/pages/faq
+          - listitem [ref=f74e1135]:
+            - link "Retouren" [ref=f74e1136] [cursor=pointer]:
+              - /url: /nl-nl/pages/retouren
+          - listitem [ref=f74e1137]:
+            - link "Betaalopties" [ref=f74e1138] [cursor=pointer]:
+              - /url: /nl-nl/pages/payment-options
+          - listitem [ref=f74e1139]:
+            - link "Herroepingsrecht" [ref=f74e1140] [cursor=pointer]:
+              - /url: /nl-nl/pages/withdrawal
+          - listitem [ref=f74e1141]:
+            - link "Verzending & Bezorging" [ref=f74e1142] [cursor=pointer]:
+              - /url: /nl-nl/pages/shipping-and-delivery
+          - listitem [ref=f74e1143]:
+            - link "Winkelzoeker" [ref=f74e1144] [cursor=pointer]:
+              - /url: /nl-nl/pages/store-finder
+          - listitem [ref=f74e1145]:
+            - link "Contact" [ref=f74e1146] [cursor=pointer]:
+              - /url: /nl-nl/pages/contact
+      - generic [ref=f74e1147]:
+        - heading "Info" [level=3] [ref=f74e1148]
+        - list [ref=f74e1149]:
+          - listitem [ref=f74e1150]:
+            - link "Word lid van clubhouse" [ref=f74e1151] [cursor=pointer]:
+              - /url: /nl-nl/pages/about-clubhouse
+          - listitem [ref=f74e1152]:
+            - link "Over ons" [ref=f74e1153] [cursor=pointer]:
+              - /url: /nl-nl/pages/about-us
+          - listitem [ref=f74e1154]:
+            - link "Pasvormgidsen" [ref=f74e1155] [cursor=pointer]:
+              - /url: /nl-nl/blogs/guides/fit-guides
+          - listitem [ref=f74e1156]:
+            - link "Carrière" [ref=f74e1157] [cursor=pointer]:
+              - /url: https://careers.jlindeberg.com/?_gl=1*hnpi3l*_ga*MTE3ODA2MTEyMS4xNjYzMjMzMDUw*_ga_KB4Q6PGR70*MTY3MTQ3OTc5NS44Mi4wLjE2NzE0Nzk3OTguNTcuMC4w
+          - listitem [ref=f74e1158]:
+            - link "Duurzaamheid" [ref=f74e1159] [cursor=pointer]:
+              - /url: /nl-nl/pages/sustainability
+          - listitem [ref=f74e1160]:
+            - link "Materialen" [ref=f74e1161] [cursor=pointer]:
+              - /url: /nl-nl/pages/materials
+          - listitem [ref=f74e1162]:
+            - link "Klokkenluider" [ref=f74e1163] [cursor=pointer]:
+              - /url: https://whistleblowersoftware.com/secure/jl
+          - listitem [ref=f74e1164]:
+            - link "Privacybeleid" [ref=f74e1165] [cursor=pointer]:
+              - /url: /nl-nl/pages/privacy-policy
+          - listitem [ref=f74e1166]:
+            - link "Voorwaarden" [ref=f74e1167] [cursor=pointer]:
+              - /url: /nl-nl/pages/terms-conditions
+      - generic [ref=f74e1214]: © 2026 J.Lindeberg
+  - button "Open customer support chat" [ref=f74e1219] [cursor=pointer]
+  - region "Live chat"

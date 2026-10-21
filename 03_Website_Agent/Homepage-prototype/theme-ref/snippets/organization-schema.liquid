@@ -1,0 +1,50 @@
+{% doc %}
+  Renders Organization + WebSite structured data (schema.org) for the homepage.
+  Logo is read live from the theme's logo setting. Social links are only
+  included if configured — see settings.social_*_link (Online Store settings).
+{% enddoc %}
+
+{%- liquid
+  assign social_links = ''
+  if settings.social_instagram_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_instagram_link | append: '",'
+  endif
+  if settings.social_tiktok_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_tiktok_link | append: '",'
+  endif
+  if settings.social_facebook_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_facebook_link | append: '",'
+  endif
+  if settings.social_twitter_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_twitter_link | append: '",'
+  endif
+  if settings.social_youtube_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_youtube_link | append: '",'
+  endif
+  if settings.social_linkedin_link != blank
+    assign social_links = social_links | append: '"' | append: settings.social_linkedin_link | append: '",'
+  endif
+  assign social_links = social_links | remove_last: ','
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }},
+  "logo": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+  {%- if social_links != blank -%}
+  ,
+  "sameAs": [{{ social_links }}]
+  {%- endif %}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | json }}
+}
+</script>

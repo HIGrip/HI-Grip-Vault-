@@ -1,0 +1,35 @@
+/* 12 INSPIRATIE · 1.10 (Lars 19-10: zoals 1.2, maar verder uit elkaar). Zwart vlak, geen foto.
+   Twee reuzenregels komen bij binnenscrollen uit hun masker omhoog en schuiven daarna met de scroll ver uit elkaar:
+   regel 1 naar links, regel 2 (volt) naar rechts, tot ruim voorbij de rand (section.js: --hp-12-x1/x2, --hp-12-r1/r2).
+   Eronder een brede pill: de chevroncirkel loopt met dezelfde scroll mee van links naar rechts (--hp-12-k), alsof de
+   uit elkaar schuivende regels hem openen. Hover, focus of tik zet hem direct rechts. Reduced motion: alles in eindstand. */
+.hp-12 { position: relative; overflow: clip; display: grid; align-items: center; min-height: min(90svh, 900px); background: var(--hi-black); color: var(--hi-white); padding-block: var(--hp-space-xl); }
+.hp-12-inner { display: grid; justify-items: center; gap: var(--hp-space-lg); }
+.hp-12-title { display: grid; justify-items: center; font: italic 900 min(9.6vw, 176px)/0.88 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; text-wrap: initial; }
+.hp-12-l { display: block; width: max-content; padding-right: 0.08em; white-space: nowrap; clip-path: inset(-0.3em -100vw 0 -100vw); will-change: transform; }
+.hp-12-l--2 { color: var(--hi-yellow); }
+.hp-12-in { display: block; }
+.hp-motion .hp-12-l--1 { transform: translate3d(var(--hp-12-x1, 0px), 0, 0); }
+.hp-motion .hp-12-l--2 { transform: translate3d(var(--hp-12-x2, 0px), 0, 0); }
+.hp-motion .hp-12-l--1 .hp-12-in { transform: translate3d(0, var(--hp-12-r1, 0%), 0); }
+.hp-motion .hp-12-l--2 .hp-12-in { transform: translate3d(0, var(--hp-12-r2, 0%), 0); }
+
+/* brede pill met meelopende chevron */
+.hp-12-cta {
+  --hp-12-c: 56px;
+  position: relative; container-type: inline-size; width: min(560px, calc(100vw - 32px)); min-height: calc(var(--hp-12-c) + 16px);
+  justify-content: flex-start; padding: 8px; font-size: 17px;
+}
+/* pijl en woord wisselen van plaats: de pijl loopt naar rechts, het woord schuift evenveel ruimte naar links */
+.hp-12-cta__label { padding-left: calc(var(--hp-12-c) + 24px); transform: translateX(calc((var(--hp-12-c) + 8px) * -1 * var(--hp-12-k, 1))); transition: transform var(--hp-dur-2) var(--hp-ease); }
+.hp-12-cta__chev {
+  position: absolute; left: 8px; top: 8px; width: var(--hp-12-c); height: var(--hp-12-c);
+  transform: translateX(calc((100cqw - var(--hp-12-c) - 16px) * var(--hp-12-k, 1)));
+  transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-12-cta__chev svg { width: 16px; height: 16px; }
+.hp-12-cta:active .hp-12-cta__chev, .hp-12-cta:focus-visible .hp-12-cta__chev { transform: translateX(calc(100cqw - var(--hp-12-c) - 16px)); }
+.hp-12-cta:active .hp-12-cta__label, .hp-12-cta:focus-visible .hp-12-cta__label { transform: translateX(calc((var(--hp-12-c) + 8px) * -1)); }
+@media (hover: hover) { .hp-12-cta:hover .hp-12-cta__chev { transform: translateX(calc(100cqw - var(--hp-12-c) - 16px)); } .hp-12-cta:hover .hp-12-cta__label { transform: translateX(calc((var(--hp-12-c) + 8px) * -1)); } }
+.hp-12-cta:focus-visible { outline-color: var(--hi-white); outline-offset: 4px; }
+@media (max-width: 768px) { .hp-12-cta { --hp-12-c: 44px; font-size: 15px; } }

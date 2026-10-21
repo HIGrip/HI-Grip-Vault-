@@ -1,0 +1,264 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Of je nu een doorgewinterde yogi bent of net je eerste pilatesles hebt geboekt, één ding is zeker: <strong>gripsokken</strong> zijn geen overbodige luxe. Sterker nog, ze kunnen het verschil maken tussen wiebelig afglijden en krachtig in balans blijven. In deze blog vertellen we je alles over het belang van gripsokken tijdens yoga en pilates, én waarom de <strong>HÏ Grip gripsokken</strong> jouw nieuwe lifestyle accessoire worden.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Wat zijn gripsokken ook alweer?</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken (ook wel anti-slip sokken genoemd) zijn speciaal ontworpen sokken met rubberen of siliconen nopjes aan de onderkant. Die nopjes zorgen voor extra grip op gladde vloeren of matten, precies wat je nodig hebt tijdens een down dog of teaser pose.</p><p><a href=\"/blogs/hi-grip/waarom-hi-grip-gripsokken\" title=\"Waarom HÏ Grip gripsokken?\">Lees hier meer voordelen</a><br/></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Waarom gripsokken essentieel zijn bij yoga en pilates</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>1. <strong>Maximale grip, minimale afleiding</strong></p><p>Tijdens yoga of pilates wil je je concentreren op je ademhaling, houding en flow. Glijden of schuiven op je mat leidt af en kan blessures veroorzaken. De optimale grip van onze gripsokken geven jou de controle waar je staat, ook bij intensieve oefeningen of zweethandjes. </p><p> </p><p>2. <strong>Hygiëne first</strong></p><p>Yogastudio’s en pilateszalen zijn plekken waar je graag schoon en fris blijft. Met gripsokken voorkom je direct contact met de mat of vloer, wat net even wat hygiënischer aanvoelt, zeker in gedeelde ruimtes.</p><p> </p><p>3. <strong>Warmte en comfort</strong></p><p>Bij HÏ Grip zien we dat mensen die yoga & pilates beoefenen naast grip ook behoefte hebben aan comfort. Een zachte en stevige sok die lekker zit. Bij HÏ Grip zien we dat de huidige yoga- en pilatessokken soms niet hieraan voldoen. Ons team heeft van deze behoeftes werk gemaakt. Onze gripsokken bevatten een verstevigde bodem voor fijn draagcomfort. Vooral in rustigere yogastijlen zoals yin of restorative yoga, kunnen koude voeten afleiden. Gripsokken houden je voeten warm én flexibel, zonder concessies te doen aan stabiliteit. </p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_TTJzKe": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Naast dat onze antislipsokken tijdens veel sporten zoals voetbal, tennis en fitness worden gebruikt zijn ze dus ook eigenlijk perfect voor iedereen die aan <strong>yoga, pilates, barre, fysiotherapie of krachttraining op matniveau</strong> doet. Maakt niet uit of je een beginner bent of dat je opzoek bent naar meer grip tijdens je dynamische flows op de mat.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Conclusie: onschuldige sok, groot verschil</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken lijken misschien een klein detail in je sportoutfit, maar ze maken een wereld van verschil. Meer grip betekent meer controle, meer focus en meer veiligheid. En als je dan toch kiest voor kwaliteit, dan is <strong>HÏ Grip</strong> de logische keuze.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_Ci3HBM": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Shop gripsokken",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_TTJzKe",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "button_Ci3HBM"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

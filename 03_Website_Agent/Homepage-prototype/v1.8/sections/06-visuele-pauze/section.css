@@ -1,0 +1,48 @@
+/* 06 VISUELE PAUZE · 1.8 (Lars 19-10): de echte HÏ Grip-brandvideo (story 9:16) in plaats van de codefilm.
+   Desktop: een triptiek. Drie staande panelen naast elkaar vullen samen een liggend vlak; ze spelen dezelfde video,
+   elk op een ander moment (begin, eenderde, tweederde), zodat je steeds drie scènes tegelijk ziet. Het middelste paneel
+   is de hoofdvideo (geluid aan/uit), de buitenste staan iets gedempt. Smalle zwarte voegen, rand tot rand.
+   Mobiel: alleen het middelste paneel, schermvullend. HUD: merk, timecode en voortgang van de hoofdvideo, pauze, geluid
+   en één pill. section.js: afspelen alleen in beeld, offsets zetten, synchroon houden. Reduced motion: poster, geen autoplay. */
+.hp-06 { position: relative; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-stage { display: grid; grid-template-columns: minmax(0, 1fr); height: min(100svh, 980px); }
+.hp-06-panel { position: relative; overflow: hidden; background: var(--hi-black); }
+.hp-06-panel--a, .hp-06-panel--c { display: none; }
+.hp-06-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* HUD */
+.hp-06-hud { position: absolute; inset: 0; pointer-events: none; font: 600 11px/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; }
+.hp-06-brand, .hp-06-tc { position: absolute; top: var(--hp-space-sm); color: var(--hi-white); mix-blend-mode: difference; }
+.hp-06-brand { left: var(--hp-space-sm); font-style: italic; font-weight: 900; font-size: 14px; }
+.hp-06-tc { right: var(--hp-space-sm); font-variant-numeric: tabular-nums; }
+.hp-06-progress { position: absolute; left: var(--hp-space-sm); right: var(--hp-space-sm); bottom: 0; height: 3px; background: var(--hi-line-dark); }
+.hp-06-progress__fill { position: absolute; inset: 0; background: var(--hi-yellow); transform-origin: 0 50%; transform: scaleX(var(--hp-06-p, 0)); }
+.hp-06-ctrl { position: absolute; left: var(--hp-space-sm); bottom: var(--hp-space-sm); display: flex; gap: 6px; pointer-events: auto; }
+.hp-06-btn {
+  display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--hi-line-dark); border-radius: 8px;
+  background: var(--hi-black); color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease), background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-btn svg { width: 14px; height: 14px; }
+.hp-06-btn:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 2px; }
+.hp-06-btn:active { border-color: var(--hi-white); }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause, .hp-06-sound__on, .hp-06-sound[aria-pressed="true"] .hp-06-sound__off { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play, .hp-06-sound[aria-pressed="true"] .hp-06-sound__on { display: block; }
+.hp-06-sound[aria-pressed="true"] { background: var(--hi-yellow); border-color: var(--hi-yellow); color: var(--hi-black); }
+@media (hover: hover) { .hp-06-btn:hover { border-color: var(--hi-white); } }
+.hp-06-cta { position: absolute; right: var(--hp-space-sm); bottom: var(--hp-space-sm); pointer-events: auto; }
+
+/* desktop: triptiek */
+@media (min-width: 769px) {
+  .hp-06-stage {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; justify-content: center;
+    height: min(100svh, calc((100vw - 12px) / 3 * 16 / 9), 1100px);
+  }
+  .hp-06-panel--a, .hp-06-panel--c { display: block; }
+  .hp-06-panel--a .hp-06-vid, .hp-06-panel--c .hp-06-vid { filter: grayscale(0.35) brightness(0.7); transition: filter var(--hp-dur-2) var(--hp-ease); }
+  .hp-06-stage:hover .hp-06-panel--a .hp-06-vid, .hp-06-stage:hover .hp-06-panel--c .hp-06-vid { filter: none; }
+  .hp-06-brand, .hp-06-ctrl { left: max(24px, env(safe-area-inset-left, 0px)); }
+  .hp-06-tc, .hp-06-cta { right: max(24px, env(safe-area-inset-right, 0px)); }
+  .hp-06-brand, .hp-06-tc { top: var(--hp-space-ms); }
+  .hp-06-ctrl, .hp-06-cta { bottom: var(--hp-space-ms); }
+  .hp-06-progress { left: 0; right: 0; }
+}

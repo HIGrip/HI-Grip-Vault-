@@ -1,0 +1,238 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Blessures tijdens het sporten zijn helaas heel gewoon. Een verzwikte enkel, een pijnlijke knie of een gespannen achillespees kan je spel abrupt stoppen en wekenlang uit je ritme halen. Gelukkig is er een relatief eenvoudige manier om de kans op blessures te verkleinen: gripsokken. Deze speciale sokken bieden niet alleen extra comfort, maar dragen ook bij aan stabiliteit en veiligheid tijdens het sporten.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Waarom blessures ontstaan tijdens het sporten</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Veel sportblessures ontstaan door plotselinge draaibewegingen, uitglijden of een verkeerde voetplaatsing. Vooral bij sporten zoals voetbal, hockey, basketbal of padel, waar wendingen, sprintjes en sprongen continu voorkomen, beweegt de voet in complexe patronen. Wanneer je voet niet goed in de schoen blijft zitten, kan dit leiden tot uitglijden, overbelasting van enkels, knieën of heupen en een verkeerde afzet of landing. Het gevolg is vaak een blessure en minder vertrouwen tijdens het sporten.</p><p></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Hoe voorkomen beter is dan genezen</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Kortom, blessures voorkomen is vaak makkelijker dan ze genezen. Gripsokken zorgen ervoor dat je voeten stabiel blijven, uitglijden wordt verminderd en elke beweging wordt ondersteund. Zo speel je veiliger, comfortabeler en met meer zelfvertrouwen. Een kleine aanpassing aan je uitrusting kan dus een groot verschil maken voor je gezondheid en je prestaties. Met HÏ Grip kies je voor optimale grip, meer stabiliteit en minder kans op blessures, zodat je het beste uit jezelf kunt halen tijdens iedere training en wedstrijd<br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Hoe gripsokken helpen blessures te voorkomen</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken bieden hiervoor een oplossing. Door strategisch geplaatste antislipzones onder en rondom de voet blijft je voet stevig op zijn plek, waardoor je bewegingen beter gecontroleerd zijn en uitglijden wordt voorkomen. Dit zorgt ervoor dat je stabieler bent bij snelle wendingen en sprongen, terwijl je spieren en gewrichten minder belast worden. Tegelijkertijd geeft de extra grip een gevoel van vertrouwen, waardoor je je volledig kunt concentreren op het spel zonder angst voor een verkeerde beweging. </p><p>Voor sporters betekent dit dat het verminderen van de kans op kleine blessures die zich opstapelen en later grotere problemen kunnen veroorzaken kunnen wordt verminderd. Blessurepreventie begint bij een stabiele basis, en door gripsokken te dragen wordt die basis veel sterker of je nu op het voetbalveld staat, een padelwedstrijd speelt of in de gym traint, de extra grip en stabiliteit helpen je om elke beweging veiliger en gecontroleerder uit te voeren.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_w4nPVi": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Bekijk gripsokken voor extra stabiliteit",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "button_w4nPVi"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

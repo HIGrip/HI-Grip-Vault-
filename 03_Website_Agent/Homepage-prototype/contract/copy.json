@@ -1,0 +1,200 @@
+{
+  "10": {
+    "h2": "HÏ Grip voor je club, winkel of studio",
+    "lead": "Eén sok voor het hele team, grip in je schap of een eigen ontwerp voor je studio. Je begint met een gratis sample.",
+    "types": {
+      "voetbal": {
+        "title": "Voetbalclubs",
+        "text": "Eigen logo en kleuren vanaf 150 paar. Eén uitstraling op het veld, voor al je teams.",
+        "link": "Voor clubs"
+      },
+      "retail": {
+        "title": "Sportwinkels",
+        "text": "Staffelprijzen vanaf 6 paar en een adviesprijs van €19,95. Je klant voelt het verschil zodra hij hem aantrekt.",
+        "link": "Voor winkels"
+      },
+      "pilates": {
+        "title": "Pilates en studio's",
+        "text": "Wij maken de sok voor jouw studio: kleur, lengte, logo en verpakking.",
+        "link": "Voor studio's"
+      }
+    },
+    "cta": "Vraag een gratis sample"
+  },
+  "11": {
+    "h2": "Veelgestelde vragen",
+    "_faq": "Vragen en antwoorden: facts.json → faq (letterlijk)"
+  },
+  "12": {
+    "line_1": "Ga door waar",
+    "line_2": "anderen stoppen.",
+    "cta": "Shop gripsokken"
+  },
+  "13": {
+    "brand_line": "Performance Grip Socks voor de sporter die doorgaat waar anderen stoppen.",
+    "slogan": "More grip, better performance.",
+    "payments_label": "Betaalmethoden",
+    "contact_label": "Contact",
+    "kvk_label": "KVK",
+    "btw_label": "BTW",
+    "_links": "Groepen, links, contact en betaalmethoden: facts.json → footer"
+  },
+  "_uitleg": "Alle zichtbare tekst en alt-teksten van de pagina, één versie per tekst (geen A/B). Geschreven door Denzel uit de referenties, de Brand Core en facts.json. Agents gebruiken deze strings letterlijk; lint.py faalt op tekst die hier niet staat. Prijzen, aantallen en links komen uit facts.json. Hoofdletters doet CSS (text-transform), niet de string.",
+  "page": {
+    "title": "HÏ Grip Homepage",
+    "description": "Performance gripsokken voor sporters. HÏ Grip, ga door waar anderen stoppen."
+  },
+  "01": {
+    "logo_label": "HÏ Grip",
+    "logo_aria": "HÏ Grip, naar de homepage",
+    "nav_aria": "Hoofdmenu",
+    "menu_label": "Menu",
+    "menu_close": "Sluit menu",
+    "h1": "Performance gripsokken voor sporters",
+    "sub": "Je voet blijft op zijn plek in je schoen. Bij elke rem, draai en sprint.",
+    "cta": "Shop gripsokken",
+    "media_alt": "Zool van een witte HÏ Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan"
+  },
+  "02": {
+    "h2": "Kies je paar",
+    "lead": "Dezelfde grip onder de zool, twee generaties. De 2.0 voor wedstrijden, de 1.0 voor elke training.",
+    "cards": {
+      "p20-zwart": {
+        "line": "Compressie, Coolmax® en een naadloze teen.",
+        "color": "Zwart"
+      },
+      "p20-wit": {
+        "line": "Dezelfde 2.0, in wit.",
+        "color": "Wit"
+      },
+      "p10": {
+        "line": "Het origineel. Grip onder de zool, voor elke training.",
+        "packs": "3 paar €35,95 · 5 paar €54,95"
+      }
+    },
+    "flip": "Bekijk de andere kant",
+    "sizes_label": "Maten",
+    "cta": "Alle gripsokken"
+  },
+  "03": {
+    "sporters": "sporters gingen je voor",
+    "trustpilot": "op Trustpilot",
+    "verzending": "Binnen 1 werkdag verzonden",
+    "aria": "Waarom sporters voor HÏ Grip kiezen"
+  },
+  "04": {
+    "h2": "Op de baan, het veld en in de gym",
+    "lead": "Echte sporters, echte wedstrijden. Sleep door de foto's en open er een om hem groot te zien.",
+    "hint_pointer": "Sleep of klik op een foto",
+    "hint_touch": "Swipe of tik op een foto",
+    "open": "Open foto",
+    "captions": {
+      "sp-padel-voeten": "Padel",
+      "sp-voetbal-zool": "Voetbal",
+      "sp-gym": "Gym",
+      "sp-indoor": "Indoor",
+      "sp-hardlopen": "Hardlopen",
+      "sp-team": "Het hele team",
+      "sp-tennis-wit": "Tennis",
+      "sp-voetbal-bal": "Voetbal"
+    },
+    "track_aria": "Foto's van sporters met HÏ Grip, sleep om te bladeren",
+    "lightbox": {
+      "close": "Sluiten",
+      "prev": "Vorige foto",
+      "next": "Volgende foto",
+      "count": "Foto {n} van {total}"
+    }
+  },
+  "05": {
+    "h2": "Elke zone heeft een taak.",
+    "lead": "De Performance Gripsokken 2.0 in 360°. Ga met je muis over een feature of tik erop, en zie waar hij zit.",
+    "features": {
+      "compressie": {
+        "name": "Compressie",
+        "text": "15–20 mmHg ondersteunt je doorbloeding tijdens inspanning."
+      },
+      "hiel": {
+        "name": "Versterkte hiel",
+        "text": "Extra dikte precies onder je hiel."
+      },
+      "ademend": {
+        "name": "Ademend",
+        "text": "Open structuur bovenop je voet."
+      },
+      "grip": {
+        "name": "Maximale grip",
+        "text": "Siliconen zones houden je voet vast in je schoen."
+      },
+      "coolmax": {
+        "name": "Coolmax®",
+        "text": "30% Coolmax® voert vocht direct af van je huid."
+      },
+      "naadloos": {
+        "name": "Naadloos",
+        "text": "Rondom gebreid zonder stiksels, met een naadloze teenzone."
+      },
+      "cushioning": {
+        "name": "Special cushioning",
+        "text": "Dempingzones onder je voet."
+      }
+    },
+    "drag_hint": "Sleep om te draaien",
+    "reset": "Hele sok",
+    "price_label": "Performance Gripsokken 2.0",
+    "colors": "Zwart of wit",
+    "cta": "Shop de 2.0",
+    "spin_alt": "360-gradenopname van de Performance Gripsokken 2.0 in wit. Sleep om te draaien."
+  },
+  "06": {
+    "statement": "Je schoen grijpt de vloer. HÏ Grip zorgt dat je voet je schoen grijpt. Minder schuiven bij elke stop, elke draai en elke sprint, tot de laatste bal."
+  },
+  "07": {
+    "h2": "Kies je sport",
+    "lead": "Elke sport vraagt iets anders van je voet. Kies de jouwe en lees waarom grip daar telt.",
+    "sports": {
+      "padel": {
+        "line": "Uit het glas, terug naar het net. Je voet blijft staan als jij afremt.",
+        "link": "Gripsokken voor padel"
+      },
+      "tennis": {
+        "line": "Split-step, landen, wegduwen. Geen speling in je schoen bij de eerste stap.",
+        "link": "Gripsokken voor tennis"
+      },
+      "voetbal": {
+        "line": "Wegdraaien bij je man zonder dat je voet in je schoen meedraait.",
+        "link": "Gripsokken voor voetbal"
+      },
+      "rugby": {
+        "line": "Duwen in de scrum tot de bal eruit is. Je voet geeft geen centimeter weg.",
+        "link": "Gripsokken voor rugby"
+      }
+    },
+    "prev": "Vorige sport",
+    "next": "Volgende sport",
+    "status": "{sport}, sport {n} van {total}",
+    "track_aria": "Sporten, sleep of gebruik de pijltjes"
+  },
+  "08": {
+    "loop_lines": [
+      "Sportswear",
+      "is het",
+      "fundament van",
+      "presteren."
+    ],
+    "loop_aria": "Sportswear is het fundament van presteren.",
+    "body": "HÏ Grip begon bij sporters die naast hun studie een eigen merk bouwen. We startten vanuit de passie voor sporten en presteren, en we geven nooit op. Daarom maken we sportswear die een stap verder gaat. Geen 100%, maar 110%.",
+    "cta": "Ons verhaal",
+    "photo_alt": "Het team van HÏ Grip, vier personen naast elkaar"
+  },
+  "09": {
+    "h2": "Clubs, winkels en studio's gingen je voor",
+    "groups": {
+      "voetbal": "Voetbal",
+      "retail": "Retail",
+      "pilates": "Pilates",
+      "overig": "En verder"
+    },
+    "retail_detail": "Naaldwijk en Nootdorp"
+  }
+}

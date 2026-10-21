@@ -1,0 +1,50 @@
+/* 04 SOCIAL PROOF · 1.4 (Lars 19-10: de baan converteerde niet en las slecht). Een leesbaar fotoraster dat doorlinkt.
+   Grote kop, daaronder vier echte sportfoto's: padel groot links, tennis en voetbal rechtsboven, gym breed rechtsonder.
+   Elke foto is een link naar de pagina van die sport; het label linksonder zegt waar je heen gaat.
+   Hover of tik: de foto zoomt licht in en het label schuift "Gripsokken voor …" met een pijl erbij. */
+.hp-04 { background: var(--hi-black); color: var(--hi-white); }
+.hp-04-inner { display: grid; row-gap: var(--hp-space-md); }
+.hp-04-head { display: grid; gap: var(--hp-space-xs); }
+.hp-04-h2 { max-width: 14ch; font: 800 clamp(36px, 6vw, 96px)/0.95 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); }
+.hp-04-lead { font-size: var(--hp-type-lead); color: var(--hi-titanium); }
+
+.hp-04-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.hp-04-cell--a, .hp-04-cell--d { grid-column: 1 / -1; }
+.hp-04-card {
+  position: relative; display: block; height: 100%; min-height: 220px; aspect-ratio: 4 / 5; overflow: hidden; isolation: isolate;
+  border-radius: var(--hp-radius-media); background: var(--hi-near-black); color: var(--hi-white); text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.hp-04-cell--a .hp-04-card, .hp-04-cell--d .hp-04-card { aspect-ratio: 3 / 2; }
+.hp-04-card::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, var(--hi-scrim-strong) 0%, transparent 46%); pointer-events: none; }
+.hp-04-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--hp-04-pos, 50% 50%); transition: scale var(--hp-dur-3) var(--hp-ease); }
+.hp-04-card:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 3px; }
+
+.hp-04-label { position: absolute; z-index: 2; left: var(--hp-space-sm); right: var(--hp-space-sm); bottom: var(--hp-space-sm); display: grid; gap: 6px; }
+.hp-04-sport { font: italic 900 clamp(28px, 4vw, 64px)/0.9 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; }
+.hp-04-go {
+  display: inline-flex; align-items: center; gap: 10px; justify-self: start;
+  font: 700 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+}
+.hp-04-chev { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--hi-white); color: var(--hi-black); transition: translate var(--hp-dur-1) var(--hp-ease); }
+.hp-04-chev svg { width: 12px; height: 12px; }
+
+.hp-04-card:active .hp-04-img { scale: 1.05; }
+.hp-04-card:active .hp-04-chev { translate: 4px 0; }
+@media (hover: hover) {
+  .hp-04-card:hover .hp-04-img { scale: 1.06; }
+  .hp-04-card:hover .hp-04-chev { translate: 4px 0; }
+}
+
+@media (min-width: 769px) {
+  .hp-04-inner { row-gap: var(--hp-space-ml); }
+  .hp-04-head { grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-04-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); height: min(78svh, 52vw); }
+  .hp-04-cell--a { grid-column: 1 / 3; grid-row: 1 / 3; }
+  .hp-04-cell--b { grid-column: 3; grid-row: 1; }
+  .hp-04-cell--c { grid-column: 4; grid-row: 1; }
+  .hp-04-cell--d { grid-column: 3 / 5; grid-row: 2; }
+  .hp-04-card, .hp-04-cell--a .hp-04-card, .hp-04-cell--d .hp-04-card { aspect-ratio: auto; }
+  .hp-04-label { left: var(--hp-space-ms); right: var(--hp-space-ms); bottom: var(--hp-space-ms); }
+  .hp-04-cell--a .hp-04-sport { font-size: clamp(56px, 7vw, 120px); }
+}

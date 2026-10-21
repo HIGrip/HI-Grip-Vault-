@@ -1,0 +1,13 @@
+{
+  "id": "12",
+  "name": "inspiratie",
+  "bg": "--hi-black",
+  "assets": [],
+  "links": ["https://www.higrip.nl/collections/gripsokken"],
+  "interactions": [
+    "scroll (≥769px): regel 1 en 2 drijven tegen elkaar in, gekoppeld aan de scrollpositie, alleen actief in beeld (hpInView + hpOnScroll); beide bewegen tussen 0 en 2A binnen de container (A = min(vrije ruimte/2, 6% containerbreedte)); midden in beeld recht onder elkaar op A",
+    "reduced motion / mobiel: regels staan stil recht onder elkaar",
+    "pill: chevron schuift 3px bij hover/tik (base.css)"
+  ],
+  "notes": "Structuur en tekst uit refs/12 (vorige prototypeversie, .outro). Regel 2 in --hi-titanium in plaats van volt (anti-slop). Desktopkop 8.2vw zoals de ref, begrensd op 118px vanaf 1440px. Section heeft overflow-x: clip, zodat de verschoven regels nooit horizontale scroll geven."
+}

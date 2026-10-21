@@ -1,0 +1,9 @@
+.people{background:var(--hi-near-black);color:var(--hi-white)}
+.track{display:flex;gap:14px;margin-top:clamp(36px,5vw,64px);overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gutter);scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.shot{flex:0 0 auto;scroll-snap-align:center;margin:0;display:grid;gap:10px}
+.shot img{height:min(62vh,520px);width:auto;aspect-ratio:var(--ar);border-radius:18px;object-fit:cover;max-width:none}
+@media (max-width:768px){.bar span+span{display:none}.sport__arrow{display:none}.shot img{height:clamp(240px,72vw,520px)}}
+.shot figcaption{font:500 14px/1 var(--font);color:var(--hi-titanium)}
+  html.js.motion .people{height:var(--ph,auto)}
+  html.js.motion .track{overflow:visible;scroll-snap-type:none;will-change:transform}

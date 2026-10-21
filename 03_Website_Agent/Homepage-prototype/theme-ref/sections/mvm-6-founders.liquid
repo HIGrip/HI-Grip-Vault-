@@ -1,0 +1,221 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['gripsokken-tennisclub.jpg']={{ 'mv-gripsokken-tennisclub.jpg' | asset_url | json }};MV_ASSETS['hero-tennis-serve.jpg']={{ 'mv-hero-tennis-serve.jpg' | asset_url | json }};MV_ASSETS['rotterdam-business-school.jpg']={{ 'mv-rotterdam-business-school.jpg' | asset_url | json }};</script>
+<section class="mv-band-light mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="who" aria-labelledby="who-title" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-wrap"> <div class="mv-who__head"> <h2 class="mv-h2 mv-rv" id="who-title">{{ s.t1 }}</h2> <p class="mv-lead mv-rv" style="--d:.12s">{{ s.t2 | escape }}</p> </div> <figure class="mv-who__strip mv-rv"> <img width="2000" height="382" loading="lazy" decoding="async" alt="{{ s.t4 | escape }}" src="{%- if s.ima3 != blank -%}{{ s.ima3 | image_url: width: 2000 }}{%- else -%}{{ 'mv-rotterdam-business-school.jpg' | asset_url }}{%- endif -%}"> </figure> <div class="mv-people"> {%- for block in section.blocks -%}{%- if block.type == 'b1' -%}{%- assign b = block.settings -%}<article class="mv-person mv-rv" {{ block.shopify_attributes }}> <h3>{{ b.t1 | escape }}</h3> <div><p class="mv-role">{{ b.t2 | escape }}</p><p class="mv-muted">{{ b.t3 | escape }}</p></div> </article>{%- endif -%}{%- endfor -%}   </div> <div class="mv-who__foot mv-rv"> <p class="mv-slogan">{{ s.t5 | escape }}</p> <p class="mv-muted">{{ s.t6 | escape }} <a class="mv-textlink" href="{{ s.url7 | default: 'https://www.higrip.nl/pages/over-ons' }}">{{ s.t8 | escape }}</a>.</p> </div> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Missie: Founders",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "t1",
+      "label": "H2 · Wie zitten er achter de missie van HÏ Grip?",
+      "default": "Wie zitten er achter de missie van <em>HÏ Grip?</em>"
+    },
+    {
+      "type": "textarea",
+      "id": "t2",
+      "label": "P · Achter HÏ Grip zitten drie founders, Lars Cretz, Tigo Twigt en",
+      "default": "Achter HÏ Grip zitten drie founders, Lars Cretz, Tigo Twigt en Timo Heijligers, die het merk in december 2024 oprichtten op de Rotterdam Business School en het naast hun studie bouwen, ieder met een eigen deel van de missie: merk en groei, klanten en partners, en product en inkoop."
+    },
+    {
+      "type": "image_picker",
+      "id": "ima3",
+      "label": "Afbeelding · rotterdam-business-school.jpg"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "Alt-tekst · rotterdam-business-school.jpg",
+      "default": "Glazen gevel van de Hogeschool Rotterdam, waar de Rotterdam Business School zit en HÏ Grip werd opgericht"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "P · Wij leggen de basis, jij presteert.",
+      "default": "Wij leggen de basis, jij presteert."
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "P · Hun sport, hun foto en hun eigen woorden vind je bij",
+      "default": "Hun sport, hun foto en hun eigen woorden vind je bij"
+    },
+    {
+      "type": "url",
+      "id": "url7",
+      "label": "Link · de drie founders op Over ons"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "A · de drie founders op Over ons",
+      "default": "de drie founders op Over ons"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "b1",
+      "name": "1. person",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "H3 · Lars Cretz",
+          "default": "Lars Cretz"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "P · Co-founder · finance, design, ads en AI",
+          "default": "Co-founder · finance, design, ads en AI"
+        },
+        {
+          "type": "text",
+          "id": "t3",
+          "label": "P · Bouwt aan hoe HÏ Grip eruitziet en groeit: van design en Meta-",
+          "default": "Bouwt aan hoe HÏ Grip eruitziet en groeit: van design en Meta- en TikTok-ads tot AI, R&D en fulfilment."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Missie: Founders"
+    }
+  ]
+}
+{% endschema %}

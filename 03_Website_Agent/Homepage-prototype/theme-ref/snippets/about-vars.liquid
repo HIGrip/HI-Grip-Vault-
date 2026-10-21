@@ -1,0 +1,14 @@
+{% doc %}
+  CSS-variabelen voor een about-* sectie, uit de gedeelde editor-instellingen. Gebruik in een style-attribuut.
+  @param {object} s - section.settings
+{% enddoc %}
+{%- if s.bg_color != blank -%}--ab-bg:{{ s.bg_color }};{%- endif -%}
+{%- if s.text_color != blank -%}--ab-fg:{{ s.text_color }};{%- endif -%}
+{%- if s.accent_color != blank -%}--ab-accent:{{ s.accent_color }};{%- endif -%}
+{%- if s.padding_top != blank -%}--ab-pt:{{ s.padding_top }}px;{%- endif -%}
+{%- if s.padding_bottom != blank -%}--ab-pb:{{ s.padding_bottom }}px;{%- endif -%}
+{%- if s.padding_top_mobile != blank -%}--ab-pt-m:{{ s.padding_top_mobile }}px;{%- endif -%}
+{%- if s.padding_bottom_mobile != blank -%}--ab-pb-m:{{ s.padding_bottom_mobile }}px;{%- endif -%}
+{%- if s.heading_size_desktop != blank -%}--ab-h-d:{{ s.heading_size_desktop }}px;{%- endif -%}
+{%- if s.heading_size_mobile != blank -%}--ab-h-m:{{ s.heading_size_mobile }}px;{%- endif -%}
+{%- if s.line_height != blank -%}--ab-lh:{{ s.line_height | divided_by: 100.0 }};{%- endif -%}

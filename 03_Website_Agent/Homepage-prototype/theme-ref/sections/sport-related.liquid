@@ -1,0 +1,48 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- assign s = section.settings -%}
+{%- assign tag = s.heading_tag | default: 'h2' -%}
+
+<nav class="sl sl-related" data-accent="{{ s.accent }}" aria-label="{{ s.heading | escape }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap">
+    {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+    <{{ tag }} class="sl__h2" style="margin:0">{{ s.heading | default: 'Gripsokken voor jouw sport' }}</{{ tag }}>
+    <ul class="sl-related__grid">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}>
+          {%- if block.settings.link != blank -%}<a class="sl-related__link{% if block.settings.image == blank %} sl-related__link--noimg{% endif %}" href="{{ block.settings.link }}" aria-label="Gripsokken voor {{ block.settings.label | downcase }}">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 700 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 25vw, 50vw', widths: '400, 700', alt: '' }}
+            {%- endif -%}
+            <span class="sl-related__name"><span>{{ block.settings.label }}</span><span aria-hidden="true">→</span></span>
+          </a>{%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Sport — andere sporten",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Ontdek meer" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Gripsokken voor jouw sport" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "sport", "name": "Sport", "settings": [
+      { "type": "text", "id": "label", "label": "Naam", "default": "Tennis" },
+      { "type": "url", "id": "link", "label": "Link" },
+      { "type": "image_picker", "id": "image", "label": "Foto" }
+    ] }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "Sport — andere sporten" } ]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign hero_alt = s.image.alt | default: page.title
+-%}
+
+<section class="sl sl-story{% if s.image != blank %} sl-story--media{% endif %}" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap">
+    <div class="sl-story__grid">
+      {%- if s.image != blank -%}
+        <figure class="sl-story__media" style="--sl-story-focus: {{ s.focus_x | default: 50 }}% {{ s.focus_y | default: 50 }}%;">
+          <picture>
+            {%- if s.image_mobile != blank -%}<source media="(max-width: 899px)" srcset="{{ s.image_mobile | image_url: width: 600 }} 600w, {{ s.image_mobile | image_url: width: 900 }} 900w, {{ s.image_mobile | image_url: width: 1200 }} 1200w" sizes="100vw">{%- endif -%}
+            {{ s.image | image_url: width: 1600 | image_tag: loading: 'lazy', decoding: 'async', sizes: '(min-width: 900px) 42vw, 100vw', widths: '640, 960, 1280, 1600', alt: hero_alt }}
+          </picture>
+          {%- if s.badge != blank -%}<figcaption class="sl-story__badge">{{ s.badge }}</figcaption>{%- endif -%}
+        </figure>
+      {%- endif -%}
+
+      <div class="sl-story__content">
+        {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        <{{ tag }} class="sl__h2">{{ s.heading | default: 'Waarom grip het verschil maakt' }}</{{ tag }}>
+        {%- if s.lead != blank -%}<p class="sl__lead">{{ s.lead }}</p>{%- endif -%}
+
+
+        {%- if s.cta_text != blank -%}
+          <a class="sl__btn sl__btn--primary sl-story__cta" href="{{ all_products['performance-gripsokken-2-0-wit'].url | default: '/products/performance-gripsokken-2-0-wit' }}">{{ s.cta_text }}</a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <ol class="sl-story__list">
+        {%- for block in section.blocks -%}
+          <li class="sl-story__item" {{ block.shopify_attributes }}>
+            <h3>{{ block.settings.title }}</h3>
+            <p>{{ block.settings.text }}</p>
+          </li>
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+
+    {%- if s.show_page_content and page.content != blank -%}
+      <div class="sl-story__body">{{ page.content }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport — uitleg (donker)",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Het probleem" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Waarom grip het verschil maakt" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst", "default": "Gladde sokken laten je voet schuiven in je schoen. Dat kost kracht, stabiliteit en vertrouwen. Grip houdt je voet op zijn plek." },
+    { "type": "image_picker", "id": "image", "label": "Foto (leeg = alleen tekst)" },
+    { "type": "image_picker", "id": "image_mobile", "label": "Foto voor telefoon (leeg = zelfde foto)" },
+    { "type": "range", "id": "focus_x", "label": "Foto-uitsnede horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "range", "id": "focus_y", "label": "Foto-uitsnede verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "text", "id": "badge", "label": "Label op foto", "default": "Performance Gripsokken 2.0" },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst (leeg = geen knop)", "default": "Bekijk de gripsok" },
+    { "type": "checkbox", "id": "show_page_content", "label": "Toon paginatekst (uit Shopify-pagina)", "info": "Je SEO-tekst uit Pagina's, deze pagina.", "default": true },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "card", "name": "Punt", "settings": [
+      { "type": "text", "id": "title", "label": "Titel", "default": "Geen wegglijden" },
+      { "type": "textarea", "id": "text", "label": "Tekst", "default": "Het antislip-patroon houdt je voet vast in de schoen, ook bij snelle richtingswisselingen." }
+    ] }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    { "name": "Sport — uitleg (donker)", "blocks": [
+      { "type": "card", "settings": { "title": "Geen wegglijden", "text": "Het antislip-patroon houdt je voet vast in de schoen, ook bij snelle richtingswisselingen." } },
+      { "type": "card", "settings": { "title": "Meer controle", "text": "Je voet blijft waar hij hoort, dus je kracht gaat waar je hem wilt hebben." } },
+      { "type": "card", "settings": { "title": "Minder wrijving", "text": "Minder schuiven in de schoen betekent minder wrijving." } }
+    ] }
+  ]
+}
+{% endschema %}

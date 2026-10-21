@@ -1,0 +1,353 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Je staat klaar voor de actie. Je schoenen zitten strak, je sportsokken zitten aan, je mindset is on point, maar bij de eerste explosieve beweging voel je het: je voet schuift een fractie weg in je schoen. Irritant? Zeker. Maar wist je dat dit kleine moment van wrijving het verschil is tussen winnen en verliezen?</p><p>De toekomst van sportswear draait niet om grotere logo's, maar om slimme details, met de focus op wat echt telt. Gripsokken zijn de onzichtbare revolutie die elke sporter van amateur tot pro helpt om meer controle te krijgen.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 76,
+            "padding-inline-end": 55
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Stop direct met energie verliezen</strong></h2><h3></h3>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Normale sportsokken zijn vaak gemaakt van materialen die, zodra je begint te zweten, veranderen in een natte glijbaan. Wetenschappelijk gezien ontstaat er dan een gebrek aan efficiënte krachtoverbrenging.</p><p>Wanneer je voet schuift, gaat de energie die je in de grond duwt verloren in de wrijving tussen je sok en je binnenzool. Gripsokken maken gebruik van strategisch geplaatste antislippads. Dit creëert een directe verbinding.</p><ul><li><strong>Explosieve sprints</strong>: Zet direct kracht zonder slippen.</li><li><strong>Wendbaarheid</strong>: Maak scherpe kapbewegingen met volledige stabiliteit.</li><li><strong>Blessurepreventie</strong>: Voorkom dat je voet gaat \"zwemmen\", wat de kans op blaren en enkelverwijding verkleint.</li></ul><p>Wist je dat? Kleine micro-bewegingen in je schoen kunnen leiden tot vermoeidheid in de voetspieren, simpelweg omdat je lichaam constant probeert die instabiliteit te corrigeren.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_kw4wpq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3><strong>3 redenen om vandaag over te stappen</strong></h3>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_RCCyGJ": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Waarom kiezen steeds meer sporters voor deze techniek? Het draait om drie fundamentele voordelen die je direct merkt tijdens je training:</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wEHL6h": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p></p><ul><li><strong>Status en zelfvertrouwen:</strong> Niets straalt meer focus uit dan een uitrusting die echt werkt. Als je voeten vaststaan, voelt elke beweging gecontroleerd, nice en krachtig.</li></ul><p></p><ul><li><strong>Bespaar je voeten:</strong> Wrijving veroorzaakt hitte, en hitte veroorzaakt blaren. Door de voet te fixeren, blijft de huid rustig en kun je langer doorgaan.</li></ul><p></p><ul><li><strong>Maximaliseer je snelheid:</strong> Elke millimeter die je voet niet schuift, is pure winst in je voorwaartse beweging.</li></ul>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_wjPL7D": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><br/><br/></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_4Drtaj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1597_233c0ef8-3dd9-4052-987b-ba3a1546a32a.jpg",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_fjjjNP": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_trgqH6": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Wil je helemaal <strong>up-to-date</strong> zijn?</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_JFn3DQ": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Ontdek dan de toekomst van sportsokken.  Nu is het jouw tijd. Shop eenvoudig gripsokken bij HÏ Grip voor meer controle, minder blessures en blaren.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_AN3X6c": {
+              "type": "button",
+              "settings": {
+                "label": "Ontdek jouw upgrade",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_trgqH6",
+            "text_JFn3DQ",
+            "button_AN3X6c"
+          ]
+        }
+      },
+      "block_order": [
+        "text_KhKGUh",
+        "text_hdnzWH",
+        "text_pjbknU",
+        "text_kw4wpq",
+        "text_RCCyGJ",
+        "text_wEHL6h",
+        "text_wjPL7D",
+        "image_4Drtaj",
+        "group_fjjjNP"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

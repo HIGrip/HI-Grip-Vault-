@@ -1,0 +1,7 @@
+[   10229ms] [LOG] [Hive] Adapters not yet ready. Event 'HOMEPAGE_VIEW' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   10259ms] [LOG] [Hive] Adapters not yet ready. Event 'YOTPO_INIT' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   10654ms] [LOG] [Hive] Adapters not yet ready. Event 'USER_TRACKABLE' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   12678ms] [LOG] [Hive] Adapters not yet ready. Event 'CART_SYNC' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   18512ms] [LOG] [Hive] Adapters not yet ready. Event 'COUPON_MODAL_MICRO_YES_STEP_VIEW' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   18514ms] [LOG] [Hive] Adapters not yet ready. Event 'COUPON_MODAL_LAUNCH' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22
+[   21256ms] [LOG] [Hive] Adapters not yet ready. Event 'USER_ENGAGED' added to queue. @ https://bombas.com/_next/static/immutable/chunks/2olhn0atgchm0.js:22

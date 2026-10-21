@@ -1,0 +1,46 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<nav class="zk zk-nav" data-zk-nav aria-label="{{ s.aria_label | escape }}" style="{% render 'zk-vars', s: s %}padding:0;" {{ section.shopify_attributes }}>
+  <div class="zk__wrap zk-nav__in">
+    {%- for block in section.blocks -%}
+      <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+    {%- endfor -%}
+    {%- if s.cta_label != blank and s.cta_link != blank -%}
+      <a class="zk__pill zk__pill--sm zk-nav__cta" style="opacity:1;padding:11px 18px" href="{{ s.cta_link }}">{{ s.cta_label }} {% render 'zk-chev' %}</a>
+    {%- endif -%}
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Zakelijk: Navigatiebalk",
+  "settings": [
+    { "type": "text", "id": "aria_label", "label": "Toegankelijke naam", "default": "Op deze pagina" },
+    { "type": "text", "id": "cta_label", "label": "Knop: tekst", "default": "Sample" },
+    { "type": "text", "id": "cta_link", "label": "Knop: link", "default": "#aanvragen" },
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (onderstreping)", "default": "#ccff00" },
+    { "type": "header", "content": "Knop" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Klanten" },
+        { "type": "text", "id": "link", "label": "Anker (bijv. #product)", "default": "#vertrouwd" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Zakelijk: Navigatiebalk" } ]
+}
+{% endschema %}

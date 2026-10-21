@@ -1,0 +1,64 @@
+{{ 'padel-page.css' | asset_url | stylesheet_tag }}
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="g2 g2-proof">
+  {%- if s.eyebrow != blank -%}<div class="g2-proof__eyebrow">{{ s.eyebrow }}</div>{%- endif -%}
+  <h2>{{ s.heading }}</h2>
+  <div class="g2-proof__layout">
+    <div class="g2-proof__hero">
+      <span class="g2-proof__jumbo">{{ s.jumbo_num | default: '95%' }}</span>
+      <span class="g2-proof__jumbo-label">{{ s.jumbo_label }}</span>
+    </div>
+    <div class="g2-proof__rows">
+      {%- for block in section.blocks -%}
+        {%- assign bs = block.settings -%}
+        <div class="g2-proof__row" {{ block.shopify_attributes }}>
+          <span class="g2-proof__row-label">{{ bs.label }}</span>
+          <div class="g2-proof__row-bar"><div class="g2-proof__row-fill{% if bs.muted %} g2-proof__row-fill--muted{% endif %}" style="width:{{ bs.bar_width | default: 80 }}%"></div></div>
+          <span class="g2-proof__row-val{% if bs.muted %} g2-proof__row-val--muted{% endif %}">{{ bs.value }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — proof",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Bewezen, niet beloofd" },
+    { "type": "text", "id": "heading", "label": "Titel", "default": "De cijfers achter de grip" },
+    { "type": "text", "id": "jumbo_num", "label": "Groot cijfer", "default": "95%" },
+    { "type": "text", "id": "jumbo_label", "label": "Onderschrift bij groot cijfer", "default": "meer grip dan een standaard sok" }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Statistiek-regel",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "HÏ Grip" },
+        { "type": "text", "id": "value", "label": "Waarde", "default": "1.17" },
+        { "type": "range", "id": "bar_width", "label": "Balkbreedte (%)", "min": 10, "max": 100, "step": 1, "default": 90 },
+        { "type": "checkbox", "id": "muted", "label": "Gedempte kleur (voor vergelijkingscijfer)", "default": false }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Gripsocks 2.0 — proof",
+      "blocks": [
+        { "type": "row", "settings": { "label": "HÏ Grip", "value": "1.17", "bar_width": 97, "muted": false } },
+        { "type": "row", "settings": { "label": "Standaard sok", "value": "0.60", "bar_width": 50, "muted": true } },
+        { "type": "row", "settings": { "label": "Sporters", "value": "3.500+", "bar_width": 80, "muted": false } },
+        { "type": "row", "settings": { "label": "Beoordeling", "value": "4.5 / 5", "bar_width": 90, "muted": false } }
+      ]
+    }
+  ]
+}
+{% endschema %}

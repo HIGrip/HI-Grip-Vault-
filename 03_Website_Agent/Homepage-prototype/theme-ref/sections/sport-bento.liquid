@@ -1,0 +1,81 @@
+{{ 'sport-feature.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'spf' %}
+<section
+  class="spf spf-bento-sec"
+  style="
+    {% if s.bg_color != blank %}--spf-bg:{{ s.bg_color }};{% endif %}
+    {% if s.text_color != blank %}--spf-fg:{{ s.text_color }};{% endif %}
+    {% if s.accent_color != blank %}--spf-accent:{{ s.accent_color }};{% endif %}
+    --spf-pt:{{ s.padding_top }}px;--spf-pb:{{ s.padding_bottom }}px;--spf-pt-m:{{ s.padding_top_mobile }}px;--spf-pb-m:{{ s.padding_bottom_mobile }}px;
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="spf__wrap">
+    {%- if s.heading != blank -%}<{{ tag }} class="spf__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+    <div class="spf-bento">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <article class="spf-cell spf-cell--{{ b.style }}{% if b.wide %} spf-cell--wide{% endif %}" style="--spf-focus:{{ b.focus_x }}% {{ b.focus_y }}%;{% if b.text_align != 'default' %}text-align:{{ b.text_align }};{% endif %}{% if b.bg_color != blank %}background:{{ b.bg_color }};{% endif %}{% if b.text_color != blank %}color:{{ b.text_color }};{% endif %}" {{ block.shopify_attributes }}>
+          {%- if b.style == 'photo' and b.image != blank -%}
+            {%- if s.bw_photos -%}
+              {{- b.image | image_url: width: 1400 | image_tag: class: 'spf__photo', loading: 'lazy', widths: '600, 900, 1400', sizes: '(min-width: 769px) 50vw, 100vw', alt: b.image.alt -}}
+            {%- else -%}
+              {{- b.image | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1400', sizes: '(min-width: 769px) 50vw, 100vw', alt: b.image.alt -}}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if b.big != blank -%}<p class="spf-cell__big">{{ b.big }}</p>{%- endif -%}
+          {%- if b.title != blank -%}<h3>{{ b.title }}</h3>{%- endif -%}
+          {%- if b.text != blank -%}<p>{{ b.text }}</p>{%- endif -%}
+          {%- if b.small != blank -%}<small>{{ b.small }}</small>{%- endif -%}
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport: Waar je het merkt",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Waar je het merkt" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "select", "id": "text_align", "label": "Kop uitlijnen", "options": [ { "value": "default", "label": "Standaard (links)" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "checkbox", "id": "bw_photos", "label": "Foto's zwart-wit tonen", "default": true },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#0b0b0b" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#f2f2f0" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (grote woorden)", "default": "#ccff00" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 140 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 120 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 }
+  ],
+  "blocks": [
+    {
+      "type": "cell",
+      "name": "Vak",
+      "settings": [
+        { "type": "select", "id": "style", "label": "Stijl", "options": [ { "value": "photo", "label": "Foto" }, { "value": "light", "label": "Licht vlak" }, { "value": "dark", "label": "Donker vlak" } ], "default": "photo" },
+        { "type": "checkbox", "id": "wide", "label": "Breed vak (2 kolommen)", "default": false },
+        { "type": "image_picker", "id": "image", "label": "Foto (bij stijl Foto)" },
+        { "type": "range", "id": "focus_x", "label": "Beeldfocus horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+        { "type": "range", "id": "focus_y", "label": "Beeldfocus verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+        { "type": "text", "id": "big", "label": "Groot woord of getal (optioneel)" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Forwards" },
+        { "type": "textarea", "id": "text", "label": "Tekst" },
+        { "type": "text", "id": "small", "label": "Klein (bijv. bron)" },
+        { "type": "select", "id": "text_align", "label": "Tekst uitlijnen in vak", "options": [ { "value": "default", "label": "Standaard (links)" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+        { "type": "color", "id": "bg_color", "label": "Vlakkleur (leeg = standaard)" },
+        { "type": "color", "id": "text_color", "label": "Tekstkleur in vak (leeg = standaard)" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "Sport: Waar je het merkt" } ]
+}
+{% endschema %}

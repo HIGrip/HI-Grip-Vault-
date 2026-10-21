@@ -1,0 +1,135 @@
+{{ 'padel-page.css' | asset_url | stylesheet_tag }}
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign cutout_top = '50%'
+  assign cutout_bottom = 'auto'
+  assign cutout_transform = 'translateY(-50%)'
+  if s.cutout_position_y == 'top'
+    assign cutout_top = s.cutout_offset_y | default: 5 | append: '%'
+    assign cutout_bottom = 'auto'
+    assign cutout_transform = 'none'
+  elsif s.cutout_position_y == 'bottom'
+    assign cutout_top = 'auto'
+    assign cutout_bottom = s.cutout_offset_y | default: 5 | append: '%'
+    assign cutout_transform = 'none'
+  endif
+-%}
+{%- capture cutout_style -%}
+  --g2-cutout-width:{{ s.cutout_width | default: 26 }}vw;
+  --g2-cutout-width-mobile:{{ s.cutout_width_mobile | default: 70 }}vw;
+  --g2-cutout-right:{{ s.cutout_offset_x | default: 6 }}%;
+  --g2-cutout-top:{{ cutout_top }};
+  --g2-cutout-bottom:{{ cutout_bottom }};
+  --g2-cutout-transform:{{ cutout_transform }};
+  --g2-cutout-x-mobile:{{ s.cutout_offset_x_mobile | default: 0 }}vw;
+  --g2-cutout-y-mobile:{{ s.cutout_offset_y_mobile | default: 0 }}vw;
+{%- endcapture -%}
+
+<section class="g2 g2-hero g2-gridtex">
+  <span class="g2-hero__num" aria-hidden="true">{{ s.watermark | default: '2.0' }}</span>
+  {%- if s.stamp_text != blank -%}<span class="g2-hero__stamp">{{ s.stamp_text }}</span>{%- endif -%}
+  {%- if s.cutout_image != blank -%}
+    <div class="g2-hero__cutout" style="{{ cutout_style }}">
+      {{ s.cutout_image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '300,500,700,900', sizes: '(min-width:769px) 28vw, 60vw', alt: s.cutout_image.alt | default: 'Performance Grip Socks 2.0' }}
+    </div>
+  {%- else -%}
+    <div class="g2-hero__cutout g2-hero__cutout--placeholder" style="{{ cutout_style }}" aria-hidden="true">
+      <svg viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M118 18c30-10 62-8 84 10 14 11 18 27 16 44-3 24-14 45-14 70 0 30 10 55 28 78 22 28 30 62 20 96-9 32-38 54-78 60-46 7-92-10-112-46-14-25-16-56-8-92 7-32 8-58-2-84-9-24-12-46-6-68 8-30 32-56 72-68z" fill="url(#g2herocutoutgrad)" stroke="rgba(255,255,255,.35)" stroke-width="1.5"/>
+        <defs>
+          <linearGradient id="g2herocutoutgrad" x1="60" y1="18" x2="260" y2="400" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3a3a38"/>
+            <stop offset="1" stop-color="#141312"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  {%- endif -%}
+  <div class="g2-hero__grid">
+    <div class="g2-hero__text">
+      {%- if s.eyebrow != blank -%}
+        <span class="g2-eyebrow"><span class="dot"></span> {{ s.eyebrow }}</span>
+      {%- endif -%}
+      <{{ s.heading_tag | default: 'h2' }} class="g2-hero__title">
+        <span class="outline">{{ s.brand_word | default: 'GRIPSOCKS' }}</span><br>
+        <span class="accent">{{ s.version_word | default: '2.0' }}</span>
+      </{{ s.heading_tag | default: 'h2' }}>
+      {%- if s.subtext != blank -%}<p class="g2-hero__sub">{{ s.subtext }}</p>{%- endif -%}
+      <div class="g2-hero__ctas">
+        {%- if s.cta_text != blank -%}<a href="{{ s.cta_url | default: '#' }}" class="g2-btn">{{ s.cta_text }} &rarr;</a>{%- endif -%}
+        {%- if s.cta2_text != blank -%}<a href="{{ s.cta2_url | default: '#' }}" class="g2-btn g2-btn--ghost">{{ s.cta2_text }}</a>{%- endif -%}
+      </div>
+    </div>
+    <div class="g2-hero__side">
+      {%- for block in section.blocks -%}
+        <div class="g2-hero__stat{% if block.settings.color != 'oranje' %} g2-hero__stat--{{ block.settings.color }}{% endif %}" {{ block.shopify_attributes }}>
+          <b>{{ block.settings.number }}<span class="u">{{ block.settings.unit }}</span></b>
+          <span>{{ block.settings.label }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — hero",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "watermark", "label": "Achtergrond-cijfer (decoratief)", "default": "2.0" },
+    { "type": "text", "id": "stamp_text", "label": "Stempel (leeg = geen stempel)", "default": "Nieuw" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Voor het eerst — de volgende generatie" },
+    { "type": "text", "id": "brand_word", "label": "Titel — bovenste regel (contour)", "default": "GRIPSOCKS" },
+    { "type": "text", "id": "version_word", "label": "Titel — onderste regel (accentkleur)", "default": "2.0" },
+    { "type": "textarea", "id": "subtext", "label": "Ondertekst", "default": "Compleet nieuw: nauwkeurige maten en kleurkeuze, gebouwd op dezelfde grip-technologie waar we al jaren aan bouwen." },
+    { "type": "text", "id": "cta_text", "label": "Knop 1 — tekst", "default": "Ontdek Gripsocks 2.0" },
+    { "type": "url", "id": "cta_url", "label": "Knop 1 — link" },
+    { "type": "text", "id": "cta2_text", "label": "Knop 2 — tekst (leeg = geen 2e knop)", "default": "Bekijk de wetenschap" },
+    { "type": "url", "id": "cta2_url", "label": "Knop 2 — link" },
+    { "type": "header", "content": "Productfoto" },
+    { "type": "image_picker", "id": "cutout_image", "label": "Foto zonder achtergrond (leeg = silhouet-placeholder)" },
+    { "type": "range", "id": "cutout_width", "label": "Grootte (breedte) — laptop", "min": 12, "max": 50, "step": 1, "unit": "vw", "default": 26 },
+    { "type": "range", "id": "cutout_offset_x", "label": "Horizontale positie — laptop (afstand vanaf rechts)", "min": 0, "max": 25, "step": 1, "unit": "%", "default": 6 },
+    { "type": "select", "id": "cutout_position_y", "label": "Verticale positie — laptop", "options": [
+        { "value": "top", "label": "Boven" },
+        { "value": "center", "label": "Midden" },
+        { "value": "bottom", "label": "Onder" }
+      ], "default": "center" },
+    { "type": "range", "id": "cutout_offset_y", "label": "Verticale afstand — laptop (bij boven/onder)", "min": 0, "max": 25, "step": 1, "unit": "%", "default": 5 },
+    { "type": "header", "content": "Productfoto — telefoon (los van laptop hierboven)" },
+    { "type": "range", "id": "cutout_width_mobile", "label": "Grootte (breedte) — telefoon", "min": 30, "max": 95, "step": 1, "unit": "vw", "default": 70 },
+    { "type": "range", "id": "cutout_offset_x_mobile", "label": "Horizontale positie — telefoon (negatief = links, positief = rechts)", "min": -20, "max": 20, "step": 1, "unit": "vw", "default": 0 },
+    { "type": "range", "id": "cutout_offset_y_mobile", "label": "Verticale positie — telefoon (negatief = omhoog, positief = omlaag)", "min": -15, "max": 15, "step": 1, "unit": "vw", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Statistiek",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Getal", "default": "3" },
+        { "type": "text", "id": "unit", "label": "Eenheid/symbool", "default": "×" },
+        { "type": "text", "id": "label", "label": "Label", "default": "nieuwe maten — 35 t/m 46" },
+        { "type": "select", "id": "color", "label": "Kleur", "options": [
+            { "value": "oranje", "label": "Oranje — actie" },
+            { "value": "groen", "label": "Groen — nieuw" },
+            { "value": "blauw", "label": "Blauw — bewezen" }
+          ], "default": "oranje" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Gripsocks 2.0 — hero",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "3", "unit": "×", "label": "nieuwe maten — 35 t/m 46", "color": "groen" } },
+        { "type": "stat", "settings": { "number": "2", "unit": "×", "label": "nieuwe kleuren — zwart & wit", "color": "groen" } },
+        { "type": "stat", "settings": { "number": "95", "unit": "%", "label": "meer grip — de bewezen basis", "color": "blauw" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,69 @@
+{% doc %}
+  JSON-LD voor de over-ons-pagina (/pages/over-ons): AboutPage + Organization + 3 founders (Person).
+  Render in de hero-sectie van de pagina: {% render 'about-schema' %}
+
+  - Organization heeft een vaste @id (shop.url + /#organization), gelijk aan de Organization in sections/header.liquid.
+  - GEEN aggregateRating (geen reviewapp op de site, zie Feiten & Actuele Staat).
+  - Rollen van de founders staan als variabelen bovenaan; [CHECK] bij lars.
+
+  @example
+  {% render 'about-schema' %}
+{% enddoc %}
+
+{%- liquid
+  assign role_lars = 'Merk & marketing'
+  assign role_timo = 'Product & operations'
+  assign role_tigo = 'Partners & zakelijk'
+
+  assign org_id = shop.url | append: '/#organization'
+  if canonical_url != blank
+    assign page_url = canonical_url
+  else
+    assign page_url = request.origin | append: request.path
+  endif
+  assign page_name = page.title | default: 'Over ons'
+  assign fallback_description = 'HÏ Grip is een Nederlands sportswear merk, opgericht in december 2024 door drie founders op Rotterdam Business School. Wij versnellen de beweging van iedere sporter.'
+  assign page_desc = page_description | default: fallback_description | replace: '&amp;', '&' | strip_html
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": {{ page_url | append: '#aboutpage' | json }},
+      "url": {{ page_url | json }},
+      "name": {{ page_name | json }},
+      "description": {{ page_desc | json }},
+      "inLanguage": {{ request.locale.iso_code | default: 'nl' | json }},
+      "isPartOf": { "@type": "WebSite", "url": {{ shop.url | json }}, "name": {{ shop.name | json }} },
+      "about": { "@id": {{ org_id | json }} },
+      "mainEntity": { "@id": {{ org_id | json }} }
+    },
+    {
+      "@type": "Organization",
+      "@id": {{ org_id | json }},
+      "name": "HÏ Grip",
+      "url": {{ shop.url | json }},
+      {%- if settings.logo != blank %}
+      "logo": {
+        "@type": "ImageObject",
+        "url": {{ settings.logo | image_url: width: 600 | prepend: 'https:' | json }}
+      },
+      {%- endif %}
+      "slogan": "Ga door waar anderen stoppen.",
+      "foundingDate": "2024-12",
+      "foundingLocation": { "@type": "Place", "name": "Rotterdam" },
+      "founder": [
+        { "@type": "Person", "@id": {{ shop.url | append: '/#founder-lars' | json }}, "name": "Lars", "jobTitle": {{ role_lars | json }}, "worksFor": { "@id": {{ org_id | json }} } },
+        { "@type": "Person", "@id": {{ shop.url | append: '/#founder-timo' | json }}, "name": "Timo", "jobTitle": {{ role_timo | json }}, "worksFor": { "@id": {{ org_id | json }} } },
+        { "@type": "Person", "@id": {{ shop.url | append: '/#founder-tigo' | json }}, "name": "Tigo", "jobTitle": {{ role_tigo | json }}, "worksFor": { "@id": {{ org_id | json }} } }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/higrip.nl/",
+        "https://nl.trustpilot.com/review/higrip.nl"
+      ]
+    }
+  ]
+}
+</script>

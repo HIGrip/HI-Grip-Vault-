@@ -1,0 +1,199 @@
+/* 02 PRODUCT (1.2) · Shop 2: twee grote kaarten, 1.0 links en 2.0 rechts, daaronder de vergelijkbalk.
+   Motion: de kaarten schuiven bij binnenscrollen schuin tegen elkaar in en landen recht (scroll-gekoppeld via --hp-02-q);
+   hover of tik veegt het sfeerbeeld van onder in beeld en zoomt het licht in; de staaltjes van de 2.0 vegen zwart/wit. */
+.hp-02 { background: var(--hi-offwhite); color: var(--hi-black); padding-block: var(--hp-space-lg); overflow-x: clip; }
+.hp-02-inner { display: grid; row-gap: var(--hp-space-md); }
+.hp-02-h2 { font-weight: 900; font-style: italic; font-size: var(--hp-type-h2); line-height: 0.95; padding-right: 0.06em; }
+
+/* kaarten */
+.hp-02-list { display: grid; gap: var(--hp-space-ml); }
+.hp-02-card { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; --hp-02-dir: -1; --hp-02-lift: 72px; }
+.hp-02-card--20 { --hp-02-dir: 1; --hp-02-lift: 140px; }
+.hp-motion .hp-02-card {
+  transform:
+    translate3d(calc(var(--hp-02-q, 0) * var(--hp-02-dir) * var(--hp-02-slide, 6vw)), calc(var(--hp-02-q, 0) * var(--hp-02-lift)), 0)
+    rotate(calc(var(--hp-02-q, 0) * var(--hp-02-dir) * 4deg));
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+
+/* beeld: lichte omlijning, product contain, sfeerbeeld eroverheen */
+.hp-02-media {
+  position: relative; display: block; width: 100%; padding: 0; overflow: hidden; isolation: isolate;
+  aspect-ratio: 1; border: 1px solid var(--hi-line); border-radius: var(--hp-radius-media);
+  background: var(--hi-white); cursor: pointer;
+}
+.hp-02-media__prod, .hp-02-media__mood { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hp-02-media__prod { object-fit: contain; filter: brightness(1.015); transition: transform var(--hp-dur-2) var(--hp-ease), clip-path var(--hp-dur-2) var(--hp-ease); }
+.hp-02-media__prod--wit { clip-path: inset(0 100% 0 0); }
+.hp-02-card[data-color="wit"] .hp-02-media__prod--wit { clip-path: inset(0); }
+.hp-02-media__mood { z-index: 1; object-fit: cover; clip-path: inset(100% 0 0 0); transform: scale(1); transition: clip-path var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-3) var(--hp-ease); }
+
+.hp-02-media[aria-pressed="true"] .hp-02-media__mood { clip-path: inset(0); transform: scale(1.08); }
+.hp-02-media[aria-pressed="true"] .hp-02-media__prod { transform: translateY(-8%) scale(0.9); }
+
+.hp-02-tag {
+  position: absolute; z-index: 2; top: var(--hp-space-sm); left: var(--hp-space-sm);
+  padding: 7px 12px; border-radius: 999px; background: var(--hi-black); color: var(--hi-white);
+  font: 700 11px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+}
+.hp-02-tag--volt { color: var(--hi-yellow); }
+
+/* tekst */
+.hp-02-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: baseline; column-gap: var(--hp-space-sm); padding-top: var(--hp-space-ms); }
+.hp-02-title { font-weight: 900; font-style: italic; font-size: clamp(22px, 2.5vw, 36px); line-height: 1; padding-right: 0.06em; }
+.hp-02-price { font-weight: 700; font-size: clamp(17px, 1.4vw, 20px); font-variant-numeric: tabular-nums; }
+.hp-02-sub { padding-top: var(--hp-space-sm); font: 700 var(--hp-type-label)/1.3 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); }
+.hp-02-bullets { display: grid; gap: 6px; padding-top: var(--hp-space-sm); font-size: 15px; line-height: 1.45; }
+.hp-02-bullets li { position: relative; padding-left: 18px; }
+.hp-02-bullets li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--hi-black); }
+
+.hp-02-foot { display: flex; align-items: center; justify-content: space-between; gap: var(--hp-space-sm); padding-top: var(--hp-space-ms); }
+.hp-02-sizes { font-size: var(--hp-type-small); color: var(--hi-graphite); }
+
+/* kleurstaaltjes 2.0 */
+.hp-02-colors { display: flex; align-items: center; gap: 2px; }
+.hp-02-swatch { position: relative; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: none; cursor: pointer; }
+.hp-02-swatch::before { content: ""; width: 28px; height: 28px; border-radius: 50%; background: var(--hi-black); box-shadow: 0 0 0 0 var(--hi-offwhite), 0 0 0 0 var(--hi-black); transition: box-shadow var(--hp-dur-1) var(--hp-ease), transform var(--hp-dur-1) var(--hp-ease); }
+.hp-02-swatch--wit::before { background: var(--hi-white); box-shadow: inset 0 0 0 1px var(--hi-line), 0 0 0 0 var(--hi-offwhite), 0 0 0 0 var(--hi-black); }
+.hp-02-swatch--zwart[aria-pressed="true"]::before { box-shadow: 0 0 0 3px var(--hi-offwhite), 0 0 0 5px var(--hi-black); }
+.hp-02-swatch--wit[aria-pressed="true"]::before { box-shadow: inset 0 0 0 1px var(--hi-line), 0 0 0 3px var(--hi-offwhite), 0 0 0 5px var(--hi-black); }
+.hp-02-swatch:active::before { transform: scale(0.9); }
+.hp-02-colorname { margin-left: 6px; font-size: var(--hp-type-small); color: var(--hi-graphite); }
+.hp-02-colorname__wit { display: none; }
+.hp-02-card[data-color="wit"] .hp-02-colorname__wit { display: inline; }
+.hp-02-card[data-color="wit"] .hp-02-colorname__zwart { display: none; }
+
+/* vergelijkbalk */
+.hp-02-compare {
+  display: grid; gap: var(--hp-space-ms); justify-items: start; margin-top: var(--hp-space-sm);
+  padding: var(--hp-space-ms); border-radius: var(--hp-radius-media); background: var(--hi-black); color: var(--hi-white);
+}
+.hp-02-compare__text { font-weight: 700; font-size: 18px; line-height: 1.35; letter-spacing: var(--hp-type-track-body); }
+.hp-02-compare__a { color: var(--hi-yellow); }
+
+@media (hover: hover) {
+  .hp-02-media:hover .hp-02-media__mood { clip-path: inset(0); transform: scale(1.08); }
+  .hp-02-media:hover .hp-02-media__prod { transform: translateY(-8%) scale(0.9); }
+  .hp-02-swatch:hover::before { transform: scale(1.08); }
+}
+
+@media (min-width: 769px) {
+  .hp-02 { padding-block: var(--hp-space-xl); }
+  .hp-02-inner { row-gap: var(--hp-space-ml); }
+  /* subgrid: titel, label, bullets en voet staan in beide kaarten op dezelfde hoogte */
+  .hp-02-list { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); column-gap: var(--hp-space-ms); row-gap: 0; }
+  .hp-02-card { grid-row: span 5; grid-template-rows: subgrid; }
+  .hp-02-card { --hp-02-slide: 9vw; }
+  .hp-02-media { aspect-ratio: 4 / 3; }
+  .hp-02-tag { top: var(--hp-space-ms); left: var(--hp-space-ms); }
+  .hp-02-head { padding-top: var(--hp-space-md); }
+  .hp-02-bullets { font-size: 16px; }
+  .hp-02-foot { align-self: end; }
+  .hp-02-compare { grid-template-columns: minmax(0, 1fr) auto; align-items: center; margin-top: var(--hp-space-ms); padding: var(--hp-space-sm) var(--hp-space-sm) var(--hp-space-sm) var(--hp-space-md); }
+  .hp-02-compare__text { font-size: 20px; }
+}
+
+/* 1.3 (Lars 19-10) · donker naar Studio Freight: warm-donker vlak, reuzenkop over de volle breedte,
+   lichte beeldpanelen met 12px tussenruimte. De productfoto (witte grond) zakt met multiply in het off-white paneel. */
+.hp-02 { background: var(--hi-warm-dark); color: var(--hi-white); }
+.hp-02-h2 { font-size: clamp(64px, 16vw, 260px); line-height: 0.82; letter-spacing: -0.05em; }
+.hp-02-media { border: 0; background: var(--hi-offwhite); }
+.hp-02-media__prod { mix-blend-mode: multiply; filter: none; }
+.hp-02-sub, .hp-02-sizes, .hp-02-colorname { color: var(--hi-titanium); }
+.hp-02-bullets li::before { background: var(--hi-white); }
+.hp-02-tag { background: var(--hi-black); }
+.hp-02-swatch::before { background: var(--hi-black); box-shadow: inset 0 0 0 1px var(--hi-line-dark), 0 0 0 0 var(--hi-warm-dark), 0 0 0 0 var(--hi-white); }
+.hp-02-swatch--wit::before { background: var(--hi-white); }
+.hp-02-swatch--zwart[aria-pressed="true"]::before { box-shadow: inset 0 0 0 1px var(--hi-line-dark), 0 0 0 3px var(--hi-warm-dark), 0 0 0 5px var(--hi-white); }
+.hp-02-swatch--wit[aria-pressed="true"]::before { box-shadow: 0 0 0 3px var(--hi-warm-dark), 0 0 0 5px var(--hi-white); }
+.hp-02-compare { background: transparent; border: 1px solid var(--hi-line-dark); }
+.hp-02 .hp-container { max-width: none; }
+.hp-02-list { gap: var(--hp-space-md); }
+@media (min-width: 769px) {
+  .hp-02 .hp-container { padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+  .hp-02-list { column-gap: 12px; }
+  .hp-02-media { aspect-ratio: 5 / 4; }
+  .hp-02-head, .hp-02-sub, .hp-02-bullets, .hp-02-foot { padding-inline: var(--hp-space-xs); }
+}
+
+/* 1.5 (Lars 19-10) · kaarten, omschrijving en de bewijsbalk (03) in één scherm. Kop volgt het gedeelde kopblok;
+   op desktop liggen de kaarten liggend: beeld links (vierkant), tekst rechts. Zelfde containerbreedte als de rest. */
+.hp-02 { background: var(--hi-near-black); padding-block: var(--hp-space-lg) var(--hp-space-md); }
+.hp-02-inner { row-gap: 0; }
+.hp-02-headblock { margin-bottom: var(--hp-space-md); }
+.hp-02-h2 { font: 800 var(--hp-type-h2)/0.98 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); padding-right: 0; }
+.hp-02 .hp-container { max-width: calc(var(--hp-space-max) + var(--hp-space-gutter) + var(--hp-space-gutter-r)); }
+.hp-02-compare { margin-top: var(--hp-space-md); }
+@media (min-width: 769px) {
+  .hp-02 .hp-container { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
+  .hp-02-headblock { margin-bottom: var(--hp-space-ms); }
+  .hp-02-list { column-gap: var(--hp-space-ms); }
+  .hp-02-card { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); column-gap: var(--hp-space-ms); }
+  .hp-02-media { grid-column: 1; grid-row: 1 / span 5; aspect-ratio: 1; align-self: start; }
+  .hp-02-head, .hp-02-sub, .hp-02-bullets, .hp-02-foot { grid-column: 2; padding-inline: 0; }
+  .hp-02-head { padding-top: 0; }
+  .hp-02-sub { padding-top: var(--hp-space-xs); }
+  .hp-02-title { font-size: clamp(20px, 1.9vw, 30px); }
+  .hp-02-bullets { font-size: 15px; }
+  .hp-02-foot { flex-wrap: wrap; padding-top: var(--hp-space-sm); }
+  .hp-02-compare { margin-top: var(--hp-space-ms); padding-block: 8px; }
+  .hp-02-compare__text { font-size: 17px; }
+}
+
+/* 1.6 (Lars 19-10: 1.5 was te klein) · kaarten weer groter: beeld krijgt meer breedte, titels en bullets een maat groter. */
+@media (min-width: 769px) {
+  .hp-02 { padding-block: var(--hp-space-lg) var(--hp-space-ml); }
+  .hp-02-card { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
+  .hp-02-title { font-size: clamp(22px, 2.3vw, 36px); }
+  .hp-02-price { font-size: clamp(18px, 1.5vw, 22px); }
+  .hp-02-bullets { font-size: 16px; gap: 8px; }
+  .hp-02-sub { padding-top: var(--hp-space-sm); }
+  .hp-02-compare__text { font-size: 18px; }
+}
+@media (min-width: 769px) { .hp-02-head { column-gap: var(--hp-space-ms); } .hp-02-title { max-width: 12ch; } }
+
+/* 1.7 (Lars 19-10: groter; Kies je paar + bewijsbalk vullen samen precies één scherm). Kaarten weer staand,
+   het beeld krijgt de hoogte die overblijft: 100svh min kop, tekst, vergelijkbalk en de bewijsbalk (03). */
+@media (min-width: 769px) {
+  .hp-02 { display: flex; flex-direction: column; justify-content: center; min-height: calc(100svh - 56px); padding-block: var(--hp-space-md); }
+  .hp-02-headblock { margin-bottom: var(--hp-space-sm); }
+  .hp-02-card { grid-template-columns: minmax(0, 1fr); }
+  .hp-02-media { grid-column: 1; grid-row: auto; aspect-ratio: auto; width: 100%; height: clamp(240px, calc(100svh - 600px), 560px); }
+  .hp-02-head, .hp-02-sub, .hp-02-bullets, .hp-02-foot { grid-column: 1; padding-inline: var(--hp-space-xs); }
+  .hp-02-head { padding-top: var(--hp-space-sm); }
+  .hp-02-sub { padding-top: 6px; }
+  .hp-02-bullets { padding-top: var(--hp-space-xs); gap: 4px; }
+  .hp-02-title { max-width: none; }
+  .hp-02-foot { padding-top: var(--hp-space-sm); }
+  .hp-02-compare { margin-top: var(--hp-space-sm); }
+}
+
+/* 1.9 (Lars 19-10: te gespreid, niet makkelijk te lezen) · compacte kaart: beeld, dan een informatieblok in twee kolommen.
+   Links titel (met prijs ernaast), label en de drie punten; rechts maten/kleur en de knop, onderaan uitgelijnd.
+   Bullets wit en een maat groter, minder lucht tussen de regels, alles leest als één blok. */
+@media (min-width: 769px) {
+  .hp-02-list { grid-template-rows: none; row-gap: 0; align-items: start; }
+  .hp-02-card {
+    grid-row: auto; grid-template-rows: none;
+    grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "media media" "head head" "sub foot" "bul foot";
+    column-gap: var(--hp-space-ms); row-gap: 0; align-content: start;
+  }
+  .hp-02-media { grid-area: media; height: clamp(240px, calc(100svh - 560px), 520px); }
+  .hp-02-head { grid-area: head; padding: var(--hp-space-sm) 0 0; align-items: baseline; }
+  .hp-02-title { font-size: clamp(22px, 2vw, 30px); }
+  .hp-02-price { font-size: clamp(20px, 1.6vw, 26px); font-weight: 800; }
+  .hp-02-sub { grid-area: sub; padding: 6px 0 0; color: var(--hi-yellow); }
+  .hp-02-bullets { grid-area: bul; padding: var(--hp-space-xs) 0 0; gap: 2px; font-size: 16px; line-height: 1.4; color: var(--hi-white); }
+  .hp-02-foot { grid-area: foot; display: grid; justify-items: end; align-content: end; gap: var(--hp-space-xs); padding: 0; }
+  .hp-02-sizes { text-align: right; }
+  .hp-02-compare { margin-top: var(--hp-space-ms); }
+}
+@media (min-width: 769px) { .hp-02 { min-height: calc(100svh - 78px); } }
+
+/* 1.10 (Lars 19-10: iets groter en meer verticaal) · smallere, staande kaarten in het midden; het beeld wordt hoger. */
+@media (min-width: 769px) {
+  .hp-02-list { max-width: 1120px; margin-inline: auto; width: 100%; column-gap: var(--hp-space-md); }
+  .hp-02-headblock, .hp-02-compare { max-width: 1120px; margin-inline: auto; width: 100%; }
+  .hp-02-media { height: clamp(320px, calc(100svh - 470px), 640px); }
+}

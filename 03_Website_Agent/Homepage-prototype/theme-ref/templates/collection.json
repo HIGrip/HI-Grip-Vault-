@@ -1,0 +1,197 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "kop": {
+      "type": "sh-2-kop",
+      "settings": {}
+    },
+    "producten": {
+      "type": "sh-3-producten",
+      "blocks": {
+        "p1a": {
+          "type": "b1",
+          "settings": {
+            "t1": "Siliconen gripzones onder de voet"
+          }
+        },
+        "p1b": {
+          "type": "b1",
+          "settings": {
+            "t1": "Katoenmix voor elke dag en elke training"
+          }
+        },
+        "p1c": {
+          "type": "b1",
+          "settings": {
+            "t1": "Ideaal voor training, pilates en recreatief sporten"
+          }
+        },
+        "p2a": {
+          "type": "b2",
+          "settings": {
+            "t1": "15–20 mmHg compressie en 30% Coolmax®"
+          }
+        },
+        "p2b": {
+          "type": "b2",
+          "settings": {
+            "t1": "Naadloos, met versterkte hiel"
+          }
+        },
+        "p2c": {
+          "type": "b2",
+          "settings": {
+            "t1": "Gebouwd voor wedstrijd en intensieve training"
+          }
+        }
+      },
+      "block_order": [
+        "p1a",
+        "p1b",
+        "p1c",
+        "p2a",
+        "p2b",
+        "p2c"
+      ],
+      "settings": {
+        "url1": "/products/performance-gripsokken",
+        "url7": "/products/performance-gripsokken",
+        "url12": "/products/performance-gripsokken",
+        "url14": "/products/performance-gripsokken-2-0-zwart",
+        "url20": "/products/performance-gripsokken-2-0-zwart",
+        "url24": "/products/performance-gripsokken-2-0-zwart",
+        "url26": "/products/performance-gripsokken-2-0-wit",
+        "url29": "/products/performance-gripsokken-2-0-zwart",
+        "url33": "/pages/over-ons?view=vergelijken"
+      }
+    },
+    "usps": {
+      "type": "sh-4-usp-s",
+      "blocks": {
+        "u1": {
+          "type": "usp",
+          "settings": {
+            "icon": "truck",
+            "t1": "Gratis verzending",
+            "t2": "Vanaf €35"
+          }
+        },
+        "u2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "t1": "Snel in huis",
+            "t2": "Binnen 1 werkdag verzonden"
+          }
+        },
+        "u3": {
+          "type": "usp",
+          "settings": {
+            "icon": "return",
+            "t1": "30 dagen retour",
+            "t2": "Past het niet, stuur het terug"
+          }
+        }
+      },
+      "block_order": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "settings": {}
+    },
+    "info": {
+      "type": "sh-5-info-en-faq",
+      "blocks": {
+        "l1": {
+          "type": "b1",
+          "settings": {
+            "url1": "/products/performance-gripsokken",
+            "t2": "Performance Gripsokken 1.0"
+          }
+        },
+        "l2": {
+          "type": "b1",
+          "settings": {
+            "url1": "/products/performance-gripsokken-2-0-zwart",
+            "t2": "zwart"
+          }
+        },
+        "l3": {
+          "type": "b1",
+          "settings": {
+            "url1": "/products/performance-gripsokken-2-0-wit",
+            "t2": "wit"
+          }
+        },
+        "l4": {
+          "type": "b1",
+          "settings": {
+            "url1": "/pages/over-ons",
+            "t2": "Over ons"
+          }
+        },
+        "f1": {
+          "type": "b2",
+          "settings": {
+            "t1": "Welke maat heb ik nodig?",
+            "t2": "De 1.0 is er in 34–39 en 40–46. De 2.0 in 35–38, 39–42 en 43–47. Kies de maat die bij je schoenmaat past."
+          }
+        },
+        "f2": {
+          "type": "b2",
+          "settings": {
+            "t1": "Wat is het verschil tussen de 1.0 en de 2.0?",
+            "t2": "Beide hebben siliconen gripzones. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel, een ademende bovenkant en special cushioning toe."
+          }
+        },
+        "f3": {
+          "type": "b2",
+          "settings": {
+            "t1": "Wanneer heb ik mijn bestelling?",
+            "t2": "We verzenden binnen 1 werkdag. Vanaf €35 is de verzending gratis."
+          }
+        },
+        "f4": {
+          "type": "b2",
+          "settings": {
+            "t1": "Kan ik retourneren?",
+            "t2": "Ja, je hebt 30 dagen om te retourneren."
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+      ],
+      "settings": {}
+    },
+    "vertrouwen": {
+      "type": "sh-6-vertrouwen",
+      "settings": {
+        "url3": "https://nl.trustpilot.com/review/higrip.nl"
+      }
+    }
+  },
+  "order": [
+    "kop",
+    "producten",
+    "usps",
+    "info",
+    "vertrouwen"
+  ]
+}

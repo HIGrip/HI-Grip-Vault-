@@ -1,0 +1,145 @@
+[    1145ms] [WARNING] A preload for 'https://www.jlindeberg.com/cdn/shop/t/732/assets/app.css?v=160869490957356045951791829678' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute. @ https://www.jlindeberg.com/nl-nl:377
+[    7239ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7263ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7263ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7264ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7264ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7264ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7265ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    7266ms] [WARNING] Alpine Expression Error: showLoading is not defined
+
+Expression: "showLoading"
+
+ JSHandle@node @ https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:0
+[    9469ms] [LOG] [GORGIAS-CHAT] Loading chat 01HCCHVB10QTPQJWEQZ5CGP7DS... @ https://config.gorgias.chat/bundle-loader/shopify/jlindeberg-europe.myshopify.com:0
+[    9724ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://t.myvisitors.se/js?site_id=997614:0
+[    9725ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://t.myvisitors.se/js/997614:0
+[   10196ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10199ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10199ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10204ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10204ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10204ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10204ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   10205ms] ReferenceError: showLoading is not defined
+    at eval (eval at <anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5615), <anonymous>:3:32)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:5954
+    at K (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:4813)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39944
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21486)
+    at Object.Ci [as effect] (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:21271)
+    at t (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:389)
+    at https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:497
+    at Function.<anonymous> (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:39937)
+    at i (https://www.jlindeberg.com/cdn/shop/t/732/assets/app.js?v=29941506549252249991791829680:1:7188)
+[   13575ms] [INFO] Clear-Site-Data header on 'https://www.jlindeberg.com/nl-nl/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://www.jlindeberg.com/nl-nl:0
+[   19539ms] TypeError: Cannot read properties of null (reading '1')
+    at Qe (https://www.jlindeberg.com/apps/proxy/script/shopify/market/nosto.js?merchant=shopify-67433365782&market=95373820230&locale=nl:206:8293)
+    at Mm (https://www.jlindeberg.com/apps/proxy/script/shopify/market/nosto.js?merchant=shopify-67433365782&market=95373820230&locale=nl:207:1784)
+    at Wm (https://www.jlindeberg.com/apps/proxy/script/shopify/market/nosto.js?merchant=shopify-67433365782&market=95373820230&locale=nl:207:4544)
+    at Jm (https://www.jlindeberg.com/apps/proxy/script/shopify/market/nosto.js?merchant=shopify-67433365782&market=95373820230&locale=nl:207:4877)
+    at async https://www.jlindeberg.com/apps/proxy/script/shopify/market/nosto.js?merchant=shopify-67433365782&market=95373820230&locale=nl:207:5096
+    at async Promise.all (index 0)
+[   23157ms] [ERROR] Failed to load resource: the server responded with a status of 402 () @ https://www.jlindeberg.com/apps/otmacessiblyapp/widget/query-alt-tags:0
+[   23248ms] Uncaught (in promise) Error: Failed to process images: 
+    at <anonymous> (https://cdn.shopify.com/extensions/019d43d1-bbad-7de5-bd49-ea6de5e8ca58/accessibly-app-30/assets/acc-main.js:0:7145)
+    at n (https://cdn.shopify.com/extensions/019d43d1-bbad-7de5-bd49-ea6de5e8ca58/accessibly-app-30/assets/acc-main.js:0:926)
+[   27577ms] [INFO] Clear-Site-Data header on 'https://www.jlindeberg.com/nl-nl/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://www.jlindeberg.com/nl-nl:0

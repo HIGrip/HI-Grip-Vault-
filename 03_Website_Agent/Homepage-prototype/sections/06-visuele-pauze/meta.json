@@ -1,0 +1,13 @@
+{
+  "id": "06",
+  "name": "visuele-pauze",
+  "bg": "--hi-offwhite",
+  "assets": [],
+  "links": [],
+  "interactions": [
+    "scroll: de woorden van copy 06.statement kleuren één voor één van --hi-titanium naar --hi-black, gekoppeld aan de scrollpositie (0 als de alinea op 85% van het scherm binnenkomt, alles zwart als de onderkant de helft van het scherm passeert); per woord color var(--hp-dur-1) var(--hp-ease)",
+    "alleen actief in beeld (hpInView + hpOnScroll); bij het verlaten nog één update, zodat de alinea erboven volledig zwart blijft",
+    "zonder JS, zonder IntersectionObserver en bij reduced motion: geen splitsing in woorden, alles zwart"
+  ],
+  "notes": "Referentie: statement uit V9rr (refs/06). De woorden worden pas bij runtime in spans gesplitst (alleen met html.hp-motion), zodat de HTML één platte <p> is en schermlezers één zin lezen. Tussen HÏ en Grip staat een &nbsp; zodat de merknaam niet over twee regels breekt; de JS splitst alleen op gewone spaties. Grootte calc(var(--hp-type-h2) * 0.82) = 26–52px, gelijk aan de referentie clamp(26px, 3.6vw, 52px); het contract heeft geen eigen type-token voor deze maat. Geen kop, geen CTA, geen beeld; de sectie heeft daarom geen toegankelijke naam (geen landmark)."
+}

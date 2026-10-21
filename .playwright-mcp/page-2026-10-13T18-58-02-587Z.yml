@@ -1,0 +1,456 @@
+- generic [active] [ref=f87e1]:
+  - navigation [ref=f87e2]:
+    - list [ref=f87e3]:
+      - listitem [ref=f87e4]:
+        - link "Playdate" [ref=f87e5] [cursor=pointer]:
+          - /url: https://play.date/
+      - listitem [ref=f87e6]:
+        - link "Shop" [ref=f87e7] [cursor=pointer]:
+          - /url: /shop/
+      - checkbox "Show menu" [ref=f87e8] [cursor=pointer]
+      - generic:
+        - listitem:
+          - generic:
+            - searchbox "Find a game"
+        - listitem:
+          - link "Games":
+            - /url: https://play.date/games/
+        - listitem:
+          - link "Dev":
+            - /url: https://play.date/dev/
+        - listitem:
+          - link "Education":
+            - /url: /education/
+        - listitem:
+          - link "Help":
+            - /url: https://help.play.date/
+        - listitem:
+          - link "Sign In":
+            - /url: https://play.date/signin/
+  - banner [ref=f87e9]:
+    - link "Preorder Season 3" [ref=f87e11] [cursor=pointer]:
+      - /url: https://play.date/games/seasons/three/
+    - paragraph [ref=f87e12]: It's a new, tiny handheld game system with a bunch of brand-new games. We made Playdate just for fun.
+    - heading "Playdate®" [level=1] [ref=f87e13]:
+      - link "Playdate®":
+        - /url: /
+    - link "Shop Now!!" [ref=f87e15] [cursor=pointer]:
+      - /url: https://play.date/shop/
+  - main [ref=f87e16]:
+    - generic [ref=f87e17]:
+      - heading "The System." [level=2] [ref=f87e18]
+      - paragraph [ref=f87e19]:
+        - text: Playdate is familiar, but unlike anything you've ever seen. It has a
+        - strong [ref=f87e20]: very special black and white screen
+        - text: – not backlit, but super reflective – that looks way more amazing than you're probably imagining.
+      - figure [ref=f87e21]:
+        - img "An exploded view of the internals of a Playdate device." [ref=f87e22]
+      - paragraph [ref=f87e23]: It also has a peppy little processor, Wi-Fi, and a surprisingly loud loudspeaker. And when you're not using it, the screen doesn't turn off – it becomes a very nice low-power clock!
+    - generic [ref=f87e24]:
+      - heading "The Design." [level=2] [ref=f87e25]
+      - paragraph [ref=f87e26]:
+        - text: Thanks to our friends at
+        - link "Teenage Engineering" [ref=f87e27] [cursor=pointer]:
+          - /url: https://teenage.engineering/
+        - text: ","
+        - strong [ref=f87e28]: Playdate looks incredible
+        - text: . It's colorful. It fits in your pocket. And we worked hard to make sure buttons feel perfectly clicky and that the crank action is silky smooth.
+      - figure [ref=f87e29]:
+        - img "A hand holding a Playdate device." [ref=f87e30]
+    - generic [ref=f87e31]:
+      - heading "The Crank." [level=2] [ref=f87e32]
+      - paragraph [ref=f87e33]:
+        - text: Yes, the crank. Is it a gimmick? Nah. Does it charge Playdate's battery? Nope. Is it really fun? Yes yes yes.
+        - strong [ref=f87e34]: It's an analog controller that flips out from the side
+        - text: ", allowing you to precisely dial in the action. Not every game uses it, but some really do, like Crankin's Time Travel Adventure, below."
+    - generic [ref=f87e35]:
+      - heading "The Season." [level=2] [ref=f87e36]
+      - paragraph [ref=f87e37]:
+        - text: Here's the truly unique bit. Playdate isn't just an empty system.
+        - strong [ref=f87e38]:
+          - text: Once you set up your Playdate, you'll start to receive
+          - emphasis [ref=f87e39]: two
+          - text: brand new games...
+          - emphasis [ref=f87e40]: every week.
+        - text: For 12 weeks.
+      - paragraph [ref=f87e41]: That's 24 free games, in lots of genres. Some are short. Some are long. Will you love them all? Probably not. Will you have a great time trying them? Absolutely.
+      - button [ref=f87e43] [cursor=pointer]:
+        - text: Wait!
+        - emphasis [ref=f87e44]: No spoilers
+        - text: ", please!"
+      - list [ref=f87e45]:
+        - listitem [ref=f87e46] [cursor=pointer]:
+          - generic [ref=f87e47]:
+            - term [ref=f87e48]: Casual Birder
+            - definition [ref=f87e49]: by Diego Garcia, Music by Maxo
+        - listitem [ref=f87e50] [cursor=pointer]:
+          - generic [ref=f87e51]:
+            - term [ref=f87e52]: Crankin's Time Travel Adventure
+            - definition [ref=f87e53]:
+              - text: by
+              - emphasis [ref=f87e54]: uvula
+              - text: Keita Takahashi & Ryan Mohler, Shaun Inman, Matthew Grimm
+        - listitem [ref=f87e55] [cursor=pointer]:
+          - generic [ref=f87e56]:
+            - term [ref=f87e57]: Demon Quest '85
+            - definition [ref=f87e58]: by Lawrence Bishop, Alex Ashby, Duncan Fyfe
+        - listitem [ref=f87e59] [cursor=pointer]:
+          - generic [ref=f87e60]:
+            - term [ref=f87e61]: Echoic Memory
+            - definition [ref=f87e62]: by Samantha Kalman, Everest Pipkin, Carol Mertz, Rachelle Viola
+        - listitem [ref=f87e63] [cursor=pointer]:
+          - generic [ref=f87e64]:
+            - term [ref=f87e65]: Executive Golf DX
+            - definition [ref=f87e66]:
+              - text: by
+              - emphasis [ref=f87e67]: davemakes
+        - listitem [ref=f87e68] [cursor=pointer]:
+          - generic [ref=f87e69]:
+            - term [ref=f87e70]: Flipper Lifter
+            - definition [ref=f87e71]:
+              - text: by
+              - emphasis [ref=f87e72]: Serenity Forge
+        - listitem [ref=f87e73] [cursor=pointer]:
+          - generic [ref=f87e74]:
+            - term [ref=f87e75]: "Forrest Byrnes: Up In Smoke"
+            - definition [ref=f87e76]: by Christina "castpixel" Neofotistou, Nels Anderson
+        - listitem [ref=f87e77] [cursor=pointer]:
+          - generic [ref=f87e78]:
+            - term [ref=f87e79]:
+              - emphasis [ref=f87e80]: HYPER METEOR
+            - definition [ref=f87e81]:
+              - text: by
+              - emphasis [ref=f87e82]: VERTEX POP
+        - listitem [ref=f87e83] [cursor=pointer]:
+          - generic [ref=f87e84]:
+            - term [ref=f87e85]: Lost Your Marbles
+            - definition [ref=f87e86]:
+              - text: by
+              - emphasis [ref=f87e87]: Sweet Baby Inc.
+              - text: and Friends
+        - listitem [ref=f87e88] [cursor=pointer]:
+          - generic [ref=f87e89]:
+            - term [ref=f87e90]: Omaze
+            - definition [ref=f87e91]: by Gregory Kogos
+        - listitem [ref=f87e92] [cursor=pointer]:
+          - generic [ref=f87e93]:
+            - term [ref=f87e94]: Pick Pack Pup
+            - definition [ref=f87e95]: by Nic Magnier, Arthur Hamer, Music by Logan Gabriel
+        - listitem [ref=f87e96] [cursor=pointer]:
+          - generic [ref=f87e97]:
+            - term [ref=f87e98]: Questy Chess
+            - definition [ref=f87e99]:
+              - text: by
+              - emphasis [ref=f87e100]: Dadako
+        - listitem [ref=f87e101] [cursor=pointer]:
+          - generic [ref=f87e102]:
+            - term [ref=f87e103]: The Racheteer
+            - definition [ref=f87e104]: by Shaun Inman, Matthew Grimm, Charlie Davis
+        - listitem [ref=f87e105] [cursor=pointer]:
+          - generic [ref=f87e106]:
+            - term [ref=f87e107]: Sasquatchers
+            - definition [ref=f87e108]: by Chuck Jordan, Music and sound by Jared Emerson-Johnson
+        - listitem [ref=f87e109] [cursor=pointer]:
+          - generic [ref=f87e110]:
+            - term [ref=f87e111]: Saturday Edition
+            - definition [ref=f87e112]: by Chris Makris, Sound by A Shell In The Pit
+        - listitem [ref=f87e113] [cursor=pointer]:
+          - generic [ref=f87e114]:
+            - term [ref=f87e115]: Snak
+            - definition [ref=f87e116]: by Zach Gage
+        - listitem [ref=f87e117] [cursor=pointer]:
+          - generic [ref=f87e118]:
+            - term [ref=f87e119]: Spellcorked
+            - definition [ref=f87e120]: by Jada Gibbs, Nick Splendorr, Ryan Splendorr, Tony Ghostbrite, A Shell in the Pit (Em Halberstadt)
+        - listitem [ref=f87e121] [cursor=pointer]:
+          - generic [ref=f87e122]:
+            - term [ref=f87e123]: Whitewater Wipeout
+            - definition [ref=f87e124]:
+              - text: by
+              - emphasis [ref=f87e125]: Chuhai Labs
+        - listitem [ref=f87e126] [cursor=pointer]:
+          - generic [ref=f87e127]:
+            - term [ref=f87e128]: Zipper
+            - definition [ref=f87e129]: by Bennett Foddy
+        - listitem [ref=f87e130] [cursor=pointer]:
+          - generic [ref=f87e131]:
+            - term [ref=f87e132]: Boogie Loops
+            - definition [ref=f87e133]: by May-Li Khoe, Andy Matuschak, Andres Velasquez
+        - listitem [ref=f87e134] [cursor=pointer]:
+          - generic [ref=f87e135]:
+            - term [ref=f87e136]: Battleship Godios
+            - definition [ref=f87e137]:
+              - text: by
+              - emphasis [ref=f87e138]: TPM.CO SOFT WORKS
+        - listitem [ref=f87e139] [cursor=pointer]:
+          - generic [ref=f87e140]:
+            - term [ref=f87e141]: b360
+            - definition [ref=f87e142]:
+              - text: by
+              - emphasis [ref=f87e143]: Panic
+        - listitem [ref=f87e144] [cursor=pointer]:
+          - generic [ref=f87e145]:
+            - term [ref=f87e146]: Inventory Hero
+            - definition [ref=f87e147]:
+              - text: by
+              - emphasis [ref=f87e148]: Panic
+        - listitem [ref=f87e149] [cursor=pointer]:
+          - generic [ref=f87e150]:
+            - term [ref=f87e151]: Star Sled
+            - definition [ref=f87e152]:
+              - text: by
+              - emphasis [ref=f87e153]: Panic
+      - paragraph [ref=f87e154]:
+        - link "Learn more about the Season One games!" [ref=f87e155] [cursor=pointer]:
+          - /url: /games/season-one/
+    - generic [ref=f87e156]:
+      - link [ref=f87e157] [cursor=pointer]:
+        - /url: /games
+        - heading "Catalog" [level=2] [ref=f87e158]
+      - paragraph [ref=f87e159]:
+        - text: The fun continues with awesome new Playdate games made by developers around the world. You can install our favorites with
+        - link "Catalog" [ref=f87e160] [cursor=pointer]:
+          - /url: /games
+        - text: ", a little game store right on your Playdate."
+      - link "Grab some games!" [ref=f87e162] [cursor=pointer]:
+        - /url: /games
+    - generic [ref=f87e164]:
+      - generic [ref=f87e165]:
+        - heading "Your games?" [level=2] [ref=f87e166]
+        - paragraph [ref=f87e167]:
+          - text: You can also make your own Playdate games. Our SDK is free to download, no special hardware required. And with the
+          - link [ref=f87e168] [cursor=pointer]:
+            - /url: /pulp/about/
+            - strong [ref=f87e169]: Pulp
+          - text: game maker, all you need is a web browser. Plus, sideloading games onto the Playdate is easy.
+        - link "Playdate Developer Site" [ref=f87e171] [cursor=pointer]:
+          - /url: /dev/
+        - figure [ref=f87e172]:
+          - img "A trio of screenshots showing development tools in the Playdate SDK." [ref=f87e173]
+      - generic [ref=f87e174]:
+        - heading "Big Screen Optional." [level=2] [ref=f87e175]
+        - paragraph [ref=f87e176]:
+          - text: If you ever want to play Playdate games on another screen, we've got that covered with the
+          - link [ref=f87e177] [cursor=pointer]:
+            - /url: /mirror
+            - strong [ref=f87e178]: Playdate Mirror
+          - text: app. It's a desktop app that streams gameplay in real-time from your Playdate to a macOS, Windows, or Linux computer. Handy for recording your playthrough or using alternative game controllers.
+        - link "Playdate Mirror" [ref=f87e180] [cursor=pointer]:
+          - /url: /mirror
+        - figure [ref=f87e181]:
+          - img "A screenshot of the Mirror app on a laptop, with a Playdate in front of it. Both are running the same game, Ratcheteer." [ref=f87e182]
+    - generic [ref=f87e183]:
+      - heading [level=1] [ref=f87e184]:
+        - link "Playdate for Education" [ref=f87e185] [cursor=pointer]:
+          - /url: /education/
+      - heading [level=3] [ref=f87e186]:
+        - strong [ref=f87e187]: Playdate's simplicity and scope make it perfect for teaching programming and game design.
+      - text: With Playdate, students create real, playable games on a device they can hold in their hands. Students can code on their computers, test out the game on a Playdate, then go back to fine-tune. It’s experiential, project-based, learning-by-doing at its very best.
+      - paragraph
+      - paragraph [ref=f87e188]: Qualified education customers receive a 15% discount on all Playdate hardware and accessories!
+      - link "Learn More" [ref=f87e190] [cursor=pointer]:
+        - /url: /education/
+    - generic [ref=f87e191]:
+      - heading "All for just $229." [level=2] [ref=f87e192]
+      - figure [ref=f87e193]:
+        - img "The Playdate device." [ref=f87e194]
+      - paragraph [ref=f87e195]:
+        - strong [ref=f87e196]: Includes the full Season One of games
+        - text: – 24 original Playdate games, delivered weekly, at no extra charge.
+      - paragraph [ref=f87e197]: Does not include shipping. But you do get a very nice yellow USB-C to USB-A cable.
+      - link "Visit our Shop." [ref=f87e199] [cursor=pointer]:
+        - /url: https://play.date/shop/
+    - generic [ref=f87e200]:
+      - heading "And Playdate Cover" [level=2] [ref=f87e201]:
+        - generic [ref=f87e202]: And
+        - text: Playdate Cover
+      - paragraph [ref=f87e203]:
+        - text: A cute, clean way to protect your Playdate. The Playdate Cover aligns with Playdate's screws and secures itself magnetically. Plus, when folded, it looks like a delicious electronic ice cream sandwich.
+        - link "Check it out!" [ref=f87e204] [cursor=pointer]:
+          - /url: cover
+      - link "Order now for $34." [ref=f87e206] [cursor=pointer]:
+        - /url: https://play.date/shop/
+      - figure [ref=f87e207]:
+        - img "The Playdate Cover, open." [ref=f87e208]
+        - img "The Playdate Cover, closed." [ref=f87e209]
+    - generic [ref=f87e210]:
+      - heading "The Specs." [level=2] [ref=f87e211]
+      - generic [ref=f87e212]:
+        - generic [ref=f87e213]:
+          - heading "Battery" [level=3] [ref=f87e214]
+          - list [ref=f87e215]:
+            - listitem [ref=f87e216]: 14 days standby clock
+            - listitem [ref=f87e217]: 8 hours active
+        - generic [ref=f87e218]:
+          - heading "CPU" [level=3] [ref=f87e219]
+          - list [ref=f87e220]:
+            - listitem [ref=f87e221]: 168 MHz Cortex M7
+            - listitem [ref=f87e222]: SDK supports Lua, C
+        - generic [ref=f87e223]:
+          - heading "Storage" [level=3] [ref=f87e224]
+          - list [ref=f87e225]:
+            - listitem [ref=f87e226]: 16 MB RAM
+            - listitem [ref=f87e227]: 8 KB L1 Cache
+            - listitem [ref=f87e228]: 4 GB Flash
+        - generic [ref=f87e229]:
+          - heading "Size" [level=3] [ref=f87e230]
+          - list [ref=f87e231]:
+            - listitem [ref=f87e232]: 76 × 74 × 9 mm
+            - listitem [ref=f87e233]:
+              - link "See it for yourself" [ref=f87e234] [cursor=pointer]:
+                - /url: https://assets.play.date/media/playdate-flat.usdz
+        - generic [ref=f87e235]:
+          - heading "Included" [level=3] [ref=f87e236]
+          - list [ref=f87e237]:
+            - listitem [ref=f87e238]: Playdate
+            - listitem [ref=f87e239]: USB-C to A Cable
+            - listitem [ref=f87e240]: User Guide
+        - generic [ref=f87e241]:
+          - heading "Wireless" [level=3] [ref=f87e242]
+          - list [ref=f87e243]:
+            - listitem [ref=f87e244]: 802.11bgn 2.4GHz Wi-Fi
+        - generic [ref=f87e245]:
+          - heading "Sound" [level=3] [ref=f87e246]
+          - list [ref=f87e247]:
+            - listitem [ref=f87e248]: Built-In Mono Speaker
+            - listitem [ref=f87e249]: Stereo Headphone Jack
+            - listitem [ref=f87e250]: Condenser Mic + TRRS Mic In
+        - generic [ref=f87e251]:
+          - heading "Display" [level=3] [ref=f87e252]
+          - list [ref=f87e253]:
+            - listitem [ref=f87e254]: 400 × 240 1-bit
+        - generic [ref=f87e255]:
+          - heading "Inputs" [level=3] [ref=f87e256]
+          - list [ref=f87e257]:
+            - listitem [ref=f87e258]: D-Pad
+            - listitem [ref=f87e259]: A + B
+            - listitem [ref=f87e260]: Sleep + Menu
+            - listitem [ref=f87e261]: 3-Axis Accelerometer
+            - listitem [ref=f87e262]: Crank
+        - generic [ref=f87e263]:
+          - heading "Cost" [level=3] [ref=f87e264]
+          - list [ref=f87e265]:
+            - listitem [ref=f87e266]: $229
+            - listitem [ref=f87e267]: Plus Taxes & Shipping
+    - figure [ref=f87e268]:
+      - link [ref=f87e269] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-01.20c7faab3099.jpg
+        - img "Close-up of Playdate's screen." [ref=f87e271]
+      - link [ref=f87e272] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-02.36a443d7075a.jpg
+        - img "A Playdate in its retail packaging, with the box lid opened." [ref=f87e274]
+      - link [ref=f87e275] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-03.67dbaef38cb2.jpg
+        - img "Playdates." [ref=f87e277]
+      - link [ref=f87e278] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-04.7df33aa90d89.jpg
+        - img "Hands holding a Playdate and opening its cover." [ref=f87e280]
+      - link [ref=f87e281] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-05.d6179513eba3.jpg
+        - img "Playdate resting on a wooden tray next to some dice." [ref=f87e283]
+      - link [ref=f87e284] [cursor=pointer]:
+        - /url: https://play.date/static/images/gallery-06.aba5b07fbdf4.jpg
+        - img "Three Playdate devices viewed at different angles." [ref=f87e286]
+    - generic [ref=f87e287]:
+      - heading "The Idea." [level=2] [ref=f87e288]
+      - blockquote [ref=f87e289]: "\"If we made hardware, and built a tiny little game system that came with lots of surprise games, would that make people happy?\""
+    - generic [ref=f87e300]:
+      - heading "Who Made It?" [level=2] [ref=f87e301]
+      - paragraph [ref=f87e302]:
+        - text: Playdate was created by Panic. Since 1999, Panic makes
+        - link "Mac software" [ref=f87e303] [cursor=pointer]:
+          - /url: https://panic.com/
+        - text: ", and publishes video games like"
+        - link "Firewatch" [ref=f87e304] [cursor=pointer]:
+          - /url: https://firewatchgame.com/
+        - text: ","
+        - link "Untitled Goose Game" [ref=f87e305] [cursor=pointer]:
+          - /url: https://goose.game/
+        - text: ", and"
+        - 'link "Nour: Play With Your Food" [ref=f87e306] [cursor=pointer]':
+          - /url: https://food.game/
+        - text: . Learn more about it from the first episode of the
+        - link "Playdate Podcast!" [ref=f87e307] [cursor=pointer]:
+          - /url: https://podcast.play.date/episodes/s01e01/
+      - link "View Playdate Credits" [ref=f87e309] [cursor=pointer]:
+        - /url: /credits/
+    - generic [ref=f87e310]:
+      - heading "Stay in Touch!" [level=2] [ref=f87e311]
+      - form "Sign up to be notified by email about Playdate news." [ref=f87e312]:
+        - paragraph [ref=f87e313]:
+          - strong [ref=f87e314]: Sign up to get Playdate news. Only the important stuff.
+        - generic [ref=f87e315]:
+          - generic [ref=f87e316]: Email Address
+          - textbox "Your email address" [ref=f87e317]
+        - button "Submit" [ref=f87e319] [cursor=pointer]: Notify Me!
+    - generic [ref=f87e320]:
+      - heading "Need Help?" [level=2] [ref=f87e321]
+      - paragraph [ref=f87e322]: We're here. Head on over and we'll get you sorted.
+      - link "Help / Contact / FAQ" [ref=f87e324] [cursor=pointer]:
+        - /url: https://help.play.date
+  - link "Mastodon" [ref=f87e325] [cursor=pointer]:
+    - /url: https://social.panic.com/@playdate
+  - contentinfo [ref=f87e326]:
+    - list [ref=f87e327]:
+      - listitem [ref=f87e328]:
+        - text: ©
+        - link "Panic" [ref=f87e329] [cursor=pointer]:
+          - /url: https://panic.com/
+      - listitem [ref=f87e330]: Playdate is a registered trademark of Panic
+      - listitem [ref=f87e331]: 1140 SW Washington St Suite 300 Portland OR 97205
+      - listitem [ref=f87e332]:
+        - link "EU Responsible Party" [ref=f87e333] [cursor=pointer]:
+          - /url: https://help.play.date/service/eu-responsible-party/
+    - navigation [ref=f87e334]:
+      - list [ref=f87e335]:
+        - listitem [ref=f87e336]:
+          - link "Playdate" [ref=f87e337] [cursor=pointer]:
+            - /url: https://play.date
+        - listitem [ref=f87e338]:
+          - link "Games" [ref=f87e339] [cursor=pointer]:
+            - /url: /games/
+        - listitem [ref=f87e340]:
+          - link "News" [ref=f87e341] [cursor=pointer]:
+            - /url: https://news.play.date/
+        - listitem [ref=f87e342]:
+          - link "Podcast" [ref=f87e343] [cursor=pointer]:
+            - /url: https://podcast.play.date
+      - list [ref=f87e344]:
+        - listitem [ref=f87e345]:
+          - link "Developer" [ref=f87e346] [cursor=pointer]:
+            - /url: /dev/
+        - listitem [ref=f87e347]:
+          - link "Pulp" [ref=f87e348] [cursor=pointer]:
+            - /url: /pulp/
+        - listitem [ref=f87e349]:
+          - link "Education" [ref=f87e350] [cursor=pointer]:
+            - /url: /education/
+        - listitem [ref=f87e351]:
+          - link "Mirror app" [ref=f87e352] [cursor=pointer]:
+            - /url: /mirror/
+      - list [ref=f87e353]:
+        - listitem [ref=f87e354]:
+          - link "Help" [ref=f87e355] [cursor=pointer]:
+            - /url: https://help.play.date/
+        - listitem [ref=f87e356]:
+          - link "Press" [ref=f87e357] [cursor=pointer]:
+            - /url: https://help.play.date/press/who-do-i-contact-for-press-questions/
+        - listitem [ref=f87e358]:
+          - link "Privacy" [ref=f87e359] [cursor=pointer]:
+            - /url: https://panic.com/privacy/
+        - listitem [ref=f87e360]:
+          - link "Follow us" [ref=f87e361] [cursor=pointer]:
+            - /url: https://social.panic.com
+      - list [ref=f87e362]:
+        - listitem [ref=f87e363]:
+          - link "Catalog Terms of Service" [ref=f87e364] [cursor=pointer]:
+            - /url: https://help.play.date/service/catalog-end-user/
+        - listitem [ref=f87e365]:
+          - link "Refund Policy" [ref=f87e366] [cursor=pointer]:
+            - /url: https://help.play.date/service/returns/
+        - listitem [ref=f87e367]:
+          - link "Sign In" [ref=f87e368] [cursor=pointer]:
+            - /url: /signin/
+        - listitem [ref=f87e369]:
+          - link "Sign Up" [ref=f87e370] [cursor=pointer]:
+            - /url: /signup/

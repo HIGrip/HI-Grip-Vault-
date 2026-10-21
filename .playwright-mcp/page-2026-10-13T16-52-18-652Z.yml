@@ -1,0 +1,204 @@
+- generic [ref=f36e1]:
+  - dialog "Welcome to Nothing Consent Management" [ref=f36e4]:
+    - document [active] [ref=f36e5]:
+      - heading "nothing-tech-logo-cookie-banner" [level=1] [ref=f36e7]
+      - generic [ref=f36e8]:
+        - paragraph [ref=f36e10]:
+          - text: With your agreement, we and
+          - button "our 26 partners" [ref=f36e11] [cursor=pointer]
+          - text: use cookies or similar technologies to store, access, and process personal data like your visit on this website, IP addresses and cookie identifiers. Some partners do not ask for your consent to process your data and rely on their legitimate business interest. You can withdraw your consent or object to data processing based on legitimate interest at any time by clicking on “Learn More” or in our Privacy Policy on this website.
+        - paragraph [ref=f36e13]:
+          - heading "We and our partners do the following data processing:" [level=2] [ref=f36e14]
+          - generic [ref=f36e15]: Advertising, Analytics, Create profiles for personalised advertising, Create profiles to personalise content, Develop and improve services, Functional, Marketing, Measure advertising performance, Measure content performance, Social, Store and/or access information on a device, Understand audiences through statistics or combinations of data from different sources, Use limited data to select advertising, Use profiles to select personalised advertising, Use profiles to select personalised content
+      - generic [ref=f36e16]:
+        - 'button "Learn More: Configure your consents" [ref=f36e17] [cursor=pointer]': Learn More →
+        - 'button "Disagree and close: Disagree to our data processing and close" [ref=f36e18] [cursor=pointer]': Disagree and close
+        - 'button "Agree and close: Agree to our data processing and close" [ref=f36e19] [cursor=pointer]': Agree and close
+  - banner [ref=f36e20]:
+    - generic [ref=f36e22]:
+      - button [ref=f36e23] [cursor=pointer]
+      - heading "STORE LOCATOR" [level=3] [ref=f36e36]
+    - generic [ref=f36e39]:
+      - link "Explore Offers Learn More" [ref=f36e40] [cursor=pointer]:
+        - /url: /offers
+      - button "Close offers banner" [ref=f36e42] [cursor=pointer]
+  - generic [ref=f36e57]:
+    - generic [ref=f36e81]:
+      - paragraph [ref=f36e82]: "Looks like you're in:"
+      - generic [ref=f36e83]: Netherlands/Nederland
+    - generic [ref=f36e84]:
+      - paragraph [ref=f36e85]: "But you're browsing the store for:"
+      - generic [ref=f36e86]: United Kingdom
+    - generic [ref=f36e87]:
+      - link "Go to:Netherlands" [ref=f36e88] [cursor=pointer]:
+        - /url: https://nl.nothing.tech
+        - paragraph [ref=f36e89]: "Go to:"
+        - generic [ref=f36e90]: Netherlands
+      - button [ref=f36e91] [cursor=pointer]:
+        - paragraph [ref=f36e92]: Stay on
+        - text: United Kingdom
+  - main [ref=f36e93]:
+    - generic [ref=f36e95]:
+      - generic [ref=f36e103]:
+        - generic [ref=f36e104]: Autumn Sale
+        - generic [ref=f36e105]:
+          - generic [ref=f36e106]:
+            - heading "Your parcel has arrived" [level=2] [ref=f36e107]
+            - paragraph [ref=f36e109]: You’re on the way home. Your little treat for the season is on your doorstep. Well, it’s not. But it could be. Shop up to 25% off at our Autumn Sale.
+          - link "Shop sale" [ref=f36e110] [cursor=pointer]:
+            - /url: /collections/sale
+      - generic [ref=f36e121]:
+        - heading "Shop by category" [level=2] [ref=f36e123]
+        - generic [ref=f36e124]:
+          - generic [ref=f36e125]:
+            - link [ref=f36e126] [cursor=pointer]:
+              - /url: /collections/earbuds
+            - link "Earbuds" [ref=f36e129] [cursor=pointer]:
+              - /url: /collections/earbuds
+          - generic [ref=f36e137]:
+            - link [ref=f36e138] [cursor=pointer]:
+              - /url: /collections/headphones
+            - link "Headphones" [ref=f36e141] [cursor=pointer]:
+              - /url: /collections/headphones
+          - generic [ref=f36e149]:
+            - link [ref=f36e150] [cursor=pointer]:
+              - /url: /collections/phones
+            - link "Phones" [ref=f36e153] [cursor=pointer]:
+              - /url: /collections/phones
+          - generic [ref=f36e161]:
+            - link [ref=f36e162] [cursor=pointer]:
+              - /url: /collections/cmf
+            - link "CMF" [ref=f36e165] [cursor=pointer]:
+              - /url: /collections/cmf
+      - generic [ref=f36e178]:
+        - generic [ref=f36e179]:
+          - paragraph [ref=f36e180]: Headphone ( 1 ) Pro
+          - heading "Studio-level precision for our most advanced headphone ever." [level=2] [ref=f36e181]
+        - link "Discover" [ref=f36e183] [cursor=pointer]:
+          - /url: /products/headphone-1-pro
+      - generic [ref=f36e197]:
+        - heading [level=2] [ref=f36e199]:
+          - generic [ref=f36e200]: On set with V, our newGlobal Brand Ambassadorfor Headphone (1) Pro
+        - link "Discover the campaign" [ref=f36e201] [cursor=pointer]:
+          - /url: /v-global-brand-ambassador
+      - generic [ref=f36e212]:
+        - heading "Going pink?" [level=2] [ref=f36e214]
+        - generic [ref=f36e215]:
+          - generic [ref=f36e216]:
+            - link [ref=f36e217] [cursor=pointer]:
+              - /url: /products/headphone-a
+            - link "Headphone (a)" [ref=f36e220] [cursor=pointer]:
+              - /url: /products/headphone-a
+          - generic [ref=f36e228]:
+            - link [ref=f36e229] [cursor=pointer]:
+              - /url: /products/phone-4a-pro
+            - link "Phone (4a) Pro" [ref=f36e232] [cursor=pointer]:
+              - /url: /products/phone-4a-pro
+          - generic [ref=f36e240]:
+            - link [ref=f36e241] [cursor=pointer]:
+              - /url: /products/ear-3a
+            - link "Ear (3a)" [ref=f36e244] [cursor=pointer]:
+              - /url: /products/ear-3a
+      - generic [ref=f36e254]:
+        - generic [ref=f36e255]:
+          - heading "Pack your sound" [level=2] [ref=f36e256]
+          - paragraph [ref=f36e258]: Take the party everywhere with Custom EQs, 18 hours of play and next level water protection.
+        - generic [ref=f36e263]:
+          - heading "CMF Speaker M" [level=3] [ref=f36e264]
+          - generic [ref=f36e265]:
+            - paragraph [ref=f36e267]: Boosted with a two driver system for deeper bass and sharper vocals.
+            - link "Discover" [ref=f36e268] [cursor=pointer]:
+              - /url: /products/cmf-speaker-m
+        - generic [ref=f36e280]:
+          - heading "CMF Speaker S" [level=3] [ref=f36e281]
+          - generic [ref=f36e282]:
+            - paragraph [ref=f36e284]: Compact form you can take everywhere.
+            - link "Discover" [ref=f36e285] [cursor=pointer]:
+              - /url: /products/cmf-speaker-s
+      - generic [ref=f36e297]:
+        - generic:
+          - generic:
+            - generic:
+              - button
+              - button
+      - generic [ref=f36e301]:
+        - generic [ref=f36e302]: Nothing ( Charli xcx )
+        - generic [ref=f36e303]:
+          - heading "We put Charli xcx in a room for five days to test the battery on Headphone (a). It lasted the whole time." [level=2] [ref=f36e305]
+          - link "Discover Headphone (a)" [ref=f36e306] [cursor=pointer]:
+            - /url: /products/headphone-a
+      - generic [ref=f36e317]:
+        - heading "Why buy on nothing.tech" [level=2] [ref=f36e319]
+        - generic [ref=f36e320]:
+          - paragraph [ref=f36e325]: Free delivery
+          - paragraph [ref=f36e353]: 30-day returns
+          - paragraph [ref=f36e382]: Flexible payments
+          - paragraph [ref=f36e391]: Price match
+          - paragraph [ref=f36e415]: Warranty included
+      - generic [ref=f36e419]:
+        - heading "Join the community" [level=2] [ref=f36e420]
+        - generic [ref=f36e421]:
+          - paragraph [ref=f36e424]: Get updates about products, events and offers.
+          - generic [ref=f36e425]:
+            - generic [ref=f36e427]:
+              - textbox "Email address" [ref=f36e429]
+              - generic [ref=f36e430]:
+                - checkbox "You agree to our Privacy Policy and Terms" [ref=f36e432] [cursor=pointer]
+                - paragraph [ref=f36e434]:
+                  - text: You agree to our
+                  - link "Privacy Policy" [ref=f36e435] [cursor=pointer]:
+                    - /url: https://nothing.tech/pages/privacy-policy
+                  - text: and
+                  - link "Terms" [ref=f36e436] [cursor=pointer]:
+                    - /url: https://nothing.tech/pages/terms-of-sales
+              - button "Sign up" [disabled] [ref=f36e437]
+            - status [aria-hidden] [ref=f36e446]:
+              - generic [ref=f36e447]: Sign up successful
+  - contentinfo [ref=f36e448]:
+    - generic [ref=f36e449]:
+      - generic [ref=f36e450]:
+        - link "About" [ref=f36e451] [cursor=pointer]:
+          - /url: /about
+        - link "Nothing OS 5.0" [ref=f36e452] [cursor=pointer]:
+          - /url: /nothing-os
+        - link "Community" [ref=f36e453] [cursor=pointer]:
+          - /url: https://nothing.community/
+        - link "Club Nothing (R)" [ref=f36e454] [cursor=pointer]:
+          - /url: /club-nothing
+        - link "Playground" [ref=f36e455] [cursor=pointer]:
+          - /url: https://playground.nothing.tech/
+        - link "Offers" [ref=f36e456] [cursor=pointer]:
+          - /url: /offers
+      - generic [ref=f36e457]:
+        - link [ref=f36e458] [cursor=pointer]:
+          - /url: /pages/support-centre
+          - button "Support" [ref=f36e459]
+        - button "Newsletter" [ref=f36e472] [cursor=pointer]
+        - link [ref=f36e499] [cursor=pointer]:
+          - /url: /support/business-enquiry
+          - button "Business Sales Enquiries" [ref=f36e500]
+        - 'button "Store: United Kingdom" [ref=f36e511] [cursor=pointer]'
+        - 'button "Language: EN" [ref=f36e535] [cursor=pointer]'
+        - button "Consent Preferences" [ref=f36e543] [cursor=pointer]
+    - generic [ref=f36e551]:
+      - navigation [ref=f36e552]:
+        - generic [ref=f36e553]:
+          - link "Account" [ref=f36e554] [cursor=pointer]:
+            - /url: /account
+          - link "Contact" [ref=f36e555] [cursor=pointer]:
+            - /url: /pages/contact-support
+          - link "Careers" [ref=f36e556] [cursor=pointer]:
+            - /url: https://careers.nothing.tech/
+          - link "Legal" [ref=f36e557] [cursor=pointer]:
+            - /url: /pages/privacy-policy
+      - navigation [ref=f36e558]:
+        - generic [ref=f36e559]:
+          - link "Instagram" [ref=f36e560] [cursor=pointer]:
+            - /url: https://www.instagram.com/nothing/?hl=en
+          - link "YouTube" [ref=f36e561] [cursor=pointer]:
+            - /url: https://youtube.com/c/NothingTechnology
+          - link "X" [ref=f36e562] [cursor=pointer]:
+            - /url: https://twitter.com/nothing
+          - link "TikTok" [ref=f36e563] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@nothing
+  - textbox

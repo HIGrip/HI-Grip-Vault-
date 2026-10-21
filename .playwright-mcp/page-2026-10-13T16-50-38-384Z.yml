@@ -1,0 +1,1279 @@
+- generic [active] [ref=f13e1]:
+  - navigation "Wereldwijd" [ref=f13e3]:
+    - list [ref=f13e5]:
+      - listitem [ref=f13e6]:
+        - link "Apple" [ref=f13e7] [cursor=pointer]:
+          - /url: /nl/
+      - listitem [ref=f13e8]:
+        - generic [ref=f13e10]:
+          - list [ref=f13e12]:
+            - listitem [ref=f13e13]:
+              - link "Store" [ref=f13e14] [cursor=pointer]:
+                - /url: /nl/shop/goto/store
+            - listitem:
+              - button "Menu Store"
+          - list [ref=f13e17]:
+            - listitem [ref=f13e18]:
+              - link "Mac" [ref=f13e19] [cursor=pointer]:
+                - /url: /nl/mac/
+            - listitem:
+              - button "Menu Mac"
+          - list [ref=f13e22]:
+            - listitem [ref=f13e23]:
+              - link "iPad" [ref=f13e24] [cursor=pointer]:
+                - /url: /nl/ipad/
+            - listitem:
+              - button "Menu iPad"
+          - list [ref=f13e27]:
+            - listitem [ref=f13e28]:
+              - link "iPhone" [ref=f13e29] [cursor=pointer]:
+                - /url: /nl/iphone/
+            - listitem:
+              - button "Menu iPhone"
+          - list [ref=f13e32]:
+            - listitem [ref=f13e33]:
+              - link "Watch" [ref=f13e34] [cursor=pointer]:
+                - /url: /nl/watch/
+            - listitem:
+              - button "Menu Watch"
+          - list [ref=f13e37]:
+            - listitem [ref=f13e38]:
+              - link "AirPods" [ref=f13e39] [cursor=pointer]:
+                - /url: /nl/airpods/
+            - listitem:
+              - button "Menu AirPods"
+          - list [ref=f13e42]:
+            - listitem [ref=f13e43]:
+              - link "Woning" [ref=f13e44] [cursor=pointer]:
+                - /url: /nl/home/
+            - listitem:
+              - button "Woning-menu"
+          - list [ref=f13e47]:
+            - listitem [ref=f13e48]:
+              - link "Entertainment" [ref=f13e49] [cursor=pointer]:
+                - /url: /nl/entertainment/
+            - listitem:
+              - button "Menu Entertainment"
+          - list [ref=f13e52]:
+            - listitem [ref=f13e53]:
+              - link "Accessoires" [ref=f13e54] [cursor=pointer]:
+                - /url: /nl/shop/goto/buy_accessories
+            - listitem:
+              - button "Menu accessoires"
+          - list [ref=f13e57]:
+            - listitem [ref=f13e58]:
+              - link "Support" [ref=f13e59] [cursor=pointer]:
+                - /url: https://support.apple.com/nl-nl/?cid=gn-ols-home-hp-tab
+            - listitem:
+              - button "Menu Support"
+      - listitem [ref=f13e61]:
+        - button "Zoeken op apple.com" [ref=f13e62] [cursor=pointer]
+      - listitem [ref=f13e63]:
+        - button "Winkelmandje" [ref=f13e65] [cursor=pointer]
+  - navigation "Local":
+    - generic:
+      - generic:
+        - generic:
+          - link "AirPods Pro 3":
+            - /url: /nl/airpods-pro/
+        - generic:
+          - generic:
+            - list:
+              - listitem:
+                - link "Overzicht" [disabled]
+              - listitem:
+                - link "Gehoorgezondheid":
+                  - /url: /nl/airpods-pro/hearing-health/
+              - listitem:
+                - link "Specificaties":
+                  - /url: /nl/airpods-pro/specs/
+              - listitem:
+                - link "Vergelijk":
+                  - /url: /nl/airpods-pro/compare/
+          - generic:
+            - generic:
+              - link "Koop AirPods Pro 3":
+                - /url: /nl/shop/goto/buy_airpods/airpods_pro_3
+                - text: Koop
+                - generic: AirPods Pro 3
+  - main [ref=f13e67]:
+    - generic [ref=f13e68]:
+      - generic [ref=f13e71]:
+        - generic [ref=f13e72]:
+          - heading "AirPods Pro 3" [level=1] [ref=f13e73]
+          - heading "’s Werelds beste in‑ear Actieve Ruisonderdrukking." [level=2] [ref=f13e74]
+          - paragraph [ref=f13e76]:
+            - text: Tot 2x meer dan AirPods Pro 2.
+            - superscript [ref=f13e77]:
+              - link "Voetnoot 1" [ref=f13e78] [cursor=pointer]:
+                - /url: "#footnote-1"
+                - text: "1"
+        - generic [ref=f13e80]:
+          - generic:
+            - paragraph
+          - link "Koop AirPods Pro 3" [ref=f13e81] [cursor=pointer]:
+            - /url: /nl/shop/goto/buy_airpods/airpods_pro_3
+            - text: Koop
+      - generic [ref=f13e82]:
+        - img "AirPods Pro 3, linker- en rechteroortje, kleur wit, siliconen oortips, animation" [ref=f13e84]
+        - generic [ref=f13e85]:
+          - button [aria-hidden]
+    - generic [ref=f13e86]:
+      - heading "De highlights op een rij." [level=2] [ref=f13e89]
+      - generic [ref=f13e90]:
+        - generic [ref=f13e91]:
+          - button "Speel overzicht highlights af" [ref=f13e95] [cursor=pointer]
+          - tablist "belangrijkste features" [ref=f13e103]:
+            - link "Ruimtelijke Audio in HD":
+              - /url: "#highlights-gallery-item-1"
+            - link "Gloednieuwe hartslagmeting" [ref=f13e104] [cursor=pointer]:
+              - /url: "#highlights-gallery-item-2"
+            - link "Klinkt nog beter" [ref=f13e106] [cursor=pointer]:
+              - /url: "#highlights-gallery-item-3"
+            - link "Gehoorapparaat-feature" [ref=f13e108] [cursor=pointer]:
+              - /url: "#highlights-gallery-item-5"
+            - link "8 uur luistertijd" [ref=f13e110] [cursor=pointer]:
+              - /url: "#highlights-gallery-item-6"
+        - list [ref=f13e114]:
+          - listitem [ref=f13e115]:
+            - generic [ref=f13e116]:
+              - paragraph [ref=f13e118]:
+                - text: Een adembenemende luisterervaring dankzij ongekend heldere 3D-audio.
+                - superscript [ref=f13e119]:
+                  - link "Voetnoot 4" [ref=f13e120] [cursor=pointer]:
+                    - /url: "#footnote-4"
+                    - text: "4"
+              - img "Een danser die AirPods Pro 3 draagt, beweegt met gespreide armen op een beat" [ref=f13e123]
+          - listitem [ref=f13e124]:
+            - generic [ref=f13e125]:
+              - paragraph [ref=f13e127]:
+                - text: Gloednieuwe hartslagmeting. Track nu tijdens je work-outs je hartslag en verbrande calorieën.
+                - superscript [ref=f13e128]:
+                  - link "Voetnoot 5" [ref=f13e129] [cursor=pointer]:
+                    - /url: "#footnote-5"
+                    - text: "5"
+              - img "AirPods Pro 3, kleur wit, onderste schermhelft van een iPhone 17 Pro, Conditie-app, feature voor hartslagmeting" [ref=f13e132]
+          - listitem [ref=f13e133]:
+            - generic [ref=f13e134]:
+              - paragraph [ref=f13e136]:
+                - text: Compleet nieuw ontworpen. Past nog beter. Klinkt nog beter.
+                - superscript [ref=f13e137]:
+                  - link "Voetnoot 2" [ref=f13e138] [cursor=pointer]:
+                    - /url: "#footnote-2"
+                    - text: "2"
+              - img "AirPods Pro 3 in het oor van een danser die handsfree naar iets luistert" [ref=f13e141]
+          - listitem [ref=f13e142]:
+            - generic [ref=f13e143]:
+              - paragraph [ref=f13e145]:
+                - text: De feature Gehoorapparaat
+                - superscript [ref=f13e146]:
+                  - link "Voetnoot 6" [ref=f13e147] [cursor=pointer]:
+                    - /url: "#footnote-6"
+                    - text: "6"
+                - text: heeft nu automatische Gespreksversterking
+                - superscript [ref=f13e148]:
+                  - link "Voetnoot 7" [ref=f13e149] [cursor=pointer]:
+                    - /url: "#footnote-7"
+                    - text: "7"
+                - text: en een batterij die 67% langer meegaat in de Transparantiemodus.
+                - superscript [ref=f13e150]:
+                  - link "Voetnoot 8" [ref=f13e151] [cursor=pointer]:
+                    - /url: "#footnote-8"
+                    - text: "8"
+              - img "Iemand met AirPods Pro 3 in; rondom het oor zijn pulserende golven afgebeeld, animation" [ref=f13e153]
+          - listitem [ref=f13e156]:
+            - generic [ref=f13e157]:
+              - paragraph [ref=f13e159]:
+                - text: Tot wel 8 uur luistertijd met Actieve Ruisonderdrukking na één keer opladen.
+                - superscript [ref=f13e160]:
+                  - link "Voetnoot 3" [ref=f13e161] [cursor=pointer]:
+                    - /url: "#footnote-3"
+                    - text: "3"
+              - img "Bliksemschicht, groene achtergond, animation" [ref=f13e163]
+    - generic [ref=f13e166]:
+      - generic [ref=f13e168]:
+        - heading "AirPods Pro 3 van dichtbij." [level=2] [ref=f13e169]
+        - generic:
+          - list:
+            - listitem: 
+      - region "productweergave" [ref=f13e170]:
+        - generic:
+          - img "AirPods Pro 3, linker- en rechteroortje, kleur wit, siliconen oortips"
+          - list [ref=f13e179]:
+            - listitem [ref=f13e180]:
+              - button [ref=f13e181] [cursor=pointer]:
+                - generic [ref=f13e182]: Geluidskwaliteit
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Geluidskwaliteit.
+                      - text: Een nieuwe akoestische architectuur met meerdere poorten zorgt voor diepere bassen, een nog ruimtelijkere sound en kraakheldere, levendige zangstemmen. Zo mis je geen noot.
+            - listitem [ref=f13e187]:
+              - button [ref=f13e188] [cursor=pointer]:
+                - generic [ref=f13e189]: Pasvorm
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Pasvorm.
+                      - text: De naar binnen gedraaide oortips blijven beter zitten.
+                      - superscript:
+                        - link:
+                          - /url: "#footnote-2"
+                          - text: "2"
+                      - text: En een nieuwe laag microscopische schuimbolletjes onderdrukt nog meer ruis.
+            - listitem [ref=f13e194]:
+              - button [ref=f13e195] [cursor=pointer]:
+                - generic [ref=f13e196]: Hartslagmeting
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Hartslagmeting.
+                      - text: Onze kleinste hartslagsensor ooit geeft onzichtbare lichtpulsen af voor nauwkeurige meetwaarden tijdens al je work‑outs, van sportschool tot atletiekbaan.
+                      - superscript:
+                        - link:
+                          - /url: "#footnote-5"
+                          - text: "5"
+            - listitem [ref=f13e201]:
+              - button [ref=f13e202] [cursor=pointer]:
+                - generic [ref=f13e203]: Stof-, zweet- en waterbestendig
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Stof-, zweet- en waterbestendig.
+                      - text: AirPods Pro 3 zijn de eerste AirPods die voldoen aan de IP57-norm. Zo zijn ze bestand tegen de zweterigste work-outs en zelfs een onverwachte hoosbui.
+                      - superscript:
+                        - link:
+                          - /url: "#footnote-9"
+                          - text: "9"
+            - listitem [ref=f13e208]:
+              - button [ref=f13e209] [cursor=pointer]:
+                - generic [ref=f13e210]: Druksensor met volumeregeling door te swipen
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Druksensor met volumeregeling door te swipen.
+                      - text: Gebruik eenvoudige gebaren zoals drukken om af te spelen, of swipen om het volume aan te passen. En met de camerabediening is een foto of video zo gemaakt.
+                      - superscript:
+                        - link:
+                          - /url: "#footnote-10"
+                          - text: "10"
+            - listitem [ref=f13e215]:
+              - button [ref=f13e216] [cursor=pointer]:
+                - generic [ref=f13e217]: Oplaadcase
+              - generic [aria-hidden]:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: Oplaadcase.
+                      - text: Dankzij geavanceerde Ultra Wideband-technologie kun je met Nauwkeurig Zoeken 1,5x verder zoeken.
+                      - superscript:
+                        - link:
+                          - /url: "#footnote-11"
+                          - text: "11"
+                      - text: Zo vind je altijd makkelijk je AirPods terug.
+    - generic [ref=f13e222]:
+      - generic [ref=f13e223]:
+        - generic [ref=f13e224]:
+          - 'img "Kring van geluidsrimpelingen, tekst in het midden luidt: Intelligente geluidsbeheersing. Het beste wat je nog nooit hebt gehoord." [ref=f13e227]'
+          - generic [ref=f13e229]:
+            - heading "Intelligente geluidsbeheersing" [level=2] [ref=f13e230]
+            - heading "Het beste wat je nog nooit hebt gehoord." [level=3] [ref=f13e231]
+          - generic [ref=f13e233]:
+            - button [aria-hidden]
+        - generic [ref=f13e234]:
+          - generic [ref=f13e235]:
+            - text: Dankzij
+            - strong [ref=f13e236]: ’s werelds beste in-ear Actieve Ruisonderdrukking
+            - text: klinkt alles meeslepender dan ooit.
+            - superscript [ref=f13e237]:
+              - link "Voetnoot 12" [ref=f13e238] [cursor=pointer]:
+                - /url: "#footnote-12"
+                - text: "12"
+            - text: AirPods Pro 3 sluiten je gehoorgang beter af en passen zich automatisch aan je voorkeuren aan. En de nieuwe extreem gevoelige microfoons dempen nog meer ongewenst geluid. Je hoort dus alleen wat je wilt horen, in een ongehoorde geluidskwaliteit.
+          - generic [ref=f13e239]:
+            - figure [ref=f13e240]:
+              - generic [ref=f13e241]:
+                - generic [ref=f13e242]: Dempt tot wel
+                - generic [ref=f13e243]: 2x meer
+                - generic [ref=f13e244]:
+                  - text: ongewenst geluid dan AirPods Pro 2
+                  - superscript [ref=f13e245]:
+                    - link "Voetnoot 1" [ref=f13e246] [cursor=pointer]:
+                      - /url: "#footnote-1"
+                      - text: "1"
+            - figure [ref=f13e247]:
+              - generic [ref=f13e248]:
+                - generic [ref=f13e249]: Dempt tot wel
+                - generic [ref=f13e250]: 4x meer
+                - generic [ref=f13e251]:
+                  - text: ongewenst geluid dan de eerste generatie AirPods Pro
+                  - superscript [ref=f13e252]:
+                    - link "Voetnoot 13" [ref=f13e253] [cursor=pointer]:
+                      - /url: "#footnote-13"
+                      - text: "13"
+        - list "Overzicht Geluidsbeheersing" [ref=f13e258]:
+          - listitem [ref=f13e259]:
+            - generic [ref=f13e260]:
+              - heading [level=3] [ref=f13e261]:
+                - strong [ref=f13e262]: Nieuwe extreem gevoelige microfoons.
+              - paragraph [ref=f13e263]: Dankzij geavanceerde computational audio filteren AirPods Pro 3 nog meer afleidende ruis uit je omgeving. Voor totale focus, of ultieme ontspanning. En vijf gloednieuwe oortips, inclusief een XXS-optie, combineren een dunne, zachte schuimlaag met een siliconen omhulsel voor een nog betere akoestiek.
+            - img "AirPods Pro 3, microfoon met ruisonderdrukking" [ref=f13e267]
+          - listitem [ref=f13e268]:
+            - generic [ref=f13e269]:
+              - heading [level=3] [ref=f13e270]:
+                - strong [ref=f13e271]: Stemisolatie.
+              - paragraph [ref=f13e272]:
+                - text: AirPods Pro 3 filteren achtergrondgeluiden en isoleren stemmen tijdens telefoontjes. Zo kun je elk gesprek luid en duidelijk volgen. Of je nu in de bus zit, of in het café.
+                - superscript [ref=f13e273]:
+                  - link "Voetnoot 21" [ref=f13e274] [cursor=pointer]:
+                    - /url: "#footnote-21"
+                    - text: "21"
+            - img "AirPods Pro 3, kleur wit, microfoon met ruisonderdrukking, siliconen oortip, korte steel" [ref=f13e278]
+          - listitem [ref=f13e279]:
+            - generic [ref=f13e280]:
+              - heading [level=3] [ref=f13e281]:
+                - strong [ref=f13e282]: Adaptieve Audio.
+              - paragraph [ref=f13e283]:
+                - text: AirPods Pro 3 combineren Actieve Ruisonderdrukking met een ongekende Transparantie. Zo klinken je stem en de wereld om je heen natuurlijker en levendiger. Het geluid wordt slim aangepast aan je omgeving, zodat je precies hoort wat je moet horen.
+                - superscript [ref=f13e284]:
+                  - link "Voetnoot 20" [ref=f13e285] [cursor=pointer]:
+                    - /url: "#footnote-20"
+                    - text: "20"
+            - img "stemisolatie" [ref=f13e289]
+          - listitem [ref=f13e290]:
+            - generic [ref=f13e291]:
+              - heading [level=3] [ref=f13e292]:
+                - strong [ref=f13e293]: Gespreksdetectie.
+              - paragraph [ref=f13e294]:
+                - text: AirPods Pro 3 merken het wanneer je met iemand in gesprek bent en verlagen dan automatisch het volume van waar je op dat moment naar luistert. Uitgepraat? Dan gaat het volume vanzelf weer omhoog.
+                - superscript [ref=f13e295]:
+                  - link "Voetnoot 14" [ref=f13e296] [cursor=pointer]:
+                    - /url: "#footnote-14"
+                    - text: "14"
+            - 'img "Geluidsgolven als kleurrijke bogen, boven en onder, tekst in het midden luidt: Gespreksdetectie" [ref=f13e300]'
+      - generic [ref=f13e301]:
+        - generic [ref=f13e303]:
+          - generic [ref=f13e304]:
+            - heading "Audioprestaties" [level=2] [ref=f13e305]
+            - heading "Muziekwetenschap." [level=3] [ref=f13e306]
+          - paragraph [ref=f13e308]: Het akoestische binnenwerk van AirPods Pro 3, met de krachtige H2‑chip van Apple, is volledig vernieuwd. Het resultaat? Adembenemend geluid dat je overal om je heen hoort, van je favoriete playlist tot je FaceTimegesprekken.
+        - generic [ref=f13e309]:
+          - generic:
+            - generic:
+              - img "AirPods Pro 3, linker en rechter draadloze oortjes, animatie"
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: De nieuwe akoestische architectuur met meerdere poorten
+                      - text: en een beter gereguleerde luchtstroom heeft een microfoon aan de binnenkant, precies op de gehoorgang gericht. Zo hoor je diepere bassen, heldere zangstemmen en een nog ruimtelijkere sound, waardoor je geen noot mist.
+                - generic:
+                  - generic:
+                    - paragraph:
+                      - strong: De speciaal ontwikkelde speakerdriver en versterker
+                      - text: zorgen samen met de H2‑chip voor hoogwaardig 3D‑geluid met minimale vervorming.
+              - generic:
+                - generic:
+                  - img "AirPods Pro 3, draadloos oortje, transparant, akoestische architectuur"
+      - generic [ref=f13e311]:
+        - generic [ref=f13e312]:
+          - generic [ref=f13e313]:
+            - heading "Gepersonaliseerd luisteren" [level=2] [ref=f13e314]
+            - heading "Alleen voor jouw oren bestemd." [level=3] [ref=f13e315]
+          - paragraph [ref=f13e317]:
+            - text: AirPods Pro 3 bevatten geavanceerde Adaptieve EQ, dat geluid helemaal afstemt op de unieke vorm van jouw oren. En Gepersonaliseerd Volume begrijpt dankzij machinelearning wat jouw luistervoorkeuren zijn. Na verloop van tijd wordt het geluid daarop afgestemd.
+            - superscript [ref=f13e318]:
+              - link "Voetnoot 14" [ref=f13e319] [cursor=pointer]:
+                - /url: "#footnote-14"
+                - text: "14"
+        - img "AirPods Pro 3 in het oor van een danser die handsfree naar iets luistert" [ref=f13e322]
+        - generic [ref=f13e324]:
+          - paragraph [ref=f13e329]:
+            - strong [ref=f13e330]: Adaptieve EQ
+            - text: stemt muziek in real time af op de vorm van je oren met behulp van microfoons aan de binnenkant. En met de nieuwe Aangepaste EQ en drie intuïtieve regelaars creëer je moeiteloos jouw perfecte sound.
+          - paragraph [ref=f13e335]:
+            - strong [ref=f13e336]: Gepersonaliseerde Ruimtelijke Audio
+            - text: maakt met de TrueDepth-camera van je iPhone een persoonlijk profiel van je hoofd, voor een meeslepend geluid dat helemaal op jou is afgestemd.
+          - paragraph [ref=f13e341]:
+            - strong [ref=f13e342]: Dynamische hoofdtracking
+            - text: geeft je het gevoel dat iedereen in dezelfde ruimte zit, of je nu aan het gamen bent met vrienden of aan het FaceTimen met je familie.
+            - superscript [ref=f13e343]:
+              - link "Voetnoot 4" [ref=f13e344] [cursor=pointer]:
+                - /url: "#footnote-4"
+                - text: "4"
+      - generic [ref=f13e346]:
+        - generic [ref=f13e348]:
+          - heading "Conditie" [level=2] [ref=f13e349]
+          - 'heading "Nieuw: hartslagmeting." [level=3] [ref=f13e350]'
+        - generic [ref=f13e351]:
+          - generic [ref=f13e352]:
+            - img "AirPods Pro 3, draadloos oortje, kleur wit, zijkant, korte, buisvormige steel, pulserende golf, animation" [ref=f13e355]
+            - generic [ref=f13e357]:
+              - button [aria-hidden]
+          - paragraph [ref=f13e359]:
+            - strong [ref=f13e360]: Compleet nieuwe hartslagmeting
+            - text: helpt je om tijdens work-outs je hartslag en verbrande calorieën te tracken.
+            - superscript [ref=f13e361]:
+              - link "Voetnoot 5" [ref=f13e362] [cursor=pointer]:
+                - /url: "#footnote-5"
+                - text: "5"
+            - text: AirPods Pro 3 combineren leds die 256 keer per seconde een onzichtbare lichtpuls afgeven met feedback van de versnellingsmeters. Zo krijg je uiterst nauwkeurige gegevens voor meer dan 50 verschillende work-outs in de Conditie‑app. En dankzij de betere in-ear pasvorm kun jij je uitleven zonder je oortjes te verliezen.
+        - generic [ref=f13e364]:
+          - paragraph [ref=f13e367]:
+            - strong [ref=f13e368]: Conditie-app.
+            - text: Meer dan AirPods Pro 3 en je iPhone heb je niet nodig om helemaal op te gaan in de vernieuwde Conditie‑app, met work-outs voor wandelen, fietsen, HIIT en meer. Laat je favoriete muziek en podcasts automatisch afspelen zodra je een work‑out start. En met toegang tot je Activiteiten-ring voor Bewegen en de Prestatiebalk in Fitness+ ben je niet meer te stoppen.
+          - generic [ref=f13e371]:
+            - img "Druppelsymbool op zwarte cirkel" [ref=f13e374]
+            - generic [ref=f13e375]:
+              - heading "Stof-, zweet- en waterbestendig volgens IP57." [level=3] [ref=f13e376]
+              - paragraph [ref=f13e377]:
+                - text: AirPods Pro 3 zijn de eerste AirPods die voldoen aan de IP57‑norm. Dat maakt ze robuuster dan ooit.
+                - superscript [ref=f13e378]:
+                  - link "Voetnoot 9" [ref=f13e379] [cursor=pointer]:
+                    - /url: "#footnote-9"
+                    - text: "9"
+                - text: Dankzij precisietechniek en grondige testprocedures kun jij je in de zweterigste work‑outs storten.
+          - img "Een hardloper met AirPods Pro 3" [ref=f13e381]
+      - generic [ref=f13e383]:
+        - generic [ref=f13e385]:
+          - generic [ref=f13e386]:
+            - generic [ref=f13e387]:
+              - heading "Gehoorgezondheid" [level=2] [ref=f13e388]
+              - heading "Test en ondersteun je gehoor." [level=3] [ref=f13e389]
+            - paragraph [ref=f13e391]:
+              - text: Met AirPods Pro 3 wordt ’s werelds eerste alles‑in‑één-oplossing voor je gehoorgezondheid nog beter.
+              - superscript [ref=f13e392]:
+                - link "Voetnoot 6" [ref=f13e393] [cursor=pointer]:
+                  - /url: "#footnote-6"
+                  - text: "6"
+              - text: Zo kun je de wetenschappelijk onderbouwde Gehoortest nu onder nog meer omstandigheden uitvoeren. Voor de Gehoorapparaat-feature is de helderheid van het stemgeluid verbeterd en wordt automatisch Gespreksversterking ingeschakeld.
+              - superscript [ref=f13e394]:
+                - link "Voetnoot 7" [ref=f13e395] [cursor=pointer]:
+                  - /url: "#footnote-7"
+                  - text: "7"
+              - text: Bovendien gaat de batterij na één keer volledig opladen tot wel 67% langer mee in de Transparantiemodus.
+              - superscript [ref=f13e396]:
+                - link "Voetnoot 8" [ref=f13e397] [cursor=pointer]:
+                  - /url: "#footnote-8"
+                  - text: "8"
+              - text: En met actieve Gehoorbescherming kun je voorkomen dat je aan hard geluid wordt blootgesteld.
+              - superscript [ref=f13e398]:
+                - link "Voetnoot 15" [ref=f13e399] [cursor=pointer]:
+                  - /url: "#footnote-15"
+                  - text: "15"
+          - generic [ref=f13e400]:
+            - img "Iemand met AirPods Pro 3 in; rondom het oor zijn geluidsgolven afgebeeld, animation" [ref=f13e402]
+            - generic [ref=f13e407]:
+              - button [aria-hidden]
+        - list "Overzicht Gehoorgezondheid" [ref=f13e412]:
+          - listitem [ref=f13e413]:
+            - generic [ref=f13e414]:
+              - heading [level=3] [ref=f13e415]:
+                - strong [ref=f13e416]: Batterijduur.
+              - paragraph [ref=f13e417]:
+                - text: Gebruik je Gehoorapparaat met Transparantie, dan gaat de batterij na één keer opladen tot wel 67% langer mee. Dat is tot wel 10 uur in totaal, zodat je deze baanbrekende feature nu op elk moment van de dag kunt gebruiken.
+                - superscript [ref=f13e418]:
+                  - link "Voetnoot 8" [ref=f13e419] [cursor=pointer]:
+                    - /url: "#footnote-8"
+                    - text: "8"
+            - generic [ref=f13e420]:
+              - generic [ref=f13e421]:
+                - generic [ref=f13e422]:
+                  - img "Bliksemschicht, groene achtergond, animation" [ref=f13e423]
+                  - generic [ref=f13e426]:
+                    - button [aria-hidden]
+                - paragraph [ref=f13e427]:
+                  - strong [ref=f13e428]: 4 uur meer
+                  - text: voor de Gehoorapparaat-feature
+                  - superscript [ref=f13e429]:
+                    - link "Voetnoot 8" [ref=f13e430] [cursor=pointer]:
+                      - /url: "#footnote-8"
+                      - text: "8"
+              - paragraph
+          - listitem [ref=f13e431]:
+            - generic [ref=f13e432]:
+              - heading [level=3] [ref=f13e433]:
+                - strong [ref=f13e434]: Automatische Gespreksversterking.
+              - paragraph [ref=f13e435]:
+                - text: Als je in een druk restaurant of kantoor aan het praten bent, laat Gespreksversterking automatisch de stem van je gesprekspartner harder klinken. Tegelijk worden afleidende geluiden om je heen zoveel mogelijk weggefilterd. Dankzij de nieuwe microfoons, transducer en versterker klinkt je stem bovendien helderder en natuurlijker dan ooit.
+                - superscript [ref=f13e436]:
+                  - link "Voetnoot 7" [ref=f13e437] [cursor=pointer]:
+                    - /url: "#footnote-7"
+                    - text: "7"
+            - img "gespreksversterking" [ref=f13e441]
+          - listitem [ref=f13e442]:
+            - generic [ref=f13e443]:
+              - heading [level=3] [ref=f13e444]:
+                - strong [ref=f13e445]: Gehoortest en Gehoorapparaat.
+              - paragraph [ref=f13e446]:
+                - text: Met de verbeterde pasvorm en sterkere ruisonderdrukking is het nu mogelijk om een wetenschappelijk onderbouwde Gehoortest te doen, in nog meer alledaagse situaties. Gewoon bij je thuis. En als je licht tot matig gehoorverlies hebt, kun je overal de vernieuwde Gehoorapparaat-feature gebruiken.
+                - superscript [ref=f13e447]:
+                  - link "Voetnoot 6" [ref=f13e448] [cursor=pointer]:
+                    - /url: "#footnote-6"
+                    - text: "6"
+            - img "Blauwe cirkelvormige geluidsgolf" [ref=f13e452]
+          - listitem [ref=f13e453]:
+            - generic [ref=f13e454]:
+              - heading [level=3] [ref=f13e455]:
+                - strong [ref=f13e456]: Gehoorbescherming.
+              - paragraph [ref=f13e457]:
+                - text: Met actieve Gehoorbescherming en de passieve ruisonderdrukking van de oortips kun je voorkomen dat je aan hard geluid wordt blootgesteld. Dankzij machinelearning op de H2‑chip wordt ruis 48.000 keer per seconde actief gereguleerd. En tegelijkertijd blijft alles waar je naar luistert natuurlijk en levendig klinken.
+                - superscript [ref=f13e458]:
+                  - link "Voetnoot 15" [ref=f13e459] [cursor=pointer]:
+                    - /url: "#footnote-15"
+                    - text: "15"
+            - img "Blauwe balken die de mate van Gehoorbescherming aangeven" [ref=f13e463]
+      - generic [ref=f13e465]:
+        - generic [ref=f13e467]:
+          - generic [ref=f13e468]:
+            - heading "Beleving" [level=2] [ref=f13e469]
+            - heading "Als magie in je oren." [level=3] [ref=f13e470]
+          - paragraph [ref=f13e472]: "AirPods Pro 3 zitten bomvol features die zelfs de gewoonste momenten bijzonder maken. Van de eenvoudige touch-bediening tot moeiteloze opdrachten aan Siri: AirPods bieden je zoveel meer dan je op het eerste gehoor zou denken."
+        - generic [ref=f13e474]:
+          - generic [ref=f13e477]:
+            - tablist "vervaag overzicht" [ref=f13e479]:
+              - tab "Bediening" [selected] [ref=f13e480] [cursor=pointer]
+              - tab "Siri" [selected] [ref=f13e482] [cursor=pointer]
+              - tab "Connectiviteit" [selected] [ref=f13e484] [cursor=pointer]
+            - generic:
+              - button "Vorig item" [ref=f13e486] [cursor=pointer]
+              - button "Volgend item" [ref=f13e490] [cursor=pointer]
+          - generic [ref=f13e494]:
+            - tabpanel "Bediening" [ref=f13e495]:
+              - img "AirPods Pro 3, draadloos oortje, kleur wit, korte steel" [ref=f13e498]
+              - generic [ref=f13e500]:
+                - heading "Gebruik de touch‑bediening" [level=4] [ref=f13e501]
+                - paragraph [ref=f13e502]:
+                  - text: om eenvoudig het volume aan te passen, nummers over te slaan of onbekende bellers door te schakelen naar je voicemail. Met de nieuwe feature voor camerabediening kun je zelfs op afstand een video of foto maken met je iPhone.
+                  - superscript [ref=f13e503]:
+                    - link "Voetnoot 10" [ref=f13e504] [cursor=pointer]:
+                      - /url: "#footnote-10"
+                      - text: "10"
+            - tabpanel "Siri" [ref=f13e505]:
+              - paragraph [ref=f13e507]:
+                - generic [ref=f13e508]: Hé Siri,
+                - text: ik wil de Morning Show kijken op mijn tv in de woonkamer.
+              - generic [ref=f13e510]:
+                - heading "Vraag Siri" [level=4] [ref=f13e511]
+                - paragraph [ref=f13e512]:
+                  - text: om een routebeschrijving, iemand te bellen of je agenda te checken. Allemaal zonder je iPhone uit je zak te hoeven vissen. En gebruik je Apple Intelligence, dan communiceer je nu nog natuurlijker met Siri.
+                  - superscript [ref=f13e513]:
+                    - link "Voetnoot 23" [ref=f13e514] [cursor=pointer]:
+                      - /url: "#footnote-23"
+                      - text: "23"
+            - tabpanel "Connectiviteit" [ref=f13e515]:
+              - generic [ref=f13e516]:
+                - img "iPhone 17 Pro, optie om verbinding te maken op het scherm, AirPods Pro 3 en MagSafe-oplaadcase (USB-C), animation" [ref=f13e517]
+                - generic [ref=f13e520]:
+                  - button [aria-hidden]
+              - generic [ref=f13e522]:
+                - heading "Om je AirPods Pro 3 te configureren," [level=4] [ref=f13e523]
+                - paragraph [ref=f13e524]:
+                  - text: leg je ze naast je iPhone en volg je de aanwijzingen op het scherm. En gebruik Automatisch Wisselen om tussen je devices te switchen terwijl je gewoon blijft luisteren. Je hoeft alleen maar op de afspeelknop te tikken.
+                  - superscript [ref=f13e525]:
+                    - link "Voetnoot 16" [ref=f13e526] [cursor=pointer]:
+                      - /url: "#footnote-16"
+                      - text: "16"
+        - generic [ref=f13e529]:
+          - generic [ref=f13e530]:
+            - img "Belsymbool voor meldingen" [ref=f13e533]
+            - generic [ref=f13e534]:
+              - heading "Meldingen Aankondigen." [level=5] [ref=f13e535]
+              - paragraph [ref=f13e536]:
+                - text: Siri kan berichten en meldingen voorlezen op het moment dat ze binnenkomen. En je kunt gewoon met je stem antwoorden.
+                - superscript [ref=f13e537]:
+                  - link "Voetnoot 17" [ref=f13e538] [cursor=pointer]:
+                    - /url: "#footnote-17"
+                    - text: "17"
+                - text: Dankzij Siri-interacties kun je zelfs intuïtieve hoofdbewegingen gebruiken, zoals knikken en schudden, om telefoontjes of berichten te beantwoorden of negeren.
+                - superscript [ref=f13e539]:
+                  - link "Voetnoot 14" [ref=f13e540] [cursor=pointer]:
+                    - /url: "#footnote-14"
+                    - text: "14"
+          - generic [ref=f13e541]:
+            - img "Symbool voor Audio Delen" [ref=f13e544]
+            - generic [ref=f13e545]:
+              - heading "Audio Delen." [level=5] [ref=f13e546]
+              - paragraph [ref=f13e547]:
+                - text: Deel eenvoudig met je vrienden wat je kijkt of luistert.
+                - superscript [ref=f13e548]:
+                  - link "Voetnoot 14" [ref=f13e549] [cursor=pointer]:
+                    - /url: "#footnote-14"
+                    - text: "14"
+                - text: Laat ze gewoon hun AirPods in de buurt houden van de iPhone, iPad of Apple TV die jij gebruikt. En voilà.
+      - generic [ref=f13e550]:
+        - generic [ref=f13e552]:
+          - generic [ref=f13e553]:
+            - heading "Batterij voor een hele dag" [level=2] [ref=f13e554]
+            - heading "Fulltime in je ritme." [level=3] [ref=f13e555]: Fulltimein je ritme.
+          - paragraph [ref=f13e557]:
+            - text: De MagSafe-oplaadcase zit vol slimme features, zoals een ingebouwde speaker. En Nauwkeurig Zoeken, waarmee je makkelijk je AirPods Pro 3 terugvindt.
+            - superscript [ref=f13e558]:
+              - link "Voetnoot 18" [ref=f13e559] [cursor=pointer]:
+                - /url: "#footnote-18"
+                - text: "18"
+            - text: Eén keer opladen is nu genoeg om je oortjes een hele werkdag lang te gebruiken. Zelfs als je nog even doormoet.
+        - img "AirPods Pro 3 en MagSafe-oplaadcase (USB-C), case met afgeronde hoeken, ledlampje voor het batterijniveau, case geopend, kleur wit, draadloze oortjes met siliconen oortips, aan de binnenkant van de stelen staan de letters L en R" [ref=f13e561]
+        - generic [ref=f13e562]:
+          - generic [ref=f13e563]:
+            - figure [ref=f13e564]:
+              - generic [ref=f13e565]:
+                - generic [ref=f13e566]: Tot wel
+                - generic [ref=f13e567]: 8 uur
+                - generic [ref=f13e568]:
+                  - text: luistertijd met Actieve Ruisonderdrukking na één keer opladen
+                  - superscript [ref=f13e569]:
+                    - link "Voetnoot 3" [ref=f13e570] [cursor=pointer]:
+                      - /url: "#footnote-3"
+                      - text: "3"
+            - paragraph [ref=f13e572]:
+              - strong [ref=f13e573]: 2 uur langer
+              - text: dan AirPods Pro 2
+          - generic [ref=f13e574]:
+            - figure [ref=f13e575]:
+              - generic [ref=f13e576]:
+                - generic [ref=f13e577]: Tot wel
+                - generic [ref=f13e578]: 10 uur
+                - generic [ref=f13e579]:
+                  - text: batterijduur na één keer opladen met Transparantie bij gebruik van Gehoorapparaat
+                  - superscript [ref=f13e580]:
+                    - link "Voetnoot 8" [ref=f13e581] [cursor=pointer]:
+                      - /url: "#footnote-8"
+                      - text: "8"
+            - paragraph [ref=f13e583]:
+              - strong [ref=f13e584]: 4 uur meer
+              - text: dan AirPods Pro 2
+        - generic [ref=f13e587]:
+          - generic [ref=f13e588]:
+            - heading "Zoek Mijn met Nauwkeurig Zoeken." [level=2] [ref=f13e589]
+            - paragraph [ref=f13e590]:
+              - text: Vind je AirPods Pro makkelijk terug, precies waar je ze gelaten had. Dankzij de nieuwste Ultra Wideband-technologie in de oplaadcase is de afstand voor Nauwkeurig Zoeken 1,5x vergroot.
+              - superscript [ref=f13e591]:
+                - link "Voetnoot 11" [ref=f13e592] [cursor=pointer]:
+                  - /url: "#footnote-11"
+                  - text: "11"
+              - text: En de ingebouwde speaker in de case helpt je jouw AirPods op te sporen, hoe diep ze ook tussen de kussens van de bank zijn geglipt.
+            - paragraph [ref=f13e596]:
+              - strong [ref=f13e597]: 1,5x verder
+              - text: met AirPods Pro 3
+              - superscript [ref=f13e598]:
+                - link "Voetnoot 11" [ref=f13e599] [cursor=pointer]:
+                  - /url: "#footnote-11"
+                  - text: "11"
+          - img "Zoek Mijn met Nauwkeurig Zoeken op het scherm van een iPhone 17 Pro, de tekst meldt dat er wordt gezocht naar de AirPods Pro van Matias" [ref=f13e601]
+    - generic [ref=f13e603]:
+      - generic [ref=f13e605]:
+        - heading "Waarom je AirPods het beste bij Apple kunt kopen." [level=2] [ref=f13e606]
+        - list [ref=f13e608]:
+          - listitem [ref=f13e609]:
+            - link "shop airpods accessories" [ref=f13e610] [cursor=pointer]:
+              - /url: /nl/shop/goto/airpods/accessories
+              - text: Shop AirPods
+              - generic [aria-hidden] [ref=f13e611]: 
+      - generic "Waarom je AirPods het beste bij Apple kunt kopen" [ref=f13e612]:
+        - list "Waarom je AirPods het beste bij Apple kunt kopen." [ref=f13e615]:
+          - listitem [ref=f13e616]:
+            - generic [ref=f13e617]:
+              - generic:
+                - generic:
+                  - heading "Gratis inscriptie" [level=3]
+                  - generic:
+                    - heading "Personaliseer gratis je AirPods." [level=3]
+                    - paragraph: Laat een combinatie van emoji, namen, initialen en cijfers graveren op je nieuwe AirPods.
+                - figure:
+                  - generic:
+                    - 'img "Apple producten met persoonlijke inscriptie: MagSafe-oplaadcase (USB‑C) met inscriptie ‘rock-on emoji’ aan de voorkant, MagSafe-oplaadcase (USB‑C), case open, AirPods Pro 3, inscriptie ‘sterren in de ogen emoji’ aan de voorkant"'
+              - link "Lees meer over een inscriptie op je AirPods" [ref=f13e618] [cursor=pointer]:
+                - /url: /nl/shop/goto/engraving
+          - listitem [ref=f13e623]:
+            - generic [ref=f13e624]:
+              - generic:
+                - generic:
+                  - heading "Bezorging en ophalen" [level=3]
+                  - generic:
+                    - heading "Snel en gratis bezorgen of ophalen." [level=3]
+                    - paragraph: Kies voor gratis bezorging of haal je bestelling op in de Apple Store.
+                - figure:
+                  - generic:
+                    - img "Een draagtas met het Apple logo op de voorkant"
+              - link "Meer informatie over opties voor bezorging en ophalen" [ref=f13e625] [cursor=pointer]:
+                - /url: /nl/shop/goto/shipping_pickup
+          - listitem [ref=f13e630]:
+            - generic [ref=f13e631]:
+              - generic:
+                - generic:
+                  - heading "Apple Store-app" [level=3]
+                  - generic:
+                    - heading "Shoppen zoals jij het wilt." [level=3]
+                    - paragraph: In de Apple Store-app kun je nog persoonlijker shoppen.
+                - figure:
+                  - generic:
+                    - img "Apple Store-app"
+              - link "Download de Apple Store-app" [ref=f13e632] [cursor=pointer]:
+                - /url: https://apps.apple.com/nl/app/apple-store/id375380948
+    - generic [ref=f13e638]:
+      - generic [ref=f13e639]:
+        - heading "Vind je ideale AirPods." [level=2] [ref=f13e640]
+        - list [ref=f13e642]:
+          - listitem [ref=f13e643]:
+            - link "Alle AirPods-modellen" [ref=f13e644] [cursor=pointer]:
+              - /url: /nl/airpods/
+              - text: Alle AirPods-modellen
+              - generic [aria-hidden] [ref=f13e645]: 
+      - list [ref=f13e649]:
+        - listitem [ref=f13e650]:
+          - heading "AirPods Pro 3" [level=3] [ref=f13e651]:
+            - generic [ref=f13e653]:
+              - generic [ref=f13e654]: AirPods Pro 3
+              - generic [aria-hidden] [ref=f13e655]: AirPods Pro 3
+          - img "AirPods Pro 3" [ref=f13e658]
+          - paragraph [ref=f13e659]: ’s Werelds beste in-ear Actieve Ruisonderdrukking, met hartslagmeting tijdens work‑outs.
+          - paragraph
+          - generic [ref=f13e660]:
+            - generic [ref=f13e662]:
+              - text: Bekijk je nu
+              - generic [ref=f13e663]: ", AirPods Pro 3"
+            - link "Koop AirPods Pro 3" [ref=f13e664] [cursor=pointer]:
+              - /url: /nl/shop/goto/buy_airpods/airpods_pro_3
+              - text: Koop
+              - generic [aria-hidden] [ref=f13e665]: 
+          - generic [ref=f13e666]:
+            - paragraph [ref=f13e671]:
+              - text: Tot 3x meer Actieve Ruisonderdrukking
+              - superscript [ref=f13e672]:
+                - link "Voetnoot 19" [ref=f13e673] [cursor=pointer]:
+                  - /url: "#footnote-19"
+                  - text: "19"
+              - text: in vergelijking met AirPods 5
+            - paragraph [ref=f13e678]:
+              - text: Adaptieve Audio en Transparantie
+              - superscript [ref=f13e679]:
+                - link "Voetnoot 20" [ref=f13e680] [cursor=pointer]:
+                  - /url: "#footnote-20"
+                  - text: "20"
+            - paragraph [ref=f13e685]:
+              - text: Gepersonaliseerde Ruimtelijke Audio met dynamische hoofdtracking
+              - superscript [ref=f13e686]:
+                - link "Voetnoot 4" [ref=f13e687] [cursor=pointer]:
+                  - /url: "#footnote-4"
+                  - text: "4"
+            - paragraph [ref=f13e692]:
+              - text: Hartslagmetingtijdens work‑outs
+              - superscript [ref=f13e693]:
+                - link "Voetnoot 5" [ref=f13e694] [cursor=pointer]:
+                  - /url: "#footnote-5"
+                  - text: "5"
+            - paragraph [ref=f13e699]:
+              - text: Gehoortest, Gehoorapparaat
+              - superscript [ref=f13e700]:
+                - link "Voetnoot 6" [ref=f13e701] [cursor=pointer]:
+                  - /url: "#footnote-6"
+                  - text: "6"
+              - text: en Gehoorbescherming
+              - superscript [ref=f13e702]:
+                - link "Voetnoot 15" [ref=f13e703] [cursor=pointer]:
+                  - /url: "#footnote-15"
+                  - text: "15"
+            - generic [ref=f13e704]:
+              - paragraph [ref=f13e705]: 8 uur
+              - paragraph [ref=f13e707]:
+                - text: Tot wel 8 uur batterijduur na één keer opladen met Actieve Ruisonderdrukking ingeschakeld,
+                - superscript [ref=f13e708]:
+                  - link "Voetnoot 3" [ref=f13e709] [cursor=pointer]:
+                    - /url: "#footnote-3"
+                    - text: "3"
+                - text: en tot 10 uur met Transparantie ingeschakeld bij gebruik van de Gehoorapparaat-feature
+                - superscript [ref=f13e710]:
+                  - link "Voetnoot 8" [ref=f13e711] [cursor=pointer]:
+                    - /url: "#footnote-8"
+                    - text: "8"
+            - paragraph [ref=f13e716]:
+              - text: Stemisolatie,
+              - superscript [ref=f13e717]:
+                - link "Voetnoot 21" [ref=f13e718] [cursor=pointer]:
+                  - /url: "#footnote-21"
+                  - text: "21"
+              - text: Hé Siri
+              - superscript [ref=f13e719]:
+                - link "Voetnoot 22" [ref=f13e720] [cursor=pointer]:
+                  - /url: "#footnote-22"
+                  - text: "22"
+              - text: en Siri-interacties
+              - superscript [ref=f13e721]:
+                - link "Voetnoot 23" [ref=f13e722] [cursor=pointer]:
+                  - /url: "#footnote-23"
+                  - text: "23"
+        - listitem [ref=f13e723]:
+          - heading "Nieuw AirPods 5 Draadloze oplaadcase" [level=3] [ref=f13e724]:
+            - generic [ref=f13e725]: Nieuw
+            - generic [ref=f13e726]:
+              - generic [ref=f13e727]: AirPods 5
+              - generic [aria-hidden] [ref=f13e728]: AirPods 5
+              - generic [ref=f13e729]: Draadloze oplaadcase
+          - link [ref=f13e730] [cursor=pointer]:
+            - /url: /nl/airpods-5/
+            - img "Meer informatie over AirPods 5 met draadloze oplaadcase" [ref=f13e732]
+          - paragraph [ref=f13e733]: Actieve Ruisonderdrukking, volumeregeling door te swipen en een langere batterijduur.
+          - paragraph
+          - generic [ref=f13e734]:
+            - link "Meer informatie over draadloze oplaadcase voor AirPods 5" [ref=f13e735] [cursor=pointer]:
+              - /url: /nl/airpods-5/
+              - text: Meer informatie
+            - link "Koop AirPods 5 Draadloze oplaadcase" [ref=f13e736] [cursor=pointer]:
+              - /url: /nl/shop/goto/buy_airpods/airpods_5/with_wireless_charging_case
+              - text: Koop
+              - generic [aria-hidden] [ref=f13e737]: 
+          - generic [ref=f13e738]:
+            - paragraph [ref=f13e743]:
+              - text: Tot 1,5x meer Actieve Ruisonderdrukking
+              - superscript [ref=f13e744]:
+                - link "Voetnoot 24" [ref=f13e745] [cursor=pointer]:
+                  - /url: "#footnote-24"
+                  - text: "24"
+              - text: dan AirPods 4 met Actieve Ruisonderdrukking
+            - paragraph [ref=f13e750]:
+              - text: Adaptieve Audio en Transparantie
+              - superscript [ref=f13e751]:
+                - link "Voetnoot 20" [ref=f13e752] [cursor=pointer]:
+                  - /url: "#footnote-20"
+                  - text: "20"
+            - paragraph [ref=f13e757]:
+              - text: Gepersonaliseerde Ruimtelijke Audio met dynamische hoofdtracking
+              - superscript [ref=f13e758]:
+                - link "Voetnoot 4" [ref=f13e759] [cursor=pointer]:
+                  - /url: "#footnote-4"
+                  - text: "4"
+            - paragraph [ref=f13e761]:
+              - text: —
+              - generic [ref=f13e762]: Hartslagmeting, niet van toepassing
+            - paragraph [ref=f13e764]:
+              - text: —
+              - generic [ref=f13e765]: Feature Gehoorapparaat, niet van toepassing
+            - generic [ref=f13e766]:
+              - paragraph [ref=f13e767]: 5 uur
+              - paragraph [ref=f13e769]:
+                - text: Tot wel 5 uur batterijduur na één keer opladen met Actieve Ruisonderdrukking ingeschakeld
+                - superscript [ref=f13e770]:
+                  - link "Voetnoot 25" [ref=f13e771] [cursor=pointer]:
+                    - /url: "#footnote-25"
+                    - text: "25"
+            - paragraph [ref=f13e776]:
+              - text: Stemisolatie,
+              - superscript [ref=f13e777]:
+                - link "Voetnoot 21" [ref=f13e778] [cursor=pointer]:
+                  - /url: "#footnote-21"
+                  - text: "21"
+              - text: Hé Siri
+              - superscript [ref=f13e779]:
+                - link "Voetnoot 22" [ref=f13e780] [cursor=pointer]:
+                  - /url: "#footnote-22"
+                  - text: "22"
+              - text: en Siri-interacties
+              - superscript [ref=f13e781]:
+                - link "Voetnoot 23" [ref=f13e782] [cursor=pointer]:
+                  - /url: "#footnote-23"
+                  - text: "23"
+      - link "Vergelijk alle AirPods-modellen" [ref=f13e787] [cursor=pointer]:
+        - /url: /nl/airpods/compare/
+    - generic [ref=f13e792]:
+      - generic [ref=f13e794]:
+        - heading "AirPods Pro 3 en het milieu." [level=2] [ref=f13e795]
+        - list [ref=f13e797]:
+          - listitem [ref=f13e798]:
+            - link "Bekijk de milieurapportage (PDF) (opens in new window)" [ref=f13e799] [cursor=pointer]:
+              - /url: /environment/pdf/products/airpods/Apple_AirPods_Pro_3_PER_Sept2025.pdf
+              - generic [ref=f13e800]:
+                - text: Bekijk de milieurapportage (PDF)
+                - generic [ref=f13e801]: (opens in new window)
+      - generic "Overzicht milieu" [ref=f13e802]:
+        - list "AirPods Pro 3 en het milieu." [ref=f13e805]:
+          - listitem [ref=f13e806]:
+            - generic [ref=f13e807]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "Gemaakt met 40% gerecycled materiaal op basis van gewicht." [level=3]:
+                      - text: Gemaakt met
+                      - strong: 40% gerecycled materiaal
+                      - text: op basis van gewicht.
+                    - generic:
+                      - paragraph
+              - text: 
+              - button "Meer informatie over de visie van Apple op gerecycled materiaal" [ref=f13e808] [cursor=pointer]
+          - listitem [ref=f13e813]:
+            - generic [ref=f13e814]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "Geproduceerd met 40% groene stroom." [level=3]:
+                      - text: Geproduceerd met
+                      - strong: 40% groene stroom.
+                    - generic:
+                      - paragraph
+              - text: 
+              - button "Meer informatie over de visie van Apple op hernieuwbare elektriciteit" [ref=f13e815] [cursor=pointer]
+          - listitem [ref=f13e820]:
+            - generic [ref=f13e821]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "25% meer producten per zending dankzij kleinere verpakkingen." [level=3]:
+                      - strong: 25% meer producten per zending
+                      - text: dankzij kleinere verpakkingen.
+                    - generic:
+                      - paragraph
+              - text: 
+              - button "Meer informatie over de visie van Apple op verpakkingen" [ref=f13e822] [cursor=pointer]
+    - generic [ref=f13e827]:
+      - heading "Onze waarden wijzen de weg." [level=2] [ref=f13e830]
+      - generic "Overzicht waarden" [ref=f13e831]:
+        - list "Onze waarden wijzen de weg." [ref=f13e834]:
+          - listitem [ref=f13e835]:
+            - generic [ref=f13e836]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "Ons plan is net zo innovatief als onze producten." [level=3]
+                    - generic:
+                      - paragraph: We zijn vastbesloten om de netto-uitstoot van de gehele ecologische voetafdruk uiterlijk in 2030 naar nul te brengen.
+                      - paragraph:
+                        - link "Lees meer over het milieu" [ref=f13e837] [cursor=pointer]:
+                          - /url: /nl/environment/
+                          - text: Lees meer over het milieu
+                          - generic [aria-hidden] [ref=f13e838]: 
+              - link [aria-hidden] [ref=f13e839] [cursor=pointer]:
+                - /url: /nl/environment/
+          - listitem [ref=f13e840]:
+            - generic [ref=f13e841]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "Privacy. Typisch Apple." [level=3]
+                    - generic:
+                      - paragraph: Privacy is een fundamenteel mensenrecht. Onze producten en diensten zijn zo ontworpen dat je gegevens goed beveiligd zijn.
+                      - paragraph:
+                        - link "Lees meer over privacy" [ref=f13e842] [cursor=pointer]:
+                          - /url: /nl/privacy/
+                          - text: Lees meer over privacy
+                          - generic [aria-hidden] [ref=f13e843]: 
+              - link [aria-hidden] [ref=f13e844] [cursor=pointer]:
+                - /url: /nl/privacy/
+          - listitem [ref=f13e845]:
+            - generic [ref=f13e846]:
+              - generic:
+                - generic:
+                  - generic:
+                    - heading "Toegankelijkheid. De basis van onze innovatie." [level=3]
+                    - generic:
+                      - paragraph: Onze producten en diensten zijn voor iedereen bedoeld. Daarom bevatten ze features waarmee je alles wat je leuk vindt op je eigen manier kunt doen.
+                      - paragraph:
+                        - link "Lees meer over toegankelijkheid" [ref=f13e847] [cursor=pointer]:
+                          - /url: /nl/accessibility/
+                          - text: Lees meer over toegankelijkheid
+                          - generic [aria-hidden] [ref=f13e848]: 
+              - link [aria-hidden] [ref=f13e849] [cursor=pointer]:
+                - /url: /nl/accessibility/
+    - generic [ref=f13e852]:
+      - heading "AirPods" [level=2] [ref=f13e853]
+      - navigation "AirPods"
+  - contentinfo [ref=f13e854]:
+    - generic [ref=f13e855]:
+      - heading "Apple Footer" [level=2] [ref=f13e856]
+      - region "Voetnoten" [ref=f13e857]:
+        - list [ref=f13e858]:
+          - listitem [ref=f13e859]: 2x meer Actieve Ruisonderdrukking in vergelijking met AirPods Pro 2. Beoordeling van ’s werelds beste in‑ear Actieve Ruisonderdrukking uitgevoerd in juli 2025 conform IEC-standaard 60268-24 en vergeleken met de bestverkochte draadloze oortjes die ten tijde van de tests verkrijgbaar waren.
+          - listitem [ref=f13e860]: In vergelijking met AirPods Pro 2.
+          - listitem [ref=f13e861]: Tests uitgevoerd door Apple in juli en augustus 2025 met prototypen van AirPods Pro 3 met de MagSafe-oplaadcase gekoppeld aan prototypen van iPhone 17 Pro; alle devices zijn getest met een prereleaseversie van de software. De afspeellijst bevatte 358 unieke muzieknummers die waren gekocht in de iTunes Store (256‑Kb/s AAC). Wanneer het volume was ingesteld op 50% en Actieve Ruisonderdrukking was ingeschakeld, was de luistertijd tot 8 uur. Met Ruimtelijke Audio en Hoofdtracking ingeschakeld was de luistertijd tot 7,5 uur. Bij de tests werd audio afgespeeld totdat de batterij helemaal leeg was en de eerste AirPod Pro stopte met afspelen. Batterijduur is afhankelijk van device-instellingen, omgeving, gebruik en vele andere factoren.
+          - listitem [ref=f13e862]: Compatibele hardware en software vereist. Werkt met compatibele content in ondersteunde apps. Niet alle content is beschikbaar in Dolby Atmos. Voor het maken van een persoonlijk profiel voor Gepersonaliseerde Ruimtelijke Audio is een iPhone met TrueDepth-camera vereist. Het profiel wordt gesynchroniseerd met andere Apple devices waarop het nieuwste besturingssysteem staat, waaronder iOS, iPadOS, macOS en tvOS. Gepersonaliseerde Ruimtelijke Audio is niet beschikbaar in combinatie met andere devices.
+          - listitem [ref=f13e863]:
+            - text: Geïntegreerde hartslagmonitor is bedoeld voor gebruik tijdens work‑outs met de Conditie-app en compatibele apps van derden op een iPhone met iOS 26 of nieuwer. Zie
+            - link "support.apple.com/nl-nl/123184" [ref=f13e864] [cursor=pointer]:
+              - /url: https://support.apple.com/nl-nl/123184
+            - text: voor meer informatie.
+          - listitem [ref=f13e865]:
+            - text: De features Gehoortest en Gehoorapparaat worden ondersteund op AirPods Pro 2 of nieuwer met de nieuwste firmware gekoppeld met een compatibele iPhone of iPad met iOS 18 of iPadOS 18 of nieuwer. Deze features zijn bedoeld voor gebruikers van 18 jaar en ouder. De feature Gehoorapparaat wordt ook ondersteund op compatibele Macs met macOS Sequoia of nieuwer. De feature is bedoeld voor mensen die licht tot matig gehoorverlies ervaren. Sommige features zijn mogelijk niet in alle talen of regio’s beschikbaar.
+            - link "Bekijk de volledige lijst" [ref=f13e866] [cursor=pointer]:
+              - /url: /nl/airpods-pro/feature-availability/
+            - text: .
+          - listitem [ref=f13e867]:
+            - text: Ondersteund op AirPods Pro 2 of nieuwer met de nieuwste firmware, als die zijn gekoppeld met een compatibele iPhone met iOS 26 of nieuwer. Deze feature is mogelijk niet in alle talen of regio’s beschikbaar.
+            - link "Bekijk de volledige lijst" [ref=f13e868] [cursor=pointer]:
+              - /url: /nl/airpods-pro/feature-availability/
+            - text: .
+          - listitem [ref=f13e869]: 67% langere batterijduur vergeleken met AirPods Pro 2. Tests uitgevoerd door Apple in juli en augustus 2025 met prototypen van AirPods Pro 3 met de MagSafe-oplaadcase gekoppeld aan prototypen van iPhone 17 Pro; alle devices zijn getest met een prereleaseversie van de software. Het volume en de versterking waren ingesteld op 50% met Transparantie ingeschakeld. Bij de tests was de Gehoorapparaat-feature ingeschakeld zonder audio af te spelen vanaf iPhone, net zolang tot de batterij van de eerste AirPod Pro helemaal leeg was. Batterijduur is afhankelijk van device-instellingen, omgeving, gebruik en vele andere factoren.
+          - listitem [ref=f13e870]:
+            - text: AirPods Pro 3 zijn stof-, zweet- en waterbestendig voor sporten en trainingen die niet in het water plaatsvinden. Producten inclusief oplaadcase zijn getest onder gecontroleerde omstandigheden en voldoen aan bestendigheidsnorm IP57 volgens IEC‑standaard 60529. Stof-, zweet- en waterbestendigheid kunnen na verloop van tijd afnemen als gevolg van normale slijtage. Probeer natte AirPods niet op te laden. Raadpleeg
+            - link "support.apple.com/nl-nl/HT210711" [ref=f13e871] [cursor=pointer]:
+              - /url: https://support.apple.com/nl-nl/HT210711
+            - text: voor instructies met betrekking tot reinigen en drogen.
+          - listitem [ref=f13e872]: Beschikbaar op compatibele devices met iOS 26 of iPadOS 26 en nieuwer als die zijn gekoppeld met AirPods 4, AirPods 4 met Actieve Ruisonderdrukking of AirPods Pro 2 en nieuwer.
+          - listitem [ref=f13e873]:
+            - text: In vergelijking met AirPods Pro 2. Verbeterde feature Nauwkeurig Zoeken werkt met AirPods Pro 3 die zijn gekoppeld met iPhone Air- of iPhone 15-modellen of nieuwer (behalve iPhone 16e). Beschikbaarheid verschilt per regio. Ga naar
+            - link "apple.com/uwb" [ref=f13e874] [cursor=pointer]:
+              - /url: /uwb
+            - text: voor meer informatie.
+          - listitem [ref=f13e875]: Tests uitgevoerd door Apple in juli 2025, waarbij gebruik is gemaakt van AirPods Pro 3 gekoppeld aan iPhone 16 met een prereleaseversie van de AirPods-firmware en iOS 26. Ruisonderdrukking getest conform IEC‑standaard 60268‑24. Vergeleken met de bestverkochte draadloze oortjes die ten tijde van de tests verkrijgbaar waren. Prestaties zijn afhankelijk van de instellingen van het device, de omgeving en vele andere factoren.
+          - listitem [ref=f13e876]: Tot 4x meer Actieve Ruisonderdrukking in vergelijking met de eerste generatie AirPods Pro en AirPods 4 met Actieve Ruisonderdrukking tijdens tests conform IEC-standaard 60268‑24.
+          - listitem [ref=f13e877]: Vereist een compatibel Apple device met het nieuwste besturingssysteem.
+          - listitem [ref=f13e878]:
+            - text: De feature Gehoorbescherming werkt als AirPods Pro 2 of nieuwer met de nieuwste firmware zijn gekoppeld met een compatibele iPhone, iPad of Mac met iOS 18, iPadOS 18 of macOS Sequoia of nieuwer. Deze feature is niet in alle talen of regio’s beschikbaar.
+            - link "Bekijk de volledige lijst" [ref=f13e879] [cursor=pointer]:
+              - /url: /nl/airpods-pro/feature-availability/
+            - text: . Ga naar
+            - link "support.apple.com/nl-nl/120850" [ref=f13e880] [cursor=pointer]:
+              - /url: https://support.apple.com/nl-nl/120850
+            - text: voor uitgebreide informatie over de demping en meer. De feature Gehoorbescherming beschermt niet tegen extreem luide impulsgeluiden, zoals die van vuurwapens, vuurwerk of sloophamers. Deze feature beschermt ook niet tegen langdurige geluiden luider dan 110 dBA. De feature Gehoorbescherming biedt niet op alle werkplekken de geschikte bescherming. Overleg vooraf met je werkgever. De feature Gehoorbescherming van AirPods Pro 3 voldoet aan de gehoorbeschermingsnorm EN 352 wanneer Gehoorbescherming is ingeschakeld.
+          - listitem [ref=f13e881]: Vereist een Apple Account en een compatibel Apple device met het nieuwste besturingssysteem.
+          - listitem [ref=f13e882]: Siri en activering met gewoon “Siri” zijn mogelijk niet overal of in alle talen beschikbaar; de beschikbaarheid van features kan per gebied variëren. Vereist een compatibel device en internettoegang. Voor mobiel gebruik kunnen kosten in rekening worden gebracht.
+          - listitem [ref=f13e883]: Voor opladen met MagSafe heb je een compatibele MagSafe-oplader nodig. Voor draadloos opladen heb je een draadloze Qi‑oplader nodig. De oplaadcase van AirPods Pro 3 en AirPods Pro 2 is ook te gebruiken met de Apple Watch-oplader of de USB‑C‑connector.
+          - listitem [ref=f13e884]: Tot 3x meer Actieve Ruisonderdrukking in vergelijking met AirPods 5 tijdens tests conform IEC‑standaard 60268‑24.
+          - listitem [ref=f13e885]:
+            - text: Opgehoopt oorsmeer en vuil kunnen van invloed zijn op de prestaties van het device en van features voor geluidsbeheersing, zoals Actieve Ruisonderdrukking, Adaptieve Audio en Transparantie. Maak je AirPods geregeld schoon zodat alles naar behoren blijft werken. Raadpleeg
+            - link "support.apple.com/nl-nl/102672" [ref=f13e886] [cursor=pointer]:
+              - /url: https://support.apple.com/nl-nl/102672
+            - text: voor instructies met betrekking tot het reinigen van AirPods 4. Raadpleeg
+            - link "support.apple.com/nl-nl/120409" [ref=f13e887] [cursor=pointer]:
+              - /url: https://support.apple.com/nl-nl/120409
+            - text: voor instructies met betrekking tot het reinigen van AirPods Pro.
+          - listitem [ref=f13e888]: Beschikbaar op compatibele devices met iOS 18, iPadOS 18 of macOS Sequoia en nieuwer als die zijn gekoppeld met AirPods 4, AirPods 4 met Actieve Ruisonderdrukking of AirPods Pro 2 of nieuwer met de nieuwste firmware. Installeer de nieuwste software voor het beste resultaat.
+          - listitem [ref=f13e889]: Siri is mogelijk niet overal of in alle talen beschikbaar; de beschikbaarheid van features kan per gebied variëren. Vereist een compatibel device en internettoegang. Voor mobiel gebruik kunnen kosten in rekening worden gebracht.
+          - listitem [ref=f13e890]: Beschikbaar op compatibele devices met iOS 18, iPadOS 18 of macOS Sequoia en nieuwer als die zijn gekoppeld met AirPods 4, AirPods 4 met Actieve Ruisonderdrukking of AirPods Pro 2 en nieuwer met de nieuwste firmware.
+          - listitem [ref=f13e891]: Tot 1,5x meer Actieve Ruisonderdrukking in vergelijking met AirPods 4 met Actieve Ruisonderdrukking tijdens tests conform IEC-standaard 60268‑24.
+          - listitem [ref=f13e892]: Tests uitgevoerd door Apple in juli en augustus 2026 met prototypen van AirPods 5 met de draadloze oplaadcase gekoppeld aan prototypen van iPhone 18 Pro; alle devices zijn getest met een prereleaseversie van de software. De afspeellijst bevatte 358 unieke muzieknummers die waren gekocht in de iTunes Store (256‑Kb/s AAC). Het volume was ingesteld op 50% en Ruimtelijke Audio en Gespreksdetectie waren uitgeschakeld. Actieve Ruisonderdrukking was ingeschakeld. Wanneer Geluidsbeheersing was uitgeschakeld, was de luistertijd maximaal 7 uur. Bij de tests werd audio afgespeeld totdat de batterij helemaal leeg was en de eerste AirPod stopte met afspelen. Batterijduur is afhankelijk van device-instellingen, omgeving, gebruik en vele andere factoren.
+      - navigation "Breadcrumbs" [ref=f13e893]:
+        - link "Apple" [ref=f13e894] [cursor=pointer]:
+          - /url: /nl/
+          - generic [aria-hidden] [ref=f13e895]: 
+        - generic [ref=f13e897]:
+          - list:
+            - listitem [ref=f13e898]:
+              - link "AirPods" [ref=f13e899] [cursor=pointer]:
+                - /url: /nl/airpods/
+            - listitem [ref=f13e900]: AirPods Pro 3
+      - navigation "Apple Directory" [ref=f13e901]:
+        - generic [ref=f13e902]:
+          - generic:
+            - heading "Bestellen en informatie" [level=3] [ref=f13e903]
+            - list [ref=f13e905]:
+              - listitem [ref=f13e906]:
+                - link "Store" [ref=f13e907] [cursor=pointer]:
+                  - /url: /nl/shop/goto/store
+              - listitem [ref=f13e908]:
+                - link "Mac" [ref=f13e909] [cursor=pointer]:
+                  - /url: /nl/mac/
+              - listitem [ref=f13e910]:
+                - link "iPad" [ref=f13e911] [cursor=pointer]:
+                  - /url: /nl/ipad/
+              - listitem [ref=f13e912]:
+                - link "iPhone" [ref=f13e913] [cursor=pointer]:
+                  - /url: /nl/iphone/
+              - listitem [ref=f13e914]:
+                - link "Watch" [ref=f13e915] [cursor=pointer]:
+                  - /url: /nl/watch/
+              - listitem [ref=f13e916]:
+                - link "AirPods" [ref=f13e917] [cursor=pointer]:
+                  - /url: /nl/airpods/
+              - listitem [ref=f13e918]:
+                - link "Woning" [ref=f13e919] [cursor=pointer]:
+                  - /url: /nl/home/
+              - listitem [ref=f13e920]:
+                - link "AirTag" [ref=f13e921] [cursor=pointer]:
+                  - /url: /nl/airtag/
+              - listitem [ref=f13e922]:
+                - link "Accessoires" [ref=f13e923] [cursor=pointer]:
+                  - /url: /nl/shop/goto/buy_accessories
+              - listitem [ref=f13e924]:
+                - link "Cadeaubonnen" [ref=f13e925] [cursor=pointer]:
+                  - /url: /nl/shop/goto/giftcards
+          - generic:
+            - heading "Apple Wallet" [level=3] [ref=f13e926]
+            - list [ref=f13e928]:
+              - listitem [ref=f13e929]:
+                - link "Apple Pay" [ref=f13e930] [cursor=pointer]:
+                  - /url: /nl/apple-pay/
+        - generic [ref=f13e931]:
+          - generic:
+            - heading "Account" [level=3] [ref=f13e932]
+            - list [ref=f13e934]:
+              - listitem [ref=f13e935]:
+                - link "Beheer je Apple Account" [ref=f13e936] [cursor=pointer]:
+                  - /url: https://account.apple.com/nl/
+              - listitem [ref=f13e937]:
+                - link "Apple Store-account" [ref=f13e938] [cursor=pointer]:
+                  - /url: /nl/shop/goto/account
+              - listitem [ref=f13e939]:
+                - link "iCloud.com" [ref=f13e940] [cursor=pointer]:
+                  - /url: https://www.icloud.com
+          - generic:
+            - heading "Entertainment" [level=3] [ref=f13e941]
+            - list [ref=f13e943]:
+              - listitem [ref=f13e944]:
+                - link "Apple One" [ref=f13e945] [cursor=pointer]:
+                  - /url: /nl/apple-one/
+              - listitem [ref=f13e946]:
+                - link "Apple TV" [ref=f13e947] [cursor=pointer]:
+                  - /url: /nl/apple-tv/
+              - listitem [ref=f13e948]:
+                - link "Apple Music" [ref=f13e949] [cursor=pointer]:
+                  - /url: /nl/apple-music/
+              - listitem [ref=f13e950]:
+                - link "Apple Arcade" [ref=f13e951] [cursor=pointer]:
+                  - /url: /nl/apple-arcade/
+              - listitem [ref=f13e952]:
+                - link "Apple Fitness+" [ref=f13e953] [cursor=pointer]:
+                  - /url: /nl/apple-fitness-plus/
+              - listitem [ref=f13e954]:
+                - link "App Store" [ref=f13e955] [cursor=pointer]:
+                  - /url: /nl/app-store/
+        - generic [ref=f13e956]:
+          - generic:
+            - heading "Apple Store" [level=3] [ref=f13e957]
+            - list [ref=f13e959]:
+              - listitem [ref=f13e960]:
+                - link "Zoek een Store" [ref=f13e961] [cursor=pointer]:
+                  - /url: /nl/retail/
+              - listitem [ref=f13e962]:
+                - link "Genius Bar" [ref=f13e963] [cursor=pointer]:
+                  - /url: /nl/retail/geniusbar/
+              - listitem [ref=f13e964]:
+                - link "Today at Apple" [ref=f13e965] [cursor=pointer]:
+                  - /url: /nl/today/
+              - listitem [ref=f13e966]:
+                - link "Groepsreserveringen" [ref=f13e967] [cursor=pointer]:
+                  - /url: /nl/today/groups/
+              - listitem [ref=f13e968]:
+                - link "Apple Zomerkamp" [ref=f13e969] [cursor=pointer]:
+                  - /url: /nl/today/camp/
+              - listitem [ref=f13e970]:
+                - link "Apple Store-app" [ref=f13e971] [cursor=pointer]:
+                  - /url: https://apps.apple.com/nl/app/apple-store/id375380948
+              - listitem [ref=f13e972]:
+                - link "Certified Refurbished" [ref=f13e973] [cursor=pointer]:
+                  - /url: /nl/shop/goto/special_deals
+              - listitem [ref=f13e974]:
+                - link "Apple Trade In" [ref=f13e975] [cursor=pointer]:
+                  - /url: /nl/shop/goto/trade_in
+              - listitem [ref=f13e976]:
+                - link "Bestelstatus" [ref=f13e977] [cursor=pointer]:
+                  - /url: /nl/shop/goto/order/list
+              - listitem [ref=f13e978]:
+                - link "Hulp bij bestellen" [ref=f13e979] [cursor=pointer]:
+                  - /url: /nl/shop/goto/help
+        - generic [ref=f13e980]:
+          - generic:
+            - heading "Voor bedrijven" [level=3] [ref=f13e981]
+            - list [ref=f13e983]:
+              - listitem [ref=f13e984]:
+                - link "Apple en het bedrijfsleven" [ref=f13e985] [cursor=pointer]:
+                  - /url: /nl/business/
+              - listitem [ref=f13e986]:
+                - link "Aankopen voor je bedrijf" [ref=f13e987] [cursor=pointer]:
+                  - /url: /nl/retail/business/
+          - generic:
+            - heading "Voor het onderwijs" [level=3] [ref=f13e988]
+            - list [ref=f13e990]:
+              - listitem [ref=f13e991]:
+                - link "Apple en het onderwijs" [ref=f13e992] [cursor=pointer]:
+                  - /url: /nl/education/
+              - listitem [ref=f13e993]:
+                - link "Aankopen voor je studie" [ref=f13e994] [cursor=pointer]:
+                  - /url: /nl/shop/goto/educationrouting
+          - generic:
+            - heading "Voor de gezondheidszorg" [level=3] [ref=f13e995]
+            - list [ref=f13e997]:
+              - listitem [ref=f13e998]:
+                - link "Apple in de gezondheidszorg" [ref=f13e999] [cursor=pointer]:
+                  - /url: /nl/healthcare/
+          - generic:
+            - heading "Voor de overheid" [level=3] [ref=f13e1000]
+            - list [ref=f13e1002]:
+              - listitem [ref=f13e1003]:
+                - link "Apple en de overheid" [ref=f13e1004] [cursor=pointer]:
+                  - /url: /nl/government/
+        - generic [ref=f13e1005]:
+          - generic:
+            - heading "Waarden van Apple" [level=3] [ref=f13e1006]
+            - list [ref=f13e1008]:
+              - listitem [ref=f13e1009]:
+                - link "Toegankelijkheid" [ref=f13e1010] [cursor=pointer]:
+                  - /url: /nl/accessibility/
+              - listitem [ref=f13e1011]:
+                - link "Milieu" [ref=f13e1012] [cursor=pointer]:
+                  - /url: /nl/environment/
+              - listitem [ref=f13e1013]:
+                - link "Privacy" [ref=f13e1014] [cursor=pointer]:
+                  - /url: /nl/privacy/
+              - listitem [ref=f13e1015]:
+                - link "Innovatie in de toeleveringsketen" [ref=f13e1016] [cursor=pointer]:
+                  - /url: /nl/supply-chain/
+          - generic:
+            - heading "Over Apple" [level=3] [ref=f13e1017]
+            - list [ref=f13e1019]:
+              - listitem [ref=f13e1020]:
+                - link "Newsroom" [ref=f13e1021] [cursor=pointer]:
+                  - /url: /nl/newsroom/
+              - listitem [ref=f13e1022]:
+                - link "Apple Leadership" [ref=f13e1023] [cursor=pointer]:
+                  - /url: /nl/leadership/
+              - listitem [ref=f13e1024]:
+                - link "Carrièremogelijkheden" [ref=f13e1025] [cursor=pointer]:
+                  - /url: /careers/nl/
+              - listitem [ref=f13e1026]:
+                - link "Garantie" [ref=f13e1027] [cursor=pointer]:
+                  - /url: /legal/warranty/statutoryrights.html
+              - listitem [ref=f13e1028]:
+                - link "Investeerders" [ref=f13e1029] [cursor=pointer]:
+                  - /url: https://investor.apple.com/
+              - listitem [ref=f13e1030]:
+                - link "Ethiek en naleving" [ref=f13e1031] [cursor=pointer]:
+                  - /url: /nl/compliance/
+              - listitem [ref=f13e1032]:
+                - link "Werkgelegenheid in Europa" [ref=f13e1033] [cursor=pointer]:
+                  - /url: /nl/job-creation/
+              - listitem [ref=f13e1034]:
+                - link "Contact opnemen" [ref=f13e1035] [cursor=pointer]:
+                  - /url: /nl/contact/
+      - generic [ref=f13e1036]:
+        - generic [ref=f13e1037]:
+          - text: "Andere manieren om te shoppen:"
+          - link "Zoek een Apple Store" [ref=f13e1038] [cursor=pointer]:
+            - /url: /nl/retail/
+          - text: of
+          - link "andere winkel" [ref=f13e1039] [cursor=pointer]:
+            - /url: https://locate.apple.com/nl/nl/
+          - text: bij jou in de buurt.
+          - generic [ref=f13e1040]:
+            - text: Of bel
+            - link "0800 0200 570" [ref=f13e1041] [cursor=pointer]:
+              - /url: tel:0800 0200 570
+            - text: .
+        - generic [ref=f13e1042]:
+          - generic [ref=f13e1043]:
+            - generic [ref=f13e1044]: Copyright © 2026 Apple Inc. Alle rechten voorbehouden.
+            - list [ref=f13e1045]:
+              - listitem [ref=f13e1046]:
+                - link "Privacybeleid" [ref=f13e1047] [cursor=pointer]:
+                  - /url: /nl/legal/privacy/
+              - listitem [ref=f13e1048]:
+                - link "Gebruik van cookies" [ref=f13e1049] [cursor=pointer]:
+                  - /url: /legal/privacy/nl/cookies/
+              - listitem [ref=f13e1050]:
+                - link "Gebruiksvoorwaarden" [ref=f13e1051] [cursor=pointer]:
+                  - /url: /nl/legal/terms/site.html
+              - listitem [ref=f13e1052]:
+                - link "Verkoopvoorwaarden" [ref=f13e1053] [cursor=pointer]:
+                  - /url: /nl/shop/goto/help/sales_refunds
+              - listitem [ref=f13e1054]:
+                - link "Juridische informatie" [ref=f13e1055] [cursor=pointer]:
+                  - /url: /nl/legal/
+              - listitem [ref=f13e1056]:
+                - link "Site-overzicht" [ref=f13e1057] [cursor=pointer]:
+                  - /url: /nl/sitemap/
+          - link "Nederland. Kies je land of regio" [ref=f13e1059] [cursor=pointer]:
+            - /url: /choose-country-region/
+            - text: Nederland

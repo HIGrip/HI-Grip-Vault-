@@ -1,0 +1,33 @@
+/* 06 VISUELE PAUZE · het statement over bijna de volle breedte. Woorden kleuren mee met de scroll,
+   achter "grijpt" schuift een volt markering in zodra het woord oplicht (section.js). */
+.hp-06 { background: var(--hi-offwhite); color: var(--hi-black); overflow: clip; }
+
+.hp-06-statement {
+  isolation: isolate;
+  font: 600 calc(var(--hp-type-h1) * 0.82)/1.1 var(--hp-type-family);
+  letter-spacing: var(--hp-type-track-head);
+  text-wrap: pretty;
+}
+@media (min-width: 769px) {
+  .hp-06-statement { font-size: var(--hp-type-h1); line-height: 1.06; max-width: 26ch; }
+}
+
+/* Markering: in rust, zonder JS en bij reduced motion staat hij er gewoon. */
+.hp-06-mark { position: relative; white-space: nowrap; }
+.hp-06-mark::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0.2em -0.08em 0.04em;
+  border-radius: 0.12em;
+  background: var(--hi-yellow);
+  transform-origin: left center;
+  transition: transform var(--hp-dur-3) var(--hp-ease);
+}
+
+/* Grijze beginstand alleen als JS draait en motion mag. */
+.hp-06-w { transition: color var(--hp-dur-1) var(--hp-ease); }
+.hp-motion .hp-06-w { color: var(--hi-titanium); }
+.hp-motion .hp-06-w.is-lit { color: var(--hi-black); }
+.hp-motion .hp-06-mark::before { transform: scaleX(0); }
+.hp-motion .hp-06-mark.is-lit::before { transform: scaleX(1); }

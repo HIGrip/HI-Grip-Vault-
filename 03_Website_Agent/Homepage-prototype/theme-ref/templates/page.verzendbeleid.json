@@ -1,0 +1,249 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Verzendbeleid",
+        "heading_tag": "h1",
+        "lead": "",
+        "heading_size": 80,
+        "heading_size_mobile": 40,
+        "eyebrow_size": 11,
+        "lead_size": 17,
+        "heading_uppercase": true,
+        "heading_italic": true,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "eyebrow_color": "#ccff00",
+        "heading_color": "",
+        "lead_color": "",
+        "animate": true,
+        "padding_top": 72,
+        "padding_bottom": 56,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "a1": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Verzendtijd",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<p>We verzenden alle bestellingen binnen 1 werkdag. Zo heb je je gripsokken snel in huis en sta je snel weer op het veld.</p>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "n1": {
+          "type": "note",
+          "settings": {
+            "text": "<p>Let op: deze verzendtijd geldt niet voor pre-orders. De levertijd van een pre-order staat bij het product.</p>",
+            "text_color": "",
+            "border_color": ""
+          }
+        },
+        "a2": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Verzendkosten",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<ul><li>Verzending kost €4,50 per bestelling.</li><li>Vanaf €35 verzenden we gratis.</li><li>We leveren voorlopig alleen binnen Nederland.</li></ul>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "a3": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Bezorging",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<p>We kiezen voor PostNL vanwege hun betrouwbare en snelle bezorging. Zodra je pakket onderweg is, krijg je een trackingnummer waarmee je je bestelling kunt volgen.</p><p>We verwerken elke bestelling snel en zorgvuldig, zodat hij in perfecte staat bij je aankomt.</p>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "n1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "show_toc": true,
+        "toc_title": "Op deze pagina",
+        "toc_numbers": false,
+        "toc_offset": 120,
+        "text_size": 15,
+        "content_max_width": 760,
+        "heading_color": "",
+        "label_color": "",
+        "link_color": "",
+        "bullet_color": "",
+        "line_color": "",
+        "toc_title_color": "",
+        "toc_color": "",
+        "toc_active_color": "",
+        "row_label_color": "",
+        "row_value_color": "",
+        "note_color": "",
+        "note_border_color": "",
+        "section_width": "page",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 88
+      }
+    },
+    "more": {
+      "type": "legal-more",
+      "blocks": {
+        "l1": {
+          "type": "link",
+          "settings": {
+            "label": "Algemene voorwaarden",
+            "link": "/policies/terms-of-service",
+            "new_tab": false
+          }
+        },
+        "l2": {
+          "type": "link",
+          "settings": {
+            "label": "Wettelijke kennisgeving",
+            "link": "/policies/legal-notice",
+            "new_tab": false
+          }
+        },
+        "l3": {
+          "type": "link",
+          "settings": {
+            "label": "Verzendbeleid",
+            "link": "/pages/verzendbeleid",
+            "new_tab": false
+          }
+        },
+        "l4": {
+          "type": "link",
+          "settings": {
+            "label": "Retourbeleid",
+            "link": "/pages/retourbeleid",
+            "new_tab": false
+          }
+        },
+        "l5": {
+          "type": "link",
+          "settings": {
+            "label": "Betalingsbeleid",
+            "link": "/pages/terugbetalingsbeleid",
+            "new_tab": false
+          }
+        },
+        "l6": {
+          "type": "link",
+          "settings": {
+            "label": "Privacybeleid",
+            "link": "/pages/privacybeleid",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6"
+      ],
+      "settings": {
+        "label": "Ook onder Algemeen",
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#eae8e5",
+        "text_color": "#000000",
+        "label_color": "",
+        "chip_bg": "",
+        "chip_fg": "",
+        "chip_border": "",
+        "chip_hover_bg": "",
+        "chip_hover_fg": "",
+        "chip_radius": 40,
+        "chip_size": 13,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": {
+        "heading": "Vraag over dit beleid?",
+        "heading_tag": "h2",
+        "heading_size": 36,
+        "heading_size_mobile": 24,
+        "text": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>.",
+        "text_size": 15,
+        "heading_color": "",
+        "text_color_body": "",
+        "strong_color": "",
+        "button_label": "Contact",
+        "button_link": "/pages/contact",
+        "button_style": "light",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_hover_bg": "",
+        "button_hover_fg": "",
+        "button_radius": 40,
+        "button_size": 14,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#111111",
+        "text_color": "#ffffff",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "body",
+    "more",
+    "help"
+  ]
+}

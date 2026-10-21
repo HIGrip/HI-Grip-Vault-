@@ -1,0 +1,541 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_kjE9nV": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_aFrm6F": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/gripsokken_wit.jpg",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "toggle_overlay": true,
+            "overlay_color": "#00000036",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_bKfBrU": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 33,
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "custom",
+                "custom_width_mobile": 100,
+                "height": "custom",
+                "custom_height": 63,
+                "background_media": "none",
+                "background_color": "rgba(0,0,0,0)",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 33,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_aQQ3Mf": {
+                  "type": "text",
+                  "name": "Title",
+                  "settings": {
+                    "text": "<h1><strong>ONZE VISIE</strong></h1>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "type_preset": "h2",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_iy3FnB": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Bouwen aan de toekomst van performance.<br/><br/></p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "spacer_UFTbA8": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "percent",
+                    "percent_size": 100,
+                    "pixel_size": 120,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "spacer_9KK4eC": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "percent",
+                    "percent_size": 100,
+                    "pixel_size": 120,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "spacer_TJYtU4": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "percent",
+                    "percent_size": 63,
+                    "pixel_size": 0,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "spacer_aFrX4W": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "percent",
+                    "percent_size": 100,
+                    "pixel_size": 120,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_aQQ3Mf",
+                "text_iy3FnB",
+                "spacer_UFTbA8",
+                "spacer_9KK4eC",
+                "spacer_TJYtU4",
+                "spacer_aFrX4W"
+              ]
+            }
+          },
+          "block_order": [
+            "group_bKfBrU"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_aFrm6F"
+      ],
+      "name": "t:names.slideshow",
+      "settings": {
+        "display_mode": "full_frame",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 12,
+        "corner_radius": 0,
+        "slide_height": "medium",
+        "content_position": "on-media",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_direction": "column",
+        "gap": 0,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_KTUFQX": {
+      "type": "section",
+      "blocks": {
+        "group_97Q3j8": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_4zNNgb": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2><strong>Nederlands sportmerk met de focus op performance.</strong></h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_eiLFtF": {
+              "type": "text",
+              "settings": {
+                "text": "<p>De visie van <strong>HÏ Grip</strong> is helder en ambitieus. Uitgroeien tot de <strong>marktleider</strong> in <strong>performance sportswear </strong>voor sporters. We creëren een nieuwe bassline gear voor sporters die een stap verder gaat dan wat er nu is. Daarnaast zijn we voor organisaties betrouwbaar en leveren een uitstekende prijs-kwaliteit verhouding. Een merk dat sporters inspireert, ondersteunt en uitdaagt om elke training en wedstrijd nét dat stapje extra te zetten om te presteren. Doorgaan wanneer anderen stoppen. Daar staat HÏ Grip.</p><p>Wij willen dat elke sporter kennismaakt met sportswear die niet stopt bij 100%, maar gaat voor <strong>110%</strong>. Producten die het verschil maken wanneer prestaties tellen. Door onze drie kernelementen <strong>comfort, innovatie en vertrouwen</strong> te combineren in al onze producten krijgen sporters het fundament om optimaal te presteren. </p>",
+                "width": "100%",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_4zNNgb",
+            "text_eiLFtF"
+          ]
+        }
+      },
+      "block_order": [
+        "group_97Q3j8"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "section_kyArbm": {
+      "type": "section",
+      "blocks": {
+        "image_BkTHYT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PITCH_HI_Grip.png",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_NPgyFz": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_YPc6MA": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2><strong>Problemen in de sportwereld</strong></h2>",
+                "width": "fit-content",
+                "max_width": "none",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_Gtftgm": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 27
+              },
+              "blocks": {}
+            },
+            "text_gRGrMU": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>In de huidige sportmarkt staat vaak de winstmarge centraal, niet de sporter. Dit leidt tot:</p><ul><li><strong>Materiaal als obstakel:</strong> Sportkleding die niet meebeweegt met de ambities van de atleet.</li></ul><p></p><ul><li><strong>Commercie boven kwaliteit:</strong> Focus bij buitenlandse aanbieders op snelle trends en 'geld verdienen' in plaats van pure prestatie.</li></ul><p></p><ul><li><strong>Gebrek aan innovatie:</strong> Sporters weten vaak niet dat er betere alternatieven bestaan omdat de grote merken stilstaan.</li></ul><p></p><ul><li><strong>Onnodige afleiding:</strong> Slecht zittend of matig presterend materiaal dat de focus wegneemt van waar het écht om gaat: de sport.</li></ul>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "divider_zmC6BQ": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 1,
+                "corner_radius": "square",
+                "width_percent": 100,
+                "padding-block-start": 0,
+                "padding-block-end": 27
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_YPc6MA",
+            "divider_Gtftgm",
+            "text_gRGrMU",
+            "divider_zmC6BQ"
+          ]
+        }
+      },
+      "block_order": [
+        "image_BkTHYT",
+        "group_NPgyFz"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    }
+  },
+  "order": [
+    "slideshow_kjE9nV",
+    "main",
+    "section_KTUFQX",
+    "section_kyArbm"
+  ]
+}

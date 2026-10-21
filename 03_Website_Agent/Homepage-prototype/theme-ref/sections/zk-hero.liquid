@@ -1,0 +1,84 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h1'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk-hero" style="{% render 'zk-vars', s: s %}--z-focus:{{ s.focus_x }}% {{ s.focus_y }}%;" {{ section.shopify_attributes }}>
+  {%- if s.image != blank -%}
+    <div class="zk-hero__media">
+      {{- s.image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 900px) 66vw, 100vw', widths: '800, 1200, 1600, 1800', alt: s.image.alt -}}
+    </div>
+  {%- endif -%}
+  <div class="zk__wrap zk-hero__in">
+    {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+    <{{ tag }} class="zk-hero__h1">
+      {%- if s.line_1 != blank -%}<span class="zk-hero__ln"><span>{{ s.line_1 }}</span></span>{%- endif -%}
+      {%- if s.line_2 != blank -%}<span class="zk-hero__ln"><span>{{ s.line_2 }}</span></span>{%- endif -%}
+    </{{ tag }}>
+    {%- if s.subline != blank -%}<p class="zk-hero__sub">{{ s.subline }}</p>{%- endif -%}
+    <div class="zk-hero__cta">
+      {%- if s.cta_1_label != blank -%}
+        <a class="zk__pill" href="{{ s.cta_1_link | default: '#aanvragen' }}" {% if s.cta_1_segment != 'none' %}data-zk-segment="{{ s.cta_1_segment }}"{% endif %}>{{ s.cta_1_label }} {% render 'zk-chev' %}</a>
+      {%- endif -%}
+      {%- if s.cta_2_label != blank -%}
+        <a class="zk__pill zk__pill--ghost" href="{{ s.cta_2_link | default: '#proces' }}">{{ s.cta_2_label }} {% render 'zk-chev' %}</a>
+      {%- endif -%}
+    </div>
+    {%- if s.badge_number != blank -%}
+      <div class="zk-hero__badge">
+        <div>
+          <strong data-zk-count data-to="{{ s.badge_count_to | default: 3000 }}" data-dec="0">{{ s.badge_number }}</strong>
+          <span class="zk__micro">{{ s.badge_label }}</span>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Hero",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Foto (rechts)" },
+    { "type": "range", "id": "focus_x", "label": "Beeldfocus horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 40 },
+    { "type": "range", "id": "focus_y", "label": "Beeldfocus verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "header", "content": "Tekst" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel (leeg = verborgen)", "default": "HÏ Grip Zakelijk" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h1" },
+    { "type": "text", "id": "line_1", "label": "Kop regel 1", "default": "Stop met glijden." },
+    { "type": "text", "id": "line_2", "label": "Kop regel 2 (accentkleur)", "default": "Start met grip." },
+    { "type": "textarea", "id": "subline", "label": "Subtekst", "default": "Performance Grip Socks voor sportwinkels en sportclubs." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Knoppen" },
+    { "type": "text", "id": "cta_1_label", "label": "Knop 1: tekst", "default": "Vraag sample" },
+    { "type": "text", "id": "cta_1_link", "label": "Knop 1: link", "default": "#aanvragen" },
+    { "type": "select", "id": "cta_1_segment", "label": "Knop 1: formulier voorselecteren", "options": [ { "value": "none", "label": "Niet" }, { "value": "retailer", "label": "Sportretailer" }, { "value": "club", "label": "Club of studio" } ], "default": "none" },
+    { "type": "text", "id": "cta_2_label", "label": "Knop 2: tekst (leeg = verborgen)", "default": "Zo werkt het" },
+    { "type": "text", "id": "cta_2_link", "label": "Knop 2: link", "default": "#proces" },
+    { "type": "color", "id": "button_bg", "label": "Knoppen: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knoppen: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knoppen: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knoppen: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "color", "id": "button2_bg", "label": "Knop 2 (omlijnd): achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button2_fg", "label": "Knop 2 (omlijnd): tekstkleur" },
+    { "type": "color", "id": "button2_border", "label": "Knop 2 (omlijnd): randkleur" },
+    { "type": "header", "content": "Badge" },
+    { "type": "text", "id": "badge_number", "label": "Getal (zoals getoond, leeg = badge verborgen)", "default": "3000+" },
+    { "type": "text", "id": "badge_count_to", "label": "Telt op tot (getal)", "default": "3000" },
+    { "type": "text", "id": "badge_label", "label": "Label", "default": "Sporters gingen je voor" },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (regel 2, badge)", "default": "#ccff00" },
+    { "type": "color", "id": "heading_color", "label": "Kleur kop regel 1 (leeg = tekstkleur)" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 140 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 108 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 56 }
+  ],
+  "presets": [ { "name": "Zakelijk: Hero" } ]
+}
+{% endschema %}

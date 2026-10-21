@@ -1,0 +1,164 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-more.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign chips = s.custom_chips | newline_to_br | split: '<br />'
+  assign groups = s.custom_groups | newline_to_br | split: '<br />'
+  assign ref_clubs = s.ref_clubs | newline_to_br | split: '<br />'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk--light zk-club" id="{{ s.anchor | default: 'clubs' }}" style="{% render 'zk-vars', s: s %}--z-focus:{{ s.focus_x | default: 60 }}% {{ s.focus_y | default: 50 }}%;" {{ section.shopify_attributes }}>
+  <div class="zk__wrap">
+    <div class="zk-split zk-split--rev">
+      <div class="zk-photo">
+        {%- if s.image != blank -%}
+          {{- s.image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '500, 800, 1200', sizes: '(min-width: 900px) 45vw, 100vw', alt: s.image.alt -}}
+        {%- endif -%}
+        {%- if s.photo_tag != blank -%}<span class="zk-tag">{{ s.photo_tag }}</span>{%- endif -%}
+      </div>
+      <div>
+        <div class="zk__head" style="margin-bottom:0">
+          {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+          {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+        </div>
+        <ul class="zk-rows">
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}><strong>{{ block.settings.title }}</strong><span>{{ block.settings.text }}</span></li>
+          {%- endfor -%}
+        </ul>
+        {%- if s.ref_clubs != blank -%}
+          <div class="zk-refs">
+            {%- if s.refs_label != blank -%}<p class="zk-refs__label">{{ s.refs_label }}</p>{%- endif -%}
+            <ul>
+              {%- for c in ref_clubs -%}
+                {%- assign cc = c | strip -%}
+                {%- if cc != blank -%}<li>{{ cc }}</li>{%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- elsif s.refs != blank -%}
+          <p class="zk__muted zk-refs">{{ s.refs }}</p>
+        {%- endif -%}
+        {%- if s.cta_label != blank -%}
+          <div class="zk-cta"><a class="zk__pill zk__pill--dark" href="{{ s.cta_link | default: '#aanvragen' }}" {% if s.cta_segment != 'none' %}data-zk-segment="{{ s.cta_segment }}"{% endif %}>{{ s.cta_label }} {% render 'zk-chev' %}</a></div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if s.show_custom -%}
+      <div class="zk-custom">
+        <div class="zk-custom__intro">
+          {%- if s.custom_eyebrow != blank -%}<p class="zk__eyebrow" style="color:var(--z-ac,#ccff00)">{{ s.custom_eyebrow }}</p>{%- endif -%}
+          {%- if s.custom_heading != blank -%}<h3 class="zk__h2" style="font-size:clamp(1.8rem,4vw,3rem);color:{{ s.custom_heading_color | default: '#fff' }}">{{ s.custom_heading }}</h3>{%- endif -%}
+          {%- if s.custom_text != blank -%}<p>{{ s.custom_text }}</p>{%- endif -%}
+          {%- if s.custom_image != blank -%}
+            <figure class="zk-custom__lengths">
+              {{- s.custom_image | image_url: width: 700 | image_tag: loading: 'lazy', widths: '300, 500, 700', sizes: '(min-width: 900px) 320px, 260px', alt: s.custom_image.alt -}}
+              {%- if s.custom_image_caption != blank -%}<figcaption>{{ s.custom_image_caption }}</figcaption>{%- endif -%}
+            </figure>
+          {%- endif -%}
+        </div>
+        <div class="zk-custom__opts">
+          {%- if s.custom_groups != blank -%}
+            {%- comment -%} Regel "Ontwerp: Logo's, Kleur" wordt een groep met titel en opties {%- endcomment -%}
+            {%- for g in groups -%}
+              {%- assign gg = g | strip -%}
+              {%- if gg contains ':' -%}
+                {%- assign group_title = gg | split: ':' | first | strip -%}
+                {%- assign group_opts = gg | remove_first: group_title | remove_first: ':' | split: ',' -%}
+                <div class="zk-opt">
+                  <h4>{{ group_title }}</h4>
+                  <ul>
+                    {%- for o in group_opts -%}
+                      {%- assign oo = o | strip -%}
+                      {%- if oo != blank -%}<li>{{ oo }}</li>{%- endif -%}
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- else -%}
+            <ul class="zk-chips">
+              {%- for c in chips -%}
+                {%- assign ct = c | strip -%}
+                {%- if ct != blank -%}<li>{{ ct }}</li>{%- endif -%}
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+          {%- if s.custom_cta_label != blank -%}
+            <div class="zk-cta"><a class="zk__pill zk__pill--alt" href="{{ s.custom_cta_link | default: '#aanvragen' }}" {% if s.custom_calc_mode != blank %}data-zk-calc-mode="{{ s.custom_calc_mode }}"{% endif %}>{{ s.custom_cta_label }} {% render 'zk-chev' %}</a></div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Clubs",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "clubs" },
+    { "type": "header", "content": "Clubs" },
+    { "type": "image_picker", "id": "image", "label": "Foto" },
+    { "type": "range", "id": "focus_x", "label": "Foto: focuspunt horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 60 },
+    { "type": "range", "id": "focus_y", "label": "Foto: focuspunt verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "text", "id": "photo_tag", "label": "Label op de foto", "default": "Voetbal · padel · rugby" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel", "default": "Voor sportclubs en studio's" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Eén sok voor het hele team" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "text", "id": "refs_label", "label": "Referenties: kop", "default": "Onder meer bij" },
+    { "type": "textarea", "id": "ref_clubs", "label": "Referenties: clubs (één per regel)", "default": "SVS\nV.V. Spirit\nV.V. Lyra\nConcordia" },
+    { "type": "text", "id": "refs", "label": "Referenties als losse zin (alleen als de clublijst leeg is)", "default": "Onder meer bij SVS, V.V. Spirit, V.V. Lyra en Concordia." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "text", "id": "cta_label", "label": "Knop: tekst", "default": "Vraag sample" },
+    { "type": "text", "id": "cta_link", "label": "Knop: link", "default": "#aanvragen" },
+    { "type": "select", "id": "cta_segment", "label": "Formulier voorselecteren", "options": [ { "value": "none", "label": "Niet" }, { "value": "retailer", "label": "Sportretailer" }, { "value": "club", "label": "Club of studio" } ], "default": "club" },
+    { "type": "header", "content": "Eigen ontwerp" },
+    { "type": "checkbox", "id": "show_custom", "label": "Blok 'Eigen ontwerp' tonen", "default": true },
+    { "type": "image_picker", "id": "custom_image", "label": "Afbeelding sokhoogtes (zwart op wit, wordt in het paneel omgekeerd)" },
+    { "type": "text", "id": "custom_image_caption", "label": "Onderschrift afbeelding", "default": "Zes lengtes, van no show tot over-the-calf." },
+    { "type": "text", "id": "custom_eyebrow", "label": "Bovenregel", "default": "Eigen ontwerp" },
+    { "type": "text", "id": "custom_heading", "label": "Kop", "default": "Jouw logo. Jouw kleuren." },
+    { "type": "color", "id": "custom_heading_color", "label": "Kleur kop eigen ontwerp", "default": "#ffffff" },
+    { "type": "textarea", "id": "custom_text", "label": "Tekst", "default": "Een eigen sok bestel je vanaf 150 paar. Dit pas je aan:" },
+    { "type": "textarea", "id": "custom_groups", "label": "Opties per groep (één groep per regel)", "info": "Schrijf: Groep: optie, optie, optie", "default": "Ontwerp: Logo's, Kleur, Stofcombinatie\nPasvorm en techniek: Lengte, Maat, Compressie, Verstevigde zones, Naadloos\nBestelling: Hoeveelheid, Verpakking, Verzendmethode" },
+    { "type": "textarea", "id": "custom_chips", "label": "Opties zonder groepen (alleen als de groepen leeg zijn)", "default": "Stofcombinatie\nLengte\nKleur\nHoeveelheid\nMaat\nVerpakking\nVerzendmethode\nLogo's\nVerstevigde zones\nCompressie\nNaadloos" },
+    { "type": "text", "id": "custom_cta_label", "label": "Knop: tekst", "default": "Bekijk prijzen" },
+    { "type": "text", "id": "custom_cta_link", "label": "Knop: link", "default": "#aanvragen" },
+    { "type": "text", "id": "custom_calc_mode", "label": "Calculator-tab openen (interne naam van de tab)", "default": "custom" },
+    { "type": "header", "content": "Knoppen" },
+    { "type": "color", "id": "button_bg", "label": "Knoppen (eerste knop): achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knoppen: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knoppen: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knoppen: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "color", "id": "button2_bg", "label": "Tweede knop (Bekijk prijzen): achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button2_fg", "label": "Tweede knop (Bekijk prijzen): tekstkleur" },
+    { "type": "color", "id": "button2_border", "label": "Tweede knop (Bekijk prijzen): randkleur" },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur", "default": "#ccff00" },
+    { "type": "color", "id": "eyebrow_color", "label": "Kleur bovenregel", "default": "#5c5d5f" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "Voordeel",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Titel", "default": "Uniformiteit" },
+        { "type": "text", "id": "text", "label": "Tekst" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "Zakelijk: Clubs" } ]
+}
+{% endschema %}

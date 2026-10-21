@@ -1,0 +1,65 @@
+/* HÏ Grip homepage-prototype · tokens. De enige plek met kleurwaarden (lint.py faalt op hex elders).
+   Eén vaste merklook (licht, met donkere momenten uit rhythm.json); geen dark-mode-variant, bewust. */
+:root {
+  /* merkkleuren (Brand Core, Logo & Kleurenpalet) */
+  --hi-black: #000000;
+  --hi-white: #FFFFFF;
+  --hi-yellow: #CCFF00;      /* volt: alleen als detail (focusring, een stip), nooit als vlak of onderstreping */
+  --hi-blue: #0011A7;        /* niet als sectievlak */
+  --hi-orange: #FF6A00;      /* niet als sectievlak */
+  --hi-red: #E10600;         /* niet als sectievlak */
+  --hi-trust: #00b67a;       /* alleen Trustpilot-ster, max 16px */
+
+  /* neutralen */
+  --hi-near-black: #111111;
+  --hi-offwhite: #EAE8E5;
+  --hi-graphite: #5C5D5F;    /* tekstgrijs op licht */
+  --hi-titanium: #909194;    /* tekstgrijs op donker */
+  --hi-studio: #F7F7F7;      /* de studiogrond van de 360°-opname, zodat de frames naadloos overlopen */
+  --hi-line: rgba(0, 0, 0, 0.12);
+  --hi-line-dark: rgba(255, 255, 255, 0.16);
+  --hi-scrim: rgba(0, 0, 0, 0.32);
+  --hi-scrim-strong: rgba(0, 0, 0, 0.86);
+
+  /* sporttinten voor 07: gedempt en licht, afgeleid van de dominante kleur van de sportfoto */
+  --hi-tint-padel: #CFDCE3;    /* blauwe padelbaan */
+  --hi-tint-tennis: #E8D6CA;   /* gravel */
+  --hi-tint-voetbal: #D5DDC8;  /* gras */
+  --hi-tint-rugby: #DDD8C8;    /* modder en droog gras */
+
+  /* ruimte */
+  --hp-space-xs: 8px;
+  --hp-space-sm: 16px;
+  --hp-space-ms: 24px;
+  --hp-space-md: 32px;
+  --hp-space-ml: 48px;
+  --hp-space-lg: 64px;
+  --hp-space-xl: 96px;
+  --hp-space-xxl: 160px;
+  --hp-space-section: clamp(64px, 9vw, 160px);
+  --hp-space-gutter: max(16px, env(safe-area-inset-left, 0px));
+  --hp-space-gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --hp-space-max: 1440px;
+
+  /* type: alleen Poppins */
+  --hp-type-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --hp-type-h1: clamp(44px, 7.2vw, 112px);
+  --hp-type-h2: clamp(32px, 4.4vw, 64px);
+  --hp-type-h3: clamp(20px, 1.7vw, 26px);
+  --hp-type-lead: clamp(17px, 1.35vw, 20px);
+  --hp-type-body: 16px;
+  --hp-type-small: 13px;
+  --hp-type-label: 12px;
+  --hp-type-track-head: -0.04em;
+  --hp-type-track-body: -0.02em;
+  --hp-type-track-label: 0.06em;
+
+  /* vorm */
+  --hp-radius-media: clamp(16px, 1.8vw, 28px);
+
+  /* motion: hard weg, zacht landen (bewegingstaal van /pages/over-ons) */
+  --hp-ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --hp-dur-1: 160ms;   /* hover, tik, knoppen */
+  --hp-dur-2: 480ms;   /* staatwissel: kaart, achtergrond, accordeon */
+  --hp-dur-3: 900ms;   /* grote beweging bij scroll */
+}

@@ -1,0 +1,294 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&display=swap">
+<script>window.VG2_IMG={'sok-10.webp':{{ 'vg-sok-10.webp' | asset_url | json }},'sok-20-zwart.webp':{{ 'vg-sok-20-zwart.webp' | asset_url | json }},'sok-20-wit.webp':{{ 'vg-sok-20-wit.webp' | asset_url | json }},'lif-padel.webp':{{ 'vg-lif-padel.webp' | asset_url | json }},'sok-10-vrij.png':{{ 'vg-sok-10-vrij.png' | asset_url | json }}};</script>
+{% raw %}<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebPage","@id":"https://www.higrip.nl/pages/gripsokken-vergelijken#webpage","url":"https://www.higrip.nl/pages/gripsokken-vergelijken","name":"Gripsokken vergelijken: 1.0 of 2.0?","description":"Vergelijking van de Performance Gripsokken 1.0 en 2.0: grip, materiaal, maten, features en prijs.","inLanguage":"nl-NL","publisher":{"@id":"https://www.higrip.nl/#organization"},"breadcrumb":{"@id":"https://www.higrip.nl/pages/gripsokken-vergelijken#breadcrumb"},"mainEntity":{"@id":"https://www.higrip.nl/pages/gripsokken-vergelijken#itemlist"},"relatedLink":"https://www.higrip.nl/collections/gripsokken"},
+{"@type":"ItemList","@id":"https://www.higrip.nl/pages/gripsokken-vergelijken#itemlist","numberOfItems":3,"itemListElement":[
+{"@type":"ListItem","position":1,"url":"https://www.higrip.nl/products/performance-gripsokken","name":"Performance Gripsokken"},
+{"@type":"ListItem","position":2,"url":"https://www.higrip.nl/products/performance-gripsokken-2-0-zwart","name":"Performance Gripsokken 2.0 Zwart"},
+{"@type":"ListItem","position":3,"url":"https://www.higrip.nl/products/performance-gripsokken-2-0-wit","name":"Performance Gripsokken 2.0 Wit"}]},
+{"@type":"BreadcrumbList","@id":"https://www.higrip.nl/pages/gripsokken-vergelijken#breadcrumb","itemListElement":[
+{"@type":"ListItem","position":1,"name":"Home","item":"https://www.higrip.nl/"},
+{"@type":"ListItem","position":2,"name":"Shop","item":"https://www.higrip.nl/collections/gripsokken"},
+{"@type":"ListItem","position":3,"name":"Vergelijken","item":"https://www.higrip.nl/pages/gripsokken-vergelijken"}]},
+{"@type":"Organization","@id":"https://www.higrip.nl/#organization","name":"HÏ Grip","url":"https://www.higrip.nl/"}
+]}
+</script>{% endraw %}
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-grip" viewBox="0 0 32 32"><path d="M4 26L10 16 16 26zM16 26L22 16 28 26zM10 16L16 6 22 16z"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 32 32"><path d="M4 16L16 4h12v12L16 28zM22 10h.1"/></symbol>
+  <symbol id="i-fab" viewBox="0 0 32 32"><path d="M6 10h20M6 16h20M6 22h20M10 6v20M16 6v20M22 6v20"/></symbol>
+  <symbol id="i-size" viewBox="0 0 32 32"><path d="M4 22h24M4 22v-4M10 22v-3M16 22v-4M22 22v-3M28 22v-4M8 12l-4 0M4 12l3-3M4 12l3 3M24 12h4M28 12l-3-3M28 12l-3 3"/></symbol>
+  <symbol id="i-sport" viewBox="0 0 32 32"><path d="M4 24h10l4-8 6 4M18 8a2 2 0 1 0 0-.1M2 16h6M2 20h4"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 32 32"><path d="M16 6v20M6 16h20"/></symbol>
+  <symbol id="i-euro" viewBox="0 0 32 32"><path d="M24 8a10 10 0 1 0 0 16M5 14h14M5 19h14"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 32 32"><path d="M16 4C16 4 8 13 8 19a8 8 0 0 0 16 0c0-6-8-15-8-15z"/></symbol>
+</svg>
+<div class="vg2">
+<section class="vs{% if s.custom_pad %} vg2-pad{% endif %}" aria-labelledby="h1" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="wrap vs__top">
+      <nav aria-label="Kruimelpad">
+      <ol class="crumb"><li><a href="{{ s.url1 | default: "https://www.higrip.nl/" }}">{{ s.t2 | escape }}</a></li><li aria-hidden="true">{{ s.t3 | escape }}</li><li><a href="{{ s.url4 | default: "https://claude.ai/artifact/32qFKvpp9uHTntU1EGPvFU" }}">{{ s.t5 | escape }}</a></li><li aria-hidden="true">{{ s.t6 | escape }}</li><li aria-current="page">{{ s.t7 | escape }}</li></ol>
+    </nav>
+      <div class="vs__head rv">
+        <p class="lbl">{{ s.t8 | escape }}</p>
+        <h1 class="vs__h" id="h1">{{ s.t9 | escape }} <span>{{ s.t10 | escape }}</span></h1>
+        <p class="lead">{{ s.t11 | escape }}</p>
+        <div class="hero__cta">
+          <a class="btn btn--k" href="#kies">{{ s.t12 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+          <a class="btn btn--o" href="#vergelijk">{{ s.t13 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="vs__stage rv d1">
+      <a class="vs__side vs__side--10" href="{{ s.url14 | default: "https://www.higrip.nl/products/performance-gripsokken" }}">
+        <span class="vs__num" aria-hidden="true">{{ s.t15 | escape }}</span>
+        <img class="vs__img" src="{%- if s.ima16 != blank -%}{{ s.ima16 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-10-vrij.png' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t17 | escape }}" fetchpriority="high">
+        <span class="vs__meta"><span class="vs__tag">{{ s.t18 | escape }}</span><b>{{ s.t19 | escape }}</b><span class="num">{{ s.t20 | escape }}</span></span>
+      </a>
+      <span class="vs__vs" aria-hidden="true">{{ s.t21 | escape }}</span>
+      <a class="vs__side vs__side--20" data-link-20 href="{{ s.url22 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">
+        <span class="vs__num" aria-hidden="true">{{ s.t23 | escape }}</span>
+        <img class="vs__img" src="{%- if s.ima24 != blank -%}{{ s.ima24 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-20-zwart.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t25 | escape }}" fetchpriority="high">
+        <span class="vs__meta"><span class="vs__tag vs__tag--v">{{ s.t26 | escape }}</span><b>{{ s.t27 | escape }}</b><span class="num">{{ s.t28 | escape }}</span></span>
+      </a>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Hero",
+  "settings": [
+    {
+      "type": "url",
+      "id": "url1",
+      "label": "Link · /"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "A · Home",
+      "default": "Home"
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "LI · /",
+      "default": "/"
+    },
+    {
+      "type": "url",
+      "id": "url4",
+      "label": "Link · https://claude.ai/artifact/32qFKvpp9uHTntU1E"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "A · Shop",
+      "default": "Shop"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "LI · /",
+      "default": "/"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "LI · Vergelijken",
+      "default": "Vergelijken"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "P · Gripsokken vergelijken",
+      "default": "Gripsokken vergelijken"
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "H1 · 1.0 of 2.0?",
+      "default": "1.0 of 2.0?"
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "label": "SPAN · Kies je grip.",
+      "default": "Kies je grip."
+    },
+    {
+      "type": "textarea",
+      "id": "t11",
+      "label": "P · Allebei hebben ze siliconen gripzones. De 2.",
+      "default": "Allebei hebben ze siliconen gripzones. De 2.0 voegt compressie, Coolmax® en een naadloze afwerking toe. Zie de verschillen in één oogopslag, of laat de keuzehulp kiezen."
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "A · Help me kiezen",
+      "default": "Help me kiezen"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "A · Zie de verschillen",
+      "default": "Zie de verschillen"
+    },
+    {
+      "type": "url",
+      "id": "url14",
+      "label": "Link · /products/performance-gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t15",
+      "label": "SPAN · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima16",
+      "label": "Afbeelding · sok-10-vrij.png"
+    },
+    {
+      "type": "text",
+      "id": "t17",
+      "label": "Alt-tekst · Performance Gripsokken 1.0",
+      "default": "Performance Gripsokken 1.0"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "label": "SPAN · Prijsvriendelijk",
+      "default": "Prijsvriendelijk"
+    },
+    {
+      "type": "text",
+      "id": "t19",
+      "label": "B · 1.0",
+      "default": "1.0"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "label": "SPAN · €14,95",
+      "default": "€14,95"
+    },
+    {
+      "type": "text",
+      "id": "t21",
+      "label": "SPAN · VS",
+      "default": "VS"
+    },
+    {
+      "type": "url",
+      "id": "url22",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "label": "SPAN · 2.0",
+      "default": "2.0"
+    },
+    {
+      "type": "image_picker",
+      "id": "ima24",
+      "label": "Afbeelding · sok-20-zwart.webp"
+    },
+    {
+      "type": "text",
+      "id": "t25",
+      "label": "Alt-tekst · Performance Gripsokken 2.0",
+      "default": "Performance Gripsokken 2.0"
+    },
+    {
+      "type": "text",
+      "id": "t26",
+      "label": "SPAN · Ultieme performance",
+      "default": "Ultieme performance"
+    },
+    {
+      "type": "text",
+      "id": "t27",
+      "label": "B · 2.0",
+      "default": "2.0"
+    },
+    {
+      "type": "text",
+      "id": "t28",
+      "label": "SPAN · €17,95",
+      "default": "€17,95"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Hero"
+    }
+  ]
+}
+{% endschema %}

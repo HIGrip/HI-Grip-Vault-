@@ -1,0 +1,369 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+{{ 'blog-article.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign product = s.product | default: all_products['performance-gripsokken-2-0-wit']
+
+  comment
+    Titel automatisch splitsen op de eerste "?" of ":". Het deel erna krijgt de accentkleur.
+  endcomment
+  assign title_top = article.title
+  assign title_accent = ''
+  if article.title contains '?'
+    assign parts = article.title | split: '?'
+    assign title_top = parts.first | append: '?'
+    assign title_accent = article.title | remove_first: title_top | strip
+  elsif article.title contains ':'
+    assign parts = article.title | split: ':'
+    assign title_top = parts.first | append: ':'
+    assign title_accent = article.title | remove_first: title_top | strip
+  endif
+
+  assign intro = article.excerpt | strip_html | strip
+  assign word_count = article.content | strip_html | split: ' ' | size
+  assign read_minutes = word_count | divided_by: 200 | at_least: 1
+  assign display_date = article.published_at | default: article.created_at
+  assign eyebrow = s.eyebrow | default: blog.title
+
+  comment
+    Oudere blogs hebben hun tekst in theme-blokken en alleen een #hashtag als artikeltekst.
+    Die hashtag tonen we als label in de hero in plaats van als tekstvak.
+  endcomment
+  assign body_text = article.content | strip_html | strip
+  assign body_is_tag = false
+  if body_text.size < 40 and body_text contains '#'
+    assign body_is_tag = true
+  endif
+-%}
+
+<article class="ba" data-ba>
+  {%- comment -%} 1. Hero: titel op de foto {%- endcomment -%}
+  <section class="sl ba-hero{% unless article.image %} ba-hero--noimg{% endunless %}" data-accent="{{ s.accent }}">
+    {%- if article.image -%}
+      <div class="ba-hero__media">
+        {{ article.image | image_url: width: 2400 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '100vw', widths: '800, 1200, 1600, 2000, 2400', alt: article.image.alt | default: article.title }}
+      </div>
+    {%- endif -%}
+
+    <div class="sl__wrap ba-hero__inner">
+      <p class="sl__eyebrow">
+        {%- if s.show_breadcrumb -%}
+          <a class="ba-hero__crumb" href="{{ blog.url }}">{{ eyebrow }}</a>
+        {%- else -%}
+          {{ eyebrow }}
+        {%- endif -%}
+      </p>
+
+      <h1 class="ba-hero__title">
+        <span class="ba-hero__top">{{ title_top }}</span>
+        {%- if title_accent != blank %} <span class="ba-hero__mark">{{ title_accent }}</span>{%- endif -%}
+      </h1>
+
+      {%- if intro != blank -%}
+        <p class="ba-hero__sub">{{ intro }}</p>
+      {%- endif -%}
+
+      <ul class="ba-hero__chips">
+        {%- if display_date -%}<li>{{ display_date | time_tag: format: 'date' }}</li>{%- endif -%}
+        <li>{{ read_minutes }} min lezen</li>
+        {%- if s.show_author and article.author != blank -%}<li>{{ article.author }}</li>{%- endif -%}
+        {%- if body_is_tag -%}<li>{{ body_text }}</li>{%- endif -%}
+      </ul>
+    </div>
+  </section>
+
+  {%- comment -%} 2. Artikel + zijbalk {%- endcomment -%}
+  <section class="sl ba-body" data-accent="{{ s.accent }}">
+    <div class="sl__wrap ba-body__grid">
+      <div class="ba-content" data-ba-content>
+        {%- unless body_is_tag -%}
+          <rte-formatter>
+            {{ article.content }}
+          </rte-formatter>
+        {%- endunless -%}
+        <div class="ba-blocks">
+          {%- content_for 'blocks' -%}
+        </div>
+      </div>
+
+      <aside class="ba-aside">
+        <nav class="ba-toc" aria-label="In dit artikel" data-ba-toc hidden>
+          <p class="sl__eyebrow">In dit artikel</p>
+          <ol class="ba-toc__list" data-ba-toc-list></ol>
+        </nav>
+
+        {%- if s.show_product and product != blank -%}
+          <div class="ba-card">
+            <a class="ba-card__media" href="{{ product.url }}" tabindex="-1" aria-hidden="true">
+              {{ product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', sizes: '320px', widths: '300, 450, 600, 800', alt: '' }}
+              {%- if s.cta_eyebrow != blank -%}<span class="ba-card__tag">{{ s.cta_eyebrow }}</span>{%- endif -%}
+            </a>
+            <div class="ba-card__body">
+              <p class="ba-card__title">{{ product.title }}</p>
+              <p class="ba-card__price">
+                {{ product.price | money }}
+                {%- if product.compare_at_price > product.price %} <s>{{ product.compare_at_price | money }}</s>{%- endif -%}
+              </p>
+              <a class="ba-card__btn" href="{{ product.url }}">
+                {{ s.product_cta | default: 'Shop nu' }}
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="ba-card__more" href="{{ s.cta_link | default: '/collections/gripsokken' }}">Alle gripsokken</a>
+            </div>
+          </div>
+        {%- endif -%}
+      </aside>
+    </div>
+  </section>
+
+  {%- comment -%} 3. CTA als pop-up aan het einde van het artikel {%- endcomment -%}
+  {%- if s.cta_heading != blank -%}
+    <aside class="ba-pop" data-ba-pop hidden role="complementary" aria-labelledby="ba-pop-title-{{ section.id }}">
+      <button type="button" class="ba-pop__close" data-ba-pop-close aria-label="Sluiten">
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      {%- if s.cta_eyebrow != blank -%}<p class="ba-pop__eyebrow">{{ s.cta_eyebrow }}</p>{%- endif -%}
+      <h2 class="ba-pop__title" id="ba-pop-title-{{ section.id }}">{{ s.cta_heading }}</h2>
+      {%- if s.cta_text != blank -%}<p class="ba-pop__text">{{ s.cta_text }}</p>{%- endif -%}
+      <a class="ba-pop__btn" href="{{ s.cta_link | default: '/collections/gripsokken' }}">
+        {{ s.cta_button | default: 'Shop gripsokken' }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </aside>
+  {%- endif -%}
+
+  {%- comment -%} 4. Lees ook {%- endcomment -%}
+  {%- if s.show_related -%}
+    {%- assign shown = 0 -%}
+    {%- capture related_items -%}
+      {%- for other in blog.articles -%}
+        {%- if other.id == article.id or shown >= 3 -%}{%- continue -%}{%- endif -%}
+        {%- assign shown = shown | plus: 1 -%}
+        <li>
+          <a class="sl-related__link{% unless other.image %} sl-related__link--noimg{% endunless %}" href="{{ other.url }}">
+            {%- if other.image -%}
+              {{ other.image | image_url: width: 800 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 33vw, 100vw', widths: '400, 600, 800', alt: '' }}
+            {%- endif -%}
+            <span class="sl-related__name"><span>{{ other.title }}</span><span aria-hidden="true">&rarr;</span></span>
+          </a>
+        </li>
+      {%- endfor -%}
+    {%- endcapture -%}
+    {%- if shown > 0 -%}
+      <section class="sl sl-related ba-related" data-accent="{{ s.accent }}">
+        <div class="sl__wrap">
+          <p class="sl__eyebrow">{{ s.related_eyebrow | default: 'Blog' }}</p>
+          <h2 class="sl__h2">{{ s.related_heading | default: 'Lees ook' }}</h2>
+          <ul class="sl-related__grid ba-related__grid">{{ related_items }}</ul>
+        </div>
+      </section>
+    {%- endif -%}
+  {%- endif -%}
+</article>
+
+<script type="application/ld+json">
+  {{ article | structured_data }}
+</script>
+
+<script>
+  (function () {
+    var pop = document.querySelector('[data-ba-pop]');
+    var content = document.querySelector('[data-ba-content]');
+    if (!pop || !content) return;
+    var key = 'ba-pop-closed';
+    try { if (sessionStorage.getItem(key)) return; } catch (e) {}
+
+    var closed = false;
+    function show() {
+      if (closed) return;
+      pop.hidden = false;
+      requestAnimationFrame(function () { pop.classList.add('is-open'); });
+    }
+    function hide() {
+      closed = true;
+      pop.classList.remove('is-open');
+      setTimeout(function () { pop.hidden = true; }, 300);
+      try { sessionStorage.setItem(key, '1'); } catch (e) {}
+    }
+
+    var end = document.createElement('span');
+    end.setAttribute('aria-hidden', 'true');
+    content.appendChild(end);
+
+    function check() {
+      if (closed || !pop.hidden) return;
+      if (end.getBoundingClientRect().top < window.innerHeight * 0.9) {
+        show();
+        window.removeEventListener('scroll', check);
+      }
+    }
+    window.addEventListener('scroll', check, { passive: true });
+    window.addEventListener('resize', check);
+    check();
+
+    pop.querySelector('[data-ba-pop-close]').addEventListener('click', hide);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !pop.hidden) hide(); });
+  })();
+</script>
+
+<script>
+  (function () {
+    var content = document.querySelector('[data-ba-content]');
+    var toc = document.querySelector('[data-ba-toc]');
+    var list = document.querySelector('[data-ba-toc-list]');
+    if (!content || !toc || !list) return;
+    var heads = content.querySelectorAll('h2');
+    var grid = content.closest('.ba-body__grid');
+    if (heads.length < 2) { if (grid) grid.classList.add('ba-body__grid--solo'); return; }
+    var used = {};
+    heads.forEach(function (h) {
+      var id = h.id || h.textContent.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      if (used[id]) id += '-' + used[id]++; else used[id] = 1;
+      h.id = id;
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+    toc.hidden = false;
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Blogartikel (HÏ Grip)",
+  "class": "section-wrapper",
+  "blocks": [
+    { "type": "@theme" },
+    { "type": "@app" }
+  ],
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Alles komt uit het artikel zelf: titel, uitgelichte afbeelding, samenvatting (intro) en inhoud. Deze instellingen gelden voor alle blogs."
+    },
+    {
+      "type": "select",
+      "id": "accent",
+      "label": "Accentkleur",
+      "options": [
+        { "value": "blue", "label": "Performance Blauw" },
+        { "value": "orange", "label": "Oranje" },
+        { "value": "red", "label": "Performance Rood" },
+        { "value": "neon", "label": "Neon" }
+      ],
+      "default": "blue"
+    },
+    {
+      "type": "header",
+      "content": "Hero"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Label boven de titel",
+      "info": "Leeg = naam van het blog",
+      "default": "HÏ Grip blog"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "label": "Label linkt naar het blogoverzicht",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Auteur tonen",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Productkaart in de zijbalk"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product",
+      "label": "Productkaart tonen",
+      "default": false
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "product_cta",
+      "label": "Knoptekst",
+      "default": "Shop nu"
+    },
+    {
+      "type": "header",
+      "content": "CTA-band"
+    },
+    {
+      "type": "text",
+      "id": "cta_eyebrow",
+      "label": "Label",
+      "default": "Performance gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "Kop",
+      "default": "Ga door waar anderen stoppen"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Tekst",
+      "default": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35."
+    },
+    {
+      "type": "text",
+      "id": "cta_button",
+      "label": "Knoptekst",
+      "default": "Shop gripsokken"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Lees ook"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_related",
+      "label": "Andere blogs tonen",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "related_eyebrow",
+      "label": "Label",
+      "default": "Blog"
+    },
+    {
+      "type": "text",
+      "id": "related_heading",
+      "label": "Kop",
+      "default": "Lees ook"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blogartikel (HÏ Grip)"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["article"]
+  }
+}
+{% endschema %}

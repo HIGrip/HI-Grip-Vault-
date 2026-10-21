@@ -1,0 +1,376 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add('mv-js');</script>
+{% raw %}<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "AboutPage",
+   "@id": "https://www.higrip.nl/pages/onze-missie#webpage",
+   "url": "https://www.higrip.nl/pages/onze-missie",
+   "name": "Missie van HÏ Grip",
+   "description": "De missie, filosofie, werkprincipes en founders van HÏ Grip, het Nederlandse performance sportswear merk achter de Performance Gripsokken.",
+   "inLanguage": "nl-NL",
+   "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://www.higrip.nl/#website",
+    "url": "https://www.higrip.nl/",
+    "name": "HÏ Grip"
+   },
+   "breadcrumb": {
+    "@id": "https://www.higrip.nl/pages/onze-missie#breadcrumb"
+   },
+   "about": {
+    "@id": "https://www.higrip.nl/#organization"
+   },
+   "mainEntity": {
+    "@id": "https://www.higrip.nl/#organization"
+   },
+   "relatedLink": [
+    "https://www.higrip.nl/pages/onze-visie",
+    "https://www.higrip.nl/pages/over-ons"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://www.higrip.nl/#organization",
+   "name": "HÏ Grip",
+   "alternateName": [
+    "HI Grip",
+    "higrip"
+   ],
+   "url": "https://www.higrip.nl/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.higrip.nl/cdn/shop/files/HI_Grip_logo_high_res.png",
+    "width": 1000,
+    "height": 1000
+   },
+   "slogan": "Ga door waar anderen stoppen.",
+   "description": "Wij versnellen de beweging van iedere sporter.",
+   "foundingDate": "2024-12",
+   "foundingLocation": {
+    "@type": "Place",
+    "name": "Rotterdam"
+   },
+   "areaServed": {
+    "@type": "Country",
+    "name": "Nederland"
+   },
+   "knowsAbout": [
+    "gripsokken",
+    "performance sportswear",
+    "tennis",
+    "padel",
+    "voetbal",
+    "rugby"
+   ],
+   "founder": [
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-lars",
+     "name": "Lars Cretz",
+     "jobTitle": "Co-founder",
+     "description": "Finance, design, ads en AI bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    },
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-tigo",
+     "name": "Tigo Twigt",
+     "jobTitle": "Co-founder",
+     "description": "Sales, B2B en website bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    },
+    {
+     "@type": "Person",
+     "@id": "https://www.higrip.nl/#founder-timo",
+     "name": "Timo Heijligers",
+     "jobTitle": "Co-founder",
+     "description": "Inkoop, import en B2B bij HÏ Grip.",
+     "worksFor": {
+      "@id": "https://www.higrip.nl/#organization"
+     }
+    }
+   ],
+   "sameAs": [
+    "https://nl.trustpilot.com/review/higrip.nl"
+   ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://www.higrip.nl/pages/onze-missie#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://www.higrip.nl/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Over ons",
+     "item": "https://www.higrip.nl/pages/over-ons"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Missie",
+     "item": "https://www.higrip.nl/pages/onze-missie"
+    }
+   ]
+  }
+ ]
+}
+</script>{% endraw %}
+<section class="mv-hero mv-band-black{{ '' }}{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="hero" aria-labelledby="hero-title" {% render 'mv-attrs', s: s %} style="{% render 'mv-vars', s: s %}">
+  <div class="mv-hero__frame">
+    <div class="mv-hero__media">
+      {%- if s.image != blank -%}
+        {{ s.image | image_url: width: 1800 | image_tag: loading: 'eager', fetchpriority: 'high', alt: s.image_alt, widths: '800, 1200, 1600, 1800', sizes: '100vw' }}
+      {%- else -%}
+        <img width="1400" height="1658" fetchpriority="high" decoding="async" alt="{{ s.image_alt | escape }}" src="{{ 'mv-hero-tennis-serve.jpg' | asset_url }}">
+      {%- endif -%}
+    </div>
+    <div class="mv-hero__txt">
+      <div class="mv-wrap">
+        <h1 class="mv-h1" id="hero-title">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'regel' -%}<span class="mv-l"{% render 'mv-ta', d: block.settings.align, m: block.settings.align_m %} {{ block.shopify_attributes }}>{{ block.settings.tekst }}</span>{%- endif -%}
+          {%- endfor -%}
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+{% schema %}
+{
+  "name": "Missie: Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Achtergrondafbeelding"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Alt-tekst afbeelding"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Alles uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Alles uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "regel",
+      "name": "Kopregel",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "tekst",
+          "label": "Tekst",
+          "default": "Nieuwe regel",
+          "info": "Woorden tussen <em>…</em> krijgen de accentkleur."
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "label": "Uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Missie: Hero",
+      "blocks": [
+        {
+          "type": "regel"
+        },
+        {
+          "type": "regel"
+        },
+        {
+          "type": "regel"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,43 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- assign s = section.settings -%}
+<section class="sl sl-proof" data-accent="{{ section.settings.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap">
+    <ul class="sl-proof__grid">
+      {%- for block in section.blocks -%}
+        <li class="sl-proof__item" {{ block.shopify_attributes }}>
+          <span class="sl-proof__num">{{ block.settings.number }}</span>
+          <p class="sl-proof__label">{{ block.settings.label }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sport — bewijsstrip",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Feit", "settings": [
+      { "type": "text", "id": "number", "label": "Groot label", "default": "3.500+" },
+      { "type": "text", "id": "label", "label": "Omschrijving", "default": "sporters gingen je voor" }
+    ] }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    { "name": "Sport — bewijsstrip", "blocks": [
+      { "type": "item", "settings": { "number": "3.500+", "label": "sporters gingen je voor" } },
+      { "type": "item", "settings": { "number": "Coolmax®", "label": "naadloos en ademend" } },
+      { "type": "item", "settings": { "number": "€35", "label": "gratis verzending vanaf" } },
+      { "type": "item", "settings": { "number": "1", "label": "werkdag en je bestelling is verzonden" } }
+    ] }
+  ]
+}
+{% endschema %}

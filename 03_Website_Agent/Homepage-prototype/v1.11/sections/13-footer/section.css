@@ -1,0 +1,85 @@
+/* 13 FOOTER · near-black afsluiting. Opbouw van de live footer (Algemeen, HÏ Grip, Volg ons, contact, ©, betaalmethoden)
+   in de taal van de nieuwe pagina: merkregel bovenaan, titanium kopjes, witte links met groeiende onderstreping,
+   groot italic woordmerk als laatste beeld. Geen JS. */
+.hp-13 { background: var(--hi-near-black); color: var(--hi-white); padding-top: var(--hp-space-section); padding-bottom: calc(var(--hp-space-md) + env(safe-area-inset-bottom, 0px)); overflow: hidden; }
+.hp-13-inner { display: grid; gap: var(--hp-space-lg); }
+
+/* merkregel en slogan */
+.hp-13-intro { display: grid; gap: var(--hp-space-sm); max-width: 30ch; }
+.hp-13-line { font-size: clamp(22px, 1.9vw, 28px); font-weight: 600; line-height: 1.2; letter-spacing: var(--hp-type-track-head); }
+.hp-13-slogan { font-size: var(--hp-type-body); color: var(--hi-titanium); }
+
+/* kolommen: mobiel twee naast elkaar */
+.hp-13-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--hp-space-ml) var(--hp-space-ms); }
+.hp-13-title { margin-bottom: var(--hp-space-xs); font-size: var(--hp-type-small); font-weight: 600; line-height: 1.4; letter-spacing: var(--hp-type-track-label); color: var(--hi-titanium); }
+
+.hp-13-list { display: grid; }
+.hp-13-link {
+  display: inline-flex; align-items: center; min-height: 44px; padding-block: 6px;
+  font-size: 15px; line-height: 1.3; text-decoration: none; color: var(--hi-white);
+  background: linear-gradient(currentColor, currentColor) 0 calc(50% + 0.85em) / 0 1px no-repeat;
+  transition: background-size var(--hp-dur-1) var(--hp-ease);
+}
+.hp-13-link:active, .hp-13-link:focus-visible { background-size: 100% 1px; }
+.hp-13-link:focus-visible { outline-color: var(--hi-white); }
+
+/* contact: selecteerbare tekst, geen mailto/tel */
+.hp-13-contact { display: grid; font-style: normal; }
+.hp-13-contact__val { display: flex; align-items: center; min-height: 44px; font-size: 15px; line-height: 1.3; user-select: text; overflow-wrap: anywhere; }
+.hp-13-meta { display: grid; gap: 2px; margin: var(--hp-space-xs) 0 0; font-size: var(--hp-type-small); color: var(--hi-titanium); }
+.hp-13-meta__row { display: flex; gap: var(--hp-space-xs); }
+.hp-13-meta dt { font-weight: 600; }
+.hp-13-meta dd { margin: 0; color: var(--hi-white); user-select: text; }
+
+/* onderregel: © en betaalmethoden als tekst */
+.hp-13-base { display: grid; gap: var(--hp-space-ms); padding-top: var(--hp-space-md); border-top: 1px solid var(--hi-line-dark); font-size: var(--hp-type-small); color: var(--hi-titanium); }
+.hp-13-pay { display: grid; gap: var(--hp-space-xs); }
+.hp-13-pay__title { font-size: var(--hp-type-small); font-weight: 600; line-height: 1.4; letter-spacing: var(--hp-type-track-label); color: var(--hi-titanium); }
+.hp-13-pay__list { display: flex; flex-wrap: wrap; gap: 4px 0; color: var(--hi-white); }
+.hp-13-pay__list li { white-space: nowrap; }
+.hp-13-pay__list li:not(:last-child)::after { content: "·"; padding-inline: 10px; color: var(--hi-titanium); }
+
+/* woordmerk: de laatste regel van de pagina, met lucht erboven en heel zichtbaar */
+.hp-13-mark {
+  margin-top: var(--hp-space-xs);
+  font-size: clamp(84px, 26vw, 420px); font-weight: 900; font-style: italic; line-height: 1.12;
+  letter-spacing: var(--hp-type-track-head); text-transform: uppercase; white-space: nowrap;
+  padding-right: 0.06em; user-select: none;
+}
+
+@media (hover: hover) {
+  .hp-13-link:hover { background-size: 100% 1px; }
+}
+
+@media (min-width: 769px) {
+  .hp-13-inner { gap: var(--hp-space-xl); }
+  .hp-13-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: var(--hp-space-md); }
+  .hp-13-link { min-height: 36px; padding-block: 0; }
+  .hp-13-contact__val { min-height: 36px; }
+  .hp-13-base { grid-template-columns: auto minmax(0, 1fr); align-items: start; column-gap: var(--hp-space-lg); }
+  .hp-13-pay { grid-template-columns: auto minmax(0, 1fr); column-gap: var(--hp-space-ms); justify-self: end; max-width: 760px; }
+  .hp-13-pay__list { justify-content: flex-end; }
+}
+
+@media (min-width: 1100px) {
+  /* merkregel links, kolommen rechts: één regel naast elkaar */
+  .hp-13-inner { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); column-gap: var(--hp-space-lg); }
+  .hp-13-intro { align-self: start; }
+  .hp-13-base, .hp-13-mark { grid-column: 1 / -1; }
+}
+
+/* 1.11 (Lars 19-10: de footer van homepagina 1 en 2 samen) · de indeling van homepagina 1 (Shop, Sporten, HÏ Grip,
+   Service en een bredere laatste kolom), met de volt kopjes van homepagina 2. Juridische links in de basisregel.
+   Het HÏ GRIP-woordmerk onderaan een flinke maat groter, rand tot rand. */
+.hp-13-title { color: var(--hi-yellow); font-weight: 700; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: var(--hp-space-sm); }
+.hp-13-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--hp-space-ms); row-gap: var(--hp-space-md); }
+.hp-13-col--wide { grid-column: 1 / -1; }
+.hp-13-list--row { display: flex; flex-wrap: wrap; column-gap: var(--hp-space-ms); }
+.hp-13-legal { display: flex; flex-wrap: wrap; gap: 4px var(--hp-space-ms); }
+.hp-13-legal .hp-13-link { font-size: var(--hp-type-small); color: var(--hi-titanium); }
+.hp-13-mark { font-size: clamp(110px, 32vw, 600px); line-height: 1; letter-spacing: -0.06em; }
+@media (min-width: 769px) {
+  .hp-13-grid { grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.4fr); }
+  .hp-13-col--wide { grid-column: auto; }
+  .hp-13-base { grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; column-gap: var(--hp-space-md); }
+}

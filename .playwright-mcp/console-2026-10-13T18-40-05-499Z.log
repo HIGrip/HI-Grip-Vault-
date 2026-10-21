@@ -1,0 +1,11 @@
+[    7873ms] Uncaught TypeError: Cannot read properties of undefined (reading 'TenantFeatures')
+    at <anonymous> (https://cdn.cookielaw.org/scripttemplates/202609.1.0/otBannerSdk.js:6:595985)
+    at <anonymous> (https://cdn.cookielaw.org/scripttemplates/202609.1.0/otBannerSdk.js:6:606274)
+[   12597ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.salomon.com/api/algolia/secured-key/b:0
+[   12603ms] [LOG] GTM Piano Analytics Tag Template - Send event -  page.display {page_type: home-page, page: home:home, page_sub_type: undefined, page_category: home, site_language: nl} @ https://www.salomon.com/_next/static/immutable/chunks/2p-e5f39_mgbq.js:9
+[   12613ms] [LOG] GTM Piano Analytics Tag Template - Set consent mode -  essential @ https://www.salomon.com/_next/static/immutable/chunks/2p-e5f39_mgbq.js:9
+[   13063ms] [ERROR] Failed to load resource: net::ERR_CONTENT_DECODING_FAILED @ https://www.salomon.com/2bubKzBv/captcha/captcha.js?a=c&u=8370adf0-c735-11f1-b7a6-1bc7b8bc5f86&v=8260a378-c735-11f1-9a4d-610bf6b142bd&m=0&b=aHR0cHM6Ly93d3cuc2Fsb21vbi5jb20vYXBpL2FsZ29saWEvc2VjdXJlZC1rZXkvYg==&h=UE9TVA==:0
+[   22903ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.salomon.com/api/algolia/secured-key/b:0
+[   29654ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.salomon.com/api/algolia/product/b:0
+[   38113ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.salomon.com/api/algolia/secured-key/b:0
+[   40009ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://www.salomon.com/api/algolia/product/b:0

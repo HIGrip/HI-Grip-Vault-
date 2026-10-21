@@ -1,0 +1,246 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['academy-tvb-open.jpg']={{ 'mv-academy-tvb-open.jpg' | asset_url | json }};MV_ASSETS['hardlopen-gripsokken.jpg']={{ 'mv-hardlopen-gripsokken.jpg' | asset_url | json }};MV_ASSETS['voetbal-gripsokken-wit.jpg']={{ 'mv-voetbal-gripsokken-wit.jpg' | asset_url | json }};</script>
+<section class="mv-band-warm mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="plain" aria-labelledby="acad-title" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-wrap"> <div class="mv-mv__head"> <h2 class="mv-h2 mv-rv" id="acad-title">{{ s.t1 }}</h2> <p class="mv-lead mv-rv" style="--d:.12s">{{ s.t2 | escape }}</p> </div> <div class="mv-acad"> <figure class="mv-acad__img mv-rv"> <img width="1000" height="1013" loading="lazy" decoding="async" alt="{{ s.t4 | escape }}" src="{%- if s.ima3 != blank -%}{{ s.ima3 | image_url: width: 1000 }}{%- else -%}{{ 'mv-academy-tvb-open.jpg' | asset_url }}{%- endif -%}"> </figure> <div class="mv-acad__lists"> <div class="mv-rv"> <h3>{{ s.t5 | escape }}</h3> <ul> {%- for block in section.blocks -%}{%- if block.type == 'b1' -%}{%- assign b = block.settings -%}<li {{ block.shopify_attributes }}><b>{{ b.t1 | escape }}</b><span class="mv-muted">{{ b.t2 | escape }}</span></li>{%- endif -%}{%- endfor -%}  </ul> </div> <div class="mv-rv" style="--d:.12s"> <h3>{{ s.t6 | escape }}</h3> <ul> {%- for block in section.blocks -%}{%- if block.type == 'b2' -%}{%- assign b = block.settings -%}<li {{ block.shopify_attributes }}><b>{{ b.t1 | escape }}</b><span class="mv-muted">{{ b.t2 | escape }}</span></li>{%- endif -%}{%- endfor -%}  {%- for block in section.blocks -%}{%- if block.type == 'b3' -%}{%- assign b = block.settings -%}<li {{ block.shopify_attributes }}><b>{{ b.t1 | escape }} <span class="mv-tag">{{ b.t2 | escape }}</span></b><span class="mv-muted">{{ b.t3 | escape }}</span></li>{%- endif -%}{%- endfor -%}  </ul> </div> </div> </div> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Visie: Academy",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "t1",
+      "label": "H2 · Wat is de Performance Academy van HÏ Grip?",
+      "default": "Wat is de Performance Academy van <em>HÏ Grip?</em>"
+    },
+    {
+      "type": "textarea",
+      "id": "t2",
+      "label": "P · De Performance Academy is de community van HÏ Grip die sporter",
+      "default": "De Performance Academy is de community van HÏ Grip die sporters verbindt door events, sportswear en maatschappelijke impact, waarin members als eerste toegang krijgen tot nieuwe drops, productlanceringen en acties, en straks ook tot eigen HÏ Grip-sportevents en een online workout-omgeving."
+    },
+    {
+      "type": "image_picker",
+      "id": "ima3",
+      "label": "Afbeelding · academy-tvb-open.jpg"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "Alt-tekst · academy-tvb-open.jpg",
+      "default": "Tennisser met racket en weerstandsbanden loopt over een gravelbaan, met witte HÏ Grip-gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "H3 · Wanneer hoor je erbij?",
+      "default": "Wanneer hoor je erbij?"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "H3 · Wat levert het je op?",
+      "default": "Wat levert het je op?"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "b1",
+      "name": "1. li",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "B · Nieuwsbrief",
+          "default": "Nieuwsbrief"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "SPAN · Je staat ingeschreven voor de nieuwsbrief en krijgt zo de u",
+          "default": "Je staat ingeschreven voor de nieuwsbrief en krijgt zo de updates van HÏ Grip als eerste."
+        }
+      ]
+    },
+    {
+      "type": "b2",
+      "name": "2. li",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "B · Verbinding",
+          "default": "Verbinding"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "SPAN · Gedreven sporters die elkaar herkennen en versterken.",
+          "default": "Gedreven sporters die elkaar herkennen en versterken."
+        }
+      ]
+    },
+    {
+      "type": "b3",
+      "name": "3. li",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "B · Events",
+          "default": "Events"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "SPAN · Straks",
+          "default": "Straks"
+        },
+        {
+          "type": "text",
+          "id": "t3",
+          "label": "SPAN · Eigen sport- en community-events van HÏ Grip.",
+          "default": "Eigen sport- en community-events van HÏ Grip."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visie: Academy"
+    }
+  ]
+}
+{% endschema %}

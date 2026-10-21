@@ -1,0 +1,794 @@
+- generic [active] [ref=f65e1]:
+  - dialog "Wir respektieren deine Privatsphäre" [ref=f65e2]:
+    - generic [ref=f65e3]:
+      - generic [ref=f65e4]:
+        - text: Auch wir machen diese Sache mit den Cookies, um unsere Seite geiler zu machen. Cookies und mobile Werbe-IDs nutzen wir auch für personalisierte und nicht-personalisierte Werbung (Personalisierung von Werbung). Geht das für dich klar?
+        - link "Ich will mehr wissen." [ref=f65e5] [cursor=pointer]:
+          - /url: https://snocks.com/policies/privacy-policy
+      - generic [ref=f65e6]:
+        - button "Einstellungen" [ref=f65e7] [cursor=pointer]
+        - button "Ok" [ref=f65e8] [cursor=pointer]
+  - link "Zum Inhalt scrollen" [ref=f65e9] [cursor=pointer]:
+    - /url: "#main"
+  - link "Zum Footer scrollen" [ref=f65e10] [cursor=pointer]:
+    - /url: "#footer"
+  - generic:
+    - generic:
+      - navigation "Sidebar navigation":
+        - generic:
+          - link "Logo":
+            - /url: /
+          - button "Schließen"
+        - generic:
+          - generic:
+            - search:
+              - searchbox "Wonach suchst du?"
+        - generic:
+          - list:
+            - listitem:
+              - button "Damen"
+            - listitem:
+              - button "Herren"
+            - listitem:
+              - button "Kinder"
+          - list:
+            - listitem:
+              - link "Account":
+                - /url: /account
+            - listitem:
+              - link "Karriere":
+                - /url: /pages/snocks-jobs-v6
+            - listitem:
+              - link "Hilfe & Kontakt":
+                - /url: /pages/kontakt
+        - button "de-flag Deutsch":
+          - generic:
+            - img "de-flag"
+            - generic: Deutsch
+        - generic:
+          - list:
+            - listitem:
+              - link "Instagram":
+                - /url: https://www.instagram.com/snocks/
+                - img "Instagram"
+            - listitem:
+              - link "WhatsApp":
+                - /url: https://whatsapp.com/channel/0029VaD5wFm5kg72pkiIC10F
+                - img "WhatsApp"
+            - listitem:
+              - link "Facebook":
+                - /url: https://www.facebook.com/snocks/
+                - img "Facebook"
+            - listitem:
+              - link "Tik Tok":
+                - /url: https://www.tiktok.com/@snocks.whynot
+                - img "Tik Tok"
+  - generic [ref=f65e11]:
+    - generic:
+      - status
+    - status [ref=f65e13]:
+      - generic [ref=f65e15]:
+        - generic [ref=f65e16]:
+          - paragraph [ref=f65e22]:
+            - link [ref=f65e23] [cursor=pointer]:
+              - /url: /pages/retoure
+              - strong [ref=f65e24]: Kostenlose Rücksendung
+          - paragraph [ref=f65e33]:
+            - link [ref=f65e34] [cursor=pointer]:
+              - /url: /pages/retoure
+              - strong [ref=f65e35]: 100 Tage Rückgaberecht
+          - paragraph [ref=f65e41]:
+            - link [ref=f65e42] [cursor=pointer]:
+              - /url: /pages/neue-socken-garantie
+              - strong [ref=f65e43]: Anti Loch Garantie
+          - paragraph [ref=f65e49]:
+            - link [ref=f65e50] [cursor=pointer]:
+              - /url: /pages/faq
+              - strong [ref=f65e51]: Kostenloser Versand ab 39€
+          - paragraph [ref=f65e57]:
+            - link [ref=f65e58] [cursor=pointer]:
+              - /url: /pages/retoure
+              - strong [ref=f65e59]: Kostenlose Rücksendung
+        - button "Schließen" [ref=f65e63] [cursor=pointer]
+    - banner [ref=f65e69]:
+      - generic [ref=f65e70]:
+        - generic [ref=f65e71]:
+          - button "Navigation öffnen" [ref=f65e72] [cursor=pointer]
+          - button "Konto" [ref=f65e78] [cursor=pointer]
+        - heading [level=1] [ref=f65e81]:
+          - link "Logo" [ref=f65e82] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f65e83]:
+          - button "Suche öffnen" [ref=f65e84] [cursor=pointer]
+          - link "Öffne Warenkorb" [ref=f65e85] [cursor=pointer]:
+            - /url: /cart
+            - generic:
+              - generic "Öffne Warenkorb": "0"
+      - search [ref=f65e89]:
+        - searchbox "Wonach suchst du?" [ref=f65e91]
+        - button "Suche schließen" [ref=f65e92] [cursor=pointer]
+    - main [ref=f65e93]:
+      - generic [ref=f65e99]:
+        - generic [ref=f65e100]:
+          - generic [aria-hidden] [ref=f65e101]:
+            - generic:
+              - generic:
+                - heading [level=2]: Feel the fit.
+                - generic:
+                  - paragraph: Shapewear, die sitzt.
+                - link [ref=f65e105] [cursor=pointer]:
+                  - /url: /collections/frauen
+                  - text: Damen
+          - generic [aria-hidden] [ref=f65e106]:
+            - generic:
+              - generic:
+                - heading [level=2]: Feel the fit.
+                - generic:
+                  - paragraph: Boxershorts, die sitzen.
+                - link [ref=f65e110] [cursor=pointer]:
+                  - /url: /collections/maenner
+                  - text: Herren
+        - generic [ref=f65e115]:
+          - link "Damen" [ref=f65e116] [cursor=pointer]:
+            - /url: /collections/frauen
+          - link "Herren" [ref=f65e117] [cursor=pointer]:
+            - /url: /collections/maenner
+        - generic [ref=f65e118]:
+          - 'button "Go to slide: 1" [ref=f65e119] [cursor=pointer]'
+          - 'button "Go to slide: 2" [ref=f65e120] [cursor=pointer]'
+          - 'button "Go to slide: 3" [ref=f65e121] [cursor=pointer]'
+      - generic [ref=f65e124]:
+        - generic [ref=f65e127]:
+          - heading "Bestselling Produkte." [level=2] [ref=f65e128]
+          - paragraph [ref=f65e129]: Diese Produkte sind besonders beliebt.
+        - generic [ref=f65e132]:
+          - list [ref=f65e133]:
+            - listitem [ref=f65e134]:
+              - generic [ref=f65e136]:
+                - generic [ref=f65e137]:
+                  - img "Sneaker Socken - Socken - Kein Verrutschen" [ref=f65e140]
+                  - link "Sneaker Socken | Weiß" [ref=f65e141] [cursor=pointer]:
+                    - /url: /products/sneakersocken-weiss
+                - generic [ref=f65e143]:
+                  - heading [level=3] [ref=f65e144]:
+                    - link "Sneaker Socken" [ref=f65e145] [cursor=pointer]:
+                      - /url: /products/sneakersocken-weiss
+                  - generic [ref=f65e146]: Weiß -
+                  - generic [ref=f65e147]: 6 Paar
+                  - link "4.73 / 5 stars based on 13391 reviews for Sneaker Socken | Weiß" [ref=f65e149] [cursor=pointer]:
+                    - /url: /products/sneakersocken-weiss#ReviewsSection
+                    - generic [ref=f65e150]: (13.391)
+                  - generic [ref=f65e151]: 29,99€
+            - listitem [ref=f65e153]:
+              - generic [ref=f65e155]:
+                - generic [ref=f65e156]:
+                  - img "Boxershorts - Unterhosen - Hoher Tragekomfort" [ref=f65e159]
+                  - link "Boxershorts | Schwarz" [ref=f65e160] [cursor=pointer]:
+                    - /url: /products/boxershorts
+                - generic [ref=f65e162]:
+                  - heading [level=3] [ref=f65e163]:
+                    - link "Boxershorts" [ref=f65e164] [cursor=pointer]:
+                      - /url: /products/boxershorts
+                  - generic [ref=f65e165]: Schwarz -
+                  - generic [ref=f65e166]: 6 Stück
+                  - link "4.48 / 5 stars based on 10322 reviews for Boxershorts | Schwarz" [ref=f65e168] [cursor=pointer]:
+                    - /url: /products/boxershorts#ReviewsSection
+                    - generic [ref=f65e169]: (10.322)
+                  - generic [ref=f65e170]: 48,99€
+            - listitem [ref=f65e172]:
+              - generic [ref=f65e174]:
+                - generic [ref=f65e175]:
+                  - img "Füßlinge | Weiß" [ref=f65e178]
+                  - link "Füßlinge | Weiß" [ref=f65e179] [cursor=pointer]:
+                    - /url: /products/fusslinge-weiss
+                - generic [ref=f65e181]:
+                  - heading [level=3] [ref=f65e182]:
+                    - link "Füßlinge" [ref=f65e183] [cursor=pointer]:
+                      - /url: /products/fusslinge-weiss
+                  - generic [ref=f65e184]: Weiß -
+                  - generic [ref=f65e185]: 6 Paar
+                  - link "4.54 / 5 stars based on 6923 reviews for Füßlinge | Weiß" [ref=f65e187] [cursor=pointer]:
+                    - /url: /products/fusslinge-weiss#ReviewsSection
+                    - generic [ref=f65e188]: (6.923)
+                  - generic [ref=f65e189]: 34,99€
+            - listitem [ref=f65e191]:
+              - generic [ref=f65e193]:
+                - generic [ref=f65e194]:
+                  - img "Hipster Panties mit Spitze - Unterhosen -" [ref=f65e197]
+                  - link "Hipster Panties mit Spitze | Schwarz" [ref=f65e198] [cursor=pointer]:
+                    - /url: /products/hipster-panties-mit-spitze
+                - generic [ref=f65e200]:
+                  - heading [level=3] [ref=f65e201]:
+                    - link "Hipster Panties mit Spitze" [ref=f65e202] [cursor=pointer]:
+                      - /url: /products/hipster-panties-mit-spitze
+                  - generic [ref=f65e203]: Schwarz -
+                  - generic [ref=f65e204]: 3 Stück
+                  - link "4.25 / 5 stars based on 3907 reviews for Hipster Panties mit Spitze | Schwarz" [ref=f65e206] [cursor=pointer]:
+                    - /url: /products/hipster-panties-mit-spitze#ReviewsSection
+                    - generic [ref=f65e207]: (3.907)
+                  - generic [ref=f65e208]: 29,99€
+            - listitem [ref=f65e210]:
+              - generic [ref=f65e212]:
+                - generic [ref=f65e213]:
+                  - img "Spitzen BH - Oberteile - Sinnliches Spitzen Design" [ref=f65e216]
+                  - link "Spitzen-BH | Schwarz" [ref=f65e217] [cursor=pointer]:
+                    - /url: /products/spitzen-bh
+                - generic [ref=f65e219]:
+                  - heading [level=3] [ref=f65e220]:
+                    - link "Spitzen-BH" [ref=f65e221] [cursor=pointer]:
+                      - /url: /products/spitzen-bh
+                  - generic [ref=f65e222]: Schwarz -
+                  - generic [ref=f65e223]: 1 Stück
+                  - link "4.39 / 5 stars based on 3251 reviews for Spitzen-BH | Schwarz" [ref=f65e225] [cursor=pointer]:
+                    - /url: /products/spitzen-bh#ReviewsSection
+                    - generic [ref=f65e226]: (3.251)
+                  - generic [ref=f65e227]: 34,99€
+            - listitem [ref=f65e229]:
+              - generic [ref=f65e231]:
+                - generic [ref=f65e232]:
+                  - img "Lange Boxershorts | Schwarz" [ref=f65e235]
+                  - link "Lange Boxershorts | Schwarz" [ref=f65e236] [cursor=pointer]:
+                    - /url: /products/boxershorts-mit-langerem-bein
+                - generic [ref=f65e238]:
+                  - heading [level=3] [ref=f65e239]:
+                    - link "Lange Boxershorts" [ref=f65e240] [cursor=pointer]:
+                      - /url: /products/boxershorts-mit-langerem-bein
+                  - generic [ref=f65e241]: Schwarz -
+                  - generic [ref=f65e242]: 6 Stück
+                  - link "4.49 / 5 stars based on 3009 reviews for Lange Boxershorts | Schwarz" [ref=f65e244] [cursor=pointer]:
+                    - /url: /products/boxershorts-mit-langerem-bein#ReviewsSection
+                    - generic [ref=f65e245]: (3.009)
+                  - generic [ref=f65e246]: 54,99€
+            - listitem [ref=f65e248]:
+              - generic [ref=f65e250]:
+                - generic [ref=f65e251]:
+                  - img "Tennissocken - Socken - 100% Qualität" [ref=f65e254]
+                  - link "Tennissocken | Weiß" [ref=f65e255] [cursor=pointer]:
+                    - /url: /products/tennissocken-weiss
+                - generic [ref=f65e257]:
+                  - heading [level=3] [ref=f65e258]:
+                    - link "Tennissocken" [ref=f65e259] [cursor=pointer]:
+                      - /url: /products/tennissocken-weiss
+                  - generic [ref=f65e260]: Weiß -
+                  - generic [ref=f65e261]: 4 Paar
+                  - link "4.59 / 5 stars based on 2073 reviews for Tennissocken | Weiß" [ref=f65e263] [cursor=pointer]:
+                    - /url: /products/tennissocken-weiss#ReviewsSection
+                    - generic [ref=f65e264]: (2.073)
+                  - generic [ref=f65e265]: 31,99€
+            - listitem [ref=f65e267]:
+              - generic [ref=f65e269]:
+                - generic [ref=f65e270]:
+                  - img "Boxershorts ohne Logo - Unterhosen - Hoher Tragekomfort" [ref=f65e273]
+                  - link "Boxershorts ohne Logo | Schwarz" [ref=f65e274] [cursor=pointer]:
+                    - /url: /products/boxershorts-nologo
+                - generic [ref=f65e276]:
+                  - heading [level=3] [ref=f65e277]:
+                    - link "Boxershorts ohne Logo" [ref=f65e278] [cursor=pointer]:
+                      - /url: /products/boxershorts-nologo
+                  - generic [ref=f65e279]: Schwarz -
+                  - generic [ref=f65e280]: 6 Stück
+                  - link "4.37 / 5 stars based on 1730 reviews for Boxershorts ohne Logo | Schwarz" [ref=f65e282] [cursor=pointer]:
+                    - /url: /products/boxershorts-nologo#ReviewsSection
+                    - generic [ref=f65e283]: (1.730)
+                  - generic [ref=f65e284]: 48,99€
+          - generic:
+            - button "Nach links schieben" [disabled] [ref=f65e286]
+            - button "Nach rechts schieben" [ref=f65e290] [cursor=pointer]
+      - generic [ref=f65e298]:
+        - heading "Endlich wieder Türchen-Zeit." [level=2] [ref=f65e302]
+        - tablist [ref=f65e304]:
+          - listitem [ref=f65e305]:
+            - button "Adventskalender" [ref=f65e306] [cursor=pointer]
+        - generic [ref=f65e308]:
+          - generic [ref=f65e310]:
+            - generic [ref=f65e311]:
+              - list [ref=f65e312]:
+                - listitem [ref=f65e313]:
+                  - generic [ref=f65e316]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026 - Adventskalender - X-Mas" [ref=f65e317]
+                - listitem [ref=f65e318]:
+                  - generic [ref=f65e320]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e321]
+                - listitem [ref=f65e322]:
+                  - generic [ref=f65e324]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e325]
+                - listitem [ref=f65e326]:
+                  - generic [ref=f65e328]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e329]
+                - listitem [ref=f65e330]:
+                  - generic [ref=f65e332]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e333]
+                - listitem [ref=f65e334]:
+                  - generic [ref=f65e336]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e337]
+                - listitem [ref=f65e338]:
+                  - generic [ref=f65e340]:
+                    - text: KI-generiert
+                    - img "Socken Adventskalender 2026" [ref=f65e341]
+              - generic:
+                - button "Nach links schieben" [disabled] [ref=f65e342]
+                - button "Nach rechts schieben" [ref=f65e346] [cursor=pointer]
+            - generic [ref=f65e350]:
+              - generic [ref=f65e351]:
+                - generic [ref=f65e352]:
+                  - heading [level=1] [ref=f65e353]:
+                    - link "Socken Adventskalender 2026" [ref=f65e354] [cursor=pointer]:
+                      - /url: /products/socken-adventskalender-2026
+                  - link "4.65 / 5 stars based on 63 reviews for Socken Adventskalender 2026" [ref=f65e357] [cursor=pointer]:
+                    - /url: /products/socken-adventskalender-2026#ReviewsSection
+                    - generic [ref=f65e358]: (63)
+                  - generic [ref=f65e359]: Vorfreude im Wert von über €160
+                - generic [ref=f65e361]:
+                  - generic [ref=f65e362]: 99,99€
+                  - generic [aria-hidden] [ref=f65e363]: inkl. MwSt.
+                - paragraph [ref=f65e365]:
+                  - generic [ref=f65e366]: KOSTENLOSER Versand & Rücksendung
+              - generic [ref=f65e368]:
+                - button "In meine Tasche" [ref=f65e370] [cursor=pointer]
+                - text: "- - -"
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Passform-Assistent
+                    - generic: "Sieh dir deine empfohlene Größe an:"
+                  - button "Schließen"
+                  - generic:
+                    - button "Größe berechnen"
+      - generic [ref=f65e373]:
+        - generic [ref=f65e376]:
+          - heading "Trending Kategorien." [level=2] [ref=f65e377]
+          - paragraph [ref=f65e378]: Diese Kategorien sind gerade im Trend.
+        - list [ref=f65e381]:
+          - listitem [ref=f65e382]:
+            - img "SNOCKS" [ref=f65e385]
+            - generic [ref=f65e386]:
+              - generic [ref=f65e387]: Socken.
+              - generic [ref=f65e388]:
+                - link "Damen" [ref=f65e389] [cursor=pointer]:
+                  - /url: /collections/socken
+                - link "Herren" [ref=f65e390] [cursor=pointer]:
+                  - /url: /collections/socken
+          - listitem [ref=f65e391]:
+            - img "SNOCKS" [ref=f65e394]
+            - generic [ref=f65e395]:
+              - generic [ref=f65e396]: Sportbekleidung.
+              - generic [ref=f65e397]:
+                - link "Damen" [ref=f65e398] [cursor=pointer]:
+                  - /url: /collections/damen-sportbekleidung
+                - link "Herren" [ref=f65e399] [cursor=pointer]:
+                  - /url: /collections/sportbekleidung
+          - listitem [ref=f65e400]:
+            - img "SNOCKS" [ref=f65e403]
+            - generic [ref=f65e404]:
+              - generic [ref=f65e405]: Bundles.
+              - generic [ref=f65e406]:
+                - link "Damen" [ref=f65e407] [cursor=pointer]:
+                  - /url: /collections/frauen-bundles
+                - link "Herren" [ref=f65e408] [cursor=pointer]:
+                  - /url: /collections/manner-bundles
+      - generic [ref=f65e411]:
+        - heading "Tägliche Essentials." [level=2] [ref=f65e415]
+        - generic [ref=f65e417]:
+          - generic [ref=f65e419]:
+            - list [ref=f65e420]:
+              - listitem [ref=f65e421]:
+                - button "Damen" [ref=f65e422] [cursor=pointer]
+              - listitem [ref=f65e423]:
+                - button "Herren" [ref=f65e424] [cursor=pointer]
+              - listitem [ref=f65e425]:
+                - button "Kinder" [ref=f65e426] [cursor=pointer]
+            - list [ref=f65e427]:
+              - listitem [ref=f65e428]:
+                - button "Socken" [ref=f65e429] [cursor=pointer]
+              - listitem [ref=f65e430]:
+                - button "Unterwäsche" [ref=f65e431] [cursor=pointer]
+              - listitem [ref=f65e432]:
+                - button "Bekleidung" [ref=f65e433] [cursor=pointer]
+              - listitem [ref=f65e434]:
+                - button "Bundles" [ref=f65e435] [cursor=pointer]
+          - generic [ref=f65e436]:
+            - list [ref=f65e437]:
+              - listitem [ref=f65e438]:
+                - generic [ref=f65e440]:
+                  - generic [ref=f65e441]:
+                    - img "Sneaker Socken - Socken - Mix (Schwarz/Weiß/Grau)" [ref=f65e444]
+                    - link "Sneaker Socken | Mix (Schwarz/Weiß/Grau)" [ref=f65e445] [cursor=pointer]:
+                      - /url: /products/sneakersocken-mix-schwarz-weiss-grau
+                  - generic [ref=f65e447]:
+                    - heading [level=3] [ref=f65e448]:
+                      - link "Sneaker Socken" [ref=f65e449] [cursor=pointer]:
+                        - /url: /products/sneakersocken-mix-schwarz-weiss-grau
+                    - generic [ref=f65e450]: Mix (Schwarz/Weiß/Grau) -
+                    - generic [ref=f65e451]: 6 Paar
+                    - link "4.73 / 5 stars based on 13391 reviews for Sneaker Socken | Mix (Schwarz/Weiß/Grau)" [ref=f65e453] [cursor=pointer]:
+                      - /url: /products/sneakersocken-mix-schwarz-weiss-grau#ReviewsSection
+                      - generic [ref=f65e454]: (13.391)
+                    - generic [ref=f65e455]: 29,99€
+              - listitem [ref=f65e457]:
+                - generic [ref=f65e459]:
+                  - generic [ref=f65e460]:
+                    - img "Füßlinge - Socken - Weiß" [ref=f65e463]
+                    - link "Füßlinge | Weiß" [ref=f65e464] [cursor=pointer]:
+                      - /url: /products/fusslinge-weiss
+                  - generic [ref=f65e466]:
+                    - heading [level=3] [ref=f65e467]:
+                      - link "Füßlinge" [ref=f65e468] [cursor=pointer]:
+                        - /url: /products/fusslinge-weiss
+                    - generic [ref=f65e469]: Weiß -
+                    - generic [ref=f65e470]: 6 Paar
+                    - link "4.54 / 5 stars based on 6923 reviews for Füßlinge | Weiß" [ref=f65e472] [cursor=pointer]:
+                      - /url: /products/fusslinge-weiss#ReviewsSection
+                      - generic [ref=f65e473]: (6.923)
+                    - generic [ref=f65e474]: 34,99€
+              - listitem [ref=f65e476]:
+                - generic [ref=f65e478]:
+                  - generic [ref=f65e479]:
+                    - img "Klassische Damen Socken - Socken - Weiß" [ref=f65e482]
+                    - link "Klassische Damen Socken | Weiß" [ref=f65e483] [cursor=pointer]:
+                      - /url: /products/klassische-damen-socken-weiss
+                  - generic [ref=f65e485]:
+                    - heading [level=3] [ref=f65e486]:
+                      - link "Klassische Damen Socken" [ref=f65e487] [cursor=pointer]:
+                        - /url: /products/klassische-damen-socken-weiss
+                    - generic [ref=f65e488]: Weiß -
+                    - generic [ref=f65e489]: 4 Paar
+                    - link "4.16 / 5 stars based on 303 reviews for Klassische Damen Socken | Weiß" [ref=f65e491] [cursor=pointer]:
+                      - /url: /products/klassische-damen-socken-weiss#ReviewsSection
+                      - generic [ref=f65e492]: (303)
+                    - generic [ref=f65e493]: 29,99€
+              - listitem [ref=f65e495]:
+                - generic [ref=f65e497]:
+                  - generic [ref=f65e498]:
+                    - img "Business Socken - Socken - Mix" [ref=f65e501]
+                    - link "Business Socken | Mix" [ref=f65e502] [cursor=pointer]:
+                      - /url: /products/business-socken-leichte-lange-socken-mix
+                  - generic [ref=f65e504]:
+                    - heading [level=3] [ref=f65e505]:
+                      - link "Business Socken" [ref=f65e506] [cursor=pointer]:
+                        - /url: /products/business-socken-leichte-lange-socken-mix
+                    - generic [ref=f65e507]: Mix -
+                    - generic [ref=f65e508]: 4 Paar
+                    - link "4.48 / 5 stars based on 1843 reviews for Business Socken | Mix" [ref=f65e510] [cursor=pointer]:
+                      - /url: /products/business-socken-leichte-lange-socken-mix#ReviewsSection
+                      - generic [ref=f65e511]: (1.843)
+                    - generic [ref=f65e512]: 29,99€
+              - listitem [ref=f65e514]:
+                - generic [ref=f65e516]:
+                  - generic [ref=f65e517]:
+                    - img "Tennissocken - Socken - Weiß" [ref=f65e520]
+                    - link "Tennissocken | Weiß" [ref=f65e521] [cursor=pointer]:
+                      - /url: /products/tennissocken-weiss
+                  - generic [ref=f65e523]:
+                    - heading [level=3] [ref=f65e524]:
+                      - link "Tennissocken" [ref=f65e525] [cursor=pointer]:
+                        - /url: /products/tennissocken-weiss
+                    - generic [ref=f65e526]: Weiß -
+                    - generic [ref=f65e527]: 4 Paar
+                    - link "4.59 / 5 stars based on 2073 reviews for Tennissocken | Weiß" [ref=f65e529] [cursor=pointer]:
+                      - /url: /products/tennissocken-weiss#ReviewsSection
+                      - generic [ref=f65e530]: (2.073)
+                    - generic [ref=f65e531]: 31,99€
+              - listitem [ref=f65e533]:
+                - generic [ref=f65e535]:
+                  - generic [ref=f65e536]:
+                    - img "Hohe Sportsocken mit Streifen - Socken - Schwarz" [ref=f65e539]
+                    - link "Hohe Sportsocken mit Streifen | Schwarz" [ref=f65e540] [cursor=pointer]:
+                      - /url: /products/retrosnocks
+                  - generic [ref=f65e542]:
+                    - heading [level=3] [ref=f65e543]:
+                      - link "Hohe Sportsocken mit Streifen" [ref=f65e544] [cursor=pointer]:
+                        - /url: /products/retrosnocks
+                    - generic [ref=f65e545]: Schwarz -
+                    - generic [ref=f65e546]: 4 Paar
+                    - link "4.57 / 5 stars based on 2201 reviews for Hohe Sportsocken mit Streifen | Schwarz" [ref=f65e548] [cursor=pointer]:
+                      - /url: /products/retrosnocks#ReviewsSection
+                      - generic [ref=f65e549]: (2.201)
+                    - generic [ref=f65e550]: 29,99€
+              - listitem [ref=f65e552]:
+                - generic [ref=f65e554]:
+                  - generic [ref=f65e555]:
+                    - img "Premium Sneaker Socken | Mix (Schwarz/Weiß/Grau)" [ref=f65e558]
+                    - link "Premium Sneaker Socken | Mix (Schwarz/Weiß/Grau)" [ref=f65e559] [cursor=pointer]:
+                      - /url: /products/bambus-sneaker-socken-mix-schwarz-weiss-grau
+                  - generic [ref=f65e561]:
+                    - heading [level=3] [ref=f65e562]:
+                      - link "Premium Sneaker Socken" [ref=f65e563] [cursor=pointer]:
+                        - /url: /products/bambus-sneaker-socken-mix-schwarz-weiss-grau
+                    - generic [ref=f65e564]: Mix (Schwarz/Weiß/Grau) -
+                    - generic [ref=f65e565]: 6 Paar
+                    - link "4.73 / 5 stars based on 551 reviews for Premium Sneaker Socken | Mix (Schwarz/Weiß/Grau)" [ref=f65e567] [cursor=pointer]:
+                      - /url: /products/bambus-sneaker-socken-mix-schwarz-weiss-grau#ReviewsSection
+                      - generic [ref=f65e568]: (551)
+                    - generic [ref=f65e569]: 34,99€
+              - listitem [ref=f65e571]:
+                - generic [ref=f65e573]:
+                  - generic [ref=f65e574]:
+                    - img "Norweger Socken - Socken - Mix (Grau/Schwarz)" [ref=f65e577]
+                    - link "Norweger Socken | Mix (Grau/Schwarz)" [ref=f65e578] [cursor=pointer]:
+                      - /url: /products/norweger-socken
+                  - generic [ref=f65e580]:
+                    - heading [level=3] [ref=f65e581]:
+                      - link "Norweger Socken" [ref=f65e582] [cursor=pointer]:
+                        - /url: /products/norweger-socken
+                    - generic [ref=f65e583]: Mix (Grau/Schwarz) -
+                    - generic [ref=f65e584]: 2 Paar
+                    - link "4.58 / 5 stars based on 485 reviews for Norweger Socken | Mix (Grau/Schwarz)" [ref=f65e586] [cursor=pointer]:
+                      - /url: /products/norweger-socken#ReviewsSection
+                      - generic [ref=f65e587]: (485)
+                    - generic [ref=f65e588]: 24,99€
+              - listitem [ref=f65e590]:
+                - generic [ref=f65e592]:
+                  - generic [ref=f65e593]:
+                    - img "Laufsocken | Schwarz-Weiß" [ref=f65e596]
+                    - link "Laufsocken | Schwarz-Weiß" [ref=f65e597] [cursor=pointer]:
+                      - /url: /products/laufsocken-schwarz-weiss
+                  - generic [ref=f65e599]:
+                    - heading [level=3] [ref=f65e600]:
+                      - link "Laufsocken" [ref=f65e601] [cursor=pointer]:
+                        - /url: /products/laufsocken-schwarz-weiss
+                    - generic [ref=f65e602]: Schwarz-Weiß -
+                    - generic [ref=f65e603]: 4 Paar
+                    - link "4.77 / 5 stars based on 1792 reviews for Laufsocken | Schwarz-Weiß" [ref=f65e605] [cursor=pointer]:
+                      - /url: /products/laufsocken-schwarz-weiss#ReviewsSection
+                      - generic [ref=f65e606]: (1.792)
+                    - generic [ref=f65e607]: 29,99€
+              - listitem [ref=f65e609]:
+                - generic [ref=f65e611]:
+                  - generic [ref=f65e612]:
+                    - img "Retro Sneaker Socken - Socken - Schwarz-Weiß" [ref=f65e615]
+                    - link "Retro Sneaker Socken | Schwarz-Weiß (Streifen)" [ref=f65e616] [cursor=pointer]:
+                      - /url: /products/retrosneaker-schwarz-weiss
+                  - generic [ref=f65e618]:
+                    - heading [level=3] [ref=f65e619]:
+                      - link "Retro Sneaker Socken" [ref=f65e620] [cursor=pointer]:
+                        - /url: /products/retrosneaker-schwarz-weiss
+                    - generic [ref=f65e621]: Schwarz-Weiß (Streifen) -
+                    - generic [ref=f65e622]: 4 Paar
+                    - link "4.77 / 5 stars based on 2136 reviews for Retro Sneaker Socken | Schwarz-Weiß (Streifen)" [ref=f65e624] [cursor=pointer]:
+                      - /url: /products/retrosneaker-schwarz-weiss#ReviewsSection
+                      - generic [ref=f65e625]: (2.136)
+                    - generic [ref=f65e626]: 24,99€
+              - text: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -"
+            - generic:
+              - button "Nach links schieben" [disabled] [ref=f65e628]
+              - button "Nach rechts schieben" [ref=f65e632] [cursor=pointer]
+      - generic [ref=f65e641]:
+        - generic [ref=f65e643]:
+          - heading "Komm in den SNOCKS Club!" [level=2] [ref=f65e644]
+          - paragraph [ref=f65e645]: "Als Mitglied im SNOCKS Club wirst du für jeden Einkauf und jede Aktivität bei uns belohnt! Dich erwarten exklusive Rabatte, Geburtstagsgeschenke und vieles mehr. Ganz wichtig: Mitglied im SNOCKS Club zu sein, ist für dich 100% kostenlos!"
+          - link "Mehr erfahren" [ref=f65e646] [cursor=pointer]:
+            - /url: /pages/snocks-club
+          - link "Kostenlos anmelden" [ref=f65e647] [cursor=pointer]:
+            - /url: /account
+        - generic [ref=f65e648]:
+          - generic [ref=f65e649]: SNOCKS CLUB
+          - img "SNOCKS-CLUB" [ref=f65e652]
+      - generic [ref=f65e655]:
+        - generic [ref=f65e656]:
+          - heading "@SNOCKS im echten Leben" [level=2] [ref=f65e657]
+          - generic [ref=f65e658]: Lass dich inspirieren
+        - generic:
+          - generic [ref=f65e659] [cursor=pointer]
+          - generic [ref=f65e660] [cursor=pointer]
+      - generic [ref=f65e665]:
+        - generic [ref=f65e666]:
+          - heading "SNOCKS Socks sind dein Begleiter" [level=2] [ref=f65e667]
+          - paragraph [ref=f65e668]:
+            - text: Schon die alten Ägypter wussten, dass nackte Füße nicht immer eine gute Idee sind. Seit der Zeit von Pharaonen und Sphinxen hat sich einiges getan. Dies gilt auch für Strümpfe, für Liebhaber von Anglizismen auch Socks genannt. Heute gibt es sie in allen möglichen Farben und Ausführungen, die weltweit von unzähligen Anbietern vertrieben werden. Bei SNOCKS findest du
+            - link "Socken" [ref=f65e669] [cursor=pointer]:
+              - /url: https://snocks.com/collections/socken
+            - text: ", die perfekt zu allen möglichen Aspekten deines Lifestyles passen. Unsere Produkte stehen für Tragekomfort, Stil und Qualität. So musst du dir um deine Strümpfe keine Sorgen mehr machen. Stattdessen kannst du dich auf dein Leben, deine Erfahrungen und deine Selbstverwirklichung konzentrieren. SNOCKS Socks tragen dich wie von selbst ans Ziel."
+        - generic [ref=f65e670]:
+          - heading "Ziele erreichen mit SNOCKS Socks" [level=2] [ref=f65e671]
+          - paragraph [ref=f65e672]:
+            - text: Apropos „Ziele erreichen“; Für deine Reise möchten wir dich natürlich mit den richtigen Strümpfen ausrüsten. Wir sind keine Freunde von Grenzen und Einschränkungen. Deshalb stellen wir dir bei unseren Socken eine breite Produktpalette zur Verfügung. Unsere
+            - link "Füßlinge" [ref=f65e673] [cursor=pointer]:
+              - /url: https://snocks.com/collections/fuesslinge
+            - text: begleiten dich ungesehen bei jedem Abenteuer. Mit unseren
+            - link "Sportsocken" [ref=f65e674] [cursor=pointer]:
+              - /url: https://snocks.com/collections/sportsocken
+            - text: bist du bereit für den nächsten Wettkampf. Geschäftliche Angelegenheiten klärst du mit unseren
+            - link "Business Socken" [ref=f65e675] [cursor=pointer]:
+              - /url: https://snocks.com/products/business-socken-leichte-lange-socken
+            - text: . Alles was du tun musst ist, das richtige Produkt auszuwählen. Egal, welchen Weg du beschreiten wirst. Wir sorgen dafür, dass du so komfortabel wie möglich ankommst. SNOCKS Socks sind dein Begleiter und tragen dich über die Ziellinie. Komme, was wolle!
+        - generic [ref=f65e676]:
+          - heading "SNOCKS ist dein Ausstatter für alle Basics" [level=2] [ref=f65e677]
+          - paragraph [ref=f65e678]:
+            - text: Unsere Vision ist es, deine Anlaufstelle Nummer eins für Basics und Lifestyle Klamotten zu werden. Dazu gehören auch Produkte wie
+            - link "Unterhemden" [ref=f65e679] [cursor=pointer]:
+              - /url: https://snocks.com/collections/unterhemden
+            - text: . Genau wie bei den Socken und
+            - link "Herren Unterhosen" [ref=f65e680] [cursor=pointer]:
+              - /url: https://snocks.com/collections/unterwaesche
+            - text: möchten wir immer mehr Produkte, die als “unsexy” gelten, in einem neuen Licht erscheinen lassen. Basic Produkte wie Tank Tops haben genauso viel Aufmerksamkeit und Liebe zum Detail verdient wie andere Klamotten. Deshalb stecken wir viel Zeit und Energie in die Recherche und Entwicklung neuer Produkte. Ziel ist es immer, qualitativ hochwertige Kleidungsstücke zu einem fairen Preis anzubieten. Wir möchten, dass du dir keinerlei Gedanken mehr um deine Grundbedürfnisse in Sachen Klamotten machen musst. Um das zu erreichen, erweitern wir unser Produktportfolio konstant, um dein persönlicher Ausstatter für alle Basics zu werden.
+        - generic [ref=f65e681]:
+          - heading "SNOCKS Boxershorts passen perfekt" [level=2] [ref=f65e682]
+          - paragraph [ref=f65e683]:
+            - text: Was hast du drunter? Auch wenn es zunächst wie ein plumper Anmachspruch klingen mag, haben wir uns näher mit dieser Frage beschäftigt. Nur weil man
+            - link "Boxershorts" [ref=f65e684] [cursor=pointer]:
+              - /url: https://snocks.com/products/boxershorts
+            - text: in der Regel nicht direkt sieht, solltest du nicht automatisch deine Ansprüche zurückschrauben. Uns bei SNOCKS liegt es besonders am Herzen, dass du mit unseren Produkten Spaß hast. Dazu gehört auch, dass Boxershorts nicht kratzen, zwicken, oder am Hosenbein hochrollen. Deine Lebenszeit ist einfach zu kostbar, um sich mit solchen Problemen herumschlagen zu müssen. Wie alle unsere Produkte gibt es auch unsere
+            - link "Herren Unterhosen" [ref=f65e685] [cursor=pointer]:
+              - /url: https://snocks.com/collections/unterwaesche
+            - text: in guter Qualität und zu einem fairen Preis. Damit wollen wir zeigen, dass Komfort und Wohlbefinden, zumindest was Boxershorts angeht, nicht abhängig von deinem Bankkonto sein müssen. Wenn dir Boxershorts einfach zu lang sind oder nur untenrum mal etwas Neues ausprobieren möchtest, können wir unsere schnittigen
+            - link "Herren Slips" [ref=f65e686] [cursor=pointer]:
+              - /url: https://snocks.com/collections/maenner-slips
+            - text: empfehlen.
+        - generic [ref=f65e687]:
+          - heading "SNOCKS Kleidung für lässige Looks" [level=2] [ref=f65e688]
+          - paragraph [ref=f65e689]:
+            - text: Um deinen Look zu komplettieren, bieten wir nicht nur Socken und Unterwäsche, sondern auch andere Kleidungsstücke wie Shirts oder Kappen an. Damit wollen wir es dir ermöglichen, einen Großteil deiner modischen Bedürfnisse direkt bei uns befriedigen zu können. Unser lässiger Hoodie ist beispielsweise in verschiedenen Farben erhältlich und lässt sich dadurch mit nahezu jedem Outfit kombinieren. Gerade diese Flexibilität und Entscheidungsfreiheit ist uns sehr wichtig. Wie sollst du dich auf die Entfaltung deiner Persönlichkeit konzentrieren, wenn du schon bei der Auswahl deiner Kleidung eingeschränkt wirst? Deshalb bieten wir dir neben Produkten wie unseren Invisible Socks oder unseren beliebten
+            - link "Boxershorts" [ref=f65e690] [cursor=pointer]:
+              - /url: https://snocks.com/products/boxershorts
+            - text: oder
+            - link "Unterhosen für Herren" [ref=f65e691] [cursor=pointer]:
+              - /url: https://snocks.com/collections/unterwaesche
+            - text: weitere Klamotten an.
+        - generic [ref=f65e692]:
+          - heading "Dein Partner für Lifestyle Produkte" [level=2] [ref=f65e693]
+          - paragraph [ref=f65e694]:
+            - text: Wir wollen nicht nur der Ausstatter und Klamottenhersteller deines Vertrauens sein, sondern dein kompetenter Partner in Sachen Lifestyle Produkte. Hierzu gehören Basics,
+            - link "Herren Unterwäsche" [ref=f65e695] [cursor=pointer]:
+              - /url: https://snocks.com/collections/unterwaesche
+            - text: genauso wie zeitlose Klassiker und auch Pullover. Dabei geht es nicht nur darum, dass wir ausgewählte Kleidungsstücke selbst anbieten. Wir haben natürlich immer ein Auge auf modische Entwicklungen und erweitern unser Portfolio Stück für Stück. Es geht darüber hinaus darum, dir regelmäßig Informationen über Trends und Lifestyle Themen zur Verfügung zu stellen. Auf unserem Blog findest du in regelmäßigen Abständen neue Artikel über aktuelle Modetrends, aber auch Themen wie
+            - link "Nachhaltigkeit" [ref=f65e696] [cursor=pointer]:
+              - /url: https://snocks.com/pages/sustainability
+            - text: . Dadurch möchten wir für dich mehr darstellen als einen Onlineshop. SNOCKS soll dein Ansprechpartner Nummer eins für Lifestyle Produkte sein.
+    - contentinfo [ref=f65e697]:
+      - generic [ref=f65e698]:
+        - tree [ref=f65e701]:
+          - treeitem [ref=f65e702]:
+            - button [ref=f65e703] [cursor=pointer]
+            - list [ref=f65e708]:
+              - listitem [ref=f65e709]:
+                - link "Hilfe & Kontakt" [ref=f65e710] [cursor=pointer]:
+                  - /url: /pages/kontakt
+              - listitem [ref=f65e711]:
+                - link "FAQ" [ref=f65e712] [cursor=pointer]:
+                  - /url: /pages/faq
+              - listitem [ref=f65e713]:
+                - link "Anti-Loch-Garantie" [ref=f65e714] [cursor=pointer]:
+                  - /url: /pages/neue-socken-garantie
+              - listitem [ref=f65e715]:
+                - link "Retoure" [ref=f65e716] [cursor=pointer]:
+                  - /url: /pages/retoure
+              - listitem [ref=f65e717]:
+                - link "Waschanleitung" [ref=f65e718] [cursor=pointer]:
+                  - /url: /pages/waschanleitung
+          - treeitem [ref=f65e719]:
+            - button [ref=f65e720] [cursor=pointer]
+            - list [ref=f65e725]:
+              - listitem [ref=f65e726]:
+                - link "Karriere" [ref=f65e727] [cursor=pointer]:
+                  - /url: /pages/jobs
+              - listitem [ref=f65e728]:
+                - link "Partnerprogramm" [ref=f65e729] [cursor=pointer]:
+                  - /url: /pages/partnerprogramm
+              - listitem [ref=f65e730]:
+                - link "Modelcasting" [ref=f65e731] [cursor=pointer]:
+                  - /url: /pages/modelcasting
+              - listitem [ref=f65e732]:
+                - link "Lookbook" [ref=f65e733] [cursor=pointer]:
+                  - /url: /pages/lookbook
+              - listitem [ref=f65e734]:
+                - link "Presse" [ref=f65e735] [cursor=pointer]:
+                  - /url: /pages/press-kit
+              - listitem [ref=f65e736]:
+                - link "B2B Anfrage" [ref=f65e737] [cursor=pointer]:
+                  - /url: https://snocks.com/pages/b2b-anfragen
+              - listitem [ref=f65e738]:
+                - link "Nachhaltigkeit" [ref=f65e739] [cursor=pointer]:
+                  - /url: /pages/nachhaltigkeit
+              - listitem [ref=f65e740]:
+                - link "Care & Repair" [ref=f65e741] [cursor=pointer]:
+                  - /url: /pages/care-and-repair
+              - listitem [ref=f65e742]:
+                - link "Store Locator" [ref=f65e743] [cursor=pointer]:
+                  - /url: /pages/store-locator
+              - listitem [ref=f65e744]:
+                - link "Über SNOCKS (Fakten)" [ref=f65e745] [cursor=pointer]:
+                  - /url: /pages/grounding-page
+              - listitem [ref=f65e746]:
+                - link "Produktqualität" [ref=f65e747] [cursor=pointer]:
+                  - /url: https://qualitaet.snocks.com/
+          - treeitem [ref=f65e748]:
+            - button [ref=f65e749] [cursor=pointer]
+            - list [ref=f65e754]:
+              - listitem [ref=f65e755]:
+                - link "SNOCKS Club" [ref=f65e756] [cursor=pointer]:
+                  - /url: /pages/snocks-club
+              - listitem [ref=f65e757]:
+                - link "SNOCKS App" [ref=f65e758] [cursor=pointer]:
+                  - /url: /pages/app
+              - listitem [ref=f65e759]:
+                - link "Abonnement" [ref=f65e760] [cursor=pointer]:
+                  - /url: /pages/abo
+              - listitem [ref=f65e761]:
+                - link "Impressum" [ref=f65e762] [cursor=pointer]:
+                  - /url: /policies/legal-notice
+              - listitem [ref=f65e763]:
+                - link "AGB" [ref=f65e764] [cursor=pointer]:
+                  - /url: /policies/terms-of-service
+              - listitem [ref=f65e765]:
+                - link "Datenschutzerklärung" [ref=f65e766] [cursor=pointer]:
+                  - /url: /policies/privacy-policy
+              - listitem [ref=f65e767]:
+                - link "Widerrufsbelehrung" [ref=f65e768] [cursor=pointer]:
+                  - /url: /policies/refund-policy
+              - listitem [ref=f65e769]:
+                - link "Gewährleistungsrecht" [ref=f65e770] [cursor=pointer]:
+                  - /url: /pages/gewahrleistungsrecht
+              - listitem [ref=f65e771]:
+                - link "Garantieerklärung" [ref=f65e772] [cursor=pointer]:
+                  - /url: /pages/garantieerklarung
+              - listitem [ref=f65e773]:
+                - link "Whistleblowing Hotline" [ref=f65e774] [cursor=pointer]:
+                  - /url: /pages/whistleblowing-hotline
+              - listitem [ref=f65e775]:
+                - link "Barrierefreiheit" [ref=f65e776] [cursor=pointer]:
+                  - /url: /pages/barrierefreiheitsstarkungsgesetz-bfsg
+          - treeitem "SNOCKS App SNOCKS SNOCKS Zahlungsarten American Express Maestro Mastercard PayPal Satispay Shop Pay Union Pay Visa Klarna Vertrag widerrufen" [ref=f65e777]:
+            - generic [ref=f65e778]:
+              - generic [ref=f65e779] [cursor=pointer]: SNOCKS App
+              - generic [ref=f65e780]:
+                - link [ref=f65e781] [cursor=pointer]:
+                  - /url: https://snocks.go.link/?screen=home&utm_source=app&utm_medium=flow&utm_campaign=WebsiteFooter&adj_t=1d307yk1&adj_deep_link=snocks%3A%2F%2F%3Fscreen%3Dhome%26utm_source%3Dapp%26utm_medium%3Dflow%26utm_campaign%3DWebsiteFooter
+                  - img "SNOCKS" [ref=f65e782]
+                - link [ref=f65e783] [cursor=pointer]:
+                  - /url: https://snocks.go.link/?screen=home&utm_source=app&utm_medium=flow&utm_campaign=WebsiteFooter&adj_t=1d307yk1&adj_deep_link=snocks%3A%2F%2F%3Fscreen%3Dhome%26utm_source%3Dapp%26utm_medium%3Dflow%26utm_campaign%3DWebsiteFooter
+                  - img "SNOCKS" [ref=f65e784]
+            - generic [ref=f65e785] [cursor=pointer]: Zahlungsarten
+            - list [ref=f65e787]:
+              - listitem [ref=f65e788]:
+                - img "American Express" [ref=f65e789]
+              - listitem [ref=f65e794]:
+                - img "Maestro" [ref=f65e795]
+              - listitem [ref=f65e801]:
+                - img "Mastercard" [ref=f65e802]
+              - listitem [ref=f65e809]:
+                - img "PayPal" [ref=f65e810]
+              - listitem [ref=f65e816]:
+                - img "Satispay" [ref=f65e817]
+              - listitem [ref=f65e822]:
+                - img "Shop Pay" [ref=f65e823]
+              - listitem [ref=f65e827]:
+                - img "Union Pay" [ref=f65e828]
+              - listitem [ref=f65e834]:
+                - img "Visa" [ref=f65e835]
+              - listitem [ref=f65e840]:
+                - img "Klarna" [ref=f65e841]
+            - link "Vertrag widerrufen" [ref=f65e845] [cursor=pointer]:
+              - /url: https://resolvia.ai/contact/https-snocks-com-policies-refund-policy
+        - generic [ref=f65e849]:
+          - link "© SNOCKS" [ref=f65e852] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f65e853]:
+            - list [ref=f65e856]:
+              - listitem [ref=f65e857]:
+                - link "Instagram" [ref=f65e858] [cursor=pointer]:
+                  - /url: https://www.instagram.com/snocks/
+                  - img "snocks-instagram" [ref=f65e859]
+              - listitem [ref=f65e860]:
+                - link "WhatsApp" [ref=f65e861] [cursor=pointer]:
+                  - /url: https://api.whatsapp.com/send/?phone=+491735857672&text=Hey%20SNOCKS%2C%20haltet%20mich%20per%20WhatsApp%20immer%20zuerst%20%C3%BCber%20die%20besten%20Deals%20auf%20dem%20Laufenden
+                  - img "snocks-twitter" [ref=f65e862]
+              - listitem [ref=f65e863]:
+                - link "Facebook" [ref=f65e864] [cursor=pointer]:
+                  - /url: https://www.facebook.com/snocks/
+                  - img "snocks-facebook" [ref=f65e865]
+              - listitem [ref=f65e866]:
+                - link "Tik Tok" [ref=f65e867] [cursor=pointer]:
+                  - /url: https://www.tiktok.com/@snocks.feelthefit
+                  - img "snocks-tik_tok" [ref=f65e868]
+            - button "de-flag Deutsch" [ref=f65e869] [cursor=pointer]:
+              - img "de-flag" [ref=f65e870]
+              - generic [ref=f65e871]: Deutsch
+  - generic: "- - - -"

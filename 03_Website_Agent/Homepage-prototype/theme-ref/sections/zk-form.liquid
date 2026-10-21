@@ -1,0 +1,157 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-more.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign promises = s.promises | newline_to_br | split: '<br />'
+  assign sports = s.sports | newline_to_br | split: '<br />'
+  assign amounts = s.amounts | newline_to_br | split: '<br />'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk--light zk-ask-sec" id="{{ s.anchor | default: 'aanvragen' }}" style="{% render 'zk-vars', s: s %}" {{ section.shopify_attributes }}>
+  <div class="zk__wrap zk-ask">
+    <div class="zk-ask__side">
+      <div class="zk__head" style="margin-bottom:0">
+        {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+        {%- if s.lead != blank -%}<p class="zk__lead zk__muted">{{ s.lead }}</p>{%- endif -%}
+      </div>
+      <ul class="zk-promise">
+        {%- for p in promises -%}
+          {%- assign pt = p | strip -%}
+          {%- if pt != blank -%}<li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></svg>{{ pt }}</li>{%- endif -%}
+        {%- endfor -%}
+      </ul>
+      <div class="zk-contact">
+        {%- if s.email != blank -%}
+          <div><span>{{ s.email_label }}</span><span>{{ s.email }}</span><button class="zk-copy" type="button" data-zk-copy="{{ s.email | escape }}" data-copied="{{ s.copied_label | escape }}">{{ s.copy_label }}</button></div>
+        {%- endif -%}
+        {%- if s.phone != blank -%}
+          <div><span>{{ s.phone_label }}</span><span>{{ s.phone }}</span><button class="zk-copy" type="button" data-zk-copy="{{ s.phone | escape }}" data-copied="{{ s.copied_label | escape }}">{{ s.copy_label }}</button></div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div>
+      {%- form 'contact', id: 'zk_form', class: 'zk-form', novalidate: 'novalidate' -%}
+        {%- if form.posted_successfully? -%}
+          <div class="zk-done" role="status">
+            <h3 class="zk__h3">{{ s.success_title }}</h3>
+            <p>{{ s.success_text }}</p>
+          </div>
+        {%- else -%}
+          {%- if form.errors -%}
+            <div class="zk-fail" role="alert"><h3 class="zk__h3">{{ s.error_title }}</h3><p>{{ form.errors | default_errors }}</p></div>
+          {%- endif -%}
+          <input type="hidden" name="contact[Onderwerp]" value="{{ s.subject_value | escape }}">
+          <fieldset class="zk-seg">
+            <legend style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">{{ s.segment_legend }}</legend>
+            <input type="radio" name="contact[Segment]" id="zk-seg-retailer" value="{{ s.segment_1 | escape }}" data-zk-seg="retailer" checked><label for="zk-seg-retailer">{{ s.segment_1 }}</label>
+            <input type="radio" name="contact[Segment]" id="zk-seg-club" value="{{ s.segment_2 | escape }}" data-zk-seg="club"><label for="zk-seg-club">{{ s.segment_2 }}</label>
+          </fieldset>
+          <div class="zk-field">
+            <label for="zk-org">{{ s.org_label }}</label>
+            <input id="zk-org" name="contact[Organisatie]" type="text" autocomplete="organization" data-zk-req data-error="{{ s.org_error | escape }}">
+            <span class="zk-field__err" role="alert"></span>
+          </div>
+          <div class="zk-form__row">
+            <div class="zk-field">
+              <label for="zk-name">{{ s.name_label }}</label>
+              <input id="zk-name" name="contact[name]" type="text" autocomplete="name" data-zk-req data-error="{{ s.name_error | escape }}">
+              <span class="zk-field__err" role="alert"></span>
+            </div>
+            <div class="zk-field">
+              <label for="zk-mail">{{ s.email_field_label }}</label>
+              <input id="zk-mail" name="contact[email]" type="email" autocomplete="email" inputmode="email" data-zk-req data-error="{{ s.email_error | escape }}">
+              <span class="zk-field__err" role="alert"></span>
+            </div>
+          </div>
+          <div class="zk-form__row">
+            <div class="zk-field">
+              <label for="zk-sport">{{ s.sport_label }}</label>
+              <select id="zk-sport" name="contact[Sport]">
+                {%- for o in sports -%}{%- assign ot = o | strip -%}{%- if ot != blank -%}<option value="{{ ot | escape }}">{{ ot }}</option>{%- endif -%}{%- endfor -%}
+              </select>
+            </div>
+            <div class="zk-field">
+              <label for="zk-amount">{{ s.amount_label }}</label>
+              <select id="zk-amount" name="contact[Aantal paar]">
+                {%- for o in amounts -%}{%- assign ot = o | strip -%}{%- if ot != blank -%}<option value="{{ ot | escape }}">{{ ot }}</option>{%- endif -%}{%- endfor -%}
+              </select>
+            </div>
+          </div>
+          <div class="zk-field">
+            <label for="zk-note">{{ s.note_label }}</label>
+            <textarea id="zk-note" name="contact[body]" rows="3"></textarea>
+          </div>
+          <div class="zk-cta">
+            <button class="zk__pill zk__pill--dark" type="submit">{{ s.submit_label }} {% render 'zk-chev' %}</button>
+          </div>
+          {%- if s.fine_print != blank -%}<p class="zk-form__fine">{{ s.fine_print }}</p>{%- endif -%}
+        {%- endif -%}
+      {%- endform -%}
+      <script>document.querySelectorAll('form.zk-form').forEach(function (f) { f.setAttribute('data-zk-form', ''); });</script>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Aanvraag",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "aanvragen" },
+    { "type": "header", "content": "Zijkolom" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel", "default": "Aanvragen" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Vraag een sample aan" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst", "default": "Vertel kort wie je bent. Wij reageren op dezelfde werkdag." },
+    { "type": "textarea", "id": "promises", "label": "Beloftes (één per regel)", "default": "Vrijblijvend\nGratis sample, verzonden binnen 1 werkdag\nReactie op dezelfde werkdag" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen (zijkolom)", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "text", "id": "email_label", "label": "Label e-mail", "default": "E-mail" },
+    { "type": "text", "id": "email", "label": "E-mailadres", "default": "info@higrip.nl" },
+    { "type": "text", "id": "phone_label", "label": "Label telefoon", "default": "Telefoon" },
+    { "type": "text", "id": "phone", "label": "Telefoonnummer", "default": "+31 6 24 56 65 47" },
+    { "type": "text", "id": "copy_label", "label": "Tekst kopieerknop", "default": "Kopieer" },
+    { "type": "text", "id": "copied_label", "label": "Tekst na kopiëren", "default": "Gekopieerd" },
+    { "type": "header", "content": "Formulier" },
+    { "type": "text", "id": "subject_value", "label": "Onderwerp in de mail", "default": "Zakelijke aanvraag" },
+    { "type": "text", "id": "segment_legend", "label": "Toegankelijke naam keuze", "default": "Ik ben" },
+    { "type": "text", "id": "segment_1", "label": "Keuze 1", "default": "Sportretailer" },
+    { "type": "text", "id": "segment_2", "label": "Keuze 2", "default": "Club of studio" },
+    { "type": "text", "id": "org_label", "label": "Label winkel of club", "default": "Naam winkel of club" },
+    { "type": "text", "id": "org_error", "label": "Fout winkel of club", "default": "Vul de naam van je winkel of club in." },
+    { "type": "text", "id": "name_label", "label": "Label naam", "default": "Jouw naam" },
+    { "type": "text", "id": "name_error", "label": "Fout naam", "default": "Vul je naam in." },
+    { "type": "text", "id": "email_field_label", "label": "Label e-mail (veld)", "default": "E-mail" },
+    { "type": "text", "id": "email_error", "label": "Fout e-mail", "default": "Vul een geldig e-mailadres in, bijvoorbeeld naam@bedrijf.nl." },
+    { "type": "text", "id": "sport_label", "label": "Label sport", "default": "Sport of type winkel" },
+    { "type": "textarea", "id": "sports", "label": "Opties sport (één per regel)", "default": "Padel of tennis\nVoetbal\nRugby\nPilates\nMeerdere sporten\nAnders" },
+    { "type": "text", "id": "amount_label", "label": "Label aantal", "default": "Verwacht aantal paar" },
+    { "type": "textarea", "id": "amounts", "label": "Opties aantal (één per regel)", "default": "6–59\n60–119\n120–239\n240–359\n360–498\n500+\nEigen logo, vanaf 150\nWeet ik nog niet" },
+    { "type": "text", "id": "note_label", "label": "Label opmerking", "default": "Opmerking (optioneel)" },
+    { "type": "text", "id": "submit_label", "label": "Knop verzenden", "default": "Vraag sample" },
+    { "type": "text", "id": "fine_print", "label": "Kleine tekst", "default": "Alleen voor zakelijke aanvragen. We gebruiken je gegevens om te reageren op je aanvraag." },
+    { "type": "text", "id": "success_title", "label": "Bevestiging: kop", "default": "Aanvraag ontvangen" },
+    { "type": "text", "id": "success_text", "label": "Bevestiging: tekst", "default": "Bedankt. We reageren op dezelfde werkdag." },
+    { "type": "text", "id": "error_title", "label": "Foutmelding: kop", "default": "Er ging iets mis" },
+    { "type": "header", "content": "Knop" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur", "default": "#000000" },
+    { "type": "color", "id": "eyebrow_color", "label": "Kleur bovenregel", "default": "#5c5d5f" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "presets": [ { "name": "Zakelijk: Aanvraag" } ]
+}
+{% endschema %}

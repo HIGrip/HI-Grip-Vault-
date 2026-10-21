@@ -1,0 +1,164 @@
+/* HÏ Grip — keuzehulp op de shoppagina.
+   Zelfde ingetogen strategie als de intro: het verschil tussen beide opties
+   zit in hiërarchie (grond, formaat, gewicht), niet in twee gekleurde vlakken.
+   Neon markeert alleen wat nieuw is en wat de hoofdactie is. */
+
+.shop-kh {
+  --kh-ground: #eae8e5;
+  --kh-ink: #0a0a0a;
+  --kh-ink-soft: #55524c;
+  --kh-neon: #ccff00;
+  --kh-line: #d5d1cb;
+  /* Zelfde kolom als de intro en het productgrid. */
+  --kh-gutter: var(--page-margin, 40px);
+
+  background: var(--kh-ground);
+  color: var(--kh-ink);
+  padding: clamp(52px, 6.5vw, 92px) var(--kh-gutter);
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.shop-kh *,
+.shop-kh *::before,
+.shop-kh *::after { box-sizing: border-box; }
+
+.shop-kh__head {
+  margin: 0 0 clamp(28px, 3.5vw, 42px);
+}
+.shop-kh__eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--kh-ink-soft);
+  margin-bottom: 12px;
+}
+.shop-kh__title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.6vw, 2.4rem);
+  font-weight: 900;
+  line-height: 1.02;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+
+.shop-kh__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  gap: clamp(16px, 2.5vw, 28px);
+  align-items: start;
+}
+
+.shop-kh__col {
+  background: #ffffff;
+  border: 1px solid var(--kh-line);
+  border-radius: 6px;
+  padding: clamp(24px, 3.2vw, 38px);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Aanbevolen route: donkere grond, geen derde kleur. */
+.shop-kh__col--highlight {
+  background: #0a0a0a;
+  border-color: #0a0a0a;
+  color: #ffffff;
+}
+
+.shop-kh__tag {
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: transparent;
+  border: 1px solid var(--kh-line);
+  color: var(--kh-ink-soft);
+  margin-bottom: 18px;
+}
+/* Alleen 'nieuw' krijgt het accent. */
+.shop-kh__col--highlight .shop-kh__tag {
+  background: var(--kh-neon);
+  border-color: var(--kh-neon);
+  color: #0a0a0a;
+}
+
+.shop-kh__name {
+  margin: 0 0 10px;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: -.02em;
+}
+
+.shop-kh__line {
+  margin: 0 0 22px;
+  font-size: .98rem;
+  line-height: 1.5;
+  color: var(--kh-ink-soft);
+  max-width: 36ch;
+}
+.shop-kh__col--highlight .shop-kh__line { color: #b8b5ae; }
+
+.shop-kh__points {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.shop-kh__points li {
+  position: relative;
+  padding-left: 22px;
+  font-size: .97rem;
+  line-height: 1.45;
+}
+.shop-kh__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b3aea6;
+}
+.shop-kh__col--highlight .shop-kh__points li::before { background: var(--kh-neon); }
+
+.shop-kh__cta {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-block;
+  padding: 13px 26px;
+  border-radius: 999px;
+  background: var(--kh-ink);
+  color: #ffffff;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: .01em;
+  text-decoration: none;
+  transition: background-color .18s ease, color .18s ease;
+}
+.shop-kh__cta:hover { background: #2c2a26; }
+/* Hoofdactie: het enige neon vlak in deze sectie. */
+.shop-kh__col--highlight .shop-kh__cta {
+  background: var(--kh-neon);
+  color: #0a0a0a;
+}
+.shop-kh__col--highlight .shop-kh__cta:hover { background: #ffffff; }
+.shop-kh__cta:focus-visible { outline: 3px solid var(--kh-neon); outline-offset: 3px; }
+
+@media (max-width: 899px) {
+  .shop-kh__grid { grid-template-columns: 1fr; }
+  .shop-kh__line { max-width: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-kh__cta { transition: none; }
+}

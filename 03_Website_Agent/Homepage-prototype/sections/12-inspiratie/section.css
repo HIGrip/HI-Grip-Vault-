@@ -1,0 +1,23 @@
+/* 12 INSPIRATIE · afsluiting op zwart. Twee regels in Poppins 900 italic, regel 2 in titanium, één witte pill.
+   Desktop: de regels drijven bij het scrollen tegen elkaar in, scroll-gekoppeld en altijd binnen de container (--hp-12-x1/x2 uit section.js). In rust en bij reduced motion staan ze recht onder elkaar. */
+.hp-12 { background: var(--hi-black); color: var(--hi-white); overflow-x: clip; padding-block: var(--hp-space-xl) calc(var(--hp-space-xl) + var(--hp-space-md)); }
+
+.hp-12-inner { display: grid; justify-items: start; gap: var(--hp-space-ml); }
+.hp-12-title { font-weight: 900; font-style: italic; font-size: clamp(44px, 15vw, 80px); line-height: 0.92; letter-spacing: var(--hp-type-track-head); text-wrap: initial; }
+.hp-12-l { display: block; padding-right: 0.08em; }
+.hp-12-l--2 { color: var(--hi-titanium); }
+
+@media (min-width: 769px) {
+  .hp-12 { padding-block: var(--hp-space-xxl) calc(var(--hp-space-xxl) + var(--hp-space-lg)); }
+  .hp-12-inner { gap: var(--hp-space-lg); }
+  .hp-12-title { font-size: 8.2vw; }
+  .hp-12-title { justify-self: stretch; } /* volle containerbreedte: de ruimte naast de regels is het speelveld van de drift */
+  /* regel even breed als de tekst, zodat section.js de vrije ruimte (container − regel) kan meten */
+  .hp-12-l { width: max-content; max-width: 100%; white-space: nowrap; will-change: transform; }
+  /* drift binnen de container: beide regels bewegen tussen 0 en 2A (A uit section.js); midden in beeld staan ze samen op A */
+  .hp-motion .hp-12-l--1 { transform: translate3d(var(--hp-12-x1, 0px), 0, 0); }
+  .hp-motion .hp-12-l--2 { transform: translate3d(var(--hp-12-x2, 0px), 0, 0); }
+}
+@media (min-width: 1440px) {
+  .hp-12-title { font-size: 118px; }
+}

@@ -1,0 +1,92 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- assign s = section.settings -%}
+{%- assign tag = s.heading_tag | default: 'h2' -%}
+
+<style>
+  .sl-sfaq { padding-block: clamp(48px, 7vw, 96px); }
+  .sl-sfaq__grid { display: grid; grid-template-columns: minmax(240px, 340px) minmax(0, 1fr); gap: clamp(28px, 6vw, 88px); align-items: start; }
+  .sl-sfaq__side { position: sticky; top: 110px; min-width: 0; }
+  .sl-sfaq__side .sl__h2 { font-size: clamp(28px, 3.4vw, 44px); }
+  .sl-sfaq__card { min-width: 0; padding: clamp(12px, 2.4vw, 28px) clamp(20px, 3vw, 36px); border-radius: 16px; background: var(--sl-surface); }
+  .sl-sfaq__item { border-top: 1px solid color-mix(in srgb, var(--sl-ink) 14%, transparent); }
+  .sl-sfaq__item:first-child { border-top: 0; }
+  .sl-sfaq__item summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0; cursor: pointer; list-style: none; font-size: 17px; font-weight: 700; line-height: 1.3; }
+  .sl-sfaq__item summary::-webkit-details-marker { display: none; }
+  .sl-sfaq__item summary::after { content: '+'; flex-shrink: 0; font-size: 28px; line-height: 1; font-weight: 500; transition: transform .25s ease; }
+  .sl-sfaq__item[open] summary::after { transform: rotate(45deg); }
+  .sl-sfaq__item summary:hover { color: color-mix(in srgb, var(--sl-ink) 70%, transparent); }
+  .sl-sfaq__item summary:focus-visible { outline: 3px solid var(--sl-ink); outline-offset: 3px; }
+  .sl-sfaq__a { margin: 0 0 22px; padding: 2px 0 2px 18px; border-left: 3px solid var(--sl-accent); font-size: 16px; line-height: 1.7; color: var(--sl-ink); max-width: 66ch; }
+  .sl-sfaq__a p { margin: 0 0 .8em; }
+  .sl-sfaq__a p:last-child { margin-bottom: 0; }
+  .sl-sfaq__a a { color: var(--sl-ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1.5px; }
+  .sl-sfaq__a a:hover { background: var(--sl-accent); }
+  @media (max-width: 899px) {
+    .sl-sfaq__grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    .sl-sfaq__side { position: static; }
+    .sl-sfaq__a { padding-left: 14px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .sl-sfaq__item summary::after { transition: none; } }
+</style>
+
+<section class="sl sl-sfaq" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap sl-sfaq__grid">
+    <div class="sl-sfaq__side">
+      {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      <{{ tag }} class="sl__h2">{{ s.heading | default: 'Veelgestelde vragen' }}</{{ tag }}>
+      {%- if s.lead != blank -%}<p class="sl__lead">{{ s.lead }}</p>{%- endif -%}
+    </div>
+    <div class="sl-sfaq__card">
+      {%- for block in section.blocks -%}
+        <details class="sl-sfaq__item" {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="sl-sfaq__a">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{%- if section.blocks.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in section.blocks -%}
+    {
+      "@type": "Question",
+      "name": {{ block.settings.question | json }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | strip | json }} }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Sport — FAQ",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "FAQ" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Veelgestelde vragen" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "faq", "name": "Vraag", "settings": [
+      { "type": "text", "id": "question", "label": "Vraag", "default": "Vraag?" },
+      { "type": "richtext", "id": "answer", "label": "Antwoord", "default": "<p>Antwoord.</p>" }
+    ] }
+  ],
+  "max_blocks": 10,
+  "presets": [ { "name": "Sport — FAQ" } ]
+}
+{% endschema %}

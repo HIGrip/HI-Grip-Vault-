@@ -1,0 +1,14 @@
+{
+  "id": "06",
+  "name": "visuele-pauze",
+  "bg": "--hi-offwhite",
+  "assets": [],
+  "links": [],
+  "interactions": [
+    "scroll: de woorden van copy 06.statement kleuren één voor één van --hi-titanium naar --hi-black, gekoppeld aan de scrollpositie (0 als de alinea op 90% van het scherm binnenkomt, alles zwart als de onderkant op 80% staat, zodat de hele alinea zwart in beeld staat); per woord color var(--hp-dur-1) var(--hp-ease)",
+    "scroll: zodra 'grijpt' (2×) oplicht, schuift er een afgeronde volt markering van links achter het woord in (scaleX 0→1, var(--hp-dur-3) var(--hp-ease)); de grip loopt zo letterlijk door de zin mee",
+    "alleen actief in beeld (hpInView + hpOnScroll); bij het verlaten nog één update, zodat de alinea erboven volledig zwart blijft",
+    "zonder JS, zonder IntersectionObserver en bij reduced motion: geen splitsing in woorden, alles zwart en beide markeringen staan er gewoon (eindstand)"
+  ],
+  "notes": "1.2: statement in --hp-type-h1 (desktop, max 26ch, bijna volle breedte) en h1 × 0,82 op mobiel; één vorm gekozen: woord-voor-woord kleuring + volt markering achter 'grijpt'. Volt is een vlak achter het woord (geen onderstreepstreep), alleen op die twee woorden. De markeringen staan als <span class=hp-06-mark> in de HTML; de JS splitst alleen tekstknopen op gewone spaties, zodat HÏ&nbsp;Grip één woord blijft en schermlezers één zin lezen. Geen beeld gebruikt (fotopil bewust weggelaten: één sterke vorm)."
+}

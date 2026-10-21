@@ -1,0 +1,26 @@
+.sh.sh .sh-ch .sh-h{font-size:var(--sh-h1,clamp(40px,6vw,72px));color:var(--sh-title,inherit)}
+.sh.sh .sh-ch p,.sh.sh .sh-ch__count{color:var(--sh-sub,var(--hi-graphite))}
+.sh.sh .sh-card__media{aspect-ratio:var(--sh-ratio,4 / 3);background:var(--sh-media-bg,#fff)}
+.sh.sh .sh-card__media img.sh-main{object-fit:var(--sh-fit,contain)}
+.sh.sh .sh-grid{gap:var(--sh-gap,24px)}
+.sh.sh .sh-btn--k{background:var(--sh-btn-bg,#000);color:var(--sh-btn-fg,#fff);border-color:var(--sh-btn-bg,#000);border-radius:var(--sh-btn-r,99px)}
+.sh.sh .sh-tag{background:var(--sh-tag-bg,#000);color:var(--sh-tag-fg,#fff)}
+.sh.sh .sh-tag--v{background:var(--sh-tag2-bg,#000);color:var(--sh-tag2-fg,#CCFF00)}
+.sh.sh .sh-card__name,.sh.sh .sh-card__name a{color:var(--sh-name,inherit)}
+.sh.sh .sh-card__price{color:var(--sh-price,inherit)}
+.sh.sh .sh-card__class{color:var(--sh-class,var(--hi-graphite))}
+.sh.sh .sh-card__foot{justify-content:var(--sh-foot,space-between)}
+.sh.sh .sh-cmp{background:var(--sh-cmp-bg,#111);color:var(--sh-cmp-fg,#fff)}
+.sh.sh .sh-cmp p span{color:var(--sh-cmp-accent,#CCFF00)}
+.sh.sh .sh-cmp .sh-btn{background:var(--sh-cmpbtn-bg,#fff);color:var(--sh-cmpbtn-fg,#000);border-color:var(--sh-cmpbtn-bg,#fff);border-radius:var(--sh-btn-r,99px)}
+.sh.sh .sh-usp ul{grid-template-columns:repeat(var(--sh-cols,3),minmax(0,1fr))}
+.sh.sh .sh-usp svg{background:var(--sh-icon-bg,#CCFF00);stroke:var(--sh-icon-fg,#000)}
+.sh.sh .sh-usp b{color:var(--sh-usp-title,inherit)}
+.sh.sh .sh-usp span{color:var(--sh-usp-text,var(--hi-graphite))}
+.sh.sh .sh-trust__row{justify-content:center;gap:0 40px}
+.sh.sh .sh-trust b{line-height:1}
+.sh.sh .sh-trust a{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;color:var(--sh-link,inherit)}
+.sh.sh .sh-trust a:hover{text-decoration-color:var(--hi-trust)}
+.sh.sh .sh-stars svg{fill:var(--sh-star,#00b67a)}
+@media (max-width:900px){.sh.sh .sh-usp ul{grid-template-columns:1fr}.sh.sh .sh-usp li{border-left:0;padding-left:0}.sh.sh .sh-usp li+li{border-top:1px solid var(--line)}}
+@media (max-width:640px){.sh.sh .sh-card__media{aspect-ratio:var(--sh-ratio-m,1 / 1)}.sh.sh .sh-trust__row{flex-direction:column;gap:0}}

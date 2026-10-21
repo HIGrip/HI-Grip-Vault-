@@ -1,0 +1,586 @@
+{
+ "img/hero-padel-zool-2400.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/hero-padel-zool-2400.webp",
+ "img/hero-padel-zool-1200.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/hero-padel-zool-1200.webp",
+ "img/sp-padel-voeten-1800.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-padel-voeten-1800.webp",
+ "img/sp-padel-voeten-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-padel-voeten-900.webp",
+ "img/sp-voetbal-zool-1800.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-voetbal-zool-1800.webp",
+ "img/sp-voetbal-zool-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-voetbal-zool-900.webp",
+ "img/sp-gym-1800.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-gym-1800.webp",
+ "img/sp-gym-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-gym-900.webp",
+ "img/sp-tennis-wit-1179.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sp-tennis-wit-1179.webp",
+ "img/sport-padel-2000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-padel-2000.webp",
+ "img/sport-padel-1000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-padel-1000.webp",
+ "img/sport-tennis-2048.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-tennis-2048.webp",
+ "img/sport-tennis-1000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-tennis-1000.webp",
+ "img/sport-voetbal-2000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-voetbal-2000.webp",
+ "img/sport-voetbal-1000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-voetbal-1000.webp",
+ "img/sport-rugby-1600.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-rugby-1600.webp",
+ "img/sport-rugby-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sport-rugby-900.webp",
+ "img/b2b-club-spirit-1000.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/b2b-club-spirit-1000.webp",
+ "img/b2b-club-spirit-800.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/b2b-club-spirit-800.webp",
+ "img/b2b-sok-zwart-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/b2b-sok-zwart-900.webp",
+ "img/b2b-sokhoogtes-900.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/b2b-sokhoogtes-900.webp",
+ "img/logo-spirit-252.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-spirit-252.webp",
+ "img/logo-concordia-360.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-concordia-360.webp",
+ "img/logo-sport2000-240.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-sport2000-240.webp",
+ "img/logo-syth-512.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-syth-512.webp",
+ "img/logo-myhealthclub-600.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-myhealthclub-600.webp",
+ "img/logo-hr-500.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/logo-hr-500.webp",
+ "img/sh-sok-10.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sh-sok-10.webp",
+ "img/sh-sok-20-zwart.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sh-sok-20-zwart.webp",
+ "img/sh-sok-20-wit.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sh-sok-20-wit.webp",
+ "img/sh-sq-padel.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sh-sq-padel.webp",
+ "img/sh-sq-tennis.webp": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\img/sh-sq-tennis.webp",
+ "teamfoto.jpg": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\teamfoto.jpg",
+ "video/higrip-brandvideo-9x16-720.mp4": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\video/higrip-brandvideo-9x16-720.mp4",
+ "video/higrip-brandvideo-poster.jpg": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\video/higrip-brandvideo-poster.jpg",
+ "video/higrip-brandvideo-9x16-480-stil.mp4": "C:\\Users\\Test\\OneDrive\\Documents\\HI-Grip-Vault-\\03_Website_Agent\\Homepage-prototype\\v1.12\\video/higrip-brandvideo-9x16-480-stil.mp4",
+ "f360/s000.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s000.webp"
+ },
+ "f360/s003.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s003.webp"
+ },
+ "f360/s006.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s006.webp"
+ },
+ "f360/s009.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s009.webp"
+ },
+ "f360/s012.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s012.webp"
+ },
+ "f360/s015.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s015.webp"
+ },
+ "f360/s018.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s018.webp"
+ },
+ "f360/s021.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s021.webp"
+ },
+ "f360/s024.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s024.webp"
+ },
+ "f360/s027.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s027.webp"
+ },
+ "f360/s030.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s030.webp"
+ },
+ "f360/s033.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s033.webp"
+ },
+ "f360/s036.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s036.webp"
+ },
+ "f360/s039.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s039.webp"
+ },
+ "f360/s042.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s042.webp"
+ },
+ "f360/s045.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s045.webp"
+ },
+ "f360/s048.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s048.webp"
+ },
+ "f360/s051.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s051.webp"
+ },
+ "f360/s054.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s054.webp"
+ },
+ "f360/s057.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s057.webp"
+ },
+ "f360/s060.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s060.webp"
+ },
+ "f360/s063.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s063.webp"
+ },
+ "f360/s066.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s066.webp"
+ },
+ "f360/s069.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s069.webp"
+ },
+ "f360/s072.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s072.webp"
+ },
+ "f360/s075.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s075.webp"
+ },
+ "f360/s078.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s078.webp"
+ },
+ "f360/s081.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s081.webp"
+ },
+ "f360/s084.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s084.webp"
+ },
+ "f360/s087.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s087.webp"
+ },
+ "f360/s090.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s090.webp"
+ },
+ "f360/s093.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s093.webp"
+ },
+ "f360/s096.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s096.webp"
+ },
+ "f360/s099.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s099.webp"
+ },
+ "f360/s102.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s102.webp"
+ },
+ "f360/s105.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s105.webp"
+ },
+ "f360/s108.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s108.webp"
+ },
+ "f360/s111.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s111.webp"
+ },
+ "f360/s114.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s114.webp"
+ },
+ "f360/s117.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s117.webp"
+ },
+ "f360/s120.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s120.webp"
+ },
+ "f360/s123.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s123.webp"
+ },
+ "f360/s126.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s126.webp"
+ },
+ "f360/s129.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s129.webp"
+ },
+ "f360/s132.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s132.webp"
+ },
+ "f360/s135.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s135.webp"
+ },
+ "f360/s138.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s138.webp"
+ },
+ "f360/s141.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s141.webp"
+ },
+ "f360/s144.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s144.webp"
+ },
+ "f360/s147.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s147.webp"
+ },
+ "f360/s150.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s150.webp"
+ },
+ "f360/s153.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s153.webp"
+ },
+ "f360/s156.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s156.webp"
+ },
+ "f360/s159.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s159.webp"
+ },
+ "f360/s162.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s162.webp"
+ },
+ "f360/s165.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s165.webp"
+ },
+ "f360/s168.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s168.webp"
+ },
+ "f360/s171.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s171.webp"
+ },
+ "f360/s174.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s174.webp"
+ },
+ "f360/s177.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s177.webp"
+ },
+ "f360/s180.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s180.webp"
+ },
+ "f360/s183.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s183.webp"
+ },
+ "f360/s186.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s186.webp"
+ },
+ "f360/s189.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s189.webp"
+ },
+ "f360/s192.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s192.webp"
+ },
+ "f360/s195.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s195.webp"
+ },
+ "f360/s198.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s198.webp"
+ },
+ "f360/s201.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s201.webp"
+ },
+ "f360/s204.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s204.webp"
+ },
+ "f360/s207.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s207.webp"
+ },
+ "f360/s210.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s210.webp"
+ },
+ "f360/s213.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s213.webp"
+ },
+ "f360/s216.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s216.webp"
+ },
+ "f360/s219.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s219.webp"
+ },
+ "f360/s222.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s222.webp"
+ },
+ "f360/s225.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s225.webp"
+ },
+ "f360/s228.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s228.webp"
+ },
+ "f360/s231.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s231.webp"
+ },
+ "f360/s234.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s234.webp"
+ },
+ "f360/s237.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s237.webp"
+ },
+ "f360/s240.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s240.webp"
+ },
+ "f360/s243.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s243.webp"
+ },
+ "f360/s246.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s246.webp"
+ },
+ "f360/s249.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s249.webp"
+ },
+ "f360/s252.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s252.webp"
+ },
+ "f360/s255.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s255.webp"
+ },
+ "f360/s258.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s258.webp"
+ },
+ "f360/s261.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s261.webp"
+ },
+ "f360/s264.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s264.webp"
+ },
+ "f360/s267.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s267.webp"
+ },
+ "f360/s270.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s270.webp"
+ },
+ "f360/s273.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s273.webp"
+ },
+ "f360/s276.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s276.webp"
+ },
+ "f360/s279.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s279.webp"
+ },
+ "f360/s282.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s282.webp"
+ },
+ "f360/s285.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s285.webp"
+ },
+ "f360/s288.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s288.webp"
+ },
+ "f360/s291.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s291.webp"
+ },
+ "f360/s294.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s294.webp"
+ },
+ "f360/s297.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s297.webp"
+ },
+ "f360/s300.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s300.webp"
+ },
+ "f360/s303.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s303.webp"
+ },
+ "f360/s306.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s306.webp"
+ },
+ "f360/s309.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s309.webp"
+ },
+ "f360/s312.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s312.webp"
+ },
+ "f360/s315.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s315.webp"
+ },
+ "f360/s318.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s318.webp"
+ },
+ "f360/s321.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s321.webp"
+ },
+ "f360/s324.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s324.webp"
+ },
+ "f360/s327.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s327.webp"
+ },
+ "f360/s330.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s330.webp"
+ },
+ "f360/s333.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s333.webp"
+ },
+ "f360/s336.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s336.webp"
+ },
+ "f360/s339.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s339.webp"
+ },
+ "f360/s342.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s342.webp"
+ },
+ "f360/s345.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s345.webp"
+ },
+ "f360/s348.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s348.webp"
+ },
+ "f360/s351.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s351.webp"
+ },
+ "f360/s354.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s354.webp"
+ },
+ "f360/s357.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s357.webp"
+ },
+ "f360/s360.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s360.webp"
+ },
+ "f360/s363.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s363.webp"
+ },
+ "f360/s366.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s366.webp"
+ },
+ "f360/s369.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s369.webp"
+ },
+ "f360/s372.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s372.webp"
+ },
+ "f360/s375.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s375.webp"
+ },
+ "f360/s378.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s378.webp"
+ },
+ "f360/s381.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s381.webp"
+ },
+ "f360/s384.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s384.webp"
+ },
+ "f360/s387.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s387.webp"
+ },
+ "f360/s390.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s390.webp"
+ },
+ "f360/s393.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s393.webp"
+ },
+ "f360/s396.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s396.webp"
+ },
+ "f360/s399.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s399.webp"
+ },
+ "f360/s402.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s402.webp"
+ },
+ "f360/s405.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s405.webp"
+ },
+ "f360/s408.webp": {
+  "artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+  "path": "f360/s408.webp"
+ }
+}

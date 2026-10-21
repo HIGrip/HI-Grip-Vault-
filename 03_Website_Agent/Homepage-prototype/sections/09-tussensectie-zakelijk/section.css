@@ -1,0 +1,107 @@
+/* 09 TUSSENSECTIE ZAKELIJK · klantnamen als typografie, logo's in grijs die bij hover of tik kleur krijgen. */
+.hp-09 { background: var(--hi-white); color: var(--hi-black); }
+
+.hp-09-h2 { max-width: 14ch; }
+
+.hp-09-groups { margin-top: var(--hp-space-ml); border-top: 1px solid var(--hi-line); }
+.hp-09-group {
+  --hp-09-size: clamp(26px, 7.4vw, 30px);
+  --hp-09-lh: 1.12;
+  display: grid;
+  gap: var(--hp-space-xs);
+  padding-block: var(--hp-space-ms);
+  border-bottom: 1px solid var(--hi-line);
+}
+
+/* Functioneel label, geen eyebrow: gewone zinsnede, klein, grijs, geen wijde spatiëring */
+.hp-09-label {
+  font-size: var(--hp-type-small);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: var(--hp-type-track-body);
+  text-transform: none;
+  color: var(--hi-graphite);
+}
+
+.hp-09-names {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.36em;
+  row-gap: 0.1em;
+  font-size: var(--hp-09-size);
+}
+
+.hp-09-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+  min-width: 0;
+  font-weight: 800;
+  line-height: var(--hp-09-lh);
+  letter-spacing: var(--hp-type-track-head);
+  text-transform: uppercase;
+  transition: color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-09-name__text { min-width: 0; }
+/* Komma tussen namen in dezelfde groep, zodat een afgebroken regel nooit met een scheidingsteken begint */
+.hp-09-name:not(:last-child) .hp-09-name__text::after { content: ","; }
+
+.hp-09-detail {
+  font-size: var(--hp-type-small);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--hi-graphite);
+}
+
+/* Logo: zo hoog als de letters, standaard grijs; kleur bij hover of tik */
+.hp-09-logo {
+  flex: none;
+  display: block;
+  height: 0.92em;
+  aspect-ratio: 1 / 1;
+  filter: grayscale(1);
+  opacity: 0.72;
+  transition: filter var(--hp-dur-2) var(--hp-ease), opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-1) var(--hp-ease);
+}
+.hp-09-logo img { width: 100%; height: 100%; object-fit: contain; }
+.hp-09-logo--shield { aspect-ratio: 5 / 6; }
+/* Concordia heeft veel lege rand in het bestand: iets inzoomen */
+.hp-09-logo--crop { overflow: hidden; }
+.hp-09-logo--crop img { transform: scale(1.2); }
+/* MyHealth Club staat als smalle band midden in een vierkant bestand: uitsnede op de band */
+.hp-09-logo--wide { aspect-ratio: 4 / 1; height: 0.8em; }
+.hp-09-logo--wide img { object-fit: cover; }
+.hp-09-logo--tile { overflow: hidden; border-radius: 0.14em; }
+.hp-09-logo--tile img { object-fit: cover; }
+
+/* Eén naam in focus: de rest zakt terug naar grijs */
+.hp-09-groups.is-focus .hp-09-name:not(.is-on) { color: var(--hi-titanium); }
+.hp-09-name.is-on .hp-09-logo { filter: none; opacity: 1; transform: scale(1.08); }
+
+@media (hover: hover) {
+  .hp-09-groups:has(.hp-09-name:hover) .hp-09-name:not(:hover) { color: var(--hi-titanium); }
+  .hp-09-name:hover .hp-09-logo { filter: none; opacity: 1; transform: scale(1.08); }
+}
+
+@media (min-width: 769px) {
+  .hp-09-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    column-gap: var(--hp-space-lg);
+    align-items: start;
+  }
+  .hp-09-h2 { max-width: 9ch; }
+  .hp-09-groups { margin-top: 0; }
+  .hp-09-group {
+    --hp-09-size: clamp(28px, 2.9vw, 44px);
+    grid-template-columns: minmax(0, 2fr) minmax(0, 10fr);
+    column-gap: var(--hp-space-md);
+    row-gap: var(--hp-space-xs);
+    align-items: start;
+    padding-block: var(--hp-space-md);
+  }
+  /* Label optisch op het midden van de eerste naamregel */
+  .hp-09-label { grid-row: 1 / span 2; padding-top: calc((var(--hp-09-size) * var(--hp-09-lh) - var(--hp-type-small) * 1.4) / 2); }
+  .hp-09-names, .hp-09-detail { grid-column: 2; }
+}

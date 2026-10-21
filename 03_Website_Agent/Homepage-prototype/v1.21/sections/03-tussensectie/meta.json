@@ -1,0 +1,16 @@
+{
+  "id": "03",
+  "name": "tussensectie",
+  "bg": "--hi-yellow",
+  "assets": [],
+  "links": ["https://nl.trustpilot.com/review/higrip.nl"],
+  "interactions": [
+    "marquee rij 1 loopt naar links: reuzencijfers 3500+ en ★ 4,6 (Poppins 900 italic) met de woorden klein gestapeld op de basislijn, dan de verzendbelofte als contourregel, gescheiden door dunne schuine strepen; rij 2 (de slogan, om en om gevuld en als contour) loopt naar rechts; alleen in beeld (hpInView)",
+    "scroll: beide rijen versnellen, volgen de scrollrichting (omhoog scrollen draait ze om) en kantelen tot 9° in hun looprichting; daarna zakken snelheid en kanteling terug",
+    "hover of toetsenbordfocus: de rijen remmen af tot stilstand en de contouren lopen vol; focus zet de echte Trustpilot-link midden in beeld",
+    "tik (touch) op de strook pauzeert of hervat (zelfde vol-lopen); tik op 'op Trustpilot' opent de link",
+    "3500 telt op van 0 bij binnenkomst (1,4 s); in rust en zonder JS staat er 3500+",
+    "reduced motion: geen beweging, één set per rij gecentreerd en gewrapt, scheiders en contour-duplicaten verborgen"
+  ],
+  "notes": "1.2 ronde 2 (Lars 19-10): alle foto's en fotopillen eruit, alleen typografie en de Trustpilot-ster. Spektakel via schaalcontrast (cijfers op ca. 11vw tegen woorden op 0,21 daarvan), gevuld tegenover contour en scroll-gekoppelde snelheid en kanteling. Tekst alleen uit copy.json 03 en facts.json (3500+, 4,6); de schuine streep is een scheider (aria-hidden). Ster zwart in plaats van --hi-trust: groen haalt op volt ca. 2,3:1, zwart ca. 19:1; tekstteken met aria-hidden. Schermlezers lezen alleen de eerste set van elke rij; duplicaten en de contour-slogan aria-hidden, de link daarin tabindex=-1. Marquee via requestAnimationFrame in section.js (geen CSS-animatie). Extra shots: 1440-scroll.png (midden in een scrollbeweging, gekanteld) en 1440-context.png / 375-context.png met de echte secties 02 en 04 erboven en eronder."
+}

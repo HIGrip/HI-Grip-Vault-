@@ -1,0 +1,14 @@
+/* 06 VISUELE PAUZE · één alinea, alleen typografie. Woorden kleuren mee met de scroll (section.js). */
+.hp-06 { background: var(--hi-offwhite); color: var(--hi-black); }
+
+.hp-06-statement {
+  max-width: 24ch;
+  font: 600 calc(var(--hp-type-h2) * 0.82)/1.12 var(--hp-type-family);
+  letter-spacing: var(--hp-type-track-head);
+  text-wrap: pretty;
+}
+
+/* Grijze beginstand alleen als JS draait en motion mag; anders staat alles zwart. */
+.hp-06-w { transition: color var(--hp-dur-1) var(--hp-ease); }
+.hp-motion .hp-06-w { color: var(--hi-titanium); }
+.hp-motion .hp-06-w.is-lit { color: var(--hi-black); }

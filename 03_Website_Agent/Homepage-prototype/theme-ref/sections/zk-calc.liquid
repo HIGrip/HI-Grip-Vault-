@@ -1,0 +1,102 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-more.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk-calc-sec" id="{{ s.anchor | default: 'staffel' }}" style="{% render 'zk-vars', s: s %}" {{ section.shopify_attributes }}>
+  <div class="zk__wrap">
+    <div class="zk__head">
+      {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="zk__lead zk__muted">{{ s.lead }}</p>{%- endif -%}
+    </div>
+    <div class="zk-calc" data-zk-calc data-currency="{{ s.currency | escape }}" data-per-pair="{{ s.tiers_suffix | escape }}" data-extras-template="{{ s.extras_template | escape }}">
+      <div class="zk-calc__out">
+        <div class="zk-tabs" role="tablist" aria-label="{{ s.tabs_aria | escape }}">
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            <button class="zk-tab" role="tab" type="button" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              data-zk-tab="{{ b.tab_id | default: block.id }}" data-head="{{ b.tab_label | escape }}"
+              data-min="{{ b.min | default: 6 }}" data-max="{{ b.max | default: 600 }}" data-start="{{ b.start | default: 120 }}"
+              data-rows="{{ b.rows | strip | newline_to_br | replace: '<br />', ';' | strip_newlines | escape }}"
+              {{ block.shopify_attributes }}>{{ b.tab_label }}</button>
+          {%- endfor -%}
+        </div>
+        <div class="zk-calc__price" data-zk-price aria-live="polite">{{ s.currency }}0</div>
+        <div class="zk-calc__meta">
+          <span class="zk__micro zk__muted">{{ s.per_pair_label }}</span>
+          <span><span class="zk__micro zk__muted">{{ s.total_label }} </span><strong data-zk-total>{{ s.currency }}0</strong></span>
+        </div>
+        <div class="zk-range">
+          <div class="zk-range__row"><label class="zk__micro zk__muted" for="zk-qty-{{ section.id }}">{{ s.qty_label }}</label><output data-zk-qty-out>0</output></div>
+          <input type="range" id="zk-qty-{{ section.id }}" data-zk-qty min="1" max="600" step="1" value="120">
+        </div>
+        <div data-zk-extras hidden style="display:grid;gap:4px">
+          <span class="zk__micro zk__muted">{{ s.extras_label }}</span>
+          <span data-zk-extras-txt></span>
+        </div>
+        {%- if s.note != blank -%}<p class="zk__muted" style="font-size:13px">{{ s.note }}</p>{%- endif -%}
+      </div>
+      <div class="zk-tiers-wrap">
+        <table class="zk-tiers">
+          <thead><tr><th scope="col">{{ s.tiers_qty_label }}</th><th scope="col" data-zk-tier-head></th></tr></thead>
+          <tbody data-zk-tiers></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Staffel",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "staffel" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel", "default": "Staffel" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Jouw prijs per paar" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "text", "id": "lead", "label": "Introtekst", "default": "Prijzen per order, ex btw, inclusief verpakking en verzending." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen (kop)", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Teksten calculator" },
+    { "type": "text", "id": "currency", "label": "Valutateken", "default": "€" },
+    { "type": "text", "id": "tabs_aria", "label": "Toegankelijke naam van de tabs", "default": "Soort order" },
+    { "type": "text", "id": "per_pair_label", "label": "Label 'per paar'", "default": "per paar" },
+    { "type": "text", "id": "total_label", "label": "Label totaal", "default": "Totaal ex btw" },
+    { "type": "text", "id": "qty_label", "label": "Label aantal", "default": "Aantal paar" },
+    { "type": "text", "id": "extras_label", "label": "Label opties", "default": "Optioneel erbij, per paar" },
+    { "type": "text", "id": "extras_template", "label": "Tekst opties", "info": "Gebruik {paper} en {header} voor de prijzen.", "default": "Paper wrap {paper} · header card {header}" },
+    { "type": "text", "id": "tiers_qty_label", "label": "Kolomkop aantal", "default": "Aantal paar" },
+    { "type": "text", "id": "tiers_suffix", "label": "Achtervoegsel kolomkop prijs", "default": "per paar" },
+    { "type": "text", "id": "note", "label": "Opmerking", "default": "Een indicatie op basis van de B2B-prijslijst. Je definitieve prijs staat in de offerte." },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (prijs)", "default": "#ccff00" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "mode",
+      "name": "Soort order (tab)",
+      "settings": [
+        { "type": "text", "id": "tab_label", "label": "Naam van de tab", "default": "Retail" },
+        { "type": "text", "id": "tab_id", "label": "Interne naam (bijv. retail, club, custom)", "default": "retail" },
+        { "type": "number", "id": "min", "label": "Minimum aantal", "default": 6 },
+        { "type": "number", "id": "max", "label": "Maximum aantal (schuifbalk)", "default": 600 },
+        { "type": "number", "id": "start", "label": "Beginwaarde", "default": 120 },
+        { "type": "textarea", "id": "rows", "label": "Prijsstaffel (één regel per trap)", "info": "Formaat: van|tot|prijs per paar|paper wrap|header card. Laat 'tot' leeg voor 'en meer'. De laatste twee zijn optioneel. Voorbeeld: 200|299|7.70|0.35|0.33", "default": "6|59|7.80\n60|119|7.40\n120|239|7.00\n240|359|6.60\n360|498|6.10\n500||5.10" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [ { "name": "Zakelijk: Staffel" } ]
+}
+{% endschema %}

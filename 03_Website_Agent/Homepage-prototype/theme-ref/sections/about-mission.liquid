@@ -1,0 +1,259 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+<section class="ab ab-ms-sec" data-ab="mission" data-anim="{{ s.animate }}" aria-label="Missie" style="{% render 'about-vars', s: s %}--ab-len:{{ s.scroll_length }}vh;--ab-len-m:{{ s.scroll_length_mobile }}vh;">
+  <div class="ab-ms-stick ab-wrap">
+    {%- if s.show_lines -%}<div class="speedbg" aria-hidden="true"><i data-s="2.4" style="top:14%;width:34%"></i><i data-s="3.2" style="top:24%;width:22%"></i><i data-s="1.8" style="top:38%;width:46%"></i><i data-s="3.8" style="top:52%;width:28%"></i><i data-s="3.0" style="top:63%;width:40%"></i><i data-s="2.2" style="top:74%;width:18%"></i><i data-s="3.6" style="top:84%;width:30%"></i><i data-s="4.4" style="top:31%;width:26%"></i><i data-s="4.0" style="top:46%;width:36%"></i><i data-s="2.8" style="top:69%;width:24%"></i><i data-s="4.8" style="top:90%;width:20%"></i></div>{%- endif -%}
+    <{{ tag }} class="ab-h" data-reveal{% render 'about-ta', d: s.heading_align, m: s.heading_align_m %}>{{ s.heading }}</{{ tag }}>
+    {%- if s.button_label != blank and s.button_url != blank -%}
+      <a class="ab-btn ab-ms-btn"{% render 'about-ta', d: s.button_align, m: s.button_align_m %} href="{{ s.button_url }}">{{ s.button_label | escape }}</a>
+    {%- endif -%}
+    <div class="ab-ms-bar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Missie",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Wij <em>versnellen</em> de <em>beweging</em> van iedere sporter.",
+      "info": "Woorden tussen <em>…</em> lichten op in de accentkleur. Alle woorden lichten één voor één op bij scrollen."
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Kop uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_align_m",
+      "label": "Kop uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Knop"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Knoptekst",
+      "default": "Lees de hele missie",
+      "info": "Leeg laten verbergt de knop."
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Knoplink"
+    },
+    {
+      "type": "select",
+      "id": "button_align",
+      "label": "Knop uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "button_align_m",
+      "label": "Knop uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 130,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 42,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Scrolllengte"
+    },
+    {
+      "type": "range",
+      "id": "scroll_length",
+      "label": "Scrolllengte desktop",
+      "min": 120,
+      "max": 400,
+      "step": 10,
+      "default": 240,
+      "unit": "vh",
+      "info": "Hoe lang de sectie vastgepind blijft."
+    },
+    {
+      "type": "range",
+      "id": "scroll_length_mobile",
+      "label": "Scrolllengte mobiel",
+      "min": 100,
+      "max": 300,
+      "step": 5,
+      "default": 135,
+      "unit": "vh"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_lines",
+      "label": "Snelheidslijnen op de achtergrond",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Over ons: Missie"
+    }
+  ]
+}
+{% endschema %}

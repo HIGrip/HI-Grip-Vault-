@@ -1,0 +1,22 @@
+{
+  "id": "08",
+  "name": "over-ons",
+  "bg": "--hi-near-black",
+  "assets": [
+    "teamfoto"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/over-ons"
+  ],
+  "interactions": [
+    "looptekst (Battleface): de vier regels uit copy 08.loop_lines springen hard (data-s-klasse, geen transition) door drie letterstaten: 1 Poppins 300 + 0.08em, 2 Poppins 900 + -0.04em, 3 Poppins 800 italic + -0.02em; volgorde dun -> zwaar -> cursief -> dun",
+    "golf per regel van boven naar onder, 80 ms verschil; elke staat staat 870 ms vanaf de eerste regel (±0,8 s), cyclus 2,61 s",
+    "lus loopt alleen in beeld (hpInView); buiten beeld worden de timers gewist en maakt de tekst een halve golf af, zodat hij in één staat pauzeert",
+    "rust- en startstaat = staat 2 (900); reduced motion: staat 2, geen timer",
+    "vaste regelhoogte (1.04em per regel, nowrap): blokhoogte gelijk in alle staten, alleen de breedte varieert",
+    "schermlezer: h2 bevat copy 08.loop_aria als .hp-sr; de wisselende regels zijn aria-hidden",
+    "pill 'Ons verhaal' (.hp-pill--light): chevron schuift 3px bij hover/tik (base.css)",
+    "de dunne en cursieve Poppins-sneden worden bij start via document.fonts.load voorgeladen, zodat de eerste wissel geen fallback toont"
+  ],
+  "notes": "Review ronde 1 (Denzel) verwerkt. Plek tekst: vanaf 769 px is de tekstkolom even hoog als de foto. De looptekst staat links bovenaan, gelijk met de bovenrand van de foto. Body en pill staan onderaan, gelijk met de onderrand van de foto. Alles staat op één linkerlijn (gemeten op 1440 px: links 0, boven 0, onder 0 px). Op tabletbreedte (769–~1000 px) is de tekst hoger dan de foto; de foto staat dan verticaal gecentreerd. Mobiel: looptekst, body, pill en foto onder elkaar, links uitgelijnd. Teamfoto: een vaste crop op het team via transform: scale op de img, zonder transition. In de opname (2000×924) staan de personen tussen x 728 en 1275, vanaf y ≈ 130; de lichtletters beginnen bij y ≈ 445. Desktop 1:1: schaal 1.55 rond 50% 24%, zichtbaar x 702–1298 en y 80–676. Mobiel 4:3: schaal 1.9 rond 50% 22%, zichtbaar x 676–1324 en y 95–581. Niemand wordt afgesneden: aan de zijkant blijft ±25 px (desktop) en ±50 px (mobiel, beide in pixels van de opname) over. Het bovenlijf (kop tot bovenkant van de letters) neemt ±53% van de framehoogte in op desktop en ±62% op mobiel; tot en met de benen tussen de letters is dat ±90%. Open punt: door de schaal toont desktop de 2000 px-opname op ±1,1× (1x-scherm) of ±2,2× (retina). Een grotere versie (bron 4000×1848) in assets.json zou scherper zijn; dat bepaalt Denzel. Lettergrootte looptekst: mobiel min(--hp-type-h2 × 1.1, 9.6vw) (de dunne staat is de breedste en past zo ook op 320 px), 769–1199 px --hp-type-h2 × 0.92, ≥1200 px × 1.05. Volt niet gebruikt. Meetkanttekening: onder reduced motion zet base.css transition-duration 0.01ms op alle eigenschappen. Een getComputedStyle direct na een klassewissel geeft dan nog de oude waarde; dat speelt alleen in tests."
+}

@@ -1,0 +1,662 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add('mv-js');</script>
+<section class="mv-band-warm mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="strip" {% render 'mv-attrs', s: s %} style="{% render 'mv-vars', s: s %}">
+  <div class="mv-wrap">
+    <div class="mv-mv__head">{%- for block in section.blocks -%}{% render 'mv-gen', block: block, i: forloop.index0, zone: 'boven' %}{%- endfor -%}</div>
+    <div class="mv-perf__vp" role="region" aria-label="Omschrijvingen" tabindex="0">
+      <div class="mv-perf__track">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'kaart' -%}
+            <div class="mv-perf__card{% if block.settings.accent %} mv-perf__card--key{% endif %}" {{ block.shopify_attributes }}><p>{{ block.settings.tekst | escape }}</p></div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- for block in section.blocks -%}{% render 'mv-gen', block: block, i: forloop.index0, zone: 'onder' %}{%- endfor -%}
+  </div>
+</section>
+</div>
+{% schema %}
+{
+  "name": "Missie: Kaartenstrook",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Alles uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Alles uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "kaart",
+      "name": "Kaart",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "tekst",
+          "label": "Tekst",
+          "default": "Nieuwe kaart."
+        },
+        {
+          "type": "checkbox",
+          "id": "accent",
+          "label": "Uitgelichte kaart (accentkleur)",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "kop",
+      "name": "Kop",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "tekst",
+          "label": "Tekst",
+          "default": "Nieuwe <em>kop</em>",
+          "info": "Woorden tussen <em>…</em> krijgen de accentkleur."
+        },
+        {
+          "type": "select",
+          "id": "niveau",
+          "label": "Grootte",
+          "options": [
+            {
+              "value": "groot",
+              "label": "Groot"
+            },
+            {
+              "value": "klein",
+              "label": "Klein"
+            },
+            {
+              "value": "label",
+              "label": "Klein label (hoofdletters)"
+            }
+          ],
+          "default": "groot"
+        },
+        {
+          "type": "select",
+          "id": "tag",
+          "label": "Kop-tag (SEO)",
+          "options": [
+            {
+              "value": "h1",
+              "label": "H1"
+            },
+            {
+              "value": "h2",
+              "label": "H2"
+            },
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "p",
+              "label": "Alinea"
+            }
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "label": "Uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "plaats",
+          "label": "Plek in de sectie",
+          "options": [
+            {
+              "value": "boven",
+              "label": "Boven"
+            },
+            {
+              "value": "onder",
+              "label": "Onder"
+            }
+          ],
+          "default": "boven"
+        }
+      ]
+    },
+    {
+      "type": "tekst",
+      "name": "Tekst",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "tekst",
+          "label": "Tekst",
+          "default": "Nieuwe tekst."
+        },
+        {
+          "type": "select",
+          "id": "stijl",
+          "label": "Stijl",
+          "options": [
+            {
+              "value": "lead",
+              "label": "Intro (groter)"
+            },
+            {
+              "value": "normaal",
+              "label": "Normaal"
+            },
+            {
+              "value": "gedempt",
+              "label": "Gedempt"
+            },
+            {
+              "value": "slogan",
+              "label": "Slogan (groot, schuin)"
+            }
+          ],
+          "default": "normaal"
+        },
+        {
+          "type": "header",
+          "content": "Link aan het eind van de tekst"
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "Linktekst",
+          "info": "Leeg laten verbergt de link."
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "label": "Uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "plaats",
+          "label": "Plek in de sectie",
+          "options": [
+            {
+              "value": "boven",
+              "label": "Boven"
+            },
+            {
+              "value": "onder",
+              "label": "Onder"
+            }
+          ],
+          "default": "boven"
+        }
+      ]
+    },
+    {
+      "type": "knop",
+      "name": "Knop",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Tekst",
+          "default": "Shop"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "stijl",
+          "label": "Stijl",
+          "options": [
+            {
+              "value": "dark",
+              "label": "Pill zwart"
+            },
+            {
+              "value": "light",
+              "label": "Pill wit"
+            },
+            {
+              "value": "link",
+              "label": "Tekstlink"
+            }
+          ],
+          "default": "dark"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "label": "Uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "plaats",
+          "label": "Plek in de sectie",
+          "options": [
+            {
+              "value": "boven",
+              "label": "Boven"
+            },
+            {
+              "value": "onder",
+              "label": "Onder"
+            }
+          ],
+          "default": "boven"
+        }
+      ]
+    },
+    {
+      "type": "afbeelding",
+      "name": "Afbeelding",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Afbeelding"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst"
+        },
+        {
+          "type": "select",
+          "id": "breedte",
+          "label": "Breedte",
+          "options": [
+            {
+              "value": "full",
+              "label": "Volledig"
+            },
+            {
+              "value": "medium",
+              "label": "Middel"
+            },
+            {
+              "value": "small",
+              "label": "Klein"
+            }
+          ],
+          "default": "full"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "label": "Uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "align_m",
+          "label": "Uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "",
+              "label": "Standaard"
+            },
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "plaats",
+          "label": "Plek in de sectie",
+          "options": [
+            {
+              "value": "boven",
+              "label": "Boven"
+            },
+            {
+              "value": "onder",
+              "label": "Onder"
+            }
+          ],
+          "default": "boven"
+        }
+      ]
+    },
+    {
+      "type": "ruimte",
+      "name": "Ruimte",
+      "settings": [
+        {
+          "type": "range",
+          "id": "hoogte",
+          "label": "Hoogte desktop",
+          "min": 8,
+          "max": 240,
+          "step": 8,
+          "default": 48,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "hoogte_m",
+          "label": "Hoogte mobiel",
+          "min": 0,
+          "max": 160,
+          "step": 4,
+          "default": 24,
+          "unit": "px"
+        },
+        {
+          "type": "select",
+          "id": "plaats",
+          "label": "Plek in de sectie",
+          "options": [
+            {
+              "value": "boven",
+              "label": "Boven"
+            },
+            {
+              "value": "onder",
+              "label": "Onder"
+            }
+          ],
+          "default": "boven"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Missie: Kaartenstrook",
+      "blocks": [
+        {
+          "type": "kop"
+        },
+        {
+          "type": "kaart"
+        },
+        {
+          "type": "kaart"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

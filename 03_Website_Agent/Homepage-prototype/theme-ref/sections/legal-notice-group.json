@@ -1,0 +1,209 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+/*
+ * Sectiegroep voor het beleid op /policies/. Wordt in layout/theme.liquid gerenderd i.p.v. de standaard beleidstekst.
+ */
+{
+  "type": "custom.legal_notice",
+  "name": "Juridisch: Wettelijke kennisg.",
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": {
+        "eyebrow": "Algemeen",
+        "heading": "Wettelijke kennisgeving",
+        "heading_tag": "h1"
+      }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "legal_article_1": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Bedrijfsgegevens",
+            "heading_tag": "h2",
+            "body": "",
+            "in_toc": true
+          }
+        },
+        "legal_data_row_2": {
+          "type": "data_row",
+          "settings": {
+            "label": "Bedrijf",
+            "value": "<p>HÏ Grip</p>"
+          }
+        },
+        "legal_data_row_3": {
+          "type": "data_row",
+          "settings": {
+            "label": "Adres",
+            "value": "<p>IJsseldijk-Noord 48<br>2935 BH Ouderkerk aan den IJssel</p>"
+          }
+        },
+        "legal_data_row_4": {
+          "type": "data_row",
+          "settings": {
+            "label": "Rechtsvorm",
+            "value": "<p>Vennootschap onder firma (VOF)</p>"
+          }
+        },
+        "legal_data_row_5": {
+          "type": "data_row",
+          "settings": {
+            "label": "KvK",
+            "value": "<p>97210129</p>"
+          }
+        },
+        "legal_data_row_6": {
+          "type": "data_row",
+          "settings": {
+            "label": "Btw",
+            "value": "<p>NL867952283B01</p>"
+          }
+        },
+        "legal_data_row_7": {
+          "type": "data_row",
+          "settings": {
+            "label": "Telefoon",
+            "value": "<p>+31 6 24 56 65 47</p>"
+          }
+        },
+        "legal_data_row_8": {
+          "type": "data_row",
+          "settings": {
+            "label": "E-mail",
+            "value": "<p>info@higrip.nl</p>"
+          }
+        },
+        "legal_data_row_9": {
+          "type": "data_row",
+          "settings": {
+            "label": "Website",
+            "value": "<p><a href=\"https://www.higrip.nl\">www.higrip.nl</a></p>"
+          }
+        },
+        "legal_article_10": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Over ons",
+            "heading_tag": "h2",
+            "body": "<p>Benieuwd wie we zijn en waarom we HÏ Grip zijn begonnen?</p>",
+            "in_toc": true
+          }
+        },
+        "legal_button_11": {
+          "type": "button",
+          "settings": {
+            "label": "Over ons",
+            "link": "/pages/over-ons",
+            "new_tab": false,
+            "style": "dark"
+          }
+        }
+      },
+      "block_order": [
+        "legal_article_1",
+        "legal_data_row_2",
+        "legal_data_row_3",
+        "legal_data_row_4",
+        "legal_data_row_5",
+        "legal_data_row_6",
+        "legal_data_row_7",
+        "legal_data_row_8",
+        "legal_data_row_9",
+        "legal_article_10",
+        "legal_button_11"
+      ],
+      "settings": {
+        "toc_numbers": false
+      }
+    },
+    "more": {
+      "type": "legal-more",
+      "blocks": {
+        "link_1": {
+          "type": "link",
+          "settings": {
+            "label": "Algemene voorwaarden",
+            "link": "/policies/terms-of-service",
+            "new_tab": false
+          }
+        },
+        "link_2": {
+          "type": "link",
+          "settings": {
+            "label": "Wettelijke kennisgeving",
+            "link": "/policies/legal-notice",
+            "new_tab": false
+          }
+        },
+        "link_3": {
+          "type": "link",
+          "settings": {
+            "label": "Verzendbeleid",
+            "link": "/pages/verzendbeleid",
+            "new_tab": false
+          }
+        },
+        "link_4": {
+          "type": "link",
+          "settings": {
+            "label": "Retourbeleid",
+            "link": "/pages/retourbeleid",
+            "new_tab": false
+          }
+        },
+        "link_5": {
+          "type": "link",
+          "settings": {
+            "label": "Betalingsbeleid",
+            "link": "/pages/terugbetalingsbeleid",
+            "new_tab": false
+          }
+        },
+        "link_6": {
+          "type": "link",
+          "settings": {
+            "label": "Privacybeleid",
+            "link": "/pages/privacybeleid",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "link_1",
+        "link_2",
+        "link_3",
+        "link_4",
+        "link_5",
+        "link_6"
+      ],
+      "settings": {
+        "label": "Ook onder Algemeen"
+      }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": {
+        "button_label": "Contact",
+        "button_link": "/pages/contact"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "body",
+    "more",
+    "help"
+  ]
+}

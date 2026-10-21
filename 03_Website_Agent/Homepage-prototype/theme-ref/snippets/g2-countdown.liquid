@@ -1,0 +1,21 @@
+{%- doc -%}
+  Renders a small live countdown badge, shared by gripsocks2.0 sections.
+
+  @param end_iso {string} ISO datetime with timezone, e.g. 2026-08-28T23:59:00+02:00
+  @param label {string} short label shown before the timer, e.g. "2+2 gratis — nog"
+  @param expired_text {string} text shown once the countdown reaches zero
+  @param extra_class {string} optional extra class(es) for size/style variants, e.g. "g2-countdown--lg"
+{%- enddoc -%}
+
+{%- if end_iso != blank -%}
+  <div class="g2-countdown{% if extra_class != blank %} {{ extra_class }}{% endif %}" data-g2-countdown data-end="{{ end_iso | escape }}">
+    {%- if label != blank -%}<span class="g2-countdown__label">{{ label }}</span>{%- endif -%}
+    <div class="g2-countdown__timer">
+      <span class="g2-countdown__unit"><span class="g2-countdown__digits" data-g2-days>--</span><span class="g2-countdown__unit-label">dgn</span></span>
+      <span class="g2-countdown__unit"><span class="g2-countdown__digits" data-g2-hours>--</span><span class="g2-countdown__unit-label">uur</span></span>
+      <span class="g2-countdown__unit"><span class="g2-countdown__digits" data-g2-minutes>--</span><span class="g2-countdown__unit-label">min</span></span>
+      <span class="g2-countdown__unit"><span class="g2-countdown__digits" data-g2-seconds>--</span><span class="g2-countdown__unit-label">sec</span></span>
+    </div>
+    <span class="g2-countdown__expired" hidden>{{ expired_text | default: 'Pre-order gesloten' }}</span>
+  </div>
+{%- endif -%}

@@ -1,0 +1,375 @@
+{
+ "errors": [],
+ "checks": {
+  "1440 geen horizontale scroll": {
+   "ok": true,
+   "info": [
+    1440,
+    1440
+   ]
+  },
+  "1440 achtergrond 01": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-near-black rgb(17, 17, 17)",
+    "kreeg": "rgb(17, 17, 17)"
+   }
+  },
+  "1440 pills 01": {
+   "ok": true,
+   "info": 1
+  },
+  "1440 achtergrond 02": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "1440 pills 02": {
+   "ok": true,
+   "info": 3
+  },
+  "1440 achtergrond 03": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-yellow rgb(204, 255, 0)",
+    "kreeg": "rgb(204, 255, 0)"
+   }
+  },
+  "1440 pills 03": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 04": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "1440 pills 04": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 05": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-studio rgb(247, 247, 247)",
+    "kreeg": "rgb(247, 247, 247)"
+   }
+  },
+  "1440 pills 05": {
+   "ok": true,
+   "info": 1
+  },
+  "1440 achtergrond 06": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "1440 pills 06": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 07": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-blue rgb(0, 17, 167)",
+    "kreeg": "rgb(0, 17, 167)"
+   }
+  },
+  "1440 pills 07": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 08": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-black rgb(0, 0, 0)",
+    "kreeg": "rgb(0, 0, 0)"
+   }
+  },
+  "1440 pills 08": {
+   "ok": true,
+   "info": 1
+  },
+  "1440 achtergrond 09": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-white rgb(255, 255, 255)",
+    "kreeg": "rgb(255, 255, 255)"
+   }
+  },
+  "1440 pills 09": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 10": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "1440 pills 10": {
+   "ok": true,
+   "info": 1
+  },
+  "1440 achtergrond 11": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-white rgb(255, 255, 255)",
+    "kreeg": "rgb(255, 255, 255)"
+   }
+  },
+  "1440 pills 11": {
+   "ok": true,
+   "info": 0
+  },
+  "1440 achtergrond 12": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-black rgb(0, 0, 0)",
+    "kreeg": "rgb(0, 0, 0)"
+   }
+  },
+  "1440 pills 12": {
+   "ok": true,
+   "info": 1
+  },
+  "1440 achtergrond 13": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-near-black rgb(17, 17, 17)",
+    "kreeg": "rgb(17, 17, 17)"
+   }
+  },
+  "1440 pills 13": {
+   "ok": true,
+   "info": 0
+  },
+  "04 slepen verschuift rij": {
+   "ok": true,
+   "info": {
+    "before4": "matrix(1, 0, 0, 1, -22.88, 0)|matrix(1, 0, 0, 1, -3104, 0)|matrix(1, 0, 0, 1, 0, 0)",
+    "after": "matrix(1, 0, 0, 1, -411.58, 0)|matrix(1, 0, 0, 1, -3104, 0)|matrix(1, 0, 0, 1, 0, 0)"
+   }
+  },
+  "04 slepen zoomt niet in": {
+   "ok": true
+  },
+  "04 klik zoomt in": {
+   "ok": true
+  },
+  "pijltje tijdens 04-zoom verschuift 07 niet": {
+   "ok": true,
+   "info": {
+    "s07before": "Padel, sport 1 van 4",
+    "after": "Padel, sport 1 van 4"
+   }
+  },
+  "04 Esc zoomt uit": {
+   "ok": true
+  },
+  "scroll-lock weg na sluiten": {
+   "ok": true
+  },
+  "05 hover activeert feature": {
+   "ok": true,
+   "info": null
+  },
+  "07 volgende wisselt achtergrond": {
+   "ok": true,
+   "info": {
+    "bg1": "rgb(0, 17, 167)",
+    "bg2": "rgb(255, 106, 0)"
+   }
+  },
+  "07 sleep navigeert niet": {
+   "ok": true,
+   "info": "http://localhost:8766/index.html"
+  },
+  "07 sleep wisselt achtergrond": {
+   "ok": true,
+   "info": {
+    "bg2": "rgb(255, 106, 0)",
+    "nu": "rgb(204, 255, 0)"
+   }
+  },
+  "07 klik op centrale kaart → sportpagina": {
+   "ok": true,
+   "info": "https://www.higrip.nl/pages/gripsokken-voor-voetbal"
+  },
+  "11 FAQ opent": {
+   "ok": true
+  },
+  "11 FAQ sluit": {
+   "ok": true
+  },
+  "JSON-LD geldig, 1 FAQPage": {
+   "ok": true,
+   "info": [
+    "FAQPage:7"
+   ]
+  },
+  "375 geen horizontale scroll": {
+   "ok": true,
+   "info": [
+    375,
+    375
+   ]
+  },
+  "375 achtergrond 01": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-near-black rgb(17, 17, 17)",
+    "kreeg": "rgb(17, 17, 17)"
+   }
+  },
+  "375 pills 01": {
+   "ok": true,
+   "info": 1
+  },
+  "375 achtergrond 02": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "375 pills 02": {
+   "ok": true,
+   "info": 3
+  },
+  "375 achtergrond 03": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-yellow rgb(204, 255, 0)",
+    "kreeg": "rgb(204, 255, 0)"
+   }
+  },
+  "375 pills 03": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 04": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "375 pills 04": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 05": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-studio rgb(247, 247, 247)",
+    "kreeg": "rgb(247, 247, 247)"
+   }
+  },
+  "375 pills 05": {
+   "ok": true,
+   "info": 1
+  },
+  "375 achtergrond 06": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "375 pills 06": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 07": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-blue rgb(0, 17, 167)",
+    "kreeg": "rgb(0, 17, 167)"
+   }
+  },
+  "375 pills 07": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 08": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-black rgb(0, 0, 0)",
+    "kreeg": "rgb(0, 0, 0)"
+   }
+  },
+  "375 pills 08": {
+   "ok": true,
+   "info": 1
+  },
+  "375 achtergrond 09": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-white rgb(255, 255, 255)",
+    "kreeg": "rgb(255, 255, 255)"
+   }
+  },
+  "375 pills 09": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 10": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-offwhite rgb(234, 232, 229)",
+    "kreeg": "rgb(234, 232, 229)"
+   }
+  },
+  "375 pills 10": {
+   "ok": true,
+   "info": 1
+  },
+  "375 achtergrond 11": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-white rgb(255, 255, 255)",
+    "kreeg": "rgb(255, 255, 255)"
+   }
+  },
+  "375 pills 11": {
+   "ok": true,
+   "info": 0
+  },
+  "375 achtergrond 12": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-black rgb(0, 0, 0)",
+    "kreeg": "rgb(0, 0, 0)"
+   }
+  },
+  "375 pills 12": {
+   "ok": true,
+   "info": 1
+  },
+  "375 achtergrond 13": {
+   "ok": true,
+   "info": {
+    "verwacht": "--hi-near-black rgb(17, 17, 17)",
+    "kreeg": "rgb(17, 17, 17)"
+   }
+  },
+  "375 pills 13": {
+   "ok": true,
+   "info": 0
+  },
+  "375 07 tik volgende wisselt achtergrond": {
+   "ok": true
+  },
+  "375 04 tik zoomt in": {
+   "ok": true
+  }
+ }
+}

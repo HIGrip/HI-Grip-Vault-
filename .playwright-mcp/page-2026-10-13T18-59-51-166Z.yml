@@ -1,0 +1,278 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [active] [ref=f90e1]:
+  - region "cookieconsent":
+    - generic [ref=f90e2]:
+      - generic [ref=f90e3]:
+        - text: We use cookies to offer you a better experience, to personalize content and ads, to enable social media functionality and to analyze our performance. If you're okay with our partners’ use of cookies, click on “Accept”. Cookie preferences can be managed and disabled at any time by clicking on “Cookie Settings”. To learn more about our practices, you can also consult our Privacy Policy.
+        - link "Learn more" [ref=f90e4] [cursor=pointer]:
+          - /url: https://support.formswim.com/hc/en-us/articles/360050190233-Cookie-Policy
+        - text: "|"
+        - link "Google's Privacy Terms" [ref=f90e5] [cursor=pointer]:
+          - /url: https://business.safety.google/privacy/
+      - generic [ref=f90e6]:
+        - button "settings cookies" [ref=f90e7] [cursor=pointer]: Cookie Settings
+        - button "allow cookies" [ref=f90e8] [cursor=pointer]: Accept
+  - link "Skip to content" [ref=f90e9] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f90e11]:
+    - link "Meet Smart Swim 2 LT" [ref=f90e14] [cursor=pointer]:
+      - /url: /pages/meet-smart-swim-2-lt
+    - banner [ref=f90e15]:
+      - generic [ref=f90e16]:
+        - link "FORM Europe logo image FORM Europe" [ref=f90e18] [cursor=pointer]:
+          - /url: /
+          - img "FORM Europe logo image" [ref=f90e19]
+          - generic [ref=f90e20]: FORM Europe
+        - generic [ref=f90e21]:
+          - link "cart Cart 0" [ref=f90e22] [cursor=pointer]:
+            - /url: /cart
+            - img "cart" [ref=f90e23]
+            - generic:
+              - generic [ref=f90e24]: Cart
+              - generic [ref=f90e25]: "0"
+          - button "Open Main Menu" [ref=f90e26] [cursor=pointer]
+        - generic:
+          - navigation [ref=f90e29]:
+            - menubar "Main Site Navigation" [ref=f90e30]:
+              - menuitem "Shop Goggles" [ref=f90e31] [cursor=pointer]:
+                - generic [ref=f90e32]: Shop
+              - menuitem "Premium" [ref=f90e33] [cursor=pointer]
+              - menuitem "Compare Goggles" [ref=f90e35] [cursor=pointer]
+              - menuitem "Triathlon" [ref=f90e37] [cursor=pointer]
+              - menuitem "Blog" [ref=f90e39] [cursor=pointer]
+          - list [ref=f90e42]:
+            - listitem [ref=f90e43]:
+              - link [ref=f90e44] [cursor=pointer]:
+                - /url: https://eu.formswim.com
+                - heading "EUR" [level=4] [ref=f90e45]
+            - listitem [ref=f90e46]:
+              - link "store locator" [ref=f90e47] [cursor=pointer]:
+                - /url: https://www.formswim.com/pages/store-locator
+                - generic [ref=f90e48]: Store Locator
+            - listitem
+  - main [ref=f90e49]:
+    - generic [ref=f90e52]:
+      - img "Image" [ref=f90e56]
+      - generic [ref=f90e57]:
+        - 'heading "NEW: Smart swim 2 LT" [level=1] [ref=f90e58]'
+        - generic [ref=f90e59]: YOUR SWIM.IN FOCUS.
+        - paragraph [ref=f90e61]:
+          - text: Everything you need.
+          - generic [ref=f90e62]: Nothing you don’t.
+        - generic [ref=f90e63]:
+          - link "Meet Smart Swim 2 LT" [ref=f90e64] [cursor=pointer]:
+            - /url: /pages/meet-smart-swim-2-lt
+          - link "Buy Now" [ref=f90e65] [cursor=pointer]:
+            - /url: /products/smart-swim-2-lt-goggles
+    - generic [ref=f90e68]:
+      - heading "FEEL MOTIVATed AND LOOK FORWARD TO SWIMMING." [level=2] [ref=f90e69]
+      - heading "Swimming can feel repetitive and isolating, especially when you're doing it solo week after week. FORM makes swimming fresh, purposeful, and fun again." [level=4] [ref=f90e70]
+    - list [ref=f90e74]:
+      - listitem [ref=f90e75]:
+        - generic [ref=f90e76]:
+          - button [ref=f90e79] [cursor=pointer]:
+            - img "play" [ref=f90e80]
+          - generic [ref=f90e81]:
+            - heading "Make the experience feel alive" [level=4] [ref=f90e82]
+            - paragraph [ref=f90e83]: Seeing your data as you swim gives you a focus and makes for a game-like experience. Challenge yourself and see your stats improve.
+    - generic [ref=f90e86]:
+      - heading "No More Guesswork. KNOW EXACTLY WHAT TO DO." [level=2] [ref=f90e87]: No More Guesswork.KNOW EXACTLY WHAT TO DO.
+      - heading "Take the uncertainty out of your swim and always know what to do with 1-on-1 instruction from HeadCoach™." [level=4] [ref=f90e88]
+    - list [ref=f90e92]:
+      - listitem [ref=f90e93]:
+        - generic [ref=f90e94]:
+          - button [ref=f90e97] [cursor=pointer]:
+            - img "play" [ref=f90e98]
+          - generic [ref=f90e99]:
+            - heading "Get clear, easy to follow direction." [level=4] [ref=f90e100]
+            - paragraph [ref=f90e101]: See real progress, and feel the motivation that comes with it. All this from HeadCoach™, your 1-on-1 swim coach.
+            - link "Explore Premium" [ref=f90e102] [cursor=pointer]:
+              - /url: /pages/premium
+    - generic [ref=f90e105]:
+      - img "Image" [ref=f90e109]
+      - generic [ref=f90e110]:
+        - heading "“I love that the goggles tell me what to do next.”" [level=2] [ref=f90e111]
+        - generic [ref=f90e112]: Jim, fitness swimmer, NY, USA
+    - generic [ref=f90e115]:
+      - heading "Forget Counting Laps. Enjoy Your Swim." [level=2] [ref=f90e116]: Forget Counting Laps.Enjoy Your Swim.
+      - heading "Staying focused shouldn’t mean keeping track of every detail. FORM counts your laps, sets, and intervals so you can stay in the moment and swim distraction-free." [level=4] [ref=f90e117]
+    - list [ref=f90e121]:
+      - listitem [ref=f90e122]:
+        - generic [ref=f90e123]:
+          - button [ref=f90e126] [cursor=pointer]:
+            - img "play" [ref=f90e127]
+          - generic [ref=f90e128]:
+            - heading "Less mental math. More rhythm, flow, and enjoyment." [level=4] [ref=f90e129]
+            - paragraph [ref=f90e130]: Every swim becomes simpler, smoother, and more rewarding. FORM handles the details so you can focus on swimming.
+    - generic [ref=f90e135]:
+      - heading [level=2] [ref=f90e136]:
+        - text: SWIM CONFIDENTLY WITH
+        - generic [ref=f90e137]: DATA YOU CAN COUNT ON.
+      - generic [ref=f90e138]:
+        - text: When your tracking is accurate, your progress feels real. No frustration, no doubt. Just reliable data that gives you total peace of mind.
+        - generic [ref=f90e139]:
+          - img "Heart rate accuracy 99.8%" [ref=f90e140]
+          - img "Time tracking accuracy 96.6%" [ref=f90e141]
+          - img "Distance tracking accuracy 99.8%" [ref=f90e142]
+        - 'link "Source: Augmented-reality swim goggles performance metrics" [ref=f90e143] [cursor=pointer]':
+          - /url: https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2023.1188102/full
+    - generic [ref=f90e146]:
+      - heading "TraininG for triathlon?" [level=2] [ref=f90e147]
+      - heading "Explore how FORM helps you get faster and compete with belief." [level=4] [ref=f90e148]
+      - link "Explore Triathlon" [ref=f90e150] [cursor=pointer]:
+        - /url: /pages/triathlon
+    - generic [ref=f90e153]:
+      - generic [ref=f90e154]:
+        - link "Smart Swim 2 LT - Goggles" [ref=f90e156] [cursor=pointer]:
+          - /url: /products/smart-swim-2-lt-goggles
+          - img "Image" [ref=f90e158]
+        - generic [ref=f90e159]:
+          - generic [ref=f90e161]:
+            - generic [ref=f90e162]:
+              - heading "Smart Swim 2" [level=3] [ref=f90e163]
+              - paragraph [ref=f90e165]:
+                - generic [ref=f90e166]: €149
+            - generic [ref=f90e167]: Essential real-time swim feedback in a streamlined design for focused, distraction-free swims.
+          - link "Smart Swim 2 LT - Goggles" [ref=f90e169] [cursor=pointer]:
+            - /url: /products/smart-swim-2-lt-goggles
+            - text: Shop Now
+      - generic [ref=f90e170]:
+        - link "Smart Swim 2 - Goggles" [ref=f90e172] [cursor=pointer]:
+          - /url: /products/smart-swim-2-goggles
+          - img "Image" [ref=f90e174]
+        - generic [ref=f90e175]:
+          - generic [ref=f90e177]:
+            - generic [ref=f90e178]:
+              - heading "Smart Swim 2" [level=3] [ref=f90e179]
+              - paragraph [ref=f90e180]:
+                - generic [ref=f90e181]: €199
+            - generic [ref=f90e182]: Real-time swim feedback, heart rate monitoring, and a secure, comfortable fit for every swim.
+          - link "Smart Swim 2 - Goggles" [ref=f90e184] [cursor=pointer]:
+            - /url: /products/smart-swim-2-goggles
+            - text: Shop Now
+      - generic [ref=f90e185]:
+        - link "Smart Swim 2 PRO - Goggles" [ref=f90e187] [cursor=pointer]:
+          - /url: /products/smart-swim-2-pro-goggles
+          - img "Image" [ref=f90e189]
+        - generic [ref=f90e190]:
+          - generic [ref=f90e192]:
+            - generic [ref=f90e193]:
+              - heading "Smart Swim 2" [level=3] [ref=f90e194]
+              - paragraph [ref=f90e196]:
+                - generic [ref=f90e197]: €259
+            - generic [ref=f90e198]: Real-time feedback and heart rate monitoring, plus Gorilla® Glass, and long-term fog prevention.
+          - link "Smart Swim 2 PRO - Goggles" [ref=f90e200] [cursor=pointer]:
+            - /url: /products/smart-swim-2-pro-goggles
+            - text: Shop Now
+    - button "PEACE OF MIND Learn More free 30-day return white icon 30-Day Returns truck white icon Free Carbon Neutral Shipping Warranty white icon 2-Year Warranty" [ref=f90e202] [cursor=pointer]:
+      - generic [ref=f90e203]:
+        - heading "PEACE OF MIND" [level=2] [ref=f90e204]
+        - generic [ref=f90e205]: Learn More
+        - list [ref=f90e206]:
+          - listitem [ref=f90e207]:
+            - img "free 30-day return white icon" [ref=f90e210]
+            - paragraph [ref=f90e211]: 30-Day Returns
+          - listitem [ref=f90e212]:
+            - img "truck white icon" [ref=f90e215]
+            - paragraph [ref=f90e216]: Free Carbon Neutral Shipping
+          - listitem [ref=f90e217]:
+            - img "Warranty white icon" [ref=f90e220]
+            - paragraph [ref=f90e221]: 2-Year Warranty
+  - link "Shop Now" [ref=f90e223] [cursor=pointer]:
+    - /url: /products/smart-swim-2-lt-goggles
+  - contentinfo [ref=f90e225]:
+    - generic [ref=f90e226]:
+      - generic [ref=f90e227]:
+        - generic [ref=f90e228]: Join the Pool
+        - paragraph [ref=f90e229]: Get all the swim tips, insider deals, product updates, and more sent right to your inbox. Don’t worry, you can unsubscribe at any time.
+        - paragraph [ref=f90e230]:
+          - text: "By submitting this form, you agree to receive marketing emails from FORM Athletica Inc. | #201-126 W 3rd Ave, Vancouver BC V5Y 1E9 |"
+          - link "Privacy Policy" [ref=f90e231] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: "&"
+          - link "Terms of Service" [ref=f90e232] [cursor=pointer]:
+            - /url: /terms-of-service
+          - text: "| Questions?"
+          - link "Contact us." [ref=f90e233] [cursor=pointer]:
+            - /url: /message-us
+      - navigation "Footer menu" [ref=f90e235]:
+        - menu [ref=f90e236]:
+          - menuitem "The FORM Swim System arrow--down" [ref=f90e237] [cursor=pointer]:
+            - generic [ref=f90e238]: The FORM Swim System
+            - img "arrow--down" [ref=f90e241]
+          - menuitem "Shop arrow--down" [ref=f90e242] [cursor=pointer]:
+            - generic [ref=f90e243]: Shop
+            - img "arrow--down" [ref=f90e246]
+          - menuitem "Learn More arrow--down" [ref=f90e247] [cursor=pointer]:
+            - generic [ref=f90e248]: Learn More
+            - img "arrow--down" [ref=f90e251]
+          - menuitem "About Us arrow--down" [ref=f90e252] [cursor=pointer]:
+            - generic [ref=f90e253]: About Us
+            - img "arrow--down" [ref=f90e256]
+          - menuitem "Support arrow--down" [ref=f90e257] [cursor=pointer]:
+            - generic [ref=f90e258]: Support
+            - img "arrow--down" [ref=f90e261]
+          - menuitem "Where to Buy arrow--down" [ref=f90e262] [cursor=pointer]:
+            - generic [ref=f90e263]: Where to Buy
+            - img "arrow--down" [ref=f90e266]
+          - menuitem "Work with Us arrow--down" [ref=f90e267] [cursor=pointer]:
+            - generic [ref=f90e268]: Work with Us
+            - img "arrow--down" [ref=f90e271]
+          - menuitem "Legal arrow--down" [ref=f90e272] [cursor=pointer]:
+            - generic [ref=f90e273]: Legal
+            - img "arrow--down" [ref=f90e276]
+      - navigation "Social Menu" [ref=f90e279]:
+        - list [ref=f90e280]:
+          - listitem [ref=f90e281]:
+            - link "Strava" [ref=f90e282] [cursor=pointer]:
+              - /url: https://www.strava.com/clubs/formswim
+              - img "strava" [ref=f90e283]
+          - listitem [ref=f90e284]:
+            - link "Facebook" [ref=f90e285] [cursor=pointer]:
+              - /url: https://www.facebook.com/formswim
+              - img "facebook" [ref=f90e286]
+          - listitem [ref=f90e287]:
+            - link "Instagram" [ref=f90e288] [cursor=pointer]:
+              - /url: https://www.instagram.com/formswim/
+              - img "instagram" [ref=f90e289]
+          - listitem [ref=f90e290]:
+            - link "YouTube" [ref=f90e291] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCYMQlZIkycbW-cRJ6iCt-Vg
+              - img "youtube" [ref=f90e292]
+          - listitem [ref=f90e293]:
+            - link "LinkedIn" [ref=f90e294] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/formswim/
+              - img "linkedin" [ref=f90e295]

@@ -7,7 +7,7 @@ bijgewerkt: 2026-10-19
 
 # Concepten verzend- en retourbeleid
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] — **Map:** [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
 
 Bron van inhoud en cijfers: de goede NL-pagina's `/pages/verzendbeleid` en `/pages/retourbeleid` (live gelezen op 19-10-2026) en de tabel "Verzending en retour" in [[Feiten & Actuele Staat|Feiten]] (besluit Lars 25-9-2026). Niets is live gezet.
 

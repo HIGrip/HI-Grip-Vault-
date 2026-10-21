@@ -1,0 +1,168 @@
+{{ 'hg-contact.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-contact.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign subject_list = s.subjects | newline_to_br | split: '<br />'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'hgc' %}
+<section
+  class="hgc hgc-form-sec hgc--light"
+  id="formulier"
+  style="
+    {% if s.bg_color != blank %}--c-bg:{{ s.bg_color }};{% endif %}
+    {% if s.text_color != blank %}--c-fg:{{ s.text_color }};{% endif %}
+    {% if s.accent_color != blank %}--c-accent:{{ s.accent_color }};{% endif %}
+    {% if s.eyebrow_color != blank %}--c-eyebrow:{{ s.eyebrow_color }};{% endif %}
+    --c-pt:{{ s.padding_top }}px;--c-pb:{{ s.padding_bottom }}px;--c-pt-m:{{ s.padding_top_mobile }}px;--c-pb-m:{{ s.padding_bottom_mobile }}px;
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="hgc__wrap hgc__grid">
+    <div class="hgc-side">
+      {%- if s.eyebrow != blank -%}<p class="hgc__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="hgc__h2">{{ s.heading }}</h2>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="hgc__lead">{{ s.lead }}</p>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <ul>
+          {%- for block in section.blocks -%}
+            <li {{ block.shopify_attributes }}><b>{{ block.settings.title }}</b> {{ block.settings.text }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+
+    <div data-hgc-form data-order-for="{{ s.order_for | escape }}" data-business-for="{{ s.business_for | escape }}">
+      {%- form 'contact', id: 'contact_form', class: 'hgc-form', novalidate: 'novalidate' -%}
+        {%- if form.posted_successfully? -%}
+          <div class="hgc-done" role="status">
+            <h3 class="hgc__h3">{{ s.success_title }}</h3>
+            <p>{{ s.success_text }}</p>
+          </div>
+        {%- else -%}
+          {%- if form.errors -%}
+            <div class="hgc-fail" role="alert">
+              <h3 class="hgc__h3">{{ s.error_title }}</h3>
+              <p>{{ form.errors | default_errors }}</p>
+            </div>
+          {%- endif -%}
+
+          <fieldset>
+            <legend>{{ s.subject_legend }}</legend>
+            <div class="hgc-chips">
+              {%- for subject in subject_list -%}
+                {%- assign label = subject | strip -%}
+                {%- if label != blank -%}
+                  <label class="hgc-chip">
+                    <input type="radio" name="contact[Onderwerp]" value="{{ label | escape }}" {% if forloop.first %}checked{% endif %}>
+                    <span>{{ label }}</span>
+                  </label>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+            {%- if s.business_hint != blank -%}
+              <div class="hgc-hint" data-hgc-hint hidden>{{ s.business_hint }}</div>
+            {%- endif -%}
+          </fieldset>
+
+          <div class="hgc-row">
+            <div class="hgc-field">
+              <label class="hgc-flabel" for="hgc-name">{{ s.name_label }}</label>
+              <input id="hgc-name" name="contact[name]" autocomplete="name" value="{{ form.name }}">
+            </div>
+            <div class="hgc-field" aria-invalid="false">
+              <label class="hgc-flabel" for="hgc-email">{{ s.email_label }}</label>
+              <input id="hgc-email" name="contact[email]" type="email" autocomplete="email" required value="{{ form.email }}">
+              <span class="hgc-err">{{ s.email_error }}</span>
+            </div>
+          </div>
+
+          <div class="hgc-field" data-hgc-order>
+            <label class="hgc-flabel" for="hgc-order">{{ s.order_label }}</label>
+            <input id="hgc-order" name="contact[Ordernummer]" inputmode="numeric" placeholder="#1234">
+            {%- if s.order_help != blank -%}<small>{{ s.order_help }}</small>{%- endif -%}
+          </div>
+
+          <div class="hgc-field" aria-invalid="false">
+            <label class="hgc-flabel" for="hgc-body">{{ s.message_label }}</label>
+            <textarea id="hgc-body" name="contact[body]" required>{{ form.body }}</textarea>
+            <span class="hgc-err">{{ s.message_error }}</span>
+          </div>
+
+          <label class="hgc-check" aria-invalid="false">
+            <input type="checkbox" data-hgc-privacy required>
+            <span>{{ s.privacy_text }}</span>
+            <span class="hgc-err">{{ s.privacy_error }}</span>
+          </label>
+
+          <div class="hgc-cta">
+            <button class="hgc__pill hgc__pill--dark" type="submit">
+              {{- s.submit_label -}}
+              <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>
+            </button>
+          </div>
+        {%- endif -%}
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Contact: Formulier",
+  "settings": [
+    { "type": "header", "content": "Zijkolom" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel", "default": "Formulier" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Stuur je bericht" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst", "default": "Kies waar het over gaat. Dan ligt je vraag meteen bij de juiste persoon." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen (zijkolom)", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Onderwerpen" },
+    { "type": "text", "id": "subject_legend", "label": "Vraag boven onderwerpen", "default": "Waar gaat het over?" },
+    { "type": "textarea", "id": "subjects", "label": "Onderwerpen (één per regel)", "default": "Mijn bestelling\nMaat of advies\nRetour of ruil\nZakelijk\nPers of samenwerking\nAnders" },
+    { "type": "text", "id": "order_for", "label": "Ordernummer tonen bij onderwerp nr.", "info": "Nummers gescheiden door komma, bijv. 1,3. Leeg = altijd tonen.", "default": "1,3" },
+    { "type": "text", "id": "business_for", "label": "Zakelijke tip tonen bij onderwerp nr.", "default": "4" },
+    { "type": "richtext", "id": "business_hint", "label": "Zakelijke tip", "default": "<p>Retailer of club? Op <a href=\"/pages/zakelijk\">HÏ Grip Zakelijk</a> lees je eerst hoe het werkt. Je mag ook hier je aanvraag sturen.</p>" },
+    { "type": "header", "content": "Velden en meldingen" },
+    { "type": "text", "id": "name_label", "label": "Label naam", "default": "Je naam" },
+    { "type": "text", "id": "email_label", "label": "Label e-mailadres", "default": "Je e-mailadres *" },
+    { "type": "text", "id": "email_error", "label": "Fout e-mailadres", "default": "Vul een geldig e-mailadres in, bijvoorbeeld naam@domein.nl." },
+    { "type": "text", "id": "order_label", "label": "Label ordernummer", "default": "Ordernummer" },
+    { "type": "text", "id": "order_help", "label": "Hulptekst ordernummer", "default": "Staat in je bevestigingsmail. Geen ordernummer? Laat leeg." },
+    { "type": "text", "id": "message_label", "label": "Label bericht", "default": "Je bericht *" },
+    { "type": "text", "id": "message_error", "label": "Fout bericht", "default": "Schrijf kort wat je vraag is." },
+    { "type": "richtext", "id": "privacy_text", "label": "Toestemming privacybeleid", "default": "<p>Ik ga akkoord met het <a href=\"/pages/privacybeleid\">privacybeleid</a>.</p>" },
+    { "type": "text", "id": "privacy_error", "label": "Fout toestemming", "default": "Vink aan dat je akkoord gaat met het privacybeleid." },
+    { "type": "text", "id": "submit_label", "label": "Knop verzenden", "default": "Verstuur" },
+    { "type": "text", "id": "success_title", "label": "Bevestiging: kop", "default": "Bericht ontvangen" },
+    { "type": "text", "id": "success_text", "label": "Bevestiging: tekst", "default": "Bedankt, we hebben je bericht. We komen bij je terug via je e-mail." },
+    { "type": "text", "id": "error_title", "label": "Foutmelding: kop", "default": "Er ging iets mis" },
+    { "type": "header", "content": "Knop" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur", "default": "#000000" },
+    { "type": "color", "id": "eyebrow_color", "label": "Kleur bovenregel", "default": "#000000" },
+    { "type": "header", "content": "Ruimte" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 112 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 112 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 72 }
+  ],
+  "blocks": [
+    {
+      "type": "tip",
+      "name": "Tip",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Vet gedrukt", "default": "Bestelling of retour?" },
+        { "type": "text", "id": "text", "label": "Tekst", "default": "Je ordernummer scheelt een mailtje heen en weer." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "Contact: Formulier" } ]
+}
+{% endschema %}

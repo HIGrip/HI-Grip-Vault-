@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e8]:
+        - paragraph [ref=e10]: 1 year free of Natural Cycles now included with all WHOOP memberships.
+        - link "Learn more" [ref=e11] [cursor=pointer]:
+          - /url: /nl/en/natural-cycles/
+      - generic [ref=e12]:
+        - link "WHOOP Logo" [ref=e13] [cursor=pointer]:
+          - /url: /nl/en/
+          - img "WHOOP Logo" [ref=e14]
+        - navigation [ref=e26]:
+          - list [ref=e27]:
+            - listitem [ref=e29]:
+              - link "Memberships" [ref=e30] [cursor=pointer]:
+                - /url: /nl/en/membership/
+            - listitem [ref=e32]:
+              - link "How it works" [ref=e33] [cursor=pointer]:
+                - /url: /nl/en/how-it-works/
+            - listitem [ref=e35]:
+              - link "Trial WHOOP" [ref=e36] [cursor=pointer]:
+                - /url: /nl/en/whoop-trials/
+            - listitem [ref=e38]:
+              - link "Why WHOOP" [ref=e39] [cursor=pointer]:
+                - /url: /nl/en/difference/
+            - listitem [ref=e41]:
+              - link "Accessories" [ref=e42] [cursor=pointer]:
+                - /url: https://shop.whoop.com
+        - link "Join now" [ref=e44] [cursor=pointer]:
+          - /url: https://join.whoop.com/
+    - main [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e51]:
+          - generic "Main hero video" [ref=e53]
+          - generic [ref=e54]:
+            - generic [ref=e56]:
+              - heading "The wearable designed for lasting progress" [level=1] [ref=e58]
+              - paragraph [ref=e61]: WHOOP combines 24/7 health insights with personalized coaching to help you improve how you sleep, train, and feel — starting day one.
+            - button "Pause video" [ref=e62] [cursor=pointer]
+        - link "Join Now" [ref=e64] [cursor=pointer]:
+          - /url: https://join.whoop.com/
+        - generic [ref=e70]:
+          - 'img "Phone showing Natural Cycles app on a desk with sketching. From Figma NC Landing Page_new_imagery. NOTE: Figma comp placement only, 653x558 — lower resolution than the asset it replaces (3072x4096). Replace with production master when available." [ref=e73]'
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - heading "Get 1 year of Natural Cycles° for free" [level=4] [ref=e76]
+              - paragraph [ref=e78]: Trusted by millions of women for hormone-free birth control, Natural Cycles app access is now included in your WHOOP membership.
+            - link "JOIN NOW" [ref=e80] [cursor=pointer]:
+              - /url: https://join.whoop.com/?naturalCycles=true
+        - generic [ref=e84]:
+          - heading "Wear WHOOP daily, improve your health" [level=2] [ref=e85]
+          - paragraph [ref=e88]: Daily WHOOP wear is linked to 91 more minutes of weekly activity, 2.3 more hours of sleep per week, and over 10% higher HRV. Members see faster gains, stronger habits, and better outcomes across their goals.*
+        - img "Outdoor running scene on a desert trail with a runner in WHOOP gear; a large WHOOP Age orb overlays the image displaying 45.8 and “4.7 years younger,” illustrating the WHOOP app’s biological-age metric tied to training, recovery, and long-term health." [ref=e93]
+        - generic [ref=e96]:
+          - heading "Get a complete picture of your health" [level=2] [ref=e97]
+          - paragraph [ref=e100]: With 24/7 monitoring across sleep, strain, stress, and heart health, WHOOP gives you a complete view of your health — so you can make smarter decisions every day.
+        - generic [ref=e103]:
+          - generic [ref=e104]:
+            - generic [ref=e106]:
+              - img "Quantify how your body is feeling with WHOOP" [ref=e109] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Quantify how your body is feeling" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e111]:
+              - img "Person wearing a WHOOP device resting at the edge of a pool; a WHOOP Age orb displays 45.8 and “4.7 years younger,” highlighting the Healthspan metric and in-water wear." [ref=e114] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Extend your prime for years to come" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e116]:
+              - img "Optimize sleep with WHOOP" [ref=e119] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Optimize your sleep" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e121]:
+              - img "WHOOP Core Product app ui." [ref=e124] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Measure the impact of every step and rep" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e126]:
+              - img "Stay connected with your heart health." [ref=e129] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Stay connected to your heart health" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e131]:
+              - img "Blood pressure monitor app ui with WHOOP" [ref=e134] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Get daily Blood Pressure Insights" [level=3]
+                - generic:
+                  - button
+            - generic [ref=e136]:
+              - img "menstrual cycle insights app ui." [ref=e139] [cursor=pointer]
+              - generic:
+                - generic:
+                  - heading "Understand your unique cycle" [level=3]
+                - generic:
+                  - button
+          - button "Next" [ref=e140] [cursor=pointer]
+          - generic [ref=e142]:
+            - generic [ref=e143] [cursor=pointer]
+            - generic [ref=e144] [cursor=pointer]
+            - generic [ref=e145] [cursor=pointer]
+        - heading "Choose a membership" [level=2] [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e155]:
+              - paragraph [ref=e158]: Available at €199/yr
+              - generic [ref=e162]:
+                - list [ref=e163]:
+                  - listitem [ref=e164]:
+                    - paragraph [ref=e167]: WHOOP 5.0 with 14+ day battery
+                  - listitem [ref=e168]:
+                    - paragraph [ref=e171]: Sleep, Strain, & Recovery insights
+                  - listitem [ref=e172]:
+                    - paragraph [ref=e175]: Personalized coaching
+                  - listitem [ref=e176]:
+                    - paragraph [ref=e179]: VO2 Max & heart rate zones
+                  - listitem [ref=e180]:
+                    - paragraph [ref=e183]: Women's Hormonal Insights
+                - generic [ref=e184]:
+                  - link "START WITH ONE" [ref=e185] [cursor=pointer]:
+                    - /url: https://join.whoop.com/?tier=ONE
+                  - link "LEARN MORE" [ref=e187] [cursor=pointer]:
+                    - /url: /nl/en/one/
+            - generic [ref=e190]:
+              - paragraph [ref=e193]: Available at €264/yr
+              - img "Test alt" [ref=e197]
+              - generic [ref=e198]:
+                - list [ref=e199]:
+                  - listitem [ref=e200]:
+                    - paragraph [ref=e201]: Everything on WHOOP One, plus
+                  - listitem [ref=e202]:
+                    - paragraph [ref=e205]: WHOOP 5.0 with 14+ day battery
+                  - listitem [ref=e206]:
+                    - paragraph [ref=e209]: Healthspan and Pace of Aging
+                  - listitem [ref=e210]:
+                    - paragraph [ref=e213]: Health Monitor with health alerts
+                  - listitem [ref=e214]:
+                    - paragraph [ref=e217]: Real-time Stress Monitor
+                - generic [ref=e218]:
+                  - link "START WITH PEAK" [ref=e219] [cursor=pointer]:
+                    - /url: https://join.whoop.com/?tier=PEAK
+                  - link "LEARN MORE" [ref=e221] [cursor=pointer]:
+                    - /url: /nl/en/peak/
+            - generic [ref=e224]:
+              - paragraph [ref=e227]: Available at €399/yr
+              - generic [ref=e231]:
+                - list [ref=e232]:
+                  - listitem [ref=e233]:
+                    - paragraph [ref=e234]: Everything on WHOOP Peak, plus
+                  - listitem [ref=e235]:
+                    - paragraph [ref=e238]: WHOOP MG with 14+ day battery
+                  - listitem [ref=e239]:
+                    - paragraph [ref=e242]: Daily Blood Pressure Insights
+                  - listitem [ref=e243]:
+                    - paragraph [ref=e246]: Heart Screener with ECG readings
+                  - listitem [ref=e247]:
+                    - paragraph [ref=e250]: Irregular Heart Rhythm Notifications
+                - generic [ref=e251]:
+                  - link "START WITH LIFE" [ref=e252] [cursor=pointer]:
+                    - /url: https://join.whoop.com/?tier=LIFE
+                  - link "LEARN MORE" [ref=e254] [cursor=pointer]:
+                    - /url: /nl/en/life/
+            - generic [ref=e257]:
+              - paragraph [ref=e260]: Starting at €0
+              - generic [ref=e264]:
+                - list [ref=e265]:
+                  - listitem [ref=e266]:
+                    - paragraph [ref=e267]: Peak membership features, plus
+                  - listitem [ref=e268]:
+                    - paragraph [ref=e271]: 5.0 device and basic wired charger
+                  - listitem [ref=e272]:
+                    - paragraph [ref=e275]: Pick any membership before your trial ends
+                  - listitem [ref=e276]:
+                    - paragraph [ref=e279]: New Jetblack Coreknit band
+                  - listitem [ref=e280]:
+                    - paragraph [ref=e283]: Lifetime warranty
+                - generic [ref=e284]:
+                  - link "Try For Free" [ref=e285] [cursor=pointer]:
+                    - /url: https://join.whoop.com/?tier=TRIAL
+                  - link "Learn More" [ref=e287] [cursor=pointer]:
+                    - /url: /nl/en/whoop-trials/
+          - tablist "Slides" [ref=e289]:
+            - generic [ref=e290]:
+              - tab "View Membership Card ONE | EU + IE | EU details" [selected] [ref=e291] [cursor=pointer]
+              - tab "View Membership Card PEAK | EU + IE | EU details" [ref=e292] [cursor=pointer]
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - heading "Get started for free" [level=4] [ref=e303]
+            - paragraph [ref=e305]: Get a 1-month free trial of Peak membership with a WHOOP device and charger included.
+          - link "TRY WHOOP FOR FREE" [ref=e307] [cursor=pointer]:
+            - /url: /nl/en/whoop-trials/
+        - generic [ref=e311]:
+          - heading "Backed by PHDs, worn by MVPs" [level=2] [ref=e312]
+          - paragraph [ref=e315]: "Whether you're #1 in the world or on day 1 of your journey, WHOOP helps you optimize your health, fitness, and life."
+        - generic [ref=e318]:
+          - generic [ref=e323]:
+            - button "Show video for Cristiano Ronaldo" [ref=e324] [cursor=pointer]
+            - generic [ref=e327]:
+              - heading "Cristiano Ronaldo" [level=4] [ref=e328]
+              - paragraph [ref=e329]: Football Legend & Global Icon
+          - generic [ref=e337]:
+            - heading "Aryna Sabalenka" [level=4] [ref=e338]
+            - paragraph [ref=e339]: World No. 1 Tennis Player
+          - generic [ref=e344]:
+            - heading "\"WHOOP has been a huge motivator to a healthier lifestyle.\"" [level=1] [ref=e347]
+            - generic [ref=e349]:
+              - heading "Ashlynn P." [level=4] [ref=e350]
+              - paragraph [ref=e351]: WHOOP Member
+          - generic [ref=e357]:
+            - generic [ref=e358]:
+              - heading "Rory McIlroy" [level=4] [ref=e359]
+              - paragraph [ref=e360]: Grand Slam Champion
+            - button "View details for Rory McIlroy" [ref=e361] [cursor=pointer]
+          - generic [ref=e366]:
+            - heading "\"WHOOP has helped me greatly improve my physical health and wellbeing\"" [level=1] [ref=e369]
+            - generic [ref=e371]:
+              - heading "Samatha R." [level=4] [ref=e372]
+              - paragraph [ref=e373]: WHOOP Member
+          - generic [ref=e375]:
+            - img "Scuderia Ferrari Formula 1 drivers in full race suits holding their helmets, representing elite performance, recovery optimization, and WHOOP partnership in professional motorsport." [ref=e378]
+            - generic [ref=e382]:
+              - heading "Scuderia Ferrari HP Team Partner" [level=4] [ref=e383]
+              - paragraph [ref=e384]: Official Health & Fitness Wearable
+          - generic [ref=e392]:
+            - heading "Paris Saint-Germain" [level=4] [ref=e393]
+            - paragraph [ref=e394]: Official Health & Fitness Wearable
+          - generic [ref=e397]:
+            - img "Virgil Van Dijk wearing a WHOOP 5.0 band in a modern kitchen, casual pose, highlighting everyday wear for continuous health and recovery tracking." [ref=e399]
+            - generic [ref=e400]:
+              - button "Show video for Virgil van Dijk" [ref=e401] [cursor=pointer]
+              - generic [ref=e404]:
+                - heading "Virgil van Dijk" [level=4] [ref=e405]
+                - paragraph [ref=e406]: Global Football Star
+          - generic [ref=e414]:
+            - heading "Sha'Carri Richardson" [level=4] [ref=e415]
+            - paragraph [ref=e416]: Track and Field Star
+        - heading "Built to be worn 24/7" [level=2] [ref=e421]
+        - generic [ref=e422]:
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - heading [level=3] [ref=e427]:
+                - button "Zero distractions" [expanded] [ref=e428] [cursor=pointer]
+              - generic "Zero distractions" [ref=e429]:
+                - paragraph [ref=e433]: A screen-free design means no pings, distractions, or unnecessary bells & whistles.
+            - generic [ref=e434]:
+              - heading [level=3] [ref=e435]:
+                - button "Always on sensors" [ref=e436] [cursor=pointer]
+              - paragraph [ref=e439]: For unmatched precision and insights, heart rate sensors collect data points every second–24/7.
+            - generic [ref=e441]:
+              - heading [level=3] [ref=e442]:
+                - button "14+ day battery life" [ref=e443] [cursor=pointer]
+              - paragraph [ref=e446]: Power up on-the-go and stay charged with the waterproof Wireless PowerPack.
+            - generic [ref=e447]:
+              - heading [level=3] [ref=e448]:
+                - button "Completely customizable" [ref=e449] [cursor=pointer]
+              - paragraph [ref=e452]: Create a look that’s uniquely you, or wear WHOOP off-wrist with all-new WHOOP Body Smart Apparel.
+          - button "Resume" [ref=e456] [cursor=pointer]
+        - heading "One device, endless ways to wear it" [level=2] [ref=e461]
+        - generic [ref=e469]:
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - button "Meridian" [ref=e472] [cursor=pointer]
+              - button "LeatherLuxe" [ref=e474] [cursor=pointer]
+              - button "SportFlex" [ref=e476] [cursor=pointer]
+              - button "CloudKnit" [ref=e478] [cursor=pointer]
+              - button "SuperKnit" [ref=e480] [cursor=pointer]
+              - button "CoreKnit" [ref=e482] [cursor=pointer]
+              - button "WHOOP Body" [ref=e484] [cursor=pointer]
+            - generic [ref=e486]:
+              - heading "Live in luxe" [level=3] [ref=e487]
+              - paragraph [ref=e489]: Crafted from premium Italian leather and precious metals, LeatherLuxe elevates your look with timeless sophistication and style.
+          - img "Ways to wear leatherluxe with WHOOP" [ref=e492]
+        - generic [ref=e497]:
+          - img "Image pack" [ref=e499]
+          - generic [ref=e500]:
+            - heading "No other wearable lets you try before you buy" [level=5] [ref=e501]
+            - generic [ref=e502]:
+              - paragraph [ref=e503]: Get a 1-month free trial of Peak membership with a certified pre-owned WHOOP 5.0 device to improve fitness, manage stress, and receive personalized guidance to optimize your Healthspan.
+              - paragraph
+            - link "TRY WHOOP FOR FREE" [ref=e505] [cursor=pointer]:
+              - /url: /nl/en/whoop-trials/
+        - generic [ref=e510]:
+          - paragraph [ref=e511]: Offer available to eligible WHOOP customers who are new to Natural Cycles. Your free year of Natural Cycles is linked to your active WHOOP membership. If your WHOOP membership ends or becomes inactive, your complimentary Natural Cycles access will also end, and standard subscription fees will apply.
+          - paragraph [ref=e512]: "Additional Medical Information:"
+          - paragraph [ref=e513]: "1. Healthspan: This feature is not available for users under the age of 18. This feature is for wellness purposes only and not for medical use."
+          - paragraph [ref=e514]:
+            - text: "2. ECG: This feature is not intended for users with known arrhythmias other than AFib or users under 22 years old. It is not recommended for users with a cardiac pacemaker, ICDs or other implanted electronic devices. ECG is a medically regulated feature and is not available in every region. Find out where else it's available"
+            - link "here" [ref=e515] [cursor=pointer]:
+              - /url: /nl/en/feature-availability/
+            - text: .
+          - paragraph [ref=e516]: "Within EU/UK ECG is not available in the following regions: Faroe Islands (FO) - Not available yet, Guernsey (GG)- Not available yet, Isle of Man (IM) - Not available yet, Jersey (JE) - Not available yet, Monaco (MC) - Not available yet, Greenland (GL) - Not available yet"
+          - paragraph [ref=e517]:
+            - text: "3. Irregular Heart Rhythm Notifications (IHRN): This feature is not intended for users with known atrial fibrillation or users under 22 years old. IHRN is a medically regulated feature and is not currently available in every region. Find out where else it's available"
+            - link "here" [ref=e518] [cursor=pointer]:
+              - /url: /nl/en/feature-availability/
+            - text: .
+          - paragraph [ref=e519]: "Within EU/UK IHRN is not available in the following regions: Faroe Islands (FO) - Not available yet, Guernsey (GG)- Not available yet, Isle of Man (IM) - Not available yet, Jersey (JE) - Not available yet, Monaco (MC) - Not available yet, Greenland (GL) - Not available yet"
+          - paragraph [ref=e520]: "4. Blood Pressure Insights: Blood Pressure Insights is not a medical device and cannot diagnose or manage medical conditions. It does not provide medical advice. Always consult your doctor for health concerns and never delay or modify medical care based on its information. Blood Pressure Insights is not intended for use if you are pregnant or on blood pressure medication."
+          - paragraph [ref=e521]: "5. Women's Hormonal Insights: Menstrual Cycle Insights is not a medical device or medical advice and should not be used for conception or contraception. All phases, including the ovulatory phase, are estimates."
+          - paragraph [ref=e522]: "6. WHOOP Advanced Labs: WHOOP Advanced Labs is only available in the United States. You must be 18 years or older and not pregnant to participate. Advanced Labs testing is not available in Arizona, Hawaii, Wyoming, North Dakota, or South Dakota; however, tests may be completed out of state. If you are within 20 weeks postpartum, weigh under 100 lbs (45 kg), have severe anemia (Hb < 8 g/dL), or have recently undergone surgery, we recommend waiting until you have been cleared by your clinician before testing."
+    - contentinfo [ref=e526]:
+      - navigation "Footer" [ref=e527]:
+        - generic [ref=e528]:
+          - heading "Support" [level=2] [ref=e529]
+          - list "Support links" [ref=e530]:
+            - listitem [ref=e531]:
+              - link "Member Support" [ref=e532] [cursor=pointer]:
+                - /url: https://support.whoop.com/
+            - listitem [ref=e533]:
+              - link "Order Status" [ref=e534] [cursor=pointer]:
+                - /url: https://orderstatus.whoop.com/orderlookup
+            - listitem [ref=e535]:
+              - link "Rejoin WHOOP" [ref=e536] [cursor=pointer]:
+                - /url: /nl/en/rejoin-whoop/
+            - listitem [ref=e537]:
+              - link "Member Login" [ref=e538] [cursor=pointer]:
+                - /url: https://app.whoop.com/login
+            - listitem [ref=e539]:
+              - link "WHOOP Labs Boston" [ref=e540] [cursor=pointer]:
+                - /url: /nl/en/labs-boston/
+            - listitem [ref=e541]:
+              - link "WHOOP Labs Doha" [ref=e542] [cursor=pointer]:
+                - /url: /nl/en/labs-doha/
+            - listitem [ref=e543]:
+              - link "Digital WHOOP Labs" [ref=e544] [cursor=pointer]:
+                - /url: /nl/en/digital-whoop-labs/
+            - listitem [ref=e545]:
+              - link "WHOOP Advanced Labs" [ref=e546] [cursor=pointer]:
+                - /url: /nl/en/advanced-labs/
+            - listitem [ref=e547]:
+              - link "WHOOP Community" [ref=e548] [cursor=pointer]:
+                - /url: https://community.whoop.com/
+        - generic [ref=e549]:
+          - heading "Company" [level=2] [ref=e550]
+          - list "Company links" [ref=e551]:
+            - listitem [ref=e552]:
+              - link "Support" [ref=e553] [cursor=pointer]:
+                - /url: https://support.whoop.com/hc/en-us
+            - listitem [ref=e554]:
+              - link "Developers" [ref=e555] [cursor=pointer]:
+                - /url: https://engineering.whoop.com/
+            - listitem [ref=e556]:
+              - link "Engineering" [ref=e557] [cursor=pointer]:
+                - /url: https://engineering.whoop.com/
+            - listitem [ref=e558]:
+              - link "Careers" [ref=e559] [cursor=pointer]:
+                - /url: /nl/en/careers/
+            - listitem [ref=e560]:
+              - link "Our Mission" [ref=e561] [cursor=pointer]:
+                - /url: /nl/en/about/
+        - generic [ref=e562]:
+          - heading "Legal" [level=2] [ref=e563]
+          - list "Legal links" [ref=e564]:
+            - listitem [ref=e565]:
+              - link "Terms of Use" [ref=e566] [cursor=pointer]:
+                - /url: /nl/en/terms-of-use/
+            - listitem [ref=e567]:
+              - link "Terms of Sale" [ref=e568] [cursor=pointer]:
+                - /url: /nl/en/terms-of-sale/
+            - listitem [ref=e569]:
+              - link "Trade Up Terms" [ref=e570] [cursor=pointer]:
+                - /url: /nl/en/sales-campaign-disclaimers/
+            - listitem [ref=e571]:
+              - link "Privacy" [ref=e572] [cursor=pointer]:
+                - /url: /nl/en/whoop-privacy-policies/#privacy-principles
+            - listitem [ref=e573]:
+              - link "Minimum Advertised Pricing Policy" [ref=e574] [cursor=pointer]:
+                - /url: /nl/en/whoop-privacy-policies/#minimum-advertised-pricing
+            - listitem [ref=e575]:
+              - link "Security" [ref=e576] [cursor=pointer]:
+                - /url: /nl/en/whoop-privacy-policies/#security
+            - listitem [ref=e577]:
+              - link "Patent" [ref=e578] [cursor=pointer]:
+                - /url: /nl/en/whoop-privacy-policies/#patents
+            - listitem [ref=e579]:
+              - link "Full Privacy Policy" [ref=e580] [cursor=pointer]:
+                - /url: /nl/en/full-privacy-policy/
+            - listitem [ref=e581]:
+              - link "Consumer Health Notice" [ref=e582] [cursor=pointer]:
+                - /url: /nl/en/whoop-privacy-policies/#consumer-health-data-privacy-notice
+            - listitem [ref=e583]:
+              - link "Connected Care Consent to Care" [ref=e584] [cursor=pointer]:
+                - /url: /nl/en/connected-care-consent-to-care/
+            - listitem [ref=e585]:
+              - link "Connected Care Terms of Care" [ref=e586] [cursor=pointer]:
+                - /url: /nl/en/connected-care-terms-of-care/
+            - listitem [ref=e587]:
+              - link "Connected Care Notice of Privacy Practices" [ref=e588] [cursor=pointer]:
+                - /url: /nl/en/notice-of-privacy-practices/
+            - listitem [ref=e589]:
+              - link "Product Compliance" [ref=e590] [cursor=pointer]:
+                - /url: /nl/en/product-compliance/
+        - generic [ref=e591]:
+          - heading "Partner" [level=2] [ref=e592]
+          - list "Partner links" [ref=e593]:
+            - listitem [ref=e594]:
+              - link "Become an Affiliate" [ref=e595] [cursor=pointer]:
+                - /url: https://whoopinc.typeform.com/to/HSXphBws
+            - listitem [ref=e596]:
+              - link "Developers" [ref=e597] [cursor=pointer]:
+                - /url: https://developer.whoop.com/
+            - listitem [ref=e598]:
+              - link "WHOOP Research" [ref=e599] [cursor=pointer]:
+                - /url: /nl/en/research/
+        - generic [ref=e600]:
+          - heading "Join WHOOP" [level=2] [ref=e601]
+          - list "Join WHOOP links" [ref=e602]:
+            - listitem [ref=e603]:
+              - link "Get WHOOP" [ref=e604] [cursor=pointer]:
+                - /url: https://join.whoop.com/?gdpr=1%2F
+            - listitem [ref=e605]:
+              - link "Trade Up" [ref=e606] [cursor=pointer]:
+                - /url: /nl/en/trade-up/
+            - listitem [ref=e607]:
+              - link "Buy in Bulk" [ref=e608] [cursor=pointer]:
+                - /url: /nl/en/bulk-buy/
+            - listitem [ref=e609]:
+              - link "Refer a Friend" [ref=e610] [cursor=pointer]:
+                - /url: https://app.whoop.com/referafriend?utm_source=whoop&utm_medium=web&utm_campaign=refer_a_friend&utm_content=homepage_footer
+            - listitem [ref=e611]:
+              - link "Gift WHOOP" [ref=e612] [cursor=pointer]:
+                - /url: https://join.whoop.com/?utm_source=whoop&utm_medium=web&utm_campaign=gifting&utm_content=footer_whoop_4
+            - listitem [ref=e613]:
+              - link "Corporate Gifting" [ref=e614] [cursor=pointer]:
+                - /url: /nl/en/corporate-gifting/
+            - listitem [ref=e615]:
+              - link "Accessories" [ref=e616] [cursor=pointer]:
+                - /url: https://shop.whoop.com
+            - listitem [ref=e617]:
+              - link "Military & First Responders offers" [ref=e618] [cursor=pointer]:
+                - /url: /nl/en/hero-discounts/
+            - listitem [ref=e619]:
+              - link "Student pricing" [ref=e620] [cursor=pointer]:
+                - /url: https://connect.studentbeans.com/v4/hosted/whoop/us
+            - listitem [ref=e621]:
+              - link "Healthcare Professional Subsidy" [ref=e622] [cursor=pointer]:
+                - /url: /nl/en/healthcare-professionals/
+            - listitem [ref=e623]:
+              - link "Store Locator" [ref=e624] [cursor=pointer]:
+                - /url: /nl/en/store-locator/
+            - listitem [ref=e625]:
+              - link "Connected Care" [ref=e626] [cursor=pointer]:
+                - /url: /nl/en/connected-care/
+        - generic [ref=e627]:
+          - heading "The Locker" [level=2] [ref=e628]
+          - list "The Locker links" [ref=e629]:
+            - listitem [ref=e630]:
+              - link "The Locker" [ref=e631] [cursor=pointer]:
+                - /url: /nl/en/thelocker/
+            - listitem [ref=e632]:
+              - link "Press Center" [ref=e633] [cursor=pointer]:
+                - /url: /nl/en/press-center/
+      - generic [ref=e634]:
+        - generic [ref=e635]:
+          - img "WHOOP Logo" [ref=e636]
+          - paragraph [ref=e650]: Our mission at WHOOP is to unlock human performance and Healthspan.
+        - generic [ref=e652]:
+          - generic [ref=e653]:
+            - textbox "Enter your email" [ref=e654]
+            - button "Submit" [ref=e655] [cursor=pointer]
+          - generic [ref=e656]: By signing up, I agree with the data protection policy.
+        - generic [ref=e657]:
+          - paragraph [ref=e659]: © 2026 WHOOP
+          - button [ref=e663] [cursor=pointer]
+  - alert [ref=e670]
+  - generic:
+    - region "Cookie banner" [ref=e671]:
+      - dialog "Privacy" [ref=e672]:
+        - generic [ref=e673]:
+          - button "Close" [ref=e675] [cursor=pointer]
+          - generic [ref=e676]:
+            - generic [ref=e677]: By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+            - generic [ref=e681]:
+              - button "Accept All Cookies" [ref=e683] [cursor=pointer]
+              - button "Reject All" [ref=e685] [cursor=pointer]
+              - button "Cookies Settings" [ref=e687] [cursor=pointer]
+    - text: Cookies Settings

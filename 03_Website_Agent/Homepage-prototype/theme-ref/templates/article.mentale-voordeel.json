@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><br/>Bewegen is gezond, dat weten we allemaal. Maar <strong>sporten</strong> is méér dan simpelweg stappen zetten of je hartslag verhogen. Lees hier meer over de mentale voordelen van sporten en bewegen! <br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Actief bezig zijn</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Sporten is een krachtig middel om fysiek sterker te worden, je wordt fitter, sterker, sneller en noem maar op. Maar wist je dat wie sport ook mentaal veerkrachtiger wordt? In deze blog duiken we in de <strong>mentale voordelen van actief zijn</strong> én hoe iets simpels als <a href=\"/winkel\">de juiste uitrusting</a> het verschil kan maken in jouw sportbeleving!</p><p> </p><h3>1. Sporten <strong>vermindert stress</strong> en <strong>zorgt voor ontspanning</strong></h3><p>Tijdens het sporten maakt je lichaam endorfines aan – ook wel bekend als gelukshormonen. Deze natuurlijke stoffen helpen stress te verminderen, je stemming te verbeteren en spanning los te laten. Zelfs een korte work-out kan zorgen voor mentale helderheid en stressvermindering.</p><p> </p><h3>2. <strong>Meer zelfvertrouwen</strong> en een <strong>beter humeur</strong></h3><p>Sporten helpt je doelen te stellen én te bereiken. Of je nu werkt aan je conditie, kracht of balans, elke kleine overwinning telt. Dat geeft niet alleen voldoening, maar versterkt ook je zelfbeeld. Je voelt je sterker, zekerder en meer in controle.</p><p> </p><h3>3. <strong>Betere focus</strong> en <strong>mentale discipline</strong></h3><p>Door regelmatig te sporten train je niet alleen je spieren, maar ook je brein. Je leert doorzetten, plannen en focussen – vaardigheden die je helpen op werk, school én in persoonlijke situaties. Sport is in dat opzicht een uitstekende mentale training.</p><p> </p><h3>4. <strong>Sociale verbinding</strong> en <strong>motivatie</strong></h3><p>Samen sporten – of het nu in een team is of tijdens een groepsles – zorgt voor verbondenheid. Het motiveert, houdt je verantwoordelijk en voorkomt isolatie. Samen zweten schept een band en versterkt je mentale welzijn.</p><p> </p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>De rol van gripsokken in jouw sportervaring</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Wist je dat de juiste sportuitrusting ook bijdraagt aan je mentale focus? <strong>HÏ Grip</strong> <strong>gripsokken, </strong>geven jou letterlijk meer grip tijdens elke beweging. Hierdoor voel je je zekerder in je bewegingen en kun je je beter concentreren.</p><p>De <strong>gripsokken van HÏ Grip</strong> zijn speciaal ontworpen om sporters stabiliteit, comfort én stijl te bieden. Of je nu thuis traint, in de gym staat, op het sportveld staat of op de yogamat ligt, met HÏ Grip ervaar je meer controle en voorkom je uitglijden of onzeker bewegen. En dát vertrouwen en de stressvermindering maakt het makkelijker om mentaal in de flow te komen.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Conclusie: sporten is voeding voor je brein.</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Sporten is dus veel meer dan bewegen. Het is een investering in jezelf, zowel fysiek als mentaal. En met <a href=\"/collections/all\" title=\"Alle producten\">de juiste ondersteuning</a> van HÏ Grip, haal je het maximale uit je training. Je voelt je niet alleen sterker, maar ook rustiger, gefocust en zelfverzekerder.<br/></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_hdnzWH",
+        "text_pjbknU"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

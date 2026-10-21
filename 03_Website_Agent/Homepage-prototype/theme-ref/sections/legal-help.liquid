@@ -1,0 +1,136 @@
+{{ 'legal-page.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+<div
+  class="legal legal-help"
+  data-width="{{ s.section_width }}"
+  data-align="{{ s.text_align }}"
+  style="
+    --legal-bg: {{ s.bg_color }};
+    --legal-fg: {{ s.text_color }};
+    --legal-h-size: {{ s.heading_size }}px;
+    --legal-h-size-m: {{ s.heading_size_mobile }}px;
+    --legal-pt: {{ s.padding_top }}px;
+    --legal-pb: {{ s.padding_bottom }}px;
+    --legal-pt-m: {{ s.padding_top_mobile }}px;
+    --legal-pb-m: {{ s.padding_bottom_mobile }}px;
+    --legal-text-size: {{ s.text_size }}px;
+    {% if s.heading_color != blank %}--legal-heading-color: {{ s.heading_color }};{% endif %}
+    {% if s.text_color_body != blank %}--legal-text-color: {{ s.text_color_body }};{% endif %}
+    {% if s.strong_color != blank %}--legal-strong-color: {{ s.strong_color }};{% endif %}
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="legal__wrap legal-help__row">
+    <div>
+      {%- if s.heading != blank -%}
+        <{{ tag }} class="legal-help__heading">{{ s.heading | escape }}</{{ tag }}>
+      {%- endif -%}
+      {%- if s.text != blank -%}
+        <p class="legal-help__text">{{ s.text }}</p>
+      {%- endif -%}
+    </div>
+    {%- if s.button_label != blank and s.button_link != blank -%}
+      <a
+        class="legal__pill legal__pill--{{ s.button_style }}"
+        style="{% render 'legal-pill-vars', bg: s.button_bg, fg: s.button_fg, border: s.button_border, hover_bg: s.button_hover_bg, hover_fg: s.button_hover_fg, radius: s.button_radius, size: s.button_size %}"
+        href="{{ s.button_link }}"
+      >
+        {{- s.button_label | escape -}}
+        <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>
+      </a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juridisch: Contact",
+  "settings": [
+    { "type": "header", "content": "Tekst" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Vraag over dit beleid?" },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (H1, H2, H3...)",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" },
+        { "value": "p", "label": "Gewone tekst (p)" }
+      ],
+      "default": "h2"
+    },
+    { "type": "range", "id": "heading_size", "label": "Kopgrootte (desktop)", "min": 16, "max": 80, "step": 2, "unit": "px", "default": 36 },
+    { "type": "range", "id": "heading_size_mobile", "label": "Kopgrootte (mobiel)", "min": 16, "max": 56, "step": 2, "unit": "px", "default": 24 },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Tekst",
+      "default": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>."
+    },
+    { "type": "range", "id": "text_size", "label": "Tekstgrootte", "min": 12, "max": 28, "step": 1, "unit": "px", "default": 15 },
+    { "type": "color", "id": "heading_color", "label": "Kleur kop" },
+    { "type": "color", "id": "text_color_body", "label": "Kleur tekst" },
+    { "type": "color", "id": "strong_color", "label": "Kleur vetgedrukte tekst (e-mail, telefoon)" },
+    { "type": "header", "content": "Knop" },
+    { "type": "text", "id": "button_label", "label": "Label", "default": "Contact" },
+    { "type": "url", "id": "button_link", "label": "Link" },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Stijl",
+      "options": [
+        { "value": "light", "label": "Wit" },
+        { "value": "dark", "label": "Zwart" },
+        { "value": "yellow", "label": "Geel" },
+        { "value": "ghost", "label": "Alleen rand" }
+      ],
+      "default": "light"
+    },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "color", "id": "button_hover_bg", "label": "Knop: achtergrondkleur bij hover" },
+    { "type": "color", "id": "button_hover_fg", "label": "Knop: tekstkleur bij hover" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "range", "id": "button_size", "label": "Knop: tekstgrootte", "min": 11, "max": 24, "step": 1, "unit": "px", "default": 14 },
+    { "type": "header", "content": "Opmaak" },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte van de inhoud",
+      "options": [
+        { "value": "narrow", "label": "Smal" },
+        { "value": "page", "label": "Pagina" },
+        { "value": "full", "label": "Volledige breedte" }
+      ],
+      "default": "page"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Uitlijnen",
+      "options": [
+        { "value": "left", "label": "Links" },
+        { "value": "center", "label": "Gecentreerd" }
+      ],
+      "default": "left"
+    },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 48 }
+  ],
+  "presets": [
+    { "name": "Juridisch: Contact" }
+  ]
+}
+{% endschema %}

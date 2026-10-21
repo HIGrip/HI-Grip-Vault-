@@ -1,0 +1,403 @@
+{% doc %}
+  @prompt
+    een sectie waar we onze drie kernwaarden kort kunnen neerzetten in sportstijl, de kernwaarden poppen omhoog als mensen op de site komen en bestaan uit tekst en klein tekstje eronder en een lijntje en mooie effecten
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-core-values-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-core-values-container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.gap }}px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-core-value-card-{{ ai_gen_id }} {
+    position: relative;
+    padding: {{ block.settings.card_padding }}px;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .ai-core-value-card-{{ ai_gen_id }}.ai-animated-{{ ai_gen_id }} {
+    animation: ai-popup-{{ ai_gen_id }} 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  .ai-core-value-card-{{ ai_gen_id }}:nth-child(1).ai-animated-{{ ai_gen_id }} {
+    animation-delay: 0.1s;
+  }
+
+  .ai-core-value-card-{{ ai_gen_id }}:nth-child(2).ai-animated-{{ ai_gen_id }} {
+    animation-delay: 0.3s;
+  }
+
+  .ai-core-value-card-{{ ai_gen_id }}:nth-child(3).ai-animated-{{ ai_gen_id }} {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes ai-popup-{{ ai_gen_id }} {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .ai-core-value-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_spacing }}px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-core-value-divider-{{ ai_gen_id }} {
+    width: {{ block.settings.divider_width }}px;
+    height: {{ block.settings.divider_height }}px;
+    background: {{ block.settings.divider_color }};
+    margin: 0 auto {{ block.settings.divider_spacing }}px;
+    border-radius: {{ block.settings.divider_border_radius }}px;
+  }
+
+  .ai-core-value-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-core-values-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.gap | times: 0.7 }}px;
+    }
+
+    .ai-core-value-card-{{ ai_gen_id }}:nth-child(1).ai-animated-{{ ai_gen_id }} {
+      animation-delay: 0.1s;
+    }
+
+    .ai-core-value-card-{{ ai_gen_id }}:nth-child(2).ai-animated-{{ ai_gen_id }} {
+      animation-delay: 0.2s;
+    }
+
+    .ai-core-value-card-{{ ai_gen_id }}:nth-child(3).ai-animated-{{ ai_gen_id }} {
+      animation-delay: 0.3s;
+    }
+  }
+{% endstyle %}
+
+<core-values-{{ ai_gen_id }} class="ai-core-values-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-core-values-container-{{ ai_gen_id }}">
+    {% for i in (1..3) %}
+      {% liquid
+        assign title_key = 'value_' | append: i | append: '_title'
+        assign description_key = 'value_' | append: i | append: '_description'
+        assign title = block.settings[title_key]
+        assign description = block.settings[description_key]
+      %}
+      
+      <div class="ai-core-value-card-{{ ai_gen_id }}" data-card="{{ i }}">
+        {% if title != blank %}
+          <{{ block.settings.heading_tag | default: "h3" }} class="ai-core-value-title-{{ ai_gen_id }}">{{ title }}</{{ block.settings.heading_tag | default: "h3" }}>
+        {% endif %}
+        
+        <div class="ai-core-value-divider-{{ ai_gen_id }}"></div>
+        
+        {% if description != blank %}
+          <p class="ai-core-value-description-{{ ai_gen_id }}">{{ description }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</core-values-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CoreValues{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.animated = false;
+      }
+
+      connectedCallback() {
+        this.setupIntersectionObserver();
+      }
+
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !this.animated) {
+              this.animateCards();
+              this.animated = true;
+            }
+          });
+        }, options);
+
+        observer.observe(this);
+      }
+
+      animateCards() {
+        const cards = this.querySelectorAll('.ai-core-value-card-{{ ai_gen_id }}');
+        cards.forEach((card) => {
+          card.classList.add('ai-animated-{{ ai_gen_id }}');
+        });
+      }
+    }
+
+    customElements.define('core-values-{{ ai_gen_id }}', CoreValues{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Kernwaarden",
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h3" },
+    {
+      "type": "header",
+      "content": "Kernwaarde 1"
+    },
+    {
+      "type": "text",
+      "id": "value_1_title",
+      "label": "Titel",
+      "default": "Kwaliteit"
+    },
+    {
+      "type": "textarea",
+      "id": "value_1_description",
+      "label": "Beschrijving",
+      "default": "Wij leveren alleen de hoogste kwaliteit producten voor optimale prestaties."
+    },
+    {
+      "type": "header",
+      "content": "Kernwaarde 2"
+    },
+    {
+      "type": "text",
+      "id": "value_2_title",
+      "label": "Titel",
+      "default": "Innovatie"
+    },
+    {
+      "type": "textarea",
+      "id": "value_2_description",
+      "label": "Beschrijving",
+      "default": "Continu verbeteren en innoveren voor de beste sportervaring."
+    },
+    {
+      "type": "header",
+      "content": "Kernwaarde 3"
+    },
+    {
+      "type": "text",
+      "id": "value_3_title",
+      "label": "Titel",
+      "default": "Passie"
+    },
+    {
+      "type": "textarea",
+      "id": "value_3_description",
+      "label": "Beschrijving",
+      "default": "Gedreven door passie voor sport en het helpen van atleten om te excelleren."
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop breedte",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Sectie padding",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Ruimte tussen kaarten",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Kaart stijl"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Achtergrond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Kaart achtergrond",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Kaart padding",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Kaart afronding",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Titel"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Grootte",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "label": "Ruimte onder titel",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Scheidingslijn"
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "label": "Breedte",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "divider_height",
+      "label": "Hoogte",
+      "min": 2,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "divider_border_radius",
+      "label": "Afronding",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "divider_spacing",
+      "label": "Ruimte onder lijn",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Beschrijving"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Grootte",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Kleur",
+      "default": "#666666"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kernwaarden"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,152 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><br/>Wat begon als een sterke klik in de collegebanken, groeide razendsnel uit tot HÏ Grip. Met een gedeelde passie voor sport en ondernemen bouwden we aan een merk dat draait om comfort, innovatie en vertrouwen. Vanaf dag één is er maar één mindset: blijven ontwikkelen en knallen. En dit? Dit is nog maar het begin.<br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_00a1d93_P8hWkk": {
+          "type": "ai_gen_block_00a1d93",
+          "settings": {
+            "desktop_width_percent": 100,
+            "line_color_start": "#0011a7",
+            "line_color_end": "#0011a7",
+            "dot_size": 20,
+            "dot_color": "#0011a7",
+            "dot_border_color": "#0011a7",
+            "image_border_radius": 12,
+            "date_size": 14,
+            "date_color": "#0011a7",
+            "title_size": 28,
+            "title_color": "#000000",
+            "description_size": 16,
+            "description_color": "#333333",
+            "item_1_date": "SEP. 2024",
+            "item_1_title": "De founders starten samen aan hun studie",
+            "item_1_description": "Hier begon ons verhaal met een visie en passie voor sport aan de Rotterdam Business School.",
+            "item_1_image": "shopify://shop_images/nederlandse-vlag-wappert-op-een-boot-in-rotterdam_771335-16908.png",
+            "item_1_orientation": "landscape",
+            "item_2_date": "OKT. 2024",
+            "item_2_title": "Eerste samenwerking ontstaat tijdens de eerste maanden",
+            "item_2_description": "Tijdens jaar 1 van  de opleiding Ondernemerschap & Retail Management bouwt Team HÏ Grip aan de voorbereiding.",
+            "item_2_image": "shopify://shop_images/IMG_0134.jpg",
+            "item_2_orientation": "landscape",
+            "item_3_date": "DEC. 2024",
+            "item_3_title": "De geboorte van HÏ Grip",
+            "item_3_description": "Na brainstormen, overleggen en beslissen is het moment daar. De eerste stappen voor het sportmerk van de toekomst worden gelegd.",
+            "item_3_image": "shopify://shop_images/Teamfoto_-_HI_Grip.jpg",
+            "item_3_orientation": "landscape",
+            "item_4_date": "JAN. 2025",
+            "item_4_title": "HÏ Grip krijgt vorm",
+            "item_4_description": "Comfort, innovatie en vertrouwen dringen door in ons DNA en de plannen voor de toekomst worden gemaakt. De eerste website ging live.",
+            "item_4_image": "shopify://shop_images/IMG_0332.jpg",
+            "item_4_orientation": "landscape",
+            "item_5_date": "FEB. 2025",
+            "item_5_title": "Lancering van de performance gripsokken",
+            "item_5_description": "De eerste productlijn is geboren, de performance gripsokken. Meer grip, comfort en vertrouwen in elke beweging.",
+            "item_5_image": "shopify://shop_images/Fotoshoot_Excelsior.jpg",
+            "item_5_orientation": "landscape",
+            "item_6_date": "2026",
+            "item_6_title": "Dit is pas het begin",
+            "item_6_description": "Sinds het begin bouwen wij elke dag aan optimale prestaties voor sporters. De toekomst is rijk.",
+            "item_6_image": "shopify://shop_images/image00003.jpg",
+            "item_6_orientation": "landscape",
+            "item_7_date": "",
+            "item_7_title": "",
+            "item_7_description": "",
+            "item_7_orientation": "landscape",
+            "item_8_date": "",
+            "item_8_title": "",
+            "item_8_description": "",
+            "item_8_orientation": "portrait",
+            "item_9_date": "",
+            "item_9_title": "",
+            "item_9_description": "",
+            "item_9_orientation": "landscape",
+            "item_10_date": "",
+            "item_10_title": "",
+            "item_10_description": "",
+            "item_10_orientation": "portrait"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_9f3c9cb_KkwGNc": {
+          "type": "ai_gen_block_9f3c9cb",
+          "name": "Lees meer knop",
+          "settings": {
+            "button_text": "Shop gripsokken",
+            "button_link": "shopify://collections/all",
+            "font_size": 20,
+            "button_font": "poppins_n5",
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_hover_bg_color": "#333333",
+            "button_hover_text_color": "#ffffff",
+            "border_width": 0,
+            "border_color": "#000000",
+            "border_hover_color": "#333333",
+            "border_radius": 26
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "ai_gen_block_00a1d93_P8hWkk",
+        "ai_gen_block_9f3c9cb_KkwGNc"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

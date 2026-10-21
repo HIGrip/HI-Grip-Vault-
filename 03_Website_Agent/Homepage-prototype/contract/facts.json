@@ -1,0 +1,106 @@
+{
+  "_uitleg": "Alle feiten en links van de homepage, met bron. lint.py faalt op een link die hier niet staat. Feitenbestand = 00_Brand_Core/Feiten & Actuele Staat.md (FAS). Thema = theme-ref/ (Bijgewerkte kopie van AI website workspace 2.0, #202398040391, gepulld 18-10).",
+  "site": "https://www.higrip.nl",
+
+  "products": [
+    { "id": "p10", "name": "Performance Gripsokken", "short": "1.0", "url": "https://www.higrip.nl/products/performance-gripsokken", "price": "€14,95", "packs": { "3-pack": "€35,95", "5-pack": "€54,95" }, "per_pair_from": "€10,99", "sizes": ["34–39", "40–46"], "colors": ["wit"], "bron": "FAS r39 + live /products/performance-gripsokken.js (18-10: €14,95, beschikbaar); per paar €10,99 = 5-pack, FAS r43" },
+    { "id": "p20-zwart", "name": "Performance Gripsokken 2.0 Zwart", "short": "2.0 zwart", "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart", "price": "€17,95", "sizes": ["35–38", "39–42", "43–47"], "bron": "FAS r40 + live .js 18-10" },
+    { "id": "p20-wit", "name": "Performance Gripsokken 2.0 Wit", "short": "2.0 wit", "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit", "price": "€17,95", "sizes": ["35–38", "39–42", "43–47"], "bron": "FAS r41 + live .js 18-10" }
+  ],
+  "collection_url": "https://www.higrip.nl/collections/gripsokken",
+
+  "claims": {
+    "sporters": { "value": "3500+", "bron": "FAS r65 (besluit Lars 11-10)" },
+    "trustpilot": { "value": "4,6", "label": "op Trustpilot", "url": "https://nl.trustpilot.com/review/higrip.nl", "bron": "FAS r68 + r33; altijd met bron Trustpilot, nooit als schema-rating" },
+    "verzendbelofte": { "value": "Binnen 1 werkdag verzonden", "bron": "FAS r54 (besluit Lars 25-9). Alleen in 03." },
+    "grip": { "value": "1,17 tegen 0,60", "pct": "95% meer grip", "bron_kort": "Apps et al. 2022", "regel": "Altijd als categoriebewijs: gripsokken in het algemeen, nooit 'HÏ Grip getest'", "bron": "FAS r66–67 + formuleringsregel r71–74; Performance Grip Socks 2.0.md r132–142" }
+  },
+
+  "features_20": [
+    { "id": "compressie", "name": "Compressie", "text": "15–20 mmHg, ondersteunt de doorbloeding tijdens inspanning", "bron": "Performance Grip Socks 2.0.md r115" },
+    { "id": "hiel", "name": "Versterkte hiel", "text": "Extra dikte precies onder de hiel", "bron": "r116" },
+    { "id": "ademend", "name": "Ademend", "text": "Open structuur bovenop de voet", "bron": "r117" },
+    { "id": "grip", "name": "Maximale grip", "text": "Siliconen zones houden de voet vast in de schoen", "bron": "r118" },
+    { "id": "coolmax", "name": "Coolmax®", "text": "30% Coolmax voert vocht direct af van de huid", "bron": "r119" },
+    { "id": "naadloos", "name": "Naadloos", "text": "Rondom gebreid zonder stiksels, naadloze teenzone", "bron": "r120" },
+    { "id": "cushioning", "name": "Special cushioning", "text": "Speciale dempingzones onder de voet", "bron": "r121 (werkomschrijving, door Lars te bevestigen)" }
+  ],
+
+  "sports": [
+    { "id": "padel", "name": "Padel", "url": "https://www.higrip.nl/pages/gripsokken-voor-padel", "bron": "theme-ref/templates/index.json r759" },
+    { "id": "tennis", "name": "Tennis", "url": "https://www.higrip.nl/pages/gripsokken-voor-tennis", "bron": "theme-ref/templates/index.json r743" },
+    { "id": "voetbal", "name": "Voetbal", "url": "https://www.higrip.nl/pages/gripsokken-voor-voetbal", "bron": "theme-ref/templates/index.json r751" },
+    { "id": "rugby", "name": "Rugby", "url": "https://www.higrip.nl/pages/gripsokken-voor-rugby", "bron": "theme-ref/templates/index.json r767" }
+  ],
+
+  "b2b_url": "https://www.higrip.nl/pages/zakelijk",
+  "b2b_url_bron": "theme-ref/templates/page.zakelijk.json (pagina) + footer-group.json; enige B2B-bestemming",
+  "b2b_anchors": {
+    "voetbal": { "url": "https://www.higrip.nl/pages/zakelijk#clubs", "bron": "page.zakelijk.json r438 (anchor clubs)" },
+    "retail": { "url": "https://www.higrip.nl/pages/zakelijk#retailers", "bron": "page.zakelijk.json r358 (anchor retailers)" },
+    "pilates": { "url": "https://www.higrip.nl/pages/zakelijk#clubs", "bron": "Geen eigen pilates-anker. Paneel 02 'Sportclubs en studio's' (route p2, r154–175, micro r168) en 'Eigen ontwerp' staan onder #clubs." },
+    "_let_op": "De ankers bestaan alleen in het bronthema; de live /pages/zakelijk heeft (18-10) een andere opbouw zonder deze ankers. Melden in Fase 2."
+  },
+  "b2b_clients": {
+    "voetbal": { "names": ["SVS", "V.V. Spirit", "V.V. Lyra", "Concordia"], "bron": "page.zakelijk.json r446 ('Onder meer bij SVS, V.V. Spirit, V.V. Lyra en Concordia.')" },
+    "retail": { "names": ["Sport 2000"], "detail": "Naaldwijk en Nootdorp", "bron": "page.zakelijk.json r374–375" },
+    "pilates": { "names": ["MyHealth Club", "Say Yes To Health"], "bron": "page.pilates.json r318 + r320 (klanten); bevestigd door Lars 18-10: pilates-klanten, voor hen personaliseren we" },
+    "overig": { "names": ["Hogeschool Rotterdam"], "bron": "page.zakelijk.json r69 (logo 'Vertrouwd door'); besluit 14-10 of dit op de homepage mag staat nog open" }
+  },
+  "b2b_facts": {
+    "staffel": { "value": "Staffelprijzen vanaf 6 paar", "bron": "page.zakelijk.json route p1 list" },
+    "eigen_logo": { "value": "Eigen logo en kleuren vanaf 150 paar", "bron": "page.zakelijk.json route p2 list + club r446 e.v." },
+    "sample": { "value": "Gratis sample, binnen 1 werkdag verzonden", "bron": "page.zakelijk.json route p1 list" },
+    "adviesprijs_retail": { "value": "€19,95", "bron": "page.zakelijk.json r367 + besluit Lars 18-10 in chat. Wijkt af van FAS r45 (€17,95): feitenbestand bijwerken (buiten deze map, aan Lars)." }
+  },
+
+  "nav": [
+    { "label": "Shop", "url": "https://www.higrip.nl/collections/gripsokken", "bron": "live hoofdmenu 18-10" },
+    { "label": "Sporten", "url": "#sporten", "bron": "anker naar sectie 07" },
+    { "label": "Over ons", "url": "https://www.higrip.nl/pages/over-ons", "bron": "live hoofdmenu 18-10" },
+    { "label": "Zakelijk", "url": "https://www.higrip.nl/pages/zakelijk", "bron": "live hoofdmenu 18-10" }
+  ],
+  "over_ons_url": "https://www.higrip.nl/pages/over-ons",
+
+  "team": { "founders": ["Lars", "Timo", "Tigo"], "note": "Drie founders naast hun studie (FAS markt en focus). De teamfoto toont vier personen: niet als 'de drie founders' omschrijven.", "bron": "FAS 'Team'; Brand Identity Overview r147" },
+  "brand": { "tagline": "Ga door waar anderen stoppen.", "slogan": "More grip, better performance.", "missie": "Wij versnellen de beweging van iedere sporter.", "bron": "CLAUDE.md vault §2; Brand Identity Overview r49–51" },
+
+  "faq": [
+    { "q": "Wat zijn gripsokken?", "a": "Gripsokken zijn sportsokken met een grippatroon op de zool. Dat patroon houdt je voet op zijn plek in je schoen, zodat je minder over je binnenzool glijdt bij afremmen, draaien en wegsprinten.", "bron": "Homepage-FAQ V9rrUz6EWAPMmavz3JSC8N (feitgetoetst 14-10)" },
+    { "q": "Werken gripsokken echt?", "a": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, dus 95% meer grip (Apps et al. 2022). Het onderzoek gaat over gripsokken in het algemeen, niet over een test van HÏ Grip.", "bron": "FAS r66–73" },
+    { "q": "Voor welke sporten zijn gripsokken?", "a": "Voor elke sport waarin je snel afremt en draait: padel, tennis, voetbal en rugby. Per sport lees je op een eigen pagina waarom grip daar telt.", "bron": "FAS markt en focus (kernsporten) + sports[]" },
+    { "q": "Wat is het verschil tussen de 1.0 en de 2.0?", "a": "Allebei hebben ze siliconen grip onder de zool. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel en special cushioning toe.", "bron": "Performance Grip Socks 2.0.md r115–121" },
+    { "q": "Wat kosten HÏ Grip gripsokken?", "a": "De Performance Gripsokken (1.0) kosten €14,95 per paar, €35,95 voor een 3-pack en €54,95 voor een 5-pack. De Performance Gripsokken 2.0 kosten €17,95 per paar, in zwart of wit.", "bron": "FAS r39–41" },
+    { "q": "Welke maat kies ik?", "a": "Kies de maat die bij je schoenmaat past. De 1.0 is er in 34–39 en 40–46, de 2.0 in 35–38, 39–42 en 43–47.", "bron": "FAS r39–41" },
+    { "q": "Kan mijn club of winkel zakelijk bestellen?", "a": "Ja. Sportwinkels bestellen met staffelprijzen vanaf 6 paar, clubs en studio's kunnen vanaf 150 paar een eigen logo en eigen kleuren laten maken. Een sample is gratis.", "bron": "b2b_facts (page.zakelijk.json route)" }
+  ],
+  "faq_note": "Geen vraag over verzendkosten: anti-slop verbiedt verzendbeleid-info buiten 03.",
+
+  "footer": {
+    "bron": "live footer higrip.nl, curl 18-10",
+    "groups": [
+      { "title": "Algemeen", "links": [
+        { "label": "Algemene voorwaarden", "url": "https://www.higrip.nl/policies/terms-of-service" },
+        { "label": "Wettelijke kennisgeving", "url": "https://www.higrip.nl/policies/legal-notice" },
+        { "label": "Verzendbeleid", "url": "https://www.higrip.nl/pages/verzendbeleid" },
+        { "label": "Retourbeleid", "url": "https://www.higrip.nl/pages/retourbeleid" },
+        { "label": "Betalingsbeleid", "url": "https://www.higrip.nl/pages/terugbetalingsbeleid" },
+        { "label": "Privacybeleid", "url": "https://www.higrip.nl/pages/privacybeleid" } ] },
+      { "title": "HÏ Grip", "links": [
+        { "label": "Veelgestelde vragen", "url": "https://www.higrip.nl/pages/veelgestelde-vragen" },
+        { "label": "Over ons", "url": "https://www.higrip.nl/pages/over-ons" },
+        { "label": "Zakelijk", "url": "https://www.higrip.nl/pages/zakelijk" },
+        { "label": "Contact", "url": "https://www.higrip.nl/pages/contact" },
+        { "label": "Reviews", "url": "https://nl.trustpilot.com/review/higrip.nl" },
+        { "label": "Voordelen", "url": "https://www.higrip.nl/blogs/hi-grip/waarom-hi-grip-gripsokken" } ] },
+      { "title": "Volg ons", "links": [
+        { "label": "Facebook", "url": "https://facebook.com/profile.php?id=61569860846565" },
+        { "label": "Instagram", "url": "https://instagram.com/higrip.nl" },
+        { "label": "TikTok", "url": "https://tiktok.com/@higrip.nl" },
+        { "label": "LinkedIn", "url": "https://linkedin.com/company/h%C3%AF-grip/about/" } ] }
+    ],
+    "contact": { "email": "info@higrip.nl", "phone": "+31 6 24 56 65 47", "kvk": "97210129", "btw": "NL867952283B01" },
+    "payments": ["American Express", "Apple Pay", "Google Pay", "iDEAL Wero", "Klarna", "Maestro", "Mastercard", "PayPal", "Union Pay", "Visa"],
+    "copyright": "© 2026 HÏ Grip"
+  }
+}

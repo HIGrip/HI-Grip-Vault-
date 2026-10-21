@@ -1,0 +1,18 @@
+{
+  "_uitleg": "Achtergrond per sectie, vastgelegd door Denzel. Basis: rustig en licht. Donker op twee momenten: 08 (de mensen achter het merk, Battleface-referentie is zwart) en 12–13 (de afsluiting). Agents kiezen zelf geen achtergrond. Tekstkleur volgt: op licht --hi-black/--hi-graphite, op donker --hi-white/--hi-titanium.",
+  "sections": [
+    { "id": "01", "name": "hero", "bg": "--hi-white", "fg": "--hi-black", "note": "Witte pagina, het afgeronde fotoframe draagt de kleur." },
+    { "id": "02", "name": "product", "bg": "--hi-offwhite", "fg": "--hi-black", "note": "Kaarten wit op off-white (omgekeerd van de collectiepagina), zodat de witte productfoto's naadloos in hun kaart staan." },
+    { "id": "03", "name": "tussensectie", "bg": "--hi-white", "fg": "--hi-black", "note": "Lage strook, rust tussen twee blokken." },
+    { "id": "04", "name": "social-proof", "bg": "--hi-offwhite", "fg": "--hi-black" },
+    { "id": "05", "name": "features", "bg": "--hi-studio", "fg": "--hi-black", "note": "Exact de studiogrond van de 360°-opname, zodat de frames zonder rand in de sectie overlopen." },
+    { "id": "06", "name": "visuele-pauze", "bg": "--hi-offwhite", "fg": "--hi-black", "note": "Warm na de koele studio; alleen typografie." },
+    { "id": "07", "name": "kies-je-sport", "bg": "--hi-tint-padel", "fg": "--hi-black", "dynamic": { "padel": "--hi-tint-padel", "tennis": "--hi-tint-tennis", "voetbal": "--hi-tint-voetbal", "rugby": "--hi-tint-rugby" }, "transition": "background-color var(--hp-dur-2) var(--hp-ease)", "note": "Start op de tint van de eerste sport; wisselt naar de tint van de sport die centraal komt. Gedempt en licht, nooit volle merkaccenten." },
+    { "id": "08", "name": "over-ons", "bg": "--hi-near-black", "fg": "--hi-white", "dark": true, "note": "Donker moment 1." },
+    { "id": "09", "name": "tussensectie-zakelijk", "bg": "--hi-white", "fg": "--hi-black" },
+    { "id": "10", "name": "zakelijk", "bg": "--hi-offwhite", "fg": "--hi-black" },
+    { "id": "11", "name": "faq", "bg": "--hi-white", "fg": "--hi-black", "note": "Zoals de zakelijke FAQ in het thema (wit)." },
+    { "id": "12", "name": "inspiratie", "bg": "--hi-black", "fg": "--hi-white", "dark": true, "note": "Donker moment 2: de afsluiting." },
+    { "id": "13", "name": "footer", "bg": "--hi-near-black", "fg": "--hi-white", "dark": true, "note": "Buur 12 is ook donker: motivatie = één doorlopende donkere afsluiting; near-black tegenover zwart houdt de naad zichtbaar." }
+  ]
+}

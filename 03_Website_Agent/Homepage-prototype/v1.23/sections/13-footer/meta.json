@@ -1,0 +1,31 @@
+{
+  "id": "13",
+  "name": "footer",
+  "bg": "--hi-near-black",
+  "assets": [],
+  "links": [
+    "https://www.higrip.nl/policies/terms-of-service",
+    "https://www.higrip.nl/policies/legal-notice",
+    "https://www.higrip.nl/pages/verzendbeleid",
+    "https://www.higrip.nl/pages/retourbeleid",
+    "https://www.higrip.nl/pages/terugbetalingsbeleid",
+    "https://www.higrip.nl/pages/privacybeleid",
+    "https://www.higrip.nl/pages/veelgestelde-vragen",
+    "https://www.higrip.nl/pages/over-ons",
+    "https://www.higrip.nl/pages/zakelijk",
+    "https://www.higrip.nl/pages/contact",
+    "https://nl.trustpilot.com/review/higrip.nl",
+    "https://www.higrip.nl/blogs/hi-grip/waarom-hi-grip-gripsokken",
+    "https://facebook.com/profile.php?id=61569860846565",
+    "https://instagram.com/higrip.nl",
+    "https://tiktok.com/@higrip.nl",
+    "https://linkedin.com/company/h%C3%AF-grip/about/"
+  ],
+  "interactions": [
+    "hover link (desktop): witte onderstreping groeit van links naar rechts (--hp-dur-1)",
+    "tik/focus link (mobiel, toetsenbord): dezelfde onderstreping via :active en :focus-visible, witte focusring",
+    "e-mail, telefoon, KVK en BTW: selecteerbare tekst, geen mailto/tel",
+    "reduced motion: onderstreping verschijnt zonder overgang; verder geen beweging"
+  ],
+  "notes": "Structuur: <section data-hp=13> met daarin <footer> (lint eist <section>). Woordmerk 'HÏ Grip' als aria-hidden afsluiter. 'Join #TEAMHÏGRIP' en de social-iconen van de live footer zijn weggelaten: tekst staat niet in copy/facts en er zijn geen icoon-assets; socials staan als tekstlinks. Betaalmethoden als tekst (geen logo-assets). Externe links openen in hetzelfde venster, zoals in 01; in een artifact-iframe kan target=_blank nodig zijn, beslissing bij samenstelling."
+}

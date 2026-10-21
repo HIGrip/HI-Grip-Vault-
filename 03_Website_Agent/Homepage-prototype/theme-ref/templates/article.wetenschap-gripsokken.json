@@ -1,0 +1,300 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_WefxGT": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Waarom gripsokken meer zijn dan een sportieve trend: </strong><em><strong>de wetenschap onder je voeten</strong></em></h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p></p><p>Wat ooit begon als een niche-product voor atleten, is inmiddels uitgegroeid tot een essentieel onderdeel van de uitrusting van topsporters. In de wereld van amateurs worden gripsokken ook steeds populairder. Maar wat maakt deze ogenschijnlijk eenvoudige sokken zo uniek? En belangrijker: <em>werkt het echt, of is het vooral een slimme marketingtruc?</em></p><p>In deze blog duiken we dieper in de wetenschap achter gripsokken. We bekijken welke voordelen ze bieden voor je prestaties én je veiligheid, en wat onderzoek zegt over hun effectiviteit. Want er schuilt meer technologie dan je op het eerste gezicht zou denken.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_QCYt3n": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3><strong>Meer dan een gripsok</strong></h3>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_qrGHDe": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>HÏ Grip gripsokken zijn ontworpen om jouw sportprestaties naar een hoger niveau te tillen. Dankzij het innovatieve grippatroon, gebaseerd op de natuurlijke drukpunten van de voet, ervaar je maximale stabiliteit, controle en comfort. Dit betekent de vermindering van kans op blaren & blessures, meer balans én betere prestaties. </p><p>Alleen nu horen we je denken... klopt dit wetenschappelijk allemaal echt?</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Zijn al de voordelen van gripsokken ook wetenschappelijk bewezen?</strong></h2>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Deze voordelen zijn niet alleen voelbaar, maar ook meetbaar. Er zijn onderzoeken gedaan naar gripsokken, voor zowel de gezondheidszorg als voor de sportwereld. Er zijn verschillende studies die onderbouwen dat gripsokken wetenschappelijk gezien op sportief niveau grote voordelen bieden t.o.v. normale sokken. </p><p>Uit wetenschappelijk onderzoek blijkt dat gripsokken echt verschil kunnen maken. Zo hebben onderzoekers gekeken of ze sportprestaties verbeteren en de voet beter op z’n plek houden in de schoen, bijvoorbeeld tijdens een slalomtest of snelle richtingsveranderingen. Ook bij explosieve bewegingen zoals draaien en sprinten bleken gripsokken te zorgen voor meer grip en stabiliteit. Kortom: minder glijden, meer controle. </p><p>Ze maten zelfs hoe goed de sokken grip geven in de schoen, met behulp van de zogenoemde <strong>wrijvingscoëfficiënt, </strong>een getal dat aangeeft hoeveel weerstand er is tussen twee oppervlakken. Hoe hoger dat getal, hoe meer grip. Gewone sokken kwamen uit op een waarde van <strong>0,60</strong>, terwijl gripsokken een score van <strong>1,17</strong> haalden. Dat is bijna twee keer zoveel grip, en dat merk je: meer controle, meer stabiliteit en meer vertrouwen bij elke beweging. </p><p></p><p>Hieronder een aantal recente referenties naar bewezen studies met betrekking tot gripsokken & de voordelen:</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3><strong>Bronvermelding</strong></h3>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<ul><li><strong>Charlotte Apps, Laura Dawson, Billy Shering & Petros Siegkas (2022)</strong><br/><em>Journal of Sports Sciences, 40:12, 1351-1359</em><br/><a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\" target=\"_blank\">https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163</a> </li></ul><p> </p><ul><li><strong>Charlotte Apps, Pedro Rodrigues, Joshua Isherwood & Mark Lake (2020)</strong><br/><em>Journal of Sports Sciences, 38:2, 206-213</em><br/><a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\" target=\"_blank\">https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618</a> </li></ul><p> </p><ul><li><strong>Felix Friedl, Grace Smith, Kevin L. Lamb, Paul Worsfold & Matt Palmer (2023)</strong><br/><em>Footwear Science, 15:3, 185-191</em><br/><a href=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\" target=\"_blank\">https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628</a></li></ul>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>De slimme keuze voor elke sporter</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Kortom: gripsokken zijn geen hype, maar een <strong>wetenschappelijk onderbouwde upgrade</strong> voor elke sportoutfit. Bij HÏ Grip gaan we nog een stap verder. Ons unieke gripprofiel is ontworpen op basis van de natuurlijke drukpunten van de voet, met extra ondersteuning waar jij die het meest nodig hebt: bij de hiel en de bal van je voet. Of je nu op het veld staat, de sportschool induikt of je PR probeert te verbeteren op de atletiekbaan. HÏ Grip helpt je met vertrouwen te bewegen.</p><p> </p><p>We hopen dat je iets nieuws hebt geleerd over gripsokken en waarom de juiste grip het verschil kan maken. Blijf zeker op de hoogte van onze nieuwste <a href=\"/pages/blogs\" title=\"Blogs\">blogs.</a> We delen regelmatig updates die jou helpen het beste uit jezelf te halen.</p><p></p><p></p><p></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_WefxGT",
+        "text_XGHRUE",
+        "text_QCYt3n",
+        "text_qrGHDe",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_hdnzWH",
+        "text_pjbknU"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,141 @@
+{{ 'hg-zakelijk.css' | asset_url | stylesheet_tag }}
+{{ 'hg-zakelijk-v2.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-zakelijk.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'zk' %}
+<section class="zk zk-retail-sec" id="{{ s.anchor | default: 'retailers' }}" style="{% render 'zk-vars', s: s %}--z-img-col:{{ s.image_width }}fr;--z-shelf-bg:{{ s.shelf_bg }};--z-tag-bg:{{ s.tag_bg }};--z-tag-fg:{{ s.tag_fg }};--z-tag-price:{{ s.tag_price_color }};--z-cap-logo:{{ s.cap_logo_size }}px;{% if s.perk_line != blank %}--z-perk-line:{{ s.perk_line }};{% endif %}" {{ section.shopify_attributes }}>
+  <div class="zk__wrap zk-shopwin{% if s.image_position == 'right' %} zk-shopwin--img-right{% endif %}">
+    <figure class="zk-shelf">
+      <div class="zk-shelf__stage">
+        {%- if s.photo != blank -%}
+          {{- s.photo | image_url: width: 1400 | image_tag: class: 'zk-shelf__photo', loading: 'lazy', widths: '600, 900, 1200, 1400', sizes: '(min-width: 900px) 58vw, 100vw', alt: s.photo.alt -}}
+        {%- else -%}
+          {%- if s.image_1 != blank -%}
+            {{- s.image_1 | image_url: width: 900 | image_tag: class: 'zk-shelf__sock zk-shelf__sock--1', loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 900px) 32vw, 56vw', alt: s.image_1.alt -}}
+          {%- endif -%}
+          {%- if s.image_2 != blank -%}
+            {{- s.image_2 | image_url: width: 900 | image_tag: class: 'zk-shelf__sock zk-shelf__sock--2', loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 900px) 32vw, 56vw', alt: s.image_2.alt -}}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if s.show_tag -%}
+          <div class="zk-shelf__tag">
+            {%- if s.tag_label != blank -%}<small>{{ s.tag_label }}</small>{%- endif -%}
+            {%- if s.tag_price != blank -%}<strong>{{ s.tag_price }}</strong>{%- endif -%}
+            {%- if s.tag_sub != blank -%}<span>{{ s.tag_sub }}</span>{%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+      {%- if s.show_ledge -%}<div class="zk-shelf__ledge" aria-hidden="true"></div>{%- endif -%}
+      {%- if s.cap_title != blank or s.cap_text != blank or s.cap_logo != blank -%}
+        <figcaption class="zk-shelf__cap">
+          {%- if s.cap_logo != blank -%}
+            {{- s.cap_logo | image_url: width: 160 | image_tag: loading: 'lazy', alt: s.cap_logo.alt -}}
+          {%- endif -%}
+          <span>{%- if s.cap_title != blank -%}<strong>{{ s.cap_title }}</strong>{%- endif -%}{{ s.cap_text }}</span>
+        </figcaption>
+      {%- endif -%}
+    </figure>
+    <div class="zk-shopwin__copy">
+      <div class="zk__head" style="margin-bottom:0">
+        {%- if s.eyebrow != blank -%}<p class="zk__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        {%- if s.heading != blank -%}<{{ tag }} class="zk__h2">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      </div>
+      {%- if s.lead != blank -%}<p class="zk__lead zk__muted">{{ s.lead }}</p>{%- endif -%}
+      {%- if section.blocks.size > 0 -%}
+        <ul class="zk-perks{% if s.perk_columns == '1' %} zk-perks--1{% endif %}">
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            <li {{ block.shopify_attributes }}>
+              {%- case b.icon -%}
+                {%- when 'box' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 11l11-6 11 6v10l-11 6-11-6zM5 11l11 6 11-6M16 17v10"/></svg>
+                {%- when 'bars' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26h24M7 26V16h4v10M14 26V10h4v16M21 26V5h4v21"/></svg>
+                {%- when 'display' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 5h22v15H5zM11 27h10M16 20v7M9 10h8M9 14h12"/></svg>
+                {%- when 'truck' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9h16v13H3zM19 13h6l4 5v4H19z"/><circle cx="9" cy="24" r="2.5"/><circle cx="24" cy="24" r="2.5"/></svg>
+                {%- when 'tag' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 16L16 4h12v12L16 28zM22 10h.1"/></svg>
+                {%- when 'check' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 17l6 6L26 9"/></svg>
+                {%- when 'star' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l3.6 8 8.4.8-6.4 5.6 1.9 8.6L16 22.5 8.5 27l1.9-8.6L4 12.8l8.4-.8z"/></svg>
+                {%- when 'chat' -%}<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 6h22v15H13l-6 5v-5H5z"/></svg>
+              {%- endcase -%}
+              {%- if b.title != blank -%}<strong>{{ b.title }}</strong>{%- endif -%}
+              {%- if b.text != blank -%}<span>{{ b.text }}</span>{%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+      {%- if s.cta_label != blank -%}
+        <div class="zk-retail__cta"><a class="zk__pill" href="{{ s.cta_link | default: '#aanvragen' }}" {% if s.cta_segment != 'none' %}data-zk-segment="{{ s.cta_segment }}"{% endif %}>{{ s.cta_label }} {% render 'zk-chev' %}</a></div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Zakelijk: Retail",
+  "settings": [
+    { "type": "text", "id": "anchor", "label": "Anker (voor de navigatiebalk)", "default": "retailers" },
+    { "type": "header", "content": "Beeld (schap)" },
+    { "type": "select", "id": "image_position", "label": "Beeld staat", "options": [ { "value": "left", "label": "Links" }, { "value": "right", "label": "Rechts" } ], "default": "left" },
+    { "type": "range", "id": "image_width", "label": "Breedte beeld (t.o.v. tekst = 5)", "min": 4, "max": 9, "step": 1, "default": 7 },
+    { "type": "image_picker", "id": "image_1", "label": "Sok links (vrijstaand)" },
+    { "type": "image_picker", "id": "image_2", "label": "Sok rechts (vrijstaand)" },
+    { "type": "image_picker", "id": "photo", "label": "Of: eigen foto (vervangt de twee sokken)" },
+    { "type": "color", "id": "shelf_bg", "label": "Achtergrond schap", "default": "#eae8e5" },
+    { "type": "checkbox", "id": "show_ledge", "label": "Schaprand onder het beeld", "default": true },
+    { "type": "header", "content": "Prijskaartje" },
+    { "type": "checkbox", "id": "show_tag", "label": "Prijskaartje tonen", "default": true },
+    { "type": "text", "id": "tag_label", "label": "Kaartje: bovenregel", "default": "Adviesprijs · incl. btw" },
+    { "type": "text", "id": "tag_price", "label": "Kaartje: prijs", "default": "€17,95" },
+    { "type": "text", "id": "tag_sub", "label": "Kaartje: onderregel", "default": "Performance Grip Socks 2.0" },
+    { "type": "color", "id": "tag_bg", "label": "Kaartje: achtergrond", "default": "#000000" },
+    { "type": "color", "id": "tag_fg", "label": "Kaartje: tekst", "default": "#ffffff" },
+    { "type": "color", "id": "tag_price_color", "label": "Kaartje: kleur prijs", "default": "#ccff00" },
+    { "type": "header", "content": "Onder het beeld" },
+    { "type": "image_picker", "id": "cap_logo", "label": "Logo (bij voorkeur zonder achtergrond)" },
+    { "type": "range", "id": "cap_logo_size", "label": "Grootte logo", "min": 32, "max": 120, "step": 4, "unit": "px", "default": 64 },
+    { "type": "text", "id": "cap_title", "label": "Titel", "default": "Al in het schap bij Sport 2000" },
+    { "type": "text", "id": "cap_text", "label": "Tekst", "default": "Naaldwijk en Nootdorp" },
+    { "type": "header", "content": "Tekst" },
+    { "type": "text", "id": "eyebrow", "label": "Bovenregel (leeg = verborgen)", "default": "Voor sportwinkels" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Grip in jouw schap" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h2" },
+    { "type": "textarea", "id": "lead", "label": "Intro" },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Voordelen (blokken)" },
+    { "type": "select", "id": "perk_columns", "label": "Voordelen per rij", "options": [ { "value": "2", "label": "2" }, { "value": "1", "label": "1" } ], "default": "2" },
+    { "type": "color", "id": "perk_line", "label": "Kleur lijnen tussen voordelen (leeg = standaard)" },
+    { "type": "header", "content": "Knop" },
+    { "type": "text", "id": "cta_label", "label": "Knop: tekst (leeg = verborgen)", "default": "Vraag sample" },
+    { "type": "text", "id": "cta_link", "label": "Knop: link", "default": "#aanvragen" },
+    { "type": "select", "id": "cta_segment", "label": "Formulier voorselecteren", "options": [ { "value": "none", "label": "Niet" }, { "value": "retailer", "label": "Sportretailer" }, { "value": "club", "label": "Club of studio" } ], "default": "retailer" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "header", "content": "Kleuren en ruimte" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#111111" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#ffffff" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (bovenregel, iconen)", "default": "#ccff00" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 128 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Voordeel",
+      "settings": [
+        { "type": "select", "id": "icon", "label": "Icoon", "options": [ { "value": "box", "label": "Pakket" }, { "value": "bars", "label": "Staafjes (staffel)" }, { "value": "display", "label": "Display" }, { "value": "truck", "label": "Bezorging" }, { "value": "tag", "label": "Prijskaartje" }, { "value": "check", "label": "Vinkje" }, { "value": "star", "label": "Ster" }, { "value": "chat", "label": "Gesprek" }, { "value": "none", "label": "Geen icoon" } ], "default": "check" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Gratis sample" },
+        { "type": "textarea", "id": "text", "label": "Tekst" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "Zakelijk: Retail" } ]
+}
+{% endschema %}

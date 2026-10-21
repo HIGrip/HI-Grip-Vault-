@@ -1,0 +1,368 @@
+{{ 'legal-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'legal-page.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign show_toc = s.show_toc
+  assign has_article = false
+  for block in section.blocks
+    if block.type == 'article' and block.settings.in_toc
+      assign has_article = true
+      break
+    endif
+  endfor
+  if has_article == false
+    assign show_toc = false
+  endif
+  assign section_open = false
+  assign list_open = false
+-%}
+<div
+  class="legal legal-body"
+  data-legal-body
+  data-width="{{ s.section_width }}"
+  data-align="left"
+  style="
+    --legal-bg: {{ s.bg_color }};
+    --legal-fg: {{ s.text_color }};
+    --legal-content-max: {{ s.content_max_width }}px;
+    --legal-text-size: {{ s.text_size }}px;
+    --legal-toc-offset: {{ s.toc_offset }}px;
+    --legal-pt: {{ s.padding_top }}px;
+    --legal-pb: {{ s.padding_bottom }}px;
+    --legal-pt-m: {{ s.padding_top_mobile }}px;
+    --legal-pb-m: {{ s.padding_bottom_mobile }}px;
+    {% if s.heading_color != blank %}--legal-heading-color: {{ s.heading_color }};{% endif %}
+    {% if s.label_color != blank %}--legal-label-color: {{ s.label_color }};{% endif %}
+    {% if s.link_color != blank %}--legal-link: {{ s.link_color }};{% endif %}
+    {% if s.bullet_color != blank %}--legal-bullet: {{ s.bullet_color }};{% endif %}
+    {% if s.line_color != blank %}--legal-line: {{ s.line_color }};{% endif %}
+    {% if s.toc_title_color != blank %}--legal-toc-title: {{ s.toc_title_color }};{% endif %}
+    {% if s.toc_color != blank %}--legal-toc: {{ s.toc_color }};{% endif %}
+    {% if s.toc_active_color != blank %}--legal-toc-active: {{ s.toc_active_color }};{% endif %}
+    {% if s.note_color != blank %}--legal-note-color: {{ s.note_color }};{% endif %}
+    {% if s.note_border_color != blank %}--legal-note-border: {{ s.note_border_color }};{% endif %}
+    {% if s.row_label_color != blank %}--legal-row-label: {{ s.row_label_color }};{% endif %}
+    {% if s.row_value_color != blank %}--legal-row-value: {{ s.row_value_color }};{% endif %}
+  "
+  {{ section.shopify_attributes }}
+>
+  <div class="legal__wrap legal-body__layout{% if show_toc %} legal-body__layout--toc{% endif %}">
+    {%- if show_toc -%}
+      <nav class="legal-body__toc" data-legal-toc aria-label="{{ s.toc_title | escape }}">
+        <details open>
+          <summary>{{ s.toc_title | escape }}</summary>
+          <ol>
+            {%- assign n = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'article' and block.settings.in_toc and block.settings.heading != blank -%}
+                {%- assign n = n | plus: 1 -%}
+                <li>
+                  <a href="#{{ block.settings.heading | handleize | default: block.id }}">
+                    {%- if s.toc_numbers %}{{ n }}. {% endif -%}
+                    {{- block.settings.heading | escape -}}
+                  </a>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ol>
+        </details>
+      </nav>
+    {%- endif -%}
+
+    <article class="legal-body__content">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          if block.type == 'article'
+            if list_open
+              echo '</dl>'
+              assign list_open = false
+            endif
+            if section_open
+              echo '</section>'
+            endif
+          elsif block.type == 'data_row'
+            if section_open == false
+              echo '<section class="legal-body__section legal-body__section--plain" data-legal-section>'
+              assign section_open = true
+            endif
+          else
+            if list_open
+              echo '</dl>'
+              assign list_open = false
+            endif
+            if section_open == false
+              echo '<section class="legal-body__section legal-body__section--plain" data-legal-section>'
+              assign section_open = true
+            endif
+          endif
+        -%}
+
+        {%- case block.type -%}
+          {%- when 'article' -%}
+            {%- assign open_tag = block.settings.heading_tag | default: 'h2' -%}
+            {%- liquid
+              assign anchor = block.settings.heading | handleize | default: block.id
+              assign sec_style = ''
+              if block.settings.text_color != blank
+                assign sec_style = sec_style | append: 'color:' | append: block.settings.text_color | append: ';'
+              endif
+              if block.settings.heading_color != blank
+                assign sec_style = sec_style | append: '--legal-heading-color:' | append: block.settings.heading_color | append: ';'
+              endif
+              if block.settings.label_color != blank
+                assign sec_style = sec_style | append: '--legal-label-color:' | append: block.settings.label_color | append: ';'
+              endif
+              if block.settings.text_size > 0
+                assign sec_style = sec_style | append: '--legal-rich-size:' | append: block.settings.text_size | append: 'px;'
+              endif
+              echo '<section class="legal-body__section" id="' | append: anchor | append: '" style="' | append: sec_style | append: '" data-legal-section ' | append: block.shopify_attributes | append: '>'
+              assign section_open = true
+            -%}
+              {%- if block.settings.heading != blank -%}
+                <{{ open_tag }}
+                  class="legal-body__heading"
+                  {%- if block.settings.heading_size > 0 %} style="--legal-h-size: {{ block.settings.heading_size }}px; --legal-h-size-m: {{ block.settings.heading_size | times: 0.8 | round }}px;"{% endif -%}
+                >
+                  {%- if block.settings.number_label != blank -%}
+                    <span class="legal-body__label">{{ block.settings.number_label | escape }}</span>
+                  {%- endif -%}
+                  {{- block.settings.heading | escape -}}
+                </{{ open_tag }}>
+              {%- endif -%}
+              {%- if block.settings.body != blank -%}
+                <div class="legal-body__rich">{{ block.settings.body }}</div>
+              {%- endif -%}
+
+          {%- when 'data_row' -%}
+            {%- unless list_open -%}
+              {%- echo '<dl class="legal-body__data">' -%}
+              {%- assign list_open = true -%}
+            {%- endunless -%}
+            <div
+              class="legal-body__row"
+              style="{% if block.settings.label_color != blank %}--legal-row-label: {{ block.settings.label_color }};{% endif %}{% if block.settings.value_color != blank %}--legal-row-value: {{ block.settings.value_color }};{% endif %}"
+              {{ block.shopify_attributes }}
+            >
+              <dt>{{ block.settings.label | escape }}</dt>
+              <dd>{{ block.settings.value }}</dd>
+            </div>
+
+          {%- when 'subheading' -%}
+            {%- assign sub_tag = block.settings.heading_tag | default: 'h3' -%}
+            <{{ sub_tag }}
+              class="legal-body__subheading"
+              style="{% if block.settings.heading_size > 0 %}--legal-h-size: {{ block.settings.heading_size }}px; --legal-h-size-m: {{ block.settings.heading_size }}px;{% endif %}{% if block.settings.color != blank %}--legal-heading-color: {{ block.settings.color }};{% endif %}"
+              {{ block.shopify_attributes }}
+            >{{ block.settings.heading | escape }}</{{ sub_tag }}>
+
+          {%- when 'text' -%}
+            <div
+              class="legal-body__rich"
+              style="{% if block.settings.text_size > 0 %}--legal-rich-size: {{ block.settings.text_size }}px;{% endif %}{% if block.settings.text_color != blank %}--legal-rich-color: {{ block.settings.text_color }};{% endif %}"
+              {{ block.shopify_attributes }}
+            >{{ block.settings.text }}</div>
+
+          {%- when 'note' -%}
+            <div
+              class="legal-body__note legal-body__rich"
+              style="{% if block.settings.text_color != blank %}--legal-note-color: {{ block.settings.text_color }};{% endif %}{% if block.settings.border_color != blank %}--legal-note-border: {{ block.settings.border_color }};{% endif %}"
+              {{ block.shopify_attributes }}
+            >{{ block.settings.text }}</div>
+
+          {%- when 'button' -%}
+            {%- if block.settings.label != blank and block.settings.link != blank -%}
+              <div class="legal-body__actions" {{ block.shopify_attributes }}>
+                <a
+                  class="legal__pill legal__pill--{{ block.settings.style }}"
+                  style="{% render 'legal-pill-vars', bg: block.settings.bg_color, fg: block.settings.text_color, border: block.settings.border_color, hover_bg: block.settings.hover_bg_color, hover_fg: block.settings.hover_text_color, radius: block.settings.radius, size: block.settings.text_size %}"
+                  href="{{ block.settings.link }}"
+                  {% if block.settings.new_tab %}target="_blank" rel="noopener"{% endif %}
+                >
+                  {{- block.settings.label | escape -}}
+                  <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>
+                </a>
+              </div>
+            {%- endif -%}
+        {%- endcase -%}
+      {%- endfor -%}
+      {%- liquid
+        if list_open
+          echo '</dl>'
+        endif
+        if section_open
+          echo '</section>'
+        endif
+      -%}
+    </article>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Juridisch: Inhoud",
+  "settings": [
+    { "type": "header", "content": "Inhoudsopgave" },
+    { "type": "checkbox", "id": "show_toc", "label": "Inhoudsopgave tonen", "default": true },
+    { "type": "text", "id": "toc_title", "label": "Titel inhoudsopgave", "default": "Op deze pagina" },
+    { "type": "checkbox", "id": "toc_numbers", "label": "Nummers in inhoudsopgave", "default": true },
+    { "type": "range", "id": "toc_offset", "label": "Afstand onder header (sticky)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 120 },
+    { "type": "header", "content": "Tekst" },
+    { "type": "range", "id": "text_size", "label": "Tekstgrootte", "min": 12, "max": 24, "step": 1, "unit": "px", "default": 15 },
+    { "type": "range", "id": "content_max_width", "label": "Maximale breedte tekst", "min": 480, "max": 1200, "step": 20, "unit": "px", "default": 760 },
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "heading_color", "label": "Kleur koppen" },
+    { "type": "color", "id": "label_color", "label": "Kleur labels (Artikel 1, enz.)" },
+    { "type": "color", "id": "link_color", "label": "Kleur links in de tekst" },
+    { "type": "color", "id": "bullet_color", "label": "Kleur opsommingstekens" },
+    { "type": "color", "id": "line_color", "label": "Kleur scheidingslijnen" },
+    { "type": "color", "id": "toc_title_color", "label": "Kleur titel inhoudsopgave" },
+    { "type": "color", "id": "toc_color", "label": "Kleur links inhoudsopgave" },
+    { "type": "color", "id": "toc_active_color", "label": "Kleur actieve link inhoudsopgave" },
+    { "type": "color", "id": "row_label_color", "label": "Kleur label gegevensregels" },
+    { "type": "color", "id": "row_value_color", "label": "Kleur waarde gegevensregels" },
+    { "type": "color", "id": "note_color", "label": "Kleur opmerkingen" },
+    { "type": "color", "id": "note_border_color", "label": "Kleur streep opmerkingen" },
+    { "type": "header", "content": "Opmaak" },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte van de sectie",
+      "options": [
+        { "value": "narrow", "label": "Smal" },
+        { "value": "page", "label": "Pagina" },
+        { "value": "full", "label": "Volledige breedte" }
+      ],
+      "default": "page"
+    },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#000000" },
+    { "type": "header", "content": "Ruimte" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 240, "step": 4, "unit": "px", "default": 120 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 48 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 88 }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Artikel",
+      "settings": [
+        { "type": "text", "id": "number_label", "label": "Label boven de kop (bijv. Artikel 1)" },
+        { "type": "text", "id": "heading", "label": "Kop", "default": "Nieuw artikel" },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Kopniveau (H1, H2, H3...)",
+          "options": [
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" },
+            { "value": "p", "label": "Gewone tekst (p)" }
+          ],
+          "default": "h2"
+        },
+        { "type": "range", "id": "heading_size", "label": "Kopgrootte desktop (0 = standaard)", "min": 0, "max": 80, "step": 2, "unit": "px", "default": 0 },
+        { "type": "richtext", "id": "body", "label": "Tekst", "default": "<p>Voeg hier je tekst toe.</p>" },
+        { "type": "checkbox", "id": "in_toc", "label": "Tonen in inhoudsopgave", "default": true },
+        { "type": "header", "content": "Kleuren en tekstgrootte" },
+        { "type": "color", "id": "heading_color", "label": "Kleur kop" },
+        { "type": "color", "id": "label_color", "label": "Kleur label" },
+        { "type": "color", "id": "text_color", "label": "Kleur tekst" },
+        { "type": "range", "id": "text_size", "label": "Tekstgrootte (0 = standaard)", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 0 }
+      ]
+    },
+    {
+      "type": "data_row",
+      "name": "Gegevensregel",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Label" },
+        { "type": "richtext", "id": "value", "label": "Waarde", "default": "<p>Waarde</p>" },
+        { "type": "color", "id": "label_color", "label": "Kleur label" },
+        { "type": "color", "id": "value_color", "label": "Kleur waarde" }
+      ]
+    },
+    {
+      "type": "subheading",
+      "name": "Tussenkop",
+      "settings": [
+        { "type": "text", "id": "heading", "label": "Tekst", "default": "Tussenkop" },
+        {
+          "type": "select",
+          "id": "heading_tag",
+          "label": "Kopniveau (H1, H2, H3...)",
+          "options": [
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" },
+            { "value": "p", "label": "Gewone tekst (p)" }
+          ],
+          "default": "h3"
+        },
+        { "type": "range", "id": "heading_size", "label": "Kopgrootte (0 = standaard)", "min": 0, "max": 60, "step": 1, "unit": "px", "default": 0 },
+        { "type": "color", "id": "color", "label": "Kleur" }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Tekst",
+      "settings": [
+        { "type": "richtext", "id": "text", "label": "Tekst", "default": "<p>Voeg hier je tekst toe.</p>" },
+        { "type": "color", "id": "text_color", "label": "Kleur tekst" },
+        { "type": "range", "id": "text_size", "label": "Tekstgrootte (0 = standaard)", "min": 0, "max": 28, "step": 1, "unit": "px", "default": 0 }
+      ]
+    },
+    {
+      "type": "note",
+      "name": "Opmerking",
+      "settings": [
+        { "type": "richtext", "id": "text", "label": "Tekst", "default": "<p>Opmerking.</p>" },
+        { "type": "color", "id": "text_color", "label": "Kleur tekst" },
+        { "type": "color", "id": "border_color", "label": "Kleur streep" }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Knop",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Meer info" },
+        { "type": "url", "id": "link", "label": "Link" },
+        { "type": "checkbox", "id": "new_tab", "label": "Openen in nieuw tabblad", "default": false },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Stijl",
+          "options": [
+            { "value": "dark", "label": "Zwart" },
+            { "value": "light", "label": "Wit" },
+            { "value": "yellow", "label": "Geel" },
+            { "value": "ghost", "label": "Alleen rand" }
+          ],
+          "default": "dark"
+        },
+        { "type": "header", "content": "Eigen kleuren en vorm (leeg = kleur van de stijl)" },
+        { "type": "color", "id": "bg_color", "label": "Achtergrondkleur" },
+        { "type": "color", "id": "text_color", "label": "Tekstkleur" },
+        { "type": "color", "id": "border_color", "label": "Randkleur" },
+        { "type": "color", "id": "hover_bg_color", "label": "Achtergrondkleur bij hover" },
+        { "type": "color", "id": "hover_text_color", "label": "Tekstkleur bij hover" },
+        { "type": "range", "id": "radius", "label": "Hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+        { "type": "range", "id": "text_size", "label": "Tekstgrootte", "min": 11, "max": 24, "step": 1, "unit": "px", "default": 14 }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Juridisch: Inhoud",
+      "blocks": [
+        { "type": "article", "settings": { "heading": "Eerste artikel" } },
+        { "type": "article", "settings": { "heading": "Tweede artikel" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

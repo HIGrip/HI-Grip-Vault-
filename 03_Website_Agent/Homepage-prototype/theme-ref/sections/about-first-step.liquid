@@ -1,0 +1,369 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+<section class="ab ab-fs ab-pad" data-ab="firststep" data-anim="{{ s.animate }}" aria-label="Waar het begon" style="{% render 'about-vars', s: s %}">
+  <div class="ab-wrap ab-fs__grid">
+    <div>
+      <{{ tag }} class="ab-h"{% render 'about-ta', d: s.heading_align, m: s.heading_align_m %}>{{ s.heading }}</{{ tag }}>
+      {%- if s.lead != blank -%}<p class="ab-lead"{% render 'about-ta', d: s.lead_align, m: s.lead_align_m %}>{{ s.lead | escape }}</p>{%- endif -%}
+    </div>
+    <div class="ab-polas">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        {%- assign fb = 'about-kid-' | append: forloop.index | append: '.jpg' -%}
+        <figure class="ab-pola" style="--t:{{ b.tape }};" {{ block.shopify_attributes }}>
+          {%- if b.image != blank -%}
+            {{ b.image | image_url: width: 700 | image_tag: loading: 'lazy', sizes: '(min-width: 800px) 22vw, 40vw', widths: '300, 450, 700', alt: b.image.alt | default: b.alt }}
+          {%- else -%}
+            <img src="{{ fb | asset_url }}" alt="{{ b.alt | escape }}" loading="lazy" width="600" height="800">
+          {%- endif -%}
+          {%- if b.caption != blank -%}<figcaption {% render 'about-ta', d: b.caption_align, m: b.caption_align_m %}>{{ b.caption | escape }}</figcaption>{%- endif -%}
+        </figure>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Eerste stap",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Elke sporter is ooit begonnen met de eerste stap.",
+      "info": "Zet woorden tussen <em>…</em> voor de accentkleur."
+    },
+    {
+      "type": "select",
+      "id": "heading_align",
+      "label": "Kop uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "heading_align_m",
+      "label": "Kop uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Lead",
+      "default": "Dit zijn wij, jaren geleden. Die eerste stap bepaalt nog steeds hoe we naar sport kijken."
+    },
+    {
+      "type": "select",
+      "id": "lead_align",
+      "label": "Inleiding uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "lead_align_m",
+      "label": "Inleiding uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 90,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "polaroid",
+      "name": "Polaroid",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto",
+          "info": "Leeg = standaard kinderfoto uit het thema."
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst",
+          "default": "Founder als kind"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Bijschrift"
+        },
+        {
+          "type": "select",
+          "id": "caption_align",
+          "label": "Bijschrift uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "caption_align_m",
+          "label": "Bijschrift uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "tape",
+          "label": "Kleur tape",
+          "default": "#FF6A00"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Over ons: Eerste stap",
+      "blocks": [
+        {
+          "type": "polaroid",
+          "settings": {
+            "alt": "Founder als kind met een beker op het voetbalveld",
+            "tape": "#FF6A00"
+          }
+        },
+        {
+          "type": "polaroid",
+          "settings": {
+            "alt": "Founder als kind neemt een bal aan",
+            "tape": "#0011A7"
+          }
+        },
+        {
+          "type": "polaroid",
+          "settings": {
+            "alt": "Founder als kind strikt zijn voetbalschoenen",
+            "tape": "#CCFF00"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

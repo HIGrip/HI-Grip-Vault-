@@ -1,0 +1,586 @@
+{% doc %}
+  @prompt
+    Geef mij een sectie waarin we het WK voetbal 2026 promooten met onze 50% GRATIS actie, mensen krijgen hun bestelling gratis verdubbeld en het moet een aantrekkelijke sectie zijn die een sportmerk waarin we onze gripsokken en het WK promooten
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-wk-promo-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, {{ block.settings.gradient_color_1 }} 0%, {{ block.settings.gradient_color_2 }} 100%);
+    padding: {{ block.settings.section_padding }}px 20px;
+  }
+
+  .ai-wk-promo-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .ai-wk-promo-content-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .ai-wk-promo-text-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-wk-promo-badge-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.badge_bg_color }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .ai-wk-promo-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 20px;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+
+  .ai-wk-promo-subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.subheading_color }};
+    margin: 0 0 30px;
+    line-height: 1.5;
+  }
+
+  .ai-wk-promo-offer-{{ ai_gen_id }} {
+    background-color: {{ block.settings.offer_bg_color }};
+    color: {{ block.settings.offer_text_color }};
+    padding: 30px;
+    border-radius: {{ block.settings.offer_border_radius }}px;
+    margin-bottom: 30px;
+    border: 3px solid {{ block.settings.offer_border_color }};
+  }
+
+  .ai-wk-promo-offer-title-{{ ai_gen_id }} {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  .ai-wk-promo-offer-desc-{{ ai_gen_id }} {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-wk-promo-cta-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    padding: 18px 40px;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid {{ block.settings.button_border_color }};
+  }
+
+  .ai-wk-promo-cta-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-wk-promo-image-{{ ai_gen_id }} {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-wk-promo-image-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-wk-promo-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-wk-promo-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-wk-promo-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ai-wk-promo-features-{{ ai_gen_id }} {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .ai-wk-promo-feature-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: {{ block.settings.heading_color }};
+    font-weight: 600;
+  }
+
+  .ai-wk-promo-feature-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    fill: {{ block.settings.heading_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-wk-promo-content-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .ai-wk-promo-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.6 }}px;
+    }
+
+    .ai-wk-promo-subheading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subheading_size | times: 0.9 }}px;
+    }
+
+    .ai-wk-promo-text-{{ ai_gen_id }} {
+      text-align: center;
+    }
+
+    .ai-wk-promo-features-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+
+    .ai-wk-promo-offer-title-{{ ai_gen_id }} {
+      font-size: 22px;
+    }
+
+    .ai-wk-promo-cta-{{ ai_gen_id }} {
+      font-size: 16px;
+      padding: 15px 30px;
+    }
+  }
+{% endstyle %}
+
+<wk-promo-{{ ai_gen_id }} class="ai-wk-promo-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-wk-promo-container-{{ ai_gen_id }}">
+    <div class="ai-wk-promo-content-{{ ai_gen_id }}">
+      <div class="ai-wk-promo-text-{{ ai_gen_id }}">
+        {% if block.settings.show_badge %}
+          <div class="ai-wk-promo-badge-{{ ai_gen_id }}">
+            {{ block.settings.badge_text }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.heading != blank %}
+          <{{ block.settings.heading_tag | default: "h2" }} class="ai-wk-promo-heading-{{ ai_gen_id }}">
+            {{ block.settings.heading }}
+          </{{ block.settings.heading_tag | default: "h2" }}>
+        {% endif %}
+
+        {% if block.settings.subheading != blank %}
+          <div class="ai-wk-promo-subheading-{{ ai_gen_id }}">
+            {{ block.settings.subheading }}
+          </div>
+        {% endif %}
+
+        <div class="ai-wk-promo-offer-{{ ai_gen_id }}">
+          <div class="ai-wk-promo-offer-title-{{ ai_gen_id }}">
+            {{ block.settings.offer_title }}
+          </div>
+          <div class="ai-wk-promo-offer-desc-{{ ai_gen_id }}">
+            {{ block.settings.offer_description }}
+          </div>
+        </div>
+
+        {% if block.settings.button_text != blank %}
+          <a href="{{ block.settings.button_link }}" class="ai-wk-promo-cta-{{ ai_gen_id }}">
+            {{ block.settings.button_text }}
+          </a>
+        {% endif %}
+
+        {% if block.settings.show_features %}
+          <div class="ai-wk-promo-features-{{ ai_gen_id }}">
+            {% if block.settings.feature_1 != blank %}
+              <div class="ai-wk-promo-feature-{{ ai_gen_id }}">
+                <svg class="ai-wk-promo-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                {{ block.settings.feature_1 }}
+              </div>
+            {% endif %}
+            {% if block.settings.feature_2 != blank %}
+              <div class="ai-wk-promo-feature-{{ ai_gen_id }}">
+                <svg class="ai-wk-promo-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                {{ block.settings.feature_2 }}
+              </div>
+            {% endif %}
+            {% if block.settings.feature_3 != blank %}
+              <div class="ai-wk-promo-feature-{{ ai_gen_id }}">
+                <svg class="ai-wk-promo-feature-icon-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                </svg>
+                {{ block.settings.feature_3 }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-wk-promo-image-{{ ai_gen_id }}">
+        {% if block.settings.image %}
+          <img
+            src="{{ block.settings.image | image_url: width: 800 }}"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+          >
+        {% else %}
+          <div class="ai-wk-promo-image-placeholder-{{ ai_gen_id }}">
+            {{ 'product-apparel-1' | placeholder_svg_tag }}
+            <div class="ai-wk-promo-empty-state-{{ ai_gen_id }}">
+              Voeg een afbeelding toe van je gripsokken
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</wk-promo-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class WKPromo{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('wk-promo-{{ ai_gen_id }}', WKPromo{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "WK 2026 promotie",
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h2" },
+    {
+      "type": "header",
+      "content": "Inhoud"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Toon badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge tekst",
+      "default": "WK 2026"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Hoofdtitel",
+      "default": "Klaar voor het WK 2026"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Ondertitel",
+      "default": "Speel met de beste grip en presteer op het hoogste niveau"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "offer_title",
+      "label": "Aanbieding titel",
+      "default": "50% GRATIS"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_description",
+      "label": "Aanbieding beschrijving",
+      "default": "Krijg je bestelling gratis verdubbeld! Bestel nu en ontvang 2x zoveel gripsokken."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Knop tekst",
+      "default": "Shop nu"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Knop link"
+    },
+    {
+      "type": "header",
+      "content": "Kenmerken"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_features",
+      "label": "Toon kenmerken",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "feature_1",
+      "label": "Kenmerk 1",
+      "default": "Gratis verzending"
+    },
+    {
+      "type": "text",
+      "id": "feature_2",
+      "label": "Kenmerk 2",
+      "default": "30 dagen retour"
+    },
+    {
+      "type": "text",
+      "id": "feature_3",
+      "label": "Kenmerk 3",
+      "default": "Premium kwaliteit"
+    },
+    {
+      "type": "header",
+      "content": "Afbeelding"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Afbeelding"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Afbeelding afronding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Lay-out"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Tekst uitlijning",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Sectie padding",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_1",
+      "label": "Achtergrond kleur 1",
+      "default": "#FF4500"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_2",
+      "label": "Achtergrond kleur 2",
+      "default": "#FF6B35"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Hoofdtitel kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Ondertitel kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Badge achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge tekst",
+      "default": "#FF4500"
+    },
+    {
+      "type": "color",
+      "id": "offer_bg_color",
+      "label": "Aanbieding achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "offer_text_color",
+      "label": "Aanbieding tekst",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "offer_border_color",
+      "label": "Aanbieding rand",
+      "default": "#FFD700"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Knop achtergrond",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Knop tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Knop rand",
+      "default": "#FFD700"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Knop hover achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Knop hover tekst",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Typografie"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Hoofdtitel grootte",
+      "min": 24,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "label": "Ondertitel grootte",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "offer_border_radius",
+      "label": "Aanbieding afronding",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Knop afronding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    }
+  ],
+  "presets": [
+    {
+      "name": "WK 2026 promotie"
+    }
+  ]
+}
+{% endschema %}

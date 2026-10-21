@@ -1,0 +1,222 @@
+{{ 'sh-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sh-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="sh">
+<script>document.currentScript.parentNode.classList.add("sh-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['sok-10.webp']={{ 'sh-sok-10.webp' | asset_url | json }};MV_ASSETS['sok-20-wit.webp']={{ 'sh-sok-20-wit.webp' | asset_url | json }};MV_ASSETS['sok-20-zwart.webp']={{ 'sh-sok-20-zwart.webp' | asset_url | json }};MV_ASSETS['sq-padel.webp']={{ 'sh-sq-padel.webp' | asset_url | json }};MV_ASSETS['sq-tennis.webp']={{ 'sh-sq-tennis.webp' | asset_url | json }};</script>
+<section class="sh-wrap sh-info{%- if s.custom_pad %} sh-custom-pad{% endif -%}" aria-label="Over gripsokken" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--sh-pt:{{ s.padding_top }}px;--sh-pb:{{ s.padding_bottom }}px;--sh-pt-m:{{ s.padding_top_mobile }}px;--sh-pb-m:{{ s.padding_bottom_mobile }}px;--sh-len:{{ s.scroll_length }}vh;--sh-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div> <h2 class="sh-h">{{ s.t1 | escape }}</h2> <p>{{ s.t2 | escape }}</p> <p>{{ s.t3 | escape }} {%- for block in section.blocks -%}{%- if block.type == 'b1' -%}{%- assign b = block.settings -%}<a href="{{ b.url1 | default: 'https://www.higrip.nl/products/performance-gripsokken' }}" {{ block.shopify_attributes }}>{{ b.t2 | escape }}</a>{%- endif -%}{%- endfor -%} {{ s.t4 | escape }}  {{ s.t5 | escape }}  {{ s.t6 | escape }} .</p> </div> <div class="sh-faq"> {%- for block in section.blocks -%}{%- if block.type == 'b2' -%}{%- assign b = block.settings -%}<details {{ block.shopify_attributes }}><summary>{{ b.t1 | escape }}</summary><p>{{ b.t2 | escape }}</p></details>{%- endif -%}{%- endfor -%}    </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Shop: Info en FAQ",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "H2 · Gripsokken kopen bij HÏ Grip",
+      "default": "Gripsokken kopen bij HÏ Grip"
+    },
+    {
+      "type": "textarea",
+      "id": "t2",
+      "label": "P · Glijdt je voet weg in je schoen bij een sprint, een draai of e",
+      "default": "Glijdt je voet weg in je schoen bij een sprint, een draai of een harde stop? Gripsokken houden je voet op zijn plek, zodat je kracht naar de grond gaat. Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)."
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "P · Kies de",
+      "default": "Kies de"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "P · voor betrouwbare grip bij training en pilates, voor de scherps",
+      "default": "voor betrouwbare grip bij training en pilates, voor de scherpste prijs. Kies de Performance Gripsokken 2.0 in"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "P · of",
+      "default": "of"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "P · als je alles uit elke wedstrijd wilt halen. Meer over ons merk",
+      "default": "als je alles uit elke wedstrijd wilt halen. Meer over ons merk lees je op"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "b1",
+      "name": "1. a",
+      "settings": [
+        {
+          "type": "url",
+          "id": "url1",
+          "label": "Link · Performance Gripsokken 1.0"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "A · Performance Gripsokken 1.0",
+          "default": "Performance Gripsokken 1.0"
+        }
+      ]
+    },
+    {
+      "type": "b2",
+      "name": "2. details",
+      "settings": [
+        {
+          "type": "text",
+          "id": "t1",
+          "label": "SUMMARY · Welke maat heb ik nodig?",
+          "default": "Welke maat heb ik nodig?"
+        },
+        {
+          "type": "text",
+          "id": "t2",
+          "label": "P · De 1.0 is er in 34–39 en 40–46. De 2.0 in 35–38, 39–42 en 43–4",
+          "default": "De 1.0 is er in 34–39 en 40–46. De 2.0 in 35–38, 39–42 en 43–47. Kies de maat die bij je schoenmaat past."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop: Info en FAQ"
+    }
+  ]
+}
+{% endschema %}

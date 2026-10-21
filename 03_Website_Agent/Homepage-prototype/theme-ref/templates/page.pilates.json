@@ -1,0 +1,555 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_direction": "column",
+        "gap": 0,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "slideshow_xkREB9": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_W3EYLm": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/geef-de-vorige-afbeelding-terug.png",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "background_color": "rgba(0,0,0,0)",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "text_NeCgGE": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>PILATES</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_KDRyAd": {
+              "type": "text",
+              "settings": {
+                "text": "<p><em>De keuze voor jouw pilates.</em></p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 20,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_f4FDMe": {
+              "type": "button",
+              "settings": {
+                "label": "Neem vrijblijvend contact op",
+                "link": "mailto:info@higrip.nl",
+                "open_in_new_tab": false,
+                "style_class": "button-custom",
+                "custom_button_background": "{{ settings.color_palette.background }}",
+                "custom_button_text": "{{ settings.color_palette.foreground }}",
+                "custom_button_border": "{{ settings.color_palette.background }}",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_NeCgGE",
+            "text_KDRyAd",
+            "button_f4FDMe"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_W3EYLm"
+      ],
+      "name": "t:names.slideshow_full_frame",
+      "settings": {
+        "display_mode": "full_frame",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 12,
+        "corner_radius": 0,
+        "slide_height": "medium",
+        "content_position": "on-media",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_Q6fT7F": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2b9a8ac_mkERjJ": {
+          "type": "ai_gen_block_2b9a8ac",
+          "settings": {
+            "heading_text": "HÏ GRIP PILATES",
+            "font_size": 48,
+            "text_alignment": "center",
+            "desktop_width_percent": 100,
+            "glow_color": "#000000",
+            "glow_intensity": 20,
+            "text_color": "#ffffff",
+            "padding_vertical": 40,
+            "padding_horizontal": 20
+          },
+          "blocks": {}
+        },
+        "text_C7Mjnd": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>COMFORT, INNOVATIE & VERTROUWEN</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2b9a8ac_mkERjJ",
+        "text_C7Mjnd"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 28,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_yWFQVr": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b41b925_PBDFLd": {
+          "type": "ai_gen_block_b41b925",
+          "settings": {
+            "heading": "<p>JOIN THE MOVEMENT</p>",
+            "subheading": "<p>Ontdek de voordelen van HÏ Grip voor jouw pilates:</p>",
+            "bullet_1": "Boost de uniformiteit door centraal gripsokken aan te bieden",
+            "bullet_2": "Maximale grip tijdens de sessies",
+            "bullet_3": "Laat deelnemers 100% focussen",
+            "bullet_4": "Extra inkomsten voor het bedrijf",
+            "bullet_5": "Mogelijkheid tot volledige branding met al uw wensen",
+            "bullet_6": "Hoogwaardige sportmaterialen",
+            "image": "shopify://shop_images/sokken-minder-goed-zichtbaar-en-menselijker.png",
+            "image_border_radius": 6,
+            "desktop_width_percent": 100,
+            "section_padding": 60,
+            "content_gap": 60,
+            "content_spacing": 20,
+            "bullet_spacing": 16,
+            "mobile_image_position": "top",
+            "mobile_gap": 30,
+            "background_color": "#ffffff",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "icon_background": "#000000",
+            "icon_color": "#ffffff",
+            "heading_size": 40,
+            "subheading_size": 16,
+            "bullet_text_size": 16,
+            "icon_size": 24
+          },
+          "blocks": {}
+        },
+        "spacer_NrQbYz": {
+          "type": "spacer",
+          "name": "t:names.spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 28,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b41b925_PBDFLd",
+        "spacer_NrQbYz"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_UKke8p": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c51e615_YPPRqy": {
+          "type": "ai_gen_block_c51e615",
+          "settings": {
+            "heading": "<h3><strong>DEZE SPORTCLUBS GINGEN JE VOOR</strong></h3>",
+            "subheading": "<p>Sluit jouw pilates aan bij de toekomst van de sportwereld. Van franchise tot lokaal.</p>",
+            "text_alignment": "center",
+            "heading_size": 16,
+            "subheading_size": 17,
+            "spacing_below_title": 10,
+            "spacing_below_heading": 40,
+            "section_padding": 40,
+            "desktop_width_percent": 100,
+            "customer_1_image": "shopify://shop_images/Gripsokken_bulk_bestellen.png",
+            "customer_1_text": "<p>MyHealth Club</p>",
+            "customer_2_image": "shopify://shop_images/LOGO_SYTH.jpg",
+            "customer_2_text": "<p>Say Yes To Health</p>",
+            "grid_gap": 30,
+            "item_padding": 20,
+            "item_border_radius": 8,
+            "image_max_width": 300,
+            "image_border_radius": 8,
+            "spacing_below_image": 15,
+            "background_color": "#ffffff",
+            "item_background_color": "#ffffff",
+            "heading_color": "#000000",
+            "subheading_color": "#000000",
+            "text_color": "#000000",
+            "text_size": 14
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c51e615_YPPRqy"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "section_rP9NTq": {
+      "type": "section",
+      "blocks": {
+        "group_VnMg88": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_peTXj9": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_hQrQir": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h3><strong>ELKE ATLEET IS OOIT BEGONNEN MET DE EERSTE STAP.</strong></h3>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "spacer_6DmfaN": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "pixel",
+                    "percent_size": 100,
+                    "pixel_size": 12,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "ai_gen_block_9f3c9cb_8nbWBW": {
+                  "type": "ai_gen_block_9f3c9cb",
+                  "settings": {
+                    "button_text": "Neem vrijblijvend contact op",
+                    "button_link": "mailto:info@higrip.nl",
+                    "font_size": 16,
+                    "button_font": "poppins_n5",
+                    "button_bg_color": "#000000",
+                    "button_text_color": "#ffffff",
+                    "button_hover_bg_color": "#333333",
+                    "button_hover_text_color": "#ffffff",
+                    "border_width": 0,
+                    "border_color": "#000000",
+                    "border_hover_color": "#333333",
+                    "border_radius": 26
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_hQrQir",
+                "spacer_6DmfaN",
+                "ai_gen_block_9f3c9cb_8nbWBW"
+              ]
+            }
+          },
+          "block_order": [
+            "group_peTXj9"
+          ]
+        }
+      },
+      "block_order": [
+        "group_VnMg88"
+      ],
+      "name": "t:names.icons_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_xkREB9",
+    "blocks_Q6fT7F",
+    "blocks_yWFQVr",
+    "blocks_UKke8p",
+    "section_rP9NTq"
+  ]
+}

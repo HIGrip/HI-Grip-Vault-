@@ -1,0 +1,184 @@
+{{ 'gripsocks2-anatomy.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign zones = section.blocks
+
+  # Dit template bedient zowel de witte als de zwarte 2.0: pak standaard de
+  # 'achterkant'-foto van het product dat nu getoond wordt, zodat de kleur klopt.
+  # Beide kleuren zijn in dezelfde pose gefotografeerd, dus de markers blijven kloppen.
+  assign anatomy_image = s.image
+  if anatomy_image == blank and product != blank
+    for img in product.images
+      assign fname = img.src | downcase
+      if fname contains 'achterkant'
+        assign anatomy_image = img
+        break
+      endif
+    endfor
+    if anatomy_image == blank
+      assign anatomy_image = product.featured_image
+    endif
+  endif
+-%}
+
+<section class="g2a" id="anatomie" data-g2-anatomy>
+  <div class="g2a__head">
+    {%- if s.eyebrow != blank -%}
+      <span class="g2a__eyebrow"><span class="g2a__dot" aria-hidden="true"></span>{{ s.eyebrow }}</span>
+    {%- endif -%}
+    {%- comment -%}Spatie tussen beide spans behouden voor schermlezers.{%- endcomment -%}
+    <h2 class="g2a__title">
+      {%- if s.title_outline != blank -%}<span class="g2a__title-outline">{{ s.title_outline }}</span>{% endif %} {% if s.title_accent != blank %}<span class="g2a__title-accent">{{ s.title_accent }}</span>{%- endif -%}
+    </h2>
+    {%- if s.copy != blank -%}<p class="g2a__copy">{{ s.copy }}</p>{%- endif -%}
+  </div>
+
+  <div class="g2a__stage">
+    <div class="g2a__media">
+      {%- if anatomy_image != blank -%}
+        {{ anatomy_image | image_url: width: 1200 | image_tag:
+            loading: 'lazy',
+            widths: '400,600,900,1200',
+            sizes: '(min-width:900px) 42vw, 88vw',
+            class: 'g2a__photo',
+            alt: s.image_alt | default: 'Performance Grip Socks 2.0 — opbouw van de sok' }}
+      {%- else -%}
+        <div class="g2a__photo g2a__photo--empty">
+          <span>Productfoto nog niet gekozen — kies 'm in de theme-editor.</span>
+        </div>
+      {%- endif -%}
+
+      {%- for zone in zones -%}
+        <button
+          type="button"
+          class="g2a__marker"
+          style="--g2a-x: {{ zone.settings.pos_x }}%; --g2a-y: {{ zone.settings.pos_y }}%;"
+          data-g2a-marker="{{ forloop.index }}"
+          aria-label="Zone {{ forloop.index }}: {{ zone.settings.title | escape }}"
+        >
+          <span class="g2a__marker-num">{{ forloop.index }}</span>
+        </button>
+      {%- endfor -%}
+    </div>
+
+    <ol class="g2a__zones">
+      {%- for zone in zones -%}
+        {%- comment -%}
+          tabindex="-1": niet in de tabvolgorde (de markers zijn al de knoppen),
+          maar wel programmatisch focusbaar zodat een klik op een marker de
+          bijbehorende zone kan aanspreken voor schermlezers.
+        {%- endcomment -%}
+        <li class="g2a__zone" data-g2a-zone="{{ forloop.index }}" tabindex="-1" {{ zone.shopify_attributes }}>
+          <span class="g2a__zone-num" aria-hidden="true">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+          <div class="g2a__zone-body">
+            <h3 class="g2a__zone-title">{{ zone.settings.title }}</h3>
+            {%- if zone.settings.description != blank -%}
+              <p class="g2a__zone-copy">{{ zone.settings.description }}</p>
+            {%- else -%}
+              <p class="g2a__zone-blank">
+                <span class="g2a__zone-blank-hint">{{ s.blank_hint | default: 'Nog in te vullen' }}</span>
+              </p>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+
+  {%- if s.footnote != blank -%}
+    <p class="g2a__footnote">{{ s.footnote }}</p>
+  {%- endif -%}
+</section>
+
+<script>
+  (function () {
+    document.querySelectorAll('[data-g2-anatomy]').forEach(function (root) {
+      var zones = root.querySelectorAll('[data-g2a-zone]');
+      var markers = root.querySelectorAll('[data-g2a-marker]');
+
+      function setActive(index) {
+        zones.forEach(function (z) {
+          z.classList.toggle('is-active', z.dataset.g2aZone === index);
+        });
+        markers.forEach(function (m) {
+          m.classList.toggle('is-active', m.dataset.g2aMarker === index);
+        });
+      }
+
+      function clear() {
+        zones.forEach(function (z) { z.classList.remove('is-active'); });
+        markers.forEach(function (m) { m.classList.remove('is-active'); });
+      }
+
+      zones.forEach(function (zone) {
+        var id = zone.dataset.g2aZone;
+        zone.addEventListener('mouseenter', function () { setActive(id); });
+        zone.addEventListener('focus', function () { setActive(id); });
+        zone.addEventListener('mouseleave', clear);
+        zone.addEventListener('blur', clear);
+      });
+
+      markers.forEach(function (marker) {
+        var id = marker.dataset.g2aMarker;
+        marker.addEventListener('mouseenter', function () { setActive(id); });
+        marker.addEventListener('focus', function () { setActive(id); });
+        marker.addEventListener('mouseleave', clear);
+        marker.addEventListener('blur', clear);
+        marker.addEventListener('click', function () {
+          var target = root.querySelector('[data-g2a-zone="' + id + '"]');
+          if (!target) return;
+          setActive(id);
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          target.focus({ preventScroll: true });
+        });
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — anatomie",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Zeven zones, één sok" },
+    { "type": "text", "id": "title_outline", "label": "Titel — regel 1 (contour)", "default": "Zo is de" },
+    { "type": "text", "id": "title_accent", "label": "Titel — regel 2 (accentkleur)", "default": "2.0 gebouwd." },
+    { "type": "textarea", "id": "copy", "label": "Introtekst", "default": "Elke zone doet iets anders. Samen zorgen ze dat je voet stil staat in je schoen, koel blijft en niet gaat schuren." },
+    { "type": "text", "id": "blank_hint", "label": "Tekst in de lege invulbalk", "default": "Nog in te vullen" },
+    { "type": "textarea", "id": "footnote", "label": "Voetnoot (optioneel)" },
+    { "type": "header", "content": "Productfoto" },
+    { "type": "paragraph", "content": "Leeg laten = de sectie pakt automatisch de 'achterkant'-foto van het product dat bekeken wordt, zodat wit en zwart allebei kloppen." },
+    { "type": "image_picker", "id": "image", "label": "Vaste foto (overschrijft de automatische keuze)" },
+    { "type": "text", "id": "image_alt", "label": "Alt-tekst van de foto", "default": "Performance Grip Socks 2.0 — opbouw van de sok" }
+  ],
+  "blocks": [
+    {
+      "type": "zone",
+      "name": "Zone",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Naam van de zone", "default": "Zone" },
+        { "type": "textarea", "id": "description", "label": "Omschrijving (leeg = witte invulbalk op de pagina)" },
+        { "type": "range", "id": "pos_x", "label": "Positie op de foto — horizontaal", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 50 },
+        { "type": "range", "id": "pos_y", "label": "Positie op de foto — verticaal", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 50 }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Gripsocks 2.0 — anatomie",
+      "blocks": [
+        { "type": "zone", "settings": { "title": "Compressie", "description": "15–20 mmHg compressie ondersteunt je doorbloeding tijdens inspanning.", "pos_x": 44, "pos_y": 26 } },
+        { "type": "zone", "settings": { "title": "Versterkte hiel", "description": "Extra dikte precies onder je hiel, waar de druk het grootst is.", "pos_x": 66, "pos_y": 54 } },
+        { "type": "zone", "settings": { "title": "Ademend vermogen", "description": "Open structuur bovenop de voet laat lucht door, voor koele voeten bij elke training.", "pos_x": 53, "pos_y": 57 } },
+        { "type": "zone", "settings": { "title": "Maximale grip", "description": "Siliconen zones houden je voet vast in de schoen.", "pos_x": 71, "pos_y": 63 } },
+        { "type": "zone", "settings": { "title": "Coolmax", "description": "Voert vocht direct af van je huid. Droge voeten, ook na het laatste kwartier.", "pos_x": 61, "pos_y": 73 } },
+        { "type": "zone", "settings": { "title": "Naadloos", "description": "Rondom gebreid zonder stiksels, dus geen wrijving tegen je huid.", "pos_x": 34, "pos_y": 87 } },
+        { "type": "zone", "settings": { "title": "Special cushioning", "description": "", "pos_x": 50, "pos_y": 90 } }
+      ]
+    }
+  ]
+}
+{% endschema %}

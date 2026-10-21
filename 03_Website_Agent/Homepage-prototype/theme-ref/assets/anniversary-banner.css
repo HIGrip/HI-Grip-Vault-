@@ -1,0 +1,346 @@
+/* anniversary-banner.css — HÏ Grip 1 jaar actie — 60/40 split */
+
+/* ─────────────────────────────────────────────
+   SECTIE WRAPPER — 60/40 grid
+───────────────────────────────────────────── */
+
+.hi-ann {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: var(--hi-near-black, #111111);
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .hi-ann {
+    grid-template-columns: 3fr 2fr;
+    min-height: 520px;
+    max-height: 580px;
+    width: 100vw;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+  }
+}
+
+/* ─────────────────────────────────────────────
+   FOTO PANEL (links / boven op mobiel)
+───────────────────────────────────────────── */
+
+.hi-ann__visual {
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+@media (min-width: 769px) {
+  .hi-ann__visual {
+    height: auto;
+  }
+}
+
+.hi-ann__hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
+  transition: transform 8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hi-ann:hover .hi-ann__hero-img {
+  transform: scale(1.03);
+}
+
+.hi-ann__hero-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #1a1a1a;
+}
+
+/* Mobiel: gradient omlaag zodat overlay-tekst leesbaar is */
+.hi-ann__visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 35%,
+    rgba(17, 17, 17, 0.85) 100%
+  );
+  pointer-events: none;
+}
+
+/* Desktop: gradient rechts (naadloze overgang naar deal panel) + licht omlaag */
+@media (min-width: 769px) {
+  .hi-ann__visual::after {
+    background:
+      linear-gradient(to right, transparent 50%, rgba(17, 17, 17, 0.97) 100%),
+      linear-gradient(to bottom, transparent 45%, rgba(0, 0, 0, 0.55) 100%);
+  }
+}
+
+/* Tekst overlay op foto */
+.hi-ann__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px 28px;
+  z-index: 1;
+}
+
+@media (min-width: 769px) {
+  .hi-ann__overlay {
+    padding: 32px 52px 44px;
+  }
+}
+
+.hi-ann__eyebrow {
+  margin: 0 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--hi-yellow, #CCFF00);
+}
+
+.hi-ann__headline {
+  margin: 0 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.25rem, 5.5vw, 4.25rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.hi-ann__subline {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.55rem, 1.1vw, 0.65rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ─────────────────────────────────────────────
+   DEAL PANEL (rechts / onder op mobiel)
+───────────────────────────────────────────── */
+
+.hi-ann__deal {
+  background: var(--hi-near-black, #111111);
+  padding: 32px 24px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (min-width: 769px) {
+  .hi-ann__deal {
+    padding: 44px 52px 44px 44px;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   50% KORTING
+───────────────────────────────────────────── */
+
+.hi-ann__discount {
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.hi-ann__num {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(5rem, 12vw, 7.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  color: var(--hi-yellow, #CCFF00);
+  letter-spacing: -3px;
+}
+
+.hi-ann__word {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+
+/* ─────────────────────────────────────────────
+   TAGLINE
+───────────────────────────────────────────── */
+
+.hi-ann__tagline {
+  margin: 0 0 28px;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* ─────────────────────────────────────────────
+   COUNTDOWN TIMER
+───────────────────────────────────────────── */
+
+.hi-ann__countdown {
+  margin-bottom: 28px;
+}
+
+.hi-ann__countdown-label {
+  margin: 0 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hi-ann__units {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.hi-ann__unit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 42px;
+}
+
+@media (min-width: 769px) {
+  .hi-ann__unit {
+    min-width: 52px;
+    align-items: flex-start;
+  }
+}
+
+.hi-ann__unit-n {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+}
+
+.hi-ann__unit-l {
+  margin-top: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hi-ann__sep {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--hi-yellow, #CCFF00);
+  padding-top: 3px;
+}
+
+/* ─────────────────────────────────────────────
+   KORTINGSCODE
+───────────────────────────────────────────── */
+
+.hi-ann__code-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.hi-ann__code-lbl {
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hi-ann__code-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1.5px solid var(--hi-yellow, #CCFF00);
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--hi-yellow, #CCFF00);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.hi-ann__code-pill:hover,
+.hi-ann__code-pill:focus-visible {
+  background: var(--hi-yellow, #CCFF00);
+  color: var(--hi-black, #000000);
+  outline: none;
+}
+
+.hi-ann__copy-icon {
+  flex-shrink: 0;
+  opacity: 0.55;
+  transition: opacity 0.15s;
+}
+
+.hi-ann__code-pill:hover .hi-ann__copy-icon {
+  opacity: 1;
+}
+
+.hi-ann__code-ok {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--hi-yellow, #CCFF00);
+  min-width: 80px;
+}
+
+/* ─────────────────────────────────────────────
+   CTA KNOP
+───────────────────────────────────────────── */
+
+.hi-ann__cta {
+  display: inline-block;
+  background: var(--hi-yellow, #CCFF00);
+  color: var(--hi-black, #000000);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 14px 36px;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.hi-ann__cta:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}

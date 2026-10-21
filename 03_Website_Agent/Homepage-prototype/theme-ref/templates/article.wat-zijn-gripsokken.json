@@ -1,0 +1,222 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-article",
+      "blocks": {
+        "text_XGHRUE": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken zijn speciaal ontworpen sokken die extra grip bieden en veel voordelen hebben t.o.v. normale sokken. Gripsokken werden populair in de sportwereld tussen 2010-2015 en zijn trending in diverse sporten zoals voetbal, padel, pilates, hockey, rugby, fitness en yoga, omdat ze stabiliteit en controle verbeteren. Maar wat maakt gripsokken zo bijzonder en waarom zou u ze moeten gebruiken?<br/><br/></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_PkJjPd": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Wat maakt gripsokken uniek?</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_KhKGUh": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>In tegenstelling tot standaard sportsokken zijn gripsokken voorzien van een grippatroon aan de onderzijde, gemaakt van siliconen. Dit zorgt voor extra wrijving tussen de voet en de schoen, waardoor ongewenst schuiven wordt voorkomen. Het resultaat hiervan is een stabiele en gecontroleerde houding, essentieel voor explosieve bewegingen en snelle richtingsveranderingen.</p><p>Daarnaast zijn gripsokken vervaardigd uit ademende en elastische materialen die zorgen voor een optimale pasvorm en effectieve vochtafvoer. Dit verhoogt het comfort en vermindert de kans op blaren en irritaties, zelfs tijdens intensieve trainingssessies of wedstrijden.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_7meHcq": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Kenmerken van gripsokken:</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_mz7YN4": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Gripsokken onderscheiden zich van reguliere sokken door hun unieke ontwerp en materialen:</p><ul><li><strong>Antislip-laag:</strong> De onderkant van de sok bevat optimale grippatronen van siliconen of rubber, die zorgen voor extra stabiliteit en controle.</li></ul><p></p><ul><li><strong>Elastische pasvorm:</strong> Ze sluiten door onze spandex (ook wel elastaan) goed aan op de voet om comfort en ondersteuning te bieden, zonder dat de sokken verschuiven.</li></ul><p></p><ul><li><strong>Ademend materiaal:</strong> Vaak gemaakt van vocht afvoerende stoffen zoals nylon, spandex of polyester om de voeten droog en comfortabel te houden.</li></ul><p></p><ul><li><strong>Duurzaam en flexibel:</strong> Ontworpen om bestand te zijn tegen intensief gebruik zonder in te boeten op kwaliteit of comfort.</li></ul><p></p><ul><li><strong>Verstevigde zones:</strong> Sommige gripsokken bevatten extra demping bij de hiel en tenen voor extra ondersteuning en bescherming.</li></ul><p> </p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_hdnzWH": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2><strong>Materiaal:</strong></h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_pjbknU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>HÏ Grip gripsokken zijn ontworpen om functioneel en comfortabel te zijn, met hoogwaardige sportmaterialen die de voeten laten ventileren door de ademende sportstof en tegelijkertijd een versterkte bodem hebben voor fijn comfort en kwaliteit. Ze bieden een innovatieve oplossing voor situaties waarin reguliere sokken te weinig grip en stabiliteit bieden. Dit wordt geleverd doormiddel van de materialen: <em>spandex (elastaan), katoen, nylon en polyester </em>bij HÏ Grip gripsokken!<br/><br/></p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_XGHRUE",
+        "text_PkJjPd",
+        "text_KhKGUh",
+        "text_7meHcq",
+        "text_mz7YN4",
+        "text_hdnzWH",
+        "text_pjbknU"
+      ],
+      "settings": {
+        "accent": "blue",
+        "eyebrow": "HÏ Grip blog",
+        "show_breadcrumb": true,
+        "show_author": true,
+        "show_product": false,
+        "product": "performance-gripsokken-2-0-wit",
+        "product_cta": "Shop nu",
+        "cta_eyebrow": "Performance gripsokken",
+        "cta_heading": "Ga door waar anderen stoppen",
+        "cta_text": "Gripsokken voor elke sport waarin je snel start, stopt en draait. Gratis verzending vanaf €35.",
+        "cta_button": "Shop gripsokken",
+        "cta_link": "shopify://collections/gripsokken",
+        "show_related": true,
+        "related_eyebrow": "Blog",
+        "related_heading": "Lees ook"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

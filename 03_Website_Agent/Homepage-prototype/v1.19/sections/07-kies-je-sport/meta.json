@@ -1,0 +1,35 @@
+{
+  "id": "07",
+  "name": "kies-je-sport",
+  "bg": "--hi-near-black",
+  "assets": [
+    "sport-padel",
+    "sport-tennis",
+    "sport-voetbal",
+    "sport-rugby"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/gripsokken-voor-padel",
+    "https://www.higrip.nl/pages/gripsokken-voor-tennis",
+    "https://www.higrip.nl/pages/gripsokken-voor-voetbal",
+    "https://www.higrip.nl/pages/gripsokken-voor-rugby"
+  ],
+  "interactions": [
+    "1.2 ronde 2: de hele sectie krijgt de merkkleur van de sportpagina (rhythm.json 07.dynamic): padel --hi-blue, tennis --hi-orange, voetbal --hi-yellow, rugby --hi-red. Inkt volgt 07.fg_dynamic via --hp-07-ink: wit, op volt zwart (kop, lead, sportnaam, regel, chevroncirkel, rand en hover van de pijlknoppen, focusring). De sectie-achtergrond (getComputedStyle) wisselt direct bij elke wissel; de kleurgolf (.hp-07-wave) legt de vorige kleur eroverheen met een rond gat (box-shadow rond een cirkel, width/height var(--hp-dur-3) var(--hp-ease)) dat vanuit het midden van de actieve kaart opent; de inkt loopt in dezelfde tijd en curve mee (color var(--hp-dur-3)). Tijdens het slepen start de golf al zodra een andere kaart het midden haalt. Reduced motion: kleur en inkt wisselen direct, geen golf",
+    "slepen (muis) en swipen (touch/pointer) via hpDrag, align center, snap; een sleep telt niet als klik",
+    "pijltjes links/rechts, Home en End op de rij (hpDrag)",
+    "ronde vorige/volgende-knoppen (copy 07.prev/next), rand en pijl in de inkt; hover/tik: gevuld met de inkt, pijl in de tegeninkt (wit vlak met zwarte pijl, op volt zwart vlak met volt pijl); door de lus nooit uitgeschakeld",
+    "visuele lus: de vier sporten staan drie keer in de rij (kopieën via JS, aria-hidden, zonder id en buiten de tabvolgorde); na het landen op een kopie springt de rij zonder animatie terug naar dezelfde sport in de middelste set; tint en aria-live volgen de echte sport",
+    "actieve kaart schaal 1, actieve kaart desktop min(72vw, 1100px) 16:9, buren 0.86 (mobiel 0.9) naar het midden toe en gedimd; randen van de rij vervagen via mask",
+    "klik/tik op de centrale kaart: naar de sportpagina (facts.json sports[].url)",
+    "klik/tik op een buurkaart: eerst centreren, pas een tweede klik navigeert",
+    "hover (desktop) / tik (:active) op de centrale kaart: foto zoomt licht in, chevron schuift 3px; hover op een buurkaart: kaart groeit iets",
+    "aria-live status (copy 07.status) bij elke wissel; alleen de centrale kaart zit in de tabvolgorde",
+    "reduced motion: geen animatie van rij, kaarten of achtergrond; staten wisselen direct",
+    "1.17 (Lars: sportvloer niet, optie 4 snelheidsstrepen): bij een wissel trekken elf strepen (3-24px dik, 34-86% breed) in de nieuwe sportkleur over de rij in de bewegingsrichting (data-dir next/prev), 0,63 s; daarna loopt onder de actieve foto een kleurlijntje in de sportkleur in (scaleX) dat blijft staan. Zijkaarten 3D gekanteld, zwart-wit, 70% dekking. Reduced motion: geen strepen, lijntje direct.",
+    "1.18: strepen achter de foto's (z-index onder de rij), als komeet (verloop naar een witte kop), alleen in de fotoband en de marge erboven, alleen transform/opacity. Randvervaging van de rij als twee vaste verlooplagen in plaats van mask-image (dat dwong elk frame een repaint af). Sportfoto's worden een scherm vooraf gedecodeerd; sizes min(68vw, 1000px) zodat op 1x-schermen de 1000px-versie laadt.",
+    "1.19 (Lars: strepen te snel en haperend): zes strepen met vaste breedte (260-520px) die in ca. 1,8 s over de rij glijden en iets na de kaartbeweging starten; de zwart-witwissel van de zijfoto's springt (geen filter-overvloeiing meer). Gemeten bij 4x tragere CPU: wissels 2-4 op 59-60 fps."
+  ],
+  "notes": "Keuze klik op een buurkaart: eerst centreren, niet navigeren. Reden: de buren staan half achter de vervagende rand en gedimd, een tik erop betekent 'laat die zien'; zo landt de bezoeker eerst op de sport met tint, foto en regel, en navigeert een tweede tik. Zelfde gedrag als de Eight Sleep-referentie. Copy 07.sports.*.link ('Gripsokken voor …') is gebruikt als toegankelijke naam van elke kaartlink (aria-label), de regel als aria-describedby; niet zichtbaar, omdat de brief alleen sportnaam + één regel vraagt en geen extra tekstlink. Geen stippen (4 items, aria-live geeft de positie). Rugby: assets.json meldt dat dit geen eigen HÏ Grip-beeld is (geen sok zichtbaar); gebruikt zoals aangeleverd, vervangen zodra er een eigen rugbyfoto is. Lege start (review ronde 1) opgelost met een visuele lus in plaats van links uitlijnen: zo staat er altijd een gedimde buur links én rechts, blijft de actieve kaart in elke staat op dezelfde plek in het midden (geen verspringende compositie tussen index 0 en de rest) en volgt het de Eight Sleep-referentie, die ook oneindig doorloopt. De rij start op padel (rhythm.json start = --hi-tint-padel). Padelfoto: object-position 30% 60% plus inzoomen binnen het frame (desktop 1.45 rond 35% 64%, mobiel 1.2 rond 34% 72%), zodat speler en sokken groter in beeld staan en de schoenen heel blijven. 1.2 ronde 2 (Lars 19-10): de gedempte --hi-sport-*-tinten zijn vervangen door de merkaccenten van de sportpagina's. Eén beweging: de kleurgolf vanuit de kaart. Omgekeerd opgebouwd (sectie direct nieuw, golf toont de oude kleur met een groeiend gat), zodat getComputedStyle van de sectie meteen de nieuwe sport geeft. Chevroncirkel in de kaart: inkt met de tegeninkt als pijl (wit/zwart, op volt zwart/volt). Contrast inkt op sportkleur (WCAG): wit op royal blue 12.8, zwart op volt 17.9, wit op tangerine 5.0, wit op pumpkin 2.9: dat haalt AA niet voor de lead en de regel op tennis (open punt voor Lars; zwart op pumpkin zou 7.3 halen). Extra shot 1440-wave.png toont de golf halverwege.",
+  "besluit_tennis_contrast": "Lars 19-10: tennis blijft wit op --hi-orange, net als de sportpagina (contrast 2,9:1 bewust geaccepteerd)."
+}

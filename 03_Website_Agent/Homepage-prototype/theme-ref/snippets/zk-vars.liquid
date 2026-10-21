@@ -1,0 +1,10 @@
+{% doc %}
+  Inline CSS custom properties voor een Zakelijk-sectie (kleuren en ruimte).
+  @param {object} s - section.settings
+{% enddoc %}
+{%- if s.bg_color != blank -%}--z-bg:{{ s.bg_color }};{%- endif -%}
+{%- if s.text_color != blank -%}--z-fg:{{ s.text_color }};{%- endif -%}
+{%- if s.accent_color != blank -%}--z-ac:{{ s.accent_color }};{%- endif -%}
+{%- if s.eyebrow_color != blank -%}--z-eyebrow:{{ s.eyebrow_color }};{%- endif -%}
+{%- if s.heading_color != blank -%}--z-heading:{{ s.heading_color }};{%- endif -%}
+--z-pt:{{ s.padding_top | default: 128 }}px;--z-pb:{{ s.padding_bottom | default: 128 }}px;--z-pt-m:{{ s.padding_top_mobile | default: 64 }}px;--z-pb-m:{{ s.padding_bottom_mobile | default: 64 }}px;

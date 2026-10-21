@@ -1,0 +1,8 @@
+{% doc %}
+  Inline stijl voor een mv-sectie uit de gedeelde opmaak-instellingen.
+  @param {object} s - section.settings
+{% enddoc %}
+{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}
+{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}
+--mv-pt:{{ s.padding_top | default: 96 }}px;--mv-pb:{{ s.padding_bottom | default: 96 }}px;--mv-pt-m:{{ s.padding_top_mobile | default: 52 }}px;--mv-pb-m:{{ s.padding_bottom_mobile | default: 52 }}px;
+{%- if s.scroll_length != blank -%}--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;{%- endif -%}

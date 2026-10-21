@@ -1,0 +1,17 @@
+[    1371ms] [INFO] Clear-Site-Data header on 'https://ember.com/cart/update': Cleared data types: "prefetchCache", "prerenderCache". @ https://ember.com/:0
+[    3615ms] [WARNING] Route Widget: No elements found matching selector "[placeholder-selector]" @ https://cdn.shopify.com/extensions/01a135ca-4c0f-7af6-979f-d9fdca8bdc0c/route-336/assets/route-widget.js:39
+[    7115ms] [WARNING] The configuration for accessWidget is being loaded from the dashboard. 
+The object passed to the 'acsbjs.init' function is being ignored. 
+To suppress this warning, remove the configuration object from the 'acsbjs.init' method. @ https://acsbapp.com/apps/app/dist/js/app.js:0
+[   12241ms] Uncaught Bazaarvoice is not configured for the domain ember.com.
+    at <anonymous> (https://apps.bazaarvoice.com/bv.js:18:16011)
+    at vt (https://apps.bazaarvoice.com/bv.js:18:16079)
+    at zn (https://apps.bazaarvoice.com/bv.js:18:35572)
+    at <anonymous> (https://apps.bazaarvoice.com/bv.js:18:91886)
+    at <anonymous> (https://apps.bazaarvoice.com/bv.js:18:91891)
+    at <anonymous> (https://apps.bazaarvoice.com/bv.js:18:91895)
+[    8437ms] [LOG]  @ https://d23dclunsivw3h.cloudfront.net/redirect-app.js?shop=ember-tech.myshopify.com:0
+[    8830ms] [LOG] %c ► UpPromote Affiliate Marketing [Application] - Running... background-color: #092C4C; color: #fff; padding: 5px; @ https://cdn.shopify.com/proxy/e5c6ae738319c43e688e4f04af7dce56b7ed0dcb2602ce3cb1c9f53adfa3bd40/d1639lhkj5l89m.cloudfront.net/js/storefront/uppromote.js?shop=ember-tech.myshopify.com&sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA:0
+[    9315ms] [INFO] Clear-Site-Data header on 'https://ember.com/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://ember.com/:0
+[   10635ms] [INFO] Clear-Site-Data header on 'https://ember.com/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://ember.com/:0
+[   11065ms] [INFO] Clear-Site-Data header on 'https://ember.com/cart/update.js': Cleared data types: "prefetchCache", "prerenderCache". @ https://ember.com/:0

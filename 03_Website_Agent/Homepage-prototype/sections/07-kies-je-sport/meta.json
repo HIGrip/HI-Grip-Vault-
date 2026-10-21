@@ -1,0 +1,31 @@
+{
+  "id": "07",
+  "name": "kies-je-sport",
+  "bg": "--hi-tint-padel",
+  "assets": [
+    "sport-padel",
+    "sport-tennis",
+    "sport-voetbal",
+    "sport-rugby"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/gripsokken-voor-padel",
+    "https://www.higrip.nl/pages/gripsokken-voor-tennis",
+    "https://www.higrip.nl/pages/gripsokken-voor-voetbal",
+    "https://www.higrip.nl/pages/gripsokken-voor-rugby"
+  ],
+  "interactions": [
+    "slepen (muis) en swipen (touch/pointer) via hpDrag, align center, snap; een sleep telt niet als klik",
+    "pijltjes links/rechts, Home en End op de rij (hpDrag)",
+    "ronde vorige/volgende-knoppen (copy 07.prev/next); door de lus nooit uitgeschakeld",
+    "visuele lus: de vier sporten staan drie keer in de rij (kopieën via JS, aria-hidden, zonder id en buiten de tabvolgorde); na het landen op een kopie springt de rij zonder animatie terug naar dezelfde sport in de middelste set; tint en aria-live volgen de echte sport",
+    "achtergrond van de hele sectie wisselt naar de sporttint uit rhythm.json 07.dynamic (background-color var(--hp-dur-2) var(--hp-ease)); tijdens het slepen al naar de kaart die het dichtst bij het midden staat",
+    "actieve kaart schaal 1, actieve kaart desktop min(72vw, 1100px) 16:9, buren 0.86 (mobiel 0.9) naar het midden toe en gedimd; randen van de rij vervagen via mask",
+    "klik/tik op de centrale kaart: naar de sportpagina (facts.json sports[].url)",
+    "klik/tik op een buurkaart: eerst centreren, pas een tweede klik navigeert",
+    "hover (desktop) / tik (:active) op de centrale kaart: foto zoomt licht in, chevron schuift 3px; hover op een buurkaart: kaart groeit iets",
+    "aria-live status (copy 07.status) bij elke wissel; alleen de centrale kaart zit in de tabvolgorde",
+    "reduced motion: geen animatie van rij, kaarten of achtergrond; staten wisselen direct"
+  ],
+  "notes": "Keuze klik op een buurkaart: eerst centreren, niet navigeren. Reden: de buren staan half achter de vervagende rand en gedimd, een tik erop betekent 'laat die zien'; zo landt de bezoeker eerst op de sport met tint, foto en regel, en navigeert een tweede tik. Zelfde gedrag als de Eight Sleep-referentie. Copy 07.sports.*.link ('Gripsokken voor …') is gebruikt als toegankelijke naam van elke kaartlink (aria-label), de regel als aria-describedby; niet zichtbaar, omdat de brief alleen sportnaam + één regel vraagt en geen extra tekstlink. Geen stippen (4 items, aria-live geeft de positie). Rugby: assets.json meldt dat dit geen eigen HÏ Grip-beeld is (geen sok zichtbaar); gebruikt zoals aangeleverd, vervangen zodra er een eigen rugbyfoto is. Lege start (review ronde 1) opgelost met een visuele lus in plaats van links uitlijnen: zo staat er altijd een gedimde buur links én rechts, blijft de actieve kaart in elke staat op dezelfde plek in het midden (geen verspringende compositie tussen index 0 en de rest) en volgt het de Eight Sleep-referentie, die ook oneindig doorloopt. De rij start op padel (rhythm.json start = --hi-tint-padel). Padelfoto: object-position 30% 60% plus inzoomen binnen het frame (desktop 1.45 rond 35% 64%, mobiel 1.2 rond 34% 72%), zodat speler en sokken groter in beeld staan en de schoenen heel blijven."
+}

@@ -1,0 +1,76 @@
+/* 10 ZAKELIJK · 1.3 ronde 3 (Lars 19-10): compleet andere stijl. Een typografische index.
+   Drie reuzenrijen als contour; de actieve rij loopt vol wit (een veeg van links), klapt open met zijn uitleg
+   en schuift rechts het bijbehorende beeld in met een sluiter (de oude klapt omhoog weg, de nieuwe komt van onder).
+   Desktop: rijen links, beeld rechts en sticky. Mobiel: beeld boven de rijen; eerste tik kiest, tweede tik opent.
+   Muis (hover), toetsenbord (focus) en tik zetten dezelfde staat (section.js). */
+.hp-10 { background: var(--hi-black); color: var(--hi-white); }
+.hp-10-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-10-head { display: grid; gap: var(--hp-space-sm); }
+.hp-10-h2 { max-width: 20ch; font: 800 clamp(22px, 2.4vw, 34px)/1.05 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); }
+.hp-10-lead { max-width: 44ch; font-size: 15px; line-height: 1.5; color: var(--hi-titanium); }
+
+/* beeld met sluiter */
+.hp-10-stage { position: relative; aspect-ratio: 4 / 5; max-height: 62svh; width: 100%; border-radius: var(--hp-radius-media); overflow: hidden; background: var(--hi-near-black); }
+.hp-10-frame { position: absolute; inset: 0; overflow: hidden; background: var(--hi-near-black); clip-path: inset(0 0 100% 0); transition: clip-path var(--hp-dur-3) var(--hp-ease); }
+.hp-10-frame--light { background: var(--hi-white); }
+.hp-10-frame.is-current { z-index: 1; clip-path: inset(0); }
+.hp-10-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; transform: scale(1.2); transition: transform calc(var(--hp-dur-3) * 1.6) var(--hp-ease); }
+.hp-10-img--contain { object-fit: contain; }
+.hp-10-img--sheet { object-fit: contain; filter: contrast(1.14) brightness(1.03); }
+.hp-10-frame.is-current .hp-10-img { transform: scale(1); }
+.hp-10-frame.is-current .hp-10-img--sheet { transform: scale(1.32); }
+.hp-10-big {
+  position: absolute; z-index: 2; left: 14px; bottom: 6px; overflow: hidden;
+  font: italic 900 clamp(72px, 10vw, 160px)/0.85 var(--hp-type-family); letter-spacing: -0.05em; font-variant-numeric: tabular-nums;
+  color: transparent; -webkit-text-stroke: max(1.5px, 0.012em) var(--hi-white); mix-blend-mode: difference;
+}
+.hp-10-big__n { display: block; }
+.hp-10-big.is-swap .hp-10-big__n { animation: hp-10-num var(--hp-dur-3) var(--hp-ease) both; }
+@keyframes hp-10-num { from { transform: translateY(100%); } to { transform: none; } }
+
+/* rijen */
+.hp-10-rows { border-bottom: 1px solid var(--hi-line-dark); }
+.hp-10-row { border-top: 1px solid var(--hi-line-dark); }
+.hp-10-link {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; column-gap: var(--hp-space-sm);
+  padding-block: 14px; color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent;
+}
+.hp-10-link:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 4px; }
+.hp-10-n { align-self: start; padding-top: 0.5em; font: 600 12px/1 var(--hp-type-family); letter-spacing: 0; color: var(--hi-titanium); font-variant-numeric: tabular-nums; transition: color var(--hp-dur-1) var(--hp-ease); }
+.hp-10-name { position: relative; display: block; font: italic 900 clamp(32px, 9vw, 120px)/0.92 var(--hp-type-family); letter-spacing: -0.05em; }
+.hp-10-name__out { display: block; padding-right: 0.08em; color: transparent; -webkit-text-stroke: max(1.5px, 0.012em) var(--hi-titanium); }
+.hp-10-name__fill { position: absolute; inset: 0; padding-right: 0.08em; color: var(--hi-white); clip-path: inset(-0.1em 100% -0.1em 0); transition: clip-path var(--hp-dur-2) var(--hp-ease); }
+.hp-10-chev {
+  display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--hi-line-dark); color: var(--hi-white);
+  transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), translate var(--hp-dur-1) var(--hp-ease), border-color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-10-chev svg { width: 14px; height: 14px; }
+.hp-10-text {
+  display: grid; max-width: 46ch; margin-left: calc(var(--hp-space-sm) + 2ch);
+  font-size: 15px; line-height: 1.5; color: var(--hi-titanium);
+  max-height: 0; overflow: hidden; opacity: 0; transition: max-height var(--hp-dur-2) var(--hp-ease), opacity var(--hp-dur-2) var(--hp-ease), padding var(--hp-dur-2) var(--hp-ease);
+}
+
+/* actieve rij */
+.hp-10-row.is-current .hp-10-name__fill { clip-path: inset(-0.1em -0.1em -0.1em 0); }
+.hp-10-row.is-current .hp-10-n { color: var(--hi-yellow); }
+.hp-10-row.is-current .hp-10-chev { background: var(--hi-white); border-color: var(--hi-white); color: var(--hi-black); }
+.hp-10-row.is-current .hp-10-text { max-height: 6em; opacity: 1; padding-bottom: var(--hp-space-sm); }
+@media (hover: hover) { .hp-10-link:hover .hp-10-chev { translate: 4px 0; } }
+.hp-10-link:active .hp-10-chev { translate: 4px 0; }
+
+.hp-10-cta { justify-self: start; }
+
+/* desktop: rijen links, beeld rechts en sticky */
+@media (min-width: 900px) {
+  .hp-10-inner { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); grid-template-rows: auto auto auto; column-gap: clamp(40px, 5vw, 96px); row-gap: var(--hp-space-ml); align-items: start; }
+  .hp-10-head { grid-column: 1; grid-row: 1; }
+  .hp-10-rows { grid-column: 1; grid-row: 2; }
+  .hp-10-cta { grid-column: 1; grid-row: 3; }
+  .hp-10-stage { grid-column: 2; grid-row: 1 / 4; position: sticky; top: var(--hp-space-md); max-height: none; height: min(80svh, 760px); aspect-ratio: auto; }
+  .hp-10-link { padding-block: 22px; }
+  .hp-10-name { font-size: clamp(44px, 5.8vw, 112px); }
+  .hp-10-text { font-size: 16px; }
+  .hp-10-chev { width: 56px; height: 56px; }
+}

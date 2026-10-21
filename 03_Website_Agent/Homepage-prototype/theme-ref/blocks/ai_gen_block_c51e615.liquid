@@ -1,0 +1,437 @@
+{% doc %}
+  @prompt
+    een sectie waar huidige klanten staan met voor elke klant een afbeelding met een kleine tekst erbij. het is bedoeld voor social proof. , in plaats van 6 klanten, nu 2 klanten, DE AFBEELDINGEN ZIJN AANPASBAAR TE VERSTELLEN IN DE GROTE, onder ''onze klanten'' moet nog een kleine zin komen 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-customer-showcase-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 0;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-customer-showcase-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-customer-showcase-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: {{ block.settings.spacing_below_heading }}px;
+  }
+
+  .ai-customer-showcase-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 {{ block.settings.spacing_below_title }}px 0;
+  }
+
+  .ai-customer-showcase-subheading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.subheading_color }};
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .ai-customer-showcase-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+  }
+
+  .ai-customer-showcase-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: {{ block.settings.item_padding }}px;
+    background-color: {{ block.settings.item_background_color }};
+    border-radius: {{ block.settings.item_border_radius }}px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-customer-showcase-item-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+  }
+
+  .ai-customer-showcase-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: {{ block.settings.image_max_width }}px;
+    margin-bottom: {{ block.settings.spacing_below_image }}px;
+  }
+
+  .ai-customer-showcase-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    object-fit: cover;
+  }
+
+  .ai-customer-showcase-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-customer-showcase-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-customer-showcase-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-customer-showcase-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-customer-showcase-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 0.8 }}px;
+    }
+
+    .ai-customer-showcase-subheading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subheading_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<customer-showcase-{{ ai_gen_id }}
+  class="ai-customer-showcase-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-customer-showcase-container-{{ ai_gen_id }}">
+    <div class="ai-customer-showcase-header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <{{ block.settings.heading_tag | default: "h2" }} class="ai-customer-showcase-title-{{ ai_gen_id }}">{{ block.settings.heading }}</{{ block.settings.heading_tag | default: "h2" }}>
+      {% endif %}
+      
+      {% if block.settings.subheading != blank %}
+        <div class="ai-customer-showcase-subheading-{{ ai_gen_id }}">
+          {{ block.settings.subheading }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-customer-showcase-grid-{{ ai_gen_id }}">
+      {% for i in (1..2) %}
+        {% liquid
+          assign customer_image_key = 'customer_' | append: i | append: '_image'
+          assign customer_text_key = 'customer_' | append: i | append: '_text'
+          assign customer_image = block.settings[customer_image_key]
+          assign customer_text = block.settings[customer_text_key]
+        %}
+
+        <div class="ai-customer-showcase-item-{{ ai_gen_id }}">
+          <div class="ai-customer-showcase-image-wrapper-{{ ai_gen_id }}">
+            {% if customer_image %}
+              <img
+                src="{{ customer_image | image_url: width: 800 }}"
+                alt="{{ customer_image.alt | escape }}"
+                loading="lazy"
+                width="{{ customer_image.width }}"
+                height="{{ customer_image.height }}"
+                class="ai-customer-showcase-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-customer-showcase-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if customer_text != blank %}
+            <div class="ai-customer-showcase-text-{{ ai_gen_id }}">
+              {{ customer_text }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</customer-showcase-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomerShowcase{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('customer-showcase-{{ ai_gen_id }}', CustomerShowcase{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Customer showcase",
+  "tag": null,
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h2" },
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "<p>Onze klanten</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Vertrouwd door toonaangevende bedrijven</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "label": "Subheading size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "spacing_below_title",
+      "label": "Space below heading",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "spacing_below_heading",
+      "label": "Space below subheading",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Customer 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "customer_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "customer_1_text",
+      "label": "Text",
+      "default": "<p>Bedrijfsnaam of beschrijving</p>"
+    },
+    {
+      "type": "header",
+      "content": "Customer 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "customer_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "richtext",
+      "id": "customer_2_text",
+      "label": "Text",
+      "default": "<p>Bedrijfsnaam of beschrijving</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Space between items",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "label": "Item padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "label": "Item border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "range",
+      "id": "image_max_width",
+      "label": "Image max width",
+      "min": 100,
+      "max": 600,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Image border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "spacing_below_image",
+      "label": "Space below image",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer showcase"
+    }
+  ]
+}
+{% endschema %}

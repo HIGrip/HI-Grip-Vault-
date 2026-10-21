@@ -1,0 +1,97 @@
+/* 02 PRODUCT · drie witte kaarten op off-white. De hele kaart is de link; het tweede beeld veegt erin bij hover,
+   bij focus of via de flip-knop (touch). Mobiel: compacte lijst met beeld links, desktop: drie kolommen op één rij. */
+.hp-02 { background: var(--hi-offwhite); color: var(--hi-black); padding-block: var(--hp-space-lg); }
+
+.hp-02-inner { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: var(--hp-space-md); }
+.hp-02-head { display: grid; gap: var(--hp-space-sm); }
+.hp-02-lead { font-size: var(--hp-type-lead); line-height: 1.5; max-width: 40ch; color: var(--hi-graphite); }
+.hp-02-cta { justify-self: start; }
+
+/* lijst en kaart (mobiel: beeld links, tekst rechts) */
+.hp-02-list { display: grid; gap: 12px; }
+.hp-02-card { position: relative; border-radius: var(--hp-radius-media); background: var(--hi-white); transition: box-shadow var(--hp-dur-2) var(--hp-ease); }
+.hp-02-card__link {
+  display: grid; grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+  grid-template-areas: "media head" "media line" "media meta";
+  grid-template-rows: auto auto 1fr;
+  column-gap: var(--hp-space-sm);
+  padding: var(--hp-space-xs) var(--hp-space-sm) var(--hp-space-xs) var(--hp-space-xs);
+  border-radius: inherit; text-decoration: none; color: inherit;
+}
+.hp-02-card__link:focus-visible { outline-offset: 3px; }
+
+.hp-02-card__media { grid-area: media; position: relative; overflow: hidden; aspect-ratio: 1; align-self: center; border-radius: calc(var(--hp-radius-media) - var(--hp-space-xs)); background: var(--hi-white); }
+.hp-02-card__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; filter: brightness(1.015); }
+/* brightness: de studiogrond van de foto's (253–254) wordt puur wit, zodat beeld en kaart één vlak zijn */
+.hp-02-card__img--wide { object-fit: cover; }
+.hp-02-card__img--front { transition: transform var(--hp-dur-2) var(--hp-ease); }
+.hp-02-card__img--back { clip-path: inset(0 0 0 100%); transform: scale(1.06); transition: clip-path var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease); }
+
+.hp-02-card__head { grid-area: head; display: grid; gap: 2px; padding-top: var(--hp-space-sm); }
+.hp-02-card__name { font-weight: 700; font-size: 14px; line-height: 1.25; letter-spacing: 0; text-wrap: pretty; }
+.hp-02-card__price { font-weight: 700; font-size: 15px; font-variant-numeric: tabular-nums; }
+.hp-02-card__line { grid-area: line; padding-top: 6px; font-size: var(--hp-type-small); line-height: 1.45; color: var(--hi-graphite); }
+.hp-02-card__meta { grid-area: meta; align-self: end; display: grid; gap: 4px; padding-block: var(--hp-space-xs) var(--hp-space-xs); font-size: var(--hp-type-label); line-height: 1.4; color: var(--hi-graphite); }
+.hp-02-card__color { display: inline-flex; align-items: center; gap: var(--hp-space-xs); }
+.hp-02-card__swatch { flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--hi-white); box-shadow: inset 0 0 0 1px var(--hi-graphite); }
+.hp-02-card__swatch--black { background: var(--hi-black); box-shadow: none; }
+.hp-02-card__packs { color: var(--hi-black); font-weight: 600; }
+.hp-02-card__label { font-weight: 600; color: var(--hi-black); text-transform: uppercase; letter-spacing: var(--hp-type-track-label); margin-right: 2px; }
+
+/* flip-knop (touch): wisselt het beeld zonder te navigeren */
+.hp-02-flip {
+  position: absolute; z-index: 2; top: var(--hp-space-xs); left: var(--hp-space-xs);
+  display: grid; place-items: center; width: 44px; height: 44px; padding: 0;
+  border: 1px solid var(--hi-line); border-radius: 50%; background: var(--hi-white); color: var(--hi-black); cursor: pointer;
+  transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), transform var(--hp-dur-1) var(--hp-ease);
+}
+.hp-02-flip svg { width: 18px; height: 18px; transition: transform var(--hp-dur-2) var(--hp-ease); }
+.hp-02-flip[aria-pressed="true"] { background: var(--hi-black); color: var(--hi-white); border-color: var(--hi-black); }
+.hp-02-flip[aria-pressed="true"] svg { transform: rotate(180deg); }
+.hp-02-flip:active { transform: scale(0.94); }
+
+/* tweede beeld: tik (is-flipped), toetsenbordfocus, hover */
+.hp-02-card.is-flipped .hp-02-card__img--back,
+.hp-02-card__link:focus-visible .hp-02-card__img--back { clip-path: inset(0); transform: scale(1); }
+.hp-02-card.is-flipped .hp-02-card__img--front,
+.hp-02-card__link:focus-visible .hp-02-card__img--front { transform: translateX(-6%) scale(0.96); }
+
+@media (hover: hover) {
+  .hp-02-card:hover { box-shadow: 0 24px 48px -28px var(--hi-scrim); }
+  .hp-02-card:hover .hp-02-card__img--back { clip-path: inset(0); transform: scale(1); }
+  .hp-02-card:hover .hp-02-card__img--front { transform: translateX(-6%) scale(0.96); }
+}
+/* Met een muis doen hover en focus het werk; de knop is er voor touch. */
+@media (hover: hover) and (pointer: fine) {
+  .hp-02-flip { display: none; }
+}
+
+@media (min-width: 769px) {
+  .hp-02 { padding-block: var(--hp-space-xl); }
+  .hp-02-inner { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "head cta" "list list"; row-gap: var(--hp-space-ml); column-gap: var(--hp-space-lg); }
+  .hp-02-head { grid-area: head; }
+  .hp-02-lead { max-width: 48ch; }
+  .hp-02-cta { grid-area: cta; align-self: end; }
+  .hp-02-list { grid-area: list; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto auto auto 1fr; column-gap: var(--hp-space-ms); row-gap: 0; }
+
+  /* subgrid: naam, regel en meta staan in alle drie de kaarten op dezelfde hoogte */
+  .hp-02-card { grid-row: span 4; display: grid; grid-template-rows: subgrid; }
+  .hp-02-card__link {
+    grid-row: 1 / -1; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid;
+    grid-template-areas: none; row-gap: 0; padding: var(--hp-space-sm) var(--hp-space-sm) var(--hp-space-ms);
+  }
+  .hp-02-card__media, .hp-02-card__head, .hp-02-card__line, .hp-02-card__meta { grid-area: auto; }
+  .hp-02-card__media { aspect-ratio: 5 / 4; align-self: stretch; }
+  .hp-02-card__head { grid-template-columns: minmax(0, 1fr) auto; align-items: start; column-gap: var(--hp-space-sm); padding: var(--hp-space-ms) var(--hp-space-xs) 0; }
+  .hp-02-card__name { font-size: 15px; }
+  .hp-02-card__price { font-size: 16px; }
+  .hp-02-card__line { padding: var(--hp-space-xs) var(--hp-space-xs) 0; font-size: 14px; max-width: 42ch; }
+  .hp-02-card__meta { padding: var(--hp-space-sm) var(--hp-space-xs) 0; font-size: var(--hp-type-small); }
+  .hp-02-flip { left: auto; right: var(--hp-space-ms); top: var(--hp-space-ms); }
+}
+
+@media (min-width: 1200px) {
+  .hp-02-head { grid-template-columns: auto minmax(0, 1fr); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-02-lead { padding-bottom: 0.3em; }
+  .hp-02-card__name { font-size: 16px; }
+}

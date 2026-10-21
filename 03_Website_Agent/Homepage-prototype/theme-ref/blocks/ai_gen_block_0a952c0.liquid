@@ -1,0 +1,232 @@
+{% doc %}
+  @prompt
+    ruimte voor een kleine tekst met sportief design, geef meerdere van die strepen en haal de kop weg, uitlijnen in het midden, haal de strepen weg en zorg dat als je erop scrollt dat de tekst popt en als je weggaat dat de tekst langzaam verdwijnt
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-sport-text-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding }}px;
+    background: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .ai-sport-text-content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 1;
+    text-align: {{ block.settings.text_alignment }};
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity {{ block.settings.fade_duration }}s ease, transform {{ block.settings.pop_duration }}s ease;
+  }
+
+  .ai-sport-text-{{ ai_gen_id }}.is-visible .ai-sport-text-content-{{ ai_gen_id }} {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .ai-sport-text-body-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-sport-text-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-sport-text-body-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.text_size }}px * 0.9);
+    }
+  }
+{% endstyle %}
+
+<scroll-reveal-{{ ai_gen_id }} class="ai-sport-text-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-sport-text-content-{{ ai_gen_id }}">
+    {% if block.settings.text != blank %}
+      <div class="ai-sport-text-body-{{ ai_gen_id }}">{{ block.settings.text }}</div>
+    {% endif %}
+  </div>
+</scroll-reveal-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ScrollReveal{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.observer = null;
+      }
+
+      connectedCallback() {
+        this.setupObserver();
+      }
+
+      setupObserver() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.2
+        };
+
+        this.observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              this.classList.add('is-visible');
+            } else {
+              this.classList.remove('is-visible');
+            }
+          });
+        }, options);
+
+        this.observer.observe(this);
+      }
+
+      disconnectedCallback() {
+        if (this.observer) {
+          this.observer.disconnect();
+        }
+      }
+    }
+
+    customElements.define('scroll-reveal-{{ ai_gen_id }}', ScrollReveal{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Scroll tekst animatie",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Inhoud"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Tekst",
+      "default": "<p>Ontdek onze collectie en til je sport naar een hoger niveau met de beste grip en comfort.</p>"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop breedte",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Typografie"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Tekst grootte",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Tekst uitlijning",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Achtergrond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekst kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "range",
+      "id": "pop_duration",
+      "label": "Pop snelheid",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.1,
+      "unit": "s",
+      "default": 0.5
+    },
+    {
+      "type": "range",
+      "id": "fade_duration",
+      "label": "Vervagen snelheid",
+      "min": 0.1,
+      "max": 2,
+      "step": 0.1,
+      "unit": "s",
+      "default": 0.8
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "label": "Binnenruimte",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Hoekafronding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll tekst animatie"
+    }
+  ]
+}
+{% endschema %}

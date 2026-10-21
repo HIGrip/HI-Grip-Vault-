@@ -1,0 +1,12 @@
+{
+  "id": "03",
+  "name": "tussensectie",
+  "bg": "--hi-white",
+  "assets": [],
+  "links": ["https://nl.trustpilot.com/review/higrip.nl"],
+  "interactions": [
+    "Trustpilot-link: onderstreping gaat van lijnkleur naar zwart bij hover (desktop), toetsenbordfocus en tik (:active)",
+    "link opent in een nieuw tabblad (externe bron)"
+  ],
+  "notes": "Lage strook (padding-block --hp-space-md in plaats van de sectiepadding). Desktop: drie feiten op één regel, gecentreerd, gescheiden door een dunne verticale lijn (--hi-line). Mobiel: onder elkaar, gecentreerd. Ster als tekstteken in --hi-trust, 16px, aria-hidden. Cijfers (3500+, 4,6, 1 werkdag) in 700 zwart, rest graphite; geen volt, geen iconen, geen CTA. Geen JS. Extra shots: 1440-context.png en 375-context.png (met buurstroken). Niets ontbrak in het contract."
+}

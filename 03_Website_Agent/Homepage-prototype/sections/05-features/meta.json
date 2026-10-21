@@ -1,0 +1,29 @@
+{
+  "id": "05",
+  "name": "features",
+  "bg": "--hi-studio",
+  "assets": ["frames360"],
+  "links": ["https://www.higrip.nl/products/performance-gripsokken-2-0-zwart"],
+  "interactions": [
+    "hover op een feature (muis) of tik/Enter: het 360°-beeld draait en zoomt in --hp-dur-3 naar de preset, de feature wordt actief (zwarte lijn groeit, nummer zwart met volt cijfer, andere namen grijs) en op zones met een vaste plek verschijnt een zwarte ring met het nummer",
+    "compressie en Coolmax® (preset totaal): één rondgang naar frame 0 op 100%, omdat ze in de hele sok zitten",
+    "slepen op het beeld (pointer events, touch-action pan-y): draait vrij met korte uitrol; zoom blijft staan, actieve feature en ring vervallen",
+    "pijltjes links/rechts op het beeld (role=slider, aria-valuetext in graden): één frame (ca. 5°); Home = hele sok",
+    "knop 'Hele sok': terug naar preset totaal (frame 0, 100%)",
+    "scroll: tot de eerste interactie draait de sok mee (±90° rond frame 0 terwijl het beeld door het scherm gaat)",
+    "draaischijf onder het beeld: streepje toont de hoek",
+    "mobiel (≤768px, ≥640px hoog): beeld sticky bovenaan, features scrollen eronder, zodat een tik direct zichtbaar is",
+    "frames: alleen s000 staat in de HTML (lazy); de rest laadt via hpInView als de sectie binnen één schermhoogte komt, presets eerst, max 4 tegelijk",
+    "reduced motion: geen scrolldraai, geen rondgang of uitrol, presets springen direct, slepen en pijltjes werken"
+  ],
+  "feature_presets": {
+    "compressie": "totaal: compressie werkt over de hele sok; er is geen preset voor de schacht, dus één rondgang op 100% en geen punt",
+    "coolmax": "totaal: 30% Coolmax zit in het garen van de hele sok, niet in één zone; één rondgang, geen punt",
+    "ademend": "ademend (frame 300): open structuur bovenop de voet; ring op het mesh-vlak",
+    "naadloos": "teen (frame 336): 'naadloze teenzone'; ring op de teen",
+    "hiel": "hiel (frame 6): ring op de hielkap",
+    "grip": "grip (frame 96): onderkant met siliconen zones; ring op het patroon",
+    "cushioning": "grip (frame 96): 'dempingzones onder je voet' = de onderkant; de vault noemt geen exacte plek (r121 werkomschrijving), dus zonder ring"
+  },
+  "notes": "Opbouw: kop + lead, daaronder 4 features links (1–4), het 360°-beeld midden, 3 features rechts (5–7) met het koopblok als vierde rij (prijs €17,95 en 'Zwart of wit', pill 'Shop de 2.0' naar 2.0 zwart). Het beeld heeft geen kader: de canvas en het fallback-beeld krijgen een zachte linear-gradient-masker aan de randen, omdat de randen van frame 0–204 iets lichter zijn (≈253) dan --hi-studio (247); op desktop loopt het podium onder de kolommen door. Zoom in het beeld gaat alleen via de presets; wiel- en knijpzoom uit QL6 zijn bewust weggelaten (zouden pagina-scroll en browserzoom kapen). Markeerpunten (mark) zijn door mij op de frames geplaatst, niet uit de vault; cushioning-zone blijft open tot Lars r121 bevestigt. De frames tonen de witte 2.0 (alt zegt 'in wit'), de CTA gaat naar de zwarte 2.0 zoals de brief vraagt."
+}

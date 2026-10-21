@@ -1,0 +1,191 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "hg-contact-hero",
+      "blocks": {
+        "ch_mail": {
+          "type": "channel",
+          "settings": {
+            "style": "main",
+            "label": "Klantenservice · bestelling, maat, retour",
+            "icon": "mail",
+            "title": "Mail ons",
+            "value": "info@higrip.nl",
+            "text": "Zet je ordernummer erbij. Dan hoeven we niet terug te vragen.",
+            "button_label": "Mail",
+            "button_link": "mailto:info@higrip.nl",
+            "button_style": "dark",
+            "new_tab": false,
+            "show_copy": true
+          }
+        },
+        "ch_tel": {
+          "type": "channel",
+          "settings": {
+            "style": "dark",
+            "label": "Liever bellen",
+            "icon": "phone",
+            "title": "Bel ons",
+            "value": "+31 6 24 56 65 47",
+            "text": "Liever direct iemand spreken? Bel ons.",
+            "button_label": "Bel",
+            "button_link": "tel:+31624566547",
+            "button_style": "light",
+            "new_tab": false,
+            "show_copy": true
+          }
+        },
+        "ch_biz": {
+          "type": "channel",
+          "settings": {
+            "style": "dark",
+            "label": "Retailer of sportclub",
+            "icon": "building",
+            "title": "HÏ Grip Zakelijk",
+            "value": "",
+            "text": "Gripsokken in je winkel of voor je hele team? Daar is een eigen route voor.",
+            "button_label": "Zakelijk",
+            "button_link": "/pages/zakelijk",
+            "button_style": "ghost",
+            "new_tab": false,
+            "show_copy": false
+          }
+        }
+      },
+      "block_order": [
+        "ch_mail",
+        "ch_tel",
+        "ch_biz"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Neem contact op",
+        "heading_tag": "h1",
+        "lead": "Mail, bel of stuur een bericht. We helpen je verder.",
+        "text_align": "default",
+        "cta_label": "Stuur bericht",
+        "cta_link": "#formulier",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "copy_label": "Kopieer",
+        "copied_label": "Gekopieerd",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "heading_color": "",
+        "animate": true,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "form": {
+      "type": "hg-contact-form",
+      "blocks": {
+        "t1": {
+          "type": "tip",
+          "settings": {
+            "title": "Bestelling of retour?",
+            "text": "Je ordernummer scheelt een mailtje heen en weer."
+          }
+        },
+        "t2": {
+          "type": "tip",
+          "settings": {
+            "title": "Twijfel over je maat?",
+            "text": "Noem je schoenmaat en je sport."
+          }
+        },
+        "t3": {
+          "type": "tip",
+          "settings": {
+            "title": "Zakelijk?",
+            "text": "Vertel om hoeveel paar en welke club of winkel het gaat."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "settings": {
+        "eyebrow": "",
+        "heading": "Stuur je bericht",
+        "lead": "Kies waar het over gaat. Dan ligt je vraag meteen bij de juiste persoon.",
+        "text_align": "default",
+        "subject_legend": "Waar gaat het over?",
+        "subjects": "Mijn bestelling\nMaat of advies\nRetour of ruil\nZakelijk\nPers of samenwerking\nAnders",
+        "order_for": "1,3",
+        "business_for": "4",
+        "business_hint": "<p>Retailer of club? Op <a href=\"/pages/zakelijk\">HÏ Grip Zakelijk</a> lees je eerst hoe het werkt. Je mag ook hier je aanvraag sturen.</p>",
+        "name_label": "Je naam",
+        "email_label": "Je e-mailadres *",
+        "email_error": "Vul een geldig e-mailadres in, bijvoorbeeld naam@domein.nl.",
+        "order_label": "Ordernummer",
+        "order_help": "Staat in je bevestigingsmail. Geen ordernummer? Laat leeg.",
+        "message_label": "Je bericht *",
+        "message_error": "Schrijf kort wat je vraag is.",
+        "privacy_text": "<p>Ik ga akkoord met het <a href=\"/pages/privacybeleid\">privacybeleid</a>.</p>",
+        "privacy_error": "Vink aan dat je akkoord gaat met het privacybeleid.",
+        "submit_label": "Verstuur",
+        "success_title": "Bericht ontvangen",
+        "success_text": "Bedankt, we hebben je bericht. We komen bij je terug via je e-mail.",
+        "error_title": "Er ging iets mis",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#000000",
+        "eyebrow_color": "#000000",
+        "padding_top": 112,
+        "padding_bottom": 112,
+        "padding_top_mobile": 72,
+        "padding_bottom_mobile": 72
+      }
+    },
+    "help": {
+      "type": "hg-contact-help",
+      "settings": {
+        "question": "Verzending, retour of maten?",
+        "answer": "Het antwoord staat waarschijnlijk al in de FAQ.",
+        "button_label": "Naar de FAQ",
+        "button_link": "/pages/veelgestelde-vragen",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "company": "HÏ Grip",
+        "address": "IJsseldijk-Noord 48, 2935 BH Ouderkerk aan den IJssel",
+        "text_align": "default",
+        "bg_color": "{{ settings.color_palette.foreground }}",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "form",
+    "help"
+  ]
+}

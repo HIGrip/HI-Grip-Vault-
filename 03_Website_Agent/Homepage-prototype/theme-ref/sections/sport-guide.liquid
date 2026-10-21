@@ -1,0 +1,336 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- assign s = section.settings -%}
+{%- assign tag = s.heading_tag | default: 'h2' -%}
+{%- assign faq_blocks = section.blocks | where: 'type', 'faq' -%}
+{%- assign rows = section.blocks | where: 'type', 'row' -%}
+
+{% comment %}
+  Sport — koopgids + FAQ in één sectie.
+  Opbouw: (1) kop + intro, (2) "Kort antwoord" als donker statement-vlak met optionele foto en
+  schuine accentstreep, (3) genummerde vragen als grote tikbare rijen, gegroepeerd per onderwerp
+  (open rij = accentvlak), met de vergelijkingstabel op de plek van de eerste tabelrij,
+  (4) club-CTA in accentkleur, (5) bronnen.
+  Alle vragen komen in één FAQPage-schema. Inhoud staat in de HTML (details), dus ook zichtbaar
+  voor crawlers en AI-zoekmachines. Zonder foto werkt het statement-vlak ook (volle breedte).
+{% endcomment %}
+
+<style>
+  .sl-gf .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .sl-gf { --gf-hi: var(--sl-accent); padding-block: clamp(56px, 8vw, 112px); overflow: clip; }
+  .sl-gf[data-accent='blue'] { --gf-hi: #7b8bff; }
+  .sl-gf__wrap { display: grid; gap: clamp(32px, 5vw, 64px); }
+
+  /* 0. Fotoband boven de kop */
+  .sl-gf__banner { position: relative; margin: 0; aspect-ratio: 21 / 8; overflow: hidden; border-radius: var(--sl-radius); border-bottom: 8px solid var(--sl-accent); background: #151515; }
+  .sl-gf__banner img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: var(--sl-focus, 50% 50%); }
+  .sl-gf__banner--bw img { filter: grayscale(1) contrast(1.05); }
+  .sl-gf__banner::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,10,10,0) 45%, rgba(10,10,10,.55) 100%); pointer-events: none; }
+  @media (max-width: 599px) { .sl-gf__banner { aspect-ratio: 16 / 9; } }
+
+  /* 1. Kop */
+  .sl-gf__head { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px clamp(28px, 6vw, 88px); align-items: end; }
+  .sl-gf__title { margin: 0; font-size: clamp(32px, 5.2vw, 68px); line-height: 1.02; font-weight: 900; font-style: italic; letter-spacing: -.045em; text-transform: uppercase; text-wrap: balance; padding-bottom: .06em; color: var(--sl-ink); }
+  .sl-gf__title::after { content: ''; display: block; width: 96px; height: 10px; margin-top: 22px; background: var(--sl-accent); transform: skewX(-24deg); box-shadow: 0 0 0 1px rgba(10,10,10,.18); }
+  .sl-gf__head--solo { grid-template-columns: minmax(0, 1fr); }
+  .sl-gf__head--solo .sl-gf__title { max-width: 22ch; }
+  .sl-gf__head .sl__eyebrow { margin-bottom: 18px; }
+  .sl-gf__head .sl__lead { max-width: 44ch; }
+
+  /* 2. Kort antwoord */
+  .sl-gf__answer { --gf-slant: 64px; position: relative; display: block; min-height: 340px; background: var(--sl-accent); border-radius: var(--sl-radius); overflow: hidden; isolation: isolate; }
+  .sl-gf__answer-t { position: relative; z-index: 2; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; min-height: 340px; padding: clamp(32px, 4.5vw, 64px); background: #0a0a0a; color: #fff; }
+  .sl-gf--photo .sl-gf__answer-t { width: 64%; padding-right: calc(var(--gf-slant) + 24px); clip-path: polygon(0 0, 100% 0, calc(100% - var(--gf-slant)) 100%, 0 100%); }
+  .sl-gf__answer-l { align-self: flex-start; margin: 0 0 22px; padding: 7px 14px; background: var(--sl-accent); color: var(--sl-accent-ink); font-size: 12px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; transform: skewX(-12deg); }
+  .sl-gf__answer-l span { display: inline-block; transform: skewX(12deg); }
+  .sl-gf__answer-p { font-size: clamp(18px, 2vw, 26px); line-height: 1.45; font-weight: 600; letter-spacing: -.012em; max-width: 36em; }
+  .sl-gf__answer-p p { margin: 0 0 .7em; }
+  .sl-gf__answer-p p:last-child { margin-bottom: 0; }
+  .sl-gf__answer-p strong, .sl-gf__answer-p b { font-weight: 800; color: var(--gf-hi); }
+  .sl-gf__answer-p a { color: #fff; text-decoration-color: var(--gf-hi); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .sl-gf__answer-m { position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; left: calc(64% - 38px); margin: 0; background: #151515; clip-path: polygon(var(--gf-slant) 0, 100% 0, 100% 100%, 0 100%); }
+  .sl-gf__answer-m picture, .sl-gf__answer-m img { display: block; width: 100%; height: 100%; }
+  .sl-gf__answer-m img { object-fit: cover; object-position: var(--sl-focus, 50% 45%); }
+
+  /* 3. Vragen */
+  .sl-gf__list { counter-reset: gf; display: grid; gap: 0; }
+  .sl-gf__label { margin: 0; padding: 28px 0 12px; font-size: 13px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: var(--sl-soft); }
+  .sl-gf__label:first-child { padding-top: 0; }
+  .sl-gf__items { min-width: 0; border-top: 2px solid var(--sl-ink); }
+
+  .sl-gf__item { counter-increment: gf; border-bottom: 1px solid var(--sl-line); }
+  .sl-gf__item summary { display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; align-items: center; gap: 0 12px; min-height: 76px; padding: 16px 16px 16px 0; cursor: pointer; list-style: none; transition: background-color .2s ease, padding .2s ease, color .2s ease; }
+  .sl-gf__item summary::-webkit-details-marker { display: none; }
+  .sl-gf__item summary::before { content: counter(gf, decimal-leading-zero); padding-left: 14px; font-size: 20px; font-weight: 900; font-style: italic; letter-spacing: -.04em; line-height: 1; color: var(--sl-soft); transition: color .2s ease; }
+  .sl-gf__item summary::after { content: ''; justify-self: end; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--sl-ink); background:
+      linear-gradient(currentColor, currentColor) center / 14px 2.5px no-repeat,
+      linear-gradient(currentColor, currentColor) center / 2.5px 14px no-repeat;
+    transition: transform .25s ease, background-color .2s ease, border-color .2s ease; }
+  .sl-gf__q { margin: 0; font-size: clamp(16px, 1.5vw, 19px); font-weight: 700; line-height: 1.3; letter-spacing: -.012em; text-transform: none; color: inherit; }
+  .sl-gf__item[open] summary { background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-gf__item[open] summary::before { color: var(--sl-accent-ink); }
+  .sl-gf__item[open] summary::after { transform: rotate(45deg); border-color: var(--sl-accent-ink); }
+  .sl-gf__item summary:focus-visible { outline: 3px solid var(--sl-ink); outline-offset: -3px; }
+  @media (hover: hover) {
+    .sl-gf__item:not([open]) summary:hover { background: color-mix(in srgb, var(--sl-accent) 16%, var(--sl-ground)); padding-left: 10px; }
+    .sl-gf__item:not([open]) summary:hover::before { color: var(--sl-ink); }
+    .sl-gf__item:not([open]) summary:hover::after { background-color: var(--sl-accent); }
+  }
+
+  .sl-gf__a { margin: 0; padding: clamp(20px, 2.4vw, 30px) clamp(16px, 3vw, 40px) clamp(24px, 2.8vw, 34px) 68px; background: var(--sl-surface); font-size: 16px; line-height: 1.7; color: var(--sl-ink); }
+  .sl-gf__a > * { max-width: 64ch; }
+  .sl-gf__a p { margin: 0 0 .9em; }
+  .sl-gf__a p:last-child, .sl-gf__a ul:last-child { margin-bottom: 0; }
+  .sl-gf__a ul { margin: 0 0 .9em; padding-left: 1.2em; }
+  .sl-gf__a li { margin: 0 0 .5em; }
+  .sl-gf__a a { color: var(--sl-ink); text-decoration: underline; text-decoration-color: var(--sl-accent); text-decoration-thickness: 3px; text-underline-offset: 3px; }
+  .sl-gf__a a:hover { background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-gf__a a:focus-visible { outline: 3px solid var(--sl-ink); outline-offset: 3px; }
+
+  .sl-gf__more { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 8px; padding: 22px 16px 22px 0; border-bottom: 2px solid var(--sl-ink); font-size: clamp(15px, 1.4vw, 18px); font-weight: 800; letter-spacing: -.01em; text-transform: uppercase; color: var(--sl-ink); text-decoration: none; }
+  .sl-gf__more-arrow { flex-shrink: 0; display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sl-accent); color: var(--sl-accent-ink); font-size: 18px; transition: transform .2s ease; }
+  .sl-gf__more:hover .sl-gf__more-arrow { transform: translateX(4px); }
+  .sl-gf__more:focus-visible { outline: 3px solid var(--sl-ink); outline-offset: 3px; }
+
+  /* Vergelijkingstabel */
+  .sl-gf__a--table { padding-right: clamp(16px, 3vw, 40px); }
+  .sl-gf__a--table > .sl-gf__table-wrap { max-width: none; }
+  .sl-gf__table-wrap { margin: 0; overflow-x: auto; border-radius: var(--sl-radius); background: var(--sl-ground); box-shadow: 0 0 0 1px var(--sl-line); }
+  .sl-gf__table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.45; }
+  .sl-gf__table th, .sl-gf__table td { padding: 14px 18px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--sl-line); }
+  .sl-gf__table thead th { padding-block: 16px; background: #0a0a0a; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; border-bottom: 0; }
+  .sl-gf__table thead th:last-child { background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-gf__table tbody th { width: 24%; font-weight: 800; }
+  .sl-gf__table tbody td { color: var(--sl-soft); }
+  .sl-gf__table tbody td:last-child { background: color-mix(in srgb, var(--sl-accent) 18%, var(--sl-ground)); color: var(--sl-ink); font-weight: 700; }
+  .sl-gf__table tbody tr:last-child th, .sl-gf__table tbody tr:last-child td { border-bottom: 0; }
+
+  /* 4. CTA */
+  .sl-gf__cta { position: relative; isolation: isolate; overflow: hidden; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between; padding: clamp(32px, 5vw, 64px); border-radius: var(--sl-radius); background: var(--sl-accent); color: var(--sl-accent-ink); }
+  .sl-gf__cta::before { content: ''; position: absolute; z-index: -1; right: -2%; bottom: 0; width: min(46%, 420px); aspect-ratio: 1.15 / 1; background: color-mix(in srgb, var(--sl-accent-ink) 14%, transparent); clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  .sl-gf__cta h3 { margin: 0 0 10px; max-width: 18em; font-size: clamp(24px, 3.2vw, 42px); font-weight: 900; font-style: italic; letter-spacing: -.04em; text-transform: uppercase; line-height: 1.05; padding-bottom: .06em; color: inherit; text-wrap: balance; }
+  .sl-gf__cta p { margin: 0; max-width: 44ch; font-size: 16px; line-height: 1.55; font-weight: 500; color: inherit; }
+  .sl-gf__cta .sl__btn { background: #0a0a0a; color: var(--sl-btn-ink); }
+  .sl-gf__cta .sl__btn:focus-visible { outline-color: var(--sl-accent-ink); }
+  .sl-gf__cta a:focus-visible { outline-color: var(--sl-accent-ink); }
+  .sl-gf__cta-main { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; min-width: 0; }
+  .sl-gf__proof { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-inline-start: auto; padding: 22px 28px; border-radius: var(--sl-radius); background: #fff; color: #0a0a0a; text-decoration: none; box-shadow: 0 10px 30px rgba(0, 0, 0, .18); }
+  .sl-gf__proof-l { margin: 0; font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; color: #55524c; text-align: center; }
+  .sl-gf__proof img { display: block; width: auto; max-width: min(220px, 100%); max-height: 64px; height: auto; object-fit: contain; }
+
+  /* 5. Bronnen */
+  .sl-gf__sources { margin: 0; padding: 20px 0 0; border-top: 1px solid var(--sl-line); font-size: 13px; line-height: 1.7; color: var(--sl-soft); }
+  .sl-gf__sources p { margin: 0 0 .5em; }
+  .sl-gf__sources a { color: var(--sl-ink); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 899px) {
+    .sl-gf__head { grid-template-columns: minmax(0, 1fr); }
+    .sl-gf__answer { --gf-slant: 0px; min-height: 0; display: flex; flex-direction: column; }
+    .sl-gf__answer::before { content: ''; order: 0; display: none; }
+    .sl-gf__answer-m { position: relative; order: -1; left: 0; clip-path: none; aspect-ratio: 16 / 10; border-bottom: 8px solid var(--sl-accent); }
+    .sl-gf--photo .sl-gf__answer-t { width: auto; padding-right: clamp(20px, 5vw, 32px); clip-path: none; }
+    .sl-gf__answer-t { min-height: 0; padding: 28px clamp(20px, 5vw, 32px) 32px; }
+  }
+  @media (max-width: 599px) {
+    .sl-gf__item summary { grid-template-columns: 40px minmax(0, 1fr) 36px; gap: 0 8px; padding-right: 10px; min-height: 68px; }
+    .sl-gf__item summary::before { padding-left: 8px; font-size: 16px; }
+    .sl-gf__item summary::after { width: 34px; height: 34px; }
+    .sl-gf__a { padding-left: 16px; padding-right: 16px; }
+    .sl-gf__table { table-layout: fixed; font-size: 12px; }
+    .sl-gf__table th, .sl-gf__table td { overflow-wrap: break-word; }
+    .sl-gf__table th, .sl-gf__table td { padding: 11px 6px; }
+    .sl-gf__table thead th { font-size: 10.5px; letter-spacing: .06em; }
+    .sl-gf__table thead th:first-child, .sl-gf__table tbody th { width: 26%; }
+    .sl-gf__table thead th:nth-child(2) { width: 41%; }
+    .sl-gf__table td, .sl-gf__table tbody th { letter-spacing: -.015em; }
+    .sl-gf__cta .sl__btn { width: 100%; }
+    .sl-gf__cta-main { width: 100%; }
+    .sl-gf__proof { margin-inline-start: 0; width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) { .sl-gf__item summary, .sl-gf__item summary::after, .sl-gf__item summary::before { transition: none !important; } }
+</style>
+
+<section class="sl sl-gf{% if s.image != blank %} sl-gf--photo{% endif %}" id="koopgids" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground)); --sl-surface: color-mix(in srgb, var(--sl-ink) 8%, var(--sl-ground)); --sl-line: color-mix(in srgb, var(--sl-ink) 22%, transparent);{% endif %}">
+  <div class="sl__wrap sl-gf__wrap">
+
+    {%- if s.banner_image != blank -%}
+      <figure class="sl-gf__banner{% if s.banner_bw %} sl-gf__banner--bw{% endif %}" style="--sl-focus: {{ s.banner_focus | default: '50% 50%' }};">
+        {{ s.banner_image | image_url: width: 1800 | image_tag: loading: 'lazy', decoding: 'async', sizes: '(min-width: 1320px) 1200px, 100vw', widths: '600, 900, 1200, 1800', alt: s.banner_image.alt | default: s.heading }}
+      </figure>
+    {%- endif -%}
+
+    <div class="sl-gf__head{% if s.lead == blank %} sl-gf__head--solo{% endif %}">
+      <div>
+        {%- if s.eyebrow != blank -%}<p class="sl__eyebrow">{{ s.eyebrow }}</p>{%- endif -%}
+        <{{ tag }} class="sl-gf__title">{{ s.heading }}</{{ tag }}>
+      </div>
+      {%- if s.lead != blank -%}<p class="sl__lead">{{ s.lead }}</p>{%- endif -%}
+    </div>
+
+    {%- if s.summary != blank -%}
+      <div class="sl-gf__answer">
+        <div class="sl-gf__answer-t">
+          <p class="sl-gf__answer-l"><span>{{ s.summary_label | default: 'Kort antwoord' }}</span></p>
+          <div class="sl-gf__answer-p">{{ s.summary }}</div>
+        </div>
+        {%- if s.image != blank -%}
+          <figure class="sl-gf__answer-m"{% if s.image_focus != blank %} style="--sl-focus: {{ s.image_focus }};"{% endif %}>
+            {{ s.image | image_url: width: 1400 | image_tag: loading: 'lazy', decoding: 'async', sizes: '(min-width: 900px) 45vw, 100vw', widths: '600, 900, 1200, 1400', alt: s.image.alt | default: s.heading }}
+          </figure>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    <div class="sl-gf__list">
+      <div class="sl-gf__items">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'category' -%}
+            <p class="sl-gf__label" {{ block.shopify_attributes }}>{{ block.settings.title }}</p>
+          {%- when 'faq' -%}
+            <details class="sl-gf__item" {{ block.shopify_attributes }}>
+              <summary><h3 class="sl-gf__q">{{ block.settings.question }}</h3></summary>
+              <div class="sl-gf__a">{{ block.settings.answer }}</div>
+            </details>
+          {%- when 'row' -%}
+            {%- unless table_done -%}
+              {%- assign table_done = true -%}
+                <details class="sl-gf__item">
+                <summary><h3 class="sl-gf__q">{{ s.table_heading | default: 'Gripsok of gewone sok?' }}</h3></summary>
+                <div class="sl-gf__a sl-gf__a--table">
+                  <div class="sl-gf__table-wrap">
+                    <table class="sl-gf__table">
+                      <thead>
+                        <tr>
+                          <th scope="col"><span class="visually-hidden">&nbsp;</span></th>
+                          <th scope="col">{{ s.table_col_a | default: 'Gewone sportsok' }}</th>
+                          <th scope="col">{{ s.table_col_b | default: 'HÏ Grip gripsok' }}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {%- for r in rows -%}
+                          <tr {{ r.shopify_attributes }}>
+                            <th scope="row">{{ r.settings.aspect }}</th>
+                            <td>{{ r.settings.col_a }}</td>
+                            <td>{{ r.settings.col_b }}</td>
+                          </tr>
+                        {%- endfor -%}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </details>
+            {%- endunless -%}
+        {%- endcase -%}
+      {%- endfor -%}
+      </div>
+      {%- assign more_url = s.faq_link_url | default: '/pages/veelgestelde-vragen' -%}
+      <a class="sl-gf__more" href="{{ more_url }}"><span>{{ s.faq_link_text | default: 'Meer vragen? Bekijk alle veelgestelde vragen' }}</span><span class="sl-gf__more-arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+
+    {%- if s.cta_heading != blank -%}
+      <div class="sl-gf__cta">
+        <div class="sl-gf__cta-main">
+          <div>
+            <h3>{{ s.cta_heading }}</h3>
+            {%- if s.cta_text != blank -%}<p>{{ s.cta_text }}</p>{%- endif -%}
+          </div>
+          {%- if s.cta_label != blank -%}<a class="sl__btn sl__btn--primary" href="{{ s.cta_link }}">{{ s.cta_label }}</a>{%- endif -%}
+        </div>
+        {%- if s.cta_logo != blank -%}
+          {%- capture proof_inner -%}
+            {%- if s.cta_logo_label != blank -%}<p class="sl-gf__proof-l">{{ s.cta_logo_label }}</p>{%- endif -%}
+            {{ s.cta_logo | image_url: width: 480 | image_tag: loading: 'lazy', widths: '240, 480', sizes: '220px', alt: s.cta_logo_alt }}
+          {%- endcapture -%}
+          {%- if s.cta_logo_link != blank -%}
+            <a class="sl-gf__proof" href="{{ s.cta_logo_link }}" target="_blank" rel="noopener">{{ proof_inner }}</a>
+          {%- else -%}
+            <div class="sl-gf__proof">{{ proof_inner }}</div>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if s.sources != blank -%}<div class="sl-gf__sources">{{ s.sources }}</div>{%- endif -%}
+  </div>
+</section>
+
+{%- if faq_blocks.size > 0 -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in faq_blocks -%}
+    {
+      "@type": "Question",
+      "name": {{ block.settings.question | json }},
+      "acceptedAnswer": { "@type": "Answer", "text": {{ block.settings.answer | strip_html | strip | json }} }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Sport — gids + FAQ",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" },
+    { "type": "header", "content": "Fotoband boven de kop" },
+    { "type": "image_picker", "id": "banner_image", "label": "Fotoband (leeg = geen fotoband)" },
+    { "type": "text", "id": "banner_focus", "label": "Uitsnede fotoband (bv. 50% 80%)", "info": "Leeg = midden." },
+    { "type": "checkbox", "id": "banner_bw", "label": "Fotoband zwart-wit tonen", "default": false },
+    { "type": "header", "content": "Foto bij Kort antwoord" },
+    { "type": "image_picker", "id": "image", "label": "Foto (leeg = statement zonder foto)" },
+    { "type": "text", "id": "image_focus", "label": "Uitsnede foto (bv. 50% 40%)", "info": "Leeg = midden." },
+    { "type": "header", "content": "Inhoud" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h2" },
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Koopgids & FAQ" },
+    { "type": "text", "id": "heading", "label": "Kop" },
+    { "type": "textarea", "id": "lead", "label": "Introtekst (naast de kop)" },
+    { "type": "text", "id": "summary_label", "label": "Label samenvatting", "default": "Kort antwoord" },
+    { "type": "richtext", "id": "summary", "label": "Samenvatting (50-60 woorden, antwoord eerst)" },
+    { "type": "header", "content": "Vergelijkingstabel" },
+    { "type": "text", "id": "table_heading", "label": "Kop tabel", "default": "Gripsok of gewone sok?" },
+    { "type": "text", "id": "table_col_a", "label": "Kolom A", "default": "Gewone sportsok" },
+    { "type": "text", "id": "table_col_b", "label": "Kolom B", "default": "HÏ Grip gripsok" },
+    { "type": "header", "content": "Link onder de lijst" },
+    { "type": "text", "id": "faq_link_text", "label": "Linktekst", "default": "Meer vragen? Bekijk alle veelgestelde vragen" },
+    { "type": "url", "id": "faq_link_url", "label": "Linkdoel" },
+    { "type": "header", "content": "Club / team CTA (leeg = niet tonen)" },
+    { "type": "text", "id": "cta_heading", "label": "Kop" },
+    { "type": "textarea", "id": "cta_text", "label": "Tekst" },
+    { "type": "text", "id": "cta_label", "label": "Knoplabel" },
+    { "type": "url", "id": "cta_link", "label": "Knoplink" },
+    { "type": "header", "content": "CTA: logo (social proof, rechts)" },
+    { "type": "image_picker", "id": "cta_logo", "label": "Logo (transparante PNG/SVG, leeg = niet tonen)" },
+    { "type": "text", "id": "cta_logo_label", "label": "Label boven het logo" },
+    { "type": "text", "id": "cta_logo_alt", "label": "Alt-tekst logo" },
+    { "type": "url", "id": "cta_logo_link", "label": "Link van het logo (optioneel)" },
+    { "type": "header", "content": "Bronnen" },
+    { "type": "richtext", "id": "sources", "label": "Bronnenblok" }
+  ],
+  "blocks": [
+    { "type": "category", "name": "Onderwerp (label)", "settings": [
+      { "type": "text", "id": "title", "label": "Onderwerp", "default": "Onderwerp" }
+    ] },
+    { "type": "faq", "name": "Vraag", "settings": [
+      { "type": "text", "id": "question", "label": "Vraag (kop)", "default": "Vraag?" },
+      { "type": "richtext", "id": "answer", "label": "Antwoord (begin met het directe antwoord)", "default": "<p>Antwoord.</p>" }
+    ] },
+    { "type": "row", "name": "Tabelrij", "settings": [
+      { "type": "text", "id": "aspect", "label": "Onderdeel" },
+      { "type": "text", "id": "col_a", "label": "Gewone sok" },
+      { "type": "text", "id": "col_b", "label": "Gripsok" }
+    ] }
+  ],
+  "max_blocks": 30,
+  "presets": [ { "name": "Sport — gids + FAQ" } ]
+}
+{% endschema %}

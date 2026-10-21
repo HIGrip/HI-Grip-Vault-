@@ -1,0 +1,516 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "hero": {
+      "type": "sport-photo-hero",
+      "settings": {
+        "image": "shopify://shop_images/Tennis_gripsokken_wit.jpg",
+        "bw_photo": false,
+        "focus_x": 50,
+        "focus_y": 100,
+        "min_height": 90,
+        "heading_tag": "h1",
+        "line_1": "Gripsokken",
+        "line_2": "voor tennis",
+        "text": "Je voet staat vast in je schoen. Bij de split step, de zijwaartse stap en de stop op gravel of hardcourt.",
+        "text_align": "default",
+        "product": "performance-gripsokken-2-0-wit",
+        "cta_label": "",
+        "show_price": false,
+        "show_sticky": false,
+        "sticky_title": "Performance Gripsokken 2.0",
+        "fallback_link": "",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "bg_color": "#0b0b0b",
+        "text_color": "#f2f2f0",
+        "heading_color": "",
+        "accent_color": "#ff6a00"
+      }
+    },
+    "proof": {
+      "type": "sport-proof",
+      "blocks": {
+        "i_1": {
+          "type": "item",
+          "settings": {
+            "number": "3.500+",
+            "label": "sporters gingen je voor"
+          }
+        },
+        "i_2": {
+          "type": "item",
+          "settings": {
+            "number": "Coolmax®",
+            "label": "naadloos en ademend"
+          }
+        },
+        "i_3": {
+          "type": "item",
+          "settings": {
+            "number": "€35",
+            "label": "gratis verzending vanaf"
+          }
+        },
+        "i_4": {
+          "type": "item",
+          "settings": {
+            "number": "1",
+            "label": "werkdag en je bestelling is verzonden"
+          }
+        }
+      },
+      "block_order": [
+        "i_1",
+        "i_2",
+        "i_3",
+        "i_4"
+      ],
+      "settings": {
+        "bg_color": "{{ settings.color_palette.background }}",
+        "text_color": "",
+        "accent": "orange"
+      }
+    },
+    "stat": {
+      "type": "sport-stat",
+      "blocks": {
+        "w_1": {
+          "type": "reason",
+          "settings": {
+            "title": "Je voet blijft staan",
+            "text": "Geen doorglijden in je schoen bij een split step, een zijwaartse stap of een stop."
+          }
+        },
+        "w_2": {
+          "type": "reason",
+          "settings": {
+            "title": "Kracht komt aan",
+            "text": "Wat je in de baan zet, verdwijnt niet in een schuivende sok."
+          }
+        },
+        "w_3": {
+          "type": "reason",
+          "settings": {
+            "title": "Controle bij elke slag",
+            "text": "Een stabiele basis geeft balans, ook als je ver moet uitreiken."
+          }
+        },
+        "w_4": {
+          "type": "reason",
+          "settings": {
+            "title": "Fris tot de laatste game",
+            "text": "Naadloos en ademend met Coolmax®. Een droge voet, ook in een lange set."
+          }
+        }
+      },
+      "block_order": [
+        "w_1",
+        "w_2",
+        "w_3",
+        "w_4"
+      ],
+      "settings": {
+        "heading": "Waarom gripsokken in tennis",
+        "heading_tag": "h2",
+        "show_numbers": false,
+        "value_old": "0.60",
+        "label_old": "Gewone sok",
+        "value_new": "1.17",
+        "label_new": "Gripsok",
+        "claim": "Minder schuiven.",
+        "claim_accent": "Meer controle.",
+        "source": "",
+        "text_align": "default",
+        "rough_edge": true,
+        "bg_color": "#141414",
+        "text_color": "#f2f2f0",
+        "heading_color": "",
+        "accent_color": "#ff6a00",
+        "heading_gap": 64,
+        "card_gap": 16,
+        "claim_gap": 56,
+        "padding_top": 148,
+        "padding_bottom": 140,
+        "padding_top_mobile": 72,
+        "padding_bottom_mobile": 72
+      }
+    },
+    "bento": {
+      "type": "sport-bento",
+      "blocks": {
+        "c1": {
+          "type": "cell",
+          "settings": {
+            "style": "photo",
+            "wide": true,
+            "image": "shopify://shop_images/Tennis_actie_gripsokken.jpg",
+            "focus_x": 50,
+            "focus_y": 40,
+            "big": "",
+            "title": "Baseline",
+            "text": "Rally's vanaf de achterlijn: split step, zijwaartse stap, stop en weer weg. Met grip blijft je voet staan als jij van richting wisselt.",
+            "small": "",
+            "text_align": "default",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "c2": {
+          "type": "cell",
+          "settings": {
+            "style": "photo",
+            "wide": false,
+            "image": "shopify://shop_images/Tennissokken_met_grip.jpg",
+            "focus_x": 50,
+            "focus_y": 60,
+            "big": "",
+            "title": "Gravel en hardcourt",
+            "text": "Glijden op gravel, stoppen op hardcourt. Binnen je schoen blijft je voet op zijn plek.",
+            "small": "Apps et al. 2022",
+            "text_align": "default",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "c3": {
+          "type": "cell",
+          "settings": {
+            "style": "photo",
+            "wide": false,
+            "image": "shopify://shop_images/Tennis_gripsokken.jpg",
+            "focus_x": 50,
+            "focus_y": 60,
+            "big": "",
+            "title": "Aan het net",
+            "text": "Korte, explosieve stappen naar voren. Je voorvoet staat stil in je schoen bij de stop en de volley.",
+            "small": "",
+            "text_align": "default",
+            "bg_color": "",
+            "text_color": ""
+          }
+        },
+        "c4": {
+          "type": "cell",
+          "settings": {
+            "style": "photo",
+            "wide": true,
+            "image": "shopify://shop_images/Tennis_gripsokken_wit.jpg",
+            "focus_x": 50,
+            "focus_y": 85,
+            "big": "",
+            "title": "Elke set",
+            "text": "Drie sets in de zon. Minder schuiven is minder wrijving, en Coolmax® voert vocht af.",
+            "small": "",
+            "text_align": "default",
+            "bg_color": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ],
+      "settings": {
+        "heading": "Waar je het merkt",
+        "heading_tag": "h2",
+        "text_align": "default",
+        "bw_photos": false,
+        "bg_color": "#0b0b0b",
+        "text_color": "#f2f2f0",
+        "heading_color": "",
+        "accent_color": "#ff6a00",
+        "padding_top": 140,
+        "padding_bottom": 120,
+        "padding_top_mobile": 72,
+        "padding_bottom_mobile": 72
+      }
+    },
+    "product": {
+      "type": "sport-product",
+      "blocks": {
+        "p_1": {
+          "type": "point",
+          "settings": {
+            "text": "Antislip grip-patroon voor stabiliteit in je schoen"
+          }
+        },
+        "p_2": {
+          "type": "point",
+          "settings": {
+            "text": "Compressie en naadloze pasvorm"
+          }
+        },
+        "p_3": {
+          "type": "point",
+          "settings": {
+            "text": "Coolmax®: ademend en droog"
+          }
+        }
+      },
+      "block_order": [
+        "p_1",
+        "p_2",
+        "p_3"
+      ],
+      "settings": {
+        "bg_color": "#f4f3ef",
+        "text_color": "",
+        "product": "performance-gripsokken-2-0-wit",
+        "product_alt": "performance-gripsokken-2-0-zwart",
+        "heading_tag": "h2",
+        "eyebrow": "De gripsok voor tennissers",
+        "heading": "",
+        "tag": "",
+        "text": "Compressie, naadloos en Coolmax®. De sok waarmee je voet blijft waar hij hoort.",
+        "cta_text": "",
+        "deal_text": "",
+        "note": "Gratis verzending boven €35",
+        "accent": "orange"
+      }
+    },
+    "faq": {
+      "type": "sport-guide",
+      "blocks": {
+        "g_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat is het verschil met een gewone tennissok?",
+            "answer": "<p>Een gripsok heeft een siliconen grippatroon onder de voet. Dat vergroot de wrijving tussen je voet en de binnenkant van je schoen. Een gewone sok heeft dat niet. Hoeveel je merkt, hangt af van je schoen, je pasvorm en je speelstijl.</p>"
+          }
+        },
+        "g_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Werkt het grip ook tussen mijn zool en de baan?",
+            "answer": "<p>Nee. Het patroon werkt aan de binnenkant van je schoen, tussen voet en schoen. Het grip van je zool op gravel, hardcourt of kunstgras blijft de taak van je tennisschoen.</p>"
+          }
+        },
+        "g_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat zegt onderzoek over gripsokken?",
+            "answer": "<p>In onderzoek naar gripsokken in het algemeen werd een wrijvingscoëfficiënt van 1,17 gemeten voor gripsokken, tegenover 0,60 voor gewone sokken (bronnen onderaan). Die studies testten gripsokken als categorie: niet HÏ Grip en niet specifiek tennis.</p>"
+          }
+        },
+        "g_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Welke maat en kleur kies ik?",
+            "answer": "<p>De Performance Gripsokken 2.0 zijn er in maat 35-38, 39-42 en 43-47, in wit en zwart. De sokmaat komt overeen met je schoenmaat. Twijfel je tussen twee maten, kies dan de grotere.</p>"
+          }
+        },
+        "g_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Welke HÏ Grip gripsok past bij tennis?",
+            "answer": "<p>De Performance Gripsokken 2.0 is de gripsok van HÏ Grip voor tennis: antislip grippatroon, compressie, een naadloze pasvorm en Coolmax®. <a href=\"/products/performance-gripsokken-2-0-wit\">Bekijk de Performance Gripsokken 2.0</a>.</p>"
+          }
+        },
+        "g_6": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe snel is mijn bestelling er?",
+            "answer": "<p>Bestel je op een werkdag, dan is je bestelling binnen één werkdag verzonden. Je ontvangt hem binnen 1-3 werkdagen. Verzending is gratis vanaf €35.</p>"
+          }
+        },
+        "row_1": {
+          "type": "row",
+          "settings": {
+            "aspect": "Onderzijde",
+            "col_a": "Gladde zool",
+            "col_b": "Siliconen grippatroon"
+          }
+        },
+        "row_2": {
+          "type": "row",
+          "settings": {
+            "aspect": "Voet in je schoen",
+            "col_a": "Kan schuiven bij stops en richtingswissels",
+            "col_b": "Blijft beter op zijn plek"
+          }
+        },
+        "row_3": {
+          "type": "row",
+          "settings": {
+            "aspect": "Pasvorm",
+            "col_a": "Verschilt per sok",
+            "col_b": "Compressie en naadloos (Performance Gripsokken 2.0)"
+          }
+        },
+        "row_4": {
+          "type": "row",
+          "settings": {
+            "aspect": "Ademend",
+            "col_a": "Verschilt per sok",
+            "col_b": "Coolmax®: ademend en droog"
+          }
+        },
+        "row_5": {
+          "type": "row",
+          "settings": {
+            "aspect": "Bij tennis",
+            "col_a": "Starten, stoppen en zijwaarts bewegen kan je voet laten doorglijden",
+            "col_b": "Meer houvast bij split step, zijwaartse stappen en stops"
+          }
+        }
+      },
+      "block_order": [
+        "g_1",
+        "g_2",
+        "g_3",
+        "g_4",
+        "g_5",
+        "g_6",
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4",
+        "row_5"
+      ],
+      "settings": {
+        "bg_color": "{{ settings.color_palette.foreground }}",
+        "text_color": "{{ settings.color_palette.background }}",
+        "accent": "orange",
+        "banner_image": "shopify://shop_images/Tennis_actie_gripsokken.jpg",
+        "banner_focus": "50% 65%",
+        "banner_bw": false,
+        "image_focus": "",
+        "heading_tag": "h2",
+        "eyebrow": "FAQ",
+        "heading": "Veelgestelde vragen over gripsokken voor tennis",
+        "lead": "",
+        "summary_label": "",
+        "summary": "",
+        "table_heading": "Gripsok of gewone sok?",
+        "table_col_a": "Gewone sportsok",
+        "table_col_b": "HÏ Grip gripsok",
+        "faq_link_text": "Meer vragen? Bekijk alle veelgestelde vragen",
+        "faq_link_url": "/pages/veelgestelde-vragen",
+        "cta_heading": "Speel je in een team of bij een tennisclub?",
+        "cta_text": "HÏ Grip heeft een zakelijk aanbod voor clubs en retail.",
+        "cta_label": "Bekijk het zakelijke aanbod",
+        "cta_link": "/pages/zakelijk",
+        "cta_logo_label": "",
+        "cta_logo_alt": "",
+        "cta_logo_link": "",
+        "sources": "<p><strong>Bronnen onderzoek naar gripsokken:</strong> <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\">Apps et al., 2020</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\">Apps et al., 2022</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\">Friedl et al., 2023</a>. Deze studies testten gripsokken in het algemeen, niet HÏ Grip specifiek.</p>"
+      }
+    },
+    "related": {
+      "type": "sport-related",
+      "blocks": {
+        "r_2": {
+          "type": "sport",
+          "settings": {
+            "label": "Voetbal",
+            "link": "/pages/gripsokken-voor-voetbal",
+            "image": "shopify://shop_images/Grip_sokken_voetbal.jpg"
+          }
+        },
+        "r_3": {
+          "type": "sport",
+          "settings": {
+            "label": "Padel",
+            "link": "/pages/gripsokken-voor-padel",
+            "image": "shopify://shop_images/Padelsokken_met_grip.jpg"
+          }
+        },
+        "r_4": {
+          "type": "sport",
+          "settings": {
+            "label": "Rugby",
+            "link": "/pages/gripsokken-voor-rugby",
+            "image": "shopify://shop_images/hg-rugby-backs.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "r_2",
+        "r_3",
+        "r_4"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "text_color": "",
+        "heading_tag": "h2",
+        "eyebrow": "Ontdek meer",
+        "heading": "Gripsokken voor jouw sport",
+        "accent": "orange"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero",
+    "proof",
+    "stat",
+    "bento",
+    "product",
+    "faq",
+    "related"
+  ]
+}

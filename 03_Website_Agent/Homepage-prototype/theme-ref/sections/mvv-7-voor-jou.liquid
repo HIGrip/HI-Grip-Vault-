@@ -1,0 +1,200 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['academy-tvb-open.jpg']={{ 'mv-academy-tvb-open.jpg' | asset_url | json }};MV_ASSETS['hardlopen-gripsokken.jpg']={{ 'mv-hardlopen-gripsokken.jpg' | asset_url | json }};MV_ASSETS['voetbal-gripsokken-wit.jpg']={{ 'mv-voetbal-gripsokken-wit.jpg' | asset_url | json }};</script>
+<section class="mv-band-warm mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="plain" aria-labelledby="you-title" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-wrap mv-you"> <figure class="mv-you__img mv-rv"> <img width="1100" height="1100" loading="lazy" decoding="async" alt="{{ s.t2 | escape }}" src="{%- if s.ima1 != blank -%}{{ s.ima1 | image_url: width: 1100 }}{%- else -%}{{ 'mv-voetbal-gripsokken-wit.jpg' | asset_url }}{%- endif -%}"> </figure> <div class="mv-you__copy"> <div class="mv-rv"> <h2 class="mv-h2" id="you-title">{{ s.t3 }}</h2> <p class="mv-lead">{{ s.t4 | escape }}</p> <p class="mv-more mv-muted">{{ s.t5 | escape }}</p> </div> <div class="mv-you__cta mv-rv"> <a class="mv-pill mv-pill--dark" href="{{ s.url6 | default: 'https://www.higrip.nl/products/performance-gripsokken' }}">{{ s.t7 | escape }}</a> <a class="mv-textlink" href="{{ s.url8 | default: 'https://www.higrip.nl/pages/zakelijk' }}">{{ s.t9 | escape }}</a> </div> </div> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Visie: Voor jou",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "ima1",
+      "label": "Afbeelding · voetbal-gripsokken-wit.jpg"
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "Alt-tekst · voetbal-gripsokken-wit.jpg",
+      "default": "Voetballer in een zwart HÏ Grip-shirt en witte gripsokken neemt de bal mee op een kunstgrasveld"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "t3",
+      "label": "H2 · Wat betekent de visie van HÏ Grip voor jou?",
+      "default": "Wat betekent de visie van HÏ Grip <em>voor jou?</em>"
+    },
+    {
+      "type": "textarea",
+      "id": "t4",
+      "label": "P · Voor jou betekent de visie van HÏ Grip dat je sportswear met j",
+      "default": "Voor jou betekent de visie van HÏ Grip dat je sportswear met je meegroeit: vandaag met gripsokken voor je kernsport, binnenkort met Performance Tubes en de Performance Skisokken (ALPINE PRO), en via de Performance Academy met een community die je als eerste meeneemt in wat er komt."
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "P · Speel je bij een club? HÏ Grip personaliseert ook voor sportcl",
+      "default": "Speel je bij een club? HÏ Grip personaliseert ook voor sportclubs, zodat je hele team in dezelfde sokken staat."
+    },
+    {
+      "type": "url",
+      "id": "url6",
+      "label": "Link · Shop gripsokken"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "A · Shop gripsokken",
+      "default": "Shop gripsokken"
+    },
+    {
+      "type": "url",
+      "id": "url8",
+      "label": "Link · Gripsokken voor je club via HÏ Grip Zakelijk"
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "A · Gripsokken voor je club via HÏ Grip Zakelijk",
+      "default": "Gripsokken voor je club via HÏ Grip Zakelijk"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visie: Voor jou"
+    }
+  ]
+}
+{% endschema %}

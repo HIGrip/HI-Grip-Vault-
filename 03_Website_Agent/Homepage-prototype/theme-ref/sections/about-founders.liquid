@@ -1,0 +1,496 @@
+{{ 'about-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'about-page.js' | asset_url }}" defer></script>
+<script>document.documentElement.classList.add('ab-js');</script>
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign n = section.blocks.size
+-%}
+<section class="ab ab-fn ab-pad" data-ab="founders" data-anim="{{ s.animate }}" aria-label="De founders" style="{% render 'about-vars', s: s %}">
+  <div class="ab-wrap">
+    <{{ tag }} class="ab-h">{%- if s.line_1 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_1_align, m: s.line_1_align_m %}>{{ s.line_1 }} </span>{%- endif -%}{%- if s.line_2 != blank -%}<span class="ab-l"{% render 'about-ta', d: s.line_2_align, m: s.line_2_align_m %}>{{ s.line_2 }} </span>{%- endif -%}</{{ tag }}>
+    <div class="ab-cards" style="margin-top:clamp(2rem,4vw,3.5rem);">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <article class="ab-card rv{% if forloop.first %} is-open{% endif %}" tabindex="0" style="--c:{{ b.accent }};--ab-fy:{{ b.focus_y }}%;" {{ block.shopify_attributes }}>
+          <div class="ab-card__portrait">
+            {%- if b.portrait != blank -%}
+              {{ b.portrait | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 761px) 40vw, 86vw', widths: '500, 800, 1200', alt: b.portrait.alt | default: b.name }}
+            {%- else -%}
+              <span class="ab-card__ini" aria-hidden="true">{{ b.name | strip | slice: 0 | escape }}</span>
+              <div class="ab-card__ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Portret {{ b.name | escape }}</div>
+            {%- endif -%}
+          </div>
+          <div class="ab-card__info">
+            {%- if b.sport != blank or b.role != blank -%}
+              <div class="ab-chips"{% render 'about-ta', d: b.chips_align, m: b.chips_align_m %}>
+                {%- if b.sport != blank -%}<span class="ab-chip ab-chip--s">{{ b.sport | escape }}</span>{%- endif -%}
+                {%- if b.role != blank -%}<span class="ab-chip">{{ b.role | escape }}</span>{%- endif -%}
+              </div>
+            {%- endif -%}
+            <div class="ab-card__name"{% render 'about-ta', d: b.name_align, m: b.name_align_m %}>{{ b.name | escape }}</div>
+            {%- if b.quote != blank -%}<p class="ab-quote"{% render 'about-ta', d: b.quote_align, m: b.quote_align_m %}>&ldquo;{{ b.quote | escape }}&rdquo;</p>{%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+    {%- if n > 1 -%}
+      <div class="ab-card-nav" aria-label="Blader door de founders">
+        <button type="button" class="ab-cn-btn" data-prev aria-label="Vorige founder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <span class="ab-cn-count" data-count>1 / {{ n }}</span>
+        <button type="button" class="ab-cn-btn" data-next aria-label="Volgende founder"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Over ons: Founders",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_1",
+      "label": "Kop regel 1",
+      "default": "Drie founders."
+    },
+    {
+      "type": "select",
+      "id": "line_1_align",
+      "label": "Regel 1 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_1_align_m",
+      "label": "Regel 1 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "line_2",
+      "label": "Kop regel 2",
+      "default": "<em>Eén missie.</em>",
+      "info": "Zet woorden tussen <em>…</em> voor de accentkleur."
+    },
+    {
+      "type": "select",
+      "id": "line_2_align",
+      "label": "Regel 2 uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "line_2_align_m",
+      "label": "Regel 2 uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kop-tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "p",
+          "label": "Alinea (p)"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Kopgrootte desktop (maximum)",
+      "min": 24,
+      "max": 200,
+      "step": 2,
+      "default": 90,
+      "unit": "px",
+      "info": "Op smallere schermen schaalt de kop mee omlaag."
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Kopgrootte mobiel",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Regelhoogte kop",
+      "min": 80,
+      "max": 140,
+      "step": 2,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder desktop",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder mobiel",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accentkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Animatie"
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "founder",
+      "name": "Founder",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Naam",
+          "default": "Lars"
+        },
+        {
+          "type": "select",
+          "id": "name_align",
+          "label": "Naam uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "name_align_m",
+          "label": "Naam uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "image_picker",
+          "id": "portrait",
+          "label": "Portret"
+        },
+        {
+          "type": "range",
+          "id": "focus_y",
+          "label": "Portret verticale positie",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "default": 20,
+          "unit": "%"
+        },
+        {
+          "type": "text",
+          "id": "sport",
+          "label": "Sport-chip",
+          "default": "Padel"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Rol-chip",
+          "default": "Merk & marketing"
+        },
+        {
+          "type": "select",
+          "id": "chips_align",
+          "label": "Sport & rol uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "chips_align_m",
+          "label": "Sport & rol uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "Ik stop pas als ik weet dat er niks meer in zat."
+        },
+        {
+          "type": "select",
+          "id": "quote_align",
+          "label": "Quote uitlijnen (desktop)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "select",
+          "id": "quote_align_m",
+          "label": "Quote uitlijnen (mobiel)",
+          "options": [
+            {
+              "value": "left",
+              "label": "Links"
+            },
+            {
+              "value": "center",
+              "label": "Gecentreerd"
+            },
+            {
+              "value": "right",
+              "label": "Rechts"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "accent",
+          "label": "Accentkleur kaart",
+          "default": "#CCFF00"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [
+    {
+      "name": "Over ons: Founders",
+      "blocks": [
+        {
+          "type": "founder",
+          "settings": {
+            "name": "Lars",
+            "sport": "Padel",
+            "role": "Merk & marketing",
+            "quote": "Ik stop pas als ik weet dat er niks meer in zat.",
+            "accent": "#CCFF00"
+          }
+        },
+        {
+          "type": "founder",
+          "settings": {
+            "name": "Timo",
+            "sport": "Voetbal",
+            "role": "Product & operations",
+            "quote": "Een kleine verbetering merk je pas echt in de laatste minuut.",
+            "accent": "#4D63FF"
+          }
+        },
+        {
+          "type": "founder",
+          "settings": {
+            "name": "Tigo",
+            "sport": "Rugby",
+            "role": "Partners & zakelijk",
+            "quote": "Iedere sporter moet op zijn spullen kunnen bouwen.",
+            "accent": "#FF6A00"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

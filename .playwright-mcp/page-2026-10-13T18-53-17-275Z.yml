@@ -1,0 +1,307 @@
+- generic [ref=f60e2]:
+  - generic [ref=f60e3]:
+    - banner [ref=f60e6]:
+      - link [ref=f60e8] [cursor=pointer]:
+        - /url: /
+        - img "Mill logo" [ref=f60e9]
+      - generic [ref=f60e15]:
+        - link "Cart, empty" [ref=f60e16] [cursor=pointer]:
+          - /url: /cart
+        - button "Open menu" [ref=f60e20] [cursor=pointer]
+      - generic:
+        - generic:
+          - generic [ref=f60e23]:
+            - link "Food Recycler" [ref=f60e24] [cursor=pointer]:
+              - /url: https://www.mill.com/food-recycler
+            - link "Life with Mill" [ref=f60e25] [cursor=pointer]:
+              - /url: /life-with-mill
+            - link "For Commercial" [ref=f60e26] [cursor=pointer]:
+              - /url: /lp/commercial
+          - generic [ref=f60e28]:
+            - paragraph [ref=f60e31]: Mill for your
+            - generic [ref=f60e32]:
+              - link "Kitchen" [ref=f60e35] [cursor=pointer]:
+                - /url: /lp/busy-schedule
+              - link "Chickens" [ref=f60e38] [cursor=pointer]:
+                - /url: /lp/chickens
+              - link "Garden" [ref=f60e41] [cursor=pointer]:
+                - /url: /lp/gardens
+          - generic [ref=f60e42]:
+            - generic [ref=f60e43]:
+              - link "Why Mill" [ref=f60e46] [cursor=pointer]:
+                - /url: /why-mill
+              - link "Food Grounds" [ref=f60e49] [cursor=pointer]:
+                - /url: /lp/food-grounds
+              - link "Reviews" [ref=f60e52] [cursor=pointer]:
+                - /url: /reviews
+              - link "Newsroom" [ref=f60e55] [cursor=pointer]:
+                - /url: /news
+              - link "Refer a friend" [ref=f60e58] [cursor=pointer]:
+                - /url: https://account.mill.com/refer
+            - generic [ref=f60e59]:
+              - link "Sign In" [ref=f60e62] [cursor=pointer]:
+                - /url: https://account.mill.com
+              - link "Help Center" [ref=f60e65] [cursor=pointer]:
+                - /url: https://support.mill.com
+          - link "now available Stainless Steel and Black Shop Mill" [ref=f60e71] [cursor=pointer]:
+            - generic [ref=f60e75]:
+              - generic [ref=f60e76]: now available
+              - generic [ref=f60e78]:
+                - paragraph [ref=f60e80]: Stainless Steel and Black
+                - button "Shop Mill" [ref=f60e83]
+    - generic [ref=f60e84]:
+      - generic [ref=f60e85]:
+        - generic [ref=f60e93]:
+          - paragraph [ref=f60e95]: Wake up to a cleaner kitchen
+          - paragraph [ref=f60e97]: Meet Mill, the effortless, odorless kitchen appliance that handles your food waste, overnight.
+          - generic [ref=f60e98]:
+            - button "Shop Mill" [ref=f60e100] [cursor=pointer]
+            - button "Learn more" [ref=f60e102] [cursor=pointer]
+        - heading [level=2] [ref=f60e104]:
+          - paragraph [ref=f60e105]: as seen in
+        - region "How it works gallery" [ref=f60e110]:
+          - generic [ref=f60e113]:
+            - paragraph [ref=f60e115]: Prevent food waste the smart way
+            - generic [ref=f60e116]: With intelligent tech and a beautiful design, Mill makes compost pails and garbage disposals obsolete.
+          - generic [ref=f60e117]:
+            - article [ref=f60e118]:
+              - generic [ref=f60e119]:
+                - generic [ref=f60e123]:
+                  - heading "Add food scraps" [level=2] [ref=f60e124]
+                  - paragraph [ref=f60e125]: From avocado pits to turkey bones, Mill takes almost anything.
+                - generic [ref=f60e126]: "1"
+            - article [ref=f60e127]:
+              - generic [ref=f60e128]:
+                - generic [ref=f60e132]:
+                  - heading "Mill works overnight" [level=2] [ref=f60e133]
+                  - paragraph [ref=f60e134]: You don’t even have to press a button. Mill knows how much you add.
+                - generic [ref=f60e135]: "2"
+            - article [ref=f60e136]:
+              - generic [ref=f60e137]:
+                - generic [ref=f60e141]:
+                  - heading "Keep filling it for weeks" [level=2] [ref=f60e142]
+                  - paragraph [ref=f60e143]: Mill reduces your food’s volume by 80%. Skip a garbage day or two.
+                - generic [ref=f60e144]: "3"
+            - article [ref=f60e145]:
+              - generic [ref=f60e146]:
+                - generic [ref=f60e150]:
+                  - heading "Feed farms or gardens" [level=2] [ref=f60e151]
+                  - paragraph [ref=f60e152]: Nutrient-rich grounds can nourish your garden — or Mill’s small-farm partners.
+                - generic [ref=f60e153]: "4"
+        - generic [ref=f60e157]:
+          - paragraph [ref=f60e159]:
+            - generic [ref=f60e160]: 21,000,000 pounds
+            - text: of food kept out of landfills
+          - paragraph [ref=f60e162]: And still counting. Join us today and help prevent food waste — a major driver of climate change.
+        - generic [ref=f60e170]:
+          - generic [ref=f60e171]:
+            - generic [ref=f60e172]:
+              - heading "Mill Food Recycler" [level=2] [ref=f60e173]
+              - paragraph [ref=f60e174]: From $999 or $83/mo at 0% APR
+            - button "Learn more" [ref=f60e177] [cursor=pointer]
+          - generic [ref=f60e178]:
+            - article [ref=f60e179]:
+              - heading "Free shipping" [level=2] [ref=f60e181]
+              - paragraph [ref=f60e182]: Delivered to your door step
+            - article [ref=f60e183]:
+              - heading "Money back guarantee" [level=2] [ref=f60e185]
+              - paragraph [ref=f60e186]: Try Mill at home for 90 days and return for free
+            - article [ref=f60e187]:
+              - heading "2 year warranty" [level=2] [ref=f60e189]
+              - paragraph [ref=f60e190]: Your peace of mind with free replacements
+        - generic [ref=f60e195]:
+          - paragraph [ref=f60e197]: Meet the Mill family
+          - generic [ref=f60e198]:
+            - paragraph [ref=f60e199]:
+              - text: Everyone loves
+              - strong [ref=f60e200]: Mill Plus
+              - text: . Now
+              - strong [ref=f60e201]: Mill Essential
+              - text: joins the family.
+            - paragraph [ref=f60e202]: Same capacity and power, new streamlined design.
+          - generic [ref=f60e203]:
+            - button "Learn more" [ref=f60e204] [cursor=pointer]
+            - generic [ref=f60e205]: From $999
+        - generic [ref=f60e211]:
+          - generic [ref=f60e212]:
+            - heading "Introducing Mill Commercial" [level=2] [ref=f60e213]
+            - paragraph [ref=f60e214]: You know the world's smartest food recycler. Now meet the brilliant new solution for grocery and food service — starting with our industry-leading partners.
+          - list [ref=f60e215]:
+            - listitem [ref=f60e216]:
+              - img "Whole Foods Market" [ref=f60e219]
+            - listitem [ref=f60e220]:
+              - img "Compass Group" [ref=f60e223]
+          - button "Learn more" [ref=f60e225] [cursor=pointer]
+        - generic [ref=f60e230]:
+          - heading "Create a versatile resource" [level=2] [ref=f60e231]
+          - paragraph [ref=f60e233]: Mill transforms your food scraps into nutrient-rich grounds that can nourish your garden, your backyard chickens, or small, independent farms.
+          - generic [ref=f60e235]:
+            - link "Go to \"For your garden\" page" [ref=f60e236] [cursor=pointer]:
+              - article [ref=f60e241]:
+                - heading "For your garden" [level=2] [ref=f60e242]
+                - generic [ref=f60e243]:
+                  - heading "Enrich your compost, your soil, or even your lawn." [level=2] [ref=f60e244]
+                  - button "Go to \"For your garden\" page" [ref=f60e245]
+            - link "Go to \"For your chickens\" page" [ref=f60e246] [cursor=pointer]:
+              - article [ref=f60e251]:
+                - heading "For your chickens" [level=2] [ref=f60e252]
+                - generic [ref=f60e253]:
+                  - heading "Make nutritious, shelf-stable food for your flock." [level=2] [ref=f60e254]
+                  - button "Go to \"For your chickens\" page" [ref=f60e255]
+            - link "Go to \"For your community\" page" [ref=f60e256] [cursor=pointer]:
+              - article [ref=f60e261]:
+                - heading "For your community" [level=2] [ref=f60e262]
+                - generic [ref=f60e263]:
+                  - heading "Add to curbside compost — or let Mill get your grounds to small farms." [level=2] [ref=f60e264]
+                  - button "Go to \"For your community\" page" [ref=f60e265]
+        - generic [ref=f60e266]:
+          - generic [ref=f60e269]:
+            - paragraph [ref=f60e271]: What they’re saying about Mill
+            - paragraph [ref=f60e273]: Busy families, professional chefs, and tastemakers — everyone loves the Wonderful Feeling of Wasting Nothing.
+          - generic [ref=f60e276]:
+            - generic [ref=f60e277]:
+              - generic [ref=f60e278]:
+                - link "Winner Most Innovative Company" [ref=f60e279] [cursor=pointer]:
+                  - /url: https://www.fastcompany.com/91035706/mill-industries-most-innovative-companies-2024
+                  - generic [ref=f60e297]:
+                    - generic [ref=f60e298]: Winner
+                    - generic [ref=f60e299]: Most Innovative Company
+                - link [ref=f60e316] [cursor=pointer]:
+                  - /url: https://open.spotify.com/show/3zaHNdVeLiqOSXwxdoWcij
+                  - paragraph [ref=f60e325]: I think it’s one of those rare inventions that makes my life better — and stands a chance of making the world a little better, too.
+              - generic [ref=f60e326]:
+                - article [ref=f60e330]:
+                  - generic [ref=f60e331]: Customer stories
+                  - heading "Olivia & Jake" [level=2] [ref=f60e332]
+                - link "“ This is not an overstatement…Mill is one of the best products I have ever purchased for our family.” S Scott Verified buyer" [ref=f60e333] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=f60e334]:
+                    - paragraph [ref=f60e351]:
+                      - generic [ref=f60e352]: “
+                      - generic [ref=f60e353]: This is not an overstatement…Mill is one of the best products I have ever purchased for our family.”
+                    - generic [ref=f60e354]:
+                      - generic [ref=f60e355]: S
+                      - generic [ref=f60e359]:
+                        - paragraph [ref=f60e360]: Scott
+                        - paragraph [ref=f60e361]: Verified buyer
+            - generic [ref=f60e362]:
+              - generic [ref=f60e363]:
+                - link "Go to reviews page" [ref=f60e364] [cursor=pointer]:
+                  - /url: /reviews
+                - article [ref=f60e367]:
+                  - generic [ref=f60e369]:
+                    - heading "Mill has integrated into my life seamlessly. We’ve already composted at home, but we struggled to keep our kitchen from smelling like a compost bin. Mill solves that. It’s odorless and stress free." [level=2] [ref=f60e372]
+                    - paragraph [ref=f60e373]: Richard Lee
+                    - paragraph [ref=f60e374]: Executive Chef, Saison
+              - generic [ref=f60e375]:
+                - link [ref=f60e376] [cursor=pointer]:
+                  - /url: https://abcnews.go.com/author/ginger_zee
+                  - generic [ref=f60e378]:
+                    - paragraph [ref=f60e381]: It’s like farm to table, but table to farm
+                    - paragraph [ref=f60e382]: Ginger Zee
+                    - paragraph [ref=f60e383]: Chief Climate Correspondent
+                - link "“ The product is really magical, it has reduced our trash by more than 50%, now several weeks go by without us taking out any trash.” F Fernando Verified buyer" [ref=f60e384] [cursor=pointer]:
+                  - /url: /reviews
+                  - generic [ref=f60e385]:
+                    - paragraph [ref=f60e402]:
+                      - generic [ref=f60e403]: “
+                      - generic [ref=f60e404]: The product is really magical, it has reduced our trash by more than 50%, now several weeks go by without us taking out any trash.”
+                    - generic [ref=f60e405]:
+                      - generic [ref=f60e406]: F
+                      - generic [ref=f60e410]:
+                        - paragraph [ref=f60e411]: Fernando
+                        - paragraph [ref=f60e412]: Verified buyer
+        - generic [ref=f60e417]:
+          - generic [ref=f60e418]:
+            - paragraph [ref=f60e419]: Stay in the loop.
+            - paragraph [ref=f60e420]: Subscribe to Mill updates.
+          - generic [ref=f60e423]:
+            - textbox "Enter your email here" [ref=f60e424]
+            - button "Submit" [ref=f60e426] [cursor=pointer]
+      - contentinfo [ref=f60e427]:
+        - generic [ref=f60e430]:
+          - generic [ref=f60e431]:
+            - navigation [ref=f60e432]:
+              - heading "Discover" [level=2] [ref=f60e433]
+              - list [ref=f60e434]:
+                - listitem [ref=f60e435]:
+                  - link "Mill Food Recycler" [ref=f60e436] [cursor=pointer]:
+                    - /url: /food-recycler
+                - listitem [ref=f60e437]:
+                  - link "Newsroom" [ref=f60e438] [cursor=pointer]:
+                    - /url: /news
+                - listitem [ref=f60e439]:
+                  - link "Blog" [ref=f60e440] [cursor=pointer]:
+                    - /url: /blog
+                - listitem [ref=f60e441]:
+                  - link "Refer a friend" [ref=f60e442] [cursor=pointer]:
+                    - /url: https://account.mill.com/refer
+            - navigation [ref=f60e443]:
+              - heading "About" [level=2] [ref=f60e444]
+              - list [ref=f60e445]:
+                - listitem [ref=f60e446]:
+                  - link "Careers" [ref=f60e447] [cursor=pointer]:
+                    - /url: https://boards.greenhouse.io/Mill
+                - listitem [ref=f60e448]:
+                  - link "Impact" [ref=f60e449] [cursor=pointer]:
+                    - /url: /impact
+                - listitem [ref=f60e450]:
+                  - link "Legal" [ref=f60e451] [cursor=pointer]:
+                    - /url: /legal/terms-of-service
+            - navigation [ref=f60e452]:
+              - heading "Partnerships" [level=2] [ref=f60e453]
+              - list [ref=f60e454]:
+                - listitem [ref=f60e455]:
+                  - link "Mill for Commercial" [ref=f60e456] [cursor=pointer]:
+                    - /url: /lp/commercial
+                - listitem [ref=f60e457]:
+                  - link "Municipal" [ref=f60e458] [cursor=pointer]:
+                    - /url: /lp/municipalities
+                - listitem [ref=f60e459]:
+                  - link "Partner with us" [ref=f60e460] [cursor=pointer]:
+                    - /url: /contact
+                - listitem [ref=f60e461]:
+                  - link "Affiliate & Trade Program" [ref=f60e462] [cursor=pointer]:
+                    - /url: /lp/mill-affiliate-trade-program
+            - navigation [ref=f60e463]:
+              - heading "Support" [level=2] [ref=f60e464]
+              - list [ref=f60e465]:
+                - listitem [ref=f60e466]:
+                  - link "Help center" [ref=f60e467] [cursor=pointer]:
+                    - /url: https://support.mill.com/hc/en-us
+                - listitem [ref=f60e468]:
+                  - link "Sign in" [ref=f60e469] [cursor=pointer]:
+                    - /url: https://account.mill.com
+          - generic [ref=f60e470]:
+            - generic [ref=f60e471]:
+              - generic [ref=f60e472]: © 2026 Mill Industries Inc. All Rights Reserved.
+              - navigation "Legal links" [ref=f60e473]:
+                - list [ref=f60e474]:
+                  - listitem [ref=f60e475]:
+                    - link "IP & Other Notices" [ref=f60e476] [cursor=pointer]:
+                      - /url: /legal/trademarks
+                  - listitem [ref=f60e477]:
+                    - link "Privacy" [ref=f60e478] [cursor=pointer]:
+                      - /url: /legal/privacy-policy
+                  - listitem [ref=f60e479]:
+                    - link "Terms" [ref=f60e480] [cursor=pointer]:
+                      - /url: /legal/terms-of-service
+                  - listitem [ref=f60e481]:
+                    - link "Cookie Policy" [ref=f60e482] [cursor=pointer]:
+                      - /url: /legal/privacy-policy
+                  - listitem [ref=f60e483]:
+                    - link "Sitemap" [ref=f60e484] [cursor=pointer]:
+                      - /url: /sitemap
+                  - listitem [ref=f60e485]:
+                    - button [ref=f60e486] [cursor=pointer]:
+                      - img "California Consumer Privacy Act (CCPA) Opt-Out Icon" [ref=f60e487]
+                      - text: Your Privacy Choices
+            - generic [ref=f60e488]:
+              - link "Mill's Instagram Account" [ref=f60e489] [cursor=pointer]:
+                - /url: https://www.instagram.com/mill
+              - link "Mill's LinkedIn Account" [ref=f60e491] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/mill
+              - link "Mill's TikTok Account" [ref=f60e493] [cursor=pointer]:
+                - /url: https://www.tiktok.com/@mill
+  - status [ref=f60e495]
+  - alert [ref=f60e496]

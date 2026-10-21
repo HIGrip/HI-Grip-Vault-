@@ -1,0 +1,75 @@
+/* 06 VISUELE PAUZE · 1.3 ronde 3 (Lars 19-10): de film in een andere, heldere stijl. Geen cirkels.
+   Zes hoofdstukken van elk 1/6 van een lus van 16 × --hp-dur-3 (~14 s). Elk hoofdstuk = één zin links in een zwart
+   tekstpaneel, één beeld rechts. Een hoofdstuk veegt van rechts over het vorige heen (harde horizontale wipe),
+   de regels rijzen één voor één op, het kernwoord komt in volt. Hoofdstuk k schuift met delay (k/6 − 1) × lus.
+   Onderin: zes hoofdstukbalken die vollopen, timecode en pauzeknop (section.js). Reduced motion: hoofdstuk 1 stil. */
+.hp-06 { --hp-06-p: 0; position: relative; height: 100svh; min-height: 600px; max-height: 1100px; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-film { position: absolute; inset: 0; }
+.hp-06.is-paused .hp-06-film * { animation-play-state: paused; }
+
+.hp-06-ch {
+  position: absolute; inset: 0; display: grid; grid-template-rows: minmax(0, 1.25fr) minmax(0, 1fr); background: var(--hi-black);
+  animation: hp-06-wipe calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite;
+}
+.hp-06-ch--2, .hp-06-ch--2 * { animation-delay: calc(var(--hp-dur-3) * 16 * -0.8333); }
+.hp-06-ch--3, .hp-06-ch--3 * { animation-delay: calc(var(--hp-dur-3) * 16 * -0.6667); }
+.hp-06-ch--4, .hp-06-ch--4 * { animation-delay: calc(var(--hp-dur-3) * 16 * -0.5); }
+.hp-06-ch--5, .hp-06-ch--5 * { animation-delay: calc(var(--hp-dur-3) * 16 * -0.3333); }
+.hp-06-ch--6, .hp-06-ch--6 * { animation-delay: calc(var(--hp-dur-3) * 16 * -0.1667); }
+@keyframes hp-06-wipe { 0% { clip-path: inset(0 0 0 100%); } 2.2%, 18.9% { clip-path: inset(0); } 19%, 100% { clip-path: inset(0 0 0 100%); } }
+
+/* beeld: langzame push-in met een lichte drift */
+.hp-06-pic { position: relative; overflow: hidden; }
+.hp-06-pic img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: hp-06-push calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+@keyframes hp-06-push { 0% { transform: scale(1.22) translateX(4%); } 19%, 100% { transform: scale(1.04) translateX(0); } }
+
+/* tekst: één zin, regels rijzen op, kernwoord in volt */
+.hp-06-txt {
+  display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 0.04em;
+  padding: var(--hp-space-sm) var(--hp-space-gutter-r) calc(var(--hp-space-xl) - 8px) var(--hp-space-gutter);
+  font: 800 clamp(36px, 10vw, 104px)/0.95 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase;
+}
+.hp-06-ln { display: block; padding-right: 0.06em; animation: hp-06-rise calc(var(--hp-dur-3) * 16) var(--hp-ease) infinite; }
+.hp-06-ln--hit { color: var(--hi-yellow); font-style: italic; font-weight: 900; font-size: 1.32em; line-height: 0.9; }
+.hp-06-ch .hp-06-ln:nth-child(2) { animation-name: hp-06-rise2; }
+.hp-06-ch .hp-06-ln:nth-child(3) { animation-name: hp-06-rise3; }
+@keyframes hp-06-rise { 0%, 2% { clip-path: inset(0 0 100% 0); transform: translateY(45%); } 4.5%, 100% { clip-path: inset(-0.2em -0.2em -0.2em 0); transform: none; } }
+@keyframes hp-06-rise2 { 0%, 3.6% { clip-path: inset(0 0 100% 0); transform: translateY(45%); } 6.1%, 100% { clip-path: inset(-0.2em -0.2em -0.2em 0); transform: none; } }
+@keyframes hp-06-rise3 { 0%, 5.4% { clip-path: inset(0 0 100% 0); transform: translateY(45%) scale(1.2); } 7.6% { clip-path: inset(-0.2em -0.2em -0.2em 0); transform: scale(0.97); } 8.6%, 100% { clip-path: inset(-0.2em -0.2em -0.2em 0); transform: none; } }
+
+/* HUD onderin het tekstpaneel */
+.hp-06-hud {
+  position: absolute; z-index: 2; left: var(--hp-space-gutter); right: var(--hp-space-gutter-r); bottom: var(--hp-space-md);
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; column-gap: var(--hp-space-sm);
+  font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium);
+}
+.hp-06-toggle {
+  grid-column: 1; grid-row: 1; display: grid; place-items: center; width: 40px; height: 40px; padding: 0;
+  border: 1px solid var(--hi-line-dark); border-radius: 8px; background: transparent; color: var(--hi-white); cursor: pointer;
+  transition: border-color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-toggle svg { width: 12px; height: 12px; }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play { display: block; }
+.hp-06-toggle:focus-visible { outline: 2px solid var(--hi-white); }
+.hp-06-toggle:active { border-color: var(--hi-white); }
+@media (hover: hover) { .hp-06-toggle:hover { border-color: var(--hi-white); } }
+.hp-06-chap { grid-column: 2; grid-row: 1; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.hp-06-chap__seg { position: relative; height: 3px; background: var(--hi-line-dark); overflow: hidden; }
+.hp-06-chap__seg::after { content: ""; position: absolute; inset: 0; background: var(--hi-white); transform-origin: 0 50%; transform: scaleX(clamp(0, calc(var(--hp-06-p) * 6 - var(--k)), 1)); }
+.hp-06-chap__seg:nth-child(1) { --k: 0; } .hp-06-chap__seg:nth-child(2) { --k: 1; } .hp-06-chap__seg:nth-child(3) { --k: 2; }
+.hp-06-chap__seg:nth-child(4) { --k: 3; } .hp-06-chap__seg:nth-child(5) { --k: 4; } .hp-06-chap__seg:nth-child(6) { --k: 5; }
+.hp-06-tc { grid-column: 3; grid-row: 1; font-variant-numeric: tabular-nums; }
+.hp-06-tc__now { color: var(--hi-white); }
+
+/* desktop: tekstpaneel links (40%), beeld rechts (60%) */
+@media (min-width: 769px) {
+  .hp-06-ch { grid-template-rows: none; grid-template-columns: minmax(0, 4fr) minmax(0, 6fr); }
+  .hp-06-pic { grid-column: 2; grid-row: 1; }
+  .hp-06-txt { grid-column: 1; grid-row: 1; padding: var(--hp-space-xl) var(--hp-space-md) var(--hp-space-xl) max(40px, env(safe-area-inset-left, 0px)); font-size: clamp(40px, 4.6vw, 96px); }
+  .hp-06-hud { left: max(40px, env(safe-area-inset-left, 0px)); right: auto; width: calc(40% - 40px - var(--hp-space-md)); bottom: var(--hp-space-ml); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-06-ch:not(.hp-06-ch--1), .hp-06-toggle, .hp-06-chap, .hp-06-tc { display: none; }
+}

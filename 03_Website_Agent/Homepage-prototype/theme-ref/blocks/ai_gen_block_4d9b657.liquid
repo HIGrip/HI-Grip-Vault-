@@ -1,0 +1,315 @@
+{% doc %}
+  @prompt
+    Maak een knop die er sportief uit ziet die we zelf kunnen aanpassen welke positie die horizontaal staat. DAT WE DE UITLIJNING HANDMATIG KUNNEN AANPASSEN PER PIXEL, ER MOET EEN PIJL OPKOMEN LINKS. SPORTIEF EN ENERGIEKE UITSTRALING
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-sport-button-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-sport-button-container-{{ ai_gen_id }} {
+    display: flex;
+    width: 100%;
+  }
+
+  .ai-sport-button-link-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    text-decoration: none;
+    text-transform: {{ block.settings.text_transform }};
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: {{ block.settings.letter_spacing }}px;
+    margin-left: {{ block.settings.horizontal_position }}px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-sport-button-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.border_hover_color }};
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-sport-button-link-{{ ai_gen_id }}:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-sport-button-arrow-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: {{ block.settings.arrow_size }}px;
+    height: {{ block.settings.arrow_size }}px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-sport-button-link-{{ ai_gen_id }}:hover .ai-sport-button-arrow-{{ ai_gen_id }} {
+    transform: translateX(4px);
+  }
+
+  .ai-sport-button-arrow-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-sport-button-container-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+
+    .ai-sport-button-link-{{ ai_gen_id }} {
+      margin-left: 0;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-sport-button-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-sport-button-container-{{ ai_gen_id }}">
+    <a href="{{ block.settings.button_link }}" class="ai-sport-button-link-{{ ai_gen_id }}">
+      {{ block.settings.button_text }}
+      {% if block.settings.show_arrow %}
+        <span class="ai-sport-button-arrow-{{ ai_gen_id }}">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </span>
+      {% endif %}
+    </a>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Sportieve knop",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Knop"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Knoptekst",
+      "default": "Klik hier"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Knoplink"
+    },
+    {
+      "type": "header",
+      "content": "Pijl"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrow",
+      "label": "Toon pijl",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "arrow_size",
+      "label": "Pijlgrootte",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Positie"
+    },
+    {
+      "type": "range",
+      "id": "horizontal_position",
+      "label": "Horizontale positie",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "unit": "px",
+      "default": 0,
+      "info": "Verschuif de knop horizontaal per 5 pixels (alleen desktop)"
+    },
+    {
+      "type": "header",
+      "content": "Stijl"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Achtergrondkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Hover achtergrondkleur",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Tekstkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover tekstkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Randkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_hover_color",
+      "label": "Hover randkleur",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Randbreedte",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Hoekradius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "header",
+      "content": "Typografie"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Lettergrootte",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Letterdikte",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normaal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-vet"
+        },
+        {
+          "value": "700",
+          "label": "Vet"
+        },
+        {
+          "value": "800",
+          "label": "Extra vet"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "text_transform",
+      "label": "Teksttransformatie",
+      "options": [
+        {
+          "value": "none",
+          "label": "Normaal"
+        },
+        {
+          "value": "uppercase",
+          "label": "Hoofdletters"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "label": "Letterafstand",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Afmetingen"
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "label": "Verticale padding",
+      "min": 5,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontale padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sportieve knop"
+    }
+  ]
+}
+{% endschema %}

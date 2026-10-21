@@ -1,0 +1,49 @@
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="g2 g2-launch">
+  <div class="g2-launch__media">
+    {%- if s.image != blank -%}
+      {{ s.image | image_url: width: 1800 | image_tag: loading: 'lazy', widths: '700,1100,1500,1800', sizes: '100vw', alt: s.image_caption | default: 'Performance Grip Socks 2.0' }}
+    {%- else -%}
+      <div class="g2-launch__placeholder"><span>Foto ontbreekt nog</span></div>
+    {%- endif -%}
+  </div>
+
+  <div class="g2-launch__overlay">
+    {%- if s.status_text != blank -%}
+      <span class="g2-launch__status"><span class="g2-launch__dot"></span>{{ s.status_text }}</span>
+    {%- endif -%}
+    {%- if s.title_main != blank or s.title_accent != blank -%}
+      <h2 class="g2-launch__title">{{ s.title_main }} <span class="accent">{{ s.title_accent }}</span></h2>
+    {%- endif -%}
+    {%- if s.line != blank -%}<p class="g2-launch__line">{{ s.line }}</p>{%- endif -%}
+    {%- if s.cta_text != blank -%}<a href="{{ s.cta_url | default: '#' }}" class="g2-btn">{{ s.cta_text }} &rarr;</a>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Gripsocks 2.0 — launch",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "status_text", "label": "Statusbadge (groen bolletje, leeg = geen badge)", "default": "Nu op voorraad" },
+    { "type": "header", "content": "Titel" },
+    { "type": "text", "id": "title_main", "label": "Titel (normaal)", "default": "Performance Grip Socks" },
+    { "type": "text", "id": "title_accent", "label": "Titel (accentkleur)", "default": "2.0" },
+    { "type": "text", "id": "line", "label": "Toelichting (kort)", "default": "3 maten, 2 kleuren." },
+    { "type": "header", "content": "Knop" },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst (leeg = geen knop)", "default": "Shop nu" },
+    { "type": "url", "id": "cta_url", "label": "Knop-link" },
+    { "type": "header", "content": "Foto" },
+    { "type": "image_picker", "id": "image", "label": "Achtergrondfoto (volledig beeldvullend)" },
+    { "type": "text", "id": "image_caption", "label": "Alt-tekst (optioneel)" }
+  ],
+  "presets": [
+    { "name": "Gripsocks 2.0 — launch" }
+  ]
+}
+{% endschema %}

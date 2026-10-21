@@ -1,0 +1,88 @@
+{{ 'sport-feature.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sport-feature.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign product = s.product | default: all_products['performance-gripsokken-2-0-zwart']
+  assign tag = s.heading_tag | default: 'h1'
+  assign img_class = ''
+  if s.bw_photo
+    assign img_class = 'spf__photo'
+  endif
+-%}
+{% render 'hg-style', s: s, section_id: section.id, cls: 'spf' %}
+<header
+  class="spf spf-hero"
+  style="
+    {% if s.bg_color != blank %}--spf-bg:{{ s.bg_color }};{% endif %}
+    {% if s.text_color != blank %}--spf-fg:{{ s.text_color }};{% endif %}
+    {% if s.accent_color != blank %}--spf-accent:{{ s.accent_color }};{% endif %}
+    --spf-vh:{{ s.min_height }};--spf-focus:{{ s.focus_x }}% {{ s.focus_y }}%;
+  "
+  {{ section.shopify_attributes }}
+>
+  {%- if s.image != blank -%}
+    <div class="spf-hero__img">
+      {{- s.image | image_url: width: 2000 | image_tag: class: img_class, loading: 'eager', fetchpriority: 'high', widths: '800, 1200, 1600, 2000', sizes: '100vw', alt: s.image.alt -}}
+    </div>
+  {%- endif -%}
+  <div class="spf__wrap">
+    <{{ tag }} class="spf-hero__h1">
+      {%- if s.line_1 != blank -%}<span class="spf-hero__ln"><span>{{ s.line_1 }}</span></span>{%- endif -%}
+      {%- if s.line_2 != blank -%}<span class="spf-hero__ln"><span>{{ s.line_2 }}</span></span>{%- endif -%}
+    </{{ tag }}>
+    <div class="spf-hero__row">
+      {%- if s.text != blank -%}<p>{{ s.text }}</p>{%- endif -%}
+      {%- if s.cta_label != blank -%}
+        <div class="spf-hero__cta">
+          <a class="spf__pill" data-spf-cta href="{{ product.url | default: s.fallback_link }}">
+            {{- s.cta_label -}}
+            <svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
+          </a>
+          {%- if s.show_price and product.price != blank -%}<span class="spf-hero__price">{{ product.price | money }}</span>{%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</header>
+{%- if s.show_sticky and s.cta_label != blank -%}
+  <div class="spf-sticky" data-spf-sticky aria-hidden="true">
+    <span><b>{{ product.title | default: s.sticky_title }}</b>{% if product.price != blank %}{{ product.price | money }}{% endif %}</span>
+    <a class="spf__pill" href="{{ product.url | default: s.fallback_link }}" tabindex="-1">{{ s.cta_label }}</a>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Sport: Fotohero",
+  "settings": [
+    { "type": "image_picker", "id": "image", "label": "Achtergrondfoto" },
+    { "type": "checkbox", "id": "bw_photo", "label": "Foto zwart-wit tonen", "default": true },
+    { "type": "range", "id": "focus_x", "label": "Beeldfocus horizontaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 50 },
+    { "type": "range", "id": "focus_y", "label": "Beeldfocus verticaal", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 60 },
+    { "type": "range", "id": "min_height", "label": "Hoogte (% van het scherm)", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 90 },
+    { "type": "header", "content": "Tekst" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }, { "value": "p", "label": "Gewone tekst (p)" } ], "default": "h1" },
+    { "type": "text", "id": "line_1", "label": "Kop regel 1", "default": "Gripsokken" },
+    { "type": "text", "id": "line_2", "label": "Kop regel 2 (accentkleur)", "default": "voor rugby" },
+    { "type": "textarea", "id": "text", "label": "Subtekst", "default": "Je voet staat vast in je schoen. In de scrum, bij de sidestep en op een nat veld." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "default", "label": "Standaard (links)" }, { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" }, { "value": "right", "label": "Rechts" } ], "default": "default" },
+    { "type": "header", "content": "Knop" },
+    { "type": "product", "id": "product", "label": "Product", "info": "Leeg = Performance Gripsokken 2.0 zwart" },
+    { "type": "text", "id": "cta_label", "label": "Knoptekst", "default": "Shop nu" },
+    { "type": "checkbox", "id": "show_price", "label": "Prijs naast de knop tonen", "default": true },
+    { "type": "checkbox", "id": "show_sticky", "label": "Vaste knop onderaan op mobiel", "default": true },
+    { "type": "text", "id": "sticky_title", "label": "Titel vaste knop (als geen product)", "default": "Performance Gripsokken 2.0" },
+    { "type": "url", "id": "fallback_link", "label": "Link als geen product gevonden" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrondkleur (leeg = tekstkleur)" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekstkleur (leeg = achtergrondkleur)" },
+    { "type": "color", "id": "button_border", "label": "Knop: randkleur" },
+    { "type": "range", "id": "button_radius", "label": "Knop: hoekafronding", "min": 0, "max": 40, "step": 2, "unit": "px", "default": 40 },
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur", "default": "#0b0b0b" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#f2f2f0" },
+    { "type": "color", "id": "heading_color", "label": "Kleur kop regel 1 (leeg = tekstkleur)" },
+    { "type": "color", "id": "accent_color", "label": "Accentkleur (regel 2)", "default": "#ccff00" }
+  ],
+  "presets": [ { "name": "Sport: Fotohero" } ]
+}
+{% endschema %}

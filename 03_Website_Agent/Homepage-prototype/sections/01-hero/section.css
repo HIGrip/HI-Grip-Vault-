@@ -1,0 +1,50 @@
+/* 01 HERO · wit vlak, smalle kopbalk, groot afgerond fotoframe met video-slot.
+   De foto neemt het scherm: op desktop vult het frame de breedte tot de gutter en bijna de hele hoogte. */
+.hp-01 { background: var(--hi-white); color: var(--hi-black); padding-bottom: var(--hp-space-md); }
+
+/* kopbalk */
+.hp-01-bar { position: relative; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: var(--hp-space-sm); min-height: 64px; }
+.hp-01-logo { font: italic 900 22px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; text-decoration: none; }
+.hp-01-nav { display: none; }
+.hp-01-nav a { font: 600 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; text-decoration: none; padding-block: var(--hp-space-xs); background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat; transition: background-size var(--hp-dur-1) var(--hp-ease); }
+.hp-01-menu { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0; border: 0; background: none; cursor: pointer; font: 600 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-01-menu__icon { position: relative; width: 22px; height: 10px; border-block: 2px solid currentColor; transition: transform var(--hp-dur-1) var(--hp-ease); }
+.hp-01-menu[aria-expanded="true"] .hp-01-menu__icon { transform: scaleY(0.4); }
+
+/* mobiel menu: paneel onder de balk, over het frame */
+.hp-01-bar.is-open .hp-01-nav { display: grid; position: absolute; top: 100%; left: var(--hp-space-gutter); right: var(--hp-space-gutter-r); gap: 0; padding: var(--hp-space-xs) var(--hp-space-ms); border-radius: var(--hp-radius-media); background: var(--hi-white); box-shadow: 0 18px 40px var(--hi-line); }
+.hp-01-bar.is-open .hp-01-nav a { padding-block: var(--hp-space-sm); border-bottom: 1px solid var(--hi-line); font-size: 15px; }
+.hp-01-bar.is-open .hp-01-nav a:last-child { border-bottom: 0; }
+
+/* mediaframe */
+.hp-01-media { position: relative; overflow: hidden; isolation: isolate; aspect-ratio: 9 / 15; max-height: calc(100svh - 80px); max-width: 100%; width: 100%; border-radius: var(--hp-radius-media); background: var(--hi-near-black); }
+.hp-01-media__el { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; transform: scale(calc(var(--hp-01-base, 1.14) * var(--hp-01-zoom, 1))); transform-origin: 52% 100%; will-change: transform; }
+.hp-01-media::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, var(--hi-scrim) 0%, transparent 45%); }
+
+/* tekst op de foto */
+.hp-01-copy { position: absolute; z-index: 2; left: var(--hp-space-ms); right: var(--hp-space-ms); bottom: var(--hp-space-ms); display: grid; gap: var(--hp-space-sm); justify-items: start; color: var(--hi-white); }
+.hp-01-h1 { font-weight: 900; font-style: italic; font-size: clamp(32px, 9.2vw, 80px); line-height: 0.92; max-width: 14ch; padding-right: 0.06em; }
+.hp-01-sub { font-size: 15px; line-height: 1.45; max-width: 34ch; }
+.hp-01-cta { margin-top: var(--hp-space-xs); }
+
+@media (hover: hover) {
+  .hp-01-nav a:hover { background-size: 100% 1.5px; }
+}
+
+@media (min-width: 769px) {
+  .hp-01 { padding-bottom: var(--hp-space-ml); }
+  .hp-01-bar { min-height: 80px; }
+  .hp-01-logo { font-size: 26px; }
+  .hp-01-nav { display: flex; gap: var(--hp-space-md); }
+  .hp-01-menu { display: none; }
+  .hp-01-media { aspect-ratio: 16 / 10; max-height: calc(100svh - 96px); }
+  .hp-01-media__el { object-position: 50% 42%; --hp-01-base: 1; transform-origin: 52% 55%; }
+  .hp-01-copy { left: var(--hp-space-ml); right: var(--hp-space-ml); bottom: var(--hp-space-ml); grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-01-h1 { grid-column: 1; font-size: clamp(52px, 5vw, 80px); max-width: 12ch; }
+  .hp-01-sub { font-size: var(--hp-type-lead); }
+  .hp-01-sub { grid-column: 1; }
+  .hp-01-cta { grid-column: 2; grid-row: 1 / span 2; align-self: end; margin-top: 0; }
+}
+@media (min-width: 1200px) {
+  .hp-01-media { aspect-ratio: 16 / 9; }
+}

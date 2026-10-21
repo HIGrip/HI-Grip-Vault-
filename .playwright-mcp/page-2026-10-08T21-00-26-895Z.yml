@@ -1,0 +1,529 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [active] [ref=f5e1]:
+  - alertdialog [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - heading "Cookietoestemming" [level=2] [ref=f5e5]
+        - paragraph [ref=f5e6]:
+          - text: Wij en onze partners, waaronder Shopify, gebruiken cookies en andere technologieën om jouw ervaring te personaliseren, advertenties te tonen en analyses uit te voeren. We zullen deze cookies of technologieën pas voor deze doeleinden gebruiken nadat je hiermee hebt ingestemd. Bekijk voor meer informatie ons
+          - link "Privacybeleid" [ref=f5e7] [cursor=pointer]:
+            - /url: http://www.higrip.nl/policies/privacy-policy
+      - generic [ref=f5e8]:
+        - button "Voorkeuren beheren" [ref=f5e9]
+        - button "Accepteren" [ref=f5e10]
+        - button "Afwijzen" [ref=f5e11]
+  - link "Ga direct naar de content" [ref=f5e12] [cursor=pointer]:
+    - /url: "#MainContent"
+  - generic [ref=f5e13]:
+    - generic [ref=f5e14]:
+      - banner [ref=f5e15]:
+        - generic [ref=f5e19]:
+          - navigation "Primair" [ref=f5e23]:
+            - list [ref=f5e25]:
+              - generic:
+                - listitem [ref=f5e26]:
+                  - link "HOME" [ref=f5e27] [cursor=pointer]:
+                    - /url: /
+                - listitem [ref=f5e29]:
+                  - link "SHOP" [ref=f5e30] [cursor=pointer]:
+                    - /url: /collections/gripsokken
+                - listitem [ref=f5e32]:
+                  - link "OVER ONS" [ref=f5e33] [cursor=pointer]:
+                    - /url: /pages/over-ons
+                - listitem [ref=f5e35]:
+                  - link "ZAKELIJK" [ref=f5e36] [cursor=pointer]:
+                    - /url: /pages/zakelijk
+                - listitem [ref=f5e38]:
+                  - link "BLOGS" [ref=f5e39] [cursor=pointer]:
+                    - /url: /pages/blogs
+          - link [ref=f5e42] [cursor=pointer]:
+            - /url: /
+            - img "HÏ Grip - Home" [ref=f5e44]
+          - generic [ref=f5e45]:
+            - form "Regio en taal" [ref=f5e48]:
+              - generic [ref=f5e49]:
+                - heading "Taal" [level=2] [ref=f5e50]
+                - combobox "Taal" [ref=f5e51] [cursor=pointer]:
+                  - option "Nederlands" [selected]
+                  - option "English"
+            - button "Zoeken" [ref=f5e53] [cursor=pointer]
+            - generic [ref=f5e54]:
+              - button "Account" [ref=f5e59] [cursor=pointer]
+              - button "Winkelwagen" [ref=f5e63] [cursor=pointer]
+              - status [ref=f5e67]
+      - complementary [ref=f5e70]:
+        - generic [ref=f5e71]:
+          - generic:
+            - button "Vorige dia" [ref=f5e72] [cursor=pointer]
+            - button "Volgende dia" [ref=f5e73] [cursor=pointer]
+          - generic [ref=f5e75]:
+            - paragraph [ref=f5e76]:
+              - strong [ref=f5e77]: GRATIS VERZENDING BOVEN DE €35
+            - link "GRATIS VERZENDING BOVEN DE €35" [ref=f5e78] [cursor=pointer]:
+              - /url: /collections/all
+    - main [ref=f5e80]:
+      - region [ref=f5e83]:
+        - navigation "Kruimelpad" [ref=f5e84]:
+          - list [ref=f5e85]:
+            - listitem [ref=f5e86]:
+              - link "Home" [ref=f5e87] [cursor=pointer]:
+                - /url: https://www.higrip.nl/
+            - listitem [aria-hidden] [ref=f5e88]: /
+            - listitem [ref=f5e89]:
+              - link "Shop" [ref=f5e90] [cursor=pointer]:
+                - /url: https://www.higrip.nl/collections/gripsokken
+            - listitem [aria-hidden] [ref=f5e91]: /
+            - listitem [ref=f5e92]: Vergelijken
+        - generic [ref=f5e93]:
+          - heading "Gripsokken vergelijken 1.0 of 2.0" [level=1] [ref=f5e94]:
+            - generic [ref=f5e95]: Gripsokken vergelijken
+            - generic [ref=f5e96]:
+              - generic [ref=f5e97]: "1.0"
+              - generic [ref=f5e98]: of
+              - generic [ref=f5e99]: "2.0"
+          - generic [ref=f5e100]:
+            - paragraph [ref=f5e101]: Allebei top in hun klasse. Zie in één oogopslag welke bij jouw sport en jouw budget past.
+            - generic [ref=f5e102]:
+              - term [ref=f5e103]: "1.0"
+              - definition [ref=f5e104]: Grip voor de scherpste prijs
+              - term [ref=f5e105]: "2.0"
+              - definition [ref=f5e106]: Ultieme performance, zeven features
+            - link "Help me kiezen" [ref=f5e108] [cursor=pointer]:
+              - /url: "#kies"
+      - region "Vergelijking" [ref=f5e113]:
+        - generic "Koopbalk" [ref=f5e114]:
+          - generic [ref=f5e115]:
+            - generic [ref=f5e116]:
+              - generic [ref=f5e117]: 1.0€14,95
+              - link "Shop" [ref=f5e118] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken
+            - generic [ref=f5e119]:
+              - generic [ref=f5e120]: 2.0€17,95
+              - link "Shop" [ref=f5e121] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-zwart
+        - generic [ref=f5e122]:
+          - generic [ref=f5e123]:
+            - article [ref=f5e124]:
+              - img "Performance Gripsokken 1.0, zijaanzicht met grippatroon" [ref=f5e126]
+              - generic [ref=f5e127]: Prijsvriendelijk
+              - heading "1.0" [level=2] [ref=f5e128]
+              - paragraph [ref=f5e129]: Grip. Puur en slim geprijsd.
+              - generic "Wit" [ref=f5e131]
+              - paragraph [ref=f5e133]: €14,95
+              - link "Shop 1.0" [ref=f5e134] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken
+            - article [ref=f5e137]:
+              - img "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon" [ref=f5e139]
+              - generic [ref=f5e140]: Ultieme performance
+              - heading "2.0" [level=2] [ref=f5e141]
+              - paragraph [ref=f5e142]: Grip. Plus alles daaromheen.
+              - group "Kleur" [ref=f5e143]:
+                - link "Zwart" [ref=f5e144] [cursor=pointer]:
+                  - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-zwart
+                - link "Wit" [ref=f5e147] [cursor=pointer]:
+                  - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-wit
+              - paragraph [ref=f5e150]: €17,95
+              - link "Shop 2.0" [ref=f5e151] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-zwart
+          - generic [ref=f5e154]:
+            - heading "Grip" [level=3] [ref=f5e155]
+            - generic [ref=f5e156]:
+              - generic [ref=f5e157]:
+                - generic [ref=f5e160]: Siliconen
+                - generic [ref=f5e161]: Gripzones onder de voet
+              - generic [ref=f5e162]:
+                - generic [ref=f5e165]: Siliconen
+                - generic [ref=f5e166]: Gripzones onder de voet
+          - generic [ref=f5e167]:
+            - heading "Klasse" [level=3] [ref=f5e168]
+            - generic [ref=f5e169]:
+              - generic [ref=f5e170]:
+                - generic [ref=f5e173]: Prijs
+                - generic [ref=f5e174]: De scherpste prijs voor echte grip
+              - generic [ref=f5e175]:
+                - generic [ref=f5e178]: Performance
+                - generic [ref=f5e179]: Zeven features in één sok
+          - generic [ref=f5e180]:
+            - heading "Materiaal" [level=3] [ref=f5e181]
+            - generic [ref=f5e182]:
+              - generic [ref=f5e183]:
+                - generic [ref=f5e186]: Katoenmix
+                - generic [ref=f5e187]: 42% katoen · 41% polyester · 14% nylon · 3% spandex
+              - generic [ref=f5e188]:
+                - generic [ref=f5e191]: 30% Coolmax®
+                - generic [ref=f5e192]: Voert vocht direct af van de huid
+          - generic [ref=f5e193]:
+            - heading "Ideaal voor" [level=3] [ref=f5e194]
+            - generic [ref=f5e195]:
+              - generic [ref=f5e196]:
+                - generic [ref=f5e199]: Training
+                - generic [ref=f5e200]: Training, pilates en recreatief sporten
+              - generic [ref=f5e201]:
+                - generic [ref=f5e204]: Wedstrijd
+                - generic [ref=f5e205]: Voetbal, tennis, padel en rugby
+          - generic [ref=f5e206]:
+            - heading "Maten" [level=3] [ref=f5e207]
+            - generic [ref=f5e208]:
+              - generic [ref=f5e209]:
+                - generic [ref=f5e212]: 34–46
+                - generic [ref=f5e213]: 34–39 · 40–46
+              - generic [ref=f5e214]:
+                - generic [ref=f5e217]: 35–47
+                - generic [ref=f5e218]: 35–38 · 39–42 · 43–47
+          - generic [ref=f5e219]:
+            - heading "Kleuren" [level=3] [ref=f5e220]
+            - generic [ref=f5e221]:
+              - generic [ref=f5e222]: Wit
+              - generic [ref=f5e226]: Zwart · Wit
+          - generic [ref=f5e231]:
+            - heading "Waar hij in uitblinkt" [level=3] [ref=f5e232]
+            - generic [ref=f5e233]:
+              - generic [ref=f5e234]:
+                - generic [ref=f5e235]: Alleen 1.0
+                - list [ref=f5e236]:
+                  - listitem [ref=f5e237]: Laagste prijs per paar
+                  - listitem [ref=f5e238]: Maat vanaf 34
+                  - listitem [ref=f5e239]: Katoenmix voor elke dag
+              - generic [ref=f5e240]:
+                - generic [ref=f5e241]: Plus in 2.0
+                - list [ref=f5e242]:
+                  - listitem [ref=f5e243]: 15–20 mmHg compressie
+                  - listitem [ref=f5e244]: Naadloze teenzone
+                  - listitem [ref=f5e245]: Versterkte hiel
+                  - listitem [ref=f5e246]: Ademende bovenkant
+                  - listitem [ref=f5e247]: Special cushioning
+          - generic [ref=f5e248]:
+            - heading "Prijs" [level=3] [ref=f5e249]
+            - generic [ref=f5e250]:
+              - generic [ref=f5e251]:
+                - generic [ref=f5e252]: €14,95
+                - generic [ref=f5e253]: per paar
+              - generic [ref=f5e254]:
+                - generic [ref=f5e255]: €17,95
+                - generic [ref=f5e256]: per paar
+      - region [ref=f5e259]:
+        - generic [ref=f5e260]:
+          - generic [ref=f5e261]:
+            - heading [level=2] [ref=f5e262]:
+              - text: 2.0.
+              - emphasis [ref=f5e263]: Ultieme performance.
+            - paragraph [ref=f5e264]: Zeven features, elk op de plek waar je voet het zwaarst werkt. Tik op een feature of ga er met je muis over om te zien waar hij zit.
+          - generic [ref=f5e265]:
+            - list [ref=f5e266]:
+              - listitem [ref=f5e267]:
+                - generic [ref=f5e268]: "1"
+                - generic [ref=f5e269]: Compressie
+                - generic [ref=f5e270]: 15–20 mmHg ondersteunt de doorbloeding tijdens inspanning.
+              - listitem [ref=f5e271]:
+                - generic [ref=f5e272]: "2"
+                - generic [ref=f5e273]: Coolmax®
+                - generic [ref=f5e274]: 30% Coolmax® voert vocht direct af van de huid.
+              - listitem [ref=f5e275]:
+                - generic [ref=f5e276]: "3"
+                - generic [ref=f5e277]: Ademend
+                - generic [ref=f5e278]: Open structuur bovenop de voet.
+              - listitem [ref=f5e279]:
+                - generic [ref=f5e280]: "4"
+                - generic [ref=f5e281]: Naadloos
+                - generic [ref=f5e282]: Rondom gebreid, naadloze teenzone. Geen blaren.
+            - figure [ref=f5e283]:
+              - img "Performance Gripsokken 2.0 in zwart met zeven gemarkeerde features" [ref=f5e284]
+              - generic [aria-hidden] [ref=f5e285]: "1"
+              - generic [aria-hidden] [ref=f5e286]: "2"
+              - generic [aria-hidden] [ref=f5e287]: "3"
+              - generic [aria-hidden] [ref=f5e288]: "4"
+              - generic [aria-hidden] [ref=f5e289]: "5"
+              - generic [aria-hidden] [ref=f5e290]: "6"
+              - generic [aria-hidden] [ref=f5e291]: "7"
+            - list [ref=f5e292]:
+              - listitem [ref=f5e293]:
+                - generic [ref=f5e294]: "5"
+                - generic [ref=f5e295]: Versterkte hiel
+                - generic [ref=f5e296]: Extra dikte onder de hiel. Minder slijtage, langere levensduur.
+              - listitem [ref=f5e297]:
+                - generic [ref=f5e298]: "6"
+                - generic [ref=f5e299]: Maximale grip
+                - generic [ref=f5e300]: Siliconen zones houden je voet vast bij elke slide.
+              - listitem [ref=f5e301]:
+                - generic [ref=f5e302]: "7"
+                - generic [ref=f5e303]: Special cushioning
+                - generic [ref=f5e304]: Speciale dempingzones onder de voet.
+          - generic [ref=f5e305]:
+            - paragraph [ref=f5e306]: "Verdieping: de techniek van de 2.0. Materialen, breiwijze en metingen. Pagina volgt."
+            - link "Shop 2.0" [ref=f5e307] [cursor=pointer]:
+              - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-zwart
+      - region [ref=f5e312]:
+        - generic [ref=f5e313]:
+          - figure [ref=f5e314]:
+            - img "Padelspeler trekt witte HÏ Grip gripsokken aan, met racket en ballen ernaast" [ref=f5e315]
+          - generic [ref=f5e316]:
+            - heading [level=2] [ref=f5e317]:
+              - text: 1.0.
+              - emphasis [ref=f5e318]: Grip voor iedereen.
+            - paragraph [ref=f5e319]: Simpel, betrouwbaar en geprijsd om er meer dan één paar van te hebben. De slimme keuze voor wie vaak traint.
+            - list [ref=f5e320]:
+              - listitem [ref=f5e321]:
+                - generic [ref=f5e324]: Siliconen gripzones
+                - generic [ref=f5e325]: Je voet blijft op zijn plek in je schoen.
+              - listitem [ref=f5e326]:
+                - generic [ref=f5e329]: Katoenmix
+                - generic [ref=f5e330]: 42% katoen, voor elke training.
+              - listitem [ref=f5e331]:
+                - generic [ref=f5e334]: Twee maten
+                - generic [ref=f5e335]: 34–39 en 40–46.
+            - generic [ref=f5e336]:
+              - paragraph [ref=f5e337]: €14,95
+              - link "Shop 1.0" [ref=f5e338] [cursor=pointer]:
+                - /url: https://www.higrip.nl/products/performance-gripsokken
+      - region [ref=f5e343]:
+        - generic [ref=f5e344]:
+          - generic [ref=f5e345]:
+            - heading [level=2] [ref=f5e346]:
+              - text: Wat heb
+              - emphasis [ref=f5e347]: jij
+              - text: nodig?
+            - paragraph [ref=f5e348]: Twee vragen. Daarna weet je welke past.
+            - group "Hoe vaak sport je?" [ref=f5e349]:
+              - generic [ref=f5e351]:
+                - generic [ref=f5e352]:
+                  - radio "1–2 keer per week" [checked] [ref=f5e353] [cursor=pointer]
+                  - generic [ref=f5e354] [cursor=pointer]: 1–2 keer per week
+                - generic [ref=f5e355]:
+                  - radio "3 keer of vaker" [ref=f5e356] [cursor=pointer]
+                  - generic [ref=f5e357] [cursor=pointer]: 3 keer of vaker
+            - group "Waarvoor draag je ze?" [ref=f5e358]:
+              - generic [ref=f5e360]:
+                - generic [ref=f5e361]:
+                  - radio "Training of pilates" [checked] [ref=f5e362] [cursor=pointer]
+                  - generic [ref=f5e363] [cursor=pointer]: Training of pilates
+                - generic [ref=f5e364]:
+                  - radio "Wedstrijden" [ref=f5e365] [cursor=pointer]
+                  - generic [ref=f5e366] [cursor=pointer]: Wedstrijden
+          - generic [ref=f5e369]:
+            - generic [ref=f5e370]: Jouw match
+            - generic [ref=f5e371]: "1.0"
+            - paragraph [ref=f5e372]: Betrouwbare grip voor je trainingen, voor de scherpste prijs.
+            - link "Shop 1.0" [ref=f5e373] [cursor=pointer]:
+              - /url: https://www.higrip.nl/products/performance-gripsokken
+      - region [ref=f5e379]:
+        - generic [ref=f5e380]:
+          - 'img "Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17" [ref=f5e382]':
+            - generic [ref=f5e384]:
+              - generic [ref=f5e385]: Gewone sok
+              - generic [ref=f5e386]: 0,60
+            - generic [ref=f5e389]:
+              - generic [ref=f5e390]: Gripsok · 1.0 én 2.0
+              - generic [ref=f5e391]: 1,17
+          - generic [ref=f5e393]:
+            - heading [level=2] [ref=f5e394]:
+              - text: Gewone sok?
+              - emphasis [ref=f5e395]: Geen wedstrijd.
+            - paragraph [ref=f5e396]: "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)."
+            - paragraph [ref=f5e397]: "Sporters met gripsokken waren ook sneller op een slalomparcours en hun voorvoet schoof minder bij afremmen. Dat geldt voor allebei: het zijn gripsokken."
+            - paragraph [ref=f5e398]:
+              - text: "Bron: Apps et al. (2022), Journal of Sports Sciences 40(12) ·"
+              - link "doi 10.1080/02640414.2022.2080163" [ref=f5e399] [cursor=pointer]:
+                - /url: https://doi.org/10.1080/02640414.2022.2080163
+      - region [ref=f5e402]:
+        - generic [ref=f5e403]:
+          - heading [level=2] [ref=f5e404]:
+            - text: Kies je
+            - emphasis [ref=f5e405]: grip.
+          - generic [ref=f5e406]:
+            - link "Performance Gripsokken 1.0 1.0 Prijsvriendelijk · €14,95 Shop 1.0" [ref=f5e407] [cursor=pointer]:
+              - /url: https://www.higrip.nl/products/performance-gripsokken
+              - img "Performance Gripsokken 1.0" [ref=f5e409]
+              - generic [ref=f5e410]:
+                - generic [ref=f5e411]: "1.0"
+                - generic [ref=f5e412]: Prijsvriendelijk · €14,95
+                - generic [ref=f5e413]: Shop 1.0
+            - link "Performance Gripsokken 2.0 2.0 Ultieme performance · €17,95 Shop 2.0" [ref=f5e416] [cursor=pointer]:
+              - /url: https://www.higrip.nl/products/performance-gripsokken-2-0-zwart
+              - img "Performance Gripsokken 2.0" [ref=f5e418]
+              - generic [ref=f5e419]:
+                - generic [ref=f5e420]: "2.0"
+                - generic [ref=f5e421]: Ultieme performance · €17,95
+                - generic [ref=f5e422]: Shop 2.0
+          - generic [ref=f5e425]:
+            - generic [ref=f5e426]:
+              - generic [ref=f5e427]: 3000+
+              - text: sporters gingen je voor
+            - link "4,6 op Trustpilot" [ref=f5e428] [cursor=pointer]:
+              - /url: https://nl.trustpilot.com/review/higrip.nl
+              - generic [ref=f5e429]: 4,6
+              - text: op Trustpilot
+            - generic [ref=f5e441]: Gratis verzending vanaf €35
+            - generic [ref=f5e442]: 30 dagen retour
+    - contentinfo [ref=f5e443]:
+      - generic [ref=f5e448]:
+        - generic [ref=f5e450]:
+          - heading [level=4] [ref=f5e452]:
+            - strong [ref=f5e453]: ALGEMEEN
+          - generic [ref=f5e456]:
+            - link "Algemene voorwaarden" [ref=f5e457] [cursor=pointer]:
+              - /url: /policies/terms-of-service
+            - link "Wettelijke kennisgeving" [ref=f5e458] [cursor=pointer]:
+              - /url: /policies/legal-notice
+            - link "Verzendbeleid" [ref=f5e459] [cursor=pointer]:
+              - /url: /pages/verzendbeleid
+            - link "Retourbeleid" [ref=f5e460] [cursor=pointer]:
+              - /url: /pages/retourbeleid
+            - link "Betalingsbeleid" [ref=f5e461] [cursor=pointer]:
+              - /url: /pages/terugbetalingsbeleid
+            - link "Privacybeleid" [ref=f5e462] [cursor=pointer]:
+              - /url: /pages/privacybeleid
+        - generic [ref=f5e464]:
+          - heading [level=4] [ref=f5e466]:
+            - strong [ref=f5e467]: HÏ GRIP
+          - generic [ref=f5e470]:
+            - link "Veelgestelde Vragen" [ref=f5e471] [cursor=pointer]:
+              - /url: /pages/veelgestelde-vragen
+            - link "Over Ons" [ref=f5e472] [cursor=pointer]:
+              - /url: /pages/over-ons
+            - link "Zakelijk" [ref=f5e473] [cursor=pointer]:
+              - /url: /pages/zakelijk
+            - link "Contact" [ref=f5e474] [cursor=pointer]:
+              - /url: /pages/contact
+            - link "Reviews" [ref=f5e475] [cursor=pointer]:
+              - /url: https://nl.trustpilot.com/review/higrip.nl
+            - link "Voordelen" [ref=f5e476] [cursor=pointer]:
+              - /url: /blogs/hi-grip/waarom-hi-grip-gripsokken
+        - generic [ref=f5e478]:
+          - heading [level=4] [ref=f5e480]:
+            - strong [ref=f5e481]: VOLG ONS
+          - paragraph [ref=f5e483]: "JOIN #TEAMHÏGRIP"
+          - generic [ref=f5e484]:
+            - link "Facebook" [ref=f5e486] [cursor=pointer]:
+              - /url: https://facebook.com/profile.php?id=61569860846565
+            - link "Instagram" [ref=f5e490] [cursor=pointer]:
+              - /url: https://instagram.com/higrip.nl
+            - link "Tiktok" [ref=f5e494] [cursor=pointer]:
+              - /url: https://tiktok.com/@higrip.nl
+            - link "Linkedin" [ref=f5e498] [cursor=pointer]:
+              - /url: https://linkedin.com/company/h%C3%AF-grip/about/
+          - generic [ref=f5e502]:
+            - paragraph [ref=f5e503]:
+              - link "info@higrip.nl" [ref=f5e504] [cursor=pointer]:
+                - /url: mailto:info@higrip.nl
+            - paragraph [ref=f5e505]:
+              - link "+31 6 24 56 65 47" [ref=f5e506] [cursor=pointer]:
+                - /url: mailto:info@higrip.nl
+            - paragraph [ref=f5e507]: "KVK: 97210129BTW: NL867952283B01"
+      - generic [ref=f5e511]:
+        - generic [ref=f5e515]:
+          - text: © 2026
+          - link "HÏ Grip" [ref=f5e516] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f5e517]:
+          - generic [ref=f5e518]: Betaalmethoden
+          - list [ref=f5e519]:
+            - listitem [ref=f5e520]:
+              - img "American Express" [ref=f5e521]
+            - listitem [ref=f5e526]:
+              - img "Apple Pay" [ref=f5e527]
+            - listitem [ref=f5e538]:
+              - img "Google Pay" [ref=f5e539]
+            - listitem [ref=f5e547]:
+              - img "iDEAL Wero" [ref=f5e548]
+            - listitem [ref=f5e563]:
+              - img "Klarna" [ref=f5e564]
+            - listitem [ref=f5e568]:
+              - img "Maestro" [ref=f5e569]
+            - listitem [ref=f5e575]:
+              - img "Mastercard" [ref=f5e576]
+            - listitem [ref=f5e583]:
+              - img "PayPal" [ref=f5e584]
+            - listitem [ref=f5e590]:
+              - img "Union Pay" [ref=f5e591]
+            - listitem [ref=f5e597]:
+              - img "Visa" [ref=f5e598]
+  - dialog [aria-hidden] [ref=f5e603]:
+    - generic [ref=f5e604]:
+      - heading [level=2] [ref=f5e613]: Jouw winkelwagen
+      - button [ref=f5e614] [cursor=pointer]
+    - generic [ref=f5e615]:
+      - generic [ref=f5e618]:
+        - heading [level=3] [ref=f5e619]: Je winkelwagen is nog leeg
+        - paragraph [ref=f5e620]: Bekijk onze Performance Gripsokken hieronder.
+      - generic [ref=f5e621]:
+        - heading [level=3] [ref=f5e624]: Populair bij sporters
+        - generic [ref=f5e625]:
+          - article [ref=f5e626]:
+            - link [ref=f5e627] [cursor=pointer]:
+              - /url: /products/performance-gripsokken
+            - generic [ref=f5e629]:
+              - link [ref=f5e630] [cursor=pointer]:
+                - /url: /products/performance-gripsokken
+                - text: Performance Gripsokken
+              - combobox [ref=f5e631]
+              - generic [ref=f5e632]: €14,95
+            - button [ref=f5e634] [cursor=pointer]: + Add
+          - article [ref=f5e635]:
+            - link [ref=f5e636] [cursor=pointer]:
+              - /url: /products/performance-gripsokken-2-0-zwart
+            - generic [ref=f5e638]:
+              - link [ref=f5e639] [cursor=pointer]:
+                - /url: /products/performance-gripsokken-2-0-zwart
+                - text: Performance Gripsokken 2.0 Zwart
+              - combobox [ref=f5e640]
+              - generic [ref=f5e641]: €17,95
+            - button [ref=f5e643] [cursor=pointer]: + Add
+          - article [ref=f5e644]:
+            - link [ref=f5e645] [cursor=pointer]:
+              - /url: /products/performance-gripsokken-2-0-wit
+            - generic [ref=f5e647]:
+              - link [ref=f5e648] [cursor=pointer]:
+                - /url: /products/performance-gripsokken-2-0-wit
+                - text: Performance Gripsokken 2.0 Wit
+              - combobox [ref=f5e649]
+              - generic [ref=f5e650]: €17,95
+            - button [ref=f5e652] [cursor=pointer]: + Add
+    - link [ref=f5e655] [cursor=pointer]:
+      - /url: /collections/gripsokken
+      - text: Bekijk producten
+  - iframe [ref=f5e657]:
+    - generic [ref=f7e4]:
+      - button [ref=f7e7] [cursor=pointer]
+      - generic [ref=f7e15]:
+        - generic [ref=f7e18]:
+          - link [ref=f7e19] [cursor=pointer]:
+            - /url: https://admin.shopify.com/store/raqds3-tb
+            - img "Logo" [ref=f7e20]
+          - generic [ref=f7e22]:
+            - generic [ref=f7e23]: AI website workspace 2.0
+            - generic [ref=f7e24]: Draft
+        - generic [ref=f7e26]:
+          - button "Hide bar" [ref=f7e28] [cursor=pointer]
+          - button "Exit preview" [ref=f7e31] [cursor=pointer]
+          - button "Copy link" [ref=f7e35] [cursor=pointer]

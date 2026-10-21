@@ -1,0 +1,551 @@
+{% doc %}
+  @prompt
+    Een interactieve verticale tijdlijn die oplicht wanneer de gebruiker scrollt
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-timeline-container-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: 60px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-timeline-wrapper-{{ ai_gen_id }} {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .ai-timeline-line-{{ ai_gen_id }} {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: {{ block.settings.line_width }}px;
+    background-color: {{ block.settings.line_color }};
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .ai-timeline-progress-{{ ai_gen_id }} {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    background-color: {{ block.settings.active_line_color }};
+    transition: height 0.3s ease;
+  }
+
+  .ai-timeline-items-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 2;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }} {
+    position: relative;
+    margin-bottom: 80px;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-timeline-content-{{ ai_gen_id }} {
+    width: calc(50% - 60px);
+    padding: 24px;
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}:nth-child(odd) .ai-timeline-content-{{ ai_gen_id }} {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}:nth-child(even) .ai-timeline-content-{{ ai_gen_id }} {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .ai-timeline-dot-{{ ai_gen_id }} {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: {{ block.settings.dot_size }}px;
+    height: {{ block.settings.dot_size }}px;
+    background-color: {{ block.settings.line_color }};
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    z-index: 3;
+  }
+
+  .ai-timeline-item-{{ ai_gen_id }}.active .ai-timeline-dot-{{ ai_gen_id }} {
+    background-color: {{ block.settings.active_dot_color }};
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+
+  .ai-timeline-date-{{ ai_gen_id }} {
+    font-size: {{ block.settings.date_size }}px;
+    color: {{ block.settings.date_color }};
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  .ai-timeline-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 12px;
+    font-weight: 700;
+  }
+
+  .ai-timeline-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-timeline-line-{{ ai_gen_id }} {
+      left: 20px;
+    }
+
+    .ai-timeline-content-{{ ai_gen_id }} {
+      width: calc(100% - 60px);
+      margin-left: 60px !important;
+      margin-right: 0 !important;
+    }
+
+    .ai-timeline-dot-{{ ai_gen_id }} {
+      left: 20px;
+    }
+  }
+{% endstyle %}
+
+<scroll-timeline-{{ ai_gen_id }}
+  class="ai-timeline-container-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-timeline-wrapper-{{ ai_gen_id }}">
+    <div class="ai-timeline-line-{{ ai_gen_id }}">
+      <div class="ai-timeline-progress-{{ ai_gen_id }}"></div>
+    </div>
+
+    <div class="ai-timeline-items-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        {% liquid
+          assign date_key = 'item_' | append: i | append: '_date'
+          assign title_key = 'item_' | append: i | append: '_title'
+          assign description_key = 'item_' | append: i | append: '_description'
+          assign enabled_key = 'item_' | append: i | append: '_enabled'
+
+          assign item_date = block.settings[date_key]
+          assign item_title = block.settings[title_key]
+          assign item_description = block.settings[description_key]
+          assign item_enabled = block.settings[enabled_key]
+        %}
+
+        {% if item_enabled %}
+          <div class="ai-timeline-item-{{ ai_gen_id }}" data-timeline-item>
+            <div class="ai-timeline-content-{{ ai_gen_id }}">
+              {% if item_date != blank %}
+                <div class="ai-timeline-date-{{ ai_gen_id }}">{{ item_date }}</div>
+              {% endif %}
+              {% if item_title != blank %}
+                <{{ block.settings.heading_tag | default: "h3" }} class="ai-timeline-title-{{ ai_gen_id }}">{{ item_title }}</{{ block.settings.heading_tag | default: "h3" }}>
+              {% endif %}
+              {% if item_description != blank %}
+                <div class="ai-timeline-description-{{ ai_gen_id }}">{{ item_description }}</div>
+              {% endif %}
+            </div>
+            <div class="ai-timeline-dot-{{ ai_gen_id }}"></div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</scroll-timeline-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ScrollTimeline{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.items = [];
+        this.progressBar = null;
+        this.timelineWrapper = null;
+      }
+
+      connectedCallback() {
+        this.items = Array.from(this.querySelectorAll('[data-timeline-item]'));
+        this.progressBar = this.querySelector('.ai-timeline-progress-{{ ai_gen_id }}');
+        this.timelineWrapper = this.querySelector('.ai-timeline-wrapper-{{ ai_gen_id }}');
+
+        if (this.items.length === 0) return;
+
+        this.handleScroll = this.handleScroll.bind(this);
+        window.addEventListener('scroll', this.handleScroll);
+        this.handleScroll();
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('scroll', this.handleScroll);
+      }
+
+      handleScroll() {
+        const wrapperRect = this.timelineWrapper.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const scrollTrigger = windowHeight * 0.7;
+
+        this.items.forEach((item, index) => {
+          const itemRect = item.getBoundingClientRect();
+          const itemTop = itemRect.top;
+
+          if (itemTop < scrollTrigger) {
+            item.classList.add('active');
+          } else {
+            item.classList.remove('active');
+          }
+        });
+
+        const wrapperTop = wrapperRect.top;
+        const wrapperHeight = wrapperRect.height;
+        const scrollProgress = Math.max(0, Math.min(1, (scrollTrigger - wrapperTop) / wrapperHeight));
+        
+        if (this.progressBar) {
+          this.progressBar.style.height = (scrollProgress * 100) + '%';
+        }
+      }
+    }
+
+    customElements.define('scroll-timeline-{{ ai_gen_id }}', ScrollTimeline{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Scroll tijdlijn",
+  "tag": null,
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h3" },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Achtergrondkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Tijdlijn"
+    },
+    {
+      "type": "range",
+      "id": "line_width",
+      "label": "Lijndikte",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "Lijnkleur",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "color",
+      "id": "active_line_color",
+      "label": "Actieve lijnkleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "dot_size",
+      "label": "Punt grootte",
+      "min": 12,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "active_dot_color",
+      "label": "Actieve punt kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Kaart stijl"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Kaart achtergrond",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Kaart border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Tekst stijl"
+    },
+    {
+      "type": "range",
+      "id": "date_size",
+      "label": "Datum grootte",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Datum kleur",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Titel grootte",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titel kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Beschrijving grootte",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Beschrijving kleur",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Item 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_1_enabled",
+      "label": "Toon item 1",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_1_date",
+      "label": "Datum",
+      "default": "2020"
+    },
+    {
+      "type": "text",
+      "id": "item_1_title",
+      "label": "Titel",
+      "default": "Het begin"
+    },
+    {
+      "type": "textarea",
+      "id": "item_1_description",
+      "label": "Beschrijving",
+      "default": "Onze reis begon met een simpel idee en een passie voor innovatie."
+    },
+    {
+      "type": "header",
+      "content": "Item 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_2_enabled",
+      "label": "Toon item 2",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_2_date",
+      "label": "Datum",
+      "default": "2021"
+    },
+    {
+      "type": "text",
+      "id": "item_2_title",
+      "label": "Titel",
+      "default": "Eerste mijlpaal"
+    },
+    {
+      "type": "textarea",
+      "id": "item_2_description",
+      "label": "Beschrijving",
+      "default": "We bereikten onze eerste grote mijlpaal en groeiden als team."
+    },
+    {
+      "type": "header",
+      "content": "Item 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_3_enabled",
+      "label": "Toon item 3",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_3_date",
+      "label": "Datum",
+      "default": "2022"
+    },
+    {
+      "type": "text",
+      "id": "item_3_title",
+      "label": "Titel",
+      "default": "Expansie"
+    },
+    {
+      "type": "textarea",
+      "id": "item_3_description",
+      "label": "Beschrijving",
+      "default": "Uitbreiding naar nieuwe markten en het lanceren van nieuwe producten."
+    },
+    {
+      "type": "header",
+      "content": "Item 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_4_enabled",
+      "label": "Toon item 4",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_4_date",
+      "label": "Datum",
+      "default": "2023"
+    },
+    {
+      "type": "text",
+      "id": "item_4_title",
+      "label": "Titel",
+      "default": "Innovatie"
+    },
+    {
+      "type": "textarea",
+      "id": "item_4_description",
+      "label": "Beschrijving",
+      "default": "Introductie van baanbrekende technologie en nieuwe samenwerkingen."
+    },
+    {
+      "type": "header",
+      "content": "Item 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_5_enabled",
+      "label": "Toon item 5",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_5_date",
+      "label": "Datum",
+      "default": "2024"
+    },
+    {
+      "type": "text",
+      "id": "item_5_title",
+      "label": "Titel",
+      "default": "Groei"
+    },
+    {
+      "type": "textarea",
+      "id": "item_5_description",
+      "label": "Beschrijving",
+      "default": "Verdubbeling van ons team en bereiken van internationale erkenning."
+    },
+    {
+      "type": "header",
+      "content": "Item 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "item_6_enabled",
+      "label": "Toon item 6",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "item_6_date",
+      "label": "Datum",
+      "default": "2025"
+    },
+    {
+      "type": "text",
+      "id": "item_6_title",
+      "label": "Titel",
+      "default": "De toekomst"
+    },
+    {
+      "type": "textarea",
+      "id": "item_6_description",
+      "label": "Beschrijving",
+      "default": "Blijven innoveren en onze visie voor de toekomst realiseren."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scroll tijdlijn"
+    }
+  ]
+}
+{% endschema %}

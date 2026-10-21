@@ -1,0 +1,52 @@
+/* HÏ Grip — kopstijl voor h1, h2 en h3: Poppins dik (800), schuin, letters dichter op elkaar
+   (zoals het logo) en in hoofdletters. Alleen h1-h3; h4-h6, subtitels en overige teksten volgen
+   gewoon het thema. Werkt via de type-preset-variabelen van het thema (--font-hN--*), dus alle
+   koppen die een preset volgen (h1-h3, .h1-.h3) krijgen dit automatisch. */
+
+:root {
+  --hi-heading-weight: 800;
+  --hi-heading-style: italic;
+  --hi-heading-tracking: -0.04em;
+
+  --font-h1--weight: var(--hi-heading-weight);
+  --font-h2--weight: var(--hi-heading-weight);
+  --font-h3--weight: var(--hi-heading-weight);
+
+  --font-h1--style: var(--hi-heading-style);
+  --font-h2--style: var(--hi-heading-style);
+  --font-h3--style: var(--hi-heading-style);
+
+  --font-h1--letter-spacing: var(--hi-heading-tracking);
+  --font-h2--letter-spacing: var(--hi-heading-tracking);
+  --font-h3--letter-spacing: var(--hi-heading-tracking);
+
+  --font-h1--case: uppercase;
+  --font-h2--case: uppercase;
+  --font-h3--case: uppercase;
+}
+
+/* Koppen zonder preset-klasse (rich text, artikelen, pagina-inhoud).
+   De vraag-koppen in de uitklappers (class eindigt op __q) blijven gewone letters voor leesbaarheid. */
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-style: var(--hi-heading-style);
+  /* Smalle letters + hoofdletters laten woorden aan elkaar kleven; iets woordruimte terug */
+  word-spacing: 0.1em;
+  /* Lange woorden breken liever netjes dan uit hun kaart te lopen */
+  overflow-wrap: break-word;
+}
+h1:not([class*="__q"]),
+h2:not([class*="__q"]),
+h3:not([class*="__q"]) {
+  text-transform: uppercase;
+}
+
+/* Koppen in de eigen HÏ Grip-secties die hun eigen letterspatiëring hebben */
+html .sl__h2,
+html .sl-story__item h3,
+html .sl-story__body :is(h2, h3) {
+  font-style: var(--hi-heading-style);
+  font-weight: var(--hi-heading-weight);
+  letter-spacing: var(--hi-heading-tracking);
+  text-transform: uppercase;
+}

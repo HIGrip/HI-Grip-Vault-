@@ -1,0 +1,344 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "s1_hero": {
+      "type": "mvv-1-hero",
+      "settings": {
+        "t2": "Hardloper in witte HÏ Grip-gripsokken loopt over een fietspad tussen het groen, van achteren gezien",
+        "t3": "Een generatie",
+        "t4": "die blijft gaan,",
+        "t5": "<em>blijft groeien.</em>",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s2_visie": {
+      "type": "mvv-2-visie",
+      "blocks": {
+        "blk2001": {
+          "type": "b1",
+          "settings": {
+            "t1": "Nu",
+            "t2": "Performance Grip Socks"
+          }
+        },
+        "blk2002": {
+          "type": "b1",
+          "settings": {
+            "t1": "Binnen 5 jaar",
+            "t2": "Gewaardeerd in heel Europa"
+          }
+        },
+        "blk2003": {
+          "type": "b1",
+          "settings": {
+            "t1": "Over 10 jaar",
+            "t2": "Sporters verbonden door performance"
+          }
+        }
+      },
+      "block_order": [
+        "blk2001",
+        "blk2002",
+        "blk2003"
+      ],
+      "settings": {
+        "t1": "Wat is de visie van <em>HÏ Grip?</em>",
+        "t2": "De visie van HÏ Grip is dat het merk de komende tien jaar niet alleen groeit, maar de beweging versnelt naar een generatie die blijft gaan, blijft groeien en geen genoegen neemt met minder, als Nederlands sportmerk dat sporters verbindt door performance, innovatie en maatschappelijke impact.",
+        "bg_color": "{{ settings.color_palette.background }}",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s3_pijlers": {
+      "type": "mvv-3-pijlers",
+      "settings": {
+        "t1": "Op welke pijlers bouwt de visie van <em>HÏ Grip?</em>",
+        "t2": "De visie van HÏ Grip rust op vier pijlers die bepalen hoe het merk groeit: sportswear als fundament onder presteren, maatschappelijke impact door sport, meervoudige waarde samen met partners, en een team en cultuur waarin eerlijkheid, innovatie en teamgeest centraal staan.",
+        "t3": "Geloof",
+        "t4": "Ons geloof",
+        "t5": "Sportswear moet het fundament zijn waarop iedere sporter kan bouwen om het maximale uit zichzelf te halen. Daarom ontwikkelen we sportswear die verder gaat dan wat er al is: technisch, comfortabel en innovatief, zodat sporters hun eigen grenzen kunnen verleggen.",
+        "t6": "Impact",
+        "t7": "Maatschappelijke impact",
+        "t8": "We investeren in maatschappelijke sportinitiatieven. We willen kinderen, tieners en studenten verbinden door sport en bijdragen aan een toekomst waarin toegang tot sport, bewegen, presteren, vitaliteit en gezond leven vanzelfsprekend onderdeel zijn van het dagelijks leven.",
+        "t9": "Waarde",
+        "t10": "Meervoudige waarde",
+        "t11": "Team HÏ Grip creëert meervoudige waarde door verantwoord te produceren, transparant te communiceren en langdurige samenwerkingen op te bouwen met atleten, leveranciers, clubs, scholen en universiteiten.",
+        "t12": "Team",
+        "t13": "Team & cultuur",
+        "t14": "Binnen Team HÏ Grip bouwen we aan een veilige, hands-on cultuur waarin mensen zich verbonden voelen, verantwoordelijk initiatief nemen en samen vooruitgaan.",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s4_academy": {
+      "type": "mvv-4-academy",
+      "blocks": {
+        "blk4001": {
+          "type": "b1",
+          "settings": {
+            "t1": "Nieuwsbrief",
+            "t2": "Je staat ingeschreven voor de nieuwsbrief en krijgt zo de updates van HÏ Grip als eerste."
+          }
+        },
+        "blk4002": {
+          "type": "b1",
+          "settings": {
+            "t1": "Productbezit",
+            "t2": "Je draagt HÏ Grip tijdens het sporten."
+          }
+        },
+        "blk4003": {
+          "type": "b2",
+          "settings": {
+            "t1": "Verbinding",
+            "t2": "Gedreven sporters die elkaar herkennen en versterken."
+          }
+        },
+        "blk4004": {
+          "type": "b2",
+          "settings": {
+            "t1": "Early access",
+            "t2": "Als eerste toegang tot nieuwe drops, productlanceringen en exclusieve acties."
+          }
+        },
+        "blk4005": {
+          "type": "b3",
+          "settings": {
+            "t1": "Events",
+            "t2": "Straks",
+            "t3": "Eigen sport- en community-events van HÏ Grip."
+          }
+        },
+        "blk4006": {
+          "type": "b3",
+          "settings": {
+            "t1": "Online workouts",
+            "t2": "Straks",
+            "t3": "Een online omgeving die je prestaties inhoudelijk ondersteunt."
+          }
+        }
+      },
+      "block_order": [
+        "blk4001",
+        "blk4002",
+        "blk4003",
+        "blk4004",
+        "blk4005",
+        "blk4006"
+      ],
+      "settings": {
+        "t1": "Wat is de Performance Academy van <em>HÏ Grip?</em>",
+        "t2": "De Performance Academy is de community van HÏ Grip die sporters verbindt door events, sportswear en maatschappelijke impact, waarin members als eerste toegang krijgen tot nieuwe drops, productlanceringen en acties, en straks ook tot eigen HÏ Grip-sportevents en een online workout-omgeving.",
+        "t4": "Tennisser met racket en weerstandsbanden loopt over een gravelbaan, met witte HÏ Grip-gripsokken",
+        "t5": "Wanneer hoor je erbij?",
+        "t6": "Wat levert het je op?",
+        "bg_color": "{{ settings.color_palette.background }}",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s6_ambities": {
+      "type": "mvv-6-ambities",
+      "blocks": {
+        "blk6001": {
+          "type": "b1",
+          "settings": {
+            "t1": "Performance Academy",
+            "t2": "Eigen HÏ Grip-sportevents, meebeslissen over nieuwe producten en toegang tot ons educatieve sportplatform met workouts en tips.",
+            "mod1": true
+          }
+        },
+        "blk6002": {
+          "type": "b1",
+          "settings": {
+            "t1": "Onderwijs & impact",
+            "t2": "Samenwerken met universiteiten en onderwijsinstellingen: maatschappelijke impact en wetenschappelijk bewezen vooruitgang.",
+            "mod1": false
+          }
+        },
+        "blk6003": {
+          "type": "b1",
+          "settings": {
+            "t1": "Kwaliteits­assortiment",
+            "t2": "Hoogwaardig assortiment met de beste prijs-kwaliteitverhouding. Ook gepersonaliseerd voor clubs en beschikbaar bij de grootste retailers in Europa.",
+            "mod1": false
+          }
+        },
+        "blk6004": {
+          "type": "b1",
+          "settings": {
+            "t1": "Eigen R&D-team",
+            "t2": "Altijd de focus op innovatie en vernieuwing door ons eigen R&D-team, als onderdeel van de HÏ Grip Performance Campus, met kantoor, gym, magazijn en spa.",
+            "mod1": false
+          }
+        }
+      },
+      "block_order": [
+        "blk6001",
+        "blk6002",
+        "blk6003",
+        "blk6004"
+      ],
+      "settings": {
+        "t1": "Welke ambities heeft <em>HÏ Grip?</em>",
+        "t2": "HÏ Grip heeft vier ambities die de visie de komende jaren concreet maken en laten zien hoe het merk wil groeien: als community voor sporters, als partner van het onderwijs, als assortiment voor clubs en retail, en als innovator met een eigen R&D-team.",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s7_voor_jou": {
+      "type": "mvv-7-voor-jou",
+      "settings": {
+        "t2": "Voetballer in een zwart HÏ Grip-shirt en witte gripsokken neemt de bal mee op een kunstgrasveld",
+        "t3": "Wat betekent de visie van HÏ Grip <em>voor jou?</em>",
+        "t4": "Voor jou betekent de visie van HÏ Grip dat je sportswear met je meegroeit: vandaag met gripsokken voor je kernsport, binnenkort met Performance Tubes en de Performance Skisokken (ALPINE PRO), en via de Performance Academy met een community die je als eerste meeneemt in wat er komt.",
+        "t5": "Speel je bij een club? HÏ Grip personaliseert ook voor sportclubs, zodat je hele team in dezelfde sokken staat.",
+        "url6": "https://www.higrip.nl/products/performance-gripsokken",
+        "t7": "Shop gripsokken",
+        "url8": "https://www.higrip.nl/pages/zakelijk",
+        "t9": "Gripsokken voor je club via HÏ Grip Zakelijk",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s8_afsluiting": {
+      "type": "mvv-8-afsluiting",
+      "settings": {
+        "t1": "Wie alles geeft, wordt zelf de <em>grens.</em>",
+        "t2": "De visie is waar we naartoe gaan. Waar het vandaag begint, lees je in de missie. Benieuwd wie erachter zitten? Maak kennis met",
+        "url3": "https://www.higrip.nl/pages/over-ons",
+        "t4": "de founders van HÏ Grip op Over ons",
+        "url5": "https://www.higrip.nl/pages/onze-missie",
+        "t6": "Lees de missie",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "main",
+    "s1_hero",
+    "s2_visie",
+    "s3_pijlers",
+    "s4_academy",
+    "s6_ambities",
+    "s7_voor_jou",
+    "s8_afsluiting"
+  ]
+}

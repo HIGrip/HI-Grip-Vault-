@@ -1,0 +1,6 @@
+.statement{font:600 clamp(26px,3.6vw,52px)/1.12 var(--font);letter-spacing:-.035em;max-width:24ch;text-transform:none}
+.statement .w{transition:color .3s}
+html.js.motion .statement .w{color:var(--dim)}
+html.js.motion .statement .w.is-lit{color:var(--hi-black)}
+  if(st&&motion){st.innerHTML=st.textContent.trim().split(/\s+/).map(function(w){return '<span class="w">'+w+'</span>'}).join(' ');words=st.querySelectorAll('.w')}
+    if(words.length){r=st.getBoundingClientRect();var wp=clamp((vh*.85-r.top)/(r.height+vh*.35)),n=Math.round(wp*words.length);for(var i=0;i<words.length;i++)words[i].classList.toggle('is-lit',i<n)}

@@ -1,0 +1,13 @@
+{
+  "id": "09",
+  "name": "tussensectie-zakelijk",
+  "bg": "--hi-white",
+  "assets": ["logo-spirit", "logo-concordia", "logo-sport2000", "logo-myhealthclub", "logo-syth", "logo-hr"],
+  "links": [],
+  "interactions": [
+    "hover naam (desktop): logo van grijs naar kleur en schaal 1.08, de andere namen zakken naar titanium",
+    "tik naam (touch): dezelfde staat via .is-on; nog een tik of een tik ernaast zet terug",
+    "reduced motion: geen beweging, staatwissel direct"
+  ],
+  "notes": "Namen letterlijk uit facts.json b2b_clients; h2, groepsnamen en retail_detail uit copy.json 09. SVS en V.V. Lyra zonder logo (geen asset). Logo's staan direct naast de naam in tekst en zijn daarom decoratief: alt=\"\" (de alt uit assets.json zou elke naam dubbel laten voorlezen). MyHealth Club: uitsnede 4:1 op de band in het vierkante bestand. SYTH en Hogeschool Rotterdam zijn ondoorzichtige vierkanten: afgeronde tegel. Hogeschool Rotterdam staat onder 'En verder'; facts.json meldt dat het besluit van 14-10 hierover nog open staat. Geen links en geen CTA (geen bron voor klant-URL's; de CTA zit in 10)."
+}

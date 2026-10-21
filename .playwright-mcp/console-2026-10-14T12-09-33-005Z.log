@@ -1,0 +1,40 @@
+[   22188ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://www.on.com/manifest.json:0
+[   27642ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/B25uFSKe.js:0
+[   27646ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/DdhttXGs.js:0
+[   27652ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/CqUnMwyx.js:0
+[   27654ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/WSgGZKQX.js:0
+[   27692ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/CgMjBKVb.js:0
+[   27693ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/CvLjuIcd.js:0
+[   27694ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/DLF8Jd23.js:0
+[   27695ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/zzSkyDoQ.js:0
+[   27695ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/D3gZeY0Q.js:0
+[   27840ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/C0us2xIZ.js:0
+[   27843ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/DZhkgbiC.js:0
+[   27844ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/D_3MVyQF.js:0
+[   27845ms] [ERROR] Failed to load resource: net::ERR_QUIC_PROTOCOL_ERROR @ https://www.on.com/_nuxt/C2pAiFGf.js:0
+[  436738ms] [LOG] Proxy(Object) @ https://studiofreight.com/_nuxt/CEOQYQtY.js:0
+[  493601ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://player.vimeo.com/video/761102167?title=0&byline=0&controls=0&app_id=122963:0
+[  503645ms] [LOG] %c Created by Lusion: https://lusion.co/ border:2px solid gray; padding:5px; font-family:monospace; font-size:11px; @ https://lusion.co/_astro/hoisted.CUO_IjfL.js:4185
+[  523592ms] [WARNING] [Cloudflare Turnstile] Turnstile has already been rendered in this container. The render attempt was rejected. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  524103ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  681422ms] [LOG] Turnstile Widget seem to have hung:  8zs2v @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  686267ms] [WARNING] [Cloudflare Turnstile] Error: 300030. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  709287ms] [WARNING] [Cloudflare Turnstile] Ignored message from unexpected source for event: food. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  709288ms] [WARNING] [Cloudflare Turnstile] Ignored message from unexpected source for event: food. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  709290ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  709452ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  710358ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  711255ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  800119ms] [LOG] Turnstile Widget seem to have hung:  8zs2v @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  800121ms] [WARNING] [Cloudflare Turnstile] Error: 300030. @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  805265ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  805749ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  806653ms] [WARNING] Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://challenges.cloudflare.com') does not match the recipient window's origin ('https://player.vimeo.com'). @ https://challenges.cloudflare.com/turnstile/v0/api.js?onload=turnstileLoad:1
+[  837118ms] [ERROR] [Cloudflare Turnstile] Unhandled error: Uncaught TypeError: Cannot read properties of null (reading 'appendChild') , with debug info: R+YdZrdR+G26dEmmreBmA0ETjyqJ+qOvvFfRUg1GCv4=$eVrdkmCou62zvQ3qpjxitw== @ https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:0
+[  863372ms] TypeError: Cannot read properties of null (reading 'appendChild')
+    at WS (https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:1:175446)
+    at WJ (https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:1:198495)
+    at C (https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:1:185506)
+    at W (https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:1:42984)
+    at https://challenges.cloudflare.com/cdn-cgi/challenge-platform/h/g/turnstile/f/av0/rch.0eVGk2CkMEDGxMmHcBnIIYHSlh69QZcsiVstL.k1fM-1791980482-1.3.1.1-A8v3lct_grJQmLsvnZ.MUPDRpm4LG0SgdajQioLl0Js/8zs2v/0x4AAAAAAAbaszMygKLnGbeo/auto/fbE/crashed_retry/normal?lang=auto:1:149345
+[ 1447934ms] [LOG] WebGL 2.0 is not available - initializing fallback. @ https://lando.itsoffbrand.io/dev-js/lando-by-OFF+BRAND.05.js:5468

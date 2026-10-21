@@ -1,0 +1,54 @@
+{% doc %}
+  BreadcrumbList structured data (bevinding H8 — breadcrumbs ontbraken overal
+  behalve op de padel-pagina).
+
+  Alleen structured data, geen zichtbare breadcrumb: Google accepteert dat, en zo
+  raakt geen enkel bestaand ontwerp van slag. Wil je ze later ook tonen, dan bouwt
+  die markup op dezelfde hi_crumb_*-variabelen.
+{% enddoc %}
+
+{%- liquid
+  assign hi_crumbs = ''
+
+  case request.page_type
+    when 'product'
+      if collection != blank
+        assign hi_crumbs = collection.title | append: '|' | append: collection.url | append: '||'
+      endif
+      assign hi_crumbs = hi_crumbs | append: product.title | append: '|' | append: product.url
+    when 'collection'
+      assign hi_crumbs = collection.title | append: '|' | append: collection.url
+    when 'article'
+      assign hi_crumbs = blog.title | append: '|' | append: blog.url | append: '||'
+      assign hi_crumbs = hi_crumbs | append: article.title | append: '|' | append: article.url
+    when 'blog'
+      assign hi_crumbs = blog.title | append: '|' | append: blog.url
+    when 'page'
+      assign hi_crumbs = page.title | append: '|' | append: page.url
+  endcase
+
+  assign hi_crumb_list = hi_crumbs | split: '||'
+-%}
+
+{%- if hi_crumb_list.size > 0 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ shop.url | json }}
+        }{% for crumb in hi_crumb_list %}{% assign parts = crumb | split: '|' %},
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index | plus: 1 }},
+          "name": {{ parts[0] | json }},
+          "item": {{ shop.url | append: parts[1] | json }}
+        }{% endfor %}
+      ]
+    }
+  </script>
+{%- endif -%}

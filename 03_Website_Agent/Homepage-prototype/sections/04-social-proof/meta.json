@@ -1,0 +1,17 @@
+{
+  "id": "04",
+  "name": "social-proof",
+  "bg": "--hi-offwhite",
+  "assets": ["sp-padel-voeten", "sp-voetbal-zool", "sp-gym", "sp-indoor", "sp-hardlopen", "sp-team", "sp-tennis-wit", "sp-voetbal-bal"],
+  "links": [],
+  "interactions": [
+    "rij slepen/swipen via hpDrag (align start, snap per foto, pijltjes/Home/End op de gefocuste rij); een sleep opent niets",
+    "hover (desktop): foto schaalt naar 104%, het ronde icoon schuift het label 'Open foto' uit, cursor zoom-in",
+    "tik/indrukken (touch): dezelfde staat via klasse is-press; het ronde icoon staat altijd zichtbaar als cue, plus hint_touch onder de lead",
+    "klik/tik: hpLightbox met de grote variant (srcset), vorige/volgende binnen de 8 foto's, teller 'Foto n van 8', Esc en klik buiten sluiten, focus terug op de foto, scroll-lock",
+    "Tab naar een foto buiten beeld: rij schuift ernaartoe (geen native scroll)",
+    "voortgangslijn onder de rij volgt de sleeppositie",
+    "reduced motion: geen schaal en geen glij-animatie; slepen en lightbox werken"
+  ],
+  "notes": "Lead uit copy.json zegt 'Sleep door de foto's' ook op touch; de touch-hint ('Swipe of tik op een foto') vangt dat op. Thumbnails gebruiken de kleine bestanden uit assets.json met srcset; sp-hardlopen, sp-tennis-wit en sp-voetbal-bal hebben maar één breedte (ook in de lightbox). Lightbox-labels staan als data-label-* op de section (uit copy 04.lightbox). Open punt voor base.css (niet mijn map): op 375 liggen de vorige/volgende-knoppen van hpLightbox over de foto heen."
+}

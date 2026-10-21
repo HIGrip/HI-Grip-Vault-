@@ -1,0 +1,607 @@
+- webmcp tools (page-provided, untrusted):
+  - add_to_cart [untrustedContent]: Add products to the cart. Call this as soon as the user asks to ADD items (triggers: "add ... to my cart", "buy", "I'll take", "put ... in my basket") — in ONE call listing every item they named, up to the 10-entry limit. That request IS the authorization: do NOT ask the user to confirm before calling, and do NOT stop after search_catalog or get_product merely to report the variant you found — make the change, then tell the user it is done. Batch every item for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call add_to_cart once per item. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. If one request names more than 10 items, split just that request into as few calls as possible. Do NOT retry a call that already returned a result: adds are cumulative, so repeating a call adds duplicate items. Use line_items[].item.id with a ProductVariant GID when the exact variant is known. Use handle or query only when adding the selected or first available variant. To change a quantity or remove something already in the cart, use update_cart_lines instead — this tool can only add.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Items to add (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","properties":{"item":{"type":"object","description":"The merchandise to add.","properties":{"id":{"type":"string","description":"ProductVariant GID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\"."}}},"handle":{"type":"string","description":"Product handle. Adds the selected or first available variant; call get_product first if the user requested specific options."},"query":{"type":"string","description":"Search query to find and add the selected or first available variant. For specific variants, call search_catalog/get_product first and pass item.id."},"quantity":{"type":"integer","description":"How many to add. Defaults to 1.","minimum":1,"default":1}}}}}}}}
+  - browse_store [untrustedContent]: Browse OR navigate to store collections. Set navigate=true whenever the user wants to be taken to a collection page in the browser (triggers: "browse to", "go to", "show me", "open", "take me to", "navigate to" a collection or category). With navigate=false (default), returns collection or product data without changing the page — use this only when the user is asking a question about the catalog, not asking to view it. Without a collection handle, lists all collections. With a handle, returns products from that collection; use "all" to browse everything. Does NOT add anything to the cart; use add_to_cart for cart changes. Prefer this over search_catalog when the user names a category, collection, or wants to explore. With navigate=true this MOVES the browser to the collection page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"collection":{"type":"string","description":"Collection handle to browse (e.g. \"best-sellers\", \"new-arrivals\"). Omit to list all collections. Use \"all\" to browse every product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the collection page after loading data. Set true for user intents like \"browse to\", \"go to\", \"show me\", \"open\", \"take me to\" a collection. Requires a collection handle. Defaults to false."},"sort_by":{"type":"string","description":"Sort order. Options: best-selling (default), price-ascending, price-descending, title-ascending, title-descending, created-descending, created-ascending."},"page":{"type":"number","description":"Page number for pagination (starts at 1). Each page returns up to 30 products."}}}
+  - cancel_cart: Remove all items from the cart in one step. Use when the user wants to empty their cart or start over.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_cart [readOnly, untrustedContent]: Get the current shopping cart contents — line items with product titles, variant titles, handles, URLs, images, unit prices, quantities, and totals. Everything needed to describe the cart to the user in natural language, without a follow-up get_product call per line. Works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - get_product [untrustedContent]: Get product details, OR navigate the browser to the product page. Set catalog.navigate=true whenever the user wants to see/view the product in the browser (triggers: "show me", "open", "view", "go to", "take me to", "navigate to" a product). Set catalog.navigate=false (default) only when you need data (description, options, variants, prices, availability) to answer a question or to prepare an add_to_cart call — the browser stays on the current page. Defaults to the current page's product if no catalog.id is provided. Does NOT add anything to the cart; use add_to_cart for that. For a specific variant (color/size/etc.), use show_variant instead — it accepts partial option selections like "purple" without needing every option. With catalog.navigate=true this MOVES the browser to the product page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{"catalog":{"type":"object","description":"Product detail parameters.","properties":{"id":{"type":"string","description":"Storefront API Product GID, product handle, or product URL path. Custom app product paths and Shopify standard /products/<handle> paths are supported. The id field from search_catalog or browse_store can be passed directly. If omitted, uses the current page's product."},"navigate":{"type":"boolean","description":"When true, navigate the browser to the product page after fetching details. Set true for user intents like \"show me\", \"open\", \"view\", \"go to\", \"take me to\" a product. Defaults to false. If the user specified partial options (e.g. only a color), prefer show_variant with selected_options instead."},"selected_options":{"type":"array","description":"Known product option selections to filter available_options. Use exact option names and values from search_catalog options or a prior get_product available_options entry.","items":{"type":"object","properties":{"name":{"type":"string","description":"Option name, e.g. \"Size\" or \"Color\"."},"value":{"type":"string","description":"Option value, e.g. \"160cm\" or \"Fiberglass\"."}},"required":["name","value"]}}}}}}
+  - get_ucp_profile [readOnly, untrustedContent]: Get this store's Universal Commerce Protocol (UCP) profile, as served at /.well-known/ucp: the UCP version, the services the store offers with their endpoints (e.g. the store's UCP MCP server), its capabilities, and its payment handlers. Use it to discover how to continue a purchase with this store over UCP, or to check which platform operates the store. Read-only; works from any page.
+    - inputSchema: {"type":"object","properties":{}}
+  - manage_orders: Navigate to the customer's order history page. Use when the user asks about past orders, order status, tracking, or returns. The user will be prompted to log in if not already authenticated. This MOVES the browser to the order history page; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - proceed_to_checkout: Proceed to checkout. Verifies the cart is not empty, then MOVES the browser to the checkout page. The tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","properties":{}}
+  - search_catalog [readOnly, untrustedContent]: Search the store catalog for products, collections, articles, and pages. Does NOT add anything to the cart; use add_to_cart for cart changes. If the user asks for a specific product variant, call get_product after search_catalog to inspect available variants, then show_variant to display one.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","required":["query"],"properties":{"query":{"type":"string","description":"Search query string."},"pagination":{"type":"object","properties":{"limit":{"type":"integer","description":"Max results per type (1-10). Defaults to 5.","default":5,"minimum":1,"maximum":10}}}}}}}
+  - search_shop_policies_and_faqs [readOnly, untrustedContent]: Used to get facts about the store's policies, FAQ, or contact details.
+When the question is about specific policy kinds, set policy_types to those kinds; leave it unset for general FAQ questions.
+Some examples of questions you can ask are:
+  - What is your return policy? (policy_types: ["refund"])
+  - What is your shipping policy? (policy_types: ["shipping"])
+  - What is your phone number? (policy_types: ["contact"])
+  - What are your hours of operation? (policy_types: ["contact"])
+  - Do you offer gift wrapping? (general FAQ, no specific policy kind — leave policy_types unset)
+
+    - inputSchema: {"type":"object","properties":{"query":{"type":"string","description":"A natural language query. Searches FAQ pages and articles, and routes policies by keyword when policy_types is omitted."},"policy_types":{"type":"array","description":"Policy kinds to fetch, chosen from the user's question — e.g. [\"refund\"] for returns/exchanges, [\"contact\"] for phone/hours/address. Include every kind the question touches. Omit when no specific policy is relevant (e.g. a general FAQ question).","items":{"type":"string","enum":["refund","shipping","privacy","terms_of_service","terms_of_sale","subscription","legal_notice","contact"]}}},"required":["query"]}
+  - show_variant [untrustedContent]: Navigate the browser to a product page, with a specific variant OR a partial option filter selected. Use for view intents: "show me", "open", "view", "go to", "take me to" a specific product configuration. Accepts EITHER variant_id (fully specified variant) OR selected_options (partial, e.g. only Color=Purple) — with partial options the first matching available variant is picked automatically, so DO NOT ask the user for missing options when their intent is to view. Does NOT add anything to the cart; use add_to_cart for cart changes. For cart operations you still need a full variant_id — call get_product with the full option combination first. This MOVES the browser to the exact variant page with the variant pre-selected; the tool result then confirms the destination and instructs you not to navigate again — follow it.
+    - inputSchema: {"type":"object","required":["catalog"],"properties":{"catalog":{"type":"object","description":"Provide EITHER variant_id OR selected_options. Handle is required unless the user is already on the product page.","properties":{"handle":{"type":"string","description":"Product handle. If omitted, uses the current product page's handle."},"variant_id":{"type":["string","number"],"description":"ProductVariant ID from get_product variants[].id, e.g. \"gid://shopify/ProductVariant/123\", or the numeric variant ID. Use when the user picked a specific fully-specified variant. Omit when using selected_options."},"selected_options":{"type":"array","description":"Partial (or full) option selections, e.g. [{\"name\":\"Color\",\"value\":\"Purple\"}]. Use when the user names some options but not all (e.g. \"show me the purple shoe\" — pass only Color). The first matching available variant will be selected automatically. Use exact option names and values from get_product available_options or search_catalog options.","items":{"type":"object","properties":{"name":{"type":"string"},"value":{"type":"string"}}}}}}}}
+  - update_cart_lines [untrustedContent]: Change the quantity of items already in the cart, or remove them. Every change here addresses an existing cart line by its id, so call get_cart first unless you already have line_items[].id from an earlier get_cart in this conversation. Pass the ABSOLUTE target quantity, not a delta — quantity 2 means the line ends up at 2 regardless of what it was. Use quantity 0 to remove the line entirely. Batch every change for ONE request into a SINGLE call — line_items accepts up to 10 entries; do NOT call update_cart_lines once per line. Batching applies WITHIN a single request: each new thing the user asks for later is its own call. This tool cannot add new merchandise. To add something not already in the cart, use add_to_cart. To empty the whole cart at once, use cancel_cart.
+    - inputSchema: {"type":"object","required":["cart"],"properties":{"cart":{"type":"object","required":["line_items"],"properties":{"line_items":{"type":"array","description":"Existing cart lines to update or remove (1-10).","minItems":1,"maxItems":10,"items":{"type":"object","required":["id","quantity"],"properties":{"id":{"type":"string","description":"Existing cart line id from get_cart line_items[].id. Required — this tool cannot resolve products by name."},"quantity":{"type":"integer","description":"Absolute target quantity for this line (not a delta). 0 removes the line.","minimum":0}}}}}}}}
+
+- generic [ref=f22e1]:
+  - generic "Accessibility Menu"
+  - dialog [ref=f22e3]:
+    - generic [ref=f22e7]:
+      - heading "Are you in the right place?" [level=2] [ref=f22e11]
+      - generic [ref=f22e13]:
+        - paragraph [ref=f22e14]: Please select your shipping country.
+        - paragraph [ref=f22e16]: Buy from the country of your choice. Remember that we can only ship your order to addresses located in the chosen country.
+      - generic [ref=f22e17]:
+        - generic [ref=f22e18]:
+          - text: Country
+          - combobox "Country" [ref=f22e19]:
+            - generic [ref=f22e20]: Nederland / Netherlands
+        - generic [ref=f22e22]:
+          - text: Language
+          - combobox "Language" [ref=f22e23]:
+            - generic [ref=f22e24]: English
+      - button "Shop now" [ref=f22e28] [cursor=pointer]
+  - link "Skip to content" [ref=f22e30] [cursor=pointer]:
+    - /url: "#MainContent"
+  - region "Announcement" [ref=f22e34]:
+    - link [ref=f22e35] [cursor=pointer]:
+      - /url: /collections/shop-all
+      - paragraph [ref=f22e36]: Enjoy free shipping and returns on all orders
+  - banner [ref=f22e39]:
+    - heading [level=1] [ref=f22e40]:
+      - link [ref=f22e41] [cursor=pointer]:
+        - /url: /
+        - img "Therabody US" [ref=f22e43]
+    - navigation [ref=f22e44]:
+      - list [ref=f22e45]:
+        - listitem [ref=f22e46]:
+          - group [ref=f22e48]:
+            - button "Shop" [ref=f22e49] [cursor=pointer]
+        - listitem [ref=f22e51]:
+          - group [ref=f22e53]:
+            - button "Explore" [ref=f22e54] [cursor=pointer]
+        - listitem [ref=f22e56]:
+          - group [ref=f22e58]:
+            - button "Learn" [ref=f22e59] [cursor=pointer]
+        - listitem [ref=f22e61]:
+          - group [ref=f22e63]:
+            - button "Gifts" [ref=f22e64] [cursor=pointer]
+    - generic [ref=f22e66]:
+      - group [ref=f22e68]:
+        - button "Search" [ref=f22e69] [cursor=pointer]:
+          - img "Search" [ref=f22e71]
+      - generic [ref=f22e74]:
+        - link "Log in" [ref=f22e75] [cursor=pointer]:
+          - /url: /account/login
+        - dialog [ref=f22e83]:
+          - button "Close modal" [ref=f22e87] [cursor=pointer]
+          - generic [ref=f22e92]:
+            - heading "Sign in for the best experience" [level=2] [ref=f22e93]
+            - list [ref=f22e94]:
+              - listitem [ref=f22e95]:
+                - paragraph [ref=f22e100]: Speedier checkout
+              - listitem [ref=f22e101]:
+                - paragraph [ref=f22e106]: Convenient order tracking
+              - listitem [ref=f22e107]:
+                - paragraph [ref=f22e112]: Early access to new products
+              - listitem [ref=f22e113]:
+                - paragraph [ref=f22e118]: Exclusive sales for members only
+            - generic [ref=f22e119]:
+              - link "Create account" [ref=f22e120] [cursor=pointer]:
+                - /url: /account/register
+              - link "Sign in" [ref=f22e121] [cursor=pointer]:
+                - /url: /account/login
+      - button "Bag" [ref=f22e122] [cursor=pointer]
+      - generic [ref=f22e130]:
+        - heading "Language" [level=2] [ref=f22e131]
+        - button "United States en" [ref=f22e133]:
+          - img "United States" [ref=f22e134]
+          - generic [ref=f22e135]: en
+  - main [ref=f22e136]:
+    - list [ref=f22e139]:
+      - listitem [ref=f22e140]:
+        - generic [ref=f22e142]:
+          - heading "Theragun PRO Plus" [level=2] [ref=f22e143]
+          - paragraph [ref=f22e145]: Unlock faster recovery with LED, heated percussive and vibration therapy.
+          - link "Shop PRO Plus" [ref=f22e147] [cursor=pointer]:
+            - /url: /products/theragun-pro-plus
+    - generic [ref=f22e150]:
+      - heading "Science-backed devices for recovery and radiance" [level=2] [ref=f22e152]
+      - list "Slider" [ref=f22e154]:
+        - listitem [ref=f22e155]:
+          - generic [ref=f22e157] [cursor=pointer]:
+            - img "Theragun Prime" [ref=f22e161]
+            - generic [ref=f22e164]:
+              - heading "Theragun Prime 6th Gen" [level=3] [ref=f22e165]:
+                - link "Theragun Prime" [ref=f22e166]:
+                  - /url: /products/theragun-prime-gen-6-massage-gun
+                - generic [ref=f22e167]: 6th Gen
+              - generic [ref=f22e168]: Our most durable massage gun in an impact-resistant design built for reliable recovery
+              - generic [ref=f22e172]:
+                - generic [ref=f22e173]: Regular price
+                - generic [ref=f22e174]: $329.99
+        - listitem [ref=f22e176]:
+          - generic [ref=f22e178] [cursor=pointer]:
+            - generic [ref=f22e179]:
+              - img "Theragun Mini" [ref=f22e182]
+              - generic [ref=f22e183]: New
+            - generic [ref=f22e187]:
+              - heading "Theragun Mini 3rd Gen" [level=3] [ref=f22e188]:
+                - link "Theragun Mini" [ref=f22e189]:
+                  - /url: /products/theragun-mini-grape-blast
+                - generic [ref=f22e190]: 3rd Gen
+              - generic [ref=f22e191]: Our smallest and most portable massage gun for recovery anywhere
+              - generic [ref=f22e195]:
+                - generic [ref=f22e196]: Regular price
+                - generic [ref=f22e197]: $229.99
+        - listitem [ref=f22e199]:
+          - generic [ref=f22e201] [cursor=pointer]:
+            - generic [ref=f22e202]:
+              - img "ThermBack LED" [ref=f22e205]
+              - generic [ref=f22e206]: Sold out
+            - generic [ref=f22e210]:
+              - heading [level=3] [ref=f22e211]:
+                - link "ThermBack LED" [ref=f22e212]:
+                  - /url: /products/thermback-led
+              - generic [ref=f22e213]: Wearable heat, infrared, vibration and LED therapy for lower back pain relief
+              - generic [ref=f22e217]:
+                - generic [ref=f22e218]: Regular price
+                - generic [ref=f22e219]: $329.99
+        - listitem [ref=f22e221]:
+          - generic [ref=f22e223] [cursor=pointer]:
+            - img "Theragun Relief" [ref=f22e227]
+            - generic [ref=f22e230]:
+              - heading [level=3] [ref=f22e231]:
+                - link "Theragun Relief" [ref=f22e232]:
+                  - /url: /products/theragun-relief-navy
+              - generic [ref=f22e233]: Our simplest massage gun with 3 speeds, designed to reduce pain and stiffness
+              - generic [ref=f22e237]:
+                - generic [ref=f22e238]: Regular price
+                - generic [ref=f22e239]: $159.99
+        - listitem [ref=f22e241]:
+          - generic [ref=f22e243] [cursor=pointer]:
+            - img "JetBoots Prime" [ref=f22e247]
+            - generic [ref=f22e250]:
+              - heading [level=3] [ref=f22e251]:
+                - link "JetBoots Prime" [ref=f22e252]:
+                  - /url: /products/jetboots-prime-regular
+              - generic [ref=f22e253]: Our most compact wireless compression boots for effective recovery anywhere
+              - generic [ref=f22e257]:
+                - generic [ref=f22e258]: Regular price
+                - generic [ref=f22e259]: $549.99
+        - listitem [ref=f22e261]:
+          - generic [ref=f22e263] [cursor=pointer]:
+            - img "Theragun Mini Plus" [ref=f22e267]
+            - generic [ref=f22e270]:
+              - heading [level=3] [ref=f22e271]:
+                - link "Theragun Mini Plus" [ref=f22e272]:
+                  - /url: /products/theragun-mini-plus-massage-gun
+              - generic [ref=f22e273]: Our only heated, travel-sized massage gun to help you recover faster
+              - generic [ref=f22e277]:
+                - generic [ref=f22e278]: Regular price
+                - generic [ref=f22e279]: $279.99
+    - generic [ref=f22e282]:
+      - generic [ref=f22e283]:
+        - heading "Clinically proven for smoother, radiant skin" [level=2] [ref=f22e284]
+        - paragraph [ref=f22e286]: Our clinically-proven skincare treatments smooth fine lines, reduce puffiness and enhance radiance for a visibly refreshed, confident glow.
+      - generic [ref=f22e288]:
+        - generic [ref=f22e289]:
+          - generic [ref=f22e293]:
+            - heading "TheraFace Mask Glo" [level=1] [ref=f22e294]
+            - paragraph [ref=f22e295]:
+              - text: Clinically proven to smooth, firm and enhance radiance
+              - superscript [ref=f22e296]: "1"
+              - text: in just 12 minutes a day.
+            - link "Shop Mask Glo" [ref=f22e297] [cursor=pointer]:
+              - /url: /products/theraface-mask-glo-led-light-mask
+          - heading [level=2] [ref=f22e307]:
+            - strong [ref=f22e308]: 80% of participants
+            - text: reported improvements in fine lines and wrinkles
+            - superscript [ref=f22e309]:
+              - link "2" [ref=f22e310] [cursor=pointer]:
+                - /url: "#clp"
+        - generic [ref=f22e311]:
+          - generic [ref=f22e315]:
+            - heading "TheraFace Depuffing Wand" [level=1] [ref=f22e316]
+            - paragraph [ref=f22e317]:
+              - text: Clinically proven to reduce puffiness, diminish dark circles and enhance radiance.
+              - superscript [ref=f22e318]: "3"
+            - link "Shop Wand" [ref=f22e319] [cursor=pointer]:
+              - /url: /products/theraface-depuffing-wand
+          - heading [level=2] [ref=f22e329]:
+            - strong [ref=f22e330]: 89% of participants
+            - text: stated their under eye area felt more rejuvenated
+            - superscript [ref=f22e331]:
+              - link "4" [ref=f22e332] [cursor=pointer]:
+                - /url: "#note1"
+    - generic [ref=f22e335]:
+      - heading [level=2] [ref=f22e337]:
+        - text: Therapeutic solutions for
+        - emphasis [ref=f22e338]: every
+        - text: body
+      - generic [ref=f22e339]:
+        - generic [ref=f22e342]:
+          - link [ref=f22e344] [cursor=pointer]:
+            - /url: /collections/shop-theragun?filter.p.m.custom.most_popular=Heated+Massage+Guns
+            - heading "Heated Massage Guns" [level=4] [ref=f22e345]
+          - img "Therabody US" [ref=f22e346]
+        - generic [ref=f22e349]:
+          - link [ref=f22e351] [cursor=pointer]:
+            - /url: /collections/shop-jetboots
+            - heading "Wireless Leg Compression" [level=4] [ref=f22e352]
+          - img "Therabody US" [ref=f22e353]
+        - generic [ref=f22e356]:
+          - link [ref=f22e358] [cursor=pointer]:
+            - /url: /products/smart-goggles-gen-2
+            - heading "Eye and Temple Massage" [level=4] [ref=f22e359]
+          - img "Therabody US" [ref=f22e360]
+    - generic [ref=f22e363]:
+      - heading "Recover faster, glow brighter and sleep better" [level=2] [ref=f22e365]
+      - list "Slider" [ref=f22e367]:
+        - listitem [ref=f22e368]:
+          - generic [ref=f22e370] [cursor=pointer]:
+            - img "TheraFace Mask" [ref=f22e374]
+            - generic [ref=f22e377]:
+              - heading [level=3] [ref=f22e378]:
+                - link "TheraFace Mask" [ref=f22e379]:
+                  - /url: /products/theraface-mask
+              - generic [ref=f22e380]: Advanced, clinically proven LED light mask with massage and 648 LEDs for firmer, smoother skin
+              - generic [ref=f22e384]:
+                - generic [ref=f22e385]: Regular price
+                - generic [ref=f22e386]: $649.99
+        - listitem [ref=f22e388]:
+          - generic [ref=f22e390] [cursor=pointer]:
+            - img "Theragun Sense" [ref=f22e394]
+            - generic [ref=f22e397]:
+              - heading "Theragun Sense 2nd Gen" [level=3] [ref=f22e398]:
+                - link "Theragun Sense" [ref=f22e399]:
+                  - /url: /products/theragun-sense-gen-2-massage-gun
+                - generic [ref=f22e400]: 2nd Gen
+              - generic [ref=f22e401]: Our only massage gun made for stress relief, with on-screen guided routines
+              - generic [ref=f22e405]:
+                - generic [ref=f22e406]: Regular price
+                - generic [ref=f22e407]: $299.99
+        - listitem [ref=f22e409]:
+          - generic [ref=f22e411] [cursor=pointer]:
+            - img "Theragun Prime Plus" [ref=f22e415]
+            - generic [ref=f22e418]:
+              - heading [level=3] [ref=f22e419]:
+                - link "Theragun Prime Plus" [ref=f22e420]:
+                  - /url: /products/theragun-prime-plus
+              - generic [ref=f22e421]: Deep massage combined with heat for faster warm-up and recovery
+              - generic [ref=f22e425]:
+                - generic [ref=f22e426]: Regular price
+                - generic [ref=f22e427]: $429.99
+        - listitem [ref=f22e429]:
+          - generic [ref=f22e431] [cursor=pointer]:
+            - img "SleepMask" [ref=f22e435]
+            - generic [ref=f22e438]:
+              - heading [level=3] [ref=f22e439]:
+                - link "SleepMask" [ref=f22e440]:
+                  - /url: /products/sleep-mask
+              - generic [ref=f22e441]: Blackout eye mask with soothing vibrations for better sleep
+              - generic [ref=f22e445]:
+                - generic [ref=f22e446]: Regular price
+                - generic [ref=f22e447]: $109.99
+    - generic [ref=f22e456]:
+      - generic [ref=f22e457]:
+        - paragraph [ref=f22e458]: find your perfect match
+        - heading "Therabody Product Finder" [level=2] [ref=f22e459]
+        - paragraph [ref=f22e461]: Still not sure which product is right for you? Take our short one-minute quiz to be matched with the recovery, pain relief, sleep or beauty device that fits your unique needs.
+      - link "Take the quiz" [ref=f22e462] [cursor=pointer]:
+        - /url: /pages/quiz
+    - generic [ref=f22e465]:
+      - generic [ref=f22e467]:
+        - heading "Therabody gifts for every occasion" [level=2] [ref=f22e468]
+        - paragraph [ref=f22e470]: Surprise a loved one, reward your team and impress clients with gifts to help them feel their best.
+      - generic [ref=f22e472]:
+        - generic [ref=f22e475]:
+          - heading "Explore our gift center" [level=4] [ref=f22e476]
+          - paragraph [ref=f22e477]: Find the perfect gift for your friends, family and loved ones to help boost their workouts, sleep deeper and glow brighter with radiant skin.
+          - link "Shop gifts" [ref=f22e478] [cursor=pointer]:
+            - /url: "/pages/gift-center "
+        - generic [ref=f22e482]:
+          - heading "Corporate gifts for your team or business" [level=4] [ref=f22e483]
+          - paragraph [ref=f22e484]: Science-backed wellness gifts that recharge teams, impress clients and make an impact.
+          - link "Learn more" [ref=f22e485] [cursor=pointer]:
+            - /url: "/pages/corporate-gifting "
+    - generic [ref=f22e489]:
+      - generic [ref=f22e491]:
+        - heading "Routines that enhance beauty and fuel performance" [level=2] [ref=f22e492]
+        - paragraph [ref=f22e494]: Discover how our newest ambassadors — pro quarterback Josh Allen and supermodel Kendall Jenner — fit our science-backed devices seamlessly into their daily routines.
+      - generic [ref=f22e496]:
+        - generic [ref=f22e499]:
+          - heading "Kendall’s secret to glowing skin" [level=4] [ref=f22e500]
+          - paragraph [ref=f22e501]: For Kendall, radiant skin is non-negotiable — even on her busiest days.
+          - link "Learn more" [ref=f22e502] [cursor=pointer]:
+            - /url: "/pages/kendall-jenner "
+        - generic [ref=f22e506]:
+          - heading "How Josh stays game-day ready" [level=4] [ref=f22e507]
+          - paragraph [ref=f22e508]: Josh relies on multi-therapy recovery that delivers results faster and keeps him game-ready week after week.
+          - link "Learn more" [ref=f22e509] [cursor=pointer]:
+            - /url: "/pages/josh-allen "
+    - generic [ref=f22e513]:
+      - heading "Therabody’s research" [level=2] [ref=f22e515]
+      - generic [ref=f22e516]:
+        - generic [ref=f22e520]:
+          - paragraph [ref=f22e521]:
+            - text: New study with PRUVN finds
+            - strong [ref=f22e522]: JetBoots PRO Plus is scientifically proven to enhance performance, reduce inflammation and improve muscle activation
+            - text: following exercise.
+          - link "Learn more" [ref=f22e523] [cursor=pointer]:
+            - /url: "/blogs/news/jetboots-pro-plus-is-scientifically-proven-to-enhance-performance-recovery "
+        - generic [ref=f22e527]:
+          - paragraph [ref=f22e528]:
+            - text: The largest clinical trial of any commercially available LED mask, Eurofins CRL study results show
+            - strong [ref=f22e529]: TheraFace Mask Glo is clinically proven to enhance radiance, firmness and evenness.
+          - link "Learn more" [ref=f22e530] [cursor=pointer]:
+            - /url: "/blogs/news/the-clinical-findings-behind-theraface-mask-glo-the-largest-study-of-led-masks-on-the-market "
+        - generic [ref=f22e534]:
+          - paragraph [ref=f22e535]:
+            - text: Open University scientific review concludes that
+            - strong [ref=f22e536]: physical therapy delivered by massage guns can help improve acute muscle strength
+            - text: ", explosive muscle strength and flexibility."
+          - link "Learn more" [ref=f22e537] [cursor=pointer]:
+            - /url: "/blogs/news/massage-guns-can-improve-strength-and-flexibility-and-reduce-experiences-of-pain-according-to-systematic-review "
+    - generic [ref=f22e541]:
+      - heading "Use your FSA / HSA dollars on qualifying products. Look for the FSA / HSA badge for eligibility." [level=4] [ref=f22e546]
+      - heading "Buy online, pickup in store. Just choose “Pickup from Best Buy” at checkout." [level=4] [ref=f22e552]
+      - heading "Shop now, pay later. Choose Cash App Afterpay at checkout." [level=4] [ref=f22e558]
+    - generic [ref=f22e564]:
+      - generic [ref=f22e568]:
+        - generic [ref=f22e569]: Reset by Therabody
+        - generic [ref=f22e570]: A total spa wellness experience featuring Theragun massages, red light therapy, cryotherapy and more.
+        - link "Learn more" [ref=f22e571] [cursor=pointer]:
+          - /url: /pages/reset
+      - generic [ref=f22e575]:
+        - generic [ref=f22e576]: Shop in Store
+        - generic [ref=f22e577]: Experience our recovery bestsellers in person at a Therabody store or Best Buy near you.
+        - link "See nearby stores" [ref=f22e578] [cursor=pointer]:
+          - /url: /pages/store-locator
+    - generic [ref=f22e588]:
+      - heading "Therabody Outlet" [level=2] [ref=f22e589]
+      - paragraph [ref=f22e591]: Save up to 30% off Certified Refurbished and select early-generation models, all backed by our one-year warranty.
+      - link "Shop outlet" [ref=f22e592] [cursor=pointer]:
+        - /url: /collections/therabody-outlet
+    - generic [ref=f22e595]:
+      - generic [ref=f22e596]:
+        - heading "Discover the latest news from Therabody" [level=2] [ref=f22e597]
+        - link "Explore all articles" [ref=f22e598] [cursor=pointer]:
+          - /url: /blogs/news
+      - list [ref=f22e600]:
+        - generic [ref=f22e602]:
+          - listitem [ref=f22e603]:
+            - generic [ref=f22e605]:
+              - img "Therabody’s CryoTherm Palm palm cooling device" [ref=f22e609]
+              - generic [ref=f22e611]:
+                - time [ref=f22e614]: October 12, 2026
+                - heading [level=3] [ref=f22e615]:
+                  - link "Fatigue Cutting Your Workout Short? This Palm Cooling Device Enhances Athletic Performance" [ref=f22e616] [cursor=pointer]:
+                    - /url: /blogs/news/therabody-palm-cooling-device
+          - listitem [ref=f22e617]:
+            - generic [ref=f22e619]:
+              - img "New Study Shows Therabody JetBoots Strengthens Post-Exercise Recovery in African American Female Runners" [ref=f22e623]
+              - generic [ref=f22e625]:
+                - time [ref=f22e628]: October 8, 2026
+                - heading [level=3] [ref=f22e629]:
+                  - link "New Study Shows Therabody JetBoots Strengthens Post-Exercise Recovery in African American Female Runners" [ref=f22e630] [cursor=pointer]:
+                    - /url: /blogs/news/pneumatic-compression-female-running-recovery
+          - listitem [ref=f22e631]:
+            - generic [ref=f22e633]:
+              - img "Woman using TheraFace Pro for jaw pain relief at home" [ref=f22e637]
+              - generic [ref=f22e639]:
+                - time [ref=f22e642]: September 30, 2026
+                - heading [level=3] [ref=f22e643]:
+                  - 'link "Jaw Pain: Common Causes and Evidence-Based Strategies for At-Home Pain Relief" [ref=f22e644] [cursor=pointer]':
+                    - /url: /blogs/news/jaw-pain-causes-symptoms-relief
+          - listitem [ref=f22e645]:
+            - generic [ref=f22e647]:
+              - img "Theragun Mini Y2K" [ref=f22e651]
+              - generic [ref=f22e653]:
+                - time [ref=f22e656]: September 22, 2026
+                - heading [level=3] [ref=f22e657]:
+                  - link "Feels Like 1999. Recovers Like 2026." [ref=f22e658] [cursor=pointer]:
+                    - /url: /blogs/news/y2k-theragun-mini-recovery-for-decades
+    - generic [ref=f22e662]:
+      - paragraph [ref=f22e663]:
+        - superscript [ref=f22e664]: "1"
+        - text: Results from 12-week clinical study with 104 subjects and 1x/day use of pre-programmed 12-minute treatment. Learn more
+        - link "here." [ref=f22e665] [cursor=pointer]:
+          - /url: /blogs/news/the-clinical-findings-behind-theraface-mask-glo-the-largest-study-of-led-masks-on-the-market
+        - superscript [ref=f22e666]: "2"
+        - text: Perception survey results based on a 12-week study with 104 subjects and 1x/day use of the pre-programmed 12-minute treatment. Participants received compensation. Learn more
+        - link "here." [ref=f22e667] [cursor=pointer]:
+          - /url: /blogs/news/the-clinical-findings-behind-theraface-mask-glo-the-largest-study-of-led-masks-on-the-market
+        - superscript [ref=f22e668]: "3"
+        - text: Clinical study with 58 subjects following 1x use of device, measured using expert grading and Cutometer®. Completed all treatment steps on clean, dry skin starting with Heat (moderate) then Cold (coldest), treatment time 8-10 min. For full treatment protocol visit therabody.com/science.
+        - superscript [ref=f22e669]: "4"
+        - text: "Self-reported survey responses of 58 study participants following 1x use of device. Protocol: Completed treatment steps on clean, dry skin starting with Heat (moderate setting) then Cold (coldest setting), total treatment time 8-10 minutes. For full treatment protocol visit therabody.com/science."
+      - list
+  - generic [ref=f22e674]:
+    - generic [ref=f22e675]:
+      - heading "Get the latest from Therabody" [level=2] [ref=f22e676]
+      - paragraph [ref=f22e678]: Be the first to know about new products, exclusive offers and more.
+      - generic [ref=f22e681]:
+        - generic [ref=f22e683]:
+          - textbox "Email Address" [ref=f22e684]
+          - generic: Email Address
+        - button "Subscribe" [ref=f22e686] [cursor=pointer]: Sign up
+      - paragraph [ref=f22e688]:
+        - text: By signing up you agree to our
+        - link "Terms" [ref=f22e689] [cursor=pointer]:
+          - /url: /pages/terms
+        - text: ","
+        - link "Privacy Policy," [ref=f22e690] [cursor=pointer]:
+          - /url: /pages/privacy-policy
+        - text: and to receive marketing updates from Therabody and its affiliates.
+    - generic [ref=f22e692]:
+      - link [ref=f22e693] [cursor=pointer]:
+        - /url: https://start.therabody.com
+        - img "Download the Therabody App" [ref=f22e694]
+      - text: Download the Therabody App
+  - contentinfo [ref=f22e696]:
+    - generic [ref=f22e699]:
+      - generic [ref=f22e700]:
+        - heading "Explore" [level=2] [ref=f22e701]
+        - list [ref=f22e702]:
+          - listitem [ref=f22e703]:
+            - link "For Fitness & Recovery" [ref=f22e704] [cursor=pointer]:
+              - /url: /collections/fitness-and-recovery
+          - listitem [ref=f22e705]:
+            - link "For Aches & Pains" [ref=f22e706] [cursor=pointer]:
+              - /url: /collections/aches-and-pains
+          - listitem [ref=f22e707]:
+            - link "For Sleep & Stress" [ref=f22e708] [cursor=pointer]:
+              - /url: /collections/sleep-and-stress
+          - listitem [ref=f22e709]:
+            - link "For Beauty" [ref=f22e710] [cursor=pointer]:
+              - /url: /collections/beauty
+          - listitem [ref=f22e711]:
+            - link "Shop All Massage Guns" [ref=f22e712] [cursor=pointer]:
+              - /url: /collections/shop-theragun
+          - listitem [ref=f22e713]:
+            - link "Shop All Compression Boots" [ref=f22e714] [cursor=pointer]:
+              - /url: /collections/shop-jetboots
+          - listitem [ref=f22e715]:
+            - link "Shop All Hot & Cold Wearables" [ref=f22e716] [cursor=pointer]:
+              - /url: /collections/shop-therm-series
+          - listitem [ref=f22e717]:
+            - link "Therabody Outlet" [ref=f22e718] [cursor=pointer]:
+              - /url: /collections/therabody-outlet
+      - generic [ref=f22e719]:
+        - heading "Support" [level=2] [ref=f22e720]
+        - list [ref=f22e721]:
+          - listitem [ref=f22e722]:
+            - link "FAQ" [ref=f22e723] [cursor=pointer]:
+              - /url: /pages/support
+          - listitem [ref=f22e724]:
+            - link "HSA/FSA" [ref=f22e725] [cursor=pointer]:
+              - /url: /pages/hsa-fsa-eligibility
+          - listitem [ref=f22e726]:
+            - link "Contact Us" [ref=f22e727] [cursor=pointer]:
+              - /url: /pages/support
+          - listitem [ref=f22e728]:
+            - link "Cash App Afterpay" [ref=f22e729] [cursor=pointer]:
+              - /url: /pages/afterpay
+          - listitem [ref=f22e730]:
+            - link "Klarna" [ref=f22e731] [cursor=pointer]:
+              - /url: /pages/klarna
+          - listitem [ref=f22e732]:
+            - link "Return Policy" [ref=f22e733] [cursor=pointer]:
+              - /url: /pages/return-policy
+          - listitem [ref=f22e734]:
+            - link "Warranty Terms" [ref=f22e735] [cursor=pointer]:
+              - /url: /pages/warranty-terms
+          - listitem [ref=f22e736]:
+            - link "Product Registration" [ref=f22e737] [cursor=pointer]:
+              - /url: /pages/product-registration
+          - listitem [ref=f22e738]:
+            - link "Product Recalls" [ref=f22e739] [cursor=pointer]:
+              - /url: https://www.theragung4prochargerrecall.expertinquiry.com/
+      - generic [ref=f22e740]:
+        - heading "Company" [level=2] [ref=f22e741]
+        - list [ref=f22e742]:
+          - listitem [ref=f22e743]:
+            - link "Careers" [ref=f22e744] [cursor=pointer]:
+              - /url: /pages/careers
+          - listitem [ref=f22e745]:
+            - link "Reset by Therabody" [ref=f22e746] [cursor=pointer]:
+              - /url: /pages/reset
+          - listitem [ref=f22e747]:
+            - link "Store Locator" [ref=f22e748] [cursor=pointer]:
+              - /url: /pages/store-locator
+          - listitem [ref=f22e749]:
+            - link "Patents & Design Registrations" [ref=f22e750] [cursor=pointer]:
+              - /url: /pages/patents-design-registrations
+          - listitem [ref=f22e751]:
+            - link "Unauthorized Retailers" [ref=f22e752] [cursor=pointer]:
+              - /url: /pages/unauthorized-retailers
+          - listitem [ref=f22e753]:
+            - link "Precautions" [ref=f22e754] [cursor=pointer]:
+              - /url: /pages/precautions
+      - generic [ref=f22e755]:
+        - heading "Community" [level=2] [ref=f22e756]
+        - list [ref=f22e757]:
+          - listitem [ref=f22e758]:
+            - link "Our Science" [ref=f22e759] [cursor=pointer]:
+              - /url: /pages/science
+          - listitem [ref=f22e760]:
+            - link "Therabody for Her" [ref=f22e761] [cursor=pointer]:
+              - /url: /pages/women
+          - listitem [ref=f22e762]:
+            - link "Blog" [ref=f22e763] [cursor=pointer]:
+              - /url: /blogs/news
+      - generic [ref=f22e764]:
+        - heading "Resources" [level=2] [ref=f22e765]
+        - list [ref=f22e766]:
+          - listitem [ref=f22e767]:
+            - link "How to use" [ref=f22e768] [cursor=pointer]:
+              - /url: https://www.youtube.com/@Therabody/playlists
+          - listitem [ref=f22e769]:
+            - link "Professional Education" [ref=f22e770] [cursor=pointer]:
+              - /url: /pages/professional-education
+      - generic [ref=f22e771]:
+        - heading "Work with us" [level=2] [ref=f22e772]
+        - list [ref=f22e773]:
+          - listitem [ref=f22e774]:
+            - link "Business Inquiries & Contact" [ref=f22e775] [cursor=pointer]:
+              - /url: /pages/b2b-contact
+          - listitem [ref=f22e776]:
+            - link "Affiliates" [ref=f22e777] [cursor=pointer]:
+              - /url: /pages/affiliates
+          - listitem [ref=f22e778]:
+            - link "Corporate Gifting" [ref=f22e779] [cursor=pointer]:
+              - /url: /pages/corporate-gifting
+          - listitem [ref=f22e780]:
+            - link "Military and Government Partners" [ref=f22e781] [cursor=pointer]:
+              - /url: /pages/military-and-government-partners
+    - generic [ref=f22e784]:
+      - list [ref=f22e785]:
+        - listitem [ref=f22e786]:
+          - link "Instagram" [ref=f22e787] [cursor=pointer]:
+            - /url: https://www.instagram.com/therabody/
+        - listitem [ref=f22e791]:
+          - link "Facebook" [ref=f22e792] [cursor=pointer]:
+            - /url: https://www.facebook.com/therabody/
+        - listitem [ref=f22e796]:
+          - link "X (Twitter)" [ref=f22e797] [cursor=pointer]:
+            - /url: https://twitter.com/therabody
+        - listitem [ref=f22e801]:
+          - link "YouTube" [ref=f22e802] [cursor=pointer]:
+            - /url: https://www.youtube.com/@Therabody
+      - list [ref=f22e806]:
+        - listitem [ref=f22e807]:
+          - link "Privacy Policy" [ref=f22e808] [cursor=pointer]:
+            - /url: /pages/privacy-policy
+        - listitem [ref=f22e809]:
+          - link "Your Privacy Choices" [ref=f22e810] [cursor=pointer]:
+            - /url: /pages/data-request-form
+          - img "Checkbox uncheck" [ref=f22e812]
+        - listitem [ref=f22e818]:
+          - link "Cookie-instellingen" [ref=f22e819] [cursor=pointer]:
+            - /url: javascript:void(0);
+        - listitem [ref=f22e820]:
+          - link "Terms of Service" [ref=f22e821] [cursor=pointer]:
+            - /url: /pages/terms
+        - listitem [ref=f22e822]:
+          - link "Accessibility" [ref=f22e823] [cursor=pointer]:
+            - /url: /pages/accessibility
+          - generic [ref=f22e824] [cursor=pointer]
+      - generic [ref=f22e825]: © 2026 Therabody, Inc. All rights reserved.
+  - button "Chat to shop" [ref=f22e830] [cursor=pointer]
+  - dialog "Privacy" [ref=f22e834]:
+    - generic [ref=f22e836]:
+      - generic [ref=f22e837]: Door op “Alle cookies accepteren” te klikken gaat u akkoord met het opslaan van cookies op uw apparaat voor het verbeteren van websitenavigatie, het analyseren van websitegebruik en om ons te helpen bij onze marketingprojecten.
+      - generic [ref=f22e841]:
+        - button "Cookie-instellingen, Opent het dialoogvenster van het voorkeurencentrum" [ref=f22e842] [cursor=pointer]: Cookie-instellingen
+        - button "Alles afwijzen" [ref=f22e843] [cursor=pointer]
+        - button "Alle cookies accepteren" [ref=f22e844] [cursor=pointer]

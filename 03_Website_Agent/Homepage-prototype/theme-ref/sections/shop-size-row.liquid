@@ -1,0 +1,72 @@
+{{ 'padel-page.css' | asset_url | stylesheet_tag }}
+{{ 'shop-page.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="hgshop-size-section hgshop-size-section--{{ s.theme }} hgshop-grid-bg{% if s.theme == 'light' %} hgshop-grid-bg--light{% endif %}">
+  <div class="page-width">
+    <div class="hgshop-size-head">
+      <span class="hgshop-eyebrow{% if s.theme == 'light' %} hgshop-eyebrow--dark{% endif %}">Kies je kleur</span>
+      <h2>{{ s.heading }}</h2>
+      {%- if s.subheading != blank -%}<p>{{ s.subheading }}</p>{%- endif -%}
+    </div>
+
+    <div class="hgshop-grid">
+      {%- for block in section.blocks -%}
+        {%- assign bs = block.settings -%}
+        <a href="{{ bs.link | default: '#' }}" class="hgshop-card" {{ block.shopify_attributes }}>
+          {%- if bs.badge_text != blank -%}<span class="hgshop-card__badge">{{ bs.badge_text }}</span>{%- endif -%}
+          {%- if bs.image != blank -%}
+            {{ bs.image | image_url: width: 300 | image_tag: class: 'hgshop-card__sock', loading: 'lazy', alt: bs.maat_label }}
+          {%- else -%}
+            {%- render 'sock-icon', color: s.sock_kleur, class: 'hgshop-card__sock' -%}
+          {%- endif -%}
+          <div class="hgshop-card__num">{{ bs.maat_label }}</div>
+          {%- if bs.hint != blank -%}<div class="hgshop-card__hint">{{ bs.hint }}</div>{%- endif -%}
+          {%- if bs.price_text != blank -%}<div class="hgshop-card__price">{{ bs.price_text }}</div>{%- endif -%}
+          <span class="hgshop-card__cta">Bekijk maat &rarr;</span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop — maatrij",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "theme", "label": "Achtergrond", "options": [ { "value": "light", "label": "Licht" }, { "value": "dark", "label": "Donker (zwart)" } ], "default": "light" },
+    { "type": "select", "id": "sock_kleur", "label": "Placeholder sok-kleur", "info": "Alleen zichtbaar zolang een maatkaart nog geen eigen foto heeft", "options": [ { "value": "wit", "label": "Wit" }, { "value": "zwart", "label": "Zwart" } ], "default": "wit" },
+    { "type": "text", "id": "heading", "label": "Titel", "default": "Wit. De clean statement." },
+    { "type": "text", "id": "subheading", "label": "Ondertekst", "default": "Voor wie opvalt zonder iets te bewijzen." }
+  ],
+  "blocks": [
+    {
+      "type": "size_card",
+      "name": "Maatkaart",
+      "settings": [
+        { "type": "text", "id": "maat_label", "label": "Maat", "default": "39–42" },
+        { "type": "text", "id": "badge_text", "label": "Badge (optioneel)", "info": "Leeg = geen badge, bijv. \"Meest gekozen\"" },
+        { "type": "text", "id": "hint", "label": "Hint-tekst", "default": "Standaardmaat dames/heren" },
+        { "type": "text", "id": "price_text", "label": "Prijstekst", "default": "vanaf €14,99" },
+        { "type": "url", "id": "link", "label": "Link naar product/variant" },
+        { "type": "image_picker", "id": "image", "label": "Foto (leeg = placeholder sok-icoon)" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Shop — maatrij",
+      "blocks": [
+        { "type": "size_card", "settings": { "maat_label": "35–38", "hint": "Kleinere maat — dames & jeugd", "link": "/products/performance-gripsokken" } },
+        { "type": "size_card", "settings": { "maat_label": "39–42", "badge_text": "Meest gekozen", "hint": "Standaardmaat dames/heren", "link": "/products/performance-gripsokken" } },
+        { "type": "size_card", "settings": { "maat_label": "43–46", "hint": "Grote maat — extra ruimte", "link": "/products/performance-gripsokken" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

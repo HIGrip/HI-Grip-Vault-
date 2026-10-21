@@ -139,4 +139,10 @@ Padelpagina herstellen · rugbypagina bouwen · 2.0-voorraad controleren (CTA's 
 ## Gerelateerd
 [[SEO-audit 2026-09-25 — Actieplan]] · [[SEO Strategie & Keywords]] · [[GEO Plan (2026-09-21)]] · [[Sportgidsen — overzicht en instructies]] · [[Agent Werk & Kwaliteit Overzicht]]
 
+## Gerelateerd onderzoek (automatisch)
+
+Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+
+- [[2026-10-12-voordelenpagina-analyse]] — Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
+
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]

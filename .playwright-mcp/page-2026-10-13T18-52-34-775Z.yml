@@ -1,0 +1,448 @@
+- generic [active] [ref=f57e1]:
+  - alertdialog [ref=f57e2]:
+    - generic [ref=f57e4]:
+      - button "Close this notice" [ref=f57e5] [cursor=pointer]: ×
+      - document [ref=f57e6]:
+        - heading "Notice" [level=2] [ref=f57e7]
+        - generic [ref=f57e8]:
+          - paragraph [ref=f57e9]:
+            - text: We and selected third parties use cookies or similar technologies for technical purposes and, with your consent, for
+            - strong [ref=f57e10]: functionality, experience, measurement and “marketing (personalized ads)”
+            - text: as specified in the
+            - button "cookie policy" [ref=f57e11] [cursor=pointer]
+            - text: .
+          - paragraph [ref=f57e12]: You can freely give, deny, or withdraw your consent at any time by accessing the preferences panel. Denying consent may make related features unavailable.
+          - paragraph
+          - paragraph [ref=f57e13]: Use the “Accept all” button to consent. Use the “Reject all” button or close this notice to continue without accepting.
+      - generic [ref=f57e14]:
+        - generic [ref=f57e15]:
+          - checkbox "Functionality" [ref=f57e16] [cursor=pointer]
+          - generic [ref=f57e17]: Functionality
+        - generic [ref=f57e19]:
+          - checkbox "Experience" [ref=f57e20] [cursor=pointer]
+          - generic [ref=f57e21]: Experience
+        - generic [ref=f57e23]:
+          - checkbox "Measurement" [ref=f57e24] [cursor=pointer]
+          - generic [ref=f57e25]: Measurement
+        - generic [ref=f57e27]:
+          - checkbox "Marketing" [ref=f57e28] [cursor=pointer]
+          - generic [ref=f57e29]: Marketing
+      - generic [ref=f57e31]:
+        - button "Learn more" [ref=f57e33] [cursor=pointer]
+        - generic [ref=f57e34]:
+          - button "Reject all" [ref=f57e35] [cursor=pointer]
+          - button "Accept all" [ref=f57e36] [cursor=pointer]
+  - generic [ref=f57e38]:
+    - generic [ref=f57e40]:
+      - heading [level=3] [ref=f57e41]:
+        - text: "New Product Announcement:"
+        - link "Stryd Speed | Unlock your speed with true 3D motion >" [ref=f57e42] [cursor=pointer]:
+          - /url: /speed
+      - paragraph
+    - navigation [ref=f57e43]:
+      - generic [ref=f57e44]:
+        - link [ref=f57e45] [cursor=pointer]:
+          - /url: https://www.stryd.com
+          - img "STRYD" [ref=f57e49]
+        - generic [ref=f57e50]:
+          - link "Select Store Select Store" [ref=f57e51] [cursor=pointer]:
+            - /url: /eu/en/select-store
+            - generic [ref=f57e52]:
+              - img "Select Store" [ref=f57e56]
+              - generic [ref=f57e57]: Select Store
+          - 'link "Cart Items: 0" [ref=f57e58] [cursor=pointer]':
+            - /url: /eu/en/cart
+            - generic [ref=f57e59]:
+              - 'generic "Cart Items: 0" [ref=f57e60]'
+              - generic [ref=f57e65]: "Cart Items: 0"
+          - button "Menu Button" [ref=f57e67] [cursor=pointer]
+    - main [ref=f57e71]:
+      - generic [ref=f57e72]:
+        - generic [ref=f57e73]:
+          - generic [ref=f57e80]:
+            - generic [ref=f57e81]:
+              - generic [ref=f57e82]: Stryd 5.0 & Adaptive Training
+              - generic [ref=f57e84]:
+                - heading "Personalized Run Training." [level=1] [ref=f57e85]
+                - heading "Powered by the Best Data." [level=4] [ref=f57e86]
+              - paragraph [ref=f57e87]: Experience the future of running with our most advanced power meter yet, combined with Adaptive Training.
+              - generic [ref=f57e88]:
+                - link [ref=f57e89] [cursor=pointer]:
+                  - /url: /store
+                - button "Watch the Video" [ref=f57e92] [cursor=pointer]
+            - generic [ref=f57e94]:
+              - img "Adaptive Training Interface" [ref=f57e96]
+              - img "Stryd 5.0 Pod" [ref=f57e99]
+          - generic [ref=f57e108]: Scroll
+        - generic [ref=f57e120]:
+          - generic [ref=f57e121]:
+            - heading "Clip it on in seconds and go." [level=2] [ref=f57e122]
+            - paragraph [ref=f57e123]: Stryd attaches securely to your shoe in seconds. No complicated setup, no hassle—just clip it on, pair to your watch, and start running.
+          - img "Stryd clipped to a running shoe" [ref=f57e126]
+        - generic [ref=f57e128]:
+          - generic [ref=f57e129]:
+            - heading [level=2] [ref=f57e130]:
+              - strong [ref=f57e131]: Real Time Guidance for Every Run & Race
+              - text: .
+            - paragraph [ref=f57e132]: Stryd actively adjusts your real time pacing, creates your training, and guides your racing to improve your running.
+          - generic [ref=f57e133]:
+            - generic [ref=f57e135]:
+              - generic [ref=f57e136]:
+                - img "REAL TIME PACING WITH BEST-IN-CLASS POWER" [ref=f57e137]
+                - generic [ref=f57e139]: "1"
+              - generic [ref=f57e141]:
+                - heading "REAL TIME PACING WITH BEST-IN-CLASS POWER" [level=3] [ref=f57e142]
+                - paragraph [ref=f57e143]: Real-time power guidance keeps you in the right effort zone for every run. From easy recovery runs to hard interval sessions, Stryd helps you maintain perfect pacing — all with the new Stryd 5.0 providing best in class data.
+                - generic [ref=f57e144]:
+                  - generic [ref=f57e145]: Live power feedback
+                  - generic [ref=f57e148]: Effort zone guidance
+                  - generic [ref=f57e151]: Pace consistency
+            - generic [ref=f57e155]:
+              - generic [ref=f57e156]:
+                - img "ADAPTIVE TRAINING & POWER-BASED TRAINING PLANS" [ref=f57e157]
+                - generic [ref=f57e159]: "2"
+              - generic [ref=f57e161]:
+                - heading "ADAPTIVE TRAINING & POWER-BASED TRAINING PLANS" [level=3] [ref=f57e162]
+                - paragraph [ref=f57e163]: Adaptive Training creates personalized workouts that adapt to your fitness, schedule, and goals. Every workout is designed to maximize your improvement.
+                - generic [ref=f57e164]:
+                  - generic [ref=f57e165]: Personalized workouts
+                  - generic [ref=f57e168]: Adaptive scheduling
+                  - generic [ref=f57e171]: Progress tracking
+            - generic [ref=f57e175]:
+              - generic [ref=f57e176]:
+                - img "POWER-BASED RACE PLANS" [ref=f57e177]
+                - generic [ref=f57e179]: "3"
+              - generic [ref=f57e181]:
+                - heading "POWER-BASED RACE PLANS" [level=3] [ref=f57e182]
+                - paragraph [ref=f57e183]: Race-specific guidance helps you peak for every event. From 5K to marathon, get the precise power targets and pacing strategy for your best performance.
+                - generic [ref=f57e184]:
+                  - generic [ref=f57e185]: Race power targets
+                  - generic [ref=f57e188]: Pacing strategy
+                  - generic [ref=f57e191]: Peak performance
+          - generic [ref=f57e194]:
+            - paragraph [ref=f57e195]: Every day, Stryd combines these three elements to give you the guidance you need for your best run, every run.
+            - generic [ref=f57e196]:
+              - link "Shop Stryd 5.0" [ref=f57e197] [cursor=pointer]:
+                - /url: /store
+              - link "Learn more about Adaptive Training" [ref=f57e198] [cursor=pointer]:
+                - /url: https://blog.stryd.com
+        - generic [ref=f57e201]:
+          - generic [ref=f57e202] [cursor=pointer]:
+            - img "Stryd 5.0" [ref=f57e205]
+            - generic [ref=f57e208]:
+              - generic [ref=f57e209]:
+                - heading "Stryd 5.0" [level=3] [ref=f57e210]
+                - paragraph [ref=f57e211]: Upgrade your running with the all-new Stryd 5.0 for more precise and responsive run training.
+              - link "Shop Now" [ref=f57e213]:
+                - /url: /store
+          - generic [ref=f57e214] [cursor=pointer]:
+            - img "Stryd Duo 5.0" [ref=f57e217]
+            - generic [ref=f57e220]:
+              - generic [ref=f57e221]:
+                - heading "Stryd Duo 5.0" [level=3] [ref=f57e222]
+                - paragraph [ref=f57e223]: Maintain your balance & running health with the all-new Stryd Duo 5.0.
+              - link "Shop Now" [ref=f57e225]:
+                - /url: /store
+        - generic [ref=f57e227]:
+          - generic [ref=f57e228]: NEW
+          - generic [ref=f57e230]:
+            - heading [level=2] [ref=f57e231]:
+              - strong [ref=f57e232]: Smallest, smartest pod we have ever made
+            - paragraph [ref=f57e233]: Every component engineered for precision, reliability, and performance. Tap any feature to explore the technology inside.
+          - generic [ref=f57e234]:
+            - generic [ref=f57e235]:
+              - generic [ref=f57e236] [cursor=pointer]:
+                - heading "Precision Sensing" [level=3] [ref=f57e243]
+                - paragraph [ref=f57e248]: Advanced sensors capture every nuance of your running form with unprecedented accuracy. The upgraded sensing technology provides the most precise running metrics available.
+              - heading "Refined Accuracy" [level=3] [ref=f57e256] [cursor=pointer]
+              - heading "Magnetic Charging" [level=3] [ref=f57e267] [cursor=pointer]
+              - heading "Extended Connectivity" [level=3] [ref=f57e278] [cursor=pointer]
+              - heading "Compact Design" [level=3] [ref=f57e289] [cursor=pointer]
+              - heading "Fresh Aesthetics" [level=3] [ref=f57e300] [cursor=pointer]
+            - generic [ref=f57e305]:
+              - img "Precision Sensing" [ref=f57e307]
+              - generic [ref=f57e309]:
+                - generic [ref=f57e310]: Precision Sensing
+                - generic [ref=f57e311]: Upgraded Sensors
+          - paragraph [ref=f57e313]: "Every component in Stryd 5.0 is engineered for one purpose: to deliver the most accurate, reliable, and responsive running power data available."
+        - generic [ref=f57e320]:
+          - heading "Engineering your running excellence" [level=2] [ref=f57e321]: Engineering your runningexcellence
+          - paragraph [ref=f57e322]: From the advanced sensors that capture your every step to the refined algorithms that process data in real-time, every detail is optimized for performance.
+          - generic [ref=f57e323]:
+            - generic [ref=f57e324]: Enviromental port to capture the impact of wind, heat, and humidity
+            - generic [ref=f57e327]: Improved accuracy for pace, distance, and power
+            - generic [ref=f57e330]: Quicker response on climbs and descents
+        - generic [ref=f57e336]:
+          - heading "Always know your power" [level=2] [ref=f57e337]
+          - paragraph [ref=f57e338]: Double-tap for instant battery status. No need to check your phone or watch.
+        - generic [ref=f57e343]:
+          - generic [ref=f57e344]:
+            - heading "Effortless charging, every time" [level=2] [ref=f57e345]
+            - paragraph [ref=f57e346]: Color clips with dark theme
+          - generic [ref=f57e350]:
+            - generic [ref=f57e351]:
+              - heading "Magnetic Connection" [level=3] [ref=f57e352]
+              - paragraph [ref=f57e353]: Snaps into place instantly
+            - generic [ref=f57e354]:
+              - heading "Always Ready" [level=3] [ref=f57e355]
+              - paragraph [ref=f57e356]: Never miss a run again
+            - generic [ref=f57e357]:
+              - heading "Keychain Convenience" [level=3] [ref=f57e358]
+              - paragraph [ref=f57e359]: Attach to your daily essentials
+        - generic [ref=f57e361]:
+          - generic [ref=f57e362]:
+            - heading "Style meets performance" [level=2] [ref=f57e363]
+            - paragraph [ref=f57e364]: Express yourself with two new color clip options that match your style and your shoes.
+          - generic [ref=f57e369]:
+            - generic [ref=f57e370]:
+              - heading "Choose Your Style" [level=3] [ref=f57e371]
+              - generic [ref=f57e372]:
+                - generic [ref=f57e373]: Blue
+                - generic [ref=f57e375]: Gray
+                - generic [ref=f57e377]: Black
+                - generic [ref=f57e379]: Orange
+              - paragraph [ref=f57e381]: Modern finish with add-on blue and gray clip options. The new gray pod accent gives Stryd 5.0 a sleek finish with additional color clip options to style your Stryd for any shoe choice.
+            - generic [ref=f57e382]:
+              - generic [ref=f57e383]: 15% smaller profile for improved appearance
+              - generic [ref=f57e386]: Easy clip-on action preserved
+              - generic [ref=f57e389]: Perfect fit on spikes, race shoes, and more
+        - generic [ref=f57e393]:
+          - generic [ref=f57e394]:
+            - generic [ref=f57e395]: NEW
+            - heading [level=2] [ref=f57e397]:
+              - strong [ref=f57e398]: Adaptive Training
+              - text: .
+            - paragraph [ref=f57e399]: Built around your life, tuned to your fitness
+            - generic [ref=f57e400]:
+              - img "Runners training with adaptive guidance" [ref=f57e401]
+              - paragraph [ref=f57e404]: AI-powered personalized training
+          - generic [ref=f57e406]:
+            - generic [ref=f57e407]:
+              - img "Structure your week" [ref=f57e409]
+              - paragraph [ref=f57e411]: Structure your weekChoose which days are for easy runs, workouts, and your long run—Monday through Sunday—so the plan follows your life. Adaptive Training adapts to your schedule, not the other way around.
+            - generic [ref=f57e412]:
+              - img "Match your running lifestyle" [ref=f57e414]
+              - paragraph [ref=f57e416]: Match your running lifestyleHave a fun run or workout with your friends coming up? Schedule it on your calendar and Adaptive Training will adjust your week. We understand your planned training and adjust volume to support upcoming training.
+            - generic [ref=f57e417]:
+              - img "Train in phases" [ref=f57e419]
+              - paragraph [ref=f57e421]: Train in phasesBase, Peak, Test, Recovery, and Maintenance organize training into purposeful blocks to give your training structure. Purposeful blocks structure your training for optimal improvement.
+            - generic [ref=f57e422]:
+              - img "Fits your available training time" [ref=f57e424]
+              - paragraph [ref=f57e426]: Fits your available training timeTell Stryd how much time you have and workout durations adapt to your schedule—no compromises. Giving you flexibility to meet your lifestyle and training availability.
+            - generic [ref=f57e427]:
+              - img "Daily workouts" [ref=f57e429]
+              - paragraph [ref=f57e431]: Daily workoutsReceive a workout each day that fits your current capability and syncs automatically to your watch. Daily workouts that adapt to your schedule and fitness level.
+            - generic [ref=f57e432]:
+              - img "Clear, natural guidance" [ref=f57e434]
+              - paragraph [ref=f57e436]: Clear, natural guidanceSimple, transparent messaging explains what's changing and why, so you always understand the plan. Clear guidance helps you understand your training progression.
+        - generic [ref=f57e446]:
+          - generic [ref=f57e447]:
+            - heading "Train in phases. Peak when it matters." [level=2] [ref=f57e448]
+            - paragraph [ref=f57e449]: Adaptive Training organizes your training into purposeful blocks that build upon each other, ensuring you are ready to perform when it counts most.
+          - generic [ref=f57e450]:
+            - generic [ref=f57e453]:
+              - heading "Foundation Phase" [level=3] [ref=f57e454]
+              - paragraph [ref=f57e455]: Build your aerobic base with consistent, easy-paced runs that develop your cardiovascular system and running economy.
+              - generic [ref=f57e456]:
+                - generic [ref=f57e457]: Easy pace runs
+                - generic [ref=f57e460]: Aerobic development
+                - generic [ref=f57e463]: Base building
+            - generic [ref=f57e468]:
+              - heading "Test Phase" [level=3] [ref=f57e469]
+              - paragraph [ref=f57e470]: Assess your current fitness level with structured tests that provide accurate power targets for your training.
+              - generic [ref=f57e471]:
+                - generic [ref=f57e472]: Fitness assessment
+                - generic [ref=f57e475]: Power targets
+                - generic [ref=f57e478]: Performance metrics
+            - generic [ref=f57e483]:
+              - heading "Peak Phase" [level=3] [ref=f57e484]
+              - paragraph [ref=f57e485]: Fine-tune your fitness with race-specific workouts designed to maximize your performance for upcoming events.
+              - generic [ref=f57e486]:
+                - generic [ref=f57e487]: Race preparation
+                - generic [ref=f57e490]: Peak performance
+                - generic [ref=f57e493]: Event-specific training
+          - generic [ref=f57e497]:
+            - generic [ref=f57e498]:
+              - heading "Personalized workouts, every single day" [level=3] [ref=f57e499]
+              - paragraph [ref=f57e500]: Each workout is generated specifically for your current fitness level, training phase, and available time. No more guessing what to do next.
+              - generic [ref=f57e501]:
+                - generic [ref=f57e502]: Adapts to your schedule
+                - generic [ref=f57e507]: Matches your fitness level
+                - generic [ref=f57e512]: Syncs to your watch
+            - img "Generated Workout" [ref=f57e518]
+          - generic [ref=f57e520]:
+            - img "Weekly Adaptation" [ref=f57e522]
+            - generic [ref=f57e523]:
+              - heading "Weekly adaptation. Continuous improvement." [level=3] [ref=f57e524]
+              - paragraph [ref=f57e525]: Your training plan evolves every week based on your progress, upcoming events, and life schedule. It is like having a personal coach who never stops learning about you.
+              - generic [ref=f57e526]:
+                - generic [ref=f57e527]: Adjusts volume based on progress
+                - generic [ref=f57e532]: Accounts for scheduled events
+                - generic [ref=f57e537]: Optimizes for your goals
+        - generic [ref=f57e543]:
+          - generic [ref=f57e544]:
+            - paragraph [ref=f57e546]: Transform your racing with power-based insights that unlock your true potential and deliver consistent, breakthrough performances.
+            - generic [ref=f57e547]:
+              - heading "Race with Power" [level=3] [ref=f57e548]
+              - heading "Race smarter, finish faster" [level=2] [ref=f57e549]
+          - generic [ref=f57e551]:
+            - img "Runner racing with power-based strategy using Stryd 5.0" [ref=f57e552]
+            - generic [ref=f57e555]:
+              - generic [ref=f57e556]: Perform your best on race day
+              - generic [ref=f57e557]: with race power targets
+            - generic [ref=f57e559]:
+              - generic [ref=f57e560]: Perfect pacing from start to finish
+              - generic [ref=f57e561]: with real-time guidance on your watch
+          - generic [ref=f57e569]:
+            - generic [ref=f57e570]:
+              - img "5K to Marathon Race Plans" [ref=f57e572]
+              - paragraph [ref=f57e574]: 5K to Marathon Race PlansGet precise race strategies with your ideal power target. Find your right power and how that translates to pace.
+            - generic [ref=f57e575]:
+              - img "Critical Power Testing" [ref=f57e577]
+              - paragraph [ref=f57e579]: Critical Power TestingDetermine your true physiological limits with scientifically validated Critical Power tests, helping you find your right power for every race.
+            - generic [ref=f57e580]:
+              - img "Plan for the Course" [ref=f57e582]
+              - paragraph [ref=f57e584]: Plan for the CourseInput course, temperature, elevation, and more so you can plan specificaly for race day.
+            - generic [ref=f57e585]:
+              - img "Understand Every Scenario" [ref=f57e587]
+              - paragraph [ref=f57e589]: Understand Every ScenarioLearn how you will perform in best & less-than-ideal case scenarios you are prepared to succeed and overcome.
+            - generic [ref=f57e590]:
+              - img "Set Your Race Date" [ref=f57e592]
+              - paragraph [ref=f57e594]: Set Your Race DateMonitor how your fitness progresses over the season to ensure your training is paying off.
+        - generic [ref=f57e603]:
+          - generic [ref=f57e604]:
+            - generic [ref=f57e605]:
+              - heading "Running Health" [level=3] [ref=f57e606]
+              - heading "Monitor, optimize, and protect your running" [level=2] [ref=f57e607]
+            - generic [ref=f57e608]:
+              - paragraph [ref=f57e609]: With Stryd, you can maintain your healthy running routine with scientifically validated metrics in any conditions.
+              - link "Learn more" [ref=f57e610] [cursor=pointer]:
+                - /url: https://blog.stryd.com/2022/12/09/impact-loading-rate-lower-body-stress-score/
+          - generic [ref=f57e614]:
+            - img "Runner monitoring their health with Stryd 5.0" [ref=f57e615]
+            - generic [ref=f57e618]:
+              - generic [ref=f57e619]: Plan your recovery
+              - generic [ref=f57e620]: with Impact Loading Rate
+            - generic [ref=f57e622]:
+              - generic [ref=f57e623]: Monitor Overuse
+              - generic [ref=f57e624]: with Lower Body Stress Score
+          - generic [ref=f57e632]:
+            - generic [ref=f57e633]:
+              - img "Lower Body Stress Tracking" [ref=f57e635]
+              - paragraph [ref=f57e637]: Lower Body Stress TrackingMonitor lower body stress in real-time to dial in your recovery and sustain peak running performance. Identify large changes that could signal potential issues, allowing you to adjust training and stay healthy for the long haul.
+            - generic [ref=f57e638]:
+              - img "Impact Loading Rate Monitoring" [ref=f57e640]
+              - paragraph [ref=f57e642]: Impact Loading Rate MonitoringTrack how quickly your body absorbs force with each step to manage high-impact situations like downhills and sprints. Optimize your runs to minimize mechanical stress, reduce injury risk, and maximize race-specific training effectiveness.
+            - generic [ref=f57e643]:
+              - img "Running Stress Score (RSS)" [ref=f57e645]
+              - paragraph [ref=f57e647]: Running Stress Score (RSS)Quantify the stress of every run with a single score that accounts for volume and intensity, focusing on the unique mechanical demands of running. Use RSS to compare workouts, tailor your training, and ensure balanced progress toward your goals.
+            - generic [ref=f57e648]:
+              - img "Running Stress Balance (RSB)" [ref=f57e650]
+              - paragraph [ref=f57e652]: Running Stress Balance (RSB)Maintain optimal training load with RSB, which tracks the balance between long-term and short-term stress. Stay in productive zones to accelerate improvements, avoid overreaching, and keep your running consistent and enjoyable.
+            - generic [ref=f57e653]:
+              - img "Injury Recovery and Fatigue Monitoring" [ref=f57e655]
+              - paragraph [ref=f57e657]: Injury Recovery and Fatigue MonitoringVisualize and track subtle changes in your footpath and form to recover from injuries faster and monitor fatigue across runs. Tailor your training to combat weaknesses, ensuring you stay moving and achieve your running goals without interruptions.
+            - generic [ref=f57e658]:
+              - img "Sustained Performance Optimization" [ref=f57e660]
+              - paragraph [ref=f57e662]: Sustained Performance OptimizationLeverage Stryd's advanced metrics to minimize mechanical stress while boosting metabolic and performance gains. Run faster, further, and longer by making data-driven decisions that keep you healthy, confident, and progressing every step of the way.
+        - generic [ref=f57e672]:
+          - generic [ref=f57e673]:
+            - heading "Keep Exploring" [level=2] [ref=f57e674]
+            - paragraph [ref=f57e675]: Ready to transform your running? Choose your path forward with Stryd 5.0 and Adaptive Training.
+          - generic [ref=f57e676]:
+            - generic [ref=f57e679]:
+              - heading "Order Stryd 5.0 or Stryd Duo 5.0" [level=3] [ref=f57e680]
+              - paragraph [ref=f57e681]: Achieve your best run every day.
+              - link "Order Now | Shipping Now" [ref=f57e682] [cursor=pointer]:
+                - /url: /store
+            - generic [ref=f57e684]:
+              - heading "Learn More" [level=3] [ref=f57e685]
+              - paragraph [ref=f57e686]: Explore detailed specifications and comparisons
+              - link "Visit the Stryd Blog" [ref=f57e687] [cursor=pointer]:
+                - /url: https://blog.stryd.com
+          - generic [ref=f57e688]:
+            - heading "Stryd 5.0 & Stryd Duo 5.0" [level=3] [ref=f57e689]
+            - table [ref=f57e691]:
+              - rowgroup [ref=f57e692]:
+                - row [ref=f57e693]:
+                  - columnheader "Feature" [ref=f57e694]
+                  - columnheader "Updates" [ref=f57e695]
+              - rowgroup [ref=f57e696]:
+                - row [ref=f57e697]:
+                  - cell "Accuracy" [ref=f57e698]
+                  - cell "More accurate & consistent power, pace and distance, across conditionsNew" [ref=f57e699]
+                - row [ref=f57e700]:
+                  - cell "Responsiveness" [ref=f57e701]
+                  - cell "Faster power responsiveness on varying terrain, climbs and descentsNew" [ref=f57e702]
+                - row [ref=f57e703]:
+                  - cell "Size" [ref=f57e704]
+                  - cell "15% smaller by volume pod design so it disappears on every size shoeNew" [ref=f57e705]
+                - row [ref=f57e706]:
+                  - cell "Hardware" [ref=f57e707]
+                  - cell "All new sensors & processing for the smartest pod with the same long battery lifeNew" [ref=f57e708]
+                - row [ref=f57e709]:
+                  - cell "Ease of Use" [ref=f57e710]
+                  - cell "Simple operation with tap battery check & two-sided magnetic keychain chargerNew" [ref=f57e711]
+                - row [ref=f57e712]:
+                  - cell "Connectivity" [ref=f57e713]
+                  - cell "Extended antenna performance for improved reliability & longer rangeNew" [ref=f57e714]
+                - row [ref=f57e715]:
+                  - cell "Design" [ref=f57e716]
+                  - cell "New gray aerospace grade aluminum inserts for secure clipping to any shoeNew" [ref=f57e717]
+                - row [ref=f57e718]:
+                  - cell "Style" [ref=f57e719]
+                  - cell "Blue and gray clips optionally available to style your Stryd to every shoeNew" [ref=f57e720]
+          - generic [ref=f57e721]:
+            - paragraph [ref=f57e722]: Join the Stryd Community to power your running potential
+            - generic [ref=f57e723]:
+              - generic [ref=f57e724]: 30-day return policy
+              - generic [ref=f57e729]: Free shipping worldwide
+      - img "Landing Page Watermark" [ref=f57e736]
+    - contentinfo [ref=f57e737]:
+      - generic [ref=f57e739]:
+        - generic [ref=f57e740]:
+          - generic [ref=f57e741]:
+            - img "Power icon" [ref=f57e744]
+            - generic [ref=f57e745]: PRODUCTS
+          - link "Buy Stryd" [ref=f57e746] [cursor=pointer]:
+            - /url: /eu/en/store
+          - link "Stryd Speed" [ref=f57e747] [cursor=pointer]:
+            - /url: /eu/en/speed
+        - generic [ref=f57e748]:
+          - generic [ref=f57e749]:
+            - img "Help icon" [ref=f57e752]
+            - generic [ref=f57e753]: HELP
+          - link "FAQ" [ref=f57e754] [cursor=pointer]:
+            - /url: https://help.stryd.com/en/articles/6879096-faq
+          - link "Support" [ref=f57e755] [cursor=pointer]:
+            - /url: https://help.stryd.com
+          - link "Email Us" [ref=f57e756] [cursor=pointer]:
+            - /url: https://help.stryd.com/en/articles/8126060-how-can-i-contact-stryd-for-support
+          - link "Media" [ref=f57e757] [cursor=pointer]:
+            - /url: https://drive.google.com/drive/folders/1CR0cPfPXL2VCPe4wv-ArcuJtlpVsFEej?usp=sharing
+        - generic [ref=f57e758]:
+          - generic [ref=f57e759]:
+            - img "Book icon" [ref=f57e762]
+            - generic [ref=f57e763]: EDUCATION
+          - link "Webinars" [ref=f57e764] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCLcAyUN3rDsagHbPA0z1C3g/videos
+          - link "Blog" [ref=f57e765] [cursor=pointer]:
+            - /url: https://blog.stryd.com/
+          - link "Learning Center" [ref=f57e766] [cursor=pointer]:
+            - /url: https://learn.stryd.com/
+          - link "Stryd Power Coaching Group" [ref=f57e767] [cursor=pointer]:
+            - /url: https://coach.stryd.com
+        - generic [ref=f57e768]:
+          - generic [ref=f57e769]:
+            - img "Community icon" [ref=f57e772]
+            - generic [ref=f57e773]: COMMUNITY
+          - link "Facebook Community" [ref=f57e774] [cursor=pointer]:
+            - /url: https://www.facebook.com/groups/strydcommunity
+          - link "Youtube" [ref=f57e775] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/Stryd
+          - link "Instagram" [ref=f57e776] [cursor=pointer]:
+            - /url: https://www.instagram.com/strydrunning/
+        - generic [ref=f57e778]:
+          - img "Power icon" [ref=f57e781]
+          - generic [ref=f57e782]: STRYD NEWSLETTER
+  - alert [ref=f57e783]

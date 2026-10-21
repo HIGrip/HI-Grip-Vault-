@@ -1,0 +1,233 @@
+{{ 'mv-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mv-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="mv">
+<script>document.currentScript.parentNode.classList.add("mv-js");window.MV_ASSETS=window.MV_ASSETS||{};MV_ASSETS['academy-tvb-open.jpg']={{ 'mv-academy-tvb-open.jpg' | asset_url | json }};MV_ASSETS['hardlopen-gripsokken.jpg']={{ 'mv-hardlopen-gripsokken.jpg' | asset_url | json }};MV_ASSETS['voetbal-gripsokken-wit.jpg']={{ 'mv-voetbal-gripsokken-wit.jpg' | asset_url | json }};</script>
+<section class="mv-band-dark mv-pad{%- if s.custom_pad %} mv-custom-pad{% endif -%}" data-ab="principles" aria-labelledby="pil-title" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--mv-pt:{{ s.padding_top }}px;--mv-pb:{{ s.padding_bottom }}px;--mv-pt-m:{{ s.padding_top_mobile }}px;--mv-pb-m:{{ s.padding_bottom_mobile }}px;--mv-len:{{ s.scroll_length }}vh;--mv-len-m:{{ s.scroll_length_mobile }}vh;" data-ta="{{ s.text_align }}" data-ta-m="{{ s.text_align_m }}" data-w="{{ s.section_width }}" data-anim="{{ s.animate }}"> <div class="mv-wrap"> <div class="mv-why__head"> <h2 class="mv-h2 mv-rv" id="pil-title">{{ s.t1 }}</h2> <p class="mv-lead mv-muted mv-rv" style="--d:.12s">{{ s.t2 | escape }}</p> </div> <ol class="mv-principles"> <li class="mv-pr"> <p class="mv-pr__big" data-w="Geloof" aria-hidden="true">{{ s.t3 | escape }}</p> <div class="mv-pr__txt"><h3>{{ s.t4 | escape }}</h3><p class="mv-muted">{{ s.t5 | escape }}</p></div> </li> <li class="mv-pr"> <p class="mv-pr__big" data-w="Impact" aria-hidden="true">{{ s.t6 | escape }}</p> <div class="mv-pr__txt"><h3>{{ s.t7 | escape }}</h3><p class="mv-muted">{{ s.t8 | escape }}</p></div> </li> <li class="mv-pr"> <p class="mv-pr__big" data-w="Waarde" aria-hidden="true">{{ s.t9 | escape }}</p> <div class="mv-pr__txt"><h3>{{ s.t10 | escape }}</h3><p class="mv-muted">{{ s.t11 | escape }}</p></div> </li> <li class="mv-pr"> <p class="mv-pr__big" data-w="Team" aria-hidden="true">{{ s.t12 | escape }}</p> <div class="mv-pr__txt"><h3>{{ s.t13 | escape }}</h3><p class="mv-muted">{{ s.t14 | escape }}</p></div> </li> </ol> </div> </section>
+</div>
+{% schema %}
+{
+  "name": "Visie: Pijlers",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "t1",
+      "label": "H2 · Op welke pijlers bouwt de visie van HÏ Grip?",
+      "default": "Op welke pijlers bouwt de visie van <em>HÏ Grip?</em>"
+    },
+    {
+      "type": "textarea",
+      "id": "t2",
+      "label": "P · De visie van HÏ Grip rust op vier pijlers die bepalen hoe het ",
+      "default": "De visie van HÏ Grip rust op vier pijlers die bepalen hoe het merk groeit: sportswear als fundament onder presteren, maatschappelijke impact door sport, meervoudige waarde samen met partners, en een team en cultuur waarin eerlijkheid, innovatie en teamgeest centraal staan."
+    },
+    {
+      "type": "text",
+      "id": "t3",
+      "label": "P · Geloof",
+      "default": "Geloof"
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "H3 · Ons geloof",
+      "default": "Ons geloof"
+    },
+    {
+      "type": "textarea",
+      "id": "t5",
+      "label": "P · Sportswear moet het fundament zijn waarop iedere sporter kan b",
+      "default": "Sportswear moet het fundament zijn waarop iedere sporter kan bouwen om het maximale uit zichzelf te halen. Daarom ontwikkelen we sportswear die verder gaat dan wat er al is: technisch, comfortabel en innovatief, zodat sporters hun eigen grenzen kunnen verleggen."
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "P · Impact",
+      "default": "Impact"
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "H3 · Maatschappelijke impact",
+      "default": "Maatschappelijke impact"
+    },
+    {
+      "type": "textarea",
+      "id": "t8",
+      "label": "P · We investeren in maatschappelijke sportinitiatieven. We willen",
+      "default": "We investeren in maatschappelijke sportinitiatieven. We willen kinderen, tieners en studenten verbinden door sport en bijdragen aan een toekomst waarin toegang tot sport, bewegen, presteren, vitaliteit en gezond leven vanzelfsprekend onderdeel zijn van het dagelijks leven."
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "P · Waarde",
+      "default": "Waarde"
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "label": "H3 · Meervoudige waarde",
+      "default": "Meervoudige waarde"
+    },
+    {
+      "type": "textarea",
+      "id": "t11",
+      "label": "P · Team HÏ Grip creëert meervoudige waarde door verantwoord te pr",
+      "default": "Team HÏ Grip creëert meervoudige waarde door verantwoord te produceren, transparant te communiceren en langdurige samenwerkingen op te bouwen met atleten, leveranciers, clubs, scholen en universiteiten."
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "P · Team",
+      "default": "Team"
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "H3 · Team & cultuur",
+      "default": "Team & cultuur"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "label": "P · Binnen Team HÏ Grip bouwen we aan een veilige, hands-on cultuu",
+      "default": "Binnen Team HÏ Grip bouwen we aan een veilige, hands-on cultuur waarin mensen zich verbonden voelen, verantwoordelijk initiatief nemen en samen vooruitgaan."
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Tekst uitlijnen (desktop)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "text_align_m",
+      "label": "Tekst uitlijnen (mobiel)",
+      "options": [
+        {
+          "value": "",
+          "label": "Standaard"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Breedte",
+      "options": [
+        {
+          "value": "",
+          "label": "Pagina"
+        },
+        {
+          "value": "full",
+          "label": "Volledig"
+        }
+      ],
+      "default": ""
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen padding gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding boven",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding onder",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Padding boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Padding onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "checkbox",
+      "id": "animate",
+      "label": "Animaties aan",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visie: Pijlers"
+    }
+  ]
+}
+{% endschema %}

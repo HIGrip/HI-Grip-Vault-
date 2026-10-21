@@ -1,0 +1,57 @@
+[  276427ms] [LOG] %c
+   ██╗      █████╗ ███╗   ██╗██████╗  ██████╗ 
+   ██║     ██╔══██╗████╗  ██║██╔══██╗██╔═══██╗
+   ██║     ███████║██╔██╗ ██║██║  ██║██║   ██║
+   ██║     ██╔══██║██║╚██╗██║██║  ██║██║   ██║
+   ███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝
+   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ 
+  %c
+   ███╗   ██╗ ██████╗ ██████╗ ██████╗ ██╗███████╗
+   ████╗  ██║██╔═══██╗██╔══██╗██╔══██╗██║██╔════╝
+   ██╔██╗ ██║██║   ██║██████╔╝██████╔╝██║███████╗
+   ██║╚██╗██║██║   ██║██╔══██╗██╔══██╗██║╚════██║
+   ██║ ╚████║╚██████╔╝██║  ██║██║  ██║██║███████║
+   ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+  
+   %c%c color: #d2ff00; font: 400 1em monospace;  background-color: #d2ff00; color: black; font: 400 1em monospace; padding: 0.5em 0; font-weight: bold;  @ https://lando.itsoffbrand.io/dev-js/lando-by-OFF+BRAND.05.js:0
+[  281347ms] [LOG] resize issue prevention @ https://lando.itsoffbrand.io/dev-js/lando-by-OFF+BRAND.05.js:5466
+[  836459ms] [LOG] Proxy(Object) @ https://studiofreight.com/_nuxt/CEOQYQtY.js:0
+[ 1073397ms] [LOG] Proxy(Object) @ https://studiofreight.com/_nuxt/CEOQYQtY.js:0
+[ 1169212ms] [LOG] %c Created by Lusion: https://lusion.co/ border:2px solid gray; padding:5px; font-family:monospace; font-size:11px; @ https://lusion.co/_astro/hoisted.CUO_IjfL.js:4185
+[ 1684468ms] [LOG] %c Created by Lusion: https://lusion.co/ border:2px solid gray; padding:5px; font-family:monospace; font-size:11px; @ https://lusion.co/_astro/hoisted.CUO_IjfL.js:4185
+[ 2292702ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9870243ms] [WARNING] WebGL: CONTEXT_LOST_WEBGL: loseContext: context lost @ https://www.14islands.com/:0
+[ 9870646ms] [LOG] THREE.WebGLRenderer: Context Lost. @ https://www.14islands.com/_next/static/chunks/pages/_app-2ead1a926c2c8c7f.js:2361
+[ 9872659ms] [LOG] THREE.WebGLRenderer: Context Restored. @ https://www.14islands.com/_next/static/chunks/pages/_app-2ead1a926c2c8c7f.js:2361
+[ 9872825ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.googletagmanager.com/gtag/js?id=G-W6GGR8M7C6&cx=c&gtm=4e6ac1:0
+[ 9872837ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.14islands.com/_next/data/nAx4MwlYglWW3rhGCy0dh/privacy-policy.json?slug=privacy-policy:0
+[ 9878125ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9879519ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.14islands.com/_next/data/nAx4MwlYglWW3rhGCy0dh/work/cartier365.json?slug=cartier365:0
+[ 9879520ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.14islands.com/_next/data/nAx4MwlYglWW3rhGCy0dh/work/cogent-security-ai.json?slug=cogent-security-ai:0
+[ 9879521ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9880094ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9881043ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9881602ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cdn.sanity.io/files/f3tpxs09/production/f7c533514e697633ae912646f5b296ee600340a9.mp4:0
+[ 9957263ms] [LOG] %c
+   ██╗      █████╗ ███╗   ██╗██████╗  ██████╗ 
+   ██║     ██╔══██╗████╗  ██║██╔══██╗██╔═══██╗
+   ██║     ███████║██╔██╗ ██║██║  ██║██║   ██║
+   ██║     ██╔══██║██║╚██╗██║██║  ██║██║   ██║
+   ███████╗██║  ██║██║ ╚████║██████╔╝╚██████╔╝
+   ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ 
+  %c
+   ███╗   ██╗ ██████╗ ██████╗ ██████╗ ██╗███████╗
+   ████╗  ██║██╔═══██╗██╔══██╗██╔══██╗██║██╔════╝
+   ██╔██╗ ██║██║   ██║██████╔╝██████╔╝██║███████╗
+   ██║╚██╗██║██║   ██║██╔══██╗██╔══██╗██║╚════██║
+   ██║ ╚████║╚██████╔╝██║  ██║██║  ██║██║███████║
+   ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+  
+   %c%c color: #d2ff00; font: 400 1em monospace;  background-color: #d2ff00; color: black; font: 400 1em monospace; padding: 0.5em 0; font-weight: bold;  @ https://lando.itsoffbrand.io/dev-js/lando-by-OFF+BRAND.05.js:0
+[ 9972490ms] [LOG] resize issue prevention @ https://lando.itsoffbrand.io/dev-js/lando-by-OFF+BRAND.05.js:5466
+[21293991ms] [ERROR] Hydration completed but contains mismatches. @ https://studiofreight.com/_nuxt/BiJjwHQq.js:1
+[21294027ms] [LOG] Proxy(Object) @ https://studiofreight.com/_nuxt/CEOQYQtY.js:0
+[62556183ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://studiofreight.com/_nuxt/builds/latest.json?1792045494528:0
+[62558822ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://studiofreight.com/_nuxt/builds/latest.json?1792045494528:0
+[77476520ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://studiofreight.com/_nuxt/builds/latest.json?1792060419647:0
+[77478468ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://studiofreight.com/_nuxt/builds/latest.json?1792060419647:0

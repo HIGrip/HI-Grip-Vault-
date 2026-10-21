@@ -1,0 +1,95 @@
+{{ 'shop-keuzehulp.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+-%}
+
+<section class="shop-kh">
+  <div class="shop-kh__head">
+    {%- if s.eyebrow != blank -%}
+      <span class="shop-kh__eyebrow">{{ s.eyebrow }}</span>
+    {%- endif -%}
+    {%- if s.title != blank -%}<h2 class="shop-kh__title">{{ s.title }}</h2>{%- endif -%}
+  </div>
+
+  <div class="shop-kh__grid">
+    {%- for block in section.blocks -%}
+      {%- assign b = block.settings -%}
+      <div class="shop-kh__col{% if b.highlight %} shop-kh__col--highlight{% endif %}" {{ block.shopify_attributes }}>
+        {%- if b.tag != blank -%}<span class="shop-kh__tag">{{ b.tag }}</span>{%- endif -%}
+        <h3 class="shop-kh__name">{{ b.name }}</h3>
+        {%- if b.line != blank -%}<p class="shop-kh__line">{{ b.line }}</p>{%- endif -%}
+
+        {%- assign points = b.points | newline_to_br | split: '<br />' -%}
+        <ul class="shop-kh__points">
+          {%- for point in points -%}
+            {%- assign clean = point | strip -%}
+            {%- if clean != blank -%}<li>{{ clean }}</li>{%- endif -%}
+          {%- endfor -%}
+        </ul>
+
+        {%- if b.cta_text != blank -%}
+          <a class="shop-kh__cta" href="{{ b.cta_url | default: '#' }}">{{ b.cta_text }} &rarr;</a>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop — keuzehulp",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Twijfel je nog?" },
+    { "type": "text", "id": "title", "label": "Titel", "default": "Welke past bij jou?" }
+  ],
+  "blocks": [
+    {
+      "type": "keuze",
+      "name": "Kolom",
+      "settings": [
+        { "type": "text", "id": "tag", "label": "Label bovenaan" },
+        { "type": "text", "id": "name", "label": "Naam", "default": "Model" },
+        { "type": "text", "id": "line", "label": "Eén regel samenvatting" },
+        { "type": "textarea", "id": "points", "label": "Punten (één per regel)" },
+        { "type": "checkbox", "id": "highlight", "label": "Uitlichten", "default": false },
+        { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Bekijk" },
+        { "type": "url", "id": "cta_url", "label": "Knop-link" }
+      ]
+    }
+  ],
+  "max_blocks": 2,
+  "presets": [
+    {
+      "name": "Shop — keuzehulp",
+      "blocks": [
+        {
+          "type": "keuze",
+          "settings": {
+            "tag": "Nieuw",
+            "name": "Performance Grip Socks 2.0",
+            "line": "Voor wie het maximale uit z'n voeten wil halen.",
+            "points": "15–20 mmHg compressie\nNaadloos gebreid, geen wrijving\nCoolmax® houdt je voeten droog\nDrie maten: 35–47, in wit en zwart",
+            "highlight": true,
+            "cta_text": "Bekijk de 2.0",
+            "cta_url": "/products/performance-gripsokken-2-0-wit"
+          }
+        },
+        {
+          "type": "keuze",
+          "settings": {
+            "tag": "Bewezen",
+            "name": "Performance Gripsok",
+            "line": "Voor wie gaat voor bewezen grip tegen de scherpste prijs.",
+            "points": "Hetzelfde grippatroon dat 3.500+ sporters gebruiken\nEén maatvoering, in het wit\nDirect uit voorraad leverbaar",
+            "highlight": false,
+            "cta_text": "Bekijk de gripsok",
+            "cta_url": "/products/performance-gripsokken"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

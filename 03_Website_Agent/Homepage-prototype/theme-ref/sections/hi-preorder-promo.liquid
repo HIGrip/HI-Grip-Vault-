@@ -1,0 +1,109 @@
+{{ 'gripsocks2-launch.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign cta_url = s.cta_url | default: routes.all_products_collection_url
+-%}
+
+<section class="g2 g2-preorder">
+  <div class="g2-preorder__top">
+    <div class="g2-preorder__left">
+      {%- if s.eyebrow != blank -%}<span class="g2-eyebrow"><span class="dot"></span> {{ s.eyebrow }}</span>{%- endif -%}
+      {%- if s.num_top != blank or s.num_accent != blank -%}
+        <div class="g2-preorder__num">{{ s.num_top }}<span class="accent">{{ s.num_accent }}</span></div>
+      {%- endif -%}
+      {%- if s.line != blank -%}<p class="g2-preorder__line">{{ s.line }}</p>{%- endif -%}
+
+      {%- if s.chip1_num != blank or s.chip2_num != blank or s.chip3_num != blank -%}
+        <div class="g2-preorder__chips">
+          {%- if s.chip1_num != blank -%}<div class="g2-preorder__chip"><b>{{ s.chip1_num }}</b><span>{{ s.chip1_label }}</span></div>{%- endif -%}
+          {%- if s.chip2_num != blank -%}<div class="g2-preorder__chip"><b>{{ s.chip2_num }}</b><span>{{ s.chip2_label }}</span></div>{%- endif -%}
+          {%- if s.chip3_num != blank -%}<div class="g2-preorder__chip"><b>{{ s.chip3_num }}</b><span>{{ s.chip3_label }}</span></div>{%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if s.cta_text != blank -%}<a href="{{ cta_url }}" class="g2-btn">{{ s.cta_text }} &rarr;</a>{%- endif -%}
+    </div>
+
+    <div class="g2-preorder__right">
+      {%- if s.image != blank -%}
+        {{ s.image | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '500,800,1200', sizes: '50vw', alt: s.image.alt | default: 'Performance Grip Socks 2.0' }}
+        {%- if s.tag_text != blank -%}<span class="g2-preorder__tag">{{ s.tag_text }}</span>{%- endif -%}
+      {%- else -%}
+        <div class="g2-preorder__photo">
+          <svg viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M118 18c30-10 62-8 84 10 14 11 18 27 16 44-3 24-14 45-14 70 0 30 10 55 28 78 22 28 30 62 20 96-9 32-38 54-78 60-46 7-92-10-112-46-14-25-16-56-8-92 7-32 8-58-2-84-9-24-12-46-6-68 8-30 32-56 72-68z" fill="url(#g2preordergrad)" stroke="rgba(255,255,255,.4)" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="g2preordergrad" x1="60" y1="18" x2="260" y2="400" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#333230"/>
+                <stop offset="1" stop-color="#0f0e0d"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        {%- if s.tag_text != blank -%}<span class="g2-preorder__tag">{{ s.tag_text }}</span>{%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="g2-preorder__steps">
+      {%- for block in section.blocks -%}
+        <div class="g2-preorder__step" {{ block.shopify_attributes }}>
+          <b>{{ block.settings.index }}</b>
+          <span>{{ block.settings.text }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Pre-order 2+2",
+  "tag": "section",
+  "class": "hi-preorder-promo-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Pre-order · Performance Grip Socks 2.0" },
+    { "type": "text", "id": "num_top", "label": "Cijfer — normaal (wit)", "default": "2" },
+    { "type": "text", "id": "num_accent", "label": "Cijfer — accent (oranje)", "default": "+2" },
+    { "type": "textarea", "id": "line", "label": "Toelichting", "default": "Bestel nu 2 paar, ontvang automatisch 2 paar gratis. Alleen tijdens de pre-order fase — korting telt vanzelf in je winkelwagen." },
+
+    { "type": "header", "content": "Data-chips" },
+    { "type": "text", "id": "chip1_num", "label": "Chip 1 — getal", "default": "14" },
+    { "type": "text", "id": "chip1_label", "label": "Chip 1 — label", "default": "Start" },
+    { "type": "text", "id": "chip2_num", "label": "Chip 2 — getal", "default": "28" },
+    { "type": "text", "id": "chip2_label", "label": "Chip 2 — label", "default": "Aug" },
+    { "type": "text", "id": "chip3_num", "label": "Chip 3 — getal", "default": "4" },
+    { "type": "text", "id": "chip3_label", "label": "Chip 3 — label", "default": "Paar" },
+
+    { "type": "text", "id": "cta_text", "label": "Knoptekst", "default": "Pre-order nu" },
+    { "type": "url", "id": "cta_url", "label": "Knop-link" },
+
+    { "type": "header", "content": "Foto" },
+    { "type": "image_picker", "id": "image", "label": "Foto Gripsocks 2.0 (leeg = silhouet-placeholder)" },
+    { "type": "text", "id": "tag_text", "label": "Label op foto", "default": "2+2 gratis" }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Stap",
+      "settings": [
+        { "type": "text", "id": "index", "label": "Nummer", "default": "01" },
+        { "type": "text", "id": "text", "label": "Tekst", "default": "Leg 2 paar in je mandje" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Pre-order 2+2",
+      "blocks": [
+        { "type": "step", "settings": { "index": "01", "text": "Leg 2 paar in je mandje" } },
+        { "type": "step", "settings": { "index": "02", "text": "Korting telt automatisch" } },
+        { "type": "step", "settings": { "index": "03", "text": "Betaal 2, ontvang 4" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

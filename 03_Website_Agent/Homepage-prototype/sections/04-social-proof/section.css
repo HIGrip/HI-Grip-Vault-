@@ -1,0 +1,87 @@
+/* 04 SOCIAL PROOF · off-white vlak, kop + lead, een sleepbare rij echte foto's van gelijke hoogte en eigen breedte.
+   De rij begint op de lijn van de kop en loopt rechts door tot de rand; slepen via hpDrag, klik opent hpLightbox. */
+.hp-04 {
+  --hp-04-inset: var(--hp-space-gutter);
+  --hp-04-h: clamp(200px, 56vw, 420px);
+  --hp-04-gap: 12px;
+  container-type: inline-size;
+  background: var(--hi-offwhite);
+  color: var(--hi-black);
+}
+
+/* kop */
+.hp-04-head { display: grid; gap: var(--hp-space-sm); margin-bottom: var(--hp-space-ml); }
+.hp-04-h2 { max-width: 18ch; }
+.hp-04-lead { color: var(--hi-graphite); }
+.hp-04-hint { display: inline-flex; align-items: center; gap: 10px; margin-top: var(--hp-space-xs); font: 500 var(--hp-type-small)/1.2 var(--hp-type-family); color: var(--hi-graphite); }
+.hp-04-hint__icon { flex: none; width: 24px; height: 12px; }
+.hp-04-hint__pointer { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .hp-04-hint__pointer { display: inline; }
+  .hp-04-hint__touch { display: none; }
+}
+
+/* rij: de viewport knipt, de padding links houdt de eerste foto op de lijn van de kop */
+.hp-04-viewport { position: relative; overflow: hidden; padding-left: var(--hp-04-inset); cursor: grab; user-select: none; -webkit-user-select: none; outline-offset: -3px; }
+.hp-04-viewport.is-dragging { cursor: grabbing; }
+.hp-04-track { position: relative; display: flex; gap: var(--hp-04-gap); width: max-content; padding-right: calc(var(--hp-04-inset) * 2); }
+.hp-04-item { flex: none; }
+.hp-04-fig { display: grid; gap: 12px; }
+
+/* foto: vaste hoogte, breedte volgt de eigen verhouding */
+.hp-04-photo {
+  display: block; height: var(--hp-04-h); width: auto; max-width: none;
+  padding: 0; border: 0; cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+.hp-04-viewport.is-dragging .hp-04-photo { cursor: grabbing; }
+.hp-04-img { transform: scale(1); transition: transform var(--hp-dur-2) var(--hp-ease); -webkit-user-drag: none; pointer-events: none; }
+.hp-04-photo:focus-visible { outline: 2px solid var(--hi-black); outline-offset: 3px; }
+
+/* cue: een rond icoon dat altijd zichtbaar is; bij hover/tik schuift het label "Open foto" uit */
+.hp-04-cue {
+  position: absolute; z-index: 1; right: 12px; bottom: 12px;
+  display: inline-flex; align-items: center; gap: 0;
+  height: 36px; padding: 0 0 0 0; border-radius: 999px;
+  background: var(--hi-white); color: var(--hi-black);
+  font: 600 var(--hp-type-label)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; white-space: nowrap;
+}
+.hp-04-cue__icon { display: grid; place-items: center; width: 36px; height: 36px; }
+.hp-04-cue__icon svg { width: 12px; height: 12px; }
+.hp-04-cue__label { display: block; max-width: 0; overflow: hidden; transition: max-width var(--hp-dur-2) var(--hp-ease), padding var(--hp-dur-2) var(--hp-ease); }
+
+/* staat "aanwijsbaar": hover op desktop, focus met toetsenbord, tik (klasse is-press) op touch */
+.hp-04-photo.is-press .hp-04-img { transform: scale(1.04); }
+.hp-04-photo.is-press .hp-04-cue__label,
+.hp-04-photo:focus-visible .hp-04-cue__label { max-width: 120px; padding-right: 14px; }
+@media (hover: hover) {
+  .hp-04-photo:hover .hp-04-img { transform: scale(1.04); }
+  .hp-04-photo:hover .hp-04-cue__label { max-width: 120px; padding-right: 14px; }
+  .hp-04-viewport.is-dragging .hp-04-photo:hover .hp-04-img { transform: scale(1); }
+}
+
+.hp-04-cap { font: 500 var(--hp-type-small)/1.2 var(--hp-type-family); color: var(--hi-graphite); }
+
+/* voortgang: dunne lijn die laat zien waar je in de rij bent */
+.hp-04-progress { position: relative; height: 2px; margin-top: var(--hp-space-md); overflow: hidden; border-radius: 2px; background: var(--hi-line); }
+.hp-04-progress__bar { position: absolute; inset: 0 auto 0 0; width: var(--hp-04-thumb, 30%); border-radius: inherit; background: var(--hi-black); transform: translateX(var(--hp-04-pos, 0%)); }
+
+@media (min-width: 769px) {
+  .hp-04 {
+    --hp-04-inset: max(40px, env(safe-area-inset-left, 0px), calc((100cqw - var(--hp-space-max)) / 2));
+    --hp-04-h: min(54vh, 480px);
+    --hp-04-gap: 16px;
+  }
+  .hp-04-head { grid-template-columns: minmax(0, 1fr) auto; column-gap: var(--hp-space-lg); align-items: end; margin-bottom: var(--hp-space-ml); }
+  .hp-04-h2, .hp-04-lead { grid-column: 1; }
+  .hp-04-hint { grid-column: 2; grid-row: 2; margin-top: 0; padding-bottom: 6px; }
+  .hp-04-cue { right: 16px; bottom: 16px; height: 40px; }
+  .hp-04-cue__icon { width: 40px; height: 40px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hp-04-photo.is-press .hp-04-img { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) and (hover: hover) {
+  .hp-04-photo:hover .hp-04-img { transform: none; }
+}

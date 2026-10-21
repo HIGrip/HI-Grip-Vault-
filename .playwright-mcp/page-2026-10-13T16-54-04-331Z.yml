@@ -1,0 +1,1224 @@
+- generic [active] [ref=f53e1]:
+  - progressbar [aria-hidden]
+  - generic [ref=f53e2]:
+    - generic [ref=f53e3]:
+      - paragraph [ref=f53e4]:
+        - link "20% Off First Order with Code COMFORT20 Free Standard Shipping on Orders $75+" [ref=f53e5] [cursor=pointer]:
+          - /url: https://bombas.com/collections/new-releases
+      - button [ref=f53e7] [cursor=pointer]:
+        - paragraph [ref=f53e10]: United States
+    - generic [ref=f53e14]:
+      - link "Bombas" [ref=f53e16] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f53e17]: 
+      - text:  
+      - generic [ref=f53e19]:
+        - link "Women" [ref=f53e20] [cursor=pointer]:
+          - /url: /collections/womens
+        - link "Men" [ref=f53e22] [cursor=pointer]:
+          - /url: /collections/mens
+        - link "Kids" [ref=f53e24] [cursor=pointer]:
+          - /url: /collections/kids-socks
+        - link "Sport" [ref=f53e26] [cursor=pointer]:
+          - /url: /collections/womens-performance-socks
+        - link "Mission" [ref=f53e28] [cursor=pointer]:
+          - /url: https://beebetter.bombas.com/
+        - link "Help" [ref=f53e30] [cursor=pointer]:
+          - /url: /pages/help-center
+      - generic [ref=f53e33]:
+        - button "Search" [ref=f53e34] [cursor=pointer]:
+          - generic [ref=f53e35]: 
+        - button "Cart" [ref=f53e37] [cursor=pointer]:
+          - generic [ref=f53e38]: 
+    - generic [ref=f53e43]:
+      - generic [ref=f53e47]:
+        - heading "Bralettes & Underwear" [level=2] [ref=f53e56] [cursor=pointer]
+        - heading "Socks" [level=2] [ref=f53e66] [cursor=pointer]
+        - heading "Slippers & Shoes" [level=2] [ref=f53e76] [cursor=pointer]
+        - heading "T-Shirts" [level=2] [ref=f53e86] [cursor=pointer]
+      - generic [ref=f53e90]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph
+      - generic [ref=f53e101]:
+        - heading "Prints, Patterns, & Pops of Color" [level=2] [ref=f53e103]
+        - paragraph [ref=f53e104]: New styles and colors, just in time for fall.
+        - generic [ref=f53e105]:
+          - link "Shop Women" [ref=f53e106] [cursor=pointer]:
+            - /url: /collections/womens-socks
+          - link "Shop Men" [ref=f53e108] [cursor=pointer]:
+            - /url: /collections/mens-socks
+      - generic [ref=f53e122]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph
+      - generic [ref=f53e125]:
+        - heading "CASUAL" [level=2] [ref=f53e134] [cursor=pointer]
+        - heading "COMPRESSION" [level=2] [ref=f53e144] [cursor=pointer]
+        - heading "SPORT" [level=2] [ref=f53e154] [cursor=pointer]
+        - heading "DRESS" [level=2] [ref=f53e164] [cursor=pointer]
+      - generic [ref=f53e168]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph
+      - generic [ref=f53e178]:
+        - heading "ONE PURCHASED = ONE DONATED" [level=2] [ref=f53e179]
+        - paragraph [ref=f53e180]: We donate on your behalf in the US and beyond.
+      - generic [ref=f53e186]:
+        - link "Shop The Collection" [ref=f53e197] [cursor=pointer]:
+          - /url: /collections/sesamestreet
+        - generic [ref=f53e202]:
+          - list [ref=f53e208]:
+            - listitem [ref=f53e209]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e211] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+                - img "Sesame_Street Ankle - Sesame_Mix L [11627]" [ref=f53e213]
+            - listitem [ref=f53e214]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e216] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+            - listitem [ref=f53e219]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e221] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+            - listitem [ref=f53e224]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e226] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+            - listitem [ref=f53e229]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e231] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+            - listitem [ref=f53e234]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e236] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+            - listitem [ref=f53e239]:
+              - link "Sesame Street | Bombas Adult Ankle Sock 4-Pack" [ref=f53e241] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+          - generic [ref=f53e244]:
+            - generic [ref=f53e245]:
+              - generic "Sesame Mix color swatch" [ref=f53e251]:
+                - radio "Sesame Mix color swatch" [checked] [ref=f53e252]
+                - generic [ref=f53e253]:
+                  - generic [ref=f53e254] [cursor=pointer]
+                  - generic [ref=f53e255] [cursor=pointer]: Sesame Mix
+              - 'link "Sesame Street | Bombas Adult Ankle Sock 4-Pack- Color: Sesame Mix €87 Unisex · Midweight" [ref=f53e256] [cursor=pointer]':
+                - /url: /products/sesame-street-bombas-adult-ankle-sock-4-pack?variant=sesame-mix
+                - generic [ref=f53e257]:
+                  - 'heading "Sesame Street | Bombas Adult Ankle Sock 4-Pack- Color: Sesame Mix" [level=4] [ref=f53e258]': Sesame Street | Bombas Adult Ankle Sock 4-Pack
+                  - generic [ref=f53e259]: €87
+                  - generic [ref=f53e261]: Unisex · Midweight
+            - button "Quick View" [ref=f53e265] [cursor=pointer]
+        - generic [ref=f53e269]:
+          - list [ref=f53e275]:
+            - listitem [ref=f53e276]:
+              - link "Women's Sesame Street | Bombas Sunday Slipper" [ref=f53e278] [cursor=pointer]:
+                - /url: /products/womens-sesame-street-bombas-sunday-slipper?variant=cookie-monster
+                - img "Sunday Low_Back_Slip_on_1 - Cookie_Monster L1 [11299]" [ref=f53e280]
+            - listitem [ref=f53e281]:
+              - link "Women's Sesame Street | Bombas Sunday Slipper" [ref=f53e283] [cursor=pointer]:
+                - /url: /products/womens-sesame-street-bombas-sunday-slipper?variant=cookie-monster
+            - listitem [ref=f53e286]:
+              - link "Women's Sesame Street | Bombas Sunday Slipper" [ref=f53e288] [cursor=pointer]:
+                - /url: /products/womens-sesame-street-bombas-sunday-slipper?variant=cookie-monster
+          - generic [ref=f53e291]:
+            - generic [ref=f53e292]:
+              - generic [ref=f53e296]:
+                - generic "Cookie Monster color swatch" [ref=f53e298]:
+                  - radio "Cookie Monster color swatch" [checked] [ref=f53e299]
+                  - generic [ref=f53e300]:
+                    - generic [ref=f53e301] [cursor=pointer]
+                    - generic [ref=f53e302] [cursor=pointer]: Cookie Monster
+                - generic "Elmo color swatch" [ref=f53e304]:
+                  - radio "Elmo color swatch" [ref=f53e305]
+                  - generic [ref=f53e306]:
+                    - generic [ref=f53e307] [cursor=pointer]
+                    - generic [ref=f53e308] [cursor=pointer]: Elmo
+              - 'link "Women''s Sesame Street | Bombas Sunday Slipper- Color: Cookie Monster €115" [ref=f53e309] [cursor=pointer]':
+                - /url: /products/womens-sesame-street-bombas-sunday-slipper?variant=cookie-monster
+                - generic [ref=f53e310]:
+                  - 'heading "Women''s Sesame Street | Bombas Sunday Slipper- Color: Cookie Monster" [level=4] [ref=f53e311]': Women's Sesame Street | Bombas Sunday Slipper
+                  - generic [ref=f53e312]: €115
+            - button "Quick View" [ref=f53e316] [cursor=pointer]
+        - generic [ref=f53e320]:
+          - list [ref=f53e326]:
+            - listitem [ref=f53e327]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e329] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+                - img "Sesame_Street Calf - Sesame_Mix L [11628]" [ref=f53e331]
+            - listitem [ref=f53e332]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e334] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e337]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e339] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e342]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e344] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e347]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e349] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e352]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e354] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e357]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e359] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e362]:
+              - link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box" [ref=f53e364] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+          - generic [ref=f53e367]:
+            - generic [ref=f53e368]:
+              - generic "Sesame Mix color swatch" [ref=f53e374]:
+                - radio "Sesame Mix color swatch" [checked] [ref=f53e375]
+                - generic [ref=f53e376]:
+                  - generic [ref=f53e377] [cursor=pointer]
+                  - generic [ref=f53e378] [cursor=pointer]: Sesame Mix
+              - 'link "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box- Color: Sesame Mix €54" [ref=f53e379] [cursor=pointer]':
+                - /url: /products/sesame-street-bombas-youth-calf-sock-4-pack-gift-box?variant=sesame-mix
+                - generic [ref=f53e380]:
+                  - 'heading "Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box- Color: Sesame Mix" [level=4] [ref=f53e381]': Sesame Street | Bombas Youth Calf Sock 4-Pack Gift Box
+                  - generic [ref=f53e382]: €54
+            - button "Quick View" [ref=f53e386] [cursor=pointer]
+        - generic [ref=f53e390]:
+          - list [ref=f53e396]:
+            - listitem [ref=f53e397]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e399] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+                - img "Sesame_Street Calf - Sesame_Mix L [11630]" [ref=f53e401]
+            - listitem [ref=f53e402]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e404] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e407]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e409] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e412]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e414] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e417]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e419] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+            - listitem [ref=f53e422]:
+              - link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box" [ref=f53e424] [cursor=pointer]:
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+          - generic [ref=f53e427]:
+            - generic [ref=f53e428]:
+              - generic "Sesame Mix color swatch" [ref=f53e434]:
+                - radio "Sesame Mix color swatch" [checked] [ref=f53e435]
+                - generic [ref=f53e436]:
+                  - generic [ref=f53e437] [cursor=pointer]
+                  - generic [ref=f53e438] [cursor=pointer]: Sesame Mix
+              - 'link "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box- Color: Sesame Mix €54" [ref=f53e439] [cursor=pointer]':
+                - /url: /products/sesame-street-bombas-toddler-gripper-calf-sock-4-pack-gift-box?variant=sesame-mix
+                - generic [ref=f53e440]:
+                  - 'heading "Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box- Color: Sesame Mix" [level=4] [ref=f53e441]': Sesame Street | Bombas Toddler Gripper Calf Sock 4-Pack Gift Box
+                  - generic [ref=f53e442]: €54
+            - button "Quick View" [ref=f53e446] [cursor=pointer]
+      - generic [ref=f53e452]:
+        - generic [ref=f53e458]:
+          - generic [ref=f53e459]: Women's
+          - heading "New Arrivals" [level=2] [ref=f53e460]
+          - generic [ref=f53e461]:
+            - link "Shop All" [ref=f53e462] [cursor=pointer]:
+              - /url: /collections/womens-new-releases
+            - link "Shop Best Sellers" [ref=f53e464] [cursor=pointer]:
+              - /url: /collections/womens-best-sellers
+        - generic [ref=f53e471]:
+          - list [ref=f53e477]:
+            - listitem [ref=f53e478]:
+              - link "Women's Suede Fluff Scuff Slipper" [ref=f53e480] [cursor=pointer]:
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+                - generic [ref=f53e481]:
+                  - img "Scuff Mule - Camel L1 [11259]"
+            - listitem [ref=f53e482]:
+              - link "Women's Suede Fluff Scuff Slipper" [ref=f53e484] [cursor=pointer]:
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+            - listitem [ref=f53e487]:
+              - link "Women's Suede Fluff Scuff Slipper" [ref=f53e489] [cursor=pointer]:
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+            - listitem [ref=f53e492]:
+              - link "Women's Suede Fluff Scuff Slipper" [ref=f53e494] [cursor=pointer]:
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+            - listitem [ref=f53e497]:
+              - link "Women's Suede Fluff Scuff Slipper" [ref=f53e499] [cursor=pointer]:
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+          - generic [ref=f53e502]:
+            - generic [ref=f53e503]:
+              - generic [ref=f53e507]:
+                - generic "Camel color swatch" [ref=f53e509]:
+                  - radio "Camel color swatch" [checked] [ref=f53e510]
+                  - generic [ref=f53e511]:
+                    - generic [ref=f53e512] [cursor=pointer]
+                    - generic [ref=f53e513] [cursor=pointer]: Camel
+                - generic "Taupe color swatch" [ref=f53e515]:
+                  - radio "Taupe color swatch" [ref=f53e516]
+                  - generic [ref=f53e517]:
+                    - generic [ref=f53e518] [cursor=pointer]
+                    - generic [ref=f53e519] [cursor=pointer]: Taupe
+              - 'link "Women''s Suede Fluff Scuff Slipper- Color: Camel €120" [ref=f53e520] [cursor=pointer]':
+                - /url: /products/womens-suede-fluff-scuff?variant=camel
+                - generic [ref=f53e521]:
+                  - 'heading "Women''s Suede Fluff Scuff Slipper- Color: Camel" [level=4] [ref=f53e522]': Women's Suede Fluff Scuff Slipper
+                  - generic [ref=f53e523]: €120
+            - button "Quick View" [ref=f53e527] [cursor=pointer]
+        - generic [ref=f53e531]:
+          - list [ref=f53e537]:
+            - listitem [ref=f53e538]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e540] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+                - generic [ref=f53e541]:
+                  - img "Conversationals Ankle - Winter_Disco_Mix L [11656]"
+            - listitem [ref=f53e542]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e544] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+            - listitem [ref=f53e547]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e549] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+            - listitem [ref=f53e552]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e554] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+            - listitem [ref=f53e557]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e559] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+            - listitem [ref=f53e562]:
+              - link "Disco Party Ankle Sock 4-Pack" [ref=f53e564] [cursor=pointer]:
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+          - generic [ref=f53e567]:
+            - generic [ref=f53e568]:
+              - generic "Winter Disco Mix color swatch" [ref=f53e574]:
+                - radio "Winter Disco Mix color swatch" [checked] [ref=f53e575]
+                - generic [ref=f53e576]:
+                  - generic [ref=f53e577] [cursor=pointer]
+                  - generic [ref=f53e578] [cursor=pointer]: Winter Disco Mix
+              - 'link "Disco Party Ankle Sock 4-Pack- Color: Winter Disco Mix Now €66 Was €73 10% Pack Savings Women · Midweight" [ref=f53e579] [cursor=pointer]':
+                - /url: /products/womens-winter-disco-ankle-sock-4-pack?variant=winter-disco-mix
+                - generic [ref=f53e580]:
+                  - 'heading "Disco Party Ankle Sock 4-Pack- Color: Winter Disco Mix" [level=4] [ref=f53e581]': Disco Party Ankle Sock 4-Pack
+                  - generic [ref=f53e582]:
+                    - generic "Now €66" [ref=f53e583]: €66
+                    - generic "Was €73" [ref=f53e584]: €73
+                    - generic [ref=f53e585]: 10% Pack Savings
+                  - generic [ref=f53e586]: Women · Midweight
+            - button "Quick View" [ref=f53e590] [cursor=pointer]
+        - generic [ref=f53e594]:
+          - list [ref=f53e600]:
+            - listitem [ref=f53e601]:
+              - link "Travel Compression Knee High Sock 3-Pack" [ref=f53e603] [cursor=pointer]:
+                - /url: /products/womens-travel-compression-knee-high-sock-3-pack-1520mmhg?variant=chai-grey-mix
+                - generic [ref=f53e604]:
+                  - img "Travel_Compression Knee_High - Chai_Grey_Mix L [11495]"
+            - listitem [ref=f53e605]:
+              - link "Travel Compression Knee High Sock 3-Pack" [ref=f53e607] [cursor=pointer]:
+                - /url: /products/womens-travel-compression-knee-high-sock-3-pack-1520mmhg?variant=chai-grey-mix
+            - listitem [ref=f53e610]:
+              - link "Travel Compression Knee High Sock 3-Pack" [ref=f53e612] [cursor=pointer]:
+                - /url: /products/womens-travel-compression-knee-high-sock-3-pack-1520mmhg?variant=chai-grey-mix
+            - listitem [ref=f53e615]:
+              - link "Travel Compression Knee High Sock 3-Pack" [ref=f53e617] [cursor=pointer]:
+                - /url: /products/womens-travel-compression-knee-high-sock-3-pack-1520mmhg?variant=chai-grey-mix
+          - generic [ref=f53e620]:
+            - generic [ref=f53e621]:
+              - generic [ref=f53e625]:
+                - generic "Chai Grey Mix color swatch" [ref=f53e627]:
+                  - radio "Chai Grey Mix color swatch" [checked] [ref=f53e628]
+                  - generic [ref=f53e629]:
+                    - generic [ref=f53e630] [cursor=pointer]
+                    - generic [ref=f53e631] [cursor=pointer]: Chai Grey Mix
+                - generic "Chai Latte color swatch" [ref=f53e633]:
+                  - radio "Chai Latte color swatch" [ref=f53e634]
+                  - generic [ref=f53e635]:
+                    - generic [ref=f53e636] [cursor=pointer]
+                    - generic [ref=f53e637] [cursor=pointer]: Chai Latte
+                - generic "Black color swatch" [ref=f53e639]:
+                  - radio "Black color swatch" [ref=f53e640]
+                  - generic [ref=f53e641]:
+                    - generic [ref=f53e642] [cursor=pointer]
+                    - generic [ref=f53e643] [cursor=pointer]: Black
+                - generic "Grey Heather color swatch" [ref=f53e645]:
+                  - radio "Grey Heather color swatch" [ref=f53e646]
+                  - generic [ref=f53e647]:
+                    - generic [ref=f53e648] [cursor=pointer]
+                    - generic [ref=f53e649] [cursor=pointer]: Grey Heather
+              - 'link "Travel Compression Knee High Sock 3-Pack- Color: Chai Grey Mix €125 Women · Lightweight · 15-20mmHg" [ref=f53e650] [cursor=pointer]':
+                - /url: /products/womens-travel-compression-knee-high-sock-3-pack-1520mmhg?variant=chai-grey-mix
+                - generic [ref=f53e651]:
+                  - 'heading "Travel Compression Knee High Sock 3-Pack- Color: Chai Grey Mix" [level=4] [ref=f53e652]': Travel Compression Knee High Sock 3-Pack
+                  - generic [ref=f53e653]: €125
+                  - generic [ref=f53e655]: Women · Lightweight · 15-20mmHg
+            - button "Quick View" [ref=f53e659] [cursor=pointer]
+        - generic [ref=f53e663]:
+          - list [ref=f53e669]:
+            - listitem [ref=f53e670]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e672] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+                - generic [ref=f53e673]:
+                  - img "Frilly Quarter - Cherry_Coupe_Mix L [11922]"
+            - listitem [ref=f53e674]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e676] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+            - listitem [ref=f53e679]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e681] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+            - listitem [ref=f53e684]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e686] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+            - listitem [ref=f53e689]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e691] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+            - listitem [ref=f53e694]:
+              - link "Ruffle Rib Quarter Sock 4-Pack" [ref=f53e696] [cursor=pointer]:
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+          - generic [ref=f53e699]:
+            - generic [ref=f53e700]:
+              - generic [ref=f53e704]:
+                - generic "Cherry Coupe Mix color swatch" [ref=f53e706]:
+                  - radio "Cherry Coupe Mix color swatch" [checked] [ref=f53e707]
+                  - generic [ref=f53e708]:
+                    - generic [ref=f53e709] [cursor=pointer]
+                    - generic [ref=f53e710] [cursor=pointer]: Cherry Coupe Mix
+                - generic "Neutrals Mix color swatch" [ref=f53e712]:
+                  - radio "Neutrals Mix color swatch" [ref=f53e713]
+                  - generic [ref=f53e714]:
+                    - generic [ref=f53e715] [cursor=pointer]
+                    - generic [ref=f53e716] [cursor=pointer]: Neutrals Mix
+                - generic "core mix color swatch" [ref=f53e718]:
+                  - radio "core mix color swatch" [ref=f53e719]
+                  - generic [ref=f53e720]:
+                    - generic [ref=f53e721] [cursor=pointer]
+                    - generic [ref=f53e722] [cursor=pointer]: core mix
+                - link "+7" [ref=f53e723] [cursor=pointer]:
+                  - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+              - 'link "Ruffle Rib Quarter Sock 4-Pack- Color: Cherry Coupe Mix Now €78 Was €87 10% Pack Savings Women · Lightweight" [ref=f53e724] [cursor=pointer]':
+                - /url: /products/womens-frilly-rib-quarter-sock-4-pack?variant=cherry-coupe-mix
+                - generic [ref=f53e725]:
+                  - 'heading "Ruffle Rib Quarter Sock 4-Pack- Color: Cherry Coupe Mix" [level=4] [ref=f53e726]': Ruffle Rib Quarter Sock 4-Pack
+                  - generic [ref=f53e727]:
+                    - generic "Now €78" [ref=f53e728]: €78
+                    - generic "Was €87" [ref=f53e729]: €87
+                    - generic [ref=f53e730]: 10% Pack Savings
+                  - generic [ref=f53e731]: Women · Lightweight
+            - button "Quick View" [ref=f53e735] [cursor=pointer]
+      - generic [ref=f53e739]:
+        - generic [ref=f53e745]:
+          - generic [ref=f53e746]: Men's
+          - heading "New Arrivals" [level=2] [ref=f53e747]
+          - generic [ref=f53e748]:
+            - link "Shop All" [ref=f53e749] [cursor=pointer]:
+              - /url: /collections/mens-new-releases
+            - link "Shop Best Sellers" [ref=f53e751] [cursor=pointer]:
+              - /url: /collections/mens-best-sellers
+        - generic [ref=f53e758]:
+          - list [ref=f53e764]:
+            - listitem [ref=f53e765]:
+              - link "Men's Suede Moccasin Slipper" [ref=f53e767] [cursor=pointer]:
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+                - generic [ref=f53e768]:
+                  - img "Moccasin Closed_Back_Slip_On - Golden_Camel L1 [10925]"
+            - listitem [ref=f53e769]:
+              - link "Men's Suede Moccasin Slipper" [ref=f53e771] [cursor=pointer]:
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+            - listitem [ref=f53e774]:
+              - link "Men's Suede Moccasin Slipper" [ref=f53e776] [cursor=pointer]:
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+            - listitem [ref=f53e779]:
+              - link "Men's Suede Moccasin Slipper" [ref=f53e781] [cursor=pointer]:
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+            - listitem [ref=f53e784]:
+              - link "Men's Suede Moccasin Slipper" [ref=f53e786] [cursor=pointer]:
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+          - generic [ref=f53e789]:
+            - generic [ref=f53e790]:
+              - generic [ref=f53e794]:
+                - generic "Golden Camel color swatch" [ref=f53e796]:
+                  - radio "Golden Camel color swatch" [checked] [ref=f53e797]
+                  - generic [ref=f53e798]:
+                    - generic [ref=f53e799] [cursor=pointer]
+                    - generic [ref=f53e800] [cursor=pointer]: Golden Camel
+                - generic "Mushroom Grey color swatch" [ref=f53e802]:
+                  - radio "Mushroom Grey color swatch" [ref=f53e803]
+                  - generic [ref=f53e804]:
+                    - generic [ref=f53e805] [cursor=pointer]
+                    - generic [ref=f53e806] [cursor=pointer]: Mushroom Grey
+                - generic "Midnight Navy color swatch" [ref=f53e808]:
+                  - radio "Midnight Navy color swatch" [ref=f53e809]
+                  - generic [ref=f53e810]:
+                    - generic [ref=f53e811] [cursor=pointer]
+                    - generic [ref=f53e812] [cursor=pointer]: Midnight Navy
+              - 'link "Men''s Suede Moccasin Slipper- Color: Golden Camel €135" [ref=f53e813] [cursor=pointer]':
+                - /url: /products/mens-suede-moccasin-slipper?variant=golden-camel
+                - generic [ref=f53e814]:
+                  - 'heading "Men''s Suede Moccasin Slipper- Color: Golden Camel" [level=4] [ref=f53e815]': Men's Suede Moccasin Slipper
+                  - generic [ref=f53e816]: €135
+            - button "Quick View" [ref=f53e820] [cursor=pointer]
+        - generic [ref=f53e824]:
+          - list [ref=f53e830]:
+            - listitem [ref=f53e831]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e833] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+                - generic [ref=f53e834]:
+                  - img "Merino Calf - Rouge_Green_Mix L [11616]"
+            - listitem [ref=f53e835]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e837] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+            - listitem [ref=f53e840]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e842] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+            - listitem [ref=f53e845]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e847] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+            - listitem [ref=f53e850]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e852] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+            - listitem [ref=f53e855]:
+              - link "Merino Wool Blend Calf Sock 4-Pack" [ref=f53e857] [cursor=pointer]:
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+          - generic [ref=f53e860]:
+            - generic [ref=f53e861]:
+              - generic [ref=f53e865]:
+                - generic "Rouge Green Mix color swatch" [ref=f53e867]:
+                  - radio "Rouge Green Mix color swatch" [checked] [ref=f53e868]
+                  - generic [ref=f53e869]:
+                    - generic [ref=f53e870] [cursor=pointer]
+                    - generic [ref=f53e871] [cursor=pointer]: Rouge Green Mix
+                - generic "shades mix color swatch" [ref=f53e873]:
+                  - radio "shades mix color swatch" [ref=f53e874]
+                  - generic [ref=f53e875]:
+                    - generic [ref=f53e876] [cursor=pointer]
+                    - generic [ref=f53e877] [cursor=pointer]: shades mix
+                - generic "dark mix color swatch" [ref=f53e879]:
+                  - radio "dark mix color swatch" [ref=f53e880]
+                  - generic [ref=f53e881]:
+                    - generic [ref=f53e882] [cursor=pointer]
+                    - generic [ref=f53e883] [cursor=pointer]: dark mix
+                - generic "black mix color swatch" [ref=f53e885]:
+                  - radio "black mix color swatch" [ref=f53e886]
+                  - generic [ref=f53e887]:
+                    - generic [ref=f53e888] [cursor=pointer]
+                    - generic [ref=f53e889] [cursor=pointer]: black mix
+                - generic "midnight navy color swatch" [ref=f53e891]:
+                  - radio "midnight navy color swatch" [ref=f53e892]
+                  - generic [ref=f53e893]:
+                    - generic [ref=f53e894] [cursor=pointer]
+                    - generic [ref=f53e895] [cursor=pointer]: midnight navy
+              - 'link "Merino Wool Blend Calf Sock 4-Pack- Color: Rouge Green Mix Now €95 Was €105 10% Pack Savings Men · Midweight" [ref=f53e896] [cursor=pointer]':
+                - /url: /products/mens-merino-wool-sock-4-pack?variant=rouge-green-mix
+                - generic [ref=f53e897]:
+                  - 'heading "Merino Wool Blend Calf Sock 4-Pack- Color: Rouge Green Mix" [level=4] [ref=f53e898]': Merino Wool Blend Calf Sock 4-Pack
+                  - generic [ref=f53e899]:
+                    - generic "Now €95" [ref=f53e900]: €95
+                    - generic "Was €105" [ref=f53e901]: €105
+                    - generic [ref=f53e902]: 10% Pack Savings
+                  - generic [ref=f53e903]: Men · Midweight
+            - button "Quick View" [ref=f53e907] [cursor=pointer]
+        - generic [ref=f53e911]:
+          - list [ref=f53e917]:
+            - listitem [ref=f53e918]:
+              - link "Medical Grade Compression Knee High Socks" [ref=f53e920] [cursor=pointer]:
+                - /url: /products/mens-medical-grade-compression-knee-high-socks-20-30mmhg?variant=sea-blue
+                - generic [ref=f53e921]:
+                  - img "Casual_Compression Knee_High - Sea_Blue L [11867]"
+            - listitem [ref=f53e922]:
+              - link "Medical Grade Compression Knee High Socks" [ref=f53e924] [cursor=pointer]:
+                - /url: /products/mens-medical-grade-compression-knee-high-socks-20-30mmhg?variant=sea-blue
+          - generic [ref=f53e927]:
+            - generic [ref=f53e928]:
+              - generic [ref=f53e932]:
+                - generic "Sea Blue color swatch" [ref=f53e934]:
+                  - radio "Sea Blue color swatch" [checked] [ref=f53e935]
+                  - generic [ref=f53e936]:
+                    - generic [ref=f53e937] [cursor=pointer]
+                    - generic [ref=f53e938] [cursor=pointer]: Sea Blue
+                - generic "Ganache color swatch" [ref=f53e940]:
+                  - radio "Ganache color swatch" [ref=f53e941]
+                  - generic [ref=f53e942]:
+                    - generic [ref=f53e943] [cursor=pointer]
+                    - generic [ref=f53e944] [cursor=pointer]: Ganache
+                - generic "Grey Heather color swatch" [ref=f53e946]:
+                  - radio "Grey Heather color swatch" [ref=f53e947]
+                  - generic [ref=f53e948]:
+                    - generic [ref=f53e949] [cursor=pointer]
+                    - generic [ref=f53e950] [cursor=pointer]: Grey Heather
+                - link "+6" [ref=f53e951] [cursor=pointer]:
+                  - /url: /products/mens-medical-grade-compression-knee-high-socks-20-30mmhg?variant=sea-blue
+              - 'link "Medical Grade Compression Knee High Socks- Color: Sea Blue €36 Save 10% on 4+ Men · Midweight · 20-30mmHg" [ref=f53e952] [cursor=pointer]':
+                - /url: /products/mens-medical-grade-compression-knee-high-socks-20-30mmhg?variant=sea-blue
+                - generic [ref=f53e953]:
+                  - 'heading "Medical Grade Compression Knee High Socks- Color: Sea Blue" [level=4] [ref=f53e954]': Medical Grade Compression Knee High Socks
+                  - generic [ref=f53e955]:
+                    - generic [ref=f53e956]: €36
+                    - generic [ref=f53e957]: Save 10% on 4+
+                  - generic [ref=f53e958]: Men · Midweight · 20-30mmHg
+            - button "Quick View" [ref=f53e962] [cursor=pointer]
+        - generic [ref=f53e966]:
+          - list [ref=f53e972]:
+            - listitem [ref=f53e973]:
+              - link "Run Ankle Sock 3-Pack" [ref=f53e975] [cursor=pointer]:
+                - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+                - generic [ref=f53e976]:
+                  - img "Classic_Running Ankle - Slate_Green_Mix L [11848]"
+            - listitem [ref=f53e977]:
+              - link "Run Ankle Sock 3-Pack" [ref=f53e979] [cursor=pointer]:
+                - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+            - listitem [ref=f53e982]:
+              - link "Run Ankle Sock 3-Pack" [ref=f53e984] [cursor=pointer]:
+                - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+            - listitem [ref=f53e987]:
+              - link "Run Ankle Sock 3-Pack" [ref=f53e989] [cursor=pointer]:
+                - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+          - generic [ref=f53e992]:
+            - generic [ref=f53e993]:
+              - generic [ref=f53e997]:
+                - generic "Slate Green Mix color swatch" [ref=f53e999]:
+                  - radio "Slate Green Mix color swatch" [checked] [ref=f53e1000]
+                  - generic [ref=f53e1001]:
+                    - generic [ref=f53e1002] [cursor=pointer]
+                    - generic [ref=f53e1003] [cursor=pointer]: Slate Green Mix
+                - generic "Sapphire Grey Mix color swatch" [ref=f53e1005]:
+                  - radio "Sapphire Grey Mix color swatch" [ref=f53e1006]
+                  - generic [ref=f53e1007]:
+                    - generic [ref=f53e1008] [cursor=pointer]
+                    - generic [ref=f53e1009] [cursor=pointer]: Sapphire Grey Mix
+                - generic "moonlight mix color swatch" [ref=f53e1011]:
+                  - radio "moonlight mix color swatch" [ref=f53e1012]
+                  - generic [ref=f53e1013]:
+                    - generic [ref=f53e1014] [cursor=pointer]
+                    - generic [ref=f53e1015] [cursor=pointer]: moonlight mix
+                - link "+7" [ref=f53e1016] [cursor=pointer]:
+                  - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+              - 'link "Run Ankle Sock 3-Pack- Color: Slate Green Mix €65 Men · Lightweight" [ref=f53e1017] [cursor=pointer]':
+                - /url: /products/mens-running-ankle-sock-3-pack?variant=slate-green-mix
+                - generic [ref=f53e1018]:
+                  - 'heading "Run Ankle Sock 3-Pack- Color: Slate Green Mix" [level=4] [ref=f53e1019]': Run Ankle Sock 3-Pack
+                  - generic [ref=f53e1020]: €65
+                  - generic [ref=f53e1022]: Men · Lightweight
+            - button "Quick View" [ref=f53e1026] [cursor=pointer]
+      - generic [ref=f53e1029]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph
+      - generic [ref=f53e1032]:
+        - heading "No Show" [level=2] [ref=f53e1042] [cursor=pointer]
+        - heading "Ankle" [level=2] [ref=f53e1052] [cursor=pointer]
+        - heading "Quarter" [level=2] [ref=f53e1062] [cursor=pointer]
+        - heading "Half Calf" [level=2] [ref=f53e1072] [cursor=pointer]
+        - heading "Calf" [level=2] [ref=f53e1082] [cursor=pointer]
+        - heading "Knee High" [level=2] [ref=f53e1092] [cursor=pointer]
+      - generic [ref=f53e1095]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - paragraph
+      - generic [ref=f53e1099]:
+        - generic [ref=f53e1107]:
+          - heading "200 MILLION+ DONATIONS" [level=2] [ref=f53e1108]
+          - generic [ref=f53e1109]: You Did Good... Real Good
+        - generic [ref=f53e1116] [cursor=pointer]:
+          - paragraph [ref=f53e1119]: Thanks to customers like you, we’ve donated over 200 million socks, underwear, and tees to those who need them most.
+          - link [ref=f53e1122]:
+            - /url: https://www.beebetter.com
+            - paragraph [ref=f53e1123]: See Your Impact
+      - generic [ref=f53e1126]:
+        - heading "Comfort Beyond Socks" [level=2] [ref=f53e1133]
+        - heading "SLIPPERS & SHOES" [level=2] [ref=f53e1147] [cursor=pointer]
+        - heading "UNDERWEAR" [level=2] [ref=f53e1157] [cursor=pointer]
+        - heading "TEES" [level=2] [ref=f53e1167] [cursor=pointer]
+  - contentinfo [ref=f53e1169]:
+    - generic [ref=f53e1170]:
+      - generic [ref=f53e1171]:
+        - generic [ref=f53e1172]:
+          - heading "20% off your first order and all the Bombas news." [level=2] [ref=f53e1173]
+          - generic [ref=f53e1174]:
+            - textbox "Email" [ref=f53e1176]:
+              - /placeholder: Enter your email
+            - button "Sign Up" [ref=f53e1177] [cursor=pointer]:
+              - text: Sign Up
+              - generic [aria-hidden] [ref=f53e1178]: 
+          - paragraph [ref=f53e1179]:
+            - text: By providing my email, I am consenting to receive Bombas emails and Email-Based Advertising. For additional information, please see our
+            - link "Privacy Policy" [ref=f53e1180] [cursor=pointer]:
+              - /url: /pages/privacy-policy
+            - text: .
+        - generic [ref=f53e1181]:
+          - generic [ref=f53e1182]:
+            - paragraph [ref=f53e1183]: Resources
+            - list [ref=f53e1184]:
+              - listitem [ref=f53e1185]:
+                - link "Gift Cards" [ref=f53e1186] [cursor=pointer]:
+                  - /url: /products/gift-card
+              - listitem [ref=f53e1188]:
+                - link "Bulk Gifting" [ref=f53e1189] [cursor=pointer]:
+                  - /url: /pages/bulk-gifting
+              - listitem [ref=f53e1191]:
+                - link "Collaborations" [ref=f53e1192] [cursor=pointer]:
+                  - /url: /pages/partnerships
+              - listitem [ref=f53e1194]:
+                - link "Find a Store" [ref=f53e1195] [cursor=pointer]:
+                  - /url: /find-a-store
+              - listitem [ref=f53e1197]:
+                - link "Affiliates" [ref=f53e1198] [cursor=pointer]:
+                  - /url: /pages/affiliates
+          - generic [ref=f53e1200]:
+            - paragraph [ref=f53e1201]: Company
+            - list [ref=f53e1202]:
+              - listitem [ref=f53e1203]:
+                - link "About Us" [ref=f53e1204] [cursor=pointer]:
+                  - /url: /pages/about-us
+              - listitem [ref=f53e1206]:
+                - link "Giving Back" [ref=f53e1207] [cursor=pointer]:
+                  - /url: /pages/giving-back
+              - listitem [ref=f53e1209]:
+                - link "Careers" [ref=f53e1210] [cursor=pointer]:
+                  - /url: /pages/careers
+              - listitem [ref=f53e1212]:
+                - link "Sustainability" [ref=f53e1213] [cursor=pointer]:
+                  - /url: /pages/sustainability
+              - listitem [ref=f53e1215]:
+                - link "Accessibility Statement" [ref=f53e1216] [cursor=pointer]:
+                  - /url: /pages/accessibility
+              - listitem [ref=f53e1218]:
+                - link "B-corp Certified" [ref=f53e1219] [cursor=pointer]:
+                  - /url: /pages/b-corp-certified
+          - generic [ref=f53e1221]:
+            - paragraph [ref=f53e1222]: Help
+            - list [ref=f53e1223]:
+              - listitem [ref=f53e1224]:
+                - link "Size Guide" [ref=f53e1225] [cursor=pointer]:
+                  - /url: /size-guide
+              - listitem [ref=f53e1227]:
+                - link "Returns & Exchanges" [ref=f53e1228] [cursor=pointer]:
+                  - /url: /help?a=What%27s-your-returnexchange-policy---id--99ZcZXU7SpepjRHgO0yu6w
+              - listitem [ref=f53e1230]:
+                - link "Track a Package" [ref=f53e1231] [cursor=pointer]:
+                  - /url: /help?a=How-do-I-track-my-order---id--2CJttFHETPGTkQZcEzNOlQ
+            - generic [ref=f53e1233]:
+              - generic [ref=f53e1234]: 
+              - paragraph [ref=f53e1235]: The Bombas Customer Happiness Team is your go-to when you need a recommendation, a return, or just a reason to smile.
+              - link "Get Help" [ref=f53e1236] [cursor=pointer]:
+                - /url: https://bombas.com/pages/help-center
+                - text: Get Help
+                - generic [aria-hidden] [ref=f53e1237]: 
+      - generic [ref=f53e1238]:
+        - button [ref=f53e1239] [cursor=pointer]:
+          - paragraph [ref=f53e1242]: United States
+        - navigation "social media links" [ref=f53e1243]:
+          - link "instagram" [ref=f53e1245] [cursor=pointer]:
+            - /url: https://www.instagram.com/bombas
+            - generic [ref=f53e1246]: 
+          - link "facebook" [ref=f53e1248] [cursor=pointer]:
+            - /url: https://www.facebook.com/bombassocks
+            - generic [ref=f53e1249]: 
+          - link "pinterest" [ref=f53e1251] [cursor=pointer]:
+            - /url: https://www.pinterest.com/bombassocks
+            - generic [ref=f53e1252]: 
+      - navigation "popular categories" [ref=f53e1253]:
+        - link "Women" [ref=f53e1254] [cursor=pointer]:
+          - /url: /collections/womens
+        - link "Men" [ref=f53e1256] [cursor=pointer]:
+          - /url: /collections/mens
+        - link "Kids" [ref=f53e1258] [cursor=pointer]:
+          - /url: /collections/kids-socks
+        - link "Socks" [ref=f53e1260] [cursor=pointer]:
+          - /url: /collections/socks-by-height
+        - link "Slippers & Shoes" [ref=f53e1262] [cursor=pointer]:
+          - /url: /collections/slippers-slides
+        - link "Underwear" [ref=f53e1264] [cursor=pointer]:
+          - /url: /collections/underwear
+        - link "T-Shirts" [ref=f53e1266] [cursor=pointer]:
+          - /url: /collections/t-shirts
+        - link "Accessories" [ref=f53e1268] [cursor=pointer]:
+          - /url: /collections/accessories
+        - link "New Releases" [ref=f53e1270] [cursor=pointer]:
+          - /url: /collections/new-releases
+        - link "Best Sellers" [ref=f53e1272] [cursor=pointer]:
+          - /url: /collections/best-sellers
+        - link "How to Style" [ref=f53e1274] [cursor=pointer]:
+          - /url: /collections/guest-stylist
+        - link "Gifts" [ref=f53e1276] [cursor=pointer]:
+          - /url: /collections/gifts
+      - paragraph [ref=f53e1279]:
+        - text: Bombas may collect "Identifiers", “Characteristics of protected classifications" under California, federal or other applicable law, "Commercial information", "Internet or other electronic network activity", and/or "Geolocation data" when you visit this website, and may use such information to draw inferences and for other operational and commercial purposes. For more information, please see our
+        - link "Privacy Policy" [ref=f53e1280] [cursor=pointer]:
+          - /url: https://bombas.com/pages/privacy-policy
+        - text: .
+      - navigation "privacy and data" [ref=f53e1281]:
+        - link "Privacy Policy" [ref=f53e1282] [cursor=pointer]:
+          - /url: /pages/privacy-policy
+        - link "Terms and Conditions" [ref=f53e1283] [cursor=pointer]:
+          - /url: /pages/bombas-terms-and-conditions-of-use
+        - link "Do Not Sell or Share My Personal Information/Your Privacy Choices" [ref=f53e1284] [cursor=pointer]:
+          - /url: /pages/privacy-webform
+        - link "WA Privacy Policy" [ref=f53e1285] [cursor=pointer]:
+          - /url: /pages/washington-privacy-policy
+        - link "Withdraw from Purchases (EEA)" [ref=f53e1286] [cursor=pointer]:
+          - /url: https://service.global-e.com/Categories/how-do-i-exercise-my-right-of-withdrawal
+        - link "Cookie Settings" [ref=f53e1287] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=f53e1288]:
+    - generic [ref=f53e1289]:
+      - link "Women" [ref=f53e1290] [cursor=pointer]:
+        - /url: /collections/womens
+      - generic [ref=f53e1291]:
+        - generic [ref=f53e1292]:
+          - link "Socks" [ref=f53e1293] [cursor=pointer]:
+            - /url: /collections/womens-socks
+          - generic [ref=f53e1294]:
+            - link "Shop All Women's Socks" [ref=f53e1297] [cursor=pointer]:
+              - /url: /collections/womens-socks
+            - generic [ref=f53e1299]:
+              - link "Ankle" [ref=f53e1300] [cursor=pointer]:
+                - /url: /collections/womens-ankle-socks
+              - link "Quarter" [ref=f53e1301] [cursor=pointer]:
+                - /url: /collections/womens-quarter-socks
+              - link "Half Calf" [ref=f53e1302] [cursor=pointer]:
+                - /url: /collections/womens-half-calf-socks
+              - link "Knee High" [ref=f53e1303] [cursor=pointer]:
+                - /url: /collections/womens-knee-high-socks
+              - link "No Show" [ref=f53e1304] [cursor=pointer]:
+                - /url: /collections/womens-no-show-socks
+              - link "Calf" [ref=f53e1305] [cursor=pointer]:
+                - /url: /collections/womens-calf-socks
+            - generic [ref=f53e1306]:
+              - text: By Collection
+              - generic [ref=f53e1307]:
+                - link "Compression" [ref=f53e1308] [cursor=pointer]:
+                  - /url: /collections/womens-compression-socks
+                - link "Sport" [ref=f53e1309] [cursor=pointer]:
+                  - /url: /collections/womens-performance-socks
+                - link "Merino Wool Blend" [ref=f53e1310] [cursor=pointer]:
+                  - /url: /collections/womens-merino-wool
+                - link "Grippers" [ref=f53e1311] [cursor=pointer]:
+                  - /url: /collections/womens-grippers
+                - link "Dressy" [ref=f53e1312] [cursor=pointer]:
+                  - /url: /collections/womens-dress-socks-1
+        - generic [ref=f53e1313]:
+          - link "Bralettes" [ref=f53e1314] [cursor=pointer]:
+            - /url: /collections/bralette
+          - generic [ref=f53e1315]:
+            - link "Shop All Bralettes" [ref=f53e1318] [cursor=pointer]:
+              - /url: /collections/bralette
+            - generic [ref=f53e1320]:
+              - link "Plunge" [ref=f53e1321] [cursor=pointer]:
+                - /url: /collections/no-show-plunge-bralette
+              - link "Triangle" [ref=f53e1322] [cursor=pointer]:
+                - /url: /collections/triangle-bralette
+              - link "Scoop" [ref=f53e1323] [cursor=pointer]:
+                - /url: /collections/scoop-bralette
+              - link "Sets" [ref=f53e1324] [cursor=pointer]:
+                - /url: /collections/bralette-sets
+        - generic [ref=f53e1325]:
+          - link "Underwear" [ref=f53e1326] [cursor=pointer]:
+            - /url: /collections/womens-underwear
+          - generic [ref=f53e1327]:
+            - link "Shop All Women's Underwear" [ref=f53e1330] [cursor=pointer]:
+              - /url: /collections/womens-underwear
+            - generic [ref=f53e1332]:
+              - link "Hipster" [ref=f53e1333] [cursor=pointer]:
+                - /url: /collections/womens-hipster-underwear
+              - link "Bikini" [ref=f53e1334] [cursor=pointer]:
+                - /url: /collections/womens-bikini-underwear
+              - link "Brief" [ref=f53e1335] [cursor=pointer]:
+                - /url: /collections/womens-brief-underwear
+              - link "High Rise Brief" [ref=f53e1336] [cursor=pointer]:
+                - /url: /collections/womens-high-rise-underwear
+              - link "Thong" [ref=f53e1337] [cursor=pointer]:
+                - /url: /collections/womens-thong-underwear
+              - link "Packs" [ref=f53e1338] [cursor=pointer]:
+                - /url: /collections/womens-pack-underwear
+        - generic [ref=f53e1339]:
+          - link "Tops" [ref=f53e1340] [cursor=pointer]:
+            - /url: /collections/womens-t-shirts
+          - generic [ref=f53e1341]:
+            - link "Shop All Women's Tops" [ref=f53e1344] [cursor=pointer]:
+              - /url: /collections/womens-t-shirts
+            - generic [ref=f53e1346]:
+              - link "Cami" [ref=f53e1347] [cursor=pointer]:
+                - /url: https://bombas.com/collections/womens-tops-cami
+              - link "Short Sleeve" [ref=f53e1348] [cursor=pointer]:
+                - /url: /collections/womens-short-sleeves
+              - link "Long Sleeve" [ref=f53e1349] [cursor=pointer]:
+                - /url: /collections/womens-long-sleeve-t-shirts
+        - generic [ref=f53e1350]:
+          - link "Slippers & Shoes" [ref=f53e1351] [cursor=pointer]:
+            - /url: /collections/womens-slippers
+          - generic [ref=f53e1352]:
+            - link "Shop All Women's Footwear" [ref=f53e1355] [cursor=pointer]:
+              - /url: /collections/womens-slippers
+            - generic [ref=f53e1357]:
+              - link "Slippers" [ref=f53e1358] [cursor=pointer]:
+                - /url: /collections/womens-slipper-shop
+              - link "Shoes" [ref=f53e1359] [cursor=pointer]:
+                - /url: /collections/womens-shoes
+              - link "Boots" [ref=f53e1360] [cursor=pointer]:
+                - /url: /collections/womens-boots
+              - link "Clogs" [ref=f53e1361] [cursor=pointer]:
+                - /url: /collections/womens-clogs
+              - link "Sandals" [ref=f53e1362] [cursor=pointer]:
+                - /url: /collections/womens-sandals
+            - generic [ref=f53e1363]:
+              - text: By Collection
+              - generic [ref=f53e1364]:
+                - link "Sunday Slippers" [ref=f53e1365] [cursor=pointer]:
+                  - /url: /collections/womens-sunday-collection
+                - link "Saturday Suede" [ref=f53e1366] [cursor=pointer]:
+                  - /url: /collections/womens-saturday-suede-collection
+                - link "Gripper Slippers" [ref=f53e1367] [cursor=pointer]:
+                  - /url: /collections/womens-gripper-slippers
+      - generic [ref=f53e1368]:
+        - generic [ref=f53e1369]:
+          - generic [ref=f53e1370]: Women
+          - generic [ref=f53e1371]:
+            - link "New Releases" [ref=f53e1372] [cursor=pointer]:
+              - /url: /collections/womens-new-releases
+            - link "Best Sellers" [ref=f53e1373] [cursor=pointer]:
+              - /url: /collections/womens-best-sellers
+            - link "Gifts For Her" [ref=f53e1374] [cursor=pointer]:
+              - /url: /collections/womens-gifts
+            - link "Up to 20% off Packs" [ref=f53e1375] [cursor=pointer]:
+              - /url: /collections/womens-pack-discounts
+            - link "Build a Pack & Save" [ref=f53e1376] [cursor=pointer]:
+              - /url: /collections/build-a-sock-pack?filter=gender_female
+        - generic [ref=f53e1377]:
+          - generic [ref=f53e1378]: What to Shop Now
+          - generic [ref=f53e1379]:
+            - link "The Cozy Shop" [ref=f53e1380] [cursor=pointer]:
+              - /url: /collections/womens-cozy-shop
+            - link "The Travel Shop" [ref=f53e1381] [cursor=pointer]:
+              - /url: https://bombas.com/collections/travelshop
+            - link "Marathon Shop" [ref=f53e1382] [cursor=pointer]:
+              - /url: /collections/womens-marathon-shop
+            - link "Sesame Street | Bombas" [ref=f53e1383] [cursor=pointer]:
+              - /url: /collections/sesamestreet
+            - link "Marvel | Bombas" [ref=f53e1384] [cursor=pointer]:
+              - /url: https://bombas.com/collections/marvel
+            - link "Shop All Women's" [ref=f53e1385] [cursor=pointer]:
+              - /url: /collections/womens
+    - generic [ref=f53e1386]:
+      - link "Men" [ref=f53e1387] [cursor=pointer]:
+        - /url: /collections/mens
+      - generic [ref=f53e1388]:
+        - generic [ref=f53e1389]:
+          - link "Socks" [ref=f53e1390] [cursor=pointer]:
+            - /url: /collections/mens-socks
+          - generic [ref=f53e1391]:
+            - link "Shop All Men's Socks" [ref=f53e1394] [cursor=pointer]:
+              - /url: /collections/mens-socks
+            - generic [ref=f53e1396]:
+              - link "Ankle" [ref=f53e1397] [cursor=pointer]:
+                - /url: /collections/mens-ankle-socks
+              - link "Calf" [ref=f53e1398] [cursor=pointer]:
+                - /url: /collections/mens-calf-socks
+              - link "Half Calf" [ref=f53e1399] [cursor=pointer]:
+                - /url: /collections/mens-half-calf-socks
+              - link "Knee High" [ref=f53e1400] [cursor=pointer]:
+                - /url: /collections/mens-knee-high-socks
+              - link "Quarter" [ref=f53e1401] [cursor=pointer]:
+                - /url: /collections/mens-quarter-socks
+              - link "No Show" [ref=f53e1402] [cursor=pointer]:
+                - /url: /collections/mens-no-show-socks
+            - generic [ref=f53e1403]:
+              - text: By Collection
+              - generic [ref=f53e1404]:
+                - link "Compression" [ref=f53e1405] [cursor=pointer]:
+                  - /url: /collections/mens-compression-socks
+                - link "Sport" [ref=f53e1406] [cursor=pointer]:
+                  - /url: /collections/mens-performance-socks
+                - link "Merino Wool Blend" [ref=f53e1407] [cursor=pointer]:
+                  - /url: /collections/mens-merino-wool
+                - link "Casual" [ref=f53e1408] [cursor=pointer]:
+                  - /url: /collections/mens-casual-socks
+                - link "Dress" [ref=f53e1409] [cursor=pointer]:
+                  - /url: /collections/mens-dress-sock
+        - generic [ref=f53e1410]:
+          - link "Underwear" [ref=f53e1411] [cursor=pointer]:
+            - /url: /collections/mens-underwear
+          - generic [ref=f53e1412]:
+            - link "Shop All Men's Underwear" [ref=f53e1415] [cursor=pointer]:
+              - /url: /collections/mens-underwear
+            - generic [ref=f53e1417]:
+              - link "Boxer Brief" [ref=f53e1418] [cursor=pointer]:
+                - /url: /collections/mens-boxer-brief-underwear
+              - link "Boxer" [ref=f53e1419] [cursor=pointer]:
+                - /url: /collections/mens-boxer-underwear
+              - link "Trunk" [ref=f53e1420] [cursor=pointer]:
+                - /url: /collections/mens-trunk-underwear
+              - link "Brief" [ref=f53e1421] [cursor=pointer]:
+                - /url: /collections/mens-brief-underwear
+              - link "Packs" [ref=f53e1422] [cursor=pointer]:
+                - /url: /collections/mens-pack-underwear
+        - generic [ref=f53e1423]:
+          - link "T-Shirts" [ref=f53e1424] [cursor=pointer]:
+            - /url: /collections/mens-t-shirts
+          - generic [ref=f53e1425]:
+            - link "Shop All Men's T-Shirts" [ref=f53e1428] [cursor=pointer]:
+              - /url: /collections/mens-t-shirts
+            - generic [ref=f53e1430]:
+              - link "Short Sleeve" [ref=f53e1431] [cursor=pointer]:
+                - /url: /collections/mens-short-sleeve-t-shirt
+              - link "Long Sleeve" [ref=f53e1432] [cursor=pointer]:
+                - /url: /collections/mens-long-sleeve-t-shirt
+        - generic [ref=f53e1433]:
+          - link "Slippers & Shoes" [ref=f53e1434] [cursor=pointer]:
+            - /url: /collections/mens-slippers
+          - generic [ref=f53e1435]:
+            - link "Shop All Men's Footwear" [ref=f53e1438] [cursor=pointer]:
+              - /url: /collections/mens-slippers
+            - generic [ref=f53e1440]:
+              - link "Slippers" [ref=f53e1441] [cursor=pointer]:
+                - /url: /collections/mens-slipper-shop
+              - link "Shoes" [ref=f53e1442] [cursor=pointer]:
+                - /url: /collections/mens-shoes
+              - link "Boots" [ref=f53e1443] [cursor=pointer]:
+                - /url: /collections/mens-boots
+              - link "Clogs" [ref=f53e1444] [cursor=pointer]:
+                - /url: /collections/mens-clogs
+              - link "Sandals" [ref=f53e1445] [cursor=pointer]:
+                - /url: /collections/mens-slides-sandals
+            - generic [ref=f53e1446]:
+              - text: By Collection
+              - generic [ref=f53e1447]:
+                - link "Saturday Suede" [ref=f53e1448] [cursor=pointer]:
+                  - /url: /collections/mens-saturday-suede-collection
+                - link "Gripper Slippers" [ref=f53e1449] [cursor=pointer]:
+                  - /url: /collections/mens-gripper-slippers
+      - generic [ref=f53e1450]:
+        - generic [ref=f53e1451]:
+          - generic [ref=f53e1452]: Men
+          - generic [ref=f53e1453]:
+            - link "New Releases" [ref=f53e1454] [cursor=pointer]:
+              - /url: /collections/mens-new-releases
+            - link "Best Sellers" [ref=f53e1455] [cursor=pointer]:
+              - /url: /collections/mens-best-sellers
+            - link "Gifts for Him" [ref=f53e1456] [cursor=pointer]:
+              - /url: /collections/mens-gifts
+            - link "Up to 20% off Packs" [ref=f53e1457] [cursor=pointer]:
+              - /url: /collections/mens-pack-discounts
+            - link "Build a Pack & Save" [ref=f53e1458] [cursor=pointer]:
+              - /url: /collections/build-a-sock-pack?filter=gender_male
+        - generic [ref=f53e1459]:
+          - generic [ref=f53e1460]: What to Shop Now
+          - generic [ref=f53e1461]:
+            - link "The Cozy Shop" [ref=f53e1462] [cursor=pointer]:
+              - /url: /collections/mens-cozy-shop
+            - link "The Travel Shop" [ref=f53e1463] [cursor=pointer]:
+              - /url: https://bombas.com/collections/travelshop
+            - link "Marathon Shop" [ref=f53e1464] [cursor=pointer]:
+              - /url: /collections/mens-marathon-shop
+            - link "Sesame Street | Bombas" [ref=f53e1465] [cursor=pointer]:
+              - /url: /collections/sesamestreet
+            - link "Marvel | Bombas" [ref=f53e1466] [cursor=pointer]:
+              - /url: https://bombas.com/collections/marvel
+            - link "Shop All Men's" [ref=f53e1467] [cursor=pointer]:
+              - /url: /collections/mens
+    - generic [ref=f53e1468]:
+      - link "Kids" [ref=f53e1469] [cursor=pointer]:
+        - /url: /collections/kids-socks
+      - generic [ref=f53e1470]:
+        - generic [ref=f53e1471]:
+          - link "Baby" [ref=f53e1472] [cursor=pointer]:
+            - /url: /collections/baby-socks
+          - generic [ref=f53e1473]:
+            - link "Shop All Baby Socks" [ref=f53e1476] [cursor=pointer]:
+              - /url: /collections/baby-socks
+            - generic [ref=f53e1478]:
+              - link "Socks" [ref=f53e1479] [cursor=pointer]:
+                - /url: /collections/baby-socks
+              - link "Slippers" [ref=f53e1480] [cursor=pointer]:
+                - /url: /collections/kids-gripper-slippers?filter=age_baby
+        - generic [ref=f53e1481]:
+          - link "Toddler" [ref=f53e1482] [cursor=pointer]:
+            - /url: /collections/toddler-socks
+          - generic [ref=f53e1483]:
+            - link "Shop All Toddler Socks" [ref=f53e1486] [cursor=pointer]:
+              - /url: /collections/toddler-socks
+            - generic [ref=f53e1488]:
+              - link "Ankle" [ref=f53e1489] [cursor=pointer]:
+                - /url: /collections/toddler-socks?filter=height_ankle
+              - link "Calf" [ref=f53e1490] [cursor=pointer]:
+                - /url: /collections/toddler-socks?filter=height_calf
+              - link "Slippers" [ref=f53e1491] [cursor=pointer]:
+                - /url: /collections/kids-gripper-slippers?filter=age_toddler
+        - generic [ref=f53e1492]:
+          - link "Junior" [ref=f53e1493] [cursor=pointer]:
+            - /url: /collections/junior-socks
+          - generic [ref=f53e1494]:
+            - link "Shop All Junior Socks" [ref=f53e1497] [cursor=pointer]:
+              - /url: /collections/junior-socks
+            - generic [ref=f53e1499]:
+              - link "Ankle" [ref=f53e1500] [cursor=pointer]:
+                - /url: /collections/junior-socks?filter=height_ankle
+              - link "Calf" [ref=f53e1501] [cursor=pointer]:
+                - /url: /collections/junior-socks?filter=height_calf
+        - generic [ref=f53e1502]:
+          - link "Youth" [ref=f53e1503] [cursor=pointer]:
+            - /url: /collections/youth-socks
+          - generic [ref=f53e1504]:
+            - link "Shop All Youth Socks" [ref=f53e1507] [cursor=pointer]:
+              - /url: /collections/youth-socks
+            - generic [ref=f53e1509]:
+              - link "Ankle" [ref=f53e1510] [cursor=pointer]:
+                - /url: /collections/youth-socks?filter=height_ankle
+              - link "Quarter" [ref=f53e1511] [cursor=pointer]:
+                - /url: /collections/youth-socks?filter=height_quarter
+              - link "Calf" [ref=f53e1512] [cursor=pointer]:
+                - /url: /collections/youth-socks?filter=height_calf
+              - link "Knee High" [ref=f53e1513] [cursor=pointer]:
+                - /url: /collections/youth-socks?filter=height_knee-high
+              - link "Slippers" [ref=f53e1514] [cursor=pointer]:
+                - /url: /collections/kids-gripper-slippers?filter=age_youth
+      - generic [ref=f53e1515]:
+        - generic [ref=f53e1516]:
+          - generic [ref=f53e1517]: Kids
+          - generic [ref=f53e1518]:
+            - link "New Releases" [ref=f53e1519] [cursor=pointer]:
+              - /url: /collections/kids-new-releases
+            - link "Up to 20% off Packs" [ref=f53e1520] [cursor=pointer]:
+              - /url: /collections/kids-sock-pack-discounts
+            - link "Gifts for Kids" [ref=f53e1521] [cursor=pointer]:
+              - /url: /collections/kids-gifts
+        - generic [ref=f53e1522]:
+          - generic [ref=f53e1523]: What to Shop Now
+          - generic [ref=f53e1524]:
+            - link "Sesame Street | Bombas" [ref=f53e1525] [cursor=pointer]:
+              - /url: /collections/sesamestreet
+            - link "Marvel | Bombas" [ref=f53e1526] [cursor=pointer]:
+              - /url: https://bombas.com/collections/marvel
+            - link "Peanuts x Bombas" [ref=f53e1527] [cursor=pointer]:
+              - /url: /collections/peanuts
+            - link "Slippers" [ref=f53e1528] [cursor=pointer]:
+              - /url: /collections/kids-gripper-slippers
+            - link "Shop All Kids" [ref=f53e1529] [cursor=pointer]:
+              - /url: /collections/kids-socks
+    - generic [ref=f53e1530]:
+      - link "Sport" [ref=f53e1531] [cursor=pointer]:
+        - /url: /collections/womens-performance-socks
+      - generic [ref=f53e1532]:
+        - generic [ref=f53e1533]:
+          - link "Women" [ref=f53e1534] [cursor=pointer]:
+            - /url: /collections/womens-performance-socks
+          - generic [ref=f53e1535]:
+            - generic [ref=f53e1537]:
+              - link "Run" [ref=f53e1538] [cursor=pointer]:
+                - /url: /collections/womens-performance-running-socks
+              - link "Gym + Train" [ref=f53e1539] [cursor=pointer]:
+                - /url: /collections/womens-all-purpose-performance-socks
+              - link "Compression" [ref=f53e1540] [cursor=pointer]:
+                - /url: /collections/womens-performance-compression-socks
+              - link "Golf" [ref=f53e1541] [cursor=pointer]:
+                - /url: /collections/womens-performance-golf-socks
+              - link "Studio" [ref=f53e1542] [cursor=pointer]:
+                - /url: /collections/womens-performance-gripper-socks
+              - link "Cycle" [ref=f53e1543] [cursor=pointer]:
+                - /url: /collections/womens-lightweight-athletic-socks
+              - link "Hike" [ref=f53e1544] [cursor=pointer]:
+                - /url: /collections/womens-hiking-socks
+              - link "Shop All" [ref=f53e1545] [cursor=pointer]:
+                - /url: /collections/womens-performance-socks
+            - generic [ref=f53e1546]:
+              - text: By Weight
+              - generic [ref=f53e1547]:
+                - link "Ultra Lightweight" [ref=f53e1548] [cursor=pointer]:
+                  - /url: /collections/womens-performance-socks?filter=weight_ultra+lightweight
+                - link "Lightweight" [ref=f53e1549] [cursor=pointer]:
+                  - /url: /collections/womens-performance-socks?filter=weight_lightweight
+                - link "Midweight" [ref=f53e1550] [cursor=pointer]:
+                  - /url: /collections/womens-performance-socks?filter=weight_midweight
+                - link "Heavyweight" [ref=f53e1551] [cursor=pointer]:
+                  - /url: /collections/womens-performance-socks?filter=weight_heavyweight
+        - generic [ref=f53e1552]:
+          - link "Men" [ref=f53e1553] [cursor=pointer]:
+            - /url: /collections/mens-performance-socks
+          - generic [ref=f53e1554]:
+            - generic [ref=f53e1556]:
+              - link "Run" [ref=f53e1557] [cursor=pointer]:
+                - /url: /collections/mens-performance-running-socks
+              - link "Gym + Train" [ref=f53e1558] [cursor=pointer]:
+                - /url: /collections/mens-all-purpose-performance-socks
+              - link "Compression" [ref=f53e1559] [cursor=pointer]:
+                - /url: /collections/mens-performance-compression-socks
+              - link "Golf" [ref=f53e1560] [cursor=pointer]:
+                - /url: /collections/mens-performance-golf-socks
+              - link "Studio" [ref=f53e1561] [cursor=pointer]:
+                - /url: /collections/mens-performance-gripper-socks
+              - link "Cycle" [ref=f53e1562] [cursor=pointer]:
+                - /url: /collections/mens-lightweight-athletic-socks
+              - link "Hike" [ref=f53e1563] [cursor=pointer]:
+                - /url: /collections/mens-hiking-socks
+              - link "Shop ALl" [ref=f53e1564] [cursor=pointer]:
+                - /url: /collections/mens-performance-socks
+            - generic [ref=f53e1565]:
+              - text: By Weight
+              - generic [ref=f53e1566]:
+                - link "Ultra Lightweight" [ref=f53e1567] [cursor=pointer]:
+                  - /url: /collections/mens-performance-socks?filter=weight_ultra+lightweight
+                - link "Lightweight" [ref=f53e1568] [cursor=pointer]:
+                  - /url: /collections/mens-performance-socks?filter=weight_lightweight
+                - link "Midweight" [ref=f53e1569] [cursor=pointer]:
+                  - /url: /collections/mens-performance-socks?filter=weight_midweight
+                - link "Heavyweight" [ref=f53e1570] [cursor=pointer]:
+                  - /url: /collections/mens-performance-socks?filter=weight_heavyweight
+      - generic [ref=f53e1572]:
+        - generic [ref=f53e1573]: Featured
+        - generic [ref=f53e1574]:
+          - link "Compression" [ref=f53e1575] [cursor=pointer]:
+            - /url: /collections/compression-socks?filter=collection_athletic
+          - link "Build a Sport Pack" [ref=f53e1576] [cursor=pointer]:
+            - /url: /collections/build-a-sport-pack
+    - generic [ref=f53e1577]:
+      - link "Mission" [ref=f53e1578] [cursor=pointer]:
+        - /url: https://beebetter.bombas.com/
+      - generic [ref=f53e1579]:
+        - generic [ref=f53e1580]:
+          - generic [ref=f53e1581]: Our Mission
+          - generic [ref=f53e1582]:
+            - link "How We Give Back" [ref=f53e1583] [cursor=pointer]:
+              - /url: /pages/giving-back
+            - link "Our Giving Partners" [ref=f53e1584] [cursor=pointer]:
+              - /url: https://beebetter.bombas.com/partners
+            - link "Homelessness [FAQs]" [ref=f53e1585] [cursor=pointer]:
+              - /url: /pages/homelessness-bias-busters
+        - generic [ref=f53e1586]:
+          - generic [ref=f53e1587]: About Us
+          - generic [ref=f53e1588]:
+            - link "Our Story" [ref=f53e1589] [cursor=pointer]:
+              - /url: /pages/about-us
+            - link "Impact Report" [ref=f53e1590] [cursor=pointer]:
+              - /url: https://beebetter.bombas.com/impact
+    - generic [ref=f53e1591]:
+      - link "Help" [ref=f53e1592] [cursor=pointer]:
+        - /url: /pages/help-center
+      - generic [ref=f53e1595]:
+        - link "Checkout and Account" [ref=f53e1596] [cursor=pointer]:
+          - /url: /help?g=Account%20%26%20Checkout
+        - link "Size Guide" [ref=f53e1597] [cursor=pointer]:
+          - /url: /size-guide
+        - link "Shipping" [ref=f53e1598] [cursor=pointer]:
+          - /url: /help?g=Shipping
+        - link "100% Happiness Guarantee" [ref=f53e1599] [cursor=pointer]:
+          - /url: /pages/happiness-guarantee
+        - link "Product Info" [ref=f53e1600] [cursor=pointer]:
+          - /url: /help?s=Products%20and%20Sizing
+        - link "Our Mission" [ref=f53e1601] [cursor=pointer]:
+          - /url: /help?s=Mission
+        - link "Gifting" [ref=f53e1602] [cursor=pointer]:
+          - /url: /help?g=Gifting
+        - link "Bulk Gifting" [ref=f53e1603] [cursor=pointer]:
+          - /url: /pages/bulk-gifting
+        - link "Take Back Bag" [ref=f53e1604] [cursor=pointer]:
+          - /url: /products/take-back-bag
+        - link "Find A Store" [ref=f53e1605] [cursor=pointer]:
+          - /url: /find-a-store

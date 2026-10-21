@@ -1,0 +1,494 @@
+{% doc %}
+  @prompt
+    een kleine sectie waar niet opvallend onze 3 kernwaarden comfort, innovatie en vertrouwen kunnen neerzetten in sportstijl voor een sportmerk. alles moet aanpasbaar zijn.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-core-values-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-core-values-container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.gap }}px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-core-values-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: {{ block.settings.item_gap }}px;
+  }
+
+  .ai-core-values-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: {{ block.settings.icon_color }};
+  }
+
+  .ai-core-values-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    stroke-width: {{ block.settings.icon_stroke_width }};
+  }
+
+  .ai-core-values-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: {{ block.settings.title_weight }};
+    color: {{ block.settings.title_color }};
+    margin: 0;
+    text-transform: {{ block.settings.title_transform }};
+    letter-spacing: {{ block.settings.title_letter_spacing }}px;
+  }
+
+  .ai-core-values-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-core-values-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.mobile_gap }}px;
+    }
+
+    .ai-core-values-icon-{{ ai_gen_id }} {
+      width: {{ block.settings.icon_size | times: 0.8 }}px;
+      height: {{ block.settings.icon_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<core-values-{{ ai_gen_id }} class="ai-core-values-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-core-values-container-{{ ai_gen_id }}">
+    <div class="ai-core-values-item-{{ ai_gen_id }}">
+      <div class="ai-core-values-icon-{{ ai_gen_id }}">
+        {% if block.settings.icon_1 == 'comfort' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+            <line x1="9" y1="9" x2="9.01" y2="9"/>
+            <line x1="15" y1="9" x2="15.01" y2="9"/>
+          </svg>
+        {% elsif block.settings.icon_1 == 'heart' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        {% elsif block.settings.icon_1 == 'star' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        {% elsif block.settings.icon_1 == 'shield' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        {% endif %}
+      </div>
+      <{{ block.settings.heading_tag | default: "h3" }} class="ai-core-values-title-{{ ai_gen_id }}">{{ block.settings.title_1 }}</{{ block.settings.heading_tag | default: "h3" }}>
+      {% if block.settings.text_1 != blank %}
+        <p class="ai-core-values-text-{{ ai_gen_id }}">{{ block.settings.text_1 }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-core-values-item-{{ ai_gen_id }}">
+      <div class="ai-core-values-icon-{{ ai_gen_id }}">
+        {% if block.settings.icon_2 == 'lightbulb' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18h6"/>
+            <path d="M10 22h4"/>
+            <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>
+          </svg>
+        {% elsif block.settings.icon_2 == 'zap' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        {% elsif block.settings.icon_2 == 'trending' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+            <polyline points="17 6 23 6 23 12"/>
+          </svg>
+        {% elsif block.settings.icon_2 == 'cpu' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+            <rect x="9" y="9" width="6" height="6"/>
+            <line x1="9" y1="1" x2="9" y2="4"/>
+            <line x1="15" y1="1" x2="15" y2="4"/>
+            <line x1="9" y1="20" x2="9" y2="23"/>
+            <line x1="15" y1="20" x2="15" y2="23"/>
+            <line x1="20" y1="9" x2="23" y2="9"/>
+            <line x1="20" y1="14" x2="23" y2="14"/>
+            <line x1="1" y1="9" x2="4" y2="9"/>
+            <line x1="1" y1="14" x2="4" y2="14"/>
+          </svg>
+        {% endif %}
+      </div>
+      <{{ block.settings.heading_tag | default: "h3" }} class="ai-core-values-title-{{ ai_gen_id }}">{{ block.settings.title_2 }}</{{ block.settings.heading_tag | default: "h3" }}>
+      {% if block.settings.text_2 != blank %}
+        <p class="ai-core-values-text-{{ ai_gen_id }}">{{ block.settings.text_2 }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-core-values-item-{{ ai_gen_id }}">
+      <div class="ai-core-values-icon-{{ ai_gen_id }}">
+        {% if block.settings.icon_3 == 'shield' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        {% elsif block.settings.icon_3 == 'check_shield' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        {% elsif block.settings.icon_3 == 'award' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="7"/>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+          </svg>
+        {% elsif block.settings.icon_3 == 'thumbs_up' %}
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+          </svg>
+        {% endif %}
+      </div>
+      <{{ block.settings.heading_tag | default: "h3" }} class="ai-core-values-title-{{ ai_gen_id }}">{{ block.settings.title_3 }}</{{ block.settings.heading_tag | default: "h3" }}>
+      {% if block.settings.text_3 != blank %}
+        <p class="ai-core-values-text-{{ ai_gen_id }}">{{ block.settings.text_3 }}</p>
+      {% endif %}
+    </div>
+  </div>
+</core-values-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CoreValues{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('core-values-{{ ai_gen_id }}', CoreValues{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Kernwaarden",
+  "settings": [
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ {"value":"h1","label":"H1"}, {"value":"h2","label":"H2"}, {"value":"h3","label":"H3"}, {"value":"h4","label":"H4"}, {"value":"p","label":"Geen kop (alinea)"} ], "default": "h3" },
+    {
+      "type": "header",
+      "content": "Waarde 1"
+    },
+    {
+      "type": "select",
+      "id": "icon_1",
+      "label": "Icoon",
+      "options": [
+        {
+          "value": "comfort",
+          "label": "Comfort (smiley)"
+        },
+        {
+          "value": "heart",
+          "label": "Hart"
+        },
+        {
+          "value": "star",
+          "label": "Ster"
+        },
+        {
+          "value": "shield",
+          "label": "Schild"
+        }
+      ],
+      "default": "comfort"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Titel",
+      "default": "Comfort"
+    },
+    {
+      "type": "textarea",
+      "id": "text_1",
+      "label": "Tekst"
+    },
+    {
+      "type": "header",
+      "content": "Waarde 2"
+    },
+    {
+      "type": "select",
+      "id": "icon_2",
+      "label": "Icoon",
+      "options": [
+        {
+          "value": "lightbulb",
+          "label": "Gloeilamp"
+        },
+        {
+          "value": "zap",
+          "label": "Bliksem"
+        },
+        {
+          "value": "trending",
+          "label": "Trending"
+        },
+        {
+          "value": "cpu",
+          "label": "Technologie"
+        }
+      ],
+      "default": "lightbulb"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Titel",
+      "default": "Innovatie"
+    },
+    {
+      "type": "textarea",
+      "id": "text_2",
+      "label": "Tekst"
+    },
+    {
+      "type": "header",
+      "content": "Waarde 3"
+    },
+    {
+      "type": "select",
+      "id": "icon_3",
+      "label": "Icoon",
+      "options": [
+        {
+          "value": "shield",
+          "label": "Schild"
+        },
+        {
+          "value": "check_shield",
+          "label": "Schild met vinkje"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        },
+        {
+          "value": "thumbs_up",
+          "label": "Duim omhoog"
+        }
+      ],
+      "default": "check_shield"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Titel",
+      "default": "Vertrouwen"
+    },
+    {
+      "type": "textarea",
+      "id": "text_3",
+      "label": "Tekst"
+    },
+    {
+      "type": "header",
+      "content": "Stijl"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop breedte",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Achtergrondkleur",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Sectie padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Ruimte tussen items",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Mobiele ruimte tussen items",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "item_gap",
+      "label": "Ruimte binnen item",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Icoon"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icoon grootte",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icoon kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "icon_stroke_width",
+      "label": "Icoon lijndikte",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Titel"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Titel grootte",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Titel kleur",
+      "default": "#000000"
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Titel gewicht",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normaal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "title_transform",
+      "label": "Titel transformatie",
+      "options": [
+        {
+          "value": "none",
+          "label": "Normaal"
+        },
+        {
+          "value": "uppercase",
+          "label": "Hoofdletters"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "title_letter_spacing",
+      "label": "Titel letter spacing",
+      "min": 0,
+      "max": 3,
+      "step": 0.5,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Tekst grootte",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekst kleur",
+      "default": "#666666"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Kernwaarden"
+    }
+  ]
+}
+{% endschema %}

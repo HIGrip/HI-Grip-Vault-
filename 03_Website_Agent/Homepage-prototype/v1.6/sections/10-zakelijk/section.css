@@ -1,0 +1,72 @@
+/* 10 ZAKELIJK · 1.6 (Lars 19-10: 1.5 was te saai, 1.4 was leuker). Vier tickets op een rij.
+   Drie zakelijke tickets (beeld, perforatie met inkepingen, scheurstrook met het harde feit) en een wit sample-ticket.
+   De rij zigzagt: tickets 2 en 4 staan lager. Hover of tik: het ticket komt omhoog en de strook scheurt een stukje los
+   langs de perforatie, de pijl loopt vol. Elk ticket linkt naar zijn anker op /pages/zakelijk; de cijfers tellen op. */
+.hp-10 { --hp-10-bg: var(--hi-black); background: var(--hp-10-bg); color: var(--hi-white); }
+.hp-10-lead { color: var(--hi-titanium); }
+
+.hp-10-row { display: grid; gap: var(--hp-space-md); }
+.hp-10-tk {
+  --hp-10-tk: var(--hi-near-black); --hp-10-ink: var(--hi-white); --hp-10-mute: var(--hi-titanium);
+  position: relative; display: flex; flex-direction: column; height: 100%;
+  color: var(--hp-10-ink); text-decoration: none; -webkit-tap-highlight-color: transparent;
+  transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-10-tk--sample { --hp-10-tk: var(--hi-white); --hp-10-ink: var(--hi-black); --hp-10-mute: var(--hi-graphite); }
+.hp-10-tk:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 4px; border-radius: var(--hp-radius-media); }
+
+/* bovenstuk */
+.hp-10-tk__img, .hp-10-tk__hero { position: relative; display: block; overflow: hidden; border-radius: var(--hp-radius-media) var(--hp-radius-media) 0 0; background: var(--hp-10-tk); }
+.hp-10-tk__img { aspect-ratio: 4 / 3; }
+.hp-10-tk__img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; transition: scale var(--hp-dur-3) var(--hp-ease); }
+.hp-10-tk__img--light { background: var(--hi-white); }
+.hp-10-tk__img .hp-10-tk__contain { object-fit: contain; padding: 8%; }
+.hp-10-tk__img .hp-10-tk__sheet { object-fit: contain; transform: scale(1.3) translateY(-4%); filter: contrast(1.14) brightness(1.03); }
+.hp-10-tk__n { position: absolute; left: 12px; top: 12px; padding: 5px 8px; background: var(--hi-black); color: var(--hi-white); font: 700 11px/1 var(--hp-type-family); letter-spacing: 0.1em; font-variant-numeric: tabular-nums; }
+.hp-10-tk__hero { display: grid; align-content: end; gap: 8px; min-height: 180px; padding: var(--hp-space-ms); }
+.hp-10-tk__big { font: italic 900 clamp(40px, 4vw, 64px)/0.88 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; }
+
+/* perforatie: stippellijn met een halve inkeping links en rechts in de kleur van de sectie */
+.hp-10-tk__perf { position: relative; display: block; height: 20px; background: var(--hp-10-tk); }
+.hp-10-tk__perf::before { content: ""; position: absolute; left: 16px; right: 16px; top: 50%; border-top: 2px dashed var(--hi-line-dark); }
+.hp-10-tk--sample .hp-10-tk__perf::before { border-top-color: var(--hi-line); }
+.hp-10-tk__notch { position: absolute; top: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--hp-10-bg); }
+.hp-10-tk__notch--l { left: -10px; }
+.hp-10-tk__notch--r { right: -10px; }
+
+/* scheurstrook */
+.hp-10-tk__stub {
+  flex: 1 1 auto; display: grid; align-content: start; gap: 6px; padding: var(--hp-space-sm) var(--hp-space-ms) var(--hp-space-ms);
+  border-radius: 0 0 var(--hp-radius-media) var(--hp-radius-media); background: var(--hp-10-tk);
+  transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-10-tk__k { font: 600 11px/1.3 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; color: var(--hp-10-mute); }
+.hp-10-tk__v { font: italic 900 clamp(36px, 3.4vw, 56px)/0.9 var(--hp-type-family); letter-spacing: -0.04em; text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.hp-10-tk__t { padding-top: var(--hp-space-xs); font: 800 clamp(18px, 1.5vw, 22px)/1.05 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); }
+.hp-10-tk__d { font-size: 14px; line-height: 1.5; color: var(--hp-10-mute); }
+.hp-10-tk__cue { display: inline-flex; align-items: center; gap: 10px; justify-self: start; margin-top: 6px; font: 700 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-10-tk__chev { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--hi-line-dark); transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), translate var(--hp-dur-1) var(--hp-ease); }
+.hp-10-tk__chev svg { width: 12px; height: 12px; }
+.hp-10-tk__pill { justify-self: start; }
+
+/* hover en tik: optillen en de strook scheurt 10px los */
+.hp-10-tk:active { transform: translateY(-6px); }
+.hp-10-tk:active .hp-10-tk__stub { transform: translateY(10px); }
+.hp-10-tk:active .hp-10-tk__chev { background: var(--hi-white); color: var(--hi-black); translate: 4px 0; }
+@media (hover: hover) {
+  .hp-10-tk:hover { transform: translateY(-8px); }
+  .hp-10-tk:hover .hp-10-tk__stub { transform: translateY(10px); }
+  .hp-10-tk:hover .hp-10-tk__img img { scale: 1.06; }
+  .hp-10-tk:hover .hp-10-tk__chev { background: var(--hi-white); color: var(--hi-black); translate: 4px 0; }
+  .hp-10-tk--sample:hover .hp-pill__chev { transform: translateX(3px); }
+}
+
+@media (min-width: 640px) and (max-width: 1099px) {
+  .hp-10-row { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12px; }
+}
+@media (min-width: 1100px) {
+  .hp-10-row { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 12px; align-items: start; }
+  .hp-10-item:nth-child(even) { margin-top: var(--hp-space-xl); }
+  .hp-10-tk__img { aspect-ratio: 4 / 5; }
+  .hp-10-tk__hero { aspect-ratio: 4 / 5; min-height: 0; }
+}

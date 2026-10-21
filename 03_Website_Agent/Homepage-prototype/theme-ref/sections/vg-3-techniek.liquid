@@ -1,0 +1,358 @@
+{{ 'vg2-page.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vg2-page.js' | asset_url }}" defer></script>
+{%- assign s = section.settings -%}
+<div class="vg2">
+<section class="dark sec{% if s.custom_pad %} vg2-pad{% endif %}" aria-labelledby="tech-titel" style="{%- if s.bg_color != blank -%}background:{{ s.bg_color }};{%- endif -%}{%- if s.text_color != blank -%}color:{{ s.text_color }};{%- endif -%}--vg2-pt:{{ s.padding_top }}px;--vg2-pb:{{ s.padding_bottom }}px;--vg2-pt-m:{{ s.padding_top_mobile }}px;--vg2-pb-m:{{ s.padding_bottom_mobile }}px;">
+    <div class="wrap">
+      <div class="tech__head">
+        <h2 class="xh2 rv" id="tech-titel">{{ s.t1 | escape }} <em>{{ s.t2 | escape }}</em></h2>
+        <p class="lead rv d1">{{ s.t3 | escape }}</p>
+      </div>
+      <div class="tech__grid">
+        <ol class="callouts rv">
+          <li class="co" tabindex="0" data-p="1"><i>{{ s.t4 | escape }}</i><b>{{ s.t5 | escape }}</b><span>{{ s.t6 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="2"><i>{{ s.t7 | escape }}</i><b>{{ s.t8 | escape }}</b><span>{{ s.t9 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="3"><i>{{ s.t10 | escape }}</i><b>{{ s.t11 | escape }}</b><span>{{ s.t12 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="4"><i>{{ s.t13 | escape }}</i><b>{{ s.t14 | escape }}</b><span>{{ s.t15 | escape }}</span></li>
+        </ol>
+        <figure class="tech__fig rv d1">
+          <img src="{%- if s.ima16 != blank -%}{{ s.ima16 | image_url: width: 1200 }}{%- else -%}{{ 'vg-sok-20-zwart.webp' | asset_url }}{%- endif -%}" width="900" height="900" alt="{{ s.t17 | escape }}" loading="lazy">
+          <span class="pt" data-p="1" style="left:48%;top:28%" aria-hidden="true">{{ s.t18 | escape }}</span>
+          <span class="pt" data-p="2" style="left:45%;top:44%" aria-hidden="true">{{ s.t19 | escape }}</span>
+          <span class="pt" data-p="3" style="left:53%;top:58%" aria-hidden="true">{{ s.t20 | escape }}</span>
+          <span class="pt" data-p="4" style="left:34%;top:83%" aria-hidden="true">{{ s.t21 | escape }}</span>
+          <span class="pt" data-p="5" style="left:70%;top:52%" aria-hidden="true">{{ s.t22 | escape }}</span>
+          <span class="pt" data-p="6" style="left:74%;top:70%" aria-hidden="true">{{ s.t23 | escape }}</span>
+          <span class="pt" data-p="7" style="left:57%;top:89%" aria-hidden="true">{{ s.t24 | escape }}</span>
+          <span class="pt" data-p="8" style="left:42%;top:14%" aria-hidden="true">{{ s.t25 | escape }}</span>
+        </figure>
+        <ol class="callouts rv d2" start="5">
+          <li class="co" tabindex="0" data-p="5"><i>{{ s.t26 | escape }}</i><b>{{ s.t27 | escape }}</b><span>{{ s.t28 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="6"><i>{{ s.t29 | escape }}</i><b>{{ s.t30 | escape }}</b><span>{{ s.t31 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="7"><i>{{ s.t32 | escape }}</i><b>{{ s.t33 | escape }}</b><span>{{ s.t34 | escape }}</span></li>
+          <li class="co" tabindex="0" data-p="8"><i>{{ s.t35 | escape }}</i><b>{{ s.t36 | escape }}</b><span>{{ s.t37 | escape }}</span></li>
+        </ol>
+      </div>
+      <div class="tech__foot">
+        <p><b>{{ s.t38 | escape }}</b> {{ s.t39 | escape }}</p>
+        <a class="btn btn--w" data-link-20 href="{{ s.url40 | default: "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart" }}">{{ s.t41 | escape }} <svg viewbox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></a>
+      </div>
+    </div>
+  </section>
+</div>
+{% schema %}
+{
+  "name": "Vergelijk: Techniek 2.0",
+  "settings": [
+    {
+      "type": "text",
+      "id": "t1",
+      "label": "H2 · 2.0.",
+      "default": "2.0."
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "label": "EM · Ultieme performance.",
+      "default": "Ultieme performance."
+    },
+    {
+      "type": "textarea",
+      "id": "t3",
+      "label": "P · Acht features, elk op de plek waar je voet h",
+      "default": "Acht features, elk op de plek waar je voet het zwaarst werkt. Tik op een feature of ga er met je muis over om te zien waar hij zit."
+    },
+    {
+      "type": "text",
+      "id": "t4",
+      "label": "I · 1",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "t5",
+      "label": "B · Compressie",
+      "default": "Compressie"
+    },
+    {
+      "type": "text",
+      "id": "t6",
+      "label": "SPAN · 15–20 mmHg ondersteunt de doorbloeding tijde",
+      "default": "15–20 mmHg ondersteunt de doorbloeding tijdens inspanning."
+    },
+    {
+      "type": "text",
+      "id": "t7",
+      "label": "I · 2",
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "t8",
+      "label": "B · Coolmax®",
+      "default": "Coolmax®"
+    },
+    {
+      "type": "text",
+      "id": "t9",
+      "label": "SPAN · 30% Coolmax® voert vocht direct af van de hu",
+      "default": "30% Coolmax® voert vocht direct af van de huid."
+    },
+    {
+      "type": "text",
+      "id": "t10",
+      "label": "I · 3",
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "t11",
+      "label": "B · Ademend",
+      "default": "Ademend"
+    },
+    {
+      "type": "text",
+      "id": "t12",
+      "label": "SPAN · Open structuur bovenop de voet.",
+      "default": "Open structuur bovenop de voet."
+    },
+    {
+      "type": "text",
+      "id": "t13",
+      "label": "I · 4",
+      "default": "4"
+    },
+    {
+      "type": "text",
+      "id": "t14",
+      "label": "B · Naadloos",
+      "default": "Naadloos"
+    },
+    {
+      "type": "text",
+      "id": "t15",
+      "label": "SPAN · Rondom gebreid, naadloze teenzone. Geen blar",
+      "default": "Rondom gebreid, naadloze teenzone. Geen blaren."
+    },
+    {
+      "type": "image_picker",
+      "id": "ima16",
+      "label": "Afbeelding · sok-20-zwart.webp"
+    },
+    {
+      "type": "text",
+      "id": "t17",
+      "label": "Alt-tekst · Performance Gripsokken 2.0 in zwart met ",
+      "default": "Performance Gripsokken 2.0 in zwart met acht gemarkeerde features"
+    },
+    {
+      "type": "text",
+      "id": "t18",
+      "label": "SPAN · 1",
+      "default": "1"
+    },
+    {
+      "type": "text",
+      "id": "t19",
+      "label": "SPAN · 2",
+      "default": "2"
+    },
+    {
+      "type": "text",
+      "id": "t20",
+      "label": "SPAN · 3",
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "t21",
+      "label": "SPAN · 4",
+      "default": "4"
+    },
+    {
+      "type": "text",
+      "id": "t22",
+      "label": "SPAN · 5",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "t23",
+      "label": "SPAN · 6",
+      "default": "6"
+    },
+    {
+      "type": "text",
+      "id": "t24",
+      "label": "SPAN · 7",
+      "default": "7"
+    },
+    {
+      "type": "text",
+      "id": "t25",
+      "label": "SPAN · 8",
+      "default": "8"
+    },
+    {
+      "type": "text",
+      "id": "t26",
+      "label": "I · 5",
+      "default": "5"
+    },
+    {
+      "type": "text",
+      "id": "t27",
+      "label": "B · Versterkte hiel",
+      "default": "Versterkte hiel"
+    },
+    {
+      "type": "text",
+      "id": "t28",
+      "label": "SPAN · Extra dikte onder de hiel. Minder slijtage, ",
+      "default": "Extra dikte onder de hiel. Minder slijtage, langere levensduur."
+    },
+    {
+      "type": "text",
+      "id": "t29",
+      "label": "I · 6",
+      "default": "6"
+    },
+    {
+      "type": "text",
+      "id": "t30",
+      "label": "B · Maximale grip",
+      "default": "Maximale grip"
+    },
+    {
+      "type": "text",
+      "id": "t31",
+      "label": "SPAN · Siliconen zones houden je voet vast bij elke",
+      "default": "Siliconen zones houden je voet vast bij elke slide."
+    },
+    {
+      "type": "text",
+      "id": "t32",
+      "label": "I · 7",
+      "default": "7"
+    },
+    {
+      "type": "text",
+      "id": "t33",
+      "label": "B · Special cushioning",
+      "default": "Special cushioning"
+    },
+    {
+      "type": "text",
+      "id": "t34",
+      "label": "SPAN · Speciale dempingzones onder de voet.",
+      "default": "Speciale dempingzones onder de voet."
+    },
+    {
+      "type": "text",
+      "id": "t35",
+      "label": "I · 8",
+      "default": "8"
+    },
+    {
+      "type": "text",
+      "id": "t36",
+      "label": "B · Hoogwaardige materialen",
+      "default": "Hoogwaardige materialen"
+    },
+    {
+      "type": "text",
+      "id": "t37",
+      "label": "SPAN · Zorgvuldig gekozen garens voor meer comfort,",
+      "default": "Zorgvuldig gekozen garens voor meer comfort, wedstrijd na wedstrijd."
+    },
+    {
+      "type": "text",
+      "id": "t38",
+      "label": "B · Verdieping: de techniek van de 2.0.",
+      "default": "Verdieping: de techniek van de 2.0."
+    },
+    {
+      "type": "text",
+      "id": "t39",
+      "label": "P · Materialen, breiwijze en metingen. Pagina vo",
+      "default": "Materialen, breiwijze en metingen. Pagina volgt."
+    },
+    {
+      "type": "url",
+      "id": "url40",
+      "label": "Link · /products/performance-gripsokken-2-0-zwart"
+    },
+    {
+      "type": "text",
+      "id": "t41",
+      "label": "A · Shop 2.0",
+      "default": "Shop 2.0"
+    },
+    {
+      "type": "header",
+      "content": "Opmaak"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Achtergrondkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Tekstkleur (leeg = ontwerp)"
+    },
+    {
+      "type": "checkbox",
+      "id": "custom_pad",
+      "label": "Eigen ruimte boven en onder gebruiken",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Ruimte boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Ruimte onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 56
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vergelijk: Techniek 2.0"
+    }
+  ]
+}
+{% endschema %}

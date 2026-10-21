@@ -1,0 +1,22 @@
+{% doc %}
+Geeft inline CSS custom properties voor een knop (pill) van de juridische pagina's.
+Lege waarden worden overgeslagen, zodat de standaard van de gekozen stijl blijft gelden.
+
+@param {string} [bg] - Achtergrondkleur
+@param {string} [fg] - Tekstkleur
+@param {string} [border] - Randkleur
+@param {string} [hover_bg] - Achtergrondkleur bij hover
+@param {string} [hover_fg] - Tekstkleur bij hover
+@param {number} [radius] - Hoekafronding in px
+@param {number} [size] - Lettergrootte in px
+
+@example
+{% render 'legal-pill-vars', bg: block.settings.bg, fg: block.settings.fg %}
+{% enddoc %}
+{%- if bg != blank -%}--pill-bg: {{ bg }};{%- endif -%}
+{%- if fg != blank -%}--pill-fg: {{ fg }};{%- endif -%}
+{%- if border != blank -%}--pill-border: {{ border }};{%- endif -%}
+{%- if hover_bg != blank -%}--pill-hover-bg: {{ hover_bg }};{%- endif -%}
+{%- if hover_fg != blank -%}--pill-hover-fg: {{ hover_fg }};{%- endif -%}
+{%- if radius != blank -%}--pill-radius: {{ radius }}px;{%- endif -%}
+{%- if size != blank -%}--pill-size: {{ size }}px;{%- endif -%}

@@ -1,0 +1,64 @@
+{{ 'sport-landing.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign s = section.settings
+  assign product = s.product | default: all_products['performance-gripsokken-2-0-wit']
+  assign tag = s.heading_tag | default: 'h1'
+-%}
+
+<section class="sl sl-teaser{% if s.center %} sl-teaser--center{% endif %}" data-accent="{{ s.accent }}" style="{% if s.bg_color != blank %}--sl-ground: {{ s.bg_color }}; --sl-surface: {{ s.bg_color }};{% endif %}{% if s.text_color != blank %}--sl-ink: {{ s.text_color }};{% endif %}{% if s.bg_color != blank or s.text_color != blank %}--sl-soft: color-mix(in srgb, var(--sl-ink) 72%, var(--sl-ground));{% endif %}">
+  <div class="sl__wrap">
+    <div class="sl-teaser__head">
+      <{{ tag }} class="sl-teaser__title">{{ s.heading_top | default: 'HÏ Grip —' }} <em class="sl-mark">{{ s.heading_accent | default: 'Performance Gripsokken voor Sporters' }}</em></{{ tag }}>
+      {%- if s.text != blank -%}<p class="sl__lead">{{ s.text }}</p>{%- endif -%}
+    </div>
+
+    <ul class="sl-teaser__tiles">
+      {%- for block in section.blocks -%}
+        <li {{ block.shopify_attributes }}>
+          {%- if block.settings.link != blank -%}<a class="sl-related__link{% if block.settings.image == blank %} sl-related__link--noimg{% endif %}" href="{{ block.settings.link }}" aria-label="Gripsokken voor {{ block.settings.label | downcase }}">
+            {%- if block.settings.image != blank -%}
+              {{ block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 22vw, 50vw', widths: '360, 600', alt: '' }}
+            {%- endif -%}
+            <span class="sl-related__name"><span>{{ block.settings.label }}</span><span aria-hidden="true">→</span></span>
+          </a>{%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if s.cta_text != blank -%}<div class="sl-teaser__foot">
+      <a class="sl__btn sl__btn--primary" href="{{ product.url }}">{{ s.cta_text }}
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Home — sportteaser",
+  "tag": "div",
+  "settings": [
+    { "type": "header", "content": "Kleuren" },
+    { "type": "color", "id": "bg_color", "label": "Achtergrondkleur (leeg = standaard)" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur (leeg = standaard)" },
+    { "type": "select", "id": "heading_tag", "label": "Kopniveau (SEO)", "options": [ { "value": "h1", "label": "H1" }, { "value": "h2", "label": "H2" }, { "value": "h3", "label": "H3" } ], "default": "h1" },
+    { "type": "text", "id": "heading_top", "label": "Kop — wit deel", "default": "HÏ Grip —" },
+    { "type": "text", "id": "heading_accent", "label": "Kop — accentkleur", "default": "Performance Gripsokken voor Sporters" },
+    { "type": "textarea", "id": "text", "label": "Tekst", "default": "Kies je sport. Zie waarom grip in je schoen telt." },
+    { "type": "product", "id": "product", "label": "Product (CTA)", "info": "Leeg = Performance Gripsokken 2.0 wit" },
+    { "type": "text", "id": "cta_text", "label": "Knoptekst (leeg = geen knop)" },
+    { "type": "checkbox", "id": "center", "label": "Kop gecentreerd", "default": true },
+    { "type": "select", "id": "accent", "label": "Accentkleur", "options": [ { "value": "neon", "label": "Neon geel" }, { "value": "orange", "label": "Oranje" }, { "value": "blue", "label": "Blauw" }, { "value": "white", "label": "Wit" }, { "value": "red", "label": "Rood" } ], "default": "neon" }
+  ],
+  "blocks": [
+    { "type": "sport", "name": "Sport", "settings": [
+      { "type": "text", "id": "label", "label": "Naam", "default": "Tennis" },
+      { "type": "url", "id": "link", "label": "Link" },
+      { "type": "image_picker", "id": "image", "label": "Foto" }
+    ] }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "Home — sportteaser" } ]
+}
+{% endschema %}

@@ -1,0 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": { "eyebrow": "Algemeen", "heading": "Betalingsbeleid", "heading_tag": "h1" }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "a1": { "type": "article", "settings": { "heading": "Betaalmethoden", "heading_tag": "h2", "body": "", "in_toc": true } },
+        "r1": { "type": "data_row", "settings": { "label": "iDEAL", "value": "<p>Direct betalen via je eigen bank. Alleen in Nederland.</p>" } },
+        "r2": { "type": "data_row", "settings": { "label": "Creditcard", "value": "<p>Visa, Mastercard en American Express.</p>" } },
+        "r3": { "type": "data_row", "settings": { "label": "Klarna", "value": "<p>Achteraf of in termijnen, afhankelijk van wat Klarna in jouw land biedt.</p>" } },
+        "r4": { "type": "data_row", "settings": { "label": "Bancontact", "value": "<p>Snel en veilig betalen, populair in België.</p>" } },
+        "r5": { "type": "data_row", "settings": { "label": "Apple Pay", "value": "<p>Eenvoudig en veilig betalen met je Apple-apparaat.</p>" } },
+        "a2": { "type": "article", "settings": { "heading": "Beveiliging", "heading_tag": "h2", "body": "<p>We verwerken alle betalingen via Mollie, een betrouwbare en veilige betaalprovider. Mollie voldoet aan de hoogste veiligheidsstandaarden en is volledig gecertificeerd volgens de Payment Card Industry Data Security Standard (PCI DSS). Je betaling is dus altijd veilig en beschermd.</p><p>Zo zorgen we voor een betrouwbare, flexibele en probleemloze betaling, en kun je met een gerust hart bestellen.</p>", "in_toc": true } },
+        "a3": { "type": "article", "settings": { "heading": "Betaling en verzending", "heading_tag": "h2", "body": "<p>Je betaalt vooraf. We verzenden je bestelling zodra de volledige betaling binnen is.</p>", "in_toc": true } }
+      },
+      "block_order": ["a1", "r1", "r2", "r3", "r4", "r5", "a2", "a3"],
+      "settings": { "show_toc": true, "toc_title": "Op deze pagina", "toc_numbers": false }
+    },
+    "more": {
+      "type": "legal-more",
+      "blocks": {
+        "l1": { "type": "link", "settings": { "label": "Algemene voorwaarden", "link": "/policies/terms-of-service", "new_tab": false } },
+        "l2": { "type": "link", "settings": { "label": "Wettelijke kennisgeving", "link": "/policies/legal-notice", "new_tab": false } },
+        "l3": { "type": "link", "settings": { "label": "Verzendbeleid", "link": "/pages/verzendbeleid", "new_tab": false } },
+        "l4": { "type": "link", "settings": { "label": "Retourbeleid", "link": "/pages/retourbeleid", "new_tab": false } },
+        "l5": { "type": "link", "settings": { "label": "Betalingsbeleid", "link": "/pages/terugbetalingsbeleid", "new_tab": false } },
+        "l6": { "type": "link", "settings": { "label": "Privacybeleid", "link": "/pages/privacybeleid", "new_tab": false } }
+      },
+      "block_order": ["l1", "l2", "l3", "l4", "l5", "l6"],
+      "settings": { "label": "Ook onder Algemeen" }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": { "heading": "Vraag over dit beleid?", "text": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>.", "button_label": "Contact", "button_link": "/pages/contact" }
+    }
+  },
+  "order": ["hero", "body", "more", "help"]
+}

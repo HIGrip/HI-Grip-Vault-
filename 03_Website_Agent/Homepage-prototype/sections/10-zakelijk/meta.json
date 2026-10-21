@@ -1,0 +1,20 @@
+{
+  "id": "10",
+  "name": "zakelijk",
+  "bg": "--hi-offwhite",
+  "assets": ["b2b-club-spirit", "b2b-sok-wit", "b2b-sok-zwart", "b2b-sokhoogtes"],
+  "links": [
+    "https://www.higrip.nl/pages/zakelijk#clubs",
+    "https://www.higrip.nl/pages/zakelijk#retailers",
+    "https://www.higrip.nl/pages/zakelijk"
+  ],
+  "interactions": [
+    "hover kaart (desktop, vanaf 900 px): de kaart wordt breder (flex-grow 1 → 1.5), de foto groeit (schaal 1.06), de tekst schuift met de rand mee zonder opnieuw af te breken; chevron vult zwart en schuift 3px",
+    "winkelkaart: zwarte en witte sok schuiven bij hover/tik uit elkaar",
+    "tik kaart (touch): dezelfde staat via .is-on op pointerdown; scrollgebaar of kaart uit beeld zet terug; de link navigeert gewoon",
+    "toetsenbord: :focus-visible geeft dezelfde staat",
+    "pill: chevron schuift 3px bij hover/tik (base.css)",
+    "reduced motion: geen breedte-, schaal- of schuifbeweging; alleen de chevron kleurt"
+  ],
+  "notes": "Hele kaart is de link (aria-labelledby op de titel, aria-describedby op de tekst); de linktekst uit copy staat er als zichtbare cue in (aria-hidden). Beelden in de kaarten zijn daarom alt=\"\" (anders leest de link de alt mee). Pilates heeft geen eigen anker en linkt naar #clubs (facts.json b2b_anchors). Let op uit facts.json: de ankers #clubs en #retailers bestaan alleen in het bronthema, niet op de live /pages/zakelijk (18-10); melden in Fase 2. Adviesprijs €19,95 alleen zoals in copy 10.types.retail.text (besluit Lars 18-10; feitenbestand noemt nog €17,95). Niet gebruikt: b2b-voetbal en b2b-grippatroon (één beeld per kaart)."
+}

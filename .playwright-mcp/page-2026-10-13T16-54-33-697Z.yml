@@ -1,0 +1,339 @@
+- generic [active] [ref=f57e1]:
+  - generic [ref=f57e2]:
+    - banner [ref=f57e5]:
+      - generic [ref=f57e6]:
+        - generic [ref=f57e9]:
+          - list [ref=f57e13]:
+            - listitem [ref=f57e14]:
+              - link [ref=f57e15] [cursor=pointer]:
+                - /url: https://arcteryx.com/nl/en
+                - img "Arc'teryx Logo" [ref=f57e16]
+            - listitem [ref=f57e25]:
+              - link [ref=f57e26] [cursor=pointer]:
+                - /url: https://outlet.arcteryx.com/nl/en
+                - img "Arc'teryx Logo" [ref=f57e27]
+          - generic [ref=f57e35]:
+            - paragraph [ref=f57e38] [cursor=pointer]:
+              - strong [ref=f57e39]: Shop new arrivals
+              - text: "| Free shipping & returns"
+            - generic [ref=f57e40] [cursor=pointer]
+          - generic [ref=f57e44]:
+            - link "find a store" [ref=f57e46] [cursor=pointer]:
+              - /url: /nl/en/stores/find-a-store
+              - img "Find a store" [ref=f57e48]
+              - generic [ref=f57e50]: Find a store
+            - generic [ref=f57e51]:
+              - button "Select Region" [ref=f57e52] [cursor=pointer]
+              - paragraph [ref=f57e59] [cursor=pointer]: EN
+            - link "help" [ref=f57e61] [cursor=pointer]:
+              - /url: /nl/en/help
+              - img "Help" [ref=f57e62]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic [ref=f57e65]:
+                  - paragraph [ref=f57e66]:
+                    - strong [ref=f57e67]: New arrivals
+                  - paragraph [ref=f57e68]: Fresh gear with fabrics and features refined for your most ambitious winter objectives.
+                - generic [ref=f57e70]:
+                  - link "Shop women’s" [ref=f57e73] [cursor=pointer]:
+                    - /url: https://arcteryx.com/c/womens/new-arrivals?intcmp=home_0_shop-nav_c-womens-new-arrivals
+                  - link "Shop men’s" [ref=f57e79] [cursor=pointer]:
+                    - /url: https://arcteryx.com/c/mens/new-arrivals?intcmp=home_0_shop-nav_c-mens-new-arrivals
+                - generic [ref=f57e83]:
+                  - paragraph [ref=f57e84]:
+                    - strong [ref=f57e85]: Free returns
+                  - paragraph [ref=f57e86]:
+                    - text: Changed your mind? Return eligible items within 30 days.
+                    - link "Start a free return" [ref=f57e87] [cursor=pointer]:
+                      - /url: https://arcteryx.com/help/returns?intcmp=home_0_shop-nav_help-returns
+                    - text: .
+      - navigation [ref=f57e90]:
+        - generic [ref=f57e92]:
+          - link "Home" [ref=f57e94] [cursor=pointer]:
+            - /url: /nl/en/
+            - img "Arc'teryx Logo" [ref=f57e97]
+          - generic [ref=f57e108]:
+            - button "Women" [ref=f57e109] [cursor=pointer]
+            - button "Men" [ref=f57e111] [cursor=pointer]
+            - button "Footwear" [ref=f57e113] [cursor=pointer]
+            - button "Equipment" [ref=f57e115] [cursor=pointer]
+            - button "Veilance" [ref=f57e117] [cursor=pointer]
+            - button "Discover" [ref=f57e119] [cursor=pointer]
+          - generic [ref=f57e121]:
+            - button "Search" [ref=f57e122] [cursor=pointer]:
+              - img "Search" [ref=f57e124]
+            - button "My Account" [ref=f57e128] [cursor=pointer]:
+              - img "My Account" [ref=f57e129]
+            - link "Shopping Bag" [ref=f57e131] [cursor=pointer]:
+              - /url: /nl/en/cart
+              - img "Shopping Bag" [ref=f57e132]
+              - generic [ref=f57e134]: "0"
+      - navigation [ref=f57e138]:
+        - generic [ref=f57e140]:
+          - link "Home" [ref=f57e142] [cursor=pointer]:
+            - /url: /nl/en/
+            - img "Arc'teryx Logo" [ref=f57e145]
+          - generic [ref=f57e154]:
+            - button "Women" [ref=f57e155] [cursor=pointer]
+            - button "Men" [ref=f57e157] [cursor=pointer]
+            - button "Footwear" [ref=f57e159] [cursor=pointer]
+            - button "Equipment" [ref=f57e161] [cursor=pointer]
+            - button "Veilance" [ref=f57e163] [cursor=pointer]
+            - button "Discover" [ref=f57e165] [cursor=pointer]
+          - generic [ref=f57e167]:
+            - button "Search" [ref=f57e168] [cursor=pointer]:
+              - img "Search" [ref=f57e170]
+            - button "My Account" [ref=f57e174] [cursor=pointer]:
+              - img "My Account" [ref=f57e175]
+            - link "Shopping Bag" [ref=f57e177] [cursor=pointer]:
+              - /url: /nl/en/cart
+              - img "Shopping Bag" [ref=f57e178]
+              - generic [ref=f57e180]: "0"
+    - main [ref=f57e182]:
+      - generic [ref=f57e186]:
+        - img "A snowboarder carves down a steep, snow-covered mountain, kicking up a trail of snow." [ref=f57e189]
+        - generic [ref=f57e190]:
+          - heading "Find your line" [level=1] [ref=f57e191]
+          - generic [ref=f57e192]:
+            - paragraph [ref=f57e193]: Freeride kits with their own fit and style — ready to go big.
+            - generic [ref=f57e194]:
+              - link "Shop women's" [ref=f57e195] [cursor=pointer]:
+                - /url: /c/womens/ski-snowboard?intcmp=home_t1_c_womens_ski-snowboard
+              - link "Shop men's" [ref=f57e199] [cursor=pointer]:
+                - /url: /c/mens/ski-snowboard?intcmp=home_t1_c_mens_ski-snowboard
+      - generic [ref=f57e205]:
+        - generic [ref=f57e208]:
+          - img "Black Arc'teryx technical jacket next to a close-up of its dark, patterned fabric." [ref=f57e212]
+          - paragraph [ref=f57e214]: BESTSELLERS
+          - generic [ref=f57e215]:
+            - heading "Uncompromising outerwear" [level=2] [ref=f57e216]
+            - paragraph [ref=f57e217]: Experience peak weather protection and temperature regulation.
+            - generic [ref=f57e218]:
+              - link "Shop women's" [ref=f57e219] [cursor=pointer]:
+                - /url: /c/womens/best-sellers/wid-dlk87r1l?intcmp=home_t2_c_womens_best-sellers_wid-dlk87r1l
+              - link "Shop men's" [ref=f57e223] [cursor=pointer]:
+                - /url: /c/mens/best-sellers/wid-dlk87r1l?intcmp=home_t2_c_mens_best-sellers_wid-dlk87r1l
+        - generic [ref=f57e229]:
+          - img "A woman in a black outfit leans against a frosted glass wall, looking to her right." [ref=f57e233]
+          - generic [ref=f57e234]:
+            - heading "Arc'teryx Logo Veilance" [level=2] [ref=f57e235]:
+              - img "Arc'teryx Logo" [ref=f57e236]
+              - generic [ref=f57e245]: Veilance
+            - paragraph [ref=f57e246]: New Winter Arrivals
+            - generic [ref=f57e247]:
+              - link "Women's" [ref=f57e248] [cursor=pointer]:
+                - /url: /c/womens/veilance?intcmp=home_t3_c_womens_veilance
+              - link "Men's" [ref=f57e252] [cursor=pointer]:
+                - /url: /c/mens/veilance?intcmp=home_t3_c_mens_veilance
+              - link "Shop collection" [ref=f57e256] [cursor=pointer]:
+                - /url: /lp/veilance?intcmp=home_t3_lp_veilance
+      - generic [ref=f57e263]:
+        - generic [ref=f57e268]:
+          - heading "The updated Sabre Jacket" [level=3] [ref=f57e269]
+          - paragraph [ref=f57e270]: Our signature freeride shell for big mountain skiing and riding.
+          - link "Shop men's" [ref=f57e272] [cursor=pointer]:
+            - /url: /shop/mens/sabre-jacket-0691?intcmp=home_t4_shop_mens_sabre-jacket-0691
+        - generic [ref=f57e277]:
+          - img "A person in a beanie and puffy jacket puts on a tall black boot while sitting in snow with a red tarp behind them." [ref=f57e280]
+          - generic [ref=f57e281]:
+            - heading "The new Postour Boot" [level=3] [ref=f57e282]
+            - paragraph [ref=f57e283]: Insulated two-in-one boot and slipper for post-tour recovery.
+            - generic [ref=f57e284]:
+              - link "Women's" [ref=f57e285] [cursor=pointer]:
+                - /url: /c/womens/footwear?intcmp=home_t5_c_womens_footwear
+              - link "Men's" [ref=f57e289] [cursor=pointer]:
+                - /url: /c/mens/footwear?intcmp=home_t5_c_mens_footwear
+              - link "Shop footwear" [ref=f57e293] [cursor=pointer]:
+                - /url: /lp/footwearlp?intcmp=home_t5_lp_footwearlp
+        - generic [ref=f57e298]:
+          - img "Man in Arc'teryx gear, including a beanie and pack vest, looking down a rocky, foggy mountain." [ref=f57e301]
+          - generic [ref=f57e302]:
+            - heading "The updated Covert family" [level=3] [ref=f57e303]
+            - paragraph [ref=f57e304]: Technical, durable fleece for layerable warmth on and off trail.
+            - generic [ref=f57e305]:
+              - link "Shop women's" [ref=f57e306] [cursor=pointer]:
+                - /url: /c/womens/fleece?intcmp=home_t6_c_womens_fleece
+              - link "Shop men's" [ref=f57e310] [cursor=pointer]:
+                - /url: /c/mens/fleece?intcmp=home_t6_c_mens_fleece
+      - generic [ref=f57e316]:
+        - generic [ref=f57e323]:
+          - heading "UNPLUGGED" [level=2] [ref=f57e324]
+          - paragraph [ref=f57e325]: Disconnect to Reconnect. An Off-Grid Journey Through the Balkans.
+          - link "Watch the film" [ref=f57e327] [cursor=pointer]:
+            - /url: https://youtu.be/ah30DNLUBps?si=HPPE1BMX6Ah3pUTy&intcmp=home_t7_ah30DNLUBps
+        - generic [ref=f57e333]:
+          - img "Two hikers on a misty hillside, one holding a yellow jacket and the other packing a backpack." [ref=f57e337]
+          - generic [ref=f57e338]:
+            - heading "For every kind of cold." [level=2] [ref=f57e339]: For everykind of cold.
+            - paragraph [ref=f57e340]: Nothing can stop you in insulated gearready for the mountains
+            - generic [ref=f57e341]:
+              - link "Shop women's" [ref=f57e342] [cursor=pointer]:
+                - /url: /c/womens/insulated-jackets?intcmp=home_t8_c_womens_insulated-jackets
+              - link "Shop men's" [ref=f57e346] [cursor=pointer]:
+                - /url: /c/mens/insulated-jackets?intcmp=home_t8_c_mens_insulated-jackets
+      - list [ref=f57e352]:
+        - listitem [ref=f57e353]:
+          - link "We service, care for, and give our gear multiple lives to keep the good in play." [ref=f57e354] [cursor=pointer]:
+            - /url: /rebird?intcmp=home_anchor-cta_bottom_rebird
+        - listitem [ref=f57e357]:
+          - link "Our creative platform for Indigenous voices and designs." [ref=f57e358] [cursor=pointer]:
+            - /url: /explore/walk-gently?intcmp=home_anchor-cta_bottom_explore_walk-gently
+        - listitem [ref=f57e361]:
+          - link "Our journey toward a low-impact future." [ref=f57e362] [cursor=pointer]:
+            - /url: /explore/system0?intcmp=home_anchor-cta_bottom_explore_system0
+    - contentinfo [ref=f57e365]:
+      - generic [ref=f57e366]:
+        - generic [ref=f57e368]:
+          - img "Arc'teryx Logo" [ref=f57e369]
+          - paragraph [ref=f57e373]: LEAVE IT BETTER
+        - generic [ref=f57e375]:
+          - generic [ref=f57e376]:
+            - paragraph [ref=f57e377]: HELP
+            - list [ref=f57e378]:
+              - listitem [ref=f57e379]:
+                - link "Customer Support Centre" [ref=f57e380] [cursor=pointer]:
+                  - /url: /nl/en/help
+              - listitem [ref=f57e381]:
+                - link "General FAQ" [ref=f57e382] [cursor=pointer]:
+                  - /url: /nl/en/help/faq
+              - listitem [ref=f57e383]:
+                - link "Contact Us" [ref=f57e384] [cursor=pointer]:
+                  - /url: /nl/en/help/contact
+              - listitem [ref=f57e385]:
+                - link "Shipping & Delivery" [ref=f57e386] [cursor=pointer]:
+                  - /url: /nl/en/help/shipping
+          - generic [ref=f57e387]:
+            - paragraph [ref=f57e388]: MY ACCOUNT
+            - list [ref=f57e389]:
+              - listitem [ref=f57e390]:
+                - link "Sign in / Sign up" [ref=f57e391] [cursor=pointer]:
+                  - /url: /nl/en/account/login
+              - listitem [ref=f57e392]:
+                - link "Order tracking" [ref=f57e393] [cursor=pointer]:
+                  - /url: /nl/en/help/order-tracking
+              - listitem [ref=f57e394]:
+                - link "Returns & Refunds / Withdrawal" [ref=f57e395] [cursor=pointer]:
+                  - /url: /nl/en/help/returns
+              - listitem [ref=f57e396]:
+                - link "Product care" [ref=f57e397] [cursor=pointer]:
+                  - /url: /nl/en/help/product-care
+          - generic [ref=f57e398]:
+            - paragraph [ref=f57e399]: SHOP MORE
+            - list [ref=f57e400]:
+              - listitem [ref=f57e401]:
+                - link "Find a store" [ref=f57e402] [cursor=pointer]:
+                  - /url: /nl/en/stores/find-a-store
+              - listitem [ref=f57e403]:
+                - link "Gift cards" [ref=f57e404] [cursor=pointer]:
+                  - /url: /nl/en/giftcards
+              - listitem [ref=f57e405]:
+                - link "PRO Program" [ref=f57e406] [cursor=pointer]:
+                  - /url: /nl/en/shop/pro
+              - listitem [ref=f57e407]:
+                - link "Get the App" [ref=f57e408] [cursor=pointer]:
+                  - /url: /nl/en/arcteryx-app
+          - generic [ref=f57e409]:
+            - paragraph [ref=f57e410]: ABOUT US
+            - list [ref=f57e411]:
+              - listitem [ref=f57e412]:
+                - link "Who we are" [ref=f57e413] [cursor=pointer]:
+                  - /url: /nl/en/explore/whoweare
+              - listitem [ref=f57e414]:
+                - link "Athletes & Ambassadors" [ref=f57e415] [cursor=pointer]:
+                  - /url: /nl/en/athletes
+              - listitem [ref=f57e416]:
+                - link "Sustainability" [ref=f57e417] [cursor=pointer]:
+                  - /url: /nl/en/explore/sustainability
+              - listitem [ref=f57e418]:
+                - link "Careers" [ref=f57e419] [cursor=pointer]:
+                  - /url: /nl/en/careers
+              - listitem [ref=f57e420]:
+                - link "Newsroom" [ref=f57e421] [cursor=pointer]:
+                  - /url: https://blog.arcteryx.com/news/
+      - generic [ref=f57e424]:
+        - generic [ref=f57e425]:
+          - text: Get your weekly dose of adventure
+          - paragraph [ref=f57e426]: Receive updates on product drops, exclusive offers, events, and more - delivered right to your inbox.
+        - generic [ref=f57e428]:
+          - textbox "email signup" [ref=f57e429]:
+            - /placeholder: Sign up for our newsletter
+          - button "SIGN ME UP" [disabled] [ref=f57e431]
+      - generic [ref=f57e437]:
+        - generic [ref=f57e438]:
+          - generic [ref=f57e440]:
+            - link "instagram" [ref=f57e441] [cursor=pointer]:
+              - /url: https://instagram.com/arcteryx
+            - link "youtube" [ref=f57e446] [cursor=pointer]:
+              - /url: https://www.youtube.com/arcteryxequipmentinc
+            - link "facebook" [ref=f57e449] [cursor=pointer]:
+              - /url: https://www.facebook.com/arcteryx
+            - link "tiktok" [ref=f57e452] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@arcteryx
+              - img "TikTok Icon" [ref=f57e453]
+          - button "Select Region" [ref=f57e454] [cursor=pointer]:
+            - paragraph [ref=f57e464]: EN
+          - generic [ref=f57e466]:
+            - link "Android App" [ref=f57e467] [cursor=pointer]:
+              - /url: https://play.google.com/store/apps/details?id=com.arcteryx.customer
+              - generic [ref=f57e468]:
+                - img "Android App" [ref=f57e469]
+                - paragraph [ref=f57e470]: Android App
+            - link "iOS App" [ref=f57e471] [cursor=pointer]:
+              - /url: https://apps.apple.com/ca/app/arcteryx-outdoor-gear-shop/id1183113553
+              - generic [ref=f57e472]:
+                - img "iOS App" [ref=f57e473]
+                - paragraph [ref=f57e474]: iOS App
+        - list [ref=f57e477]:
+          - listitem [ref=f57e478]:
+            - button "Your Privacy Choices" [ref=f57e479] [cursor=pointer]
+            - text: "|"
+          - listitem [ref=f57e480]:
+            - link "Cookie Policy" [ref=f57e481] [cursor=pointer]:
+              - /url: /nl/en/help/cookies
+            - text: "|"
+          - listitem [ref=f57e482]:
+            - link "Privacy Policy" [ref=f57e483] [cursor=pointer]:
+              - /url: /nl/en/help/privacy
+            - text: "|"
+          - listitem [ref=f57e484]:
+            - link "Terms & Conditions" [ref=f57e485] [cursor=pointer]:
+              - /url: /nl/en/help/terms-and-conditions
+            - text: "|"
+          - listitem [ref=f57e486]:
+            - link "Terms of Use" [ref=f57e487] [cursor=pointer]:
+              - /url: /nl/en/help/terms-of-use
+            - text: "|"
+          - listitem [ref=f57e488]:
+            - link "Accessibility" [ref=f57e489] [cursor=pointer]:
+              - /url: /nl/en/help/accessibility
+            - text: "|"
+          - listitem [ref=f57e490]:
+            - link "Do not sell my personal information" [ref=f57e491] [cursor=pointer]:
+              - /url: /nl/en/help/privacy#do-not-sell-my-personal-information
+            - text: "|"
+          - listitem [ref=f57e492]:
+            - link "Recall Info" [ref=f57e493] [cursor=pointer]:
+              - /url: /nl/en/help/recalls/procline-boot
+            - text: "|"
+          - listitem [ref=f57e494]:
+            - link "Sitemap" [ref=f57e495] [cursor=pointer]:
+              - /url: /nl/en/sitemap
+            - text: "|"
+          - listitem [ref=f57e496]:
+            - link "arcteryx.com" [ref=f57e497] [cursor=pointer]:
+              - /url: https://arcteryx.com
+            - text: "|"
+          - listitem [ref=f57e498]:
+            - link "outlet.arcteryx.com" [ref=f57e499] [cursor=pointer]:
+              - /url: https://outlet.arcteryx.com
+            - text: "|"
+          - listitem [ref=f57e500]:
+            - link "leaf.arcteryx.com" [ref=f57e501] [cursor=pointer]:
+              - /url: https://leaf.arcteryx.com
+            - text: "|"
+          - listitem [ref=f57e502]:
+            - link "Arc'teryx - an Amer Sports Brand" [ref=f57e503] [cursor=pointer]:
+              - /url: https://www.amersports.com/brands/arcteryx/
+  - alert [ref=f57e504]

@@ -28,7 +28,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 ## Verhouding tot andere agents
 - **Content Agent** — maakt social content; Website Agent hergebruikt dat niet automatisch, maar houdt dezelfde merkstem aan.
 - **Denzel** — routeert werk hierheen en bewaakt consistentie met de andere hoofdagents. Input van andere hoofdagents (bv. een B2B-partnerpagina vanuit de Partnership Agent) komt via Denzel binnen, niet rechtstreeks. Zie [[Agent Hiërarchie & Structuurschema]].
-- **Eigen sub-agents** — alle sub-agents hieronder vallen onder hem; hij stuurt het werk naar de juiste specialist.
+- **Eigen sub-agents** — alle sub-agents hieronder vallen onder hem; hij stuurt het werk naar de juiste specialist. Sinds 21-10-2026 hoort daar ook zijn eigen toetser bij, Website-QA (verdict naar de Website Agent, kopie naar Denzel).
 
 ## Sub-agents
 > Onderbouwing: elke categorie hieronder is een submap die al in deze agent-map bestond vóór dit schema er was (Strategie, Technisch, Content, Analyse). SEO en Design waren al door lars benoemd; Website Copy en Conversie & Analyse zijn aangevuld zodat elke bestaande submap een eigen specialist heeft. Autonomie/Harde grenzen/Toon zijn hier het makkelijkst te onderbouwen, want Website Agent heeft als enige al een vastgestelde autonomie-tabel om 1-op-1 uit over te nemen.
@@ -64,6 +64,13 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 #### E-mail Marketing Agent
 - **Rol:** Stelt e-mailflows en nieuwsbrieven op voor HÏ Grip — content afgestemd op de e-maillijst-strategie, vormgegeven in de bestaande mailstijl.
 - **Volledige identiteit:** [[Identiteit E-mail Marketing Agent|E-mail Marketing Agent — identiteit]]
+
+### Categorie: Kwaliteit
+
+#### Website-QA *(sinds 21-10-2026 onder de Website Agent, daarvoor onder Denzel)*
+- **Rol:** Toetst onafhankelijk alles wat de Website Agent en zijn sub-agents opleveren op niveau Midden of Hoog: feiten, merk, grenzen en succescriteria. Alleen lezen, hij herstelt niets.
+- **Verdict:** gaat naar de Website Agent en altijd als kopie naar Denzel. De Website Agent past een verdict niet aan en houdt het niet tegen. Bij CORRIGEER stuurt de Website Agent de regel en het bewijs terug naar de maker (maximaal twee rondes), daarna escaleert hij naar Denzel.
+- **Volledige identiteit:** [[Identiteit Website-QA|Website-QA — identiteit]] · gedeelde basis: [[Toetsregels]]
 
 ## Parallelle dispatch (nieuw, 2026-09-16)
 

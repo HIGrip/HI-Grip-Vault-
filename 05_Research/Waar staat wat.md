@@ -36,6 +36,8 @@
 Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Hoofdmap
+- [[2026-10-21-search-console]]
+- [[2026-10-21-growth-radar-ai-search]]
 - [[2026-10-20-growth-radar-seo-content]]
 - [[2026-10-19-weekoverzicht]]
 - [[2026-10-19-seo-conversietest-run-5]]

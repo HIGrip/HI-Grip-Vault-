@@ -1,19 +1,19 @@
 ---
 type: kennis
-gebied: denzel
-bijgewerkt: 2026-10-02
+gebied: agent-infrastructuur
+bijgewerkt: 2026-10-21
 status: concept — ter beoordeling door Lars
 ---
 
-# Delegeren aan het eigen team
+# Samenwerking Stafchef en Vooruitblik
 
-> Hoe Denzel zijn vijf eigen sub-agents inzet. Wie ze zijn: [[Identiteit Denzel]]. Voor de opdracht aan een hoofdagent geldt het [[Opdrachtprotocol]]; dit bestand gaat over Denzels eigen team.
+> Hoe de [[Identiteit Operations Agent|Operations Agent]] zijn twee sub-agents inzet. Tot 21-10-2026 heette dit bestand "Delegeren aan het eigen team" en hoorde het bij Denzel. Denzel is sindsdien alleen orchestrator; de Stafchef en de Vooruitblik-agent vallen onder de Operations Agent, de QA-agents onder hun eigen hoofdagent. Voor de opdracht aan een hoofdagent geldt het [[Opdrachtprotocol]].
 
 ## Kernregel
 
-Een sub-agent van Denzel start koud en onthoudt niets. Alles wat hij moet weten staat in zijn briefing en in zijn eigen identiteit. Een briefing zonder succescriteria of zonder bron levert een antwoord op dat er goed uitziet en niet te controleren is.
+Een sub-agent start koud en onthoudt niets. Alles wat hij moet weten staat in zijn briefing en in zijn eigen identiteit. Een briefing zonder succescriteria of zonder bron levert een antwoord op dat er goed uitziet en niet te controleren is.
 
-## Briefing aan een eigen sub-agent
+## Briefing aan een sub-agent
 
 Altijd deze zeven velden:
 
@@ -25,12 +25,14 @@ Altijd deze zeven velden:
 6. **Uitvoerformaat**: het verdict, de lijst of het item dat terug moet komen
 7. **Stopvoorwaarden**: wanneer de agent stopt en op een mens wacht (een harde grens, een ontbrekende bron, een tweede correctieronde zonder oplossing)
 
+Dit format geldt ook voor de hoofdagents als die hun eigen QA-agent briefen.
+
 ## Per sub-agent
 
 ### Stafchef
 - **Geef mee:** de succescriteria die Denzel heeft vastgelegd, de gewenste hoofdagent en het niveau ("Voorstellen" of "Altijd overleg vooraf").
 - **Krijg terug:** een uitgewerkte briefing in het postvak en een regel in het kwaliteitslog.
-- **Ook laten doen:** leerregels vastleggen die Denzel heeft bepaald, en taken in het dashboard afvinken als er bewijs is.
+- **Ook laten doen:** leerregels vastleggen die Denzel heeft bepaald, QA-verdicten vastleggen in het kwaliteitslog, en taken in het dashboard afvinken als er bewijs is.
 - **Niet laten doen:** afvinken zonder bewijs of rechtstreeks in de actiebacklog, inhoudelijk oordelen, iets naar buiten sturen.
 
 ### Vooruitblik-agent
@@ -38,35 +40,22 @@ Altijd deze zeven velden:
 - **Krijg terug:** items in het formaat van [[Identiteit Vooruitblik-agent]], elk met datum, impact, uiterste actiedatum en bron.
 - **Niet laten doen:** juridisch advies, wijzigingen op de site, contact opnemen met organisatoren.
 
-### QA-agents (Website-QA, Content-QA, Partnership-QA)
-- **Geef mee:** het resultaat zelf (het bestand, de preview, de lijst), de succescriteria van de opdracht en het risiconiveau.
-- **Krijg terug:** één verdict volgens [[Toetsregels]].
-- **Niet laten doen:** het werk herstellen, herschrijven of verbeteren. Wie toetst maakt niet.
-- **Nooit meegeven:** de samenvatting van de maker als vervanging van het resultaat.
-
-## Parallel of na elkaar
-
-- De drie QA-agents zijn onafhankelijk van elkaar en draaien parallel als er resultaten van meerdere hoofdagents liggen.
-- Vooruitblik en Stafchef werken na elkaar: eerst het item, daarna de opdracht.
-- Een QA start pas wanneer het werk klaar is. Een tussenversie laten toetsen kost tokens en levert verdicten op die meteen verouderen.
-
-## Wanneer iets niet gedelegeerd wordt
-
-- Een klein werkje van twee minuten dat Denzel zelf kan afronden zonder oordeel (bijvoorbeeld een regel in het logboek).
-- Iets waarvoor het antwoord al in een vault-bestand staat. Lees het.
-- Een besluit. Denzel kan alles uitzoeken laten doen, het besluit blijft bij hem of bij Lars.
-
 ## Samenwerking Stafchef en Vooruitblik
 
 1. Vooruitblik vindt een item en beoordeelt impact, datum en wie het raakt. Een item met actie wordt eerst een regel in de actiebacklog (`05_Research/_backlog/ACTIEBACKLOG.md`), volgens de procedure in `05_Research/_build/PROCEDURE.md`.
-2. Zodra Denzel besluit dat het wordt uitgezet, schrijft de Stafchef de opdracht in het postvak. Uiterlijk 14 dagen vóór de datum moet de opdracht lopen.
-3. De Stafchef bewaakt de deadline. Dreigt een item te laat te komen, dan meldt hij het aan Denzel.
-4. De hoofdagent voert uit, de QA-agent van het domein toetst.
+2. De Operations Agent legt het item met impact aan Denzel voor. Zodra Denzel besluit dat het wordt uitgezet, schrijft de Stafchef de opdracht in het postvak. Uiterlijk 14 dagen vóór de datum moet de opdracht lopen.
+3. De Stafchef bewaakt de deadline. Dreigt een item te laat te komen, dan meldt de Operations Agent het aan Denzel.
+4. De hoofdagent voert uit, zijn eigen QA-agent toetst.
 5. Is er geen opdracht nodig (alleen bewustzijn), dan blijft het item staan in het 90-dagenoverzicht.
 
 **Eén regel voor beide:** een item dat minder dan 30 dagen vóór de datum voor het eerst wordt gemeld, is te laat. Meld dat dan ook zo, zonder het mooier te maken.
 
-## Wat de Stafchef nooit mag overnemen van Denzel
+## Parallel of na elkaar
+
+- Vooruitblik en Stafchef werken na elkaar: eerst het item, daarna de opdracht.
+- De wekelijkse scan van Vooruitblik en de weekstand van de Stafchef kunnen parallel.
+
+## Wat de Operations Agent en de Stafchef nooit overnemen van Denzel
 
 - Besluiten (kiezen tussen hoofdagents, "Voorstellen, ik keur goed"-onderdelen)
 - Het gesprek met Lars over wat openstaat
@@ -78,4 +67,4 @@ Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bij
 
 - [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]

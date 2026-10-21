@@ -188,6 +188,12 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Homepage-prototype/v1.21/contract
 - [[03_Website_Agent/Homepage-prototype/v1.21/contract/RULES|contract/RULES]]
 
+### Homepage-prototype/v1.22/contract
+- [[03_Website_Agent/Homepage-prototype/v1.22/contract/RULES|contract/RULES]]
+
+### Homepage-prototype/v1.23/contract
+- [[03_Website_Agent/Homepage-prototype/v1.23/contract/RULES|contract/RULES]]
+
 ### Homepage-prototype/v1.3/contract
 - [[03_Website_Agent/Homepage-prototype/v1.3/contract/RULES|contract/RULES]]
 

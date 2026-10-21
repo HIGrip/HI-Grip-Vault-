@@ -10,7 +10,7 @@
 
 | Wat | Pad |
 |---|---|
-| Vault | `C:\Users\Test\OneDrive\Documents\HI-Grip-Vault-` — branch `HÏ-Grip-Vault-obsidian` (er is geen `main`) |
+| Vault | `C:\Users\Test\Werk\HI-Grip-Vault-` — branch `HÏ-Grip-Vault-obsidian` (er is geen `main`) |
 | Notities | `05_Research\<id>.md` — `id` = `JJJJ-MM-DD-slug` |
 | Build | `python 05_Research\_build\build_register.py` (`--check` = alleen valideren) → `05_Research\_build\register.js` |
 | Dashboard-bron | `05_Research\_dashboard\index.html` (canoniek — nooit terugwerken vanuit het gelezen artifact) |

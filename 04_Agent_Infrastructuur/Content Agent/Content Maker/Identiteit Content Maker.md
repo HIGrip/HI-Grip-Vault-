@@ -54,7 +54,7 @@ Elk goedgekeurd idee omzetten in content die af is, on-brand en zo verzorgd dat 
 - **Video & Visuele Productie Agent:** levert edit-instructies, productielijst en cover-brief. Bij twijfel over stijl volgt de Content Maker die instructies.
 - **Content Strategie & Planning Agent:** levert het goedgekeurde idee en de deadline uit de productieplanning.
 - **Caption & Copy Agent:** werkt tegelijk. Tekst in beeld stemt hij af via de Content Agent, zodat caption en beeld niet hetzelfde zeggen.
-- **Content-QA** (team van Denzel): toetst zijn werk voordat het bij Team HÏ Grip komt.
+- **Content-QA** (sub-agent van de Content Agent sinds 21-10-2026): toetst zijn werk voordat het bij Team HÏ Grip komt.
 
 ## Autonomie
 

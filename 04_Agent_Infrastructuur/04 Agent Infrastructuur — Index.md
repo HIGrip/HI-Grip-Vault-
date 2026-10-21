@@ -32,6 +32,7 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Opdrachtprotocol]]
 - [[Stappenplan — Verdere Bouw]]
 - [[Sterrenbeoordeling]]
+- [[Toetsregels]]
 - [[Verbeterlus]]
 - [[user]]
 
@@ -61,6 +62,11 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Identiteit Content Strategie & Planning Agent]]
 - [[Werkplek Content Strategie & Planning Agent]]
 
+### Content Agent/Content-QA
+- [[Identiteit Content-QA]]
+- [[Toetslijst Content-QA]]
+- [[Werkplek Content-QA]]
+
 ### Content Agent/Socials Analyzer
 - [[Identiteit Socials Analyzer]]
 - [[Werkplek Socials Analyzer]]
@@ -68,6 +74,19 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Content Agent/Video & Visuele Productie Agent
 - [[Identiteit Video & Visuele Productie Agent]]
 - [[Werkplek Video & Visuele Productie Agent]]
+
+### Operations Agent
+- [[Identiteit Operations Agent]]
+- [[Samenwerking Stafchef en Vooruitblik]]
+- [[Soul Operations Agent]]
+
+### Operations Agent/Stafchef
+- [[Identiteit Stafchef]]
+- [[Werkplek Stafchef]]
+
+### Operations Agent/Vooruitblik-agent
+- [[Identiteit Vooruitblik-agent]]
+- [[Werkplek Vooruitblik-agent]]
 
 ### Partnership Agent
 - [[Identiteit Partnership Agent]]
@@ -80,6 +99,11 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Partnership Agent/Influencer & Creator Agent
 - [[Identiteit Influencer & Creator Agent]]
 - [[Werkplek Influencer & Creator Agent]]
+
+### Partnership Agent/Partnership-QA
+- [[Identiteit Partnership-QA]]
+- [[Toetslijst Partnership-QA]]
+- [[Werkplek Partnership-QA]]
 
 ### Partnership Agent/Partnerships & Events Agent
 - [[Identiteit Partnerships & Events Agent]]
@@ -128,3 +152,8 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 ### Website Agent/Website Copy Agent
 - [[Identiteit Website Copy Agent]]
 - [[Werkplek Website Copy Agent]]
+
+### Website Agent/Website-QA
+- [[Identiteit Website-QA]]
+- [[Toetslijst Website-QA]]
+- [[Werkplek Website-QA]]

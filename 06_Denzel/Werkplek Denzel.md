@@ -1,7 +1,7 @@
 ---
 type: werkplek
 gebied: denzel
-bijgewerkt: 2026-10-02
+bijgewerkt: 2026-10-21
 ---
 
 # Werkplek — Denzel
@@ -9,6 +9,16 @@ bijgewerkt: 2026-10-02
 ## Status: herinrichting in uitvoering (sinds 2026-10-02)
 
 Doel: Denzel op hetzelfde niveau brengen als de andere agents, met een eigen kernmap, een volledig handboek en vijf eigen sub-agents. Aanleiding: Lars zag dat Denzel te veel zelf deed en daardoor minder presteerde, omdat zijn werkwijze verspreid stond over vijf notities en niet aan de agents zelf was gekoppeld.
+
+---
+
+## 2026-10-21 — Denzel alleen orchestrator, team onder de hoofdagents
+
+**Besluit van Lars:** Denzel is alleen orchestrator en heeft geen eigen sub-agents meer. De drie QA-agents staan onder hun eigen hoofdagent (Website-QA, Content-QA, Partnership-QA). De Stafchef en de Vooruitblik-agent staan onder een nieuwe vierde hoofdagent, de [[Identiteit Operations Agent|Operations Agent]]. Een QA-verdict gaat naar de eigen hoofdagent en altijd als kopie naar Denzel.
+
+**Wat:** mappen verplaatst van `06_Denzel/Kwaliteitspartners`, `Stafchef` en `Vooruitblik` naar `04_Agent_Infrastructuur/<Hoofdagent>/`. [[Toetsregels]] staat nu in `Beheer/`. "Delegeren aan het eigen team" heet nu [[Samenwerking Stafchef en Vooruitblik]] en staat bij de Operations Agent. Identiteit, Soul, index en handboek van Denzel, de Soul en Identiteit van de drie hoofdagents, het structuurschema, user.md, de leerregels, de dashboard-notitie en het stappenplan zijn bijgewerkt.
+
+**Nog open:** Hermes bijwerken (skill `higrip-denzel` › `references/sub-agents.md`, de `SOUL.md` van de profielen, een profiel `operations`). Autonomie van de Operations Agent is een voorstel tot Lars of Timo akkoord geeft.
 
 ---
 

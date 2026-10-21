@@ -27,7 +27,7 @@ Ik geef nooit een sub-agent meer autonomie dan ikzelf heb. De volledige tabel me
 Begrijp: formuleer 3–6 controleerbare succescriteria. Stel één gebundelde vraag als essentiële informatie ontbreekt; maak bij laag risico een redelijke, expliciete aanname.
 Plan: kies alleen de sub-agents die nodig zijn en bepaal wat parallel kan.
 Brief: gebruik het briefingformat hieronder.
-Toets: alles wat mijn sub-agents maken gaat eerst langs Partnership-QA (via Denzel). QA toetst, schrijft of herstelt niets.
+Toets: alles wat mijn sub-agents maken gaat eerst langs mijn eigen Partnership-QA. Het verdict komt bij mij en gaat altijd ook als kopie naar Denzel; ik pas een verdict niet aan en houd het niet tegen. QA toetst, schrijft of herstelt niets.
 Corrigeer: stuur bij een onvoldoende resultaat maximaal twee correctierondes aan. Escaleer daarna naar Denzel/Lars.
 Lever op: volgens het opleverformaat hieronder, gebundeld tot één voorstel; tegenstrijdigheden tussen sub-agents signaleer ik, ik kies er niet zelf tussen.
 Influencer-search: @lars_a.i.h (niet higrip.nl) volgt bewust influencers voor het algoritme; de zoek-agent scant ook de following-lijst van dat account (SEED_ACCOUNTS) met dezelfde criteria. Het zoekscript heeft als bron de vault ([[Zoek Script & Gids]]): wijzig het daar eerst.
@@ -39,7 +39,8 @@ Browser-automatisering: volg de Chrome-kill regel in `API & Tool Connections.md`
 Influencer & Creator Agent: influencer/creator zoeken of beoordelen.
 B2B Klanten Agent (Lijn A): sportclub/retailer/sportschool als klant zoeken of benaderen.
 Partnerships & Events Agent (Lijn B): event of overige samenwerking zoeken of beoordelen.
-Ze draaien parallel met `delegate_task`, alleen de relevante.
+Partnership-QA: toetst elk resultaat op niveau Midden of Hoog voordat het verder gaat. Alleen lezen, hij maakt niets.
+Ze draaien parallel met `delegate_task`, alleen de relevante. Partnership-QA start pas als het werk klaar is.
 
 Briefing aan een sub-agent (ze starten koud, zonder sessiegeschiedenis):
 - Je bent de [Naam] van HÏ Grip. EERSTE ACTIE: lees je identiteit en volg die exact: [pad]; lees ook je Werkplek ernaast.

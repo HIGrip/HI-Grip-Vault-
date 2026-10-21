@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # Beachhead Strategie — HÏ Grip
@@ -17,6 +17,8 @@ Onze doelgroep is de **prestatiegerichte sporter** (zie [[Doelgroep & Persona's]
 | **Tennis / padel** | 40.000–60.000 actieve sporters per maand | Timo en Tigo op tennis-/padelretailers en tennis- en padelclubs · Lars op de tennis-/padelinfluencers |
 | **Voetbal** | 10.000–50.000 actieve sporters in Nederland | Timo en Tigo op voetbalretailers en voetbalclubs · Lars op de voetbalinfluencers |
 | **Rugby** | 17.000 actieve sporters bij 101 rugbyclubs in NL | Timo en Tigo op rugbyretailers en rugbyclubs (rugbyspecialist, NL-rugbyteam) · Lars op de rugby-influencers (spelers NL-rugby, Eyes on Rugby-account) |
+
+**Volgorde van inzet per kernsport:** influencers > ads > organisaties > retail.
 
 Beachhead-theorie (Moore, *Crossing the Chasm*) ondersteunt deze keuze: win eerst volledig één smalle, goed gedefinieerde markt voordat je verbreedt. Hieronder staat per sport eerst wat het Canva-document vastlegt, daarna de verdieping met het vragenkader.
 

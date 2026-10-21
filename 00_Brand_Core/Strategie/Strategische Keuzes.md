@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: brand-core
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-20
 ---
 
 # Strategische Keuzes — HÏ Grip
@@ -13,6 +13,13 @@ bijgewerkt: 2026-10-01
 ## Strategie in één oogopslag
 
 > **HÏ GRIP ONTWIKKELT EN LEVERT TECHNISCH HOOGWAARDIGE PERFORMANCE SPORTSWEAR DIE PRESTATIEGERICHTE SPORTERS EMOTIONEEL EN FUNCTIONEEL EEN EXTRA EDGE GEEFT, DOOR INNOVATIE, COMFORT EN VERTROUWEN VOORTDUREND TE COMBINEREN.**
+
+### Hoe de sporter bij HÏ Grip uitkomt
+
+- **95 / 5:** 95% van de sporters zoekt niet actief, maar is er voor de langere termijn; 5% zoekt wel actief. Merkbekendheid bouwen we dus voor de 95%, vindbaarheid (SEO, marketplaces) voor de 5%.
+- **Trigger:** angst om te verliezen. Die komt terug in heel veel momenten, vooral de belangrijke (een wedstrijd, een toernooi, een selectie).
+- **Category entry point (het rijdende karretje):** *"Ik wil een edge hebben."* De vraag die elke uiting beantwoordt: waarom is HÏ Grip die edge?
+- **Distinctive brand assets:** de elementen waaraan sporters ons direct herkennen en die merkgevoel in de praktijk brengen (embleem, kleuren, Poppins, headlines, zie [[Logo & Kleurenpalet]] en [[Design Elementen]]).
 
 ### Tactiek — de brug tussen de strategie en de doelgroep: wie doet wat
 
@@ -67,21 +74,45 @@ Hier ziet een sporter HÏ Grip voor het eerst, online en op straat. Content bouw
 
 Het hoofdkanaal van de socials; de community komt hier. Persoonlijke content en storytelling-video's op TikTok en Meta: dit is trending, kijkt goed weg en vertaalt de identiteit van een jong en doorzettend merk in content. **HÏ LIGHTS OF THE WEEK** is de vaste founders-journey-serie, met daaromheen series, campagnes en announcements. Content van andere kanalen komt hier ook (gedeelde influencer-posts, guerilla-series). LinkedIn is simpel: zakelijke onderwerpen.
 
+**Drie typen content:** persoonlijke content · performance-content · announcement-content. Elk type speelt in op een fase van de funnel:
+
+| Funnelfase | Wat de sporter doet |
+|---|---|
+| **Top** (ontdekken) | Ziet ons voor het eerst, scrolt weer door. |
+| **Mid** (overwegen) | Raakt overtuigd om ons te volgen, gaat over ons nadenken. |
+| **End** (revenue) | Gaat naar onze site, gaat binnenkort bestellen. |
+
+**Structuur van @higrip.nl**
+
 | Platform | Organische planning |
 |---|---|
-| **Meta** | Trustpilot · zakelijk · e-mail-story · HÏ LIGHTS OF THE WEEK · gedeelde influencer-posts · productcampagnes · (guerilla-)series |
-| **TikTok** | HÏ LIGHTS OF THE WEEK · productcampagnes · (guerilla-)series |
+| **Meta** | HÏ LIGHTS OF THE WEEK · gedeelde influencer-posts · persoonlijke story's · productcampagnes · (guerilla-)series · performance pics / vids · story's met Trustpilot, zakelijk en e-mail |
+| **TikTok** | HÏ LIGHTS OF THE WEEK · productcampagnes · (guerilla-)series · persoonlijke story's · performance pics / vids · trending, topics, "if you're" |
 | **LinkedIn** | Zakelijke announcements · productcampagnes · statusposts |
+
+| Format | Platform | Wat |
+|---|---|---|
+| **HÏ LIGHTS OF THE WEEK** | Meta / TikTok | De beste momenten en prestaties van de week. |
+| **Gedeelde influencer-content** | Meta | Influencers delen content die ook op ons account komt te staan. |
+| **(Product)campagnes** | Meta / TikTok | Productlaunches en campagnes die iets aankondigen. |
+| **(Guerilla-)series** | Meta / TikTok | Creatieve en authentieke series die onze community blijven boeien. |
+| **Persoonlijke story's** | Meta / TikTok | Echte verhalen, behind the scenes van onze momenten. |
+| **Trending, topics, "if you're"** | TikTok | Inspelen op trends, "if you're"-video's en greenscreen-topics die aansluiten bij onze doelgroep. |
+| **Trustpilot, B2B & mail** | Story | Reviews van onze community, "HÏ Grip bij jou op locatie?" en "Join de Performance Academy". |
 
 Beheren en ideeën: **Buffer**.
 
 ### Influencers — creators en atleten
 
-Vertrouwen creëren, mensen het online laten herkennen, zichtbaar zijn en revenue eruit halen. In het begin focussen op **kleine influencers**, want die zijn betaalbaar. We zetten ze in om nieuwe mensen te bereiken én om contentcreatie uit te besteden, zodat we een gedeelde post met hen kunnen plaatsen.
+Vertrouwen creëren, mensen het online laten herkennen, zichtbaar zijn en revenue eruit halen. In het begin focussen we op **atleten en platformen binnen de rugbywereld**, want die influencers zijn voor ons toegankelijk. We zetten ze in om nieuwe mensen te bereiken én om contentcreatie uit te besteden, zodat we een gedeelde post met hen kunnen plaatsen.
 
-- Kracht van herhaling, nieuwe mensen bereiken.
-- Door gedeelde posts content zonder veel tijd en moeite.
-- **Veel met kortingscodes, commissies of gratis product placements.**
+**We werken naar contractuele samenwerkingen:**
+
+| Partner | Wat de samenwerking inhoudt |
+|---|---|
+| **Atleten** | Hun wedstrijdfoto's op onze socials en website, "HÏ Grip athlete" in hun bio, storytelling-video's, samen shooten. |
+| **Online platformen** | Kortingscodes, PR-aandacht. |
+| **Creators** | Kortingscodes in bio en captions, standaard gedeelde posts. |
 
 Beheren en ideeën: **"COLLABS - HÏ GRIP"**.
 
@@ -177,19 +208,36 @@ We bouwen aan de Performance Academy door persoonlijke organische content te pla
 
 We testen met al onze kanalen op drie kernsporten (**tennis/padel, voetbal, rugby**), kiezen er één, en bouwen vanuit daar de komende jaren naar nieuwe sporten, landen en producten. Aan andere sporten besteden we zo min mogelijk resources. Volledig: [[Beachhead Strategie]].
 
+**Volgorde van inzet per kernsport:** influencers > ads > organisaties > retail.
+
 ---
 
 ## Producten
 
 - **Nu:** Performance Grip Socks (1.0 en 2.0). Productwaarheid 2.0: [[Performance Grip Socks 2.0]].
-- **Binnenkort:** Performance Tubes (voetloze kousen) en Performance Ski Socks (ALPINE PRO). Er is nog geen lanceringsdatum; noem geen datum en geen claims die niet in [[Feiten & Actuele Staat]] staan.
+- **Binnenkort:** Performance Tubes (voetloze kousen) en Performance Ski Socks (ALPINE PRO). De roadmap hieronder plant ze intern in 2026 en 2027, maar dat is geen harde datum: noem naar buiten toe geen datum en geen claims die niet in [[Feiten & Actuele Staat]] staan.
+
+## Roadmap (indicatief)
+
+> [!note] Richting, geen harde planning
+> Uit het Canva-document. Jaartallen kunnen schuiven; gebruik ze intern, niet in communicatie.
+
+| Jaar | Wat |
+|---|---|
+| **2026** | Performance Academy · Performance Tubes · kanaaloptimalisatie |
+| **2027** | B2B opschalen · supply chain · Performance Ski Socks · meer sportswear |
+| **2028** | Landelijk netwerk · profclubs |
+| **2029** | Uitbreiding naar de EU |
+| **2031** | Marktleider in Nederland |
+
+Wie wat doet in het team: [[Feiten & Actuele Staat]] (team).
 
 ---
 
 ## Financiële doelen (aanvullend — niet in het Canva-document)
 
 > [!warning] Niet uit het leidende document
-> Het Canva-document noemt geen omzet- of klantcijfers. Deze tabel komt uit het eerdere groeiplan en de partnership-doelen leunen erop ([[Doelen]]). Zolang Lars niets anders besluit, blijven ze staan als werkdoel; ze gaan niet boven het Canva-document.
+> De omzet-, winst- en klantcijfers in het Canva-document (bijv. op de voorbeeldslides in de gereedschapskist) kloppen niet of zijn alleen illustratie: **nooit overnemen**. Deze tabel komt uit het eerdere groeiplan en de partnership-doelen leunen erop ([[Doelen]]). Zolang Lars niets anders besluit, blijven ze staan als werkdoel; ze gaan niet boven het Canva-document.
 
 | Jaar | Omzet | Winst | B2B vaste klanten |
 |---|---|---|---|

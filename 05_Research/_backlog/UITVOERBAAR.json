@@ -1925,6 +1925,36 @@
   "wat_claude_doet": "Conceptteksten title/meta voor /en/pages/gripsokken-voor-voetbal gericht op Engelse zoekintentie (football grip socks)",
   "wat_jij_doet": "Conceptteksten controleren en in Shopify plakken en publiceren"
  },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#245f2a87": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "na goedkeuring de secties bouwen in het AI-testthema",
+  "wat_jij_doet": "het prototype beoordelen en goedkeuren, en daarna live zetten"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#5f518b48": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "ProductGroup-schema met EAN/SKU bouwen in het testthema",
+  "wat_jij_doet": "beoordelen en naar het live thema overzetten"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#67f28e42": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor de cushioning-omschrijving in de vault",
+  "wat_jij_doet": "bevestigen of aanpassen vóór het live gaat"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "specificaties van de 1.0 vastleggen in de vault (Performance Grip Socks-bestand aanvullen)",
+  "wat_jij_doet": "controleren op juistheid"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#fa6b14e8": {
+  "beoordeeld": "2026-10-20",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke packprijs 2.0 klopt (preview vs. feitenbestand) en het feitenbestand bijwerken"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
@@ -1960,6 +1990,12 @@
   "claude": "ja",
   "wat_claude_doet": "Meet INP via PageSpeed/CrUX (zodra de API aanstaat) en wijst zware scripts aan in een notitie.",
   "wat_jij_doet": "Aangewezen app of script uitzetten als dat nodig is."
+ },
+ "backlog#32925dba": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel en stappen om /blogs/intern te unpublishen of noindex te zetten",
+  "wat_jij_doet": "het artikel unpublishen of noindex toevoegen in Shopify"
  },
  "backlog#3f65e547": {
   "beoordeeld": "2026-10-15",
@@ -2002,6 +2038,12 @@
   "claude": "deels",
   "wat_claude_doet": "Leest variant-ID's, SKU's en GTIN's uit via de Shopify-connector en maakt een lijst met wat niet aan de Merchant Center-eis voldoet.",
   "wat_jij_doet": "Ontbrekende ID's in Shopify admin of Merchant Center invullen."
+ },
+ "backlog#6c4a9799": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "concept-fix voor de dubbele H1 (niveau naar H2) in de vault/testthema",
+  "wat_jij_doet": "beoordelen en in het live thema doorvoeren"
  },
  "backlog#6dd6caf8": {
   "beoordeeld": "2026-09-26",
@@ -2057,6 +2099,12 @@
   "wat_claude_doet": "Schrijft de vraagpagina's antwoord-eerst met FAQPage-schema als templates in het testthema.",
   "wat_jij_doet": "Pagina's controleren en publiceren."
  },
+ "backlog#b1876b36": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten voor beide productbeschrijvingen (padel/tennis/rugby toegevoegd, code-tag verwijderd) in de vault",
+  "wat_jij_doet": "controleren en in de Shopify-productbeschrijving plakken"
+ },
  "backlog#b34063f3": {
   "beoordeeld": "2026-09-26",
   "claude": "deels",
@@ -2080,6 +2128,12 @@
   "claude": "ja",
   "wat_claude_doet": "Nieuwe titel/meta voor /pages/ontdek-jouw-sport voorbereiden in het testthema",
   "wat_jij_doet": "Controleren en live zetten"
+ },
+ "backlog#c51a9579": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "conceptvoorstel voor titel en meta description van /pages/terugbetalingsbeleid in de vault",
+  "wat_jij_doet": "controleren en in Shopify-paginainstellingen zetten"
  },
  "backlog#cc86cc1e": {
   "beoordeeld": "2026-09-26",

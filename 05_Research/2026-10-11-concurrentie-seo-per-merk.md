@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Optigrip en Stepzz hebben geen eigen Nederlandse site meer: optigrip.nl bestaat niet, stepzz.com is geparkeerd. Tapedesign verkoopt in Nederland alleen via de technisch zwakke dealer grip2perform.nl, dus online zijn FitSockr en Proskary de echte tegenstanders. Die twee winnen op 'gripsokken voetbal' en 'gripsokken kopen' met keuzegidsen en type- en kleurpagina's, iets wat higrip.nl niet heeft. Op techniek (hreflang, schema zonder nepreviews) en op padel staat higrip.nl er beter voor."
-gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-11-seo-audit-weekdelta, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-09-21-beachhead-rugby, 2026-09-22-growth-radar-seo-content]
+gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-11-seo-audit-weekdelta, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-09-21-beachhead-rugby, 2026-09-22-growth-radar-seo-content, 2026-10-20-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

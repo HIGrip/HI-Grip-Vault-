@@ -122,10 +122,10 @@ Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bij
 - [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] — Homepage herontwerp vanaf leeg canvas (richting B Doorgaan)
 - [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
 - [[2026-10-13-growth-radar-seo-content]] — Growth Radar — SEO content & keywords, 13 oktober 2026
-- [[2026-10-12-voordelenpagina-analyse]] — Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
 - [[2026-10-12-blogs-stappenplan]] — Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs
-- [[2026-10-12-b2b-pagina-inspiratie]] — Inspiratie zakelijke pagina (HÏ Grip Zakelijk) — oktober 2026
 - [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
-- … en 10 oudere (zie [[Waar staat wat]])
+- [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
+- [[2026-10-11-concurrentie-seo-per-merk]] — SEO-concurrentievergelijking per merk — 11 oktober 2026
+- … en 8 oudere (zie [[Waar staat wat]])
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Home]]

@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Google's Universal Cart en het onderliggende AP2-betaalprotocol zijn sinds 19 mei 2026 live in de VS en breiden deze zomer uit naar de Gemini-app, maar Nederland en de rest van Europa staan nog niet op de rolluit-lijst. Voor higrip.nl verandert dit nu niets, maar het bevestigt dat de Merchant Center-feed uit backlogpunt 4 straks ook de ingang wordt voor deze agentic-checkout-laag."
-gerelateerd: [2026-09-16-growth-radar-ai-search, 2026-09-23-growth-radar-ai-search, 2026-10-14-growth-radar-ai-search]
+gerelateerd: [2026-09-16-growth-radar-ai-search, 2026-09-23-growth-radar-ai-search, 2026-10-14-growth-radar-ai-search, 2026-10-21-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

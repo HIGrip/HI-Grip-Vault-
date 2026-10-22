@@ -1577,6 +1577,30 @@
   "wat_claude_doet": "de wekelijkse EN-vertaalcontrole toevoegen aan de SEO-regressiecheck-routineprompt in de vault",
   "wat_jij_doet": "de aanpassing in de routineprompt controleren en goedkeuren"
  },
+ "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
+  "beoordeeld": "2026-10-22",
+  "claude": "ja",
+  "wat_claude_doet": "mini-plan en bestanden (CSS/Liquid-sectie/JS) voor de zakelijke pagina opstellen in het testthema",
+  "wat_jij_doet": "beoordelen en goedkeuren voor het werkthema"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#af7662dc": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen over de reactietijd die HÏ Grip op de zakelijke pagina belooft"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#f59208bb": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen: clubaanbod tonen of alleen een voorstel aanvragen"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#fadbc166": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het conceptartifact Zakelijk beoordelen op motion/layout/teksten en de open besluiten nemen"
+ },
  "2026-10-12-blogs-stappenplan#04c7ed95": {
   "beoordeeld": "2026-10-13",
   "claude": "deels",
@@ -1738,6 +1762,30 @@
   "claude": "ja",
   "wat_claude_doet": "Feitencheck per artikel met correcties als concept",
   "wat_jij_doet": "Correcties plakken en publiceren"
+ },
+ "2026-10-12-voordelenpagina-analyse#15ccd2d6": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen over 'minder kans op blaren'/'geen blaren' als voordeel-taal"
+ },
+ "2026-10-12-voordelenpagina-analyse#6b326f42": {
+  "beoordeeld": "2026-10-22",
+  "claude": "ja",
+  "wat_claude_doet": "conceptpagina voordelen bouwen in een artifact",
+  "wat_jij_doet": "beoordelen en na goedkeuring als blogsjabloon in het testthema laten zetten"
+ },
+ "2026-10-12-voordelenpagina-analyse#98dc8e73": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen: beloofde sportpagina's alleen linken als ze live staan"
+ },
+ "2026-10-12-voordelenpagina-analyse#f09f0dc2": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen: blijft het de voordelenpagina of wordt het de hoofdgids"
  },
  "2026-10-12-werkthema-vs-live#5f409a57": {
   "beoordeeld": "2026-10-12",
@@ -2068,6 +2116,12 @@
   "claude": "ja",
   "wat_claude_doet": "Controleert of higrip.nl naar de VS verzendt en meldt of het punt geblokkeerd blijft.",
   "wat_jij_doet": "Besluiten of VS-verzending gewenst is."
+ },
+ "backlog#927dc23c": {
+  "beoordeeld": "2026-10-22",
+  "claude": "deels",
+  "wat_claude_doet": "analyse van de positieval met GSC-data (zoektermen, concurrentie) en een hypothese/vervolgstap vastleggen",
+  "wat_jij_doet": "beoordelen en een eventuele contentwijziging goedkeuren en live zetten"
  },
  "backlog#a1f3e1a2": {
   "beoordeeld": "2026-10-13",

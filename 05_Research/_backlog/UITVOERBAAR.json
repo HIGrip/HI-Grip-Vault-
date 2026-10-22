@@ -1580,26 +1580,26 @@
  "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
   "beoordeeld": "2026-10-22",
   "claude": "ja",
-  "wat_claude_doet": "mini-plan en bestanden (CSS/Liquid-sectie/JS) voor de zakelijke pagina opstellen in het testthema",
-  "wat_jij_doet": "beoordelen en goedkeuren voor het werkthema"
+  "wat_claude_doet": "mini-plan (CSS, Liquid-sectie, JS) voor de zakelijke pagina opstellen in het testthema",
+  "wat_jij_doet": "beoordelen en goedkeuren vóór verdere bouw"
  },
  "2026-10-12-b2b-pagina-inspiratie#af7662dc": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het besluit nemen over de reactietijd die HÏ Grip op de zakelijke pagina belooft"
+  "wat_jij_doet": "beslissen welke reactietijd beloofd wordt"
  },
  "2026-10-12-b2b-pagina-inspiratie#f59208bb": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het besluit nemen: clubaanbod tonen of alleen een voorstel aanvragen"
+  "wat_jij_doet": "beslissen of een clubaanbod getoond wordt"
  },
  "2026-10-12-b2b-pagina-inspiratie#fadbc166": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het conceptartifact Zakelijk beoordelen op motion/layout/teksten en de open besluiten nemen"
+  "wat_jij_doet": "het artifact beoordelen op motion/layout/teksten en de besluiten nemen"
  },
  "2026-10-12-blogs-stappenplan#04c7ed95": {
   "beoordeeld": "2026-10-13",
@@ -1767,25 +1767,25 @@
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het besluit nemen over 'minder kans op blaren'/'geen blaren' als voordeel-taal"
+  "wat_jij_doet": "beslissen welke voordeel-taal blijft staan"
  },
  "2026-10-12-voordelenpagina-analyse#6b326f42": {
   "beoordeeld": "2026-10-22",
   "claude": "ja",
   "wat_claude_doet": "conceptpagina voordelen bouwen in een artifact",
-  "wat_jij_doet": "beoordelen en na goedkeuring als blogsjabloon in het testthema laten zetten"
+  "wat_jij_doet": "beoordelen en na goedkeuring laten overzetten als blogsjabloon in het testthema"
  },
  "2026-10-12-voordelenpagina-analyse#98dc8e73": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het besluit nemen: beloofde sportpagina's alleen linken als ze live staan"
+  "wat_jij_doet": "beslissen welke sportpagina's gelinkt worden"
  },
  "2026-10-12-voordelenpagina-analyse#f09f0dc2": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
   "wat_claude_doet": "niets",
-  "wat_jij_doet": "het besluit nemen: blijft het de voordelenpagina of wordt het de hoofdgids"
+  "wat_jij_doet": "beslissen welke URL/pagina dit wordt"
  },
  "2026-10-12-werkthema-vs-live#5f409a57": {
   "beoordeeld": "2026-10-12",
@@ -2003,6 +2003,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "beslissen welke packprijs 2.0 klopt (preview vs. feitenbestand) en het feitenbestand bijwerken"
  },
+ "2026-10-21-search-console#0c7289f9": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets (dubbel van backlog#927dc23c)",
+  "wat_jij_doet": "zie backlog#927dc23c"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
@@ -2120,8 +2126,8 @@
  "backlog#927dc23c": {
   "beoordeeld": "2026-10-22",
   "claude": "deels",
-  "wat_claude_doet": "analyse van de positieval met GSC-data (zoektermen, concurrentie) en een hypothese/vervolgstap vastleggen",
-  "wat_jij_doet": "beoordelen en een eventuele contentwijziging goedkeuren en live zetten"
+  "wat_claude_doet": "onderzoek naar interne links, sportkiezer en title/H1-wijzigingen rond de pagina, vastgelegd als concept-analyse in de vault",
+  "wat_jij_doet": "beoordelen en eventueel een technische fix laten doorvoeren in het live thema"
  },
  "backlog#a1f3e1a2": {
   "beoordeeld": "2026-10-13",

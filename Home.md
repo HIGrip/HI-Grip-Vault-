@@ -39,7 +39,7 @@
 
 **Agent-systeem**
 - [[CLAUDE]] — gedeelde instructies voor elke Claude in deze vault
-- [[04_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
+- [[01_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
 - [[user]] — gedeeld: wie de founders (Lars, Timo, Tigo) en HÏ Grip zijn
@@ -69,7 +69,7 @@
 | **Wekelijkse routine** | Denzel-weekoverzicht (maandag) | claude.ai cloud-routine — zie [[Denzel Weekoverzicht — Routine]] |
 | **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `05_Research/` in deze vault — [[Waar staat wat]] |
 | **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (claude.ai, org-intern) |
-| **Routines** | Actiecontrole, Growth Radar, regressiecheck, Search Console, Denzel en meer — notities + `ACTIEBACKLOG.md` | cloudroutines op info@; prompts, tijden en status in [[04_Agent_Infrastructuur/Routines/README\|Routines]]; output in `05_Research/` |
+| **Routines** | Actiecontrole, Growth Radar, regressiecheck, Search Console, Denzel en meer — notities + `ACTIEBACKLOG.md` | cloudroutines op info@; prompts, tijden en status in [[01_Agent_Infrastructuur/Routines/README\|Routines]]; output in `05_Research/` |
 | **Projecten (code)** | padel-landing, redesign, skisokken | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` |
 | **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |
 

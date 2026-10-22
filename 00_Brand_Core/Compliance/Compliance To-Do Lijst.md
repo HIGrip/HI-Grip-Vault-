@@ -111,13 +111,13 @@ bijgewerkt: 2026-10-01
 
 **Wat:** verkoop je aan consumenten in een ander land, dan geldt daar een eigen registratieplicht. De Nederlandse 50.000 kg-drempel geldt daar níét. Stand 2026-09-14.
 
-| Land | Verpakking | Textiel (sokken) | Gemachtigde nodig? | TikTok Pay On Behalf (POB) |
-|---|---|---|---|---|
-| **België** | Fost Plus / Valipac. Drempel **300 kg/jaar**; daaronder alleen informatieplicht richting de IVC. | nog geen EPR | nee | n.v.t. |
-| **Duitsland** | **LUCID** (gratis) + contract met een **duaal systeem**. **Geen drempel.** | nog geen EPR | nee | **Niet beschikbaar** — zonder eigen LUCID-nummer geen verkoop |
-| **Frankrijk** | Eco-organisme **Citeo** (of Léko/Adelphe) → ADEME geeft een **IDU** per stroom. | **Refashion** → aparte IDU. Wél EPR. | **Ja** — Franse gemachtigde verplicht sinds juli 2026 (te verifiëren of dit ook voor EU-bedrijven geldt) | Ja: verpakking + textiel |
-| **Spanje** | Registratie in het **RPP** + aansluiting bij **Ecoembes**. Geen drempel. Spaans NIF nodig. | nog geen EPR (decreet in voorbereiding) | **Ja** — RD 1055/2022 art. 17.2 | Ja: alleen verpakking |
-| **Italië** | Direct lid worden van **CONAI**. | nog geen EPR (decreet in concept) | nee, niet voor verpakking | Alleen batterijen — **verpakking niet gedekt** |
+| Land          | Verpakking                                                                                       | Textiel (sokken)                        | Gemachtigde nodig?                                                                                       | TikTok Pay On Behalf (POB)                                    |
+| ------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **België**    | Fost Plus / Valipac. Drempel **300 kg/jaar**; daaronder alleen informatieplicht richting de IVC. | nog geen EPR                            | nee                                                                                                      | n.v.t.                                                        |
+| **Duitsland** | **LUCID** (gratis) + contract met een **duaal systeem**. **Geen drempel.**                       | nog geen EPR                            | nee                                                                                                      | **Niet beschikbaar** — zonder eigen LUCID-nummer geen verkoop |
+| **Frankrijk** | Eco-organisme **Citeo** (of Léko/Adelphe) → ADEME geeft een **IDU** per stroom.                  | **Refashion** → aparte IDU. Wél EPR.    | **Ja** — Franse gemachtigde verplicht sinds juli 2026 (te verifiëren of dit ook voor EU-bedrijven geldt) | Ja: verpakking + textiel                                      |
+| **Spanje**    | Registratie in het **RPP** + aansluiting bij **Ecoembes**. Geen drempel. Spaans NIF nodig.       | nog geen EPR (decreet in voorbereiding) | **Ja** — RD 1055/2022 art. 17.2                                                                          | Ja: alleen verpakking                                         |
+| **Italië**    | Direct lid worden van **CONAI**.                                                                 | nog geen EPR (decreet in concept)       | nee, niet voor verpakking                                                                                | Alleen batterijen — **verpakking niet gedekt**                |
 
 **TikTok POB-tarieven (2025):** Frankrijk verpakking 0,49% en Spanje verpakking 0,89% van het orderbedrag. Het textieltarief voor Frankrijk staat in het POB-beleid in Seller Center. POB geldt alleen voor verkopen via TikTok, niet voor de eigen webshop.
 

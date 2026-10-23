@@ -1,0 +1,56 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 10 · Zakelijk: kop met intro, een sample-ticket als hoofdknop en drie kaarten (blokken) met een hard
+  feit op het beeld. Mobiel: fotoraster (personalisatie breed bovenaan). De cijfers tellen op bij binnenkomst.
+  @example
+  <!-- Homepage > HÏ 10 · Zakelijk -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-10" data-hp="10" aria-labelledby="hp-10-h2-{{ section.id }}"{% unless s.count %} data-counting="off"{% endunless %}>
+  <div class="hp-container hp-10-inner">
+    <header class="hp-10-head">
+      {%- if s.heading != blank -%}<{{ tag }} class="hp-10-h2" id="hp-10-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="hp-10-lead">{{ s.lead }}</p>{%- endif -%}
+    </header>
+
+    {%- if s.show_ticket -%}
+      <a class="hp-10-ticket" href="{{ s.ticket_link }}">
+        <span class="hp-10-ticket__top">
+          <span class="hp-10-ticket__big">{{ s.ticket_big }}</span>
+          <span class="hp-10-ticket__sub">{{ s.ticket_sub }}</span>
+        </span>
+        <span class="hp-pill hp-10-ticket__cta">{{ s.ticket_cta }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span>
+      </a>
+    {%- endif -%}
+
+    <ul class="hp-10-cards">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+          assign i = forloop.index0
+          assign num = b.stat_v | plus: 0
+        -%}
+        <li class="hp-10-item" {{ block.shopify_attributes }}>
+          <a class="hp-10-card" href="{{ b.link }}" aria-labelledby="hp-10-t-{{ i }}-{{ section.id }}" aria-describedby="hp-10-d-{{ i }}-{{ section.id }}">
+            <span class="hp-10-media{% if b.img_style != 'cover' %} hp-10-media--light{% endif %}">
+              {%- if b.img_style == 'contain' -%}{%- assign ic = 'hp-10-img hp-10-img--contain' -%}{%- elsif b.img_style == 'sheet' -%}{%- assign ic = 'hp-10-img hp-10-img--sheet' -%}{%- else -%}{%- assign ic = 'hp-10-img' -%}{%- endif -%}
+              {%- render 'hp-img', image: b.image, class: ic, sizes: '(min-width: 900px) 30vw, 92vw', widths: '450,800,1000', alt: b.alt -%}
+              {%- if b.stat_v != blank -%}<span class="hp-10-stat"><span class="hp-10-stat__k">{{ b.stat_k }}</span><span class="hp-10-stat__v"{% if b.stat_count and num > 0 %} data-count="{{ num }}"{% endif %}>{{ b.stat_v }}</span></span>{%- endif -%}
+            </span>
+            <span class="hp-10-body">
+              <h3 class="hp-10-title" id="hp-10-t-{{ i }}-{{ section.id }}">{{ b.title }}</h3>
+              <span class="hp-10-text" id="hp-10-d-{{ i }}-{{ section.id }}">{{ b.text }}</span>
+              <span class="hp-10-cue"><span>{{ b.cue }}</span><span class="hp-10-chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span>
+            </span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

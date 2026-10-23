@@ -1,0 +1,61 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 01 · Hero: schermvullende foto met eigen kopbalk (logo, menu), kop, subregel, definitiezin en knop.
+  Motion: kop schuift in, foto ademt en zoomt bij scrollen (hp-home.js, sectie 01). Alles is instelbaar in de editor.
+  @example
+  <!-- Homepage > HÏ 01 · Hero -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h1'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+{%- if s.hide_theme_header -%}
+  <style>#header-group { display: none; }</style>
+{%- endif -%}
+<section class="hp-section hp-section--flush hp-01" data-hp="01" aria-labelledby="hp-01-h1-{{ section.id }}"{% unless s.anim_breathe %} data-hp-01-breathe="off"{% endunless %}{% unless s.anim_zoom %} data-hp-01-zoom="off"{% endunless %}>
+  {%- if s.show_bar -%}
+  <header class="hp-container hp-01-bar">
+    <a class="hp-01-logo" href="{{ s.logo_link | default: routes.root_url }}" aria-label="{{ s.logo_label | escape }}">
+      {%- if s.logo_image != blank -%}
+        {%- render 'hp-img', image: s.logo_image, class: 'hp-01-logo__img', sizes: '200px', widths: '200,400', alt: s.logo_text, loading: 'eager' -%}
+      {%- else -%}
+        {{- s.logo_text -}}
+      {%- endif -%}
+    </a>
+    <nav class="hp-01-nav" id="hp-01-nav-{{ section.id }}" aria-label="{{ s.nav_label | escape }}">
+      {%- for block in section.blocks -%}
+        <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+      {%- endfor -%}
+    </nav>
+    <button class="hp-01-menu" type="button" aria-expanded="false" aria-controls="hp-01-nav-{{ section.id }}" data-label-open="{{ s.menu_open | escape }}" data-label-close="{{ s.menu_close | escape }}">
+      <span class="hp-01-menu__label">{{ s.menu_open }}</span>
+      <span class="hp-01-menu__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+  {%- endif -%}
+
+  <div class="hp-01-media" data-hp-01-media>
+    {%- if s.image_mobile != blank -%}
+      <picture>
+        <source media="(max-width: 768px)" srcset="{{ s.image_mobile | image_url: width: 900 }} 900w, {{ s.image_mobile | image_url: width: 1400 }} 1400w" sizes="100vw">
+        {%- render 'hp-img', image: s.image, class: 'hp-01-media__el', sizes: '100vw', alt: s.image_alt, priority: true -%}
+      </picture>
+    {%- else -%}
+      {%- render 'hp-img', image: s.image, class: 'hp-01-media__el', sizes: '100vw', alt: s.image_alt, priority: true -%}
+    {%- endif -%}
+  </div>
+
+  <div class="hp-container hp-01-stage">
+    <div class="hp-01-copy">
+      {%- if s.heading != blank -%}<{{ tag }} class="hp-01-h1" id="hp-01-h1-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.sub != blank -%}<p class="hp-01-sub">{{ s.sub }}</p>{%- endif -%}
+      {%- if s.def != blank -%}<p class="hp-01-def">{{ s.def }}</p>{%- endif -%}
+      {%- if s.cta_label != blank -%}
+        <a class="hp-pill hp-pill--light hp-01-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

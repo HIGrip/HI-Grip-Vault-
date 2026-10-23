@@ -1,0 +1,5 @@
+[
+ {"name":"09 logohoogte laptop (berekend)","sec":"09","vp":[1440,900],"ov":{"hp_09":{"logo_h_d":120}},"computed":{"sel":".hp-09 img","prop":"height"}},
+ {"name":"09 logohoogte laptop (beeld)","sec":"09","vp":[1440,900],"ov":{"hp_09":{"logo_h_d":120}}},
+ {"name":"09 grijs uit","sec":"09","vp":[1440,900],"ov":{"hp_09":{"gray":false}},"computed":{"sel":".hp-09 img","prop":"filter"}}
+]

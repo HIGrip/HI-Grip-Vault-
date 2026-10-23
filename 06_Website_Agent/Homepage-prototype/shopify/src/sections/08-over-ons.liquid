@@ -1,0 +1,36 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 08 · Over ons: links een paneel met looptekst die tussen drie letterstaten verspringt, rechts (of links)
+  de teamfoto rand-tot-rand met een brede knop die de cursor volgt. Scroll: de foto opent vanaf de splitnaad.
+  @example
+  <!-- Homepage > HÏ 08 · Over ons -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign lines = s.lines | newline_to_br | split: '<br />'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-section--flush hp-08{% if s.photo_side == 'left' %} hp-08--photo-left{% endif %}" data-hp="08" aria-labelledby="hp-08-h2-{{ section.id }}" data-period="{{ s.period }}" data-stagger="{{ s.stagger }}"{% unless s.cycle %} data-cycle="off"{% endunless %}{% unless s.follow %} data-follow="off"{% endunless %}{% unless s.reveal %} data-reveal="off"{% endunless %}>
+  <div class="hp-08-split">
+    <div class="hp-08-panel">
+      <{{ tag }} class="hp-08-loop" id="hp-08-h2-{{ section.id }}">
+        {%- if s.sr_prefix != blank -%}<span class="hp-sr">{{ s.sr_prefix }} </span>{%- endif -%}
+        <span class="hp-08-lines">
+          {%- for l in lines -%}{%- assign t = l | strip -%}{%- if t != blank -%}<span class="hp-08-line" data-s="2">{{ t }}</span>{%- endif -%}{%- endfor -%}
+        </span>
+      </{{ tag }}>
+    </div>
+    <figure class="hp-08-media">
+      {%- render 'hp-img', image: s.image, class: 'hp-08-media__img', sizes: '(min-width: 769px) 92vw, 100vw', widths: '600,1200,1600,2000', alt: s.alt -%}
+      {%- if s.cta_label != blank -%}
+        <a class="hp-pill hp-pill--light hp-08-cta" href="{{ s.cta_link }}">
+          <span class="hp-pill__chev hp-08-cta__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span class="hp-08-cta__label"><span class="hp-08-cta__word">{{ s.cta_label }}</span><span class="hp-08-cta__word" aria-hidden="true">{{ s.cta_label }}</span></span>
+        </a>
+      {%- endif -%}
+    </figure>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

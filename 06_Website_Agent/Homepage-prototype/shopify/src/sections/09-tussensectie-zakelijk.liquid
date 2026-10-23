@@ -1,0 +1,47 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 09 · Logoband: kop en een lopende band met logo's (blokken). Logo's staan grijs en krijgen kleur in het
+  midden van de band, bij hover of tik. Per logo: schaal, verhouding, uitsnede en afronding (optisch gelijk).
+  @example
+  <!-- Homepage > HÏ 09 · Logoband -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-09" data-hp="09" aria-labelledby="hp-09-h2-{{ section.id }}" data-speed="{{ s.speed }}"{% unless s.loop %} data-loop="off"{% endunless %}>
+  <div class="hp-container hp-09-inner">
+    {%- if s.heading != blank -%}<{{ tag }} class="hp-09-h2" id="hp-09-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+
+    <div class="hp-09-viewport" data-hp-09-viewport>
+      <ul class="hp-09-track" data-hp-09-track>
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign b = block.settings
+            assign k = b.scale | divided_by: 100.0
+            capture st
+              echo '--hp-09-k: ' | append: k | append: '; --hp-09-ar: ' | append: b.ratio | append: ';'
+              if b.radius > 0
+                echo ' border-radius: ' | append: b.radius | append: '%;'
+              endif
+            endcapture
+            assign crop = ''
+            if b.crop_w != 100 or b.crop_h != 100 or b.crop_x != 0 or b.crop_y != 0
+              capture crop
+                echo 'left: ' | append: b.crop_x | append: '%; top: ' | append: b.crop_y | append: '%; width: ' | append: b.crop_w | append: '%; height: ' | append: b.crop_h | append: '%;'
+              endcapture
+            endif
+          -%}
+          <li class="hp-09-item" {{ block.shopify_attributes }}>
+            {%- if b.link != blank -%}<a class="hp-09-logo" href="{{ b.link }}" style="{{ st }}">{%- else -%}<span class="hp-09-logo" style="{{ st }}">{%- endif -%}
+              {%- render 'hp-img', image: b.image, sizes: '200px', widths: '150,300,600', alt: b.alt, style: crop -%}
+            {%- if b.link != blank -%}</a>{%- else -%}</span>{%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

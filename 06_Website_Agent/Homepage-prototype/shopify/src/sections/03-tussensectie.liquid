@@ -1,0 +1,35 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 03 · Bewijsbalk: een lopende strook met cijfers (blok "Cijfer") en regels (blok "Regel"), met een
+  scheidingsstreep na elk item. Motion: loopt continu, versnelt en kantelt bij scrollen, pauzeert bij hover/tik;
+  cijfers met "optellen" tellen op bij binnenkomst.
+  @example
+  <!-- Homepage > HÏ 03 · Bewijsbalk -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-03" data-hp="03" aria-label="{{ s.label | escape }}" data-speed="{{ s.speed }}" data-skew="{{ s.skew }}">
+  <div class="hp-03-row hp-03-row--a" data-dir="{{ s.dir }}">
+    <div class="hp-03-track">
+      {%- for copy in (1..3) -%}
+        <ul class="hp-03-set"{% if copy > 1 %} aria-hidden="true"{% endif %}>
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            {%- if block.type == 'stat' -%}
+              <li class="hp-03-item hp-03-stat"{% if copy == 1 %} {{ block.shopify_attributes }}{% endif %}><span class="hp-03-big{% if b.count %} hp-03-count{% endif %}">{%- if b.star -%}<span class="hp-03-star"{% if copy == 1 %} aria-hidden="true"{% endif %}>★</span>{%- endif -%}{{ b.big }}</span>
+                {%- if b.link != blank -%}<a class="hp-03-small hp-03-link" href="{{ b.link }}"{% if b.new_tab %} target="_blank" rel="noopener"{% endif %}{% if copy > 1 %} tabindex="-1"{% endif %}>{{ b.small }}</a>
+                {%- else -%}<span class="hp-03-small">{{ b.small }}</span>{%- endif -%}</li>
+            {%- else -%}
+              <li class="hp-03-item hp-03-line"{% if copy == 1 %} {{ block.shopify_attributes }}{% endif %}>{{ b.text }}</li>
+            {%- endif -%}
+            <li class="hp-03-sep"{% if copy == 1 %} aria-hidden="true"{% endif %}>/</li>
+          {%- endfor -%}
+        </ul>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

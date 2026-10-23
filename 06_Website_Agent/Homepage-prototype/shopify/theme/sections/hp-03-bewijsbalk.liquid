@@ -1,0 +1,296 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 03 · Bewijsbalk: een lopende strook met cijfers (blok "Cijfer") en regels (blok "Regel"), met een
+  scheidingsstreep na elk item. Motion: loopt continu, versnelt en kantelt bij scrollen, pauzeert bij hover/tik;
+  cijfers met "optellen" tellen op bij binnenkomst.
+  @example
+  <!-- Homepage > HÏ 03 · Bewijsbalk -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-03-item_c: {{ s.item_c }}; --hp-03-sep_c: {{ s.sep_c }}; --hp-03-sep-o: calc({{ s.sep_o }} / 100); --hp-03-sep-gap: {{ s.sep_gap }}px; --hp-03-bg: {{ s.bg }}; --hp-03-fg: {{ s.fg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-03-k: {{ s.item_m | times: 1.0 | divided_by: 18 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 16 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 16 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-03-k: {{ s.item_d | times: 1.0 | divided_by: 24 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 18 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 18 }}; --hp-pb-add: 0px;} }
+</style>
+<section class="hp-section hp-03" data-hp="03" aria-label="{{ s.label | escape }}" data-speed="{{ s.speed }}" data-skew="{{ s.skew }}">
+  <div class="hp-03-row hp-03-row--a" data-dir="{{ s.dir }}">
+    <div class="hp-03-track">
+      {%- for copy in (1..3) -%}
+        <ul class="hp-03-set"{% if copy > 1 %} aria-hidden="true"{% endif %}>
+          {%- for block in section.blocks -%}
+            {%- assign b = block.settings -%}
+            {%- if block.type == 'stat' -%}
+              <li class="hp-03-item hp-03-stat"{% if copy == 1 %} {{ block.shopify_attributes }}{% endif %}><span class="hp-03-big{% if b.count %} hp-03-count{% endif %}">{%- if b.star -%}<span class="hp-03-star"{% if copy == 1 %} aria-hidden="true"{% endif %}>★</span>{%- endif -%}{{ b.big }}</span>
+                {%- if b.link != blank -%}<a class="hp-03-small hp-03-link" href="{{ b.link }}"{% if b.new_tab %} target="_blank" rel="noopener"{% endif %}{% if copy > 1 %} tabindex="-1"{% endif %}>{{ b.small }}</a>
+                {%- else -%}<span class="hp-03-small">{{ b.small }}</span>{%- endif -%}</li>
+            {%- else -%}
+              <li class="hp-03-item hp-03-line"{% if copy == 1 %} {{ block.shopify_attributes }}{% endif %}>{{ b.text }}</li>
+            {%- endif -%}
+            <li class="hp-03-sep"{% if copy == 1 %} aria-hidden="true"{% endif %}>/</li>
+          {%- endfor -%}
+        </ul>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 03 · Bewijsbalk",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Strook"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Toegankelijke naam",
+      "default": "Waarom sporters voor HÏ Grip kiezen"
+    },
+    {
+      "type": "paragraph",
+      "content": "Voeg cijfers en regels toe als blokken; na elk item komt automatisch een scheidingsstreep."
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Snelheid (px per seconde)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "dir",
+      "label": "Looprichting",
+      "options": [
+        {
+          "value": "-1",
+          "label": "Naar links"
+        },
+        {
+          "value": "1",
+          "label": "Naar rechts"
+        }
+      ],
+      "default": "-1"
+    },
+    {
+      "type": "range",
+      "id": "skew",
+      "label": "Kanteling bij snel scrollen",
+      "min": 0,
+      "max": 30,
+      "step": 1,
+      "default": 9,
+      "unit": "°"
+    },
+    {
+      "type": "range",
+      "id": "item_m",
+      "label": "Tekstgrootte (mobiel)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "item_d",
+      "label": "Tekstgrootte (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "item_c",
+      "label": "Tekstkleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "sep_c",
+      "label": "Scheidingsstreep: kleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "sep_o",
+      "label": "Scheidingsstreep: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "sep_gap",
+      "label": "Ruimte rond de streep",
+      "min": 4,
+      "max": 80,
+      "step": 1,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Cijfer",
+      "settings": [
+        {
+          "type": "text",
+          "id": "big",
+          "label": "Cijfer",
+          "default": "3500+"
+        },
+        {
+          "type": "checkbox",
+          "id": "count",
+          "label": "Optellen bij binnenkomst",
+          "default": false,
+          "info": "Alleen voor een getal aan het begin, bijv. 3500+."
+        },
+        {
+          "type": "checkbox",
+          "id": "star",
+          "label": "Ster ervoor (★)",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "small",
+          "label": "Tekst ernaast",
+          "default": "sporters gingen je voor"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (optioneel)"
+        },
+        {
+          "type": "checkbox",
+          "id": "new_tab",
+          "label": "Link in nieuw tabblad",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "line",
+      "name": "Regel",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Tekst",
+          "default": "Binnen 1 werkdag verzonden"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "HÏ 03 · Bewijsbalk",
+      "blocks": [
+        {
+          "type": "stat",
+          "settings": {
+            "big": "3500+",
+            "count": true,
+            "star": false,
+            "small": "sporters gingen je voor",
+            "new_tab": true
+          }
+        },
+        {
+          "type": "stat",
+          "settings": {
+            "big": "4,6",
+            "count": false,
+            "star": true,
+            "small": "op Trustpilot",
+            "link": "https://nl.trustpilot.com/review/higrip.nl",
+            "new_tab": true
+          }
+        },
+        {
+          "type": "line",
+          "settings": {
+            "text": "Binnen 1 werkdag verzonden"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

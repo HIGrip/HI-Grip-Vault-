@@ -1,0 +1,67 @@
+/* 01 HERO · de foto is de hele sectie: rand-tot-rand, schermhoog, zonder witte rand (Lars 19-10).
+   Kopbalk en tekst liggen op de foto; scrims boven en onder houden ze leesbaar. */
+.hp-01 { position: relative; overflow: hidden; isolation: isolate; height: 100svh; min-height: 560px; max-height: 1100px; background: var(--hi-near-black); color: var(--hi-white); }
+
+/* kopbalk op de foto */
+.hp-01-bar { position: absolute; z-index: 3; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: var(--hp-space-sm); min-height: 64px; color: var(--hi-white); }
+.hp-01-logo { font: italic 900 22px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; text-decoration: none; }
+.hp-01-nav { display: none; }
+.hp-01-nav a { font: 600 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; text-decoration: none; padding-block: var(--hp-space-xs); background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat; transition: background-size var(--hp-dur-1) var(--hp-ease); }
+.hp-01-menu { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; font: 600 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+.hp-01-menu__icon { position: relative; width: 22px; height: 10px; border-block: 2px solid currentColor; transition: transform var(--hp-dur-1) var(--hp-ease); }
+.hp-01-menu[aria-expanded="true"] .hp-01-menu__icon { transform: scaleY(0.4); }
+
+/* mobiel menu: wit paneel onder de balk, over de foto */
+.hp-01-bar.is-open .hp-01-nav { display: grid; position: absolute; top: 100%; left: var(--hp-space-gutter); right: var(--hp-space-gutter-r); gap: 0; padding: var(--hp-space-xs) var(--hp-space-ms); border-radius: var(--hp-radius-media); background: var(--hi-white); color: var(--hi-black); box-shadow: 0 18px 40px var(--hi-line); }
+.hp-01-bar.is-open .hp-01-nav a { padding-block: var(--hp-space-sm); border-bottom: 1px solid var(--hi-line); font-size: 15px; }
+.hp-01-bar.is-open .hp-01-nav a:last-child { border-bottom: 0; }
+
+/* foto vult de sectie */
+.hp-01-media { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hp-01-media__el { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 50%; transform: scale(calc(var(--hp-01-base, 1.14) * var(--hp-01-zoom, 1))); transform-origin: 52% 100%; will-change: transform; }
+.hp-01-media::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to bottom, var(--hi-scrim) 0%, transparent 18%, transparent 48%, var(--hi-scrim-strong) 100%); }
+
+/* tekst onderaan, binnen de gutter */
+.hp-01-stage { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; padding-bottom: var(--hp-space-md); }
+.hp-01-copy { display: grid; gap: var(--hp-space-sm); justify-items: start; }
+.hp-01-h1 { font-weight: 900; font-style: italic; font-size: clamp(36px, 10.5vw, 96px); line-height: 0.92; max-width: 13ch; padding-right: 0.06em; }
+.hp-01-sub { font-size: 15px; line-height: 1.45; max-width: 34ch; }
+.hp-01-cta { margin-top: var(--hp-space-xs); }
+
+@media (hover: hover) {
+  .hp-01-nav a:hover { background-size: 100% 1.5px; }
+}
+
+@media (min-width: 769px) {
+  .hp-01 { min-height: 640px; }
+  .hp-01-bar { min-height: 88px; }
+  .hp-01-logo { font-size: 26px; }
+  .hp-01-nav { display: flex; gap: var(--hp-space-md); }
+  .hp-01-menu { display: none; }
+  .hp-01-media__el { object-position: 50% 42%; --hp-01-base: 1; transform-origin: 52% 55%; }
+  .hp-01-stage { padding-bottom: var(--hp-space-lg); }
+  .hp-01-copy { grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-01-h1 { grid-column: 1; font-size: clamp(52px, 5.2vw, 96px); max-width: 12ch; }
+  .hp-01-sub { grid-column: 1; font-size: var(--hp-type-lead); }
+  .hp-01-cta { grid-column: 2; grid-row: 1 / span 2; align-self: end; margin-top: 0; }
+}
+
+/* 1.2 motion (Lars 19-10: meer motion en spectakel)
+   1. de kop schuift bij het laden uit een masker omhoog, subregel en pill volgen
+   2. de foto ademt langzaam (Ken Burns via de losse scale-eigenschap, los van de scroll-zoom) */
+.hp-motion .hp-01-media__el { animation: hp-01-breathe calc(var(--hp-dur-3) * 14) var(--hp-ease) infinite alternate; }
+.hp-motion .hp-01-h1 { animation: hp-01-rise var(--hp-dur-3) var(--hp-ease) both; }
+.hp-motion .hp-01-sub { animation: hp-01-rise var(--hp-dur-3) var(--hp-ease) both; animation-delay: var(--hp-dur-1); }
+.hp-motion .hp-01-cta { animation: hp-01-rise var(--hp-dur-3) var(--hp-ease) both; animation-delay: calc(var(--hp-dur-1) * 2); }
+@keyframes hp-01-breathe { from { scale: 1; } to { scale: 1.06; } }
+@keyframes hp-01-rise { from { clip-path: inset(0 0 100% 0); transform: translateY(28px); } to { clip-path: inset(0 0 0 0); transform: none; } }
+
+/* 1.18 (snelheid) · de foto heeft een eigen laag; uit beeld staat de ademende zoom stil. */
+.hp-01-media__el { will-change: transform; }
+.hp-01 .is-still .hp-01-media__el { animation-play-state: paused; }
+
+/* 1.21 (SEO/GEO-check 20-10) · definitiezin onder de subregel: wat HÏ Grip is, in één zin die zoekmachines en
+   AI-systemen kunnen citeren. Klein en rustig, zodat de kop het beeld blijft dragen. */
+.hp-01-def { max-width: 44ch; margin-top: calc(-1 * var(--hp-space-xs)); font-size: 13px; line-height: 1.45; color: var(--hi-white); opacity: 0.72; }
+@media (min-width: 769px) { .hp-01-def { font-size: 14px; } }
+

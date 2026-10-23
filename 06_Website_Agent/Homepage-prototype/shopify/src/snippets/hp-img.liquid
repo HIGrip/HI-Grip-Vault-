@@ -1,0 +1,36 @@
+{%- comment -%}
+  Responsieve <img> voor de HÏ-homepagesecties.
+  @param image      afbeelding (image_picker)
+  @param class      klasse(n) van de img
+  @param sizes      sizes-attribuut
+  @param widths     kommalijst met breedtes voor srcset (standaard 360 … 2400; alleen breedtes ≤ origineel)
+  @param alt        alt-tekst; leeg = alt van het bestand
+  @param decorative true = alt="" (decoratief)
+  @param loading    lazy (standaard) of eager
+  @param priority   true = fetchpriority="high" en eager
+  @param style      inline style
+  @param attrs      extra attributen (ruwe tekst)
+{%- endcomment -%}
+{%- if image != blank -%}
+  {%- liquid
+    assign ws = widths | default: '360,540,720,900,1080,1200,1500,1800,2000,2400'
+    assign ws = ws | split: ','
+    assign iw = image.width
+    assign set = ''
+    for w in ws
+      assign wn = w | plus: 0
+      if wn < iw
+        assign u = image | image_url: width: wn
+        assign set = set | append: u | append: ' ' | append: wn | append: 'w, '
+      endif
+    endfor
+    assign u = image | image_url: width: iw
+    assign set = set | append: u | append: ' ' | append: iw | append: 'w'
+    if decorative
+      assign a = ''
+    else
+      assign a = alt | default: image.alt
+    endif
+  -%}
+  <img class="{{ class }}" src="{{ image | image_url: width: iw }}" srcset="{{ set }}"{% if sizes != blank %} sizes="{{ sizes }}"{% endif %} width="{{ image.width }}" height="{{ image.height }}" alt="{{ a | escape }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading | default: 'lazy' }}"{% endif %} decoding="async"{% if style != blank %} style="{{ style }}"{% endif %}{% if attrs != blank %} {{ attrs }}{% endif %}>
+{%- endif -%}

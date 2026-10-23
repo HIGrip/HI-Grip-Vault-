@@ -1,0 +1,82 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 13 · Footer: merkregel en slogan, linkkolommen (blokken, links als "Tekst | /link" per regel of een
+  menu), een brede kolom met socials en contact, een onderregel met juridische links en betaalmethoden, en het
+  woordmerk rand tot rand. Kan de standaard themafooter op deze pagina verbergen.
+  @example
+  <!-- Homepage > HÏ 13 · Footer -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+{%- if s.hide_theme_footer -%}
+  <style>.page-wrapper > footer { display: none; }</style>
+{%- endif -%}
+<section class="hp-section hp-13" data-hp="13">
+  <footer class="hp-container hp-13-inner">
+    <div class="hp-13-intro">
+      {%- if s.line != blank -%}<p class="hp-13-line">{{ s.line }}</p>{%- endif -%}
+      {%- if s.slogan != blank -%}<p class="hp-13-slogan">{{ s.slogan }}</p>{%- endif -%}
+    </div>
+
+    <div class="hp-13-grid">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        {%- capture tid -%}hp-13-t-{{ block.id }}{%- endcapture -%}
+        {%- if block.type == 'column' -%}
+          <nav class="hp-13-col" aria-labelledby="{{ tid }}" {{ block.shopify_attributes }}>
+            <p class="hp-13-title" id="{{ tid }}">{{ b.title }}</p>
+            <ul class="hp-13-list">
+              {%- if b.menu != blank -%}
+                {%- for l in b.menu.links -%}<li><a class="hp-13-link" href="{{ l.url }}">{{ l.title }}</a></li>{%- endfor -%}
+              {%- else -%}
+                {%- assign rows = b.links | newline_to_br | split: '<br />' -%}
+                {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+              {%- endif -%}
+            </ul>
+          </nav>
+        {%- else -%}
+          <div class="hp-13-col hp-13-col--wide" {{ block.shopify_attributes }}>
+            <p class="hp-13-title" id="{{ tid }}">{{ b.title }}</p>
+            <ul class="hp-13-list hp-13-list--row">
+              {%- assign rows = b.links | newline_to_br | split: '<br />' -%}
+              {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+            </ul>
+            <address class="hp-13-contact">
+              {%- if b.email != blank -%}<p class="hp-13-contact__val">{{ b.email }}</p>{%- endif -%}
+              {%- if b.phone != blank -%}<p class="hp-13-contact__val">{{ b.phone }}</p>{%- endif -%}
+              {%- if b.kvk != blank or b.btw != blank -%}
+                <dl class="hp-13-meta">
+                  {%- if b.kvk != blank -%}<div class="hp-13-meta__row"><dt>{{ b.kvk_label }}</dt><dd>{{ b.kvk }}</dd></div>{%- endif -%}
+                  {%- if b.btw != blank -%}<div class="hp-13-meta__row"><dt>{{ b.btw_label }}</dt><dd>{{ b.btw }}</dd></div>{%- endif -%}
+                </dl>
+              {%- endif -%}
+            </address>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="hp-13-base">
+      <p class="hp-13-copy">{{ s.copyright }}</p>
+      <ul class="hp-13-legal">
+        {%- assign rows = s.legal | newline_to_br | split: '<br />' -%}
+        {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+      </ul>
+      {%- if s.pay != blank -%}
+        <div class="hp-13-pay">
+          <p class="hp-13-pay__title" id="hp-13-t-pay-{{ section.id }}">{{ s.pay_title }}</p>
+          <ul class="hp-13-pay__list" aria-labelledby="hp-13-t-pay-{{ section.id }}">
+            {%- assign rows = s.pay | newline_to_br | split: '<br />' -%}
+            {%- for r in rows -%}{%- assign t = r | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if s.mark != blank -%}<p class="hp-13-mark" aria-hidden="true">{{ s.mark }}</p>{%- endif -%}
+  </footer>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

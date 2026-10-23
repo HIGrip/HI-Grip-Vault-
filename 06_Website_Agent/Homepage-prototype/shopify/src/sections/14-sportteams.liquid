@@ -1,0 +1,44 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 14 · Teamorders: tweekleurige kop, een bento met links een grote foto met intro en knop en rechts
+  blokken met een sportfoto, nummer, titel en regel (blokken). Motion: foto schuift licht mee, blokken rijzen op.
+  @example
+  <!-- Homepage > HÏ 14 · Teamorders -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-14" data-hp="14" aria-labelledby="hp-14-h2-{{ section.id }}"{% unless s.parallax %} data-parallax="off"{% endunless %}>
+  <div class="hp-container hp-14-inner">
+    {%- if s.heading_a != blank or s.heading_b != blank -%}
+      <{{ tag }} class="hp-14-h2" id="hp-14-h2-{{ section.id }}"><span class="hp-14-h2__a">{{ s.heading_a }}</span> <span class="hp-14-h2__b">{{ s.heading_b }}</span></{{ tag }}>
+    {%- endif -%}
+
+    <div class="hp-14-bento">
+      <figure class="hp-14-media">
+        {%- render 'hp-img', image: s.image, class: 'hp-14-img', sizes: '(min-width: 900px) 58vw, 100vw', widths: '400,800', alt: s.alt -%}
+        <figcaption class="hp-14-cap">
+          {%- if s.lead != blank -%}<p class="hp-14-lead">{{ s.lead }}</p>{%- endif -%}
+          {%- if s.cta_label != blank -%}
+            <a class="hp-pill hp-pill--light hp-14-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+          {%- endif -%}
+        </figcaption>
+      </figure>
+      <ol class="hp-14-bloks">
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          <li class="hp-14-blok" {{ block.shopify_attributes }}>
+            {%- capture pos -%}--pos:{{ b.pos_x }}% {{ b.pos_y }}%{%- endcapture -%}
+            {%- render 'hp-img', image: b.image, class: 'hp-14-bg', sizes: '(min-width: 900px) 40vw, 100vw', widths: '450,900', decorative: true, style: pos -%}
+            <span class="hp-14-no" aria-hidden="true">{{ b.no }}</span>
+            <span class="hp-14-itext"><span class="hp-14-tt">{{ b.title }}</span><span class="hp-14-td">{{ b.text }}</span></span>
+          </li>
+        {%- endfor -%}
+      </ol>
+    </div>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

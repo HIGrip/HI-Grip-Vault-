@@ -1,0 +1,753 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 07 · Kies je sport: kop met intro, een sleepbare rij sportkaarten (blokken) als lus met de actieve kaart
+  in het midden, kantelende buren, snelheidsstrepen in de sportkleur en een kiezer met segmenten.
+  @example
+  <!-- Homepage > HÏ 07 · Kies je sport -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign first = section.blocks | first
+  assign first_slug = first.settings.name | handleize
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-07-h2_c: {{ s.h2_c }}; --hp-07-lead_c: {{ s.lead_c }}; --hp-07-name_c: {{ s.name_c }}; --hp-07-line_c: {{ s.line_c }}; --hp-07-arrow_c: {{ s.arrow_c }}; --hp-07-bg: {{ s.bg }}; --hp-07-fg: {{ s.fg }}; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-h2-k: {{ s.h2_m | times: 1.0 | divided_by: 32 }}; --hp-lead-k: {{ s.lead_m | times: 1.0 | divided_by: 17 }}; --hp-07-name-k: {{ s.name_m | times: 1.0 | divided_by: 33 }}; --hp-07-line-k: {{ s.line_m | times: 1.0 | divided_by: 15 }}; --hp-07-r-k: {{ s.img_r_m | times: 1.0 | divided_by: 16 }}; --hp-07-gap-set: {{ s.gap_m }}px; --hp-07-seg-k: {{ s.seg_m | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 44 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 44 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 12 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-h2-k: {{ s.h2_d | times: 1.0 | divided_by: 64 }}; --hp-lead-k: {{ s.lead_d | times: 1.0 | divided_by: 19 }}; --hp-07-name-k: {{ s.name_d | times: 1.0 | divided_by: 66 }}; --hp-07-line-k: {{ s.line_d | times: 1.0 | divided_by: 19 }}; --hp-07-r-k: {{ s.img_r_d | times: 1.0 | divided_by: 26 }}; --hp-07-gap-set: {{ s.gap_d }}px; --hp-07-seg-k: {{ s.seg_d | times: 1.0 | divided_by: 18 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 72 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 72 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 14 }};} }
+{%- if s.head_layout == 'stack' -%}@media (min-width: 769px) { #shopify-section-{{ section.id }} .hp-07-head { grid-template-columns: minmax(0, 1fr); } #shopify-section-{{ section.id }} .hp-07-head .hp-lead { justify-self: start; } }{%- endif -%}{%- if s.head_layout == 'center' -%}#shopify-section-{{ section.id }} .hp-07-head { justify-items: center; text-align: center; } #shopify-section-{{ section.id }} .hp-07-head > * { margin-inline: auto; } @media (min-width: 769px) { #shopify-section-{{ section.id }} .hp-07-head { grid-template-columns: minmax(0, 1fr); } #shopify-section-{{ section.id }} .hp-07-head .hp-lead { justify-self: center; } }{%- endif -%}
+{%- unless s.tilt -%}#shopify-section-{{ section.id }} .hp-07 .hp-07-item.is-before .hp-07-card, #shopify-section-{{ section.id }} .hp-07 .hp-07-item.is-after .hp-07-card { transform: scale(0.9) !important; } #shopify-section-{{ section.id }} .hp-07-item:not(.is-active) .hp-07-img { filter: none !important; }{%- endunless -%}
+{%- unless s.streaks -%}#shopify-section-{{ section.id }} .hp-07-streaks { display: none; }{%- endunless -%}
+</style>
+<section class="hp-section hp-07" data-hp="07"{% if s.anchor != blank %} id="{{ s.anchor }}"{% endif %} data-sport="{{ first_slug }}" style="--hp-07-c: {{ first.settings.color }};" aria-labelledby="hp-07-h2-{{ section.id }}"{% unless s.streaks %} data-hp-07-streaks="off"{% endunless %}>
+  <div class="hp-07-wave" aria-hidden="true"><span class="hp-07-hole"></span></div>
+  {%- if s.heading != blank or s.lead != blank -%}
+    <div class="hp-container hp-head hp-07-head">
+      {%- if s.heading != blank -%}<{{ tag }} class="hp-h2 hp-07-h2" id="hp-07-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="hp-lead hp-07-lead">{{ s.lead }}</p>{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="hp-07-viewport" role="group" aria-label="{{ s.row_label | escape }}">
+    <div class="hp-07-streaks" aria-hidden="true"><span style="--y:1.6%;--h:3px;--w:340px;--d:0.0"></span><span style="--y:4.4%;--h:6px;--w:520px;--d:0.9"></span><span style="--y:16%;--h:3px;--w:260px;--d:1.8"></span><span style="--y:34%;--h:8px;--w:460px;--d:0.45"></span><span style="--y:55%;--h:3px;--w:300px;--d:1.35"></span><span style="--y:72%;--h:5px;--w:420px;--d:0.7"></span></div>
+    <ul class="hp-07-track">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+          assign slug = b.name | handleize
+          assign zm = b.zoom_m | divided_by: 100.0
+          assign zd = b.zoom_d | divided_by: 100.0
+        -%}
+        <li class="hp-07-item{% if forloop.first %} is-active{% endif %}" data-sport="{{ slug }}" data-c="{{ b.color }}" style="--hp-07-own: {{ b.color }}; --hp-07-own-ink: {{ b.ink }}; --hp-07-pos: {{ b.pos_x }}% {{ b.pos_y }}%; --hp-07-zm: {{ zm }}; --hp-07-zd: {{ zd }}; --hp-07-om: {{ b.om_x }}% {{ b.om_y }}%; --hp-07-od: {{ b.od_x }}% {{ b.od_y }}%;" {{ block.shopify_attributes }}>
+          <a class="hp-07-card" href="{{ b.link }}" aria-label="{{ b.aria | escape }}" aria-describedby="hp-07-line-{{ slug }}-{{ section.id }}" draggable="false"{% unless forloop.first %} tabindex="-1"{% endunless %}>
+            <div class="hp-07-frame">
+              {%- render 'hp-img', image: b.image, class: 'hp-07-img', sizes: '(min-width: 769px) min(68vw, 1000px), calc(100vw - 64px)', widths: '500,1000,1500,2000', alt: b.alt, attrs: 'draggable="false"' -%}
+            </div>
+            <div class="hp-07-copy">
+              <h3 class="hp-07-name">{{ b.name }}</h3>
+              <p class="hp-07-line" id="hp-07-line-{{ slug }}-{{ section.id }}">{{ b.line }}</p>
+              <span class="hp-pill hp-pill--light hp-07-go" aria-hidden="true"><span>{{ s.go_label }} <span class="hp-07-go__s">{{ b.name | downcase }}</span></span><span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span>
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  <div class="hp-container hp-07-controls">
+    <button class="hp-07-btn hp-07-prev" type="button" aria-label="{{ s.prev_label | escape }}"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2.5 4.5 7 9 11.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+    <div class="hp-07-segs" role="group" aria-label="{{ s.segs_label | escape }}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <button class="hp-07-seg" type="button" data-i="{{ forloop.index0 }}" data-sport="{{ b.name | handleize }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" style="--hp-07-own: {{ b.color }}; --hp-07-own-ink: {{ b.ink }};"><span class="hp-07-seg__name">{{ b.name }}</span></button>
+      {%- endfor -%}
+    </div>
+    <button class="hp-07-btn hp-07-next" type="button" aria-label="{{ s.next_label | escape }}"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </div>
+  <p class="hp-sr hp-07-status" aria-live="polite" data-template="{{ s.status_tpl | escape }}"></p>
+</section>
+{% schema %}
+{
+  "name": "HÏ 07 · Kies je sport",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Kies je sport"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Intro",
+      "default": "Elke sport vraagt iets anders van je voet. Kies de jouwe en lees waarom grip daar telt."
+    },
+    {
+      "type": "select",
+      "id": "head_layout",
+      "label": "Kop en intro: opbouw",
+      "options": [
+        {
+          "value": "split",
+          "label": "Naast elkaar (laptop)"
+        },
+        {
+          "value": "stack",
+          "label": "Onder elkaar"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        }
+      ],
+      "default": "split"
+    },
+    {
+      "type": "text",
+      "id": "anchor",
+      "label": "Anker (voor links als #sporten)",
+      "default": "sporten"
+    },
+    {
+      "type": "range",
+      "id": "h2_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "h2_d",
+      "label": "Kop grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "color",
+      "id": "h2_c",
+      "label": "Kop kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Intro grootte (mobiel)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Intro grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "color",
+      "id": "lead_c",
+      "label": "Intro kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "header",
+      "content": "Sportkaarten"
+    },
+    {
+      "type": "paragraph",
+      "content": "Elke sport is een blok met eigen kleur, foto, tekst en link. De rij loopt rond en de actieve kaart staat in het midden."
+    },
+    {
+      "type": "text",
+      "id": "go_label",
+      "label": "Knop op de kaart: tekst",
+      "default": "Bekijk",
+      "info": "Op laptop volgt de sportnaam, bijv. \"Bekijk padel\"."
+    },
+    {
+      "type": "range",
+      "id": "name_m",
+      "label": "Sportnaam grootte (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 33
+    },
+    {
+      "type": "range",
+      "id": "name_d",
+      "label": "Sportnaam grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 66
+    },
+    {
+      "type": "color",
+      "id": "name_c",
+      "label": "Sportnaam kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "line_m",
+      "label": "Regel grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "line_d",
+      "label": "Regel grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "color",
+      "id": "line_c",
+      "label": "Regel kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "range",
+      "id": "img_r_m",
+      "label": "Afronding foto's (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "img_r_d",
+      "label": "Afronding foto's (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "gap_m",
+      "label": "Ruimte tussen kaarten (mobiel)",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "default": 10,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap_d",
+      "label": "Ruimte tussen kaarten (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 32,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "streaks",
+      "label": "Snelheidsstrepen bij een wissel",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "tilt",
+      "label": "Buurkaarten kantelen (3D) en staan zwart-wit",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "row_label",
+      "label": "Rij: toegankelijke naam",
+      "default": "Sporten, sleep of gebruik de pijltjes"
+    },
+    {
+      "type": "text",
+      "id": "segs_label",
+      "label": "Kiezer: toegankelijke naam",
+      "default": "Kies een sport"
+    },
+    {
+      "type": "text",
+      "id": "prev_label",
+      "label": "Vorige: toegankelijke naam",
+      "default": "Vorige sport"
+    },
+    {
+      "type": "text",
+      "id": "next_label",
+      "label": "Volgende: toegankelijke naam",
+      "default": "Volgende sport"
+    },
+    {
+      "type": "text",
+      "id": "status_tpl",
+      "label": "Melding voor schermlezers",
+      "default": "{sport}, sport {n} van {total}"
+    },
+    {
+      "type": "color",
+      "id": "arrow_c",
+      "label": "Pijltjesknoppen: kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "seg_m",
+      "label": "Kiezer: tekstgrootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "seg_d",
+      "label": "Kiezer: tekstgrootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sport",
+      "name": "Sport",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Sport",
+          "default": "Padel"
+        },
+        {
+          "type": "textarea",
+          "id": "line",
+          "label": "Regel",
+          "default": "Uit het glas, terug naar het net. Je voet blijft staan als jij afremt."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst (leeg = alt van het bestand)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "aria",
+          "label": "Link: toegankelijke naam",
+          "default": "Gripsokken voor padel"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Sportkleur",
+          "default": "#0011A7"
+        },
+        {
+          "type": "color",
+          "id": "ink",
+          "label": "Tekst op de sportkleur (kiezer)",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "header",
+          "content": "Uitsnede"
+        },
+        {
+          "type": "range",
+          "id": "pos_x",
+          "label": "Focuspunt horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "pos_y",
+          "label": "Focuspunt verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "zoom_m",
+          "label": "Inzoomen (mobiel)",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "zoom_d",
+          "label": "Inzoomen (laptop)",
+          "min": 100,
+          "max": 200,
+          "step": 1,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "range",
+          "id": "om_x",
+          "label": "Zoompunt mobiel: horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "om_y",
+          "label": "Zoompunt mobiel: verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "od_x",
+          "label": "Zoompunt laptop: horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "od_y",
+          "label": "Zoompunt laptop: verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "HÏ 07 · Kies je sport",
+      "blocks": [
+        {
+          "type": "sport",
+          "settings": {
+            "name": "Padel",
+            "line": "Uit het glas, terug naar het net. Je voet blijft staan als jij afremt.",
+            "alt": "Padelspeler in witte gripsokken op een blauwe padelbaan",
+            "link": "/pages/gripsokken-voor-padel",
+            "aria": "Gripsokken voor padel",
+            "color": "#0011A7",
+            "ink": "#FFFFFF",
+            "pos_x": 30,
+            "pos_y": 60,
+            "zoom_m": 120,
+            "zoom_d": 145,
+            "om_x": 34,
+            "om_y": 72,
+            "od_x": 35,
+            "od_y": 64
+          }
+        },
+        {
+          "type": "sport",
+          "settings": {
+            "name": "Tennis",
+            "line": "Split-step, landen, wegduwen. Geen speling in je schoen bij de eerste stap.",
+            "alt": "Tennisser in witte gripsokken op een gravelbaan",
+            "link": "/pages/gripsokken-voor-tennis",
+            "aria": "Gripsokken voor tennis",
+            "color": "#FF6A00",
+            "ink": "#0A0A0A",
+            "pos_x": 45,
+            "pos_y": 70,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        },
+        {
+          "type": "sport",
+          "settings": {
+            "name": "Voetbal",
+            "line": "Wegdraaien bij je man zonder dat je voet in je schoen meedraait.",
+            "alt": "Voetballer in HÏ Grip-shirt haalt uit op een kunstgrasveld",
+            "link": "/pages/gripsokken-voor-voetbal",
+            "aria": "Gripsokken voor voetbal",
+            "color": "#CCFF00",
+            "ink": "#0A0A0A",
+            "pos_x": 56,
+            "pos_y": 50,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        },
+        {
+          "type": "sport",
+          "settings": {
+            "name": "Rugby",
+            "line": "Duwen in de scrum tot de bal eruit is. Je voet geeft geen centimeter weg.",
+            "alt": "Rugbyspelers in een scrum op een grasveld",
+            "link": "/pages/gripsokken-voor-rugby",
+            "aria": "Gripsokken voor rugby",
+            "color": "#E10600",
+            "ink": "#FFFFFF",
+            "pos_x": 58,
+            "pos_y": 60,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

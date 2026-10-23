@@ -1,0 +1,16 @@
+[
+ {"name":"01 rand: kleur + breedte samen","sec":"01","vp":[390,844],"ov":{"hp_01":{"btn_bw":3,"btn_bd":"#FF00FF"}}},
+ {"name":"01 rand: kleur bij breedte 3","sec":"01","vp":[390,844],"base":{"hp_01":{"btn_bw":3}},"ov":{"hp_01":{"btn_bd":"#FF00FF"}}},
+ {"name":"01 hover-rand bij breedte 3","sec":"01","vp":[1440,900],"base":{"hp_01":{"btn_bw":3}},"ov":{"hp_01":{"btn_hbd":"#FF00FF"}},"hover":".hp-pill"},
+ {"name":"01 menu open: achtergrond","sec":"01","vp":[390,844],"click":".hp-01-menu","ov":{"hp_01":{"menu_bg":"#FF00FF"}}},
+ {"name":"01 menu open: tekst","sec":"01","vp":[390,844],"click":".hp-01-menu","ov":{"hp_01":{"menu_fg":"#FF00FF"}}},
+ {"name":"01 logo-afbeelding","sec":"01","vp":[1440,900],"ov":{"hp_01":{"logo_image":"shopify://shop_images/hp-logo-hr-500.webp"}}},
+ {"name":"01 logo-afbeelding: hoogte","sec":"01","vp":[1440,900],"base":{"hp_01":{"logo_image":"shopify://shop_images/hp-logo-hr-500.webp"}},"ov":{"hp_01":{"logo_h":70}}},
+ {"name":"01 focuspunt mobiel verticaal 0","sec":"01","vp":[390,844],"ov":{"hp_01":{"pos_m_y":0}}},
+ {"name":"01 focuspunt laptop horizontaal 0","sec":"01","vp":[1440,900],"ov":{"hp_01":{"pos_d_x":0}}},
+ {"name":"01 kop max. breedte mobiel 6","sec":"01","vp":[390,844],"ov":{"hp_01":{"h1_mw_m":6}}},
+ {"name":"01 maximale hoogte 600","sec":"01","vp":[1440,900],"ov":{"hp_01":{"maxh":600}}},
+ {"name":"01 Ken Burns uit","sec":"01","vp":[1440,900],"motion":true,"ov":{"hp_01":{"anim_breathe":false}},"computed":{"sel":".hp-01-media__el","prop":"animationName"}},
+ {"name":"01 tekst inschuiven uit","sec":"01","vp":[1440,900],"motion":true,"ov":{"hp_01":{"anim_rise":false}},"computed":{"sel":".hp-01-h1","prop":"animationName"}},
+ {"name":"01 meezoomen bij scrollen uit","sec":"01","vp":[1440,900],"motion":true,"ov":{"hp_01":{"anim_zoom":false}},"computed":{"sel":".hp-01","prop":"cssText"}}
+]

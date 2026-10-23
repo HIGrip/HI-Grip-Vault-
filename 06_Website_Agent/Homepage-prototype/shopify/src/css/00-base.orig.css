@@ -1,0 +1,101 @@
+/* @hp:base */
+/* HÏ Grip homepage-prototype · base. Gedeeld door alle secties; secties schrijven alleen .hp-NN-*.
+   Artifact-eisen: titel van 2–4 woorden in index.html, één vaste lichte merklook (geen dark-mode, body met expliciete achtergrond),
+   gutter via max(16px, env(safe-area-inset-*)), nooit horizontale scroll. */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; color-scheme: light; }
+body {
+  margin: 0;
+  background: var(--hi-white);
+  color: var(--hi-black);
+  font: 400 var(--hp-type-body)/1.6 var(--hp-type-family);
+  letter-spacing: var(--hp-type-track-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img, video, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button { font: inherit; color: inherit; letter-spacing: inherit; }
+h1, h2, h3, p, figure, ul, ol { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { font-family: var(--hp-type-family); text-transform: uppercase; text-wrap: balance; letter-spacing: var(--hp-type-track-head); }
+:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+::selection { background: var(--hi-yellow); color: var(--hi-black); }
+
+/* sectie en container */
+.hp-section { position: relative; padding-block: var(--hp-space-section); }
+.hp-section--flush { padding-block: 0; }
+.hp-container {
+  width: 100%;
+  max-width: calc(var(--hp-space-max) + var(--hp-space-gutter) + var(--hp-space-gutter-r));
+  margin-inline: auto;
+  padding-left: var(--hp-space-gutter);
+  padding-right: var(--hp-space-gutter-r);
+}
+@media (min-width: 769px) {
+  .hp-container { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
+}
+
+/* type-helpers */
+.hp-h2 { font-weight: 800; font-size: var(--hp-type-h2); line-height: 0.98; }
+.hp-lead { font-size: var(--hp-type-lead); line-height: 1.55; max-width: 46ch; }
+.hp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* mediaframe: afgerond, vaste verhouding via --hp-ar */
+.hp-media { position: relative; overflow: hidden; border-radius: var(--hp-radius-media); aspect-ratio: var(--hp-ar, 4 / 5); max-width: 100%; background: var(--hi-near-black); }
+.hp-media > img, .hp-media > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* CTA: pill met chevron. Zwart op licht, wit op donker. Nooit een accentkleur als vulling. */
+.hp-pill {
+  display: inline-flex; align-items: center; gap: 14px;
+  min-height: 52px; padding: 6px 6px 6px 24px;
+  border: 0; border-radius: 999px;
+  font: 700 14px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  background: var(--hi-black); color: var(--hi-white);
+}
+.hp-pill__chev { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--hi-white); color: var(--hi-black); transition: transform var(--hp-dur-1) var(--hp-ease); }
+.hp-pill__chev svg { width: 14px; height: 14px; }
+.hp-pill--light { background: var(--hi-white); color: var(--hi-black); }
+.hp-pill--light .hp-pill__chev { background: var(--hi-black); color: var(--hi-white); }
+@media (hover: hover) { .hp-pill:hover .hp-pill__chev { transform: translateX(3px); } }
+.hp-pill:active .hp-pill__chev { transform: translateX(3px); }
+
+/* lightbox (base.js: hpLightbox) */
+.hp-lightbox { width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: var(--hp-space-sm); border: 0; background: var(--hi-scrim-strong); color: var(--hi-white); }
+.hp-lightbox::backdrop { background: transparent; }
+.hp-lightbox[open] { display: grid; place-items: center; }
+.hp-lightbox__fig { display: grid; gap: var(--hp-space-sm); justify-items: center; max-width: min(1200px, 100%); }
+.hp-lightbox__img { max-height: 82vh; width: auto; border-radius: var(--hp-radius-media); }
+.hp-lightbox__cap { font-size: var(--hp-type-small); color: var(--hi-titanium); text-align: center; }
+.hp-lightbox__btn { position: absolute; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid var(--hi-line-dark); background: transparent; color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease); }
+.hp-lightbox__btn svg { width: 16px; height: 16px; }
+@media (hover: hover) { .hp-lightbox__btn:hover { border-color: var(--hi-white); } }
+.hp-lightbox__close { top: calc(var(--hp-space-sm) + env(safe-area-inset-top, 0px)); right: calc(var(--hp-space-sm) + env(safe-area-inset-right, 0px)); }
+.hp-lightbox__prev { left: calc(var(--hp-space-sm) + env(safe-area-inset-left, 0px)); top: 50%; translate: 0 -50%; }
+.hp-lightbox__next { right: calc(var(--hp-space-sm) + env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%; }
+.hp-lightbox__prev[hidden], .hp-lightbox__next[hidden] { display: none; }
+@media (max-width: 768px) {
+  /* mobiel: vorige/volgende onder de foto, niet eroverheen */
+  .hp-lightbox__fig { padding-bottom: 72px; }
+  .hp-lightbox__prev, .hp-lightbox__next { top: auto; translate: none; bottom: calc(var(--hp-space-sm) + env(safe-area-inset-bottom, 0px)); }
+  .hp-lightbox__prev { left: calc(50% - 56px); }
+  .hp-lightbox__next { right: calc(50% - 56px); }
+}
+html.hp-lock { overflow: hidden; }
+
+/* reduced motion: alles staat direct in de eindstand */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* 1.5 · eenheid (Lars 19-10: "creëer een geheel"). Elke sectie met een kop gebruikt hetzelfde kopblok:
+   kop links (ExtraBold 800, h2-maat, hoofdletters), optionele lead ernaast op desktop, dezelfde ruimte eronder. */
+.hp-head { display: grid; gap: var(--hp-space-sm); margin-bottom: var(--hp-space-ml); }
+.hp-head .hp-h2 { max-width: 18ch; }
+@media (min-width: 769px) {
+  .hp-head { grid-template-columns: minmax(0, 1fr) minmax(0, 40ch); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-head .hp-lead { justify-self: end; }
+}
+

@@ -1,0 +1,49 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 04 · Fotoraster: kop met intro en vier sportfoto's (blokken) die doorlinken. Laptop: groot links,
+  twee kleine rechtsboven, breed rechtsonder. Hover/tik: foto zoomt, pijl schuift.
+  @example
+  <!-- Homepage > HÏ 04 · Fotoraster -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign cells = 'a,b,c,d' | split: ','
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-04" data-hp="04" aria-labelledby="hp-04-h2-{{ section.id }}">
+  <div class="hp-container hp-04-inner">
+    {%- if s.heading != blank or s.lead != blank -%}
+      <header class="hp-head hp-04-head">
+        {%- if s.heading != blank -%}<{{ tag }} class="hp-h2 hp-04-h2" id="hp-04-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+        {%- if s.lead != blank -%}<p class="hp-lead hp-04-lead">{{ s.lead }}</p>{%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <ul class="hp-04-grid">
+      {%- for block in section.blocks limit: 4 -%}
+        {%- liquid
+          assign b = block.settings
+          assign i = forloop.index0
+          assign cell = cells[i]
+          if i == 0 or i == 3
+            assign sz = '(min-width: 769px) 50vw, 100vw'
+          else
+            assign sz = '(min-width: 769px) 25vw, 50vw'
+          endif
+          capture pos
+            echo '--hp-04-pos: ' | append: b.pos_x | append: '% ' | append: b.pos_y | append: '%'
+          endcapture
+        -%}
+        <li class="hp-04-cell hp-04-cell--{{ cell }}" {{ block.shopify_attributes }}>
+          <a class="hp-04-card" href="{{ b.link }}">
+            {%- render 'hp-img', image: b.image, class: 'hp-04-img', sizes: sz, widths: '450,900,1350,1800', alt: b.alt, style: pos -%}
+            <span class="hp-04-label"><span class="hp-04-sport">{{ b.sport }}</span><span class="hp-04-go">{{ b.go }}<span class="hp-04-chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span></span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

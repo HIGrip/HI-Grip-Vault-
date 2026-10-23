@@ -1,0 +1,76 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 06 · Brandvideo: één breed bestand op laptop (triptiek ingebakken) en één staand bestand op mobiel,
+  daarna een zwart moment en een eindbeeld met reuzentekst. Video's uit Instellingen > Bestanden (kiezer) of als
+  directe mp4-link. Speelt alleen in beeld; laadt pas als de sectie dichtbij komt.
+  @example
+  <!-- Homepage > HÏ 06 · Brandvideo -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign src_d = s.video_d_url
+  if s.video_d != blank
+    assign mp4 = s.video_d.sources | where: 'format', 'mp4' | sort: 'height' | last
+    assign src_d = mp4.url
+  endif
+  assign src_m = s.video_m_url
+  assign src_lo = s.video_lo_url
+  if s.video_m != blank
+    assign mp4s = s.video_m.sources | where: 'format', 'mp4' | sort: 'height'
+    assign hi = mp4s | last
+    assign lo = mp4s | first
+    assign src_m = hi.url
+    assign src_lo = lo.url
+  endif
+  assign poster_d = ''
+  if s.poster_d != blank
+    assign poster_d = s.poster_d | image_url: width: 1920
+  elsif s.video_d != blank
+    assign poster_d = s.video_d.preview_image | image_url: width: 1920
+  endif
+  assign poster_m = ''
+  if s.poster_m != blank
+    assign poster_m = s.poster_m | image_url: width: 720
+  elsif s.video_m != blank
+    assign poster_m = s.video_m.preview_image | image_url: width: 720
+  endif
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-section--flush hp-06" data-hp="06" aria-label="{{ s.label | escape }}" data-cut="{{ s.cut | divided_by: 1000.0 }}" data-fade="{{ s.fade | divided_by: 1000.0 }}" data-black="{{ s.black | divided_by: 1000.0 }}" data-hold="{{ s.hold | divided_by: 1000.0 }}" data-near="{{ s.near }}" data-far="{{ s.far }}">
+  {%- if s.sr_1 != blank -%}<p class="hp-sr">{{ s.sr_1 }}</p>{%- endif -%}
+  {%- if s.sr_2 != blank -%}<p class="hp-sr">{{ s.sr_2 }}</p>{%- endif -%}
+
+  <div class="hp-06-stage">
+    <video class="hp-06-vid hp-06-vid--wide" data-src="{{ src_d }}"{% if poster_d != blank %} poster="{{ poster_d }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <video class="hp-06-vid hp-06-vid--tall" data-src="{{ src_m }}"{% if src_lo != blank %} data-src-lo="{{ src_lo }}"{% endif %}{% if poster_m != blank %} poster="{{ poster_m }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <span class="hp-06-dim hp-06-dim--a" aria-hidden="true"></span>
+    <span class="hp-06-dim hp-06-dim--c" aria-hidden="true"></span>
+    <div class="hp-06-end" aria-hidden="true">
+      <span class="hp-06-end__leak"></span>
+      <p class="hp-06-end__txt"><span class="hp-06-end__big">{{ s.end_big }}</span><span class="hp-06-end__sub">{{ s.end_sub }}</span></p>
+    </div>
+  </div>
+
+  <div class="hp-06-hud">
+    {%- if s.show_hud -%}
+      <span class="hp-06-brand" aria-hidden="true">{{ s.brand }}</span>
+      <span class="hp-06-tc" aria-hidden="true"><span class="hp-06-tc__now">00:00</span> / {{ s.total }}</span>
+      <span class="hp-06-progress" aria-hidden="true"><span class="hp-06-progress__fill"></span></span>
+    {%- endif -%}
+    <div class="hp-06-ctrl">
+      <button class="hp-06-btn hp-06-toggle" type="button" aria-pressed="false" aria-label="{{ s.l_pause | escape }}" data-label-play="{{ s.l_play | escape }}" data-label-pause="{{ s.l_pause | escape }}">
+        <svg class="hp-06-toggle__pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2.5v9M10 2.5v9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        <svg class="hp-06-toggle__play" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2l8 5-8 5z" fill="currentColor"/></svg>
+      </button>
+      <button class="hp-06-btn hp-06-sound" type="button" aria-pressed="false" aria-label="{{ s.l_sound_on | escape }}" data-label-on="{{ s.l_sound_on | escape }}" data-label-off="{{ s.l_sound_off | escape }}">
+        <svg class="hp-06-sound__off" viewBox="0 0 16 14" aria-hidden="true"><path d="M1 5h3l4-3v10L4 9H1z" fill="currentColor"/><path d="M11 5l4 4M15 5l-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <svg class="hp-06-sound__on" viewBox="0 0 16 14" aria-hidden="true"><path d="M1 5h3l4-3v10L4 9H1z" fill="currentColor"/><path d="M11 4.5c1.2 1.4 1.2 3.6 0 5M13 2.5c2.2 2.6 2.2 6.4 0 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-pill--light hp-06-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

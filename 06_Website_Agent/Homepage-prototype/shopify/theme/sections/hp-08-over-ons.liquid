@@ -1,0 +1,413 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 08 · Over ons: links een paneel met looptekst die tussen drie letterstaten verspringt, rechts (of links)
+  de teamfoto rand-tot-rand met een brede knop die de cursor volgt. Scroll: de foto opent vanaf de splitnaad.
+  @example
+  <!-- Homepage > HÏ 08 · Over ons -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign lines = s.lines | newline_to_br | split: '<br />'
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-08-loop_c: {{ s.loop_c }}; --hp-08-panel_bg: {{ s.panel_bg }}; --hp-08-ox: {{ s.orig_x }}%; --hp-08-media_bg: {{ s.media_bg }}; --hp-08-bg: {{ s.bg }}; --hp-08-fg: {{ s.fg }}; --hp-08-hd: {{ s.h_d }}svh; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-08-loop-k: {{ s.loop_m | times: 1.0 | divided_by: 38 }}; --hp-08-sm: calc({{ s.scale_m }} / 100); --hp-08-oy: {{ s.orig_y_m }}%; --hp-08-cta-k: {{ s.cta_m | times: 1.0 | divided_by: 20 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-08-loop-k: {{ s.loop_d | times: 1.0 | divided_by: 66 }}; --hp-08-sm: calc({{ s.scale_d }} / 100); --hp-08-oy: {{ s.orig_y_d }}%; --hp-08-cta-k: {{ s.cta_d | times: 1.0 | divided_by: 24 }};} }
+{%- if s.loop_align != 'center' -%}#shopify-section-{{ section.id }} .hp-08-loop { text-align: {{ s.loop_align }}; justify-self: {% if s.loop_align == 'left' %}start{% else %}end{% endif %}; }{%- endif -%}
+{%- unless s.reveal -%}#shopify-section-{{ section.id }} .hp-08-media { clip-path: none !important; } #shopify-section-{{ section.id }} .hp-08-media__img { transform: scale(var(--hp-08-s)) !important; }{%- endunless -%}
+</style>
+<section class="hp-section hp-section--flush hp-08{% if s.photo_side == 'left' %} hp-08--photo-left{% endif %}" data-hp="08" aria-labelledby="hp-08-h2-{{ section.id }}" data-period="{{ s.period }}" data-stagger="{{ s.stagger }}"{% unless s.cycle %} data-cycle="off"{% endunless %}{% unless s.follow %} data-follow="off"{% endunless %}{% unless s.reveal %} data-reveal="off"{% endunless %}>
+  <div class="hp-08-split">
+    <div class="hp-08-panel">
+      <{{ tag }} class="hp-08-loop" id="hp-08-h2-{{ section.id }}">
+        {%- if s.sr_prefix != blank -%}<span class="hp-sr">{{ s.sr_prefix }} </span>{%- endif -%}
+        <span class="hp-08-lines">
+          {%- for l in lines -%}{%- assign t = l | strip -%}{%- if t != blank -%}<span class="hp-08-line" data-s="2">{{ t }}</span>{%- endif -%}{%- endfor -%}
+        </span>
+      </{{ tag }}>
+    </div>
+    <figure class="hp-08-media">
+      {%- render 'hp-img', image: s.image, class: 'hp-08-media__img', sizes: '(min-width: 769px) 92vw, 100vw', widths: '600,1200,1600,2000', alt: s.alt -%}
+      {%- if s.cta_label != blank -%}
+        <a class="hp-pill hp-pill--light hp-08-cta" href="{{ s.cta_link }}">
+          <span class="hp-pill__chev hp-08-cta__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span class="hp-08-cta__label"><span class="hp-08-cta__word">{{ s.cta_label }}</span><span class="hp-08-cta__word" aria-hidden="true">{{ s.cta_label }}</span></span>
+        </a>
+      {%- endif -%}
+    </figure>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 08 · Over ons",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Looptekst"
+    },
+    {
+      "type": "textarea",
+      "id": "lines",
+      "label": "Regels (één per regel)",
+      "default": "Sportswear\nis het\nfundament van\npresteren."
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "sr_prefix",
+      "label": "Voorvoegsel voor schermlezers",
+      "default": "Over HÏ Grip:"
+    },
+    {
+      "type": "color",
+      "id": "loop_c",
+      "label": "Kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "loop_m",
+      "label": "Grootte (mobiel)",
+      "min": 11,
+      "max": 111,
+      "step": 1,
+      "unit": "px",
+      "default": 38
+    },
+    {
+      "type": "range",
+      "id": "loop_d",
+      "label": "Grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 66
+    },
+    {
+      "type": "checkbox",
+      "id": "cycle",
+      "label": "Letters verspringen (dun → zwaar → cursief)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "period",
+      "label": "Tempo: tijd per staat",
+      "min": 300,
+      "max": 3000,
+      "step": 30,
+      "default": 870,
+      "unit": "ms"
+    },
+    {
+      "type": "range",
+      "id": "stagger",
+      "label": "Vertraging per regel",
+      "min": 0,
+      "max": 400,
+      "step": 10,
+      "default": 80,
+      "unit": "ms"
+    },
+    {
+      "type": "color",
+      "id": "panel_bg",
+      "label": "Paneel: achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "select",
+      "id": "loop_align",
+      "label": "Uitlijning",
+      "options": [
+        {
+          "value": "center",
+          "label": "Midden"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst (leeg = alt van het bestand)"
+    },
+    {
+      "type": "select",
+      "id": "photo_side",
+      "label": "Foto op laptop",
+      "options": [
+        {
+          "value": "right",
+          "label": "Rechts"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "scale_m",
+      "label": "Inzoomen (mobiel)",
+      "min": 100,
+      "max": 300,
+      "step": 2,
+      "default": 190,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "scale_d",
+      "label": "Inzoomen (laptop)",
+      "min": 100,
+      "max": 300,
+      "step": 2,
+      "default": 120,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "orig_y_m",
+      "label": "Zoompunt verticaal (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 22,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "orig_y_d",
+      "label": "Zoompunt verticaal (laptop)",
+      "min": 20,
+      "max": 70,
+      "step": 0.5,
+      "default": 45.5,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "orig_x",
+      "label": "Zoompunt horizontaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "checkbox",
+      "id": "reveal",
+      "label": "Foto opent bij scrollen vanaf de naad",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "media_bg",
+      "label": "Achtergrond achter de foto",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Knop"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Tekst",
+      "default": "Ons verhaal"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Link"
+    },
+    {
+      "type": "checkbox",
+      "id": "follow",
+      "label": "Knop volgt de cursor over de foto (laptop)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cta_m",
+      "label": "Tekstgrootte (mobiel)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "cta_d",
+      "label": "Tekstgrootte (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Hoogte laptop (% van het scherm)",
+      "min": 40,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HÏ 08 · Over ons"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,87 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 02 · Kies je paar: productkaarten (blokken) met sfeerbeeld bij hover/tik, optionele kleurstaaltjes,
+  en daaronder de vergelijkknop ("duel"). Motion: kaarten schuiven scroll-gekoppeld in, staaltjes vegen.
+  @example
+  <!-- Homepage > HÏ 02 · Kies je paar -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-02" data-hp="02" aria-labelledby="hp-02-h2-{{ section.id }}">
+  <div class="hp-container hp-02-inner">
+    {%- if s.heading != blank -%}
+      <header class="hp-head hp-02-headblock"><{{ tag }} class="hp-h2 hp-02-h2" id="hp-02-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}></header>
+    {%- endif -%}
+
+    <ul class="hp-02-list" data-hp-02-list>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+          assign two = false
+          if b.image_b != blank
+            assign two = true
+          endif
+          assign mod = forloop.index | modulo: 2
+          if mod == 1
+            assign cls = 'hp-02-card--10'
+          else
+            assign cls = 'hp-02-card--20'
+          endif
+          assign price = b.price
+          if price == blank and b.product != blank
+            assign price = b.product.price | money
+          endif
+          assign link_a = b.link_a | default: b.cta_link
+        -%}
+        <li class="hp-02-card {{ cls }}" data-hp-02-card{% if two %} data-color="zwart"{% endif %} style="--hp-02-sw-a: {{ b.swatch_a }}; --hp-02-sw-b: {{ b.swatch_b }};" {{ block.shopify_attributes }}>
+          <button class="hp-02-media" type="button" aria-pressed="false" aria-label="{{ b.media_label | escape }}">
+            {%- if two -%}
+              {%- render 'hp-img', image: b.image, class: 'hp-02-media__prod hp-02-media__prod--zwart', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900' -%}
+              {%- render 'hp-img', image: b.image_b, class: 'hp-02-media__prod hp-02-media__prod--wit', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900', attrs: 'aria-hidden="true"' -%}
+            {%- else -%}
+              {%- render 'hp-img', image: b.image, class: 'hp-02-media__prod', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900' -%}
+            {%- endif -%}
+            {%- render 'hp-img', image: b.mood, class: 'hp-02-media__mood', sizes: '(min-width: 769px) 50vw, 50vw', widths: '400,800' -%}
+            {%- if b.tag != blank -%}<span class="hp-02-tag{% if b.tag_style == 'volt' %} hp-02-tag--volt{% endif %}">{{ b.tag }}</span>{%- endif -%}
+          </button>
+          <div class="hp-02-head">
+            <h3 class="hp-02-title">{{ b.title }}</h3>
+            {%- if price != blank -%}<span class="hp-02-price">{{ price }}</span>{%- endif -%}
+          </div>
+          {%- if b.sub != blank -%}<p class="hp-02-sub">{{ b.sub }}</p>{%- endif -%}
+          {%- assign lines = b.bullets | newline_to_br | split: '<br />' -%}
+          {%- if b.bullets != blank -%}
+            <ul class="hp-02-bullets">
+              {%- for l in lines -%}{%- assign t = l | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+            </ul>
+          {%- endif -%}
+          <div class="hp-02-foot">
+            {%- if two -%}
+              <div class="hp-02-colors" role="group" aria-label="{{ s.colors_label | escape }}">
+                <button class="hp-02-swatch hp-02-swatch--zwart" type="button" aria-pressed="true" data-color="zwart" data-href="{{ link_a }}"><span class="hp-sr">{{ b.name_a }}</span></button>
+                <button class="hp-02-swatch hp-02-swatch--wit" type="button" aria-pressed="false" data-color="wit" data-href="{{ b.link_b | default: link_a }}"><span class="hp-sr">{{ b.name_b }}</span></button>
+                <span class="hp-02-colorname" aria-hidden="true"><span class="hp-02-colorname__zwart">{{ b.name_a }}</span><span class="hp-02-colorname__wit">{{ b.name_b }}</span></span>
+              </div>
+            {%- elsif b.sizes != blank -%}
+              <p class="hp-02-sizes">{{ b.sizes }}</p>
+            {%- endif -%}
+            {%- if b.cta_label != blank -%}
+              <a class="hp-pill hp-pill--light hp-02-cta" href="{% if two %}{{ link_a }}{% else %}{{ b.cta_link }}{% endif %}"{% if two %} data-hp-02-cta{% endif %}{% if b.cta_aria != blank %} aria-label="{{ b.cta_aria | escape }}"{% endif %}>{{ b.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if s.show_compare -%}
+      <div class="hp-02-compare">
+        <a class="hp-02-duel" href="{{ s.compare_link }}" aria-label="{{ s.compare_aria | escape }}"><span class="hp-02-duel__socks" aria-hidden="true"><span class="hp-02-duel__disc hp-02-duel__disc--a">{%- render 'hp-img', image: s.disc_a, sizes: '72px', widths: '150,300', decorative: true -%}</span><span class="hp-02-duel__disc hp-02-duel__disc--b">{%- render 'hp-img', image: s.disc_b, sizes: '72px', widths: '150,300', decorative: true -%}</span><span class="hp-02-duel__vs">{{ s.vs }}</span></span><span class="hp-02-duel__txt"><span class="hp-02-duel__k">{{ s.compare_k }}</span><span class="hp-02-duel__v">{{ s.compare_v }}</span></span><span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

@@ -1,0 +1,5 @@
+[
+ {"name":"07 gap mobiel (berekend)","sec":"07","vp":[390,844],"ov":{"hp_07":{"gap_m":60}},"computed":{"sel":".hp-07-track","prop":"columnGap"}},
+ {"name":"07 gap mobiel (beeld)","sec":"07","vp":[390,844],"ov":{"hp_07":{"gap_m":60}}},
+ {"name":"07 radius mobiel (berekend)","sec":"07","vp":[390,844],"ov":{"hp_07":{"img_r_m":40}},"computed":{"sel":".hp-07-frame","prop":"borderTopLeftRadius"}}
+]

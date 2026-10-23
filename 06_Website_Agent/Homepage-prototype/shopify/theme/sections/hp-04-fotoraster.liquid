@@ -1,0 +1,503 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 04 · Fotoraster: kop met intro en vier sportfoto's (blokken) die doorlinken. Laptop: groot links,
+  twee kleine rechtsboven, breed rechtsonder. Hover/tik: foto zoomt, pijl schuift.
+  @example
+  <!-- Homepage > HÏ 04 · Fotoraster -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign cells = 'a,b,c,d' | split: ','
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_scrim = s.scrim_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-04-h2_c: {{ s.h2_c }}; --hp-04-lead_c: {{ s.lead_c }}; --hp-04-gh: {{ s.grid_h }}svh; --hp-04-gw: {{ s.grid_hw }}vw; --hp-04-gap: {{ s.gap }}px; --hp-04-label_c: {{ s.label_c }}; --hp-04-chev_bg: {{ s.chev_bg }}; --hp-04-chev_fg: {{ s.chev_fg }}; --hp-04-scrim: {{ s.scrim | color_modify: 'alpha', hp_a_scrim }}; --hp-04-scrim-h: {{ s.scrim_h }}%; --hp-04-bg: {{ s.bg }}; --hp-04-fg: {{ s.fg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-h2-k: {{ s.h2_m | times: 1.0 | divided_by: 32 }}; --hp-lead-k: {{ s.lead_m | times: 1.0 | divided_by: 17 }}; --hp-04-r-k: {{ s.img_r_m | times: 1.0 | divided_by: 16 }}; --hp-04-sport-a-k: {{ s.sport_m | times: 1.0 | divided_by: 28 }}; --hp-04-sport-k: {{ s.sport_s_m | times: 1.0 | divided_by: 26 }}; --hp-04-go-k: {{ s.go_m | times: 1.0 | divided_by: 13 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 44 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 44 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-h2-k: {{ s.h2_d | times: 1.0 | divided_by: 64 }}; --hp-lead-k: {{ s.lead_d | times: 1.0 | divided_by: 19 }}; --hp-04-r-k: {{ s.img_r_d | times: 1.0 | divided_by: 26 }}; --hp-04-sport-a-k: {{ s.sport_d | times: 1.0 | divided_by: 100 }}; --hp-04-sport-k: {{ s.sport_s_d | times: 1.0 | divided_by: 58 }}; --hp-04-go-k: {{ s.go_d | times: 1.0 | divided_by: 13 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 72 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 72 }}; --hp-pb-add: 0px;} }
+{%- if s.head_layout == 'stack' -%}@media (min-width: 769px) { #shopify-section-{{ section.id }} .hp-04-head { grid-template-columns: minmax(0, 1fr); } #shopify-section-{{ section.id }} .hp-04-head .hp-lead { justify-self: start; } }{%- endif -%}{%- if s.head_layout == 'center' -%}#shopify-section-{{ section.id }} .hp-04-head { justify-items: center; text-align: center; } #shopify-section-{{ section.id }} .hp-04-head > * { margin-inline: auto; } @media (min-width: 769px) { #shopify-section-{{ section.id }} .hp-04-head { grid-template-columns: minmax(0, 1fr); } #shopify-section-{{ section.id }} .hp-04-head .hp-lead { justify-self: center; } }{%- endif -%}
+{%- unless s.zoom -%}#shopify-section-{{ section.id }} .hp-04-card .hp-04-img { scale: 1 !important; }{%- endunless -%}
+</style>
+<section class="hp-section hp-04" data-hp="04" aria-labelledby="hp-04-h2-{{ section.id }}">
+  <div class="hp-container hp-04-inner">
+    {%- if s.heading != blank or s.lead != blank -%}
+      <header class="hp-head hp-04-head">
+        {%- if s.heading != blank -%}<{{ tag }} class="hp-h2 hp-04-h2" id="hp-04-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+        {%- if s.lead != blank -%}<p class="hp-lead hp-04-lead">{{ s.lead }}</p>{%- endif -%}
+      </header>
+    {%- endif -%}
+
+    <ul class="hp-04-grid">
+      {%- for block in section.blocks limit: 4 -%}
+        {%- liquid
+          assign b = block.settings
+          assign i = forloop.index0
+          assign cell = cells[i]
+          if i == 0 or i == 3
+            assign sz = '(min-width: 769px) 50vw, 100vw'
+          else
+            assign sz = '(min-width: 769px) 25vw, 50vw'
+          endif
+          capture pos
+            echo '--hp-04-pos: ' | append: b.pos_x | append: '% ' | append: b.pos_y | append: '%'
+          endcapture
+        -%}
+        <li class="hp-04-cell hp-04-cell--{{ cell }}" {{ block.shopify_attributes }}>
+          <a class="hp-04-card" href="{{ b.link }}">
+            {%- render 'hp-img', image: b.image, class: 'hp-04-img', sizes: sz, widths: '450,900,1350,1800', alt: b.alt, style: pos -%}
+            <span class="hp-04-label"><span class="hp-04-sport">{{ b.sport }}</span><span class="hp-04-go">{{ b.go }}<span class="hp-04-chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span></span>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 04 · Fotoraster",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Op de baan, het veld en in de gym"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Intro",
+      "default": "Echte sporters, echte wedstrijden."
+    },
+    {
+      "type": "select",
+      "id": "head_layout",
+      "label": "Kop en intro: opbouw",
+      "options": [
+        {
+          "value": "split",
+          "label": "Naast elkaar (laptop)"
+        },
+        {
+          "value": "stack",
+          "label": "Onder elkaar"
+        },
+        {
+          "value": "center",
+          "label": "Gecentreerd"
+        }
+      ],
+      "default": "split"
+    },
+    {
+      "type": "range",
+      "id": "h2_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "h2_d",
+      "label": "Kop grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "color",
+      "id": "h2_c",
+      "label": "Kop kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Intro grootte (mobiel)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Intro grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "color",
+      "id": "lead_c",
+      "label": "Intro kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "header",
+      "content": "Fotoraster"
+    },
+    {
+      "type": "paragraph",
+      "content": "Vier foto-blokken: 1 = groot links, 2 en 3 = klein rechtsboven, 4 = breed rechtsonder (op laptop)."
+    },
+    {
+      "type": "range",
+      "id": "grid_h",
+      "label": "Hoogte raster (laptop, % van het scherm)",
+      "min": 30,
+      "max": 100,
+      "step": 1,
+      "default": 78,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "grid_hw",
+      "label": "Hoogte raster (laptop, max. % van de breedte)",
+      "min": 20,
+      "max": 80,
+      "step": 1,
+      "default": 52,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Ruimte tussen foto's",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "img_r_m",
+      "label": "Afronding foto's (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "img_r_d",
+      "label": "Afronding foto's (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "sport_m",
+      "label": "Sportnaam grootte (grote foto) (mobiel)",
+      "min": 8,
+      "max": 108,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "sport_d",
+      "label": "Sportnaam grootte (grote foto) (laptop)",
+      "min": 30,
+      "max": 230,
+      "step": 2,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "sport_s_m",
+      "label": "Sportnaam grootte (kleine foto's) (mobiel)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "sport_s_d",
+      "label": "Sportnaam grootte (kleine foto's) (laptop)",
+      "min": 16,
+      "max": 216,
+      "step": 2,
+      "unit": "px",
+      "default": 58
+    },
+    {
+      "type": "range",
+      "id": "go_m",
+      "label": "Linktekst grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "go_d",
+      "label": "Linktekst grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "label_c",
+      "label": "Tekst op de foto",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "chev_bg",
+      "label": "Pijlcirkel",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "chev_fg",
+      "label": "Pijl",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "scrim",
+      "label": "Verloop onder op de foto",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "scrim_a",
+      "label": "Verloop onder op de foto: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 86
+    },
+    {
+      "type": "range",
+      "id": "scrim_h",
+      "label": "Verloop: hoogte",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 46,
+      "unit": "%"
+    },
+    {
+      "type": "checkbox",
+      "id": "zoom",
+      "label": "Foto zoomt bij hover/tik",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    }
+  ],
+  "blocks": [
+    {
+      "type": "photo",
+      "name": "Foto",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst (leeg = alt van het bestand)"
+        },
+        {
+          "type": "range",
+          "id": "pos_x",
+          "label": "Focuspunt horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "pos_y",
+          "label": "Focuspunt verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "sport",
+          "label": "Grote tekst (sport)",
+          "default": "Padel"
+        },
+        {
+          "type": "text",
+          "id": "go",
+          "label": "Linktekst",
+          "default": "Gripsokken voor padel"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "HÏ 04 · Fotoraster",
+      "blocks": [
+        {
+          "type": "photo",
+          "settings": {
+            "alt": "Padelspeler strikt zijn schoen, witte gripsokken, racket en ballen op een blauwe baan",
+            "pos_x": 66,
+            "pos_y": 50,
+            "sport": "Padel",
+            "go": "Gripsokken voor padel",
+            "link": "/pages/gripsokken-voor-padel"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "alt": "Tennisser in witte gripsokken op de baan",
+            "pos_x": 50,
+            "pos_y": 50,
+            "sport": "Tennis",
+            "go": "Gripsokken voor tennis",
+            "link": "/pages/gripsokken-voor-tennis"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "alt": "Voetballer op kunstgras, witte gripsokken met grippatroon onder de zool",
+            "pos_x": 68,
+            "pos_y": 50,
+            "sport": "Voetbal",
+            "go": "Gripsokken voor voetbal",
+            "link": "/pages/gripsokken-voor-voetbal"
+          }
+        },
+        {
+          "type": "photo",
+          "settings": {
+            "alt": "Sporter in witte gripsokken traint met een halterstang in de gym",
+            "pos_x": 50,
+            "pos_y": 50,
+            "sport": "Gym",
+            "go": "Performance gripsokken",
+            "link": "/collections/gripsokken"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

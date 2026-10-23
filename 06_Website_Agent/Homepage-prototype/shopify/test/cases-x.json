@@ -1,0 +1,10 @@
+[
+ {"name":"09 logohoogte laptop (stilstaand)","sec":"09","vp":[1440,900],"ov":{"hp_09":{"logo_h_d":120}},"computed":{"sel":".hp-09 img","prop":"height"}},
+ {"name":"09 logohoogte mobiel (stilstaand)","sec":"09","vp":[390,844],"ov":{"hp_09":{"logo_h_m":100}},"computed":{"sel":".hp-09 img","prop":"height"}},
+ {"name":"09 logohoogte laptop (lopend)","sec":"09","vp":[1440,900],"motion":true,"ov":{"hp_09":{"logo_h_d":120}},"computed":{"sel":".hp-09 img","prop":"height"}},
+ {"name":"09 grijs uit (lopend)","sec":"09","vp":[1440,900],"motion":true,"ov":{"hp_09":{"gray":false}},"computed":{"sel":".hp-09 .hp-09-logo","prop":"filter"}},
+ {"name":"09 ruimte laptop (lopend)","sec":"09","vp":[1440,900],"motion":true,"ov":{"hp_09":{"gap_d":150}},"computed":{"sel":".hp-09 .hp-09-item","prop":"marginRight"}},
+ {"name":"11 antwoord kleur (open)","sec":"11","vp":[1440,900],"click":"summary","ov":{"hp_11":{"a_c":"#FF00FF"}}},
+ {"name":"11 open achtergrond","sec":"11","vp":[1440,900],"click":"summary","ov":{"hp_11":{"open_bg":"#FF00FF"}}},
+ {"name":"11 antwoord grootte laptop","sec":"11","vp":[1440,900],"click":"summary","ov":{"hp_11":{"a_d":24}}}
+]

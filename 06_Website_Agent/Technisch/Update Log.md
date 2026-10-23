@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-11
+bijgewerkt: 2026-10-23
 ---
 
 # Update Log — Website Agent
@@ -11,6 +11,20 @@ bijgewerkt: 2026-10-11
 ---
 
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
+
+---
+
+## 2026-10-23 — `202669916487` "Live HÏ Grip WEBSITE + contactpagina" (niet gepubliceerd): homepage 1.36 als 14 aanpasbare secties
+
+**Wat:** het homepage-prototype v1.36 als 14 eigen secties (`sections/hp-01-hero` … `hp-14-teamorders`), `snippets/hp-base` en `hp-img`, `assets/hp-home.css` en `hp-home.js`, een nieuwe `templates/index.json` en in `layout/theme.liquid` alleen de `faq-schema`-render op de homepage eruit (de FAQ-sectie levert nu zelf FAQPage-data, anders stond hij er dubbel). Elke tekst, kleur, foto, link, maat (mobiel en laptop apart), ruimte, uitlijning, knopstijl inclusief hover en elke animatie staat in de thema-editor. Standaard is elke sectie pixelgelijk aan het prototype (getest op 9 schermformaten van 360 tot 1920 px).
+
+**Hoe:** gebouwd en getest in `06_Website_Agent/Homepage-prototype/shopify/` (zie de README daar), geüpload met `themeFilesUpsert` via Shopify's tijdelijke uploadopslag. Na de upload komen alle 20 bestanden byte voor byte overeen met de lokale versie (md5). Het live-thema `202667458887` is niet aangeraakt en er is niets gepubliceerd.
+
+**Terugzetten:** `templates/index.json` en `layout/theme.liquid` van vóór de upload staan in `06_Website_Agent/Homepage-prototype/shopify/backup/`.
+
+**Open:** de testafbeelding `assets/hp-urltest.webp` in dit thema mag weg (Shopify-koppeling mag geen themabestanden verwijderen; via Code bewerken). Live zetten alleen na akkoord van lars.
+
+**Wie:** cloudsessie 23-10, op verzoek van Timo.
 
 ---
 

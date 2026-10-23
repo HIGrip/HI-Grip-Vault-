@@ -1,0 +1,63 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 07 · Kies je sport: kop met intro, een sleepbare rij sportkaarten (blokken) als lus met de actieve kaart
+  in het midden, kantelende buren, snelheidsstrepen in de sportkleur en een kiezer met segmenten.
+  @example
+  <!-- Homepage > HÏ 07 · Kies je sport -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign first = section.blocks | first
+  assign first_slug = first.settings.name | handleize
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-07" data-hp="07"{% if s.anchor != blank %} id="{{ s.anchor }}"{% endif %} data-sport="{{ first_slug }}" style="--hp-07-c: {{ first.settings.color }};" aria-labelledby="hp-07-h2-{{ section.id }}"{% unless s.streaks %} data-hp-07-streaks="off"{% endunless %}>
+  <div class="hp-07-wave" aria-hidden="true"><span class="hp-07-hole"></span></div>
+  {%- if s.heading != blank or s.lead != blank -%}
+    <div class="hp-container hp-head hp-07-head">
+      {%- if s.heading != blank -%}<{{ tag }} class="hp-h2 hp-07-h2" id="hp-07-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.lead != blank -%}<p class="hp-lead hp-07-lead">{{ s.lead }}</p>{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="hp-07-viewport" role="group" aria-label="{{ s.row_label | escape }}">
+    <div class="hp-07-streaks" aria-hidden="true"><span style="--y:1.6%;--h:3px;--w:340px;--d:0.0"></span><span style="--y:4.4%;--h:6px;--w:520px;--d:0.9"></span><span style="--y:16%;--h:3px;--w:260px;--d:1.8"></span><span style="--y:34%;--h:8px;--w:460px;--d:0.45"></span><span style="--y:55%;--h:3px;--w:300px;--d:1.35"></span><span style="--y:72%;--h:5px;--w:420px;--d:0.7"></span></div>
+    <ul class="hp-07-track">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+          assign slug = b.name | handleize
+          assign zm = b.zoom_m | divided_by: 100.0
+          assign zd = b.zoom_d | divided_by: 100.0
+        -%}
+        <li class="hp-07-item{% if forloop.first %} is-active{% endif %}" data-sport="{{ slug }}" data-c="{{ b.color }}" style="--hp-07-own: {{ b.color }}; --hp-07-own-ink: {{ b.ink }}; --hp-07-pos: {{ b.pos_x }}% {{ b.pos_y }}%; --hp-07-zm: {{ zm }}; --hp-07-zd: {{ zd }}; --hp-07-om: {{ b.om_x }}% {{ b.om_y }}%; --hp-07-od: {{ b.od_x }}% {{ b.od_y }}%;" {{ block.shopify_attributes }}>
+          <a class="hp-07-card" href="{{ b.link }}" aria-label="{{ b.aria | escape }}" aria-describedby="hp-07-line-{{ slug }}-{{ section.id }}" draggable="false"{% unless forloop.first %} tabindex="-1"{% endunless %}>
+            <div class="hp-07-frame">
+              {%- render 'hp-img', image: b.image, class: 'hp-07-img', sizes: '(min-width: 769px) min(68vw, 1000px), calc(100vw - 64px)', widths: '500,1000,1500,2000', alt: b.alt, attrs: 'draggable="false"' -%}
+            </div>
+            <div class="hp-07-copy">
+              <h3 class="hp-07-name">{{ b.name }}</h3>
+              <p class="hp-07-line" id="hp-07-line-{{ slug }}-{{ section.id }}">{{ b.line }}</p>
+              <span class="hp-pill hp-pill--light hp-07-go" aria-hidden="true"><span>{{ s.go_label }} <span class="hp-07-go__s">{{ b.name | downcase }}</span></span><span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></span>
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  <div class="hp-container hp-07-controls">
+    <button class="hp-07-btn hp-07-prev" type="button" aria-label="{{ s.prev_label | escape }}"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M9 2.5 4.5 7 9 11.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+    <div class="hp-07-segs" role="group" aria-label="{{ s.segs_label | escape }}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <button class="hp-07-seg" type="button" data-i="{{ forloop.index0 }}" data-sport="{{ b.name | handleize }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" style="--hp-07-own: {{ b.color }}; --hp-07-own-ink: {{ b.ink }};"><span class="hp-07-seg__name">{{ b.name }}</span></button>
+      {%- endfor -%}
+    </div>
+    <button class="hp-07-btn hp-07-next" type="button" aria-label="{{ s.next_label | escape }}"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </div>
+  <p class="hp-sr hp-07-status" aria-live="polite" data-template="{{ s.status_tpl | escape }}"></p>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

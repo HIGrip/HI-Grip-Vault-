@@ -1,0 +1,73 @@
+[
+ {
+  "q": "Wat zijn gripsokken?",
+  "a": "<p>Gripsokken zijn sportsokken met een grippatroon op de zool. Dat patroon houdt je voet op zijn plek in je schoen, zodat je minder over je binnenzool glijdt bij afremmen, draaien en wegsprinten.</p>",
+  "open": false
+ },
+ {
+  "q": "Werken gripsokken echt?",
+  "a": "<p>Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, dus 95% meer grip (Apps et al. 2022). Het onderzoek gaat over gripsokken in het algemeen, niet over een test van HÏ Grip.</p>",
+  "open": false,
+  "l1_label": "Lees het onderzoek (Apps et al. 2022)",
+  "l1_url": "https://doi.org/10.1080/02640414.2022.2080163",
+  "l1_tab": true,
+  "l2_label": "De wetenschap achter gripsokken",
+  "l2_url": "/blogs/hi-grip/de-wetenschap-achter-gripsokken",
+  "l2_tab": false
+ },
+ {
+  "q": "Voor welke sporten zijn gripsokken?",
+  "a": "<p>Voor elke sport waarin je snel afremt en draait: padel, tennis, voetbal en rugby. Per sport lees je op een eigen pagina waarom grip daar telt.</p>",
+  "open": false,
+  "l1_label": "Gripsokken voor padel",
+  "l1_url": "/pages/gripsokken-voor-padel",
+  "l1_tab": false,
+  "l2_label": "Gripsokken voor voetbal",
+  "l2_url": "/pages/gripsokken-voor-voetbal",
+  "l2_tab": false
+ },
+ {
+  "q": "Waarom glijdt mijn voet in mijn padelschoen?",
+  "a": "<p>Bij afremmen, draaien en wegsprinten schuift je voet over de binnenzool van je schoen, zeker als je sok vochtig wordt. Een gripsok heeft een grippatroon onder de zool dat je voet op zijn plek houdt, zodat je voet en schoen samen bewegen.</p>",
+  "open": false,
+  "l1_label": "Meer over gripsokken voor padel",
+  "l1_url": "/pages/gripsokken-voor-padel",
+  "l1_tab": false
+ },
+ {
+  "q": "Draag je gripsokken onder of over je clubkous?",
+  "a": "<p>Onder. De gripsok zit direct om je voet en je clubkous gaat eroverheen. Veel voetballers dragen daarom een clubkous zonder voet, zodat de grip direct tegen de binnenzool van je schoen zit.</p>",
+  "open": false,
+  "l1_label": "Meer over gripsokken voor voetbal",
+  "l1_url": "/pages/gripsokken-voor-voetbal",
+  "l1_tab": false
+ },
+ {
+  "q": "Wat is het verschil tussen de 1.0 en de 2.0?",
+  "a": "<p>Allebei hebben ze siliconen grip onder de zool. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel en special cushioning toe.</p>",
+  "open": false
+ },
+ {
+  "q": "Wat kosten HÏ Grip gripsokken?",
+  "a": "<p>De Performance Gripsokken (1.0) kosten €14,95 per paar, €35,95 voor een 3-pack en €54,95 voor een 5-pack. De Performance Gripsokken 2.0 kosten €17,95 per paar, in zwart of wit.</p>",
+  "open": false
+ },
+ {
+  "q": "Welke maat kies ik?",
+  "a": "<p>Kies de maat die bij je schoenmaat past. De 1.0 is er in 34–39 en 40–46, de 2.0 in 35–38, 39–42 en 43–47.</p>",
+  "open": false
+ },
+ {
+  "q": "Kan mijn club of winkel zakelijk bestellen?",
+  "a": "<p>Ja. Sportwinkels bestellen met staffelprijzen vanaf 6 paar, clubs en studio's kunnen vanaf 150 paar een eigen logo en eigen kleuren laten maken. Een sample is gratis.</p>",
+  "open": false
+ },
+ {
+  "q": "Wat zeggen sporters over HÏ Grip?",
+  "a": "<p>HÏ Grip scoort 4,6 sterren op Trustpilot, en 3500+ sporters gingen je voor.</p>",
+  "open": false,
+  "l1_label": "Lees de reviews op Trustpilot",
+  "l1_url": "https://nl.trustpilot.com/review/higrip.nl",
+  "l1_tab": false
+ }
+]

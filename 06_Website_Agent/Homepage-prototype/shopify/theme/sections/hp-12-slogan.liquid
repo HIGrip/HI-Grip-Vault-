@@ -1,0 +1,329 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 12 · Slogan: twee reuzenregels die bij binnenscrollen uit hun masker komen en daarna uit elkaar
+  schuiven, met een brede knop waarvan de pijl meeloopt.
+  @example
+  <!-- Homepage > HÏ 12 · Slogan -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-12-l1_c: {{ s.l1_c }}; --hp-12-l2_c: {{ s.l2_c }}; --hp-12-w: {{ s.cta_w }}px; --hp-12-bg: {{ s.bg }}; --hp-12-fg: {{ s.fg }}; --hp-12-minh: {{ s.minh }}svh; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-12-k: {{ s.title_m | times: 1.0 | divided_by: 37 }}; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-12-k: {{ s.title_d | times: 1.0 | divided_by: 140 }}; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 17 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
+</style>
+<section class="hp-section hp-12" data-hp="12" aria-labelledby="hp-12-h-{{ section.id }}" data-spread-d="{{ s.spread_d }}" data-spread-m="{{ s.spread_m }}"{% unless s.motion %} data-motion="off"{% endunless %}>
+  <div class="hp-12-inner">
+    <{{ tag }} class="hp-12-title" id="hp-12-h-{{ section.id }}"><span class="hp-12-l hp-12-l--1"><span class="hp-12-in">{{ s.line_1 }}</span></span> <span class="hp-12-l hp-12-l--2"><span class="hp-12-in">{{ s.line_2 }}</span></span></{{ tag }}>
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-pill--light hp-12-cta" href="{{ s.cta_link }}"><span class="hp-12-cta__label">{{ s.cta_label }}</span><span class="hp-pill__chev hp-12-cta__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 12 · Slogan",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "line_1",
+      "label": "Regel 1",
+      "default": "Ga door waar"
+    },
+    {
+      "type": "text",
+      "id": "line_2",
+      "label": "Regel 2",
+      "default": "anderen stoppen."
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "title_m",
+      "label": "Grootte (mobiel)",
+      "min": 11,
+      "max": 111,
+      "step": 1,
+      "unit": "px",
+      "default": 37
+    },
+    {
+      "type": "range",
+      "id": "title_d",
+      "label": "Grootte (laptop)",
+      "min": 40,
+      "max": 440,
+      "step": 4,
+      "unit": "px",
+      "default": 140
+    },
+    {
+      "type": "color",
+      "id": "l1_c",
+      "label": "Regel 1: kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "l2_c",
+      "label": "Regel 2: kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "checkbox",
+      "id": "motion",
+      "label": "Regels komen omhoog en schuiven uit elkaar bij scrollen",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "spread_d",
+      "label": "Uit elkaar schuiven (laptop, % van de breedte)",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 18,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "spread_m",
+      "label": "Uit elkaar schuiven (mobiel, % van de breedte)",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 12,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Knop"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Tekst",
+      "default": "Shop gripsokken"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Link"
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Tekstgrootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Tekstgrootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "cta_w",
+      "label": "Breedte",
+      "min": 240,
+      "max": 900,
+      "step": 10,
+      "default": 560,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 400,
+      "step": 4,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "minh",
+      "label": "Minimale hoogte (% van het scherm)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HÏ 12 · Slogan"
+    }
+  ]
+}
+{% endschema %}

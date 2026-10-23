@@ -1,0 +1,417 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 09 · Logoband: kop en een lopende band met logo's (blokken). Logo's staan grijs en krijgen kleur in het
+  midden van de band, bij hover of tik. Per logo: schaal, verhouding, uitsnede en afronding (optisch gelijk).
+  @example
+  <!-- Homepage > HÏ 09 · Logoband -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-09-h2_c: {{ s.h2_c }}; --hp-09-dim: calc({{ s.dim }} / 100); --hp-09-bg: {{ s.bg }}; --hp-09-fg: {{ s.fg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-09-h2-k: {{ s.h2_m | times: 1.0 | divided_by: 22 }}; --hp-09-h-set: {{ s.logo_h_m }}px; --hp-09-gap-set: {{ s.gap_m }}px; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 32 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 32 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-09-h2-k: {{ s.h2_d | times: 1.0 | divided_by: 35 }}; --hp-09-h-set: {{ s.logo_h_d }}px; --hp-09-gap-set: {{ s.gap_d }}px; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 48 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 48 }}; --hp-pb-add: 0px;} }
+{%- unless s.gray -%}#shopify-section-{{ section.id }} .hp-09-logo { filter: none !important; opacity: 1 !important; }{%- endunless -%}
+</style>
+<section class="hp-section hp-09" data-hp="09" aria-labelledby="hp-09-h2-{{ section.id }}" data-speed="{{ s.speed }}"{% unless s.loop %} data-loop="off"{% endunless %}>
+  <div class="hp-container hp-09-inner">
+    {%- if s.heading != blank -%}<{{ tag }} class="hp-09-h2" id="hp-09-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+
+    <div class="hp-09-viewport" data-hp-09-viewport>
+      <ul class="hp-09-track" data-hp-09-track>
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign b = block.settings
+            assign k = b.scale | divided_by: 100.0
+            capture st
+              echo '--hp-09-k: ' | append: k | append: '; --hp-09-ar: ' | append: b.ratio | append: ';'
+              if b.radius > 0
+                echo ' border-radius: ' | append: b.radius | append: '%;'
+              endif
+            endcapture
+            assign crop = ''
+            if b.crop_w != 100 or b.crop_h != 100 or b.crop_x != 0 or b.crop_y != 0
+              capture crop
+                echo 'left: ' | append: b.crop_x | append: '%; top: ' | append: b.crop_y | append: '%; width: ' | append: b.crop_w | append: '%; height: ' | append: b.crop_h | append: '%;'
+              endcapture
+            endif
+          -%}
+          <li class="hp-09-item" {{ block.shopify_attributes }}>
+            {%- if b.link != blank -%}<a class="hp-09-logo" href="{{ b.link }}" style="{{ st }}">{%- else -%}<span class="hp-09-logo" style="{{ st }}">{%- endif -%}
+              {%- render 'hp-img', image: b.image, sizes: '200px', widths: '150,300,600', alt: b.alt, style: crop -%}
+            {%- if b.link != blank -%}</a>{%- else -%}</span>{%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 09 · Logoband",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Clubs, winkels en studio's gingen je voor"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "h2_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "h2_d",
+      "label": "Kop grootte (laptop)",
+      "min": 10,
+      "max": 110,
+      "step": 1,
+      "unit": "px",
+      "default": 35
+    },
+    {
+      "type": "color",
+      "id": "h2_c",
+      "label": "Kop kleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "header",
+      "content": "Logoband"
+    },
+    {
+      "type": "paragraph",
+      "content": "Elk logo is een blok. Schaal en verhouding maken logo's optisch even groot; met de uitsnede snijd je lege randen uit het bestand weg."
+    },
+    {
+      "type": "checkbox",
+      "id": "loop",
+      "label": "Band loopt (anders staan de logo's stil in een raster)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Snelheid (px per seconde)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 42,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_h_m",
+      "label": "Logohoogte (mobiel)",
+      "min": 20,
+      "max": 160,
+      "step": 2,
+      "default": 56,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_h_d",
+      "label": "Logohoogte (laptop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 76,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap_m",
+      "label": "Ruimte tussen logo's (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 48,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "gap_d",
+      "label": "Ruimte tussen logo's (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 64,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "gray",
+      "label": "Logo's grijs, in kleur in het midden en bij hover",
+      "default": true,
+      "info": "Geldt als de band loopt; staat hij stil, dan zijn de logo's altijd in kleur."
+    },
+    {
+      "type": "range",
+      "id": "dim",
+      "label": "Dekking van grijze logo's",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 60,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#F7F7F7"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Naam (alt-tekst)"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (optioneel)"
+        },
+        {
+          "type": "range",
+          "id": "scale",
+          "label": "Schaal",
+          "min": 20,
+          "max": 200,
+          "step": 2,
+          "unit": "%",
+          "default": 100
+        },
+        {
+          "type": "text",
+          "id": "ratio",
+          "label": "Verhouding beeldvlak (breed / hoog)",
+          "default": "1",
+          "info": "Bijv. 1 (vierkant), 600 / 150 (breed woordmerk)."
+        },
+        {
+          "type": "range",
+          "id": "radius",
+          "label": "Afronding",
+          "min": 0,
+          "max": 50,
+          "step": 1,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Uitsnede (lege rand wegsnijden)"
+        },
+        {
+          "type": "number",
+          "id": "crop_x",
+          "label": "Links (%)",
+          "default": 0
+        },
+        {
+          "type": "number",
+          "id": "crop_y",
+          "label": "Boven (%)",
+          "default": 0
+        },
+        {
+          "type": "number",
+          "id": "crop_w",
+          "label": "Breedte (%)",
+          "default": 100
+        },
+        {
+          "type": "number",
+          "id": "crop_h",
+          "label": "Hoogte (%)",
+          "default": 100
+        }
+      ]
+    }
+  ],
+  "max_blocks": 16,
+  "presets": [
+    {
+      "name": "HÏ 09 · Logoband",
+      "blocks": [
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "V.V. Spirit",
+            "scale": 108,
+            "ratio": "252 / 300",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "Say Yes To Health (SYTH)",
+            "scale": 84,
+            "ratio": "1",
+            "radius": 12,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "Sport 2000",
+            "scale": 96,
+            "ratio": "1",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "Concordia",
+            "scale": 108,
+            "ratio": "234 / 282",
+            "radius": 0,
+            "crop_x": -27.35,
+            "crop_y": -13.48,
+            "crop_w": 153.85,
+            "crop_h": 122.34
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "MyHealth Club",
+            "scale": 50,
+            "ratio": "600 / 150",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": -166.67,
+            "crop_w": 100,
+            "crop_h": 400
+          }
+        },
+        {
+          "type": "logo",
+          "settings": {
+            "alt": "Hogeschool Rotterdam",
+            "scale": 84,
+            "ratio": "1",
+            "radius": 12,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

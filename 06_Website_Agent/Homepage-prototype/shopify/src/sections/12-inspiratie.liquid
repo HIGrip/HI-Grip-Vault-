@@ -1,0 +1,22 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 12 · Slogan: twee reuzenregels die bij binnenscrollen uit hun masker komen en daarna uit elkaar
+  schuiven, met een brede knop waarvan de pijl meeloopt.
+  @example
+  <!-- Homepage > HÏ 12 · Slogan -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-12" data-hp="12" aria-labelledby="hp-12-h-{{ section.id }}" data-spread-d="{{ s.spread_d }}" data-spread-m="{{ s.spread_m }}"{% unless s.motion %} data-motion="off"{% endunless %}>
+  <div class="hp-12-inner">
+    <{{ tag }} class="hp-12-title" id="hp-12-h-{{ section.id }}"><span class="hp-12-l hp-12-l--1"><span class="hp-12-in">{{ s.line_1 }}</span></span> <span class="hp-12-l hp-12-l--2"><span class="hp-12-in">{{ s.line_2 }}</span></span></{{ tag }}>
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-pill--light hp-12-cta" href="{{ s.cta_link }}"><span class="hp-12-cta__label">{{ s.cta_label }}</span><span class="hp-pill__chev hp-12-cta__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

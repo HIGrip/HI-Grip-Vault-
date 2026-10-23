@@ -1,0 +1,51 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 05 · Features: 360°-opname van de sok (frames uit Instellingen > Bestanden) met features als blokken.
+  Elke feature heeft een draaipositie (frame) en een markerpunt. Motion: één rondgang bij binnenkomst, daarna loopt
+  de sok zelf de features langs; hover, tik, slepen en pijltjes kiezen zelf.
+  @example
+  <!-- Homepage > HÏ 05 · Features (360°) -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign f0name = s.frame_prefix | append: '000.webp'
+  assign f0 = f0name | file_url
+  assign fbase = f0 | split: '?' | first
+  assign first = section.blocks | first
+-%}
+{%- render 'hp-base' -%}
+{%- comment -%}HP:STYLE{%- endcomment -%}
+<section class="hp-section hp-section--flush hp-05" data-hp="05" aria-labelledby="hp-05-h2-{{ section.id }}" data-frames="{{ fbase }}" data-n="{{ s.frame_count }}" data-step="{{ s.frame_step }}" data-cycle="{{ s.cycle }}"{% unless s.intro %} data-intro="off"{% endunless %}{% unless s.auto %} data-auto="off"{% endunless %}>
+  <div class="hp-05-pin">
+    <{{ tag }} class="hp-sr" id="hp-05-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>
+
+    <p class="hp-05-giant" aria-hidden="true"><span class="hp-05-giant__in">{{ first.settings.name }}</span></p>
+
+    <div class="hp-05-media">
+      <div class="hp-05-stage" id="hp-05-stage-{{ section.id }}" tabindex="0" role="slider" aria-label="{{ s.stage_label | escape }}" aria-valuemin="0" aria-valuemax="359" aria-valuenow="0">
+        <img class="hp-05-stage__img" src="{{ f0 }}" width="{{ s.frame_size }}" height="{{ s.frame_size }}" loading="lazy" decoding="async" alt="{{ s.stage_alt | escape }}">
+        <canvas class="hp-05-stage__canvas" aria-hidden="true"></canvas>
+        <span class="hp-05-mark" aria-hidden="true"><span class="hp-05-mark__ring"><span class="hp-05-mark__no"></span></span></span>
+      </div>
+      <div class="hp-05-controls">
+        <span class="hp-05-dial" aria-hidden="true"><span class="hp-05-dial__tick"></span></span>
+        <button class="hp-05-reset" type="button" aria-controls="hp-05-stage-{{ section.id }}">{{ s.reset_label }}</button>
+      </div>
+    </div>
+
+    <p class="hp-05-detail" aria-hidden="true">{{ first.settings.text }}</p>
+
+    <ol class="hp-05-list">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <li {{ block.shopify_attributes }}><button class="hp-05-feat" type="button" data-f="f{{ forloop.index }}" data-no="{{ forloop.index }}" data-frame="{{ b.frame }}" data-mark="{{ b.mark_x | divided_by: 100.0 }},{{ b.mark_y | divided_by: 100.0 }},{{ b.mark_z | divided_by: 100.0 }}" aria-pressed="false" aria-controls="hp-05-stage-{{ section.id }}"><span class="hp-05-feat__no" aria-hidden="true">{{ forloop.index }}</span><span class="hp-05-feat__name">{{ b.name }}</span><span class="hp-05-feat__spec">{{ b.spec }}</span><span class="hp-05-feat__text">{{ b.text }}</span></button></li>
+      {%- endfor -%}
+    </ol>
+
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-05-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{%- comment -%}HP:SCHEMA{%- endcomment -%}

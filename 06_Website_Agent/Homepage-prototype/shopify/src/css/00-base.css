@@ -1,0 +1,110 @@
+/* HÏ Grip homepage-prototype · base. Gedeeld door alle secties; secties schrijven alleen .hp-NN-*.
+   Artifact-eisen: titel van 2–4 woorden in index.html, één vaste lichte merklook (geen dark-mode, body met expliciete achtergrond),
+   gutter via max(16px, env(safe-area-inset-*)), nooit horizontale scroll. */
+/* Shopify: alles is gescoped op .hp-section, zodat header, footer, winkelwagen en de andere pagina's van het thema
+   ongemoeid blijven. Eerst de element-regels van het thema (base.css, hi-headings.css) terugzetten naar de
+   browserstandaard, dan de basis van het prototype. :where() houdt de specificiteit op die van een element, en dit
+   bestand laadt na de themastijlen, dus deze regels winnen van het thema en verliezen van elke klasse in de secties. */
+:where(.hp-section) :is(h1, h2, h3, h4, h5, h6, p, a, summary, figure, ul, ol, li, dl, dt, dd, address, img, video, canvas, svg, picture, button, details) { all: revert; box-sizing: border-box; }
+.hp-section { box-sizing: border-box; overflow-x: clip; background: var(--hi-white); color: var(--hi-black); font: 400 var(--hp-type-body)/1.6 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); -webkit-font-smoothing: antialiased; text-align: start; text-transform: none; word-spacing: normal; overflow-wrap: normal; font-variation-settings: normal; }
+:where(.hp-section) *, :where(.hp-section) *::before, :where(.hp-section) *::after { box-sizing: border-box; }
+:where(.hp-section) :is(img, video, svg) { display: block; max-width: 100%; }
+:where(.hp-section) img { height: auto; }
+:where(.hp-section) a { color: inherit; }
+:where(.hp-section) button { font: inherit; color: inherit; letter-spacing: inherit; }
+:where(.hp-section) :is(h1, h2, h3, p, figure, ul, ol) { margin: 0; }
+:where(.hp-section) :is(ul, ol) { padding: 0; list-style: none; }
+:where(.hp-section) :is(h1, h2, h3) { font-family: var(--hp-type-family); text-transform: uppercase; text-wrap: balance; letter-spacing: var(--hp-type-track-head); }
+:where(.hp-section) :focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+:where(.hp-section) ::selection { background: var(--hi-yellow); color: var(--hi-black); }
+/* thema-regels met een hogere specificiteit dan een element: hover-kleur van links in een alinea, van summary,
+   en hoofdletters op elke kop (hi-headings.css) */
+.hp-section p a:hover, .hp-section summary:hover { color: inherit; }
+
+/* sectie en container */
+.hp-section { position: relative; padding-block: calc(var(--hp-space-section) * var(--hp-pt-k, 1) + var(--hp-pt-add, 0px)) calc(var(--hp-space-section) * var(--hp-pb-k, 1) + var(--hp-pb-add, 0px)); }
+.hp-section--flush { padding-block: var(--hp-pt-add, 0px) var(--hp-pb-add, 0px); }
+/* ruimte boven/onder per sectie: --hp-pt-k/--hp-pb-k schalen de ontwerpwaarde, --hp-pt-add/--hp-pb-add tellen er px bij
+   (de sectie-instellingen zetten ze; zonder instelling is alles exact het ontwerp) */
+.hp-container {
+  width: 100%;
+  max-width: calc(var(--hp-space-max) + var(--hp-space-gutter) + var(--hp-space-gutter-r));
+  margin-inline: auto;
+  padding-left: var(--hp-space-gutter);
+  padding-right: var(--hp-space-gutter-r);
+}
+@media (min-width: 769px) {
+  .hp-container { padding-left: max(40px, env(safe-area-inset-left, 0px)); padding-right: max(40px, env(safe-area-inset-right, 0px)); }
+}
+
+/* type-helpers */
+.hp-h2 { font-weight: 800; font-size: calc(var(--hp-type-h2) * var(--hp-h2-k, 1)); line-height: 0.98; }
+.hp-lead { font-size: calc(var(--hp-type-lead) * var(--hp-lead-k, 1)); line-height: 1.55; max-width: 46ch; }
+.hp-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* mediaframe: afgerond, vaste verhouding via --hp-ar */
+.hp-media { position: relative; overflow: hidden; border-radius: var(--hp-radius-media); aspect-ratio: var(--hp-ar, 4 / 5); max-width: 100%; background: var(--hi-near-black); }
+.hp-media > img, .hp-media > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* CTA: pill met chevron. Zwart op licht, wit op donker. Nooit een accentkleur als vulling. */
+.hp-pill {
+  display: inline-flex; align-items: center; gap: 14px;
+  min-height: 52px; padding: 6px 6px 6px 24px;
+  border: 0; border-radius: var(--hp-btn-r, 999px);
+  font: 700 calc(14px * var(--hp-btn-k, 1))/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase;
+  text-decoration: none; white-space: nowrap; cursor: pointer;
+  background: var(--hp-btn-bg, var(--hi-black)); color: var(--hp-btn-fg, var(--hi-white));
+  box-shadow: inset 0 0 0 var(--hp-btn-bw, 0px) var(--hp-btn-bd, transparent);
+  transition: background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease), box-shadow var(--hp-dur-1) var(--hp-ease);
+}
+.hp-pill__chev { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--hp-btn-cbg, var(--hi-white)); color: var(--hp-btn-cfg, var(--hi-black)); transition: transform var(--hp-dur-1) var(--hp-ease), background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease); }
+.hp-pill__chev svg { width: 14px; height: 14px; }
+.hp-pill--light { background: var(--hp-btn-bg, var(--hi-white)); color: var(--hp-btn-fg, var(--hi-black)); }
+.hp-pill--light .hp-pill__chev { background: var(--hp-btn-cbg, var(--hi-black)); color: var(--hp-btn-cfg, var(--hi-white)); }
+@media (hover: hover) {
+  .hp-pill:hover .hp-pill__chev { transform: translateX(3px); }
+  /* hover-kleuren: zonder instelling gelijk aan de rustkleuren */
+  .hp-pill:hover { background: var(--hp-btn-hbg, var(--hp-btn-bg, var(--hi-black))); color: var(--hp-btn-hfg, var(--hp-btn-fg, var(--hi-white))); box-shadow: inset 0 0 0 var(--hp-btn-bw, 0px) var(--hp-btn-hbd, var(--hp-btn-bd, transparent)); }
+  .hp-pill--light:hover { background: var(--hp-btn-hbg, var(--hp-btn-bg, var(--hi-white))); color: var(--hp-btn-hfg, var(--hp-btn-fg, var(--hi-black))); }
+  .hp-pill:hover .hp-pill__chev { background: var(--hp-btn-hcbg, var(--hp-btn-cbg, var(--hi-white))); color: var(--hp-btn-hcfg, var(--hp-btn-cfg, var(--hi-black))); }
+  .hp-pill--light:hover .hp-pill__chev { background: var(--hp-btn-hcbg, var(--hp-btn-cbg, var(--hi-black))); color: var(--hp-btn-hcfg, var(--hp-btn-cfg, var(--hi-white))); }
+}
+.hp-pill:active .hp-pill__chev { transform: translateX(3px); }
+
+/* lightbox (base.js: hpLightbox) */
+.hp-lightbox { width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: var(--hp-space-sm); border: 0; background: var(--hi-scrim-strong); color: var(--hi-white); }
+.hp-lightbox::backdrop { background: transparent; }
+.hp-lightbox[open] { display: grid; place-items: center; }
+.hp-lightbox__fig { display: grid; gap: var(--hp-space-sm); justify-items: center; max-width: min(1200px, 100%); }
+.hp-lightbox__img { max-height: 82vh; width: auto; border-radius: var(--hp-radius-media); }
+.hp-lightbox__cap { font-size: var(--hp-type-small); color: var(--hi-titanium); text-align: center; }
+.hp-lightbox__btn { position: absolute; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; border: 1.5px solid var(--hi-line-dark); background: transparent; color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease); }
+.hp-lightbox__btn svg { width: 16px; height: 16px; }
+@media (hover: hover) { .hp-lightbox__btn:hover { border-color: var(--hi-white); } }
+.hp-lightbox__close { top: calc(var(--hp-space-sm) + env(safe-area-inset-top, 0px)); right: calc(var(--hp-space-sm) + env(safe-area-inset-right, 0px)); }
+.hp-lightbox__prev { left: calc(var(--hp-space-sm) + env(safe-area-inset-left, 0px)); top: 50%; translate: 0 -50%; }
+.hp-lightbox__next { right: calc(var(--hp-space-sm) + env(safe-area-inset-right, 0px)); top: 50%; translate: 0 -50%; }
+.hp-lightbox__prev[hidden], .hp-lightbox__next[hidden] { display: none; }
+@media (max-width: 768px) {
+  /* mobiel: vorige/volgende onder de foto, niet eroverheen */
+  .hp-lightbox__fig { padding-bottom: 72px; }
+  .hp-lightbox__prev, .hp-lightbox__next { top: auto; translate: none; bottom: calc(var(--hp-space-sm) + env(safe-area-inset-bottom, 0px)); }
+  .hp-lightbox__prev { left: calc(50% - 56px); }
+  .hp-lightbox__next { right: calc(50% - 56px); }
+}
+html.hp-lock { overflow: hidden; }
+
+/* reduced motion: alles staat direct in de eindstand */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+/* 1.5 · eenheid (Lars 19-10: "creëer een geheel"). Elke sectie met een kop gebruikt hetzelfde kopblok:
+   kop links (ExtraBold 800, h2-maat, hoofdletters), optionele lead ernaast op desktop, dezelfde ruimte eronder. */
+.hp-head { display: grid; gap: var(--hp-space-sm); margin-bottom: var(--hp-space-ml); }
+.hp-head .hp-h2 { max-width: 18ch; }
+@media (min-width: 769px) {
+  .hp-head { grid-template-columns: minmax(0, 1fr) minmax(0, 40ch); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-head .hp-lead { justify-self: end; }
+}
+

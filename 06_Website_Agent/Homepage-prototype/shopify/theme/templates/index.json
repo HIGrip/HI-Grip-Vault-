@@ -1,0 +1,1449 @@
+{
+  "sections": {
+    "hp_01": {
+      "type": "hp-01-hero",
+      "settings": {
+        "show_bar": true,
+        "hide_theme_header": true,
+        "logo_text": "HÏ Grip",
+        "logo_h": 28,
+        "logo_label": "HÏ Grip, naar de homepage",
+        "logo_link": "/",
+        "nav_label": "Hoofdmenu",
+        "menu_open": "Menu",
+        "menu_close": "Sluit menu",
+        "logo_m": 22,
+        "logo_d": 26,
+        "nav_m": 13,
+        "nav_d": 13,
+        "menu_bg": "#FFFFFF",
+        "menu_fg": "#0A0A0A",
+        "image": "shopify://shop_images/hp-hero-padel-zool-2400.webp",
+        "pos_m_x": 52,
+        "pos_m_y": 50,
+        "pos_d_x": 50,
+        "pos_d_y": 42,
+        "scrim_t": "#0A0A0A",
+        "scrim_t_a": 32,
+        "scrim_b": "#0A0A0A",
+        "scrim_b_a": 86,
+        "anim_breathe": true,
+        "anim_zoom": true,
+        "anim_rise": true,
+        "heading": "Performance gripsokken voor sporters",
+        "heading_tag": "h1",
+        "sub": "Je voet blijft op zijn plek in je schoen. Bij elke rem, draai en sprint.",
+        "def": "HÏ Grip is een Nederlands sportmerk voor performance gripsokken, voor padel, tennis, voetbal en rugby.",
+        "cta_label": "Shop gripsokken",
+        "cta_link": "/collections/gripsokken",
+        "align": "left",
+        "h1_m": 41,
+        "h1_d": 74,
+        "h1_mw_m": 13,
+        "h1_mw_d": 12,
+        "h1_c": "#FFFFFF",
+        "sub_m": 15,
+        "sub_d": 19,
+        "sub_c": "#FFFFFF",
+        "def_m": 13,
+        "def_d": 14,
+        "def_c": "#FFFFFF",
+        "def_o": 72,
+        "bg": "#111111",
+        "fg": "#FFFFFF",
+        "h_svh": 100,
+        "minh_m": 560,
+        "minh_d": 640,
+        "maxh": 1100,
+        "stage_pb_m": 32,
+        "stage_pb_d": 64,
+        "btn_m": 14,
+        "btn_d": 14,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      },
+      "blocks": {
+        "link_1": {
+          "type": "link",
+          "settings": {
+            "label": "Shop",
+            "link": "/collections/gripsokken"
+          }
+        },
+        "link_2": {
+          "type": "link",
+          "settings": {
+            "label": "Sporten",
+            "link": "#sporten"
+          }
+        },
+        "link_3": {
+          "type": "link",
+          "settings": {
+            "label": "Over ons",
+            "link": "/pages/over-ons"
+          }
+        },
+        "link_4": {
+          "type": "link",
+          "settings": {
+            "label": "Zakelijk",
+            "link": "/pages/zakelijk"
+          }
+        }
+      },
+      "block_order": [
+        "link_1",
+        "link_2",
+        "link_3",
+        "link_4"
+      ]
+    },
+    "hp_02": {
+      "type": "hp-02-kies-je-paar",
+      "settings": {
+        "heading": "Kies je paar",
+        "heading_tag": "h2",
+        "h2_m": 32,
+        "h2_d": 64,
+        "h2_c": "#FFFFFF",
+        "colors_label": "Kleur",
+        "img_r_m": 16,
+        "img_r_d": 26,
+        "media_bg": "#EAE8E5",
+        "tag_m": 11,
+        "tag_d": 11,
+        "tag_bg": "#0A0A0A",
+        "tag_fg": "#FFFFFF",
+        "tag_volt": "#CCFF00",
+        "title_m": 17,
+        "title_d": 29,
+        "title_c": "#FFFFFF",
+        "price_m": 15,
+        "price_d": 23,
+        "price_c": "#FFFFFF",
+        "sub_m": 11,
+        "sub_d": 12,
+        "sub_c_m": "#909194",
+        "sub_c_d": "#CCFF00",
+        "bul_m": 12,
+        "bul_d": 16,
+        "bul_c": "#FFFFFF",
+        "dot_c": "#FFFFFF",
+        "sizes_m": 11,
+        "sizes_d": 13,
+        "sizes_c": "#909194",
+        "cname_c": "#909194",
+        "anim_cards": true,
+        "anim_mood": true,
+        "show_compare": true,
+        "compare_link": "/pages/gripsokken-vergelijken",
+        "compare_aria": "Vergelijk de Performance Gripsokken 1.0 en 2.0",
+        "compare_k": "Twijfel je?",
+        "compare_v": "Leg ze naast elkaar",
+        "vs": "vs",
+        "disc_a": "shopify://shop_images/hp-sh-sok-10.webp",
+        "disc_b": "shopify://shop_images/hp-sh-sok-20-zwart.webp",
+        "duel_bg": "#FFFFFF",
+        "duel_fg": "#0A0A0A",
+        "duel_k_c": "#1A1A1A",
+        "duel_k_m": 11,
+        "duel_k_d": 11,
+        "duel_v_m": 16,
+        "duel_v_d": 22,
+        "duel_disc": "#EAE8E5",
+        "duel_cbg": "#0A0A0A",
+        "duel_cfg": "#FFFFFF",
+        "duel_vs_bg": "#0A0A0A",
+        "duel_vs_fg": "#CCFF00",
+        "anim_duel": true,
+        "bg": "#111111",
+        "fg": "#FFFFFF",
+        "pt_m": 64,
+        "pt_d": 32,
+        "pb_m": 32,
+        "pb_d": 32,
+        "btn_m": 12,
+        "btn_d": 14,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      },
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/hp-sh-sok-10.webp",
+            "mood": "shopify://shop_images/hp-sh-sq-padel.webp",
+            "media_label": "Padelspeler strikt zijn schoen, witte gripsokken op een blauwe baan",
+            "tag": "Prijsvriendelijk",
+            "tag_style": "wit",
+            "title": "Performance Gripsokken 1.0",
+            "price": "€14,95",
+            "sub": "Grip voor de scherpste prijs",
+            "bullets": "Siliconen gripzones onder de voet\nKatoenmix voor elke dag en elke training\nIdeaal voor training, pilates en recreatief sporten",
+            "sizes": "Maat 34–39 · 40–46",
+            "cta_label": "Shop 1.0",
+            "cta_link": "/products/performance-gripsokken",
+            "cta_aria": "Shop de Performance Gripsokken 1.0",
+            "name_a": "Zwart",
+            "swatch_a": "#0A0A0A",
+            "name_b": "Wit",
+            "swatch_b": "#FFFFFF"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/hp-sh-sok-20-zwart.webp",
+            "image_b": "shopify://shop_images/hp-sh-sok-20-wit.webp",
+            "mood": "shopify://shop_images/hp-sh-sq-tennis.webp",
+            "media_label": "Tennisser in gripsokken op de baan",
+            "tag": "Ultieme performance",
+            "tag_style": "volt",
+            "title": "Performance Gripsokken 2.0",
+            "price": "€17,95",
+            "sub": "Zeven features in één sok",
+            "bullets": "15–20 mmHg compressie en 30% Coolmax®\nNaadloos, met versterkte hiel\nGebouwd voor wedstrijd en intensieve training",
+            "sizes": "",
+            "cta_label": "Shop 2.0",
+            "cta_link": "/products/performance-gripsokken-2-0-zwart",
+            "cta_aria": "Shop de Performance Gripsokken 2.0",
+            "name_a": "Zwart",
+            "swatch_a": "#0A0A0A",
+            "link_a": "/products/performance-gripsokken-2-0-zwart",
+            "name_b": "Wit",
+            "swatch_b": "#FFFFFF",
+            "link_b": "/products/performance-gripsokken-2-0-wit"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2"
+      ]
+    },
+    "hp_03": {
+      "type": "hp-03-bewijsbalk",
+      "settings": {
+        "label": "Waarom sporters voor HÏ Grip kiezen",
+        "speed": 52,
+        "dir": "-1",
+        "skew": 9,
+        "item_m": 18,
+        "item_d": 24,
+        "item_c": "#0A0A0A",
+        "sep_c": "#0A0A0A",
+        "sep_o": 50,
+        "sep_gap": 28,
+        "bg": "#CCFF00",
+        "fg": "#0A0A0A",
+        "pt_m": 16,
+        "pt_d": 18,
+        "pb_m": 16,
+        "pb_d": 18
+      },
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "big": "3500+",
+            "count": true,
+            "star": false,
+            "small": "sporters gingen je voor",
+            "new_tab": true
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "big": "4,6",
+            "count": false,
+            "star": true,
+            "small": "op Trustpilot",
+            "link": "https://nl.trustpilot.com/review/higrip.nl",
+            "new_tab": true
+          }
+        },
+        "line_3": {
+          "type": "line",
+          "settings": {
+            "text": "Binnen 1 werkdag verzonden"
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "line_3"
+      ]
+    },
+    "hp_04": {
+      "type": "hp-04-fotoraster",
+      "settings": {
+        "heading": "Op de baan, het veld en in de gym",
+        "heading_tag": "h2",
+        "lead": "Echte sporters, echte wedstrijden.",
+        "head_layout": "split",
+        "h2_m": 32,
+        "h2_d": 64,
+        "h2_c": "#FFFFFF",
+        "lead_m": 17,
+        "lead_d": 19,
+        "lead_c": "#909194",
+        "grid_h": 78,
+        "grid_hw": 52,
+        "gap": 12,
+        "img_r_m": 16,
+        "img_r_d": 26,
+        "sport_m": 28,
+        "sport_d": 100,
+        "sport_s_m": 26,
+        "sport_s_d": 58,
+        "go_m": 13,
+        "go_d": 13,
+        "label_c": "#FFFFFF",
+        "chev_bg": "#FFFFFF",
+        "chev_fg": "#0A0A0A",
+        "scrim": "#0A0A0A",
+        "scrim_a": 86,
+        "scrim_h": 46,
+        "zoom": true,
+        "bg": "#0A0A0A",
+        "fg": "#FFFFFF",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 44,
+        "pb_d": 72
+      },
+      "blocks": {
+        "photo_1": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-padel-voeten-1800.webp",
+            "alt": "Padelspeler strikt zijn schoen, witte gripsokken, racket en ballen op een blauwe baan",
+            "pos_x": 66,
+            "pos_y": 50,
+            "sport": "Padel",
+            "go": "Gripsokken voor padel",
+            "link": "/pages/gripsokken-voor-padel"
+          }
+        },
+        "photo_2": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-tennis-wit-1179.webp",
+            "alt": "Tennisser in witte gripsokken op de baan",
+            "pos_x": 50,
+            "pos_y": 50,
+            "sport": "Tennis",
+            "go": "Gripsokken voor tennis",
+            "link": "/pages/gripsokken-voor-tennis"
+          }
+        },
+        "photo_3": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-voetbal-zool-1800.webp",
+            "alt": "Voetballer op kunstgras, witte gripsokken met grippatroon onder de zool",
+            "pos_x": 68,
+            "pos_y": 50,
+            "sport": "Voetbal",
+            "go": "Gripsokken voor voetbal",
+            "link": "/pages/gripsokken-voor-voetbal"
+          }
+        },
+        "photo_4": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-gym-1800.webp",
+            "alt": "Sporter in witte gripsokken traint met een halterstang in de gym",
+            "pos_x": 50,
+            "pos_y": 50,
+            "sport": "Gym",
+            "go": "Performance gripsokken",
+            "link": "/collections/gripsokken"
+          }
+        }
+      },
+      "block_order": [
+        "photo_1",
+        "photo_2",
+        "photo_3",
+        "photo_4"
+      ]
+    },
+    "hp_05": {
+      "type": "hp-05-features",
+      "settings": {
+        "heading": "De features van de Performance Gripsokken 2.0",
+        "heading_tag": "h2",
+        "giant_m": 43,
+        "giant_d": 60,
+        "giant_c": "#0A0A0A",
+        "cta_label": "Shop de 2.0",
+        "cta_link": "/products/performance-gripsokken-2-0-zwart",
+        "reset_label": "Hele sok",
+        "frame_prefix": "hp-f360-s",
+        "frame_count": 137,
+        "frame_step": 3,
+        "frame_size": 1600,
+        "stage_label": "Sleep om te draaien",
+        "stage_alt": "360-gradenopname van de Performance Gripsokken 2.0 in wit. Sleep om te draaien.",
+        "intro": true,
+        "auto": true,
+        "cycle": 4.5,
+        "fname_m": 15,
+        "fname_d": 19,
+        "fspec_m": 16,
+        "fspec_d": 30,
+        "ftext_m": 14,
+        "ftext_d": 15,
+        "feat_c": "#1A1A1A",
+        "feat_on": "#0A0A0A",
+        "spec_c": "#1A1A1A",
+        "line_c": "#0A0A0A",
+        "line_c_a": 12,
+        "line_on": "#0A0A0A",
+        "detail_c": "#0A0A0A",
+        "detail_m": 15,
+        "detail_d": 15,
+        "mark_ring": "#0A0A0A",
+        "mark_bg": "#0A0A0A",
+        "mark_fg": "#CCFF00",
+        "reset_bg": "#FFFFFF",
+        "reset_fg": "#1A1A1A",
+        "bg": "#F7F7F7",
+        "fg": "#0A0A0A",
+        "pin_pt_m": 32,
+        "pin_pt_d": 24,
+        "pin_pb_m": 16,
+        "pin_pb_d": 24,
+        "btn_m": 14,
+        "btn_d": 14,
+        "btn_bg": "#0A0A0A",
+        "btn_fg": "#FFFFFF",
+        "btn_cbg": "#FFFFFF",
+        "btn_cfg": "#0A0A0A",
+        "btn_bd": "#0A0A0A",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#0A0A0A",
+        "btn_hfg": "#FFFFFF",
+        "btn_hbd": "#0A0A0A",
+        "btn_hcbg": "#FFFFFF",
+        "btn_hcfg": "#0A0A0A"
+      },
+      "blocks": {
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "name": "Maximale grip",
+            "spec": "Siliconen zones",
+            "text": "Siliconen zones houden je voet vast in je schoen",
+            "frame": 96,
+            "mark_x": 50,
+            "mark_y": 74,
+            "mark_z": 10
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "name": "Compressie",
+            "spec": "15–20 mmHg",
+            "text": "15–20 mmHg ondersteunt je doorbloeding tijdens inspanning",
+            "frame": 264,
+            "mark_x": 41,
+            "mark_y": 43,
+            "mark_z": 8
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "name": "Versterkte hiel",
+            "spec": "Extra dikte",
+            "text": "Extra dikte precies onder je hiel",
+            "frame": 6,
+            "mark_x": 75.5,
+            "mark_y": 50,
+            "mark_z": 4
+          }
+        },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "name": "Ademend",
+            "spec": "Open structuur",
+            "text": "Open structuur bovenop de voet",
+            "frame": 300,
+            "mark_x": 35,
+            "mark_y": 60,
+            "mark_z": 8
+          }
+        },
+        "feature_5": {
+          "type": "feature",
+          "settings": {
+            "name": "Coolmax®",
+            "spec": "30% Coolmax",
+            "text": "30% Coolmax voert vocht direct af van de huid",
+            "frame": 360,
+            "mark_x": 49,
+            "mark_y": 30,
+            "mark_z": 10
+          }
+        },
+        "feature_6": {
+          "type": "feature",
+          "settings": {
+            "name": "Naadloos",
+            "spec": "Zonder stiksels",
+            "text": "Rondom gebreid zonder stiksels, naadloze teenzone",
+            "frame": 336,
+            "mark_x": 48,
+            "mark_y": 88,
+            "mark_z": 12
+          }
+        },
+        "feature_7": {
+          "type": "feature",
+          "settings": {
+            "name": "Special cushioning",
+            "spec": "Dempingzones",
+            "text": "Speciale dempingzones onder de voet",
+            "frame": 216,
+            "mark_x": 46,
+            "mark_y": 84,
+            "mark_z": 6
+          }
+        },
+        "feature_8": {
+          "type": "feature",
+          "settings": {
+            "name": "Hoogwaardige materialen",
+            "spec": "Gekozen garens",
+            "text": "Zorgvuldig gekozen garens voor meer comfort, wedstrijd na wedstrijd",
+            "frame": 0,
+            "mark_x": 56,
+            "mark_y": 50,
+            "mark_z": 10
+          }
+        }
+      },
+      "block_order": [
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8"
+      ]
+    },
+    "hp_06": {
+      "type": "hp-06-brandvideo",
+      "settings": {
+        "label": "HÏ Grip brandvideo",
+        "video_d_url": "https://cdn.shopify.com/videos/c/o/v/d2774d181fd441c3b28a5d486760c9eb.mp4",
+        "poster_d": "shopify://shop_images/hp-higrip-brandvideo-desktop-poster.jpg",
+        "video_m_url": "https://cdn.shopify.com/videos/c/o/v/739650e8f7bc4cf193acce847e5ee7bc.mp4",
+        "video_lo_url": "https://cdn.shopify.com/videos/c/o/v/78f88303e40b44c8be2efa7d886c4e31.mp4",
+        "poster_m": "shopify://shop_images/hp-higrip-brandvideo-poster.jpg",
+        "sr_1": "Je schoen grijpt de vloer. HÏ Grip zorgt dat je voet je schoen grijpt. Minder schuiven bij elke stop, elke draai en elke sprint, tot de laatste bal.",
+        "sr_2": "Ga door waar anderen stoppen.",
+        "cut": 9550,
+        "fade": 320,
+        "black": 500,
+        "hold": 5000,
+        "end_big": "Prestatie",
+        "end_sub": "telt.",
+        "end_big_m": 64,
+        "end_big_d": 215,
+        "end_big_c": "#CCFF00",
+        "end_sub_m": 32,
+        "end_sub_d": 86,
+        "end_sub_c": "#FFFFFF",
+        "end_bg": "#0A0A0A",
+        "leak": "#CCFF00",
+        "show_hud": true,
+        "brand": "HÏ Grip",
+        "total": "00:15",
+        "brand_m": 14,
+        "brand_d": 14,
+        "hud_m": 11,
+        "hud_d": 11,
+        "hud_c": "#FFFFFF",
+        "prog_bg": "#FFFFFF",
+        "prog_bg_a": 16,
+        "prog_fg": "#CCFF00",
+        "btn6_bg": "#0A0A0A",
+        "btn6_fg": "#FFFFFF",
+        "snd_on": "#CCFF00",
+        "l_play": "Speel de film af",
+        "l_pause": "Pauzeer de film",
+        "l_sound_on": "Zet het geluid aan",
+        "l_sound_off": "Zet het geluid uit",
+        "cta_label": "Shop de 2.0",
+        "cta_link": "/products/performance-gripsokken-2-0-zwart",
+        "near": 160,
+        "far": 220,
+        "btn_m": 16,
+        "btn_d": 18,
+        "bg": "#0A0A0A",
+        "fg": "#FFFFFF",
+        "h_m": 100,
+        "maxh_m": 980,
+        "maxh_d": 1100,
+        "dim": "#0A0A0A",
+        "dim_a": 32,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      }
+    },
+    "hp_07": {
+      "type": "hp-07-kies-je-sport",
+      "settings": {
+        "heading": "Kies je sport",
+        "heading_tag": "h2",
+        "lead": "Elke sport vraagt iets anders van je voet. Kies de jouwe en lees waarom grip daar telt.",
+        "head_layout": "split",
+        "anchor": "sporten",
+        "h2_m": 32,
+        "h2_d": 64,
+        "h2_c": "#FFFFFF",
+        "lead_m": 17,
+        "lead_d": 19,
+        "lead_c": "#909194",
+        "go_label": "Bekijk",
+        "name_m": 33,
+        "name_d": 66,
+        "name_c": "#FFFFFF",
+        "line_m": 15,
+        "line_d": 19,
+        "line_c": "#909194",
+        "img_r_m": 16,
+        "img_r_d": 26,
+        "gap_m": 10,
+        "gap_d": 32,
+        "streaks": true,
+        "tilt": true,
+        "row_label": "Sporten, sleep of gebruik de pijltjes",
+        "segs_label": "Kies een sport",
+        "prev_label": "Vorige sport",
+        "next_label": "Volgende sport",
+        "status_tpl": "{sport}, sport {n} van {total}",
+        "arrow_c": "#FFFFFF",
+        "seg_m": 15,
+        "seg_d": 18,
+        "bg": "#111111",
+        "fg": "#FFFFFF",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 44,
+        "pb_d": 72,
+        "btn_m": 12,
+        "btn_d": 14,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      },
+      "blocks": {
+        "sport_1": {
+          "type": "sport",
+          "settings": {
+            "name": "Padel",
+            "line": "Uit het glas, terug naar het net. Je voet blijft staan als jij afremt.",
+            "image": "shopify://shop_images/hp-sport-padel-2000.webp",
+            "alt": "Padelspeler in witte gripsokken op een blauwe padelbaan",
+            "link": "/pages/gripsokken-voor-padel",
+            "aria": "Gripsokken voor padel",
+            "color": "#0011A7",
+            "ink": "#FFFFFF",
+            "pos_x": 30,
+            "pos_y": 60,
+            "zoom_m": 120,
+            "zoom_d": 145,
+            "om_x": 34,
+            "om_y": 72,
+            "od_x": 35,
+            "od_y": 64
+          }
+        },
+        "sport_2": {
+          "type": "sport",
+          "settings": {
+            "name": "Tennis",
+            "line": "Split-step, landen, wegduwen. Geen speling in je schoen bij de eerste stap.",
+            "image": "shopify://shop_images/hp-sport-tennis-2048.webp",
+            "alt": "Tennisser in witte gripsokken op een gravelbaan",
+            "link": "/pages/gripsokken-voor-tennis",
+            "aria": "Gripsokken voor tennis",
+            "color": "#FF6A00",
+            "ink": "#0A0A0A",
+            "pos_x": 45,
+            "pos_y": 70,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        },
+        "sport_3": {
+          "type": "sport",
+          "settings": {
+            "name": "Voetbal",
+            "line": "Wegdraaien bij je man zonder dat je voet in je schoen meedraait.",
+            "image": "shopify://shop_images/hp-sport-voetbal-2000.webp",
+            "alt": "Voetballer in HÏ Grip-shirt haalt uit op een kunstgrasveld",
+            "link": "/pages/gripsokken-voor-voetbal",
+            "aria": "Gripsokken voor voetbal",
+            "color": "#CCFF00",
+            "ink": "#0A0A0A",
+            "pos_x": 56,
+            "pos_y": 50,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        },
+        "sport_4": {
+          "type": "sport",
+          "settings": {
+            "name": "Rugby",
+            "line": "Duwen in de scrum tot de bal eruit is. Je voet geeft geen centimeter weg.",
+            "image": "shopify://shop_images/hp-sport-rugby-1600.webp",
+            "alt": "Rugbyspelers in een scrum op een grasveld",
+            "link": "/pages/gripsokken-voor-rugby",
+            "aria": "Gripsokken voor rugby",
+            "color": "#E10600",
+            "ink": "#FFFFFF",
+            "pos_x": 58,
+            "pos_y": 60,
+            "zoom_m": 100,
+            "zoom_d": 100,
+            "om_x": 50,
+            "om_y": 50,
+            "od_x": 50,
+            "od_y": 50
+          }
+        }
+      },
+      "block_order": [
+        "sport_1",
+        "sport_2",
+        "sport_3",
+        "sport_4"
+      ]
+    },
+    "hp_08": {
+      "type": "hp-08-over-ons",
+      "settings": {
+        "lines": "Sportswear\nis het\nfundament van\npresteren.",
+        "heading_tag": "h2",
+        "sr_prefix": "Over HÏ Grip:",
+        "loop_c": "#CCFF00",
+        "loop_m": 38,
+        "loop_d": 66,
+        "cycle": true,
+        "period": 870,
+        "stagger": 80,
+        "panel_bg": "#0A0A0A",
+        "loop_align": "center",
+        "image": "shopify://shop_images/hp-teamfoto-2000.webp",
+        "photo_side": "right",
+        "scale_m": 190,
+        "scale_d": 120,
+        "orig_y_m": 22,
+        "orig_y_d": 45.5,
+        "orig_x": 50,
+        "reveal": true,
+        "media_bg": "#111111",
+        "cta_label": "Ons verhaal",
+        "cta_link": "/pages/over-ons",
+        "follow": true,
+        "cta_m": 20,
+        "cta_d": 24,
+        "bg": "#0A0A0A",
+        "fg": "#FFFFFF",
+        "h_d": 100,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      }
+    },
+    "hp_14": {
+      "type": "hp-14-teamorders",
+      "settings": {
+        "heading_a": "Bestel als team.",
+        "heading_b": "Bespaar per paar.",
+        "heading_tag": "h2",
+        "h2_m": 37,
+        "h2_d": 96,
+        "h2a_c": "#0A0A0A",
+        "h2b_c": "#CCFF00",
+        "image": "shopify://shop_images/hp-ai-teamorder-800.webp",
+        "lead": "Eén bestelling voor je hele team. Hoe meer paar, hoe lager de prijs per paar, en iedereen krijgt de maat die past.",
+        "lead_m": 16,
+        "lead_d": 19,
+        "lead_c": "#FFFFFF",
+        "cta_label": "Ontdek teamorders",
+        "cta_link": "/pages/teamorder",
+        "pos_y": 52,
+        "minh_d": 560,
+        "grad": "#0A0A0A",
+        "grad_a": 86,
+        "parallax": true,
+        "img_r_m": 16,
+        "img_r_d": 26,
+        "blok_bg": "#0A0A0A",
+        "blok_fg": "#FFFFFF",
+        "no_c": "#CCFF00",
+        "no_m": 24,
+        "no_d": 28,
+        "tt_m": 16,
+        "tt_d": 22,
+        "td_m": 14,
+        "td_d": 15,
+        "td_o": 72,
+        "gap": 12,
+        "rise": true,
+        "bg": "#FFFFFF",
+        "fg": "#0A0A0A",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 44,
+        "pb_d": 72,
+        "btn_m": 14,
+        "btn_d": 14,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      },
+      "blocks": {
+        "blok_1": {
+          "type": "blok",
+          "settings": {
+            "image": "shopify://shop_images/hp-sport-rugby-900.webp",
+            "pos_x": 50,
+            "pos_y": 40,
+            "no": "01",
+            "title": "Staffelkorting",
+            "text": "Meer paar, lagere prijs per paar."
+          }
+        },
+        "blok_2": {
+          "type": "blok",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-voetbal-zool-900.webp",
+            "pos_x": 50,
+            "pos_y": 60,
+            "no": "02",
+            "title": "Snelle levering",
+            "text": "Je teamorder snel in huis."
+          }
+        },
+        "blok_3": {
+          "type": "blok",
+          "settings": {
+            "image": "shopify://shop_images/hp-sp-padel-voeten-900.webp",
+            "pos_x": 50,
+            "pos_y": 55,
+            "no": "03",
+            "title": "Eigen maat",
+            "text": "Per speler, van 35 t/m 47."
+          }
+        }
+      },
+      "block_order": [
+        "blok_1",
+        "blok_2",
+        "blok_3"
+      ]
+    },
+    "hp_09": {
+      "type": "hp-09-logoband",
+      "settings": {
+        "heading": "Clubs, winkels en studio's gingen je voor",
+        "heading_tag": "h2",
+        "h2_m": 22,
+        "h2_d": 35,
+        "h2_c": "#0A0A0A",
+        "loop": true,
+        "speed": 42,
+        "logo_h_m": 56,
+        "logo_h_d": 76,
+        "gap_m": 48,
+        "gap_d": 64,
+        "gray": true,
+        "dim": 60,
+        "bg": "#F7F7F7",
+        "fg": "#0A0A0A",
+        "pt_m": 32,
+        "pt_d": 48,
+        "pb_m": 32,
+        "pb_d": 48
+      },
+      "blocks": {
+        "logo_1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-spirit-252.webp",
+            "alt": "V.V. Spirit",
+            "scale": 108,
+            "ratio": "252 / 300",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        "logo_2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-syth-512.webp",
+            "alt": "Say Yes To Health (SYTH)",
+            "scale": 84,
+            "ratio": "1",
+            "radius": 12,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        "logo_3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-sport2000-240.webp",
+            "alt": "Sport 2000",
+            "scale": 96,
+            "ratio": "1",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        },
+        "logo_4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-concordia-360.webp",
+            "alt": "Concordia",
+            "scale": 108,
+            "ratio": "234 / 282",
+            "radius": 0,
+            "crop_x": -27.35,
+            "crop_y": -13.48,
+            "crop_w": 153.85,
+            "crop_h": 122.34
+          }
+        },
+        "logo_5": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-myhealthclub-600.webp",
+            "alt": "MyHealth Club",
+            "scale": 50,
+            "ratio": "600 / 150",
+            "radius": 0,
+            "crop_x": 0,
+            "crop_y": -166.67,
+            "crop_w": 100,
+            "crop_h": 400
+          }
+        },
+        "logo_6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-hr-500.webp",
+            "alt": "Hogeschool Rotterdam",
+            "scale": 84,
+            "ratio": "1",
+            "radius": 12,
+            "crop_x": 0,
+            "crop_y": 0,
+            "crop_w": 100,
+            "crop_h": 100
+          }
+        }
+      },
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "logo_3",
+        "logo_4",
+        "logo_5",
+        "logo_6"
+      ]
+    },
+    "hp_10": {
+      "type": "hp-10-zakelijk",
+      "settings": {
+        "heading": "HÏ Grip voor je club, winkel of studio",
+        "heading_tag": "h2",
+        "lead": "Eigen kleuren voor je club, grip in je schap of een eigen ontwerp voor je studio. Je begint met een gratis sample.",
+        "h2_m": 36,
+        "h2_d": 78,
+        "h2_c": "#FFFFFF",
+        "lead_m": 17,
+        "lead_d": 19,
+        "lead_c": "#909194",
+        "show_ticket": true,
+        "ticket_big": "Gratis sample",
+        "ticket_sub": "binnen 1 werkdag verzonden",
+        "ticket_cta": "Vraag een gratis sample",
+        "ticket_link": "/pages/zakelijk",
+        "ticket_bg": "#FFFFFF",
+        "ticket_fg": "#0A0A0A",
+        "ticket_sub_c": "#1A1A1A",
+        "ticket_big_m": 36,
+        "ticket_big_d": 64,
+        "ticket_sub_m": 14,
+        "ticket_sub_d": 14,
+        "btn_m": 14,
+        "btn_d": 14,
+        "btn_bg": "#0A0A0A",
+        "btn_fg": "#FFFFFF",
+        "btn_cbg": "#FFFFFF",
+        "btn_cfg": "#0A0A0A",
+        "btn_bd": "#0A0A0A",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#0A0A0A",
+        "btn_hfg": "#FFFFFF",
+        "btn_hbd": "#0A0A0A",
+        "btn_hcbg": "#FFFFFF",
+        "btn_hcfg": "#0A0A0A",
+        "count": true,
+        "title_m": 18,
+        "title_d": 29,
+        "title_c": "#FFFFFF",
+        "text_m": 12,
+        "text_d": 15,
+        "text_c_m": "#FFFFFF",
+        "text_c_d": "#909194",
+        "cue_m": 10,
+        "cue_d": 13,
+        "stat_v_m": 16,
+        "stat_v_d": 52,
+        "stat_bg": "#0A0A0A",
+        "stat_fg": "#FFFFFF",
+        "stat_k_c": "#909194",
+        "media_light": "#FFFFFF",
+        "img_r_m": 1,
+        "img_r_d": 26,
+        "bg": "#0A0A0A",
+        "fg": "#FFFFFF",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 44,
+        "pb_d": 72
+      },
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/hp-b2b-club-spirit-1000.webp",
+            "alt": "Speler van V.V. Spirit in gele clubsokken met witte HÏ Grip-gripsokken eronder",
+            "img_style": "cover",
+            "stat_k": "vanaf",
+            "stat_v": "150 paar",
+            "stat_count": true,
+            "title": "Sportclubs",
+            "text": "Eigen logo en kleuren vanaf 150 paar. Eén uitstraling op het veld, voor al je teams.",
+            "cue": "Voor clubs",
+            "link": "/pages/zakelijk#clubs"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/hp-b2b-sok-zwart-900.webp",
+            "alt": "Performance Grip Socks 2.0 in zwart, vrijstaand",
+            "img_style": "contain",
+            "stat_k": "vanaf",
+            "stat_v": "6 paar",
+            "stat_count": true,
+            "title": "Sportwinkels",
+            "text": "Staffelprijzen vanaf 6 paar en een adviesprijs van €19,95. Je klant voelt het verschil zodra hij hem aantrekt.",
+            "cue": "Voor winkels",
+            "link": "/pages/zakelijk#retailers"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/hp-b2b-sokhoogtes-900.webp",
+            "alt": "Zes soklengtes van no show tot over-the-calf, te personaliseren met eigen kleur en logo",
+            "img_style": "sheet",
+            "stat_k": "voor jouw merk",
+            "stat_v": "eigen ontwerp",
+            "stat_count": false,
+            "title": "Personalisatie",
+            "text": "Wij maken de sok naar jouw ontwerp: kleur, lengte, logo en verpakking.",
+            "cue": "Personaliseer",
+            "link": "/pages/zakelijk#clubs"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ]
+    },
+    "hp_11": {
+      "type": "hp-11-faq",
+      "settings": {
+        "heading": "Veelgestelde vragen",
+        "heading_tag": "h2",
+        "h2_m": 32,
+        "h2_d": 64,
+        "h2_c": "#0A0A0A",
+        "schema": true,
+        "q_m": 15,
+        "q_d": 17,
+        "q_c": "#0A0A0A",
+        "no_m": 15,
+        "no_d": 17,
+        "no_c": "#1A1A1A",
+        "a_m": 15,
+        "a_d": 15,
+        "a_c": "#0A0A0A",
+        "open_bg": "#EAE8E5",
+        "btn_c": "#0A0A0A",
+        "line_top": "#0A0A0A",
+        "line_c": "#0A0A0A",
+        "line_c_a": 12,
+        "bg": "#FFFFFF",
+        "fg": "#0A0A0A",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 44,
+        "pb_d": 72
+      },
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "q": "Wat zijn gripsokken?",
+            "a": "<p>Gripsokken zijn sportsokken met een grippatroon op de zool. Dat patroon houdt je voet op zijn plek in je schoen, zodat je minder over je binnenzool glijdt bij afremmen, draaien en wegsprinten.</p>",
+            "open": false
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "q": "Werken gripsokken echt?",
+            "a": "<p>Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, dus 95% meer grip (Apps et al. 2022). Het onderzoek gaat over gripsokken in het algemeen, niet over een test van HÏ Grip.</p>",
+            "open": false,
+            "l1_label": "Lees het onderzoek (Apps et al. 2022)",
+            "l1_url": "https://doi.org/10.1080/02640414.2022.2080163",
+            "l1_tab": true,
+            "l2_label": "De wetenschap achter gripsokken",
+            "l2_url": "/blogs/hi-grip/de-wetenschap-achter-gripsokken",
+            "l2_tab": false
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "q": "Voor welke sporten zijn gripsokken?",
+            "a": "<p>Voor elke sport waarin je snel afremt en draait: padel, tennis, voetbal en rugby. Per sport lees je op een eigen pagina waarom grip daar telt.</p>",
+            "open": false,
+            "l1_label": "Gripsokken voor padel",
+            "l1_url": "/pages/gripsokken-voor-padel",
+            "l1_tab": false,
+            "l2_label": "Gripsokken voor voetbal",
+            "l2_url": "/pages/gripsokken-voor-voetbal",
+            "l2_tab": false
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "q": "Waarom glijdt mijn voet in mijn padelschoen?",
+            "a": "<p>Bij afremmen, draaien en wegsprinten schuift je voet over de binnenzool van je schoen, zeker als je sok vochtig wordt. Een gripsok heeft een grippatroon onder de zool dat je voet op zijn plek houdt, zodat je voet en schoen samen bewegen.</p>",
+            "open": false,
+            "l1_label": "Meer over gripsokken voor padel",
+            "l1_url": "/pages/gripsokken-voor-padel",
+            "l1_tab": false
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "q": "Draag je gripsokken onder of over je clubkous?",
+            "a": "<p>Onder. De gripsok zit direct om je voet en je clubkous gaat eroverheen. Veel voetballers dragen daarom een clubkous zonder voet, zodat de grip direct tegen de binnenzool van je schoen zit.</p>",
+            "open": false,
+            "l1_label": "Meer over gripsokken voor voetbal",
+            "l1_url": "/pages/gripsokken-voor-voetbal",
+            "l1_tab": false
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "q": "Wat is het verschil tussen de 1.0 en de 2.0?",
+            "a": "<p>Allebei hebben ze siliconen grip onder de zool. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel en special cushioning toe.</p>",
+            "open": false
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "q": "Wat kosten HÏ Grip gripsokken?",
+            "a": "<p>De Performance Gripsokken (1.0) kosten €14,95 per paar, €35,95 voor een 3-pack en €54,95 voor een 5-pack. De Performance Gripsokken 2.0 kosten €17,95 per paar, in zwart of wit.</p>",
+            "open": false
+          }
+        },
+        "faq_8": {
+          "type": "faq",
+          "settings": {
+            "q": "Welke maat kies ik?",
+            "a": "<p>Kies de maat die bij je schoenmaat past. De 1.0 is er in 34–39 en 40–46, de 2.0 in 35–38, 39–42 en 43–47.</p>",
+            "open": false
+          }
+        },
+        "faq_9": {
+          "type": "faq",
+          "settings": {
+            "q": "Kan mijn club of winkel zakelijk bestellen?",
+            "a": "<p>Ja. Sportwinkels bestellen met staffelprijzen vanaf 6 paar, clubs en studio's kunnen vanaf 150 paar een eigen logo en eigen kleuren laten maken. Een sample is gratis.</p>",
+            "open": false
+          }
+        },
+        "faq_10": {
+          "type": "faq",
+          "settings": {
+            "q": "Wat zeggen sporters over HÏ Grip?",
+            "a": "<p>HÏ Grip scoort 4,6 sterren op Trustpilot, en 3500+ sporters gingen je voor.</p>",
+            "open": false,
+            "l1_label": "Lees de reviews op Trustpilot",
+            "l1_url": "https://nl.trustpilot.com/review/higrip.nl",
+            "l1_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "faq_9",
+        "faq_10"
+      ]
+    },
+    "hp_12": {
+      "type": "hp-12-slogan",
+      "settings": {
+        "line_1": "Ga door waar",
+        "line_2": "anderen stoppen.",
+        "heading_tag": "h2",
+        "title_m": 37,
+        "title_d": 140,
+        "l1_c": "#FFFFFF",
+        "l2_c": "#CCFF00",
+        "motion": true,
+        "spread_d": 18,
+        "spread_m": 12,
+        "cta_label": "Shop gripsokken",
+        "cta_link": "/collections/gripsokken",
+        "btn_m": 15,
+        "btn_d": 17,
+        "cta_w": 560,
+        "bg": "#0A0A0A",
+        "fg": "#FFFFFF",
+        "pt_m": 96,
+        "pt_d": 96,
+        "pb_m": 96,
+        "pb_d": 96,
+        "minh": 90,
+        "btn_bg": "#FFFFFF",
+        "btn_fg": "#0A0A0A",
+        "btn_cbg": "#0A0A0A",
+        "btn_cfg": "#FFFFFF",
+        "btn_bd": "#FFFFFF",
+        "btn_bw": 0,
+        "btn_r": 100,
+        "btn_hbg": "#FFFFFF",
+        "btn_hfg": "#0A0A0A",
+        "btn_hbd": "#FFFFFF",
+        "btn_hcbg": "#0A0A0A",
+        "btn_hcfg": "#FFFFFF"
+      }
+    },
+    "hp_13": {
+      "type": "hp-13-footer",
+      "settings": {
+        "hide_theme_footer": true,
+        "line": "Performance Grip Socks voor de sporter die doorgaat waar anderen stoppen.",
+        "slogan": "More grip, better performance.",
+        "line_m": 22,
+        "line_d": 27,
+        "line_c": "#FFFFFF",
+        "slogan_c": "#909194",
+        "title_m": 12,
+        "title_d": 12,
+        "title_c": "#CCFF00",
+        "link_m": 15,
+        "link_d": 15,
+        "link_c": "#FFFFFF",
+        "meta_c": "#909194",
+        "copyright": "© 2026 HÏ Grip · higrip.nl",
+        "legal": "Algemene voorwaarden | /policies/terms-of-service\nWettelijke kennisgeving | /policies/legal-notice\nBetalingsbeleid | /pages/terugbetalingsbeleid\nPrivacybeleid | /pages/privacybeleid",
+        "pay_title": "Betaalmethoden",
+        "pay": "American Express\nApple Pay\nGoogle Pay\niDEAL Wero\nKlarna\nMaestro\nMastercard\nPayPal\nUnion Pay\nVisa",
+        "base_c": "#909194",
+        "pay_c": "#FFFFFF",
+        "base_line": "#FFFFFF",
+        "base_line_a": 16,
+        "mark": "HÏ Grip",
+        "mark_f": 334,
+        "mark_c": "#FFFFFF",
+        "bg": "#111111",
+        "fg": "#FFFFFF",
+        "pt_m": 44,
+        "pt_d": 72,
+        "pb_m": 32,
+        "pb_d": 32
+      },
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Shop",
+            "links": "Alle gripsokken | /collections/gripsokken\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Sporten",
+            "links": "Padel | /pages/gripsokken-voor-padel\nTennis | /pages/gripsokken-voor-tennis\nVoetbal | /pages/gripsokken-voor-voetbal\nRugby | /pages/gripsokken-voor-rugby"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "HÏ Grip",
+            "links": "Over ons | /pages/over-ons\nZakelijk | /pages/zakelijk\nWaarom HÏ Grip | /blogs/hi-grip/waarom-hi-grip-gripsokken\nReviews | https://nl.trustpilot.com/review/higrip.nl"
+          }
+        },
+        "column_4": {
+          "type": "column",
+          "settings": {
+            "title": "Service",
+            "links": "Veelgestelde vragen | /pages/veelgestelde-vragen\nVerzending | /pages/verzendbeleid\nRetourneren | /pages/retourbeleid\nContact | /pages/contact"
+          }
+        },
+        "contact_5": {
+          "type": "contact",
+          "settings": {
+            "title": "Volg ons",
+            "links": "Instagram | https://instagram.com/higrip.nl\nTikTok | https://tiktok.com/@higrip.nl\nLinkedIn | https://linkedin.com/company/h%C3%AF-grip/about/\nFacebook | https://facebook.com/profile.php?id=61569860846565",
+            "email": "info@higrip.nl",
+            "phone": "+31 6 24 56 65 47",
+            "kvk_label": "KVK",
+            "kvk": "97210129",
+            "btw_label": "BTW",
+            "btw": "NL867952283B01"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "contact_5"
+      ]
+    }
+  },
+  "order": [
+    "hp_01",
+    "hp_02",
+    "hp_03",
+    "hp_04",
+    "hp_05",
+    "hp_06",
+    "hp_07",
+    "hp_08",
+    "hp_14",
+    "hp_09",
+    "hp_10",
+    "hp_11",
+    "hp_12",
+    "hp_13"
+  ]
+}

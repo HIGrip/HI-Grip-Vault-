@@ -1,0 +1,63 @@
+/* 1.36c: kop zwart en volt (volt met zwarte rand, zodat het ook op wit leest); elk blok een eigen mini-animatie: dalende staffel, een team dat het balletje doorgeeft, een maatlat van 35 tot 47.
+   14 SPORTTEAMS · 1.36b (Lars 22-10: niet mooi; het zwarte blokje 03 is mooi, maak de rest hetzelfde; foto, tekst en titel anders).
+   Rustig en strak, zonder versiering: een kop in twee tinten (zwart, dan titanium), daaronder een bento. Links één grote foto in
+   kleur met de lead en de knop er direct op (de actie zit in het beeld, niet ernaast); rechts drie gelijke zwarte blokken zoals 03:
+   volt nummer, wit icoon, titel en regel onderaan. Mobiel: foto met tekst, daaronder de drie blokken onder elkaar.
+   Beweging: de foto schuift licht mee, de blokken rijzen na elkaar op. Reduced motion: stil. */
+.hp-14 { background: var(--hi-white); color: var(--hi-black); overflow-x: clip; }
+.hp-14-inner { display: grid; row-gap: var(--hp-space-ms); }
+.hp-14-h2 { font: italic 900 clamp(34px, 9.4vw, 44px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); word-spacing: 0.08em; text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; padding-right: 0.06em; }
+.hp-14-h2__b { color: var(--hi-yellow); }
+
+.hp-14-bento { display: grid; gap: 12px; }
+.hp-14-media { position: relative; overflow: hidden; isolation: isolate; aspect-ratio: 4 / 5; border-radius: var(--hp-radius-media); background: var(--hi-near-black); color: var(--hi-white); }
+.hp-14-img { position: absolute; left: 0; top: -4%; width: 100%; height: 108%; object-fit: cover; object-position: 50% 52%; will-change: transform; }
+.hp-14-media::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(to top, var(--hi-black) 0%, var(--hi-scrim-strong) 34%, transparent 66%); }
+.hp-14-cap { position: absolute; z-index: 2; left: var(--hp-space-sm); right: var(--hp-space-sm); bottom: var(--hp-space-sm); display: grid; gap: var(--hp-space-sm); justify-items: start; }
+.hp-14-lead { max-width: 40ch; font-size: 16px; line-height: 1.5; }
+
+.hp-14-bloks { display: grid; gap: 12px; }
+.hp-14-blok {
+  position: relative; display: grid; grid-template-columns: 40px minmax(0, 1fr); align-items: end; column-gap: var(--hp-space-sm); row-gap: var(--hp-space-md);
+  min-height: 150px; padding: var(--hp-space-ms) var(--hp-space-ms) var(--hp-space-ms) var(--hp-space-sm); border-radius: var(--hp-radius-media);
+  background: var(--hi-black); color: var(--hi-white);
+}
+.hp-14-no { position: absolute; top: var(--hp-space-sm); right: var(--hp-space-sm); font: italic 900 24px/1 var(--hp-type-family); letter-spacing: -0.04em; color: var(--hi-yellow); }
+.hp-14-ico { width: 40px; height: 40px; align-self: start; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.hp-14-itext { display: grid; gap: 4px; grid-column: 1 / -1; }
+.hp-14-blok { grid-template-rows: auto auto; align-content: space-between; }
+.hp-14-tt { font: 800 16px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); text-transform: uppercase; }
+.hp-14-td { font-size: 14px; line-height: 1.4; opacity: 0.72; }
+
+.hp-motion .hp-14-blok { transform: translateY(32px); transition: transform var(--hp-dur-3) var(--hp-ease); }
+.hp-motion .hp-14-bloks.is-in .hp-14-blok { transform: none; }
+.hp-motion .hp-14-bloks.is-in .hp-14-blok:nth-child(2) { transition-delay: calc(var(--hp-dur-1) * 1.5); }
+.hp-motion .hp-14-bloks.is-in .hp-14-blok:nth-child(3) { transition-delay: calc(var(--hp-dur-1) * 3); }
+
+@media (min-width: 900px) {
+  .hp-14-inner { row-gap: var(--hp-space-ml); }
+  .hp-14-h2 { font-size: clamp(52px, 6.6vw, 108px); line-height: 0.98; }
+  .hp-14-bento { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 12px; align-items: stretch; }
+  .hp-14-media { aspect-ratio: auto; min-height: 560px; }
+  .hp-14-cap { left: var(--hp-space-md); right: var(--hp-space-md); bottom: var(--hp-space-md); gap: var(--hp-space-ms); }
+  .hp-14-lead { font-size: var(--hp-type-lead); max-width: 34ch; }
+  .hp-14-bloks { grid-template-rows: repeat(3, minmax(0, 1fr)); }
+  .hp-14-blok { min-height: 0; padding: var(--hp-space-ms) var(--hp-space-md) var(--hp-space-ms) var(--hp-space-ms); }
+  .hp-14-no { top: var(--hp-space-ms); right: var(--hp-space-md); font-size: 28px; }
+  .hp-14-tt { font-size: clamp(17px, 1.5vw, 22px); }
+  .hp-14-td { font-size: 15px; }
+}
+
+
+/* 1.36d (Lars 22-10: de mini-animaties zijn AI-sjabloon; foto's erin) · elk blok is een sportfoto onder een zwart verloop: rugby-scrum
+   (een team, staffel), voetbal (snel), een speler die zijn sok aantrekt (eigen maat). Hover of tik: de foto zoomt licht in. */
+.hp-14-blok { overflow: hidden; isolation: isolate; min-height: 190px; }
+.hp-14-blok { grid-template-rows: 1fr auto; align-content: stretch; }
+.hp-14-itext { grid-row: 2; align-self: end; }
+.hp-14-bg { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: var(--pos, 50% 50%); transition: scale var(--hp-dur-3) var(--hp-ease); }
+.hp-14-blok::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, var(--hi-black) 0%, var(--hi-scrim-strong) 42%, var(--hi-scrim) 100%); }
+.hp-14-blok:active .hp-14-bg { scale: 1.06; }
+@media (hover: hover) { .hp-14-blok:hover .hp-14-bg { scale: 1.06; } }
+@media (min-width: 900px) { .hp-14-blok { min-height: 0; } }
+

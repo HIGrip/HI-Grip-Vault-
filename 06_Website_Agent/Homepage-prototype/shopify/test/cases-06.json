@@ -1,0 +1,19 @@
+[
+ {"name":"06 eindbeeld: grote tekst kleur","sec":"06","vp":[1440,900],"cls":"is-end","ov":{"hp_06":{"end_big_c":"#FF00FF"}}},
+ {"name":"06 eindbeeld: grote tekst laptop","sec":"06","vp":[1440,900],"cls":"is-end","ov":{"hp_06":{"end_big_d":60}}},
+ {"name":"06 eindbeeld: grote tekst mobiel","sec":"06","vp":[390,844],"cls":"is-end","ov":{"hp_06":{"end_big_m":30}}},
+ {"name":"06 eindbeeld: tweede regel kleur","sec":"06","vp":[390,844],"cls":"is-end","ov":{"hp_06":{"end_sub_c":"#FF00FF"}}},
+ {"name":"06 eindbeeld: tweede regel mobiel","sec":"06","vp":[390,844],"cls":"is-end","ov":{"hp_06":{"end_sub_m":10}}},
+ {"name":"06 eindbeeld: tweede regel laptop","sec":"06","vp":[1440,900],"cls":"is-end","ov":{"hp_06":{"end_sub_d":10}}},
+ {"name":"06 eindbeeld: achtergrond","sec":"06","vp":[1440,900],"cls":"is-end","ov":{"hp_06":{"end_bg":"#FF00FF"}}},
+ {"name":"06 eindbeeld: lichtvlek","sec":"06","vp":[1440,900],"cls":"is-end","ov":{"hp_06":{"leak":"#FF00FF"}}},
+ {"name":"06 knop bij cursor: achtergrond","sec":"06","vp":[1440,900],"cls":"is-near","ov":{"hp_06":{"btn_bg":"#FF00FF"}}},
+ {"name":"06 knop bij cursor: tekstgrootte laptop","sec":"06","vp":[1440,900],"cls":"is-near","ov":{"hp_06":{"btn_d":24}}},
+ {"name":"06 knop: tekstgrootte mobiel","sec":"06","vp":[390,844],"cls":"is-near","ov":{"hp_06":{"btn_m":22}}},
+ {"name":"06 knop bij cursor: radius","sec":"06","vp":[1440,900],"cls":"is-near","ov":{"hp_06":{"btn_r":4}}},
+ {"name":"06 zijpanelen gedimd","sec":"06","vp":[1440,900],"ov":{"hp_06":{"dim":"#FF00FF","dim_a":90}}},
+ {"name":"06 achtergrond (zwart moment)","sec":"06","vp":[1440,900],"cls":"is-black","ov":{"hp_06":{"bg":"#FF00FF"}}},
+ {"name":"06 max hoogte mobiel 400","sec":"06","vp":[390,844],"ov":{"hp_06":{"maxh_m":400}}},
+ {"name":"06 max hoogte laptop 400","sec":"06","vp":[1440,900],"ov":{"hp_06":{"maxh_d":400}}},
+ {"name":"06 geluid aan kleur","sec":"06","vp":[1440,900],"ov":{"hp_06":{"snd_on":"#FF00FF"}},"click":".hp-06-sound"}
+]

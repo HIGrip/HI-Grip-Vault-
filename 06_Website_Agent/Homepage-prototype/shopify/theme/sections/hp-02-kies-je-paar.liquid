@@ -1,0 +1,899 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 02 · Kies je paar: productkaarten (blokken) met sfeerbeeld bij hover/tik, optionele kleurstaaltjes,
+  en daaronder de vergelijkknop ("duel"). Motion: kaarten schuiven scroll-gekoppeld in, staaltjes vegen.
+  @example
+  <!-- Homepage > HÏ 02 · Kies je paar -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-02-h2_c: {{ s.h2_c }}; --hp-02-media_bg: {{ s.media_bg }}; --hp-02-tag_bg: {{ s.tag_bg }}; --hp-02-tag_fg: {{ s.tag_fg }}; --hp-02-tag_volt: {{ s.tag_volt }}; --hp-02-title_c: {{ s.title_c }}; --hp-02-price_c: {{ s.price_c }}; --hp-02-bul_c: {{ s.bul_c }}; --hp-02-dot_c: {{ s.dot_c }}; --hp-02-sizes_c: {{ s.sizes_c }}; --hp-02-cname_c: {{ s.cname_c }}; --hp-02-duel_bg: {{ s.duel_bg }}; --hp-02-duel_fg: {{ s.duel_fg }}; --hp-02-duel_k_c: {{ s.duel_k_c }}; --hp-02-duel_disc: {{ s.duel_disc }}; --hp-02-duel_cbg: {{ s.duel_cbg }}; --hp-02-duel_cfg: {{ s.duel_cfg }}; --hp-02-duel_vs_bg: {{ s.duel_vs_bg }}; --hp-02-duel_vs_fg: {{ s.duel_vs_fg }}; --hp-02-bg: {{ s.bg }}; --hp-02-fg: {{ s.fg }}; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-02-h2-k: {{ s.h2_m | times: 1.0 | divided_by: 32 }}; --hp-02-r-k: {{ s.img_r_m | times: 1.0 | divided_by: 16 }}; --hp-02-tag-k: {{ s.tag_m | times: 1.0 | divided_by: 11 }}; --hp-02-title-k: {{ s.title_m | times: 1.0 | divided_by: 17 }}; --hp-02-price-k: {{ s.price_m | times: 1.0 | divided_by: 15 }}; --hp-02-sub-k: {{ s.sub_m | times: 1.0 | divided_by: 11 }}; --hp-02-sub_c: {{ s.sub_c_m }}; --hp-02-bul-k: {{ s.bul_m | times: 1.0 | divided_by: 12 }}; --hp-02-sizes-k: {{ s.sizes_m | times: 1.0 | divided_by: 11 }}; --hp-02-duelk-k: {{ s.duel_k_m | times: 1.0 | divided_by: 11 }}; --hp-02-duelv-k: {{ s.duel_v_m | times: 1.0 | divided_by: 16 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 64 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 32 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 12 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-02-h2-k: {{ s.h2_d | times: 1.0 | divided_by: 64 }}; --hp-02-r-k: {{ s.img_r_d | times: 1.0 | divided_by: 26 }}; --hp-02-tag-k: {{ s.tag_d | times: 1.0 | divided_by: 11 }}; --hp-02-title-k: {{ s.title_d | times: 1.0 | divided_by: 29 }}; --hp-02-price-k: {{ s.price_d | times: 1.0 | divided_by: 23 }}; --hp-02-sub-k: {{ s.sub_d | times: 1.0 | divided_by: 12 }}; --hp-02-sub_c: {{ s.sub_c_d }}; --hp-02-bul-k: {{ s.bul_d | times: 1.0 | divided_by: 16 }}; --hp-02-sizes-k: {{ s.sizes_d | times: 1.0 | divided_by: 13 }}; --hp-02-duelk-k: {{ s.duel_k_d | times: 1.0 | divided_by: 11 }}; --hp-02-duelv-k: {{ s.duel_v_d | times: 1.0 | divided_by: 22 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 32 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 32 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 14 }};} }
+{%- unless s.anim_cards -%}#shopify-section-{{ section.id }} .hp-02-card { transform: none !important; }{%- endunless -%}
+{%- unless s.anim_mood -%}#shopify-section-{{ section.id }} .hp-02-media__mood { display: none; } #shopify-section-{{ section.id }} .hp-02-media .hp-02-media__prod { transform: none !important; }{%- endunless -%}
+{%- unless s.anim_duel -%}#shopify-section-{{ section.id }} .hp-02-duel__disc { animation: none !important; }{%- endunless -%}
+</style>
+<section class="hp-section hp-02" data-hp="02" aria-labelledby="hp-02-h2-{{ section.id }}">
+  <div class="hp-container hp-02-inner">
+    {%- if s.heading != blank -%}
+      <header class="hp-head hp-02-headblock"><{{ tag }} class="hp-h2 hp-02-h2" id="hp-02-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}></header>
+    {%- endif -%}
+
+    <ul class="hp-02-list" data-hp-02-list>
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign b = block.settings
+          assign two = false
+          if b.image_b != blank
+            assign two = true
+          endif
+          assign mod = forloop.index | modulo: 2
+          if mod == 1
+            assign cls = 'hp-02-card--10'
+          else
+            assign cls = 'hp-02-card--20'
+          endif
+          assign price = b.price
+          if price == blank and b.product != blank
+            assign price = b.product.price | money
+          endif
+          assign link_a = b.link_a | default: b.cta_link
+        -%}
+        <li class="hp-02-card {{ cls }}" data-hp-02-card{% if two %} data-color="zwart"{% endif %} style="--hp-02-sw-a: {{ b.swatch_a }}; --hp-02-sw-b: {{ b.swatch_b }};" {{ block.shopify_attributes }}>
+          <button class="hp-02-media" type="button" aria-pressed="false" aria-label="{{ b.media_label | escape }}">
+            {%- if two -%}
+              {%- render 'hp-img', image: b.image, class: 'hp-02-media__prod hp-02-media__prod--zwart', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900' -%}
+              {%- render 'hp-img', image: b.image_b, class: 'hp-02-media__prod hp-02-media__prod--wit', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900', attrs: 'aria-hidden="true"' -%}
+            {%- else -%}
+              {%- render 'hp-img', image: b.image, class: 'hp-02-media__prod', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900' -%}
+            {%- endif -%}
+            {%- render 'hp-img', image: b.mood, class: 'hp-02-media__mood', sizes: '(min-width: 769px) 50vw, 50vw', widths: '400,800' -%}
+            {%- if b.tag != blank -%}<span class="hp-02-tag{% if b.tag_style == 'volt' %} hp-02-tag--volt{% endif %}">{{ b.tag }}</span>{%- endif -%}
+          </button>
+          <div class="hp-02-head">
+            <h3 class="hp-02-title">{{ b.title }}</h3>
+            {%- if price != blank -%}<span class="hp-02-price">{{ price }}</span>{%- endif -%}
+          </div>
+          {%- if b.sub != blank -%}<p class="hp-02-sub">{{ b.sub }}</p>{%- endif -%}
+          {%- assign lines = b.bullets | newline_to_br | split: '<br />' -%}
+          {%- if b.bullets != blank -%}
+            <ul class="hp-02-bullets">
+              {%- for l in lines -%}{%- assign t = l | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+            </ul>
+          {%- endif -%}
+          <div class="hp-02-foot">
+            {%- if two -%}
+              <div class="hp-02-colors" role="group" aria-label="{{ s.colors_label | escape }}">
+                <button class="hp-02-swatch hp-02-swatch--zwart" type="button" aria-pressed="true" data-color="zwart" data-href="{{ link_a }}"><span class="hp-sr">{{ b.name_a }}</span></button>
+                <button class="hp-02-swatch hp-02-swatch--wit" type="button" aria-pressed="false" data-color="wit" data-href="{{ b.link_b | default: link_a }}"><span class="hp-sr">{{ b.name_b }}</span></button>
+                <span class="hp-02-colorname" aria-hidden="true"><span class="hp-02-colorname__zwart">{{ b.name_a }}</span><span class="hp-02-colorname__wit">{{ b.name_b }}</span></span>
+              </div>
+            {%- elsif b.sizes != blank -%}
+              <p class="hp-02-sizes">{{ b.sizes }}</p>
+            {%- endif -%}
+            {%- if b.cta_label != blank -%}
+              <a class="hp-pill hp-pill--light hp-02-cta" href="{% if two %}{{ link_a }}{% else %}{{ b.cta_link }}{% endif %}"{% if two %} data-hp-02-cta{% endif %}{% if b.cta_aria != blank %} aria-label="{{ b.cta_aria | escape }}"{% endif %}>{{ b.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    {%- if s.show_compare -%}
+      <div class="hp-02-compare">
+        <a class="hp-02-duel" href="{{ s.compare_link }}" aria-label="{{ s.compare_aria | escape }}"><span class="hp-02-duel__socks" aria-hidden="true"><span class="hp-02-duel__disc hp-02-duel__disc--a">{%- render 'hp-img', image: s.disc_a, sizes: '72px', widths: '150,300', decorative: true -%}</span><span class="hp-02-duel__disc hp-02-duel__disc--b">{%- render 'hp-img', image: s.disc_b, sizes: '72px', widths: '150,300', decorative: true -%}</span><span class="hp-02-duel__vs">{{ s.vs }}</span></span><span class="hp-02-duel__txt"><span class="hp-02-duel__k">{{ s.compare_k }}</span><span class="hp-02-duel__v">{{ s.compare_v }}</span></span><span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 02 · Kies je paar",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Kies je paar"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "h2_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "h2_d",
+      "label": "Kop grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "color",
+      "id": "h2_c",
+      "label": "Kop kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "colors_label",
+      "label": "Kleurkiezer: toegankelijke naam",
+      "default": "Kleur"
+    },
+    {
+      "type": "header",
+      "content": "Kaarten"
+    },
+    {
+      "type": "paragraph",
+      "content": "Elke kaart is een blok: voeg kaarten toe, sleep ze in volgorde of verwijder ze. Met een tweede productfoto krijgt een kaart kleurstaaltjes."
+    },
+    {
+      "type": "range",
+      "id": "img_r_m",
+      "label": "Afronding beelden (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "img_r_d",
+      "label": "Afronding beelden (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "color",
+      "id": "media_bg",
+      "label": "Beeldvlak achtergrond",
+      "default": "#EAE8E5"
+    },
+    {
+      "type": "range",
+      "id": "tag_m",
+      "label": "Label op beeld: grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "tag_d",
+      "label": "Label op beeld: grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "color",
+      "id": "tag_bg",
+      "label": "Label op beeld: achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "tag_fg",
+      "label": "Label op beeld: tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "tag_volt",
+      "label": "Label op beeld (accent): tekst",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "title_m",
+      "label": "Titel grootte (mobiel)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "title_d",
+      "label": "Titel grootte (laptop)",
+      "min": 8,
+      "max": 108,
+      "step": 1,
+      "unit": "px",
+      "default": 29
+    },
+    {
+      "type": "color",
+      "id": "title_c",
+      "label": "Titel kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "price_m",
+      "label": "Prijs grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "price_d",
+      "label": "Prijs grootte (laptop)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 23
+    },
+    {
+      "type": "color",
+      "id": "price_c",
+      "label": "Prijs kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "sub_m",
+      "label": "Onderregel grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "sub_d",
+      "label": "Onderregel grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "sub_c_m",
+      "label": "Onderregel kleur (mobiel)",
+      "default": "#909194"
+    },
+    {
+      "type": "color",
+      "id": "sub_c_d",
+      "label": "Onderregel kleur (laptop)",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "bul_m",
+      "label": "Opsomming grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "bul_d",
+      "label": "Opsomming grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "bul_c",
+      "label": "Opsomming kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "dot_c",
+      "label": "Opsomming: bolletje",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "sizes_m",
+      "label": "Maten grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "sizes_d",
+      "label": "Maten grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "sizes_c",
+      "label": "Maten kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "color",
+      "id": "cname_c",
+      "label": "Kleurnaam naast staaltjes",
+      "default": "#909194"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_cards",
+      "label": "Kaarten schuiven in bij scrollen",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_mood",
+      "label": "Sfeerbeeld bij hover/tik",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Vergelijkknop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_compare",
+      "label": "Vergelijkknop tonen",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "compare_link",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "compare_aria",
+      "label": "Toegankelijke naam",
+      "default": "Vergelijk de Performance Gripsokken 1.0 en 2.0"
+    },
+    {
+      "type": "text",
+      "id": "compare_k",
+      "label": "Bovenregel",
+      "default": "Twijfel je?"
+    },
+    {
+      "type": "text",
+      "id": "compare_v",
+      "label": "Tekst",
+      "default": "Leg ze naast elkaar"
+    },
+    {
+      "type": "text",
+      "id": "vs",
+      "label": "Tekst tussen de schijven",
+      "default": "vs"
+    },
+    {
+      "type": "image_picker",
+      "id": "disc_a",
+      "label": "Schijf 1: foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "disc_b",
+      "label": "Schijf 2: foto"
+    },
+    {
+      "type": "color",
+      "id": "duel_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "duel_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "duel_k_c",
+      "label": "Bovenregel kleur",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "range",
+      "id": "duel_k_m",
+      "label": "Bovenregel grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "duel_k_d",
+      "label": "Bovenregel grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "duel_v_m",
+      "label": "Tekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "duel_v_d",
+      "label": "Tekst grootte (laptop)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "color",
+      "id": "duel_disc",
+      "label": "Schijf achtergrond",
+      "default": "#EAE8E5"
+    },
+    {
+      "type": "color",
+      "id": "duel_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "duel_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "duel_vs_bg",
+      "label": "\"vs\": achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "duel_vs_fg",
+      "label": "\"vs\": tekst",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_duel",
+      "label": "Schijven wisselen van plek (animatie)",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Productkaart",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Beeld"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Productfoto"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_b",
+          "label": "Productfoto tweede kleur (optioneel)",
+          "info": "Met een tweede foto verschijnen kleurstaaltjes in plaats van de maten."
+        },
+        {
+          "type": "image_picker",
+          "id": "mood",
+          "label": "Sfeerbeeld (bij hover/tik)"
+        },
+        {
+          "type": "text",
+          "id": "media_label",
+          "label": "Beeld: toegankelijke naam"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Label op het beeld"
+        },
+        {
+          "type": "select",
+          "id": "tag_style",
+          "label": "Label: stijl",
+          "options": [
+            {
+              "value": "wit",
+              "label": "Wit"
+            },
+            {
+              "value": "volt",
+              "label": "Accent (volt)"
+            }
+          ],
+          "default": "wit"
+        },
+        {
+          "type": "header",
+          "content": "Tekst"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Performance Gripsokken"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Prijs (tekst)",
+          "info": "Leeg = de prijs van het gekoppelde product."
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product (optioneel, voor de prijs)"
+        },
+        {
+          "type": "text",
+          "id": "sub",
+          "label": "Onderregel"
+        },
+        {
+          "type": "textarea",
+          "id": "bullets",
+          "label": "Opsomming (één punt per regel)",
+          "info": "Op mobiel staat alleen het eerste punt."
+        },
+        {
+          "type": "text",
+          "id": "sizes",
+          "label": "Maten (zonder kleurstaaltjes)"
+        },
+        {
+          "type": "header",
+          "content": "Knop"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "Knop: tekst",
+          "default": "Shop"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "Knop: link"
+        },
+        {
+          "type": "text",
+          "id": "cta_aria",
+          "label": "Knop: toegankelijke naam"
+        },
+        {
+          "type": "header",
+          "content": "Kleurstaaltjes"
+        },
+        {
+          "type": "text",
+          "id": "name_a",
+          "label": "Kleur 1: naam",
+          "default": "Zwart"
+        },
+        {
+          "type": "color",
+          "id": "swatch_a",
+          "label": "Kleur 1: staaltje",
+          "default": "#0A0A0A"
+        },
+        {
+          "type": "url",
+          "id": "link_a",
+          "label": "Kleur 1: link"
+        },
+        {
+          "type": "text",
+          "id": "name_b",
+          "label": "Kleur 2: naam",
+          "default": "Wit"
+        },
+        {
+          "type": "color",
+          "id": "swatch_b",
+          "label": "Kleur 2: staaltje",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "url",
+          "id": "link_b",
+          "label": "Kleur 2: link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "HÏ 02 · Kies je paar",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "media_label": "Padelspeler strikt zijn schoen, witte gripsokken op een blauwe baan",
+            "tag": "Prijsvriendelijk",
+            "tag_style": "wit",
+            "title": "Performance Gripsokken 1.0",
+            "price": "€14,95",
+            "sub": "Grip voor de scherpste prijs",
+            "bullets": "Siliconen gripzones onder de voet\nKatoenmix voor elke dag en elke training\nIdeaal voor training, pilates en recreatief sporten",
+            "sizes": "Maat 34–39 · 40–46",
+            "cta_label": "Shop 1.0",
+            "cta_link": "/products/performance-gripsokken",
+            "cta_aria": "Shop de Performance Gripsokken 1.0",
+            "name_a": "Zwart",
+            "swatch_a": "#0A0A0A",
+            "name_b": "Wit",
+            "swatch_b": "#FFFFFF"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "media_label": "Tennisser in gripsokken op de baan",
+            "tag": "Ultieme performance",
+            "tag_style": "volt",
+            "title": "Performance Gripsokken 2.0",
+            "price": "€17,95",
+            "sub": "Zeven features in één sok",
+            "bullets": "15–20 mmHg compressie en 30% Coolmax®\nNaadloos, met versterkte hiel\nGebouwd voor wedstrijd en intensieve training",
+            "sizes": "",
+            "cta_label": "Shop 2.0",
+            "cta_link": "/products/performance-gripsokken-2-0-zwart",
+            "cta_aria": "Shop de Performance Gripsokken 2.0",
+            "name_a": "Zwart",
+            "swatch_a": "#0A0A0A",
+            "link_a": "/products/performance-gripsokken-2-0-zwart",
+            "name_b": "Wit",
+            "swatch_b": "#FFFFFF",
+            "link_b": "/products/performance-gripsokken-2-0-wit"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

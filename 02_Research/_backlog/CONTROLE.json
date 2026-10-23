@@ -1,17 +1,17 @@
 {
- "laatste_run": "2026-10-22T05:02:53+02:00",
+ "laatste_run": "2026-10-23T05:05:03+02:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (sessies/aankopen/omzet/gsc_*), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
-   "controle": "Velden in 05_Research/_data/kpi.json op een los Shopify-omzetveld",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Velden in 02_Research/_data/kpi.json",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-09-03-analytics-kpi-meetgat#8d1d8e60": {
-   "bewijs": "google_data.py ga4 --dagen 28 geeft funnel: view_item_list 99 -> view_item 144 -> add_to_cart 43 -> begin_checkout 24 -> add_shipping_info 19 -> add_payment_info 10 -> purchase 7; grootste absolute drop-off is view_item (144) -> add_to_cart (43), een daling van 101. Nog niet als analyse vastgelegd in een notitie (boekhouding, geen onderzoek)",
-   "controle": "Funnel product → cart → checkout → betaling en grootste drop-off",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "funnel: view_item_list 98 -> view_item 141 -> add_to_cart 43 -> begin_checkout 24 -> add_shipping_info 19 -> add_payment_info 10 -> purchase 7; grootste absolute drop-off blijft view_item (141) -> add_to_cart (43), een daling van 98. Nog niet als analyse vastgelegd in een notitie (boekhouding, geen onderzoek)",
+   "controle": "Funnel-rapport product → cart → checkout → betaling via google_data.py ga4 --dagen 28 en de grootste absolute drop-off",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -25,7 +25,7 @@
   "2026-09-03-analytics-kpi-meetgat#997d251e": {
    "bewijs": "niet te controleren in deze routine: vereist historische GA4-taganalyse buiten de standaardrapporten, ongewijzigd",
    "controle": "achterhalen waarom de GA4-tag rond 1 januari 2026 stopte",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -98,14 +98,14 @@
   "2026-09-04-werkdossier-stand-van-zaken#b83b8e37": {
    "bewijs": "niet te controleren: popupgedrag vereist JS-rendering, ongewijzigd",
    "controle": "kortingspopup vertraging, Escape-sluiting, sluitknop ≥24px",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-09-04-werkdossier-stand-van-zaken#c1ccbbfc": {
    "bewijs": "collections(first:20) toont templateSuffix nog als '' (leeg) voor collectie Gripsokken (gid://shopify/Collection/659972129095), ongewijzigd",
-   "controle": "templateSuffix van de collectie Gripsokken",
-   "gecontroleerd": "2026-10-22",
+   "controle": "collections(first:20): templateSuffix van de collectie Gripsokken",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -141,8 +141,8 @@
   },
   "2026-09-04-werkdossier-stand-van-zaken#fc53b6be": {
    "bewijs": "geen los exportbestand gevonden in de vault, ongewijzigd",
-   "controle": "Bestaan van een Shopify Analytics-exportbestand (12 maanden)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Zoekactie op een Shopify Analytics-exportbestand in de vault",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -155,8 +155,8 @@
   },
   "2026-09-07-compliance-todo#08f96665": {
    "bewijs": "Compliance To-Do Lijst.md §3.4 toont nog '- [ ] Besluit nemen en vastleggen in de productbriefing', ongewijzigd",
-   "controle": "§3.4 van de Compliance To-Do Lijst op een vastgelegd besluit",
-   "gecontroleerd": "2026-10-22",
+   "controle": "§3.4 in Compliance To-Do Lijst.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -169,8 +169,8 @@
   },
   "2026-09-07-compliance-todo#0dcfc0b5": {
    "bewijs": "geen los copy-checklist-bestand gevonden; §2.4 ('Geen biocide-claims zonder dossier') staat nog alleen in Compliance To-Do Lijst.md, ongewijzigd",
-   "controle": "Bestaan van een losse copy-checklist met §2.4 biocide-claims",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Bestaan van een los copy-checklist-bestand en §2.4 in Compliance To-Do Lijst.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -360,7 +360,7 @@
   "2026-09-07-compliance-todo#e2982cd0": {
    "bewijs": "niet te controleren: vereist rendering-/accessibility-tools, ongewijzigd",
    "controle": "WCAG 2.1 AA: contrast, alt-teksten, focus-states, ondertiteling",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -374,7 +374,7 @@
   "2026-09-07-compliance-todo#e2fd0adb": {
    "bewijs": "niet te controleren: cookiebannergedrag vereist JS-rendering, ongewijzigd",
    "controle": "cookiebanner weiger-knop en Consent Mode v2",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -669,8 +669,8 @@
   },
   "2026-09-23-seo-conversietest-run-1#aef03a4a": {
    "bewijs": "productType is nog '' voor alle 3 producten; barcode nog leeg/null voor alle 8 varianten (SKU's wel aanwezig), ongewijzigd",
-   "controle": "productType en barcode van de 3 producten/8 varianten",
-   "gecontroleerd": "2026-10-22",
+   "controle": "productType en barcode van de 3 producten",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -898,7 +898,7 @@
   "2026-09-25-seo-audit#5497f485": {
    "bewijs": "niet te controleren zonder JS-rendering/viewport, ongewijzigd",
    "controle": "Staan titel/prijs/maat/ATC hoger op mobiele productpagina?",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -927,7 +927,7 @@
   "2026-09-25-seo-audit#78cb1b3e": {
    "bewijs": "niet te controleren zonder JS-rendering/viewport, ongewijzigd",
    "controle": "Is de ghosting in de aankondigingsbalk, cookiebanner en tap-targets gefixt?",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -955,7 +955,7 @@
   "2026-09-25-seo-audit#bb55f568": {
    "bewijs": "niet te controleren: vereist browsermeting (rendering) van het concepttheme, ongewijzigd",
    "controle": "Gebruiken afbeeldingen image_url+WebP en wat kosten ecomsend.js/block-cart.js?",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -1047,8 +1047,8 @@
   },
   "2026-09-26-onderzoek-nieuwe-routines#b267a978": {
    "bewijs": "run-analytics-query FROM sales SHOW orders SINCE -28d UNTIL today: 9 orders, ruim onder de drempel van 50; geen Klaviyo-koppeling bekend, ongewijzigd",
-   "controle": "Aantal orders in de laatste 28 dagen tegen de drempel van 50/maand",
-   "gecontroleerd": "2026-10-22",
+   "controle": "run-analytics-query FROM sales SHOW orders SINCE -28d UNTIL today",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -1068,9 +1068,9 @@
    "uitkomst": "gedaan"
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1cd8b622": {
-   "bewijs": "geen vermelding van hergebruik van een bestaand backlogpunt bij Besluit-acties in 04_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md, ongewijzigd",
-   "controle": "grep op 'bestaand backlogpunt' in Denzel-weekoverzicht.md",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "geen vermelding van hergebruik van een bestaand backlogpunt bij Besluit-acties in 01_Agent_Infrastructuur/Routines/Denzel-weekoverzicht.md, ongewijzigd",
+   "controle": "grep op hergebruik van een bestaand backlogpunt in Denzel-weekoverzicht.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1122,8 +1122,8 @@
   },
   "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#e6a6b0b2": {
    "bewijs": "beide bestanden tonen nog 'status: gearchiveerd', ongewijzigd",
-   "controle": "status-veld van de weekoverzichten 2026-09-14 en 2026-09-21",
-   "gecontroleerd": "2026-10-22",
+   "controle": "status:-veld van 2026-09-14-weekoverzicht.md en 2026-09-21-weekoverzicht.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1271,16 +1271,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-02-obsidian-structuur-ai-agents#1493354a": {
-   "bewijs": "grep -rl 'C:\\\\Users' 05_Research telt nog 28 bestanden, nog niet vault-relatief, ongewijzigd",
-   "controle": "grep op 'C:\\Users' in 05_Research",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "grep -rl 'C:\\\\Users' 02_Research telt nog 28 bestanden, nog niet vault-relatief, ongewijzigd",
+   "controle": "grep -rl 'C:\\\\Users' 02_Research",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#14960853": {
    "bewijs": ".obsidian/plugins/obsidian-git/data.json toont nog autoSaveInterval=2, autoPullInterval=2 en commitMessage 'vault backup: {{date}}', ongewijzigd",
-   "controle": "obsidian-git instellingen (autoSaveInterval, autoPullInterval, commitMessage)",
-   "gecontroleerd": "2026-10-22",
+   "controle": ".obsidian/plugins/obsidian-git/data.json instellingen",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1293,23 +1293,23 @@
    "uitkomst": "gedaan"
   },
   "2026-10-02-obsidian-structuur-ai-agents#353f4bcb": {
-   "bewijs": "24 van 130 .md-bestanden in 00_Brand_Core t/m 04_Agent_Infrastructuur hebben een status:-veld; CLAUDE.md bevat nog geen 'archief'-regel, nog niet volledig doorgevoerd",
-   "controle": "Aantal .md-bestanden in 00-04 met een status:-veld",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "status:-veld nog niet overal doorgevoerd in 00_Brand_Core/01_Agent_Infrastructuur; CLAUDE.md bevat nog geen 'archief'-regel, nog niet volledig doorgevoerd, ongewijzigd (mapnummering is op 22-10 gewijzigd, de oorspronkelijke bestanden bestaan ongewijzigd onder de nieuwe nummers)",
+   "controle": "status:-veld in 00_Brand_Core en 01_Agent_Infrastructuur, en 'archief'-regel in CLAUDE.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3ebe2293": {
    "bewijs": "map 99_Archief bestaat nog niet in de vault-root, ongewijzigd",
-   "controle": "Bestaan van de map 99_Archief",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Bestaan van map 99_Archief in de vault-root",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#3f6943bd": {
-   "bewijs": "CLAUDE.md heeft nog geen 'Schrijfrechten'-sectie; .claude/settings.json heeft nog geen 'deny'-regels voor 05_Research/_backlog, _data of register.js, ongewijzigd",
-   "controle": "Schrijfrechten-sectie in CLAUDE.md en deny-regels in .claude/settings.json",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "CLAUDE.md heeft nog geen 'Schrijfrechten'-sectie; .claude/settings.json heeft nog geen deny-regels voor 02_Research/_backlog, _data of register.js, ongewijzigd",
+   "controle": "'Schrijfrechten'-sectie in CLAUDE.md en deny-regels in .claude/settings.json",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1328,16 +1328,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-02-obsidian-structuur-ai-agents#cad6d1f6": {
-   "bewijs": "02_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md is nog 11.851 bytes (~11,6 KB), boven het doel van 5 KB, ongewijzigd",
+   "bewijs": "04_Partnership_Agent/Influencers_Creators/Zoek Script & Gids.md is nog 11.851 bytes (~11,6 KB), boven het doel van 5 KB, ongewijzigd (pad nu onder 04_Partnership_Agent na de mapnummering-wijziging van 22-10)",
    "controle": "Bestandsgrootte van Zoek Script & Gids.md",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-02-obsidian-structuur-ai-agents#f4f04b6b": {
-   "bewijs": "vault_lint.py bestaat nog niet in 04_Agent_Infrastructuur/Beheer/, ongewijzigd",
-   "controle": "Bestaan van vault_lint.py naast vault_nav.py",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "vault_lint.py bestaat nog niet in 01_Agent_Infrastructuur/Beheer/ (wel vault_nav.py en andere bestanden), ongewijzigd",
+   "controle": "Bestaan van vault_lint.py in 01_Agent_Infrastructuur/Beheer/",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1444,8 +1444,8 @@
   },
   "2026-10-07-dashboard-stand-doel-optimalisaties#035b0bdd": {
    "bewijs": "acties.py kent nog geen los commando daarvoor (subcommando's: open/start/resultaat/kop/opruimen/importeer/beheer/opdracht/uitvoerbaar/kans); id '118b76a0' komt nog 3x voor in CONTROLE.json en 1x in UITVOERBAAR.json, ongewijzigd",
-   "controle": "Of acties.py een commando heeft om een verweesd actie-id te verwijderen, en of 118b76a0 nog voorkomt",
-   "gecontroleerd": "2026-10-22",
+   "controle": "acties.py-subcommando's en voorkomens van id 118b76a0 in CONTROLE.json/UITVOERBAAR.json",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -1615,9 +1615,9 @@
    "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#132b156f": {
-   "bewijs": "28d: Nederland 214 sessies, United States 75, China 2 — nog geen botfilter op land toegepast, ongewijzigd",
-   "controle": "Sessies per land (NL vs VS/China) op botfilter",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "28d: Nederland 208 sessies, United States 78, China 2 — nog geen botfilter op land toegepast, ongewijzigd",
+   "controle": "Sessies per land (28d): is er al een botfilter op VS/China toegepast",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -1686,8 +1686,8 @@
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7aefb63b": {
    "bewijs": "google_data.py cwv: status niet_gekoppeld, alle 3 URL's nog HTTP 429 (quotum-service pagespeedonline.googleapis.com), geen API-key ingesteld, ongewijzigd",
-   "controle": "PageSpeed Insights API-status in higrip-analytics",
-   "gecontroleerd": "2026-10-22",
+   "controle": "google_data.py cwv: 429 of werkt de PageSpeed-koppeling al",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -1707,16 +1707,16 @@
    "uitkomst": "dubbel"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#805ddfe0": {
-   "bewijs": "GA4 28d: 7 key events/€271,43 (google_data.py ga4); Shopify 28d: 9 orders/€343,26 (run-analytics-query); nog geen vastgelegde reconciliatie in de vault gevonden, cijfers ongewijzigd t.o.v. vorige run",
-   "controle": "GA4-aankopen 28d naast Shopify-orders 28d, en of er een vastgelegde reconciliatie bestaat",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "GA4 28d: 7 key events/€271,43 (google_data.py ga4); Shopify 28d: 9 orders/€343,26 (run-analytics-query); nog geen vastgelegde reconciliatie-notitie, ongewijzigd",
+   "controle": "GA4-aankopen (28d) naast Shopify-orders (28d) van dezelfde periode, en of een notitie de reconciliatie vastlegt",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#82bad0c5": {
-   "bewijs": "28d: 20 sessies op landingspagina '(not set)', bounceRate 1.0, probleem nog niet opgelost (was 21 op 19-10, nu 20)",
-   "controle": "Sessies met landingspagina '(not set)' en bounceRate",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "28d: 19 sessies op landingspagina '(not set)', bounceRate 1.0, probleem nog niet opgelost (was 20 op 22-10, nu 19)",
+   "controle": "Aantal GA4-sessies (28d) met landingspagina '(not set)' en de bounce rate",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -1810,8 +1810,8 @@
   },
   "2026-10-08-seo-aeo-geo-aio-sxo-audit#6e05857a": {
    "bewijs": "barcode is nog leeg/null voor alle 8 varianten van de 3 producten; layout/theme.liquid van werkthema 202398040391 rendert nog geen 'product-schema'-snippet, ongewijzigd",
-   "controle": "barcode-veld op de varianten en product-schema-snippet in layout/theme.liquid (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "barcode van de 8 varianten en of layout/theme.liquid een product-schema-snippet rendert",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2017,16 +2017,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "0 treffers voor 'vertaling' in 04_Agent_Infrastructuur/Routines/SEO-regressiecheck.md, ongewijzigd",
-   "controle": "grep op 'vertaling' in SEO-regressiecheck.md",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "0 treffers voor 'vertaling' in 01_Agent_Infrastructuur/Routines/SEO-regressiecheck.md, ongewijzigd",
+   "controle": "grep 'vertaling' in SEO-regressiecheck.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "in de vault bestaan al CSS/JS-bestanden met 'zakelijk' in de naam (03_Website_Agent/Homepage-prototype/theme-ref/assets/hg-zakelijk*.css/js), maar die horen bij de homepage-prototype-tussensectie, niet bij een mini-plan voor de nieuwe zakelijke pagina in het Shopify-testthema; dat ontbreekt nog",
+   "bewijs": "in de vault bestaan al CSS/JS-bestanden met 'zakelijk' in de naam (06_Website_Agent/Homepage-prototype/theme-ref/assets/hg-zakelijk*.css/js, na de mapnummering-wijziging van 22-10), maar die horen bij de homepage-prototype-tussensectie, niet bij een mini-plan voor de nieuwe zakelijke pagina in het Shopify-testthema; dat ontbreekt nog",
    "controle": "Bestaan van een mini-plan (CSS, Liquid-sectie, JS) voor de nieuwe zakelijke pagina in het testthema",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2115,9 +2115,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "op 22-10-2026 zijn de 4 weken (rond 9-11) nog niet verstreken, dus nog niet aan de orde",
+   "bewijs": "op 23-10-2026 zijn de 4 weken (rond 9-11) nog niet verstreken, dus nog niet aan de orde",
    "controle": "of de 4-wekentermijn na de nulmeting (12-10-2026) al verstreken is",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2248,9 +2248,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-voordelenpagina-analyse#6b326f42": {
-   "bewijs": "geen artifact met een voordelenpagina-concept gevonden in de artifactenlijst (36 eigen artifacts gecontroleerd), nog niet gebouwd",
-   "controle": "Bestaan van een conceptartifact voor de voordelenpagina",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "geen artifact met een voordelenpagina-concept gevonden in de artifactenlijst (36 eigen artifacts gecontroleerd), nog niet gebouwd, ongewijzigd",
+   "controle": "Artifactenlijst op een voordelenpagina-concept",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2270,15 +2270,15 @@
   },
   "2026-10-12-werkthema-vs-live#5f409a57": {
    "bewijs": "templates/collection.json van werkthema 202398040391 bevat geen '13,49' en geen doorgestreepte prijsinstelling; prijzen worden sowieso niet hardcoded in deze JSON-template, ongewijzigd",
-   "controle": "'13,49' of een doorgestreepte prijsinstelling in templates/collection.json (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "templates/collection.json en templates/page.shop.json van het werkthema op prijstekst",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-12-werkthema-vs-live#c757fc2d": {
    "bewijs": "config/settings_data.json van werkthema 202398040391 heeft nog geen T-Lab-blok (shopify://apps/t-lab-ai-language-translate) en primary_button_border_width staat nog op 0, ongewijzigd",
-   "controle": "T-Lab-appblok en primary_button_border_width in config/settings_data.json (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "config/settings_data.json van het werkthema: T-Lab-blok en primary_button_border_width",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2298,8 +2298,8 @@
   },
   "2026-10-13-homepage-redesign#4867b36b": {
    "bewijs": "snippets/faq-schema.liquid (werkthema 202398040391) heeft faq_a4 nog als 'Was uw gripsokken...'; faq_a7 bevat geen u-vorm — actie dus nog niet volledig gedaan, ongewijzigd",
-   "controle": "u-vorm in faq_a4/faq_a7 van snippets/faq-schema.liquid (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "snippets/faq-schema.liquid: faq_a4 en faq_a7 op u/uw-vorm",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2311,9 +2311,9 @@
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "keyevents toont nog alleen ads_conversion_Aankoop_1, ads_conversion_Toevoegen_aan_winkelwag_1, close_convert_lead, purchase, qualify_lead; geen events voor sportkiezer-klik/360-interactie/scrolldiepte, geen baseline vastgelegd, ongewijzigd",
-   "controle": "google_data.py keyevents op events voor sportkiezer-klik/360-interactie/scrolldiepte",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "keyevents toont nog alleen ads_conversion_Aankoop_1, ads_conversion_Toevoegen_aan_winkelwag_1, close_convert_lead, purchase, qualify_lead; geen sportkiezer/360/scrolldiepte-events of 4-weken-baseline vastgelegd, ongewijzigd",
+   "controle": "google_data.py keyevents: bestaan events voor sportkiezer-klik, 360°-interactie of scrolldiepte",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2333,8 +2333,8 @@
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
    "bewijs": "files(query:'filename:frame*') geeft nog 0 resultaten, geen reeks van 206 frames gevonden, ongewijzigd",
-   "controle": "Aanwezigheid van een frame-reeks in Shopify Files",
-   "gecontroleerd": "2026-10-22",
+   "controle": "files(query:'filename:frame*') op de shop",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2390,8 +2390,8 @@
   },
   "2026-10-13-homepage-redesign#f2c44e5d": {
    "bewijs": "files(filenames:['templates/page.home-nieuw.json']) geeft nog NOT_FOUND op zowel 201133490503 als 202398040391, nog niet gebouwd",
-   "controle": "Bestaan van templates/page.home-nieuw.json op beide werkthema's",
-   "gecontroleerd": "2026-10-22",
+   "controle": "theme files(filenames:['templates/page.home-nieuw.json']) op beide thema's",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2411,8 +2411,8 @@
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
    "bewijs": "files(filenames:['snippets/fonts.liquid']) op werkthema 202398040391 geeft nog NOT_FOUND, ongewijzigd",
-   "controle": "Bestaan van snippets/fonts.liquid in het werkthema",
-   "gecontroleerd": "2026-10-22",
+   "controle": "theme files(filenames:['snippets/fonts.liquid']) op het werkthema",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2446,8 +2446,8 @@
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
    "bewijs": "beide app-embed-blokken (section-store block-cart, fd-product-groups) staan nog met disabled:false, geen per-template beperking zichtbaar in de settings, ongewijzigd",
-   "controle": "disabled-status en per-template-scope van block-cart.js en fd-product-groups in config/settings_data.json (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "config/settings_data.json: block-cart.js en fd-product-groups disabled-status en per-template instellingen",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2467,8 +2467,8 @@
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ba9f7771": {
    "bewijs": "alle 6 varianten nog negatief: zwart 35-38 -4, 39-42 -22, 43-47 -22; wit 35-38 -8, 39-42 -15, 43-47 -19 — identiek aan de vorige run, keuzehulp-CTA nog niet verlegd",
-   "controle": "Live voorraad van de 6 varianten Performance Gripsokken 2.0",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Voorraad (inventoryQuantity) van de 6 varianten Performance Gripsokken 2.0",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2518,8 +2518,8 @@
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
    "bewijs": "00_Brand_Core/Product/ bevat nog alleen 'Performance Grip Socks 2.0.md', geen 1.0-bestand, ongewijzigd",
-   "controle": "Bestaan van een 1.0-specificatiebestand in 00_Brand_Core/Product/",
-   "gecontroleerd": "2026-10-22",
+   "controle": "Bestanden in 00_Brand_Core/Product/",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2581,7 +2581,7 @@
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: geen tool voor het AI Overviews-rapport beschikbaar, ongewijzigd",
    "controle": "Beschikbaarheid van een tool voor het Search Console AI Overviews-rapport",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2616,8 +2616,8 @@
   },
   "backlog#2f69e0df": {
    "bewijs": "google_data.py cwv: status niet_gekoppeld, alle 3 URL's nog HTTP 429 (quotum pagespeedonline.googleapis.com), ongewijzigd",
-   "controle": "google_data.py cwv op INP voor homepage/productpagina",
-   "gecontroleerd": "2026-10-22",
+   "controle": "google_data.py cwv status en HTTP-code op de 3 URL's",
+   "gecontroleerd": "2026-10-23",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2636,9 +2636,9 @@
    "uitkomst": "open"
   },
   "backlog#42f6eb88": {
-   "bewijs": "'HÏ Grip — Waardebalk' staat nog alleen in het niet-gepubliceerde testthema (05_Research/2026-10-05-seo-conversietest-run-3.md); live nog geen 'per paar'-tekst, geen meting gestart, ongewijzigd",
-   "controle": "Of de waardebalk live staat en een voor-/na-meting is gestart",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "'HÏ Grip — Waardebalk' staat nog alleen in het niet-gepubliceerde testthema (02_Research/2026-10-19-seo-conversietest-run-5.md); live nog geen 'per paar'-tekst, geen meting gestart, ongewijzigd",
+   "controle": "Staat 'per paar'-tekst live en is er een meting gestart",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2666,14 +2666,14 @@
   "backlog#52886b90": {
    "bewijs": "niet te controleren: vereist een Search Console-indexeringsstatus en een actuele SERP-snapshot waarvoor geen tool beschikbaar is, ongewijzigd",
    "controle": "Beschikbaarheid van Search Console-indexeringsstatus en SERP-snapshot",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "geen",
    "uitkomst": "open"
   },
   "backlog#6050edaa": {
    "bewijs": "niet te controleren: Admin GraphQL kent nog geen merchant/feed-query, de feed blijft onbereikbaar via de connector, ongewijzigd",
    "controle": "Admin GraphQL op een merchant/feed-query voor variant-ID's",
-   "gecontroleerd": "2026-10-22",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2714,9 +2714,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#927dc23c": {
-   "bewijs": "nieuw backlogpunt (21 okt 2026); nog geen onderzoek naar interne links/sportkiezer/title-wijziging vastgelegd in de vault; de rugbytegel in de sportkiezer blijft intussen ontbreken op de homepage (zie 2026-10-13-homepage-redesign#26bbb772), een mogelijke factor",
-   "controle": "Of de oorzaak van de positieval op /pages/gripsokken-voor-voetbal al onderzocht en vastgelegd is",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "positie verbeterd naar 12,7 (was 15,7 op 21-10) over 198 vertoningen (28d); geen nieuwe notitie die de oorzaak (interne links/sportkiezer/title) onderzoekt, de rugbytegel ontbreekt in de sportkiezer nog steeds",
+   "controle": "GSC-positie en zoektermenmix van /pages/gripsokken-voor-voetbal (28d), en of een notitie de oorzaak al vastlegt",
+   "gecontroleerd": "2026-10-23",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2765,8 +2765,8 @@
   },
   "backlog#b34063f3": {
    "bewijs": "config/settings_data.json van werkthema 202398040391 toont het blok 'shopify://apps/bundler/blocks/bundler-script-append/7a6ae1b8-...' nog met disabled:false, ongewijzigd",
-   "controle": "disabled-status van het bundler-script-append-blok in config/settings_data.json (werkthema)",
-   "gecontroleerd": "2026-10-22",
+   "controle": "config/settings_data.json van het werkthema: bundler-script-append block",
+   "gecontroleerd": "2026-10-23",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2799,9 +2799,9 @@
    "uitkomst": "open"
   },
   "backlog#eaa40e7c": {
-   "bewijs": "0 treffers voor 'factcheck' in CLAUDE.md en alle 04_Agent_Infrastructuur/Routines/*.md, ongewijzigd",
-   "controle": "grep op 'factcheck' in CLAUDE.md en Routines/*.md",
-   "gecontroleerd": "2026-10-22",
+   "bewijs": "0 treffers voor 'factcheck' in CLAUDE.md en alle 01_Agent_Infrastructuur/Routines/*.md, ongewijzigd",
+   "controle": "grep 'factcheck' in CLAUDE.md en alle Routines/*.md",
+   "gecontroleerd": "2026-10-23",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2832,7 +2832,8 @@
   "2026-10-19",
   "2026-10-20",
   "2026-10-21",
-  "2026-10-22"
+  "2026-10-22",
+  "2026-10-23"
  ],
  "volgende_run": "dagelijks 05:00"
 }

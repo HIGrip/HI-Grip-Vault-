@@ -23,7 +23,7 @@ from pathlib import Path
 
 # ── Paden en constanten ────────────────────────────────────────────────────────
 VAULT = Path(__file__).resolve().parents[2]
-RESEARCH_DIR = VAULT / "05_Research"
+RESEARCH_DIR = Path(__file__).resolve().parents[1]
 # Sinds 25-09-2026 in de vault, zodat ook cloudroutines de backlog kunnen bijwerken
 BACKLOG_PATH = RESEARCH_DIR / "_backlog" / "ACTIEBACKLOG.md"
 AFGEROND_PATH = RESEARCH_DIR / "_backlog" / "AFGEROND.md"
@@ -624,7 +624,7 @@ def load_notes(index: dict) -> list:
         note["wat_niet_lukte"] = wat_niet_lukte(body)
         note["body_md"] = convert_wikilinks(body, index)
         note["bronbestand_url"] = bronbestand_url(meta["bronbestand"])
-        note["vault_url"] = github_url(f"05_Research/{name}")
+        note["vault_url"] = github_url(f"{RESEARCH_DIR.name}/{name}")
         notities.append(note)
 
     ids = {n["id"] for n in notities}

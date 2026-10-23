@@ -1,12 +1,12 @@
 {
- "bijgewerkt": "2026-10-22T05:16:47+02:00",
+ "bijgewerkt": "2026-10-23T05:12:03+02:00",
  "bronnen": [
   {
    "id": "ga4",
    "naam": "Google Analytics 4",
    "soort": "servicesleutel",
    "status": "ok",
-   "detail": "655 sessies in 12 weken",
+   "detail": "662 sessies in 12 weken",
    "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als Viewer op GA4-property 476032345 (Beheer → Toegangsbeheer voor property) en 'Google Analytics Data API' aan in Google Cloud-project higrip-analytics."
   },
   {
@@ -14,7 +14,7 @@
    "naam": "Search Console",
    "soort": "servicesleutel",
    "status": "ok",
-   "detail": "https://www.higrip.nl/, data t/m 2026-10-19",
+   "detail": "https://www.higrip.nl/, data t/m 2026-10-20",
    "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als gebruiker (Beperkt) in Search Console → Instellingen → Gebruikers en rechten, en 'Google Search Console API' aan in project higrip-analytics."
   },
   {

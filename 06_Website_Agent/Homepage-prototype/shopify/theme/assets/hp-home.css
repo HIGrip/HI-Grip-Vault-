@@ -660,6 +660,14 @@ html.hp-lock { overflow: hidden; }
   .hp-02-card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "head" "sub" "bul" "foot"; }
   .hp-02-foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: var(--hp-space-sm); }
 }
+/* Shopify 23-10 (Timo: bij een kleurwissel kwamen de foto's over elkaar) · de kleurwissel verplaatst de foto's in plaats
+   van de witte over de zwarte te vegen: de huidige sok schuift links het beeld uit, de nieuwe schuift van rechts in.
+   Via de losse translate-eigenschap, zodat de hover/tik-beweging (transform) gewoon blijft werken. */
+.hp-02-media__prod { transition: transform var(--hp-dur-2) var(--hp-ease), translate var(--hp-dur-2) var(--hp-ease); }
+.hp-02-media__prod--wit, .hp-02-card[data-color="wit"] .hp-02-media__prod--wit { clip-path: none; }
+.hp-02-media__prod--wit { translate: 100% 0; }
+.hp-02-card[data-color="wit"] .hp-02-media__prod--wit { translate: 0 0; }
+.hp-02-card[data-color="wit"] .hp-02-media__prod--zwart { translate: -100% 0; }
 
 /* Shopify: kleuren uit de sectie-instellingen (standaard = ontwerp) */
 .hp-02-h2 { color: var(--hp-02-h2_c); }

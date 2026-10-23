@@ -26,6 +26,8 @@ bijgewerkt: 2026-10-23
 
 **Features in Kies je paar (12:48, op verzoek van Timo):** per productkaart een strakke featurelijst met vinkje, korte kop en op laptop een uitleg (op mobiel alleen de koppen, instelbaar). 1.0: siliconen grip · vanaf €10,99 per paar (5-pack; 3-pack €35,95) · voor elke training. 2.0: grip + 15–20 mmHg compressie · 30% Coolmax® · naadloos met versterkte hiel. Alle claims uit [[Feiten & Actuele Staat]] en [[Performance Grip Socks 2.0]]. Geüpload: `sections/hp-02-kies-je-paar.liquid`, `assets/hp-home.css` (alleen regels voor `.hp-02`) en `templates/index.json`, waarin alleen `hp_02` is aangepast (de rest is de editorstand van 12:29, kopie in `shopify/backup/`). Let op: dit zet de punten op mobiel terug, die Lars op 20-10 (versie 1.20) daar had weggehaald; uit te zetten met "Features tonen op mobiel".
 
+**Kleurwissel 2.0 (13:03, op verzoek van Timo):** bij een kleurwissel veegde de witte foto over de zwarte en schemerde de zwarte door (multiply). Nu schuift de huidige foto links weg en de nieuwe van rechts in (480 ms). Alleen 6 regels voor `.hp-02-media__prod` in `assets/hp-home.css`; sectie en `templates/index.json` niet aangeraakt.
+
 **Open:** de testafbeelding `assets/hp-urltest.webp` in dit thema mag weg (Shopify-koppeling mag geen themabestanden verwijderen; via Code bewerken). Live zetten alleen na akkoord van lars.
 
 **Wie:** cloudsessie 23-10, op verzoek van Timo.

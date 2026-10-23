@@ -6,4 +6,4 @@ Bronnen: bronthema (`zk-route.liquid`: twee panelen "Wie ben jij?" met foto, num
 - Beeld: assets.json → b2b-* (club-spirit, voetbal, grippatroon, sok-zwart en sok-wit vrijstaand, sokhoogtes). Geen AI-retailbeeld.
 - Zakelijk, modern, converterend, niet saai: bijvoorbeeld drie kaarten met eigen beeld waarvan de foto bij hover of tik groeit en de tekst meeschuift. Achtergrond off-white.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

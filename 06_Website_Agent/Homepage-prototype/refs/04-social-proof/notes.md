@@ -13,4 +13,4 @@ Lokaal gerenderd (artifact-HTML met CDN-beelden), Playwright 18-10. Shots: `1440
 - Alleen de 8 foto's met sections ["04"] uit assets.json, in die volgorde; onderschriften uit copy 04.captions.
 - Geen 3500+/Trustpilot in de lead (staat al in 03): lead uit copy.json.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

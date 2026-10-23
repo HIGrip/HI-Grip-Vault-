@@ -38,4 +38,4 @@ Templates: page.sport-padel/-tennis/-voetbal/-rugby.json. Live-check (404 of nie
 - Gevonden: `…/Content - HÏ Grip/OVER ONS FOTOS/Teamfoto - HÏ Grip.jpg` (2,6 MB). Geen bestand "Teamfoto 3".
 - Battleface-screenshot: niet gevonden.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

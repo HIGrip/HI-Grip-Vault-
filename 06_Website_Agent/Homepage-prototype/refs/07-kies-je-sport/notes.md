@@ -27,4 +27,4 @@ Bron: https://www.eightsleep.com/eu/ (Playwright, 18-10-2026, cookies: "Essentia
 - Achtergrond: per sport een gedempte tint (rhythm.json), nooit volle volt, royal blue, pumpkin of tangerine.
 - Geen glas-blur nodig; afgeronde mediaframes volgens `--hp-radius-media`.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

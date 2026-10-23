@@ -4,4 +4,4 @@ Shots: `thumbs/s3-1440.png`, `thumbs/s3-375.png`; beeld: `img/hero-grip-padel-14
 - Brief: zoals v3, maar de foto neemt duidelijk meer van het beeld in; vast mediaframe met video-slot.
 - Uitgevoerd door Denzel in `sections/01-hero/` (het ijkpunt): afgerond frame tot de gutter, 16:9 (≥1200), 16:10 (tablet), 9:15 (mobiel); eyebrow en "placeholder"-label weg; scroll zet de foto vast (108% → 100%). De kop eindigt links van de zool, zodat het grippatroon vrij blijft.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

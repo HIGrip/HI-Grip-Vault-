@@ -31,4 +31,4 @@ Alle vier `/pages/<handle>` waren vrij op higrip.nl (404). Handles in Shopify co
 - Padel hoort sinds 30-9-2026 bij de kernsport tennis/padel (Canva *MERK & STRATEGIE*); de padelpagina heeft dezelfde prioriteit als tennis.
 - Padel: er bestaat al een live pagina `/pages/gripsokken-padel` met eigen design; check dubbele content / canonical voor je de conceptpagina publiceert.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

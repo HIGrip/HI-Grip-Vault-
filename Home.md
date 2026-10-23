@@ -11,9 +11,9 @@
 | Map | Waarvoor | Begin bij |
 |---|---|---|
 | **00_Brand_Core** | Merkfundament: verhaal, waarden, doelgroep, visuele identiteit, strategie. Alles verwijst hiernaar terug. | **[[00 Brand Core]]** · [[Brand Identity Overview]] |
-| **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[01 Content Agent — Index]] · [[Content Strategie]] |
-| **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[02 Partnership Agent — Index]] · [[Partnership Strategie]] |
-| **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[03 Website Agent — Index]] · [[Website Doel & KPI's]] |
+| **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[05 Social Agent — Index]] · [[Content Strategie]] |
+| **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[04 Partnership Agent — Index]] · [[Partnership Strategie]] |
+| **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[06 Website Agent — Index]] · [[Website Doel & KPI's]] |
 | **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`Identiteit <Agent>.md`), hoe hij zich gedraagt (`Soul <Agent>.md`), en de gedeelde regels. | [[01 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
 | **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 

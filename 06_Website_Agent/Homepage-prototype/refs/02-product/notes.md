@@ -13,4 +13,4 @@ Shots: `1440-cards.png`, `1440-hover.png`, `375-cards.png`.
 - Eén primaire CTA in de sectie: pill "Alle gripsokken" naar de collectie. Geen pill per kaart, geen snel-toevoegknop.
 - Prijzen en maten alleen uit facts.json; de 1.0 toont ook de packprijzen (copy 02.cards.p10.packs).
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

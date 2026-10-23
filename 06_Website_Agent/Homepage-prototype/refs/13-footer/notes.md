@@ -4,4 +4,4 @@ Shots: `1440.png`, `375.png`; HTML: `live-home.html` (zoek `<footer`).
 - Alle links en gegevens: facts.json → footer (letterlijk, live URL's).
 - Voor 13: dezelfde opbouw in de stijl van de prototypepagina: near-black (rhythm), titanium-grijze kopjes, witte links, merkregel en slogan uit copy 13. E-mail en telefoon als selecteerbare tekst (mailto en tel werken niet betrouwbaar in een artifact).
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

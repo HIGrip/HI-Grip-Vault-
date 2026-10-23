@@ -27,4 +27,4 @@ Bron: schermopname Lars `battleface.mp4` (8,2 s, 1920×1032). Frames: `frames/` 
 ## Teamfoto
 - `../../teamfoto.jpg` (2000 px breed, van `Teamfoto - HÏ Grip.jpg`, 4000×1848). Voorlopige keuze van Lars (18-10). Vier personen; liggend formaat 2,16:1.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

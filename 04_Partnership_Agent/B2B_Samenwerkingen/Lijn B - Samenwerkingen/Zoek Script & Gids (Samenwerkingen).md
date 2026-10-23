@@ -57,4 +57,4 @@ Voor elk organisatietype: zoek met combinatie **[sport/event-type] + [Rotterdam/
 - [[Samenwerking Strategie]] — Waarom dit past bij HÏ Grip
 - [[Voorbeelden Gevonden Organisaties (Events)]] — Goede voorbeelden ter kalibratie
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[02 Partnership Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Partnership Agent — Index]] · [[Home]]

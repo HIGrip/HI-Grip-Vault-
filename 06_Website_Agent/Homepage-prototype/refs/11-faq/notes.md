@@ -8,4 +8,4 @@ Bestanden: `zk-faq.liquid` (markup + JSON-LD), CSS `hg-zakelijk-v2.css` r228–2
 - Verschil met het thema: de eyebrow "FAQ" vervalt (anti-slop).
 - Inhoud: facts.json → faq (letterlijk). FAQPage JSON-LD meeleveren in section.html (script type application/ld+json is toegestaan).
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

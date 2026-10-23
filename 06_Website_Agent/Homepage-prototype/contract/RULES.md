@@ -70,4 +70,4 @@ Alleen Poppins, koppen in hoofdletters, jij/je, CTA = pill met chevron (zwart op
 - Screenshots met Playwright op 1440×900 en 375×812, plus elke interactie.
 - Je schrijft alleen in je eigen map `sections/NN-naam/`. Lees `theme-ref/` niet; alles staat in `refs/` en het contract.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Website Agent — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

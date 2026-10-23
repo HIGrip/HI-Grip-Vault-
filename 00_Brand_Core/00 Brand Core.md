@@ -69,9 +69,9 @@ Terug naar [[Home]].
 
 ## De mappen die hierop bouwen
 
-- [[01 Content Agent — Index]]: social content
-- [[02 Partnership Agent — Index]]: B2B, events, influencers
-- [[03 Website Agent — Index]]: higrip.nl
+- [[05 Social Agent — Index]]: social content
+- [[04 Partnership Agent — Index]]: B2B, events, influencers
+- [[06 Website Agent — Index]]: higrip.nl
 - [[01 Agent Infrastructuur — Index]]: het agent-systeem en de routines
 - [[Waar staat wat]]: onderzoek (05_Research)
 

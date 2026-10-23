@@ -27,7 +27,7 @@
 "src": "img/b2b-club-spirit-1000.webp",
 "width": 1000,
 "height": 1500,
-"alt": "Speler van V.V. Spirit in gele clubsokken met witte H\u00cf Grip-gripsokken eronder"
+"alt": "Speler van V.V. Spirit in gele clubsokken met witte HÏ Grip-gripsokken eronder"
 },
 "hp-logo-syth-512.webp": {
 "src": "img/logo-syth-512.webp",
@@ -63,7 +63,7 @@
 "src": "img/hero-padel-zool-1200.webp",
 "width": 1200,
 "height": 800,
-"alt": "Zool van een witte H\u00cf Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan"
+"alt": "Zool van een witte HÏ Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan"
 },
 "hp-logo-sport2000-240.webp": {
 "src": "img/logo-sport2000-240.webp",
@@ -105,7 +105,7 @@
 "src": "img/teamfoto-2000.webp",
 "width": 2000,
 "height": 924,
-"alt": "Het team van H\u00cf Grip, vier personen naast elkaar"
+"alt": "Het team van HÏ Grip, vier personen naast elkaar"
 },
 "hp-b2b-sokhoogtes-900.webp": {
 "src": "img/b2b-sokhoogtes-900.webp",
@@ -117,13 +117,13 @@
 "src": "img/b2b-club-spirit-800.webp",
 "width": 800,
 "height": 1200,
-"alt": "Speler van V.V. Spirit in gele clubsokken met witte H\u00cf Grip-gripsokken eronder"
+"alt": "Speler van V.V. Spirit in gele clubsokken met witte HÏ Grip-gripsokken eronder"
 },
 "hp-teamfoto-1200.webp": {
 "src": "img/teamfoto-1200.webp",
 "width": 1200,
 "height": 554,
-"alt": "Het team van H\u00cf Grip, vier personen naast elkaar"
+"alt": "Het team van HÏ Grip, vier personen naast elkaar"
 },
 "hp-sh-sq-tennis.webp": {
 "src": "img/sh-sq-tennis.webp",
@@ -141,7 +141,7 @@
 "src": "img/sport-voetbal-2000.webp",
 "width": 2000,
 "height": 2000,
-"alt": "Voetballer in H\u00cf Grip-shirt haalt uit op een kunstgrasveld"
+"alt": "Voetballer in HÏ Grip-shirt haalt uit op een kunstgrasveld"
 },
 "hp-sport-rugby-1600.webp": {
 "src": "img/sport-rugby-1600.webp",
@@ -153,7 +153,7 @@
 "src": "img/hero-padel-zool-2400.webp",
 "width": 2400,
 "height": 1600,
-"alt": "Zool van een witte H\u00cf Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan"
+"alt": "Zool van een witte HÏ Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan"
 },
 "hp-sh-sok-20-zwart.webp": {
 "src": "img/sh-sok-20-zwart.webp",
@@ -165,7 +165,7 @@
 "src": "img/sport-voetbal-1000.webp",
 "width": 1000,
 "height": 1000,
-"alt": "Voetballer in H\u00cf Grip-shirt haalt uit op een kunstgrasveld"
+"alt": "Voetballer in HÏ Grip-shirt haalt uit op een kunstgrasveld"
 },
 "hp-sp-gym-900.webp": {
 "src": "img/sp-gym-900.webp",
@@ -1042,5 +1042,17 @@
 "width": 720,
 "height": 1280,
 "alt": ""
+},
+"shop-sok-10.webp": {
+"src": "img/sh-sok-10.webp",
+"width": 900,
+"height": 900,
+"alt": "Performance Gripsokken 1.0, zijaanzicht met grippatroon"
+},
+"shop-sok-20-zwart.webp": {
+"src": "img/sh-sok-20-zwart.webp",
+"width": 900,
+"height": 900,
+"alt": "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon"
 }
 }

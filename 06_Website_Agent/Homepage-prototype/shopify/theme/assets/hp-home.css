@@ -309,7 +309,7 @@ html.hp-lock { overflow: hidden; }
 .hp-02-title { font-weight: 900; font-style: italic; font-size: calc(clamp(22px, 2.5vw, 36px) * var(--hp-02-title-k, 1)); line-height: 1; padding-right: 0.06em; }
 .hp-02-price { font-weight: 700; font-size: calc(clamp(17px, 1.4vw, 20px) * var(--hp-02-price-k, 1)); font-variant-numeric: tabular-nums; }
 .hp-02-sub { padding-top: var(--hp-space-sm); font: 700 calc(var(--hp-type-label) * var(--hp-02-sub-k, 1))/1.3 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); }
-.hp-02-bullets { display: grid; gap: 6px; padding-top: var(--hp-space-sm); font-size: calc(15px * var(--hp-02-bul-k, 1)); line-height: 1.45; }
+.hp-02-bullets { display: grid; gap: 6px; padding-top: var(--hp-space-sm); font-size: 15px; line-height: 1.45; }
 .hp-02-bullets li { position: relative; padding-left: 18px; }
 .hp-02-bullets li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--hi-black); }
 
@@ -353,7 +353,7 @@ html.hp-lock { overflow: hidden; }
   .hp-02-media { aspect-ratio: 4 / 3; }
   .hp-02-tag { top: var(--hp-space-ms); left: var(--hp-space-ms); }
   .hp-02-head { padding-top: var(--hp-space-md); }
-  .hp-02-bullets { font-size: calc(16px * var(--hp-02-bul-k, 1)); }
+  .hp-02-bullets { font-size: 16px; }
   .hp-02-foot { align-self: end; }
   .hp-02-compare { grid-template-columns: minmax(0, 1fr) auto; align-items: center; margin-top: var(--hp-space-ms); padding: var(--hp-space-sm) var(--hp-space-sm) var(--hp-space-sm) var(--hp-space-md); }
   .hp-02-compare__text { font-size: 20px; }
@@ -400,7 +400,7 @@ html.hp-lock { overflow: hidden; }
   .hp-02-head { padding-top: 0; }
   .hp-02-sub { padding-top: var(--hp-space-xs); }
   .hp-02-title { font-size: calc(clamp(20px, 1.9vw, 30px) * var(--hp-02-title-k, 1)); }
-  .hp-02-bullets { font-size: calc(15px * var(--hp-02-bul-k, 1)); }
+  .hp-02-bullets { font-size: 15px; }
   .hp-02-foot { flex-wrap: wrap; padding-top: var(--hp-space-sm); }
   .hp-02-compare { margin-top: var(--hp-space-ms); padding-block: 8px; }
   .hp-02-compare__text { font-size: 17px; }
@@ -412,7 +412,7 @@ html.hp-lock { overflow: hidden; }
   .hp-02-card { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); }
   .hp-02-title { font-size: calc(clamp(22px, 2.3vw, 36px) * var(--hp-02-title-k, 1)); }
   .hp-02-price { font-size: calc(clamp(18px, 1.5vw, 22px) * var(--hp-02-price-k, 1)); }
-  .hp-02-bullets { font-size: calc(16px * var(--hp-02-bul-k, 1)); gap: 8px; }
+  .hp-02-bullets { font-size: 16px; gap: 8px; }
   .hp-02-sub { padding-top: var(--hp-space-sm); }
   .hp-02-compare__text { font-size: 18px; }
 }
@@ -449,7 +449,7 @@ html.hp-lock { overflow: hidden; }
   .hp-02-title { font-size: calc(clamp(22px, 2vw, 30px) * var(--hp-02-title-k, 1)); }
   .hp-02-price { font-size: calc(clamp(20px, 1.6vw, 26px) * var(--hp-02-price-k, 1)); font-weight: 800; }
   .hp-02-sub { grid-area: sub; padding: 6px 0 0; color: var(--hi-yellow); }
-  .hp-02-bullets { grid-area: bul; padding: var(--hp-space-xs) 0 0; gap: 2px; font-size: calc(16px * var(--hp-02-bul-k, 1)); line-height: 1.4; color: var(--hi-white); }
+  .hp-02-bullets { grid-area: bul; padding: var(--hp-space-xs) 0 0; gap: 2px; font-size: 16px; line-height: 1.4; color: var(--hi-white); }
   .hp-02-foot { grid-area: foot; display: grid; justify-items: end; align-content: end; gap: var(--hp-space-xs); padding: 0; }
   .hp-02-sizes { text-align: right; }
   .hp-02-compare { margin-top: var(--hp-space-ms); }
@@ -568,7 +568,7 @@ html.hp-lock { overflow: hidden; }
 /* 1.21 (SEO/GEO-check 20-10) · op mobiel per sok één zichtbare regel (de eerste), zodat de kern ook in de mobiele
    versie staat die Google indexeert; labels minimaal 11 px. */
 @media (max-width: 768px) {
-  .hp-02-bullets { display: grid; padding-top: 6px; font-size: calc(12px * var(--hp-02-bul-k, 1)); line-height: 1.35; }
+  .hp-02-bullets { display: grid; padding-top: 6px; font-size: 12px; line-height: 1.35; }
   .hp-02-bullets li { padding-left: 12px; }
   .hp-02-bullets li::before { width: 5px; height: 5px; top: 0.5em; }
   .hp-02-bullets li:not(:first-child) { display: none; }
@@ -637,6 +637,30 @@ html.hp-lock { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { .hp-motion .hp-02-duel__disc--a, .hp-motion .hp-02-duel__disc--b { animation: none; } }
 
 
+/* Shopify 23-10 (Timo: features van beide sokken super clean en duidelijk) · een strakke featurelijst per kaart:
+   vinkje in een cirkel (volt bij de accentkaart), een korte kop en op laptop een uitleg eronder, gescheiden door
+   haarlijnen. Op mobiel alleen de koppen, zodat beide kaarten naast elkaar leesbaar blijven. */
+.hp-02-feats { grid-area: bul; display: grid; margin-top: var(--hp-02-ftop, 10px); border-top: 1px solid var(--hp-02-feat-line, rgba(255, 255, 255, 0.12)); }
+.hp-02-feat { display: grid; grid-template-columns: var(--hp-02-ic, 16px) minmax(0, 1fr); column-gap: 10px; align-items: start; padding-block: var(--hp-02-fpad, 7px); border-bottom: 1px solid var(--hp-02-feat-line, rgba(255, 255, 255, 0.12)); }
+.hp-02-feat__ic { display: grid; place-items: center; width: var(--hp-02-ic, 16px); height: var(--hp-02-ic, 16px); margin-top: calc((var(--hp-02-ft-fs, 12px) * 1.25 - var(--hp-02-ic, 16px)) / 2); border-radius: 50%; background: var(--hp-02-ic-bg, #FFFFFF); color: var(--hp-02-ic-fg, #0A0A0A); }
+.hp-02-card--acc .hp-02-feat__ic { background: var(--hp-02-ic-acc, #CCFF00); }
+.hp-02-feat__ic svg { width: 66%; height: 66%; }
+.hp-02-feat__txt { display: grid; gap: 2px; min-width: 0; }
+.hp-02-feat__t { font: 600 var(--hp-02-ft-fs, 12px)/1.25 var(--hp-type-family); letter-spacing: -0.02em; color: var(--hp-02-ft-c, #FFFFFF); }
+.hp-02-feat__d { font: 400 var(--hp-02-fd-fs, 11px)/1.4 var(--hp-type-family); letter-spacing: -0.01em; color: var(--hp-02-fd-c, #909194); }
+@media (max-width: 768px) {
+  .hp-02-feat { column-gap: 8px; }
+  .hp-02-feat__d { display: none; }
+}
+@media (min-width: 769px) {
+  .hp-02-feat { column-gap: 12px; }
+}
+/* tablet en kleine laptop (769–1099 px): de featurelijst krijgt de volle kaartbreedte, kleur en knop staan eronder */
+@media (min-width: 769px) and (max-width: 1099px) {
+  .hp-02-card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "head" "sub" "bul" "foot"; }
+  .hp-02-foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: var(--hp-space-sm); }
+}
+
 /* Shopify: kleuren uit de sectie-instellingen (standaard = ontwerp) */
 .hp-02-h2 { color: var(--hp-02-h2_c); }
 .hp-02-media { background-color: var(--hp-02-media_bg); }
@@ -646,8 +670,6 @@ html.hp-lock { overflow: hidden; }
 .hp-02-title { color: var(--hp-02-title_c); }
 .hp-02-price { color: var(--hp-02-price_c); }
 .hp-02-sub { color: var(--hp-02-sub_c); }
-.hp-02-bullets { color: var(--hp-02-bul_c); }
-.hp-02-bullets li::before { background-color: var(--hp-02-dot_c); }
 .hp-02-sizes { color: var(--hp-02-sizes_c); }
 .hp-02-colorname { color: var(--hp-02-cname_c); }
 .hp-02-duel { background-color: var(--hp-02-duel_bg); }

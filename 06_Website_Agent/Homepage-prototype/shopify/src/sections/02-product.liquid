@@ -37,7 +37,7 @@
           endif
           assign link_a = b.link_a | default: b.cta_link
         -%}
-        <li class="hp-02-card {{ cls }}" data-hp-02-card{% if two %} data-color="zwart"{% endif %} style="--hp-02-sw-a: {{ b.swatch_a }}; --hp-02-sw-b: {{ b.swatch_b }};" {{ block.shopify_attributes }}>
+        <li class="hp-02-card {{ cls }}{% if b.tag_style == 'volt' %} hp-02-card--acc{% endif %}" data-hp-02-card{% if two %} data-color="zwart"{% endif %} style="--hp-02-sw-a: {{ b.swatch_a }}; --hp-02-sw-b: {{ b.swatch_b }};" {{ block.shopify_attributes }}>
           <button class="hp-02-media" type="button" aria-pressed="false" aria-label="{{ b.media_label | escape }}">
             {%- if two -%}
               {%- render 'hp-img', image: b.image, class: 'hp-02-media__prod hp-02-media__prod--zwart', sizes: '(min-width: 769px) 50vw, 50vw', widths: '450,900' -%}
@@ -55,8 +55,16 @@
           {%- if b.sub != blank -%}<p class="hp-02-sub">{{ b.sub }}</p>{%- endif -%}
           {%- assign lines = b.bullets | newline_to_br | split: '<br />' -%}
           {%- if b.bullets != blank -%}
-            <ul class="hp-02-bullets">
-              {%- for l in lines -%}{%- assign t = l | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+            <ul class="hp-02-feats">
+              {%- for l in lines -%}
+                {%- assign t = l | strip -%}
+                {%- if t != blank -%}
+                  {%- assign parts = t | split: '|' -%}
+                  {%- assign ft = parts[0] | strip -%}
+                  {%- assign fd = parts[1] | strip -%}
+                  <li class="hp-02-feat"><span class="hp-02-feat__ic" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 8.4 6.8 11 12 5.4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="hp-02-feat__txt"><span class="hp-02-feat__t">{{ ft }}</span>{%- if fd != blank -%}<span class="hp-02-feat__d">{{ fd }}</span>{%- endif -%}</span></li>
+                {%- endif -%}
+              {%- endfor -%}
             </ul>
           {%- endif -%}
           <div class="hp-02-foot">

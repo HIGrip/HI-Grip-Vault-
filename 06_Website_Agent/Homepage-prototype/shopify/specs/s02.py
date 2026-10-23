@@ -31,14 +31,36 @@ def settings(sp):
     sp.paint('price_c', 'Prijs kleur', '.hp-02-price')
     sp.size('sub', 'Onderregel grootte', '--hp-02-sub-k', '.hp-02-sub')
     sp.paint('sub_c', 'Onderregel kleur', '.hp-02-sub')
-    sp.size('bul', 'Opsomming grootte', '--hp-02-bul-k', '.hp-02-bullets')
-    sp.paint('bul_c', 'Opsomming kleur', '.hp-02-bullets')
-    sp.paint('dot_c', 'Opsomming: bolletje', '.hp-02-bullets li::before', 'backgroundColor')
     sp.size('sizes', 'Maten grootte', '--hp-02-sizes-k', '.hp-02-sizes')
     sp.paint('sizes_c', 'Maten kleur', '.hp-02-sizes')
     sp.paint('cname_c', 'Kleurnaam naast staaltjes', '.hp-02-colorname')
     sp.check('anim_cards', 'Kaarten schuiven in bij scrollen', True)
     sp.check('anim_mood', 'Sfeerbeeld bij hover/tik', True)
+
+    sp.header('Features')
+    sp.para('De features zelf vul je per kaart in (blok), één per regel als "Kop | uitleg". Bij een kaart met het accentlabel (volt) krijgen de vinkjes de accentkleur.')
+    sp.check('feat_m', 'Features tonen op mobiel', True)
+    sp.check('feat_d_m', 'Uitleg tonen op mobiel', False)
+    sp.check('feat_lines', 'Scheidingslijnen', True)
+    sp.range('ft_m', 'Kop: grootte (mobiel)', 10, 20, 1, 'px', 12, '--hp-02-ft-fs', where='m')
+    sp.range('ft_d', 'Kop: grootte (laptop)', 12, 24, 1, 'px', 16, '--hp-02-ft-fs', where='d')
+    sp.color('ft_c', 'Kop: kleur', '#FFFFFF', '--hp-02-ft-c')
+    sp.range('fd_m', 'Uitleg: grootte (mobiel)', 9, 16, 1, 'px', 11, '--hp-02-fd-fs', where='m')
+    sp.range('fd_d', 'Uitleg: grootte (laptop)', 10, 20, 1, 'px', 14, '--hp-02-fd-fs', where='d')
+    sp.color('fd_c', 'Uitleg: kleur', '#909194', '--hp-02-fd-c')
+    sp.range('ic_m', 'Vinkje: grootte (mobiel)', 12, 28, 1, 'px', 16, '--hp-02-ic', where='m')
+    sp.range('ic_d', 'Vinkje: grootte (laptop)', 14, 32, 1, 'px', 20, '--hp-02-ic', where='d')
+    sp.color('ic_bg', 'Vinkje: cirkel', '#FFFFFF', '--hp-02-ic-bg')
+    sp.color('ic_acc', 'Vinkje: cirkel bij accentkaart', '#CCFF00', '--hp-02-ic-acc')
+    sp.color('ic_fg', 'Vinkje: kleur', '#0A0A0A', '--hp-02-ic-fg')
+    sp.color_alpha('feat_line', 'Scheidingslijn', '#FFFFFF', 12, '--hp-02-feat-line')
+    sp.range('fpad_m', 'Ruimte per regel (mobiel)', 0, 20, 1, 'px', 7, '--hp-02-fpad', where='m')
+    sp.range('fpad_d', 'Ruimte per regel (laptop)', 0, 24, 1, 'px', 11, '--hp-02-fpad', where='d')
+    sp.range('ftop_m', 'Ruimte boven de lijst (mobiel)', 0, 40, 1, 'px', 10, '--hp-02-ftop', where='m')
+    sp.range('ftop_d', 'Ruimte boven de lijst (laptop)', 0, 48, 1, 'px', 14, '--hp-02-ftop', where='d')
+    sp.css("{%- unless s.feat_m -%}@media (max-width: 768px) { SEL .hp-02-feats { display: none; } }{%- endunless -%}")
+    sp.css("{%- if s.feat_d_m -%}@media (max-width: 768px) { SEL .hp-02-feat__d { display: block; } }{%- endif -%}")
+    sp.css("{%- unless s.feat_lines -%}SEL .hp-02-feats, SEL .hp-02-feat { border-color: transparent; }{%- endunless -%}")
 
     sp.header('Vergelijkknop')
     sp.check('show_compare', 'Vergelijkknop tonen', True)
@@ -83,7 +105,7 @@ CARD = [
     {'type': 'text', 'id': 'price', 'label': 'Prijs (tekst)', 'info': 'Leeg = de prijs van het gekoppelde product.'},
     {'type': 'product', 'id': 'product', 'label': 'Product (optioneel, voor de prijs)'},
     {'type': 'text', 'id': 'sub', 'label': 'Onderregel'},
-    {'type': 'textarea', 'id': 'bullets', 'label': 'Opsomming (één punt per regel)', 'info': 'Op mobiel staat alleen het eerste punt.'},
+    {'type': 'textarea', 'id': 'bullets', 'label': 'Features (één per regel: Kop | uitleg)', 'info': 'Bijvoorbeeld "30% Coolmax® | Voert vocht direct af van je huid". De uitleg staat op laptop onder de kop; op mobiel alleen als dat aanstaat bij Features.'},
     {'type': 'text', 'id': 'sizes', 'label': 'Maten (zonder kleurstaaltjes)'},
     {'type': 'header', 'content': 'Knop'},
     {'type': 'text', 'id': 'cta_label', 'label': 'Knop: tekst', 'default': 'Shop'},
@@ -104,7 +126,7 @@ DEFAULT_BLOCKS = [
         'image': 'shopify://shop_images/hp-sh-sok-10.webp', 'mood': 'shopify://shop_images/hp-sh-sq-padel.webp',
         'media_label': 'Padelspeler strikt zijn schoen, witte gripsokken op een blauwe baan', 'tag': 'Prijsvriendelijk',
         'tag_style': 'wit', 'title': 'Performance Gripsokken 1.0', 'price': '€14,95', 'sub': 'Grip voor de scherpste prijs',
-        'bullets': 'Siliconen gripzones onder de voet\nKatoenmix voor elke dag en elke training\nIdeaal voor training, pilates en recreatief sporten',
+        'bullets': 'Siliconen grip | Houdt je voet op zijn plek in je schoen\nVanaf €10,99 per paar | In de 5-pack, de 3-pack is €35,95\nVoor elke training | Training, pilates en recreatief sporten',
         'sizes': 'Maat 34–39 · 40–46', 'cta_label': 'Shop 1.0', 'cta_link': '/products/performance-gripsokken',
         'cta_aria': 'Shop de Performance Gripsokken 1.0', 'name_a': 'Zwart', 'swatch_a': '#0A0A0A', 'name_b': 'Wit', 'swatch_b': '#FFFFFF'}),
     ('card', {
@@ -112,7 +134,7 @@ DEFAULT_BLOCKS = [
         'mood': 'shopify://shop_images/hp-sh-sq-tennis.webp', 'media_label': 'Tennisser in gripsokken op de baan',
         'tag': 'Ultieme performance', 'tag_style': 'volt', 'title': 'Performance Gripsokken 2.0', 'price': '€17,95',
         'sub': 'Zeven features in één sok',
-        'bullets': '15–20 mmHg compressie en 30% Coolmax®\nNaadloos, met versterkte hiel\nGebouwd voor wedstrijd en intensieve training',
+        'bullets': 'Grip + compressie | Siliconen grip en 15–20 mmHg compressie\n30% Coolmax® | Voert vocht direct af van je huid\nNaadloos, versterkte hiel | Geen stiksels bij je tenen, extra dikte onder je hiel',
         'sizes': '', 'cta_label': 'Shop 2.0', 'cta_link': '/products/performance-gripsokken-2-0-zwart',
         'cta_aria': 'Shop de Performance Gripsokken 2.0', 'name_a': 'Zwart', 'swatch_a': '#0A0A0A',
         'link_a': '/products/performance-gripsokken-2-0-zwart', 'name_b': 'Wit', 'swatch_b': '#FFFFFF',
@@ -128,7 +150,6 @@ def css(sh):
     fsize(sh, '.hp-02-title', '--hp-02-title-k')
     fsize(sh, '.hp-02-price', '--hp-02-price-k')
     fsize(sh, '.hp-02-sub', '--hp-02-sub-k')
-    fsize(sh, '.hp-02-bullets', '--hp-02-bul-k')
     fsize(sh, '.hp-02-sizes', '--hp-02-sizes-k')
     fsize(sh, '.hp-02-card .hp-02-cta', '--hp-btn-k')
     fsize(sh, '.hp-02-duel__k', '--hp-02-duelk-k')

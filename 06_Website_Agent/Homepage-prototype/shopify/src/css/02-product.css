@@ -371,3 +371,27 @@
 }
 @media (prefers-reduced-motion: reduce) { .hp-motion .hp-02-duel__disc--a, .hp-motion .hp-02-duel__disc--b { animation: none; } }
 
+
+/* Shopify 23-10 (Timo: features van beide sokken super clean en duidelijk) · een strakke featurelijst per kaart:
+   vinkje in een cirkel (volt bij de accentkaart), een korte kop en op laptop een uitleg eronder, gescheiden door
+   haarlijnen. Op mobiel alleen de koppen, zodat beide kaarten naast elkaar leesbaar blijven. */
+.hp-02-feats { grid-area: bul; display: grid; margin-top: var(--hp-02-ftop, 10px); border-top: 1px solid var(--hp-02-feat-line, rgba(255, 255, 255, 0.12)); }
+.hp-02-feat { display: grid; grid-template-columns: var(--hp-02-ic, 16px) minmax(0, 1fr); column-gap: 10px; align-items: start; padding-block: var(--hp-02-fpad, 7px); border-bottom: 1px solid var(--hp-02-feat-line, rgba(255, 255, 255, 0.12)); }
+.hp-02-feat__ic { display: grid; place-items: center; width: var(--hp-02-ic, 16px); height: var(--hp-02-ic, 16px); margin-top: calc((var(--hp-02-ft-fs, 12px) * 1.25 - var(--hp-02-ic, 16px)) / 2); border-radius: 50%; background: var(--hp-02-ic-bg, #FFFFFF); color: var(--hp-02-ic-fg, #0A0A0A); }
+.hp-02-card--acc .hp-02-feat__ic { background: var(--hp-02-ic-acc, #CCFF00); }
+.hp-02-feat__ic svg { width: 66%; height: 66%; }
+.hp-02-feat__txt { display: grid; gap: 2px; min-width: 0; }
+.hp-02-feat__t { font: 600 var(--hp-02-ft-fs, 12px)/1.25 var(--hp-type-family); letter-spacing: -0.02em; color: var(--hp-02-ft-c, #FFFFFF); }
+.hp-02-feat__d { font: 400 var(--hp-02-fd-fs, 11px)/1.4 var(--hp-type-family); letter-spacing: -0.01em; color: var(--hp-02-fd-c, #909194); }
+@media (max-width: 768px) {
+  .hp-02-feat { column-gap: 8px; }
+  .hp-02-feat__d { display: none; }
+}
+@media (min-width: 769px) {
+  .hp-02-feat { column-gap: 12px; }
+}
+/* tablet en kleine laptop (769–1099 px): de featurelijst krijgt de volle kaartbreedte, kleur en knop staan eronder */
+@media (min-width: 769px) and (max-width: 1099px) {
+  .hp-02-card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "media" "head" "sub" "bul" "foot"; }
+  .hp-02-foot { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: var(--hp-space-sm); }
+}

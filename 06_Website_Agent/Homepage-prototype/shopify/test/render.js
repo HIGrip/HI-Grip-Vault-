@@ -20,7 +20,8 @@ const CDN = { // CDN-bestanden uit index.json -> lokaal
 function img(ref) {
   if (!ref || typeof ref !== 'string' || !ref.startsWith('shopify://shop_images/')) return ref;
   const n = ref.slice('shopify://shop_images/'.length);
-  const m = media[n];
+  // met HP_INDEX (een index.json uit de winkel) mogen onbekende foto's een vervanger krijgen
+  const m = media[n] || (process.env.HP_INDEX ? media['hp-sh-sq-padel.webp'] : null);
   if (!m) throw new Error('onbekende afbeelding ' + n);
   return { ...m, __img: true, toString() { return m.src; } };
 }
@@ -55,13 +56,18 @@ engine.registerFilter('times', (a, b) => Number(a) * Number(b));
 engine.registerFilter('divided_by', (a, b) => Number(a) / Number(b));
 
 (async () => {
-  const index = JSON.parse(fs.readFileSync(path.join(THEME, 'templates', 'index.json'), 'utf8'));
+  const index = JSON.parse(fs.readFileSync(process.env.HP_INDEX || path.join(THEME, 'templates', 'index.json'), 'utf8'));
   let body = '';
   for (const key of index.order) {
     const sec = index.sections[key];
     if (sec.disabled) continue;
-    const settings = resolve({ ...sec.settings, ...(overrides[key] || {}) });
-    const blocks = (sec.block_order || []).map((id) => ({ id, type: sec.blocks[id].type, settings: resolve({ ...sec.blocks[id].settings, ...((overrides[key + '.' + id]) || {}) }), shopify_attributes: '' }));
+    // net als Shopify: ontbrekende instellingen krijgen de standaardwaarde uit het schema
+    const src = fs.readFileSync(path.join(THEME, 'sections', sec.type + '.liquid'), 'utf8');
+    const schema = JSON.parse(src.split('{% schema %}')[1].split('{% endschema %}')[0]);
+    const defs = (list) => Object.fromEntries((list || []).filter((x) => x.id && x.default !== undefined).map((x) => [x.id, x.default]));
+    const settings = resolve({ ...defs(schema.settings), ...sec.settings, ...(overrides[key] || {}) });
+    const blockDefs = (type) => defs(((schema.blocks || []).find((x) => x.type === type) || {}).settings);
+    const blocks = (sec.block_order || []).map((id) => ({ id, type: sec.blocks[id].type, settings: resolve({ ...blockDefs(sec.blocks[id].type), ...sec.blocks[id].settings, ...((overrides[key + '.' + id]) || {}) }), shopify_attributes: '' }));
     const ctx = { section: { id: key, settings, blocks, shopify_attributes: '' }, routes: { root_url: '/' }, request: { design_mode: false }, template: { name: 'index' }, shop: { url: 'https://www.higrip.nl' } };
     const html = await engine.renderFile(sec.type, ctx);
     body += `<div id="shopify-section-${key}" class="shopify-section hp-shopify-section">${html}</div>\n`;

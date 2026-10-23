@@ -2243,7 +2243,7 @@ html.hp-lock { overflow: hidden; }
    uit elkaar schuivende regels hem openen. Hover, focus of tik zet hem direct rechts. Reduced motion: alles in eindstand. */
 .hp-12 { position: relative; overflow: clip; display: grid; align-items: center; min-height: min(var(--hp-12-minh, 90svh), 900px); background: var(--hp-12-bg, var(--hi-black)); color: var(--hp-12-fg, var(--hi-white)); padding-block: calc(var(--hp-space-xl) * var(--hp-pt-k, 1) + var(--hp-pt-add, 0px)) calc(var(--hp-space-xl) * var(--hp-pb-k, 1) + var(--hp-pb-add, 0px)); }
 .hp-12-inner { display: grid; justify-items: center; gap: var(--hp-space-lg); }
-.hp-12-title { display: grid; justify-items: center; font: italic 900 calc(min(9.6vw, 176px) * var(--hp-12-k, 1))/0.88 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; text-wrap: initial; }
+.hp-12-title { display: grid; justify-items: center; font: italic 900 calc(min(9.6vw, 176px) * var(--hp-12-title-k, 1))/0.88 var(--hp-type-family); letter-spacing: -0.05em; text-transform: uppercase; text-wrap: initial; }
 .hp-12-l { display: block; width: max-content; padding-right: 0.08em; white-space: nowrap; clip-path: inset(-0.3em -100vw 0 -100vw); will-change: transform; }
 .hp-12-l--2 { color: var(--hi-yellow); }
 .hp-12-in { display: block; }

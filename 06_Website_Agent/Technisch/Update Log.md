@@ -22,6 +22,8 @@ bijgewerkt: 2026-10-23
 
 **Terugzetten:** `templates/index.json` en `layout/theme.liquid` van vóór de upload staan in `06_Website_Agent/Homepage-prototype/shopify/backup/`.
 
+**Herstel 12:25:** sectie HÏ 12 · Slogan gebruikte voor de instelling "Grootte" dezelfde CSS-variabele (`--hp-12-k`) als de scrollanimatie van de knop, waardoor de titel bij scrollen meekromp en -groeide. Hernoemd naar `--hp-12-title-k`; alleen `sections/hp-12-slogan.liquid` en die ene regel in `assets/hp-home.css` opnieuw geüpload, `templates/index.json` niet aangeraakt. Getest met beweging aan op vier scrollposities: gelijk aan het prototype.
+
 **Open:** de testafbeelding `assets/hp-urltest.webp` in dit thema mag weg (Shopify-koppeling mag geen themabestanden verwijderen; via Code bewerken). Live zetten alleen na akkoord van lars.
 
 **Wie:** cloudsessie 23-10, op verzoek van Timo.

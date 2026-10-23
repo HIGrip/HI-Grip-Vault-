@@ -12,8 +12,8 @@
 {%- render 'hp-base' -%}
 <style>
 #shopify-section-{{ section.id }} {--hp-12-l1_c: {{ s.l1_c }}; --hp-12-l2_c: {{ s.l2_c }}; --hp-12-w: {{ s.cta_w }}px; --hp-12-bg: {{ s.bg }}; --hp-12-fg: {{ s.fg }}; --hp-12-minh: {{ s.minh }}svh; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
-@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-12-k: {{ s.title_m | times: 1.0 | divided_by: 37 }}; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
-@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-12-k: {{ s.title_d | times: 1.0 | divided_by: 140 }}; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 17 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-12-title-k: {{ s.title_m | times: 1.0 | divided_by: 37 }}; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-12-title-k: {{ s.title_d | times: 1.0 | divided_by: 140 }}; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 17 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 96 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 96 }}; --hp-pb-add: 0px;} }
 </style>
 <section class="hp-section hp-12" data-hp="12" aria-labelledby="hp-12-h-{{ section.id }}" data-spread-d="{{ s.spread_d }}" data-spread-m="{{ s.spread_m }}"{% unless s.motion %} data-motion="off"{% endunless %}>
   <div class="hp-12-inner">

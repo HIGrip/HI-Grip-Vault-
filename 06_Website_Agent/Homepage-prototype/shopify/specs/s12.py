@@ -14,7 +14,7 @@ def settings(sp):
     sp.text('line_1', 'Regel 1', 'Ga door waar')
     sp.text('line_2', 'Regel 2', 'anderen stoppen.')
     sp.select('heading_tag', 'Kopniveau (SEO)', [('h2', 'H2'), ('h1', 'H1'), ('p', 'Gewone tekst')], 'h2')
-    sp.size('title', 'Grootte', '--hp-12-k', '.hp-12-title')
+    sp.size('title', 'Grootte', '--hp-12-title-k', '.hp-12-title')
     sp.paint('l1_c', 'Regel 1: kleur', '.hp-12-l--1')
     sp.paint('l2_c', 'Regel 2: kleur', '.hp-12-l--2')
     sp.check('motion', 'Regels komen omhoog en schuiven uit elkaar bij scrollen', True)
@@ -35,7 +35,7 @@ def settings(sp):
 def css(sh):
     color(sh, '.hp-12', 'background', '--hp-12-bg')
     color(sh, '.hp-12', 'color', '--hp-12-fg')
-    fsize(sh, '.hp-12-title', '--hp-12-k')
+    fsize(sh, '.hp-12-title', '--hp-12-title-k')
     fsize(sh, '.hp-12-cta', '--hp-btn-k')
     sh.edit('.hp-12', 'min-height', lambda v: 'min(var(--hp-12-minh, 90svh), 900px)')
     sh.edit('.hp-12-cta', 'width', lambda v: 'min(var(--hp-12-w, 560px), calc(100vw - 32px))')

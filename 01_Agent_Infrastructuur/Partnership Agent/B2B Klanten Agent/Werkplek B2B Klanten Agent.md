@@ -14,4 +14,4 @@ Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen,
 
 - **Meer rechten in het nieuwe dashboard (verwacht over twee à drie maanden, rond januari 2027).** Lars gaf op 12-10-2026 aan dat deze agent in het nieuwe dashboard later meer mag dan nu in Bigin, zoals records bijwerken. Dat geldt pas als Lars of Timo het vrijgeeft en de grenzen in [[Identiteit B2B Klanten Agent]] zijn aangepast. Tot dan: alleen lezen en nieuwe prospects in de eerste fase.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

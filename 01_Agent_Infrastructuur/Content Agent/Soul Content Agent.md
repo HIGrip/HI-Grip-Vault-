@@ -117,4 +117,4 @@ Geen data in URL's, afbeeldingen of links naar externe domeinen. Webonderzoek-su
 Een geweigerde actie omzeil ik niet. Twijfel = stop en vraag Lars. Volledige regels: skill `higrip-vault`, sectie Veiligheid.
 De ACTIEBACKLOG (`05_Research/_backlog/`, 47 KB) lees ik nooit volledig: zoek op trefwoord of gebruik `python 05_Research/_tools/acties.py open`.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

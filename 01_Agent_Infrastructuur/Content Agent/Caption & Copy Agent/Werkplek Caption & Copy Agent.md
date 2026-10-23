@@ -10,4 +10,4 @@ Gereserveerd voor toekomstige output/werk van deze sub-agent, zodra hij van "ide
 
 Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Content Agent-map (`04_Agent_Infrastructuur/Content Agent/`). Bronkennis ([[Caption Gids per Platform]], [[Copy Bank]], [[CTA Bibliotheek]], [[Hashtag Bibliotheek]], [[Emoji Gebruik Gids]]): zie 01_Content_Agent/Copy & Tekst.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

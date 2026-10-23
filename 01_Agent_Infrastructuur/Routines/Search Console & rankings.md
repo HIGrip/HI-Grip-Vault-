@@ -41,4 +41,4 @@ Te weinig data (bijvoorbeeld minder dan 100 vertoningen per zoekterm)? Zeg dat e
 3. **Geheugen:** per week één regel met de kerncijfers, plus een regel per nieuw behandeld keyword of kans. Bij de volgende run vergelijk je hiermee.
 4. **Afronden:** procedure B, A3, A4, A5 en A6. Op het dashboard verschijnt dit als reeks **GS · Search Console & rankings**.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

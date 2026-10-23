@@ -106,4 +106,4 @@ Voorstel en reden, kort, geen overdreven poeha.
 
 [[Brand Identity Overview]], [[Logo & Kleurenpalet]], [[Editing Stijl Gids Video]], [[Tekst-overlay Gids]], [[Template Overzicht]], [[Stock Bronnen]], [[Reel & TikTok Format Gids]], [[Muziek & Licenties]], [[Feiten & Actuele Staat]], [[user]] (gedeeld)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

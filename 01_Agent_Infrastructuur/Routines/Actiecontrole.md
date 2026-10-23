@@ -132,4 +132,4 @@ Maximaal vijf regels:
 3. Nieuw als dubbel gemarkeerd: `<d>`.
 4. Problemen: bronnen zonder toegang, overgeslagen dashboard-docs, onderdelen van de dashboardcijfers die faalden, publish- of pushmeldingen, onvindbare id's. Geen problemen? Laat de regel weg.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

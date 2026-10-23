@@ -102,4 +102,4 @@ Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) schrijft allee
 3. Plak de sleutel nergens anders (niet in een chat, niet in de vault).
 4. Test het met een routine of sessie in die omgeving: `python 05_Research/_tools/google_data.py check` moet bij beide "ok" geven, en `... dashboard` toont per onderdeel de status.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Agent Infrastructuur — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

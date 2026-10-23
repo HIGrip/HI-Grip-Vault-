@@ -1,0 +1,26 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-near-black",
+  "assets": [
+    "b2b-voetbal",
+    "sp-hardlopen",
+    "sp-indoor",
+    "sp-team",
+    "b2b-grippatroon",
+    "sport-rugby"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/teamorder"
+  ],
+  "interactions": [
+    "1.25 (Lars 21-10: 1.24 vrij leeg, saai, niet helemaal on brand, AI-slop-punten): opsommingslijst, teller en opstellingsbord vervallen; donker vlak na Over ons.",
+    "line-up: zes beeldstroken (taille tot voet, zwart-wit) met rugnummer op een schuin plaatje (parallellogram uit Design Elementen); scroll-gekoppeld schuiven de verspringende spelers (--o px, mobiel x0.5) naar één lijn, smoothstep, klaar als het midden op 55% van het scherm staat",
+    "volt-gripllijn op voethoogte met label 'Dezelfde grip', het enige accent",
+    "reduced motion: geen JS, line-up staat recht",
+    "1.26 (Lars 21-10: 1.25 onduidelijk in boodschap en specs): specs vervallen; teamorder-preview als lokker naar de teamorderpagina. Stijl naar /pages/over-ons: tweede kopregel in volt, lichtstreep als gripllijn, tijdlijnlijnen tussen de vakken.",
+    "teamorder-preview: schuif 5–40 spelers (standaard 16) zet het grote getal, vult de schuine staffelmeter (clip-path, --hp-dur-2) en zet ?spelers=N op de knop; teamprijs op slot (€ ••,••) tot je doorklikt. Werkt ook bij reduced motion.",
+    "desktop (>=900 px): drie vakken naast elkaar met verticale lijnen; mobiel: onder elkaar met lijnen ertussen"
+  ],
+  "notes": "Lokker, geen prijzen: aantal, prijs en staffel staan op de teamorderpagina (facts.teamorder_url, nog te bouwen, [CHECK] Lars). De staffelmeter is een sfeerbeeld zonder drempels of percentages."
+}

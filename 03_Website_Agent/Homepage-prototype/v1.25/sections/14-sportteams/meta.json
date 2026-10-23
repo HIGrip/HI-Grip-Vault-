@@ -1,0 +1,25 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-near-black",
+  "assets": [
+    "b2b-voetbal",
+    "sp-hardlopen",
+    "sp-indoor",
+    "sp-team",
+    "b2b-grippatroon",
+    "sport-rugby"
+  ],
+  "links": [
+    "https://www.higrip.nl/collections/gripsokken"
+  ],
+  "interactions": [
+    "1.25 (Lars 21-10: 1.24 vrij leeg, saai, niet helemaal on brand, AI-slop-punten): opsommingslijst, teller en opstellingsbord vervallen; donker vlak na Over ons.",
+    "line-up: zes beeldstroken (taille tot voet, zwart-wit) met rugnummer op een schuin plaatje (parallellogram uit Design Elementen); scroll-gekoppeld schuiven de verspringende spelers (--o px, mobiel x0.5) naar één lijn, smoothstep, klaar als het midden op 55% van het scherm staat",
+    "volt-gripllijn op voethoogte met label 'Dezelfde grip', het enige accent",
+    "desktop (>=900 px): kop met lead rechts, line-up van zes valt onder de kop (rasterbreuk), specs in drie kolommen met de pill rechts",
+    "mobiel: drie spelers, specs als rijen, pill eronder",
+    "reduced motion: geen JS, line-up staat recht"
+  ],
+  "notes": "Specs uit facts.products (maten 34 t/m 47 over 1.0 en 2.0, wit of zwart, vanaf €10,99 per paar in een 5-pack). Geen teamprijs of minimum: [CHECK] Lars. Knop naar de collectie (packs bestelbaar); eigen teambestemming [CHECK]."
+}

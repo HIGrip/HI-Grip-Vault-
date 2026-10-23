@@ -1,0 +1,22 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-white",
+  "assets": [
+    "ai-teamorder"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/teamorder"
+  ],
+  "interactions": [
+    "1.35 (Lars 22-10, vier opmerkingen op 1.34): eyebrow weg; kop 'Bestel als team.' / 'Bespaar per paar.'; foto ingekaderd (kolom 7–12, afgeronde hoeken, niet meer tegen de schermrand); drie voordelen over de volle breedte onder de foto (rij 2, haarlijnen ertussen). Mobiel: tekst, foto, voordelen.",
+    "1.34 (Lars 22-10, voorbeeld 1 'meer zoals deze'): hoge foto over de halve breedte tot de schermrand (kolom 7–12, ±640 px), links kop, uitleg, knop en de drie voordelen klein eronder. Voordelen niet meer over de volle breedte. Kop 'Bestel voor je team.' / 'Bespaar per paar.', knop 'Ontdek teamorders'.",
+    "1.33 (Lars 22-10): witte achtergrond. Kop zwart, tweede regel op een schuin volt vlak (volt-tekst is onleesbaar op wit); pictogrammen zwart; pill zwart met witte tekst; haarlijnen --hi-line. 09 is daarom --hi-studio.",
+    "1.32 (Lars 22-10, tien AI-voorbeeldsecties voor teamorder): opbouw overgenomen, vertaald naar onze stijl. Formulier en grote feiten uit 1.31 vervallen.",
+    "indeling desktop (>=900 px): rij 1 tekst kolom 1–7 (eyebrow, kop, uitleg, pill) en foto kolom 8–12 die tot de schermrand loopt (afgeronde linkerhoeken); rij 2 drie voordelen over de volle breedte met haarlijnen. Mobiel: tekst, foto 4:3, voordelen onder elkaar.",
+    "kop: 'Bestel als team.' wit, 'Bespaar per paar.' volt, Poppins 900 italic uppercase. Eén pill 'Bekijk teamorders' (wit, chevron) naar de teamorderpagina.",
+    "foto: zwart-wit, slogan 'More grip, better performance.' rechtsboven met een volt streepje (naar voorbeeld 'Same people higher standards', maar met onze vaste slogan).",
+    "motion: de foto schuift tot 4% mee met de scroll (transform). Reduced motion: stil."
+  ],
+  "notes": "AI-VOORBEELDFOTO (assets ai-teamorder, voorbeeld 1 uit de ChatGPT-voorbeelden van Lars, ingebakken slogan weggewerkt): de sok toont 'Hï' in plaats van het echte HÏ Grip-merk. Alleen als plaatsvervanger in het prototype; vervangen door een echte teamfoto vóór live [CHECK]. Maten uit facts.products 2.0. Geen percentages, aantallen of leveringsclaims uit de voorbeelden overgenomen. Teamorderpagina nog te bouwen [CHECK]."
+}

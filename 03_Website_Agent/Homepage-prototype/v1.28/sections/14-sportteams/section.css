@@ -1,0 +1,72 @@
+/* 14 SPORTTEAMS · 1.27 (Lars 21-10: 1.26 te AI-achtig). Concept: het teamformulier.
+   Kop links (over-ons-stijl, tweede regel volt), één groot actiebeeld rechts (voetballer, zwart-wit), en daar half overheen
+   een wit papieren teamorderformulier in een dubbele rand: rugnummer, positie en maat per speler, half ingevuld met
+   "+ de rest van je selectie". Het hele formulier is de link naar de teamorderpagina.
+   Uitlijning: 12-koloms raster; kop en formulier delen de linkerrand (kolom 1), het formulier steekt één kolom over het beeld.
+   Motion: bij binnenkomst schrijven de maten zich rij voor rij in; het beeld schuift licht mee. Zonder motion staat alles ingevuld. */
+.hp-14 { background: var(--hi-near-black); color: var(--hi-white); overflow-x: clip; }
+.hp-14-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-14-head { display: grid; gap: var(--hp-space-ms); align-content: start; }
+.hp-14-h2 { font: italic 900 clamp(48px, 7.2vw, 120px)/0.88 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; }
+.hp-14-h2__b { color: var(--hi-yellow); }
+.hp-14-lead { max-width: 34ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-titanium); }
+
+/* beeld */
+.hp-14-media { position: relative; overflow: hidden; aspect-ratio: 4 / 5; border-radius: var(--hp-radius-media); background: var(--hi-warm-dark); }
+.hp-14-img { position: absolute; left: 0; top: -6%; width: 100%; height: 112%; object-fit: cover; object-position: 50% 55%; filter: grayscale(1) contrast(1.1); will-change: transform; }
+.hp-14-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, var(--hi-scrim) 0%, transparent 45%); pointer-events: none; }
+
+/* formulier: dubbele rand (schaal + papier) */
+.hp-14-sheet {
+  position: relative; z-index: 1; display: block; margin-top: calc(-1 * clamp(96px, 22vw, 140px)); padding: 6px;
+  border-radius: calc(var(--hp-radius-media) + 6px); background: var(--hi-line-dark); color: var(--hi-black); text-decoration: none;
+  -webkit-tap-highlight-color: transparent; transition: transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-14-sheet__core { display: grid; gap: var(--hp-space-sm); padding: var(--hp-space-ms) var(--hp-space-ms) var(--hp-space-ms); border-radius: var(--hp-radius-media); background: var(--hi-white); }
+.hp-14-sheet:focus-visible { outline: 2px solid var(--hi-yellow); outline-offset: 4px; }
+
+.hp-14-sheet__top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 2px solid var(--hi-black); }
+.hp-14-sheet__title { font: italic 900 clamp(26px, 2.4vw, 36px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+
+.hp-14-table { display: grid; }
+.hp-14-row { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; align-items: center; column-gap: 12px; min-height: 44px; border-bottom: 1px solid var(--hi-line); }
+.hp-14-row--head { min-height: 32px; }
+.hp-14-row--head .hp-14-c { font: 600 11px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); opacity: 0.6; }
+.hp-14-c { font: 600 15px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); }
+.hp-14-c--nr { font: italic 900 20px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); font-variant-numeric: tabular-nums; }
+.hp-14-c--size { justify-self: end; }
+.hp-14-chip {
+  display: inline-block; padding: 6px 12px 5px; border-radius: 999px; background: var(--hi-black); color: var(--hi-white);
+  font: 700 13px/1 var(--hp-type-family); font-variant-numeric: tabular-nums;
+  transition: clip-path var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i, 0)), background-color var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i, 0));
+  clip-path: inset(0 0 0 0 round 999px);
+}
+
+.hp-14-more { padding: 4px 0 2px; font: 600 14px/1.2 var(--hp-type-family); color: var(--hi-graphite); opacity: 0.7; }
+
+.hp-14-sheet__foot { display: grid; gap: var(--hp-space-sm); padding-top: var(--hp-space-sm); border-top: 2px solid var(--hi-black); }
+.hp-14-foot__k { font: 700 15px/1.25 var(--hp-type-family); text-transform: uppercase; }
+.hp-14-cta { justify-self: start; }
+
+/* hover en tik: het formulier komt naar je toe */
+.hp-14-sheet:active { transform: translateY(-4px); }
+.hp-14-sheet:active .hp-pill__chev { transform: translateX(3px); }
+@media (hover: hover) {
+  .hp-14-sheet:hover { transform: translateY(-6px); }
+  .hp-14-sheet:hover .hp-pill__chev { transform: translateX(3px); }
+}
+
+/* wachtstand alleen met motion: lege maatvakjes die zich rij voor rij invullen */
+html.hp-motion .hp-14:not(.is-on) .hp-14-chip { clip-path: inset(0 100% 0 0 round 999px); background: var(--hi-white); }
+
+@media (min-width: 900px) {
+  .hp-14-inner { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(16px, 2vw, 32px); row-gap: 0; align-items: start; }
+  .hp-14-head { grid-column: 1 / 7; grid-row: 1; padding-top: var(--hp-space-sm); }
+  .hp-14-media { grid-column: 6 / 13; grid-row: 1 / 3; align-self: stretch; aspect-ratio: auto; min-height: 640px; }
+  .hp-14-sheet { grid-column: 1 / 7; grid-row: 2; align-self: end; margin-top: var(--hp-space-xl); }
+  .hp-14-sheet__core { padding: var(--hp-space-md); }
+  .hp-14-sheet__foot { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+  .hp-14-foot__k { max-width: 20ch; }
+}

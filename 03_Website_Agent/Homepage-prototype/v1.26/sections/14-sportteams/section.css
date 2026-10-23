@@ -1,0 +1,70 @@
+/* 14 SPORTTEAMS · 1.26 (Lars 21-10: 1.25 onduidelijk). De sectie lokt naar de teamorderpagina (aantal, prijs, staffelkorting).
+   Stijl naar /pages/over-ons: cursieve 900-kop met de tweede regel in volt, zwart-wit fotostroken, dunne tijdlijnlijnen,
+   een lichtstreep in volt. Line-up van zes spelers die tijdens het scrollen naar één gripllijn schuift (1.25).
+   Daaronder een teamorder-preview in drie vakken: teamgrootte kiezen (schuif), de staffelmeter loopt mee, de teamprijs staat
+   op slot tot je doorklikt. Volt alleen in de kop, de lichtstreep, de schuif en de meter. */
+.hp-14 { background: var(--hi-near-black); color: var(--hi-white); overflow-x: clip; }
+.hp-14-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-14-head { position: relative; z-index: 2; display: grid; gap: var(--hp-space-sm); }
+.hp-14-h2 { max-width: 12ch; font: italic 900 clamp(48px, 8.4vw, 136px)/0.88 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; }
+.hp-14-h2__b { color: var(--hi-yellow); }
+.hp-14-lead { max-width: 38ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-titanium); }
+
+/* line-up */
+.hp-14-stage { position: relative; }
+.hp-14-lineup { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.hp-14-player { position: relative; overflow: hidden; aspect-ratio: 3 / 7; border-radius: 10px; background: var(--hi-warm-dark); will-change: transform; }
+.hp-14-player:nth-child(n+4) { display: none; }
+.hp-14-img { position: absolute; left: 0; top: var(--t, -6%); width: 100%; height: var(--h, 112%); object-fit: cover; object-position: var(--fx) 50%; filter: grayscale(1) contrast(1.08); }
+.hp-14-player::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, var(--hi-scrim-strong) 0%, transparent 28%); pointer-events: none; }
+
+/* rugnummer: schuin plaatje, cijfer recht */
+.hp-14-nr { position: absolute; z-index: 1; top: 10px; left: 8px; padding: 4px 10px 3px; background: var(--hi-black); transform: skewX(-12deg); }
+.hp-14-nr span { display: block; transform: skewX(12deg); font: italic 900 22px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); font-variant-numeric: tabular-nums; }
+
+/* gripllijn op voethoogte: lichtstreep zoals op over-ons, vervaagt aan de uiteinden */
+.hp-14-line { position: absolute; z-index: 1; left: -16px; right: -16px; top: 86%; height: 2px; background: linear-gradient(to right, transparent 0%, var(--hi-yellow) 18%, var(--hi-yellow) 82%, transparent 100%); pointer-events: none; }
+.hp-14-line__label { position: absolute; right: 24px; bottom: 10px; font: 600 11px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-yellow); }
+
+/* teamorder-preview */
+.hp-14-order { display: grid; border-top: 1px solid var(--hi-line-dark); }
+.hp-14-cell { display: grid; gap: 14px; align-content: start; padding: var(--hp-space-ms) 0; border-bottom: 1px solid var(--hi-line-dark); }
+.hp-14-micro { font: 600 11px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+.hp-14-big { display: flex; align-items: baseline; gap: 10px; font: italic 900 clamp(44px, 4.6vw, 72px)/0.9 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); font-variant-numeric: tabular-nums; }
+.hp-14-big__unit { font: 600 13px/1 var(--hp-type-family); font-style: normal; letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+
+/* schuif: volt tot de duim, daarna een dunne lijn */
+.hp-14-range { width: 100%; height: 28px; margin: 0; background: transparent; cursor: pointer; -webkit-appearance: none; appearance: none; touch-action: pan-y; }
+.hp-14-range::-webkit-slider-runnable-track { height: 4px; border-radius: 2px; background: linear-gradient(to right, var(--hi-yellow) var(--p), var(--hi-line-dark) var(--p)); }
+.hp-14-range::-moz-range-track { height: 4px; border-radius: 2px; background: linear-gradient(to right, var(--hi-yellow) var(--p), var(--hi-line-dark) var(--p)); }
+.hp-14-range::-webkit-slider-thumb { width: 24px; height: 24px; margin-top: -10px; border: 0; border-radius: 50%; background: var(--hi-white); box-shadow: 0 0 0 4px var(--hi-near-black); -webkit-appearance: none; appearance: none; transition: scale var(--hp-dur-1) var(--hp-ease); }
+.hp-14-range::-moz-range-thumb { width: 24px; height: 24px; border: 0; border-radius: 50%; background: var(--hi-white); box-shadow: 0 0 0 4px var(--hi-near-black); }
+.hp-14-range:focus-visible { outline: 2px solid var(--hi-yellow); outline-offset: 6px; border-radius: 4px; }
+.hp-14-range:active::-webkit-slider-thumb { scale: 1.15; }
+@media (hover: hover) { .hp-14-range:hover::-webkit-slider-thumb { scale: 1.15; } }
+
+/* staffelmeter: tien schuine segmenten, ze lopen vol met de schuif */
+.hp-14-meter { position: relative; height: 44px; overflow: hidden; background: repeating-linear-gradient(105deg, var(--hi-line-dark) 0 10px, transparent 10px 16px); }
+.hp-14-meter__fill { position: absolute; inset: 0; background: repeating-linear-gradient(105deg, var(--hi-yellow) 0 10px, transparent 10px 16px); clip-path: inset(0 calc(100% - var(--p)) 0 0); transition: clip-path var(--hp-dur-2) var(--hp-ease); }
+.hp-14-tier-text { font: 700 15px/1.3 var(--hp-type-family); text-transform: uppercase; }
+
+/* prijs op slot */
+.hp-14-lock__v { color: var(--hi-titanium); }
+.hp-14-cta { justify-self: start; margin-top: 6px; }
+
+@media (min-width: 900px) {
+  .hp-14-inner { row-gap: var(--hp-space-ml); }
+  .hp-14-head { grid-template-columns: minmax(0, 1fr) minmax(0, 38ch); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-14-lead { justify-self: end; padding-bottom: clamp(40px, 4.4vw, 84px); }
+  .hp-14-stage { margin-top: calc(-1 * clamp(24px, 3.4vw, 64px)); }
+  .hp-14-lineup { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+  .hp-14-player { aspect-ratio: 3 / 6.4; border-radius: 14px; }
+  .hp-14-player:nth-child(n+4) { display: block; }
+  .hp-14-nr { top: 14px; left: 12px; padding: 6px 14px 5px; }
+  .hp-14-nr span { font-size: 30px; }
+  .hp-14-order { grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--hi-line-dark); }
+  .hp-14-cell { padding: var(--hp-space-md) var(--hp-space-md) var(--hp-space-md) 0; border-bottom: 0; }
+  .hp-14-cell + .hp-14-cell { padding-left: var(--hp-space-md); border-left: 1px solid var(--hi-line-dark); }
+}

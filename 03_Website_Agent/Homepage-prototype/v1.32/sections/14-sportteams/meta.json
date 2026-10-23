@@ -1,0 +1,19 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-near-black",
+  "assets": [
+    "ai-teamorder"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/teamorder"
+  ],
+  "interactions": [
+    "1.32 (Lars 22-10, tien AI-voorbeeldsecties voor teamorder): opbouw overgenomen, vertaald naar onze stijl. Formulier en grote feiten uit 1.31 vervallen.",
+    "indeling desktop (>=900 px): rij 1 tekst kolom 1–7 (eyebrow, kop, uitleg, pill) en foto kolom 8–12 die tot de schermrand loopt (afgeronde linkerhoeken); rij 2 drie voordelen over de volle breedte met haarlijnen. Mobiel: tekst, foto 4:3, voordelen onder elkaar.",
+    "kop: 'Bestel als team.' wit, 'Bespaar per paar.' volt, Poppins 900 italic uppercase. Eén pill 'Bekijk teamorders' (wit, chevron) naar de teamorderpagina.",
+    "foto: zwart-wit, slogan 'More grip, better performance.' rechtsboven met een volt streepje (naar voorbeeld 'Same people higher standards', maar met onze vaste slogan).",
+    "motion: de foto schuift tot 4% mee met de scroll (transform). Reduced motion: stil."
+  ],
+  "notes": "AI-VOORBEELDFOTO (assets ai-teamorder, afkomstig uit de ChatGPT-voorbeelden van Lars): de sok toont 'Hï' in plaats van het echte HÏ Grip-merk. Alleen als plaatsvervanger in het prototype; vervangen door een echte teamfoto vóór live [CHECK]. Maten uit facts.products 2.0. Geen percentages, aantallen of leveringsclaims uit de voorbeelden overgenomen. Teamorderpagina nog te bouwen [CHECK]."
+}

@@ -1,0 +1,53 @@
+/* 14 SPORTTEAMS · 1.25 (Lars 21-10: 1.24 te leeg, saai, niet on brand). Donker, hoog contrast, mensen in actie.
+   Een line-up van zes spelers als smalle beeldstroken (taille tot voet), elk met zijn rugnummer op een schuin plaatje.
+   Bij binnenkomst staan de spelers verspringend; tijdens het scrollen schuiven ze naar één lijn, met de voeten op een
+   dunne volt-gripllijn: losse sporters worden één team op dezelfde grip. Volt alleen in die lijn.
+   Daaronder technische specs met dunne lijnen (maten, kleuren, prijs per paar) en de ene pill. Zonder motion staat de line-up recht. */
+.hp-14 { background: var(--hi-near-black); color: var(--hi-white); overflow-x: clip; }
+.hp-14-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-14-head { position: relative; z-index: 2; display: grid; gap: var(--hp-space-sm); }
+.hp-14-h2 { max-width: 11ch; font: italic 900 clamp(48px, 8.4vw, 136px)/0.88 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-lead { max-width: 38ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-titanium); }
+
+/* line-up */
+.hp-14-stage { position: relative; }
+.hp-14-lineup { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.hp-14-player { position: relative; overflow: hidden; aspect-ratio: 3 / 7; border-radius: 10px; background: var(--hi-warm-dark); will-change: transform; }
+.hp-14-player:nth-child(n+4) { display: none; }
+.hp-14-img { position: absolute; left: 0; top: var(--t, -6%); width: 100%; height: var(--h, 112%); object-fit: cover; object-position: var(--fx) 50%; filter: grayscale(1) contrast(1.08); }
+.hp-14-player::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, var(--hi-scrim-strong) 0%, transparent 28%); pointer-events: none; }
+
+/* rugnummer: schuin plaatje, cijfer recht */
+.hp-14-nr { position: absolute; z-index: 1; top: 10px; left: 8px; padding: 4px 10px 3px; background: var(--hi-black); transform: skewX(-12deg); }
+.hp-14-nr span { display: block; transform: skewX(12deg); font: italic 900 22px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); font-variant-numeric: tabular-nums; }
+
+/* gripllijn op voethoogte */
+.hp-14-line { position: absolute; z-index: 1; left: -8px; right: -8px; top: 86%; height: 1px; background: var(--hi-yellow); pointer-events: none; }
+.hp-14-line__label { position: absolute; right: 8px; bottom: 8px; font: 600 11px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-yellow); }
+
+/* specs en knop */
+.hp-14-foot { display: grid; gap: var(--hp-space-md); justify-items: start; }
+.hp-14-specs { display: grid; width: 100%; }
+.hp-14-spec { display: flex; align-items: baseline; justify-content: space-between; gap: var(--hp-space-sm); padding: 14px 0; border-top: 1px solid var(--hi-line-dark); }
+.hp-14-spec:last-child { border-bottom: 1px solid var(--hi-line-dark); }
+.hp-14-spec__k { font: 600 11px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+.hp-14-spec__v { margin: 0; font: italic 900 clamp(22px, 2.2vw, 34px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; text-align: right; }
+.hp-14-spec__note { display: block; margin-top: 6px; font: 600 11px/1 var(--hp-type-family); font-style: normal; letter-spacing: var(--hp-type-track-label); color: var(--hi-titanium); }
+
+@media (min-width: 900px) {
+  .hp-14-inner { row-gap: var(--hp-space-ml); }
+  .hp-14-head { grid-template-columns: minmax(0, 1fr) minmax(0, 38ch); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-14-lead { justify-self: end; padding-bottom: clamp(40px, 4.4vw, 84px); }
+  .hp-14-stage { margin-top: calc(-1 * clamp(24px, 3.4vw, 64px)); }
+  .hp-14-lineup { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+  .hp-14-player { aspect-ratio: 3 / 6.4; border-radius: 14px; }
+  .hp-14-player:nth-child(n+4) { display: block; }
+  .hp-14-nr { top: 14px; left: 12px; padding: 6px 14px 5px; }
+  .hp-14-nr span { font-size: 30px; }
+  .hp-14-foot { grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-14-specs { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--hp-space-md); }
+  .hp-14-spec { display: grid; gap: 10px; align-content: start; padding: var(--hp-space-sm) 0 0; border-bottom: 0; }
+  .hp-14-spec:last-child { border-bottom: 0; }
+  .hp-14-spec__v { text-align: left; }
+}

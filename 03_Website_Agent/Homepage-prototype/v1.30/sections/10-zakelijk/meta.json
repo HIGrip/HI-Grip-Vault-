@@ -1,0 +1,28 @@
+{
+  "id": "10",
+  "name": "zakelijk",
+  "bg": "--hi-black",
+  "assets": [
+    "b2b-club-spirit",
+    "b2b-sok-wit",
+    "b2b-sok-zwart",
+    "b2b-sokhoogtes"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/zakelijk",
+    "https://www.higrip.nl/pages/zakelijk#clubs",
+    "https://www.higrip.nl/pages/zakelijk#retailers"
+  ],
+  "interactions": [
+    "1.2 ronde 2: stapelkaarten. Drie grote kaarten (voetbalclubs, sportwinkels, pilates en studio's) zijn elk sticky, telkens --hp-10-step (12/14 px) lager; de volgende schuift eroverheen, zodat er een stapel met zichtbare randjes ontstaat",
+    "scroll-gekoppeld via --hp-10-cover: een bedekte kaart schaalt terug (tot 0.94 per kaart erboven) en wordt licht donkerder (overlay max 0.28); via --hp-10-in zoomt het beeld van 1.14 naar 1 terwijl de kaart binnenschuift",
+    "desktop (≥900 px): links blijven kop, lead, een index (01–03, aria-hidden) en de ene pill sticky staan; de index volgt de bovenste kaart (is-current: zwart en ingesprongen)",
+    "mobiel (<900 px): dezelfde stapeling in één kolom, kaarthoogte min(540px, 100svh − 120px); index verborgen; de pill staat onder de stapel",
+    "bovenste kaart (is-current): de chevron-cirkel krijgt het accent van de kaart (volt / pumpkin / royal blue); hover en focus: chevron schuift 4 px en kleurt, foto/illustratie zoomt naar 1.04, de sokken schuiven op desktop uit elkaar; tik (touch/pen) zet is-pressed met dezelfde staat, daarna volgt de link",
+    "hele kaart is de link (aria-labelledby titel, aria-describedby tekst); de cue (label + chevron) is aria-hidden",
+    "reduced motion: geen sticky stapel, gewone lijst met ruimte ertussen, geen schaal, zoom of overlay",
+    "1.20 (mobiel): fotoraster zoals 04: clubs breed (3:2), winkels en studio's naast elkaar (4:5); feitenblok linksboven, titel en pijl linksonder op een donker verloop; uitleg verborgen (blijft aria-describedby). Laptop ongewijzigd.",
+    "1.24 (Lars 21-10): terug naar de opzet van 1.22 (sample-ticket naast de kop, drie kaarten). Sportteams staan niet meer in 10 maar hebben een eigen sectie (14), omdat teams geen gratis sample krijgen. Clubkaart heet Sportclubs (sinds 1.23)."
+  ],
+  "notes": "Vervangt het horizontale accordeon (Lars 19-10: compleet anders). Kaartkleuren alleen tokens: voetbal --hi-near-black, winkels --hi-white, studio's --hi-black; accent alleen in de chevron-cirkel, geen accentvlakken. Winkel: witte en zwarte sok vrijstaand op wit (naadloos in de witte kaart). Studio: sokhoogtes als wit productvel in de zwarte kaart, 142% van het vlak zodat de eigen witrand wegvalt (weergave blijft kleiner dan 900 px, contrast 1.14 maakt de lichte vlakjes in de bron wit). Tussenruimte tussen kaarten via row-gap, niet via margin (een sticky box moet binnen de lijst blijven). De illustratie bevat Engelse labels (over-the-calf … no show) uit de bronafbeelding. Ankers #clubs/#retailers bestaan alleen in het bronthema, niet op de live /pages/zakelijk (facts.json, melden in Fase 2); pilates linkt naar #clubs (geen eigen anker). Adviesprijs €19,95 alleen zoals in copy (feitenbestand noemt nog €17,95)."
+}

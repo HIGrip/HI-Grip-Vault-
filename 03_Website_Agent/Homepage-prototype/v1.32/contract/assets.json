@@ -1,0 +1,1097 @@
+{
+  "_uitleg": "Alle beelden van de pagina. De artifact-CSP blokkeert higrip.nl/cdn, dus elke foto is gedownload en wordt als file naast index.html gepubliceerd (besluit 18-10). bron_cdn = de echte bron. Gebruik alleen paden uit dit bestand; srcset met de breedtes uit files.",
+  "photos": [
+    {
+      "id": "hero-padel-zool",
+      "sections": [
+        "01"
+      ],
+      "alt": "Zool van een witte HÏ Grip-gripsok met driehoekig grippatroon op een blauwe padelbaan",
+      "omschrijving": "Close-up zool en schoen op padelbaan; sterkste gripbeeld (onderzoek 14-10)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/padel-schoen-closeup.jpg",
+      "origineel": {
+        "w": 6000,
+        "h": 4000
+      },
+      "files": [
+        {
+          "path": "img/hero-padel-zool-2400.webp",
+          "w": 2400,
+          "h": 1600,
+          "kb": 159
+        },
+        {
+          "path": "img/hero-padel-zool-1200.webp",
+          "w": 1200,
+          "h": 800,
+          "kb": 55
+        }
+      ]
+    },
+    {
+      "id": "p10-zij",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 1.0, zijaanzicht met grippatroon",
+      "omschrijving": "Productfoto 1.0, transparante achtergrond",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Performance_Grip_Sock_1.0_side_view_6813bad8-7e95-46d1-8da9-306d9e90dd1a.png",
+      "origineel": {
+        "w": 1024,
+        "h": 1024
+      },
+      "files": [
+        {
+          "path": "img/p10-zij-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 53
+        }
+      ]
+    },
+    {
+      "id": "p10-zool",
+      "sections": [
+        "02"
+      ],
+      "alt": "Zool van de Performance Gripsokken 1.0 naast een drukkaart van de voet",
+      "omschrijving": "Tweede productbeeld 1.0 (hoverbeeld op de collectiepagina)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/6049d97e-2607-4f5e-8288-6dd22b6b1f3e.png",
+      "origineel": {
+        "w": 1536,
+        "h": 1024
+      },
+      "files": [
+        {
+          "path": "img/p10-zool-900.webp",
+          "w": 900,
+          "h": 600,
+          "kb": 23
+        }
+      ]
+    },
+    {
+      "id": "p20-zwart-voor",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in zwart, vooraanzicht",
+      "omschrijving": "Productfoto 2.0 zwart, witte achtergrond",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Performance_Grip_Socks_2.0_zwart_voorkant.png",
+      "origineel": {
+        "w": 1024,
+        "h": 1024
+      },
+      "files": [
+        {
+          "path": "img/p20-zwart-voor-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 17
+        }
+      ]
+    },
+    {
+      "id": "p20-zwart-achter",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in zwart, achterkant met siliconen grip op de zool",
+      "omschrijving": "Hoverbeeld 2.0 zwart",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Performance_Grip_socks_2.0_Zwart_achterkant.png",
+      "origineel": {
+        "w": 1254,
+        "h": 1254
+      },
+      "files": [
+        {
+          "path": "img/p20-zwart-achter-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 30
+        }
+      ]
+    },
+    {
+      "id": "p20-wit-voor",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in wit, vooraanzicht",
+      "omschrijving": "Productfoto 2.0 wit, witte achtergrond",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Performance_Gripsokken_2.0_wit_voor_aanzicht.png",
+      "origineel": {
+        "w": 1254,
+        "h": 1254
+      },
+      "files": [
+        {
+          "path": "img/p20-wit-voor-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 26
+        }
+      ]
+    },
+    {
+      "id": "p20-wit-achter",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in wit, achterkant met siliconen grip op de zool",
+      "omschrijving": "Hoverbeeld 2.0 wit",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Performace_Grip_Socks_2.0_Wit_achterkant.png",
+      "origineel": {
+        "w": 1254,
+        "h": 1254
+      },
+      "files": [
+        {
+          "path": "img/p20-wit-achter-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 32
+        }
+      ]
+    },
+    {
+      "id": "sp-padel-voeten",
+      "sections": [
+        "04"
+      ],
+      "alt": "Padelspeler strikt zijn schoen, witte gripsokken, racket en ballen op een blauwe baan",
+      "omschrijving": "Eigen foto, padel",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/IMG_1655.jpg",
+      "origineel": {
+        "w": 6000,
+        "h": 4000
+      },
+      "files": [
+        {
+          "path": "img/sp-padel-voeten-1800.webp",
+          "w": 1800,
+          "h": 1200,
+          "kb": 389
+        },
+        {
+          "path": "img/sp-padel-voeten-900.webp",
+          "w": 900,
+          "h": 600,
+          "kb": 110
+        }
+      ]
+    },
+    {
+      "id": "sp-voetbal-zool",
+      "sections": [
+        "04"
+      ],
+      "alt": "Voetballer op kunstgras, witte gripsokken met grippatroon onder de zool",
+      "omschrijving": "Eigen foto, voetbal",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/HI_Grip_gripsokken_wit_grippatroon.jpg",
+      "origineel": {
+        "w": 2048,
+        "h": 1365
+      },
+      "files": [
+        {
+          "path": "img/sp-voetbal-zool-1800.webp",
+          "w": 1800,
+          "h": 1200,
+          "kb": 121
+        },
+        {
+          "path": "img/sp-voetbal-zool-900.webp",
+          "w": 900,
+          "h": 600,
+          "kb": 45
+        }
+      ]
+    },
+    {
+      "id": "sp-gym",
+      "sections": [
+        "04"
+      ],
+      "alt": "Sporter in witte gripsokken traint met een halterstang in de gym",
+      "omschrijving": "Eigen foto, gym",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/IMG_1623.jpg",
+      "origineel": {
+        "w": 6000,
+        "h": 4000
+      },
+      "files": [
+        {
+          "path": "img/sp-gym-1800.webp",
+          "w": 1800,
+          "h": 1200,
+          "kb": 117
+        },
+        {
+          "path": "img/sp-gym-900.webp",
+          "w": 900,
+          "h": 600,
+          "kb": 47
+        }
+      ]
+    },
+    {
+      "id": "sp-indoor",
+      "sections": [
+        "04"
+      ],
+      "alt": "Sporters in witte gripsokken in een sporthal met houten vloer",
+      "omschrijving": "Eigen foto, indoor",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/image00008.jpg",
+      "origineel": {
+        "w": 2806,
+        "h": 3398
+      },
+      "files": [
+        {
+          "path": "img/sp-indoor-1800.webp",
+          "w": 1800,
+          "h": 2180,
+          "kb": 164
+        },
+        {
+          "path": "img/sp-indoor-900.webp",
+          "w": 900,
+          "h": 1090,
+          "kb": 64
+        }
+      ]
+    },
+    {
+      "id": "sp-hardlopen",
+      "sections": [
+        "04"
+      ],
+      "alt": "Hardloper met witte HÏ Grip-gripsokken in hardloopschoenen",
+      "omschrijving": "Productmedia 2.0 wit, hardlopen",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Gripsokken_hardlopen_wit.jpg",
+      "origineel": {
+        "w": 1102,
+        "h": 1102
+      },
+      "files": [
+        {
+          "path": "img/sp-hardlopen-1100.webp",
+          "w": 1100,
+          "h": 1100,
+          "kb": 265
+        }
+      ]
+    },
+    {
+      "id": "sp-team",
+      "sections": [
+        "04"
+      ],
+      "alt": "Voetballer trekt witte HÏ Grip-gripsokken aan op de bank langs het kunstgrasveld",
+      "omschrijving": "Eigen foto, team; zeer breed (2,67:1)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Gripsokken_voor_bedrijven.jpg",
+      "origineel": {
+        "w": 6000,
+        "h": 2244
+      },
+      "files": [
+        {
+          "path": "img/sp-team-2400.webp",
+          "w": 2400,
+          "h": 898,
+          "kb": 282
+        },
+        {
+          "path": "img/sp-team-1200.webp",
+          "w": 1200,
+          "h": 449,
+          "kb": 87
+        }
+      ]
+    },
+    {
+      "id": "sp-tennis-wit",
+      "sections": [
+        "04"
+      ],
+      "alt": "Tennisser in witte gripsokken op de baan",
+      "omschrijving": "Productmedia 2.0 wit, tennis",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Tennis_gripsokken_wit.jpg",
+      "origineel": {
+        "w": 1179,
+        "h": 843
+      },
+      "files": [
+        {
+          "path": "img/sp-tennis-wit-1179.webp",
+          "w": 1179,
+          "h": 843,
+          "kb": 228
+        }
+      ]
+    },
+    {
+      "id": "sp-voetbal-bal",
+      "sections": [
+        "04"
+      ],
+      "alt": "Voetballer in witte gripsokken haalt uit naar de bal op kunstgras",
+      "omschrijving": "Eigen foto, voetbal (max 1024 px)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Grip_sokken_voetbal.jpg",
+      "origineel": {
+        "w": 1024,
+        "h": 768
+      },
+      "files": [
+        {
+          "path": "img/sp-voetbal-bal-1024.webp",
+          "w": 1024,
+          "h": 768,
+          "kb": 323
+        }
+      ]
+    },
+    {
+      "id": "sport-padel",
+      "sections": [
+        "07"
+      ],
+      "alt": "Padelspeler in witte gripsokken op een blauwe padelbaan",
+      "omschrijving": "Sport 07: padel",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/padel-final-cta.jpg",
+      "origineel": {
+        "w": 6000,
+        "h": 4000
+      },
+      "files": [
+        {
+          "path": "img/sport-padel-2000.webp",
+          "w": 2000,
+          "h": 1333,
+          "kb": 383
+        },
+        {
+          "path": "img/sport-padel-1000.webp",
+          "w": 1000,
+          "h": 667,
+          "kb": 103
+        }
+      ]
+    },
+    {
+      "id": "sport-tennis",
+      "sections": [
+        "07"
+      ],
+      "alt": "Tennisser in witte gripsokken op een gravelbaan",
+      "omschrijving": "Sport 07: tennis",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Tennissokken_met_grip.jpg",
+      "origineel": {
+        "w": 2048,
+        "h": 1365
+      },
+      "files": [
+        {
+          "path": "img/sport-tennis-2048.webp",
+          "w": 2048,
+          "h": 1365,
+          "kb": 389
+        },
+        {
+          "path": "img/sport-tennis-1000.webp",
+          "w": 1000,
+          "h": 667,
+          "kb": 101
+        }
+      ]
+    },
+    {
+      "id": "sport-voetbal",
+      "sections": [
+        "07"
+      ],
+      "alt": "Voetballer in HÏ Grip-shirt haalt uit op een kunstgrasveld",
+      "omschrijving": "Sport 07: voetbal",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/IMG_2569.jpg",
+      "origineel": {
+        "w": 3181,
+        "h": 3181
+      },
+      "files": [
+        {
+          "path": "img/sport-voetbal-2000.webp",
+          "w": 2000,
+          "h": 2000,
+          "kb": 223
+        },
+        {
+          "path": "img/sport-voetbal-1000.webp",
+          "w": 1000,
+          "h": 1000,
+          "kb": 87
+        }
+      ]
+    },
+    {
+      "id": "sport-rugby",
+      "sections": [
+        "07"
+      ],
+      "alt": "Rugbyspelers in een scrum op een grasveld",
+      "omschrijving": "Sport 07: rugby. LET OP: geen eigen HÏ Grip-beeld (geen sok zichtbaar); staat wel op de CDN en op de rugbypagina van het thema",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-rugby-hero.jpg",
+      "origineel": {
+        "w": 1600,
+        "h": 926
+      },
+      "files": [
+        {
+          "path": "img/sport-rugby-1600.webp",
+          "w": 1600,
+          "h": 926,
+          "kb": 147
+        },
+        {
+          "path": "img/sport-rugby-900.webp",
+          "w": 900,
+          "h": 521,
+          "kb": 66
+        }
+      ]
+    },
+    {
+      "id": "b2b-club-spirit",
+      "sections": [
+        "10"
+      ],
+      "alt": "Speler van V.V. Spirit in gele clubsokken met witte HÏ Grip-gripsokken eronder",
+      "omschrijving": "Zakelijk: clubs",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-club-spirit.jpg",
+      "origineel": {
+        "w": 1000,
+        "h": 1500
+      },
+      "files": [
+        {
+          "path": "img/b2b-club-spirit-1000.webp",
+          "w": 1000,
+          "h": 1500,
+          "kb": 93
+        },
+        {
+          "path": "img/b2b-club-spirit-800.webp",
+          "w": 800,
+          "h": 1200,
+          "kb": 66
+        }
+      ]
+    },
+    {
+      "id": "b2b-voetbal",
+      "sections": [
+        "10"
+      ],
+      "alt": "Voetballer in witte HÏ Grip-gripsokken op het veld",
+      "omschrijving": "Zakelijk: clubs, alternatief",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-voetbal.jpg",
+      "origineel": {
+        "w": 1142,
+        "h": 1142
+      },
+      "files": [
+        {
+          "path": "img/b2b-voetbal-1142.webp",
+          "w": 1142,
+          "h": 1142,
+          "kb": 223
+        }
+      ]
+    },
+    {
+      "id": "b2b-grippatroon",
+      "sections": [
+        "10"
+      ],
+      "alt": "Close-up van witte gripsokken met grippatroon op kunstgras",
+      "omschrijving": "Zakelijk: algemeen",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-grippatroon.jpg",
+      "origineel": {
+        "w": 1280,
+        "h": 915
+      },
+      "files": [
+        {
+          "path": "img/b2b-grippatroon-1280.webp",
+          "w": 1280,
+          "h": 915,
+          "kb": 85
+        }
+      ]
+    },
+    {
+      "id": "b2b-sok-zwart",
+      "sections": [
+        "10"
+      ],
+      "alt": "Performance Grip Socks 2.0 in zwart, vrijstaand",
+      "omschrijving": "Zakelijk: retail",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-sok-zwart-vrij.png",
+      "origineel": {
+        "w": 900,
+        "h": 900
+      },
+      "files": [
+        {
+          "path": "img/b2b-sok-zwart-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 32
+        }
+      ]
+    },
+    {
+      "id": "b2b-sok-wit",
+      "sections": [
+        "10"
+      ],
+      "alt": "Performance Grip Socks 2.0 in wit, vrijstaand",
+      "omschrijving": "Zakelijk: retail",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-sok-wit-vrij.png",
+      "origineel": {
+        "w": 900,
+        "h": 900
+      },
+      "files": [
+        {
+          "path": "img/b2b-sok-wit-900.webp",
+          "w": 900,
+          "h": 900,
+          "kb": 43
+        }
+      ]
+    },
+    {
+      "id": "b2b-sokhoogtes",
+      "sections": [
+        "10"
+      ],
+      "alt": "Zes soklengtes van no show tot over-the-calf",
+      "omschrijving": "Zakelijk: personaliseren (pilates/gecustomised)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-sokhoogtes.png",
+      "origineel": {
+        "w": 900,
+        "h": 1125
+      },
+      "files": [
+        {
+          "path": "img/b2b-sokhoogtes-900.webp",
+          "w": 900,
+          "h": 1125,
+          "kb": 15
+        }
+      ]
+    },
+    {
+      "id": "logo-spirit",
+      "sections": [
+        "09"
+      ],
+      "alt": "V.V. Spirit",
+      "omschrijving": "Logo klant voetbal",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-logo-spirit.png",
+      "origineel": {
+        "w": 252,
+        "h": 300
+      },
+      "files": [
+        {
+          "path": "img/logo-spirit-252.webp",
+          "w": 252,
+          "h": 300,
+          "kb": 15
+        }
+      ]
+    },
+    {
+      "id": "logo-concordia",
+      "sections": [
+        "09"
+      ],
+      "alt": "Concordia",
+      "omschrijving": "Logo klant voetbal",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/LOGO_CONCORDIA-removebg-preview.png",
+      "origineel": {
+        "w": 360,
+        "h": 345
+      },
+      "files": [
+        {
+          "path": "img/logo-concordia-360.webp",
+          "w": 360,
+          "h": 345,
+          "kb": 16
+        }
+      ]
+    },
+    {
+      "id": "logo-sport2000",
+      "sections": [
+        "09"
+      ],
+      "alt": "Sport 2000",
+      "omschrijving": "Logo klant retail",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hg-zakelijk-logo-sport2000-vrij.png",
+      "origineel": {
+        "w": 240,
+        "h": 240
+      },
+      "files": [
+        {
+          "path": "img/logo-sport2000-240.webp",
+          "w": 240,
+          "h": 240,
+          "kb": 9
+        }
+      ]
+    },
+    {
+      "id": "logo-syth",
+      "sections": [
+        "09"
+      ],
+      "alt": "Say Yes To Health (SYTH)",
+      "omschrijving": "Logo klant pilates",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/LOGO_SYTH.jpg",
+      "origineel": {
+        "w": 512,
+        "h": 512
+      },
+      "files": [
+        {
+          "path": "img/logo-syth-512.webp",
+          "w": 512,
+          "h": 512,
+          "kb": 5
+        }
+      ]
+    },
+    {
+      "id": "logo-myhealthclub",
+      "sections": [
+        "09"
+      ],
+      "alt": "MyHealth Club",
+      "omschrijving": "Logo klant pilates (bestandsnaam op de CDN is misleidend)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/Gripsokken_bulk_bestellen.png",
+      "origineel": {
+        "w": 2000,
+        "h": 2000
+      },
+      "files": [
+        {
+          "path": "img/logo-myhealthclub-600.webp",
+          "w": 600,
+          "h": 600,
+          "kb": 21
+        }
+      ]
+    },
+    {
+      "id": "logo-hr",
+      "sections": [
+        "09"
+      ],
+      "alt": "Hogeschool Rotterdam",
+      "omschrijving": "Logo overig (besluit 14-10 nog open)",
+      "bron_cdn": "https://www.higrip.nl/cdn/shop/files/hogeschool-rotterdam.webp",
+      "origineel": {
+        "w": 500,
+        "h": 500
+      },
+      "files": [
+        {
+          "path": "img/logo-hr-500.webp",
+          "w": 500,
+          "h": 500,
+          "kb": 12
+        }
+      ]
+    },
+    {
+      "id": "sh-sok-10",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 1.0, zijaanzicht met grippatroon",
+      "omschrijving": "Shop 2 productbeeld 1.0",
+      "bron_cdn": "thema-asset AI-testthema: https://www.higrip.nl/cdn/shop/t/30/assets/sh-sok-10.webp",
+      "origineel": {
+        "w": 900,
+        "h": 900
+      },
+      "files": [
+        {
+          "path": "img/sh-sok-10.webp",
+          "w": 900,
+          "h": 900
+        }
+      ]
+    },
+    {
+      "id": "sh-sok-20-zwart",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon",
+      "omschrijving": "Shop 2 productbeeld 2.0 zwart",
+      "bron_cdn": "thema-asset AI-testthema: https://www.higrip.nl/cdn/shop/t/30/assets/sh-sok-20-zwart.webp",
+      "origineel": {
+        "w": 900,
+        "h": 900
+      },
+      "files": [
+        {
+          "path": "img/sh-sok-20-zwart.webp",
+          "w": 900,
+          "h": 900
+        }
+      ]
+    },
+    {
+      "id": "sh-sok-20-wit",
+      "sections": [
+        "02"
+      ],
+      "alt": "Performance Gripsokken 2.0 in wit, zijaanzicht met grippatroon",
+      "omschrijving": "Shop 2 productbeeld 2.0 wit",
+      "bron_cdn": "thema-asset AI-testthema: https://www.higrip.nl/cdn/shop/t/30/assets/sh-sok-20-wit.webp",
+      "origineel": {
+        "w": 900,
+        "h": 900
+      },
+      "files": [
+        {
+          "path": "img/sh-sok-20-wit.webp",
+          "w": 900,
+          "h": 900
+        }
+      ]
+    },
+    {
+      "id": "sh-sq-padel",
+      "sections": [
+        "02"
+      ],
+      "alt": "Padelspeler strikt zijn schoen, witte gripsokken op een blauwe baan",
+      "omschrijving": "Shop 2 hoverbeeld 1.0 (sfeer)",
+      "bron_cdn": "thema-asset AI-testthema: https://www.higrip.nl/cdn/shop/t/30/assets/sh-sq-padel.webp",
+      "origineel": {
+        "w": 800,
+        "h": 800
+      },
+      "files": [
+        {
+          "path": "img/sh-sq-padel.webp",
+          "w": 800,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "id": "sh-sq-tennis",
+      "sections": [
+        "02"
+      ],
+      "alt": "Tennisser in gripsokken op de baan",
+      "omschrijving": "Shop 2 hoverbeeld 2.0 (sfeer)",
+      "bron_cdn": "thema-asset AI-testthema: https://www.higrip.nl/cdn/shop/t/30/assets/sh-sq-tennis.webp",
+      "origineel": {
+        "w": 800,
+        "h": 800
+      },
+      "files": [
+        {
+          "path": "img/sh-sq-tennis.webp",
+          "w": 800,
+          "h": 800
+        }
+      ]
+    },
+    {
+      "id": "teamfoto-web",
+      "sections": [
+        "08"
+      ],
+      "alt": "Het team van HÏ Grip, vier personen naast elkaar",
+      "omschrijving": "Teamfoto als WebP (1.18, snelheid): uit teamfoto.jpg (3200 px, 702 KB) verkleind naar 2000 en 1200 px, kwaliteit 80.",
+      "files": [
+        {
+          "path": "img/teamfoto-2000.webp",
+          "w": 2000,
+          "h": 924,
+          "kb": 225
+        },
+        {
+          "path": "img/teamfoto-1200.webp",
+          "w": 1200,
+          "h": 554,
+          "kb": 102
+        }
+      ]
+    },
+    {
+      "id": "ai-teamorder",
+      "sections": [
+        "14"
+      ],
+      "alt": "Spelers in een kleedkamer, een van hen trekt witte gripsokken aan, met een sporttas en bidon ernaast",
+      "omschrijving": "AI-VOORBEELD, GEEN EIGEN FOTO (ChatGPT, Lars 22-10, map Downloads/AI-vooreeld-fotos, bestand 3): uitsnede 860x820 van het linkerdeel, zwart-wit. De sok toont 'Hï' in plaats van het echte HÏ Grip-merk (driehoek-HG): alleen als plaatsvervanger in het prototype, vervangen door een echte teamfoto vóór live.",
+      "bron": "AI-voorbeeld (niet publiceren)",
+      "files": [
+        {
+          "path": "img/ai-teamorder-860.webp",
+          "w": 860,
+          "h": 820,
+          "kb": 57
+        }
+      ]
+    }
+  ],
+  "local": [
+    {
+      "id": "teamfoto",
+      "sections": [
+        "08"
+      ],
+      "path": "teamfoto.jpg",
+      "w": 3200,
+      "h": 1478,
+      "alt": "Het team van HÏ Grip, vier personen naast elkaar",
+      "omschrijving": "Teamfoto (voorlopig, keuze Lars 18-10). Bron: OneDrive …/Content - HÏ Grip/OVER ONS FOTOS/Teamfoto - HÏ Grip.jpg (4000×1848), verkleind naar 3200 px (18-10, voor de crop in 08)",
+      "bron": "lokaal"
+    },
+    {
+      "id": "brandvideo",
+      "path": "video/higrip-brandvideo-9x16-720.mp4",
+      "sections": [
+        "06"
+      ],
+      "omschrijving": "HÏ Grip brandvideo (video 3, story 9:16), webversie 720×1280, H.264 crf 24 + AAC 96k, 12,4 s. Bron: Downloads/HIGRIP_VIDEO3_STORY_9x16 (2).mp4 (Lars 19-10)."
+    },
+    {
+      "id": "brandvideo-poster",
+      "path": "video/higrip-brandvideo-poster.jpg",
+      "sections": [
+        "06"
+      ],
+      "alt": "",
+      "omschrijving": "Poster van de brandvideo: frame op 1,6 s (witte 2.0 met specframe)."
+    },
+    {
+      "id": "brandvideo-zij",
+      "path": "video/higrip-brandvideo-9x16-480-stil.mp4",
+      "sections": [
+        "06"
+      ],
+      "omschrijving": "Lichte, stille versie (480×854, crf 28) voor de zijpanelen van de triptiek."
+    },
+    {
+      "id": "brandvideo-zij",
+      "path": "video/higrip-brandvideo-9x16-360-zij.mp4",
+      "sections": [
+        "06"
+      ],
+      "omschrijving": "Brandvideo voor de zijpanelen van de triptiek (1.18, snelheid): uit de 480p-stil-versie, 360x640, 24 fps, H.264 baseline met fastdecode, crf 30, zonder geluid, 625 KB. Lichter om te decoderen, zodat drie video's tegelijk vloeiend blijven."
+    }
+  ],
+  "frames360": {
+    "sections": [
+      "05"
+    ],
+    "bron_artifact": "https://claude.ai/artifact/QL6Whv59zVzW4rKgVgKJ94",
+    "uitleg": "Echte 360°-opname van de Performance Grip Socks 2.0 in wit (411 frames, 1600×1600, studiogrond --hi-studio). 1.2: elke 3e frame (137), zodat draaien vloeiend is. Index i = origineel frame i*3.",
+    "w": 1600,
+    "h": 1600,
+    "count": 137,
+    "paths": [
+      "f360/s000.webp",
+      "f360/s003.webp",
+      "f360/s006.webp",
+      "f360/s009.webp",
+      "f360/s012.webp",
+      "f360/s015.webp",
+      "f360/s018.webp",
+      "f360/s021.webp",
+      "f360/s024.webp",
+      "f360/s027.webp",
+      "f360/s030.webp",
+      "f360/s033.webp",
+      "f360/s036.webp",
+      "f360/s039.webp",
+      "f360/s042.webp",
+      "f360/s045.webp",
+      "f360/s048.webp",
+      "f360/s051.webp",
+      "f360/s054.webp",
+      "f360/s057.webp",
+      "f360/s060.webp",
+      "f360/s063.webp",
+      "f360/s066.webp",
+      "f360/s069.webp",
+      "f360/s072.webp",
+      "f360/s075.webp",
+      "f360/s078.webp",
+      "f360/s081.webp",
+      "f360/s084.webp",
+      "f360/s087.webp",
+      "f360/s090.webp",
+      "f360/s093.webp",
+      "f360/s096.webp",
+      "f360/s099.webp",
+      "f360/s102.webp",
+      "f360/s105.webp",
+      "f360/s108.webp",
+      "f360/s111.webp",
+      "f360/s114.webp",
+      "f360/s117.webp",
+      "f360/s120.webp",
+      "f360/s123.webp",
+      "f360/s126.webp",
+      "f360/s129.webp",
+      "f360/s132.webp",
+      "f360/s135.webp",
+      "f360/s138.webp",
+      "f360/s141.webp",
+      "f360/s144.webp",
+      "f360/s147.webp",
+      "f360/s150.webp",
+      "f360/s153.webp",
+      "f360/s156.webp",
+      "f360/s159.webp",
+      "f360/s162.webp",
+      "f360/s165.webp",
+      "f360/s168.webp",
+      "f360/s171.webp",
+      "f360/s174.webp",
+      "f360/s177.webp",
+      "f360/s180.webp",
+      "f360/s183.webp",
+      "f360/s186.webp",
+      "f360/s189.webp",
+      "f360/s192.webp",
+      "f360/s195.webp",
+      "f360/s198.webp",
+      "f360/s201.webp",
+      "f360/s204.webp",
+      "f360/s207.webp",
+      "f360/s210.webp",
+      "f360/s213.webp",
+      "f360/s216.webp",
+      "f360/s219.webp",
+      "f360/s222.webp",
+      "f360/s225.webp",
+      "f360/s228.webp",
+      "f360/s231.webp",
+      "f360/s234.webp",
+      "f360/s237.webp",
+      "f360/s240.webp",
+      "f360/s243.webp",
+      "f360/s246.webp",
+      "f360/s249.webp",
+      "f360/s252.webp",
+      "f360/s255.webp",
+      "f360/s258.webp",
+      "f360/s261.webp",
+      "f360/s264.webp",
+      "f360/s267.webp",
+      "f360/s270.webp",
+      "f360/s273.webp",
+      "f360/s276.webp",
+      "f360/s279.webp",
+      "f360/s282.webp",
+      "f360/s285.webp",
+      "f360/s288.webp",
+      "f360/s291.webp",
+      "f360/s294.webp",
+      "f360/s297.webp",
+      "f360/s300.webp",
+      "f360/s303.webp",
+      "f360/s306.webp",
+      "f360/s309.webp",
+      "f360/s312.webp",
+      "f360/s315.webp",
+      "f360/s318.webp",
+      "f360/s321.webp",
+      "f360/s324.webp",
+      "f360/s327.webp",
+      "f360/s330.webp",
+      "f360/s333.webp",
+      "f360/s336.webp",
+      "f360/s339.webp",
+      "f360/s342.webp",
+      "f360/s345.webp",
+      "f360/s348.webp",
+      "f360/s351.webp",
+      "f360/s354.webp",
+      "f360/s357.webp",
+      "f360/s360.webp",
+      "f360/s363.webp",
+      "f360/s366.webp",
+      "f360/s369.webp",
+      "f360/s372.webp",
+      "f360/s375.webp",
+      "f360/s378.webp",
+      "f360/s381.webp",
+      "f360/s384.webp",
+      "f360/s387.webp",
+      "f360/s390.webp",
+      "f360/s393.webp",
+      "f360/s396.webp",
+      "f360/s399.webp",
+      "f360/s402.webp",
+      "f360/s405.webp",
+      "f360/s408.webp"
+    ],
+    "presets": {
+      "totaal": {
+        "frame": 0,
+        "zoom": 1,
+        "cx": 0.5,
+        "cy": 0.5
+      },
+      "hiel": {
+        "frame": 6,
+        "zoom": 1.75,
+        "cx": 0.62,
+        "cy": 0.62
+      },
+      "grip": {
+        "frame": 96,
+        "zoom": 1.6,
+        "cx": 0.5,
+        "cy": 0.68
+      },
+      "ademend": {
+        "frame": 300,
+        "zoom": 1.65,
+        "cx": 0.47,
+        "cy": 0.62
+      },
+      "teen": {
+        "frame": 336,
+        "zoom": 1.45,
+        "cx": 0.5,
+        "cy": 0.66
+      },
+      "materialen": {
+        "frame": 0,
+        "zoom": 1.15,
+        "cx": 0.5,
+        "cy": 0.5
+      }
+    },
+    "presets_bron": "QL6-artifact, PRESETS (hiel stond op frame 8, afgerond naar 6)",
+    "alt": "360-gradenopname van de Performance Grip Socks 2.0 in wit"
+  }
+}

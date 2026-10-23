@@ -1,0 +1,49 @@
+/* 14 SPORTTEAMS · 1.32 (Lars 22-10, de tien AI-voorbeeldsecties voor teamorder: "zorgen echt voor conversie").
+   Opbouw uit de voorbeelden, in onze stijl: eyebrow met lijntje, een tweeregelige kop met het voordeel erin (tweede regel volt),
+   twee korte regels uitleg, één pill, en daaronder drie voordelen met pictogram. Rechts een team in de kleedkamer dat tot de
+   schermrand loopt (zoals voorbeelden 1, 3, 6, 8 en 10), zwart-wit. Mobiel: tekst, foto, voordelen onder elkaar. */
+.hp-14 { background: var(--hi-near-black); color: var(--hi-white); overflow-x: clip; }
+.hp-14-inner { display: grid; gap: var(--hp-space-md); }
+
+/* tekst */
+.hp-14-copy { display: grid; gap: var(--hp-space-ms); justify-items: start; align-content: center; }
+.hp-14-eyebrow { display: flex; align-items: center; gap: var(--hp-space-sm); font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+.hp-14-eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--hi-titanium); }
+.hp-14-h2 { font: italic 900 clamp(34px, 9.2vw, 40px)/0.9 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; }
+.hp-14-h2__b { color: var(--hi-yellow); }
+.hp-14-lead { max-width: 40ch; font-size: var(--hp-type-lead); line-height: 1.55; color: var(--hi-titanium); }
+.hp-14-cta { margin-top: var(--hp-space-xs); }
+
+/* beeld */
+.hp-14-media { position: relative; overflow: hidden; aspect-ratio: 4 / 3; border-radius: var(--hp-radius-media); background: var(--hi-warm-dark); }
+.hp-14-img { position: absolute; left: 0; top: -4%; width: 100%; height: 108%; object-fit: cover; object-position: 50% 55%; filter: grayscale(1) contrast(1.05); will-change: transform; }
+.hp-14-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, var(--hi-scrim) 0%, transparent 32%); pointer-events: none; }
+.hp-14-slogan { position: absolute; z-index: 1; top: var(--hp-space-sm); right: var(--hp-space-sm); max-width: 12ch; padding-bottom: 10px; border-bottom: 2px solid var(--hi-yellow); text-align: left; font: 600 11px/1.6 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; }
+
+/* drie voordelen */
+.hp-14-trio { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--hi-line-dark); }
+.hp-14-item { display: grid; grid-template-columns: 44px minmax(0, 1fr); align-items: start; column-gap: var(--hp-space-sm); padding-block: var(--hp-space-sm); border-bottom: 1px solid var(--hi-line-dark); }
+.hp-14-ico { width: 44px; height: 44px; fill: none; stroke: var(--hi-yellow); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.hp-14-itext { display: grid; gap: 4px; }
+.hp-14-tt { font: 800 14px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); text-transform: uppercase; }
+.hp-14-td { font-size: 14px; line-height: 1.4; color: var(--hi-titanium); }
+
+@media (min-width: 900px) {
+  .hp-14-inner { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(24px, 3vw, 48px); row-gap: var(--hp-space-ml); }
+  .hp-14-copy { grid-column: 1 / 8; grid-row: 1; gap: var(--hp-space-md); }
+  .hp-14-eyebrow { font-size: 13px; }
+  .hp-14-h2 { font-size: clamp(48px, 4.5vw, 72px); }
+  .hp-14-lead { max-width: 38ch; }
+  .hp-14-media {
+    grid-column: 8 / 13; grid-row: 1; aspect-ratio: auto; min-height: 460px;
+    border-radius: var(--hp-radius-media) 0 0 var(--hp-radius-media);
+    margin-right: calc(-1 * (max(40px, env(safe-area-inset-right, 0px)) + max(0px, (100vw - 1472px) / 2)));
+  }
+  .hp-14-slogan { top: var(--hp-space-md); right: var(--hp-space-md); font-size: 12px; }
+  .hp-14-trio { grid-column: 1 / 13; grid-row: 2; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 0; }
+  .hp-14-item { padding-block: var(--hp-space-ms); padding-inline: var(--hp-space-md); border-bottom: 0; border-left: 1px solid var(--hi-line-dark); }
+  .hp-14-item:first-child { padding-left: 0; border-left: 0; }
+  .hp-14-tt { font-size: 15px; }
+  .hp-14-td { font-size: 15px; }
+}

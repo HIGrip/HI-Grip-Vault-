@@ -1,0 +1,22 @@
+{
+  "id": "08",
+  "name": "over-ons",
+  "bg": "--hi-black",
+  "assets": [
+    "teamfoto"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/over-ons"
+  ],
+  "interactions": [
+    "looptekst in volt (--hi-yellow): de vier regels uit copy 08.loop_lines springen hard (data-s-klasse, geen transition) door drie letterstaten: 1 Poppins 300 + 0.08em, 2 Poppins 900 + -0.04em, 3 Poppins 800 italic + -0.02em; volgorde dun -> zwaar -> cursief -> dun",
+    "golf per regel van boven naar onder, 80 ms verschil; elke staat 870 ms vanaf de eerste regel, cyclus 2,61 s; alleen in beeld (hpInView), buiten beeld gepauzeerd in één staat",
+    "vaste regelhoogte (0.96em, nowrap): blokhoogte gelijk in alle staten; lettergrootte volgt de paneelbreedte ((paneel - 2 x padding) / 9.4, max 132px), zodat de dunne (breedste) staat altijd past",
+    "scroll (hpOnScroll, alleen in beeld): --hp-08-p loopt 0 -> 1 terwijl de foto binnenkomt (klaar als de bovenrand op 55% van het scherm staat). De foto opent vanaf de splitnaad (clip-path inset links 28% -> 0 op desktop, boven 28% -> 0 op mobiel) en zoomt van 1,16x naar zijn crop. Zonder JS of in rust: p = 1, alles zichtbaar",
+    "reduced motion: geen lus (staat 2), geen scrollbeweging (p = 1)",
+    "schermlezer: h2 bevat copy 08.loop_aria als .hp-sr; de wisselende regels zijn aria-hidden",
+    "1.2 ronde 2: pill 'Ons verhaal' (.hp-pill--light, wit op zwart) als afsluiter van het paneel: eigen regel onder de bodytekst, volle paneelbreedte, 92px hoog op desktop (cirkel 72px), 72px mobiel (cirkel 56px), woord in var(--hp-type-h3) 800. Hover (desktop), :focus-visible en tik (pointerdown touch zet .is-tap, 1,2 s; plus :active met schaal 0.985): de zwarte chevroncirkel schuift van links over de volle breedte naar de rechterrand (translateX(100cqw - 100%), container-type inline-size op de pill), het woord schuift naar links in zijn plek en rolt omhoog naar een tweede exemplaar (aria-hidden); alles var(--hp-dur-2) var(--hp-ease). Reduced motion: staten wisselen direct",
+    "Poppins 300 / 900 / 800 italic worden bij start via document.fonts.load voorgeladen"
+  ],
+  "notes": "1.2 (Lars 19-10, ref studiofreight-lars-1440.webp): split-screen over de hele schermbreedte, desktop 100svh (min 600px). Links een effen zwart paneel met de volt-looptekst groot en gecentreerd. Body (klein, titanium) onderaan in het paneel; daaronder (1.2 ronde 2, Lars: 'de knop is super slecht') een brede pill over de volle paneelbreedte als bewuste afsluiter, in plaats van de kleine pill naast de body. Rechts de teamfoto rand-tot-rand, zonder radius of gutter. Mobiel: eerst het paneel (min 70svh, body op 16px voor leesbaarheid), daaronder de foto 4:3 rand-tot-rand. Crop (teamfoto 3200x1478; personen op x 36–64% en vanaf y ≈ 14%, lichtletters vanaf y ≈ 48%): desktop is het paneel staand (720x900 op 1440), schaal 1.2 rond 50% 45,5% toont x ±31–69% en y 8–91%. Het team staat er heel in met ±5% zijmarge. Verder inzoomen kan niet zonder de buitenste armen af te snijden; daardoor blijven de letters 'ART' in de onderste helft zichtbaar. Mobiel 4:3: schaal 1.9 rond 50% 22%, zoals in v1. Lettergrootte via calc op de paneelbreedte in plaats van een --hp-type-token; Battleface schaalt de tekst met het paneel mee. Testnoot: in de preview is de pagina onder 08 te kort om de mobiele foto tot de eindstand te scrollen; _shoot.cjs voegt daarom tijdelijk padding toe aan de body. Onder reduced motion zet base.css transition-duration 0.01ms op alles: getComputedStyle direct na een klassewissel geeft dan nog de oude waarde."
+}

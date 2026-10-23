@@ -1,0 +1,40 @@
+/* 14 SPORTTEAMS · 1.31 (Lars 22-10: een teamfoto naast tekst, direct en logisch, clean en energiek, geen AI-slop).
+   Links één groot zwart-wit clubbeeld, rechts de boodschap: kop in over-ons-stijl (tweede regel volt), één zin,
+   drie grote losse feiten (maten, één bestelling, staffelkorting) en één knop. Geen formulier, geen kaarten, geen chips.
+   Het enige merkvormpje is het schuine volt-label op de foto. Mobiel: foto boven, tekst eronder. */
+.hp-14 { background: var(--hi-near-black); color: var(--hi-white); overflow-x: clip; }
+.hp-14-inner { display: grid; gap: var(--hp-space-md); align-items: center; }
+
+/* beeld */
+.hp-14-media { position: relative; overflow: hidden; aspect-ratio: 4 / 5; border-radius: var(--hp-radius-media); background: var(--hi-warm-dark); }
+.hp-14-img { position: absolute; left: 0; top: -4%; width: 100%; height: 108%; object-fit: cover; object-position: 64% 50%; filter: grayscale(1) contrast(1.08); will-change: transform; }
+.hp-14-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, var(--hi-scrim) 0%, transparent 38%); pointer-events: none; }
+.hp-14-cap {
+  position: absolute; z-index: 1; left: var(--hp-space-sm); bottom: var(--hp-space-sm); padding: 8px 18px 7px; background: var(--hi-yellow); color: var(--hi-black);
+  font: 800 13px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; transform: skewX(-12deg);
+}
+
+/* tekst */
+.hp-14-copy { display: grid; gap: var(--hp-space-ms); justify-items: start; }
+.hp-14-h2 { font: italic 900 clamp(44px, 12vw, 64px)/0.88 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; }
+.hp-14-h2__a { text-wrap: balance; }
+.hp-14-h2__b { color: var(--hi-yellow); }
+.hp-14-lead { max-width: 30ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-titanium); }
+
+.hp-14-points { width: 100%; list-style: none; margin: var(--hp-space-xs) 0; padding: 0; border-top: 1px solid var(--hi-line-dark); }
+.hp-14-point { display: grid; grid-template-columns: minmax(96px, 36%) minmax(0, 1fr); align-items: center; column-gap: var(--hp-space-sm); padding-block: var(--hp-space-sm); border-bottom: 1px solid var(--hi-line-dark); }
+.hp-14-k { font: italic 900 clamp(36px, 10vw, 52px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); color: var(--hi-yellow); padding-right: 0.08em; }
+.hp-14-t { font: 600 15px/1.35 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); }
+
+.hp-14-cta { justify-self: start; }
+
+@media (min-width: 900px) {
+  .hp-14-inner { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(24px, 3vw, 56px); row-gap: 0; }
+  .hp-14-media { grid-column: 1 / 7; aspect-ratio: 1 / 1; }
+  .hp-14-copy { grid-column: 7 / 13; gap: var(--hp-space-md); padding-left: var(--hp-space-sm); }
+  .hp-14-h2 { font-size: clamp(56px, 6vw, 96px); }
+  .hp-14-point { grid-template-columns: minmax(150px, 34%) minmax(0, 1fr); padding-block: var(--hp-space-ms); }
+  .hp-14-k { font-size: clamp(44px, 4.4vw, 68px); }
+  .hp-14-t { font-size: 17px; }
+}

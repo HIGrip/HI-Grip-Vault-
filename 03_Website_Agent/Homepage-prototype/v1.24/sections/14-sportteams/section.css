@@ -1,0 +1,70 @@
+/* 14 SPORTTEAMS · 1.24 (Lars 21-10): teams krijgen een eigen sectie, los van zakelijk (geen gratis sample voor teams).
+   Grote kop, de bank-foto rand tot rand in de container, en daaroverheen een zwarte opstelling: elf spelers in 4-3-3 plus vijf wissels.
+   Komt de opstelling in beeld, dan krijgt speler na speler zijn sokken (stip loopt wit vol) en telt de teller naar 16/16:
+   van de keeper via de aanvoerder tot de laatste wissel. De opstelling breekt het raster en valt half over de foto.
+   Volt alleen als ring om de aanvoerder. Zonder motion staat alles al vol. */
+.hp-14 { background: var(--hi-white); color: var(--hi-black); }
+.hp-14-inner { display: grid; row-gap: var(--hp-space-md); }
+
+.hp-14-head { display: grid; gap: var(--hp-space-sm); }
+.hp-14-h2 { max-width: 12ch; font: 800 clamp(40px, 6.6vw, 112px)/0.92 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-lead { max-width: 40ch; font-size: var(--hp-type-lead); line-height: 1.5; color: var(--hi-graphite); }
+
+.hp-14-media { position: relative; overflow: hidden; aspect-ratio: 4 / 3; border-radius: var(--hp-radius-media); background: var(--hi-offwhite); }
+.hp-14-img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 70%; }
+
+/* opstelling */
+.hp-14-sheet {
+  position: relative; z-index: 1; display: grid; gap: 10px; margin: -72px 12px 0;
+  padding: var(--hp-space-ms) var(--hp-space-sm) var(--hp-space-sm); border-radius: var(--hp-radius-media);
+  background: var(--hi-black); color: var(--hi-white);
+}
+.hp-14-sheet__top { display: flex; align-items: baseline; justify-content: space-between; gap: var(--hp-space-sm); margin-bottom: 4px; }
+.hp-14-sheet__title { font: italic 900 clamp(22px, 2.2vw, 32px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-sheet__count { font: italic 900 clamp(22px, 2.2vw, 32px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); font-variant-numeric: tabular-nums; color: var(--hi-titanium); }
+.hp-14-sheet__label { font: 600 11px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-titanium); }
+
+.hp-14-pitch {
+  position: relative; aspect-ratio: 5 / 4; overflow: hidden;
+  border: 1px solid var(--hi-line-dark); border-radius: 12px; background: var(--hi-near-black);
+}
+.hp-14-pitch::before { content: ""; position: absolute; left: 28%; right: 28%; bottom: -1px; height: 20%; border: 1px solid var(--hi-line-dark); }
+.hp-14-pitch::after { content: ""; position: absolute; left: 36%; top: 0; width: 28%; aspect-ratio: 1; border: 1px solid var(--hi-line-dark); border-radius: 50%; translate: 0 -50%; }
+
+.hp-14-bench { display: flex; gap: 8px; }
+
+.hp-14-dot {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%;
+  font: 700 12px/1 var(--hp-type-family); font-variant-numeric: tabular-nums;
+  background: var(--hi-white); color: var(--hi-black); box-shadow: inset 0 0 0 1.5px var(--hi-white);
+  transition:
+    background-color var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i)),
+    color var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i)),
+    box-shadow var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i)),
+    scale var(--hp-dur-2) var(--hp-ease) calc(var(--hp-dur-1) * var(--i));
+}
+.hp-14-pitch .hp-14-dot { position: absolute; z-index: 1; left: var(--x); top: var(--y); translate: -50% -50%; }
+.hp-14-dot--captain { box-shadow: inset 0 0 0 1.5px var(--hi-white), 0 0 0 3px var(--hi-black), 0 0 0 5px var(--hi-yellow); }
+
+/* wachtstand alleen met motion: lege stippen, dan vullen ze één voor één */
+html.hp-motion .hp-14:not(.is-on) .hp-14-dot { background: transparent; color: var(--hi-titanium); box-shadow: inset 0 0 0 1.5px var(--hi-line-dark); scale: 0.86; }
+
+.hp-14-body { display: grid; gap: var(--hp-space-md); justify-items: start; }
+.hp-14-points { display: grid; width: 100%; }
+.hp-14-point {
+  padding: var(--hp-space-sm) 0; border-top: 1px solid var(--hi-line);
+  font: 700 clamp(18px, 1.6vw, 24px)/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); text-transform: uppercase;
+}
+.hp-14-point:last-child { border-bottom: 1px solid var(--hi-line); }
+
+@media (min-width: 900px) {
+  .hp-14-inner { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); column-gap: clamp(32px, 4vw, 72px); row-gap: var(--hp-space-ml); }
+  .hp-14-head { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr) minmax(0, 40ch); align-items: end; column-gap: var(--hp-space-lg); }
+  .hp-14-lead { justify-self: end; }
+  .hp-14-media { grid-column: 1 / -1; aspect-ratio: 16 / 7; }
+  .hp-14-img { object-position: 78% 70%; }
+  .hp-14-sheet { grid-column: 2; grid-row: 3; margin: calc(-1 * clamp(140px, 15vw, 240px)) 0 0; padding: var(--hp-space-md); gap: 12px; }
+  .hp-14-body { grid-column: 1; grid-row: 3; align-content: start; }
+  .hp-14-dot { width: 40px; height: 40px; font-size: 14px; }
+  .hp-14-bench { gap: 10px; }
+}

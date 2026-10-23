@@ -1,0 +1,19 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-white",
+  "assets": [
+    "sp-team"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/zakelijk"
+  ],
+  "interactions": [
+    "1.24 (Lars 21-10): eigen sectie voor sportteams, direct na Kies je sport (07). Teams krijgen geen gratis sample, dus geen sample-ticket hier.",
+    "opstelling (aria-hidden, illustratie): elf spelers in 4-3-3 op een half veld plus vijf wissels; komt hij voor 40% in beeld, dan vult elke stip zich wit (vertraging --hp-dur-1 per speler, keeper eerst, aanvoerder met volt-ring) en telt de teller van 0/16 naar 16/16",
+    "desktop (>=900 px): kop over de volle breedte met lead rechts, foto 16:7, opstelling rechts half over de foto (rasterbreuk), punten en de ene pill links",
+    "mobiel: kop, foto 4:3, opstelling schuift 72 px over de foto, punten en pill eronder",
+    "reduced motion of geen IntersectionObserver: alle stippen vol, teller 16/16"
+  ],
+  "notes": "Geen getallen of prijzen voor teams: minimum, teamprijs en een eigen teambestemming zijn [CHECK] Lars (copy 14._bron). Knop wijst voorlopig naar /pages/zakelijk, de enige B2B-bestemming in facts.json. Rugnummers zijn decoratief."
+}

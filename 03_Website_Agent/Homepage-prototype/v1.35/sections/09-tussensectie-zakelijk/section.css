@@ -1,0 +1,117 @@
+/* 09 TUSSENSECTIE ZAKELIJK (1.2 ronde 2) · compacte kop + een logo-lus, alleen logo's.
+   Elk logo krijgt een eigen hoogte (--hp-09-k) en verhouding (--hp-09-ar), zodat ze optisch even groot ogen:
+   ongeveer gelijk oppervlak, volle vlakken iets kleiner, het smalle woordmerk iets groter.
+   Logo's staan grijs en krijgen kleur in het midden van de band (spotlight), bij hover of bij tik. */
+.hp-09 {
+  --hp-09-h: 56px;
+  --hp-09-gap: var(--hp-space-ml);
+  background: var(--hi-white);
+  color: var(--hi-black);
+  padding-block: var(--hp-space-lg);
+}
+
+.hp-09-inner { display: grid; gap: var(--hp-space-md); align-items: center; }
+
+.hp-09-h2 {
+  max-width: 16ch;
+  font-weight: 800;
+  font-size: clamp(26px, 7vw, 30px);
+  line-height: 1;
+}
+
+/* Band loopt tot de schermrand; zachte rand links en rechts */
+.hp-09-viewport {
+  position: relative;
+  overflow: hidden;
+  margin-inline: calc(-1 * var(--hp-space-gutter)) calc(-1 * var(--hp-space-gutter-r));
+  padding-block: var(--hp-space-sm);
+  -webkit-mask-image: linear-gradient(90deg, transparent, var(--hi-black) 8%, var(--hi-black) 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, var(--hi-black) 8%, var(--hi-black) 92%, transparent);
+}
+.hp-09-viewport:focus-visible { outline-offset: -3px; }
+
+.hp-09-track {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: var(--hp-space-md);
+  padding-inline: var(--hp-space-gutter) var(--hp-space-gutter-r);
+}
+.hp-09.is-running .hp-09-track { flex-wrap: nowrap; width: max-content; padding-inline: 0; will-change: transform; }
+
+.hp-09-item {
+  flex: none;
+  display: flex;
+  align-items: center;
+  height: calc(var(--hp-09-h) * 1.12);
+  margin-right: var(--hp-09-gap);
+}
+
+.hp-09-logo {
+  --hp-09-k: 1;
+  --hp-09-ar: 1;
+  position: relative;
+  display: block;
+  height: calc(var(--hp-09-h) * var(--hp-09-k));
+  aspect-ratio: var(--hp-09-ar);
+  overflow: hidden;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: filter var(--hp-dur-2) var(--hp-ease), opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease);
+}
+.hp-09-logo img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; }
+
+/* Per logo: hoogte en verhouding van het beeldvlak zelf (lege rand uit het bestand weggesneden) */
+.hp-09-logo--spirit { --hp-09-k: 1.08; --hp-09-ar: 252 / 300; }
+.hp-09-logo--concordia { --hp-09-k: 1.08; --hp-09-ar: 234 / 282; }
+.hp-09-logo--concordia img { left: -27.35%; top: -13.48%; width: 153.85%; height: 122.34%; }
+.hp-09-logo--sport2000 { --hp-09-k: 0.96; }
+.hp-09-logo--myhealthclub { --hp-09-k: 0.5; --hp-09-ar: 600 / 150; }
+.hp-09-logo--myhealthclub img { top: -166.67%; height: 400%; }
+.hp-09-logo--syth, .hp-09-logo--hr { --hp-09-k: 0.84; border-radius: 12%; }
+
+/* In kleur: spotlight in het midden van de band, tik of hover */
+.hp-09-item.is-lit .hp-09-logo, .hp-09-item.is-on .hp-09-logo { filter: none; opacity: 1; transform: scale(1.06); }
+@media (hover: hover) {
+  .hp-09-item:hover .hp-09-logo { filter: none; opacity: 1; transform: scale(1.06); }
+}
+
+/* Stil (reduced motion of geen IntersectionObserver): alles in kleur, netjes gewrapt */
+.hp-09.is-static { --hp-09-h: 44px; --hp-09-gap: var(--hp-space-ml); }
+.hp-09.is-static .hp-09-logo { filter: none; opacity: 1; }
+.hp-09.is-static .hp-09-viewport { -webkit-mask-image: none; mask-image: none; padding-block: 0; }
+/* mobiel stil: drie gelijke kolommen, elk logo midden in zijn vak */
+.hp-09.is-static .hp-09-track { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); justify-items: center; row-gap: var(--hp-space-ms); }
+.hp-09.is-static .hp-09-item { margin-right: 0; }
+
+@media (min-width: 769px) {
+  .hp-09 { --hp-09-h: 96px; --hp-09-gap: var(--hp-space-xl); padding-block: var(--hp-space-xl); }
+  .hp-09-inner { grid-template-columns: minmax(0, 3fr) minmax(0, 9fr); column-gap: var(--hp-space-ml); }
+  .hp-09-h2 { font-size: clamp(28px, 2.5vw, 40px); max-width: 11ch; }
+  .hp-09-viewport { margin-inline: 0 calc(-1 * max(40px, env(safe-area-inset-right, 0px))); padding-block: var(--hp-space-ms); }
+  .hp-09-track { padding-inline: var(--hp-space-md) 0; }
+  .hp-09.is-static { --hp-09-h: 64px; --hp-09-gap: var(--hp-space-lg); }
+  .hp-09.is-static .hp-09-track { display: flex; justify-content: flex-start; }
+  .hp-09.is-static .hp-09-item { margin-right: var(--hp-09-gap); }
+}
+
+/* 1.5 (Lars 19-10) · de kop staat boven de logo's, op één regel, en de logoband loopt over de volle breedte. */
+.hp-09-h2 { max-width: none; font: 800 clamp(22px, 2.4vw, 36px)/1.05 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); }
+.hp-09-inner { gap: var(--hp-space-sm); }
+@media (min-width: 769px) {
+  .hp-09 { padding-block: var(--hp-space-lg); }
+  .hp-09-inner { grid-template-columns: minmax(0, 1fr); }
+  .hp-09-h2 { max-width: none; }
+  .hp-09-viewport { margin-inline: calc(-1 * max(40px, env(safe-area-inset-left, 0px))) calc(-1 * max(40px, env(safe-area-inset-right, 0px))); }
+}
+
+/* 1.29 (Lars 21-10: minder witruimte, meer op één beeld) · strakkere band: minder ruimte boven en onder, kleinere logo's. */
+.hp-09 { padding-block: var(--hp-space-md); }
+.hp-09-viewport { padding-block: var(--hp-space-xs); }
+@media (min-width: 769px) {
+  .hp-09 { --hp-09-h: 76px; --hp-09-gap: var(--hp-space-lg); padding-block: var(--hp-space-ml); }
+  .hp-09-viewport { padding-block: var(--hp-space-sm); }
+}
+
+/* 1.33 (Lars 22-10: sectie 14 is nu wit) · de logoband krijgt de studiotint, zodat twee lichte secties niet dezelfde achtergrond hebben. */
+.hp-09 { background: var(--hi-studio); }

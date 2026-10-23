@@ -1,0 +1,28 @@
+{
+  "id": "04",
+  "name": "social-proof",
+  "bg": "--hi-black",
+  "assets": [
+    "sp-padel-voeten",
+    "sp-voetbal-zool",
+    "sp-gym",
+    "sp-indoor",
+    "sp-hardlopen",
+    "sp-team",
+    "sp-tennis-wit",
+    "sp-voetbal-bal"
+  ],
+  "links": [],
+  "interactions": [
+    "lus: de rij loopt vanzelf langzaam naar links (42 px/s desktop, 28 px/s mobiel), oneindig; de set staat drie keer in de track (kopieën aria-hidden, niet focusbaar), geen begin of eind zichtbaar",
+    "pauze bij hover (muis), toetsenbordfocus, slepen/swipen, aanraken (tot 1,2 s na loslaten), inzoomen en buiten beeld",
+    "slepen/swipen via hpDrag bovenop de lus; na de snap wordt de sleep in de lus-offset gevouwen; een sleep zoomt niet in",
+    "motion: elke foto schaalt met zijn positie in de rij (100% in het midden, 92% aan de rand) en het beeld schuift binnen het kader mee (parallax ±5%)",
+    "hover (desktop): beeld 105%, label 'Zoom in op foto' schuift uit; tik: zelfde staat via klasse is-press; rond icoon altijd zichtbaar",
+    "klik/tik: de foto zoomt op zijn plek in (1,5×, of minder als het scherm smal is) en schuift naar het midden, rest en kop dimmen; aria-pressed=true, cue wordt 'Sluiten'",
+    "terug: Esc, nog een klik op de foto, klik ernaast (in of buiten de sectie, via focusout), Tab weg, of uit beeld scrollen; focus blijft/komt terug op de foto",
+    "reduced motion: geen lus, geen parallax/schaal, zoom springt; slepen en zoom werken",
+    "1.20 (mobiel): min-height weg, de kleine kaarten staken 11 px buiten de rand."
+  ],
+  "notes": "Alle kaders 4:5 met object-fit cover; crop per foto via --hp-04-x (object-position). sp-team toont in img/sp-team-*.webp één sporter die zijn sokken optrekt op een bank, terwijl de alt in assets.json 'Rij voetballers ...' zegt: graag alt of bestand controleren (niet aangepast). copy 04.open wordt in 1.2 niet meer gebruikt (cue gebruikt zoom.open/zoom.close)."
+}

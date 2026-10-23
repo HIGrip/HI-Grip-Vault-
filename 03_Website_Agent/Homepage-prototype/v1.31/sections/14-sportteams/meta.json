@@ -1,0 +1,18 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-near-black",
+  "assets": [
+    "sp-team"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/teamorder"
+  ],
+  "interactions": [
+    "1.31 (Lars 22-10: teamorder-sectie nog niet top; foto naast tekst, direct en logisch, clean en energiek, geen AI-slop): formulier, tabel, chips en dubbele rand vervallen.",
+    "indeling desktop (>=900 px): foto kolom 1–6 (1:1, zwart-wit), tekst kolom 7–12 verticaal gecentreerd; kop, zin, drie grote feiten (35–47 / 1 / %) en één pill. Mobiel: foto 4:5 boven, tekst eronder.",
+    "enige merkvorm: het schuine volt-label met de clubnaam op de foto (skewX -12deg, parallelogram uit Design Elementen).",
+    "motion: de foto schuift tot 4% mee met de scroll (transform). Reduced motion: stil."
+  ],
+  "notes": "Maten uit facts.products 2.0. Geen prijzen of percentages (staan niet in de vault; teamorderpagina nog te bouwen, [CHECK]). De foto (sp-team) toont één speler op de bank met teamgenoten onscherp erachter, geen heel team: [CHECK] een echte teamfoto in HÏ Grip-sokken zou hier beter werken. Enkel src 2400 (vierkante uitsnede van een 2,67:1-foto, object-position 64%); de V.V. Spirit-foto blijft voor sectie 10."
+}

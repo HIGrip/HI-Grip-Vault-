@@ -1,0 +1,21 @@
+{
+  "id": "14",
+  "name": "sportteams",
+  "bg": "--hi-near-black",
+  "assets": [
+    "b2b-voetbal"
+  ],
+  "links": [
+    "https://www.higrip.nl/pages/teamorder"
+  ],
+  "interactions": [
+    "1.27 (Lars 21-10: 1.26 te AI-achtig; skills high-end-visual-design, marketing-psychology, shopify-design, imagegen-frontend-web): line-up, schuif, staffelmeter en prijs op slot vervallen.",
+    "concept: het teamformulier (wedstrijdformulier). Wit papier in een dubbele rand (schaal --hi-line-dark + papier --hi-white), kolommen Nr / Positie / Maat, vijf voorbeeldrijen, '+ de rest van je selectie' als open lus, voet met staffelkorting en de pill. Het hele formulier is de link.",
+    "motion: maten schrijven zich rij voor rij in (clip-path, vertraging --hp-dur-1 per rij) als de tabel voor 50% in beeld is; het beeld schuift tot 5% mee met de scroll (transform, gemeten bij resize).",
+    "hover/tik: formulier komt 6/4 px omhoog, chevron schuift 3 px.",
+    "desktop (>=900 px): 12-koloms raster; kop kolom 1–6, beeld 6–12 over twee rijen, rekt mee tot onderaan het formulier, formulier kolom 1–6 in rij 2 en steekt één kolom over het beeld; kop en formulier delen de linkerrand.",
+    "mobiel: kop, beeld 4:5, formulier schuift 96–140 px over de onderkant van het beeld.",
+    "reduced motion: geen JS, alle maten ingevuld, beeld stil."
+  ],
+  "notes": "Rugnummers en posities zijn een voorbeeld; maten uit facts.products 2.0. Geen prijzen: die staan op de teamorderpagina (facts.teamorder_url, nog te bouwen, [CHECK]). Beeld voetbal i.p.v. rugby, zodat de posities (keeper, spits) bij het beeld passen."
+}

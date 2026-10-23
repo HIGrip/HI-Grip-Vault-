@@ -1,0 +1,28 @@
+{
+  "id": "02",
+  "name": "product",
+  "bg": "--hi-near-black",
+  "assets": [
+    "sh-sok-10",
+    "sh-sok-20-zwart",
+    "sh-sok-20-wit",
+    "sh-sq-padel",
+    "sh-sq-tennis"
+  ],
+  "links": [
+    "https://www.higrip.nl/products/performance-gripsokken",
+    "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+    "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+    "https://www.higrip.nl/pages/gripsokken-vergelijken"
+  ],
+  "interactions": [
+    "scroll (spectakel): de kaarten schuiven scroll-gekoppeld schuin tegen elkaar in (1.0 van links, 2.0 van rechts, 2.0 met meer lift) en landen recht als de kaart halverwege het scherm is; per kaart eigen voortgang (--hp-02-q); uit bij reduced motion",
+    "hover beeld (desktop): sfeerfoto veegt van onder in beeld en zoomt licht in (100% naar 108%), de sok tilt weg (1.0: sh-sq-padel, 2.0: sh-sq-tennis)",
+    "tik beeld (touch): het beeldvlak is een knop met aria-pressed die dezelfde sfeerstaat aan/uit zet, zonder te navigeren",
+    "staaltjes 2.0 (aria-pressed): zwart/wit vegen het productbeeld van links in, wisselen de kleurnaam en de link van pill Shop 2.0 (2-0-zwart / 2-0-wit)",
+    "pills Shop 1.0 / Shop 2.0 / Vergelijk: chevron schuift 3px bij hover/tik (base.css)",
+    "reduced motion: geen scrollbeweging, beeldwissels zonder overgang",
+    "1.20 (mobiel): twee kaarten naast elkaar, beeld 4:5, titel/prijs onder elkaar, punten verborgen, knop over volle kaartbreedte en op gelijke hoogte. Laptop ongewijzigd."
+  ],
+  "notes": "Gebaseerd op Shop 2 (refs/02-product/shop2-*). Mobiel onder elkaar volgens de brief (de ref-375 toont twee kolommen). Desktop: twee kaarten met subgrid, zodat titel, label, bullets en voet op één hoogte staan; beeld 4:3, mobiel 1:1, product contain met brightness(1.015) zodat de studiogrond (253-254) puur wit is in het witte frame. Open punten: (1) compare_url geeft live 404 (staat in facts.json, opgenomen zoals gevraagd). (2) Copy 02 in 1.2 heeft geen tekst voor de tik-wissel; de beeldknop gebruikt de alt van het sfeerbeeld uit assets.json als toegankelijke naam. Graag een copy-string als Denzel een expliciet label wil. (3) De 1.0 toont geen prijs per pack; copy 02 v1.2 heeft geen packs-regel. Screenshots: hoge viewport in plaats van fullPage (fullPage zet de touch-emulatie terug); 1440-scroll.png toont de beweging halverwege, met tijdelijk 900px ruimte boven 02 om de hero te simuleren."
+}

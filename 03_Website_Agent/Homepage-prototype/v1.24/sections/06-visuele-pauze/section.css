@@ -1,0 +1,130 @@
+/* 06 VISUELE PAUZE · 1.8 (Lars 19-10): de echte HÏ Grip-brandvideo (story 9:16) in plaats van de codefilm.
+   Desktop: een triptiek. Drie staande panelen naast elkaar vullen samen een liggend vlak; ze spelen dezelfde video,
+   elk op een ander moment (begin, eenderde, tweederde), zodat je steeds drie scènes tegelijk ziet. Het middelste paneel
+   is de hoofdvideo (geluid aan/uit), de buitenste staan iets gedempt. Smalle zwarte voegen, rand tot rand.
+   Mobiel: alleen het middelste paneel, schermvullend. HUD: merk, timecode en voortgang van de hoofdvideo, pauze, geluid
+   en één pill. section.js: afspelen alleen in beeld, offsets zetten, synchroon houden. Reduced motion: poster, geen autoplay. */
+.hp-06 { position: relative; overflow: hidden; background: var(--hi-black); color: var(--hi-white); }
+.hp-06-stage { display: grid; grid-template-columns: minmax(0, 1fr); height: min(100svh, 980px); }
+.hp-06-panel { position: relative; overflow: hidden; background: var(--hi-black); }
+.hp-06-panel--a, .hp-06-panel--c { display: none; }
+.hp-06-vid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* HUD */
+.hp-06-hud { position: absolute; inset: 0; pointer-events: none; font: 600 11px/1 var(--hp-type-family); letter-spacing: 0.1em; text-transform: uppercase; }
+.hp-06-brand, .hp-06-tc { position: absolute; top: var(--hp-space-sm); color: var(--hi-white); mix-blend-mode: difference; }
+.hp-06-brand { left: var(--hp-space-sm); font-style: italic; font-weight: 900; font-size: 14px; }
+.hp-06-tc { right: var(--hp-space-sm); font-variant-numeric: tabular-nums; }
+.hp-06-progress { position: absolute; left: var(--hp-space-sm); right: var(--hp-space-sm); bottom: 0; height: 3px; background: var(--hi-line-dark); }
+.hp-06-progress__fill { position: absolute; inset: 0; background: var(--hi-yellow); transform-origin: 0 50%; transform: scaleX(var(--hp-06-p, 0)); }
+.hp-06-ctrl { position: absolute; left: var(--hp-space-sm); bottom: var(--hp-space-sm); display: flex; gap: 6px; pointer-events: auto; }
+.hp-06-btn {
+  display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 1px solid var(--hi-line-dark); border-radius: 8px;
+  background: var(--hi-black); color: var(--hi-white); cursor: pointer; transition: border-color var(--hp-dur-1) var(--hp-ease), background-color var(--hp-dur-1) var(--hp-ease), color var(--hp-dur-1) var(--hp-ease);
+}
+.hp-06-btn svg { width: 14px; height: 14px; }
+.hp-06-btn:focus-visible { outline: 2px solid var(--hi-white); outline-offset: 2px; }
+.hp-06-btn:active { border-color: var(--hi-white); }
+.hp-06-toggle__play, .hp-06-toggle[aria-pressed="true"] .hp-06-toggle__pause, .hp-06-sound__on, .hp-06-sound[aria-pressed="true"] .hp-06-sound__off { display: none; }
+.hp-06-toggle[aria-pressed="true"] .hp-06-toggle__play, .hp-06-sound[aria-pressed="true"] .hp-06-sound__on { display: block; }
+.hp-06-sound[aria-pressed="true"] { background: var(--hi-yellow); border-color: var(--hi-yellow); color: var(--hi-black); }
+@media (hover: hover) { .hp-06-btn:hover { border-color: var(--hi-white); } }
+.hp-06-cta { position: absolute; right: var(--hp-space-sm); bottom: var(--hp-space-sm); pointer-events: auto; }
+
+/* desktop: triptiek */
+@media (min-width: 769px) {
+  .hp-06-stage {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; justify-content: center;
+    height: min(100svh, calc((100vw - 12px) / 3 * 16 / 9), 1100px);
+  }
+  .hp-06-panel--a, .hp-06-panel--c { display: block; }
+  .hp-06-panel--a .hp-06-vid, .hp-06-panel--c .hp-06-vid { filter: grayscale(0.35) brightness(0.7); transition: filter var(--hp-dur-2) var(--hp-ease); }
+  .hp-06-stage:hover .hp-06-panel--a .hp-06-vid, .hp-06-stage:hover .hp-06-panel--c .hp-06-vid { filter: none; }
+  .hp-06-brand, .hp-06-ctrl { left: max(24px, env(safe-area-inset-left, 0px)); }
+  .hp-06-tc, .hp-06-cta { right: max(24px, env(safe-area-inset-right, 0px)); }
+  .hp-06-brand, .hp-06-tc { top: var(--hp-space-ms); }
+  .hp-06-ctrl, .hp-06-cta { bottom: var(--hp-space-ms); }
+  .hp-06-progress { left: 0; right: 0; }
+}
+
+/* 1.9 (Lars 19-10) · het einde. De video stopt vlak voor zijn eigen tekst-einde (section.js, CUT); dan komt het eindbeeld
+   uit 1.7 over de hele triptiek: volt "GA DOOR" slaat in, "waar anderen stoppen." rijst op, een volt lichtlek veegt erlangs.
+   Het eindbeeld blijft HOLD seconden staan, daarna begint de video opnieuw. De koopknop staat groot, gecentreerd, onderin,
+   en wordt in het eindbeeld nog groter. */
+.hp-06-end { position: absolute; inset: 0; z-index: 2; display: grid; place-items: center; overflow: hidden; background: var(--hi-black); visibility: hidden; opacity: 0; transition: opacity var(--hp-dur-1) var(--hp-ease), visibility 0s linear var(--hp-dur-1); }
+.hp-06.is-end .hp-06-end { visibility: visible; opacity: 1; transition: opacity var(--hp-dur-1) var(--hp-ease); }
+.hp-06-end__txt { display: grid; justify-items: center; text-align: center; text-transform: uppercase; padding-bottom: var(--hp-space-xl); }
+.hp-06-end__big { font: italic 900 clamp(96px, 24vw, 420px)/0.8 var(--hp-type-family); letter-spacing: -0.05em; color: var(--hi-yellow); transform: scale(2.2); opacity: 0; }
+.hp-06-end__sub { font: 800 clamp(20px, 3vw, 48px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); clip-path: inset(0 0 100% 0); transform: translateY(40%); }
+.hp-06.is-end .hp-06-end__big { animation: hp-06-endslam var(--hp-dur-2) var(--hp-ease) both; }
+.hp-06.is-end .hp-06-end__sub { animation: hp-06-endsub var(--hp-dur-3) var(--hp-ease) both; animation-delay: var(--hp-dur-2); }
+@keyframes hp-06-endslam { 0% { opacity: 0; transform: scale(2.2); } 70% { opacity: 1; transform: scale(0.96); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes hp-06-endsub { from { clip-path: inset(0 0 100% 0); transform: translateY(40%); } to { clip-path: inset(-0.2em); transform: none; } }
+.hp-06-end__leak { position: absolute; top: -10%; bottom: -10%; left: 0; width: 40vw; background: linear-gradient(90deg, transparent, var(--hi-yellow), transparent); filter: blur(60px); mix-blend-mode: screen; opacity: 0; }
+.hp-06.is-end .hp-06-end__leak { animation: hp-06-leak calc(var(--hp-dur-3) * 2) var(--hp-ease) both; }
+@keyframes hp-06-leak { 0% { opacity: 0.9; transform: translateX(110vw); } 100% { opacity: 0; transform: translateX(-60vw); } }
+
+/* koopknop: groot, gecentreerd, onderin */
+.hp-06-cta { left: 50%; right: auto; bottom: var(--hp-space-ml); translate: -50% 0; min-height: 64px; padding: 8px 8px 8px 32px; gap: 18px; font-size: 16px; transition: transform var(--hp-dur-2) var(--hp-ease); }
+.hp-06-cta .hp-pill__chev { width: 48px; height: 48px; }
+.hp-06.is-end .hp-06-cta { transform: scale(1.18); }
+@media (min-width: 769px) {
+  .hp-06-cta { left: 50%; right: auto; bottom: var(--hp-space-lg); min-height: 72px; font-size: 18px; padding-left: 36px; }
+  .hp-06-cta .hp-pill__chev { width: 56px; height: 56px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hp-06.is-end .hp-06-end__big, .hp-06.is-end .hp-06-end__sub { animation: none; opacity: 1; transform: none; clip-path: none; }
+}
+.hp-06-hud { z-index: 3; }
+
+/* 1.10 (Lars 19-10) · de koopknop verschijnt pas als het eerste deel klaar is: bij het eindbeeld (is-cta, zet section.js)
+   en blijft daarna staan. Reduced motion: direct zichtbaar. */
+.hp-06-cta { visibility: hidden; opacity: 0; transform: translateY(24px); transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease), visibility 0s linear var(--hp-dur-2); }
+.hp-06.is-cta .hp-06-cta { visibility: visible; opacity: 1; transform: none; transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease); }
+.hp-06.is-cta.is-end .hp-06-cta { transform: scale(1.18); }
+@media (prefers-reduced-motion: reduce) { .hp-06-cta { visibility: visible; opacity: 1; transform: none; } }
+
+/* 1.11 (Lars 19-10) · eindbeeld "PRESTATIE TELT." (de kop iets kleiner zodat het woord past). De koopknop staat alleen
+   in het eindbeeld vast in beeld; tijdens de rest van de video verschijnt hij alleen als je met de muis over de video gaat. */
+.hp-06-end__big { font-size: clamp(64px, 15vw, 280px); }
+.hp-06-end__sub { font-size: clamp(32px, 6vw, 110px); color: var(--hi-white); font-style: italic; font-weight: 900; letter-spacing: -0.04em; }
+.hp-06.is-end .hp-06-cta { visibility: visible; opacity: 1; transform: scale(1.18); transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease); }
+@media (hover: hover) {
+  .hp-06:hover .hp-06-cta { visibility: visible; opacity: 1; transform: none; transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease); }
+  .hp-06.is-end:hover .hp-06-cta { transform: scale(1.18); }
+}
+.hp-06-cta:focus-visible { visibility: visible; opacity: 1; transform: none; }
+.hp-06:focus-within .hp-06-cta { visibility: visible; opacity: 1; }
+
+/* 1.12 (Lars 19-10: de koopknop alleen naar voren als je dichtbij de knop komt) · tijdens de video verschijnt hij niet meer
+   bij elke hover over de video, maar pas als de cursor in de buurt van de knop komt (is-near, zet section.js): hij komt
+   dan omhoog en naar voren. In het eindbeeld staat hij vast. Toetsenbord: zichtbaar bij focus-visible in de sectie. */
+.hp-06-cta { transform: translateY(24px) scale(0.92); }
+@media (hover: hover) {
+  .hp-06:hover:not(.is-near):not(.is-end) .hp-06-cta { visibility: hidden; opacity: 0; transform: translateY(24px) scale(0.92); transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease), visibility 0s linear var(--hp-dur-2); }
+}
+.hp-06:focus-within:not(:has(:focus-visible)):not(.is-near):not(.is-end) .hp-06-cta { visibility: hidden; opacity: 0; }
+.hp-06.is-near .hp-06-cta, .hp-06:has(:focus-visible) .hp-06-cta { visibility: visible; opacity: 1; transform: none; transition: opacity var(--hp-dur-2) var(--hp-ease), transform var(--hp-dur-2) var(--hp-ease); }
+.hp-06.is-near.is-end .hp-06-cta, .hp-06.is-end:has(:focus-visible) .hp-06-cta { transform: scale(1.18); }
+@media (prefers-reduced-motion: reduce) { .hp-06 .hp-06-cta { visibility: visible; opacity: 1; transform: none; } }
+
+/* 1.14 (Lars 20-10: een halve seconde zwart vóór PRESTATIE TELT.) · na de knip eerst een zwart vlak (is-black, zet
+   section.js); pas daarna komt het eindbeeld met de slam binnen. De koopknop wacht ook op het eindbeeld. */
+.hp-06.is-black .hp-06-end { visibility: visible; opacity: 1; transition: none; }
+
+/* 1.15 (Lars 20-10: de knip naar zwart was te hard) · vlak voor de knip (is-fade, 0,32 s) vervaagt het beeld snel naar
+   zwart terwijl de film nog loopt; daarna de halve seconde zwart en dan het eindbeeld. */
+.hp-06.is-fade .hp-06-end { visibility: visible; opacity: 1; transition: opacity calc(var(--hp-dur-1) * 2) var(--hp-ease); }
+.hp-06.is-fade:not(.is-end) .hp-06-end__txt, .hp-06.is-fade:not(.is-end) .hp-06-end__leak { visibility: hidden; }
+@media (prefers-reduced-motion: reduce) { .hp-06.is-fade .hp-06-end { transition: none; } }
+
+/* 1.18 (snelheid) · de zijpanelen dimmen met een donkere laag in plaats van een filter op de video (een filter op
+   bewegend beeld wordt elk frame opnieuw berekend); de lichtvlek in het eindbeeld krijgt een eigen laag. */
+@media (min-width: 769px) {
+  .hp-06-panel--a .hp-06-vid, .hp-06-panel--c .hp-06-vid { filter: none; }
+  .hp-06-panel--a, .hp-06-panel--c { position: relative; }
+  .hp-06-panel--a::after, .hp-06-panel--c::after { content: ""; position: absolute; inset: 0; background: var(--hi-scrim); pointer-events: none; transition: opacity var(--hp-dur-2) var(--hp-ease); }
+  .hp-06-stage:hover .hp-06-panel--a::after, .hp-06-stage:hover .hp-06-panel--c::after { opacity: 0; }
+}
+.hp-06-end__leak { will-change: transform, opacity; }
+.hp-06-progress__fill { will-change: transform; }

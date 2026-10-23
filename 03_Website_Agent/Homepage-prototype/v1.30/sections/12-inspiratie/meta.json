@@ -1,0 +1,15 @@
+{
+  "id": "12",
+  "name": "inspiratie",
+  "bg": "--hi-black",
+  "assets": ["sport-padel"],
+  "links": ["https://www.higrip.nl/collections/gripsokken"],
+  "interactions": [
+    "scroll: padelfoto zoomt uit van 1.12 naar 1.0 en schuift trager mee (parallax p·8%), alleen in beeld (hpInView + hpOnScroll)",
+    "scroll: de twee regels komen één voor één uit hun masker omhoog terwijl de kop het onderste derde van het venster in schuift (scroll-gekoppeld, geen wachtstand: zonder JS staat alles er)",
+    "scroll (≥769px): regel 1 en 2 drijven tegen elkaar in tussen 0 en 2A binnen de container (A = min(vrije ruimte/2, 6% containerbreedte)); --hp-12-x1/--hp-12-x2 blijven bestaan voor transitions.css (pill schuift A mee)",
+    "reduced motion: foto, regels en pill staan stil in de eindstand",
+    "pill: chevron schuift 3px bij hover/tik (base.css)"
+  ],
+  "notes": "1.2: tekst, structuur en CTA gelijk aan 1.0. Achtergrond sport-padel (decoratief, alt=\"\") op 42% over --hi-black, onderaan dichtlopend naar zwart richting footer; worst-case contrast wit 5,3:1, volt 4,5:1. Regel 2 in volt (toegestaan in 1.2). Kop randvullend: desktop 9,5% van de containerbreedte (regel 2 ±90% breed), mobiel min(18.5vw, 96px). Sectie min-height min(100svh, 980px), overflow: clip. Gemeten boxen 1440/1024 in uiterste scrollstanden binnen de container (zie _shoot.cjs)."
+}

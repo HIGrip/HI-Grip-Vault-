@@ -1,0 +1,15 @@
+{
+  "id": "09",
+  "name": "tussensectie-zakelijk",
+  "bg": "--hi-studio",
+  "assets": ["logo-spirit", "logo-syth", "logo-sport2000", "logo-concordia", "logo-myhealthclub", "logo-hr"],
+  "links": [],
+  "interactions": [
+    "logo-lus: rustige marquee (rAF, ~42 px/s, drie sets voor een naadloze lus), loopt alleen als de sectie in beeld is",
+    "spotlight: logo's in het midden van de band gaan van grijs naar kleur (schaal 1.06)",
+    "hover/focus op de band (desktop): de lus remt zacht af tot stilstand; gehoverd logo in kleur",
+    "tik (touch): logo in kleur via .is-on en de band pauzeert; nog een tik of ernaast hervat",
+    "reduced motion: geen lus, alles in kleur; mobiel in drie gelijke kolommen, desktop op één rij"
+  ],
+  "notes": "1.2 ronde 2 (Lars 19-10): alleen logo's. SVS en V.V. Lyra (geen logo), de groepslabels en het onderschrift 'Naaldwijk en Nootdorp' zijn weg; de H2 blijft. Optisch gelijke grootte: per logo een hoogtefactor --hp-09-k op basis van ongeveer gelijk oppervlak (schilden 1.08, cirkel 0.96, volle tegels 0.84, woordmerk 0.5 hoog bij 4:1). Lege rand uit de bestanden weggesneden met een uitsnede in CSS (Concordia: transparante rand rondom; MyHealth Club: smalle band midden in een vierkant bestand). Volgorde wisselt de vormen af: schild, tegel, cirkel, schild, woordmerk, tegel. Logo's hebben de alt uit assets.json; de gekloonde sets zijn aria-hidden met alt=\"\". Hogeschool Rotterdam staat erin; facts.json meldt dat het besluit van 14-10 hierover nog open staat. Geen links en geen CTA (de CTA zit in 10)."
+}

@@ -1,0 +1,53 @@
+/* 14 SPORTTEAMS · 1.34 (Lars 22-10, voorbeeld 1 "meer zoals deze"). Wit. Links eyebrow met lijntje, tweeregelige kop met het voordeel
+   erin (tweede regel zwart op een schuin volt vlak: volt-tekst is onleesbaar op wit), uitleg, één pill en daaronder, klein, de drie
+   voordelen met haarlijnen ertussen. Rechts een hoge foto over de halve breedte tot de schermrand (afgeronde linkerhoeken), zwart-wit,
+   met onze slogan rechtsboven. Mobiel: tekst, foto, voordelen onder elkaar (de wrapper .hp-14-left verdwijnt dan met display: contents). */
+.hp-14 { background: var(--hi-white); color: var(--hi-black); overflow-x: clip; }
+.hp-14-inner { display: grid; gap: var(--hp-space-md); }
+.hp-14-left { display: contents; }
+
+/* tekst */
+.hp-14-copy { order: 1; display: grid; gap: var(--hp-space-ms); justify-items: start; }
+.hp-14-eyebrow { display: flex; align-items: center; gap: var(--hp-space-sm); font: 600 12px/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-graphite); }
+.hp-14-eyebrow::before { content: ""; width: 32px; height: 1px; background: var(--hi-graphite); }
+.hp-14-h2 { isolation: isolate; font: italic 900 clamp(32px, 8.4vw, 38px)/1 var(--hp-type-family); letter-spacing: var(--hp-type-track-head); text-transform: uppercase; }
+.hp-14-h2__a, .hp-14-h2__b { display: block; width: fit-content; }
+.hp-14-h2__a { margin-bottom: 0.08em; }
+.hp-14-h2__b { position: relative; }
+.hp-14-h2__b::before { content: ""; position: absolute; z-index: -1; inset: 6% -0.16em 2% -0.16em; background: var(--hi-yellow); transform: skewX(-12deg); }
+.hp-14-lead { max-width: 46ch; font-size: var(--hp-type-lead); line-height: 1.55; color: var(--hi-graphite); opacity: 0.72; }
+.hp-14-cta { margin-top: var(--hp-space-xs); }
+
+/* beeld */
+.hp-14-media { order: 2; position: relative; overflow: hidden; aspect-ratio: 1 / 1; border-radius: var(--hp-radius-media); background: var(--hi-near-black); }
+.hp-14-img { position: absolute; left: 0; top: -4%; width: 100%; height: 108%; object-fit: cover; object-position: 50% 50%; filter: grayscale(1) contrast(1.05); will-change: transform; }
+.hp-14-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, var(--hi-scrim) 0%, transparent 28%); pointer-events: none; }
+.hp-14-slogan { position: absolute; z-index: 1; top: var(--hp-space-sm); right: var(--hp-space-sm); max-width: 12ch; padding-bottom: 10px; border-bottom: 2px solid var(--hi-yellow); text-align: left; font: 600 11px/1.6 var(--hp-type-family); letter-spacing: var(--hp-type-track-label); text-transform: uppercase; color: var(--hi-white); }
+
+/* drie voordelen */
+.hp-14-trio { order: 3; list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--hi-line); }
+.hp-14-item { display: grid; grid-template-columns: 40px minmax(0, 1fr); align-items: start; column-gap: var(--hp-space-sm); padding-block: var(--hp-space-sm); border-bottom: 1px solid var(--hi-line); }
+.hp-14-ico { width: 40px; height: 40px; fill: none; stroke: var(--hi-black); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.hp-14-itext { display: grid; gap: 4px; }
+.hp-14-tt { font: 800 14px/1.2 var(--hp-type-family); letter-spacing: var(--hp-type-track-body); text-transform: uppercase; }
+.hp-14-td { font-size: 14px; line-height: 1.4; color: var(--hi-graphite); opacity: 0.72; }
+
+@media (min-width: 900px) {
+  .hp-14-inner { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 clamp(24px, 3vw, 48px); align-items: stretch; }
+  .hp-14-left { display: grid; grid-column: 1 / 7; align-content: center; gap: var(--hp-space-ml); }
+  .hp-14-copy { gap: var(--hp-space-ms); }
+  .hp-14-eyebrow { font-size: 13px; }
+  .hp-14-h2 { font-size: clamp(44px, 4.1vw, 64px); }
+  .hp-14-media {
+    grid-column: 7 / 13; aspect-ratio: auto; min-height: 640px;
+    border-radius: var(--hp-radius-media) 0 0 var(--hp-radius-media);
+    margin-right: calc(-1 * (max(40px, env(safe-area-inset-right, 0px)) + max(0px, (100vw - 1472px) / 2)));
+  }
+  .hp-14-slogan { top: var(--hp-space-md); right: var(--hp-space-md); font-size: 12px; }
+  .hp-14-trio { grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 0; }
+  .hp-14-item { grid-template-columns: 32px minmax(0, 1fr); column-gap: 12px; padding: 0 var(--hp-space-sm); border-bottom: 0; border-left: 1px solid var(--hi-line); }
+  .hp-14-item:first-child { padding-left: 0; border-left: 0; }
+  .hp-14-ico { width: 32px; height: 32px; }
+  .hp-14-tt { font-size: 13px; }
+  .hp-14-td { font-size: 13px; }
+}

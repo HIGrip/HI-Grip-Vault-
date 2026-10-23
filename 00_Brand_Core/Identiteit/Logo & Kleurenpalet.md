@@ -65,12 +65,12 @@ Primair werken we in **wit en zwart**. Drie achtergrond- en tekstgrijzen brengen
 
 ### Performance-accenten — één per kernsport
 
-| # | Naam | Hex | RGB | Kernsport | CSS-variabele |
-|---|---|---|---|---|---|
-| 01 | **Volt** | `#CCFF00` | 204 · 255 · 0 | **Voetbal** · hoofdaccent | `--hi-yellow` |
-| 02 | **Royal Blue** | `#0011A7` | 0 · 17 · 167 | **Padel** | `--hi-blue` |
-| 03 | **Pumpkin** | `#FF6A00` | 255 · 106 · 0 | **Tennis** | `--hi-orange` |
-| 04 | **Tangerine** | `#E10600` | 225 · 6 · 0 | **Rugby** | `--hi-red` |
+| #   | Naam           | Hex       | RGB           | Kernsport                 | CSS-variabele |
+| --- | -------------- | --------- | ------------- | ------------------------- | ------------- |
+| 01  | **Volt**       | `#CCFF00` | 204 · 255 · 0 | **Voetbal** · hoofdaccent | `--hi-yellow` |
+| 02  | **Royal Blue** | `#0011A7` | 0 · 17 · 167  | **Padel**                 | `--hi-blue`   |
+| 03  | **Pumpkin**    | `#FF6A00` | 255 · 106 · 0 | **Tennis**                | `--hi-orange` |
+| 04  | **Tangerine**  | `#E10600` | 225 · 6 · 0   | **Rugby**                 | `--hi-red`    |
 
 **Regels**
 - Accenten brengen energie; wit en zwart dragen de uiting. Kleur komt binnen als accent, nooit als vlakvulling over de hele uiting (zie [[Design Elementen]]).

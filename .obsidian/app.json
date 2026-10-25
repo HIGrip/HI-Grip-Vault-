@@ -1,3 +1,10 @@
 {
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "userIgnoreFilters": [
+    "06_Website_Agent/Homepage-prototype/",
+    "06_Website_Agent/Productpagina-prototype/",
+    ".claude/",
+    ".playwright-mcp/",
+    ".vscode/"
+  ]
 }

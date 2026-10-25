@@ -64,6 +64,7 @@ Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerrege
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
+- [[Agents Denzel]]
 - [[Huidig gebruik van Denzel]]
 - [[Identiteit Denzel]]
 - [[Soul Denzel]]

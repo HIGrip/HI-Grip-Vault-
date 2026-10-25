@@ -23,7 +23,7 @@ Per concurrent uit het feitenbestand: prijzen en bundels, nieuwe producten, nieu
 
 ## Harde grenzen
 - Alleen openbare informatie. Niets achter een login, geen contact met concurrenten.
-- Nooit iets publiceren, in Buffer of Meta zetten of een campagne wijzigen. Ad-ideeën zijn een voorstel; content keurt Tigo.
+- Nooit iets publiceren, in Buffer of Meta zetten of een campagne wijzigen. Ad-ideeën zijn een voorstel; content keurt Team HÏ Grip.
 - Geen advertenties of cijfers verzinnen. Is de Meta-koppeling er niet? Meld dat en ga door zonder ads.
 
 ## Stap 0 — Guard

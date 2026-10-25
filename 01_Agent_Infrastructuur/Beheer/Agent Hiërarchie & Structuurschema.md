@@ -45,7 +45,7 @@ Wat niet in een Agents-bestand staat, staat één keer elders: merkregels en fei
 
 - **Delegeren (naar beneden):** een hoofdagent zet een sub-agent in zodra een taak binnen diens specialisme valt.
 - **Escaleren (naar boven):** een sub-agent escaleert via zijn hoofdagent, nooit rechtstreeks naar Denzel of Team HÏ Grip. Alles op "Altijd overleg vooraf" gaat via Denzel naar Team HÏ Grip.
-- **Tussen hoofdagents:** nu geen rechtstreeks contact; wat de ene van de andere nodig heeft loopt via Denzel en bestanden, zodat er een spoor is. *Open punt (25-10-2026): Team HÏ Grip wil de zes agents in één groepschat laten samenwerken. Tot dat besloten is blijft deze regel gelden.*
+- **Tussen hoofdagents (besloten 25-10-2026):** de zes agents (Denzel + vijf hoofdagents) overleggen onderling in een groepschat (maximaal 6 deelnemers). Alleen Denzel praat met Team HÏ Grip. Afspraken en overdracht staan altijd ook in een bestand, zodat er een spoor is. De technische inrichting van de groepschat is nog niet vastgelegd.
 - **Toetsen:** elke hoofdagent met sub-agents heeft een eigen QA-agent. Het verdict gaat naar die hoofdagent en altijd als kopie naar Denzel. De hoofdagent handelt GOED en CORRIGEER af en mag een verdict niet aanpassen of tegenhouden; Denzel grijpt in bij ESCALEER, een grensschending of een patroon.
 - **Administratie:** de Operations Agent, met de Stafchef die briefings schrijft, houdt het kwaliteitslog en de [[Leerregels per Agent]] bij, maakt de weekoverzichten, onderhoudt het dashboard en vinkt in het dashboard af wat met bewijs af is.
 - **Wie een taak oppakt:** de taakregel in [[user]] (de eerste die oppakt wordt gekoppeld).

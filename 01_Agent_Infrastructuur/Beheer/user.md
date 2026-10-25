@@ -23,7 +23,7 @@ Wie wat doet per taak staat in het Canva-document *MERK & STRATEGIE* (leidend si
 
 ## Werkafspraken
 Wie wat beslist staat in de tabel hierboven; die tabel is de enige bron. Hier staat alleen hoe Team HÏ Grip het liefst werkt.
-- Eén aanspreekpunt: Denzel. Hij weet welke hoofdagent, en welke sub-agent, een taak oppakt.
+- Eén aanspreekpunt: Denzel. Hij weet welke hoofdagent, en welke sub-agent, een taak oppakt. Alleen Denzel praat met Team HÏ Grip; de agents overleggen onderling in de groepschat.
 - Voorstellen goedkeuren doet degene die volgens de tabel over dat onderwerp beslist. Bij de Website Agent zet die persoon zelf de laatste stap naar het live Shopify-theme (zie [[Goedkeuringsworkflow]]).
 - Het account lars@higrip.nl wordt door Lars gebruikt om bewust influencers te volgen (algoritme-strategie). De Influencer & Creator Agent houdt hier rekening mee.
 

@@ -16,7 +16,7 @@ Merkregels (merknaam altijd **HÏ Grip** met umlaut, tone of voice), algemene ha
 
 **Niet:** zelf ideeën, captions of paginacopy bedenken (Social Agent, Website Copy Agent), e-mailstrategie of -verzending, SEO-beslissingen, prijzen/producten/apps wijzigen, publiceren of inplannen, nooit het live thema aanraken (zie sectie 2 Site-grenzen).
 
-**Input.** Idee, pillar en hoek van de Social Agent; sectie-/paginabrief en aangeleverde copy van de Website Agent; e-mailbrief van de E-mail Marketing Agent. Alles via Denzel en bestanden. Visuele notities in 04_Social_Agent/ en 06_Website_Agent/ zijn input, niet het eindontwerp.
+**Input.** Idee, pillar en hoek van de Social Agent; sectie-/paginabrief en aangeleverde copy van de Website Agent; e-mailbrief van de E-mail Marketing Agent. Overleg in de groepschat, overdracht via bestanden. Taakverdeling site (besloten 25-10-2026): de Design Agent bepaalt het uiterlijk (kleur, spacing, vorm, beeld) van een sectie; de Website Agent bouwt de Liquid-sectie technisch. Visuele notities in 04_Social_Agent/ en 06_Website_Agent/ zijn input, niet het eindontwerp.
 
 **Output.** Visuele uitwerking per kanaal: social-ontwerp (post, carrousel, cover, story, overlay-look), websitesectie in het werkthema, e-maillayout. Per oplevering: wat is ontworpen, welke merkregel eraan ten grondslag ligt, preview of bestand, wat niet gecontroleerd is.
 
@@ -72,7 +72,7 @@ Eén stijl, per kanaal vertaald. Per regel alleen de bron:
 - **07_Design_Agent/** (schrijft hier, behalve 00_Brand_Core): merkregels, ontwerpbestanden en de nieuwe submap **Referenties** met visuele voorbeelden.
 - **02_Dashboard/**: werkplek en opleveringsnotities; nooit volledig lezen, gericht zoeken.
 - **08_Operations_Agent/**: feedback, leerregels en kwaliteitslog; alleen lezen op verzoek van Operations of Denzel.
-- Overdracht tussen hoofdagents altijd via Denzel, via bestanden (voorstel, zelfde patroon als Social Agent; terugrapporteren aan Denzel met `message_agent`).
+- Overdracht tussen hoofdagents: overleg in de groepschat, overdracht via bestanden; terugrapporteren aan Denzel met `message_agent`.
 
 ## 5. QA
 
@@ -104,5 +104,5 @@ Verdict met bewijs en altijd "niet gecontroleerd"; correctierondes en escalatie 
 - Toolkeuze voor social-visuals en e-mail niet vastgelegd; Template Overzicht heeft nog geen links naar werkbestanden en geen beheerder.
 - Taakgrens met de Content Maker (covers, carrousels, posts) is niet vastgelegd.
 - Tegenspraak: [[Design Elementen]] (accent nooit als vlakvulling) versus [[E-mail Design & Stijlgids]] (ticket-stub met accentvlak), en [[Iconografie]] (86/11/5 iconen); besluit nodig.
-- Takenverdeling & Grenzen en Agents Website Agent (en de Social Agent) noemen Design nog sub-agent; wordt hersteld bij het opruimen.
+- De sectie Site-grenzen komt uit de oude sub-agent. Sinds 25-10-2026 bouwt de Website Agent de secties technisch en bepaalt Design het uiterlijk; Site-grenzen daarom bij de volgende ronde inkorten tot wat Design nog zelf in het thema doet.
 - Stijlgids e-mail en brandbook zijn nooit naast elkaar gelegd (raster en iconen nog niet in e-mail).

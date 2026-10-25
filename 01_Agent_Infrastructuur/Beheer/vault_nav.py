@@ -1,139 +1,105 @@
-"""Vault-navigatie: houdt de hele vault binnen één linkstructuur.
+"""Vault-navigatie (mindmap): elke notitie krijgt EEN korte regel naar de index van de eigen map.
 
 Wat het doet (idempotent, veilig om vaak te draaien):
-1. Elke notitie krijgt één navigatieregel die begint met '> **Brand Core (00):**'.
-   Die linkt naar [[00 Brand Core]], de kernbestanden en de index van de eigen map.
-   - In 02_Dashboard staat de regel direct onder de H1 (de build rendert de body en
-     de backlog-parser leest tot het einde van het bestand; onderaan zou hij in de
-     laatste sectie belanden).
-   - Overal elders staat hij onderaan.
-2. Elke map-index (01–04 en 'Waar staat wat' voor 05) krijgt een automatisch
-   bijgewerkte sectie met links naar alle notities in die map.
-3. Elke kennisnotitie (00–04) waar een onderzoeksnotitie uit 02_Dashboard naar linkt,
-   krijgt onderaan een sectie 'Gerelateerd onderzoek (automatisch)' met de nieuwste
-   niet-gearchiveerde notities. Links in de navigatieregel tellen niet mee.
-4. Aan het eind: een rapport van notities zonder inkomende links (wezen).
+1. Elke notitie krijgt een regel '> Map: [[<index van de eigen map>]]'.
+   - Brand Core, de indexen en Home-achtige root: '> Map: [[Home]]'.
+   - In 02_Dashboard staat de regel direct onder de H1 (de build rendert de body); elders onderaan.
+   - Bestanden die beginnen met 'Agents ' houden hun eigen regel naar Brand Core (daar hoort die).
+2. Oude navigatieregels ('> **Brand Core (00):** ...') en de automatische sectie
+   'Gerelateerd onderzoek (automatisch)' worden verwijderd. Geen kruislinks tussen notities.
+3. Elke map-index krijgt een compacte, automatische lijst van de notities in die map
+   (02_Dashboard: alleen de structuur met aantallen, nooit 150 losse links).
+4. Rapport van notities zonder inkomende link (wezen).
 
-Slaat over: bestanden met mergeconflicten, Home.md, 00 Brand Core.md (handmatig),
-en .git/.obsidian/.trash/.claude/_dashboard.
+Slaat over: .git/.obsidian/.trash/.claude/.vscode/.playwright-mcp, prototype- en themamappen, Home.md,
+SCHEMA.md, CLAUDE.md, log.md (root-bestanden krijgen geen regel; een oude regel wordt wel weggehaald).
 
 Gebruik:  python "01_Agent_Infrastructuur/Beheer/vault_nav.py" [--dry-run]
 """
-import os
 import re
 import subprocess
 import sys
 from pathlib import Path
 
 VAULT = Path(__file__).resolve().parents[2]
-SKIP_DIRS = {".git", ".obsidian", ".trash", ".vscode", ".claude", "_dashboard", "node_modules"}  # .claude = gegenereerde skills/agents (desktop-sync.py), geen notities
-SKIP_FILES = {"Home.md", "conflict-files-obsidian-git.md", "00_Brand_Core/00 Brand Core.md"}
-NAV_PREFIX = "> **Brand Core (00):**"
+DRY = "--dry-run" in sys.argv
+
+OLD_PREFIX = "> **Brand Core (00):**"
+NAV_PREFIX = "> Map:"
 AUTO_HEADING = "## Alle notities in deze map (automatisch)"
 RESEARCH_HEADING = "## Gerelateerd onderzoek (automatisch)"
-RESEARCH_MAX = 8
-RESEARCH_NOTE_RE = re.compile(r"^02_Dashboard/\d{4}-\d{2}-\d{2}-[^/]+\.md$")
+SKIP_PATH = re.compile(r"(^|/)(\.git|\.obsidian|\.trash|\.claude|\.vscode|\.playwright-mcp|node_modules)(/|$)|prototype|theme-ref")
+ROOT_SKIP = {"Home.md", "SCHEMA.md", "CLAUDE.md", "log.md", "conflict-files-obsidian-git.md"}
 
 HUBS = {
-    "04_Social_Agent": "04_Social_Agent/01 Content Agent — Index.md",
-    "05_Partnership_Agent": "05_Partnership_Agent/02 Partnership Agent — Index.md",
-    "06_Website_Agent": "06_Website_Agent/03 Website Agent — Index.md",
-    "01_Agent_Infrastructuur": "01_Agent_Infrastructuur/04 Agent Infrastructuur — Index.md",
+    "01_Agent_Infrastructuur": "01_Agent_Infrastructuur/01 Agent Infrastructuur \u2014 Index.md",
     "02_Dashboard": "02_Dashboard/Waar staat wat.md",
-    "03_Denzel": "03_Denzel/03 Denzel — Index.md",
-}
-HUB_INTRO = {
-    "04_Social_Agent": "Kennisbank voor social content: copy, strategie en planning, visuele productie.",
-    "05_Partnership_Agent": "Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers.",
-    "06_Website_Agent": "Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail.",
-    "01_Agent_Infrastructuur": "Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts.",
-    "03_Denzel": "Kernmap van Denzel, de Orchestrator Agent: wat hij doet en hoe, zijn handboek en zijn vijf eigen sub-agents.",
+    "03_Denzel": "03_Denzel/03 Denzel \u2014 Index.md",
+    "04_Social_Agent": "04_Social_Agent/04 Social Agent \u2014 Index.md",
+    "05_Partnership_Agent": "05_Partnership_Agent/05 Partnership Agent \u2014 Index.md",
+    "06_Website_Agent": "06_Website_Agent/06 Website Agent \u2014 Index.md",
+    "07_Design_Agent": "07_Design_Agent/07 Design Agent \u2014 Index.md",
+    "08_Operations_Agent": "08_Operations_Agent/08 Operations Agent \u2014 Index.md",
 }
 
-CORE_LINKS = ("[[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · "
-              "[[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · "
-              "[[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]]")
-LINK_RE = re.compile(r"\[\[([^\]\|#\^]+)(?:[#\^][^\]\|]*)?(?:\|[^\]]*)?\]\]")
 
-
-def conflicted() -> set:
-    try:
-        out = subprocess.run(["git", "-c", "core.quotepath=off", "diff", "--name-only", "--diff-filter=U"],
-                             cwd=VAULT, capture_output=True, text=True, encoding="utf-8").stdout
-        return {line.strip() for line in out.splitlines() if line.strip()}
-    except OSError:
-        return set()
-
-
-def all_notes() -> list:
-    notes = []
-    for dp, dns, fns in os.walk(VAULT):
-        dns[:] = sorted(d for d in dns if d not in SKIP_DIRS)
-        for f in sorted(fns):
-            if f.endswith(".md"):
-                notes.append((Path(dp) / f).relative_to(VAULT).as_posix())
-    return notes
+def git_notes():
+    out = subprocess.check_output(["git", "-c", "core.quotepath=false", "ls-files", "*.md"],
+                                  cwd=VAULT, text=True, encoding="utf-8").splitlines()
+    return [n for n in out if not SKIP_PATH.search(n)]
 
 
 def read(rel):
-    raw = (VAULT / rel).read_bytes()
-    bom = raw.startswith(b"\xef\xbb\xbf")
-    text = raw.decode("utf-8-sig")
-    crlf = "\r\n" in text
-    return text.replace("\r\n", "\n"), bom, crlf
+    b = (VAULT / rel).read_bytes()
+    bom = b.startswith(b"\xef\xbb\xbf")
+    t = b.decode("utf-8-sig")
+    crlf = "\r\n" in t
+    return t.replace("\r\n", "\n"), bom, crlf
 
 
-def write(rel, text, bom, crlf, dry):
+def write(rel, text, bom, crlf):
     if crlf:
         text = text.replace("\n", "\r\n")
     data = text.encode("utf-8")
     if bom:
         data = b"\xef\xbb\xbf" + data
-    if (VAULT / rel).exists() and (VAULT / rel).read_bytes() == data:
+    old = (VAULT / rel).read_bytes()
+    if old == data:
         return False
-    if not dry:
+    if not DRY:
         (VAULT / rel).write_bytes(data)
     return True
-
-
-def link_for(rel, basenames) -> str:
-    stem = rel.rsplit("/", 1)[-1][:-3]
-    if basenames.get(stem.lower(), 0) == 1:
-        return f"[[{stem}]]"
-    parts = rel[:-3].split("/")
-    label = "/".join(parts[-2:])
-    return f"[[{rel[:-3]}|{label}]]"
 
 
 def hub_stem(top):
     return HUBS[top].rsplit("/", 1)[-1][:-3]
 
 
-def nav_line(rel) -> str:
+def nav_for(rel):
     top = rel.split("/", 1)[0] if "/" in rel else ""
-    if top == "00_Brand_Core":
-        return f"{NAV_PREFIX} [[00 Brand Core]] · [[Home]]"
-    if rel in HUBS.values() or top not in HUBS:
-        return f"{NAV_PREFIX} {CORE_LINKS} — **Map:** [[Home]]"
-    return f"{NAV_PREFIX} {CORE_LINKS} — **Map:** [[{hub_stem(top)}]] · [[Home]]"
+    if top in HUBS and rel not in HUBS.values():
+        return f"{NAV_PREFIX} [[{hub_stem(top)}]]"
+    return f"{NAV_PREFIX} [[Home]]"
 
 
-def strip_nav(text: str) -> str:
-    lines = text.split("\n")
-    out, i = [], 0
-    while i < len(lines):
-        if lines[i].startswith(NAV_PREFIX):
-            # ook de lege regel die we erna zetten weghalen
-            if i + 1 < len(lines) and lines[i + 1].strip() == "" and out and out[-1].strip() == "":
-                i += 1
-            i += 1
+def strip_lines(text, keep_old):
+    out = []
+    for ln in text.split("\n"):
+        if ln.startswith(NAV_PREFIX) or (ln.startswith(OLD_PREFIX) and not keep_old):
             continue
-        out.append(lines[i])
-        i += 1
+        out.append(ln)
     return "\n".join(out)
 
 
-def place_top(text: str, nav: str) -> str:
+def strip_section(text, heading):
+    i = text.find(heading)
+    if i == -1:
+        return text
+    j = text.find("\n## ", i + len(heading))
+    return (text[:i].rstrip() + ("\n\n" + text[j + 1:] if j != -1 else "\n"))
+
+
+def place_top(text, nav):
     lines = text.split("\n")
     start = 0
     if lines and lines[0].strip() == "---":
@@ -141,203 +107,110 @@ def place_top(text: str, nav: str) -> str:
             if lines[j].strip() == "---":
                 start = j + 1
                 break
-    insert_at = start
+    at = start
     for j in range(start, min(start + 15, len(lines))):
         if lines[j].startswith("# "):
-            insert_at = j + 1
+            at = j + 1
             break
         if lines[j].startswith("## "):
             break
-    block = ["", nav] if insert_at > 0 else [nav]
-    if insert_at >= len(lines) or lines[insert_at].strip() != "":
+    block = ["", nav] if at > 0 else [nav]
+    if at >= len(lines) or lines[at].strip() != "":
         block.append("")
-    return "\n".join(lines[:insert_at] + block + lines[insert_at:])
+    return "\n".join(lines[:at] + block + lines[at:])
 
 
-def place_bottom(text: str, nav: str) -> str:
-    return text.rstrip() + "\n\n" + nav + "\n"
+def tidy(text):
+    return re.sub(r"\n{3,}", "\n\n", text).rstrip() + "\n"
 
 
-def hub_listing(top, notes, basenames) -> str:
+def link_for(rel, stems):
+    stem = rel.rsplit("/", 1)[-1][:-3]
+    if stems.get(stem.lower(), 0) == 1:
+        return f"[[{stem}]]"
+    return f"[[{rel[:-3]}|{'/'.join(rel[:-3].split('/')[-2:])}]]"
+
+
+def listing(top, notes, stems):
     hub = HUBS[top]
     members = [n for n in notes if n.startswith(top + "/") and n != hub]
+    out = [AUTO_HEADING, "", "Automatisch (`vault_nav.py`), niet met de hand bewerken.", ""]
+    if top == "02_Dashboard":
+        sub = {}
+        for n in members:
+            parts = n[len(top) + 1:].split("/")
+            key = parts[0] if len(parts) > 1 else "Onderzoeksnotities (datum-id in de bestandsnaam)"
+            sub[key] = sub.get(key, 0) + 1
+        out.append("Zoek gericht; lees dit niet in zijn geheel.")
+        out.append("")
+        out.extend(f"- {k}: {v} notities" for k, v in sorted(sub.items()))
+        return "\n".join(out) + "\n"
     groups = {}
     for n in members:
-        sub = n[len(top) + 1:].rsplit("/", 1)[0] if n.count("/") > 1 else ""
-        groups.setdefault(sub, []).append(n)
-    out = [AUTO_HEADING, "",
-           "Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.", ""]
-    for sub in sorted(groups):
-        items = groups[sub]
-        if top == "02_Dashboard" and sub == "":
-            items = sorted(items, reverse=True)
-        out.append(f"### {sub or 'Hoofdmap'}")
-        out.extend(f"- {link_for(n, basenames)}" for n in items)
+        s = n[len(top) + 1:].rsplit("/", 1)[0] if n.count("/") > 1 else ""
+        groups.setdefault(s, []).append(n)
+    for s in sorted(groups):
+        out.append(f"### {s or 'Hoofdmap'}")
+        out.extend(f"- {link_for(n, stems)}" for n in sorted(groups[s]))
         out.append("")
     return "\n".join(out).rstrip() + "\n"
 
 
-def update_hub(top, notes, basenames, dry) -> bool:
-    rel = HUBS[top]
-    if (VAULT / rel).exists():
-        text, bom, crlf = read(rel)
-    else:
-        title = hub_stem(top)
-        text = (f"# {title}\n\n> {HUB_INTRO[top]} Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].\n\n"
-                f"Terug naar [[Home]].\n")
-        bom, crlf = False, False
-    idx = text.find(AUTO_HEADING)
-    if idx != -1:
-        text = text[:idx]
-    text = strip_nav(text)
-    text = place_top(text, nav_line(rel)) if top == "02_Dashboard" else text
-    text = text.rstrip() + "\n\n" + hub_listing(top, notes, basenames)
-    if top != "02_Dashboard":
-        text = place_top(text, nav_line(rel))
-    return write(rel, text, bom, crlf, dry)
-
-
-def resolver(notes):
-    basemap = {}
-    for n in notes:
-        basemap.setdefault(n.rsplit("/", 1)[-1][:-3].lower(), []).append(n)
-
-    def resolve(target):
-        t = target.strip().lower()
-        if t.endswith(".md"):
-            t = t[:-3]
-        if "/" in t:
-            return next((x for x in notes if x[:-3].lower().endswith(t)), None)
-        hits = basemap.get(t, [])
-        return hits[0] if len(hits) == 1 else None  # dubbelzinnige naam: niet raden
-    return resolve
-
-
-def frontmatter(text) -> dict:
-    meta = {}
-    lines = text.split("\n")
-    if not lines or lines[0].strip() != "---":
-        return meta
-    for line in lines[1:]:
-        if line.strip() == "---":
-            break
-        if ":" in line and not line.startswith(" "):
-            key, val = line.split(":", 1)
-            meta[key.strip()] = val.strip().strip('"')
-    return meta
-
-
-def research_index(notes) -> dict:
-    """kennisnotitie -> [(datum, id, titel)] van onderzoeksnotities die ernaar linken."""
-    resolve = resolver(notes)
-    index = {}
-    for n in notes:
-        if not RESEARCH_NOTE_RE.match(n):
-            continue
-        text, _, _ = read(n)
-        meta = frontmatter(text)
-        if meta.get("status") == "gearchiveerd":
-            continue
-        body = "\n".join(l for l in text.split("\n") if not l.startswith(NAV_PREFIX))
-        entry = (meta.get("datum", ""), n.rsplit("/", 1)[-1][:-3], meta.get("titel", ""))
-        for m in LINK_RE.finditer(body):
-            tgt = resolve(m.group(1))
-            if tgt and not tgt.startswith("02_Dashboard/") and tgt not in SKIP_FILES and tgt not in HUBS.values():
-                index.setdefault(tgt, set()).add(entry)
-    return {k: sorted(v, reverse=True) for k, v in index.items()}
-
-
-def strip_research(text: str) -> str:
-    # alleen een echte kop aan het begin van een regel, niet de tekst ergens in een zin
-    found = re.search(r"^" + re.escape(RESEARCH_HEADING) + r"[ \t]*$", text, re.M)
-    if not found:
-        return text
-    idx = found.start()
-    rest = text[found.end():]
-    nxt = re.search(r"^## ", rest, re.M)
-    tail = rest[nxt.start():] if nxt else ""
-    return text[:idx].rstrip() + ("\n\n" + tail if tail else "\n")
-
-
-def research_section(entries) -> str:
-    out = [RESEARCH_HEADING, "",
-           "Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.", ""]
-    for datum, nid, titel in entries[:RESEARCH_MAX]:
-        out.append(f"- [[{nid}]]" + (f" — {titel}" if titel else ""))
-    if len(entries) > RESEARCH_MAX:
-        out.append(f"- … en {len(entries) - RESEARCH_MAX} oudere (zie [[Waar staat wat]])")
-    return "\n".join(out)
-
-
-def orphans(notes) -> list:
-    basemap = {}
-    for n in notes:
-        basemap.setdefault(n.rsplit("/", 1)[-1][:-3].lower(), n)
-    incoming = {n: 0 for n in notes}
-    for n in notes:
-        text = (VAULT / n).read_text(encoding="utf-8", errors="ignore")
-        for m in LINK_RE.finditer(text):
-            t = m.group(1).strip()
-            tgt = None
-            if "/" in t:
-                tgt = next((x for x in notes if x[:-3].lower().endswith(t.lower())), None)
-            else:
-                tgt = basemap.get(t.lower())
-            if tgt and tgt != n:
-                incoming[tgt] += 1
-    return [n for n, c in incoming.items() if c == 0]
-
-
 def main():
-    dry = "--dry-run" in sys.argv
-    skip = conflicted()
-    notes = all_notes()
-    # hubs die nog niet bestaan meenemen in de lijst
-    for hub in HUBS.values():
-        if hub not in notes:
-            notes.append(hub)
-    basenames = {}
+    notes = git_notes()
+    stems = {}
     for n in notes:
-        stem = n.rsplit("/", 1)[-1][:-3].lower()
-        basenames[stem] = basenames.get(stem, 0) + 1
-
-    related = research_index(notes)
-
-    changed, skipped = [], []
-    for top in HUBS:
-        if HUBS[top] in skip:
-            skipped.append(HUBS[top])
-        elif update_hub(top, notes, basenames, dry):
-            changed.append(HUBS[top])
-
+        k = n.rsplit("/", 1)[-1][:-3].lower()
+        stems[k] = stems.get(k, 0) + 1
+    changed, created = [], []
+    for rel in HUBS.values():
+        if not (VAULT / rel).exists():
+            title = rel.rsplit("/", 1)[-1][:-3]
+            if not DRY:
+                (VAULT / rel).write_text(f"---\ntype: index\nbijgewerkt: 2026-10-25\n---\n\n# {title}\n", encoding="utf-8")
+            created.append(rel)
+            if rel not in notes:
+                notes.append(rel)
     for rel in notes:
-        if rel in SKIP_FILES or rel in HUBS.values():
+        top = rel.split("/", 1)[0] if "/" in rel else ""
+        if rel in ROOT_SKIP:
             continue
-        if rel in skip:
-            skipped.append(rel)
+        if not (VAULT / rel).exists():
+            continue  # dry-run: index bestaat nog niet = rel.rsplit("/", 1)[-1].startswith("Agents ")
+        new = strip_lines(text, keep_old)
+        new = strip_section(new, RESEARCH_HEADING)
+        is_hub = top in HUBS and rel == HUBS[top]
+        if is_hub:
+            new = strip_section(new, AUTO_HEADING)
+            new = tidy(new) + "\n" + listing(top, notes, stems)
+        new = tidy(new)
+        if not keep_old:
+            new = place_top(new, nav_for(rel)) if top == "02_Dashboard" else new.rstrip() + "\n\n" + nav_for(rel) + "\n"
+            new = tidy(new)
+        if write(rel, new, bom, crlf):
+            changed.append(rel)
+    # root: oude regel weg
+    for rel in ROOT_SKIP:
+        if rel == "Home.md" or not (VAULT / rel).exists():
             continue
         text, bom, crlf = read(rel)
-        if re.search(r"^<<<<<<< ", text, re.M):
-            skipped.append(rel)
-            continue
-        text = strip_nav(text)
-        nav = nav_line(rel)
-        if not rel.startswith("02_Dashboard/"):
-            text = strip_research(text)
-            if rel in related:
-                text = text.rstrip() + "\n\n" + research_section(related[rel]) + "\n"
-        text = place_top(text, nav) if rel.startswith("02_Dashboard/") else place_bottom(text, nav)
-        if write(rel, text, bom, crlf, dry):
+        new = tidy(strip_lines(text, False))
+        if new != tidy(text) and write(rel, new, bom, crlf):
             changed.append(rel)
-
-    print(f"{'(dry-run) ' if dry else ''}{len(changed)} bestanden bijgewerkt, {len(skipped)} overgeslagen (mergeconflict).")
-    for s in skipped:
-        print(f"  overgeslagen: {s}")
-    if not dry:
-        left = [o for o in orphans(all_notes()) if o not in SKIP_FILES and o != "Home.md"]
-        print(f"Notities zonder inkomende link: {len(left)}")
-        for o in left:
-            print(f"  wees: {o}")
+    print(("DRY-RUN: " if DRY else "") + f"notities={len(notes)} gewijzigd={len(changed)} nieuwe indexen={created}")
+    bc = [c for c in changed if c.startswith("00_Brand_Core/")]
+    print("waarvan Brand Core:", len(bc))
+    # wezen
+    incoming = set()
+    for rel in notes:
+        try:
+            t = read(rel)[0]
+        except Exception:
+            continue
+        for m in re.findall(r"\[\[([^\]|#]+)", t):
+            incoming.add(m.strip().rsplit("/", 1)[-1].lower())
+    orphans = [n for n in notes if n.rsplit("/", 1)[-1][:-3].lower() not in incoming and not n.startswith("02_Dashboard/2")]
+    print("wezen (zonder inkomende link, excl. onderzoeksnotities):", len(orphans))
 
 
 if __name__ == "__main__":

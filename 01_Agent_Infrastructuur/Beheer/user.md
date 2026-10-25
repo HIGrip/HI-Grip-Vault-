@@ -27,6 +27,13 @@ Wie wat beslist staat in de tabel hierboven; die tabel is de enige bron. Hier st
 - Voorstellen goedkeuren doet degene die volgens de tabel over dat onderwerp beslist. Bij de Website Agent zet die persoon zelf de laatste stap naar het live Shopify-theme (zie [[Goedkeuringsworkflow]]).
 - Het account lars@higrip.nl wordt door Lars gebruikt om bewust influencers te volgen (algoritme-strategie). De Influencer & Creator Agent houdt hier rekening mee.
 
+### Wie pakt een taak op (geen dubbel werk)
+- Een taak of voorstel voor Team HÏ Grip gaat naar alle drie (Lars, Tigo, Timo), niet naar één vaste persoon.
+- Wie het eerst oppakt, wordt aan de taak gekoppeld. Vanaf dat moment is het zijn taak; de anderen laten hem met rust.
+- De koppeling wordt direct vastgelegd en doorgegeven: de Operations Agent zet "opgepakt door" bij de taak in het dashboard (bij een voorstel: in *Wacht op akkoord*), en Denzel meldt het aan de rest en aan de betrokken agents. Een agent die een taak ziet met een naam erbij, stuurt niets meer naar de anderen.
+- Is een taak nog niet opgepakt, dan herinnert Denzel iedereen één keer; hij stapelt er geen nieuwe taak op.
+- Dit regelt wie het doet. Wie mag beslissen staat in de tabel hierboven: bij live zetten, prijzen, nieuwe producten, apps en AI-structuur kunnen alleen de daar genoemde personen oppakken.
+
 ## HÏ Grip in het kort
 Nederlands performance-sportswear merk, gestart vanuit passie voor sport. Draait om drie kernelementen: comfort, vertrouwen en innovatie. Kwaliteit boven kwantiteit, eerlijk verhaal zonder loze beloftes. Volledige versie: [[Brand Identity Overview]].
 

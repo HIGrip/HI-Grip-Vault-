@@ -41,15 +41,17 @@ Nederlands performance-sportswear merk, gestart vanuit passie voor sport. Draait
 Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/expertise, met social proof. Geen AI-hypetaal, geen geforceerde CTA's — kort, feitelijk, rustig, menselijk. Volledige versie: [[Brand Voice & Tone of Voice]].
 
 ## Doelgroep
-- **B2C** — de prestatiegerichte HÏ Grip sporter, in de kernsporten tennis/padel, voetbal en rugby (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026). Vooral relevant voor Content Agent en de B2C-kant van Website Agent.
+- **B2C** — de prestatiegerichte HÏ Grip sporter, in de kernsporten tennis/padel, voetbal en rugby (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026). Vooral relevant voor Social Agent en de B2C-kant van Website Agent.
 - **B2B** (HÏ Grip Zakelijk) — sportclubs en retail, met de kernsporten voorop. Pilates/sportscholen zijn sinds 17-9-2026 geen actief zoekdoel meer; bestaande klanten blijven klant. Vooral relevant voor Partnership Agent en de B2B-kant van Website Agent.
 - Volledige versie: [[Doelgroep & Persona's]].
 
 ## De agent-structuur
-- **Denzel**: alleen orchestrator, één aanspreekpunt voor Team HÏ Grip. Geen eigen sub-agents (sinds 21-10-2026). Elke hoofdagent heeft zijn eigen QA-agent (Website-QA, Content-QA, Partnership-QA); de Stafchef en de Vooruitblik-agent vallen onder de Operations Agent. QA-verdicten gaan naar de eigen hoofdagent, met altijd een kopie naar Denzel.
-- **Website Agent**: website, SEO, Shopify, e-mail. Sub-agents: SEO, Design, Website Copy, Conversie & Analyse, E-mail Marketing.
-- **Content Agent**: social content. Sub-agents: Content Strategie & Planning, Caption & Copy, Video & Visuele Productie, Content Maker, Socials Analyzer.
-- **Partnership Agent**: B2B-klanten, events en influencers. Sub-agents: Influencer & Creator, B2B Klanten, Partnerships & Events.
+- **Denzel**: alleen orchestrator, één aanspreekpunt voor Team HÏ Grip. Geen eigen sub-agents (sinds 21-10-2026). Elke hoofdagent met sub-agents heeft zijn eigen QA-agent (Website-QA, Content-QA, Partnership-QA). QA-verdicten gaan naar de eigen hoofdagent, met altijd een kopie naar Denzel.
+- **Social Agent** (voorheen Content Agent): social content. Sub-agents: Content Strategie & Planning, Caption & Copy, Video & Visuele Productie, Content Maker, Socials Analyzer, Content-QA.
+- **Partnership Agent**: B2B-klanten, events en influencers. Sub-agents: Influencer & Creator, B2B Klanten, Partnerships & Events, Partnership-QA.
+- **Website Agent**: website, SEO, Shopify, e-mail. Sub-agents: SEO, Website Copy, Conversie & Analyse, E-mail Marketing, Website-QA.
+- **Design Agent** (hoofdagent sinds 25-10-2026, voorheen sub-agent van de Website Agent): bepaalt en maakt de visuele uitwerking van de ideeën van Social en Website, zodat boodschap, gevoel en uitstraling per post of sectie in de juiste beelden landen en de HÏ Grip-stijl overal gelijk is. Ontwerp van e-mailmarketing valt hier ook onder.
+- **Operations Agent**: weekoverzichten, het dashboard, administratie, feedback en leerregels. Sub-agents: Stafchef en Vooruitblik-agent.
 - **Ads-tak**: nog niet uitgewerkt (zie [[Stappenplan — Verdere Bouw]]).
 
 Volledig schema: [[Agent Hiërarchie & Structuurschema]].

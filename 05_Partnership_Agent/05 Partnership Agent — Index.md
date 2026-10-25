@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # 05 Partnership Agent — Index
 
-> Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
+> Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers. Alles in deze map bouwt voort op de Brand Core: [[Feiten & Actuele Staat]].
 
 Terug naar [[Home]].
 

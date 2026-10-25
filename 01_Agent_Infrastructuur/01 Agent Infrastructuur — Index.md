@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # 01Agent Infrastructuur — Index
 
-> Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
+> Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts. Alles in deze map bouwt voort op de Brand Core: [[Feiten & Actuele Staat]].
 
 Terug naar [[Home]].
 

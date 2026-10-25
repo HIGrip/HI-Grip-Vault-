@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 04 Social Agent — Index
 
-> Kennisbank voor social content: copy, strategie en planning, visuele productie. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
+> Kennisbank voor social content: copy, strategie en planning, visuele productie. Alles in deze map bouwt voort op de Brand Core: [[Feiten & Actuele Staat]].
 
 Terug naar [[Home]].
 

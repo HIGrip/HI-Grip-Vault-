@@ -156,7 +156,7 @@ De Website Copy-agent leverde niets: zijn identiteitsbestand stond niet op het v
 
 ## Bronnen
 
-- [[Feiten & Actuele Staat]] · [[Performance Grip Socks 2.0]] · [[00 Brand Core]]
+- [[Feiten & Actuele Staat]] · [[Performance Grip Socks 2.0]] · [[Feiten & Actuele Staat]]
 - Live: `https://www.higrip.nl/products/<handle>.js` voor de drie handles, de gerenderde productpagina 1.0 en /collections/gripsokken (7-10)
 - Werkthema #201133490503, `sections/about-*` en `assets/about-*` (alleen lezen, via `shopify theme pull`)
 - Pitch/fotos: slide-11-lars, slide-11-tigo, slide-11-timo

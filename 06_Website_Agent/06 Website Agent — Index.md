@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # 06 Website Agent — Index
 
-> Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
+> Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail. Alles in deze map bouwt voort op de Brand Core: [[Feiten & Actuele Staat]].
 
 Terug naar [[Home]].
 

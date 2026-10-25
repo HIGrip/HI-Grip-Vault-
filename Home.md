@@ -1,62 +1,31 @@
-3# Home — HÏ Grip Vault
-
-> **Fundament: [[00 Brand Core]]** — elke notitie verwijst daarnaar terug.
->
-> Startpunt van de vault. De vault is de **bron van waarheid voor kennis** (merk, strategie, vakinhoud). De *uitvoerende* laag staat elders — zie "Waar staat wat" onderaan.
-
+---
+type: home
+bijgewerkt: 2026-10-25
 ---
 
-## De 6 mappen
+# Home — HÏ Grip Vault
 
-| Map | Waarvoor | Begin bij |
-|---|---|---|
-| **00_Brand_Core** | Merkfundament: verhaal, waarden, doelgroep, visuele identiteit, strategie. Alles verwijst hiernaar terug. | **[[00 Brand Core]]** · [[Brand Identity Overview]] |
-| **04_Social_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[04 Social Agent — Index]] · [[Content Strategie]] |
-| **05_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[05 Partnership Agent — Index]] · [[Partnership Strategie]] |
-| **06_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[06 Website Agent — Index]] · [[Website Doel & KPI's]] |
-| **01_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`Identiteit <Agent>.md`), hoe hij zich gedraagt (`Soul <Agent>.md`), en de gedeelde regels. | [[01 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
-| **02_Dashboard** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
+Bron van waarheid voor kennis. Open eerst de map-index die bij je taak past; lees daarna alleen de notitie die je nodig hebt. Feiten (prijzen, handles, claims): alleen [[Feiten & Actuele Staat]].
 
----
+Leidend voor merk en strategie: Canva *MERK & STRATEGIE — HÏ Grip* (30-9-2026): https://canva.link/a48n60z2ay1g7bp. Spreekt de vault dit tegen, dan wint Canva.
 
-## Kern-ingangen
+## De 9 blokken
 
-**Onderzoek**
-- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS — alle onderzoeken, routines en open acties; de bron is `02_Dashboard/` ([[Waar staat wat]])
+- **00_Brand_Core** — merkfundament
+  - [[Feiten & Actuele Staat]] · [[Brand Identity Overview]] · [[Brand Voice & Tone of Voice]] · [[Performance Grip Socks 2.0]]
+  - Strategie: [[Strategische Keuzes]] · [[Beachhead Strategie]] · [[Doelgroep & Persona's]]
+- **01_Agent_Infrastructuur** — hoe de agents werken → [[01 Agent Infrastructuur — Index]]
+- **02_Dashboard** — onderzoek, routines, weekoverzichten, actiebacklog → [[Waar staat wat]]
+- **03_Denzel** — orchestrator → [[03 Denzel — Index]]
+- **04_Social_Agent** — social content → [[04 Social Agent — Index]]
+- **05_Partnership_Agent** — B2B, events, influencers → [[05 Partnership Agent — Index]]
+- **06_Website_Agent** — higrip.nl: SEO, copy, techniek, conversie, e-mail → [[06 Website Agent — Index]]
+- **07_Design_Agent** — visuele uitwerking en stijl → [[07 Design Agent — Index]]
+- **08_Operations_Agent** — feedback, leerregels, kwaliteit, compliance → [[08 Operations Agent — Index]]
 
-**Merk** — alles begint bij [[00 Brand Core]]
-- **Leidend document (sinds 30-9-2026):** Canva *MERK & STRATEGIE — HÏ Grip* — https://canva.link/a48n60z2ay1g7bp. Spreekt de vault dit tegen, dan wint het Canva-document.
-- [[Brand Identity Overview]] — oerverhaal, missie, visie, waarden, pitch (enige plek)
-- [[Brand Voice & Tone of Voice]] — hoe HÏ Grip praat, core messages, slogans, productnamen
-- [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[Iconografie]] · [[Fotografie & Art-Direction]]
-- [[Brand Symbolen]] · [[Doelgroep & Persona's]] · [[Strategische Keuzes]] (marketingstrategie, kanalen, Performance Academy) · [[Beachhead Strategie]]
+Gedeeld: [[user]] (wie wij zijn, wie wat beslist, wie een taak oppakt) · `CLAUDE.md` · `SCHEMA.md` · `log.md`.
 
-**Product**
-- [[Performance Grip Socks 2.0]] — productwaarheid: specs, features, claims, designsysteem B2B (enige plek)
-
-**Compliance**
-- [[Compliance To-Do Lijst]] — alle NL/EU-verplichtingen (UPV, GPSR, claims, privacy) met waar en hoe
-
-**Agent-systeem**
-- [[CLAUDE]] — gedeelde instructies voor elke Claude in deze vault
-- [[02_Dashboard/Routines/README|Routines]] — rolverdeling en prompts van alle routines
-- [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
-- [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
-- [[user]] — gedeeld: wie de founders (Lars, Timo, Tigo) en HÏ Grip zijn
-- [[Stappenplan — Verdere Bouw]] — wat er nog gebouwd wordt · [[Feedback & Iteratie Log]] · [[Agent Werk & Kwaliteit Overzicht]]
-- Agent-profielen — wie (Identiteit-bestand) + gedrag (Soul-bestand):
-    - Content Agent: [[Identiteit Content Agent|identiteit]] · [[Soul Content Agent|soul]]
-    - Partnership Agent: [[Identiteit Partnership Agent|identiteit]] · [[Soul Partnership Agent|soul]]
-    - Website Agent: [[Identiteit Website Agent|identiteit]] · [[Soul Website Agent|soul]]
-    - Denzel (Orchestrator): [[Identiteit Denzel|identiteit]] · [[Soul Denzel|soul]]
-
-**Lopend werk**
-- [[Pipeline Tracker]] — B2B-outreach status
-- [[Influencer Database]] · [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] · [[Voorbeelden Gevonden Organisaties (Events)]]
-- [[Update Log]] — doorgevoerde website-wijzigingen
-- [[Denzel Weekoverzicht — Routine]] + map `Weekoverzicht/`
-
----
+Prototypes en thema-bestanden staan in `06_Website_Agent/Homepage-prototype/`: nooit scannen, alleen gericht openen.
 
 ## Waar staat wat (niet alles zit in de vault)
 
@@ -74,35 +43,3 @@
 | **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |
 
 > Let op: de vault linkt op een paar plekken naar memory-slugs (bv. `feedback_ig_script_sync`). Dat zijn geen vault-notities — het zijn regels die in Claude Code memory leven. Waar zo'n verwijzing belangrijk is, hoort de inhoud op termijn naar de vault verplaatst te worden.
-
----
-
-## Opschoonstatus (2026-10-02)
-
-Laatste ronde: vault-review van 02-10 (zie [[2026-10-02-vault-review]]); eerdere rondes 17-09 en 30-08.
-
-**Gedaan 2026-10-02**
-- Feiten, productwaarheid en sportgidsen gelijkgetrokken met het verzendbesluit van 25-09 (geen 22:00-belofte meer)
-- Thema-ID's alleen nog in [[Technische Procedures]]; oude ID's elders weggehaald of als historisch gemarkeerd
-- B2B-koers (geen pilates meer) en founders bijgewerkt in [[user]], [[Aanpak]] en [[Evaluatiecriteria (B2B Klanten)]]
-- Duplicaten weg: `Week 2026-09-21` (staat in `02_Dashboard/`), `Content Pillars — Buffer-tags` (staat in [[Content Pillars]]), `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]])
-- [[Concurrentieanalyse]] gevuld met wat de vault al wist
-
-**Gedaan 2026-09-17**
-- `02_Dashboard/` aangemaakt met 14 notities (migratie van SEO-audit, growth-radar-rapporten, regressiecheck, 4 Denzel-weekoverzichten, werkdossier, compliance-lijst, analytics-meetgat) + [[Waar staat wat]]
-- Research Dashboard gepubliceerd en gepind; procedure in `02_Dashboard/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `02_Dashboard/` (sinds 25-09 vervangen door het promptbestand [[Denzel-weekoverzicht]])
-- Oud werk uit `.claude\` naar `.claude\archief\` (README aanwezig); Claude-memory zonder Franklin Gothic, klantenaantal 3000+, verzenddrempel €35
-- [[Content Pillars]] (01_) aangevuld met de Buffer-tagkoppeling uit de 04_-kopie
-- Weekoverzichten t/m 2026-09-14 blijven in `02_Dashboard/Weekoverzichten/` als archief; nieuwe weken komen in `02_Dashboard/`
-
-**Gedaan 2026-08-30**
-- Losse `Naamloos*`-bestanden uit de root verwijderd
-- `.gitignore` toegevoegd; `.obsidian/workspace.json` niet meer getrackt
-- Kapotte wikilinks opgeruimd (op 3 na, in bestanden met niet-gecommitte wijzigingen)
-- Wees-notities aan een inbound-link geholpen
-- Lege notities voorzien van een eerlijke "nog te vullen"-status i.p.v. stilzwijgend leeg
-
-**Nog te doen — input van lars nodig**
-- **Lege notities invullen of verwijderen:** [[Testimonials & Social Proof]], [[Partnership Voorwaarden Template]], [[Product Pagina Gids]], [[Stock Bronnen]], [[Template Overzicht]] — nu placeholders, nog geen echte inhoud
-- ~~**Shopify `theme list` draaien**~~ — gedaan; de actuele thema-ID's staan alleen in [[Technische Procedures]].
-- **Rugby-sportgids:** concept staat klaar in [[Gripsokken voor rugby]]; nog een rugbyfoto en een check door een rugbyer nodig.

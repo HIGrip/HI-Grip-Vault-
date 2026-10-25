@@ -11,13 +11,13 @@ bijgewerkt: 2026-10-12
 ## Team HÏ Grip
 HÏ Grip heeft drie founders: **Lars, Tigo en Timo**, naast hun studie. Samen zijn zij **Team HÏ Grip**. Staat er in een agent-bestand "HÏ Grip beslist" of "Team HÏ Grip", dan bedoelen we deze drie mensen, niet het merk. Alle drie werken met Claude in deze vault.
 
-| Besluit | Wie |
-|---|---|
-| Live zetten op de website, prijzen, nieuwe producten, apps | Lars |
-| Aanpassingen aan de AI-structuur: agents, autonomie, grenzen, tools, modellen, routines | Lars en Timo |
-| Werk per kanaal (SEO, e-mail, organisch, ads, influencers, B2B, bol.com) | De kanaaleigenaren uit [[Strategische Keuzes]] |
-| Welk contentidee wordt uitgevoerd | Team HÏ Grip, in Buffer |
-| Outreach versturen, voorwaarden toezeggen, contracten afsluiten | Altijd een mens van Team HÏ Grip, nooit een agent |
+| Besluit                                                                                 | Wie                                               |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Live zetten op de website, prijzen, nieuwe producten, apps                              | Lars en Timo                                      |
+| Aanpassingen aan de AI-structuur: agents, autonomie, grenzen, tools, modellen, routines | Lars en Timo                                      |
+| Werk per kanaal (SEO, e-mail, organisch, ads, influencers, B2B, bol.com)                | De kanaaleigenaren uit [[Strategische Keuzes]]    |
+| Welk contentidee wordt uitgevoerd                                                       | Team HÏ Grip, in Buffer                           |
+| Outreach versturen, voorwaarden toezeggen, contracten afsluiten                         | Altijd een mens van Team HÏ Grip, nooit een agent |
 
 Wie wat doet per taak staat in het Canva-document *MERK & STRATEGIE* (leidend sinds 30-9-2026), uitgewerkt in [[Strategische Keuzes]] en [[Beachhead Strategie]].
 

@@ -21,11 +21,11 @@ HÏ Grip heeft drie founders: **Lars, Tigo en Timo**, naast hun studie. Samen zi
 
 Wie wat doet per taak staat in het Canva-document *MERK & STRATEGIE* (leidend sinds 30-9-2026), uitgewerkt in [[Strategische Keuzes]] en [[Beachhead Strategie]].
 
-## Lars
-Beslist over live zetten, prijzen, nieuwe producten en apps (zie de harde grenzen in `CLAUDE.md`).
-- Werkt het liefst met één aanspreekpunt (Denzel) dat weet welke hoofdagent — en sub-agent — een taak oppakt.
-- Keurt voorstellen goed; zet bij de Website Agent altijd zelf de laatste stap naar het live Shopify-theme (zie [[Goedkeuringsworkflow]]) en beslist altijd zelf over prijzen, nieuwe producten en apps.
-- Gebruikt zelf het account lars@higrip.nl om bewust influencers te volgen (algoritme-strategie) — de Partnership Agent/Influencer & Creator Agent houdt hier rekening mee.
+## Werkafspraken
+Wie wat beslist staat in de tabel hierboven; die tabel is de enige bron. Hier staat alleen hoe Team HÏ Grip het liefst werkt.
+- Eén aanspreekpunt: Denzel. Hij weet welke hoofdagent, en welke sub-agent, een taak oppakt.
+- Voorstellen goedkeuren doet degene die volgens de tabel over dat onderwerp beslist. Bij de Website Agent zet die persoon zelf de laatste stap naar het live Shopify-theme (zie [[Goedkeuringsworkflow]]).
+- Het account lars@higrip.nl wordt door Lars gebruikt om bewust influencers te volgen (algoritme-strategie). De Influencer & Creator Agent houdt hier rekening mee.
 
 ## HÏ Grip in het kort
 Nederlands performance-sportswear merk, gestart vanuit passie voor sport. Draait om drie kernelementen: comfort, vertrouwen en innovatie. Kwaliteit boven kwantiteit, eerlijk verhaal zonder loze beloftes. Volledige versie: [[Brand Identity Overview]].

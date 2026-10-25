@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Conversie Optimalisatie Checklist — HÏ Grip
 
-> Actiepunten uit live-audit www.higrip.nl, 2026-07-14. Achtergrond/redenering per punt: zie [[SEO Strategie & Keywords]] en [[Homepage Copy & Structuur]]. Status: **voorstel — nog niet doorgevoerd**, wacht op akkoord conform [[Agent Takenverdeling & Grenzen]].
+> Actiepunten uit live-audit www.higrip.nl, 2026-07-14. Achtergrond/redenering per punt: zie [[SEO Strategie & Keywords]] en [[Homepage Copy & Structuur]]. Status: **voorstel — nog niet doorgevoerd**, wacht op akkoord conform [[Agents Website Agent]].
 
 ---
 
@@ -139,6 +139,6 @@ Alle wijzigingen aan Shopify-code gaan via een apart/duplicate theme, nooit dire
 
 - [[SEO Strategie & Keywords]] — Onderbouwing SEO-punten
 - [[Homepage Copy & Structuur]] — Onderbouwing psychologie-punten
-- [[Agent Takenverdeling & Grenzen]] — Wie mag wat uitvoeren
+- [[Agents Website Agent]] — Wie mag wat uitvoeren
 
 > Map: [[06 Website Agent — Index]]

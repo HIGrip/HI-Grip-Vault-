@@ -52,7 +52,7 @@ Losse review op verzoek: hoe de vault gekoppeld is, wat dubbel staat, wat ontbre
 - **B2B-koers:** [[Aanpak]] zette pilates op 1, [[Evaluatiecriteria (B2B Klanten)]] en [[user]] noemden pilates als doel; pilates is op 17-9 gestopt. Rugbyclubs toegevoegd als clubtype.
 - **Founders:** [[user]] noemde Lars als enige opdrachtgever; er zijn drie founders.
 - **Achterhaalde waarden:** het SEO-actieplan (22:00, €30, 4 oprichters) en twee backlogpunten (prijzen van 24-9) gemarkeerd.
-- **Dubbel:** `Week 2026-09-21` (in 04 én 05), `Content Pillars — Buffer-tags` (opgenomen in [[Content Pillars]]) en `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]]) verwijderd; de tabel "Toon per kanaal" staat nog alleen in [[Brand Voice & Tone of Voice]].
+- **Dubbel:** `Week 2026-09-21` (in 04 én 05), `Agents Social Agent` (opgenomen in [[Content Pillars]]) en `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]]) verwijderd; de tabel "Toon per kanaal" staat nog alleen in [[Brand Voice & Tone of Voice]].
 - **Oude dashboard-URL** in [[Denzel Weekoverzicht — Routine]] vervangen.
 - **Rangorde bij tegenspraak** vastgelegd in `CLAUDE.md` (Canva voor merk, live voor operationele feiten, vault voor de rest).
 - **Routines-README:** `.claude/skills/` bestaat niet in de vault; `BEHEER.json`/`OPDRACHTEN.json` ontstaan pas bij de eerste dashboardactie. Nu zo beschreven.

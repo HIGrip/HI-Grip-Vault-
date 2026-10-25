@@ -7,7 +7,7 @@ status: concept — ter beoordeling door Lars
 
 # Toetsregels — gedeeld door de drie QA-agents
 
-> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Toetslijst Website-QA]], [[Toetslijst Content-QA]], [[Toetslijst Partnership-QA]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Kwaliteitscontrole]]. Het verdictformaat staat daar, niet hier.
+> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Agents Website Agent]], [[Agents Social Agent]], [[Agents Partnership Agent]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Kwaliteitscontrole]]. Het verdictformaat staat daar, niet hier.
 
 ## Wat een QA-agent is
 
@@ -31,7 +31,7 @@ Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Websit
 | 1 | **Feiten.** Elk getal, elke prijs, claim, URL, handle of beleidsregel staat in het feitenbestand. Wat niet te onderbouwen is, is gemarkeerd als **[LARS]** of weggelaten | [[Feiten & Actuele Staat]] |
 | 2 | **Merk.** HÏ Grip met trema in lopende tekst (in URL's en handles zonder). Je/jij, nooit u. Geen AI-openers ("Zeker!", "Natuurlijk!") en geen vulwoorden ("geweldig", "fantastisch"). Performance eerst, claims uit het feitenbestand | [[Brand Voice & Tone of Voice]] |
 | 3 | **Harde grenzen.** Niets naar het live thema gepusht. Geen prijzen, kortingen, voorraad, bestellingen of checkout aangepast. Geen verzonnen reviews, klantquotes, cijfers of keurmerken. Geen persoonsgegevens van klanten. Niets verstuurd of gepubliceerd namens HÏ Grip | `CLAUDE.md` sectie 5 |
-| 4 | **Niveau.** Is het een voorstel waar het een voorstel hoort te zijn? Is een "Altijd overleg vooraf"-onderdeel niet als uitgevoerd gepresenteerd? | de Soul van de hoofdagent ([[Soul Website Agent]], [[Soul Content Agent]] of [[Soul Partnership Agent]]) en [[Agent Takenverdeling & Grenzen]] |
+| 4 | **Niveau.** Is het een voorstel waar het een voorstel hoort te zijn? Is een "Altijd overleg vooraf"-onderdeel niet als uitgevoerd gepresenteerd? | de Soul van de hoofdagent ([[Agents Website Agent]], [[Agents Social Agent]] of [[Agents Partnership Agent]]) en [[Agents Website Agent]] |
 | 5 | **Succescriteria.** Is elk criterium gehaald en waaruit blijkt dat? | Briefing |
 | 6 | **Zelfcheck van de maker.** Staat er een zelfcheck met ✅ / ⚠️ / ❌ en bewijs? Geen zelfcheck is een bevinding | [[Opdrachtprotocol]] stap 4 |
 | 7 | **Strategie.** Past het bij de kernsporten tennis/padel, voetbal en rugby, en bij het Canva-document *MERK & STRATEGIE*? | [[Strategische Keuzes]] |

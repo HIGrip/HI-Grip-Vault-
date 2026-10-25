@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Technische Procedures — Website Agent
 
-> Hoe de agent daadwerkelijk in Shopify-code werkt. Voor wie dit mag beoordelen/goedkeuren: zie [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]]. Voor hoe de toegang tot stand kwam (en wat NIET werkte): zie [[API & Tool Connections]] in 01_Agent_Infrastructuur/Beheer.
+> Hoe de agent daadwerkelijk in Shopify-code werkt. Voor wie dit mag beoordelen/goedkeuren: zie [[Agents Website Agent]] en [[Goedkeuringsworkflow]]. Voor hoe de toegang tot stand kwam (en wat NIET werkte): zie [[API & Tool Connections]] in 01_Agent_Infrastructuur/Beheer.
 
 ---
 
@@ -94,7 +94,7 @@ Eerste keer dat deze procedure is toegepast — zie [[Conversie Optimalisatie Ch
 
 ## Gerelateerde bestanden
 
-- [[Agent Takenverdeling & Grenzen]] — Wie dit mag beoordelen/goedkeuren
+- [[Agents Website Agent]] — Wie dit mag beoordelen/goedkeuren
 - [[Goedkeuringsworkflow]] — Hoe een wijziging van test-theme naar live gaat
 - [[Conversie Optimalisatie Checklist]] — Inhoudelijke checklist die deze procedure uitvoert
 - [[Shopify App Stack]] — Overige technische basis (nog te vullen)

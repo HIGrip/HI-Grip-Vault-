@@ -55,7 +55,7 @@ Geen nieuwe bevestigingen in `CONTROLE.json` deze week (laatste `gedaan`-resulta
 
 ### Content-voorstel — Week 2026-10-05
 
-> Niveau: **Voorstellen, ik keur goed** ([[Agent Takenverdeling & Grenzen — Content Agent]] sectie A). Nog steeds een voorstel: niets gepubliceerd of in Buffer ingepland. Vijf nieuwe ideeën, bewust anders dan de ideeën van 21-09 en 28-09.
+> Niveau: **Voorstellen, ik keur goed** ([[Agents Social Agent]] sectie A). Nog steeds een voorstel: niets gepubliceerd of in Buffer ingepland. Vijf nieuwe ideeën, bewust anders dan de ideeën van 21-09 en 28-09.
 
 1. **Cijfer-reveal in beweging** (Pilaar 1 Performance, tag PERFORMANCE/LIFESTYLE/INFLUENCER) — slow-motion van een richtingsverandering (padel-volley, voetbal-schijnbeweging of rugby-sidestep) met een meelopende on-screen teller die van 0,60 naar 1,17 telt (de bevestigde wrijvingscoëfficiënt uit het feitenbestand, bron Apps et al. 2022). Psychologie: concreetheid — maakt een abstract getal (95% meer grip) voor het eerst letterlijk zichtbaar in plaats van alleen uitgesproken. Gebruik de verplichte formuleringsregel uit het feitenbestand (onderzoek over gripsokken in het algemeen, niet een eigen test).
 2. **Rugby-gat dichten** (Pilaar 1/3) — rugby is al sinds 16-9 beachhead-sport maar ontbreekt nog zichtbaar in content (Design Agent signaleerde dit al op 17-09 voor de homepage-sportgrid, nog steeds niet opgepakt — zie [[Agent Werk & Kwaliteit Overzicht]]). Voorstel: korte clip over richting veranderen/duwen op een natte ondergrond, vóór er nog meer tennis/voetbal-content bijkomt zonder rugby. Psychologie: consistentie tussen strategie (3 beachheads) en zichtbare content.

@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Goedkeuringsworkflow — Website Agent
 
-> Hoe voorstellen en wijzigingen van de Website Agent goedgekeurd worden voordat ze live gaan. Voor de volledige taakverdeling: zie [[Agent Takenverdeling & Grenzen]].
+> Hoe voorstellen en wijzigingen van de Website Agent goedgekeurd worden voordat ze live gaan. Voor de volledige taakverdeling: zie [[Agents Website Agent]].
 
 ---
 
@@ -24,13 +24,13 @@ De agent werkt altijd in het **"HÏ Grip website AI Workspace"**-theme, nooit re
 
 ## Overige categorieën
 
-Voor voorstellen buiten Shopify-code (copy, SEO-meta, vault-documentatie) geldt het niveau zoals vastgelegd in [[Agent Takenverdeling & Grenzen]] — "Voorstellen, ik keur goed" betekent: agent deelt het concept, lars keurt goed, pas dan gaat het verder (bv. daadwerkelijk in de vault-notitie zetten).
+Voor voorstellen buiten Shopify-code (copy, SEO-meta, vault-documentatie) geldt het niveau zoals vastgelegd in [[Agents Website Agent]] — "Voorstellen, ik keur goed" betekent: agent deelt het concept, lars keurt goed, pas dan gaat het verder (bv. daadwerkelijk in de vault-notitie zetten).
 
 ---
 
 ## Gerelateerde bestanden
 
-- [[Agent Takenverdeling & Grenzen]] — Volledige taakverdeling per categorie
+- [[Agents Website Agent]] — Volledige taakverdeling per categorie
 - [[Technische Procedures]] — Hoe de agent daadwerkelijk in het AI Workspace-theme werkt
 - [[Shopify App Stack]] — Technische basis van de theme-opzet
 

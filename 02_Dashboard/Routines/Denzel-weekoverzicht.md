@@ -47,7 +47,7 @@ Voeg gevonden kandidaten toe aan het juiste bestand, zonder dubbelingen met `Pip
 - **Eerst een contactpersoon** (afspraak 21-09): een kandidaat heet pas "outreach-klaar" als er een contactpersoon is gevonden. Voor kandidaten met een hoge score zonder contact doe je een kleine vervolgzoekactie naar contactgegevens.
 
 ## 2b. Partnership: kandidaten echt beoordelen (Zelf doen)
-Zie `Agent Takenverdeling & Grenzen — Partnership Agent.md` sectie B.
+Zie `Agents Partnership Agent.md` sectie B.
 1. Loop in beide "Voorbeelden Gevonden Organisaties"-bestanden alle kandidaten door zonder expliciete beoordeling (pass/fail + korte reden), of die er al langer dan 2 weken op wachten.
 2. Toets elke kandidaat tegen `Evaluatiecriteria (B2B Klanten).md` of `Voorwaarden Samenwerking.md`.
 3. Schrijf het resultaat direct bij de kandidaat: "Beoordeling: ✅ voldoet — [reden]" of "❌ voldoet niet — [reden]".
@@ -55,7 +55,7 @@ Zie `Agent Takenverdeling & Grenzen — Partnership Agent.md` sectie B.
 Dit blijft alleen beoordelen: nooit outreach versturen, nooit naar de Pipeline Tracker verplaatsen, nooit voorwaarden of kortingen bespreken. Het doel is dat Lars bij een ✅-kandidaat alleen nog de outreach-beslissing hoeft te nemen.
 
 ## 2c. Content Agent: wekelijks content-voorstel
-Niveau "Voorstellen, ik keur goed" (`Agent Takenverdeling & Grenzen — Content Agent.md` sectie A). Het blijft een voorstel: nooit publiceren, nooit in Buffer inplannen.
+Niveau "Voorstellen, ik keur goed" (`Agents Social Agent.md` sectie A). Het blijft een voorstel: nooit publiceren, nooit in Buffer inplannen.
 
 **Stapelrem (nieuw 01-10-2026):** controleer eerst of er al een onbeoordeeld content-voorstel openstaat. Kijk in de acties van het vorige weekoverzicht: staat er een `- [ ] P2 · Besluit: content-voorstel week …` die nog niet afgevinkt is? Dan maak je **geen nieuw voorstel**, maar schrijf je in het weekoverzicht: "Content-voorstel van [datum] staat nog open — ter beoordeling door Tigo/Lars vóór een nieuw voorstel gemaakt wordt." Zo houdt de stapel maximaal één voorstel tegelijk. Alleen als het vorige voorstel beoordeeld is (of ouder dan 3 weken zonder reactie — dan meld je het expliciet) maak je een nieuw voorstel aan.
 

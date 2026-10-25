@@ -7,7 +7,7 @@ beheer: Stafchef (03_Denzel)
 
 # Leerregels per Agent
 
-> Het geheugen van het agent-systeem. Sub-agents starten koud en onthouden niets; hier staat wat ze van eerdere opdrachten, correcties en reviews moeten weten. **Denzel bepaalt** welke regel er komt, volgens [[Opdrachtprotocol]] en [[Verbeterlus]]. **De [[Identiteit Stafchef|Stafchef]] legt hem vast** en houdt dit bestand overzichtelijk (besloten door Lars op 12-10-2026). Elke briefing bevat de relevante regels. Een leerregel versoepelt nooit een harde grens of autonomie-niveau.
+> Het geheugen van het agent-systeem. Sub-agents starten koud en onthouden niets; hier staat wat ze van eerdere opdrachten, correcties en reviews moeten weten. **Denzel bepaalt** welke regel er komt, volgens [[Opdrachtprotocol]] en [[Verbeterlus]]. **De [[Agents Operations Agent|Stafchef]] legt hem vast** en houdt dit bestand overzichtelijk (besloten door Lars op 12-10-2026). Elke briefing bevat de relevante regels. Een leerregel versoepelt nooit een harde grens of autonomie-niveau.
 
 **Zo vind je je regels:** lees altijd "Voor alle agents" plus de sectie met jouw naam. De volgorde volgt de structuur: Denzel, dan Website, Content, Partnership en Operations. De secties van de QA-agents, de Stafchef en de Vooruitblik-agent staan sinds 21-10-2026 nog onder de kop "Denzel en zijn vroegere team"; ze horen inhoudelijk bij hun nieuwe hoofdagent.
 

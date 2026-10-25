@@ -11,7 +11,7 @@ status: leidend — bouwplan op HERMES
 
 # Stappenplan — Agent-structuur verder bouwen op Hermes
 
-> Structuur van het team: [[Agent Hiërarchie & Structuurschema]]. Status per bestand: [[Agent Bestandsschema (Soul, Identiteit, User)]]. Besluit Lars 12-10-2026: **alle agents draaien in Hermes**.
+> Structuur van het team: [[Agent Hiërarchie & Structuurschema]]. Status per bestand: [[Agent Hiërarchie & Structuurschema]]. Besluit Lars 12-10-2026: **alle agents draaien in Hermes**.
 
 ## Zo past de vault op Hermes
 
@@ -19,7 +19,7 @@ status: leidend — bouwplan op HERMES
 |---|---|
 | Denzel (`03_Denzel/`) | Hoofdprofiel `denzel`. Zijn `SOUL.md` verwijst naar de vault; de definitie blijft in `Identiteit Denzel` en `Soul Denzel`. |
 | Website, Content, Partnership Agent | Eigen profielen `website`, `content`, `partnership`, elk met een korte `SOUL.md` |
-| Operations Agent (nieuw, 21-10-2026) | Nog geen profiel. Voorstel: profiel `operations` met [[Soul Operations Agent]] als bron |
+| Operations Agent (nieuw, 21-10-2026) | Nog geen profiel. Voorstel: profiel `operations` met [[Agents Operations Agent]] als bron |
 | Sub-agents (23, waaronder de drie QA-agents, Stafchef en Vooruitblik-agent sinds 21-10-2026) | Geen eigen proces: een `delegate_task`-briefing met alleen het pad naar de eigen Identiteit en Werkplek. Paden: skill `higrip-denzel`, `references/sub-agents.md` |
 | Basisregels, merk, harde grenzen | Skill `higrip-vault` (laadt bij elke HÏ Grip-taak) |
 | Routines | Nu: cloudroutines op info@ die naar `02_Dashboard/Routines/` verwijzen. Straks: Hermes-cronjobs op dezelfde promptbestanden |
@@ -86,6 +86,6 @@ De vault is leidend; skills en `SOUL.md` bevatten alleen paden en gedrag, nooit 
 
 ## Gerelateerde bestanden
 
-[[Agent Hiërarchie & Structuurschema]] · [[Agent Bestandsschema (Soul, Identiteit, User)]] · [[user]] · [[Opdrachtprotocol]] · [[Verbeterlus]] · [[Leerregels per Agent]] · [[Goedkeuringsworkflow]] · [[Routine-basisregels]]
+[[Agent Hiërarchie & Structuurschema]] · [[user]] · [[Opdrachtprotocol]] · [[Verbeterlus]] · [[Leerregels per Agent]] · [[Goedkeuringsworkflow]] · [[Routine-basisregels]]
 
 > Map: [[08 Operations Agent — Index]]

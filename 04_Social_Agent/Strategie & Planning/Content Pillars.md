@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Content Pillars — HÏ Grip
 
-> De 5 contentpilaren (formats; de 3 tags in Buffer staan in [[Content Pillars — Buffer-tags]], hoe die bij elkaar horen is nog een open vraag), content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
+> De 5 contentpilaren (formats; de 3 tags in Buffer staan in [[Agents Social Agent]], hoe die bij elkaar horen is nog een open vraag), content ideeën en de organische planning per platform. Voor platformstrategie: zie [[Platform Richtlijnen]]. Voor doelgroepen: zie [[Doelgroep & Persona's]].
 
 > **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** content richt zich op de HÏ Grip sporter in de drie kernsporten **tennis/padel, voetbal en rugby** — zie [[Doelgroep & Persona's]] en [[Beachhead Strategie]]. Voorbeelden die andere sporten noemen (hockey, pilates) blijven bruikbaar als format-idee, maar vertaal ze naar een kernsport.
 

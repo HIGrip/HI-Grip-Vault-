@@ -33,10 +33,11 @@ Denzel heeft alleen hoofdagents onder zich (sinds 21-10-2026):
 
 | Hoofdagent | Sub-agents, waaronder het vroegere team van Denzel |
 |---|---|
-| [[Identiteit Website Agent\|Website Agent]] | vijf makers en [[Identiteit Website-QA\|Website-QA]] |
-| [[Identiteit Content Agent\|Content Agent]] | vijf makers en [[Identiteit Content-QA\|Content-QA]] |
-| [[Identiteit Partnership Agent\|Partnership Agent]] | drie makers en [[Identiteit Partnership-QA\|Partnership-QA]] |
-| [[Identiteit Operations Agent\|Operations Agent]] | [[Identiteit Stafchef\|Stafchef]] en [[Identiteit Vooruitblik-agent\|Vooruitblik-agent]] |
+| [[Agents Website Agent\|Website Agent]] | vier makers (SEO, Website Copy, Conversie & Analyse, E-mail Marketing) en Website-QA |
+| [[Agents Social Agent\|Social Agent]] | vijf makers en Content-QA |
+| [[Agents Partnership Agent\|Partnership Agent]] | drie makers en Partnership-QA |
+| [[Agents Design Agent\|Design Agent]] | visuele uitwerking voor Social en Website (QA nog voorstel) |
+| [[Agents Operations Agent\|Operations Agent]] | Stafchef en Vooruitblik-agent |
 
 QA-verdicten gaan naar de eigen hoofdagent en altijd als kopie naar Denzel. Gedeelde toetsregels: [[Toetsregels]].
 

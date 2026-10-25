@@ -62,7 +62,7 @@ Open P1-punten op `handmatig` (uit `CONTROLE.json`, werk voor Lars, niet voor ee
 
 **Content-voorstel — Week 2026-09-28**
 
-> Niveau: **Voorstellen, ik keur goed** ([[Agent Takenverdeling & Grenzen — Content Agent]] sectie A). Nog steeds een voorstel: niets gepubliceerd of in Buffer ingepland. Vier nieuwe ideeën, bewust anders dan de 5 ideeën van 21-09 (die nog beoordeeld moeten worden — zie Acties).
+> Niveau: **Voorstellen, ik keur goed** ([[Agents Social Agent]] sectie A). Nog steeds een voorstel: niets gepubliceerd of in Buffer ingepland. Vier nieuwe ideeën, bewust anders dan de 5 ideeën van 21-09 (die nog beoordeeld moeten worden — zie Acties).
 
 1. **"Voor de aftrap"-swaptest** (Pilaar 1 Performance, tag PERFORMANCE/LIFESTYLE/INFLUENCER) — vlak vóór de aftrap/opslag/aftrap in tennis/rugby/voetbal een sokwissel in beeld: vóór met gewone sokken twijfelen op de ondergrond, na de wissel direct zeker starten. Psychologie: priming — de kijker ziet het beslismoment op het moment dat het telt, niet achteraf in een studio-opstelling.
 2. **UGC-oproep bij de "3000+ sporters"-claim** (Pilaar 3 Story, social proof) — actieve oproep aan bestaande klanten (e-mail + social) om 5-10 sec. wedstrijdclips met HÏ Grip te delen; beste clips terugposten, met een kleine bedank-actie richting hun club. Psychologie: reciprocity + social proof, en maakt de al langer voorgestelde testimonial-serie (21-09, idee 3) concreet uitvoerbaar in plaats van alleen "verzamelen".

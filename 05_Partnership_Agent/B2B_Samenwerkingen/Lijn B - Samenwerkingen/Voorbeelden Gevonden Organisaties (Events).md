@@ -7,7 +7,7 @@ bijgewerkt: 2026-10-01
 # Voorbeelden Gevonden Organisaties (Events) — Lijn B
 
 > Status: **goedgekeurde kandidaten** — nog niet benaderd. Dienen als kalibratie: zo ziet een goede match eruit. Zodra outreach start, verplaatsen naar [[Pipeline Tracker]]. Voor redenen waarom andere organisaties NIET goedgekeurd zijn: zie [[Voorwaarden Samenwerking]] (uitsluitingen).
-> **Beoordelingsronde (21-09-2026, Denzel, mandaat "Zelf doen" — zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] sectie B):** elke kandidaat zonder expliciete beoordeling hieronder getoetst tegen [[Voorwaarden Samenwerking]] en de beachhead-prioriteit (tennis/rugby/voetbal). Dit is uitsluitend een beoordeling — geen outreach, geen verplaatsing naar Pipeline Tracker, geen voorwaarden besproken. Bij een ✅ hoeft lars alleen nog het outreach-besluit te nemen. Zoekactie deze week (lijst was 14 dagen oud, zie [[Zoek Script & Gids (Samenwerkingen)]]) leverde 1 nieuwe kandidaat op: Rotterdam Cup (rugby, onderaan HOOG).
+> **Beoordelingsronde (21-09-2026, Denzel, mandaat "Zelf doen" — zie [[Agents Partnership Agent]] sectie B):** elke kandidaat zonder expliciete beoordeling hieronder getoetst tegen [[Voorwaarden Samenwerking]] en de beachhead-prioriteit (tennis/rugby/voetbal). Dit is uitsluitend een beoordeling — geen outreach, geen verplaatsing naar Pipeline Tracker, geen voorwaarden besproken. Bij een ✅ hoeft lars alleen nog het outreach-besluit te nemen. Zoekactie deze week (lijst was 14 dagen oud, zie [[Zoek Script & Gids (Samenwerkingen)]]) leverde 1 nieuwe kandidaat op: Rotterdam Cup (rugby, onderaan HOOG).
 
 ---
 

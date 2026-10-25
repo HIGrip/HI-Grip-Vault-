@@ -44,7 +44,7 @@ bijgewerkt: 2026-10-01
 
 **Limieten:** ~10.000 requests/dag, ~1 GB/dag, ~2 gelijktijdige queries per IP. Ruim voldoende voor on-demand leadonderzoek.
 
-**Testresultaten (17-9):** beachhead-query (tennis/rugby/voetbal) in regio Rotterdam gaf **103 clubs — 77 voetbal, 19 tennis, 1 rugby — 43 met website**. Eerdere technische test op sportscholen: 71 resultaten. **Mirror is traag en wisselend:** zelfde query slaagde één keer en liep een andere keer na 50 s in een time-out — gebruik `--max-time 180` en probeer opnieuw bij een lege response. Rugby staat dun in OSM; aanvullen met websearch. Volledige query staat in [[Identiteit Partnership Agent]] van de Partnership Agent, sectie B2B Klanten Agent.
+**Testresultaten (17-9):** beachhead-query (tennis/rugby/voetbal) in regio Rotterdam gaf **103 clubs — 77 voetbal, 19 tennis, 1 rugby — 43 met website**. Eerdere technische test op sportscholen: 71 resultaten. **Mirror is traag en wisselend:** zelfde query slaagde één keer en liep een andere keer na 50 s in een time-out — gebruik `--max-time 180` en probeer opnieuw bij een lege response. Rugby staat dun in OSM; aanvullen met websearch. Volledige query staat in [[Agents Partnership Agent]] van de Partnership Agent, sectie B2B Klanten Agent.
 
 **Wat OSM niet geeft:** e-mailadressen, reviews, ratings. E-mail ophalen gaat via de `website`-URL uit het resultaat, met WebFetch.
 
@@ -181,7 +181,7 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 | Planlimieten | 3 kanalen, 10 geplande posts, 3 tags, 100 ideeën |
 | Tools | `get_account`, `list_channels`, `get_channel`, `list_posts`, `get_post`, `create_post`, `edit_post`, `delete_post`, `list_idea_groups`, `list_ideas`, `create_idea`, `get_aggregated_post_metrics`, `list_post_templates` + `get_` / `create_` / `update_` / `delete_post_template`, `introspect_schema`, `execute_query`, `execute_mutation` |
 
-**Grens:** publiceren blijft **"altijd overleg vooraf"** — de Content Agent mag posts/ideeën opstellen, plannen en analytics lezen, maar zet nooit zelf de publiceer-stap (zie [[Soul Content Agent]] en [[Agent Takenverdeling & Grenzen — Content Agent]]). `create_post` als directe publish-actie en `delete_post` alleen na akkoord van lars.
+**Grens:** publiceren blijft **"altijd overleg vooraf"** — de Content Agent mag posts/ideeën opstellen, plannen en analytics lezen, maar zet nooit zelf de publiceer-stap (zie [[Agents Social Agent]]). `create_post` als directe publish-actie en `delete_post` alleen na akkoord van lars.
 
 **Sluit twee bekende blockers:**
 - "Buffer ✗" uit de kritische kwaliteitsreview van 25-08 → nu de 2e van de 3 ontbrekende feedbackbronnen dicht (GA4 ✅ / Buffer ✅ / volledige Shopify-data ✗).
@@ -194,7 +194,7 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 > Voor de B2B-tak wordt **Bigin by Zoho CRM** gebruikt. De Partnership Agent / sub-agent **B2B Klanten Agent** (Lijn A) krijgt hier toegang toe zodat hij ziet wat het team met de aangedragen leads doet. Lars zet de MCP-koppeling zelf op; deze notitie legt het rechtenmodel en de sloten vast.
 
 **Waarvoor de Partnership Agent Bigin gebruikt:**
-- **Meelezen** — contacten, bedrijven, pipeline/deals + stages, taken, events, calls, notities. Voedt o.a. de wekelijkse pipeline-rapportage aan lars (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] sectie E).
+- **Meelezen** — contacten, bedrijven, pipeline/deals + stages, taken, events, calls, notities. Voedt o.a. de wekelijkse pipeline-rapportage aan lars (zie [[Agents Partnership Agent]] sectie E).
 - **Prospects toevoegen** — nieuwe potentiële klanten aan het **begin van de funnel** aanmaken (nieuw contact / bedrijf / pipeline-record in de eerste stage van de intake-pipeline).
 
 **Rechtenmodel — lezen alles, aanmaken alleen top-of-funnel, verder niets:**
@@ -226,9 +226,9 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 **Open beslissing — waar landen agent-prospects:**
 - **A (aanbeveling)** — aparte pipeline "Prospecting" / "Nieuwe leads", zodat agent-invoer gescheiden blijft van deals waar het team aan werkt.
 - **B** — eerste stage van de bestaande B2B-pipeline.
-- Bepaalt de exacte profiel-config en de instructie in de [[Soul Partnership Agent]].
+- Bepaalt de exacte profiel-config en de instructie in de [[Agents Partnership Agent]].
 
-**Gedragsregel** (staat ook in de [[Soul Partnership Agent]]): altijd eerst zoeken, alleen aanmaken als geen duplicaat; nieuwe records altijd in de eerste stage; nooit bestaande records aanraken. Sluit aan op de bestaande grens "outreach versturen = overleg vooraf".
+**Gedragsregel** (staat ook in de [[Agents Partnership Agent]]): altijd eerst zoeken, alleen aanmaken als geen duplicaat; nieuwe records altijd in de eerste stage; nooit bestaande records aanraken. Sluit aan op de bestaande grens "outreach versturen = overleg vooraf".
 
 ---
 
@@ -290,7 +290,7 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 ## Gerelateerde bestanden
 
 - [[Agent Hiërarchie & Structuurschema]]
-- [[Agent Bestandsschema (Soul, Identiteit, User)]]
+- [[Agent Hiërarchie & Structuurschema]]
 - [[Technische Procedures]] — De uiteindelijke werkende procedure (Shopify CLI + native login) die uit dit hele uitzoekproces kwam
 
 > Map: [[01 Agent Infrastructuur — Index]]

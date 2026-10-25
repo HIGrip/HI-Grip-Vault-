@@ -183,7 +183,7 @@ deadline: ""
 - Obsidian over synchroniseren: https://obsidian.md/help/sync-notes
 - Niet geopend (403), alleen zoekresultaat: https://aiweekly.co/alerts/markdown-agent-memory-accumulates-prompt-debt
 - Eigen metingen op 2-10-2026: scan van alle Markdown-notities (links, frontmatter, grootte, vervallen waarden, geheimen), `git fsck`, `git log` over 400 commits en `.obsidian/plugins/obsidian-git/data.json`
-- [[Agent Bestandsschema (Soul, Identiteit, User)]] voor de opzet van identiteit en soul
+- [[Agent Hiërarchie & Structuurschema]] voor de opzet van identiteit en soul
 
 ## Aantekeningen
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: het besluit 'waar staat de vault' gaat uit van OneDrive (C:\Users\Test\OneDrive\…). Op de pc van Lars staat de werkende vault in C:\Users\lars\Documents\ObsidianVault (git); de OneDrive-kopie daar is van juli en verouderd. Dat maakt de actie 'paden vault-relatief maken' belangrijker.

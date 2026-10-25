@@ -7,48 +7,46 @@
 | Wat | Waar |
 |---|---|
 | **Feiten** (prijzen, handles, URL's, ID's, verzending, claims) | `00_Brand_Core/Feiten & Actuele Staat.md`. **Lees dit eerst.** Zet feiten nooit in een prompt. |
-| Productwaarheid 2.0 (maten, EAN, B2B-prijzen) | `00_Brand_Core/Product/Performance Grip Socks 2.0.md` |
-| Merk en strategie (verhaal, stem, kleuren, design, kanalen) | **Leidend: Canva-document *MERK & STRATEGIE — HÏ Grip*** (https://canva.link/a48n60z2ay1g7bp). Uitgewerkt in `00_Brand_Core/`, begin bij `00 Brand Core.md`. |
+| Productwaarheid 2.0 (maten, EAN, B2B-prijzen) | `00_Brand_Core/Performance Grip Socks 2.0.md` |
+| Merk en strategie (verhaal, stem, kleuren, design, kanalen) | **Leidend: Canva-document *MERK & STRATEGIE — HÏ Grip*** (https://canva.link/a48n60z2ay1g7bp). Uitgewerkt in `00_Brand_Core/`; begin bij `Home.md`. |
 | Onderzoek (alle routines + losse onderzoeken) | `02_Dashboard/`. De procedure staat in `02_Dashboard/_build/PROCEDURE.md`. |
 | Acties (één backlog) | `02_Dashboard/_backlog/ACTIEBACKLOG.md` |
 | Geheugen van de routines | `02_Dashboard/_geheugen/`. De regels staan in `_geheugen/README.md`. |
 | Research Dashboard | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (bron: `02_Dashboard/`) |
-| Agent-systeem (Denzel + hoofdagents) | `01_Agent_Infrastructuur/` |
+| Agent-systeem: hoe elke hoofdagent werkt (`Agents <naam>.md`) | `01_Agent_Infrastructuur/` (Denzel: `03_Denzel/`) |
+| Vakkennis per agent | `04_Social_Agent/`, `05_Partnership_Agent/`, `06_Website_Agent/`, `07_Design_Agent/`; feedback, leerregels, kwaliteit en compliance: `08_Operations_Agent/` |
 | Routine-prompts | `02_Dashboard/Routines/` |
 
 De vault is de bron van waarheid. Spreekt iets anders (een geheugenbestand, een oud document, je eigen kennis) de vault tegen, dan wint de vault. Spreekt de live site de vault tegen, meld dat dan en werk de vault bij.
 
 Rangorde bij tegenspraak:
 1. **Merk en strategie:** het Canva-document *MERK & STRATEGIE* wint van de vault (werk de vault bij).
-2. **Operationele feiten** (prijzen, voorraad, thema-ID's): de live waarde wint van het feitenbestand (meld het en werk het bestand bij). Besluiten van Lars die nog niet live staan, gelden als de vastgestelde waarde; de live afwijking is dan een actie.
+2. **Operationele feiten** (prijzen, voorraad, thema-ID's): de live waarde wint van het feitenbestand (meld het en werk het bestand bij). Besluiten van Team HÏ Grip die nog niet live staan, gelden als de vastgestelde waarde; de live afwijking is dan een actie.
 3. **Al het andere:** de vault wint van geheugenbestanden, oude documenten en je eigen kennis. Binnen de vault winnen de Brand Core en het feitenbestand van de overige mappen.
 
 ## 2. Identiteit
 
-- **HÏ Grip**, altijd met trema op de Ï (in URL's en handles zonder: `higrip.nl`, `@higrip.nl`). Een Nederlands performance sportswear merk, te beginnen met de Performance Grip Socks; Performance Tubes en Performance Ski Socks (ALPINE PRO) komen binnenkort, zonder datum.
-- Missie: "Wij versnellen de beweging van iedere sporter." Kernwaarden: comfort, vertrouwen, innovatie.
-- Doelgroep: de prestatiegerichte sporter; kernsporten tennis/padel, voetbal, rugby. B2B (HÏ Grip Zakelijk): retail en sportclubs.
-- Primaire tagline: "Ga door waar anderen stoppen." Vaste slogans o.a. "More grip, better performance."
-- Productnamen: in communicatie PERFORMANCE GRIP SOCKS (2.0); op higrip.nl PERFORMANCE GRIPSOKKEN (2.0).
-- Taal: Nederlands voor alle consumentgerichte tekst, met moderne Engelse woorden (performance, winning, on fire, play); Engels mag voor code-comments.
+- **HÏ Grip**, altijd met trema op de Ï (in URL's en handles zonder: `higrip.nl`, `@higrip.nl`).
+- Verhaal, missie, waarden, doelgroep en productnamen: [[Brand Identity Overview]], [[Brand Voice & Tone of Voice]], [[Performance Grip Socks 2.0]]. Feiten (prijzen, handles, ID's, claims) alleen in [[Feiten & Actuele Staat]].
+- Taal: Nederlands voor alle consumentgerichte tekst, met moderne Engelse woorden; Engels mag voor code-comments.
 
 ## 3. Tone of voice
 
-- Direct en informeel: altijd "jij/je", nooit "u".
-- Energiek, sportief, modern en jong; ondersteunend als expert ("Wij leggen de basis, jij presteert.").
-- Performance eerst: noem de meetbare claim vóór het comfort. Gebruik alleen claims uit het feitenbestand.
-- Sportspecifiek jargon per sport (padel, voetbal, tennis, rugby, pilates).
-- Geen AI-openers ("Zeker!", "Natuurlijk!") en geen vulwoorden ("geweldig", "fantastisch").
+Volledig: [[Brand Voice & Tone of Voice]]. Harde regels voor alle tekst:
+- Altijd "jij/je", nooit "u". Direct, energiek, sportief; ondersteunend als expert.
+- Performance eerst: noem de meetbare claim vóór het comfort. Alleen claims uit het feitenbestand.
+- Geen AI-openers ("Zeker!", "Natuurlijk!") en geen vulwoorden ("geweldig", "fantastisch"). Geen gedachtestreepjes (— of –) of pijltjes in tekst voor buiten.
 
 ## 4. Visueel
 
-- Merkkleuren: primair zwart `#0A0A0A` en wit `#FFFFFF`; grijzen titanium `#909194` (tekst op zwart), onyx `#111111` en carbon black `#1A1A1A`; accenten per kernsport: volt `#CCFF00` (voetbal, hoofdaccent), royal blue `#0011A7` (padel), pumpkin `#FF6A00` (tennis), tangerine `#E10600` (rugby). Trustpilot-groen `#00b67a` alleen voor review-sterren.
-- Font: **alleen Poppins**. H1 Black Italic 900, H2 ExtraBold 800, H3 Bold 700, caption/label SemiBold 600: altijd in HOOFDLETTERS. Koppen tracking −0,04 em, body Regular 400 met −0,02 em. Nooit Franklin Gothic, Impact of serif.
-- CTA: een pill met chevron, zwart op wit of wit op zwart. Nooit gevuld met een accentkleur.
+Volledig: [[Logo & Kleurenpalet]], [[Design Elementen]], [[Iconografie]]. Harde regels:
+- Alleen het font Poppins; nooit Franklin Gothic, Impact of serif.
+- CTA is een pill met chevron, zwart op wit of wit op zwart; nooit gevuld met een accentkleur.
+- Trustpilot-groen alleen voor review-sterren.
 
 ## 5. Harde grenzen
 
-- **Nooit naar het live Shopify-thema pushen** zonder expliciete opdracht van Lars. Thema-ID's wisselen: draai altijd eerst `shopify theme list`.
+- **Nooit naar het live Shopify-thema pushen** zonder expliciete opdracht van wie volgens [[user]] over live zetten beslist. Thema-ID's wisselen: draai altijd eerst `shopify theme list`.
 - Nooit prijzen, kortingen, voorraad, bestellingen of checkout-instellingen wijzigen.
 - Nooit reviews, klantquotes, cijfers of keurmerken verzinnen. Geen `aggregateRating` zonder echte, zichtbare reviews op de site.
 - Geen persoonsgegevens van klanten in notities of rapporten; alleen totalen (AVG).
@@ -78,8 +76,9 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
   Wordt die push geweigerd, stop dan en meld het in je eindbericht, met de naam van de branch waar je werk nu staat.
 - Commitberichten in het Nederlands, kort: `research: <id> geregistreerd`, `feiten: <wat> bijgewerkt`.
 
-## 9. Links en Brand Core (verplicht)
+## 9. Links (mindmap)
 
-- De Brand Core is het fundament: `00_Brand_Core/00 Brand Core.md` is het hoofdbestand. Elke notitie verwijst ernaar via één navigatieregel die begint met `> **Brand Core (00):**` en linkt naar de Brand Core, de kernbestanden en de index van de eigen map.
-- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "01_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`), zet onder elke kennisnotitie uit 00–04 een automatische sectie "Gerelateerd onderzoek" met de onderzoeksnotities die ernaar linken, en meldt welke notities nog zonder inkomende link zijn. Wil je dat een onderzoek bij een kennisnotitie verschijnt, link er dan naar in de body van je notitie.
-- Bewerk de automatische secties ("Alle notities in deze map" in een index, "Gerelateerd onderzoek" onder een kennisnotitie) niet met de hand.
+- De vault is een mindmap, geen web: elke notitie heeft precies één navigatieregel `> Map: [[<index van de eigen map>]]` (Brand Core en de indexen: `[[Home]]`). Verder linkt een notitie alleen naar een andere als een agent de informatie daar moet ophalen. Zo lees je niet onnodig veel.
+- Startpunt: [[Home]] → map-index → gericht zoeken. Hoe een agent werkt: het bestand `Agents <naam>.md` in `01_Agent_Infrastructuur/`; dat verwijst zelf naar Feiten en Tone of voice.
+- Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "01_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de compacte lijst in elke map-index bij en meldt notities zonder inkomende link. Het voegt geen onderzoeksverwijzingen meer toe.
+- Bewerk de automatische sectie "Alle notities in deze map" in een index niet met de hand.

@@ -57,6 +57,6 @@ Zoveel mogelijk bezoekers van www.higrip.nl omzetten in zoveel mogelijk omzet, m
 - [[Analytics & KPI Dashboard]] — KPI-cijfers (nog leeg, toegang vanaf 2026-08-01)
 - [[Conversie Optimalisatie Checklist]] — Huidige audit-actiepunten
 - [[Brand Identity Overview]] — Merkverhaal en waarden
-- [[Agent Takenverdeling & Grenzen]] — Wie mag wat uitvoeren
+- [[Agents Website Agent]] — Wie mag wat uitvoeren
 
 > Map: [[06 Website Agent — Index]]

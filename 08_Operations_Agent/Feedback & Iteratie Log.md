@@ -41,8 +41,8 @@ bijgewerkt: 2026-10-01
 **Wat er gebeurde:** lars merkte dat Denzel's wekelijkse routine (`trig_01D9XwMiVvuq1FWr7CLoYTmN`) technisch prima draaide (elke maandag succesvol, pusht ook echt naar GitHub — de eerdere push-blokkade uit augustus speelt niet meer), maar inhoudelijk elke week hetzelfde deed: zelfde 3 open punten steeds opnieuw signaleren (structured data 2 weken kapot op live, SEO-meta-voorstel 4 weken op de plank, 6 partnership-kandidaten 3 weken onbeoordeeld) zonder er zelf iets mee te doen.
 
 Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autonomie die simpelweg niet in de routine gebruikt werd — geen nieuw autonomie-besluit nodig, alleen de routine-prompt bijwerken:
-- **Partnership Agent**: "Kandidaat beoordelen tegen Evaluatiecriteria/Ideale Partner Profiel" staat al op Zelf doen (zie [[Agent Takenverdeling & Grenzen — Partnership Agent]] sectie B).
-- **Website Agent**: "Meta title/description & structured data" staat al op Zelf doen (zie [[Agent Takenverdeling & Grenzen]] sectie B) — maar de cloud-routine heeft geen Shopify-inloggegevens/CLI-toegang, dus kan niet zelf pushen. Oplossing: Denzel schrijft nu de kant-en-klare fix (exacte HTML/JSON-LD) uit in het weekoverzicht, zodat een lokale sessie het zonder heruitzoeken kan doorvoeren.
+- **Partnership Agent**: "Kandidaat beoordelen tegen Evaluatiecriteria/Ideale Partner Profiel" staat al op Zelf doen (zie [[Agents Partnership Agent]] sectie B).
+- **Website Agent**: "Meta title/description & structured data" staat al op Zelf doen (zie [[Agents Website Agent]] sectie B) — maar de cloud-routine heeft geen Shopify-inloggegevens/CLI-toegang, dus kan niet zelf pushen. Oplossing: Denzel schrijft nu de kant-en-klare fix (exacte HTML/JSON-LD) uit in het weekoverzicht, zodat een lokale sessie het zonder heruitzoeken kan doorvoeren.
 - **Content Agent**: content-ideeën/kalender staat op "Voorstellen, ik keur goed" (niet geblokkeerd) — automatisering hiervan lag bewust stil omdat lars dit eerst intern met de content-afdeling wilde afstemmen. Lars heeft deze hold op 2026-09-14 zelf opgeheven; dus vanaf nu wekelijks een concreet content-voorstel (nog steeds ter goedkeuring, nooit direct gepubliceerd).
 
 **Wat is aangepast:** routine-prompt bijgewerkt via `RemoteTrigger update` (stappen 2b/2c/4b toegevoegd) — zelfde trigger_id, geen dubbele routine aangemaakt. Harde grenzen (nooit outreach, nooit publiceren, nooit live pushen, nooit voorwaarden toezeggen) blijven ongewijzigd.
@@ -171,6 +171,6 @@ Bij het uitzoeken bleek: op 2 van de 3 punten had Denzel *al* "Zelf doen"-autono
 
 - [[Stappenplan — Verdere Bouw]]
 - [[Agent Hiërarchie & Structuurschema]]
-- [[Agent Bestandsschema (Soul, Identiteit, User)]]
+- [[Agent Hiërarchie & Structuurschema]]
 
 > Map: [[08 Operations Agent — Index]]

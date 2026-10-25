@@ -11,7 +11,7 @@ status: geldend (door Lars in gebruik genomen 2026-10-09)
 
 ## Autonomie per taak
 
-Grenzenformulier ingevuld door Lars op 19 augustus 2026, zelfde format als [[Agent Takenverdeling & Grenzen]].
+Grenzenformulier ingevuld door Lars op 19 augustus 2026, zelfde format als [[Agents Website Agent]].
 
 | Taak | Niveau |
 |---|---|

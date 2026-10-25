@@ -9,17 +9,14 @@ Elke routine heeft hier één geheugenbestand. Omdat het in de vault staat (git)
 | `actiecontrole.md` | Actiecontrole: welke controlemethode per soort actie werkt, wat niet te controleren is |
 | `growth-radar.md` | Growth Radar: behandelde onderwerpen (anti-herhaling) |
 | `uitvoerder.md` | Uitvoerder: uitgevoerde opdrachten en werkwijzen die werkten |
-| `seo-regressiecheck.md` | SEO-regressiecheck: wat per URL is gecontroleerd, openstaande afwijkingen |
-| `seo-conversietest.md` | SEO- en conversietest: gebouwde items, testplannen, evaluatiedata |
+| `seo.md` | SEO (vier modules): per module URL-lijst en afwijkingen, kerncijfers en keywords, gebouwde items en testplannen, linkinventaris en Merchant-stand |
 | `denzel-week.md` | Denzel-weekoverzicht: wat is gesignaleerd en hoe lang het al openstaat |
-| `search-console.md` | Search Console & rankings: kerncijfers per week, behandelde keywords en kansen |
 | `verbanden.md` | Verbanden & kansen: gegeven kansen, maandedities, opgepakte kansen naar de backlog |
 | `klantstem.md` | Klantstem: thema's (klachten en wensen) en de bronrotatie |
 | `website-ux.md` | Website-UX: voorstellen per paginatype en welk type aan de beurt is |
 | `productradar.md` | Productradar: behandelde kansen en hun uitkomst |
 | `concurrentie.md` | Concurrentie-monitor: laatste prijzen, gemelde producten, pagina's en ads, rotatie |
 | `materialen.md` | Materialen & productie: gevolgde deadlines en het diepte-onderwerp aan de beurt |
-| `backlinks-merchant.md` | Backlinks & Merchant Center: linkinventaris en Merchant-stand |
 | `strategie-maand.md` | Vervallen: opgegaan in `verbanden.md` (maandeditie van Verbanden & kansen) |
 
 ## De vaste geheugenregel (geldt voor élke routine)

@@ -179,10 +179,8 @@ Alleen Verbanden & kansen schrijft deze sectie. Eén regel per kans, exact:
 | Actiecontrole (dagelijks 05:00) | B1–B3, dan C: `acties.py start` → `open` → `resultaat` per actie → `opruimen` (zondag) → `kop`; daarna `uitvoerbaar` voor nieuwe acties, `google_data.py dashboard` en `_data/shopify.json`, en A4–A6 met commit `controle: <n> afgevinkt, <m> open`. Geen notitie |
 | Growth Radar (dagelijks 05:30) | notitie `JJJJ-MM-DD-growth-radar-<focus>`, daarna B, A3–A6. Zondag: alleen B + build + publish |
 | Uitvoerder (dagelijks 06:15) | B1–B3, dan de goedgekeurde opdrachten (D3), daarna A4–A6 met commit `uitvoerder: …`. Geen notitie per opdracht |
-| SEO-regressiecheck (maandag) | notitie `JJJJ-MM-DD-regressiecheck` (`routine: seo-regressiecheck`), daarna A3–A6 |
+| SEO (maandag 06:00; vervangt regressiecheck, conversietest, Search Console en Backlinks & Merchant Center) | per uitgevoerde module een notitie met de eigen `routine`-waarde (`seo-regressiecheck`: `JJJJ-MM-DD-regressiecheck`; `search-console`: `JJJJ-MM-DD-search-console`; `seo-conversietest`: `JJJJ-MM-DD-seo-conversietest-run-<n>`, volledig rapport in de verborgen Shopify-pagina `seo-routine-logboek`; op de eerste maandag `backlinks-merchant`: `JJJJ-MM-DD-backlinks-merchant`), daarna één keer B, A3–A6 |
 | Denzel-weekoverzicht (maandag) | notitie `JJJJ-MM-DD-weekoverzicht` (`routine: denzel-week`), besluiten als `Besluit:`, daarna A3–A6 |
-| SEO- en conversietest (maandag) | notitie `JJJJ-MM-DD-seo-conversietest-run-<n>`; volledig rapport in de verborgen Shopify-pagina `seo-routine-logboek`, daarna A3–A6 |
-| Search Console & rankings (woensdag) | notitie `JJJJ-MM-DD-search-console`, daarna B, A3–A6 |
 | Verbanden & kansen (zaterdag) | notitie `JJJJ-MM-DD-verbanden` (1e zaterdag: `-verbanden-maand`) met `## Kansen` (D4), `gerelateerd` in beide richtingen, daarna B, A4–A6 |
-| Klantstem, Website-UX, Productradar, Concurrentie-monitor, Materialen & productie, Backlinks & Merchant Center | notitie `JJJJ-MM-DD-<routine-key>`, daarna B, A3–A6. Starten met een guard (geheugen: vorige run < 10 of < 25 dagen → overgeslagen) |
+| Klantstem, Website-UX, Productradar, Concurrentie-monitor, Materialen & productie | notitie `JJJJ-MM-DD-<routine-key>`, daarna B, A3–A6. Starten met een guard (geheugen: vorige run < 10 of < 25 dagen → overgeslagen) |
 | Stop-hook `research-check.py` | vangnet: meldt niet-gecommitte wijzigingen in `02_Dashboard` bij het einde van een sessie |

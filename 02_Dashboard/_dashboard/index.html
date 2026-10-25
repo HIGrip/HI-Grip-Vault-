@@ -776,16 +776,16 @@
   const REEKSEN = [
     { key: 'growth-radar', naam: 'Growth Radar', voorvoegsel: ['growth radar'], planning: { dagen: ELKE_DAG, tijd: '05:30' }, uitleg: 'Dagelijkse trendscan, elke dag een ander thema (SEO, CRO, social, AI-search).' },
     { key: 'denzel-week', naam: 'Denzel-week', voorvoegsel: ['denzel weekoverzicht', 'denzel-week', 'weekoverzicht'], planning: { dagen: [0], tijd: '06:45' }, uitleg: 'Weekoverzicht uit de cloud-routine van Denzel.' },
-    { key: 'seo-regressiecheck', naam: 'Regressiecheck', voorvoegsel: ['seo-regressiecheck', 'regressiecheck'], planning: { dagen: [0], tijd: '06:00' }, uitleg: 'Maandagcheck: is er sinds vorige week iets achteruitgegaan op higrip.nl?' },
-    { key: 'seo-conversietest', naam: 'SEO-conversietest', voorvoegsel: ['seo- en conversietest', 'seo- & conversietest', 'seo-conversietest'], planning: { dagen: [0], tijd: '07:30' }, uitleg: 'Wekelijks: meten, auditen en concepten klaarzetten in Shopify.' },
-    { key: 'search-console', naam: 'Search Console', voorvoegsel: ['search console'], planning: { dagen: [2], tijd: '06:00' }, uitleg: 'Wekelijks: posities, klikken, zoektermen en kansen in Google.' },
+    { key: 'seo-regressiecheck', naam: 'Regressiecheck', voorvoegsel: ['seo-regressiecheck', 'regressiecheck'], planning: { dagen: [0], tijd: '06:00' }, uitleg: 'SEO-routine, module A, maandag 06:00: is er sinds vorige week iets achteruitgegaan op higrip.nl?' },
+    { key: 'seo-conversietest', naam: 'SEO-conversietest', voorvoegsel: ['seo- en conversietest', 'seo- & conversietest', 'seo-conversietest'], planning: { dagen: [0], tijd: '06:00' }, uitleg: 'SEO-routine, module C, maandag: meten, auditen en concepten klaarzetten in Shopify.' },
+    { key: 'search-console', naam: 'Search Console', voorvoegsel: ['search console'], planning: { dagen: [0], tijd: '06:00' }, uitleg: 'SEO-routine, module B, maandag: posities, klikken, zoektermen en kansen in Google.' },
     { key: 'verbanden', naam: 'Verbanden & kansen', voorvoegsel: ['verbanden & kansen', 'verbanden en kansen', 'verbanden'], planning: { dagen: [5], tijd: '06:30' }, extra: '1e za = maandeditie', uitleg: 'Elke zaterdag: legt verbanden tussen de routines van die week en maakt er kansen van, elk met bewijs uit meerdere onderzoeken. De eerste zaterdag van de maand is de maandeditie met 3 tot 5 strategische stappen.' },
     // Maandelijks of tweewekelijks: vaste dagen van de maand, niet in het weekrooster
     { key: 'klantstem', naam: 'Klantstem', voorvoegsel: ['klantstem'], maand: { dagen: [1, 15], tijd: '06:45' }, uitleg: 'Tweewekelijks: reviews van HÏ Grip en concurrenten plus sportcommunity’s, gebundeld tot de top 5 klachten en wensen in klanttaal, vertaald naar copy, FAQ en product.' },
     { key: 'website-ux', naam: 'Website-UX', voorvoegsel: ['website-ux', 'website ux'], maand: { dagen: [4, 18], tijd: '06:45' }, uitleg: 'Tweewekelijks: één paginatype van higrip.nl op mobiel plus snelheid (CWV), met één ontwerpvoorstel en een code-snippet per run.' },
     { key: 'productradar', naam: 'Productradar', voorvoegsel: ['productradar'], maand: { dagen: [8], tijd: '07:15' }, uitleg: 'Maandelijks: maximaal 3 nieuwe productkansen (per sport, maat, lengte, club) met een rekensom en de goedkoopste test.' },
     { key: 'materialen', naam: 'Materialen & productie', voorvoegsel: ['materialen & productie', 'materialen en productie', 'materialen'], maand: { dagen: [22], tijd: '07:15' }, uitleg: 'Maandelijks: gripmaterialen, wasbestendigheid, certificering, leveranciers en EU-regels, met primaire bronnen.' },
-    { key: 'backlinks-merchant', naam: 'Backlinks & Merchant Center', voorvoegsel: ['backlinks'], maand: { dagen: [1], tijd: '07:30' }, uitleg: 'Maandelijks: autoriteit, links en Google Shopping-status.' },
+    { key: 'backlinks-merchant', naam: 'Backlinks & Merchant Center', voorvoegsel: ['backlinks'], maand: { dagen: [1], tijd: '06:00' }, uitleg: 'SEO-routine, module D, alleen op de eerste maandag van de maand: autoriteit, links en Google Shopping-status.' },
     { key: 'concurrentie', naam: 'Concurrentie', voorvoegsel: ['concurrentie-monitor', 'concurrentie'], maand: { dagen: [8, 22], tijd: '06:30' }, uitleg: 'Tweewekelijks: concurrenten, hun pagina’s, prijzen en advertenties.' },
     { key: 'strategie-maand', naam: 'Strategie', voorvoegsel: ['strategie'], uitleg: 'Maandelijkse strategiesynthese uit de beginperiode. Vervangen door Verbanden & kansen (maandeditie op de eerste zaterdag).' },
     { key: 'los', naam: 'Los onderzoek', voorvoegsel: [], uitleg: 'Audits, analyses en vragen buiten de vaste routines.' },
@@ -1399,7 +1399,7 @@
           el('i', { style: `width:${Math.min(100, f * 100).toFixed(1)}%` }), el('s', { style: `left:${(schema * 100).toFixed(1)}%`, title: 'Volgens schema' }))));
     } else {
       strook.append(el('div', { class: 'doel' }, el('div', { class: 'doel-kop' }, el('span', null, el('b', { text: 'Jaardoel ' + jaar })),
-        el('span', { text: !doelBedrag ? `Nog geen omzetdoel voor ${jaar}. Zet het bij doelen in 05_Research/_data/instellingen.json.` : 'De omzet van dit jaar verschijnt zodra de Shopify-cijfers binnen zijn.' }))));
+        el('span', { text: !doelBedrag ? `Nog geen omzetdoel voor ${jaar}. Zet het bij doelen in 02_Dashboard/_data/instellingen.json.` : 'De omzet van dit jaar verschijnt zodra de Shopify-cijfers binnen zijn.' }))));
     }
     return strook;
   }
@@ -2037,7 +2037,7 @@
           lijnGrafiek(pts, { label: 'Positie voor ' + k.term, omgekeerd: true, breedte: 320, hoogte: 170, links: 34, klein: true, fmt: (v) => 'positie ' + pos(v), as: (v) => String(v) }),
           'Nog niet gevonden in Google voor deze zoekterm.');
       }))
-        : el('p', { class: 'uitleg-leeg' }, 'Nog geen posities. De kernwoorden staan in 05_Research/_data/instellingen.json; de posities komen uit Search Console. ', koppelLink(), '.'))));
+        : el('p', { class: 'uitleg-leeg' }, 'Nog geen posities. De kernwoorden staan in 02_Dashboard/_data/instellingen.json; de posities komen uit Search Console. ', koppelLink(), '.'))));
 
     // Core Web Vitals (mobiel)
     const cwvPaginas = CW && CW.status === 'ok' && Array.isArray(CW.paginas) ? CW.paginas.filter(x => x && x.url) : [];

@@ -19,9 +19,9 @@ bijgewerkt: 2026-10-01
 | **Actiecontrole** (dagelijks 05:00) | **De enige die automatisch afvinkt:** alle open acties controleren met bewijs (`CONTROLE.json`), dubbelen markeren, backlogkop bijwerken, zondag opruimen. Daarnaast: dashboard-sync, eenmalig per actie beoordelen of Claude hem kan doen (`UITVOERBAAR.json`) en de dashboardcijfers verversen (`_data/`) | Onderzoek, notities, nieuwe acties, actieteksten wijzigen |
 | **Growth Radar** (dagelijks 05:30) | Nieuws en trends uit de markt (SEO, AI-search, CRO, social) vertalen naar HÏ Grip | De eigen site controleren |
 | **Uitvoerder** (dagelijks 06:15) | Goedgekeurde opdrachten van het dashboard uitvoeren binnen de grenzen: concepten in de vault, code in het testthema, met een resultaat en de stap voor een mens | Live zetten, versturen, afvinken, eigen onderzoek |
-| **SEO-regressiecheck** (maandag) | **De enige technische controle van de site:** status, titels, H1, canonicals, schema, redirects, sitemap, theme check | Verbeteringen bouwen, trends zoeken, bestaande backlogpunten opnieuw controleren of afvinken |
-| **SEO- en conversietest** (maandag) | Meten → verbeteringen bouwen als concept in Shopify → testen of eerdere verbeteringen werken | Technische regressies zoeken |
-| **Search Console & rankings** (woensdag) | Posities, klikken, vertoningen, zoektermen, stijgers/dalers per pagina | Site-techniek |
+| **SEO, module A: regressiecheck** (maandag) | **De enige technische controle van de site:** status, titels, H1, canonicals, schema, redirects, sitemap, theme check | Verbeteringen bouwen, trends zoeken, bestaande backlogpunten opnieuw controleren of afvinken |
+| **SEO, module C: conversietest** (maandag) | Meten → verbeteringen bouwen als concept in Shopify → testen of eerdere verbeteringen werken | Technische regressies zoeken |
+| **SEO, module B: Search Console & rankings** (maandag) | Posities, klikken, vertoningen, zoektermen, stijgers/dalers per pagina | Site-techniek |
 | **Denzel-weekoverzicht** (maandag) | Samenvatten wat alle routines vonden, B2B en partnerships, GA4-weekrapport, besluiten voor Lars | Een eigen SEO- of site-check, kansen herhalen |
 | **Verbanden & kansen** (zaterdag; 1e zaterdag = maandeditie) | Verbanden tussen notities die geen routine los ziet → kansen met bewijs; opgepakte kansen naar de backlog; maandeditie met 3–5 strategische stappen. **Vervangt de maandelijkse strategiesynthese** | Nieuw webonderzoek, samenvatten per routine |
 | **Klantstem** (1e en 15e) | Reviews en gesprekken over HÏ Grip en concurrenten → top 5 klachten en wensen in klanttaal → copy, FAQ, product | Prijzen en ads van concurrenten, productkansen doorrekenen |
@@ -29,7 +29,7 @@ bijgewerkt: 2026-10-01
 | **Productradar** (8e) | Nieuwe productkansen (clubsokken, kindermaten, per sport, lengtes, skisokken-voorbereiding), max 3 met rekensom en goedkoopste test | Reviews verzamelen, concurrenten volgen, leveranciers zoeken |
 | **Concurrentie-monitor** (8e en 22e) | Concurrenten: prijzen, producten, pagina's, **Meta Ad Library** → input voor eigen ads | Reviews, eigen site, rankings |
 | **Materialen & productie** (22e) | Gripmaterialen, wasbestendigheid, garens, certificering, leveranciers/MOQ, EU-regels (met primaire bronnen) | Productkansen doorrekenen, claims op de site aanpassen, leveranciers benaderen |
-| **Backlinks & Merchant Center** (1e) | Nieuwe en verloren links, link-kansen, Google Shopping-status en -fouten | On-page SEO, rankings |
+| **SEO, module D: Backlinks & Merchant Center** (eerste maandag) | Nieuwe en verloren links, link-kansen, Google Shopping-status en -fouten | On-page SEO, rankings |
 
 **Afvinken** gebeurt alleen door de actiecontrole (met bewijs), door de Stafchef van Denzel in het dashboard (met bewijs, besloten 12-10-2026) of door een mens via het dashboard of de vault. De andere routines lezen `02_Dashboard/_backlog/CONTROLE.json`, controleren bestaande acties niet opnieuw en stellen niets voor wat daar als gedaan of dubbel staat.
 
@@ -44,17 +44,14 @@ Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiks
 | HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | claude-sonnet-5-5 | ✅ Cloud op info@ (repository gekoppeld 11-10; eerste geslaagde run 11-10, daarna 12-10 05:01) |
 | HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | claude-sonnet-5-5 | ✅ Cloud op info@ (sinds 25-09) |
 | HÏ Grip — Uitvoerder | `Uitvoerder.md` | dagelijks 06:15 | claude-sonnet-5-5 | Nog aanmaken op info@ |
-| HÏ Grip — SEO-regressiecheck | `SEO-regressiecheck.md` | maandag 06:00 | claude-sonnet-5-5 | ✅ Cloud op info@ |
+| HÏ Grip — SEO | `SEO.md` (vervangt SEO-regressiecheck, SEO- en conversietest, Search Console & rankings en Backlinks & Merchant Center) | maandag 06:00 (module D alleen de eerste maandag) | claude-sonnet-5-5 | Nog aanmaken op info@ (de vier oude uitzetten na de eerste geslaagde run) |
 | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | claude-sonnet-5-5 | ✅ Cloud op info@ |
-| HÏ Grip — SEO- en conversietest | `SEO- en conversietest.md` | maandag 07:30 | claude-sonnet-5-5 | ✅ Cloud op info@ |
-| HÏ Grip — Search Console & rankings | `Search Console & rankings.md` | woensdag 06:00 | claude-sonnet-5-5 | ✅ Cloud op info@, getest 25-09 (GS-01) |
 | HÏ Grip — Verbanden & kansen | `Verbanden & kansen.md` | zaterdag 06:30 | claude-opus-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — Klantstem | `Klantstem.md` | 1e en 15e 06:45 (donderdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — Website-UX | `Website-UX.md` | 4e en 18e 06:45 (vrijdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — Productradar | `Productradar.md` | 8e 07:15 (dinsdag) | claude-opus-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — Concurrentie-monitor | `Concurrentie-monitor.md` | 8e en 22e 06:30 (dinsdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — Materialen & productie | `Materialen & productie.md` | 22e 07:15 (donderdag) | claude-opus-5-5 | Nog aanmaken op info@ |
-| HÏ Grip — Backlinks & Merchant Center | `Backlinks & Merchant Center.md` | 1e 07:30 (woensdag) | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | ~~Maandelijkse strategiesynthese~~ | — | — | — | Vervallen: opgegaan in de maandeditie van Verbanden & kansen |
 
 De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-09 **uit**, zodat niets dubbel draait.
@@ -65,10 +62,10 @@ De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-
 
 | Routine | Aan | Uit |
 |---|---|---|
-| Actiecontrole, Uitvoerder, SEO- en conversietest, Denzel | Shopify | de rest |
-| Productradar, Backlinks & Merchant Center | Shopify (alleen lezen) | de rest |
+| Actiecontrole, Uitvoerder, SEO, Denzel | Shopify | de rest |
+| Productradar | Shopify (alleen lezen) | de rest |
 | Concurrentie-monitor | Meta | de rest |
-| Growth Radar, Klantstem, Website-UX, Materialen, Verbanden, regressiecheck, Search Console | geen | alle |
+| Growth Radar, Klantstem, Website-UX, Materialen, Verbanden | geen | alle |
 
 ## Werken vanuit het dashboard
 

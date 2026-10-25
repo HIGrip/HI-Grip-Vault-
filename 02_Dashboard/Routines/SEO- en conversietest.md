@@ -20,7 +20,7 @@ Elke week de vindbaarheid (Google én AI-zoekmachines) en de conversie van higri
 - **Detaillogboek:** de verborgen Shopify-pagina met handle `seo-routine-logboek` (per item: wat, waar, ID, oude waarde, datum, zodat alles terug te draaien is).
 
 ## Stap 0 — Lees eerst
-1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Product/Performance Grip Socks 2.0.md`. Dit is de enige bron voor prijzen, maten, claims en verzendregels.
+1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Performance Grip Socks 2.0.md`. Dit is de enige bron voor prijzen, maten, claims en verzendregels.
 2. `02_Dashboard/_geheugen/seo-conversietest.md`: wat is gebouwd, welke testplannen lopen, welk auditblok is aan de beurt.
 3. De nieuwste `*-regressiecheck.md` in `02_Dashboard/`, `02_Dashboard/_backlog/ACTIEBACKLOG.md` en `02_Dashboard/_backlog/CONTROLE.json` (wat de actiecontrole als gedaan, open, handmatig of dubbel heeft vastgelegd). Lees dat vóór je acties voorstelt. Je vinkt zelf niets af.
 4. Het Shopify-logboek. Bestaat het niet, maak het dan aan als verborgen pagina.

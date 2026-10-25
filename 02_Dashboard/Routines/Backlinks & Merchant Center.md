@@ -37,7 +37,7 @@ Je bewaakt voor HÏ Grip twee dingen buiten de eigen site: wie naar higrip.nl li
 ## Stap 2 — Merchant Center
 1. `python 02_Dashboard/_tools/google_data.py merchant`. Geeft het "niet gekoppeld" of een fout? Neem de uitleg letterlijk over onder `## Wat niet lukte` en sla de rest van deze stap over.
 2. Tel per status (goedgekeurd, afgekeurd, beperkt) en groepeer de problemen per soort (bijv. ontbrekende GTIN, prijsverschil, afbeelding, verzending). Per soort: aantal producten, ernst, oorzaak en de oplossing: welk veld in Shopify of welke instelling in de feed-app.
-3. Twijfel je bij een GTIN- of merkfout? Controleer het product via de Shopify-connector (alleen lezen) en de EAN-lijst in `00_Brand_Core/Product/Performance Grip Socks 2.0.md`.
+3. Twijfel je bij een GTIN- of merkfout? Controleer het product via de Shopify-connector (alleen lezen) en de EAN-lijst in `00_Brand_Core/Performance Grip Socks 2.0.md`.
 
 ## Stap 3 — Backlinks (max 6 zoekopdrachten, max 15 URL's controleren)
 Het linkrapport van Search Console bestaat niet in de API. Werk daarom zo:

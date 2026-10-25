@@ -30,7 +30,7 @@ Nieuwe productkansen vinden en onderbouwen: clubsokken met logo, kindermaten, va
 `grep -E "^[0-9]{4}-[0-9]{2}-[0-9]{2} [|] run [|]" 02_Dashboard/_geheugen/productradar.md | tail -1`. Geen uitvoer = eerste run: ga door. Is die datum minder dan 25 dagen geleden? Stop dan direct en meld alleen "overgeslagen: vorige run <datum>". Geen sync, build of commit.
 
 ## Stap 1 — Lees eerst
-1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Product/Performance Grip Socks 2.0.md` (maten, EAN, B2B-prijzen).
+1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Performance Grip Socks 2.0.md` (maten, EAN, B2B-prijzen).
 2. De nieuwste notitie met `financieel-plan` in de naam in `02_Dashboard/` (kostprijs, marge, vaste kosten). Lees alleen de secties met prijzen en marges.
 3. `02_Dashboard/_geheugen/productradar.md`: welke kansen al behandeld, afgewezen of in test zijn.
 4. De nieuwste Klantstem-, Concurrentie- en Materialen-notitie (`ls -t 02_Dashboard/*-klantstem.md | head -1` enz.): alleen `## In het kort` en de koppen onder `## Bevindingen`.

@@ -35,7 +35,7 @@ Plus **leveranciers en MOQ**: wie maakt gripsokken, tegen welke minimale afname.
 `grep -E "^[0-9]{4}-[0-9]{2}-[0-9]{2} [|] run [|]" 02_Dashboard/_geheugen/materialen.md | tail -1`. Geen uitvoer = eerste run: ga door. Is die datum minder dan 25 dagen geleden? Stop dan direct en meld alleen "overgeslagen: vorige run <datum>". Geen sync, build of commit.
 
 ## Stap 1 — Lees eerst
-1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` (claims) en `00_Brand_Core/Product/Performance Grip Socks 2.0.md` (samenstelling, maten).
+1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` (claims) en `00_Brand_Core/Performance Grip Socks 2.0.md` (samenstelling, maten).
 2. `02_Dashboard/_geheugen/materialen.md`: de deadlines die je volgt, welk diepte-onderwerp aan de beurt is en wat al behandeld is.
 3. `02_Dashboard/2026-09-07-compliance-todo.md` en de nieuwste Productradar-notitie (alleen de vragen aan jou). Herhaal niets wat daar al staat.
 4. De backlog-koppen en de geheugenregel in `02_Dashboard/_geheugen/README.md`.

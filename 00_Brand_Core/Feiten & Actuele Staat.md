@@ -114,18 +114,4 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 - 2026-09-25 — Verzendtijd gecorrigeerd naar "binnen 1 werkdag" (besluit Lars, stond vast in een losse branch en is nu samengevoegd).
 - 2026-09-25 — Bestand aangemaakt uit het projectgeheugen, [[Performance Grip Socks 2.0]], [[Update Log]] en een live controle van prijzen en handles.
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-19-productpagina-2-0-inspiratie-en-prototype]] — Productpagina 2.0 — inspiratie (On, Apple, Oura, AI-testthema) en prototype v1.0
-- [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] — Homepage herontwerp vanaf leeg canvas (richting B Doorgaan)
-- [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
-- [[2026-10-13-growth-radar-seo-content]] — Growth Radar — SEO content & keywords, 13 oktober 2026
-- [[2026-10-12-voordelenpagina-analyse]] — Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
-- [[2026-10-12-blogs-stappenplan]] — Blogs higrip.nl — audit per artikel en stappenplan van 23 naar 12 sterke blogs
-- [[2026-10-12-b2b-pagina-inspiratie]] — Inspiratie zakelijke pagina (HÏ Grip Zakelijk) — oktober 2026
-- [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
-- … en 10 oudere (zie [[Waar staat wat]])
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[Home]]

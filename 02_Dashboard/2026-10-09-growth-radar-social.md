@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — Social naar website: Meta splitst click- en engage-through-attributie
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks en de rest (likes, shares, saves, reacties, video-views van 5+ seconden) verplaatst naar een nieuwe, losse metriek "engage-through-attributie" — standaard aan, met een venster van 1 dag. Op 2 oktober viel een vergelijkbare claim af omdat die alleen op een LinkedIn-post terug te voeren was; vandaag is dezelfde kernverandering wél bevestigd via Search Engine Land, een toegestane bron.

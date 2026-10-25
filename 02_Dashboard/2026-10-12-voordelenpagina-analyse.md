@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Lars wil de voordelenpagina aanpakken. De footerlink "Voordelen" wijst naar `/blogs/hi-grip/waarom-hi-grip-gripsokken`, in het goedgekeurde [[Blog SEO-plan (2026-10-02)]] de hoofdgids. De pagina is op 12-10-2026 live gelezen (tekst, koppen, schema, links). Er is geen conversie- of rankingdata nieuw opgehaald; de zoekdata komt uit het plan (194 vertoningen, positie 6,9, CTR 1,03%).

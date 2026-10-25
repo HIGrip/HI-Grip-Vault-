@@ -33,4 +33,4 @@ status: concept — ter beoordeling door HÏ Grip
 - **Toon:** Kort en feitelijk, met cijfers en periode erbij. Geen overdreven poeha.
 - **Vaktheorie:** Kijk naar opslaan en delen vóór likes: die voorspellen bereik beter. Vergelijk relatief (per volger of per bereik), niet absoluut. Eén uitschieter is geen trend.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

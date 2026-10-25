@@ -25,8 +25,6 @@ bijgewerkt: 2026-10-01
 | ⭐ Hoog     | Tennis        |     |
 | ⭐ Hoog     | Padel         |     |
 
-
-
 ---
 
 ## Platform
@@ -178,4 +176,4 @@ Bij toevoegen aan [[Influencer Database]]:
 - Agent innoveert als strategie niet werkt — maar stelt voorstel voor, past niet zelf aan
 - Focus op content creators, niet per se influencers
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

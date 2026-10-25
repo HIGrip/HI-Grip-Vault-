@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — SEO-techniek als nieuws, 12 oktober 2026
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Shopify's officiële deprecation-documentatie bevestigt een tussenstap in de scripttag-afbouw die op 24 september al deels bekend was: sinds 1 oktober 2026 kunnen apps geen script tags meer aanmaken of bijwerken (`scriptTagCreate`/`scriptTagUpdate` falen), terwijl bestaande tags nog draaien en leesbaar/verwijderbaar blijven tot Shopify de storefront-injectie zelf stopt op 1 maart 2027. Verder onderzoek naar een Google-kernupdate, Core Web Vitals/INP, structured data en Merchant Center leverde vandaag niets op dat de harde filter doorstond.

@@ -77,10 +77,4 @@ Eén regel in elke oplevering als er iets is geleerd: `GELEERD: <regel> → vast
 - Geen zelfsturende uitbreiding van bevoegdheden. Meer leren betekent beter werken binnen dezelfde grenzen.
 - Geen reden om de vault vol te schrijven. Een leerregel hoort kort te zijn: regel, reden, datum.
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[08 Operations Agent — Index]]

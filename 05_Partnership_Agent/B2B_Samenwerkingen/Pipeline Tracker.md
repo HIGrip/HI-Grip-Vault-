@@ -12,11 +12,4 @@ bijgewerkt: 2026-10-01
 >
 > Zodra outreach start voor een kandidaat: verplaats hem hierheen met status.
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
-- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

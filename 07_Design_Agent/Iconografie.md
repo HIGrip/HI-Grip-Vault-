@@ -113,4 +113,4 @@ USP's, service en interface. Deze set draagt de webshop, de bevestigingsmails en
 - [[Logo & Kleurenpalet]] — Kleuren en typografie
 - [[Product Pagina Gids]] — Waar de feature-iconen landen op de webshop
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[07 Design Agent — Index]]

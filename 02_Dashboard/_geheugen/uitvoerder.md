@@ -1,6 +1,6 @@
 # Geheugen — uitvoerder
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 Zie [README](02_Dashboard/_geheugen/README.md) voor de geheugenregel. De Uitvoerder maakt geen notities; de opdrachten zelf staan in `../_backlog/OPDRACHTEN.json`.
 

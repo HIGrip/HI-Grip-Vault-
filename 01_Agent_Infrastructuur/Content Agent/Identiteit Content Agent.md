@@ -91,4 +91,4 @@ Alles wat deze hoofdagent of zijn sub-agents echt maken, krijgt van Team HÏ Gri
 - [[Caption Gids per Platform]]
 - [[Copy Bank]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

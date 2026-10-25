@@ -149,11 +149,4 @@ NL creator following-lijsten (`CREATOR_FOLLOW_LISTS`):
 
 De volledige broncode (back-up van `ig_zoek_trapAB.py`, `ig_zoek_trapC.py`, `ig_beoordeling.py`, `ig_find_creators.py`) staat in [[Zoek Script — broncode (back-up)]]. Bron van waarheid zijn de bestanden in `scripts/` van de `HI-Grip-claude-setup` repo; bij een scriptupdate moet de back-up mee-geüpdatet worden. Open de back-up alleen als je het script zelf aanpast.
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
-- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

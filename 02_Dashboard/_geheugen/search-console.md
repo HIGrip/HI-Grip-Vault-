@@ -1,6 +1,6 @@
 # Geheugen — search-console
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 Zie [README](02_Dashboard/_geheugen/README.md) voor de geheugenregel.
 
@@ -39,4 +39,3 @@ Format: `JJJJ-MM-DD | thema | onderwerp | notitie-id`
 2026-10-21 | signaal | /pages/gripsokken-voor-voetbal (NL) verslechtert 3 metingen op rij: pos. 6,4 → 12,2 → 15,7 op vergelijkbaar volume (64-80 vert./7d), zonder kannibalisatie op de kernterm zelf — backlogpunt 27 | 2026-10-21-search-console
 2026-10-21 | doorwerking | Punten 17, 18, 19, 21, 22, 25, 26 nog steeds open, geen materiële verandering (25/26: CTR licht omhoog maar nog <1,2%); SEO-titels 2.0/collectie gripsokken (sinds 11 okt live) 10 dagen oud, nog te vroeg voor CTR-evaluatie (vanaf ±8 nov) | 2026-10-21-search-console
 2026-10-21 | beperking | Geen tool voor AI-overviews-rapport en indexeringsstatus; niet gemeten (zelfde als vorige runs). google_data.py vereiste herinstallatie van Google-pakketten onder de python3-interpreter (3.11) die het script gebruikt — pip wees naar 3.13 | 2026-10-21-search-console
-

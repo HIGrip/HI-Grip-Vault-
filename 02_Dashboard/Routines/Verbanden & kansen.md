@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Verbanden & kansen (zaterdag 06:30, 1e zaterdag = maandeditie)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Verbanden & kansen** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Verbanden & kansen.md` in de HÏ Grip-vault." Wijzig de werking hier.
 >
 > Vervangt de geplande maandelijkse strategiesynthese: de maandeditie op de eerste zaterdag levert de 3–5 strategische stappen.
@@ -73,5 +75,3 @@ Vul `gerelateerd` in **beide richtingen**: tussen de notities die samen een kans
 
 ## Afsluiting
 Maximaal vier regels: de editie, het aantal kansen met de sterkste in één zin, opgepakte kansen die naar de backlog gingen, en wat niet lukte.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

@@ -69,4 +69,4 @@ bijgewerkt: 2026-10-01
 - [[Brand Identity Overview]] — Merkverhaal en waarden
 - [[Shopify App Stack]] — Technische basis
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

@@ -50,4 +50,4 @@ bijgewerkt: 2026-10-01
 - [[Caption Gids per Platform]] — Hoe captions schrijven per platform
 - [[Brand Voice & Tone of Voice]] — Tone en taalgebruik
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

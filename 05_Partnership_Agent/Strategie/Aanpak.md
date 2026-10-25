@@ -48,10 +48,4 @@ Zie [[Partnership Strategie]] voor de volledige aanpak.
 - [[Brand Voice & Tone of Voice]] — Hoe we communiceren in outreach
 - [[Brand Identity Overview]] — Merkfundament waar elke actie op toetst
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

@@ -61,10 +61,4 @@ Dit format geldt ook voor de hoofdagents als die hun eigen QA-agent briefen.
 - Het gesprek met Lars over wat openstaat
 - Wijzigingen in autonomie of grenzen
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

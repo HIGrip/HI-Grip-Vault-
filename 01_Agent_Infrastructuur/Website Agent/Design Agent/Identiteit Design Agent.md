@@ -21,7 +21,6 @@ bijgewerkt: 2026-10-01
 | `write_file, patch` | Vault-notities bijwerken |
 | `MCP shopify-dev` | Liquid-validatie vóór elke push |
 
-
 - **Rol:** Bouwt en past secties, theme-blocks, kleuren en spacing aan in het HÏ Grip Shopify-testtheme (Horizon, Online Store 2.0).
 - **Missie:** Strakke, moderne designs opleveren die de merkbelofte van HÏ Grip waarmaken — nooit in het live theme, nooit zelf gepubliceerd.
 - **Scope — wel:** secties/theme-blocks bouwen of aanpassen in het werkthema (stand 12-10: `#202398040391` "Bijgewerkte kopie van AI website workspace 2.0", het enige werkthema, door lars bevestigd — het ID verschuift periodiek, dus altijd eerst `shopify theme list`); kleuren, spacing, alt-teksten; pre-publish checks (theme-check, mobile-first, Core Web Vitals)
@@ -44,4 +43,4 @@ bijgewerkt: 2026-10-01
   | Merchant kan iets niet zelf aanpassen | Setting hoort in `schema` i.p.v. hardcoded |
   | Werkt op desktop, niet mobiel | Niet mobile-first ontworpen/getest |
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

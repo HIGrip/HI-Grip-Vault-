@@ -181,4 +181,4 @@ Formaat, logo-positie en marges niet aanpassen.
 - [[Template Overzicht]] — Waar de werkbestanden per sjabloon staan
 - [[Brand Identity Overview]] — De driehoek achter het design
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[07 Design Agent — Index]]

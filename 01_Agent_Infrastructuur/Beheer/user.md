@@ -80,10 +80,4 @@ Overige vaste afspraken:
 - Hoe de agents en het dashboard samenwerken: [[Agents en het dashboard]].
 - Na elke echte oplevering vraag je Team HÏ Grip om 1 tot 5 sterren: [[Sterrenbeoordeling]].
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

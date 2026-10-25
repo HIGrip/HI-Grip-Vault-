@@ -103,4 +103,4 @@ De algemene kennis over orkestreren, delegeren, onafhankelijk toetsen en priorit
 - [[Denzel Weekoverzicht — Routine]] en de promptbestanden in `02_Dashboard/Routines/`
 - [[Feiten & Actuele Staat]], [[Strategische Keuzes]], [[Brand Identity Overview]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]
+> Map: [[03 Denzel — Index]]

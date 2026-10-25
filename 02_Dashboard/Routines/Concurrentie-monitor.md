@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Concurrentie-monitor (8e en 22e van de maand, 06:30)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Concurrentie-monitor** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Concurrentie-monitor.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je houdt voor HÏ Grip bij wat de concurrenten doen en welke advertenties bij hen werken. Je schrijft in het Nederlands, kort en met bronnen.
@@ -60,11 +62,3 @@ Max 12 pagina's per run. Een bron faalt? Zet het onder `## Wat niet lukte` en ga
 
 ## Afsluiting
 Maximaal vier regels: de belangrijkste verandering, de langstlopende hook, het aantal acties en wat niet lukte.
-
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

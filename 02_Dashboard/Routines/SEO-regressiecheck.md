@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — SEO-regressiecheck (maandag)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine bevat alleen: "Lees en volg `02_Dashboard/Routines/SEO-regressiecheck.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Voer de wekelijkse technische SEO-regressiecheck uit voor www.higrip.nl.
@@ -51,5 +53,3 @@ Haal de ruwe HTML op met curl. Plak de regeleindes aan elkaar vóór je grept, w
 4. **Feiten:** klopt een handle, ID of URL in het feitenbestand niet meer? Werk hem bij, met datum.
 5. **Afronden:** procedure B, dan A3 (koppel aan de vorige regressiecheck), A4, A5 en A6.
 6. **Melding** met het aantal afwijkingen.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

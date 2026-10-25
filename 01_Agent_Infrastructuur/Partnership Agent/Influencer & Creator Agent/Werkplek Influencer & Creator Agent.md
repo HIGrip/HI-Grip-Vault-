@@ -10,4 +10,4 @@ Gereserveerd voor toekomstige output/werk van deze sub-agent, zodra hij van "ide
 
 Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Partnership Agent-map (`01_Agent_Infrastructuur/Partnership Agent/`). Bronkennis ([[Evaluatiecriteria]], [[Influencer Database]], [[Zoek Script & Gids]]): zie 05_Partnership_Agent/Influencers_Creators.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

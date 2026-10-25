@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Inspiratie zakelijke pagina (HÏ Grip Zakelijk) — oktober 2026
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Onderzoek naar B2B-, wholesale- en teampagina's als inspiratie voor de zakelijke pagina van HÏ Grip (retailers en sportclubs). Uitgevoerd door de Website Agent met de Design Agent (code- en motion-analyse) en de Conversie & Analyse Agent (opbouw, formulier, bewijs). De analyse komt uit pagina-tekst en code; **er is niets gerenderd of gescreenshot**, dus visuele oordelen (kleurritme, typeschaal, whitespace) zijn niet onderbouwd. Er zijn geen conversiecijfers van deze pagina's bekend.

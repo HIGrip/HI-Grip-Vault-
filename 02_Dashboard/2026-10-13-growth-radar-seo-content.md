@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — SEO content & keywords, 13 oktober 2026
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Eén kwalificerende vondst binnen de dagfocus long-tails, sportlandingspagina's en SERP-features: Google scherpte op 1 oktober 2026 zijn richtlijn voor AI-gegenereerde content aan. De overige sporen (SERP-feature-cijfers, long-tail-onderzoek, sport-landingspagina's, Marketingfacts/Emerce) leverden vandaag niets op dat de harde filter doorstond. De nieuwste `*-concurrentie.md` (11 oktober, [[2026-10-11-concurrentie-seo-per-merk]]) is gelezen en niet herhaald.

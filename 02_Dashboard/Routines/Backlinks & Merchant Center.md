@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Backlinks & Merchant Center (1e van de maand, 07:30)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Backlinks & Merchant Center** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Backlinks & Merchant Center.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je bewaakt voor HÏ Grip twee dingen buiten de eigen site: wie naar higrip.nl linkt, en of de producten goed in Google Shopping staan. Je schrijft in het Nederlands, kort en feitelijk.
@@ -58,5 +60,3 @@ Het linkrapport van Search Console bestaat niet in de API. Werk daarom zo:
 
 ## Afsluiting
 Maximaal vier regels: de Merchant-stand, nieuwe en verloren links, het aantal acties en wat niet gekoppeld is.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

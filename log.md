@@ -12,5 +12,3 @@
 ## [2026-10-19] lint | tegenstrijdigheden gecontroleerd en rechtgezet
 - Concurrentieanalyse: packprijzen 1.0 gelijkgetrokken met het feitenbestand (€35,95 / €54,95).
 - Sporters 3000+ naar 3500+ (Brand Identity Overview, Brand Voice, Compliance To-Do). Trustpilot 4,6 in Homepage Copy. Content-QA en Bestandsschema: Content Agent heeft vijf sub-agents.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

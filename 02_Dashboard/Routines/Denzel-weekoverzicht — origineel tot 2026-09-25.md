@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Denzel-weekoverzicht — originele routineprompt (tot 25 september 2026)
 
+> Map: [[Waar staat wat]]
+
 > Letterlijke back-up van de prompt die op info@ in de Denzel-routine stond. Vervangen door [[Denzel-weekoverzicht]]. Niet meer gebruiken; alleen ter referentie.
 
 ```
@@ -64,5 +66,3 @@ Harde grenzen die nooit veranderen, ook niet met deze mandaatuitbreiding: nooit 
 
 Toon/stijl: kort, feitelijk, geen overdreven poeha — een voorstel + de reden erbij, niet alleen een uitkomst. Merknaam altijd "HÏ Grip" (met umlaut, nooit "HI Grip" of "Hi Grip").
 ```
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

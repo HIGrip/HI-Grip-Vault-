@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Growth Radar (dagelijks)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine (lokaal of op info@) bevat alleen: "Lees en volg `02_Dashboard/Routines/Growth Radar.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je voert de dagelijkse Growth Radar uit voor HÏ Grip. Je schrijft in het Nederlands, informeel ("jij/je"), direct en performance-first.
@@ -73,5 +75,3 @@ Afgevinkte punten verplaatst de actiecontrole om 05:00 al naar `AFGEROND.md`. Da
 
 ## Afsluiting
 Meld in maximaal vijf regels: de dagfocus, het aantal bevindingen, het aantal nieuwe acties en het belangrijkste punt in één zin.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

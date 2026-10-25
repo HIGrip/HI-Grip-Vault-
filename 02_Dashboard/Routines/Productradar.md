@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Productradar (8e van de maand, 07:15)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Productradar** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Productradar.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je zoekt voor HÏ Grip naar het volgende product dat het waard is om te testen. Je schrijft in het Nederlands, kort en met rekensommen.
@@ -61,5 +63,3 @@ Niets dat de drempel haalt? Dat is een geldige uitkomst: een korte notitie met w
 
 ## Afsluiting
 Maximaal vier regels: de sterkste kans met break-even-aantal, de voorgestelde test en wat niet lukte.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

@@ -130,4 +130,4 @@ Opvolging en administratie: een open lus heeft een eigenaar, een datum en een vo
 - `02_Dashboard/_backlog/ACTIEBACKLOG.md`, `02_Dashboard/_build/PROCEDURE.md`
 - [[Denzel-weekoverzicht]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

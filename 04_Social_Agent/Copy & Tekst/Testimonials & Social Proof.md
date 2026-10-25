@@ -29,4 +29,4 @@ Eerdere getallen: 1000+ (oude vault-copy), 2000+ (brandbook 2026) — beide acht
 - [[Brand Voice & Tone of Voice]] — Toon
 - [[Homepage Copy & Structuur]] — Social proof op de site
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

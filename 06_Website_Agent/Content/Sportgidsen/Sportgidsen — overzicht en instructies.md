@@ -38,10 +38,4 @@ Rugby is een beachhead-sport (zie [[Beachhead Strategie]]); de gids is een conce
 - **Rugby:** er staat al een rugby-landingspagina als concept (`/pages/gripsokken-voor-rugby`). De gids richt zich op de vraagzoekwoorden en linkt naar die pagina.
 - De sitestructuur voor sportpagina's staat in [[Website Structuur & Sitemap]].
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

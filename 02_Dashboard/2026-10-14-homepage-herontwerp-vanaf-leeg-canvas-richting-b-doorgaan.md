@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Homepage herontwerp vanaf leeg canvas (richting B Doorgaan)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Opdracht van Lars via Denzel → Website Agent (13–14 okt): ontwerp de homepage opnieuw vanaf een leeg canvas, los van concept v3 en prototype v4. Ingezet: Design (materiaal, concepten, bouw), Website Copy, Conversie & Analyse, SEO en een los webonderzoek. E-mail Marketing, Content Agent en Partnership Agent zijn bewust overgeslagen. Verboden bronnen zijn niet geopend; de toegestane delen van [[2026-10-13-homepage-redesign]] zijn eerst geredigeerd (het 9-sectievoorstel zat ook in "In het kort").

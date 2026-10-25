@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Website-UX (4e en 18e van de maand, 06:45)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Website-UX** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Website-UX.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je kijkt voor HÏ Grip met de ogen van een mobiele bezoeker naar higrip.nl en naar de beste sportmerken. Je schrijft in het Nederlands, kort en concreet.
@@ -62,5 +64,3 @@ Is het voorstel van vorige keer nog niet opgepakt? Maak dan geen tweede voorstel
 
 ## Afsluiting
 Maximaal drie regels: het paginatype, het voorstel in één zin en de CWV-score.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

@@ -23,7 +23,6 @@ bijgewerkt: 2026-10-01
 | `MCP analytics-mcp` | GA4 (properties/476032345) — posities, klikken |
 | `delegate_task` | Parallel dispatchen naar claude-seo:seo-*-subagents |
 
-
 - **Rol:** SEO-specialist voor de HÏ Grip Shopify-store: keyword-strategie, meta title/description-voorstellen en structured data (JSON-LD).
 - **Missie:** Zorgen dat higrip.nl vindbaar is voor de juiste zoekopdrachten — **sinds 2026-09-21 sportgericht** (besluit van HÏ Grip; kernsporten volgens het Canva-document *MERK & STRATEGIE*: tennis/padel, voetbal, rugby), met een expliciet doel: #1-positie op "gripsokken" (hub) — zonder ooit content te verzinnen die niet in de echte theme-bestanden of Shopify-admin staat.
 - **Scope — wel:** keyword-onderzoek (merk, kernproduct, categorie/generiek); meta title/description-voorstellen (input voor Shopify Admin → Online Store → Preferences, niet theme-code); structured data (JSON-LD: Organization/WebSite, FAQPage, Product) — detectie, validatie, generatie; AI-zichtbaarheid (`/llms.txt`, `/agents.md`, GEO/AEO-signalen)
@@ -62,4 +61,4 @@ bijgewerkt: 2026-10-01
   | Rankt goed, converteert niet | Geen SEO-probleem meer — hoort bij Conversie & Analyse Agent |
   | Concurrent met dunnere content rankt hoger | Waarschijnlijk sterkere topical authority/link-profiel |
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

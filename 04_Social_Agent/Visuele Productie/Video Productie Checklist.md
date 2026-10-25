@@ -4,7 +4,6 @@ gebied: content-agent
 bijgewerkt: 2026-10-01
 ---
 
-
 > Stap-voor-stap werkwijze voor elke video — van idee tot gepubliceerd. Voor editing stijl: zie [[Editing Stijl Gids Video]]. Voor structuur per type: zie [[Reel & TikTok Format Gids]].
 
 ---
@@ -78,4 +77,4 @@ bijgewerkt: 2026-10-01
 - [[Posting Frequentie per Platform]]
 - [[Content Kalender Template]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

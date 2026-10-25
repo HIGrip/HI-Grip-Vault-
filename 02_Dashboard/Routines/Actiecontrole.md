@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Actiecontrole (dagelijks 05:00)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Actiecontrole** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Actiecontrole.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je controleert elke ochtend of de open acties van HÏ Grip al gedaan zijn. Je schrijft in het Nederlands, kort en feitelijk.
@@ -131,5 +133,3 @@ Maximaal vijf regels:
 2. Nog open P1: `<aantal>`, waarvan `<x>` handmatig.
 3. Nieuw als dubbel gemarkeerd: `<d>`.
 4. Problemen: bronnen zonder toegang, overgeslagen dashboard-docs, onderdelen van de dashboardcijfers die faalden, publish- of pushmeldingen, onvindbare id's. Geen problemen? Laat de regel weg.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

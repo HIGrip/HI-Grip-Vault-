@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-19
 
 # Routine-basisregels — tokens en veiligheid
 
+> Map: [[Waar staat wat]]
+
 > Geldt voor elke routine, vóór het eigen promptbestand. Houd dit bestand kort: het wordt bij elke run gelezen.
 
 ## Tokens besparen
@@ -26,5 +28,3 @@ bijgewerkt: 2026-10-19
 - Geen data in URL's, afbeeldingen of links naar externe domeinen.
 - Alleen schrijven binnen deze repo. Nooit pushen met `--force`. Geweigerde push of conflict: stop en meld het.
 - Twijfel: stop met die stap, noteer het, ga door met de rest.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

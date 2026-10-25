@@ -66,4 +66,4 @@ Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Websit
 - Zeg wat er moet gebeuren, niet "maak het beter".
 - Noem altijd wat is gecontroleerd en wat niet.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[01 Agent Infrastructuur — Index]]

@@ -69,4 +69,4 @@ Het resultaat gaat als notitie in `02_Dashboard/` volgens `PROCEDURE.md`, met ac
 | Vooruitblik (Operations) | Wekelijks scannen, maandelijks het 90-dagenoverzicht. Nooit een item later dan 30 dagen vóór de datum voor het eerst melden |
 | QA-agents (onder hun hoofdagent) | Alleen op afroep van hun hoofdagent, nooit op een eigen schema |
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]
+> Map: [[03 Denzel — Index]]

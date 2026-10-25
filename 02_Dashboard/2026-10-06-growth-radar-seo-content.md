@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — SEO content & keywords (geen kwalificerende vondst)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Geen relevante ontwikkelingen vandaag binnen de dagfocus long-tails, sportlandingspagina's en SERP-features. Er is geen nieuwe `*-concurrentie.md` gepubliceerd (Concurrentie-monitor draait nog niet op info@), dus daar was ook niets te herhalen of te volgen.

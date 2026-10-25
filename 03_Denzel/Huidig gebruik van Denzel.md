@@ -58,4 +58,4 @@ Routeren naar de juiste hoofdagent, kwaliteit en merkconsistentie bewaken, de Op
 
 Aanvullen of corrigeren kan door Lars, Tigo of Timo.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]
+> Map: [[03 Denzel — Index]]

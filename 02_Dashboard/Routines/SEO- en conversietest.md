@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — SEO- en conversietest (wekelijks)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine bevat alleen: "Lees en volg `02_Dashboard/Routines/SEO- en conversietest.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 ## Rol
@@ -64,5 +66,3 @@ Vergelijk de KPI's van eerdere items met hun startmeting. Label: werkt / werkt n
 3. **Geheugen:** gebouwde items, lopende testplannen met evaluatiedatum en het volgende auditblok in `02_Dashboard/_geheugen/seo-conversietest.md`.
 4. **Feiten:** vind je een afwijking tussen de site en het feitenbestand, meld die dan en werk de live-kolom bij.
 5. **Afronden:** procedure B, A3, A4, A5 en A6. Stuur daarna een melding: de eerste zin is de belangrijkste actie voor de eigenaar.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

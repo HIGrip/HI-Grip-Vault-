@@ -7,8 +7,6 @@ status: concept — besluiten van Lars van 12-10-2026 verwerkt
 
 # 03 Denzel — Index
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
-
 > Kernmap van Denzel, de Orchestrator Agent. Hier staat **wat Denzel doet en hoe hij het doet**. Denzel is sinds 21-10-2026 alleen orchestrator en heeft geen eigen sub-agents meer; zijn vroegere team staat nu onder de hoofdagents in `01_Agent_Infrastructuur`. Dit is voor Denzel wat de bestanden Identiteit, Soul en Werkplek voor de andere agents zijn, maar dan voor het hele werk van de regisseur.
 
 ## Verschil met 01_Agent_Infrastructuur
@@ -62,7 +60,7 @@ Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerrege
 
 ## Alle notities in deze map (automatisch)
 
-Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
 - [[Huidig gebruik van Denzel]]
@@ -82,3 +80,5 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 
 ### _archief
 - [[Huidig gebruik van Denzel (Claude Code-tijd)]]
+
+> Map: [[Home]]

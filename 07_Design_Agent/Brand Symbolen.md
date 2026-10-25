@@ -39,4 +39,4 @@ Fris en steriel voor innovatie, warm en uitnodigend voor comfort. Geen goedkope 
 - [[Muziek & Licenties]] — Spotify-playlists per contenttype
 - [[Brand Voice & Tone of Voice]] — Verbale identiteit en tone
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[07 Design Agent — Index]]

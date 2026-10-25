@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Search Console & rankings (wekelijks, woensdag)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine bevat alleen: "Lees en volg `02_Dashboard/Routines/Search Console & rankings.md` in de HÏ Grip-vault." Nieuw, eerste in de rij (besluit 25 sep 2026).
 
 ## Rol
@@ -40,5 +42,3 @@ Te weinig data (bijvoorbeeld minder dan 100 vertoningen per zoekterm)? Zeg dat e
 2. **Backlog:** maximaal 3 nieuwe punten per week, alleen concrete kansen (bijvoorbeeld "titel /collections/gripsokken herschrijven: 340 vertoningen, CTR 0,6%"). Prefix `[search-console]`. Stel niets voor wat al in de backlog staat of in `CONTROLE.json` als `gedaan` of `dubbel` staat. Werk daarna de tellerregel bij met `python 02_Dashboard/_tools/acties.py kop --door search-console`.
 3. **Geheugen:** per week één regel met de kerncijfers, plus een regel per nieuw behandeld keyword of kans. Bij de volgende run vergelijk je hiermee.
 4. **Afronden:** procedure B, A3, A4, A5 en A6. Op het dashboard verschijnt dit als reeks **GS · Search Console & rankings**.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

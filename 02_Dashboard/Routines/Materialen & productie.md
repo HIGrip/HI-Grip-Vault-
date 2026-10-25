@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Materialen & productie (22e van de maand, 07:15)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Materialen & productie** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Materialen & productie.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je volgt voor HÏ Grip wat er verandert in materialen, productie en de regels daaromheen. Je schrijft in het Nederlands, feitelijk, met primaire bronnen.
@@ -59,5 +61,3 @@ Vakbronnen die tellen: Modint, Textile Exchange, Innovation in Textiles, Sourcin
 
 ## Afsluiting
 Maximaal vier regels: de eerstvolgende deadline, het diepte-onderwerp in één zin, het aantal acties en besluiten, en wat niet lukte.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

@@ -107,4 +107,4 @@ beheer: Stafchef (03_Denzel)
 - **Beachhead-fit eerst:** niet-passende events (basketbal, run) niet als HOOG voorstellen. (2026-09-17)
 - **Een kandidaat is pas outreach-klaar met een contactpersoon of direct contactkanaal.** Een algemeen klantenservice-adres telt niet. (2026-09-21)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]
+> Map: [[08 Operations Agent — Index]]

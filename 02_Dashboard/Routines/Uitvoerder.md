@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Uitvoerder (dagelijks 06:15)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ heet **HÏ Grip — Uitvoerder** en bevat alleen: "Lees en volg `02_Dashboard/Routines/Uitvoerder.md` in de HÏ Grip-vault." Wijzig de werking hier.
 
 Je voert uit wat het team op het dashboard aan Claude heeft toevertrouwd. Je schrijft in het Nederlands, kort en feitelijk.
@@ -77,5 +79,3 @@ python 02_Dashboard/_tools/acties.py open > /tmp/uv/open.json
 
 ## Afsluiting
 Maximaal vijf regels: per opdracht de status en de titel in een paar woorden, wat een mens nu moet doen, en problemen (sync, publish, push).
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

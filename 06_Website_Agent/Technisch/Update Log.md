@@ -182,15 +182,4 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 - [[Conversie Optimalisatie Checklist]] — Volledige checklist waar dit uit voortkomt
 - [[Goedkeuringsworkflow]] — Hoe dit richting live gaat
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-12-werkthema-vs-live]] — Werkthema vs live thema — vergelijking 12 oktober 2026, referentie voor de to-do's
-- [[2026-10-11-seo-audit-weekdelta]] — SEO-audit higrip.nl — weekvergelijking 11 oktober 2026, met prioriteitenlijst
-- [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
-- [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

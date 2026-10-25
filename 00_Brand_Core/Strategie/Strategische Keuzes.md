@@ -261,14 +261,4 @@ Wie wat doet in het team: [[Feiten & Actuele Staat]] (team).
 - [[Partnership Strategie]] · [[Doelen]] — B2B en creators
 - [[Concurrentieanalyse]] — Positie t.o.v. andere aanbieders
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-11-omzetgroei-koersbepaling]] — Omzetgroei HÏ Grip — gaan we de goede kant op? Koersbepaling van Denzel
-- [[2026-10-07-missie-visie-pagina]] — Missie & Visie-pagina higrip.nl — onderzoek, SEO-keuzes en concept
-- [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]] — Dashboard — Agenda, Mail, Ads (Meta + Hermes) en Leveranciers toegevoegd, plus 20 features voor later
-- [[2026-09-29-crm-dashboard-voorstel]] — CRM-module HÏ Grip-dashboard — onderzoek en voorstel
-- [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[Home]]

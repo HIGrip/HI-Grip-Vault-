@@ -100,12 +100,4 @@ Eerste keer dat deze procedure is toegepast — zie [[Conversie Optimalisatie Ch
 - [[Shopify App Stack]] — Overige technische basis (nog te vullen)
 - [[Update Log]] — Datumgewijze log van doorgevoerde wijzigingen
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

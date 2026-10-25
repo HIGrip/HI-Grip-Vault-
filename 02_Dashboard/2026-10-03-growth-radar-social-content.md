@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — Social content en platformalgoritmes (geen kwalificerende vondst)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Geen relevante ontwikkelingen vandaag voor de zaterdagfocus (TikTok, Instagram, Reels, creators, sportformats). De meeste zoekresultaten waren generieke contentfarm-artikelen over "het algoritme in 2026" zonder eigen meetdata of directe bron; de twee items met een echte primaire bron (TikTok Newsroom, TikTok's eigen business-blog) waren Verenigde Staten/Canada-gericht en te enterprise-schaal om aan higrip.nl te koppelen.

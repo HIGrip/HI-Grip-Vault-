@@ -69,4 +69,4 @@ bijgewerkt: 2026-10-01
 - [[Iconografie]]
 - [[Brand Symbolen]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

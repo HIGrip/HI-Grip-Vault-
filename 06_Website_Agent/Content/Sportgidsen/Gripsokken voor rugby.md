@@ -70,10 +70,4 @@ bijgewerkt: 2026-10-02
 <p><strong>Klaar voor de volgende scrum?</strong> Bekijk alle <a href="/collections/gripsokken">gripsokken van HÏ Grip</a> — binnen 1 werkdag verzonden.</p>
 ```
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

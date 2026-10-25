@@ -6,15 +6,13 @@ bijgewerkt: 2026-10-01
 
 04 Social Agent — Index
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
-
 > Kennisbank voor social content: copy, strategie en planning, visuele productie. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
 
 Terug naar [[Home]].
 
 ## Alle notities in deze map (automatisch)
 
-Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Copy & Tekst
 - [[CTA Bibliotheek]]
@@ -41,3 +39,5 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Tekst-overlay Gids]]
 - [[Template Overzicht]]
 - [[Video Productie Checklist]]
+
+> Map: [[Home]]

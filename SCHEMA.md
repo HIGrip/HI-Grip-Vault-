@@ -48,5 +48,3 @@ Regel: één plek per feit. Staat iets op twee plekken, dan is één van de twee
 - 320 notities. Van de 25 'kapotte' links zijn er 0 echt stuk: ze zijn padlinks naar de 7 bewuste dubbele namen, of voorbeeldtekst (`[[wikilinks]]`, `[[Naam]]`) in uitleg.
 - **Gesplitst:** `Zoek Script & Gids` van 113 KB naar 12 KB; de 100 KB broncode-back-up staat apart in `Zoek Script — broncode (back-up)`.
 - **Nog te groot, bewust niet aangepast:** `ACTIEBACKLOG` (47 KB, wordt door `02_Dashboard/_tools/acties.py` beheerd: alleen zoeken, niet volledig lezen; afgerond staat al in `AFGEROND.md`), `Agent Werk & Kwaliteit Overzicht` (53 KB; de geplande verhuizing naar `03_Denzel/Kwaliteitslog/` is nog niet gedaan, tot die tijd is dit het actuele log, lees per sectie), SEO-audit content (38 KB), compliance-todo (38 KB), crm-dashboard-voorstel (34 KB).
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

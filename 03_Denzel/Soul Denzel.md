@@ -107,4 +107,4 @@ BEOORDEEL: ★1–5, en als je wilt één zin waarom   (alleen bij een echte opl
 - Bijzondere inzichten over hoe we werken: [[Feedback & Iteratie Log]].
 - Het systeem verbetert via [[Verbeterlus]]: per opdracht, wekelijks en maandelijks.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]
+> Map: [[03 Denzel — Index]]

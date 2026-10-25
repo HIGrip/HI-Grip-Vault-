@@ -6,15 +6,13 @@ bijgewerkt: 2026-10-01
 
 # 01Agent Infrastructuur — Index
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
-
 > Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts. Alles in deze map bouwt voort op de Brand Core: [[00 Brand Core]].
 
 Terug naar [[Home]].
 
 ## Alle notities in deze map (automatisch)
 
-Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Beheer
 - [[API & Tool Connections]]
@@ -23,27 +21,10 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Agent Takenverdeling & Grenzen — Content Agent]]
 - [[Agent Takenverdeling & Grenzen — Partnership Agent]]
 - [[Agent Takenverdeling & Grenzen]]
-- [[Agent Werk & Kwaliteit Overzicht]]
-- [[Agents en het dashboard]]
-- [[Denzel Weekoverzicht — Routine]]
-- [[Feedback & Iteratie Log]]
 - [[Goedkeuringsworkflow]]
-- [[Leerregels per Agent]]
 - [[Opdrachtprotocol]]
-- [[Stappenplan — Verdere Bouw]]
-- [[Sterrenbeoordeling]]
 - [[Toetsregels]]
-- [[Verbeterlus]]
 - [[user]]
-
-### Beheer/Weekoverzicht
-- [[Week 2026-08-24]]
-- [[Week 2026-08-31]]
-- [[Week 2026-09-07]]
-- [[Week 2026-09-14]]
-
-### Beheer/_archief
-- [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]
 
 ### Content Agent
 - [[Content Pillars — Buffer-tags]]
@@ -75,7 +56,11 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Identiteit Video & Visuele Productie Agent]]
 - [[Werkplek Video & Visuele Productie Agent]]
 
+### Design Agent
+- [[Agents Design Agent]]
+
 ### Operations Agent
+- [[Agents Operations Agent]]
 - [[Identiteit Operations Agent]]
 - [[Samenwerking Stafchef en Vooruitblik]]
 - [[Soul Operations Agent]]
@@ -89,6 +74,7 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Werkplek Vooruitblik-agent]]
 
 ### Partnership Agent
+- [[Agents Partnership Agent]]
 - [[Identiteit Partnership Agent]]
 - [[Soul Partnership Agent]]
 
@@ -109,27 +95,11 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Identiteit Partnerships & Events Agent]]
 - [[Werkplek Partnerships & Events Agent]]
 
-### Routines
-- [[02_Dashboard/Routines/Actiecontrole|Routines/Actiecontrole]]
-- [[Backlinks & Merchant Center]]
-- [[Concurrentie-monitor]]
-- [[Denzel — aanpassen op info@]]
-- [[Denzel-weekoverzicht — origineel tot 2026-09-25]]
-- [[Denzel-weekoverzicht]]
-- [[Growth Radar]]
-- [[02_Dashboard/Routines/Klantstem|Routines/Klantstem]]
-- [[Materialen & productie]]
-- [[02_Dashboard/Routines/Productradar|Routines/Productradar]]
-- [[02_Dashboard/Routines/README|Routines/README]]
-- [[Routine-basisregels]]
-- [[SEO- en conversietest]]
-- [[02_Dashboard/Routines/SEO-regressiecheck|Routines/SEO-regressiecheck]]
-- [[Search Console & rankings]]
-- [[02_Dashboard/Routines/Uitvoerder|Routines/Uitvoerder]]
-- [[Verbanden & kansen]]
-- [[02_Dashboard/Routines/Website-UX|Routines/Website-UX]]
+### Social Agent
+- [[Agents Social Agent]]
 
 ### Website Agent
+- [[Agents Website Agent]]
 - [[Identiteit Website Agent]]
 - [[Soul Website Agent]]
 
@@ -157,3 +127,5 @@ Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Identiteit Website-QA]]
 - [[Toetslijst Website-QA]]
 - [[Werkplek Website-QA]]
+
+> Map: [[Home]]

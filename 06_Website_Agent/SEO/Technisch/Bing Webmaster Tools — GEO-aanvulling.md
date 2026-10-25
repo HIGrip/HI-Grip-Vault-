@@ -42,4 +42,4 @@ Periode 18-2-2026 t/m 25-9-2026:
 
 Zie ook: [[Claude SEO Plugin — Skills & Agents]], [[GEO Plan (2026-09-21)]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]
+> Map: [[06 Website Agent — Index]]

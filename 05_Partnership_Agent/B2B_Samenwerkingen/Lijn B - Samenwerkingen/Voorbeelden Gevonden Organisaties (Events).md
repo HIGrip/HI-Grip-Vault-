@@ -55,12 +55,4 @@ bijgewerkt: 2026-10-01
 - [[Samenwerking Strategie]] — Waarom dit past bij HÏ Grip
 - [[Pipeline Tracker]] — Actieve outreach-status
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-19-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-19 (nieuwe SEO-fouten, homepage-herontwerp en B2B-koers wachten op Lars)
-- [[2026-10-05-weekoverzicht]] — Denzel Weekoverzicht — 2026-10-05 (NL-verkeer breekt 3 weken daling, /en/-fixes lijken opgelost)
-- [[2026-09-21-beachhead-rugby]] — Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

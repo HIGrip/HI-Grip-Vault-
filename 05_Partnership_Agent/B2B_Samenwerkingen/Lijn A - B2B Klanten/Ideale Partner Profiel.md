@@ -58,4 +58,4 @@ bijgewerkt: 2026-10-01
 - [[Evaluatiecriteria]] — Selectie- en verificatiecriteria voor influencers
 - [[Zoek Script & Gids]] — Zoekproces, hashtags en Python script
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

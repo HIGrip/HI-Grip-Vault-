@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routines — overzicht en rolverdeling
 
+> Map: [[Waar staat wat]]
+
 > Alle routines draaien (straks) als cloudroutine op het account **info@higrip.nl**, zodat ze altijd draaien en iedereen ze ziet. De prompt van elke routine staat in deze map; de routine op claude.ai/code/routines bevat alleen een korte verwijzing naar het promptbestand. Een prompt wijzigen = dit bestand wijzigen en committen, niet de routine zelf.
 >
 > Besloten op 25 september 2026, zie [[2026-09-25-evaluatie-routines]]. Uitgebreid op 26 september 2026 met zes nieuwe routines, de Uitvoerder en werken vanuit het dashboard.
@@ -101,5 +103,3 @@ Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) schrijft allee
 2. Ingelogd als info@: claude.ai/code → instellingen van de omgeving → omgevingsvariabelen → naam `GOOGLE_SA_JSON_B64`, waarde = plakken (`Ctrl + V`). Setup-script zoals hierboven. Opslaan.
 3. Plak de sleutel nergens anders (niet in een chat, niet in de vault).
 4. Test het met een routine of sessie in die omgeving: `python 02_Dashboard/_tools/google_data.py check` moet bij beide "ok" geven, en `... dashboard` toont per onderdeel de status.
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

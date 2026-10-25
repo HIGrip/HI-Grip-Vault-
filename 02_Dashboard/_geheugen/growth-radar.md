@@ -1,6 +1,6 @@
 # Behandeld-logboek
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 Anti-herhaling. De routine leest dit bestand **voordat** hij zoekt, en rapporteert niets
 wat hier al staat — tenzij er aantoonbaar iets nieuws is gebeurd (dan met vermelding van

@@ -45,4 +45,4 @@ bijgewerkt: 2026-10-01
 - [[Platform Richtlijnen]] — Aanpak per platform
 - [[Content Strategie]] — Welk verhaal we vertellen
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

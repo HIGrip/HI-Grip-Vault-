@@ -92,4 +92,4 @@ Een toets noemt altijd waar het uit blijkt: een bestandspad, een curl-uitkomst, 
 - De technische sitecontrole blijft bij de SEO-regressiecheck. Afvinken doen de actiecontrole (met bewijs) en de Stafchef van de Operations Agent (in het dashboard, met bewijs).
 - Geen toetsing van smaak of strategie. Dat is een besluit voor Lars.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]
+> Map: [[03 Denzel — Index]]

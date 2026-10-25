@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Routine — Denzel-weekoverzicht (maandag 06:45)
 
+> Map: [[Waar staat wat]]
+
 > Promptbestand. De routine op info@ bevat alleen: "Lees en volg `02_Dashboard/Routines/Denzel-weekoverzicht.md` in de vault-repo." Wijzig de werking hier.
 >
 > Gebaseerd op de originele prompt ([[Denzel-weekoverzicht — origineel tot 2026-09-25]]). Alles daaruit is behouden. Nieuw sinds 25-09-2026: geheugen, het feitenbestand, notitie naar `02_Dashboard`, het GA4-weekrapport via het script, de website-stand uit de andere routines in plaats van een eigen check, en de afspraken van 21-09 (contactpersoon eerst, Tigo keurt content, GEO).
@@ -182,12 +184,3 @@ Nooit:
 
 ## Toon
 Kort en feitelijk, zonder poeha: een voorstel met de reden erbij, niet alleen een uitkomst. Merknaam altijd "HÏ Grip" (met trema), nooit "HI Grip" of "Hi Grip".
-
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-09-25-evaluatie-routines]] — Evaluatie routines — Growth Radar, regressiecheck, SEO-conversietest, cloud-routine website, Denzel
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

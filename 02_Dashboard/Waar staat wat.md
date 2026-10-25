@@ -1,6 +1,6 @@
 # Waar staat wat — onderzoek, routines en werkbestanden
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]
+> Map: [[Home]]
 
 > Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.
 
@@ -33,137 +33,14 @@
 
 ## Alle notities in deze map (automatisch)
 
-Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
-### Hoofdmap
-- [[2026-10-21-search-console]]
-- [[2026-10-21-growth-radar-ai-search]]
-- [[2026-10-20-growth-radar-seo-content]]
-- [[2026-10-19-weekoverzicht]]
-- [[2026-10-19-seo-conversietest-run-5]]
-- [[2026-10-19-regressiecheck]]
-- [[2026-10-19-productpagina-2-0-inspiratie-en-prototype]]
-- [[2026-10-19-growth-radar-seo-technisch]]
-- [[2026-10-15-growth-radar-cro]]
-- [[2026-10-14-search-console]]
-- [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]]
-- [[2026-10-14-growth-radar-ai-search]]
-- [[2026-10-13-homepage-redesign]]
-- [[2026-10-13-growth-radar-seo-content]]
-- [[2026-10-12-werkthema-vs-live]]
-- [[2026-10-12-weekoverzicht]]
-- [[2026-10-12-voordelenpagina-analyse]]
-- [[2026-10-12-seo-conversietest-run-4]]
-- [[2026-10-12-regressiecheck]]
-- [[2026-10-12-growth-radar-seo-technisch]]
-- [[2026-10-12-blogs-stappenplan]]
-- [[2026-10-12-b2b-pagina-inspiratie]]
-- [[2026-10-11-seo-audit-weekdelta]]
-- [[2026-10-11-omzetgroei-koersbepaling]]
-- [[2026-10-11-concurrentie-seo-per-merk]]
-- [[2026-10-10-growth-radar-social-content]]
-- [[2026-10-09-growth-radar-social]]
-- [[2026-10-08-seo-aeo-geo-aio-sxo-audit]]
-- [[2026-10-08-search-console]]
-- [[2026-10-08-growth-radar-cro]]
-- [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run]]
-- [[2026-10-07-shoppagina-keuzepagina]]
-- [[2026-10-07-notebooklm-ai-agent-tiktoks]]
-- [[2026-10-07-missie-visie-pagina]]
-- [[2026-10-07-dashboard-v4-controle-ui-snelheid]]
-- [[2026-10-07-dashboard-v4-animaties-apple]]
-- [[2026-10-07-dashboard-stand-doel-optimalisaties]]
-- [[2026-10-07-dashboard-content-funnel-routines-klanten]]
-- [[2026-10-06-growth-radar-seo-content]]
-- [[2026-10-06-dashboard-v4-opruimen-focusvensters]]
-- [[2026-10-05-weekoverzicht]]
-- [[2026-10-05-seo-conversietest-run-3]]
-- [[2026-10-05-regressiecheck]]
-- [[2026-10-05-growth-radar-seo-technisch]]
-- [[2026-10-04-dashboard-herindeling-ai-mail-koppelingen]]
-- [[2026-10-04-dashboard-efferd-volgorde-cijfers]]
-- [[2026-10-04-dashboard-bruikbaarheidsaudit]]
-- [[2026-10-03-growth-radar-social-content]]
-- [[2026-10-03-dashboard-agenda-mail-ads-leveranciers]]
-- [[2026-10-02-vault-review]]
-- [[2026-10-02-obsidian-structuur-ai-agents]]
-- [[2026-10-02-navigatie-en-takentijdlijn]]
-- [[2026-10-02-growth-radar-social]]
-- [[2026-10-02-dashboard-ontwerpregels-kpi]]
-- [[2026-10-02-dashboard-apps-patronen]]
-- [[2026-10-02-ai-in-het-dashboard]]
-- [[2026-10-01-growth-radar-cro]]
-- [[2026-09-30-search-console]]
-- [[2026-09-30-growth-radar-ai-search]]
-- [[2026-09-29-growth-radar-seo-content]]
-- [[2026-09-29-crm-dashboard-voorstel]]
-- [[2026-09-28-weekoverzicht]]
-- [[2026-09-28-seo-conversietest-run-2]]
-- [[2026-09-28-regressiecheck]]
-- [[2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard]]
-- [[2026-09-28-growth-radar-seo-technisch]]
-- [[2026-09-26-onderzoek-nieuwe-routines]]
-- [[2026-09-26-dashboard-ux-onderzoek]]
-- [[2026-09-25-seo-audit]]
-- [[2026-09-25-search-console]]
-- [[2026-09-25-growth-radar-social]]
-- [[2026-09-25-evaluatie-routines]]
-- [[2026-09-24-upfront-bestelvolume-schatting]]
-- [[2026-09-24-growth-radar-cro]]
-- [[2026-09-24-financieel-plan-2027-2031-bmc-2031]]
-- [[2026-09-23-seo-conversietest-run-1]]
-- [[2026-09-23-growth-radar-ai-search]]
-- [[2026-09-22-growth-radar-seo-content]]
-- [[2026-09-21-weekoverzicht]]
-- [[2026-09-21-regressiecheck]]
-- [[2026-09-21-growth-radar-seo-technisch]]
-- [[2026-09-21-beachhead-rugby]]
-- [[2026-09-18-growth-radar-social]]
-- [[2026-09-17-growth-radar-cro]]
-- [[2026-09-16-seo-onderzoek-cloud-routine-website]]
-- [[2026-09-16-growth-radar-ai-search]]
-- [[2026-09-15-seo-audit]]
-- [[2026-09-15-regressiecheck]]
-- [[2026-09-15-growth-radar-seo-content]]
-- [[2026-09-15-growth-radar-basislijn]]
-- [[2026-09-14-weekoverzicht]]
-- [[2026-09-07-weekoverzicht]]
-- [[2026-09-07-compliance-todo]]
-- [[2026-09-04-werkdossier-stand-van-zaken]]
-- [[2026-09-03-analytics-kpi-meetgat]]
-- [[2026-08-31-weekoverzicht]]
-- [[2026-08-24-weekoverzicht]]
+Zoek gericht; lees dit niet in zijn geheel.
 
-### _backlog
-- [[ACTIEBACKLOG]]
-- [[AFGEROND]]
-
-### _build
-- [[PROCEDURE]]
-
-### _geheugen
-- [[02_Dashboard/_geheugen/README|_geheugen/README]]
-- [[02_Dashboard/_geheugen/actiecontrole|_geheugen/actiecontrole]]
-- [[backlinks-merchant]]
-- [[concurrentie]]
-- [[denzel-week]]
-- [[growth-radar]]
-- [[02_Dashboard/_geheugen/klantstem|_geheugen/klantstem]]
-- [[materialen]]
-- [[02_Dashboard/_geheugen/productradar|_geheugen/productradar]]
-- [[search-console]]
-- [[seo-conversietest]]
-- [[02_Dashboard/_geheugen/seo-regressiecheck|_geheugen/seo-regressiecheck]]
-- [[strategie-maand]]
-- [[02_Dashboard/_geheugen/uitvoerder|_geheugen/uitvoerder]]
-- [[verbanden]]
-- [[02_Dashboard/_geheugen/website-ux|_geheugen/website-ux]]
-
-### _uitvoer/2026-10-11-live-fixes
-- [[beleid-plakken]]
-
-### _uitvoer/2026-10-11-live-fixes/backup
-- [[policies-voor-11-10]]
-
-### _uitvoer/2026-10-19-beleidspaginas-concepten
-- [[Concepten verzend- en retourbeleid]]
+- Onderzoeksnotities (datum-id in de bestandsnaam): 98 notities
+- Routines: 18 notities
+- Weekoverzichten: 5 notities
+- _backlog: 2 notities
+- _build: 1 notities
+- _geheugen: 16 notities
+- _uitvoer: 3 notities

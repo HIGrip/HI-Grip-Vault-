@@ -76,4 +76,4 @@ B2C draait om emotie en prestatie, B2B om zekerheid en bewijs. De uitwerking sta
 > Het Canva-document *MERK & STRATEGIE* kent één doelgroep, de prestatiegerichte HÏ Grip sporter. Onderstaande persona's zijn daarom niet meer leidend en staan hier alleen ter archivering.
 > Betrokken Ouders · Trendbewuste Talenten · Fanatieke Sporters · Toekomstige Pro's · Blessuregevoelige Sporters · Bewuste Sporters. B2B-oud: Innovatieve Sportclubs · Performance Retailers · Pilates/Sportscholen.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[Home]]

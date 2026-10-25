@@ -78,3 +78,5 @@ Terug naar [[Home]].
 ## Regel voor nieuwe notities
 
 Elke nieuwe notitie krijgt de navigatieregel naar de Brand Core en haar map-index. Dat doet het script `04_Agent_Infrastructuur/Beheer/vault_nav.py` automatisch (`python "04_Agent_Infrastructuur/Beheer/vault_nav.py"`). Het script meldt ook welke notities nog los staan.
+
+> Map: [[Home]]

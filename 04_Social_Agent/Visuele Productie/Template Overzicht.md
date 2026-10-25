@@ -49,4 +49,4 @@ Altijd in **wit én zwart**. Logo, marges en accenten staan vast — alleen beel
 - [[Logo & Kleurenpalet]] — Visuele regels
 - [[Content Strategie]] — Welk contenttype op welk sjabloon
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

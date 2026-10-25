@@ -39,4 +39,4 @@ In onze content laten we **performance** zien: snelle, scherpe, krachtige foto's
 - [[Stock Bronnen]] — Waar beeld vandaan komt als eigen beeld ontbreekt
 - [[Logo & Kleurenpalet]] — Kleuren en typografie in beeld
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Home]]
+> Map: [[07 Design Agent — Index]]

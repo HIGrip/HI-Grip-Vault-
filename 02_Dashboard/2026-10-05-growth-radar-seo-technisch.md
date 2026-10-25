@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — SEO-techniek als nieuws (geen kwalificerende vondst)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Geen relevante ontwikkelingen vandaag. Alles wat vandaag over Google-algoritme-updates, Core Web Vitals, structured data, Merchant Center en de Shopify-changelog naar boven kwam, viel af op de harde filter uit de routine: al bekend sinds de vorige seo-technisch-run (28 september), te vaag om aan higrip.nl te koppelen, of niet terug te voeren op een primaire bron met een 2026-datum.

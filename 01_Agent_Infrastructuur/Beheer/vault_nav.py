@@ -176,7 +176,9 @@ def main():
         if rel in ROOT_SKIP:
             continue
         if not (VAULT / rel).exists():
-            continue  # dry-run: index bestaat nog niet = rel.rsplit("/", 1)[-1].startswith("Agents ")
+            continue  # dry-run: index bestaat nog niet
+        text, bom, crlf = read(rel)
+        keep_old = rel.rsplit("/", 1)[-1].startswith("Agents ")
         new = strip_lines(text, keep_old)
         new = strip_section(new, RESEARCH_HEADING)
         is_hub = top in HUBS and rel == HUBS[top]

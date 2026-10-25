@@ -6,6 +6,8 @@ bijgewerkt: 2026-10-01
 
 # Denzel Weekoverzicht — Routine
 
+> Map: [[Waar staat wat]]
+
 > [!important] Sinds 25-09-2026
 > De prompt die de routine uitvoert staat in [[Denzel-weekoverzicht]] (`02_Dashboard/Routines/`). Dit bestand is de achtergrond en de wijzigingsgeschiedenis. Een wijziging aan de werking doe je in het promptbestand.
 
@@ -72,12 +74,3 @@ bijgewerkt: 2026-10-01
 - [[Stappenplan — Verdere Bouw]]
 - [[Feedback & Iteratie Log]]
 - [[Evaluatiecriteria (B2B Klanten)]], [[Voorwaarden Samenwerking]] — Criteria die de routine gebruikt bij een zoekactie
-
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie
-- [[2026-09-25-evaluatie-routines]] — Evaluatie routines — Growth Radar, regressiecheck, SEO-conversietest, cloud-routine website, Denzel
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

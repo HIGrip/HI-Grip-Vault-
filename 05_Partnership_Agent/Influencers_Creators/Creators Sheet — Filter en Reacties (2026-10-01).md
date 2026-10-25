@@ -72,4 +72,4 @@ De rugbyspelers staan sinds 1-10 niet meer op Creators maar op het tabblad Atlet
 - @hugostraver is afgevallen omdat hij al samenwerkt met Passa.
 - Twaalf creators hebben niet gereageerd en krijgen een reminder. Dat is de grootste groep om opnieuw te benaderen.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

@@ -4,7 +4,6 @@ gebied: content-agent
 bijgewerkt: 2026-10-01
 ---
 
-
 > Vaste structuur en regels voor Reels en TikToks. Voor editing stijl: zie [[Editing Stijl Gids Video]]. Voor captions: zie [[Caption Gids per Platform]].
 
 ---
@@ -114,10 +113,4 @@ Stijl: Poppins Bold, wit, onderaan beeld.
 - [[Video Productie Checklist]]
 - [[Tekst-overlay Gids]]
 
-## Gerelateerd onderzoek (automatisch)
-
-Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
-
-- [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
-
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]
+> Map: [[04 Social Agent — Index]]

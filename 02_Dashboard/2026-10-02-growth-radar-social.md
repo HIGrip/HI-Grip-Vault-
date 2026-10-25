@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Growth Radar — Social naar website (geen kwalificerende vondst)
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Geen relevante ontwikkelingen vandaag. Alles wat vandaag over paid social, creatives, attributie, CAPI en funnel naar boven kwam, viel af op de harde filter uit de routine: geen primaire bron, niet geldig voor Nederland, of al bekend sinds de social-run van 25 september.

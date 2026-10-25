@@ -99,15 +99,12 @@ if "--limit" in ARGS:
     LIMIET = int(ARGS[ARGS.index("--limit") + 1])
 ALLEEN_A = "--alleen-trapA" in ARGS
 
-
 _logfile = open(UIT_LOG, "w", encoding="utf-8")
-
 
 def log(msg=""):
     print(msg)
     _logfile.write(msg + "\n")
     _logfile.flush()
-
 
 def laad_bekende_handles():
     """Dedupe: alles wat al in de Influencer Database staat of al beoordeeld is."""
@@ -128,7 +125,6 @@ def laad_bekende_handles():
     except Exception:
         log("Nog geen eerder-beoordeeld-lijst - die wordt na deze run aangemaakt")
     return handles
-
 
 # ── API-aanroepen vanuit de paginacontext ────────────────────────────────────
 
@@ -172,7 +168,6 @@ async (a) => {
 }
 """
 
-
 def pk_van_seed(page, username):
     """Seeds hebben nog geen pk - die staat in de profielpagina zelf."""
     try:
@@ -187,7 +182,6 @@ def pk_van_seed(page, username):
     except Exception as e:
         log(f"    kon @{username} niet laden: {e}")
     return None
-
 
 def main():
     bekend = laad_bekende_handles()
@@ -375,7 +369,6 @@ def main():
         browser.close()
     _logfile.close()
 
-
 if __name__ == "__main__":
     main()
 ```
@@ -444,7 +437,6 @@ OOK_TWIJFEL = "--ook-twijfel" in ARGS
 LIMIET = int(ARGS[ARGS.index("--limit") + 1]) if "--limit" in ARGS else None
 BESTAND = ARGS[ARGS.index("--bestand") + 1] if "--bestand" in ARGS else None
 
-
 def nieuwste_trapB():
     # Let op de suffix-check: "_trapA" als losse substring sluit ook
     # "HiGrip_trapAB_..." uit, want daar zit "_trapA" gewoon in.
@@ -454,7 +446,6 @@ def nieuwste_trapB():
         raise SystemExit("Geen trap B-uitvoer gevonden - draai eerst ig_zoek_trapAB.py")
     return sorted(kand)[-1]
 
-
 def _friendly(resp):
     try:
         if "/graphql/query" not in resp.url:
@@ -463,14 +454,11 @@ def _friendly(resp):
     except Exception:
         return ""
 
-
 def is_reels_query(resp):
     return "ReelsTabContent" in _friendly(resp)
 
-
 def is_posts_query(resp):
     return "PolarisProfilePosts" in _friendly(resp)
-
 
 def zoek_edges(obj):
     """De respons nest de posts onder een lange xdt_api__v1__feed__...-sleutel."""
@@ -487,7 +475,6 @@ def zoek_edges(obj):
             if r:
                 return r
     return None
-
 
 def meet(node):
     """Haalt de cijfers uit één post.
@@ -530,7 +517,6 @@ def meet(node):
             "caption": (cap or "")[:200], "verborgen": verborgen,
             "eigenaar": eigenaar}
 
-
 def _haal(page, url, matcher):
     try:
         with page.expect_response(matcher, timeout=20000) as info:
@@ -538,7 +524,6 @@ def _haal(page, url, matcher):
         return zoek_edges(info.value.json().get("data") or {})
     except Exception:
         return None
-
 
 def doormeten(page, username, volgers):
     """Twee bronnen, want geen van beide heeft alles.
@@ -611,7 +596,6 @@ def doormeten(page, username, volgers):
             "collab_posts_overgeslagen": vreemd,
             "recent_posts": recent, "captions": captions[:5]}
 
-
 def onmogelijk(m, volgers):
     """Laatste vangnet: cijfers die niet kunnen kloppen nooit als feit melden.
 
@@ -627,7 +611,6 @@ def onmogelijk(m, volgers):
                 f"(factor {m['avg_views']//volgers}) - vrijwel zeker cijfers van "
                 f"een collab-partner").replace(",", ".")
     return None
-
 
 def toets(m, volgers):
     """Past de criteria toe. Niet gemeten is NIET hetzelfde als niet gehaald."""
@@ -671,7 +654,6 @@ def toets(m, volgers):
     if redenen:
         return "AFGEVALLEN", redenen
     return ("GESLAAGD" if not vlaggen else "GESLAAGD_MET_VLAG"), vlaggen
-
 
 def main():
     bron = BESTAND or nieuwste_trapB()
@@ -781,7 +763,6 @@ def main():
         print(f"  {ongemeten} niet kunnen meten - die zijn NIET afgewezen, alleen ongemeten")
     print(f"\n  eindlijst -> {UIT_TXT}")
     print(f"  ruwe data -> {UIT_JSONL}")
-
 
 if __name__ == "__main__":
     main()
@@ -931,7 +912,6 @@ CONCURRENT = re.compile(
 
 DREMPEL_HOUDEN = 7
 DREMPEL_TWIJFEL = 2
-
 
 def beoordeel(profiel):
     """
@@ -1095,10 +1075,8 @@ from playwright_stealth import Stealth
 
 UNATTENDED = "--unattended" in sys.argv
 
-
 class LoginRequiresVerification(Exception):
     pass
-
 
 class SystemExit_Degradatie(Exception):
     """JSON-endpoint geblokkeerd; doorgaan levert alleen schijnresultaat."""
@@ -1228,7 +1206,6 @@ SPORT_HINTS = re.compile(
 
 MAX_CAPTIONS_STORED = 5
 
-
 # ── auth ─────────────────────────────────────────────────────────────────────
 
 def dismiss_cookies(page):
@@ -1244,7 +1221,6 @@ def dismiss_cookies(page):
         except Exception:
             pass
 
-
 def is_logged_in(page):
     try:
         page.wait_for_selector(
@@ -1254,7 +1230,6 @@ def is_logged_in(page):
         return True
     except Exception:
         return False
-
 
 def login(context, page):
     from ig_search_higrip import USERNAME, PASSWORD
@@ -1339,7 +1314,6 @@ def login(context, page):
     except Exception as e:
         print(f"Kon sessie niet opslaan: {e}\n")
 
-
 # ── helpers ──────────────────────────────────────────────────────────────────
 
 def parse_count(text):
@@ -1378,7 +1352,6 @@ def parse_count(text):
         num *= 1_000_000
     return int(num)
 
-
 def load_known_handles():
     """Leest bestaande handles uit de Influencer Database (dedupe: al gevonden/benaderd)."""
     handles = set()
@@ -1392,7 +1365,6 @@ def load_known_handles():
         print(f"Kon Influencer Database niet lezen voor dedupe ({e}) - ga verder zonder\n")
     return handles
 
-
 # ── profiel-check: JSON-endpoint (robuust) met DOM-fallback ─────────────────
 
 def _wait_for_queries(page, captured, names, timeout_s):
@@ -1400,7 +1372,6 @@ def _wait_for_queries(page, captured, names, timeout_s):
         if all(n in captured for n in names):
             return
         page.wait_for_timeout(500)
-
 
 def fetch_profile_graphql(page, username):
     """Leest de GraphQL-antwoorden die de profielpagina zelf ophaalt.
@@ -1477,7 +1448,6 @@ def fetch_profile_graphql(page, username):
     finally:
         page.remove_listener("response", on_resp)
 
-
 def fetch_profile_json(page, username):
     """Haalt profieldata op via JS fetch() vanuit de Instagram-paginacontext.
 
@@ -1520,7 +1490,6 @@ def fetch_profile_json(page, username):
         return (data.get("data") or {}).get("user")
     except Exception:
         return None
-
 
 def fetch_profile_dom_fallback(page, username):
     """
@@ -1617,7 +1586,6 @@ def fetch_profile_dom_fallback(page, username):
         }
     except Exception:
         return None
-
 
 def evaluate_profile(page, username):
     """
@@ -1805,7 +1773,6 @@ def evaluate_profile(page, username):
 
     return result
 
-
 # ── bron 1: hashtags ──────────────────────────────────────────────────────────
 
 def get_post_usernames(page, hashtag):
@@ -1886,7 +1853,6 @@ def get_post_usernames(page, hashtag):
             time.sleep(0.5)
 
     return usernames
-
 
 # ── bron 2: following-lijst van seed-accounts ────────────────────────────────
 
@@ -1996,7 +1962,6 @@ def get_following_list(page, username, max_scroll=40):
         print(f"    Fout: {e}")
         return []
 
-
 # ── bron 3: commenters op referentie-accounts ────────────────────────────────
 
 SKIP_PATHS = {
@@ -2005,7 +1970,6 @@ SKIP_PATHS = {
     "audio", "reels", "direct", "inbox", "ar", "music", "nametag", "login",
     "signup", "legal", "help", "press", "api", "blog", "jobs", "shop",
 }
-
 
 def get_reel_urls(page, username, limit):
     print(f"    @{username} - reels ophalen...")
@@ -2022,7 +1986,6 @@ def get_reel_urls(page, username, limit):
         return hrefs
     except Exception:
         return []
-
 
 def get_commenters_from_reel(page, reel_href):
     url = f"https://www.instagram.com{reel_href}" if reel_href.startswith("/") else reel_href
@@ -2080,7 +2043,6 @@ def get_commenters_from_reel(page, reel_href):
     except Exception:
         return []
 
-
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def new_context(p):
@@ -2106,7 +2068,6 @@ def new_context(p):
     page = context.new_page()
     Stealth().apply_stealth_sync(page)
     return browser, context, page
-
 
 def main():
     known_handles = load_known_handles()
@@ -2296,9 +2257,8 @@ def main():
         print(f"\nKon output niet wegschrijven: {e}")
         print(json.dumps(results, ensure_ascii=False, indent=2))
 
-
 if __name__ == "__main__":
     main()
 ```
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[05 Partnership Agent — Index]] · [[Home]]
+> Map: [[05 Partnership Agent — Index]]

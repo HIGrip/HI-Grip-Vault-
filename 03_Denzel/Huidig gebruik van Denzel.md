@@ -15,11 +15,11 @@ status: stand van zaken per 2026-10-19 — controleer bij gebruik tegen de bron
 
 ## 1. Hoe Denzel wordt aangeroepen
 
-| Manier | Wat er gebeurt |
-|---|---|
+| Manier                                         | Wat er gebeurt                                                                                                                                                                                                          |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Hermes (desktop of chat), profiel `denzel`** | `SOUL.md` verwijst naar de vault. Skill `higrip-vault` laadt voor merk, feiten en harde grenzen; skill `higrip-denzel` voor routeren en briefings. Hoofdagents zijn de profielen `website`, `content` en `partnership`. |
-| **Sub-agents** | `delegate_task`, parallel, met alleen het pad naar hun eigen Identiteit en Werkplek (zie `references/sub-agents.md` in `higrip-denzel`). |
-| **Cloudroutine "Denzel-weekoverzicht"** | Nog Claude op info@, maandag 06:45 NL-tijd. Prompt: [[Denzel-weekoverzicht]]. Wordt overgezet naar een Hermes-cronjob (zie bouwplan stap 3). |
+| **Sub-agents**                                 | `delegate_task`, parallel, met alleen het pad naar hun eigen Identiteit en Werkplek (zie `references/sub-agents.md` in `higrip-denzel`).                                                                                |
+| **Cloudroutine "Denzel-weekoverzicht"**        | Nog Claude op info@, maandag 06:45 NL-tijd. Prompt: [[Denzel-weekoverzicht]]. Wordt overgezet naar een Hermes-cronjob (zie bouwplan stap 3).                                                                            |
 
 Wie hem gebruikt: Lars; het [[Opdrachtprotocol]] noemt Tigo en Timo ook als opdrachtgevers.
 

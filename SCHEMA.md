@@ -18,15 +18,16 @@ status: concept — ter goedkeuring door Lars en Timo (AI-structuur)
 
 ## Waar staat wat
 
-| Vraag | Map |
-|---|---|
-| Wat is waar (prijzen, handles, claims)? | `00_Brand_Core/Feiten & Actuele Staat.md` |
-| Hoe praat/ziet HÏ Grip eruit? | `00_Brand_Core/` |
-| Vakkennis social / partnerships / website / design | `04_Social_Agent` / `05_Partnership_Agent` / `06_Website_Agent` / `07_Design_Agent` |
-| Wie is welke agent, wat mag hij? | `01_Agent_Infrastructuur/` (per hoofdagent één `Agents <naam>.md`, incl. sub-agents en QA; spelregels) en `03_Denzel/` (Denzel, alleen orchestrator) |
-| Feedback, leerregels, kwaliteit, compliance | `08_Operations_Agent/` |
-| Onderzoek, routine-rapporten, acties | `02_Dashboard/` (backlog: `_backlog/ACTIEBACKLOG.md`) |
-| Wat is er gedaan en wanneer? | [[log]] (nieuw) en de git-historie |
+| Vraag                                              | Map                                                                                                                                                  |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wat is waar (prijzen, handles, claims)?            | `00_Brand_Core/Feiten & Actuele Staat.md`                                                                                                            |
+| Hoe praat/ziet HÏ Grip eruit?                      | `00_Brand_Core/`                                                                                                                                     |
+| Vakkennis social / partnerships / website / design | `04_Social_Agent` / `05_Partnership_Agent` / `06_Website_Agent` / `07_Design_Agent`                                                                  |
+| Wie is welke agent, wat mag hij?                   | `01_Agent_Infrastructuur/` (per hoofdagent één `Agents <naam>.md`, incl. sub-agents en QA; spelregels) en `03_Denzel/` (Denzel, alleen orchestrator) |
+| Feedback, leerregels, kwaliteit, compliance        | `08_Operations_Agent/`                                                                                                                               |
+| Onderzoek, routine-rapporten, acties               | `02_Dashboard/` (backlog: `_backlog/ACTIEBACKLOG.md`)                                                                                                |
+| Wat is er gedaan en wanneer?                       | [[log]] (nieuw) en de git-historie                                                                                                                   |
+|                                                    |                                                                                                                                                      |
 
 Regel: één plek per feit. Staat iets op twee plekken, dan is één van de twee een verwijzing.
 

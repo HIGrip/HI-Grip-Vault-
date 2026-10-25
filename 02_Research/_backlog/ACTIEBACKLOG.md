@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 25 oktober 2026 (actiecontrole)
+Laatst bijgewerkt: 25 oktober 2026 (growth-radar)
 Open: 29 · Afgerond: 8 (3 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -284,4 +284,10 @@ Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus n
 **18 okt 2026:** 27 open punten (backlog, `dubbel` niet meegeteld) — nog steeds boven de 15 uit de vuistregel, maar niet meer gestegen sinds 11 okt. Geen P1-punt staat al drie weken zonder beweging: alle vijf P1-punten (de twee regressiepunten, punt 1, punt 2, punt 4) zijn na 24 september bijgewerkt, de meeste nog op 12 of 14 oktober. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep, 4 okt, 11 okt) staan nog open, want nog niet samengevoegd:
 - **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
 - **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**25 okt 2026:** 29 open punten (backlog, `dubbel` niet meegeteld —3 dubbel) — nog steeds boven de 15 uit de vuistregel, iets gestegen sinds 18 okt (twee nieuwe regressiepunten, rugby-H1 en terugbetalingsbeleid-titel, zijn erbij gekomen op 19 okt). Geen P1-punt staat al drie weken zonder beweging: de drie regressiepunten en punt 4 zijn alle op 19 oktober bijgewerkt (6 dagen), punt 1 op 12 oktober (13 dagen). Punt 2 (reviewapp) staat sinds 11 oktober al expliciet als blokkade gemarkeerd (wacht op een menselijke keuze) — geen nieuwe actie nodig. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep t/m 18 okt) staan nog open, want nog niet samengevoegd:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
+- **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
 Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

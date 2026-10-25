@@ -14,7 +14,7 @@ status: concept — besluiten van Lars van 12-10-2026 verwerkt
 | `01_Agent_Infrastructuur` | `03_Denzel` |
 |---|---|
 | De **structuur en spelregels** van het hele agent-systeem: wie rapporteert aan wie, wie vertelt wat aan wie, welke protocollen gelden voor iedereen | Alles over **Denzel zelf**: zijn rol, grenzen, werkwijze, ritmes en handboek |
-| Voorbeelden: [[Agent Hiërarchie & Structuurschema]], [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], [[Goedkeuringsworkflow]] | Voorbeelden: [[Identiteit Denzel]], [[Soul Denzel]], [[Routeringsgids]], [[Kwaliteitscontrole]] |
+| Voorbeelden: [[Agent Hiërarchie & Structuurschema]], [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], [[Goedkeuringsworkflow]] | Voorbeelden: [[Agents Denzel]], [[Routeringsgids]], [[Agents Denzel]] |
 | Verandert zelden en geldt voor alle agents | Verandert met Denzels werk; Lars keurt wijzigingen in scope en autonomie goed |
 
 Regel: staat iets in 04 en gaat het over de spelregels voor iedereen, dan blijft het daar. Gaat het over wat Denzel doet, dan staat het hier en verwijst het naar 04 voor de spelregel. Niets staat op beide plekken.
@@ -22,9 +22,9 @@ Regel: staat iets in 04 en gaat het over de spelregels voor iedereen, dan blijft
 ## Lees dit eerst — bij elke sessie van Denzel
 
 1. `CLAUDE.md` in de vault-root en [[Feiten & Actuele Staat]].
-2. [[Identiteit Denzel]] en [[Soul Denzel]].
+2. [[Agents Denzel]].
 3. [[Leerregels per Agent]], de secties "Voor alle agents" en "Denzel", en de basisregels in [[user]].
-4. [[Kwaliteitslog Overzicht]] (tot de verhuizing: [[Agent Werk & Kwaliteit Overzicht]]): staat er iets op "wacht op Lars"? Stel dan de realiteitscheck-vraag (zie [[Ritmes]]).
+4. [[Kwaliteitslog Overzicht]] (tot de verhuizing: [[Agent Werk & Kwaliteit Overzicht]]): staat er iets op "wacht op Lars"? Stel dan de realiteitscheck-vraag (zie [[Agents Denzel]]).
 5. Daarna alleen de handboeknotitie die bij de opdracht past.
 
 ## Onder Denzel
@@ -43,21 +43,21 @@ QA-verdicten gaan naar de eigen hoofdagent en altijd als kopie naar Denzel. Gede
 
 ## Stand van zaken
 
-[[Huidig gebruik van Denzel]] beschrijft hoe Denzel nu wordt aangeroepen en gebruikt, wat er goed gaat, waar het wringt en wat we niet weten. Uitgangspunt voor de herinrichting.
+[[Agents Denzel]] beschrijft hoe Denzel nu wordt aangeroepen en gebruikt, wat er goed gaat, waar het wringt en wat we niet weten. Uitgangspunt voor de herinrichting.
 
 ## Handboek — hoe Denzel werkt
 
 | Notitie | Waarvoor |
 |---|---|
 | [[Routeringsgids]] | Welke taak naar welke agent, en wie vertelt wat aan wie |
-| [[Kwaliteitscontrole]] | Risiconiveaus, verdicten, correctierondes en escalatie |
-| [[Escalatie en besluiten]] | Wat naar Lars gaat, in welk formaat, en hoe er gebundeld wordt |
-| [[Ritmes]] | Per sessie, wekelijks en maandelijks |
-| [[Vaktheorie Denzel]] | De algemene kennis over orkestreren, delegeren en kwaliteit bewaken |
+| [[Agents Denzel]] | Risiconiveaus, verdicten, correctierondes en escalatie |
+| [[Agents Denzel]] | Wat naar Lars gaat, in welk formaat, en hoe er gebundeld wordt |
+| [[Agents Denzel]] | Per sessie, wekelijks en maandelijks |
+| [[Agents Denzel]] | De algemene kennis over orkestreren, delegeren en kwaliteit bewaken |
 
 ## Status
 
-Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerregels, routeren en de QA-checks; die besluiten zijn verwerkt. De overige autonomie-niveaus van de nieuwe sub-agents blijven een voorstel tot Lars of Timo ze goedkeurt. Voortgang en open punten: [[Werkplek Denzel]]. Hoe Denzel en de agents met het dashboard werken: [[Agents en het dashboard]].
+Opgezet op 2026-10-02. Op 12-10-2026 heeft Lars besloten over afvinken, leerregels, routeren en de QA-checks; die besluiten zijn verwerkt. De overige autonomie-niveaus van de nieuwe sub-agents blijven een voorstel tot Lars of Timo ze goedkeurt. Voortgang en open punten: [[Agents Denzel]]. Hoe Denzel en de agents met het dashboard werken: [[Agents en het dashboard]].
 
 ## Alle notities in deze map (automatisch)
 
@@ -65,17 +65,17 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
 - [[Agents Denzel]]
-- [[Huidig gebruik van Denzel]]
-- [[Identiteit Denzel]]
-- [[Soul Denzel]]
-- [[Werkplek Denzel]]
+- [[Agents Denzel]]
+- [[Agents Denzel]]
+- [[Agents Denzel]]
+- [[Agents Denzel]]
 
 ### Handboek
-- [[Escalatie en besluiten]]
-- [[Kwaliteitscontrole]]
-- [[Ritmes]]
+- [[Agents Denzel]]
+- [[Agents Denzel]]
+- [[Agents Denzel]]
 - [[Routeringsgids]]
-- [[Vaktheorie Denzel]]
+- [[Agents Denzel]]
 
 ### Kwaliteitslog
 - [[Kwaliteitslog Overzicht]]

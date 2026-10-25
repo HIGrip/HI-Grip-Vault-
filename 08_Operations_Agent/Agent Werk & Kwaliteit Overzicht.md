@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-08
 
 # Agent Werk & Kwaliteit Overzicht
 
-> Doorlopend dashboard — niet alleen wekelijks. Vastgesteld 21 augustus 2026 op verzoek van lars: hij wil de output van de agents kunnen monitoren, maar Denzel doet de eerste beoordeling (zie [[Soul Denzel]], sectie "Kwaliteitscontrole-loop"). Bij elke sessie waarin een hoofdagent/sub-agent iets oplevert op niveau "Voorstellen, ik keur goed" of "Altijd overleg vooraf", werkt Denzel dit bestand bij — nieuwe rij of statuswijziging, nooit een oude rij stilzwijgend overschrijven.
+> Doorlopend dashboard — niet alleen wekelijks. Vastgesteld 21 augustus 2026 op verzoek van lars: hij wil de output van de agents kunnen monitoren, maar Denzel doet de eerste beoordeling (zie [[Agents Denzel]], sectie "Kwaliteitscontrole-loop"). Bij elke sessie waarin een hoofdagent/sub-agent iets oplevert op niveau "Voorstellen, ik keur goed" of "Altijd overleg vooraf", werkt Denzel dit bestand bij — nieuwe rij of statuswijziging, nooit een oude rij stilzwijgend overschrijven.
 
 ---
 
@@ -128,7 +128,7 @@ bijgewerkt: 2026-10-08
 
 ## Gerelateerde bestanden
 
-- [[Soul Denzel]] — De kwaliteitscontrole-loop die dit dashboard voedt
+- [[Agents Denzel]] — De kwaliteitscontrole-loop die dit dashboard voedt
 - [[Denzel Weekoverzicht — Routine]] — De geautomatiseerde routine die dit ook bijwerkt
 - [[Feedback & Iteratie Log]] — Bevindingen over het bóuwen van agents (dit dashboard gaat over hun lópende werk/output)
 - [[Stappenplan — Verdere Bouw]]

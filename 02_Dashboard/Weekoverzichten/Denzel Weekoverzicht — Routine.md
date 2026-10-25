@@ -11,7 +11,7 @@ bijgewerkt: 2026-10-01
 > [!important] Sinds 25-09-2026
 > De prompt die de routine uitvoert staat in [[Denzel-weekoverzicht]] (`02_Dashboard/Routines/`). Dit bestand is de achtergrond en de wijzigingsgeschiedenis. Een wijziging aan de werking doe je in het promptbestand.
 
-> Technische opzet van het wekelijkse, geautomatiseerde Denzel-overzicht. Vastgesteld 21 augustus 2026 op verzoek van lars: hij wil niet meer zelf hoeven aansturen hoe vaak een terugkerende taak (bv. een B2B-/Events-zoekactie) gebeurt, en wil één wekelijks moment met Denzel over voortgang/doelen — geautomatiseerd, niet iets wat hij zelf hoeft te starten. Zie [[Soul Denzel]] en `identiteit Denzel.md` voor het mandaat zelf.
+> Technische opzet van het wekelijkse, geautomatiseerde Denzel-overzicht. Vastgesteld 21 augustus 2026 op verzoek van lars: hij wil niet meer zelf hoeven aansturen hoe vaak een terugkerende taak (bv. een B2B-/Events-zoekactie) gebeurt, en wil één wekelijks moment met Denzel over voortgang/doelen — geautomatiseerd, niet iets wat hij zelf hoeft te starten. Zie [[Agents Denzel]] en `identiteit Denzel.md` voor het mandaat zelf.
 >
 > **Live sinds 21 augustus 2026:** https://claude.ai/code/routines/trig_01D9XwMiVvuq1FWr7CLoYTmN — eerste run maandag 24 augustus 2026, 06:05 UTC (08:05 Amsterdam-tijd).
 
@@ -70,7 +70,7 @@ bijgewerkt: 2026-10-01
 
 ## Gerelateerde bestanden
 
-- [[Soul Denzel]] — Het mandaat waar deze routine uitvoering aan geeft
+- [[Agents Denzel]] — Het mandaat waar deze routine uitvoering aan geeft
 - [[Stappenplan — Verdere Bouw]]
 - [[Feedback & Iteratie Log]]
 - [[Evaluatiecriteria (B2B Klanten)]], [[Voorwaarden Samenwerking]] — Criteria die de routine gebruikt bij een zoekactie

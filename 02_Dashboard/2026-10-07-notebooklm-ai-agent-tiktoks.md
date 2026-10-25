@@ -33,7 +33,7 @@ deadline: ""
 |---|---|
 | Harde stopvoorwaarden: bepaal vooraf wanneer een agent stopt en op een mens wacht | Zevende veld in elke briefing: [[Opdrachtprotocol]] stap 3, [[Agents Operations Agent]] en de postvak-opzet van de Stafchef |
 | Meet geaccepteerd werk, niet activiteit | Nieuwe rij in de scorekaart van de [[Verbeterlus]]: aandeel werk dat de opdrachtgever zonder aanpassing goedkeurt |
-| De vijf bewegingen (signaal, aantrekken, overtuigen, behouden, sturen) als indeling | Kaart in [[Vaktheorie Denzel]], sectie 11, met de twee gaten die erin zichtbaar worden |
+| De vijf bewegingen (signaal, aantrekken, overtuigen, behouden, sturen) als indeling | Kaart in [[Agents Denzel]], sectie 11, met de twee gaten die erin zichtbaar worden |
 | CPA, AOV en ROAS als sturende cijfers | Aanvulling bij de Conversie & Analyse Agent: AOV elke week, CPA en ROAS pas zodra er betaalde campagnes zijn (nu geen Meta- of TikTok-pixel) |
 
 ### Bevestigt wat er al staat

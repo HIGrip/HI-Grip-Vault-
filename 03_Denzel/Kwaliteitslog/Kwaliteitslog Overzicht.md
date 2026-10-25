@@ -32,6 +32,6 @@ Het huidige overzicht is één tabel van tientallen lange rijen. Dat leest niema
 
 ## Stand
 
-*Nog leeg. Wordt gevuld zodra de splitsing is uitgevoerd (zie [[Werkplek Denzel]], punt 4).*
+*Nog leeg. Wordt gevuld zodra de splitsing is uitgevoerd (zie [[Agents Denzel]], punt 4).*
 
 > Map: [[03 Denzel — Index]]

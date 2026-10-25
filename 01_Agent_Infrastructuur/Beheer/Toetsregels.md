@@ -7,7 +7,7 @@ status: concept — ter beoordeling door Lars
 
 # Toetsregels — gedeeld door de drie QA-agents
 
-> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Agents Website Agent]], [[Agents Social Agent]], [[Agents Partnership Agent]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Kwaliteitscontrole]]. Het verdictformaat staat daar, niet hier.
+> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Agents Website Agent]], [[Agents Social Agent]], [[Agents Partnership Agent]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Agents Denzel]]. Het verdictformaat staat daar, niet hier.
 
 ## Wat een QA-agent is
 

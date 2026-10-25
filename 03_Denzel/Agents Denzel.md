@@ -8,7 +8,7 @@ status: concept (QA 25-10-2026: voldoende met herstel, herstel verwerkt)
 
 > **Brand Core (00):** [[Feiten & Actuele Staat]] · [[Brand Voice & Tone of Voice]] · [[01 Agent Infrastructuur — Index]]
 
-Merkregels, basisregels 1–14, beslissers, taakregel en veiligheids-, vault-, git- en kluisregels staan hier niet: zie [[user]], `CLAUDE.md` en skill `higrip-vault`. Tool- en configuratiedetails: skill `higrip-denzel`. Achtergrond (loopt achter op dit bestand: noemt nog vier hoofdagents en geen groepschat): [[Agents Denzel]], `03_Denzel/Handboek/`. Feiten staan hier nooit.
+Merkregels, basisregels 1–14, beslissers, taakregel en veiligheids-, vault-, git- en kluisregels staan hier niet: zie [[user]], `CLAUDE.md` en skill `higrip-vault`. Tool- en configuratiedetails: skill `higrip-denzel`. Handboek: [[Routeringsgids]]; de oudere Denzel-bestanden (Identiteit, Soul, Werkplek, rest van het Handboek) zijn vervangen door dit bestand en staan in de git-geschiedenis. Feiten staan hier nooit.
 
 ## 1. Rol en autonomie
 

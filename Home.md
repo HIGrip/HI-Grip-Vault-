@@ -11,18 +11,18 @@
 | Map | Waarvoor | Begin bij |
 |---|---|---|
 | **00_Brand_Core** | Merkfundament: verhaal, waarden, doelgroep, visuele identiteit, strategie. Alles verwijst hiernaar terug. | **[[00 Brand Core]]** · [[Brand Identity Overview]] |
-| **01_Content_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[05 Social Agent — Index]] · [[Content Strategie]] |
-| **02_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[04 Partnership Agent — Index]] · [[Partnership Strategie]] |
-| **03_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[06 Website Agent — Index]] · [[Website Doel & KPI's]] |
-| **04_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`Identiteit <Agent>.md`), hoe hij zich gedraagt (`Soul <Agent>.md`), en de gedeelde regels. | [[01 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
-| **05_Research** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
+| **04_Social_Agent** | Kennisbank voor social content: copy, strategie/planning, visuele productie. | [[04 Social Agent — Index]] · [[Content Strategie]] |
+| **05_Partnership_Agent** | Kennisbank voor B2B-klanten (Lijn A), samenwerkingen/events (Lijn B) en influencers. | [[05 Partnership Agent — Index]] · [[Partnership Strategie]] |
+| **06_Website_Agent** | Kennisbank voor higrip.nl: doel/KPI's, copy, SEO, techniek, conversie. | [[06 Website Agent — Index]] · [[Website Doel & KPI's]] |
+| **01_Agent_Infrastructuur** | Het "systeem": wie elke agent is (`Identiteit <Agent>.md`), hoe hij zich gedraagt (`Soul <Agent>.md`), en de gedeelde regels. | [[01 Agent Infrastructuur — Index]] · [[Agent Hiërarchie & Structuurschema]] |
+| **02_Dashboard** | Alle onderzoek in één vast formaat: routine-rapporten (Growth Radar, regressiecheck, Denzel-week) én losse onderzoeken, met acties en verbanden. Bron van het Research Dashboard. | [[Waar staat wat]] · dashboard: https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS |
 
 ---
 
 ## Kern-ingangen
 
 **Onderzoek**
-- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS — alle onderzoeken, routines en open acties; de bron is `05_Research/` ([[Waar staat wat]])
+- **HÏ Grip Research Dashboard** — https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS — alle onderzoeken, routines en open acties; de bron is `02_Dashboard/` ([[Waar staat wat]])
 
 **Merk** — alles begint bij [[00 Brand Core]]
 - **Leidend document (sinds 30-9-2026):** Canva *MERK & STRATEGIE — HÏ Grip* — https://canva.link/a48n60z2ay1g7bp. Spreekt de vault dit tegen, dan wint het Canva-document.
@@ -39,7 +39,7 @@
 
 **Agent-systeem**
 - [[CLAUDE]] — gedeelde instructies voor elke Claude in deze vault
-- [[01_Agent_Infrastructuur/Routines/README|Routines]] — rolverdeling en prompts van alle routines
+- [[02_Dashboard/Routines/README|Routines]] — rolverdeling en prompts van alle routines
 - [[Agent Hiërarchie & Structuurschema]] — Denzel + 3 hoofdagents + sub-agents
 - [[Agent Bestandsschema (Soul, Identiteit, User)]] — hoe Identiteit <Agent>.md / Soul <Agent>.md / user.md werken
 - [[user]] — gedeeld: wie de founders (Lars, Timo, Tigo) en HÏ Grip zijn
@@ -67,9 +67,9 @@
 | **Zoekscript** | `ig_find_creators.py` (2×/week via Task Scheduler) | zelfde repo (`scripts/`) — back-up-kopie in [[Zoek Script & Gids]] |
 | **Werkafspraken/correcties voor Claude** | losse feedback- en projectregels | Claude Code memory (`MEMORY.md` + `memory/*.md`) |
 | **Wekelijkse routine** | Denzel-weekoverzicht (maandag) | claude.ai cloud-routine — zie [[Denzel Weekoverzicht — Routine]] |
-| **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `05_Research/` in deze vault — [[Waar staat wat]] |
+| **Onderzoek (bron van waarheid)** | notities `JJJJ-MM-DD-slug.md`, `Waar staat wat.md`, buildscript + `PROCEDURE.md` | `02_Dashboard/` in deze vault — [[Waar staat wat]] |
 | **Research Dashboard** | vitrine + werkplek: open acties (NU AANDACHT), feed, aantekeningen; wijzigingen gaan via `/research-sync` terug naar de vault | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (claude.ai, org-intern) |
-| **Routines** | Actiecontrole, Growth Radar, regressiecheck, Search Console, Denzel en meer — notities + `ACTIEBACKLOG.md` | cloudroutines op info@; prompts, tijden en status in [[01_Agent_Infrastructuur/Routines/README\|Routines]]; output in `05_Research/` |
+| **Routines** | Actiecontrole, Growth Radar, regressiecheck, Search Console, Denzel en meer — notities + `ACTIEBACKLOG.md` | cloudroutines op info@; prompts, tijden en status in [[02_Dashboard/Routines/README\|Routines]]; output in `02_Dashboard/` |
 | **Projecten (code)** | padel-landing, redesign, skisokken | `C:\Users\Test\.claude\projects\higrip-padel\`, `higrip-redesign\`, `higrip-skisokken\` |
 | **Archief** | KNVB-scraper, CLAUDE.md-back-ups, oude landingsprojecten — verplaatst 2026-09-17, niets verwijderd | `C:\Users\Test\.claude\archief\` + `README.md` |
 
@@ -85,15 +85,15 @@ Laatste ronde: vault-review van 02-10 (zie [[2026-10-02-vault-review]]); eerdere
 - Feiten, productwaarheid en sportgidsen gelijkgetrokken met het verzendbesluit van 25-09 (geen 22:00-belofte meer)
 - Thema-ID's alleen nog in [[Technische Procedures]]; oude ID's elders weggehaald of als historisch gemarkeerd
 - B2B-koers (geen pilates meer) en founders bijgewerkt in [[user]], [[Aanpak]] en [[Evaluatiecriteria (B2B Klanten)]]
-- Duplicaten weg: `Week 2026-09-21` (staat in `05_Research/`), `Content Pillars — Buffer-tags` (staat in [[Content Pillars]]), `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]])
+- Duplicaten weg: `Week 2026-09-21` (staat in `02_Dashboard/`), `Content Pillars — Buffer-tags` (staat in [[Content Pillars]]), `Denzel … Routineprompt stap 9` (vervangen door [[Denzel-weekoverzicht]])
 - [[Concurrentieanalyse]] gevuld met wat de vault al wist
 
 **Gedaan 2026-09-17**
-- `05_Research/` aangemaakt met 14 notities (migratie van SEO-audit, growth-radar-rapporten, regressiecheck, 4 Denzel-weekoverzichten, werkdossier, compliance-lijst, analytics-meetgat) + [[Waar staat wat]]
-- Research Dashboard gepubliceerd en gepind; procedure in `05_Research/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `05_Research/` (sinds 25-09 vervangen door het promptbestand [[Denzel-weekoverzicht]])
+- `02_Dashboard/` aangemaakt met 14 notities (migratie van SEO-audit, growth-radar-rapporten, regressiecheck, 4 Denzel-weekoverzichten, werkdossier, compliance-lijst, analytics-meetgat) + [[Waar staat wat]]
+- Research Dashboard gepubliceerd en gepind; procedure in `02_Dashboard/_build/PROCEDURE.md`; commands `/research-nieuw` en `/research-sync`; registratiestap in beide lokale routines; Denzel-routine stap 9 → `02_Dashboard/` (sinds 25-09 vervangen door het promptbestand [[Denzel-weekoverzicht]])
 - Oud werk uit `.claude\` naar `.claude\archief\` (README aanwezig); Claude-memory zonder Franklin Gothic, klantenaantal 3000+, verzenddrempel €35
 - [[Content Pillars]] (01_) aangevuld met de Buffer-tagkoppeling uit de 04_-kopie
-- Weekoverzichten t/m 2026-09-14 blijven in `04_Agent_Infrastructuur/Beheer/Weekoverzicht/` als archief; nieuwe weken komen in `05_Research/`
+- Weekoverzichten t/m 2026-09-14 blijven in `02_Dashboard/Weekoverzichten/` als archief; nieuwe weken komen in `02_Dashboard/`
 
 **Gedaan 2026-08-30**
 - Losse `Naamloos*`-bestanden uit de root verwijderd

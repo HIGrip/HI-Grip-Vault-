@@ -141,7 +141,7 @@ Padelpagina herstellen · rugbypagina bouwen · 2.0-voorraad controleren (CTA's 
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-10-12-voordelenpagina-analyse]] — Voordelenpagina higrip.nl — analyse en aanpak, oktober 2026
 

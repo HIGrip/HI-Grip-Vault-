@@ -62,7 +62,7 @@ Uitvoering in het werkthema (check eerst `shopify theme list`), niet direct live
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-09-25-seo-audit]] — SEO-audit higrip.nl 25 september — 54/100, padel-regressie en rugby ontbreekt
 

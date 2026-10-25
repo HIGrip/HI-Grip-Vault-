@@ -295,7 +295,7 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
 - [[2026-09-03-analytics-kpi-meetgat]] — GA4 — het meetgat en de eerste cijfers

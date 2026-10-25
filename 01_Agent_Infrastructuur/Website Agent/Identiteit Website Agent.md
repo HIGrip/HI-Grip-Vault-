@@ -33,7 +33,7 @@ Zorgen dat de website de merkbelofte van HÏ Grip waarmaakt — comfort, vertrou
 ## Sub-agents
 > Onderbouwing: elke categorie hieronder is een submap die al in deze agent-map bestond vóór dit schema er was (Strategie, Technisch, Content, Analyse). SEO en Design waren al door lars benoemd; Website Copy en Conversie & Analyse zijn aangevuld zodat elke bestaande submap een eigen specialist heeft. Autonomie/Harde grenzen/Toon zijn hier het makkelijkst te onderbouwen, want Website Agent heeft als enige al een vastgestelde autonomie-tabel om 1-op-1 uit over te nemen.
 >
-> **Uitzondering (2026-09-14):** categorie "E-mail Marketing" is een nieuwe submap, expliciet op verzoek van lars aangemaakt (`03_Website_Agent/E-mail Marketing/` met Strategie/Stijl/Content) — niet uit een al bestaande map afgeleid, anders dan de onderbouwingsregel hierboven voorschrijft. Gekozen om onder Website Agent te laten vallen (i.p.v. Content Agent) omdat de trigger direct aan blogpublicatie op de website hangt.
+> **Uitzondering (2026-09-14):** categorie "E-mail Marketing" is een nieuwe submap, expliciet op verzoek van lars aangemaakt (`06_Website_Agent/E-mail Marketing/` met Strategie/Stijl/Content) — niet uit een al bestaande map afgeleid, anders dan de onderbouwingsregel hierboven voorschrijft. Gekozen om onder Website Agent te laten vallen (i.p.v. Content Agent) omdat de trigger direct aan blogpublicatie op de website hangt.
 
 ### Categorie: Strategie
 

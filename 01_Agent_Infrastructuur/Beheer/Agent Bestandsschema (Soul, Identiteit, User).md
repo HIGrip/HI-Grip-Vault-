@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Agent Bestandsschema — Soul, Identiteit, User
 
-> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 tweemaal herzien: (1) **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `04_Agent_Infrastructuur/Beheer/user.md`; (2) **Identiteit <Agent>.md en Soul <Agent>.md van de 3 hoofdagents staan niet meer in hun eigen map (01/02/03), maar centraal in `04_Agent_Infrastructuur/[Hoofdagent]/`.** 01/02/03 zijn nu pure kennisbank-mappen (de vakinhoudelijke bronnotities), 04 bevat het hele "systeem" — wie elke agent is en hoe hij zich gedraagt, inclusief de sub-agent-catalogus en hun werkplek-mapjes. Voor de laagstructuur eromheen: zie [[Agent Hiërarchie & Structuurschema]].
+> Bestandsnaam ongewijzigd gehouden (veel bestanden linken hierheen), maar het model is op 2026-07-17 tweemaal herzien: (1) **user.md is niet langer per agent gedupliceerd, maar één gedeeld bestand** in `01_Agent_Infrastructuur/Beheer/user.md`; (2) **Identiteit <Agent>.md en Soul <Agent>.md van de 3 hoofdagents staan niet meer in hun eigen map (01/02/03), maar centraal in `01_Agent_Infrastructuur/[Hoofdagent]/`.** 01/02/03 zijn nu pure kennisbank-mappen (de vakinhoudelijke bronnotities), 04 bevat het hele "systeem" — wie elke agent is en hoe hij zich gedraagt, inclusief de sub-agent-catalogus en hun werkplek-mapjes. Voor de laagstructuur eromheen: zie [[Agent Hiërarchie & Structuurschema]].
 
 ---
 
@@ -80,7 +80,7 @@ bijgewerkt: 2026-10-01
 
 ## user.md (gedeeld, niet per agent)
 
-Ligt op `04_Agent_Infrastructuur/Beheer/user.md`. Bevat: Lars, HÏ Grip in het kort, tone of voice, doelgroep, de agent-structuur, en werkafspraken die voor iedere agent gelden. Alle agents linken hiernaar toe in plaats van een eigen kopie te hebben.
+Ligt op `01_Agent_Infrastructuur/Beheer/user.md`. Bevat: Lars, HÏ Grip in het kort, tone of voice, doelgroep, de agent-structuur, en werkafspraken die voor iedere agent gelden. Alle agents linken hiernaar toe in plaats van een eigen kopie te hebben.
 
 ---
 
@@ -111,7 +111,7 @@ Ligt op `04_Agent_Infrastructuur/Beheer/user.md`. Bevat: Lars, HÏ Grip in het k
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-10-02-obsidian-structuur-ai-agents]] — Obsidian-structuren voor AI-agents en onze vault ernaast gelegd
 

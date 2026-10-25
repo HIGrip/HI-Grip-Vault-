@@ -8,7 +8,7 @@ bijgewerkt: 2026-10-01
 
 ## Status: in ontwikkeling (sinds 2026-08-09)
 
-Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Website Agent-map (`04_Agent_Infrastructuur/Website Agent/`). Bronkennis ([[Homepage Copy & Structuur]], [[Product Pagina Gids]]): zie 03_Website_Agent/Content.
+Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Website Agent-map (`01_Agent_Infrastructuur/Website Agent/`). Bronkennis ([[Homepage Copy & Structuur]], [[Product Pagina Gids]]): zie 06_Website_Agent/Content.
 
 ---
 

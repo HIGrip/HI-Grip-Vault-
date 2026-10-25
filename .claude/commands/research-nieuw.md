@@ -1,18 +1,18 @@
 ---
-description: Registreert een afgerond HÏ Grip-onderzoek als notitie in 05_Research, legt verbanden, bouwt het register, publiceert het Research Dashboard en commit. Gebruik direct na elk onderzoek (routine of losse vraag), met de titel van de notitie als argument.
+description: Registreert een afgerond HÏ Grip-onderzoek als notitie in 02_Dashboard, legt verbanden, bouwt het register, publiceert het Research Dashboard en commit. Gebruik direct na elk onderzoek (routine of losse vraag), met de titel van de notitie als argument.
 argument-hint: <titel van de notitie>
 ---
 
 Je registreert een afgerond onderzoek voor HÏ Grip in de vault. Titel: `$ARGUMENTS`. Ontbreekt de titel, vraag er dan om.
 
-**Lees en volg `05_Research/_build/PROCEDURE.md`, sectie A.** Begin met sectie B (`/research-sync`). De dashboard-URL staat in `CLAUDE.md` (§1).
+**Lees en volg `02_Dashboard/_build/PROCEDURE.md`, sectie A.** Begin met sectie B (`/research-sync`). De dashboard-URL staat in `CLAUDE.md` (§1).
 
 Afleiden, niet vragen:
 - `datum` = vandaag; `id` = `JJJJ-MM-DD-<slug van de titel>`.
 - `bron`/`routine`: `los`, tenzij je in een routine draait.
 - `categorie`, `prioriteit`, `samenvatting`, bevindingen, bronnen en acties: uit het onderzoek dat je net deed.
 - `bronbestand`: het rapport of artifact waar het onderzoek al stond, anders `""`.
-- `gerelateerd`/`vervangt`: door bestaande notities in `05_Research/` te doorzoeken.
+- `gerelateerd`/`vervangt`: door bestaande notities in `02_Dashboard/` te doorzoeken.
 
 Alleen vragen wat niet af te leiden is: een onduidelijke deadline, of een oudere notitie echt achterhaald is.
 

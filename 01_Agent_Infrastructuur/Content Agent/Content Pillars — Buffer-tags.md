@@ -7,7 +7,7 @@ bijgewerkt: 2026-10-01
 # Content Pillars — Buffer-tags
 
 > [!warning] Twee indelingen, open vraag voor lars
-> Dit zijn de **3 Buffer-tags** (vastgesteld 14-9). De kennisbank [[Content Pillars]] in `01_Content_Agent` beschrijft **5 contentpilaren** (formats). Het is niet vastgelegd hoe die twee zich tot elkaar verhouden. Tot lars kiest: Buffer-tags voor het ideeënbord, de 5 pilaren voor de inhoud van de content.
+> Dit zijn de **3 Buffer-tags** (vastgesteld 14-9). De kennisbank [[Content Pillars]] in `04_Social_Agent` beschrijft **5 contentpilaren** (formats). Het is niet vastgelegd hoe die twee zich tot elkaar verhouden. Tot lars kiest: Buffer-tags voor het ideeënbord, de 5 pilaren voor de inhoud van de content.
 
 Vastgesteld 14-9-2026. Dit zijn letterlijk ook de 3 tags in Buffer's ideeënbord (Buffer staat maximaal 3 tags per organisatie toe, dus pillar = tag, 1-op-1).
 

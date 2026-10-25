@@ -63,7 +63,7 @@ Sinds het herstel op 30-08 om 19:42 vuren alle andere e-commerce-events wel (`vi
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-09-04-werkdossier-stand-van-zaken]] — Werkdossier higrip.nl — stand van zaken 4 september 2026
 - [[2026-09-03-analytics-kpi-meetgat]] — GA4 — het meetgat en de eerste cijfers

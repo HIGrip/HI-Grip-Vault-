@@ -1,0 +1,2222 @@
+{
+ "2026-09-03-analytics-kpi-meetgat#872bb605": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "KPI's staan al in kpi.json en shopify.json; Claude voegt AOV en omzet per bezoeker toe.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-03-analytics-kpi-meetgat#8d1d8e60": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Draait het funnelrapport via GA4 en noteert de grootste drop-off.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-03-analytics-kpi-meetgat#96f1208f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan Clarity niet lezen zonder koppeling.",
+  "wat_jij_doet": "Clarity-toegang geven of recordings zelf bekijken."
+ },
+ "2026-09-03-analytics-kpi-meetgat#997d251e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zoekt in GA4 en de thema-geschiedenis naar de oorzaak.",
+  "wat_jij_doet": "Shopify-appgeschiedenis rond januari nakijken."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#1a42e935": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Voert de wijziging daarna door in het testthema.",
+  "wat_jij_doet": "Akkoord geven."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#30d11c31": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Het gaat om een besluit.",
+  "wat_jij_doet": "Lars bepaalt het moment."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#4cf0833c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de onderbouwing (verkeer, kosten) klaar.",
+  "wat_jij_doet": "Besluiten."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#7a54ab83": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de beleidsteksten volgens het feitenbestand.",
+  "wat_jij_doet": "Plakken in admin > Beleid."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#8c9ef446": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Analyseert de reviews en mails die in de vault staan.",
+  "wat_jij_doet": "Geanonimiseerde service-mails aanleveren."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#98a99a09": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Diagnosticeert de widget en zet een schone embed klaar in het testthema.",
+  "wat_jij_doet": "Trustpilot-app configureren en publiceren."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#a6c02566": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Stelt de volgorde vast op GSC-data en legt die vast in de vault.",
+  "wat_jij_doet": "Akkoord geven."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#b7ef376e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een advies en de redirect-regel of een template in het testthema.",
+  "wat_jij_doet": "Kiezen en doorvoeren."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#b83b8e37": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Levert de gewenste instellingen.",
+  "wat_jij_doet": "Instellingen in de EcomSend-app aanpassen."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#c1ccbbfc": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan alleen controleren of het gelukt is.",
+  "wat_jij_doet": "Template toewijzen in admin > Collecties."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#cbad707e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Past het cijfer aan in het testthema, maar alleen als de echte score 4,6 is.",
+  "wat_jij_doet": "Score bevestigen en publiceren."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#ee82c67c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft zoekwoord-eerste titels en meta's voor alle pagina's in een bestand.",
+  "wat_jij_doet": "Plakken in admin."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#f9369bdd": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Exporteert 3 maanden zoekopdrachten en pagina's via de GSC-API naar de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#fc53b6be": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Exporteert de totalen (orders, omzet, AOV, conversie) via ShopifyQL naar de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-04-werkdossier-stand-van-zaken#fc5dfe9d": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Geeft per artikel een advies met data.",
+  "wat_jij_doet": "Besluiten en doorvoeren in admin."
+ },
+ "2026-09-07-compliance-todo#08f96665": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de claimstrategie voor de skisokken (comfort, geen letselpreventie).",
+  "wat_jij_doet": "Akkoord geven."
+ },
+ "2026-09-07-compliance-todo#0c0055d2": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan geen afspraken in de agenda zetten.",
+  "wat_jij_doet": "Q1-check in de agenda zetten."
+ },
+ "2026-09-07-compliance-todo#0dcfc0b5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Voegt de verboden biocide-claims toe aan de copy-checklist in de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-07-compliance-todo#1be6b788": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Controleert formulieren en opt-ins op de site en levert de aanpassingen.",
+  "wat_jij_doet": "Instellingen in Klaviyo of Shopify aanpassen."
+ },
+ "2026-09-07-compliance-todo#24a0372f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zoekt de UPV Textiel-eisen en meldprocedure uit en zet de jaaropgave-datum in een checklist.",
+  "wat_jij_doet": "Aansluiten en melden bij UPV Textiel."
+ },
+ "2026-09-07-compliance-todo#25efb9af": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Meet de EU-omzet buiten NL via ShopifyQL in de Actiecontrole.",
+  "wat_jij_doet": "OSS-aanmelding doen als de grens nadert."
+ },
+ "2026-09-07-compliance-todo#30488d7c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zet de UPV-eisen per doelland in een checklist.",
+  "wat_jij_doet": "Registreren voor de eerste zending."
+ },
+ "2026-09-07-compliance-todo#371037f5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een verzoek aan de fabrikant om het OEKO-TEX-certificaat en de RSL-verklaring.",
+  "wat_jij_doet": "Verzoek versturen."
+ },
+ "2026-09-07-compliance-todo#3d04c3b3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de datalekprocedure en het registersjabloon.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-07-compliance-todo#5c31dc93": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Haalt de ODR-link uit de footer in het testthema en schrijft de klachtenprocedure.",
+  "wat_jij_doet": "Voorwaarden in admin aanpassen en publiceren."
+ },
+ "2026-09-07-compliance-todo#5ca6f59a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de influencer-clausule voor de contracten.",
+  "wat_jij_doet": "Opnemen in de contracten."
+ },
+ "2026-09-07-compliance-todo#70978779": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet het footer- en contactblok in het testthema met plekken voor adres, KvK en btw-id.",
+  "wat_jij_doet": "Gegevens invullen en publiceren."
+ },
+ "2026-09-07-compliance-todo#7c92cd94": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Herschrijft de garantieteksten.",
+  "wat_jij_doet": "Tekst in admin of thema plakken."
+ },
+ "2026-09-07-compliance-todo#8288285a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Maakt de lijst van tools waarvoor een overeenkomst nodig is.",
+  "wat_jij_doet": "Verwerkersovereenkomsten downloaden in elk account."
+ },
+ "2026-09-07-compliance-todo#841f80c9": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft het vezelsamenstellingsblok in het testthema (bij bekende samenstelling).",
+  "wat_jij_doet": "Samenstelling bevestigen, het label laten aanpassen en publiceren."
+ },
+ "2026-09-07-compliance-todo#8f1e2cfb": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een sjabloon voor de verpakkingenadministratie en de EPR-antwoorden.",
+  "wat_jij_doet": "Gegevens invullen in het Verpact- en TikTok-portaal."
+ },
+ "2026-09-07-compliance-todo#95bca180": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een verzoek om een SVHC-verklaring.",
+  "wat_jij_doet": "Verzoek versturen."
+ },
+ "2026-09-07-compliance-todo#a41e0356": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Screent site en teksten op duurzaamheidsclaims en levert vervangende tekst.",
+  "wat_jij_doet": "Aanpassingen live zetten."
+ },
+ "2026-09-07-compliance-todo#ad0b9d7c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Toetst retourpagina en knoptekst en schrijft het modelformulier en de aangepaste teksten.",
+  "wat_jij_doet": "Beleid in admin plakken."
+ },
+ "2026-09-07-compliance-todo#b8f1e4b9": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de B2B-betaaltermijnclausule voor de voorwaarden.",
+  "wat_jij_doet": "Voorwaarden bijwerken."
+ },
+ "2026-09-07-compliance-todo#c005d4e1": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Vergelijkt Thuiswinkel Waarborg en WebwinkelKeur op kosten en eisen.",
+  "wat_jij_doet": "Kiezen en aanmelden."
+ },
+ "2026-09-07-compliance-todo#c217b298": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een checklist voor het importdossier.",
+  "wat_jij_doet": "EORI en vergunning aanvragen."
+ },
+ "2026-09-07-compliance-todo#c5185af4": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft het reviewbeleid (alinea en pagina).",
+  "wat_jij_doet": "Publiceren in admin."
+ },
+ "2026-09-07-compliance-todo#c7eeb693": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt het GPSR-blok in het testthema en een tekst voor label en verpakking.",
+  "wat_jij_doet": "Label laten drukken, batchnummers invoeren en publiceren."
+ },
+ "2026-09-07-compliance-todo#c92ff3a9": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Herschrijft de privacyverklaring op de werkelijke toolset.",
+  "wat_jij_doet": "Plakken in admin > Beleid."
+ },
+ "2026-09-07-compliance-todo#d0aadc5c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Heeft geen toegang tot OneDrive buiten de vault.",
+  "wat_jij_doet": "Map aanmaken in OneDrive."
+ },
+ "2026-09-07-compliance-todo#d4e965b6": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Haalt de prijshistorie op via de Shopify-connector (alleen lezen) en maakt een prijslogboek.",
+  "wat_jij_doet": "Van-prijzen aanpassen als ze niet kloppen."
+ },
+ "2026-09-07-compliance-todo#d9728abb": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de PPWR-toets en een verzoek om een conformiteitsverklaring aan de leverancier.",
+  "wat_jij_doet": "Verpakking meten en het verzoek versturen."
+ },
+ "2026-09-07-compliance-todo#e0e2770b": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zoekt de bron van 95% en 1.17 in vault en literatuur en stelt een formulering voor.",
+  "wat_jij_doet": "Labtest laten doen als er geen bron is en de formulering goedkeuren."
+ },
+ "2026-09-07-compliance-todo#e2982cd0": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Fixt contrast, labels en focus-states in het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-07-compliance-todo#e2a53ef3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Stelt het verwerkingsregister op uit de toollijst.",
+  "wat_jij_doet": "Controleren."
+ },
+ "2026-09-07-compliance-todo#e2fd0adb": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Test de banner in een schone browser en schrijft de instellingen voor Consent Mode v2.",
+  "wat_jij_doet": "Instellingen in de cookie-app aanpassen."
+ },
+ "2026-09-07-compliance-todo#e54f05a9": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een sjabloon voor technische documentatie en risicoanalyse per product in de vault.",
+  "wat_jij_doet": "Productgegevens en testrapporten aanleveren."
+ },
+ "2026-09-07-compliance-todo#e62bb626": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft het klachtenregister-sjabloon en de terugroepprocedure (een A4).",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-07-compliance-todo#ef703dd7": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de vragen voor de verzekeraar op een rij.",
+  "wat_jij_doet": "Polis checken bij de verzekeraar."
+ },
+ "2026-09-07-compliance-todo#f4e503ea": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan het KvK-uittreksel niet inzien.",
+  "wat_jij_doet": "KvK-gegevens controleren in het KvK-portaal."
+ },
+ "2026-09-07-compliance-todo#fed0c5d5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Zet de vragen als checklist klaar.",
+  "wat_jij_doet": "Lars beantwoordt de vragen."
+ },
+ "2026-09-15-seo-audit#070e0039": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een bredere collectiebeschrijving.",
+  "wat_jij_doet": "Tekst plakken bij de collectie in admin."
+ },
+ "2026-09-15-seo-audit#2fb3a15f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de 8 sportlandingspagina's via hi-sport-landing.liquid in het testthema.",
+  "wat_jij_doet": "Testthema publiceren en de pagina's aanmaken."
+ },
+ "2026-09-15-seo-audit#581e7e2f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt het blogartikel publicatieklaar (meta, alts, interne links).",
+  "wat_jij_doet": "Artikel publiceren in admin."
+ },
+ "2026-09-15-seo-audit#7dda01c0": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de alt-teksten en zet twitter:image in het testthema.",
+  "wat_jij_doet": "Alts plakken en het thema publiceren."
+ },
+ "2026-09-15-seo-audit#864864f2": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Herschrijft FAQ-, collectie- en blogteksten naar je-vorm.",
+  "wat_jij_doet": "Plakken in admin of het thema publiceren."
+ },
+ "2026-09-15-seo-audit#cd09f1bd": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Neemt de maandelijkse GSC- en AI-citatietest op in een routineprompt.",
+  "wat_jij_doet": "Routine aanmaken op info@ als dat nog niet is gebeurd."
+ },
+ "2026-09-16-seo-onderzoek-cloud-routine-website#3e155aa4": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Checkt de HTTP-status van de geindexeerde oude URL's en maakt een redirect-CSV.",
+  "wat_jij_doet": "CSV importeren in admin."
+ },
+ "2026-09-16-seo-onderzoek-cloud-routine-website#875468b1": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Bouwt een maattabel-widget met schoenmaat-omrekening in het testthema.",
+  "wat_jij_doet": "Besluiten en publiceren."
+ },
+ "2026-09-21-beachhead-rugby#03c52f62": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Selecteert twee kandidaten uit de Influencer Database en schrijft DM-concepten.",
+  "wat_jij_doet": "Kandidaten benaderen."
+ },
+ "2026-09-21-beachhead-rugby#1c69e4f0": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een meetvraag voor de pilotclubs en een EAN-plan.",
+  "wat_jij_doet": "Meten bij de clubs en besluiten over de maat."
+ },
+ "2026-09-21-beachhead-rugby#23a9609a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de rugby-sportgids per positie in 06_Website_Agent/Content/Sportgidsen/.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-21-beachhead-rugby#369a82cd": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft het pilotvoorstel en de conceptmails aan de clubs.",
+  "wat_jij_doet": "Mails versturen en samples uitleveren."
+ },
+ "2026-09-21-beachhead-rugby#4f10dbcf": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Het gaat om een besluit.",
+  "wat_jij_doet": "Lars bevestigt vraag 9 en 10 in Beachhead Strategie.md."
+ },
+ "2026-09-21-beachhead-rugby#5a25b546": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft pagina en FAQ (Law 4/VWW) in het testthema en maakt een shotlist voor de foto.",
+  "wat_jij_doet": "Foto laten schieten, uploaden en de pagina publiceren."
+ },
+ "2026-09-21-beachhead-rugby#6241b745": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een conceptmail aan het bestuurslid Commercie.",
+  "wat_jij_doet": "Mail versturen."
+ },
+ "2026-09-21-beachhead-rugby#6c704ca5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zet de FAQ met het geverifieerde antwoord in de homepage-template van het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-21-beachhead-rugby#a013dbb8": {
+  "beoordeeld": "2026-10-12",
+  "claude": "ja",
+  "wat_claude_doet": "Maakt een besliskader (kosten, bereik) voor Amsterdam Sevens en de beach-events.",
+  "wat_jij_doet": "Besluit van het team."
+ },
+ "2026-09-21-beachhead-rugby#d7babce5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een retailer-pitchmail met de B2B-voorwaarden.",
+  "wat_jij_doet": "Mail versturen."
+ },
+ "2026-09-21-beachhead-rugby#db86155f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Controleert het assortiment van de vier winkels en schrijft pitchmails.",
+  "wat_jij_doet": "Mails versturen."
+ },
+ "2026-09-21-beachhead-rugby#fe8e8c54": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de post-purchase-vraag klaar (app-advies of Thank-you-blok).",
+  "wat_jij_doet": "App installeren of het blok activeren in de checkout-editor."
+ },
+ "2026-09-21-weekoverzicht#05e354b4": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Analyseert funnel en botverkeer in GA4 en schrijft de filterinstelling uit.",
+  "wat_jij_doet": "Testbestelling op mobiel doen en het filter aanzetten in GA4."
+ },
+ "2026-09-21-weekoverzicht#3a00a6f3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Het gaat om een menselijke beoordeling.",
+  "wat_jij_doet": "Tigo beoordeelt het contentvoorstel."
+ },
+ "2026-09-21-weekoverzicht#4b3d8f18": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Werkt het Update Log bij uit git-log en notities.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-21-weekoverzicht#6026e4cd": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet voor- en nadelen en een concept-outreachmail klaar.",
+  "wat_jij_doet": "Besluiten en de mail versturen."
+ },
+ "2026-09-21-weekoverzicht#611d66c8": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de FAQ- en beleidsteksten met de vastgestelde waarden.",
+  "wat_jij_doet": "Plakken in admin > Beleid en FAQ."
+ },
+ "2026-09-21-weekoverzicht#a3c2e86e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zoekt de openbare zakelijke contactgegevens van de 8 tennisretailers en zet die in de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-21-weekoverzicht#b9537f1d": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zoekt schaal en contactpunt van de Rotterdam Cup op en noteert die in de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-21-weekoverzicht#d28bdc93": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Controleert het thema-ID en de verschillen tussen werkthema en live, en zet een diff klaar.",
+  "wat_jij_doet": "Het herstelpakket naar live publiceren."
+ },
+ "2026-09-23-growth-radar-ai-search#76a1abe1": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Houdt in de Growth Radar bij of ChatGPT Ads in Nederland beschikbaar worden.",
+  "wat_jij_doet": "Advertentieaccount aanmaken zodra dat kan."
+ },
+ "2026-09-23-seo-conversietest-run-1#1b318f84": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Herschrijft zakelijk-, FAQ- en blogteksten naar je-vorm en fixt de typfout in het testthema.",
+  "wat_jij_doet": "Blog- en paginateksten in admin plakken en het thema publiceren."
+ },
+ "2026-09-23-seo-conversietest-run-1#52494c22": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de voorgestelde titels en meta's klaar in een bestand.",
+  "wat_jij_doet": "Plakken in de Shopify admin."
+ },
+ "2026-09-23-seo-conversietest-run-1#6251497e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Lost de [CHECK]'s op waar de vault de maten heeft en zet de link bij de maatkeuze in het testthema.",
+  "wat_jij_doet": "Openstaande maten bevestigen en de maatgids publiceren."
+ },
+ "2026-09-23-seo-conversietest-run-1#aef03a4a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt uit de productwaarheid een tabel met producttype, SKU en EAN per variant.",
+  "wat_jij_doet": "In admin invullen of via bulk-import."
+ },
+ "2026-09-23-seo-conversietest-run-1#b441fff5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een beschrijvende alt-tekst per productfoto.",
+  "wat_jij_doet": "Alt-teksten in admin plakken."
+ },
+ "2026-09-23-seo-conversietest-run-1#b469a68a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een redirect-CSV uit de lijst in het Shopify-logboek.",
+  "wat_jij_doet": "CSV importeren in admin > Omleidingen."
+ },
+ "2026-09-23-seo-conversietest-run-1#db685bc3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een lijst van alle plekken met afwijkende verzend- en retourtekst plus de nieuwe tekst, en past het testthema aan.",
+  "wat_jij_doet": "Beleid en productteksten in admin plakken en het thema publiceren."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#35da0930": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Legt de balans naast de jaarcijfers zodra die in de vault staan.",
+  "wat_jij_doet": "Jaarcijfers 2026 aanleveren na afsluiting."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#6d2f6acc": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Herrekent rente en aflossing in het financieel plan en meldt afwijkingen.",
+  "wat_jij_doet": "Uitkomst akkoord geven."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#83b47803": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet het Qredits-dossier (plan, cijfers, checklist) klaar in de vault.",
+  "wat_jij_doet": "Aanvraag indienen bij Qredits."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#8cdc0d8a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zoekt een recent cijfer voor Nederlandse wintersporters met bron en zet het in de vault.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#9af07018": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Werkt het feitenbestand en Strategische Keuzes in de vault bij.",
+  "wat_jij_doet": "Wijziging bevestigen."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#a7e763f5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een offerteaanvraag (FOB, MOQ, levertijd) als e-mailconcept.",
+  "wat_jij_doet": "Aanvraag naar leveranciers versturen."
+ },
+ "2026-09-24-financieel-plan-2027-2031-bmc-2031#edd40a4a": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de motivatie-alinea in het verslag.",
+  "wat_jij_doet": "Tekst akkoord geven."
+ },
+ "2026-09-24-growth-radar-cro#76b6296e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Herschrijft FAQ en retourtekst naar je-vorm, in het testthema of als tekstbestand.",
+  "wat_jij_doet": "Publiceren of de tekst in admin plakken."
+ },
+ "2026-09-24-upfront-bestelvolume-schatting#3712b6e1": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Werkt een actiedag-plan (mechaniek, bundels, planning) uit in de vault.",
+  "wat_jij_doet": "Besluiten of en wanneer de actiedag doorgaat."
+ },
+ "2026-09-24-upfront-bestelvolume-schatting#8de73eba": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Legt de groeiaannames naast het groeitempo van Upfront en schrijft een korte check.",
+  "wat_jij_doet": "Niets."
+ },
+ "2026-09-25-evaluatie-routines#03ec6b39": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan geen vast moment voor een mens afdwingen.",
+  "wat_jij_doet": "Wekelijks afvinkmoment in de agenda zetten."
+ },
+ "2026-09-25-evaluatie-routines#5c41af01": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Spiegelt de logboek- en Denzel-punten naar ACTIEBACKLOG.md in de vault.",
+  "wat_jij_doet": "Een eigenaar aanwijzen."
+ },
+ "2026-09-25-search-console#0323b05e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Kiest de primaire URL op GSC-data en zet canonical- en linkwijzigingen klaar in het testthema.",
+  "wat_jij_doet": "Keuze bevestigen en publiceren."
+ },
+ "2026-09-25-search-console#6ae3949f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een nieuwe title/meta voor /products/hi-grip-gripsokken-1 in _uitvoer.",
+  "wat_jij_doet": "Meta plakken en de URL opnieuw indienen in Search Console."
+ },
+ "2026-09-25-seo-audit#001be532": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Draait shopify theme list en theme pull van ai-workspace-2.0 naar de lokale map en bevestigt het ID.",
+  "wat_jij_doet": "Niets, tenzij de CLI opnieuw moet inloggen."
+ },
+ "2026-09-25-seo-audit#0ca90574": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de hoofdgids van 1.200+ woorden en de redirect-CSV volgens cluster-plan.json.",
+  "wat_jij_doet": "Gids publiceren en redirects importeren."
+ },
+ "2026-09-25-seo-audit#118b76a0": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Past de schema-snippets (Organization, BlogPosting) aan in het testthema en valideert ze.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-25-seo-audit#13130060": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Haalt de statische 4.5 uit het schema in het testthema.",
+  "wat_jij_doet": "Trustpilot-app koppelen en het thema publiceren."
+ },
+ "2026-09-25-seo-audit#1ab7195e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Levert de Engelse vertalingen als bestand, of een advies om de EN-markt uit te sluiten.",
+  "wat_jij_doet": "Vertalingen in Translate & Adapt plakken of de markt uitzetten."
+ },
+ "2026-09-25-seo-audit#3e55cce2": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de redirect-CSV en de lijst met te verbergen blogs klaar in _uitvoer.",
+  "wat_jij_doet": "Blog unpublishen, artikel verwijderen en redirect importeren in admin."
+ },
+ "2026-09-25-seo-audit#409d7184": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een advies (301 of hernoemen) plus de redirect-regel of een nieuwe titel.",
+  "wat_jij_doet": "Kiezen en in admin doorvoeren."
+ },
+ "2026-09-25-seo-audit#54738768": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Schema-snippets (Organization.url, https://schema.org, sameAs, alternateName, BlogPosting-velden) voorbereiden in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-09-25-seo-audit#5497f485": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Bouwt een compactere mobiele productlayout of sticky ATC in het testthema.",
+  "wat_jij_doet": "Op je telefoon bekijken en publiceren."
+ },
+ "2026-09-25-seo-audit#5c1c6209": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft retourbeleid en voorwaarden volgens het besluit van 25-9 en zet het schema klaar in het testthema.",
+  "wat_jij_doet": "Teksten in admin > Beleid plakken en het thema publiceren."
+ },
+ "2026-09-25-seo-audit#6d7750aa": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Maakt een CSV voor de redirect-import en fixt de FAQ-link in het testthema.",
+  "wat_jij_doet": "CSV importeren bij admin > Navigatie > Omleidingen en het thema publiceren."
+ },
+ "2026-09-25-seo-audit#71f4fc5b": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft 800+ woorden rugbytekst in page.sport-rugby.json in het testthema.",
+  "wat_jij_doet": "Controleren en publiceren."
+ },
+ "2026-09-25-seo-audit#78cb1b3e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Fixt de aankondigingsbalk, de cookiebanner-styling en de tap-targets in het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-25-seo-audit#832a400e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Past de links in page.ontdek-jouw-sport.json en de article-CTA's aan in het testthema en levert de menustructuur.",
+  "wat_jij_doet": "Hoofdnavigatie aanpassen in admin > Navigatie en het testthema publiceren."
+ },
+ "2026-09-25-seo-audit#9e6c49fd": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Screent blogs en FAQ op gezondheidsclaims en levert herschreven tekst met bronvermelding.",
+  "wat_jij_doet": "Teksten in admin of thema overnemen."
+ },
+ "2026-09-25-seo-audit#a96c6e4f": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Fixt og:image-https, de homepage-H1 en de theme-koppen in het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-25-seo-audit#bb55f568": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zet afbeeldingen om naar image_url met width/WebP en meet de scriptkosten in het testthema.",
+  "wat_jij_doet": "Testthema publiceren; eventueel apps uitzetten."
+ },
+ "2026-09-25-seo-audit#d404a8b3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft conceptbio's in de merkstem op basis van wat in de vault staat.",
+  "wat_jij_doet": "Lars levert of keurt de bio's en plakt ze op de pagina."
+ },
+ "2026-09-25-seo-audit#d619f84b": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft Nederlandse alt-teksten per afbeelding in een lijst (bestand + alt).",
+  "wat_jij_doet": "Alt-teksten in admin plakken."
+ },
+ "2026-09-25-seo-audit#d7044ced": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Legt de baseline vast zodra de koppeling er is.",
+  "wat_jij_doet": "google_auth.py --setup draaien en inloggen met het Google-account."
+ },
+ "2026-09-25-seo-audit#e28d3aaa": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Zet de oude padeltekst en FAQ over in templates/page.sport-padel.json in het testthema.",
+  "wat_jij_doet": "Controleren en publiceren."
+ },
+ "2026-09-25-seo-audit#e4c898cb": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Herschrijft de vier sport-templates (koopblok, vraag-H2's, tabel, bron) in het testthema.",
+  "wat_jij_doet": "Controleren en publiceren."
+ },
+ "2026-09-25-seo-audit#f5e0fead": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Trekt de verzendteksten in de theme-templates gelijk met het feitenbestand, in het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-25-seo-audit#f637edc0": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de paginatekst en de SEO-velden klaar.",
+  "wat_jij_doet": "Pagina aanmaken in admin en koppelen aan page.sport-rugby."
+ },
+ "2026-09-25-seo-audit#ffcf7cad": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Haalt de placeholder uit article.trends-sportvoeding.json in het testthema.",
+  "wat_jij_doet": "Testthema publiceren."
+ },
+ "2026-09-26-dashboard-ux-onderzoek#8529e3a8": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-26-onderzoek-nieuwe-routines#246b3e87": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-26-onderzoek-nieuwe-routines#88b981ea": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-26-onderzoek-nieuwe-routines#a6b5f6c9": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Wacht op actieve betaalde ads; dan pas bouwen"
+ },
+ "2026-09-26-onderzoek-nieuwe-routines#b267a978": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Wacht op de drempel (orders/maand of Klaviyo); dan pas bouwen"
+ },
+ "2026-09-26-onderzoek-nieuwe-routines#fc2e9aa5": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Eenmalig onderzoek naar bol.com/Amazon.nl schrijven als notitie",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1c8db1a7": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Een lijst van de 9 branches zonder commits en een beoordeling van claude/nifty-fermat-kr7pe6 opstellen",
+  "wat_jij_doet": "Zelf de branches verwijderen (destructieve git-actie)"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#1cd8b622": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Denzel-routineprompt aanvullen met de verwijsregel",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#3055da63": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Routines/README.md bijwerken met de nieuwe repositorynaam en controlepunten",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#47525a8b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "De cloudroutine-configuratie op info@ zelf aanpassen (buiten deze sessie se bereik)"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#649b98b0": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#a9d2df15": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#b4525640": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "De genoemde achterhaalde acties via acties.py beheer op 'niet doen' zetten (met reden)",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#bca6ece1": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Dubbele acties uit de notitie markeren als dubbel via acties.py",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-28-optimalisatiecheck-werkwijze-routines-en-dashboard#e6a6b0b2": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Status van de weekoverzichten 2026-09-14 en 2026-09-21 aanpassen (gearchiveerd naar verwerkt)",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#1e62e17e": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#4abba4c4": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Een conceptprivacytekst en afwegingstoets voorbereiden",
+  "wat_jij_doet": "Juridisch laten beoordelen vóór gebruik"
+ },
+ "2026-09-29-crm-dashboard-voorstel#4d19853f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#7b3e74fc": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#7f6ee085": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#99e7cc19": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#9db15104": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het dashboardproject staat buiten deze vault/repository"
+ },
+ "2026-09-29-crm-dashboard-voorstel#aadbc19d": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-29-crm-dashboard-voorstel#f3594009": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-09-30-search-console#0b8e490a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven titel/meta voor /pages/ontdek-jouw-sport als concept",
+  "wat_jij_doet": "Concept plakken in Shopify admin"
+ },
+ "2026-10-02-ai-in-het-dashboard#2cc0d27b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-ai-in-het-dashboard#b3862590": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-ai-in-het-dashboard#c023dc01": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Wacht op het besluit over de API-sleutel; daarna een maandlimiet instellen (buiten deze vault)"
+ },
+ "2026-10-02-dashboard-apps-patronen#b58f424a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-dashboard-apps-patronen#f04e4d42": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-dashboard-ontwerpregels-kpi#a537b023": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toekomstige bouwstap van het dashboardproject (buiten deze vault)"
+ },
+ "2026-10-02-navigatie-en-takentijdlijn#bbd9f471": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-navigatie-en-takentijdlijn#dcfcdda4": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#1493354a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Paden in de 32 notities vault-relatief maken",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#14960853": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Lokale Obsidian-git-instellingen aanpassen (niet via deze cloudomgeving te doen)"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#3488fdcd": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "CLAUDE.md inkorten en §9-§14/§5 verplaatsen",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#353f4bcb": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "status/bijgewerkt-velden op notities in 00-04 aanvullen",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#3ebe2293": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Map 99_Archief aanmaken en de genoemde bestanden verplaatsen",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#3f6943bd": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijfrechtentabel in CLAUDE.md en deny-regels in .claude/settings.json voorbereiden",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#afd6bc87": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#c98ee1c9": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#cad6d1f6": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Notitie Zoek Script & Gids inkorten naar max. 5 KB",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#f4f04b6b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "vault_lint.py schrijven naast vault_nav.py",
+  "wat_jij_doet": "Beoordelen en testen"
+ },
+ "2026-10-02-vault-review#0762cc50": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Dubbele bestandsnamen hernoemen en agentdefinities bijwerken",
+  "wat_jij_doet": "Beoordelen (bestandsverplaatsing)"
+ },
+ "2026-10-02-vault-review#91d877f1": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Skills verplaatsen naar .claude/skills/ in de vault",
+  "wat_jij_doet": "Controleren dat cloudroutines ze nog laden"
+ },
+ "2026-10-02-vault-review#bf041d98": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Een lijst van de 7 oude branches zonder eigen inhoud opstellen",
+  "wat_jij_doet": "Zelf de branches op GitHub verwijderen (destructieve git-actie, mensenwerk)"
+ },
+ "2026-10-02-vault-review#f1d76446": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-03-dashboard-agenda-mail-ads-leveranciers#18bba47a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Producent zelf vragen"
+ },
+ "2026-10-03-dashboard-agenda-mail-ads-leveranciers#dde5f999": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-03-dashboard-agenda-mail-ads-leveranciers#e66dd117": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Mailadressen zelf bevestigen"
+ },
+ "2026-10-04-dashboard-bruikbaarheidsaudit#65109f18": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Zelf het prototype gebruiken en noteren"
+ },
+ "2026-10-04-dashboard-efferd-volgorde-cijfers#a38acc3a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-04-dashboard-herindeling-ai-mail-koppelingen#5363e78a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Nummer kiezen en Meta-partner regelen"
+ },
+ "2026-10-04-dashboard-herindeling-ai-mail-koppelingen#a6f20288": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Producent zelf mailen/appen"
+ },
+ "2026-10-05-weekoverzicht#be6cd43b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen (Tigo)"
+ },
+ "2026-10-06-dashboard-v4-opruimen-focusvensters#253466b7": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-dashboard-content-funnel-routines-klanten#27eae79f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-dashboard-stand-doel-optimalisaties#035b0bdd": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "De verweesde actie-id handmatig uit CONTROLE.json en UITVOERBAAR.json verwijderen bij de volgende routinebeurt",
+  "wat_jij_doet": "Goedkeuren (eenmalige opschoning, geen bestaand acties.py-commando)"
+ },
+ "2026-10-07-dashboard-stand-doel-optimalisaties#74a954f7": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Idem: buiten deze vault/repository"
+ },
+ "2026-10-07-dashboard-stand-doel-optimalisaties#853f295f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het dashboardproject staat buiten deze vault/repository; bouwplan hoort daar geschreven te worden"
+ },
+ "2026-10-07-dashboard-stand-doel-optimalisaties#ddf53f93": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-dashboard-stand-doel-optimalisaties#de74ec2a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Idem: buiten deze vault/repository"
+ },
+ "2026-10-07-missie-visie-pagina#55c2753f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Nagaan via GraphQL of onze-waarden/ons-verhaal nog losse live pagina's zijn die dubbelen, en voorstellen om ze te ontkoppelen",
+  "wat_jij_doet": "Beoordelen en uitvoeren in Shopify admin"
+ },
+ "2026-10-07-missie-visie-pagina#7b1d85e3": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Knoppen/accentkleur/typfout corrigeren in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-07-missie-visie-pagina#a64e48af": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-missie-visie-pagina#afcb0ad4": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Over ons-schema gelijktrekken met Missie & Visie in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-07-missie-visie-pagina#e114bc43": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-missie-visie-pagina#ec87162c": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-missie-visie-pagina#ee0a98f2": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-notebooklm-ai-agent-tiktoks#11bb9243": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "De configuratie van de adobe-premiere-server nalopen op een zichtbare fout",
+  "wat_jij_doet": "De server zelf (opnieuw) opstarten/configureren buiten deze omgeving"
+ },
+ "2026-10-07-notebooklm-ai-agent-tiktoks#36d168f0": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#4659c19f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Wacht op de Concurrentie-monitor; daarna pas namen op de shoppagina zetten (besluit)"
+ },
+ "2026-10-07-shoppagina-keuzepagina#63251aa0": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "De oude handles uit de collectie gripsokken halen (Shopify-wijziging)",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-07-shoppagina-keuzepagina#6a44b937": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptpagina 'Techniek van de 2.0' schrijven",
+  "wat_jij_doet": "Beoordelen en publiceren"
+ },
+ "2026-10-07-shoppagina-keuzepagina#7dc52dec": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#912a5ea1": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#b0ee097c": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Identiteitspaden van de drie website-subagents gelijktrekken (bestanden in de vault)",
+  "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#c641fd01": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#def2b0a4": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-07-shoppagina-keuzepagina#ebf60886": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#0e6e49ee": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Ingekorte/herschreven titels voor de 5 blogs en de 130+ 'HÏ Grip |'-titels voorbereiden",
+  "wat_jij_doet": "Controleren en in bulk live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#132b156f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "GA4-segment/analyse zonder botverkeer voorbereiden",
+  "wat_jij_doet": "Een daadwerkelijk GA4-datafilter instellen in de GA4-admin (niet via de leestoegang van Claude)"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#152a16cb": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "FAQPage-antwoord op / en /en herschrijven naar 'binnen 1 werkdag verzonden' in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#2b06cf9e": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Organization.url en https://schema.org-context corrigeren in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#3fea034e": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Lijst met EAN's per variant (onderzoek/opzoekwerk)",
+  "wat_jij_doet": "EAN's invullen als barcode in Shopify admin"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#5365674b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Canonical-codevoorstel in het testthema",
+  "wat_jij_doet": "301/canonical live instellen in Shopify admin"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#60ffc8ac": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Aangevuld artikelconcept of 301-voorstel",
+  "wat_jij_doet": "Artikel aanvullen/verwijderen en 301 instellen"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#77cac544": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-teksten voor articleBody/description per blog schrijven",
+  "wat_jij_doet": "Deze in Shopify admin per artikel invoeren (bulkwerk)"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7a1b993a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Sterren+cijfer-weergave met Trustpilot-link voorbereiden in het testthema",
+  "wat_jij_doet": "Bevestigen dat 4,6 het juiste cijfer is (zie Feiten) en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7aefb63b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "PAGESPEED_API_KEY aanmaken/activeren in het Google Cloud-project higrip-analytics"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7d33db5a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Interne links van de 23 blogs naar sport-/productpagina's voorbereiden",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#7e8af504": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-titel/meta voor de canonieke productpagina",
+  "wat_jij_doet": "301 instellen of titel/meta plakken in Shopify admin"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#805ddfe0": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "GA4- en Shopify-cijfers van dezelfde periode naast elkaar zetten en concluderen",
+  "wat_jij_doet": "Conclusie beoordelen"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#82bad0c5": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "GA4-sessies met landingspagina '(not set)' analyseren en een oorzaak voorstellen",
+  "wat_jij_doet": "Conclusie beoordelen"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#96357028": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Correcte H1-tekst voor de 3 EN-sportpagina's voorbereiden",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#e7779385": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "De waarden vastleggen in het feitenbestand zodra bevestigd",
+  "wat_jij_doet": "Bevestigen welke social-URLs en KvK-nummer correct zijn"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#ec492201": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "FAQ-antwoord herschrijven volgens de formuleringsregel",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#fdd0fd77": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Padel/rugby toevoegen aan het 'Voor jouw sport'-blok en de collectietitel in het testthema",
+  "wat_jij_doet": "Controleren en live zetten (rugby pas na publicatie van de rugbypagina)"
+ },
+ "2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run#fe415e6d": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Trustpilot-profieltekst laten corrigeren bij Trustpilot zelf (buiten higrip.nl)"
+ },
+ "2026-10-08-search-console#5e288d50": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe titel/meta voor de blog voorbereiden",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-search-console#8079e9bd": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe titel/meta (NL+EN) voor de blog voorbereiden",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#1b39facf": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "H1's toevoegen/herstellen op de genoemde beleidspagina's in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#1d84d288": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Een vaste vragenlijst en meetformat voor AI-zichtbaarheid opstellen",
+  "wat_jij_doet": "Wekelijks de vragen zelf in ChatGPT/Perplexity/Gemini/Google AI Mode uitvoeren (geen API-toegang voor Claude)"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#52f24e15": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Rugbyvermelding tijdelijk uit titel/FAQ/ontdek-jouw-sport halen in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#6e05857a": {
+  "beoordeeld": "2026-10-11",
+  "claude": "deels",
+  "wat_claude_doet": "Schema-snippet voorbereiden die gtin/itemCondition/variesBy uitleest",
+  "wat_jij_doet": "EAN's als barcode in Shopify invullen (databeheer) vóór de schema-wijziging live kan"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#729fc40f": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreid Organization-schema (description, foundingDate, founder, sameAs, contactPoint, KvK) voorbereiden in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#72c98a61": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#9dcf4145": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide copy voor /pages/retail, /pages/pilates en /pages/clubwear voorbereiden",
+  "wat_jij_doet": "Beoordelen en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#bc54bfa3": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Engelse URL-slugs en alt-teksten voorbereiden voor /en/",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#d62335ea": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#e49e578c": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe keyword-titels (50-60 tekens) voorbereiden in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-10-08-seo-aeo-geo-aio-sxo-audit#ee5f3bab": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven hoofdgids 'Wat zijn gripsokken?' (1200+ woorden, bronnen, links) als conceptartikel schrijven",
+  "wat_jij_doet": "Beoordelen en publiceren"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#0496d928": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide keuzegids-tekst voor /pages/gripsokken-voor-voetbal als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven meta description als concept",
+  "wat_jij_doet": "Meta plakken in Shopify admin"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#4420908c": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Voorstel om backlogpunt 6 bij te werken (tekst schrappen)",
+  "wat_jij_doet": "Besluit bevestigen"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptcopy (title/H1/intro) voor witte/zwarte gripsokken-collecties",
+  "wat_jij_doet": "Nieuwe collecties aanmaken en live zetten in Shopify admin"
+ },
+ "2026-10-11-concurrentie-seo-per-merk#d2cc641d": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Prijsanalyse/voorstel voor een 3-pack bij de 2.0",
+  "wat_jij_doet": "Besluit nemen en prijs/pack live instellen in Shopify"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#081017d7": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#2b923197": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#3c5c80c4": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#4a1c46ec": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#4fbf15a2": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#72e5d653": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#a0483455": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-omzetgroei-koersbepaling#f1b98307": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "B2B Klanten Agent spawnen om een herhaalorder-voorstel te schrijven",
+  "wat_jij_doet": "Voorstel beoordelen"
+ },
+ "2026-10-11-seo-audit-weekdelta#3b3f2113": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "concepttekst voor de collectie-USP (3500+) opstellen in het testthema",
+  "wat_jij_doet": "de tekst in de live thema-editor plakken (CLI-toegang is geweigerd)"
+ },
+ "2026-10-11-seo-audit-weekdelta#59822153": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "concepttekst voor de homepage-meta met 3500+ sporters opstellen",
+  "wat_jij_doet": "de tekst plakken in Online Store → Voorkeuren en opslaan"
+ },
+ "2026-10-11-seo-audit-weekdelta#8aead8f5": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "gecorrigeerde EN-H1-teksten en vertaling 'Grip socks for' voorbereiden in het testthema",
+  "wat_jij_doet": "de titelvelden in de live sport-hero en Translate & Adapt bijwerken"
+ },
+ "2026-10-11-seo-audit-weekdelta#a37c4e83": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide oprichtersverhaal-tekst voor /pages/ons-verhaal als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-11-seo-audit-weekdelta#a938ea37": {
+  "beoordeeld": "2026-10-12",
+  "claude": "deels",
+  "wat_claude_doet": "de beleidstekst staat al klaar in _uitvoer/2026-10-11-live-fixes/beleid-plakken.md",
+  "wat_jij_doet": "de tekst plakken in Shopify Instellingen → Beleid (refund, verzending, voorwaarden) en live zetten"
+ },
+ "2026-10-11-seo-audit-weekdelta#ad2fe88b": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Dit besluit nemen"
+ },
+ "2026-10-11-seo-audit-weekdelta#e9957d88": {
+  "beoordeeld": "2026-10-12",
+  "claude": "ja",
+  "wat_claude_doet": "de wekelijkse EN-vertaalcontrole toevoegen aan de SEO-regressiecheck-routineprompt in de vault",
+  "wat_jij_doet": "de aanpassing in de routineprompt controleren en goedkeuren"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
+  "beoordeeld": "2026-10-22",
+  "claude": "ja",
+  "wat_claude_doet": "mini-plan (CSS, Liquid-sectie, JS) voor de zakelijke pagina opstellen in het testthema",
+  "wat_jij_doet": "beoordelen en goedkeuren vóór verdere bouw"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#af7662dc": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke reactietijd beloofd wordt"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#f59208bb": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen of een clubaanbod getoond wordt"
+ },
+ "2026-10-12-b2b-pagina-inspiratie#fadbc166": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het artifact beoordelen op motion/layout/teksten en de besluiten nemen"
+ },
+ "2026-10-12-blogs-stappenplan#04c7ed95": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de verzorgingsblog",
+  "wat_jij_doet": "Oud artikel verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#0a106c79": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Uitgebreide verzorgingsblog-tekst (900-1.200 woorden) als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#0ad43436": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de pilatesblog",
+  "wat_jij_doet": "Oud artikel verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#1448275a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Auteurstekst (naam + één regel achtergrond) als concept",
+  "wat_jij_doet": "Foto van de auteur en plaatsing in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#16eea17b": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Volledige hoofdgids-tekst (1.400-1.600 woorden) als concept",
+  "wat_jij_doet": "Concept plakken en publiceren in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#1b7a34a5": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "CSV-redirectregel en controle dat het doelartikel klaar is",
+  "wat_jij_doet": "Blogpost verwijderen en de 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#287aebbc": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "CSV-redirectregel en controle dat het doelartikel klaar is",
+  "wat_jij_doet": "Blogpost verwijderen en de 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#308272a7": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven voetbalblog-tekst \"Beste gripsokken voetbal 2026\" als concept",
+  "wat_jij_doet": "Concept publiceren en 301 instellen"
+ },
+ "2026-10-12-blogs-stappenplan#382a06c0": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept voor de 301-doelpagina (of een notitie voor over-ons)",
+  "wat_jij_doet": "Artikel verwijderen en 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#40c4a507": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Search Console-vergelijking per blog na 4/8 weken, met conclusie",
+  "wat_jij_doet": "Resultaat beoordelen"
+ },
+ "2026-10-12-blogs-stappenplan#41609879": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-301-planning",
+  "wat_jij_doet": "Hub afmaken en 301 instellen in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#42cbed6f": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Lichte tekstcorrecties per artikel als concept",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#4b1810bd": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven titels/meta's per artikel als concept",
+  "wat_jij_doet": "Concepten plakken in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#6fc78586": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-meta zonder \"nu beperkt op voorraad\"",
+  "wat_jij_doet": "Meta plakken in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#846846fc": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Voorstel voor 301-doel of nieuwe URL als concept",
+  "wat_jij_doet": "Besluit nemen en 301/URL live instellen"
+ },
+ "2026-10-12-blogs-stappenplan#9602726a": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Herschreven wetenschapsblog-tekst volgens de formuleringsregel",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#a248abc5": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Twee nieuwe blogconcepten voor tennis/padel",
+  "wat_jij_doet": "Concepten publiceren in Shopify admin"
+ },
+ "2026-10-12-blogs-stappenplan#a2c621ef": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Herschreven blessureblog-concept met bronnen per claim",
+  "wat_jij_doet": "Concept laten nakijken door een fysio/trainer, dan publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#a40f4929": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Opgefriste pilatesblog-tekst als concept",
+  "wat_jij_doet": "Concept plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#b12308d8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "CTA-link aangepast in het Shopify-testthema",
+  "wat_jij_doet": "Testthema selectief live zetten"
+ },
+ "2026-10-12-blogs-stappenplan#b56317d8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor waarom-hi-grip-gripsokken",
+  "wat_jij_doet": "Oude artikelen verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#bcecbd1c": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe titel/H1/intro voor /blogs/trends en /blogs/hi-grip als concept",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#debc3db4": {
+  "beoordeeld": "2026-10-13",
+  "claude": "nee",
+  "wat_claude_doet": "niets, wacht op de rugby-pagina",
+  "wat_jij_doet": "Rugby-sportpagina eerst publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#e2a7fd66": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Samengevoegd artikelconcept voor de blessureblog",
+  "wat_jij_doet": "Oude artikelen verwijderen, 301 instellen, concept publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#eb0152d7": {
+  "beoordeeld": "2026-10-13",
+  "claude": "deels",
+  "wat_claude_doet": "Concept met de gecorrigeerde link",
+  "wat_jij_doet": "Link vervangen in Shopify admin en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#f5b232b8": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten met links naar sport-, product- en artikelpagina's per artikel",
+  "wat_jij_doet": "Concepten plakken en publiceren"
+ },
+ "2026-10-12-blogs-stappenplan#f73bcbeb": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Feitencheck per artikel met correcties als concept",
+  "wat_jij_doet": "Correcties plakken en publiceren"
+ },
+ "2026-10-12-voordelenpagina-analyse#15ccd2d6": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke voordeel-taal blijft staan"
+ },
+ "2026-10-12-voordelenpagina-analyse#6b326f42": {
+  "beoordeeld": "2026-10-22",
+  "claude": "ja",
+  "wat_claude_doet": "conceptpagina voordelen bouwen in een artifact",
+  "wat_jij_doet": "beoordelen en na goedkeuring laten overzetten als blogsjabloon in het testthema"
+ },
+ "2026-10-12-voordelenpagina-analyse#98dc8e73": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke sportpagina's gelinkt worden"
+ },
+ "2026-10-12-voordelenpagina-analyse#f09f0dc2": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke URL/pagina dit wordt"
+ },
+ "2026-10-12-werkthema-vs-live#5f409a57": {
+  "beoordeeld": "2026-10-12",
+  "claude": "ja",
+  "wat_claude_doet": "Zet in het werkthema 'Vanaf' op €14,95 en de 2.0-prijs op €17,95 zonder korting, volgens live.",
+  "wat_jij_doet": "Controleren in de thema-preview; niets live."
+ },
+ "2026-10-12-werkthema-vs-live#c757fc2d": {
+  "beoordeeld": "2026-10-12",
+  "claude": "ja",
+  "wat_claude_doet": "Neemt de live-versies van de sportpagina-templates, ss-testimonial-8 en de instellingen over in het werkthema (alleen werkthema).",
+  "wat_jij_doet": "Controleren in de thema-preview; niets live."
+ },
+ "2026-10-13-homepage-redesign#166eeeb9": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen of de 360°-onthulling in de eerste bouwronde komt of pas na het opruimen van JavaScript."
+ },
+ "2026-10-13-homepage-redesign#26bbb772": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptpagina en liquid-sectie voor /pages/gripsokken-voor-rugby opzetten in het werkthema, inclusief rugbytegel in de sportkiezer (zonder foto).",
+  "wat_jij_doet": "Rugbyfoto laten schieten, concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4867b36b": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "FAQ-antwoorden 4 en 7 aanpassen van 'uw' naar 'je' in het werkthema (sectie + snippets/faq-schema.liquid).",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4916b32e": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptopschoning van inline ai_gen-scripts en dubbele CSS (gripsocks2-launch.css, padel-page.css) in het werkthema.",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#4bf416c7": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptplan en eventuele code-snippets voor de events (sportkiezer-klik, 360°-interactie, scrolldiepte) in het werkthema.",
+  "wat_jij_doet": "Events in GA4 configureren/valideren en de 4 weken baseline-meting starten en afwachten."
+ },
+ "2026-10-13-homepage-redesign#5ab8bae9": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen tussen de blauwe bewijssectie of wit met volt-markering."
+ },
+ "2026-10-13-homepage-redesign#7aefe7a8": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of de H1/H2-afspraak ook voor de homepage geldt."
+ },
+ "2026-10-13-homepage-redesign#907cdb2d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets (brondata ontbreekt)",
+  "wat_jij_doet": "De 206 frames van het 360°-artifact aanleveren/exporteren naar Shopify Files, of Claude toegang geven tot de brondata."
+ },
+ "2026-10-13-homepage-redesign#98beb4c6": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptvariant B van title/meta (merk en entiteit) opstellen voor latere test.",
+  "wat_jij_doet": "Op het juiste moment (na lancering van variant A) testen en live zetten."
+ },
+ "2026-10-13-homepage-redesign#9bad2193": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of dit onderzoek als v4 in het bestaande concept v3 verwerkt wordt, of dat er een nieuw concept start."
+ },
+ "2026-10-13-homepage-redesign#9be19de6": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Beoordelen welke van de 8 marquee-afbeeldingen echte klantlogo's zijn."
+ },
+ "2026-10-13-homepage-redesign#c2d600ea": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kiezen waar de hoofd-CTA in de hero naartoe gaat."
+ },
+ "2026-10-13-homepage-redesign#d831d95d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets (beide hero-kopopties staan al klaar in de notitie)",
+  "wat_jij_doet": "Kiezen tussen hero-kop A of B."
+ },
+ "2026-10-13-homepage-redesign#e1d8501a": {
+  "beoordeeld": "2026-10-14",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluiten of page_transition_enabled bewust aan moet staan, afgewogen tegen de eerste-paint-vertraging."
+ },
+ "2026-10-13-homepage-redesign#f2c44e5d": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Testtemplate page.home-nieuw.json opzetten in het werkthema (CSS → Liquid → JS) zodra de besluiten hierboven genomen zijn.",
+  "wat_jij_doet": "De besluiten nemen, daarna het concept controleren en live zetten."
+ },
+ "2026-10-13-homepage-redesign#ff235e99": {
+  "beoordeeld": "2026-10-14",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptaanpassing in het werkthema: '3500+' teruugzetten naar '3000+' in header-group.json, de Over-ons-tijdlijnkop en de presets van gripsocks2-proof/sport-proof.",
+  "wat_jij_doet": "Concept controleren en live zetten."
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#32375533": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen over Hogeschool Rotterdam als partnerlogo op de homepage"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Poppins 800 italic preloaden in snippets/fonts.liquid in het werkthema (testthema)",
+  "wat_jij_doet": "Controleren en live pushen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#410fff71": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen tussen de hero-kop- en CTA-varianten"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Entiteitsalinea en schema-description als conceptteksten gelijktrekken met het prototype",
+  "wat_jij_doet": "Teksten controleren en doorvoeren op de site/in het testthema"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#67b1ef30": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen of prototype richting B de basis wordt voor de homepage-bouw"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#8feddc9a": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen tussen 3500+ en 3000+ en dat vastleggen in het feitenbestand"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "App-embeds beperken tot product-/cartpaginas in het werkthema (testthema), na controle van de aigenblock-afhankelijkheid",
+  "wat_jij_doet": "Controleren en live pushen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#a8c78334": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een rugbyfotoshoot plannen en laten schieten"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ac100eca": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een nieuwe foto met alleen de drie founders laten maken"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#ba9f7771": {
+  "beoordeeld": "2026-10-15",
+  "claude": "deels",
+  "wat_claude_doet": "De huidige voorraad van Performance Gripsokken 2.0 controleren en signaleren (nu overal negatief)",
+  "wat_jij_doet": "Besluiten of het keuzeblok toch naar 2.0 wijst of eerst voorraad aanvullen"
+ },
+ "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#f6eea3ca": {
+  "beoordeeld": "2026-10-15",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het besluit nemen over Poppins 900 italic toevoegen of 800 italic houden"
+ },
+ "2026-10-14-search-console#230c4e80": {
+  "beoordeeld": "2026-10-18",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten title/meta voor /en/products/performance-gripsokken",
+  "wat_jij_doet": "Conceptteksten controleren en in Shopify plakken en publiceren"
+ },
+ "2026-10-14-search-console#5b07ca2a": {
+  "beoordeeld": "2026-10-18",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten title/meta voor /en/pages/gripsokken-voor-voetbal gericht op Engelse zoekintentie (football grip socks)",
+  "wat_jij_doet": "Conceptteksten controleren en in Shopify plakken en publiceren"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#245f2a87": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "na goedkeuring de secties bouwen in het AI-testthema",
+  "wat_jij_doet": "het prototype beoordelen en goedkeuren, en daarna live zetten"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#5f518b48": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "ProductGroup-schema met EAN/SKU bouwen in het testthema",
+  "wat_jij_doet": "beoordelen en naar het live thema overzetten"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#67f28e42": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor de cushioning-omschrijving in de vault",
+  "wat_jij_doet": "bevestigen of aanpassen vóór het live gaat"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "specificaties van de 1.0 vastleggen in de vault (Performance Grip Socks-bestand aanvullen)",
+  "wat_jij_doet": "controleren op juistheid"
+ },
+ "2026-10-19-productpagina-2-0-inspiratie-en-prototype#fa6b14e8": {
+  "beoordeeld": "2026-10-20",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen welke packprijs 2.0 klopt (preview vs. feitenbestand) en het feitenbestand bijwerken"
+ },
+ "2026-10-21-search-console#0c7289f9": {
+  "beoordeeld": "2026-10-22",
+  "claude": "nee",
+  "wat_claude_doet": "niets (dubbel van backlog#927dc23c)",
+  "wat_jij_doet": "zie backlog#927dc23c"
+ },
+ "backlog#01dc4258": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Kan het AI-impressierapport niet via de API lezen; zet wel de vergelijkingsvragen klaar.",
+  "wat_jij_doet": "Rapport in Search Console openen en een export in de vault zetten."
+ },
+ "backlog#10ef70ca": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Vergelijkt reviewapps (Judge.me, Loox, Trustpilot) en zet de aggregateRating-code op app-metafields klaar in het testthema.",
+  "wat_jij_doet": "Reviewapp kiezen, installeren en koppelen; daarna schema live zetten."
+ },
+ "backlog#14bd4ed7": {
+  "beoordeeld": "2026-10-11",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Meta Events Manager/CAPI instellen (vereist Meta Business-toegang en keuzes over tracking)"
+ },
+ "backlog#14c6ceb5": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft de bewijspagina (meetmethode, tabel, bron) als concept en pagina-template in het testthema.",
+  "wat_jij_doet": "Meetdata en bron aanleveren, daarna pagina publiceren."
+ },
+ "backlog#246c61d9": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten voor verzendbeleid/retourbeleid/terugbetalingsbeleid en de oude policies-pagina's, gelijkgetrokken",
+  "wat_jij_doet": "Teksten in Instellingen → Policies plakken en publiceren"
+ },
+ "backlog#2f69e0df": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Meet INP via PageSpeed/CrUX (zodra de API aanstaat) en wijst zware scripts aan in een notitie.",
+  "wat_jij_doet": "Aangewezen app of script uitzetten als dat nodig is."
+ },
+ "backlog#32925dba": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel en stappen om /blogs/intern te unpublishen of noindex te zetten",
+  "wat_jij_doet": "het artikel unpublishen of noindex toevoegen in Shopify"
+ },
+ "backlog#3f65e547": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten (titel/meta) voor /en/pages/gripsokken-voor-voetbal in de vault",
+  "wat_jij_doet": "Teksten in Shopify plakken en publiceren"
+ },
+ "backlog#42f6eb88": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "GA4/Shopify-data naast elkaar leggen en een advies voor de volgende CRO-test schrijven",
+  "wat_jij_doet": "Advies beoordelen en de CRO-test plannen"
+ },
+ "backlog#456f3072": {
+  "beoordeeld": "2026-10-15",
+  "claude": "deels",
+  "wat_claude_doet": "Een afwegingsnotitie over ChatGPT Ads (voor/tegen, kosteninschatting) in de vault",
+  "wat_jij_doet": "Het advertentiebudget vaststellen en het besluit nemen"
+ },
+ "backlog#49691d90": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft een meta description (max 155 tekens) voor /collections/all in _uitvoer.",
+  "wat_jij_doet": "Tekst in Shopify admin bij de collectie plakken en opslaan."
+ },
+ "backlog#4eb5ed8e": {
+  "beoordeeld": "2026-10-15",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten (titel/meta) voor /en/products/performance-gripsokken in de vault",
+  "wat_jij_doet": "Teksten in Shopify plakken en publiceren"
+ },
+ "backlog#52886b90": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Checkt indexatie en SERP-titel van oude en nieuwe URL via Search Console en schrijft een nieuwe title/meta.",
+  "wat_jij_doet": "URL opnieuw indienen in Search Console en de meta in Shopify plakken."
+ },
+ "backlog#6050edaa": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Leest variant-ID's, SKU's en GTIN's uit via de Shopify-connector en maakt een lijst met wat niet aan de Merchant Center-eis voldoet.",
+  "wat_jij_doet": "Ontbrekende ID's in Shopify admin of Merchant Center invullen."
+ },
+ "backlog#6c4a9799": {
+  "beoordeeld": "2026-10-20",
+  "claude": "deels",
+  "wat_claude_doet": "concept-fix voor de dubbele H1 (niveau naar H2) in de vault/testthema",
+  "wat_jij_doet": "beoordelen en in het live thema doorvoeren"
+ },
+ "backlog#6dd6caf8": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Bouwt de verzenddrempel-balk (Liquid + CSS + vanilla JS, rekent mee per pack) in het testthema.",
+  "wat_jij_doet": "Testthema bekijken en live publiceren."
+ },
+ "backlog#8d435a25": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-titel en meta description voor de \"waarom HÏ Grip\"-blog",
+  "wat_jij_doet": "Tekst in Shopify admin plakken"
+ },
+ "backlog#8f8db388": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Kiest de primaire URL op GSC-data en zet interne links en canonical klaar in het testthema.",
+  "wat_jij_doet": "Keuze bevestigen en het testthema publiceren."
+ },
+ "backlog#8fb4a493": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Controleert of higrip.nl naar de VS verzendt en meldt of het punt geblokkeerd blijft.",
+  "wat_jij_doet": "Besluiten of VS-verzending gewenst is."
+ },
+ "backlog#927dc23c": {
+  "beoordeeld": "2026-10-22",
+  "claude": "deels",
+  "wat_claude_doet": "onderzoek naar interne links, sportkiezer en title/H1-wijzigingen rond de pagina, vastgelegd als concept-analyse in de vault",
+  "wat_jij_doet": "beoordelen en eventueel een technische fix laten doorvoeren in het live thema"
+ },
+ "backlog#a1f3e1a2": {
+  "beoordeeld": "2026-10-13",
+  "claude": "ja",
+  "wat_claude_doet": "Concept-titel en meta description voor de verzorgingsblog, NL en EN",
+  "wat_jij_doet": "Teksten in Shopify admin plakken"
+ },
+ "backlog#a2e3406d": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Bouwt prijs-per-paar onder de pack-selector (berekend uit de variantprijs) in het testthema.",
+  "wat_jij_doet": "Testthema bekijken en live publiceren."
+ },
+ "backlog#aa17cef9": {
+  "beoordeeld": "2026-09-26",
+  "claude": "nee",
+  "wat_claude_doet": "Legt de stappen voor CAPI via de Meta-app vast.",
+  "wat_jij_doet": "Meta-app in Shopify koppelen en CAPI activeren in Events Manager."
+ },
+ "backlog#aa7afb12": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Zet de aanmeldstappen, KVK-gegevens en een besliskader voor TikTok Shop op een rij in de vault.",
+  "wat_jij_doet": "Aanmelden bij TikTok Shop en het kanaal kiezen."
+ },
+ "backlog#b02ee884": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft de vraagpagina's antwoord-eerst met FAQPage-schema als templates in het testthema.",
+  "wat_jij_doet": "Pagina's controleren en publiceren."
+ },
+ "backlog#b1876b36": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten voor beide productbeschrijvingen (padel/tennis/rugby toegevoegd, code-tag verwijderd) in de vault",
+  "wat_jij_doet": "controleren en in de Shopify-productbeschrijving plakken"
+ },
+ "backlog#b34063f3": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Inventariseert script-tags, Bundler-restanten en de Trustpilot-embed en haalt achtergebleven app-blocks uit het testthema.",
+  "wat_jij_doet": "Bundler-app verwijderen en Trustpilot-embed aanzetten in de admin."
+ },
+ "backlog#b81d4226": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een shotlist en script van 30-60 s en zet de videosectie klaar in het testthema.",
+  "wat_jij_doet": "Video laten opnemen en uploaden."
+ },
+ "backlog#bafff35d": {
+  "beoordeeld": "2026-09-26",
+  "claude": "ja",
+  "wat_claude_doet": "Schrijft Engelse title en meta description voor de /en/-pagina's in een conceptbestand in _uitvoer.",
+  "wat_jij_doet": "Teksten in Translate & Adapt plakken."
+ },
+ "backlog#bf53be16": {
+  "beoordeeld": "2026-10-11",
+  "claude": "ja",
+  "wat_claude_doet": "Nieuwe titel/meta voor /pages/ontdek-jouw-sport voorbereiden in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "backlog#c51a9579": {
+  "beoordeeld": "2026-10-20",
+  "claude": "ja",
+  "wat_claude_doet": "conceptvoorstel voor titel en meta description van /pages/terugbetalingsbeleid in de vault",
+  "wat_jij_doet": "controleren en in Shopify-paginainstellingen zetten"
+ },
+ "backlog#cc86cc1e": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Checkt via connector en site welke trackingscripts vuren en of pixels via officiele apps lopen; levert een rapport met wat ontbreekt.",
+  "wat_jij_doet": "Ontbrekende apps (Meta, Google) in Shopify installeren of koppelen."
+ },
+ "backlog#eaa40e7c": {
+  "beoordeeld": "2026-10-14",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptregel voor de verplichte factcheck opstellen (bijv. voor CLAUDE.md of een routine-prompt).",
+  "wat_jij_doet": "Besluiten of/hoe dit verplicht wordt en de regel vastleggen."
+ },
+ "backlog#eb6e2f26": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Schrijft een prestatiemodel (affiliate-%, codes) en een conceptvoorstel voor creators.",
+  "wat_jij_doet": "Creators benaderen en afspraken maken."
+ },
+ "backlog#fac26f6c": {
+  "beoordeeld": "2026-09-26",
+  "claude": "deels",
+  "wat_claude_doet": "Vergelijkt live schema met het testthema, zet ontbrekende WebSite/ItemList/FAQPage-snippets en de voetbaltemplate klaar in het testthema en levert een preview-link.",
+  "wat_jij_doet": "Testthema controleren en live publiceren."
+ }
+}

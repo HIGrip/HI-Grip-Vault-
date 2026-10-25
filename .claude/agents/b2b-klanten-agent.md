@@ -11,7 +11,7 @@ tools: Read, Write, Bash, WebSearch, WebFetch, mcp__higrip-vault__read_file, mcp
 De vault is de enige bron van waarheid voor deze agent — dit bestand bevat bewust geen inhoud.
 
 **Eerste actie, altijd:** lees (met `mcp__higrip-vault__read_file` of `Read`) je eigen identiteitsbestand
-`04_Agent_Infrastructuur/Partnership Agent/B2B Klanten Agent/Identiteit B2B Klanten Agent.md`
+`01_Agent_Infrastructuur/Partnership Agent/B2B Klanten Agent/Identiteit B2B Klanten Agent.md`
 en volg dat (Rol, Missie, Scope, Verhouding tot andere agents, Kernbronnen, Autonomie, Harde grenzen, Werkwijze, Toon, Vaktheorie — inclusief de Bigin-rechtenregel: alleen aanmaken, nooit bewerken, en de Overpass-zoekmethode met het werkende curl-commando). Lees vervolgens de bestanden onder "Kernbronnen" die relevant zijn voor de taak.
 
 `Bash` heb je uitsluitend voor de Overpass-queries uit die Zoekmethode-sectie — niet voor iets anders.

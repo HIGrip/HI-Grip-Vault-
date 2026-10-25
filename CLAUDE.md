@@ -9,12 +9,12 @@
 | **Feiten** (prijzen, handles, URL's, ID's, verzending, claims) | `00_Brand_Core/Feiten & Actuele Staat.md`. **Lees dit eerst.** Zet feiten nooit in een prompt. |
 | Productwaarheid 2.0 (maten, EAN, B2B-prijzen) | `00_Brand_Core/Product/Performance Grip Socks 2.0.md` |
 | Merk en strategie (verhaal, stem, kleuren, design, kanalen) | **Leidend: Canva-document *MERK & STRATEGIE — HÏ Grip*** (https://canva.link/a48n60z2ay1g7bp). Uitgewerkt in `00_Brand_Core/`, begin bij `00 Brand Core.md`. |
-| Onderzoek (alle routines + losse onderzoeken) | `05_Research/`. De procedure staat in `05_Research/_build/PROCEDURE.md`. |
-| Acties (één backlog) | `05_Research/_backlog/ACTIEBACKLOG.md` |
-| Geheugen van de routines | `05_Research/_geheugen/`. De regels staan in `_geheugen/README.md`. |
-| Research Dashboard | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (bron: `05_Research/`) |
-| Agent-systeem (Denzel + hoofdagents) | `04_Agent_Infrastructuur/` |
-| Routine-prompts | `04_Agent_Infrastructuur/Routines/` |
+| Onderzoek (alle routines + losse onderzoeken) | `02_Dashboard/`. De procedure staat in `02_Dashboard/_build/PROCEDURE.md`. |
+| Acties (één backlog) | `02_Dashboard/_backlog/ACTIEBACKLOG.md` |
+| Geheugen van de routines | `02_Dashboard/_geheugen/`. De regels staan in `_geheugen/README.md`. |
+| Research Dashboard | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (bron: `02_Dashboard/`) |
+| Agent-systeem (Denzel + hoofdagents) | `01_Agent_Infrastructuur/` |
+| Routine-prompts | `02_Dashboard/Routines/` |
 
 De vault is de bron van waarheid. Spreekt iets anders (een geheugenbestand, een oud document, je eigen kennis) de vault tegen, dan wint de vault. Spreekt de live site de vault tegen, meld dat dan en werk de vault bij.
 
@@ -56,16 +56,16 @@ Rangorde bij tegenspraak:
 
 ## 6. Onderzoek registreren (verplicht)
 
-Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in `05_Research/` volgens `05_Research/_build/PROCEDURE.md` (sectie A). Daarna volgen de build, publicatie van het dashboard en een commit met push. Acties schrijf je als `- [ ] P? · tekst`. Backlog-items kopieer je niet naar notities.
+Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in `02_Dashboard/` volgens `02_Dashboard/_build/PROCEDURE.md` (sectie A). Daarna volgen de build, publicatie van het dashboard en een commit met push. Acties schrijf je als `- [ ] P? · tekst`. Backlog-items kopieer je niet naar notities.
 
 ## 7. Regels voor routines
 
-1. Lees eerst: dit bestand → `04_Agent_Infrastructuur/Routines/Routine-basisregels.md` (tokens en veiligheid, verplicht) → het feitenbestand (gericht zoeken) → je eigen geheugenbestand in `05_Research/_geheugen/` → de backlog (zoeken op je onderwerp of `acties.py open`, nooit volledig lezen).
+1. Lees eerst: dit bestand → `02_Dashboard/Routines/Routine-basisregels.md` (tokens en veiligheid, verplicht) → het feitenbestand (gericht zoeken) → je eigen geheugenbestand in `02_Dashboard/_geheugen/` → de backlog (zoeken op je onderwerp of `acties.py open`, nooit volledig lezen).
 2. **Alleen nieuwe punten**, tenzij een oud punt veranderd of verlopen is. Dan werk je het bestaande punt bij in plaats van een nieuw punt te maken.
-3. Blijf binnen je rol (zie de rolverdeling in `04_Agent_Infrastructuur/Routines/README.md`). Controleer niet wat een andere routine al controleert.
+3. Blijf binnen je rol (zie de rolverdeling in `02_Dashboard/Routines/README.md`). Controleer niet wat een andere routine al controleert.
 4. Lukt iets niet (geen toegang, tool faalt)? Stop niet. Noteer het, ga door met wat wel kan en meld het in je notitie.
 5. Sluit af met je geheugen bijwerken, een notitie, de build, publicatie van het dashboard en een commit met push. Bij een publish-conflict of een geweigerde push stop je en meld je het. Nooit forceren.
-6. Afvinken doet alleen de actiecontrole (met bewijs) of een mens; routines lezen 05_Research/_backlog/CONTROLE.json en stellen geen acties voor die daar gedaan of dubbel zijn.
+6. Afvinken doet alleen de actiecontrole (met bewijs) of een mens; routines lezen 02_Dashboard/_backlog/CONTROLE.json en stellen geen acties voor die daar gedaan of dubbel zijn.
 
 ## 8. Git
 
@@ -81,7 +81,7 @@ Elk onderzoek, zowel een routine-run als een losse vraag, eindigt als notitie in
 ## 9. Links en Brand Core (verplicht)
 
 - De Brand Core is het fundament: `00_Brand_Core/00 Brand Core.md` is het hoofdbestand. Elke notitie verwijst ernaar via één navigatieregel die begint met `> **Brand Core (00):**` en linkt naar de Brand Core, de kernbestanden en de index van de eigen map.
-- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "04_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`), zet onder elke kennisnotitie uit 00–04 een automatische sectie "Gerelateerd onderzoek" met de onderzoeksnotities die ernaar linken, en meldt welke notities nog zonder inkomende link zijn. Wil je dat een onderzoek bij een kennisnotitie verschijnt, link er dan naar in de body van je notitie.
+- Geen losse notities. Maak je een notitie aan of verplaats je er een, draai dan vóór je commit: `python "01_Agent_Infrastructuur/Beheer/vault_nav.py"`. Het script zet de navigatieregel, werkt de map-indexen bij (`01 … — Index`, `02 … — Index`, `03 … — Index`, `04 … — Index`, en voor 05 `Waar staat wat`), zet onder elke kennisnotitie uit 00–04 een automatische sectie "Gerelateerd onderzoek" met de onderzoeksnotities die ernaar linken, en meldt welke notities nog zonder inkomende link zijn. Wil je dat een onderzoek bij een kennisnotitie verschijnt, link er dan naar in de body van je notitie.
 - Bewerk de automatische secties ("Alle notities in deze map" in een index, "Gerelateerd onderzoek" onder een kennisnotitie) niet met de hand.
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Home]]

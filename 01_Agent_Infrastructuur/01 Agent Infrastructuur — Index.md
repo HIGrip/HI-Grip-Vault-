@@ -14,7 +14,7 @@ Terug naar [[Home]].
 
 ## Alle notities in deze map (automatisch)
 
-Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
+Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.
 
 ### Beheer
 - [[API & Tool Connections]]
@@ -110,24 +110,24 @@ Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand 
 - [[Werkplek Partnerships & Events Agent]]
 
 ### Routines
-- [[01_Agent_Infrastructuur/Routines/Actiecontrole|Routines/Actiecontrole]]
+- [[02_Dashboard/Routines/Actiecontrole|Routines/Actiecontrole]]
 - [[Backlinks & Merchant Center]]
 - [[Concurrentie-monitor]]
 - [[Denzel — aanpassen op info@]]
 - [[Denzel-weekoverzicht — origineel tot 2026-09-25]]
 - [[Denzel-weekoverzicht]]
 - [[Growth Radar]]
-- [[01_Agent_Infrastructuur/Routines/Klantstem|Routines/Klantstem]]
+- [[02_Dashboard/Routines/Klantstem|Routines/Klantstem]]
 - [[Materialen & productie]]
-- [[01_Agent_Infrastructuur/Routines/Productradar|Routines/Productradar]]
-- [[01_Agent_Infrastructuur/Routines/README|Routines/README]]
+- [[02_Dashboard/Routines/Productradar|Routines/Productradar]]
+- [[02_Dashboard/Routines/README|Routines/README]]
 - [[Routine-basisregels]]
 - [[SEO- en conversietest]]
-- [[01_Agent_Infrastructuur/Routines/SEO-regressiecheck|Routines/SEO-regressiecheck]]
+- [[02_Dashboard/Routines/SEO-regressiecheck|Routines/SEO-regressiecheck]]
 - [[Search Console & rankings]]
-- [[01_Agent_Infrastructuur/Routines/Uitvoerder|Routines/Uitvoerder]]
+- [[02_Dashboard/Routines/Uitvoerder|Routines/Uitvoerder]]
 - [[Verbanden & kansen]]
-- [[01_Agent_Infrastructuur/Routines/Website-UX|Routines/Website-UX]]
+- [[02_Dashboard/Routines/Website-UX|Routines/Website-UX]]
 
 ### Website Agent
 - [[Identiteit Website Agent]]

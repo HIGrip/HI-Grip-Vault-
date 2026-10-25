@@ -1,0 +1,42 @@
+---
+type: kennis
+gebied: content-agent
+bijgewerkt: 2026-10-12
+---
+
+# Muziek & Licenties — HÏ Grip
+
+> Spotify-playlists per content type. Voor de muziekstijlen en audio-identiteit: zie [[Brand Symbolen]].
+
+---
+
+## Spotify-playlists
+
+| Content type | Muziekstijl | Playlist |
+|---|---|---|
+| Announcements | Trending house / trance | [Announcements playlist](https://open.spotify.com/playlist/1WE0ph5xu0urKa7TKXpj69?si=c692f9786c104be7&pt=0c65404e64e2138a3c02cbd0128402a6) |
+| Milestones | Klassieke euforische muziek | [Milestones playlist](https://open.spotify.com/playlist/5CXkJEPwNBIiRObWHliPHB?si=c4283b45c8a64c13) |
+| Lifestyle | Rap (Drake, NL hiphop) | [Lifestyle playlist](https://open.spotify.com/playlist/2f5bwfOHIqZUMmhaK3Oays?si=ac00e5e2be5d465f) |
+
+---
+
+## Wat mag (besloten door Lars, 12-10-2026)
+
+- **Rechtenvrije of gelicenseerde muziek mag**, bijvoorbeeld uit Shopify of een andere bron met een commerciële licentie.
+- **Per post checken of de sound op het platform mag.** HÏ Grip post vanaf bedrijfsaccounts. Op TikTok mag een bedrijfsaccount alleen muziek uit de Commercial Music Library gebruiken; op Instagram is niet alle muziek beschikbaar voor bedrijfsaccounts. Staat een nummer daar niet in, gebruik het dan niet.
+- **De Spotify-playlists hieronder zijn een stijlgids**, geen licentie. Een nummer uit de playlist gebruik je alleen als het ook op het platform voor bedrijfsaccounts beschikbaar is.
+- Twijfel over een sound: niet gebruiken en melden via de Content Agent.
+
+## Richtlijn
+
+Alle audio moet **energiek, trending en sportief** zijn. Voor de uitgebreide beschrijving van de audio-identiteit: zie [[Brand Symbolen]].
+
+---
+
+## Gerelateerde bestanden
+
+- [[Brand Symbolen]] — Audio-identiteit en geuridentiteit
+- [[Brand Sound]] — Samenvatting audio-brand
+- [[Platform Richtlijnen]] — Per platform welk type content
+
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[04 Social Agent — Index]] · [[Home]]

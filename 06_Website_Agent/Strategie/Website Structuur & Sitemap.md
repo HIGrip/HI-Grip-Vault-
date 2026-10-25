@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Website Structuur & Sitemap — HÏ Grip
 
-> Baseline vastgelegd 2026-07-14, **gecorrigeerd 2026-09-16** op basis van de volledige `/seo audit` via claude-seo (12 deelaudits, incl. root-cause-onderzoek) — een deel van de 07-14-baseline klopte niet meer (assortiment gegroeid incl. een ongewenste duplicate, sitemap-omvang, footer heeft 4 kolommen, sport-pagina's beperkter dan gedacht). Volledige audit + actieplan: [[Claude SEO Plugin — Skills & Agents]] (`03_Website_Agent/SEO/Technisch`). Voor SEO-koppeling: zie [[SEO Strategie & Keywords]]. Voor het merkverhaal achter de structuur: zie [[Brand Identity Overview]].
+> Baseline vastgelegd 2026-07-14, **gecorrigeerd 2026-09-16** op basis van de volledige `/seo audit` via claude-seo (12 deelaudits, incl. root-cause-onderzoek) — een deel van de 07-14-baseline klopte niet meer (assortiment gegroeid incl. een ongewenste duplicate, sitemap-omvang, footer heeft 4 kolommen, sport-pagina's beperkter dan gedacht). Volledige audit + actieplan: [[Claude SEO Plugin — Skills & Agents]] (`06_Website_Agent/SEO/Technisch`). Voor SEO-koppeling: zie [[SEO Strategie & Keywords]]. Voor het merkverhaal achter de structuur: zie [[Brand Identity Overview]].
 
 ---
 
@@ -79,7 +79,7 @@ Dit is ook waarom de structuur uitbreidbaar moet zijn: er komt op termijn een **
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
 

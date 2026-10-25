@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Technische Procedures — Website Agent
 
-> Hoe de agent daadwerkelijk in Shopify-code werkt. Voor wie dit mag beoordelen/goedkeuren: zie [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]]. Voor hoe de toegang tot stand kwam (en wat NIET werkte): zie [[API & Tool Connections]] in 04_Agent_Infrastructuur/Beheer.
+> Hoe de agent daadwerkelijk in Shopify-code werkt. Voor wie dit mag beoordelen/goedkeuren: zie [[Agent Takenverdeling & Grenzen]] en [[Goedkeuringsworkflow]]. Voor hoe de toegang tot stand kwam (en wat NIET werkte): zie [[API & Tool Connections]] in 01_Agent_Infrastructuur/Beheer.
 
 ---
 
@@ -102,7 +102,7 @@ Eerste keer dat deze procedure is toegepast — zie [[Conversie Optimalisatie Ch
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-10-13-homepage-redesign]] — Homepage higrip.nl — analyse, benchmark en redesignvoorstel met motion
 - [[2026-10-02-vault-review]] — Vault-review — koppelingen, dubbelingen en foutieve informatie

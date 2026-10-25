@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Claude SEO Plugin — Skills & Agents
 
-> Documentatie van de `claude-seo` Claude Code-plugin (AgriciDaniel/claude-seo) én het resultaat van de eerste volledige audit op higrip.nl (16-09-2026). Installatiedetails staan in [[API & Tool Connections]] (`04_Agent_Infrastructuur/Beheer`). Dit bestand is de inhoudelijke laag: wat de audit vond en wat ermee gedaan is.
+> Documentatie van de `claude-seo` Claude Code-plugin (AgriciDaniel/claude-seo) én het resultaat van de eerste volledige audit op higrip.nl (16-09-2026). Installatiedetails staan in [[API & Tool Connections]] (`01_Agent_Infrastructuur/Beheer`). Dit bestand is de inhoudelijke laag: wat de audit vond en wat ermee gedaan is.
 
 ---
 
@@ -62,6 +62,6 @@ Zie het [audit-artifact](https://claude.ai/artifact/J4pGSpFe1TmWN5HLBqgMm3) voor
 
 - [[SEO Strategie & Keywords]]
 - [[API & Tool Connections]] — installatie/technische opzet van de plugin
-- Werkplek: `04_Agent_Infrastructuur/Website Agent/SEO Agent/Werkplek SEO Agent.md`
+- Werkplek: `01_Agent_Infrastructuur/Website Agent/SEO Agent/Werkplek SEO Agent.md`
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Website Agent — Index]] · [[Home]]

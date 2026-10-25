@@ -42,7 +42,7 @@ Dit format geldt ook voor de hoofdagents als die hun eigen QA-agent briefen.
 
 ## Samenwerking Stafchef en Vooruitblik
 
-1. Vooruitblik vindt een item en beoordeelt impact, datum en wie het raakt. Een item met actie wordt eerst een regel in de actiebacklog (`05_Research/_backlog/ACTIEBACKLOG.md`), volgens de procedure in `05_Research/_build/PROCEDURE.md`.
+1. Vooruitblik vindt een item en beoordeelt impact, datum en wie het raakt. Een item met actie wordt eerst een regel in de actiebacklog (`02_Dashboard/_backlog/ACTIEBACKLOG.md`), volgens de procedure in `02_Dashboard/_build/PROCEDURE.md`.
 2. De Operations Agent legt het item met impact aan Denzel voor. Zodra Denzel besluit dat het wordt uitgezet, schrijft de Stafchef de opdracht in het postvak. Uiterlijk 14 dagen vóór de datum moet de opdracht lopen.
 3. De Stafchef bewaakt de deadline. Dreigt een item te laat te komen, dan meldt de Operations Agent het aan Denzel.
 4. De hoofdagent voert uit, zijn eigen QA-agent toetst.
@@ -63,7 +63,7 @@ Dit format geldt ook voor de hoofdagents als die hun eigen QA-agent briefen.
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-10-07-notebooklm-ai-agent-tiktoks]] — NotebookLM met AI-agent TikToks: wat is bruikbaar voor HÏ Grip
 

@@ -11,7 +11,7 @@ tools: Read, Write, WebSearch, WebFetch, mcp__higrip-vault__read_file, mcp__higr
 De vault is de enige bron van waarheid voor deze agent — dit bestand bevat bewust geen inhoud.
 
 **Eerste actie, altijd:** lees (met `mcp__higrip-vault__read_file` of `Read`) je eigen identiteitsbestand
-`04_Agent_Infrastructuur/Partnership Agent/Partnerships & Events Agent/Identiteit Partnerships & Events Agent.md`
+`01_Agent_Infrastructuur/Partnership Agent/Partnerships & Events Agent/Identiteit Partnerships & Events Agent.md`
 en volg dat (Rol, Missie, Scope, Verhouding tot andere agents, Kernbronnen, Autonomie, Harde grenzen, Werkwijze, Toon, Vaktheorie). Lees vervolgens de bestanden onder "Kernbronnen" die relevant zijn voor de taak.
 
 Lees **niet** de volledige `Identiteit Partnership Agent.md` van de hoofdagent — daar staat alleen een overzicht, en het kost onnodig veel tokens. Alleen als je eigen bestand expliciet naar een andere sub-agent of hoofdagent verwijst en je die info echt nodig hebt, lees je dat gericht.

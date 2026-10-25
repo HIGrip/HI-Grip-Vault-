@@ -3,13 +3,13 @@
 Wat het doet (idempotent, veilig om vaak te draaien):
 1. Elke notitie krijgt één navigatieregel die begint met '> **Brand Core (00):**'.
    Die linkt naar [[00 Brand Core]], de kernbestanden en de index van de eigen map.
-   - In 05_Research staat de regel direct onder de H1 (de build rendert de body en
+   - In 02_Dashboard staat de regel direct onder de H1 (de build rendert de body en
      de backlog-parser leest tot het einde van het bestand; onderaan zou hij in de
      laatste sectie belanden).
    - Overal elders staat hij onderaan.
 2. Elke map-index (01–04 en 'Waar staat wat' voor 05) krijgt een automatisch
    bijgewerkte sectie met links naar alle notities in die map.
-3. Elke kennisnotitie (00–04) waar een onderzoeksnotitie uit 05_Research naar linkt,
+3. Elke kennisnotitie (00–04) waar een onderzoeksnotitie uit 02_Dashboard naar linkt,
    krijgt onderaan een sectie 'Gerelateerd onderzoek (automatisch)' met de nieuwste
    niet-gearchiveerde notities. Links in de navigatieregel tellen niet mee.
 4. Aan het eind: een rapport van notities zonder inkomende links (wezen).
@@ -17,7 +17,7 @@ Wat het doet (idempotent, veilig om vaak te draaien):
 Slaat over: bestanden met mergeconflicten, Home.md, 00 Brand Core.md (handmatig),
 en .git/.obsidian/.trash/.claude/_dashboard.
 
-Gebruik:  python "04_Agent_Infrastructuur/Beheer/vault_nav.py" [--dry-run]
+Gebruik:  python "01_Agent_Infrastructuur/Beheer/vault_nav.py" [--dry-run]
 """
 import os
 import re
@@ -32,22 +32,22 @@ NAV_PREFIX = "> **Brand Core (00):**"
 AUTO_HEADING = "## Alle notities in deze map (automatisch)"
 RESEARCH_HEADING = "## Gerelateerd onderzoek (automatisch)"
 RESEARCH_MAX = 8
-RESEARCH_NOTE_RE = re.compile(r"^05_Research/\d{4}-\d{2}-\d{2}-[^/]+\.md$")
+RESEARCH_NOTE_RE = re.compile(r"^02_Dashboard/\d{4}-\d{2}-\d{2}-[^/]+\.md$")
 
 HUBS = {
-    "01_Content_Agent": "01_Content_Agent/01 Content Agent — Index.md",
-    "02_Partnership_Agent": "02_Partnership_Agent/02 Partnership Agent — Index.md",
-    "03_Website_Agent": "03_Website_Agent/03 Website Agent — Index.md",
-    "04_Agent_Infrastructuur": "04_Agent_Infrastructuur/04 Agent Infrastructuur — Index.md",
-    "05_Research": "05_Research/Waar staat wat.md",
-    "06_Denzel": "06_Denzel/06 Denzel — Index.md",
+    "04_Social_Agent": "04_Social_Agent/01 Content Agent — Index.md",
+    "05_Partnership_Agent": "05_Partnership_Agent/02 Partnership Agent — Index.md",
+    "06_Website_Agent": "06_Website_Agent/03 Website Agent — Index.md",
+    "01_Agent_Infrastructuur": "01_Agent_Infrastructuur/04 Agent Infrastructuur — Index.md",
+    "02_Dashboard": "02_Dashboard/Waar staat wat.md",
+    "03_Denzel": "03_Denzel/03 Denzel — Index.md",
 }
 HUB_INTRO = {
-    "01_Content_Agent": "Kennisbank voor social content: copy, strategie en planning, visuele productie.",
-    "02_Partnership_Agent": "Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers.",
-    "03_Website_Agent": "Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail.",
-    "04_Agent_Infrastructuur": "Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts.",
-    "06_Denzel": "Kernmap van Denzel, de Orchestrator Agent: wat hij doet en hoe, zijn handboek en zijn vijf eigen sub-agents.",
+    "04_Social_Agent": "Kennisbank voor social content: copy, strategie en planning, visuele productie.",
+    "05_Partnership_Agent": "Kennisbank voor B2B-klanten (Lijn A), samenwerkingen en events (Lijn B) en influencers.",
+    "06_Website_Agent": "Kennisbank voor higrip.nl: doel en KPI's, copy, SEO, techniek, conversie, e-mail.",
+    "01_Agent_Infrastructuur": "Het agent-systeem: Denzel, de hoofdagents en sub-agents (identiteit, soul, werkplek), de gedeelde regels en de routine-prompts.",
+    "03_Denzel": "Kernmap van Denzel, de Orchestrator Agent: wat hij doet en hoe, zijn handboek en zijn vijf eigen sub-agents.",
 }
 
 CORE_LINKS = ("[[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · "
@@ -166,10 +166,10 @@ def hub_listing(top, notes, basenames) -> str:
         sub = n[len(top) + 1:].rsplit("/", 1)[0] if n.count("/") > 1 else ""
         groups.setdefault(sub, []).append(n)
     out = [AUTO_HEADING, "",
-           "Bijgewerkt door `04_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.", ""]
+           "Bijgewerkt door `01_Agent_Infrastructuur/Beheer/vault_nav.py`. Niet met de hand bewerken; draai het script opnieuw.", ""]
     for sub in sorted(groups):
         items = groups[sub]
-        if top == "05_Research" and sub == "":
+        if top == "02_Dashboard" and sub == "":
             items = sorted(items, reverse=True)
         out.append(f"### {sub or 'Hoofdmap'}")
         out.extend(f"- {link_for(n, basenames)}" for n in items)
@@ -190,9 +190,9 @@ def update_hub(top, notes, basenames, dry) -> bool:
     if idx != -1:
         text = text[:idx]
     text = strip_nav(text)
-    text = place_top(text, nav_line(rel)) if top == "05_Research" else text
+    text = place_top(text, nav_line(rel)) if top == "02_Dashboard" else text
     text = text.rstrip() + "\n\n" + hub_listing(top, notes, basenames)
-    if top != "05_Research":
+    if top != "02_Dashboard":
         text = place_top(text, nav_line(rel))
     return write(rel, text, bom, crlf, dry)
 
@@ -242,7 +242,7 @@ def research_index(notes) -> dict:
         entry = (meta.get("datum", ""), n.rsplit("/", 1)[-1][:-3], meta.get("titel", ""))
         for m in LINK_RE.finditer(body):
             tgt = resolve(m.group(1))
-            if tgt and not tgt.startswith("05_Research/") and tgt not in SKIP_FILES and tgt not in HUBS.values():
+            if tgt and not tgt.startswith("02_Dashboard/") and tgt not in SKIP_FILES and tgt not in HUBS.values():
                 index.setdefault(tgt, set()).add(entry)
     return {k: sorted(v, reverse=True) for k, v in index.items()}
 
@@ -261,7 +261,7 @@ def strip_research(text: str) -> str:
 
 def research_section(entries) -> str:
     out = [RESEARCH_HEADING, "",
-           "Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.", ""]
+           "Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.", ""]
     for datum, nid, titel in entries[:RESEARCH_MAX]:
         out.append(f"- [[{nid}]]" + (f" — {titel}" if titel else ""))
     if len(entries) > RESEARCH_MAX:
@@ -322,11 +322,11 @@ def main():
             continue
         text = strip_nav(text)
         nav = nav_line(rel)
-        if not rel.startswith("05_Research/"):
+        if not rel.startswith("02_Dashboard/"):
             text = strip_research(text)
             if rel in related:
                 text = text.rstrip() + "\n\n" + research_section(related[rel]) + "\n"
-        text = place_top(text, nav) if rel.startswith("05_Research/") else place_bottom(text, nav)
+        text = place_top(text, nav) if rel.startswith("02_Dashboard/") else place_bottom(text, nav)
         if write(rel, text, bom, crlf, dry):
             changed.append(rel)
 

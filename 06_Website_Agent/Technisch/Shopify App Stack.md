@@ -6,7 +6,7 @@ bijgewerkt: 2026-10-01
 
 # Shopify App Stack — HÏ Grip
 
-> Technische basis waarmee de Website Agent werkt. Voor de werkwijze zelf: zie [[Technische Procedures]]. Voor hoe deze toegang tot stand kwam (en wat niet werkte): zie [[API & Tool Connections]] in 04_Agent_Infrastructuur/Beheer.
+> Technische basis waarmee de Website Agent werkt. Voor de werkwijze zelf: zie [[Technische Procedures]]. Voor hoe deze toegang tot stand kwam (en wat niet werkte): zie [[API & Tool Connections]] in 01_Agent_Infrastructuur/Beheer.
 
 ---
 
@@ -82,7 +82,7 @@ De `analytics-mcp`-server draait en is getest — Claude Code kan direct GA4-rap
 
 ## Gerelateerd onderzoek (automatisch)
 
-Onderzoek uit `05_Research/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
+Onderzoek uit `02_Dashboard/` dat naar deze notitie verwijst, nieuwste eerst. Bijgewerkt door `vault_nav.py`; niet met de hand bewerken.
 
 - [[2026-09-07-compliance-todo]] — Compliance-verplichtingen NL/EU — to-do per categorie
 - [[2026-09-03-analytics-kpi-meetgat]] — GA4 — het meetgat en de eerste cijfers

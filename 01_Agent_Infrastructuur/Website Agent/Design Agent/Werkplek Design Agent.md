@@ -8,7 +8,7 @@ bijgewerkt: 2026-10-01
 
 ## Status: in ontwikkeling (sinds 2026-08-08)
 
-Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Website Agent-map (`04_Agent_Infrastructuur/Website Agent/`). Bronkennis ([[Shopify App Stack]], [[Logo & Kleurenpalet]]): zie 03_Website_Agent/Technisch.
+Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Website Agent-map (`01_Agent_Infrastructuur/Website Agent/`). Bronkennis ([[Shopify App Stack]], [[Logo & Kleurenpalet]]): zie 06_Website_Agent/Technisch.
 
 > Deze log is samengesteld door de inhoud van de lokale werkkopie (`C:\Users\lars\shopify-ai-workspace-theme`) te inspecteren — er is geen git-historie in die map, dus dit is gebaseerd op welke bestanden er nu staan en welke daarvan nieuw/eigen zijn t.o.v. een standaard Shopify-thema. Nog niet bevestigd door lars of alles al gepusht/preview-getest is — dat loopt in een aparte sessie.
 

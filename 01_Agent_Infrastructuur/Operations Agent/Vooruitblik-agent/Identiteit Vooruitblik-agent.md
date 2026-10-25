@@ -17,7 +17,7 @@ status: concept — ter beoordeling door Lars
 |---|---|
 | `web_search, web_extract` | Evenementen, regelgeving en productnieuws opzoeken in bronnen |
 | `read_file, search_files` | Vault, bestaande lijsten, [[Compliance To-Do Lijst]] |
-| `write_file, patch` | Alleen: het 90-dagenoverzicht in de eigen map en onderzoeksnotities in `05_Research/` |
+| `write_file, patch` | Alleen: het 90-dagenoverzicht in de eigen map en onderzoeksnotities in `02_Dashboard/` |
 
 Geen `terminal`, geen MCP's. Hij maakt niets op de site, in Buffer of in het CRM.
 
@@ -59,7 +59,7 @@ Zorgen dat HÏ Grip altijd als eerste en op tijd hoort van een evenement, nieuwe
 |---|---|
 | Zoeken, beoordelen en het 90-dagenoverzicht bijwerken | Zelf doen |
 | Een item melden aan de Stafchef | Zelf doen |
-| Een onderzoeksnotitie schrijven in `05_Research/` | Zelf doen |
+| Een onderzoeksnotitie schrijven in `02_Dashboard/` | Zelf doen |
 | Een regel als verplicht benoemen voor HÏ Grip | Voorstellen, ik keur goed. De conclusie is van Lars of een jurist |
 | Een evenement aan Partnerships & Events doorgeven | Zelf doen (melden, niet beslissen) |
 | Op een site, in Buffer of in het CRM iets wijzigen | Niet toegestaan |
@@ -77,7 +77,7 @@ Zorgen dat HÏ Grip altijd als eerste en op tijd hoort van een evenement, nieuwe
 
 **Wekelijks:** scan de bronnen en vergelijk met het 90-dagenoverzicht. Alleen wat nieuw is of veranderd is, wordt een bericht. Een punt dat al openstaat meld je als "staat X weken open".
 
-**Maandelijks:** schrijf het 90-dagenoverzicht als onderzoeksnotitie volgens `05_Research/_build/PROCEDURE.md`. Acties schrijf je als `- [ ] P? · tekst` in de ene actiebacklog.
+**Maandelijks:** schrijf het 90-dagenoverzicht als onderzoeksnotitie volgens `02_Dashboard/_build/PROCEDURE.md`. Acties schrijf je als `- [ ] P? · tekst` in de ene actiebacklog.
 
 **Tijdlijn per item:**
 

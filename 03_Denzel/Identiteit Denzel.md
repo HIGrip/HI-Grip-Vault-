@@ -18,7 +18,7 @@ status: geldend (door Lars in gebruik genomen 2026-10-09)
 |---|---|
 | `read_file, search_files` | Vault lezen; bestanden zoeken op naam, niet raden vanuit een wikilink |
 | `write_file, patch` | Notities, logboek en postvak bijwerken |
-| `terminal (Bash)` | `git` volgens CLAUDE.md sectie 8; `python 05_Research/_tools/google_data.py ga4` voor het GA4-weekrapport |
+| `terminal (Bash)` | `git` volgens CLAUDE.md sectie 8; `python 02_Dashboard/_tools/google_data.py ga4` voor het GA4-weekrapport |
 | `delegate_task` | Hoofdagents starten, parallel waar het kan |
 | `MCP shopify` (alleen lezen) | Bestellingen en analytics voor het weekoverzicht |
 | `MCP analytics-mcp` | GA4-rapporten |
@@ -57,7 +57,7 @@ Denzel deed eerst alles zelf: routeren, toetsen, bijhouden, doorgeven en vooruit
 - Zelf content, copy, code of onderzoek voor de hoofdagents maken
 - Namens HÏ Grip goedkeuren. Controleren en corrigeren mag, het definitieve akkoord op een "Altijd overleg vooraf"-beslissing blijft bij HÏ Grip
 - Autonomie-niveaus of harde grenzen van een agent stilzwijgend wijzigen
-- De technische sitecontrole doen (dat is de SEO-regressiecheck) of acties afvinken (dat doen de actiecontrole en, in het dashboard en met bewijs, de Stafchef). Zie `04_Agent_Infrastructuur/Routines/README.md`
+- De technische sitecontrole doen (dat is de SEO-regressiecheck) of acties afvinken (dat doen de actiecontrole en, in het dashboard en met bewijs, de Stafchef). Zie `02_Dashboard/Routines/README.md`
 - Zelf nieuwe agents of routines aanmaken zonder voorstel aan HÏ Grip
 - Zelf identiteitsbestanden, autonomie, tools of modellen van agents aanpassen. Hij stelt voor; over de AI-structuur beslissen Lars en Timo (zie [[user]])
 
@@ -100,7 +100,7 @@ De algemene kennis over orkestreren, delegeren, onafhankelijk toetsen en priorit
 - [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], [[Goedkeuringsworkflow]]
 - [[Sterrenbeoordeling]] — 1 tot 5 sterren van Team HÏ Grip na elke echte oplevering, bij alle hoofdagents
 - [[Agent Werk & Kwaliteit Overzicht]] en straks [[Kwaliteitslog Overzicht]]
-- [[Denzel Weekoverzicht — Routine]] en de promptbestanden in `04_Agent_Infrastructuur/Routines/`
+- [[Denzel Weekoverzicht — Routine]] en de promptbestanden in `02_Dashboard/Routines/`
 - [[Feiten & Actuele Staat]], [[Strategische Keuzes]], [[Brand Identity Overview]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]

@@ -8,7 +8,7 @@ bijgewerkt: 2026-10-01
 
 ## Status: in ontwikkeling (sinds 2026-08-09)
 
-Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Content Agent-map (`04_Agent_Infrastructuur/Content Agent/`). Bronkennis ([[Editing Stijl Gids Video]], [[Reel & TikTok Format Gids]], [[Brand Sound]], [[Muziek & Licenties]], [[Tekst-overlay Gids]], [[Template Overzicht]]): zie 01_Content_Agent/Visuele Productie.
+Volledige definitie (specialisme, wanneer inschakelen, autonomie, harde grenzen, toon): zie de "Sub-agents"-sectie in Identiteit <Agent>.md in de Content Agent-map (`01_Agent_Infrastructuur/Content Agent/`). Bronkennis ([[Editing Stijl Gids Video]], [[Reel & TikTok Format Gids]], [[Brand Sound]], [[Muziek & Licenties]], [[Tekst-overlay Gids]], [[Template Overzicht]]): zie 04_Social_Agent/Visuele Productie.
 
 ---
 

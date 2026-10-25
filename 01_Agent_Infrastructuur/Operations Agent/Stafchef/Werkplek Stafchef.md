@@ -18,7 +18,7 @@ Volledige definitie: [[Identiteit Stafchef]]. Nog niet gebouwd als agent en nog 
 
 ## Open vraag
 
-Postvak en backlog mogen elkaar niet in de weg zitten. Voorstel: acties die uit onderzoek voortkomen blijven in `05_Research/_backlog/ACTIEBACKLOG.md` (en worden alleen daar afgevinkt, door de actiecontrole). Het postvak bevat de opdrachten die Denzel aan een hoofdagent geeft, met een verwijzing naar de backlog-actie als die er is. Lars bevestigt of dit zo werkt.
+Postvak en backlog mogen elkaar niet in de weg zitten. Voorstel: acties die uit onderzoek voortkomen blijven in `02_Dashboard/_backlog/ACTIEBACKLOG.md` (en worden alleen daar afgevinkt, door de actiecontrole). Het postvak bevat de opdrachten die Denzel aan een hoofdagent geeft, met een verwijzing naar de backlog-actie als die er is. Lars bevestigt of dit zo werkt.
 
 ## Openstaand
 

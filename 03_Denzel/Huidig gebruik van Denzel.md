@@ -54,8 +54,8 @@ Routeren naar de juiste hoofdagent, kwaliteit en merkconsistentie bewaken, de Op
 
 - Het tokengebruik en de kosten per taak in Hermes: nog niet gemeten.
 - Hoe Tigo en Timo Denzel gebruiken, buiten wat het protocol zegt.
-- Of de weekroutine op info@ sinds 28 sept elke maandag draaide; het laatste weekoverzicht kan worden nagelopen in `05_Research/`.
+- Of de weekroutine op info@ sinds 28 sept elke maandag draaide; het laatste weekoverzicht kan worden nagelopen in `02_Dashboard/`.
 
 Aanvullen of corrigeren kan door Lars, Tigo of Timo.
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]

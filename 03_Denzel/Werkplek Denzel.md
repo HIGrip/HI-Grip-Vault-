@@ -16,7 +16,7 @@ Doel: Denzel op hetzelfde niveau brengen als de andere agents, met een eigen ker
 
 **Besluit van Lars:** Denzel is alleen orchestrator en heeft geen eigen sub-agents meer. De drie QA-agents staan onder hun eigen hoofdagent (Website-QA, Content-QA, Partnership-QA). De Stafchef en de Vooruitblik-agent staan onder een nieuwe vierde hoofdagent, de [[Identiteit Operations Agent|Operations Agent]]. Een QA-verdict gaat naar de eigen hoofdagent en altijd als kopie naar Denzel.
 
-**Wat:** mappen verplaatst van `06_Denzel/Kwaliteitspartners`, `Stafchef` en `Vooruitblik` naar `04_Agent_Infrastructuur/<Hoofdagent>/`. [[Toetsregels]] staat nu in `Beheer/`. "Delegeren aan het eigen team" heet nu [[Samenwerking Stafchef en Vooruitblik]] en staat bij de Operations Agent. Identiteit, Soul, index en handboek van Denzel, de Soul en Identiteit van de drie hoofdagents, het structuurschema, user.md, de leerregels, de dashboard-notitie en het stappenplan zijn bijgewerkt.
+**Wat:** mappen verplaatst van `03_Denzel/Kwaliteitspartners`, `Stafchef` en `Vooruitblik` naar `01_Agent_Infrastructuur/<Hoofdagent>/`. [[Toetsregels]] staat nu in `Beheer/`. "Delegeren aan het eigen team" heet nu [[Samenwerking Stafchef en Vooruitblik]] en staat bij de Operations Agent. Identiteit, Soul, index en handboek van Denzel, de Soul en Identiteit van de drie hoofdagents, het structuurschema, user.md, de leerregels, de dashboard-notitie en het stappenplan zijn bijgewerkt.
 
 **Nog open:** Hermes bijwerken (skill `higrip-denzel` › `references/sub-agents.md`, de `SOUL.md` van de profielen, een profiel `operations`). Autonomie van de Operations Agent is een voorstel tot Lars of Timo akkoord geeft.
 
@@ -24,11 +24,11 @@ Doel: Denzel op hetzelfde niveau brengen als de andere agents, met een eigen ker
 
 ## 2026-10-02 — Concept van de kernmap opgezet
 
-**Wat:** map `06_Denzel` aangemaakt met Identiteit, Soul, Werkplek, het handboek (routering, delegeren, kwaliteitscontrole, escalatie, ritmes, vaktheorie) en de vijf sub-agents met elk een Identiteit en Werkplek. De drie QA-agents hebben daarnaast een Toetslijst.
+**Wat:** map `03_Denzel` aangemaakt met Identiteit, Soul, Werkplek, het handboek (routering, delegeren, kwaliteitscontrole, escalatie, ritmes, vaktheorie) en de vijf sub-agents met elk een Identiteit en Werkplek. De drie QA-agents hebben daarnaast een Toetslijst.
 
 **Waarom:** Denzels bestaande bronnen stonden verspreid: `identiteit Denzel`, `soul Denzel`, [[Opdrachtprotocol]], [[Verbeterlus]], [[Leerregels per Agent]], de weekroutine en het kwaliteitsoverzicht. Er was geen plek die zegt wat hij doet, hoe, en wat hij aan wie overlaat.
 
-**Afbakening:** `04_Agent_Infrastructuur` blijft de structuur en spelregels voor het hele systeem. Niets is gekopieerd: waar de spelregel in 04 staat, verwijst het handboek ernaar.
+**Afbakening:** `01_Agent_Infrastructuur` blijft de structuur en spelregels voor het hele systeem. Niets is gekopieerd: waar de spelregel in 04 staat, verwijst het handboek ernaar.
 
 ---
 
@@ -37,8 +37,8 @@ Doel: Denzel op hetzelfde niveau brengen als de andere agents, met een eigen ker
 | # | Punt | Wie |
 |---|---|---|
 | 1 | Alles in deze map is concept. **Autonomie en grenzen van de vijf nieuwe sub-agents moet Lars goedkeuren**, net als de rijen met "(voorstel)" in [[Soul Denzel]]. *Deels gedaan 12-10-2026:* afvinken (Stafchef, in het dashboard met bewijs), leerregels (Stafchef legt vast), routeren (Denzel zelf) en QA-verdicten (Denzel checkt snel) zijn besloten en verwerkt. | Lars |
-| 2 | ~~**Verhuizen:** `identiteit Denzel.md` en `soul Denzel.md` uit `04_Agent_Infrastructuur`.~~ **Gedaan 12-10-2026:** de vervallen kopieën in 04 zijn verwijderd; alleen deze map bestaat nog. | Denzel / Lars |
-| 3 | **Eén actiesysteem.** Er is al één actiebacklog (`05_Research/_backlog/ACTIEBACKLOG.md`) met de actiecontrole en (sinds 12-10, in het dashboard met bewijs) de Stafchef als enigen die afvinken. Het postvak is geen tweede backlog: het is alleen het overdrachtskanaal voor opdrachten die Denzel aan een hoofdagent geeft. Vooruitblik-acties komen eerst in de backlog. Controleren of dit zo werkt in de praktijk. | Denzel |
+| 2 | ~~**Verhuizen:** `identiteit Denzel.md` en `soul Denzel.md` uit `01_Agent_Infrastructuur`.~~ **Gedaan 12-10-2026:** de vervallen kopieën in 04 zijn verwijderd; alleen deze map bestaat nog. | Denzel / Lars |
+| 3 | **Eén actiesysteem.** Er is al één actiebacklog (`02_Dashboard/_backlog/ACTIEBACKLOG.md`) met de actiecontrole en (sinds 12-10, in het dashboard met bewijs) de Stafchef als enigen die afvinken. Het postvak is geen tweede backlog: het is alleen het overdrachtskanaal voor opdrachten die Denzel aan een hoofdagent geeft. Vooruitblik-acties komen eerst in de backlog. Controleren of dit zo werkt in de praktijk. | Denzel |
 | 4 | **Kwaliteitslog splitsen.** [[Agent Werk & Kwaliteit Overzicht]] is één lange tabel. Verdelen over [[Kwaliteitslog Overzicht]] en een log per hoofdagent, met behoud van de historie. Dit is een verhuizing van bestaande rijen, dus pas na de merge. | Stafchef |
 | 5 | `vault_nav.py` kent map 06 nog niet. Toevoegen, zodat de index, de navigatieregel en de losse-notitie-controle ook hier werken. Daarna `CLAUDE.md` (sectie 1 en 9) en `Home.md` aanvullen. | Denzel |
 | 6 | Dunne agentbestanden voor de vijf sub-agents in `agents/` (alleen frontmatter plus de opdracht om hun identiteit uit deze map te lezen), daarna de setup-repo bijwerken, committen en pushen. | Denzel |
@@ -63,4 +63,4 @@ Doel: Denzel op hetzelfde niveau brengen als de andere agents, met een eigen ker
 - [[Opdrachtprotocol]]
 - [[Verbeterlus]]
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[06 Denzel — Index]] · [[Home]]
+> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[03 Denzel — Index]] · [[Home]]

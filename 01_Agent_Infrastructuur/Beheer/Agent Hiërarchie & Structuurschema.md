@@ -18,10 +18,10 @@ bijgewerkt: 2026-10-21
 Team HÏ Grip (Lars, Tigo, Timo)
    │   beslist; zet altijd zelf de laatste stap (live, publiceren, versturen, geld, contracten)
    ▼
-Denzel — alleen orchestrator (06_Denzel), geen eigen sub-agents
+Denzel — alleen orchestrator (03_Denzel), geen eigen sub-agents
    │   routeert, bewaakt kwaliteit, één aanspreekpunt, krijgt een kopie van elk QA-verdict
    ▼
-Hoofdagents (04_Agent_Infrastructuur)
+Hoofdagents (01_Agent_Infrastructuur)
    ├── Website Agent      → SEO · Design · Website Copy · Conversie & Analyse · E-mail Marketing · Website-QA
    ├── Content Agent      → Content Strategie & Planning · Caption & Copy · Video & Visuele Productie · Content Maker · Socials Analyzer · Content-QA
    ├── Partnership Agent  → Influencer & Creator · B2B Klanten · Partnerships & Events · Partnership-QA
@@ -56,13 +56,13 @@ Hoofdagents (04_Agent_Infrastructuur)
 
 | Wat | Bestanden | Locatie |
 |---|---|---|
-| Denzel | `Identiteit Denzel.md`, `Soul Denzel.md`, `Werkplek Denzel.md`, handboek | `06_Denzel/` |
-| QA-agents | `Identiteit`, `Werkplek` en `Toetslijst <QA>.md`; gedeelde [[Toetsregels]] in `Beheer/` | `04_Agent_Infrastructuur/<Hoofdagent>/<QA>/` |
-| Hoofdagent | `Identiteit <Agent>.md`, `Soul <Agent>.md` | `04_Agent_Infrastructuur/<Hoofdagent>/` |
-| Sub-agent | `Identiteit <Agent>.md` + `Werkplek <Agent>.md`, één map per sub-agent | `04_Agent_Infrastructuur/<Hoofdagent>/<Sub-agent>/` |
-| Gedeeld voor alle agents | [[user]], [[Leerregels per Agent]], [[Toetsregels]], [[Opdrachtprotocol]], [[Verbeterlus]], [[API & Tool Connections]], [[Goedkeuringsworkflow]], [[Agents en het dashboard]] | `04_Agent_Infrastructuur/Beheer/` |
-| Routines (cloud) | promptbestanden en README | `04_Agent_Infrastructuur/Routines/` |
-| Vakkennis | de bronnotities per vakgebied | `01_Content_Agent/`, `02_Partnership_Agent/`, `03_Website_Agent/` |
+| Denzel | `Identiteit Denzel.md`, `Soul Denzel.md`, `Werkplek Denzel.md`, handboek | `03_Denzel/` |
+| QA-agents | `Identiteit`, `Werkplek` en `Toetslijst <QA>.md`; gedeelde [[Toetsregels]] in `Beheer/` | `01_Agent_Infrastructuur/<Hoofdagent>/<QA>/` |
+| Hoofdagent | `Identiteit <Agent>.md`, `Soul <Agent>.md` | `01_Agent_Infrastructuur/<Hoofdagent>/` |
+| Sub-agent | `Identiteit <Agent>.md` + `Werkplek <Agent>.md`, één map per sub-agent | `01_Agent_Infrastructuur/<Hoofdagent>/<Sub-agent>/` |
+| Gedeeld voor alle agents | [[user]], [[Leerregels per Agent]], [[Toetsregels]], [[Opdrachtprotocol]], [[Verbeterlus]], [[API & Tool Connections]], [[Goedkeuringsworkflow]], [[Agents en het dashboard]] | `01_Agent_Infrastructuur/Beheer/` |
+| Routines (cloud) | promptbestanden en README | `02_Dashboard/Routines/` |
+| Vakkennis | de bronnotities per vakgebied | `04_Social_Agent/`, `05_Partnership_Agent/`, `06_Website_Agent/` |
 | Merk en strategie | Brand Core, leidend sinds 30-9-2026 (Canva *MERK & STRATEGIE*) | `00_Brand_Core/` |
 
 **Waar de agents draaien (besloten door Lars, 12-10-2026):** alle agents worden gebouwd in **Hermes**. Een paar agents roepen Claude aan om iets echt te bouwen, zoals een nieuwe websitesectie (Design Agent). Schrijfwerk (captions, sitecopy, mails) doet Team HÏ Grip waarschijnlijk via de chat met Claude, omdat dat menselijker wordt; dat is nog niet definitief.
@@ -99,7 +99,7 @@ Hoofdagents (04_Agent_Infrastructuur)
 3. Zet in de identiteit van de hoofdagent een regel met de rol en een link, en voeg de agent toe aan de delegatietabel in diens soul.
 4. Voeg in de setup-repo een `agents/<naam>.md` toe die naar het vault-pad verwijst, en werk de tabel in `CLAUDE.md` bij.
 5. Geef de agent een sectie in [[Leerregels per Agent]] en zet hem in de tabel hierboven.
-6. Draai `04_Agent_Infrastructuur/Beheer/vault_nav.py` zodat de indexen kloppen.
+6. Draai `01_Agent_Infrastructuur/Beheer/vault_nav.py` zodat de indexen kloppen.
 
 ---
 
@@ -110,6 +110,6 @@ Hoofdagents (04_Agent_Infrastructuur)
 - [[Agent Takenverdeling & Grenzen]]
 - [[Goedkeuringsworkflow]]
 - [[API & Tool Connections]]
-- [[06 Denzel — Index]]
+- [[03 Denzel — Index]]
 
 > **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[01 Agent Infrastructuur — Index]] · [[Home]]

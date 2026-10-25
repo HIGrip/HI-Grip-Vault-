@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "De grip sock-ads die het langst draaien, gebruiken vier hoeken: de sceptische sporter die overstag gaat, twijfels wegnemen, performance en sociaal bewijs. FitSockr hield die vijf tot zeven maanden vast. In NL komen de meeste ads op 'gripsokken' van pilatesstudio's die sokken weggeven, niet van sokkenmerken. Daardoor ligt er voor HÏ Grip ruimte in padel, voetbal en rugby met een eigen merk-ad, getest via een vast stappenplan van drie hoeken met elk twee creatives."
-gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-11-concurrentie-seo-per-merk, 2026-09-21-beachhead-rugby]
+gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers, 2026-10-11-concurrentie-seo-per-merk, 2026-09-21-beachhead-rugby, 2026-10-25-ab-test-ads-features-vs-beste]
 vervangt: []
 bronbestand: ""
 deadline: ""

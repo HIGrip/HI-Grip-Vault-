@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>HÏ Grip ad</title>
+<style>
+  /* Renders one ad at native size: ad.html?ad=1A … 4B. Exported to png/ with headless Edge. */
+  @font-face { font-family: 'Poppins'; font-weight: 400; src: url(fonts/Poppins-Regular.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; src: url(fonts/Poppins-SemiBold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 700; src: url(fonts/Poppins-Bold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; src: url(fonts/Poppins-ExtraBold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; font-style: italic; src: url(fonts/Poppins-BlackItalic.ttf); }
+
+  :root {
+    --hi-black: #0A0A0A;
+    --hi-white: #FFFFFF;
+    --hi-yellow: #CCFF00;
+    --hi-near-black: #111111;
+    --hi-titanium: #909194;
+    --hi-warm-offwhite: #EAE8E5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--hi-near-black); }
+  body { font-family: 'Poppins', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+  .ad { position: relative; overflow: hidden; color: var(--hi-white); }
+  .ad--feed { width: 1080px; height: 1350px; }
+  .ad--story { width: 1080px; height: 1920px; }
+  .ad__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+  .corner { position: absolute; font: 600 26px/1 'Poppins'; text-transform: uppercase; letter-spacing: 0; }
+
+  .pill {
+    display: inline-flex; align-items: center; gap: 14px;
+    border-radius: 999px; padding: 24px 40px 24px 44px;
+    font: 700 30px/1 'Poppins';
+    background: var(--hi-white); color: var(--hi-black);
+  }
+  .pill svg { width: 22px; height: 22px; }
+  .pill--dark { background: var(--hi-black); color: var(--hi-white); }
+
+  /* -0.04em laat Black Italic op 130px+ in elkaar lopen; -0.02em houdt de letters los */
+  .h-black { font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -0.02em; line-height: .92; }
+  .h-xbold { font-weight: 800; text-transform: uppercase; letter-spacing: -0.04em; line-height: .98; }
+  .sub { font: 400 32px/1.4 'Poppins'; letter-spacing: -0.02em; }
+
+  /* 1 · Padel editorial */
+  .p1 .shade { position: absolute; inset: auto 0 0 0; height: 46%; background: linear-gradient(to bottom, rgba(10,10,10,0), rgba(10,10,10,.55)); }
+  .p1 .tl { top: 56px; left: 64px; } .p1 .tr { top: 56px; right: 64px; }
+  .p1 .copy { position: absolute; left: 64px; right: 64px; bottom: 190px; }
+  .p1 .copy h1 { font-size: 132px; }
+  .p1 .copy .sub { margin-top: 28px; max-width: 760px; }
+  .p1 .bl { left: 64px; bottom: 82px; }
+  .p1 .pill { position: absolute; right: 64px; bottom: 56px; }
+
+  /* 2 · Voetbal callouts */
+  .p2 .shade { position: absolute; inset: 0 0 auto 0; height: 34%; background: linear-gradient(to top, rgba(10,10,10,0), rgba(10,10,10,.5)); }
+  .p2 .tl { top: 56px; left: 64px; } .p2 .tr { top: 56px; right: 64px; }
+  .p2 h1 { position: absolute; top: 120px; left: 64px; right: 64px; font-size: 84px; }
+  .p2 svg.lines { position: absolute; inset: 0; }
+  .p2 .label { position: absolute; font: 600 30px/1.2 'Poppins'; letter-spacing: -0.02em; padding: 14px 20px; border-radius: 14px; background: rgba(10,10,10,.62); backdrop-filter: blur(6px); }
+  .p2 .pill { position: absolute; left: 50%; transform: translateX(-50%); bottom: 56px; }
+
+  /* 3 · Tennis story */
+  .p3 .shade { position: absolute; inset: 0 0 auto 0; height: 40%; background: linear-gradient(to top, rgba(10,10,10,0), rgba(10,10,10,.45)); }
+  .p3 .top { position: absolute; top: 210px; left: 0; right: 0; text-align: center; font: 600 26px/1 'Poppins'; text-transform: uppercase; }
+  .p3 h1 { position: absolute; top: 270px; left: 90px; right: 90px; text-align: center; font-size: 96px; }
+  .p3 .sub { position: absolute; top: 520px; left: 140px; right: 140px; text-align: center; }
+  .p3 .pill { position: absolute; left: 50%; transform: translateX(-50%); bottom: 380px; }
+
+  /* 4 · Rugby product + typografie */
+  .p4 { background: var(--hi-warm-offwhite); color: var(--hi-black); }
+  .p4 .word { position: absolute; top: 250px; left: 0; right: 0; text-align: center; font: 900 italic 280px/1 'Poppins'; letter-spacing: -0.03em; color: var(--hi-titanium); }
+  .p4 .sock { position: absolute; top: 120px; left: 50%; height: 760px; transform: translateX(-46%) rotate(-8deg); filter: drop-shadow(0 30px 40px rgba(10,10,10,.18)); }
+  .p4 .tl { top: 56px; left: 64px; } .p4 .tr { top: 56px; right: 64px; }
+  .p4 .copy { position: absolute; left: 64px; right: 64px; bottom: 170px; }
+  .p4 .copy h1 { font-size: 70px; }
+  .p4 .copy .sub { margin-top: 20px; max-width: 820px; }
+  .p4 .bl { left: 64px; bottom: 82px; }
+  .p4 .pill { position: absolute; right: 64px; bottom: 56px; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+  const chevron = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
+  const cta = (dark) => `<span class="pill${dark ? ' pill--dark' : ''}">Shop nu ${chevron}</span>`;
+
+  // Alleen de boodschap verschilt binnen een paar; beeld, opmaak, tekstlengte en CTA zijn gelijk.
+  const ADS = {
+    '1A': { c: 1, h: 'De beste gripsok.', s: 'Voor padel. Voor elke rally, elke bandeja, elke set.' },
+    '1B': { c: 1, h: 'Siliconen gripzones.', s: 'Plus 30% Coolmax en 15–20 mmHg compressie. Voor padel.' },
+    '2A': { c: 2, h: 'De beste gripsok op het veld.', l: ['De beste<br>grip', 'Het beste<br>comfort', 'De beste<br>pasvorm', 'De beste<br>kwaliteit'] },
+    '2B': { c: 2, h: 'Vier details. Eén gripsok.', l: ['Siliconen<br>gripzones', '30%<br>Coolmax', '15–20 mmHg<br>compressie', 'Versterkte<br>hiel'] },
+    '3A': { c: 3, h: 'De beste gripsok voor gravel.', s: 'Elke sprint, elke stop, elke set.' },
+    '3B': { c: 3, h: 'Siliconen grip. Versterkte hiel.', s: 'Voor sprints, stops en slides.' },
+    '4A': { c: 4, h: 'De beste gripsok voor rugby.', s: 'Gemaakt voor elke scrum, elke tackle en elk fluitsignaal.' },
+    '4B': { c: 4, h: 'Siliconen grip in je schoen.', s: 'Versterkte hiel, naadloze teen. Tot het laatste fluitsignaal.' },
+  };
+
+  const id = (new URLSearchParams(location.search).get('ad') || '1A').toUpperCase();
+  const ad = ADS[id];
+  const R = document.getElementById('root');
+
+  if (ad.c === 1) R.innerHTML = `
+    <div class="ad ad--feed p1">
+      <img class="ad__photo" src="img/padel.jpg" alt="">
+      <div class="shade"></div>
+      <span class="corner tl">HÏ Grip</span><span class="corner tr">Padel</span>
+      <div class="copy"><h1 class="h-black">${ad.h}</h1><p class="sub">${ad.s}</p></div>
+      <span class="corner bl">Performance Grip Socks 2.0</span>
+      ${cta()}
+    </div>`;
+
+  if (ad.c === 2) {
+    // [punt op de sok, positie label, uitlijning]
+    const pts = [
+      { p: [812, 860], l: [826, 1000], a: 'right' },
+      { p: [352, 640], l: [64, 560], a: 'left' },
+      { p: [784, 520], l: [826, 400], a: 'right' },
+      { p: [372, 985], l: [64, 1060], a: 'left' },
+    ];
+    const lines = pts.map(({ p, l, a }) => {
+      const lx = a === 'left' ? l[0] + 200 : l[0];
+      const ly = l[1] + 36;
+      return `<line x1="${p[0]}" y1="${p[1]}" x2="${lx}" y2="${ly}" stroke="#fff" stroke-width="2"/>
+              <circle cx="${p[0]}" cy="${p[1]}" r="9" fill="none" stroke="#fff" stroke-width="3"/>`;
+    }).join('');
+    R.innerHTML = `
+      <div class="ad ad--feed p2">
+        <img class="ad__photo" src="img/voetbal.jpg" alt="">
+        <div class="shade"></div>
+        <span class="corner tl">HÏ Grip</span><span class="corner tr">Voetbal</span>
+        <h1 class="h-xbold">${ad.h}</h1>
+        <svg class="lines" viewBox="0 0 1080 1350">${lines}</svg>
+        ${pts.map((pt, i) => `<span class="label" style="left:${pt.l[0]}px;top:${pt.l[1]}px">${ad.l[i]}</span>`).join('')}
+        ${cta()}
+      </div>`;
+  }
+
+  if (ad.c === 3) R.innerHTML = `
+    <div class="ad ad--story p3">
+      <img class="ad__photo" src="img/tennis.jpg" alt="">
+      <div class="shade"></div>
+      <span class="top">HÏ Grip · Tennis</span>
+      <h1 class="h-xbold">${ad.h}</h1>
+      <p class="sub">${ad.s}</p>
+      ${cta()}
+    </div>`;
+
+  if (ad.c === 4) R.innerHTML = `
+    <div class="ad ad--feed p4">
+      <span class="word">RUGBY</span>
+      <img class="sock" src="img/sok-zwart-cut.png" alt="">
+      <span class="corner tl">HÏ Grip</span><span class="corner tr">€17,95</span>
+      <div class="copy"><h1 class="h-xbold">${ad.h}</h1><p class="sub">${ad.s}</p></div>
+      <span class="corner bl">Performance Grip Socks 2.0</span>
+      ${cta(true)}
+    </div>`;
+</script>
+</body>
+</html>

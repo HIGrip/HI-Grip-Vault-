@@ -36,6 +36,8 @@ DATA_DIR = RESEARCH_DIR / "_data"
 DATA_BESTANDEN = ("instellingen", "kpi", "agenda", "cwv", "koppelingen", "shopify", "sync")
 OUTPUT_PATH = RESEARCH_DIR / "_build" / "register.js"
 KAART_PATH = RESEARCH_DIR / "Waar staat wat.md"
+# Routines schrijven in de root (inbox); het weekonderhoud (acties.py opruimen) sorteert ze hierheen.
+SORT_DIRS = ("Growth-radar", "SEO", "Onderzoek", "Weekoverzichten")
 GITHUB_BRANCH = "HÏ-Grip-Vault-obsidian"
 GITHUB_BASE = "https://github.com/HIGrip/HI-Grip-Vault-/blob/" + urllib.parse.quote(GITHUB_BRANCH) + "/"
 
@@ -607,7 +609,24 @@ def build_stats(notities: list, backlog: list) -> dict:
 
 # ── Hoofdprogramma ─────────────────────────────────────────────────────────────
 def note_files() -> list:
-    return sorted(p for p in RESEARCH_DIR.glob("*.md") if p.name != KAART_PATH.name)
+    """Onderzoeksnotities: de root van 02_Dashboard (inbox van de routines) plus de sorteermappen.
+
+    In de sorteermappen tellen alleen bestanden met een id-naam (JJJJ-MM-DD-slug); andere
+    bestanden daar (zoals de routinebeschrijving in Weekoverzichten/) zijn geen notities.
+    """
+    paden = [p for p in RESEARCH_DIR.glob("*.md") if p.name != KAART_PATH.name]
+    for sub in SORT_DIRS:
+        paden += [p for p in (RESEARCH_DIR / sub).glob("*.md") if ID_RE.match(p.stem)]
+    return sorted(paden, key=lambda p: (p.name, str(p)))
+
+
+def note_path(note_id: str):
+    """Pad van een notitie op id, in de root of een sorteermap; None als hij niet bestaat."""
+    for map_ in (RESEARCH_DIR, *(RESEARCH_DIR / s for s in SORT_DIRS)):
+        kandidaat = map_ / f"{note_id}.md"
+        if kandidaat.is_file():
+            return kandidaat
+    return None
 
 
 def load_notes(index: dict) -> list:
@@ -624,21 +643,32 @@ def load_notes(index: dict) -> list:
         note["wat_niet_lukte"] = wat_niet_lukte(body)
         note["body_md"] = convert_wikilinks(body, index)
         note["bronbestand_url"] = bronbestand_url(meta["bronbestand"])
-        note["vault_url"] = github_url(f"{RESEARCH_DIR.name}/{name}")
+        note["vault_url"] = github_url(path.relative_to(VAULT).as_posix())
         notities.append(note)
 
-    ids = {n["id"] for n in notities}
+    ids = [n["id"] for n in notities]
+    dubbel = sorted({i for i in ids if ids.count(i) > 1})
+    if dubbel:
+        raise BuildError(f"dubbele notitie-id('s) in root en sorteermappen: {', '.join(dubbel)}")
+    ids = set(ids)
+    # Verwijzingen naar notities die het weekonderhoud heeft opgeruimd (bewaartermijn) zijn geen
+    # fout meer: waarschuwen en weglaten, zodat een routine-build er niet op stukloopt.
     for n in notities:
         for key in LIST_KEYS:
+            heel = []
             for ref in n[key]:
-                if ref not in ids:
-                    raise BuildError(f"{n['id']}.md: '{key}' verwijst naar onbekende notitie '{ref}'")
                 if ref == n["id"]:
                     raise BuildError(f"{n['id']}.md: '{key}' verwijst naar zichzelf")
-        for kans in n["kansen"]:
-            for ref in kans["bewijs"]:
                 if ref not in ids:
-                    raise BuildError(f"{n['id']}.md: kans '{kans['titel']}' noemt onbekende notitie '{ref}' als bewijs")
+                    print(f"waarschuwing: {n['id']}.md: '{key}' verwijst naar opgeruimde notitie '{ref}' (weggelaten)", file=sys.stderr)
+                    continue
+                heel.append(ref)
+            n[key] = heel
+        for kans in n["kansen"]:
+            bekend = [ref for ref in kans["bewijs"] if ref in ids]
+            if len(bekend) != len(kans["bewijs"]):
+                print(f"waarschuwing: {n['id']}.md: kans '{kans['titel']}' noemt opgeruimde notitie(s) als bewijs (weggelaten)", file=sys.stderr)
+                kans["bewijs"] = bekend
     notities.sort(key=lambda n: (n["datum"], n["id"]), reverse=True)
     return notities
 

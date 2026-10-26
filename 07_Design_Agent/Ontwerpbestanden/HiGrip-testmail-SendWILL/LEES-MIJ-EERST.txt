@@ -1,0 +1,66 @@
+HÏ GRIP · TESTKAART 3 · A/B-TESTMAIL VOOR SENDWILL
+=====================================================
+
+In deze map
+-----------
+Mail-A-product-SendWILL.html       variant A, alleen product
+Mail-B-merkverhaal-SendWILL.html   variant B, product + merkverhaal
+afbeeldingen-uploaden-naar-shopify  11 afbeeldingen die de mails gebruiken
+
+
+Stap 1 · Afbeeldingen online zetten (eenmalig)
+----------------------------------------------
+1. Shopify-admin > Content > Bestanden > Bestanden uploaden.
+2. Upload alle 11 bestanden uit de map "afbeeldingen-uploaden-naar-shopify".
+   Verander de bestandsnamen NIET. De mails verwijzen naar precies deze namen:
+   https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-testmail-....
+3. Controle: open in je browser
+   https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-testmail-hero-a.jpg
+   Zie je de foto, dan staat alles goed.
+   Maakt Shopify er "...-hero-a_1.jpg" van (omdat de naam al bestond), pas dan
+   die naam aan in de HTML of verwijder eerst het oude bestand.
+
+
+Stap 2 · HTML in SendWILL plakken
+---------------------------------
+1. Open Mail-A-product-SendWILL.html in Kladblok (rechtsklik > Openen met > Kladblok).
+2. Ctrl+A, Ctrl+C. Plak het in SendWILL in de HTML- of code-editor (niet in de
+   visuele editor, die gooit de opbouw om).
+3. Herhaal voor Mail-B-merkverhaal-SendWILL.html.
+
+
+Stap 3 · Drie plekken nalopen
+-----------------------------
+- {{voornaam}}         vervang door de voornaam-tag van SendWILL
+                       (staat 1x in elke mail, bij "Hé {{voornaam}},")
+- {{unsubscribe_url}}  vervang door de afmeldlink-tag van SendWILL (in de footer)
+- Productlink          staat al goed: performance-gripsokken-2-0-wit,
+                       met utm_content=A of utm_content=B. Niet aanpassen.
+
+
+Stap 4 · Instellen in SendWILL (gelijk voor A en B)
+---------------------------------------------------
+Afzender:    HÏ Grip
+Onderwerp:   Stop met glijden in je schoen
+Preheader:   staat al in de HTML (Siliconen grip-zones houden je voet vast, ...)
+Lijst:       willekeurig 50/50 verdeeld, minimaal 50 ontvangers per variant
+Verzenden:   A en B op exact hetzelfde moment
+
+
+Stap 5 · Eerst testen
+---------------------
+Stuur beide mails als test naar jezelf en bekijk ze in Gmail (web + app),
+Outlook en Apple Mail, ook op je telefoon. Klik de knop aan en check in GA4
+Realtime of utm_content A/B binnenkomt. Maak screenshots voor je verslag.
+
+
+Technische opbouw (zelfde basis als de eerdere HÏ Grip-mailflows)
+-----------------------------------------------------------------
+- Tabel-layout, 600 px breed, past zich aan op mobiel (onder 600 px).
+- Outlook: VML-knop en een VML-achtergrond voor de anatomie van de sok.
+  De +95%-sectie valt in Outlook terug op effen zwart (het grippatroon is decoratie).
+- Gmail dark mode: gecombineerde [data-ogsc]/[data-ogsb]-regels, zodat
+  zwart/wit niet omdraaien.
+- Lettertype Poppins via Google Fonts; waar dat niet laadt (o.a. Gmail) valt
+  het terug op Arial.
+- Bestandsgrootte: A ca. 21 KB, B ca. 27 KB (Gmail kort mails pas in boven 102 KB).

@@ -23,7 +23,7 @@ bijgewerkt: 2026-10-01
 | App                         | Waarvoor (reviews / e-mail / chat / upsell / subscripties / anders) | Nog in gebruik?                                       |
 | --------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------- |
 | Translate & Adapt           | translate van de website naar engels                                | ja                                                    |
-| Bundler                     | voor het creeren van bundels op productpagina                       | nee                                                   |
+| ~~Bundler~~ — niet meer gebruiken, bundels via Section Store (Lars, 26-10-2026) | — | nee                                                   |
 | Forms                       | Voor het maken van een vragen lijst/ enquete                        | nee                                                   |
 | Trustpilot Reviews          | koppeling met trustpilot reviews                                    | nee                                                   |
 | Section Store               | voor mooie kant en klare sectie                                     | ja                                                    |

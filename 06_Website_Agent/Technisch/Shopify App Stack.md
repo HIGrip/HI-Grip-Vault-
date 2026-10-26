@@ -47,10 +47,10 @@ De actuele theme-ID's + de dwingende regel staan op één plek: [[Technische Pro
 | App | Waarvoor | Nog in gebruik? |
 |---|---|---|
 | Translate & Adapt | Vertaalt de website naar Engels | Ja |
-| Bundler | Bundels maken op de productpagina | Nee |
+| ~~Bundler~~ | **Niet meer gebruiken (Lars, 26-10-2026).** Bundels (1/3/5-pack) komen via Section Store. Bundler-blocks niet in nieuwe templates zetten | Nee |
 | Forms | Vragenlijst/enquête maken | Nee |
 | Trustpilot Reviews | Koppeling met Trustpilot-reviews | Nee |
-| Section Store | Kant-en-klare secties | Ja |
+| Section Store | Kant-en-klare secties, ook de bundelkeuze (1/3/5-pack) — de enige bundel-oplossing (Lars, 26-10-2026) | Ja |
 | MyParcel NL | Verzendkoppeling | In opzet (lars doet dit zelf) |
 | CWILL (SendWILL) Popup Email | Pop-up op de webshop + e-mailmarketing | Ja |
 | SEOWILL (SEOAnt) — AI SEO | Geeft suggesties voor SEO-verbeteringen | Ja — kandidaat om te vervangen door de [[Agent Hiërarchie & Structuurschema|SEO Agent]]/`/shopify-seo`-skill zodra die dat overneemt |

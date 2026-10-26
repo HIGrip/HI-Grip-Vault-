@@ -5,7 +5,7 @@ In deze map
 -----------
 Mail-A-product-SendWILL.html       variant A, alleen product
 Mail-B-merkverhaal-SendWILL.html   variant B, product + merkverhaal
-afbeeldingen-uploaden-naar-shopify  11 afbeeldingen die de mails gebruiken
+afbeeldingen-uploaden-naar-shopify  reservekopie van de afbeeldingen (staan al op Shopify)
 
 
 Stap 1 · Afbeeldingen online zetten  (KLAAR, 26-10-2026)
@@ -25,13 +25,14 @@ Stap 2 · HTML in SendWILL plakken
 3. Herhaal voor Mail-B-merkverhaal-SendWILL.html.
 
 
-Stap 3 · Drie plekken nalopen
------------------------------
-- {{voornaam}}         vervang door de voornaam-tag van SendWILL
-                       (staat 1x in elke mail, bij "Hé {{voornaam}},")
-- {{unsubscribe_url}}  vervang door de afmeldlink-tag van SendWILL (in de footer)
-- Productlink          staat al goed: performance-gripsokken-2-0-wit,
-                       met utm_content=A of utm_content=B. Niet aanpassen.
+Stap 3 · Twee dingen nalopen
+----------------------------
+- {{voornaam}}   vervang door de voornaam-tag van SendWILL
+                 (staat 1x in elke mail, bij "Hé {{voornaam}},")
+- Footer         de mails hebben GEEN eigen footer meer. SendWILL voegt zijn
+                 standaard-footer toe (bedrijfsgegevens en afmeldlink).
+- Productlink    staat al goed: performance-gripsokken-2-0-wit,
+                 met utm_content=A of utm_content=B. Niet aanpassen.
 
 
 Stap 4 · Instellen in SendWILL (gelijk voor A en B)

@@ -29,8 +29,9 @@ Stap 3 · Twee dingen nalopen
 ----------------------------
 - {{voornaam}}   vervang door de voornaam-tag van SendWILL
                  (staat 1x in elke mail, bij "Hé {{voornaam}},")
-- Footer         de mails hebben GEEN eigen footer meer. SendWILL voegt zijn
-                 standaard-footer toe (bedrijfsgegevens en afmeldlink).
+- Header/footer  de mails hebben GEEN eigen header en footer. SendWILL voegt
+                 zijn standaard-header (logo) en -footer (bedrijfsgegevens,
+                 afmeldlink) toe vanuit de template.
 - Productlink    staat al goed: performance-gripsokken-2-0-wit,
                  met utm_content=A of utm_content=B. Niet aanpassen.
 

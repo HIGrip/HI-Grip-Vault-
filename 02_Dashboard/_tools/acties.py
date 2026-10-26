@@ -10,6 +10,11 @@ zodat een actie-id hier precies hetzelfde is als op het dashboard. Schrijft _bac
            --methode site|ga4|gsc|shopify|vault|geen --controle "..." --bewijs "..." [--dubbel-van <id>]
     python 02_Dashboard/_tools/acties.py kop         # teller- en datumregel bovenaan ACTIEBACKLOG.md
     python 02_Dashboard/_tools/acties.py opruimen    # zondag: [x]-items naar AFGEROND.md (--altijd: ook op andere dagen)
+                                                     # + notities sorteren en bewaartermijn (zie 'notities')
+    python 02_Dashboard/_tools/acties.py notities [--droog] [--datum JJJJ-MM-DD]
+        # root van 02_Dashboard = inbox; notities ouder dan 14 dagen gaan naar Growth-radar/, SEO/,
+        # Weekoverzichten/ of Onderzoek/. Weekoverzichten weg na 21 dagen, andere notities na 30 dagen;
+        # behalve losse notities (bron: los) met open acties die niet verwerkt/gearchiveerd zijn.
 
 Werk vanuit het dashboard (PROCEDURE.md sectie B):
     python 02_Dashboard/_tools/acties.py importeer <map> --door <routine>

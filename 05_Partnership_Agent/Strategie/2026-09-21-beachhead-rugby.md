@@ -15,8 +15,6 @@ deadline: ""
 ---
 # Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
 
-> Map: [[05 Partnership Agent — Index]]
-
 ## In het kort
 
 Sinds 16 september is rugby één van de drie beachhead-sporten, maar in [[Beachhead Strategie]] stonden alle tien rugby-antwoorden nog op *nog invullen*. Dit onderzoek vult ze met publieke bronnen (Rugby Nederland-jaarverslag 2025-2026, World Rugby Law 4 en Regulation 12, het VWW 2026-2027, de Nederlandse rugbywinkels) en de productwaarheid uit [[Performance Grip Socks 2.0]]. De ingevulde tabel staat in §7 en is overgenomen in Beachhead Strategie.md.
@@ -213,3 +211,5 @@ Dominantie in rugby — een niveau dat geen enkel merk in Nederland bereikt heef
 ## Aantekeningen
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: de activatie-actie noemt Rotterdam Cup, maar die is vervallen (besluit Lars 5-10: het toernooi bestaat niet meer, het domein staat te koop). Alleen Amsterdam Sevens (juni 2027) en de beach-events blijven over.
 - **Lars via Claude · 2026-10-12 14:30** — Rotterdam Cup uit de activatie-actie gehaald (besluit Lars 12-10; het toernooi is vervallen, zie besluit 5-10). De actie heeft daardoor een nieuw id.
+
+> Map: [[05 Partnership Agent — Index]]

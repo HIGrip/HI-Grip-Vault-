@@ -15,8 +15,6 @@ deadline: "2026-09-27"
 ---
 # Compliance-verplichtingen NL/EU — to-do per categorie
 
-> Map: [[08 Operations Agent — Index]]
-
 ## In het kort
 
 Prioriteit hieronder volgt de legenda van de bron: 🔴 rechtsrisico loopt nu al → P1, 🟠 binnen 30 dagen → P2, 🟡/⚪ → P3. Werkdocument, geen juridisch advies — 🔴-punten laten toetsen (jurist, Modint, Thuiswinkel.org). Tweede datum om te onthouden: Productaansprakelijkheidsrichtlijn uiterlijk 9 december 2026 in NL recht.
@@ -632,3 +630,5 @@ Prioriteit hieronder volgt de legenda van de bron: 🔴 rechtsrisico loopt nu al
 ## Aantekeningen
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: §5.1 noemt '1.500+ sporters onderbouwen'. Het claimcijfer is sinds 11-10 3500+ (besluit Lars), dus het bewijsdossier moet 3500+ onderbouwen.
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: §5.4 duurzaamheidsclaims: de deadline (richtlijn (EU) 2024/825, 27 september 2026) is verstreken. De actie is niet verouderd maar te laat; vandaag zijn er geen duurzaamheidsclaims op home of de productpagina gevonden.
+
+> Map: [[08 Operations Agent — Index]]

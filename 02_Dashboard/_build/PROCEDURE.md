@@ -11,7 +11,7 @@
 | Wat | Pad |
 |---|---|
 | Vault | `C:\Users\Test\Werk\HI-Grip-Vault-` — branch `HÏ-Grip-Vault-obsidian` (er is geen `main`) |
-| Notities | `02_Dashboard\<id>.md` — `id` = `JJJJ-MM-DD-slug` |
+| Notities | `02_Dashboard\<id>.md` — `id` = `JJJJ-MM-DD-slug`. De root is de **inbox**: routines schrijven daar (paden in de routine-prompts blijven gelijk). Het weekonderhoud (`acties.py opruimen`, zondag; los: `acties.py notities`) sorteert notities ouder dan 14 dagen naar `Growth-radar\`, `SEO\`, `Weekoverzichten\` of `Onderzoek\` en ruimt ze op: weekoverzichten na 21 dagen, overige notities na 30 dagen. Uitzondering: losse notities (`bron: los`) met open acties blijven staan tot ze `verwerkt`/`gearchiveerd` zijn of naar een domeinmap gaan. Het dashboard (Operations) leest alle vier de mappen; andere agents lezen het alleen. |
 | Build | `python 02_Dashboard\_build\build_register.py` (`--check` = alleen valideren) → `02_Dashboard\_build\register.js` |
 | Dashboard-bron | `02_Dashboard\_dashboard\index.html` (canoniek — nooit terugwerken vanuit het gelezen artifact) |
 | Backlog | `02_Dashboard\_backlog\ACTIEBACKLOG.md` (+ `AFGEROND.md`, en `CONTROLE.json` van de actiecontrole, zie C) — sinds 25-09-2026 in de vault, één backlog voor alle routines |

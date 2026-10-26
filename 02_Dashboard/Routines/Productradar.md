@@ -31,7 +31,7 @@ Nieuwe productkansen vinden en onderbouwen: clubsokken met logo, kindermaten, va
 
 ## Stap 1 — Lees eerst
 1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` en `00_Brand_Core/Performance Grip Socks 2.0.md` (maten, EAN, B2B-prijzen).
-2. De nieuwste notitie met `financieel-plan` in de naam in `02_Dashboard/` (kostprijs, marge, vaste kosten). Lees alleen de secties met prijzen en marges.
+2. De nieuwste notitie met `financieel-plan` in de naam in `05_Partnership_Agent/Strategie/` (kostprijs, marge, vaste kosten). Lees alleen de secties met prijzen en marges.
 3. `02_Dashboard/_geheugen/productradar.md`: welke kansen al behandeld, afgewezen of in test zijn.
 4. De nieuwste Klantstem-, Concurrentie- en Materialen-notitie (`ls -t 02_Dashboard/*-klantstem.md | head -1` enz.): alleen `## In het kort` en de koppen onder `## Bevindingen`.
 5. `02_Dashboard/_backlog/BEHEER.json` (kansen met status `afwijzen`) en de backlog-koppen. Afgewezen kansen komen niet terug.

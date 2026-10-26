@@ -15,8 +15,6 @@ deadline: ""
 ---
 # SEO- en conversietest run 1 — nulmeting en tegenstrijdige verzend/retourinfo
 
-> Map: [[06 Website Agent — Index]]
-
 ## In het kort
 
 Eerste run van de geplande taak `website-seo-en-cconversietest` (wekelijks, modus CONCEPT: niets live gewijzigd). Het volledige rapport, de backlog en de wijzigingslog staan in de verborgen Shopify-pagina `seo-routine-logboek`: die pagina is het geheugen van de routine tussen runs. Deze notitie bevat de kern.
@@ -85,3 +83,5 @@ De voorwaarden "alleen ongeopend" en "25% herbevoorradingskosten" lijken te bots
 
 ## Aantekeningen
 - **Lars · 2026-09-25 09:26** — Besluit verzend/retour: verzendkosten €4,50, gratis verzending vanaf €35, binnen 1 werkdag verzonden, retour 30 dagen. Vastgelegd in [[Performance Grip Socks 2.0]] §1.
+
+> Map: [[06 Website Agent — Index]]

@@ -15,8 +15,6 @@ deadline: ""
 ---
 # GA4 — het meetgat en de eerste cijfers
 
-> Map: [[06 Website Agent — Index]]
-
 ## In het kort
 
 Bij ~12 sessies per dag kan A/B-testen niet en komen er nooit echte Core Web Vitals-velddata; werk met voor/na-metingen plus kwalitatief onderzoek (Clarity, klantstem). Shopify Analytics blijft de bron voor omzet en orders.
@@ -93,3 +91,5 @@ Sinds het herstel op 30-08 om 19:42 vuren alle andere e-commerce-events wel (`vi
 - [[API & Tool Connections]] § GA4 · GA4-property 476032345
 
 ## Aantekeningen
+
+> Map: [[06 Website Agent — Index]]

@@ -15,8 +15,6 @@ deadline: ""
 ---
 # Upfront bestelvolume-schatting (dag/week/maand/jaar)
 
-> Map: [[05 Partnership Agent — Index]]
-
 ## In het kort
 
 Gevraagd: hoeveel bestellingen Upfront per dag, week, maand en jaar heeft. Upfront publiceert dat niet. Wel bekend zijn de omzet per kanaal over 2025 en een paar piekdagen, dus het volume is een schatting: online omzet gedeeld door een aangenomen gemiddelde orderwaarde (AOV).
@@ -73,3 +71,5 @@ De € 80 van de piekdag geldt niet als normale AOV: op een actiedag slaan klant
 - [Wikipedia — Upfront](https://nl.wikipedia.org/wiki/Upfront)
 
 ## Aantekeningen
+
+> Map: [[05 Partnership Agent — Index]]

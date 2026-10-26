@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "Derde run (modus CONCEPT): de diepe audit van blok C (content en AI-zichtbaarheid) levert geen nieuwe bevindingen op — alles staat al open in de backlog. Gebouwd is een nieuw thema-blok 'HÏ Grip — Waardebalk' dat backlogpunt 1 (gratis-verzendingsdrempel) en 12 (prijs per paar) combineert, in het niet-gepubliceerde testthema; het staat nog niet in een productsjabloon. Sessies herstelden deze week flink (Shopify 276, GA4 +114,8%), maar een deel is vermoedelijk botverkeer en de meetbreuk van 21-23 sep maakt vergelijken met de nulmeting onbetrouwbaar."
-gerelateerd: [2026-09-28-seo-conversietest-run-2, 2026-10-05-regressiecheck, 2026-09-25-seo-audit, 2026-10-12-seo-conversietest-run-4]
+gerelateerd: [2026-09-28-seo-conversietest-run-2, 2026-10-05-regressiecheck, 2026-10-12-seo-conversietest-run-4]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

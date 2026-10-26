@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De techniek van higrip.nl is in orde (alle 105 sitemap-URL's gecontroleerd, canonical en hreflang overal goed), maar de entiteit voor AI-systemen is kaal en verkeerde claims staan nog in schema en op EN-pagina's. Zoekverkeer groeit wel: Search Console toont +90% klikken, vooral op merktermen, en de GA4-aankooptracking werkt weer."
-gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-09-25-seo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-10-11-seo-audit-weekdelta, 2026-10-11-concurrentie-seo-per-merk, 2026-10-12-werkthema-vs-live]
+gerelateerd: [2026-10-12-blogs-stappenplan, 2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-08-search-console, 2026-10-05-regressiecheck, 2026-09-30-growth-radar-ai-search, 2026-10-07-missie-visie-pagina, 2026-10-07-shoppagina-keuzepagina, 2026-10-11-seo-audit-weekdelta, 2026-10-11-concurrentie-seo-per-merk, 2026-10-12-werkthema-vs-live]
 vervangt: []
 bronbestand: ""
 deadline: ""

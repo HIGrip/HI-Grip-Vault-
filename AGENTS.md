@@ -24,3 +24,5 @@
 - Grote bestanden (`ACTIEBACKLOG.md`, `Agent Werk & Kwaliteit Overzicht.md`) nooit volledig openen: zoek of lees per sectie.
 - Nooit scannen: `06_Website_Agent/Homepage-prototype/`.
 - Git: branch `HÏ-Grip-Vault-obsidian`, `git pull --rebase`, nooit force. Zie `CLAUDE.md` §8.
+
+> Map: [[Home]]

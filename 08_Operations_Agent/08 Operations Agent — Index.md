@@ -12,6 +12,7 @@ Feedback, leerregels, kwaliteitslog en compliance. Hoe de agent werkt: [[Agents 
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
+- [[2026-09-07-compliance-todo]]
 - [[Agent Werk & Kwaliteit Overzicht]]
 - [[Compliance To-Do Lijst]]
 - [[Feedback & Iteratie Log]]

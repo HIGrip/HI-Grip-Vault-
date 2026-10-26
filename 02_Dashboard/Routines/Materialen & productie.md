@@ -37,7 +37,7 @@ Plus **leveranciers en MOQ**: wie maakt gripsokken, tegen welke minimale afname.
 ## Stap 1 — Lees eerst
 1. `CLAUDE.md`, `00_Brand_Core/Feiten & Actuele Staat.md` (claims) en `00_Brand_Core/Performance Grip Socks 2.0.md` (samenstelling, maten).
 2. `02_Dashboard/_geheugen/materialen.md`: de deadlines die je volgt, welk diepte-onderwerp aan de beurt is en wat al behandeld is.
-3. `02_Dashboard/2026-09-07-compliance-todo.md` en de nieuwste Productradar-notitie (alleen de vragen aan jou). Herhaal niets wat daar al staat.
+3. `08_Operations_Agent/2026-09-07-compliance-todo.md` en de nieuwste Productradar-notitie (alleen de vragen aan jou). Herhaal niets wat daar al staat.
 4. De backlog-koppen en de geheugenregel in `02_Dashboard/_geheugen/README.md`.
 
 ## Stap 2 — Onderzoek (max 10 zoekopdrachten, max 8 pagina's)

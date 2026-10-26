@@ -43,6 +43,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Zoek Script — broncode (back-up)]]
 
 ### Strategie
+- [[2026-09-21-beachhead-rugby]]
+- [[2026-09-24-financieel-plan-2027-2031-bmc-2031]]
+- [[2026-09-24-upfront-bestelvolume-schatting]]
 - [[Aanpak]]
 - [[Doelen]]
 - [[Overzicht]]

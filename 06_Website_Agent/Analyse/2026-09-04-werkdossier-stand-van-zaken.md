@@ -15,8 +15,6 @@ deadline: ""
 ---
 # Werkdossier higrip.nl — stand van zaken 4 september 2026
 
-> Map: [[06 Website Agent — Index]]
-
 ## In het kort
 
 Wat er van dit dossier daadwerkelijk is doorgevoerd staat in [[Update Log]]. De vaste cijfers (1,17 / 95% / 2.000+ / 4,6 op 17) gelden voor alle copy en schema; niets uit de tegenspraken-lijst overnemen.
@@ -222,3 +220,5 @@ Buiten de 39 uit het dossier, gevonden in theme `200269168967`:
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: 'Volgorde sportpagina's bepalen na de Search Console-export': de export is vervallen (niet doen, vervangen door google_data.py, dat Search Console dagelijks ophaalt), en de sportfocus is sinds 30-9 vastgelegd als drie kernsporten. De actie kan op 'niet doen' of worden herschreven.
 - **Lars via Claude · 2026-10-12 14:00** — Verouderd-check 12-10: 'Skisokken: moment bepalen' hangt samen met het conflict tussen het financieel plan (Q4 2027) en het feitenbestand ('binnenkort, geen datum'); zie de aantekening bij het financieel plan.
 - **Lars via Claude · 2026-10-12 14:30** — Besluit Lars 12-10: 'Volgorde sportpagina's bepalen' blijft staan (niet op niet doen); de volgorde kan uit de dagelijkse Search Console-data (google_data.py) komen in plaats van uit de vervallen export.
+
+> Map: [[06 Website Agent — Index]]

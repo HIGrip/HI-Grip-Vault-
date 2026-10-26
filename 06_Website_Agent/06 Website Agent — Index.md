@@ -15,6 +15,8 @@ Terug naar [[Home]].
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Analyse
+- [[2026-09-03-analytics-kpi-meetgat]]
+- [[2026-09-04-werkdossier-stand-van-zaken]]
 - [[Analytics & KPI Dashboard]]
 - [[Conversie Optimalisatie Checklist]]
 - [[Stand van Zaken — Werkdossier 2026-09-04]]
@@ -68,6 +70,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[E-mail Verzending & Techniek]]
 
 ### SEO
+- [[2026-09-15-seo-audit]]
+- [[2026-09-16-seo-onderzoek-cloud-routine-website]]
+- [[2026-09-23-seo-conversietest-run-1]]
 - [[GEO Plan (2026-09-21)]]
 - [[Sportpagina Meta's (21-9-2026)]]
 

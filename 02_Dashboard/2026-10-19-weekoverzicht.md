@@ -6,10 +6,10 @@ datum: 2026-10-19
 bron: routine
 routine: "denzel-week"
 categorie: Merk
-status: nieuw
+status: gearchiveerd
 prioriteit: P2
 samenvatting: "Twee nieuwe technische afwijkingen op pas gepubliceerde pagina's (dubbele H1 op de nieuwe rugbypagina, titel 'American Express' zonder meta description op het betalingsbeleid), tegenover grote voortgang op het verzend-/retourpunt (alleen nog twee oude /policies/*-pagina's resten). Inhoudelijk wachten de drie grootste besluiten nog steeds op Lars: het B2B-outreach-besluit (koersbepaling van 11-10, nu 8 dagen open), het content-voorstel van 05-10 (nu 2 weken) en de keuze voor het homepage-herontwerp-prototype (richting B, 14-10)."
-gerelateerd: [2026-10-12-weekoverzicht, 2026-10-19-regressiecheck, 2026-10-14-search-console, 2026-10-12-seo-conversietest-run-4, 2026-10-13-homepage-redesign, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-11-omzetgroei-koersbepaling]
+gerelateerd: [2026-10-12-weekoverzicht, 2026-10-26-weekoverzicht, 2026-10-19-regressiecheck, 2026-10-14-search-console, 2026-10-12-seo-conversietest-run-4, 2026-10-13-homepage-redesign, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-11-omzetgroei-koersbepaling]
 vervangt: [2026-10-12-weekoverzicht]
 bronbestand: ""
 deadline: ""

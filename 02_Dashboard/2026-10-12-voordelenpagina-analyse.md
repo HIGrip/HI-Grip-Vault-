@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "De pagina onder de footerlink Voordelen (/blogs/hi-grip/waarom-hi-grip-gripsokken) is 398 woorden, van 15 december 2025, zonder auteur, bron, tabel, FAQ of link naar een sportpagina of product, en bevat claims die het feitenbestand niet dekt. Een goede voordelenpagina zet per voordeel de reden en een eerlijk bewijs naast elkaar, en dat kan hier vooral met bewijs dat al in de vault staat."
-gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-12-b2b-pagina-inspiratie]
+gerelateerd: [2026-10-08-seo-aeo-geo-aio-sxo-audit, 2026-10-12-b2b-pagina-inspiratie, 2026-10-26-weekoverzicht]
 vervangt: []
 bronbestand: ""
 deadline: ""

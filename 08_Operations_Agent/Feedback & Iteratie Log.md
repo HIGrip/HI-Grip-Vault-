@@ -10,6 +10,20 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-10-26 — Partnership-zoekdrempel drie weken op rij verkeerd toegepast; B2B Klanten Agent heeft geen eigen identiteitsbestand
+
+**Wat er gebeurde:** de weekoverzichten van 05-10, 12-10 en 19-10 concludeerden telkens "lijst X dagen oud, geen zoekactie nodig", maar die telling ging over de `bijgewerkt`-datum in het frontmatter (die meestuurt bij elke beoordelingsronde), niet over de datum van de laatste écht nieuwe kandidaat. De laatste nieuwe kandidaat vóór vandaag was Rotterdam Cup op 21-09 (en die is op 05-10 weer geschrapt). Daardoor stonden beide kandidatenlijsten 5+ weken zonder een nieuwe zoekactie, ver boven de 1-2 weken-drempel uit de routine zelf, zonder dat dit ooit werd gesignaleerd. Toen vandaag (26-10) alsnog gezocht werd, leverde dat meteen 5 nieuwe kandidaten op, waaronder de eerste rugbyclub-kandidaten sinds rugby op 30-09 kernsport werd — een duidelijk gemiste periode.
+
+**Waarom dit gebeurde:** de routinetekst zegt "kijk naar de laatst-toegevoegd-datum", maar in de praktijk is dat afgeleid uit het `bijgewerkt`-veld van het bestand, dat ook verandert bij een pure beoordelingsronde (geen nieuwe kandidaat). Een beoordelingsronde ziet er in het frontmatter identiek uit aan een zoekronde.
+
+**Les:** "laatst-toegevoegd-datum" voor de 1-2 weken-drempel moet de datum van de laatste nieuwe rij in de tabel zijn (herkenbaar aan "Nieuw (datum)" in de Status-kolom of een vergelijkbare marker), nooit het `bijgewerkt`-veld in het frontmatter. Dat veld verandert ook bij een beoordelingsronde zonder nieuwe kandidaat.
+
+**How to apply:** de Denzel-weekoverzicht-routine (stap 2) en elke andere routine die "is deze lijst recent genoeg?" vraagt, checkt de datum van de laatst toegevoegde rij zelf (niet het frontmatter), vóórdat hij concludeert dat geen zoekactie nodig is.
+
+**Los gevonden, zelfde run:** de `b2b-klanten-agent` (sub-agent) meldde dat zijn eigen identiteitsbestand (`01_Agent_Infrastructuur/Partnership Agent/B2B Klanten Agent/Identiteit B2B Klanten Agent.md`) niet bestaat — die map bevat alleen `Agents Partnership Agent.md`. De agent werkte daardoor op de expliciete taakinstructies en de Partnership Agent-sectie in plaats van een eigen identiteitsbestand. Nog niet gecorrigeerd deze run (vereist een keuze: een eigen bestand aanmaken of de sub-agent-definitie verwijzen naar het hoofdagent-bestand) — hier alleen vastgelegd zodat het niet opnieuw als nieuwe ontdekking langskomt.
+
+---
+
 ## 2026-10-19 — `google_data.py` faalt onder `python`/`python3` in de cloudomgeving, werkt onder `python3.13`
 
 **Wat er gebeurde:** zowel de Search Console-routine (14-10) als de regressiecheck (19-10) kregen bij het draaien van `02_Dashboard/_tools/google_data.py` eerst een `ModuleNotFoundError` voor de Google-pakketten (`google`, `googleapiclient`) onder het systeem-`python`/`python3` (versie 3.11). De benodigde pakketten stonden allebei keren wél geïnstalleerd, maar onder het aparte systeem-`python3.13`. Beide routines losten het zelf op door het script met `python3.13` aan te roepen in plaats van `python`/`python3` — geen herinstallatie nodig — maar deden dat onafhankelijk van elkaar, twee keer dezelfde uitzoek-omweg.

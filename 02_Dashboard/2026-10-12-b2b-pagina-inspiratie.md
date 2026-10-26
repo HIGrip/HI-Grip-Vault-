@@ -9,7 +9,7 @@ categorie: B2B
 status: nieuw
 prioriteit: P2
 samenvatting: "De sterkste voorbeelden kiezen één primaire actie, splitsen retailers en clubs vroeg en noemen proces en voorwaarden open. Motion is bij de beste pagina's een rustig reveal-ritme en geen showpiece, en dat is met vanilla CSS/JS te bouwen binnen Horizon."
-gerelateerd: [2026-10-12-voordelenpagina-analyse]
+gerelateerd: [2026-10-12-voordelenpagina-analyse, 2026-10-26-weekoverzicht]
 vervangt: []
 bronbestand: ""
 deadline: ""

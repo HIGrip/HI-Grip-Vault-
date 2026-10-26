@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Een nieuw productpagina-prototype voor de Performance Gripsokken 2.0 combineert de duidelijkheid van On (wat je kunt verwachten), de ruimte en scrollmomenten van Apple en de uitleg per voordeel van Oura, in de stijl van het AI-testthema (zakelijk, over ons). Voor de bouw in het thema moeten de packprijzen van de 2.0, de 1.0-specificaties en de werkomschrijving van special cushioning nog worden bevestigd."
-gerelateerd: [2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-13-homepage-redesign, 2026-10-08-growth-radar-cro]
+gerelateerd: [2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-13-homepage-redesign, 2026-10-08-growth-radar-cro, 2026-10-26-weekoverzicht]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/DWTuACXKH2TFRtaxjNx1A9"
 deadline: ""

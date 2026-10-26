@@ -42,6 +42,13 @@ Merkregels (merknaam altijd **HÏ Grip** met umlaut, tone of voice), algemene ha
 
 **Opleverformaat.** RESULTAAT · GECONTROLEERD (wat, door wie) · NIET GECONTROLEERD / AANGENOMEN · WAT IK MIS OF KAN BETER · BESLISSING VOOR JOU (alleen keuzes voor Team HÏ Grip) · BEOORDEEL ★1–5 (alleen bij echte oplevering).
 
+**Eigenaar Research Dashboard** (besluit Lars, 25-10-2026)
+- Operations onderhoudt `02_Dashboard/`; andere agents lezen en leiden af (bv. Website voor SEO-checks), maar onderhouden het niet.
+- Routines schrijven onderzoeksnotities in de root van `02_Dashboard/` (inbox, paden in routine-prompts ongewijzigd).
+- Weekonderhoud (zondag): `python 02_Dashboard/_tools/acties.py opruimen`; los: `acties.py notities [--droog]`. Notities ouder dan 14 dagen gaan naar `Growth-radar/`, `SEO/`, `Weekoverzichten/` of `Onderzoek/`; weekoverzichten worden na 21 dagen opgeruimd, overige onderzoeksnotities na 30 dagen. Veiligheidsnet: losse notities (bron: los) met open acties blijven staan tot status verwerkt/gearchiveerd of verplaatsing naar een domeinmap. Verwijderde tekst staat alleen nog in de git-historie.
+- Werkdocumenten met een takenlijst horen in hun domeinmap, niet in het dashboard (o.a. compliance-todo in `08_Operations_Agent/`, werkdossier en analytics-kpi in `06_Website_Agent/Analyse/`, seo-audit in `06_Website_Agent/SEO/`, beachhead-rugby/financieel-plan/upfront-bestelvolume in `05_Partnership_Agent/Strategie/`).
+- Na het weekonderhoud: `python 02_Dashboard/_build/build_register.py --check` moet OK geven. Dashboard-build en publicatie doet Operations.
+
 ## 2. Sub-agents
 
 Beide: overleg met andere hoofdagents alleen via de Operations Agent en Denzel; geen webtools bij de Stafchef (zoekwerk is van de Vooruitblik-agent); max 2 correctierondes.

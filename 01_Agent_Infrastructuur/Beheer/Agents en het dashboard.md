@@ -18,6 +18,8 @@ bijgewerkt: 2026-10-12
 - **Research:** de vault blijft de bron. Afvinken en besluiten in het dashboard gaan elk uur terug naar de vault.
 - **Bron van waarheid:** de vault voor kennis, onderzoek en agents; het dashboard voor relaties, taken, orders, voorraad en prijzen; Moneybird voor facturen.
 
+**Eigenaar:** de Operations Agent (Stafchef) onderhoudt het Research Dashboard (`02_Dashboard/`) en het onderhoud van de onderzoeksnotities; andere agents lezen het alleen (bv. de Website Agent voor SEO-checks). Procedure en regels per rij: `02_Dashboard/_build/PROCEDURE.md` (rij Notities).
+
 ## Welke agent hoort bij welke dashboardfunctie
 
 | Dashboard | Agent |

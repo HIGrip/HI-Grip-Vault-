@@ -93,7 +93,7 @@ Haal de cijfers op met `python 02_Dashboard/_tools/google_data.py ga4`. Draai ee
 
 **Filter altijd botverkeer** (Direct uit de VS/China met minder dan 5% engagement) of vermeld het expliciet. Onder de ~100 echte sessies per week zijn de cijfers indicatief, geen trend. Let op: Shop Pay en Apple Pay slaan `add_shipping_info` en `add_payment_info` over, dus alleen `begin_checkout → purchase` is betrouwbaar.
 
-Formaat: zie [[2026-09-21-weekoverzicht]], sectie "GA4-weekrapport".
+Formaat: zie `2026-09-21-weekoverzicht` (verwijderd, bewaartermijn), sectie "GA4-weekrapport".
 
 ## 5. AI-ontwikkelingen
 Gerichte websearch naar nieuwe AI-tools en -mogelijkheden van de afgelopen week die concreet nuttig zijn voor HÏ Grip (content, marketing, e-commerce, bestaande skills). Geef bij elke vondst aan of hij **GEO** raakt (zichtbaarheid in AI-zoekmachines, zie [[GEO Plan (2026-09-21)]]). Geen generiek AI-nieuws, maximaal 4. Controleer in je geheugen dat je hem niet eerder hebt gemeld.

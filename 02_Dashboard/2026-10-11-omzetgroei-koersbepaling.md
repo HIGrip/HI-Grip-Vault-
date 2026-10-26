@@ -9,7 +9,7 @@ categorie: Merk
 status: nieuw
 prioriteit: P1
 samenvatting: "De strategie uit het Canva-document klopt, maar de tijd gaat naar de verkeerde plek: B2B leverde t/m Q3 ± 83% van de € 15.100 omzet en staat sinds 30-09 stil, terwijl de webshop (± € 1.270 netto in 2026) het meeste agentwerk krijgt. De snelste groei komt uit herhaalorders bij de 8 B2B-klanten, nieuwe clubdeals vóór het voorjaar, de 2.0 op voorraad en een kleinere stapel wachtende besluiten bij Lars."
-gerelateerd: [2026-09-24-financieel-plan-2027-2031-bmc-2031, 2026-09-21-beachhead-rugby, 2026-09-24-upfront-bestelvolume-schatting, 2026-10-05-weekoverzicht, 2026-10-08-search-console, 2026-09-29-crm-dashboard-voorstel]
+gerelateerd: [2026-10-05-weekoverzicht, 2026-10-08-search-console, 2026-09-29-crm-dashboard-voorstel]
 vervangt: []
 bronbestand: ""
 deadline: ""

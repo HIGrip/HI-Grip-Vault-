@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Shopify's eigen deprecation-documentatie bevestigt dat apps sinds 1 oktober 2026 geen script tags meer kunnen aanmaken of bijwerken; bestaande tags blijven draaien tot de storefront-injectie zelf stopt op 1 maart 2027. Voor higrip.nl verscherpt dit het al openstaande backlogpunt over Trustpilot/Bundler-scripttags: niet alleen checken of ze nog vuren, maar ook of ze stilzwijgend niet meer te verversen zijn."
-gerelateerd: [2026-10-05-growth-radar-seo-technisch, 2026-09-28-growth-radar-seo-technisch, 2026-09-24-growth-radar-cro, 2026-10-26-growth-radar-seo-technisch]
+gerelateerd: [2026-10-05-growth-radar-seo-technisch, 2026-09-28-growth-radar-seo-technisch, 2026-10-26-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""

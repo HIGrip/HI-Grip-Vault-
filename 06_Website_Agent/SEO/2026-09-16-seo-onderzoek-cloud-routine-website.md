@@ -15,7 +15,7 @@ deadline: ""
 ---
 # SEO-onderzoek cloud-routine "website" — publieke data, 16 september 2026
 
-> Map: [[Waar staat wat]]
+> Map: [[06 Website Agent — Index]]
 
 ## In het kort
 

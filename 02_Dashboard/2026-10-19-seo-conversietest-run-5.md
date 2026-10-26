@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Vijfde run (modus CONCEPT): de diepe audit van blok B (producten en collecties) vindt twee nieuwe contentgaten in de productbeschrijvingen — padel, tennis en rugby ontbreken in de sportopsomming van de 1.0- en 2.0-sokken, en de 2.0-beschrijving bevat nog een <code>-tag die het verplichte Poppins-lettertype doorbreekt — en levert een concrete GTIN- en productType-invulling op die het al openstaande backlogpunt 4 verder helpt. De add-to-cart-ratio daalde deze week naar 2,38% (vorige week 4,35%, nulmeting 1,92%) terwijl de Search Console-CTR halveerde naar 3,08% ondanks 21% meer vertoningen — geen van beide is toe te schrijven aan een eigen wijziging van deze routine."
-gerelateerd: [2026-10-12-seo-conversietest-run-4, 2026-10-05-seo-conversietest-run-3, 2026-09-28-seo-conversietest-run-2, 2026-09-23-seo-conversietest-run-1, 2026-10-19-regressiecheck]
+gerelateerd: [2026-10-12-seo-conversietest-run-4, 2026-10-05-seo-conversietest-run-3, 2026-09-28-seo-conversietest-run-2, 2026-10-19-regressiecheck]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

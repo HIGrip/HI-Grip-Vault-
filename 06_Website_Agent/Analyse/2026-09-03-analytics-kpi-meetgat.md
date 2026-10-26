@@ -15,7 +15,7 @@ deadline: ""
 ---
 # GA4 — het meetgat en de eerste cijfers
 
-> Map: [[Waar staat wat]]
+> Map: [[06 Website Agent — Index]]
 
 ## In het kort
 

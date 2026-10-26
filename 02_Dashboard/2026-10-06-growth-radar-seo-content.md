@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over long-tails, sportlandingspagina's of SERP-features haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. Eén bevestigde, goed onderbouwde vondst (Google's google.com/goto-redirect op zoekresultaten) hoort inhoudelijk bij de SEO-techniek-dagfocus van maandag en is daarom niet opgenomen."
-gerelateerd: [2026-09-29-growth-radar-seo-content, 2026-09-22-growth-radar-seo-content, 2026-09-30-search-console, 2026-10-13-growth-radar-seo-content, 2026-10-20-growth-radar-seo-content]
+gerelateerd: [2026-09-29-growth-radar-seo-content, 2026-09-30-search-console, 2026-10-13-growth-radar-seo-content, 2026-10-20-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

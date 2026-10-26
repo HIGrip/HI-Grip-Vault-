@@ -15,7 +15,7 @@ deadline: ""
 ---
 # Beachhead rugby — markt, regels, concurrentie en de 10 kernvragen
 
-> Map: [[Waar staat wat]]
+> Map: [[05 Partnership Agent — Index]]
 
 ## In het kort
 

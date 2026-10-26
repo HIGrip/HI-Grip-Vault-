@@ -15,7 +15,7 @@ deadline: ""
 ---
 # Werkdossier higrip.nl — stand van zaken 4 september 2026
 
-> Map: [[Waar staat wat]]
+> Map: [[06 Website Agent — Index]]
 
 ## In het kort
 

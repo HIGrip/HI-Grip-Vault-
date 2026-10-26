@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Een Nederlandse praktijktest (Beslist.nl) laat zien dat ChatGPT Ads in de praktijk een fractie kosten van de eerder geschatte $3-5 per klik, met een beduidend hogere doorklikratio dan Google Shopping. Voor higrip.nl is dit nog geen actie, maar wel een reden om het kanaal mee te nemen zodra er een advertentiebudget-beslissing valt."
-gerelateerd: [2026-09-16-growth-radar-ai-search, 2026-09-23-growth-radar-ai-search, 2026-09-30-growth-radar-ai-search, 2026-10-21-growth-radar-ai-search]
+gerelateerd: [2026-09-30-growth-radar-ai-search, 2026-10-21-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

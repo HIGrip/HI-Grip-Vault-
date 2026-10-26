@@ -15,7 +15,7 @@ deadline: "2026-09-27"
 ---
 # Compliance-verplichtingen NL/EU — to-do per categorie
 
-> Map: [[Waar staat wat]]
+> Map: [[08 Operations Agent — Index]]
 
 ## In het kort
 

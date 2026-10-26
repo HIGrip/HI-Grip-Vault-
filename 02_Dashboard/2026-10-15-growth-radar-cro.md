@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over productpagina, winkelwagen, checkout, prijsweergave, trust of mobiel haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. De enige primair gesourcete Shopify-wijziging (2026-10 release notes, nu stable) raakt alleen de Customer Account API en checkout-UI-extensiemetafields — higrip.nl gebruikt beide niet."
-gerelateerd: [2026-09-17-growth-radar-cro, 2026-09-24-growth-radar-cro, 2026-10-01-growth-radar-cro, 2026-10-08-growth-radar-cro, 2026-10-13-homepage-redesign, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-22-growth-radar-cro]
+gerelateerd: [2026-10-01-growth-radar-cro, 2026-10-08-growth-radar-cro, 2026-10-13-homepage-redesign, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan, 2026-10-22-growth-radar-cro]
 vervangt: []
 bronbestand: ""
 deadline: ""

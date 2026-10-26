@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Het werkthema loopt op een paar plekken vóór op live (3500+, 'binnen 1 werkdag', nieuwe producthandles, verzendbalk, vier nieuwe paginaconcepten), maar op andere plekken juist achter (bronnen op de sportpagina's, knopinstellingen, taalwissel-app). Deze vergelijking is het referentiepunt voor de open to-do's: wat al in het werkthema klaarstaat, hoeft Claude niet opnieuw te bouwen en wacht op een selectieve push door een mens."
-gerelateerd: [2026-10-07-shoppagina-keuzepagina, 2026-10-07-missie-visie-pagina, 2026-10-11-seo-audit-weekdelta, 2026-09-25-seo-audit, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-09-04-werkdossier-stand-van-zaken, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]
+gerelateerd: [2026-10-07-shoppagina-keuzepagina, 2026-10-07-missie-visie-pagina, 2026-10-11-seo-audit-weekdelta, 2026-09-25-seo-audit, 2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run, 2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]
 vervangt: []
 bronbestand: ""
 deadline: ""

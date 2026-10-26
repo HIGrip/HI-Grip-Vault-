@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "Vierde run (modus CONCEPT): de diepe audit van blok D (conversie) levert geen nieuwe backlogpunten op — alle gecontroleerde punten staan al open, zijn al bevestigd gedaan, of zijn nu zelf in orde (de FAQ noemt geen tegenstrijdig maatbereik meer, in lijn met Lars' besluit van 28 sep). Het 'HÏ Grip — Waardebalk'-blok uit RUN 3 is deze run alsnog daadwerkelijk aan het productsjabloon in het testthema gekoppeld, iets wat RUN 3 niet voor elkaar kreeg; de RUN 2-concepten (SEO-titels/meta's) staan inmiddels wél live, bevestigd door de actiecontrole op 11 oktober."
-gerelateerd: [2026-10-05-seo-conversietest-run-3, 2026-09-28-seo-conversietest-run-2, 2026-09-23-seo-conversietest-run-1, 2026-10-12-regressiecheck, 2026-10-11-seo-audit-weekdelta]
+gerelateerd: [2026-10-05-seo-conversietest-run-3, 2026-09-28-seo-conversietest-run-2, 2026-10-12-regressiecheck, 2026-10-11-seo-audit-weekdelta]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

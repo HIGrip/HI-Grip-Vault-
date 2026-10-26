@@ -17,6 +17,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Beheer
 - [[API & Tool Connections]]
 - [[Agent Hiërarchie & Structuurschema]]
+- [[Agents en het dashboard]]
 - [[Goedkeuringsworkflow]]
 - [[Opdrachtprotocol]]
 - [[Toetsregels]]

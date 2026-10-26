@@ -983,6 +983,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Dit besluit nemen"
  },
+ "2026-10-02-obsidian-structuur-ai-agents#141611f6": {
+  "beoordeeld": "2026-10-26",
+  "claude": "ja",
+  "wat_claude_doet": "voegt een schrijfrechtentabel toe aan CLAUDE.md en deny-regels aan .claude/settings.json voor de backlog/data/register-bestanden",
+  "wat_jij_doet": "controleert de regels en test ze in een routine-run"
+ },
  "2026-10-02-obsidian-structuur-ai-agents#1493354a": {
   "beoordeeld": "2026-10-11",
   "claude": "ja",
@@ -1018,6 +1024,12 @@
   "claude": "ja",
   "wat_claude_doet": "Schrijfrechtentabel in CLAUDE.md en deny-regels in .claude/settings.json voorbereiden",
   "wat_jij_doet": "Beoordelen"
+ },
+ "2026-10-02-obsidian-structuur-ai-agents#46fdec90": {
+  "beoordeeld": "2026-10-26",
+  "claude": "ja",
+  "wat_claude_doet": "bouwt vault_lint.py (naast vault_nav.py) dat afwijkingen signaleert en als backlogpunt voorstelt",
+  "wat_jij_doet": "beoordeelt het script en neemt het op in de routines die het moeten draaien"
  },
  "2026-10-02-obsidian-structuur-ai-agents#afd6bc87": {
   "beoordeeld": "2026-10-11",

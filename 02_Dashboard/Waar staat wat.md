@@ -37,7 +37,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 Zoek gericht; lees dit niet in zijn geheel.
 
-- Onderzoeksnotities (datum-id in de bestandsnaam): 98 notities
+- Onderzoeksnotities (datum-id in de bestandsnaam): 97 notities
 - Routines: 15 notities
 - Weekoverzichten: 5 notities
 - _backlog: 2 notities

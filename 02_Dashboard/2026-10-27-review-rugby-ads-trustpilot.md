@@ -46,7 +46,7 @@ In de vorige versie verschilde per paar alleen de kop en één regel. In de Canv
 - **Marge 4B:** de lijst loopt tot ca. 20 px van de onderrand.
 
 ### Trustpilot: waar en onder welke voorwaarden
-- **Plek:** in beide varianten gelijk, op de plek van de rode knop, direct boven de kop. Zo ondersteunt de score de claim ("4,6 op Trustpilot" naast "de optimale gripsok") en staat hij dicht bij de echte Meta-knop onder de ad. CTA naar rechtsonder (A) of onder de lijst (B). Mockups: `05_Social_Agent/Visuele Productie/Ads AB-test features vs beste/review-2026-10-26/`.
+- **Plek:** rechtsboven onder "PERFORMANCE GRIP SOCKS 2.0", op exact dezelfde coördinaten in A en B (x 672, y 178 op 1080 × 1350). Daar is in beide varianten ruimte, het valt in de eerste blik (logo → productnaam → score) en "Shop nu" kan op zijn oorspronkelijke plek blijven, alleen zwart in plaats van rood. Een eerdere mockup met de score boven de kop verplaatste de knop, en in A en B naar verschillende plekken; die is vervangen. Mockups: `05_Social_Agent/Visuele Productie/Ads AB-test features vs beste/review-2026-10-26/`.
 - **Niet in één variant:** dan meet de test sociaal bewijs in plaats van de boodschap. Een aparte test "met of zonder Trustpilot" kan daarna.
 - **Regels Trustpilot (Legal Brand Guidelines, feb 2023):** gebruik in advertenties alleen met een betaald abonnement; altijd naam en logo van Trustpilot; het woord "TrustScore" naast het getal; aantal reviews of datum erbij; sterren en logo niet aanpassen. Een TrustScore van 4,6 toont 4,5 sterren, dus de aangeleverde sterrenbalk klopt.
 - **Risico:** 19 reviews is weinig. Eerlijk vermelden ("19 reviews") voorkomt een misleidende indruk; het aantal groeit vanzelf mee in latere ads.

@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over een Google-kernupdate, Core Web Vitals/INP, structured data, Merchant Center of het Shopify-changelog haalde de drempel van nieuwheid, een primaire bron of een concrete koppeling aan higrip.nl. De Shopify 2026-10-release en de meeste Merchant Center- en structured-data-vondsten zijn al op 5, 12 of 15 oktober gecontroleerd en afgevallen."
-gerelateerd: [2026-10-12-growth-radar-seo-technisch, 2026-10-05-growth-radar-seo-technisch, 2026-09-28-growth-radar-seo-technisch]
+gerelateerd: [2026-10-12-growth-radar-seo-technisch, 2026-10-05-growth-radar-seo-technisch, 2026-09-28-growth-radar-seo-technisch, 2026-10-26-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""

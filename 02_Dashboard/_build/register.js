@@ -2084,9 +2084,35 @@ window.HI_RESEARCH = {
    "toegepast": 1
   }
  },
- "gebouwd": "2026-10-26T03:25:11+00:00",
+ "gebouwd": "2026-10-26T03:41:48+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `02_Dashboard\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 02_Dashboard\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `02_Dashboard\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\` | — | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md) | bij themawerk | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars |\n| **Website-analyse in de vault** | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Onderzoeksnotities (datum-id in de bestandsnaam): 97 notities\n- Routines: 15 notities\n- Weekoverzichten: 5 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 3 notities\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — SEO-techniek als nieuws (geen kwalificerende vondst)\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nGeen relevante ontwikkelingen vandaag binnen de dagfocus Google-updates, Core Web Vitals, structured data, Merchant Center-eisen en het Shopify-changelog.\n\n## Bevindingen\n### Gecontroleerd, niet opgenomen\n- **Google-kernupdate oktober 2026:** geen bevestigde nieuwe ranking-update gevonden. Alleen speculatie dat er \"ooit weer een\" kernupdate komt (vier maanden sinds mei), zonder aankondiging op Google's Search Status Dashboard.\n- **Core Web Vitals / INP:** geen officiële Google- of Search-Central-bron voor een oktoberwijziging. De enige claim (\"strakkere INP-meting\") komt van hostingvendor-blogs zonder brondocumentatie — zelfde patroon als op 12 en 19 oktober afgewezen. Backlogpunt 14 (INP meten op higrip.nl) blijft de juiste actie.\n- **Merchant Center:** de enige deadline die rond nu ligt (verplichte pickup cost/minimumbestelwaarde voor in-store-afhaalproducten in VK/Zwitserland/EER, sinds 30 sep 2026) raakt higrip.nl niet — geen lokale afhaalvoorraad in Merchant Center. De officiële sunsetdatum van de oude Content API for Shopping (18 augustus 2026, degradatie met HTTP 410 sinds 1 september, volledige uitschakeling \"vroeg 2027\") is nu bevestigd via Google's eigen deprecation-pagina, maar verandert niets aan backlogpunt 4: dat noemt dezelfde 1-september-degradatie en begin-2027-uitschakeling al sinds 28 september.\n- **Structured data:** geen oktoberwijziging op Google Search Central. Gevonden artikelen herhalen de Product.category/CategoryCode-toevoeging van juli (al op 19 oktober afgevallen), de FAQ-rich-result-verwijdering en de generatieve-AI-richtlijn (structured data niet vereist) — beide al sinds half september bekend.\n- **Shopify-changelog:** de 2026-10-release bevat vooral POS-UI-extensiewijzigingen (cart-mutaties), een nieuw verplicht `owner_type`-veld voor checkout-UI-extensie-metafields (pas actie vereist in 2027-01) en de algemene beschikbaarheid van Hydrogen 2026-10 — geen van alle raakt higrip.nl (geen eigen POS- of checkout-UI-extensie, geen Hydrogen-storefront). De scripttag-aanmaakstop (1 okt) stond al op 24 september/12 oktober in het geheugen.\n\n## Wat niet lukte\nGeen toegangsproblemen. Alle kandidaten vielen af op bronkwaliteit (niet-primair, niet-dateerbaar), op herhaling van een al behandelde vondst, of op het ontbreken van een concrete koppeling aan higrip.nl.\n\n## Bronnen\n- [Google Search Status Dashboard](https://status.search.google.com/)\n- [Merchant Center announcements change log — support.google.com](https://support.google.com/merchants/answer/9756900?hl=en)\n- [Content API for Shopping — Deprecation and sunset — developers.google.com](https://developers.google.com/shopping-content/guides/deprecation-and-sunset)\n- [Shopify developer changelog — 2026-10 release notes](https://shopify.dev/release-notes/2026-10.md)\n- [Google Search Central — generative AI optimization guide](https://developers.google.com/search/docs/appearance/structured-data)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-10-26",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-10-19-growth-radar-seo-technisch",
+    "2026-10-12-growth-radar-seo-technisch"
+   ],
+   "id": "2026-10-26-growth-radar-seo-technisch",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Geen nieuwe SEO-techniekvondst vandaag; alles herhaling, niet-primair of niet gekoppeld",
+   "prioriteit": "P3",
+   "routine": "growth-radar",
+   "samenvatting": "Geen van de vandaag gevonden berichten over een Google-kernupdate, Core Web Vitals/INP, structured data, Merchant Center of het Shopify-changelog haalde de drempel van nieuwheid, een primaire bron of een concrete koppeling aan higrip.nl. De enige precisering (officiële sunsetdatum 18 augustus 2026 van de oude Content API for Shopping) bevestigt alleen wat backlogpunt 4 al op 28 september noteerde.",
+   "status": "nieuw",
+   "titel": "Growth Radar — SEO-techniek als nieuws (geen kwalificerende vondst)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-10-26-growth-radar-seo-technisch.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Geen toegangsproblemen. Alle kandidaten vielen af op bronkwaliteit (niet-primair, niet-dateerbaar), op herhaling van een al behandelde vondst, of op het ontbreken van een concrete koppeling aan higrip.nl."
+  },
   {
    "acties": [],
    "body_md": "# Growth Radar — CRO (geen kwalificerende vondst)\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nGeen relevante ontwikkelingen vandaag binnen de dagfocus productpagina, winkelwagen, checkout, prijsweergave, trust, mobiel en A/B-resultaten uit de markt.\n\n## Bevindingen\n### Gecontroleerd, niet opgenomen\n- **Shopify API-release 2026-10 (shopify.dev, primaire bron):** verwijdert `Customer.lastIncompleteCheckout` plus de onbereikbare `Checkout`-subboom en voegt `countryCode` toe aan `CustomerAddressInput`/`CustomerAddress` (ouder `territoryCode` blijft werken, nu deprecated). Zelfde release als op 15 oktober al gecontroleerd: higrip.nl gebruikt geen Customer Account API-checkout-queries en geen eigen checkout-UI-extensie — geen concrete koppeling, dus geen nieuw punt. Niets nieuws over Additional Scripts, trackingscripts of carrier-verzendtarieven.\n- **Baymard-cijfers (cart abandonment ~70,19–70,22%, extra kosten als topreden ~39-48%):** staan al in het geheugen (basislijn §4, 17 sep) en worden alleen herhaald door Emerce Academy (aankondiging van een losse cursus \"Check-out optimalisatie & conversiepsychologie\", 10 sep 2026) en diverse vendorblogs — geen nieuwe Baymard-publicatie zelf gevonden.\n- **Trust badges en checkout-vertrouwen (diverse 2026-vendorblogs):** cijferspreiding (1-3% realistische lift tot ongeverifieerde claims van 15-42%) herleidt niet tot een vindbare primaire bron — zelfde patroon als 8 en 15 oktober, genegeerd.\n- **Mobiel-desktop conversiekloof (diverse 2026-vendorblogs):** bronnen spreken elkaar fors tegen (sommige zien mobiel inmiddels desktop evenaren of overtreffen, andere melden een kloof van 2-4×), zonder gedeelde methodologie — geen cijfer dat het al bekende, Shopify-gesourcete punt (38%→42%, basislijn 17 sep) bevestigt of tegenspreekt.\n- **Prijsweergave-A/B-tests (anchoring, decoy-tier):** alleen testmethodologie-advies gevonden, geen gepubliceerd resultaat voor 2026 — voldoet niet aan \"eigen data\" of \"primaire bron\".\n- **Nederlandse vakmedia (Emerce, Twinkle, Marketingfacts, Thuiswinkel.org):** geen gedateerd oktober-2026-artikel over checkout- of productpagina-conversie gevonden, alleen een Emerce Academy-cursusaankondiging (hierboven) en oude Twinkle-archiefpagina's.\n\n## Wat niet lukte\nGeen toegangsproblemen. Alle kandidaten vielen af op bronkwaliteit (niet-primair, niet-dateerbaar, tegenstrijdig) of op het ontbreken van een concrete koppeling aan higrip.nl, niet op onvermogen om te zoeken.\n\n## Bronnen\n- [Shopify developer changelog — 2026-10 release notes](https://shopify.dev/changelog/release-notes/2026-10)\n- [Emerce Academy — Check-out optimalisatie & conversiepsychologie](https://www.emerce.nl/academy/trainingen/check-out-optimalisatie-conversie-psychologie/)\n\n## Aantekeningen",
@@ -2639,7 +2665,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-10-12-growth-radar-seo-technisch",
     "2026-10-05-growth-radar-seo-technisch",
-    "2026-09-28-growth-radar-seo-technisch"
+    "2026-09-28-growth-radar-seo-technisch",
+    "2026-10-26-growth-radar-seo-technisch"
    ],
    "id": "2026-10-19-growth-radar-seo-technisch",
    "kansen": [],
@@ -3936,7 +3963,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-10-05-growth-radar-seo-technisch",
     "2026-09-28-growth-radar-seo-technisch",
-    "2026-09-24-growth-radar-cro"
+    "2026-09-24-growth-radar-cro",
+    "2026-10-26-growth-radar-seo-technisch"
    ],
    "id": "2026-10-12-growth-radar-seo-technisch",
    "kansen": [],
@@ -14359,14 +14387,9 @@ window.HI_RESEARCH = {
    "Merk": 10,
    "SEO": 41,
    "Social": 6,
-   "Techniek": 23
+   "Techniek": 24
   },
   "per_week": [
-   {
-    "aantal": 0,
-    "start": "2026-08-03",
-    "week": "2026-W32"
-   },
    {
     "aantal": 0,
     "start": "2026-08-10",
@@ -14421,9 +14444,14 @@ window.HI_RESEARCH = {
     "aantal": 9,
     "start": "2026-10-19",
     "week": "2026-W43"
+   },
+   {
+    "aantal": 1,
+    "start": "2026-10-26",
+    "week": "2026-W44"
    }
   ],
-  "totaal_notities": 98
+  "totaal_notities": 99
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

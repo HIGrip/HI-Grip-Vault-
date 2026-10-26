@@ -132,7 +132,7 @@ def cmd_start(args):
 
 
 def vink_notitie_af(note_id: str, actie_id: str):
-    path = br.RESEARCH_DIR / f"{note_id}.md"
+    path = br.note_path(note_id) or br.RESEARCH_DIR / f"{note_id}.md"
     lines = lees_regels(path)
     for i in br.section_indices(lines, "Acties") or []:
         m = br.ACTION_RE.match(lines[i])
@@ -240,11 +240,7 @@ def cmd_kop(args):
     print(werk_kop_bij(args.door))
 
 
-def cmd_opruimen(args):
-    moment = nu()
-    if moment.weekday() != 6 and not args.altijd:
-        print("opruimen: vandaag is geen zondag — niets gedaan (--altijd om toch te draaien)")
-        return
+def opruimen_backlog(args, moment):
     dag = moment.date().isoformat()
     controle = br.load_controle(br.CONTROLE_PATH)
     resultaten = controle_of_nieuw(controle)["resultaten"]
@@ -304,6 +300,136 @@ def cmd_opruimen(args):
         schrijf_controle(controle)
     telregel = werk_kop_bij("weekonderhoud")
     print(f"opruimen: {len(blokken)} item(s) naar AFGEROND.md, {blijft} vandaag bevestigd blijft staan — {telregel}")
+
+# ── Onderzoeksnotities: sorteren en bewaartermijn ──────────────────────────────
+# Routines schrijven in de root van 02_Dashboard (inbox). Het weekonderhoud sorteert oudere notities
+# naar een sorteermap en ruimt notities na de bewaartermijn op. Afspraak Lars, 25-10-2026.
+SORTEER_NA_DAGEN = 14
+BEWAAR_WEEKOVERZICHT = 21
+BEWAAR_ONDERZOEK = 30
+NOTITIE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
+
+
+def notitie_soort(stem: str) -> str:
+    slug = stem[11:]
+    if slug.endswith("weekoverzicht"):
+        return "Weekoverzichten"
+    if slug.startswith("growth-radar"):
+        return "Growth-radar"
+    if slug.startswith(("seo", "regressiecheck", "search-console")):
+        return "SEO"
+    return "Onderzoek"
+
+
+def notitie_beschermd(tekst: str) -> bool:
+    """Losse notitie (bron: los) met open acties die nog niet verwerkt/gearchiveerd is: nooit automatisch weg.
+
+    Zo gaat de enige kopie van een takenlijst niet verloren; zo'n notitie hoort na afhandeling
+    naar een domeinmap of krijgt status verwerkt/gearchiveerd.
+    """
+    eind = tekst.find("\n---", 3) if tekst.startswith("---") else -1
+    kop = tekst[:eind] if eind > 0 else ""
+    los = re.search(r"^bron:\s*los\s*$", kop, re.M) is not None
+    klaar = re.search(r"^status:\s*(verwerkt|gearchiveerd)\s*$", kop, re.M) is not None
+    open_acties = re.search(r"^- \[ \] P[123] · ", tekst, re.M) is not None
+    return los and not klaar and open_acties
+
+
+def alle_notitiepaden() -> list:
+    root = br.RESEARCH_DIR
+    paden = [p for p in root.glob("*.md") if NOTITIE_RE.match(p.name)]
+    for sub in br.SORT_DIRS:
+        paden += [p for p in (root / sub).glob("*.md") if NOTITIE_RE.match(p.name)]
+    return sorted(paden, key=lambda p: (p.name, str(p)))
+
+
+def ruim_verwijzingen_op(weg_ids: set) -> int:
+    """Haal opgeruimde id's uit gerelateerd/vervangt in de frontmatter van de overgebleven notities."""
+    rx = re.compile(r"^(gerelateerd|vervangt):\s*\[(.*)\]\s*$")
+    aantal = 0
+    for p in alle_notitiepaden():
+        with open(p, encoding="utf-8", newline="") as f:
+            delen = f.read().split("\n")
+        if not delen or delen[0].strip() != "---":
+            continue
+        eind = next((i for i in range(1, len(delen)) if delen[i].strip() == "---"), None)
+        if eind is None:
+            continue
+        gewijzigd = False
+        for i in range(1, eind):
+            cr = delen[i].endswith("\r")
+            m = rx.match(delen[i].rstrip("\r"))
+            if not m:
+                continue
+            items = [x.strip() for x in m.group(2).split(",") if x.strip()]
+            houd = [x for x in items if x not in weg_ids]
+            if len(houd) != len(items):
+                aantal += len(items) - len(houd)
+                delen[i] = f"{m.group(1)}: [" + ", ".join(houd) + "]" + ("\r" if cr else "")
+                gewijzigd = True
+        if gewijzigd:
+            with open(p, "w", encoding="utf-8", newline="") as f:
+                f.write("\n".join(delen))
+    return aantal
+
+
+def onderhoud_notities(vandaag: date, droog: bool = False):
+    root = br.RESEARCH_DIR
+    weg, behouden, sorteer = [], [], []
+    for p in alle_notitiepaden():
+        try:
+            d = date.fromisoformat(p.stem[:10])
+        except ValueError:
+            continue
+        leeftijd = (vandaag - d).days
+        soort = notitie_soort(p.stem)
+        grens = BEWAAR_WEEKOVERZICHT if soort == "Weekoverzichten" else BEWAAR_ONDERZOEK
+        tekst = p.read_text(encoding="utf-8").replace("\r\n", "\n")
+        te_oud = leeftijd > grens
+        if te_oud and not notitie_beschermd(tekst):
+            weg.append(p)
+            continue
+        if te_oud:
+            behouden.append(p.stem)
+        if p.parent == root and leeftijd > SORTEER_NA_DAGEN:
+            sorteer.append(p)
+    voor = "droog: " if droog else ""
+    verplaatst = 0
+    for p in sorteer:
+        doel = root / notitie_soort(p.stem) / p.name
+        if doel.exists():
+            print(f"notities: {voor}overgeslagen, doel bestaat al: {p.name}")
+            continue
+        if not droog:
+            doel.parent.mkdir(exist_ok=True)
+            p.replace(doel)
+        verplaatst += 1
+    refs = 0
+    if not droog and weg:
+        for p in weg:
+            p.unlink()
+        refs = ruim_verwijzingen_op({p.stem for p in weg})
+    for p in weg:
+        print(f"notities: {voor}weg (bewaartermijn): {p.name}")
+    for stem in behouden:
+        print(f"notities: BEHOUDEN ondanks termijn (losse notitie met open acties): {stem}")
+    print(f"notities: {voor}{verplaatst} gesorteerd, {len(weg)} opgeruimd, {len(behouden)} behouden, "
+          f"{refs} verwijzingen opgeschoond")
+
+
+def cmd_notities(args):
+    vandaag = date.fromisoformat(args.datum) if args.datum else nu().date()
+    onderhoud_notities(vandaag, droog=args.droog)
+
+
+def cmd_opruimen(args):
+    moment = nu()
+    if moment.weekday() != 6 and not args.altijd:
+        print("opruimen: vandaag is geen zondag — niets gedaan (--altijd om toch te draaien)")
+        return
+    opruimen_backlog(args, moment)
+    onderhoud_notities(moment.date())
+
 
 # ── Werk vanuit het dashboard ──────────────────────────────────────────────────
 COLLECTIES = ("status", "checks", "aantekeningen", "nieuwe_acties", "beheer", "kansen", "opdrachten")
@@ -491,7 +617,7 @@ class Import:
             return self.sla_over(doc, f"onbekende notitie {doc_id}")
         if waarde not in br.ALLOWED["status"]:
             return self.sla_over(doc, f"ongeldige status {waarde!r}")
-        path = br.RESEARCH_DIR / f"{doc_id}.md"
+        path = br.note_path(doc_id) or br.RESEARCH_DIR / f"{doc_id}.md"
         lines = self.regels(path)
         eind = next((i for i in range(1, len(lines)) if lines[i].strip() == "---"), 0)
         i = next((i for i in range(1, eind) if re.match(r"^status\s*:", lines[i])), None)
@@ -517,7 +643,7 @@ class Import:
             lines = self.regels(path)
             i = next((st for st, _, _, _, kop in br.scan_backlog(lines) if br.backlog_id(kop) == aid), None)
         else:
-            path, prefix = br.RESEARCH_DIR / f"{bron}.md", "- ["
+            path, prefix = br.note_path(bron) or br.RESEARCH_DIR / f"{bron}.md", "- ["
             lines = self.regels(path)
             i = next((i for i in br.section_indices(lines, "Acties") or []
                       if (m := br.ACTION_RE.match(lines[i])) and f"{bron}#{br.short_hash(m.group(3))}" == aid), None)
@@ -540,7 +666,7 @@ class Import:
         if note_id not in self.note_ids:
             return self.sla_over(doc, f"onbekende notitie {note_id}")
         regel = f"- **{naam} · {lokaal(moment):%Y-%m-%d %H:%M}** — {tekst}"
-        lines = self.regels(br.RESEARCH_DIR / f"{note_id}.md")
+        lines = self.regels(br.note_path(note_id) or br.RESEARCH_DIR / f"{note_id}.md")
         if regel in lines:
             return self.klaar(doc, "aantekening stond er al")
         kop = next((i for i, line in enumerate(lines)
@@ -803,6 +929,10 @@ def main(argv) -> int:
     o = sub.add_parser("opruimen")
     o.add_argument("--altijd", action="store_true", help="ook draaien als het geen zondag is")
     o.set_defaults(fn=cmd_opruimen)
+    nt = sub.add_parser("notities", help="notities sorteren en bewaartermijn toepassen (draait ook mee met opruimen)")
+    nt.add_argument("--droog", action="store_true", help="alleen tonen wat er zou gebeuren")
+    nt.add_argument("--datum", help="rekendatum JJJJ-MM-DD (standaard vandaag)")
+    nt.set_defaults(fn=cmd_notities)
     i = sub.add_parser("importeer", help="dashboard-docs (ArtifactData out_dir) naar de vault")
     i.add_argument("map")
     i.add_argument("--door", required=True, help="naam van de routine, voor de kop en sync.json")

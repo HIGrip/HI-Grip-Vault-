@@ -39,9 +39,11 @@ Stap 3 · Twee dingen nalopen
 Stap 4 · Instellen in SendWILL (gelijk voor A en B)
 ---------------------------------------------------
 Afzender:    HÏ Grip
-Onderwerp:   Stop met glijden in je schoen
-Preheader:   staat al in de HTML (Siliconen grip-zones houden je voet vast, ...)
-Lijst:       willekeurig 50/50 verdeeld, minimaal 50 ontvangers per variant
+Onderwerp:   Nieuw: de Performance Grip Socks 2.0
+Preheader:   Siliconen grip-zones, Coolmax® en compressie in één sok. Ontdek wat er nieuw is.
+             (staat al in de HTML; vul hem ook in SendWILL in als daar een preheaderveld is)
+Lijst:       klanten en nieuwsbriefaanmelders samen, willekeurig 50/50 verdeeld,
+             minimaal 50 ontvangers per variant
 Verzenden:   A en B op exact hetzelfde moment
 
 

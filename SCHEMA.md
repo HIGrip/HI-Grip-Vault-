@@ -1,7 +1,7 @@
 ---
 type: schema
 bijgewerkt: 2026-10-25
-status: concept — ter goedkeuring door Lars en Timo (AI-structuur)
+status: actief — geactiveerd op opdracht van Lars (25-10-2026); bevestiging door Timo nog open
 ---
 
 # Wiki Schema — HÏ Grip Vault (SCHEMA)

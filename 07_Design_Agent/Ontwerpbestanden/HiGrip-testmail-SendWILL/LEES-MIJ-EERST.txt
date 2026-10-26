@@ -8,17 +8,13 @@ Mail-B-merkverhaal-SendWILL.html   variant B, product + merkverhaal
 afbeeldingen-uploaden-naar-shopify  11 afbeeldingen die de mails gebruiken
 
 
-Stap 1 · Afbeeldingen online zetten (eenmalig)
-----------------------------------------------
-1. Shopify-admin > Content > Bestanden > Bestanden uploaden.
-2. Upload alle 11 bestanden uit de map "afbeeldingen-uploaden-naar-shopify".
-   Verander de bestandsnamen NIET. De mails verwijzen naar precies deze namen:
-   https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-testmail-....
-3. Controle: open in je browser
-   https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-testmail-hero-a.jpg
-   Zie je de foto, dan staat alles goed.
-   Maakt Shopify er "...-hero-a_1.jpg" van (omdat de naam al bestond), pas dan
-   die naam aan in de HTML of verwijder eerst het oude bestand.
+Stap 1 · Afbeeldingen online zetten  (KLAAR, 26-10-2026)
+---------------------------------------------------------
+Alle 11 afbeeldingen staan in Shopify > Content > Bestanden (zoek op "higrip-testmail").
+De mails verwijzen er al naar, bijvoorbeeld:
+https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-testmail-hero-a.jpg
+Verwijder of hernoem deze bestanden in Shopify niet, anders verdwijnen ze uit de mail.
+De map "afbeeldingen-uploaden-naar-shopify" is alleen nog een reservekopie.
 
 
 Stap 2 · HTML in SendWILL plakken

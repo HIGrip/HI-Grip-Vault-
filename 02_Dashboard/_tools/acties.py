@@ -11,10 +11,10 @@ zodat een actie-id hier precies hetzelfde is als op het dashboard. Schrijft _bac
     python 02_Dashboard/_tools/acties.py kop         # teller- en datumregel bovenaan ACTIEBACKLOG.md
     python 02_Dashboard/_tools/acties.py opruimen    # zondag: [x]-items naar AFGEROND.md (--altijd: ook op andere dagen)
                                                      # + notities sorteren en bewaartermijn (zie 'notities')
-    python 02_Dashboard/_tools/acties.py notities [--droog] [--datum JJJJ-MM-DD]
+    python 02_Dashboard/_tools/acties.py notities [--droog] [--overzicht] [--datum JJJJ-MM-DD]
         # root van 02_Dashboard = inbox; notities ouder dan 14 dagen gaan naar Growth-radar/, SEO/,
-        # Weekoverzichten/ of Onderzoek/. Weekoverzichten weg na 21 dagen, andere notities na 30 dagen;
-        # behalve losse notities (bron: los) met open acties die niet verwerkt/gearchiveerd zijn.
+        # Weekoverzichten/ of Onderzoek/. Weekoverzichten weg na 21 dagen, andere notities na 30 dagen,
+        # zonder uitzondering. --overzicht: markdown met wat de komende zondag verdwijnt + open acties.
 
 Werk vanuit het dashboard (PROCEDURE.md sectie B):
     python 02_Dashboard/_tools/acties.py importeer <map> --door <routine>
@@ -326,18 +326,13 @@ def notitie_soort(stem: str) -> str:
     return "Onderzoek"
 
 
-def notitie_beschermd(tekst: str) -> bool:
-    """Losse notitie (bron: los) met open acties die nog niet verwerkt/gearchiveerd is: nooit automatisch weg.
-
-    Zo gaat de enige kopie van een takenlijst niet verloren; zo'n notitie hoort na afhandeling
-    naar een domeinmap of krijgt status verwerkt/gearchiveerd.
-    """
-    eind = tekst.find("\n---", 3) if tekst.startswith("---") else -1
-    kop = tekst[:eind] if eind > 0 else ""
-    los = re.search(r"^bron:\s*los\s*$", kop, re.M) is not None
-    klaar = re.search(r"^status:\s*(verwerkt|gearchiveerd)\s*$", kop, re.M) is not None
-    open_acties = re.search(r"^- \[ \] P[123] · ", tekst, re.M) is not None
-    return los and not klaar and open_acties
+def open_acties_regels(tekst: str) -> list:
+    """De open actieregels (`- [ ] P1 · tekst`) van een notitie, kort weergegeven."""
+    regels = []
+    for m in re.finditer(r"^- \[ \] (P[123]) · (.+?)\s*$", tekst, re.M):
+        t = m.group(2)
+        regels.append(f"{m.group(1)} · {t[:110]}{'…' if len(t) > 110 else ''}")
+    return regels
 
 
 def alle_notitiepaden() -> list:
@@ -378,9 +373,15 @@ def ruim_verwijzingen_op(weg_ids: set) -> int:
     return aantal
 
 
-def onderhoud_notities(vandaag: date, droog: bool = False):
+def onderhoud_notities(vandaag: date, droog: bool = False, overzicht: bool = False):
+    """Sorteren en opruimen. Strikte bewaartermijn (besluit Lars, 26-10-2026): geen uitzonderingen.
+
+    De voorwaarschuwing (`overzicht`) toont wat uiterlijk de eerstvolgende zondag verdwijnt, met de
+    open acties erbij, zodat een mens ze kan redden (naar de backlog of een domeinmap) voordat ze weg zijn.
+    """
     root = br.RESEARCH_DIR
-    weg, behouden, sorteer = [], [], []
+    weg, sorteer, waarschuw = [], [], []
+    tot_zondag = (6 - vandaag.weekday()) % 7
     for p in alle_notitiepaden():
         try:
             d = date.fromisoformat(p.stem[:10])
@@ -389,16 +390,29 @@ def onderhoud_notities(vandaag: date, droog: bool = False):
         leeftijd = (vandaag - d).days
         soort = notitie_soort(p.stem)
         grens = BEWAAR_WEEKOVERZICHT if soort == "Weekoverzichten" else BEWAAR_ONDERZOEK
-        tekst = p.read_text(encoding="utf-8").replace("\r\n", "\n")
-        te_oud = leeftijd > grens
-        if te_oud and not notitie_beschermd(tekst):
+        if leeftijd > grens:
             weg.append(p)
             continue
-        if te_oud:
-            behouden.append(p.stem)
+        if leeftijd + tot_zondag > grens:
+            waarschuw.append(p)
         if p.parent == root and leeftijd > SORTEER_NA_DAGEN:
             sorteer.append(p)
     voor = "droog: " if droog else ""
+    if overzicht:
+        # voorwaarschuwing = opruimen op de komende zondag; `weg` geldt vandaag al als te oud
+        nu_weg = weg + waarschuw
+        print("## Notities die binnenkort verdwijnen")
+        if not nu_weg:
+            print("\nGeen: alle notities zitten binnen de bewaartermijn.")
+        for p in nu_weg:
+            acties = open_acties_regels(p.read_text(encoding="utf-8").replace("
+\n", "\n"))
+            print(f"\n- `{p.stem}` — weg op de eerstvolgende zondag-opruiming; {len(acties)} open actie(s)")
+            for a in acties[:5]:
+                print(f"  - {a}")
+            if len(acties) > 5:
+                print(f"  - (+{len(acties) - 5} meer)")
+        return
     verplaatst = 0
     for p in sorteer:
         doel = root / notitie_soort(p.stem) / p.name
@@ -416,15 +430,13 @@ def onderhoud_notities(vandaag: date, droog: bool = False):
         refs = ruim_verwijzingen_op({p.stem for p in weg})
     for p in weg:
         print(f"notities: {voor}weg (bewaartermijn): {p.name}")
-    for stem in behouden:
-        print(f"notities: BEHOUDEN ondanks termijn (losse notitie met open acties): {stem}")
-    print(f"notities: {voor}{verplaatst} gesorteerd, {len(weg)} opgeruimd, {len(behouden)} behouden, "
-          f"{refs} verwijzingen opgeschoond")
+    print(f"notities: {voor}{verplaatst} gesorteerd, {len(weg)} opgeruimd, {refs} verwijzingen opgeschoond; "
+          f"{len(waarschuw)} verdwijnen uiterlijk de komende zondag")
 
 
 def cmd_notities(args):
     vandaag = date.fromisoformat(args.datum) if args.datum else nu().date()
-    onderhoud_notities(vandaag, droog=args.droog)
+    onderhoud_notities(vandaag, droog=args.droog or args.overzicht, overzicht=args.overzicht)
 
 
 def cmd_opruimen(args):
@@ -936,6 +948,7 @@ def main(argv) -> int:
     o.set_defaults(fn=cmd_opruimen)
     nt = sub.add_parser("notities", help="notities sorteren en bewaartermijn toepassen (draait ook mee met opruimen)")
     nt.add_argument("--droog", action="store_true", help="alleen tonen wat er zou gebeuren")
+    nt.add_argument("--overzicht", action="store_true", help="markdown-voorwaarschuwing: wat verdwijnt de komende zondag (voor het weekoverzicht)")
     nt.add_argument("--datum", help="rekendatum JJJJ-MM-DD (standaard vandaag)")
     nt.set_defaults(fn=cmd_notities)
     i = sub.add_parser("importeer", help="dashboard-docs (ArtifactData out_dir) naar de vault")

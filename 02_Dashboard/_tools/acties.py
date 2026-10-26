@@ -405,8 +405,7 @@ def onderhoud_notities(vandaag: date, droog: bool = False, overzicht: bool = Fal
         if not nu_weg:
             print("\nGeen: alle notities zitten binnen de bewaartermijn.")
         for p in nu_weg:
-            acties = open_acties_regels(p.read_text(encoding="utf-8").replace("
-\n", "\n"))
+            acties = open_acties_regels(p.read_text(encoding="utf-8").replace("\r\n", "\n"))
             print(f"\n- `{p.stem}` — weg op de eerstvolgende zondag-opruiming; {len(acties)} open actie(s)")
             for a in acties[:5]:
                 print(f"  - {a}")

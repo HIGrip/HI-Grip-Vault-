@@ -101,6 +101,9 @@ Gerichte websearch naar nieuwe AI-tools en -mogelijkheden van de afgelopen week 
 ## 6. Vooruitblik komende week
 3–5 concrete, actiegerichte punten, gebaseerd op het Stappenplan, je eigen acties deze week (2, 2b, 2c, 3b) en naderende deadlines.
 
+## 6b. Notities die binnenkort verdwijnen (Zelf doen)
+Draai `python 02_Dashboard/_tools/acties.py notities --overzicht` en neem de uitvoer letterlijk over als kopje `### Notities die binnenkort verdwijnen` in het weekoverzicht (direct na `### Openstaande beslissingen voor Lars`). Het is een voorwaarschuwing: de notities in die lijst worden de eerstvolgende zondag verwijderd (bewaartermijn 21 dagen voor weekoverzichten, 30 dagen voor de rest). Staan er open acties bij die nergens anders in de backlog staan, zet ze dan als beslispunt voor Lars bij `## Acties`. Pas niets aan in de notities zelf.
+
 ## 7. Schrijf het weekoverzicht als onderzoeksnotitie
 Volg sectie A van `02_Dashboard/_build/PROCEDURE.md`. Het bestand is `02_Dashboard/JJJJ-MM-DD-weekoverzicht.md` (datum = de maandag van de run). Schrijf **niet** meer naar `02_Dashboard/Weekoverzichten/`.
 
@@ -143,6 +146,7 @@ deadline: ""
 ### Website-stand en kant-en-klare fixes
 ### GA4-weekrapport en funnel
 ### Openstaande beslissingen voor Lars
+### Notities die binnenkort verdwijnen
 ### Vooruitblik — komende week
 ### AI-ontwikkelingen die relevant kunnen zijn
 ## Bronnen

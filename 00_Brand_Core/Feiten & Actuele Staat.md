@@ -65,7 +65,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 | Aantal sporters | **3500+** | Besluit Lars 11-10-2026. Overal 3500+, behalve de tijdlijn op /pages/over-ons: die mijlpaal (juni 2026) blijft 3000+. Oude teksten met 1.500+, 2.000+ of 3000+ niet meer gebruiken. |
 | Wrijvingscoëfficiënt | 1,17 (tegen 0,60 bij gewone sokken) | Peer-reviewed: Apps et al. 2022, *Journal of Sports Sciences* (doi 10.1080/02640414.2022.2080163). Friedl et al. 2023 is **gemengd** bewijs (alleen +9,3% benutte tractie bij afremmen citeren). Details: [[Performance Grip Socks 2.0]] §3 |
 | Meer grip | 95% meer grip | Afgeleid: 1,17 ÷ 0,60 = 1,95. Zelfde bron. **Alleen met de formuleringsregel hieronder** |
-| Reviewscore | **4,6 ★** (Trustpilot, 17 reviews op 3 sep) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
+| Reviewscore | **4,6 ★** (Trustpilot, 19 reviews op 27 okt; 17 op 3 sep) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
 | Vertrouwd door | 10+ organisaties | Niet geteld; voorzichtig gebruiken |
 
 > [!danger] Formuleringsregel voor grip-claims (verplicht in elke uiting)

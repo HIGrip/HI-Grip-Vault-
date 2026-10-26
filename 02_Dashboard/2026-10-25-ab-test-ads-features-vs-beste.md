@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "Er liggen vier A/B-paren Instagram-ads klaar (padel, voetbal, tennis, rugby) waarin alleen de boodschap verschilt: 'de beste gripsok' tegen de concrete features van de 2.0. Het advies is paar 1 (padel), maar het testcriterium van 3.000 vertoningen per variant geeft bij 1,0% tegen 1,5% CTR nog geen zekere uitslag; reken op ongeveer 3.800 voor 95% zekerheid."
-gerelateerd: [2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-11-concurrentie-seo-per-merk, 2026-10-27-review-rugby-ads-trustpilot]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/7LdtZddA7osmkVUwSzp1Uy"
 deadline: ""

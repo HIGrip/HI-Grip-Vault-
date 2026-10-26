@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-10-26T04:15:28+01:00",
+ "bijgewerkt": "2026-10-26T04:24:11+01:00",
  "bronnen": [
   {
    "id": "ga4",
@@ -54,7 +54,7 @@
    "naam": "Shopify",
    "soort": "connector",
    "status": "ok",
-   "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-25",
+   "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-26",
    "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Shopify koppelen"
   },
   {

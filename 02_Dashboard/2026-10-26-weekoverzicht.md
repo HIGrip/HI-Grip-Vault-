@@ -130,6 +130,8 @@ Nieuw deze week (zie Acties): duiding van de nul-bestellingen-week. Daarnaast, o
 
 Gerichte websearch naar nieuwe AI-tools/-functies voor content, marketing en e-commerce (Shopify-AI-apps, Buffer/TikTok-functies, agentic shopping/ChatGPT checkout) leverde niets op dat de datumtoets doorstaat: vooral evergreen vendor-content, ongedateerde artikelen of nieuws van eerder in 2026 (bv. de ChatGPT Instant Checkout-ontwikkeling liep via september 2025 en maart 2026, niets nieuws voor oktober). Dat komt overeen met de eigen Growth Radar-routines van deze week (10-20 content, 10-21 AI-search, 10-22 CRO, 10-26 SEO-technisch), die alle vier zelf ook niets vonden dat hun datumtoets doorstond. Wel een datapunt, geen "ontwikkeling": voor het eerst verscheen in GA4 een sessie via het kanaal "AI Assistant" (zie GA4-sectie) — te weinig volume om iets te concluderen, maar het eerste signaal van dit kanaal in de gemeten periode.
 
+**Update 26 okt 2026 (Team HÏ Grip):** deze zoekactie keek alleen naar externe AI-ontwikkelingen. De eigenlijke relevante AI-ontwikkeling van deze week is intern: de vault/agentstructuur is herzien (dit blok 00-08, zie [[SCHEMA]] en `log.md`), met nieuwe agents en het gebruik van Hermes en de terminal. Dat verklaart ook waarom de paden en routines uit eerdere weekoverzichten (05_Research, oude Routines-map) deze week zijn verschoven naar `02_Dashboard` en `01_Agent_Infrastructuur`.
+
 ## Bronnen
 
 - [[2026-10-19-regressiecheck]] · [[2026-10-21-search-console]] · [[2026-10-19-seo-conversietest-run-5]] · [[2026-10-19-productpagina-2-0-inspiratie-en-prototype]] · [[2026-10-12-b2b-pagina-inspiratie]] · [[2026-10-12-voordelenpagina-analyse]] · [[2026-10-11-omzetgroei-koersbepaling]] · [[2026-10-11-seo-audit-weekdelta]]
@@ -143,3 +145,5 @@ Gerichte websearch naar nieuwe AI-tools/-functies voor content, marketing en e-c
 - Websearch AI-ontwikkelingen: Shopify/e-commerce AI-apps, Buffer/TikTok-functies, agentic shopping (26 oktober 2026, geen harde oktober-vondst)
 
 ## Aantekeningen
+- **Team HÏ Grip · 2026-10-26 08:44** — Reactie op vooruitblikpunt 1 (nul-bestellingen-week duiden): wordt opgelost door deze week te starten met Ads. Dit is de advertentiebudget-beslissing waarop backlogpunt 10 (CAPI) en 24 (ChatGPT Ads) wachtten; punt 10 is daarom opgewaardeerd naar P1. Dit duidt de week nog niet technisch (de funnel-vraag uit "Vooruitblik" blijft openstaan voor de volgende meting), maar geeft wel een concreet vervolg.
+- **Team HÏ Grip · 2026-10-26 08:44** — Reactie op vooruitblikpunt 4 (homepage-herontwerp, basisbesluit nemen): basisbesluit genomen, komt vandaag online. Zie de aantekening bij [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] — de losse deelbesluiten (sportersaantal, hero-kop-variant) zijn niet gespecificeerd.

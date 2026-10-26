@@ -83,3 +83,4 @@ GA4 verversen (analytics-mcp maakte geen verbinding, geen Python in de agentomge
 - Eerder onderzoek: [[2026-10-13-homepage-redesign]], [[2026-10-07-missie-visie-pagina]], [[2026-10-12-werkthema-vs-live]], [[2026-10-08-growth-radar-cro]], [[2026-09-21-beachhead-rugby]], [[2026-10-07-shoppagina-keuzepagina]]
 
 ## Aantekeningen
+- **Team HÏ Grip · 2026-10-26 08:44** — Basisbesluit genomen: de homepage-bouw gaat door op basis van dit prototype (richting B) en komt vandaag (26-10) online. Welke keuze is gemaakt voor de losse P1-deelbesluiten hierboven (sportersaantal 3500+/3000+, hero-kop A/B, hoofd-CTA-tekst) is in dit bericht niet gespecificeerd — navragen en het feitenbestand en deze notitie bijwerken zodra bekend.

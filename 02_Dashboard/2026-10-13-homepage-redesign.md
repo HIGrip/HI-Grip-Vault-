@@ -42,8 +42,8 @@ Voorstel: 9 secties (hero met H1 → sportkiezer met 4 sporten → 2.0 in 360° 
 - [ ] P1 · Besluit: geldt de afspraak "H1/H2 niet wijzigen" ook voor de homepage, of mag de H1 met dezelfde tekst naar de hero
 - [ ] P1 · "3500+ sporters" corrigeren naar 3000+ in de announcementbar (header-group.json), de tijdlijnkop op Over ons en de presets van gripsocks2-proof en sport-proof
 - [ ] P1 · Meetfundament vóór de bouw: events voor klik op sportkiezer, interactie met de 360° en scrolldiepte, plus 4 weken baseline van de huidige homepage
-- [ ] P1 · JavaScript-budget homepage: inline-scripts van de ai_gen-blocks, dubbele gripsocks2-launch.css en padel-page.css van de homepage halen vóór er motion bij komt
-- [ ] P2 · Rugbypagina /pages/gripsokken-voor-rugby bouwen in het werkthema, daarna de rugbytegel in de sportkiezer en rugby in de title
+- [x] P1 · JavaScript-budget homepage: inline-scripts van de ai_gen-blocks, dubbele gripsocks2-launch.css en padel-page.css van de homepage halen vóór er motion bij komt
+- [x] P2 · Rugbypagina /pages/gripsokken-voor-rugby bouwen in het werkthema, daarna de rugbytegel in de sportkiezer en rugby in de title
 - [ ] P2 · Nieuwe homepage bouwen als testtemplate page.home-nieuw.json in werkthema 201133490503 (CSS → Liquid → JS), pas na de besluiten hierboven
 - [ ] P2 · FAQ-antwoorden 4 en 7 van "uw" naar "je", in de sectie en in snippets/faq-schema.liquid tegelijk
 - [ ] P2 · Besluit: welke van de 8 marquee-afbeeldingen echte klantlogo's zijn (4 lijken SEO-afbeeldingen)

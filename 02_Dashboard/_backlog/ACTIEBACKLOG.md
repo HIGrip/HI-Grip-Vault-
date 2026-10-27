@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 26 oktober 2026 (chat-besluit)
-Open: 29 · Afgerond: 8 (3 dubbel, zie dashboard)
+Laatst bijgewerkt: 27 oktober 2026 (actiecontrole)
+Open: 29 · Afgerond: 8 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -14,7 +14,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 ## P1 — Deze week
 
-### [ ] [regressie] `/pages/gripsokken-voor-rugby` heeft twee H1-tags (nieuw 19 okt 2026)
+### [x] [regressie] `/pages/gripsokken-voor-rugby` heeft twee H1-tags (nieuw 19 okt 2026)
+**Bevestigd:** 27 oktober 2026 door actiecontrole — precies 1 h1 meer (class 'spf-hero__h1'), het losse tekstblok-h1 bovenaan is weg; https://www.higrip.nl/pages/gripsokken-voor-rugby
 **Waarom:** Precies één `<h1>` per pagina is een vaste regel in de regressiecheck en is al eerder geschonden (de EN-homepage, 28 sep 2026, inmiddels opgelost). De nieuwe sportpagina `/pages/gripsokken-voor-rugby` (deze week voor het eerst in de sitemap) heeft nu zelf twee `<h1>`-tags: een los tekstblok bovenaan met `<h1>Gripsokken voor rugby</h1>` (de omringende div-klasse suggereert zelf "h2") plus de eigen `<h1 class="sl-hero__title">` van de hero-sectie eronder. Op de drie bestaande sportpagina's (padel, tennis, voetbal) ontbreekt dit bovenste blok of rendert het op een lager niveau: daar is alleen de hero-h1 aanwezig.
 **Waar:** `/pages/gripsokken-voor-rugby` — het tekstblok direct boven de hero-sectie
 **Wat:** Het heading-niveau van dat tekstblok van `h1` naar `h2` zetten (of het blok verwijderen als het een duplicaat is van de hero-titel), zodat net als bij de andere drie sportpagina's precies één `<h1>` overblijft.

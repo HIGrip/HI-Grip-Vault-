@@ -52,7 +52,7 @@ Open acties uit [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en [[2026-09-25-seo-aud
 
 - [x] P1 · Het "vóór 22:00 uur… dezelfde dag verzonden"-antwoord uit het FAQPage-JSON-LD van `/` en `/en` halen en gelijktrekken met "binnen 1 werkdag verzonden"
 - [x] P1 · Op `/en/pages/gripsokken-voor-padel`, `-tennis` en `-voetbal` de zin "Ordered before 22:00, shipped the same business day" vervangen, en op `/en/products/performance-gripsokken-2-0-zwart` en `-wit` "€30" naar €35 zetten
-- [ ] P1 · De kapotte H1 "Gripsokken voor grip socks for padel" op de drie EN-sportpagina's herstellen
+- [x] P1 · De kapotte H1 "Gripsokken voor grip socks for padel" op de drie EN-sportpagina's herstellen
 - [x] P1 · Het FAQ-antwoord "Zijn gripsokken wetenschappelijk bewezen?" herschrijven volgens de formuleringsregel (gripsokken in het algemeen, Apps et al. 2022, Friedl 2023 als gemengd bewijs) en "wetenschappelijk bewezen effectiviteit" uit de v1-productbeschrijving in het Product-schema halen
 - [ ] P1 · Besluit: socialprofielen en KvK-nummer van de footer (Instagram, TikTok, LinkedIn, Trustpilot, KvK) in het feitenbestand vastleggen, zodat ze als `sameAs` en `contactPoint` in het Organization-schema mogen
 - [ ] P1 · GA4-aankopen (5, €118,51 over 28 dagen) naast Shopify-orders van dezelfde periode leggen en pas dan conversieconclusies op GA4 baseren
@@ -60,7 +60,7 @@ Open acties uit [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en [[2026-09-25-seo-aud
 - [ ] P2 · `Organization.url` op de sportpagina's en `/pages/over-ons` naar de homepage laten wijzen (nu wijst het naar de pagina zelf) en `https://schema.org` gebruiken
 - [x] P2 · Het FAQ-verzorgingsantwoord van "u/uw" naar "je/jouw" zetten en het missie-antwoord gelijktrekken met "Wij versnellen de beweging van iedere sporter."
 - [ ] P2 · Filter het botverkeer (VS en China) uit GA4 en bereken conversie alleen op NL-sessies
-- [ ] P2 · `/products/hi-grip-gripsokken-1` (1.091 vertoningen, CTR 0,82%) 301'en naar de canonieke productpagina, of de titel en meta verbeteren
+- [x] P2 · `/products/hi-grip-gripsokken-1` (1.091 vertoningen, CTR 0,82%) 301'en naar de canonieke productpagina, of de titel en meta verbeteren
 - [ ] P2 · EAN's als barcode in Shopify invullen, zodat `gtin` en `itemCondition` in het Product-schema en de Merchant-feed kunnen
 - [ ] P2 · Alle 23 blogs koppelen aan de sportpagina's en `/collections/gripsokken`; nu heeft geen enkel artikel een link naar een sport- of productpagina
 - [ ] P2 · Article-schema van de blogs vullen: `articleBody` is nu alleen een hashtag en `description` is leeg; type `BlogPosting`

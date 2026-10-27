@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Google's Search Central-documentatie noemt het sinds 1 oktober 2026 'critical' om AI-gegenereerde content handmatig te factchecken op juistheid vóór publicatie, omdat generatieve modellen woordreeksen voorspellen in plaats van feiten op te halen en daardoor kunnen hallucineren. Voor higrip.nl raakt dit elke AI-ondersteunde contentstap, vooral de nog te schrijven antwoordcapsules uit backlogpunt 6 en elke tekst die via de contentagents loopt."
-gerelateerd: [2026-09-29-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content, 2026-10-14-search-console, 2026-10-20-growth-radar-seo-content]
+gerelateerd: [2026-09-29-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content, 2026-10-14-search-console, 2026-10-20-growth-radar-seo-content, 2026-10-27-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

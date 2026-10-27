@@ -2090,9 +2090,36 @@ window.HI_RESEARCH = {
    "toegepast": 1
   }
  },
- "gebouwd": "2026-10-27T03:17:41+00:00",
+ "gebouwd": "2026-10-27T03:41:54+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat | Waar | Bijgewerkt | Hoe kom je erbij |\n|---|---|---|---|\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat) | `02_Dashboard\\` in de vault | bij elk onderzoek (routine of los) | Obsidian, of het dashboard (feed + detailpaneel) |\n| **Dashboard** | HÏ Grip Research Dashboard (artifact, gepind in de sidebar) | na elke build/publish | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten |\n| **Register + buildscript** | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`) | bij elke build | `python 02_Dashboard\\_build\\build_register.py` |\n| **Dashboard-bron (HTML)** | `02_Dashboard\\_dashboard\\index.html` | bij elke wijziging aan de pagina | publish volgens `PROCEDURE.md` |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3) | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault) | door de routines | Obsidian, of de pagina Acties in het dashboard |\n| **Geheugen van de routines** (anti-herhaling) | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md` | aan het eind van elke run | Obsidian |\n| **Feiten** (prijzen, handles, URL's, ID's, claims) | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`) | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste |\n| **Gedeelde Claude-instructies** | `CLAUDE.md` in de hoofdmap van de vault | bij merk- of werkafspraak | laadt automatisch bij elke Claude die in de vault werkt |\n| **Routine-prompts + rolverdeling** | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status) | bij wijziging van een routine | Obsidian; de routines op info@ verwijzen hiernaar |\n| **Growth-radar-dagrapporten (archief)** | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09) | — | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\` |\n| **Geplande lokale routines** | `C:\\Users\\Test\\.claude\\scheduled-tasks\\` | — | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README) | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks | claude.ai → Routines (account info@higrip.nl) |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md` | bij wijziging | typ `/naam` in Claude Code |\n| **Claude-geheugen** (werkafspraken, projectcontext) | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index) | bij nieuwe afspraak | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026 |\n| **Merkregels voor Claude** | `C:\\Users\\Test\\.claude\\CLAUDE.md` | bij merkbesluit | wordt automatisch geladen in elke sessie |\n| **Plannen** | `C:\\Users\\Test\\.claude\\plans\\` | per project | bestanden; `research-dashboard.md` = dit systeem |\n| **Projectmappen** | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\` | per project | bestanden (Liquid/CSS-werk, geen onderzoek) |\n| **Shopify-thema (werkkopie)** | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md) | bij themawerk | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars |\n| **Website-analyse in de vault** | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md)) | bij audit | Obsidian |\n| **Doorgevoerde themawijzigingen** | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`) | bij elke push | Obsidian |\n| **Procesleerpunten agents** | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`) | per iteratie | Obsidian |\n| **Compliance** | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo` | 2026-09-14 | Obsidian / dashboard |\n| **Archief (oud werk)** | `C:\\Users\\Test\\.claude\\archief\\` met `README.md` | 2026-09-17 | bestanden; KNVB-scraper en oude landingsprojecten |\n| **KNVB-clubdata (B2B-outreach)** | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable) | 2026-06-23 | zie `memory\\project_knvb_scraper.md` |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Onderzoeksnotities (datum-id in de bestandsnaam): 73 notities\n- Routines: 15 notities\n- Weekoverzichten: 1 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 3 notities\n",
  "notities": [
+  {
+   "acties": [],
+   "body_md": "# Growth Radar — SEO-content & keywords (geen kwalificerende vondst)\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nGeen relevante ontwikkelingen vandaag binnen de dagfocus long-tails, SERP-features, Google-contentrichtlijnen en sport-landingspagina's.\n\n## Bevindingen\n### Gecontroleerd, niet opgenomen\n- **Search Engine Land, oktober 2026:** alleen een overzichtspagina met teasers (spamupdate september afgerond, Conversion Lift voor Search/Performance Max, AI Mode-ads, Gemini 4 Argon) — geen van deze gaat over content/keywords, en de spamupdate stond al op 28 sep 2026 in het geheugen.\n- **Search Engine Roundtable:** geen bruikbaar long-tail-artikel gevonden; alleen generieke, deels jaren oude long-tail-gidsen (Shopify-blog, Local Search Forum) zonder 2026-datum.\n- **Google Search Central — \"main content\"-sectie in de Helpful Content-richtlijn:** meerdere secundaire SEO-blogs (relevantaudience, techwyse, scalevise, kompozy) melden een update begin oktober 2026 die \"main content\" beoordeelt op effort/originality/skill/accuracy, met tegenstrijdige datums (1 of 5 oktober) tussen de bronnen. Niet terug te voeren op de Google Search Central-pagina zelf binnen deze bronnen — niet opgenomen. De eerder bevestigde factcheck-eis voor AI-content (13 okt) is hiermee niet herzien.\n- **Ahrefs/Semrush long-tail-onderzoek:** geen eigen 2026-studie gevonden, alleen secundaire roundups met onderling tegenstrijdige cijfers (bijv. \"93% van de Amerikaanse keyworddatabase onder 10 zoekopdrachten/maand\" zonder vindbare Ahrefs-bron; long-tail-aandeel van zoekvolumes varieert tussen bronnen van circa 70% tot 91,8%) — zelfde patroon als 20 oktober.\n- **SERP-features/zero-click 2026:** cijfers lopen uiteen van 27% tot 68%, grotendeels van niet-gezaghebbende sites (lovable.app-pagina's, aggregators); het enige mogelijk bruikbare spoor (STAT's \"SERP in 2026\"-rapport) staat niet op de toegestane bronnenlijst en kon niet rechtstreeks geraadpleegd worden.\n- **Sport-landingspagina's en SERP (NL):** geen resultaten van Emerce, Marketingfacts, Twinkle of Thuiswinkel.org. De gevonden case studies (Delante, OuterBox, Digital Authority, Suso Digital, PressBox PR) zijn agencymarketingpagina's zonder duidelijke 2026-datum of controleerbare methodologie, en gaan niet over higrip.nl's eigen sporten (tennis/padel, voetbal, rugby).\n\n## Wat niet lukte\nGeen toegangsproblemen. Alle kandidaten vielen af op bronkwaliteit (secundair, tegenstrijdig of zonder vindbare primaire bron), op het ontbreken van een datum, of op het ontbreken van nieuwheid of een concrete koppeling aan higrip.nl — niet op onvermogen om te zoeken.\n\n## Bronnen\n- [SEO News | October 2026 (overzichtspagina)](https://blog.mean.ceo/?p=11044)\n- [Google Now Calls Manual Fact-Checking of AI Content Critical — RelevantAudience](https://www.relevantaudience.com/seo/google-ai-content-guidance-manual-fact-check/)\n- [Google Elevates Main Content in Helpful Content Guidance — Scalevise](https://scalevise.com/resources/google-main-content-helpful-content-guidance-update/)\n- [Keyword Research Statistics 2026 — Resourcera](https://resourcera.com/data/seo/keyword-research-statistics/)\n- [Longtail Keywords — Neal Schaffer](https://nealschaffer.com/longtail-keywords/)\n- [Zero-Click Searches Hit 68% in 2026 — RelevantAudience](https://www.relevantaudience.com/seo/google-zero-click-hit-68-percent-in-2026/)\n- [Zero-click searches statistics 2026 — Searchlab](https://searchlab.nl/en/statistics/zero-click-searches-statistics-2026)\n- [Sports Supplements e-commerce case study — Delante](https://delante.co/clients/increase-in-revenue-due-to-seo-efforts-in-the-sports-supplements-industry-2/)\n- [Soccer Innovations case study — OuterBox](https://www.outerboxdesign.com/work/case-studies/seo/soccer-innovations-organic-revenue-growth/)\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "SEO",
+   "datum": "2026-10-27",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-10-20-growth-radar-seo-content",
+    "2026-10-13-growth-radar-seo-content",
+    "2026-10-11-concurrentie-seo-per-merk"
+   ],
+   "id": "2026-10-27-growth-radar-seo-content",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Geen nieuwe long-tail-, SERP-feature- of landingspagina-vondst vandaag",
+   "prioriteit": "P3",
+   "routine": "growth-radar",
+   "samenvatting": "Geen van de vandaag gevonden berichten over long-tails, SERP-features, Google-contentrichtlijnen of sport-landingspagina's haalde de drempel van een primaire bron, aantoonbare nieuwheid of een concrete koppeling aan higrip.nl. De meeste vondsten zijn secundaire roundups, vendor-cijfers of case studies zonder datum of methodologie.",
+   "status": "nieuw",
+   "titel": "Growth Radar — SEO-content & keywords (geen kwalificerende vondst)",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-10-27-growth-radar-seo-content.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Geen toegangsproblemen. Alle kandidaten vielen af op bronkwaliteit (secundair, tegenstrijdig of zonder vindbare primaire bron), op het ontbreken van een datum, of op het ontbreken van nieuwheid of een concrete koppeling aan higrip.nl — niet op onvermogen om te zoeken."
+  },
   {
    "acties": [
     {
@@ -2335,7 +2362,8 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-10-13-growth-radar-seo-content",
     "2026-10-06-growth-radar-seo-content",
-    "2026-10-11-concurrentie-seo-per-merk"
+    "2026-10-11-concurrentie-seo-per-merk",
+    "2026-10-27-growth-radar-seo-content"
    ],
    "id": "2026-10-20-growth-radar-seo-content",
    "kansen": [],
@@ -3648,7 +3676,8 @@ window.HI_RESEARCH = {
     "2026-09-29-growth-radar-seo-content",
     "2026-10-06-growth-radar-seo-content",
     "2026-10-14-search-console",
-    "2026-10-20-growth-radar-seo-content"
+    "2026-10-20-growth-radar-seo-content",
+    "2026-10-27-growth-radar-seo-content"
    ],
    "id": "2026-10-13-growth-radar-seo-content",
    "kansen": [],
@@ -10062,7 +10091,7 @@ window.HI_RESEARCH = {
    "B2B": 2,
    "CRO": 11,
    "Merk": 5,
-   "SEO": 26,
+   "SEO": 27,
    "Social": 4,
    "Techniek": 23
   },
@@ -10123,12 +10152,12 @@ window.HI_RESEARCH = {
     "week": "2026-W43"
    },
    {
-    "aantal": 2,
+    "aantal": 3,
     "start": "2026-10-26",
     "week": "2026-W44"
    }
   ],
-  "totaal_notities": 71
+  "totaal_notities": 72
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

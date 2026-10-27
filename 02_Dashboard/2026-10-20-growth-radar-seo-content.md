@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over long-tails, SERP-features of sport-landingspagina's haalde de drempel van een primaire bron, aantoonbare nieuwheid of een concrete koppeling aan higrip.nl. De meeste vondsten zijn secundaire roundups of vendor-cijfers die zichzelf tegenspreken of al bekend zijn."
-gerelateerd: [2026-10-13-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content, 2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-13-growth-radar-seo-content, 2026-10-06-growth-radar-seo-content, 2026-10-11-concurrentie-seo-per-merk, 2026-10-27-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

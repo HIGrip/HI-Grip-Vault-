@@ -2015,6 +2015,30 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "beslissen welke packprijs 2.0 klopt (preview vs. feitenbestand) en het feitenbestand bijwerken"
  },
+ "2026-10-19-regressiecheck#1dae6547": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "onderzoeken of /blogs/intern bedoeld publiek staat en een aanbeveling (noindex of niet) opstellen",
+  "wat_jij_doet": "beslissen of het bedoeld is en zo nodig noindex toevoegen of de pagina verwijderen"
+ },
+ "2026-10-19-regressiecheck#ad2b5f77": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "concept-titel en meta description voor /pages/terugbetalingsbeleid opstellen",
+  "wat_jij_doet": "concept controleren en invullen in de Shopify-paginainstellingen"
+ },
+ "2026-10-19-seo-conversietest-run-5#3552358b": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "EAN-waarden en productType-voorstel klaarzetten (al in het logboek)",
+  "wat_jij_doet": "de waarden invullen in Shopify (barcode/productType-veld) voor de 1.0 en 2.0"
+ },
+ "2026-10-19-seo-conversietest-run-5#88b30988": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "conceptteksten voor de productbeschrijvingen (padel/tennis/rugby toevoegen, code-tag verwijderen) voorbereiden in het logboek",
+  "wat_jij_doet": "conceptteksten controleren en invullen op de live productpagina's"
+ },
  "2026-10-21-search-console#0c7289f9": {
   "beoordeeld": "2026-10-22",
   "claude": "nee",
@@ -2026,6 +2050,54 @@
   "claude": "nee",
   "wat_claude_doet": "niets",
   "wat_jij_doet": "beoordelen of de nul-bestellingenweek ruis is of een echt signaal, en volgende week bevestigen of dit doorzet"
+ },
+ "2026-10-27-seo-audit-higrip-nl#23ee758a": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor een herziene retourtekst opstellen in de vault",
+  "wat_jij_doet": "besluiten of 14 of 30 dagen (en de 25%-kosten) de regel wordt, juridisch laten toetsen en de policy-pagina's bijwerken"
+ },
+ "2026-10-27-seo-audit-higrip-nl#4c71e6cc": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "Engelse hero- en FAQ-vertaling als concept voorbereiden in het testthema",
+  "wat_jij_doet": "concept controleren en op het live /en doorvoeren"
+ },
+ "2026-10-27-seo-audit-higrip-nl#577fc390": {
+  "beoordeeld": "2026-10-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de drie prijspunten vergelijken, besluiten welke klopt en bijwerken waar nodig"
+ },
+ "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
+  "beoordeeld": "2026-10-28",
+  "claude": "ja",
+  "wat_claude_doet": "koopintentie-analyse op basis van Search Console-data uitschrijven met een onderbouwde aanbeveling (redirect/canonical of niet)",
+  "wat_jij_doet": "aanbeveling beoordelen en goedkeuren voordat iets wijzigt"
+ },
+ "2026-10-27-seo-audit-higrip-nl#b15cf9e7": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor een gelijkgetrokken verzendbelofte opstellen in de vault",
+  "wat_jij_doet": "besluiten welke belofte klopt en de policy- en productpagina's bijwerken"
+ },
+ "2026-10-27-seo-audit-higrip-nl#be8debb7": {
+  "beoordeeld": "2026-10-28",
+  "claude": "ja",
+  "wat_claude_doet": "de higrip-vault-skill-referentie corrigeren en de audit onafhankelijk herhalen",
+  "wat_jij_doet": "resultaten beoordelen en goedkeuren"
+ },
+ "2026-10-27-seo-audit-higrip-nl#ebf95eea": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "analyse van de A/B-testopzet en een advies over het doel opstellen",
+  "wat_jij_doet": "het doel bevestigen en zo nodig de sitemap-instelling of noindex aanpassen"
+ },
+ "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
+  "beoordeeld": "2026-10-28",
+  "claude": "deels",
+  "wat_claude_doet": "overzicht en conceptteksten voorbereiden voor homepage-meta, collectie-USP en /en op 3500+",
+  "wat_jij_doet": "homepage-meta aanpassen in Online Store → Voorkeuren en de collectie-USP in de thema-editor, en live zetten"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

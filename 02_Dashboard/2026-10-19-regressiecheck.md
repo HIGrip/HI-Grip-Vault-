@@ -31,7 +31,7 @@ De sitemap is deze week flink gegroeid: een vierde sportpagina (`/pages/gripsokk
 
 ## Acties
 
-- [ ] P1 · `/pages/gripsokken-voor-rugby` heeft twee H1-tags (los tekstblok + hero-titel) — niveau van het bovenste blok naar H2
+- [x] P1 · `/pages/gripsokken-voor-rugby` heeft twee H1-tags (los tekstblok + hero-titel) — niveau van het bovenste blok naar H2
 - [ ] P1 · `/pages/terugbetalingsbeleid` heeft titel "American Express" en geen meta description — herschrijven
 - [ ] P2 · `/blogs/intern` staat publiek en zonder noindex in de sitemap — nagaan of dat bedoeld is
 

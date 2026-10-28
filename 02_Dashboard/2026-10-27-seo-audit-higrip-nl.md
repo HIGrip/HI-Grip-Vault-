@@ -26,12 +26,12 @@ Alleen-lezen audit door de Website Agent (technisch, on-page, eigen steekproef v
 
 - [ ] P1 · Besluit: retourtekst gelijktrekken: refund-policy noemt 14 dagen en 25% herbevoorradingskosten, vastgesteld beleid is 30 dagen (juridische toets aanbevolen)
 - [ ] P1 · Besluit: verzendbelofte gelijktrekken: shipping-policy zegt vóór 16:00 dezelfde dag, feitenbestand zegt binnen 1 werkdag; oude policy-links op product, FAQ en 2.0-pagina's
-- [ ] P1 · Claims over blessurerisico en de 95% onderbouwen of begrenzen met bron direct erbij (op /pages/collection staat wel een bronregel)
-- [ ] P1 · Verifiëren: /en (gratis verzending boven €30, voor 22:00) en 2.0-zwart (€14,99/€17,99, voor 22:00) vergelijken met actuele bron
+- [x] P1 · Claims over blessurerisico en de 95% onderbouwen of begrenzen met bron direct erbij (op /pages/collection staat wel een bronregel)
+- [x] P1 · Verifiëren: /en (gratis verzending boven €30, voor 22:00) en 2.0-zwart (€14,99/€17,99, voor 22:00) vergelijken met actuele bron
 - [ ] P2 · Sportersaantal harmoniseren: collectie 3000+, /en 1000+, vastgesteld 3500+ (over-ons mijlpaal blijft); homepage-meta eerst herchecken
 - [ ] P2 · /en heeft Nederlandse hero/H1: vertaling en FAQPage controleren in broncode
 - [ ] P2 · Besluit: A/B-testpagina's /pages/gripsokken-2-0-a en -b (noindex,nofollow) staan in de sitemap; doel bevestigen voordat iets verandert
-- [ ] P2 · ProductGroup.description ("Wetenschappelijk bewezen effectiviteit") vergelijken met zichtbare tekst en bronnen
+- [x] P2 · ProductGroup.description ("Wetenschappelijk bewezen effectiviteit") vergelijken met zichtbare tekst en bronnen
 - [ ] P2 · Koopintentie /pages/collection versus /collections/gripsokken onderzoeken met Search Console-data; geen redirect of canonical zonder bewijs
 - [ ] P2 · Besluit: adviesprijs €19,95 (homepage retailblok) en €14,99/€17,99 (2.0-zwart) tegenover €17,95 in feitenbestand: Lars/Timo beslissen, niets automatisch wijzigen
 - [ ] P1 · Besluit: Website-profiel `higrip-vault`-skill corrigeren (verwijst naar oude vault) en daarna onafhankelijke QA op deze audit herhalen

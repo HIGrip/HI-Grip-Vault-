@@ -16,6 +16,8 @@ deadline: ""
 ---
 # GA4 SEO- en conversie-audit higrip.nl — oktober 2026
 
+> Map: [[Waar staat wat]]
+
 ## In het kort
 
 Onafhankelijke QA (Website, kaart t_370b3ad0): **CORRIGEER LICHT**. 12 getallen nagerekend en correct. Periode GA4: laatste 28 dagen t/m 27-10 (property 476032345); GSC 28-09 t/m 25-10. Perioden verschillen, dus geen directe klik-sessiereconciliatie. Het zijn eventcounts, geen geordende sessiefunnel. W11: 7 van 10 weken onder 100 sessies, alles indicatief, geen trendclaim. Technische en on-page SEO staan in [[2026-10-27-seo-audit-higrip-nl]] en worden hier niet herhaald.

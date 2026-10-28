@@ -21,6 +21,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Sterrenbeoordeling]]
 - [[Verbeterlus]]
 
+### Kanban-naleving
+- [[2026-10-27]]
+
 ### _archief
 - [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]
 

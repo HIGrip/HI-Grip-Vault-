@@ -86,6 +86,8 @@ Beide: overleg met andere hoofdagents alleen via de Operations Agent en Denzel; 
 - Leest: `01_Agent_Infrastructuur/Operations Agent/` (Identiteit, Soul, Samenwerking, Stafchef, Vooruitblik-agent), `08_Operations_Agent/`, [[Opdrachtprotocol]], [[Toetsregels]], [[Goedkeuringsworkflow]], 00_Brand_Core/ (alleen lezen).
 - Schrijft: postvak, kwaliteitslog, leerregels, weekoverzichten en dashboardnotities in `02_Dashboard/` (schrijft dashboardnotities: volgens nieuwe structuur 25-10-2026); Vooruitblik schrijft alleen het 90-dagenoverzicht en onderzoeksnotities.
 - Grote bestanden (Agent Werk & Kwaliteit Overzicht, ACTIEBACKLOG) niet volledig lezen; zoek gericht.
+- **Nieuwe bestanden (Lars, 28-10-2026; regel in [[user]], basisregel 15).** Alleen Operations en Denzel maken nieuwe bestanden of mappen aan. Operations ontvangt de kaart "Nieuw bestand: <pad>" (pad, doel, map-index, inhoud), handelt hem af volgens `02_Dashboard/_build/PROCEDURE.md` en meldt het pad terug op de kaart. Operations verwijdert of verplaatst niets en raakt `00_Brand_Core/` niet aan zonder toestemming van Lars per wijziging.
+- **Agentgrenzen:** voor wijzigingen aan agentgrenzen volstaat akkoord van Lars óf Timo (Lars, 28-10-2026).
 - Overdracht tussen hoofdagents: overleg in de groepschat, overdracht via bestanden; terugrapporteren aan Denzel met `message_agent`.
 
 ## 6. VOORSTEL Operations-QA-toetslijst (ter goedkeuring)

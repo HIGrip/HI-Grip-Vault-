@@ -16,6 +16,8 @@ deadline: ""
 ---
 # SEO-audit nieuwe live site higrip.nl — oktober 2026
 
+> Map: [[Waar staat wat]]
+
 ## In het kort
 
 Alleen-lezen audit door de Website Agent (technisch, on-page, eigen steekproef van 10 URL's). Kernpagina's (NL/EN home, product performance-gripsokken, collectie, over-ons) geven 200, zijn self-canonical, hebben wederkerige hreflang en JSON-LD zonder aggregateRating; robots.txt en sitemap.xml zijn bereikbaar, 404 werkt, HTTPS-headers staan goed. De P1-punten zijn inhoudelijk: beloftes en claims die niet kloppen met `Feiten & Actuele Staat`.

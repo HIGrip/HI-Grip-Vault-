@@ -14,13 +14,13 @@ bijgewerkt: 2026-10-20
 
 Elk ontwerp toets je hieraan. **Valt er één weg, dan is het geen HÏ Grip-design.**
 
-| # | Principe | Wat het betekent |
-|---|---|---|
-| 01 | **Performance** | Snelle, scherpe, krachtige foto's en video's. Beweging is zichtbaar — nooit statisch of poserend. |
-| 02 | **Whitespace** | Genoeg lucht rond tekst. Overzichtelijk, abstract en volwassen. |
-| 03 | **Emoties** | Inspelen op het gevoel dat sporters krijgen bij het sporten met onze producten. |
-| 04 | **Branding** | De driehoek keert terug: comfort, vertrouwen, innovatie. Altijd herkenbaar aanwezig. |
-| 05 | **Stijl** | Volwassen, innovatief, sportief, modern, energiek, performance-gericht — met grid patterns als handtekening. |
+| #   | Principe        | Wat het betekent                                                                                             |
+| --- | --------------- | ------------------------------------------------------------------------------------------------------------ |
+| 01  | **Performance** | Snelle, scherpe, krachtige foto's en video's. Beweging is zichtbaar — nooit statisch of poserend.            |
+| 02  | **Whitespace**  | Genoeg lucht rond tekst. Overzichtelijk, abstract en volwassen.                                              |
+| 03  | **Emoties**     | Inspelen op het gevoel dat sporters krijgen bij het sporten met onze producten.                              |
+| 04  | **Branding**    | De driehoek keert terug: comfort, vertrouwen, innovatie. Altijd herkenbaar aanwezig.                         |
+| 05  | **Stijl**       | Volwassen, innovatief, sportief, modern, energiek, performance-gericht — met grid patterns als handtekening. |
 
 Het Canva-merkmateriaal is de **werkbibliotheek**; het Canva-document *MERK & STRATEGIE* is de **regel**.
 
@@ -30,14 +30,14 @@ Het Canva-merkmateriaal is de **werkbibliotheek**; het Canva-document *MERK & ST
 
 De fundamentele ontwerpregels uit het Canva-document: zo voegen we alle visuele elementen samen tot één krachtig geheel. Ze gelden naast de vijf principes hierboven.
 
-| # | Principe | Wat het betekent |
-|---|---|---|
-| 01 | **60/30/10-regel** | De focus ligt eerst op het product of model (60), daarna op de features of de krachtige headline (30), tot slot op kleine afmakers zoals branding en effecten (10). |
-| 02 | **Performance in actie** | Alle content past bij de merkwaarden: jong, innovatief, sportief, modern, energiek en performance-gericht. Snelle, scherpe, krachtige foto's en video's waarin beweging zichtbaar is en zelfvertrouwen uitstraalt. Geen statische content. |
-| 03 | **Veel technische en innovatieve looks** | Subtiele technische details: dunne meetlijnen, kleine cijfers, technische labels, coördinaten en gridpatronen geven het product een high-end, ontwikkeld gevoel. Klein, strak en minimalistisch, zodat ze niet van het product afleiden. |
-| 04 | **Hoog contrast** | Product, tekst en modellen springen uit de content, zodat de focus op de kernboodschap ligt. Vooral zwart/wit met maximaal één krachtige accentkleur. |
-| 05 | **Genoeg whitespace / minimalistisch** | Genoeg lucht rond tekst en een design dat niet te druk is: overzichtelijk, abstract en volwassen. Het zit voor de hersenen logisch in elkaar. |
-| 06 | **Krachtige headlines** | Geen overvolle tekstvakken, maar een motiverende en energieke headline bij een design dat eruit popt (bijv. "RESULTAAT TELT" of "MOVE ON"). |
+| #   | Principe                                 | Wat het betekent                                                                                                                                                                                                                           |
+| --- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 01  | **60/30/10-regel**                       | De focus ligt eerst op het product of model (60), daarna op de features of de krachtige headline (30), tot slot op kleine afmakers zoals branding en effecten (10).                                                                        |
+| 02  | **Performance in actie**                 | Alle content past bij de merkwaarden: jong, innovatief, sportief, modern, energiek en performance-gericht. Snelle, scherpe, krachtige foto's en video's waarin beweging zichtbaar is en zelfvertrouwen uitstraalt. Geen statische content. |
+| 03  | **Veel technische en innovatieve looks** | Subtiele technische details: dunne meetlijnen, kleine cijfers, technische labels, coördinaten en gridpatronen geven het product een high-end, ontwikkeld gevoel. Klein, strak en minimalistisch, zodat ze niet van het product afleiden.   |
+| 04  | **Hoog contrast**                        | Product, tekst en modellen springen uit de content, zodat de focus op de kernboodschap ligt. Vooral zwart/wit met maximaal één krachtige accentkleur.                                                                                      |
+| 05  | **Genoeg whitespace / minimalistisch**   | Genoeg lucht rond tekst en een design dat niet te druk is: overzichtelijk, abstract en volwassen. Het zit voor de hersenen logisch in elkaar.                                                                                              |
+| 06  | **Krachtige headlines**                  | Geen overvolle tekstvakken, maar een motiverende en energieke headline bij een design dat eruit popt (bijv. "RESULTAAT TELT"                                                                                                               |
 
 De visuele elementen komen terug op alle communicatiemiddelen: van visitekaartjes, verpakking, labels en tape tot bedrijfskleding, gevelreclame, roll-up banners en event-displays. Zo gaan sporters het merk herkennen.
 
@@ -142,11 +142,11 @@ Kleine functionele elementen voor webshop, mailings en slides. Zelfde line-art a
 
 **Waar het heen gaat:** webshop (USP-balk, productfeatures en checkout) · socials (één icoon per slide) · sales (sell-sheets en slides, tekst kort).
 
-| Element | Regel |
-|---|---|
-| **CTA-knop** | Pill-vorm met chevron. Wit op zwart, zwart op wit. **Nooit gevuld met accentkleur.** |
-| **Iconen in cirkel** | Vinkje, kruisje, mail, globe, pijl. Standaard voor USP's en statusmeldingen. |
-| **Iconen zonder cirkel** | Dezelfde vijf, kaal. Voor footers, formulieren en compacte regels. |
+| Element                  | Regel                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| **CTA-knop**             | Pill-vorm met chevron. Wit op zwart, zwart op wit of gevuld met accentkleur. |
+| **Iconen in cirkel**     | Vinkje, kruisje, mail, globe, pijl. Standaard voor USP's en statusmeldingen. |
+| **Iconen zonder cirkel** | Dezelfde vijf, kaal. Voor footers, formulieren en compacte regels.           |
 
 **Stroke & maatvoering:** 96×96 canvas, 2px stroke, vierkante uiteinden, icoon vult ±80% van het canvas. Schalen doe je proportioneel.
 

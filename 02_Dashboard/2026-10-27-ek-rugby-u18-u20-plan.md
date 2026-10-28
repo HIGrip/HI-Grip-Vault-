@@ -88,17 +88,17 @@ De fasering van de vier hoeken is verenigbaar. Geen hoek heeft een eigen datum d
 
 Alle uren zijn schattingen van de hoeken, niemand heeft ze gemeten. Er is geen uurtarief aangenomen: kosten in euro = uren × overeengekomen tarief [HÏ GRIP VULT IN]. De kostprijs per paar ontbreekt in de vault: totaal kosten clubproef = aantal × kostprijs [LARS VULT IN] + verzending/verpakking.
 
-| Post | Lean | Standaard | Uitgebreid |
-|---|---|---|---|
-| Social (uur) | 12 | 12–18 | 18 |
-| Design incl. beeld (uur) | 11 | 11–19 | 19 |
-| Website bouw/meting/QA (uur) | 12 | 12–24 | 24 |
-| Partnership (uur) | 0 | 4–6 (12 paar, 1 club) | 15–20 (60 paar, 4 clubs) |
-| **Totaal uren** | **35** | **39–67** | **76–81** |
-| Cash: advertentie | €0 | €0 | €150 (optie, na akkoord; enige geplande cash) |
-| Cash: sokken clubproef | €0 | 12 × kostprijs | 60 × kostprijs |
-| Cash: vervolg (foto/stock/tooling) | €0 | €0 | €0, eerst overleg |
-| Verkoopwaarde sokken clubproef (12/60 × €17,95) | — | €215,40 | €1.077,00 |
+| Post                                            | Lean   | Standaard             | Uitgebreid                                    |
+| ----------------------------------------------- | ------ | --------------------- | --------------------------------------------- |
+| Social (uur)                                    | 12     | 12–18                 | 18                                            |
+| Design incl. beeld (uur)                        | 11     | 11–19                 | 19                                            |
+| Website bouw/meting/QA (uur)                    | 12     | 12–24                 | 24                                            |
+| Partnership (uur)                               | 0      | 4–6 (12 paar, 1 club) | 15–20 (60 paar, 4 clubs)                      |
+| **Totaal uren**                                 | **35** | **39–67**             | **76–81**                                     |
+| Cash: advertentie                               | €0     | €0                    | €150 (optie, na akkoord; enige geplande cash) |
+| Cash: sokken clubproef                          | €0     | 12 × kostprijs        | 60 × kostprijs                                |
+| Cash: vervolg (foto/stock/tooling)              | €0     | €0                    | €0, eerst overleg                             |
+| Verkoopwaarde sokken clubproef (12/60 × €17,95) | —      | €215,40               | €1.077,00                                     |
 
 Opmerkingen:
 - Het tussenscenario "30 paar, 2 clubs" (Partnership, €538,50 verkoopwaarde) valt tussen Standaard en Uitgebreid.

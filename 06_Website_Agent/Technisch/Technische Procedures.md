@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-10-29
 ---
 
 # Technische Procedures — Website Agent
@@ -12,7 +12,9 @@ bijgewerkt: 2026-10-01
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-10-26 (lars, bevestigd in chat):** nieuw werkthema is **`202669916487` "Live HÏ Grip WEBSITE + contactpagina"** (unpublished; bevat o.a. de A/B-templates `page.ab-a`, `product.ab-a`, `product.ab-b`). Live is nu **`202667458887`** ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list` op 26-10). `202398040391` en `202394272071` zijn unpublished. Op 26-10 is in `202398040391` ook de fotogrootte-slider aan `gripsocks2-photo` toegevoegd (onschadelijk, default = oude grootte).
+> **Bijgewerkt 2026-10-29:** werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `C:\Users\Test\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
+>
+> *Vorige stand — bijgewerkt 2026-10-26 (lars, bevestigd in chat):* nieuw werkthema is **`202669916487` "Live HÏ Grip WEBSITE + contactpagina"** (unpublished; bevat o.a. de A/B-templates `page.ab-a`, `product.ab-a`, `product.ab-b`). Live is nu **`202667458887`** ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list` op 26-10). `202398040391` en `202394272071` zijn unpublished. Op 26-10 is in `202398040391` ook de fotogrootte-slider aan `gripsocks2-photo` toegevoegd (onschadelijk, default = oude grootte).
 >
 > *Vorige stand — bijgewerkt 2026-10-12 (lars):* nieuw werkthema is **`202398040391` "Bijgewerkte kopie van AI website workspace 2.0"** (opvolger van `201133490503`). Live is intussen `202394272071` ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list --json` op 12-10). `201132507463` is nu unpublished. Zie de tabel hieronder.
 >
@@ -26,9 +28,9 @@ bijgewerkt: 2026-10-01
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Werkthema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (26-10) | unpublished | **Ja — het enige toegestane thema** |
-| Live op www.higrip.nl ("Live HÏ Grip WEBSITE") | `202667458887` (26-10) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Alle overige — oude werkthema's (`202398040391` "Bijgewerkte kopie van AI website workspace 2.0", `201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`202394272071`, `201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
+| Werkthema ("WERKTHEMA") | `203461034311` (29-10, gezien met `theme list`; was `202669916487`) | unpublished | **Ja — het enige toegestane thema** |
+| Live op www.higrip.nl ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (29-10, gezien met `theme list`; was `202667458887`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Alle overige — oude werkthema's (`202398040391` "Bijgewerkte kopie van AI website workspace 2.0", `201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`202667458887`, `202394272071`, `201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 

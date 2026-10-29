@@ -31,7 +31,7 @@ Alleen-lezen audit door de Website Agent (technisch, on-page, eigen steekproef v
 - [x] P1 · Claims over blessurerisico en de 95% onderbouwen of begrenzen met bron direct erbij (op /pages/collection staat wel een bronregel)
 - [x] P1 · Verifiëren: /en (gratis verzending boven €30, voor 22:00) en 2.0-zwart (€14,99/€17,99, voor 22:00) vergelijken met actuele bron
 - [ ] P2 · Sportersaantal harmoniseren: collectie 3000+, /en 1000+, vastgesteld 3500+ (over-ons mijlpaal blijft); homepage-meta eerst herchecken
-- [ ] P2 · /en heeft Nederlandse hero/H1: vertaling en FAQPage controleren in broncode
+- [x] P2 · /en heeft Nederlandse hero/H1: vertaling en FAQPage controleren in broncode
 - [ ] P2 · Besluit: A/B-testpagina's /pages/gripsokken-2-0-a en -b (noindex,nofollow) staan in de sitemap; doel bevestigen voordat iets verandert
 - [x] P2 · ProductGroup.description ("Wetenschappelijk bewezen effectiviteit") vergelijken met zichtbare tekst en bronnen
 - [ ] P2 · Koopintentie /pages/collection versus /collections/gripsokken onderzoeken met Search Console-data; geen redirect of canonical zonder bewijs

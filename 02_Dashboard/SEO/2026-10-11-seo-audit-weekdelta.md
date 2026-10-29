@@ -40,7 +40,7 @@ Alle open acties uit [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run
 - [ ] P1 · Beleid plakken in Instellingen → Beleid (refund, verzending, voorwaarden art. 4 en 6) uit `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`
 - [ ] P1 · Homepage-meta in Online Store → Voorkeuren van 3000+ naar 3500+ sporters zetten
 - [ ] P1 · Collectie-USP "3000+ sporters gingen je voor" naar 3500+ in de thema-editor (live `collection.json` is via de CLI geweigerd)
-- [ ] P2 · EN-H1 van de drie sportpagina's herstellen: titelvelden in de sport-hero invullen en "Grip socks for" als EN-vertaling registreren
+- [x] P2 · EN-H1 van de drie sportpagina's herstellen: titelvelden in de sport-hero invullen en "Grip socks for" als EN-vertaling registreren
 - [ ] P2 · Wekelijkse check op verouderde EN-vertalingen met feiten (tijden, bedragen, termijnen, aantallen) toevoegen aan de SEO-regressiecheck
 - [ ] P3 · /pages/ons-verhaal uitbouwen tot een echt oprichtersverhaal: sinds de demotekst weg is staan er nog 85 woorden (waarom gripsokken, wat de 2.0 anders maakt, links naar /pages/over-ons en de 2.0)
 - [x] P1 · De routine Actiecontrole nakijken: CONTROLE.json staat sinds 26-9 stil, dus opgeloste punten (o.a. /en/-H1 en /en/-title in de backlog) worden niet bevestigd of afgevinkt

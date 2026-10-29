@@ -57,11 +57,11 @@ Open acties uit [[2026-10-08-seo-aeo-geo-aio-sxo-audit]] en [[2026-09-25-seo-aud
 - [ ] P1 · Besluit: socialprofielen en KvK-nummer van de footer (Instagram, TikTok, LinkedIn, Trustpilot, KvK) in het feitenbestand vastleggen, zodat ze als `sameAs` en `contactPoint` in het Organization-schema mogen
 - [ ] P1 · GA4-aankopen (5, €118,51 over 28 dagen) naast Shopify-orders van dezelfde periode leggen en pas dan conversieconclusies op GA4 baseren
 - [ ] P1 · Het merkcijfer 4,6 ★ met bron Trustpilot en link tonen op de homepage en de 2.0-productpagina; nu staat daar "★★★★½" zonder cijfer of bron
-- [ ] P2 · `Organization.url` op de sportpagina's en `/pages/over-ons` naar de homepage laten wijzen (nu wijst het naar de pagina zelf) en `https://schema.org` gebruiken
+- [x] P2 · `Organization.url` op de sportpagina's en `/pages/over-ons` naar de homepage laten wijzen (nu wijst het naar de pagina zelf) en `https://schema.org` gebruiken
 - [x] P2 · Het FAQ-verzorgingsantwoord van "u/uw" naar "je/jouw" zetten en het missie-antwoord gelijktrekken met "Wij versnellen de beweging van iedere sporter."
 - [ ] P2 · Filter het botverkeer (VS en China) uit GA4 en bereken conversie alleen op NL-sessies
 - [x] P2 · `/products/hi-grip-gripsokken-1` (1.091 vertoningen, CTR 0,82%) 301'en naar de canonieke productpagina, of de titel en meta verbeteren
-- [ ] P2 · EAN's als barcode in Shopify invullen, zodat `gtin` en `itemCondition` in het Product-schema en de Merchant-feed kunnen
+- [x] P2 · EAN's als barcode in Shopify invullen, zodat `gtin` en `itemCondition` in het Product-schema en de Merchant-feed kunnen
 - [ ] P2 · Alle 23 blogs koppelen aan de sportpagina's en `/collections/gripsokken`; nu heeft geen enkel artikel een link naar een sport- of productpagina
 - [ ] P2 · Article-schema van de blogs vullen: `articleBody` is nu alleen een hashtag en `description` is leeg; type `BlogPosting`
 - [ ] P2 · `/collections/all` en `/pages/collection` via canonical of 301 laten verwijzen naar `/collections/gripsokken` (kannibalisatie op "gripsokken")

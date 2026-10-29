@@ -2051,6 +2051,84 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "beoordelen of de nul-bestellingenweek ruis is of een echt signaal, en volgende week bevestigen of dit doorzet"
  },
+ "2026-10-27-ek-rugby-u18-u20-plan#022f1382": {
+  "beoordeeld": "2026-10-29",
+  "claude": "deels",
+  "wat_claude_doet": "conceptaanvulling voor de rugbylanding in het werkthema en UTM-voorstel rugby_praag_2026",
+  "wat_jij_doet": "live zetten, mobiel controleren en de UTM met consent testen"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#164c7e1e": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "concept kiezen (Drie vakken, één rugbyweek, of alternatief)"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#1d791e8e": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "capaciteit, uurtarief en scenario (Lean/Standaard/Uitgebreid) vaststellen"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#26cef839": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "herkomst, rechten en leeftijd van de rugbybeelden vaststellen"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#36868fbd": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "48-uurs meting en opschoning van de toernooidatums zodra de termijn daar is",
+  "wat_jij_doet": "niets, loopt automatisch mee"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#389e6fb7": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten: altijd een persoon in beeld of de schets zonder persoon"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#4a8ec8bf": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "kostprijs invullen en voorraad/maten 2.0 bevestigen"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#80c43d47": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets (conceptmail bestaat al)",
+  "wat_jij_doet": "Rugby Nederland daadwerkelijk benaderen en versturen"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#90266496": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "aftrapmoment bevestigen (13:30 of 11:00)"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#9717b124": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "eigen beeldmateriaal (macro/stills) en founders-handen laten maken"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#ade5ad04": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "conceptkalender 4-15 nov klaarzetten in Buffer",
+  "wat_jij_doet": "plannen en publiceren"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#cf07b12b": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten of de €150 advertentieoptie wordt ingezet"
+ },
+ "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "conceptvoorstel voor afgezwakte, onderbouwde tekst i.p.v. de absolute claims",
+  "wat_jij_doet": "concept controleren en live zetten"
+ },
  "2026-10-27-seo-audit-higrip-nl#23ee758a": {
   "beoordeeld": "2026-10-28",
   "claude": "deels",
@@ -2098,6 +2176,72 @@
   "claude": "deels",
   "wat_claude_doet": "overzicht en conceptteksten voorbereiden voor homepage-meta, collectie-USP en /en op 3500+",
   "wat_jij_doet": "homepage-meta aanpassen in Online Store → Voorkeuren en de collectie-USP in de thema-editor, en live zetten"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "analyse van de piek 26-27 okt (bot/campagne/preview) als notitie",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "SERP-intentie-analyse voor de zoektermen als notitie",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "consent-/key-event-instellingen zelf controleren in GTM/Shopify-admin"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "onderzoek naar VS-verkeer als notitie",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
+  "beoordeeld": "2026-10-29",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor GA4-filterconfiguratie (intern/preview/admin) als document in de vault",
+  "wat_jij_doet": "filter toepassen in het GA4-adminpaneel"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#5613b9ee": {
+  "beoordeeld": "2026-10-29",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluit nemen: eerst meetvalidatie of direct inzetten op 2.0 zwart/1.0"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "onderzoek naar herkomst /en-verkeer als notitie",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "het onderzoek herhalen zodra de termijn verstreken is",
+  "wat_jij_doet": "niets, loopt automatisch mee in een volgende routine"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "uitzoeken van het redirect-/URL-verschil als notitie",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
+  "beoordeeld": "2026-10-29",
+  "claude": "ja",
+  "wat_claude_doet": "branded vs non-branded-rapport uit GSC-zoektermen",
+  "wat_jij_doet": "concept controleren"
+ },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#e37d3694": {
+  "beoordeeld": "2026-10-29",
+  "claude": "deels",
+  "wat_claude_doet": "checkout-walkthrough met een browser proberen en bevindingen vastleggen",
+  "wat_jij_doet": "een echte testaankoop op desktop en mobiel bevestigen"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

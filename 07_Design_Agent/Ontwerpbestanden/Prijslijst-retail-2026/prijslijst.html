@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>HÏ Grip Prijslijst Retail</title>
+<style>
+  @font-face { font-family: 'Poppins'; font-weight: 400; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 500; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Medium.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-SemiBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 700; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Bold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-ExtraBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Black.ttf'); }
+
+  :root {
+    --hi-black: #0A0A0A;
+    --hi-white: #FFFFFF;
+    --hi-yellow: #CCFF00;
+    --hi-near-black: #111111;
+    --hi-warm-dark: #1a1a1a;
+    --hi-titanium: #909194;
+    --ink-soft: #55565a;
+    --rule: #e6e6e6;
+  }
+
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--hi-white); }
+  body {
+    width: 210mm; height: 297mm; overflow: hidden;
+    font-family: 'Poppins', system-ui, sans-serif;
+    color: var(--hi-black);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page { position: relative; height: 297mm; overflow: hidden; padding: 12mm 14mm 10mm; display: flex; flex-direction: column; }
+
+  /* kop */
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 2.6mm; }
+  .brand img { height: 8.5mm; }
+  .brand span { font-weight: 800; font-size: 15pt; letter-spacing: -0.02em; }
+  .doc { text-align: right; font-size: 7.5pt; line-height: 1.45; color: var(--ink-soft); }
+  .doc b { display: block; color: var(--hi-black); font-weight: 600; font-size: 8.5pt; }
+
+  /* hero */
+  .hero { display: grid; grid-template-columns: 1fr 86mm; align-items: center; margin-top: 4mm; height: 58mm; }
+  h1 { font-weight: 900; font-size: 37pt; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase; }
+  h1 em { font-style: normal; color: var(--hi-titanium); }
+  .lead { margin-top: 4mm; font-size: 9pt; line-height: 1.55; max-width: 84mm; color: var(--ink-soft); }
+  .lead strong { color: var(--hi-black); font-weight: 600; }
+  .socks { position: relative; height: 100%; }
+  .socks img { position: absolute; height: 50mm; }
+  .socks .s-wit { right: 9mm; top: -3mm; }
+  .socks .s-zwart { left: 13mm; top: -1mm; z-index: 1; }
+
+  /* features + assortiment */
+  .info { display: grid; grid-template-columns: 1fr 76mm; gap: 12mm; margin-top: 5mm; }
+  h2 { font-weight: 800; font-size: 10pt; text-transform: uppercase; letter-spacing: -0.01em; padding-bottom: 2.4mm; border-bottom: 1.4pt solid var(--hi-black); }
+  .feat { list-style: none; }
+  .feat li { display: grid; grid-template-columns: 8mm 1fr; padding: 1.5mm 0; border-bottom: 0.5pt solid var(--rule); font-size: 8.2pt; line-height: 1.4; color: var(--ink-soft); }
+  .feat li span { font-weight: 600; color: var(--hi-titanium); font-size: 7.5pt; padding-top: 0.3mm; }
+  .feat li b { display: block; color: var(--hi-black); font-weight: 700; font-size: 8.8pt; }
+
+  .range { width: 100%; border-collapse: collapse; font-size: 7.6pt; }
+  .range th { text-align: left; font-weight: 500; color: var(--hi-titanium); font-size: 6.8pt; padding: 2.2mm 0 1.4mm; }
+  .range td { padding: 1.2mm 0; border-bottom: 0.5pt solid var(--rule); font-variant-numeric: tabular-nums; }
+  .range td:first-child { font-weight: 600; }
+  .range .dot { display: inline-block; width: 2.4mm; height: 2.4mm; border-radius: 50%; margin-right: 1.6mm; vertical-align: -0.2mm; border: 0.6pt solid var(--hi-black); }
+  .range .dot.z { background: var(--hi-black); }
+  .range td.ean { color: var(--ink-soft); text-align: right; }
+  .advies { display: flex; justify-content: space-between; align-items: baseline; margin-top: 3.4mm; }
+  .advies small { font-size: 7.6pt; color: var(--ink-soft); }
+  .advies strong { font-weight: 800; font-size: 17pt; letter-spacing: -0.03em; }
+  .advies strong i { font-style: normal; font-weight: 500; font-size: 7.2pt; letter-spacing: 0; color: var(--ink-soft); margin-left: 1mm; }
+
+  /* staffel */
+  .prices { margin-top: 5mm; background: var(--hi-near-black); color: var(--hi-white); border-radius: 5mm; padding: 5.5mm 8mm 4.5mm; }
+  .prices header { display: flex; justify-content: space-between; align-items: baseline; }
+  .prices h2 { border: 0; padding: 0; font-size: 15pt; font-weight: 900; letter-spacing: -0.03em; }
+  .prices header p { font-size: 7.6pt; color: var(--hi-titanium); }
+  .tier { width: 100%; border-collapse: collapse; margin-top: 4mm; font-variant-numeric: tabular-nums; }
+  .tier th { font-weight: 500; font-size: 7pt; color: var(--hi-titanium); text-align: right; padding-bottom: 2mm; border-bottom: 0.6pt solid #2c2c2c; }
+  .tier th:first-child, .tier td:first-child { text-align: left; }
+  .tier td { text-align: right; padding: 1.35mm 0; border-bottom: 0.5pt solid #232323; font-size: 9.5pt; }
+  .tier tr:last-child td { border-bottom: 0; }
+  .tier td:first-child { color: #d9d9d9; }
+  .tier td.p { font-weight: 700; font-size: 11pt; }
+  .tier td.m { color: #d9d9d9; }
+  .tier td.pct { font-weight: 800; color: var(--hi-yellow); font-size: 10.5pt; width: 22mm; }
+  .prices footer { margin-top: 3mm; font-size: 6.8pt; line-height: 1.5; color: var(--hi-titanium); }
+
+  /* onder */
+  .deal { display: grid; grid-template-columns: auto 1fr; gap: 9mm; align-items: center; margin-top: 5mm; }
+  .deal .big { font-weight: 900; font-size: 40pt; letter-spacing: -0.05em; line-height: 0.8; }
+  .deal .big small { display: block; font-size: 8.5pt; font-weight: 700; letter-spacing: -0.01em; text-transform: uppercase; margin-top: 2.6mm; line-height: 1.25; }
+  .deal ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6mm; font-size: 7.9pt; line-height: 1.45; color: var(--ink-soft); }
+  .deal ul b { display: block; color: var(--hi-black); font-weight: 700; font-size: 8.4pt; }
+
+  .foot { margin-top: auto; padding-top: 3.5mm; border-top: 0.5pt solid var(--rule); display: flex; justify-content: space-between; align-items: flex-end; font-size: 7.6pt; line-height: 1.5; color: var(--ink-soft); }
+  .foot b { color: var(--hi-black); font-weight: 700; font-size: 8.6pt; }
+  .foot .r { text-align: right; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="top">
+    <div class="brand"><img src="img/logo.png" alt=""><span>HÏ GRIP</span></div>
+    <div class="doc"><b>Prijslijst retail 2026</b>Voor sport- en speciaalzaken</div>
+  </div>
+
+  <section class="hero">
+    <div>
+      <h1>Performance<br>Grip Socks <em>2.0</em></h1>
+      <p class="lead">De gripsok voor sporters die doorgaan waar anderen stoppen. <strong>Ligt al in meerdere Sport 2000-winkels</strong>, met herhaalbestellingen. 3000+ sporters en een 4,6 op Trustpilot.</p>
+    </div>
+    <div class="socks">
+      <img class="s-wit" src="img/wit-cut.png" alt="Performance Grip Socks 2.0 wit">
+      <img class="s-zwart" src="img/zwart-cut.png" alt="Performance Grip Socks 2.0 zwart">
+    </div>
+  </section>
+
+  <section class="info">
+    <div>
+      <h2>Wat hem anders maakt</h2>
+      <ol class="feat">
+        <li><span>01</span><div><b>Compressie en Coolmax</b>Houdt de voet ondersteund en droog.</div></li>
+        <li><span>02</span><div><b>Grip op de drukpunten</b>Het grippatroon volgt de drukpunten van de voet, voor meer en betere grip.</div></li>
+        <li><span>03</span><div><b>Special cushioning</b>Extra ondersteuning bij landingen en rond de enkel.</div></li>
+        <li><span>04</span><div><b>Versterkte teen en hiel</b>Precies waar gewone gripsokken als eerste scheuren.</div></li>
+        <li><span>05</span><div><b>Naadloze teenzone</b>Geen naad onder de tenen, voor extra comfort.</div></li>
+      </ol>
+    </div>
+    <div>
+      <h2>Assortiment</h2>
+      <table class="range">
+        <thead><tr><th>Kleur</th><th>Maat</th><th>Art.nr.</th><th style="text-align:right">EAN</th></tr></thead>
+        <tbody>
+          <tr><td><i class="dot"></i>Wit</td><td>35/38</td><td>PGSW201</td><td class="ean">9110024809211</td></tr>
+          <tr><td><i class="dot"></i>Wit</td><td>39/42</td><td>PGSW202</td><td class="ean">9110024809228</td></tr>
+          <tr><td><i class="dot"></i>Wit</td><td>43/47</td><td>PGSW203</td><td class="ean">9110024809235</td></tr>
+          <tr><td><i class="dot z"></i>Zwart</td><td>35/38</td><td>PGSZ201</td><td class="ean">9110024809242</td></tr>
+          <tr><td><i class="dot z"></i>Zwart</td><td>39/42</td><td>PGSZ202</td><td class="ean">9110024809259</td></tr>
+          <tr><td><i class="dot z"></i>Zwart</td><td>43/47</td><td>PGSZ203</td><td class="ean">9110024809266</td></tr>
+        </tbody>
+      </table>
+      <div class="advies"><small>Adviesverkoopprijs</small><strong>€19,95<i>incl. btw</i></strong></div>
+    </div>
+  </section>
+
+  <section class="prices">
+    <header>
+      <h2>INKOOPPRIJZEN</h2>
+      <p>Per paar, excl. btw · bestellen vanaf 6 paar</p>
+    </header>
+    <table class="tier">
+      <thead><tr><th>Aantal paar per bestelling</th><th>Inkoop per paar</th><th>Jouw marge per paar</th><th>Marge</th></tr></thead>
+      <tbody>
+        <tr><td>6 t/m 59</td><td class="p">€7,80</td><td class="m">€8,69</td><td class="pct">53%</td></tr>
+        <tr><td>60 t/m 119</td><td class="p">€7,40</td><td class="m">€9,09</td><td class="pct">55%</td></tr>
+        <tr><td>120 t/m 239</td><td class="p">€7,00</td><td class="m">€9,49</td><td class="pct">58%</td></tr>
+        <tr><td>240 t/m 359</td><td class="p">€6,60</td><td class="m">€9,89</td><td class="pct">60%</td></tr>
+        <tr><td>360 t/m 499</td><td class="p">€6,10</td><td class="m">€10,39</td><td class="pct">63%</td></tr>
+        <tr><td>500+</td><td class="p">€5,10</td><td class="m">€11,39</td><td class="pct">69%</td></tr>
+      </tbody>
+    </table>
+    <footer>De staffel geldt voor het totale aantal paar in één bestelling, kleuren en maten gemengd. Marge berekend op de adviesverkoopprijs van €16,49 excl. btw.</footer>
+  </section>
+
+  <section class="deal">
+    <div class="big">20%<small>Korting op je<br>eerste bestelling,<br>bovenop de staffel</small></div>
+    <ul>
+      <li><b>Ophanghaakjes</b>Op verzoek leveren we de sokken met ophanghaakje, klaar voor je wand.</li>
+      <li><b>Mixen mag</b>Combineer wit en zwart en alle maten in één bestelling.</li>
+      <li><b>Eerst voelen?</b>Vraag een gratis sample aan, binnen 1 werkdag verzonden.</li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    <div><b>Timo Heijligers</b><br>Co-founder HÏ Grip<br>+31 6 40 81 91 33 · timo@higrip.nl</div>
+    <div class="r"><b>higrip.nl</b><br>KVK 97210129</div>
+  </div>
+
+</div>
+</body>
+</html>

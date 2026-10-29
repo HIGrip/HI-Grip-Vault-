@@ -28,7 +28,7 @@ Zie ook: [[Brand Identity Overview]] · [[Brand Voice & Tone of Voice]] · [[Log
 | Kleuren | Zwart, Wit (2 kleuren) | One-pagers 2.0, [[Strategische Keuzes]] |
 | Maatvoering | 35–38 · 39–42 · **43–47** | EAN-lijst + Shopify-productpagina's. **Bevestigd door Lars 15 sep 2026.** ⚠️ De one-pagers 2.0 zeggen 43–46 — dat is fout, corrigeren. ([[Strategische Keuzes]] is al gecorrigeerd.) |
 | Klantenaantal | **3000+ sporters** | **Bevestigd door Lars 15 sep 2026.** ⚠️ Site zegt on-page 2.000+, meta descriptions 1.500+ — beide bijwerken. |
-| Adviesprijs retail | **€ 17,95** | Besluit Lars 2-10-2026: gelijk aan de webshopprijs. ⚠️ De one-pagers 2.0 noemen € 17,99 — corrigeren. |
+| Adviesprijs retail | **€ 19,95** incl. btw (€ 16,49 excl.) | Besluit 29-10-2026, vervangt € 17,95 van 2-10-2026. Webshop blijft € 17,95. ⚠️ De one-pagers 2.0 noemen € 17,99 — corrigeren. |
 | Coolmax-aandeel | 30% | One-pagers 2.0 |
 | Compressie | 15–20 mmHg | Productbeschrijving, [[Stand van Zaken — Werkdossier 2026-09-04]] |
 | Reviewscore | 4,6 ★ (Trustpilot) | One-pagers 2.0 · bevestigd als merkcijfer door Lars 2-10-2026 |
@@ -181,7 +181,7 @@ wisselen maar twee dingen: de accentkleur en drie tekstblokken.
 | Fout | Waar | Correctie |
 |---|---|---|
 | Maat **43–46** | Beide 2.0-one-pagers ([[Strategische Keuzes]] al gecorrigeerd) | **43–47** |
-| Adviesprijs **€ 17,99** | Statbalk van alle 2.0-one-pagers | **€ 17,95** (besluit Lars 2-10-2026) |
+| Adviesprijs **€ 17,99** | Statbalk van alle 2.0-one-pagers | **€ 19,95** (besluit 29-10-2026) |
 | Klantenaantal 2.000+ / 1.500+ | Site on-page / meta descriptions | **3000+** |
 | "Extra **beschermag** op hiel" | Beide 2.0-one-pagers, kaart "Geen blaren" | "bescherming" |
 | "**ADMEND** VERMOGEN" | Infographic 2.0 | "ADEMEND" |

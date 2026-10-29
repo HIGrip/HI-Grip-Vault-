@@ -1,0 +1,1174 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_kjE9nV": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_aFrm6F": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/gripsokken_wit.jpg",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 0,
+            "background_color": "",
+            "toggle_overlay": true,
+            "overlay_color": "#00000036",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_bKfBrU": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 33,
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "custom",
+                "custom_width_mobile": 100,
+                "height": "custom",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "rgba(0,0,0,0)",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 33,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_aQQ3Mf": {
+                  "type": "text",
+                  "name": "Title",
+                  "settings": {
+                    "text": "<h1><strong>Veelgestelde Vragen</strong></h1>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
+                    "type_preset": "h2",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_EJ4Xiw": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Antwoord op jouw vragen & meer.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h4",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_aQQ3Mf",
+                "text_EJ4Xiw"
+              ]
+            }
+          },
+          "block_order": [
+            "group_bKfBrU"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_aFrm6F"
+      ],
+      "name": "t:names.slideshow",
+      "settings": {
+        "display_mode": "full_frame",
+        "section_width": "full-width",
+        "full_frame_on_mobile": false,
+        "slideshow_gap": 12,
+        "corner_radius": 0,
+        "slide_height": "large",
+        "content_position": "on-media",
+        "background_color": "",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "dots",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_direction": "column",
+        "gap": 0,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "faq_geo_hg01": {
+      "type": "faq-geo",
+      "blocks": {
+        "fact_1": {
+          "type": "fact",
+          "settings": {
+            "title": "Binnen 1 werkdag verzonden",
+            "text": "Via PostNL."
+          }
+        },
+        "fact_2": {
+          "type": "fact",
+          "settings": {
+            "title": "Gratis verzending vanaf €35",
+            "text": "Daaronder €4,50 per bestelling."
+          }
+        },
+        "fact_3": {
+          "type": "fact",
+          "settings": {
+            "title": "30 dagen retour",
+            "text": "Na ontvangst, via de retourpagina."
+          }
+        },
+        "fact_4": {
+          "type": "fact",
+          "settings": {
+            "title": "Siliconen grippatroon",
+            "text": "Onderaan de sok, tegen schuiven in je schoen."
+          }
+        },
+        "cat_1": {
+          "type": "category",
+          "settings": {
+            "title": "Over gripsokken"
+          }
+        },
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat zijn gripsokken?",
+            "answer": "<p>Gripsokken zijn sportsokken met een antislip grippatroon van siliconen aan de onderzijde. Dat patroon houdt je voet op zijn plek in je schoen, zodat je minder schuift bij sprinten, stoppen en van richting veranderen. HÏ Grip gripsokken zijn gemaakt van spandex, katoen, nylon en polyester.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe werken gripsokken?",
+            "answer": "<p>Het siliconen grippatroon onder de sok zorgt voor wrijving tussen je voet en de binnenkant van je schoen. Daardoor schuift je voet minder heen en weer bij stoppen, draaien en versnellen. Gripsokken vervangen je schoenen niet: ze verbeteren de aansluiting tussen sok en schoen.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "question": "Zijn gripsokken wetenschappelijk onderzocht?",
+            "answer": "<p>Ja, er is onderzoek naar gripsokken in het algemeen. Dat onderzoek meet een wrijvingscoëfficiënt van 1,17 voor gripsokken tegenover 0,60 voor gewone sokken. Let op: die studies testten gripsokken als categorie en niet specifiek HÏ Grip. De bronnen staan onderaan deze pagina.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat is het verschil tussen gripsokken en gewone sportsokken?",
+            "answer": "<p>Het verschil zit onderaan: gewone sportsokken hebben een gladde zool, HÏ Grip gripsokken hebben een siliconen grippatroon. Daardoor blijft je voet beter op zijn plek in je schoen. Voor de rest zijn het gewoon sportsokken: elastisch, ademend en gemaakt voor intensief gebruik.</p>"
+          }
+        },
+        "cat_2": {
+          "type": "category",
+          "settings": {
+            "title": "Sport en gebruik"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "question": "Voor welke sporten zijn HÏ Grip gripsokken geschikt?",
+            "answer": "<p>HÏ Grip richt zich op sporten met veel stoppen, draaien en versnellen: voetbal, tennis, padel en rugby. Per sport lees je meer op de pagina's voor <a href=\"/pages/gripsokken-voor-voetbal\">voetbal</a>, <a href=\"/pages/gripsokken-voor-tennis\">tennis</a> en <a href=\"/pages/gripsokken-voor-padel\">padel</a>, of via <a href=\"/pages/ontdek-jouw-sport\">Ontdek jouw sport</a>.</p>"
+          }
+        },
+        "faq_6": {
+          "type": "faq",
+          "settings": {
+            "question": "Welke HÏ Grip gripsokken moet ik kiezen?",
+            "answer": "<p>Voor de meeste sporters is de Performance Gripsokken 2.0 de aanbevolen keuze, verkrijgbaar in wit en zwart. Bekijk alle opties in de <a href=\"/collections/gripsokken\">webshop</a>.</p>"
+          }
+        },
+        "faq_7": {
+          "type": "faq",
+          "settings": {
+            "question": "Welke maat gripsokken heb ik nodig?",
+            "answer": "<p>De maat van HÏ Grip gripsokken komt over het algemeen overeen met je schoenmaat. Twijfel je tussen twee maten, kies dan de grotere. Welke maten er per product beschikbaar zijn, zie je op de productpagina.</p>"
+          }
+        },
+        "faq_8": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe verzorg ik mijn gripsokken?",
+            "answer": "<p>Was je gripsokken op 30 tot 40°C, binnenstebuiten en met een mild wasmiddel, en laat ze aan de lucht drogen. Gebruik geen droger: hitte kan de elasticiteit en het grippatroon aantasten. Wring de sokken niet uit en bewaar ze op een droge plek, uit direct zonlicht. Handwassen in koud of lauw water kan ook.</p>"
+          }
+        },
+        "cat_3": {
+          "type": "category",
+          "settings": {
+            "title": "Bestellen, verzending en retour"
+          }
+        },
+        "faq_9": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe snel worden bestellingen verzonden?",
+            "answer": "<p>HÏ Grip verzendt bestellingen binnen 1 werkdag via PostNL. Meer details staan in het <a href=\"/policies/shipping-policy\">verzendbeleid</a>.</p>"
+          }
+        },
+        "faq_10": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat kosten de verzendkosten?",
+            "answer": "<p>Verzenden kost €4,50 per bestelling. Vanaf een bestelwaarde van €35 is de verzending gratis.</p>"
+          }
+        },
+        "faq_11": {
+          "type": "faq",
+          "settings": {
+            "question": "Kan ik mijn gripsokken retourneren?",
+            "answer": "<p>Ja, je kunt je bestelling binnen 30 dagen na ontvangst retourneren. Start je retour via de <a href=\"https://www-higrip-nl.myparcel.me/returns/create\">retourpagina</a>. Alle voorwaarden staan in het <a href=\"/policies/refund-policy\">retourbeleid</a>.</p>"
+          }
+        },
+        "cat_4": {
+          "type": "category",
+          "settings": {
+            "title": "Over HÏ Grip"
+          }
+        },
+        "faq_12": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat is HÏ Grip?",
+            "answer": "<p>HÏ Grip is een Nederlands performance sportswear merk, te beginnen met de Performance Gripsokken. De missie: de beweging van iedere sporter versnellen. Lees meer op de pagina <a href=\"/pages/over-ons\">Over ons</a>.</p>"
+          }
+        },
+        "faq_13": {
+          "type": "faq",
+          "settings": {
+            "question": "Wie zit er achter HÏ Grip?",
+            "answer": "<p>HÏ Grip ontstond uit een gedeelde passie voor sport en ondernemen, toen hbo-studenten besloten hun idee om te zetten in een eigen merk. Het team bestaat uit sporters met een missie. Het volledige verhaal lees je op <a href=\"/pages/over-ons\">Over ons</a>.</p>"
+          }
+        },
+        "faq_14": {
+          "type": "faq",
+          "settings": {
+            "question": "Heeft HÏ Grip een aanbod voor sportclubs en retailers?",
+            "answer": "<p>Ja, HÏ Grip heeft een zakelijk aanbod voor sportclubs en retail. Bekijk de pagina <a href=\"/pages/zakelijk\">Zakelijk</a> of stuur een mail naar <a href=\"mailto:info@higrip.nl\">info@higrip.nl</a>.</p>"
+          }
+        },
+        "faq_15": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe neem ik contact op met HÏ Grip?",
+            "answer": "<p>Mail naar <a href=\"mailto:info@higrip.nl\">info@higrip.nl</a> of gebruik de <a href=\"/pages/contact\">contactpagina</a>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "fact_1",
+        "fact_2",
+        "fact_3",
+        "fact_4",
+        "cat_1",
+        "faq_1",
+        "faq_2",
+        "faq_3",
+        "faq_4",
+        "cat_2",
+        "faq_5",
+        "faq_6",
+        "faq_7",
+        "faq_8",
+        "cat_3",
+        "faq_9",
+        "faq_10",
+        "faq_11",
+        "cat_4",
+        "faq_12",
+        "faq_13",
+        "faq_14",
+        "faq_15"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "",
+        "accent": "neon",
+        "heading_tag": "h2",
+        "eyebrow": "FAQ",
+        "heading": "Alles over HÏ Grip gripsokken",
+        "lead": "Korte, directe antwoorden: hoe gripsokken werken, welke maat je nodig hebt, verzending en retour.",
+        "updated": "",
+        "contact_text": "",
+        "sources": "<p><strong>Bronnen onderzoek naar gripsokken:</strong> <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\">Apps et al., 2020</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\">Apps et al., 2022</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\">Friedl et al., 2023</a>. Deze studies testten gripsokken in het algemeen, niet HÏ Grip specifiek.</p>",
+        "cta_heading": "Vraag niet beantwoord?",
+        "cta_text": "Mail ons op info@higrip.nl, we helpen je graag verder.",
+        "cta_primary_label": "Mail ons",
+        "cta_primary_link": "mailto:info@higrip.nl",
+        "cta_secondary_label": "Naar de shop",
+        "cta_secondary_link": "/collections/gripsokken"
+      }
+    },
+    "section_LeKNJp": {
+      "type": "section",
+      "blocks": {
+        "group_nxydcK": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_6bTjnc": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2><strong>Gripsokken</strong></h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "accordion_ArWNRp": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "divider_color": "",
+                "type_preset": "h6",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_ytGk7n": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Wat zijn gripsokken?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_XrPkAC": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Gripsokken zijn speciaal ontworpen sportsokken met een antislip grippatroon van siliconen aan de onderzijde, wat zorgt voor extra stabiliteit, controle en betere prestaties. Ze voorkomen schuiven in de schoen en zijn ideaal voor sporten zoals voetbal, padel, fitness en yoga. Dankzij ademende en elastische materialen bieden gripsokken een perfecte pasvorm, hoog comfort en effectieve vochtafvoer. HÏ Grip gripsokken zijn gemaakt van hoogwaardige materialen zoals spandex, katoen, nylon en polyester voor duurzaamheid en optimaal draagcomfort. Zo haal je meer grip, minder irritatie en maximale focus uit elke beweging.</p><p></p><p>Meer lezen? <a href=\"/blogs/hi-grip/wat-zijn-gripsokken\" target=\"_blank\" title=\"Wat zijn gripsokken?\">Klik hier</a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_XrPkAC"
+                  ]
+                },
+                "accordion_row_Kfg7XT": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Wat zijn de voordelen van gripsokken?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_CwMh3d": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>HÏ Grip gripsokken bieden <strong>maximale grip en controle</strong>, waardoor sporters stabieler bewegen en minder risico hebben op blessures of blaren. De <strong>versterkte onderzijde en ademende sportstof </strong>van HÏ Grip zorgen voor extra comfort en frisse, droge voeten tijdens elke training. Ontworpen door professionals en geschikt voor <strong>alle sporten</strong>, waardoor je altijd het beste uit je performance haalt.</p><p>Meer lezen? <a href=\"/blogs/hi-grip/waarom-hi-grip-gripsokken\" target=\"_blank\" title=\"Waarom HÏ Grip gripsokken?\">Klik hier</a>.<br/></p><p></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_CwMh3d"
+                  ]
+                },
+                "accordion_row_MFFUP8": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Zijn gripsokken wetenschappelijk bewezen?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_HFLFXE": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Gripsokken zijn <strong>wetenschappelijk bewezen</strong> effectiever dan normale sokken: ze houden de voet beter op zijn plek, verbeteren stabiliteit en verminderen uitglijden tijdens snelle of explosieve bewegingen. Studies tonen aan dat gripsokken bijna <strong>twee keer zoveel grip</strong> bieden (wrijvingscoëfficiënt 1,17 vs. 0,60), wat direct zorgt voor meer controle en vertrouwen. Kortom: <strong>minder glijden, meer stabiliteit en betere performance</strong>.</p><p>(<a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2019.1690618\">Apps et al., 2020</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/02640414.2022.2080163\">Apps et al., 2022</a>; <a href=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\" target=\"_blank\" title=\"https://www.tandfonline.com/doi/full/10.1080/19424280.2023.2212628\">Friedl et al., 2023</a>)<br/></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_HFLFXE"
+                  ]
+                },
+                "accordion_row_VpLtYr": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Hoe verzorg ik mijn gripsokken?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_YazpXG": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Voor een lange levensduur van uw gripsokken is het belangrijk om ze goed te onderhouden. Was ze bij voorkeur met de hand in koud of lauw water, of in de wasmachine op een <strong>zacht programma (30–40°C)</strong> met een <strong>mild wasmiddel</strong>, <strong>altijd binnenstebuiten </strong>om de antislip te beschermen. Laat de gripsokken aan de lucht drogen en <strong>vermijd de droger</strong>, omdat hitte de elasticiteit en grip kan aantasten. <strong>Wring de sokken niet uit</strong> om vervorming van het grippatroon te voorkomen. Bewaar uw gripsokken op een droge plek, uit direct zonlicht en vocht, zodat de kwaliteit behouden blijft.</p><p>Meer lezen? <a href=\"/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken\" title=\"Hoe zorg ik voor mijn gripsokken?\">Klik hier</a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_YazpXG"
+                  ]
+                },
+                "accordion_row_3PKbY6": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Voor welke sporten zijn gripsokken goed?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_XzYErU": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Ontdek <a href=\"/pages/ontdek-jouw-sport\" title=\"Ontdek jouw sport\">hier</a> waarom gripsokken ook voor jouw sport de beste keuze zijn. Meer stabiliteit & controle zodat je sneller bent dan je tegenstanders.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_XzYErU"
+                  ]
+                },
+                "accordion_row_3tLtBp": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Welke maat heb ik?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_NAzDAG": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>HÏ Grip gripsokken vallen over het algemeen hetzelfde als je schoenmaat.</p><p></p><p>We hebben 3 maten: 35 - 38 (klein, dames &amp; jeugd), 39 - 42 (meest gekozen) en 43 - 46 (groot, extra ruimte). Twijfel je tussen twee maten? Kies de grotere.</p><p>Bekijk alle maten en kleuren in de <a href=\"/pages/shop\" title=\"HÏ Grip Shop\">shop</a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_NAzDAG"
+                  ]
+                },
+                "accordion_row_JhhPRW": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Hoe kan ik een bestelling plaatsen?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_m34rHg": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Gripsokken zijn eenvoudig online te bestellen via onze <a href=\"/collections/all\" title=\"Alle producten\">webshop</a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_m34rHg"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_ytGk7n",
+                "accordion_row_Kfg7XT",
+                "accordion_row_MFFUP8",
+                "accordion_row_VpLtYr",
+                "accordion_row_3PKbY6",
+                "accordion_row_3tLtBp",
+                "accordion_row_JhhPRW"
+              ]
+            },
+            "divider_HTNaRR": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 0.5,
+                "corner_radius": "square",
+                "divider_color": "",
+                "width_percent": 100,
+                "padding-block-start": 100,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_4gD8eT": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Verzending & Retour</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "accordion_Lr4i4L": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "divider_color": "",
+                "type_preset": "h6",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_yEhJbA": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Wat is de levertijd?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_6haEQk": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Bij HÏ Grip streven we ernaar om uw bestelling zo snel mogelijk bij u te leveren. Daarom zorgen wij ervoor dat alle bestellingen worden binnen <strong>1 </strong>werkdag <strong>verzonden </strong>via PostNL. <br/></p><p>Lees <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">hier</a> meer.<br/></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_6haEQk"
+                  ]
+                },
+                "accordion_row_N73PDJ": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Wat zijn de verzendkosten?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_xyGJwE": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>De verzendkosten bedragen<strong> €4,50 per bestelling</strong>. Bij een bestelwaarde van <strong>€35</strong>of meer profiteert u van<strong> gratis verzending</strong>. Zo zorgen we ervoor dat uw HÏ Grip producten snel en zorgeloos bij u worden geleverd.<br/></p><p>Lees <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">hier</a> meer.<br/></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_xyGJwE"
+                  ]
+                },
+                "accordion_row_fwpeWr": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Hoe kan ik retourneren?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_dRyppF": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>We hopen dat uw <strong>performance</strong> naar het hoogste niveau gaan met uw aankoop bij HÏ Grip. Is het product toch niet helemaal wat u had verwacht?</p><p>U kunt uw bestelling binnen <strong>30 dagen na ontvangst</strong> retourneren.</p><p>Klik <a href=\"https://www-higrip-nl.myparcel.me/returns/create\" target=\"_blank\" title=\"https://www-higrip-nl.myparcel.me/returns/create\">hier</a> om uw retourproces te starten.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_dRyppF"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_yEhJbA",
+                "accordion_row_N73PDJ",
+                "accordion_row_fwpeWr"
+              ]
+            },
+            "divider_dfBaRV": {
+              "type": "_divider",
+              "name": "t:names.divider",
+              "settings": {
+                "thickness": 0.5,
+                "corner_radius": "square",
+                "divider_color": "",
+                "width_percent": 100,
+                "padding-block-start": 100,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "text_YYteAC": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Over Ons</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "accordion_3RJwnc": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "divider_color": "",
+                "type_preset": "h6",
+                "background_color": "",
+                "text_color": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_V9N3Ja": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Hoe is HÏ Grip ontstaan?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_zH8MTk": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>HÏ Grip ontstond uit een gedeelde passie voor sport en ondernemen, toen vier hbo-studenten besloten hun ideeën om te zetten in een eigen merk. Na waardevolle ervaring tijdens een Intrapreneurship-project groeide de ambitie om zelf impact te maken binnen de sportwereld. Zo werd HÏ Grip geboren: een sportmerk dat prestaties en plezier van sporters centraal stelt, met gripsokken als eerste productlijn. Vanaf dag één ging alles in volle vaart, met een succesvolle lancering en pre-orderfase begin 2025. Dit is nog maar het begin</p><p>Ontdek <a href=\"/pages/over-ons\" title=\"Over Ons\">hier</a> ons verhaal.<br/></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_zH8MTk"
+                  ]
+                },
+                "accordion_row_tU6hnq": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Heeft HÏ Grip ook een zakelijk aanbod?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_xJnU7e": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Ontdek onze zakelijke aanbiedingen <a href=\"https://hi-grip.myshopify.com/pages/zakelijk\" title=\"Zakelijk\">hier</a>!<br/></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_xJnU7e"
+                  ]
+                },
+                "accordion_row_GXHhdi": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Wat is de missie van HÏ Grip?",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_4x66NA": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Optimale performance voor elke sporter. Ontdek hier <a href=\"/pages/onze-missie\" title=\"Onze missie\">onze missie</a>.</p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "text_color": "",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_4x66NA"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_V9N3Ja",
+                "accordion_row_tU6hnq",
+                "accordion_row_GXHhdi"
+              ]
+            }
+          },
+          "block_order": [
+            "text_6bTjnc",
+            "accordion_ArWNRp",
+            "divider_HTNaRR",
+            "text_4gD8eT",
+            "accordion_Lr4i4L",
+            "divider_dfBaRV",
+            "text_YYteAC",
+            "accordion_3RJwnc"
+          ]
+        }
+      },
+      "block_order": [
+        "group_nxydcK"
+      ],
+      "disabled": true,
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "background_media": "none",
+        "background_color": "{{ settings.color_palette.background }}",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_color": "",
+        "border_radius": 0,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    }
+  },
+  "order": [
+    "slideshow_kjE9nV",
+    "main",
+    "faq_geo_hg01",
+    "section_LeKNJp"
+  ]
+}

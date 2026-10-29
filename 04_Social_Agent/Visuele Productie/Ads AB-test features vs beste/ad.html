@@ -24,6 +24,18 @@
   body { font-family: 'Poppins', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
 
   .ad { position: relative; overflow: hidden; color: var(--hi-white); }
+
+  /* PDF voor Canva: elke ad een eigen pagina op ware grootte, tekst blijft tekst */
+  @page { margin: 0; }
+  @page feed { size: 1080px 1350px; margin: 0; }
+  @page story { size: 1080px 1920px; margin: 0; }
+  .print .ad { break-after: page; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .print .ad--feed { page: feed; }
+  .print .ad--story { page: story; }
+  .print .label { backdrop-filter: none; }
+
+  /* ?bg=1: alleen foto, schaduw en lijnen, voor de Canva-achtergronden */
+  .bg .corner, .bg h1, .bg .sub, .bg .label, .bg .pill, .bg .top, .bg .word, .bg .sock { visibility: hidden; }
   .ad--feed { width: 1080px; height: 1350px; }
   .ad--story { width: 1080px; height: 1920px; }
   .ad__photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -98,11 +110,11 @@
     '4B': { c: 4, h: 'Siliconen grip in je schoen.', s: 'Versterkte hiel, naadloze teen. Tot het laatste fluitsignaal.' },
   };
 
-  const id = (new URLSearchParams(location.search).get('ad') || '1A').toUpperCase();
+  function adHtml(id) {
   const ad = ADS[id];
-  const R = document.getElementById('root');
+  let html = '';
 
-  if (ad.c === 1) R.innerHTML = `
+  if (ad.c === 1) html = `
     <div class="ad ad--feed p1">
       <img class="ad__photo" src="img/padel.jpg" alt="">
       <div class="shade"></div>
@@ -126,7 +138,7 @@
       return `<line x1="${p[0]}" y1="${p[1]}" x2="${lx}" y2="${ly}" stroke="#fff" stroke-width="2"/>
               <circle cx="${p[0]}" cy="${p[1]}" r="9" fill="none" stroke="#fff" stroke-width="3"/>`;
     }).join('');
-    R.innerHTML = `
+    html = `
       <div class="ad ad--feed p2">
         <img class="ad__photo" src="img/voetbal.jpg" alt="">
         <div class="shade"></div>
@@ -138,7 +150,7 @@
       </div>`;
   }
 
-  if (ad.c === 3) R.innerHTML = `
+  if (ad.c === 3) html = `
     <div class="ad ad--story p3">
       <img class="ad__photo" src="img/tennis.jpg" alt="">
       <div class="shade"></div>
@@ -148,7 +160,7 @@
       ${cta()}
     </div>`;
 
-  if (ad.c === 4) R.innerHTML = `
+  if (ad.c === 4) html = `
     <div class="ad ad--feed p4">
       <span class="word">RUGBY</span>
       <img class="sock" src="img/sok-zwart-cut.png" alt="">
@@ -157,6 +169,15 @@
       <span class="corner bl">Performance Grip Socks 2.0</span>
       ${cta(true)}
     </div>`;
+  return html;
+  }
+
+  // ?ad=ALL zet alle 8 als losse pagina's onder elkaar, voor de PDF naar Canva
+  const id = (new URLSearchParams(location.search).get('ad') || '1A').toUpperCase();
+  const ids = id === 'ALL' ? Object.keys(ADS) : [id];
+  document.getElementById('root').innerHTML = ids.map(adHtml).join('');
+  if (id === 'ALL') document.body.classList.add('print');
+  if (new URLSearchParams(location.search).get('bg')) document.body.classList.add('bg');
 </script>
 </body>
 </html>

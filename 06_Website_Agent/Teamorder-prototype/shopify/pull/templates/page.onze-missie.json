@@ -1,0 +1,688 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "t:names.title",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "text_color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {
+            "text_color": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "page-content"
+      ],
+      "disabled": true,
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    },
+    "s1_hero": {
+      "type": "mv-hero",
+      "blocks": {
+        "s1_hero_b01": {
+          "type": "regel",
+          "settings": {
+            "tekst": "Wij versnellen",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s1_hero_b02": {
+          "type": "regel",
+          "settings": {
+            "tekst": "de beweging van",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s1_hero_b03": {
+          "type": "regel",
+          "settings": {
+            "tekst": "<em>iedere sporter.</em>",
+            "align": "",
+            "align_m": ""
+          }
+        }
+      },
+      "block_order": [
+        "s1_hero_b01",
+        "s1_hero_b02",
+        "s1_hero_b03"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/IMG_4142.jpg",
+        "image_alt": "Tennisser in een donkerblauw shirt serveert op een gravelbaan, met witte HÏ Grip-gripsokken in zijn tennisschoenen",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s2_missie": {
+      "type": "mv-rijen",
+      "blocks": {
+        "s2_missie_b01": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Wat is de missie van <em>HÏ Grip?</em>",
+            "niveau": "groot",
+            "tag": "h2",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s2_missie_b02": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "De missie van HÏ Grip, het Nederlandse performance sportswear merk achter de Performance Gripsokken, is ‘wij versnellen de beweging van iedere sporter’: we ontwikkelen technische, comfortabele en innovatieve sportswear die een stap hoger ligt dan het huidige aanbod, met de beste prijs-kwaliteitverhouding.",
+            "stijl": "lead",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s2_missie_b03": {
+          "type": "rij",
+          "settings": {
+            "titel": "Filosofie",
+            "groot": "Sportswear as the foundation of performance.",
+            "tekst": "",
+            "waarden": "",
+            "gedempt": "Alles wat we maken, zeggen en kiezen begint hier.",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s2_missie_b04": {
+          "type": "rij",
+          "settings": {
+            "titel": "Missie",
+            "groot": "HÏ Grip maakt sportswear het fundament van performance.",
+            "tekst": "Zodat sporters verder gaan en meer uit zichzelf halen.",
+            "waarden": "Comfort | · blijven presteren\nVertrouwen | · stevig in je schoenen\nInnovatie | · on top of the game",
+            "gedempt": "Wat die drie kernwaarden betekenen, lees je bij",
+            "link_label": "de kernwaarden van HÏ Grip op Over ons",
+            "link_url": "https://www.higrip.nl/pages/over-ons",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s2_missie_b05": {
+          "type": "rij",
+          "settings": {
+            "titel": "Gevoel",
+            "groot": "Waardering. Zelfvertrouwen. Winnaarsmentaliteit.",
+            "tekst": "",
+            "waarden": "",
+            "gedempt": "Dat willen we dat je voelt als je HÏ Grip draagt.",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": ""
+          }
+        }
+      },
+      "block_order": [
+        "s2_missie_b01",
+        "s2_missie_b02",
+        "s2_missie_b03",
+        "s2_missie_b04",
+        "s2_missie_b05"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "left",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s3_waarom": {
+      "type": "mv-principes",
+      "blocks": {
+        "s3_waarom_b01": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Waarom bestaat <em>HÏ Grip?</em>",
+            "niveau": "groot",
+            "tag": "h2",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s3_waarom_b02": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "HÏ Grip bestaat omdat drie sporters vanuit hun passie voor sporten en presteren altijd hun eigen pad hebben moeten graven, nooit opgeven en geloven in de toekomst, in impact maken, in een vitaal en gezond Nederland en in doorzetten, en dat geloof in sportswear wilden vertalen.",
+            "stijl": "lead",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s3_waarom_b03": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Vijf werkprincipes",
+            "niveau": "label",
+            "tag": "h3",
+            "align": "",
+            "align_m": "",
+            "plaats": "midden"
+          }
+        },
+        "s3_waarom_b04": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Echte performance begint bij innovatie, vertrouwen en comfort. Onze vijf werkprincipes maken dat concreet in alles wat we bouwen, kiezen en zeggen.",
+            "stijl": "normaal",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "midden"
+          }
+        },
+        "s3_waarom_b05": {
+          "type": "principe",
+          "settings": {
+            "groot": "High-end",
+            "titel": "Kwaliteit boven kwantiteit",
+            "tekst": "Geen overbodige producten of snelle trends, maar doordachte sportswear die is ontwikkeld om langdurig te presteren.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s3_waarom_b06": {
+          "type": "principe",
+          "settings": {
+            "groot": "Eerlijk",
+            "titel": "Do what you promise",
+            "tekst": "Een eerlijk verhaal, zonder loze beloftes. Wat we communiceren, maken we waar, op én naast het veld.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s3_waarom_b07": {
+          "type": "principe",
+          "settings": {
+            "groot": "DNA",
+            "titel": "Passie voor sport",
+            "tekst": "Sport zit in ons DNA en dat voel je terug in elk detail, van ontwerp tot productontwikkeling.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s3_waarom_b08": {
+          "type": "principe",
+          "settings": {
+            "groot": "110%",
+            "titel": "Altijd een stapje erbovenop",
+            "tekst": "Geen 100% maar 110%. We leggen de lat standaard hoger dan wat goed genoeg is: in onze producten, in onze service en in onszelf.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s3_waarom_b09": {
+          "type": "principe",
+          "settings": {
+            "groot": "Never give up",
+            "titel": "We zetten altijd door",
+            "tekst": "Ook wanneer het tegenzit, blijven we zoeken naar een oplossing. We leren van tegenslagen en blijven bouwen totdat het klopt.",
+            "align": "",
+            "align_m": ""
+          }
+        }
+      },
+      "block_order": [
+        "s3_waarom_b01",
+        "s3_waarom_b02",
+        "s3_waarom_b03",
+        "s3_waarom_b04",
+        "s3_waarom_b05",
+        "s3_waarom_b06",
+        "s3_waarom_b07",
+        "s3_waarom_b08",
+        "s3_waarom_b09"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s4_performance": {
+      "type": "mv-strook",
+      "blocks": {
+        "s4_performance_b01": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Wat is performance volgens <em>HÏ Grip?</em>",
+            "niveau": "groot",
+            "tag": "h2",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s4_performance_b02": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Performance is voor HÏ Grip meer dan de winnende goal: het is elk moment waarop iemand net langer doorgaat dan normaal, op het veld én daarbuiten, en presteren is het centrale begrip achter alles wat HÏ Grip maakt, zegt en kiest.",
+            "stijl": "lead",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s4_performance_b03": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "Een gevoel van onsterfelijkheid.",
+            "accent": false
+          }
+        },
+        "s4_performance_b04": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "Doorgaan wanneer anderen stoppen.",
+            "accent": true
+          }
+        },
+        "s4_performance_b05": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "Resultaat behalen, in de vorm van een score.",
+            "accent": false
+          }
+        },
+        "s4_performance_b06": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "De kortste weg vinden naar het beste resultaat.",
+            "accent": false
+          }
+        },
+        "s4_performance_b07": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "De uitvoering van de beste versie van jezelf.",
+            "accent": false
+          }
+        },
+        "s4_performance_b08": {
+          "type": "kaart",
+          "settings": {
+            "tekst": "Net langer doorgaan dan normaal.",
+            "accent": false
+          }
+        }
+      },
+      "block_order": [
+        "s4_performance_b01",
+        "s4_performance_b02",
+        "s4_performance_b03",
+        "s4_performance_b04",
+        "s4_performance_b05",
+        "s4_performance_b06",
+        "s4_performance_b07",
+        "s4_performance_b08"
+      ],
+      "settings": {
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s5_statement": {
+      "type": "mv-statement",
+      "settings": {
+        "tekst": "We blijven verbeteren, blijven innoveren en blijven grenzen verleggen. <em>Wie alles geeft,</em> verliest nooit van zichzelf.",
+        "tekst_align": "",
+        "tekst_align_m": "",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true,
+        "scroll_length": 230,
+        "scroll_length_mobile": 150
+      }
+    },
+    "s6_founders": {
+      "type": "mv-personen",
+      "blocks": {
+        "s6_founders_b01": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Wie zitten er achter de missie van <em>HÏ Grip?</em>",
+            "niveau": "groot",
+            "tag": "h2",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s6_founders_b02": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Achter HÏ Grip zitten drie founders, Lars Cretz, Tigo Twigt en Timo Heijligers, die het merk in december 2024 oprichtten op de Rotterdam Business School en het naast hun studie bouwen, ieder met een eigen deel van de missie: merk en groei, klanten en partners, en product en inkoop.",
+            "stijl": "lead",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "boven"
+          }
+        },
+        "s6_founders_b03": {
+          "type": "persoon",
+          "settings": {
+            "naam": "Lars Cretz",
+            "naam_align": "",
+            "naam_align_m": "",
+            "rol": "Co-founder · finance, design, ads en AI",
+            "tekst": "Bouwt aan hoe HÏ Grip eruitziet en groeit: van design en Meta- en TikTok-ads tot AI, R&D en fulfilment.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s6_founders_b04": {
+          "type": "persoon",
+          "settings": {
+            "naam": "Tigo Twigt",
+            "naam_align": "",
+            "naam_align_m": "",
+            "rol": "Co-founder · sales, B2B en website",
+            "tekst": "Bouwt aan sales en B2B met clubs en retailers, en houdt de website, e-mailmarketing en klantenservice draaiend.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s6_founders_b05": {
+          "type": "persoon",
+          "settings": {
+            "naam": "Timo Heijligers",
+            "naam_align": "",
+            "naam_align_m": "",
+            "rol": "Co-founder · inkoop, import en B2B",
+            "tekst": "Zorgt dat de sokken er komen: inkoop, import en R&D, en daarnaast B2B-sales, finance en ads.",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s6_founders_b06": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Wij leggen de basis, jij presteert.",
+            "stijl": "slogan",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": "",
+            "plaats": "onder"
+          }
+        },
+        "s6_founders_b07": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Hun sport, hun foto en hun eigen woorden vind je bij",
+            "stijl": "gedempt",
+            "link_label": "de drie founders op Over ons",
+            "link_url": "https://www.higrip.nl/pages/over-ons",
+            "align": "",
+            "align_m": "",
+            "plaats": "onder"
+          }
+        }
+      },
+      "block_order": [
+        "s6_founders_b01",
+        "s6_founders_b02",
+        "s6_founders_b03",
+        "s6_founders_b04",
+        "s6_founders_b05",
+        "s6_founders_b06",
+        "s6_founders_b07"
+      ],
+      "settings": {
+        "image_alt": "Glazen gevel van de Hogeschool Rotterdam, waar de Rotterdam Business School zit en HÏ Grip werd opgericht",
+        "show_default_image": true,
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s7_voor_jou": {
+      "type": "mv-voor-jou",
+      "blocks": {
+        "s7_voor_jou_b01": {
+          "type": "kop",
+          "settings": {
+            "tekst": "Wat betekent de missie van HÏ Grip <em>voor jou?</em>",
+            "niveau": "groot",
+            "tag": "h2",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s7_voor_jou_b02": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Voor jou als sporter betekent de missie van HÏ Grip dat je materiaal je niet meer tegenhoudt, te beginnen met de Performance Gripsokken voor de kernsporten tennis en padel, voetbal en rugby, zodat je minder wegglijdt in je schoen en je volle focus op het spel en het resultaat houdt.",
+            "stijl": "lead",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s7_voor_jou_b03": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "Inmiddels kozen 3500+ sporters voor HÏ Grip, en op Trustpilot staan we op 4,6 uit 5.",
+            "stijl": "gedempt",
+            "link_label": "",
+            "link_url": "",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s7_voor_jou_b05": {
+          "type": "knop",
+          "settings": {
+            "label": "Shop gripsokken",
+            "url": "https://www.higrip.nl/products/performance-gripsokken",
+            "stijl": "dark",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s7_voor_jou_b06": {
+          "type": "knop",
+          "settings": {
+            "label": "Bekijk de Performance Gripsokken 2.0",
+            "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+            "stijl": "link",
+            "align": "",
+            "align_m": ""
+          }
+        }
+      },
+      "block_order": [
+        "s7_voor_jou_b01",
+        "s7_voor_jou_b02",
+        "s7_voor_jou_b03",
+        "s7_voor_jou_b05",
+        "s7_voor_jou_b06"
+      ],
+      "settings": {
+        "image_alt": "Benen van twee tennissers op gravel, een van hen draagt witte HÏ Grip-gripsokken in zijn tennisschoenen",
+        "bg_color": "{{ settings.color_palette.background }}",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    },
+    "s8_afsluiting": {
+      "type": "mv-slot",
+      "blocks": {
+        "s8_afsluiting_b01": {
+          "type": "tekst",
+          "settings": {
+            "tekst": "De missie is waar we vandaag staan. Waar we naartoe gaan, lees je in de visie. Benieuwd hoe het begon? Lees",
+            "stijl": "normaal",
+            "link_label": "het verhaal van Team HÏ Grip",
+            "link_url": "https://www.higrip.nl/pages/over-ons",
+            "align": "",
+            "align_m": ""
+          }
+        },
+        "s8_afsluiting_b02": {
+          "type": "knop",
+          "settings": {
+            "label": "Ontdek de visie",
+            "url": "https://www.higrip.nl/pages/onze-visie",
+            "stijl": "light",
+            "align": "",
+            "align_m": ""
+          }
+        }
+      },
+      "block_order": [
+        "s8_afsluiting_b01",
+        "s8_afsluiting_b02"
+      ],
+      "settings": {
+        "tekst": "Wie blijft gaan, bepaalt zelf waar het <em>stopt.</em>",
+        "tekst_align": "",
+        "tekst_align_m": "",
+        "bg_color": "",
+        "text_color": "",
+        "text_align": "",
+        "text_align_m": "",
+        "section_width": "",
+        "custom_pad": false,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 52,
+        "animate": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "s1_hero",
+    "s2_missie",
+    "s3_waarom",
+    "s4_performance",
+    "s5_statement",
+    "s6_founders",
+    "s7_voor_jou",
+    "s8_afsluiting"
+  ]
+}

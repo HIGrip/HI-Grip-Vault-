@@ -1,0 +1,477 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 13 · Footer: merkregel en slogan, linkkolommen (blokken, links als "Tekst | /link" per regel of een
+  menu), een brede kolom met socials en contact, een onderregel met juridische links en betaalmethoden, en het
+  woordmerk rand tot rand. Kan de standaard themafooter op deze pagina verbergen.
+  @example
+  <!-- Homepage > HÏ 13 · Footer -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_base_line = s.base_line_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-13-line_c: {{ s.line_c }}; --hp-13-slogan_c: {{ s.slogan_c }}; --hp-13-title_c: {{ s.title_c }}; --hp-13-link_c: {{ s.link_c }}; --hp-13-meta_c: {{ s.meta_c }}; --hp-13-base_c: {{ s.base_c }}; --hp-13-pay_c: {{ s.pay_c }}; --hp-13-base_line: {{ s.base_line | color_modify: 'alpha', hp_a_base_line }}; --hp-13-mark-f: calc({{ s.mark_f }} / 100); --hp-13-mark_c: {{ s.mark_c }}; --hp-13-bg: {{ s.bg }}; --hp-13-fg: {{ s.fg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-13-line-k: {{ s.line_m | times: 1.0 | divided_by: 22 }}; --hp-13-title-k: {{ s.title_m | times: 1.0 | divided_by: 12 }}; --hp-13-link-k: {{ s.link_m | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 44 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 32 }}; --hp-pb-add: 0px;} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-13-line-k: {{ s.line_d | times: 1.0 | divided_by: 27 }}; --hp-13-title-k: {{ s.title_d | times: 1.0 | divided_by: 12 }}; --hp-13-link-k: {{ s.link_d | times: 1.0 | divided_by: 15 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 72 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 32 }}; --hp-pb-add: 0px;} }
+</style>
+{%- if s.hide_theme_footer -%}
+  <style>.page-wrapper > footer { display: none; }</style>
+{%- endif -%}
+<section class="hp-section hp-13" data-hp="13">
+  <footer class="hp-container hp-13-inner">
+    <div class="hp-13-intro">
+      {%- if s.line != blank -%}<p class="hp-13-line">{{ s.line }}</p>{%- endif -%}
+      {%- if s.slogan != blank -%}<p class="hp-13-slogan">{{ s.slogan }}</p>{%- endif -%}
+    </div>
+
+    <div class="hp-13-grid">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        {%- capture tid -%}hp-13-t-{{ block.id }}{%- endcapture -%}
+        {%- if block.type == 'column' -%}
+          <nav class="hp-13-col" aria-labelledby="{{ tid }}" {{ block.shopify_attributes }}>
+            <p class="hp-13-title" id="{{ tid }}">{{ b.title }}</p>
+            <ul class="hp-13-list">
+              {%- if b.menu != blank -%}
+                {%- for l in b.menu.links -%}<li><a class="hp-13-link" href="{{ l.url }}">{{ l.title }}</a></li>{%- endfor -%}
+              {%- else -%}
+                {%- assign rows = b.links | newline_to_br | split: '<br />' -%}
+                {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+              {%- endif -%}
+            </ul>
+          </nav>
+        {%- else -%}
+          <div class="hp-13-col hp-13-col--wide" {{ block.shopify_attributes }}>
+            <p class="hp-13-title" id="{{ tid }}">{{ b.title }}</p>
+            <ul class="hp-13-list hp-13-list--row">
+              {%- assign rows = b.links | newline_to_br | split: '<br />' -%}
+              {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+            </ul>
+            <address class="hp-13-contact">
+              {%- if b.email != blank -%}<p class="hp-13-contact__val">{{ b.email }}</p>{%- endif -%}
+              {%- if b.phone != blank -%}<p class="hp-13-contact__val">{{ b.phone }}</p>{%- endif -%}
+              {%- if b.kvk != blank or b.btw != blank -%}
+                <dl class="hp-13-meta">
+                  {%- if b.kvk != blank -%}<div class="hp-13-meta__row"><dt>{{ b.kvk_label }}</dt><dd>{{ b.kvk }}</dd></div>{%- endif -%}
+                  {%- if b.btw != blank -%}<div class="hp-13-meta__row"><dt>{{ b.btw_label }}</dt><dd>{{ b.btw }}</dd></div>{%- endif -%}
+                </dl>
+              {%- endif -%}
+            </address>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="hp-13-base">
+      <p class="hp-13-copy">{{ s.copyright }}</p>
+      <ul class="hp-13-legal">
+        {%- assign rows = s.legal | newline_to_br | split: '<br />' -%}
+        {%- for r in rows -%}{%- assign p = r | split: '|' -%}{%- assign lt = p[0] | strip -%}{%- assign lu = p[1] | strip -%}{%- if lt != blank -%}<li><a class="hp-13-link" href="{{ lu }}">{{ lt }}</a></li>{%- endif -%}{%- endfor -%}
+      </ul>
+      {%- if s.pay != blank -%}
+        <div class="hp-13-pay">
+          <p class="hp-13-pay__title" id="hp-13-t-pay-{{ section.id }}">{{ s.pay_title }}</p>
+          <ul class="hp-13-pay__list" aria-labelledby="hp-13-t-pay-{{ section.id }}">
+            {%- assign rows = s.pay | newline_to_br | split: '<br />' -%}
+            {%- for r in rows -%}{%- assign t = r | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+          </ul>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if s.mark != blank -%}<p class="hp-13-mark" aria-hidden="true">{{ s.mark }}</p>{%- endif -%}
+  </footer>
+</section>
+{% schema %}
+{
+  "name": "HÏ 13 · Footer",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Algemeen"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_theme_footer",
+      "label": "Standaard themafooter verbergen op deze pagina",
+      "default": true,
+      "info": "Zo staat alleen deze footer onder de homepage, zoals in het ontwerp."
+    },
+    {
+      "type": "textarea",
+      "id": "line",
+      "label": "Merkregel",
+      "default": "Performance Grip Socks voor de sporter die doorgaat waar anderen stoppen."
+    },
+    {
+      "type": "text",
+      "id": "slogan",
+      "label": "Slogan",
+      "default": "More grip, better performance."
+    },
+    {
+      "type": "range",
+      "id": "line_m",
+      "label": "Merkregel grootte (mobiel)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "line_d",
+      "label": "Merkregel grootte (laptop)",
+      "min": 8,
+      "max": 108,
+      "step": 1,
+      "unit": "px",
+      "default": 27
+    },
+    {
+      "type": "color",
+      "id": "line_c",
+      "label": "Merkregel kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "slogan_c",
+      "label": "Slogan kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "header",
+      "content": "Kolommen"
+    },
+    {
+      "type": "paragraph",
+      "content": "Kolommen zijn blokken. Links per regel als \"Tekst | /link\", of kies een menu. De brede kolom heeft ook contactgegevens."
+    },
+    {
+      "type": "range",
+      "id": "title_m",
+      "label": "Kolomtitel grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "title_d",
+      "label": "Kolomtitel grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "title_c",
+      "label": "Kolomtitel kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "link_m",
+      "label": "Link grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "link_d",
+      "label": "Link grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "link_c",
+      "label": "Link kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "meta_c",
+      "label": "KVK/BTW-label kleur",
+      "default": "#909194"
+    },
+    {
+      "type": "header",
+      "content": "Onderregel"
+    },
+    {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright",
+      "default": "© 2026 HÏ Grip · higrip.nl"
+    },
+    {
+      "type": "textarea",
+      "id": "legal",
+      "label": "Juridische links (\"Tekst | /link\" per regel)",
+      "default": "Algemene voorwaarden | /policies/terms-of-service\nWettelijke kennisgeving | /policies/legal-notice\nBetalingsbeleid | /pages/terugbetalingsbeleid\nPrivacybeleid | /pages/privacybeleid"
+    },
+    {
+      "type": "text",
+      "id": "pay_title",
+      "label": "Titel betaalmethoden",
+      "default": "Betaalmethoden"
+    },
+    {
+      "type": "textarea",
+      "id": "pay",
+      "label": "Betaalmethoden (één per regel)",
+      "default": "American Express\nApple Pay\nGoogle Pay\niDEAL Wero\nKlarna\nMaestro\nMastercard\nPayPal\nUnion Pay\nVisa"
+    },
+    {
+      "type": "color",
+      "id": "base_c",
+      "label": "Tekstkleur onderregel",
+      "default": "#909194"
+    },
+    {
+      "type": "color",
+      "id": "pay_c",
+      "label": "Betaalmethoden kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "base_line",
+      "label": "Lijn boven de onderregel",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "base_line_a",
+      "label": "Lijn boven de onderregel: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Woordmerk"
+    },
+    {
+      "type": "text",
+      "id": "mark",
+      "label": "Woordmerk onderaan",
+      "default": "HÏ Grip"
+    },
+    {
+      "type": "range",
+      "id": "mark_f",
+      "label": "Woordmerk: breedtefactor",
+      "min": 250,
+      "max": 450,
+      "step": 2,
+      "default": 334,
+      "info": "Lager = groter. Bij \"HÏ Grip\" is 334 precies rand tot rand; bij een andere tekst stel je hem hier bij."
+    },
+    {
+      "type": "color",
+      "id": "mark_c",
+      "label": "Woordmerk kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Linkkolom",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Shop"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu (optioneel, vervangt de links hieronder)"
+        },
+        {
+          "type": "textarea",
+          "id": "links",
+          "label": "Links (\"Tekst | /link\" per regel)",
+          "default": "Alle gripsokken | /collections/gripsokken"
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "name": "Socials en contact",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Volg ons"
+        },
+        {
+          "type": "textarea",
+          "id": "links",
+          "label": "Links (\"Tekst | link\" per regel)",
+          "default": "Instagram | https://instagram.com/higrip.nl"
+        },
+        {
+          "type": "text",
+          "id": "email",
+          "label": "E-mail",
+          "default": "info@higrip.nl"
+        },
+        {
+          "type": "text",
+          "id": "phone",
+          "label": "Telefoon"
+        },
+        {
+          "type": "text",
+          "id": "kvk_label",
+          "label": "Label KVK",
+          "default": "KVK"
+        },
+        {
+          "type": "text",
+          "id": "kvk",
+          "label": "KVK-nummer"
+        },
+        {
+          "type": "text",
+          "id": "btw_label",
+          "label": "Label BTW",
+          "default": "BTW"
+        },
+        {
+          "type": "text",
+          "id": "btw",
+          "label": "BTW-nummer"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "HÏ 13 · Footer",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "title": "Shop",
+            "links": "Alle gripsokken | /collections/gripsokken\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Sporten",
+            "links": "Padel | /pages/gripsokken-voor-padel\nTennis | /pages/gripsokken-voor-tennis\nVoetbal | /pages/gripsokken-voor-voetbal\nRugby | /pages/gripsokken-voor-rugby"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "HÏ Grip",
+            "links": "Over ons | /pages/over-ons\nZakelijk | /pages/zakelijk\nWaarom HÏ Grip | /blogs/hi-grip/waarom-hi-grip-gripsokken\nReviews | https://nl.trustpilot.com/review/higrip.nl"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Service",
+            "links": "Veelgestelde vragen | /pages/veelgestelde-vragen\nVerzending | /pages/verzendbeleid\nRetourneren | /pages/retourbeleid\nContact | /pages/contact"
+          }
+        },
+        {
+          "type": "contact",
+          "settings": {
+            "title": "Volg ons",
+            "links": "Instagram | https://instagram.com/higrip.nl\nTikTok | https://tiktok.com/@higrip.nl\nLinkedIn | https://linkedin.com/company/h%C3%AF-grip/about/\nFacebook | https://facebook.com/profile.php?id=61569860846565",
+            "email": "info@higrip.nl",
+            "kvk_label": "KVK",
+            "btw_label": "BTW"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

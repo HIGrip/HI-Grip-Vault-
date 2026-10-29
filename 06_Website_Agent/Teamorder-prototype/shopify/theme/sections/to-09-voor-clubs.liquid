@@ -1,0 +1,308 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 96, ref: 1500 -%}
+<section class="to to-vc{% if s.align == 'center' %} to-c{% endif %}"{% if s.anim %} data-anim{% endif %} id="clubs" style="--to-lh: 0.88; --to-tile-h: {{ s.tile_h }}px;" aria-labelledby="to-v-{{ section.id }}">
+  <div class="to-wrap">
+    <div class="to-vc-h">
+      <h2 class="to-h2 to-rv" id="to-v-{{ section.id }}"{% if s.h_ac %} style="color: var(--to-ac)"{% endif %}>{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' }}</h2>
+      {%- if s.lead != blank -%}<p class="to-lead to-rv" style="--d:60ms">{{ s.lead }}</p>{%- endif -%}
+    </div>
+    <div class="to-vgrid{% if s.big_side == 'left' %} to-vgrid--rev{% endif %}">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <article class="to-vt{% if b.big %} to-vt--big{% endif %} to-rv" style="--d:{{ forloop.index0 | times: 80 }}ms;--p:{{ b.px }}% {{ b.py }}%" {{ block.shopify_attributes }}>
+          {%- render 'to-img', image: b.image, alt: b.alt, sizes: '(min-width: 900px) 50vw, 50vw' -%}
+          <div>
+            <h3>{{ b.title | escape | newline_to_br }}</h3>
+            {%- if b.text != blank -%}<p>{{ b.text }}</p>{%- endif -%}
+            {%- if b.chips != blank -%}<div class="to-vt__mini">{%- assign chips = b.chips | split: ',' -%}{%- for c in chips -%}<span>{{ c | strip }}</span>{%- endfor -%}</div>{%- endif -%}
+            {%- if b.btn_label != blank -%}<a class="to-pill to-pill--w" href="{{ b.btn_link }}"><span>{% if b.btn_pre != blank %}<span class="to-d-only">{{ b.btn_pre }} </span>{% endif %}{{ b.btn_label }}</span><span class="to-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>{%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 09 · Voor clubs",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Voor clubs",
+      "info": "Zet een woord tussen [ ] voor de accentkleur."
+    },
+    {
+      "type": "checkbox",
+      "id": "h_ac",
+      "label": "Hele kop in accentkleur",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Intro",
+      "default": "Meer dan één team? Met HÏ Grip Zakelijk regel je de hele club, met of zonder eigen logo."
+    },
+    {
+      "type": "select",
+      "id": "big_side",
+      "label": "Grote tegel",
+      "default": "right",
+      "options": [
+        {
+          "value": "right",
+          "label": "Rechts"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "tile_h",
+      "label": "Tegelhoogte (mobiel)",
+      "min": 140,
+      "max": 400,
+      "step": 10,
+      "default": 230,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#D6D6D6"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Tekstmaat (mobiel)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Tekstmaat (desktop)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 17,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tile",
+      "name": "Tegel",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst"
+        },
+        {
+          "type": "range",
+          "id": "px",
+          "label": "Uitsnede horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "py",
+          "label": "Uitsnede verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50,
+          "unit": "%"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Titel",
+          "default": "Jouw logo op de sok",
+          "info": "Nieuwe regel = regelafbreking"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Tekst (desktop)"
+        },
+        {
+          "type": "text",
+          "id": "chips",
+          "label": "Labels (desktop)",
+          "info": "Komma tussen de labels, bijv. 35-38, 39-42"
+        },
+        {
+          "type": "checkbox",
+          "id": "big",
+          "label": "Grote tegel",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "btn_pre",
+          "label": "Knop: voorwoord (alleen desktop)"
+        },
+        {
+          "type": "text",
+          "id": "btn_label",
+          "label": "Knop"
+        },
+        {
+          "type": "url",
+          "id": "btn_link",
+          "label": "Knoplink"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3
+}
+{% endschema %}

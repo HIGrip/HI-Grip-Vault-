@@ -1,0 +1,304 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 168, ref: 1600 -%}
+{%- capture pos -%}--to-pos-d: {{ s.pos_x }}% {{ s.pos_y }}%; --to-pos-m: {{ s.pos_x_m }}% {{ s.pos_y_m }}%; --to-ov: {{ s.overlay }}%; --to-hero-h-m: {{ s.hero_h_m }}svh; --to-hero-h-d: {{ s.hero_h_d }}px;{%- endcapture -%}
+<section class="to to-hero{% if s.align == 'center' %} to-c{% endif %}"{% if s.anim %} data-anim{% endif %} style="{{ pos }}" aria-labelledby="to-h1-{{ section.id }}">
+  {%- render 'to-img', image: s.image, class: 'to-hero__img', alt: s.alt, priority: true, sizes: '100vw' -%}
+  <div class="to-wrap">
+    <h1 id="to-h1-{{ section.id }}">{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' | newline_to_br }}</h1>
+    <div class="to-hero__f">
+      {%- if s.sub != blank -%}<p>{{ s.sub }}</p>{%- endif -%}
+      {%- if s.btn_label != blank -%}<a class="to-pill{% if s.btn_style == 'light' %} to-pill--w{% endif %}" href="{{ s.btn_link | default: '#samenstellen' }}">{{ s.btn_label }}<span class="to-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>{%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 01 · Hero",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst",
+      "default": "Spelers van Concordia met witte HÏ Grip gripsokken en ballen op kunstgras"
+    },
+    {
+      "type": "range",
+      "id": "pos_x",
+      "label": "Uitsnede horizontaal (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_y",
+      "label": "Uitsnede verticaal (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 60,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_x_m",
+      "label": "Uitsnede horizontaal (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 56,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_y_m",
+      "label": "Uitsnede verticaal (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 60,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "overlay",
+      "label": "Donker verloop onderaan",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 90,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "hero_h_m",
+      "label": "Hoogte (mobiel, % van scherm)",
+      "min": 50,
+      "max": 100,
+      "step": 2,
+      "default": 86,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "hero_h_d",
+      "label": "Maximale hoogte (desktop)",
+      "min": 400,
+      "max": 1000,
+      "step": 10,
+      "default": 760,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Heel je team\nop grip.",
+      "info": "Nieuwe regel = regelafbreking. Zet een woord tussen [ ] voor de accentkleur."
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "label": "Tekst onder de kop",
+      "default": "Teamorder vanaf 5 paar. Hoe meer paar, hoe lager je prijs per paar."
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Knop",
+      "default": "Stel samen"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Knoplink",
+      "info": "Leeg = naar de samensteller (#samenstellen)"
+    },
+    {
+      "type": "select",
+      "id": "btn_style",
+      "label": "Knopstijl",
+      "default": "light",
+      "options": [
+        {
+          "value": "light",
+          "label": "Wit"
+        },
+        {
+          "value": "dark",
+          "label": "Zwart"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#D1D1D1"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 52,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 168,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Tekstmaat (mobiel)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Tekstmaat (desktop)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 18,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

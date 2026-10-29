@@ -1,0 +1,687 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 05 · Features: 360°-opname van de sok (frames uit Instellingen > Bestanden) met features als blokken.
+  Elke feature heeft een draaipositie (frame) en een markerpunt. Motion: één rondgang bij binnenkomst, daarna loopt
+  de sok zelf de features langs; hover, tik, slepen en pijltjes kiezen zelf.
+  @example
+  <!-- Homepage > HÏ 05 · Features (360°) -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+  assign f0name = s.frame_prefix | append: '000.webp'
+  assign f0 = f0name | file_url
+  assign fbase = f0 | split: '?' | first
+  assign first = section.blocks | first
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_line_c = s.line_c_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-05-giant_c: {{ s.giant_c }}; --hp-05-cycle: {{ s.cycle }}s; --hp-05-feat_c: {{ s.feat_c }}; --hp-05-feat_on: {{ s.feat_on }}; --hp-05-spec_c: {{ s.spec_c }}; --hp-05-line_c: {{ s.line_c | color_modify: 'alpha', hp_a_line_c }}; --hp-05-line_on: {{ s.line_on }}; --hp-05-detail_c: {{ s.detail_c }}; --hp-05-mark_ring: {{ s.mark_ring }}; --hp-05-mark_bg: {{ s.mark_bg }}; --hp-05-mark_fg: {{ s.mark_fg }}; --hp-05-reset_bg: {{ s.reset_bg }}; --hp-05-reset_fg: {{ s.reset_fg }}; --hp-05-bg: {{ s.bg }}; --hp-05-fg: {{ s.fg }}; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-05-giant-k: {{ s.giant_m | times: 1.0 | divided_by: 43 }}; --hp-05-fname-k: {{ s.fname_m | times: 1.0 | divided_by: 15 }}; --hp-05-fspec-k: {{ s.fspec_m | times: 1.0 | divided_by: 16 }}; --hp-05-ftext-k: {{ s.ftext_m | times: 1.0 | divided_by: 14 }}; --hp-05-detail-k: {{ s.detail_m | times: 1.0 | divided_by: 15 }}; --hp-05-pt-k: {{ s.pin_pt_m | times: 1.0 | divided_by: 32 }}; --hp-05-pb-k: {{ s.pin_pb_m | times: 1.0 | divided_by: 16 }}; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 14 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-05-giant-k: {{ s.giant_d | times: 1.0 | divided_by: 60 }}; --hp-05-fname-k: {{ s.fname_d | times: 1.0 | divided_by: 19 }}; --hp-05-fspec-k: {{ s.fspec_d | times: 1.0 | divided_by: 30 }}; --hp-05-ftext-k: {{ s.ftext_d | times: 1.0 | divided_by: 15 }}; --hp-05-detail-k: {{ s.detail_d | times: 1.0 | divided_by: 15 }}; --hp-05-pt-k: {{ s.pin_pt_d | times: 1.0 | divided_by: 24 }}; --hp-05-pb-k: {{ s.pin_pb_d | times: 1.0 | divided_by: 24 }}; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 14 }};} }
+</style>
+<section class="hp-section hp-section--flush hp-05" data-hp="05" aria-labelledby="hp-05-h2-{{ section.id }}" data-frames="{{ fbase }}" data-n="{{ s.frame_count }}" data-step="{{ s.frame_step }}" data-cycle="{{ s.cycle }}"{% unless s.intro %} data-intro="off"{% endunless %}{% unless s.auto %} data-auto="off"{% endunless %}>
+  <div class="hp-05-pin">
+    <{{ tag }} class="hp-sr" id="hp-05-h2-{{ section.id }}">{{ s.heading }}</{{ tag }}>
+
+    <p class="hp-05-giant" aria-hidden="true"><span class="hp-05-giant__in">{{ first.settings.name }}</span></p>
+
+    <div class="hp-05-media">
+      <div class="hp-05-stage" id="hp-05-stage-{{ section.id }}" tabindex="0" role="slider" aria-label="{{ s.stage_label | escape }}" aria-valuemin="0" aria-valuemax="359" aria-valuenow="0">
+        <img class="hp-05-stage__img" src="{{ f0 }}" width="{{ s.frame_size }}" height="{{ s.frame_size }}" loading="lazy" decoding="async" alt="{{ s.stage_alt | escape }}">
+        <canvas class="hp-05-stage__canvas" aria-hidden="true"></canvas>
+        <span class="hp-05-mark" aria-hidden="true"><span class="hp-05-mark__ring"><span class="hp-05-mark__no"></span></span></span>
+      </div>
+      <div class="hp-05-controls">
+        <span class="hp-05-dial" aria-hidden="true"><span class="hp-05-dial__tick"></span></span>
+        <button class="hp-05-reset" type="button" aria-controls="hp-05-stage-{{ section.id }}">{{ s.reset_label }}</button>
+      </div>
+    </div>
+
+    <p class="hp-05-detail" aria-hidden="true">{{ first.settings.text }}</p>
+
+    <ol class="hp-05-list">
+      {%- for block in section.blocks -%}
+        {%- assign b = block.settings -%}
+        <li {{ block.shopify_attributes }}><button class="hp-05-feat" type="button" data-f="f{{ forloop.index }}" data-no="{{ forloop.index }}" data-frame="{{ b.frame }}" data-mark="{{ b.mark_x | divided_by: 100.0 }},{{ b.mark_y | divided_by: 100.0 }},{{ b.mark_z | divided_by: 100.0 }}" aria-pressed="false" aria-controls="hp-05-stage-{{ section.id }}"><span class="hp-05-feat__no" aria-hidden="true">{{ forloop.index }}</span><span class="hp-05-feat__name">{{ b.name }}</span><span class="hp-05-feat__spec">{{ b.spec }}</span><span class="hp-05-feat__text">{{ b.text }}</span></button></li>
+      {%- endfor -%}
+    </ol>
+
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-05-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 05 · Features (360°)",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop (onzichtbaar, voor SEO en schermlezers)",
+      "default": "De features van de Performance Gripsokken 2.0"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "giant_m",
+      "label": "Grote featurenaam: grootte (mobiel)",
+      "min": 12,
+      "max": 112,
+      "step": 1,
+      "unit": "px",
+      "default": 43
+    },
+    {
+      "type": "range",
+      "id": "giant_d",
+      "label": "Grote featurenaam: grootte (laptop)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "giant_c",
+      "label": "Grote featurenaam: kleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knop: tekst",
+      "default": "Shop de 2.0"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Knop: link"
+    },
+    {
+      "type": "text",
+      "id": "reset_label",
+      "label": "Knop \"hele sok\"",
+      "default": "Hele sok"
+    },
+    {
+      "type": "header",
+      "content": "360°-opname"
+    },
+    {
+      "type": "text",
+      "id": "frame_prefix",
+      "label": "Bestandsnaam frames (zonder nummer)",
+      "default": "hp-f360-s",
+      "info": "Frames staan in Instellingen > Bestanden als <naam>000.webp, <naam>003.webp, … (3 cijfers)."
+    },
+    {
+      "type": "number",
+      "id": "frame_count",
+      "label": "Aantal frames",
+      "default": 137,
+      "info": "Het ontwerp gebruikt 137 frames (elke 3e van 411)."
+    },
+    {
+      "type": "range",
+      "id": "frame_step",
+      "label": "Stap in de nummering",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "frame_size",
+      "label": "Framegrootte (px, vierkant)",
+      "min": 400,
+      "max": 2400,
+      "step": 100,
+      "default": 1600,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "stage_label",
+      "label": "Draaiknop: toegankelijke naam",
+      "default": "Sleep om te draaien"
+    },
+    {
+      "type": "text",
+      "id": "stage_alt",
+      "label": "Alt-tekst eerste frame",
+      "default": "360-gradenopname van de Performance Gripsokken 2.0 in wit. Sleep om te draaien."
+    },
+    {
+      "type": "checkbox",
+      "id": "intro",
+      "label": "Bij binnenkomst één keer rond draaien",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "auto",
+      "label": "Daarna zelf de features langslopen",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "cycle",
+      "label": "Tijd per feature",
+      "min": 1,
+      "max": 15,
+      "step": 0.5,
+      "default": 4.5,
+      "unit": "s"
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "Elke feature is een blok (maximaal 8: op laptop 1–4 links en 5–8 rechts). Frame = draaipositie; marker = punt op de sok in dat frame (% van het beeld)."
+    },
+    {
+      "type": "range",
+      "id": "fname_m",
+      "label": "Naam grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "fname_d",
+      "label": "Naam grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "range",
+      "id": "fspec_m",
+      "label": "Kerngegeven grootte (laptop) (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "fspec_d",
+      "label": "Kerngegeven grootte (laptop) (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "ftext_m",
+      "label": "Uitleg grootte (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "ftext_d",
+      "label": "Uitleg grootte (laptop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "feat_c",
+      "label": "Feature: kleur",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "feat_on",
+      "label": "Actieve feature: kleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "spec_c",
+      "label": "Kerngegeven: kleur (laptop)",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "color",
+      "id": "line_c",
+      "label": "Lijn naar de sok (laptop)",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "line_c_a",
+      "label": "Lijn naar de sok (laptop): dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "line_on",
+      "label": "Lijn naar de sok, actief (laptop)",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "detail_c",
+      "label": "Uitleg onder de sok (mobiel)",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "detail_m",
+      "label": "Uitleg onder de sok (mobiel): grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "detail_d",
+      "label": "Uitleg onder de sok (mobiel): grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "mark_ring",
+      "label": "Marker: ring",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "mark_bg",
+      "label": "Marker: cijfer achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "mark_fg",
+      "label": "Marker: cijfer",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "color",
+      "id": "reset_bg",
+      "label": "Knop \"hele sok\": achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "reset_fg",
+      "label": "Knop \"hele sok\": tekst",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#F7F7F7"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "pin_pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "pin_pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "pin_pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "pin_pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#0A0A0A"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Naam",
+          "default": "Maximale grip"
+        },
+        {
+          "type": "text",
+          "id": "spec",
+          "label": "Kerngegeven (laptop)",
+          "default": "Siliconen zones"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Uitleg",
+          "default": "Siliconen zones houden je voet vast in je schoen"
+        },
+        {
+          "type": "number",
+          "id": "frame",
+          "label": "Draaipositie (framenummer 0–408)",
+          "default": 0
+        },
+        {
+          "type": "number",
+          "id": "mark_x",
+          "label": "Marker: horizontaal (%)",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "mark_y",
+          "label": "Marker: verticaal (%)",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "mark_z",
+          "label": "Marker: diepte richting camera (%)",
+          "default": 10
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "HÏ 05 · Features (360°)",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Maximale grip",
+            "spec": "Siliconen zones",
+            "text": "Siliconen zones houden je voet vast in je schoen",
+            "frame": 96,
+            "mark_x": 50,
+            "mark_y": 74,
+            "mark_z": 10
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Compressie",
+            "spec": "15–20 mmHg",
+            "text": "15–20 mmHg ondersteunt je doorbloeding tijdens inspanning",
+            "frame": 264,
+            "mark_x": 41,
+            "mark_y": 43,
+            "mark_z": 8
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Versterkte hiel",
+            "spec": "Extra dikte",
+            "text": "Extra dikte precies onder je hiel",
+            "frame": 6,
+            "mark_x": 75.5,
+            "mark_y": 50,
+            "mark_z": 4
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Ademend",
+            "spec": "Open structuur",
+            "text": "Open structuur bovenop de voet",
+            "frame": 300,
+            "mark_x": 35,
+            "mark_y": 60,
+            "mark_z": 8
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Coolmax®",
+            "spec": "30% Coolmax",
+            "text": "30% Coolmax voert vocht direct af van de huid",
+            "frame": 360,
+            "mark_x": 49,
+            "mark_y": 30,
+            "mark_z": 10
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Naadloos",
+            "spec": "Zonder stiksels",
+            "text": "Rondom gebreid zonder stiksels, naadloze teenzone",
+            "frame": 336,
+            "mark_x": 48,
+            "mark_y": 88,
+            "mark_z": 12
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Special cushioning",
+            "spec": "Dempingzones",
+            "text": "Speciale dempingzones onder de voet",
+            "frame": 216,
+            "mark_x": 46,
+            "mark_y": 84,
+            "mark_z": 6
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "name": "Hoogwaardige materialen",
+            "spec": "Gekozen garens",
+            "text": "Zorgvuldig gekozen garens voor meer comfort, wedstrijd na wedstrijd",
+            "frame": 0,
+            "mark_x": 56,
+            "mark_y": 50,
+            "mark_z": 10
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,285 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shop_1": {
+      "type": "hi-shop-1",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "f1": "Gripsokken",
+            "f2": "Twee modellen, allebei top in hun klasse. De 1.0 is grip voor de scherpste prijs, de 2.0 is ultieme performance.",
+            "f3": "2 modellen · 3 varianten"
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "muted": "#5c5d5f",
+        "accent": "#ccff00",
+        "line": "#e5e5e5",
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "body_size": 15,
+        "body_mobile": 14,
+        "title_size": 72,
+        "title_mobile": 40,
+        "button_size": 12,
+        "content_width": 1200,
+        "side_space": 36,
+        "side_mobile": 16,
+        "space_top": 16,
+        "space_bottom": 28,
+        "button_radius": 50
+      }
+    },
+    "shop_2": {
+      "type": "hi-shop-2",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "f2": "Performance Gripsokken 1.0, zijaanzicht met grippatroon",
+            "f4": "",
+            "f6": "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon",
+            "f8": "",
+            "f9": "/products/performance-gripsokken",
+            "f10": "/products/performance-gripsokken",
+            "f11": "/products/performance-gripsokken",
+            "f12": "/products/performance-gripsokken-2-0-zwart",
+            "f13": "/products/performance-gripsokken-2-0-zwart",
+            "f14": "/products/performance-gripsokken-2-0-zwart",
+            "f15": "/products/performance-gripsokken-2-0-wit",
+            "f16": "/products/performance-gripsokken-2-0-zwart",
+            "f17": "/pages/gripsokken-vergelijken",
+            "f18": "Prijsvriendelijk",
+            "f19": "Performance Gripsokken 1.0",
+            "f20": "€14,95",
+            "f21": "",
+            "f22": "Siliconen gripzones onder de voet",
+            "f23": "Katoenmix voor elke dag en elke training",
+            "f24": "Ideaal voor training, pilates en recreatief sporten",
+            "f25": "Maat 34–39 · 40–46",
+            "f26": "Shop 1.0",
+            "f27": "Ultieme performance",
+            "f28": "Performance Gripsokken 2.0",
+            "f29": "€17,95",
+            "f30": "",
+            "f31": "15-20 mmHg compressie en 30% Coolmax®",
+            "f32": "Naadloos, met versterkte hiel",
+            "f33": "Gebouwd voor wedstrijd en intensieve training",
+            "f34": "Zwart",
+            "f35": "Wit"
+          }
+        },
+        "content_2": {
+          "type": "content_2",
+          "settings": {
+            "f36": "Zwart",
+            "f37": "Shop 2.0",
+            "f38": "Twijfel je tussen de 1.0 en de 2.0?",
+            "f39": "Bekijk ze naast elkaar.",
+            "f40": "Vergelijk"
+          }
+        }
+      },
+      "block_order": [
+        "content_1",
+        "content_2"
+      ],
+      "settings": {
+        "white_label": "Wit",
+        "black_label": "Zwart",
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "muted": "#5c5d5f",
+        "accent": "#ccff00",
+        "line": "#e5e5e5",
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "body_size": 15,
+        "body_mobile": 14,
+        "title_size": 38,
+        "title_mobile": 26,
+        "button_size": 12,
+        "content_width": 1200,
+        "side_space": 36,
+        "side_mobile": 16,
+        "space_top": 0,
+        "space_bottom": 0,
+        "button_radius": 50,
+        "product_title": 24,
+        "product_title_mobile": 15,
+        "price_size": 18,
+        "price_mobile": 15,
+        "detail_size": 15,
+        "badge_size": 10,
+        "grid_gap": 24,
+        "card_radius": 6,
+        "image_bg": "#ffffff",
+        "badge_bg": "#000000",
+        "badge_text": "#ffffff",
+        "compare_bg": "#111111",
+        "compare_text": "#ffffff",
+        "image_10": 100,
+        "image_20": 100,
+        "image_ratio": "4 / 3",
+        "caption_size": 11,
+        "image_10_mobile": 100,
+        "image_20_mobile": 100
+      }
+    },
+    "shop_3": {
+      "type": "hi-shop-3",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "f1": "Gratis verzending",
+            "f2": "Vanaf €35",
+            "f3": "Snel in huis",
+            "f4": "Binnen 1 werkdag verzonden",
+            "f5": "30 dagen retour",
+            "f6": "Past het niet, stuur het terug"
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "muted": "#5c5d5f",
+        "accent": "#ccff00",
+        "line": "#e5e5e5",
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "body_size": 15,
+        "body_mobile": 14,
+        "title_size": 38,
+        "title_mobile": 26,
+        "button_size": 12,
+        "content_width": 1200,
+        "side_space": 36,
+        "side_mobile": 16,
+        "space_top": 0,
+        "space_bottom": 0,
+        "button_radius": 50
+      }
+    },
+    "shop_4": {
+      "type": "hi-shop-4",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "f1": "/products/performance-gripsokken",
+            "f2": "/products/performance-gripsokken-2-0-zwart",
+            "f3": "/products/performance-gripsokken-2-0-wit",
+            "f4": "/pages/over-ons",
+            "f5": "Gripsokken kopen bij HÏ Grip",
+            "f6": "Glijdt je voet weg in je schoen bij een sprint, een draai of een harde stop? Gripsokken houden je voet op zijn plek, zodat je kracht naar de grond gaat. Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).",
+            "f7": "Kies de",
+            "f8": "Performance Gripsokken 1.0",
+            "f9": "voor betrouwbare grip bij training en pilates, voor de scherpste prijs. Kies de Performance Gripsokken 2.0 in",
+            "f10": "zwart",
+            "f11": "of",
+            "f12": "wit",
+            "f13": "als je alles uit elke wedstrijd wilt halen. Meer over ons merk lees je op",
+            "f14": "Over ons",
+            "f15": ".",
+            "f16": "Welke maat heb ik nodig?",
+            "f17": "De 1.0 is er in 34–39 en 40–46. De 2.0 in 35–38, 39–42 en 43–47. Kies de maat die bij je schoenmaat past.",
+            "f18": "Wat is het verschil tussen de 1.0 en de 2.0?",
+            "f19": "Beide hebben siliconen gripzones. De 2.0 voegt 15–20 mmHg compressie, 30% Coolmax®, een naadloze teenzone, een versterkte hiel, een ademende bovenkant en special cushioning toe.",
+            "f20": "Wanneer heb ik mijn bestelling?",
+            "f21": "We verzenden binnen 1 werkdag. Vanaf €35 is de verzending gratis.",
+            "f22": "Kan ik retourneren?",
+            "f23": "Ja, je hebt 30 dagen om te retourneren."
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "text_color": "#000000",
+        "muted": "#5c5d5f",
+        "accent": "#ccff00",
+        "line": "#e5e5e5",
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "body_size": 15,
+        "body_mobile": 14,
+        "title_size": 38,
+        "title_mobile": 26,
+        "button_size": 12,
+        "content_width": 1200,
+        "side_space": 36,
+        "side_mobile": 16,
+        "space_top": 0,
+        "space_bottom": 0,
+        "button_radius": 50
+      }
+    },
+    "shop_5": {
+      "type": "hi-shop-5",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "f1": "https://nl.trustpilot.com/review/higrip.nl",
+            "f2": "3500+",
+            "f3": "sporters gingen je voor",
+            "f4": "4,6",
+            "f5": "op Trustpilot"
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "bg": "{{ settings.color_palette.background }}",
+        "text_color": "#000000",
+        "muted": "#5c5d5f",
+        "accent": "#ccff00",
+        "line": "#e5e5e5",
+        "button_bg": "#000000",
+        "button_text": "#ffffff",
+        "body_size": 15,
+        "body_mobile": 14,
+        "title_size": 38,
+        "title_mobile": 26,
+        "button_size": 12,
+        "content_width": 1200,
+        "side_space": 36,
+        "side_mobile": 16,
+        "space_top": 0,
+        "space_bottom": 0,
+        "button_radius": 50
+      }
+    }
+  },
+  "order": [
+    "shop_1",
+    "shop_2",
+    "shop_3",
+    "shop_4",
+    "shop_5"
+  ]
+}

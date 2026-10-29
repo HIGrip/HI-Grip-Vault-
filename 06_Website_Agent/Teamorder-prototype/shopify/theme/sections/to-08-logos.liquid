@@ -1,0 +1,215 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 36, ref: 1385 -%}
+<section class="to to-lg-sec"{% if s.anim %} data-anim{% endif %} style="--to-lh: 1; --to-speed: {{ s.speed }}s; --to-logo-w: {{ s.logo_w }}px; --to-logo-hh: {{ s.logo_h }}px; --to-lg-h: {{ s.head_w }}px;" aria-labelledby="to-cl-{{ section.id }}">
+  <div class="to-wrap to-lg">
+    <h2 class="to-h2 to-rv" id="to-cl-{{ section.id }}">{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' }}</h2>
+    <div class="to-mq{% if s.grey %} to-mq--grey{% endif %} to-rv">
+      <ul>
+        {%- for pass in (1..2) -%}
+          {%- for block in section.blocks -%}
+            <li{% if pass == 2 %} aria-hidden="true"{% else %} {{ block.shopify_attributes }}{% endif %}>
+              {%- if pass == 2 -%}{%- render 'to-img', image: block.settings.image, decorative: true, sizes: '120px' -%}{%- else -%}{%- render 'to-img', image: block.settings.image, alt: block.settings.alt, sizes: '120px' -%}{%- endif -%}
+            </li>
+          {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 08 · Logo's",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Clubs en retailers kiezen al voor [HÏ Grip.]",
+      "info": "Zet een woord tussen [ ] voor de accentkleur."
+    },
+    {
+      "type": "checkbox",
+      "id": "grey",
+      "label": "Logo's in grijstinten (kleur bij hover)",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Snelheid (seconden per ronde)",
+      "min": 10,
+      "max": 80,
+      "step": 2,
+      "default": 32,
+      "unit": "s"
+    },
+    {
+      "type": "range",
+      "id": "logo_w",
+      "label": "Logobreedte (desktop)",
+      "min": 60,
+      "max": 200,
+      "step": 2,
+      "default": 104,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "logo_h",
+      "label": "Logohoogte (desktop)",
+      "min": 30,
+      "max": 120,
+      "step": 2,
+      "default": 64,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "head_w",
+      "label": "Breedte kop (desktop)",
+      "min": 240,
+      "max": 640,
+      "step": 10,
+      "default": 440,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#55565A"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 48,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 26,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Naam (alt-tekst)"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20
+}
+{% endschema %}

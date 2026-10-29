@@ -1,0 +1,487 @@
+<meta charset="utf-8">
+<title>HÏ Grip Teamorder 1.12</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap">
+<style>
+/* 1.12 Samensteller: blokkenwand van 1.10, met de markeerstift, het podium en de mobiele sticky balk van 1.3. Kern is de samensteller: regels met type, kleur, maat en aantal, met live staffelprijs en een duwtje naar de volgende staffel. */
+:root {
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --carbon: #1A1A1A;
+  --off: #EAE8E5;
+  --studio: #F4F3F1;
+  --volt: #CCFF00;
+  --t-padel: #CFDCE3;
+  --t-tennis: #E8D6CA;
+  --t-voetbal: #D5DDC8;
+  --t-rugby: #DDD8C8;
+  --ink2: #3A3A3C;
+  --mute: #909194;
+  --line: rgba(10, 10, 10, 0.12);
+  --line-d: rgba(255, 255, 255, 0.18);
+  --trust: #00b67a;
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --r: clamp(20px, 2vw, 32px);
+  --gap: 12px;
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; scroll-padding-top: 16px; }
+body { margin: 0; background: var(--white); color: var(--black); font: 400 16px/1.55 var(--font); letter-spacing: -0.02em; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { text-transform: uppercase; letter-spacing: -0.045em; text-wrap: balance; }
+button, input { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--black); outline-offset: 3px; }
+.dk :focus-visible { outline-color: var(--volt); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.wall { max-width: 1440px; margin-inline: auto; padding: 0 max(12px, env(safe-area-inset-right, 0px)) 12px max(12px, env(safe-area-inset-left, 0px)); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: var(--gap); }
+.b { position: relative; grid-column: 1 / -1; border-radius: var(--r); padding: clamp(22px, 3vw, 48px); overflow: hidden; isolation: isolate; }
+.dk { background: var(--black); color: var(--white); }
+.vt { background: var(--volt); }
+.of { background: var(--off); }
+.st { background: var(--studio); }
+.tp { background: var(--t-padel); } .tt { background: var(--t-tennis); } .tv { background: var(--t-voetbal); } .tr { background: var(--t-rugby); }
+.ph { padding: 0; min-height: 280px; }
+.ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1000ms var(--ease); }
+@media (hover: hover) { .ph:hover > img { transform: scale(1.04); } }
+.h2 { font-weight: 800; font-size: clamp(30px, 3.6vw, 56px); line-height: 0.98; }
+.lead { font-size: clamp(16px, 1.3vw, 19px); line-height: 1.5; max-width: 42ch; }
+.mk { background: var(--volt); color: var(--black); padding: 0.02em 0.16em 0.04em; border-radius: 0.14em; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.pill { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 54px; padding: 6px 6px 6px 26px; border: 0; border-radius: 999px; background: var(--black); color: var(--white); font: 700 14px/1 var(--font); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: transform 160ms var(--ease); }
+.pill:active { transform: scale(0.98); }
+.pill .chev { flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--white); color: var(--black); transition: transform 200ms var(--ease); }
+.pill .chev svg { width: 14px; height: 14px; }
+.pill--w { background: var(--white); color: var(--black); }
+.pill--w .chev { background: var(--black); color: var(--white); }
+@media (hover: hover) { .pill:hover .chev { transform: translateX(4px); } }
+.js .rv { opacity: 0; transform: translateY(26px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); transition-delay: var(--d, 0ms); }
+.js .rv.in { opacity: 1; transform: none; }
+
+/* nav */
+.nav { max-width: 1440px; margin-inline: auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: calc(16px + env(safe-area-inset-top, 0px)) max(24px, env(safe-area-inset-right, 0px)) 16px max(24px, env(safe-area-inset-left, 0px)); }
+.logo { font: italic 900 22px/1 var(--font); letter-spacing: -0.04em; text-transform: uppercase; text-decoration: none; }
+.nav ul { display: none; gap: 28px; }
+.nav li a { font: 600 13px/1 var(--font); letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; }
+.nav .pill { min-height: 44px; padding: 4px 4px 4px 18px; font-size: 12px; }
+.nav .pill .chev { width: 36px; height: 36px; }
+@media (min-width: 981px) { .nav ul { display: flex; } }
+
+/* hero */
+.hero-a { display: flex; flex-direction: column; justify-content: space-between; gap: 36px; min-height: 480px; }
+.hero-a h1 { font-weight: 900; font-style: italic; font-size: clamp(44px, 6.2vw, 96px); line-height: 0.9; padding-right: 0.06em; }
+.hero-a .lead { margin-top: 20px; color: #C9CACC; }
+.hero-a .pill { margin-top: 28px; }
+.facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.facts span { display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; border: 1px solid var(--line-d); border-radius: 999px; font: 600 13px/1 var(--font); }
+.facts b { color: var(--volt); }
+.facts svg { width: 13px; height: 13px; color: var(--trust); }
+.hero-b { min-height: 420px; }
+.hero-b > img { object-position: 50% 70%; }
+.sticker { position: absolute; z-index: 3; left: 18px; top: 18px; display: grid; place-items: center; width: 124px; height: 124px; border-radius: 50%; background: var(--volt); color: var(--black); text-align: center; font: italic 900 19px/0.95 var(--font); letter-spacing: -0.04em; text-transform: uppercase; transform: rotate(-10deg); box-shadow: 0 10px 30px rgba(10,10,10,0.25); }
+.sticker small { display: block; margin-top: 4px; font: 700 11px/1.2 var(--font); letter-spacing: 0.02em; text-transform: none; }
+@media (min-width: 981px) { .hero-a { grid-column: 1 / span 7; min-height: 600px; } .hero-b { grid-column: 8 / span 5; } }
+
+/* service */
+.usp { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 190px; padding: clamp(20px, 2.4vw, 36px); }
+.usp b { display: flex; align-items: center; gap: 8px; font: italic 900 clamp(36px, 4vw, 60px)/0.9 var(--font); letter-spacing: -0.05em; text-transform: uppercase; padding-right: 0.06em; }
+.usp b svg { width: 0.36em; height: 0.36em; color: var(--trust); }
+.usp p { font-size: 14px; line-height: 1.4; color: var(--ink2); max-width: 24ch; }
+.usp { grid-column: span 6; }
+@media (min-width: 1100px) { .usp { grid-column: span 3; } }
+
+/* samensteller */
+.cfg-h { display: grid; gap: 14px; }
+.cfg-h .lead { color: var(--ink2); }
+.types { display: grid; gap: 8px; margin-top: 6px; }
+.types li { display: flex; gap: 12px; align-items: center; font-size: 14px; color: var(--ink2); }
+.types b { flex: none; min-width: 44px; padding: 6px 10px; border-radius: 999px; background: var(--black); color: var(--white); font: 800 12px/1 var(--font); text-align: center; }
+.lines { display: grid; gap: 10px; margin-top: 28px; }
+.ln { display: grid; gap: 16px; padding: 18px; border-radius: calc(var(--r) - 8px); background: var(--white); box-shadow: 0 1px 0 var(--line); }
+.ln-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.ln-top .n { font: 700 12px/1 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--mute); }
+.del { display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 50%; background: var(--studio); font-size: 20px; line-height: 1; }
+.del[hidden] { display: none; }
+.row { display: grid; gap: 8px; }
+.row > span { font: 600 12px/1.2 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); }
+.seg { display: flex; flex-wrap: wrap; gap: 6px; }
+.seg button { min-height: 44px; min-width: 44px; padding: 0 16px; border: 1.5px solid var(--line); border-radius: 999px; background: var(--white); font: 700 14px/1 var(--font); font-variant-numeric: tabular-nums; transition: background-color 180ms var(--ease), color 180ms var(--ease), border-color 180ms var(--ease); }
+.seg button[aria-pressed="true"] { background: var(--black); color: var(--white); border-color: var(--black); }
+.seg button i { display: inline-block; width: 16px; height: 16px; margin: -3px 8px -3px -4px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(128,128,128,0.5); vertical-align: middle; }
+.ln-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding-top: 14px; border-top: 1px solid var(--line); }
+.step { display: inline-flex; align-items: center; border: 1.5px solid var(--black); border-radius: 999px; }
+.step button { width: 46px; height: 46px; border: 0; background: transparent; font: 600 22px/1 var(--font); }
+.step input { width: 52px; padding: 0; border: 0; background: transparent; font: 800 20px/1 var(--font); text-align: center; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+.step input::-webkit-inner-spin-button, .step input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.lp { text-align: right; font-size: 13px; color: var(--ink2); font-variant-numeric: tabular-nums; }
+.lp b { display: block; font: 800 18px/1.2 var(--font); color: var(--black); }
+.add { display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%; min-height: 56px; margin-top: 10px; border: 1.5px dashed rgba(10,10,10,0.35); border-radius: calc(var(--r) - 8px); background: transparent; font: 700 14px/1 var(--font); letter-spacing: 0.04em; text-transform: uppercase; }
+@media (hover: hover) { .add:hover { background: rgba(255,255,255,0.6); } }
+.ln-mid { display: grid; gap: 16px; }
+@media (min-width: 640px) { .ln-mid { grid-template-columns: auto 1fr; gap: 16px 24px; } }
+@media (min-width: 981px) { .cfg { grid-column: 1 / span 7; } .sum-col { grid-column: 8 / span 5; } }
+
+/* overzicht */
+.sum-col { padding: 0; overflow: visible; background: none; }
+.sum { position: sticky; top: 12px; padding: 6px; border-radius: calc(var(--r) + 4px); background: var(--black); }
+.sum .in { border-radius: calc(var(--r) - 2px); background: var(--carbon); color: var(--white); padding: clamp(20px, 2.4vw, 32px); box-shadow: inset 0 1px 0 rgba(255,255,255,0.08); }
+.sum .k { font: 600 12px/1.3 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: #C9CACC; }
+.price { margin-top: 10px; font: italic 900 clamp(56px, 6vw, 92px)/0.95 var(--font); letter-spacing: -0.055em; font-variant-numeric: tabular-nums; padding-right: 0.06em; }
+.price small { margin-left: 8px; font: 500 14px/1 var(--font); letter-spacing: -0.01em; color: #C9CACC; }
+.split { margin-top: 8px; font-size: 13px; color: #C9CACC; font-variant-numeric: tabular-nums; }
+.sum dl { display: grid; grid-template-columns: 1fr auto; gap: 10px 16px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--line-d); }
+.sum dt { color: #C9CACC; font-size: 14px; }
+.sum dd { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.sum dd.save { color: var(--volt); }
+.nudge { margin-top: 20px; padding: 16px; border-radius: 16px; background: rgba(255,255,255,0.07); }
+.nudge p { font-size: 15px; line-height: 1.45; }
+.nudge p b { color: var(--volt); }
+.bar { height: 8px; margin: 14px 0 12px; border-radius: 99px; background: rgba(255,255,255,0.14); overflow: hidden; }
+.bar i { display: block; height: 100%; width: var(--p, 0%); border-radius: inherit; background: var(--volt); transition: width 500ms var(--ease); }
+.nudge button { min-height: 44px; padding: 0 18px; border: 1.5px solid var(--white); border-radius: 999px; background: transparent; color: var(--white); font: 700 13px/1 var(--font); letter-spacing: 0.04em; text-transform: uppercase; }
+.nudge button[hidden] { display: none; }
+.sum .pill { width: 100%; margin-top: 20px; }
+.sum .msg { margin-top: 12px; font-size: 13px; color: #C9CACC; }
+.pod-h { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 26px; }
+.tabs { display: flex; gap: 4px; padding: 3px; border-radius: 999px; background: rgba(255,255,255,0.08); }
+.tabs button { min-height: 34px; padding: 0 14px; border: 0; border-radius: 999px; background: transparent; color: #C9CACC; font: 700 12px/1 var(--font); }
+.tabs button[aria-pressed="true"] { background: var(--white); color: var(--black); }
+.pod { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 4px; align-items: end; height: 170px; margin-top: 12px; }
+.pod li { display: flex; flex-direction: column; justify-content: flex-end; align-items: center; gap: 6px; height: 100%; }
+.pod .bb { display: flex; justify-content: center; width: 100%; height: calc(var(--h) * 1%); padding-top: 6px; border-radius: 6px 6px 0 0; background: rgba(255,255,255,0.14); color: #C9CACC; transition: background-color 250ms var(--ease), color 250ms var(--ease); }
+.pod .bb b { font: 700 10px/1 var(--font); font-variant-numeric: tabular-nums; writing-mode: vertical-rl; transform: rotate(180deg); }
+.pod .rg { font: 600 10px/1 var(--font); color: #C9CACC; font-variant-numeric: tabular-nums; }
+.pod li.on .bb { background: var(--volt); color: var(--black); }
+.pod li.on .rg { color: var(--white); }
+.pod-n { margin-top: 12px; font-size: 12px; line-height: 1.5; color: #C9CACC; }
+@media (min-width: 420px) { .pod .bb b { writing-mode: horizontal-tb; transform: none; font-size: 10px; } }
+@media (max-width: 559px) { .pod .bb b { font-size: 9px; } }
+
+/* voordelen sok */
+.ft { display: flex; flex-direction: column; justify-content: space-between; gap: 24px; min-height: 260px; }
+.ft h3 { font-weight: 800; font-size: clamp(20px, 1.8vw, 26px); line-height: 1.05; }
+.ft p { font-size: 15px; line-height: 1.45; color: var(--ink2); max-width: 30ch; }
+.ft .big { font: italic 900 clamp(64px, 7vw, 120px)/0.85 var(--font); letter-spacing: -0.06em; padding-right: 0.06em; }
+.ft .big small { font-size: 0.4em; letter-spacing: -0.03em; }
+.ft.dk p { color: #C9CACC; }
+.ft-grip { min-height: 420px; color: var(--white); }
+.ft-grip > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.ft-grip::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, rgba(10,10,10,0.82), rgba(10,10,10,0.1) 60%); }
+.ft-grip p { color: #E6E6E6; }
+.ft .src { font-size: 12px; color: var(--ink2); }
+.ft-sock { align-items: flex-start; }
+.ft-sock img { width: min(70%, 260px); margin: -10px auto 0; mix-blend-mode: multiply; transform: rotate(-8deg); transition: transform 700ms var(--ease); }
+@media (hover: hover) { .ft-sock:hover img { transform: rotate(0deg) scale(1.03); } }
+.ft { grid-column: span 12; }
+@media (min-width: 640px) { .ft { grid-column: span 6; } .ft-grip { grid-column: span 12; } }
+@media (min-width: 1100px) { .ft-grip { grid-column: 1 / span 6; grid-row: span 2; } .ft { grid-column: span 3; } .ft-wide { grid-column: span 6; } }
+
+/* concordia */
+.con-h { display: grid; gap: 18px; align-content: end; }
+.con-h p { color: #C9CACC; }
+.gal { grid-column: 1 / -1; display: flex; gap: var(--gap); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: calc(var(--gap) * -1); padding-inline: var(--gap); }
+.gal::-webkit-scrollbar { display: none; }
+.gal figure { position: relative; flex: none; width: 78%; margin: 0; aspect-ratio: 3 / 4; border-radius: var(--r); overflow: hidden; scroll-snap-align: center; background: var(--carbon); }
+.gal figure.ls { width: 92%; aspect-ratio: 3 / 2; }
+.gal img { width: 100%; height: 100%; object-fit: cover; transition: transform 1000ms var(--ease); }
+@media (hover: hover) { .gal figure:hover img { transform: scale(1.04); } }
+.gal-hint { grid-column: 1 / -1; font-size: 13px; color: var(--ink2); }
+@media (min-width: 981px) {
+  .con-h { grid-column: 1 / span 4; }
+  .gal { grid-column: 5 / -1; display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); grid-auto-rows: 150px; overflow: visible; margin: 0; padding: 0; }
+  .gal figure, .gal figure.ls { width: auto; aspect-ratio: auto; }
+  .g1 { grid-column: span 3; grid-row: span 3; } .g2 { grid-column: span 5; grid-row: span 2; } .g3 { grid-column: span 2; grid-row: span 2; } .g4 { grid-column: span 3; grid-row: span 2; }
+  .g5 { grid-column: span 3; grid-row: span 3; } .g6 { grid-column: span 5; grid-row: span 2; } .g7 { grid-column: span 2; grid-row: span 2; } .g8 { grid-column: span 3; grid-row: span 2; }
+  .gal-hint { display: none; }
+}
+
+/* bewijs */
+.pr { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; min-height: 240px; }
+.pr b { display: flex; align-items: center; gap: 12px; font: italic 900 clamp(64px, 7vw, 112px)/0.85 var(--font); letter-spacing: -0.06em; padding-right: 0.06em; }
+.pr b svg { width: 0.24em; height: 0.24em; color: var(--trust); }
+.logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.logos li { display: grid; place-items: center; aspect-ratio: 1; padding: 14px; border-radius: 16px; background: var(--white); }
+.logos img { max-height: 100%; width: auto; object-fit: contain; }
+.lg p { margin-top: 14px; font-size: 14px; color: var(--ink2); }
+@media (min-width: 640px) { .pr { grid-column: span 6; } }
+@media (min-width: 981px) { .pr { grid-column: span 3; } .lg { grid-column: span 6; } }
+
+/* zakelijk */
+.zk-ph { min-height: 340px; }
+.zk { display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+.zk .h2 { font-weight: 900; font-style: italic; font-size: clamp(36px, 4.4vw, 68px); line-height: 0.92; padding-right: 0.06em; }
+.zk .lead { margin-top: 18px; color: #C9CACC; }
+.zk ul { display: grid; gap: 10px; }
+.zk li { padding-left: 16px; border-left: 2px solid var(--white); color: #E6E6E6; font-size: 15px; }
+@media (min-width: 981px) { .zk-ph { grid-column: 1 / span 5; } .zk { grid-column: 6 / span 7; } }
+
+.foot { display: flex; flex-direction: column; gap: 36px; }
+.foot p.big { font: italic 900 clamp(40px, 7.4vw, 124px)/0.86 var(--font); letter-spacing: -0.055em; text-transform: uppercase; padding-right: 0.06em; max-width: 14ch; }
+.foot .sm { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font: 600 13px/1.3 var(--font); }
+
+/* mobiele balk */
+.mbar { position: fixed; z-index: 20; left: 0; right: 0; bottom: 0; padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); transform: translateY(110%); transition: transform 420ms var(--ease); }
+body.show-bar .mbar { transform: none; }
+.mbar a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 18px; border-radius: 22px; background: var(--black); color: var(--white); text-decoration: none; box-shadow: 0 12px 30px rgba(10,10,10,0.3); }
+.mbar .t { display: grid; gap: 3px; min-width: 0; }
+.mbar .t b { font: 800 16px/1.1 var(--font); font-variant-numeric: tabular-nums; }
+.mbar .t span { font-size: 12px; line-height: 1.25; color: #C9CACC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mbar .t span b { font-size: 12px; color: var(--volt); }
+.mbar .chev { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--white); color: var(--black); }
+.mbar .chev svg { width: 14px; height: 14px; }
+@media (min-width: 981px) { .mbar { display: none; } }
+@media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; transition: none; } *, *::before, *::after { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+
+<nav class="nav" aria-label="Hoofdmenu">
+  <a class="logo" href="#">HÏ Grip</a>
+  <ul><li><a href="#samenstellen">Samenstellen</a></li><li><a href="#sok">De sok</a></li><li><a href="#concordia">Op het veld</a></li><li><a href="#zakelijk">Zakelijk</a></li></ul>
+  <a class="pill" href="#samenstellen">Stel samen<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+</nav>
+
+<main class="wall">
+  <section class="b dk hero-a rv" aria-labelledby="h1">
+    <div>
+      <h1 id="h1">Eén order. Je hele team op grip.</h1>
+      <p class="lead">Kies per speler type, kleur en maat. Je ziet direct je staffelprijs, en hoe meer paar, hoe lager die zakt.</p>
+      <a class="pill pill--w" href="#samenstellen">Stel je order samen<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    </div>
+    <div class="facts"><span><b>3000+</b> sporters</span><span><b>4,6</b><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg> Trustpilot</span><span>Gratis verzending</span></div>
+  </section>
+  <section class="b ph hero-b rv" style="--d:100ms" aria-label="Spelers van Concordia in HÏ Grip gripsokken">
+    <img src="img/con-0226.webp" alt="Voetballer van Concordia op kunstgras met witte HÏ Grip gripsokken" fetchpriority="high">
+    <div class="sticker" aria-hidden="true"><span>Vanaf<br>5 paar<small>al staffelprijs</small></span></div>
+  </section>
+
+  <article class="b tv usp rv"><b>Gratis</b><p>verzending. Elke teamorder zit boven de € 35.</p></article>
+  <article class="b tp usp rv" style="--d:60ms"><b>1 werkdag</b><p>en je order is verzonden.</p></article>
+  <article class="b tt usp rv" style="--d:120ms"><b>30 dagen</b><p>retour. Past een maat niet, dan ruil je.</p></article>
+  <article class="b tr usp rv" style="--d:180ms"><b>4,6<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></b><p>gemiddeld op Trustpilot.</p></article>
+
+  <section class="b of cfg rv" id="samenstellen" aria-labelledby="cfg-h">
+    <div class="cfg-h">
+      <h2 class="h2" id="cfg-h">Stel je <mark class="mk">teamorder</mark> samen.</h2>
+      <p class="lead">Eén regel per combinatie. Alle paren tellen samen voor je staffel, dus mixen mag.</p>
+      <ul class="types">
+        <li><b>1.0</b>De klassieker. Wit, maat 34-39 of 40-46.</li>
+        <li><b>2.0</b>Met compressie en Coolmax. Zwart of wit, drie maten.</li>
+      </ul>
+    </div>
+    <div class="lines" id="lines" aria-live="polite"></div>
+    <button class="add" type="button" id="add"><span aria-hidden="true" style="font-size:20px;line-height:1">+</span>Nog een maat of kleur</button>
+  </section>
+
+  <aside class="b sum-col rv" style="--d:100ms" aria-labelledby="sum-h">
+    <div class="sum" id="sum"><div class="in">
+      <p class="k" id="sum-h">Jouw prijs per paar</p>
+      <div class="price"><span id="s-price">€ 0,00</span><small id="s-unit">gemiddeld</small></div>
+      <p class="split" id="s-split"></p>
+      <dl>
+        <dt>Aantal paar</dt><dd id="s-qty">0</dd>
+        <dt>Totaal incl. btw</dt><dd id="s-tot">€ 0,00</dd>
+        <dt>Je bespaart</dt><dd class="save" id="s-save">€ 0,00</dd>
+        <dt>Verzending</dt><dd>Gratis</dd>
+      </dl>
+      <div class="nudge" id="nudge">
+        <p id="n-txt"></p>
+        <div class="bar" aria-hidden="true"><i id="n-bar"></i></div>
+        <button type="button" id="n-btn"></button>
+      </div>
+      <a class="pill pill--w" href="#" id="buy">In winkelwagen<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+      <p class="msg" id="msg" role="status" hidden></p>
+      <div class="pod-h"><p class="k">Staffel per paar</p><div class="tabs" role="group" aria-label="Staffel van"><button type="button" data-t="1" aria-pressed="false">1.0</button><button type="button" data-t="2" aria-pressed="true">2.0</button></div></div>
+      <ol class="pod" id="pod" aria-label="Staffelprijzen"></ol>
+      <p class="pod-n">Prijzen per paar, incl. btw. Losse prijs: 1.0 € 14,95, 2.0 € 17,95.</p>
+    </div></div>
+  </aside>
+
+  <section class="b ph ft-grip ft rv" id="sok" aria-labelledby="g-h">
+    <img src="img/sp-voetbal-zool-1800.webp" alt="Gripzool van een witte HÏ Grip sok op kunstgras" loading="lazy">
+    <span></span>
+    <div style="padding:clamp(22px,3vw,48px)"><h3 class="h2" id="g-h" style="font-size:clamp(30px,3.6vw,56px)">Je voet blijft waar je hem zet.</h3><p style="margin-top:14px;max-width:36ch">Siliconen zones onder de zool houden je voet vast in je schoen. Bij elke sprint, draai en stop.</p></div>
+  </section>
+  <article class="b vt ft rv" style="--d:60ms"><span class="big">95%</span><div><h3>Meer grip</h3><p class="src" style="margin-top:6px">Gripsokken t.o.v. gewone sportsokken. Bron: Apps et al. 2022.</p></div></article>
+  <article class="b tp ft rv" style="--d:120ms"><span class="big">15-20<small> mmHg</small></span><div><h3>Compressie</h3><p>Steun rond je voet tijdens de inspanning.</p></div></article>
+  <article class="b dk ft rv"><span class="big">0</span><div><h3>Naden</h3><p>Rondom gebreid, zonder stiksels bij je tenen. Geen blaren.</p></div></article>
+  <article class="b tt ft rv" style="--d:60ms"><span class="big">30%</span><div><h3>Coolmax</h3><p>Voert vocht direct af van je huid. Frisse voet tot de laatste minuut.</p></div></article>
+  <article class="b st ft ft-sock ft-wide rv" style="--d:120ms"><img src="img/p20-zwart-voor-900.webp" alt="Performance Grip Socks 2.0 in zwart" loading="lazy"><div><h3>Versterkte hiel. Ademend bovenop.</h3><p>Extra dikte precies onder je hiel, een open structuur bovenop je voet.</p></div></article>
+  <article class="b tr ft ft-wide rv" style="--d:180ms"><span class="big">2</span><div><h3>Types, één staffel</h3><p>Mix 1.0 en 2.0 in één order. Alle paren tellen mee voor je prijs.</p></div></article>
+
+  <section class="b dk con-h rv" id="concordia" aria-labelledby="c-h">
+    <h2 class="h2" id="c-h">Op het veld bij <mark class="mk">Concordia.</mark></h2>
+    <p class="lead">Geen studio. Een avondtraining in Delft, onder de lampen, op kunstgras. Zo spelen teams met HÏ Grip.</p>
+  </section>
+  <div class="gal rv" style="--d:80ms" role="list" aria-label="Sfeerbeelden van de shootdag bij Concordia">
+    <figure class="g1" role="listitem"><img src="img/con-0168.webp" alt="Clublogo van Concordia Delft op een zwart trainingsshirt" loading="lazy"></figure>
+    <figure class="g2 ls" role="listitem"><img src="img/con-0314.webp" alt="Spelers in actie op kunstgras met HÏ Grip sokken" loading="lazy"></figure>
+    <figure class="g3" role="listitem"><img src="img/con-0210.webp" alt="Benen van spelers tussen pionnen tijdens de warming-up" loading="lazy"></figure>
+    <figure class="g4" role="listitem"><img src="img/con-0174.webp" alt="Team van Concordia loopt in tijdens de avondtraining" loading="lazy"></figure>
+    <figure class="g5" role="listitem"><img src="img/con-0220.webp" alt="Witte HÏ Grip gripsokken in voetbalschoenen op kunstgras" loading="lazy"></figure>
+    <figure class="g6 ls" role="listitem"><img src="img/con-0268.webp" alt="Spelers met ballen op het veld onder de lichtmasten" loading="lazy"></figure>
+    <figure class="g7" role="listitem"><img src="img/con-0156.webp" alt="HÏ Grip sokken en Concordia shirt op een leren bank" loading="lazy" style="object-position:30% 50%"></figure>
+    <figure class="g8" role="listitem"><img src="img/con-0226.webp" alt="Close-up van witte HÏ Grip sokken bij een speler" loading="lazy"></figure>
+  </div>
+  <p class="gal-hint" aria-hidden="true">Swipe voor meer &rarr;</p>
+
+  <article class="b dk pr rv"><b>4,6<svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></b><p style="color:#C9CACC">Gemiddeld op Trustpilot.</p></article>
+  <article class="b tv pr rv" style="--d:60ms"><b>3000+</b><p style="color:var(--ink2)">Sporters spelen met HÏ Grip.</p></article>
+  <article class="b st lg rv" style="--d:120ms" aria-label="Clubs en retailers">
+    <ul class="logos">
+      <li><img src="img/logo-concordia-360.webp" alt="Concordia" loading="lazy"></li><li><img src="img/logo-spirit-252.webp" alt="V.V. Spirit" loading="lazy"></li><li><img src="img/logo-sport2000-240.webp" alt="Sport 2000" loading="lazy"></li>
+      <li><img src="img/logo-myhealthclub-600.webp" alt="MyHealth Club" loading="lazy"></li><li><img src="img/logo-syth-512.webp" alt="Say Yes To Health" loading="lazy"></li><li><img src="img/logo-hr-500.webp" alt="Hogeschool Rotterdam" loading="lazy"></li>
+    </ul>
+    <p>Onder meer bij SVS, V.V. Spirit, V.V. Lyra en Concordia.</p>
+  </article>
+
+  <section class="b ph zk-ph rv" aria-label="Clubsokken"><img src="img/b2b-club-spirit-1000.webp" alt="Witte HÏ Grip gripsokken onder gele clubkousen van V.V. Spirit" loading="lazy"></section>
+  <section class="b dk zk rv" style="--d:100ms" id="zakelijk" aria-labelledby="z-h">
+    <div>
+      <h2 class="h2" id="z-h">Club of winkel? Bestel zakelijk.</h2>
+      <p class="lead">Voor een hele club, met je eigen logo of om HÏ Grip te verkopen, heb je een eigen staffel en een vast aanspreekpunt.</p>
+    </div>
+    <ul><li>Clubstaffel vanaf 6 paar, ex btw</li><li>Eigen logo en kleuren vanaf 150 stuks</li><li>Retailstaffel voor winkels</li></ul>
+    <a class="pill pill--w" href="https://claude.ai/artifact/Nvf7BYRijqxRHaRdaEw2vH" target="_blank" rel="noopener" style="align-self:flex-start">Naar HÏ Grip Zakelijk<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+  </section>
+
+  <footer class="b vt foot"><p class="big">Ga door waar anderen stoppen.</p><div class="sm"><span>HÏ Grip</span><span>info@higrip.nl</span></div></footer>
+</main>
+
+<div class="mbar" aria-hidden="true"><a href="#sum" tabindex="-1"><span class="t"><b id="m-top">0 paar</b><span id="m-sub"></span></span><span class="chev"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a></div>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js');
+  var $ = function (s) { return document.getElementById(s); };
+  var eur = function (n) { return '€ ' + n.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  // Staffel (voorstel, incl. btw). Start = 5-pack-prijs per paar, daarna kleine stappen omlaag.
+  var TIERS = [5, 10, 15, 20, 25, 30, 40, 50, 75, 100];
+  var TYPES = {
+    1: { name: '1.0', single: 14.95, p: [10.99, 10.49, 9.99, 9.69, 9.39, 9.09, 8.79, 8.49, 8.19, 7.89], colors: [['wit', 'Wit', '#FFFFFF']], sizes: ['34-39', '40-46'] },
+    2: { name: '2.0', single: 17.95, p: [13.95, 13.45, 12.95, 12.55, 12.15, 11.75, 11.35, 10.95, 10.45, 9.95], colors: [['zwart', 'Zwart', '#0A0A0A'], ['wit', 'Wit', '#FFFFFF']], sizes: ['35-38', '39-42', '43-47'] }
+  };
+  var lines = [{ t: 2, c: 'zwart', s: '39-42', q: 6 }, { t: 2, c: 'zwart', s: '43-47', q: 4 }];
+  var podType = 2, podLocked = false;
+
+  function tierIx(n) { var k = -1; TIERS.forEach(function (m, j) { if (n >= m) k = j; }); return k; }
+  function unit(t, k) { return k < 0 ? TYPES[t].single : TYPES[t].p[k]; }
+  function totals(extra) {
+    var n = extra || 0, sum = 0, single = 0;
+    lines.forEach(function (l) { n += l.q; });
+    var k = tierIx(n);
+    lines.forEach(function (l, i) { var q = l.q + (extra && i === lines.length - 1 ? extra : 0); sum += q * unit(l.t, k); single += q * TYPES[l.t].single; });
+    return { n: n, k: k, sum: sum, save: single - sum };
+  }
+
+  function seg(label, items, active, attr) {
+    return '<div class="row"><span>' + label + '</span><div class="seg" role="group" aria-label="' + label + '">' + items.map(function (it) {
+      return '<button type="button" data-' + attr + '="' + it.v + '" aria-pressed="' + (it.v === active) + '">' + (it.sw ? '<i style="--c:' + it.sw + '"></i>' : '') + it.l + '</button>';
+    }).join('') + '</div></div>';
+  }
+  function drawLines() {
+    $('lines').innerHTML = lines.map(function (l, i) {
+      var T = TYPES[l.t];
+      return '<div class="ln" data-i="' + i + '"><div class="ln-top"><span class="n">Regel ' + (i + 1) + '</span><button class="del" type="button" data-del aria-label="Regel ' + (i + 1) + ' verwijderen"' + (lines.length < 2 ? ' hidden' : '') + '>&times;</button></div>' +
+        '<div class="ln-mid">' + seg('Type', [{ v: '1', l: '1.0' }, { v: '2', l: '2.0' }], String(l.t), 't') +
+        seg('Kleur', T.colors.map(function (c) { return { v: c[0], l: c[1], sw: c[2] }; }), l.c, 'c') + '</div>' +
+        seg('Maat', T.sizes.map(function (s) { return { v: s, l: s }; }), l.s, 's') +
+        '<div class="ln-foot"><div class="step"><button type="button" data-q="-1" aria-label="Eén paar minder">&minus;</button><input type="number" inputmode="numeric" min="0" max="999" value="' + l.q + '" aria-label="Aantal paar regel ' + (i + 1) + '"><button type="button" data-q="1" aria-label="Eén paar meer">+</button></div><p class="lp" data-lp></p></div></div>';
+    }).join('');
+    render();
+  }
+
+  function render() {
+    var r = totals(), next = r.k + 1 < TIERS.length ? r.k + 1 : -1;
+    [].forEach.call(document.querySelectorAll('.ln'), function (el, i) {
+      var l = lines[i], u = unit(l.t, r.k);
+      el.querySelector('[data-lp]').innerHTML = '<b>' + eur(l.q * u) + '</b>' + eur(u) + ' per paar';
+    });
+    var used = {}; lines.forEach(function (l) { if (l.q) used[l.t] = 1; });
+    var ts = Object.keys(used);
+    $('s-price').textContent = eur(r.n ? r.sum / r.n : 0);
+    $('s-unit').textContent = ts.length > 1 ? 'gemiddeld' : 'per paar';
+    $('s-split').textContent = ts.length > 1 ? '1.0 ' + eur(unit(1, r.k)) + ' · 2.0 ' + eur(unit(2, r.k)) + ' per paar' : '';
+    $('s-qty').textContent = r.n;
+    $('s-tot').textContent = eur(r.sum);
+    $('s-save').textContent = r.save > 0.004 ? eur(r.save) : '-';
+
+    var need, txt, from = r.k < 0 ? 0 : TIERS[r.k];
+    if (r.n < TIERS[0]) {
+      need = TIERS[0] - r.n;
+      txt = 'Nog <b>' + need + ' paar</b> en je bestelt tegen teamprijs.';
+    } else if (next > 0) {
+      need = TIERS[next] - r.n;
+      // per type tonen: een gemiddelde verschuift mee met de mix en zegt dan te weinig
+      txt = 'Nog <b>' + need + ' paar</b> en elk paar zakt naar ' + ts.map(function (t) {
+        return (ts.length > 1 ? TYPES[t].name + ' ' : '') + '<b>' + eur(unit(t, next)) + '</b>';
+      }).join(' · ') + (ts.length === 1 ? ' (nu ' + eur(unit(+ts[0], r.k)) + ')' : '') + '.';
+    } else { need = 0; txt = 'Je zit in de <b>laagste staffel</b>. Beter wordt de prijs niet.'; }
+    $('n-txt').innerHTML = txt;
+    var to = next > 0 ? TIERS[next] : (r.n < TIERS[0] ? TIERS[0] : r.n);
+    $('n-bar').style.setProperty('--p', (need ? Math.max(4, (r.n - from) / (to - from) * 100) : 100) + '%');
+    $('n-btn').hidden = !need || !lines.length;
+    $('n-btn').textContent = '+ ' + need + ' paar toevoegen';
+    $('n-btn').dataset.n = need;
+
+    if (!podLocked && ts.length === 1) podType = +ts[0];
+    drawPod(r.k);
+    $('m-top').textContent = r.n + ' paar · ' + eur(r.n ? r.sum / r.n : 0) + ' p/p';
+    $('m-sub').innerHTML = need ? 'Nog <b>' + need + '</b> voor de volgende staffel' : 'Laagste staffel bereikt';
+  }
+
+  function drawPod(k) {
+    var P = TYPES[podType].p, lo = P[P.length - 1];
+    document.querySelectorAll('.tabs button').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.dataset.t === podType)); });
+    $('pod').innerHTML = P.map(function (p, j) {
+      var h = 35 + (P[0] - p) / (P[0] - lo) * 65;
+      return '<li class="' + (j === k ? 'on' : '') + '"><span class="bb" style="--h:' + h.toFixed(1) + '"><b>' + p.toLocaleString('nl-NL', { minimumFractionDigits: 2 }) + '</b></span><span class="rg">' + TIERS[j] + (j === TIERS.length - 1 ? '+' : '') + '</span></li>';
+    }).join('');
+  }
+
+  $('lines').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    var i = +b.closest('.ln').dataset.i, l = lines[i];
+    if (b.hasAttribute('data-del')) { lines.splice(i, 1); return drawLines(); }
+    if (b.dataset.q) { l.q = Math.max(0, Math.min(999, l.q + +b.dataset.q)); b.parentNode.querySelector('input').value = l.q; return render(); }
+    if (b.dataset.t) { l.t = +b.dataset.t; var T = TYPES[l.t]; if (!T.colors.some(function (c) { return c[0] === l.c; })) l.c = T.colors[0][0]; if (T.sizes.indexOf(l.s) < 0) l.s = T.sizes[Math.min(1, T.sizes.length - 1)]; return drawLines(); }
+    if (b.dataset.c) { l.c = b.dataset.c; return drawLines(); }
+    if (b.dataset.s) { l.s = b.dataset.s; return drawLines(); }
+  });
+  $('lines').addEventListener('input', function (e) {
+    if (e.target.type !== 'number') return;
+    var i = +e.target.closest('.ln').dataset.i; lines[i].q = Math.max(0, Math.min(999, Math.round(+e.target.value) || 0)); render();
+  });
+  $('add').addEventListener('click', function () {
+    var last = lines[lines.length - 1] || { t: 2, c: 'zwart', s: '39-42' };
+    lines.push({ t: last.t, c: last.c, s: last.s, q: 1 }); drawLines();
+    var all = document.querySelectorAll('.ln'); all[all.length - 1].querySelector('input').focus();
+  });
+  $('n-btn').addEventListener('click', function () {
+    if (!lines.length) return; lines[lines.length - 1].q += +this.dataset.n; drawLines();
+  });
+  document.querySelector('.tabs').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return; podType = +b.dataset.t; podLocked = true; render();
+  });
+  $('buy').addEventListener('click', function (e) {
+    e.preventDefault(); var m = $('msg'), r = totals(); m.hidden = false;
+    m.textContent = r.n < TIERS[0] ? 'Kies minimaal ' + TIERS[0] + ' paar voor de teamprijs.' : 'Prototype: op de live pagina gaan deze ' + r.n + ' paar als één bestelling naar je winkelwagen.';
+  });
+  drawLines();
+
+  var cfg = $('samenstellen'), sum = $('sum');
+  if ('IntersectionObserver' in window) {
+    var vis = { cfg: false, sum: false };
+    var bo = new IntersectionObserver(function (es) { es.forEach(function (e) { vis[e.target === sum ? 'sum' : 'cfg'] = e.isIntersecting; }); document.body.classList.toggle('show-bar', vis.cfg && !vis.sum); });
+    bo.observe(cfg); bo.observe(sum);
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.06 });
+    document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+  } else document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); });
+})();
+</script>

@@ -1,0 +1,886 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "compare_1": {
+      "type": "hi-compare-1",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_1": "shopify://shop_images/hp-sh-sok-10.webp",
+            "field_2": "Performance Gripsokken 1.0",
+            "field_4": "Performance Gripsokken 2.0",
+            "field_5": "/",
+            "field_6": "/collections/gripsokken",
+            "field_7": "#kies",
+            "field_8": "#vergelijk",
+            "field_9": "/products/performance-gripsokken",
+            "field_10": "/products/performance-gripsokken-2-0-zwart",
+            "field_11": "",
+            "field_12": "",
+            "field_13": "",
+            "field_14": "",
+            "field_15": "",
+            "field_16": "1.0 of 2.0?",
+            "field_17": "Kies je grip.",
+            "field_18": "",
+            "field_19": "Help me kiezen",
+            "field_20": "Zie de verschillen",
+            "field_21": "1.0",
+            "field_22": "Prijsvriendelijk",
+            "field_23": "1.0",
+            "field_24": "€14,95",
+            "field_25": "Shop 1.0",
+            "field_26": "VS",
+            "field_27": "2.0",
+            "field_28": "Ultieme performance",
+            "field_29": "2.0",
+            "field_30": "€17,95",
+            "field_31": "Shop 2.0",
+            "field_1_width_d": 100,
+            "field_1_width_m": 100,
+            "field_3_width_d": 100,
+            "field_3_width_m": 100
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "center",
+        "heading_d": 66,
+        "text_d": 16,
+        "image_d": 72,
+        "align_m": "center",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    },
+    "compare_2": {
+      "type": "hi-compare-2",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_2": "Performance Gripsokken 1.0, zijaanzicht met grippatroon",
+            "field_4": "Performance Gripsokken 2.0 in zwart, zijaanzicht met grippatroon",
+            "field_5": "/products/performance-gripsokken",
+            "field_6": "/products/performance-gripsokken-2-0-zwart",
+            "field_7": "/products/performance-gripsokken-2-0-zwart",
+            "field_8": "/products/performance-gripsokken-2-0-wit",
+            "field_9": "1.0",
+            "field_10": "Shop 1.0",
+            "field_11": "2.0",
+            "field_12": "Shop 2.0",
+            "field_13": "De verschillen",
+            "field_14": "in één oogopslag",
+            "field_15": "1.0",
+            "field_16": "Prijsvriendelijk",
+            "field_17": "De basis voor je training: siliconen grip, een katoenmix met 42% katoen en een scherpe prijs.",
+            "field_18": "2.0",
+            "field_19": "Ultieme performance",
+            "field_20": "Zwart",
+            "field_21": "Wit",
+            "field_22": "Siliconen grip en 30% Coolmax®, met compressie en special cushioning voor intensieve sportmomenten.",
+            "field_23": "€14,95 per paar",
+            "field_24": "Prijsvriendelijk ook voor meerdere paren",
+            "field_25": "€17,95 per paar",
+            "field_26": "Extra comfort en technische afwerking",
+            "field_27": "Training, pilates & recreatief sporten",
+            "field_28": "Een vertrouwde basis voor je sportmomenten",
+            "field_29": "Wedstrijden & intensief sporten",
+            "field_30": "Voetbal, tennis, padel en rugby",
+            "field_31": "Siliconen gripzones",
+            "field_32": "Houden je voet op zijn plek in je schoen",
+            "field_33": "Siliconen gripzones",
+            "field_34": "Houden je voet op zijn plek in je schoen",
+            "field_35": "42% katoen",
+            "field_36": "Katoenmix met polyester, nylon en spandex",
+            "field_37": "30% Coolmax®",
+            "field_38": "Vochtregulerende vezels",
+            "field_39": "Compressie",
+            "field_40": "15 - 20 mmHg",
+            "field_1_width_d": 100,
+            "field_1_width_m": 100,
+            "field_3_width_d": 100,
+            "field_3_width_m": 100
+          }
+        },
+        "content_2": {
+          "type": "content_2",
+          "settings": {
+            "field_41": "Special cushioning",
+            "field_42": "Extra dempingzones onder de voet",
+            "field_43": "34-39 · 40-46",
+            "field_44": "Twee maatvarianten",
+            "field_45": "35-38 · 39-42 · 43-47",
+            "field_46": "Drie maatvarianten",
+            "field_47": "Wit",
+            "field_48": "Eén kleur",
+            "field_49": "Zwart · Wit",
+            "field_50": "Twee kleuren"
+          }
+        }
+      },
+      "block_order": [
+        "content_1",
+        "content_2"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "center",
+        "heading_d": 56,
+        "text_d": 19,
+        "image_d": 80,
+        "align_m": "center",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 36,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 59,
+        "model_m": 42
+      }
+    },
+    "compare_3": {
+      "type": "hi-compare-3",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_2": "Performance Gripsokken 2.0 in zwart met acht gemarkeerde features",
+            "field_3": "/products/performance-gripsokken-2-0-zwart",
+            "field_4": "2.0.",
+            "field_5": "Ultieme performance.",
+            "field_6": "Acht features, elk op de plek waar je voet het zwaarst werkt. Tik op een feature of ga er met je muis over om te zien waar hij zit.",
+            "field_7": "1",
+            "field_8": "Compressie",
+            "field_9": "15–20 mmHg ondersteunt de doorbloeding tijdens inspanning.",
+            "field_10": "2",
+            "field_11": "Coolmax®",
+            "field_12": "30% Coolmax® voert vocht direct af van de huid.",
+            "field_13": "3",
+            "field_14": "Ademend",
+            "field_15": "Open structuur bovenop de voet.",
+            "field_16": "4",
+            "field_17": "Naadloos",
+            "field_18": "Rondom gebreid, naadloze teenzone. Geen blaren.",
+            "field_19": "1",
+            "field_20": "2",
+            "field_21": "3",
+            "field_22": "4",
+            "field_23": "5",
+            "field_24": "6",
+            "field_25": "7",
+            "field_26": "8",
+            "field_27": "5",
+            "field_28": "Versterkte hiel",
+            "field_29": "Extra dikte onder de hiel. Minder slijtage, langere levensduur.",
+            "field_30": "6",
+            "field_31": "Maximale grip",
+            "field_32": "Siliconen zones houden je voet vast bij elke slide.",
+            "field_33": "7",
+            "field_34": "Special cushioning",
+            "field_35": "Speciale dempingzones onder de voet.",
+            "field_36": "8",
+            "field_37": "Hoogwaardige materialen",
+            "field_38": "Zorgvuldig gekozen garens voor meer comfort, wedstrijd na wedstrijd.",
+            "field_39": "€17,95",
+            "field_40": "",
+            "field_1_width_d": 100,
+            "field_1_width_m": 100
+          }
+        },
+        "content_2": {
+          "type": "content_2",
+          "settings": {
+            "field_41": "Shop 2.0"
+          }
+        }
+      },
+      "block_order": [
+        "content_1",
+        "content_2"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "left",
+        "heading_d": 56,
+        "text_d": 16,
+        "image_d": 80,
+        "align_m": "left",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    },
+    "compare_4": {
+      "type": "hi-compare-4",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_1": "shopify://shop_images/shop-sq-padel.webp",
+            "field_2": "Padelspeler trekt witte HÏ Grip gripsokken aan, met racket en ballen ernaast",
+            "field_3": "/products/performance-gripsokken",
+            "field_4": "1.0",
+            "field_5": "Grip voor iedereen.",
+            "field_6": "Simpel, betrouwbaar en geprijsd om er meer dan één paar van te hebben. De slimme keuze voor wie vaak traint.",
+            "field_7": "Siliconen gripzones",
+            "field_8": "Je voet blijft op zijn plek in je schoen.",
+            "field_9": "Katoenmix",
+            "field_10": "42% katoen, voor elke training.",
+            "field_11": "Twee maten",
+            "field_12": "34–39 en 40–46.",
+            "field_13": "€14,95",
+            "field_14": "Shop 1.0",
+            "field_1_width_d": 100,
+            "field_1_width_m": 100
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "left",
+        "heading_d": 56,
+        "text_d": 16,
+        "image_d": 100,
+        "align_m": "left",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    },
+    "compare_5": {
+      "type": "hi-compare-5",
+      "blocks": {
+        "q_sport": {
+          "type": "question",
+          "settings": {
+            "key": "sport",
+            "title": "1 Welke sport doe je vooral?",
+            "group": "Je sport",
+            "kind": "select",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "sport_0": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "anders",
+            "label": "Kies je sport",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_1": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "voetbal",
+            "label": "Voetbal",
+            "selected": false,
+            "score": 1,
+            "force": "none",
+            "reason": "Voetbal past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "sport_3": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "padel",
+            "label": "Padel",
+            "selected": false,
+            "score": 1,
+            "force": "none",
+            "reason": "Padel past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "sport_4": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "tennis",
+            "label": "Tennis",
+            "selected": false,
+            "score": 1,
+            "force": "none",
+            "reason": "Tennis past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "sport_5": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "rugby",
+            "label": "Rugby",
+            "selected": false,
+            "score": 1,
+            "force": "none",
+            "reason": "Rugby past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "sport_6": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "hockey",
+            "label": "Hockey",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_7": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "basketbal",
+            "label": "Basketbal",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_9": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "pilates",
+            "label": "Pilates",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_11": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "fitness",
+            "label": "Fitness of CrossFit",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_12": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "Pilates",
+            "label": "Dans",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "sport_13": {
+          "type": "option",
+          "settings": {
+            "question": "sport",
+            "value": "anders",
+            "label": "Iets anders",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "q_vaak": {
+          "type": "question",
+          "settings": {
+            "key": "vaak",
+            "title": "2 Hoe vaak sport je?",
+            "group": "Je sport",
+            "kind": "radio",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "vaak_0": {
+          "type": "option",
+          "settings": {
+            "question": "vaak",
+            "value": "laag",
+            "label": "1–2 keer per week",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "vaak_1": {
+          "type": "option",
+          "settings": {
+            "question": "vaak",
+            "value": "hoog",
+            "label": "3 keer of vaker",
+            "selected": false,
+            "score": 2,
+            "force": "20",
+            "reason": "3 keer of vaker past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "q_voor": {
+          "type": "question",
+          "settings": {
+            "key": "voor",
+            "title": "3 Waarvoor draag je ze?",
+            "group": "Je sport",
+            "kind": "radio",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "voor_0": {
+          "type": "option",
+          "settings": {
+            "question": "voor",
+            "value": "training",
+            "label": "Training of pilates",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "voor_1": {
+          "type": "option",
+          "settings": {
+            "question": "voor",
+            "value": "wedstrijd",
+            "label": "Wedstrijden",
+            "selected": false,
+            "score": 2,
+            "force": "none",
+            "reason": "Wedstrijden past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "q_blaren": {
+          "type": "question",
+          "settings": {
+            "key": "blaren",
+            "title": "4 Last van blaren of vermoeide voeten?",
+            "group": "Je voorkeuren",
+            "kind": "radio",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "blaren_0": {
+          "type": "option",
+          "settings": {
+            "question": "blaren",
+            "value": "vaak",
+            "label": "Regelmatig",
+            "selected": false,
+            "score": 2,
+            "force": "none",
+            "reason": "Regelmatig past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "blaren_1": {
+          "type": "option",
+          "settings": {
+            "question": "blaren",
+            "value": "soms",
+            "label": "Soms",
+            "selected": false,
+            "score": 1,
+            "force": "none",
+            "reason": "Soms past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "blaren_2": {
+          "type": "option",
+          "settings": {
+            "question": "blaren",
+            "value": "nee",
+            "label": "Nauwelijks",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "q_prio": {
+          "type": "question",
+          "settings": {
+            "key": "prio",
+            "title": "5 Wat vind je het belangrijkst?",
+            "group": "Je voorkeuren",
+            "kind": "radio",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "prio_0": {
+          "type": "option",
+          "settings": {
+            "question": "prio",
+            "value": "prijs",
+            "label": "Een scherpe prijs",
+            "selected": false,
+            "score": -1,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "prio_1": {
+          "type": "option",
+          "settings": {
+            "question": "prio",
+            "value": "comfort",
+            "label": "Comfort en vochtafvoer",
+            "selected": false,
+            "score": 2,
+            "force": "none",
+            "reason": "Comfort en vochtafvoer past bij de extra eigenschappen van de 2.0.",
+            "result_link": ""
+          }
+        },
+        "prio_2": {
+          "type": "option",
+          "settings": {
+            "question": "prio",
+            "value": "beide",
+            "label": "Maakt niet uit",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "q_maat": {
+          "type": "question",
+          "settings": {
+            "key": "maat",
+            "title": "6 Welke maat heb je?",
+            "group": "Je pasvorm",
+            "kind": "number",
+            "min": 34,
+            "max": 47
+          }
+        },
+        "q_kleur": {
+          "type": "question",
+          "settings": {
+            "key": "kleur",
+            "title": "7 Welke kleur wil je?",
+            "group": "Je pasvorm",
+            "kind": "radio",
+            "min": 0,
+            "max": 100
+          }
+        },
+        "kleur_0": {
+          "type": "option",
+          "settings": {
+            "question": "kleur",
+            "value": "wit",
+            "label": "Wit",
+            "selected": false,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": "/products/performance-gripsokken-2-0-wit"
+          }
+        },
+        "kleur_1": {
+          "type": "option",
+          "settings": {
+            "question": "kleur",
+            "value": "zwart",
+            "label": "Zwart",
+            "selected": false,
+            "score": 0,
+            "force": "20",
+            "reason": "Zwart past bij de extra eigenschappen van de 2.0.",
+            "result_link": "/products/performance-gripsokken-2-0-zwart"
+          }
+        },
+        "kleur_2": {
+          "type": "option",
+          "settings": {
+            "question": "kleur",
+            "value": "egaal",
+            "label": "Maakt niet uit",
+            "selected": true,
+            "score": 0,
+            "force": "none",
+            "reason": "",
+            "result_link": ""
+          }
+        },
+        "result_10": {
+          "type": "result",
+          "settings": {
+            "model": "10",
+            "title": "1.0",
+            "price": "€14,95",
+            "tag": "Prijsvriendelijk",
+            "reason": "Betrouwbare siliconen grip voor je trainingen",
+            "link": "/products/performance-gripsokken",
+            "image_url": "https://cdn.shopify.com/s/files/1/0935/0918/9959/files/Performance_Grip_Sock_1.0_side_view_6813bad8-7e95-46d1-8da9-306d9e90dd1a.png?v=1791208981",
+            "min": 34,
+            "max": 46,
+            "sizes": "34-39\n40-46",
+            "button": "Shop 1.0"
+          }
+        },
+        "result_20": {
+          "type": "result",
+          "settings": {
+            "model": "20",
+            "title": "2.0",
+            "price": "€17,95",
+            "tag": "Ultieme performance",
+            "reason": "Grip plus compressie, Coolmax® en special cushioning",
+            "link": "/products/performance-gripsokken-2-0-zwart",
+            "image_url": "https://cdn.shopify.com/s/files/1/0935/0918/9959/files/Performance_Grip_Socks_2.0_zwart_voorkant.png?v=1787309214",
+            "min": 35,
+            "max": 47,
+            "sizes": "35-38\n39-42\n43-47",
+            "button": "Shop 2.0"
+          }
+        }
+      },
+      "block_order": [
+        "q_sport",
+        "sport_0",
+        "sport_1",
+        "sport_3",
+        "sport_4",
+        "sport_5",
+        "sport_6",
+        "sport_7",
+        "sport_9",
+        "sport_11",
+        "sport_12",
+        "sport_13",
+        "q_vaak",
+        "vaak_0",
+        "vaak_1",
+        "q_voor",
+        "voor_0",
+        "voor_1",
+        "q_blaren",
+        "blaren_0",
+        "blaren_1",
+        "blaren_2",
+        "q_prio",
+        "prio_0",
+        "prio_1",
+        "prio_2",
+        "q_maat",
+        "q_kleur",
+        "kleur_0",
+        "kleur_1",
+        "kleur_2",
+        "result_10",
+        "result_20"
+      ],
+      "settings": {
+        "heading": "Wat heb jij nodig?",
+        "intro": "Eén sportvraag plus zes korte vragen. Je uitslag staat meteen naast je antwoorden.",
+        "threshold": 2,
+        "result_heading": "Jouw match",
+        "size_hint": "Vul je schoenmaat in (34–47).",
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "left",
+        "heading_d": 56,
+        "text_d": 16,
+        "image_d": 80,
+        "align_m": "left",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    },
+    "compare_6": {
+      "type": "hi-compare-6",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_1": "https://doi.org/10.1080/02640414.2022.2080163",
+            "field_2": "Gewone sok",
+            "field_3": "0,60",
+            "field_4": "Gripsok · 1.0 én 2.0",
+            "field_5": "1,17",
+            "field_6": "Gewone sok?",
+            "field_7": "Geen wedstrijd.",
+            "field_8": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).",
+            "field_9": "Sporters met gripsokken waren ook sneller op een slalomparcours en hun voorvoet schoof minder bij afremmen. Dat geldt voor allebei: het zijn gripsokken.",
+            "field_10": "Bron: Apps et al. (2022),",
+            "field_11": "Journal of Sports Sciences",
+            "field_12": "40(12) ·",
+            "field_13": "doi 10.1080/02640414.2022.2080163"
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "left",
+        "heading_d": 56,
+        "text_d": 16,
+        "image_d": 80,
+        "align_m": "left",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    },
+    "compare_7": {
+      "type": "hi-compare-7",
+      "blocks": {
+        "content_1": {
+          "type": "content_1",
+          "settings": {
+            "field_2": "Performance Gripsokken 1.0",
+            "field_4": "Performance Gripsokken 2.0",
+            "field_5": "/products/performance-gripsokken",
+            "field_6": "/products/performance-gripsokken-2-0-zwart",
+            "field_7": "https://nl.trustpilot.com/review/higrip.nl",
+            "field_8": "Kies je",
+            "field_9": "grip.",
+            "field_10": "1.0",
+            "field_11": "Prijsvriendelijk · €14,95",
+            "field_12": "Shop 1.0",
+            "field_13": "2.0",
+            "field_14": "Ultieme performance · €17,95",
+            "field_15": "Shop 2.0",
+            "field_16": "3.500+",
+            "field_17": "sporters gingen je voor",
+            "field_18": "4,6",
+            "field_19": "op Trustpilot",
+            "field_20": "€35",
+            "field_21": "gratis verzending vanaf",
+            "field_22": "30 dagen",
+            "field_23": "retour, past het niet, stuur het terug",
+            "field_1_width_d": 100,
+            "field_1_width_m": 100,
+            "field_3_width_d": 100,
+            "field_3_width_m": 100
+          }
+        }
+      },
+      "block_order": [
+        "content_1"
+      ],
+      "settings": {
+        "accent": "#ccff00",
+        "section_space": 64,
+        "align_d": "left",
+        "heading_d": 56,
+        "text_d": 16,
+        "image_d": 80,
+        "align_m": "left",
+        "heading_m": 36,
+        "text_m": 14,
+        "image_m": 80,
+        "detail_d": 24,
+        "detail_m": 17,
+        "copy_width": 58,
+        "image_align": "center",
+        "model_d": 64,
+        "model_m": 42
+      }
+    }
+  },
+  "order": [
+    "compare_1",
+    "compare_2",
+    "compare_3",
+    "compare_4",
+    "compare_5",
+    "compare_6",
+    "compare_7"
+  ]
+}

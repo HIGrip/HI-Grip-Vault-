@@ -1,0 +1,314 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 58, ref: 1526 -%}
+<section class="to to-feat{% if s.media_side == 'left' %} to-feat--rev{% endif %}{% if s.align == 'center' %} to-c{% endif %}"{% if s.anim %} data-anim{% endif %} id="sok" style="--to-tile: {{ s.tile }}; --to-stat: clamp({{ s.stat_m }}px, {{ s.stat_d | times: 100.0 | divided_by: 1240 | round: 2 }}vw, {{ s.stat_d }}px);" aria-labelledby="to-s-{{ section.id }}">
+  <div class="to-wrap">
+    <div class="to-rv">
+      <h2 class="to-h2" id="to-s-{{ section.id }}">{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' | replace: '((', '<span class="to-nw">' | replace: '))', '</span>' }}</h2>
+      {%- if s.stat != blank -%}<div class="to-f95"><b>{{ s.stat }}</b><span>{{ s.stat_text }}</span></div>{%- endif -%}
+    </div>
+    <div>
+      <div class="to-ig to-rv" style="--d:120ms"{% if s.mark != blank %} data-mark="{{ s.mark | escape }}"{% endif %}>
+        {%- render 'to-img', image: s.image, alt: s.alt, sizes: '(min-width: 1024px) 26vw, 68vw' -%}
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          <div class="to-co to-co--{{ b.side }}" style="--x:{{ b.x }}%;--y:{{ b.y }}%;--d:{{ forloop.index0 | times: 60 }}ms" {{ block.shopify_attributes }}><div><b>{{ b.title }}</b><span>{{ b.text }}</span></div></div>
+        {%- endfor -%}
+      </div>
+      <ul class="to-fm">
+        {%- for block in section.blocks -%}<li><b>{{ block.settings.title }}</b><span>{{ block.settings.text }}</span></li>{%- endfor -%}
+      </ul>
+    </div>
+  </div>
+  {%- if s.source != blank -%}<p class="to-wrap to-src">{{ s.source }}</p>{%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 05 · De sok",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Performance ((gripsokken [2.0]))",
+      "info": "[ ] = accentkleur, (( )) = niet afbreken"
+    },
+    {
+      "type": "text",
+      "id": "stat",
+      "label": "Groot cijfer",
+      "default": "95%"
+    },
+    {
+      "type": "text",
+      "id": "stat_text",
+      "label": "Tekst bij het cijfer",
+      "default": "meer grip dan gewone sportsokken*"
+    },
+    {
+      "type": "range",
+      "id": "stat_m",
+      "label": "Cijfermaat (mobiel)",
+      "min": 40,
+      "max": 160,
+      "step": 2,
+      "default": 84,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "stat_d",
+      "label": "Cijfermaat (desktop)",
+      "min": 40,
+      "max": 200,
+      "step": 2,
+      "default": 136,
+      "unit": "px"
+    },
+    {
+      "type": "textarea",
+      "id": "source",
+      "label": "Bronregel",
+      "default": "* Gripsokken als categorie t.o.v. gewone sportsokken. Bron: Apps et al. 2022."
+    },
+    {
+      "type": "header",
+      "content": "Productbeeld"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Productfoto (vrijstaand)"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst",
+      "default": "Performance Grip Socks 2.0 in wit"
+    },
+    {
+      "type": "text",
+      "id": "mark",
+      "label": "Grote omlijnde tekst achter de sok",
+      "default": "2.0",
+      "info": "Leeg = geen"
+    },
+    {
+      "type": "select",
+      "id": "media_side",
+      "label": "Sok op desktop",
+      "default": "right",
+      "options": [
+        {
+          "value": "right",
+          "label": "Rechts"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "tile",
+      "label": "Tegels op mobiel",
+      "default": "#1A1A1A"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#909194"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 36,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 58,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "point",
+      "name": "Kenmerk",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Compressie"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Tekst",
+          "default": "15-20 mmHg steun rond je voet"
+        },
+        {
+          "type": "select",
+          "id": "side",
+          "label": "Kant (desktop)",
+          "default": "l",
+          "options": [
+            {
+              "value": "l",
+              "label": "Links"
+            },
+            {
+              "value": "r",
+              "label": "Rechts"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "x",
+          "label": "Lijn tot (horizontaal)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 46,
+          "unit": "%"
+        },
+        {
+          "type": "range",
+          "id": "y",
+          "label": "Hoogte",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 22,
+          "unit": "%"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8
+}
+{% endschema %}

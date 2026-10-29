@@ -1,0 +1,209 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Betalingsbeleid",
+        "heading_tag": "h1",
+        "lead": "",
+        "heading_size": 80,
+        "heading_size_mobile": 40,
+        "eyebrow_size": 11,
+        "lead_size": 17,
+        "heading_uppercase": true,
+        "heading_italic": true,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "eyebrow_color": "#ccff00",
+        "heading_color": "",
+        "lead_color": "",
+        "animate": true,
+        "padding_top": 72,
+        "padding_bottom": 56,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "a1": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Betaalmethoden",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "r1": {
+          "type": "data_row",
+          "settings": {
+            "label": "iDEAL",
+            "value": "<p>Direct betalen via je eigen bank. Alleen in Nederland.</p>",
+            "label_color": "",
+            "value_color": ""
+          }
+        },
+        "r2": {
+          "type": "data_row",
+          "settings": {
+            "label": "Creditcard",
+            "value": "<p>Visa, Mastercard en American Express.</p>",
+            "label_color": "",
+            "value_color": ""
+          }
+        },
+        "r3": {
+          "type": "data_row",
+          "settings": {
+            "label": "Klarna",
+            "value": "<p>Achteraf of in termijnen, afhankelijk van wat Klarna in jouw land biedt.</p>",
+            "label_color": "",
+            "value_color": ""
+          }
+        },
+        "r4": {
+          "type": "data_row",
+          "settings": {
+            "label": "Bancontact",
+            "value": "<p>Snel en veilig betalen, populair in België.</p>",
+            "label_color": "",
+            "value_color": ""
+          }
+        },
+        "r5": {
+          "type": "data_row",
+          "settings": {
+            "label": "Apple Pay",
+            "value": "<p>Eenvoudig en veilig betalen met je Apple-apparaat.</p>",
+            "label_color": "",
+            "value_color": ""
+          }
+        },
+        "a2": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Beveiliging",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<p>We verwerken alle betalingen via Mollie, een betrouwbare en veilige betaalprovider. Mollie voldoet aan de hoogste veiligheidsstandaarden en is volledig gecertificeerd volgens de Payment Card Industry Data Security Standard (PCI DSS). Je betaling is dus altijd veilig en beschermd.</p><p>Zo zorgen we voor een betrouwbare, flexibele en probleemloze betaling, en kun je met een gerust hart bestellen.</p>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "a3": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Betaling en verzending",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<p>Je betaalt vooraf. We verzenden je bestelling zodra de volledige betaling binnen is.</p>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "show_toc": true,
+        "toc_title": "Op deze pagina",
+        "toc_numbers": false,
+        "toc_offset": 120,
+        "text_size": 15,
+        "content_max_width": 760,
+        "heading_color": "",
+        "label_color": "",
+        "link_color": "",
+        "bullet_color": "",
+        "line_color": "",
+        "toc_title_color": "",
+        "toc_color": "",
+        "toc_active_color": "",
+        "row_label_color": "",
+        "row_value_color": "",
+        "note_color": "",
+        "note_border_color": "",
+        "section_width": "page",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 88
+      }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": {
+        "heading": "Vraag over dit beleid?",
+        "heading_tag": "h2",
+        "heading_size": 36,
+        "heading_size_mobile": 24,
+        "text": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>.",
+        "text_size": 15,
+        "heading_color": "",
+        "text_color_body": "",
+        "strong_color": "",
+        "button_label": "Contact",
+        "button_link": "/pages/contact",
+        "button_style": "light",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_hover_bg": "",
+        "button_hover_fg": "",
+        "button_radius": 40,
+        "button_size": 14,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "body",
+    "help"
+  ]
+}

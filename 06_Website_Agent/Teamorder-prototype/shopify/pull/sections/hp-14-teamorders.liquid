@@ -1,0 +1,609 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 14 · Teamorders: tweekleurige kop, een bento met links een grote foto met intro en knop en rechts
+  blokken met een sportfoto, nummer, titel en regel (blokken). Motion: foto schuift licht mee, blokken rijzen op.
+  @example
+  <!-- Homepage > HÏ 14 · Teamorders -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h2'
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_grad = s.grad_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-14-h2a_c: {{ s.h2a_c }}; --hp-14-h2b_c: {{ s.h2b_c }}; --hp-14-lead_c: {{ s.lead_c }}; --hp-14-py: {{ s.pos_y }}%; --hp-14-minh: {{ s.minh_d }}px; --hp-14-grad: {{ s.grad | color_modify: 'alpha', hp_a_grad }}; --hp-14-blok_bg: {{ s.blok_bg }}; --hp-14-blok_fg: {{ s.blok_fg }}; --hp-14-no_c: {{ s.no_c }}; --hp-14-td-o: calc({{ s.td_o }} / 100); --hp-14-gap: {{ s.gap }}px; --hp-14-bg: {{ s.bg }}; --hp-14-fg: {{ s.fg }}; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-14-r-k: {{ s.img_r_m | times: 1.0 | divided_by: 16 }}; --hp-pt-k: {{ s.pt_m | times: 1.0 | divided_by: 44 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_m | times: 1.0 | divided_by: 44 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 14 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-14-r-k: {{ s.img_r_d | times: 1.0 | divided_by: 26 }}; --hp-pt-k: {{ s.pt_d | times: 1.0 | divided_by: 72 }}; --hp-pt-add: 0px; --hp-pb-k: {{ s.pb_d | times: 1.0 | divided_by: 72 }}; --hp-pb-add: 0px; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 14 }};} }
+@media (max-width: 899px) { #shopify-section-{{ section.id }} {--hp-14-h2-k: {{ s.h2_m | times: 1.0 | divided_by: 37 }}; --hp-14-lead-k: {{ s.lead_m | times: 1.0 | divided_by: 16 }}; --hp-14-no-k: {{ s.no_m | times: 1.0 | divided_by: 24 }}; --hp-14-tt-k: {{ s.tt_m | times: 1.0 | divided_by: 16 }}; --hp-14-td-k: {{ s.td_m | times: 1.0 | divided_by: 14 }};} }
+@media (min-width: 900px) { #shopify-section-{{ section.id }} {--hp-14-h2-k: {{ s.h2_d | times: 1.0 | divided_by: 96 }}; --hp-14-lead-k: {{ s.lead_d | times: 1.0 | divided_by: 19 }}; --hp-14-no-k: {{ s.no_d | times: 1.0 | divided_by: 28 }}; --hp-14-tt-k: {{ s.tt_d | times: 1.0 | divided_by: 22 }}; --hp-14-td-k: {{ s.td_d | times: 1.0 | divided_by: 15 }};} }
+{%- unless s.rise -%}#shopify-section-{{ section.id }} .hp-14-blok { transform: none !important; }{%- endunless -%}
+</style>
+<section class="hp-section hp-14" data-hp="14" aria-labelledby="hp-14-h2-{{ section.id }}"{% unless s.parallax %} data-parallax="off"{% endunless %}>
+  <div class="hp-container hp-14-inner">
+    {%- if s.heading_a != blank or s.heading_b != blank -%}
+      <{{ tag }} class="hp-14-h2" id="hp-14-h2-{{ section.id }}"><span class="hp-14-h2__a">{{ s.heading_a }}</span> <span class="hp-14-h2__b">{{ s.heading_b }}</span></{{ tag }}>
+    {%- endif -%}
+
+    <div class="hp-14-bento">
+      <figure class="hp-14-media">
+        {%- render 'hp-img', image: s.image, class: 'hp-14-img', sizes: '(min-width: 900px) 58vw, 100vw', widths: '400,800', alt: s.alt -%}
+        <figcaption class="hp-14-cap">
+          {%- if s.lead != blank -%}<p class="hp-14-lead">{{ s.lead }}</p>{%- endif -%}
+          {%- if s.cta_label != blank -%}
+            <a class="hp-pill hp-pill--light hp-14-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+          {%- endif -%}
+        </figcaption>
+      </figure>
+      <ol class="hp-14-bloks">
+        {%- for block in section.blocks -%}
+          {%- assign b = block.settings -%}
+          <li class="hp-14-blok" {{ block.shopify_attributes }}>
+            {%- capture pos -%}--pos:{{ b.pos_x }}% {{ b.pos_y }}%{%- endcapture -%}
+            {%- render 'hp-img', image: b.image, class: 'hp-14-bg', sizes: '(min-width: 900px) 40vw, 100vw', widths: '450,900', decorative: true, style: pos -%}
+            <span class="hp-14-no" aria-hidden="true">{{ b.no }}</span>
+            <span class="hp-14-itext"><span class="hp-14-tt">{{ b.title }}</span><span class="hp-14-td">{{ b.text }}</span></span>
+          </li>
+        {%- endfor -%}
+      </ol>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 14 · Teamorders",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "text",
+      "id": "heading_a",
+      "label": "Kop, deel 1",
+      "default": "Bestel als team."
+    },
+    {
+      "type": "text",
+      "id": "heading_b",
+      "label": "Kop, deel 2 (accentkleur)",
+      "default": "Bespaar per paar."
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "h2_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 10,
+      "max": 110,
+      "step": 1,
+      "unit": "px",
+      "default": 37
+    },
+    {
+      "type": "range",
+      "id": "h2_d",
+      "label": "Kop grootte (laptop)",
+      "min": 28,
+      "max": 228,
+      "step": 2,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "color",
+      "id": "h2a_c",
+      "label": "Kop deel 1: kleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "h2b_c",
+      "label": "Kop deel 2: kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Grote foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst (leeg = alt van het bestand)"
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Tekst op de foto",
+      "default": "Eén bestelling voor je hele team. Hoe meer paar, hoe lager de prijs per paar, en iedereen krijgt de maat die past."
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Tekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Tekst grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "color",
+      "id": "lead_c",
+      "label": "Tekst kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knop: tekst",
+      "default": "Ontdek teamorders"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Knop: link"
+    },
+    {
+      "type": "range",
+      "id": "pos_y",
+      "label": "Focuspunt verticaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 52,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "minh_d",
+      "label": "Minimale hoogte (laptop)",
+      "min": 300,
+      "max": 900,
+      "step": 10,
+      "default": 560,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "grad",
+      "label": "Verloop onder op de foto",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "grad_a",
+      "label": "Verloop onder op de foto: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 86
+    },
+    {
+      "type": "checkbox",
+      "id": "parallax",
+      "label": "Foto schuift licht mee bij scrollen",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "img_r_m",
+      "label": "Afronding (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "img_r_d",
+      "label": "Afronding (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "header",
+      "content": "Blokken"
+    },
+    {
+      "type": "paragraph",
+      "content": "Elk blok heeft een sportfoto, nummer, titel en regel."
+    },
+    {
+      "type": "color",
+      "id": "blok_bg",
+      "label": "Blok: achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "blok_fg",
+      "label": "Blok: tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "no_c",
+      "label": "Nummer: kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "no_m",
+      "label": "Nummer grootte (mobiel)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "no_d",
+      "label": "Nummer grootte (laptop)",
+      "min": 8,
+      "max": 108,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "tt_m",
+      "label": "Titel grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "tt_d",
+      "label": "Titel grootte (laptop)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "td_m",
+      "label": "Regel grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "td_d",
+      "label": "Regel grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "td_o",
+      "label": "Regel dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 72,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Ruimte tussen de vlakken",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "rise",
+      "label": "Blokken rijzen na elkaar op",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Ruimte boven (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Ruimte boven (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Ruimte onder (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 44
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Ruimte onder (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "blok",
+      "name": "Blok",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Foto"
+        },
+        {
+          "type": "range",
+          "id": "pos_x",
+          "label": "Focuspunt horizontaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "range",
+          "id": "pos_y",
+          "label": "Focuspunt verticaal",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 50
+        },
+        {
+          "type": "text",
+          "id": "no",
+          "label": "Nummer",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titel",
+          "default": "Staffelkorting"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Regel",
+          "default": "Meer paar, lagere prijs per paar."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "HÏ 14 · Teamorders",
+      "blocks": [
+        {
+          "type": "blok",
+          "settings": {
+            "pos_x": 50,
+            "pos_y": 40,
+            "no": "01",
+            "title": "Staffelkorting",
+            "text": "Meer paar, lagere prijs per paar."
+          }
+        },
+        {
+          "type": "blok",
+          "settings": {
+            "pos_x": 50,
+            "pos_y": 60,
+            "no": "02",
+            "title": "Snelle levering",
+            "text": "Je teamorder snel in huis."
+          }
+        },
+        {
+          "type": "blok",
+          "settings": {
+            "pos_x": 50,
+            "pos_y": 55,
+            "no": "03",
+            "title": "Eigen maat",
+            "text": "Per speler, van 35 t/m 47."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

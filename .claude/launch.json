@@ -220,6 +220,186 @@
         "5199"
       ],
       "port": 5199
+    },
+    {
+      "name": "teamorder-1.12",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5212",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.12"
+      ],
+      "port": 5212
+    },
+    {
+      "name": "teamorder-1.13",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5213",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.13"
+      ],
+      "port": 5213
+    },
+    {
+      "name": "teamorder-1.14",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5214",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.14"
+      ],
+      "port": 5214
+    },
+    {
+      "name": "teamorder-1.15",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5215",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.15"
+      ],
+      "port": 5215
+    },
+    {
+      "name": "teamorder-1.16",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5216",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.16"
+      ],
+      "port": 5216
+    },
+    {
+      "name": "teamorder-1.17",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5217",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.17"
+      ],
+      "port": 5217
+    },
+    {
+      "name": "teamorder-1.18",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5218",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.18"
+      ],
+      "port": 5218
+    },
+    {
+      "name": "teamorder-1.19",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5219",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.19"
+      ],
+      "port": 5219
+    },
+    {
+      "name": "teamorder-1.20",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5220",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.20"
+      ],
+      "port": 5220
+    },
+    {
+      "name": "teamorder-1.21",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5221",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.21"
+      ],
+      "port": 5221
+    },
+    {
+      "name": "teamorder-1.22",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5222",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.22"
+      ],
+      "port": 5222
+    },
+    {
+      "name": "teamorder-1.23",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5223",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.23"
+      ],
+      "port": 5223
+    },
+    {
+      "name": "teamorder-1.24",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5224",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.24"
+      ],
+      "port": 5224
+    },
+    {
+      "name": "teamorder-1.25",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5225",
+        "--directory",
+        "06_Website_Agent/Teamorder-prototype/v1.25"
+      ],
+      "port": 5225
+    },
+    {
+      "name": "survey-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "5230",
+        "--directory",
+        "output"
+      ],
+      "port": 5230
     }
   ]
 }

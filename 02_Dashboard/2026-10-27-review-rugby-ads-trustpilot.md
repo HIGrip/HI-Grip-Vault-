@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Review rugby A/B-ads (Canva-versie) + plek voor Trustpilot 4,6
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Timo heeft paar 4 (rugby) uit [[2026-10-25-ab-test-ads-features-vs-beste]] in Canva opnieuw opgemaakt: A "DE OPTIMALE GRIPSOK", B "8 FEATURES IN 1 GRIPSOK" met een genummerde lijst, beide met een rode knop "Shop nu". Hij vroeg om een controle vóór de Instagram-test en om een plek voor de Trustpilot-score 4,6. Het beeld (zwarte sok vóór RUGBY op warm off-white) is sterk en on-brand. De test zelf is niet meer zuiver, de rode knop breekt de merkregel en de lijst in B is op een telefoon niet leesbaar. Trustpilot kan erbij, maar alleen in beide varianten gelijk en alleen als HÏ Grip een betaald Trustpilot-abonnement heeft.

@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Ads-onderzoek: bewezen grip sock-ads (Meta Ad Library) + stappenplan
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Timo vroeg om goed presterende ads als referentie en om een duidelijk stappenplan voor de eerste HÏ Grip-ads. Naast Claude kan hij daarvoor nu ook het nieuwe OpenAI-abonnement gebruiken voor afbeeldingen. De Meta Ad Library toont geen omzet. Wat het best voorspelt of een ad werkt, is de **looptijd**, samen met het aantal versies: een merk laat een ad die verlies draait geen maanden staan. Op die manier zijn de ads hieronder geselecteerd.

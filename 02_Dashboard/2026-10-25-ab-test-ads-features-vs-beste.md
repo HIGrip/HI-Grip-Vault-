@@ -16,7 +16,7 @@ deadline: ""
 ---
 # A/B-test Instagram-ads: concrete features tegen "de beste gripsok" — 4 paren
 
-> **Brand Core (00):** [[00 Brand Core]] · [[Feiten & Actuele Staat|Feiten]] · [[Brand Identity Overview|Identiteit]] · [[Brand Voice & Tone of Voice|Tone of voice]] · [[Doelgroep & Persona's|Doelgroep]] · [[Strategische Keuzes|Strategie]] — **Map:** [[Waar staat wat]] · [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Timo vroeg om vier A/B-paren voor een Instagram-test van €70 (2 ads × €5 per dag × 7 dagen). De hypothese: een ad die de technische features concreet noemt, haalt minstens 50% hogere CTR dan een ad met "de beste gripsok". Gebouwd zijn 8 ads op eigen foto's, met beeld, opmaak, tekstlengte, CTA en sport gelijk per paar. De features in B komen uit [[Performance Grip Socks 2.0]] §2. "95% meer grip" staat er bewust niet in: dan test je een getal en niet de features.

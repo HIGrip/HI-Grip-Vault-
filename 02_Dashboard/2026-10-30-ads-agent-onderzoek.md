@@ -27,7 +27,7 @@ Geen nieuwe actiechecklists: dit is de uitwerking van het bestaande Ads-dossier 
 
 ## Bevindingen
 ### 1. Bestaande besluiten, open keuzes en bronspanning
-Het bouwplan noemt al een ADS-hoofdagent met Ads-analyse, Ads-creator en eigen ADS-QA. Dit onderzoek werkt dat uit en vergelijkt een tijdelijke tussenstap; het verleent geen nieuwe bevoegdheden.
+Het bouwplan noemt al een Ads-hoofdagent, analyse, creator en eigen Ads-QA. Dit besluit vervangt de creator-rol: Ads is adviserend en read-only. Ads analyseert, maakt optimalisatievoorstellen en plannen, en levert uitsluitend implementatie-instructies/checklists aan mensen. Ads maakt nooit advertentiecontent of creatives (ook geen captions, copy, beelden, varianten of kant-en-klare advertenties), maakt/wijzigt geen campagnes, uploadt, plant of publiceert niets en wijzigt geen budgetten, rechten of instellingen. Geen externe handelingen; een mens implementeert. Geen Ads-creator-subagent. Account/data/proefscope/tools/kosten vereisen elk voorafgaande, afzonderlijke expliciete menselijke vrijgave. Dit onderzoek verleent geen toegang of bevoegdheid.
 
 De backlog vermeldt op 26 oktober het besluit om die week met Ads te starten. Punt 10 bevat daarnaast conditionele tekst over een budgetbeslissing en platformkeuze; punt 24 doet hetzelfde. De regel “Wachten op” verwijst inmiddels naar het genomen besluit. **Belangrijk:** oudere conditionele tekst blijft verwarrend; de update is geen exact budget, kanaalkeuze, accountrecht of uitvoeringsmandaat. Operations wijzigt of herinterpreteert het besluit niet. De oude dashboardtekst over automatisch bijsturen is evenmin toestemming. Historische pixelstatus, rendementen en beschikbaarheidsclaims uit de backlog zijn niet als actuele feiten overgenomen.
 

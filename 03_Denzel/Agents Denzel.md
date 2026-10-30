@@ -109,4 +109,4 @@ BEOORDEEL: ★1–5, optioneel één zin waarom   (alleen bij een echte opleveri
 
 - **Groepschat:** technische inrichting (maximaal 6 deelnemers) is nog niet vastgelegd.
 - **Weekoverzicht (besloten 25-10-2026):** Operations maakt het, Partnership levert aan, Denzel communiceert het door naar Team HÏ Grip zonder het zelf te controleren.
-- Autonomie van de Operations Agent en QA van de Design Agent zijn voorstellen; Ads-tak nog niet uitgewerkt.
+- Autonomie van de Operations Agent en QA van de Design Agent zijn voorstellen. Ads is sinds Lars' opdracht van 30-10-2026 (`t_f53d0c76`) een adviserend/read-only hoofdagent met Ads-analyse en Ads-QA, zonder contentmaker of externe uitvoerrechten; mandaat en poorten staan in [[Agent Hiërarchie & Structuurschema]], route in [[Routeringsgids]]. Hermes-profiel en technische activering nog niet ingericht.

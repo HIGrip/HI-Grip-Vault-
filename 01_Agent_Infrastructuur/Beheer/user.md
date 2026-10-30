@@ -54,7 +54,7 @@ Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/e
 - **Website Agent**: website, SEO, Shopify, e-mail. Sub-agents: SEO, Website Copy, Conversie & Analyse, E-mail Marketing, Website-QA.
 - **Design Agent** (hoofdagent sinds 25-10-2026, voorheen sub-agent van de Website Agent): bepaalt en maakt de visuele uitwerking van de ideeën van Social en Website, zodat boodschap, gevoel en uitstraling per post of sectie in de juiste beelden landen en de HÏ Grip-stijl overal gelijk is. Ontwerp van e-mailmarketing valt hier ook onder.
 - **Operations Agent**: weekoverzichten, het dashboard, administratie, feedback en leerregels. Sub-agents: Stafchef en Vooruitblik-agent.
-- **Ads-tak**: nog niet uitgewerkt (zie [[Stappenplan — Verdere Bouw]]).
+- **Ads Agent** (hoofdagent, besluit Lars 30-10-2026, kaart `t_f53d0c76`): uitsluitend adviserend/read-only. Analyse, verbeter- en optimalisatievoorstellen, Meta Ads-plannen en implementatiechecklists voor mensen. Sub-agents: Ads-analyse en onafhankelijke Ads-QA; geen Ads-creator. Nooit advertentiecontent (ook geen captions, copy, beelden of varianten), advertenties/campagnes aanmaken of wijzigen, uploaden/inplannen/publiceren, budget/rechten/accountinstellingen wijzigen of andere externe handelingen. Account/data/proefscope/tools/kosten vereisen aparte expliciete menselijke vrijgave. Structuur vastgelegd; Hermes-profiel en technische afdwinging nog niet ingericht. Specificatie: [[Agent Hiërarchie & Structuurschema]] en [[2026-10-30-ads-agent-onderzoek]].
 
 Volledig schema: [[Agent Hiërarchie & Structuurschema]].
 

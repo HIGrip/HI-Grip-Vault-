@@ -19,6 +19,10 @@ status: concept — ter beoordeling door Lars en Timo
 | Visuele uitwerking (uiterlijk, kleur, beeld, e-mailontwerp) voor Social en Website | **Design Agent** | nog geen skill |
 | Briefings uitschrijven, open lussen, kwaliteitslog, leerregels, dashboard afvinken, weekoverzicht samenstellen, vooruitblik (evenementen, regels, platformwijzigingen) | **Operations Agent** | nog geen skill |
 
+**Toegevoegd op besluit Lars, 30-10-2026 (`t_f53d0c76`):** Meta Ads-analyse, verbeter-/optimalisatievoorstellen, plannen en menselijke implementatiechecklists gaan naar **Ads Agent**, met Ads-analyse en onafhankelijke Ads-QA. Skill `higrip-ads-agent` is alleen voorgesteld, niet beschikbaar; Hermes-profiel `ads` is niet aangemaakt. Routering is inhoudelijk vastgelegd, automatische dispatch blijft uit tot technische vrijgave en verificatie.
+
+**Niet naar Ads routeren:** advertentiecontent/creatives/captions/copy/beelden/varianten of kant-en-klare advertenties; advertenties/campagnes maken of wijzigen; uploaden/inplannen/publiceren; budget, accountrechten of instellingen wijzigen. Ads voert geen externe handelingen uit, ook niet na adviesakkoord. Niet via Social/Design alsnog content laten maken binnen dit mandaat. Account/data/proefscope/tools/kosten uitsluitend na afzonderlijke expliciete menselijke vrijgave. Mens implementeert. Website behoudt tracking/CRO/GA4/Shopify; Social organische analyse. QA-route en stopvoorwaarden: [[Agent Hiërarchie & Structuurschema]] sectie Ads.
+
 De hoofdagent bepaalt daarna zelf welke sub-agents hij parallel inzet. Denzel kiest geen sub-agent van een hoofdagent, tenzij de opdracht er expliciet om vraagt.
 
 ## Tweede keuze: waar zijn de taken van het vroegere team van Denzel gebleven

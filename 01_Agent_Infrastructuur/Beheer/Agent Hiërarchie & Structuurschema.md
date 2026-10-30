@@ -25,10 +25,20 @@ Hoofdagents (01_Agent_Infrastructuur, één Agents-bestand per hoofdagent)
    ├── Website Agent      → SEO · Website Copy · Conversie & Analyse · E-mail Marketing · Website-QA
    ├── Design Agent       → visuele uitwerking voor Social en Website (QA nog voorstel)
    ├── Operations Agent   → Stafchef · Vooruitblik-agent
-   └── Ads-tak            → nog niet uitgewerkt (zie [[Stappenplan — Verdere Bouw]])
+   └── Ads Agent          → Ads-analyse · Ads-QA (uitsluitend advies/read-only; geen Ads-creator)
 ```
 
-Zes agents (Denzel + vijf hoofdagents) vormen de groep die samenwerkt; de sub-agents werken binnen hun hoofdagent.
+Met het Ads-besluit van Lars (30-10-2026, `t_f53d0c76`) bevat de structuur Denzel plus zes hoofdagents. Sub-agents werken binnen hun hoofdagent. De onderstaande historische groepschatlimiet van zes deelnemers botst hiermee: technische aansluiting van Ads is niet ingericht en vraagt een besluit, niet stilzwijgend een ruimere limiet.
+
+## Ads Agent: vastgesteld mandaat, runtime nog niet ingericht
+
+**Harde grens vóór implementatiehulp:** uitsluitend adviserend/read-only. Nooit advertentiecontent of creatives maken, ook geen captions, copy, beelden, varianten of kant-en-klare advertenties. Geen Ads-creator. Nooit advertenties/campagnes aanmaken of wijzigen, uploaden, inplannen of publiceren, budget/accountrechten/instellingen aanpassen of andere externe handelingen. Ook een goedgekeurd advies voert altijd een mens uit.
+
+- Hoofdagent: analyse bundelen, verbeter- en optimalisatievoorstellen, Meta Ads-plannen en menselijke implementatie-instructies/checklists. Geen account-/datagebruik, proef, tools of kosten zonder aparte expliciete menselijke vrijgave. Geen nieuwe kanaalkeuze buiten Meta uit dit besluit afleiden.
+- **Ads-analyse:** leest alleen vrijgegeven geaggregeerde bronnen; levert definities, berekeningen, beperkingen, hypothesen en meetplan. Geen persoonsgegevens, ontbrekende cijfers invullen, content maken of uitvoering.
+- **Ads-QA:** onafhankelijke reviewer, alleen lezen; toetst bron/peildatum, berekeningen, scope, meetvertraging, claims, verboden en menselijke poorten. Levert GOED/CORRIGEER/ESCALEER met bewijs en niet-gecontroleerd. Schrijft/herstelt niets. Verdict naar Ads-hoofdagent, ongewijzigde kopie Denzel en Stafchef. Maximaal twee correctierondes, dan escaleren. GOED verleent geen uitvoerrecht.
+- Website behoudt tracking/CRO/GA4/Shopify-diagnose; Social organische analyse; Design visueel domein. Ads vraagt alleen analyses via Denzel, geen contentproductie als omweg. In deze opdracht krijgt geen andere agent nieuwe advertentiecontentbevoegdheid.
+- Documentroutering: [[Routeringsgids]]. Exact profiel-/skill-/configvoorstel, vrijgavepoorten en testvoorwaarden: [[2026-10-30-ads-agent-onderzoek]]. Nog geen eigen Agents-bestand of Hermes-profiel; daarvoor is een aparte Operations-kaart met pad/doel/index/inhoud vereist. Dit mandaat blijft in deze bestaande structuurbron staan, ook na dashboardopruiming.
 
 ## Hoe een agent is vastgelegd
 

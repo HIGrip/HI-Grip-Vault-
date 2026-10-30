@@ -72,7 +72,7 @@ De vault is leidend; skills en `SOUL.md` bevatten alleen paden en gedrag, nooit 
 
 **6. Keuzes voor Team HÏ Grip.**
 - [ ] Toolkeuze Content Maker (Higgsfield, Claude Design, Adobe of Canva) met maandbudget; montageprogramma koppelen.
-- [ ] Ads-tak uitwerken: hoofdagent ADS met Ads-analyse en Ads-creator, plus een eigen ADS-QA onder de ADS-hoofdagent (niet bij Denzel, besluit 21-10-2026). Uitgeven altijd overleg vooraf.
+- [ ] Ads-runtime inrichten na aparte vrijgave: hoofdagent **Ads Agent**, Ads-analyse en onafhankelijke Ads-QA. Lars vervangt op 30-10-2026 (`t_f53d0c76`) het eerdere creator-voorstel: **geen Ads-creator, geen advertentiecontent/captions/copy/beelden/varianten, geen campagne-/advertentiewijziging of -aanmaak, upload/inplanning/publicatie, budget/rechten/instellingen of externe handelingen**. Alleen read-only analyse, optimalisatievoorstellen, Meta-plannen en checklists; mens implementeert. Structuur en route staan in [[Agent Hiërarchie & Structuurschema]] en [[Routeringsgids]]. Account/data/proefscope/tools/kosten apart vrijgeven. Profiel-/skill-/configvoorstel in [[2026-10-30-ads-agent-onderzoek]]; niet uitgevoerd. Geen taak afgevinkt.
 
 **7. Dashboard.** Afstemmen met de bouwer: afvinken met bewijs door de Stafchef, extra soorten voorstellen, rechten per persoon, sterrenknop. Uitleg: [[Agents en het dashboard]], [[Sterrenbeoordeling]].
 

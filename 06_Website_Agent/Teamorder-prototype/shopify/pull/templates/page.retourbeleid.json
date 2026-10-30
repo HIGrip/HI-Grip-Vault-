@@ -1,0 +1,185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "legal-hero",
+      "settings": {
+        "eyebrow": "",
+        "heading": "Retourbeleid",
+        "heading_tag": "h1",
+        "lead": "",
+        "heading_size": 80,
+        "heading_size_mobile": 40,
+        "eyebrow_size": 11,
+        "lead_size": 17,
+        "heading_uppercase": true,
+        "heading_italic": true,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "eyebrow_color": "#ccff00",
+        "heading_color": "",
+        "lead_color": "",
+        "animate": true,
+        "padding_top": 72,
+        "padding_bottom": 56,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 40
+      }
+    },
+    "body": {
+      "type": "legal-body",
+      "blocks": {
+        "a1": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Retour aanvragen",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<ol><li><strong>Vraag je retour aan.</strong> Binnen 30 dagen na ontvangst, via ons <a href=\"/pages/contact\">contactformulier</a>.</li><li><strong>Je krijgt een retourlabel.</strong> Met instructies over hoe en waar je het pakket naartoe stuurt.</li><li><strong>Stuur het pakket terug.</strong> Bewaar het verzendbewijs van je retourzending.</li><li><strong>Je krijgt je geld terug.</strong> Binnen 14 dagen na je retourmelding, inclusief de verzendkosten van je bestelling.</li></ol>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "b1": {
+          "type": "button",
+          "settings": {
+            "label": "Start je retour",
+            "link": "/pages/contact",
+            "new_tab": false,
+            "style": "dark",
+            "bg_color": "",
+            "text_color": "",
+            "border_color": "",
+            "hover_bg_color": "",
+            "hover_text_color": "",
+            "radius": 40,
+            "text_size": 14
+          }
+        },
+        "n1": {
+          "type": "note",
+          "settings": {
+            "text": "<p>Artikelen die we terugkrijgen zonder dat er een retour is aangevraagd, nemen we niet aan. Retourneren via MyParcel kan ook: <a href=\"https://myparcel.me/returns/create\" target=\"_blank\" rel=\"noopener\">myparcel.me/returns/create</a>.</p>",
+            "text_color": "",
+            "border_color": ""
+          }
+        },
+        "a2": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Voorwaarden",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<ul><li>Je mag het product uitpakken en bekijken zoals je dat in een winkel zou doen. Is het meer gebruikt dan nodig was om het te beoordelen, dan mogen we de waardevermindering verrekenen.</li><li>Gepersonaliseerde producten (zoals bedrukkingen) kun je niet retourneren.</li><li>De kosten van het terugsturen zijn voor jou.</li></ul>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        },
+        "a3": {
+          "type": "article",
+          "settings": {
+            "number_label": "",
+            "heading": "Schade of verkeerd artikel",
+            "heading_tag": "h2",
+            "heading_size": 0,
+            "body": "<p>Controleer je bestelling direct bij ontvangst. Is het product beschadigd of heb je het verkeerde artikel gekregen? Neem dan meteen contact met ons op. We lossen het voor je op.</p>",
+            "in_toc": true,
+            "heading_color": "",
+            "label_color": "",
+            "text_color": "",
+            "text_size": 0
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "b1",
+        "n1",
+        "a2",
+        "a3"
+      ],
+      "settings": {
+        "show_toc": true,
+        "toc_title": "Op deze pagina",
+        "toc_numbers": false,
+        "toc_offset": 120,
+        "text_size": 15,
+        "content_max_width": 760,
+        "heading_color": "",
+        "label_color": "",
+        "link_color": "",
+        "bullet_color": "",
+        "line_color": "",
+        "toc_title_color": "",
+        "toc_color": "",
+        "toc_active_color": "",
+        "row_label_color": "",
+        "row_value_color": "",
+        "note_color": "",
+        "note_border_color": "",
+        "section_width": "page",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 88
+      }
+    },
+    "help": {
+      "type": "legal-help",
+      "settings": {
+        "heading": "Vraag over dit beleid?",
+        "heading_tag": "h2",
+        "heading_size": 36,
+        "heading_size_mobile": 24,
+        "text": "Mail <strong>info@higrip.nl</strong> of bel <strong>+31 6 24 56 65 47</strong>.",
+        "text_size": 15,
+        "heading_color": "",
+        "text_color_body": "",
+        "strong_color": "",
+        "button_label": "Contact",
+        "button_link": "/pages/contact",
+        "button_style": "light",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_hover_bg": "",
+        "button_hover_fg": "",
+        "button_radius": 40,
+        "button_size": 14,
+        "section_width": "page",
+        "text_align": "left",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "padding_top": 64,
+        "padding_bottom": 64,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "body",
+    "help"
+  ]
+}

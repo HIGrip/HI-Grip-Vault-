@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 29 oktober 2026 (actiecontrole)
+Laatst bijgewerkt: 30 oktober 2026 (growth-radar)
 Open: 29 · Afgerond: 8 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -77,6 +77,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Inspanning:** 2 uur
 
 ### [ ] 10. Conversions API (CAPI) instellen (herzien 18 sep 2026, aangevuld 25 sep 2026, 9 okt 2026)
+**Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op "Betaalproces starten" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar "Content bekijken" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.
 **Update 26 okt 2026 (besluit Team HÏ Grip, opgewaardeerd naar P1):** de advertentiebudget-beslissing waarop dit punt wachtte is genomen — deze week starten met Ads. CAPI vanaf dag 1 van de eerste campagne inrichten (zie ook punt 24, ChatGPT Ads, zelfde besluit).
 **Update 9 okt 2026:** Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks; likes, shares, saves en video-views van 5+ seconden tellen sindsdien apart mee als "engage-through-attributie", standaard aan met een venster van 1 dag (Search Engine Land). Meenemen bij de Ads Manager-inrichting zodra het budget besloten is: anders telt de gerapporteerde ROAS ook niet-klik-conversies mee.
 **Update 25 sep 2026:** Op higrip.nl draait op dit moment géén Meta- of TikTok-pixel. Een nieuw geïnstalleerde pixel zonder advertentieverkeer valt precies in Shopify's Optimized-pauzeprofiel. Zet hem daarom bij installatie meteen op **Always on** (Instellingen → Klantgebeurtenissen → App-pixels). Meta's one-click CAPI (sinds 15 apr 2026) staat in Events Manager.
@@ -126,6 +127,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waarom:** Meest consistent bewezen CRO-tactiek van 2026: +10 tot 30% conversie. Geen enkele andere losse ingreep haalt dat betrouwbaarheidsniveau.
 **Wat:** De sok in actie — slide-out op de padelbaan, close-up van de grip. Geen praatvideo.
 **Bonus:** Dezelfde opname is direct TikTok- en Reels-materiaal (zie punt 9).
+**Update 30 okt 2026 (Growth Radar, Social):** Meta's "Advantage+ creative"-videogenerator (algemeen beschikbaar sinds Advertising Week NY, 6 okt 2026) maakt binnen Ads Manager automatisch video uit bestaande statische productfoto's — ook die van de lopende A/B-test ([[2026-10-25-ab-test-ads-features-vs-beste]]). Geen vervanging van de geplande eigen opname hierboven, maar een gratis, direct beschikbare tussenstap voor een videovariant in de volgende Ads-testronde.
 **Inspanning:** 1 dag opname + montage
 
 ### [ ] 8. Perplexity Merchant Program — alleen als je naar de VS verzendt (nieuw 16 sep 2026, uitgebreid 23 sep 2026)

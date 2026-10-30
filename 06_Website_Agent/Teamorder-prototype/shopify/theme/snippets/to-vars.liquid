@@ -1,0 +1,18 @@
+{%- comment -%}
+  Opmaak per sectie uit de thema-editor als CSS-variabelen.
+  @param s   section.settings
+  @param id  section.id
+  @param h   standaard kopmaat desktop als de sectie geen h_d heeft
+  @param ref schermbreedte waarop de kop zijn desktopmaat bereikt (zoals in het prototype)
+{%- endcomment -%}
+{%- liquid
+  assign ref = ref | default: 1300
+  assign h_m = s.h_m | default: 34
+  assign h_d = s.h_d | default: h
+  assign h_vw = h_d | times: 100.0 | divided_by: ref | round: 2
+  assign lead_vw = s.lead_d | default: 17 | times: 100.0 | divided_by: 1240 | round: 2
+-%}
+<style>
+#shopify-section-{{ id }} .to {--to-bg: {{ s.bg }}; --to-fg: {{ s.fg }}; --to-mu: {{ s.mu }}; --to-ac: {{ s.ac }}; --to-w: {{ s.w | default: 1240 }}px; --to-align: {{ s.align | default: 'left' }}; --to-pt: {{ s.pt_m }}px; --to-pb: {{ s.pb_m }}px; --to-h: {{ h_m }}px; --to-lead: {{ s.lead_m | default: 15 }}px;}
+@media (min-width: 769px) { #shopify-section-{{ id }} .to {--to-pt: {{ s.pt_d }}px; --to-pb: {{ s.pb_d }}px; --to-h: clamp({{ h_m }}px, {{ h_vw }}vw, {{ h_d }}px); --to-lead: clamp({{ s.lead_m | default: 15 }}px, {{ lead_vw }}vw, {{ s.lead_d | default: 17 }}px);} }
+</style>

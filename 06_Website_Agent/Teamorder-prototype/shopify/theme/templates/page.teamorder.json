@@ -1,0 +1,600 @@
+{
+  "sections": {
+    "hero": {
+      "type": "to-01-hero",
+      "settings": {
+        "image": "shopify://shop_images/to-con-0277.webp"
+      }
+    },
+    "service": {
+      "type": "to-02-service",
+      "settings": {},
+      "blocks": {
+        "usp_1": {
+          "type": "usp",
+          "settings": {
+            "icon": "truck",
+            "title": "Gratis",
+            "text": "verzending"
+          }
+        },
+        "usp_2": {
+          "type": "usp",
+          "settings": {
+            "icon": "clock",
+            "title": "1 werkdag",
+            "text": "tot verzending"
+          }
+        },
+        "usp_3": {
+          "type": "usp",
+          "settings": {
+            "icon": "return",
+            "title": "30 dagen",
+            "text": "retour"
+          }
+        }
+      },
+      "block_order": [
+        "usp_1",
+        "usp_2",
+        "usp_3"
+      ]
+    },
+    "samensteller": {
+      "type": "to-03-samensteller",
+      "settings": {
+        "zak_link": "shopify://pages/zakelijk"
+      },
+      "blocks": {
+        "sok_1": {
+          "type": "sok",
+          "settings": {
+            "name": "2.0",
+            "label": "Zwart",
+            "swatch": "#0A0A0A",
+            "product": "performance-gripsokken-2-0-zwart"
+          }
+        },
+        "sok_2": {
+          "type": "sok",
+          "settings": {
+            "name": "2.0",
+            "label": "Wit",
+            "swatch": "#FFFFFF",
+            "product": "performance-gripsokken-2-0-wit"
+          }
+        },
+        "sok_3": {
+          "type": "sok",
+          "settings": {
+            "name": "1.0",
+            "label": "Wit",
+            "swatch": "#FFFFFF",
+            "product": "performance-gripsokken"
+          }
+        },
+        "staffel_4": {
+          "type": "staffel",
+          "settings": {
+            "min": 5,
+            "off": "4,00",
+            "code": "TEAM5"
+          }
+        },
+        "staffel_5": {
+          "type": "staffel",
+          "settings": {
+            "min": 10,
+            "off": "4,20",
+            "code": "TEAM10"
+          }
+        },
+        "staffel_6": {
+          "type": "staffel",
+          "settings": {
+            "min": 15,
+            "off": "4,45",
+            "code": "TEAM15"
+          }
+        },
+        "staffel_7": {
+          "type": "staffel",
+          "settings": {
+            "min": 20,
+            "off": "4,65",
+            "code": "TEAM20"
+          }
+        },
+        "staffel_8": {
+          "type": "staffel",
+          "settings": {
+            "min": 25,
+            "off": "4,90",
+            "code": "TEAM25"
+          }
+        },
+        "staffel_9": {
+          "type": "staffel",
+          "settings": {
+            "min": 30,
+            "off": "5,10",
+            "code": "TEAM30"
+          }
+        },
+        "staffel_10": {
+          "type": "staffel",
+          "settings": {
+            "min": 35,
+            "off": "5,35",
+            "code": "TEAM35"
+          }
+        },
+        "staffel_11": {
+          "type": "staffel",
+          "settings": {
+            "min": 40,
+            "off": "5,55",
+            "code": "TEAM40"
+          }
+        },
+        "staffel_12": {
+          "type": "staffel",
+          "settings": {
+            "min": 45,
+            "off": "5,80",
+            "code": "TEAM45"
+          }
+        },
+        "staffel_13": {
+          "type": "staffel",
+          "settings": {
+            "min": 50,
+            "off": "6,00",
+            "code": "TEAM50"
+          }
+        }
+      },
+      "block_order": [
+        "sok_1",
+        "sok_2",
+        "sok_3",
+        "staffel_4",
+        "staffel_5",
+        "staffel_6",
+        "staffel_7",
+        "staffel_8",
+        "staffel_9",
+        "staffel_10",
+        "staffel_11",
+        "staffel_12",
+        "staffel_13"
+      ]
+    },
+    "stappen": {
+      "type": "to-04-stappen",
+      "settings": {},
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "Stel samen",
+            "text": "Kies je sok en kleur, en per maat het aantal paar."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "Reken af of vraag aan",
+            "text": "Betaal direct, of laat ons eerst meekijken met je order."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "Wij verzenden",
+            "text": "Binnen 1 werkdag onderweg, zonder verzendkosten."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "title": "Iedereen presteert",
+            "text": "Niemand glijdt meer weg. Past een maat niet? 30 dagen retour."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ]
+    },
+    "sok": {
+      "type": "to-05-sok",
+      "settings": {
+        "image": "shopify://shop_images/to-p20-wit-site.webp"
+      },
+      "blocks": {
+        "point_1": {
+          "type": "point",
+          "settings": {
+            "title": "Compressie",
+            "text": "15-20 mmHg steun rond je voet",
+            "side": "l",
+            "x": 46,
+            "y": 22
+          }
+        },
+        "point_2": {
+          "type": "point",
+          "settings": {
+            "title": "Coolmax",
+            "text": "30%, voert vocht direct af",
+            "side": "r",
+            "x": 56,
+            "y": 38
+          }
+        },
+        "point_3": {
+          "type": "point",
+          "settings": {
+            "title": "Ademend",
+            "text": "Open structuur bovenop je voet",
+            "side": "l",
+            "x": 42,
+            "y": 56
+          }
+        },
+        "point_4": {
+          "type": "point",
+          "settings": {
+            "title": "Versterkte hiel",
+            "text": "Extra dikte onder je hiel",
+            "side": "r",
+            "x": 62,
+            "y": 66
+          }
+        },
+        "point_5": {
+          "type": "point",
+          "settings": {
+            "title": "Naadloos",
+            "text": "Geen stiksels bij je tenen",
+            "side": "l",
+            "x": 36,
+            "y": 88
+          }
+        },
+        "point_6": {
+          "type": "point",
+          "settings": {
+            "title": "Maximale grip",
+            "text": "Siliconen zones onder de zool",
+            "side": "r",
+            "x": 64,
+            "y": 86
+          }
+        }
+      },
+      "block_order": [
+        "point_1",
+        "point_2",
+        "point_3",
+        "point_4",
+        "point_5",
+        "point_6"
+      ]
+    },
+    "op_het_veld": {
+      "type": "to-06-op-het-veld",
+      "settings": {},
+      "blocks": {
+        "photo_1": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0168.webp",
+            "alt": "Clublogo van Concordia Delft op een zwart trainingsshirt",
+            "cols": 3,
+            "rows": 3
+          }
+        },
+        "photo_2": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0268.webp",
+            "alt": "Spelers met ballen op het veld onder de lichtmasten",
+            "cols": 6,
+            "rows": 3,
+            "ls": true
+          }
+        },
+        "photo_3": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0220.webp",
+            "alt": "Witte HÏ Grip gripsokken in voetbalschoenen op kunstgras",
+            "cols": 3,
+            "rows": 3
+          }
+        },
+        "photo_4": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0174.webp",
+            "alt": "Team van Concordia loopt in tijdens de avondtraining",
+            "cols": 4,
+            "rows": 3
+          }
+        },
+        "photo_5": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0210.webp",
+            "alt": "Benen van spelers tussen pionnen tijdens de warming-up",
+            "cols": 4,
+            "rows": 3
+          }
+        },
+        "photo_6": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0226.webp",
+            "alt": "Close-up van witte HÏ Grip sokken bij een speler",
+            "cols": 4,
+            "rows": 3
+          }
+        }
+      },
+      "block_order": [
+        "photo_1",
+        "photo_2",
+        "photo_3",
+        "photo_4",
+        "photo_5",
+        "photo_6"
+      ]
+    },
+    "trustpilot": {
+      "type": "to-07-trustpilot",
+      "settings": {
+        "image": "shopify://shop_images/to-con-0271.webp",
+        "link": "https://nl.trustpilot.com/review/higrip.nl"
+      }
+    },
+    "logos": {
+      "type": "to-08-logos",
+      "settings": {},
+      "blocks": {
+        "logo_1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-concordia-360.webp",
+            "alt": "Concordia"
+          }
+        },
+        "logo_2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-spirit-252.webp",
+            "alt": "V.V. Spirit"
+          }
+        },
+        "logo_3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-sport2000-240.webp",
+            "alt": "Sport 2000"
+          }
+        },
+        "logo_4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-myhealthclub-600.webp",
+            "alt": "MyHealth Club"
+          }
+        },
+        "logo_5": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-syth-512.webp",
+            "alt": "Say Yes To Health"
+          }
+        },
+        "logo_6": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hp-logo-hr-500.webp",
+            "alt": "Hogeschool Rotterdam"
+          }
+        }
+      },
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "logo_3",
+        "logo_4",
+        "logo_5",
+        "logo_6"
+      ]
+    },
+    "voor_clubs": {
+      "type": "to-09-voor-clubs",
+      "settings": {},
+      "blocks": {
+        "tile_1": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/hp-b2b-club-spirit-1000.webp",
+            "alt": "Witte HÏ Grip gripsokken onder gele clubkousen van V.V. Spirit",
+            "py": 62,
+            "title": "Jouw logo op de sok",
+            "text": "Eigen logo en kleuren vanaf 150 stuks, van € 8,70 tot € 6,30 per stuk."
+          }
+        },
+        "tile_2": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0220.webp",
+            "alt": "Witte HÏ Grip gripsokken in voetbalschoenen op kunstgras",
+            "py": 70,
+            "title": "Elke speler zijn maat",
+            "text": "Je verdeelt de bestelling per speler, zwart of wit.",
+            "chips": "35-38, 39-42, 43-47"
+          }
+        },
+        "tile_3": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/to-con-0171.webp",
+            "alt": "Het team van Concordia samen op het veld tijdens de avondtraining",
+            "py": 66,
+            "big": true,
+            "title": "Van jeugd tot\neerste elftal.",
+            "text": "Eén bestelling en één vast aanspreekpunt bij HÏ Grip Zakelijk.",
+            "btn_pre": "Naar HÏ Grip",
+            "btn_label": "Zakelijk",
+            "btn_link": "shopify://pages/zakelijk"
+          }
+        }
+      },
+      "block_order": [
+        "tile_1",
+        "tile_2",
+        "tile_3"
+      ]
+    },
+    "verkopen": {
+      "type": "to-10-verkopen",
+      "settings": {
+        "image": "shopify://shop_images/to-b2b-voetbal-1142.webp",
+        "btn_link": "shopify://pages/zakelijk"
+      },
+      "blocks": {
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/to-p20-zwart-voor-900.webp",
+            "alt": "Performance Grip Socks 2.0 in zwart",
+            "label": "2.0 zwart"
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/to-p20-wit-voor-900.webp",
+            "alt": "Performance Grip Socks 2.0 in wit",
+            "label": "2.0 wit"
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "image": "shopify://shop_images/to-p10-zij-900.webp",
+            "alt": "Performance Grip Socks 1.0 in wit",
+            "label": "1.0 wit"
+          }
+        }
+      },
+      "block_order": [
+        "product_1",
+        "product_2",
+        "product_3"
+      ]
+    },
+    "faq": {
+      "type": "to-11-faq",
+      "settings": {},
+      "blocks": {
+        "qa_1": {
+          "type": "qa",
+          "settings": {
+            "question": "Hoe werkt de staffelprijs?",
+            "answer": "<p>Alle paren in je order tellen samen. Vanaf 5 paar betaal je een teamprijs, en elke 5 paar extra gaat er weer een stukje af, tot 50 paar. De korting zie je direct in de winkelwagen en staat bij het afrekenen op je bestelling.</p>"
+          }
+        },
+        "qa_2": {
+          "type": "qa",
+          "settings": {
+            "question": "Wij hebben meer dan 50 paar nodig.",
+            "answer": "<p>Dan is HÏ Grip Zakelijk de beste route. Je krijgt een eigen clubprijs en een vast aanspreekpunt. <a href=\"/pages/zakelijk\">Naar HÏ Grip Zakelijk</a></p>"
+          }
+        },
+        "qa_3": {
+          "type": "qa",
+          "settings": {
+            "question": "Kan ik maten, kleuren en sokken combineren?",
+            "answer": "<p>Ja. Zet 2.0 zwart, 2.0 wit en 1.0 wit in één bestelling, in elke maat die je team nodig heeft. Alles telt mee voor dezelfde staffel.</p>"
+          }
+        },
+        "qa_4": {
+          "type": "qa",
+          "settings": {
+            "question": "Welke maten zijn er?",
+            "answer": "<p>De 2.0 komt in 35-38, 39-42 en 43-47. De 1.0 komt in 34-39 en 40-46.</p>"
+          }
+        },
+        "qa_5": {
+          "type": "qa",
+          "settings": {
+            "question": "Wanneer heb ik de sokken?",
+            "answer": "<p>We verzenden binnen 1 werkdag. Een teamorder verzenden we altijd gratis.</p>"
+          }
+        },
+        "qa_6": {
+          "type": "qa",
+          "settings": {
+            "question": "Past een maat niet?",
+            "answer": "<p>Je hebt 30 dagen om het retour te sturen.</p>"
+          }
+        },
+        "qa_7": {
+          "type": "qa",
+          "settings": {
+            "question": "Mag ik gripsokken dragen in een wedstrijd?",
+            "answer": "<p>In het amateurvoetbal kijkt de scheidsrechter vooral naar de kleur van je kousen boven de schoen. Met een sleeve in clubkleur over je gripsok zit je bij de meeste competities goed. Twijfel je, check dan het reglement van je bond of club.</p>"
+          }
+        },
+        "qa_8": {
+          "type": "qa",
+          "settings": {
+            "question": "Kan ons clublogo op de sok?",
+            "answer": "<p>Ja, vanaf 150 stuks via HÏ Grip Zakelijk. Je betaalt dan € 8,70 tot € 6,30 per stuk, afhankelijk van het aantal.</p>"
+          }
+        },
+        "qa_9": {
+          "type": "qa",
+          "settings": {
+            "question": "Hoe was ik gripsokken zodat de grip blijft?",
+            "answer": "<p>Binnenstebuiten, koud of lauw, en niet in de droger.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "qa_1",
+        "qa_2",
+        "qa_3",
+        "qa_4",
+        "qa_5",
+        "qa_6",
+        "qa_7",
+        "qa_8",
+        "qa_9"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "service",
+    "samensteller",
+    "stappen",
+    "sok",
+    "op_het_veld",
+    "trustpilot",
+    "logos",
+    "voor_clubs",
+    "verkopen",
+    "faq"
+  ]
+}

@@ -1,0 +1,173 @@
+<title>HÏ Grip Ad-test</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,900&display=swap">
+<style>
+  /* Layout: kolom van 4 testparen; per paar A en B naast elkaar zoals in de feed, copy eronder */
+  :root {
+    --bg: #F4F3F1;
+    --surface: #FFFFFF;
+    --fg: #0A0A0A;
+    --muted: #5E5F63;
+    --line: #DAD8D4;
+    --mark: #0A0A0A;
+    --mark-fg: #FFFFFF;
+    --f: 'Poppins', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #111111; --surface: #1A1A1A; --fg: #FFFFFF; --muted: #909194; --line: #2C2C2E; --mark: #FFFFFF; --mark-fg: #0A0A0A; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #111111; --surface: #1A1A1A; --fg: #FFFFFF; --muted: #909194; --line: #2C2C2E; --mark: #FFFFFF; --mark-fg: #0A0A0A; color-scheme: dark; }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 400 15px/1.6 var(--f); letter-spacing: -0.01em; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding-block: 56px 96px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+  h1, h2, h3 { text-transform: uppercase; letter-spacing: -0.03em; text-wrap: balance; margin: 0; }
+  h1 { font: italic 900 clamp(40px, 7vw, 76px)/0.95 var(--f); }
+  h2 { font: 800 clamp(26px, 3.4vw, 36px)/1.05 var(--f); }
+  h3 { font: 700 16px/1.3 var(--f); }
+  p { margin: 0; max-width: 68ch; }
+  .muted { color: var(--muted); }
+
+  header { display: grid; gap: 20px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+  .hyp { font-size: 18px; line-height: 1.5; max-width: 60ch; }
+
+  .advice { display: grid; grid-template-columns: 1fr; gap: 16px; padding: 28px; margin-top: 40px; border-radius: 20px; background: var(--mark); color: var(--mark-fg); }
+  .advice p { max-width: 75ch; }
+  .advice strong { font-weight: 700; }
+
+  .pair { display: grid; gap: 24px; padding-block: 56px; border-bottom: 1px solid var(--line); }
+  .pair__head { display: grid; gap: 10px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { font: 600 12px/1 var(--f); text-transform: uppercase; letter-spacing: .04em; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .duo--story { max-width: 760px; }
+  .variant { display: grid; gap: 12px; align-content: start; min-width: 0; }
+  .variant img { width: 100%; border-radius: 14px; display: block; background: var(--line); }
+  .variant__tag { display: flex; align-items: baseline; gap: 10px; }
+  .variant__tag b { font: 800 22px/1 var(--f); }
+  .copy { font-size: 14px; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); }
+  .copy span { display: block; font: 600 11px/1.4 var(--f); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-bottom: 4px; }
+
+  .why { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .why div { display: grid; gap: 6px; }
+
+  .notes { display: grid; gap: 28px; padding-top: 56px; }
+  .notes ol { margin: 0; padding-left: 22px; display: grid; gap: 14px; max-width: 80ch; }
+  .notes li::marker { font-weight: 700; }
+  .num { font-variant-numeric: tabular-nums; font-weight: 700; }
+  .src { font-size: 13px; }
+  .src a { color: inherit; }
+
+  @media (max-width: 640px) {
+    .duo { gap: 10px; }
+    .advice { padding: 20px; }
+    .variant__tag b { font-size: 18px; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Gripsok ad-test: kies 1 van 4</h1>
+    <p class="hyp">Hypothese: een Instagram-ad die de technische features van de sok concreet benoemt (B) haalt minstens 50% hogere CTR dan een ad die zegt "de beste gripsok" (A).</p>
+    <p class="muted">Per paar zijn beeld, opmaak, tekstlengte, CTA en sport gelijk. Alleen de boodschap verschilt. De features in B komen uit de productwaarheid 2.0 (siliconen gripzones, 30% Coolmax, 15–20 mmHg compressie, versterkte hiel, naadloze teen). In B staat bewust géén "95% meer grip": dan test je een getal en niet de features.</p>
+    <div class="advice">
+      <h3>Mijn advies: paar 1 (padel)</h3>
+      <p><strong>Waarom:</strong> het verschil zit in één kop, dus de test meet echt de boodschap. De foto toont de gripzool, waardoor B klopt met wat je ziet. Padel is de grootste beachhead (40.000–60.000 actieve spelers per maand) en nog vrijwel leeg aan merk-ads in NL. Feed 4:5 is de plaatsing waar link clicks het goedkoopst zijn. Tweede keus: paar 2, dat het verschil het zichtbaarst maakt, maar daar oogt A met vier keer "de beste" bijna als een stropop.</p>
+    </div>
+  </header>
+
+  <section class="pair" id="paar1">
+    <div class="pair__head">
+      <div class="meta"><span class="chip">Paar 1</span><span class="chip">Padel</span><span class="chip">Feed 4:5 · 1080×1350</span></div>
+      <h2>Kop over beeld</h2>
+      <p class="muted">Groot, schuin Poppins Black over een eigen foto, kleine labels in de hoeken: de stijl van je visuele inspo (Creative Brief, Guideline).</p>
+    </div>
+    <div class="duo">
+      <div class="variant">
+        <div class="variant__tag"><b>A</b><span class="muted">"De beste gripsok"</span></div>
+        <img src="web/1A.webp" alt="Ad 1A: padelspeler op blauwe baan van achteren, kop DE BESTE GRIPSOK.">
+        <p class="copy"><span>Primaire tekst</span>De beste gripsok voor padel. Je voet blijft stil in je schoen, van warming-up tot laatste punt. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+      <div class="variant">
+        <div class="variant__tag"><b>B</b><span class="muted">Features</span></div>
+        <img src="web/1B.webp" alt="Ad 1B: zelfde foto, kop SILICONEN GRIPZONES.">
+        <p class="copy"><span>Primaire tekst</span>Siliconen gripzones en 30% Coolmax. Je voet blijft stil in je schoen, van warming-up tot laatste punt. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" id="paar2">
+    <div class="pair__head">
+      <div class="meta"><span class="chip">Paar 2</span><span class="chip">Voetbal</span><span class="chip">Feed 4:5 · 1080×1350</span></div>
+      <h2>Labels op de sok</h2>
+      <p class="muted">Vier lijntjes naar de sok, het "feature callout"-format dat in productcategorieën met specs het langst blijft draaien. A en B hebben dezelfde vier posities en bijna dezelfde lengte.</p>
+    </div>
+    <div class="duo">
+      <div class="variant">
+        <div class="variant__tag"><b>A</b><span class="muted">"De beste gripsok"</span></div>
+        <img src="web/2A.webp" alt="Ad 2A: voetballer bij doel, vier labels met 'de beste'.">
+        <p class="copy"><span>Primaire tekst</span>De beste gripsok op het veld. Je voet blijft stil in je schoen, van warming-up tot laatste minuut. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+      <div class="variant">
+        <div class="variant__tag"><b>B</b><span class="muted">Features</span></div>
+        <img src="web/2B.webp" alt="Ad 2B: zelfde foto, labels met gripzones, Coolmax, compressie en versterkte hiel.">
+        <p class="copy"><span>Primaire tekst</span>Siliconen gripzones en versterkte hiel. Je voet blijft stil in je schoen, van warming-up tot laatste minuut. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" id="paar3">
+    <div class="pair__head">
+      <div class="meta"><span class="chip">Paar 3</span><span class="chip">Tennis</span><span class="chip">Story 9:16 · 1080×1920</span></div>
+      <h2>Rustige Story</h2>
+      <p class="muted">Eén foto, een korte kop bovenaan in het midden en een losse knop: het patroon uit de Story-ads die @72atta deelt (Sweaty Betty, Byoma). Tekst valt binnen de veilige zone van Stories.</p>
+    </div>
+    <div class="duo duo--story">
+      <div class="variant">
+        <div class="variant__tag"><b>A</b><span class="muted">"De beste gripsok"</span></div>
+        <img src="web/3A.webp" alt="Ad 3A: tennisser op gravel, kop DE BESTE GRIPSOK VOOR GRAVEL.">
+        <p class="copy"><span>Primaire tekst</span>De beste gripsok voor gravel. Je voet blijft stil in je schoen, van warming-up tot matchpoint. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+      <div class="variant">
+        <div class="variant__tag"><b>B</b><span class="muted">Features</span></div>
+        <img src="web/3B.webp" alt="Ad 3B: zelfde foto, kop SILICONEN GRIP. VERSTERKTE HIEL.">
+        <p class="copy"><span>Primaire tekst</span>Siliconen grip en versterkte hiel. Je voet blijft stil in je schoen, van warming-up tot matchpoint. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pair" id="paar4">
+    <div class="pair__head">
+      <div class="meta"><span class="chip">Paar 4</span><span class="chip">Rugby</span><span class="chip">Feed 4:5 · 1080×1350</span></div>
+      <h2>Product voor de letters</h2>
+      <p class="muted">De sok staat vóór een groot woord, zoals in de NATURE-inspo. Het woord RUGBY is in beide gelijk; de boodschap staat eronder. Voor rugby is geen sterke eigen actiefoto, dus hier staat het product centraal.</p>
+    </div>
+    <div class="duo">
+      <div class="variant">
+        <div class="variant__tag"><b>A</b><span class="muted">"De beste gripsok"</span></div>
+        <img src="web/4A.webp" alt="Ad 4A: zwarte sok voor het woord RUGBY, kop DE BESTE GRIPSOK VOOR RUGBY.">
+        <p class="copy"><span>Primaire tekst</span>De beste gripsok voor rugby. Je voet blijft stil in je schoen, van warming-up tot fluitsignaal. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+      <div class="variant">
+        <div class="variant__tag"><b>B</b><span class="muted">Features</span></div>
+        <img src="web/4B.webp" alt="Ad 4B: zelfde beeld, kop SILICONEN GRIP IN JE SCHOEN.">
+        <p class="copy"><span>Primaire tekst</span>Siliconen grip en een naadloze teen. Je voet blijft stil in je schoen, van warming-up tot fluitsignaal. Performance Grip Socks 2.0 · €17,95</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes">
+    <h2>Voor je hem live zet</h2>
+    <ol>
+      <li><b>3.000 vertoningen is te weinig voor een harde uitslag.</b> Bij 1,0% tegen 1,5% CTR geeft dat 30 tegen 45 klikken; die kans op toeval is nog ongeveer <span class="num">8%</span>. Voor 95% zekerheid heb je ongeveer <span class="num">3.800</span> vertoningen per variant nodig, voor een betrouwbare test (80% power) ongeveer <span class="num">7.700</span>. Met €35 per variant haal je dat alleen bij een lage CPM. Behandel een kleinere uitslag als richting, niet als bewijs. De A/B-testfunctie van Meta toont zelf een betrouwbaarheidspercentage: noteer dat.</li>
+      <li><b>1,0% is een hoge startwaarde.</b> Benchmarks voor de Instagram-feed liggen tussen 0,2% en 0,9% CTR; kleding gemiddeld rond 0,4% in de feed. Het criterium "+50%" blijft goed, maar verwacht lagere absolute cijfers.</li>
+      <li><b>Kijk ook naar add-to-carts.</b> Onderzoek naar zoekadvertenties laat zien dat algemene teksten soms meer klikken halen, terwijl specifieke teksten beter converteren. A kan dus winnen op CTR en B op add-to-carts. Daarom is die ondersteunende metriek hier belangrijk.</li>
+      <li><b>"De beste gripsok" is een claim zonder bewijs.</b> Voor een test van een week is dat te verdedigen als aanprijzing, maar schaal variant A niet op voordat je weet hoe de Reclame Code het opvat.</li>
+      <li><b>Gelijk houden in Ads Manager:</b> kop onder het beeld "Performance Grip Socks 2.0", knop "Nu kopen", dezelfde landingspagina (2.0 Wit, €17,95), één sport als interesse, plaatsing alleen Instagram (paar 3 alleen Stories). Laat de test 7 dagen staan zonder iets te wijzigen.</li>
+      <li><b>Volgende test, als B wint:</b> Dan (dan.jordn) laat zien dat de "situatie" sterker trekt dan het probleem ("je glijdt weg in je schoen") of het symptoom ("blaren"). Bijvoorbeeld: "Die ene slide in de derde set." Test dat later tegen de winnaar van deze ronde.</li>
+    </ol>
+    <p class="src muted">Bronnen: eigen foto's (higrip.nl, shoot Concordia/sportfoto's); visuele inspo uit Google Drive (Advertentie inspo); TikTok @dan.jordn (2 video's, transcript), @72atta (Story-ad-voorbeelden); @dantebrunelli_2 kon niet worden geladen zonder TikTok-login. Benchmarks: <a href="https://emplifi.io/resources/q2-2026-clothing-worldwide-benchmarks/">Emplifi Q2 2026</a>, <a href="https://www.gethookd.ai/learn/instagram-ads-engagement-rate-average-percentage-calculator/">GetHookd</a>, <a href="https://brandsearch.co/blog/winning-meta-ad-patterns-2026">Brandsearch 2026</a>, <a href="https://www.inderscience.com/offers.php?id=111052">Inderscience (algemeen vs specifiek)</a>. Eerder ads-onderzoek in de vault: FitSockr-hooks in de Meta Ad Library.</p>
+  </section>
+</div>

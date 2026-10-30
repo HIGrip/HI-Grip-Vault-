@@ -1,0 +1,256 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 148, ref: 1480 -%}
+<section class="to to-tp-sec"{% if s.anim %} data-anim{% endif %} style="--to-pos-d: {{ s.pos_x }}% {{ s.pos_y }}%; --to-pos-m: {{ s.pos_x_m }}% {{ s.pos_y_m }}%; --to-ov: {{ s.overlay }}%; --to-tp-h: {{ s.min_h }}px;">
+  <div class="to-wrap">
+    <div class="to-tp to-rv" role="group" aria-label="Trustpilot">
+      {%- render 'to-img', image: s.image, alt: s.alt, sizes: '(min-width: 1240px) 1160px, 100vw' -%}
+      <p class="to-tp__score">{{ s.score }}</p>
+      <div class="to-tp__side">
+        {%- assign full = s.stars | floor -%}{%- assign rest = s.stars | minus: full -%}{%- assign half_at = full | plus: 1 -%}
+        <div class="to-stars" role="img" aria-label="{{ s.score | escape }} van 5 sterren">
+          {%- for i in (1..5) -%}<i class="{% if i > full %}{% if i == half_at and rest > 0 %}is-half{% else %}is-off{% endif %}{% endif %}"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i>{%- endfor -%}
+        </div>
+        <b>{{ s.title }}</b>
+        <p>{{ s.text }} {% if s.link_label != blank %}<a href="{{ s.link }}" target="_blank" rel="noopener">{{ s.link_label }}</a>{% endif %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 07 · Trustpilot",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "score",
+      "label": "Score",
+      "default": "4,6",
+      "info": "Neem de score over van Trustpilot"
+    },
+    {
+      "type": "range",
+      "id": "stars",
+      "label": "Sterren",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "default": 4.5
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titel",
+      "default": "Op Trustpilot"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Tekst",
+      "default": "Gemiddelde score op Trustpilot."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Linktekst",
+      "default": "Lees de reviews"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Achtergrondfoto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst"
+    },
+    {
+      "type": "range",
+      "id": "pos_x",
+      "label": "Uitsnede horizontaal (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_y",
+      "label": "Uitsnede verticaal (desktop)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 64,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_x_m",
+      "label": "Uitsnede horizontaal (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 12,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_y_m",
+      "label": "Uitsnede verticaal (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 64,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "overlay",
+      "label": "Donker verloop",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 88,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "min_h",
+      "label": "Hoogte blok",
+      "min": 200,
+      "max": 600,
+      "step": 10,
+      "default": 380,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#55565A"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 88,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 148,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

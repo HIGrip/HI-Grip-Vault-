@@ -1,0 +1,596 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 06 · Brandvideo: één breed bestand op laptop (triptiek ingebakken) en één staand bestand op mobiel,
+  daarna een zwart moment en een eindbeeld met reuzentekst. Video's uit Instellingen > Bestanden (kiezer) of als
+  directe mp4-link. Speelt alleen in beeld; laadt pas als de sectie dichtbij komt.
+  @example
+  <!-- Homepage > HÏ 06 · Brandvideo -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign src_d = s.video_d_url
+  if s.video_d != blank
+    assign mp4 = s.video_d.sources | where: 'format', 'mp4' | sort: 'height' | last
+    assign src_d = mp4.url
+  endif
+  assign src_m = s.video_m_url
+  assign src_lo = s.video_lo_url
+  if s.video_m != blank
+    assign mp4s = s.video_m.sources | where: 'format', 'mp4' | sort: 'height'
+    assign hi = mp4s | last
+    assign lo = mp4s | first
+    assign src_m = hi.url
+    assign src_lo = lo.url
+  endif
+  assign poster_d = ''
+  if s.poster_d != blank
+    assign poster_d = s.poster_d | image_url: width: 1920
+  elsif s.video_d != blank
+    assign poster_d = s.video_d.preview_image | image_url: width: 1920
+  endif
+  assign poster_m = ''
+  if s.poster_m != blank
+    assign poster_m = s.poster_m | image_url: width: 720
+  elsif s.video_m != blank
+    assign poster_m = s.video_m.preview_image | image_url: width: 720
+  endif
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_prog_bg = s.prog_bg_a | divided_by: 100.0 -%}
+{%- assign hp_a_dim = s.dim_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-06-end_big_c: {{ s.end_big_c }}; --hp-06-end_sub_c: {{ s.end_sub_c }}; --hp-06-end_bg: {{ s.end_bg }}; --hp-06-leak: {{ s.leak }}; --hp-06-hud_c: {{ s.hud_c }}; --hp-06-prog_bg: {{ s.prog_bg | color_modify: 'alpha', hp_a_prog_bg }}; --hp-06-prog_fg: {{ s.prog_fg }}; --hp-06-btn6_bg: {{ s.btn6_bg }}; --hp-06-btn6_fg: {{ s.btn6_fg }}; --hp-06-snd_on: {{ s.snd_on }}; --hp-06-bg: {{ s.bg }}; --hp-06-fg: {{ s.fg }}; --hp-06-hm: {{ s.h_m }}svh; --hp-06-maxm: {{ s.maxh_m }}px; --hp-06-maxd: {{ s.maxh_d }}px; --hp-06-dim: {{ s.dim | color_modify: 'alpha', hp_a_dim }}; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-06-big-k: {{ s.end_big_m | times: 1.0 | divided_by: 64 }}; --hp-06-sub-k: {{ s.end_sub_m | times: 1.0 | divided_by: 32 }}; --hp-06-brand-k: {{ s.brand_m | times: 1.0 | divided_by: 14 }}; --hp-06-hud-k: {{ s.hud_m | times: 1.0 | divided_by: 11 }}; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 16 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-06-big-k: {{ s.end_big_d | times: 1.0 | divided_by: 215 }}; --hp-06-sub-k: {{ s.end_sub_d | times: 1.0 | divided_by: 86 }}; --hp-06-brand-k: {{ s.brand_d | times: 1.0 | divided_by: 14 }}; --hp-06-hud-k: {{ s.hud_d | times: 1.0 | divided_by: 11 }}; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 18 }};} }
+</style>
+<section class="hp-section hp-section--flush hp-06" data-hp="06" aria-label="{{ s.label | escape }}" data-cut="{{ s.cut | divided_by: 1000.0 }}" data-fade="{{ s.fade | divided_by: 1000.0 }}" data-black="{{ s.black | divided_by: 1000.0 }}" data-hold="{{ s.hold | divided_by: 1000.0 }}" data-near="{{ s.near }}" data-far="{{ s.far }}">
+  {%- if s.sr_1 != blank -%}<p class="hp-sr">{{ s.sr_1 }}</p>{%- endif -%}
+  {%- if s.sr_2 != blank -%}<p class="hp-sr">{{ s.sr_2 }}</p>{%- endif -%}
+
+  <div class="hp-06-stage">
+    <video class="hp-06-vid hp-06-vid--wide" data-src="{{ src_d }}"{% if poster_d != blank %} poster="{{ poster_d }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <video class="hp-06-vid hp-06-vid--tall" data-src="{{ src_m }}"{% if src_lo != blank %} data-src-lo="{{ src_lo }}"{% endif %}{% if poster_m != blank %} poster="{{ poster_m }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <span class="hp-06-dim hp-06-dim--a" aria-hidden="true"></span>
+    <span class="hp-06-dim hp-06-dim--c" aria-hidden="true"></span>
+    <div class="hp-06-end" aria-hidden="true">
+      <span class="hp-06-end__leak"></span>
+      <p class="hp-06-end__txt"><span class="hp-06-end__big">{{ s.end_big }}</span><span class="hp-06-end__sub">{{ s.end_sub }}</span></p>
+    </div>
+  </div>
+
+  <div class="hp-06-hud">
+    {%- if s.show_hud -%}
+      <span class="hp-06-brand" aria-hidden="true">{{ s.brand }}</span>
+      <span class="hp-06-tc" aria-hidden="true"><span class="hp-06-tc__now">00:00</span> / {{ s.total }}</span>
+      <span class="hp-06-progress" aria-hidden="true"><span class="hp-06-progress__fill"></span></span>
+    {%- endif -%}
+    <div class="hp-06-ctrl">
+      <button class="hp-06-btn hp-06-toggle" type="button" aria-pressed="false" aria-label="{{ s.l_pause | escape }}" data-label-play="{{ s.l_play | escape }}" data-label-pause="{{ s.l_pause | escape }}">
+        <svg class="hp-06-toggle__pause" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2.5v9M10 2.5v9" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        <svg class="hp-06-toggle__play" viewBox="0 0 14 14" aria-hidden="true"><path d="M4 2l8 5-8 5z" fill="currentColor"/></svg>
+      </button>
+      <button hidden style="display:none!important" class="hp-06-btn hp-06-sound" type="button" aria-pressed="false" aria-label="{{ s.l_sound_on | escape }}" data-label-on="{{ s.l_sound_on | escape }}" data-label-off="{{ s.l_sound_off | escape }}">
+        <svg class="hp-06-sound__off" viewBox="0 0 16 14" aria-hidden="true"><path d="M1 5h3l4-3v10L4 9H1z" fill="currentColor"/><path d="M11 5l4 4M15 5l-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <svg class="hp-06-sound__on" viewBox="0 0 16 14" aria-hidden="true"><path d="M1 5h3l4-3v10L4 9H1z" fill="currentColor"/><path d="M11 4.5c1.2 1.4 1.2 3.6 0 5M13 2.5c2.2 2.6 2.2 6.4 0 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+      </button>
+    </div>
+    {%- if s.cta_label != blank -%}
+      <a class="hp-pill hp-pill--light hp-06-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    {%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 06 · Brandvideo",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Video"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Toegankelijke naam",
+      "default": "HÏ Grip brandvideo"
+    },
+    {
+      "type": "video",
+      "id": "video_d",
+      "label": "Video laptop (breed)",
+      "info": "Kies uit Bestanden; leeg = de link hieronder. Het ontwerp gebruikt één breed bestand met de drie panelen erin."
+    },
+    {
+      "type": "text",
+      "id": "video_d_url",
+      "label": "Video laptop: directe mp4-link",
+      "default": "https://cdn.shopify.com/videos/c/o/v/d2774d181fd441c3b28a5d486760c9eb.mp4"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_d",
+      "label": "Startbeeld laptop"
+    },
+    {
+      "type": "video",
+      "id": "video_m",
+      "label": "Video mobiel (staand)",
+      "info": "Leeg = de links hieronder."
+    },
+    {
+      "type": "text",
+      "id": "video_m_url",
+      "label": "Video mobiel: directe mp4-link",
+      "default": "https://cdn.shopify.com/videos/c/o/v/739650e8f7bc4cf193acce847e5ee7bc.mp4"
+    },
+    {
+      "type": "text",
+      "id": "video_lo_url",
+      "label": "Video mobiel, lichte versie (trage verbinding): mp4-link",
+      "default": "https://cdn.shopify.com/videos/c/o/v/78f88303e40b44c8be2efa7d886c4e31.mp4"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_m",
+      "label": "Startbeeld mobiel"
+    },
+    {
+      "type": "textarea",
+      "id": "sr_1",
+      "label": "Tekst voor schermlezers (1)",
+      "default": "Je schoen grijpt de vloer. HÏ Grip zorgt dat je voet je schoen grijpt. Minder schuiven bij elke stop, elke draai en elke sprint, tot de laatste bal."
+    },
+    {
+      "type": "text",
+      "id": "sr_2",
+      "label": "Tekst voor schermlezers (2)",
+      "default": "Ga door waar anderen stoppen."
+    },
+    {
+      "type": "header",
+      "content": "Tijdlijn"
+    },
+    {
+      "type": "number",
+      "id": "cut",
+      "label": "Knip naar zwart na (milliseconden)",
+      "default": 9550,
+      "info": "Vlak voor de eigen eindtekst van de video."
+    },
+    {
+      "type": "number",
+      "id": "fade",
+      "label": "Vervagen vóór de knip (milliseconden)",
+      "default": 320
+    },
+    {
+      "type": "number",
+      "id": "black",
+      "label": "Zwart moment (milliseconden)",
+      "default": 500
+    },
+    {
+      "type": "number",
+      "id": "hold",
+      "label": "Eindbeeld blijft staan (milliseconden)",
+      "default": 5000
+    },
+    {
+      "type": "header",
+      "content": "Eindbeeld"
+    },
+    {
+      "type": "text",
+      "id": "end_big",
+      "label": "Grote tekst",
+      "default": "Prestatie"
+    },
+    {
+      "type": "text",
+      "id": "end_sub",
+      "label": "Tweede regel",
+      "default": "telt."
+    },
+    {
+      "type": "range",
+      "id": "end_big_m",
+      "label": "Grote tekst: grootte (mobiel)",
+      "min": 18,
+      "max": 218,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "end_big_d",
+      "label": "Grote tekst: grootte (laptop)",
+      "min": 60,
+      "max": 560,
+      "step": 5,
+      "unit": "px",
+      "default": 215
+    },
+    {
+      "type": "color",
+      "id": "end_big_c",
+      "label": "Grote tekst: kleur",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "range",
+      "id": "end_sub_m",
+      "label": "Tweede regel: grootte (mobiel)",
+      "min": 9,
+      "max": 109,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "end_sub_d",
+      "label": "Tweede regel: grootte (laptop)",
+      "min": 24,
+      "max": 224,
+      "step": 2,
+      "unit": "px",
+      "default": 86
+    },
+    {
+      "type": "color",
+      "id": "end_sub_c",
+      "label": "Tweede regel: kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "end_bg",
+      "label": "Achtergrond eindbeeld",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "leak",
+      "label": "Lichtvlek",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Bediening"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hud",
+      "label": "Merk, tijd en voortgangsbalk tonen",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "brand",
+      "label": "Merk linksboven",
+      "default": "HÏ Grip"
+    },
+    {
+      "type": "text",
+      "id": "total",
+      "label": "Totale tijd (rechtsboven)",
+      "default": "00:15"
+    },
+    {
+      "type": "range",
+      "id": "brand_m",
+      "label": "Merk: grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "brand_d",
+      "label": "Merk: grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "hud_m",
+      "label": "Tijd: grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "range",
+      "id": "hud_d",
+      "label": "Tijd: grootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 11
+    },
+    {
+      "type": "color",
+      "id": "hud_c",
+      "label": "Merk en tijd: kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "prog_bg",
+      "label": "Voortgangsbalk: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "prog_bg_a",
+      "label": "Voortgangsbalk: achtergrond: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "prog_fg",
+      "label": "Voortgangsbalk: vulling",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "color",
+      "id": "btn6_bg",
+      "label": "Pauze/geluid: achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn6_fg",
+      "label": "Pauze/geluid: icoon",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "snd_on",
+      "label": "Geluid aan: achtergrond",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "text",
+      "id": "l_play",
+      "label": "Label \"afspelen\"",
+      "default": "Speel de film af"
+    },
+    {
+      "type": "text",
+      "id": "l_pause",
+      "label": "Label \"pauze\"",
+      "default": "Pauzeer de film"
+    },
+    {
+      "type": "text",
+      "id": "l_sound_on",
+      "label": "Label \"geluid aan\"",
+      "default": "Zet het geluid aan"
+    },
+    {
+      "type": "text",
+      "id": "l_sound_off",
+      "label": "Label \"geluid uit\"",
+      "default": "Zet het geluid uit"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knop: tekst",
+      "default": "Shop de 2.0"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Knop: link"
+    },
+    {
+      "type": "range",
+      "id": "near",
+      "label": "Knop verschijnt binnen (afstand cursor)",
+      "min": 40,
+      "max": 400,
+      "step": 10,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "far",
+      "label": "Knop verdwijnt na (afstand cursor)",
+      "min": 60,
+      "max": 500,
+      "step": 10,
+      "default": 220,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Hoogte mobiel (% van het scherm)",
+      "min": 40,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "maxh_m",
+      "label": "Maximale hoogte mobiel",
+      "min": 400,
+      "max": 1400,
+      "step": 20,
+      "default": 980,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "maxh_d",
+      "label": "Maximale hoogte laptop",
+      "min": 400,
+      "max": 1600,
+      "step": 20,
+      "default": 1100,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "dim",
+      "label": "Zijpanelen gedimd (laptop)",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "dim_a",
+      "label": "Zijpanelen gedimd (laptop): dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HÏ 06 · Brandvideo"
+    }
+  ]
+}
+{% endschema %}

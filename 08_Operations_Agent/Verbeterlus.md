@@ -10,18 +10,18 @@ bijgewerkt: 2026-10-01
 
 ## Kaders — wat Denzel zelf mag verbeteren
 
-| Soort verbetering | Niveau |
-|---|---|
-| Leerregel toevoegen, aanscherpen, samenvoegen of verwijderen (met reden en datum) | Zelf doen |
-| Briefing-sjabloon, zelfcheck-lijst en opleverformaat verbeteren | Zelf doen |
-| Pitfall of procedure in een Hermes-skill (`higrip-*`) toevoegen | Zelf doen |
-| Entry in [[Feedback & Iteratie Log]], rij in [[Agent Werk & Kwaliteit Overzicht]] | Zelf doen |
-| Verouderde of tegenstrijdige vault-notitie signaleren | Zelf doen (melden) |
-| Verouderde notitie inhoudelijk corrigeren | Voorstellen, Lars keurt goed |
-| Wijziging in `Identiteit <Agent>.md` (rol, scope, werkwijze, vaktheorie) van een agent | Voorstellen, Lars keurt goed |
-| Tools, MCP's of model van een agent wijzigen | Voorstellen, Lars keurt goed |
-| Nieuwe routine of nieuwe agent | Voorstellen, Lars keurt goed |
-| Autonomie-niveaus, harde grenzen, merkregels, feiten in Brand Core | **Nooit zelf.** Alleen een voorstel; Lars beslist |
+| Soort verbetering                                                                      | Niveau                                            |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| Leerregel toevoegen, aanscherpen, samenvoegen of verwijderen (met reden en datum)      | Zelf doen                                         |
+| Briefing-sjabloon, zelfcheck-lijst en opleverformaat verbeteren                        | Zelf doen                                         |
+| Pitfall of procedure in een Hermes-skill (`higrip-*`) toevoegen                        | Zelf doen                                         |
+| Entry in [[Feedback & Iteratie Log]], rij in [[Agent Werk & Kwaliteit Overzicht]]      | Zelf doen                                         |
+| Verouderde of tegenstrijdige vault-notitie signaleren                                  | Zelf doen (melden)                                |
+| Verouderde notitie inhoudelijk corrigeren                                              | Voorstellen, Lars keurt goed                      |
+| Wijziging in `Identiteit <Agent>.md` (rol, scope, werkwijze, vaktheorie) van een agent | Voorstellen, Lars keurt goed                      |
+| Tools, MCP's of model van een agent wijzigen                                           | Voorstellen, Lars keurt goed                      |
+| Nieuwe routine of nieuwe agent                                                         | Voorstellen, Lars keurt goed                      |
+| Autonomie-niveaus, harde grenzen, merkregels, feiten in Brand Core                     | **Nooit zelf.** Alleen een voorstel; Lars beslist |
 
 Een verbetering mag nooit een grens of autonomie-niveau versoepelen, ook niet "een beetje". Twijfel = voorstel.
 

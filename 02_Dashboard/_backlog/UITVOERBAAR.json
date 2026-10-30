@@ -2045,6 +2045,42 @@
   "wat_claude_doet": "niets (dubbel van backlog#927dc23c)",
   "wat_jij_doet": "zie backlog#927dc23c"
  },
+ "2026-10-25-ab-test-ads-features-vs-beste#0dcb7801": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Zelf één van de vier A/B-paren kiezen voor de Instagram-test van €70."
+ },
+ "2026-10-25-ab-test-ads-features-vs-beste#64359275": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "De gekozen test zelf opzetten met de A/B-testfunctie van Meta."
+ },
+ "2026-10-25-ab-test-ads-features-vs-beste#66bdc1a9": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "De statistische onderbouwing (3.800 vertoningen voor 95% zekerheid) is al in de notitie vastgelegd.",
+  "wat_jij_doet": "Het testcriterium zelf aanpassen in de Meta-testopzet, of de uitslag als richting lezen."
+ },
+ "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#53c14b78": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptcreatives/copy voor de 3 hoeken (probleem, sceptisch→overtuigd, performance) voorbereiden.",
+  "wat_jij_doet": "De test daadwerkelijk opzetten en draaien in Meta Ads Manager."
+ },
+ "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#7129fb4d": {
+  "beoordeeld": "2026-10-30",
+  "claude": "ja",
+  "wat_claude_doet": "De spelregel voor AI-beeld in ads vastleggen in 00_Brand_Core.",
+  "wat_jij_doet": "Controleren en goedkeuren."
+ },
+ "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
+  "beoordeeld": "2026-10-30",
+  "claude": "ja",
+  "wat_claude_doet": "Een swipe file-document aanleggen in de vault met eigen voorbeelden en de bewezen ads uit de notitie.",
+  "wat_jij_doet": "Aanvullen met TikTok Creative Center Top Ads en goedkeuren."
+ },
  "2026-10-26-weekoverzicht#2195bab1": {
   "beoordeeld": "2026-10-27",
   "claude": "nee",
@@ -2128,6 +2164,36 @@
   "claude": "ja",
   "wat_claude_doet": "conceptvoorstel voor afgezwakte, onderbouwde tekst i.p.v. de absolute claims",
   "wat_jij_doet": "concept controleren en live zetten"
+ },
+ "2026-10-27-review-rugby-ads-trustpilot#39c7bc2d": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Een tekst-/structuurvoorstel opstellen om de A- en B-variant van het rugby-paar gelijk te trekken.",
+  "wat_jij_doet": "Het Canva-ontwerp zelf aanpassen en opnieuw exporteren."
+ },
+ "2026-10-27-review-rugby-ads-trustpilot#4b65df61": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Beslissen of HÏ Grip een betaald Trustpilot-abonnement afsluit, en anders '3500+ sporters' als social proof gebruiken in de ads."
+ },
+ "2026-10-27-review-rugby-ads-trustpilot#6896739d": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Advantage+ creative-verbeteringen uitzetten en alleen feed-plaatsingen kiezen in Meta Ads Manager."
+ },
+ "2026-10-27-review-rugby-ads-trustpilot#7805fea6": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Een ingekorte featurelijst (4 features uit de 2.0-productwaarheid) als concepttekst opstellen.",
+  "wat_jij_doet": "De lijst zelf verwerken in het Canva-ontwerp van ad 4B."
+ },
+ "2026-10-27-review-rugby-ads-trustpilot#98c17c24": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Een conceptvoorstel voor een zwarte pill-CTA (of weglaten) opstellen.",
+  "wat_jij_doet": "De CTA zelf aanpassen in Canva."
  },
  "2026-10-27-seo-audit-higrip-nl#23ee758a": {
   "beoordeeld": "2026-10-28",
@@ -2242,6 +2308,66 @@
   "claude": "deels",
   "wat_claude_doet": "checkout-walkthrough met een browser proberen en bevindingen vastleggen",
   "wat_jij_doet": "een echte testaankoop op desktop en mobiel bevestigen"
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#4dfeda5e": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "De huidige popup-app-configuratie inventariseren en een voorstel voor latere/interactie-timing voorbereiden.",
+  "wat_jij_doet": "De timing-instelling zelf wijzigen in het popup-app-paneel of overstappen naar Shopify Forms."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#4e776330": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Het shine/glans-effect op de bundel-badge uitzetten in het eigen instellingenpaneel van de Section Store-app."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#6cba0d4e": {
+  "beoordeeld": "2026-10-30",
+  "claude": "ja",
+  "wat_claude_doet": "Liquid/JS in het testthema aanpassen zodat zoekresultaten, menu- en drawer-inhoud pas bij openen laden.",
+  "wat_jij_doet": "Controleren en live zetten."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "GA4-snippet/koppeling in het testthema voorbereiden en controleren.",
+  "wat_jij_doet": "GA4 daadwerkelijk koppelen op alle thema-versies in de Shopify-/Google-admin."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#9b3c5fb6": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Na 3 november 10:00 zelf de ad set dupliceren in Meta Ads Manager met het conversie-event 'Content bekijken'."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#b36f0e48": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "FD Product Groups, Bundler en Essential A/B Testing zelf verwijderen in de Shopify-adminomgeving."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#b92e7ccf": {
+  "beoordeeld": "2026-10-30",
+  "claude": "ja",
+  "wat_claude_doet": "Kleurswatches via de fd-product-groups-app-configuratie op productkaarten teruggezet (al gedaan).",
+  "wat_jij_doet": "Controleren of de swatches zichtbaar correct renderen."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#be99d843": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptcode voor een eigen Liquid-bundelkeuze in het Shopify-testthema voorbereiden.",
+  "wat_jij_doet": "Besluiten of de Section Store-bundelwidget vervangen wordt en de code live zetten."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#c10ee5f0": {
+  "beoordeeld": "2026-10-30",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptcode voorbereiden om het account-icoon te vervangen door een link naar /account in het testthema.",
+  "wat_jij_doet": "Besluiten en de wijziging live zetten."
+ },
+ "2026-10-29-ads-funnel-en-snelheid-productpagina#e5c0886a": {
+  "beoordeeld": "2026-10-30",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Beslissen of WERKTHEMA 203461034311 live gaat, na eigen controle van de productpagina's, en zelf live zetten."
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

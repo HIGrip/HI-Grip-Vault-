@@ -42,7 +42,7 @@ laatst-geverifieerd: 2026-10-11
 
 - Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, na 28-9 €14,95 / €41,95 / €64,95. **Live op 12-10:** de packs zijn geen Shopify-varianten maar een Section Store bundle-block op de productpagina: 3-pack €35,95 (doorgestreept €44,85, "€9 korting") en 5-pack €54,95 (doorgestreept €74,75, "€20 korting"), beide met gratis verzending. Per paar: €14,95 / €11,98 / €10,99. **Besluit Lars 12-10: de live prijzen zijn de juiste.** €41,95 / €64,95 niet meer gebruiken.
 - Voorraad: niet in dit bestand (besluit 11-10). Ter info op 12-10: 1.0 161 paar, 2.0 zwart −43 en wit −34 (negatief).
-- Adviesprijs retail 2.0: **€17,95**, gelijk aan de webshopprijs (besluit Lars 2-10-2026; de one-pagers noemden €17,99).
+- Adviesprijs retail 2.0: **€19,95** incl. btw (besluit 29-10-2026). De webshop blijft €17,95. Marges op de B2B-staffel worden berekend op €16,49 excl. btw. Vervangt het besluit van 2-10-2026 (adviesprijs gelijk aan de webshop, €17,95).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
 ## Verzending en retour — vastgesteld door Lars op 25 sep 2026
@@ -65,7 +65,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 | Aantal sporters | **3500+** | Besluit Lars 11-10-2026. Overal 3500+, behalve de tijdlijn op /pages/over-ons: die mijlpaal (juni 2026) blijft 3000+. Oude teksten met 1.500+, 2.000+ of 3000+ niet meer gebruiken. |
 | Wrijvingscoëfficiënt | 1,17 (tegen 0,60 bij gewone sokken) | Peer-reviewed: Apps et al. 2022, *Journal of Sports Sciences* (doi 10.1080/02640414.2022.2080163). Friedl et al. 2023 is **gemengd** bewijs (alleen +9,3% benutte tractie bij afremmen citeren). Details: [[Performance Grip Socks 2.0]] §3 |
 | Meer grip | 95% meer grip | Afgeleid: 1,17 ÷ 0,60 = 1,95. Zelfde bron. **Alleen met de formuleringsregel hieronder** |
-| Reviewscore | **4,6 ★** (Trustpilot, 17 reviews op 3 sep) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
+| Reviewscore | **4,6 ★** (Trustpilot, 19 reviews op 27 okt; 17 op 3 sep) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
 | Vertrouwd door | 10+ organisaties | Niet geteld; voorzichtig gebruiken |
 
 > [!danger] Formuleringsregel voor grip-claims (verplicht in elke uiting)
@@ -102,6 +102,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-10-29 — Besluit: adviesprijs retail 2.0 wordt €19,95 incl. btw; de webshop blijft €17,95. Toegepast op de nieuwe prijslijst retail (`07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026`).
 - 2026-10-20 — Brand Core gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (nu 36 pagina's): zwart `#0A0A0A`, grijzen Titanium / Onyx / Carbon Black (Graphite vervallen), een accentkleur per kernsport, design- en socialsprincipes toegevoegd, influencer-aanpak en organische planning vervangen, roadmap (indicatief) en teamrollen bijgewerkt. Sportersaantal blijft 3500+ (Canva loopt achter met 3000+); omzetcijfers in Canva zijn illustratie.
 - 2026-10-19 — Verzend-/retourtabel bijgewerkt (regressiecheck): `/pages/verzendbeleid` en `/policies/terms-of-service` tonen nu beide €4,50 en de €35-drempel staat op `/pages/verzendbeleid`; `/pages/retourbeleid` heeft geen 25%-herbevoorradingskosten en geen "ongeopend"-eis meer. Alleen `/policies/shipping-policy` ("vóór 16:00") en `/policies/refund-policy` (14 dagen + 25%) lopen nog achter op de vastgestelde waarde.
 - 2026-10-12 — Packprijzen 1.0 bijgewerkt naar de live stand (3-pack €35,95, 5-pack €54,95 via Section Store bundle-block; €41,95/€64,95 staat nergens meer live). Besluit Lars 12-10: de live prijzen zijn de juiste. Maten 2.0 live bevestigd: 35-38 · 39-42 · 43-47. Live gecontroleerd door Claude op verzoek van Lars.

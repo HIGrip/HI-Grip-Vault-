@@ -1,0 +1,474 @@
+<meta charset="utf-8">
+<title>HÏ Grip Teamorder 1.14</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap">
+<style>
+/* 1.14: rustiger. Ritme en dunne lijnen van Becore, witte kaarten op lichtgrijs van Second Ride, grote koppen over beeld van Sixes. Voordelen als de 2.0-infographic van higrip.nl. Samensteller: sok, kleur, maten. Meer niet. */
+:root {
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --carbon: #1A1A1A;
+  --titanium: #909194;
+  --grey: #F2F0ED;
+  --volt: #CCFF00;
+  --blue: #0011A7;
+  --trust: #00b67a;
+  --ink2: #55565A;
+  --line: rgba(10, 10, 10, 0.1);
+  --line-d: rgba(255, 255, 255, 0.16);
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --r: 18px;
+  --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: light; scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { margin: 0; background: var(--white); color: var(--black); font: 400 15px/1.6 var(--font); letter-spacing: -0.02em; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+h1, h2, h3 { text-transform: uppercase; letter-spacing: -0.04em; text-wrap: balance; }
+button, input { font: inherit; color: inherit; letter-spacing: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--black); outline-offset: 3px; }
+.dk :focus-visible { outline-color: var(--white); }
+
+.wrap { width: 100%; max-width: 1240px; margin-inline: auto; padding-inline: max(20px, env(safe-area-inset-left, 0px)) max(20px, env(safe-area-inset-right, 0px)); }
+@media (min-width: 769px) { .wrap { padding-inline: 40px; } }
+.sec { padding-block: clamp(72px, 9vw, 128px); }
+.dk { background: var(--black); color: var(--white); }
+.gr { background: var(--grey); }
+.h2 { font-weight: 900; font-style: italic; font-size: clamp(34px, 4.6vw, 60px); line-height: 0.98; padding-right: 0.06em; }
+.ac { color: var(--blue); }
+.dk .ac { color: var(--volt); }
+.lead { margin-top: 18px; max-width: 44ch; font-size: clamp(15px, 1.2vw, 17px); color: var(--ink2); }
+.dk .lead { color: #BDBEC1; }
+.pill { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 52px; padding: 5px 5px 5px 24px; border: 0; border-radius: 999px; background: var(--black); color: var(--white); font: 700 14px/1 var(--font); letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; white-space: nowrap; transition: transform 160ms var(--ease); }
+.pill:active { transform: scale(0.98); }
+.pill .chev { flex: none; display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--white); color: var(--black); transition: transform 200ms var(--ease); }
+.pill .chev svg { width: 14px; height: 14px; }
+.pill--w { background: var(--white); color: var(--black); }
+.pill--w .chev { background: var(--black); color: var(--white); }
+@media (hover: hover) { .pill:hover .chev { transform: translateX(4px); } }
+.js .rv { opacity: 0; transform: translateY(20px); transition: opacity 800ms var(--ease), transform 800ms var(--ease); transition-delay: var(--d, 0ms); }
+.js .rv.in { opacity: 1; transform: none; }
+
+/* nav */
+.bar-top { background: var(--black); color: var(--white); text-align: center; padding: 9px 16px; font: 700 12px/1.3 var(--font); letter-spacing: 0.06em; text-transform: uppercase; }
+.nav { position: sticky; top: 0; z-index: 30; background: rgba(255,255,255,0.92); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.nav .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 64px; }
+.logo { font: italic 900 22px/1 var(--font); letter-spacing: -0.04em; text-transform: uppercase; text-decoration: none; }
+.nav ul { display: none; gap: 32px; }
+.nav li a { font: 700 13px/1 var(--font); text-transform: uppercase; text-decoration: none; }
+.cart-ic { position: relative; display: grid; place-items: center; width: 44px; height: 44px; text-decoration: none; }
+.cart-ic svg { width: 22px; height: 22px; }
+.cart-ic b { position: absolute; top: 4px; right: 0; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 99px; background: var(--black); color: var(--white); font: 700 10px/18px var(--font); text-align: center; }
+@media (min-width: 981px) { .nav ul { display: flex; } }
+
+/* hero: kop over beeld */
+.hero { position: relative; min-height: min(86svh, 760px); display: flex; align-items: flex-end; color: var(--white); background: var(--black); overflow: hidden; }
+.hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; transform: scale(1.04); transition: transform 2400ms var(--ease); }
+.hero.in > img { transform: none; }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.9) 8%, rgba(10,10,10,0.05) 70%); }
+.hero .wrap { position: relative; z-index: 1; padding-block: 64px clamp(40px, 6vw, 72px); }
+.hero h1 { font-weight: 900; font-style: italic; font-size: clamp(52px, 10.5vw, 168px); line-height: 0.84; letter-spacing: -0.055em; padding-right: 0.06em; }
+.hero-f { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; margin-top: 28px; }
+.hero-f p { max-width: 36ch; font-size: clamp(15px, 1.2vw, 18px); color: #E2E2E2; }
+
+/* service */
+.svc { border-bottom: 1px solid var(--line); }
+.svc ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.svc li { display: grid; gap: 2px; padding: 20px 8px; text-align: center; }
+.svc li + li { border-left: 1px solid var(--line); }
+.svc b { font: italic 900 clamp(15px, 1.6vw, 20px)/1.1 var(--font); letter-spacing: -0.03em; text-transform: uppercase; }
+.svc span { font-size: 12px; line-height: 1.35; color: var(--ink2); }
+
+/* trustpilot */
+.tp { padding-block: clamp(48px, 6vw, 80px); text-align: center; }
+.tp .stars { display: inline-flex; gap: 4px; }
+.tp .stars i { display: grid; place-items: center; width: 34px; height: 34px; background: var(--trust); }
+.tp .stars i.half { background: linear-gradient(90deg, var(--trust) 60%, #DCDCDC 60%); }
+.tp .stars svg { width: 22px; height: 22px; color: var(--white); }
+.tp b { display: block; margin-top: 18px; font: italic 900 clamp(56px, 7vw, 96px)/0.9 var(--font); letter-spacing: -0.05em; }
+.tp p { margin-top: 10px; color: var(--ink2); }
+.tp p strong { color: var(--black); }
+
+/* samensteller */
+.bld { display: grid; gap: 16px; align-items: start; margin-top: clamp(32px, 4vw, 48px); }
+.bld > * { min-width: 0; }
+@media (min-width: 1024px) { .bld { grid-template-columns: minmax(0, 1fr) 380px; gap: 20px; } }
+.card { border-radius: var(--r); background: var(--white); padding: clamp(20px, 2.4vw, 32px); }
+.fld + .fld { margin-top: 24px; }
+.fld > p { margin-bottom: 10px; font: 700 12px/1.2 var(--font); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); }
+.seg { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 4px; padding: 4px; border-radius: 999px; background: var(--grey); }
+.seg button { display: flex; justify-content: center; align-items: center; gap: 8px; min-height: 48px; padding: 0 14px; border: 0; border-radius: 999px; background: transparent; font: 700 14px/1 var(--font); transition: background-color 200ms var(--ease), color 200ms var(--ease), box-shadow 200ms var(--ease); }
+.seg button small { font: 500 12px/1 var(--font); color: var(--ink2); }
+.seg button[aria-pressed="true"] { background: var(--black); color: var(--white); }
+.seg button[aria-pressed="true"] small { color: #C9CACC; }
+.seg i { width: 14px; height: 14px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(128,128,128,0.6); }
+.sizes { display: grid; }
+.sz { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.sz:first-child { border-top: 1px solid var(--line); }
+.sz b { font: 800 17px/1 var(--font); font-variant-numeric: tabular-nums; }
+.qs { display: inline-flex; align-items: center; border-radius: 999px; border: 1.5px solid var(--line); transition: background-color 180ms var(--ease), color 180ms var(--ease), border-color 180ms var(--ease); }
+.qs.has { background: var(--black); color: var(--white); border-color: var(--black); }
+.qs button { width: 46px; height: 46px; border: 0; background: transparent; font: 500 22px/1 var(--font); }
+.qs input { width: 44px; padding: 0; border: 0; background: transparent; font: 800 17px/1 var(--font); text-align: center; font-variant-numeric: tabular-nums; -moz-appearance: textfield; }
+.qs input::-webkit-inner-spin-button, .qs input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.hint { margin-top: 16px; font-size: 13px; color: var(--ink2); }
+
+/* winkelwagen */
+.cart { position: sticky; top: 84px; }
+.cart-h { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.cart-h h3 { font: italic 900 22px/1 var(--font); letter-spacing: -0.04em; }
+.cart-h span { font-size: 13px; color: var(--ink2); }
+.items { max-height: 260px; overflow-y: auto; }
+.it { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.it i { flex: none; width: 12px; height: 12px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(128,128,128,0.6); }
+.it div { flex: 1; min-width: 0; }
+.it b { display: block; font: 700 14px/1.25 var(--font); }
+.it small { font-size: 12px; color: var(--ink2); font-variant-numeric: tabular-nums; }
+.it .p { font: 700 14px/1 var(--font); font-variant-numeric: tabular-nums; }
+.it .x { width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--grey); font-size: 17px; line-height: 1; }
+.empty { padding: 24px 0; color: var(--ink2); font-size: 14px; text-align: center; border-bottom: 1px solid var(--line); }
+.tot { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; margin-top: 16px; font-size: 14px; }
+.tot dt { color: var(--ink2); }
+.tot dd { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tot .lbl { align-self: end; margin-top: 8px; color: var(--black); font-weight: 700; }
+.tot .big { margin-top: 8px; font: italic 900 32px/1 var(--font); letter-spacing: -0.04em; }
+.nudge { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; padding: 12px 12px 12px 16px; border-radius: 14px; background: var(--black); color: var(--white); font-size: 13px; line-height: 1.4; }
+.nudge b { color: var(--volt); }
+.nudge button { flex: none; min-height: 38px; padding: 0 14px; border: 0; border-radius: 999px; background: var(--volt); color: var(--black); font: 800 13px/1 var(--font); }
+.nudge button[hidden] { display: none; }
+.cart .pill { width: 100%; margin-top: 16px; }
+.cart .msg { margin-top: 10px; font-size: 13px; color: var(--ink2); }
+details.st { margin-top: 14px; border-top: 1px solid var(--line); }
+details.st summary { display: flex; justify-content: space-between; padding: 12px 0 0; font: 700 13px/1.3 var(--font); cursor: pointer; list-style: none; }
+details.st summary::-webkit-details-marker { display: none; }
+details.st summary::after { content: "+"; font-weight: 400; font-size: 18px; line-height: 1; }
+details.st[open] summary::after { content: "\2212"; }
+details.st table { width: 100%; margin-top: 10px; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+details.st th, details.st td { padding: 6px 0; text-align: right; border-bottom: 1px solid var(--line); }
+details.st th:first-child, details.st td:first-child { text-align: left; }
+details.st th { font-weight: 600; color: var(--ink2); }
+details.st tr.on td { font-weight: 800; }
+
+/* voordelen: infographic zoals higrip.nl */
+.feat { position: relative; overflow: hidden; }
+.feat::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(var(--line-d) 1px, transparent 1px), linear-gradient(90deg, var(--line-d) 1px, transparent 1px); background-size: 64px 64px; opacity: 0.35; -webkit-mask-image: radial-gradient(ellipse at 70% 50%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse at 70% 50%, #000 20%, transparent 75%); pointer-events: none; }
+.feat .wrap { position: relative; display: grid; gap: 40px; align-items: center; }
+.feat .h2 { font-size: clamp(36px, 3.8vw, 58px); }
+.feat .h2 .b { color: #3D57FF; }
+.f95 { display: flex; align-items: baseline; gap: 14px; margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line-d); }
+.f95 b { font: italic 900 clamp(48px, 5vw, 72px)/0.9 var(--font); letter-spacing: -0.05em; color: var(--volt); }
+.f95 span { max-width: 22ch; font-size: 13px; line-height: 1.4; color: #BDBEC1; }
+.ig { position: relative; aspect-ratio: 1.39; }
+.ig img { position: absolute; left: 30%; top: 0; width: 40%; height: 100%; object-fit: contain; filter: drop-shadow(0 30px 40px rgba(0,0,0,0.55)); }
+.co { position: absolute; top: var(--y); }
+.co::before { content: ""; position: absolute; top: 0; height: 1px; background: rgba(255,255,255,0.55); transform-origin: var(--o); transform: scaleX(0); transition: transform 900ms var(--ease) var(--d, 0ms); }
+.co::after { content: ""; position: absolute; top: -3px; width: 7px; height: 7px; border-radius: 50%; background: var(--white); }
+.co.l { left: 0; width: var(--x); text-align: left; --o: right; }
+.co.l::before { left: 0; right: 0; }
+.co.l::after { right: -3px; }
+.co.r { left: var(--x); right: 0; text-align: right; --o: left; }
+.co.r::before { left: 0; right: 0; }
+.co.r::after { left: -3px; }
+.co div { position: absolute; bottom: 8px; width: min(190px, 100%); }
+.co.l div { left: 0; } .co.r div { right: 0; }
+.co b { display: block; font: 800 13px/1.15 var(--font); letter-spacing: 0.06em; text-transform: uppercase; }
+.co span { display: block; margin-top: 4px; font-size: 12px; line-height: 1.35; color: #BDBEC1; }
+.ig.in .co::before { transform: none; }
+.fm { display: none; }
+@media (max-width: 768px) {
+  .ig { aspect-ratio: auto; height: 340px; }
+  .ig img { left: 20%; width: 60%; }
+  .co { display: none; }
+  .fm { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 16px; }
+  .fm li { padding-left: 12px; border-left: 2px solid var(--volt); }
+  .fm b { display: block; font: 800 13px/1.2 var(--font); letter-spacing: 0.04em; text-transform: uppercase; }
+  .fm span { display: block; margin-top: 3px; font-size: 12px; line-height: 1.35; color: #BDBEC1; }
+}
+@media (min-width: 1024px) { .feat .wrap { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); gap: 64px; } }
+.src { position: relative; margin-top: 32px; font-size: 11px; color: var(--titanium); }
+
+/* concordia */
+.con { position: relative; }
+.con .h2 { font-size: clamp(44px, 8vw, 128px); line-height: 0.86; }
+.con .lead { margin-top: 18px; }
+.gal { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: clamp(32px, 4vw, 56px) -20px 0; padding-inline: 20px; }
+.gal::-webkit-scrollbar { display: none; }
+.gal figure { flex: none; width: 76%; margin: 0; aspect-ratio: 3 / 4; border-radius: var(--r); overflow: hidden; scroll-snap-align: center; background: var(--carbon); }
+.gal figure.ls { width: 90%; aspect-ratio: 3 / 2; }
+.gal img { width: 100%; height: 100%; object-fit: cover; transition: transform 1200ms var(--ease); }
+@media (hover: hover) { .gal figure:hover img { transform: scale(1.04); } }
+@media (min-width: 981px) {
+  .gal { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: 120px; gap: 12px; overflow: visible; margin-inline: 0; padding: 0; }
+  .gal figure, .gal figure.ls { width: auto; aspect-ratio: auto; }
+  .g1 { grid-column: span 3; grid-row: span 3; } .g2 { grid-column: span 6; grid-row: span 3; } .g3 { grid-column: span 3; grid-row: span 3; }
+  .g4 { grid-column: span 4; grid-row: span 3; } .g5 { grid-column: span 4; grid-row: span 3; } .g6 { grid-column: span 4; grid-row: span 3; }
+}
+
+/* vertrouwd door */
+.logos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: clamp(28px, 4vw, 48px); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.logos li { display: grid; place-items: center; aspect-ratio: 3 / 2; padding: 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.logos img { max-height: 70%; width: auto; max-width: 60%; object-fit: contain; filter: grayscale(1); opacity: 0.85; transition: filter 300ms var(--ease), opacity 300ms var(--ease); }
+@media (hover: hover) { .logos li:hover img { filter: none; opacity: 1; } }
+@media (min-width: 769px) { .logos { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.pf-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; }
+.pf-h p { color: var(--ink2); max-width: 40ch; }
+
+/* zakelijk: 50/50 */
+.zk { display: grid; background: var(--grey); }
+.zk-img { min-height: 320px; position: relative; }
+.zk-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
+.zk-t { padding: clamp(40px, 6vw, 96px) max(20px, env(safe-area-inset-right, 0px)) clamp(40px, 6vw, 96px) max(20px, env(safe-area-inset-left, 0px)); display: flex; flex-direction: column; justify-content: center; }
+.zk-t .pill { margin-top: 28px; align-self: flex-start; }
+@media (min-width: 981px) { .zk { grid-template-columns: 1fr 1fr; min-height: 560px; } .zk-t { padding-inline: 64px max(40px, calc((100vw - 1240px) / 2 + 40px)); } }
+
+.foot { padding-block: 40px; background: var(--black); color: var(--titanium); font-size: 13px; }
+.foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
+.foot b { color: var(--white); font: italic 900 18px/1 var(--font); text-transform: uppercase; letter-spacing: -0.03em; }
+
+/* mobiele balk */
+.mbar { position: fixed; z-index: 25; left: 0; right: 0; bottom: 0; padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); transform: translateY(110%); transition: transform 400ms var(--ease); }
+body.show-bar .mbar { transform: none; }
+.mbar a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 8px 8px 18px; border-radius: 999px; background: var(--black); color: var(--white); text-decoration: none; box-shadow: 0 12px 30px rgba(10,10,10,0.3); }
+.mbar .t { display: grid; gap: 2px; min-width: 0; }
+.mbar .t b { font: 800 15px/1.1 var(--font); font-variant-numeric: tabular-nums; }
+.mbar .t span { font-size: 12px; line-height: 1.2; color: #C9CACC; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mbar .t span b { font-size: 12px; color: var(--volt); }
+.mbar .go { flex: none; padding: 12px 16px; border-radius: 999px; background: var(--white); color: var(--black); font: 700 12px/1 var(--font); text-transform: uppercase; letter-spacing: 0.04em; }
+@media (min-width: 1024px) { .mbar { display: none; } }
+@media (prefers-reduced-motion: reduce) { .js .rv { opacity: 1; transform: none; transition: none; } *, *::before, *::after { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+
+<div class="bar-top">Gratis verzending boven de € 35 · Binnen 1 werkdag verzonden</div>
+<nav class="nav" aria-label="Hoofdmenu"><div class="wrap">
+  <a class="logo" href="#">HÏ Grip</a>
+  <ul><li><a href="#samenstellen">Teamorder</a></li><li><a href="#sok">De sok</a></li><li><a href="#concordia">Op het veld</a></li><li><a href="#zakelijk">Zakelijk</a></li></ul>
+  <a class="cart-ic" href="#cart" aria-label="Winkelwagen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 7h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 7V5.5a3 3 0 0 1 6 0V7"/></svg><b id="nav-n">0</b></a>
+</div></nav>
+
+<header class="hero" id="hero">
+  <img src="img/con-0314.webp" alt="Spelers van Concordia in actie op kunstgras met HÏ Grip gripsokken" fetchpriority="high">
+  <div class="wrap">
+    <h1>Heel je team<br>op grip.</h1>
+    <div class="hero-f">
+      <p>Teamorder vanaf 5 paar. Hoe meer paar, hoe lager je prijs per paar.</p>
+      <a class="pill pill--w" href="#samenstellen">Stel samen<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+    </div>
+  </div>
+</header>
+
+<section class="svc" aria-label="Service">
+  <ul class="wrap">
+    <li><b>Gratis</b><span>verzending</span></li>
+    <li><b>1 werkdag</b><span>en verzonden</span></li>
+    <li><b>30 dagen</b><span>retour</span></li>
+  </ul>
+</section>
+
+<section class="sec gr" id="samenstellen" aria-labelledby="b-h">
+  <div class="wrap">
+    <h2 class="h2 rv" id="b-h">Stel je <span class="ac">teamorder</span> samen.</h2>
+    <p class="lead rv" style="--d:60ms">Kies je sok en kleur, tik per maat hoeveel paar. Alle paren tellen samen voor je staffelprijs.</p>
+    <div class="bld">
+      <div class="card rv" style="--d:100ms">
+        <div class="fld"><p>Sok</p><div class="seg" id="seg-t" role="group" aria-label="Sok"></div></div>
+        <div class="fld"><p>Kleur</p><div class="seg" id="seg-c" role="group" aria-label="Kleur"></div></div>
+        <div class="fld"><p>Aantal per maat</p><div class="sizes" id="sizes"></div></div>
+        <p class="hint">Ook een andere kleur of sok erbij? Wissel hierboven en tel verder. Je winkelwagen onthoudt alles.</p>
+      </div>
+
+      <aside class="card cart rv" style="--d:160ms" id="cart" aria-labelledby="c-h">
+        <div class="cart-h"><h3 id="c-h">Winkelwagen</h3><span id="c-n">0 paar</span></div>
+        <ul class="items" id="items" aria-live="polite"></ul>
+        <dl class="tot">
+          <dt>Staffelkorting</dt><dd id="t-save">€ 0,00</dd>
+          <dt>Verzending</dt><dd>Gratis</dd>
+          <dt class="lbl">Totaal</dt><dd class="big" id="t-tot">€ 0,00</dd>
+        </dl>
+        <div class="nudge" id="nudge"><p id="n-txt"></p><button type="button" id="n-btn"></button></div>
+        <a class="pill" href="#" id="buy">Afrekenen<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+        <p class="msg" id="msg" role="status" hidden></p>
+        <details class="st"><summary>Bekijk de staffel</summary><table><thead><tr><th>Paar</th><th>1.0</th><th>2.0</th></tr></thead><tbody id="st"></tbody></table></details>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="tp" aria-label="Trustpilot">
+  <div class="wrap rv">
+    <div class="stars" aria-hidden="true"><i><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i><i><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i><i><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i><i><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i><i class="half"><svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 .6l2.2 4.9 5.3.5-4 3.6 1.2 5.3L8 12.1l-4.7 2.8 1.2-5.3-4-3.6 5.3-.5z"/></svg></i></div>
+    <b>4,6</b>
+    <p>gemiddeld op <strong>Trustpilot</strong>, van <strong>3000+</strong> sporters die je voorgingen.</p>
+  </div>
+</section>
+
+<section class="sec dk feat" id="sok" aria-labelledby="s-h">
+  <div class="wrap">
+    <div class="rv">
+      <h2 class="h2" id="s-h">Performance gripsokken <span class="b">2.0</span></h2>
+      <p class="lead">Strakkere pasvorm, compressie die je voet steunt en grip op de plekken waar je draait en stopt. Gemaakt om door te gaan.</p>
+      <div class="f95"><b>95%</b><span>meer grip dan gewone sportsokken*</span></div>
+    </div>
+    <div>
+      <div class="ig rv" id="ig" style="--d:120ms">
+        <img src="img/p20-wit-vrij.webp" alt="Performance Grip Socks 2.0 in wit" loading="lazy">
+        <div class="co l" style="--x:46%;--y:22%;--d:0ms"><div><b>Compressie</b><span>15-20 mmHg steun rond je voet</span></div></div>
+        <div class="co l" style="--x:42%;--y:56%;--d:120ms"><div><b>Ademend</b><span>Open structuur bovenop je voet</span></div></div>
+        <div class="co l" style="--x:36%;--y:88%;--d:240ms"><div><b>Naadloos</b><span>Geen stiksels bij je tenen</span></div></div>
+        <div class="co r" style="--x:56%;--y:38%;--d:60ms"><div><b>Coolmax</b><span>30%, voert vocht direct af</span></div></div>
+        <div class="co r" style="--x:62%;--y:66%;--d:180ms"><div><b>Versterkte hiel</b><span>Extra dikte onder je hiel</span></div></div>
+        <div class="co r" style="--x:64%;--y:86%;--d:300ms"><div><b>Maximale grip</b><span>Siliconen zones onder de zool</span></div></div>
+      </div>
+      <ul class="fm">
+        <li><b>Compressie</b><span>15-20 mmHg steun rond je voet</span></li>
+        <li><b>Coolmax</b><span>30%, voert vocht direct af</span></li>
+        <li><b>Maximale grip</b><span>Siliconen zones onder de zool</span></li>
+        <li><b>Versterkte hiel</b><span>Extra dikte onder je hiel</span></li>
+        <li><b>Ademend</b><span>Open structuur bovenop je voet</span></li>
+        <li><b>Naadloos</b><span>Geen stiksels bij je tenen</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="wrap src">* Gripsokken als categorie t.o.v. gewone sportsokken. Bron: Apps et al. 2022.</p>
+</section>
+
+<section class="sec con" id="concordia" aria-labelledby="k-h">
+  <div class="wrap">
+    <h2 class="h2 rv" id="k-h">Op het veld<br>bij <span class="ac">Concordia.</span></h2>
+    <p class="lead rv" style="--d:60ms">Geen studio. Een avondtraining in Delft, onder de lampen, op kunstgras. Zo spelen teams met HÏ Grip.</p>
+    <div class="gal rv" style="--d:120ms" role="list" aria-label="Sfeerbeelden van de shootdag bij Concordia">
+      <figure class="g1" role="listitem"><img src="img/con-0168.webp" alt="Clublogo van Concordia Delft op een zwart trainingsshirt" loading="lazy"></figure>
+      <figure class="g2 ls" role="listitem"><img src="img/con-0268.webp" alt="Spelers met ballen op het veld onder de lichtmasten" loading="lazy"></figure>
+      <figure class="g3" role="listitem"><img src="img/con-0220.webp" alt="Witte HÏ Grip gripsokken in voetbalschoenen op kunstgras" loading="lazy"></figure>
+      <figure class="g4" role="listitem"><img src="img/con-0174.webp" alt="Team van Concordia loopt in tijdens de avondtraining" loading="lazy"></figure>
+      <figure class="g5" role="listitem"><img src="img/con-0210.webp" alt="Benen van spelers tussen pionnen tijdens de warming-up" loading="lazy"></figure>
+      <figure class="g6" role="listitem"><img src="img/con-0226.webp" alt="Close-up van witte HÏ Grip sokken bij een speler" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="p-h">
+  <div class="wrap">
+    <div class="pf-h rv"><h2 class="h2" id="p-h">Vertrouwd door</h2><p>Sportclubs, sportscholen en retail. Onder meer SVS, V.V. Spirit, V.V. Lyra en Concordia.</p></div>
+    <ul class="logos rv" style="--d:80ms">
+      <li><img src="img/logo-concordia-360.webp" alt="Concordia" loading="lazy"></li><li><img src="img/logo-spirit-252.webp" alt="V.V. Spirit" loading="lazy"></li><li><img src="img/logo-sport2000-240.webp" alt="Sport 2000" loading="lazy"></li>
+      <li><img src="img/logo-myhealthclub-600.webp" alt="MyHealth Club" loading="lazy"></li><li><img src="img/logo-syth-512.webp" alt="Say Yes To Health" loading="lazy"></li><li><img src="img/logo-hr-500.webp" alt="Hogeschool Rotterdam" loading="lazy"></li>
+    </ul>
+  </div>
+</section>
+
+<section class="zk" id="zakelijk" aria-labelledby="z-h">
+  <div class="zk-img"><img src="img/b2b-club-spirit-1000.webp" alt="Witte HÏ Grip gripsokken onder gele clubkousen van V.V. Spirit" loading="lazy"></div>
+  <div class="zk-t rv">
+    <h2 class="h2" id="z-h">Club, school of <span class="ac">winkel?</span></h2>
+    <p class="lead">Voor een hele club, met je eigen logo op de sok (vanaf 150 stuks) of om HÏ Grip te verkopen: dan krijg je een zakelijke staffel en een vast aanspreekpunt.</p>
+    <a class="pill" href="https://claude.ai/artifact/Nvf7BYRijqxRHaRdaEw2vH" target="_blank" rel="noopener">Ontdek HÏ Grip Zakelijk<span class="chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+  </div>
+</section>
+
+<footer class="foot"><div class="wrap"><b>Ga door waar anderen stoppen.</b><span>info@higrip.nl</span></div></footer>
+
+<div class="mbar" aria-hidden="true"><a href="#cart" tabindex="-1"><span class="t"><b id="m-top">0 paar</b><span id="m-sub"></span></span><span class="go">Winkelwagen</span></a></div>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js');
+  var $ = function (s) { return document.getElementById(s); };
+  var eur = function (n) { return '€ ' + n.toLocaleString('nl-NL', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  // Staffel incl. btw, akkoord Lars 25-10-2026. Totaal aantal paar bepaalt de staffel, elk type houdt zijn eigen prijs.
+  var TIERS = [5, 10, 15, 20, 25, 30, 40, 50, 75, 100];
+  var TYPES = {
+    2: { name: '2.0', single: 17.95, p: [13.95, 13.45, 12.95, 12.55, 12.15, 11.75, 11.35, 10.95, 10.45, 9.95], colors: [['zwart', 'Zwart', '#0A0A0A'], ['wit', 'Wit', '#FFFFFF']], sizes: ['35-38', '39-42', '43-47'] },
+    1: { name: '1.0', single: 14.95, p: [10.99, 10.49, 9.99, 9.69, 9.39, 9.09, 8.79, 8.49, 8.19, 7.89], colors: [['wit', 'Wit', '#FFFFFF']], sizes: ['34-39', '40-46'] }
+  };
+  var SW = { zwart: '#0A0A0A', wit: '#FFFFFF' };
+  var qty = { '2|zwart|39-42': 6, '2|zwart|43-47': 4 }, cur = 2, col = { 2: 'zwart', 1: 'wit' }, last = '2|zwart|39-42';
+
+  function tierIx(n) { var k = -1; TIERS.forEach(function (m, j) { if (n >= m) k = j; }); return k; }
+  function unit(t, k) { return k < 0 ? TYPES[t].single : TYPES[t].p[k]; }
+  function keys() { return Object.keys(qty).filter(function (k) { return qty[k] > 0; }); }
+  function total() { return keys().reduce(function (s, k) { return s + qty[k]; }, 0); }
+  function setQ(key, n) { n = Math.max(0, Math.min(999, Math.round(+n) || 0)); if (n) { qty[key] = n; last = key; } else delete qty[key]; }
+
+  function drawPicker() {
+    var T = TYPES[cur];
+    $('seg-t').innerHTML = [2, 1].map(function (t) { return '<button type="button" data-t="' + t + '" aria-pressed="' + (t === cur) + '">' + TYPES[t].name + ' <small>vanaf ' + eur(TYPES[t].p[0]) + '</small></button>'; }).join('');
+    $('seg-c').innerHTML = T.colors.map(function (c) { return '<button type="button" data-c="' + c[0] + '" aria-pressed="' + (c[0] === col[cur]) + '"><i style="--c:' + c[2] + '"></i>' + c[1] + '</button>'; }).join('');
+    $('sizes').innerHTML = T.sizes.map(function (s) {
+      var key = cur + '|' + col[cur] + '|' + s, q = qty[key] || 0;
+      return '<div class="sz"><b>' + s + '</b><div class="qs' + (q ? ' has' : '') + '" data-k="' + key + '"><button type="button" data-d="-1" aria-label="Eén paar minder, maat ' + s + '">&minus;</button><input type="number" inputmode="numeric" min="0" max="999" value="' + q + '" aria-label="Aantal ' + T.name + ' ' + col[cur] + ' maat ' + s + '"><button type="button" data-d="1" aria-label="Eén paar meer, maat ' + s + '">+</button></div></div>';
+    }).join('');
+  }
+
+  function render(skip) {
+    if (!skip) drawPicker();
+    var n = total(), k = tierIx(n), next = k + 1 < TIERS.length ? k + 1 : -1, sum = 0, single = 0, used = {};
+    var ks = keys().sort();
+    $('items').innerHTML = ks.length ? ks.map(function (key) {
+      var p = key.split('|'), t = +p[0], q = qty[key], u = unit(t, k);
+      sum += q * u; single += q * TYPES[t].single; used[t] = 1;
+      return '<li class="it"><i style="--c:' + SW[p[1]] + '"></i><div><b>' + TYPES[t].name + ' ' + p[1] + ' · ' + p[2] + '</b><small>' + q + ' × ' + eur(u) + '</small></div><span class="p">' + eur(q * u) + '</span><button class="x" type="button" data-rm="' + key + '" aria-label="Verwijder ' + TYPES[t].name + ' ' + p[1] + ' ' + p[2] + '">&times;</button></li>';
+    }).join('') : '<li class="empty">Nog leeg. Tik op + bij een maat.</li>';
+    $('c-n').textContent = n + ' paar';
+    $('nav-n').textContent = n;
+    $('t-save').textContent = single - sum > 0.004 ? '− ' + eur(single - sum) : eur(0);
+    $('t-tot').textContent = eur(sum);
+
+    var ts = Object.keys(used), need = 0, txt;
+    if (n < TIERS[0]) { need = TIERS[0] - n; txt = 'Nog <b>' + need + ' paar</b> tot teamprijs.'; }
+    else if (next > 0) {
+      need = TIERS[next] - n;
+      // per type tonen: een gemiddelde verschuift mee met de mix
+      txt = '+' + need + ' paar en elk paar wordt ' + ts.map(function (t) { return (ts.length > 1 ? TYPES[t].name + ' ' : '') + '<b>' + eur(unit(t, next)) + '</b>'; }).join(', ') + '.';
+    } else txt = 'Je zit in de <b>laagste staffel</b>.';
+    $('n-txt').innerHTML = txt;
+    $('n-btn').hidden = !need;
+    $('n-btn').textContent = '+' + need;
+    $('n-btn').setAttribute('aria-label', need + ' paar toevoegen aan ' + last.split('|').join(' '));
+
+    $('st').innerHTML = TIERS.map(function (m, j) { return '<tr class="' + (j === k ? 'on' : '') + '"><td>' + m + '+</td><td>' + eur(TYPES[1].p[j]) + '</td><td>' + eur(TYPES[2].p[j]) + '</td></tr>'; }).join('');
+    $('m-top').textContent = n + ' paar · ' + eur(sum);
+    $('m-sub').innerHTML = need ? 'Nog <b>' + need + '</b> voor een lagere prijs' : 'Laagste staffel bereikt';
+  }
+
+  $('seg-t').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { cur = +b.dataset.t; render(); } });
+  $('seg-c').addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { col[cur] = b.dataset.c; render(); } });
+  $('sizes').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-d]'); if (!b) return;
+    var box = b.parentNode, key = box.dataset.k; setQ(key, (qty[key] || 0) + +b.dataset.d);
+    box.querySelector('input').value = qty[key] || 0; box.classList.toggle('has', !!qty[key]); render(true);
+  });
+  $('sizes').addEventListener('input', function (e) {
+    if (e.target.type !== 'number') return; var box = e.target.parentNode;
+    setQ(box.dataset.k, e.target.value); box.classList.toggle('has', !!qty[box.dataset.k]); render(true);
+  });
+  $('sizes').addEventListener('focusout', function (e) { if (e.target.type === 'number') e.target.value = qty[e.target.parentNode.dataset.k] || 0; });
+  $('items').addEventListener('click', function (e) { var b = e.target.closest('[data-rm]'); if (b) { delete qty[b.dataset.rm]; render(); } });
+  $('n-btn').addEventListener('click', function () {
+    var key = qty[last] ? last : cur + '|' + col[cur] + '|' + TYPES[cur].sizes[1], n = total(), k = tierIx(n);
+    var to = n < TIERS[0] ? TIERS[0] : TIERS[k + 1];
+    setQ(key, (qty[key] || 0) + (to - n)); render();
+  });
+  $('buy').addEventListener('click', function (e) {
+    e.preventDefault(); var m = $('msg'), n = total(); m.hidden = false;
+    m.textContent = n < TIERS[0] ? 'Kies minimaal ' + TIERS[0] + ' paar voor de teamprijs.' : 'Prototype: op de live pagina gaan deze ' + n + ' paar als één bestelling naar de checkout.';
+  });
+  render();
+
+  var sec = $('samenstellen'), cart = $('cart');
+  if ('IntersectionObserver' in window) {
+    var vis = { s: false, c: false };
+    var bo = new IntersectionObserver(function (es) { es.forEach(function (e) { vis[e.target === cart ? 'c' : 's'] = e.isIntersecting; }); document.body.classList.toggle('show-bar', vis.s && !vis.c); });
+    bo.observe(sec); bo.observe(cart);
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.08 });
+    document.querySelectorAll('.rv, .hero').forEach(function (el) { io.observe(el); });
+  } else document.querySelectorAll('.rv, .hero').forEach(function (el) { el.classList.add('in'); });
+})();
+</script>

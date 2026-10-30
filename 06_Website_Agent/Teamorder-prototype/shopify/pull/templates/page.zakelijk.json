@@ -1,0 +1,752 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero": {
+      "type": "zk-hero",
+      "settings": {
+        "image": "shopify://shop_images/hg-zakelijk-hero.jpg",
+        "focus_x": 40,
+        "focus_y": 50,
+        "eyebrow": "",
+        "heading_tag": "h1",
+        "line_1": "Stop met glijden.",
+        "line_2": "Start met grip.",
+        "subline": "Performance Grip Socks voor sportwinkels en sportclubs.",
+        "text_align": "default",
+        "cta_1_label": "Vraag sample",
+        "cta_1_link": "#aanvragen",
+        "cta_1_segment": "none",
+        "cta_2_label": "Zo werkt het",
+        "cta_2_link": "#proces",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "button2_bg": "",
+        "button2_fg": "",
+        "button2_border": "",
+        "badge_number": "",
+        "badge_count_to": "",
+        "badge_label": "",
+        "bg_color": "#111111",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "heading_color": "",
+        "padding_top": 140,
+        "padding_bottom": 108,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 56
+      }
+    },
+    "marquee": {
+      "type": "zk-marquee",
+      "settings": {
+        "words": "Padel\nTennis\nVoetbal\nRugby\nPilates",
+        "sr_text": "Voor padel, tennis, voetbal, rugby en pilates.",
+        "speed": 40,
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#ccff00",
+        "padding_top": 18,
+        "padding_bottom": 18
+      }
+    },
+    "logos": {
+      "type": "zk-logos",
+      "blocks": {
+        "l1": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hg-zakelijk-logo-hr.png",
+            "alt": "Hogeschool Rotterdam",
+            "link": "",
+            "new_tab": false
+          }
+        },
+        "l2": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hg-zakelijk-logo-spirit.png",
+            "alt": "V.V. Spirit",
+            "link": "",
+            "new_tab": false
+          }
+        },
+        "l3": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hg-zakelijk-logo-syth.jpg",
+            "alt": "SYTH, Say Yes To Health",
+            "link": "",
+            "new_tab": false
+          }
+        },
+        "l4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/hg-zakelijk-logo-sport2000.jpg",
+            "alt": "Sport 2000",
+            "link": "",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "l1",
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "settings": {
+        "anchor": "vertrouwd",
+        "aria_label": "Vertrouwd door",
+        "grayscale": false,
+        "logo_height": 80,
+        "logo_height_mobile": 56,
+        "columns": 4,
+        "columns_mobile": 4,
+        "gap": 48,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "rule_top": false,
+        "rule_bottom": true,
+        "padding_top": 44,
+        "padding_bottom": 44,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "route": {
+      "type": "zk-route",
+      "blocks": {
+        "p2": {
+          "type": "panel",
+          "settings": {
+            "style": "photo",
+            "image": "shopify://shop_images/hg-zakelijk-club-spirit.jpg",
+            "overlay": 96,
+            "focus_x": 50,
+            "focus_y": 60,
+            "focus_x_mobile": 65,
+            "focus_y_mobile": 100,
+            "border": true,
+            "panel_bg": "",
+            "panel_fg": "",
+            "number": "01",
+            "micro": "Sportclubs",
+            "title": "Eén sok voor de hele club",
+            "list": "Eén geheel binnen de club\nMeerwaarde voor leden\nEen praktisch clubaanbod",
+            "cta_label": "Ik ben van een club",
+            "cta_link": "#clubs",
+            "cta_segment": "club",
+            "btn_bg": "",
+            "btn_fg": ""
+          }
+        },
+        "p1": {
+          "type": "panel",
+          "settings": {
+            "style": "lightphoto",
+            "image": "shopify://shop_images/in-een-retailzaak-uit-de-sport-branche-neutrale-uistraling-en-mooi-verzorgd-je-ziet-op-de-achtergrond-ook-een-sokken-assortiment.png",
+            "overlay": 96,
+            "focus_x": 70,
+            "focus_y": 50,
+            "focus_x_mobile": 75,
+            "focus_y_mobile": 100,
+            "border": true,
+            "panel_bg": "",
+            "panel_fg": "",
+            "number": "02",
+            "micro": "Sportwinkels",
+            "title": "Grip in jouw schap",
+            "list": "Staffelprijzen vanaf 6 paar\nAdviesprijs €17,95 incl. btw\nGratis sample, binnen 1 werkdag verzonden",
+            "cta_label": "Ik heb een sportwinkel",
+            "cta_link": "#retailers",
+            "cta_segment": "retailer",
+            "btn_bg": "",
+            "btn_fg": ""
+          }
+        },
+        "panel_JG37G9": {
+          "type": "panel",
+          "settings": {
+            "style": "photo",
+            "image": "shopify://shop_images/IMG_0639.jpg",
+            "overlay": 96,
+            "focus_x": 50,
+            "focus_y": 60,
+            "focus_x_mobile": 50,
+            "focus_y_mobile": 70,
+            "border": false,
+            "panel_bg": "",
+            "panel_fg": "",
+            "number": "03",
+            "micro": "studio's",
+            "title": "Eén sok voor jouw studio",
+            "list": "Eigen logo en kleuren vanaf 150 paar\nEén uitstraling op het veld\nExtra inkomsten voor je club",
+            "cta_label": "Ik heb een studio",
+            "cta_link": "#studio",
+            "cta_segment": "club",
+            "btn_bg": "",
+            "btn_fg": ""
+          }
+        }
+      },
+      "block_order": [
+        "p2",
+        "p1",
+        "panel_JG37G9"
+      ],
+      "settings": {
+        "anchor": "route",
+        "eyebrow": "",
+        "heading": "Wie ben jij?",
+        "heading_tag": "h2",
+        "text_align": "default",
+        "show_divider": true,
+        "divider_text": "of",
+        "or_bg": "#000000",
+        "or_fg": "#ffffff",
+        "or_line": "",
+        "panel_gap": 24,
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#5c5d5f",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "product": {
+      "type": "zk-product",
+      "blocks": {
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "title": "Compressie",
+            "text": "15–20 mmHg, ondersteunt de doorbloeding tijdens inspanning.",
+            "show_pin": true,
+            "pos_x": 47,
+            "pos_y": 28
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "title": "Versterkte hiel",
+            "text": "Extra dikte precies onder de hiel.",
+            "show_pin": true,
+            "pos_x": 70,
+            "pos_y": 57
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "title": "Ademend vermogen",
+            "text": "Open structuur bovenop de voet.",
+            "show_pin": true,
+            "pos_x": 54,
+            "pos_y": 53
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "title": "Maximale grip",
+            "text": "Siliconen zones houden de voet vast in de schoen.",
+            "show_pin": true,
+            "pos_x": 66,
+            "pos_y": 86
+          }
+        },
+        "f5": {
+          "type": "feature",
+          "settings": {
+            "title": "Coolmax®",
+            "text": "30% Coolmax voert vocht direct af van de huid.",
+            "show_pin": true,
+            "pos_x": 44,
+            "pos_y": 44
+          }
+        },
+        "f6": {
+          "type": "feature",
+          "settings": {
+            "title": "Naadloos",
+            "text": "Rondom gebreid zonder stiksels, met een naadloze teenzone.",
+            "show_pin": true,
+            "pos_x": 33,
+            "pos_y": 86
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6"
+      ],
+      "settings": {
+        "anchor": "product",
+        "image_1": "shopify://shop_images/hg-zakelijk-sok-zwart.png",
+        "label_1": "Zwart",
+        "color_1": "#000000",
+        "image_2": "shopify://shop_images/hg-zakelijk-sok-wit.png",
+        "label_2": "Wit",
+        "color_2": "#ffffff",
+        "swatch_aria": "Kleur",
+        "stage_bg": "",
+        "show_numbers": true,
+        "show_pins": true,
+        "pin_bg": "#ffffff",
+        "pin_fg": "#000000",
+        "eyebrow": "",
+        "heading": "Zes kenmerken.",
+        "heading_2": "Eén sok.",
+        "heading_2_color": "#5c5d5f",
+        "heading_tag": "h2",
+        "title_position": "above",
+        "v_align": "start",
+        "tags": "Maten: 35–38, 39–42, 43–47\nKleuren: Zwart, Wit",
+        "text_align": "default",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#5c5d5f",
+        "rule_top": true,
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "retail": {
+      "type": "zk-retail",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "icon": "box",
+            "title": "Gratis sample",
+            "text": "Verzonden binnen 1 werkdag."
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "icon": "bars",
+            "title": "Vanaf 6 paar",
+            "text": "Je prijs per paar daalt naarmate je meer bestelt."
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "icon": "display",
+            "title": "Display en advies",
+            "text": "Displaymateriaal en uitleg voor je verkopers."
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "title": "Gratis eerste levering",
+            "text": "Je eerste order bezorgen wij kosteloos."
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4"
+      ],
+      "settings": {
+        "anchor": "retailers",
+        "image_position": "left",
+        "image_width": 6,
+        "image_1": "shopify://shop_images/ebd08bcd-7d01-4ba7-8e04-20d94f0306ca.png",
+        "image_2": "shopify://shop_images/30688670-55d2-4af2-b315-8e7e8538ca14.png",
+        "shelf_bg": "#ededed",
+        "show_ledge": true,
+        "show_tag": true,
+        "tag_label": "Adviesprijs · incl. btw",
+        "tag_price": "€19,95",
+        "tag_sub": "Performance Grip Socks 2.0",
+        "tag_bg": "#000000",
+        "tag_fg": "#ffffff",
+        "tag_price_color": "#ccff00",
+        "cap_logo": "shopify://shop_images/hg-zakelijk-logo-sport2000-vrij.png",
+        "cap_logo_size": 56,
+        "cap_title": "Al in het schap bij Sport 2000",
+        "cap_text": "Naaldwijk en Nootdorp",
+        "eyebrow": "",
+        "heading": "Grip in jouw schap",
+        "heading_tag": "h2",
+        "lead": "Een product dat zichzelf verkoopt: je klant voelt het verschil zodra hij hem aantrekt. Wij leveren de sok, het advies en het displaymateriaal.",
+        "text_align": "default",
+        "perk_columns": "2",
+        "perk_line": "",
+        "cta_label": "Vraag sample",
+        "cta_link": "#aanvragen",
+        "cta_segment": "retailer",
+        "button_bg": "",
+        "button_fg": "",
+        "button_radius": 40,
+        "bg_color": "#111111",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "accent_color": "#ccff00",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "club": {
+      "type": "zk-club",
+      "blocks": {
+        "r1": {
+          "type": "row",
+          "settings": {
+            "title": "Uniformiteit",
+            "text": "Eén aanbieder, één uitstraling voor al je teams."
+          }
+        },
+        "r2": {
+          "type": "row",
+          "settings": {
+            "title": "Eigen logo en kleuren",
+            "text": "Vanaf 150 paar met jouw ontwerp."
+          }
+        },
+        "r3": {
+          "type": "row",
+          "settings": {
+            "title": "Extra inkomsten",
+            "text": "Combineer de sok met je clubkledingplan."
+          }
+        },
+        "r4": {
+          "type": "row",
+          "settings": {
+            "title": "Betere grip voor je leden",
+            "text": "Voor in sportschoenen, op elk veld."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3",
+        "r4"
+      ],
+      "settings": {
+        "anchor": "clubs",
+        "image": "shopify://shop_images/hg-zakelijk-voetbal.jpg",
+        "focus_x": 60,
+        "focus_y": 50,
+        "photo_tag": "",
+        "eyebrow": "",
+        "heading": "Eén sok voor het hele team",
+        "heading_tag": "h2",
+        "refs_label": "Onder meer bij",
+        "ref_clubs": "SVS\nV.V. Spirit\nV.V. Lyra\nConcordia",
+        "refs": "Onder meer bij SVS, V.V. Spirit, V.V. Lyra en Concordia.",
+        "text_align": "default",
+        "cta_label": "Vraag sample",
+        "cta_link": "#aanvragen",
+        "cta_segment": "club",
+        "show_custom": true,
+        "custom_image": "shopify://shop_images/hg-zakelijk-sokhoogtes.png",
+        "custom_image_caption": "Zes lengtes, van no show tot over-the-calf.",
+        "custom_eyebrow": "",
+        "custom_heading": "Jouw logo. Jouw kleuren.",
+        "custom_heading_color": "#ffffff",
+        "custom_text": "Een eigen sok bestel je vanaf 150 paar. Dit pas je aan:",
+        "custom_groups": "Ontwerp: Logo's, Kleur, Stofcombinatie\nPasvorm en techniek: Lengte, Maat, Compressie, Verstevigde zones, Naadloos\nBestelling: Hoeveelheid, Verpakking, Verzendmethode",
+        "custom_chips": "Stofcombinatie\nLengte\nKleur\nHoeveelheid\nMaat\nVerpakking\nVerzendmethode\nLogo's\nVerstevigde zones\nCompressie\nNaadloos",
+        "custom_cta_label": "Vraag een offerte",
+        "custom_cta_link": "#aanvragen",
+        "custom_calc_mode": "",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "button2_bg": "",
+        "button2_fg": "",
+        "button2_border": "",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#ccff00",
+        "eyebrow_color": "#5c5d5f",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "steps": {
+      "type": "zk-steps",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "label": "Stap 1",
+            "title": "Vrijblijvende kennismaking",
+            "text": "Je krijgt reactie op dezelfde werkdag."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "label": "Stap 2",
+            "title": "Gratis sample",
+            "text": "Verzonden binnen 1 werkdag, zodat je de sok zelf voelt."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "label": "Stap 3",
+            "title": "Offerte en jouw wensen",
+            "text": "Voor retail op maat van je winkel. Voor clubs met de mogelijkheid tot een eigen ontwerp."
+          }
+        },
+        "s4": {
+          "type": "step",
+          "settings": {
+            "label": "Stap 4",
+            "title": "Eerste order en marketing",
+            "text": "Gratis levering, advies en displaymateriaal."
+          }
+        },
+        "s5": {
+          "type": "step",
+          "settings": {
+            "label": "Stap 5",
+            "title": "Doorlopende samenwerking",
+            "text": "Sales-ondersteuning en een betrouwbare samenwerking, ook bij de volgende bestelling."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5"
+      ],
+      "settings": {
+        "anchor": "proces",
+        "eyebrow": "",
+        "heading": "In vijf stappen",
+        "heading_tag": "h2",
+        "text_align": "default",
+        "bg_color": "#eae8e5",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#5c5d5f",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "proof": {
+      "type": "zk-proof",
+      "settings": {
+        "anchor": "bewijs",
+        "image": "shopify://shop_images/hg-zakelijk-grippatroon.jpg",
+        "plain_value": "0.60",
+        "grip_value": "1.17",
+        "axis_max": "1.2",
+        "plain_label": "Gewone sok",
+        "grip_label": "Gripsok · 1.0 én 2.0",
+        "chart_aria": "Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17",
+        "eyebrow": "",
+        "heading": "Gewone sok?",
+        "heading_2": "Geen wedstrijd.",
+        "heading_tag": "h2",
+        "claim": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).",
+        "lead": "Sporters met gripsokken waren ook sneller op een slalomparcours en hun voorvoet schoof minder bij afremmen. Dat geldt voor allebei: het zijn gripsokken.",
+        "source": "Bron: Apps et al. (2022), Journal of Sports Sciences 40(12) ·",
+        "source_link_label": "doi 10.1080/02640414.2022.2080163",
+        "source_url": "https://doi.org/10.1080/02640414.2022.2080163",
+        "text_align": "default",
+        "bg_color": "#111111",
+        "text_color": "#ffffff",
+        "heading_color": "",
+        "accent_color": "#ccff00",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    },
+    "faq": {
+      "type": "zk-faq",
+      "blocks": {
+        "q1": {
+          "type": "faq",
+          "settings": {
+            "question": "Wat kost het?",
+            "answer": "<p>Je betaalt een prijs per paar die daalt naarmate je meer bestelt, vanaf 6 paar. Prijzen gelden per order, ex btw, inclusief verpakking en verzending. Je krijgt je prijs in een offerte op maat.</p>"
+          }
+        },
+        "q2": {
+          "type": "faq",
+          "settings": {
+            "question": "Is het sample echt gratis?",
+            "answer": "<p>Ja. Je krijgt een gratis sample, verzonden binnen 1 werkdag.</p>"
+          }
+        },
+        "q3": {
+          "type": "faq",
+          "settings": {
+            "question": "Kunnen we ons eigen logo laten maken?",
+            "answer": "<p>Ja, vanaf 150 paar. Je past onder meer kleur, lengte, logo's en verpakking aan. De levertijd en alle opties staan in je offerte.</p>"
+          }
+        },
+        "q4": {
+          "type": "faq",
+          "settings": {
+            "question": "Welke maten en kleuren heb je?",
+            "answer": "<p>De Performance Grip Socks 2.0 is er in zwart en wit, in de maten 35–38, 39–42 en 43–47.</p>"
+          }
+        },
+        "q5": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe worden de sokken verpakt?",
+            "answer": "<p>Met een paper wrap, een header card of in een box. Wat het beste bij jouw winkel of club past, bespreken we in de offerte.</p>"
+          }
+        },
+        "q6": {
+          "type": "faq",
+          "settings": {
+            "question": "Waarom kan ik grip claimen?",
+            "answer": "<p>Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, dus 95% meer grip (Apps et al. 2022). Dat onderzoek gaat over gripsokken in het algemeen, niet over een test van onze eigen sok.</p>"
+          }
+        },
+        "q7": {
+          "type": "faq",
+          "settings": {
+            "question": "Hoe snel hoor ik iets?",
+            "answer": "<p>Op dezelfde werkdag. De kennismaking is vrijblijvend.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5",
+        "q6",
+        "q7"
+      ],
+      "settings": {
+        "anchor": "faq",
+        "eyebrow": "",
+        "heading": "Veelgestelde vragen",
+        "heading_tag": "h2",
+        "first_open": false,
+        "schema_markup": true,
+        "text_align": "default",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#5c5d5f",
+        "rule_top": true,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 56,
+        "padding_bottom_mobile": 56
+      }
+    },
+    "ask": {
+      "type": "zk-form",
+      "settings": {
+        "anchor": "aanvragen",
+        "eyebrow": "",
+        "heading": "Vraag een sample aan",
+        "heading_tag": "h2",
+        "lead": "Vertel kort wie je bent. Wij reageren op dezelfde werkdag.",
+        "promises": "Vrijblijvend\nGratis sample, verzonden binnen 1 werkdag\nReactie op dezelfde werkdag",
+        "text_align": "default",
+        "email_label": "E-mail",
+        "email": "info@higrip.nl",
+        "phone_label": "Telefoon",
+        "phone": "+31 6 24 56 65 47",
+        "copy_label": "Kopieer",
+        "copied_label": "Gekopieerd",
+        "subject_value": "Zakelijke aanvraag",
+        "segment_legend": "Ik ben",
+        "segment_1": "Sportretailer",
+        "segment_2": "Club of studio",
+        "org_label": "Naam winkel of club",
+        "org_error": "Vul de naam van je winkel of club in.",
+        "name_label": "Jouw naam",
+        "name_error": "Vul je naam in.",
+        "email_field_label": "E-mail",
+        "email_error": "Vul een geldig e-mailadres in, bijvoorbeeld naam@bedrijf.nl.",
+        "sport_label": "Sport of type winkel",
+        "sports": "Padel of tennis\nVoetbal\nRugby\nPilates\nMeerdere sporten\nAnders",
+        "amount_label": "Verwacht aantal paar",
+        "amounts": "6–59\n60–119\n120–239\n240–359\n360–498\n500+\nEigen logo, vanaf 150\nWeet ik nog niet",
+        "note_label": "Opmerking (optioneel)",
+        "submit_label": "Vraag sample",
+        "fine_print": "Alleen voor zakelijke aanvragen. We gebruiken je gegevens om te reageren op je aanvraag.",
+        "success_title": "Aanvraag ontvangen",
+        "success_text": "Bedankt. We reageren op dezelfde werkdag.",
+        "error_title": "Er ging iets mis",
+        "button_bg": "",
+        "button_fg": "",
+        "button_border": "",
+        "button_radius": 40,
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "",
+        "accent_color": "#000000",
+        "eyebrow_color": "#5c5d5f",
+        "padding_top": 128,
+        "padding_bottom": 128,
+        "padding_top_mobile": 64,
+        "padding_bottom_mobile": 64
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "marquee",
+    "logos",
+    "route",
+    "product",
+    "retail",
+    "club",
+    "steps",
+    "proof",
+    "faq",
+    "ask"
+  ]
+}

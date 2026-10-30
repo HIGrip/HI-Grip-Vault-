@@ -1,0 +1,696 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 60 -%}
+{%- assign groups = '' -%}{%- assign tiers = '' -%}{%- assign warn = '' -%}{%- assign shown = '' -%}
+{%- for block in section.blocks -%}
+  {%- assign b = block.settings -%}
+  {%- if block.type == 'sok' and b.product != blank -%}
+    {%- capture gj -%}{"name":{{ b.name | json }},"label":{{ b.label | json }},"sw":{{ b.swatch | append: '' | json }},"v":[{%- for v in b.product.variants -%}{"id":{{ v.id }},"s":{{ v.title | json }},"p":{{ v.price }},"a":{{ v.available }}}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}]}{%- endcapture -%}
+    {%- assign groups = groups | append: gj | append: ',' -%}
+  {%- elsif block.type == 'staffel' -%}
+    {%- assign off = b.off | replace: ',', '.' | times: 100 | round -%}
+    {%- assign code = b.code | strip -%}
+    {%- capture tj -%}{"m":{{ b.min | default: 0 }},"o":{{ off }},"c":{{ code | json }}}{%- endcapture -%}
+    {%- assign tiers = tiers | append: tj | append: ',' -%}
+    {%- if code == blank -%}{%- assign warn = warn | append: b.min | append: '+ ' -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign groups = groups | remove_last: ',' -%}{%- assign tiers = tiers | remove_last: ',' -%}
+<section class="to to-bld-sec{% if s.align == 'center' %} to-c{% endif %}"{% if s.anim %} data-anim{% endif %} id="samenstellen" data-to-builder style="--to-card-bg: {{ s.card_bg }}; --to-card-fg: {{ s.card_fg }}; --to-card-mu: {{ s.card_mu }}; --to-on-bg: {{ s.on_bg }}; --to-on-fg: {{ s.on_fg }}; --to-nd-bg: {{ s.nd_bg }}; --to-nd-fg: {{ s.nd_fg }}; --to-nd-ac: {{ s.nd_ac }}; --to-cart-w: {{ s.cart_w }}px;" aria-labelledby="to-b-{{ section.id }}">
+  <div class="to-wrap">
+    <h2 class="to-h2 to-rv" id="to-b-{{ section.id }}">{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' }}</h2>
+    {%- if s.lead != blank -%}<p class="to-lead to-rv" style="--d:60ms">{{ s.lead }}</p>{%- endif -%}
+    <div class="to-bld{% if s.cart_side == 'left' %} to-bld--rev{% endif %}">
+      <div class="to-card to-rv" style="--d:100ms">
+        <div class="to-fld"><p class="to-fld__l">{{ s.l_type }}</p><div class="to-seg" data-r="types" role="group" aria-label="{{ s.l_type | escape }}"></div></div>
+        <div class="to-fld"><p class="to-fld__l">{{ s.l_color }}</p><div class="to-seg" data-r="colors" role="group" aria-label="{{ s.l_color | escape }}"></div></div>
+        <div class="to-fld"><p class="to-fld__l">{{ s.l_size }}</p><div data-r="sizes"></div></div>
+        {%- if s.hint != blank -%}<p class="to-hint">{{ s.hint }}</p>{%- endif -%}
+        {%- if request.design_mode and warn != blank -%}<p class="to-warn">Alleen zichtbaar in de editor: staffel {{ warn }}heeft nog geen kortingscode. Zonder code betaalt de klant bij het afrekenen de normale prijs.</p>{%- endif -%}
+      </div>
+
+      <aside class="to-card to-cart to-rv" style="--d:160ms" data-r="cart" id="winkelwagen-{{ section.id }}" aria-labelledby="to-c-{{ section.id }}">
+        <div class="to-cart__h"><h3 id="to-c-{{ section.id }}">{{ s.cart_title }}</h3><span data-r="count">0 {{ s.t_pairs }}</span></div>
+        <ul class="to-items" data-r="items" aria-live="polite"></ul>
+        <dl class="to-tot">
+          <dt>{{ s.l_save }}</dt><dd data-r="save">€ 0,00</dd>
+          {%- if s.l_ship != blank -%}<dt>{{ s.l_ship }}</dt><dd>{{ s.v_ship }}</dd>{%- endif -%}
+          <dt class="to-lbl">{{ s.l_total }}</dt><dd class="to-big" data-r="total">€ 0,00</dd>
+        </dl>
+        <div class="to-nudge" data-r="nudge"><p data-r="ntxt"></p><button type="button" data-r="nbtn"></button></div>
+        <button type="button" class="to-pill to-buy" data-r="buy">{{ s.buy }}<span class="to-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></button>
+        {%- if s.show_req -%}
+          <button class="to-ask" type="button" data-r="ask" aria-expanded="false" aria-controls="to-req-{{ section.id }}">{{ s.ask }} <u>{{ s.ask_u }}</u></button>
+          <div class="to-req" data-r="req" id="to-req-{{ section.id }}" hidden>
+          {%- form 'contact', id: 'to-req-form', novalidate: 'novalidate' -%}
+            {{ form.errors | default_errors }}
+            {%- if form.posted_successfully? -%}<p class="to-msg to-msg--ok" role="status">{{ s.req_ok }}</p>{%- endif -%}
+            <p>{{ s.req_text }}</p>
+            <input type="hidden" name="contact[Bron]" value="Teamorderpagina">
+            <div class="to-f"><label for="to-r-club-{{ section.id }}">{{ s.f_club }}</label><input id="to-r-club-{{ section.id }}" name="contact[Club of team]" autocomplete="organization"></div>
+            <div class="to-f"><label for="to-r-mail-{{ section.id }}">{{ s.f_mail }}</label><input id="to-r-mail-{{ section.id }}" name="contact[email]" type="email" autocomplete="email" required data-check="^[^@\s]+@[^@\s]+\.[^@\s]+$"><span class="to-err">{{ s.e_mail }}</span></div>
+            <div class="to-f"><label for="to-r-tel-{{ section.id }}">{{ s.f_tel }}</label><input id="to-r-tel-{{ section.id }}" name="contact[Telefoon]" type="tel" autocomplete="tel" required data-check="^[+\d][\d\s-]{7,}$"><span class="to-err">{{ s.e_tel }}</span></div>
+            <textarea name="contact[body]" hidden aria-hidden="true" tabindex="-1"></textarea>
+            <button class="to-pill" type="submit">{{ s.req_btn }}<span class="to-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></button>
+          {%- endform -%}
+          </div>
+        {%- endif -%}
+        <p class="to-msg" data-r="msg" role="status" hidden></p>
+        {%- if s.show_tiers -%}
+          <details class="to-st"><summary>{{ s.l_tiers }}</summary>
+            <table><thead><tr><th>{{ s.l_pairs }}</th>{%- for block in section.blocks -%}{%- if block.type == 'sok' and block.settings.product != blank -%}{%- unless shown contains block.settings.name -%}<th>{{ block.settings.name }}</th>{%- assign shown = shown | append: block.settings.name | append: '|' -%}{%- endunless -%}{%- endif -%}{%- endfor -%}</tr></thead><tbody data-r="tiers"></tbody></table>
+            {%- if s.tiers_note != blank -%}<p>{{ s.tiers_note }}</p>{%- endif -%}
+          </details>
+        {%- endif -%}
+      </aside>
+    </div>
+  </div>
+  {%- if s.mbar -%}
+    <div class="to-mbar" aria-hidden="true"><a href="#winkelwagen-{{ section.id }}" tabindex="-1"><span class="to-mbar__t"><b data-r="btop">0 {{ s.t_pairs }}</b><span data-r="bsub"></span></span><span class="to-mbar__go">{{ s.cart_title }}</span></a></div>
+  {%- endif -%}
+  <script type="application/json" data-to-cfg>{"groups":[{{ groups }}],"tiers":[{{ tiers }}],"minOrder":{{ s.min_order }},"after":{{ s.after | json }},"zak":{"url":{{ s.zak_link | json }},"label":{{ s.zak_label | json }}},"t":{"from":{{ s.t_from | json }},"pairs":{{ s.t_pairs | json }},"empty":{{ s.empty | json }},"soldout":{{ s.t_soldout | json }},"less":"Eén paar minder,","more":"Eén paar meer,","count":"Aantal","remove":"Verwijder","nStart":{{ s.n_start | json }},"nNext":{{ s.n_next | json }},"nMax":{{ s.n_max | json }},"nAdd":"[n] paar toevoegen","minMsg":{{ s.min_msg | json }},"busy":{{ s.t_busy | json }},"addErr":{{ s.t_err | json }},"emptyCart":{{ s.t_emptycart | json }},"barSub":{{ s.bar_sub | json }},"barMax":{{ s.bar_max | json }},"barEmpty":{{ s.bar_empty | json }}}}</script>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 03 · Samensteller",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kop"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Stel je [teamorder] samen.",
+      "info": "Zet een woord tussen [ ] voor de accentkleur."
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Intro",
+      "default": "Kies je sok en kleur, tik per maat hoeveel paar. Alle paren tellen samen voor je staffelprijs."
+    },
+    {
+      "type": "header",
+      "content": "Kiezen"
+    },
+    {
+      "type": "text",
+      "id": "l_type",
+      "label": "Label sok",
+      "default": "Sok"
+    },
+    {
+      "type": "text",
+      "id": "l_color",
+      "label": "Label kleur",
+      "default": "Kleur"
+    },
+    {
+      "type": "text",
+      "id": "l_size",
+      "label": "Label maten",
+      "default": "Aantal per maat"
+    },
+    {
+      "type": "text",
+      "id": "t_from",
+      "label": "Woord voor de laagste prijs",
+      "default": "vanaf"
+    },
+    {
+      "type": "text",
+      "id": "t_soldout",
+      "label": "Tekst bij uitverkochte maat",
+      "default": "Uitverkocht"
+    },
+    {
+      "type": "textarea",
+      "id": "hint",
+      "label": "Tip onder de maten",
+      "default": "Ook een andere kleur of sok erbij? Wissel hierboven en tel verder. Je winkelwagen onthoudt alles."
+    },
+    {
+      "type": "header",
+      "content": "Winkelwagen"
+    },
+    {
+      "type": "text",
+      "id": "cart_title",
+      "label": "Titel",
+      "default": "Winkelwagen"
+    },
+    {
+      "type": "text",
+      "id": "t_pairs",
+      "label": "Woord voor paar",
+      "default": "paar"
+    },
+    {
+      "type": "text",
+      "id": "empty",
+      "label": "Lege winkelwagen",
+      "default": "Nog leeg. Tik op + bij een maat."
+    },
+    {
+      "type": "text",
+      "id": "l_save",
+      "label": "Label korting",
+      "default": "Staffelkorting"
+    },
+    {
+      "type": "text",
+      "id": "l_ship",
+      "label": "Label verzending",
+      "default": "Verzending",
+      "info": "Leeg = regel verbergen"
+    },
+    {
+      "type": "text",
+      "id": "v_ship",
+      "label": "Waarde verzending",
+      "default": "Gratis"
+    },
+    {
+      "type": "text",
+      "id": "l_total",
+      "label": "Label totaal",
+      "default": "Totaal"
+    },
+    {
+      "type": "text",
+      "id": "n_start",
+      "label": "Duwtje onder de eerste staffel",
+      "default": "Nog [n] paar tot teamprijs.",
+      "info": "[n] = aantal paar dat nog nodig is"
+    },
+    {
+      "type": "text",
+      "id": "n_next",
+      "label": "Duwtje naar de volgende staffel",
+      "default": "+[n] paar en elk paar wordt [p].",
+      "info": "[n] = aantal paar, [p] = nieuwe prijs per paar"
+    },
+    {
+      "type": "text",
+      "id": "n_max",
+      "label": "Tekst bij de hoogste staffel",
+      "default": "Meer dan [m] paar? Vraag je clubprijs aan via",
+      "info": "[m] = hoogste staffel; de link hieronder komt erachter"
+    },
+    {
+      "type": "text",
+      "id": "zak_label",
+      "label": "Linktekst zakelijk",
+      "default": "HÏ Grip Zakelijk."
+    },
+    {
+      "type": "url",
+      "id": "zak_link",
+      "label": "Link zakelijk"
+    },
+    {
+      "type": "text",
+      "id": "buy",
+      "label": "Knop afrekenen",
+      "default": "Afrekenen"
+    },
+    {
+      "type": "select",
+      "id": "after",
+      "label": "Na de knop naar",
+      "default": "checkout",
+      "options": [
+        {
+          "value": "checkout",
+          "label": "Kassa"
+        },
+        {
+          "value": "cart",
+          "label": "Winkelwagen"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "min_order",
+      "label": "Minimaal aantal paar om af te rekenen",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "min_msg",
+      "label": "Melding onder het minimum",
+      "default": "Kies minimaal [m] paar voor de teamprijs."
+    },
+    {
+      "type": "text",
+      "id": "t_busy",
+      "label": "Melding tijdens toevoegen",
+      "default": "Even geduld, we zetten je order klaar..."
+    },
+    {
+      "type": "text",
+      "id": "t_err",
+      "label": "Melding bij een fout",
+      "default": "Dat lukte niet. Probeer het opnieuw of mail ons via info@higrip.nl."
+    },
+    {
+      "type": "header",
+      "content": "Staffeltabel"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_tiers",
+      "label": "Toon de staffeltabel",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "l_tiers",
+      "label": "Titel",
+      "default": "Bekijk de staffel"
+    },
+    {
+      "type": "text",
+      "id": "l_pairs",
+      "label": "Kolom aantal",
+      "default": "Paar"
+    },
+    {
+      "type": "text",
+      "id": "tiers_note",
+      "label": "Regel onder de tabel",
+      "default": "Prijs per paar. De korting staat bij het afrekenen op je bestelling."
+    },
+    {
+      "type": "header",
+      "content": "Aanvraag zonder afrekenen"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_req",
+      "label": "Toon het aanvraagformulier",
+      "default": true,
+      "info": "Gaat via het Shopify-contactformulier naar het winkel-e-mailadres, met de order erbij."
+    },
+    {
+      "type": "text",
+      "id": "ask",
+      "label": "Vraag",
+      "default": "Liever persoonlijk contact?"
+    },
+    {
+      "type": "text",
+      "id": "ask_u",
+      "label": "Link",
+      "default": "Laat je gegevens achter"
+    },
+    {
+      "type": "textarea",
+      "id": "req_text",
+      "label": "Uitleg",
+      "default": "Laat je gegevens achter. Wij krijgen je order per mail en regelen het persoonlijk met je, binnen 1 werkdag."
+    },
+    {
+      "type": "text",
+      "id": "f_club",
+      "label": "Veld club",
+      "default": "Club of team"
+    },
+    {
+      "type": "text",
+      "id": "f_mail",
+      "label": "Veld e-mail",
+      "default": "E-mailadres"
+    },
+    {
+      "type": "text",
+      "id": "e_mail",
+      "label": "Fout e-mail",
+      "default": "Vul een geldig e-mailadres in."
+    },
+    {
+      "type": "text",
+      "id": "f_tel",
+      "label": "Veld telefoon",
+      "default": "Telefoonnummer"
+    },
+    {
+      "type": "text",
+      "id": "e_tel",
+      "label": "Fout telefoon",
+      "default": "Vul je telefoonnummer in."
+    },
+    {
+      "type": "text",
+      "id": "req_btn",
+      "label": "Knop",
+      "default": "Verstuur aanvraag"
+    },
+    {
+      "type": "text",
+      "id": "req_ok",
+      "label": "Bedankt-melding",
+      "default": "Dank je! We hebben je aanvraag en nemen binnen 1 werkdag contact met je op."
+    },
+    {
+      "type": "text",
+      "id": "t_emptycart",
+      "label": "Melding bij lege order",
+      "default": "Je winkelwagen is nog leeg."
+    },
+    {
+      "type": "header",
+      "content": "Mobiele balk"
+    },
+    {
+      "type": "checkbox",
+      "id": "mbar",
+      "label": "Toon de balk onderin op mobiel",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "bar_sub",
+      "label": "Balk: nog nodig",
+      "default": "Nog [n] voor een lagere prijs"
+    },
+    {
+      "type": "text",
+      "id": "bar_max",
+      "label": "Balk: hoogste staffel",
+      "default": "Laagste prijs bereikt"
+    },
+    {
+      "type": "text",
+      "id": "bar_empty",
+      "label": "Balk: leeg",
+      "default": "Tik op + bij een maat"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "cart_side",
+      "label": "Winkelwagen op desktop",
+      "default": "right",
+      "options": [
+        {
+          "value": "right",
+          "label": "Rechts"
+        },
+        {
+          "value": "left",
+          "label": "Links"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "cart_w",
+      "label": "Breedte winkelwagen (desktop)",
+      "min": 320,
+      "max": 520,
+      "step": 10,
+      "default": 400,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren kaarten"
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Kaart achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "card_fg",
+      "label": "Kaart tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "card_mu",
+      "label": "Kaart tweede tekst",
+      "default": "#55565A"
+    },
+    {
+      "type": "color",
+      "id": "on_bg",
+      "label": "Gekozen knop achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "on_fg",
+      "label": "Gekozen knop tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "nd_bg",
+      "label": "Duwtje achtergrond",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "nd_fg",
+      "label": "Duwtje tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "nd_ac",
+      "label": "Duwtje accent",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#909194"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#CCFF00"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 72,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 128,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 34,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 60,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Tekstmaat (mobiel)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Tekstmaat (desktop)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 17,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "sok",
+      "name": "Sok en kleur",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Eén blok per kleur. Blokken met dezelfde soknaam vormen samen één sok met meerdere kleuren. Prijs en maten komen uit het product."
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Soknaam",
+          "default": "2.0"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Kleur",
+          "default": "Zwart"
+        },
+        {
+          "type": "color",
+          "id": "swatch",
+          "label": "Kleurbolletje",
+          "default": "#0A0A0A"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "type": "staffel",
+      "name": "Staffel",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Vanaf dit aantal paar (alle sokken samen) gaat dit bedrag van elk paar af. De kortingscode zet de korting bij het afrekenen op de bestelling: maak hem in Shopify aan als vast bedrag per artikel met hetzelfde minimum aantal."
+        },
+        {
+          "type": "number",
+          "id": "min",
+          "label": "Vanaf aantal paar",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "off",
+          "label": "Korting per paar in euro",
+          "default": "4,00",
+          "info": "Bijvoorbeeld 4,00"
+        },
+        {
+          "type": "text",
+          "id": "code",
+          "label": "Kortingscode in Shopify",
+          "info": "Leeg = geen korting bij het afrekenen"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

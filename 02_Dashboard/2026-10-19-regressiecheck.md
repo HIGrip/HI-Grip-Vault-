@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Twee nieuwe technische afwijkingen op nieuw gepubliceerde pagina's: de nieuwe sportpagina /pages/gripsokken-voor-rugby heeft twee H1-tags en /pages/terugbetalingsbeleid toont de titel 'American Express' zonder meta description. Daarnaast flink voortgang op het al openstaande verzend-/retourpunt: de nieuwe /pages/*-beleidspagina's zijn nu compleet en consistent, alleen de twee oude /policies/*-pagina's lopen nog achter."
-gerelateerd: [2026-10-12-regressiecheck, 2026-10-05-regressiecheck, 2026-09-28-regressiecheck, 2026-10-11-seo-audit-weekdelta]
+gerelateerd: [2026-10-12-regressiecheck, 2026-10-05-regressiecheck, 2026-09-28-regressiecheck, 2026-10-11-seo-audit-weekdelta, 2026-10-29-ads-funnel-en-snelheid-productpagina]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -1,0 +1,306 @@
+{%- liquid
+  assign s = section.settings
+-%}
+{%- render 'to-base' -%}
+{%- render 'to-vars', s: s, id: section.id, h: 60 -%}
+<section class="to to-zk{% if s.img_side == 'right' %} to-zk--rev{% endif %}{% if s.align == 'center' %} to-c{% endif %}"{% if s.anim %} data-anim{% endif %} id="verkopen" style="--to-pos-d: {{ s.pos_x }}% {{ s.pos_y }}%; --to-pos-m: {{ s.pos_x }}% {{ s.pos_y }}%; --to-zk-h: {{ s.min_h }}px;" aria-labelledby="to-z-{{ section.id }}">
+  <div class="to-zk__img">{%- render 'to-img', image: s.image, alt: s.alt, sizes: '(min-width: 981px) 50vw, 100vw' -%}</div>
+  <div class="to-zk__t to-rv">
+    <h2 class="to-h2" id="to-z-{{ section.id }}">{{ s.heading | escape | replace: '[', '<span class="to-ac">' | replace: ']', '</span>' }}</h2>
+    {%- if s.lead != blank -%}<p class="to-lead">{{ s.lead }}</p>{%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <ul class="to-rt">
+        {%- for block in section.blocks -%}<li {{ block.shopify_attributes }}>{%- render 'to-img', image: block.settings.image, alt: block.settings.alt, sizes: '140px' -%}<span>{{ block.settings.label }}</span></li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+    {%- if s.btn_label != blank -%}<a class="to-pill{% if s.btn_style == 'light' %} to-pill--w{% endif %}" href="{{ s.btn_link }}">{{ s.btn_label }}<span class="to-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "HÏ Team 10 · Verkopen",
+  "tag": "div",
+  "class": "to-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Alt-tekst",
+      "default": "Voetballer in zwarte HÏ Grip gripsokken haalt uit naar de bal"
+    },
+    {
+      "type": "range",
+      "id": "pos_x",
+      "label": "Uitsnede horizontaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_y",
+      "label": "Uitsnede verticaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 40,
+      "unit": "%"
+    },
+    {
+      "type": "select",
+      "id": "img_side",
+      "label": "Foto op desktop",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "right",
+          "label": "Rechts"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "min_h",
+      "label": "Minimale hoogte (desktop)",
+      "min": 320,
+      "max": 900,
+      "step": 10,
+      "default": 560,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Zelf HÏ Grip [verkopen?]",
+      "info": "Zet een woord tussen [ ] voor de accentkleur."
+    },
+    {
+      "type": "textarea",
+      "id": "lead",
+      "label": "Intro",
+      "default": "Sportwinkel, clubshop of sportschool? Zet HÏ Grip in je schap. Via HÏ Grip Zakelijk krijg je een eigen inkoopstaffel en een vast aanspreekpunt."
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Knop",
+      "default": "Word verkooppunt"
+    },
+    {
+      "type": "url",
+      "id": "btn_link",
+      "label": "Knoplink"
+    },
+    {
+      "type": "select",
+      "id": "btn_style",
+      "label": "Knopstijl",
+      "default": "dark",
+      "options": [
+        {
+          "value": "dark",
+          "label": "Zwart"
+        },
+        {
+          "value": "light",
+          "label": "Wit"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Kleuren"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "mu",
+      "label": "Tweede tekstkleur",
+      "default": "#55565A"
+    },
+    {
+      "type": "color",
+      "id": "ac",
+      "label": "Accentwoord",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "header",
+      "content": "Ruimte"
+    },
+    {
+      "type": "range",
+      "id": "pt_m",
+      "label": "Boven (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_m",
+      "label": "Onder (mobiel)",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 40,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pt_d",
+      "label": "Boven (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "pb_d",
+      "label": "Onder (desktop)",
+      "min": 0,
+      "max": 240,
+      "step": 4,
+      "default": 96,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Tekst en layout"
+    },
+    {
+      "type": "range",
+      "id": "h_m",
+      "label": "Kopmaat (mobiel)",
+      "min": 16,
+      "max": 120,
+      "step": 2,
+      "default": 34,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "h_d",
+      "label": "Kopmaat (desktop)",
+      "min": 20,
+      "max": 200,
+      "step": 2,
+      "default": 60,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_m",
+      "label": "Tekstmaat (mobiel)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "lead_d",
+      "label": "Tekstmaat (desktop)",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "default": 17,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "w",
+      "label": "Maximale breedte inhoud",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "default": 1240,
+      "unit": "px"
+    },
+    {
+      "type": "checkbox",
+      "id": "anim",
+      "label": "Binnenkomst-animatie",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Producttegel",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Productfoto"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Alt-tekst"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "2.0 zwart"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4
+}
+{% endschema %}

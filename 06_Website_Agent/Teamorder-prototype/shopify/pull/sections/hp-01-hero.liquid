@@ -1,0 +1,723 @@
+{% comment %}
+  Section contract.
+  HÏ homepage 01 · Hero: schermvullende foto met eigen kopbalk (logo, menu), kop, subregel, definitiezin en knop.
+  Motion: kop schuift in, foto ademt en zoomt bij scrollen (hp-home.js, sectie 01). Alles is instelbaar in de editor.
+  @example
+  <!-- Homepage > HÏ 01 · Hero -->
+{% endcomment %}
+{%- liquid
+  assign s = section.settings
+  assign tag = s.heading_tag | default: 'h1'
+-%}
+{%- render 'hp-base' -%}
+{%- assign hp_a_scrim_t = s.scrim_t_a | divided_by: 100.0 -%}
+{%- assign hp_a_scrim_b = s.scrim_b_a | divided_by: 100.0 -%}
+<style>
+#shopify-section-{{ section.id }} {--hp-01-logo-h: {{ s.logo_h }}px; --hp-01-menu-bg: {{ s.menu_bg }}; --hp-01-menu-fg: {{ s.menu_fg }}; --hp-01-scrim-t: {{ s.scrim_t | color_modify: 'alpha', hp_a_scrim_t }}; --hp-01-scrim-b: {{ s.scrim_b | color_modify: 'alpha', hp_a_scrim_b }}; --hp-01-h1-c: {{ s.h1_c }}; --hp-01-sub-c: {{ s.sub_c }}; --hp-01-def-c: {{ s.def_c }}; --hp-01-def-o: calc({{ s.def_o }} / 100); --hp-01-bg: {{ s.bg }}; --hp-01-fg: {{ s.fg }}; --hp-01-h: {{ s.h_svh }}svh; --hp-01-maxh: {{ s.maxh }}px; --hp-btn-bg: {{ s.btn_bg }}; --hp-btn-fg: {{ s.btn_fg }}; --hp-btn-cbg: {{ s.btn_cbg }}; --hp-btn-cfg: {{ s.btn_cfg }}; --hp-btn-bd: {{ s.btn_bd }}; --hp-btn-bw: {{ s.btn_bw }}px; --hp-btn-r: {{ s.btn_r }}px; --hp-btn-hbg: {{ s.btn_hbg }}; --hp-btn-hfg: {{ s.btn_hfg }}; --hp-btn-hbd: {{ s.btn_hbd }}; --hp-btn-hcbg: {{ s.btn_hcbg }}; --hp-btn-hcfg: {{ s.btn_hcfg }};}
+@media (max-width: 768px) { #shopify-section-{{ section.id }} {--hp-01-logo-k: {{ s.logo_m | times: 1.0 | divided_by: 22 }}; --hp-01-nav-k: {{ s.nav_m | times: 1.0 | divided_by: 13 }}; --hp-01-px: {{ s.pos_m_x }}%; --hp-01-py: {{ s.pos_m_y }}%; --hp-01-h1-k: {{ s.h1_m | times: 1.0 | divided_by: 41 }}; --hp-01-h1-mw: {{ s.h1_mw_m }}ch; --hp-01-sub-k: {{ s.sub_m | times: 1.0 | divided_by: 15 }}; --hp-01-def-k: {{ s.def_m | times: 1.0 | divided_by: 13 }}; --hp-01-minh: {{ s.minh_m }}px; --hp-01-spb-k: {{ s.stage_pb_m | times: 1.0 | divided_by: 32 }}; --hp-01-spb-add: 0px; --hp-btn-k: {{ s.btn_m | times: 1.0 | divided_by: 14 }};} }
+@media (min-width: 769px) { #shopify-section-{{ section.id }} {--hp-01-logo-k: {{ s.logo_d | times: 1.0 | divided_by: 26 }}; --hp-01-nav-k: {{ s.nav_d | times: 1.0 | divided_by: 13 }}; --hp-01-px: {{ s.pos_d_x }}%; --hp-01-py: {{ s.pos_d_y }}%; --hp-01-h1-k: {{ s.h1_d | times: 1.0 | divided_by: 74 }}; --hp-01-h1-mw: {{ s.h1_mw_d }}ch; --hp-01-sub-k: {{ s.sub_d | times: 1.0 | divided_by: 19 }}; --hp-01-def-k: {{ s.def_d | times: 1.0 | divided_by: 14 }}; --hp-01-minh: {{ s.minh_d }}px; --hp-01-spb-k: {{ s.stage_pb_d | times: 1.0 | divided_by: 64 }}; --hp-01-spb-add: 0px; --hp-btn-k: {{ s.btn_d | times: 1.0 | divided_by: 14 }};} }
+{%- if s.align == 'center' -%}#shopify-section-{{ section.id }} .hp-01-copy { justify-items: center; text-align: center; } #shopify-section-{{ section.id }} .hp-01-h1, #shopify-section-{{ section.id }} .hp-01-sub, #shopify-section-{{ section.id }} .hp-01-def { margin-inline: auto; } @media (min-width: 769px) { #shopify-section-{{ section.id }} .hp-01-copy { grid-template-columns: minmax(0, 1fr); } #shopify-section-{{ section.id }} .hp-01-cta { grid-column: 1; grid-row: auto; justify-self: center; margin-top: var(--hp-space-xs); } }{%- endif -%}
+{%- unless s.anim_rise -%}#shopify-section-{{ section.id }} .hp-01-h1, #shopify-section-{{ section.id }} .hp-01-sub, #shopify-section-{{ section.id }} .hp-01-cta { animation: none !important; }{%- endunless -%}
+{%- unless s.anim_breathe -%}#shopify-section-{{ section.id }} .hp-01-media__el { animation: none !important; }{%- endunless -%}
+</style>
+{%- if s.hide_theme_header -%}
+  <style>#header-group { display: none; }</style>
+{%- endif -%}
+<section class="hp-section hp-section--flush hp-01" data-hp="01" aria-labelledby="hp-01-h1-{{ section.id }}"{% unless s.anim_breathe %} data-hp-01-breathe="off"{% endunless %}{% unless s.anim_zoom %} data-hp-01-zoom="off"{% endunless %}>
+  {%- if s.show_bar -%}
+  <header class="hp-container hp-01-bar">
+    <a class="hp-01-logo" href="{{ s.logo_link | default: routes.root_url }}" aria-label="{{ s.logo_label | escape }}">
+      {%- if s.logo_image != blank -%}
+        {%- render 'hp-img', image: s.logo_image, class: 'hp-01-logo__img', sizes: '200px', widths: '200,400', alt: s.logo_text, loading: 'eager' -%}
+      {%- else -%}
+        {{- s.logo_text -}}
+      {%- endif -%}
+    </a>
+    <nav class="hp-01-nav" id="hp-01-nav-{{ section.id }}" aria-label="{{ s.nav_label | escape }}">
+      {%- for block in section.blocks -%}
+        <a href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.label }}</a>
+      {%- endfor -%}
+    </nav>
+    <button class="hp-01-menu" type="button" aria-expanded="false" aria-controls="hp-01-nav-{{ section.id }}" data-label-open="{{ s.menu_open | escape }}" data-label-close="{{ s.menu_close | escape }}">
+      <span class="hp-01-menu__label">{{ s.menu_open }}</span>
+      <span class="hp-01-menu__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+  {%- endif -%}
+
+  <div class="hp-01-media" data-hp-01-media>
+    {%- if s.image_mobile != blank -%}
+      <picture>
+        <source media="(max-width: 768px)" srcset="{{ s.image_mobile | image_url: width: 900 }} 900w, {{ s.image_mobile | image_url: width: 1400 }} 1400w" sizes="100vw">
+        {%- render 'hp-img', image: s.image, class: 'hp-01-media__el', sizes: '100vw', alt: s.image_alt, priority: true -%}
+      </picture>
+    {%- else -%}
+      {%- render 'hp-img', image: s.image, class: 'hp-01-media__el', sizes: '100vw', alt: s.image_alt, priority: true -%}
+    {%- endif -%}
+  </div>
+
+  <div class="hp-container hp-01-stage">
+    <div class="hp-01-copy">
+      {%- if s.heading != blank -%}<{{ tag }} class="hp-01-h1" id="hp-01-h1-{{ section.id }}">{{ s.heading }}</{{ tag }}>{%- endif -%}
+      {%- if s.sub != blank -%}<p class="hp-01-sub">{{ s.sub }}</p>{%- endif -%}
+      {%- if s.def != blank -%}<p class="hp-01-def">{{ s.def }}</p>{%- endif -%}
+      {%- if s.cta_label != blank -%}
+        <a class="hp-pill hp-pill--light hp-01-cta" href="{{ s.cta_link }}">{{ s.cta_label }}<span class="hp-pill__chev" aria-hidden="true"><svg viewBox="0 0 14 14"><path d="M5 2.5 9.5 7 5 11.5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "HÏ 01 · Hero",
+  "tag": "div",
+  "class": "hp-shopify-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Kopbalk"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bar",
+      "label": "Eigen kopbalk tonen (logo + menu op de foto)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_theme_header",
+      "label": "Standaard themakop verbergen op deze pagina",
+      "default": true,
+      "info": "Verbergt de header en aankondigingsbalk van het thema, zodat de foto tot bovenaan loopt (zoals het ontwerp)."
+    },
+    {
+      "type": "text",
+      "id": "logo_text",
+      "label": "Logo (tekst)",
+      "default": "HÏ Grip"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_image",
+      "label": "Logo (afbeelding, optioneel)",
+      "info": "Leeg = het tekstlogo hierboven."
+    },
+    {
+      "type": "range",
+      "id": "logo_h",
+      "label": "Hoogte logo-afbeelding",
+      "min": 12,
+      "max": 80,
+      "step": 1,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "logo_label",
+      "label": "Logo: toegankelijke naam",
+      "default": "HÏ Grip, naar de homepage"
+    },
+    {
+      "type": "url",
+      "id": "logo_link",
+      "label": "Logo: link"
+    },
+    {
+      "type": "text",
+      "id": "nav_label",
+      "label": "Menu: toegankelijke naam",
+      "default": "Hoofdmenu"
+    },
+    {
+      "type": "text",
+      "id": "menu_open",
+      "label": "Menuknop (mobiel): tekst",
+      "default": "Menu"
+    },
+    {
+      "type": "text",
+      "id": "menu_close",
+      "label": "Menuknop (mobiel): tekst als open",
+      "default": "Sluit menu"
+    },
+    {
+      "type": "range",
+      "id": "logo_m",
+      "label": "Logo tekstgrootte (mobiel)",
+      "min": 6,
+      "max": 106,
+      "step": 1,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "logo_d",
+      "label": "Logo tekstgrootte (laptop)",
+      "min": 7,
+      "max": 107,
+      "step": 1,
+      "unit": "px",
+      "default": 26
+    },
+    {
+      "type": "range",
+      "id": "nav_m",
+      "label": "Menu tekstgrootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "nav_d",
+      "label": "Menu tekstgrootte (laptop)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "color",
+      "id": "menu_bg",
+      "label": "Uitklapmenu (mobiel): achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "menu_fg",
+      "label": "Uitklapmenu (mobiel): tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "header",
+      "content": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Foto"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Foto mobiel (optioneel)",
+      "info": "Leeg = dezelfde foto als op laptop."
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Alt-tekst (leeg = alt van het bestand)"
+    },
+    {
+      "type": "range",
+      "id": "pos_m_x",
+      "label": "Focuspunt mobiel: horizontaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 52,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "pos_m_y",
+      "label": "Focuspunt mobiel: verticaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%",
+      "info": "Werkt alleen in de richting waarin de foto wordt bijgesneden (bij een liggende foto op mobiel: horizontaal)."
+    },
+    {
+      "type": "range",
+      "id": "pos_d_x",
+      "label": "Focuspunt laptop: horizontaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 50,
+      "unit": "%",
+      "info": "Werkt alleen in de richting waarin de foto wordt bijgesneden (bij een brede foto op laptop: verticaal)."
+    },
+    {
+      "type": "range",
+      "id": "pos_d_y",
+      "label": "Focuspunt laptop: verticaal",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 42,
+      "unit": "%"
+    },
+    {
+      "type": "color",
+      "id": "scrim_t",
+      "label": "Verloop boven",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "scrim_t_a",
+      "label": "Verloop boven: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "scrim_b",
+      "label": "Verloop onder",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "range",
+      "id": "scrim_b_a",
+      "label": "Verloop onder: dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "default": 86
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_breathe",
+      "label": "Foto ademt langzaam (Ken Burns)",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_zoom",
+      "label": "Foto zoomt mee bij scrollen",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "anim_rise",
+      "label": "Tekst schuift in bij laden",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Tekst"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Kop",
+      "default": "Performance gripsokken voor sporters"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Kopniveau (SEO)",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "p",
+          "label": "Gewone tekst"
+        }
+      ],
+      "default": "h1"
+    },
+    {
+      "type": "textarea",
+      "id": "sub",
+      "label": "Subregel",
+      "default": "Je voet blijft op zijn plek in je schoen. Bij elke rem, draai en sprint."
+    },
+    {
+      "type": "textarea",
+      "id": "def",
+      "label": "Definitiezin (klein)",
+      "default": "HÏ Grip is een Nederlands sportmerk voor performance gripsokken, voor padel, tennis, voetbal en rugby."
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knop: tekst",
+      "default": "Shop gripsokken"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Knop: link"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Uitlijning tekst",
+      "options": [
+        {
+          "value": "left",
+          "label": "Links"
+        },
+        {
+          "value": "center",
+          "label": "Midden"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "h1_m",
+      "label": "Kop grootte (mobiel)",
+      "min": 12,
+      "max": 112,
+      "step": 1,
+      "unit": "px",
+      "default": 41
+    },
+    {
+      "type": "range",
+      "id": "h1_d",
+      "label": "Kop grootte (laptop)",
+      "min": 22,
+      "max": 222,
+      "step": 2,
+      "unit": "px",
+      "default": 74
+    },
+    {
+      "type": "range",
+      "id": "h1_mw_m",
+      "label": "Kop: max. breedte mobiel (in tekens)",
+      "min": 6,
+      "max": 30,
+      "step": 1,
+      "default": 13,
+      "unit": "ch"
+    },
+    {
+      "type": "range",
+      "id": "h1_mw_d",
+      "label": "Kop: max. breedte laptop (in tekens)",
+      "min": 6,
+      "max": 30,
+      "step": 1,
+      "default": 12,
+      "unit": "ch"
+    },
+    {
+      "type": "color",
+      "id": "h1_c",
+      "label": "Kop kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "sub_m",
+      "label": "Subregel grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "sub_d",
+      "label": "Subregel grootte (laptop)",
+      "min": 5,
+      "max": 105,
+      "step": 1,
+      "unit": "px",
+      "default": 19
+    },
+    {
+      "type": "color",
+      "id": "sub_c",
+      "label": "Subregel kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "def_m",
+      "label": "Definitiezin grootte (mobiel)",
+      "min": 3,
+      "max": 103,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "def_d",
+      "label": "Definitiezin grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "def_c",
+      "label": "Definitiezin kleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "def_o",
+      "label": "Definitiezin dekking",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 72,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Sectie"
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Achtergrond",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "fg",
+      "label": "Tekstkleur",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "h_svh",
+      "label": "Hoogte (% van het scherm)",
+      "min": 40,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "%"
+    },
+    {
+      "type": "range",
+      "id": "minh_m",
+      "label": "Minimale hoogte mobiel",
+      "min": 300,
+      "max": 900,
+      "step": 10,
+      "default": 560,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "minh_d",
+      "label": "Minimale hoogte laptop",
+      "min": 300,
+      "max": 1100,
+      "step": 10,
+      "default": 640,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "maxh",
+      "label": "Maximale hoogte",
+      "min": 600,
+      "max": 1600,
+      "step": 20,
+      "default": 1100,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "stage_pb_m",
+      "label": "Ruimte onder de tekst (mobiel)",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "stage_pb_d",
+      "label": "Ruimte onder de tekst (laptop)",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "btn_m",
+      "label": "Knoptekst grootte (mobiel)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "btn_d",
+      "label": "Knoptekst grootte (laptop)",
+      "min": 4,
+      "max": 104,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Knopstijl"
+    },
+    {
+      "type": "color",
+      "id": "btn_bg",
+      "label": "Achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_fg",
+      "label": "Tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cbg",
+      "label": "Pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_cfg",
+      "label": "Pijl",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_bd",
+      "label": "Rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "btn_bw",
+      "label": "Randdikte",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 0,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "btn_r",
+      "label": "Afronding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 100,
+      "unit": "px",
+      "info": "100 = volledig rond (pill)"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbg",
+      "label": "Hover: achtergrond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hfg",
+      "label": "Hover: tekst",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hbd",
+      "label": "Hover: rand",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcbg",
+      "label": "Hover: pijlcirkel",
+      "default": "#0A0A0A"
+    },
+    {
+      "type": "color",
+      "id": "btn_hcfg",
+      "label": "Hover: pijl",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Menulink",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Tekst",
+          "default": "Shop"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "HÏ 01 · Hero",
+      "blocks": [
+        {
+          "type": "link",
+          "settings": {
+            "label": "Shop",
+            "link": "/collections/gripsokken"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Sporten",
+            "link": "#sporten"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Over ons",
+            "link": "/pages/over-ons"
+          }
+        },
+        {
+          "type": "link",
+          "settings": {
+            "label": "Zakelijk",
+            "link": "/pages/zakelijk"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

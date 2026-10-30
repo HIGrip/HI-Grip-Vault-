@@ -38,6 +38,7 @@ beheer: Stafchef (03_Denzel)
 - **Routeren doe je zelf.** Welke agent een taak krijgt, is Zelf doen; alleen wat raakt aan "Voorstellen" of "Altijd overleg vooraf" komt als voorstel bij Team HÏ Grip. (2026-10-12, Lars)
 - **Een designoplevering toets je op smaak tegen echte referenties, niet alleen op bugs en de checklist.** Het homepage-prototype richting B haalde alle regels (H1 boven de vouw, grid-breuk, groot getal, JS-budget) en mijn eigen critique noemde geen kritieke punten; Lars gaf ★1: "super lelijk, echt AI slop". Wie zijn eigen team toetst, toetst te mild. (2026-10-14, Lars ★1)
 - **Bij visueel werk kiest Lars eerst een richting in beeld, niet in tekst.** Een conceptkeuze op basis van een beschrijving en een ASCII-wireframe is geen keuze voor een look. Lever eerst 2–3 echte visuele schetsen (hero op 375 en 1440) naast de referentiesites, en bouw pas daarna de hele pagina. (2026-10-14, Lars ★1)
+- **Kanban-blokkades en schrijfweigeringen:** afhankelijke kaarten standaard `todo` met parent-links; `blocked` alleen bij een echte menselijke/technische blokkade en met expliciete reden. Een echte `needs_input`-blokkade niet unblokken zonder antwoord of besluit. Een geweigerde schrijfactie nooit via een andere schrijfmethode voor hetzelfde doel omzeilen: stop en volg alleen een expliciet toegestane herstelroute. (2026-10-30, Lars)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)

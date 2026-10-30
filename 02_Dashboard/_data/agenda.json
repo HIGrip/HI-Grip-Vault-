@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-10-29T04:18:22+01:00",
+ "bijgewerkt": "2026-10-30T04:19:30+01:00",
  "status": "niet_gekoppeld",
  "uitleg": "Google Calendar API staat uit in Google Cloud-project higrip-analytics. Koppelen: 1) 'Google Calendar API' aanzetten in project higrip-analytics. 2) Google Agenda van info@higrip.nl → Instellingen en delen → Delen met specifieke personen → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen met 'Alle afspraakdetails bekijken'. Andere agenda: agenda.calendar_id in 02_Dashboard/_data/instellingen.json.",
  "items": []

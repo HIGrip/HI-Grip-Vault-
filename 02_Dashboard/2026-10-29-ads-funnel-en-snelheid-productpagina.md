@@ -42,7 +42,7 @@ Voor 90+ is de pagina zelf niet meer het grootste probleem. Het zijn de app-widg
 - [ ] P2 · GA4 koppelen op alle thema-versies zodat landingspagina-cijfers kloppen
 - [ ] P2 · DOM van de productpagina verkleinen (nu ~2.200 elementen): vooraf geladen zoekresultaten, menu- en drawer-inhoud pas bij openen laden
 - [ ] P2 · Besluit: account-icoon met Shop-login in de header vervangen door een gewone link naar /account
-- [ ] P3 · Kleurswatches op productkaarten in collecties terugbouwen (vielen weg met FD Product Groups)
+- [x] P3 · Kleurswatches op productkaarten in collecties terugbouwen (vielen weg met FD Product Groups)
 
 ## Bevindingen
 

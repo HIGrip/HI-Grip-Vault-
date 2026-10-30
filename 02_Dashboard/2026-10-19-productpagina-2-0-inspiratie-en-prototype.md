@@ -28,7 +28,7 @@ Op verzoek van Timo is de productpagina van de [[Performance Grip Socks 2.0]] op
 - [ ] P2 · Besluit: werkomschrijving special cushioning bevestigen ("dempingzones onder de voet") voordat hij live gaat
 - [ ] P2 · Specificaties van de 1.0 vastleggen in de vault, zodat de vergelijking 1.0/2.0 meer kan tonen dan prijs, maten en kleur
 - [ ] P1 · Prototype v1.0 laten beoordelen door Lars en daarna als secties in het AI-testthema bouwen (nooit op het live thema)
-- [ ] P2 · ProductGroup-schema met EAN en SKU per variant uit het prototype overnemen in het thema; shippingDetails en retourbeleid pas toevoegen als verzend- en retourpagina's gelijkgetrokken zijn
+- [x] P2 · ProductGroup-schema met EAN en SKU per variant uit het prototype overnemen in het thema; shippingDetails en retourbeleid pas toevoegen als verzend- en retourpagina's gelijkgetrokken zijn
 
 ## Bevindingen
 

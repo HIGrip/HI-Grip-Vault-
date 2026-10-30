@@ -18,4 +18,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Iconografie]]
 - [[Logo & Kleurenpalet]]
 
+### Ontwerpbestanden/Prijslijst-retail-2026
+- [[ontwerpfilosofie]]
+
 > Map: [[Home]]

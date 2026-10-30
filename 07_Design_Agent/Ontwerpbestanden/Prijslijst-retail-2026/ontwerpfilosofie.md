@@ -9,3 +9,5 @@ Kleur is schaars en daardoor geladen. Zwart, wit en een neutraal grijs dragen al
 Schaal maakt de hiërarchie, niet versiering. Eén zware, compacte kop; daaronder fluistert de rest in dunne gewichten en kleine maten. Cijfers zijn het ritme: ze staan in kolommen die vallen als trappen, met lengtes die laten zien wat woorden zouden moeten uitleggen. Informatie leeft in maat en positie, niet in zinnen.
 
 Tekst is gereedschap, geen inhoud. Labels, nooit alinea's. Waar een woord niet nodig is, staat het er niet. Elk detail, van de afstand tussen een cijfer en zijn regel tot de marge van de pagina, is minutieus afgesteld, met de precisie van een meester die het werk liever tien keer overdoet dan één keer slordig oplevert.
+
+> Map: [[07 Design Agent — Index]]

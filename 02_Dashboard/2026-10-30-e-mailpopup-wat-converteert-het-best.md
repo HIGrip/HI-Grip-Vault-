@@ -9,12 +9,14 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "De grootste winst zit niet in een spelletje maar in de instellingen: de popup verschijnt pas na 30 seconden, terwijl 6 tot 15 seconden in twee datasets (samen ruim 2 miljard vertoningen) het best scoort, en 21 tot 60 seconden het slechtst. Eerst timing, frequentie, doelgroep en de merkconforme knop goedzetten, daarna een gamified variant (EcomSend heeft spin-the-wheel en games) via een A/B-test tegen die verbeterde basis zetten."
-gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina]
+gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-snelheid-code-audit-homepage]
 vervangt: []
 bronbestand: ""
 deadline: ""
 ---
 # E-mailpopup: wat converteert het best
+
+> Map: [[Waar staat wat]]
 
 ## In het kort
 De vraag was: welke e-mailpopup converteert het best, en is een gamified popup (vallende balletjes, rad) echt beter? Een spelelement geeft in elke dataset meer aanmeldingen, maar hoeveel meer verschilt sterk per leverancier (van +75% tot +640%), en alle cijfers komen van partijen die popups verkopen. De huidige popup laat duidelijkere winst liggen: hij verschijnt na 30 seconden, tot twee keer per dag, aan alle bezoekers, en de knop is een gevuld blauw vlak (tegen de merkregel). Advies: eerst de basis goedzetten, dan A/B-testen tegen een gamified variant, en meten op aanmeldingen per vertoning én op orders met de code.

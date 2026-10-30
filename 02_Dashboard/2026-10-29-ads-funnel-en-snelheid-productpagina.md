@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "De grootste lek in de ads-funnel zit vóór de productpagina: van 288 linkklikken worden er maar 116 landingspaginaweergaven, omdat de pagina op mobiel 5–8 s nodig had voor de hoofdfoto. In WERKTHEMA is de Lighthouse-score van 35–38 naar 52–54 gegaan en de hoofdfoto van ~6,2 s naar ~3,1 s; 90+ is op Shopify met ads-tracking niet haalbaar (zelfs zonder apps en tracking 57–68), dus het doel wordt 65–75 plus groene Core Web Vitals bij echte bezoekers."
-gerelateerd: [2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-09-03-analytics-kpi-meetgat, 2026-10-19-regressiecheck, 2026-10-30-growth-radar-social, 2026-10-30-e-mailpopup-wat-converteert-het-best]
+gerelateerd: [2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-09-03-analytics-kpi-meetgat, 2026-10-19-regressiecheck, 2026-10-30-growth-radar-social, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-30-snelheid-code-audit-homepage]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Werk\\theme-snelheid\\werkthema"
 deadline: ""

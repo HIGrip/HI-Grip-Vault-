@@ -12,7 +12,11 @@ bijgewerkt: 2026-10-01
 
 ## Software
 
-**Adobe Premiere Pro** — alle video editing gebeurt hier.
+**Standaard (Lars' laptop):**
+- **ffmpeg-motor (EDL-gedreven)** — de edit staat in een EDL (edit decision list); de motor rendert die met ffmpeg tot de Reel. Wat de lokale ffmpeg-build kan staat in [[Video-agent Nulmeting]].
+- **Canva** — voor brand-elementen (logo, kaders, titelkaarten, kleuren). De stijlregels hieronder blijven leidend; visuele identiteit: [[Logo & Kleurenpalet]].
+
+**Optie:** **Adobe Premiere Pro** alleen als het op een andere machine beschikbaar is. Het draait niet op Lars' laptop en is dus geen standaard. Wordt er toch in Premiere gemonteerd, dan gelden dezelfde stijlregels uit deze gids.
 
 ---
 

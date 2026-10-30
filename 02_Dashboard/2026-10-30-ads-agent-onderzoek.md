@@ -81,14 +81,14 @@ Voorgesteld datacontract per bron/export: periode inclusief einddatum, extractie
 
 Meta: vertoningen, klikken met expliciete klikdefinitie, spend, aankoopacties/-waarde en attributiecontext. Google: vertoningen, klikken, kosten, aankoopconversies/-waarde; CTR/CPC/CPA/ROAS uitsluitend uit geldige bronwaarden met formule/noemer. GA4: sessies en aankoopsessies. Shopify: ordertotalen, omzet en AOV, met status/refunds/btw/verzending consistent gedefinieerd. Ontbrekende of nulnoemer betekent “niet berekenbaar”, geen schatting. Menselijk aangeleverde totalen zijn de terugvaloptie als API-toegang ontbreekt; geen koppeling afdwingen.
 
-| Kostenpost | Bekend / ontbrekend | Poort |
-|---|---|---|
-| Google Ads API | API-gebruik kosteloos volgens [G11]; geen bewijs dat overige diensten gratis zijn | Cloud-/toolkeuze vooraf laten toetsen |
-| Meta API | Geen tariefbedrag vastgesteld in aangeleverde bronnen | Geen gratis gebruik of vaste prijs aannemen |
-| Connector, hosting, licenties | Keuze en bedragen onbekend | Mens keurt offerte en plafond goed |
-| AI-gebruik | Model, volume, tarief en toegestaan gebruik onbekend | Alleen binnen expliciet bestaande afspraak; anders stoppen |
-| Implementatie en beheer | Uren/rate onbekend; ook QA, rechtenbeheer en onderhoud begroten | Eerst raming door uitvoerder, dan menselijk akkoord |
-| Advertenties | **Nul nieuwe uitgaven in deze onderzoeks-/proeffasen**; geen campagnebudget vastgesteld | Afzonderlijk kanaal-/budgetbesluit en menselijke uitvoering |
+| Kostenpost                    | Bekend / ontbrekend                                                                     | Poort                                                       |
+| ----------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Google Ads API                | API-gebruik kosteloos volgens [G11]; geen bewijs dat overige diensten gratis zijn       | Cloud-/toolkeuze vooraf laten toetsen                       |
+| Meta API                      | Geen tariefbedrag vastgesteld in aangeleverde bronnen                                   | Geen gratis gebruik of vaste prijs aannemen                 |
+| Connector, hosting, licenties | Keuze en bedragen onbekend                                                              | Mens keurt offerte en plafond goed                          |
+| AI-gebruik                    | Model, volume, tarief en toegestaan gebruik onbekend                                    | Alleen binnen expliciet bestaande afspraak; anders stoppen  |
+| Implementatie en beheer       | Uren/rate onbekend; ook QA, rechtenbeheer en onderhoud begroten                         | Eerst raming door uitvoerder, dan menselijk akkoord         |
+| Advertenties                  | **Nul nieuwe uitgaven in deze onderzoeks-/proeffasen**; geen campagnebudget vastgesteld | Afzonderlijk kanaal-/budgetbesluit en menselijke uitvoering |
 
 Geen rendement, besparing, CPA of ROAS voorspeld. Gratis API-toegang betekent niet een gratis workflow.
 

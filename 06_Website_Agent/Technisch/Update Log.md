@@ -14,6 +14,15 @@ bijgewerkt: 2026-10-30
 
 ---
 
+## 2026-10-30 — Werkthema `203461034311`: snelheidsfixes homepage (niet live)
+
+Uit [[2026-10-30-snelheid-code-audit-homepage]]. Gepusht met `--only` na `theme list` (rol unpublished); live niet aangeraakt.
+- `assets/hg-deelcode.js` + script-tag in `layout/theme.liquid`: werkthema liep achter op live.
+- `assets/hp-home.js`: secties starten pas binnen anderhalf scherm (`initIn` + IntersectionObserver); daardoor ook de carrouselkopieën van hp-07 en hp-09 pas bij naderen. hp-06 zet de poster pas in `load()`.
+- `hp-06-brandvideo`: `poster` naar `data-poster`. `hp-04` en `hp-08`: zelfde breedteladder `500,1000,1500,2000`.
+- Buildbron (`Homepage-prototype/shopify/src`) mee aangepast. Let op: hp-06, hp-08 en hp-base zijn in het thema al met de hand gewijzigd, dus `build.py` niet blind opnieuw draaien.
+- Preview gecontroleerd (Playwright, 30-10): geen Liquid-fouten, geen console-fouten; bij laden 0 kopieën en 10 foto's, na scrollen 8 + 12 kopieën en 32 foto's.
+
 ## 2026-10-30 — LIVE `202669916487` + werkthema `203461034311`: e-mailpopup op mobiel gecentreerd, op expliciet verzoek
 
 **Wat:** de EcomSend-popup stond op telefoons rechts en liep rechts van het scherm af. Oorzaak zit in de CSS van de app zelf: `.react-responsive-modal-modal.pp-modal` krijgt `max-width: 100%`, en een mobiele regel zet daar met `!important` 1rem marge naast. Samen is de popup 100% breed plus 16px naar rechts geschoven. Fix: nieuw bestand `assets/hi-app-fixes.css` (`max-width: calc(100% - 2rem)`, met de container-klasse erbij omdat de app-CSS na het thema laadt) en in `layout/theme.liquid` één regel onder `hi-headings.css` die dat bestand laadt.

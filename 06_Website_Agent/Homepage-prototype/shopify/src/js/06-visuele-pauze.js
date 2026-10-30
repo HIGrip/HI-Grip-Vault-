@@ -33,6 +33,7 @@
     var c = navigator.connection || {};
     var slow = c.saveData || /(^|-)(2g|3g)$/.test(c.effectiveType || '');
     v.src = (slow && v.dataset.srcLo) ? v.dataset.srcLo : v.dataset.src;
+    if (v.dataset.poster) v.poster = v.dataset.poster;
     v.preload = 'auto';
     v.load();
   }

@@ -292,9 +292,17 @@
       var fn = registry[el.getAttribute('data-hp')];
       if (!fn || el.__hpInit) return;
       el.__hpInit = true;
-      try { fn(el); } catch (err) { if (window.console) console.error('HÏ sectie ' + el.getAttribute('data-hp'), err); }
+      lazyIO ? lazyIO.observe(el) : run(el);
     });
   }
+  /* Secties starten pas als ze binnen anderhalf scherm komen: minder werk bij het laden, klonen en video's pas bij naderen. */
+  function run(el) {
+    var fn = registry[el.getAttribute('data-hp')];
+    try { fn(el); } catch (err) { if (window.console) console.error('HÏ sectie ' + el.getAttribute('data-hp'), err); }
+  }
+  var lazyIO = 'IntersectionObserver' in window && new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { lazyIO.unobserve(e.target); run(e.target); } });
+  }, { rootMargin: '150% 0px' });
   function hpRegister(id, fn) { registry[id] = fn; initIn(document, id); }
   document.addEventListener('shopify:section:load', function (e) { initIn(e.target); });
 

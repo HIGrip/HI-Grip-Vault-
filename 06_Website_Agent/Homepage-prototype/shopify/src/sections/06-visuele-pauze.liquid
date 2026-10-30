@@ -42,8 +42,8 @@
   {%- if s.sr_2 != blank -%}<p class="hp-sr">{{ s.sr_2 }}</p>{%- endif -%}
 
   <div class="hp-06-stage">
-    <video class="hp-06-vid hp-06-vid--wide" data-src="{{ src_d }}"{% if poster_d != blank %} poster="{{ poster_d }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
-    <video class="hp-06-vid hp-06-vid--tall" data-src="{{ src_m }}"{% if src_lo != blank %} data-src-lo="{{ src_lo }}"{% endif %}{% if poster_m != blank %} poster="{{ poster_m }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <video class="hp-06-vid hp-06-vid--wide" data-src="{{ src_d }}"{% if poster_d != blank %} data-poster="{{ poster_d }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
+    <video class="hp-06-vid hp-06-vid--tall" data-src="{{ src_m }}"{% if src_lo != blank %} data-src-lo="{{ src_lo }}"{% endif %}{% if poster_m != blank %} data-poster="{{ poster_m }}"{% endif %} muted playsinline preload="none" aria-label="{{ s.label | escape }}"></video>
     <span class="hp-06-dim hp-06-dim--a" aria-hidden="true"></span>
     <span class="hp-06-dim hp-06-dim--c" aria-hidden="true"></span>
     <div class="hp-06-end" aria-hidden="true">

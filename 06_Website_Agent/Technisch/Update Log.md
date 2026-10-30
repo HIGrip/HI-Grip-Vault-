@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-23
+bijgewerkt: 2026-10-30
 ---
 
 # Update Log — Website Agent
@@ -11,6 +11,16 @@ bijgewerkt: 2026-10-23
 ---
 
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
+
+---
+
+## 2026-10-30 — LIVE `202669916487` + werkthema `203461034311`: e-mailpopup op mobiel gecentreerd, op expliciet verzoek
+
+**Wat:** de EcomSend-popup stond op telefoons rechts en liep rechts van het scherm af. Oorzaak zit in de CSS van de app zelf: `.react-responsive-modal-modal.pp-modal` krijgt `max-width: 100%`, en een mobiele regel zet daar met `!important` 1rem marge naast. Samen is de popup 100% breed plus 16px naar rechts geschoven. Fix: nieuw bestand `assets/hi-app-fixes.css` (`max-width: calc(100% - 2rem)`, met de container-klasse erbij omdat de app-CSS na het thema laadt) en in `layout/theme.liquid` één regel onder `hi-headings.css` die dat bestand laadt.
+
+**Hoe:** eerst in werkthema `203461034311` gezet en getest, daarna op verzoek naar live. Voor live is de actuele `layout/theme.liquid` van live gepulld en alleen die regel toegevoegd; gepusht met `--only`, CSS eerst. Getest op 375 px: popup links en rechts gelijk (was 32 px / 0 px), pagina niet breder dan het scherm. Let op: de Poppins-override voor de popup staat niet in het thema maar in het custom-CSS-veld van de EcomSend-app.
+
+**Terugzetten:** de regel `{{ 'hi-app-fixes.css' | asset_url | stylesheet_tag }}` uit `layout/theme.liquid` halen; het bestand zelf kan blijven staan.
 
 ---
 

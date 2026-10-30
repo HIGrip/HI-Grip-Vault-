@@ -39,5 +39,6 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Tekst-overlay Gids]]
 - [[Template Overzicht]]
 - [[Video Productie Checklist]]
+- [[Video-agent Nulmeting]]
 
 > Map: [[Home]]

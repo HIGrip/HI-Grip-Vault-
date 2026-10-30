@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "De technische basis van higrip.nl is op de steekproef in orde, maar de tekst op de retour- en verzendpagina's en enkele claims wijken af van het vastgestelde beleid en de bronnen. Dat raakt vertrouwen en compliance meer dan vindbaarheid; de onafhankelijke QA is nog niet gedaan."
-gerelateerd: [2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-11-concurrentie-seo-per-merk, 2026-10-30-snelheid-code-audit-homepage]
 vervangt: []
 bronbestand: ""
 deadline: ""

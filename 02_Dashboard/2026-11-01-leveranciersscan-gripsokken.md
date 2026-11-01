@@ -1,7 +1,7 @@
 ---
 id: 2026-11-01-leveranciersscan-gripsokken
 titel: "Leveranciersscan gepersonaliseerde clubgripsokken (testkaart 3)"
-kerntitel: "30 kandidaten in Italië, Turkije en rest van Europa; niemand bewijst online grip bij MOQ 200"
+kerntitel: "30 kandidaten in Italië, Turkije en rest van Europa; niemand toont grip bij MOQ 200"
 datum: 2026-11-01
 bron: los
 routine: ""

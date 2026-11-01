@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 1 november 2026 (actiecontrole)
+Laatst bijgewerkt: 1 november 2026 (growth-radar)
 Open: 29 · Afgerond: 9 (2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -288,5 +288,11 @@ Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus n
 **25 okt 2026:** 29 open punten (backlog, `dubbel` niet meegeteld —3 dubbel) — nog steeds boven de 15 uit de vuistregel, iets gestegen sinds 18 okt (twee nieuwe regressiepunten, rugby-H1 en terugbetalingsbeleid-titel, zijn erbij gekomen op 19 okt). Geen P1-punt staat al drie weken zonder beweging: de drie regressiepunten en punt 4 zijn alle op 19 oktober bijgewerkt (6 dagen), punt 1 op 12 oktober (13 dagen). Punt 2 (reviewapp) staat sinds 11 oktober al expliciet als blokkade gemarkeerd (wacht op een menselijke keuze) — geen nieuwe actie nodig. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep t/m 18 okt) staan nog open, want nog niet samengevoegd:
 - **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
 - **Punt 8 + 13 + 9 + 10**: nog steeds vier losse P2/P3-punten die op dezelfde kanaal-/budgetkeuze wachten.
+Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**1 nov 2026:** 29 open punten (backlog, `dubbel` niet meegeteld — 2 dubbel) — nog steeds boven de 15 uit de vuistregel, gelijk aan 25 okt. Geen P1-punt staat al drie weken zonder beweging: de drie regressiepunten en punt 4 zijn alle op 19 oktober bijgewerkt (13 dagen), punt 1 op 12 oktober (20 dagen, nog net onder de grens) en punt 10 op 30 oktober (2 dagen). Punt 2 (reviewapp) staat sinds 11 oktober al expliciet als blokkade gemarkeerd (wacht op een menselijke keuze) — geen nieuwe actie nodig. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep t/m 25 okt) staan nog open, want nog niet samengevoegd:
+- **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
+- **Punt 8 + 13 + 9 + 10**: let op, dit is intussen deels achterhaald — punt 10 (CAPI) is op 26 oktober opgewaardeerd naar P1 en actief in uitvoering na het eigen advertentiebudget-besluit van Team HÏ Grip; punt 8 en 13 wachten nog op een andere, niet-genomen beslissing (VS-verzending resp. TikTok Shop NL). Kandidaat om punt 10 uit deze bundel te halen en apart te laten lopen; punt 8+13+9 blijven wel bij elkaar horen.
 Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
 Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

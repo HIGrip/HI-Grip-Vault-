@@ -3012,211 +3012,211 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
-   "bewijs": "niet te controleren: EcomSend-abonnementsstatus staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-   "controle": "EcomSend-abonnement (gratis plan max. 30 nieuwe inschrijvers/maand, Essential 150).",
+   "bewijs": "niet te controleren: app-abonnementsstatus is niet via de Shopify-connector of theme-bestanden te zien.",
+   "controle": "EcomSend-abonnement/plan-limiet (30 vs 150 inschrijvers).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
-   "bewijs": "niet te controleren: EcomSend-popupknopstyling staat in het eigen apppaneel/widget, niet via de Shopify-connector leesbaar.",
-   "controle": "Merkconforme popupknop (pill/chevron, wit op zwart i.p.v. gevuld blauw).",
+   "bewijs": "niet te controleren: popup-styling is pas na JavaScript-rendering zichtbaar, geen browser beschikbaar in deze route.",
+   "controle": "Stijl van de popupknop (pill/chevron zwart-wit vs gevuld blauw).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#87a520dc": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: A/B-test verbeterde standaardpopup tegen EcomSend spin-the-wheel.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over A/B-test standaardpopup vs EcomSend spin-the-wheel.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#925d1863": {
-   "bewijs": "puur mensenwerk (juridisch advies), altijd handmatig.",
-   "controle": "Juridische check Gedragscode Promotionele Kansspelen voor een rad/Plinko-popup.",
+   "bewijs": "handmatig: puur juridisch mensenwerk (externe juridische check), wordt niet automatisch gecontroleerd.",
+   "controle": "Juridische check kansspelwetgeving voor een rad/Plinko.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96379ed9": {
-   "bewijs": "/products/performance-grip-socks-1 en /products/performance-grip-socks-2 geven beide nog HTTP 404 — de paginaregel is nog niet herstelt (de instelling zelf staat in het EcomSend-apppaneel, niet via de connector leesbaar, maar het 404-symptoom bevestigt dat het nog niet is opgelost).",
-   "controle": "Of de EcomSend-paginaregels nog verwijzen naar de 404-producthandles performance-grip-socks-1/-2.",
+   "bewijs": "beide geven nog HTTP 404 (https://www.higrip.nl/products/performance-grip-socks-1 en -2), de EcomSend-paginaregels zijn dus nog niet herstel.",
+   "controle": "HTTP-status van /products/performance-grip-socks-1 en -2.",
    "gecontroleerd": "2026-11-01",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
-   "bewijs": "niet te controleren: EcomSend-frequentie-instelling staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-   "controle": "EcomSend-frequentie-instelling (2x/dag naar 1x/7 dagen).",
+   "bewijs": "niet te controleren: het app-blok 'sendwill-email-popups' in config/settings_data.json heeft een leeg settings-object; frequentie-instellingen zitten in het eigen instellingenpaneel van de app, niet via de connector leesbaar.",
+   "controle": "EcomSend-popupfrequentie-instelling (2x/dag naar 1x/7 dagen).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
-   "bewijs": "niet te controleren: EcomSend-doelgroepinstelling staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-   "controle": "EcomSend-doelgroepinstelling (alleen nieuwe bezoekers, niet ingelogde klanten).",
+   "bewijs": "niet te controleren: zelfde als frequentie-instelling, zit in het appeigen instellingenpaneel.",
+   "controle": "EcomSend-popup alleen voor nieuwe bezoekers, niet voor ingelogde klanten.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c8219092": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: EcomSend-popup na 8-12 s tonen i.p.v. 30 s.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over EcomSend-popup timing (8-12s i.p.v. 30s).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#0b3a63de": {
-   "bewijs": "niet te controleren: vereist een browser-/JS-test, niet via curl te verifiëren.",
-   "controle": "Welk winkelwagen-drawer (Horizon of Section Store) opent op de homepage.",
+   "bewijs": "niet te controleren: vereist interactief testen in een browser (JS-rendering), niet via curl/connector te zien.",
+   "controle": "Welk winkelwagen-drawer opent op de homepage (Horizon of Section Store).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "Telefoonlink footer (text_TxDeYL) mailto: naar tel:.",
+   "bewijs": "in sections/hp-13-footer.liquid wordt het telefoonnummer (block-veld 'phone') als platte tekst getoond ({{ b.phone }}), niet als link; het specifieke blok-id text_TxDeYL is niet in dit bestand gevonden — mogelijk een ander footer-blok, niet verder getraceerd.",
+   "controle": "Telefoonlink in de footer (text_TxDeYL): mailto: of tel:.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#1d514f7d": {
-   "bewijs": "hp-base.liquid plaatst al een IntersectionObserver-check voor de hp-motion-klasse, maar dat is niet dezelfde als lazy sectie-inits in initIn(); nog geen wijziging toegepast.",
-   "controle": "IntersectionObserver rond sectie-inits in hp-home.js.",
+   "bewijs": "hpRegister(id, fn) roept initIn(document, id) direct aan bij registratie — alle secties initialiseren meteen, geen IntersectionObserver-gate met marge gevonden.",
+   "controle": "Sectie-inits in assets/hp-home.js: direct bij registratie of pas bij naderen (IntersectionObserver).",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#26ae892f": {
-   "bewijs": "layout/theme.liquid bevat nog de directe DOM-metingen (measureHeaderHeights/setTopRowHeight/updateTransparentHeaderOffset/setHeaderMenuStyle), geen ResizeObserver-omzetting; ongewijzigd.",
-   "controle": "Headerscript theme.liquid:129-131 naar ResizeObserver.",
+   "bewijs": "measureHeaderHeights() in layout/theme.liquid leest nog direct header.offsetHeight/children offsetHeight bij first paint (forceert reflow); geen ResizeObserver voor deze meting gevonden (header.js gebruikt die wel voor latere updates, niet voor deze eerste meting).",
+   "controle": "Headerscript in layout/theme.liquid (measureHeaderHeights): directe offsetHeight-meting of ResizeObserver.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#297948eb": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: ongebruikte Horizon-secties verwijderen.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over verwijderen van ongebruikte Horizon-secties.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "Codering/lichte versie van de mobiele merkvideo.",
+   "bewijs": "niet te controleren via de connector: video-bestandsgrootte/encodering is niet uit de liquid-bestandsinhoud af te lezen.",
+   "controle": "Encodering/bestandsgrootte van de mobiele merkvideo.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast; hp-base.liquid laadt nog de volledige hp-home.css als één bestand.",
-   "controle": "Opsplitsing van hp-home.css in build.py (kritiek deel inline + per sectie, hp-05/hp-13 uit de bundel).",
+   "bewijs": "niet te controleren: build.py is geen theme-bestand (lokaal devtool), niet zichtbaar via de Shopify-connector; hp-home.css blijft één bestand in de theme-bestandenlijst.",
+   "controle": "build.py en hp-home.css-splitsing (kritiek deel inline + CSS per sectie, hp-05/hp-13 uit de bundel).",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#64c67434": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "sizes-attributen in hp-09/hp-10/hp-02.",
+   "bewijs": "niet in detail te verifiëren binnen deze route: geen 'sizes='-attribuut rechtstreeks gevonden in hp-02/hp-09/hp-10-liquid; vermoedelijk via een gedeeld blok, niet verder getraceerd.",
+   "controle": "sizes-correctie hp-09 (160px/120px), hp-10 kaart 1/2 (46vw) en hp-02 (38vw desktop).",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
-   "bewijs": "layout/theme.liquid rendert 'chat-drawer' nog standaard in de body; overige dode-code-items niet stuk voor stuk hergecontroleerd, nog geen opruiming toegepast.",
-   "controle": "Dode code (chat-drawer-render, hpLightbox, kleurgolf hp-07, dode CSS-klassen, dode secties/snippets, hp-urltest.webp).",
+   "bewijs": "hp-urltest.webp staat nog in de assets-lijst van het live thema; de overige genoemde dode-code-items zijn niet stuk voor stuk nagelopen binnen deze route.",
+   "controle": "Dode code (chat-drawer-render, hpLightbox, kleurgolf hp-07, dode secties/snippets, hp-urltest.webp).",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#6d8f318b": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "data-poster/lazy-load van video-posters in hp-06.",
+   "bewijs": "<video> krijgt poster=\"{{ poster_d/poster_m }}\" nog rechtstreeks als attribuut (ongeconditioneerd geladen), niet als data-poster die pas in een load()-functie wordt gezet.",
+   "controle": "Video-poster-attribuut in sections/hp-06-brandvideo.liquid.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#776e1a8e": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: app-embeds T Lab Translation en Microsoft Clarity uitzetten.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over app-embeds T Lab Translation en Microsoft Clarity.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#7ca59128": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: vaste prijzen in hp-02-kaarten leegmaken voor live productprijs.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over vaste prijzen in hp-02-kaarten leegmaken.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#83b32866": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "Breedteladder van hp-04/hp-08 t.o.v. hp-07.",
+   "bewijs": "niet in detail te verifiëren binnen deze route: geen enkele hp-sectie (04/07/08) rendert een 'sizes='-attribuut of 'image_url: width' rechtstreeks in de sectie-liquid; de afbeeldingen lopen vermoedelijk via een gedeeld blok dat niet verder getraceerd is.",
+   "controle": "sizes/breedteladder van afbeeldingen in hp-04 en hp-08 t.o.v. hp-07.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#8af06cb2": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "Betaaliconen in de footer als lazy img i.p.v. inline SVG's.",
+   "bewijs": "blocks/payment-icons.liquid rendert nog '{{ type | payment_type_svg_tag }}' per betaalmethode, dus nog inline SVG's, geen lazy <img>.",
+   "controle": "Betaaliconen in blocks/payment-icons.liquid: inline SVG of lazy img.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#96b379ab": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-   "controle": "Staande mobiele hero-uitsnede (image_mobile) in hp-01 en herchomprimeren.",
+   "bewijs": "sections/hp-01-hero.liquid heeft al een image_mobile-instelling met <source media=\"(max-width: 768px)\">, maar of er al een staande uitsnede is geüpload en opnieuw gecomprimeerd is niet uit de liquid-bestandsinhoud te zien (vereist de ingevulde waarde, niet via deze route opgehaald).",
+   "controle": "image_mobile-veld van hp-01 (staande hero-uitsnede) en compressie.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "nog niet van toepassing: de audit-fixes zijn nog niet live gezet, dus een hermeting heeft nu geen zin.",
-   "controle": "PSI mobiel/desktop herhalen na livegang en vergelijken met de nulmeting.",
+   "bewijs": "nog niet van toepassing: de genoemde wijzigingen zijn nog niet live gezet, dus een hermeting heeft nog geen zin.",
+   "controle": "PSI-hermeting na het live zetten van de audit-fixes.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#afba67a5": {
-   "bewijs": "live thema (202669916487) heeft de scripttag nog op regel 25 van layout/theme.liquid; nog niet gecontroleerd/toegevoegd in een werkthema vóór een volgende livegang.",
-   "controle": "hg-deelcode.js scripttag in layout/theme.liquid van het live thema en of het werkthema deze al bevat.",
+   "bewijs": "<script src=\"{{ 'hg-deelcode.js' | asset_url }}\" defer></script> staat nog op regel 25 van layout/theme.liquid in het live thema — nog niet verwijderd.",
+   "controle": "hg-deelcode.js en de scripttag in layout/theme.liquid op het live thema 202669916487.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#bc7f12a6": {
-   "bewijs": "layout/theme.liquid rendert 'search-modal' nog onvoorwaardelijk in de body; nog geen wijziging toegepast.",
-   "controle": "Lege staat van de zoekmodal pas bij openen vullen.",
+   "bewijs": "niet in detail gecontroleerd binnen deze route (sections/predictive-search.liquid/search-results.liquid niet geïnspecteerd); verse bevinding van 30-10.",
+   "controle": "Lege staat van de zoekmodal: direct gevuld of pas bij openen.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#c468008c": {
-   "bewijs": "Besluit-actie, altijd handmatig.",
-   "controle": "Besluit voor Lars: wat hide_theme_header in hp-01 moet doen.",
+   "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+   "controle": "Besluit-actie over hide_theme_header in hp-01.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#e41fce90": {
-   "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast; snippets/hp-base.liquid (gedeelde laag, ongewijzigd) laadt hp-home.js nog ongewijzigd in elke hp-sectie.",
-   "controle": "Lazy-aanmaak van carrouselkopieën hp-07/hp-09 in hp-home.js.",
+   "bewijs": "hp-07-init doet nog 'real.forEach(function (it) { track.appendChild(copy(it)); });' direct bij sectie-init (niet pas bij naderen); geen IntersectionObserver-gate gevonden voor deze clones.",
+   "controle": "Carrouselkopieën hp-07/hp-09 in assets/hp-home.js.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#ef2245a6": {
-   "bewijs": "layout/theme.liquid rendert 'quick-add-modal' en 'search-modal' nog onvoorwaardelijk (via settings.quick_add/mobile_quick_add), niet beperkt tot niet-homepage-templates; nog niet aangepast.",
-   "controle": "Laden van productmodules/quick-add-modal op de homepage (theme.liquid, scripts.liquid).",
+   "bewijs": "niet in detail gecontroleerd binnen deze route; verse bevinding van 30-10, geen aanwijzing van een wijziging.",
+   "controle": "Productmodules/quick-add-modal laden op de homepage (scripts.liquid, theme.liquid).",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#fb7c40a8": {
-   "bewijs": "snippets/hp-base.liquid laadt Poppins nog via een Google Fonts-stylesheet-link, niet via settings/font_face; ongewijzigd.",
-   "controle": "Poppins via Shopify font_face i.p.v. Google Fonts-link.",
+   "bewijs": "geen 'fonts.googleapis'-link gevonden in layout/theme.liquid, snippets/stylesheets.liquid of snippets/meta-tags.liquid; niet alle overige CSS-bestanden nagelopen op een @import, dus niet volledig uit te sluiten.",
+   "controle": "Google Fonts-link naast Shopify font_face in layout/theme.liquid.",
    "gecontroleerd": "2026-11-01",
    "methode": "shopify",
    "uitkomst": "open"

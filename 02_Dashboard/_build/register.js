@@ -919,13 +919,13 @@ window.HI_RESEARCH = {
  },
  "data": {
   "agenda": {
-   "bijgewerkt": "2026-11-01T04:16:50+01:00",
+   "bijgewerkt": "2026-11-01T04:25:47+01:00",
    "items": [],
    "status": "niet_gekoppeld",
    "uitleg": "Google Calendar API staat uit in Google Cloud-project higrip-analytics. Koppelen: 1) 'Google Calendar API' aanzetten in project higrip-analytics. 2) Google Agenda van info@higrip.nl → Instellingen en delen → Delen met specifieke personen → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen met 'Alle afspraakdetails bekijken'. Andere agenda: agenda.calendar_id in 02_Dashboard/_data/instellingen.json."
   },
   "cwv": {
-   "bijgewerkt": "2026-11-01T04:17:15+01:00",
+   "bijgewerkt": "2026-11-01T04:25:48+01:00",
    "paginas": [
     {
      "cls": null,
@@ -980,7 +980,7 @@ window.HI_RESEARCH = {
    ]
   },
   "koppelingen": {
-   "bijgewerkt": "2026-11-01T04:16:52+01:00",
+   "bijgewerkt": "2026-11-01T04:25:49+01:00",
    "bronnen": [
     {
      "detail": "990 sessies in 12 weken",
@@ -1031,7 +1031,7 @@ window.HI_RESEARCH = {
      "status": "ok"
     },
     {
-     "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-10-30",
+     "detail": "shopify.json door de Actiecontrole bijgewerkt op 2026-11-01",
      "hoe_koppelen": "claude.ai op info@ → Instellingen → Connectors → Shopify koppelen",
      "id": "shopify",
      "naam": "Shopify",
@@ -1081,7 +1081,7 @@ window.HI_RESEARCH = {
    ]
   },
   "kpi": {
-   "bijgewerkt": "2026-11-01T04:16:50+01:00",
+   "bijgewerkt": "2026-11-01T04:25:47+01:00",
    "fouten": {},
    "gsc_laatste_dag": "2026-10-29",
    "kernwoorden": [
@@ -1584,8 +1584,13 @@ window.HI_RESEARCH = {
    ]
   },
   "shopify": {
-   "bijgewerkt": "2026-11-01T04:30:00+01:00",
+   "bijgewerkt": "2026-11-01T03:26:07+00:00",
    "dagen": [
+    {
+     "dag": "2026-08-03",
+     "omzet": 0.0,
+     "orders": 0
+    },
     {
      "dag": "2026-08-04",
      "omzet": 0.0,
@@ -2049,7 +2054,7 @@ window.HI_RESEARCH = {
    "toegepast": 1
   }
  },
- "gebouwd": "2026-11-01T03:20:31+00:00",
+ "gebouwd": "2026-11-01T03:26:55+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Growth-radar: 11 notities\n- Onderzoek: 26 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 37 notities\n- Routines: 15 notities\n- SEO: 8 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 3 notities\n",
  "notities": [
   {
@@ -2059,8 +2064,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "live thema (202669916487) heeft de scripttag nog op regel 25 van layout/theme.liquid; nog niet gecontroleerd/toegevoegd in een werkthema vóór een volgende livegang.",
-      "controle": "hg-deelcode.js scripttag in layout/theme.liquid van het live thema en of het werkthema deze al bevat.",
+      "bewijs": "<script src=\"{{ 'hg-deelcode.js' | asset_url }}\" defer></script> staat nog op regel 25 van layout/theme.liquid in het live thema — nog niet verwijderd.",
+      "controle": "hg-deelcode.js en de scripttag in layout/theme.liquid op het live thema 202669916487.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2072,8 +2077,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "hg-deelcode.js en de scripttag verwijderen/verplaatsen in het testthema",
+      "wat_jij_doet": "controleren en vóór livegang bevestigen"
      }
     },
     {
@@ -2081,8 +2086,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast; snippets/hp-base.liquid (gedeelde laag, ongewijzigd) laadt hp-home.js nog ongewijzigd in elke hp-sectie.",
-      "controle": "Lazy-aanmaak van carrouselkopieën hp-07/hp-09 in hp-home.js.",
+      "bewijs": "hp-07-init doet nog 'real.forEach(function (it) { track.appendChild(copy(it)); });' direct bij sectie-init (niet pas bij naderen); geen IntersectionObserver-gate gevonden voor deze clones.",
+      "controle": "Carrouselkopieën hp-07/hp-09 in assets/hp-home.js.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2094,8 +2099,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "carrouselkopieën hp-07/hp-09 pas aanmaken bij naderen in het testthema (hp-home.js)",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2103,8 +2108,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "data-poster/lazy-load van video-posters in hp-06.",
+      "bewijs": "<video> krijgt poster=\"{{ poster_d/poster_m }}\" nog rechtstreeks als attribuut (ongeconditioneerd geladen), niet als data-poster die pas in een load()-functie wordt gezet.",
+      "controle": "Video-poster-attribuut in sections/hp-06-brandvideo.liquid.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2116,8 +2121,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "video-posters hp-06 omzetten naar data-poster + load() in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2125,8 +2130,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "Breedteladder van hp-04/hp-08 t.o.v. hp-07.",
+      "bewijs": "niet in detail te verifiëren binnen deze route: geen enkele hp-sectie (04/07/08) rendert een 'sizes='-attribuut of 'image_url: width' rechtstreeks in de sectie-liquid; de afbeeldingen lopen vermoedelijk via een gedeeld blok dat niet verder getraceerd is.",
+      "controle": "sizes/breedteladder van afbeeldingen in hp-04 en hp-08 t.o.v. hp-07.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2138,8 +2143,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "breedteladder van hp-04/hp-08 gelijktrekken met hp-07 in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2147,8 +2152,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "layout/theme.liquid rendert 'quick-add-modal' en 'search-modal' nog onvoorwaardelijk (via settings.quick_add/mobile_quick_add), niet beperkt tot niet-homepage-templates; nog niet aangepast.",
-      "controle": "Laden van productmodules/quick-add-modal op de homepage (theme.liquid, scripts.liquid).",
+      "bewijs": "niet in detail gecontroleerd binnen deze route; verse bevinding van 30-10, geen aanwijzing van een wijziging.",
+      "controle": "Productmodules/quick-add-modal laden op de homepage (scripts.liquid, theme.liquid).",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2159,9 +2164,9 @@ window.HI_RESEARCH = {
      "tekst": "Productmodules en de quick-add-modal niet laden op de homepage (scripts.liquid:155-264, theme.liquid:196-198), daarna drawers en zoeken testen",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "deels",
-      "wat_claude_doet": "codewijziging in het testthema om productmodules/quick-add niet op de homepage te laden",
-      "wat_jij_doet": "drawers en zoeken testen, dan live zetten"
+      "claude": "ja",
+      "wat_claude_doet": "productmodules/quick-add-modal uitsluiten van de homepage in het testthema",
+      "wat_jij_doet": "testen (drawers/zoeken) en live publiceren"
      }
     },
     {
@@ -2169,8 +2174,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist een browser-/JS-test, niet via curl te verifiëren.",
-      "controle": "Welk winkelwagen-drawer (Horizon of Section Store) opent op de homepage.",
+      "bewijs": "niet te controleren: vereist interactief testen in een browser (JS-rendering), niet via curl/connector te zien.",
+      "controle": "Welk winkelwagen-drawer opent op de homepage (Horizon of Section Store).",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2183,7 +2188,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "zelf in de browser testen welke drawer opent en de andere laten vallen"
+      "wat_jij_doet": "zelf in de browser testen welk drawer opent en het andere uitzetten"
      }
     },
     {
@@ -2191,8 +2196,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: app-embeds T Lab Translation en Microsoft Clarity uitzetten.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over app-embeds T Lab Translation en Microsoft Clarity.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2205,7 +2210,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten en de app-embeds uitzetten in de thema-editor"
+      "wat_jij_doet": "besluit nemen en app-embeds zelf uitzetten in de thema-editor"
      }
     },
     {
@@ -2213,8 +2218,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "sizes-attributen in hp-09/hp-10/hp-02.",
+      "bewijs": "niet in detail te verifiëren binnen deze route: geen 'sizes='-attribuut rechtstreeks gevonden in hp-02/hp-09/hp-10-liquid; vermoedelijk via een gedeeld blok, niet verder getraceerd.",
+      "controle": "sizes-correctie hp-09 (160px/120px), hp-10 kaart 1/2 (46vw) en hp-02 (38vw desktop).",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2226,8 +2231,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "sizes-correcties in hp-02/hp-09/hp-10 in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2235,8 +2240,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "hp-base.liquid plaatst al een IntersectionObserver-check voor de hp-motion-klasse, maar dat is niet dezelfde als lazy sectie-inits in initIn(); nog geen wijziging toegepast.",
-      "controle": "IntersectionObserver rond sectie-inits in hp-home.js.",
+      "bewijs": "hpRegister(id, fn) roept initIn(document, id) direct aan bij registratie — alle secties initialiseren meteen, geen IntersectionObserver-gate met marge gevonden.",
+      "controle": "Sectie-inits in assets/hp-home.js: direct bij registratie of pas bij naderen (IntersectionObserver).",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2248,8 +2253,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "IntersectionObserver-gate voor sectie-inits in hp-home.js in het testthema",
+      "wat_jij_doet": "testen (vooral scroll-gedrag) en live publiceren"
      }
     },
     {
@@ -2257,8 +2262,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast; hp-base.liquid laadt nog de volledige hp-home.css als één bestand.",
-      "controle": "Opsplitsing van hp-home.css in build.py (kritiek deel inline + per sectie, hp-05/hp-13 uit de bundel).",
+      "bewijs": "niet te controleren: build.py is geen theme-bestand (lokaal devtool), niet zichtbaar via de Shopify-connector; hp-home.css blijft één bestand in de theme-bestandenlijst.",
+      "controle": "build.py en hp-home.css-splitsing (kritiek deel inline + CSS per sectie, hp-05/hp-13 uit de bundel).",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2269,9 +2274,9 @@ window.HI_RESEARCH = {
      "tekst": "build.py: hp-home.css splitsen in een klein kritiek deel (inline) en CSS per sectie, en hp-05 en hp-13 uit de bundel halen",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "claude": "deels",
+      "wat_claude_doet": "CSS-splitsing voorstellen/aanpassen in het testthema waar mogelijk zonder build.py",
+      "wat_jij_doet": "build.py zelf draaien/aanpassen (buiten Claude's bereik) en live publiceren"
      }
     },
     {
@@ -2279,8 +2284,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "Staande mobiele hero-uitsnede (image_mobile) in hp-01 en herchomprimeren.",
+      "bewijs": "sections/hp-01-hero.liquid heeft al een image_mobile-instelling met <source media=\"(max-width: 768px)\">, maar of er al een staande uitsnede is geüpload en opnieuw gecomprimeerd is niet uit de liquid-bestandsinhoud te zien (vereist de ingevulde waarde, niet via deze route opgehaald).",
+      "controle": "image_mobile-veld van hp-01 (staande hero-uitsnede) en compressie.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2291,9 +2296,9 @@ window.HI_RESEARCH = {
      "tekst": "Staande hero-uitsnede voor mobiel uploaden als image_mobile in hp-01 en de hero opnieuw comprimeren (PSI: 122 KiB te besparen)",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "claude": "deels",
+      "wat_claude_doet": "het testthema klaarzetten om een image_mobile te tonen zodra die is aangeleverd",
+      "wat_jij_doet": "een staande hero-foto laten maken/comprimeren en uploaden"
      }
     },
     {
@@ -2301,8 +2306,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: vaste prijzen in hp-02-kaarten leegmaken voor live productprijs.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over vaste prijzen in hp-02-kaarten leegmaken.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2315,7 +2320,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten en de vaste prijzen in de hp-02-kaarten leegmaken"
+      "wat_jij_doet": "besluit nemen en de prijsvelden zelf leegmaken in Shopify"
      }
     },
     {
@@ -2323,8 +2328,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nog niet van toepassing: de audit-fixes zijn nog niet live gezet, dus een hermeting heeft nu geen zin.",
-      "controle": "PSI mobiel/desktop herhalen na livegang en vergelijken met de nulmeting.",
+      "bewijs": "nog niet van toepassing: de genoemde wijzigingen zijn nog niet live gezet, dus een hermeting heeft nog geen zin.",
+      "controle": "PSI-hermeting na het live zetten van de audit-fixes.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2335,9 +2340,9 @@ window.HI_RESEARCH = {
      "tekst": "Na het live zetten PSI mobiel en desktop opnieuw draaien en vergelijken met deze nulmeting (score mobiel 76, desktop 60)",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "deels",
-      "wat_claude_doet": "PSI opnieuw draaien en vergelijken zodra de fixes live staan",
-      "wat_jij_doet": "de fixes live zetten en daarna om de hermeting vragen"
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "na livegang zelf PSI opnieuw draaien en vergelijken"
      }
     },
     {
@@ -2345,8 +2350,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "snippets/hp-base.liquid laadt Poppins nog via een Google Fonts-stylesheet-link, niet via settings/font_face; ongewijzigd.",
-      "controle": "Poppins via Shopify font_face i.p.v. Google Fonts-link.",
+      "bewijs": "geen 'fonts.googleapis'-link gevonden in layout/theme.liquid, snippets/stylesheets.liquid of snippets/meta-tags.liquid; niet alle overige CSS-bestanden nagelopen op een @import, dus niet volledig uit te sluiten.",
+      "controle": "Google Fonts-link naast Shopify font_face in layout/theme.liquid.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2358,8 +2363,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "Google Fonts-link verwijderen/font_face-only in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2367,8 +2372,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "Betaaliconen in de footer als lazy img i.p.v. inline SVG's.",
+      "bewijs": "blocks/payment-icons.liquid rendert nog '{{ type | payment_type_svg_tag }}' per betaalmethode, dus nog inline SVG's, geen lazy <img>.",
+      "controle": "Betaaliconen in blocks/payment-icons.liquid: inline SVG of lazy img.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2380,8 +2385,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "betaaliconen omzetten naar lazy img in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2389,8 +2394,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "layout/theme.liquid rendert 'search-modal' nog onvoorwaardelijk in de body; nog geen wijziging toegepast.",
-      "controle": "Lege staat van de zoekmodal pas bij openen vullen.",
+      "bewijs": "niet in detail gecontroleerd binnen deze route (sections/predictive-search.liquid/search-results.liquid niet geïnspecteerd); verse bevinding van 30-10.",
+      "controle": "Lege staat van de zoekmodal: direct gevuld of pas bij openen.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2402,8 +2407,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "zoekmodal pas bij openen vullen in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2411,8 +2416,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "layout/theme.liquid bevat nog de directe DOM-metingen (measureHeaderHeights/setTopRowHeight/updateTransparentHeaderOffset/setHeaderMenuStyle), geen ResizeObserver-omzetting; ongewijzigd.",
-      "controle": "Headerscript theme.liquid:129-131 naar ResizeObserver.",
+      "bewijs": "measureHeaderHeights() in layout/theme.liquid leest nog direct header.offsetHeight/children offsetHeight bij first paint (forceert reflow); geen ResizeObserver voor deze meting gevonden (header.js gebruikt die wel voor latere updates, niet voor deze eerste meting).",
+      "controle": "Headerscript in layout/theme.liquid (measureHeaderHeights): directe offsetHeight-meting of ResizeObserver.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2424,8 +2429,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "headerscript omzetten naar ResizeObserver in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     },
     {
@@ -2433,8 +2438,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: ongebruikte Horizon-secties verwijderen.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over verwijderen van ongebruikte Horizon-secties.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2447,7 +2452,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten welke ongebruikte secties verwijderd mogen worden"
+      "wat_jij_doet": "besluit nemen en secties zelf verwijderen"
      }
     },
     {
@@ -2455,8 +2460,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "Codering/lichte versie van de mobiele merkvideo.",
+      "bewijs": "niet te controleren via de connector: video-bestandsgrootte/encodering is niet uit de liquid-bestandsinhoud af te lezen.",
+      "controle": "Encodering/bestandsgrootte van de mobiele merkvideo.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2467,9 +2472,9 @@ window.HI_RESEARCH = {
      "tekst": "Mobiele merkvideo lichter coderen (nu 3.714 KB) of de lichte versie standaard maken op mobiel",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "claude": "deels",
+      "wat_claude_doet": "voorstel/instructie voor lichtere video-encodering",
+      "wat_jij_doet": "video zelf opnieuw encoderen met een extern tool en uploaden"
      }
     },
     {
@@ -2477,8 +2482,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "layout/theme.liquid rendert 'chat-drawer' nog standaard in de body; overige dode-code-items niet stuk voor stuk hergecontroleerd, nog geen opruiming toegepast.",
-      "controle": "Dode code (chat-drawer-render, hpLightbox, kleurgolf hp-07, dode CSS-klassen, dode secties/snippets, hp-urltest.webp).",
+      "bewijs": "hp-urltest.webp staat nog in de assets-lijst van het live thema; de overige genoemde dode-code-items zijn niet stuk voor stuk nagelopen binnen deze route.",
+      "controle": "Dode code (chat-drawer-render, hpLightbox, kleurgolf hp-07, dode secties/snippets, hp-urltest.webp).",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2490,8 +2495,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "dode code/bestanden opruimen in het testthema",
+      "wat_jij_doet": "controleren en live publiceren"
      }
     },
     {
@@ -2499,8 +2504,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: wat hide_theme_header in hp-01 moet doen.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over hide_theme_header in hp-01.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2513,7 +2518,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten wat hide_theme_header moet doen"
+      "wat_jij_doet": "besluit nemen over hide_theme_header"
      }
     },
     {
@@ -2521,8 +2526,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "nieuw gevonden op 30-10, nog geen wijziging toegepast.",
-      "controle": "Telefoonlink footer (text_TxDeYL) mailto: naar tel:.",
+      "bewijs": "in sections/hp-13-footer.liquid wordt het telefoonnummer (block-veld 'phone') als platte tekst getoond ({{ b.phone }}), niet als link; het specifieke blok-id text_TxDeYL is niet in dit bestand gevonden — mogelijk een ander footer-blok, niet verder getraceerd.",
+      "controle": "Telefoonlink in de footer (text_TxDeYL): mailto: of tel:.",
       "gecontroleerd": "2026-11-01",
       "methode": "shopify",
       "uitkomst": "open"
@@ -2534,8 +2539,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "ja",
-      "wat_claude_doet": "codewijziging in het testthema",
-      "wat_jij_doet": "controleren en live zetten"
+      "wat_claude_doet": "telefoonlink van mailto: naar tel: zetten in het testthema",
+      "wat_jij_doet": "testen en live publiceren"
      }
     }
    ],
@@ -2620,8 +2625,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: EcomSend-popup na 8-12 s tonen i.p.v. 30 s.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over EcomSend-popup timing (8-12s i.p.v. 30s).",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2634,7 +2639,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten en de EcomSend-timing wijzigen"
+      "wat_jij_doet": "besluit nemen en de timing zelf instellen in EcomSend"
      }
     },
     {
@@ -2642,8 +2647,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend-abonnementsstatus staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-      "controle": "EcomSend-abonnement (gratis plan max. 30 nieuwe inschrijvers/maand, Essential 150).",
+      "bewijs": "niet te controleren: app-abonnementsstatus is niet via de Shopify-connector of theme-bestanden te zien.",
+      "controle": "EcomSend-abonnement/plan-limiet (30 vs 150 inschrijvers).",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2656,7 +2661,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "EcomSend-abonnement controleren en zo nodig upgraden"
+      "wat_jij_doet": "zelf inloggen bij EcomSend en het abonnement controleren"
      }
     },
     {
@@ -2664,8 +2669,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend-frequentie-instelling staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-      "controle": "EcomSend-frequentie-instelling (2x/dag naar 1x/7 dagen).",
+      "bewijs": "niet te controleren: het app-blok 'sendwill-email-popups' in config/settings_data.json heeft een leeg settings-object; frequentie-instellingen zitten in het eigen instellingenpaneel van de app, niet via de connector leesbaar.",
+      "controle": "EcomSend-popupfrequentie-instelling (2x/dag naar 1x/7 dagen).",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2678,7 +2683,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "frequentie-instelling wijzigen in het EcomSend-paneel"
+      "wat_jij_doet": "zelf de frequentie-instelling aanpassen in het EcomSend-dashboard"
      }
     },
     {
@@ -2686,8 +2691,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend-doelgroepinstelling staat in het eigen apppaneel, niet via de Shopify-connector leesbaar.",
-      "controle": "EcomSend-doelgroepinstelling (alleen nieuwe bezoekers, niet ingelogde klanten).",
+      "bewijs": "niet te controleren: zelfde als frequentie-instelling, zit in het appeigen instellingenpaneel.",
+      "controle": "EcomSend-popup alleen voor nieuwe bezoekers, niet voor ingelogde klanten.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2700,7 +2705,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "doelgroepinstelling wijzigen in het EcomSend-paneel"
+      "wat_jij_doet": "zelf de doelgroepinstelling aanpassen in het EcomSend-dashboard"
      }
     },
     {
@@ -2708,8 +2713,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "/products/performance-grip-socks-1 en /products/performance-grip-socks-2 geven beide nog HTTP 404 — de paginaregel is nog niet herstelt (de instelling zelf staat in het EcomSend-apppaneel, niet via de connector leesbaar, maar het 404-symptoom bevestigt dat het nog niet is opgelost).",
-      "controle": "Of de EcomSend-paginaregels nog verwijzen naar de 404-producthandles performance-grip-socks-1/-2.",
+      "bewijs": "beide geven nog HTTP 404 (https://www.higrip.nl/products/performance-grip-socks-1 en -2), de EcomSend-paginaregels zijn dus nog niet herstel.",
+      "controle": "HTTP-status van /products/performance-grip-socks-1 en -2.",
       "gecontroleerd": "2026-11-01",
       "methode": "site",
       "uitkomst": "open"
@@ -2720,9 +2725,9 @@ window.HI_RESEARCH = {
      "tekst": "Paginaregels in EcomSend herstellen: ze verwijzen naar /products/performance-grip-socks-1 en -2, die 404 geven",
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
-      "claude": "deels",
-      "wat_claude_doet": "voorstel voor de juiste productURL's in de paginaregel",
-      "wat_jij_doet": "paginaregel bijwerken in het EcomSend-paneel"
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "zelf de paginaregels herstellen in het EcomSend-dashboard"
      }
     },
     {
@@ -2730,8 +2735,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend-popupknopstyling staat in het eigen apppaneel/widget, niet via de Shopify-connector leesbaar.",
-      "controle": "Merkconforme popupknop (pill/chevron, wit op zwart i.p.v. gevuld blauw).",
+      "bewijs": "niet te controleren: popup-styling is pas na JavaScript-rendering zichtbaar, geen browser beschikbaar in deze route.",
+      "controle": "Stijl van de popupknop (pill/chevron zwart-wit vs gevuld blauw).",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "open"
@@ -2743,8 +2748,8 @@ window.HI_RESEARCH = {
      "uitvoerbaar": {
       "beoordeeld": "2026-11-01",
       "claude": "deels",
-      "wat_claude_doet": "voorstel voor merkconforme popupknop-CSS (pill, chevron, wit op zwart)",
-      "wat_jij_doet": "toepassen in het EcomSend-paneel of thema-CSS en live zetten"
+      "wat_claude_doet": "voorstel voor een merkconforme popupknop (CSS) waar het theme dit kan beïnvloeden",
+      "wat_jij_doet": "de knopstijl zelf aanpassen in het EcomSend-ontwerp"
      }
     },
     {
@@ -2752,8 +2757,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": {
-      "bewijs": "Besluit-actie, altijd handmatig.",
-      "controle": "Besluit voor Lars: A/B-test verbeterde standaardpopup tegen EcomSend spin-the-wheel.",
+      "bewijs": "handmatig: besluit van een mens, wordt niet automatisch gecontroleerd.",
+      "controle": "Besluit-actie over A/B-test standaardpopup vs EcomSend spin-the-wheel.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2766,7 +2771,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "besluiten en de A/B-test opzetten"
+      "wat_jij_doet": "besluit nemen en de A/B-test zelf opzetten"
      }
     },
     {
@@ -2774,8 +2779,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "puur mensenwerk (juridisch advies), altijd handmatig.",
-      "controle": "Juridische check Gedragscode Promotionele Kansspelen voor een rad/Plinko-popup.",
+      "bewijs": "handmatig: puur juridisch mensenwerk (externe juridische check), wordt niet automatisch gecontroleerd.",
+      "controle": "Juridische check kansspelwetgeving voor een rad/Plinko.",
       "gecontroleerd": "2026-11-01",
       "methode": "geen",
       "uitkomst": "handmatig"
@@ -2788,7 +2793,7 @@ window.HI_RESEARCH = {
       "beoordeeld": "2026-11-01",
       "claude": "nee",
       "wat_claude_doet": "niets",
-      "wat_jij_doet": "juridisch advies inwinnen"
+      "wat_jij_doet": "zelf een jurist raadplegen over de kansspelwetgeving"
      }
     }
    ],

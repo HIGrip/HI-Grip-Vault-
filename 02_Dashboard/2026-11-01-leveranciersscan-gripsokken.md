@@ -8,10 +8,10 @@ routine: ""
 categorie: Product
 status: nieuw
 prioriteit: P1
-samenvatting: "De definitieve top 10 (na een reviewcheck) wordt aangevoerd door Goren Socks, Gelal Çorap en Sokko Textile; acht staan in Turkije, één in Italië (Gilmatex) en één in Portugal (Barcelcom), en Intersocks (Slovenië) sluit de lijst af. Openbare reviews zijn er bijna niet, dus betrouwbaarheid is beoordeeld op aantoonbare fabriek, staat van dienst en certificaten. In een tweede ronde zijn er per regio tien leveranciers gezocht (Italië, Turkije, rest van Europa); Turkije blijft het sterkst, want Italië levert alleen ongevalideerde leads en in de rest van Europa heeft alleen een onbekende Bulgaarse maker aantoonbaar siliconen-grip. Er zijn tien leveranciers in Europa en Turkije die de standaard offerteaanvraag van testkaart 3 kunnen krijgen, maar geen enkele bewijst online siliconen-grip op een clubsok met een MOQ van 200 paar of minder; dat moet de offerteaanvraag dus hard uitvragen. Goren Socks en Sokko Textile (Istanbul) passen op papier het best (MOQ 200 en 50, levering 4 tot 6 weken), Gelal en Alpin hebben het sterkste kwaliteitsbewijs maar vermoedelijk een te hoge MOQ."
+samenvatting: "De eindlijst telt 10 leveranciers per regio met Google Maps-reviews en vermeldingen: Goren Socks en Gelal Çorap leiden in Turkije, Gilmatex in Italië en Logosocke in de rest van Europa. Een eerdere top 10 (na een reviewcheck) werd aangevoerd door Goren Socks, Gelal Çorap en Sokko Textile; acht staan in Turkije, één in Italië (Gilmatex) en één in Portugal (Barcelcom), en Intersocks (Slovenië) sluit de lijst af. Openbare reviews zijn er bijna niet, dus betrouwbaarheid is beoordeeld op aantoonbare fabriek, staat van dienst en certificaten. In een tweede ronde zijn er per regio tien leveranciers gezocht (Italië, Turkije, rest van Europa); Turkije blijft het sterkst, want Italië levert alleen ongevalideerde leads en in de rest van Europa heeft alleen een onbekende Bulgaarse maker aantoonbaar siliconen-grip. Er zijn tien leveranciers in Europa en Turkije die de standaard offerteaanvraag van testkaart 3 kunnen krijgen, maar geen enkele bewijst online siliconen-grip op een clubsok met een MOQ van 200 paar of minder; dat moet de offerteaanvraag dus hard uitvragen. Goren Socks en Sokko Textile (Istanbul) passen op papier het best (MOQ 200 en 50, levering 4 tot 6 weken), Gelal en Alpin hebben het sterkste kwaliteitsbewijs maar vermoedelijk een te hoge MOQ."
 gerelateerd: []
 vervangt: []
-bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\02_Dashboard\\2026-11-01-leveranciers-top10.xlsx"
+bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\02_Dashboard\\2026-11-01-leveranciers-per-regio.xlsx"
 deadline: ""
 ---
 # Leveranciersscan gepersonaliseerde clubgripsokken (testkaart 3)
@@ -34,8 +34,24 @@ Testkaart 3 (leveranciersscan) vraagt tien leveranciers die een gepersonaliseerd
 
 ## Bevindingen
 
-### Definitieve top 10 (na reviewcheck)
-Eén lijst met contactgegevens, scores en offerte-tracker: `2026-11-01-leveranciers-top10.xlsx`. Weging: grip 25%, betrouwbaarheid 25% (aantoonbare fabriek, jaren, certificaten, reviews), MOQ 20%, levertijd 15%, contact 10%, prijs 5%.
+### Eindlijst: 10 per regio met reviews
+Alle 30 staan in één lijst: `2026-11-01-leveranciers-per-regio.xlsx` (Turkije, Italië, rest van Europa; per leverancier Google Maps-score, andere reviews, vermeldingen in blogs en pers, contact en offerte-tracker). Google Maps (1-11-2026): Bross 4,2 (244), Pirin Hill 4,8 (146), Gelal 4,5 (135), Vegea 4,5 (74), Bresciani 4,7 (66), Alpin 4,2 (60), Eligül 4,3 (52), ATUT 5,0 (35), Fiuza 4,2 (33), Calze GM 5,0 (31), Intersocks 4,1 (31), Logosocke 5,0 (20). Fabrieksreviews op Maps komen vaak van medewerkers en buren, dus ze bewijzen vooral dat het bedrijf echt bestaat. Gelal is volgens douanedata een grote Adidas-leverancier (15.319 van 18.450 zendingen). Ilary had een amfori-audit zonder bevindingen (2022). Intersocks won de Sloveense FDI-award 2022.
+
+| Turkije | Score | Italië | Score | Rest van Europa | Score |
+|---|---|---|---|---|---|
+| Goren Socks | 3,65 | Gilmatex | 3,05 | Logosocke | 3,6 |
+| Gelal Çorap | 3,55 | Calze GM Sport | 2,7 | Vegea | 3,4 |
+| Sokko Textile | 3,35 | Calzificio Pezzini | 2,45 | blaenk studio | 2,8 |
+| Varol Socks | 3,05 | Calzificio Ilary | 2,3 | Barcelcom Texteis | 2,75 |
+| EGS Socks | 2,85 | Calzificio Bram | 2,2 | Intersocks | 2,55 |
+| Eligül Çorap | 2,85 | Calzificio M. Bresciani | 2,15 | ATUT Socks | 2,35 |
+| Alpin Socks | 2,6 | Calzificio Sirio | 2,0 | Bulgaarse gripsokmaker (EEN) | 2,3 |
+| Naci Çorap | 2,5 | Calzificio Braga | 1,9 | A. Fiuza & Irmão | 2,15 |
+| Bross Socks | 2,5 | Calzificio P.M. | 1,75 | Pirin Hill | 2,15 |
+| Sayko Socks | 2,2 | Calzificio Del Barba | 1,75 | EVER Socks | 1,65 |
+
+### Eerdere top 10 (na reviewcheck, vervangen door de eindlijst)
+Eén lijst met contactgegevens, scores en offerte-tracker: `2026-11-01-leveranciers-per-regio.xlsx`. Weging: grip 25%, betrouwbaarheid 25% (aantoonbare fabriek, jaren, certificaten, reviews), MOQ 20%, levertijd 15%, contact 10%, prijs 5%.
 
 | # | Leverancier | Land | Waarom | Reviews | Score |
 |---|---|---|---|---|---|

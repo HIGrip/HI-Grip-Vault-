@@ -6,6 +6,16 @@ Archief van afgevinkte punten uit `ACTIEBACKLOG.md`. De routine verplaatst ze hi
 
 ---
 
+## 1 november 2026
+
+### [x] [regressie] `/pages/gripsokken-voor-rugby` heeft twee H1-tags (nieuw 19 okt 2026)
+**Bevestigd:** 27 oktober 2026 door actiecontrole — precies 1 h1 meer (class 'spf-hero__h1'), het losse tekstblok-h1 bovenaan is weg; https://www.higrip.nl/pages/gripsokken-voor-rugby
+**Waarom:** Precies één `<h1>` per pagina is een vaste regel in de regressiecheck en is al eerder geschonden (de EN-homepage, 28 sep 2026, inmiddels opgelost). De nieuwe sportpagina `/pages/gripsokken-voor-rugby` (deze week voor het eerst in de sitemap) heeft nu zelf twee `<h1>`-tags: een los tekstblok bovenaan met `<h1>Gripsokken voor rugby</h1>` (de omringende div-klasse suggereert zelf "h2") plus de eigen `<h1 class="sl-hero__title">` van de hero-sectie eronder. Op de drie bestaande sportpagina's (padel, tennis, voetbal) ontbreekt dit bovenste blok of rendert het op een lager niveau: daar is alleen de hero-h1 aanwezig.
+**Waar:** `/pages/gripsokken-voor-rugby` — het tekstblok direct boven de hero-sectie
+**Wat:** Het heading-niveau van dat tekstblok van `h1` naar `h2` zetten (of het blok verwijderen als het een duplicaat is van de hero-titel), zodat net als bij de andere drie sportpagina's precies één `<h1>` overblijft.
+**Gevonden op:** 19 oktober 2026 (regressiecheck)
+**Stond op:** P1
+
 ## 18 oktober 2026
 
 ### [x] [regressie] Nieuwe /en/-homepage heeft 2× H1 en een onvertaalde hero-tekst (nieuw 28 sep 2026)

@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Klikken en vertoningen stegen op zowel 7 als 28 dagen (28 dagen: klikken +33,3%, vertoningen +10,5%, positie 2,6 beter naar 8,1), vooral gedragen door het hoofdkeyword 'gripsokken' en merknaam. Twee nieuwe lage-CTR-kansen op Engelse pagina's met prima positie (voetbalpagina en productpagina) komen erbij, en de drie eerder gemelde CTR-problemen (punt 19, 21, 22) en de kannibalisatie-/oude-URL-problemen (punt 17, 18) staan onverminderd open — punt 18 (kannibalisatie 'grip socks') blijkt zich ook bij de Nederlandse variant 'grip sokken' voor te doen."
-gerelateerd: [2026-09-30-search-console, 2026-10-08-search-console, 2026-10-11-seo-audit-weekdelta, 2026-10-12-blogs-stappenplan, 2026-10-13-growth-radar-seo-content, 2026-10-13-homepage-redesign]
+gerelateerd: [2026-10-08-search-console, 2026-10-11-seo-audit-weekdelta, 2026-10-12-blogs-stappenplan, 2026-10-13-growth-radar-seo-content, 2026-10-13-homepage-redesign]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -2669,7 +2669,7 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#36868fbd": {
-   "bewijs": "Termijn nog niet verstreken, dus nog niet van toepassing.",
+   "bewijs": "termijn nog niet verstreken, dus nog niet van toepassing.",
    "controle": "Termijn 17/18 november voor de 48-uurs meting.",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
@@ -2905,7 +2905,7 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "Termijn nog niet verstreken (vandaag 1-11), dus nog niet van toepassing.",
+   "bewijs": "termijn nog niet verstreken (vandaag 1-11), dus nog niet van toepassing.",
    "controle": "Termijn voor herhaling van het onderzoek (circa 25 november).",
    "gecontroleerd": "2026-11-01",
    "methode": "geen",
@@ -3319,14 +3319,6 @@
    "methode": "shopify",
    "uitkomst": "open"
   },
-  "backlog#6c4a9799": {
-   "bewijs": "precies 1 h1 meer (class 'spf-hero__h1'), het losse tekstblok-h1 bovenaan is weg; https://www.higrip.nl/pages/gripsokken-voor-rugby",
-   "controle": "Telling van <h1>-tags op /pages/gripsokken-voor-rugby",
-   "gecontroleerd": "2026-10-27",
-   "methode": "site",
-   "sinds": "2026-10-27",
-   "uitkomst": "gedaan"
-  },
   "backlog#6dd6caf8": {
    "bewijs": "Nog steeds alleen de statische tekst '✓ Gratis verzending vanaf €35' (3x), geen dynamische voortgangsbalk — ongewijzigd.",
    "controle": "Dynamische gratis-verzend-voortgangsbalk op /products/performance-gripsokken.",
@@ -3357,7 +3349,7 @@
    "uitkomst": "handmatig"
   },
   "backlog#927dc23c": {
-   "bewijs": "positie nu 12,7 (was 12,5), 0 klikken/247 vertoningen, vorige_positie nu 8,5 (positie_verschil -4,2) — positie blijft verslechteren.",
+   "bewijs": "pagina staat nu op positie 12,7 (vorige_positie 8,5, verschil -4,2), 0 klikken/247 vertoningen — val zet door, nog niet opgelost.",
    "controle": "Positie en klikken/vertoningen van /pages/gripsokken-voor-voetbal (NL) in GSC 28d.",
    "gecontroleerd": "2026-11-01",
    "methode": "gsc",

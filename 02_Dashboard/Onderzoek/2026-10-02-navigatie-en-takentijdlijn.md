@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Het dashboard krijgt een zijbalk in vier groepen (Home · Werk · Inzicht · Systeem) met per module 3–6 submenu's in een pill-balk, en nooit meer dan drie niveaus diep. To do wordt standaard een tijdlijn met een rij per persoon (Lars, Tigo, Timo, Nog niemand), waarin je met slepen de datum, eigenaar of duur wijzigt en per dag ziet wie overvol zit."
-gerelateerd: [2026-09-29-crm-dashboard-voorstel, 2026-09-26-dashboard-ux-onderzoek, 2026-10-02-dashboard-apps-patronen]
+gerelateerd: [2026-10-02-dashboard-apps-patronen]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\.claude\\plans\\modules\\00-navigatie.md"
 deadline: ""

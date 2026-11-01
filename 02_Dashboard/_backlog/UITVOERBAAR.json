@@ -2369,6 +2369,186 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Beslissen of WERKTHEMA 203461034311 live gaat, na eigen controle van de productpagina's, en zelf live zetten."
  },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "EcomSend-abonnement controleren en zo nodig upgraden"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
+  "beoordeeld": "2026-11-01",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor merkconforme popupknop-CSS (pill, chevron, wit op zwart)",
+  "wat_jij_doet": "toepassen in het EcomSend-paneel of thema-CSS en live zetten"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#87a520dc": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten en de A/B-test opzetten"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#925d1863": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "juridisch advies inwinnen"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#96379ed9": {
+  "beoordeeld": "2026-11-01",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor de juiste productURL's in de paginaregel",
+  "wat_jij_doet": "paginaregel bijwerken in het EcomSend-paneel"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "frequentie-instelling wijzigen in het EcomSend-paneel"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "doelgroepinstelling wijzigen in het EcomSend-paneel"
+ },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#c8219092": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten en de EcomSend-timing wijzigen"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#0b3a63de": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "zelf in de browser testen welke drawer opent en de andere laten vallen"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#1d514f7d": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#26ae892f": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#297948eb": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten welke ongebruikte secties verwijderd mogen worden"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#64c67434": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#6d8f318b": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#776e1a8e": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten en de app-embeds uitzetten in de thema-editor"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#7ca59128": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten en de vaste prijzen in de hp-02-kaarten leegmaken"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#83b32866": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#8af06cb2": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#96b379ab": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
+  "beoordeeld": "2026-11-01",
+  "claude": "deels",
+  "wat_claude_doet": "PSI opnieuw draaien en vergelijken zodra de fixes live staan",
+  "wat_jij_doet": "de fixes live zetten en daarna om de hermeting vragen"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#afba67a5": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#bc7f12a6": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#c468008c": {
+  "beoordeeld": "2026-11-01",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten wat hide_theme_header moet doen"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#e41fce90": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#ef2245a6": {
+  "beoordeeld": "2026-11-01",
+  "claude": "deels",
+  "wat_claude_doet": "codewijziging in het testthema om productmodules/quick-add niet op de homepage te laden",
+  "wat_jij_doet": "drawers en zoeken testen, dan live zetten"
+ },
+ "2026-10-30-snelheid-code-audit-homepage#fb7c40a8": {
+  "beoordeeld": "2026-11-01",
+  "claude": "ja",
+  "wat_claude_doet": "codewijziging in het testthema",
+  "wat_jij_doet": "controleren en live zetten"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

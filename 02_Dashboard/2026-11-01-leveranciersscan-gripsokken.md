@@ -8,10 +8,10 @@ routine: ""
 categorie: Product
 status: nieuw
 prioriteit: P1
-samenvatting: "In een tweede ronde zijn er per regio tien leveranciers gezocht (Italië, Turkije, rest van Europa); Turkije blijft het sterkst, want Italië levert alleen ongevalideerde leads en in de rest van Europa heeft alleen een onbekende Bulgaarse maker aantoonbaar siliconen-grip. Er zijn tien leveranciers in Europa en Turkije die de standaard offerteaanvraag van testkaart 3 kunnen krijgen, maar geen enkele bewijst online siliconen-grip op een clubsok met een MOQ van 200 paar of minder; dat moet de offerteaanvraag dus hard uitvragen. Goren Socks en Sokko Textile (Istanbul) passen op papier het best (MOQ 200 en 50, levering 4 tot 6 weken), Gelal en Alpin hebben het sterkste kwaliteitsbewijs maar vermoedelijk een te hoge MOQ."
+samenvatting: "De definitieve top 10 (na een reviewcheck) wordt aangevoerd door Goren Socks, Gelal Çorap en Sokko Textile; acht staan in Turkije, één in Italië (Gilmatex) en één in Portugal (Barcelcom), en Intersocks (Slovenië) sluit de lijst af. Openbare reviews zijn er bijna niet, dus betrouwbaarheid is beoordeeld op aantoonbare fabriek, staat van dienst en certificaten. In een tweede ronde zijn er per regio tien leveranciers gezocht (Italië, Turkije, rest van Europa); Turkije blijft het sterkst, want Italië levert alleen ongevalideerde leads en in de rest van Europa heeft alleen een onbekende Bulgaarse maker aantoonbaar siliconen-grip. Er zijn tien leveranciers in Europa en Turkije die de standaard offerteaanvraag van testkaart 3 kunnen krijgen, maar geen enkele bewijst online siliconen-grip op een clubsok met een MOQ van 200 paar of minder; dat moet de offerteaanvraag dus hard uitvragen. Goren Socks en Sokko Textile (Istanbul) passen op papier het best (MOQ 200 en 50, levering 4 tot 6 weken), Gelal en Alpin hebben het sterkste kwaliteitsbewijs maar vermoedelijk een te hoge MOQ."
 gerelateerd: []
 vervangt: []
-bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\02_Dashboard\\2026-11-01-leveranciersscan-gripsokken-30.xlsx"
+bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\02_Dashboard\\2026-11-01-leveranciers-top10.xlsx"
 deadline: ""
 ---
 # Leveranciersscan gepersonaliseerde clubgripsokken (testkaart 3)
@@ -34,8 +34,26 @@ Testkaart 3 (leveranciersscan) vraagt tien leveranciers die een gepersonaliseerd
 
 ## Bevindingen
 
+### Definitieve top 10 (na reviewcheck)
+Eén lijst met contactgegevens, scores en offerte-tracker: `2026-11-01-leveranciers-top10.xlsx`. Weging: grip 25%, betrouwbaarheid 25% (aantoonbare fabriek, jaren, certificaten, reviews), MOQ 20%, levertijd 15%, contact 10%, prijs 5%.
+
+| # | Leverancier | Land | Waarom | Reviews | Score |
+|---|---|---|---|---|---|
+| 1 | Goren Socks · info@gorensocks.com | TR | Grip, MOQ 200, 4-6 weken, private label | Trustpilot 1× 5 sterren | 3,65 |
+| 2 | Gelal Çorap · info@gelalcorap.com | TR | 1.820 machines, sinds 1966, grip-R&D, ISO/OEKO-TEX | geen | 3,3 |
+| 3 | Sokko Textile · info@sokkotextile.com | TR | Private label vanaf 50 paar, 3-6 weken | geen | 3,1 |
+| 4 | Varol Socks · info@varolsock.com | TR | Fabriek 3.500 m², ISO 9001/14001/45001, Sedex | geen | 3,05 |
+| 5 | Gilmatex · info@gilmatex.it | IT | Verticale eigen fabriek sinds 1986, collecties voor merken en teams | geen | 3,05 |
+| 6 | EGS Socks · egs@egscorap.com | TR | 150 machines, sinds 1980, performance-sokken op maat | geen | 2,85 |
+| 7 | Eligül Çorap · +90 212 565 18 57 | TR | 8.500 m², sinds 1984, Umbro/Kappa | geen | 2,85 |
+| 8 | Alpin Socks · info@alpincorap.com.tr | TR | Beste certificering, Gymshark/Puma/Decathlon | geen | 2,85 |
+| 9 | Barcelcom Texteis · info@barcelcomtexteis.com | PT | Compressiefabriek sinds 1921 | geen | 2,75 |
+| 10 | Intersocks (Kočevje) | SI | Sinds 1979, Salomon/Mammut/HEAD/Asics | geen | 2,55 |
+
+Afgevallen na de reviewcheck: Vegea (handelaar met 250 partnerfabrieken, ratings alleen op eigen site), Calze GM Sport (productie uitbesteed, geen private label), Sayko (fabrieksstatus en oprichtingsjaar tegenstrijdig), Logosocke (geen reviews, fabriek vaag, geen grip) en blaenk (staat op een testdomein, geen fabriek). Bij geen van de tien noemt de site siliconen grip expliciet, behalve Goren.
+
 ### Ronde 2: tien per regio
-Volledige gegevens, scores en een offerte-tracker voor alle 30 staan in `2026-11-01-leveranciersscan-gripsokken-30.xlsx`. Turkije en rest van Europa combineren de sterkste namen uit ronde 1 met nieuwe vondsten.
+De 30 kandidaten uit deze ronde zijn samengevat in de tabel hieronder; de definitieve selectie staat in de top 10 hierboven. Turkije en rest van Europa combineren de sterkste namen uit ronde 1 met nieuwe vondsten.
 
 | Italië | Score | Turkije | Score | Rest van Europa | Score |
 |---|---|---|---|---|---|
@@ -117,7 +135,7 @@ We would like delivery within 6 weeks. Thank you, we look forward to your reply.
 Timo, HÏ Grip · info@higrip.nl
 
 ## Wat niet lukte
-De EEN-pagina van de Bulgaarse maker geeft 'page not found' (profiel verlopen), dus de bedrijfsnaam ontbreekt. Copa en Swiftwick gaven 429 (alleen zoekfragmenten gebruikt). Over de Portugese fabrieken in Barcelos was online niets te verifiëren. Prijzen zijn bij geen enkele Turkse fabriek publiek. Het dashboard is niet gepubliceerd: dat moet volgens de procedure vanaf het info@-account. Ronde 2: Italiaanse zoekresultaten gaven vooral retail (Decathlon), dus voor geen enkele Italiaanse fabriek zijn MOQ, levertijd of prijs gevonden. Alibaba, Europages en TradeTurkey leverden voor Turkije niets bruikbaars op. De Excel van ronde 1 stond open en kon niet worden overschreven, dus ronde 2 staat in een apart bestand (`-30.xlsx`).
+De EEN-pagina van de Bulgaarse maker geeft 'page not found' (profiel verlopen), dus de bedrijfsnaam ontbreekt. Copa en Swiftwick gaven 429 (alleen zoekfragmenten gebruikt). Over de Portugese fabrieken in Barcelos was online niets te verifiëren. Prijzen zijn bij geen enkele Turkse fabriek publiek. Het dashboard is niet gepubliceerd: dat moet volgens de procedure vanaf het info@-account. Ronde 2: Italiaanse zoekresultaten gaven vooral retail (Decathlon), dus voor geen enkele Italiaanse fabriek zijn MOQ, levertijd of prijs gevonden. Alibaba, Europages en TradeTurkey leverden voor Turkije niets bruikbaars op. Reviewcheck: alleen Goren (1) en Calze GM Sport (2) hebben Trustpilot-reviews; Google-reviews, Alibaba-ratings en forums leverden niets op. De eerdere Excels (ronde 1 en 30 kandidaten) zijn vervangen door één lijst.
 
 ## Bronnen
 - Testkaarten Timo Heijligers (pptx, testkaart 3 leveranciersscan en testkaart 4 proefserie)

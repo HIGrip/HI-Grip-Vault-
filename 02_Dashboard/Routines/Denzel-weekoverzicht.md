@@ -137,9 +137,11 @@ deadline: ""
 - [ ] P1 · Besluit: …   (alleen **nieuwe** beslissingen van deze week, als één regel die begint met "Besluit:". Niets overnemen uit de actiebacklog of uit eerdere weekoverzichten, zie §8.1. Het dashboard toont alle acties uit het weekoverzicht als besluit voor Lars.)
 ## Bevindingen
 ### Voortgang per hoofdagent
-- Social Agent: [status + content-voorstel 2c]
+- Social Agent (voorheen Content Agent): [status + content-voorstel 2c]
 - Partnership Agent: [status + beoordelingen 2b]
 - Website Agent: [website-stand uit stap 3 + eventuele fix 3b]
+- Design Agent: [visuele uitwerking van deze week voor Social en Website, of "geen opdracht"; open designpunten]
+- Operations Agent: [weekoverzicht, dashboard, kwaliteitslog en leerregels; wat er is opgepakt en wat er open staat]
 ### Afgevinkt door de actiecontrole deze week
 ### Wat ik deze week zelf heb opgepakt
 ### Content-voorstel — Week JJJJ-MM-DD   (als het niet in een eigen bestand staat)

@@ -42,8 +42,10 @@ De nul-bestellingen-week van vorige week (19-25 okt) is beantwoord: deze week (2
 ### Voortgang per hoofdagent
 
 - **Partnership Agent** — geen zoekactie nodig: de laatst toegevoegde kandidaat in beide lijsten dateert van 26-10 (7 dagen oud, ruim binnen de 1-2 weken-drempel), en alle kandidaten in zowel [[Voorbeelden Gevonden Organisaties (B2B Klanten)]] als [[Voorbeelden Gevonden Organisaties (Events)]] zijn al expliciet beoordeeld. Het B2B-outreach-besluit (koersbepaling 11-10) staat ongewijzigd en nu 22 dagen open.
-- **Content Agent** — stapelrem liet deze week een nieuw voorstel toe: het voorstel van 05-10 is nu 4 weken (28 dagen) onbeoordeeld, ruim boven de drempel van 3 weken. Nieuw voorstel: zie "Content-voorstel — Week 2026-11-02" hieronder.
+- **Social Agent** (voorheen Content Agent) — stapelrem liet deze week een nieuw voorstel toe: het voorstel van 05-10 is nu 4 weken (28 dagen) onbeoordeeld, ruim boven de drempel van 3 weken. Nieuw voorstel: zie "Content-voorstel — Week 2026-11-02" hieronder.
 - **Website Agent** — geen nieuwe regressiecheck of Search Console-meting deze week ([[2026-10-19-regressiecheck]] en [[2026-10-21-search-console]] blijven de laatste technische bron), maar wel zes losse onderzoeken van lokale sessies sinds 27-10 (SEO-audit, GA4-conversie-audit, Ads-funnel, Ads-agent-onderzoek, homepage-snelheid, e-mailpopup, leveranciersscan) — zie Website-stand hieronder. De Growth Radar SEO-technisch van vandaag (11-02) vond niets nieuws.
+- **Design Agent** — geen opdracht deze week en geen nieuwe visuele uitwerking in de vault (de laatste wijziging in `07_Design_Agent/` dateert van 30-10). De open punten die de Design Agent raken, zijn de rugby-CTA-kleur in de Ads (merkregel) en de sneller-werkthema-besluit; die wachten op Lars en de Website Agent.
+- **Operations Agent** — heeft dit weekoverzicht samengesteld, het dashboard bijgehouden en de SEO-punten van de week op de Shopify-pagina "SEO-routine logboek" gezet (concept, niet gepubliceerd). Het kwaliteitsoverzicht (`08_Operations_Agent/Agent Werk & Kwaliteit Overzicht.md`) is vandaag bijgewerkt.
 
 ### Afgevinkt door de actiecontrole deze week
 

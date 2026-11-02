@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-10-30
+bijgewerkt: 2026-11-02
 ---
 
 # Update Log — Website Agent
@@ -13,6 +13,14 @@ bijgewerkt: 2026-10-30
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
 
 ---
+
+## 2026-11-02 — Werkthema `203461034311` live gezet + Engelse vertalingen
+
+Op opdracht van de gebruiker, na een check in de chat. Eerst `theme list` gedraaid: `202669916487` stond live. Daarna `shopify theme publish`; nu is `203461034311` live en `202669916487` unpublished (terugvaloptie).
+- Vóór publicatie zijn 1.109 Engelse vertalingen (`translationsRegister`, locale `en`) geregistreerd op het werkthema. Het gaat om de beleidspagina's, header, product, contact, FAQ, shop, ab-a/ab-b, vergelijken, missie, visie, de vier sportpagina's, teamorder en zakelijk. 173 velden zijn bewust niet vertaald (namen, codes, quiz-waarden, ankers, Liquid).
+- De oude live-tekst "€30" en "before 10 PM" is gecorrigeerd naar €35 en "binnen 1 werkdag verzonden".
+- Een scan van 21 live /en-pagina's vond na publicatie nog één regel in het Nederlands: `faq_link_text` op de 4 sportpagina's. Die regel is direct vertaald; een tweede scan vond 0 treffers.
+- Open punt: "3.500+ sporters" (ab-b, onze-missie, sportpagina's) controleren tegen [[Feiten & Actuele Staat]].
 
 ## 2026-10-30 — Werkthema `203461034311`: snelheidsfixes homepage (niet live)
 

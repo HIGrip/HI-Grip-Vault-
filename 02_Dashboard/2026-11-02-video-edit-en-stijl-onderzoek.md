@@ -39,26 +39,26 @@ deadline: ""
 ### 1. Toolkeuze en advies
 Kosten en prijzen zijn algemene webbronnen van november 2026 (deels US/afwijkende regio), geen officiële NL-tarieven. Laptop: Ryzen 7 5700U, geen dGPU.
 
-| Optie | Kosten | Leercurve | Templates (outro/lower-third/grade) | Ondertiteling/automatisering | Past bij laptop |
-|---|---|---|---|---|---|
-| Premiere Pro | ~€24-32/mnd | Hoog | Zeer sterk | Ja (speech-to-text) | **Nee**, loopt vast (nulmeting t_3973ff61) |
-| Canva Pro/Business + Canva-MCP | Pro ~€15/mnd, Business ~€25/user/mnd | Laag | Ja: create_design, autofill_design, export_design, brand templates | Browser-Canva heeft ondertitel-tool; via MCP niet getest | Ja, draait in de browser |
-| ffmpeg / script | Gratis, al geïnstalleerd (v9.0.1) | Hoog | Ja via filters, maar nu niet bouwen | Whisper-filter aanwezig | Ja: 30 s testclip x264 6,5 s, h264_amf 5,0 s |
-| Hermes/Claude ingebouwd | Gratis | n.v.t. | Geen editor, alleen video_analyze | Nee | Geen zelfstandige optie |
-| CapCut desktop | Gratis voor eigen beelden; Pro ~€18-20/mnd (4K, auto-captions) | Laag-middel | Sterke TikTok/IG-sjablonen, geen brandkit zoals Canva | Auto-captions achter Pro | Ja, lichte app |
+| Optie                          | Kosten                                                         | Leercurve   | Templates (outro/lower-third/grade)                                | Ondertiteling/automatisering                             | Past bij laptop                              |
+| ------------------------------ | -------------------------------------------------------------- | ----------- | ------------------------------------------------------------------ | -------------------------------------------------------- | -------------------------------------------- |
+| Premiere Pro                   | ~€24-32/mnd                                                    | Hoog        | Zeer sterk                                                         | Ja (speech-to-text)                                      | **Nee**, loopt vast (nulmeting t_3973ff61)   |
+| Canva Pro/Business + Canva-MCP | Pro ~€15/mnd, Business ~€25/user/mnd                           | Laag        | Ja: create_design, autofill_design, export_design, brand templates | Browser-Canva heeft ondertitel-tool; via MCP niet getest | Ja, draait in de browser                     |
+| ffmpeg / script                | Gratis, al geïnstalleerd (v9.0.1)                              | Hoog        | Ja via filters, maar nu niet bouwen                                | Whisper-filter aanwezig                                  | Ja: 30 s testclip x264 6,5 s, h264_amf 5,0 s |
+| Hermes/Claude ingebouwd        | Gratis                                                         | n.v.t.      | Geen editor, alleen video_analyze                                  | Nee                                                      | Geen zelfstandige optie                      |
+| CapCut desktop                 | Gratis voor eigen beelden; Pro ~€18-20/mnd (4K, auto-captions) | Laag-middel | Sterke TikTok/IG-sjablonen, geen brandkit zoals Canva              | Auto-captions achter Pro                                 | Ja, lichte app                               |
 
 **Advies:** Canva (Pro/Business) met de Canva-MCP: laagste leercurve, geen installatie, herhaalbare merktemplates, geen lokale rendering. CapCut desktop als snelle fallback. Premiere Pro afgeraden. ffmpeg bewaard als toekomstige automatiseringsoptie; dat is een apart vervolgvoorstel voor Team HÏ Grip.
 
 ### 2. Visuele stijlanalyse en richtlijnen
 Let op: analyse op basis van zoekresultaten, metadata en publieke beschrijvingen, niet frame-voor-frame bekeken (geen downloads). Getoetst aan de [[Editing Stijl Gids Video]] en [[Logo & Kleurenpalet]].
 
-| # | Voorbeeld | Waarneming | Past bij HÏ Grip? |
-|---|---|---|---|
-| 1 | TRUsox (@officialtrusox, IG Reels), directe concurrent | Product/claim in beeld binnen 2 sec; clean zwart/wit; korte bold-caps claims; snel bij actie, rust bij close-up; logo + CTA | Ja, sluit aan op "koud & scherp" |
-| 2 | Boot Wizard (TikTok) | Directe vraag-hook; presenter + b-roll; bold captions onderin (CapCut-achtig) | Ja: hook-eerst, tekst draagt zonder geluid |
-| 3 | NOX PlayBIG padel (BM Produccions) | Cinematic 3D-reveal, retro/warme grade, lange shots | **Nee**: warme tint verboden, tempo te traag |
-| 4 | Padel match-cut reel (@shogentle) | Match-cuts smash naar impact | Ja: past bij uitzondering "zoom/push bij hoogtepunt" |
-| 5 | Court15.agency (tennis/padel) | Silent-first edits, leesbare captions, vertical-first | Ja: sluit aan op Poppins-ondertitel onderaan en mobile-first |
+| #   | Voorbeeld                                              | Waarneming                                                                                                                  | Past bij HÏ Grip?                                            |
+| --- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| 1   | TRUsox (@officialtrusox, IG Reels), directe concurrent | Product/claim in beeld binnen 2 sec; clean zwart/wit; korte bold-caps claims; snel bij actie, rust bij close-up; logo + CTA | Ja, sluit aan op "koud & scherp"                             |
+| 2   | Boot Wizard (TikTok)                                   | Directe vraag-hook; presenter + b-roll; bold captions onderin (CapCut-achtig)                                               | Ja: hook-eerst, tekst draagt zonder geluid                   |
+| 3   | NOX PlayBIG padel (BM Produccions)                     | Cinematic 3D-reveal, retro/warme grade, lange shots                                                                         | **Nee**: warme tint verboden, tempo te traag                 |
+| 4   | Padel match-cut reel (@shogentle)                      | Match-cuts smash naar impact                                                                                                | Ja: past bij uitzondering "zoom/push bij hoogtepunt"         |
+| 5   | Court15.agency (tennis/padel)                          | Silent-first edits, leesbare captions, vertical-first                                                                       | Ja: sluit aan op Poppins-ondertitel onderaan en mobile-first |
 
 **Wat past:** scherpe zwart/wit grade, bold Poppins-captions onderin, snelle hook, harde cuts plus actie-match-cut, logo-outro.
 **Wat niet past:** warme/retro kleurgrades, lange cinematic shots zonder hook, een boodschap die van muziek afhangt (captions moeten zonder geluid werken). Trage cinematic opbouw blijft "toekomstdoel", niet nu.

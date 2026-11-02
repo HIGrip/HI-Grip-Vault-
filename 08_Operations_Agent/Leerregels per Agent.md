@@ -26,6 +26,7 @@ beheer: Stafchef (03_Denzel)
 - **Gebruik nooit de Bundler-app; bundels (1/3/5-pack) gaan via Section Store.** Lars, 26-10-2026, bij de A/B-landingspagina's. Zie [[Shopify App Stack]]. (2026-10-26, Lars, via Denzel)
 - **Regel over nieuwe bestanden is omgedraaid: iedereen maakt, Operations controleert/verbetert/herplaatst.** Reden: Lars heeft bepaald dat alle hoofd- en sub-agents nieuwe bestanden in de vault mogen maken en dat Operations altijd controleert en eindverantwoordelijk is voor correcte plaatsing, navigatieregel, index en `vault_nav.py`. `00_Brand_Core/` blijft buiten bereik zonder toestemming van Lars per wijziging. (2026-10-30, Lars, taak t_a8356e0f)
 - **Agentgrenzen: akkoord van Lars OF Timo volstaat.** Beiden is niet nodig. Zie [[user]]. (2026-10-28, Lars, via Denzel)
+- **Een kaart die op een besluit van Lars wacht gaat naar REVIEW (request-review), met de exacte vraag en een voorstel in de kaartreactie.** `blocked` is alleen voor technische storingen en afhankelijkheden. Reden: blocked verborg dat Lars moest beslissen; een kaart wachtte 69 uur. (2026-11-02, Lars)
 
 ## Denzel en zijn vroegere team
 
@@ -39,6 +40,11 @@ beheer: Stafchef (03_Denzel)
 - **Een designoplevering toets je op smaak tegen echte referenties, niet alleen op bugs en de checklist.** Het homepage-prototype richting B haalde alle regels (H1 boven de vouw, grid-breuk, groot getal, JS-budget) en mijn eigen critique noemde geen kritieke punten; Lars gaf ★1: "super lelijk, echt AI slop". Wie zijn eigen team toetst, toetst te mild. (2026-10-14, Lars ★1)
 - **Bij visueel werk kiest Lars eerst een richting in beeld, niet in tekst.** Een conceptkeuze op basis van een beschrijving en een ASCII-wireframe is geen keuze voor een look. Lever eerst 2–3 echte visuele schetsen (hero op 375 en 1440) naast de referentiesites, en bouw pas daarna de hele pagina. (2026-10-14, Lars ★1)
 - **Kanban-blokkades en schrijfweigeringen:** afhankelijke kaarten standaard `todo` met parent-links; `blocked` alleen bij een echte menselijke/technische blokkade en met expliciete reden. Een echte `needs_input`-blokkade niet unblokken zonder antwoord of besluit. Een geweigerde schrijfactie nooit via een andere schrijfmethode voor hetzelfde doel omzeilen: stop en volg alleen een expliciet toegestane herstelroute. (2026-10-30, Lars)
+- **Afgeronde kanban-kaarten worden wekelijks gearchiveerd:** cron "Kanban: gedane taken archiveren", maandag 09:00, kaarten ouder dan 7 dagen, script `archive_done_kanban.py`. Reden: het bord liep vol met Done-kaarten. (2026-11-02, Lars)
+- **Draai bij het begin van elke sessie `hermes kanban diagnostics`** en meld in één gebundeld bericht alles wat langer dan 24 uur wacht. (2026-11-02, Lars)
+- **Geef geen werk aan een headless worker dat een goedkeuringsprompt vraagt (scripts, instructiebestanden) of een bekende tool-guard raakt (`write_file` `stale_write_blocked`).** Doe het zelf of laat Lars eerst goedkeuren. Reden: headless workers kunnen niet om goedkeuring vragen en crashen dan. (2026-11-02, Lars)
+- **Controleer vóór het aanmaken van een kaart of de opdracht binnen de vaultregels past.** Voorbeeld: een scan van de prototypemap was verboden terwijl de opdracht die vroeg. Start een keten met de eerste schakel; vervolgkaarten pas als die slaagt, geen ketens van 5 tot 7 kaarten vooruit. (2026-11-02, Lars)
+- **Kaarten die iets verwijderen of verplaatsen (zoals opruiming van ontwerpversies) gaan eerst naar REVIEW voor akkoord van Lars.** Pas daarna uitvoeren. (2026-11-02, Lars)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)

@@ -1,7 +1,7 @@
 ---
 id: "2026-10-30-ads-agent-onderzoek"
 titel: "Ads Agent: structuur, toegang en gecontroleerde proef"
-kerntitel: "Eerst meetbetrouwbaarheid toetsen, geen Ads-uitvoering door agents"
+kerntitel: "Ads is adviserend en read-only; eerst meetbetrouwbaarheid toetsen"
 datum: "2026-10-30"
 bron: "los"
 routine: ""

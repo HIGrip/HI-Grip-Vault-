@@ -2549,6 +2549,30 @@
   "wat_claude_doet": "Google Fonts-link verwijderen/font_face-only in het testthema",
   "wat_jij_doet": "testen en live publiceren"
  },
+ "2026-11-01-leveranciersscan-gripsokken#018a0807": {
+  "beoordeeld": "2026-11-02",
+  "claude": "deels",
+  "wat_claude_doet": "Publiek beschikbare informatie over Goren Socks opzoeken en vastleggen.",
+  "wat_jij_doet": "Rechtstreeks contact opnemen met Goren Socks voor het definitieve antwoord over fabriek/MOQ."
+ },
+ "2026-11-01-leveranciersscan-gripsokken#03c2a185": {
+  "beoordeeld": "2026-11-02",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Zelf (Team HÏ Grip) de maximale inkoopprijs per paar vaststellen."
+ },
+ "2026-11-01-leveranciersscan-gripsokken#847e7c05": {
+  "beoordeeld": "2026-11-02",
+  "claude": "deels",
+  "wat_claude_doet": "Concepttekst van de offerteaanvraag en de offerte-tracker in de vault klaarzetten.",
+  "wat_jij_doet": "De offerteaanvragen daadwerkelijk versturen naar de tien leveranciers en de tracker bijhouden."
+ },
+ "2026-11-01-leveranciersscan-gripsokken#b15ea4d3": {
+  "beoordeeld": "2026-11-02",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Zelf contact opnemen met het Nederlandse EEN-contactpunt (RVO/KvK)."
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

@@ -23,6 +23,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Kanban-naleving
 - [[2026-10-27]]
+- [[2026-11-02]]
 
 ### _archief
 - [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]

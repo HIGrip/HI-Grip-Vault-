@@ -17,6 +17,7 @@ bijgewerkt: 2026-11-02
 ## 2026-11-02 — Live `203461034311`: bundler-foto's scherp op mobiel
 
 Op opdracht van de gebruiker direct live gepusht (`--only snippets/hi-bundle.liquid`, na `theme list`). De `image_tag` gaf alleen een `srcset` van 70w, terwijl de weergave 64px is; op een 3x-scherm was dat te weinig. Nu `widths: '70,140,210'` en `sizes: '64px'`. In de live HTML gecontroleerd: zwart en wit hebben elk 3 varianten.
+- Daarna is dezelfde fix toegepast op de kleurkeuze (`snippets/hi-color-switch.liquid`): `widths: '60,120,180'`, `sizes: '60px'`. Ook deze is live gepusht op opdracht van de gebruiker.
 
 ## 2026-11-02 — Werkthema `203461034311` live gezet + Engelse vertalingen
 

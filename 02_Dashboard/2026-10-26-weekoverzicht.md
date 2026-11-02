@@ -6,10 +6,10 @@ datum: 2026-10-26
 bron: routine
 routine: "denzel-week"
 categorie: Merk
-status: nieuw
+status: verwerkt
 prioriteit: P1
 samenvatting: "Voor het eerst in de gemeten periode geeft zowel Shopify als GA4 nul bestellingen voor een volledige week (19–25 okt), bij een dalende funnel (add_to_cart 18→3) maar zonder gevonden technische oorzaak (cart/checkout werken, geen nieuwe regressie). Daarnaast is na 5 weken stilstand voor het eerst weer echt gezocht naar B2B- en event-kandidaten (5 nieuwe, waaronder de eerste 2 rugbyclub-kandidaten), terwijl de drie grootste besluiten (B2B-outreach, content-voorstel 05-10, homepage-herontwerp) nog steeds op Lars wachten."
-gerelateerd: [2026-10-19-weekoverzicht, 2026-10-19-regressiecheck, 2026-10-21-search-console, 2026-10-19-seo-conversietest-run-5, 2026-10-19-productpagina-2-0-inspiratie-en-prototype, 2026-10-12-b2b-pagina-inspiratie, 2026-10-12-voordelenpagina-analyse, 2026-10-11-omzetgroei-koersbepaling]
+gerelateerd: [2026-10-19-weekoverzicht, 2026-10-19-regressiecheck, 2026-10-21-search-console, 2026-10-19-seo-conversietest-run-5, 2026-10-19-productpagina-2-0-inspiratie-en-prototype, 2026-10-12-b2b-pagina-inspiratie, 2026-10-12-voordelenpagina-analyse, 2026-10-11-omzetgroei-koersbepaling, 2026-11-02-weekoverzicht]
 vervangt: [2026-10-19-weekoverzicht]
 bronbestand: ""
 deadline: ""

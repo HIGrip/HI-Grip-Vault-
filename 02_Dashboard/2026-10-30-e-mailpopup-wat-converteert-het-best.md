@@ -34,6 +34,7 @@ De vraag was: welke e-mailpopup converteert het best, en is een gamified popup (
 - [ ] P2 · Paginaregels in EcomSend herstellen: ze verwijzen naar /products/performance-grip-socks-1 en -2, die 404 geven
 - [ ] P2 · Popupknop merkconform maken: pill met chevron, wit op zwart, in plaats van gevuld blauw (#0011A7)
 - [ ] P2 · Besluit: A/B-test verbeterde standaardpopup tegen EcomSend spin-the-wheel, minimaal 3.800 vertoningen per variant
+- [ ] P2 · Besluit: nieuwe popup in twee stappen bouwen, eerst sport kiezen met één tik, daarna e-mail; nagaan of EcomSend dit kan of dat stap 1 in het thema komt
 - [ ] P3 · Juridisch laten checken of een rad of Plinko met kansuitkomst onder de Gedragscode Promotionele Kansspelen valt, vóór livegang
 
 ## Bevindingen
@@ -70,6 +71,15 @@ De vraag was: welke e-mailpopup converteert het best, en is een gamified popup (
 - Meerdere stappen: kleine winst, 2,3% tegen 2,0% (Omnisend) en 5,17% tegen 4,62% (Wisepops).
 - Afbeelding: +43% bij Wisepops, neutraal bij Omnisend. Afteltimer: +171% bij Wisepops, licht negatief bij Omnisend. Tegenstrijdig, niet op bouwen.
 
+### Eerst klikken, dan mail (aanvulling 02-11)
+- Vraag: werkt een popup beter als je eerst één keuze tikt (ja/nee of je sport) en pas daarna je mail invult?
+- Wisepops, A/B-tests over circa 1,8 mln sessies (gids micro-commitment, maart 2026): meerstaps 5,64% tegen 3,07% eenstaps (+84%); de beste 10% meerstaps haalt 20,65%. Niet vermeld of "conversie" de klik of de mail is; methode niet beschreven.
+- Dezelfde leverancier in de bredere popup-stats: 5,17% tegen 4,62% (+12%). Omnisend: 2,3% tegen 2,0% (+15%). Claspo: 4,94% tegen 3,67% (+35%).
+- Richting in elke bron gelijk (eerst klikken wint), grootte loopt uiteen van +12% tot +84%. Realistische verwachting voor HÏ Grip: 10 tot 35% meer aanmeldingen.
+- Waarom het werkt: de eerste tik kost bijna niets en daarna wil je consistent blijven (commitment, foot-in-the-door). Werkt het best als de eerste stap zelf iets oplevert, zoals je sport kiezen; dan heb je ook direct segmentatie voor de nieuwsbrief.
+- Kanttekening: de eerste stap moet één tik zijn, geen extra vraag die ook getypt moet worden; bij korte formulieren voegt een extra stap anders alleen frictie toe.
+- Geen A/B-test mogelijk bij huidig verkeer (zie testopzet: 3.800 vertoningen per variant). Omdat alle bronnen dezelfde kant op wijzen en het nadeel klein is, is tweestaps de veilige keuze zonder test.
+
 ### Risico's van een spelpopup
 - Merk: referentiemerken (Nike, Gymshark, HOKA) gebruiken dit niet; past eerder bij kortingswinkels.
 - Lijstkwaliteit: trekt kortingszoekers. Meet daarom ook orders met de code en uitschrijvingen, niet alleen aanmeldingen.
@@ -89,6 +99,8 @@ De database van het Research Dashboard was vanaf dit account (persoonlijk) niet 
 - Wisepops, Popup stats 2026 (circa 1 mld vertoningen): https://wisepops.com/blog/popup-stats
 - Claspo, Popup statistics (779 mln vertoningen): https://claspo.io/blog/popup-statistics/
 - Sleeknote, Popup statistics 2026: https://sleeknote.com/blog/popup-statistics
+- Wisepops, Guide to micro-commitment popups (maart 2026): https://wisepops.com/blog/micro-commitment-popups
+- Claspo, Multi-step popup: https://claspo.io/blog/multi-step-popup/
 - EcomSend in de Shopify App Store (functies, plannen): https://apps.shopify.com/ecomsend
 - CMS, Gewijzigde Gedragscode Promotionele Kansspelen: https://cms.law/nl/nld/publication/gewijzigde-gedragscode-promotionele-kansspelen-op-1-januari-2014-in-werking-getreden
 - Live meting EcomSend-config op higrip.nl, 30-10-2026 (browser, `window.EcomSendApps`)

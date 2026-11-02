@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 2 november 2026 (actiecontrole)
-Open: 29 · Afgerond: 9 (2 dubbel, zie dashboard)
+Laatst bijgewerkt: 2 november 2026 (seo)
+Open: 33 · Afgerond: 9 (2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -82,6 +82,24 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 ---
 
 ## P2 — Deze maand
+
+### [ ] [regressie] `/pages/gripsokken-2-0` en `/pages/gripsokken-2-1` missen meta description en robots-meta (nieuw 2 nov 2026)
+**Waarom:** Deze week voor het eerst in de sitemap, zonder `-a`/`-b`-suffix (anders dan de al bekende noindex,nofollow-varianten `/pages/gripsokken-2-0-a` en `-b` uit de audit van 27 okt). Beide nieuwe pagina's hebben hetzelfde H1 ("Performance Gripsokken 2.0 Wit"), dezelfde Product/Brand/Offer/ProductGroup-schema, geen `<meta name="description">` en geen `robots`-meta (dus standaard indexeerbaar) — een duplicate-content-risico tegenover elkaar en tegenover de echte productpagina's. De prijsweergave is correct (€19,95 als doorgestreepte "Normale prijs", €17,95 als echte "Prijs met korting" — besluit 29-10), dat is geen fout. Paid Social ging deze week van 0 naar 139 sessies, deels landend op deze pagina's (`?view=ab-b`, `?eaPreview=true&pb=0`) — vermoedelijk een actieve campagne.
+**Waar:** `/pages/gripsokken-2-0`, `/pages/gripsokken-2-1` — Shopify admin
+**Wat:** Bevestigen of dit tijdelijke campagnepagina's zijn (dan `noindex,nofollow` zoals de `-a`/`-b`-varianten) of permanent bedoeld (dan unieke meta description per pagina en nagaan of duplicate content t.o.v. elkaar gewenst is). Gerelateerd, niet gewijzigd: `2026-10-27-seo-audit-higrip-nl` (Besluit: doel van de `-a`/`-b`-testpagina's bevestigen).
+**Gevonden op:** 2 november 2026 (regressiecheck + SEO-conversietest, onafhankelijk bevestigd)
+
+### [ ] [regressie] `/pages/teamorder` mist een meta description (nieuw 2 nov 2026)
+**Waarom:** Nieuw in de sitemap deze week. Titel ("Teamorder – HÏ Grip") is aanwezig en correct, maar er is geen `<meta name="description">`.
+**Waar:** `/pages/teamorder` — Shopify admin
+**Wat:** Meta description toevoegen die aansluit op het doel van de pagina (teambestellingen).
+**Gevonden op:** 2 november 2026 (regressiecheck)
+
+### [ ] [merchant] Merchant Center koppelen aan de servicesleutel (nieuw 2 nov 2026)
+**Waarom:** Eerste run van module D (Backlinks & Merchant Center). `google_data.py merchant` geeft geen koppeling: er staat geen `merchant.account_id` in `02_Dashboard/_data/instellingen.json`, en de servicesleutel (`ga4-mcp@higrip-analytics.iam.gserviceaccount.com`) heeft geen toegang in Merchant Center. Zonder koppeling kan deze module nooit productstatussen, afkeuringen of feedfouten meten.
+**Waar:** Google Cloud-project `higrip-analytics` (Merchant API aanzetten) + Merchant Center → Instellingen → Mensen en toegang + `02_Dashboard/_data/instellingen.json`
+**Wat:** Merchant API aanzetten, de servicesleutel toevoegen als lezer in Merchant Center, en het Merchant Center-account-ID invullen in `instellingen.json`.
+**Gevonden op:** 2 november 2026 (Backlinks & Merchant Center)
 
 ### [ ] [conversietest] Productbeschrijvingen 1.0 en 2.0 missen padel/tennis/rugby en bevatten een storende `<code>`-tag (nieuw 19 okt 2026)
 **Waarom:** Geen van de drie productbeschrijvingen noemt alle kernsporten. De 1.0-beschrijving noemt "padel, voetbal, hockey, fitness en meer" (tennis en rugby ontbreken uit de opsomming); de 2.0-beschrijving (zwart én wit) noemt alleen "tennis, basketbal, fitness en pilates" — padel (de grootste beachhead) en rugby (sinds deze week een eigen sportpagina) ontbreken volledig. Daarnaast staat er, al sinds de nulmeting van 23 sep gesignaleerd maar nooit als apart punt vastgelegd, nog steeds een `<code>`-tag in de 2.0-beschrijving rond "Voetbalsokken met grip, ook perfect voor tennis, basketbal, fitness en pilates" — dat tag rendert doorgaans in een monospace-fallbackfont, in strijd met de harde merkregel "alleen Poppins" (CLAUDE.md §4).
@@ -213,6 +231,13 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `/pages/gripsokken-voor-voetbal` — paginabron, interne links, en of er onlangs iets veranderd is (de rugbypagina ging 16 okt live; mogelijk is de sportkiezer/navigatie gewijzigd)
 **Wat:** Nagaan of er een technische of content-wijziging op of rond deze pagina is geweest die de positie kan verklaren (gewijzigde interne links, ontbrekende sportkeuzetegel, title/H1-wijziging); zo niet, blijven volgen.
 **Gevonden op:** 21 oktober 2026 (Search Console & rankings)
+**Update 2 november 2026:** positie herstelde naar 11,6 (was 15,7), op vergelijkbaar volume (41 vertoningen/7 dagen). Eerste verbetering na drie weken van verval — nog geen duidelijke oorzaak gevonden, blijft open ter bevestiging volgende week.
+
+### [ ] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
+**Waarom:** Search Console-meting (routine "Search Console & rankings"): `/en` staat op positie 7,8 met 266 vertoningen (7 dagen) maar slechts 1,88% CTR — ruim onder wat op die positie en dat volume haalbaar is, en de laagste CTR van alle pagina's in de top-15 op klikken deze week.
+**Waar:** `/en` — titel en meta description via Shopify admin (Online Store → Voorkeuren, Engelse taalinstelling)
+**Wat:** SERP-titel en meta description voor de Engelse zoekintentie herschrijven; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft (overwegend "grip socks", positie 8,7 op 106 vertoningen).
+**Gevonden op:** 2 november 2026 (Search Console & rankings)
 
 ### [ ] 20. Shopify conversieratio-meetbreuk (21-23 sep 2026) meewegen vóór je volgende CRO-test (nieuw 1 okt 2026)
 **Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat "Reached checkout rate" en "Checkout conversion rate" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.

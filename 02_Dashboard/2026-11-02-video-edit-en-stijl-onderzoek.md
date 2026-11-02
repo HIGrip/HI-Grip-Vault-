@@ -83,6 +83,22 @@ Bron: eigen onderzoek van Lars in de Google Drive-map "AI TECH": 10 inspiratievi
 - **Adobe afgeraden voor de cinematic Performance-look:** niet omdat de software het niet kan, maar omdat het probleem bij het filmen zit.
 - Niet gecontroleerd: of de laptop (Ryzen 7 5700U, geen dGPU) Resolve soepel draait; niet getest.
 
+## Vergelijking: Palmier Pro vs Claude Code + Remotion
+Gerichte vergelijking van twee kandidaten voor een vibe-code-editroute (code/agent-gestuurd, stijl per pijler herbruikbaar, alles blijft aanpasbaar). Beide stonden al als kandidaat in deze notitie; dit vervangt het hoofdoordeel (Canva-MCP + CapCut) niet.
+
+| | Palmier Pro | Claude Code + Remotion |
+|---|---|---|
+| Kosten software | Gratis (editen zelf altijd gratis; betaald alleen voor AI-mediagenerate) | Gratis voor editen; Remotion kan een betaalde bedrijfslicentie vereisen bij bepaalde omzet/teamgrootte (nog niet gecontroleerd voor HÏ Grip) |
+| Hardware | Vereist Mac (macOS 26 Tahoe minimaal). HÏ Grip heeft er geen → eenmalige Mac mini-investering (circa €600-800) | Draait direct op de bestaande Windows-laptop, geen nieuwe hardware |
+| Bediening | Visuele timeline + GUI, Claude/Codex stuurt via MCP, ook handmatig te verfijnen | Volledig via code/tekst (geen losse GUI-timeline); Remotion Studio toont wel live preview met hot reload |
+| Aanpasbaarheid | Hoog (GUI + agent) | Zeer hoog — de edit is code, dus elk detail is aanpasbaar |
+| Stijlherhaling per pijler | Skills-systeem: één keer editen, opslaan als Skill, hergebruiken op volgende video's | Zelfde principe via herbruikbare Remotion-componenten/Skills (open-source gedocumenteerd, o.a. remotion-superpowers) |
+| Leercurve team | Laag (lijkt op een gewone editor) | Hoger (code-gevoel nodig, al voert Claude het grootste deel uit) |
+| Werkplek-fit | Extra apparaat + remote-desktopstap nodig vanaf de Windows-laptop | Past direct in de bestaande Hermes/Claude-werkwijze op de laptop |
+| Volwassenheid | Jong bedrijf (YC-backed), beperkt trackrecord | Groot, actief open-source ecosystem rond Remotion + Claude Code |
+
+> **Zonder Mac is Claude Code + Remotion nu de goedkopere en direct beschikbare route (geen hardware-aankoop, past in de bestaande laptop-werkwijze). Palmier wordt pas aantrekkelijker zodra er sowieso een Mac mini wordt aangeschaft — dan is de GUI eenvoudiger voor niet-technische teamleden. Open punt: Remotion's commerciële licentievoorwaarden voor een bedrijf van de omvang van HÏ Grip zijn nog niet gecontroleerd.**
+
 ## Wat niet lukte
 Geen video's live bekeken (grens: geen downloads); Canva-MCP niet hands-on getest met een HÏ Grip-template.
 

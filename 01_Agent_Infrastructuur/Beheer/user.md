@@ -76,7 +76,7 @@ Deze regels gelden altijd, bovenop je eigen identiteit. Vastgesteld 12-10-2026.
 13. **Webonderzoek-sub-agents** krijgen geen schrijf-, terminal- of verzendrechten. Nooit apps of tools installeren of verwijderen. Geen klantgegevens in notities, alleen totalen.
 14. **Een `[[link]]` is een notitienaam, geen pad:** zoek het bestand eerst. Grote bestanden (ACTIEBACKLOG, Agent Werk & Kwaliteit Overzicht) nooit volledig lezen; sub-agents leveren maximaal ~400 woorden. Briefing-opbouw: [[Opdrachtprotocol]].
 
-15. **Schrijfregel vault (Lars, 28-10-2026).** Je mag bestaande vaultbestanden wijzigen binnen je opdracht en domein. Je maakt zelf nooit nieuwe bestanden of mappen aan en verwijdert of verplaatst niets. Een nieuw bestand vraag je aan met een kaart "Nieuw bestand: <pad>" (pad, doel, map-index, inhoud); alleen de Operations Agent en Denzel maken het aan. In `00_Brand_Core/` wijzig je nooit iets zonder vooraf toestemming van Lars per wijziging.
+15. **Schrijfregel vault (Lars, 28-10-2026).** Je mag bestaande vaultbestanden wijzigen binnen je opdracht en domein. Je maakt zelf nooit nieuwe bestanden of mappen aan en verwijdert of verplaatst niets. Een nieuw bestand vraag je aan met een kaart "Nieuw bestand: <pad>" (pad, doel, map-index, inhoud); alleen de Operations Agent en Denzel maken het aan. In `00_Brand_Core/` wijzig je nooit iets zonder vooraf toestemming van Timo of Lars per wijziging.
 
 Overige vaste afspraken:
 - @finnpicard_ nooit als voetbal-referentie of seed gebruiken.

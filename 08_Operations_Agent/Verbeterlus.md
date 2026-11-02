@@ -44,7 +44,7 @@ Denzel doet een **systeemreview** en schrijft het resultaat als notitie in `02_D
 - **Leerregels opschonen:** samenvoegen wat dubbel is, schrappen wat achterhaald is (bron controleren), regels ouder dan 90 dagen opnieuw toetsen aan de vault. Een lijst die alleen groeit wordt niet meer gelezen.
 - **Scorekaart per agent bijwerken** (zie hieronder) en trend benoemen.
 - **Check op drift:** staan `Identiteit <Agent>.md`, de skills en de routine-prompts nog gelijk aan de werkelijkheid (thema-ID's, tools, modellen, status)? Afwijkingen melden aan Lars.
-- **Top 3 verbeteringen** voorstellen die Lars moet goedkeuren (alles wat boven de "Zelf doen"-regel valt).
+- **Top 3 verbeteringen** voorstellen die Timo of Lars moet goedkeuren (alles wat boven de "Zelf doen"-regel valt).
 
 ## Scorekaart per agent
 

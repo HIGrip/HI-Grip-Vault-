@@ -2,7 +2,7 @@
 type: kennis
 gebied: website-agent
 bijgewerkt: 2026-10-15
-status: voorstel (wacht op akkoord van Lars)
+status: voorstel (wacht op akkoord van Timo of Lars)
 ---
 
 # E-mail Review-verzoek Template — HÏ Grip

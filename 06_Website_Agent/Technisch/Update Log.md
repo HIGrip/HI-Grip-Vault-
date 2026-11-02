@@ -14,6 +14,10 @@ bijgewerkt: 2026-11-02
 
 ---
 
+## 2026-11-02 — Live `203461034311`: bundler-foto's scherp op mobiel
+
+Op opdracht van de gebruiker direct live gepusht (`--only snippets/hi-bundle.liquid`, na `theme list`). De `image_tag` gaf alleen een `srcset` van 70w, terwijl de weergave 64px is; op een 3x-scherm was dat te weinig. Nu `widths: '70,140,210'` en `sizes: '64px'`. In de live HTML gecontroleerd: zwart en wit hebben elk 3 varianten.
+
 ## 2026-11-02 — Werkthema `203461034311` live gezet + Engelse vertalingen
 
 Op opdracht van de gebruiker, na een check in de chat. Eerst `theme list` gedraaid: `202669916487` stond live. Daarna `shopify theme publish`; nu is `203461034311` live en `202669916487` unpublished (terugvaloptie).

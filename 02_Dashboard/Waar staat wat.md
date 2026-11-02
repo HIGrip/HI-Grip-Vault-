@@ -39,7 +39,7 @@ Zoek gericht; lees dit niet in zijn geheel.
 
 - Growth-radar: 11 notities
 - Onderzoek: 27 notities
-- Onderzoeksnotities (datum-id in de bestandsnaam): 31 notities
+- Onderzoeksnotities (datum-id in de bestandsnaam): 32 notities
 - Routines: 15 notities
 - SEO: 8 notities
 - Weekoverzichten: 2 notities

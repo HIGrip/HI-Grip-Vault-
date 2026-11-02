@@ -9,7 +9,7 @@ Bron van waarheid voor kennis. Open eerst de map-index die bij je taak past; lee
 
 Leidend voor merk en strategie: Canva *MERK & STRATEGIE — HÏ Grip* (30-9-2026): https://canva.link/a48n60z2ay1g7bp. Spreekt de vault dit tegen, dan wint Canva.
 
-## De 9 blokken
+## De 10 blokken
 
 - **00_Brand_Core** — merkfundament
   - [[Feiten & Actuele Staat]] · [[Brand Identity Overview]] · [[Brand Voice & Tone of Voice]] · [[Performance Grip Socks 2.0]]
@@ -22,6 +22,7 @@ Leidend voor merk en strategie: Canva *MERK & STRATEGIE — HÏ Grip* (30-9-2026
 - **06_Website_Agent** — higrip.nl: SEO, copy, techniek, conversie, e-mail → [[06 Website Agent — Index]]
 - **07_Design_Agent** — visuele uitwerking en stijl → [[07 Design Agent — Index]]
 - **08_Operations_Agent** — feedback, leerregels, kwaliteit, compliance → [[08 Operations Agent — Index]]
+- **09_Ads_Agent** — domeinkennis Ads (adviserend, read-only; rapporten staan in `02_Dashboard/`) → [[09 Ads Agent — Index]]
 
 Gedeeld: [[user]] (wie wij zijn, wie wat beslist, wie een taak oppakt) · `CLAUDE.md` · `SCHEMA.md` · `log.md`.
 

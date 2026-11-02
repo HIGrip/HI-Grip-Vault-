@@ -14,6 +14,9 @@ Terug naar [[Home]].
 
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
+### Ads Agent
+- [[Agents Ads Agent]]
+
 ### Beheer
 - [[API & Tool Connections]]
 - [[Agent Hiërarchie & Structuurschema]]

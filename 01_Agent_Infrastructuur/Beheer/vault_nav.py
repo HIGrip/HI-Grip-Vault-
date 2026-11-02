@@ -40,6 +40,7 @@ HUBS = {
     "06_Website_Agent": "06_Website_Agent/06 Website Agent \u2014 Index.md",
     "07_Design_Agent": "07_Design_Agent/07 Design Agent \u2014 Index.md",
     "08_Operations_Agent": "08_Operations_Agent/08 Operations Agent \u2014 Index.md",
+    "09_Ads_Agent": "09_Ads_Agent/09 Ads Agent \u2014 Index.md",
 }
 
 

@@ -49,6 +49,7 @@ beheer: Stafchef (03_Denzel)
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)
 - **Leerregels leg je vast, je bedenkt ze niet.** Denzel bepaalt de regel. (2026-10-12, Lars)
+- **Meld bij een QA-correctie de werkelijke omvang en bronstatus, niet de bedoeling.** Een notitie "ingekort tot onder 15 KB" die 16,4 KB is, of bronnummers die niemand naliep, krijgen de feitelijke waarde of het label "onbevestigd". Reden: Operations-QA t_7b07dde6 vond precies dit in de Ads-notitie. (2026-11-02, bron: kaart t_1c085f78; voorgelegd aan Denzel ter bevestiging)
 
 ### Vooruitblik-agent
 - *(nog geen regels)*

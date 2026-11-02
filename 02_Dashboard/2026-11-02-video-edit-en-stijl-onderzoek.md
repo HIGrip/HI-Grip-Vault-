@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Video-editprogramma en visuele stijlanalyse social video
 
+> Map: [[Waar staat wat]]
+
 > Samengevoegd uit twee Kanban-resultaten (beide kaarten staan al in het archief; de inhoud staat hier). Alleen onderzoek: niets gebouwd, geïnstalleerd, gedownload of gepubliceerd. Verwijzingen: [[Editing Stijl Gids Video]], [[Video-agent Nulmeting]], [[Logo & Kleurenpalet]].
 
 ## In het kort
@@ -34,6 +36,7 @@ deadline: ""
 - [ ] P3 · Match-cut op het actiemoment expliciet als derde toegestane uitzondering in de stijlgids benoemen, ter beoordeling door de Social Agent
 - [ ] P2 · Adobe-kwaliteitscheck (Adobe vs Canva/CapCut) doen nadat Lars zijn eigen voorbeelden uit Google Drive/AI TECH heeft toegevoegd
 - [ ] P3 · Hands-on test van Canva-MCP met een echte HÏ Grip-template (outro/lower-third, ondertiteling) door de Video & Visuele Productie Agent
+- [ ] P? · Camera/belichting-testdag plannen vóór DaVinci Resolve wordt overwogen
 
 ## Bevindingen
 ### 1. Toolkeuze en advies
@@ -69,6 +72,16 @@ Let op: analyse op basis van zoekresultaten, metadata en publieke beschrijvingen
 - **Tegenstrijdigheid (gemeld, niet opgelost):** de sectie "Software" van de Editing Stijl Gids Video noemt nu *ffmpeg-motor (EDL-gedreven)* en Canva als standaard, Premiere Pro alleen als optie op een andere machine. De toolkeuze (t_99460ed4) adviseert Canva-MCP als hoofdroute en CapCut als fallback, en bewaart ffmpeg alleen als toekomstoptie. CapCut staat niet in de gids. Het besluit hierover is aan Team HÏ Grip; de gids wordt pas daarna aangepast door de eigenaar van die gids.
 - **Kwaliteitsvraag Adobe vs Canva/CapCut is open:** Lars voegt nog eigen voorbeelden toe uit Google Drive/AI TECH. Pas daarmee kan de kwaliteit van Adobe, Canva en CapCut worden vergeleken, voor de pilaren Persoonlijk en Performance. Tot dan is het advies gebaseerd op kosten, hardware en workflow, niet op eindkwaliteit.
 - **Staande aannames:** prijzen zijn geen officiële NL-tarieven; ondertiteling via Canva-MCP niet getest; CapCut-teamgebruik niet getest; of CapCut-sjablonen de stijl 1-op-1 kunnen maken is niet gecontroleerd; geen muziekrechten-check; voorbeeldaccounts niet live bekeken.
+
+## Performance-pijler: realiteitscheck en DaVinci Resolve als toekomstoptie
+Bron: eigen onderzoek van Lars in de Google Drive-map "AI TECH": 10 inspiratievideo's, 2 pijlers die moeten combineren (storytelling Persoonlijk + Performance-tempo/beelden). Dit is input van Lars; niet door de Operations Agent zelf bekeken.
+
+- **Persoonlijke pijler** (voorbeeld: "Waarom alles met eiwit duurder wordt"): natuurlijk daglicht, handheld/smartphone-stijl, bold tekst-overlay. Dit is al de Canva/CapCut-stijl en goed haalbaar met de gekozen hoofdroute.
+- **Performance-pijler** (Nike/Rafael Nadal, adidas "Great Rivals Make Great Motivation"): professionele reclamebureau-productie met cinema-camera, gecontroleerde belichting en precisiekleurgrading (zwart/wit high-contrast resp. moody regen/kleur). Niet haalbaar met Canva/CapCut-templates, maar ook niet met Adobe alleen: het gat zit in de ruwe beeldkwaliteit en belichting bij het filmen, niet in de edit-app.
+- **Hoofdoordeel ongewijzigd:** Canva (Pro/Business) + Canva-MCP als hoofdroute, CapCut als fallback, voor regulier contentwerk.
+- **Nieuw, als apart punt (geen vervanging): DaVinci Resolve.** Gratis, sterkere kleurgrading dan Canva/CapCut, geen Adobe-abonnement of laptopprobleem. Een latere upgrade-route, alleen relevant zodra HÏ Grip's eigen footage (camera/belichting) dat niveau aankan.
+- **Adobe afgeraden voor de cinematic Performance-look:** niet omdat de software het niet kan, maar omdat het probleem bij het filmen zit.
+- Niet gecontroleerd: of de laptop (Ryzen 7 5700U, geen dGPU) Resolve soepel draait; niet getest.
 
 ## Wat niet lukte
 Geen video's live bekeken (grens: geen downloads); Canva-MCP niet hands-on getest met een HÏ Grip-template.

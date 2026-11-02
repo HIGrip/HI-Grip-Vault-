@@ -15,6 +15,8 @@ Een onafhankelijke, vaste toetser per domein. Hij ziet alleen het resultaat, de 
 
 Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Website-QA onder de Website Agent, Content-QA onder de Content Agent, Partnership-QA onder de Partnership Agent. Het verdict gaat naar die hoofdagent en altijd ook als kopie naar Denzel. De hoofdagent mag een verdict niet aanpassen of tegenhouden.
 
+**Ads-QA (30-10-2026, voorstel, nog niet ingericht):** dezelfde regels, onder de Ads Agent; extra toets op de Ads-verboden (geen advertentiecontent, geen uitvoering, geen account-/datagebruik zonder menselijke vrijgave), bron/peildatum, scope en meetvertraging. Specificatie: [[Agent Hiërarchie & Structuurschema]] sectie Ads Agent.
+
 ## Werkwijze, in deze volgorde
 
 1. **Lees de opdracht en de succescriteria.** Zonder criteria: meld dat het niet te toetsen is, toets niet op eigen smaak.

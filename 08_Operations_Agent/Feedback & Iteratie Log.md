@@ -10,6 +10,13 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-02 — Ads-agent inrichting: QA CORRIGEER (licht), plugin ESCALEER; overdracht
+
+**Wat er gebeurde:** Operations-QA (t_7b07dde6) keurde de vault-inrichting van Ads CORRIGEER (licht), de pluginuitbreiding ESCALEER. Gecorrigeerd: r.138 in `02_Dashboard/2026-10-30-ads-agent-onderzoek.md` noemt nu 16,4 KB; M2 (60/9000) staat expliciet als onbevestigd.
+**Open (overdracht, niet uitgevoerd):** (1) Meta-QA-herkeuring (ronde 2 van 2) door een onafhankelijke QA via Denzel; (2) pad-allowlist voor schrijfrechten Ads bewijzen, anders geen schrijfrecht (Operations plaatst rapporten); (3) toolsetnamen en profielplugin-structuur verifiëren in de Hermes-docs; (4) plugin pas na aparte Operations-kaart (subset, securitycheck, koude testsessie). Plugin en profiel `ads` blijven disabled/niet aangemaakt; Ads niet geactiveerd.
+
+---
+
 ## 2026-10-26 — Partnership-zoekdrempel drie weken op rij verkeerd toegepast; B2B Klanten Agent heeft geen eigen identiteitsbestand
 
 **Wat er gebeurde:** de weekoverzichten van 05-10, 12-10 en 19-10 concludeerden telkens "lijst X dagen oud, geen zoekactie nodig", maar die telling ging over de `bijgewerkt`-datum in het frontmatter (die meestuurt bij elke beoordelingsronde), niet over de datum van de laatste écht nieuwe kandidaat. De laatste nieuwe kandidaat vóór vandaag was Rotterdam Cup op 21-09 (en die is op 05-10 weer geschrapt). Daardoor stonden beide kandidatenlijsten 5+ weken zonder een nieuwe zoekactie, ver boven de 1-2 weken-drempel uit de routine zelf, zonder dat dit ooit werd gesignaleerd. Toen vandaag (26-10) alsnog gezocht werd, leverde dat meteen 5 nieuwe kandidaten op, waaronder de eerste rugbyclub-kandidaten sinds rugby op 30-09 kernsport werd — een duidelijk gemiste periode.

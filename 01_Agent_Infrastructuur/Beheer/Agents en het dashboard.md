@@ -40,7 +40,7 @@ bijgewerkt: 2026-10-12
 | Webshop › Analyse | Conversie & Analyse Agent |
 | Webshop › Site & SEO | SEO Agent en de routine SEO-regressiecheck |
 | Mail › campagnes (SendWILL) | E-mail Marketing Agent (concepten) |
-| Ads › Campagnes en Concurrenten | Ads-tak, nog uit te werken |
+| Ads › Campagnes en Concurrenten | Ads Agent (uitsluitend adviserend/read-only, geen creator of uitvoering); dashboardtak nog uit te werken |
 | Voorraad, inkoop, financiën, teamorders | Geen agent: rekenregels en mensen |
 
 ## Wat nog niet aansluit
@@ -54,7 +54,7 @@ bijgewerkt: 2026-10-12
 7. **Wie keurt een post goed voor Buffer?** Staat in het handboek als open vraag. In onze structuur: Content-QA toetst eerst, Team HÏ Grip kiest en plant.
 8. **Socials-cijfers.** Het handboek laat "de Content-agent" na 48 uur bereik en klikken ophalen. Bij ons is dat de Socials Analyzer. Instagram- en TikTok-statistieken zijn nog niet gekoppeld; Buffer geeft een deel.
 9. **Meer rechten voor de B2B Klanten Agent, later.** Over twee à drie maanden krijgt hij in het dashboard meer rechten, zoals records bijwerken. Daarvoor is een tool nodig die dat per fase toestaat en logt. Tot Lars of Timo het vrijgeeft: alleen lezen en nieuwe prospects. Zie [[Agents Partnership Agent]].
-10. **Ads-limiet.** Het handboek noemt later automatisch bijsturen binnen een limiet (± 20% budget, max € 10 per dag). Die limiet hoort in de identiteit van de Ads-tak zodra die er is; tot dan altijd overleg vooraf.
+10. **Ads-limiet.** Het handboek noemt later automatisch bijsturen binnen een limiet (± 20% budget, max € 10 per dag). Die limiet hoort in de identiteit van de Ads Agent zodra die er is; tot dan altijd overleg vooraf. Let op: de Ads Agent past nooit zelf budget aan (besluit Lars 30-10-2026); automatisch bijsturen geldt dus niet voor Ads en blijft een open punt voor Team HÏ Grip.
 11. **Sterren geven in het dashboard.** Team HÏ Grip wil bij elke echte oplevering (sectie, post, mail, lijst) snel 1 tot 5 sterren geven, met optioneel één zin waarom. Nodig: een sterrenknop op een post, taak of voorstel in *Wacht op akkoord* en bij het afronden, opgeslagen per agent, zodat de Stafchef het gemiddelde kan bijhouden. Zie [[Sterrenbeoordeling]].
 
 ## Gerelateerde bestanden

@@ -51,7 +51,7 @@ Overzicht van alle grote sportwinkelketens met fysieke winkels in Nederland, per
 | INTERSPORT | 35+ (Folderz: 82) | Via EK Retail, franchise van zelfstandigen | Breed, voetbal, padel, 3D-voetscan | Middel |
 | Run2Day | 16 | Hardloopspecialist | Loopanalyse, schoenen, sokken | Middel |
 | Runnersworld | 11 | Hardloopspecialist | Hardlopen, triathlon | Middel |
-| Jumbo Hockey | ca. 8 | Jumbo Golf (ex-Hockey Republic) | Hockey | Middel |
+| Jumbo Hockey | ca. 8 | Jumbo Sports (divisie Jumbo, Veghel), eigen filialen, centrale inkoop | Hockey | Middel |
 | Bever | 43 | Bever Zwerfsport | Outdoor, wintersport | Laag (nu) |
 | Decathlon | 24 | Decathlon SE | Huismerken, megastores | Laag |
 | Sports World | 28 | Frasers Group, incl. 14 ex-Twin Sport | Discount | Laag |
@@ -66,6 +66,8 @@ Perry Sport, Aktiesport en Sprinter (Sports Unlimited Retail, JD Sports) gingen 
 
 ### Fit-redenering
 Fit is gebaseerd op sport-overlap (voetbal, padel, tennis, hockey, rugby), of de winkel zelf over merken beslist en of er naast huismerken ruimte is voor een premium merk. Zelfstandige ondernemers (SPORT 2000) zijn de snelste ingang; Intersport loopt deels via centrale inkoop bij EK Retail.
+
+Jumbo Hockey koopt vrijwel zeker centraal in. Het is één formule (Jumbo Sports: golf, hockey en wintersport, 12 winkels in NL en BE) met vaste lage prijzen, en de winkels zijn eigen filialen met een filiaalmanager, geen franchise. Geen bron noemt de inkoop letterlijk en een inkoopvacature werd niet gevonden; dit is afgeleid uit het formulemodel. Ingang is dus het hoofdkantoor van Jumbo Sports, niet een losse winkel.
 
 ## Wat niet lukte
 De winkelzoeker van intersport.nl laadt alleen na het accepteren van marketingcookies; daardoor geen volledige Intersport-lijst (eigen opgave 35+, Folderz 82 in 71 plaatsen). Foot Locker en Snipes hebben geen uitleesbare Nederlandse winkellijst; Jumbo Hockey-site gaf een SSL-fout, aantal uit persberichten. Zelfstandige sportzaken buiten een formule zijn niet geteld.

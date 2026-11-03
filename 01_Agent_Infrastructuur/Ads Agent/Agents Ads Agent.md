@@ -1,7 +1,7 @@
 ---
 type: agent
 bijgewerkt: 2026-11-02
-status: concept (niet geactiveerd; runtime, Hermes-profiel en groepschat nog niet ingericht)
+status: concept (Hermes-profiel `ads` aangemaakt 02-11-2026 maar niet geactiveerd; geen plugin, geen groepschat)
 ---
 
 # Agents Ads Agent
@@ -52,4 +52,4 @@ Overleg met andere hoofdagents loopt via Denzel en via bestanden. Of Ads in de g
 
 ## 5. Open
 
-Hermes-profiel, skills, runtime en groepschat zijn niet ingericht; er is geen activering. Dat vraagt een apart besluit en aparte kaart.
+Hermes-profiel `ads` is aangemaakt op 02-11-2026 (kloon van `operations`, daarna opgeschoond): identiteit in `SOUL.md` uit deze definitie, geheugen leeg, alleen skill `higrip-vault`, tools beperkt tot lezen/zoeken, plannen, geheugen, skills en vragen stellen (web, browser, terminal, code, beeld, geluid, delegeren, cron en computerbesturing staan uit; geen MCP, geen API-sleutels). Het profiel is NIET geactiveerd: geen groepschat (open besluit Team HÏ Grip, 6 of 7 deelnemers), geen messaging, geen kanbantoewijzing. Plugin ontbreekt en blijft uit tot een handmatig samengestelde subset na statische securitycheck door onafhankelijke QA is goedgekeurd. Open risico: de bestandstool kan niet per pad beperkt worden; schrijven in `02_Dashboard/` is dus technisch niet af te dwingen, daarom plaatst Operations de rapporten.

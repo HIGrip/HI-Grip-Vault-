@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "De homepage scoort 5 op 10 (PSI: mobiel LCP 5,3 s, desktop TBT 2.750 ms), en de grootste oorzaak is dat de gedeelde homepage-laag met fonts, hp-home.css en hp-home.js 12 keer in de pagina staat: één keer laden haalde in een lokaal experiment 93% van de blokkeertijd op desktop weg. Daarnaast laden carrouselkopieën, video-posters en dubbele beeldbreedtes ruim 1 MB aan beelden die bij binnenkomst niet in beeld staan, en dat is met kleine codewijzigingen te verhelpen."
-gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-13-homepage-redesign, 2026-10-27-seo-audit-higrip-nl, 2026-11-03-snelheid-nulmeting-alle-paginas]
+gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-13-homepage-redesign, 2026-10-27-seo-audit-higrip-nl, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-11-03-snelheid-werkthema-02]
 vervangt: []
 bronbestand: ""
 deadline: ""

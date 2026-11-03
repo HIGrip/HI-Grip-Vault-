@@ -25,7 +25,7 @@ Hoofdagents (01_Agent_Infrastructuur, één Agents-bestand per hoofdagent)
    ├── Website Agent      → SEO · Website Copy · Conversie & Analyse · E-mail Marketing · Website-QA
    ├── Design Agent       → visuele uitwerking voor Social en Website (QA nog voorstel)
    ├── Operations Agent   → Stafchef · Vooruitblik-agent
-   └── Ads Agent          → Ads-analyse · Ads-QA (uitsluitend advies/read-only; geen Ads-creator)
+   └── Ads Agent          → Ads-analyse · Ads-QA (adviserend; voert nooit zelf uit, hooguit klaarzetten na akkoord, zie Agents Ads Agent; geen Ads-creator)
 ```
 
 Met het Ads-besluit van Lars (30-10-2026, `t_f53d0c76`) bevat de structuur Denzel plus zes hoofdagents. Sub-agents werken binnen hun hoofdagent. De onderstaande historische groepschatlimiet van zes deelnemers botst hiermee: technische aansluiting van Ads is niet ingericht en vraagt een besluit, niet stilzwijgend een ruimere limiet.

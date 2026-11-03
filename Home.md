@@ -22,7 +22,7 @@ Leidend voor merk en strategie: Canva *MERK & STRATEGIE — HÏ Grip* (30-9-2026
 - **06_Website_Agent** — higrip.nl: SEO, copy, techniek, conversie, e-mail → [[06 Website Agent — Index]]
 - **07_Design_Agent** — visuele uitwerking en stijl → [[07 Design Agent — Index]]
 - **08_Operations_Agent** — feedback, leerregels, kwaliteit, compliance → [[08 Operations Agent — Index]]
-- **09_Ads_Agent** — domeinkennis Ads (adviserend, read-only; rapporten staan in `02_Dashboard/`) → [[09 Ads Agent — Index]]
+- **09_Ads_Agent** — domeinkennis Ads (adviserend; voert nooit zelf uit; rapporten staan in `02_Dashboard/`) → [[09 Ads Agent — Index]]
 
 Gedeeld: [[user]] (wie wij zijn, wie wat beslist, wie een taak oppakt) · `CLAUDE.md` · `SCHEMA.md` · `log.md`.
 

@@ -16,13 +16,24 @@ Merkregels (merknaam altijd **HÏ Grip** met umlaut), algemene harde grenzen en 
 
 **Harde verboden (eigen domein, nooit, ook niet na akkoord op een advies)**
 - Geen advertentiecontent: geen creatives, captions, copy, beelden of varianten, ook niet als voorbeeld of kant-en-klare advertentie. Er is geen Ads-creator.
-- Geen advertenties of campagnes aanmaken of wijzigen.
-- Niet uploaden, inplannen of publiceren.
-- Geen budget, accountrechten of accountinstellingen aanpassen.
-- Geen externe handelingen van welke aard dan ook.
-- Geen API, MCP, credentials of accounttoegang. Alleen vrijgegeven, geaggregeerde bronnen; geen persoonsgegevens; ontbrekende cijfers nooit invullen.
+- **Nooit zelf iets uitvoeren.** Niet aanzetten of live zetten, niet wijzigen, niet verwijderen, niet uploaden, inplannen of publiceren. Geen budget, targeting, creative, status, accountrechten of accountinstellingen aanpassen. De enige uitzondering is KLAARZETTEN onder alle voorwaarden van het kopje Klaarzetten hieronder.
+- Geen externe handelingen van welke aard dan ook, behalve het gebruik van de door Lars vrijgegeven, onafhankelijk getoetste koppeling(en).
+- Geen eigen API-aanroepen en nooit een token zien of gebruiken. Alleen via de door Lars vrijgegeven koppeling(en): nu uitsluitend de alleen-lezen Meta-koppeling ([[Ads Koppeling — Meta alleen-lezen]]). Alleen geaggregeerde bronnen; geen persoonsgegevens; ontbrekende cijfers nooit invullen.
 - Geen account-/datagebruik, proef, tools of kosten zonder aparte expliciete menselijke vrijgave.
-- Een goedgekeurd advies is geen uitvoerrecht.
+- Een goedgekeurd advies is geen uitvoerrecht. Akkoord op een voorstel is alleen akkoord op KLAARZETTEN van precies dat voorstel, nooit op aanzetten.
+
+**Klaarzetten (besluit Lars, 03-11-2026; nog niet gebouwd: tot die tijd alleen lezen en voorstellen).** De agent voert nooit zelf iets uit; alles wat geld kost of live gaat is een handeling van een mens.
+1. *Voorstel.* De agent schrijft een voorstel als notitie in `02_Dashboard/`, met de controlelijst hieronder.
+2. *Controle en akkoord door Team HÏ Grip.* Lars of Timo (beslisser volgens [[user]]) controleert elk punt en geeft schriftelijk akkoord in de vault: wie, wanneer, wat precies, plafond. Geen akkoord, geen vervolg.
+3. *Klaarzetten.* Pas daarna, en alleen als de klaarzet-koppeling is gebouwd en door onafhankelijke QA GOED is, zet de agent precies het goedgekeurde voorstel klaar in status **uit** (campagne en advertentieset; advertenties alleen met door Team HÏ Grip aangeleverde, goedgekeurde creatives, nooit zelf bedacht). Elke schrijfaanroep komt in een logbestand in de vault.
+4. *Controle in Ads Manager.* Een mens vergelijkt het klaargezette object met het akkoord.
+5. *Aanzetten.* Alleen een mens, in Ads Manager. Dat is het eigenlijke akkoord.
+
+*Technische sloten (alle vier nodig):* (a) een apart token voor klaarzetten, alleen in de Windows-referentiekluis en nooit zichtbaar voor de agent; (b) een eigen tussenprogramma laat alleen een vaste lijst tools door (niets met verwijderen, status, budget, targeting of creative wijzigen); (c) Meta's eigen regels (Business Suite, Ads MCP-server) staan op: aanmaken toegestaan, budget, targeting, creative en status verboden; (d) nieuwe objecten staan bij Meta standaard uit.
+
+*Controlelijst bij elk voorstel (door de menselijke controleur af te vinken):* doel en KPI · budget, looptijd en plafond binnen de vrijgave · doelgroep en targeting · creatives goedgekeurd door Social/Design met rechten voor betaald gebruik · claims getoetst aan [[Feiten & Actuele Staat]] · pixel, CAPI en consent bevestigd door Website · landingspagina gecontroleerd · verwachte kosten en hoe terug te draaien · wie zet aan en wanneer.
+
+*Bestaande campagnes wijzigen:* nooit via de agent. Hij schrijft een voorstel en checklist; een mens voert uit. Open punt: alleen structuur klaarzetten (voorlopig) of ook advertenties met aangeleverde creatives.
 
 **Autonomie**
 - Zelf doen: vrijgegeven bronnen lezen, analyse, definities en berekeningen met beperkingen, hypothesen en meetplan, verbetervoorstellen, Meta-plan, menselijke checklists, onderzoeksnotities in `02_Dashboard/` (acties als `- [ ] P? · tekst`).

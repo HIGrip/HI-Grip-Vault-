@@ -22,6 +22,7 @@ Een klein Python-programma zonder externe afhankelijkheden: `C:\Users\lars\AppDa
 - **Vast advertentieaccount** (`META_AD_ACCOUNT_ID` in de configuratie van de koppeling); de agent kan geen ander account kiezen.
 - **Token in de Windows-referentiekluis** (doel `HIGRIP_META_ADS_TOKEN`), niet in een bestand, config, `.env` of omgevingsvariabele. Reden: Hermes geeft omgevingsvariabelen bewust niet door aan MCP-programma's, en een token in `config.yaml` kan de agent zelf lezen (en de agent kan in de vault schrijven). Het token staat in de header, nooit in een URL, log of antwoord.
 - **Begrensd:** maximaal 100 rijen, 150 KB per antwoord, geen automatische herhaalpogingen, whitelist voor velden en uitsplitsingen, cursor en id's gecontroleerd.
+- **Weigert te werken met een te ruim token (fail closed, 03-11-2026).** Vóór de eerste gegevensaanroep controleert de koppeling bij Meta welke rechten het token heeft. Alleen `ads_read` (plus `public_profile`, `read_insights`) is toegestaan. Heeft het token ook `ads_management`, `business_management`, `catalog_management`, `pages_manage_ads` of iets anders, dan weigert de koppeling, noemt de reden en haalt niets op. Zo hangt de veiligheid niet af van wie het token maakt.
 - **Bewust niet ondersteund:** de parameters `action_report_time` en `use_unified_attribution_setting` (documentatieconflict in Meta, zie [[2026-10-30-ads-agent-onderzoek]] §4).
 - Aanroeplog (zonder token) in `meta_ads_readonly_mcp.log` naast het programma.
 
@@ -33,6 +34,12 @@ Een klein Python-programma zonder externe afhankelijkheden: `C:\Users\lars\AppDa
 5. Advertentieaccount-ID (`act_...`) doorgeven aan Denzel. Dat is geen geheim.
 
 Daarna registreert Denzel de koppeling in het profiel `ads` (`hermes mcp add`), test hij met één dag aan gegevens en toetst de QA het resultaat.
+
+## Fase B: klaarzetten na akkoord (besluit Lars 03-11-2026, nog niet gebouwd)
+De agent voert nooit zelf iets uit; hooguit zet hij iets klaar in status **uit**, na een voorstel, controle en schriftelijk akkoord van Team HÏ Grip. Aanzetten doet altijd een mens in Ads Manager. Volledige procedure, vier technische sloten en controlelijst: [[Agents Ads Agent]] (kopje Klaarzetten).
+- **Twee tokens, twee systeemgebruikers.** Het lezen blijft op een token met uitsluitend `ads_read` (`HIGRIP_META_ADS_TOKEN`, deze koppeling). Voor klaarzetten komt later een apart, breed token in een eigen kluisitem, achter een eigen tussenprogramma met een vaste toolslijst. Nooit in één koppeling.
+- **Meta's regels** (Business Suite → Ads MCP-server → HÏ Grip ADS): nu staan alle schakelaars op "Allowed". Lars zet ze uit tot de klaarzet-koppeling klaar en getoetst is; daarna alleen "aanmaken" aan; budget, targeting, creative en status blijven uit.
+- **Nog te beslissen:** alleen structuur (campagne en advertentieset) of ook advertenties met door Team HÏ Grip aangeleverde creatives. Voorlopig alleen structuur.
 
 ## Vrijgave proef (fase 1, nog te bevestigen door Lars)
 Eigenaar: Lars (te bevestigen) · looptijd: 4 weken, daarna evalueren (te bevestigen) · kostenplafond: €0, geen advertentie-uitgaven (te bevestigen) · beoordelingscriteria: zie onderzoeksnotitie §7 fase 1.

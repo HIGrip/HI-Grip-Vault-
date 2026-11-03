@@ -5,7 +5,7 @@ bijgewerkt: 2026-11-02
 
 # 09 Ads Agent — Index
 
-Domeinkennis voor de Ads Agent (adviserend, read-only). Hoe de agent werkt: [[Agents Ads Agent]]. Deze map is bewust minimaal en bevat alleen vaste kennis die Team HÏ Grip heeft goedgekeurd. Alle Ads-onderzoeks- en verbeteringsrapporten blijven in `02_Dashboard/` (start: [[2026-10-30-ads-agent-onderzoek]]); ze worden hier niet gekopieerd. Geen advertentiecontent, geen accountgegevens, geen tekst van derden (enige uitzondering: de MIT-subset hieronder, Lars 03-11-2026).
+Domeinkennis voor de Ads Agent (adviserend; voert nooit zelf uit). Hoe de agent werkt: [[Agents Ads Agent]]. Deze map is bewust minimaal en bevat alleen vaste kennis die Team HÏ Grip heeft goedgekeurd. Alle Ads-onderzoeks- en verbeteringsrapporten blijven in `02_Dashboard/` (start: [[2026-10-30-ads-agent-onderzoek]]); ze worden hier niet gekopieerd. Geen advertentiecontent, geen accountgegevens, geen tekst van derden (enige uitzondering: de MIT-subset hieronder, Lars 03-11-2026).
 
 ## Profiel en kennis (03-11-2026, naslagkopie van het Hermes-profiel `ads`)
 

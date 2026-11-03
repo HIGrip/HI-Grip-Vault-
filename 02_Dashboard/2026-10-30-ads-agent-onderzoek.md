@@ -24,10 +24,12 @@ Besluit van Lars (30-10-2026, herbevestigd 01-11-2026). Dit staat boven al het a
 | Ads-agent DOET | Ads-agent DOET NIET |
 |---|---|
 | Analyses van aangeleverde totalen | Content, creatives, captions, copy, beelden, varianten of kant-en-klare advertenties maken |
-| Verbeter- en optimalisatievoorstellen | Campagnes of advertenties aanmaken of wijzigen |
+| Verbeter- en optimalisatievoorstellen | Zelf campagnes of advertenties aanmaken, wijzigen, verwijderen of aanzetten (enige uitzondering: KLAARZETTEN, zie onder) |
 | Meta Ads-plannen en testplannen | Iets uploaden, inplannen of publiceren |
-| Implementatie-instructies en checklists voor Team HÏ Grip | Budgetten, accountrechten of instellingen wijzigen |
+| Implementatie-instructies en checklists voor Team HÏ Grip | Budgetten, targeting, creatives, status, accountrechten of instellingen wijzigen |
 | Risico's en bronconflicten signaleren | Externe handelingen uitvoeren (mens voert altijd zelf uit) |
+
+**Nooit zelf uitvoeren, alleen klaarzetten na akkoord (besluit Lars, 03-11-2026).** De Ads-agent voert niets zelf uit. Het enige wat hij ooit mag is iets KLAARZETTEN in status **uit** (een campagne of advertentieset, geen live advertentie), en alleen onder al deze voorwaarden: (1) de klaarzet-koppeling is gebouwd en onafhankelijk getoetst (nu nog niet); (2) hij heeft eerst een voorstel met controlelijst geschreven; (3) Team HÏ Grip heeft dat voorstel gecontroleerd en schriftelijk goedgekeurd (wie, wanneer, wat, vastgelegd in de vault); (4) Meta's eigen regels blokkeren aanzetten, wijzigen, budget en verwijderen. **Aanzetten, wijzigen, verwijderen en budget doet altijd een mens in Ads Manager.** Tot de koppeling klaar is en getoetst: alleen lezen en voorstellen. Details: [[Agents Ads Agent]] §Klaarzetten.
 
 Er komt geen Ads-creator (geen rol, geen subagent). Account, data, proefscope, tools en kosten vereisen elk een voorafgaande, afzonderlijke, expliciete menselijke vrijgave. Deze notitie verleent geen toegang of bevoegdheid.
 

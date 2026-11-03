@@ -40,7 +40,7 @@ bijgewerkt: 2026-10-12
 | Webshop › Analyse | Conversie & Analyse Agent |
 | Webshop › Site & SEO | SEO Agent en de routine SEO-regressiecheck |
 | Mail › campagnes (SendWILL) | E-mail Marketing Agent (concepten) |
-| Ads › Campagnes en Concurrenten | Ads Agent (uitsluitend adviserend/read-only, geen creator of uitvoering); dashboardtak nog uit te werken |
+| Ads › Campagnes en Concurrenten | Ads Agent (adviserend; voert nooit zelf uit, hooguit klaarzetten na akkoord van Team HÏ Grip; geen creator); dashboardtak nog uit te werken |
 | Voorraad, inkoop, financiën, teamorders | Geen agent: rekenregels en mensen |
 
 ## Wat nog niet aansluit

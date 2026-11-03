@@ -40,7 +40,7 @@ Voor 90+ is de pagina zelf niet meer het grootste probleem. Het zijn de app-widg
 - [ ] P2 · EcomSend-popup pas na interactie of na 10 s laden, of vervangen door Shopify Forms
 - [ ] P2 · FD Product Groups, Bundler en Essential A/B Testing ook in de Shopify-admin verwijderen
 - [ ] P2 · GA4 koppelen op alle thema-versies zodat landingspagina-cijfers kloppen
-- [ ] P2 · DOM van de productpagina verkleinen (nu ~2.200 elementen): vooraf geladen zoekresultaten, menu- en drawer-inhoud pas bij openen laden
+- [x] P2 · DOM van de productpagina verkleinen (nu ~2.200 elementen): vooraf geladen zoekresultaten, menu- en drawer-inhoud pas bij openen laden
 - [ ] P2 · Besluit: account-icoon met Shop-login in de header vervangen door een gewone link naar /account
 - [x] P3 · Kleurswatches op productkaarten in collecties terugbouwen (vielen weg met FD Product Groups)
 

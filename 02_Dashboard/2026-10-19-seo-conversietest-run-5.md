@@ -32,7 +32,7 @@ Vijfde run van de wekelijkse SEO- en conversietest (modus CONCEPT: niets live ge
 ## Acties
 
 - [ ] P2 · Productbeschrijvingen 1.0 en 2.0 aanvullen met padel/tennis/rugby, en de `<code>`-tag uit de 2.0-beschrijving halen (nieuw concepttekst in het logboek)
-- [ ] P1 · (bestaand, bijgewerkt) Backlogpunt 4 — productType en GTIN: concrete invulling klaar (6 EAN's voor de 2.0-varianten, productType-voorstel "Sportsokken"), 1.0 blijft [CHECK] zonder bronbestand
+- [x] P1 · (bestaand, bijgewerkt) Backlogpunt 4 — productType en GTIN: concrete invulling klaar (6 EAN's voor de 2.0-varianten, productType-voorstel "Sportsokken"), 1.0 blijft [CHECK] zonder bronbestand
 
 ## Bevindingen
 

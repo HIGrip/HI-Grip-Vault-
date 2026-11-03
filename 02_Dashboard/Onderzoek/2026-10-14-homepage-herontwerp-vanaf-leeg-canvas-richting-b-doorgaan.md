@@ -34,7 +34,7 @@ Lars koos uit twee richtingen **B "Doorgaan"** (donker, sport-identiteit, vier w
 - [ ] P1 · Besluit: prototype richting B (artifact BMpbfMzvEP5NnjS3TVuVLy) als basis voor de homepage-bouw
 - [ ] P1 · Besluit: hero-kop A "JIJ GAAT DOOR. JE VOET OOK." of B "JE VOET GEEFT EERST OP." en hoofd-CTA "SHOP GRIPSOKKEN" of "PAK GRIP"
 - [ ] P1 · App-embeds Section Store block-cart.js (89,9 KB) en fd-product-groups (69 KB) beperken tot product- en cartpagina's in het werkthema, na controle of de aigenblock-secties ervan afhangen
-- [ ] P1 · Voorraad Performance Gripsokken 2.0 live controleren voordat BESTEL in het keuzeblok naar 2.0 wijst
+- [x] P1 · Voorraad Performance Gripsokken 2.0 live controleren voordat BESTEL in het keuzeblok naar 2.0 wijst
 - [ ] P2 · Besluit: Poppins 900 italic aan het thema toevoegen voor de H1, of de H1 op 800 italic houden
 - [ ] P2 · Poppins 800 italic preloaden in snippets/fonts.liquid (alle koppen gebruiken hem, nu zichtbare font-swap)
 - [ ] P2 · Rugbyfotoshoot plannen: er is geen enkel eigen rugbybeeld, het prototype toont rugby alleen als typografie

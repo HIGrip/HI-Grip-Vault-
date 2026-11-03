@@ -36,7 +36,7 @@ deadline: ""
 - [ ] P3 · Match-cut op het actiemoment expliciet als derde toegestane uitzondering in de stijlgids benoemen, ter beoordeling door de Social Agent
 - [ ] P2 · Adobe-kwaliteitscheck (Adobe vs Canva/CapCut) doen nadat Lars zijn eigen voorbeelden uit Google Drive/AI TECH heeft toegevoegd
 - [ ] P3 · Hands-on test van Canva-MCP met een echte HÏ Grip-template (outro/lower-third, ondertiteling) door de Video & Visuele Productie Agent
-- [ ] P? · Camera/belichting-testdag plannen vóór DaVinci Resolve wordt overwogen
+- [ ] P3 · Camera/belichting-testdag plannen vóór DaVinci Resolve wordt overwogen
 
 ## Bevindingen
 ### 1. Toolkeuze en advies

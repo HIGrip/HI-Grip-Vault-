@@ -2417,6 +2417,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "besluit nemen en de timing zelf instellen in EcomSend"
  },
+ "2026-10-30-e-mailpopup-wat-converteert-het-best#fd406136": {
+  "beoordeeld": "2026-11-03",
+  "claude": "deels",
+  "wat_claude_doet": "conceptontwerp van de twee-staps-popup voorbereiden in het testthema",
+  "wat_jij_doet": "het besluit nemen en live zetten"
+ },
  "2026-10-30-snelheid-code-audit-homepage#0b3a63de": {
   "beoordeeld": "2026-11-01",
   "claude": "nee",
@@ -2573,11 +2579,95 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Zelf contact opnemen met het Nederlandse EEN-contactpunt (RVO/KvK)."
  },
+ "2026-11-02-video-edit-en-stijl-onderzoek#3b95512c": {
+  "beoordeeld": "2026-11-03",
+  "claude": "deels",
+  "wat_claude_doet": "de kwaliteitsvergelijking Adobe versus Canva CapCut uitvoeren zodra de voorbeelden er zijn",
+  "wat_jij_doet": "eigen voorbeelden uit Google Drive AI TECH aanleveren"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#4e2828ff": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "akkoord geven op Canva-MCP als hoofdroute en CapCut als fallback"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#6a02a014": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de camera en belichting-testdag plannen en organiseren"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#c5a8d492": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "de hands-on Canva-MCP-test uitvoeren met een HI Grip-template",
+  "wat_jij_doet": "het resultaat beoordelen"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#d279fc2c": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "de sectie Software in de Editing Stijl Gids Video bijwerken",
+  "wat_jij_doet": "controleren"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#d3c61b24": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen of ffmpeg of Canva plus CapCut de standaard wordt"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "de hook-eerst-regel toevoegen aan de stijlgids",
+  "wat_jij_doet": "laten beoordelen door de Social Agent en controleren"
+ },
+ "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "de match-cut-uitzondering toevoegen aan de stijlgids",
+  "wat_jij_doet": "laten beoordelen door de Social Agent en controleren"
+ },
+ "2026-11-02-weekoverzicht#35f8f774": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen en zelf live zetten of opdracht geven om live te zetten"
+ },
+ "2026-11-02-weekoverzicht#3f755276": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de 5 content-ideeen beoordelen"
+ },
+ "2026-11-02-weekoverzicht#8034243f": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "status-veld en correcte bijgewerkt-datum toevoegen aan de betreffende notities",
+  "wat_jij_doet": "controleren"
+ },
+ "2026-11-02-weekoverzicht#9ee19f25": {
+  "beoordeeld": "2026-11-03",
+  "claude": "deels",
+  "wat_claude_doet": "conceptplan, capaciteit/tarief-inschatting en voorraadcheck voorbereiden in de vault",
+  "wat_jij_doet": "het besluit nemen en eventueel afspraken maken"
+ },
+ "2026-11-02-weekoverzicht#febdadcb": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "startdatum en uren per week voor CRM-blok A vaststellen"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
   "wat_claude_doet": "Kan het AI-impressierapport niet via de API lezen; zet wel de vergelijkingsvragen klaar.",
   "wat_jij_doet": "Rapport in Search Console openen en een export in de vault zetten."
+ },
+ "backlog#072e2482": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "conceptvoorstel voor meta description en robots-meta in de vault",
+  "wat_jij_doet": "beslissen of de paginas tijdelijk of permanent zijn en de teksten in Shopify plakken"
  },
  "backlog#10ef70ca": {
   "beoordeeld": "2026-09-26",
@@ -2668,6 +2758,12 @@
   "claude": "ja",
   "wat_claude_doet": "Bouwt de verzenddrempel-balk (Liquid + CSS + vanilla JS, rekent mee per pack) in het testthema.",
   "wat_jij_doet": "Testthema bekijken en live publiceren."
+ },
+ "backlog#8a590428": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "concepttitel en meta description voor en homepage in de vault",
+  "wat_jij_doet": "tekst in Shopify plakken en publiceren"
  },
  "backlog#8d435a25": {
   "beoordeeld": "2026-10-13",
@@ -2764,6 +2860,18 @@
   "claude": "deels",
   "wat_claude_doet": "Checkt via connector en site welke trackingscripts vuren en of pixels via officiele apps lopen; levert een rapport met wat ontbreekt.",
   "wat_jij_doet": "Ontbrekende apps (Meta, Google) in Shopify installeren of koppelen."
+ },
+ "backlog#d6d843f3": {
+  "beoordeeld": "2026-11-03",
+  "claude": "ja",
+  "wat_claude_doet": "conceptmeta description voor pages teamorder in de vault",
+  "wat_jij_doet": "tekst in Shopify plakken"
+ },
+ "backlog#d834101c": {
+  "beoordeeld": "2026-11-03",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Merchant API aanzetten in Google Cloud, de servicesleutel als lezer toevoegen in Merchant Center en het account-ID invullen in instellingen.json"
  },
  "backlog#eaa40e7c": {
   "beoordeeld": "2026-10-14",

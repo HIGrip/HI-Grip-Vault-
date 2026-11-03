@@ -28,15 +28,15 @@ De vraag was een volledige snelheids- en code-audit van de homepage, mobiel en d
 - **1.102 KB** · Beelden vóór scrollen op mobiel, terwijl 155 KB in beeld staat
 
 ## Acties
-- [ ] P1 · hg-deelcode.js en de scripttag uit live (layout/theme.liquid:25) in het werkthema zetten vóór het live zetten, anders verdwijnt de deelcode
+- [x] P1 · hg-deelcode.js en de scripttag uit live (layout/theme.liquid:25) in het werkthema zetten vóór het live zetten, anders verdwijnt de deelcode
 - [ ] P1 · Carrouselkopieën van hp-07 en hp-09 pas aanmaken bij naderen (hp-home.js:1079-1090 en 1360-1368): 721 KB minder vóór scrollen op mobiel
-- [ ] P1 · Video-posters in hp-06 als data-poster en pas in load() zetten: 92 KB uit het LCP-venster op mobiel
-- [ ] P1 · hp-04 en hp-08 dezelfde breedteladder geven als hp-07 (500,1000,1500,2000): 222 KB dubbele downloads minder op mobiel
+- [x] P1 · Video-posters in hp-06 als data-poster en pas in load() zetten: 92 KB uit het LCP-venster op mobiel
+- [x] P1 · hp-04 en hp-08 dezelfde breedteladder geven als hp-07 (500,1000,1500,2000): 222 KB dubbele downloads minder op mobiel
 - [ ] P2 · Productmodules en de quick-add-modal niet laden op de homepage (scripts.liquid:155-264, theme.liquid:196-198), daarna drawers en zoeken testen
 - [ ] P2 · Op de homepage testen welk winkelwagen-drawer opent (Horizon of Section Store) en het andere laten vallen
 - [ ] P2 · Besluit: app-embeds T Lab Translation (beide switchers uit) en Microsoft Clarity (geen output) uitzetten in de thema-editor
 - [ ] P2 · sizes corrigeren in hp-09 (160px en 120px), hp-10 kaart 1 en 2 (46vw) en hp-02 (38vw op desktop)
-- [ ] P2 · Sectie-inits in hp-home.js pas starten bij naderen (IntersectionObserver in initIn, 150% marge): 550 tot 650 ms reflow minder op desktop
+- [x] P2 · Sectie-inits in hp-home.js pas starten bij naderen (IntersectionObserver in initIn, 150% marge): 550 tot 650 ms reflow minder op desktop
 - [ ] P2 · build.py: hp-home.css splitsen in een klein kritiek deel (inline) en CSS per sectie, en hp-05 en hp-13 uit de bundel halen
 - [ ] P2 · Staande hero-uitsnede voor mobiel uploaden als image_mobile in hp-01 en de hero opnieuw comprimeren (PSI: 122 KiB te besparen)
 - [ ] P2 · Besluit: vaste prijzen in de hp-02-kaarten leegmaken, zodat de live productprijs getoond wordt

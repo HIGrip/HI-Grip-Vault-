@@ -57,7 +57,7 @@ Werkwijze per regel: eerst de bruikbare alinea's naar het doelartikel kopiëren,
 - [ ] P2 · Pilatesblog opfrissen (110 vertoningen); laag in prioriteit want geen beachhead-sport
 
 ### Fase 3 — overal hetzelfde goed zetten (parallel aan fase 2)
-- [ ] P1 · Elk overgebleven artikel: minimaal 1 link naar de passende sportpagina, 1 naar een product (2.0 zwart of wit) en 1–2 naar een ander artikel, met beschrijvende ankertekst
+- [x] P1 · Elk overgebleven artikel: minimaal 1 link naar de passende sportpagina, 1 naar een product (2.0 zwart of wit) en 1–2 naar een ander artikel, met beschrijvende ankertekst
 - [ ] P2 · Zichtbare auteur met foto en één regel achtergrond, plus "laatst bijgewerkt"-datum, op alle artikelen
 - [ ] P2 · Titels met het zoekwoord vooraan en "| HÏ Grip" achteraan, maximaal 60 tekens; meta 120–155 tekens
 - [ ] P2 · Feitencheck per artikel tegen het feitenbestand: 3 founders, 3500+ sporters, maten 2.0 35–38/39–42/43–47, verzending €4,50 en gratis vanaf €35, retour 30 dagen, overal "je"

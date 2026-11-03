@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 2 november 2026 (seo)
-Open: 33 · Afgerond: 9 (2 dubbel, zie dashboard)
+Laatst bijgewerkt: 3 november 2026 (actiecontrole)
+Open: 30 · Afgerond: 9 (3 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -37,7 +37,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
 **Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
-### [ ] 1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)
+### [x] 1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)
+**Bevestigd:** 3 november 2026 door actiecontrole — performance-gripsokken toont een tekstblok met verzendkosten 4,50 euro en gratis verzending vanaf 35 euro
 **Update 2 okt 2026 (vault-review):** sinds 28-9 zijn de prijzen weer €14,95 / €41,95 / €64,95 (zie [[Feiten & Actuele Staat]]). Balktekst bij 1-pack wordt dus "Nog €20,05 tot gratis verzending"; de bedragen hieronder zijn achterhaald. Het punt blijft staan.
 **Update 24 sep 2026:** Live prijzen en drempel zijn veranderd: 1-pack €13,49, verzendkosten €4,50, drempel volgens announcementbar €35 (FAQ zegt nog €30 — eerst gelijktrekken, zie P1-actie in vault-notitie `2026-09-23-seo-conversietest-run-1`). Omdat het 3-pack per paar nog maar €0,17 goedkoper is dan een 1-pack, is gratis verzending nu hét argument voor het 3-pack — dit punt weegt daardoor zwaarder. Balktekst bij 1-pack: "Nog €21,51 tot gratis verzending". Laat het bedrag uit één theme-setting komen, niet hardcoded.
 **Waarom:** 48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €13,49, je drempel ligt op €35. Elke 1-pack-koper loopt in die verrassing.
@@ -127,7 +128,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Dubbel — organische autoriteit én de citeerbare bron die AI-assistenten nodig hebben om jou aan te bevelen.
 **Inspanning:** 1 dag
 
-### [ ] 6. Schrijf de vraagpagina's antwoord-eerst, mét FAQPage-schema (herzien 22 sep 2026)
+### [x] 6. Schrijf de vraagpagina's antwoord-eerst, mét FAQPage-schema (herzien 22 sep 2026)
+**Bevestigd:** 3 november 2026 door actiecontrole — pagina bevat een FAQPage JSON-LD blok met meerdere Question en acceptedAnswer paren, antwoorden beginnen direct met de definitie
 **Update 29 sep 2026:** Google breidt AI Overviews sinds 28 augustus 2026 bevestigd automatisch uit tot de volle lengte voor vragen waar het systeem dat nuttig acht — de knop "Toon meer" vervalt dan en de vervolgvraagbox opent vanzelf, richting AI Mode in plaats van terug naar de gewone resultaten. Effect: blauwe links (dus ook een eventuele toekomstige positie van higrip.nl) komen bij die vragen nog verder onder de vouw. Versterkt de al bestaande reden voor dit punt — geciteerd worden in het antwoord weegt zwaarder naarmate er minder organische ruimte overblijft. Geen nieuw punt, alleen extra gewicht.
 **Waarom:** 31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat. **Terugdraaiing t.o.v. 15 sep:** toen is `FAQPage`-schema geschrapt omdat de AI Overviews-gids zei dat structured data "niet vereist" is voor AI-citaties — dat klopt nog steeds, maar onderzoek van maart 2026 (Universiteit van Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines, en dat het specifieke "antwoordcapsule"-patroon een gemeten +17,3% citatiekans oplevert over zes engines. Niet vereist ≠ geen effect. Concurrent FitSockr heeft bovendien al een ongestructureerde blogpost live op exact de long-tail "wat zijn gripsokken" — reden om hier niet halfslachtig in te zitten.
 **Welke:** "Waarom glijdt mijn voet in mijn padelschoen?" · "Wat zijn gripsokken?" · "Tapedesign alternatief"
@@ -174,7 +176,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.
 **Inspanning:** 15 minuten
 
-### [ ] 17. Titel/meta van de oude productpagina-URL optimaliseren of nieuwe canonical laten indexeren (nieuw 25 sep 2026)
+### [x] 17. Titel/meta van de oude productpagina-URL optimaliseren of nieuwe canonical laten indexeren (nieuw 25 sep 2026)
+**Bevestigd:** 3 november 2026 door actiecontrole — hi-grip-gripsokken-1 redirect 301 naar performance-gripsokken met titel, meta description en zelfreferentiele canonical
 **Waarom:** Search Console-meting (routine "Search Console & rankings", eerste run): `/products/hi-grip-gripsokken-1` trekt met 310 vertoningen in 7 dagen (1.003 in 28 dagen) verreweg de meeste vertoningen van alle pagina's op higrip.nl, maar met een CTR van 0,32% — ruim onder elke andere pagina. De nieuwe canonieke handle `performance-gripsokken` (zie feitenbestand) trekt via de 2.0-varianten veel minder vertoningen (65–162), wat erop wijst dat Google het rankingsignaal nog niet volledig naar de nieuwe URL heeft overgezet ondanks de redirect (opgelost 21 sep, zie regressie-actie hierboven).
 **Waar:** Search Console → URL-inspectie/indexering, en de titel/meta die Google nu toont voor de oude URL
 **Wat:** Nagaan of de oude URL opnieuw geïndexeerd moet worden gemeld, en of de getoonde titel/meta in de SERP nog van de oude pagina komt.

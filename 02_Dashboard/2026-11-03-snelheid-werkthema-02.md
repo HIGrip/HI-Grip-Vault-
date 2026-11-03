@@ -1,14 +1,14 @@
 ---
 id: 2026-11-03-snelheid-werkthema-02
 titel: "Snelheid higrip.nl: optimalisaties in WERKTHEMA 02"
-kerntitel: "WERKTHEMA 02 doet 3 tot 5 keer minder rekenwerk dan live; homepage-LCP in lab nog gelijk"
+kerntitel: "WERKTHEMA 02: 3 tot 5 keer minder rekenwerk, laden 1,5 tot 1,7 keer sneller, LCP niet 3x"
 datum: 2026-11-03
 bron: los
 routine: ""
 categorie: Techniek
 status: nieuw
 prioriteit: P1
-samenvatting: "In een kopie van live (WERKTHEMA 02, 203928076615) laden apps pas na de eerste interactie, laden productmodules alleen waar ze nodig zijn en worden secties onder de vouw pas opgebouwd als je ernaartoe scrolt. Gemeten tegen live: blokkeertijd (TBT) 4,6 tot 4,9 keer lager, rekentijd 2 tot 3 keer lager, 30 tot 40% minder bytes en verzoeken; de productpagina is na 5,5 s klaar in plaats van 34 s. Alleen de gesimuleerde LCP van de homepage is in Lighthouse niet beter. Niets live gezet."
+samenvatting: "In een kopie van live (WERKTHEMA 02, 203928076615) laden apps pas na de eerste interactie, laden productmodules alleen waar ze nodig zijn en worden secties onder de vouw pas opgebouwd als je ernaartoe scrolt. Gemeten tegen live: blokkeertijd (TBT) 4,6 tot 4,9 keer lager, rekentijd 2 tot 3 keer lager, 30 tot 40% minder bytes en verzoeken; met echte vertraging laden home en productpagina 1,5 tot 1,7 keer sneller (load 14,6 → 9,4 s en 12,2 → 7,1 s). De LCP van de homepage daalt maar licht (7,8 → 7,1 s): die hangt aan bandbreedte en aan app-scripts buiten het thema, dus 3x sneller laden kan alleen met besluiten over apps. Niets live gezet."
 gerelateerd: [2026-11-03-snelheid-nulmeting-alle-paginas, 2026-10-30-snelheid-code-audit-homepage, 2026-10-29-ads-funnel-en-snelheid-productpagina]
 vervangt: []
 bronbestand: ""
@@ -28,13 +28,15 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 - **2-3×** · minder rekentijd op de hoofdthread (home 23,8 → 8,2 s, product 14,2 → 6,8 s)
 - **34 → 5,5 s** · tot het load-event op de productpagina (4× CPU-vertraging)
 - **335 → 207** · verzoeken op de homepage; 2755 → 1874 KB
+- **14,6 → 9,4 s** · load-event homepage met echte vertraging (product 12,2 → 7,1 s); LCP home 7,8 → 7,1 s
 
 ## Acties
 - [ ] P1 · Besluit: WERKTHEMA 02 live zetten, na een eigen klikronde op de preview (winkelwagen, toevoegen, zoeken, account, maten kiezen, cookiebanner)
 - [ ] P2 · De twee wijzigingen in hp-home.css (duel-animatie zonder z-index, preserve-3d) ook in de bron van de homepage-build zetten, anders draait de volgende build ze terug
 - [ ] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
-- [ ] P3 · Homepage-hero: nagaan of de zoom- en rise-animatie de eerste weergave van de hero na de eerste tekst laat vallen; dat drukt de gesimuleerde LCP
+- [ ] P1 · Besluit: welke apps blijven op elke pagina (Section Store-winkelwagen 97 KB, Translation Lab, EcomSend); hun scripts zitten in content_for_header en remmen de hero, het thema kan ze niet tegenhouden
+- [ ] P3 · Homepage: afbeeldingen onder de vouw pas laden na de hero (getest: LCP 7,1 → 5,9 s met echte vertraging), alleen met een oplossing die zonder JavaScript en voor Google blijft werken
 
 ## Bevindingen
 ### 1. Wat er in WERKTHEMA 02 is veranderd
@@ -49,7 +51,7 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 | Zoeken | Lege zoekstaat (recent + producten) laadt bij openen in plaats van bij elke pagina. Getest. | `assets/predictive-search.js`, `snippets/search-modal.liquid` |
 | Betaaliconen | Inline SVG's vervangen door lazy afbeeldingen van Shopify (38×24). | `blocks/payment-icons.liquid` |
 | Animatie | Duel-animatie op de homepage zonder z-index (compositor-only), visueel gelijk. | `assets/hp-home.css` |
-| Hero | `decoding="sync"` op het prioriteitsbeeld. | `snippets/hp-img.liquid` |
+| Hero | `decoding="sync"` op het prioriteitsbeeld; mobiele bron krijgt ook 540w en 720w (telefoon kiest 720w, 111 KB in plaats van 155 KB). | `snippets/hp-img.liquid`, `sections/hp-01-hero.liquid` |
 
 Geprobeerd en teruggedraaid: Google Fonts niet-blokkerend laden op de homepage; gaf geen LCP-winst.
 
@@ -71,7 +73,20 @@ Controle met hetzelfde thema-ID (basisbestanden tijdelijk teruggezet, dan de opt
 ### 3. Waarom de homepage-LCP in Lighthouse niet daalt
 In de echte tijdlijn van een run: eerste tekst 0,78 s en hero 1,21 s op WERKTHEMA 02, tegen 1,37 s voor beide op de basis; DOMContentLoaded 1,8 tegen 2,6 s, load 2,1 tegen 3,4 s. Alles is dus eerder. Lighthouse rekent de LCP terug met een model dat strenger wordt als de hero in een later frame verschijnt dan de eerste tekst. Op live komen tekst en hero in hetzelfde frame. Het beeld is binnen op ~0,55 s; waarschijnlijk vertraagt de hero-animatie (zoom/rise via hp-home.js) de eerste weergave. Zie actie P3.
 
-### 4. Wat overblijft
+### 4. Echte vertraging (geen simulatie)
+Puppeteer, 4× CPU, traag 4G (562 ms RTT, 1,47 Mbit/s, de waarden die Lighthouse ook gebruikt), cache uit, hetzelfde thema-ID met eerst de basisbestanden en daarna de optimalisaties, mediaan van 4 runs:
+
+| | Basis home | 02 home | Basis product | 02 product |
+|---|---|---|---|---|
+| FCP | 3,1 s | 3,1 s | 3,2 s | 3,0 s |
+| LCP | 7,8 s | 7,1 s | 3,5 s | 3,3 s |
+| TBT | 2,2 s | 1,0 s | 1,9 s | 0,8 s |
+| DOMContentLoaded | 9,7 s | 6,5 s | 8,2 s | 5,5 s |
+| Load | 14,6 s | 9,4 s | 12,2 s | 7,1 s |
+
+De hero van de homepage is gebonden aan bandbreedte: hij deelt de lijn met de HTML (~60 KB), de CSS (~80 KB), app-scripts uit content_for_header (Section Store 97 KB, Shopify-pixels 84 KB, cookiebanner 21 KB, perf-kit 26 KB) en afbeeldingen onder de vouw (~325 KB). Test met die afbeeldingen geblokkeerd: LCP 5,9 s. Een 3x snellere LCP (2,6 s) is met deze apps niet haalbaar vanuit het thema. Live krijgt bovendien Early Hints (CSS al binnen vóór de HTML), previews niet; na livegang wint 02 daardoor ook op FCP.
+
+### 5. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte
@@ -81,5 +96,5 @@ Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manag
 
 ## Bronnen
 - Lighthouse-uitvoer en meetscripts: lokale scratchpad van deze sessie (niet in de vault)
-- Thema-git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02` (commits e874c49 basis, 44fa5f2 optimalisaties, d332908 hero)
+- Thema-git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02` (commits e874c49 basis, 44fa5f2 optimalisaties, d332908 hero, daarna srcset 540w/720w)
 - Preview: https://www.higrip.nl/?preview_theme_id=203928076615

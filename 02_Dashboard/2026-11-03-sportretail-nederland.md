@@ -48,7 +48,7 @@ Overzicht van alle grote sportwinkelketens met fysieke winkels in Nederland, per
 | SPORT 2000 | 48 | ANWR-Garant, zelfstandige ondernemers | Teamsport, voetbal (Absolute Teamsport, Soccer Centers), clubleveringen | Hoog |
 | DAKA | 17 | Eigen familiebedrijf, uit Intersport gestapt | Wintersport, running, racket-bespanning, voetbal, hockey, teamwear | Hoog |
 | PadelShop.com | 1 | Eigen (Marcel Bogaart) | Padel, testcentrum Alphen a/d Rijn, vooral online | Hoog |
-| INTERSPORT | 35+ (Folderz: 82) | Euretco-licentie, franchise | Breed, voetbal, padel, 3D-voetscan | Middel |
+| INTERSPORT | 35+ (Folderz: 82) | Via EK Retail, franchise van zelfstandigen | Breed, voetbal, padel, 3D-voetscan | Middel |
 | Run2Day | 16 | Hardloopspecialist | Loopanalyse, schoenen, sokken | Middel |
 | Runnersworld | 11 | Hardloopspecialist | Hardlopen, triathlon | Middel |
 | Jumbo Hockey | ca. 8 | Jumbo Golf (ex-Hockey Republic) | Hockey | Middel |
@@ -65,7 +65,7 @@ De filiaallijsten per keten staan in het artifact.
 Perry Sport, Aktiesport en Sprinter (Sports Unlimited Retail, JD Sports) gingen in december 2023 failliet; de ruim 50 winkels sloten uiterlijk maart 2024. Frasers nam een deel van de panden over voor Sports World. Oudere ketenlijsten noemen ze nog.
 
 ### Fit-redenering
-Fit is gebaseerd op sport-overlap (voetbal, padel, tennis, hockey, rugby), of de winkel zelf over merken beslist en of er naast huismerken ruimte is voor een premium merk. Zelfstandige ondernemers (SPORT 2000) zijn de snelste ingang; Intersport loopt deels via centrale inkoop bij Euretco.
+Fit is gebaseerd op sport-overlap (voetbal, padel, tennis, hockey, rugby), of de winkel zelf over merken beslist en of er naast huismerken ruimte is voor een premium merk. Zelfstandige ondernemers (SPORT 2000) zijn de snelste ingang; Intersport loopt deels via centrale inkoop bij EK Retail.
 
 ## Wat niet lukte
 De winkelzoeker van intersport.nl laadt alleen na het accepteren van marketingcookies; daardoor geen volledige Intersport-lijst (eigen opgave 35+, Folderz 82 in 71 plaatsen). Foot Locker en Snipes hebben geen uitleesbare Nederlandse winkellijst; Jumbo Hockey-site gaf een SSL-fout, aantal uit persberichten. Zelfstandige sportzaken buiten een formule zijn niet geteld.

@@ -10,7 +10,7 @@ Domeinkennis voor de Ads Agent (adviserend, read-only). Hoe de agent werkt: [[Ag
 ## Profiel en kennis (03-11-2026, naslagkopie van het Hermes-profiel `ads`)
 
 - **Profiel:** [[Ads Profiel — SOUL]] (identiteit en harde verboden) en [[Ads Skill — higrip-ads-analyse]] (schil met negeer-regels, enige ingang tot de kennis).
-- **Bron, licentie, aanpassingen en controles:** [[Ads Kennis — Bron en licentie]].
+- **Bron, licentie, aanpassingen en controles:** [[Ads Kennis — Bron en licentie]]. **Gegevenstoegang:** [[Ads Koppeling — Meta alleen-lezen]] (alleen-lezen MCP, besluit Lars 03-11-2026).
 - **Skills (alleen advies, Meta en meting):** [[Ads Skill — ads-meta]] · [[Ads Skill — ads-plan]] · [[Ads Skill — ads-math]] · [[Ads Skill — ads-attribution]] · [[Ads Skill — ads-budget]] · [[Ads Skill — ads-test]] · [[Ads Skill — ads-server-side-tracking]]. Templates: [[Ads Plan Template — ecommerce]] · [[Ads Plan Template — generic]].
 - **Referenties:** [[Ads Referentie — meta-audit]] · [[Ads Referentie — benchmarks]] · [[Ads Referentie — conversion-tracking]] · [[Ads Referentie — budget-allocation]] · [[Ads Referentie — bidding-strategies]] · [[Ads Referentie — scoring-system]] · [[Ads Referentie — platform-specs]] · [[Ads Referentie — meta-ai-stack]] · [[Ads Referentie — compliance]] · [[Ads Referentie — compliance-requirements]] · [[Ads Referentie — automation-tier-classifier]].
 

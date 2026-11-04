@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Eerste run van deze module: Merchant Center is niet gekoppeld aan de servicesleutel, dus er zijn geen productstatussen of feedfouten te meten. Vier zoekopdrachten naar backlinks en merkvermeldingen van HÏ Grip leverden niets op — geen vermelding, geen link — wat past bij een klein, nieuw merk zonder actieve linkopbouw."
-gerelateerd: [2026-11-02-regressiecheck]
+gerelateerd: [2026-11-02-regressiecheck, 2026-11-04-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

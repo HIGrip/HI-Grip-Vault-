@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 3 november 2026 (actiecontrole)
-Open: 30 · Afgerond: 9 (3 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
+Laatst bijgewerkt: 4 november 2026 (growth-radar)
+Open: 31 · Afgerond: 9 (3 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -67,6 +67,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
 **Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
 **Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.
+**Extra controlepunt (toegevoegd 4 nov 2026):** Shopify's Fall '26 Edition (shopify.com/editions/fall2026, eind okt 2026) voegt "Shopify Catalog" toe als apart mechanisme naast de Merchant Center-feed: dit voedt de agentic storefronts (Google AI Mode, Gemini-app) en de "shop skill" van agents zoals ChatGPT/Claude. De pagina noemt geen VS-beperking, in tegenstelling tot de eerdere Agentic Storefronts (zie 23 sep 2026). Geschiktheidscheck en het nieuwe agent-kennisbestand staan als los punt 28 in de backlog; dit punt (Merchant Center/GTIN) blijft daarnaast nodig voor Google Shopping zelf.
 **Update 19 okt 2026 (seo-conversietest, auditblok B):** concrete invulling klaar, niet live gezet. Voor de zes 2.0-varianten is een ondubbelzinnige GTIN-koppeling te maken uit de EAN-lijst in [[Performance Grip Socks 2.0]]: PGSZ201→9110024809242, PGSZ202→9110024809259, PGSZ203→9110024809266, PGSW201→9110024809211, PGSW202→9110024809228, PGSW203→9110024809235. Voor de 1.0-varianten (GS110, GS100) staat geen EAN in het bronbestand — blijft `[CHECK]`. Voorgestelde `productType` voor alle drie producten: "Sportsokken". Volledig mutatievoorstel (met `validate_graphql_codeblocks`-controle) in het Shopify-logboek `seo-routine-logboek`, RUN 5 — nog niet uitgevoerd, vereist een go van Lars.
 **Inspanning:** 2 uur
 
@@ -256,6 +257,14 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Aanmeldprocedure doorlopen (KVK-gegevens, vier stappen, beoordeling 1-2 werkdagen) en beslissen of dit een los kanaal wordt naast higrip.nl of gecombineerd met het creator-plan (punt 9).
 **Effect:** Extra verkoopkanaal in de grootste groeimarkt (padel) met lagere aankoopdrempel dan doorklikken naar een externe site — vereist wel bewaking van last-click-attributie, die dit verkeer mist.
 **Inspanning:** Verkenning en aanmelding een half dagdeel; app-koppeling en catalogus-setup 1 dag.
+
+### [ ] 28. Check Shopify Catalog-geschiktheid en het agent-kennisbestand na de Fall '26 Edition (nieuw 4 nov 2026)
+**Waarom:** Shopify's Fall '26 Edition (shopify.com/editions/fall2026, eind oktober 2026) breidt agentic commerce fors uit: een "shop skill" waarmee elke AI-agent (ChatGPT, Claude, Grok, Gemini) kan zoeken en afrekenen met Shop Pay, agentic storefronts die producten tonen in Google Search AI Mode en de Gemini-app, en een nieuw agent-kennisbestand (Sales channels → Agentic controls) waarmee een winkel zelf bepaalt welke feiten (beleid, FAQ) agents te zien krijgen. In tegenstelling tot de eerdere Agentic Storefronts (maart 2026, toen nog alleen voor verkoop aan Amerikaanse kopers) noemt de Fall '26-pagina geen VS-beperking voor deze onderdelen.
+**Waar:** Shopify admin `raqds3-tb` → Sales channels → Shopify Catalog (geschiktheidscheck) en Sales channels → Agentic controls (kennisbestand)
+**Wat:** Nagaan of higrip.nl in aanmerking komt voor Shopify Catalog, en zo ja, welke feiten het agent-kennisbestand automatisch aan agents zou geven — controleren tegen het feitenbestand (prijzen, verzending, retour) vóórdat je het goedkeurt.
+**Effect:** Zonder controle kan een AI-agent verouderde of onjuiste informatie over higrip.nl tonen, bijvoorbeeld de verzend-/retourvoorwaarden die op `/policies/shipping-policy` en `/policies/refund-policy` nog achterlopen op de vastgestelde waarde (zie Feiten & Actuele Staat).
+**Inspanning:** 30 minuten, verkennend
+**Gevonden op:** 4 november 2026 (Growth Radar, AI-search)
 
 ---
 

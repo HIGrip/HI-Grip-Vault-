@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "In een kopie van live (WERKTHEMA 02, 203928076615) laden apps pas na de eerste interactie, laden productmodules alleen waar ze nodig zijn en worden secties onder de vouw pas opgebouwd als je ernaartoe scrolt. Gemeten tegen live: blokkeertijd (TBT) 4,6 tot 4,9 keer lager, rekentijd 2 tot 3 keer lager, 30 tot 40% minder bytes en verzoeken; met echte vertraging laden home en productpagina 1,5 tot 1,7 keer sneller (load 14,6 → 9,4 s en 12,2 → 7,1 s). De LCP van de homepage daalt maar licht (7,8 → 7,1 s): die hangt aan bandbreedte en aan app-scripts buiten het thema, dus 3x sneller laden kan alleen met besluiten over apps. Niets live gezet."
-gerelateerd: [2026-11-03-snelheid-nulmeting-alle-paginas, 2026-10-30-snelheid-code-audit-homepage, 2026-10-29-ads-funnel-en-snelheid-productpagina]
+gerelateerd: [2026-11-04-horizon-4-4-update-check, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-10-30-snelheid-code-audit-homepage, 2026-10-29-ads-funnel-en-snelheid-productpagina]
 vervangt: []
 bronbestand: ""
 deadline: ""

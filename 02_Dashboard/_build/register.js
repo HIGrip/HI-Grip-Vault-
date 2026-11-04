@@ -1048,7 +1048,7 @@ window.HI_RESEARCH = {
    "dubbel": 18,
    "gedaan": 42,
    "handmatig": 136,
-   "ongecontroleerd": 9,
+   "ongecontroleerd": 14,
    "open": 149
   },
   "vandaag_gedaan": [
@@ -2193,7 +2193,7 @@ window.HI_RESEARCH = {
    "toegepast": 0
   }
  },
- "gebouwd": "2026-11-04T08:18:50+00:00",
+ "gebouwd": "2026-11-04T15:04:29+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Growth-radar: 11 notities\n- Onderzoek: 27 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 37 notities\n- Routines: 15 notities\n- SEO: 8 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 3 notities\n",
  "notities": [
   {
@@ -2265,6 +2265,119 @@ window.HI_RESEARCH = {
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-04-snelheid-vergelijking-andere-webshops.md",
    "vervangt": [],
    "wat_niet_lukte": "- higrip.nl heeft geen Chrome-velddata (te weinig verkeer); de Shopify-meting vult dat gat.\n- trusox.com stuurde de meting door naar `/nline`; het platform is niet vast te stellen (headers geblokkeerd).\n- PageSpeed-tabbladen in de achtergrond starten niet; de metingen zijn één voor één gedaan, zonder lokale Lighthouse (om de metingen van WERKTHEMA 02 niet te storen)."
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-04-horizon-4-4-update-check#3f255e42",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Update-kopie 203954520391: 12 paginatemplates (page.*.json met nieuwe main-page-sectie, incl. ab-a en ab-b) terugzetten vanuit WERKTHEMA 02, alleen die bestanden pushen, daarna opnieuw testen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-04-horizon-4-4-update-check#36e3ab6e",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-04-horizon-4-4-update-check#afc32fbf",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-04-horizon-4-4-update-check#75909261",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-04-horizon-4-4-update-check#0f4f8a7a",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Horizon-update 4.3.0 naar 4.4.0: controle van de bijgewerkte kopie\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nShopify maakte de kopie \"Bijgewerkte kopie van Live website 04-11-2026\" (`203954520391`, Horizon 4.4.0). Ik heb die vergeleken met live (`203928076615`, WERKTHEMA 02, Horizon 4.3.0). Daarvoor heb ik de code vergeleken (lokale kopie met git in `C:\\Users\\Test\\Werk\\theme-snelheid\\update-04`) en in de preview getest. Tests: foutscan op 10 pagina's (telefoon en desktop), winkelwagenflow, snelheid met echte vertraging, fonts en afbeeldingsmaten, en een vergelijking van de paginatemplates.\n\nConclusie: de update is bruikbaar, maar **niet zoals hij nu is**. Eerst moeten de 12 paginatemplates terug en moet de titelafbreking op de productpagina opgelost worden.\n\n## Kerncijfers\n- **12** · paginatemplates met een extra paginatitel (tweede H1)\n- **5753 → 3912 px** · hoogte A/B-pagina gripsokken-2-0, productsectie weg\n- **823 → 729 px** · breedte productfoto op desktop-PDP\n- **0** · JavaScript- of Liquid-fouten op 10 pagina's, telefoon en desktop\n\n## Acties\n- [ ] P1 · Update-kopie 203954520391: 12 paginatemplates (page.*.json met nieuwe main-page-sectie, incl. ab-a en ab-b) terugzetten vanuit WERKTHEMA 02, alleen die bestanden pushen, daarna opnieuw testen\n- [ ] P1 · Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen\n- [ ] P2 · Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt\n- [ ] P2 · Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest\n- [ ] P3 · Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken\n\n## Kansen\n- [K] Checkout wacht in 4.4.0 tot een aantalwijziging in de winkelwagen is opgeslagen, wat een stille checkoutfout op iOS Safari voorkomt · impact: middel · bewijs: 2026-11-04-horizon-4-4-update-check · stap: na het herstellen van de templates de update live zetten\n\n## Bevindingen\n### Wat goed blijft\nAlle eigen aanpassingen zijn bewaard gebleven, zowel die van WERKTHEMA 02 als de oudere HÏ-aanpassingen:\n- scripts.liquid, cart-summary en cart-drawer (pakketprijs, Korting, Code en Totaal)\n- header-actions, search-modal en payment-icons\n- hi-defer-apps, hi-cart.css en hp-img (foto's na de hero)\n- de HÏ-regel in predictive-search\n- de lazy-fix in product-media-gallery en de ResizeObserver in theme.liquid\n\nDe winkelwagenflow (3-pack toevoegen, +, totalen) geeft in beide thema's precies dezelfde bedragen. De checkoutknop en de snelle betaalknoppen staan er. Fonts en knoppen zijn op 5 pagina's computed gelijk.\n\n### Wat stuk gaat: paginatemplates\nDe update zette in 12 page-templates een nieuwe sectie `\"main\": main-page`, met de paginatitel als H1 en daaronder de pagina-inhoud.\n- **Op shop (/pages/collection), contact, de vier beleidspagina's, zakelijk, gripsokken-vergelijken, teamorder en survey:** er komt een extra titelblok van 68 tot 306 px boven de eigen opbouw. Daarmee heeft de pagina een tweede H1 (slecht voor SEO) en een dubbele kop in beeld.\n- **Op ab-a en ab-b (/pages/gripsokken-2-1 en /pages/gripsokken-2-0):** de eigen sectie `hg-ab-product` is vervangen. Product, pakketten en de knop In winkelwagen zijn weg, en de pagina is ongeveer 1840 px korter. Als hier advertentieverkeer op staat, verkoopt deze pagina na livegang niets.\n\nOplossing: de templates uit WERKTHEMA 02 terugzetten. Ze zijn niet versiegebonden, dus dat is veilig.\n\n### Wat anders oogt: productpagina desktop\nDe verdeling tussen foto en tekst is iets verschoven:\n\n| | Fotokolom | Tekstkolom |\n|---|---|---|\n| Live | 893 px | 467 px |\n| Update | 907 px | 453 px |\n\nToch rendert de productfoto kleiner: 823 naar 729 px. Waarschijnlijk komt dat door de nieuwe galerij- en hoogtelogica, of door de nieuwe basisregel `img { width: 100% }` in base.css. Doordat de tekstkolom smaller is, breekt de H1 \"PERFORMANCE GRIPSOKKEN 2.0 ZWART\" midden in een woord (\"PERFORMANC\" / \"E\"). De prijs en de pakketten zakken daardoor 50 px.\n\n### Snelheid\nGeen achteruitgang. De metingen zijn ruisgevoelig: 3 runs per pagina, mediaan, met echte vertraging.\n\n| Pagina | Meting | Live | Update |\n|---|---|---|---|\n| Home | LCP | 5,29 s | 5,73 s |\n| Home | Load | 9,24 s | 8,30 s |\n| PDP | LCP | 4,53 s | 3,61 s |\n| PDP | Load | 9,68 s | 7,93 s |\n\n### Overige wijzigingen in 4.4.0\n- **Header:** de menustijl wordt vóór de eerste weergave gezet, dus minder flitsen op desktop.\n- **Predictive search:** vangt niet-ondersteunde talen af (HTTP 417).\n- **Winkelwagen:** checkout wacht op een openstaande aantalwijziging (`holdCheckoutForQuantitySave`).\n- **Belastingtekst:** ondersteunt checkout-kosten.\n- **Instellingen:** \"installments\" heet nu \"Shop Pay-betaalopties\".\n- **Overige fixes:**\n  - breedte van de e-mailinschrijving;\n  - geneste kolommen in het megamenu;\n  - sticky productmedia onder een sticky header;\n  - CSS-variabelen voor het gewicht van knopfonts.\n- **Afbeelding bij collectielinks:** link-featured-image valt niet meer terug op een productfoto als een collectielink geen eigen afbeelding heeft. Klein risico.\n- **Talen en instellingen:** 26 nieuwe talen. In settings_data is alleen de volgorde van sleutels gewijzigd.\n- **Om in de gaten te houden:** predictive-search.js en scripts.liquid blijven kernbestanden met eigen code. Controleer ze bij elke volgende update.\n\n## Bronnen\n- Preview-tests met puppeteer op www.higrip.nl met `?preview_theme_id=` voor 203928076615 en 203954520391\n- Codevergelijking: `C:\\Users\\Test\\Werk\\theme-snelheid\\update-04` (git) tegen `C:\\Users\\Test\\Werk\\theme-snelheid\\werkthema-02`\n- [2026-11-03-snelheid-werkthema-02](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-03-snelheid-werkthema-02.md)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Techniek",
+   "datum": "2026-11-04",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-03-snelheid-werkthema-02"
+   ],
+   "id": "2026-11-04-horizon-4-4-update-check",
+   "kansen": [
+    {
+     "beheer": null,
+     "bewijs": [
+      "2026-11-04-horizon-4-4-update-check"
+     ],
+     "id": "2026-11-04-horizon-4-4-update-check#k39e8d3fb",
+     "impact": "middel",
+     "stap": "na het herstellen van de templates de update live zetten",
+     "titel": "Checkout wacht in 4.4.0 tot een aantalwijziging in de winkelwagen is opgeslagen, wat een stille checkoutfout op iOS Safari voorkomt"
+    }
+   ],
+   "kerncijfers": [
+    {
+     "label": "paginatemplates met een extra paginatitel (tweede H1)",
+     "verschil": "",
+     "waarde": "12"
+    },
+    {
+     "label": "hoogte A/B-pagina gripsokken-2-0, productsectie weg",
+     "verschil": "",
+     "waarde": "5753 → 3912 px"
+    },
+    {
+     "label": "breedte productfoto op desktop-PDP",
+     "verschil": "",
+     "waarde": "823 → 729 px"
+    },
+    {
+     "label": "JavaScript- of Liquid-fouten op 10 pagina's, telefoon en desktop",
+     "verschil": "",
+     "waarde": "0"
+    }
+   ],
+   "kerntitel": "Horizon 4.4.0: eigen code blijft, maar 12 paginatemplates en de A/B-productpagina's breken",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De Shopify-update naar Horizon 4.4.0 (kopie 203954520391) houdt alle eigen aanpassingen van WERKTHEMA 02 intact, maar voegt aan 12 paginatemplates een standaard paginatitel toe; op de twee A/B-pagina's (gripsokken-2-0 en gripsokken-2-1) vervangt die zelfs de productsectie, waardoor product, pakketten en de knop In winkelwagen verdwijnen. Daarnaast breekt op desktop de producttitel midden in een woord. Snelheid, winkelwagen, betaalknoppen en fonts zijn gelijk aan live. Niet live zetten voordat de templates zijn teruggezet; niets gewijzigd aan live.",
+   "status": "nieuw",
+   "titel": "Horizon-update 4.3.0 naar 4.4.0: controle van de bijgewerkte kopie",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-04-horizon-4-4-update-check.md",
+   "vervangt": [],
+   "wat_niet_lukte": ""
   },
   {
    "acties": [],
@@ -2480,6 +2593,7 @@ window.HI_RESEARCH = {
    "datum": "2026-11-03",
    "deadline": "",
    "gerelateerd": [
+    "2026-11-04-horizon-4-4-update-check",
     "2026-11-03-snelheid-nulmeting-alle-paginas",
     "2026-10-30-snelheid-code-audit-homepage",
     "2026-10-29-ads-funnel-en-snelheid-productpagina"
@@ -12716,9 +12830,9 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 82,
-   "P2": 158,
-   "P3": 54
+   "P1": 84,
+   "P2": 160,
+   "P3": 55
   },
   "per_categorie": {
    "B2B": 2,
@@ -12727,7 +12841,7 @@ window.HI_RESEARCH = {
    "Product": 1,
    "SEO": 28,
    "Social": 9,
-   "Techniek": 25
+   "Techniek": 26
   },
   "per_week": [
    {
@@ -12786,12 +12900,12 @@ window.HI_RESEARCH = {
     "week": "2026-W44"
    },
    {
-    "aantal": 13,
+    "aantal": 14,
     "start": "2026-11-02",
     "week": "2026-W45"
    }
   ],
-  "totaal_notities": 86
+  "totaal_notities": 87
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

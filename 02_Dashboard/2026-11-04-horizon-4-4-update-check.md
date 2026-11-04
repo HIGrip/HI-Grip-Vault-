@@ -6,7 +6,7 @@ datum: 2026-11-04
 bron: los
 routine: ""
 categorie: Techniek
-status: nieuw
+status: verwerkt
 prioriteit: P1
 samenvatting: "De Shopify-update naar Horizon 4.4.0 (kopie 203954520391) houdt alle eigen aanpassingen van WERKTHEMA 02 intact, maar voegt aan 12 paginatemplates een standaard paginatitel toe; op de twee A/B-pagina's (gripsokken-2-0 en gripsokken-2-1) vervangt die zelfs de productsectie, waardoor product, pakketten en de knop In winkelwagen verdwijnen. Daarnaast breekt op desktop de producttitel midden in een woord. Snelheid, winkelwagen, betaalknoppen en fonts zijn gelijk aan live. Niet live zetten voordat de templates zijn teruggezet; niets gewijzigd aan live."
 gerelateerd: [2026-11-03-snelheid-werkthema-02]
@@ -30,9 +30,9 @@ Conclusie: de update is bruikbaar, maar **niet zoals hij nu is**. Eerst moeten d
 - **0** · JavaScript- of Liquid-fouten op 10 pagina's, telefoon en desktop
 
 ## Acties
-- [ ] P1 · Update-kopie 203954520391: 12 paginatemplates (page.*.json met nieuwe main-page-sectie, incl. ab-a en ab-b) terugzetten vanuit WERKTHEMA 02, alleen die bestanden pushen, daarna opnieuw testen
-- [ ] P1 · Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen
-- [ ] P2 · Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt
+- [x] P1 · Update-kopie 203954520391: 12 paginatemplates (page.*.json met nieuwe main-page-sectie, incl. ab-a en ab-b) terugzetten vanuit WERKTHEMA 02, alleen die bestanden pushen, daarna opnieuw testen
+- [x] P1 · Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen
+- [x] P2 · Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt
 - [ ] P2 · Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest
 - [ ] P3 · Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken
 
@@ -91,6 +91,21 @@ Geen achteruitgang. De metingen zijn ruisgevoelig: 3 runs per pagina, mediaan, m
 - **Afbeelding bij collectielinks:** link-featured-image valt niet meer terug op een productfoto als een collectielink geen eigen afbeelding heeft. Klein risico.
 - **Talen en instellingen:** 26 nieuwe talen. In settings_data is alleen de volgorde van sleutels gewijzigd.
 - **Om in de gaten te houden:** predictive-search.js en scripts.liquid blijven kernbestanden met eigen code. Controleer ze bij elke volgende update.
+
+### Hersteld (4-11)
+Op opdracht van de gebruiker is de kopie 203954520391 (unpublished, gecontroleerd met `theme list`) hersteld. Alleen deze 13 bestanden zijn gepusht:
+- **12 paginatemplates:** teruggezet uit WERKTHEMA 02.
+  - page.sport-rugby verschilde alleen in opmaak en is niet aangeraakt.
+- **snippets/product-information-content.liquid:** de productgrid is terug van `minmax(0, 2fr) minmax(0, 1fr)` naar `2fr 1fr`, zoals live. De titel breekt daardoor niet meer midden in een woord.
+- **Kleinere productfoto:** dit is bewust zo gelaten. In 4.4.0 trekt de foto de rij thumbnails af van de schermhoogte, zodat foto en thumbnails samen in beeld passen. Dat is een verbetering, geen fout.
+
+Hertest na het herstel:
+- **10 pagina's:** H1, aantal secties, hoogte en de knop In winkelwagen zijn gelijk aan live.
+- **A/B-pagina's:** de productsectie is terug.
+- **Productgrid:** gelijk aan live (893/467 px).
+- **Foutscan:** geen fouten op 10 pagina's, op telefoon en desktop.
+
+Lokale git staat in `update-04`. Let op: `product-information-content.liquid` is nu een kernbestand met eigen code; controleer het bij de volgende update.
 
 ## Bronnen
 - Preview-tests met puppeteer op www.higrip.nl met `?preview_theme_id=` voor 203928076615 en 203954520391

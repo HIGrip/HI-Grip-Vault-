@@ -27,6 +27,8 @@ beheer: Stafchef (03_Denzel)
 - **Regel over nieuwe bestanden is omgedraaid: iedereen maakt, Operations controleert/verbetert/herplaatst.** Reden: Lars heeft bepaald dat alle hoofd- en sub-agents nieuwe bestanden in de vault mogen maken en dat Operations altijd controleert en eindverantwoordelijk is voor correcte plaatsing, navigatieregel, index en `vault_nav.py`. `00_Brand_Core/` blijft buiten bereik zonder toestemming van Lars per wijziging. (2026-10-30, Lars, taak t_a8356e0f)
 - **Agentgrenzen: akkoord van Lars OF Timo volstaat.** Beiden is niet nodig. Zie [[user]]. (2026-10-28, Lars, via Denzel)
 - **Een kaart die op een besluit van Lars wacht gaat naar REVIEW (request-review), met de exacte vraag en een voorstel in de kaartreactie.** `blocked` is alleen voor technische storingen en afhankelijkheden. Reden: blocked verborg dat Lars moest beslissen; een kaart wachtte 69 uur. (2026-11-02, Lars)
+- **Een koppeling die schrijven mogelijk maakt krijgt altijd:** (a) een apart token per bevoegdheid in de Windows-referentiekluis, nooit in een bestand dat een agent kan lezen; (b) een tussenprogramma met vaste toolslijst; (c) een weigering bij een te ruim token; (d) een onafhankelijke code-QA vóór gebruik. Eerste toepassing: Ads Agent (Meta). (2026-11-03, Lars)
+- **Een token dat in de chat wordt geplakt geldt als gelekt en wordt direct ingetrokken.** Gebeurd op 03-11-2026. (2026-11-03, Lars)
 
 ## Denzel en zijn vroegere team
 
@@ -45,11 +47,13 @@ beheer: Stafchef (03_Denzel)
 - **Geef geen werk aan een headless worker dat een goedkeuringsprompt vraagt (scripts, instructiebestanden) of een bekende tool-guard raakt (`write_file` `stale_write_blocked`).** Doe het zelf of laat Lars eerst goedkeuren. Reden: headless workers kunnen niet om goedkeuring vragen en crashen dan. (2026-11-02, Lars)
 - **Controleer vóór het aanmaken van een kaart of de opdracht binnen de vaultregels past.** Voorbeeld: een scan van de prototypemap was verboden terwijl de opdracht die vroeg. Start een keten met de eerste schakel; vervolgkaarten pas als die slaagt, geen ketens van 5 tot 7 kaarten vooruit. (2026-11-02, Lars)
 - **Kaarten die iets verwijderen of verplaatsen (zoals opruiming van ontwerpversies) gaan eerst naar REVIEW voor akkoord van Lars.** Pas daarna uitvoeren. (2026-11-02, Lars)
+- **Een besluit dat de autonomie van een agent verruimt voer je op alle plekken tegelijk door** (definitie, profiel-SOUL, basisregels in `user.md`, hiërarchie, dashboard, Denzel-bestand) en controleer je daarna met zoeken op de oude formulering. Reden: de oude regel "read-only" (Ads Agent) stond op negen plekken. Het besluit zelf: de Ads Agent voert niets zelf uit, hooguit klaarzetten (status uit) na akkoord en een hele goede controle door Team HÏ Grip; een mens zet aan. (2026-11-03, Lars)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)
 - **Leerregels leg je vast, je bedenkt ze niet.** Denzel bepaalt de regel. (2026-10-12, Lars)
 - **Meld bij een QA-correctie de werkelijke omvang en bronstatus, niet de bedoeling.** Een notitie "ingekort tot onder 15 KB" die 16,4 KB is, of bronnummers die niemand naliep, krijgen de feitelijke waarde of het label "onbevestigd". Reden: Operations-QA t_7b07dde6 vond precies dit in de Ads-notitie. (2026-11-02, bron: kaart t_1c085f78; voorgelegd aan Denzel ter bevestiging)
+- **Operations voert alleen werk uit aan agentstructuur en workflow, niet aan inhoud of techniek.** Reden: bevestiging Lars; inhoud en techniek horen bij de domeinagents. (2026-11-02, Lars)
 
 ### Vooruitblik-agent
 - *(nog geen regels)*

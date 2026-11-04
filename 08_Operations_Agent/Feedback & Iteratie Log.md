@@ -10,6 +10,13 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-03 — Ads-besluit: niets zelf uitvoeren, klaarzetten na akkoord; vier leerregels
+
+**Wat er gebeurde:** Lars besloot dat de Ads Agent niets zelf uitvoert; hooguit klaarzetten (status uit), alleen na akkoord en een hele goede controle door Team HÏ Grip; een mens zet aan. Vastgelegd in `Agents Ads Agent.md` (kopje Klaarzetten), de Ads-onderzoeksnotitie, `user.md`, hiërarchie, `Agents Denzel.md` en `09_Ads_Agent/Profiel/`. De oude regel "read-only" stond op negen plekken; daaruit volgt leerregel 1.
+**Vastgelegd in [[Leerregels per Agent]]:** (1) autonomiebesluit overal tegelijk doorvoeren + zoeken op oude formulering; (2) schrijfkoppeling: apart token in referentiekluis, tussenprogramma met vaste toolslijst, weigering bij te ruim token, onafhankelijke code-QA; (3) in de chat geplakt token = gelekt, direct intrekken (gebeurd 03-11-2026); (4) Operations alleen agentstructuur en workflow (bevestiging Lars 02-11-2026).
+
+---
+
 ## 2026-11-02 — Ads-agent inrichting: QA CORRIGEER (licht), plugin ESCALEER; overdracht
 
 **Wat er gebeurde:** Operations-QA (t_7b07dde6) keurde de vault-inrichting van Ads CORRIGEER (licht), de pluginuitbreiding ESCALEER. Gecorrigeerd: r.138 in `02_Dashboard/2026-10-30-ads-agent-onderzoek.md` noemt nu 16,4 KB; M2 (60/9000) staat expliciet als onbevestigd.

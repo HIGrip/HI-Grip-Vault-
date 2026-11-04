@@ -107,6 +107,19 @@ Hertest na het herstel:
 
 Lokale git staat in `update-04`. Let op: `product-information-content.liquid` is nu een kernbestand met eigen code; controleer het bij de volgende update.
 
+### Tweede controle na herstel (4-11)
+Na het herstel is de kopie opnieuw naast live gelegd, op telefoon en desktop.
+- **11 pagina's:** de secties zijn per pagina even hoog en laden dezelfde foto's.
+- **Klikgedrag is gelijk aan live**, zonder JS-fouten:
+  - het menu;
+  - de taalwissel nl/en, inclusief /en;
+  - de zoekfunctie, met 3 resultaten;
+  - de accountknop;
+  - In winkelwagen;
+  - de winkelwagenlade, met de knop Afrekenen en snelle betaalknoppen.
+- **Enige zichtbare verschil:** de kleinere productfoto op de desktop-PDP. Daardoor staat het blok eronder een paar pixels anders.
+- **Niet getest:** een echte bestelling afronden en de thema-editor.
+
 ## Bronnen
 - Preview-tests met puppeteer op www.higrip.nl met `?preview_theme_id=` voor 203928076615 en 203954520391
 - Codevergelijking: `C:\Users\Test\Werk\theme-snelheid\update-04` (git) tegen `C:\Users\Test\Werk\theme-snelheid\werkthema-02`

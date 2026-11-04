@@ -36,6 +36,7 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
 - [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
 - [ ] P2 · Live hi-shop.js: kleurknoppen op /pages/collection werken niet door een syntaxfout; opgelost in WERKTHEMA 02 (komt mee bij livegang)
+- [ ] P2 · Horizon-update (nu 4.3.0) in een kopie van live (WERKTHEMA 03): alle eigen aanpassingen in kernbestanden opnieuw overzetten, testen, dan live
 - [ ] P2 · Section Store-app niet verwijderen na livegang: de pakketkorting draait via die app, ook al gebruikt WERKTHEMA 02 haar winkelwagen niet
 
 ## Bevindingen
@@ -140,7 +141,10 @@ Bovengrens: dezelfde homepage met álle JavaScript geblokkeerd (geen thema, geen
 - Homepage-build (`06_Website_Agent/Homepage-prototype/shopify`): de 02-wijzigingen staan nu ook in de bron (hp-img, hero-uitsnede, beeldbreedtes, shoplinks, duel-animatie). Een nieuwe build geeft dezelfde bestanden als 02. De brandvideo-poster laadt nu ook in 02 pas bij naderen, zoals de bron al deed.
 - Kortingscodes: TTL10 combineerde niet met productkortingen (pakketkorting); dat is een Shopify-instelling, geen themafout.
 
-### 9. Wat overblijft
+### 9. Live gezet (4-11)
+Op opdracht van de gebruiker is WERKTHEMA 02 (`203928076615`) op 4-11 gepubliceerd; het vorige live-thema `203461034311` staat unpublished als terugvaloptie. Daarna op de live site gecontroleerd: geen fouten op 10 pagina's, winkelwagen en kortingscode kloppen.
+
+### 10. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte

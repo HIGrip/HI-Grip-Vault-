@@ -14,6 +14,20 @@ bijgewerkt: 2026-11-04
 
 ---
 
+## 2026-11-04 — Horizon 4.4.0 `203954520391` live gezet
+
+Op uitdrukkelijke opdracht van de gebruiker in de chat ("Ja, zet live"). Eerst `theme list`: `203928076615` (WERKTHEMA 02) stond live en de update-kopie stond unpublished. Daarna de instellingen en templates van live (76 bestanden) vergeleken met WERKTHEMA 02: geen wijzigingen sinds de kopie. Toen `shopify theme publish`. Nu is `203954520391` live en staat `203928076615` unpublished als terugvaloptie.
+- **Vóór publicatie hersteld in de kopie:** 12 paginatemplates (de update had er main-page in gezet; op ab-a/ab-b verving die de productsectie) en de productgrid in `snippets/product-information-content.liquid` (`2fr 1fr` in plaats van `minmax(0, …)`).
+- **Na publicatie op de live site gecontroleerd:**
+  - geen JS- of Liquid-fouten op 10 pagina's, telefoon en desktop;
+  - één H1 per pagina en In winkelwagen op de A/B-pagina's;
+  - de winkelwagenlade opent, met snelle betaalknoppen;
+  - de knop Checkout opent de Shopify-checkout (geen bestelling geplaatst).
+- **Details:** zie [[2026-11-04-horizon-4-4-update-check]].
+- **Bij de volgende update controleren:**
+  - de paginatemplates;
+  - predictive-search.js, scripts.liquid en product-information-content.liquid.
+
 ## 2026-11-04 — WERKTHEMA 02 `203928076615` live gezet (snelheid + eigen winkelwagen)
 
 Op uitdrukkelijke opdracht van de gebruiker in de chat ("Ja, zet 02 live"). Eerst `theme list`: `203461034311` stond live, 02 unpublished. Vlak voor publicatie gecontroleerd dat instellingen en templates van live sinds de kopie (3-11) niet waren gewijzigd. Daarna `shopify theme publish`; nu is `203928076615` live en `203461034311` unpublished (terugvaloptie).

@@ -33,7 +33,7 @@ Conclusie: de update is bruikbaar, maar **niet zoals hij nu is**. Eerst moeten d
 - [x] P1 · Update-kopie 203954520391: 12 paginatemplates (page.*.json met nieuwe main-page-sectie, incl. ab-a en ab-b) terugzetten vanuit WERKTHEMA 02, alleen die bestanden pushen, daarna opnieuw testen
 - [x] P1 · Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen
 - [x] P2 · Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt
-- [ ] P2 · Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest
+- [x] P2 · Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest
 - [ ] P3 · Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken
 
 ## Kansen
@@ -119,6 +119,9 @@ Na het herstel is de kopie opnieuw naast live gelegd, op telefoon en desktop.
   - de winkelwagenlade, met de knop Afrekenen en snelle betaalknoppen.
 - **Enige zichtbare verschil:** de kleinere productfoto op de desktop-PDP. Daardoor staat het blok eronder een paar pixels anders.
 - **Niet getest:** een echte bestelling afronden en de thema-editor.
+
+### Live gezet (4-11)
+Op opdracht van de gebruiker is `203954520391` op 4-11 gepubliceerd. Vooraf gecontroleerd dat live sinds de kopie niet was gewijzigd. `203928076615` staat nu unpublished als terugvaloptie. Na publicatie op de live site gecontroleerd: geen fouten, de A/B-pagina's verkopen weer, en winkelwagen en checkout werken.
 
 ## Bronnen
 - Preview-tests met puppeteer op www.higrip.nl met `?preview_theme_id=` voor 203928076615 en 203954520391

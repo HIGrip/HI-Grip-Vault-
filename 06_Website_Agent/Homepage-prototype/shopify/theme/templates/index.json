@@ -35,7 +35,7 @@
         "sub": "Je voet blijft op zijn plek in je schoen. Bij elke rem, draai en sprint.",
         "def": "HÏ Grip is een Nederlands sportmerk voor performance gripsokken, voor padel, tennis, voetbal en rugby.",
         "cta_label": "Shop gripsokken",
-        "cta_link": "/collections/gripsokken",
+        "cta_link": "/pages/collection",
         "align": "left",
         "h1_m": 41,
         "h1_d": 74,
@@ -77,7 +77,7 @@
           "type": "link",
           "settings": {
             "label": "Shop",
-            "link": "/collections/gripsokken"
+            "link": "/pages/collection"
           }
         },
         "link_2": {
@@ -397,7 +397,7 @@
             "pos_y": 50,
             "sport": "Gym",
             "go": "Performance gripsokken",
-            "link": "/collections/gripsokken"
+            "link": "/pages/collection"
           }
         }
       },
@@ -1334,7 +1334,7 @@
         "spread_d": 18,
         "spread_m": 12,
         "cta_label": "Shop gripsokken",
-        "cta_link": "/collections/gripsokken",
+        "cta_link": "/pages/collection",
         "btn_m": 15,
         "btn_d": 17,
         "cta_w": 560,
@@ -1399,7 +1399,7 @@
           "type": "column",
           "settings": {
             "title": "Shop",
-            "links": "Alle gripsokken | /collections/gripsokken\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken"
+            "links": "Alle gripsokken | /pages/collection\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken"
           }
         },
         "column_2": {

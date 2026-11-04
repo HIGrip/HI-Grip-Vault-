@@ -48,7 +48,20 @@
   <div class="hp-01-media" data-hp-01-media>
     {%- if s.image_mobile != blank -%}
       <picture>
-        <source media="(max-width: 768px)" srcset="{{ s.image_mobile | image_url: width: 900 }} 900w, {{ s.image_mobile | image_url: width: 1400 }} 1400w" sizes="100vw">
+        {%- liquid
+          # Liggende foto in een staand vak: Shopify snijdt de zichtbare strook uit (op mobiele x-positie), zodat de telefoon niet het hele beeld laadt
+          assign hero_m = s.image_mobile
+          assign crop_w = hero_m.height | times: 0.6 | round
+          if crop_w < hero_m.width
+            assign crop_left = hero_m.width | minus: crop_w | times: s.pos_m_x | divided_by: 100 | round
+            assign hero_m_src = hero_m | image_url: width: crop_w, crop: 'region', crop_left: crop_left, crop_top: 0, crop_width: crop_w, crop_height: hero_m.height
+          endif
+        -%}
+        {%- if hero_m_src -%}
+          <source media="(max-width: 768px)" srcset="{{ hero_m_src }}">
+        {%- else -%}
+          <source media="(max-width: 768px)" srcset="{{ hero_m | image_url: width: 540 }} 540w, {{ hero_m | image_url: width: 720 }} 720w, {{ hero_m | image_url: width: 900 }} 900w, {{ hero_m | image_url: width: 1400 }} 1400w" sizes="100vw">
+        {%- endif -%}
         {%- render 'hp-img', image: s.image, class: 'hp-01-media__el', sizes: '100vw', alt: s.image_alt, priority: true -%}
       </picture>
     {%- else -%}
@@ -692,7 +705,7 @@
           "type": "link",
           "settings": {
             "label": "Shop",
-            "link": "/collections/gripsokken"
+            "link": "/pages/collection"
           }
         },
         {

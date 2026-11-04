@@ -53,7 +53,7 @@ DEFAULT_BLOCKS = [
     ('photo', {'image': 'shopify://shop_images/hp-sp-padel-voeten-1800.webp', 'alt': 'Padelspeler strikt zijn schoen, witte gripsokken, racket en ballen op een blauwe baan', 'pos_x': 66, 'pos_y': 50, 'sport': 'Padel', 'go': 'Gripsokken voor padel', 'link': '/pages/gripsokken-voor-padel'}),
     ('photo', {'image': 'shopify://shop_images/hp-sp-tennis-wit-1179.webp', 'alt': 'Tennisser in witte gripsokken op de baan', 'pos_x': 50, 'pos_y': 50, 'sport': 'Tennis', 'go': 'Gripsokken voor tennis', 'link': '/pages/gripsokken-voor-tennis'}),
     ('photo', {'image': 'shopify://shop_images/hp-sp-voetbal-zool-1800.webp', 'alt': 'Voetballer op kunstgras, witte gripsokken met grippatroon onder de zool', 'pos_x': 68, 'pos_y': 50, 'sport': 'Voetbal', 'go': 'Gripsokken voor voetbal', 'link': '/pages/gripsokken-voor-voetbal'}),
-    ('photo', {'image': 'shopify://shop_images/hp-sp-gym-1800.webp', 'alt': 'Sporter in witte gripsokken traint met een halterstang in de gym', 'pos_x': 50, 'pos_y': 50, 'sport': 'Gym', 'go': 'Performance gripsokken', 'link': '/collections/gripsokken'}),
+    ('photo', {'image': 'shopify://shop_images/hp-sp-gym-1800.webp', 'alt': 'Sporter in witte gripsokken traint met een halterstang in de gym', 'pos_x': 50, 'pos_y': 50, 'sport': 'Gym', 'go': 'Performance gripsokken', 'link': '/pages/collection'}),
 ]
 
 

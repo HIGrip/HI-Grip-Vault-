@@ -47,7 +47,7 @@ def settings(sp):
     sp.text('sub', 'Subregel', 'Je voet blijft op zijn plek in je schoen. Bij elke rem, draai en sprint.', multiline=True)
     sp.text('def', 'Definitiezin (klein)', 'HÏ Grip is een Nederlands sportmerk voor performance gripsokken, voor padel, tennis, voetbal en rugby.', multiline=True)
     sp.text('cta_label', 'Knop: tekst', 'Shop gripsokken')
-    sp.url('cta_link', 'Knop: link', '/collections/gripsokken')
+    sp.url('cta_link', 'Knop: link', '/pages/collection')
     sp.select('align', 'Uitlijning tekst', [('left', 'Links'), ('center', 'Midden')], 'left')
     sp.size('h1', 'Kop grootte', '--hp-01-h1-k', '.hp-01-h1')
     sp.range('h1_mw_m', 'Kop: max. breedte mobiel (in tekens)', 6, 30, 1, 'ch', 13, '--hp-01-h1-mw', fmt='{v}ch', where='m')
@@ -82,7 +82,7 @@ BLOCKS = [{
     ]}]
 MAX_BLOCKS = 8
 DEFAULT_BLOCKS = [
-    ('link', {'label': 'Shop', 'link': '/collections/gripsokken'}),
+    ('link', {'label': 'Shop', 'link': '/pages/collection'}),
     ('link', {'label': 'Sporten', 'link': '#sporten'}),
     ('link', {'label': 'Over ons', 'link': '/pages/over-ons'}),
     ('link', {'label': 'Zakelijk', 'link': '/pages/zakelijk'}),

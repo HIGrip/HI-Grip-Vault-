@@ -32,12 +32,11 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 
 ## Acties
 - [ ] P1 · Besluit: WERKTHEMA 02 live zetten, na een eigen klikronde op de preview (winkelwagen, toevoegen, zoeken, account, maten kiezen, cookiebanner)
-- [ ] P2 · De twee wijzigingen in hp-home.css (duel-animatie zonder z-index, preserve-3d) ook in de bron van de homepage-build zetten, anders draait de volgende build ze terug
 - [ ] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
 - [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
 - [ ] P2 · Live hi-shop.js: kleurknoppen op /pages/collection werken niet door een syntaxfout; opgelost in WERKTHEMA 02 (komt mee bij livegang)
-- [ ] P2 · Bij livegang van WERKTHEMA 02 de Section Store-winkelwagen-embed en de Translation Lab-embed ook in live uitzetten (nu alleen in de kopie uit); pack-korting en gratis verzending draaien server-side door
+- [ ] P2 · Section Store-app niet verwijderen na livegang: de pakketkorting draait via die app, ook al gebruikt WERKTHEMA 02 haar winkelwagen niet
 
 ## Bevindingen
 ### 1. Wat er in WERKTHEMA 02 is veranderd
@@ -134,7 +133,14 @@ Bovengrens: dezelfde homepage met álle JavaScript geblokkeerd (geen thema, geen
 - Foutscan op 10 pagina's, telefoon en desktop: geen JavaScript-fouten, geen Liquid-fouten, geen kapotte beelden, geen horizontale scroll. Toevoegen met pakketkeuze opent de winkelwagen met de juiste bedragen.
 - Blijft: de cookiebanner van Shopify verschuift op telefoon soms de aankondigingsbalk (CLS tot 0,08, ook live).
 
-### 8. Wat overblijft
+### 8. Ronde 5 (4-11): na eigen klikronde
+- Winkelwagen: snelle betaalknoppen (Apple Pay, Google Pay, PayPal) weer onder de afrekenknop. Een kortingscode staat nu als eigen regel ("Code TTL10") onder "Korting", en de onderste regel heet "Totaal"; eerder stond "Subtotaal" er twee keer.
+- Taalkeuze: de schakelaar van Translation Lab stond in live al uit; de taalkeuze is die van Horizon zelf (menu en header). Getest in 02: English opent /en met Engelse teksten.
+- Account: het icoon gaat naar /account; Shopify stuurt wie niet is ingelogd door naar de inlogpagina.
+- Homepage-build (`06_Website_Agent/Homepage-prototype/shopify`): de 02-wijzigingen staan nu ook in de bron (hp-img, hero-uitsnede, beeldbreedtes, shoplinks, duel-animatie). Een nieuwe build geeft dezelfde bestanden als 02. De brandvideo-poster laadt nu ook in 02 pas bij naderen, zoals de bron al deed.
+- Kortingscodes: TTL10 combineerde niet met productkortingen (pakketkorting); dat is een Shopify-instelling, geen themafout.
+
+### 9. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte

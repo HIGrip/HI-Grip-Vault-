@@ -124,7 +124,7 @@ Echte vertraging, mediaan van 4 runs, hetzelfde thema-ID (basis2 tegen opt4):
 
 Het doel van 3x sneller is met echte vertraging niet gehaald. FCP blijft rond 3,1 s: dat bepalen de verbinding, de HTML en de vaste Horizon-CSS (51 KB), niet de apps of de foto's.
 
-Bovengrens: dezelfde homepage met álle JavaScript geblokkeerd (geen thema, geen apps, geen Shopify-scripts) haalt LCP 3,8 s en geladen 6,1 s (mediaan van 3). Dat is 2,2x en 2,5x tegen de basis. Zonder JavaScript én zonder webfonts (alleen HTML, CSS en de hero): LCP 3,4 s (2,4x), FCP 2,85 s. De hero zelf is al 509 x 848 px WebP (116 KB). 3x op LCP kan met deze verbinding dus niet vanuit het thema; daarvoor moeten de HTML, de Horizon-CSS of de hero zelf kleiner, of moet het thema vervangen worden.
+Bovengrens: dezelfde homepage met álle JavaScript geblokkeerd (geen thema, geen apps, geen Shopify-scripts) haalt LCP 3,8 s en geladen 6,1 s (mediaan van 3). Dat is 2,2x en 2,5x tegen de basis. Zonder JavaScript én zonder webfonts (alleen HTML, CSS en de hero): LCP 3,4 s (2,4x), FCP 2,85 s. De hero zelf is al 509 x 848 px WebP (116 KB). Laadtijd: een pagina zonder één themabestand (geen thema-CSS, thema-JS, fonts of app-embeds), alleen met de scripts die Shopify zelf altijd toevoegt, laadt de homepage in 5,2 s (2,9x) en de productpagina in 7,0 s (1,7x). 3x op LCP en op laadtijd kan met deze verbinding dus niet vanuit het thema; daarvoor moeten de HTML, de Horizon-CSS of de hero zelf kleiner, of moet het thema vervangen worden.
 
 ### 7. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.

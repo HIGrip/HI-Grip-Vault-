@@ -2123,6 +2123,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "besluiten: altijd een persoon in beeld of de schets zonder persoon"
  },
+ "2026-10-27-ek-rugby-u18-u20-plan#4387d3ec": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets, Claude wijzigt nooit voorraad",
+  "wat_jij_doet": "voorraad bijbestellen of de EK-rugby-promotie temporiseren"
+ },
  "2026-10-27-ek-rugby-u18-u20-plan#4a8ec8bf": {
   "beoordeeld": "2026-10-29",
   "claude": "nee",
@@ -2656,6 +2662,90 @@
   "claude": "nee",
   "wat_claude_doet": "niets",
   "wat_jij_doet": "startdatum en uren per week voor CRM-blok A vaststellen"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#0003033f": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "afbeeldingen en sizes-attributen van het blogoverzicht doorlichten en een concreet voorstel vastleggen",
+  "wat_jij_doet": "beoordelen en laten doorvoeren"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#6b972637": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "hi-sale-price.css, hi-headings.css en hi-app-fixes.css samenvoegen tot hi-site.css in WERKTHEMA 02 en de actieprijs op var hi-red zetten",
+  "wat_jij_doet": "controleren en meenemen in de livegang"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#9ceb0075": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "losse snelheidsdoorlichting van productpagina 2.0 maken en als notitie vastleggen",
+  "wat_jij_doet": "beoordelen"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#c8a3c793": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "maak_cwv in 02_Dashboard/_tools/google_data.py aanpassen naar de Shopify web_performance-query in plaats van PageSpeed Insights",
+  "wat_jij_doet": "controleren en vrijgeven"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#e72e6875": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het testthema SNELHEID TEST 2026-11-03 zelf verwijderen in de Shopify-admin"
+ },
+ "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
+  "beoordeeld": "2026-11-04",
+  "claude": "deels",
+  "wat_claude_doet": "render-timing van de cookiebanner meten met een browsertest",
+  "wat_jij_doet": "beoordelen of en hoe de cookiebanner-appinstellingen aangepast kunnen worden"
+ },
+ "2026-11-03-snelheid-werkthema-02#5d296996": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten welke apps op elke pagina blijven"
+ },
+ "2026-11-03-snelheid-werkthema-02#5e485f54": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets, afhankelijk van een toekomstige Horizon-update",
+  "wat_jij_doet": "melden zodra Horizon is bijgewerkt, zodat dit opnieuw gedaan kan worden"
+ },
+ "2026-11-03-snelheid-werkthema-02#7a5719d8": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "priority-vlaggen per hp-sectie in WERKTHEMA 02 controleren en zo instellen dat alles onder de vouw op lazy staat, zonder JavaScript",
+  "wat_jij_doet": "controleren en meenemen in de livegang-beslissing"
+ },
+ "2026-11-03-snelheid-werkthema-02#aacd5803": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets, puur afhankelijk van livegang van WERKTHEMA 02",
+  "wat_jij_doet": "WERKTHEMA 02 live zetten, waarna de velddata-vergelijking relevant wordt"
+ },
+ "2026-11-03-snelheid-werkthema-02#c7f7d264": {
+  "beoordeeld": "2026-11-04",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "zelf de klikronde doen op de preview en WERKTHEMA 02 live zetten"
+ },
+ "2026-11-03-snelheid-werkthema-02#e34c43f3": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "de twee CSS-wijzigingen (geen z-index, preserve-3d) doorvoeren in de bron van de homepage-build in de vault",
+  "wat_jij_doet": "controleren en meenemen in de volgende build"
+ },
+ "2026-11-03-sportretail-nederland#99ac7353": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "shortlist van DAKA inkoop teamsport/racket, Absolute Teamsport, Soccer Center en PadelShop toevoegen aan de B2B-lijst in de vault",
+  "wat_jij_doet": "shortlist beoordelen en eventueel outreach starten"
+ },
+ "2026-11-03-sportretail-nederland#d1a1c2dd": {
+  "beoordeeld": "2026-11-04",
+  "claude": "ja",
+  "wat_claude_doet": "Bever met contactgegevens toevoegen aan de B2B-lijst voor de Performance Ski Socks",
+  "wat_jij_doet": "beoordelen en eventueel contact leggen"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

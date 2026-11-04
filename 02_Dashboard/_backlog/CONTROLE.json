@@ -2852,9 +2852,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "collections gripsokken toont zelf nog 3000 plus en 3500 plus naast elkaar, niet geharmoniseerd; en en homepage gebruiken al consistent 3500 plus",
-   "controle": "sportersaantal op collections gripsokken, en en homepage",
-   "gecontroleerd": "2026-11-03",
+   "bewijs": "collections gripsokken toont zelf nog 3000+ en 3500+ naast elkaar (2x elk), niet geharmoniseerd; en en de NL-homepage gebruiken beide al consistent 3500+",
+   "controle": "sportersaantal op collections gripsokken, en en homepage, en nl homepage",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3086,9 +3086,9 @@
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "telefoonnummer staat nog binnen een mailto-link, geen tel-link",
-   "controle": "telefoonlink in de footer op tel versus mailto",
-   "gecontroleerd": "2026-11-03",
+   "bewijs": "het telefoonnummer +31 6 24 56 65 47 in het text_TxDeYL-blok staat nog binnen href mailto info@higrip.nl, geen tel-link",
+   "controle": "telefoonlink in de footer (text_TxDeYL) op tel versus mailto",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3173,11 +3173,12 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#8af06cb2": {
-   "bewijs": "footer van de live en-homepage bevat nog 13 inline svg-elementen en 0 img-tags, niet omgezet naar lazy img",
+   "bewijs": "footer van www.higrip.nl toont nu 9 betaalicoon-img-tags met loading lazy (american_express, apple_pay, google_pay, klarna, maestro, etc.) en 0 inline svg's in de payment-icons__list, omgezet naar lazy img",
    "controle": "aantal inline svg-betaaliconen in de footer op de live homepage",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
-   "uitkomst": "open"
+   "sinds": "2026-11-04",
+   "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#96b379ab": {
    "bewijs": "hp_01 in templates/index.json heeft image en image_mobile op dezelfde afbeelding IMG_3844, geen apart gecomprimeerde staande mobiele uitsnede",
@@ -3403,6 +3404,13 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-11-03-snelheid-nulmeting-alle-paginas#0003033f": {
+   "bewijs": "sizes-attributen op blogs hi-grip zien er al responsive uit, maar de daadwerkelijke KB-besparing op mobiel is niet te bevestigen zonder de beeldbestanden zelf te downloaden",
+   "controle": "beeldgrootte en sizes-attributen op het blogoverzicht blogs hi-grip",
+   "gecontroleerd": "2026-11-04",
+   "methode": "site",
+   "uitkomst": "open"
+  },
   "2026-11-03-snelheid-nulmeting-alle-paginas#40ca6a6b": {
    "bewijs": "src/js/00-base.js:305 en src/js/06-visuele-pauze.js:36,102 hebben rootMargin 150% 0px en dataset.poster; src/sections/04-social-proof.liquid, 07-kies-je-sport.liquid en 08-over-ons.liquid gebruiken alle de breedteladder 500,1000,1500,2000; theme/assets/hp-home.js (gebundeld) heeft dezelfde rootMargin 150% 0px",
    "controle": "homepage-build bijgewerkt met de fixes die in het thema staan (hp-04, hp-06, hp-07, hp-08, hp-base, hp-home.js)",
@@ -3438,6 +3446,13 @@
    "gecontroleerd": "2026-11-04",
    "methode": "geen",
    "uitkomst": "handmatig"
+  },
+  "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
+   "bewijs": "niet te controleren: renderstiming van de cookiebanner vereist een echte browser/lab-meting, niet vast te stellen met curl",
+   "controle": "rendersnelheid van de Shopify-cookiebanner als LCP-element op winkelwagen en contact",
+   "gecontroleerd": "2026-11-04",
+   "methode": "site",
+   "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#fa8c546f": {
    "bewijs": "zelfde eindtoestand als 2026-10-30-snelheid-code-audit-homepage, Poppins alleen via font_face en Google Fonts-link schrappen",
@@ -3513,7 +3528,7 @@
   "backlog#072e2482": {
    "bewijs": "geen van beide URLs heeft een meta description of robots-tag",
    "controle": "meta description en robots-meta op pages gripsokken-2-0 en gripsokken-2-1",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3532,16 +3547,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "geen pagina in sitemap_pages_1.xml die op eigen meetdata of onderzoek wijst, niet gevonden",
+   "bewijs": "sitemap_pages_1.xml bevat 26 paginas, geen enkele over bewijs, meetdata of onderzoek",
    "controle": "gezocht naar een bewijspagina met eigen meetdata via de sitemap",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#246c61d9": {
-   "bewijs": "tegenspraak bevestigd: shipping-policy zegt dezelfde dag verzonden terwijl verzendbeleid 1 werkdag zegt; refund-policy noemt 14 dagen plus 25 procent kosten terwijl retourbeleid 30 dagen zonder kosten noemt",
-   "controle": "inhoud policies vergeleken met pages verzendbeleid, retourbeleid, terugbetalingsbeleid",
-   "gecontroleerd": "2026-11-03",
+   "bewijs": "tegenspraak blijft: policies shipping-policy zegt dezelfde dag verzonden terwijl pages verzendbeleid binnen 1 werkdag zegt; policies refund-policy noemt 14 dagen plus 25 procent kosten terwijl pages retourbeleid 30 dagen noemt",
+   "controle": "inhoud policies vergeleken met pages verzendbeleid en retourbeleid",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3553,9 +3568,9 @@
    "uitkomst": "open"
   },
   "backlog#32925dba": {
-   "bewijs": "blogs intern geeft 200, geen robots-metatag, en staat nog vermeld in sitemap_blogs_1.xml",
+   "bewijs": "blogs intern geeft nog 200, geen robots-metatag aanwezig, en staat nog vermeld in sitemap_blogs_1.xml",
    "controle": "blogs intern publiek, robots-meta en sitemapvermelding",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3581,9 +3596,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
-   "bewijs": "collections all heeft geen meta description tag",
+   "bewijs": "collections all heeft nog geen meta description tag",
    "controle": "meta description van collections all",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3662,9 +3677,9 @@
    "uitkomst": "dubbel"
   },
   "backlog#a2e3406d": {
-   "bewijs": "pack-selector toont alleen totaalprijzen per pack, geen losse prijs-per-paar-tekst",
+   "bewijs": "geen tekst per paar gevonden op pages gripsokken-2-0",
    "controle": "prijs per paar naast de pack-selector",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3691,9 +3706,9 @@
    "uitkomst": "gedaan"
   },
   "backlog#b1876b36": {
-   "bewijs": "padel en tennis staan er al op beide paginas, rugby komt 0 keer voor; de storende code-tag is wel weg",
+   "bewijs": "performance-gripsokken 1.0: padel 4x, tennis 38x, rugby 0x; performance-gripsokken-2-0-wit: padel 3x, tennis 39x, rugby 0x; geen code-tag meer op beide",
    "controle": "aanwezigheid padel, tennis, rugby en code-tag op 1.0- en 2.0-productpaginas",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3707,21 +3722,21 @@
   "backlog#b81d4226": {
    "bewijs": "0 video-tags op performance-gripsokken en de 2.0-wit variant",
    "controle": "aanwezigheid van een video-tag op productpaginas",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#bf53be16": {
-   "bewijs": "titel is HI Grip Ontdek Jouw Sport, generiek zonder zoekwoord vooraan, lijkt niet specifiek herschreven",
+   "bewijs": "titel is nog HI Grip Ontdek Jouw Sport (merk vooraan, generiek), niet specifiek herschreven met zoekwoord vooraan",
    "controle": "titel en meta van pages ontdek-jouw-sport",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#c51a9579": {
    "bewijs": "titel is nu Betalingsbeleid HI Grip, American Express is weg, maar er is nog geen meta description tag aanwezig",
    "controle": "titel en meta description van pages terugbetalingsbeleid",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3735,7 +3750,7 @@
   "backlog#d6d843f3": {
    "bewijs": "geen meta description tag aanwezig",
    "controle": "meta description op pages teamorder",
-   "gecontroleerd": "2026-11-03",
+   "gecontroleerd": "2026-11-04",
    "methode": "site",
    "uitkomst": "open"
   },

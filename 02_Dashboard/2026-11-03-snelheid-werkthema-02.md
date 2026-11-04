@@ -1,7 +1,7 @@
 ---
 id: 2026-11-03-snelheid-werkthema-02
 titel: "Snelheid higrip.nl: optimalisaties in WERKTHEMA 02"
-kerntitel: "WERKTHEMA 02: 3 tot 5 keer minder rekenwerk, laden 1,5 tot 1,7 keer sneller, LCP niet 3x"
+kerntitel: "WERKTHEMA 02: rekenwerk 2,4 tot 5x lager, laden 1,8 tot 1,9x sneller, eigen winkelwagen"
 datum: 2026-11-03
 bron: los
 routine: ""
@@ -35,7 +35,8 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 - [ ] P2 · De twee wijzigingen in hp-home.css (duel-animatie zonder z-index, preserve-3d) ook in de bron van de homepage-build zetten, anders draait de volgende build ze terug
 - [ ] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
-- [ ] P1 · Besluit: welke apps blijven op elke pagina (Section Store-winkelwagen 97 KB, Translation Lab, EcomSend); hun scripts zitten in content_for_header en remmen de hero, het thema kan ze niet tegenhouden
+- [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
+- [ ] P2 · Bij livegang van WERKTHEMA 02 de Section Store-winkelwagen-embed en de Translation Lab-embed ook in live uitzetten (nu alleen in de kopie uit); pack-korting en gratis verzending draaien server-side door
 - [ ] P3 · Homepage: afbeeldingen onder de vouw pas laden na de hero (getest: LCP 7,1 → 5,9 s met echte vertraging), alleen met een oplossing die zonder JavaScript en voor Google blijft werken
 
 ## Bevindingen
@@ -86,7 +87,30 @@ Puppeteer, 4× CPU, traag 4G (562 ms RTT, 1,47 Mbit/s, de waarden die Lighthouse
 
 De hero van de homepage is gebonden aan bandbreedte: hij deelt de lijn met de HTML (~60 KB), de CSS (~80 KB), app-scripts uit content_for_header (Section Store 97 KB, Shopify-pixels 84 KB, cookiebanner 21 KB, perf-kit 26 KB) en afbeeldingen onder de vouw (~325 KB). Test met die afbeeldingen geblokkeerd: LCP 5,9 s. Een 3x snellere LCP (2,6 s) is met deze apps niet haalbaar vanuit het thema. Live krijgt bovendien Early Hints (CSS al binnen vóór de HTML), previews niet; na livegang wint 02 daardoor ook op FCP.
 
-### 5. Wat overblijft
+### 5. Ronde 2 (4-11): apps vervangen zonder stijlverlies
+Na de vraag om de visuele stijl te houden:
+- **Winkelwagen:** de Section Store-drawer (97 KB script plus CSS op elke pagina) is vervangen door de eigen drawer van Horizon, opgemaakt zoals de oude: oranje kop met icoon, verzendbalk tot €35 met "Nog €X voor GRATIS VERZENDING", van-prijs per regel, open kortingscodeveld met oranje knop, regel Korting, Subtotaal met doorgestreepte van-prijs, oranje knop "Checkout • totaal", betaaliconen en de drie badges, lege staat met "Populair bij sporters". Gaat vanzelf open na toevoegen. Getest: aantal wijzigen, verwijderen, lege staat, 5-pack toevoegen (€69,95, gelijk aan de productpagina), geen consolefouten. Bestanden: `snippets/hi-cart-extras.liquid` (nieuw), `assets/hi-cart.css` (nieuw), `snippets/cart-drawer.liquid`, `snippets/cart-summary.liquid`, `snippets/cart-products.liquid`.
+- **Prijzen ongewijzigd:** de pack-korting is een Shopify-kortingsfunctie op de regel-eigenschap `__section_store_bundle` en staat al in `/cart.js` zonder de drawer (3 paar €53,85 → €44,95). De Section Store-bundelkeuze op de productpagina blijft.
+- **Translation Lab:** taal- en landkiezer stonden allebei uit, maar de embed laadde wel scripts. Embed uit in WERKTHEMA 02.
+- **Fonts:** Poppins op de homepage via Shopify `font_face` (eigen domein) in plaats van Google Fonts; cursief 900 (hero) met preload.
+- **Hero mobiel:** de liggende foto (1264×848) staat in een staand vak; Shopify snijdt nu de zichtbare strook uit (`crop: 'region'`, x-positie uit de sectie-instelling). Even zwaar, maar ruim twee keer zoveel echte pixels in beeld (was zichtbaar zacht, ook op live).
+- **Beeldbreedtes:** fotoraster en over-ons krijgen 375/550/750 erbij; rugby 101 → 76 KB op mobiel.
+
+Meting na ronde 2, echte vertraging, zelfde thema, mediaan van 4:
+
+| | Basis | Nu | Factor |
+|---|---|---|---|
+| Home load | 15,1 s | 8,0 s | 1,9× |
+| Product load | 11,7 s | 6,5 s | 1,8× |
+| Home TBT | 2,0 s | 0,86 s | 2,4× |
+| Product TBT | 1,5 s | 0,67 s | 2,3× |
+| Home DOMContentLoaded | 9,7 s | 6,3 s | 1,5× |
+| Home LCP | 8,3 s | 6,1 s | 1,35× |
+| Product LCP | 3,5 s | 3,3 s | 1,07× |
+
+Waarom LCP niet 3× sneller wordt: op traag 4G (1,47 Mbit/s) bepalen bytes de tijd. Vóór de hero moeten de HTML (~56 KB), de render-blokkerende CSS (Horizons gebundelde `compiled_assets/styles.css` 51 KB, base.css, hp-home.css) en de hero zelf (~120 KB) binnen zijn, naast Shopify-scripts die het thema niet kan sturen (web-pixels 84 KB, perf-kit 27 KB, webmcp 25 KB, cookiebanner 21 KB). Ongebruikte secties en blokken weghalen scheelt maar ~7 KB van die CSS.
+
+### 6. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte

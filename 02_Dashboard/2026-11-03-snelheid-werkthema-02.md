@@ -1,7 +1,7 @@
 ---
 id: 2026-11-03-snelheid-werkthema-02
 titel: "Snelheid higrip.nl: optimalisaties in WERKTHEMA 02"
-kerntitel: "WERKTHEMA 02: rekenwerk 2,4 tot 5x lager, laden 1,8 tot 1,9x sneller, eigen winkelwagen"
+kerntitel: "WERKTHEMA 02: laden 1,8 tot 1,9x sneller, homepage-LCP 1,6x, eigen winkelwagen"
 datum: 2026-11-03
 bron: los
 routine: ""
@@ -37,7 +37,6 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
 - [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
 - [ ] P2 · Bij livegang van WERKTHEMA 02 de Section Store-winkelwagen-embed en de Translation Lab-embed ook in live uitzetten (nu alleen in de kopie uit); pack-korting en gratis verzending draaien server-side door
-- [ ] P3 · Homepage: afbeeldingen onder de vouw pas laden na de hero (getest: LCP 7,1 → 5,9 s met echte vertraging), alleen met een oplossing die zonder JavaScript en voor Google blijft werken
 
 ## Bevindingen
 ### 1. Wat er in WERKTHEMA 02 is veranderd
@@ -110,7 +109,22 @@ Meting na ronde 2, echte vertraging, zelfde thema, mediaan van 4:
 
 Waarom LCP niet 3× sneller wordt: op traag 4G (1,47 Mbit/s) bepalen bytes de tijd. Vóór de hero moeten de HTML (~56 KB), de render-blokkerende CSS (Horizons gebundelde `compiled_assets/styles.css` 51 KB, base.css, hp-home.css) en de hero zelf (~120 KB) binnen zijn, naast Shopify-scripts die het thema niet kan sturen (web-pixels 84 KB, perf-kit 27 KB, webmcp 25 KB, cookiebanner 21 KB). Ongebruikte secties en blokken weghalen scheelt maar ~7 KB van die CSS.
 
-### 6. Wat overblijft
+### 6. Ronde 3 (4-11): foto's onder de hero later laden
+Op de homepage laden alle beelden onder de hero pas als de hero binnen is, bij de eerste scroll of tik, of na 4 s. Zonder JavaScript staat er een gewone afbeelding in een noscript-blok, dus Google en bezoekers zonder JavaScript zien alles. In de theme-editor blijft alles direct laden. Getest op telefoonbreedte: alle 30 beelden laden, geen kapotte beelden, geen "Liquid error".
+
+Echte vertraging, mediaan van 4 runs, hetzelfde thema-ID (basis2 tegen opt4):
+
+| | Basis | Nu | Factor |
+|---|---|---|---|
+| Homepage LCP | 8,3 s | 5,1 s | 1,6x |
+| Homepage geladen | 15,1 s | 7,8 s | 1,9x |
+| Homepage DOM klaar | 9,7 s | 5,6 s | 1,8x |
+| Productpagina geladen | 11,7 s | 6,7 s | 1,7x |
+| Homepage TBT | 2,0 s | 1,0 s | 2,0x |
+
+Het doel van 3x sneller is met echte vertraging niet gehaald. FCP blijft rond 3,1 s: dat bepalen de verbinding, de HTML en de vaste Horizon-CSS (51 KB), niet de apps of de foto's.
+
+### 7. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte

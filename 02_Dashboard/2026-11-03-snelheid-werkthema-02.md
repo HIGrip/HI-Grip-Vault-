@@ -36,6 +36,7 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 - [ ] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
 - [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
+- [ ] P2 · Live hi-shop.js: kleurknoppen op /pages/collection werken niet door een syntaxfout; opgelost in WERKTHEMA 02 (komt mee bij livegang)
 - [ ] P2 · Bij livegang van WERKTHEMA 02 de Section Store-winkelwagen-embed en de Translation Lab-embed ook in live uitzetten (nu alleen in de kopie uit); pack-korting en gratis verzending draaien server-side door
 
 ## Bevindingen
@@ -126,7 +127,14 @@ Het doel van 3x sneller is met echte vertraging niet gehaald. FCP blijft rond 3,
 
 Bovengrens: dezelfde homepage met álle JavaScript geblokkeerd (geen thema, geen apps, geen Shopify-scripts) haalt LCP 3,8 s en geladen 6,1 s (mediaan van 3). Dat is 2,2x en 2,5x tegen de basis. Zonder JavaScript én zonder webfonts (alleen HTML, CSS en de hero): LCP 3,4 s (2,4x), FCP 2,85 s. De hero zelf is al 509 x 848 px WebP (116 KB). Laadtijd: een pagina zonder één themabestand (geen thema-CSS, thema-JS, fonts of app-embeds), alleen met de scripts die Shopify zelf altijd toevoegt, laadt de homepage in 5,2 s (2,9x) en de productpagina in 7,0 s (1,7x). 3x op LCP en op laadtijd kan met deze verbinding dus niet vanuit het thema; daarvoor moeten de HTML, de Horizon-CSS of de hero zelf kleiner, of moet het thema vervangen worden.
 
-### 7. Wat overblijft
+### 7. Ronde 4 (4-11): klaar voor livegang
+- Winkelwagen: de doorgestreepte prijs van een pakket was 5 x de adviesprijs (5-pack €99,75), terwijl de pakketkeuze op de productpagina €89,75 toont. Nu rekent de winkelwagen bij pakketkorting met losse prijs x aantal, en anders met de adviesprijs. Getest: 3-pack €53,85 naar €44,95 en 5-pack €89,75 naar €69,95, gelijk aan de productpagina.
+- Shoplinks: de lege winkelwagen, homepage-knoppen, de FAQ en de vergelijkpagina gingen naar /collections/gripsokken (Horizon-collectiepagina). Het menu gebruikt /pages/collection (de eigen shoppagina); alle links wijzen daar nu naar.
+- Shoppagina: hi-shop.js had een syntaxfout (`img.hi-s-alt=` door een zoek-en-vervang), waardoor de kleurknoppen zwart/wit niets deden. Die fout staat ook in live.
+- Foutscan op 10 pagina's, telefoon en desktop: geen JavaScript-fouten, geen Liquid-fouten, geen kapotte beelden, geen horizontale scroll. Toevoegen met pakketkeuze opent de winkelwagen met de juiste bedragen.
+- Blijft: de cookiebanner van Shopify verschuift op telefoon soms de aankondigingsbalk (CLS tot 0,08, ook live).
+
+### 8. Wat overblijft
 Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manager 0,5 tot 0,7 s, perf-kit ~0,2 s). Dat valt niet vanuit het thema te sturen.
 
 ## Wat niet lukte

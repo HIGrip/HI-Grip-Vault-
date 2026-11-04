@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "Echte bezoekers zitten op alle paginatypes al in het groen (Shopify-velddata, 30 dagen: LCP p75 mobiel 1,1 tot 1,5 s, INP onder 115 ms), maar in het lab (trage telefoon, 4G) laadt elke pagina 1,9 tot 2,8 MB met ~860 KB JavaScript en scoort mobiel 41 tot 58. Die JavaScript zit op elke pagina: Shop-login, EcomSend, Section Store en Shopify zelf; de grootste winst voor de hele site zit dus in apps en scripts, niet in losse pagina's."
-gerelateerd: [2026-10-30-snelheid-code-audit-homepage, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-11-03-snelheid-werkthema-02]
+gerelateerd: [2026-10-30-snelheid-code-audit-homepage, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-11-03-snelheid-werkthema-02, 2026-11-04-snelheid-vergelijking-andere-webshops]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -23,9 +23,19 @@ Voorstel, geen besluit. Alleen advies, read-only: niets gebouwd, gepubliceerd, v
 Briefing: [[2026-11-05-briefing-performance-days]] (Operations, 08_Operations_Agent).
 
 ## In het kort
-Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026. Doel: nieuwe klanten en winstgevende omzet.
+Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026, laatste dag Cyber Monday 30-11-2026. Doel: nieuwe klanten en winstgevende omzet. Bijgewerkt 05-11-2026 na besluiten van Lars (kaart t_e8144db7).
 
-**Voorlopige score: 5 op 10 (oranje).** Dit is een inschatting van de kwaliteit en startklaarheid van het aangeleverde concept, niet van een gemeten effect. Er is niets getest, geen data over deze actie en geen rendement ingevuld. De score stijgt naar 7 of hoger als: scope vaststaat, de rendementswaarden zijn ingevuld en CM1 positief is, de mechaniektests T1 tot en met T16 zijn geslaagd, en de meting voor nieuwe klanten werkt. De score daalt als rechten of voorraad niet kloppen.
+| Beslist door Lars (bron: bericht Lars, via briefing-aanvulling) | Nog open |
+|---|---|
+| 1.0 en 2.0 doen beide mee | Mixen van 1.0 en 2.0 in één bestelling |
+| Rugby is de hoofdhoek | B2B, teamorders en ambassadeurs uitsluiten (niet besloten) |
+| Cyber Monday 30-11 is de laatste dag; voorbereiding niet afgekapt op 15-11 | Verzendregel A, B of C voor het 4-paar-1.0-mandje |
+| Aankondigingsvideo eerst, daarna mail met vroege toegang voor inschrijvers; Social loopt eerder dan de website; website pas als de actie live is | Rendementswaarden: wie levert ze en wanneer |
+| Bouwen in het werkthema pas over ongeveer 2 weken | Gedeeltelijke 1+1-retour en actievoorwaarden |
+
+**Winst:** volgens Lars is de actie winstgevend. Er zijn geen cijfers aangeleverd en financiële data zijn niet gelezen, dus de claim is niet onafhankelijk verifieerbaar. CM1, maximale CAC en de formule in 4 (inclusief btw-basis) blijven ongewijzigd tot er waarden zijn. **Rechten:** aanwezig volgens Lars; gebruiksscope niet onafhankelijk gecontroleerd.
+
+**Voorlopige score: 5 op 10 (oranje), bewust gelijk gehouden na de besluiten van 05-11.** Dit is een inschatting van de kwaliteit en startklaarheid van het aangeleverde concept, niet van een gemeten effect. Waarom gelijk: de scope is beslist, maar winst en rechten zijn een uitspraak zonder bewijs, verzendregel, mixen en uitsluitingen zijn open, het beleid op de site spreekt zichzelf nog tegen, en meting en tests ontbreken. De score stijgt naar 7 of hoger als: de open scopepunten vaststaan, de rendementswaarden zijn ingevuld en CM1 positief is, de mechaniektests T1 tot en met T16 zijn geslaagd, het beleid is hersteld, en de meting voor nieuwe klanten werkt. De score daalt als rechten of voorraad niet kloppen.
 
 ## Kerncijfers
 - **288** · Linkklikken Meta-test (gemeten, ads-notitie 04-11)
@@ -33,45 +43,48 @@ Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026. D
 - **5** · Add-to-carts · 0 verkopen in de test
 
 ## Acties
-- [ ] P1 · Besluit: aanbodscope vaststellen (1.0, 2.0 of beide; mixen; B2B, teamorders en ambassadeurs uitgesloten) en de verzendregel kiezen: eerlijk tonen dat 4 paar 1.0 onder €35 valt (A), gratis verzending vanaf 4 paar (B) of drempel tijdelijk verlagen (C)
-- [ ] P1 · Besluit: wie levert de rendementswaarden (inkoop per paar, werkelijke verzending, betaalkosten, pick en pack, retourkans, verlies per retour) zodat CM1 en maximale CAC berekend kunnen worden
-- [ ] P1 · Besluit: Ads-invulling nu de Ads Agent niet is geactiveerd (wie levert de Ads Manager-export en wie zet campagnes klaar)
-- [ ] P1 · Besluit: verzendbeleid, retourbeleid, gedeeltelijke retour en actievoorwaarden gelijktrekken en laten toetsen door Team HÏ Grip
-- [ ] P2 · Besluit: eerst rugby als hoofdhoek of een test over drie sporten (Social adviseert de test; Design en Partnership gaan uit van rugby)
-- [ ] P2 · Besluit: eigenaar rechten agencyvideo en ambassadeurs (geen aankondiging of paid zonder schriftelijke rechten)
-- [ ] P2 · Besluit: einddatum van de actie en één gedeelde preheat-start
-- [ ] P2 · Besluit: CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld, in strijd met de merkregel) en Design Elementen regel 147 aanpassen
-- [ ] P2 · Website Agent bouwt na akkoord in het werkthema de landingssectie en campagnestand van de cart en voert T1 tot en met T16 uit in een testomgeving
+- [ ] P1 · Besluit (1.0 en 2.0 is beslist): mixen, uitsluiting van B2B, teamorders en ambassadeurs, en de verzendregel kiezen: eerlijk tonen dat 4 paar 1.0 onder €35 valt (A), gratis verzending vanaf 4 paar (B) of drempel tijdelijk verlagen (C)
+- [ ] P1 · Besluit: Lars zegt winst, maar wie levert de rendementswaarden (inkoop per paar, werkelijke verzending, betaalkosten, pick en pack, retourkans, verlies per retour) zodat CM1 en maximale CAC berekend en gecontroleerd kunnen worden
+- [ ] P1 · Ads Agent is betrokken (read-only profiel ontvangt kanbantaken); live Ads-data is nog niet gecontroleerd. Ads-analyse en Ads Manager-export liggen bij de Ads Agent [ADS-NOG-NIET-LIVE-GECONTROLEERD]
+- [ ] P1 · Een mens herstelt twee verouderde Shopify-beleidspagina's (voorstel in 3b); Team HÏ Grip besluit over gedeeltelijke 1+1-retour en actievoorwaarden
+- [x] Rugby is de hoofdhoek (Lars, 05-11)
+- [ ] P2 · Rechten agencyvideo en ambassadeurs zijn aanwezig volgens Lars; per uiting nog niet onafhankelijk gecontroleerd (wie controleert is open)
+- [ ] P2 · Besluit: aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (einddatum 30-11 is beslist; geen harde preheatdatum)
+- [ ] P2 · CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld) en Design Elementen regel 147: ligt bij de Design Agent, hier niet gecorrigeerd
+- [ ] P2 · Over ongeveer 2 weken: Website Agent bouwt na akkoord in het werkthema de landingssectie en campagnestand van de cart en voert T1 tot en met T16 uit in een testomgeving
 - [ ] P3 · Operations controleert navigatieregel en vault_nav van dit en de domeinbestanden
 
 ## Bevindingen
 
-### 1. Chronologie (voorstel, data te bevestigen)
-**Voorbereiding (nu tot 15-11)**
-- Tot 12-11: besluiten bovenstaande acties. Zonder deze besluiten geen bouw.
-- 09-11 tot 15-11: bouw in werkthema "HÏ Grip website AI Workspace" (eerst `shopify theme list`), snelheidsfix landingspagina, nieuwe events, tests T1 tot en met T16 in testomgeving, beleidspagina's rechtzetten, voorraadcontrole 2.0.
+### 1. Chronologie (richting, geen planning)
+Beslist (Lars): aankondigingsvideo eerst, daarna mail met vroege toegang voor inschrijvers; Social loopt eerder dan de website; website pas als de actie live is; werkthema pas over ongeveer 2 weken; laatste dag 30-11; voorbereiding niet afgekapt op 15-11. Datums hieronder zijn richting en geen vastgelegde planning.
 
-**Preheat (16-11 tot 26-11)**
-- Vanaf 16-11 (Website, voorstel): aanmelding "vroege toegang" via het bestaande formulier, nieuwe adressen taggen. Alleen te gebruiken als de toegang echt eerder is; anders neutraal "meld je aan voor de Performance Days".
-- 20-11 tot 26-11 (Social, voorstel): verhaal en probleem (voet glijdt in de schoen), agencyvideo als rechten geregeld zijn, ambassadeurs alleen "binnenkort" tot de aankondiging.
-- Ambassadeuraankondiging (Partnership): pas na schriftelijke rechten per ambassadeur en leeftijd 18+ geverifieerd. Zonder rechten draait de campagne zonder ambassadeur.
-- 19-11: go/no-go-moment (zie 5). 24-11: bouwstop in werkthema, daarna alleen fixes.
+**Voorbereiding (nu tot de start)**
+- Nu: besluiten uit de open lijst. Zonder deze besluiten geen bouw.
+- Social: aankondigingsvideo als eerste uiting. Geen harde preheatdatum; die volgt uit het videomoment.
+- Over ongeveer 2 weken (richting rond 19-11, niet vastgelegd): bouw in werkthema "HÏ Grip website AI Workspace" (eerst `shopify theme list`), snelheidsfix landingspagina, nieuwe events, tests T1 tot en met T16 in een testomgeving, voorraadcontrole 2.0. Herstel van de beleidspagina's door een mens staat los van de bouw (zie 3b).
+- Risico: de bouw start pas rond 19-11 en Black Friday is 27-11. Dat laat ongeveer een week voor bouw, tests en toetsing door Team HÏ Grip. Past dat niet, dan start de actie met minder website-onderdelen of op een latere dag. Keuze voor Team HÏ Grip.
 
-**Lancering (26-11 avond of 27-11 ochtend tot einddatum)**
-- Lanceringsmail alle B2C-adressen, social-uiting op 27-11, landingspagina live (door een mens).
-- Dag 2 of 3: herinnering aan niet-kopers. Laatste dag: laatste kans, alleen bij een echte einddatum.
+**Vroege toegang (na de video)**
+- Mail met vroege toegang naar B2C-inschrijvers, na de video. De toegang moet daadwerkelijk eerder zijn dan de publieke start; hoeveel eerder is een besluit van Lars. Is dat niet zo, dan neutraal "meld je aan" zonder het woord "vroege toegang".
+- Voorwaarden: aanmelders hebben zelf toestemming gegeven (opt-in, consent), staan in de B2C-lijst, B2B-lijst niet mengen, nieuwe adressen taggen. De mail verstuurt een mens.
+- Ambassadeuraankondiging (Partnership): alleen na gecontroleerde rechten per ambassadeur en leeftijd 18+. Zonder dat draait de campagne zonder ambassadeur.
+
+**Lancering (start tot en met 30-11, Cyber Monday)**
+- Website pas live als de actie live is, door een mens. Social-uiting bij de start.
+- Herinnering aan niet-kopers halverwege. Laatste dag 30-11: "laatste kans" alleen omdat de einddatum echt is; einddatum gelijk aan de kortingsinstelling.
 - Dagrapport: sessies per bron, mandjes met korting, checkouts, aankopen, nieuwe klanten, gemiddelde bestelwaarde, verzendkosten betaald, retouren, voorraad.
 
-**Nazorg (vanaf dag na einde)**
+**Nazorg (vanaf de dag na het einde, dus vanaf 01-12)**
 - Dag 0 orderbevestiging met gratis regels en verzending zichtbaar; dag 3 gebruik, maat en wassen; dag 14 reviewverzoek; dag 45 tot 55 herbestelmail zonder korting tenzij besloten.
-- Retentie R7, R30 en R60 uitlezen; laatste meting 60 dagen na einde van het actievenster. Social-nazorgcontent vanaf 30-11.
+- Retentie R7, R30 en R60 uitlezen; laatste meting 60 dagen na einde van het actievenster. Social-nazorgcontent vanaf 01-12.
 
 ### 2. Top prioriteiten
 1. **Verzendregel versus €35-drempel.** Rekenrisico op basis van huidige prijzen en drempel, nog niet in Shopify getest: 4 paar 1.0 kost €29,90 en betaalt dan €4,50 verzending, terwijl de site gratis boven €35 belooft op €59,80 voor korting. Dat is een verrassing in de checkout, de stap met 50% afval in GA4 (28 dagen, indicatief). Voorstel: A (eerlijk tonen) als standaard, B alleen bij positieve CM1, C afraden.
-2. **Rendement.** Netto omzet per paar halveert (1.0: €6,18 in plaats van €12,36; 2.0: €7,42 in plaats van €14,83). Zonder de [HÏ GRIP]-waarden geen go op winst.
+2. **Rendement.** Netto omzet per paar halveert (1.0: €6,18 in plaats van €12,36; 2.0: €7,42 in plaats van €14,83). Zonder de [HÏ GRIP]-waarden is Lars' uitspraak over winst niet te controleren.
 3. **Meting nieuwe klanten.** Drie nieuwe events (aanbod gezien, mandje gekwalificeerd, verzendkosten getoond) en GA4 gekoppeld aan Shopify-orders.
 4. **Snelheid landingspagina.** Mobiele LCP onder 3 s gemeten; anders niet gebruiken voor betaald verkeer (40% van de klikken zag in de test de pagina).
-5. **Beleid en voorraad.** Oude beleidspagina's (14 dagen retour, "vóór 16:00" en "vóór 22:00") tegenover 30 dagen en 1 werkdag; 2.0 zwart zonder voorraadtracking.
+5. **Beleid en voorraad.** Twee verouderde beleidspagina's (shipping-policy "vóór 16:00", refund-policy 14 dagen, ongeopend, 25%) tegenover de basisregel 1 werkdag en 30 dagen (zie 3b); 2.0 zwart zonder voorraadtracking.
 
 ### 3. Nieuwe-klant-KPI's versus omzet en marge
 Nieuwe klanten (primair):
@@ -84,6 +97,25 @@ Omzet en marge (secundair, apart rapporteren):
 - Winstbijdrage CM1 per bestelling en per kanaal (formule hieronder). ROAS van kanalen nooit optellen.
 
 Aantallen zijn klein (7 aankopen en circa 410 sessies in 28 dagen; zie open punt over 412 versus 417): rapporteer absolute aantallen met n, geen significantieclaims, geen A/B tussen 2+2 en 3+3.
+
+### 3b. Beleidspagina's: sitecheck 05-11-2026
+Bewijs: de vier pagina's zijn op 05-11 gelezen op de publieke site. Niets gewijzigd.
+
+| Pagina | Inhoud nu | Status |
+|---|---|---|
+| /policies/shipping-policy | bestellingen vóór 16:00 dezelfde dag verzonden (PostNL) | Verouderd, botst met 1 werkdag |
+| /pages/verzendbeleid | binnen 1 werkdag, €4,50, gratis vanaf €35, alleen Nederland | Basisregel, klopt met Feiten |
+| /policies/refund-policy | 14 dagen, ongeopend, 25% herbevoorradingskosten, refund binnen 14 dagen na ontvangst | Verouderd, botst met 30 dagen; juridisch risico (Compliance To-Do Lijst §4.2) |
+| /pages/retourbeleid | 30 dagen, uitpakken en bekijken mag, terugbetaling inclusief verzendkosten bestelling, terugsturen op kosten klant | Basisregel, klopt met Feiten |
+
+Onderscheid:
+- **Bestaande basisregel (Lars, 25-09-2026):** verzending binnen 1 werkdag, €4,50, gratis vanaf €35, 30 dagen retour, geen 25%, geen ongeopend-eis. Denzel bevestigde vandaag dat de oude pagina's verouderd zijn.
+- **Open, niet besloten:** hoe een gedeeltelijke retour van een 1+1-bestelling werkt (bijvoorbeeld alleen de betaalde of ook de gratis paren retour, en welk bedrag terug gaat) en eventuele actievoorwaarden. Hier geen aanname.
+
+Voorstel voor herstel, uit te voeren door een mens in Shopify Admin (Instellingen, Beleid). Niet door mij uitgevoerd, niet live gewijzigd:
+1. Shipping-policy: de zin met "vóór 16:00 ... dezelfde dag verzonden" vervangen door de tekst van /pages/verzendbeleid (binnen 1 werkdag, €4,50, gratis vanaf €35, alleen Nederland).
+2. Refund-policy: 14 dagen naar 30 dagen; "ongeopend" en 25% herbevoorradingskosten verwijderen; tekst gelijk aan /pages/retourbeleid. Eerst juridische toets door Team HÏ Grip, want de footer linkt naar beide pagina's.
+3. Pas daarna gedeeltelijke 1+1-retour en actievoorwaarden toevoegen, na besluit.
 
 ### 4. Break-even (zonder inkoopgetallen)
 Per bestelling, bedragen excl. btw (btw-tarief b, aanname 21% [CHECK]):

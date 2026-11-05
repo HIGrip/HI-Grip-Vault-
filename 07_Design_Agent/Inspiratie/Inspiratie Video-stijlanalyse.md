@@ -23,17 +23,17 @@ Dus: basis donker, hoog contrast en koel/neutraal; warm alleen als licht of acce
 
 ## Overzicht per video
 
-| # | Video (bestand in Drive) | Duur | Wissels (±) | Gemiddelde shot | Look |
-|---|---|---|---|---|---|
-| 1 | Cinematic Soccer Short Sony FX6 | 63 s | 11 | ~5,7 s | Stadion, rood/warm, rook en vlaggen, lens flares, diepe schaduwen |
-| 2 | Cinematic Sports Video Basketball (LA Clippers edit) | 40 s | 41 | ~1,0 s | Zwart-wit met magenta/paarse accenten, hoog contrast, korrel |
-| 3 | Great Rivals Make Great Motivation (adidas) | 60 s | 12 | ~5 s | Donker, koel, regen en nacht, gedempte kleur; eindkaart "YOU GOT THIS" |
-| 4 | Greatness. It Only Takes Everything (Nike, Nadal) | 60 s | 41 | ~1,5 s | Zwart-wit, macro van gravel en gaas, mist, grote korrel |
-| 5 | On Lane 1. Run in rhythm. | 60 s | 61 | ~1,0 s | Zwart-wit, silhouetten en tegenlicht, licht minimale typografie |
-| 6 | Rugby Promo (Canon T7i) | 60 s | 32 | ~1,9 s | Warm, gouden uur, groen; kaart "PRE-GAME"; lichter, lifestyle |
-| 7 | Sony a7SIII — Cinematic ADV Rugby | 73 s | 10 | ~7 s | Nacht, donker, stadionlampen als lichtbron, gedempte gele accenten |
-| 8 | Tennis Spec Ad Sony A7S III | 17 s | 21 | ~0,8 s | Fel daglicht, gravel-oranje, blauwe lucht, fris en commercieel |
-| 9 | The Most Cinematic Showreel | 49 s | 77 | ~0,6 s | Retro filmlook, afgeronde kaders, teal/oranje, sporten gemengd |
+| #   | Video (bestand in Drive)                             | Duur | Wissels (±) | Gemiddelde shot | Look                                                                   |
+| --- | ---------------------------------------------------- | ---- | ----------- | --------------- | ---------------------------------------------------------------------- |
+| 1   | Cinematic Soccer Short Sony FX6                      | 63 s | 11          | ~5,7 s          | Stadion, rood/warm, rook en vlaggen, lens flares, diepe schaduwen      |
+| 2   | Cinematic Sports Video Basketball (LA Clippers edit) | 40 s | 41          | ~1,0 s          | Zwart-wit met magenta/paarse accenten, hoog contrast, korrel           |
+| 3   | Great Rivals Make Great Motivation (adidas)          | 60 s | 12          | ~5 s            | Donker, koel, regen en nacht, gedempte kleur; eindkaart "YOU GOT THIS" |
+| 4   | Greatness. It Only Takes Everything (Nike, Nadal)    | 60 s | 41          | ~1,5 s          | Zwart-wit, macro van gravel en gaas, mist, grote korrel                |
+| 5   | On Lane 1. Run in rhythm.                            | 60 s | 61          | ~1,0 s          | Zwart-wit, silhouetten en tegenlicht, licht minimale typografie        |
+| 6   | Rugby Promo (Canon T7i)                              | 60 s | 32          | ~1,9 s          | Warm, gouden uur, groen; kaart "PRE-GAME"; lichter, lifestyle          |
+| 7   | Sony a7SIII — Cinematic ADV Rugby                    | 73 s | 10          | ~7 s            | Nacht, donker, stadionlampen als lichtbron, gedempte gele accenten     |
+| 8   | Tennis Spec Ad Sony A7S III                          | 17 s | 21          | ~0,8 s          | Fel daglicht, gravel-oranje, blauwe lucht, fris en commercieel         |
+| 9   | The Most Cinematic Showreel                          | 49 s | 77          | ~0,6 s          | Retro filmlook, afgeronde kaders, teal/oranje, sporten gemengd         |
 
 ## Wat terugkomt in de sterkste voorbeelden (4, 5, 2, 7)
 

@@ -43,6 +43,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Ads Skill — ads-server-side-tracking]]
 - [[Ads Skill — ads-test]]
 
+### Koppeling
+- [[Ads Koppeling — Installatie (Hermes en Claude Code)]]
+
 ### Profiel
 - [[Ads Koppeling — Meta alleen-lezen]]
 - [[Ads Profiel — SOUL]]

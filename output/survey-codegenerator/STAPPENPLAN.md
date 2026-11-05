@@ -123,3 +123,5 @@ Zodra de codegenerator ingevuld is, gebruikt de pagina de SendWILL-popup niet me
 - **Daglimiet bereikt:** verhoog `DAILY_CAP` in `wrangler.toml` en draai `npx wrangler deploy`.
 - **Noodstop:** maak in de themaeditor het veld *Codegenerator: adres* leeg. De pagina valt dan terug op de popup (inactief) en daarna op het veld *Reservecode*. Dat veld is nu leeg; vul er bij een noodstop een vaste code in, anders ziet de bezoeker "Je code kwam niet door".
 - **Tests van de Worker:** `npm test` (draait tegen nagebootste Shopify, Turnstile en KV, maakt geen echte codes).
+
+> Map: [[Home]]

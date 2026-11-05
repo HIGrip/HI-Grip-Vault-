@@ -1,7 +1,7 @@
 ---
 id: 2026-11-05-meta-opbouw-getoetst-start-6-november
 titel: "Meta-opbouw getoetst aan langlopende ads, start 6 november"
-kerntitel: "Langlopers leunen op klantwoorden en multipacks: start 6 november met 4 concepten per sport"
+kerntitel: "Langlopers leunen op klantwoorden en multipacks: start 6 november met 4 concepten"
 datum: 2026-11-05
 bron: los
 routine: ""

@@ -613,7 +613,9 @@ html.hp-lock { overflow: hidden; }
 .hp-02-duel .hp-pill__chev svg { width: 16px; height: 16px; }
 .hp-motion .hp-02-duel__disc--a { animation: hp-02-duel-a 6s var(--hp-ease) infinite; }
 .hp-motion .hp-02-duel__disc--b { animation: hp-02-duel-b 6s var(--hp-ease) infinite; }
-@keyframes hp-02-duel-a { 0%, 40% { transform: none; z-index: 1; } 50% { transform: translateX(30px) rotate(8deg); z-index: 3; } 60%, 100% { transform: none; z-index: 1; } }
+/* snelheid: geen z-index in de keyframes (die liep elke frame op de main thread); diepte via translateZ in een 3D-context */
+.hp-02-duel__socks { transform-style: preserve-3d; }
+@keyframes hp-02-duel-a { 0%, 40% { transform: none; } 50% { transform: translate3d(30px, 0, 2px) rotate(8deg); } 60%, 100% { transform: none; } }
 @keyframes hp-02-duel-b { 0%, 40% { transform: none; } 50% { transform: translateX(-30px) rotate(-8deg); } 60%, 100% { transform: none; } }
 .hp-02-duel:active .hp-02-duel__disc--a, .hp-02-duel:focus-visible .hp-02-duel__disc--a { animation: none; transform: translateX(-12px) rotate(-10deg); }
 .hp-02-duel:active .hp-02-duel__disc--b, .hp-02-duel:focus-visible .hp-02-duel__disc--b { animation: none; transform: translateX(12px) rotate(10deg); }

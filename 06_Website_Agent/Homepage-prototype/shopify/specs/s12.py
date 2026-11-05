@@ -23,7 +23,7 @@ def settings(sp):
 
     sp.header('Knop')
     sp.text('cta_label', 'Tekst', 'Shop gripsokken')
-    sp.url('cta_link', 'Link', '/collections/gripsokken')
+    sp.url('cta_link', 'Link', '/pages/collection')
     sp.size('btn', 'Tekstgrootte', '--hp-btn-k', '.hp-12-cta')
     sp.range('cta_w', 'Breedte', 240, 900, 10, 'px', 560, '--hp-12-w')
 

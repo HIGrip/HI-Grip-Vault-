@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-11-02
+bijgewerkt: 2026-11-04
 ---
 
 # Update Log — Website Agent
@@ -13,6 +13,14 @@ bijgewerkt: 2026-11-02
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
 
 ---
+
+## 2026-11-04 — WERKTHEMA 02 `203928076615` live gezet (snelheid + eigen winkelwagen)
+
+Op uitdrukkelijke opdracht van de gebruiker in de chat ("Ja, zet 02 live"). Eerst `theme list`: `203461034311` stond live, 02 unpublished. Vlak voor publicatie gecontroleerd dat instellingen en templates van live sinds de kopie (3-11) niet waren gewijzigd. Daarna `shopify theme publish`; nu is `203928076615` live en `203461034311` unpublished (terugvaloptie).
+- Inhoud: zie [[2026-11-03-snelheid-werkthema-02]] (apps na interactie, eigen winkelwagen in Section Store-stijl, foto's na hero, Poppins via Shopify, shoplinks naar /pages/collection, fix kleurknoppen hi-shop.js, snelle betaalknoppen in de winkelwagen).
+- Na publicatie op de live site gecontroleerd (zonder preview): 10 pagina's op telefoon en desktop zonder JavaScript- of Liquid-fouten; pakketprijzen en kortingscode in de winkelwagen kloppen; betaalknoppen zichtbaar.
+- De homepage-build (`06_Website_Agent/Homepage-prototype/shopify`) geeft dezelfde bestanden als dit thema.
+- Volgende stap: Horizon-update (thema staat op 4.3.0) in een kopie, WERKTHEMA 03.
 
 ## 2026-11-02 — Live `203461034311`: bundler-foto's scherp op mobiel
 

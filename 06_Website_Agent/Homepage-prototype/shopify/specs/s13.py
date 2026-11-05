@@ -48,7 +48,7 @@ BLOCKS = [
     {'type': 'column', 'name': 'Linkkolom', 'settings': [
         {'type': 'text', 'id': 'title', 'label': 'Titel', 'default': 'Shop'},
         {'type': 'link_list', 'id': 'menu', 'label': 'Menu (optioneel, vervangt de links hieronder)'},
-        {'type': 'textarea', 'id': 'links', 'label': 'Links ("Tekst | /link" per regel)', 'default': 'Alle gripsokken | /collections/gripsokken'},
+        {'type': 'textarea', 'id': 'links', 'label': 'Links ("Tekst | /link" per regel)', 'default': 'Alle gripsokken | /pages/collection'},
     ]},
     {'type': 'contact', 'name': 'Socials en contact', 'limit': 1, 'settings': [
         {'type': 'text', 'id': 'title', 'label': 'Titel', 'default': 'Volg ons'},
@@ -64,7 +64,7 @@ BLOCKS = [
 MAX_BLOCKS = 8
 NO_PRESET = ['phone', 'kvk', 'btw']
 DEFAULT_BLOCKS = [
-    ('column', {'title': 'Shop', 'links': 'Alle gripsokken | /collections/gripsokken\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken'}),
+    ('column', {'title': 'Shop', 'links': 'Alle gripsokken | /pages/collection\n2.0 Zwart | /products/performance-gripsokken-2-0-zwart\n2.0 Wit | /products/performance-gripsokken-2-0-wit\nPerformance Gripsokken | /products/performance-gripsokken'}),
     ('column', {'title': 'Sporten', 'links': 'Padel | /pages/gripsokken-voor-padel\nTennis | /pages/gripsokken-voor-tennis\nVoetbal | /pages/gripsokken-voor-voetbal\nRugby | /pages/gripsokken-voor-rugby'}),
     ('column', {'title': 'HÏ Grip', 'links': 'Over ons | /pages/over-ons\nZakelijk | /pages/zakelijk\nWaarom HÏ Grip | /blogs/hi-grip/waarom-hi-grip-gripsokken\nReviews | https://nl.trustpilot.com/review/higrip.nl'}),
     ('column', {'title': 'Service', 'links': 'Veelgestelde vragen | /pages/veelgestelde-vragen\nVerzending | /pages/verzendbeleid\nRetourneren | /pages/retourbeleid\nContact | /pages/contact'}),

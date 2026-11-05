@@ -32,5 +32,11 @@
       assign a = alt | default: image.alt
     endif
   -%}
-  <img class="{{ class }}" src="{{ image | image_url: width: iw }}" srcset="{{ set }}"{% if sizes != blank %} sizes="{{ sizes }}"{% endif %} width="{{ image.width }}" height="{{ image.height }}" alt="{{ a | escape }}"{% if priority %} fetchpriority="high"{% else %} loading="{{ loading | default: 'lazy' }}"{% endif %} decoding="async"{% if style != blank %} style="{{ style }}"{% endif %}{% if attrs != blank %} {{ attrs }}{% endif %}>
+  {%- comment -%} Homepage: beelden onder de hero wachten tot de hero er staat (loader in layout/theme.liquid); noscript als terugval {%- endcomment -%}
+  {%- if template.name == 'index' and priority != true and loading != 'eager' and request.design_mode == false -%}
+    <img class="{{ class }}" data-hp-src="{{ image | image_url: width: iw }}" data-hp-srcset="{{ set }}"{% if sizes != blank %} sizes="{{ sizes }}"{% endif %} width="{{ image.width }}" height="{{ image.height }}" alt="{{ a | escape }}" loading="{{ loading | default: 'lazy' }}" decoding="async"{% if style != blank %} style="{{ style }}"{% endif %}{% if attrs != blank %} {{ attrs }}{% endif %}>
+    <noscript><img class="{{ class }}" src="{{ image | image_url: width: iw }}" srcset="{{ set }}"{% if sizes != blank %} sizes="{{ sizes }}"{% endif %} width="{{ image.width }}" height="{{ image.height }}" alt="{{ a | escape }}" loading="lazy"{% if style != blank %} style="{{ style }}"{% endif %}></noscript>
+  {%- else -%}
+  <img class="{{ class }}" src="{{ image | image_url: width: iw }}" srcset="{{ set }}"{% if sizes != blank %} sizes="{{ sizes }}"{% endif %} width="{{ image.width }}" height="{{ image.height }}" alt="{{ a | escape }}"{% if priority %} fetchpriority="high" decoding="sync"{% else %} loading="{{ loading | default: 'lazy' }}" decoding="async"{% endif %}{% if style != blank %} style="{{ style }}"{% endif %}{% if attrs != blank %} {{ attrs }}{% endif %}>
+  {%- endif -%}
 {%- endif -%}

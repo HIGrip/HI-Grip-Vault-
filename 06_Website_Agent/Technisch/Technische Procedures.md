@@ -28,8 +28,9 @@ bijgewerkt: 2026-10-29
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Vorig live-thema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (2-11: unpublished, terugvaloptie) | unpublished | Nee — er is nog **geen nieuw werkthema**; dupliceer live en zet het ID hier |
-| Live op www.higrip.nl ("WERKTHEMA") | `203461034311` (2-11 gepubliceerd, gezien met `theme list`; was `202669916487`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Live op www.higrip.nl ("WERKTHEMA 02") | `203928076615` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203461034311`; lokale kopie met git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Vorig live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished, terugvaloptie) | unpublished | Nee |
+| Ouder live-thema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (2-11: unpublished) | unpublished | Nee |
 | Alle overige — oude werkthema's (`202398040391` "Bijgewerkte kopie van AI website workspace 2.0", `201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`202667458887`, `202394272071`, `201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.

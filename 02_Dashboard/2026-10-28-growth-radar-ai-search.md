@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over AI Overviews/AI Mode, ChatGPT/Perplexity/Gemini, AEO/GEO of agentic shopping haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. Een nieuwe Google-blogpost (16 sep 2026) over agentic-commerce-updates bevestigt alleen dat de relevante functies nog buiten Nederland blijven."
-gerelateerd: [2026-10-21-growth-radar-ai-search, 2026-10-14-growth-radar-ai-search]
+gerelateerd: [2026-10-21-growth-radar-ai-search, 2026-10-14-growth-radar-ai-search, 2026-11-04-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

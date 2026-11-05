@@ -144,7 +144,7 @@ Kleine functionele elementen voor webshop, mailings en slides. Zelfde line-art a
 
 | Element                  | Regel                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| **CTA-knop**             | Pill-vorm met chevron. Wit op zwart, zwart op wit of gevuld met accentkleur. |
+| **CTA-knop**             | Pill-vorm met chevron. Wit op zwart of zwart op wit; nooit gevuld met een accentkleur (conform CLAUDE.md §4). Accent mag alleen als rand, chevron of glow-/rasteraccent náást de knop, niet als vulling. |
 | **Iconen in cirkel**     | Vinkje, kruisje, mail, globe, pijl. Standaard voor USP's en statusmeldingen. |
 | **Iconen zonder cirkel** | Dezelfde vijf, kaal. Voor footers, formulieren en compacte regels.           |
 
@@ -168,8 +168,10 @@ Vijf formats, altijd in wit én zwart. Logo, marges en accenten staan vast — a
 | Reel & TikTok | 9:16 |
 | Pitch · presentatie | 1920 × 1080 · 16:9 |
 
-**Accentregel:** donker sjabloon → **volt** accent. Licht sjabloon → **royal** accent.
+**Accentregel (vast):** donker sjabloon → **volt** accent. Licht sjabloon → **royal** accent.
 Formaat, logo-positie en marges niet aanpassen.
+
+**Campagnevoorkeur (Lars, 05-11-2026, Performance Days; geldt alleen voor deze campagne, geen merkbesluit):** volt #CCFF00 is primair accent, oranje (pumpkin/tangerine) secundair, rood en blauw nauwelijks. Op donker valt dit samen met de vaste regel. Op een licht sjabloon schuurt het met "royal": volt is op wit onleesbaar, dus op licht gebruik je volt alleen als vlak-accent met zwart ernaast en nooit voor tekst. Of royal op licht voor deze campagne vervalt, beslist Lars; tot dan blijft de vaste regel gelden. Dit raakt het leidende Canva-document niet aan; wijzigt het merkbesluit, dan volgt Brand Core via Lars.
 
 ---
 

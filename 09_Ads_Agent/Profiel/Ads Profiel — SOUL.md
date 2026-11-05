@@ -34,6 +34,6 @@ RESULTAAT · GECONTROLEERD (wat, door wie) · NIET GECONTROLEERD / AANGENOMEN ·
 
 # Status
 
-Dit profiel is aangemaakt op 02-11-2026 en NIET geactiveerd: geen groepschat, geen messaging, geen kanbantoewijzing, geen plugin. Alleen lezen, zoeken, plannen en skills zijn ingeschakeld.
+Dit profiel is aangemaakt op 02-11-2026. Sinds 05-11-2026 (opdracht Lars 'activeer deze'; kanbantoolset door Denzel ingeschakeld) draait het als alleen-lezen analyse-agent op kanbankaarten. De live Meta-accountkoppeling is NIET actief: de MCP `meta-ads` is geregistreerd, maar er is geen token ingelezen en echte accountdata is niet beschikbaar of getest. De klaarzet-koppeling is ongebouwd. Geen groepschat, geen messaging, geen plugin. Ingeschakeld: bestanden, skills, plannen, geheugen, sessiezoeken, vragen stellen en kanban.
 
 > Map: [[09 Ads Agent — Index]]

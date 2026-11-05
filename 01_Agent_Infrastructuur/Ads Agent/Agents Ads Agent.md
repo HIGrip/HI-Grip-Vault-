@@ -1,7 +1,7 @@
 ---
 type: agent
-bijgewerkt: 2026-11-02
-status: concept (Hermes-profiel `ads` aangemaakt 02-11-2026 maar niet geactiveerd; geen plugin, geen groepschat)
+bijgewerkt: 2026-11-05
+status: actief als alleen-lezen analyse-agent via kanban (taakactivatie 05-11-2026); live Meta-accountkoppeling niet actief (geen token, niet getest); klaarzet-koppeling ongebouwd; geen plugin, geen groepschat, geen messaging
 ---
 
 # Agents Ads Agent
@@ -63,4 +63,4 @@ Overleg met andere hoofdagents loopt via Denzel en via bestanden. Of Ads in de g
 
 ## 5. Open
 
-Hermes-profiel `ads` is aangemaakt op 02-11-2026 (kloon van `operations`, daarna opgeschoond): identiteit in `SOUL.md` uit deze definitie, geheugen leeg, alleen skill `higrip-vault`, tools beperkt tot lezen/zoeken, plannen, geheugen, skills en vragen stellen (web, browser, terminal, code, beeld, geluid, delegeren, cron en computerbesturing staan uit; geen MCP, geen API-sleutels). Het profiel is NIET geactiveerd: geen groepschat (open besluit Team HÏ Grip, 6 of 7 deelnemers), geen messaging, geen kanbantoewijzing. Plugin ontbreekt en blijft uit tot een handmatig samengestelde subset na statische securitycheck door onafhankelijke QA is goedgekeurd. Open risico: de bestandstool kan niet per pad beperkt worden; schrijven in `02_Dashboard/` is dus technisch niet af te dwingen, daarom plaatst Operations de rapporten.
+Hermes-profiel `ads` is aangemaakt op 02-11-2026 (kloon van `operations`, daarna opgeschoond): identiteit in `SOUL.md` uit deze definitie, geheugen leeg, alleen skill `higrip-vault`. Op 05-11-2026 heeft Lars de taakactivatie gevraagd ('activeer deze') en heeft Denzel de toolset `kanban` ingeschakeld: de Ads Agent draait nu als alleen-lezen analyse-agent op kanbankaarten (bewezen run t_29555ffc; QA t_32570060 loopt). Tools nu: bestanden, skills, plannen, geheugen, sessiezoeken, vragen stellen en kanban; web, browser, terminal, code, beeld, geluid, delegeren, cron en computerbesturing staan uit. Onderscheid: (1) actieve analyse via kanban: ja; (2) live accountkoppeling: NIET actief, want de alleen-lezen Meta-MCP `meta-ads` is wel geregistreerd maar er is geen token ingelezen en echte accountdata is niet beschikbaar of getest; (3) klaarzet-koppeling (Fase B): ongebouwd. Nog steeds geen groepschat (open besluit Team HÏ Grip, 6 of 7 deelnemers), geen messaging. Plugin ontbreekt en blijft uit tot een handmatig samengestelde subset na statische securitycheck door onafhankelijke QA is goedgekeurd. Open risico: de bestandstool kan niet per pad beperkt worden; schrijven in `02_Dashboard/` is dus technisch niet af te dwingen, daarom plaatst Operations de rapporten.

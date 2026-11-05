@@ -1,7 +1,7 @@
 ---
 type: koppeling
 bijgewerkt: 2026-11-03
-status: gebouwd, getest (40 tests, nagebootste Meta-server), code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID, WACHT OP TOKEN van Lars; niet geactiveerd
+status: gebouwd, getest (40 tests, nagebootste Meta-server), code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID, WACHT OP TOKEN van Lars; live accountkoppeling niet actief (geen token ingelezen, echte accountdata niet getest; stand 05-11-2026; Ads-profiel zelf draait wel alleen-lezen via kanban)
 ---
 
 # Ads Koppeling — Meta alleen-lezen (MCP)

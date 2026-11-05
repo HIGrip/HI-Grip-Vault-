@@ -50,7 +50,7 @@ Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026, l
 - [x] Rugby is de hoofdhoek (Lars, 05-11)
 - [ ] P2 · Rechten agencyvideo en ambassadeurs zijn aanwezig volgens Lars; per uiting nog niet onafhankelijk gecontroleerd (wie controleert is open)
 - [ ] P2 · Besluit: aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (einddatum 30-11 is beslist; geen harde preheatdatum)
-- [ ] P2 · CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld) en Design Elementen regel 147: ligt bij de Design Agent, hier niet gecorrigeerd
+- [ ] P2 · CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld) blijft open: Design Elementen is hersteld (CTA wit/zwart pill, nooit accentgevuld; QA GOED), de cart wordt pas bij de bouw gecorrigeerd. Besluit Design Agent en Lars
 - [ ] P2 · Over ongeveer 2 weken: Website Agent bouwt na akkoord in het werkthema de landingssectie en campagnestand van de cart en voert T1 tot en met T16 uit in een testomgeving
 - [ ] P3 · Operations controleert navigatieregel en vault_nav van dit en de domeinbestanden
 
@@ -83,7 +83,7 @@ Beslist (Lars): aankondigingsvideo eerst, daarna mail met vroege toegang voor in
 1. **Verzendregel versus €35-drempel.** Rekenrisico op basis van huidige prijzen en drempel, nog niet in Shopify getest: 4 paar 1.0 kost €29,90 en betaalt dan €4,50 verzending, terwijl de site gratis boven €35 belooft op €59,80 voor korting. Dat is een verrassing in de checkout, de stap met 50% afval in GA4 (28 dagen, indicatief). Voorstel: A (eerlijk tonen) als standaard, B alleen bij positieve CM1, C afraden.
 2. **Rendement.** Netto omzet per paar halveert (1.0: €6,18 in plaats van €12,36; 2.0: €7,42 in plaats van €14,83). Zonder de [HÏ GRIP]-waarden is Lars' uitspraak over winst niet te controleren.
 3. **Meting nieuwe klanten.** Drie nieuwe events (aanbod gezien, mandje gekwalificeerd, verzendkosten getoond) en GA4 gekoppeld aan Shopify-orders.
-4. **Snelheid landingspagina.** Mobiele LCP onder 3 s gemeten; anders niet gebruiken voor betaald verkeer (40% van de klikken zag in de test de pagina).
+4. **Snelheid landingspagina.** Mobiele LCP onder 3 s gemeten; anders niet gebruiken voor betaald verkeer. Het verschil tussen 288 klikken en 116 weergaven (40%) is eerst een meetvraag en pas daarna een snelheidsclaim.
 5. **Beleid en voorraad.** Twee verouderde beleidspagina's (shipping-policy "vóór 16:00", refund-policy 14 dagen, ongeopend, 25%) tegenover de basisregel 1 werkdag en 30 dagen (zie 3b); 2.0 zwart zonder voorraadtracking.
 
 ### 3. Nieuwe-klant-KPI's versus omzet en marge
@@ -146,12 +146,12 @@ Stopregels tijdens de actie: meting valt uit, CM1 op werkelijke cijfers negatief
 ### 6. Tegenstrijdigheden tussen agents (besluit voor Team HÏ Grip, niet door mij gekozen)
 - **Hoofdhoek:** besloten door Lars: rugby. Het eerdere verschil (Social adviseerde een test over drie sporten) vervalt. Heren Ereklasse en dames XV blijft een voorstel, geen deal.
 - **Preheat en volgorde:** opgelost door het besluit van Lars (video eerst, dan mail met vroege toegang; Social eerder dan website). Exacte datums zijn open.
-- **Accentkleur:** Lars noemde volt #ccff00 als primair accent; Design Elementen regel 171 noemt volt of royal; Design noemde eerder Tangerine #E10600. Hoort bij de Design Agent; niet door mij gecorrigeerd.
-- **Merkregel CTA:** de afrekenknop in cart-concept 7932 is #ccff00 gevuld met zwarte tekst (opdracht t_27ad5e4d), terwijl de CTA-regel wit op zwart of zwart op wit zegt. Open voor Design Agent en Lars; ik heb dit niet aangepast.
+- **Accentkleur: besloten voor deze campagne (Lars, 05-11).** Volt #ccff00 is primair accent, oranje secundair, royal en rood nauwelijks, ook op licht sjabloon. Vastgelegd als campagne-uitzondering in Design Elementen (regel 171 en 174 tot 180), geen merkbesluit en Brand Core ongewijzigd. QA GOED (t_f085db55 en t_21a52b5e).
+- **Merkregel CTA:** Design Elementen regel 147 is hersteld (pill met chevron, wit op zwart of zwart op wit, nooit accentgevuld; QA GOED). Open blijft cart-concept 7932: de afrekenknop is #ccff00 gevuld met zwarte tekst (opdracht t_27ad5e4d). Advies: bij de bouw wit of zwart pill met volt als rand of chevron. Besluit Design Agent en Lars; nu niet aangepast.
 - **Sessies baseline:** plan noemt zowel ~417 als 412; gelijktrekken na controle in GA4.
 
-### 7. Ads Manager [ADS-NOG-NIET-LIVE-GECONTROLEERD]
-De Ads Agent is nu betrokken, maar live Ads-data is nog niet gecontroleerd en ik heb geen toegang tot Ads Manager. Het label blijft staan tot zijn rapport. Ads-specifieke analyse is aan de Ads Agent; hier alleen vragen, geen plan:
+### 7. Ads Manager [ADS-INHOUDELIJK-ONGEKEURD]
+Het Ads-advies is niet als goedgekeurd overgenomen. Eerste versie (t_29555ffc): Ads-QA CORRIGEER (t_32570060). Herziene versie (t_d598365c): Ads-QA herkeuring ronde 1 CORRIGEER (t_2ae5e0ed); de inhoudelijke eisen zijn opgelost, de vorm niet (tekst ongeveer 650 woorden bij maximum 400, niet-gebrongde 412/417 en #ccff00, vage lookalike-regel, label bij 4,3%). Een tweede correctieronde door de Ads Agent is nodig, daarna herkeuring. Geen Meta MCP gebruikt, geen live Meta-resultaten gezien. Ads-specifieke analyse is aan de Ads Agent; hier alleen vragen, geen plan:
 - Welke campagne, doelgroep en budget (leerdrempel; bestaande test €5 per dag per ad set)?
 - Optimalisatie-event: Content bekijken, daarna toevoegen aan winkelwagen; Conversions API en deduplicatie met pixel controleren.
 - Hoe wordt de 1+1 in advertenties getoond zonder claim die de verzendregel verbergt?
@@ -159,7 +159,7 @@ De Ads Agent is nu betrokken, maar live Ads-data is nog niet gecontroleerd en ik
 Open punt: wie levert de Ads Manager-export (zie bestaande notitie [[2026-11-04-ads-resultaten-verbeteringen]]).
 
 ### 8. Merkregelcontrole
-- **CTA zwart en wit:** Design-kit gecorrigeerd (t_d0363828: wit op zwart of zwart op wit, nooit accentgevuld). Het Website-plan noemt de knop "In mandje" zonder kleur; zie conflict in 6 voor cart-concept 7932. Status: ⚠️.
+- **CTA zwart en wit:** Design Elementen hersteld (t_97c6344f, QA GOED t_f085db55: wit op zwart of zwart op wit, nooit accentgevuld). Het Website-plan noemt de knop "In mandje" zonder kleur; cart-concept 7932 staat nog open (zie 6). Status: ⚠️ tot de cart is gecorrigeerd.
 - **Geen schijnurgentie:** geen aftelklok, einddatum gelijk aan kortingsinstelling, "laatste kans" alleen bij echte einddatum, "vroege toegang" alleen als dat waar is. Controle op tekst in de plannen, niet op uitingen: ✅ voor plannen, uitingen bestaan nog niet.
 - Geen gedachtestreepjes en geen verzonnen cijfers of reviews in dit rapport.
 
@@ -169,12 +169,40 @@ Open punt: wie levert de Ads Manager-export (zie bestaande notitie [[2026-11-04-
 | Website-plan | t_2f4e813f, QA t_459fea78 | GOED (3 aanbevelingen) | Zelfde agent als QA-rol; geen onafhankelijke menselijke toets |
 | Partnership | t_7a9697e6, QA t_007829f1 | GOED (licht voorbehoud) | Eerste QA gaf CORRIGEER, ronde 1 hersteld |
 | Social | t_0c5ea889, QA t_4ccec4a4 | GOED (licht voorbehoud) | Eerste QA gaf CORRIGEER, ronde 1 hersteld; opmerkingen: navigatieregel, open vraag formats |
-| Design | t_d0363828 | Geen verdict | Onafhankelijke Design-QA ontbreekt; geen GOED geclaimd |
-| Ads | n.v.t. | Niet getoetst | Wacht op rapport Ads Agent [ADS-NOG-NIET-LIVE-GECONTROLEERD] |
-| Dit rapport | t_33949113, QA t_e05f6574 en t_de11ce50 | GOED na ronde 1 (versie vóór de besluiten van 05-11) | Update t_e8144db7 (besluiten Lars, tijdlijn, beleid, Ads-label) is nog niet getoetst; QA volgt |
+| Design CTA en accent | t_97c6344f, QA t_f085db55 | GOED | Cart 7932 staat niet in Design Elementen; open in dit rapport |
+| Design Volt-campagne-uitzondering | t_c95394d9, QA t_21a52b5e | GOED (2 kanttekeningen) | QA noemt zichzelf een zelfcheck-toets zonder visuele render; cart 7932 buiten scope |
+| Ads-advies v1 | t_29555ffc, QA t_32570060 | CORRIGEER | Niet overgenomen |
+| Ads-advies v2 | t_d598365c, QA t_2ae5e0ed | CORRIGEER (ronde 1, vorm) | Niet als goedgekeurd overgenomen; ronde 2 bij Ads Agent nodig [ADS-INHOUDELIJK-ONGEKEURD] |
+| Dit rapport | t_e8144db7, QA t_c561c46a | GOED (2 opmerkingen, verwerkt) | Eerdere versie t_33949113, QA t_e05f6574 en t_de11ce50. Deze bundeling (t_e08a71ed) is nog niet onafhankelijk getoetst; QA volgt |
+
+### 10. Acquisitiestrategie, meting en onbekenden (Website-redactie)
+Alleen uit besluiten van Lars en gevalideerde delen. Het betaalde-kanaaldeel (Meta) volgt pas na Ads-QA GOED. Voorstel, geen besluit.
+
+**Acquisitie van nieuwe klanten**
+- Volgorde (besloten): aankondigingsvideo, daarna mail met vroege toegang voor B2C-inschrijvers, daarna lancering, herinnering, laatste dag 30-11. Social loopt eerder dan de website.
+- Hoofdhoek rugby (besloten). De landingssectie met die hoek wordt na akkoord in het werkthema gebouwd (over ongeveer 2 weken) en door een mens live gezet als de actie live is.
+- Nieuwe klant is alleen de eerste betaalde order, exclusief bestaande klanten, B2B, teamorders en ambassadeurs (zie 3). Vroege toegang alleen als die echt eerder is.
+
+**Meting**
+- Primair: nieuwe klanten, kosten per nieuwe klant, retentie R7, R30, R60 (onder n=30 alleen aantallen).
+- Drie nieuwe events en GA4 gekoppeld aan Shopify-orders (poort 1); UTM-schema vooraf vast.
+- Voor elke snelheids- of funnelclaim eerst definitie, meetmoment, browser en attributie vastleggen.
+
+**Echte onbekenden [HÏ GRIP]**
+- Rendementswaarden (inkoop, werkelijke verzending, betaalkosten, pick en pack, retourkans, verlies per retour), dus CM1 en maximale CAC; baseline zonder actie.
+- Werkelijke uitgave en resultaten van de Meta-test (Ads Manager niet gezien); 412 versus 417 sessies.
+- Mobiele LCP, voorraad 2.0, rechten per uiting, werking van mixen in Shopify.
+
+**Vragen aan Team HÏ Grip (open, niet besloten)**
+1. Verzendregel A, B of C voor het 4-paar-1.0-mandje?
+2. Mixen van 1.0 en 2.0; B2B, teamorders en ambassadeurs uitsluiten?
+3. Wie levert de rendementswaarden en wanneer?
+4. Gedeeltelijke 1+1-retour en actievoorwaarden; juridische toets van het beleidsherstel.
+5. Aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (geen harde preheatdatum).
+6. Meta-koppeling live laten toetsen of een geaggregeerde export leveren (na Ads-QA ronde 2).
 
 ## Wat niet lukte
-Geen toegang tot Ads Manager of live Ads-data; Shopify Admin, T1 tot en met T16, SendWILL, juridische toetsing, financiële gegevens, rechten, Muziek & Licenties, ambassadeurs en live voorraad zijn niet gecontroleerd. Design-QA ontbreekt. Het Partnership-resultaat is gelezen via de kaart (geen notitiebestand).
+Geen toegang tot Ads Manager of live Ads-data (alleen-lezen Meta-koppeling nog niet live getoetst); Shopify Admin, T1 tot en met T16, SendWILL, juridische toetsing, financiële gegevens, rechten, Muziek & Licenties, ambassadeurs en live voorraad zijn niet gecontroleerd. Design-wijzigingen zijn niet visueel gerenderd. Het Partnership-resultaat is gelezen via de kaart (geen notitiebestand).
 
 ## Bronnen
 - [[2026-11-05-briefing-performance-days]]

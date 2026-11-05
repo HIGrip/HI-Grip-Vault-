@@ -30,6 +30,8 @@ beheer: Stafchef (03_Denzel)
 - **Een koppeling die schrijven mogelijk maakt krijgt altijd:** (a) een apart token per bevoegdheid in de Windows-referentiekluis, nooit in een bestand dat een agent kan lezen; (b) een tussenprogramma met vaste toolslijst; (c) een weigering bij een te ruim token; (d) een onafhankelijke code-QA vóór gebruik. Eerste toepassing: Ads Agent (Meta). (2026-11-03, Lars)
 - **Een token dat in de chat wordt geplakt geldt als gelekt en wordt direct ingetrokken.** Gebeurd op 03-11-2026. (2026-11-03, Lars)
 - **QA beoordeelt nooit alleen de samenvatting.** Lees het volledige rapport en reken getallen na. Reden: bij Performance Days stond de rekenfout (regel 100) niet in de summary. Inhoudelijke bundeling gaat naar de domeinhoofdagent (hier Website); de Stafchef beheert alleen documentatie en schrijft geen inhoud. (2026-11-05, Denzel; bewijs: kaarten t_33949113, t_e05f6574, t_a87a674a)
+- **Gebruik bij zoeken in profielmappen het verboden mapwoord niet in de zoekterm.** Een zoekopdracht raakte de verbodsregel voor de privémap en werd geblokkeerd; geen schade, niets gelezen. Zoek op een ander kenmerk (bestandsnaam of onderwerp). (2026-11-05, Denzel)
+- **Een wijziging in de skill higrip-vault moet op vier plekken (content, design, ads, website) plus de eigen kopie van elk ander profiel, en daarna controleer je op identieke checksum.** Voorstel: één centrale bron of een checksumcontrole na elke wijziging. Laatste stand: 4 bestanden identiek, checksum fded5b89. (2026-11-05, Denzel)
 
 ## Denzel en zijn vroegere team
 
@@ -49,6 +51,7 @@ beheer: Stafchef (03_Denzel)
 - **Controleer vóór het aanmaken van een kaart of de opdracht binnen de vaultregels past.** Voorbeeld: een scan van de prototypemap was verboden terwijl de opdracht die vroeg. Start een keten met de eerste schakel; vervolgkaarten pas als die slaagt, geen ketens van 5 tot 7 kaarten vooruit. (2026-11-02, Lars)
 - **Kaarten die iets verwijderen of verplaatsen (zoals opruiming van ontwerpversies) gaan eerst naar REVIEW voor akkoord van Lars.** Pas daarna uitvoeren. (2026-11-02, Lars)
 - **Een besluit dat de autonomie van een agent verruimt voer je op alle plekken tegelijk door** (definitie, profiel-SOUL, basisregels in `user.md`, hiërarchie, dashboard, Denzel-bestand) en controleer je daarna met zoeken op de oude formulering. Reden: de oude regel "read-only" (Ads Agent) stond op negen plekken. Het besluit zelf: de Ads Agent voert niets zelf uit, hooguit klaarzetten (status uit) na akkoord en een hele goede controle door Team HÏ Grip; een mens zet aan. (2026-11-03, Lars)
+- **De videotool werkt niet met het huidige model (geen video-ondersteuning).** Een modelwissel vereist toestemming van HÏ Grip en is niet gedaan; videoanalyse is gedaan via contactbladen en shot-telling (geluid niet beoordeeld). (2026-11-05, Denzel)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)

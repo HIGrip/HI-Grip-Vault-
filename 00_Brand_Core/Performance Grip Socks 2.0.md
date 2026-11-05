@@ -68,7 +68,7 @@ De kolom "winst bij €17,99" in de sheet is intern — nooit afdrukken.
 | 360–498 | € 6,10 | € 6,20 |
 | 500+ | € 5,10 | € 5,80 |
 
-**Gepersonaliseerd** (eigen logo/kleuren) — minimaal **150 stuks**:
+**Gepersonaliseerd** (eigen logo/kleuren) — minimaal **150 stuks per maat en per kleur** (bevestigd door Timo, 4-11-2026):
 
 | Aantal | Prijs p/st | Paper wrap p/st | Header card p/st |
 |---|---|---|---|
@@ -77,6 +77,14 @@ De kolom "winst bij €17,99" in de sheet is intern — nooit afdrukken.
 | 300–399 | € 7,20 | € 0,30 | € 0,28 |
 | 400–499 | € 6,70 | € 0,25 | € 0,23 |
 | 500+ | € 6,30 | € 0,20 | € 0,18 |
+
+Aanvullend, vastgesteld door Timo op 5-11-2026:
+- De staffel hierboven geldt per maat en per kleur, niet op het ordertotaal. Bij eigen logo zijn alle kleuren te kiezen.
+- Verpakking bij 150 stuks: € 0,35 per paar, paper wrap en header card. Eigen logo op de 1.0: 150 € 6,50 · 200 € 6,20 · 300 € 5,80 · 400 € 5,30 · 500+ € 5,20, in dezelfde maten als de 2.0. Bron: Google Sheet *Standaard B2B Prijzen - HÏ Grip* in `B2B - HÏ Grip`.
+- Levering: kosten staan in de officiële offerte. Levertijd vanaf akkoord: 6 tot 8 weken per vliegtuig, 10 tot 12 weken per boot.
+- Betaling: 50% vooraf, de rest vóór levering. Defecten: aantoonbare productiefouten vervangen, geen geld terug.
+- Het grippatroon met de naam HÏ Grip blijft op de sok en het HÏ Grip-logo blijft op de verpakking. De rest bepaalt de klant.
+- Geen sample met logo, alleen de standaardsok. Dropshipping kan.
 
 Artikelcodes: **PGSW201 / PGSW202 / PGSW203** (wit 35–38 / 39–42 / 43–47) en
 **PGSZ201 / PGSZ202 / PGSZ203** (zwart, zelfde volgorde).

@@ -1,0 +1,347 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "survey": {
+      "type": "hg-survey",
+      "blocks": {
+        "sport_padel": {
+          "type": "sport",
+          "settings": {
+            "label": "Padel",
+            "key": "padel"
+          }
+        },
+        "sport_tennis": {
+          "type": "sport",
+          "settings": {
+            "label": "Tennis",
+            "key": "tennis"
+          }
+        },
+        "sport_voetbal": {
+          "type": "sport",
+          "settings": {
+            "label": "Voetbal",
+            "key": "voetbal"
+          }
+        },
+        "sport_rugby": {
+          "type": "sport",
+          "settings": {
+            "label": "Rugby",
+            "key": "rugby"
+          }
+        },
+        "sport_pilates": {
+          "type": "sport",
+          "settings": {
+            "label": "Pilates",
+            "key": "pilates"
+          }
+        },
+        "sport_anders": {
+          "type": "sport",
+          "settings": {
+            "label": "Anders",
+            "key": "anders"
+          }
+        },
+        "product_1": {
+          "type": "reason",
+          "settings": {
+            "label": "Versterkte hiel",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_2": {
+          "type": "reason",
+          "settings": {
+            "label": "Naadloze teen",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_3": {
+          "type": "reason",
+          "settings": {
+            "label": "Compressie",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_4": {
+          "type": "reason",
+          "settings": {
+            "label": "Coolmax-stof",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_5": {
+          "type": "reason",
+          "settings": {
+            "label": "Anatomisch gevormd grippatroon",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_6": {
+          "type": "reason",
+          "settings": {
+            "label": "Special cushioning",
+            "feature": true,
+            "is_other": false
+          }
+        },
+        "product_anders": {
+          "type": "reason",
+          "settings": {
+            "label": "Iets anders",
+            "feature": true,
+            "is_other": true
+          }
+        },
+        "merk_1": {
+          "type": "reason",
+          "settings": {
+            "label": "Onze merkboodschap",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_2": {
+          "type": "reason",
+          "settings": {
+            "label": "Design van de sok",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_3": {
+          "type": "reason",
+          "settings": {
+            "label": "Snelle levering",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_4": {
+          "type": "reason",
+          "settings": {
+            "label": "Ons merkverhaal",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_5": {
+          "type": "reason",
+          "settings": {
+            "label": "De prijs",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_6": {
+          "type": "reason",
+          "settings": {
+            "label": "Makkelijk te vinden",
+            "feature": false,
+            "is_other": false
+          }
+        },
+        "merk_anders": {
+          "type": "reason",
+          "settings": {
+            "label": "Iets anders",
+            "feature": false,
+            "is_other": true
+          }
+        },
+        "bron_1": {
+          "type": "source",
+          "settings": {
+            "label": "Instagram",
+            "is_other": false
+          }
+        },
+        "bron_2": {
+          "type": "source",
+          "settings": {
+            "label": "TikTok",
+            "is_other": false
+          }
+        },
+        "bron_3": {
+          "type": "source",
+          "settings": {
+            "label": "Een advertentie",
+            "is_other": false
+          }
+        },
+        "bron_4": {
+          "type": "source",
+          "settings": {
+            "label": "Google",
+            "is_other": false
+          }
+        },
+        "bron_5": {
+          "type": "source",
+          "settings": {
+            "label": "Club of teamgenoot",
+            "is_other": false
+          }
+        },
+        "bron_6": {
+          "type": "source",
+          "settings": {
+            "label": "Vriend of familie",
+            "is_other": false
+          }
+        },
+        "bron_anders": {
+          "type": "source",
+          "settings": {
+            "label": "Iets anders",
+            "is_other": true
+          }
+        },
+        "freq_1": {
+          "type": "freq",
+          "settings": {
+            "label": "1 keer of minder"
+          }
+        },
+        "freq_2": {
+          "type": "freq",
+          "settings": {
+            "label": "2 tot 3 keer"
+          }
+        },
+        "freq_3": {
+          "type": "freq",
+          "settings": {
+            "label": "4 tot 5 keer"
+          }
+        },
+        "freq_4": {
+          "type": "freq",
+          "settings": {
+            "label": "Bijna elke dag"
+          }
+        }
+      },
+      "block_order": [
+        "sport_padel",
+        "sport_tennis",
+        "sport_voetbal",
+        "sport_rugby",
+        "sport_pilates",
+        "sport_anders",
+        "product_1",
+        "product_2",
+        "product_3",
+        "product_4",
+        "product_5",
+        "product_6",
+        "product_anders",
+        "merk_1",
+        "merk_2",
+        "merk_3",
+        "merk_4",
+        "merk_5",
+        "merk_6",
+        "merk_anders",
+        "bron_1",
+        "bron_2",
+        "bron_3",
+        "bron_4",
+        "bron_5",
+        "bron_6",
+        "bron_anders",
+        "freq_1",
+        "freq_2",
+        "freq_3",
+        "freq_4"
+      ],
+      "settings": {
+        "style": "avond",
+        "text_align": "left",
+        "heading_size": 44,
+        "heading_size_mobile": 26,
+        "heading_italic": true,
+        "body_size": 16,
+        "max_width": 820,
+        "bg_color": "#ffffff",
+        "text_color": "#0a0a0a",
+        "button_bg": "#0a0a0a",
+        "button_fg": "#ffffff",
+        "padding_top": 24,
+        "padding_bottom": 112,
+        "padding_top_mobile": 8,
+        "padding_bottom_mobile": 64,
+        "count_label": "Vraag [n] van [totaal]",
+        "next_label": "Verder",
+        "back_label": "Terug",
+        "change_sport_label": "Andere sport",
+        "submit_label": "Verstuur",
+        "sport_heading": "Welke sport doe jij?",
+        "sport_text": "<p>Vijf korte vragen, daarna krijg je 30% korting voor jou of je vrienden en familie.</p>",
+        "sport_other_label": "Welke sport doe je?",
+        "sport_other_placeholder": "Bijvoorbeeld hockey",
+        "reason_heading": "Waarom koos je voor HÏ Grip?",
+        "reason_text": "<p>De sok zelf, het merk of iets heel anders? Kies wat voor jou de doorslag gaf, maximaal twee.</p>",
+        "max_choices": 2,
+        "picked_label": "[aantal] van [max] gekozen",
+        "reason_group_sock": "Het product",
+        "reason_group_rest": "Het merk en alles daaromheen",
+        "shuffle_reasons": true,
+        "reason_other_label": "Wat gaf de doorslag?",
+        "reason_other_placeholder": "In een paar woorden",
+        "source_heading": "Hoe heb je ons gevonden?",
+        "source_text": "",
+        "shuffle_sources": false,
+        "source_other_label": "Waar zag je ons?",
+        "source_other_placeholder": "Bijvoorbeeld een podcast",
+        "open_heading": "Wat mis je nog bij HÏ Grip?",
+        "open_text": "<p>Eén zin is genoeg.</p>",
+        "open_placeholder": "Bijvoorbeeld een sok voor hockey of een andere kleur",
+        "privacy_note": "",
+        "done_label": "Klaar",
+        "done_heading": "30% korting voor jou",
+        "done_text": "<p>Bedankt! Je code werkt voor 3 bestellingen. Gebruik hem zelf of deel hem met je team, vrienden of familie.</p>",
+        "discount_code": "",
+        "nocode_text": "<p>Je code kwam niet door. Klik nog een keer op Claim je korting.</p>",
+        "limit_text": "<p>Vandaag kunnen we je geen nieuwe code meer geven. Probeer het morgen opnieuw.</p>",
+        "code_label": "Jouw code",
+        "copy_label": "Kopieer",
+        "copied_label": "Gekopieerd",
+        "code_note": "Geldig voor 3 bestellingen · 30 dagen",
+        "code_uses": 3,
+        "code_endpoint": "https://higrip-codes.higrip.workers.dev/code",
+        "turnstile_sitekey": "0x4AAAAAAFpecL58V5Da0DKq",
+        "shop_label": "Shop",
+        "share_label": "Deel met een vriend",
+        "share_text": "30% korting bij HÏ Grip, geldig voor 3 bestellingen. Via deze link staat mijn code [code] al in je winkelwagen.",
+        "share_copied_label": "Link gekopieerd",
+        "shop_link": "shopify://pages/collection",
+        "form_name": "Flitsinterview testkaart 2",
+        "error_text": "Versturen lukte niet. Probeer het nog een keer.",
+        "freq_heading": "Hoe vaak per week sport je in sportsokken?",
+        "freq_text": ""
+      }
+    }
+  },
+  "order": [
+    "survey"
+  ]
+}

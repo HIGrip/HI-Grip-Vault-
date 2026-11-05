@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Voortgang testkaarten</title>
+<style>
+@font-face { font-family: Poppins; font-weight: 400; src: url(fonts/Poppins-Regular.ttf); }
+@font-face { font-family: Poppins; font-weight: 600; src: url(fonts/Poppins-SemiBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 700; src: url(fonts/Poppins-Bold.ttf); }
+@font-face { font-family: Poppins; font-weight: 800; src: url(fonts/Poppins-ExtraBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; font-style: italic; src: url(fonts/Poppins-BlackItalic.ttf); }
+
+:root {
+  --ink: #0A0A0A;
+  --white: #FFFFFF;
+  --onyx: #111111;
+  --carbon: #1A1A1A;
+  --titanium: #909194;
+  --volt: #CCFF00;
+  --muted-light: rgba(10, 10, 10, .58);
+  --rule-light: rgba(10, 10, 10, .12);
+  --rule-dark: rgba(255, 255, 255, .14);
+}
+
+@page { size: 1920px 1080px; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #2a2a2a; }
+body { font-family: Poppins, system-ui, sans-serif; letter-spacing: -0.02em; -webkit-font-smoothing: antialiased; }
+
+.slide {
+  width: 1920px; height: 1080px; position: relative; overflow: hidden;
+  padding: 96px 112px; display: flex; flex-direction: column;
+  page-break-after: always; break-after: page;
+  background: var(--white); color: var(--ink);
+}
+.slide + .slide { margin-top: 0; }
+.dark { background: var(--onyx); color: var(--white); }
+
+h1, h2 { font-weight: 800; text-transform: uppercase; letter-spacing: -0.04em; line-height: .92; }
+h1 { font-weight: 900; font-style: italic; font-size: 138px; }
+h2 { font-size: 104px; }
+.statement { font-size: 120px; }
+
+.meta { font-size: 24px; font-weight: 600; color: var(--muted-light); letter-spacing: -0.01em; }
+.dark .meta { color: var(--titanium); }
+.foot { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-size: 22px; color: var(--muted-light); }
+.dark .foot { color: var(--titanium); }
+.wordmark { font-weight: 700; color: var(--ink); letter-spacing: 0; }
+.dark .wordmark { color: var(--white); }
+
+.frame { border-radius: 28px; overflow: hidden; }
+.frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* definitielijst op testkaart-slides */
+.spec { display: grid; grid-template-columns: 210px 1fr; margin-top: 56px; }
+.spec dt, .spec dd { padding: 26px 0; border-top: 1px solid var(--rule-light); font-size: 27px; line-height: 1.45; }
+.dark .spec dt, .dark .spec dd { border-color: var(--rule-dark); }
+.spec dt { font-weight: 600; }
+.spec dd { color: var(--muted-light); }
+.dark .spec dd { color: rgba(255,255,255,.72); }
+.spec dd strong { color: var(--ink); font-weight: 600; }
+.dark .spec dd strong { color: var(--white); }
+
+/* 1 cover */
+.s-cover { flex-direction: row; gap: 96px; }
+.s-cover .left { flex: 1; display: flex; flex-direction: column; }
+.s-cover h1 { margin-top: 220px; }
+.s-cover .sub { margin-top: 48px; font-size: 32px; color: var(--muted-light); }
+.s-cover .frame { width: 600px; height: 888px; flex: none; }
+.s-cover .frame img { object-position: 50% 70%; }
+
+/* 2 overzicht */
+.s-overview .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 88px; flex: 1; }
+.s-overview .col { padding-right: 88px; }
+.s-overview .col + .col { padding: 0 0 0 88px; border-left: 1px solid var(--rule-dark); }
+.s-overview .q { font-size: 46px; font-weight: 600; line-height: 1.2; letter-spacing: -0.03em; margin-top: 20px; min-height: 230px; }
+.cards { margin-top: 40px; }
+.cards li { list-style: none; display: grid; grid-template-columns: 1fr auto; padding: 26px 0; border-top: 1px solid var(--rule-dark); font-size: 28px; }
+.cards li span:first-child b { font-weight: 600; margin-right: 18px; }
+.cards .status { color: var(--titanium); }
+.cards .status.live { color: var(--volt); font-weight: 600; }
+
+/* 3 en 5 en 8: testkaart */
+.s-card { flex-direction: row; gap: 88px; }
+.s-card .left { flex: 1.15; display: flex; flex-direction: column; }
+.s-card h2 { margin-top: 28px; }
+.s-card .right { flex: 1; display: flex; align-items: center; justify-content: center; }
+.ads { display: flex; gap: 28px; }
+.ads figure { width: 380px; }
+.ads .frame { height: 475px; border-radius: 20px; }
+.ads figcaption { margin-top: 18px; font-size: 22px; color: var(--muted-light); }
+.ads figcaption b { color: var(--ink); font-weight: 600; margin-right: 8px; }
+
+/* 4 test 1 voortgang */
+.s-t1 .statement { margin-top: 40px; }
+.bars { margin-top: 80px; width: 100%; }
+.bar-row { display: grid; grid-template-columns: 360px 1fr; align-items: center; gap: 32px; margin-bottom: 28px; }
+.bar-row .lbl { font-size: 26px; color: var(--titanium); }
+.bar-row .lbl b { display: block; color: var(--white); font-size: 40px; font-weight: 700; letter-spacing: -0.03em; }
+.bar { height: 56px; border-radius: 12px; }
+.bar.ours { width: 25%; background: rgba(255,255,255,.38); }
+.bar.need { width: 100%; background: var(--volt); }
+.notes { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; margin-top: auto; }
+.notes p { font-size: 26px; line-height: 1.5; color: rgba(255,255,255,.72); }
+.notes p b { display: block; color: var(--white); font-weight: 600; margin-bottom: 8px; }
+
+/* 5 survey-schets */
+.survey { width: 600px; border: 1px solid var(--rule-light); border-radius: 28px; padding: 48px; }
+.survey .from { font-size: 20px; color: var(--muted-light); }
+.survey h3 { font-size: 36px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; margin: 14px 0 32px; }
+.survey .group { font-size: 19px; font-weight: 600; color: var(--muted-light); margin: 22px 0 10px; }
+.survey ul { list-style: none; }
+.survey li { display: flex; align-items: center; gap: 16px; font-size: 25px; padding: 7px 0; }
+.survey li::before { content: ""; width: 22px; height: 22px; border-radius: 50%; border: 2px solid rgba(10,10,10,.35); flex: none; }
+.survey .feat li::before { border-color: var(--ink); background: var(--ink); box-shadow: inset 0 0 0 4px var(--white); }
+.survey .caption { margin-top: 26px; font-size: 19px; color: var(--muted-light); }
+
+/* 6 test 2 voortgang */
+.s-t2 { flex-direction: row; gap: 112px; }
+.s-t2 .left { flex: 1; display: flex; flex-direction: column; }
+.s-t2 .statement { margin-top: 40px; font-size: 104px; }
+.s-t2 .frame { width: 560px; height: 888px; flex: none; }
+.s-t2 .frame img { object-position: 50% 62%; }
+.points { margin-top: auto; }
+.points p { font-size: 26px; line-height: 1.5; color: rgba(255,255,255,.72); padding: 24px 0; border-top: 1px solid var(--rule-dark); display: grid; grid-template-columns: 220px 1fr; }
+.points p b { color: var(--white); font-weight: 600; }
+
+/* 7 trechter */
+.s-scan .top { display: grid; grid-template-columns: 1fr 1fr; gap: 112px; }
+.s-scan .spec { margin-top: 0; }
+.funnel { margin-top: auto; }
+.funnel .fr { display: grid; grid-template-columns: 1fr 520px; gap: 48px; align-items: center; margin-top: 18px; }
+.funnel .fb { height: 78px; border-radius: 14px; background: var(--ink); display: flex; align-items: center; padding-left: 28px; color: var(--white); font-size: 40px; font-weight: 700; letter-spacing: -0.03em; }
+.funnel .fb.w10 { width: 100%; }
+.funnel .fb.w3 { width: 30%; }
+.funnel .fb.w2 { width: 20%; }
+.funnel .fl { font-size: 26px; line-height: 1.35; color: var(--muted-light); }
+.funnel .fl b { color: var(--ink); font-weight: 600; }
+.funnel .cap { font-size: 24px; font-weight: 600; margin-bottom: 10px; }
+
+/* 8 scorekaart */
+.score { width: 640px; }
+.score .head, .score .row { display: grid; grid-template-columns: 1fr repeat(5, 52px); gap: 10px; align-items: center; }
+.score .head { font-size: 20px; color: var(--titanium); padding-bottom: 14px; }
+.score .head span:not(:first-child) { text-align: center; }
+.score .row { padding: 16px 0; border-top: 1px solid var(--rule-dark); font-size: 25px; }
+.score .row i { height: 40px; border-radius: 10px; border: 1px solid rgba(255,255,255,.22); }
+.score .row i.ok { border-color: var(--volt); }
+.score .rule { margin-top: 24px; font-size: 22px; color: var(--titanium); }
+.score .rule b { color: var(--volt); font-weight: 600; }
+
+/* 9 tijdlijn */
+.s-time .statement { margin-top: 40px; font-size: 112px; }
+.timeline { margin-top: auto; position: relative; padding-top: 56px; }
+.axis { position: relative; height: 40px; border-bottom: 1px solid var(--rule-light); margin-left: 380px; }
+.axis span { position: absolute; bottom: 10px; font-size: 20px; color: var(--muted-light); transform: translateX(-50%); white-space: nowrap; }
+.axis span:last-child { transform: translateX(-100%); }
+.track { display: grid; grid-template-columns: 380px 1fr; align-items: center; height: 76px; border-bottom: 1px solid var(--rule-light); }
+.track .tl { font-size: 24px; line-height: 1.25; }
+.track .tl small { display: block; font-size: 19px; color: var(--muted-light); }
+.track .lane { position: relative; height: 100%; }
+.track .seg { position: absolute; top: 18px; height: 40px; border-radius: 10px; background: var(--ink); }
+.track .seg.est { background: transparent; border: 2px dashed var(--ink); }
+.deadline { position: absolute; top: 20px; bottom: 0; width: 0; border-left: 2px solid var(--ink); }
+.deadline span { position: absolute; top: -6px; left: 12px; font-size: 21px; font-weight: 600; white-space: nowrap; }
+.s-time .after { margin-top: 36px; font-size: 26px; color: var(--muted-light); }
+.s-time .after b { color: var(--ink); font-weight: 600; }
+
+/* 10 volgende stappen */
+.steps { margin-top: 72px; }
+.steps li { list-style: none; display: grid; grid-template-columns: 260px 1fr 300px; padding: 30px 0; border-top: 1px solid var(--rule-dark); font-size: 32px; align-items: baseline; }
+.steps li b { font-weight: 600; }
+.steps li span:last-child { text-align: right; color: var(--titanium); font-size: 26px; }
+.steps li .now { color: var(--volt); }
+.s-next .q { margin-top: auto; font-size: 120px; font-weight: 900; font-style: italic; text-transform: uppercase; letter-spacing: -0.04em; }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<section class="slide s-cover">
+  <div class="left">
+    <div class="wordmark" style="font-size:30px">HÏ GRIP</div>
+    <h1>Voortgang<br>testkaarten</h1>
+    <p class="sub">4 testkaarten, 2 hypotheses. Stand op 26 oktober 2026.</p>
+    <div class="foot"><span>Timo Heijligers · 1104402</span></div>
+  </div>
+  <div class="frame"><img src="img/voetbal.jpg" alt=""></div>
+</section>
+
+<!-- 2 -->
+<section class="slide dark s-overview">
+  <h2>Twee vragen,<br>vier testen</h2>
+  <div class="cols">
+    <div class="col">
+      <p class="meta">Hypothese A</p>
+      <p class="q">Komt 30% van de bestellingen door de technische features van de gripsok?</p>
+      <ul class="cards">
+        <li><span><b>1</b>A/B-test ads</span><span class="status live">Live</span></li>
+        <li><span><b>2</b>Post-purchase survey</span><span class="status">Klaar, geen reacties</span></li>
+      </ul>
+    </div>
+    <div class="col">
+      <p class="meta">Hypothese B</p>
+      <p class="q">Kan een producent clubsokken maken voor één club: 200–500 paar, binnen 6–8 weken, in onze kwaliteit?</p>
+      <ul class="cards">
+        <li><span><b>4</b>Leveranciersscan</span><span class="status">Niet gestart</span></li>
+        <li><span><b>3</b>Proefserie samples</span><span class="status">Niet gestart</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>Deadline alle kaarten: 1 november 2026</span><span class="wordmark">HÏ GRIP</span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide s-card">
+  <div class="left">
+    <p class="meta">Testkaart 1 · 2 weken · ± 7 uur werk</p>
+    <h2>A/B-test ads</h2>
+    <dl class="spec">
+      <dt>Hypothese</dt><dd>30% van de bestellingen komt doordat we extra technische features aanbieden en marketen.</dd>
+      <dt>Test</dt><dd>Twee varianten van dezelfde Instagram-ad. <strong>A</strong> toont alleen het product, <strong>B</strong> benoemt de features. Zelfde doelgroep, budget, looptijd en landingspagina.</dd>
+      <dt>Metriek</dt><dd>CTR per variant, kosten per klik, views, likes en bezoekers op de productpagina.</dd>
+      <dt>Gelijk als</dt><dd><strong>B haalt minstens 30% hogere CTR</strong> dan A, bij minimaal 2.500 vertoningen per variant.</dd>
+    </dl>
+  </div>
+  <div class="right">
+    <div class="ads">
+      <figure><div class="frame"><img src="img/1A.webp" alt=""></div><figcaption><b>A</b>Alleen het product</figcaption></figure>
+      <figure><div class="frame"><img src="img/1B.webp" alt=""></div><figcaption><b>B</b>Features benoemd</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide dark s-t1">
+  <p class="meta">Test 1 · live op Instagram, nog geen data</p>
+  <h2 class="statement">2.500 vertoningen<br>is te weinig.</h2>
+  <div class="bars">
+    <div class="bar-row"><div class="lbl"><b>2.500</b>ons criterium per variant</div><div class="bar ours"></div></div>
+    <div class="bar-row"><div class="lbl"><b>± 10.000</b>nodig om 30% verschil hard te maken</div><div class="bar need"></div></div>
+  </div>
+  <div class="notes">
+    <p><b>Gedaan</b>Vier A/B-paren gebouwd op eigen foto's (padel, voetbal, tennis, rugby). Alleen de boodschap verschilt. Live via de A/B-testfunctie van Meta.</p>
+    <p><b>Wat ik ervan leer</b>Ik lees de uitslag als richting, niet als bewijs. Een klik is geen koop, dus ik meet ook add-to-carts. De feed haalt meestal 0,2–0,9% CTR.</p>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide s-card">
+  <div class="left">
+    <p class="meta">Testkaart 2 · 2 weken · ± 2 uur werk</p>
+    <h2>Post-purchase<br>survey</h2>
+    <dl class="spec">
+      <dt>Hypothese</dt><dd>30% van de bestellingen komt door de technische features.</dd>
+      <dt>Test</dt><dd>Na elke bestelling een korte vragenlijst: wat gaf de doorslag? De features staan naast merk, levertijd, verhaal, prijs en uiterlijk.</dd>
+      <dt>Gelijk als</dt><dd><strong>Minstens 30% kiest een technische feature</strong> als doorslaggevende reden.</dd>
+    </dl>
+  </div>
+  <div class="right">
+    <div class="survey">
+      <p class="from">Mail na je bestelling</p>
+      <h3>Wat gaf voor jou de doorslag?</h3>
+      <p class="group">Features · telt voor de hypothese</p>
+      <ul class="feat"><li>De grip</li><li>Ademend materiaal</li><li>Compressie</li><li>Versterkte hiel</li></ul>
+      <p class="group">Andere redenen</p>
+      <ul><li>Het merk</li><li>Levertijd</li><li>Het verhaal</li><li>Prijs of uiterlijk</li></ul>
+      <p class="caption">Schets van de vraag</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide dark s-t2">
+  <div class="left">
+    <p class="meta">Test 2 · opgezet, nog geen reacties</p>
+    <h2 class="statement">Klaar.<br>Nu de kopers.</h2>
+    <div class="points">
+      <p><b>Waarom</b><span>Test 1 meet aandacht, deze test meet echte kopers. Samen dekken ze klik én koop.</span></p>
+      <p><b>Inzicht</b><span>Bij een paar bestellingen per week telt elke reactie zwaar. Een open vraag vangt redenen op die we zelf niet bedachten.</span></p>
+      <p><b>Vervolg</b><span>Reacties tellen tot 1 november. Bij te weinig respons verleng ik de looptijd.</span></p>
+    </div>
+  </div>
+  <div class="frame"><img src="img/tennis.jpg" alt=""></div>
+</section>
+
+<!-- 7 -->
+<section class="slide s-scan">
+  <p class="meta">Testkaart 4 · 1 week · ± 8 uur werk</p>
+  <h2 style="margin-top:28px">Leveranciersscan</h2>
+  <div class="top" style="margin-top:56px">
+    <dl class="spec">
+      <dt>Hypothese</dt><dd>Een producent kan gepersonaliseerde clubsokken maken: MOQ van 200–500 paar, binnen 6–8 weken, in onze kwaliteit.</dd>
+    </dl>
+    <dl class="spec">
+      <dt>Test</dt><dd>Dezelfde offerteaanvraag naar 10 leveranciers (clubnaam, logo, kleuren; 50 en 200 paar). Daarna bellen met de 3 beste.</dd>
+    </dl>
+  </div>
+  <div class="funnel">
+    <p class="cap">Gelijk als</p>
+    <div class="fr"><div class="fb w10">10</div><p class="fl"><b>offerteaanvragen</b> verstuurd</p></div>
+    <div class="fr"><div class="fb w3">3</div><p class="fl"><b>reageren</b> binnen 7 dagen</p></div>
+    <div class="fr"><div class="fb w2">2</div><p class="fl"><b>MOQ ≤ 200 paar</b>, levertijd ≤ 6 weken, haalbare marge, kwaliteitsbewijs</p></div>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide dark s-card">
+  <div class="left">
+    <p class="meta">Testkaart 3 · 2 weken · ± 8 uur werk</p>
+    <h2>Proefserie<br>samples</h2>
+    <dl class="spec">
+      <dt>Hypothese</dt><dd>Dezelfde als testkaart 4, nu getoetst op kwaliteit.</dd>
+      <dt>Test</dt><dd>Een gepersonaliseerd sample bij de <strong>2 beste leveranciers uit de scan</strong>. Bewijsfoto binnen 3 dagen, daarna testen tijdens een training.</dd>
+      <dt>Gelijk als</dt><dd>Minstens 1 sample scoort gemiddeld <strong>4 van 5</strong>, zonder slijtage na 10 wasbeurten, met een totale productietijd van maximaal 8 weken.</dd>
+    </dl>
+  </div>
+  <div class="right">
+    <div class="score">
+      <div class="head"><span>Tegen onze huidige sok</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      <div class="row"><span>Grip-pads</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <div class="row"><span>Pasvorm</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <div class="row"><span>Kleur en logo</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <div class="row"><span>Naden</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <div class="row"><span>Na wassen op 40 °C</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <div class="row"><span>Feel in de training</span><i></i><i></i><i></i><i class="ok"></i><i class="ok"></i></div>
+      <p class="rule"><b>Doel:</b> gemiddeld 4 of hoger</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide s-time">
+  <p class="meta">Test 3 en 4 · nog niet gestart</p>
+  <h2 class="statement">Test 3 haalt<br>1 november niet.</h2>
+  <div class="timeline">
+    <!-- schaal: 26 okt = 0%, 30 nov = 100% (35 dagen) -->
+    <div class="axis">
+      <span style="left:0%">26 okt</span><span style="left:20%">2 nov</span><span style="left:40%">9 nov</span><span style="left:60%">16 nov</span><span style="left:80%">23 nov</span><span style="left:100%">30 nov</span>
+    </div>
+    <div class="track"><p class="tl">Test 4<small>Aanvraag + 7 dagen wachten</small></p><div class="lane"><div class="seg" style="left:0;width:20%"></div></div></div>
+    <div class="track"><p class="tl">Test 4<small>Bellen met de 3 beste</small></p><div class="lane"><div class="seg" style="left:20%;width:11.4%"></div></div></div>
+    <div class="track"><p class="tl">Test 3<small>Sample maken en leveren (schatting)</small></p><div class="lane"><div class="seg est" style="left:31.4%;width:28.6%"></div></div></div>
+    <div class="track"><p class="tl">Test 3<small>Testen, 10 wasbeurten</small></p><div class="lane"><div class="seg" style="left:60%;width:40%"></div></div></div>
+    <div class="deadline" style="left:calc(380px + (100% - 380px) * 0.1714)"><span>Deadline 1 nov</span></div>
+  </div>
+  <p class="after"><b>Deze week:</b> offerteaanvraag naar 10 leveranciers. <b>Voorstel:</b> test 3 afronden eind november.</p>
+</section>
+
+<!-- 10 -->
+<section class="slide dark s-next">
+  <h2>Volgende stappen</h2>
+  <ul class="steps">
+    <li><b>Test 1</b><span>CTR, kosten per klik en add-to-carts uitlezen</span><span>na 7 dagen</span></li>
+    <li><b>Test 2</b><span>Reacties verzamelen en tellen</span><span>tot 1 november</span></li>
+    <li><b>Test 4</b><span>Offerteaanvraag naar 10 leveranciers</span><span class="now">deze week</span></li>
+    <li><b>Test 3</b><span>Samples bestellen bij de 2 beste</span><span>na de scan</span></li>
+  </ul>
+  <p class="q">Vragen?</p>
+</section>
+
+</body>
+</html>

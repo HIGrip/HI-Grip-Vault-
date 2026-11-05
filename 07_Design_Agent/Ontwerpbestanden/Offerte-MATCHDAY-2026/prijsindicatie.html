@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>HÏ Grip Prijsindicatie MATCHDAY Supply</title>
+<style>
+  @font-face { font-family: 'Poppins'; font-weight: 300; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Light.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 400; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 500; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Medium.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-SemiBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-ExtraBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Black.ttf'); }
+
+  :root {
+    --hi-black: #0A0A0A;
+    --hi-white: #FFFFFF;
+    --hi-yellow: #CCFF00;
+    --hi-near-black: #111111;
+    --hi-titanium: #909194;
+    --ink-soft: #6b6c70;
+    --rule: #e8e8e8;
+    --rule-dark: #262626;
+    --m: 16mm;
+  }
+
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--hi-white); }
+  body {
+    font-family: 'Poppins', system-ui, sans-serif; color: var(--hi-black);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    font-variant-numeric: tabular-nums;
+  }
+  .page { width: 210mm; height: 297mm; overflow: hidden; display: flex; flex-direction: column; break-after: page; }
+  .page:last-child { break-after: auto; }
+
+  .light { padding: 13mm var(--m) 11mm; position: relative; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 2.4mm; }
+  .brand img { height: 7mm; }
+  .brand span { font-weight: 800; font-size: 12pt; letter-spacing: -0.02em; }
+  .doc { font-size: 7.5pt; color: var(--ink-soft); }
+
+  h1 { margin-top: 13mm; font-weight: 900; font-size: 30pt; line-height: 0.94; letter-spacing: -0.045em; text-transform: uppercase; }
+  .lead { margin-top: 4mm; width: 92mm; font-size: 9pt; font-weight: 300; line-height: 1.5; color: var(--ink-soft); }
+  .socks { position: absolute; right: var(--m); top: 24mm; width: 62mm; height: 62mm; }
+  .socks img { position: absolute; height: 60mm; }
+  .socks .s-wit { right: 0; top: 0; }
+  .socks .s-zwart { left: 0; top: 2mm; z-index: 1; }
+
+  .dark { flex: 1; background: var(--hi-near-black); color: var(--hi-white); padding: 11mm var(--m) 9mm; display: flex; flex-direction: column; }
+  .white { flex: 1; padding: 0 var(--m) 11mm; display: flex; flex-direction: column; }
+
+  h2 { font-weight: 900; font-size: 14pt; letter-spacing: -0.03em; text-transform: uppercase; }
+  .sec { display: flex; justify-content: space-between; align-items: baseline; }
+  .sec p { font-size: 7.5pt; font-weight: 300; color: var(--hi-titanium); }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 4.5mm; }
+  th { font-size: 7pt; font-weight: 400; color: var(--hi-titanium); text-align: left; padding-bottom: 2mm; }
+  th.r, td.r { text-align: right; }
+  td { padding: 1.75mm 0; border-top: 0.5pt solid var(--rule-dark); font-size: 9.5pt; font-weight: 300; }
+  tbody tr:last-child td { border-bottom: 0.5pt solid var(--rule-dark); }
+  td.b { font-weight: 600; }
+  tr.pick td { color: var(--hi-yellow); font-weight: 600; }
+
+  .gap { margin-top: 8mm; }
+  .white table td { border-color: var(--rule); }
+  .foot { margin-top: auto; padding-top: 5mm; display: flex; justify-content: space-between; font-size: 7.5pt; font-weight: 300; color: var(--hi-titanium); }
+  .foot b { color: var(--hi-white); font-weight: 600; }
+  .white .foot { color: var(--ink-soft); border-top: 0.5pt solid var(--rule); }
+  .white .foot b { color: var(--hi-black); }
+
+  .terms { margin-top: 3mm; }
+  .terms div { display: grid; grid-template-columns: 38mm 1fr; gap: 4mm; padding: 2mm 0; border-top: 0.5pt solid var(--rule); }
+  .terms div:last-child { border-bottom: 0.5pt solid var(--rule); }
+  .terms dt { font-size: 8.5pt; font-weight: 600; }
+  .terms dd { font-size: 8.5pt; font-weight: 300; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <div class="light">
+    <div class="top">
+      <div class="brand"><img src="../Prijslijst-retail-2026/img/logo.png" alt=""><span>HÏ GRIP</span></div>
+      <div class="doc">Prijsindicatie · 5 november 2026</div>
+    </div>
+    <h1>Gripsokken<br>voor MATCHDAY<br>Supply</h1>
+    <p class="lead">Vrijblijvende indicatie. Eigen logo op elke sok, in de kleuren die jij kiest. Minimaal 150 paar per maat en per kleur.</p>
+    <div class="socks">
+      <img class="s-wit" src="../Prijslijst-retail-2026/img/wit-cut.png" alt="">
+      <img class="s-zwart" src="../Prijslijst-retail-2026/img/zwart-cut.png" alt="">
+    </div>
+  </div>
+
+  <div class="dark">
+    <div class="sec"><h2>Jouw opties met eigen logo</h2><p>Inclusief verpakking, exclusief levering</p></div>
+    <table>
+      <thead><tr><th>Uitvoering</th><th class="r">Paar</th><th class="r">Excl. btw</th><th class="r">Incl. btw</th></tr></thead>
+      <tbody>
+        <tr class="pick"><td>2.0 · zwart en wit · 3 maten (6 x 150)</td><td class="r">900</td><td class="r">€ 8.145,00</td><td class="r">€ 9.855,45</td></tr>
+        <tr><td>1.0 · zwart en wit · 2 maten (4 x 150)</td><td class="r">600</td><td class="r">€ 4.110,00</td><td class="r">€ 4.973,10</td></tr>
+        <tr><td>2.0 · 1 kleur · 1 maat</td><td class="r">150</td><td class="r">€ 1.357,50</td><td class="r">€ 1.642,58</td></tr>
+        <tr><td>1.0 · 1 kleur · 1 maat</td><td class="r">150</td><td class="r">€ 1.027,50</td><td class="r">€ 1.243,28</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sec gap"><h2>Staffel 2.0 eigen logo</h2><p>Per paar, per maat en per kleur</p></div>
+    <table>
+      <thead><tr><th>Aantal per maat en kleur</th><th class="r">Excl. btw</th><th class="r">Incl. btw</th><th class="r">Verpakking excl. btw</th></tr></thead>
+      <tbody>
+        <tr><td>150 t/m 199</td><td class="b r">€ 8,70</td><td class="r">€ 10,53</td><td class="r">€ 0,35</td></tr>
+        <tr><td>200 t/m 299</td><td class="b r">€ 7,70</td><td class="r">€ 9,32</td><td class="r">€ 0,35</td></tr>
+        <tr><td>300 t/m 399</td><td class="b r">€ 7,20</td><td class="r">€ 8,71</td><td class="r">€ 0,30</td></tr>
+        <tr><td>400 t/m 499</td><td class="b r">€ 6,70</td><td class="r">€ 8,11</td><td class="r">€ 0,25</td></tr>
+        <tr><td>500+</td><td class="b r">€ 6,30</td><td class="r">€ 7,62</td><td class="r">€ 0,20</td></tr>
+      </tbody>
+    </table>
+
+    <div class="foot">
+      <span>1.0 eigen logo: € 6,50 per paar excl. btw · verpakking € 0,35 per paar · maten 34/39 en 40/46</span>
+      <span>1/2</span>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <div class="white" style="padding-top:13mm">
+    <div class="sec"><h2>Retail zonder eigen branding</h2><p>Performance Grip Socks 2.0 · adviesprijs € 19,95 incl. btw</p></div>
+    <table>
+      <thead><tr><th>Aantal per order, vrij te combineren</th><th class="r">Excl. btw</th><th class="r">Incl. btw</th></tr></thead>
+      <tbody>
+        <tr><td>6 t/m 59</td><td class="b r">€ 7,80</td><td class="r">€ 9,44</td></tr>
+        <tr><td>60 t/m 119</td><td class="b r">€ 7,40</td><td class="r">€ 8,95</td></tr>
+        <tr><td>120 t/m 239 (150 paar: € 1.050,00 excl. btw, € 1.270,50 incl. btw)</td><td class="b r">€ 7,00</td><td class="r">€ 8,47</td></tr>
+        <tr><td>240 t/m 359</td><td class="b r">€ 6,60</td><td class="r">€ 7,99</td></tr>
+        <tr><td>360 t/m 499</td><td class="b r">€ 6,10</td><td class="r">€ 7,38</td></tr>
+        <tr><td>500+</td><td class="b r">€ 5,10</td><td class="r">€ 6,17</td></tr>
+      </tbody>
+    </table>
+
+    <div class="sec gap"><h2>Product en voorwaarden</h2><p>Eigen logo, tenzij anders vermeld</p></div>
+    <dl class="terms">
+      <div><dt>Eigen merk</dt><dd>Ons grippatroon met de naam HÏ Grip blijft op de sok en ons logo blijft op de verpakking. De rest bepaal jij.</dd></div>
+      <div><dt>Betaling</dt><dd>50% vooraf, de rest vóór levering.</dd></div>
+      <div><dt>Levertijd</dt><dd>Vanaf akkoord 6 tot 8 weken per vliegtuig, 10 tot 12 weken per boot.</dd></div>
+      <div><dt>Levering in Nederland</dt><dd>De kosten staan in de officiële offerte.</dd></div>
+      <div><dt>Verzending aan eindklanten</dt><dd>Mogelijk. De kosten staan in de officiële offerte.</dd></div>
+      <div><dt>Materiaal 2.0</dt><dd>30% Coolmax®, 28% katoen, 25% polyester, 14% polyamide, 3% elastaan</dd></div>
+      <div><dt>Materiaal 1.0</dt><dd>42% katoen, 41% polyester, 14% polyamide, 3% elastaan</dd></div>
+      <div><dt>Onderhoud</dt><dd>Binnenstebuiten wassen, met de hand of op een zacht programma van 30 tot 40°C met mild wasmiddel. Aan de lucht drogen, geen droger, niet uitwringen.</dd></div>
+      <div><dt>Maten</dt><dd>2.0: EU 35/38, 39/42, 43/47. 1.0: EU 34/39, 40/46. Een maattabel met voetlengtes hebben we niet.</dd></div>
+      <div><dt>Fabrikant</dt><dd>De gegevens van onze fabriek delen we niet. Aanspreekpunt: HI Grip V.O.F., IJsseldijk-Noord 48, 2935 BH Ouderkerk aan den IJssel. Traceerbaarheid volgt in de officiële offerte.</dd></div>
+      <div><dt>Defecten</dt><dd>Aantoonbare productiefouten vervangen we. We betalen hiervoor geen geld terug.</dd></div>
+      <div><dt>Sample</dt><dd>Een sample van de standaardsok is gratis. Een sample met eigen logo bieden we niet aan.</dd></div>
+      <div><dt>Foto's en video's</dt><dd>Beelden van de MATCHDAY-uitvoering leveren wij en mag je commercieel gebruiken in je Shopify-winkel en advertenties. Voor onze eigen productfoto's en video's hebben we eerst meer informatie en een meeting nodig.</dd></div>
+    </dl>
+
+    <div class="foot">
+      <span><b>Team HÏ Grip</b>  ·  +31 6 24 56 65 47  ·  info@higrip.nl</span>
+      <span>higrip.nl  ·  KVK 97210129  ·  2/2</span>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

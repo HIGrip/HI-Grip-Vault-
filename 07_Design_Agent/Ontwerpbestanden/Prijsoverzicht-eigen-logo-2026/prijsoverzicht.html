@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>HÏ Grip Prijsoverzicht</title>
+<style>
+  @font-face { font-family: 'Poppins'; font-weight: 300; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Light.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 400; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Regular.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-SemiBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-ExtraBold.ttf'); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; src: url('file:///C:/Users/Test/AppData/Local/Microsoft/Windows/Fonts/Poppins-Black.ttf'); }
+
+  :root {
+    --hi-black: #0A0A0A;
+    --hi-white: #FFFFFF;
+    --hi-near-black: #111111;
+    --hi-titanium: #909194;
+    --ink-soft: #6b6c70;
+    --rule: #e8e8e8;
+    --rule-dark: #262626;
+    --m: 16mm;
+  }
+
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--hi-white); }
+  body {
+    width: 210mm; height: 297mm; overflow: hidden;
+    display: flex; flex-direction: column;
+    font-family: 'Poppins', system-ui, sans-serif; color: var(--hi-black);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .head { padding: 13mm var(--m) 10mm; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 2.4mm; }
+  .brand img { height: 7mm; }
+  .brand span { font-weight: 800; font-size: 12pt; letter-spacing: -0.02em; }
+  .doc { font-size: 7.5pt; color: var(--ink-soft); }
+  h1 { margin-top: 10mm; font-weight: 900; font-size: 30pt; line-height: 0.94; letter-spacing: -0.045em; text-transform: uppercase; }
+
+  .prices { background: var(--hi-near-black); color: var(--hi-white); padding: 10mm var(--m) 9mm; }
+  h2 { font-weight: 900; font-size: 14pt; letter-spacing: -0.03em; text-transform: uppercase; }
+  .sec { display: flex; justify-content: space-between; align-items: baseline; }
+  .sec p { font-size: 7.5pt; font-weight: 300; color: var(--hi-titanium); }
+
+  table { width: 100%; border-collapse: collapse; margin-top: 4.5mm; }
+  th { font-size: 7.5pt; font-weight: 400; color: var(--hi-titanium); text-align: right; padding-bottom: 2mm; }
+  th:first-child, td:first-child { text-align: left; }
+  td { padding: 1.9mm 0; border-top: 0.5pt solid var(--rule-dark); font-size: 10pt; font-weight: 300; text-align: right; }
+  tbody tr:last-child td { border-bottom: 0.5pt solid var(--rule-dark); }
+  td.b { font-weight: 600; }
+  td.m { color: var(--hi-titanium); font-size: 8.5pt; }
+
+  .terms { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 5mm; margin-top: 7mm; }
+  .terms dt { font-size: 7pt; color: var(--hi-titanium); margin-bottom: 1mm; }
+  .terms dd { font-size: 8.5pt; font-weight: 600; line-height: 1.35; }
+
+  .specs { flex: 1; padding: 10mm var(--m) 9mm; display: flex; flex-direction: column; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10mm; margin-top: 5mm; }
+  h3 { font-weight: 800; font-size: 10pt; padding-bottom: 2mm; }
+  .grid ul { list-style: none; }
+  .grid li { padding: 1.5mm 0; border-top: 0.5pt solid var(--rule); font-size: 8.5pt; font-weight: 300; }
+  .grid li:last-child { border-bottom: 0.5pt solid var(--rule); }
+
+  .foot { margin-top: auto; display: flex; justify-content: space-between; font-size: 7.5pt; font-weight: 300; color: var(--ink-soft); }
+  .foot b { color: var(--hi-black); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<section class="head">
+  <div class="top">
+    <div class="brand"><img src="../Prijslijst-retail-2026/img/logo.png" alt=""><span>HÏ GRIP</span></div>
+    <div class="doc">Prijsoverzicht 2026</div>
+  </div>
+  <h1>Performance<br>Grip Socks</h1>
+</section>
+
+<section class="prices">
+  <div class="sec"><h2>Prijzen</h2><p>Per paar, excl. btw</p></div>
+  <table>
+    <thead><tr><th>Aantal per maat en kleur</th><th>2.0</th><th>1.0</th><th>Paper wrap</th><th>Header card</th></tr></thead>
+    <tbody>
+      <tr><td>150 t/m 199</td><td class="b">€ 8,70</td><td class="b">€ 6,50</td><td>€ 0,35</td><td>€ 0,35</td></tr>
+      <tr><td>200 t/m 299</td><td class="b">€ 7,70</td><td class="b">€ 6,20</td><td>€ 0,35</td><td>€ 0,33</td></tr>
+      <tr><td>300 t/m 399</td><td class="b">€ 7,20</td><td class="b">€ 5,80</td><td>€ 0,30</td><td>€ 0,28</td></tr>
+      <tr><td>400 t/m 499</td><td class="b">€ 6,70</td><td class="b">€ 5,30</td><td>€ 0,25</td><td>€ 0,23</td></tr>
+      <tr><td>500+</td><td class="b">€ 6,30</td><td class="b">€ 5,20</td><td>€ 0,20</td><td>€ 0,18</td></tr>
+    </tbody>
+  </table>
+  <dl class="terms">
+    <div><dt>Minimum</dt><dd>150 paar per maat en per kleur</dd></div>
+    <div><dt>Kleuren</dt><dd>Alle kleuren beschikbaar</dd></div>
+    <div><dt>Betaling</dt><dd>50% vooraf, rest vóór levering</dd></div>
+    <div><dt>Verzending</dt><dd>Bij officiële offerte</dd></div>
+  </dl>
+</section>
+
+<section class="specs">
+  <h2>Specificaties</h2>
+  <div class="grid">
+    <div>
+      <h3>Performance Grip Socks 2.0</h3>
+      <ul>
+        <li>30% Coolmax®, 28% katoen, 25% polyester, 14% polyamide, 3% elastaan</li>
+        <li>Compressie 15 tot 20 mmHg</li>
+        <li>Siliconen grip</li>
+        <li>Naadloos</li>
+        <li>Special cushioning</li>
+        <li>Versterkte hiel</li>
+        <li>Maten 35/38, 39/42, 43/47</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Performance Grip Socks 1.0</h3>
+      <ul>
+        <li>42% katoen, 41% polyester, 14% polyamide, 3% elastaan</li>
+        <li>Dempende zool</li>
+        <li>Siliconen grip</li>
+        <li>Ademende mesh</li>
+        <li>Boogondersteuning</li>
+        <li>Versterkte hiel en teen</li>
+        <li>Maten 35/38, 39/42, 43/47</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot">
+    <span><b>Team HÏ Grip</b>  ·  +31 6 24 56 65 47  ·  info@higrip.nl</span>
+    <span>higrip.nl  ·  KVK 97210129</span>
+  </div>
+</section>
+
+</body>
+</html>

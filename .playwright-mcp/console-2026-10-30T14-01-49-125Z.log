@@ -1,0 +1,169 @@
+[    3575ms] [INFO] [HotReload] CLI hot reload disabled - No hot reload port specified. @ https://hi-grip.myshopify.com/cdn/shopifycloud/theme-hot-reload/theme-hot-reload.js:316
+[    3827ms] [INFO] %cSection Store Cart%c public API ready — run SectionStoreCart.help() for docs background:#111827;color:#ffffff;border-radius:3px;padding:2px 6px;font-weight:600 color:#6b7280 @ https://cdn.shopify.com/extensions/01a18b50-3f12-7d0d-ba5d-deaf7078bd2b/section-factory-435/assets/block-cart.js:19
+[    5306ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ :3566
+[    5679ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.colors_CaG6LKvC.esm.js:0
+[    5710ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.ShopLogin_DFiXXb7z.esm.js:0
+[    7230ms] [VERBOSE] Rendering was performed in a subtree hidden by content-visibility. @ https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/chunk.ShopLogin_DFiXXb7z.esm.js:0
+[   13438ms] [WARNING] The resource https://shop.app/pay/assets/sprite.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://shop.app/accounts/pre_auth?client_id=02d441e1-b636-49a2-b6cf-6553a79a49e9&analytics_trace_id=b22b2104-a09c-4169-a244-4799123d31fe&flow=embed&flow_version=account_menu&target_origin=https%3A%2F%2Fhi-grip.myshopify.com&storefront_domain=https%3A%2F%2Fwww.higrip.nl&scope=openid+email%3Averified+pay%3Asession_token+profile+shop%3Aaccount_uuid&locale=nl:0
+[ 5722930ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5724823ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5729218ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5729357ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5733885ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5734837ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5740096ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5745329ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5750385ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5756754ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5762005ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5767085ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5772147ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5777189ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5782228ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5787269ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5792287ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5797321ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5802349ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5807381ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5812412ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5817444ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5822485ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5827506ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5832538ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5837569ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5842596ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5847628ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[ 5859407ms] [ERROR] Failed to load resource: net::ERR_NETWORK_CHANGED @ https://hi-grip.myshopify.com/api/collect:0
+[ 9090382ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://hi-grip.myshopify.com/en/sitemap_collections_1.xml?from=659972129095&amp;to=659972129095:0
+[41238088ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[41239244ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[41241273ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[41243508ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[41245305ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[41251129ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70789688ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70790989ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70799248ms] [ERROR] Failed to load resource: net::ERR_NETWORK_IO_SUSPENDED @ https://hi-grip.myshopify.com/api/collect:0
+[70823206ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70823233ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70829193ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70834234ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70839272ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70844345ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70849422ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70855434ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70860544ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70866553ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70871645ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70876743ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70882763ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70887775ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70892827ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70897898ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70902961ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70908005ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70914061ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70920072ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70925138ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70930190ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70935237ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70940275ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70945345ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70951409ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70957450ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70962477ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70967527ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70973570ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70978630ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70984654ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70989742ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70994785ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[70999821ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71004880ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71010931ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71015982ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71021019ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71026066ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71031133ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71036180ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71042202ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71047259ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71054317ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71059356ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71064440ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71070431ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71075465ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71080507ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71085557ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71090630ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71095667ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71101763ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71106823ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71111866ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71116920ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71121955ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71127015ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71133085ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71139187ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71145214ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71150260ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71155319ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71160364ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71165417ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71170477ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71176506ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71181549ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71186604ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71191660ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71197703ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71203752ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71209786ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71214846ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71219888ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71225914ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71230970ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71237009ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71242041ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71247088ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71252114ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71257163ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71262218ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71267245ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71272316ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71278354ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71283390ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71289428ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71294478ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71299524ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71304567ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71309613ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71314641ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71319697ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71324733ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71330770ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71335821ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71341848ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71346891ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71352928ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71357976ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71363049ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71369100ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71374155ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71379208ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71384250ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71389304ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71395390ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71401404ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71406456ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71411486ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71417517ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71423575ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71429582ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71434644ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71439687ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71444726ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71450748ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71456778ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71461840ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+[71466892ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://hi-grip.myshopify.com/api/collect:0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      

@@ -1,0 +1,459 @@
+{{ 'hg-survey.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hg-survey.js' | asset_url }}" defer></script>
+{%- liquid
+  assign s = section.settings
+  assign sports = section.blocks | where: 'type', 'sport'
+  assign reasons = section.blocks | where: 'type', 'reason'
+  assign sources = section.blocks | where: 'type', 'source'
+  assign freqs = section.blocks | where: 'type', 'freq'
+  assign editor = request.design_mode
+  assign endpoint = s.code_endpoint | strip
+  assign popup = s.popup_id | strip
+  if endpoint != blank
+    assign popup = ''
+  endif
+  assign claimable = false
+  if endpoint != blank or popup != blank
+    assign claimable = true
+  endif
+
+  if s.team_image != blank
+    assign team_photo = s.team_image | image_url: width: 1600
+  else
+    assign team_photo = 'hg-survey-team.jpg' | asset_url
+  endif
+
+  capture chevron
+    echo '<svg aria-hidden="true" viewBox="0 0 16 16"><path d="M5.5 2.5 11 8l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>'
+  endcapture
+  capture back_icon
+    echo '<svg aria-hidden="true" viewBox="0 0 16 16"><path d="M10.5 2.5 5 8l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"/></svg>'
+  endcapture
+  capture check
+    echo '<svg aria-hidden="true" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-6.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  endcapture
+
+  capture count_1
+    echo s.count_label | replace: '[n]', '1' | replace: '[totaal]', '5'
+  endcapture
+  capture count_2
+    echo s.count_label | replace: '[n]', '2' | replace: '[totaal]', '5'
+  endcapture
+  capture count_3
+    echo s.count_label | replace: '[n]', '3' | replace: '[totaal]', '5'
+  endcapture
+  capture count_4
+    echo s.count_label | replace: '[n]', '4' | replace: '[totaal]', '5'
+  endcapture
+  capture count_5
+    echo s.count_label | replace: '[n]', '5' | replace: '[totaal]', '5'
+  endcapture
+-%}
+<section
+  class="hgs hgs--{{ s.text_align }} hgs--{{ s.style | default: 'avond' }}{% if s.heading_italic %} hgs--italic{% endif %}{% if editor %} hgs--editor{% endif %}"
+  style="
+    --hgs-bg:{{ s.bg_color }};--hgs-fg:{{ s.text_color }};--hgs-btn-bg:{{ s.button_bg }};--hgs-btn-fg:{{ s.button_fg }};
+    --hgs-h:{{ s.heading_size }}px;--hgs-h-m:{{ s.heading_size_mobile }}px;--hgs-body:{{ s.body_size }}px;--hgs-max:{{ s.max_width }}px;
+    --hgs-pt:{{ s.padding_top }}px;--hgs-pb:{{ s.padding_bottom }}px;--hgs-pt-m:{{ s.padding_top_mobile }}px;--hgs-pb-m:{{ s.padding_bottom_mobile }}px;
+  "
+  data-max="{{ s.max_choices }}"
+  data-picked-label="{{ s.picked_label | escape }}"
+  data-shuffle-reasons="{{ s.shuffle_reasons }}"
+  data-shuffle-sources="{{ s.shuffle_sources }}"
+  data-popup-id="{{ popup | escape }}"
+  data-code-endpoint="{{ endpoint | escape }}"
+  data-turnstile="{{ s.turnstile_sitekey | strip | escape }}"
+  data-reserve-code="{{ s.discount_code | strip | escape }}"
+>
+  <script type="application/json" data-hgs-photos>
+    {
+      "team": {{ team_photo | json }}
+      {%- for block in sports -%}
+        {%- liquid
+          assign key = block.settings.key | handleize
+          if block.settings.image != blank
+            assign photo = block.settings.image | image_url: width: 1600
+          else
+            assign photo = 'hg-survey-' | append: key | append: '.jpg' | asset_url
+          endif
+        -%}
+        , {{ key | json }}: {{ photo | json }}
+      {%- endfor -%}
+    }
+  </script>
+  {%- if editor -%}
+    <div class="hgs-hero" data-hgs-hero style="background-image:url('{{ team_photo }}')"></div>
+  {%- else -%}
+    <div class="hgs-hero" data-hgs-hero></div>
+    {%- comment -%} Foto meteen kiezen bij ?sport= uit de mail; anders laadt eerst de teamfoto voor niets. Na versturen altijd de teamfoto. {%- endcomment -%}
+    <script>
+      (function (hero) {
+        try {
+          var photos = JSON.parse(hero.previousElementSibling.textContent);
+          var query = new URLSearchParams(location.search);
+          var sport = query.has('contact_posted') ? 'team' : (query.get('sport') || '').toLowerCase();
+          hero.style.backgroundImage = 'url("' + (Object.prototype.hasOwnProperty.call(photos, sport) ? photos[sport] : photos.team) + '")';
+        } catch (e) {}
+      })(document.currentScript.previousElementSibling);
+    </script>
+  {%- endif -%}
+  <div class="hgs__wrap">
+    {%- if editor -%}
+      <p class="hgs-warn">Editor: alle schermen staan hier onder elkaar. Bezoekers zien één vraag per keer.</p>
+    {%- endif -%}
+
+    {%- form 'contact', id: 'flitsinterview', class: 'hgs-form' -%}
+      {%- if form.posted_successfully? or editor -%}
+        {%- if endpoint != blank -%}
+          {%- comment -%} Verbinding met botcheck en codegenerator alvast opzetten: de code staat er dan sneller {%- endcomment -%}
+          {%- assign endpoint_origin = endpoint | split: '/' | slice: 0, 3 | join: '/' -%}
+          <link rel="preconnect" href="https://challenges.cloudflare.com">
+          <link rel="preconnect" href="{{ endpoint_origin | escape }}" crossorigin>
+        {%- endif -%}
+        <div class="hgs-step hgs-done" data-hgs-done>
+          <h1 class="hgs__h" tabindex="-1">{{ s.done_heading | escape | replace: '30%', '<span class="hgs-v">30%</span>' }}</h1>
+          {%- if s.done_text != blank -%}<div class="hgs__p">{{ s.done_text }}</div>{%- endif -%}
+          {%- comment -%} Code komt uit de eigen codegenerator, de SendWILL-popup of de maillink (?code=); de vaste code is alleen een reserve. {%- endcomment -%}
+          <div class="hgs-code" data-hgs-codebox{% unless editor %}{% if s.discount_code == blank or claimable %} hidden{% endif %}{% endunless %}>
+            {%- if s.code_label != blank -%}<span class="hgs-code__l">{{ s.code_label }}</span>{%- endif -%}
+            <code data-hgs-code>{{ s.discount_code | default: 'HIGRIP-VOORBEELD' | escape }}</code>
+            <button class="hgs-pill hgs-pill--sm" type="button" data-hgs-copy data-copied="{{ s.copied_label | escape }}"><span>{{ s.copy_label }}</span></button>
+          </div>
+          {%- if s.code_note != blank -%}
+            <p class="hgs-uses">
+              {%- if s.code_uses > 0 -%}<span class="hgs-uses__bars" aria-hidden="true">{%- for i in (1..s.code_uses) -%}<i></i>{%- endfor -%}</span>{%- endif -%}
+              <span>{{ s.code_note }}</span>
+            </p>
+          {%- endif -%}
+          {%- if claimable -%}
+            {%- comment -%} Met de codegenerator komt de code vanzelf; de knop verschijnt pas als dat mislukt {%- endcomment -%}
+            <div class="hgs-actions" data-hgs-claimbox>
+              <a class="hgs-pill" href="{% if popup != blank %}#Ecomsend_popups_open_{{ popup }}{% else %}#flitsinterview{% endif %}" data-hgs-claim>{{ s.claim_label }}{{ chevron }}</a>
+            </div>
+            {%- if endpoint != blank -%}<div class="hgs-check" data-hgs-turnstile></div>{%- endif -%}
+          {%- endif -%}
+          <div class="hgs__p" data-hgs-nocode{% if s.discount_code != blank or claimable or editor %} hidden{% endif %}>{{ s.nocode_text }}</div>
+          {%- if endpoint != blank and s.limit_text != blank -%}<div class="hgs__p" data-hgs-limit hidden>{{ s.limit_text }}</div>{%- endif -%}
+          {%- if s.shop_label != blank -%}
+            {%- comment -%} Met claimknop verschijnt Shop pas als de code er is: één knop tegelijk {%- endcomment -%}
+            <div class="hgs-actions" data-hgs-shopbox{% if claimable and editor == false %} hidden{% endif %}>
+              {%- assign shop_url = s.shop_link | default: routes.all_products_collection_url -%}
+              <a class="hgs-pill" href="{{ shop_url }}" data-hgs-shop data-redirect="{{ shop_url | escape }}">{{ s.shop_label }}{{ chevron }}</a>
+              {%- if s.share_label != blank -%}
+                {%- comment -%} Deellink /community/korting/<code>: bij de ontvanger staat de code meteen in de winkelwagen {%- endcomment -%}
+                <button class="hgs-pill hgs-pill--ghost" type="button" data-hgs-share data-text="{{ s.share_text | escape }}" data-copied="{{ s.share_copied_label | escape }}">
+                  <span>{{ s.share_label }}</span>{{ chevron }}
+                </button>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- unless form.posted_successfully? -%}
+        {%- if form.errors -%}
+          <p class="hgs-warn" role="alert">{{ s.error_text }}</p>
+        {%- endif -%}
+
+        {%- comment -%} Antwoorden gaan als contactbericht naar het winkeladres; de klant blijft anoniem. {%- endcomment -%}
+        <input type="hidden" name="contact[email]" value="{{ shop.email }}">
+        <input type="hidden" name="contact[Formulier]" value="{{ s.form_name | escape }}">
+        <input type="hidden" name="contact[Sport]" data-hgs-field="sport">
+        <input type="hidden" name="contact[Doorslag]" data-hgs-field="reden">
+        <input type="hidden" name="contact[Telt als feature]" data-hgs-field="feature">
+        <input type="hidden" name="contact[Gevonden via]" data-hgs-field="bron">
+        <input type="hidden" name="contact[Per week]" data-hgs-field="freq">
+        <input type="hidden" name="contact[body]" data-hgs-field="body">
+
+        <div class="hgs-step" data-step="0"{% unless editor %} hidden{% endunless %}>
+          <div class="hgs-top">
+            <div class="hgs-meter" aria-hidden="true"><span class="on cur"></span><span></span><span></span><span></span><span></span></div>
+            <p class="hgs-count">{{ count_1 }}</p>
+          </div>
+          <h1 class="hgs__h" tabindex="-1">{{ s.sport_heading }}</h1>
+          {%- if s.sport_text != blank -%}<div class="hgs__p">{{ s.sport_text }}</div>{%- endif -%}
+          <ul class="hgs-tiles">
+            {%- for block in sports -%}
+              {%- liquid
+                assign key = block.settings.key | handleize
+                assign fallback = 'hg-survey-' | append: key | append: '-tegel.jpg'
+              -%}
+              <li {{ block.shopify_attributes }}>
+                <button class="hgs-tile" type="button" data-hgs-sport="{{ key }}" data-label="{{ block.settings.label | escape }}">
+                  {%- if block.settings.image != blank -%}
+                    {{ block.settings.image | image_url: width: 640, height: 400, crop: 'center' | image_tag: alt: '', loading: 'lazy', width: 640, height: 400 }}
+                  {%- else -%}
+                    <img src="{{ fallback | asset_url }}" alt="" width="640" height="400" loading="lazy">
+                  {%- endif -%}
+                  <span class="hgs-key" aria-hidden="true">{{ forloop.index }}</span>
+                  <span class="hgs-tile__l">{{ block.settings.label }}{{ chevron }}</span>
+                </button>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+        <div class="hgs-step" data-step="1"{% unless editor %} hidden{% endunless %}>
+          <div class="hgs-top">
+            <button class="hgs-back" type="button" data-hgs-goto="0">{{ back_icon }}<span>{{ s.change_sport_label }}</span></button>
+            <div class="hgs-meter" aria-hidden="true"><span class="on"></span><span class="on cur"></span><span></span><span></span><span></span></div>
+            <p class="hgs-count">{{ count_2 }}</p>
+          </div>
+          <h2 class="hgs__h" tabindex="-1">{{ s.reason_heading }}</h2>
+          {%- if s.reason_text != blank -%}<div class="hgs__p">{{ s.reason_text }}</div>{%- endif -%}
+          <div class="hgs-other" data-hgs-sport-ask{% unless editor %} hidden{% endunless %}>
+            <label class="hgs-label" for="hgs-sport-anders">{{ s.sport_other_label }}</label>
+            <input class="hgs-input" id="hgs-sport-anders" name="contact[Sport anders]" type="text" maxlength="40" placeholder="{{ s.sport_other_placeholder | escape }}">
+          </div>
+          {%- comment -%} Twee groepen naast elkaar, zodat ook de merkopties direct in beeld staan; 'iets anders' staat onderaan elke groep {%- endcomment -%}
+          {%- liquid
+            assign sock_size = 0
+            for block in reasons
+              if block.settings.feature
+                assign sock_size = sock_size | plus: 1
+              endif
+            endfor
+            assign rest_size = reasons.size | minus: sock_size
+            assign opt_rows = sock_size | at_least: rest_size
+            assign opt_rows_wide = opt_rows | plus: 1 | divided_by: 2
+            assign groups_class = 'hgs-groups'
+            if sock_size > 0 and rest_size > 0
+              assign groups_class = 'hgs-groups hgs-groups--two'
+            endif
+          -%}
+          {%- comment -%} rijen per groep: kop + opties, zodat beide kolommen gelijk lopen {%- endcomment -%}
+          <div class="{{ groups_class }}" style="--hgs-rows: {{ opt_rows | plus: 1 }}; --hgs-opt-rows: {{ opt_rows }}; --hgs-rows-wide: {{ opt_rows_wide | plus: 1 }}; --hgs-opt-rows-wide: {{ opt_rows_wide }};">
+            {%- for group in (1..2) -%}
+              {%- liquid
+                if group == 1
+                  assign group_label = s.reason_group_sock
+                  assign group_size = sock_size
+                else
+                  assign group_label = s.reason_group_rest
+                  assign group_size = rest_size
+                endif
+              -%}
+              {%- if group_size > 0 -%}
+                <div class="hgs-group">
+                  {%- if group_label != blank -%}<p class="hgs-glabel" id="hgs-groep-{{ group }}">{{ group_label }}</p>{%- endif -%}
+                  <ul class="hgs-opts" data-hgs-q="reden"{% if group_label != blank %} aria-labelledby="hgs-groep-{{ group }}"{% endif %}>
+                    {%- for block in reasons -%}
+                      {%- if block.settings.feature and group == 2 -%}{%- continue -%}{%- endif -%}
+                      {%- if block.settings.feature == false and group == 1 -%}{%- continue -%}{%- endif -%}
+                      {%- liquid
+                        # twee keer 'iets anders': de mail noemt de groep erbij
+                        assign mail_label = block.settings.label
+                        if block.settings.is_other and group_label != blank
+                          assign mail_label = mail_label | append: ' (' | append: group_label | append: ')'
+                        endif
+                      -%}
+                      <li{% if block.settings.is_other %} data-other-opt{% endif %} {{ block.shopify_attributes }}>
+                        <button class="hgs-opt" type="button" aria-pressed="false" data-label="{{ mail_label | escape }}"{% if block.settings.feature %} data-feature{% endif %}{% if block.settings.is_other %} data-other{% endif %}><span class="hgs-opt__t">{{ block.settings.label }}</span><span class="hgs-opt__c">{{ check }}</span></button>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <div class="hgs-other" data-hgs-other="reden"{% unless editor %} hidden{% endunless %}>
+            <label class="hgs-label" for="hgs-reden-anders">{{ s.reason_other_label }}</label>
+            <input class="hgs-input" id="hgs-reden-anders" name="contact[Doorslag anders]" type="text" maxlength="80" placeholder="{{ s.reason_other_placeholder | escape }}">
+          </div>
+          <div class="hgs-dock">
+            <span class="hgs-count" data-hgs-picked aria-live="polite"></span>
+            <button class="hgs-pill" type="button" data-hgs-next="reden" disabled>{{ s.next_label }}{{ chevron }}</button>
+          </div>
+        </div>
+
+        <div class="hgs-step" data-step="2"{% unless editor %} hidden{% endunless %}>
+          <div class="hgs-top">
+            <button class="hgs-back" type="button" data-hgs-goto="1">{{ back_icon }}<span>{{ s.back_label }}</span></button>
+            <div class="hgs-meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on cur"></span><span></span><span></span></div>
+            <p class="hgs-count">{{ count_3 }}</p>
+          </div>
+          <h2 class="hgs__h" tabindex="-1">{{ s.source_heading }}</h2>
+          {%- if s.source_text != blank -%}<div class="hgs__p">{{ s.source_text }}</div>{%- endif -%}
+          <ul class="hgs-opts hgs-opts--two" data-hgs-q="bron" data-hgs-keys>
+            {%- for block in sources -%}
+              <li{% if block.settings.is_other %} data-other-opt{% endif %} {{ block.shopify_attributes }}>
+                <button class="hgs-opt" type="button" aria-pressed="false" data-label="{{ block.settings.label | escape }}"{% if block.settings.is_other %} data-other{% endif %}><span class="hgs-opt__k" aria-hidden="true"></span><span class="hgs-opt__t">{{ block.settings.label }}</span><span class="hgs-opt__c">{{ check }}</span></button>
+              </li>
+            {%- endfor -%}
+          </ul>
+          <div class="hgs-other" data-hgs-other="bron"{% unless editor %} hidden{% endunless %}>
+            <label class="hgs-label" for="hgs-bron-anders">{{ s.source_other_label }}</label>
+            <input class="hgs-input" id="hgs-bron-anders" name="contact[Gevonden anders]" type="text" maxlength="80" placeholder="{{ s.source_other_placeholder | escape }}">
+            <div class="hgs-dock"><span></span><button class="hgs-pill" type="button" data-hgs-next="bron">{{ s.next_label }}{{ chevron }}</button></div>
+          </div>
+        </div>
+
+        <div class="hgs-step" data-step="3"{% unless editor %} hidden{% endunless %}>
+          <div class="hgs-top">
+            <button class="hgs-back" type="button" data-hgs-goto="2">{{ back_icon }}<span>{{ s.back_label }}</span></button>
+            <div class="hgs-meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on cur"></span><span></span></div>
+            <p class="hgs-count">{{ count_4 }}</p>
+          </div>
+          <h2 class="hgs__h" tabindex="-1">{{ s.freq_heading }}</h2>
+          {%- if s.freq_text != blank -%}<div class="hgs__p">{{ s.freq_text }}</div>{%- endif -%}
+          <ul class="hgs-opts hgs-opts--rows" data-hgs-q="freq" data-hgs-keys>
+            {%- for block in freqs -%}
+              <li {{ block.shopify_attributes }}>
+                <button class="hgs-opt" type="button" aria-pressed="false" data-label="{{ block.settings.label | escape }}"><span class="hgs-opt__k" aria-hidden="true"></span><span class="hgs-opt__t">{{ block.settings.label }}</span><span class="hgs-opt__c">{{ check }}</span></button>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+        <div class="hgs-step" data-step="4"{% unless editor %} hidden{% endunless %}>
+          <div class="hgs-top">
+            <button class="hgs-back" type="button" data-hgs-goto="3">{{ back_icon }}<span>{{ s.back_label }}</span></button>
+            <div class="hgs-meter" aria-hidden="true"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span><span class="on cur"></span></div>
+            <p class="hgs-count">{{ count_5 }}</p>
+          </div>
+          <h2 class="hgs__h" tabindex="-1"><label for="hgs-zocht">{{ s.open_heading }}</label></h2>
+          {%- if s.open_text != blank -%}<div class="hgs__p">{{ s.open_text }}</div>{%- endif -%}
+          <textarea class="hgs-input hgs-textarea" id="hgs-zocht" name="contact[Open vraag]" maxlength="200" placeholder="{{ s.open_placeholder | escape }}"></textarea>
+          {%- if s.privacy_note != blank -%}<p class="hgs-small">{{ s.privacy_note }}</p>{%- endif -%}
+          <div class="hgs-dock">
+            <span></span>
+            <button class="hgs-pill" type="submit">{{ s.submit_label }}{{ chevron }}</button>
+          </div>
+        </div>
+
+        <noscript><p class="hgs__p">Zet JavaScript aan om de vragen te beantwoorden.</p></noscript>
+      {%- endunless -%}
+    {%- endform -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Flitsinterview",
+  "max_blocks": 40,
+  "settings": [
+    { "type": "header", "content": "Opmaak" },
+    { "type": "select", "id": "style", "label": "Stijl", "options": [ { "value": "avond", "label": "Avond (donker met sportfoto)" }, { "value": "licht", "label": "Licht (kleuren hieronder)" } ], "default": "avond", "info": "Bij Avond gelden de merkkleuren; de kleurinstellingen hieronder werken alleen bij Licht." },
+    { "type": "image_picker", "id": "team_image", "label": "Foto bij de eerste vraag en na versturen", "info": "Leeg = standaard teamfoto." },
+    { "type": "select", "id": "text_align", "label": "Tekst uitlijnen", "options": [ { "value": "left", "label": "Links" }, { "value": "center", "label": "Gecentreerd" } ], "default": "left" },
+    { "type": "range", "id": "heading_size", "label": "Kopgrootte (desktop)", "min": 28, "max": 80, "step": 2, "unit": "px", "default": 56 },
+    { "type": "range", "id": "heading_size_mobile", "label": "Kopgrootte (mobiel)", "min": 24, "max": 56, "step": 2, "unit": "px", "default": 38 },
+    { "type": "checkbox", "id": "heading_italic", "label": "Koppen schuin", "default": true },
+    { "type": "range", "id": "body_size", "label": "Tekstgrootte", "min": 13, "max": 20, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "max_width", "label": "Breedte van de vragen", "min": 480, "max": 960, "step": 20, "unit": "px", "default": 640 },
+    { "type": "color", "id": "bg_color", "label": "Achtergrond", "default": "#ffffff" },
+    { "type": "color", "id": "text_color", "label": "Tekstkleur", "default": "#0a0a0a" },
+    { "type": "color", "id": "button_bg", "label": "Knop: achtergrond", "default": "#0a0a0a" },
+    { "type": "color", "id": "button_fg", "label": "Knop: tekst", "default": "#ffffff" },
+    { "type": "range", "id": "padding_top", "label": "Ruimte boven (desktop)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 24 },
+    { "type": "range", "id": "padding_bottom", "label": "Ruimte onder (desktop)", "min": 0, "max": 200, "step": 4, "unit": "px", "default": 112 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Ruimte boven (mobiel)", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 8 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Ruimte onder (mobiel)", "min": 0, "max": 160, "step": 4, "unit": "px", "default": 64 },
+
+    { "type": "header", "content": "Knoppen en labels" },
+    { "type": "text", "id": "count_label", "label": "Voortgang", "info": "[n] wordt het vraagnummer, [totaal] het aantal vragen.", "default": "Vraag [n] van [totaal]" },
+    { "type": "text", "id": "next_label", "label": "Knop volgende", "default": "Verder" },
+    { "type": "text", "id": "back_label", "label": "Knop terug", "default": "Terug" },
+    { "type": "text", "id": "change_sport_label", "label": "Knop andere sport", "default": "Andere sport" },
+    { "type": "text", "id": "submit_label", "label": "Knop versturen", "default": "Verstuur" },
+
+    { "type": "header", "content": "Vraag 1: sport" },
+    { "type": "paragraph", "content": "Alleen te zien als er geen sport in de maillink staat. De sporten zelf voeg je toe als blok." },
+    { "type": "text", "id": "sport_heading", "label": "Kop", "default": "Welke sport doe jij?" },
+    { "type": "richtext", "id": "sport_text", "label": "Tekst", "default": "<p>Vijf korte vragen, daarna krijg je 30% korting voor jou of je vrienden en familie.</p>" },
+    { "type": "text", "id": "sport_other_label", "label": "Vraag bij 'anders'", "default": "Welke sport doe je?" },
+    { "type": "text", "id": "sport_other_placeholder", "label": "Voorbeeldtekst bij 'anders'", "default": "Bijvoorbeeld hockey" },
+
+    { "type": "header", "content": "Vraag 2: doorslag" },
+    { "type": "text", "id": "reason_heading", "label": "Kop", "default": "Waarom koos je voor HÏ Grip?" },
+    { "type": "richtext", "id": "reason_text", "label": "Tekst", "default": "<p>De sok zelf, het merk of iets heel anders? Kies wat voor jou de doorslag gaf, maximaal twee.</p>" },
+    { "type": "range", "id": "max_choices", "label": "Maximaal aantal keuzes", "min": 1, "max": 4, "step": 1, "default": 2 },
+    { "type": "text", "id": "picked_label", "label": "Teller keuzes", "info": "[aantal] en [max] worden ingevuld.", "default": "[aantal] van [max] gekozen" },
+    { "type": "checkbox", "id": "shuffle_reasons", "label": "Volgorde per bezoeker husselen", "info": "Aanrader: anders sturen de bovenste opties de keuze. 'Iets anders' blijft onderaan.", "default": true },
+    { "type": "text", "id": "reason_group_sock", "label": "Kopje boven de sokopties", "info": "Opties met 'Telt als technische feature' staan in deze groep.", "default": "Het product" },
+    { "type": "text", "id": "reason_group_rest", "label": "Kopje boven de overige opties", "default": "Het merk en alles daaromheen" },
+    { "type": "text", "id": "reason_other_label", "label": "Vraag bij 'iets anders'", "default": "Wat gaf de doorslag?" },
+    { "type": "text", "id": "reason_other_placeholder", "label": "Voorbeeldtekst bij 'iets anders'", "default": "In een paar woorden" },
+
+    { "type": "header", "content": "Vraag 3: gevonden via" },
+    { "type": "text", "id": "source_heading", "label": "Kop", "default": "Hoe heb je ons gevonden?" },
+    { "type": "richtext", "id": "source_text", "label": "Tekst" },
+    { "type": "checkbox", "id": "shuffle_sources", "label": "Volgorde per bezoeker husselen", "default": false },
+    { "type": "text", "id": "source_other_label", "label": "Vraag bij 'iets anders'", "default": "Waar zag je ons?" },
+    { "type": "text", "id": "source_other_placeholder", "label": "Voorbeeldtekst bij 'iets anders'", "default": "Bijvoorbeeld een podcast" },
+
+    { "type": "header", "content": "Vraag 4: hoe vaak" },
+    { "type": "paragraph", "content": "De antwoorden voeg je toe als blok 'Vraag 4: optie'. Eén keuze, daarna gaat het vanzelf door." },
+    { "type": "text", "id": "freq_heading", "label": "Kop", "default": "Hoe vaak per week sport je in sportsokken?" },
+    { "type": "richtext", "id": "freq_text", "label": "Tekst", "default": "<p>Training, wedstrijd en gym tellen allemaal mee.</p>" },
+
+    { "type": "header", "content": "Vraag 5: open vraag" },
+    { "type": "text", "id": "open_heading", "label": "Kop", "default": "Wat mis je nog bij HÏ Grip?" },
+    { "type": "richtext", "id": "open_text", "label": "Tekst", "default": "<p>Eén zin is genoeg. Mag ook leeg blijven.</p>" },
+    { "type": "text", "id": "open_placeholder", "label": "Voorbeeldtekst", "default": "Bijvoorbeeld een sok voor hockey of een andere kleur" },
+    { "type": "text", "id": "privacy_note", "label": "Kleine tekst", "default": "Je antwoorden zijn anoniem. We vragen geen naam of e-mailadres." },
+
+    { "type": "header", "content": "Na versturen" },
+    { "type": "text", "id": "done_label", "label": "Voortgang", "default": "Klaar" },
+    { "type": "text", "id": "done_heading", "label": "Kop", "default": "30% korting voor jou" },
+    { "type": "richtext", "id": "done_text", "label": "Tekst", "default": "<p>Bedankt! Gebruik de code bij je volgende bestelling, of geef hem door aan een vriend of familielid.</p>" },
+    { "type": "text", "id": "code_endpoint", "label": "Codegenerator: adres", "info": "Adres van de Cloudflare Worker, eindigend op /code. Ingevuld = elke ingevulde survey krijgt een eigen code en de SendWILL-popup wordt niet gebruikt." },
+    { "type": "text", "id": "turnstile_sitekey", "label": "Codegenerator: Turnstile site key", "info": "Uit Cloudflare Turnstile. Zonder deze sleutel komt er geen code." },
+    { "type": "text", "id": "popup_id", "label": "SendWILL-popup: nummer", "info": "Alleen als de codegenerator leeg is. Het getal uit #Ecomsend_popups_open_… Leeg = geen claimknop.", "default": "379247" },
+    { "type": "text", "id": "claim_label", "label": "Knop claimen", "default": "Claim je korting" },
+    { "type": "text", "id": "discount_code", "label": "Reservecode", "info": "Verschijnt alleen als de SendWILL-popup niet opent. Maak hem in Shopify aan met 'eenmaal per klant'. Leeg = geen reserve." },
+    { "type": "richtext", "id": "nocode_text", "label": "Tekst als de popup niet opent", "default": "<p>Je code kwam niet door. Klik nog een keer op Claim je korting.</p>" },
+    { "type": "richtext", "id": "limit_text", "label": "Tekst bij daglimiet codegenerator", "info": "Verschijnt als deze bezoeker of de winkel vandaag aan het maximum aantal codes zit.", "default": "<p>Vandaag kunnen we je geen nieuwe code meer geven. Probeer het morgen opnieuw.</p>" },
+    { "type": "text", "id": "code_label", "label": "Tekst boven de code", "default": "Jouw code" },
+    { "type": "text", "id": "copy_label", "label": "Knop kopiëren", "default": "Kopieer" },
+    { "type": "text", "id": "copied_label", "label": "Na kopiëren", "default": "Gekopieerd" },
+    { "type": "text", "id": "code_note", "label": "Kleine tekst onder de code", "default": "Eén keer te gebruiken per persoon." },
+    { "type": "range", "id": "code_uses", "label": "Streepjes voor de kleine tekst", "info": "Aantal bestellingen waarvoor de code werkt. 0 = geen streepjes.", "min": 0, "max": 5, "step": 1, "default": 3 },
+    { "type": "text", "id": "shop_label", "label": "Knop", "info": "Leeg = geen knop. Met een code past de knop die meteen toe op de winkelwagen.", "default": "Shop" },
+    { "type": "url", "id": "shop_link", "label": "Knop: link" },
+    { "type": "text", "id": "share_label", "label": "Knop delen", "info": "Leeg = geen deelknop. Deelt een link waarmee de code bij de ontvanger meteen in de winkelwagen staat.", "default": "Deel met een vriend" },
+    { "type": "text", "id": "share_text", "label": "Deeltekst", "info": "[code] wordt de code. De link komt er automatisch achter.", "default": "30% korting bij HÏ Grip. Via deze link staat mijn code [code] al in je winkelwagen." },
+    { "type": "text", "id": "share_copied_label", "label": "Na delen zonder deelmenu", "info": "Op een computer zonder deelmenu wordt de tekst met link gekopieerd.", "default": "Link gekopieerd" },
+
+    { "type": "header", "content": "Techniek" },
+    { "type": "text", "id": "form_name", "label": "Naam in de mail op info@", "default": "Flitsinterview testkaart 2" },
+    { "type": "text", "id": "error_text", "label": "Foutmelding", "default": "Versturen lukte niet. Probeer het nog een keer." }
+  ],
+  "blocks": [
+    {
+      "type": "sport",
+      "name": "Vraag 1: sport",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Naam", "default": "Padel" },
+        { "type": "text", "id": "key", "label": "Code in de maillink", "info": "Moet gelijk zijn aan ?sport= in de mail, bijv. padel. Gebruik 'anders' voor de optie met tekstvak.", "default": "padel" },
+        { "type": "image_picker", "id": "image", "label": "Foto", "info": "Leeg = standaardfoto bij deze code." }
+      ]
+    },
+    {
+      "type": "reason",
+      "name": "Vraag 2: optie",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Tekst", "default": "Nieuwe optie" },
+        { "type": "checkbox", "id": "feature", "label": "Telt als technische feature", "info": "Bepaalt 'Telt als feature: ja' in de mail op info@ (testkaart 2).", "default": false },
+        { "type": "checkbox", "id": "is_other", "label": "Is 'iets anders' (opent tekstvak, altijd onderaan)", "default": false }
+      ]
+    },
+    {
+      "type": "source",
+      "name": "Vraag 3: optie",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Tekst", "default": "Nieuwe optie" },
+        { "type": "checkbox", "id": "is_other", "label": "Is 'iets anders' (opent tekstvak)", "default": false }
+      ]
+    },
+    {
+      "type": "freq",
+      "name": "Vraag 4: optie",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Tekst", "default": "Nieuwe optie" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Flitsinterview" }]
+}
+{% endschema %}

@@ -1,0 +1,26 @@
+name = "higrip-codes"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+# Created 2026-10-28 with `npx wrangler kv namespace create CODES_KV` (account info@higrip.nl)
+[[kv_namespaces]]
+binding = "CODES_KV"
+id = "92575ae4638245b6b7e41af800c93b8c"
+
+[vars]
+SHOPIFY_SHOP = "raqds3-tb"
+SHOPIFY_API_VERSION = "2026-10"
+ALLOWED_ORIGINS = "https://www.higrip.nl,https://higrip.nl"
+CODE_PREFIX = "HI30"
+PERCENTAGE = "30"
+VALID_DAYS = "30"
+USES_PER_CODE = "3"
+COMBINE_SHIPPING = "false"
+PER_VISITOR_PER_DAY = "20"
+DAILY_CAP = "100"
+# share link /d/<code>: where the recipient lands, and the picture in the link preview
+SHARE_REDIRECT = "/pages/collection"
+SHARE_IMAGE = "https://www.higrip.nl/cdn/shop/files/Performance_Grip_Socks_2.0_zwart_voorkant.png?v=1787309214"
+
+# Secrets, never in this file: set with `npx wrangler secret put <NAME>`
+#   SHOPIFY_CLIENT_ID, SHOPIFY_CLIENT_SECRET, TURNSTILE_SECRET, IP_SALT

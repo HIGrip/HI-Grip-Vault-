@@ -1,0 +1,9 @@
+{
+  "name": "higrip-codes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "deploy": "npx wrangler deploy"
+  }
+}

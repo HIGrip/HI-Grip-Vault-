@@ -9,7 +9,7 @@ categorie: Social
 status: verwerkt
 prioriteit: P1
 samenvatting: "Start bij €20 per dag met één handmatige verkoopcampagne, twee advertentiesets van €10 (voetbal en rugby) en per set 4 echt verschillende statics, maar pas als de voorraad 2.0 klopt en het 3-pack van €44,95 als product bestaat. Bij ±€24,50 marge per bestelling zijn 24 aankopen per maand nodig om €600 terug te verdienen, dus de eerste maanden zijn vooral leerbudget."
-gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-performance-days-marketingplan, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-27-ek-rugby-u18-u20-plan, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-11-05-meta-plan-35-euro-per-dag]
+gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-performance-days-marketingplan, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-27-ek-rugby-u18-u20-plan, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november]
 vervangt: []
 bronbestand: ""
 deadline: ""

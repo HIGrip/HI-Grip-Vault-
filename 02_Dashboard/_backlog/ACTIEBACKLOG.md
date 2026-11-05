@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 4 november 2026 (growth-radar)
-Open: 31 · Afgerond: 9 (3 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
+Laatst bijgewerkt: 5 november 2026 (actiecontrole)
+Open: 30 · Afgerond: 9 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md; 2 dubbel, zie dashboard)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -58,7 +58,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Hogere CTR op je belangrijkste zoekterm zonder dat je positie hoeft te stijgen.
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
 
-### [ ] 4. Controleer je variant-ID's tegen de Merchant Center-eis van maart 2026 (herzien 16 sep 2026 — opgewaardeerd naar P1)
+### [x] 4. Controleer je variant-ID's tegen de Merchant Center-eis van maart 2026 (herzien 16 sep 2026 — opgewaardeerd naar P1)
+**Bevestigd:** 5 november 2026 door actiecontrole — alle 8 varianten (2x 1.0, 6x 2.0) hebben nu een gevulde barcode/EAN (bv. 6154419797731, 9110024809242), conform de Merchant Center-eis
 **Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.
 **Waar:** Shopify Merchant Center-feedinstellingen
 **Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.

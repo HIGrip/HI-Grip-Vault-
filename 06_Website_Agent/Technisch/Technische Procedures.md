@@ -28,8 +28,9 @@ bijgewerkt: 2026-10-29
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| Live op www.higrip.nl ("WERKTHEMA 02") | `203928076615` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203461034311`; lokale kopie met git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Vorig live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished, terugvaloptie) | unpublished | Nee |
+| Live op www.higrip.nl (Horizon 4.4.0, "Bijgewerkte kopie van Live website 04-11-2026") | `203954520391` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203928076615`; lokale kopie met git: `C:\Users\Test\Werk\theme-snelheid\update-04`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
+| Ouder live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished) | unpublished | Nee |
 | Ouder live-thema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (2-11: unpublished) | unpublished | Nee |
 | Alle overige — oude werkthema's (`202398040391` "Bijgewerkte kopie van AI website workspace 2.0", `201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`202667458887`, `202394272071`, `201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 

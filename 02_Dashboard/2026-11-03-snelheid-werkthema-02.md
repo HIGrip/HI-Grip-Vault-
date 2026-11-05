@@ -32,12 +32,12 @@ De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de l
 
 ## Acties
 - [ ] P1 · Besluit: WERKTHEMA 02 live zetten, na een eigen klikronde op de preview (winkelwagen, toevoegen, zoeken, account, maten kiezen, cookiebanner)
-- [ ] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
+- [x] P2 · Na een Horizon-update opnieuw doorvoeren: predictive-search.js (lege zoekstaat bij openen) en scripts.liquid (modules op aanvraag) zijn kernbestanden
 - [ ] P2 · Na livegang velddata vergelijken (Shopify web_performance, 30 dagen voor en na) op LCP en INP per paginatype
 - [ ] P1 · Controle: nieuwe winkelwagen in WERKTHEMA 02 (eigen Horizon-drawer in Section Store-stijl) naast de oude leggen op telefoon en desktop, inclusief kortingscode en deel-link HI30
-- [ ] P2 · Live hi-shop.js: kleurknoppen op /pages/collection werken niet door een syntaxfout; opgelost in WERKTHEMA 02 (komt mee bij livegang)
-- [ ] P2 · Horizon-update (nu 4.3.0) in een kopie van live (WERKTHEMA 03): alle eigen aanpassingen in kernbestanden opnieuw overzetten, testen, dan live
-- [ ] P2 · Section Store-app niet verwijderen na livegang: de pakketkorting draait via die app, ook al gebruikt WERKTHEMA 02 haar winkelwagen niet
+- [x] P2 · Live hi-shop.js: kleurknoppen op /pages/collection werken niet door een syntaxfout; opgelost in WERKTHEMA 02 (komt mee bij livegang)
+- [x] P2 · Horizon-update (nu 4.3.0) in een kopie van live (WERKTHEMA 03): alle eigen aanpassingen in kernbestanden opnieuw overzetten, testen, dan live
+- [x] P2 · Section Store-app niet verwijderen na livegang: de pakketkorting draait via die app, ook al gebruikt WERKTHEMA 02 haar winkelwagen niet
 
 ## Bevindingen
 ### 1. Wat er in WERKTHEMA 02 is veranderd

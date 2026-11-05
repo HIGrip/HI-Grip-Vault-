@@ -57,6 +57,7 @@ beheer: Stafchef (03_Denzel)
 - **Operations voert alleen werk uit aan agentstructuur en workflow, niet aan inhoud of techniek.** Reden: bevestiging Lars; inhoud en techniek horen bij de domeinagents. (2026-11-02, Lars)
 
 - **Leg aannames vast als corrigeerbaar, met bron en datum.** Een aanname in een briefing (scope, ontbrekend getal) wordt vervangen door een gedateerde aanvulling zodra Lars corrigeert; wat niet expliciet is besloten blijft "niet besloten". Reden: Lars corrigeerde de Performance Days-briefing (1.0 én 2.0, Ads Agent, creatieve hoek). (2026-11-05, Lars; kaart t_2bf94d11)
+- **Zelfde profiel als maker is geen onafhankelijke QA; noem dat bij elk GOED.** Bij HÏ Performance Days gaven Website-QA (t_e86166aa) en Design-QA (t_21a52b5e) GOED vanuit hetzelfde profiel; Ads-QA (t_cdd48098) escaleerde op 455 > 400 woorden na 2 rondes (geen Ads-GOED, geen derde ronde). Ads-account/data niet live getoetst. Lars' besluiten 05-11 staan in de briefing. (2026-11-05, Lars, via kaart t_5403c5d5)
 
 ### Vooruitblik-agent
 - *(nog geen regels)*

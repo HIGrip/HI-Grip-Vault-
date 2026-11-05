@@ -13,6 +13,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
 - [[2026-09-07-compliance-todo]]
+- [[2026-11-05-briefing-performance-days]]
 - [[Agent Werk & Kwaliteit Overzicht]]
 - [[Compliance To-Do Lijst]]
 - [[Feedback & Iteratie Log]]

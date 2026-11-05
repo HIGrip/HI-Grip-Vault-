@@ -69,3 +69,5 @@ Max 400 woorden handoff in vast opleverformaat (RESULTAAT / GECONTROLEERD / NIET
 6. **Sitecheck (publieke pagina's), divergentie, te herstellen:** /policies/shipping-policy zegt nog "vóór 16:00"; /policies/refund-policy zegt 14 dagen, ongeopend, 25% herbevoorrading. /pages/verzendbeleid zegt 1 werkdag; /pages/retourbeleid 30 dagen. Tegenstrijdigheid om te herstellen (Website Agent, via Denzel/Lars); geen claim dat alles klopt. Niet opgelost, niet live gewijzigd.
 
 Niet zelf gecontroleerd door de Stafchef: punten 1–5 komen van Lars; punt 6 is overgenomen uit zijn sitecheck.
+
+> Map: [[08 Operations Agent — Index]]

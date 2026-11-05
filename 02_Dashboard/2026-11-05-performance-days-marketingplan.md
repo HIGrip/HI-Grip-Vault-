@@ -8,7 +8,7 @@ routine: ""
 categorie: "CRO"
 status: "nieuw"
 prioriteit: "P1"
-samenvatting: "De Performance Days (1+1: 2 kopen = 2 gratis, 3 kopen = 3 gratis) zijn nog niet startklaar, want scope, rendementscijfers en nieuwe-klantmeting ontbreken. Het grootste concrete rekenrisico in het aanbod is dat een instapmandje van 4 paar 1.0 (€29,90) op basis van huidige prijzen en drempel onder de €35-verzenddrempel valt en dan €4,50 verzending betaalt; dit is nog niet in Shopify getest."
+samenvatting: "De Performance Days (1+1: 2 kopen = 2 gratis, 3 kopen = 3 gratis) zijn nog niet startklaar: de scope is beslist, maar rendementscijfers, verzendregel, beleid en nieuwe-klantmeting ontbreken. Het grootste concrete rekenrisico in het aanbod is dat een instapmandje van 4 paar 1.0 (€29,90) op basis van huidige prijzen en drempel onder de €35-verzenddrempel valt en dan €4,50 verzending betaalt; dit is nog niet in Shopify getest."
 gerelateerd: [2026-11-04-ads-resultaten-verbeteringen]
 vervangt: []
 bronbestand: "C:\\Users\\lars\\Documents\\ObsidianVault\\08_Operations_Agent\\2026-11-05-briefing-performance-days.md"
@@ -38,14 +38,14 @@ Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026, l
 **Voorlopige score: 5 op 10 (oranje), bewust gelijk gehouden na de besluiten van 05-11.** Dit is een inschatting van de kwaliteit en startklaarheid van het aangeleverde concept, niet van een gemeten effect. Waarom gelijk: de scope is beslist, maar winst en rechten zijn een uitspraak zonder bewijs, verzendregel, mixen en uitsluitingen zijn open, het beleid op de site spreekt zichzelf nog tegen, en meting en tests ontbreken. De score stijgt naar 7 of hoger als: de open scopepunten vaststaan, de rendementswaarden zijn ingevuld en CM1 positief is, de mechaniektests T1 tot en met T16 zijn geslaagd, het beleid is hersteld, en de meting voor nieuwe klanten werkt. De score daalt als rechten of voorraad niet kloppen.
 
 ## Kerncijfers
-- **288** · Linkklikken Meta-test (gemeten, ads-notitie 04-11)
-- **116** · Landingspaginaweergaven · 40% van de klikken
-- **5** · Add-to-carts · 0 verkopen in de test
+- **288** · Linkklikken Meta-test (vaultcijfer uit ads-notitie 04-11, niet gevalideerd in Ads Manager)
+- **116** · Landingspaginaweergaven · 40% van de klikken; het verschil is geen bewezen verlies op de pagina (definitie, meetmoment, browser en attributie zijn niet vastgelegd)
+- **5** · Add-to-carts · 0 verkopen in de test. Bij 5 events is 5 van 116 (4,3%) slechts indicatief, geen betrouwbare conversieratio. Het testbudget van €70 (2 ads × €5 × 7 dagen) is het geplande budget, geen geverifieerde uitgave.
 
 ## Acties
 - [ ] P1 · Besluit (1.0 en 2.0 is beslist): mixen, uitsluiting van B2B, teamorders en ambassadeurs, en de verzendregel kiezen: eerlijk tonen dat 4 paar 1.0 onder €35 valt (A), gratis verzending vanaf 4 paar (B) of drempel tijdelijk verlagen (C)
 - [ ] P1 · Besluit: Lars zegt winst, maar wie levert de rendementswaarden (inkoop per paar, werkelijke verzending, betaalkosten, pick en pack, retourkans, verlies per retour) zodat CM1 en maximale CAC berekend en gecontroleerd kunnen worden
-- [ ] P1 · Ads Agent is betrokken (read-only profiel ontvangt kanbantaken); live Ads-data is nog niet gecontroleerd. Ads-analyse en Ads Manager-export liggen bij de Ads Agent [ADS-NOG-NIET-LIVE-GECONTROLEERD]
+- [ ] P1 · Ads-advies (t_d598365c) is door Ads-QA nog niet goedgekeurd: herkeuring ronde 1 gaf CORRIGEER (vorm), ronde 2 volgt. Live Meta-resultaten blijven ongetoetst zonder getoetste alleen-lezen koppeling [ADS-INHOUDELIJK-ONGEKEURD]
 - [ ] P1 · Een mens herstelt twee verouderde Shopify-beleidspagina's (voorstel in 3b); Team HÏ Grip besluit over gedeeltelijke 1+1-retour en actievoorwaarden
 - [x] Rugby is de hoofdhoek (Lars, 05-11)
 - [ ] P2 · Rechten agencyvideo en ambassadeurs zijn aanwezig volgens Lars; per uiting nog niet onafhankelijk gecontroleerd (wie controleert is open)

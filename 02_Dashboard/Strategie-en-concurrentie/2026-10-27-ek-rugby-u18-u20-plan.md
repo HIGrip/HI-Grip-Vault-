@@ -9,7 +9,7 @@ categorie: Merk
 status: nieuw
 prioriteit: P1
 samenvatting: "HÏ Grip kan in 10 dagen nog inspelen op het U18/U20-toernooi met één concept (\"Drie vakken, één rugbyweek\": TRAINING, WEDSTRIJD, RESERVE), de bestaande rugbylanding en organische social, zonder merkrechten en zonder nieuw spelersbeeld. Lean vraagt geen extra cash maar wel 35 uur werk; de optionele advertentie (€150) en sokken voor een clubproef zijn wel kosten. Alle vier de QA-hoeken gaven CORRIGEER (licht, niets blokkerend); die punten zijn verwerkt, er is nog geen tweede QA-ronde. Opbrengst is niet te voorspellen en kan nul zijn; de kans zit vooral in een herbruikbare rugby-basis en B2B-gesprekken na het toernooi."
-gerelateerd: [2026-10-28-ga4-seo-conversie-audit-higrip-nl]
+gerelateerd: [2026-10-28-ga4-seo-conversie-audit-higrip-nl, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]
 vervangt: []
 bronbestand: "Kanban t_c339c598 (bundeling van t_a656f5b5 Website, t_a854b721 Social, t_c9c0a41d Design, t_d043da1d Partnership)"
 deadline: "2026-11-03"

@@ -6,6 +6,8 @@ bijgewerkt: 2026-11-05
 
 # Nagekeken: blog 1 en 2 (5-11-2026)
 
+> Map: [[Waar staat wat]]
+
 Bestanden: `blog-1-welke-maat-gripsokken-nagekeken.html` en `blog-2-voet-glijdt-in-schoen-nagekeken.html` (de originelen zijn ongewijzigd). Plak de HTML in Shopify bij het artikel; de H1 komt uit de titel van het artikel.
 
 ## Gewijzigd
@@ -38,5 +40,3 @@ Bestanden: `blog-1-welke-maat-gripsokken-nagekeken.html` en `blog-2-voet-glijdt-
 | Slug | `welke-maat-gripsokken` | `voet-glijdt-in-schoen` |
 | Auteur | Team HÏ Grip | Team HÏ Grip |
 | Uitgelichte afbeelding | ≤ 120 KB, 2000 px lang, WebP, alt NL | idem |
-
-> Map: [[06 Website Agent — Index]]

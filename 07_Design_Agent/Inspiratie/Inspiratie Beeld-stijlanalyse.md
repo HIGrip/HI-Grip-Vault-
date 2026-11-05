@@ -68,3 +68,5 @@ Afbeeldingen staan in `Inspiratie/Fotos/` (verkleind tot max 1200 px, samen 1,5 
 ## Verwijzingen
 
 [[Inspiratie Video-stijlanalyse]] · [[Fotografie & Art-Direction]] · [[Design Elementen]] · [[Logo & Kleurenpalet]] · [[Editing Stijl Gids Video]] · [[07 Design Agent — Index]]
+
+> Map: [[07 Design Agent — Index]]

@@ -78,6 +78,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### SEO/Strategie
 - [[Blog SEO-plan (2026-10-02)]]
+- [[Blog uitrol — SEO- en snelheidsplan (2026-11-05)]]
+- [[Blogonderwerpen extra — SEO en GEO (2026-11-05)]]
+- [[Blogplan nieuwe blogs — briefs per blog (2026-11-05)]]
 - [[SEO Strategie & Keywords]]
 
 ### SEO/Technisch
@@ -85,6 +88,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Claude SEO Plugin — Skills & Agents]]
 
 ### Strategie
+- [[2026-11-05-performance-days-website-email-meetplan]]
 - [[Website Structuur & Sitemap]]
 
 ### Technisch

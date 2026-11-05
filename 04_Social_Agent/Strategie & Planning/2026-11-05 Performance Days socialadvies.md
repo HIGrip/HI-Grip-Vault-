@@ -46,3 +46,5 @@ Alleen advies. Niets gepubliceerd of ingepland. Geen advertentiecopy of Ads Mana
 
 ## Niet gecontroleerd
 Content-QA, Muziek & Licenties, ambassadeurs, agencyvideo-inhoud, voorraad (Feiten: 2.0 negatief op 12-10; live checken), rendement. Feiten laatst geverifieerd 11/12-10 en 27-10. Beachhead-aantallen niet gebruikt.
+
+> Map: [[04 Social Agent — Index]]

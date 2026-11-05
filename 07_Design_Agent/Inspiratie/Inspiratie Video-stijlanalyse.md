@@ -79,3 +79,5 @@ Dus: basis donker, hoog contrast en koel/neutraal; warm alleen als licht of acce
 ## Verwijzingen
 
 [[Fotografie & Art-Direction]] · [[Editing Stijl Gids Video]] · [[Logo & Kleurenpalet]] · [[Design Elementen]] · [[07 Design Agent — Index]]
+
+> Map: [[07 Design Agent — Index]]

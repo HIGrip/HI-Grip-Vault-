@@ -18,6 +18,10 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Iconografie]]
 - [[Logo & Kleurenpalet]]
 
+### Inspiratie
+- [[Inspiratie Beeld-stijlanalyse]]
+- [[Inspiratie Video-stijlanalyse]]
+
 ### Ontwerpbestanden/Prijslijst-retail-2026
 - [[ontwerpfilosofie]]
 

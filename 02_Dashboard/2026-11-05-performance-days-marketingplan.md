@@ -1,7 +1,7 @@
 ---
 id: "2026-11-05-performance-days-marketingplan"
 titel: "HÏ Performance Days (Black Friday 27-11-2026): gebundeld adviesrapport"
-kerntitel: "Performance Days is nog oranje: scope is beslist, maar interne rendementsverificatie, verzendregel, beleid en meting zijn nog open"
+kerntitel: "Performance Days oranje: scope beslist, verificatie, verzendregel, beleid en meting open"
 datum: "2026-11-05"
 bron: "los"
 routine: ""
@@ -9,7 +9,7 @@ categorie: "CRO"
 status: "nieuw"
 prioriteit: "P1"
 samenvatting: "De Performance Days (1+1: 2 kopen = 2 gratis, 3 kopen = 3 gratis) zijn nog niet startklaar: de scope is beslist, maar interne rendementsverificatie (volgens Lars winstgevend), verzendregel, beleid en nieuwe-klantmeting zijn nog open. Het grootste concrete rekenrisico in het aanbod is dat een instapmandje van 4 paar 1.0 (€29,90) op basis van huidige prijzen en drempel onder de €35-verzenddrempel valt en dan €4,50 verzending betaalt; dit is nog niet in Shopify getest."
-gerelateerd: [2026-11-04-ads-resultaten-verbeteringen]
+gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]
 vervangt: []
 bronbestand: "C:\\Users\\lars\\Documents\\ObsidianVault\\08_Operations_Agent\\2026-11-05-briefing-performance-days.md"
 deadline: "2026-11-19"
@@ -47,7 +47,7 @@ Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026, l
 - [ ] P1 · Besluit: Team HÏ Grip verifieert intern CM1 en maximale CAC per tier (volgens Lars winstgevend, niet onafhankelijk getoetst) en deelt desgewenst alleen de maximale acquisitiekosten of een ja/nee-grens; geen bedragen in de vault
 - [ ] P1 · Ads-advies (t_d598365c) is niet goedgekeurd. Ads v3: na twee correctierondes formeel ESCALEER, inhoudelijke QA-punten opgelost, maar 455 woorden > zelf opgelegd maximum 400; geen Ads-GOED en geen accountdata (Ads-QA t_cdd48098). Besluit van Lars nodig (zie 10, vraag 7). Live Meta-resultaten blijven ongetoetst zonder getoetste alleen-lezen koppeling [ADS-INHOUDELIJK-ONGEKEURD]
 - [ ] P1 · Een mens herstelt twee verouderde Shopify-beleidspagina's (voorstel in 3b); Team HÏ Grip besluit over gedeeltelijke 1+1-retour en actievoorwaarden
-- [x] Rugby is de hoofdhoek (Lars, 05-11)
+- [x] P1 · Rugby is de hoofdhoek (Lars, 05-11)
 - [ ] P2 · Rechten agencyvideo en ambassadeurs zijn aanwezig volgens Lars; per uiting nog niet onafhankelijk gecontroleerd (wie controleert is open)
 - [ ] P2 · Besluit: aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (einddatum 30-11 is beslist; geen harde preheatdatum)
 - [ ] P2 · CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld) blijft open: Design Elementen is hersteld (CTA wit/zwart pill, nooit accentgevuld; QA GOED), de cart wordt pas bij de bouw gecorrigeerd. Besluit Design Agent en Lars

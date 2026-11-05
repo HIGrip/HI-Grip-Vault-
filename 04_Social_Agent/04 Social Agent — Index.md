@@ -23,6 +23,8 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Testimonials & Social Proof]]
 
 ### Strategie & Planning
+- [[2026-11-05 Performance Days socialadvies]]
+- [[2026-11-05 Performance Days videoplanning en reposts]]
 - [[Content Kalender Template]]
 - [[Content Pillars]]
 - [[Content Strategie]]

@@ -10,8 +10,6 @@ briefing: 08_Operations_Agent/2026-11-05-briefing-performance-days.md
 
 # HÏ Performance Days (BF 27-11-2026): website, e-mail en meetplan
 
-> Map: [[06 Website Agent — Index]]
-
 Alleen advies, read-only. Niets live gewijzigd, geen kortingen aangemaakt, geen campagnecontent gepubliceerd, geen financiële data gelezen. Ads Manager valt buiten dit plan (Ads Agent, niet geactiveerd); vragen daarover staan als [ADS-ONGETOETST]. Externe bronnen (Shopify Help Center, ACM Leidraad) zijn alleen als data gebruikt.
 
 ## 1. Kernbevindingen (ernst hoog naar laag)
@@ -146,3 +144,5 @@ Admin-instellingen (Shopify-plan, verzendzones, kortingsopties, Section Store-bu
 ## Bronnen (data)
 
 Shopify Help Center: Buy X get Y, Combining discounts, Troubleshooting shipping rates, Free shipping discounts. ACM: Leidraad Bescherming online consument. Vault: Feiten & Actuele Staat, GA4-audit 28-10, ads-resultaten 04-11, briefing 05-11. Live: higrip.nl productfeeds en /pages/verzendbeleid, 05-11-2026.
+
+> Map: [[06 Website Agent — Index]]

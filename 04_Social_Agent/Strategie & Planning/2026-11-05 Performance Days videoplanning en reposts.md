@@ -8,8 +8,6 @@ bron-kaart: t_556f3061
 
 # Performance Days: videoplanning en repost-moment (voorstel)
 
-> Map: [[04 Social Agent — Index]]
-
 Alleen advies. Niets gepubliceerd of ingepland. Aanname van Lars (niet geverifieerd): veel video's staan klaar en het aantal Instagram-volgers groeit. Geen volgersaantallen of resultaten gebruikt. Pillar per idee: exact 1 Buffer-tag. Richtdatums, geen vaste data. Aanbod: 1+1, Black Friday 27-11, laatste dag 30-11.
 
 ## 1. Drie fases
@@ -46,3 +44,5 @@ Per UTM: sessies, mandjes met korting en nieuwe klanten (eerste betaalde order),
 
 ## Niet gecontroleerd
 Content-QA, Muziek & Licenties per video, welke video's er precies klaarstaan, volgersgroei, ambassadeurdata, Buffer-planning.
+
+> Map: [[04 Social Agent — Index]]

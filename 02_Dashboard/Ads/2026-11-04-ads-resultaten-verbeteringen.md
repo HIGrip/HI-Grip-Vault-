@@ -9,7 +9,7 @@ categorie: "Social"
 status: "nieuw"
 prioriteit: "P1"
 samenvatting: "De enige advertentie-uitkomst die in de vault staat, is de Meta A/B-test van €70: 288 linkklikken, 116 landingspaginaweergaven, 5 add-to-carts en 0 verkopen. De grootste winst zit niet in andere advertenties maar in drie dingen eromheen: de pagina sneller laden, de campagne op een event laten optimaliseren dat wél voorkomt, en de test beoordelen op meer dan CTR. Let op: dit rapport is gebaseerd op de notities in de vault; er is geen toegang tot Ads Manager, dus uitgaven, CPM, CTR en kosten per resultaat zijn niet gezien."
-gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-02-weekoverzicht, 2026-10-30-ads-agent-onderzoek, 2026-11-05-performance-days-marketingplan, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]
+gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-02-weekoverzicht, 2026-10-30-ads-agent-onderzoek, 2026-11-05-performance-days-marketingplan, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-meta-plan-35-euro-per-dag]
 vervangt: []
 bronbestand: ""
 deadline: ""

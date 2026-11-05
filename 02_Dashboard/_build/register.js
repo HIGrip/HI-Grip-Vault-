@@ -1060,7 +1060,7 @@ window.HI_RESEARCH = {
    "dubbel": 13,
    "gedaan": 52,
    "handmatig": 126,
-   "ongecontroleerd": 24,
+   "ongecontroleerd": 33,
    "open": 145
   },
   "vandaag_gedaan": [
@@ -2214,8 +2214,8 @@ window.HI_RESEARCH = {
    "toegepast": 0
   }
  },
- "gebouwd": "2026-11-05T14:19:13+00:00",
- "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 6 notities\n- B2B-en-leveranciers: 3 notities\n- Dashboard-en-vault: 7 notities\n- Growth-radar: 8 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 4 notities\n- Routines: 15 notities\n- SEO: 10 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 7 notities\n- Website-techniek: 6 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
+ "gebouwd": "2026-11-05T15:09:22+00:00",
+ "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 6 notities\n- B2B-en-leveranciers: 3 notities\n- Dashboard-en-vault: 7 notities\n- Growth-radar: 8 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 5 notities\n- Routines: 15 notities\n- SEO: 10 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 7 notities\n- Website-techniek: 6 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
    "acties": [
@@ -2339,7 +2339,8 @@ window.HI_RESEARCH = {
    "deadline": "2026-11-19",
    "gerelateerd": [
     "2026-11-04-ads-resultaten-verbeteringen",
-    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby"
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-11-05-performance-days-marketingplan",
    "kansen": [],
@@ -2369,6 +2370,164 @@ window.HI_RESEARCH = {
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-05-performance-days-marketingplan.md",
    "vervangt": [],
    "wat_niet_lukte": "Ads-advies haalde geen Ads-GOED: Ads v3 formeel ESCALEER na twee correctierondes, 455 woorden > zelf opgelegd maximum 400 (QA schatte ruw 550-600, toolgeteld 455). Geen toegang tot Ads Manager of live Ads-data (alleen-lezen Meta-koppeling nog niet live getoetst); Shopify Admin, T1 tot en met T16, SendWILL, juridische toetsing, financiële gegevens, rechten, Muziek & Licenties, ambassadeurs en live…"
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#1e3a62cc",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "In Ads Manager controleren of product browsing bij verkoopcampagnes aan staat en klikken binnen Meta houdt",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#a36f0a3e",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Harde leeftijdsgrens instellen in de nieuwe sets: rugby 18 tot 44, voetbal 18 tot 54",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#ea8e1158",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: maximale kosten per nieuwe klant vastleggen, omdat de eerste bestelling de advertentie niet terugverdient",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#567365db",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "De zin over minder risico op blessures of blaren niet hergebruiken in nieuwe ads",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#d2ee361e",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "5 concepten per sport maken in 4:5 en 9:16: situatie, bewijs, vergelijking, spelersverhaal, aanbod",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#55c230f5",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Eén echt spelersverhaal met toestemming verzamelen voor het lo-fi concept",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#a44aecbe",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Leestoken met alleen ads_read aanmaken zodat de Ads Agent wekelijks de cijfers kan lezen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#69f35f55",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Na akkoord de campagne door een mens opzetten op €35 per dag, startmoment 1 december 00:01",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-05-meta-plan-35-euro-per-dag#fa4aec84",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Elke twee weken 3 nieuwe concepten toevoegen op basis van de wekelijkse analyse",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Meta-plan op maximaal €35 per dag\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nTimo vroeg om tien TikToks te bekijken, de afgeronde ads opnieuw te beoordelen, naar de best lopende ads te kijken en een nieuw plan te maken met een maximum van €35 per dag. De belangrijkste vondst staat openbaar in de Ad Library: de grootste ad van de eigen test, de rugby-ad \"Sta stevig in je schoenen\", bereikte 58% vrouwen en 42% 55-plussers. De overige ads zaten juist voor de helft bij 18 tot 34.\n\nAlle ads draaiden op heel Nederland en 18 tot 65+, en dezelfde ads zijn in vier dagen meerdere keren opnieuw gestart. Dit plan vervangt de opzet van twee sets van €10: voetbal €20, rugby €15, een harde leeftijdsgrens, 5 echt verschillende concepten en 14 dagen niet aanraken. Reken nog steeds op leerbudget: ook het goede scenario haalt de 43 aankopen voor break-even niet.\n\n## Kerncijfers\n- **19** · Ads in de test, 26 okt t/m 3 nov · Ad Library\n- **26.525** · Som van het bereik per ad, geen unieke personen · 18 van de 19 ads\n- **48%** · Deel van dat bereik bij één creative · \"Sta stevig in je schoenen\"\n- **42%** · 55-plussers bij die creative · 21% bij de rest\n- **43** · Aankopen per maand voor break-even bij €1.050 · marge ±€24,50\n\n## Acties\n- [ ] P1 · In Ads Manager controleren of product browsing bij verkoopcampagnes aan staat en klikken binnen Meta houdt\n- [ ] P1 · Harde leeftijdsgrens instellen in de nieuwe sets: rugby 18 tot 44, voetbal 18 tot 54\n- [ ] P1 · Besluit: maximale kosten per nieuwe klant vastleggen, omdat de eerste bestelling de advertentie niet terugverdient\n- [ ] P1 · De zin over minder risico op blessures of blaren niet hergebruiken in nieuwe ads\n- [ ] P2 · 5 concepten per sport maken in 4:5 en 9:16: situatie, bewijs, vergelijking, spelersverhaal, aanbod\n- [ ] P2 · Eén echt spelersverhaal met toestemming verzamelen voor het lo-fi concept\n- [ ] P2 · Leestoken met alleen ads_read aanmaken zodat de Ads Agent wekelijks de cijfers kan lezen\n- [ ] P2 · Na akkoord de campagne door een mens opzetten op €35 per dag, startmoment 1 december 00:01\n- [ ] P3 · Elke twee weken 3 nieuwe concepten toevoegen op basis van de wekelijkse analyse\n\n## Bevindingen\n\n### Afgeronde ads\n- 19 ads, allemaal niet-actief, gelopen van 26 oktober tot en met 3 november. Doelgroep bij elke uitgelezen ad: Nederland, 18 tot 65+, alle geslachten.\n- Bereik per creative: \"Sta stevig in je schoenen\" 8.726 + 4.123, \"Elke seconde telt\" 3.858 + 2.282 + kleinere runs, de overige ads tussen 118 en 1.382. De som is 26.525 over 18 ads. Dat is geen uniek bereik: mensen tellen dubbel. De 19e ad had minder dan 100 weergaven.\n- Bij \"Sta stevig\": 28% 18 tot 34, 42% 55+, 58% vrouw. Bij de rest samen: 50% 18 tot 34, 21% 55+. Eén andere ad (\"Elke seconde telt\", ID 3393965217455146) liet hetzelfde patroon zien. Waarom Meta juist hier naar ouderen schoof, is niet aangetoond. Waarschijnlijk zocht Meta goedkope reacties, want de campagne kreeg vrijwel geen aankoopsignaal.\n- Dezelfde ads zijn opnieuw gestart op 26, 27, 28 en 29 oktober, met looptijden van minder dan 1 uur tot 18 uur. Elke nieuwe start begint opnieuw met leren, dus de eerste dagen zijn weinig waard als test.\n- Shopify, 30 dagen: Instagram 95 sessies en 3 winkelwagens, Facebook 52 sessies en 1 winkelwagen. Week van 26 oktober: 118 sessies vanuit social, 4 winkelwagens, 0 voltooide checkouts. In het verkooprapport staat wel 1 bestelling via Instagram (€22,95), dus de twee rapporten verschillen.\n- Bevestigt [2026-10-29-ads-funnel-en-snelheid-productpagina](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Ads/2026-10-29-ads-funnel-en-snelheid-productpagina.md): 288 linkklikken gaven 116 paginaweergaven. De product browsing-update die Bram Konings op 2 november noemt, kan een deel van dat verschil verklaren. Dat is een hypothese en moet in Ads Manager worden gecontroleerd.\n- Tekst: één ad (ID 1907274630437880) noemt minder risico op blessures of blaren, en andere ads noemen \"uniek in zijn klasse\". Beide vallen buiten [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md).\n\n### TikToks\nZes video's met automatische transcripten en vier fotocarrousels zijn bekeken. Bij de video's zijn de ondertitels gelezen en is geen beeld bekeken.\n- **Bram Konings, opzet (11 sep):** verkoopcampagne, 1 campagnebudget van €50, 5 creatives. Overnemen: naamgeving met product en break-even-ROAS, start om 00:01, afbeeldingen op origineel formaat, creative-verbeteringen uit. Niet overnemen: leeftijd ongemoeid laten en campagnebudget, omdat de eigen data en het verschil tussen de sporten anders wijzen.\n- **Bram Konings, product browsing (2 nov):** klikkers komen volgens hem eerst in een productoverzicht van Meta. Niet los bevestigd.\n- **Dan Jordan (3 sep):** drie niveaus van pijn: label, symptoom, situatie. Situatie verkoopt het sterkst volgens hem. Overnemen als kopregel.\n- **Dante Brunelli (21 jul):** Andromeda filtert, rangschikt en veilt. Veel verschillende creatives en aparte boodschappen per bewustzijnsfase. Zijn minimum van 25 creatives komt uit accounts met veel grotere budgetten en is hier niet haalbaar. Overnemen: echte variatie en boodschappen voor mensen die gripsokken nog niet kennen.\n- **Jared Roarss (9 okt):** de dronken-oma-test: snapt iemand het direct? \"6 features in 1 gripsok\" en \"15-20 mmHG\" vallen af, \"Sta stevig in je schoenen\" haalt het.\n- **Eric (18 aug):** ad libraries bewaren en winnende ads laten ontleden op psychologie. Overnemen als wekelijkse routine.\n- **Jasper (carrousel):** statische voorbeelden, waaronder prijs per portie en een bundel met besparing. Zijn ROAS van 8+ is niet onderbouwd. De sokken-ad met oranje gloed past niet bij HÏ Grip.\n- **72atta (2 carrousels):** statics voor Stories met grote kop, groot product en korte tekst. De nagemaakte reactiestickers nemen we niet over: dat is verzonnen sociaal bewijs.\n- **Mia Paviour (carrousel):** Claude analyseert en stelt creatives voor, en zij maakt twee keer per week 9 nieuwe ads. Claude die ads uitvoert past niet bij de grenzen van deze vault: de analyse wel, de uitvoering doet een mens.\n\n### Best lopende ads\nDe Ad Library toont geen verkoop. Looptijd en bereik zijn dus een benadering, geen bewijs.\n- **T1TAN:** 2 april 2024 tot 6 augustus 2026 (856 dagen), gratis grip socks bij keepershandschoenen, in meerdere landen.\n- **FLAIR:** Nederlandstalige ad van 15 juli 2025 tot 3 oktober 2026 (445 dagen), opgebouwd rond de droom van de speler. Nu ±71 actieve beeldads in NL, vaak een lang persoonlijk verhaal met een eenvoudige telefoonfoto.\n- **U-Sport:** actief sinds 17 augustus 2026 met voetbalessentials.\n- **Gymshark:** collectie-ads, actief sinds augustus en september 2026.\n- **Rugby:** de exacte zoekterm \"rugby socks\" gaf geen actieve beeldads wereldwijd. Dat wijst op weinig concurrentie op die woorden, maar is geen volledig beeld.\n\n### Plan\n- Eén verkoopcampagne, twee sets: voetbal €20 per dag (18 tot 54), rugby €15 per dag (18 tot 44, interesse rugby). Budget op setniveau blijft, omdat voetbal veel groter is.\n- 5 concepten per sport: situatie, bewijs, vergelijking, spelersverhaal, aanbod. Dat zijn 10 statics, elk in 4:5 en 9:16.\n- Meteen €35 omdat latere grote budgetwijzigingen het leren opnieuw kunnen verstoren. 14 dagen niets aan sets wijzigen.\n- Stopregels: een ad uit na €25 zonder winkelwagen of na €50 zonder aankoop. Minder dan 3 winkelwagens per set in week 1: terug naar leerdoel Content bekijken, zoals eerder afgesproken.\n- Retargeting pas later, omdat de groep nog te klein en te vervuild is.\n- Timing: start 1 december na de Performance Days ([2026-11-05-performance-days-marketingplan](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-05-performance-days-marketingplan.md)), evaluatie 15 december, vanaf 21 december budget aanpassen voor de winterstop, herstart met winnaars rond 5 januari.\n\n### Haalbaarheid\nScenario's bij €1.050 per maand (aannames, geen prognose):\n- €2,25 per bezoeker, 1% kopers: ±5 aankopen, kosten per aankoop ±€225, resultaat ±−€936.\n- €1,25 per bezoeker, 1,5% kopers: ±13 aankopen, ±€83, resultaat ±−€741.\n- €0,75 per bezoeker, 2% kopers: ±28 aankopen, ±€38, resultaat ±−€364.\n\nBreak-even is ±43 aankopen per maand, dus ±10 per week. Bij 17,9% terugkerende klanten moet herhaalaankoop of een hogere orderwaarde het verschil dicht rijden.\n\n## Wat niet lukte\n- Ads Manager vraagt om inloggen. De uitgaven, CTR en kosten per ad zijn dus niet opgehaald en niet ingevuld.\n- De Ad Library toont geen uitgaven en geen vertoningen per ad, alleen bereik.\n- De videotool ontbreekt ffmpeg en yt-dlp. De video's zijn daarom via ondertitels in de browser gelezen; automatische ondertitels kunnen merknamen verkeerd schrijven.\n- Enkele directe Ad Library-links toonden een andere ad. Bij FLAIR en T1TAN gebruik ik daarom alleen de looptijd.\n- FitSockr gaf op die zoekterm geen actieve beeldads. Dat kan aan de zoekterm liggen.\n- De sync en publicatie van het dashboard lukken niet vanaf dit account: het dashboard is van info@.\n\n## Bronnen\n- Meta Ad Library, eigen ads: https://www.facebook.com/ads/library/?active_status=all&ad_type=all&country=NL&q=%22higrip.nl%22&search_type=keyword_exact_phrase\n- Meta Ad Library, gripsokken NL en grip socks GB (5 nov 2026)\n- Shopify-koppeling, sessies en verkoop (5 nov 2026)\n- [Bram Konings, campagne-opzet](https://www.tiktok.com/@bramkoningsecom/video/7684250500950166816)\n- [Bram Konings, product browsing](https://www.tiktok.com/@bramkoningsecom/video/7703635184620555553)\n- [Dan Jordan, niveaus van pijn](https://www.tiktok.com/@dan.jordn/video/7681283754861677845)\n- [Dante Brunelli, Andromeda](https://www.tiktok.com/@dantebrunelli_2/video/7665086725269523743)\n- [Jared Roarss, eenvoud](https://www.tiktok.com/@jaredroarss/video/7694657654248983821)\n- [Eric, ad libraries](https://www.tiktok.com/@ericdoesecom/video/7675141871953382670)\n- [Jasper, ad designs](https://www.tiktok.com/@jasper.ads/photo/7704323076711812384)\n- [72atta, voorbeelden 1](https://www.tiktok.com/@72atta/photo/7681492143269055766)\n- [72atta, voorbeelden 2](https://www.tiktok.com/@72atta/photo/7682466971786513686)\n- [Mia Paviour, werken met AI](https://www.tiktok.com/@mia.paviour/photo/7699436698815532308)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "",
+   "bronbestand_url": null,
+   "categorie": "Social",
+   "datum": "2026-11-05",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
+    "2026-11-04-ads-resultaten-verbeteringen",
+    "2026-11-05-performance-days-marketingplan",
+    "2026-10-29-ads-funnel-en-snelheid-productpagina",
+    "2026-10-27-review-rugby-ads-trustpilot",
+    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads"
+   ],
+   "id": "2026-11-05-meta-plan-35-euro-per-dag",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Ads in de test, 26 okt t/m 3 nov",
+     "verschil": "Ad Library",
+     "waarde": "19"
+    },
+    {
+     "label": "Som van het bereik per ad, geen unieke personen",
+     "verschil": "18 van de 19 ads",
+     "waarde": "26.525"
+    },
+    {
+     "label": "Deel van dat bereik bij één creative",
+     "verschil": "\"Sta stevig in je schoenen\"",
+     "waarde": "48%"
+    },
+    {
+     "label": "55-plussers bij die creative",
+     "verschil": "21% bij de rest",
+     "waarde": "42%"
+    },
+    {
+     "label": "Aankopen per maand voor break-even bij €1.050",
+     "verschil": "marge ±€24,50",
+     "waarde": "43"
+    }
+   ],
+   "kerntitel": "Beste rugby-ad bereikte vooral 55-plussers: start op €35 met leeftijdsgrens",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De Ad Library toont het bereik van de eigen test: 19 ads op NL, 18 tot 65+, meerdere keren opnieuw gestart. De grootste rugby-ad bereikte 58% vrouwen en 42% 55-plussers. Tien TikToks en de langstlopende ads wijzen naar situatie-pijn, eenvoud en echte verhalen. Het plan: twee sets (€20 voetbal, €15 rugby), harde leeftijdsgrens, 5 concepten, 14 dagen niet aanraken. Ook het goede scenario draait op de eerste bestelling niet break-even.",
+   "status": "nieuw",
+   "titel": "Meta-plan op maximaal €35 per dag",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Ads/2026-11-05-meta-plan-35-euro-per-dag.md",
+   "vervangt": [
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby"
+   ],
+   "wat_niet_lukte": "- Ads Manager vraagt om inloggen. De uitgaven, CTR en kosten per ad zijn dus niet opgehaald en niet ingevuld.\n- De Ad Library toont geen uitgaven en geen vertoningen per ad, alleen bereik.\n- De videotool ontbreekt ffmpeg en yt-dlp. De video's zijn daarom via ondertitels in de browser gelezen; automatische ondertitels kunnen merknamen verkeerd schrijven.\n- Enkele directe Ad Library-links toonden e…"
   },
   {
    "acties": [
@@ -2474,7 +2633,8 @@ window.HI_RESEARCH = {
     "2026-10-25-ab-test-ads-features-vs-beste",
     "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
     "2026-10-27-ek-rugby-u18-u20-plan",
-    "2026-10-29-ads-funnel-en-snelheid-productpagina"
+    "2026-10-29-ads-funnel-en-snelheid-productpagina",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
    "kansen": [],
@@ -2504,7 +2664,7 @@ window.HI_RESEARCH = {
    "prioriteit": "P1",
    "routine": "",
    "samenvatting": "Start bij €20 per dag met één handmatige verkoopcampagne, twee advertentiesets van €10 (voetbal en rugby) en per set 4 echt verschillende statics, maar pas als de voorraad 2.0 klopt en het 3-pack van €44,95 als product bestaat. Bij ±€24,50 marge per bestelling zijn 24 aankopen per maand nodig om €600 terug te verdienen, dus de eerste maanden zijn vooral leerbudget.",
-   "status": "nieuw",
+   "status": "verwerkt",
    "titel": "Meta-opbouw statische ads voetbal en rugby",
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby.md",
    "vervangt": [],
@@ -2869,7 +3029,8 @@ window.HI_RESEARCH = {
     "2026-11-02-weekoverzicht",
     "2026-10-30-ads-agent-onderzoek",
     "2026-11-05-performance-days-marketingplan",
-    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby"
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-11-04-ads-resultaten-verbeteringen",
    "kansen": [],
@@ -5334,7 +5495,8 @@ window.HI_RESEARCH = {
     "2026-10-30-snelheid-code-audit-homepage",
     "2026-11-03-snelheid-nulmeting-alle-paginas",
     "2026-11-03-snelheid-werkthema-02",
-    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby"
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-10-29-ads-funnel-en-snelheid-productpagina",
    "kansen": [],
@@ -6058,7 +6220,8 @@ window.HI_RESEARCH = {
    "deadline": "",
    "gerelateerd": [
     "2026-10-25-ab-test-ads-features-vs-beste",
-    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads"
+    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-10-27-review-rugby-ads-trustpilot",
    "kansen": [],
@@ -6500,7 +6663,8 @@ window.HI_RESEARCH = {
     "2026-10-11-concurrentie-seo-per-merk",
     "2026-10-25-ab-test-ads-features-vs-beste",
     "2026-10-29-ads-funnel-en-snelheid-productpagina",
-    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby"
+    "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
+    "2026-11-05-meta-plan-35-euro-per-dag"
    ],
    "id": "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
    "kansen": [],
@@ -11684,9 +11848,9 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 92,
-   "P2": 155,
-   "P3": 48
+   "P1": 96,
+   "P2": 159,
+   "P3": 49
   },
   "per_categorie": {
    "B2B": 2,
@@ -11694,7 +11858,7 @@ window.HI_RESEARCH = {
    "Merk": 4,
    "Product": 1,
    "SEO": 15,
-   "Social": 8,
+   "Social": 9,
    "Techniek": 15
   },
   "per_week": [
@@ -11754,12 +11918,12 @@ window.HI_RESEARCH = {
     "week": "2026-W44"
    },
    {
-    "aantal": 17,
+    "aantal": 18,
     "start": "2026-11-02",
     "week": "2026-W45"
    }
   ],
-  "totaal_notities": 58
+  "totaal_notities": 59
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

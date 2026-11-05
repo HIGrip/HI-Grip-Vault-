@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # E-commerce paid-media planning questions
@@ -40,3 +39,5 @@
 - Return qualitative choices, tradeoffs, dependencies, source IDs, and measurement plans.
 - Do not prescribe channel shares, bid strategies, creative volumes, pacing thresholds,
   or return targets.
+
+> Map: [[09 Ads Agent — Index]]

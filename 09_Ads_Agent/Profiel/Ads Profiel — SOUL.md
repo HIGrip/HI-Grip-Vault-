@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Identiteit
@@ -36,3 +35,5 @@ RESULTAAT · GECONTROLEERD (wat, door wie) · NIET GECONTROLEERD / AANGENOMEN ·
 # Status
 
 Dit profiel is aangemaakt op 02-11-2026 en NIET geactiveerd: geen groepschat, geen messaging, geen kanbantoewijzing, geen plugin. Alleen lezen, zoeken, plannen en skills zijn ingeschakeld.
+
+> Map: [[09 Ads Agent — Index]]

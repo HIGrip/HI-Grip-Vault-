@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Meta Ads audit control catalog
@@ -142,3 +141,5 @@ The Pixel redundancy and deduplication wording (matching `event_id` and
 ## Recommendation boundary
 
 A recommendation must identify the observed evidence, account-specific baseline or owner threshold, expected mechanism, confidence, reversible next step, measurement window, and rollback condition. Do not infer a recommendation from the control name alone.
+
+> Map: [[09 Ads Agent — Index]]

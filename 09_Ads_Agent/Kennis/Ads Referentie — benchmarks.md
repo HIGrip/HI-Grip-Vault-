@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Contextual Benchmarks
@@ -105,3 +104,5 @@ decay, conversion quality, or incrementality.
 For platform-specific observed facts, use the relevant audit reference and its
 dated source. If no current source pack fits the account, omit the number and
 turn it into a measurement question.
+
+> Map: [[09 Ads Agent — Index]]

@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Budget Allocation and Scaling
@@ -100,3 +99,5 @@ Every proposed reallocation states current and proposed amounts, affected object
 IDs, economic rationale, expected effect, uncertainty, learning impact, owner,
 approval, verification date, rollback threshold, and idempotency key. The
 recommendation remains a draft until the mutation gate passes.
+
+> Map: [[09 Ads Agent — Index]]

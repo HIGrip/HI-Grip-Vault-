@@ -4,10 +4,6 @@ bijgewerkt: 2026-11-03
 status: naslag
 ---
 
-> Map: [[09 Ads Agent — Index]]
-
-> Map: [[09 Ads Agent — Index]]
-
 # Ads Kennis — Bron en licentie
 
 **Wat dit is.** De kennis die in het Hermes-profiel `ads` staat (`profiles/ads/skills/ads/`), als naslagkopie in de vault. Besluit Lars (03-11-2026): de bestaande repo gebruiken, maar alleen een veilige read-only subset, en alles ook in de vault zetten. Uitzondering op de regel "geen derdepartijtekst in de vault".
@@ -114,3 +110,5 @@ Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit,
 Pinterest, Snapchat, and X names and APIs are third-party products. Capability
 references document interoperability and do not imply affiliation, endorsement,
 or permission to bypass platform terms, access controls, policies, or review.
+
+> Map: [[09 Ads Agent — Index]]

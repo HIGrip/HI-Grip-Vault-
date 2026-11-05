@@ -3,7 +3,6 @@ name: ads-math
 description: "Calculate and model paid-media CPA, CPL, CPC, CPM, ROAS, MER, break-even targets, contribution margin, LTV:CAC, impression-share opportunity, budgets, forecasts, and experiment economics. Use for PPC math, ad calculator, break-even analysis, ROAS calculator, CPA calculator, budget forecast, LTV CAC, or MER."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Paid Media Financial Model
@@ -22,3 +21,4 @@ description: "Calculate and model paid-media CPA, CPL, CPC, CPM, ROAS, MER, brea
 Never fabricate missing financial inputs, hide division-by-zero, or present a point
 forecast without its assumptions.
 
+> Map: [[09 Ads Agent — Index]]

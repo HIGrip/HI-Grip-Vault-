@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Regulatory Compliance Requirements
@@ -92,3 +91,5 @@ Block a mutation when required consent/authorization, counsel decision,
 certification, disclosure, data minimization, or jurisdiction evidence is absent.
 Use `unknown` for unresolved applicability. Claude Ads may identify and document
 the issue; the accountable owner or qualified counsel makes the legal decision.
+
+> Map: [[09 Ads Agent — Index]]

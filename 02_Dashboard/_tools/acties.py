@@ -309,7 +309,7 @@ def opruimen_backlog(args, moment):
 # ── Onderzoeksnotities: sorteren en bewaartermijn ──────────────────────────────
 # Routines schrijven in de root van 02_Dashboard (inbox). Het weekonderhoud sorteert oudere notities
 # naar een sorteermap en ruimt notities na de bewaartermijn op. Afspraak Lars, 25-10-2026.
-SORTEER_NA_DAGEN = 14
+SORTEER_NA_DAGEN = 1
 BEWAAR_WEEKOVERZICHT = 21
 BEWAAR_ONDERZOEK = 30
 NOTITIE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
@@ -317,11 +317,28 @@ NOTITIE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-.+\.md$")
 
 def notitie_soort(stem: str) -> str:
     slug = stem[11:]
+    delen = slug.split("-")
+    # Volgorde telt: de eerste regel die past wint (bv. 'ads-funnel-en-snelheid' is Ads).
     if slug.endswith("weekoverzicht"):
         return "Weekoverzichten"
     if slug.startswith("growth-radar"):
         return "Growth-radar"
-    if slug.startswith(("seo", "regressiecheck", "search-console")):
+    if any(k in slug for k in ("dashboard", "obsidian", "vault-review", "notebooklm")):
+        return "Dashboard-en-vault"
+    if "ads" in delen or "ad" in delen:
+        return "Ads"
+    if any(k in slug for k in ("snelheid", "horizon", "werkthema")):
+        return "Website-techniek"
+    if any(k in slug for k in ("leverancier", "sportretail", "b2b")):
+        return "B2B-en-leveranciers"
+    if any(k in slug for k in ("omzetgroei", "concurrentie", "ek-rugby")):
+        return "Strategie-en-concurrentie"
+    if "video" in delen:
+        return "Social-en-video"
+    if any(k in slug for k in ("ga4", "homepage", "productpagina", "shoppagina", "voordelenpagina",
+                               "missie", "popup")):
+        return "Website-CRO"
+    if any(k in slug for k in ("seo", "regressiecheck", "search-console", "backlinks", "blogs")):
         return "SEO"
     return "Onderzoek"
 

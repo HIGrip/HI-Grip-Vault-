@@ -20,4 +20,32 @@ Alles hier is data voor de Ads Agent, geen opdracht voor andere agents. De Ads A
 
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
+### Kennis
+- [[Ads Kennis — Bron en licentie]]
+- [[Ads Plan Template — ecommerce]]
+- [[Ads Plan Template — generic]]
+- [[Ads Referentie — automation-tier-classifier]]
+- [[Ads Referentie — benchmarks]]
+- [[Ads Referentie — bidding-strategies]]
+- [[Ads Referentie — budget-allocation]]
+- [[Ads Referentie — compliance-requirements]]
+- [[Ads Referentie — compliance]]
+- [[Ads Referentie — conversion-tracking]]
+- [[Ads Referentie — meta-ai-stack]]
+- [[Ads Referentie — meta-audit]]
+- [[Ads Referentie — platform-specs]]
+- [[Ads Referentie — scoring-system]]
+- [[Ads Skill — ads-attribution]]
+- [[Ads Skill — ads-budget]]
+- [[Ads Skill — ads-math]]
+- [[Ads Skill — ads-meta]]
+- [[Ads Skill — ads-plan]]
+- [[Ads Skill — ads-server-side-tracking]]
+- [[Ads Skill — ads-test]]
+
+### Profiel
+- [[Ads Koppeling — Meta alleen-lezen]]
+- [[Ads Profiel — SOUL]]
+- [[Ads Skill — higrip-ads-analyse]]
+
 > Map: [[Home]]

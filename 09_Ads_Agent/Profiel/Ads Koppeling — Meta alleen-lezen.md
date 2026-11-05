@@ -4,8 +4,6 @@ bijgewerkt: 2026-11-03
 status: gebouwd, getest (40 tests, nagebootste Meta-server), code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID, WACHT OP TOKEN van Lars; niet geactiveerd
 ---
 
-> Map: [[09 Ads Agent — Index]]
-
 # Ads Koppeling — Meta alleen-lezen (MCP)
 
 Besluit Lars (03-11-2026): de Ads Agent leest Meta Ads-cijfers en -instellingen zelf via een MCP-koppeling, in plaats van handmatige CSV-exports. Dit is de aparte menselijke vrijgave voor toegang tot Meta-data die [[Agents Ads Agent]] en [[2026-10-30-ads-agent-onderzoek]] vragen. Het blijft adviserend: de koppeling kan niets wijzigen.
@@ -46,3 +44,5 @@ Eigenaar: Lars (te bevestigen) · looptijd: 4 weken, daarna evalueren (te bevest
 
 ## Niet gecontroleerd
 Een echte Meta-aanroep (geen token). Of `ads_read` alle bedoelde velden dekt, vooral pixel en CAPI. Of een app in ontwikkelmodus genoeg is voor het eigen account. De standaard API-versie `v26.0` komt uit [[Ads Referentie — meta-audit]] en is niet tegen een live account getest.
+
+> Map: [[09 Ads Agent — Index]]

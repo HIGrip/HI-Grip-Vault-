@@ -3,7 +3,6 @@ name: higrip-ads-analyse
 description: "Use for HÏ Grip paid-ads analysis (Meta, measurement, budget). Read-only advice, plans and checklists for humans; never content or execution."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # HÏ Grip Ads-analyse (read-only schil)
@@ -41,3 +40,5 @@ Niet aanwezig en niet te gebruiken: `ads-validate`, `ads-create`, `ads-creative`
 
 ## Bron
 Afgeleid van AgriciDaniel/claude-ads (MIT), commit fc3908e786c318776df89a3a098333da377364be (17-10-2026). Zie `LICENSE`. Uitzondering op de regel "geen derdepartijtekst in de vault" (Lars, 03-11-2026): deze MIT-subset staat als naslagkopie in `09_Ads_Agent/Kennis/`; verder geen tekst van derdepartijrepo's in de vault kopiëren.
+
+> Map: [[09 Ads Agent — Index]]

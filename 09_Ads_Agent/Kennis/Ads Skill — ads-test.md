@@ -3,7 +3,6 @@ name: ads-test
 description: "Design and evaluate paid-ad experiments with hypotheses, randomization units, sample-size and duration assumptions, guardrails, platform experiment tools, analysis, and decision rules. Use for A/B test, split test, experiment design, hypothesis, statistical significance, sample size, test duration, or experiment readout."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Paid Media Experiment
@@ -22,3 +21,4 @@ description: "Design and evaluate paid-ad experiments with hypotheses, randomiza
 Do not repeatedly peek and stop on a favorable result, call underpowered noise a
 winner, or generalize beyond the tested population.
 
+> Map: [[09 Ads Agent — Index]]

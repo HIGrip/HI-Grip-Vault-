@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Claude Ads scoring contract
@@ -136,3 +135,5 @@ surface its missing weight and the resulting portfolio coverage explicitly.
 Scores prioritize investigation; they do not authorize changes. Each recommendation
 must cite the relevant finding, declare confidence, consider sample size and
 conversion lag, and pass the mutation gate before any account write.
+
+> Map: [[09 Ads Agent — Index]]

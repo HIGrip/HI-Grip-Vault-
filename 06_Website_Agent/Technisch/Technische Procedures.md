@@ -12,7 +12,9 @@ bijgewerkt: 2026-10-29
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-10-29:** werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `C:\Users\Test\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
+> **Bijgewerkt 2026-11-05 (lars, in chat):** nieuw werkthema is **`204029296967`** (editor: https://admin.shopify.com/store/hi-grip/themes/204029296967/editor). Eerder werkthema was `203461034311` (daarna `203928076615` "Live website 04-11-2026"). Controleer rol en naam eerst met `shopify theme list`; de live-regel in de tabel hieronder kan achterlopen.
+>
+> *Vorige stand — bijgewerkt 2026-10-29:* werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `C:\Users\Test\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
 >
 > *Vorige stand — bijgewerkt 2026-10-26 (lars, bevestigd in chat):* nieuw werkthema is **`202669916487` "Live HÏ Grip WEBSITE + contactpagina"** (unpublished; bevat o.a. de A/B-templates `page.ab-a`, `product.ab-a`, `product.ab-b`). Live is nu **`202667458887`** ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list` op 26-10). `202398040391` en `202394272071` zijn unpublished. Op 26-10 is in `202398040391` ook de fotogrootte-slider aan `gripsocks2-photo` toegevoegd (onschadelijk, default = oude grootte).
 >
@@ -28,6 +30,7 @@ bijgewerkt: 2026-10-29
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
+| **Werkthema (sinds 5-11)** | `204029296967` (aangewezen door lars) | unpublished (check met `theme list`) | **Ja** — enige werkkopie |
 | Live op www.higrip.nl (Horizon 4.4.0, "Bijgewerkte kopie van Live website 04-11-2026") | `203954520391` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203928076615`; lokale kopie met git: `C:\Users\Test\Werk\theme-snelheid\update-04`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
 | Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
 | Ouder live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished) | unpublished | Nee |

@@ -10,6 +10,14 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-05 — Performance Days: Website-QA CORRIGEER; twee leerregels vastgelegd
+
+**Wat er gebeurde:** Website lead bundelde het adviesrapport ([[2026-11-05-performance-days-marketingplan]]); Website-QA gaf CORRIGEER (rekenfout regel 100, btw-basis ROAS onduidelijk, 1+1/verzending zonder test). Correctie en herkeuring volgen als aparte kaarten; status in het kwaliteitslog: Teruggestuurd, correctie loopt.
+**Vastgelegd in [[Leerregels per Agent]]:** (1) QA beoordeelt nooit alleen de summary; bundeling naar domeinhoofdagent, Stafchef beheert documentatie; (2) Design: CTA nooit accentkleur.
+**Tegenstrijdigheid (gemeld, niet opgelost):** `07_Design_Agent/Design Elementen.md` regel 147 laat een CTA gevuld met accentkleur toe.
+
+---
+
 ## 2026-11-03 — Ads-besluit: niets zelf uitvoeren, klaarzetten na akkoord; vier leerregels
 
 **Wat er gebeurde:** Lars besloot dat de Ads Agent niets zelf uitvoert; hooguit klaarzetten (status uit), alleen na akkoord en een hele goede controle door Team HÏ Grip; een mens zet aan. Vastgelegd in `Agents Ads Agent.md` (kopje Klaarzetten), de Ads-onderzoeksnotitie, `user.md`, hiërarchie, `Agents Denzel.md` en `09_Ads_Agent/Profiel/`. De oude regel "read-only" stond op negen plekken; daaruit volgt leerregel 1.

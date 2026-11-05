@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # General paid-media planning questions
@@ -41,3 +40,5 @@
 
 - Return options, tradeoffs, assumptions, source IDs, owners, and verification steps.
 - Do not supply universal channel mixes, bid strategies, thresholds, targets, or guarantees.
+
+> Map: [[09 Ads Agent — Index]]

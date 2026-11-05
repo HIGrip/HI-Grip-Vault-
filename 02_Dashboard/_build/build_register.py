@@ -37,7 +37,8 @@ DATA_BESTANDEN = ("instellingen", "kpi", "agenda", "cwv", "koppelingen", "shopif
 OUTPUT_PATH = RESEARCH_DIR / "_build" / "register.js"
 KAART_PATH = RESEARCH_DIR / "Waar staat wat.md"
 # Routines schrijven in de root (inbox); het weekonderhoud (acties.py opruimen) sorteert ze hierheen.
-SORT_DIRS = ("Growth-radar", "SEO", "Onderzoek", "Weekoverzichten")
+SORT_DIRS = ("Growth-radar", "SEO", "Ads", "Website-techniek", "Website-CRO", "B2B-en-leveranciers",
+             "Strategie-en-concurrentie", "Social-en-video", "Dashboard-en-vault", "Onderzoek", "Weekoverzichten")
 GITHUB_BRANCH = "HÏ-Grip-Vault-obsidian"
 GITHUB_BASE = "https://github.com/HIGrip/HI-Grip-Vault-/blob/" + urllib.parse.quote(GITHUB_BRANCH) + "/"
 

@@ -3,7 +3,6 @@ name: ads-budget
 description: "Plan and review paid-media budgets, bidding, pacing, marginal return, targets, constraints, and allocation across supported platforms. Use for ad budget allocation, media budget, bidding strategy, scaling, spend pacing, ROAS target, or investment tradeoffs. Use ads-math for calculations and forecasts."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Budget and Bidding
@@ -22,3 +21,4 @@ description: "Plan and review paid-media budgets, bidding, pacing, marginal retu
 Rules such as 70/20/10, fixed CPA multiples, fixed budget-to-CPA ratios, and fixed
 percentage scaling are optional heuristics, never universal authorization.
 
+> Map: [[09 Ads Agent — Index]]

@@ -3,7 +3,6 @@ name: ads-meta
 description: "Audit Meta Ads measurement, Pixel and Events Manager, attribution, Facebook and Instagram creative, audiences, placements, automation, budgets, account structure, and policy. Use for Meta Ads, Facebook Ads, Instagram Ads, Advantage+, Pixel, Events Manager, or Meta account structure. Read-only; use ads-server-side-tracking for server-side events and ads-optimize to change campaigns."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Meta Ads Audit
@@ -66,3 +65,5 @@ merely because the Pixel is new. Preserve `unknown` when the evidence is absent.
 Return platform health, evidence coverage, regulatory exposure, observations,
 diagnoses, prioritized recommendations, unscored opportunities, contradictions,
 missing inputs, and recovery hints through the common JSON contracts.
+
+> Map: [[09 Ads Agent — Index]]

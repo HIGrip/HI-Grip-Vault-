@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Automation Delegation Classifier
@@ -73,3 +72,5 @@ Return platform, campaign/object IDs, dimension, observed authority, tier,
 evidence, confidence, risk, owner, and remediation. Do not prescribe “more
 automation” or “more manual control” without a diagnosed account problem and a
 testable expected result.
+
+> Map: [[09 Ads Agent — Index]]

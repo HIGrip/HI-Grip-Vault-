@@ -3,7 +3,6 @@ name: ads-plan
 description: "Create a professional paid-advertising strategy covering objectives, economics, platform selection, campaign architecture, audiences, budget, creative, measurement, experiments, governance, rollout, and reporting. Use for ad plan, media plan, PPC strategy, paid-social strategy, campaign architecture, advertising roadmap, or channel planning."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Paid Media Plan
@@ -32,3 +31,5 @@ description: "Create a professional paid-advertising strategy covering objective
 
 A plan is advisory. It becomes an account change only through launch or optimize
 mutation gates.
+
+> Map: [[09 Ads Agent — Index]]

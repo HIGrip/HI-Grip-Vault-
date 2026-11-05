@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Meta Ads Ranking Architecture
@@ -94,3 +93,5 @@ When architecture is relevant, cite the source ID and distinguish:
 
 Only observed account problems become health findings. Product awareness and
 vendor-reported uplifts remain unscored context.
+
+> Map: [[09 Ads Agent — Index]]

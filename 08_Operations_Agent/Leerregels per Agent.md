@@ -29,6 +29,7 @@ beheer: Stafchef (03_Denzel)
 - **Een kaart die op een besluit van Lars wacht gaat naar REVIEW (request-review), met de exacte vraag en een voorstel in de kaartreactie.** `blocked` is alleen voor technische storingen en afhankelijkheden. Reden: blocked verborg dat Lars moest beslissen; een kaart wachtte 69 uur. (2026-11-02, Lars)
 - **Een koppeling die schrijven mogelijk maakt krijgt altijd:** (a) een apart token per bevoegdheid in de Windows-referentiekluis, nooit in een bestand dat een agent kan lezen; (b) een tussenprogramma met vaste toolslijst; (c) een weigering bij een te ruim token; (d) een onafhankelijke code-QA vóór gebruik. Eerste toepassing: Ads Agent (Meta). (2026-11-03, Lars)
 - **Een token dat in de chat wordt geplakt geldt als gelekt en wordt direct ingetrokken.** Gebeurd op 03-11-2026. (2026-11-03, Lars)
+- **QA beoordeelt nooit alleen de samenvatting.** Lees het volledige rapport en reken getallen na. Reden: bij Performance Days stond de rekenfout (regel 100) niet in de summary. Inhoudelijke bundeling gaat naar de domeinhoofdagent (hier Website); de Stafchef beheert alleen documentatie en schrijft geen inhoud. (2026-11-05, Denzel; bewijs: kaarten t_33949113, t_e05f6574, t_a87a674a)
 
 ## Denzel en zijn vroegere team
 
@@ -55,6 +56,8 @@ beheer: Stafchef (03_Denzel)
 - **Meld bij een QA-correctie de werkelijke omvang en bronstatus, niet de bedoeling.** Een notitie "ingekort tot onder 15 KB" die 16,4 KB is, of bronnummers die niemand naliep, krijgen de feitelijke waarde of het label "onbevestigd". Reden: Operations-QA t_7b07dde6 vond precies dit in de Ads-notitie. (2026-11-02, bron: kaart t_1c085f78; voorgelegd aan Denzel ter bevestiging)
 - **Operations voert alleen werk uit aan agentstructuur en workflow, niet aan inhoud of techniek.** Reden: bevestiging Lars; inhoud en techniek horen bij de domeinagents. (2026-11-02, Lars)
 
+- **Leg aannames vast als corrigeerbaar, met bron en datum.** Een aanname in een briefing (scope, ontbrekend getal) wordt vervangen door een gedateerde aanvulling zodra Lars corrigeert; wat niet expliciet is besloten blijft "niet besloten". Reden: Lars corrigeerde de Performance Days-briefing (1.0 én 2.0, Ads Agent, creatieve hoek). (2026-11-05, Lars; kaart t_2bf94d11)
+
 ### Vooruitblik-agent
 - *(nog geen regels)*
 
@@ -74,6 +77,8 @@ beheer: Stafchef (03_Denzel)
 - **Toets sportpagina's en homepage aan de beachhead-volgorde** (tennis/padel, voetbal, rugby). Rugby ontbrak in de sport-grid. (2026-09-17)
 - **Een designlat als checklist levert checklist-design op.** Eyebrow + oversized kop + lead per sectie, fotokaart met donker verloop, outline-cijfers en volt-labels zijn samen herkenbaar als AI-template. Begin bij één visueel idee en echte art direction (beeldkeuze, crop, compositie); vink de lat pas achteraf af. (2026-10-14, Lars ★1 op homepage-prototype)
 - **Geen fotokaart met tekst op een donker verloop als standaardoplossing.** Elk sportbeeld krijgt een eigen crop en compositie, of het beeld vervalt. Eigen foto's van wisselende kwaliteit niet gelijkwaardig naast elkaar zetten. (2026-10-14, Lars ★1 op homepage-prototype)
+- **Bij een rekenformule in een rapport staat de formule met invulling en grondslag (incl. btw-basis) erbij, en elk mechanisme (bv. 1+1, verzending) is gemarkeerd als aanname zolang het niet in Shopify is getest.** Reden: Performance Days had een omgekeerde factor (1-i), een onduidelijke ROAS-btw-basis en een ongetest verzendmechaniek als feit; herkeuring GOED na correctie. (2026-11-05, Denzel; bronnen: kaarten t_e05f6574, t_de11ce50)
+- **Een CTA-knop krijgt nooit de accentkleur.** (2026-11-05, Denzel, via kaart t_a87a674a.) Let op: [[Design Elementen]] (CTA-knop, regel 147) staat nog 'gevuld met accentkleur' toe; tegenstrijdigheid gemeld aan Denzel, niet opgelost.
 
 ### Website Copy Agent
 - **Nooit zelf een cijfer kiezen.** Klantenaantal en ratings moeten overal identiek zijn; twijfel = **[HÏ GRIP]**. (2026-09-17)

@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Bidding Strategy Decisions
@@ -93,3 +92,5 @@ campaign, not as a universal freeze period.
   prescribed solely from the bid strategy name.
 - Vendor-reported lift used as a forecast.
 - A bid mutation without exact account/object IDs, approval, verification, and rollback.
+
+> Map: [[09 Ads Agent — Index]]

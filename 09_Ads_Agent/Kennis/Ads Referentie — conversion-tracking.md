@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Conversion Tracking and Measurement
@@ -108,3 +107,5 @@ A tracking review is complete only when it identifies tested events, environment
 time window, consent states, payload evidence, platform diagnostics, CRM
 reconciliation, gaps, confidence, and an owner for remediation. Never infer
 health from configuration screenshots alone.
+
+> Map: [[09 Ads Agent — Index]]

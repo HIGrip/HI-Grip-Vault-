@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Platform Advertising Policy Review
@@ -94,3 +93,5 @@ recommendation solely because the platform labels it a best practice.
 Platform approval is not legal clearance. Legal compliance is not proof of
 platform eligibility. Keep the platform-policy finding and regulatory exposure
 separate, and obtain qualified counsel for jurisdiction-specific legal decisions.
+
+> Map: [[09 Ads Agent — Index]]

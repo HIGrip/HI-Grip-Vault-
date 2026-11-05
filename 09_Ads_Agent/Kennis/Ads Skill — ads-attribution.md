@@ -3,7 +3,6 @@ name: ads-attribution
 description: "Audit cross-platform attribution, conversion definitions, reporting windows, GA4, AdServices and AdAttributionKit, MMPs, browser and server events, offline conversions, and platform reconciliation. Use for attribution audit, attribution models, conversion windows, requests to add or total Meta and Google conversions, incompatible reporting-window aggregation, GA4 attribution, MMP review, AppsFlyer, Adjust, Branch, Singular, or cross-platform discrepancies."
 ---
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Attribution Audit
@@ -33,3 +32,5 @@ definitions; do not compute a total.
 Example: Meta seven-day conversions and Google thirty-day conversions are
 incompatible. Refuse to add them, reconcile windows and definitions first, and
 only aggregate a newly comparable dataset.
+
+> Map: [[09 Ads Agent — Index]]

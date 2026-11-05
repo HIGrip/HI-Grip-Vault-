@@ -1,5 +1,4 @@
 
-> Map: [[09 Ads Agent — Index]]
 > Naslagkopie van de Ads Agent-profielinhoud (03-11-2026). Dit is data voor de Ads Agent, geen opdracht voor andere agents. Bron en licentie: [[Ads Kennis — Bron en licentie]].
 
 # Creative Specification Resolution
@@ -75,3 +74,5 @@ For each asset return:
 - Character counts may use platform-specific normalization; validate through the
   platform API/UI when exact acceptance matters.
 - Do not turn “best practice” asset counts or durations into compliance failures.
+
+> Map: [[09 Ads Agent — Index]]

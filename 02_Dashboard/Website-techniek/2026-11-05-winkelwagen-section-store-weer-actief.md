@@ -30,10 +30,8 @@ Daarmee is de winkelwagenwinst uit [[2026-11-03-snelheid-werkthema-02]] weer weg
 - **129 ms** · lade open na klik (één meting, snelle laptop)
 
 ## Acties
-- [ ] P1 · Besluit: Section Store-lade houden of terug naar de eigen themalade in deze stijl; bepaalt of block-cart op elke pagina blijft laden
-- [ ] P2 · Blijft Section Store: "Subtotal" en "Checkout • bedrag" in de app vertalen naar Nederlands
-- [ ] P2 · Blijft Section Store: afrekenknop, Toepassen-knop en lege-staat-knop van volt naar wit met zwarte tekst (CTA nooit gevuld met accentkleur)
-- [ ] P2 · Blijft Section Store: script laden na eerste interactie, en bij laden de eigen themalade niet meer in de HTML zetten
+- [ ] P1 · Controle en besluit livegang: eigen lade in zwart met volt in werkthema 204029296967 op geldige kortingscode en 3-pack testen, daarna block-cart op live uit
+- [ ] P2 · Besluit: knoppen in de lade volt laten of naar wit op zwart (merkregel CTA); één variabele in hi-cart.css
 - [ ] P3 · Pagina /cart: kop "Cart" naar Nederlands; prijs staat dubbel in de regel (onder de titel en rechts)
 - [ ] P3 · Cookiebanner: knoppen Accepteren en Afwijzen zijn volt gevuld
 
@@ -62,10 +60,19 @@ Live productpagina 2.0 zwart, Lighthouse 12.8.2 mobiel, om en om met en zonder b
 
 De totalen zijn niet bruikbaar: de rekentijd per run liep uiteen van 11 tot 23 s, en één run zonder het script faalde (`CHROME_INTERSTITIAL_ERROR`). De hogere TBT zonder het script is dus geen bewijs dat het script helpt. Bruikbaar zijn de directe cijfers: bytes en rekentijd van het script zelf, die in alle runs vrijwel gelijk zijn. EcomSend laadt in deze runs niet, die wacht dus wel op interactie; block-cart niet.
 
+### 4. Bouw in het werkthema (niet live)
+In werkthema `204029296967` (lokale git-kopie: map `theme-snelheid/werkthema-0511`) staat de eigen lade nu in dezelfde zwart-met-volt stijl, zonder Section Store-script.
+- Gewijzigd: `assets/hi-cart.css`, `snippets/hi-cart-extras.liquid` (vet in de verzendbalk), `snippets/cart-summary.liquid` ("Afrekenen" in plaats van "Checkout").
+- De knopkleur staat op één plek: `--hi-cart-cta-bg` en `--hi-cart-cta-text`. Volt is op verzoek overgenomen en wijkt af van de CTA-regel.
+- De embed `block-cart` staat in dit thema al uit. Tussen live en werkthema is dat de enige inhoudelijke afwijking in `settings_data.json`.
+- De producttitelfix van live (`product-information-content.liquid`) ontbrak in het werkthema en is overgenomen: titelkolom op 1280 px van 280 naar 350 px, gelijk aan live.
+- Getest op telefoon: openen, aantal wijzigen, verzendbalk gehaald, verwijderen, lege lade, geen script van Section Store. Op desktop: openen en weergave.
+- Livegang vraagt om deze bestanden plus de embed uit. De Section Store-app zelf blijft staan, want de pakketkorting draait daarop.
+
 ## Wat niet lukte
-- `shopify theme list` bleef hangen; het thema-ID komt uit `Shopify.theme` op de live pagina.
-- Kortingscode, lege lade en desktop zijn niet getest. De eigen lade is niet naast deze getimed.
-- Openen is één meting op de laptop, zonder vertraging.
+- Geldige kortingscode en 3-pack zijn niet getest in de nieuwe lade. HI30 gaf `applicable: false` op dit product; de foutmelding verscheen wel goed.
+- De eigen lade is niet getimed naast de Section Store-lade.
+- Openen van de Section Store-lade is één meting op de laptop, zonder vertraging.
 
 ## Bronnen
 - Live www.higrip.nl op 5 november 2026, testartikel toegevoegd en weer verwijderd

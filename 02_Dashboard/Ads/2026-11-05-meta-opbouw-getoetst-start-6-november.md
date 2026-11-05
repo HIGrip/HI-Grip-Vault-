@@ -19,7 +19,7 @@ deadline: 2026-11-06
 > Map: [[Waar staat wat]]
 
 ## In het kort
-Timo vroeg of dit de beste opbouw is, getoetst aan onderzoek en langlopende ads in dezelfde sector. Daarna besloot hij lager te testen, met livegang op 7 november om 00:01. De campagneopbouw houdt stand: één verkoopcampagne, twee sets en 14 dagen rust. De creatieve mix moet anders. Ads die maanden blijven draaien gebruiken klantwoorden, multipacks en makers, en geen wetenschappelijke claims.
+Timo vroeg of dit de beste opbouw is, getoetst aan onderzoek en langlopende ads in dezelfde sector. Daarna koos Timo voor lager testen, met livegang op 7 november om 00:01. De campagneopbouw houdt stand: één verkoopcampagne, twee sets en 14 dagen rust. De creatieve mix moet anders. Ads die maanden blijven draaien gebruiken klantwoorden, multipacks en makers, en geen wetenschappelijke claims.
 
 Twee eerdere blokkades kloppen niet. Het 3-pack 2.0 van €44,95 staat al live als bundelblok op de productpagina, en alle maten zijn te koop. Shopify volgt de voorraad 2.0 niet, dus de −101 zegt niets over wat er echt ligt. De start op 7 november geeft 20 dagen data vóór de Performance Days. Vervangt het tijdpad van [[2026-11-05-meta-plan-35-euro-per-dag]]; de bevindingen daar blijven gelden.
 
@@ -45,7 +45,7 @@ Twee eerdere blokkades kloppen niet. Het 3-pack 2.0 van €44,95 staat al live a
 ### Correcties op eerdere notities
 - **3-pack 2.0 bestaat.** De productpagina toont het als bundelblok: 3-pack €44,95, doorgestreept €53,85, "€9,- korting", label "Meest gekozen", met gratis verzending. [[2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]] meldde dat het ontbrak omdat de pagina toen HTTP 429 gaf. De actie daar om het pack in de winkel te zetten is dus niet meer nodig.
 - **De −101 is geen tekort.** Alle varianten 2.0 hebben `tracked: false`. De winkel verkoopt daardoor door, ongeacht de telling; `available` is true op alle 6 varianten. Wat er echt ligt, is onbekend.
-- **Start 1 december vervalt.** De actie met die datum in [[2026-11-05-meta-plan-35-euro-per-dag]] is ingehaald door het besluit voor 6 november.
+- **Start 1 december vervalt.** De actie met die datum in [[2026-11-05-meta-plan-35-euro-per-dag]] is ingehaald door het besluit voor 7 november.
 - **De maximale leeftijd is geen harde grens binnen Advantage+.** Alleen de minimumleeftijd is daar een controle, de rest is een suggestie. Een maximum van 44 of 54 vraagt de oorspronkelijke doelgroepopties, dus Advantage+ uit. Bronnen zijn blogs, niet de Help Center-pagina zelf.
 
 ### Langlopende ads in de sector

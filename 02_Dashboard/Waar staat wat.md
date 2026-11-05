@@ -37,7 +37,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 Zoek gericht; lees dit niet in zijn geheel.
 
-- Ads: 7 notities
+- Ads: 8 notities
 - B2B-en-leveranciers: 3 notities
 - Dashboard-en-vault: 7 notities
 - Growth-radar: 8 notities

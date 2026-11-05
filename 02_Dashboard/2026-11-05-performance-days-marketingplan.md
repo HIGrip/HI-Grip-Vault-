@@ -1,7 +1,7 @@
 ---
 id: "2026-11-05-performance-days-marketingplan"
 titel: "HÏ Performance Days (Black Friday 27-11-2026): gebundeld adviesrapport"
-kerntitel: "Performance Days is nog oranje: eerst scope, rendementscijfers en meting, dan pas starten"
+kerntitel: "Performance Days is nog oranje: scope is beslist, maar rendementscijfers, verzendregel, beleid en meting zijn nog open"
 datum: "2026-11-05"
 bron: "los"
 routine: ""
@@ -133,7 +133,7 @@ Afgeleiden:
 - Tier is toelaatbaar alleen als CM1 > 0 bij de verwachte bestelwaarde; anders die tier niet aanbieden.
 
 ### 5. Go/no-go (concreet)
-Go-moment 19-11 en definitieve bevestiging 25-11. Go alleen als poorten 1, 3, 4, 5 groen zijn en 2, 6, 7 groen of bewust geaccepteerd door Lars of Timo.
+Go-moment en definitieve bevestiging: datums volgen uit de bouwstart (over ongeveer 2 weken) en worden door Team HÏ Grip gezet; geen vaste datum. Go alleen als poorten 1, 3, 4, 5 groen zijn en 2, 6, 7 groen of bewust geaccepteerd door Lars of Timo.
 1. **Meting** (Conversie & Analyse + Lars): GA4 gesynchroniseerd met Shopify, UTM-schema vast, nieuwe events getest, purchase-value na korting klopt. Rood is geen start.
 2. **Snelheid:** mobiele LCP landingspagina onder 3 s gemeten.
 3. **Beleid** (Lars en Timo): verzend-, retour- en actievoorwaarden gelijk, inclusief gedeeltelijke retour.
@@ -144,15 +144,14 @@ Go-moment 19-11 en definitieve bevestiging 25-11. Go alleen als poorten 1, 3, 4,
 Stopregels tijdens de actie: meting valt uit, CM1 op werkelijke cijfers negatief, voorraad op, of verzendklachten door de €4,50.
 
 ### 6. Tegenstrijdigheden tussen agents (besluit voor Team HÏ Grip, niet door mij gekozen)
-- **Hoofdhoek:** Social adviseert rugby als test naast drie beachheads; Design en Partnership werken rugbygericht uit (Heren Ereklasse en dames XV is een voorstel, geen deal). Beachhead is niet besloten.
-- **Preheat-start:** Website 16-11 (aanmelding), Social 20-11 tot 26-11, Partnership afhankelijk van rechten. Geen gedeelde tijdlijn.
-- **Volgorde:** Social wil het aanbod pas communiceren na scopebesluit; Website plant de aanmelding al op 16-11.
-- **Accentkleur:** Design noemt Tangerine #E10600 (rugby); Design Elementen regel 171 noemt volt of royal; cart-concept 7932 gebruikt volt #ccff00. Design: bronconflict Design Elementen regel 147 tegen CLAUDE.md §4 (geen wijziging gedaan).
-- **Merkregel CTA:** de afrekenknop in cart-concept 7932 is #ccff00 gevuld met zwarte tekst (opdracht t_27ad5e4d). Dat botst met de CTA-regel (wit op zwart of zwart op wit, nooit accentgevuld). Ik heb dit niet zelf aangepast; besluit Lars.
+- **Hoofdhoek:** besloten door Lars: rugby. Het eerdere verschil (Social adviseerde een test over drie sporten) vervalt. Heren Ereklasse en dames XV blijft een voorstel, geen deal.
+- **Preheat en volgorde:** opgelost door het besluit van Lars (video eerst, dan mail met vroege toegang; Social eerder dan website). Exacte datums zijn open.
+- **Accentkleur:** Lars noemde volt #ccff00 als primair accent; Design Elementen regel 171 noemt volt of royal; Design noemde eerder Tangerine #E10600. Hoort bij de Design Agent; niet door mij gecorrigeerd.
+- **Merkregel CTA:** de afrekenknop in cart-concept 7932 is #ccff00 gevuld met zwarte tekst (opdracht t_27ad5e4d), terwijl de CTA-regel wit op zwart of zwart op wit zegt. Open voor Design Agent en Lars; ik heb dit niet aangepast.
 - **Sessies baseline:** plan noemt zowel ~417 als 412; gelijktrekken na controle in GA4.
 
-### 7. Ads Manager [ADS-ONGETOETST]
-De Ads Agent is niet geactiveerd; er is geen toegang tot Ads Manager. Alleen vragen, geen plan:
+### 7. Ads Manager [ADS-NOG-NIET-LIVE-GECONTROLEERD]
+De Ads Agent is nu betrokken, maar live Ads-data is nog niet gecontroleerd en ik heb geen toegang tot Ads Manager. Het label blijft staan tot zijn rapport. Ads-specifieke analyse is aan de Ads Agent; hier alleen vragen, geen plan:
 - Welke campagne, doelgroep en budget (leerdrempel; bestaande test €5 per dag per ad set)?
 - Optimalisatie-event: Content bekijken, daarna toevoegen aan winkelwagen; Conversions API en deduplicatie met pixel controleren.
 - Hoe wordt de 1+1 in advertenties getoond zonder claim die de verzendregel verbergt?
@@ -171,11 +170,11 @@ Open punt: wie levert de Ads Manager-export (zie bestaande notitie [[2026-11-04-
 | Partnership | t_7a9697e6, QA t_007829f1 | GOED (licht voorbehoud) | Eerste QA gaf CORRIGEER, ronde 1 hersteld |
 | Social | t_0c5ea889, QA t_4ccec4a4 | GOED (licht voorbehoud) | Eerste QA gaf CORRIGEER, ronde 1 hersteld; opmerkingen: navigatieregel, open vraag formats |
 | Design | t_d0363828 | Geen verdict | Onafhankelijke Design-QA ontbreekt; geen GOED geclaimd |
-| Ads | n.v.t. | Niet getoetst | Profiel niet geactiveerd [ADS-ONGETOETST] |
-| Dit rapport | t_33949113 | Nog niet getoetst | Website-QA op de bundeling volgt apart |
+| Ads | n.v.t. | Niet getoetst | Wacht op rapport Ads Agent [ADS-NOG-NIET-LIVE-GECONTROLEERD] |
+| Dit rapport | t_33949113, QA t_e05f6574 en t_de11ce50 | GOED na ronde 1 (versie vóór de besluiten van 05-11) | Update t_e8144db7 (besluiten Lars, tijdlijn, beleid, Ads-label) is nog niet getoetst; QA volgt |
 
 ## Wat niet lukte
-Geen toegang tot Ads Manager; Shopify Admin, T1 tot en met T16, SendWILL, juridische toetsing, financiële gegevens, rechten, Muziek & Licenties, ambassadeurs en live voorraad zijn niet gecontroleerd. Design-QA ontbreekt. Het Partnership-resultaat is gelezen via de kaart (geen notitiebestand).
+Geen toegang tot Ads Manager of live Ads-data; Shopify Admin, T1 tot en met T16, SendWILL, juridische toetsing, financiële gegevens, rechten, Muziek & Licenties, ambassadeurs en live voorraad zijn niet gecontroleerd. Design-QA ontbreekt. Het Partnership-resultaat is gelezen via de kaart (geen notitiebestand).
 
 ## Bronnen
 - [[2026-11-05-briefing-performance-days]]

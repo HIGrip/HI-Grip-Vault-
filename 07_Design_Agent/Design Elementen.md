@@ -168,10 +168,16 @@ Vijf formats, altijd in wit én zwart. Logo, marges en accenten staan vast — a
 | Reel & TikTok | 9:16 |
 | Pitch · presentatie | 1920 × 1080 · 16:9 |
 
-**Accentregel (vast):** donker sjabloon → **volt** accent. Licht sjabloon → **royal** accent.
+**Accentregel (vast, algemeen):** donker sjabloon → **volt** accent. Licht sjabloon → **royal** accent. *Uitzondering: HÏ Performance Days, zie Campagne-uitzondering hieronder; die gaat voor.*
 Formaat, logo-positie en marges niet aanpassen.
 
-**Campagnevoorkeur (Lars, 05-11-2026, Performance Days; geldt alleen voor deze campagne, geen merkbesluit):** volt #CCFF00 is primair accent, oranje (pumpkin/tangerine) secundair, rood en blauw nauwelijks. Op donker valt dit samen met de vaste regel. Op een licht sjabloon schuurt het met "royal": volt is op wit onleesbaar, dus op licht gebruik je volt alleen als vlak-accent met zwart ernaast en nooit voor tekst. Of royal op licht voor deze campagne vervalt, beslist Lars; tot dan blijft de vaste regel gelden. Dit raakt het leidende Canva-document niet aan; wijzigt het merkbesluit, dan volgt Brand Core via Lars.
+**Campagne-uitzondering, voorrang voor Performance Days (Lars, 05-11-2026; alleen deze campagne, geen merkbesluit):**
+- Accentvolgorde: **volt #CCFF00 primair**, **oranje (pumpkin/tangerine) secundair**, royal/blauw en rood nauwelijks (alleen als klein detail, nooit als hoofdaccent).
+- Donker sjabloon: volt, zoals de algemene regel.
+- **Licht sjabloon: ook volt, géén royal.** De algemene regel "licht → royal" geldt voor Performance Days niet.
+- Contrastvoorwaarde op licht: volt alleen als vlak of vorm met zwarte omlijning of direct ernaast een zwart vlak; nooit als tekstkleur of voor kleine/onleesbare tekst. Tekst op volt is zwart.
+- CTA blijft altijd een witte of zwarte pill met chevron, nooit volt- of oranje-gevuld (zie CTA-knop, CLAUDE.md §4). Volt mag alleen als rand/chevron/accent náást de knop.
+- Buiten Performance Days blijft de algemene accentregel ongewijzigd. Dit raakt het Canva-document en Brand Core niet; wordt het een merkbesluit, dan volgt Brand Core via Lars.
 
 ---
 

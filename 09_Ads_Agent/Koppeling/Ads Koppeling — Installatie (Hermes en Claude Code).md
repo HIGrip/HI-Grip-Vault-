@@ -6,8 +6,6 @@ status: gebouwd en getest (49 tests geslaagd, nagebootste Meta-server); live Met
 
 # Ads Koppeling — Installatie (Hermes en Claude Code)
 
-> Map: [[09 Ads Agent — Index]]
-
 Dezelfde alleen-lezen Meta-koppeling draait in Hermes (profiel `ads`) en in Claude Code. Beschrijving, ontwerp en veiligheid: [[Ads Koppeling — Meta alleen-lezen]]. Dit is de installatiegids. In deze notitie staan geen tokens en geen paden van een specifieke computer.
 
 ## Bestanden (in de vault)
@@ -47,6 +45,8 @@ claude mcp add --scope user meta-ads -e META_AD_ACCOUNT_ID=act_581294088143656 -
 Controle: `claude mcp list` toont `meta-ads` als Connected. Zet nooit het token in deze configuratie.
 
 ## Agent en command in Claude Code
+Kant-en-klare bestanden staan in de vault (`09_Ads_Agent/Koppeling/Claude Code/`: agentbestand en commandbestand, als .txt zodat ze niet als vaultnotitie meetellen). Kopieer ze zonder wijziging naar de Claude Code-gebruikersmap (`agents/ads-agent.md` en `commands/ads-agent.md`). Een collega die alles door Claude laat doen gebruikt [[Ads Koppeling — Installatieprompt voor collega]].
+
 - Agent `ads-agent` (bestand `ads-agent.md` in de map `agents` van de Claude Code-gebruikersmap): alleen Read/Grep/Glob, vault lezen en de zes `meta-ads`-tools. Geen Bash, Write of Edit. Leest bij de start `01_Agent_Infrastructuur/Ads Agent/Agents Ads Agent.md` en `09_Ads_Agent/Profiel/Ads Profiel — SOUL.md`.
 - Command `/ads-agent <opdracht>` (bestand `ads-agent.md` in de map `commands`): start de agent als sub-agent met een zelfstandige briefing.
 
@@ -54,3 +54,5 @@ Controle: `claude mcp list` toont `meta-ads` als Connected. Zet nooit het token 
 - Rechten die het programma accepteert: `ads_read`, `public_profile`, `read_insights`, plus brede rechten (`ads_management`, `business_management`, `catalog_management`, `pages_manage_ads`, `pages_read_engagement`, `pages_show_list`). Onbekende extra rechten: het programma weigert (fail closed). Het kan hoe dan ook niets wijzigen. Aanbevolen: token met alleen `ads_read`.
 - Foutmelding "API access blocked (code 200)": Meta-kant (app niet Live of zonder Marketing API, of token zonder toegang tot dit account). Geen installatiefout.
 - Documentatieconflict over de parameters `action_report_time` en `use_unified_attribution_setting`: bewust niet ondersteund, zie [[2026-10-30-ads-agent-onderzoek]].
+
+> Map: [[09 Ads Agent — Index]]

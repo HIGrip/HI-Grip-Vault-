@@ -1,0 +1,18 @@
+---
+name: ads-agent
+version: 1.0.0
+description: Start de HÏ Grip Ads Agent (adviserend, read-only) als echte sub-agent. Gebruik voor analyse van Meta Ads-resultaten, verbetervoorstellen, testplannen en Ads Manager-checklists.
+argument-hint: "[opdracht]"
+---
+
+# Ads Agent
+
+Dispatch de sub-agent `ads-agent` via de Agent-tool met een zelfstandige briefing (hij start koud, zonder sessiegeschiedenis): de concrete vraag uit `$ARGUMENTS`, periode of campagne indien genoemd, en wat je als resultaat wilt zien.
+
+Regels:
+- De Ads Agent leest alleen via de `meta-ads`-koppeling (alleen-lezen). Geen content maken, niets uitvoeren; alles wat live gaat of geld kost doet een mens.
+- Controleer zijn antwoord op bron en peildatum van de cijfers; een samenvatting is niet per se wat er echt staat.
+- Geef conclusie, onzekerheden en een voorstel terug aan Lars. Besluiten zijn voor Lars of Timo.
+- Moet er een rapport in de vault, laat dat via Denzel/de Stafchef vastleggen in `02_Dashboard/`.
+
+Opdracht: $ARGUMENTS

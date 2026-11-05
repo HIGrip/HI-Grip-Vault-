@@ -9,7 +9,7 @@ status: gebouwd, getest (40 tests, nagebootste Meta-server), code-QA ronde 1 COR
 Besluit Lars (03-11-2026): de Ads Agent leest Meta Ads-cijfers en -instellingen zelf via een MCP-koppeling, in plaats van handmatige CSV-exports. Dit is de aparte menselijke vrijgave voor toegang tot Meta-data die [[Agents Ads Agent]] en [[2026-10-30-ads-agent-onderzoek]] vragen. Het blijft adviserend: de koppeling kan niets wijzigen.
 
 ## Wat het is
-Een klein Python-programma zonder externe afhankelijkheden: `C:\Users\lars\AppData\Local\hermes\scripts\meta_ads_readonly_mcp.py`, met tests in `test_meta_ads_readonly_mcp.py` (25 geslaagd, 0 mislukt, nagebootste Meta-server). Het praat MCP over stdin/stdout met Hermes.
+Een klein Python-programma zonder externe afhankelijkheden: `09_Ads_Agent/Koppeling/meta_ads_readonly_mcp.py` (vault-pad, gedeeld met het hele team), met tests in `09_Ads_Agent/Koppeling/test_meta_ads_readonly_mcp.py` (25 geslaagd, 0 mislukt, nagebootste Meta-server). Het praat MCP over stdin/stdout met Hermes.
 
 ## Zes alleen-lees-tools
 `meta_account_info` · `meta_campaigns` · `meta_adsets` · `meta_ads` · `meta_insights` (cijfers per niveau, periode en optionele uitsplitsing) · `meta_pixels` (kan extra rechten vragen).

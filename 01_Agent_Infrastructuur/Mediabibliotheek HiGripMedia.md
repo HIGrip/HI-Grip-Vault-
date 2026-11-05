@@ -51,3 +51,5 @@ bijgewerkt: 2026-11-05
 ## Verwijzingen
 
 [[Inspiratie Beeld-stijlanalyse]] · [[Inspiratie Video-stijlanalyse]] · [[Editing Stijl Gids Video]] · [[07 Design Agent — Index]]
+
+> Map: [[01 Agent Infrastructuur — Index]]

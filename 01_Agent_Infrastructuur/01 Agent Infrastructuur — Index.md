@@ -14,6 +14,9 @@ Terug naar [[Home]].
 
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
+### Hoofdmap
+- [[Mediabibliotheek HiGripMedia]]
+
 ### Ads Agent
 - [[Agents Ads Agent]]
 

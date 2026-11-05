@@ -41,10 +41,10 @@ De vraag was een volledige snelheids- en code-audit van de homepage, mobiel en d
 - [ ] P2 · Staande hero-uitsnede voor mobiel uploaden als image_mobile in hp-01 en de hero opnieuw comprimeren (PSI: 122 KiB te besparen)
 - [ ] P2 · Besluit: vaste prijzen in de hp-02-kaarten leegmaken, zodat de live productprijs getoond wordt
 - [ ] P2 · Na het live zetten PSI mobiel en desktop opnieuw draaien en vergelijken met deze nulmeting (score mobiel 76, desktop 60)
-- [ ] P3 · Poppins alleen via Shopify font_face laden en de Google Fonts-link schrappen
+- [x] P3 · Poppins alleen via Shopify font_face laden en de Google Fonts-link schrappen
 - [x] P3 · Betaaliconen in de footer als lazy img in plaats van 9 inline SVG's (19,5 KB per pagina)
-- [ ] P3 · Lege staat van de zoekmodal pas bij openen vullen (74 DOM-nodes en 13,8 KB per pagina)
-- [ ] P3 · Headerscript in theme.liquid:129-131 omzetten naar een ResizeObserver (43 tot 77 ms reflow)
+- [x] P3 · Lege staat van de zoekmodal pas bij openen vullen (74 DOM-nodes en 13,8 KB per pagina)
+- [x] P3 · Headerscript in theme.liquid:129-131 omzetten naar een ResizeObserver (43 tot 77 ms reflow)
 - [ ] P3 · Besluit: ongebruikte Horizon-secties quick-order-list, product-hotspots en layered-slideshow verwijderen, met de scripttag in scripts.liquid
 - [ ] P3 · Mobiele merkvideo lichter coderen (nu 3.714 KB) of de lichte versie standaard maken op mobiel
 - [ ] P3 · Dode code opruimen: chat-drawer-render, hpLightbox, kleurgolf in hp-07, dode hp-home.css-klassen, 31 dode eigen secties, dode snippets en hp-urltest.webp

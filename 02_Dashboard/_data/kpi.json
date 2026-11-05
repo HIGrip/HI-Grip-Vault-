@@ -1,5 +1,5 @@
 {
- "bijgewerkt": "2026-11-04T17:03:04+01:00",
+ "bijgewerkt": "2026-11-05T04:25:39+01:00",
  "status": "ok",
  "fouten": {},
  "gsc_laatste_dag": "2026-11-02",
@@ -161,9 +161,9 @@
   {
    "week": "2026-W45",
    "start": "2026-11-02",
-   "sessies": 61,
-   "sessies_nl": 31,
-   "gebruikers": 54,
+   "sessies": 85,
+   "sessies_nl": 39,
+   "gebruikers": 76,
    "aankopen": 0,
    "omzet": 0.0,
    "conversie": 0.0,

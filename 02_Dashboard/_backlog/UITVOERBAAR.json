@@ -2735,6 +2735,12 @@
   "wat_claude_doet": "de twee CSS-wijzigingen (geen z-index, preserve-3d) doorvoeren in de bron van de homepage-build in de vault",
   "wat_jij_doet": "controleren en meenemen in de volgende build"
  },
+ "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
+  "beoordeeld": "2026-11-05",
+  "claude": "deels",
+  "wat_claude_doet": "code-vergelijking tussen de oude en nieuwe winkelwagen-drawer in de theme-bestanden",
+  "wat_jij_doet": "de daadwerkelijke klik-test op telefoon en desktop, inclusief kortingscode en de deel-link HI30"
+ },
  "2026-11-03-sportretail-nederland#99ac7353": {
   "beoordeeld": "2026-11-04",
   "claude": "ja",
@@ -2746,6 +2752,18 @@
   "claude": "ja",
   "wat_claude_doet": "Bever met contactgegevens toevoegen aan de B2B-lijst voor de Performance Ski Socks",
   "wat_jij_doet": "beoordelen en eventueel contact leggen"
+ },
+ "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
+  "beoordeeld": "2026-11-05",
+  "claude": "ja",
+  "wat_claude_doet": "een doelsectie (PageSpeed mobiel 80+, TBT onder 300ms, lab-LCP onder 2,5s, velddata groen) toevoegen aan de werkthema-notitie",
+  "wat_jij_doet": "concept controleren en akkoord geven"
+ },
+ "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
+  "beoordeeld": "2026-11-05",
+  "claude": "ja",
+  "wat_claude_doet": "per Section Store/fd-product-groups/essential-a-b-testing-app vastleggen of hij bij openen moet laden, kan wachten tot interactie of weg kan, met Upfront als referentie, in de werkthema-notitie",
+  "wat_jij_doet": "concept controleren en akkoord geven"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
@@ -2794,6 +2812,12 @@
   "claude": "deels",
   "wat_claude_doet": "voorstel en stappen om /blogs/intern te unpublishen of noindex te zetten",
   "wat_jij_doet": "het artikel unpublishen of noindex toevoegen in Shopify"
+ },
+ "backlog#380ede66": {
+  "beoordeeld": "2026-11-05",
+  "claude": "deels",
+  "wat_claude_doet": "onderzoek naar de Shopify Fall '26 Edition-wijzigingen en een catalogus-check in Shopify, voorstel voor het agent-kennisbestand in de vault",
+  "wat_jij_doet": "beoordelen en het kennisbestand definitief bijwerken, besluiten over eventuele catalogusacties"
  },
  "backlog#3f65e547": {
   "beoordeeld": "2026-10-15",

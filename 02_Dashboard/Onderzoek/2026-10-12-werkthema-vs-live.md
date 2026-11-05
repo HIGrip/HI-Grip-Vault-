@@ -29,7 +29,7 @@ Werkthema "AI website workspace 2.0" (`201133490503`, laatst gewijzigd 11-10 12:
 
 ## Acties
 - [ ] P2 · Werkthema bijwerken met wat alleen live staat (bronnen en FAQ-link op de sportpagina's padel en voetbal, knopinstellingen van de testimonials-sectie, taalwissel-app T-Lab, primaire knoprand 1) zodat een push niets live wegschrijft
-- [ ] P2 · Prijzen in het werkthema rechtzetten vóór een push: "Vanaf €13,49" in `templates/collection.json` en het producttrio (live 1-pack €14,95), en de 2.0 als €14,95 met doorgestreept €17,95 in het producttrio en `page.shop.json` (live €17,95 zonder korting)
+- [x] P2 · Prijzen in het werkthema rechtzetten vóór een push: "Vanaf €13,49" in `templates/collection.json` en het producttrio (live 1-pack €14,95), en de 2.0 als €14,95 met doorgestreept €17,95 in het producttrio en `page.shop.json` (live €17,95 zonder korting)
 
 ## Bevindingen
 

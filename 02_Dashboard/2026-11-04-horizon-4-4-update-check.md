@@ -34,7 +34,7 @@ Conclusie: de update is bruikbaar, maar **niet zoals hij nu is**. Eerst moeten d
 - [x] P1 · Update-kopie: producttitel op desktop-PDP breekt midden in een woord (PERFORMANC/E); woordafbreking of titelgrootte herstellen
 - [x] P2 · Update-kopie: kleinere productfoto op desktop-PDP (823 naar 729 px) beoordelen; nieuwe img-breedteregel of galerijlogica van 4.4.0 terugdraaien als het slechter oogt
 - [x] P2 · Besluit: update-kopie live zetten nadat de P1-punten zijn opgelost en getest
-- [ ] P3 · Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken
+- [x] P3 · Instelling Shop Pay-betaalopties (voorheen installments) in de nieuwe themainstellingen bekijken
 
 ## Kansen
 - [K] Checkout wacht in 4.4.0 tot een aantalwijziging in de winkelwagen is opgeslagen, wat een stille checkoutfout op iOS Safari voorkomt · impact: middel · bewijs: 2026-11-04-horizon-4-4-update-check · stap: na het herstellen van de templates de update live zetten

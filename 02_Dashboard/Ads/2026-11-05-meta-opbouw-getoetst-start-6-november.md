@@ -1,43 +1,42 @@
 ---
 id: 2026-11-05-meta-opbouw-getoetst-start-6-november
-titel: "Meta-opbouw getoetst aan langlopende ads, start 6 november"
-kerntitel: "Langlopers leunen op klantwoorden en multipacks: start 6 november met 4 concepten"
+titel: "Meta-opbouw getoetst aan langlopende ads, start 7 november"
+kerntitel: "Langlopers leunen op klantwoorden en multipacks: start 7 november met €20 per dag"
 datum: 2026-11-05
 bron: los
 routine: ""
 categorie: Social
 status: nieuw
 prioriteit: P1
-samenvatting: "De campagneopbouw houdt stand, de creatieve mix niet: langlopende ads in sokken en sportartikelen leunen op klantwoorden, multipacks en makers, niet op wetenschappelijke claims. Start op 6 november met 4 concepten per sport, alles tegelijk live, 14 dagen niet aanraken en de winnaars meenemen naar de Performance Days."
+samenvatting: "De campagneopbouw houdt stand, de creatieve mix niet: langlopende ads in sokken en sportartikelen leunen op klantwoorden, multipacks en makers, niet op wetenschappelijke claims. Start op 7 november met €20 per dag en 3 concepten per sport, alles tegelijk live, 14 dagen niet aanraken en de winnaars meenemen naar de Performance Days."
 gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-performance-days-marketingplan, 2026-11-04-ads-resultaten-verbeteringen, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads]
 vervangt: [2026-11-05-meta-plan-35-euro-per-dag]
 bronbestand: ""
 deadline: 2026-11-06
 ---
-# Meta-opbouw getoetst aan langlopende ads, start 6 november
+# Meta-opbouw getoetst aan langlopende ads, start 7 november
 
 > Map: [[Waar staat wat]]
 
 ## In het kort
-Timo besloot op 6 november te starten en vroeg of dit de beste opbouw is, getoetst aan onderzoek en langlopende ads in dezelfde sector. De campagneopbouw houdt stand: één verkoopcampagne, twee sets en 14 dagen rust. De creatieve mix moet anders. Ads die maanden blijven draaien gebruiken klantwoorden, multipacks en makers, en geen wetenschappelijke claims.
+Timo vroeg of dit de beste opbouw is, getoetst aan onderzoek en langlopende ads in dezelfde sector. Daarna besloot hij lager te testen, met livegang op 7 november om 00:01. De campagneopbouw houdt stand: één verkoopcampagne, twee sets en 14 dagen rust. De creatieve mix moet anders. Ads die maanden blijven draaien gebruiken klantwoorden, multipacks en makers, en geen wetenschappelijke claims.
 
-Twee eerdere blokkades kloppen niet. Het 3-pack 2.0 van €44,95 staat al live als bundelblok op de productpagina, en alle maten zijn te koop. Shopify volgt de voorraad 2.0 niet, dus de −101 zegt niets over wat er echt ligt. De start op 6 november geeft 3 weken data vóór de Performance Days. Vervangt het tijdpad van [[2026-11-05-meta-plan-35-euro-per-dag]]; de bevindingen daar blijven gelden.
+Twee eerdere blokkades kloppen niet. Het 3-pack 2.0 van €44,95 staat al live als bundelblok op de productpagina, en alle maten zijn te koop. Shopify volgt de voorraad 2.0 niet, dus de −101 zegt niets over wat er echt ligt. De start op 7 november geeft 20 dagen data vóór de Performance Days. Vervangt het tijdpad van [[2026-11-05-meta-plan-35-euro-per-dag]]; de bevindingen daar blijven gelden.
 
 ## Kerncijfers
 - **787** · Dagen actief, oudste Everstride-static · klantquote plus multipack
 - **16 van 29** · Toonaangevende resultaten "compression socks" GB van Everstride · 5 nov
-- **3 weken** · Data vóór de Performance Days bij start op 6 november
-- **±84** · Paren die in het beste scenario per maand nodig zijn · 28 aankopen × 3
+- **20 dagen** · Data vóór de Performance Days bij start op 7 november
+- **±48** · Paren per maand in het beste scenario bij €20 per dag · 16 aankopen × 3
 
 ## Acties
 - [ ] P1 · Voorraad 2.0 vandaag fysiek tellen: Shopify volgt de voorraad niet en stopt de verkoop dus niet bij nul
 - [ ] P1 · Vóór livegang in Events Manager testen of bekijken, winkelwagen en aankoop binnenkomen zonder dubbeltelling, ook via de Conversions API
-- [ ] P1 · Campagne door een mens opzetten met start 6 november, ads vanavond insturen omdat de controle door Meta tijd kost
-- [ ] P1 · 4 concepten per sport klaarzetten in 4:5 en 9:16: situatie, klantwoord, aanbod, bewijs
+- [ ] P1 · Campagne door een mens opzetten op €20 per dag met start 7 november 00:01, ads op 6 november insturen omdat de controle door Meta tijd kost
+- [ ] P1 · 3 concepten per sport klaarzetten in 4:5 en 9:16: situatie, klantwoord, aanbod
 - [ ] P1 · Toestemming regelen voor de klantquote in de ad, of een andere echte review kiezen
-- [ ] P1 · Besluit: is €35 een gemiddelde per dag of een harde grens per dag
-- [ ] P2 · Op 20 november evalueren: per sport beslissen of de sets apart blijven of samengaan
-- [ ] P2 · Ronde 2 op 20 november: spelersverhaal en partnership-ad met één voetballer en één rugbyspeler, na controle van de rechten
+- [ ] P2 · Op 21 november evalueren: budget, ronde 2 en per sport beslissen of de sets apart blijven
+- [ ] P2 · Ronde 2 op 21 november: bewijs-ad, spelersverhaal en partnership-ad met één voetballer en één rugbyspeler, na controle van de rechten
 - [ ] P2 · "Geen blaren" op de productpagina 2.0 toetsen aan de claimregels vóór er betaald verkeer naartoe gaat
 - [ ] P2 · Besluit: wat zien kopers van het 3-pack van vlak voor 27 november zodra het 1+1-aanbod live gaat
 
@@ -72,13 +71,17 @@ Patroon: één herkenbaar probleem, een echte stem en een multipack met een lage
 ### Meting
 Vóór een cookiekeuze ging er op de productpagina geen verzoek naar Meta. Dat past bij een pixel die wacht op toestemming. Het kan dus ook een deel verklaren van 288 klikken tegen 116 paginaweergaven, naast product browsing. Beide zijn hypotheses. De cookiebanner is niet geaccepteerd, dus of de pixel daarna goed vuurt, is niet getest.
 
-### Plan vanaf 6 november
-- Eén verkoopcampagne, leerdoel winkelwagen, set voetbal €20 (18 tot 54), set rugby €15 (18 tot 44, interesse rugby), oorspronkelijke doelgroepopties. Ad klikt naar de productpagina 2.0 met het 3-pack.
-- 4 concepten per sport, alles tegelijk live: situatie, klantwoord, aanbod, bewijs. Een nieuwe ad toevoegen kan het leren opnieuw starten (uit Meta's regels over grote wijzigingen, hier niet opnieuw gecontroleerd), dus nieuwe concepten pas in ronde 2.
-- Bewijs blijft als uitdager, omdat dit de eigen onderscheidende claim is, ook al heeft die in de steekproef geen langloper.
-- Stopregels blijven gelijk aan [[2026-11-05-meta-plan-35-euro-per-dag]].
-- Tijdpad: 6 tot en met 19 november test, 20 november evaluatie en ronde 2, 20 tot en met 26 november winnaars, 27 tot en met 30 november Performance Days met rugby als hoofdhoek, daarna opnieuw beslissen, vanaf 21 december budget aanpassen voor de winterstop.
-- Voorraad: het beste scenario vraagt ±84 paar per maand.
+### Plan vanaf 7 november (bijgesteld op 5 november)
+Timo wil niet dat het budget meteen op gaat en koos voor lager testen. Dat beperkt het verlies, maar levert minder signaal. Daarom gaat ook het aantal ads omlaag: bij €280 in 14 dagen krijgt elke ad gemiddeld ±€47 bij 6 ads, tegen ±€35 bij 8 ads.
+- Eén verkoopcampagne, leerdoel winkelwagen, set voetbal €10 (18 tot 54), set rugby €10 (18 tot 44, interesse rugby), oorspronkelijke doelgroepopties. Ad klikt naar de productpagina 2.0 met het 3-pack.
+- €20 per dag blijft met de ruimte van Meta onder ±€35 op één dag en onder €140 per week. In 14 dagen is dat maximaal €280, tegen €490 bij €35.
+- 3 concepten per sport, alles tegelijk live: situatie, klantwoord, aanbod. Bewijs schuift naar ronde 2, omdat het in de steekproef geen langloper had. Een nieuwe ad toevoegen kan het leren opnieuw starten (uit Meta's regels over grote wijzigingen, hier niet opnieuw gecontroleerd).
+- Stopregels per ad blijven: uit na €25 zonder winkelwagen of €50 zonder aankoop.
+- Nieuwe rem voor de hele campagne: minder dan 3 winkelwagens samen na €140: stop en controleer meting, pagina en ads vóór er meer geld in gaat. Dit vervangt de oude regel per set, want bij €10 per set zijn de aantallen daarvoor te klein.
+- Verwachting bij €280 (aannames, geen prognose): ±8 tot 16 winkelwagens en ±1 tot 7 aankopen, tegen ±12 voor quitte. Dat geeft richting per ad, geen bewijs per sport.
+- Tijdpad: 7 tot en met 20 november test (7 november is een zaterdag), 21 november evaluatie en ronde 2, 21 tot en met 26 november winnaars, 27 tot en met 30 november Performance Days met rugby als hoofdhoek, daarna opnieuw beslissen, vanaf 21 december budget aanpassen voor de winterstop.
+- Opschalen alleen als kosten per aankoop rond ±€24,50 uitkomen. Het budget voor de Performance Days is een apart besluit.
+- Voorraad: het beste scenario vraagt ±48 paar per maand.
 
 ## Wat niet lukte
 - Ads Manager vraagt om inloggen: geen uitgaven of CTR van de eigen test, en geen controle van product browsing.

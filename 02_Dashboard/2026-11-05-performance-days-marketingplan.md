@@ -9,7 +9,7 @@ categorie: "CRO"
 status: "nieuw"
 prioriteit: "P1"
 samenvatting: "De Performance Days (1+1: 2 kopen = 2 gratis, 3 kopen = 3 gratis) zijn nog niet startklaar: de scope is beslist, maar interne rendementsverificatie (volgens Lars winstgevend), verzendregel, beleid en nieuwe-klantmeting zijn nog open. Het grootste concrete rekenrisico in het aanbod is dat een instapmandje van 4 paar 1.0 (€29,90) op basis van huidige prijzen en drempel onder de €35-verzenddrempel valt en dan €4,50 verzending betaalt; dit is nog niet in Shopify getest."
-gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-meta-plan-35-euro-per-dag]
+gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november]
 vervangt: []
 bronbestand: "C:\\Users\\lars\\Documents\\ObsidianVault\\08_Operations_Agent\\2026-11-05-briefing-performance-days.md"
 deadline: "2026-11-19"

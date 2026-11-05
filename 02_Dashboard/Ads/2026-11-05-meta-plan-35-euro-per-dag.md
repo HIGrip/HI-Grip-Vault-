@@ -6,10 +6,10 @@ datum: 2026-11-05
 bron: los
 routine: ""
 categorie: Social
-status: nieuw
+status: verwerkt
 prioriteit: P1
 samenvatting: "De Ad Library toont het bereik van de eigen test: 19 ads op NL, 18 tot 65+, meerdere keren opnieuw gestart. De grootste rugby-ad bereikte 58% vrouwen en 42% 55-plussers. Tien TikToks en de langstlopende ads wijzen naar situatie-pijn, eenvoud en echte verhalen. Het plan: twee sets (€20 voetbal, €15 rugby), harde leeftijdsgrens, 5 concepten, 14 dagen niet aanraken. Ook het goede scenario draait op de eerste bestelling niet break-even."
-gerelateerd: [2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-performance-days-marketingplan, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads]
+gerelateerd: [2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-performance-days-marketingplan, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-opbouw-getoetst-start-6-november]
 vervangt: [2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]
 bronbestand: ""
 deadline: ""

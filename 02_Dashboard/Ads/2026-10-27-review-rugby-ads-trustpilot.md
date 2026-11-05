@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "In de Canva-versie van paar 4 (rugby) verschillen A en B in veel meer dan de boodschap: kop, tekstvolume, CTA-positie en sokpositie. Daardoor meet de test 'korte slogan tegen drukke lijst' in plaats van 'beste tegen features'. Trustpilot 4,6 past in beide varianten op dezelfde plek boven de kop, maar volgens de merkrichtlijnen van Trustpilot alleen met een betaald abonnement, het logo, het woord TrustScore en het aantal reviews."
-gerelateerd: [2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-plan-35-euro-per-dag]
+gerelateerd: [2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Downloads\\HÏ Grip ads AB-test — 4 paren.zip"
 deadline: ""

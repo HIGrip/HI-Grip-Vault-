@@ -172,6 +172,13 @@ Beveiliging: geen lekken gevonden. Shopify escapet regel-eigenschappen al (getes
 
 Hertest: 1 tot en met 6 paar, gemengde maten, wit, 1.0, TENNIS20, de winkelwagenpagina en de productbundels gaven de juiste bedragen. Na de laatste fix is +1 vanaf 4 paar getest in de lade (naar 5-pack, €69,95). De route zonder pack-eigenschap is getest op de winkelwagen-API (2 los naar 3-pack, €44,95), niet met een klik, omdat de verborgen browser de pagina niet meer tekende. Live hing daar op dezelfde manier, dus dat komt niet door de code.
 
+## Feedback na de audit
+Verwerkt in het werkthema, niet live en niet op het canvas:
+- Hoeken van 8px naar 12px. De hoofdknop op de productpagina blijft 8px, dus de winkelwagen wijkt daar nu iets van af.
+- De sterren liepen scheef: de groene laag werd door een breedtelimiet kleiner geschaald dan de grijze. Nu is het één laag, met de vijfde ster op 60%.
+- De lade opent nu ook op laptop boven de pagina in plaats van de pagina opzij te duwen. De pagina dimt 55%, ook op mobiel, waar dat 15% was. Klikken naast de lade sluit hem. Andere lades van het thema blijven zoals ze waren.
+- De lade blijft niet meer open staan na het wisselen van pagina op laptop.
+
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.
 - Bij Allbirds is alleen de lege lade gezien. Bij Stance en Trusox alleen de winkelwagenpagina, niet een lade.

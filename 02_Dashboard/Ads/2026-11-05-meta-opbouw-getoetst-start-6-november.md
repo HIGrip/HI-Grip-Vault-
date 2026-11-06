@@ -105,7 +105,7 @@ Timo wees erop dat alleen rugby te weinig soorten ads test. Dat klopt, dus het a
 - **Funnel:** geen aparte funnelcampagnes op dit budget. De funnel zit in de ads en in de tijd: 7 tot en met 20 november koud, 27 tot en met 30 november warm publiek met het 1+1-aanbod. Het budget daarvoor blijft een apart besluit.
 - **Verkoop, geen bereik:** de grootste ad ging eerder naar 55-plussers en vrouwen toen er vrijwel geen aankoopsignaal was. Een bereikdoel versterkt dat risico.
 - **Stopregels per ad vervallen:** bij de scenario's stopt uit na €25 zonder winkelwagen een goede ad in 26% tot 69% van de gevallen door toeval, uit na €50 zonder aankoop in 26% tot 80%. Nieuw: geen enkele ad uit vóór 14 november, behalve bij een fout of afkeuring. De rem van minder dan 3 winkelwagens na €140 blijft.
-- **Beeld:** vier echte clubshoots zijn voetbal. Rugby heeft geen eigen shoot, alleen AI-beelden in de Drive en een stockachtige foto in de vault. Gebruik daarom in beide sporten een productbeeld, zoals de sok vóór het woord RUGBY uit ad 4A.
+- **Beeld:** vier echte clubshoots zijn voetbal. Rugby heeft geen eigen shoot, alleen AI-beelden in de Drive en een stockachtige foto in de vault. De soort situatie krijgt een actiebeeld vanaf de taille, zonder gezicht en zonder vreemd merk: voor rugby een uitsnede van de bestaande Instagram-post, voor voetbal een shootfoto met toestemming van de club. Klantwoord, aanbod en vergelijking blijven productbeelden. Actie tegen product is niet getest.
 - **Afgewezen voor nu:** aparte retargeting (groep te klein), flexibel advertentieformaat (maakt onduidelijk welke soort wint), Meta's eigen creatietest (gedrag volgens Jon Loomer wisselend), bereikcampagne.
 
 ## Wat niet lukte

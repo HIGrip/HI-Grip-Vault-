@@ -8,7 +8,7 @@ routine: ""
 categorie: Techniek
 status: nieuw
 prioriteit: P1
-samenvatting: "De lade op live (thema 203954520391) is weer de Section Store-winkelwagen, nu zwart met volt. In het thema stond hij op 4-11 nog uit, hij is daarna weer aangezet. Het script laadt op elke pagina zonder te wachten op interactie: 99 KB en ~1,1 s rekentijd op een vertraagde telefoon, bovenop de eigen lade die ook nog in de pagina staat. De lade opent wel snel (129 ms). Stijl: Engelse teksten (Subtotal, Checkout) en een afrekenknop gevuld met volt."
+samenvatting: "Update 6-11: op opdracht staat de eigen lade live en is block-cart uit; 3-pack en kortingscode live getest. Oorspronkelijke bevinding: de lade op live (thema 203954520391) is weer de Section Store-winkelwagen, nu zwart met volt. In het thema stond hij op 4-11 nog uit, hij is daarna weer aangezet. Het script laadt op elke pagina zonder te wachten op interactie: 99 KB en ~1,1 s rekentijd op een vertraagde telefoon, bovenop de eigen lade die ook nog in de pagina staat. De lade opent wel snel (129 ms). Stijl: Engelse teksten (Subtotal, Checkout) en een afrekenknop gevuld met volt."
 gerelateerd: [2026-11-03-snelheid-werkthema-02, 2026-11-03-snelheid-nulmeting-alle-paginas]
 vervangt: []
 bronbestand: ""
@@ -30,7 +30,7 @@ Daarmee is de winkelwagenwinst uit [[2026-11-03-snelheid-werkthema-02]] weer weg
 - **129 ms** · lade open na klik (één meting, snelle laptop)
 
 ## Acties
-- [ ] P1 · Besluit livegang: eigen lade in zwart met volt uit werkthema 204029296967 naar live en block-cart uit (3-pack en kortingscode zijn getest op 6-11)
+- [ ] P1 · Eigen lade staat sinds 6-11 live: eerste toevoeging aan een lege wagen op een echte telefoon nakijken (duur overgang "leeg" naar gevuld)
 - [ ] P3 · Codes die niet samengaan met de pakketkorting (zoals TENNIS20) vervangen die korting; op een 5-pack zou 20% op €89,75 uitkomen op €71,80, duurder dan de pakketprijs van €69,95 (berekend, niet getest)
 - [ ] P2 · Besluit: knoppen in de lade volt laten of naar wit op zwart (merkregel CTA); één variabele in hi-cart.css
 - [ ] P3 · Pagina /cart: kop "Cart" naar Nederlands; prijs staat dubbel in de regel (onder de titel en rechts)
@@ -85,6 +85,14 @@ Bedragen uit `/cart.js`, gelijk aan wat de lade toont. Ze worden server-side ber
 - Bij de eerste toevoeging aan een lege wagen stond de lade open met de tekst "leeg" tot het herladen van de inhoud klaar was. Dat is de overgang `fill-cart-drawer` van Horizon, die in een zichtbaar venster een fractie van een seconde duurt. In deze test lag het venster verborgen, dus de echte duur is niet gemeten.
 - HI30 is geen geldige code: het is het voorvoegsel van deellinkcodes (`HI30-XXXXXXXX`). De eerdere conclusie "werkt niet op dit product" was fout.
 - Testwagen en codes zijn verwijderd. Op live is niets gewijzigd.
+
+### 6. Livegang (6-11, op opdracht)
+Live-thema `203954520391` met `theme list --role live` bevestigd en de bestanden eerst opgehaald. Op live was niets afgeweken van de verwachte basis.
+- Gepusht naar live: `assets/hi-cart.css`, `snippets/cart-summary.liquid`, `snippets/hi-cart-extras.liquid`, `config/settings_data.json`.
+- In `settings_data.json` is alleen `disabled` van `block-cart` gewijzigd, op de actuele live-versie.
+- Live getest op de productpagina: geen `block-cart` meer in de HTML of bij de geladen bestanden. 3-pack €44,95 met de bundel-eigenschap, met TTL10 €40,46. Testwagen en code verwijderd.
+- Terugdraaien: `disabled` van `block-cart` op false zet de Section Store-lade weer aan. De app-instellingen zijn niet aangeraakt.
+- De volt-knoppen staan dus live; dat besluit (P2) blijft open.
 
 ## Wat niet lukte
 - Kortingscode en lade zijn in deze test via de knoppen in de pagina bediend (script), omdat muisklikken in het verborgen venster verschoven. Openen via het mandje is op 5-11 getest.

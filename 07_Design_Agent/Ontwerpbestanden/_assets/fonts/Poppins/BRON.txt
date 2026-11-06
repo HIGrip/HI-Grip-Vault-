@@ -1,0 +1,15 @@
+Poppins: gedeelde fontbestanden voor de HTML-ontwerpen.
+Bron: Google Fonts, repository google/fonts, ofl/poppins.
+Broncommit: 24ddc1f324cac5d9f5aedca126d298f56e3f1640
+Licentie: zie OFL.txt (ongewijzigd meegeleverd).
+Toevoegen aan deze repo goedgekeurd door Lars op 2026-11-06.
+Geen installatie nodig; HTML gebruikt relatieve verwijzingen.
+
+Bestand | gewicht | SHA-256
+Poppins-Light.ttf | 300 | 650ba57fa99d12ec40c31ccfb680be656be4497fbe14164617d67e32ffe9cd46
+Poppins-Regular.ttf | 400 | 7e65201e9b79159e2300267cc885e16c8dcef2424cdfa09a29bfb0980a94a7ba
+Poppins-Medium.ttf | 500 | 90373e7d838d32468438fc3e152dca0bdb12edcab99ea639f158790b1ba1fd05
+Poppins-SemiBold.ttf | 600 | d3bf1bdaf0550e83da9ac0b1d1d9fe6db086835a83aa28578e609a394b9a0286
+Poppins-Bold.ttf | 700 | 983676516167748b74de6f4771fb384c664fd913acb8b471122ecacf5da5ea6c
+Poppins-ExtraBold.ttf | 800 | f2ab17c1a63a0ecc12c2461848fc8a469395e3cd2d641803e889c643d9f958e1
+Poppins-Black.ttf | 900 | d82aaaf98a9283f9a8edd24e51173337d8eaf09e25cd3d98831f8ec8461748a1

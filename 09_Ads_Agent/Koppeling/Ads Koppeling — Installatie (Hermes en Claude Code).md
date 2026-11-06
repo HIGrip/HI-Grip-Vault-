@@ -1,7 +1,7 @@
 ---
 type: koppeling
-bijgewerkt: 2026-11-05
-status: gebouwd en getest (49 tests geslaagd, nagebootste Meta-server); live Meta-aanroep geeft op 05-11-2026 nog "API access blocked (code 200)" (Meta-kant: app/token/rechten); geen token in de vault
+bijgewerkt: 2026-11-06
+status: gebouwd en getest (49 tests geslaagd, nagebootste Meta-server); live `meta_account_info` via Claude Code geeft op 06-11-2026 echte accountdata; overige vijf tools en Hermes live nog niet getest; geen token in de vault
 ---
 
 # Ads Koppeling — Installatie (Hermes en Claude Code)
@@ -19,8 +19,9 @@ Dezelfde alleen-lezen Meta-koppeling draait in Hermes (profiel `ads`) en in Clau
 
 ## Token zetten (elke gebruiker zelf, in een eigen terminal)
 Een beheerder maakt in Meta Business Settings een token voor de systeemgebruiker met alleen leesrechten (`ads_read`). Daarna, in de eigen terminal van die gebruiker:
-`cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:<token>`
-Controle zonder de waarde te tonen: `cmdkey /list` en zoek op `HIGRIP_META`.
+`cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:HIER_JE_TOKEN`
+Vervang `HIER_JE_TOKEN` door het token, zonder haakjes, spaties of aanhalingstekens. Een Meta-token begint met `EAA`.
+Controle zonder de waarde te tonen: `cmdkey /list` en zoek op `HIGRIP_META`. Dit toont alleen dat de regel bestaat, niet of de inhoud klopt. Doe daarom daarna de test met `meta_account_info`.
 
 ## Zo verwijzen Hermes en Claude Code naar het programma
 Het programma draait rechtstreeks uit de vault (`<vault>/09_Ads_Agent/Koppeling/meta_ads_readonly_mcp.py`, waarbij `<vault>` de plek is waar de vault op die computer staat). Er is dus één bron van waarheid en geen losse kopie. Alleen de eigen configuratie van elke computer (buiten de vault) bevat het volledige pad. Zet altijd `META_MCP_LOG` op een logbestand buiten de vault, anders schrijft het programma het log naast zichzelf in de vault.
@@ -52,6 +53,7 @@ Kant-en-klare bestanden staan in de vault (`09_Ads_Agent/Koppeling/Claude Code/`
 
 ## Bekend
 - Rechten die het programma accepteert: `ads_read`, `public_profile`, `read_insights`, plus brede rechten (`ads_management`, `business_management`, `catalog_management`, `pages_manage_ads`, `pages_read_engagement`, `pages_show_list`). Onbekende extra rechten: het programma weigert (fail closed). Het kan hoe dan ook niets wijzigen. Aanbevolen: token met alleen `ads_read`.
+- Foutmelding "Invalid OAuth access token - Cannot parse access token (code 190)": de opgeslagen waarde is onleesbaar voor Meta. Op 06-11-2026 was de oorzaak dat de haakjes `<` en `>` uit het oude voorbeeld mee waren opgeslagen. Sla het token opnieuw op volgens "Token zetten"; dit hoeft niet bij Meta opgelost te worden.
 - Foutmelding "API access blocked (code 200)": Meta-kant (app niet Live of zonder Marketing API, of token zonder toegang tot dit account). Geen installatiefout.
 - Documentatieconflict over de parameters `action_report_time` en `use_unified_attribution_setting`: bewust niet ondersteund, zie [[2026-10-30-ads-agent-onderzoek]].
 

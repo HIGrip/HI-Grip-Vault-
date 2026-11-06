@@ -1,7 +1,7 @@
 ---
 type: koppeling
-bijgewerkt: 2026-11-03
-status: gebouwd, getest (40 tests, nagebootste Meta-server), code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID, WACHT OP TOKEN van Lars; live accountkoppeling niet actief (geen token ingelezen, echte accountdata niet getest; stand 05-11-2026; Ads-profiel zelf draait wel alleen-lezen via kanban)
+bijgewerkt: 2026-11-06
+status: gebouwd, getest met nagebootste Meta-server, code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID; token staat in de Windows-referentiekluis; live `meta_account_info` via Claude Code geeft op 06-11-2026 echte accountdata; overige vijf tools en de koppeling in Hermes live nog niet getest (Ads-profiel draait alleen-lezen via kanban)
 ---
 
 # Ads Koppeling — Meta alleen-lezen (MCP)
@@ -28,7 +28,7 @@ Een klein Python-programma zonder externe afhankelijkheden: `09_Ads_Agent/Koppel
 1. Meta Business Settings: beheerder van het advertentieaccount.
 2. developers.facebook.com: app van het type Business, product Marketing API toevoegen.
 3. Systeemgebruiker met alleen leesrechten op het advertentieaccount; token met alleen `ads_read` genereren.
-4. Token opslaan in een eigen terminal (niet in de chat): `cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:<token>`.
+4. Token opslaan in een eigen terminal (niet in de chat): `cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:HIER_JE_TOKEN`, met het token zonder haakjes, spaties of aanhalingstekens.
 5. Advertentieaccount-ID (`act_...`) doorgeven aan Denzel. Dat is geen geheim.
 
 Daarna registreert Denzel de koppeling in het profiel `ads` (`hermes mcp add`), test hij met één dag aan gegevens en toetst de QA het resultaat.
@@ -43,6 +43,6 @@ De agent voert nooit zelf iets uit; hooguit zet hij iets klaar in status **uit**
 Eigenaar: Lars (te bevestigen) · looptijd: 4 weken, daarna evalueren (te bevestigen) · kostenplafond: €0, geen advertentie-uitgaven (te bevestigen) · beoordelingscriteria: zie onderzoeksnotitie §7 fase 1.
 
 ## Niet gecontroleerd
-Een echte Meta-aanroep (geen token). Of `ads_read` alle bedoelde velden dekt, vooral pixel en CAPI. Of een app in ontwikkelmodus genoeg is voor het eigen account. De standaard API-versie `v26.0` komt uit [[Ads Referentie — meta-audit]] en is niet tegen een live account getest.
+Live bewezen op 06-11-2026: alleen `meta_account_info` via Claude Code, met API-versie `v26.0` en toegangslaag `development_access`. Nog niet live getest: `meta_campaigns`, `meta_adsets`, `meta_ads`, `meta_insights`, `meta_pixels` en de koppeling in Hermes. Dus ook nog onbekend: of `ads_read` alle bedoelde velden dekt, vooral pixel en CAPI, en of de ontwikkeltoegang genoeg is voor routinematig gebruik.
 
 > Map: [[09 Ads Agent — Index]]

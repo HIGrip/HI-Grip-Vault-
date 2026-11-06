@@ -107,6 +107,13 @@ bijgewerkt: 2026-11-02
 
 ## Denzel (Orchestrator)
 
+### Registratie 06-11-2026 — doelcorrectie adsbudget op gebruikersfeedback
+
+| Actie | Datum | Status | Toelichting |
+|---|---|---|---|
+| Lars-feedback Denzel: meetproef is geen betekenisvolle advertentietest | 2026-11-06 | open | Denzel erkent doelfout; Lars vindt budget te laag voor echt testen/dataopbouw en vraagt of drie sets met elk vier ads nodig zijn. Geen vastgesteld besluit over die opzet. Reden en drie aangereikte leerregelpunten bij Denzel vastgelegd in [[Leerregels per Agent]]; feedbackspoor in [[Feedback & Iteratie Log]]. Bron: t_bcbbbbd1 en briefing t_a051a04d. Geen sterren gegeven. |
+| Herziening op gebruikersfeedback: maker t_a051a04d en QA t_b5c3fea6 | 2026-11-06 | open | Opgepakt door Ads Agent; bij kaartcontrole maker in uitvoering, QA todo met parent t_a051a04d, nog geen nieuw verdict. Geen extra correctieronde oude bron-QA. Eerdere herkeuring t_791d91d5: GOED uitsluitend voor eerdere documentinhoud, geen bewijs van geschiktheid voor het herziene doel. Beide nieuwe kaarten onder profiel ads; onafhankelijkheid niet zelfstandig aangetoond. Nog geen goedgekeurd herzien plan, geen budgetvrijgave of uitvoerrecht. Resultaatpad: `02_Dashboard/Ads/2026-11-06-meta-plan-minimaal-2-weken.md`; niet inhoudelijk gelezen/gewijzigd door Stafchef. Bewijs: gelezen kaarten t_a051a04d, t_b5c3fea6 en t_791d91d5; registratie t_bcbbbbd1. Historische momentopname hieronder behouden; niets afgevinkt. |
+
 ### Registratie 06-11-2026 — routeringsfout en minimaal adsplan
 
 | Actie | Datum | Status | Toelichting |

@@ -10,6 +10,16 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-06 — Denzel: doelcorrectie adsbudget op gebruikersfeedback
+
+**Feedback Lars:** budget van het minimale adsplan is te laag voor echt advertenties testen en data opbouwen; vraagt of drie sets met elk vier ads nodig zijn. Dit is een vraag/hypothese, geen goedgekeurde testopzet. **Agent:** Denzel. **Sterren:** niet gegeven.
+**Reden, door Denzel erkend:** meetproef aangeboden terwijl de behoefte een betekenisvolle advertentietest was. Bron: opdracht t_bcbbbbd1 en makerbriefing t_a051a04d.
+**Vastgelegd bij Denzel in [[Leerregels per Agent]]:** vóór routering meetcontrole, creatieve vergelijking of aankoopvalidatie expliciteren; domeinagent budget laten afleiden uit benodigde waarnemingen; QA-GOED voor documentinhoud bewijst geen geschiktheid voor een anders bedoeld doel. Administratieve vastlegging van de aangereikte leerregels, geen eigen nieuwe regel.
+**Herziening op gebruikersfeedback, geen extra correctieronde van de oude bron-QA:** maker t_a051a04d (Ads Agent, bij controle in uitvoering); QA t_b5c3fea6 (wacht via parent-link op maker). Resultaatpad blijft `02_Dashboard/Ads/2026-11-06-meta-plan-minimaal-2-weken.md`. Eerdere herkeuring t_791d91d5 gaf GOED uitsluitend voor documentinhoud van de eerdere meetproef; geen goedkeuring voor het herziene doel en geen budgetvrijgave. Maker en QA zijn afzonderlijke kaarten onder hetzelfde profiel `ads`; onafhankelijkheid niet zelfstandig aangetoond. Nieuwe QA-uitkomst en menselijke vrijgave staan nog open. Zie [[Agent Werk & Kwaliteit Overzicht]], sectie Denzel.
+**Grenzen:** geen planinhoud, instructie-/profielbestanden of backlog gewijzigd; niets afgevinkt. Historische registratie hieronder blijft intact.
+
+---
+
 ## 2026-11-06 — Denzel: routeringsfout adsplan en herstel via Ads/QA
 
 **Feedback:** Lars corrigeerde Denzel op 6 november: 'Nee, ik heb de Ads Agent niet gebruikt. Het plan heb ik zelf geschreven, zonder kanbankaart, sub-agent of QA. dan is het al fout'. Bron: opdrachtkaart t_9907e6ac. **Agent:** Denzel. **Sterren:** niet gegeven; geen cijfer geregistreerd.

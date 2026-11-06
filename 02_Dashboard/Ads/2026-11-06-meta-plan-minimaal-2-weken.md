@@ -1,25 +1,119 @@
 ---
 id: "2026-11-06-meta-plan-minimaal-2-weken"
-titel: "Meta-plan minimaal budget, twee weken"
-kerntitel: "€140 koopt een kleine meetproef, geen betrouwbare verkoopwinnaar"
+titel: "Meta-testplan rugby en voetbal, 14 dagen, revisie 2"
+kerntitel: "Beide sporten testen: budget volgt uit volume, niet uit drie sets"
 datum: "2026-11-06"
 bron: "los"
 routine: ""
 categorie: "Social"
 status: "nieuw"
 prioriteit: "P1"
-samenvatting: "Advies: maximaal €140 mediabudget voor 14 dagen, één voetbalset en eerst betrouwbare meting. €10 per dag is een gemiddelde en geen bewezen minimum; dag 7 begrenst verlies, dag 14 eindigt de proef zonder automatische verlenging."
+samenvatting: "Rugby en voetbal zijn beide verplicht in het herziene testadvies. Vergelijk sportgeborgde screening en aankoopvalidatie; drie sets met vier ads is geen vastgesteld besluit en alle kosten zijn expliciete scenario-aannames."
 gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november, 2026-10-30-ads-agent-onderzoek]
 vervangt: []
 bronbestand: ""
 deadline: ""
 ---
-# Meta-plan minimaal budget, twee weken
+# Meta-testplan rugby en voetbal, 14 dagen, revisie 2
 
 > Map: [[Waar staat wat]]
 
 ## In het kort
-**RESULTAAT — voorstel via Denzel, geen uitvoerrecht.** Advies: een begrensde meetproef van maximaal €140 mediabudget, gemiddeld €10 per dag, met één verkoopcampagne en één voetbalset. Niet geschikt om rendement, sportverschillen of advertentiewinnaars vast te stellen. Zonder geslaagde voorwaarden vooraf is het juiste budget €0.
+**RESULTAAT · Revisie 2, 6 november 2026, t_a051a04d. Doelwijziging, geen extra oude correctieronde.** Lars vraagt advertenties testen en data opbouwen. €140 was een meetproef en beantwoordde die vraag niet. Onderstaande herziening is het actuele eigen advies; alle tekst vanaf **Historie revisie 1** blijft uitsluitend reden-/actiehistorie, geen actueel €140- of ATC-advies. Geen menselijk besluit vervangen. Geen account, web of Meta-tool gebruikt, geen content gemaakt of uitvoering gedaan.
+
+### Herzien advies: eerst de testvraag
+**Aanvulling Lars tijdens deze run, 6 november: rugby EN voetbal zijn verplichte hoofdfocus.** Geen sport naar ronde 2 verschuiven. Dit is teamfocus uit de opdracht, geen Brand Core-wijziging of uitvoeringstoestemming.
+
+**Voorkeursontwerp:** twee sportsets: A rugby, B voetbal. Elke set onderzoekt binnen de eigen sport welke van twee bestaande goedgekeurde ads bruikbare aandacht/bezoeken levert. Gelijk houden: product/aanbod, bestemming, periode, optimalisatie-event, attributie en waar passend plaatsingen. Alleen een bekend creativeverschil binnen elke sport beoordelen; verschillen meerdere kenmerken, dan de hele ad als pakket screenen. Sportresultaten niet als zuiver causaal doelgroepverschil verkopen als materiaal/populatie verschilt. Voor een echte sportdoelgroepvergelijking zou hetzelfde geschikte materiaal nodig zijn, met vooraf gecontroleerde afbakening en vergelijkbare toewijzing [CHECK]. Ontbreekt goedgekeurd materiaal voor één sport: geen eenzijdige proef, eerst via Denzel oplossen zonder contentproductie door Ads.
+
+**3 × 4 getoetst, niet vastgesteld:** twaalf ad-plaatsingen vragen twaalfmaal het gekozen volume. Twee legitieme sets hebben een duidelijke vraag: rugby en voetbal. Voor set C ontbreekt in deze opdracht een onafhankelijke derde vraag. Geen derde sport, doelgroep, retargetinggroep of angle verzinnen om drie sets te halen. Daarom nu **niet aanbevelen als inrichtingsplan**. Als Team later een noodzakelijke derde vraag specificeert, eerst isolatie toetsen: bij doelgroepvraag dezelfde vier geschikte bestaande ads per set (vier unieke creatives, twaalf plaatsingen); bij angle-vraag gelijk publiek en categorieën van bestaand materiaal (mogelijk twaalf unieke ads). Niet tegelijk publiek én angle veranderen. Geen advertentiecontent door Ads bedenken. De financiële 3 × 4-rij hieronder toetst dus capaciteit, niet een vrijgegeven derde set.
+
+**Sportgeborgd alternatief voor hetzelfde twaalf-plaatsingenbudget:** twee sets met zes bestaande goedgekeurde ads per sport. Alleen als die inventaris bestaat; geen productieopdracht. Beide sporten krijgen dan aantoonbaar de helft van het budget en zes beoordeelde plaatsingen. Meer ads betekenen meer vergelijking/ruis; geen extra leerwaarde zonder volume. Kleinste screening blijft twee per sport.
+
+**Geconsolideerd alternatief:** één set met de vier bestaande ads (twee rugby, twee voetbal), zelfde totale screenbudget. Algoritmische verdeling kan één sport vrijwel geen volume geven: geen gegarandeerd sportbudget of sportantwoord. Daarom alleen vergelijkingsoptie, niet de voorkeur bij Lars' verplichte dubbele focus. Vaste sportbudgetten met aparte sets geven een budgettoewijzing per sport na menselijke UI-controle [CHECK], maar geen gegarandeerde gelijke ad-delivery of daadwerkelijk bereik onder die sporters. Minder fragmentatie garandeert geen beter rendement.
+
+### Rekengrondslag: aannames, geen benchmarks
+Geen geverifieerde eigen actuele CPM/CPC/CPA beschikbaar. Nieuwe expliciete scenario-aannames hieronder; niet gemengd met het historische bezoekmodel van €0,75–2,25. Bedragen EUR, mediakosten, 14 dagen. Geen winstprognose.
+
+| Input of afleiding | Gunstig | Basis | Ongunstig |
+|---|---:|---:|---:|
+| CPM, aanname | €8 | €12 | €20 |
+| Uitgaande CTR, aanname | 1% | 1% | 1% |
+| LPV/uitgaande klik, aanname | 80% | 80% | 80% |
+| ATC/LPV, aanname | 4% | 4% | 4% |
+| Purchase/LPV, aanname | 2% | 1,5% | 1% |
+| CPC = CPM/(1.000 × CTR) | €0,80 | €1,20 | €2,00 |
+| Kosten/LPV = CPC/0,80 | €1,00 | €1,50 | €2,50 |
+| Kosten/ATC = kosten/LPV/0,04 | €25 | €37,50 | €62,50 |
+| Model-CPA = kosten/LPV/aankoopratio | €50 | €100 | €250 |
+
+Formules: budget = vertoningen × CPM/1.000, of LPV-doel × kosten/LPV, of eventdoel × kosten/event. Werkelijke kosten kunnen slechter zijn. Bij nul gemeten aankopen is CPA niet berekenbaar, niet nul. Geen gegarandeerde aantallen of datavolwassenheid.
+
+**Benodigd volume expliciet kiezen:**
+- CTR-screening: 10.000 vertoningen per te beoordelen ad-plaatsing, bij 1% ongeveer 100 uitgaande klikken. Afgeronde exploratieve ontwerpkeuze, geen universeel minimum.
+- LPV-diagnose: circa 80 LPV per plaatsing bij die 100 klikken. Bruikbaar voor grove funnelverschillen, niet voor bewezen laad-/consentoorzaak. Events/vertoningen zijn geen unieke personen.
+- ATC-richting: praktisch precisiedoel 20 geldige ATC per beoordeelde eenheid, geen significantienorm. Bij 4% vraagt dat 500 LPV: €500/750/1.250 per eenheid. Voor twaalf plaatsingen: €6.000/9.000/15.000. Het CTR-screenbudget levert dus geen ATC-winnaar per ad.
+- Purchase-validatie: 30 geldige, uitgerijpte aankopen **per sport**, niet per ad. Model vraagt per sport 1.500/2.000/3.000 LPV en €1.500/3.000/7.500. Voor rugby én voetbal samen 60 aankopen, 3.000/4.000/6.000 LPV en €3.000/6.000/15.000. Ook 30 per sport is slechts een eerste CPA-inschatting, geen winst- of incrementalitybewijs. Dertig totaal zou minder kosten maar geen gelijkwaardig sportantwoord opleveren.
+
+### Budgetscenario's en wat leerbaar is
+Dagbedragen zijn totaal/14 afgerond, geen technische daglimieten. Drie **alternatieve** keuzes, niet automatisch opeenvolgende fasen.
+
+| Scenario 14 dagen | Doelvolume | Totaal gunstig / basis / ongunstig | Gemiddeld/dag, zelfde volgorde | Worst-case kale mediaverlies |
+|---|---|---|---|---|
+| Kleinste sportgeborgde screening, twee sets × twee bestaande ads | 4 × 10.000 vertoningen | €320 / €480 / €800 | €22,86 / €34,29 / €57,14 | Goedgekeurd plafond; hoogste variant €800 |
+| 3 × 4 capaciteitstoets, derde vraag ontbreekt; uitvoerbaar sportalternatief 2 × 6 | 12 × 10.000 vertoningen | €960 / €1.440 / €2.400 | €68,57 / €102,86 / €171,43 | Hoogste variant €2.400 |
+| Aankoopvalidatie, twee sportsets | 30 aankopen per sport, 60 totaal verwacht | €3.000 / €6.000 / €15.000 | €214,29 / €428,57 / €1.071,43 | Hoogste variant €15.000 |
+
+Bij nul omzet kan het volledige goedgekeurde mediaplafond verloren gaan. Belastingen/toeslagen/overige kosten afzonderlijk vastleggen; totaalrisico is media plus die kosten en eventueel bestaande campagnes. Geen nieuwe kosten goedgekeurd. Zonder vrijgave en meetvoorwaarden: €0 nieuwe testuitgaven.
+
+**Budget en meetdoel per sport:** kleinste screening rugby €160/240/400 en voetbal €160/240/400 over 14 dagen, gemiddeld elk €11,43/17,14/28,57 per dag. Iedere sport beoogt 20.000 vertoningen, 200 klikken en 160 LPV; in basis 6,4 ATC en 2,4 aankopen, dus geen aankoopwinnaars. Samen 40.000 vertoningen en 320 LPV. Bij 2 × 6 krijgt elke sport €480/720/1.200 totaal, gemiddeld €34,29/51,43/85,71 per dag, met 60.000 vertoningen, 600 klikken en 480 LPV; in basis 19,2 ATC en 7,2 aankopen per sport. Bij gelijke levering slechts 3,2 ATC en 1,2 aankopen per plaatsing. Aankoopvalidatie: elke sport €1.500/3.000/7.500 totaal, gemiddeld €107,14/214,29/535,71 per dag, met 30 aankopen als modeldoel. Een kleiner plafond betekent minder precisie voor BEIDE sporten, niet één sport weglaten. Onder €320 is zelfs het gunstige vier-plaatsingen-screenmodel niet gedekt; uitstellen of expliciet lagere precisie accepteren, niet beloven dat €140 twee sporten betekenisvol valideert.
+
+Bij hypothetisch 3 × 4 en basis €1.440 is gelijk verdelen rekenkundig €480/set en €120/plaatsing; de derde set is inhoudelijk niet gerechtvaardigd. Bij voorkeursalternatief 2 × 6 is dat €720 per sport en eveneens €120/plaatsing. **Geen leveringsgarantie:** setbudget kan alleen setniveau begrenzen na menselijke UI-controle [CHECK]; binnen de set krijgt niet elke ad evenveel. Weinig geleverde ads blijven onbeslist, niet verliezer. Budget niet stilzwijgend verhogen om de tabel af te maken. Bij CPM €20 koopt €1.440 slechts 72.000 vertoningen, geen 120.000. €140 koopt bij basis-CPM ongeveer 11.667 totaal: ontoereikend voor dit twaalf-plaatsingenontwerp. Een hoger budget herstelt slechte tracking of variabelevermenging niet.
+
+### Power is iets anders dan platformleren
+De gelezen historische A/B-notitie noemt circa 7.700 vertoningen per arm voor 1,0% tegen 1,5% CTR bij tweezijdig 5% en ongeveer 80% power. Formule voor onafhankelijke proporties: n ≈ [1,96√(2p̄(1−p̄)) + 0,84√(p1(1−p1)+p2(1−p2))]²/(p2−p1)², p̄ = 0,0125. De oudere circa 3.800 had niet dezelfde power-eis. 10.000 is een afgerond screeningdoel, geen bewijs: gewone Meta-delivery is geen gegarandeerde randomisatie, herhaalde blootstelling en twaalfvoudig vergelijken veranderen de foutkans. Eén primair contrast vooraf vastleggen; voor twaalf varianten eerst een multipliciteits-/powerontwerp, anders uitsluitend exploratief.
+
+Eenvoudige telruis geeft relatieve standaardfout ongeveer 1/√events: bij 20 ATC circa 22%, bij 30 aankopen circa 18%; ruwe 95%-marges ongeveer tweemaal zo groot, nog zonder attributie-/selectiebias. Kleine CPA-verschillen zijn daarmee niet bewezen. Geen gegarandeerde winnaar na 14 dagen.
+
+‘50 optimalisatie-events per week’ is een **platform-learningheuristiek [CHECK]**, geen statistische bewijsgrens, universele startvoorwaarde of reden automatisch naar ATC te wisselen. Geen actuele officiële Meta-bron gelezen. Ook leerfaseherstart, budgetoverschrijdingsregels, doelgroepuitbreiding en experimenteerfuncties staan **[CHECK]**, niet als actuele feiten toegepast. Geen externe teksten opgeslagen.
+
+### Menselijke poorten, stopregels en uitlezing
+**Dag 0:** schriftelijke vrijgave van scope, geaggregeerde bronnen, budget/volledig verliesrisico en eigenaar/vervanger. Doel/KPI, één hypothese/contrast, geschikte doelgroep, bestaande goedgekeurde ads met rechten/claims, bestemming en voorraad bevestigen. Website valideert tracking, eventuele dubbele events, consent en eventdefinities; geen wijzigingen door Ads. Account-, pixel- en conversiematuriteit elk afzonderlijk **unknown**. Voor aankoopvalidatie Purchase als passend event menselijk beoordelen [CHECK]; geen automatische ATC-omweg bij ontbrekend aankoopsignaal. Optimalisatie-event vóór start vastleggen en tijdens proef niet veranderen. Claims/prijs/handle pas gericht uit Feiten & Actuele Staat controleren bij concrete materiaal-/bestemmingscontrole, niet uit oude plannen.
+
+**Dagelijks:** menselijke bewaker stopt bij ontbrekend akkoord, meet-/consentfout, rechten-/claim-/voorraadprobleem, verkeerde bestemming of dreigende totale plafondoverschrijding. Instelling van budget/einde/plafond vooraf in Ads Manager controleren [CHECK]; een daggemiddelde is geen harde daglimiet. Geen agentinrichting, pauze of andere uitvoering.
+
+**Dag 7:** alleen vooraf vastgelegde veiligheids-/haalbaarheidspoort. Bij meetfout menselijk pauzeren; bij onderlevering doelvolume opnieuw haalbaarheidsmatig beoordelen, geen extra budget of ad-wissel. Geen dagelijkse winnaarselectie. Voor aankoopvalidatie vooraf een toelaatbare CPA vastleggen uit netto orderbijdrage (exclusief btw, na product-, verzending-, betaal-, fulfilment- en retourkosten), of expliciet aanvullend leerverlies accepteren. Zonder dat geen rendementsoordeel. Een vooraf goedgekeurde verliesstop op een vast reviewmoment kan nul aankopen na spend van 3 × dat CPA-plafond op uitgerijpte cohorten zijn: onder een eenvoudig Poissonmodel bij werkelijk die CPA is kans op nul e^-3 ≈ 5%. Geen universele ad-stop of dagelijks herhaalde significantietoets. Geen automatische €25-/€50-stop of tussentijdse creative-wissel.
+
+**Dag 14:** mens beëindigt levering uiterlijk op eindtijd/plafond. Geen verlenging om volumes alsnog te halen: te weinig volume betekent onbeslist. Dag 7/14 kan voorlopig zijn. Definitieve uitlezing pas na attributievenster vanaf laatste relevante interactie plus vastgelegde rapportagevertraging. Bij bevestigde start 7 november levering 7–20 november; 21 november is niet automatisch definitief. Geen extra spend tijdens wachten. Vervolg en Performance Days vragen nieuw akkoord.
+
+Meetcontract: geaggregeerde spend, vertoningen, uitgaande klikken, LPV, ATC, checkout, Purchase/waarde; per bron periode, extractietijd, tijdzone, valuta, filters, noemers, attributie, klik/view-through, datumtype en voorlopig/definitief vastleggen; testevents uitsluiten. Meta, GA4 en Shopify afzonderlijk houden, niet optellen tot unieke omzet. Nieuwe-klant-CPA alleen met bewezen nieuwe-klanttotalen. Geen ROAS-/margeclaim zonder onderbouwde economie.
+
+### ‘Database’ in drie betekenissen
+1. **Meetdata/pixel-/conversiesignalen:** geaggregeerde observaties voor analyse. Meer data garandeert geen betere levering of afgeronde leerfase.
+2. **Retargetingpubliek:** mogelijk geschikte bezoekers-/engagementgroepen; omvang, geschiktheid, beschikbaarheid, bewaartermijnen en toestemming **[CHECK]**. LPV of vertoningen zijn geen gegarandeerde bruikbare publieksgrootte. Geen retargetingvrijgave in dit advies.
+3. **Eigen first-party contacten:** apart rechtmatig verkregen contacten met passende grondslag en waar vereist toestemming. Advertenties maken niet automatisch een klanten-/e-maillijst. Geen toestemming om persoonsgegevens te verzamelen, lezen of opslaan. Website en bevoegde privacyverantwoordelijke bewaken tracking/consent; Ads gebruikt alleen totalen.
+
+### Revisiecontrole en bronnen
+**GECONTROLEERD · Ads Agent:** rol, user.md, vrijgaveonderzoek, procedure, beide echte bronplannen en A/B-steekproefnotitie gelezen; higrip-vault, higrip-ads-analyse, ads-plan, ads-budget, ads-math, ads-test en ads-meta geladen. Formules/eenheden handmatig nagelopen; geen code/rekenprogramma gedraaid. Nieuwe onafhankelijke QA op t_b5c3fea6 volgt, geen GOED voor revisie 2 geclaimd. De eerste volledige schrijfaanroep werd door de bestandstool geweigerd als onvolledige-leesbeveiliging; bestand opnieuw gelezen, daarna alleen deze gerichte invoeging en metadatawijzigingen, geen beschermingsinstelling aangepast.
+
+**NIET GECONTROLEERD / AANGENOMEN:** nieuwe kosten-/conversie-inputs zijn aannames, geen eigen gemeten resultaten. Geen live account, ad-inventaris, instellingen, marge, consent, voorraad of platformclaim getoetst. Geen externe bronnen bezocht. Feitenbestand in deze revisie niet gelezen: historische merk-/prijsclaims hieronder zijn géén nieuwe bevestiging.
+
+**WAT IK MIS OF KAN BETER:** actuele vrijgegeven geaggregeerde data, concrete bestaande ads/populaties, netto bijdrage/CPA-grens en meetvertraging. Pas daarmee een hard euroadvies. Bestandsomvang groeit door behouden actie-/QA-historie; compact maken/archiveren vraagt gecoördineerde Operations-afhandeling, hier niets verplaatst. Geen build, sync of publicatie uitgevoerd.
+
+**Bronversiecontrole:** actuele opbouwnotitie in deze run gelezen: documentdatum 5 november, aanvullingen 6 november. Vastgelegd Timo-besluit €20/dag, twee sets van €10, start 7 november 00:01. Ingetrokken één-rugbyadvies blijft ingetrokken; laatste twee-sporten-/zes-ads-raster is expliciet voorstel. Oude €35-opzet is historische referentie. Live-status/spend onbekend. Bron wordt parallel bewerkt, geen immutable versie; bij menselijk besluit opnieuw bevestigen. Niet gewijzigd in deze run. Oude bronconflict- en uitleesdatumcorrecties hieronder behouden.
+
+**Bronnen revisie 2:** opdracht t_a051a04d; [[2026-11-05-meta-opbouw-getoetst-start-6-november]] (actuele uitlezing); [[2026-11-05-meta-plan-35-euro-per-dag]] (ontbrekende betaalde data en historische aannames); [[2026-10-25-ab-test-ads-features-vs-beste]] (uitsluitend steekproefkanttekening); rol/user/vrijgaveonderzoek/procedure en zeven genoemde skills. Nieuwe budgetten uitsluitend uit het bovenstaande eigen aannamemodel, geen externe tekst overgenomen.
+
+**BESLISSING VOOR JOU · via Denzel:** beide sporten staan vast als focus; kies sportgeborgde screening 2 × 2, breder 2 × 6 indien materiaal bestaat, of aankoopvalidatie per sport; bevestig plafond/leerverlies, menselijke eigenaar en status/vervanging bestaand plan. 3 × 4 pas opnieuw beoordelen bij een echte derde vraag, niet als voorwaarde om te starten. Goedkeuring van advies is geen uitvoerrecht. **BEOORDEEL ★1–5** na onafhankelijke QA via Denzel.
+
+## Acties
+- [ ] P1 · Besluit: kies via Denzel na QA één 14-dagen-scenario met rugby én voetbal, zichtbaar sportbudget en meetdoel, maximaal leerverlies plus fiscale/overige kosten, en bevestig afzonderlijk de status/vervanging van het bestaande menselijke besluit.
+- [ ] P1 · Besluit: bevestig vóór start bestaande goedgekeurde ads per sport, geaggregeerde bronnen, Website-bewijs voor tracking/consent, voorraad/bestemming/claims, primaire KPI en contrast, CPA-grens of leerverlies, menselijke bewaker en eindtijd; bij ontbrekend bewijs niet starten.
+
+## Historie revisie 1 — niet het actuele advies
+De volgende oorspronkelijke inhoud en actie-identiteiten blijven staan voor traceerbaarheid. Niet afgevinkt. €140-/ATC-voorstel en oude prestatiepoorten hieronder zijn door revisie 2 inhoudelijk achterhaald; menselijke besluiten elders blijven staan. Operations/Denzel laat een mens eventuele oude acties administratief afhandelen.
+
+**HISTORISCH RESULTAAT — voorstel via Denzel, geen uitvoerrecht.** Advies: een begrensde meetproef van maximaal €140 mediabudget, gemiddeld €10 per dag, met één verkoopcampagne en één voetbalset. Niet geschikt om rendement, sportverschillen of advertentiewinnaars vast te stellen. Zonder geslaagde voorwaarden vooraf is het juiste budget €0.
 
 De schets van Denzel wordt aangescherpt: twee reeds goedgekeurde advertenties in plaats van drie concepten; winkelwagen alleen als expliciet tussendoel; geen automatische stop per ad na €25; wél veiligheidscontrole dagelijks en beslispoorten op dag 7 en 14. Geen automatische terugval naar Content bekijken. Dit nieuwe €140-voorstel vervangt geen eerder besluit automatisch; live-status en keuze voor deze proef ontbreken.
 
@@ -30,8 +124,8 @@ De schets van Denzel wordt aangescherpt: twee reeds goedgekeurde advertenties in
 - **Nieuw voorstel, geen besluit:** de latere sectie van 6 november stelt opnieuw twee sporten en zes ads voor, met een wissel op 14 november en gewijzigde stopregels (regels 97–107). Dit is geen aangetoonde goedkeuring of live-status. Ook dit minimale voetbalvoorstel is slechts een nieuw alternatief.
 **Onbekend:** welk plan feitelijk is ingericht of live staat. De tegenstrijdige historische passages worden niet door de agent tot één besluit samengevoegd. De actuele bron gaat vóór de verouderde briefing; Lars/Timo bevestigt via Denzel wat geldt en of deze proef dat mag vervangen. Er is geen account gelezen.
 
-## Acties
-Menselijke controlepunten via Denzel; geen agentuitvoering. Bestaande acties blijven staan; hieronder de vrijgavechecklist voor deze proef.
+### Historische acties revisie 1
+Menselijke controlepunten uit het oude voorstel, geen actuele proefvrijgave. Actie-identiteiten blijven ongewijzigd; geen agentuitvoering of afvinken.
 
 - [ ] P1 · Besluit: Lars of Timo bevestigt via Denzel welk plan geldt en feitelijk is ingericht/live staat (vastgelegde €20-keuze, oude €35-opzet of anders), met actuele uitgaven en einddatum; bevestig afzonderlijk de status van het latere voorstel twee sporten/zes ads en kies behouden, door een mens vervangen door deze €140-proef of uitstellen, nooit onbeoordeeld naast elkaar.
 - [ ] P1 · Besluit: keur proefscope, geaggregeerde databronnen en maximaal €140 mediabudget afzonderlijk schriftelijk goed; leg fiscale bijkosten, maximaal aanvaardbaar verlies en eventuele overige kosten vast vóór start.

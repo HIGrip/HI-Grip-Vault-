@@ -66,4 +66,6 @@ Some automated data extraction runs printed "�" in place of €/Ï characters 
 - `collection-gripsokken_desktop_abovefold.png`, `collection-gripsokken_desktop_fullpage.png`, `collection-gripsokken_mobile_abovefold.png`, `collection-gripsokken_mobile_fullpage.png`
 - `page-tennis_desktop_abovefold.png`, `page-tennis_desktop_fullpage.png`, `page-tennis_mobile_abovefold.png`, `page-tennis_mobile_fullpage.png`
 
+Opmerking padcontrole 2026-11-06: `<audit-bronmap>` is een plaatshouder voor de oorspronkelijke lokale bewijsbestanden. Deze bestanden staan niet in deze repo; de verwijzingen zijn geen beschikbare repo-links. De rapporten en `06_Website_Agent/Analyse/SEO-audit 2026-09-25/audit-data.json` staan wel in de repo.
+
 > Map: [[06 Website Agent — Index]]

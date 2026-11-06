@@ -227,7 +227,7 @@ pulling real user data:
 - Google Search Console → **Core Web Vitals** report for higrip.nl (mobile
   URL group) — free, immediate, no API key needed.
 - Or configure `GOOGLE_API_KEY` and re-run:
-  `"C:/Users/lars/.claude/plugins/cache/agricidaniel-claude-seo/claude-seo/2.3.1/scripts/claude-seo" run pagespeed_check.py <url> --crux-only --json`
+  `"<lokale-seo-plugin>/scripts/claude-seo" run pagespeed_check.py <url> --crux-only --json`
 - Or CrUX Vis (cruxvis.withgoogle.com) for a dashboard view.
 
 This will confirm whether real higrip.nl mobile visitors (rather than this

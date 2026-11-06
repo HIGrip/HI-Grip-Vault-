@@ -25,12 +25,13 @@ Vijf webshops zijn bekeken met een testartikel in de wagen. Hun aanpak is vertaa
 - **5** · webshops bekeken (Gymshark laadde niet goed)
 - **10** · ontwerpen in ronde 1, waarvan 4 klikbaar (2, 6, 7, 8)
 - **5** · varianten in ronde 2, alle klikbaar, elk op laptop en mobiel
-- **2** · versies in ronde 6, de nieuwste: zwart (22) en wit (23)
+- **24** · nieuwste versie op het canvas: wit, ronde 7
 - **€75** · drempel gratis paar, besluit Team HÏ Grip, nog niet live
 - **€7,05** · meer voor het vijfde paar (4 paar €62,90, 5 paar €69,95)
 
 ## Acties
 - [ ] P1 · Controleren of iDEAL in de checkout beschikbaar is en waarom het niet in de betaallijst van de site staat
+- [ ] P2 · Besluit: knopvorm in Brand Core (pill) gelijktrekken met de site (hoeken van 8px)
 - [ ] P2 · Witte lade (23) op een echte telefoon nalopen in het werkthema en daarna besluiten of die live gaat
 - [ ] P2 · Besluit: expresknoppen PayPal en Google Pay in de lade terugzetten of weglaten; ze staan in het werkthema uit omdat ontwerp 23 ze niet heeft
 - [ ] P1 · Korting gratis paar vanaf €75 laten aanmaken door een mens, daarna kaart en tweede doel op de balk bouwen
@@ -142,6 +143,15 @@ Afwijkingen van het ontwerp:
 - De prullenbak bij pack-regels is gebleven, anders kost een pack weghalen vijf klikken.
 - Bij 1 en 2 paar staat ook "Korting" door de adviesprijs van €19,95. Naast een pack telt alleen de packkorting.
 - Het totaal rekent €4,50 mee onder de €35. Bij een ander tarief per land wijkt dat af van de checkout.
+
+### 9. Ronde 7: extra paar als eigen regel en Nu afrekenen
+Feedback op de bouw van 23, verwerkt in het werkthema en als versie 24 op het canvas:
+- Het extra paar is een gewone regel met foto, maat, stepper en prullenbak. De compacte rij voelde als een toevoeging achteraf.
+- De knop heet "Nu afrekenen", zonder slotje en zonder capsule. Vorm gelijk aan de hoofdknop op de productpagina: hoeken van 8px, dikke tekst, 60 hoog.
+- Het totaal staat als eigen regel boven de knop.
+- Stepper, +1, kortingscodeveld, Toepassen en de besparingsbalk kregen dezelfde hoeken van 8px.
+
+Dit wijkt af van de merkregel pill met chevron in Brand Core. De chevron blijft, de pill-vorm niet; de productpagina doet dat nu ook al.
 
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.

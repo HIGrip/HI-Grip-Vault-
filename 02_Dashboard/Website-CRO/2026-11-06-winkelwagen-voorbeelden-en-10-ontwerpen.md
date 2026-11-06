@@ -153,6 +153,25 @@ Feedback op de bouw van 23, verwerkt in het werkthema en als versie 24 op het ca
 
 Dit wijkt af van de merkregel pill met chevron in Brand Core. De chevron blijft, de pill-vorm niet; de productpagina doet dat nu ook al.
 
+## Audit van de bouw (uitlijning en code)
+Alleen in het werkthema, niet live. Het canvas (versie 24) bevat deze fixes niet.
+
+Uitlijning: gemeten op 375 en 500 breed. Alles staat nu op dezelfde randen (20 en 355 op mobiel, 36 en 464 op laptop), de tekstkolom op 114 en 130, en de stepper van het extra paar sluit exact aan op de onderkant van de foto. Oorzaken waren een rand van 1px op de lade en losse paddings en marges op aantal, prijs en maat.
+
+Fouten gevonden en opgelost:
+- De verzendkosten stonden vast op €4,50. Shopify rekent €4,50 in Nederland en €5,00 in de andere landen, dus de lade toont nu het tarief van het land.
+- De betaallogo's krompen tot 206px breed zolang de afbeeldingen nog niet geladen waren.
+- De knop +1 bleef uit staan na een geweigerde update.
+- Het invoerveld van de stepper was te klein, waardoor iOS inzoomt.
+
+Een fout van de audit zelf: de eerste versie van de packherkenning filterde op kortingstype automatic, maar de packkorting heeft een leeg type. De packlabels verdwenen daardoor even. Hertest ving dit op, de filter kijkt nu naar discount_code.
+
+Snelheid en opschoning: CSS 12,6 KB en JS 2 KB, thumbnails op 160 breed en lazy. Packdata staat op één plek (`hi-pack-data`), dubbele code in nudge en productblok is weg, plus geen ongebruikte hi-klassen. Animaties respecteren de instelling minder beweging.
+
+Beveiliging: geen lekken gevonden. Shopify escapet regel-eigenschappen al (getest met een html-tag), kortingstitels gaan door escape, er staan geen sleutels in de code. Het nudge-script stuurt alleen naar de eigen winkelwagen-routes.
+
+Hertest: 1 tot en met 6 paar, gemengde maten, wit, 1.0, TENNIS20, de winkelwagenpagina en de productbundels gaven de juiste bedragen. Na de laatste fix is +1 vanaf 4 paar getest in de lade (naar 5-pack, €69,95). De route zonder pack-eigenschap is getest op de winkelwagen-API (2 los naar 3-pack, €44,95), niet met een klik, omdat de verborgen browser de pagina niet meer tekende. Live hing daar op dezelfde manier, dus dat komt niet door de code.
+
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.
 - Bij Allbirds is alleen de lege lade gezien. Bij Stance en Trusox alleen de winkelwagenpagina, niet een lade.
@@ -164,6 +183,7 @@ Dit wijkt af van de merkregel pill met chevron in Brand Core. De chevron blijft,
 - Niet getest op een echte telefoon. De build is getest in de browser op 375 en 500 breed.
 - iDEAL staat niet in de betaallijst van de site, terwijl oudere vault-notities iDEAL wel noemen. De betaalstap van de checkout is niet bekeken, omdat daarvoor persoonsgegevens ingevuld moeten worden. Het logo staat op verzoek in het werkthema; Shopify toont het als iDEAL met Wero.
 - In ronde 3 is de knop Toepassen bij de kortingscode en de afrekenknop niet werkend; dat is alleen ontwerp.
+- Shopify theme check liep vast en gaf geen uitkomst; de controle is met de hand en in de browser gedaan.
 
 ## Bronnen
 - stance.com, upfront.nl, allbirds.com, tru.online, rhodeskin.com, bekeken op 6 november 2026 met een testartikel; wagens daarna geleegd (Allbirds niet)

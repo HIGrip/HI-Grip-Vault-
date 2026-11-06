@@ -50,6 +50,7 @@ laatst-geverifieerd: 2026-10-11
 | Feit | Vastgestelde waarde | Live staat (laatst gezien 19 okt, regressiecheck) |
 | --- | --- | --- |
 | Verzendkosten | **€4,50** | `/pages/verzendbeleid` en `/policies/terms-of-service` noemen nu beide €4,50 — **opgelost**. |
+| Verzendkosten buiten Nederland | **€5,00** | Shopify-instelling gelezen op 6 nov 2026 (BE, DE, AT, FR, GB, IT, LU, PT, CH). |
 | Gratis verzending vanaf | **€35** | Announcementbar en `/pages/verzendbeleid` ("GRATIS VERZENDING BOVEN DE €35") — **opgelost**. |
 | Verzendtijd | **Binnen 1 werkdag verzonden** | `/pages/verzendbeleid` zegt nu ook "binnen 1 werkdag verzonden"; `/policies/shipping-policy` zegt nog steeds "vóór 16:00" → **conflict blijft, alleen nog op deze ene oude pagina**. De 22:00-belofte is al eerder vervallen (opgelost). |
 | Retour | **30 dagen** | `/pages/retourbeleid` zegt 30 dagen, zonder "ongeopend"-eis en zonder 25% herbevoorradingskosten — **opgelost**. `/policies/refund-policy` zegt nog steeds 14 dagen + 25% herbevoorradingskosten → **conflict blijft, alleen nog op deze ene oude pagina** (ook juridisch risico, zie [[Compliance To-Do Lijst]] §4.2). |
@@ -102,6 +103,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-11-06 — Verzendkosten buiten Nederland toegevoegd: €5,00, uit de Shopify-instellingen; gratis vanaf €35 geldt in alle landen.
 - 2026-10-29 — Besluit: adviesprijs retail 2.0 wordt €19,95 incl. btw; de webshop blijft €17,95. Toegepast op de nieuwe prijslijst retail (`07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026`).
 - 2026-10-20 — Brand Core gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (nu 36 pagina's): zwart `#0A0A0A`, grijzen Titanium / Onyx / Carbon Black (Graphite vervallen), een accentkleur per kernsport, design- en socialsprincipes toegevoegd, influencer-aanpak en organische planning vervangen, roadmap (indicatief) en teamrollen bijgewerkt. Sportersaantal blijft 3500+ (Canva loopt achter met 3000+); omzetcijfers in Canva zijn illustratie.
 - 2026-10-19 — Verzend-/retourtabel bijgewerkt (regressiecheck): `/pages/verzendbeleid` en `/policies/terms-of-service` tonen nu beide €4,50 en de €35-drempel staat op `/pages/verzendbeleid`; `/pages/retourbeleid` heeft geen 25%-herbevoorradingskosten en geen "ongeopend"-eis meer. Alleen `/policies/shipping-policy` ("vóór 16:00") en `/policies/refund-policy` (14 dagen + 25%) lopen nog achter op de vastgestelde waarde.

@@ -173,11 +173,18 @@ Beveiliging: geen lekken gevonden. Shopify escapet regel-eigenschappen al (getes
 Hertest: 1 tot en met 6 paar, gemengde maten, wit, 1.0, TENNIS20, de winkelwagenpagina en de productbundels gaven de juiste bedragen. Na de laatste fix is +1 vanaf 4 paar getest in de lade (naar 5-pack, €69,95). De route zonder pack-eigenschap is getest op de winkelwagen-API (2 los naar 3-pack, €44,95), niet met een klik, omdat de verborgen browser de pagina niet meer tekende. Live hing daar op dezelfde manier, dus dat komt niet door de code.
 
 ## Feedback na de audit
-Verwerkt in het werkthema, niet live en niet op het canvas:
+Verwerkt in het werkthema en daarna live, niet op het canvas:
 - Hoeken van 8px naar 12px. De hoofdknop op de productpagina blijft 8px, dus de winkelwagen wijkt daar nu iets van af.
 - De sterren liepen scheef: de groene laag werd door een breedtelimiet kleiner geschaald dan de grijze. Nu is het één laag, met de vijfde ster op 60%.
 - De lade opent nu ook op laptop boven de pagina in plaats van de pagina opzij te duwen. De pagina dimt 55%, ook op mobiel, waar dat 15% was. Klikken naast de lade sluit hem. Andere lades van het thema blijven zoals ze waren.
 - De lade blijft niet meer open staan na het wisselen van pagina op laptop.
+
+## Live gezet op 6 november 2026
+Op opdracht zijn tien winkelwagenbestanden naar het live thema gezet: de witte lade met alle fixes hierboven. Live was op die bestanden nog gelijk aan het startpunt van deze bouw, dus er is geen ander werk overschreven. De vorige versies staan in `theme-snelheid/live-backup-0611-v2`.
+
+Controle op live, 1280 breed: lade boven de gedimde pagina, 12px hoeken, sterren, 4 paar €62,90 en de knop +1 vanaf 2 losse paren naar 3-pack €44,95 met een echte klik in de lade. Geen Liquid-fouten en geen fouten in de console. Daarmee is ook de route zonder pack-eigenschap alsnog in de lade getest.
+
+Niet gecontroleerd: een echte bestelling tot en met betaling, een echte telefoon, en of iDEAL in de checkout staat. Het iDEAL-logo staat er op verzoek, maar iDEAL staat niet in de betaallijst van de site. Het cadeaupaar vanaf €75 is niet gebouwd.
 
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.

@@ -11,9 +11,9 @@ collection, page, blog, policy, and `/en/` market variants). Method: robots.txt
 inspection, sitemap_discovery.py, render_page.py on the homepage, and a
 sequential (~1 req/s) fetch of all 109 sitemap URLs collecting status code,
 final URL, canonical, meta robots, hreflang set, title, and body length
-(`C:/Users/lars/higrip.nl-audit/url_check_results.csv`). Raw source evidence
-saved at `C:/Users/lars/higrip.nl-audit/home_raw.html` and
-`C:/Users/lars/higrip.nl-audit/product.html`.
+(`<audit-bronmap>/url_check_results.csv`). Raw source evidence
+saved at `<audit-bronmap>/home_raw.html` and
+`<audit-bronmap>/product.html`.
 
 Overall Technical SEO Score: **80/100**
 
@@ -289,12 +289,14 @@ Lighthouse data was collected in this pass.
 ---
 
 ## Evidence files
-- `C:/Users/lars/higrip.nl-audit/robots.txt`
-- `C:/Users/lars/higrip.nl-audit/urls.txt` (109 sitemap URLs)
-- `C:/Users/lars/higrip.nl-audit/homepage.json` (rendered homepage + headers + redirect chain + structured data)
-- `C:/Users/lars/higrip.nl-audit/home_raw.html` (raw homepage HTML — canonical/hreflang/og/viewport evidence)
-- `C:/Users/lars/higrip.nl-audit/product.html` (raw product page HTML — JS-rendering evidence)
-- `C:/Users/lars/higrip.nl-audit/url_check_results.csv` (per-URL status/canonical/meta-robots/hreflang/title for all 109 sitemap URLs)
-- `C:/Users/lars/higrip.nl-audit/check_urls.py` (script used to generate the CSV)
+- `<audit-bronmap>/robots.txt`
+- `<audit-bronmap>/urls.txt` (109 sitemap URLs)
+- `<audit-bronmap>/homepage.json` (rendered homepage + headers + redirect chain + structured data)
+- `<audit-bronmap>/home_raw.html` (raw homepage HTML — canonical/hreflang/og/viewport evidence)
+- `<audit-bronmap>/product.html` (raw product page HTML — JS-rendering evidence)
+- `<audit-bronmap>/url_check_results.csv` (per-URL status/canonical/meta-robots/hreflang/title for all 109 sitemap URLs)
+- `<audit-bronmap>/check_urls.py` (script used to generate the CSV)
+
+Opmerking padcontrole 2026-11-06: `<audit-bronmap>` is een plaatshouder voor de oorspronkelijke lokale bewijsbestanden. Deze bestanden staan niet in deze repo; de verwijzingen zijn geen beschikbare repo-links. De rapporten en `06_Website_Agent/Analyse/SEO-audit 2026-09-25/audit-data.json` staan wel in de repo.
 
 > Map: [[06 Website Agent — Index]]

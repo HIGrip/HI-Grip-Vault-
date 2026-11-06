@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-01
 | Source | Available | Result |
 |---|---|---|
 | Common Crawl Web Graph | Yes (public, no key) | `higrip.nl` and `www.higrip.nl` both **not found** in the current CC release (`cc-main-2026-jan-feb-mar`) |
-| Backlink Verification Crawler | Yes (public, no key) | Not run — requires a candidate list of known/suspected backlink URLs (`--links <file>`), which was not supplied. None were found already logged elsewhere in this audit's output directory (`C:/Users/lars/higrip.nl-audit/`) either. |
+| Backlink Verification Crawler | Yes (public, no key) | Not run — requires a candidate list of known/suspected backlink URLs (`--links <file>`), which was not supplied. None were found already logged elsewhere in this audit's output directory (`<audit-bronmap>/`) either. |
 | Moz Link Explorer | No | No API key configured |
 | Bing Webmaster Tools | No | No API key configured |
 | DataForSEO | No | Extension not installed |
@@ -73,5 +73,7 @@ These are qualitative, best-practice recommendations for a Dutch sport D2C brand
 ## 6. Validator check (mandatory pre-delivery step)
 
 Ran `validate_backlink_report.py` against the collected `cc_data`: **status PASS** (0 errors, 0 warnings, 1 info notice — the CC "not found ≠ low authority" caveat reproduced in Section 2 above). No health score was included in the input, consistent with the "insufficient data" conclusion.
+
+Opmerking padcontrole 2026-11-06: `<audit-bronmap>` is een plaatshouder voor de oorspronkelijke lokale bewijsbestanden. Deze bestanden staan niet in deze repo; de verwijzingen zijn geen beschikbare repo-links. De rapporten en `06_Website_Agent/Analyse/SEO-audit 2026-09-25/audit-data.json` staan wel in de repo.
 
 > Map: [[06 Website Agent — Index]]

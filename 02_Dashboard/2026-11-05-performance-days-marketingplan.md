@@ -208,7 +208,7 @@ Alleen uit besluiten van Lars en gevalideerde delen. Het betaalde-kanaaldeel (Me
 2. Mixen van 1.0 en 2.0; B2B, teamorders en ambassadeurs uitsluiten?
 3. Wanneer is CM1 en maximale CAC intern geverifieerd (alleen grens of ja/nee delen is genoeg)?
 4. Gedeeltelijke 1+1-retour en actievoorwaarden; juridische toets van het beleidsherstel.
-5. Aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (geen harde preheatdatum).
+5. Aank/modelondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (geen harde preheatdatum).
 6. Veilige credential-vrijgave voor de Meta MCP en live toets door een mens; geaggregeerde export alleen als terugval (na besluit over vraag 7).
 7. **Beslissing Lars (Ads-advies, voorstel):** maximaal 2 normale correcties zijn verbruikt en het advies telt 455 woorden bij een zelf opgelegd maximum van 400. Kies: (a) 455 accepteren als uitzondering, of (b) een extra inkortingsronde toestaan. Zonder besluit blijft het Ads-advies ongekeurd en wordt er niets overgenomen.
 

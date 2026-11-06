@@ -10,8 +10,8 @@ Date: 2026-09-25
 Viewports tested: Desktop 1440x900, Mobile 390x844 (iPhone Safari UA, DPR 2)
 Pages: Homepage (/), Product (/products/performance-gripsokken-2-0-zwart), Collection (/collections/gripsokken), Sport landing (/pages/gripsokken-voor-tennis)
 
-Screenshots: `C:/Users/lars/higrip.nl-audit/screenshots/{page}_{viewport}_{abovefold|fullpage}.png`
-Raw measurement data: `C:/Users/lars/higrip.nl-audit/screenshots/audit_data.json`, `audit_data_retry.json`
+Screenshots: `<audit-bronmap>/screenshots/{page}_{viewport}_{abovefold|fullpage}.png`
+Raw measurement data: `<audit-bronmap>/screenshots/audit_data.json`, `audit_data_retry.json`
 
 ## Findings (by severity)
 
@@ -60,7 +60,7 @@ Some automated data extraction runs printed "�" in place of €/Ï characters 
 - No layout-breaking overlaps or cut-off text found outside the cookie-banner/marquee issues above.
 
 ## Screenshot inventory
-`C:/Users/lars/higrip.nl-audit/screenshots/`
+`<audit-bronmap>/screenshots/`
 - `home_desktop_abovefold.png`, `home_desktop_fullpage.png`, `home_mobile_abovefold.png`, `home_mobile_fullpage.png`
 - `product-zwart_desktop_abovefold.png`, `product-zwart_desktop_fullpage.png`, `product-zwart_mobile_abovefold.png`, `product-zwart_mobile_fullpage.png`
 - `collection-gripsokken_desktop_abovefold.png`, `collection-gripsokken_desktop_fullpage.png`, `collection-gripsokken_mobile_abovefold.png`, `collection-gripsokken_mobile_fullpage.png`

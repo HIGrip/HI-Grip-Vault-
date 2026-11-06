@@ -238,7 +238,7 @@ mobile traces could not compute here.
 ## Raw data
 
 Lighthouse JSON reports saved at:
-`C:/Users/lars/higrip.nl-audit/lh/{home,product,collection,tennis}-{mobile,desktop}.json`
+`<audit-bronmap>/lh/{home,product,collection,tennis}-{mobile,desktop}.json`
 
 ## Summary & Performance Score
 
@@ -266,5 +266,7 @@ pages tested; desktop alone averages ~82/100 "Good," mobile is effectively
 so this is a reasoned estimate from the LCP/TBT evidence above, not a
 Lighthouse-reported figure). **This is a lab-data estimate; treat as
 directional until confirmed against CrUX field data.**
+
+Opmerking padcontrole 2026-11-06: `<audit-bronmap>` is een plaatshouder voor de oorspronkelijke lokale bewijsbestanden. Deze bestanden staan niet in deze repo; de verwijzingen zijn geen beschikbare repo-links. De rapporten en `06_Website_Agent/Analyse/SEO-audit 2026-09-25/audit-data.json` staan wel in de repo.
 
 > Map: [[06 Website Agent — Index]]

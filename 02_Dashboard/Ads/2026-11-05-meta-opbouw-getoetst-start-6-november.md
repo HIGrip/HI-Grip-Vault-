@@ -83,7 +83,17 @@ Timo wil niet dat het budget meteen op gaat en koos voor lager testen. Dat beper
 - Opschalen alleen als kosten per aankoop rond ±€24,50 uitkomen. Het budget voor de Performance Days is een apart besluit.
 - Voorraad: het beste scenario vraagt ±48 paar per maand.
 
+### Advies 6 november: start met één sport
+Timo vroeg of één sport testen slimmer is. Advies, nog geen besluit: begin met rugby in één set van €20 per dag met 3 ads, en voeg voetbal pas toe na de Performance Days.
+- Elke ad krijgt dan gemiddeld ±€93 in plaats van ±€47. De set krijgt ±4 tot 8 winkelwagens per week in plaats van ±2 tot 4 per set.
+- Rugby eerst: het is de hoofdhoek van de Performance Days, de exacte zoekterm "rugby socks" gaf geen actieve beeldads, en 101 clubs maken de groep overzichtelijk.
+- Tegenargument: rugby heeft de kleinste markt. Bij €280 en CPM €11 zijn er ±25.000 vertoningen, dus verzadiging is op dit budget geen risico, maar opschalen later wel.
+- Een sportvergelijking wordt zo niet bewezen: voetbal later testen valt in een andere periode. Boodschap en aanbod zijn wel mee te nemen, de doelgroep niet.
+- Correctie: het eerdere omvangsverschil van ±74× gebruikte KNVB-leden. Het feitenbestand noemt voor de beachhead voetbal 10.000 tot 50.000 actieve sporters per maand tegen rugby 17.000. Het verschil is dan veel kleiner.
+- Eén sport lost de meting niet op. Die blijft de eerste voorwaarde vóór livegang.
+
 ## Wat niet lukte
+- De alleen-lezen Meta-koppeling gaf op 6 november HTTP 401 (token niet leesbaar). Uitgaven, CTR en pixelstatus zijn dus nog niet opgehaald.
 - Ads Manager vraagt om inloggen: geen uitgaven of CTR van de eigen test, en geen controle van product browsing.
 - De Ad Library toont geen verkoop of omzet.
 - Bombas, Stance en hardloopzoektermen in NL zijn niet uitgelezen. De zoekopdracht rugby leverde vooral aangrenzende merken op, geen rugby-sok.

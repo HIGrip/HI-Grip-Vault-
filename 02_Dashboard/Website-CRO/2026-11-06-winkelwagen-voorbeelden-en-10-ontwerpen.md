@@ -8,7 +8,7 @@ routine: ""
 categorie: CRO
 status: nieuw
 prioriteit: P2
-samenvatting: "Bij Stance, Upfront, Allbirds, Trusox en rhode zijn vijf bruikbare patronen gevonden; directe concurrent Trusox heeft alleen een standaard winkelwagenpagina. Daaruit zijn 10 eigen HÏ Grip-ontwerpen gemaakt op een canvas, met de echte prijzen van 2.0. Ronde 2 voegt 5 varianten toe op basis van 1, 6 en 9, voor laptop en mobiel, met een melding bij 2 of 4 paar, Trustpilot en een grotere afrekenknop."
+samenvatting: "Bij Stance, Upfront, Allbirds, Trusox en rhode zijn vijf bruikbare patronen gevonden; directe concurrent Trusox heeft alleen een standaard winkelwagenpagina. Daaruit zijn 10 eigen HÏ Grip-ontwerpen gemaakt op een canvas, met de echte prijzen van 2.0. Ronde 2 voegt 5 varianten toe op basis van 1, 6 en 9, voor laptop en mobiel, met een melding bij 2 of 4 paar, Trustpilot en een grotere afrekenknop. Ronde 3 werkt variant 15 uit in zwart en wit, met de juiste prijs bij 4 paar."
 gerelateerd: [2026-11-05-winkelwagen-section-store-weer-actief, 2026-11-04-snelheid-vergelijking-andere-webshops]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/RPA3ioUEocakSKhsv7m12f"
@@ -25,11 +25,13 @@ Vijf webshops zijn bekeken met een testartikel in de wagen. Hun aanpak is vertaa
 - **5** · webshops bekeken (Gymshark laadde niet goed)
 - **10** · ontwerpen in ronde 1, waarvan 4 klikbaar (2, 6, 7, 8)
 - **5** · varianten in ronde 2, alle klikbaar, elk op laptop en mobiel
-- **€1,85** · goedkoper met 5 paar dan met 4 los (€69,95 tegen €71,80)
+- **2** · versies in ronde 3: zwart (16) en wit (17)
+- **€7,05** · meer voor het vijfde paar (4 paar €62,90, 5 paar €69,95)
 
 ## Acties
-- [ ] P2 · Besluit: kies 1 of 2 ontwerpen uit het canvas om in het werkthema te bouwen
 - [ ] P2 · In het werkthema uitzoeken of de melding bij 2 of 4 paar de regels kan omzetten naar de 3-pack of 5-pack, zodat de korting echt wordt toegepast
+- [ ] P1 · Controleren of iDEAL in de checkout beschikbaar is en waarom het niet in de betaallijst van de site staat
+- [ ] P2 · Besluit: zwart (16) of wit (17) kiezen om in het werkthema te bouwen
 - [ ] P3 · Besluit: Trustpilot in de lade als vaste tekst met link houden (geen extra script), en het aantal reviews bijwerken als dat verandert
 - [ ] P2 · Besluit: kostprijs per paar vastleggen, nodig voor ontwerp 6 (gratis paar vanaf een drempel)
 
@@ -66,13 +68,25 @@ Gekozen door Team HÏ Grip: ontwerp 1, 6 en 9. Nieuw in alle vijf: melding bij 2
 
 De rekensom achter de melding, bij losse paren in één maat:
 - 2 paar: €35,90. 1 erbij kost €9,05 en geeft 3 voor €44,95.
-- 4 paar: €71,80. 1 erbij maakt het €1,85 goedkoper: 5 voor €69,95.
+- 4 paar: €62,90, want dat is een 3-pack plus 1 los paar. 1 erbij kost €7,05 en geeft 5 voor €69,95.
 
-Als de 4 paar al uit een 3-pack plus 1 los bestaan, is het totaal €62,90 en kost de stap naar 5 juist €7,05 extra. De tekst moet dus uit de echte samenstelling van de wagen volgen.
+Correctie door Team HÏ Grip: varianten 11 tot en met 15 rekenen nog met 4 losse paren (€71,80) en tonen daardoor een prijsdaling van 4 naar 5 paar. Dat klopt niet. Ronde 3 gebruikt de juiste prijzen; ronde 2 is als vergelijking blijven staan.
 
 De pack-korting loopt via een regeleigenschap van Section Store. Eén paar erbij toevoegen is dus niet genoeg: de melding moet de regels omzetten naar het pack. Dat is nog niet gebouwd of getest.
 
 Trustpilot: 4,6 en 21 reviews uit het feitenbestand (stand 5 november). Geen quotes, omdat er geen controleerbare klantquotes zijn.
+
+### 4. Ronde 3: variant 15 uitgewerkt in zwart en wit
+Variant 15 is gekozen als beste. Aanpassingen in 16 (zwart) en 17 (wit):
+- Doelenbalk uit variant 12.
+- Laptop als smalle lade rechts, zoals variant 12.
+- Kortingscode als uitklapbare rij boven de afrekenknop.
+- Trustpilot onder de afrekenknop, met daaronder de betaalmethoden.
+- De regel toont de samenstelling, zoals "3-pack + 1 los".
+
+Contrast op wit: volt op wit is nauwelijks zichtbaar, dus de balk is daar zwart en de knop zwart met een volt pijlcirkel. Volt staat op wit alleen op een zwart vlak. Alle tekst in 16 en 17 haalt minimaal 4,5:1, gemeten in de lokale weergave.
+
+Betaalmethoden: de 9 die de footer van higrip.nl toont, via `shop.enabled_payment_types`. In het echte thema volgt de lijst automatisch de instellingen.
 
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.
@@ -83,6 +97,8 @@ Trustpilot: 4,6 en 21 reviews uit het feitenbestand (stand 5 november). Geen quo
 - Ronde 2 is niet in het canvas zelf bekeken. Gecontroleerd is een lokale weergave van dezelfde code: laptop 1180 breed, mobiel 390 en een klein scherm van 360 bij 640, waar de afrekenknop in beeld blijft. De rekenlogica is apart getest.
 - De Trustpilot-pagina gaf een botcontrole en is niet opnieuw gelezen; de cijfers komen uit het feitenbestand.
 - Niet getest op een echte telefoon.
+- iDEAL staat niet in de betaallijst van de site, terwijl oudere vault-notities iDEAL wel noemen. De betaalstap van de checkout is niet bekeken, omdat daarvoor persoonsgegevens ingevuld moeten worden.
+- In ronde 3 is de knop Toepassen bij de kortingscode en de afrekenknop niet werkend; dat is alleen ontwerp.
 
 ## Bronnen
 - stance.com, upfront.nl, allbirds.com, tru.online, rhodeskin.com, bekeken op 6 november 2026 met een testartikel; wagens daarna geleegd (Allbirds niet)

@@ -108,6 +108,16 @@ Timo wees erop dat alleen rugby te weinig soorten ads test. Dat klopt, dus het a
 - **Beeld:** vier echte clubshoots zijn voetbal. Rugby heeft geen eigen shoot, alleen AI-beelden in de Drive en een stockachtige foto in de vault. De soort situatie krijgt een actiebeeld vanaf de taille, zonder gezicht en zonder vreemd merk: voor rugby een uitsnede van de bestaande Instagram-post, voor voetbal een shootfoto met toestemming van de club. Klantwoord, aanbod en vergelijking blijven productbeelden. Actie tegen product is niet getest.
 - **Afgewezen voor nu:** aparte retargeting (groep te klein), flexibel advertentieformaat (maakt onduidelijk welke soort wint), Meta's eigen creatietest (gedrag volgens Jon Loomer wisselend), bereikcampagne.
 
+### Benchmarks en cases, 6 november
+Timo vroeg om onderzoek naar Meta-data en echte cases, omdat de eerste test geen goede maat is. De eerdere CPM van €11 was een aanname. Advies blijft: rugby, 1 set, 5 ads, €20 per dag. Dit is nog geen vastgelegd besluit.
+- **CPM NL:** meerdere bronnen komen uit op ±$8 tot $12. Superads meet een hogere mediaan, $16,7 in november 2025 en $29,5 in juli 2026 (valuta niet bevestigd). Reken voor november op ±€11 tot €15, dus ±19.000 tot 25.000 vertoningen voor €280.
+- **Kleding (Triple Whale, via zoekresultaat, pagina zelf niet leesbaar):** CTR 2,44%, CVR 1,47%, CPA $36,98, ROAS 2,24, CPM $13,25. Dat zijn gevestigde merken; niet één op één overnemen.
+- **Aankopen:** bij CPA ±€32 zijn dat ±9 aankopen voor €280. Bandbreedte wordt ±1 tot 9, tegen ±12 voor quitte.
+- **Opbouw:** gidsen adviseren bij $10 tot $20 één set; ads per set lopen uiteen van 2 tot 4 tot maximaal 8. Skaleit test 5 sets, maar op £50 tot £100 per dag, en is een bureau zonder controlegroep.
+- **Leerfase:** ±50 resultaten vraagt bij €17 tot €37 per winkelwagen ±€49 tot €106 per dag. €20 haalt dat niet.
+- **Partnership-ads:** Meta-studie via Aspire: 3,9% lagere kosten per aankoop.
+- **Niet gevonden:** onafhankelijke test op $20 per dag, sokken-case, kosten per winkelwagen voor kleding. Meta's Help Center-tekst was niet leesbaar.
+
 ## Wat niet lukte
 - De alleen-lezen Meta-koppeling gaf op 6 november HTTP 401 (token niet leesbaar). Uitgaven, CTR en pixelstatus zijn dus nog niet opgehaald.
 - Ads Manager vraagt om inloggen: geen uitgaven of CTR van de eigen test, en geen controle van product browsing.
@@ -129,5 +139,9 @@ Timo wees erop dat alleen rugby te weinig soorten ads test. Dat klopt, dus het a
 - [Jon Loomer, creatietest](https://www.jonloomer.com/meta-creative-testing/)
 - [Jon Loomer, flexibel advertentieformaat](https://www.jonloomer.com/flexible-ad-format/)
 - [Marketing Week, de 95:5-regel](https://www.marketingweek.com/peter-weinberg-jon-lombardo-95-5-rule/)
+- [Superads, CPM Nederland](https://www.superads.ai/facebook-ads-costs/cpm-cost-per-mille/netherlands)
+- [Triple Whale, benchmarks](https://www.triplewhale.com/blog/facebook-ads-benchmarks)
+- [Skaleit, ABO en CBO bij klein budget](https://skaleit.agency/blog/meta-ads-cbo-vs-abo-small-budget-testing/)
+- [Aspire, partnership-ads](https://www.aspire.io/blog/top-5-partnership-ads-instagram-facebook)
 
 ## Aantekeningen

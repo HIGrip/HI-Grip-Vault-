@@ -38,7 +38,7 @@ Alle open acties uit [[2026-10-08-audit-higrip-nl-seo-aeo-geo-aio-sxo-nieuwe-run
 - [x] P1 · Besluit: aantal sporters vastleggen; de aankondigingsbalk op bijna elke NL-pagina en de productpagina's zeggen "3500+", de homepage-meta, `/en/` en het feitenbestand zeggen "3000+"
 - [x] P1 · Meta description en AboutPage-schema van /pages/over-ons van "4 gedreven sporters" naar drie founders zetten; de paginatekst zegt sinds deze week "Drie founders één missie"
 - [ ] P1 · Beleid plakken in Instellingen → Beleid (refund, verzending, voorwaarden art. 4 en 6) uit `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`
-- [ ] P1 · Homepage-meta in Online Store → Voorkeuren van 3000+ naar 3500+ sporters zetten
+- [x] P1 · Homepage-meta in Online Store → Voorkeuren van 3000+ naar 3500+ sporters zetten
 - [x] P1 · Collectie-USP "3000+ sporters gingen je voor" naar 3500+ in de thema-editor (live `collection.json` is via de CLI geweigerd)
 - [x] P2 · EN-H1 van de drie sportpagina's herstellen: titelvelden in de sport-hero invullen en "Grip socks for" als EN-vertaling registreren
 - [ ] P2 · Wekelijkse check op verouderde EN-vertalingen met feiten (tijden, bedragen, termijnen, aantallen) toevoegen aan de SEO-regressiecheck

@@ -37,7 +37,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 Zoek gericht; lees dit niet in zijn geheel.
 
-- Ads: 7 notities
+- Ads: 8 notities
 - B2B-en-leveranciers: 3 notities
 - Dashboard-en-vault: 7 notities
 - Growth-radar: 8 notities
@@ -47,7 +47,7 @@ Zoek gericht; lees dit niet in zijn geheel.
 - Social-en-video: 1 notities
 - Strategie-en-concurrentie: 3 notities
 - Website-CRO: 7 notities
-- Website-techniek: 6 notities
+- Website-techniek: 7 notities
 - Weekoverzichten: 2 notities
 - _backlog: 2 notities
 - _build: 1 notities

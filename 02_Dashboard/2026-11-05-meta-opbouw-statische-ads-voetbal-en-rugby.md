@@ -34,7 +34,7 @@ De grootste blokkade zit niet in Meta. Alle maten van de 2.0 staan in Shopify ne
 - [ ] P1 · Voorraad 2.0 fysiek tellen en de negatieve telling per maat en kleur verklaren vóór er ads op draaien
 - [ ] P1 · Werkelijke verzend-, verpakkings- en betaalkosten per bestelling vaststellen en de marge van ±€24,50 herrekenen
 - [ ] P1 · In Events Manager controleren of bekijken, winkelwagen en aankoop binnenkomen zonder dubbeltelling
-- [ ] P1 · Teksten op de landingspagina's voor voetbal en rugby controleren op absolute claims voordat er betaald verkeer naartoe gaat
+- [x] P1 · Teksten op de landingspagina's voor voetbal en rugby controleren op absolute claims voordat er betaald verkeer naartoe gaat
 - [ ] P2 · 4 statische concepten per sport maken, elk in 4:5 en 9:16, met eigen foto's waarvan de rechten vaststaan
 - [ ] P2 · Bij groen licht de campagne opzetten met twee sets van €10 per dag en leerdoel winkelwagen, door een mens
 - [ ] P2 · Winterstopdata per amateurcompetitie en het rugbyschema controleren en de planning vanaf 21 december daarop aanpassen

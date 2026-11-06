@@ -45,6 +45,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Koppeling
 - [[Ads Koppeling — Installatie (Hermes en Claude Code)]]
+- [[Ads Koppeling — Installatieprompt voor collega]]
 
 ### Profiel
 - [[Ads Koppeling — Meta alleen-lezen]]

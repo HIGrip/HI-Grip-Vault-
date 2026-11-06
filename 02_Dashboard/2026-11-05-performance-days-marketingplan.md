@@ -111,12 +111,12 @@ Aantallen zijn klein (7 aankopen en circa 410 sessies in 28 dagen; zie open punt
 ### 3b. Beleidspagina's: sitecheck 05-11-2026
 Bewijs: de vier pagina's zijn op 05-11 gelezen op de publieke site. Niets gewijzigd.
 
-| Pagina | Inhoud nu | Status |
-|---|---|---|
-| /policies/shipping-policy | bestellingen vóór 16:00 dezelfde dag verzonden (PostNL) | Verouderd, botst met 1 werkdag |
-| /pages/verzendbeleid | binnen 1 werkdag, €4,50, gratis vanaf €35, alleen Nederland | Basisregel, klopt met Feiten |
-| /policies/refund-policy | 14 dagen, ongeopend, 25% herbevoorradingskosten, refund binnen 14 dagen na ontvangst | Verouderd, botst met 30 dagen; juridisch risico (Compliance To-Do Lijst §4.2) |
-| /pages/retourbeleid | 30 dagen, uitpakken en bekijken mag, terugbetaling inclusief verzendkosten bestelling, terugsturen op kosten klant | Basisregel, klopt met Feiten |
+| Pagina                    | Inhoud nu                                                                                                          | Status                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| /policies/shipping-policy | bestellingen vóór 16:00 dezelfde dag verzonden (PostNL)                                                            | Verouderd, botst met 1 werkdag                                                |
+| /pages/verzendbeleid      | binnen 1 werkdag, €4,50, gratis vanaf €35, alleen Nederland                                                        | Basisregel, klopt met Feiten                                                  |
+| /policies/refund-policy   | 14 dagen, ongeopend, 25% herbevoorradingskosten, refund binnen 14 dagen na ontvangst                               | Verouderd, botst met 30 dagen; juridisch risico (Compliance To-Do Lijst §4.2) |
+| /pages/retourbeleid       | 30 dagen, uitpakken en bekijken mag, terugbetaling inclusief verzendkosten bestelling, terugsturen op kosten klant | Basisregel, klopt met Feiten                                                  |
 
 Onderscheid:
 - **Bestaande basisregel (Lars, 25-09-2026):** verzending binnen 1 werkdag, €4,50, gratis vanaf €35, 30 dagen retour, geen 25%, geen ongeopend-eis. Denzel bevestigde vandaag dat de oude pagina's verouderd zijn.

@@ -2753,6 +2753,48 @@
   "wat_claude_doet": "Bever met contactgegevens toevoegen aan de B2B-lijst voor de Performance Ski Socks",
   "wat_jij_doet": "beoordelen en eventueel contact leggen"
  },
+ "2026-11-04-ads-resultaten-verbeteringen#4a24cd97": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Naamgevingsconventie voorstellen",
+  "wat_jij_doet": "Toepassen in Meta Ads Manager"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#54053379": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Wekelijkse leesronde organiseren"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#577e76a4": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Conversions API controleren in Meta Events Manager"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#58ba66a0": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "LCP-meting en UTM-check uitvoeren",
+  "wat_jij_doet": "Event-test in Events Manager"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#a8f21ebb": {
+  "beoordeeld": "2026-11-06",
+  "claude": "ja",
+  "wat_claude_doet": "De trechteranalyse toepassen zodra campagnedata beschikbaar is",
+  "wat_jij_doet": "Controleren"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#ad0abfe2": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit om de export te sturen naar Denzel"
+ },
+ "2026-11-04-ads-resultaten-verbeteringen#c3dd6291": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Video produceren in UGC-stijl"
+ },
  "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
   "beoordeeld": "2026-11-05",
   "claude": "ja",
@@ -2764,6 +2806,228 @@
   "claude": "ja",
   "wat_claude_doet": "per Section Store/fd-product-groups/essential-a-b-testing-app vastleggen of hij bij openen moet laden, kan wachten tot interactie of weg kan, met Upfront als referentie, in de werkthema-notitie",
   "wat_jij_doet": "concept controleren en akkoord geven"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#30c868e9": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptteksten voor ronde 2 voorstellen",
+  "wat_jij_doet": "Rechten controleren en produceren"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#848437c6": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Voorraad fysiek tellen"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#a82c3f2b": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming regelen of een andere review kiezen"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#b8c2dc43": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Campagne opzetten op 20 euro per dag"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#d5b80c53": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Evalueren en besluiten op 21 november"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#d8ede3dd": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Testen in Events Manager en via de Conversions API"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#e46b366c": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit over wat kopers van het 3-pack zien"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
+  "beoordeeld": "2026-11-06",
+  "claude": "ja",
+  "wat_claude_doet": "Claim getoetst aan de claimregels en conceptcorrectie voorgesteld",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#fe6d6bda": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptteksten per sport voorstellen",
+  "wat_jij_doet": "Produceren en klaarzetten"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#00dc839c": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Eigen fotos maken en 4 concepten produceren"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#12787ad4": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Campagne opzetten bij groen licht"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#8f0c74ca": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Werkelijke kosten vaststellen en de marge herrekenen"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#92ce559f": {
+  "beoordeeld": "2026-11-06",
+  "claude": "ja",
+  "wat_claude_doet": "Teksten controleren op absolute claims en zo nodig corrigeren in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#94280aec": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Winterstopdata per competitie opzoeken",
+  "wat_jij_doet": "De planning aanpassen"
+ },
+ "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#ed9806c9": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen en de prijs in de winkel zetten"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#1e3a62cc": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Controleren in Meta Ads Manager"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#55c230f5": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming regelen en het spelersverhaal verzamelen"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#567365db": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Op deze regel letten bij het schrijven van nieuwe ad-copy",
+  "wat_jij_doet": "Bewaken bij elke nieuwe ad-review"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#69f35f55": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Campagne opzetten op 35 euro per dag"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#a36f0a3e": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Leeftijdsgrens instellen in Meta Ads Manager"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#a44aecbe": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Leestoken aanmaken in Meta Business-instellingen"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#d2ee361e": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptrichtingen en teksten per concept voorstellen",
+  "wat_jij_doet": "Echte foto's maken en de concepten produceren"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#ea8e1158": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit over maximale kosten per nieuwe klant"
+ },
+ "2026-11-05-meta-plan-35-euro-per-dag#fa4aec84": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptteksten per nieuwe batch voorstellen",
+  "wat_jij_doet": "Produceren en toevoegen"
+ },
+ "2026-11-05-performance-days-marketingplan#0a6253d6": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptteksten voor de twee beleidspaginas voorstellen",
+  "wat_jij_doet": "Herstellen en besluiten over retourvoorwaarden"
+ },
+ "2026-11-05-performance-days-marketingplan#111b7fe4": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit over aankondigingsdatum en vroege toegang"
+ },
+ "2026-11-05-performance-days-marketingplan#2ad37458": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit van Lars over het Ads-advies"
+ },
+ "2026-11-05-performance-days-marketingplan#3505cc3f": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Cart-concept corrigeren naar de CTA-merkregel",
+  "wat_jij_doet": "Besluit Design Agent en Lars"
+ },
+ "2026-11-05-performance-days-marketingplan#5f1be960": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Interne verificatie van CM1 en CAC door Team HI Grip"
+ },
+ "2026-11-05-performance-days-marketingplan#70daf066": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen over mix, uitsluiting en verzendregel"
+ },
+ "2026-11-05-performance-days-marketingplan#73316c15": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Landingssectie en campagnestand bouwen in het werkthema na akkoord",
+  "wat_jij_doet": "Akkoord geven en T1 tot T16 beoordelen"
+ },
+ "2026-11-05-performance-days-marketingplan#d2b128f5": {
+  "beoordeeld": "2026-11-06",
+  "claude": "ja",
+  "wat_claude_doet": "vault_nav.py draaien en de navigatieregels controleren",
+  "wat_jij_doet": "Controleren"
+ },
+ "2026-11-05-performance-days-marketingplan#fb5b8ace": {
+  "beoordeeld": "2026-11-06",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Bepalen wie de rechten per uiting controleert"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
+  "beoordeeld": "2026-11-06",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptfix voor de Nederlandse kop en de dubbele prijsregel op cart in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#2377a2b7": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Testthema 204029296967 controleren en een conceptadvies voor livegang schrijven",
+  "wat_jij_doet": "In de browser testen met een geldige kortingscode en 3-pack, besluiten en block-cart live uitzetten"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#4452a01d": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Voorstel voor de knopkleur volgens de CTA-merkregel in de vault",
+  "wat_jij_doet": "Besluiten en de CSS-variabele in hi-cart.css toepassen"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
+  "beoordeeld": "2026-11-06",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptvoorstel voor de knopstijl volgens de merkregel",
+  "wat_jij_doet": "Visueel controleren in de browser en live zetten"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

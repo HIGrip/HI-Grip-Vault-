@@ -30,7 +30,8 @@ Daarmee is de winkelwagenwinst uit [[2026-11-03-snelheid-werkthema-02]] weer weg
 - **129 ms** · lade open na klik (één meting, snelle laptop)
 
 ## Acties
-- [ ] P1 · Controle en besluit livegang: eigen lade in zwart met volt in werkthema 204029296967 op geldige kortingscode en 3-pack testen, daarna block-cart op live uit
+- [ ] P1 · Besluit livegang: eigen lade in zwart met volt uit werkthema 204029296967 naar live en block-cart uit (3-pack en kortingscode zijn getest op 6-11)
+- [ ] P3 · Codes die niet samengaan met de pakketkorting (zoals TENNIS20) vervangen die korting; op een 5-pack zou 20% op €89,75 uitkomen op €71,80, duurder dan de pakketprijs van €69,95 (berekend, niet getest)
 - [ ] P2 · Besluit: knoppen in de lade volt laten of naar wit op zwart (merkregel CTA); één variabele in hi-cart.css
 - [ ] P3 · Pagina /cart: kop "Cart" naar Nederlands; prijs staat dubbel in de regel (onder de titel en rechts)
 - [ ] P3 · Cookiebanner: knoppen Accepteren en Afwijzen zijn volt gevuld
@@ -69,8 +70,25 @@ In werkthema `204029296967` (lokale git-kopie: map `theme-snelheid/werkthema-051
 - Getest op telefoon: openen, aantal wijzigen, verzendbalk gehaald, verwijderen, lege lade, geen script van Section Store. Op desktop: openen en weergave.
 - Livegang vraagt om deze bestanden plus de embed uit. De Section Store-app zelf blijft staan, want de pakketkorting draait daarop.
 
+### 5. Test 3-pack en kortingscode (6-11, werkthema, telefoonformaat)
+Bedragen uit `/cart.js`, gelijk aan wat de lade toont. Ze worden server-side berekend en hangen dus niet af van het thema.
+
+| Winkelwagen | Korting | Code | Totaal | Afrekenknop |
+|---|---|---|---|---|
+| 3-pack | -€8,90 | geen | €44,95 | Afrekenen • €44,95 |
+| 3-pack + TTL10 | -€8,90 | -€4,49 | €40,46 | Afrekenen • €40,46 |
+| 3-pack + TENNIS20 | vervalt | -€10,77 | €43,08 | Afrekenen • €43,08 |
+
+- De 3-pack is toegevoegd via de echte knop op de productpagina; `__section_store_bundle` staat op de regel en de korting werkt zonder het script van Section Store in de pagina.
+- TTL10 gaat samen met de pakketkorting. De code staat als pil met kruisje en verwijderen werkt.
+- TENNIS20 mag niet samen met andere kortingen. Shopify laat dan de pakketkorting vallen. De lade toont dat goed: de regel gaat terug naar €53,85, de rij Korting wordt -€6,00 (van adviesprijs €59,85) en de som klopt.
+- Bij de eerste toevoeging aan een lege wagen stond de lade open met de tekst "leeg" tot het herladen van de inhoud klaar was. Dat is de overgang `fill-cart-drawer` van Horizon, die in een zichtbaar venster een fractie van een seconde duurt. In deze test lag het venster verborgen, dus de echte duur is niet gemeten.
+- HI30 is geen geldige code: het is het voorvoegsel van deellinkcodes (`HI30-XXXXXXXX`). De eerdere conclusie "werkt niet op dit product" was fout.
+- Testwagen en codes zijn verwijderd. Op live is niets gewijzigd.
+
 ## Wat niet lukte
-- Geldige kortingscode en 3-pack zijn niet getest in de nieuwe lade. HI30 gaf `applicable: false` op dit product; de foutmelding verscheen wel goed.
+- Kortingscode en lade zijn in deze test via de knoppen in de pagina bediend (script), omdat muisklikken in het verborgen venster verschoven. Openen via het mandje is op 5-11 getest.
+- De duur van de overgang bij de eerste toevoeging is niet gemeten.
 - De eigen lade is niet getimed naast de Section Store-lade.
 - Openen van de Section Store-lade is één meting op de laptop, zonder vertraging.
 

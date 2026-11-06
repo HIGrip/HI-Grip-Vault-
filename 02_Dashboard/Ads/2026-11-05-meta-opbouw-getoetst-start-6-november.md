@@ -35,6 +35,8 @@ Twee eerdere blokkades kloppen niet. Het 3-pack 2.0 van €44,95 staat al live a
 - [ ] P1 · Campagne door een mens opzetten op €20 per dag met start 7 november 00:01, ads op 6 november insturen omdat de controle door Meta tijd kost
 - [ ] P1 · 3 concepten per sport klaarzetten in 4:5 en 9:16: situatie, klantwoord, aanbod
 - [ ] P1 · Toestemming regelen voor de klantquote in de ad, of een andere echte review kiezen
+- [ ] P1 · Op 14 november de zwakste soort ad vervangen door de soort vergelijking, in beide sporten
+- [ ] P1 · Statics van de soort vergelijking klaarzetten vóór 14 november in 4:5 en 9:16
 - [ ] P2 · Op 21 november evalueren: budget, ronde 2 en per sport beslissen of de sets apart blijven
 - [ ] P2 · Ronde 2 op 21 november: bewijs-ad, spelersverhaal en partnership-ad met één voetballer en één rugbyspeler, na controle van de rechten
 - [ ] P2 · "Geen blaren" op de productpagina 2.0 toetsen aan de claimregels vóór er betaald verkeer naartoe gaat
@@ -84,13 +86,27 @@ Timo wil niet dat het budget meteen op gaat en koos voor lager testen. Dat beper
 - Voorraad: het beste scenario vraagt ±48 paar per maand.
 
 ### Advies 6 november: start met één sport
-Timo vroeg of één sport testen slimmer is. Advies, nog geen besluit: begin met rugby in één set van €20 per dag met 3 ads, en voeg voetbal pas toe na de Performance Days.
+Ingetrokken op 6 november, zie het plan hieronder. Timo vroeg of één sport testen slimmer is. Advies toen: begin met rugby in één set van €20 per dag met 3 ads, en voeg voetbal pas toe na de Performance Days.
 - Elke ad krijgt dan gemiddeld ±€93 in plaats van ±€47. De set krijgt ±4 tot 8 winkelwagens per week in plaats van ±2 tot 4 per set.
 - Rugby eerst: het is de hoofdhoek van de Performance Days, de exacte zoekterm "rugby socks" gaf geen actieve beeldads, en 101 clubs maken de groep overzichtelijk.
 - Tegenargument: rugby heeft de kleinste markt. Bij €280 en CPM €11 zijn er ±25.000 vertoningen, dus verzadiging is op dit budget geen risico, maar opschalen later wel.
 - Een sportvergelijking wordt zo niet bewezen: voetbal later testen valt in een andere periode. Boodschap en aanbod zijn wel mee te nemen, de doelgroep niet.
 - Correctie: het eerdere omvangsverschil van ±74× gebruikte KNVB-leden. Het feitenbestand noemt voor de beachhead voetbal 10.000 tot 50.000 actieve sporters per maand tegen rugby 17.000. Het verschil is dan veel kleiner.
 - Eén sport lost de meting niet op. Die blijft de eerste voorwaarde vóór livegang.
+
+### Plan 6 november na toetsing: twee sporten, zes ads in een raster
+Timo wees erop dat alleen rugby te weinig soorten ads test. Dat klopt, dus het advies om met één sport te starten vervalt. Dit is een voorstel, nog geen besluit.
+- **Waarom toch twee sporten:** ook met één sport haalt een set de ±50 resultaten per week niet (±4 tot 8 winkelwagens). Dat voordeel was dus kleiner dan gesteld.
+- **Raster:** dezelfde 3 soorten ads in beide sporten, 2 × 3 = 6 ads. Elke sport krijgt €140 en elke soort, opgeteld over beide sporten, ±€93. Alleen het sportbeeld en de eerste zin verschillen.
+- **Bovengrens:** €280 bij CPM €11 geeft ±25.000 vertoningen. Bij 3.800 per variant (uit [[2026-10-25-ab-test-ads-features-vs-beste]]) passen er maximaal 6 varianten. Dat geldt alleen voor CTR, niet voor verkoop.
+- **Eén campagne, twee sets met vast setbudget van €10:** zo krijgt elke sport hetzelfde geld. Binnen een set verdeelt Meta de ads niet gelijk, dus de vergelijking tussen soorten blijft een richting.
+- **Meer soorten via een wissel:** op 14 november gaat de zwakste soort eruit en komt de soort vergelijking erin. Zo zijn er in 14 dagen 4 soorten getest.
+- **95/5:** de regel komt uit B2B-onderzoek (Dawes, 2021) en is een denkmodel; het percentage voor sokken is niet bekend. Situatie en vergelijking zijn voor wie niet zoekt, klantwoord voor twijfelaars, aanbod voor wie nu wil kopen.
+- **Funnel:** geen aparte funnelcampagnes op dit budget. De funnel zit in de ads en in de tijd: 7 tot en met 20 november koud, 27 tot en met 30 november warm publiek met het 1+1-aanbod. Het budget daarvoor blijft een apart besluit.
+- **Verkoop, geen bereik:** de grootste ad ging eerder naar 55-plussers en vrouwen toen er vrijwel geen aankoopsignaal was. Een bereikdoel versterkt dat risico.
+- **Stopregels per ad vervallen:** bij de scenario's stopt uit na €25 zonder winkelwagen een goede ad in 26% tot 69% van de gevallen door toeval, uit na €50 zonder aankoop in 26% tot 80%. Nieuw: geen enkele ad uit vóór 14 november, behalve bij een fout of afkeuring. De rem van minder dan 3 winkelwagens na €140 blijft.
+- **Beeld:** vier echte clubshoots zijn voetbal. Rugby heeft geen eigen shoot, alleen AI-beelden in de Drive en een stockachtige foto in de vault. Gebruik daarom in beide sporten een productbeeld, zoals de sok vóór het woord RUGBY uit ad 4A.
+- **Afgewezen voor nu:** aparte retargeting (groep te klein), flexibel advertentieformaat (maakt onduidelijk welke soort wint), Meta's eigen creatietest (gedrag volgens Jon Loomer wisselend), bereikcampagne.
 
 ## Wat niet lukte
 - De alleen-lezen Meta-koppeling gaf op 6 november HTTP 401 (token niet leesbaar). Uitgaven, CTR en pixelstatus zijn dus nog niet opgehaald.
@@ -110,5 +126,8 @@ Timo vroeg of één sport testen slimmer is. Advies, nog geen besluit: begin met
 - [Jon Loomer, Advantage+ Audience](https://www.jonloomer.com/advantage-audience-vs-original-audiences/)
 - [Jon Loomer, budgetflexibiliteit](https://www.jonloomer.com/qvt/increased-budget-flexibility/)
 - [Digital Position, uitgaven boven budget](https://digitalposition.com/resources/blog/ppc/why-youre-overspending-on-meta-ads/)
+- [Jon Loomer, creatietest](https://www.jonloomer.com/meta-creative-testing/)
+- [Jon Loomer, flexibel advertentieformaat](https://www.jonloomer.com/flexible-ad-format/)
+- [Marketing Week, de 95:5-regel](https://www.marketingweek.com/peter-weinberg-jon-lombardo-95-5-rule/)
 
 ## Aantekeningen

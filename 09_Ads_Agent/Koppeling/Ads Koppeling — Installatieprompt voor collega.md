@@ -20,7 +20,7 @@ DOEL (klaar als alles klopt)
 
 HARDE VEILIGHEIDSREGELS (nooit overtreden)
 - Schrijf nooit paden van mijn of andermans computer (een pad dat met een schijfletter en gebruikersmap begint) in vaultnotities of gedeelde bestanden. Gebruik in de vault alleen vault-relatieve paden; machine-specifieke paden blijven in mijn eigen ~/.claude.
-- Vraag nooit om mijn token in de chat en typ of toon nooit een token. Het token zet ik zelf in mijn eigen terminal. Jij geeft mij alleen het commando met <token> als plaatshouder.
+- Vraag nooit om mijn token in de chat en typ of toon nooit een token. Het token zet ik zelf in mijn eigen terminal. Jij geeft mij alleen het commando met HIER_JE_TOKEN als plaatshouder, zonder punthaken, en zegt dat ik het token zonder haakjes, spaties of aanhalingstekens invul.
 - Zet het token nooit in een bestand, .env, config, omgevingsvariabele of in ~/.claude.json.
 - De koppeling mag alleen-lezen zijn (alleen `ads_read`). Bouw of activeer nooit een schrijf-, aanmaak- of verwijderroute.
 - De agent mag nooit advertentiecontent maken en nooit zelf iets uitvoeren. Een mens doet alles in Ads Manager.
@@ -45,7 +45,8 @@ Geef mij deze instructie en wacht tot ik bevestig dat het gedaan is:
  a. Een beheerder van het advertentieaccount maakt het token aan (ik hoef dan zelf geen app te bouwen).
  b. Controle door de beheerder: app staat Live en heeft Marketing API.
  c. Token met ALLEEN `ads_read`.
- d. In mijn eigen terminal: cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:<token>
+ d. In mijn eigen terminal: cmdkey /generic:HIGRIP_META_ADS_TOKEN /user:meta /pass:HIER_JE_TOKEN
+ Ik vervang HIER_JE_TOKEN door het token, zonder haakjes, spaties of aanhalingstekens. Een Meta-token begint met EAA.
 Controleer daarna alleen of de referentie bestaat: `cmdkey /list | grep -i HIGRIP_META` (toon nooit de waarde).
 Let op: maak het token met ALLEEN ads_read. Het programma weigert tokens met onbekende extra rechten (bv. whatsapp_*, instagram_*) en kan hoe dan ook alleen lezen (alleen GET).
 
@@ -58,6 +59,7 @@ Heb ik de vault-leestools (mcp__higrip-vault) niet? Laat die tools dan weg uit h
 STAP 5 – TEST
 - `claude mcp list`: meta-ads moet Connected zijn.
 - Roep het script rechtstreeks aan met een MCP-initialize en daarna tools/call `meta_account_info` (stdin), met META_AD_ACCOUNT_ID gezet, en toon alleen het eerste deel van het antwoord.
+- Foutmelding "Cannot parse access token (code 190)": de opgeslagen waarde is onleesbaar, bijvoorbeeld door haakjes of spaties. Laat mij het token opnieuw opslaan volgens stap 3d. Dit is geen probleem bij Meta.
 - Foutmelding "API access blocked (code 200)": de app staat niet Live, mist Marketing API, of het systeemgebruiker-token heeft geen toegang tot dit account. Leg dat uit en verwijs naar stap 3. Dit is geen installatiefout.
 - Vraag mij daarna Claude Code te herstarten en `/ads-agent geef een korte samenvatting van de laatste 7 dagen` te proberen.
 

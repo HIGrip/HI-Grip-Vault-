@@ -109,7 +109,7 @@ def get_token():
     t = os.environ.get("META_ADS_TOKEN", "").strip() or _cred_read(CRED_TARGET)
     if not t:
         raise ToolError("Geen Meta-token gevonden in de Windows-referentiekluis (doel %s). "
-                        "Lars slaat hem op met: cmdkey /generic:%s /user:meta /pass:<token>" % (CRED_TARGET, CRED_TARGET))
+                        "Sla hem op met: cmdkey /generic:%s /user:meta /pass:HIER_JE_TOKEN (zonder haakjes)" % (CRED_TARGET, CRED_TARGET))
     if t not in _SECRETS:
         _SECRETS.append(t)
     return t

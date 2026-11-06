@@ -8,7 +8,7 @@ routine: ""
 categorie: CRO
 status: nieuw
 prioriteit: P2
-samenvatting: "Bij Stance, Upfront, Allbirds, Trusox en rhode zijn vijf bruikbare patronen gevonden; directe concurrent Trusox heeft alleen een standaard winkelwagenpagina. Daaruit zijn 10 eigen HÏ Grip-ontwerpen gemaakt op een canvas, met de echte prijzen van 2.0. Ronde 2 voegt 5 varianten toe op basis van 1, 6 en 9, voor laptop en mobiel, met een melding bij 2 of 4 paar, Trustpilot en een grotere afrekenknop. Ronde 3 werkt variant 15 uit in zwart en wit, met de juiste prijs bij 4 paar."
+samenvatting: "Bij Stance, Upfront, Allbirds, Trusox en rhode zijn vijf bruikbare patronen gevonden; directe concurrent Trusox heeft alleen een standaard winkelwagenpagina. Daaruit zijn 10 eigen HÏ Grip-ontwerpen gemaakt op een canvas, met de echte prijzen van 2.0. Ronde 2 voegt 5 varianten toe op basis van 1, 6 en 9, voor laptop en mobiel, met een melding bij 2 of 4 paar, Trustpilot en een grotere afrekenknop. Ronde 3 en 4 werken variant 15 uit in zwart en wit, met de juiste prijs bij 4 paar en een gratis paar vanaf €75."
 gerelateerd: [2026-11-05-winkelwagen-section-store-weer-actief, 2026-11-04-snelheid-vergelijking-andere-webshops]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/RPA3ioUEocakSKhsv7m12f"
@@ -25,13 +25,14 @@ Vijf webshops zijn bekeken met een testartikel in de wagen. Hun aanpak is vertaa
 - **5** · webshops bekeken (Gymshark laadde niet goed)
 - **10** · ontwerpen in ronde 1, waarvan 4 klikbaar (2, 6, 7, 8)
 - **5** · varianten in ronde 2, alle klikbaar, elk op laptop en mobiel
-- **2** · versies in ronde 3: zwart (16) en wit (17)
+- **2** · versies in ronde 4, de nieuwste: zwart (18) en wit (19)
+- **€75** · drempel gratis paar, besluit Team HÏ Grip, nog niet live
 - **€7,05** · meer voor het vijfde paar (4 paar €62,90, 5 paar €69,95)
 
 ## Acties
 - [ ] P2 · In het werkthema uitzoeken of de melding bij 2 of 4 paar de regels kan omzetten naar de 3-pack of 5-pack, zodat de korting echt wordt toegepast
 - [ ] P1 · Controleren of iDEAL in de checkout beschikbaar is en waarom het niet in de betaallijst van de site staat
-- [ ] P2 · Besluit: zwart (16) of wit (17) kiezen om in het werkthema te bouwen
+- [ ] P2 · Besluit: zwart (18) of wit (19) kiezen om in het werkthema te bouwen
 - [ ] P3 · Besluit: Trustpilot in de lade als vaste tekst met link houden (geen extra script), en het aantal reviews bijwerken als dat verandert
 - [ ] P2 · Besluit: kostprijs per paar vastleggen, nodig voor ontwerp 6 (gratis paar vanaf een drempel)
 
@@ -87,6 +88,16 @@ Variant 15 is gekozen als beste. Aanpassingen in 16 (zwart) en 17 (wit):
 Contrast op wit: volt op wit is nauwelijks zichtbaar, dus de balk is daar zwart en de knop zwart met een volt pijlcirkel. Volt staat op wit alleen op een zwart vlak. Alle tekst in 16 en 17 haalt minimaal 4,5:1, gemeten in de lokale weergave.
 
 Betaalmethoden: de 9 die de footer van higrip.nl toont, via `shop.enabled_payment_types`. In het echte thema volgt de lijst automatisch de instellingen.
+
+### 5. Ronde 4: verfijning op 16 en 17
+Versies 18 (zwart) en 19 (wit):
+- Gratis paar vanaf €75. Met packs ligt die grens boven de 5-pack (€69,95), dus pas vanaf 6 paar (5-pack + 1 los, €87,90). Daarom gaat de teller in het ontwerp tot 6.
+- Eén korte zin boven de balk; gratis verzending staat als label onder het eerste punt, met een vinkje zodra het is gehaald.
+- Afrekenknop: prijs en pijl samen in een vlak dat aan drie kanten 8 pixels van de rand ligt.
+- Gratis paar als eigen kaart met foto, doorgestreepte prijs en maatkeuze.
+- Kop "Jouw winkelwagen", Trustpilot zonder aantal reviews, iDEAL als eerste betaallogo.
+
+Het iDEAL-logo komt uit de openbare `payment_icons`-map van Shopify. Op de site zit iDEAL niet in `shop.enabled_payment_types`: staat het straks niet automatisch in de lijst, dan moet het logo met de hand erbij, en alleen als iDEAL echt aanstaat.
 
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.

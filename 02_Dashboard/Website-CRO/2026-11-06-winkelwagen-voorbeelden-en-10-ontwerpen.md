@@ -30,9 +30,10 @@ Vijf webshops zijn bekeken met een testartikel in de wagen. Hun aanpak is vertaa
 - **€7,05** · meer voor het vijfde paar (4 paar €62,90, 5 paar €69,95)
 
 ## Acties
-- [ ] P2 · In het werkthema uitzoeken of de melding bij 2 of 4 paar de regels kan omzetten naar de 3-pack of 5-pack, zodat de korting echt wordt toegepast
 - [ ] P1 · Controleren of iDEAL in de checkout beschikbaar is en waarom het niet in de betaallijst van de site staat
-- [ ] P2 · Besluit: zwart (22) of wit (23) kiezen om in het werkthema te bouwen
+- [ ] P2 · Witte lade (23) op een echte telefoon nalopen in het werkthema en daarna besluiten of die live gaat
+- [ ] P2 · Besluit: expresknoppen PayPal en Google Pay in de lade terugzetten of weglaten; ze staan in het werkthema uit omdat ontwerp 23 ze niet heeft
+- [ ] P1 · Korting gratis paar vanaf €75 laten aanmaken door een mens, daarna kaart en tweede doel op de balk bouwen
 - [ ] P3 · Besluit: Trustpilot in de lade als vaste tekst met link houden (geen extra script), en het aantal reviews bijwerken als dat verandert
 - [ ] P2 · Besluit: kostprijs per paar vastleggen, nodig voor ontwerp 6 (gratis paar vanaf een drempel)
 
@@ -118,6 +119,30 @@ Versies 22 (zwart) en 23 (wit), op basis van feedback op 21:
 
 Een laag scherm (360 bij 640) moet het middendeel nog scrollen om de melding te zien.
 
+### 8. Variant 23 gebouwd in het werkthema
+Wit (23) staat in werkthema 204029296967, niet live. Getest op de preview op 375 en 500 breed.
+
+| Situatie | Regels | Totaal in de knop |
+|---|---|---|
+| 1 paar | los | €22,45 inclusief €4,50 verzending |
+| 2 paar | melding +1, 3e paar €9,05 | €35,90 |
+| 3 paar | 3-pack, €14,98 per paar | €44,95 |
+| 4 paar | 3-pack plus Extra paar, melding +1, 5e paar €7,05 | €62,90 |
+| 5 paar | 5-pack, €13,99 per paar | €69,95 |
+| 6 paar | 5-pack plus Extra paar | €87,90 |
+| 3 paar in twee maten | Packprijs op beide regels | €44,95 |
+| 2 paar zonder pack-eigenschap | +1 zet ze om, daarna 3-pack | €44,95 |
+| 3 paar met TENNIS20 | code vervangt packkorting, geen melding | €43,08 |
+
+Werking: de +1 gebruikt dezelfde route als de stepper. Regels zonder pack-eigenschap krijgen die eerst, anders geeft Shopify geen packkorting. Shopify splitst zelf in pack en los paar, de lade zet het pack boven het losse paar. De melding geldt alleen bij 2 of 4 paar van een product en verdwijnt bij een kortingscode.
+
+Afwijkingen van het ontwerp:
+- Gratis paar en tweede doel op de balk zijn niet gebouwd: er is nog geen korting die het paar echt gratis maakt, en de lade mag dat niet beloven.
+- De expresknoppen PayPal en Google Pay staan in de lade uit omdat ontwerp 23 ze niet heeft. In de checkout blijven ze.
+- De prullenbak bij pack-regels is gebleven, anders kost een pack weghalen vijf klikken.
+- Bij 1 en 2 paar staat ook "Korting" door de adviesprijs van €19,95. Naast een pack telt alleen de packkorting.
+- Het totaal rekent €4,50 mee onder de €35. Bij een ander tarief per land wijkt dat af van de checkout.
+
 ## Wat niet lukte
 - Gymshark laadde niet goed in de browser en is niet meegenomen. Nike is niet bekeken.
 - Bij Allbirds is alleen de lege lade gezien. Bij Stance en Trusox alleen de winkelwagenpagina, niet een lade.
@@ -126,8 +151,8 @@ Een laag scherm (360 bij 640) moet het middendeel nog scrollen om de melding te 
 - Voor rugby is geen foto gebruikt in ontwerp 10.
 - Ronde 2 is niet in het canvas zelf bekeken. Gecontroleerd is een lokale weergave van dezelfde code: laptop 1180 breed, mobiel 390 en een klein scherm van 360 bij 640, waar de afrekenknop in beeld blijft. De rekenlogica is apart getest.
 - De Trustpilot-pagina gaf een botcontrole en is niet opnieuw gelezen; de cijfers komen uit het feitenbestand.
-- Niet getest op een echte telefoon.
-- iDEAL staat niet in de betaallijst van de site, terwijl oudere vault-notities iDEAL wel noemen. De betaalstap van de checkout is niet bekeken, omdat daarvoor persoonsgegevens ingevuld moeten worden.
+- Niet getest op een echte telefoon. De build is getest in de browser op 375 en 500 breed.
+- iDEAL staat niet in de betaallijst van de site, terwijl oudere vault-notities iDEAL wel noemen. De betaalstap van de checkout is niet bekeken, omdat daarvoor persoonsgegevens ingevuld moeten worden. Het logo staat op verzoek in het werkthema; Shopify toont het als iDEAL met Wero.
 - In ronde 3 is de knop Toepassen bij de kortingscode en de afrekenknop niet werkend; dat is alleen ontwerp.
 
 ## Bronnen

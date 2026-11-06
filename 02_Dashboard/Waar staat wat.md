@@ -47,7 +47,7 @@ Zoek gericht; lees dit niet in zijn geheel.
 - Social-en-video: 1 notities
 - Strategie-en-concurrentie: 3 notities
 - Website-CRO: 7 notities
-- Website-techniek: 6 notities
+- Website-techniek: 7 notities
 - Weekoverzichten: 2 notities
 - _backlog: 2 notities
 - _build: 1 notities

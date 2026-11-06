@@ -6,8 +6,6 @@ status: klaar voor gebruik; nog niet door een collega uitgeprobeerd
 
 # Ads Koppeling — Installatieprompt voor collega
 
-> Map: [[09 Ads Agent — Index]]
-
 Plak de tekst hieronder in Claude Code op de computer van de collega. Gids en achtergrond: [[Ads Koppeling — Installatie (Hermes en Claude Code)]]. Het token krijgt de collega niet via deze notitie: dat komt van een beheerder, via een veilig kanaal.
 
 ```
@@ -69,3 +67,5 @@ GECONTROLEERD: wat je echt hebt uitgevoerd, met de echte uitkomst.
 NIET GECONTROLEERD: wat niet kon (bv. live Meta-data).
 BESLISSING VOOR MIJ: alleen wat ik nog moet doen of kiezen.
 ```
+
+> Map: [[09 Ads Agent — Index]]

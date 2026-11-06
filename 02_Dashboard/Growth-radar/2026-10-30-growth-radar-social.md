@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter het probleem dat al zichtbaar was in de lopende A/B-test: een ad set onder de leerdrempel van ongeveer 50 conversies per week draait zo'n 28% duurder per aankoop, en de huidige campagne optimaliseert op een event ('Betaalproces starten') met 0 resultaten. Daarnaast geeft Meta nu algemeen beschikbare AI-videogeneratie uit bestaande productfoto's — een gratis tussenstap voor videocreatives vóór de geplande eigen opname."
-gerelateerd: [2026-10-09-growth-radar-social, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-29-ads-funnel-en-snelheid-productpagina]
+gerelateerd: [2026-10-09-growth-radar-social, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-11-06-growth-radar-social]
 vervangt: []
 bronbestand: ""
 deadline: ""

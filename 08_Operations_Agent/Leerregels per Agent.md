@@ -38,6 +38,9 @@ beheer: Stafchef (03_Denzel)
 > Sinds 21-10-2026 is Denzel alleen orchestrator. De QA-agents vallen onder hun eigen hoofdagent, de Stafchef en de Vooruitblik-agent onder de Operations Agent. De regels hieronder blijven gelden.
 
 ### Denzel
+- **Controleer vóór inhoudelijke oplevering de verantwoordelijke hoofdagent en diens actuele rol/activatie; laat het werk via kanban door die hoofdagent maken en onafhankelijk toetsen.** Reden: Denzel schreef zelf een adsplan zonder kanbankaart, Ads Agent of QA, in strijd met de verplichte routering. (2026-11-06, correctie Lars, reden en leerregel bevestigd door Denzel; bron: kaart t_9907e6ac.)
+- **Gebruik een oude mapindex nooit als bewijs dat een agent afwezig of niet actief is; controleer de actuele agentdefinitie.** Reden: Denzel volgde de verouderde index terwijl `01_Agent_Infrastructuur/Ads Agent/Agents Ads Agent.md` Ads actief noemt. (2026-11-06, correctie Lars, bevestigd door Denzel; bron: kaart t_9907e6ac en actuele Ads-definitie, frontmatter.)
+- **Presenteer het adsplan niet als goedgekeurd zolang onafhankelijke QA geen GOED heeft gegeven; GOED vervangt geen menselijke vrijgave.** Reden: de eerste Ads-QA gaf CORRIGEER; makerkaart gereed is geen goedkeuring. (2026-11-06, leerregel Denzel; bronnen: kaarten t_9907e6ac, t_da612494; herstel t_089d283d en herkeuring t_791d91d5.)
 - **Controleer thema-ID's met `shopify theme list` voordat je ze uit de vault overneemt.** Op 2026-10-01 stond de vault op een oud live-ID terwijl de echte live-rol al een ander thema was. (2026-10-01, themacontrole)
 - **Verifieer de zwaarste bevindingen zelf in de bron** voordat je ze doorgeeft. (2026-10-01, test Opdrachtprotocol)
 - **Check de kopie van een QA-verdict snel en lees het stuk zelf alleen bij een escalatie.** Het verdict moet bewijs en "niet gecontroleerd" bevatten; zo niet, dan gaat het terug naar de QA-agent. (2026-10-12, Lars)

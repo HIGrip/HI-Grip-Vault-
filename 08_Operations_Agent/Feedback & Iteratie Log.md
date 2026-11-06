@@ -10,6 +10,16 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-06 — Denzel: routeringsfout adsplan en herstel via Ads/QA
+
+**Feedback:** Lars corrigeerde Denzel op 6 november: 'Nee, ik heb de Ads Agent niet gebruikt. Het plan heb ik zelf geschreven, zonder kanbankaart, sub-agent of QA. dan is het al fout'. Bron: opdrachtkaart t_9907e6ac. **Agent:** Denzel. **Sterren:** niet gegeven; geen cijfer geregistreerd.
+**Reden (door Denzel bevestigd in de overdracht):** inhoudelijk adsplan zelf geschreven in strijd met verplichte routering; verouderde mapindex gebruikt voor activatiestatus terwijl `01_Agent_Infrastructuur/Ads Agent/Agents Ads Agent.md` Ads actief noemt.
+**Vastgelegd bij Denzel in [[Leerregels per Agent]]:** vóór inhoudelijke oplevering verantwoordelijke hoofdagent en actuele rol/activatie controleren; via kanban laten maken met onafhankelijke QA; oude index nooit als bewijs van afwezigheid; tot GOED niet als goedgekeurd presenteren. Geen nieuwe autonomie of eigen leerregels toegevoegd.
+**Voortgang bij registratie:** maker t_3f033c4c gereed; onafhankelijke Ads-QA t_da612494 geeft **CORRIGEER** (bronconflict en meetvertraging). Herstel t_089d283d loopt; herkeuring t_791d91d5 wacht op herstel. Dit zijn bronstatussen van gelezen kaarten, geen eigen inhoudelijk oordeel. Plan nog niet goedgekeurd; menselijke besluiten/vrijgaven blijven apart nodig. Voortgang staat in [[Agent Werk & Kwaliteit Overzicht]], sectie Denzel.
+**Grenzen:** inhoudelijke notitie `02_Dashboard/Ads/2026-11-06-meta-plan-minimaal-2-weken.md` niet gewijzigd; niets afgevinkt en geen backlog gewijzigd.
+
+---
+
 ## 2026-11-05 — Performance Days: Website-QA CORRIGEER; twee leerregels vastgelegd
 
 **Wat er gebeurde:** Website lead bundelde het adviesrapport ([[2026-11-05-performance-days-marketingplan]]); Website-QA gaf CORRIGEER (rekenfout regel 100, btw-basis ROAS onduidelijk, 1+1/verzending zonder test). Correctie en herkeuring volgen als aparte kaarten; status in het kwaliteitslog: Teruggestuurd, correctie loopt.

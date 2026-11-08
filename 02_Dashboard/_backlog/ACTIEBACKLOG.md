@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 6 november 2026 (actiecontrole)
-Open: 31 · Afgerond: 9 (5 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 8 november 2026 (actiecontrole)
+Open: 30 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -37,18 +37,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 **Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
 **Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
-### [x] 1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)
-**Bevestigd:** 3 november 2026 door actiecontrole — performance-gripsokken toont een tekstblok met verzendkosten 4,50 euro en gratis verzending vanaf 35 euro
-**Update 2 okt 2026 (vault-review):** sinds 28-9 zijn de prijzen weer €14,95 / €41,95 / €64,95 (zie [[Feiten & Actuele Staat]]). Balktekst bij 1-pack wordt dus "Nog €20,05 tot gratis verzending"; de bedragen hieronder zijn achterhaald. Het punt blijft staan.
-**Update 24 sep 2026:** Live prijzen en drempel zijn veranderd: 1-pack €13,49, verzendkosten €4,50, drempel volgens announcementbar €35 (FAQ zegt nog €30 — eerst gelijktrekken, zie P1-actie in vault-notitie `2026-09-23-seo-conversietest-run-1`). Omdat het 3-pack per paar nog maar €0,17 goedkoper is dan een 1-pack, is gratis verzending nu hét argument voor het 3-pack — dit punt weegt daardoor zwaarder. Balktekst bij 1-pack: "Nog €21,51 tot gratis verzending". Laat het bedrag uit één theme-setting komen, niet hardcoded.
-**Waarom:** 48% van de Nederlandse winkelwagenverlating komt door onverwachte verzendkosten — het grootste enkele conversielek dat er is. Je 1-pack kost €13,49, je drempel ligt op €35. Elke 1-pack-koper loopt in die verrassing.
-**Waar:** `snippets/product-information-content.liquid`, direct onder de prijs
-**Wat:** Voortgangsbalk met "Nog €21,51 tot gratis verzending" die meerekent met de gekozen pack-variant. Bij 3-pack en 5-pack verandert hij in "✓ Gratis verzending".
-**Effect:** Grootste verwachte conversiewinst van deze hele lijst. Duwt bovendien richting 3-pack.
-**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** deels klaar in het werkthema, niet live: balk in het winkelwagenvenster (`snippets/free-shipping-bar.liquid`, drempel als thema-instelling, standaard €35) en een vertrouwensregel op de 2.0-productpagina uit dezelfde drempel. Nog niet: de balk op de productpagina die per pack meerekent.
-**Update 12 okt 2026 (verouderd-check):** de prijsupdates hierboven kloppen niet meer. Live staat de 1.0 op 1-pack €14,95 · 3-pack €35,95 · 5-pack €54,95 (Section Store bundle-block; 3- en 5-pack tonen al 'Gratis verzending'). De balktekst bij een 1-pack blijft 'Nog €20,05 tot gratis verzending'. Het argument 'het 3-pack is per paar maar €0,17 goedkoper' vervalt: het scheelt nu €2,97 per paar. De €30 in de FAQ staat niet meer live.
-**Inspanning:** Half dagdeel
-
 ### [ ] 2. Reviewapp koppelen — pas dáárna AggregateRating (herzien 15 sep 2026)
 **Waarom:** Sterren in de SERP verhogen de doorklikratio zichtbaar. Maar de volgorde was omgekeerd: `snippets/product-schema.liquid` bevatte al een `aggregateRating` met een hardcoded 4,5 uit 7 beoordelingen, terwijl er geen enkele zichtbare review op de productpagina staat. Dat is precies de overtreding die hieronder gewaarschuwd werd. Bij de audit van 15 september is die node **verwijderd**; het bestand rendeerde nog niet op de remote, dus het is nooit live geweest.
 **Waar:** eerst Shopify admin (reviewapp), daarna pas `snippets/product-schema.liquid`
@@ -57,20 +45,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Update 11 okt 2026 (weekonderhoud):** staat sinds 15 sep (26 dagen) zonder beweging op P1 — de drieweken-regel slaat aan. Niet verlaagd naar P2, want de CTR-winst blijft relevant zodra een reviewapp gekoppeld is; wel expliciet als blokkade gemarkeerd: dit punt wacht op een menselijke keuze (reviewapp koppelen) en kan niet door Claude worden opgepakt.
 **Effect:** Hogere CTR op je belangrijkste zoekterm zonder dat je positie hoeft te stijgen.
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
-
-### [x] 4. Controleer je variant-ID's tegen de Merchant Center-eis van maart 2026 (herzien 16 sep 2026 — opgewaardeerd naar P1)
-**Bevestigd:** 5 november 2026 door actiecontrole — alle 8 varianten (2x 1.0, 6x 2.0) hebben nu een gevulde barcode/EAN (bv. 6154419797731, 9110024809242), conform de Merchant Center-eis
-**Waarom:** Producten met afwijkende attributen onder één ID riskeren verwerkingsproblemen en afkeuringen. Jij hebt zes varianten onder één product. Op NRF 2026 kondigde Google vier AI-shoppingfuncties aan (Universal Commerce Protocol, Native Checkout, Business Agent, Direct Offers) die allemaal leunen op dezelfde Merchant Center-feed — inclusief Universal Cart, dat producten laat toevoegen vanuit Search, Gemini, YouTube en Gmail. Een foutieve variant-ID kost dus niet meer alleen een Shopping-ad, maar ook zichtbaarheid in Google's AI Mode.
-**Waar:** Shopify Merchant Center-feedinstellingen
-**Wat:** Per variant een uniek, stabiel ID. Controleer of Shopify's feed dat correct doorgeeft.
-**Extra controlepunt (toegevoegd 21 sep 2026):** Google verhoogt de minimale productafbeelding-eis naar 500×500px (universeel, nu al als waarschuwing zichtbaar, hard vanaf 31 januari 2027). Gecontroleerd op higrip.nl: hoofdproductfoto's zijn 1024×1024 en 1536×1024 — ruim boven de eis. Geen actie nodig, alleen meenemen als checkpunt zodra je nieuwe productfoto's upload (bijv. voor de skisokken).
-**Extra controlepunt (toegevoegd 28 sep 2026):** Google's oude Content API for Shopping (voedt deze feed) geeft sinds 1 september 2026 al progressieve HTTP 410-fouten voor wie niet is overgezet naar de nieuwe Merchant API; volledige uitschakeling begin 2027. Shopify's native Google & YouTube-kanaal migreert gefaseerd vanzelf, maar product-ID's kunnen daarbij wijzigen — dezelfde app die volgens punt 11 ook op de riskante "Optimized"-pixelstand staat. Controleren: is de migratie voor `raqds3-tb` voltooid, en zijn product-ID's gewijzigd?
-**Extra controlepunt (toegevoegd 30 sep 2026):** Universal Cart (NRF 2026-aankondiging) is geen concept meer: sinds 19 mei 2026 live in de VS, met AP2 als betaallaag (inmiddels overgedragen aan de FIDO Alliance). Uitbreiding naar de Gemini-app volgde deze zomer; Nederland/Europa staat nog niet op de rolluit-lijst. Geen actie nu, maar bevestigt dat dezelfde Merchant Center-feed straks ook de ingang voor Universal Cart wordt zodra dat naar Europa komt.
-**Update 12 okt 2026 (verouderd-check):** 'zes varianten onder één product' klopt niet meer. De 1.0 heeft 2 maatvarianten (34-39 en 40-46). De 2.0 is gesplitst in twee producten (zwart en wit) met elk 3 maten (35-38, 39-42, 43-47). Packs zijn geen varianten maar een app-bundel. GTIN/EAN is bij alle varianten nog leeg.
-**Extra controlepunt (toegevoegd 14 okt 2026):** Universal Cart/UCP (zie 30 sep) krijgt meer vorm voor Europa: het Verenigd Koninkrijk wordt genoemd als eerste Europese markt (na Canada en Australië), een DACH-uitrol is nog niet aangekondigd. Nexi Group en Google Cloud tekenden op 3 maart 2026 een MoU om agentic-commerce-infrastructuur (UCP/AP2-standaarden) in Europa op te bouwen — dit is infrastructuurwerk, nog geen productlancering. Nederland wordt nergens genoemd. Geen actie, blijft volgen.
-**Extra controlepunt (toegevoegd 4 nov 2026):** Shopify's Fall '26 Edition (shopify.com/editions/fall2026, eind okt 2026) voegt "Shopify Catalog" toe als apart mechanisme naast de Merchant Center-feed: dit voedt de agentic storefronts (Google AI Mode, Gemini-app) en de "shop skill" van agents zoals ChatGPT/Claude. De pagina noemt geen VS-beperking, in tegenstelling tot de eerdere Agentic Storefronts (zie 23 sep 2026). Geschiktheidscheck en het nieuwe agent-kennisbestand staan als los punt 28 in de backlog; dit punt (Merchant Center/GTIN) blijft daarnaast nodig voor Google Shopping zelf.
-**Update 19 okt 2026 (seo-conversietest, auditblok B):** concrete invulling klaar, niet live gezet. Voor de zes 2.0-varianten is een ondubbelzinnige GTIN-koppeling te maken uit de EAN-lijst in [[Performance Grip Socks 2.0]]: PGSZ201→9110024809242, PGSZ202→9110024809259, PGSZ203→9110024809266, PGSW201→9110024809211, PGSW202→9110024809228, PGSW203→9110024809235. Voor de 1.0-varianten (GS110, GS100) staat geen EAN in het bronbestand — blijft `[CHECK]`. Voorgestelde `productType` voor alle drie producten: "Sportsokken". Volledig mutatievoorstel (met `validate_graphql_codeblocks`-controle) in het Shopify-logboek `seo-routine-logboek`, RUN 5 — nog niet uitgevoerd, vereist een go van Lars.
-**Inspanning:** 2 uur
 
 ### [ ] 10. Conversions API (CAPI) instellen (herzien 18 sep 2026, aangevuld 25 sep 2026, 9 okt 2026)
 **Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op "Betaalproces starten" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar "Content bekijken" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.
@@ -130,14 +104,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Dubbel — organische autoriteit én de citeerbare bron die AI-assistenten nodig hebben om jou aan te bevelen.
 **Inspanning:** 1 dag
 
-### [x] 6. Schrijf de vraagpagina's antwoord-eerst, mét FAQPage-schema (herzien 22 sep 2026)
-**Bevestigd:** 3 november 2026 door actiecontrole — pagina bevat een FAQPage JSON-LD blok met meerdere Question en acceptedAnswer paren, antwoorden beginnen direct met de definitie
-**Update 29 sep 2026:** Google breidt AI Overviews sinds 28 augustus 2026 bevestigd automatisch uit tot de volle lengte voor vragen waar het systeem dat nuttig acht — de knop "Toon meer" vervalt dan en de vervolgvraagbox opent vanzelf, richting AI Mode in plaats van terug naar de gewone resultaten. Effect: blauwe links (dus ook een eventuele toekomstige positie van higrip.nl) komen bij die vragen nog verder onder de vouw. Versterkt de al bestaande reden voor dit punt — geciteerd worden in het antwoord weegt zwaarder naarmate er minder organische ruimte overblijft. Geen nieuw punt, alleen extra gewicht.
-**Waarom:** 31% zoekt inmiddels via generatieve AI; LLM-verkeer converteert op 5,53% tegen 3,7% organisch. Vraagvormige long-tails komen in die antwoorden terecht — mits de conclusie bovenaan staat. **Terugdraaiing t.o.v. 15 sep:** toen is `FAQPage`-schema geschrapt omdat de AI Overviews-gids zei dat structured data "niet vereist" is voor AI-citaties — dat klopt nog steeds, maar onderzoek van maart 2026 (Universiteit van Tokio/Tsukuba) laat zien dat een schone kop-en-antwoordstructuur ~2,8× vaker geciteerd wordt door AI-antwoordmachines, en dat het specifieke "antwoordcapsule"-patroon een gemeten +17,3% citatiekans oplevert over zes engines. Niet vereist ≠ geen effect. Concurrent FitSockr heeft bovendien al een ongestructureerde blogpost live op exact de long-tail "wat zijn gripsokken" — reden om hier niet halfslachtig in te zitten.
-**Welke:** "Waarom glijdt mijn voet in mijn padelschoen?" · "Wat zijn gripsokken?" · "Tapedesign alternatief"
-**Format:** Direct onder elke vraag-H2 een zelfstandige alinea van 40-60 woorden die de vraag volledig beantwoordt, zonder link of opmaak erin. Onderbouwing en eventuele link komen in de alinea daarna. `FAQPage` JSON-LD eronder — niet voor rich results (die bestaan niet meer sinds mei 2026), maar als machineleesbare, vooraf afgebakende vraag-antwoordparen voor AI-crawlers.
-**Inspanning:** 1 dag voor alle drie
-
 ### [ ] 7. Productvideo van 30–60 seconden op de productpagina
 **Waarom:** Meest consistent bewezen CRO-tactiek van 2026: +10 tot 30% conversie. Geen enkele andere losse ingreep haalt dat betrouwbaarheidsniveau.
 **Wat:** De sok in actie — slide-out op de padelbaan, close-up van de grip. Geen praatvideo.
@@ -178,13 +144,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.
 **Inspanning:** 15 minuten
 
-### [x] 17. Titel/meta van de oude productpagina-URL optimaliseren of nieuwe canonical laten indexeren (nieuw 25 sep 2026)
-**Bevestigd:** 3 november 2026 door actiecontrole — hi-grip-gripsokken-1 redirect 301 naar performance-gripsokken met titel, meta description en zelfreferentiele canonical
-**Waarom:** Search Console-meting (routine "Search Console & rankings", eerste run): `/products/hi-grip-gripsokken-1` trekt met 310 vertoningen in 7 dagen (1.003 in 28 dagen) verreweg de meeste vertoningen van alle pagina's op higrip.nl, maar met een CTR van 0,32% — ruim onder elke andere pagina. De nieuwe canonieke handle `performance-gripsokken` (zie feitenbestand) trekt via de 2.0-varianten veel minder vertoningen (65–162), wat erop wijst dat Google het rankingsignaal nog niet volledig naar de nieuwe URL heeft overgezet ondanks de redirect (opgelost 21 sep, zie regressie-actie hierboven).
-**Waar:** Search Console → URL-inspectie/indexering, en de titel/meta die Google nu toont voor de oude URL
-**Wat:** Nagaan of de oude URL opnieuw geïndexeerd moet worden gemeld, en of de getoonde titel/meta in de SERP nog van de oude pagina komt.
-**Gevonden op:** 25 september 2026 (Search Console & rankings)
-
 ### [ ] 18. "Grip socks" consolideren — vier eigen URL's concurreren om dezelfde term (nieuw 25 sep 2026)
 **Waarom:** Search Console-meting: de zoekterm "grip socks" (112 vertoningen/7 dagen, 613/28 dagen) rankt afwisselend via `/en/collections/gripsokken`, `/collections/gripsokken`, `/collections/all` en `/`, zonder dat één pagina domineert. De gemiddelde positie voor de hele term (10,3) is zwakker dan wat de sterkste pagina alleen zou moeten kunnen halen — kannibalisatie.
 **Waar:** Canonical tags en interne links tussen de vier genoemde URL's
@@ -219,14 +178,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 8 oktober 2026 (Search Console & rankings)
 
-### [x] 25. [search-console] Titel/meta van `/en/pages/gripsokken-voor-voetbal` herschrijven (nieuw 14 okt 2026)
-**Bevestigd:** 6 november 2026 door actiecontrole — Titel en meta description zijn specifiek Engels en op de zoekterm gericht, hreflang nl/en/x-default correct
-**Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt goed — positie 7,6 (7 dagen, 65 vertoningen) resp. 7,3 (28 dagen, 107 vertoningen) — maar trok in geen van beide periodes één klik (0% CTR). Zelfde patroon als bij de al bekende punten 19, 21 en 22: een goede positie zonder klikken wijst op een titel/omschrijving die niet aansluit bij de zoekintentie.
-**Waar:** `/en/pages/gripsokken-voor-voetbal` — titel en meta description via Shopify admin
-**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie (o.a. "football grip socks", "grip socks football"); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
-**Gevonden op:** 14 oktober 2026 (Search Console & rankings)
-
-### [ ] 26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)
+### [x] 26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)
+**Bevestigd:** 8 november 2026 door actiecontrole — EN-titel is nu Grip Socks Maximum Grip for Every Sport HI Grip en de EN-description noemt padel soccer en tennis, duidelijk anders dan en gericht op de Engelse zoekintentie t.o.v. de NL-titel
 **Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.
 **Waar:** `/en/products/performance-gripsokken` — titel en meta description via Shopify admin
 **Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.

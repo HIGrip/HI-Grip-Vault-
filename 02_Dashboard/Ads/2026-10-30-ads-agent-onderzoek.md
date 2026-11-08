@@ -9,7 +9,7 @@ categorie: "Techniek"
 status: "nieuw"
 prioriteit: "P2"
 samenvatting: "Ads is een adviserende, read-only hoofdagent: analyse, voorstellen, plannen en checklists voor mensen. Geen content, geen uitvoering. Accounts, meting en kosten zijn nog niet gevalideerd; alles vereist menselijke vrijgave."
-gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers]
+gerelateerd: []
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -2831,6 +2831,18 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Campagne opzetten op 20 euro per dag"
  },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#c3867a0c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptstatics van de soort vergelijking in 4 op 5 en 9 op 16 als ontwerp of beeldmateriaal",
+  "wat_jij_doet": "keurt de statics goed en zet ze klaar in Ads Manager vóór 14 november"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#d1a1e69e": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "vervangt op 14 november de zwakste ad-soort in Meta Ads Manager"
+ },
  "2026-11-05-meta-opbouw-getoetst-start-6-november#d5b80c53": {
   "beoordeeld": "2026-11-06",
   "claude": "nee",
@@ -3011,6 +3023,12 @@
   "wat_claude_doet": "Conceptfix voor de Nederlandse kop en de dubbele prijsregel op cart in het testthema",
   "wat_jij_doet": "Controleren en live zetten"
  },
+ "2026-11-05-winkelwagen-section-store-weer-actief#17cdcf53": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bekijkt de eerste toevoeging aan een lege winkelwagen op een echte telefoon"
+ },
  "2026-11-05-winkelwagen-section-store-weer-actief#2377a2b7": {
   "beoordeeld": "2026-11-06",
   "claude": "deels",
@@ -3028,6 +3046,108 @@
   "claude": "deels",
   "wat_claude_doet": "Conceptvoorstel voor de knopstijl volgens de merkregel",
   "wat_jij_doet": "Visueel controleren in de browser en live zetten"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "test de kortingscode op een 5-pack in de live cart en past zo nodig de instelling aan"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#017f9a90": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt via Denzel welk plan geldt en wat er feitelijk live staat"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#17d64a8c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "levert op dag 7 en dag 14 de meettotalen en beslist volgens de regels"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#1abc292a": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt doel, KPI, budget, doelgroep, rechten, goedkeuringen en stopprocedure met naam datum en bewijs"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#2c341cf8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "accepteert het winkelwagen-leerdoel en de meetregels"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#51037036": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "keurt de proefscope, databronnen en het mediabudget goed"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "controleert de navigatieregel en registratie van de notitie zelf in de vault",
+  "wat_jij_doet": "laat Operations de domeinbestanden inhoudelijk controleren"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#9689ee0c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt fysieke voorraad, verkoopbaarheid en prijs van de 2.0 voor de proefperiode"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#b87a3ca7": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "wijst een uitvoerder en vervanger aan en bevestigt de instellingen in Ads Manager"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "controleert de betaalmethode-instellingen in Shopify-admin en past indien nodig iDEAL aan"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#276d5760": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor de Trustpilot-tekst en link in de lade, met het huidige aantal reviews, in de vault",
+  "wat_jij_doet": "beslist definitief en zet de tekst live"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#483ac362": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor wel of geen expresknoppen in de lade, met voor- en nadelen, in de vault",
+  "wat_jij_doet": "neemt het besluit en past de instelling toe in het werkthema"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#8915f8d8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor de knopvorm pill met 8px hoeken, afgestemd op Brand Core en de site, in de vault",
+  "wat_jij_doet": "beslist en zet de wijziging door in Brand Core en op de site"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#caf07eae": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "loopt de witte lade na op een echte telefoon en besluit of die live gaat"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#de291d3a": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "legt de kostprijs per paar vast, dit is bedrijfsgevoelige informatie"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#f2450ec8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "na aanmaak van de korting een concept voor de voortgangskaart en het tweede doel op de balk, als code of ontwerp in het testthema",
+  "wat_jij_doet": "maakt de korting zelf aan in Shopify en keurt het kaartontwerp goed"
+ },
+ "2026-11-06-zwart-of-wit-achtergrond-conversie#88c29a32": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "kiest zwart of wit op merkgevoel en zet dit zo nodig zelf live om te testen"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

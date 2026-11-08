@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 8 november 2026 (actiecontrole)
+Laatst bijgewerkt: 8 november 2026 (growth-radar)
 Open: 30 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -286,5 +286,10 @@ Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus n
 **1 nov 2026:** 29 open punten (backlog, `dubbel` niet meegeteld — 2 dubbel) — nog steeds boven de 15 uit de vuistregel, gelijk aan 25 okt. Geen P1-punt staat al drie weken zonder beweging: de drie regressiepunten en punt 4 zijn alle op 19 oktober bijgewerkt (13 dagen), punt 1 op 12 oktober (20 dagen, nog net onder de grens) en punt 10 op 30 oktober (2 dagen). Punt 2 (reviewapp) staat sinds 11 oktober al expliciet als blokkade gemarkeerd (wacht op een menselijke keuze) — geen nieuwe actie nodig. Dezelfde twee samenvoegkandidaten uit de vorige weekchecks (27 sep t/m 25 okt) staan nog open, want nog niet samengevoegd:
 - **Punt 1** (gratis-verzendingsdrempel) **+ punt 12** (prijs per paar): nog steeds dezelfde sectie en beslissing.
 - **Punt 8 + 13 + 9 + 10**: let op, dit is intussen deels achterhaald — punt 10 (CAPI) is op 26 oktober opgewaardeerd naar P1 en actief in uitvoering na het eigen advertentiebudget-besluit van Team HÏ Grip; punt 8 en 13 wachten nog op een andere, niet-genomen beslissing (VS-verzending resp. TikTok Shop NL). Kandidaat om punt 10 uit deze bundel te halen en apart te laten lopen; punt 8+13+9 blijven wel bij elkaar horen.
+Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**8 nov 2026:** 30 open punten (backlog, momenteel geen dubbel) — nog steeds boven de 15 uit de vuistregel, hoger dan de 29 van 1 nov door vijf nieuwe regressie-/merchant-/Shopify-punten begin november, deels tegengegaan door punt 26 (deze week door de actiecontrole bevestigd, wordt vandaag naar `AFGEROND.md` verplaatst). Geen P1-punt staat al drie weken zonder beweging: de meest gedateerde van de vijf P1-punten (de drie regressiepunten) staan op 19 oktober (20 dagen, nog net onder de grens); punt 2 (reviewapp) staat al sinds 11 oktober expliciet als blokkade gemarkeerd (wacht op een menselijke keuze); punt 10 (CAPI) staat op 30 oktober (9 dagen). De eerste samenvoegkandidaat uit alle vorige weekchecks (27 sep t/m 1 nov) is **vervallen**: punt 1 (gratis-verzendingsdrempel) is inmiddels afgerond en staat in `AFGEROND.md`, dus punt 12 (prijs per paar) staat vanaf nu op zichzelf. De tweede kandidaat blijft, verder genuanceerd op 1 nov:
+- **Punt 8 + 13 + 9**: drie losse P2/P3-punten die nog op dezelfde kanaal-/budgetkeuze wachten (VS-verzending resp. TikTok Shop NL), ongewijzigd. Punt 10 (CAPI) blijft terecht los: al op P1 en actief in uitvoering.
 Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
 Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

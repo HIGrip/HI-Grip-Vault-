@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over een Google-kernupdate, Core Web Vitals/INP, structured data, Merchant Center of het Shopify-changelog haalde de drempel van nieuwheid, een primaire bron of een concrete koppeling aan higrip.nl. Eén bron claimde een kernupdate op 2 november zelf, maar Google's eigen Search Status Dashboard toont geen update na de spamupdate van 24 september."
-gerelateerd: [2026-10-12-growth-radar-seo-technisch]
+gerelateerd: [2026-10-12-growth-radar-seo-technisch, 2026-11-09-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""

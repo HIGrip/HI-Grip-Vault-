@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 9 november 2026 (actiecontrole)
-Open: 30 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 9 november 2026 (seo)
+Open: 33 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -65,12 +65,25 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `/pages/gripsokken-2-0`, `/pages/gripsokken-2-1` — Shopify admin
 **Wat:** Bevestigen of dit tijdelijke campagnepagina's zijn (dan `noindex,nofollow` zoals de `-a`/`-b`-varianten) of permanent bedoeld (dan unieke meta description per pagina en nagaan of duplicate content t.o.v. elkaar gewenst is). Gerelateerd, niet gewijzigd: `2026-10-27-seo-audit-higrip-nl` (Besluit: doel van de `-a`/`-b`-testpagina's bevestigen).
 **Gevonden op:** 2 november 2026 (regressiecheck + SEO-conversietest, onafhankelijk bevestigd)
+**Update 9 november 2026:** meta description en robots-meta ontbreken nog steeds (ongewijzigd open). Vooruitgang: beide pagina's hebben inmiddels wél volledig Product/ProductGroup/Offer/Brand-schema (was er bij de vorige check nog niet).
 
 ### [ ] [regressie] `/pages/teamorder` mist een meta description (nieuw 2 nov 2026)
 **Waarom:** Nieuw in de sitemap deze week. Titel ("Teamorder – HÏ Grip") is aanwezig en correct, maar er is geen `<meta name="description">`.
 **Waar:** `/pages/teamorder` — Shopify admin
 **Wat:** Meta description toevoegen die aansluit op het doel van de pagina (teambestellingen).
 **Gevonden op:** 2 november 2026 (regressiecheck)
+
+### [ ] [regressie] `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters` geeft nu een directe 404; blog `/blogs/trends` is leeg (nieuw 9 nov 2026)
+**Waarom:** Deze URL stond minimaal sinds 28 september elke week in de verplichte regressiecheck-lijst als "nieuwste artikel" en was dus geïndexeerd (sitemap). Hij is nu uit `sitemap_articles_1.xml` verwijderd en geeft 404 in plaats van een 301. De blog `/blogs/trends` zelf bestaat nog maar toont "geen artikelen in deze blog. Kom snel terug." Tegelijk zijn er 4 nieuwe/andere artikelen onder `/blogs/hi-grip` verschenen (lastmod ~5 nov).
+**Waar:** `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters`, `/blogs/trends`
+**Wat:** Of het artikel herstellen/verplaatsen met een 301 vanaf de oude URL naar een vervangend artikel of naar `/blogs/hi-grip`, zodat eventuele backlinks en resterende ranking niet verloren gaan; of, als bewust verwijderd, alsnog een 301 zetten.
+**Gevonden op:** 9 november 2026 (regressiecheck)
+
+### [ ] [regressie] Homepage: 13× `alt=""` op contentafbeeldingen (nieuw 9 nov 2026)
+**Waarom:** Grens is 12; het gaat om echte product-/sfeerfoto's (o.a. `hp-sh-sok-10`, `hp-sh-sok-20-zwart`, `IMG_0269`, `IMG_0231`, `IMG_0252`, `IMG_0258`, elk 2×), waarschijnlijk door een dubbele `<img>/<source>`-render — niet om decoratieve iconen.
+**Waar:** Homepage, de 6 betrokken afbeeldingen
+**Wat:** Beschrijvende alt-tekst toevoegen (bv. "HÏ Grip gripsokken 2.0 zwart in actie").
+**Gevonden op:** 9 november 2026 (regressiecheck)
 
 ### [ ] [merchant] Merchant Center koppelen aan de servicesleutel (nieuw 2 nov 2026)
 **Waarom:** Eerste run van module D (Backlinks & Merchant Center). `google_data.py merchant` geeft geen koppeling: er staat geen `merchant.account_id` in `02_Dashboard/_data/instellingen.json`, en de servicesleutel (`ga4-mcp@higrip-analytics.iam.gserviceaccount.com`) heeft geen toegang in Merchant Center. Zonder koppeling kan deze module nooit productstatussen, afkeuringen of feedfouten meten.
@@ -191,12 +204,20 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Nagaan of er een technische of content-wijziging op of rond deze pagina is geweest die de positie kan verklaren (gewijzigde interne links, ontbrekende sportkeuzetegel, title/H1-wijziging); zo niet, blijven volgen.
 **Gevonden op:** 21 oktober 2026 (Search Console & rankings)
 **Update 2 november 2026:** positie herstelde naar 11,6 (was 15,7), op vergelijkbaar volume (41 vertoningen/7 dagen). Eerste verbetering na drie weken van verval — nog geen duidelijke oorzaak gevonden, blijft open ter bevestiging volgende week.
+**Update 9 november 2026:** positie verbetert een derde meting op rij, naar 9,7 (was 11,6), op afnemend volume (18 vertoningen/7 dagen). Herstel lijkt bevestigd; oorzaak nog niet gevonden. Blijft open, geen nieuwe actie nodig.
 
 ### [ ] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
 **Waarom:** Search Console-meting (routine "Search Console & rankings"): `/en` staat op positie 7,8 met 266 vertoningen (7 dagen) maar slechts 1,88% CTR — ruim onder wat op die positie en dat volume haalbaar is, en de laagste CTR van alle pagina's in de top-15 op klikken deze week.
 **Waar:** `/en` — titel en meta description via Shopify admin (Online Store → Voorkeuren, Engelse taalinstelling)
 **Wat:** SERP-titel en meta description voor de Engelse zoekintentie herschrijven; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft (overwegend "grip socks", positie 8,7 op 106 vertoningen).
 **Gevonden op:** 2 november 2026 (Search Console & rankings)
+**Update 9 november 2026:** CTR verbetert verder naar 3,49% (was 1,88%) op positie 8,2, 172 vertoningen (7 dagen) — duidelijke verbetering, nog niet afsluiten.
+
+### [ ] [search-console] Positieval NL-homepage (`/`) uitzoeken (nieuw 9 nov 2026)
+**Waarom:** Search Console-meting (routine "Search Console & rankings", zevende run): de gemiddelde positie van de NL-homepage verslechtert in beide vensters — 7 dagen van 9,1 naar 14,0 (−4,9), 28 dagen van 8,4 naar 11,5 (−3,1) — terwijl de CTR nog steeds hoog is (7,41% resp. 11,38%) en het aantal vertoningen vergelijkbaar blijft (243 resp. 659). Dat wijst op een reëel positieverlies, niet op een meetartefact.
+**Waar:** `/` (homepage) — Search Console, positie per zoekterm en pagina
+**Wat:** Nagaan of er rond deze periode een technische of content-wijziging op de homepage is geweest (het live thema wisselde begin november van ID, zie de regressiecheck van vandaag) die de positie kan verklaren; zo niet, blijven volgen op de volgende meting.
+**Gevonden op:** 9 november 2026 (Search Console & rankings)
 
 ### [ ] 20. Shopify conversieratio-meetbreuk (21-23 sep 2026) meewegen vóór je volgende CRO-test (nieuw 1 okt 2026)
 **Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat "Reached checkout rate" en "Checkout conversion rate" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.

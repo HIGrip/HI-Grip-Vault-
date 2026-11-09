@@ -2031,14 +2031,14 @@
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
    "bewijs": "geen EN-vertaalcheck gevonden in de Routines-map",
-   "controle": "Routines-map doorzocht op een EN-vertaalcheck",
+   "controle": "Routines-map doorzocht op een wekelijkse EN-vertaalcheck in de SEO-regressiecheck",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
    "bewijs": "geen miniplan bestand gevonden buiten de eigen onderzoeksnotitie",
-   "controle": "gezocht naar een mini-plan bestand voor de zakelijke pagina",
+   "controle": "vault doorzocht op een miniplan-bestand voor de zakelijke pagina buiten de eigen onderzoeksnotitie",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -2536,8 +2536,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "nog geen aparte 1.0-specificatieset gevonden, het bestand bevat vooral 2.0-data met losse 1.0-vermeldingen",
-   "controle": "Performance Grip Socks 2.0.md gecontroleerd op een aparte 1.0-specificatieset",
+   "bewijs": "geen aparte 1.0-specificatieset gevonden in Brand Core, alleen losse vermeldingen van maten en brochures",
+   "controle": "Performance Grip Socks 2.0.md in Brand Core doorzocht op een apart 1.0-specificatieset",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -2627,14 +2627,14 @@
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#7129fb4d": {
    "bewijs": "geen vastgelegde regel gevonden buiten de eigen onderzoeksnotitie",
-   "controle": "vault doorzocht op een vastgelegde AI-beeld-spelregel",
+   "controle": "vault doorzocht op een vastgelegde spelregel voor AI-beeld in ads",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "geen los swipe file-bestand gevonden, een latere notitie 2026-11-04-ads-resultaten-verbeteringen noemt wel dat er al een swipe file is maar zonder zichtbaar bronbestand",
-   "controle": "vault doorzocht op een los swipe file-bestand",
+   "bewijs": "swipe file komt alleen voor in de eigen onderzoeksnotitie en een latere ads-notitie, geen apart swipe file-bestand aangemaakt",
+   "controle": "vault doorzocht op een los swipe file-bestand buiten de eigen onderzoeksnotitie",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -3347,7 +3347,7 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#d279fc2c": {
-   "bewijs": "de sectie noemt nog steeds alleen de ffmpeg-motor, geen CapCut-besluit toegevoegd",
+   "bewijs": "de sectie noemt nog steeds alleen ffmpeg-motor en Canva (plus Premiere als optie), geen CapCut-besluit toegevoegd",
    "controle": "sectie Software in Editing Stijl Gids Video gecontroleerd op een CapCut-besluit",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
@@ -3543,8 +3543,8 @@
    "uitkomst": "open"
   },
   "2026-11-03-sportretail-nederland#99ac7353": {
-   "bewijs": "de notitie noemt nog alleen aantallen per keten, geen concrete shortlist met winkelnamen van Absolute Teamsport en Soccer Center",
-   "controle": "gezocht naar een concrete B2B-shortlist met winkelnamen",
+   "bewijs": "de notitie noemt alleen aantallen per keten (SPORT 2000 48, DAKA 17, PadelShop.com 1), nog geen concrete shortlist met winkelnamen",
+   "controle": "notitie 2026-11-03-sportretail-nederland doorzocht op concrete winkelnamen van Absolute Teamsport en Soccer Center",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -3614,15 +3614,15 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "doel staat nog alleen in de eigen onderzoeksnotitie, niet vastgelegd in een werkthema-notitie",
-   "controle": "gezocht naar het PageSpeed/TBT/LCP-doel in een werkthema-notitie",
+   "bewijs": "de werkthema-notitie heeft wel TBT-metingen maar geen vastgelegd doel PageSpeed 80+/TBT 300 ms/LCP 2,5s, nog alleen in de eigen onderzoeksnotitie",
+   "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op het doel PageSpeed 80+/TBT 300/LCP 2,5",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
-   "bewijs": "Upfront staat nog alleen in de eigen onderzoeksnotitie, geen per-app laad-besluit vastgelegd in een werkthema-notitie",
-   "controle": "gezocht naar een per-app laad-besluit in een werkthema-notitie met Upfront als referentie",
+   "bewijs": "geen vermelding van Upfront en geen per-app laad-besluit vastgelegd in de werkthema-notitie, nog alleen in de eigen onderzoeksnotitie",
+   "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op Upfront en een per-app laad-besluit",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -3876,8 +3876,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "map-regel in de notitie is correct, geen bevestigde Operations-controle gevonden",
-   "controle": "map-regel en een bevestigde Operations-controle van de domeinbestanden gezocht",
+   "bewijs": "Map-regel in de notitie is correct maar geen bevestigde Operations-controle van de domeinbestanden gevonden, ongewijzigd",
+   "controle": "gezocht naar een bevestigde Operations-controle van navigatieregel en vault_nav van dit en de domeinbestanden",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"
@@ -3967,8 +3967,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
-   "bewijs": "map-regel is correct en de notitie staat al in de map Ads, geen bevestigde Operations-controle aangetroffen",
-   "controle": "map-regel en een bevestigde Operations-controle van de domeinbestanden gezocht",
+   "bewijs": "Map-regel is correct en de notitie staat al in de map Ads, maar een bevestigde Operations-controle van de bijbehorende domeinbestanden is niet aangetroffen, ongewijzigd",
+   "controle": "gezocht naar een bevestigde Operations-controle van de navigatie/registratie van dit bestand en de domeinbestanden",
    "gecontroleerd": "2026-11-09",
    "methode": "vault",
    "uitkomst": "open"

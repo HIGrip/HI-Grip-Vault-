@@ -2297,6 +2297,12 @@
   "wat_claude_doet": "het onderzoek herhalen zodra de termijn verstreken is",
   "wat_jij_doet": "niets, loopt automatisch mee in een volgende routine"
  },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
+  "beoordeeld": "2026-11-09",
+  "claude": "ja",
+  "wat_claude_doet": "GA4-purchases en Shopify-orders/omzet over dezelfde periode naast elkaar leggen en het meetgat vastleggen in de vault",
+  "wat_jij_doet": "besluiten nemen op de cijfers met het gemelde meetgat in het achterhoofd"
+ },
  "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
   "beoordeeld": "2026-10-29",
   "claude": "ja",

@@ -2016,8 +2016,8 @@
    "uitkomst": "open"
   },
   "2026-10-11-seo-audit-weekdelta#a938ea37": {
-   "bewijs": "REFUND_POLICY heeft nog 14 dagen 25 procent en ongeopend, SHIPPING_POLICY nog voor 16 uur, TERMS_OF_SERVICE artikel 4 nog 4,25 euro verzending, het nieuwe beleid is nog niet geplakt",
-   "controle": "shop shopPolicies opnieuw opgevraagd voor refund shipping en terms",
+   "bewijs": "REFUND_POLICY heeft nog 14 dagen, 25% herbevoorradingskosten en ongeopend, SHIPPING_POLICY nog voor 16:00 uur, TERMS_OF_SERVICE artikel 4 nog 4,25 euro verzending, het nieuwe beleid is nog niet geplakt",
+   "controle": "shop.shopPolicies opgevraagd voor REFUND_POLICY, SHIPPING_POLICY en TERMS_OF_SERVICE",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2291,8 +2291,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-werkthema-vs-live#c757fc2d": {
-   "bewijs": "de themarollen zijn sinds deze actie opnieuw gewisseld (nu 203954520391 live), nog steeds niet vast te stellen of de destijds bedoelde synchronisatie is uitgevoerd",
-   "controle": "themarollen opnieuw gecontroleerd",
+   "bewijs": "de themarollen zijn sinds deze actie te vaak gewisseld (nu 203954520391 live), niet vast te stellen of de destijds bedoelde synchronisatie ooit is uitgevoerd",
+   "controle": "themarollen gecontroleerd op opnieuw gewisseld sinds de vorige run",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2313,8 +2313,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4867b36b": {
-   "bewijs": "snippets/faq-schema.liquid antwoord 4 begint nog met Was uw gripsokken, de live hp-11-faq-sectie zelf bevat deze vraag niet en heeft 0 treffers voor u of uw",
-   "controle": "snippets/faq-schema.liquid en sections/hp-11-faq.liquid doorzocht op Was uw/je gripsokken",
+   "bewijs": "snippets/faq-schema.liquid antwoord 4 begint nog letterlijk met Was uw gripsokken (u-vorm, niet aangepast); de zichtbare FAQ-sectie hp-11 zelf heeft inmiddels geen wasvraag meer onder haar 10 vragen, dus de schema-tekst en de zichtbare FAQ zijn uit elkaar gaan lopen - actie nog niet gedaan",
+   "controle": "snippets/faq-schema.liquid en de live FAQ-sectie hp-11 in templates/index.json gecontroleerd op uw-vorm",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2350,7 +2350,7 @@
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
    "bewijs": "niet te controleren: Shopify Files is niet doorzoekbaar op een los bestandsaantal via de huidige Shopify-connector",
-   "controle": "gezocht naar een manier om het aantal 360-frames in Shopify Files te tellen",
+   "controle": "gezocht naar een manier om het aantal losse 360-framebestanden in Shopify Files te tellen",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2406,8 +2406,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#f2c44e5d": {
-   "bewijs": "bestand bestaat nog niet, NOT_FOUND",
-   "controle": "templates/page.home-nieuw.json gecontroleerd in werkthema 201133490503",
+   "bewijs": "bestand bestaat niet, NOT_FOUND",
+   "controle": "templates/page.home-nieuw.json opgevraagd in werkthema 201133490503",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2427,8 +2427,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
-   "bewijs": "snippets/fonts.liquid bestaat nog niet (NOT_FOUND); theme.liquid preload nu wel een Poppins-hero-font maar op gewicht 900 italic, niet de gevraagde 800 italic, en niet via fonts.liquid",
-   "controle": "snippets/fonts.liquid en de Poppins-preload in layout theme.liquid van het live-thema gecontroleerd",
+   "bewijs": "snippets/fonts.liquid bestaat nog niet (NOT_FOUND), dus geen Poppins 800 italic preload ingesteld",
+   "controle": "snippets/fonts.liquid opgevraagd in het live-thema",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2462,8 +2462,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
-   "bewijs": "beide app-embeds staan nog globaal op disabled true in plaats van beperkt tot product- en cartpaginas",
-   "controle": "settings_data.json van het live-thema gecontroleerd op scope van de app-embeds block-cart en fd-product-groups",
+   "bewijs": "beide app-embeds staan nog globaal op disabled:true in plaats van beperkt tot product- en cartpaginas, dus niet zoals gevraagd, ongewijzigd",
+   "controle": "settings_data.json van het live-thema gecontroleerd op de scope van de app-embeds Section Store block-cart en fd-product-groups",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2689,8 +2689,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#4387d3ec": {
-   "bewijs": "alle 6 varianten van de 2.0 zwart en wit staan nog negatief in voorraad (zwart -4,-22,-28; wit -8,-15,-24), deadline van 3 november blijft verstreken zonder bevestiging",
-   "controle": "voorraad van alle 6 2.0-varianten opnieuw opgevraagd",
+   "bewijs": "alle 6 varianten staan nog negatief in voorraad (zwart -4/-22/-28, wit -8/-15/-24), de deadline van 3 november is verstreken zonder bevestiging",
+   "controle": "voorraad van de 6 2.0-varianten (zwart en wit) opgevraagd",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2945,15 +2945,15 @@
    "uitkomst": "handmatig"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4dfeda5e": {
-   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL SendWILL Popup Email, laadmoment niet via de connector te zien",
-   "controle": "EcomSend laadmoment gecontroleerd",
+   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, het laadmoment van die app is niet via de Shopify-connector te zien",
+   "controle": "appInstallations gecontroleerd op EcomSend-laadmoment",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4e776330": {
-   "bewijs": "niet te controleren: app-interne badge-instellingen van Section Store zijn niet via theme-files of settings_data op te vragen",
-   "controle": "gezocht naar app-interne badge-instellingen van Section Store",
+   "bewijs": "niet te controleren: app-interne badge-instellingen van Section Store zijn niet via de theme-files of settings_data op te vragen",
+   "controle": "settings_data.json doorzocht op een Section Store-badge-shine-instelling",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2967,8 +2967,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
-   "bewijs": "geen Google tag of GA4-measurement-ID gevonden in layout theme.liquid van het live-thema 203954520391, andere themaversies niet apart gecontroleerd",
-   "controle": "layout theme.liquid van het live-thema doorzocht op een Google tag of GA4-measurement-ID",
+   "bewijs": "geen Google tag of GA4-measurement-ID gevonden in layout/theme.liquid van het live-thema (203954520391), andere themaversies niet apart gecontroleerd",
+   "controle": "layout/theme.liquid van het live-thema doorzocht op een GA4-tag of measurement-ID",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2981,8 +2981,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#b36f0e48": {
-   "bewijs": "Bundler staat nog niet in de lijst, Essential A/B Testing staat nog wel geinstalleerd, FD Product Groups staat niet onder die naam maar het app-embed-blok fd-product-groups bestaat nog wel in settings_data.json (disabled true)",
-   "controle": "appInstallations opnieuw gecontroleerd op FD Product Groups Bundler en Essential A/B Testing",
+   "bewijs": "Bundler staat niet meer in de lijst, maar Essential A/B Testing staat nog wel geinstalleerd; geen app met de naam FD Product Groups in de lijst (wel het losse app-embed-blok fd-product-groups, nu disabled:true), dus niet volledig uit de admin verwijderd",
+   "controle": "appInstallations gecontroleerd op FD Product Groups, Bundler en Essential A/B Testing",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3017,8 +3017,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
-   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL SendWILL Popup Email, abonnementsplan niet via de connector te zien",
-   "controle": "EcomSend abonnementsplan gecontroleerd",
+   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, het abonnementsplan van die app is niet via de Shopify-connector te zien",
+   "controle": "appInstallations gecontroleerd op EcomSend",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3052,15 +3052,15 @@
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
-   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL SendWILL Popup Email, frequentie-instelling niet via de connector te zien",
-   "controle": "EcomSend frequentie-instelling gecontroleerd",
+   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, de frequentie-instelling van die app is niet via de Shopify-connector te zien",
+   "controle": "appInstallations gecontroleerd op EcomSend-frequentie-instelling",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
-   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL SendWILL Popup Email, doelgroepinstelling niet via de connector te zien",
-   "controle": "EcomSend doelgroepinstelling gecontroleerd",
+   "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, de doelgroepinstelling van die app is niet via de Shopify-connector te zien",
+   "controle": "appInstallations gecontroleerd op EcomSend-doelgroepinstelling",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3117,29 +3117,29 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
-   "bewijs": "geen aanwijzing in hp-home.js dat de mobiele merkvideo is verkleind of vervangen, niet apart in de sectie-liquid gecontroleerd",
-   "controle": "hp-home.js doorzocht op verkleining van de mobiele merkvideo",
+   "bewijs": "de standaard mobiele video (video_m_url) is nog hetzelfde bestand van 3.801.411 bytes (~3714 KB, exact de genoemde maat); er bestaat wel al een lichtere data-src-lo-variant van 1.347.108 bytes voor trage verbindingen, maar die is niet de standaard mobiele video",
+   "controle": "video-instellingen van hp-06-brandvideo en de bestandsgroottes van de mobiele video-URLs gecontroleerd",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
-   "bewijs": "build.py bestaat nog niet, NOT_FOUND, dus geen build-stap die hp-home.css splitst",
-   "controle": "build.py gecontroleerd op het live-thema",
+   "bewijs": "build.py bestaat nog niet (NOT_FOUND); hp-05 en hp-13 staan inderdaad niet in de order-array van templates/index.json (al uitgesloten), maar dat is handmatig, geen build-stap die hp-home.css splitst in kritiek/per-sectie",
+   "controle": "build.py en hp-home.css opgevraagd in het live-thema, en of hp-05/hp-13 nog in de sectie-volgorde van de homepage staan",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#64c67434": {
-   "bewijs": "geen van deze sizes-waarden in hp-home.js aangetroffen, staan vermoedelijk in de losse liquid-sectiebestanden, niet apart gecontroleerd",
-   "controle": "hp-home.js doorzocht op de sizes-waarden 160px 120px 46vw en 38vw",
+   "bewijs": "hp-02 gebruikt nog overal sizes 50vw op desktop (niet 38vw), hp-10 kaart-afbeeldingen gebruiken sizes 30vw/92vw (niet 46vw), nog niet gecorrigeerd",
+   "controle": "sizes-attributen in sections/hp-02-kies-je-paar.liquid, hp-07-kies-je-sport.liquid en hp-10-zakelijk.liquid opgevraagd",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
-   "bewijs": "chat-drawer-render is weg, maar hpLightbox komt nog 4 keer voor in hp-home.js",
-   "controle": "hp-home.js doorzocht op hpLightbox en chat-drawer-render, Files op hp-urltest.webp",
+   "bewijs": "chat-drawer-render en kleurgolf zijn weg (0 treffers), maar hpLightbox komt nog 4x voor en hp-urltest.webp bestaat nog als los bestand in het live-thema, ongewijzigd",
+   "controle": "hp-home.js doorzocht op chat-drawer-render, hpLightbox, kleurgolf, en hp-urltest.webp opgevraagd",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3183,8 +3183,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#96b379ab": {
-   "bewijs": "image_mobile komt niet voor in hp-home.js, hoort vermoedelijk in de hp-01-sectie zelf, niet apart gecontroleerd",
-   "controle": "hp-home.js doorzocht op image_mobile",
+   "bewijs": "image_mobile is ingevuld maar wijst naar exact dezelfde file als de desktop-foto (IMG_3844_297bd8ed...), dus geen eigen staande mobiele uitsnede geupload; de sectie heeft wel al kropping-logica klaarstaan zodra een andere afbeelding wordt gekozen",
+   "controle": "image_mobile-veld van hp-01 in templates/index.json gecontroleerd",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3220,11 +3220,12 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#e41fce90": {
-   "bewijs": "geen aanwijzing in hp-home.js dat carrouselkopieen pas bij naderen worden aangemaakt, niet met zekerheid vast te stellen",
-   "controle": "hp-home.js doorzocht op lazy-aanmaak van carrouselkopieen in hp-07/hp-09",
+   "bewijs": "hp-home.js: elke hp-sectie (inclusief hp-07 en hp-09) wordt pas uitgevoerd via een IntersectionObserver met rootMargin 150% 0px (functie initIn/run), met de expliciete code-comment 'Secties starten pas als ze binnen anderhalf scherm komen: minder werk bij het laden, klonen en video's pas bij naderen' — de cloneNode-carrouselkopieën in hp-07 en hp-09 worden dus al pas aangemaakt bij naderen, niet meer bij laden",
+   "controle": "hp-home.js gecontroleerd op de lazy-load-mechaniek van hp-07 en hp-09 (carrouselkopieën)",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
-   "uitkomst": "open"
+   "sinds": "2026-11-09",
+   "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#ef2245a6": {
    "bewijs": "niet te controleren: vereist JS-rendering, curl toont alleen statische HTML",
@@ -3425,8 +3426,8 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#6b972637": {
-   "bewijs": "hi-site.css en build.py bestaan nog niet (NOT_FOUND) op 203954520391 en 204029296967, hi-sale-price.css hi-headings.css en hi-app-fixes.css staan nog los naast elkaar in layout/theme.liquid",
-   "controle": "hi-site.css en build.py gecontroleerd op het live-thema en de werkthema-kopie",
+   "bewijs": "hi-sale-price.css, hi-headings.css en hi-app-fixes.css staan in beide thema's nog los naast elkaar, hi-site.css en build.py bestaan in geen van beide (NOT_FOUND), en de actieprijskleur staat hardcoded op #e10600 in plaats van een var(--hi-red)",
+   "controle": "assets hi-sale-price.css, hi-headings.css, hi-app-fixes.css, hi-site.css en build.py opgevraagd in het live-thema en de oude WERKTHEMA 02",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3439,10 +3440,10 @@
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#c8a3c793": {
-   "bewijs": "niet apart herverifieerd vandaag, PageSpeed blijft bekend op 429 sinds weken",
-   "controle": "bron van cwv.json in _data gecontroleerd",
+   "bewijs": "cwv.json wordt nog gevuld vanuit de PageSpeed-API die op 429 staat, niet vanuit Shopify web_performance per paginatype, ongewijzigd",
+   "controle": "gecontroleerd welke bron cwv.json voedt",
    "gecontroleerd": "2026-11-09",
-   "methode": "vault",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#e72e6875": {
@@ -3514,8 +3515,8 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-werkthema-02#aacd5803": {
-   "bewijs": "nog te vroeg: live-thema 203954520391 sinds 4 november, geen 30 dagen verstreken",
-   "controle": "livegang-datum van het huidige live-thema gecontroleerd",
+   "bewijs": "live is nu 203954520391, sinds 5 nov; nog geen 30 dagen verstreken sinds een stabiele livegang, dus nog te vroeg voor de vergelijking",
+   "controle": "themarollen gecontroleerd op hoe lang het huidige live-thema al live staat",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3535,8 +3536,8 @@
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
-   "bewijs": "niet te controleren: vereist een visuele telefoon- en desktopvergelijking inclusief kortingscode en deel-link, geen browser beschikbaar",
-   "controle": "gezocht naar een manier om de winkelwagen visueel te vergelijken",
+   "bewijs": "niet te controleren: vereist een visuele telefoon- en desktopvergelijking inclusief kortingscode en deel-link, geen browser beschikbaar in deze stap",
+   "controle": "gezocht naar een manier om de winkelwagen visueel op telefoon en desktop te vergelijken",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -4029,7 +4030,7 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#f2450ec8": {
-   "bewijs": "geen discount met die beschrijving aangetroffen in de eerste 20 discountNodes, nog niet aangemaakt",
+   "bewijs": "geen van de actieve of eerdere kortingscodes verwijst naar een gratis paar of een 75 euro-drempel, niet aangemaakt",
    "controle": "discountNodes doorzocht op een korting gratis paar vanaf 75 euro",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
@@ -4100,7 +4101,7 @@
   },
   "backlog#380ede66": {
    "bewijs": "niet te controleren: Sales channels Shopify Catalog en Agentic controls zijn niet op te vragen via de huidige Shopify-connector",
-   "controle": "gecontroleerd of Shopify Catalog en Agentic controls opvraagbaar zijn",
+   "controle": "gezocht naar Shopify Catalog-geschiktheid en het Agentic controls-kennisbestand via de connector",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"
@@ -4205,8 +4206,8 @@
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
-   "bewijs": "Bundler-app staat nog niet in appInstallations, Trustpilot-appembed-versie niet apart herverifieerd vandaag",
-   "controle": "appInstallations opnieuw gecontroleerd op Bundler en FD Product Groups",
+   "bewijs": "Bundler staat niet in appInstallations en er is geen Trustpilot-app-embed-block in settings_data.json van het live-thema (203954520391), dus Trustpilot gebruikt nog geen app-embed-versie, ongewijzigd",
+   "controle": "appInstallations en de app-embed blocks van het live-thema gecontroleerd op Bundler en Trustpilot",
    "gecontroleerd": "2026-11-09",
    "methode": "shopify",
    "uitkomst": "open"

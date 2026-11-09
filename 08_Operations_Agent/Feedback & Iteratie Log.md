@@ -1,12 +1,24 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-11-09
 ---
 
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.
+
+---
+
+## 2026-11-09 — Denzel: tijdsgevoelig P1-besluit (EK rugby) buiten de backlog om weggezakt
+
+**Wat er gebeurde:** het EK rugby U18/U20-plan ([[2026-10-27-ek-rugby-u18-u20-plan]]) kreeg op 2 november een harde deadline van 3 november in het weekoverzicht ("zonder besluit deze week is de editie niet meer haalbaar"). Bij het schrijven van het weekoverzicht van 9 november bleek die deadline ongemerkt verstreken: geen vastgelegd besluit in de notitie zelf, en geen enkel spoor in `02_Dashboard/_backlog/ACTIEBACKLOG.md` (de EK-besluiten stonden nooit als los backlogpunt, alleen als tijdelijke actie in het weekoverzicht van 2-11 — dat weekoverzicht verdwijnt over enkele weken net als elke andere notitie).
+
+**Waarom dit gebeurde:** deadline-acties uit een weekoverzicht leven alleen in dat weekoverzicht (met bewaartermijn), niet in de centrale backlog die geen bewaartermijn heeft. Zodra een week verstrijkt zonder dat iemand het checkbox-item oppakt, is er geen vangnet dat een gemiste, tijdsgevoelige deadline apart markeert — hij verdwijnt gewoon in de stapel "oude, onbeoordeelde besluiten".
+
+**Les:** een actie met een harde deadline (eerder dan de volgende zondag-opruiming) verdient een eigen signaal als die deadline verstrijkt zonder afhandeling — niet alleen opnieuw genoemd worden als "nog open", maar expliciet gemeld als **gemiste deadline**, zodat Team HÏ Grip weet dat het venster (vermoedelijk) gesloten is in plaats van gewoon "laat".
+
+**How to apply:** de Denzel-weekoverzicht-routine checkt voortaan, naast "staat dit besluit nog open", ook of een eerder genoemde `deadline`-datum (frontmatter of tekst) inmiddels verstreken is zonder vastgelegde uitkomst — en meldt dat expliciet in plaats van de deadline stilzwijgend te laten verlopen in de reguliere "nog open"-tekst.
 
 ---
 

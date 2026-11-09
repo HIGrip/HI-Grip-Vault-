@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Shopify en GA4 melden onafhankelijk van elkaar 0 bestellingen deze week (2-8 nov), de tweede nul-week in drie weken; het verkeer zakte tegelijk met 41,8% (198 vs. 340 sessies), vooral doordat Paid Social instortte (26 vs. 139, -81%) nu de oktobercampagne is afgelopen. Voor higrip.nl betekent dit dat de opvolgende Meta-campagne (geadviseerd te starten op 7 november) met voorrang bevestigd moet worden, want de Ads-QA had het vorige voorstel nog niet goedgekeurd; verder is het EK rugby-besluit (deadline 3 november) ongemerkt verstreken zonder vastgelegd besluit."
-gerelateerd: [2026-11-02-weekoverzicht, 2026-11-02-regressiecheck, 2026-11-02-search-console, 2026-11-02-seo-conversietest-run-6, 2026-11-02-backlinks-merchant, 2026-10-27-ek-rugby-u18-u20-plan, 2026-11-04-ads-resultaten-verbeteringen, 2026-11-06-meta-plan-minimaal-2-weken, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-11-03-snelheid-werkthema-02, 2026-11-04-horizon-4-4-update-check, 2026-11-04-snelheid-vergelijking-andere-webshops, 2026-11-05-winkelwagen-section-store-weer-actief, 2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen, 2026-11-06-zwart-of-wit-achtergrond-conversie, 2026-11-03-sportretail-nederland, 2026-11-04-growth-radar-ai-search]
+gerelateerd: [2026-11-02-weekoverzicht, 2026-11-09-regressiecheck, 2026-11-09-search-console, 2026-11-09-seo-conversietest-run-7, 2026-11-02-regressiecheck, 2026-11-02-search-console, 2026-11-02-seo-conversietest-run-6, 2026-11-02-backlinks-merchant, 2026-10-27-ek-rugby-u18-u20-plan, 2026-11-04-ads-resultaten-verbeteringen, 2026-11-06-meta-plan-minimaal-2-weken, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-11-03-snelheid-werkthema-02, 2026-11-04-horizon-4-4-update-check, 2026-11-04-snelheid-vergelijking-andere-webshops, 2026-11-05-winkelwagen-section-store-weer-actief, 2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen, 2026-11-06-zwart-of-wit-achtergrond-conversie, 2026-11-03-sportretail-nederland, 2026-11-04-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -27,17 +27,20 @@ Deze week (2-8 nov) staan Shopify én GA4 onafhankelijk van elkaar op **0 bestel
 - **0** · bestellingen (Shopify, 2-8 nov) / €0 — tweede nul-week in 3 weken, vorige week 4/€195,80
 - **198** · GA4-sessies · vorige week 340 (−41,8%), vooral door Paid Social (26, was 139, −81%)
 - **0** · GA4 key events (purchase) · vorige week 2 (€105,90) — funnel stopt dit keer hard na `begin_checkout` (2 → 0 verder)
-- **41/174** · Search Console-klikken (7d/28d) · beide vensters herstellen (+51,9%/+30,8%), los van de omzetval
+- **34/140** · Search Console-klikken (7d/28d) · beide vensters dalen (−17,1%/−13,0%) bij meer vertoningen — SERP-weergave, geen rankingprobleem
 
 ## Acties
 
 - [ ] P1 · Besluit: Meta-campagne-status bevestigen — is er nú een live campagne, en zo niet, wordt het geadviseerde plan (7 nov, €20/dag, 1 campagne/1 advertentieset) alsnog gestart? Ads-QA gaf op 6 nov nog ESCALEER op het vorige voorstel (zie [[2026-11-06-meta-plan-minimaal-2-weken]]); zonder duidelijkheid blijft het verkeer op het niveau van vóór de campagne
 - [ ] P1 · Besluit: EK rugby U18/U20 (Praag) — de deadline van 3 november is verstreken zonder vastgelegd besluit in de backlog; bevestigen of deze editie is losgelaten of dat er alsnog (te laat) iets uitgaat, zodat [[2026-10-27-ek-rugby-u18-u20-plan]] kan worden afgesloten
+- [ ] P1 · [regressie] `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters` geeft nu een directe 404 zonder redirect en `/blogs/trends` zelf is leeg — zie [[2026-11-09-regressiecheck]]
+- [ ] P1 · [regressie] Homepage: 13× `alt=""` op contentafbeeldingen (grens 12, waarschijnlijk een dubbele render van 6 foto's) — zie [[2026-11-09-regressiecheck]]
 - [ ] P2 · Besluit: homepage-herontwerp (hero-kop, hoofd-CTA-doel, 360°-sectie, kleur bewijssectie) — 24 losse besluitpunten verdwijnen deze week uit [[2026-10-13-homepage-redesign]] en [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] zonder dat er een keuze is gemaakt
 - [ ] P2 · Besluit: Blog-SEO-stappenplan (al goedgekeurd 2 okt) alsnog uitvoeren — 26 concrete acties (redirects, kapotte links, CTA) verdwijnen deze week uit [[2026-10-12-blogs-stappenplan]], uitvoering ligt bij Lars/Shopify-kant
 - [ ] P2 · Besluit: identiteit van de voordelenpagina (blijft de URL "Wat zijn de voordelen van gripsokken?", mag "geen blaren" blijven staan, sportpagina's alleen linken als ze live staan) — [[2026-10-12-voordelenpagina-analyse]] verdwijnt deze week
 - [ ] P2 · Besluit: meta description `/pages/teamorder` plakken — kant-en-klare tekst staat hieronder bij Website-stand (backlog#d6d843f3)
 - [ ] P2 · Besluit: Shopify Knowledge Base (nu in Admin onder Sales channels → Agentic) vullen vóór 15 januari 2027 — zie AI-ontwikkelingen
+- [ ] P2 · Positieval NL-homepage (`/`) uitzoeken: positie 9,1 → 14,0 (7d), 8,4 → 11,5 (28d), ondanks een sterke CTR (7,41%/11,38%) — zie [[2026-11-09-search-console]]
 
 ## Bevindingen
 
@@ -45,7 +48,7 @@ Deze week (2-8 nov) staan Shopify én GA4 onafhankelijk van elkaar op **0 bestel
 
 - **Partnership Agent** — zoekactie uitgevoerd (lijsten 14 dagen stil, op de grens van de 1-2 weken-drempel): Lijn B (Events) leverde 1 nieuwe, outreach-klare kandidaat op (Ameland Beachrugby Festival, rugby). Lijn A (B2B) leverde 3 nieuwe kandidaten op, waarvan 2 direct outreach-klaar (Tennis Only, XerxesDZB) en 1 afgewezen (Smash Tennis & Padel, geen retailkanaal).
 - **Social Agent** (voorheen Content Agent) — stapelrem houdt stand: het voorstel van 2 november is pas 1 week oud (ruim onder de 3-wekengrens), dus geen nieuw voorstel. Het voorstel van 5 oktober staat nu 5 weken onbeoordeeld.
-- **Website Agent** — regressiecheck en Search Console beide van 2 november (geen nieuwere meting deze week), aangevuld met een ongewoon grote hoeveelheid losse snelheids- en CRO-onderzoeken sinds 3 november (zie Website-stand). Vijf backlogpunten zijn deze week door de actiecontrole bevestigd afgerond (zie hieronder).
+- **Website Agent** — nieuwe regressiecheck, Search Console en conversietest zijn tijdens deze run, parallel, alsnog verschenen (9 november): 2 nieuwe P1-regressies (kapot blogartikel, homepage-alt-teksten) en een SEO-positieval op de NL-homepage, aangevuld met een ongewoon grote hoeveelheid losse snelheids- en CRO-onderzoeken sinds 3 november (zie Website-stand). Zes backlogpunten zijn deze week door de actiecontrole bevestigd afgerond (zie hieronder).
 - **Design Agent** — geen losse opdracht deze week; visuele input zat verweven in de Website-CRO-onderzoeken (10 winkelwagen-ontwerpen, de zwart/wit-kleurvraag) in plaats van een eigen Design-kaart.
 - **Operations Agent** — heeft dit weekoverzicht samengesteld en het kwaliteitsoverzicht bijgewerkt; geen nieuw patroon voor de Feedback & Iteratie Log gevonden deze week buiten wat al bij Denzel (Ads-routering, 6 nov) vastligt.
 
@@ -59,13 +62,17 @@ Uit `02_Dashboard/_backlog/AFGEROND.md`, sectie "8 november 2026" (bevestigd tus
 - **Titel/meta oude productpagina-URL** — bevestigd 3 nov: `hi-grip-gripsokken-1` redirect 301 met eigen titel, meta description en zelfreferentiële canonical.
 - **[search-console] Titel/meta `/en/pages/gripsokken-voor-voetbal`** — bevestigd 6 nov: Engelse titel/meta op de zoekintentie, hreflang correct.
 
-Geen andere nieuwe `gedaan`-bevestigingen in `CONTROLE.json` deze week buiten bovenstaande vijf.
+Plus één bevestiging die nog niet in `AFGEROND.md` staat (archivering gebeurt pas de volgende zondag), maar al wel `gedaan` in `CONTROLE.json` staat:
+
+- **[search-console, backlogpunt 26] Titel/meta `/en/products/performance-gripsokken`** — bevestigd 8 nov (backlog#4eb5ed8e): EN-titel en -meta zijn specifiek op padel/voetbal/tennis gericht, duidelijk anders dan de NL-versie.
+
+Geen andere nieuwe `gedaan`-bevestigingen in `CONTROLE.json` deze week buiten bovenstaande zes.
 
 ### Wat ik deze week zelf heb opgepakt
 
 - **Partnership:** beide kandidatenlijsten gecontroleerd op de datum van de laatst toegevoegde rij — 14 dagen oud, op de grens van de drempel; zoekactie uitgevoerd via de sub-agents (kernsporten eerst: tennis/padel, voetbal, rugby). Resultaat: zie Voortgang per hoofdagent. Alleen beoordeeld, geen outreach, niets naar de Pipeline Tracker verplaatst.
 - **Content:** stapelrem gecontroleerd, geen nieuw voorstel nodig (zie hierboven).
-- **Website:** geen eigen regressiecheck deze week (geen nieuwere gevonden), wel de omvangrijke losse snelheids-/CRO-onderzoeken van de afgelopen week samengevat en een kant-en-klare meta-description-fix voor `/pages/teamorder` uitgeschreven (nog geen fix bestond; de twee andere nieuwe P2's — `/pages/gripsokken-2-0`/`-2-1` — wachten eerst op het besluit tijdelijk-noindex-vs-permanent-unieke-meta, dus daar is nu geen fix uitgeschreven).
+- **Website:** de nieuwste regressiecheck en Search Console-meting (9 nov) gelezen en samengevat zodra ze tijdens deze run beschikbaar kwamen, plus de omvangrijke losse snelheids-/CRO-onderzoeken van de afgelopen week. Kant-en-klare meta-description-fix voor `/pages/teamorder` uitgeschreven (nog geen fix bestond); voor de nieuwe P1's (blog-404, homepage-alt-teksten) is nog geen fix uitgeschreven — dat is vakwerk voor de SEO-/Design-agent in een volgende sessie, niet iets dit weekoverzicht zelf kan afronden zonder het live thema/de blog-editor aan te raken.
 - **GA4/Shopify:** omzet en bestellingen via de Shopify-connector (alleen totalen), verkeer/funnel via `google_data.py`. Resultaat: de tweede nul-omzetweek en de ingestorte Paid Social, zie Kerncijfers en het GA4-weekrapport.
 - **AI-ontwikkelingen:** gerichte websearch, zie onderaan.
 - **EK rugby-deadline:** gecontroleerd of er een besluit is vastgelegd na 3 november — niets gevonden in de backlog of in de notitie zelf; gemeld als gemiste deadline in plaats van stilgehouden.
@@ -76,10 +83,11 @@ Geen nieuw voorstel. Stapelrem: het voorstel van 2 november ([[2026-11-02-weekov
 
 ### Website-stand en kant-en-klare fixes
 
-**Laatste technische bron: [[2026-11-02-regressiecheck]] en [[2026-11-02-search-console]]** (geen nieuwere meting deze week).
+**Laatste technische bron: [[2026-11-09-regressiecheck]] en [[2026-11-09-search-console]]** — tijdens deze run alsnog verschenen (geschreven door een parallelle sessie), dus actueler dan de 2-november-bronnen die eerder in deze notitie stonden.
 
-- **Regressiecheck (2 nov):** twee nieuwe P2's — `/pages/gripsokken-2-0` en `/pages/gripsokken-2-1` (geen meta description, geen `robots`-meta, bijna-identieke duplicaten; prijsweergave zelf is correct) en `/pages/teamorder` (mist alleen een meta description). Vooruitgang: `WebSite`/`ItemList`-schema staat nu ook op de collectie en de productpagina's. Prijs- en verzendfeiten komen overeen met het feitenbestand op alle 16 gecontroleerde URL's.
-- **Search Console (week 45):** klikken en positie herstellen na twee dalende weken (7d +51,9%, 28d +30,8%); `/pages/gripsokken-voor-voetbal` (NL) draait voor het eerst bij (15,7 → 11,6). Nieuw: `/en` (EN-homepage) heeft 266 vertoningen op positie 7,8 maar slechts 1,88% CTR — nieuw backlogpunt, titel/meta nog te herschrijven.
+- **Regressiecheck (9 nov):** twee nieuwe P1's. (1) Het artikel dat sinds 28 september elke week als "nieuwste artikel" werd gecontroleerd (`/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld...`) is verwijderd en geeft nu een directe 404 zonder 301; de hele blog `/blogs/trends` is leeg, terwijl er 4 nieuwe artikelen onder `/blogs/hi-grip` zijn verschenen. (2) De homepage telt nu 13× `alt=""` op echte contentfoto's (grens 12), vermoedelijk een dubbele `<img>/<source>`-render van 6 foto's. Verder: `/pages/gripsokken-2-0`/`-2-1` en `/pages/teamorder` missen nog steeds hun meta description (ongewijzigd t.o.v. 2 nov, wel al met Product/Offer-schema aangevuld); alle overige 16 gecontroleerde URL's blijven technisch schoon, `aggregateRating` blijft overal afwezig.
+- **Search Console (week 46):** klikken en CTR vallen terug ondanks meer vertoningen (7d −17,1% klikken, CTR 2,6% was 3,32%; 28d −13,0%) — dat wijst op SERP-weergave (titel/meta of concurrentie), niet op een rankingprobleem, want de gemiddelde positie bleef vrijwel gelijk. `/pages/gripsokken-voor-voetbal` (NL) herstelt voor de derde meting op rij (15,7 → 11,6 → 9,7). Nieuw: de **NL-homepage verliest flink positie** (9,1 → 14,0 over 7 dagen, 8,4 → 11,5 over 28 dagen) ondanks een sterke CTR — nieuw backlogpunt, oorzaak nog niet onderzocht.
+- **Conversietest (RUN 7, 9 nov):** nog niet inhoudelijk gelezen door deze routine — zie [[2026-11-09-seo-conversietest-run-7]] voor wie er dieper in wil.
 - **Kant-en-klare fix — `/pages/teamorder` mist een meta description (backlog#d6d843f3), nog geen fix uitgeschreven:**
   ```html
   <meta name="description" content="Bestel HÏ Grip Performance Gripsokken voor je hele team of club, met staffelkorting vanaf 5 paar. Binnen 1 werkdag verzonden.">
@@ -231,6 +239,7 @@ Nieuw deze week (zie Acties): Meta-campagne-status bevestigen, EK rugby-besluit 
 3. **Bevestigen of de nul-omzetweek ruis is of een patroon** — net als bij de eerste nul-week (19-25 okt) is één meting nog geen trend, maar dit is nu de tweede keer in drie weken.
 4. **Homepage-herontwerp en blog-SEO-stappenplan uit de wachtstand halen** — beide liggen al weken stil en de onderliggende notities verdwijnen deze week.
 5. **B2B-outreach-besluit van Lars** — nu 29 dagen open.
+6. **Twee nieuwe P1-regressies oppakken** — het kapotte blogartikel (404 zonder redirect) en de 13 lege alt-teksten op de homepage, beide pas vandaag gevonden.
 
 ### AI-ontwikkelingen die relevant kunnen zijn
 
@@ -238,7 +247,7 @@ Gerichte websearch naar nieuwe AI-tools/-functies van de afgelopen week voor con
 
 ## Bronnen
 
-- [[2026-11-02-weekoverzicht]] · [[2026-11-02-regressiecheck]] · [[2026-11-02-search-console]] · [[2026-11-02-seo-conversietest-run-6]] · [[2026-11-02-backlinks-merchant]] · [[2026-10-27-ek-rugby-u18-u20-plan]] · [[2026-11-04-ads-resultaten-verbeteringen]] · [[2026-11-05-meta-opbouw-getoetst-start-6-november]] · [[2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]] · [[2026-11-05-meta-plan-35-euro-per-dag]] · [[2026-11-06-meta-plan-minimaal-2-weken]] · [[2026-11-03-snelheid-nulmeting-alle-paginas]] · [[2026-11-03-snelheid-werkthema-02]] · [[2026-11-04-horizon-4-4-update-check]] · [[2026-11-04-snelheid-vergelijking-andere-webshops]] · [[2026-11-05-winkelwagen-section-store-weer-actief]] · [[2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen]] · [[2026-11-06-zwart-of-wit-achtergrond-conversie]] · [[2026-11-03-sportretail-nederland]] · [[2026-11-04-growth-radar-ai-search]] · [[2026-10-11-omzetgroei-koersbepaling]] · [[2026-10-05-weekoverzicht]]
+- [[2026-11-02-weekoverzicht]] · [[2026-11-09-regressiecheck]] · [[2026-11-09-search-console]] · [[2026-11-09-seo-conversietest-run-7]] · [[2026-11-02-regressiecheck]] · [[2026-11-02-search-console]] · [[2026-11-02-seo-conversietest-run-6]] · [[2026-11-02-backlinks-merchant]] · [[2026-10-27-ek-rugby-u18-u20-plan]] · [[2026-11-04-ads-resultaten-verbeteringen]] · [[2026-11-05-meta-opbouw-getoetst-start-6-november]] · [[2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]] · [[2026-11-05-meta-plan-35-euro-per-dag]] · [[2026-11-06-meta-plan-minimaal-2-weken]] · [[2026-11-03-snelheid-nulmeting-alle-paginas]] · [[2026-11-03-snelheid-werkthema-02]] · [[2026-11-04-horizon-4-4-update-check]] · [[2026-11-04-snelheid-vergelijking-andere-webshops]] · [[2026-11-05-winkelwagen-section-store-weer-actief]] · [[2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen]] · [[2026-11-06-zwart-of-wit-achtergrond-conversie]] · [[2026-11-03-sportretail-nederland]] · [[2026-11-04-growth-radar-ai-search]] · [[2026-10-11-omzetgroei-koersbepaling]] · [[2026-10-05-weekoverzicht]]
 - `python3.13 02_Dashboard/_tools/google_data.py check|ga4 --dagen 7` (9 november 2026)
 - Shopify-connector: `FROM sales SHOW orders, total_sales TIMESERIES day SINCE 2026-10-26 UNTIL 2026-11-08`
 - `02_Dashboard/_backlog/CONTROLE.json` · `02_Dashboard/_backlog/ACTIEBACKLOG.md` · `02_Dashboard/_backlog/AFGEROND.md`

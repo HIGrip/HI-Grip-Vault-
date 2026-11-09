@@ -469,7 +469,7 @@ window.HI_RESEARCH = {
    "body_md": "**Waarom:** Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.\n**Waar:** Google Search Console → higrip.nl-property → nieuw AI-rapport\n**Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.\n**Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.\n**Inspanning:** 15 minuten",
    "controle": {
     "bewijs": "niet te controleren: geen tool voor het AI Overviews-rapport beschikbaar in deze sessie",
-    "controle": "gezocht naar een tool voor het AI Overviews-rapport",
+    "controle": "gezocht naar een tool voor het AI Overviews/generatieve AI-impressierapport",
     "gecontroleerd": "2026-11-09",
     "methode": "gsc",
     "uitkomst": "open"
@@ -925,13 +925,13 @@ window.HI_RESEARCH = {
  },
  "data": {
   "agenda": {
-   "bijgewerkt": "2026-11-09T04:17:11+01:00",
+   "bijgewerkt": "2026-11-09T04:21:58+01:00",
    "items": [],
    "status": "niet_gekoppeld",
    "uitleg": "Google Calendar API staat uit in Google Cloud-project higrip-analytics. Koppelen: 1) 'Google Calendar API' aanzetten in project higrip-analytics. 2) Google Agenda van info@higrip.nl → Instellingen en delen → Delen met specifieke personen → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen met 'Alle afspraakdetails bekijken'. Andere agenda: agenda.calendar_id in 02_Dashboard/_data/instellingen.json."
   },
   "cwv": {
-   "bijgewerkt": "2026-11-09T04:17:11+01:00",
+   "bijgewerkt": "2026-11-09T04:21:59+01:00",
    "paginas": [
     {
      "cls": null,
@@ -986,7 +986,7 @@ window.HI_RESEARCH = {
    ]
   },
   "koppelingen": {
-   "bijgewerkt": "2026-11-09T04:17:13+01:00",
+   "bijgewerkt": "2026-11-09T04:22:00+01:00",
    "bronnen": [
     {
      "detail": "1244 sessies in 12 weken",
@@ -1087,7 +1087,7 @@ window.HI_RESEARCH = {
    ]
   },
   "kpi": {
-   "bijgewerkt": "2026-11-09T04:17:11+01:00",
+   "bijgewerkt": "2026-11-09T04:21:58+01:00",
    "fouten": {},
    "gsc_laatste_dag": "2026-11-07",
    "kernwoorden": [
@@ -1590,7 +1590,7 @@ window.HI_RESEARCH = {
    ]
   },
   "shopify": {
-   "bijgewerkt": "2026-11-09T04:15:16+01:00",
+   "bijgewerkt": "2026-11-09T03:22:25+00:00",
    "dagen": [
     {
      "dag": "2026-08-11",
@@ -2060,7 +2060,7 @@ window.HI_RESEARCH = {
    "toegepast": 0
   }
  },
- "gebouwd": "2026-11-09T03:19:16+00:00",
+ "gebouwd": "2026-11-09T03:26:21+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 9 notities\n- B2B-en-leveranciers: 3 notities\n- Dashboard-en-vault: 7 notities\n- Growth-radar: 8 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 6 notities\n- Routines: 15 notities\n- SEO: 10 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 8 notities\n- Website-techniek: 7 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
@@ -2129,8 +2129,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie",
-      "controle": "actieve betaalmethodes in de checkout gecontroleerd",
+      "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie, ongewijzigd",
+      "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de connector op te vragen is",
       "gecontroleerd": "2026-11-09",
       "methode": "geen",
       "uitkomst": "open"
@@ -2593,7 +2593,7 @@ window.HI_RESEARCH = {
      "besluit": false,
      "controle": {
       "bewijs": "niet te controleren: vereist een live cart-test met een kortingscode op een 5-pack, niet uitgevoerd in deze stap",
-      "controle": "gezocht naar een manier om de kortingscode-samenloop op een 5-pack te testen",
+      "controle": "gezocht naar een manier om de kortingscode-samenloop met de pakketkorting te testen",
       "gecontroleerd": "2026-11-09",
       "methode": "geen",
       "uitkomst": "open"
@@ -3388,7 +3388,7 @@ window.HI_RESEARCH = {
      "besluit": false,
      "controle": {
       "bewijs": "niet te controleren binnen deze stap: vereist extern onderzoek naar competitieschemas, geen vastgelegde planning-aanpassing gevonden",
-      "controle": "gezocht naar een vastgelegde winterstop-planningsaanpassing",
+      "controle": "gezocht naar een vastgelegde winterstop-planning per amateurcompetitie",
       "gecontroleerd": "2026-11-09",
       "methode": "geen",
       "uitkomst": "open"
@@ -3596,7 +3596,7 @@ window.HI_RESEARCH = {
      "besluit": false,
      "controle": {
       "bewijs": "geen aanwijzing gevonden dat de statics al klaarstaan voor 14 november",
-      "controle": "gezocht naar een aanwijzing dat de statics al klaarstaan voor 14 november",
+      "controle": "gezocht naar een aanwijzing dat de statics voor 14 november klaarstaan",
       "gecontroleerd": "2026-11-09",
       "methode": "geen",
       "uitkomst": "open"
@@ -6856,8 +6856,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "gripsokken heeft nu 926 vertoningen CTR 1,51 procent positie 5,8 en grip socks 534 vertoningen CTR 0,37 procent positie 9,8, de SERP-intentie zelf is nog niet onderzocht",
-      "controle": "vertoningen CTR en positie van gripsokken en grip socks opnieuw opgevraagd",
+      "bewijs": "gripsokken heeft nu 926 vertoningen, CTR 1,51%, positie 5,8; grip socks heeft nu 534 vertoningen, CTR 0,37%, positie 9,8; de SERP-intentie zelf is nog niet onderzocht",
+      "controle": "google_data.py gsc gedraaid voor de zoektermen gripsokken en grip socks (28 dagen)",
       "gecontroleerd": "2026-11-09",
       "methode": "gsc",
       "uitkomst": "open"
@@ -6878,8 +6878,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "high grip en highgrip komen nog steeds afzonderlijk voor in de zoektermenlijst, geen apart branded/non-branded rapport gevonden",
-      "controle": "zoektermenlijst doorzocht op high grip en highgrip",
+      "bewijs": "geen apart rapport gevonden; high grip (25 vertoningen, positie 3,3) en highgrip (4 vertoningen, positie 1) komen nog steeds los van elkaar voor in de zoektermenlijst",
+      "controle": "zoektermenlijst gecontroleerd op een apart branded/non-branded-rapport en op high grip vs highgrip",
       "gecontroleerd": "2026-11-09",
       "methode": "gsc",
       "uitkomst": "open"
@@ -7179,8 +7179,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina collection geeft nog gewoon 200 zonder canonical en heeft nog 101 vertoningen in GSC als los duplicaat naast collections gripsokken, koopintentie-onderzoek zelf niet uitgevoerd",
-      "controle": "pagina collection opnieuw gecontroleerd op status en GSC-cijfers",
+      "bewijs": "pagina collection geeft nog gewoon 200 met titel Shop gripsokken en rankt nog los (101 vertoningen, positie 3,6) naast collections/gripsokken (65 vertoningen, positie 8,9); koopintentie-onderzoek zelf nog niet uitgevoerd",
+      "controle": "/pages/collection gecontroleerd op status en GSC-cijfers t.o.v. /collections/gripsokken",
       "gecontroleerd": "2026-11-09",
       "methode": "gsc",
       "uitkomst": "open"
@@ -9821,8 +9821,8 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de termijn is verstreken, maar de blogs uit de nulmeting bestaan door de consolidatie naar 5 artikelen grotendeels niet meer onder hun oorspronkelijke naam",
-      "controle": "beoordeeld of de nulmetingblogs nog bestaan onder hun oorspronkelijke naam",
+      "bewijs": "de termijn is inmiddels verstreken voor meerdere blogs, maar de blogs uit de nulmeting zelf bestaan door de consolidatie naar 5 artikelen grotendeels niet meer onder hun oorspronkelijke naam",
+      "controle": "nagegaan of de 4- en 8-wekentermijn voor de Search Console-hercheck is verstreken",
       "gecontroleerd": "2026-11-09",
       "methode": "gsc",
       "uitkomst": "open"

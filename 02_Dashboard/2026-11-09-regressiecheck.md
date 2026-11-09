@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P1
 samenvatting: "Het artikel dat sinds 28 september elke week als 'nieuwste artikel' in de sitemap stond, is verwijderd en geeft nu een directe 404 zonder 301 — de blog /blogs/trends zelf is leeg geworden, terwijl 4 nieuwe artikelen onder /blogs/hi-grip zijn verschenen. Daarnaast telt de homepage nu 13 lege alt-teksten op contentafbeeldingen (grens 12), en meldt GA4 deze week 0 key events ondanks 198 sessies."
-gerelateerd: [2026-11-09-search-console]
+gerelateerd: [2026-11-09-search-console, 2026-11-09-seo-conversietest-run-7]
 vervangt: []
 bronbestand: ""
 deadline: ""

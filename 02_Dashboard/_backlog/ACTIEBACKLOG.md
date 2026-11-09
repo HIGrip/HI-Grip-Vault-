@@ -6,7 +6,7 @@
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
 Laatst bijgewerkt: 9 november 2026 (seo)
-Open: 33 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Open: 36 · Afgerond: 14 (1 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -96,6 +96,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** Shopify admin → productbeschrijving van Performance Gripsokken (1.0), Performance Gripsokken 2.0 Zwart en 2.0 Wit
 **Wat:** 1.0: "Geschikt voor padel, voetbal, hockey, fitness en meer" → "Geschikt voor padel, voetbal, tennis, rugby, hockey, fitness en meer". 2.0 (zwart én wit): `<code>`-tag verwijderen en de zin aanvullen tot "Gripsok met grip, ook perfect voor padel, tennis, rugby, basketbal, fitness en pilates". Volledige voor/na-HTML in het Shopify-logboek `seo-routine-logboek`, RUN 5.
 **Gevonden op:** 19 oktober 2026 (SEO- en conversietest, auditblok B)
+
+### [ ] Besluit: iDEAL als betaalmethode op de productpagina (nieuw 9 nov 2026)
+**Waarom:** SEO- en conversietest (auditblok D, conversie): de betaalicoon-rij op de productpagina toont Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal en Visa — geen iDEAL, geen Wero. Voor een Nederlandse webshop is iDEAL normaal de meest gebruikte betaalmethode; het ontbreken van het icoon (of van de methode zelf) is een gemiste vertrouwenscue op het conversiemoment.
+**Waar:** Shopify Payments-instellingen; de betaalicoon-rij op de productpagina (thema)
+**Wat:** Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk).
+**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)
+
+### [ ] [conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)
+**Waarom:** Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` ("SEO TEST") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf "Live website 04-11-2026"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.
+**Waar:** Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`
+**Wat:** Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet.
+**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)
 
 ### [ ] [regressie] `/blogs/intern` staat publiek en zonder noindex in de sitemap (nieuw 19 okt 2026)
 **Waarom:** Sinds deze week staat `/blogs/intern` (titel "INTERN") in `sitemap_blogs_1.xml` en is hij publiek bereikbaar (HTTP 200, geen `noindex`-meta). De blog bevat nog geen artikelen, maar een blogindex met die naam lijkt bedoeld als intern werkblad en hoort niet voor Google en bezoekers open te staan.
@@ -245,6 +257,12 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 ---
 
 ## P3 — Op de radar
+
+### [ ] [conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)
+**Waarom:** SEO- en conversietest (RUN 7): concept-SEO-titel en meta description voor `/pages/terugbetalingsbeleid` staan klaar in het logboek (sluit het al openstaande punt over de ontbrekende meta description af naar concrete tekst). De tekst bevat een `[CHECK]`: ze gaat ervan uit dat iDEAL een actieve betaalmethode is, wat nog niet bevestigd is (zie het Besluit-punt over iDEAL hierboven).
+**Waar:** Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`
+**Wat:** Eerst de iDEAL-vraag beantwoorden, dan de conceptteksten controleren en in de paginainstellingen plakken.
+**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)
 
 ### [ ] 23. Handmatige factcheck verplichten voor AI-gegenereerde teksten vóór publicatie (nieuw 13 okt 2026)
 **Waarom:** Google's Search Central-documentatie noemt het sinds 1 oktober 2026 "critical" om AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie — titels, meta descriptions, structured data en alt-tekst vallen daaronder. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Geen nieuwe rankingfactor of penalty aangekondigd, wel een scherpere verwachting voor wie AI gebruikt bij het schrijven van content.

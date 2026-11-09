@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Beide vensters laten een lichte terugval zien ondanks meer vertoningen: 7 dagen klikken −17,1%, CTR 2,6% (was 3,32%), positie 0,3 slechter; 28 dagen klikken −13,0%, CTR 2,9% (was 4,06%). Positief: /pages/gripsokken-voor-voetbal (NL) herstelt voor de derde meting op rij (11,6 → 9,7); nieuw gevonden: de NL-homepage verliest flink positie (9,1 → 14,0 over 7 dagen, 8,4 → 11,5 over 28 dagen) ondanks een sterke CTR."
-gerelateerd: [2026-11-02-search-console]
+gerelateerd: [2026-11-02-search-console, 2026-11-09-regressiecheck, 2026-11-09-seo-conversietest-run-7]
 vervangt: []
 bronbestand: ""
 deadline: ""

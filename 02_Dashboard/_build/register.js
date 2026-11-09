@@ -304,6 +304,42 @@ window.HI_RESEARCH = {
   {
    "afgevinkt": false,
    "beheer": null,
+   "besluit": true,
+   "body_md": "**Waarom:** SEO- en conversietest (auditblok D, conversie): de betaalicoon-rij op de productpagina toont Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal en Visa — geen iDEAL, geen Wero. Voor een Nederlandse webshop is iDEAL normaal de meest gebruikte betaalmethode; het ontbreken van het icoon (of van de methode zelf) is een gemiste vertrouwenscue op het conversiemoment.\n**Waar:** Shopify Payments-instellingen; de betaalicoon-rij op de productpagina (thema)\n**Wat:** Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk).\n**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)",
+   "controle": null,
+   "id": "backlog#ee52eb3f",
+   "kop": "Besluit: iDEAL als betaalmethode op de productpagina (nieuw 9 nov 2026)",
+   "prioriteit": "P2",
+   "prioriteit_effectief": "P2",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
+    "Waar": "Shopify Payments-instellingen; de betaalicoon-rij op de productpagina (thema)",
+    "Waarom": "SEO- en conversietest (auditblok D, conversie): de betaalicoon-rij op de productpagina toont Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal en Visa — geen iDEAL, geen Wero. Voor een Nederlandse webshop is iDEAL normaal de meest gebruikte betaalmethode; het ontbreken van het icoon (of van de methode zelf) is een gemiste vertrouwenscue op het conversiemoment.",
+    "Wat": "Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk)."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
+   "body_md": "**Waarom:** Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` (\"SEO TEST\") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf \"Live website 04-11-2026\"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.\n**Waar:** Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`\n**Wat:** Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet.\n**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)",
+   "controle": null,
+   "id": "backlog#df9a37ab",
+   "kop": "[conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)",
+   "prioriteit": "P2",
+   "prioriteit_effectief": "P2",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
+    "Waar": "Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`",
+    "Waarom": "Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` (\"SEO TEST\") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf \"Live website 04-11-2026\"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.",
+    "Wat": "Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
    "besluit": false,
    "body_md": "**Waarom:** Sinds deze week staat `/blogs/intern` (titel \"INTERN\") in `sitemap_blogs_1.xml` en is hij publiek bereikbaar (HTTP 200, geen `noindex`-meta). De blog bevat nog geen artikelen, maar een blogindex met die naam lijkt bedoeld als intern werkblad en hoort niet voor Google en bezoekers open te staan.\n**Waar:** `/blogs/intern` — Shopify admin, blog-instellingen\n**Wat:** Nagaan of deze blog bedoeld is als publiek kanaal. Zo niet: op niet-gepubliceerd zetten of een `noindex`-meta toevoegen, zodat hij uit de sitemap en index verdwijnt.\n**Gevonden op:** 19 oktober 2026 (regressiecheck)",
    "controle": {
@@ -866,6 +902,24 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
+   "body_md": "**Waarom:** SEO- en conversietest (RUN 7): concept-SEO-titel en meta description voor `/pages/terugbetalingsbeleid` staan klaar in het logboek (sluit het al openstaande punt over de ontbrekende meta description af naar concrete tekst). De tekst bevat een `[CHECK]`: ze gaat ervan uit dat iDEAL een actieve betaalmethode is, wat nog niet bevestigd is (zie het Besluit-punt over iDEAL hierboven).\n**Waar:** Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`\n**Wat:** Eerst de iDEAL-vraag beantwoorden, dan de conceptteksten controleren en in de paginainstellingen plakken.\n**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)",
+   "controle": null,
+   "id": "backlog#e920d0ff",
+   "kop": "[conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)",
+   "prioriteit": "P3",
+   "prioriteit_effectief": "P3",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
+    "Waar": "Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`",
+    "Waarom": "SEO- en conversietest (RUN 7): concept-SEO-titel en meta description voor `/pages/terugbetalingsbeleid` staan klaar in het logboek (sluit het al openstaande punt over de ontbrekende meta description af naar concrete tekst). De tekst bevat een `[CHECK]`: ze gaat ervan uit dat iDEAL een actieve betaalmethode is, wat nog niet bevestigd is (zie het Besluit-punt over iDEAL hierboven).",
+    "Wat": "Eerst de iDEAL-vraag beantwoorden, dan de conceptteksten controleren en in de paginainstellingen plakken."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
    "body_md": "**Waarom:** Google's Search Central-documentatie noemt het sinds 1 oktober 2026 \"critical\" om AI-gegenereerde content handmatig te factchecken op juistheid en betrouwbaarheid vóór publicatie — titels, meta descriptions, structured data en alt-tekst vallen daaronder. Reden: generatieve modellen voorspellen waarschijnlijke woordreeksen in plaats van feiten op te halen, en kunnen daardoor hallucineren. Geen nieuwe rankingfactor of penalty aangekondigd, wel een scherpere verwachting voor wie AI gebruikt bij het schrijven van content.\n**Waar:** Elk AI-geschreven of AI-ondersteund stuk content voor higrip.nl: de vraagpagina's/antwoordcapsules uit backlogpunt 6, blogs, en elke tekst die via de contentagents loopt.\n**Wat:** Vóór publicatie een mens laten controleren op feitelijke juistheid — sluit aan bij de bestaande formuleringsregel voor grip-claims in [[Feiten & Actuele Staat]] §Claims, maar dan voor elk cijfer/feit in AI-geschreven tekst, niet alleen grip-claims.\n**Gevonden op:** 13 oktober 2026 (Growth Radar, SEO-content)",
    "controle": {
     "bewijs": "beleidsbeslissing over verplichte factcheck van AI-teksten; puur mensenwerk, geen systeem om dit af te dwingen te controleren",
@@ -969,7 +1023,7 @@ window.HI_RESEARCH = {
    "dubbel": 9,
    "gedaan": 38,
    "handmatig": 152,
-   "ongecontroleerd": 14,
+   "ongecontroleerd": 20,
    "open": 122
   },
   "vandaag_gedaan": [
@@ -2114,7 +2168,7 @@ window.HI_RESEARCH = {
    "toegepast": 0
   }
  },
- "gebouwd": "2026-11-09T05:13:00+00:00",
+ "gebouwd": "2026-11-09T05:17:08+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 9 notities\n- B2B-en-leveranciers: 3 notities\n- Dashboard-en-vault: 7 notities\n- Growth-radar: 8 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 6 notities\n- Routines: 15 notities\n- SEO: 10 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 8 notities\n- Website-techniek: 7 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
@@ -2262,6 +2316,88 @@ window.HI_RESEARCH = {
     {
      "afgevinkt": false,
      "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-09-seo-conversietest-run-7#47fddbfa",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: staat iDEAL actief als betaalmethode in Shopify Payments, en waarom ontbreekt het icoon in de betaalrij op de productpagina (naast Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal, Visa)?",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-09-seo-conversietest-run-7#fd13c344",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "[conversietest] Waardebalk-blok (`hi-pack-value-bar.liquid`) herbouwen in het huidige unpublished thema (204029296967) vóórdat het oude testthema 200249901383 ooit gepubliceerd wordt of in de vergetelheid raakt",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-09-seo-conversietest-run-7#a76ea6d5",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "[conversietest] Terugbetalingsbeleid-conceptteksten (logboek, sectie 8.1) controleren en in Shopify plakken — bevat een `[CHECK]` die wacht op de iDEAL-beslissing hierboven",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# SEO- en conversietest run 7 — auditblok D (conversie), Waardebalk-concept riskeert verloren te gaan\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\n\nZevende run van de wekelijkse SEO- en conversietest (modus CONCEPT: niets live gewijzigd). Auditblok deze run: **D — conversie** (rotatie B→C→D→B, vorige run blok C op 2 nov; volgende run weer blok B). Belangrijkste nieuws: het thema-landschap is begin november volledig gewisseld (het MAIN-thema is nu een andere lijn, 203954520391, bijgewerkt vanaf \"Live website 04-11-2026\") en het **Waardebalk-concept** (`hi-pack-value-bar.liquid`, gebouwd in RUN 3/4) staat alleen nog in het oude, losstaande testthema `200249901383` — niet in de huidige unpublished kopie van het live thema (`204029296967`). Zonder actie gaat dit werk verloren zodra dat oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt. De diepe audit van blok D (conversie) levert één nieuwe bevinding op: **iDEAL en Wero ontbreken** in de betaalicoon-rij op de productpagina (alleen Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal, Visa staan er) — voor een Nederlandse webshop een gemiste trust-cue, en buiten de grens van deze routine (betaalinstellingen). Van de drie lopende testplannen is RUN 5 (productType + GTIN op de 2.0-varianten) inmiddels bevestigd live — op 2 nov nog gemeld als niet gepubliceerd, dat bleek achterhaald — en RUN 2 (SEO-titels/meta's) laat voor `/collections/gripsokken` een eerste positief signaal zien (positie 12,1→7,6, CTR 0%→2,94%, zie ook de Search Console-notitie van vandaag). Sessies en omzet zijn deze week ingestort (396 sessies/€0 omzet, vorige week 671/€195,80) door het aflopen van de betaalde social-campagne — bevestigd door zowel Shopify Analytics als GA4, niet door een SEO-probleem.\n\n## Kerncijfers\n\n- **396** · sessies deze week · vorige week 671 (−41,0%), nulmeting 23 sep: 346\n- **€0** · omzet deze week · vorige week €195,80, nulmeting €72,74\n- **0** · orders deze week · vorige week 4, nulmeting 3\n- **0%** · conversieratio deze week · vorige week 0,45%\n\n## Acties\n\n- [ ] P2 · Besluit: staat iDEAL actief als betaalmethode in Shopify Payments, en waarom ontbreekt het icoon in de betaalrij op de productpagina (naast Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal, Visa)?\n- [ ] P2 · [conversietest] Waardebalk-blok (`hi-pack-value-bar.liquid`) herbouwen in het huidige unpublished thema (204029296967) vóórdat het oude testthema 200249901383 ooit gepubliceerd wordt of in de vergetelheid raakt\n- [ ] P3 · [conversietest] Terugbetalingsbeleid-conceptteksten (logboek, sectie 8.1) controleren en in Shopify plakken — bevat een `[CHECK]` die wacht op de iDEAL-beslissing hierboven\n\n## Bevindingen\n\n### Meten\n\n**Shopify Analytics** (`run-analytics-query`), 7 dagen (3–9 nov) tegen de 7 daarvoor (27 okt–2 nov) en de nulmeting van 23 september:\n\n| KPI | Deze week | Vorige week | Nulmeting | Verschil (w/w) |\n|---|---|---|---|---|\n| Sessies | 396 | 671 | 346 | −41,0% |\n| Add-to-cart sessies | 3 | 12 | — | −75,0% |\n| Bereikte checkout | 1 | 6 | — | −83,3% |\n| Orders | 0 | 4 | 3 | −100% |\n| Omzet | €0 | €195,80 | €72,74 | −100% |\n| Conversieratio | 0% | 0,45% | — | — |\n\n**GA4** (dezelfde funnel, via `python3 02_Dashboard/_tools/google_data.py ga4 --dagen 7`): Paid Social 26 sessies (vorige 139), key events 0 (vorige 2), omzet €0 (vorige €105,90) — bevestigt onafhankelijk hetzelfde beeld als Shopify Analytics. Dit beantwoordt de open vraag uit de regressiecheck van vandaag ([2026-11-09-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-regressiecheck.md)): **GA4's 0 key events deze week is geen hernieuwd meetgat, maar een echte nulweek** (Shopify Analytics bevestigt 0 orders), veroorzaakt door het aflopen van de betaalde social-campagne (Paid Social −81%), niet door een trackingprobleem.\n\n**Search Console** (hergebruik van de meting van vandaag, [2026-11-09-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-search-console.md)): `/collections/gripsokken` (door RUN 2 aangepast) verbetert in positie van 12,1 naar 7,6; de twee 2.0-productpagina's blijven op 0-1% CTR, te vroeg voor een conclusie.\n\n**Let op venster-verschil:** Shopify-sessies tellen t/m vandaag, GA4 t/m gisteren, Search Console t/m vrijdag — niet als gelijk venster naast elkaar zetten; bij zo weinig sessies deze week trekken we geen harde conclusies uit kleine verschillen.\n\n### Audit — blok D: conversie (diep)\n\n- **Productpagina — sterren, USP-balk, bestelknop mobiel, bundels, cross-sell:** geen nieuwe bevindingen, alles zoals eerder gecontroleerd (blok D liep al eerder mee op 12 okt, destijds zonder nieuwe punten).\n- **Maatbereik:** blijft tegenstrijdig tussen de twee productgeneraties (34–39/40–46 vs. 35–38/39–42/43–47) — bekend, geen nieuwe actie; **géén aparte maatgids-pagina voorstellen** (afgewezen door Lars op 28-9).\n- **iDEAL | Wero:** **nieuw.** De betaalicoon-rij op de productpagina toont Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal en Visa — geen iDEAL, geen Wero. Voor een Nederlandse webshop is iDEAL normaal de meest gebruikte betaalmethode; het ontbreken van het icoon (of van de methode zelf) is een gemiste vertrouwenscue op het conversiemoment. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk) — zie Acties.\n- **Collectiepagina's, zakelijk-pagina, FAQ:** geen nieuwe bevindingen.\n\nVolgende run: **blok B (producten & collecties)**.\n\n### Bouwen\n\nEén conceptitem toegevoegd aan het logboek (`seo-routine-logboek`, sectie 8.1): SEO-titel en meta description voor `/pages/terugbetalingsbeleid` (sluit het al openstaande backlogpunt `backlog#c51a9579` — ontbrekende meta description — af naar concrete tekst):\n- Titel: \"Betalingsbeleid – iDEAL, Klarna & meer | HÏ Grip\" (47 tekens)\n- Meta description: 143 tekens, vat de beschikbare betaalmethodes samen\n- **`[CHECK]`**: de tekst gaat ervan uit dat iDEAL een actieve betaalmethode is — dat is nog niet bevestigd (zie de nieuwe iDEAL/Wero-bevinding boven). Niet publiceren vóór die vraag beantwoord is.\n- Testplan: KPI = CTR/vertoningen in Search Console voor `/pages/terugbetalingsbeleid`, evaluatie 4-8 weken na publicatie.\n\nGeen nieuwe thema-sectie gebouwd deze run: er was geen duidelijk hoog-impact, laag-risico themawijziging voorhanden die niet al als mensenwerk (Shopify-instellingen) in de backlog stond, en het risico rond het verlaten testthema (zie hieronder) had voorrang als bevinding.\n\n### Evalueren\n\n| Item | Status | Toelichting |\n|---|---|---|\n| Waardebalk (gratis-verzenddrempel + prijs per paar) | **Te vroeg, + nieuw risico** | Bestaat alleen nog in het oude, losstaande testthema `200249901383` (\"SEO TEST\"), niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds ~4 nov volledig vervangen door een andere lijn (`203954520391`). Zonder herbouw in het huidige testthema gaat dit concept stilletjes verloren. |\n| RUN 2: SEO-titels/meta's, collectiebeschrijving, alt-teksten (live sinds 11 okt) | **Werkt (voorlopig) voor `/collections/gripsokken`** | Positie 12,1 → 7,6, CTR 0% → 2,94% (zie [2026-11-09-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-search-console.md)). Voor de 2.0-productpagina's nog **te vroeg/te weinig data** (CTR nog 0-1%). |\n| RUN 5: productType \"Gripsokken\" + GTIN op de 2.0-varianten | **Bleek al live** (bevestigd via Shopify Admin API, 9 nov) — op 2 nov nog gemeld als niet gepubliceerd; dat was achterhaald. Te vroeg voor SEO-evaluatie; volgende keer checken op Merchant Center-geschiktheid (zodra dat gekoppeld is, zie de backlinks-notitie). |\n\n## Wat niet lukte\n\nNiets structureel. Het thema-rolvraagstuk (zie Bouwen/Evalueren) gaf geen schrijfprobleem — er is alleen gelezen en vergeleken, niets naar een thema geschreven.\n\n## Bronnen\n\n- Shopify Analytics (`run-analytics-query`), 9 november 2026.\n- `python3 02_Dashboard/_tools/google_data.py ga4 --dagen 7`.\n- Shopify-thema's: `200249901383` (\"SEO TEST\", oud, losstaand), `204029296967` (huidige unpublished kopie), `203954520391` (huidig MAIN) — via Shopify Admin API.\n- [2026-11-09-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-regressiecheck.md) en [2026-11-09-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-search-console.md) (dezelfde dag, GA4- en Search Console-kant).\n- Logboek: `seo-routine-logboek` (https://admin.shopify.com/store/raqds3-tb/pages/168287895879), sectie 8.1.\n\n## Aantekeningen",
+   "bron": "routine",
+   "bronbestand": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "bronbestand_url": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "categorie": "CRO",
+   "datum": "2026-11-09",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-09-regressiecheck",
+    "2026-11-09-search-console",
+    "2026-10-19-seo-conversietest-run-5"
+   ],
+   "id": "2026-11-09-seo-conversietest-run-7",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "sessies deze week",
+     "verschil": "vorige week 671 (−41,0%), nulmeting 23 sep: 346",
+     "waarde": "396"
+    },
+    {
+     "label": "omzet deze week",
+     "verschil": "vorige week €195,80, nulmeting €72,74",
+     "waarde": "€0"
+    },
+    {
+     "label": "orders deze week",
+     "verschil": "vorige week 4, nulmeting 3",
+     "waarde": "0"
+    },
+    {
+     "label": "conversieratio deze week",
+     "verschil": "vorige week 0,45%",
+     "waarde": "0%"
+    }
+   ],
+   "kerntitel": "Waardebalk-concept riskeert verloren te gaan; iDEAL/Wero ontbreken op de productpagina",
+   "prioriteit": "P2",
+   "routine": "seo-conversietest",
+   "samenvatting": "Het Waardebalk-concept (gratis-verzenddrempel + prijs per paar, gebouwd in oktober) staat alleen nog in het losstaande, verlaten testthema 200249901383 — niet in de huidige unpublished kopie van het live thema — en loopt zo het risico stilletjes te verdwijnen na de volledige thema-wissel van begin november. De diepe audit van blok D (conversie) vindt één nieuwe bevinding: iDEAL en Wero ontbreken in de betaalicoon-rij op de productpagina. RUN 2 (SEO-titels/meta's, live sinds 11 okt) laat voor /collections/gripsokken een eerste positief signaal zien; sessies en omzet zijn deze week ingestort doordat de betaalde social-campagne is afgelopen, niet door SEO.",
+   "status": "nieuw",
+   "titel": "SEO- en conversietest run 7 — auditblok D (conversie), Waardebalk-concept riskeert verloren te gaan",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-09-seo-conversietest-run-7.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Niets structureel. Het thema-rolvraagstuk (zie Bouwen/Evalueren) gaf geen schrijfprobleem — er is alleen gelezen en vergeleken, niets naar een thema geschreven."
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
      "besluit": false,
      "controle": null,
      "id": "2026-11-09-search-console#c6697322",
@@ -2290,7 +2426,9 @@ window.HI_RESEARCH = {
    "datum": "2026-11-09",
    "deadline": "",
    "gerelateerd": [
-    "2026-11-02-search-console"
+    "2026-11-02-search-console",
+    "2026-11-09-regressiecheck",
+    "2026-11-09-seo-conversietest-run-7"
    ],
    "id": "2026-11-09-search-console",
    "kansen": [],
@@ -2359,7 +2497,8 @@ window.HI_RESEARCH = {
    "datum": "2026-11-09",
    "deadline": "",
    "gerelateerd": [
-    "2026-11-09-search-console"
+    "2026-11-09-search-console",
+    "2026-11-09-seo-conversietest-run-7"
    ],
    "id": "2026-11-09-regressiecheck",
    "kansen": [],
@@ -11192,12 +11331,12 @@ window.HI_RESEARCH = {
  "stats": {
   "open_per_prioriteit": {
    "P1": 103,
-   "P2": 148,
-   "P3": 37
+   "P2": 152,
+   "P3": 39
   },
   "per_categorie": {
    "B2B": 2,
-   "CRO": 15,
+   "CRO": 16,
    "Merk": 3,
    "Product": 1,
    "SEO": 14,
@@ -11261,12 +11400,12 @@ window.HI_RESEARCH = {
     "week": "2026-W45"
    },
    {
-    "aantal": 4,
+    "aantal": 5,
     "start": "2026-11-09",
     "week": "2026-W46"
    }
   ],
-  "totaal_notities": 58
+  "totaal_notities": 59
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

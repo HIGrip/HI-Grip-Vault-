@@ -2128,8 +2128,8 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "de termijn is verstreken, maar de blogs uit de nulmeting bestaan door de consolidatie naar 5 artikelen grotendeels niet meer onder hun oorspronkelijke naam",
-   "controle": "beoordeeld of de nulmetingblogs nog bestaan onder hun oorspronkelijke naam",
+   "bewijs": "de termijn is inmiddels verstreken voor meerdere blogs, maar de blogs uit de nulmeting zelf bestaan door de consolidatie naar 5 artikelen grotendeels niet meer onder hun oorspronkelijke naam",
+   "controle": "nagegaan of de 4- en 8-wekentermijn voor de Search Console-hercheck is verstreken",
    "gecontroleerd": "2026-11-09",
    "methode": "gsc",
    "uitkomst": "open"
@@ -2818,8 +2818,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "pagina collection geeft nog gewoon 200 zonder canonical en heeft nog 101 vertoningen in GSC als los duplicaat naast collections gripsokken, koopintentie-onderzoek zelf niet uitgevoerd",
-   "controle": "pagina collection opnieuw gecontroleerd op status en GSC-cijfers",
+   "bewijs": "pagina collection geeft nog gewoon 200 met titel Shop gripsokken en rankt nog los (101 vertoningen, positie 3,6) naast collections/gripsokken (65 vertoningen, positie 8,9); koopintentie-onderzoek zelf nog niet uitgevoerd",
+   "controle": "/pages/collection gecontroleerd op status en GSC-cijfers t.o.v. /collections/gripsokken",
    "gecontroleerd": "2026-11-09",
    "methode": "gsc",
    "uitkomst": "open"
@@ -2868,8 +2868,8 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "gripsokken heeft nu 926 vertoningen CTR 1,51 procent positie 5,8 en grip socks 534 vertoningen CTR 0,37 procent positie 9,8, de SERP-intentie zelf is nog niet onderzocht",
-   "controle": "vertoningen CTR en positie van gripsokken en grip socks opnieuw opgevraagd",
+   "bewijs": "gripsokken heeft nu 926 vertoningen, CTR 1,51%, positie 5,8; grip socks heeft nu 534 vertoningen, CTR 0,37%, positie 9,8; de SERP-intentie zelf is nog niet onderzocht",
+   "controle": "google_data.py gsc gedraaid voor de zoektermen gripsokken en grip socks (28 dagen)",
    "gecontroleerd": "2026-11-09",
    "methode": "gsc",
    "uitkomst": "open"
@@ -2931,8 +2931,8 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "high grip en highgrip komen nog steeds afzonderlijk voor in de zoektermenlijst, geen apart branded/non-branded rapport gevonden",
-   "controle": "zoektermenlijst doorzocht op high grip en highgrip",
+   "bewijs": "geen apart rapport gevonden; high grip (25 vertoningen, positie 3,3) en highgrip (4 vertoningen, positie 1) komen nog steeds los van elkaar voor in de zoektermenlijst",
+   "controle": "zoektermenlijst gecontroleerd op een apart branded/non-branded-rapport en op high grip vs highgrip",
    "gecontroleerd": "2026-11-09",
    "methode": "gsc",
    "uitkomst": "open"
@@ -3657,7 +3657,7 @@
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#c3867a0c": {
    "bewijs": "geen aanwijzing gevonden dat de statics al klaarstaan voor 14 november",
-   "controle": "gezocht naar een aanwijzing dat de statics al klaarstaan voor 14 november",
+   "controle": "gezocht naar een aanwijzing dat de statics voor 14 november klaarstaan",
    "gecontroleerd": "2026-11-09",
    "methode": "geen",
    "uitkomst": "open"
@@ -3743,7 +3743,7 @@
   },
   "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#94280aec": {
    "bewijs": "niet te controleren binnen deze stap: vereist extern onderzoek naar competitieschemas, geen vastgelegde planning-aanpassing gevonden",
-   "controle": "gezocht naar een vastgelegde winterstop-planningsaanpassing",
+   "controle": "gezocht naar een vastgelegde winterstop-planning per amateurcompetitie",
    "gecontroleerd": "2026-11-09",
    "methode": "geen",
    "uitkomst": "open"
@@ -3926,7 +3926,7 @@
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b": {
    "bewijs": "niet te controleren: vereist een live cart-test met een kortingscode op een 5-pack, niet uitgevoerd in deze stap",
-   "controle": "gezocht naar een manier om de kortingscode-samenloop op een 5-pack te testen",
+   "controle": "gezocht naar een manier om de kortingscode-samenloop met de pakketkorting te testen",
    "gecontroleerd": "2026-11-09",
    "methode": "geen",
    "uitkomst": "open"
@@ -3988,8 +3988,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
-   "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie",
-   "controle": "actieve betaalmethodes in de checkout gecontroleerd",
+   "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie, ongewijzigd",
+   "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de connector op te vragen is",
    "gecontroleerd": "2026-11-09",
    "methode": "geen",
    "uitkomst": "open"
@@ -4045,7 +4045,7 @@
   },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: geen tool voor het AI Overviews-rapport beschikbaar in deze sessie",
-   "controle": "gezocht naar een tool voor het AI Overviews-rapport",
+   "controle": "gezocht naar een tool voor het AI Overviews/generatieve AI-impressierapport",
    "gecontroleerd": "2026-11-09",
    "methode": "gsc",
    "uitkomst": "open"

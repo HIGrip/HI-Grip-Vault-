@@ -217,7 +217,12 @@ window.HI_RESEARCH = {
    "kop": "[regressie] `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters` geeft nu een directe 404; blog `/blogs/trends` is leeg (nieuw 9 nov 2026)",
    "prioriteit": "P2",
    "prioriteit_effectief": "P2",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "deels",
+    "wat_claude_doet": "redirectvoorstel en herstelde inhoud voor de blogpagina voorbereiden in de vault",
+    "wat_jij_doet": "de redirect of nieuwe inhoud in Shopify aanmaken en live zetten"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (regressiecheck)",
     "Waar": "`/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters`, `/blogs/trends`",
@@ -235,7 +240,12 @@ window.HI_RESEARCH = {
    "kop": "[regressie] Homepage: 13× `alt=\"\"` op contentafbeeldingen (nieuw 9 nov 2026)",
    "prioriteit": "P2",
    "prioriteit_effectief": "P2",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "deels",
+    "wat_claude_doet": "voorstel voor de ontbrekende alt-teksten opstellen in de vault",
+    "wat_jij_doet": "de alt-teksten invullen bij de afbeeldingen in Shopify"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (regressiecheck)",
     "Waar": "Homepage, de 6 betrokken afbeeldingen",
@@ -306,12 +316,23 @@ window.HI_RESEARCH = {
    "beheer": null,
    "besluit": true,
    "body_md": "**Waarom:** SEO- en conversietest (auditblok D, conversie): de betaalicoon-rij op de productpagina toont Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal en Visa — geen iDEAL, geen Wero. Voor een Nederlandse webshop is iDEAL normaal de meest gebruikte betaalmethode; het ontbreken van het icoon (of van de methode zelf) is een gemiste vertrouwenscue op het conversiemoment.\n**Waar:** Shopify Payments-instellingen; de betaalicoon-rij op de productpagina (thema)\n**Wat:** Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk).\n**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)",
-   "controle": null,
+   "controle": {
+    "bewijs": "beslissing over iDEAL in Shopify Payments, buiten de grens van deze routine",
+    "controle": "Besluit-actie: betaalinstellingen zijn mensenwerk",
+    "gecontroleerd": "2026-11-10",
+    "methode": "geen",
+    "uitkomst": "handmatig"
+   },
    "id": "backlog#ee52eb3f",
    "kop": "Besluit: iDEAL als betaalmethode op de productpagina (nieuw 9 nov 2026)",
    "prioriteit": "P2",
    "prioriteit_effectief": "P2",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "nee",
+    "wat_claude_doet": "niets",
+    "wat_jij_doet": "besluiten of iDEAL als betaalmethode wordt toegevoegd en dit instellen in Shopify Payments"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
     "Waar": "Shopify Payments-instellingen; de betaalicoon-rij op de productpagina (thema)",
@@ -324,12 +345,23 @@ window.HI_RESEARCH = {
    "beheer": null,
    "besluit": false,
    "body_md": "**Waarom:** Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` (\"SEO TEST\") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf \"Live website 04-11-2026\"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.\n**Waar:** Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`\n**Wat:** Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet.\n**Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)",
-   "controle": null,
+   "controle": {
+    "bewijs": "bestand bestaat daar nog niet (NOT_FOUND), blok nog niet overgezet vanuit testthema 200249901383",
+    "controle": "blocks/hi-pack-value-bar.liquid gezocht in thema 204029296967 (huidige unpublished kopie)",
+    "gecontroleerd": "2026-11-10",
+    "methode": "shopify",
+    "uitkomst": "open"
+   },
    "id": "backlog#df9a37ab",
    "kop": "[conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)",
    "prioriteit": "P2",
    "prioriteit_effectief": "P2",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "ja",
+    "wat_claude_doet": "het waardebalk-blok overzetten naar het huidige testthema en koppelen aan templates/product.json",
+    "wat_jij_doet": "beoordelen en eventueel live zetten"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
     "Waar": "Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`",
@@ -512,9 +544,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** 2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.\n**Waar:** Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).\n**Wat:** Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps.\n**Effect:** Core Web Vitals wegen mee in mobiele ranking; een slechte INP-score is bovendien vaak voelbaar in de conversie zelf.\n**Inspanning:** 1 uur meten, vervolgacties afhankelijk van bevindingen.",
    "controle": {
-    "bewijs": "niet te controleren: PageSpeed Insights staat nog op 429 quota exceeded",
-    "controle": "PageSpeed Insights-quotum opnieuw gecontroleerd voor INP op productpagina en homepage",
-    "gecontroleerd": "2026-11-09",
+    "bewijs": "PSI blijft 429; shopbrede INP p75 88ms (28d) via web_performance, geen aparte meting voor productpagina/homepage",
+    "controle": "PageSpeed Insights-quotum opnieuw gecontroleerd, Shopify web_performance als alternatief geprobeerd",
+    "gecontroleerd": "2026-11-10",
     "methode": "ga4",
     "uitkomst": "open"
    },
@@ -540,9 +572,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Google heeft het \"Prestaties in generatieve AI-functies\"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.\n**Waar:** Google Search Console → higrip.nl-property → nieuw AI-rapport\n**Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.\n**Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.\n**Inspanning:** 15 minuten",
    "controle": {
-    "bewijs": "niet te controleren: geen tool voor het AI Overviews-rapport beschikbaar in deze sessie",
-    "controle": "gezocht naar een tool voor het AI Overviews/generatieve AI-impressierapport",
-    "gecontroleerd": "2026-11-09",
+    "bewijs": "niet te controleren: geen tool voor dit GSC-rapport",
+    "controle": "gezocht naar het generatieve-AI-impressierapport in Search Console via de connector",
+    "gecontroleerd": "2026-11-10",
     "methode": "gsc",
     "uitkomst": "open"
    },
@@ -597,9 +629,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Shopify stopt script tags in de Online Store op 1 maart 2027 (developer-changelog, 24 aug 2026). Op higrip.nl laden via script tags nu nog de Bundler-app (`cdn-bundler.nice-team.net`) en drie Trustpilot-scripts. Het projectgeheugen noemt de Bundler-app verwijderd na de WK-actie, maar live staan nog het script plus negen `bundler`-verwijzingen in de HTML — onnodig JavaScript dat ook punt 14 (INP) raakt. Trustpilot is je zichtbare review-proof; die mag niet stilletjes wegvallen.\n**Waar:** Shopify admin → Apps (Bundler: nog geïnstalleerd?) en Online Store → Thema aanpassen → App embeds; Trustpilot-app-instellingen.\n**Wat:** 1) Bundler-app verwijderen als hij niet meer gebruikt wordt, en eventuele achtergebleven app-blocks uit het thema halen. 2) Bij Trustpilot controleren of er een app-embed-versie is en overstappen. 3) Na afloop: `var urls = [...]` in de paginabron mag leeg zijn.\n**Effect:** Voorkomt dat trust-widgets straks zonder foutmelding verdwijnen; minder JS op de productpagina.\n**Update 11 okt 2026 (SEO Health Score, [[2026-10-11-seo-audit-weekdelta]]):** nog steeds open. Op mobiel formaat laden de homepage en de 2.0-productpagina nog `bundler.nice-team.net` en `cdn-bundler.nice-team.net`, naast drie Trustpilot-domeinen en Ecomsend; in totaal 273–302 requests per pagina.\n**Update 12 okt 2026 (verouderd-check):** de packs op de 1.0-pagina komen van Section Store (bundle-block), niet van Bundler; het Bundler-blok op de pagina is leeg, maar `bundler.js` laadt nog. Test vóór het verwijderen van Bundler of de 3- en 5-pack-korting (€9 en €20) in de winkelwagen blijft werken. Er laden nu 4 Trustpilot-scripts, niet 3.\n**Inspanning:** 1 uur",
    "controle": {
-    "bewijs": "Bundler staat niet in appInstallations en er is geen Trustpilot-app-embed-block in settings_data.json van het live-thema (203954520391), dus Trustpilot gebruikt nog geen app-embed-versie, ongewijzigd",
-    "controle": "appInstallations en de app-embed blocks van het live-thema gecontroleerd op Bundler en Trustpilot",
-    "gecontroleerd": "2026-11-09",
+    "bewijs": "Bundler niet meer in appInstallations (bevestigd), script-tag-apps-migratie niet te verifiëren via de connector, actie dus niet volledig gedaan",
+    "controle": "appInstallations gecontroleerd op Bundler en scripttag-apps",
+    "gecontroleerd": "2026-11-10",
     "methode": "shopify",
     "uitkomst": "open"
    },
@@ -804,7 +836,12 @@ window.HI_RESEARCH = {
    "kop": "[search-console] Positieval NL-homepage (`/`) uitzoeken (nieuw 9 nov 2026)",
    "prioriteit": "P2",
    "prioriteit_effectief": "P2",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "ja",
+    "wat_claude_doet": "de positieval van de NL-homepage onderzoeken en vastleggen als notitie",
+    "wat_jij_doet": "beoordelen en eventueel vervolgstappen besluiten"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (Search Console & rankings)",
     "Waar": "`/` (homepage) — Search Console, positie per zoekterm en pagina",
@@ -818,9 +855,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Shopify's sessiemeting-update telt sessies en `checkout_started` sinds 21-23 september 2026 anders (geen cutoff meer om middernacht UTC maar bij 30 minuten inactiviteit, sessies zonder pageview tellen nu mee, bot-sessies worden gefilterd). Shopify zelf meldt dat \"Reached checkout rate\" en \"Checkout conversion rate\" hierdoor kunnen verschuiven zonder dat bestellingen of klantgedrag veranderen. Dat valt vlak vóór de geplande pack-prijs-/verzenddrempeltest (punt 1/12, zelfde sectie `snippets/product-information-content.liquid`): een voor-/na-vergelijking via Shopify Analytics riskeert de meetbreuk aan te zien voor testeffect.\n**Waar:** Shopify Analytics-rapporten (sessies, reached checkout rate, checkout conversion rate) en het testlogboek van de SEO- en conversietest-routine (`seo-routine-logboek`)\n**Wat:** Zet bij de volgende voor-/na-meting van punt 1/12 een aantekening dat de periode vóór 21-23 sep niet 1-op-1 vergelijkbaar is met erna; vergelijk waar mogelijk op bestellingen/omzet in plaats van sessie-conversieratio, of meet pas vanaf na de meetbreuk.\n**Effect:** Voorkomt een foutieve conclusie (\"de test werkte niet\" of \"de test werkte geweldig\") die eigenlijk een meetartefact is.\n**Inspanning:** 15 minuten, bij de volgende testmeting\n**Gevonden op:** 1 oktober 2026 (Growth Radar, CRO)",
    "controle": {
-    "bewijs": "GA4 28d 5 purchases/276,65 euro tegenover Shopify 28d 8 orders/391,68 euro, meetgat blijft, geen aparte voor- of na-meting rond de meetbreuk van 21-23 sep gevonden",
-    "controle": "GA4 vs Shopify orders opnieuw vergeleken voor de laatste 28 dagen",
-    "gecontroleerd": "2026-11-09",
+    "bewijs": "geen notitie of besluit gevonden dat de meetbreuk expliciet heeft meegewogen",
+    "controle": "gezocht naar een vastgelegd besluit over de conversieratio-meetbreuk vóór een volgende CRO-test",
+    "gecontroleerd": "2026-11-10",
     "methode": "ga4",
     "uitkomst": "open"
    },
@@ -875,9 +912,9 @@ window.HI_RESEARCH = {
    "besluit": false,
    "body_md": "**Waarom:** Shopify's Fall '26 Edition (shopify.com/editions/fall2026, eind oktober 2026) breidt agentic commerce fors uit: een \"shop skill\" waarmee elke AI-agent (ChatGPT, Claude, Grok, Gemini) kan zoeken en afrekenen met Shop Pay, agentic storefronts die producten tonen in Google Search AI Mode en de Gemini-app, en een nieuw agent-kennisbestand (Sales channels → Agentic controls) waarmee een winkel zelf bepaalt welke feiten (beleid, FAQ) agents te zien krijgen. In tegenstelling tot de eerdere Agentic Storefronts (maart 2026, toen nog alleen voor verkoop aan Amerikaanse kopers) noemt de Fall '26-pagina geen VS-beperking voor deze onderdelen.\n**Waar:** Shopify admin `raqds3-tb` → Sales channels → Shopify Catalog (geschiktheidscheck) en Sales channels → Agentic controls (kennisbestand)\n**Wat:** Nagaan of higrip.nl in aanmerking komt voor Shopify Catalog, en zo ja, welke feiten het agent-kennisbestand automatisch aan agents zou geven — controleren tegen het feitenbestand (prijzen, verzending, retour) vóórdat je het goedkeurt.\n**Effect:** Zonder controle kan een AI-agent verouderde of onjuiste informatie over higrip.nl tonen, bijvoorbeeld de verzend-/retourvoorwaarden die op `/policies/shipping-policy` en `/policies/refund-policy` nog achterlopen op de vastgestelde waarde (zie Feiten & Actuele Staat).\n**Inspanning:** 30 minuten, verkennend\n**Gevonden op:** 4 november 2026 (Growth Radar, AI-search)\n\n---",
    "controle": {
-    "bewijs": "niet te controleren: Sales channels Shopify Catalog en Agentic controls zijn niet op te vragen via de huidige Shopify-connector",
-    "controle": "gezocht naar Shopify Catalog-geschiktheid en het Agentic controls-kennisbestand via de connector",
-    "gecontroleerd": "2026-11-09",
+    "bewijs": "niet te controleren: geen tool voor Shopify Catalog-geschiktheid/Fall 26-wijzigingen in deze sessie",
+    "controle": "gezocht naar een Catalog-geschiktheidscheck via de connector",
+    "gecontroleerd": "2026-11-10",
     "methode": "shopify",
     "uitkomst": "open"
    },
@@ -908,7 +945,12 @@ window.HI_RESEARCH = {
    "kop": "[conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)",
    "prioriteit": "P3",
    "prioriteit_effectief": "P3",
-   "uitvoerbaar": null,
+   "uitvoerbaar": {
+    "beoordeeld": "2026-11-10",
+    "claude": "deels",
+    "wat_claude_doet": "de terugbetalingsbeleid-conceptteksten controleren en als voorstel vastleggen in de vault",
+    "wat_jij_doet": "eerst de iDEAL-vraag beantwoorden en daarna de tekst in de paginainstellingen plakken"
+   },
    "velden": {
     "Gevonden op": "9 november 2026 (SEO- en conversietest, auditblok D)",
     "Waar": "Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`",
@@ -1002,9 +1044,8 @@ window.HI_RESEARCH = {
   }
  ],
  "controle": {
-  "laatste_run": "2026-11-09T04:02:13+01:00",
+  "laatste_run": "2026-11-10T04:03:15+01:00",
   "runs": [
-   "2026-10-25",
    "2026-10-26",
    "2026-10-27",
    "2026-10-28",
@@ -1017,29 +1058,28 @@ window.HI_RESEARCH = {
    "2026-11-05",
    "2026-11-06",
    "2026-11-08",
-   "2026-11-09"
+   "2026-11-09",
+   "2026-11-10"
   ],
   "telling": {
-   "dubbel": 9,
+   "dubbel": 21,
    "gedaan": 38,
-   "handmatig": 152,
-   "ongecontroleerd": 23,
-   "open": 122
+   "handmatig": 162,
+   "ongecontroleerd": 4,
+   "open": 118
   },
-  "vandaag_gedaan": [
-   "2026-10-30-snelheid-code-audit-homepage#e41fce90"
-  ],
+  "vandaag_gedaan": [],
   "volgende_run": "dagelijks 05:00"
  },
  "data": {
   "agenda": {
-   "bijgewerkt": "2026-11-09T04:21:58+01:00",
+   "bijgewerkt": "2026-11-10T04:19:32+01:00",
    "items": [],
    "status": "niet_gekoppeld",
    "uitleg": "Google Calendar API staat uit in Google Cloud-project higrip-analytics. Koppelen: 1) 'Google Calendar API' aanzetten in project higrip-analytics. 2) Google Agenda van info@higrip.nl → Instellingen en delen → Delen met specifieke personen → ga4-mcp@higrip-analytics.iam.gserviceaccount.com toevoegen met 'Alle afspraakdetails bekijken'. Andere agenda: agenda.calendar_id in 02_Dashboard/_data/instellingen.json."
   },
   "cwv": {
-   "bijgewerkt": "2026-11-09T06:07:18+01:00",
+   "bijgewerkt": "2026-11-10T04:19:32+01:00",
    "paginas": [
     {
      "cls": null,
@@ -1094,10 +1134,10 @@ window.HI_RESEARCH = {
    ]
   },
   "koppelingen": {
-   "bijgewerkt": "2026-11-09T04:22:00+01:00",
+   "bijgewerkt": "2026-11-10T04:19:34+01:00",
    "bronnen": [
     {
-     "detail": "1244 sessies in 12 weken",
+     "detail": "1272 sessies in 12 weken",
      "hoe_koppelen": "ga4-mcp@higrip-analytics.iam.gserviceaccount.com als Viewer op GA4-property 476032345 (Beheer → Toegangsbeheer voor property) en 'Google Analytics Data API' aan in Google Cloud-project higrip-analytics.",
      "id": "ga4",
      "naam": "Google Analytics 4",
@@ -1195,18 +1235,13 @@ window.HI_RESEARCH = {
    ]
   },
   "kpi": {
-   "bijgewerkt": "2026-11-09T04:21:58+01:00",
+   "bijgewerkt": "2026-11-10T04:19:32+01:00",
    "fouten": {},
    "gsc_laatste_dag": "2026-11-07",
    "kernwoorden": [
     {
      "term": "gripsokken",
      "weken": [
-      {
-       "positie": 16.1,
-       "vertoningen": 12,
-       "week": "2026-W34"
-      },
       {
        "positie": 8.8,
        "vertoningen": 42,
@@ -1261,17 +1296,17 @@ window.HI_RESEARCH = {
        "positie": 5.7,
        "vertoningen": 304,
        "week": "2026-W45"
+      },
+      {
+       "positie": null,
+       "vertoningen": 0,
+       "week": "2026-W46"
       }
      ]
     },
     {
      "term": "gripsokken kopen",
      "weken": [
-      {
-       "positie": null,
-       "vertoningen": 0,
-       "week": "2026-W34"
-      },
       {
        "positie": null,
        "vertoningen": 0,
@@ -1326,17 +1361,17 @@ window.HI_RESEARCH = {
        "positie": 10.2,
        "vertoningen": 6,
        "week": "2026-W45"
+      },
+      {
+       "positie": null,
+       "vertoningen": 0,
+       "week": "2026-W46"
       }
      ]
     },
     {
      "term": "wat zijn gripsokken",
      "weken": [
-      {
-       "positie": 9.8,
-       "vertoningen": 13,
-       "week": "2026-W34"
-      },
       {
        "positie": 9.8,
        "vertoningen": 13,
@@ -1391,6 +1426,11 @@ window.HI_RESEARCH = {
        "positie": 8.5,
        "vertoningen": 11,
        "week": "2026-W45"
+      },
+      {
+       "positie": null,
+       "vertoningen": 0,
+       "week": "2026-W46"
       }
      ]
     },
@@ -1400,11 +1440,6 @@ window.HI_RESEARCH = {
       {
        "positie": null,
        "vertoningen": 0,
-       "week": "2026-W34"
-      },
-      {
-       "positie": null,
-       "vertoningen": 0,
        "week": "2026-W35"
       },
       {
@@ -1456,6 +1491,11 @@ window.HI_RESEARCH = {
        "positie": null,
        "vertoningen": 0,
        "week": "2026-W45"
+      },
+      {
+       "positie": null,
+       "vertoningen": 0,
+       "week": "2026-W46"
       }
      ]
     },
@@ -1465,11 +1505,6 @@ window.HI_RESEARCH = {
       {
        "positie": null,
        "vertoningen": 0,
-       "week": "2026-W34"
-      },
-      {
-       "positie": null,
-       "vertoningen": 0,
        "week": "2026-W35"
       },
       {
@@ -1521,26 +1556,17 @@ window.HI_RESEARCH = {
        "positie": null,
        "vertoningen": 0,
        "week": "2026-W45"
+      },
+      {
+       "positie": null,
+       "vertoningen": 0,
+       "week": "2026-W46"
       }
      ]
     }
    ],
    "status": "ok",
    "weken": [
-    {
-     "aankopen": 0,
-     "conversie": 0.0,
-     "gebruikers": 0,
-     "gsc_ctr": 2.29,
-     "gsc_klikken": 17,
-     "gsc_positie": 10.6,
-     "gsc_vertoningen": 742,
-     "omzet": 0.0,
-     "sessies": 0,
-     "sessies_nl": 0,
-     "start": "2026-08-17",
-     "week": "2026-W34"
-    },
     {
      "aankopen": 0,
      "conversie": 0.0,
@@ -1694,25 +1720,34 @@ window.HI_RESEARCH = {
      "sessies_nl": 91,
      "start": "2026-11-02",
      "week": "2026-W45"
+    },
+    {
+     "aankopen": 0,
+     "conversie": 0.0,
+     "gebruikers": 20,
+     "gsc_ctr": 0.0,
+     "gsc_klikken": 0,
+     "gsc_positie": null,
+     "gsc_vertoningen": 0,
+     "omzet": 0.0,
+     "sessies": 28,
+     "sessies_nl": 14,
+     "start": "2026-11-09",
+     "week": "2026-W46"
     }
    ]
   },
   "shopify": {
-   "bijgewerkt": "2026-11-09T03:22:25+00:00",
+   "bijgewerkt": "2026-11-10T03:19:51+00:00",
    "dagen": [
     {
-     "dag": "2026-08-11",
-     "omzet": 0,
-     "orders": 0
-    },
-    {
      "dag": "2026-08-12",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-13",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1722,7 +1757,7 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-08-15",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1732,12 +1767,12 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-08-17",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-18",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1752,22 +1787,22 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-08-21",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-22",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-23",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-24",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1777,7 +1812,7 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-08-26",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1797,27 +1832,27 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-08-30",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-08-31",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-01",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-02",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-03",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1827,62 +1862,62 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-09-05",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-06",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-07",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-08",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-09",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-10",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-11",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-12",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-13",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-14",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-15",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-16",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1892,17 +1927,17 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-09-18",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-19",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-20",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1912,62 +1947,62 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-09-22",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-23",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-24",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-25",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-26",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-27",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-28",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-29",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-09-30",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-01",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-02",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-03",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1977,7 +2012,7 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-05",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -1987,12 +2022,12 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-07",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-08",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2002,17 +2037,17 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-10",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-11",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-12",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2027,12 +2062,12 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-15",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-16",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2042,42 +2077,42 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-18",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-19",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-20",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-21",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-22",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-23",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-24",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-10-25",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2087,7 +2122,7 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-27",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2097,7 +2132,7 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-29",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
@@ -2107,52 +2142,57 @@ window.HI_RESEARCH = {
     },
     {
      "dag": "2026-10-31",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-01",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-02",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-03",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-04",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-05",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-06",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-07",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-08",
-     "omzet": 0,
+     "omzet": 0.0,
      "orders": 0
     },
     {
      "dag": "2026-11-09",
-     "omzet": 0,
+     "omzet": 0.0,
+     "orders": 0
+    },
+    {
+     "dag": "2026-11-10",
+     "omzet": 0.0,
      "orders": 0
     }
    ],
@@ -2162,13 +2202,13 @@ window.HI_RESEARCH = {
    }
   },
   "sync": {
-   "door": "handmatige sync (Claude)",
-   "laatste_sync": "2026-11-02T08:46:58+01:00",
+   "door": "actiecontrole",
+   "laatste_sync": "2026-11-10T04:02:59+01:00",
    "overgeslagen": 0,
-   "toegepast": 0
+   "toegepast": 1
   }
  },
- "gebouwd": "2026-11-09T17:53:44+00:00",
+ "gebouwd": "2026-11-10T03:19:55+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 9 notities\n- B2B-en-leveranciers: 3 notities\n- Dashboard-en-vault: 7 notities\n- Growth-radar: 8 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 6 notities\n- Routines: 15 notities\n- SEO: 10 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 8 notities\n- Website-techniek: 7 notities\n- Weekoverzichten: 2 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
@@ -2177,18 +2217,36 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+      "controle": "Besluit-actie: bevestiging Meta-campagnestatus door een mens",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
      "id": "2026-11-09-weekoverzicht#be6f9509",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
      "tekst": "Besluit: Meta-campagne-status bevestigen — is er nú een live campagne, en zo niet, wordt het geadviseerde plan (7 nov, €20/dag, 1 campagne/1 advertentieset) alsnog gestart? Ads-QA gaf op 6 nov nog ESCALEER op het vorige voorstel (zie [[2026-11-06-meta-plan-minimaal-2-weken]]); zonder duidelijkheid blijft het verkeer op het niveau van vóór de campagne",
-     "uitvoerbaar": null
+     "uitvoerbaar": {
+      "beoordeeld": "2026-11-10",
+      "claude": "nee",
+      "wat_claude_doet": "niets",
+      "wat_jij_doet": "bevestigen of er een live Meta-campagne is en zo nodig het geadviseerde plan starten"
+     }
     },
     {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde onbeantwoorde EK-rugby-besluit, nu met gemiste deadline als extra context",
+      "controle": "vergeleken met open EK-rugby-besluitacties",
+      "dubbel_van": "2026-11-02-weekoverzicht#9ee19f25",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-weekoverzicht#50775118",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
@@ -2199,7 +2257,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde 404 op blogs-trends-pagina, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open regressie-acties",
+      "dubbel_van": "backlog#886d413d",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-weekoverzicht#70b29197",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
@@ -2210,7 +2275,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde 13x alt=\"\" op de homepage, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open regressie-acties",
+      "dubbel_van": "backlog#2e5c5044",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-weekoverzicht#ff31d3af",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
@@ -2221,40 +2293,80 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+      "controle": "Besluit-actie: homepage-herontwerpkeuzes door een mens",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
      "id": "2026-11-09-weekoverzicht#450c2816",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
      "tekst": "Besluit: homepage-herontwerp (hero-kop, hoofd-CTA-doel, 360°-sectie, kleur bewijssectie) — 24 losse besluitpunten verdwijnen deze week uit [[2026-10-13-homepage-redesign]] en [[2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan]] zonder dat er een keuze is gemaakt",
-     "uitvoerbaar": null
+     "uitvoerbaar": {
+      "beoordeeld": "2026-11-10",
+      "claude": "deels",
+      "wat_claude_doet": "de 24 losse besluitpunten over het homepage-herontwerp samenvatten tot een overzicht in de vault",
+      "wat_jij_doet": "de keuzes daadwerkelijk maken"
+     }
     },
     {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+      "controle": "Besluit-actie: uitvoering blog-SEO-stappenplan door een mens",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
      "id": "2026-11-09-weekoverzicht#0ebf861a",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
      "tekst": "Besluit: Blog-SEO-stappenplan (al goedgekeurd 2 okt) alsnog uitvoeren — 26 concrete acties (redirects, kapotte links, CTA) verdwijnen deze week uit [[2026-10-12-blogs-stappenplan]], uitvoering ligt bij Lars/Shopify-kant",
-     "uitvoerbaar": null
+     "uitvoerbaar": {
+      "beoordeeld": "2026-11-10",
+      "claude": "deels",
+      "wat_claude_doet": "concrete content- en redirectconcepten uit het blog-SEO-stappenplan voorbereiden in de vault",
+      "wat_jij_doet": "besluiten om de uitvoering te starten en de wijzigingen live zetten"
+     }
     },
     {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+      "controle": "Besluit-actie: identiteit voordelenpagina door een mens",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
      "id": "2026-11-09-weekoverzicht#d348b118",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
      "tekst": "Besluit: identiteit van de voordelenpagina (blijft de URL \"Wat zijn de voordelen van gripsokken?\", mag \"geen blaren\" blijven staan, sportpagina's alleen linken als ze live staan) — [[2026-10-12-voordelenpagina-analyse]] verdwijnt deze week",
-     "uitvoerbaar": null
+     "uitvoerbaar": {
+      "beoordeeld": "2026-11-10",
+      "claude": "deels",
+      "wat_claude_doet": "conceptvarianten voor de identiteit van de voordelenpagina opstellen in de vault",
+      "wat_jij_doet": "de keuze over URL, tekst en sportpagina-links definitief maken"
+     }
     },
     {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde ontbrekende meta description op /pages/teamorder, backlogvariant van 2 nov",
+      "controle": "vergeleken met open regressie-acties",
+      "dubbel_van": "backlog#d6d843f3",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-weekoverzicht#5b9b55ee",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2265,18 +2377,36 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "contentwerk voor 15 januari 2027, geen automatische waarneming",
+      "controle": "Besluit-actie: Shopify Knowledge Base vullen is mensenwerk",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
+     },
      "id": "2026-11-09-weekoverzicht#f1340076",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
      "tekst": "Besluit: Shopify Knowledge Base (nu in Admin onder Sales channels → Agentic) vullen vóór 15 januari 2027 — zie AI-ontwikkelingen",
-     "uitvoerbaar": null
+     "uitvoerbaar": {
+      "beoordeeld": "2026-11-10",
+      "claude": "deels",
+      "wat_claude_doet": "conceptinhoud voor de Shopify Knowledge Base opstellen in de vault",
+      "wat_jij_doet": "de inhoud in Shopify Admin onder Sales channels, Agentic plaatsen vóór 15 januari 2027"
+     }
     },
     {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde positieval NL-homepage, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open search-console-acties",
+      "dubbel_van": "backlog#91b14a85",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-weekoverzicht#cc7365f9",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2353,7 +2483,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": true,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde iDEAL-vraag, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open Besluit-acties",
+      "dubbel_van": "backlog#ee52eb3f",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-seo-conversietest-run-7#47fddbfa",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2364,7 +2501,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde waardebalk-blok herbouwen, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open conversietest-acties",
+      "dubbel_van": "backlog#df9a37ab",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-seo-conversietest-run-7#fd13c344",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2375,7 +2519,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde terugbetalingsbeleid-conceptteksten, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open conversietest-acties",
+      "dubbel_van": "backlog#e920d0ff",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-seo-conversietest-run-7#a76ea6d5",
      "prioriteit": "P3",
      "prioriteit_effectief": "P3",
@@ -2435,7 +2586,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde positieval NL-homepage, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open search-console-acties",
+      "dubbel_van": "backlog#91b14a85",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-search-console#c6697322",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2446,7 +2604,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde positiemonitoring gripsokken-voor-voetbal NL als backlogpunt 27, alleen nieuwere stand",
+      "controle": "vergeleken met open search-console-acties",
+      "dubbel_van": "backlog#927dc23c",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-search-console#a3999643",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2506,7 +2671,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde 404 op blogs-trends-pagina, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open regressie-acties",
+      "dubbel_van": "backlog#886d413d",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-regressiecheck#287e0c2c",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
@@ -2517,7 +2689,14 @@ window.HI_RESEARCH = {
      "afgevinkt": false,
      "beheer": null,
      "besluit": false,
-     "controle": null,
+     "controle": {
+      "bewijs": "zelfde 13x alt=\"\" op de homepage, backlogvariant van dezelfde dag",
+      "controle": "vergeleken met open regressie-acties",
+      "dubbel_van": "backlog#2e5c5044",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "dubbel"
+     },
      "id": "2026-11-09-regressiecheck#c1cce4e9",
      "prioriteit": "P1",
      "prioriteit_effectief": "P1",
@@ -2663,7 +2842,7 @@ window.HI_RESEARCH = {
      "controle": {
       "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie, ongewijzigd",
       "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de connector op te vragen is",
-      "gecontroleerd": "2026-11-09",
+      "gecontroleerd": "2026-11-10",
       "methode": "geen",
       "uitkomst": "open"
      },
@@ -2749,11 +2928,11 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen van de actieve of eerdere kortingscodes verwijst naar een gratis paar of een 75 euro-drempel, niet aangemaakt",
-      "controle": "discountNodes doorzocht op een korting gratis paar vanaf 75 euro",
-      "gecontroleerd": "2026-11-09",
-      "methode": "shopify",
-      "uitkomst": "open"
+      "bewijs": "nooit kortingen aanmaken of wijzigen, expliciet door een mens te doen",
+      "controle": "kortingaanmaak is mensenwerk",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
+      "uitkomst": "handmatig"
      },
      "id": "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#f2450ec8",
      "prioriteit": "P1",
@@ -3027,9 +3206,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "Map-regel is correct en de notitie staat al in de map Ads, maar een bevestigde Operations-controle van de bijbehorende domeinbestanden is niet aangetroffen, ongewijzigd",
-      "controle": "gezocht naar een bevestigde Operations-controle van de navigatie/registratie van dit bestand en de domeinbestanden",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "Map-regel correct ([[Waar staat wat]]), maar de automatische tellijst in 02_Dashboard/Waar staat wat.md toont nog 9 Ads-notities terwijl de map er 10 heeft; vault_nav.py is sinds de toevoeging van dit bestand niet opnieuw gedraaid",
+      "controle": "navigatieregel en vault_nav-telling gecontroleerd voor dit bestand",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -3124,11 +3303,11 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist een live cart-test met een kortingscode op een 5-pack, niet uitgevoerd in deze stap",
-      "controle": "gezocht naar een manier om de kortingscode-samenloop met de pakketkorting te testen",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "valt buiten de grens van deze routine: nooit kortingen/checkout-instellingen wijzigen of erover beslissen",
+      "controle": "kortingscode-combinatieregel vaststellen is een besluit over kortingen/checkout",
+      "gecontroleerd": "2026-11-10",
       "methode": "geen",
-      "uitkomst": "open"
+      "uitkomst": "handmatig"
      },
      "id": "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b",
      "prioriteit": "P3",
@@ -3447,9 +3626,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "Map-regel in de notitie is correct maar geen bevestigde Operations-controle van de domeinbestanden gevonden, ongewijzigd",
-      "controle": "gezocht naar een bevestigde Operations-controle van navigatieregel en vault_nav van dit en de domeinbestanden",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "Map-regel correct ([[Waar staat wat]]), maar de automatische tellijst is aantoonbaar stale (Ads-telling klopt niet met het werkelijke aantal bestanden); vault_nav.py nog niet opnieuw gedraaid sinds recente toevoegingen",
+      "controle": "navigatieregel en vault_nav-telling gecontroleerd voor dit bestand",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -3919,11 +4098,11 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren binnen deze stap: vereist extern onderzoek naar competitieschemas, geen vastgelegde planning-aanpassing gevonden",
-      "controle": "gezocht naar een vastgelegde winterstop-planning per amateurcompetitie",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen Meta Ads-connector beschikbaar in deze vault, puur mensenwerk",
+      "controle": "Meta Ads Manager-planningsactie",
+      "gecontroleerd": "2026-11-10",
       "methode": "geen",
-      "uitkomst": "open"
+      "uitkomst": "handmatig"
      },
      "id": "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#94280aec",
      "prioriteit": "P2",
@@ -4127,11 +4306,11 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aanwijzing gevonden dat de statics al klaarstaan voor 14 november",
-      "controle": "gezocht naar een aanwijzing dat de statics voor 14 november klaarstaan",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen toegang tot het ontwerpbestand/advertentieaccount vanuit deze sessie",
+      "controle": "statics/creatives klaarzetten is ontwerp- en mediawerk",
+      "gecontroleerd": "2026-11-10",
       "methode": "geen",
-      "uitkomst": "open"
+      "uitkomst": "handmatig"
      },
      "id": "2026-11-05-meta-opbouw-getoetst-start-6-november#c3867a0c",
      "prioriteit": "P1",
@@ -4319,9 +4498,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen vermelding van Upfront en geen per-app laad-besluit vastgelegd in de werkthema-notitie, nog alleen in de eigen onderzoeksnotitie",
-      "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op Upfront en een per-app laad-besluit",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen vermelding van Upfront in de werkthema-notitie, per-app-besluit nog niet vastgelegd",
+      "controle": "gezocht op 'Upfront' in 2026-11-03-snelheid-werkthema-02.md",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -4341,9 +4520,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de werkthema-notitie heeft wel TBT-metingen maar geen vastgelegd doel PageSpeed 80+/TBT 300 ms/LCP 2,5s, nog alleen in de eigen onderzoeksnotitie",
-      "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op het doel PageSpeed 80+/TBT 300/LCP 2,5",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "de notitie bevat gemeten TBT/LCP-cijfers maar geen vastgelegd doel met deze drempelwaarden",
+      "controle": "gezocht op de doelwaarden (80+, TBT 300ms, LCP 2,5s) in 2026-11-03-snelheid-werkthema-02.md",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -4766,9 +4945,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de notitie noemt alleen aantallen per keten (SPORT 2000 48, DAKA 17, PadelShop.com 1), nog geen concrete shortlist met winkelnamen",
-      "controle": "notitie 2026-11-03-sportretail-nederland doorzocht op concrete winkelnamen van Absolute Teamsport en Soccer Center",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "de notitie bevat de analyse en de aantallen (17 DAKA, 48 SPORT 2000) maar geen uitgewerkte shortlist met de 5 Absolute Teamsport- en 3 Soccer Center-winkels met naam; actiepunt zelf staat nog als `- [ ]`",
+      "controle": "2026-11-03-sportretail-nederland.md gecontroleerd op een uitgewerkte shortlist met winkelnamen/contacten",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -4902,9 +5081,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "live is nu 203954520391, sinds 5 nov; nog geen 30 dagen verstreken sinds een stabiele livegang, dus nog te vroeg voor de vergelijking",
-      "controle": "themarollen gecontroleerd op hoe lang het huidige live-thema al live staat",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "shopbreed LCP p75 1239ms / INP p75 88ms, geen uitsplitsing per paginatype en geen voor/na-livegangvergelijking gemaakt",
+      "controle": "FROM web_performance SHOW lcp_p75_ms, inp_p75_ms SINCE -28d UNTIL today",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -4924,10 +5103,10 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: vereist een visuele telefoon- en desktopvergelijking inclusief kortingscode en deel-link, geen browser beschikbaar in deze stap",
-      "controle": "gezocht naar een manier om de winkelwagen visueel op telefoon en desktop te vergelijken",
-      "gecontroleerd": "2026-11-09",
-      "methode": "shopify",
+      "bewijs": "niet te controleren: JS-rendering van de cart-drawer op mobiel/desktop is nodig",
+      "controle": "gezocht of de winkelwagenvergelijking zonder browser te doen is",
+      "gecontroleerd": "2026-11-10",
+      "methode": "geen",
       "uitkomst": "open"
      },
      "id": "2026-11-03-snelheid-werkthema-02#f19dbfa6",
@@ -5095,9 +5274,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "hi-sale-price.css, hi-headings.css en hi-app-fixes.css staan in beide thema's nog los naast elkaar, hi-site.css en build.py bestaan in geen van beide (NOT_FOUND), en de actieprijskleur staat hardcoded op #e10600 in plaats van een var(--hi-red)",
-      "controle": "assets hi-sale-price.css, hi-headings.css, hi-app-fixes.css, hi-site.css en build.py opgevraagd in het live-thema en de oude WERKTHEMA 02",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "hi-site.css bestaat nog niet (NOT_FOUND), de 3 losse CSS-bestanden zijn nog niet samengevoegd",
+      "controle": "assets/hi-site.css gezocht in thema 203928076615 (WERKTHEMA 02 / Live website 04-11-2026 old)",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -5117,10 +5296,10 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "cwv.json wordt nog gevuld vanuit de PageSpeed-API die op 429 staat, niet vanuit Shopify web_performance per paginatype, ongewijzigd",
-      "controle": "gecontroleerd welke bron cwv.json voedt",
-      "gecontroleerd": "2026-11-09",
-      "methode": "ga4",
+      "bewijs": "script gebruikt nog alleen PageSpeed Insights voor cwv.json, geen Shopify web_performance-call gevonden",
+      "controle": "google_data.py doorzocht op gebruik van FROM web_performance voor cwv.json",
+      "gecontroleerd": "2026-11-10",
+      "methode": "vault",
       "uitkomst": "open"
      },
      "id": "2026-11-03-snelheid-nulmeting-alle-paginas#c8a3c793",
@@ -5157,10 +5336,10 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: PageSpeed Insights staat nog op 429 quota exceeded",
-      "controle": "PageSpeed Insights-quotum opnieuw gecontroleerd voor FCP/LCP op productpagina 2.0",
-      "gecontroleerd": "2026-11-09",
-      "methode": "ga4",
+      "bewijs": "PSI blijft 429 quotum, shopbrede web_performance geeft LCP 1239ms INP 88ms maar geen aparte meting voor productpagina 2.0",
+      "controle": "FROM web_performance SHOW lcp_p75_ms, inp_p75_ms SINCE -28d UNTIL today, geen page_type-uitsplitsing beschikbaar, en PageSpeed Insights opnieuw geprobeerd",
+      "gecontroleerd": "2026-11-10",
+      "methode": "shopify",
       "uitkomst": "open"
      },
      "id": "2026-11-03-snelheid-nulmeting-alle-paginas#9ceb0075",
@@ -5487,9 +5666,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de sectie noemt nog steeds alleen ffmpeg-motor en Canva (plus Premiere als optie), geen CapCut-besluit toegevoegd",
-      "controle": "sectie Software in Editing Stijl Gids Video gecontroleerd op een CapCut-besluit",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "sectie noemt alleen de ffmpeg-motor, CapCut/Canva-vergelijking en het besluit ontbreken nog",
+      "controle": "sectie Software in Editing Stijl Gids Video.md gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -5509,9 +5688,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen hook-eerst regel gevonden naast de cuttempo-tabel",
-      "controle": "Editing Stijl Gids Video doorzocht op een hook-eerst-regel naast de cuttempo-tabel",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen regel 'hook-eerst' gevonden in de stijlgids",
+      "controle": "gezocht op 'hook-eerst' in Editing Stijl Gids Video.md",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -5531,9 +5710,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen match-cut uitzondering gevonden in de stijlgids",
-      "controle": "Editing Stijl Gids Video doorzocht op een match-cut-uitzondering",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen vermelding van match-cut als derde uitzondering in de stijlgids",
+      "controle": "gezocht op 'match-cut' in Editing Stijl Gids Video.md",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -6252,9 +6431,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "hp-02 gebruikt nog overal sizes 50vw op desktop (niet 38vw), hp-10 kaart-afbeeldingen gebruiken sizes 30vw/92vw (niet 46vw), nog niet gecorrigeerd",
-      "controle": "sizes-attributen in sections/hp-02-kies-je-paar.liquid, hp-07-kies-je-sport.liquid en hp-10-zakelijk.liquid opgevraagd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "hp-09 nog vlak sizes 200px, hp-10 nog 30vw/92vw, hp-02 nog 50vw i.p.v. de gevraagde 160px/120px, 46vw en 38vw",
+      "controle": "sizes-attributen gecontroleerd in sections/hp-09-logoband.liquid, hp-10-zakelijk.liquid en hp-02-kies-je-paar.liquid (live thema 203954520391)",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6297,9 +6476,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "build.py bestaat nog niet (NOT_FOUND); hp-05 en hp-13 staan inderdaad niet in de order-array van templates/index.json (al uitgesloten), maar dat is handmatig, geen build-stap die hp-home.css splitst in kritiek/per-sectie",
-      "controle": "build.py en hp-home.css opgevraagd in het live-thema, en of hp-05/hp-13 nog in de sectie-volgorde van de homepage staan",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "build.py bestaat nog niet (NOT_FOUND), hp-home.css nog niet gesplitst",
+      "controle": "build.py gezocht in het live thema",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6319,9 +6498,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "image_mobile is ingevuld maar wijst naar exact dezelfde file als de desktop-foto (IMG_3844_297bd8ed...), dus geen eigen staande mobiele uitsnede geupload; de sectie heeft wel al kropping-logica klaarstaan zodra een andere afbeelding wordt gekozen",
-      "controle": "image_mobile-veld van hp-01 in templates/index.json gecontroleerd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "image_mobile staat nu wel ingevuld maar wijst naar exact dezelfde foto als desktop (IMG_3844_297bd8ed...jpg), geen eigen staande uitsnede of herkomprimering",
+      "controle": "templates/index.json hp_01-instellingen gecontroleerd op image_mobile",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6363,9 +6542,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: PageSpeed Insights staat nog op 429 quota exceeded",
-      "controle": "PageSpeed Insights-quotum opnieuw gecontroleerd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "PSI blijft 429 (quotum), nog niet opnieuw te draaien",
+      "controle": "PageSpeed Insights opnieuw geprobeerd na livegang",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -6499,9 +6678,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de standaard mobiele video (video_m_url) is nog hetzelfde bestand van 3.801.411 bytes (~3714 KB, exact de genoemde maat); er bestaat wel al een lichtere data-src-lo-variant van 1.347.108 bytes voor trage verbindingen, maar die is niet de standaard mobiele video",
-      "controle": "video-instellingen van hp-06-brandvideo en de bestandsgroottes van de mobiele video-URLs gecontroleerd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "video_lo_url is ingevuld en de liquid-logica kan hem gebruiken, maar de standaard src_m blijft de zware mobiele video; lichte versie niet standaard",
+      "controle": "video_lo_url-gebruik gecontroleerd in sections/hp-06-brandvideo.liquid en templates/index.json",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6521,9 +6700,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "chat-drawer-render en kleurgolf zijn weg (0 treffers), maar hpLightbox komt nog 4x voor en hp-urltest.webp bestaat nog als los bestand in het live-thema, ongewijzigd",
-      "controle": "hp-home.js doorzocht op chat-drawer-render, hpLightbox, kleurgolf, en hp-urltest.webp opgevraagd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "chat-drawer-render en kleurgolf in hp-07 zijn weg, maar hpLightbox staat nog 4x in hp-home.js en assets/hp-urltest.webp bestaat nog; actie dus niet volledig gedaan",
+      "controle": "hp-home.js en assets doorzocht op hpLightbox, chat-drawer-render, kleurgolf (hp-07) en hp-urltest.webp",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6689,9 +6868,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, het abonnementsplan van die app is niet via de Shopify-connector te zien",
+      "bewijs": "EcomSend is vervangen door CWILL(SendWILL) Popup Email, niet meer in appInstallations; actie over het EcomSend-abonnement niet uit te voeren zoals geschreven",
       "controle": "appInstallations gecontroleerd op EcomSend",
-      "gecontroleerd": "2026-11-09",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6711,9 +6890,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, de frequentie-instelling van die app is niet via de Shopify-connector te zien",
-      "controle": "appInstallations gecontroleerd op EcomSend-frequentie-instelling",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "EcomSend is vervangen door CWILL(SendWILL) Popup Email, niet meer in appInstallations; actie over EcomSend-frequentie niet uit te voeren zoals geschreven",
+      "controle": "appInstallations gecontroleerd op EcomSend",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -6733,9 +6912,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, de doelgroepinstelling van die app is niet via de Shopify-connector te zien",
-      "controle": "appInstallations gecontroleerd op EcomSend-doelgroepinstelling",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "EcomSend is vervangen door CWILL(SendWILL) Popup Email, niet meer in appInstallations; actie over EcomSend-popuptiming niet uit te voeren zoals geschreven",
+      "controle": "appInstallations gecontroleerd op EcomSend",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -7002,9 +7181,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: app-interne badge-instellingen van Section Store zijn niet via de theme-files of settings_data op te vragen",
-      "controle": "settings_data.json doorzocht op een Section Store-badge-shine-instelling",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "block-cart van section-store staat op disabled:true in het live thema; glans-instelling zelf niet uitleesbaar via de connector",
+      "controle": "settings_data.json gecontroleerd op Section Store-bundelblok",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -7046,9 +7225,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: EcomSend is vervangen door CWILL(SendWILL) Popup Email, het laadmoment van die app is niet via de Shopify-connector te zien",
-      "controle": "appInstallations gecontroleerd op EcomSend-laadmoment",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "EcomSend is vervangen door CWILL(SendWILL) Popup Email, niet meer in appInstallations; actie over EcomSend-poptiming niet uit te voeren zoals geschreven",
+      "controle": "appInstallations gecontroleerd op EcomSend",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -7068,9 +7247,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "Bundler staat niet meer in de lijst, maar Essential A/B Testing staat nog wel geinstalleerd; geen app met de naam FD Product Groups in de lijst (wel het losse app-embed-blok fd-product-groups, nu disabled:true), dus niet volledig uit de admin verwijderd",
+      "bewijs": "FD Product Groups en Bundler niet meer in appInstallations, Essential A/B Testing staat er nog wel in; actie dus niet volledig gedaan",
       "controle": "appInstallations gecontroleerd op FD Product Groups, Bundler en Essential A/B Testing",
-      "gecontroleerd": "2026-11-09",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -7090,9 +7269,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen Google tag of GA4-measurement-ID gevonden in layout/theme.liquid van het live-thema (203954520391), andere themaversies niet apart gecontroleerd",
-      "controle": "layout/theme.liquid van het live-thema doorzocht op een GA4-tag of measurement-ID",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen gtag/googletagmanager/G-measurement-ID gevonden in het live thema (203954520391)",
+      "controle": "layout/theme.liquid van het live thema doorzocht op een GA4/gtag-tag",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -7236,9 +7415,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "GA4 28d 5 purchases/276,65 euro tegenover Shopify 28d 8 orders/391,68 euro, meetgat blijft aanwezig, vergelijking nu gemaakt maar nog geen besluit op deze cijfers vastgelegd",
-      "controle": "GA4-aankopen tegen Shopify-orders gelegd, orphan-dubbel dus zelf gecontroleerd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "GA4 28d 5 purchases/€276,65 tegenover Shopify 28d 8 orders/€391,68, meetgat blijft, nog geen besluit vastgelegd",
+      "controle": "GA4-aankopen (28d) tegen Shopify-orders (28d) gelegd",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7258,9 +7437,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: dataset-filterinstellingen van het GA4-property zijn niet op te vragen via het huidige script",
-      "controle": "gezocht naar dataset-filterinstellingen van het GA4-property",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "niet te controleren: GA4-adminfilters (intern/preview/admin-verkeer) niet uitleesbaar via de huidige tools",
+      "controle": "gezocht of GA4-verkeersfilters via de API te controleren zijn",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7280,9 +7459,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen vastgelegd onderzoek naar deze specifieke piek gevonden in de vault",
-      "controle": "gezocht naar een vastgelegd onderzoek naar de piek van 26-27 oktober",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "niet te controleren met de huidige 28-dagen-aggregatie, geen dag-niveau breakdown beschikbaar",
+      "controle": "gezocht naar een dagelijkse sessiepiek-uitsplitsing rond 26-27 oktober",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7324,9 +7503,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: consent-instellingen staan niet in de export van het script",
-      "controle": "consent-instellingen in de GA4-export gecontroleerd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "key events ongewijzigd (purchase, qualify_lead, close_convert_lead, ads_conversion_*); consent-instellingen nog niet in de export, niet bewezen uitgeschakeld",
+      "controle": "google_data.py keyevents gedraaid en consent-instellingen gezocht",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7346,9 +7525,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "en-landingspagina toont nu 13 sessies in de laatste 28 dagen, herkomst nog niet apart uitgezocht",
-      "controle": "sessies op de en-landingspagina opnieuw opgevraagd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "/en nu 13 sessies (was 21), herkomst nog niet verder uitgezocht",
+      "controle": "landingspagina /en in de GA4 28d-export gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7368,9 +7547,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "VS toont nu 153 sessies met engagement-rate 0,19 tegenover NL 400 sessies met 0,57, nog niet uit de conversieberekening gefilterd",
-      "controle": "sessies en engagement-rate VS tegenover NL opnieuw opgevraagd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "VS nu 153 sessies (was 84), nog steeds geen aankoopdata per land beschikbaar om 0 aankopen te bevestigen of te weerleggen",
+      "controle": "sessies uit de VS in de GA4 28d-export gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7390,9 +7569,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "gripsokken heeft nu 926 vertoningen, CTR 1,51%, positie 5,8; grip socks heeft nu 534 vertoningen, CTR 0,37%, positie 9,8; de SERP-intentie zelf is nog niet onderzocht",
-      "controle": "google_data.py gsc gedraaid voor de zoektermen gripsokken en grip socks (28 dagen)",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "gripsokken nu 969 vertoningen/CTR 1,44%/positie 5,8, grip socks 542 vertoningen/CTR 0,37%/positie 9,8; SERP-intentie nog niet geanalyseerd",
+      "controle": "zoektermen gripsokken en grip socks in de GSC 28d-export gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "gsc",
       "uitkomst": "open"
      },
@@ -7412,9 +7591,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen apart rapport gevonden; high grip (25 vertoningen, positie 3,3) en highgrip (4 vertoningen, positie 1) komen nog steeds los van elkaar voor in de zoektermenlijst",
-      "controle": "zoektermenlijst gecontroleerd op een apart branded/non-branded-rapport en op high grip vs highgrip",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "branded klikaandeel in de top-50 nu 76,8% (73 van 95 klikken); geen volledig branded/non-branded-rapport over alle zoektermen gemaakt",
+      "controle": "branded aandeel berekend over de top-50 zoektermen in de GSC-export",
+      "gecontroleerd": "2026-11-10",
       "methode": "gsc",
       "uitkomst": "open"
      },
@@ -7434,9 +7613,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de pagina heeft nu 1721 vertoningen en 20 klikken in GSC over 28 dagen, de koppeling met GA4 organic verkeer is nog niet apart nagegaan",
-      "controle": "vertoningen en klikken van hi-grip-gripsokken-1 opnieuw opgevraagd",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "nu 1780 vertoningen/20 klikken/positie 6,5 (was 1463/15), redirect-/URL-verschil met GA4 organic nog niet opgelost",
+      "controle": "/products/hi-grip-gripsokken-1 in de GSC 28d-export gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "gsc",
       "uitkomst": "open"
      },
@@ -7456,9 +7635,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de termijn is verstreken, maar het onderzoek zelf opnieuw uitvoeren is een onderzoekstaak die buiten de rol van de actiecontrole valt",
-      "controle": "beoordeeld of het onderzoek binnen de rol van de actiecontrole valt",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "nog niet 4 weken verstreken sinds 28-10 (pas 13 dagen), herhaling nog niet aan de orde",
+      "controle": "termijn van 4 weken na het onderzoek (28-10) gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "ga4",
       "uitkomst": "open"
      },
@@ -7713,9 +7892,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "pagina collection geeft nog gewoon 200 met titel Shop gripsokken en rankt nog los (101 vertoningen, positie 3,6) naast collections/gripsokken (65 vertoningen, positie 8,9); koopintentie-onderzoek zelf nog niet uitgevoerd",
-      "controle": "/pages/collection gecontroleerd op status en GSC-cijfers t.o.v. /collections/gripsokken",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "/pages/collection 110 vertoningen/0 klikken/positie 3,3, /collections/gripsokken 67 vertoningen/3 klikken/positie 9,0; koopintentieverschil nog niet geanalyseerd, geen redirect/canonical toegepast",
+      "controle": "/pages/collection en /collections/gripsokken in de GSC 28d-export gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "gsc",
       "uitkomst": "open"
      },
@@ -8128,7 +8307,7 @@ window.HI_RESEARCH = {
      }
     },
     {
-     "afgevinkt": false,
+     "afgevinkt": true,
      "beheer": null,
      "besluit": false,
      "controle": {
@@ -8260,7 +8439,7 @@ window.HI_RESEARCH = {
      }
     }
    ],
-   "body_md": "# EK rugby U18/U20 Praag — plan, kosten en opbrengst\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\n\n**Kernadvies:** doe het klein en in de goede volgorde. Kies vóór 3 november één concept, gebruik de bestaande rugbylanding (geen nieuwe pagina, geen prijswijziging) en publiceer organisch via Social, door een mens. Geen bondslogo's, geen nieuw spelersbeeld, geen woord als \"officieel\" of \"partner\"; Rugby Europe, Rugby Nederland en teams alleen nominatief noemen, geen toernooihashtag en geen tags in de Stories van 7 en 8 nov. Harde voorwaarden vóór promotie: voorraad 2.0 bevestigd (uiterlijk vóór de post van 4 nov) en de absolute claims op de bestaande landing herformuleerd (zie Risico's). \"Nul extra budget\" geldt alleen voor Lean (€0 cash, 35 uur); de €150-advertentie en sokken voor een clubproef komen er bij als HÏ GRip ze kiest. Reken niet op omzet: de scenario's hieronder zijn aannames, geen prognose.\n\n**Status:** concept. Niets is gepubliceerd, verstuurd of aangepast (site, thema, Buffer, CRM). **Onafhankelijke QA is op 28-10 gedaan, per hoek, alle vier CORRIGEER (licht tot middel, geen ESCALEER, niets blokkerend):** Social (t_1e772e13), Website (t_55286dd6), Design (t_c512caed), Partnership (t_90a7408a). Operations heeft de bevindingen die een tekstcorrectie vragen in deze notitie verwerkt (kop per bevinding genoemd) en strijdige uitspraken niet beslecht maar als Besluit voor Lars gezet. Herkeuring na verwerking (tweede ronde) is nog niet gedaan. Bij elke QA bleef iets ongetoetst (zie Wat niet lukte). Deze bundeling is door Operations op bewijs en consistentie getoetst, niet inhoudelijk.\n\n**Feiten (opdracht Lars, geverifieerd op rugbyeurope.eu op 27-10; Operations heeft niet zelf gecontroleerd; tijden zijn lokale tijd (CET)):**\n- Praag (Tsjechië). U18, 8 teams, start 7 nov; NL–Portugal 7 nov 16:00 (bevestigd door Social-QA en Design-QA op rugbyeurope.eu).\n- U20, 8 teams, 8–15 nov; NL–Zwitserland 8 nov 13:30 **[CHECK: QA-hoeken spreken elkaar tegen, zie Acties]**. Elk team 3 wedstrijden, uitzending via Rugby Europe TV (\"8 teams\" en \"3 wedstrijden\" door geen enkele QA getoetst).\n- Rugby Europe heeft een footwear-partner: Oxen (zie Risico's: woordkeuze wijkt af).\n- Prijzen uit [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md): 2.0 zwart/wit €17,95 per paar; verzending €4,50, gratis vanaf €35.\n\n## Acties\n\n- [ ] P1 · Besluit: kies het concept \"Drie vakken, één rugbyweek\" (TRAINING, WEDSTRIJD, RESERVE) voor Social, Design en Website, of kies een alternatief (De onzichtbare ploeg / Van aftrap naar clubavond), vóór 3 nov\n- [ ] P1 · Besluit: capaciteit en uurtarief vaststellen (35–81 uur over alle hoeken, zie kostentabel) en welk scenario (Lean / Standaard / Uitgebreid) wordt gekozen\n- [ ] P1 · Besluit: vul de kostprijs per paar gripsokken in en bevestig voorraad en maten 2.0 (harde voorwaarde vóór de post van 4 nov), anders is de clubproef en elke marge niet te berekenen\n- [ ] P1 · Besluit: aftrap NL–Zwitserland U20 op 8 nov: 13:30 (opdracht Lars; Social-QA en Partnership-QA vinden dit terug op rugbyeurope.eu) of 11:00 lokale tijd (Design-QA, rugbyeurope.eu U20-pagina; volgens Design is 13:30 de aftrap Georgië–Polen U18 op 7 nov). Operations beslecht dit niet; controleer zelf de wedstrijdpagina vóór de Story van 8 nov en pas Fasenplan en Story aan\n- [ ] P2 · Besluit: €150 organische-plus-advertentieoptie (Social) ja of nee. Dit is de enige geplande cash in het plan; zonder akkoord blijft Lean op €0 cash\n- [ ] P1 · Besluit: \"altijd een persoon in beeld\" (Design Elementen, Socialprincipes 01, 03, 05) versus de schets zonder persoon. Design-QA: de voorgestelde uitzondering \"alleen handen\" is te smal, de founderslog van 6 nov hoort juist founders in beeld te hebben (volwassen, eigen toestemming) en de templates moeten een placeholder voor handen/founders krijgen. Keuze Lars: uitzondering (smal of breder) of de regel volgen met persoon/handen-placeholder\n- [ ] P1 · Besluit: herkomst, rechten en leeftijd van de rugbybeelden op de bestaande landing (scrum-hero, sidestep, kicker met HÏ Grip-sokken) zijn nergens vastgelegd [CHECK]: eerst vaststellen, daarna bevestigen of vervangen in dezelfde ronde als de hero-aanpassing. Tot die tijd geldt \"geen spelersbeeld\" alleen voor nieuw beeld, niet voor de bestaande landing\n- [ ] P1 · Besluit: Rugby Nederland benaderen over categorie- en rechtenafbakening (conceptmail 1 van Partnership; teksten staan alleen in de kaartcomment van t_d043da1d van 28-10, niet in deze notitie), te versturen door een mens vóór 6 nov. Partnership-QA: haal de EK-verwijzing uit de intro van mail 1 of kies er bewust voor (nu past dit slecht bij \"geen bondsgebonden actie\"); maak \"groepsbestellen\" in mail 3 een open vraag; elke clubproef krijgt een leeftijdscheck (U20 is niet automatisch 18+)\n- [ ] P1 · Voorraad en maten 2.0 en packroute controleren (Website/Partnership), vóór 3 nov. Stand nu: live available=true voor alle drie de maten op €17,95 (Website-QA), aantallen onbekend; Feiten 12-10: zwart −43, wit −34. Geen promotie zonder bevestiging\n- [ ] P1 · Website: absolute claims op de bestaande rugbylanding (\"Geen doorglijden\", \"Kracht komt aan\", \"zet scherper af\", \"Minder schuiven. Meer kracht.\", \"Fris tot de laatste minuut\") herformuleren volgens de formuleringsregel in Feiten vóór er verkeer naartoe gaat; Friedl 2023 uit de bronregel of als \"gemengd\" benoemen, Apps 2022 met de verplichte formulering (werkthema, publicatie door een mens)\n- [ ] P2 · Design: 3 templates en eigen beeld (macro/stills met eigen sokken) afmaken, vóór 3 nov, met placeholder voor handen/founders (afhankelijk van het besluit hierboven). Schets corrigeren: balk 03 steekt links ongeveer 32 px buiten het paneel; labels van 11–13 px (mobiele hero) en 12–13 px (cover) te klein; Story-tekst \"RUGBY EUROPE U18\" neutraler als \"U18 · PRAAG\"; Tangerine #E10600 alleen voor grote tekst op donker (4,0:1, [CHECK]) en wit op Tangerine 4,97:1\n- [ ] P2 · Website: kleine aanvulling op de bestaande rugbylanding in werkthema, mobiele controle en UTM rugby_praag_2026 testen (consent eerst), vóór 6 nov; publicatie door een mens. CTA \"Bekijk de maten\" bestaat niet op de pagina: koppelen aan de FAQ \"Welke maat en kleur kies ik?\"\n- [ ] P2 · Social: kalender 4–15 nov klaarzetten in Buffer als concept; planning en publicatie door een mens. Vastleggen: pillar PERFORMANCE/LIFESTYLE/INFLUENCER (niet persoonlijke content), hashtags #HÏGrip #Performance #rugby (#rugby mag via Hashtag Bibliotheek), bio-CTA geschrapt, gevarieerde slotvragen; Rugby Europe, Rugby Nederland en teams alleen nominatief, geen toernooihashtag of tag in de Stories van 7/8 nov\n- [ ] P3 · 17/18 nov: 48-uurs meting, evergreen hergebruik, toernooidatums van de landing halen, B2B-opvolging via Partnership\n\n## Origineel concept\n\n**\"Drie vakken, één rugbyweek.\"** Een rugbyweek heeft drie momenten voor je voeten: TRAINING, WEDSTRIJD, RESERVE. De tas heeft drie vakken. Het concept maakt van sokken een tasroutine in plaats van een productpitch en past daarmee bij wat ouders en spelers al doen (tas inpakken).\n\nWaarom dit past:\n- Geen merk- of nieuwe spelersrechten nodig; speelt in op de week zonder het toernooi als \"ons\" evenement te claimen.\n- Bewaarwaarde (checklist), herkenbaar, deelbaar in clubapps.\n- Alle vier de hoeken gebruiken dezelfde woorden en koppen, dus geen dubbel werk.\n\nSocial-correcties ronde 1 (Social-QA: niet in deze notitie teruggevonden, wel op de Social-kaart t_a854b721): #rugby toegestaan via Hashtag Bibliotheek; de toernooi-Story valt onder pillar PERFORMANCE/LIFESTYLE/INFLUENCER; bio-CTA geschrapt; slotvragen gevarieerd. Hashtags en captions staan op de kaart, niet hier.\n\nEerlijk over originaliteit: Social zegt zelf dat originaliteit niet is bewezen. Er is geen concurrentieonderzoek naar identieke aanpak van Stepl, ATAK of Offload gevonden. Het concept is \"origineel genoeg om te testen\", niet bewezen onderscheidend.\n\nVertaling per kanaal:\n- **Social (Social-kaart):** tascheckcarrousel (4 nov), reserve-Storypoll (5 nov), founderslog (6 nov), herinneringsstory zonder uitslag 7 en 8 nov, tasroutine-Reel (10 nov), reservecheck (13 nov), afsluiting 15 nov. Captions staan in de Social-kaart.\n- **Website (Website-kaart):** uitbreiding van https://higrip.nl/pages/gripsokken-voor-rugby met koppen \"Gripsokken voor jouw rugbyweek\", \"Schuift je voet in je boot?\", \"Voor ouders: eerst de praktische vragen\", \"Wat weten we echt?\"; CTA's \"Bekijk de gripsokken\" en \"Bekijk de maten\" (de laatste bestaat nog niet op de pagina, te koppelen aan de FAQ \"Welke maat en kleur kies ik?\").\n- **Design (Design-kaart):** donker, hard licht, macro van mesh/grip (de bestaande landing toont wel rugbyspelers, zie Risico's); drie schuine balken = drie vakken; één accent per uiting. Schets in `C:\\Users\\lars\\AppData\\Local\\hermes\\kanban\\attachments\\t_c9c0a41d\\ek-rugby-sleutelbeelden-schets.svg`.\n- **Partnership:** geen publiek actieconcept; kleine proef met 18+ clubspelers (training/wedstrijd/reserve), anoniem terugmelden, alleen na akkoord. Drie conceptmails (Rugby Nederland, jeugdclub, studentenclub), allemaal niet verstuurd; teksten alleen in de kaartcomment van t_d043da1d.\n\n## Fasenplan\n\n| Fase | Datum | Wat | Wie |\n|---|---|---|---|\n| A. Opwarmen | t/m 3 nov | Concept en capaciteit beslissen; voorraad, maten (bevestigd vóór 4 nov), kostprijs; stills; templates; landing in werkthema | Lars (besluit), Website, Design, Social, Partnership |\n| A | 4 nov | Tascheck-carrousel | Social, mens publiceert |\n| A | 5 nov | Reserve-Storypoll | idem |\n| A | 6 nov | Founderslog; landing mobiel gecontroleerd; mails (indien gekozen) door mens | Social, Website, Lars |\n| B. Tijdens | 7 nov | Herinnering NL-U18 (16:00 lokale tijd vs Portugal), geen uitslag/beeld, geen toernooihashtag of tag | Social |\n| B | 8 nov | Herinnering NL-U20 (13:30 vs Zwitserland, [CHECK] tijd, zie Acties) | Social |\n| B | 10 / 12 / 13 / 15 nov | Tasroutine-Reel (alleen product) / poll / reservecheck / afsluiting zonder uitslagen | Social |\n| B | 7–15 nov | Landing stabiel houden, alleen tekstwissels; eventuele 18+ clubproef | Website, Partnership |\n| C. Daarna | 16 nov | Terugblik; toernooidatums van landing | Social, Website |\n| C | 17–18 nov | 48-uurs meting (pas daarna, GA4 loopt achter) | Social/Website |\n| C | vanaf 16 nov | Evergreen uitleg houden; B2B-opvolging door mens | Partnership |\n\nDe fasering van de vier hoeken is verenigbaar. Geen hoek heeft een eigen datum die botst.\n\n## Kosten\n\nAlle uren zijn schattingen van de hoeken, niemand heeft ze gemeten. Er is geen uurtarief aangenomen: kosten in euro = uren × overeengekomen tarief [HÏ GRIP VULT IN]. De kostprijs per paar ontbreekt in de vault: totaal kosten clubproef = aantal × kostprijs [LARS VULT IN] + verzending/verpakking.\n\n| Post                                            | Lean   | Standaard             | Uitgebreid                                    |\n| ----------------------------------------------- | ------ | --------------------- | --------------------------------------------- |\n| Social (uur)                                    | 12     | 12–18                 | 18                                            |\n| Design incl. beeld (uur)                        | 11     | 11–19                 | 19                                            |\n| Website bouw/meting/QA (uur)                    | 12     | 12–24                 | 24                                            |\n| Partnership (uur)                               | 0      | 4–6 (12 paar, 1 club) | 15–20 (60 paar, 4 clubs)                      |\n| **Totaal uren**                                 | **35** | **39–67**             | **76–81**                                     |\n| Cash: advertentie                               | €0     | €0                    | €150 (optie, na akkoord; enige geplande cash) |\n| Cash: sokken clubproef                          | €0     | 12 × kostprijs        | 60 × kostprijs                                |\n| Cash: vervolg (foto/stock/tooling)              | €0     | €0                    | €0, eerst overleg                             |\n| Verkoopwaarde sokken clubproef (12/60 × €17,95) | —      | €215,40               | €1.077,00                                     |\n\nOpmerkingen:\n- Het tussenscenario \"30 paar, 2 clubs\" (Partnership, €538,50 verkoopwaarde) valt tussen Standaard en Uitgebreid.\n- Websitebouw (12–24 uur) staat alleen bij Website en is niet dubbel geteld bij Design.\n- Design-QA: alleen 3 templates zijn getekend terwijl de kalender 7 uitingen telt (cover, poll, founderslog, 2 Stories, reservecheck, afsluiting) plus een Reel zonder uren; de Design-uren zijn daarom [CHECK]. De sommen zelf (11–19, 35 / 39–67 / 76–81) klopten bij drie QA-hoeken.\n- Uren zijn onderling opgeteld door Operations. Of dit past in 10 dagen (11 vanaf 27 okt) is niet gecontroleerd. Het Uitgebreid-scenario is waarschijnlijk niet haalbaar voor 6 nov zonder extra capaciteit.\n- De verkoopwaarde van de proef is geen opbrengst: de sokken gaan naar testers.\n\n## Opbrengst\n\n**Geen prognose.** Baseline en marge ontbreken. De scenario's zijn aannames van Website en Social, zonder bewijs, behalve de beschikbare GA4-meting.\n\n| Scenario | Sessies naar landing | Conversie | Orders (sessies × conversie) | Omzet bij 1 paar à €17,95 (minimum) |\n|---|---|---|---|---|\n| Laag | 100 | 0,5% | 0,5 | €8,98 |\n| Midden | 300 | 1% | 3 | €53,85 |\n| Hoog | 600 | 2% | 12 | €215,40 |\n\n- Realiteitscheck: [2026-10-28-ga4-seo-conversie-audit-higrip-nl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Website-CRO/2026-10-28-ga4-seo-conversie-audit-higrip-nl.md) meldt 7 aankopen op ongeveer 417 sessies in 28 dagen (ongeveer 1,7%, ongeveer 15 sessies per dag over de hele site, meting nog niet gevalideerd tegen Shopify). Over 9 dagen toernooi is dat ongeveer 134 sessies voor de héle site. Het Hoog-scenario (600 sessies op één pagina) is dus ver boven de huidige basis en alleen met extra verkeer denkbaar. Neem Hoog niet als doel; ook Laag (100 sessies) en Midden (300) liggen op of boven wat de héle site in 9 dagen haalt (Website-QA). Organic Social leverde in de GA4-baseline 38 sessies en 0 aankopen in 28 dagen: dat is de meest vergelijkbare meting en ontbrak eerst in deze check.\n- Organisch social (illustratief, geen benchmark): 500 × 0,5% = 2,5 klikken; 1.500 × 1% = 15; 3.000 × 2% = 60. Klik is geen sessie en geen order. Nul is mogelijk.\n- Advertentie €150 (aannames CPM/frequentie, niet gemeten): CPM 15 / freq 3 = 10.000 impressies, 3.333 bereik; CPM 10 / freq 2 = 15.000, 7.500; CPM 6 / freq 1,5 = 25.000, 16.667.\n- Niet dubbel tellen: Social en Website meten dezelfde bezoekers. Omzet alleen via Shopify, gedrag via GA4, UTM `rugby_praag_2026` (source instagram, medium organic_social), met consent.\n- Waar de waarde vermoedelijk zit (hypothese, niet gemeten): herbruikbare rugby-landing en -content, B2B-gesprekken met clubs, leerpunten voor de beachhead. Meetbaar als: aantal gekwalificeerde B2B-aanvragen, deelname 18+ testers, anonieme feedback.\n\n## Doelgroepinzichten\n\nWat de bronnen laten zien, met de beperking erbij. Dit is geen representatief onderzoek.\n\n- **Rugbyer:** twijfel of gripsokken mogen en werken, sokken die in de schoen schuiven, prijs ten opzichte van gewone sokken. Bron: Reddit r/rugbyunion (anekdotisch, door Partnership niet zelf bevestigd door een 403). Wet: World Rugby Law 4 noemt sokken; onveilige kleding kan worden uitgesloten; geen goedkeuring van HÏ Grip of gripsokken in het algemeen (Website).\n- **Koper/ouder bij junioren:** praktische vragen eerst (maat, wassen, onderhoud, retour, clubkousen). Dit zijn hypotheses uit kaarten en vault (Beachhead Strategie: ouders zijn beïnvloeders), niet gemeten bij NL-ouders.\n- **Concurrenten:** Stepl-klantpagina is merkgehost, dus geen onafhankelijk bewijs. ATAK-ouderreview niet toegankelijk. Geen onafhankelijke reviews van Offload gevonden.\n- **Rugby-cultuur:** rugby.nl toont dank aan families en vrijwilligers. Dat ondersteunt het \"onzichtbare ploeg\"-alternatief, maar er is geen koopgedrag uit af te leiden.\n- **Beachhead (vault):** rugby is kernsport; ongeveer 17.000 spelers en 101 clubs; gripsokken toegestaan; geen NL-gripsokkenmerk op rugby. De claim \"Rugby Nederland sokkenpartner-slot open\" staat alleen in Beachhead Strategie (r. 84) zonder bron, gaat over Rugby Nederland (niet Rugby Europe) en is NIET bevestigd; Rugby Nederland noemt Erreà en Rhino als leveranciers en zegt niets over sokken. Conceptmail 1 is de toets.\n- **Productfeiten die mogen:** wrijvingscoëfficiënt 1,17 versus 0,60 (Apps et al. 2022, uit Feiten). Geen blarenpreventie, geen prestatieclaim. Let op: de bestaande landing zegt meer dan Feiten toestaat (\"Minder schuiven. Meer kracht.\", \"Kracht komt aan\", \"Fris tot de laatste minuut\", Apps 2022 zonder verplichte formulering; zie Risico's). \"Geen prestatieclaim\" geldt dus voor dit plan, niet voor de huidige pagina.\n\n## Risico's\n\n- **Minderjarigen (U18):** geen namen, foto's of videobeelden van spelers zonder toestemming van ouders én Rugby Nederland. Geen persoonsgegevens verzamelen. Clubproef alleen met 18+. Ouderinventarisatie alleen vrijwillig, geaggregeerd en zonder kindgegevens.\n- **Sponsorclaim:** geen \"officieel\", \"partner\", \"supplier\" van bond of toernooi; geen Rugby Europe-/Rugby Nederland-logo; geen wedstrijdbeeld of livestreamclips. Wel toegestaan: \"veel succes Oranje U18/U20\".\n- **Woordkeuze Official Footwear Supplier/Partner (Partnership-QA, Design-QA):** de opdracht noemt \"Official Footwear Supplier\". Het Rugby Europe-bericht van 5-8-2025 noemt Oxen \"Official Footwear Partner\" (laarzen en trainers voor officials, plus een paar laarzen en voucher per speler, U18/U20 inbegrepen, t/m aug 2027); Design-QA zag \"Supplier\" ook op de toernooipagina. Sokken worden niet genoemd, dus dit bewijst geen sokkenexclusiviteit en is geen tegenstrijdige bron. Het sokkenslot is onbevestigd (zie Doelgroepinzichten).\n- **Tegenstrijdigheid Social/Design:** Social-regel \"altijd een persoon in beeld\" botst met de schets zonder persoon; Design-QA noemt de voorgestelde uitzondering \"alleen handen\" te smal (besluit voor Lars, zie Acties). Tangerine #E10600 is het vastgelegde rugbyaccent (Logo & Kleurenpalet) en vraagt geen besluit.\n- **Beeld op de bestaande landing (Design-QA):** de notitie zei \"geen spelersbeeld\", maar de bestaande rugbylanding toont rugbyspelers (scrum-hero, sidestep, kicker met HÏ Grip-sokken); herkomst, rechten en leeftijd onbekend [CHECK]. Sketch C vervangt alleen de hero.\n- **Claims op de bestaande landing (Website-QA, Social-QA, Design-QA):** \"Geen doorglijden (bij een tackle)\", \"Kracht komt aan\", \"zet scherper af\", \"Minder schuiven. Meer kracht.\", \"Fris tot de laatste minuut\" en Apps 2022 zonder verplichte formulering zijn sterker dan Feiten toestaat (C8 blokkerend); Friedl 2023 staat in de bronregel terwijl Feiten dat \"gemengd\" noemt. Website herformuleert vóór promotie; Social verwijst er niet naar.\n- **Korte tijd:** 10 dagen vanaf 28 okt (11 vanaf 27 okt), 35–81 uur verspreid over vier hoeken; menselijke goedkeuring nodig voor alles voordat het naar buiten gaat.\n- **Voorraad/maten 2.0:** Feiten (12-10) meldt negatief: zwart −43, wit −34 [CHECK]. Live staat 2.0 op available=true voor alle drie de maten (€17,95), aantallen onbekend (Website-QA). Voorraadbevestiging is harde voorwaarde vóór de post van 4 nov; niet promoten wat niet leverbaar is.\n- **Geen fabrikant- of onafhankelijk onderzoek gevonden:** geen studie naar blarenpreventie of schuiven bij gripsokken in rugby. Dus niets claimen buiten wat in Feiten staat. De claim \"Wat weten we echt?\" op de landing moet dat eerlijk zeggen.\n- **Meting:** de GA4-conversiemeting is nog niet gevalideerd tegen Shopify; trackingreparaties staan buiten de uren.\n- **QA-stand:** vier hoek-QA's (CORRIGEER) verwerkt, herkeuring niet gedaan (zie In het kort).\n\n## Wat niet lukte\n\nNiet gevonden of niet gecontroleerd: productkostprijs; contractuele sokkenexclusiviteit; bereik en engagement van NL-rugbykanalen (rugbynederland-TikTok niet als officieel bevestigd); deelgedrag NL-ouders; onafhankelijke reviews Stepl/ATAK/Offload; Buffer-kalender; Reel via Video-agent (overgeslagen); \"8 teams\" en \"3 wedstrijden\"; of er al een vergelijkbaar tasvakken-concept bestaat. Operations heeft de web-bronnen niet zelf herlezen en neemt de bevindingen van de hoeken over.\n\n**QA gedaan op 28-10, verdict per hoek (alle CORRIGEER, verwerkt in deze notitie; geen tweede ronde):**\n- Social (t_1e772e13): CORRIGEER, licht. Gecontroleerd: data NL-U18 en NL-U20, prijs/verzending, Oxen/Rugby Nederland-bronnen, #rugby, sommen. Niet gecontroleerd: Reddit (CRAWL_EMPTY), Stepl/ATAK/Instagram, Buffer/kalender, rechten, beelden, de andere kaarten en de SVG-schets.\n- Website (t_55286dd6): CORRIGEER, licht tot middel. Zes bronnen geopend, sommen correct, geen overtreding rond minderjarigen of sponsorclaim. Niet gecontroleerd: mobiel, EN, JSON-LD, meta-lengte, U20-wedstrijd en Oxen-sponsor, W1 en W2 (nog niets gebouwd).\n- Design (t_c512caed): CORRIGEER, 1 feitelijke fout (U20-tijd, strijdig met Social/Partnership, zie Acties) en 3 merkpunten. SVG niet gerenderd, alleen code gelezen; geen echte logo's of assets; Social-correcties ronde 1 niet individueel getoetst; rugby.nl, World Rugby Law 4, Reddit, Stepl en voorraad 2.0 niet geopend.\n- Partnership (t_90a7408a): CORRIGEER, licht, 4 punten, niets blokkerend. Slechts twee bronnen volledig geopend (minder dan de gevraagde drie; toernooipagina's alleen via zoekresultaat). Niet gecontroleerd: NL–Portugal 16:00, \"8 teams\", sokkencontracten, Reddit (403), of mails buiten het systeem zijn verstuurd.\n\n## Bronnen\n\n- Kaarten (Kanban): t_a656f5b5 (Website), t_a854b721 (Social), t_c9c0a41d (Design), t_d043da1d (Partnership), opdracht t_c339c598; QA-kaarten t_1e772e13, t_55286dd6, t_c512caed, t_90a7408a; verwerking t_c7971beb.\n- [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (prijzen, verzendkosten).\n- Genoemd door de hoeken: higrip.nl/pages/gripsokken-voor-rugby; passport.world.rugby (Law 4); reddit.com/r/rugbyunion (grip socks); stepl-rugby.com/en; rugby.nl/organisatie/partners/supplier; rugbyeurope.eu (Oxen-bericht); rugbynow.com (ATAK); decathlon.mt (R520); rugbyclubhilversum.nl.\n- [2026-10-28-ga4-seo-conversie-audit-higrip-nl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Website-CRO/2026-10-28-ga4-seo-conversie-audit-higrip-nl.md) (GA4-baseline).\n\n## Aantekeningen",
+   "body_md": "# EK rugby U18/U20 Praag — plan, kosten en opbrengst\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\n\n**Kernadvies:** doe het klein en in de goede volgorde. Kies vóór 3 november één concept, gebruik de bestaande rugbylanding (geen nieuwe pagina, geen prijswijziging) en publiceer organisch via Social, door een mens. Geen bondslogo's, geen nieuw spelersbeeld, geen woord als \"officieel\" of \"partner\"; Rugby Europe, Rugby Nederland en teams alleen nominatief noemen, geen toernooihashtag en geen tags in de Stories van 7 en 8 nov. Harde voorwaarden vóór promotie: voorraad 2.0 bevestigd (uiterlijk vóór de post van 4 nov) en de absolute claims op de bestaande landing herformuleerd (zie Risico's). \"Nul extra budget\" geldt alleen voor Lean (€0 cash, 35 uur); de €150-advertentie en sokken voor een clubproef komen er bij als HÏ GRip ze kiest. Reken niet op omzet: de scenario's hieronder zijn aannames, geen prognose.\n\n**Status:** concept. Niets is gepubliceerd, verstuurd of aangepast (site, thema, Buffer, CRM). **Onafhankelijke QA is op 28-10 gedaan, per hoek, alle vier CORRIGEER (licht tot middel, geen ESCALEER, niets blokkerend):** Social (t_1e772e13), Website (t_55286dd6), Design (t_c512caed), Partnership (t_90a7408a). Operations heeft de bevindingen die een tekstcorrectie vragen in deze notitie verwerkt (kop per bevinding genoemd) en strijdige uitspraken niet beslecht maar als Besluit voor Lars gezet. Herkeuring na verwerking (tweede ronde) is nog niet gedaan. Bij elke QA bleef iets ongetoetst (zie Wat niet lukte). Deze bundeling is door Operations op bewijs en consistentie getoetst, niet inhoudelijk.\n\n**Feiten (opdracht Lars, geverifieerd op rugbyeurope.eu op 27-10; Operations heeft niet zelf gecontroleerd; tijden zijn lokale tijd (CET)):**\n- Praag (Tsjechië). U18, 8 teams, start 7 nov; NL–Portugal 7 nov 16:00 (bevestigd door Social-QA en Design-QA op rugbyeurope.eu).\n- U20, 8 teams, 8–15 nov; NL–Zwitserland 8 nov 13:30 **[CHECK: QA-hoeken spreken elkaar tegen, zie Acties]**. Elk team 3 wedstrijden, uitzending via Rugby Europe TV (\"8 teams\" en \"3 wedstrijden\" door geen enkele QA getoetst).\n- Rugby Europe heeft een footwear-partner: Oxen (zie Risico's: woordkeuze wijkt af).\n- Prijzen uit [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md): 2.0 zwart/wit €17,95 per paar; verzending €4,50, gratis vanaf €35.\n\n## Acties\n\n- [ ] P1 · Besluit: kies het concept \"Drie vakken, één rugbyweek\" (TRAINING, WEDSTRIJD, RESERVE) voor Social, Design en Website, of kies een alternatief (De onzichtbare ploeg / Van aftrap naar clubavond), vóór 3 nov\n- [ ] P1 · Besluit: capaciteit en uurtarief vaststellen (35–81 uur over alle hoeken, zie kostentabel) en welk scenario (Lean / Standaard / Uitgebreid) wordt gekozen\n- [ ] P1 · Besluit: vul de kostprijs per paar gripsokken in en bevestig voorraad en maten 2.0 (harde voorwaarde vóór de post van 4 nov), anders is de clubproef en elke marge niet te berekenen\n- [ ] P1 · Besluit: aftrap NL–Zwitserland U20 op 8 nov: 13:30 (opdracht Lars; Social-QA en Partnership-QA vinden dit terug op rugbyeurope.eu) of 11:00 lokale tijd (Design-QA, rugbyeurope.eu U20-pagina; volgens Design is 13:30 de aftrap Georgië–Polen U18 op 7 nov). Operations beslecht dit niet; controleer zelf de wedstrijdpagina vóór de Story van 8 nov en pas Fasenplan en Story aan\n- [ ] P2 · Besluit: €150 organische-plus-advertentieoptie (Social) ja of nee. Dit is de enige geplande cash in het plan; zonder akkoord blijft Lean op €0 cash\n- [ ] P1 · Besluit: \"altijd een persoon in beeld\" (Design Elementen, Socialprincipes 01, 03, 05) versus de schets zonder persoon. Design-QA: de voorgestelde uitzondering \"alleen handen\" is te smal, de founderslog van 6 nov hoort juist founders in beeld te hebben (volwassen, eigen toestemming) en de templates moeten een placeholder voor handen/founders krijgen. Keuze Lars: uitzondering (smal of breder) of de regel volgen met persoon/handen-placeholder\n- [ ] P1 · Besluit: herkomst, rechten en leeftijd van de rugbybeelden op de bestaande landing (scrum-hero, sidestep, kicker met HÏ Grip-sokken) zijn nergens vastgelegd [CHECK]: eerst vaststellen, daarna bevestigen of vervangen in dezelfde ronde als de hero-aanpassing. Tot die tijd geldt \"geen spelersbeeld\" alleen voor nieuw beeld, niet voor de bestaande landing\n- [ ] P1 · Besluit: Rugby Nederland benaderen over categorie- en rechtenafbakening (conceptmail 1 van Partnership; teksten staan alleen in de kaartcomment van t_d043da1d van 28-10, niet in deze notitie), te versturen door een mens vóór 6 nov. Partnership-QA: haal de EK-verwijzing uit de intro van mail 1 of kies er bewust voor (nu past dit slecht bij \"geen bondsgebonden actie\"); maak \"groepsbestellen\" in mail 3 een open vraag; elke clubproef krijgt een leeftijdscheck (U20 is niet automatisch 18+)\n- [x] P1 · Voorraad en maten 2.0 en packroute controleren (Website/Partnership), vóór 3 nov. Stand nu: live available=true voor alle drie de maten op €17,95 (Website-QA), aantallen onbekend; Feiten 12-10: zwart −43, wit −34. Geen promotie zonder bevestiging\n- [ ] P1 · Website: absolute claims op de bestaande rugbylanding (\"Geen doorglijden\", \"Kracht komt aan\", \"zet scherper af\", \"Minder schuiven. Meer kracht.\", \"Fris tot de laatste minuut\") herformuleren volgens de formuleringsregel in Feiten vóór er verkeer naartoe gaat; Friedl 2023 uit de bronregel of als \"gemengd\" benoemen, Apps 2022 met de verplichte formulering (werkthema, publicatie door een mens)\n- [ ] P2 · Design: 3 templates en eigen beeld (macro/stills met eigen sokken) afmaken, vóór 3 nov, met placeholder voor handen/founders (afhankelijk van het besluit hierboven). Schets corrigeren: balk 03 steekt links ongeveer 32 px buiten het paneel; labels van 11–13 px (mobiele hero) en 12–13 px (cover) te klein; Story-tekst \"RUGBY EUROPE U18\" neutraler als \"U18 · PRAAG\"; Tangerine #E10600 alleen voor grote tekst op donker (4,0:1, [CHECK]) en wit op Tangerine 4,97:1\n- [ ] P2 · Website: kleine aanvulling op de bestaande rugbylanding in werkthema, mobiele controle en UTM rugby_praag_2026 testen (consent eerst), vóór 6 nov; publicatie door een mens. CTA \"Bekijk de maten\" bestaat niet op de pagina: koppelen aan de FAQ \"Welke maat en kleur kies ik?\"\n- [ ] P2 · Social: kalender 4–15 nov klaarzetten in Buffer als concept; planning en publicatie door een mens. Vastleggen: pillar PERFORMANCE/LIFESTYLE/INFLUENCER (niet persoonlijke content), hashtags #HÏGrip #Performance #rugby (#rugby mag via Hashtag Bibliotheek), bio-CTA geschrapt, gevarieerde slotvragen; Rugby Europe, Rugby Nederland en teams alleen nominatief, geen toernooihashtag of tag in de Stories van 7/8 nov\n- [ ] P3 · 17/18 nov: 48-uurs meting, evergreen hergebruik, toernooidatums van de landing halen, B2B-opvolging via Partnership\n\n## Origineel concept\n\n**\"Drie vakken, één rugbyweek.\"** Een rugbyweek heeft drie momenten voor je voeten: TRAINING, WEDSTRIJD, RESERVE. De tas heeft drie vakken. Het concept maakt van sokken een tasroutine in plaats van een productpitch en past daarmee bij wat ouders en spelers al doen (tas inpakken).\n\nWaarom dit past:\n- Geen merk- of nieuwe spelersrechten nodig; speelt in op de week zonder het toernooi als \"ons\" evenement te claimen.\n- Bewaarwaarde (checklist), herkenbaar, deelbaar in clubapps.\n- Alle vier de hoeken gebruiken dezelfde woorden en koppen, dus geen dubbel werk.\n\nSocial-correcties ronde 1 (Social-QA: niet in deze notitie teruggevonden, wel op de Social-kaart t_a854b721): #rugby toegestaan via Hashtag Bibliotheek; de toernooi-Story valt onder pillar PERFORMANCE/LIFESTYLE/INFLUENCER; bio-CTA geschrapt; slotvragen gevarieerd. Hashtags en captions staan op de kaart, niet hier.\n\nEerlijk over originaliteit: Social zegt zelf dat originaliteit niet is bewezen. Er is geen concurrentieonderzoek naar identieke aanpak van Stepl, ATAK of Offload gevonden. Het concept is \"origineel genoeg om te testen\", niet bewezen onderscheidend.\n\nVertaling per kanaal:\n- **Social (Social-kaart):** tascheckcarrousel (4 nov), reserve-Storypoll (5 nov), founderslog (6 nov), herinneringsstory zonder uitslag 7 en 8 nov, tasroutine-Reel (10 nov), reservecheck (13 nov), afsluiting 15 nov. Captions staan in de Social-kaart.\n- **Website (Website-kaart):** uitbreiding van https://higrip.nl/pages/gripsokken-voor-rugby met koppen \"Gripsokken voor jouw rugbyweek\", \"Schuift je voet in je boot?\", \"Voor ouders: eerst de praktische vragen\", \"Wat weten we echt?\"; CTA's \"Bekijk de gripsokken\" en \"Bekijk de maten\" (de laatste bestaat nog niet op de pagina, te koppelen aan de FAQ \"Welke maat en kleur kies ik?\").\n- **Design (Design-kaart):** donker, hard licht, macro van mesh/grip (de bestaande landing toont wel rugbyspelers, zie Risico's); drie schuine balken = drie vakken; één accent per uiting. Schets in `C:\\Users\\lars\\AppData\\Local\\hermes\\kanban\\attachments\\t_c9c0a41d\\ek-rugby-sleutelbeelden-schets.svg`.\n- **Partnership:** geen publiek actieconcept; kleine proef met 18+ clubspelers (training/wedstrijd/reserve), anoniem terugmelden, alleen na akkoord. Drie conceptmails (Rugby Nederland, jeugdclub, studentenclub), allemaal niet verstuurd; teksten alleen in de kaartcomment van t_d043da1d.\n\n## Fasenplan\n\n| Fase | Datum | Wat | Wie |\n|---|---|---|---|\n| A. Opwarmen | t/m 3 nov | Concept en capaciteit beslissen; voorraad, maten (bevestigd vóór 4 nov), kostprijs; stills; templates; landing in werkthema | Lars (besluit), Website, Design, Social, Partnership |\n| A | 4 nov | Tascheck-carrousel | Social, mens publiceert |\n| A | 5 nov | Reserve-Storypoll | idem |\n| A | 6 nov | Founderslog; landing mobiel gecontroleerd; mails (indien gekozen) door mens | Social, Website, Lars |\n| B. Tijdens | 7 nov | Herinnering NL-U18 (16:00 lokale tijd vs Portugal), geen uitslag/beeld, geen toernooihashtag of tag | Social |\n| B | 8 nov | Herinnering NL-U20 (13:30 vs Zwitserland, [CHECK] tijd, zie Acties) | Social |\n| B | 10 / 12 / 13 / 15 nov | Tasroutine-Reel (alleen product) / poll / reservecheck / afsluiting zonder uitslagen | Social |\n| B | 7–15 nov | Landing stabiel houden, alleen tekstwissels; eventuele 18+ clubproef | Website, Partnership |\n| C. Daarna | 16 nov | Terugblik; toernooidatums van landing | Social, Website |\n| C | 17–18 nov | 48-uurs meting (pas daarna, GA4 loopt achter) | Social/Website |\n| C | vanaf 16 nov | Evergreen uitleg houden; B2B-opvolging door mens | Partnership |\n\nDe fasering van de vier hoeken is verenigbaar. Geen hoek heeft een eigen datum die botst.\n\n## Kosten\n\nAlle uren zijn schattingen van de hoeken, niemand heeft ze gemeten. Er is geen uurtarief aangenomen: kosten in euro = uren × overeengekomen tarief [HÏ GRIP VULT IN]. De kostprijs per paar ontbreekt in de vault: totaal kosten clubproef = aantal × kostprijs [LARS VULT IN] + verzending/verpakking.\n\n| Post                                            | Lean   | Standaard             | Uitgebreid                                    |\n| ----------------------------------------------- | ------ | --------------------- | --------------------------------------------- |\n| Social (uur)                                    | 12     | 12–18                 | 18                                            |\n| Design incl. beeld (uur)                        | 11     | 11–19                 | 19                                            |\n| Website bouw/meting/QA (uur)                    | 12     | 12–24                 | 24                                            |\n| Partnership (uur)                               | 0      | 4–6 (12 paar, 1 club) | 15–20 (60 paar, 4 clubs)                      |\n| **Totaal uren**                                 | **35** | **39–67**             | **76–81**                                     |\n| Cash: advertentie                               | €0     | €0                    | €150 (optie, na akkoord; enige geplande cash) |\n| Cash: sokken clubproef                          | €0     | 12 × kostprijs        | 60 × kostprijs                                |\n| Cash: vervolg (foto/stock/tooling)              | €0     | €0                    | €0, eerst overleg                             |\n| Verkoopwaarde sokken clubproef (12/60 × €17,95) | —      | €215,40               | €1.077,00                                     |\n\nOpmerkingen:\n- Het tussenscenario \"30 paar, 2 clubs\" (Partnership, €538,50 verkoopwaarde) valt tussen Standaard en Uitgebreid.\n- Websitebouw (12–24 uur) staat alleen bij Website en is niet dubbel geteld bij Design.\n- Design-QA: alleen 3 templates zijn getekend terwijl de kalender 7 uitingen telt (cover, poll, founderslog, 2 Stories, reservecheck, afsluiting) plus een Reel zonder uren; de Design-uren zijn daarom [CHECK]. De sommen zelf (11–19, 35 / 39–67 / 76–81) klopten bij drie QA-hoeken.\n- Uren zijn onderling opgeteld door Operations. Of dit past in 10 dagen (11 vanaf 27 okt) is niet gecontroleerd. Het Uitgebreid-scenario is waarschijnlijk niet haalbaar voor 6 nov zonder extra capaciteit.\n- De verkoopwaarde van de proef is geen opbrengst: de sokken gaan naar testers.\n\n## Opbrengst\n\n**Geen prognose.** Baseline en marge ontbreken. De scenario's zijn aannames van Website en Social, zonder bewijs, behalve de beschikbare GA4-meting.\n\n| Scenario | Sessies naar landing | Conversie | Orders (sessies × conversie) | Omzet bij 1 paar à €17,95 (minimum) |\n|---|---|---|---|---|\n| Laag | 100 | 0,5% | 0,5 | €8,98 |\n| Midden | 300 | 1% | 3 | €53,85 |\n| Hoog | 600 | 2% | 12 | €215,40 |\n\n- Realiteitscheck: [2026-10-28-ga4-seo-conversie-audit-higrip-nl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Website-CRO/2026-10-28-ga4-seo-conversie-audit-higrip-nl.md) meldt 7 aankopen op ongeveer 417 sessies in 28 dagen (ongeveer 1,7%, ongeveer 15 sessies per dag over de hele site, meting nog niet gevalideerd tegen Shopify). Over 9 dagen toernooi is dat ongeveer 134 sessies voor de héle site. Het Hoog-scenario (600 sessies op één pagina) is dus ver boven de huidige basis en alleen met extra verkeer denkbaar. Neem Hoog niet als doel; ook Laag (100 sessies) en Midden (300) liggen op of boven wat de héle site in 9 dagen haalt (Website-QA). Organic Social leverde in de GA4-baseline 38 sessies en 0 aankopen in 28 dagen: dat is de meest vergelijkbare meting en ontbrak eerst in deze check.\n- Organisch social (illustratief, geen benchmark): 500 × 0,5% = 2,5 klikken; 1.500 × 1% = 15; 3.000 × 2% = 60. Klik is geen sessie en geen order. Nul is mogelijk.\n- Advertentie €150 (aannames CPM/frequentie, niet gemeten): CPM 15 / freq 3 = 10.000 impressies, 3.333 bereik; CPM 10 / freq 2 = 15.000, 7.500; CPM 6 / freq 1,5 = 25.000, 16.667.\n- Niet dubbel tellen: Social en Website meten dezelfde bezoekers. Omzet alleen via Shopify, gedrag via GA4, UTM `rugby_praag_2026` (source instagram, medium organic_social), met consent.\n- Waar de waarde vermoedelijk zit (hypothese, niet gemeten): herbruikbare rugby-landing en -content, B2B-gesprekken met clubs, leerpunten voor de beachhead. Meetbaar als: aantal gekwalificeerde B2B-aanvragen, deelname 18+ testers, anonieme feedback.\n\n## Doelgroepinzichten\n\nWat de bronnen laten zien, met de beperking erbij. Dit is geen representatief onderzoek.\n\n- **Rugbyer:** twijfel of gripsokken mogen en werken, sokken die in de schoen schuiven, prijs ten opzichte van gewone sokken. Bron: Reddit r/rugbyunion (anekdotisch, door Partnership niet zelf bevestigd door een 403). Wet: World Rugby Law 4 noemt sokken; onveilige kleding kan worden uitgesloten; geen goedkeuring van HÏ Grip of gripsokken in het algemeen (Website).\n- **Koper/ouder bij junioren:** praktische vragen eerst (maat, wassen, onderhoud, retour, clubkousen). Dit zijn hypotheses uit kaarten en vault (Beachhead Strategie: ouders zijn beïnvloeders), niet gemeten bij NL-ouders.\n- **Concurrenten:** Stepl-klantpagina is merkgehost, dus geen onafhankelijk bewijs. ATAK-ouderreview niet toegankelijk. Geen onafhankelijke reviews van Offload gevonden.\n- **Rugby-cultuur:** rugby.nl toont dank aan families en vrijwilligers. Dat ondersteunt het \"onzichtbare ploeg\"-alternatief, maar er is geen koopgedrag uit af te leiden.\n- **Beachhead (vault):** rugby is kernsport; ongeveer 17.000 spelers en 101 clubs; gripsokken toegestaan; geen NL-gripsokkenmerk op rugby. De claim \"Rugby Nederland sokkenpartner-slot open\" staat alleen in Beachhead Strategie (r. 84) zonder bron, gaat over Rugby Nederland (niet Rugby Europe) en is NIET bevestigd; Rugby Nederland noemt Erreà en Rhino als leveranciers en zegt niets over sokken. Conceptmail 1 is de toets.\n- **Productfeiten die mogen:** wrijvingscoëfficiënt 1,17 versus 0,60 (Apps et al. 2022, uit Feiten). Geen blarenpreventie, geen prestatieclaim. Let op: de bestaande landing zegt meer dan Feiten toestaat (\"Minder schuiven. Meer kracht.\", \"Kracht komt aan\", \"Fris tot de laatste minuut\", Apps 2022 zonder verplichte formulering; zie Risico's). \"Geen prestatieclaim\" geldt dus voor dit plan, niet voor de huidige pagina.\n\n## Risico's\n\n- **Minderjarigen (U18):** geen namen, foto's of videobeelden van spelers zonder toestemming van ouders én Rugby Nederland. Geen persoonsgegevens verzamelen. Clubproef alleen met 18+. Ouderinventarisatie alleen vrijwillig, geaggregeerd en zonder kindgegevens.\n- **Sponsorclaim:** geen \"officieel\", \"partner\", \"supplier\" van bond of toernooi; geen Rugby Europe-/Rugby Nederland-logo; geen wedstrijdbeeld of livestreamclips. Wel toegestaan: \"veel succes Oranje U18/U20\".\n- **Woordkeuze Official Footwear Supplier/Partner (Partnership-QA, Design-QA):** de opdracht noemt \"Official Footwear Supplier\". Het Rugby Europe-bericht van 5-8-2025 noemt Oxen \"Official Footwear Partner\" (laarzen en trainers voor officials, plus een paar laarzen en voucher per speler, U18/U20 inbegrepen, t/m aug 2027); Design-QA zag \"Supplier\" ook op de toernooipagina. Sokken worden niet genoemd, dus dit bewijst geen sokkenexclusiviteit en is geen tegenstrijdige bron. Het sokkenslot is onbevestigd (zie Doelgroepinzichten).\n- **Tegenstrijdigheid Social/Design:** Social-regel \"altijd een persoon in beeld\" botst met de schets zonder persoon; Design-QA noemt de voorgestelde uitzondering \"alleen handen\" te smal (besluit voor Lars, zie Acties). Tangerine #E10600 is het vastgelegde rugbyaccent (Logo & Kleurenpalet) en vraagt geen besluit.\n- **Beeld op de bestaande landing (Design-QA):** de notitie zei \"geen spelersbeeld\", maar de bestaande rugbylanding toont rugbyspelers (scrum-hero, sidestep, kicker met HÏ Grip-sokken); herkomst, rechten en leeftijd onbekend [CHECK]. Sketch C vervangt alleen de hero.\n- **Claims op de bestaande landing (Website-QA, Social-QA, Design-QA):** \"Geen doorglijden (bij een tackle)\", \"Kracht komt aan\", \"zet scherper af\", \"Minder schuiven. Meer kracht.\", \"Fris tot de laatste minuut\" en Apps 2022 zonder verplichte formulering zijn sterker dan Feiten toestaat (C8 blokkerend); Friedl 2023 staat in de bronregel terwijl Feiten dat \"gemengd\" noemt. Website herformuleert vóór promotie; Social verwijst er niet naar.\n- **Korte tijd:** 10 dagen vanaf 28 okt (11 vanaf 27 okt), 35–81 uur verspreid over vier hoeken; menselijke goedkeuring nodig voor alles voordat het naar buiten gaat.\n- **Voorraad/maten 2.0:** Feiten (12-10) meldt negatief: zwart −43, wit −34 [CHECK]. Live staat 2.0 op available=true voor alle drie de maten (€17,95), aantallen onbekend (Website-QA). Voorraadbevestiging is harde voorwaarde vóór de post van 4 nov; niet promoten wat niet leverbaar is.\n- **Geen fabrikant- of onafhankelijk onderzoek gevonden:** geen studie naar blarenpreventie of schuiven bij gripsokken in rugby. Dus niets claimen buiten wat in Feiten staat. De claim \"Wat weten we echt?\" op de landing moet dat eerlijk zeggen.\n- **Meting:** de GA4-conversiemeting is nog niet gevalideerd tegen Shopify; trackingreparaties staan buiten de uren.\n- **QA-stand:** vier hoek-QA's (CORRIGEER) verwerkt, herkeuring niet gedaan (zie In het kort).\n\n## Wat niet lukte\n\nNiet gevonden of niet gecontroleerd: productkostprijs; contractuele sokkenexclusiviteit; bereik en engagement van NL-rugbykanalen (rugbynederland-TikTok niet als officieel bevestigd); deelgedrag NL-ouders; onafhankelijke reviews Stepl/ATAK/Offload; Buffer-kalender; Reel via Video-agent (overgeslagen); \"8 teams\" en \"3 wedstrijden\"; of er al een vergelijkbaar tasvakken-concept bestaat. Operations heeft de web-bronnen niet zelf herlezen en neemt de bevindingen van de hoeken over.\n\n**QA gedaan op 28-10, verdict per hoek (alle CORRIGEER, verwerkt in deze notitie; geen tweede ronde):**\n- Social (t_1e772e13): CORRIGEER, licht. Gecontroleerd: data NL-U18 en NL-U20, prijs/verzending, Oxen/Rugby Nederland-bronnen, #rugby, sommen. Niet gecontroleerd: Reddit (CRAWL_EMPTY), Stepl/ATAK/Instagram, Buffer/kalender, rechten, beelden, de andere kaarten en de SVG-schets.\n- Website (t_55286dd6): CORRIGEER, licht tot middel. Zes bronnen geopend, sommen correct, geen overtreding rond minderjarigen of sponsorclaim. Niet gecontroleerd: mobiel, EN, JSON-LD, meta-lengte, U20-wedstrijd en Oxen-sponsor, W1 en W2 (nog niets gebouwd).\n- Design (t_c512caed): CORRIGEER, 1 feitelijke fout (U20-tijd, strijdig met Social/Partnership, zie Acties) en 3 merkpunten. SVG niet gerenderd, alleen code gelezen; geen echte logo's of assets; Social-correcties ronde 1 niet individueel getoetst; rugby.nl, World Rugby Law 4, Reddit, Stepl en voorraad 2.0 niet geopend.\n- Partnership (t_90a7408a): CORRIGEER, licht, 4 punten, niets blokkerend. Slechts twee bronnen volledig geopend (minder dan de gevraagde drie; toernooipagina's alleen via zoekresultaat). Niet gecontroleerd: NL–Portugal 16:00, \"8 teams\", sokkencontracten, Reddit (403), of mails buiten het systeem zijn verstuurd.\n\n## Bronnen\n\n- Kaarten (Kanban): t_a656f5b5 (Website), t_a854b721 (Social), t_c9c0a41d (Design), t_d043da1d (Partnership), opdracht t_c339c598; QA-kaarten t_1e772e13, t_55286dd6, t_c512caed, t_90a7408a; verwerking t_c7971beb.\n- [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (prijzen, verzendkosten).\n- Genoemd door de hoeken: higrip.nl/pages/gripsokken-voor-rugby; passport.world.rugby (Law 4); reddit.com/r/rugbyunion (grip socks); stepl-rugby.com/en; rugby.nl/organisatie/partners/supplier; rugbyeurope.eu (Oxen-bericht); rugbynow.com (ATAK); decathlon.mt (R520); rugbyclubhilversum.nl.\n- [2026-10-28-ga4-seo-conversie-audit-higrip-nl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Website-CRO/2026-10-28-ga4-seo-conversie-audit-higrip-nl.md) (GA4-baseline).\n\n## Aantekeningen",
    "bron": "los",
    "bronbestand": "Kanban t_c339c598 (bundeling van t_a656f5b5 Website, t_a854b721 Social, t_c9c0a41d Design, t_d043da1d Partnership)",
    "bronbestand_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Kanban%20t_c339c598%20%28bundeling%20van%20t_a656f5b5%20Website%2C%20t_a854b721%20Social%2C%20t_c9c0a41d%20Design%2C%20t_d043da1d%20Partnership%29",
@@ -8291,9 +8470,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "swipe file komt alleen voor in de eigen onderzoeksnotitie en een latere ads-notitie, geen apart swipe file-bestand aangemaakt",
-      "controle": "vault doorzocht op een los swipe file-bestand buiten de eigen onderzoeksnotitie",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen los swipe file-bestand gevonden, alleen de bronnotitie zelf met voorbeelden",
+      "controle": "gezocht naar een aangelegd swipe file-document",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -8335,9 +8514,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen vastgelegde regel gevonden buiten de eigen onderzoeksnotitie",
-      "controle": "vault doorzocht op een vastgelegde spelregel voor AI-beeld in ads",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "er staat een algemene regel over echte productfoto's voor Content Maker (9 okt), maar geen specifieke ads-spelregel die achtergrond/sfeer wel en het product zelf nooit met AI-beeld toestaat",
+      "controle": "Leerregels per Agent.md gecontroleerd op een AI-beeld-spelregel voor ads",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -8674,9 +8853,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen aparte 1.0-specificatieset gevonden in Brand Core, alleen losse vermeldingen van maten en brochures",
-      "controle": "Performance Grip Socks 2.0.md in Brand Core doorzocht op een apart 1.0-specificatieset",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "het feitenbestand bevat alleen prijs/maten van de 1.0, geen eigen sectie met materiaal/features zoals bij de 2.0 (sectie 2)",
+      "controle": "Performance Grip Socks 2.0.md gecontroleerd op een 1.0-specificatiesectie",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -8862,9 +9041,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "beide app-embeds staan nog globaal op disabled:true in plaats van beperkt tot product- en cartpaginas, dus niet zoals gevraagd, ongewijzigd",
-      "controle": "settings_data.json van het live-thema gecontroleerd op de scope van de app-embeds Section Store block-cart en fd-product-groups",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "beide staan nog volledig disabled:true (thuiswinkelbreed uitgezet), niet beperkt tot product- en cartpagina's zoals gevraagd",
+      "controle": "settings_data.json gecontroleerd op de scope van de block-cart/fd-product-groups app-embeds",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -8929,9 +9108,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "snippets/fonts.liquid bestaat nog niet (NOT_FOUND), dus geen Poppins 800 italic preload ingesteld",
-      "controle": "snippets/fonts.liquid opgevraagd in het live-thema",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "snippets/fonts.liquid bestaat nog niet (NOT_FOUND); theme.liquid preload alleen de 900-italic hero-font, 800-italic wordt alleen als font_face gedeclareerd (geen preload, dus nog zichtbare font-swap mogelijk)",
+      "controle": "snippets/fonts.liquid en de Poppins-preload in layout/theme.liquid gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -9335,9 +9514,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "bestand bestaat niet, NOT_FOUND",
-      "controle": "templates/page.home-nieuw.json opgevraagd in werkthema 201133490503",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "bestand bestaat niet (NOT_FOUND), nieuwe homepage nog niet als los testtemplate gebouwd",
+      "controle": "templates/page.home-nieuw.json gezocht in thema 201133490503",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -9357,9 +9536,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "snippets/faq-schema.liquid antwoord 4 begint nog letterlijk met Was uw gripsokken (u-vorm, niet aangepast); de zichtbare FAQ-sectie hp-11 zelf heeft inmiddels geen wasvraag meer onder haar 10 vragen, dus de schema-tekst en de zichtbare FAQ zijn uit elkaar gaan lopen - actie nog niet gedaan",
-      "controle": "snippets/faq-schema.liquid en de live FAQ-sectie hp-11 in templates/index.json gecontroleerd op uw-vorm",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "antwoord 4 begint nog met 'Was uw gripsokken bij voorkeur...' (u-vorm, niet naar 'je' omgezet)",
+      "controle": "snippets/faq-schema.liquid gecontroleerd op antwoord 4 en 7",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -9423,9 +9602,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "niet te controleren: Shopify Files is niet doorzoekbaar op een los bestandsaantal via de huidige Shopify-connector",
-      "controle": "gezocht naar een manier om het aantal losse 360-framebestanden in Shopify Files te tellen",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "niet te controleren binnen deze run: 206 losse bestanden zoeken in Shopify Files valt buiten de haalbare scope van vandaag, geen aanwijzing in het thema dat het al gebruikt wordt",
+      "controle": "gezocht naar een 360-framesreeks in Shopify Files",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -9557,9 +9736,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de themarollen zijn sinds deze actie te vaak gewisseld (nu 203954520391 live), niet vast te stellen of de destijds bedoelde synchronisatie ooit is uitgevoerd",
-      "controle": "themarollen gecontroleerd op opnieuw gewisseld sinds de vorige run",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "nog steeds verschillen aanwezig (zie overige geregistreerde thema-acties van vandaag), werkthema niet volledig bijgewerkt met wat alleen live staat",
+      "controle": "live thema (203954520391) vergeleken met eerdere bevindingen over het werkthema",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -10355,9 +10534,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "de termijn is inmiddels verstreken voor meerdere blogs, maar de blogs uit de nulmeting zelf bestaan door de consolidatie naar 5 artikelen grotendeels niet meer onder hun oorspronkelijke naam",
-      "controle": "nagegaan of de 4- en 8-wekentermijn voor de Search Console-hercheck is verstreken",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "4-wekentermijn is nu verstreken (12-10 + 4 weken = 9-11), maar de herhaalde Search Console-meting per blog is nog niet uitgevoerd",
+      "controle": "termijn van 4 weken na 12-10 gecontroleerd",
+      "gecontroleerd": "2026-11-10",
       "methode": "gsc",
       "uitkomst": "open"
      },
@@ -10491,9 +10670,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen miniplan bestand gevonden buiten de eigen onderzoeksnotitie",
-      "controle": "vault doorzocht op een miniplan-bestand voor de zakelijke pagina buiten de eigen onderzoeksnotitie",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "alleen de actietekst zelf gevonden, geen uitgewerkt mini-plan (CSS/Liquid/JS-bestanden) in het testthema of de vault",
+      "controle": "gezocht naar een uitgewerkt mini-plan voor de zakelijke pagina met de Design Agent",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -10580,9 +10759,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "REFUND_POLICY heeft nog 14 dagen, 25% herbevoorradingskosten en ongeopend, SHIPPING_POLICY nog voor 16:00 uur, TERMS_OF_SERVICE artikel 4 nog 4,25 euro verzending, het nieuwe beleid is nog niet geplakt",
-      "controle": "shop.shopPolicies opgevraagd voor REFUND_POLICY, SHIPPING_POLICY en TERMS_OF_SERVICE",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "REFUND_POLICY nog 14 dagen/25% herbevoorradingskosten/ongeopend, TERMS_OF_SERVICE art. 4 nog €4,25 verzendkosten; nieuwe beleidstekst uit _uitvoer/2026-10-11-live-fixes/beleid-plakken.md nog niet geplakt",
+      "controle": "shop { shopPolicies } opgevraagd voor REFUND_POLICY, SHIPPING_POLICY en TERMS_OF_SERVICE",
+      "gecontroleerd": "2026-11-10",
       "methode": "shopify",
       "uitkomst": "open"
      },
@@ -10671,9 +10850,9 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": false,
      "controle": {
-      "bewijs": "geen EN-vertaalcheck gevonden in de Routines-map",
-      "controle": "Routines-map doorzocht op een wekelijkse EN-vertaalcheck in de SEO-regressiecheck",
-      "gecontroleerd": "2026-11-09",
+      "bewijs": "geen vermelding van een wekelijkse EN-vertalingscheck in de SEO-regressiecheck-routine",
+      "controle": "02_Dashboard/Routines/SEO.md gecontroleerd op een check voor verouderde EN-vertalingen",
+      "gecontroleerd": "2026-11-10",
       "methode": "vault",
       "uitkomst": "open"
      },
@@ -11366,9 +11545,9 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 105,
-   "P2": 153,
-   "P3": 39
+   "P1": 99,
+   "P2": 147,
+   "P3": 38
   },
   "per_categorie": {
    "B2B": 2,

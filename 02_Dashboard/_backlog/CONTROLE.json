@@ -2065,51 +2065,51 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "0 treffers voor levensduur in de tekst, bronartikel geeft nog 404 zonder redirect op zowel het hi-grip- als het trends-pad",
-   "controle": "hoe-zorg-ik-voor-mijn-gripsokken doorzocht op het woord levensduur en bronartikel hoe-verleng-je-de-levensduur opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geeft 404, staat niet meer in de blog-sitemap, samenvoeging in hoe-zorg-ik-voor-mijn-gripsokken niet te bevestigen",
+   "controle": "blogs hi-grip hoe-verleng-je-de-levensduur-van-je-gripsokken opgevraagd",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "circa 270-280 woorden lopende tekst (methode-afhankelijk), ruim onder de gevraagde 900 tot 1200, geen apart stuk over levensduur of veelgemaakte fouten gevonden",
-   "controle": "woordtelling en inhoud van hoe-zorg-ik-voor-mijn-gripsokken gecontroleerd op wasvoorschrift levensduur en fouten",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "artikel telt circa 175 woorden tegen de gevraagde 900-1200, duidelijk nog niet uitgebreid met wasvoorschrift, levensduur en fouten",
+   "controle": "blogs hi-grip hoe-zorg-ik-voor-mijn-gripsokken gecontroleerd op lengte en inhoud",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "beide URLs geven nog 404, geen samenvoeging aantoonbaar",
-   "controle": "gripsokken-tijdens-pilates-en-yoga en waarom-gripsokken-verplicht-zijn-bij-pilates opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "beide URL's geven 404, geen van beide staat nog in de blog-sitemap",
+   "controle": "blogs hi-grip gripsokken-tijdens-pilates-en-yoga en waarom-gripsokken-verplicht-zijn-bij-pilates opgevraagd",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1448275a": {
-   "bewijs": "nieuw t.o.v. 8-11: er staat nu wel een zichtbare naam Timo Heijligers met een datum 15-12-2025 direct onder de H1, maar zonder foto, zonder een regel achtergrond en zonder het label laatst bijgewerkt (datum is ongelabeld, lijkt de publicatiedatum) — actie dus nog niet volledig",
-   "controle": "HTML van wat-zijn-gripsokken doorzocht op auteur foto en bijgewerkt-datum",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "auteur Timo Heijligers staat alleen in de JSON-LD schema-data, geen zichtbare auteursregel met foto of bio op de pagina zelf",
+   "controle": "de 3 nog bestaande artikelen gecontroleerd op een zichtbare auteur met foto en laatst-bijgewerkt-datum",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#16eea17b": {
-   "bewijs": "H1 is nog kort \"Wat zijn gripsokken?\", mist \"Voordelen en verschil met gewone sokken\"; artikel telt circa 349 woorden tegen de gevraagde 1400-1600",
-   "controle": "title, H1 en woordtelling van /blogs/hi-grip/wat-zijn-gripsokken gecontroleerd",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "artikel telt circa 344 woorden tegen de gevraagde 1400-1600, titel is HÏ Grip Wat zijn gripsokken Waarom gripsokken dragen en H1 is alleen Wat zijn gripsokken, niet de gevraagde opbouw",
+   "controle": "blogs hi-grip wat-zijn-gripsokken gecontroleerd op lengte, titel en H1",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "HTTP 404 zonder Location-header, geen 301 naar blogs/trends ingesteld",
-   "controle": "blog waarom-sporten-meer-is-dan-bewegen gecontroleerd op verwijdering en redirect",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "404 zonder redirect, artikel niet meer in de blog-sitemap, sitemap_articles_1.xml telt nu 5 artikelen",
+   "controle": "blogs hi-grip waarom-sporten-meer-is-dan-bewegen opgevraagd op een 301 naar blogs trends",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "geeft nog 404 zonder redirect, geen 301 naar blogs trends ingesteld",
-   "controle": "de sportvoedingblog gecontroleerd op verwijdering en 301",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "https www higrip nl blogs trends sportvoeding geeft direct 404, geen redirect naar blogs trends",
+   "controle": "blogs trends sportvoeding opgevraagd op een 301 naar blogs trends",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2121,9 +2121,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "HTTP 404 zonder Location-header, geen 301 naar over-ons ingesteld",
-   "controle": "hoe-is-hi-grip-ontstaan opgehaald zonder redirects te volgen",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geeft direct 404, geen redirect, artikel niet meer in de sitemap",
+   "controle": "blogs hi-grip hoe-is-hi-grip-ontstaan opgevraagd op een 301 naar pages over-ons",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2156,9 +2156,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "niet te controleren: deze blog bestaat niet meer als losse pagina na de consolidatie, geprobeerde URLs geven 404",
-   "controle": "meta description van de blog voor-welke-sport gecontroleerd op de zin nu beperkt op voorraad",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "pagina geeft 404, niet meer in de blog-sitemap, meta-tekst dus niet te controleren",
+   "controle": "blogs hi-grip voor-welke-sport-zijn-gripsokken-onmisbaar opgevraagd op de meta nu beperkt op voorraad",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2170,9 +2170,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#9602726a": {
-   "bewijs": "title is nog HI Grip Zijn gripsokken wetenschappelijk bewezen beter, bewezen beter staat er nog in",
-   "controle": "title-tag van de-wetenschap-achter-gripsokken gecontroleerd",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "de titel is nog letterlijk Zijn gripsokken wetenschappelijk bewezen beter, dus de verboden formulering bewezen beter staat er juist nog in",
+   "controle": "blogs hi-grip de-wetenschap-achter-gripsokken gecontroleerd op titel en claimformulering",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2184,30 +2184,30 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a2c621ef": {
-   "bewijs": "URL geeft 404, herschreven blessureblog staat niet live",
-   "controle": "hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "pagina geeft 404, staat niet meer in sitemap_articles_1.xml, herschrijving met bronnen niet te verifiëren",
+   "controle": "gezocht naar de blessureblog hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "gripsokken-tijdens-pilates-en-yoga en waarom-gripsokken-verplicht-zijn-bij-pilates geven beide nog 404, pilatesblog bestaat niet",
-   "controle": "niet te controleren: pilatesblog-URLs opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "beide pilates-URL's geven 404, blog bestaat niet meer, opfrissen dus niet te verifiëren",
+   "controle": "gezocht naar de pilatesblog via beide mogelijke URL's",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "3 van de 5 artikelen wat-zijn-gripsokken hoe-zorg-ik en de-wetenschap linken nog alleen naar collections all, 2 welke-maat en waarom-glijdt hebben beide links",
-   "controle": "eind-CTA op de 5 resterende hi-grip blogartikelen gecontroleerd op collections all vs collections gripsokken",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "alle 3 pagina's linken nog 5x naar collections all, geen enkele link naar collections gripsokken gevonden",
+   "controle": "blog-CTA-links gecontroleerd op de 3 nog bestaande artikelen wat-zijn-gripsokken, hoe-zorg-ik-voor-mijn-gripsokken en de-wetenschap-achter-gripsokken",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "toekomst-van-jouw-sportoutfit geeft 404, wat-zijn-gripsokken bestaat nog zelfstandig als 200, waarom-hi-grip-gripsokken redirect naar wat-zijn-gripsokken, het omgekeerde van de gevraagde samenvoeging",
-   "controle": "wat-zijn-gripsokken, toekomst-van-jouw-sportoutfit en waarom-hi-grip-gripsokken opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "waarom-hi-grip-gripsokken is een 301-redirect naar wat-zijn-gripsokken dus geen samengevoegd artikel op die URL, en gripsokken-de-toekomst-van-jouw-sportoutfit geeft 404",
+   "controle": "blogs hi-grip waarom-hi-grip-gripsokken en blogs hi-grip gripsokken-de-toekomst-van-jouw-sportoutfit opgevraagd",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2226,16 +2226,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "URL geeft nog 404, samengevoegde blessureblog bestaat niet",
-   "controle": "/blogs/hi-grip/hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures opgehaald",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "alle 3 URL's geven 404 en staan niet meer in sitemap_articles_1.xml, samenvoeging niet te verifiëren",
+   "controle": "blogs hi-grip waarom-gripsokken-het-verschil-maken, meer-grip-meer-vertrouwen en de blessureblog opgevraagd",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "sitemap telt nog maar 5 artikelen, geen krachttraining-blog of link naar het oude artikel aanwezig",
-   "controle": "niet te controleren: oude krachttraining-blog en vervangende link gecontroleerd via sitemap_articles_1.xml",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "de krachttraining-blog staat niet meer in sitemap_articles_1.xml, link-fix niet te verifiëren op een niet-bestaande pagina",
+   "controle": "gezocht naar de krachttraining-blog met de gebroken link",
+   "gecontroleerd": "2026-11-10",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4308,6 +4308,13 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "backlog#91b14a85": {
+   "bewijs": "positie nu 11,4 7d en 11,5 28d tegenover 8,4 eerder, positieval bevestigd maar oorzaak nog niet uitgezocht",
+   "controle": "positie van de NL-homepage in de GSC 28d-export gecontroleerd",
+   "gecontroleerd": "2026-11-10",
+   "methode": "gsc",
+   "uitkomst": "open"
+  },
   "backlog#927dc23c": {
    "bewijs": "titel Gripsokken voor voetbal HÏ Grip ongewijzigd, geen zichtbare technische wijziging rond de pagina gevonden",
    "controle": "titel en H1 van pages gripsokken-voor-voetbal als indirecte indicatie opgehaald, positieverloop zelf vereist Search Console",
@@ -4404,6 +4411,13 @@
    "controle": "blocks/hi-pack-value-bar.liquid gezocht in thema 204029296967 (huidige unpublished kopie)",
    "gecontroleerd": "2026-11-10",
    "methode": "shopify",
+   "uitkomst": "open"
+  },
+  "backlog#e920d0ff": {
+   "bewijs": "titel is al Betalingsbeleid HÏ Grip maar er is nog geen meta description, de iDEAL-vraag is nog niet beantwoord dus de conceptteksten zijn nog niet geplakt",
+   "controle": "pages terugbetalingsbeleid gecontroleerd op de conceptteksten uit het logboek sectie 8.1",
+   "gecontroleerd": "2026-11-10",
+   "methode": "site",
    "uitkomst": "open"
   },
   "backlog#eaa40e7c": {

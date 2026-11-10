@@ -2030,16 +2030,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "geen EN-vertaalcheck gevonden in de Routines-map",
-   "controle": "Routines-map doorzocht op een wekelijkse EN-vertaalcheck in de SEO-regressiecheck",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen vermelding van een wekelijkse EN-vertalingscheck in de SEO-regressiecheck-routine",
+   "controle": "02_Dashboard/Routines/SEO.md gecontroleerd op een check voor verouderde EN-vertalingen",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "geen miniplan bestand gevonden buiten de eigen onderzoeksnotitie",
-   "controle": "vault doorzocht op een miniplan-bestand voor de zakelijke pagina buiten de eigen onderzoeksnotitie",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "alleen de actietekst zelf gevonden, geen uitgewerkt mini-plan (CSS/Liquid/JS-bestanden) in het testthema of de vault",
+   "controle": "gezocht naar een uitgewerkt mini-plan voor de zakelijke pagina met de Design Agent",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2536,9 +2536,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "geen aparte 1.0-specificatieset gevonden in Brand Core, alleen losse vermeldingen van maten en brochures",
-   "controle": "Performance Grip Socks 2.0.md in Brand Core doorzocht op een apart 1.0-specificatieset",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "het feitenbestand bevat alleen prijs/maten van de 1.0, geen eigen sectie met materiaal/features zoals bij de 2.0 (sectie 2)",
+   "controle": "Performance Grip Socks 2.0.md gecontroleerd op een 1.0-specificatiesectie",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2626,16 +2626,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#7129fb4d": {
-   "bewijs": "geen vastgelegde regel gevonden buiten de eigen onderzoeksnotitie",
-   "controle": "vault doorzocht op een vastgelegde spelregel voor AI-beeld in ads",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "er staat een algemene regel over echte productfoto's voor Content Maker (9 okt), maar geen specifieke ads-spelregel die achtergrond/sfeer wel en het product zelf nooit met AI-beeld toestaat",
+   "controle": "Leerregels per Agent.md gecontroleerd op een AI-beeld-spelregel voor ads",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "swipe file komt alleen voor in de eigen onderzoeksnotitie en een latere ads-notitie, geen apart swipe file-bestand aangemaakt",
-   "controle": "vault doorzocht op een los swipe file-bestand buiten de eigen onderzoeksnotitie",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen los swipe file-bestand gevonden, alleen de bronnotitie zelf met voorbeelden",
+   "controle": "gezocht naar een aangelegd swipe file-document",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3347,9 +3347,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#d279fc2c": {
-   "bewijs": "de sectie noemt nog steeds alleen ffmpeg-motor en Canva (plus Premiere als optie), geen CapCut-besluit toegevoegd",
-   "controle": "sectie Software in Editing Stijl Gids Video gecontroleerd op een CapCut-besluit",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "sectie noemt alleen de ffmpeg-motor, CapCut/Canva-vergelijking en het besluit ontbreken nog",
+   "controle": "sectie Software in Editing Stijl Gids Video.md gecontroleerd",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3361,16 +3361,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "geen hook-eerst regel gevonden naast de cuttempo-tabel",
-   "controle": "Editing Stijl Gids Video doorzocht op een hook-eerst-regel naast de cuttempo-tabel",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen regel 'hook-eerst' gevonden in de stijlgids",
+   "controle": "gezocht op 'hook-eerst' in Editing Stijl Gids Video.md",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "geen match-cut uitzondering gevonden in de stijlgids",
-   "controle": "Editing Stijl Gids Video doorzocht op een match-cut-uitzondering",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen vermelding van match-cut als derde uitzondering in de stijlgids",
+   "controle": "gezocht op 'match-cut' in Editing Stijl Gids Video.md",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3543,9 +3543,9 @@
    "uitkomst": "open"
   },
   "2026-11-03-sportretail-nederland#99ac7353": {
-   "bewijs": "de notitie noemt alleen aantallen per keten (SPORT 2000 48, DAKA 17, PadelShop.com 1), nog geen concrete shortlist met winkelnamen",
-   "controle": "notitie 2026-11-03-sportretail-nederland doorzocht op concrete winkelnamen van Absolute Teamsport en Soccer Center",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "de notitie bevat de analyse en de aantallen (17 DAKA, 48 SPORT 2000) maar geen uitgewerkte shortlist met de 5 Absolute Teamsport- en 3 Soccer Center-winkels met naam; actiepunt zelf staat nog als `- [ ]`",
+   "controle": "2026-11-03-sportretail-nederland.md gecontroleerd op een uitgewerkte shortlist met winkelnamen/contacten",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3614,16 +3614,16 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "de werkthema-notitie heeft wel TBT-metingen maar geen vastgelegd doel PageSpeed 80+/TBT 300 ms/LCP 2,5s, nog alleen in de eigen onderzoeksnotitie",
-   "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op het doel PageSpeed 80+/TBT 300/LCP 2,5",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "de notitie bevat gemeten TBT/LCP-cijfers maar geen vastgelegd doel met deze drempelwaarden",
+   "controle": "gezocht op de doelwaarden (80+, TBT 300ms, LCP 2,5s) in 2026-11-03-snelheid-werkthema-02.md",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
-   "bewijs": "geen vermelding van Upfront en geen per-app laad-besluit vastgelegd in de werkthema-notitie, nog alleen in de eigen onderzoeksnotitie",
-   "controle": "werkthema-notitie 2026-11-03-snelheid-werkthema-02 doorzocht op Upfront en een per-app laad-besluit",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen vermelding van Upfront in de werkthema-notitie, per-app-besluit nog niet vastgelegd",
+   "controle": "gezocht op 'Upfront' in 2026-11-03-snelheid-werkthema-02.md",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3876,9 +3876,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "Map-regel in de notitie is correct maar geen bevestigde Operations-controle van de domeinbestanden gevonden, ongewijzigd",
-   "controle": "gezocht naar een bevestigde Operations-controle van navigatieregel en vault_nav van dit en de domeinbestanden",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "Map-regel correct ([[Waar staat wat]]), maar de automatische tellijst is aantoonbaar stale (Ads-telling klopt niet met het werkelijke aantal bestanden); vault_nav.py nog niet opnieuw gedraaid sinds recente toevoegingen",
+   "controle": "navigatieregel en vault_nav-telling gecontroleerd voor dit bestand",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3967,9 +3967,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
-   "bewijs": "Map-regel is correct en de notitie staat al in de map Ads, maar een bevestigde Operations-controle van de bijbehorende domeinbestanden is niet aangetroffen, ongewijzigd",
-   "controle": "gezocht naar een bevestigde Operations-controle van de navigatie/registratie van dit bestand en de domeinbestanden",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "Map-regel correct ([[Waar staat wat]]), maar de automatische tellijst in 02_Dashboard/Waar staat wat.md toont nog 9 Ads-notities terwijl de map er 10 heeft; vault_nav.py is sinds de toevoeging van dit bestand niet opnieuw gedraaid",
+   "controle": "navigatieregel en vault_nav-telling gecontroleerd voor dit bestand",
+   "gecontroleerd": "2026-11-10",
    "methode": "vault",
    "uitkomst": "open"
   },

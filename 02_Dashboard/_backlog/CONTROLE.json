@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-09T04:02:13+01:00",
+ "laatste_run": "2026-11-10T04:03:15+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -3656,11 +3656,11 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#c3867a0c": {
-   "bewijs": "geen aanwijzing gevonden dat de statics al klaarstaan voor 14 november",
-   "controle": "gezocht naar een aanwijzing dat de statics voor 14 november klaarstaan",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen toegang tot het ontwerpbestand/advertentieaccount vanuit deze sessie",
+   "controle": "statics/creatives klaarzetten is ontwerp- en mediawerk",
+   "gecontroleerd": "2026-11-10",
    "methode": "geen",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#d1a1e69e": {
    "bewijs": "mensenwerk en Meta Ads Manager: vervangen van de zwakste ad-soort op 14 november, geen Meta Ads-connector beschikbaar",
@@ -3742,11 +3742,11 @@
    "uitkomst": "gedaan"
   },
   "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#94280aec": {
-   "bewijs": "niet te controleren binnen deze stap: vereist extern onderzoek naar competitieschemas, geen vastgelegde planning-aanpassing gevonden",
-   "controle": "gezocht naar een vastgelegde winterstop-planning per amateurcompetitie",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "geen Meta Ads-connector beschikbaar in deze vault, puur mensenwerk",
+   "controle": "Meta Ads Manager-planningsactie",
+   "gecontroleerd": "2026-11-10",
    "methode": "geen",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby#a4a665f5": {
    "bewijs": "Zelfde systeem en eindtoestand als de fysieke telling in 2026-11-05-meta-opbouw-getoetst-start-6-november",
@@ -3925,11 +3925,11 @@
    "uitkomst": "open"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b": {
-   "bewijs": "niet te controleren: vereist een live cart-test met een kortingscode op een 5-pack, niet uitgevoerd in deze stap",
-   "controle": "gezocht naar een manier om de kortingscode-samenloop met de pakketkorting te testen",
-   "gecontroleerd": "2026-11-09",
+   "bewijs": "valt buiten de grens van deze routine: nooit kortingen/checkout-instellingen wijzigen of erover beslissen",
+   "controle": "kortingscode-combinatieregel vaststellen is een besluit over kortingen/checkout",
+   "gecontroleerd": "2026-11-10",
    "methode": "geen",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-11-06-meta-plan-minimaal-2-weken#017f9a90": {
    "bewijs": "mensenwerk: bevestiging door Lars of Timo via Denzel, niet automatisch te controleren",
@@ -3990,7 +3990,7 @@
   "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
    "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de Shopify-connector in deze sessie, ongewijzigd",
    "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de connector op te vragen is",
-   "gecontroleerd": "2026-11-09",
+   "gecontroleerd": "2026-11-10",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4042,6 +4042,137 @@
    "gecontroleerd": "2026-11-08",
    "methode": "geen",
    "uitkomst": "handmatig"
+  },
+  "2026-11-09-regressiecheck#287e0c2c": {
+   "bewijs": "zelfde 404 op blogs-trends-pagina, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open regressie-acties",
+   "dubbel_van": "backlog#886d413d",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-regressiecheck#c1cce4e9": {
+   "bewijs": "zelfde 13x alt=\"\" op de homepage, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open regressie-acties",
+   "dubbel_van": "backlog#2e5c5044",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-search-console#a3999643": {
+   "bewijs": "zelfde positiemonitoring gripsokken-voor-voetbal NL als backlogpunt 27, alleen nieuwere stand",
+   "controle": "vergeleken met open search-console-acties",
+   "dubbel_van": "backlog#927dc23c",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-search-console#c6697322": {
+   "bewijs": "zelfde positieval NL-homepage, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open search-console-acties",
+   "dubbel_van": "backlog#91b14a85",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-seo-conversietest-run-7#47fddbfa": {
+   "bewijs": "zelfde iDEAL-vraag, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open Besluit-acties",
+   "dubbel_van": "backlog#ee52eb3f",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-seo-conversietest-run-7#a76ea6d5": {
+   "bewijs": "zelfde terugbetalingsbeleid-conceptteksten, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open conversietest-acties",
+   "dubbel_van": "backlog#e920d0ff",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-seo-conversietest-run-7#fd13c344": {
+   "bewijs": "zelfde waardebalk-blok herbouwen, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open conversietest-acties",
+   "dubbel_van": "backlog#df9a37ab",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-weekoverzicht#0ebf861a": {
+   "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+   "controle": "Besluit-actie: uitvoering blog-SEO-stappenplan door een mens",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-09-weekoverzicht#450c2816": {
+   "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+   "controle": "Besluit-actie: homepage-herontwerpkeuzes door een mens",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-09-weekoverzicht#50775118": {
+   "bewijs": "zelfde onbeantwoorde EK-rugby-besluit, nu met gemiste deadline als extra context",
+   "controle": "vergeleken met open EK-rugby-besluitacties",
+   "dubbel_van": "2026-11-02-weekoverzicht#9ee19f25",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-weekoverzicht#5b9b55ee": {
+   "bewijs": "zelfde ontbrekende meta description op /pages/teamorder, backlogvariant van 2 nov",
+   "controle": "vergeleken met open regressie-acties",
+   "dubbel_van": "backlog#d6d843f3",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-weekoverzicht#70b29197": {
+   "bewijs": "zelfde 404 op blogs-trends-pagina, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open regressie-acties",
+   "dubbel_van": "backlog#886d413d",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-weekoverzicht#be6f9509": {
+   "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+   "controle": "Besluit-actie: bevestiging Meta-campagnestatus door een mens",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-09-weekoverzicht#cc7365f9": {
+   "bewijs": "zelfde positieval NL-homepage, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open search-console-acties",
+   "dubbel_van": "backlog#91b14a85",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-09-weekoverzicht#d348b118": {
+   "bewijs": "beslissing van Lars/team, geen automatische waarneming",
+   "controle": "Besluit-actie: identiteit voordelenpagina door een mens",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-09-weekoverzicht#f1340076": {
+   "bewijs": "contentwerk voor 15 januari 2027, geen automatische waarneming",
+   "controle": "Besluit-actie: Shopify Knowledge Base vullen is mensenwerk",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-09-weekoverzicht#ff31d3af": {
+   "bewijs": "zelfde 13x alt=\"\" op de homepage, backlogvariant van dezelfde dag",
+   "controle": "vergeleken met open regressie-acties",
+   "dubbel_van": "backlog#2e5c5044",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "dubbel"
   },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: geen tool voor het AI Overviews-rapport beschikbaar in deze sessie",
@@ -4268,6 +4399,13 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "backlog#ee52eb3f": {
+   "bewijs": "beslissing over iDEAL in Shopify Payments, buiten de grens van deze routine",
+   "controle": "Besluit-actie: betaalinstellingen zijn mensenwerk",
+   "gecontroleerd": "2026-11-10",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
   "backlog#fac26f6c": {
    "bewijs": "hi-seo-schema.liquid ontbreekt (NOT_FOUND); product-schema.liquid staat wel in het thema maar rendert niet op de productpagina (geen FAQPage/aggregateRating in de live JSON-LD van /products/performance-gripsokken-2-0-zwart)",
    "controle": "snippets/hi-seo-schema.liquid en product-schema.liquid in het live-thema (201132507463) controleren",
@@ -4277,7 +4415,6 @@
   }
  },
  "runs": [
-  "2026-10-25",
   "2026-10-26",
   "2026-10-27",
   "2026-10-28",
@@ -4290,7 +4427,8 @@
   "2026-11-05",
   "2026-11-06",
   "2026-11-08",
-  "2026-11-09"
+  "2026-11-09",
+  "2026-11-10"
  ],
  "volgende_run": "dagelijks 05:00"
 }

@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Na twee weken van dalende klikken en CTR herstelt zowel het 7-dagen- als het 28-dagenbeeld: klikken +51,9% (7d) resp. +30,8% (28d), positie verbetert in beide vensters. De drie weken dalende positie van /pages/gripsokken-voor-voetbal (NL) draait voor het eerst bij (15,7 → 11,6), zonder kannibalisatie op de kernterm zelf; nieuw gevonden: /en (homepage) combineert een hoog aantal vertoningen (266, pos. 7,8) met een lage CTR van 1,88%."
-gerelateerd: [2026-11-02-regressiecheck, 2026-10-27-seo-audit-higrip-nl]
+gerelateerd: [2026-11-02-regressiecheck, 2026-10-27-seo-audit-higrip-nl, 2026-11-10-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

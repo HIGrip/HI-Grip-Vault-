@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Shopify's Fall '26 Edition breidt agentic commerce fors uit — een 'shop skill' voor elke AI-agent, Shop Pay-checkout in Claude Duet/Grok Bot/Instinct/Meta Muse en agentic storefronts in Google Search AI Mode en de Gemini-app — zonder de VS-beperking die de eerdere Agentic Storefronts (maart 2026) nog had. Voor higrip.nl is dat een reden om Shopify Catalog-geschiktheid en het nieuwe agent-kennisbestand te controleren, naast de al lopende Merchant Center-actie."
-gerelateerd: [2026-10-14-growth-radar-ai-search, 2026-11-02-backlinks-merchant]
+gerelateerd: [2026-10-14-growth-radar-ai-search, 2026-11-02-backlinks-merchant, 2026-11-11-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

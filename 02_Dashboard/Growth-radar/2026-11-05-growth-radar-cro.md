@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over productpagina, winkelwagen, checkout, prijsweergave, trust of mobiel haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. Baymard, Shopify-changelog, CXL en de Nederlandse vakmedia leverden geen gedateerde november-publicatie op; trust-badge- en mobiel-desktop-cijfers blijven tegenstrijdig tussen vendors."
-gerelateerd: [2026-10-15-growth-radar-cro, 2026-10-22-growth-radar-cro, 2026-10-29-growth-radar-cro]
+gerelateerd: [2026-10-15-growth-radar-cro, 2026-10-22-growth-radar-cro, 2026-10-29-growth-radar-cro, 2026-11-12-growth-radar-cro]
 vervangt: []
 bronbestand: ""
 deadline: ""

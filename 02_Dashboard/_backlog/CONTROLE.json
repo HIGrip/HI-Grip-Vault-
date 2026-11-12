@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-11T04:03:03+01:00",
+ "laatste_run": "2026-11-12T04:02:51+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -3538,7 +3538,7 @@
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
    "bewijs": "niet te controleren: JS-rendering van de cart-drawer is nodig, niet mogelijk zonder browser in deze sessie",
    "controle": "gezocht of de winkelwagenvergelijking (oud vs nieuw, mobiel/desktop) zonder browser te doen is",
-   "gecontroleerd": "2026-11-11",
+   "gecontroleerd": "2026-11-12",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -3990,7 +3990,7 @@
   "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
    "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de connector in deze sessie, ongewijzigd",
    "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de Shopify-connector op te vragen is",
-   "gecontroleerd": "2026-11-11",
+   "gecontroleerd": "2026-11-12",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4450,7 +4450,6 @@
   }
  },
  "runs": [
-  "2026-10-27",
   "2026-10-28",
   "2026-10-29",
   "2026-10-30",
@@ -4463,7 +4462,8 @@
   "2026-11-08",
   "2026-11-09",
   "2026-11-10",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "volgende_run": "dagelijks 05:00"
 }

@@ -3890,9 +3890,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "kop is al Nederlands ('Je winkelwagen'), winkelwagen was leeg waardoor de dubbele prijsregel niet te verifiëren was",
-   "controle": "kop en prijsweergave op higrip.nl/cart opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "H1 is al Nederlands ('Je winkelwagen is leeg'); winkelwagen is leeg waardoor de dubbele prijsregel nog steeds niet te verifiëren is",
+   "controle": "/cart opnieuw opgehaald op koptekst en dubbele prijsregel",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3919,8 +3919,8 @@
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
    "bewijs": "niet te controleren: knopstyling is alleen zichtbaar na JS-rendering, geen browser beschikbaar via curl",
-   "controle": "cookiebanner-knopstyling opnieuw gecontroleerd op higrip.nl",
-   "gecontroleerd": "2026-11-11",
+   "controle": "gezocht of cookiebanner-knopstyling zonder browser te controleren is",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4182,9 +4182,9 @@
    "uitkomst": "open"
   },
   "backlog#072e2482": {
-   "bewijs": "beide pagina's hebben nog geen meta description en geen meta robots, ongewijzigd",
-   "controle": "meta description en robots-meta in head van pages/gripsokken-2-0 en pages/gripsokken-2-1 opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "beide pagina's hebben nog geen name=description en geen name=robots in de paginabron",
+   "controle": "meta description en robots-meta van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4203,23 +4203,23 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "geen pagina als pages/onderzoek of vergelijkbaar in de 25 pagina's van sitemap_pages_1.xml, ongewijzigd",
-   "controle": "opnieuw gezocht naar een bewijspagina met eigen meetdata via sitemap_pages_1.xml",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "sitemap_pages_1.xml telt 25 pagina's, geen /pages/onderzoek of vergelijkbare bewijspagina erbij",
+   "controle": "sitemap_pages_1.xml doorzocht op een bewijspagina (onderzoek/waarom-hi-grip-werkt)",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#246c61d9": {
-   "bewijs": "pages/verzendbeleid en policies/terms-of-service tonen nu beide €4,50/gratis vanaf €35; pages/retourbeleid toont 30 dagen zonder 25% of ongeopend-eis; policies/refund-policy toont nog steeds 14 dagen, 25% herbevoorradingskosten en de ongeopend-eis; policies/shipping-policy toont nog 'vóór 16:00'",
-   "controle": "verzendbeleid, retourbeleid, terugbetalingsbeleid en de drie policies-pagina's opnieuw vergeleken op bedragen en termijnen",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "verzendbeleid.html en terms-of-service.html tonen €4,50/gratis vanaf €35; retourbeleid.html toont 30 dagen zonder 25%/ongeopend; refund-policy.html toont nog 14 dagen + 25% + 'ongeopend'; shipping-policy.html toont nog 'vóór 16:00' — nog steeds twee tegenstrijdige bronnen",
+   "controle": "verzendbeleid, retourbeleid, terugbetalingsbeleid en de drie policies-pagina's opnieuw vergeleken op bedragen/termijnen",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#2e5c5044": {
-   "bewijs": "homepage telt nog precies 13x alt=\"\" (grens is 12), ongewijzigd",
-   "controle": "homepage opnieuw opgehaald en alt=\"\" geteld met python-regex",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "https://www.higrip.nl/ telt nog precies 13x alt=\"\"",
+   "controle": "aantal alt=\"\" op de homepage herteld",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4231,9 +4231,9 @@
    "uitkomst": "open"
   },
   "backlog#32925dba": {
-   "bewijs": "pagina geeft 200, titel 'INTERN', geen meta robots, staat nog in sitemap_blogs_1.xml, ongewijzigd",
-   "controle": "blogs/intern opnieuw gecontroleerd op status, robots-meta en sitemap_blogs_1.xml",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "https://www.higrip.nl/blogs/intern geeft nog 200, titel 'INTERN', geen meta name=robots",
+   "controle": "/blogs/intern opnieuw opgehaald op status, titel en meta robots",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4259,9 +4259,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
-   "bewijs": "titel is 'Producten – HÏ Grip', nog geen meta description, ongewijzigd",
-   "controle": "meta description op collections/all opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "titel is 'Producten – HÏ Grip', nog geen meta name=description",
+   "controle": "meta description van /collections/all opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4274,30 +4274,30 @@
    "uitkomst": "gedaan"
   },
   "backlog#886d413d": {
-   "bewijs": "oude artikel-URL geeft nog 404, staat niet in sitemap_blogs_1.xml; blogs/trends zelf toont nog 'Nog geen artikelen in deze blog. Kom snel terug.', ongewijzigd",
-   "controle": "de oude artikel-URL en blogs/trends opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "https://www.higrip.nl/blogs/trends/de-twee-grootste-problemen-...-sporters geeft nog 404; /blogs/trends toont nog 'Nog geen artikelen in deze blog. Kom snel terug.'",
+   "controle": "oude artikel-URL en /blogs/trends opnieuw opgehaald",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8a590428": {
-   "bewijs": "titel en meta description ongewijzigd, geen bewijs van een bewuste herschrijving",
-   "controle": "titel en meta description van de EN-homepage opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "title 'HÏ Grip | Performance Grip Socks for Athletes' en meta description ongewijzigd, geen bewijs van herschrijving",
+   "controle": "title en meta description van /en opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8d435a25": {
-   "bewijs": "URL redirect nog naar blogs/hi-grip/wat-zijn-gripsokken, geen eigen titel voor deze URL, ongewijzigd",
-   "controle": "titel en redirect van waarom-hi-grip-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "canonical wijst nog naar /blogs/hi-grip/wat-zijn-gripsokken, geen eigen titel voor deze URL",
+   "controle": "/blogs/hi-grip/waarom-hi-grip-gripsokken opnieuw opgehaald op canonical/title",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8f8db388": {
-   "bewijs": "alle vier hebben nog een zelfverwijzende canonical naar hun eigen URL, geen consolidatie, ongewijzigd",
-   "controle": "canonical opnieuw gecontroleerd op root, collections/all, collections/gripsokken en en/collections/gripsokken",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "beide wijzen nog zelfverwijzend naar hun eigen URL (geen consolidatie); de overige 2 betrokken URL's niet opnieuw met zekerheid te identificeren",
+   "controle": "canonical tags van /collections/gripsokken en /en/collections/gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4316,23 +4316,23 @@
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "titel en H1 ongewijzigd, geen zichtbare technische wijziging rond de pagina gevonden",
-   "controle": "titel en H1 van pages/gripsokken-voor-voetbal als indirecte indicatie opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "title 'Gripsokken voor voetbal | HÏ Grip' en meta description ongewijzigd, geen zichtbare technische wijziging rond de pagina",
+   "controle": "title en H1 van /pages/gripsokken-voor-voetbal opnieuw gecontroleerd op technische/content-wijziging",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#a1f3e1a2": {
-   "bewijs": "NL- en EN-titel ongewijzigd, geen herschrijving in beide",
-   "controle": "titel en meta description van de NL- en EN-wasblog opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "NL-title 'HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?' en EN-title 'HÏ Grip | How do I wash my grip socks? What temperature?' ongewijzigd, geen herschrijving",
+   "controle": "title van de NL- en EN-blog 'hoe zorg ik voor mijn gripsokken' opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#a2e3406d": {
-   "bewijs": "geen 'per paar'-tekst gevonden in de paginabron van performance-gripsokken, ongewijzigd",
-   "controle": "1.0-productpagina opnieuw doorzocht op 'per paar'-tekst",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "geen '/paar' of 'per paar'-tekst gevonden in de paginabron",
+   "controle": "paginabron van /products/performance-gripsokken gecontroleerd op 'per paar'-prijstekst",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4351,9 +4351,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#b1876b36": {
-   "bewijs": "geen code-tag meer in alle drie, padel en tennis komen voor, maar rugby komt in geen van de drie beschrijvingen voor (0x), ongewijzigd",
-   "controle": "productbeschrijving van performance-gripsokken, 2-0-zwart en 2-0-wit opnieuw doorzocht op sporten en code-tag",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "alle 3 productpagina's bevatten padel en tennis maar geen 'rugby' in de beschrijving; geen <code>-tag meer gevonden",
+   "controle": "productbeschrijvingen van performance-gripsokken, performance-gripsokken-2-0-zwart en -wit gecontroleerd op padel/tennis/rugby en <code>-tag",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4365,23 +4365,23 @@
    "uitkomst": "open"
   },
   "backlog#b81d4226": {
-   "bewijs": "geen video-tag, mp4, youtube-embed of vimeo-embed gevonden op beide pagina's, ongewijzigd",
-   "controle": "productpagina's performance-gripsokken en 2-0-zwart opnieuw doorzocht op video, mp4, youtube of vimeo",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "geen <video>-tag, .mp4, youtube- of vimeo-embed gevonden op beide productpagina's",
+   "controle": "productpagina's performance-gripsokken en performance-gripsokken-2-0-zwart gecontroleerd op video/mp4/youtube/vimeo-embed",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#bf53be16": {
-   "bewijs": "titel is nog 'HÏ Grip | Ontdek Jouw Sport', meta description nog generiek, geen zichtbare herschrijving, ongewijzigd",
-   "controle": "titel en meta description van pages/ontdek-jouw-sport opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "title nog 'HÏ Grip | Ontdek Jouw Sport', meta description nog generiek ('Ontdek welke HÏ Grip gripsokken passen bij jouw sport...'), geen zichtbare herschrijving",
+   "controle": "title en meta description van /pages/ontdek-jouw-sport opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#c51a9579": {
-   "bewijs": "title is nu 'Betalingsbeleid | HÏ Grip' (American Express staat er niet meer in), maar er is nog geen meta name=description",
-   "controle": "titel en meta description van pages/terugbetalingsbeleid opnieuw opgehaald",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "https://www.higrip.nl/pages/terugbetalingsbeleid: title is nu 'Betalingsbeleid | HÏ Grip' (American Express weg), maar nog steeds geen meta name=description",
+   "controle": "title en meta description van /pages/terugbetalingsbeleid opnieuw opgehaald",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4393,9 +4393,9 @@
    "uitkomst": "open"
   },
   "backlog#d6d843f3": {
-   "bewijs": "titel is 'Teamorder – HÏ Grip', nog geen meta description aanwezig, ongewijzigd",
-   "controle": "meta description van pages/teamorder opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "title is 'Teamorder – HÏ Grip', nog geen meta name=description",
+   "controle": "meta description van /pages/teamorder opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4414,9 +4414,9 @@
    "uitkomst": "open"
   },
   "backlog#e920d0ff": {
-   "bewijs": "titel is al 'Betalingsbeleid | HÏ Grip' maar nog geen meta description; conceptteksten nog niet volledig geplakt",
-   "controle": "pages/terugbetalingsbeleid opnieuw gecontroleerd op de conceptteksten uit het logboek sectie 8.1",
-   "gecontroleerd": "2026-11-11",
+   "bewijs": "title is al 'Betalingsbeleid | HÏ Grip' maar nog geen meta name=description; conceptteksten nog niet geplakt",
+   "controle": "title en meta description van /pages/terugbetalingsbeleid gecontroleerd op de conceptteksten uit seo-routine-logboek §8.1",
+   "gecontroleerd": "2026-11-12",
    "methode": "site",
    "uitkomst": "open"
   },

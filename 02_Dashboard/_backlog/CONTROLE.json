@@ -2030,16 +2030,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "geen vermelding van een EN-vertalingscheck in de SEO-routine gevonden (hreflang wordt alleen technisch genoemd, niet inhoudelijk)",
-   "controle": "02_Dashboard/Routines/SEO.md gecontroleerd op een wekelijkse check voor verouderde EN-vertalingen",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "hreflang wordt alleen technisch genoemd (regel 42), geen inhoudelijke EN-vertalingscheck op feiten/bedragen/termijnen toegevoegd",
+   "controle": "02_Dashboard/Routines/SEO.md doorzocht op een EN-vertalingscheck",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "actiepunt staat nog als onaangevinkt [ ], geen uitgewerkt mini-plan gevonden, alleen algemene inspiratie-analyse",
-   "controle": "gezocht naar een uitgewerkt mini-plan (CSS/Liquid/JS) voor de zakelijke pagina met de Design Agent",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "actiepunt staat nog als [ ] P3, geen uitgewerkt mini-plan (CSS/Liquid/JS) gevonden",
+   "controle": "2026-10-12-b2b-pagina-inspiratie.md opnieuw gelezen op het mini-plan-actiepunt",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2128,9 +2128,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "notitie laatst bijgewerkt 8-11, geen nieuwe per-blog GSC-meting toegevoegd; 4-wekentermijn (9-11) is verstreken zonder herhaling",
-   "controle": "notitie gecontroleerd op een herhaalde Search Console-meting per blog na 4 weken",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "4-wekentermijn (9-11) is verstreken zonder herhaling; geen nieuwe per-blog GSC-meting toegevoegd aan de notitie",
+   "controle": "4-wekentermijn sinds de nulmeting (12-10) opnieuw berekend",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2536,9 +2536,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "sectie 2 (Productfeatures) is alleen voor de 2.0; 1.0 komt alleen voor bij prijzen/maten/materiaal-vergelijkingen, geen eigen featuresectie",
-   "controle": "Performance Grip Socks 2.0.md gecontroleerd op een eigen 1.0-specificatiesectie",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "geen \"1.0\"-featuresectie gevonden, de Bevindingen-secties gaan alleen over de 2.0",
+   "controle": "2026-10-19-productpagina-2-0-inspiratie-en-prototype.md doorzocht op een eigen 1.0-featuresectie",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2626,16 +2626,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#7129fb4d": {
-   "bewijs": "alleen de algemene regel 'altijd echte productfoto's als referentie' (9 okt) staat er, geen specifieke achtergrond/sfeer-wel-product-nooit-regel voor ads",
-   "controle": "Leerregels per Agent.md gecontroleerd op een AI-beeld-spelregel specifiek voor ads",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "actiepunt nog [ ], alleen de algemene regel \"altijd echte productfoto's als referentie\" staat er, geen specifieke achtergrond/sfeer-wel-product-nooit-regel",
+   "controle": "dezelfde notitie doorzocht op een AI-beeld-spelregel (achtergrond/sfeer wel, product nooit)",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "'swipe file' komt alleen voor als vermelding in 2026-11-04-ads-resultaten-verbeteringen.md ('er is al een stappenplan en een swipe file'), geen apart aangelegd swipe file-document met eigen voorbeelden/bewezen ads/TikTok Creative Center gevonden",
-   "controle": "gezocht naar een aangelegd swipe file-document in de vault",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "actiepunt nog [ ]; \"swipe file\" komt alleen voor als losse vermelding in 2026-11-04-ads-resultaten-verbeteringen.md, geen apart aangelegd document met eigen voorbeelden",
+   "controle": "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads.md en verwante Ads-notities doorzocht op een apart swipe file-document",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2818,9 +2818,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "/pages/collection nu 124 vertoningen/0 klikken/positie 3,2, /collections/gripsokken 72 vertoningen/3 klikken/positie 8,9; koopintentieverschil nog niet geanalyseerd, geen redirect/canonical toegepast",
-   "controle": "vertoningen/klikken van /pages/collection en /collections/gripsokken opnieuw opgevraagd (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "/pages/collection nu 131 vertoningen/0 klikken/positie 3,1, /collections/gripsokken 75 vertoningen/3 klikken/positie 8,9 - koopintentieverschil nog niet geanalyseerd, geen redirect/canonical ingesteld",
+   "controle": "/pages/collection versus /collections/gripsokken opnieuw opgevraagd in GSC 28d",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2862,36 +2862,36 @@
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
    "bewijs": "niet te controleren: google_data.py ga4 geeft alleen een 28-dagen-aggregatie, geen dag-niveau breakdown beschikbaar",
-   "controle": "gezocht naar een dag-niveau breakdown voor 26-27 oktober in de GA4-data",
-   "gecontroleerd": "2026-11-12",
+   "controle": "gezocht of een dag-niveau GA4-breakdown voor 26-27 oktober op te vragen is",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "gripsokken nu 976 vertoningen/CTR 1,33%/positie 5,9; grip socks 544 vertoningen/CTR 0,37%/positie 9,7; SERP-intentie nog niet geanalyseerd",
-   "controle": "vertoningen/CTR/positie voor 'gripsokken' en 'grip socks' opnieuw opgevraagd (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "gripsokken nu 985 vertoningen/CTR 1,32%/positie 5,8; grip socks 556 vertoningen/CTR 0,36%/positie 9,7; SERP-intentie nog niet geanalyseerd",
+   "controle": "\"gripsokken\" en \"grip socks\" opnieuw opgevraagd in GSC 28d",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "key events ongewijzigd (purchase, qualify_lead, close_convert_lead, ads_conversion_Aankoop_1, ads_conversion_Toevoegen_aan_winkelwag_1); consent-instellingen staan nog niet in de export, niet bewezen uitgeschakeld",
-   "controle": "key events opnieuw opgevraagd (google_data.py keyevents) en gezocht naar consent-instellingen in de export",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "key events ongewijzigd (purchase, qualify_lead, close_convert_lead, ads_conversion_Aankoop_1, ads_conversion_Toevoegen_aan_winkelwag_1); consent-instellingen staan nog niet in de export",
+   "controle": "keyevents opnieuw opgevraagd en op consent-instellingen gecontroleerd",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "VS nu 149 sessies (was 150), nog steeds geen aankoopdata per land beschikbaar om 0 aankopen te bevestigen of te weerleggen",
-   "controle": "sessies uit de VS opnieuw opgevraagd (28d) en gezocht naar aankoopdata per land",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "VS nu 148 sessies (was 149, nagenoeg ongewijzigd), NL 417 sessies; nog steeds geen aankoopdata per land beschikbaar om 0 aankopen te bevestigen of te weerleggen",
+   "controle": "VS-sessies (landen) opnieuw opgevraagd in GA4 28d",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
    "bewijs": "niet te controleren: GA4-filterinstellingen zijn niet uitleesbaar via de huidige google_data.py-tools",
-   "controle": "gezocht of GA4-adminfilters (intern/preview/admin-verkeer) uitleesbaar zijn via de huidige tools",
-   "gecontroleerd": "2026-11-12",
+   "controle": "gezocht of GA4-filterinstellingen (intern/preview/admin) uitleesbaar zijn",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2903,37 +2903,37 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "/en nu 13 sessies (ongewijzigd t.o.v. vorige run), herkomst en cart-gedrag nog niet verder uitgezocht",
-   "controle": "sessies op landingspagina /en opnieuw opgevraagd (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "/en nu 15 sessies (was 13), 1 keyEvent; herkomst en cart-gedrag nog niet verder uitgezocht",
+   "controle": "/en-landingspagina opnieuw opgevraagd in GA4 28d",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "pas 15 dagen verstreken sinds 28-10, 4 weken nog niet voorbij, herhaling nog niet aan de orde",
-   "controle": "aantal verstreken dagen sinds 28-10 gecontroleerd",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "18 dagen verstreken sinds 28-10, 4 weken (28 dagen) nog niet voorbij, herhaling nog niet aan de orde",
+   "controle": "termijn sinds 28-10 opnieuw berekend",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "GA4 28d nu 4 purchases/€231,70 (was 3/€195,80); Shopify-kant kon deze run niet herbevestigd worden (analytics-query gaf een lege foutrespons), meetgat blijft dus openstaand zonder vastgelegd besluit",
-   "controle": "GA4-purchases/omzet (28d) opnieuw opgevraagd; Shopify-vergelijking deze run via run-analytics-query geprobeerd",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "GA4 28d nu 5 purchases/€264,01, Shopify 28d nu 7 orders/€353,91 - meetgat blijft (GA4 lager dan Shopify), nog geen besluit op deze cijfers genomen",
+   "controle": "GA4 28d (google_data.py ga4) en Shopify 28d (run-analytics-query) dit keer beide succesvol opgehaald en vergeleken",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "nu 1796 vertoningen/17 klikken/positie 6,6 (was 1463/15), redirect-/URL-verschil met GA4 organic nog niet opgelost",
-   "controle": "vertoningen/klikken van /products/hi-grip-gripsokken-1 opnieuw opgevraagd in GSC (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "nu 1800 vertoningen/18 klikken/positie 6,5 (was 1796/17/6,6) - redirect-/URL-verschil met GA4 organic nog niet opgelost",
+   "controle": "/products/hi-grip-gripsokken-1 opnieuw opgevraagd in GSC 28d",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "branded klikaandeel nu 8 van 95 klikken (8,4%) in de top-50 — geen volledig branded/non-branded-rapport over alle zoektermen gemaakt",
-   "controle": "branded klikaandeel ('high grip'+'highgrip') berekend over de top-50 zoektermen (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "branded termen (hi grip/higrip/high grip/highgrip) nu 72 van 96 klikken (75%) in de top-50 - geen volledig rapport over alle zoektermen (alleen top-50), \"high grip\"/\"highgrip\" blijven ambigu",
+   "controle": "branded/non-branded klikaandeel herteld over de top-50 zoektermen",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -3190,9 +3190,9 @@
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "niet te controleren: PSI blijft 429 (quotum, pagespeedonline.googleapis.com), nog niet opnieuw te draaien",
-   "controle": "PageSpeed Insights mobiel/desktop opnieuw geprobeerd te draaien",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "niet te controleren: PSI blijft HTTP 429 (Quota exceeded, pagespeedonline.googleapis.com), nog niet opnieuw te draaien",
+   "controle": "google_data.py cwv opnieuw gedraaid",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -3347,9 +3347,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#d279fc2c": {
-   "bewijs": "sectie noemt nog alleen ffmpeg-motor en Canva, geen CapCut-vergelijking of besluit",
-   "controle": "sectie Software in Editing Stijl Gids Video.md gecontroleerd",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers voor \"capcut\", sectie noemt nog alleen ffmpeg-motor en Canva",
+   "controle": "sectie \"Software\" in Editing Stijl Gids Video.md doorzocht op CapCut",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3361,16 +3361,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "geen regel 'hook-eerst' gevonden",
-   "controle": "gezocht op 'hook-eerst' in Editing Stijl Gids Video.md",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers voor \"hook-eerst\"/\"binnen 2 sec\"",
+   "controle": "Editing Stijl Gids Video.md doorzocht op een hook-eerst-regel",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "geen vermelding van match-cut als uitzondering gevonden",
-   "controle": "gezocht op 'match-cut' in Editing Stijl Gids Video.md",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers voor \"match-cut\"",
+   "controle": "Editing Stijl Gids Video.md doorzocht op match-cut als uitzondering",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3440,9 +3440,9 @@
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#c8a3c793": {
-   "bewijs": "geen 'web_performance' in 02_Dashboard/_tools/google_data.py gevonden, script gebruikt nog alleen PageSpeed Insights (hoewel de Shopify-query zelf nu wel werkt, los getest)",
-   "controle": "google_data.py doorzocht op gebruik van web_performance voor cwv.json",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers, script gebruikt nog alleen de PageSpeed-API",
+   "controle": "02_Dashboard/_tools/google_data.py doorzocht op \"web_performance\"",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3538,14 +3538,14 @@
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
    "bewijs": "niet te controleren: JS-rendering van de cart-drawer is nodig, niet mogelijk zonder browser in deze sessie",
    "controle": "gezocht of de winkelwagenvergelijking (oud vs nieuw, mobiel/desktop) zonder browser te doen is",
-   "gecontroleerd": "2026-11-12",
+   "gecontroleerd": "2026-11-13",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-11-03-sportretail-nederland#99ac7353": {
-   "bewijs": "tabel noemt alleen categorieën (Absolute Teamsport, Soccer Centers als type) zonder uitgewerkte shortlist met specifieke winkelnamen/adressen; actiepunt staat nog als [ ]",
-   "controle": "2026-11-03-sportretail-nederland.md gecontroleerd op een uitgewerkte shortlist met winkelnamen",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "actiepunt staat nog als [ ], tabel noemt nog alleen categorieën (Absolute Teamsport/Soccer Centers als type binnen SPORT 2000) zonder shortlist met specifieke winkelnamen/adressen",
+   "controle": "2026-11-03-sportretail-nederland.md opnieuw gelezen op een uitgewerkte shortlist",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3614,16 +3614,16 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "notitie noemt alleen gemeten TBT-waarden (bv. 2,0s→1,0s), geen vastgelegd doel met deze drempelwaarden gevonden",
-   "controle": "gezocht op de doelwaarden (80+, TBT 300ms, LCP 2,5s) in 2026-11-03-snelheid-werkthema-02.md",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers voor \"80+\"/\"TBT onder\"/\"2,5 s\"/\"PageSpeed mobiel\" als vastgelegd doel, alleen gemeten waarden staan er",
+   "controle": "2026-11-03-snelheid-werkthema-02.md doorzocht op PageSpeed-doelwaarden (80+/TBT/LCP)",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
-   "bewijs": "geen vermelding van Upfront gevonden, per-app-besluit nog niet vastgelegd",
-   "controle": "gezocht op 'Upfront' in 2026-11-03-snelheid-werkthema-02.md",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "0 treffers voor \"upfront\", per-app-besluit (laden/wachten/weg) nog niet vastgelegd",
+   "controle": "2026-11-03-snelheid-werkthema-02.md doorzocht op \"Upfront\"",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3877,8 +3877,8 @@
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
    "bewijs": "zelfde stale Ads-telling (9 i.p.v. 10 bestanden) aangetroffen, vault_nav.py nog niet opnieuw gedraaid",
-   "controle": "navigatieregel en vault_nav-telling gecontroleerd voor dit en de domeinbestanden",
-   "gecontroleerd": "2026-11-12",
+   "controle": "navigatieregel en vault_nav-telling opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3967,9 +3967,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
-   "bewijs": "02_Dashboard/Ads/ heeft nu 10 bestanden, 'Waar staat wat.md' toont nog 'Ads: 9 notities'; vault_nav.py nog niet opnieuw gedraaid",
-   "controle": "navigatieregel en vault_nav-telling in 'Waar staat wat.md' gecontroleerd voor de Ads-map",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "02_Dashboard/Ads/ heeft nog 10 bestanden, \"Waar staat wat.md\" toont nog \"Ads: 9 notities\" - vault_nav.py nog niet opnieuw gedraaid",
+   "controle": "Ads-telling in Waar staat wat.md en bestandsaantal in 02_Dashboard/Ads/ opnieuw vergeleken",
+   "gecontroleerd": "2026-11-13",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3989,8 +3989,8 @@
   },
   "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
    "bewijs": "niet te controleren: actieve betaalmethodes in de checkout zijn niet uitleesbaar via de connector in deze sessie, ongewijzigd",
-   "controle": "gezocht of iDEAL-beschikbaarheid in de checkout via de Shopify-connector op te vragen is",
-   "gecontroleerd": "2026-11-12",
+   "controle": "gezocht of actieve betaalmethodes in de checkout via de Shopify-connector op te vragen zijn",
+   "gecontroleerd": "2026-11-13",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4176,8 +4176,8 @@
   },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: geen tool voor dit GSC-rapport beschikbaar in deze sessie",
-   "controle": "gezocht naar een tool voor het Search Console-rapport generatieve AI-impressies",
-   "gecontroleerd": "2026-11-12",
+   "controle": "gezocht naar een tool voor het GSC-rapport over generatieve AI-impressies",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -4246,9 +4246,9 @@
    "uitkomst": "open"
   },
   "backlog#42f6eb88": {
-   "bewijs": "geen notitie of besluit gevonden dat de meetbreuk expliciet heeft meegewogen vóór een nieuwe CRO-test",
-   "controle": "gezocht naar een notitie of besluit dat de Shopify-conversieratio-meetbreuk heeft meegewogen",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "geen nieuwe notitie of besluit gevonden dat dit expliciet meeweegt",
+   "controle": "gezocht naar een notitie/besluit dat de Shopify-meetbreuk expliciet heeft meegewogen vóór een nieuwe CRO-test",
+   "gecontroleerd": "2026-11-13",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -4310,9 +4310,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "homepage positie nu 11,4 (28d, vorige_positie 8,2), nog steeds een val, oorzaak nog niet uitgezocht",
-   "controle": "positie van de NL-homepage (/) opnieuw opgevraagd in GSC (28d)",
-   "gecontroleerd": "2026-11-12",
+   "bewijs": "homepage positie nu 11,4 (was 8,0, verschil -3,4) - val gaat door, oorzaak nog niet uitgezocht",
+   "controle": "homepage-positie opnieuw opgevraagd (google_data.py gsc --dagen 28 --top 50)",
+   "gecontroleerd": "2026-11-13",
    "methode": "gsc",
    "uitkomst": "open"
   },

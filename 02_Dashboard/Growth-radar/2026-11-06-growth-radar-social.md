@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over Meta-attributie/CAPI, Advantage+ creative, TikTok for Business, paid-social-nieuws of het Shopify-pixel-changelog haalde de drempel van een primaire bron met een novemberdatum. Eén signaal is wel het vermelden waard: een niet op Meta zelf te verifiëren claim dat Meta vanaf 12 november 2026 standaard een nieuwe meetinstelling ('conversies op klantapparaten meten') aanzet — vlak na de geplande livegang van de eigen Meta-campagne op 7 november."
-gerelateerd: [2026-10-30-growth-radar-social]
+gerelateerd: [2026-10-30-growth-radar-social, 2026-11-13-growth-radar-social]
 vervangt: []
 bronbestand: ""
 deadline: ""

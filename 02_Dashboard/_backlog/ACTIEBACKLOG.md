@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 13 november 2026 (actiecontrole)
+Laatst bijgewerkt: 13 november 2026 (growth-radar)
 Open: 35 · Afgerond: 14 (2 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -47,6 +47,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
 
 ### [ ] 10. Conversions API (CAPI) instellen (herzien 18 sep 2026, aangevuld 25 sep 2026, 9 okt 2026)
+**Update 13 nov 2026 (Growth Radar, Social):** Meta's pixelinstelling "Measure conversions on customer devices" bestaat (bevestigd via Meta's eigen Business Help Center-pagina, `facebook.com/business/help/4237575203200036`); zou volgens meerdere onderling consistente ad-tech-bronnen (PPC Land, Stape, Relevant Audience) sinds 12 nov 2026 geleidelijk standaard aan gaan voor in aanmerking komende pixels, maar **niet actief zijn voor mensen in de EU en het VK** — die uitsluiting kon niet rechtstreeks in Meta's eigen tekst gelezen worden (laadt via JavaScript), dus blijft onbevestigd op de primaire bron. Zie [[2026-11-13-growth-radar-social]]. Als de EU-uitsluiting klopt, raakt dit de NL-campagne niet; zo niet, kan de meting rond de Black Friday-periode méér conversies tellen dan voorheen. **Controleer de toggle rechtstreeks in Events Manager** vóór de dag-7/dag-14-beoordeling van de lopende campagne, in plaats van op secundaire bronnen te vertrouwen.
 **Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op "Betaalproces starten" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar "Content bekijken" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.
 **Update 26 okt 2026 (besluit Team HÏ Grip, opgewaardeerd naar P1):** de advertentiebudget-beslissing waarop dit punt wachtte is genomen — deze week starten met Ads. CAPI vanaf dag 1 van de eerste campagne inrichten (zie ook punt 24, ChatGPT Ads, zelfde besluit).
 **Update 9 okt 2026:** Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks; likes, shares, saves en video-views van 5+ seconden tellen sindsdien apart mee als "engage-through-attributie", standaard aan met een venster van 1 dag (Search Engine Land). Meenemen bij de Ads Manager-inrichting zodra het budget besloten is: anders telt de gerapporteerde ROAS ook niet-klik-conversies mee.

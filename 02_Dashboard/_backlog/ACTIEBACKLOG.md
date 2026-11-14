@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 13 november 2026 (actiecontrole)
+Laatst bijgewerkt: 14 november 2026 (actiecontrole)
 Open: 35 · Afgerond: 14 (2 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.

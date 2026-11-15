@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "De campagneopbouw houdt stand, de creatieve mix niet: langlopende ads in sokken en sportartikelen leunen op klantwoorden, multipacks en makers, niet op wetenschappelijke claims. Start op 7 november met €20 per dag en 3 concepten per sport, alles tegelijk live, 14 dagen niet aanraken en de winnaars meenemen naar de Performance Days."
-gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-performance-days-marketingplan, 2026-11-04-ads-resultaten-verbeteringen, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads]
+gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-performance-days-marketingplan, 2026-11-04-ads-resultaten-verbeteringen, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-10-ads-plan-bereik-conversie-sales]
 vervangt: [2026-11-05-meta-plan-35-euro-per-dag]
 bronbestand: ""
 deadline: 2026-11-06

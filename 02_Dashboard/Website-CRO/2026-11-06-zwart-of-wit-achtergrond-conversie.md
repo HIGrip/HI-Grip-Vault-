@@ -57,4 +57,3 @@ Een winkelwagen is kort en draait om prijzen en maat, dus wit is het veilige uit
 - https://informahealthcare.com/doi/abs/10.1080/00140139.2014.948496
 
 ## Aantekeningen
-

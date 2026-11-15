@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>HÏ Grip Meta-batch</title>
+<style>
+  /* Rendert precies één ad: ad.html?ad=<id>&f=4x5|9x16 (ids uit spec.json). Maten en teksten volgen spec.json. */
+  @font-face { font-family: 'Poppins'; font-weight: 400; font-style: normal; src: url(../fonts/Poppins-Regular.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 400; font-style: italic; src: url(../fonts/Poppins-Italic.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; font-style: normal; src: url(../fonts/Poppins-SemiBold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 600; font-style: italic; src: url(../fonts/Poppins-SemiBoldItalic.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 700; font-style: normal; src: url(../fonts/Poppins-Bold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 800; font-style: normal; src: url(../fonts/Poppins-ExtraBold.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; font-style: normal; src: url(../fonts/Poppins-Black.ttf); }
+  @font-face { font-family: 'Poppins'; font-weight: 900; font-style: italic; src: url(../fonts/Poppins-BlackItalic.ttf); }
+
+  :root {
+    --hi-black: #0A0A0A;
+    --hi-white: #FFFFFF;
+    --hi-yellow: #CCFF00;
+    --hi-red: #E10600;
+    --hi-near-black: #111111;
+    --hi-warm-dark: #1a1a1a;
+    --hi-warm-offwhite: #EAE8E5;
+    --hi-titanium: #909194;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--hi-black); }
+  body { font-family: 'Poppins', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  #ad { position: relative; overflow: hidden; }
+  #ad > * { position: absolute; }
+  #ad img { max-width: none; display: block; }
+  .t { font-family: 'Poppins', system-ui, sans-serif; }
+  .pill { display: flex; align-items: center; height: 78px; border-radius: 39px; padding: 0 36px; font: 700 30px/1 'Poppins'; white-space: nowrap; }
+  .pill svg { width: 13px; height: 24px; margin-left: 14px; flex: none; }
+  .pill--wit { background: var(--hi-white); color: var(--hi-black); }
+  .pill--zwart { background: var(--hi-black); color: var(--hi-white); }
+</style>
+</head>
+<body>
+<div id="ad"></div>
+<pre id="report" style="display:none"></pre>
+<script>
+const Q = new URLSearchParams(location.search);
+const ID = Q.get('ad');
+const FMT = Q.get('f') || '4x5';
+const ALT = Q.get('foto');          // ?foto=orig: voetbal_probleem met de oorspronkelijke foto (alleen ter beoordeling)
+const W = 1080, H = FMT === '9x16' ? 1920 : 1350;
+const S = FMT === '4x5';
+const FOTO = '../bron/foto/', AFG = '../bron/foto/afgeleid/';
+const COL = { zwart: 'var(--hi-black)', wit: 'var(--hi-white)', volt: 'var(--hi-yellow)', rood: 'var(--hi-red)',
+  near: 'var(--hi-near-black)', off: 'var(--hi-warm-offwhite)', tit: 'var(--hi-titanium)', carbon: 'var(--hi-warm-dark)' };
+
+const root = document.getElementById('ad');
+root.style.width = W + 'px'; root.style.height = H + 'px';
+const report = { ad: ID, f: FMT, size: [W, H], kop: {}, ink: {}, warnings: [], texts: [] };
+const warn = m => report.warnings.push(m);
+const texts = [];
+const pending = [];
+
+function el(css, html, cls) {
+  const e = document.createElement('div');
+  if (cls) e.className = cls;
+  e.style.cssText = css;
+  if (html != null) e.innerHTML = html;
+  root.appendChild(e);
+  return e;
+}
+const bg = c => { root.style.background = COL[c]; };
+
+// Tekstblok: x/right = marge, y = bovenkant van de regelbox
+function T(name, html, o) {
+  const pos = o.right != null ? `right:${W - o.right - (o.lsPx || 0)}px` : `left:${o.x}px`;
+  const css = [pos, `top:${o.y}px`, o.w ? `width:${o.w}px` : 'white-space:nowrap',
+    `font-family:'Poppins'`, `font-size:${o.size}px`, `font-weight:${o.weight || 400}`,
+    `font-style:${o.italic ? 'italic' : 'normal'}`, `line-height:${o.lh || 1}`,
+    `letter-spacing:${o.ls || '0'}`, `color:${COL[o.color]}`,
+    o.upper ? 'text-transform:uppercase' : '', o.w && !o.nobalance ? 'text-wrap:balance' : '', o.right != null ? 'text-align:right' : '', o.extra || ''].join(';');
+  const e = el(css, html, 't');
+  texts.push({ name, e, o });
+  return e;
+}
+const logo = (c, x, y) => T('logo', 'HÏ GRIP', { x, y, size: 28, weight: 800, ls: '0.5px', color: c, upper: true });
+const eyebrow = (s, c, x, y) => T('eyebrow', s, { x, y, size: 28, weight: 700, ls: '4px', lsPx: 4, color: c, upper: true });
+const micro = (s, c, o) => T('micro', s, Object.assign({ size: 24, weight: 600, ls: '3px', lsPx: 3, color: c, upper: true }, o));
+const hair = (c, x1, x2, y, op) => el(`left:${x1}px;top:${y}px;width:${x2 - x1}px;height:2px;background:${COL[c]};opacity:${op == null ? 1 : op}`);
+
+// Kop: autofit in stappen van 2 px tot minimaal 88 px, nooit een woord afbreken
+function kop(name, lines, o) {
+  const lh = o.rugby ? 0.96 : 0.98;
+  const e = el(`left:${o.x}px;top:${o.y}px;width:max-content;font-family:'Poppins';font-weight:900;font-style:${o.rugby ? 'italic' : 'normal'};text-transform:uppercase;letter-spacing:${o.rugby ? '-0.02em' : '-0.04em'};word-spacing:0.08em;color:${COL[o.color]}`,
+    lines.map(l => `<div style="white-space:nowrap">${l}</div>`).join(''), 't');
+  let size = o.size;
+  const set = s => { e.style.fontSize = s + 'px'; e.style.lineHeight = lh; };
+  set(size);
+  let w = e.getBoundingClientRect().width;
+  while (o.x + w > 1016.5 && size > 88) { size -= 2; set(size); w = e.getBoundingClientRect().width; }
+  if (o.x + w > 1016.5) warn(`${name}: kop past niet binnen 952 px bij 88 px (breedte ${w.toFixed(0)})`);
+  report.kop[name] = { start: o.size, final: size, breedte: Math.round(w) };
+  root.dataset.kopsize = size;
+  console.log('kop', name, o.size, '->', size, Math.round(w));
+  texts.push({ name, e, o: { size, lh, w: null } });
+  return e;
+}
+
+const cvs = document.createElement('canvas').getContext('2d');
+function measure(str, size, weight, italic, lsEm) {
+  cvs.font = `${italic ? 'italic ' : ''}${weight} ${size}px Poppins`;
+  cvs.letterSpacing = ((lsEm || 0) * size) + 'px';
+  const m = cvs.measureText(str);
+  return { l: -m.actualBoundingBoxLeft, r: m.actualBoundingBoxRight, asc: m.actualBoundingBoxAscent };
+}
+// Groot cijfer of woord met inktuitlijning en vaste basislijn
+function ink(name, str, o) {
+  const m = measure(str, o.size, o.weight, o.italic, o.ls);
+  const x = o.right != null ? o.right - m.r : o.left - m.l;
+  const e = el(`left:${x}px;top:${o.baseline - 0.85 * o.size}px;font-family:'Poppins';font-size:${o.size}px;font-weight:${o.weight};font-style:${o.italic ? 'italic' : 'normal'};line-height:1;white-space:nowrap;letter-spacing:${(o.ls || 0)}em;color:${COL[o.color]};${o.z ? 'z-index:' + o.z : ''}`,
+    str + '<i style="display:inline-block;width:0;height:0"></i>', 't');
+  const probe = e.querySelector('i').getBoundingClientRect().bottom;
+  e.style.top = (parseFloat(e.style.top) + (o.baseline - probe)) + 'px';
+  const inkL = x + m.l, inkR = x + m.r;
+  report.ink[name] = { l: +inkL.toFixed(1), r: +inkR.toFixed(1), capTop: +(o.baseline - m.asc).toFixed(1), size: +o.size.toFixed(1) };
+  return { e, l: inkL, r: inkR, w: inkR - inkL, asc: m.asc };
+}
+
+// Foto: schaal, uitsnede (in geschaalde coördinaten) en plaats
+function photo(src, nat, scale, crop, place, css) {
+  const wrap = el(`left:${place[0]}px;top:${place[1]}px;width:${crop[2]}px;height:${crop[3]}px;overflow:hidden;${css || ''}`);
+  const im = new Image();
+  im.style.cssText = `position:absolute;left:${-crop[0]}px;top:${-crop[1]}px;width:${nat[0] * scale}px;height:${nat[1] * scale}px`;
+  pending.push(new Promise(r => { im.onload = r; im.onerror = () => { warn('foto niet geladen ' + src); r(); }; }));
+  im.src = src;
+  wrap.appendChild(im);
+  return wrap;
+}
+const fade = (y0, y1, c) => el(`left:0;top:${y0}px;width:${W}px;height:${y1 - y0}px;background:linear-gradient(to bottom, rgba(${c},0), rgba(${c},1))`);
+
+// Merk-quoteteken: blok met gebogen staart, alleen het openingsteken (twee blokken als paar)
+function quote(c, x, y, w, h) {
+  const p = 'M0 90V44C0 22 14 6 40 0L44 16C30 22 26 32 26 44H50V90Z';
+  return el(`left:${x}px;top:${y}px;width:${w}px;height:${h}px`,
+    `<svg viewBox="0 0 110 90" width="${w}" height="${h}" preserveAspectRatio="none" style="display:block"><g fill="${c}"><path d="${p}"/><path transform="translate(60 0)" d="${p}"/></g></svg>`);
+}
+
+function pill(label, dark, pos) {
+  const chev = '<svg viewBox="0 0 13 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="2,2 11,12 2,22"/></svg>';
+  const side = pos.right != null ? `right:${W - pos.right}px` : `left:${pos.left}px`;
+  return el(`${side};top:${pos.y}px`, label + chev, 'pill ' + (dark ? 'pill--zwart' : 'pill--wit'));
+}
+
+// Vrijstaande zwarte sok (bron: afgeleid/sok_zwart_h<H>.png, hoogte = hoogte van de omtrek)
+const SOLE = { x0: 0.0129, x1: 0.5452 }; // zoolbreedte als fractie van de sokbreedte (sok_meta.json)
+const socks = [];
+function sock(h, o) {
+  const im = new Image();
+  im.style.cssText = `position:absolute;height:${h}px;top:${o.y}px;z-index:${o.z || 5}`;
+  const s = { im, h, o };
+  pending.push(new Promise(r => {
+    im.onload = () => {
+      const w = im.naturalWidth;
+      s.w = w; s.left = o.cx != null ? o.cx - w / 2 : o.right - w;
+      im.style.left = s.left + 'px';
+      r();
+    };
+    im.onerror = () => { warn('sok niet geladen'); r(); };
+  }));
+  im.src = AFG + `sok_zwart_h${h}.png`;
+  root.appendChild(im);
+  socks.push(s);
+  return s;
+}
+// Contactschaduw: ovaal #0A0A0A 18%, vervaging 30 px (geschaald met de sokhoogte, max 30), onder de zool
+function shadow(group) {
+  const h = group[0].h, y = group[0].o.y + h;
+  const x0 = Math.min(...group.map(s => s.left + SOLE.x0 * s.w));
+  const x1 = Math.max(...group.map(s => s.left + SOLE.x1 * s.w));
+  const oh = Math.max(16, 0.05 * h), blur = Math.min(30, Math.max(8, 30 * h / 640));
+  const e = el(`left:${x0}px;top:${y - oh * 0.6}px;width:${x1 - x0}px;height:${oh}px;border-radius:50%;background:#0A0A0A;opacity:.18;filter:blur(${blur}px);z-index:1`);
+  report.shadow = { x0: Math.round(x0), x1: Math.round(x1), blur: +blur.toFixed(1) };
+  return e;
+}
+
+// ---------------------------------------------------------------- de 16 ads
+const SUB = (s, o) => T('sub', s, Object.assign({ size: 34, weight: 400, lh: 1.35 }, o));
+const AANBOD_SUB = ['In plaats van €53,85 voor 3 losse paren.', 'Gratis verzending.'];
+
+const BUILD = {
+  voetbal_probleem() {
+    bg('zwart');
+    const orig = ALT === 'orig';
+    if (orig) { // oorspronkelijke spec: voetbal_wit_trap.jpg (toont drie strepen en COPA van een ander merk)
+      photo(FOTO + 'voetbal_wit_trap.jpg', [1024, 768], S ? 1.25 : 1.5, S ? [80, 0, 1080, 960] : [70, 0, 1080, 1152], [0, 0]);
+    } else { // fallback uit de spec: voetbal_wit_grippatroon_4x5.jpg, andere uitsnede dan voetbal_aanbod
+      photo(FOTO + 'voetbal_wit_grippatroon_4x5.jpg', [1080, 1350], S ? 1.25 : 1.2, S ? [100, 700, 1080, 960] : [60, 490, 1080, 1152], [0, 0]);
+    }
+    fade(S ? 640 : 800, S ? 960 : 1152, '10,10,10');
+    logo('wit', 64, S ? 56 : 290);
+    eyebrow('VOETBAL · 78E MINUUT', 'wit', 64, S ? 812 : 900);
+    kop('kop', ['JE NOPPEN PAKKEN.', 'JE VOET <span style="color:var(--hi-yellow)">SCHUIFT.</span>'], { x: 64, y: S ? 862 : 946, size: 92, color: 'wit' });
+    SUB('Siliconen gripzones houden je voet vast in je schoen.', { x: 64, y: S ? 1076 : 1150, w: S ? 860 : 952, color: 'wit', max: { lines: 2, bottom: S ? 1200 : 1245 } });
+    if (S) { hair('wit', 64, 1016, 1224); micro('PERFORMANCE GRIP SOCKS 2.0', 'wit', { x: 64, y: 1258 }); }
+  },
+  voetbal_klantwoord() {
+    bg('near');
+    if (S) photo(FOTO + 'voetbal_wit_grippatroon.jpg', [1280, 915], 0.84375, [0, 80, 1080, 600], [0, 0]);
+    else photo(FOTO + 'voetbal_wit_grippatroon.jpg', [1280, 915], 0.84375, [0, 100, 1080, 540], [0, 250]);
+    logo('wit', 64, S ? 56 : 290);
+    if (S) {
+      quote('#CCFF00', 64, 548, 110, 90);
+      eyebrow('KLANTREVIEW · JUNI 2025', 'wit', 200, 612);
+      T('quote1', 'Hele fijne gripsokken voor het voetballen.', { x: 64, y: 676, size: 36, italic: true, color: 'wit', lh: 1.2 });
+      kop('kop', ['JE MERKT', 'DAADWERKELIJK', 'EEN VERSCHIL.'], { x: 64, y: 736, size: 100, color: 'wit' });
+      hair('wit', 64, 1016, 1150, 0.3);
+      T('sub', '3500+ SPORTERS GINGEN JE VOOR', { x: 64, y: 1182, size: 40, weight: 800, upper: true, color: 'wit', lh: 1.2 });
+      micro('PERFORMANCE GRIP SOCKS 2.0', 'tit', { x: 64, y: 1262 });
+    } else {
+      quote('#CCFF00', 64, 740, 100, 82);
+      eyebrow('KLANTREVIEW · JUNI 2025', 'wit', 190, 800);
+      T('quote1', 'Hele fijne gripsokken voor het voetballen.', { x: 64, y: 852, size: 34, italic: true, color: 'wit', lh: 1.2 });
+      kop('kop', ['JE MERKT', 'DAADWERKELIJK', 'EEN VERSCHIL.'], { x: 64, y: 904, size: 88, color: 'wit' });
+      T('sub', '3500+ SPORTERS GINGEN JE VOOR', { x: 64, y: 1192, size: 36, weight: 800, upper: true, color: 'wit', lh: 1.2 });
+    }
+  },
+  voetbal_aanbod() {
+    bg('zwart');
+    photo(FOTO + 'voetbal_wit_grippatroon_4x5.jpg', [1080, 1350], 1, [0, 0, 1080, 1350], [0, -150]);
+    fade(S ? 880 : 860, 1200, '10,10,10');
+    el(`left:0;top:1200px;width:${W}px;height:${H - 1200}px;background:var(--hi-black)`);
+    logo('wit', 64, S ? 56 : 290);
+    eyebrow('TRAINING · TRAINING · WEDSTRIJD', 'wit', 64, S ? 940 : 900);
+    kop('kop', ['3 PAAR. <span style="color:var(--hi-yellow)">€44,95.</span>'], { x: 64, y: S ? 984 : 940, size: 108, color: 'wit' });
+    SUB(AANBOD_SUB.join('<br>'), { x: 64, y: S ? 1112 : 1066, color: 'wit' });
+    if (S) {
+      pill('Shop 3-pack', false, { right: 1016, y: 1232 });
+      micro('PERFORMANCE GRIP SOCKS 2.0', 'wit', { x: 64, y: 1259 });
+    } else pill('Shop 3-pack', false, { left: 64, y: 1172 });
+  },
+  voetbal_vergelijking() {
+    bg('near');
+    // strook y 706 tot 1142 van voetbal_zwart_trap.jpg (1142x1142) -> 1080x412
+    const k = 1080 / 1142;
+    const by = S ? 938 : 1070;
+    photo(FOTO + 'voetbal_zwart_trap.jpg', [1142, 1142], k, [0, 706 * k, 1080, 412], [0, by]);
+    fade(by, by + (S ? 82 : 80), '17,17,17').style.transform = 'scaleY(-1)'; // 100% #111111 op de bovenrand, 0% daaronder
+    logo('wit', 64, S ? 56 : 290);
+    eyebrow('WETENSCHAPPELIJK AANGETOOND', 'wit', 64, S ? 150 : 370);
+    const base = S ? 470 : 660, big = S ? 250 : 250, small = 190;
+    const a = ink('links', '0,60', { size: small, weight: 900, color: 'tit', baseline: base, left: 64 });
+    const b = ink('rechts', '1,17', { size: big, weight: 900, color: 'volt', baseline: base, right: 1016 });
+    report.scorebordGap = Math.round(b.l - a.r);
+    if (b.l - a.r < 40) warn('scorebord: cijfers te dicht op elkaar, gat ' + Math.round(b.l - a.r));
+    const ly = S ? 500 : 690;
+    micro('GEWONE SOK', 'tit', { x: 64, y: ly, size: 26 });
+    micro('GRIPSOK', 'wit', { right: 1016, y: ly, size: 26 });
+    hair('wit', 64, 1016, S ? 566 : 744);
+    kop('kop', ['GRIPSOKKEN:', '95% MEER GRIP.'], { x: 64, y: S ? 604 : 772, size: S ? 96 : 92, color: 'wit' });
+    if (S) {
+      T('bron', 'Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17. Onderzoek naar gripsokken in het algemeen. Bron: Apps et al. 2022.', { x: 64, y: 808, w: 952, size: 30, lh: 1.35, color: 'tit', max: { lines: 3, bottom: 930 } });
+      micro('PERFORMANCE GRIP SOCKS 2.0', 'wit', { x: 64, y: 1282 });
+    } else {
+      T('bron', 'Onderzoek naar gripsokken in het algemeen. Bron: Apps et al. 2022.', { x: 64, y: 968, w: 952, size: 30, lh: 1.35, color: 'tit', max: { lines: 2, bottom: 1050 } });
+    }
+  },
+  rugby_probleem() {
+    bg('off');
+    logo('zwart', 64, S ? 56 : 286);
+    if (S) micro('PERFORMANCE GRIP SOCKS 2.0', 'zwart', { right: 1016, y: 58 });
+    // reuzenwoord: inktbreedte 952, bovenkant hoofdletters op y 300 (4x5) of 350 (9:16)
+    const m100 = measure('RUGBY', 100, 900, true, -0.02);
+    const size = 100 * 952 / (m100.r - m100.l);
+    const mm = measure('RUGBY', size, 900, true, -0.02);
+    ink('RUGBY', 'RUGBY', { size, weight: 900, italic: true, ls: -0.02, color: 'rood', baseline: (S ? 300 : 350) + mm.asc, left: 64 });
+    const h = S ? 800 : 610, y = S ? 120 : 300;
+    const sk = sock(h, { cx: 580, y, z: 5 });
+    kop('kop', ['JE VOET SCHUIFT.', 'JE SCRUM OOK.'], { x: 64, y: S ? 950 : 936, size: 96, rugby: true, color: 'zwart' });
+    SUB('Siliconen gripzones houden je voet vast in je schoen.', { x: 64, y: S ? 1158 : 1140, w: 952, color: 'zwart', max: { lines: 2, bottom: S ? 1300 : 1245 } });
+    pending.push(Promise.all(pending.slice()).then(() => shadow([sk])));
+  },
+  rugby_klantwoord() {
+    bg('off');
+    logo('zwart', 64, S ? 56 : 286);
+    const sk = S ? sock(520, { right: 1016, y: 800 }) : sock(280, { right: 1016, y: 968 });
+    if (S) {
+      quote('#E10600', 64, 170, 120, 100);
+      eyebrow('KLANTREVIEW · JUNI 2025', 'zwart', 210, 236);
+      T('laag1', 'Prima prijs/kwaliteit.', { x: 64, y: 316, size: 38, italic: true, color: 'zwart', lh: 1.2 });
+      kop('kop', ['NIET ECHT', 'VERWACHT', 'EERLIJK GEZEGD,'], { x: 64, y: 380, size: 100, rugby: true, color: 'zwart' });
+      T('laag3', 'maar de grip maakt wel degelijk een verschil.', { x: 64, y: 696, w: 952, size: 46, weight: 600, italic: true, color: 'zwart', lh: 1.2, max: { lines: 2 } });
+      hair('zwart', 64, 600, 880);
+      T('sub', '3500+ SPORTERS<br>GINGEN JE VOOR', { x: 64, y: 912, size: 56, weight: 900, italic: true, color: 'zwart', lh: 1.05 });
+      micro('GRIP SOCKS 2.0 · VOOR RUGBY', 'zwart', { x: 64, y: 1262 });
+    } else {
+      quote('#E10600', 64, 350, 100, 84);
+      eyebrow('KLANTREVIEW · JUNI 2025', 'zwart', 190, 404);
+      T('laag1', 'Prima prijs/kwaliteit.', { x: 64, y: 462, size: 36, italic: true, color: 'zwart', lh: 1.2 });
+      kop('kop', ['NIET ECHT', 'VERWACHT', 'EERLIJK GEZEGD,'], { x: 64, y: 516, size: 96, rugby: true, color: 'zwart' });
+      T('laag3', 'maar de grip maakt wel degelijk een verschil.', { x: 64, y: 818, w: 952, size: 44, weight: 600, italic: true, color: 'zwart', lh: 1.2, max: { lines: 2 } });
+      hair('zwart', 64, 600, 990);
+      T('sub', '3500+ SPORTERS<br>GINGEN JE VOOR', { x: 64, y: 1016, size: 48, weight: 900, italic: true, color: 'zwart', lh: 1.05 });
+      micro('GRIP SOCKS 2.0 · VOOR RUGBY', 'zwart', { x: 64, y: 1200 });
+    }
+    pending.push(Promise.all(pending.slice()).then(() => shadow([sk])));
+  },
+  rugby_aanbod() {
+    bg('off');
+    logo('zwart', 64, S ? 56 : 286);
+    eyebrow('RUGBY · TRAINING · TRAINING · WEDSTRIJD', 'zwart', 64, S ? 130 : 340);
+    const h = S ? 640 : 470, y = S ? 200 : 390;
+    const xs = S ? [320, 560, 800] : [350, 560, 770];
+    const group = xs.map((cx, i) => sock(h, { cx, y, z: 10 - i }));
+    kop('kop', ['3 PAAR. <span style="color:var(--hi-red)">€44,95.</span>'], { x: 64, y: S ? 870 : 884, size: S ? 118 : 112, rugby: true, color: 'zwart' });
+    SUB(AANBOD_SUB.join('<br>'), { x: 64, y: S ? 1012 : 1014, color: 'zwart' });
+    if (S) {
+      pill('Shop 3-pack', true, { right: 1016, y: 1232 });
+      micro('GRIP SOCKS 2.0 · VOOR RUGBY', 'zwart', { x: 64, y: 1259 });
+    } else pill('Shop 3-pack', true, { left: 64, y: 1150 });
+    pending.push(Promise.all(pending.slice()).then(() => shadow(group)));
+  },
+  rugby_vergelijking() {
+    bg('off');
+    logo('zwart', 64, S ? 56 : 286);
+    eyebrow('WETENSCHAPPELIJK AANGETOOND', 'zwart', 64, S ? 150 : 350);
+    const base = S ? 500 : 640, big = S ? 270 : 250, small = S ? 190 : 180;
+    const a = ink('links', '0,60', { size: small, weight: 900, italic: true, color: 'tit', baseline: base, left: 64 });
+    const b = ink('rechts', '1,17', { size: big, weight: 900, italic: true, color: 'zwart', baseline: base, right: 1016 });
+    report.scorebordGap = Math.round(b.l - a.r);
+    if (b.l - a.r < 40) warn('scorebord: cijfers te dicht op elkaar, gat ' + Math.round(b.l - a.r));
+    // de komma van '1,17' hangt onder de basislijn: de streep gaat eronder (spec: +20 px, dat snijdt de komma)
+    cvs.font = `italic 900 ${big}px Poppins`;
+    const sy = base + cvs.measureText(',').actualBoundingBoxDescent + 6;
+    report.streep = { spec: base + 20, gebruikt: Math.round(sy) };
+    el(`left:${b.l}px;top:${sy}px;width:${b.w}px;height:8px;background:var(--hi-red)`);
+    const ly = sy + 8 + 14;
+    micro('GEWONE SOK', 'zwart', { x: 64, y: ly, size: 26 });
+    micro('GRIPSOK', 'zwart', { right: 1016, y: ly, size: 26 });
+    kop('kop', ['GRIPSOKKEN:', '95% MEER GRIP.'], { x: 64, y: S ? 620 : 744, size: 96 * (S ? 1 : 92 / 96), rugby: true, color: 'zwart' });
+    if (S) {
+      T('bron', 'Statische wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17. Onderzoek naar gripsokken in het algemeen. Bron: Apps et al. 2022.', { x: 64, y: 826, w: 952, size: 30, lh: 1.35, color: 'carbon', max: { lines: 3, bottom: 950 } });
+      hair('zwart', 64, 1016, 990);
+      T('productlabel', 'HÏ GRIP PERFORMANCE<br>GRIP SOCKS 2.0', { x: 64, y: 1050, size: 34, weight: 800, upper: true, color: 'zwart', lh: 1.25 });
+      SUB('Gripsokken voor scrum, ruck en sprint.', { x: 64, y: 1160, w: 720, color: 'zwart' });
+      var sk = sock(300, { right: 1016, y: 1020 });
+    } else {
+      T('bron', 'Onderzoek naar gripsokken in het algemeen. Bron: Apps et al. 2022.', { x: 64, y: 936, w: 952, size: 30, lh: 1.35, color: 'carbon', max: { lines: 2, bottom: 1020 } });
+      hair('zwart', 64, 1016, 1060);
+      T('productlabel', 'HÏ GRIP PERFORMANCE GRIP SOCKS 2.0', { x: 64, y: 1090, w: 760, size: 30, weight: 800, upper: true, color: 'zwart', lh: 1.25 });
+      T('sub', 'Gripsokken voor scrum, ruck en sprint.', { x: 64, y: 1180, w: 760, size: 30, color: 'zwart', lh: 1.35, max: { lines: 1 } });
+      var sk = sock(170, { right: 1016, y: 1076 });
+    }
+    pending.push(Promise.all(pending.slice()).then(() => shadow([sk])));
+  },
+};
+
+(async function main() {
+  if (!BUILD[ID]) { document.body.textContent = 'onbekende ad ' + ID; return; }
+  await Promise.all(['900 100px Poppins', 'italic 900 100px Poppins', '800 28px Poppins', '700 28px Poppins', '600 24px Poppins',
+    '400 34px Poppins', 'italic 400 36px Poppins', 'italic 600 46px Poppins'].map(f => document.fonts.load(f, 'HÏ GRIP 0,60 €')));
+  BUILD[ID]();
+  // wacht tot alle foto's en sokken geladen zijn (ook die later zijn toegevoegd)
+  let n = 0;
+  while (n < pending.length) { n = pending.length; await Promise.all(pending.slice()); }
+  await document.fonts.ready;
+  // controles
+  const safe = !S;
+  for (const t of texts) {
+    const r = t.e.getBoundingClientRect(), o = t.o;
+    const lines = o.size && o.lh ? Math.round(r.height / (o.size * o.lh)) : null;
+    report.texts.push({ n: t.name, x: Math.round(r.left), y: Math.round(r.top), r: Math.round(r.right), b: Math.round(r.bottom), lines });
+    if (r.left < 0 || r.right > W || r.top < 0 || r.bottom > H) warn(`${t.name}: buiten canvas`);
+    if (safe && (r.top < 270 - 1 || r.bottom > 1250 + 1)) warn(`${t.name}: buiten safe zone y ${Math.round(r.top)}-${Math.round(r.bottom)}`);
+    if (o.max && o.max.lines && lines > o.max.lines) warn(`${t.name}: ${lines} regels, max ${o.max.lines}`);
+    if (o.max && o.max.bottom && r.bottom > o.max.bottom + 1) warn(`${t.name}: onderkant ${Math.round(r.bottom)} > ${o.max.bottom}`);
+    if (!document.fonts.check(`${o.italic ? 'italic ' : ''}${o.weight || 400} 20px Poppins`)) warn(`${t.name}: font niet geladen`);
+  }
+  for (let i = 0; i < texts.length; i++) for (let j = i + 1; j < texts.length; j++) {
+    const a = texts[i].e.getBoundingClientRect(), b = texts[j].e.getBoundingClientRect();
+    if (a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom) warn(`overlap tekstvakken: ${texts[i].name} / ${texts[j].name}`);
+  }
+  document.getElementById('report').textContent = JSON.stringify(report);
+  document.body.dataset.done = '1';
+})();
+</script>
+</body>
+</html>

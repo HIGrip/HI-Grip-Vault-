@@ -37,10 +37,11 @@ laatst-geverifieerd: 2026-10-11
 | Product                          | Handle                             | Maten                 | Prijs                                                     | Geverifieerd                      |
 | -------------------------------- | ---------------------------------- | --------------------- | --------------------------------------------------------- | --------------------------------- |
 | Performance Gripsokken (1.0)     | `performance-gripsokken`           | 34–39 · 40–46         | 1-pack **€14,95** · 3-pack **€35,95** · 5-pack **€54,95** (via app-bundel; besluit Lars 12-10) | 2026-10-12 (Shopify-koppeling + productpagina) |
-| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
-| Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | **€17,95**                                                | 2026-10-01 (Shopify-koppeling)    |
+| Performance Gripsokken 2.0 Zwart | `performance-gripsokken-2-0-zwart` | 35–38 · 39–42 · 43–47 | 1-pack **€17,95** · 3-pack **€44,95** · 5-pack **€69,95** (via app-bundel) | 2026-11-10 (productpagina live) |
+| Performance Gripsokken 2.0 Wit   | `performance-gripsokken-2-0-wit`   | 35–38 · 39–42 · 43–47 | 1-pack **€17,95** · 3-pack **€44,95** · 5-pack **€69,95** (via app-bundel) | 2026-11-10 (productpagina live) |
 
 - Prijsverloop 1.0: rond 24-9 tijdelijk €13,49 / €39,95 / €61,95, na 28-9 €14,95 / €41,95 / €64,95. **Live op 12-10:** de packs zijn geen Shopify-varianten maar een Section Store bundle-block op de productpagina: 3-pack €35,95 (doorgestreept €44,85, "€9 korting") en 5-pack €54,95 (doorgestreept €74,75, "€20 korting"), beide met gratis verzending. Per paar: €14,95 / €11,98 / €10,99. **Besluit Lars 12-10: de live prijzen zijn de juiste.** €41,95 / €64,95 niet meer gebruiken.
+- Packs 2.0 (live op 10-11): Section Store bundle-block op de productpagina: 3-pack €44,95 (doorgestreept €53,85, "€9,- korting", label "Meest gekozen") en 5-pack €69,95 (doorgestreept €89,75, "€20,- korting"), beide met gratis verzending. Per paar: €17,95 / €14,98 / €13,99. Het 1-pack toont "Normale prijs €19,95" (de adviesprijs retail): gebruik die doorgestreepte prijs niet als korting in uitingen; de bundelkorting tegenover losse paren wel.
 - Voorraad: niet in dit bestand (besluit 11-10). Ter info op 12-10: 1.0 161 paar, 2.0 zwart −43 en wit −34 (negatief).
 - Adviesprijs retail 2.0: **€19,95** incl. btw (besluit 29-10-2026). De webshop blijft €17,95. Marges op de B2B-staffel worden berekend op €16,49 excl. btw. Vervangt het besluit van 2-10-2026 (adviesprijs gelijk aan de webshop, €17,95).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
@@ -103,6 +104,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-11-10 — Packprijzen 2.0 toegevoegd uit de live productpagina: 3-pack €44,95 en 5-pack €69,95, met gratis verzending. Stonden nog niet in dit bestand terwijl ze sinds begin november live zijn.
 - 2026-11-06 — Verzendkosten buiten Nederland toegevoegd: €5,00, uit de Shopify-instellingen; gratis vanaf €35 geldt in alle landen.
 - 2026-10-29 — Besluit: adviesprijs retail 2.0 wordt €19,95 incl. btw; de webshop blijft €17,95. Toegepast op de nieuwe prijslijst retail (`07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026`).
 - 2026-10-20 — Brand Core gelijkgetrokken met het Canva-document *MERK & STRATEGIE* (nu 36 pagina's): zwart `#0A0A0A`, grijzen Titanium / Onyx / Carbon Black (Graphite vervallen), een accentkleur per kernsport, design- en socialsprincipes toegevoegd, influencer-aanpak en organische planning vervangen, roadmap (indicatief) en teamrollen bijgewerkt. Sportersaantal blijft 3500+ (Canva loopt achter met 3000+); omzetcijfers in Canva zijn illustratie.

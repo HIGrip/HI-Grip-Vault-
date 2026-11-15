@@ -1,0 +1,155 @@
+{
+  "concepten": [
+    {
+      "id": "voetbal_probleem",
+      "primair_A": "Je noppen pakken in het gras. Maar bij draaien, afremmen en aanzetten schuift je voet in je schoen.\n\nPerformance Gripsokken 2.0 hebben siliconen gripzones die je voet vasthouden in je schoen.\n\n3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "primair_B": "Aanzetten, afremmen, wending: je kracht werkt pas als je voet in je schoen blijft staan. Siliconen gripzones in de Performance Gripsokken 2.0 houden hem vast.\n\n3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "kop_A": {"tekst": "Je voet schuift in je schoen", "hoek": "probleem"},
+      "kop_B": {"tekst": "Gripzones voor elke wending", "hoek": "performance"},
+      "beschrijving": "3 paar voor €44,95",
+      "cta_A": {"knop": "Meer informatie", "reden": "Kijker herkent het probleem maar zoekt niet: eerst uitleg, dan pas kopen."},
+      "cta_B": {"knop": "Nu kopen", "reden": "Tekst eindigt op het aanbod en de gripzones, dus direct naar het 3-pack."},
+      "claims": [
+        "Feature 2.0: siliconen gripzones houden de voet vast in de schoen",
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35"
+      ],
+      "waarom_dit_werkt": "Opent met het moment dat elke voetballer kent, noemt dan pas de gripzones en het 3-pack.",
+      "rechten": "Foto uit eigen shoot: modelakkoord voor betaalde ads bevestigen (zie spec).",
+      "aanbevolen": "A"
+    },
+    {
+      "id": "voetbal_klantwoord",
+      "primair_A": "“Hele fijne gripsokken voor het voetballen. Je merkt daadwerkelijk een verschil.” Klantreview, juni 2025.\n\n3500+ sporters gingen je voor. Performance Gripsokken 2.0: 3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "primair_B": "“Hele fijne gripsokken voor het voetballen. Je merkt daadwerkelijk een verschil.” Klantreview, juni 2025.\n\nVoel hoe je voet vast zit in je schoen als jij aanzet. Performance Gripsokken 2.0: 3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "kop_A": {"tekst": "3500+ sporters gingen je voor", "hoek": "sociaal bewijs"},
+      "kop_B": {"tekst": "Het gevoel dat je voet vastzit", "hoek": "emotie"},
+      "beschrijving": "Klantreview, juni 2025",
+      "cta_A": {"knop": "Bekijk meer", "reden": "De twijfelaar wil eerst zien wat andere sporters kozen, niet meteen kopen."},
+      "cta_B": {"knop": "Nu kopen", "reden": "Het gevoel is gewekt en het aanbod staat er direct onder."},
+      "claims": [
+        "Klantreview van 18 juni 2025, woordelijk",
+        "3500+ sporters (alleen in A)",
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35",
+        "Feature 2.0: siliconen gripzones houden de voet vast in de schoen (alleen in B)"
+      ],
+      "waarom_dit_werkt": "De echte woorden van een klant openen de tekst en staan op zichzelf, zonder eigen superlatieven.",
+      "rechten": "[RECHTEN NODIG] Toestemming van de reviewer vóór gebruik in een betaalde ad. De review dateert van juni 2025 en gaat waarschijnlijk over de 1.0: nergens als 2.0-review gepresenteerd. Geen Trustpilot-naam, score of sterren.",
+      "aanbevolen": "A"
+    },
+    {
+      "id": "voetbal_aanbod",
+      "primair_A": "Komend weekend wedstrijd? Training, training, wedstrijd: dat zijn drie paar.\n\n3 paar Performance Gripsokken 2.0 voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending, binnen 1 werkdag verzonden.",
+      "primair_B": "3500+ sporters gingen je voor. Training, training, wedstrijd: pak drie paar.\n\n3 paar Performance Gripsokken 2.0 voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending. 30 dagen retour.",
+      "kop_A": {"tekst": "Binnen 1 werkdag verzonden", "hoek": "urgentie"},
+      "kop_B": {"tekst": "3500+ sporters gingen je voor", "hoek": "sociaal bewijs"},
+      "beschrijving": "Gratis verzending",
+      "cta_A": {"knop": "Nu kopen", "reden": "Wie het weekend wil halen, koopt direct."},
+      "cta_B": {"knop": "Aanbieding bekijken", "reden": "Bewijs eerst, dan het 3-pack bekijken."},
+      "claims": [
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35",
+        "Binnen 1 werkdag verzonden",
+        "30 dagen retour (alleen in B)",
+        "3500+ sporters (alleen in B)"
+      ],
+      "waarom_dit_werkt": "Eén reden voor drie paar (twee trainingen en een wedstrijd) en een prijs zonder doorhaling of verzonnen deadline.",
+      "rechten": "Geen. Controleer op de dag van livegang prijs en gratis verzending op de productpagina.",
+      "aanbevolen": "B"
+    },
+    {
+      "id": "voetbal_vergelijking",
+      "primair_A": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).\n\nDe Performance Gripsokken 2.0 van HÏ Grip zijn gripsokken met siliconen gripzones. 3 paar voor €44,95, gratis verzending.",
+      "primair_B": "Schuift je voet in je schoen? Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).\n\nDe Performance Gripsokken 2.0 van HÏ Grip zijn gripsokken met siliconen gripzones. 3 paar €44,95, gratis verzending.",
+      "kop_A": {"tekst": "Gripsokken: 95% meer grip (Apps 2022)", "hoek": "performance"},
+      "kop_B": {"tekst": "Schuift je voet in je schoen?", "hoek": "probleem"},
+      "beschrijving": "Bron: Apps et al. 2022",
+      "cta_A": {"knop": "Meer informatie", "reden": "Bewijsgedreven kijker wil de uitleg lezen voordat hij koopt."},
+      "cta_B": {"knop": "Bekijk meer", "reden": "Probleemherkenning vraagt eerst om een blik op het product."},
+      "claims": [
+        "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)",
+        "Feature 2.0: siliconen gripzones",
+        "3-pack €44,95, gratis verzending"
+      ],
+      "waarom_dit_werkt": "Het onderzoek staat voor de categorie, met bron, en HÏ Grip komt pas in een aparte zin.",
+      "rechten": "Geen. Onderzoek gaat over gripsokken in het algemeen, niet over een meting van HÏ Grip. Bij A valt de snede van Meta (±125 tekens) midden in de bronvermelding, bij B niet.",
+      "aanbevolen": "B"
+    },
+    {
+      "id": "rugby_probleem",
+      "primair_A": "Scrum, ruck, aanzetten: op het moment dat je kracht zet, schuift je voet in je schoen.\n\nPerformance Gripsokken 2.0: siliconen gripzones houden je voet vast, met versterkte hiel en naadloze teenzone.\n\n3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "primair_B": "Je zet alles in elke scrum, ruck en lineout. Dan hoort je voet gewoon vast te zitten in je schoen.\n\nPerformance Gripsokken 2.0: siliconen gripzones, versterkte hiel, naadloos gebreid.\n\n3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "kop_A": {"tekst": "Je voet schuift. Je scrum ook.", "hoek": "probleem"},
+      "kop_B": {"tekst": "Voor wie de scrum in gaat", "hoek": "identiteit"},
+      "beschrijving": "3 paar voor €44,95",
+      "cta_A": {"knop": "Meer informatie", "reden": "Gripsokken zijn nieuw in rugby: eerst uitleg, dan pas kopen."},
+      "cta_B": {"knop": "Nu kopen", "reden": "Identiteitstekst eindigt op het aanbod, dus direct naar het 3-pack."},
+      "claims": [
+        "Feature 2.0: siliconen gripzones houden de voet vast in de schoen",
+        "Features 2.0: versterkte hiel, naadloos gebreid",
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35"
+      ],
+      "waarom_dit_werkt": "Spreekt de rugbyer aan in scrum en ruck, en legt de gripzone uit alsof een teamgenoot het vertelt.",
+      "rechten": "Geen. Beeldspraak 'je scrum ook' niet doortrekken naar een kracht- of prestatieclaim.",
+      "aanbevolen": "A"
+    },
+    {
+      "id": "rugby_klantwoord",
+      "primair_A": "“Prima prijs/kwaliteit. Niet echt verwacht eerlijk gezegd, maar de grip maakt wel degelijk een verschil.” Klantreview, juni 2025.\n\n3500+ sporters gingen je voor. Performance Gripsokken 2.0, ook voor scrum, ruck en sprint: 3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "primair_B": "Klinkt als een hype? Twijfel mag.\n\n“Prima prijs/kwaliteit. Niet echt verwacht eerlijk gezegd, maar de grip maakt wel degelijk een verschil.” Klantreview, juni 2025.\n\nPerformance Gripsokken 2.0: 3 paar voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "kop_A": {"tekst": "3500+ sporters gingen je voor", "hoek": "sociaal bewijs"},
+      "kop_B": {"tekst": "Gripsokken? Twijfel mag.", "hoek": "emotie"},
+      "beschrijving": "Klantreview, juni 2025",
+      "cta_A": {"knop": "Bekijk meer", "reden": "Twijfelaar wil eerst zien dat anderen het kozen."},
+      "cta_B": {"knop": "Meer informatie", "reden": "Wie twijfelt wil uitleg, geen directe koopknop."},
+      "claims": [
+        "Klantreview van 25 juni 2025, woordelijk en volledig",
+        "3500+ sporters (alleen in A)",
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35"
+      ],
+      "waarom_dit_werkt": "Geeft de twijfel van de kijker gelijk en laat een klant de ommekeer vertellen, in eigen woorden.",
+      "rechten": "[RECHTEN NODIG] Toestemming van de reviewer vóór gebruik in een betaalde ad. Review van juni 2025, waarschijnlijk over de 1.0: niet als 2.0-review gepresenteerd en niet als uitspraak van een rugbyspeler. Rugby staat alleen in de merkzin, niet bij de quote. Geen Trustpilot-naam, score of sterren.",
+      "aanbevolen": "B"
+    },
+    {
+      "id": "rugby_aanbod",
+      "primair_A": "Twee trainingen en een wedstrijd: dat zijn drie paar. Wedstrijd komend weekend? We verzenden binnen 1 werkdag.\n\n3 paar Performance Gripsokken 2.0 voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending.",
+      "primair_B": "Voor wie elke week in de scrum staat: training, training, wedstrijd. Drie paar, klaar.\n\n3 paar Performance Gripsokken 2.0 voor €44,95 in plaats van €53,85 voor 3 losse paren. Gratis verzending. 30 dagen retour.",
+      "kop_A": {"tekst": "Binnen 1 werkdag verzonden", "hoek": "urgentie"},
+      "kop_B": {"tekst": "Drie paar voor jouw rugbyweek", "hoek": "identiteit"},
+      "beschrijving": "3 paar voor €44,95",
+      "cta_A": {"knop": "Nu kopen", "reden": "Verzendsnelheid is het argument, dus direct naar het 3-pack."},
+      "cta_B": {"knop": "Aanbieding bekijken", "reden": "Nieuwe doelgroep: eerst het 3-pack bekijken, dan kiezen."},
+      "claims": [
+        "3-pack €44,95, 3 losse paren €53,85",
+        "Gratis verzending vanaf €35",
+        "Binnen 1 werkdag verzonden",
+        "30 dagen retour (alleen in B)"
+      ],
+      "waarom_dit_werkt": "Een trainingsweek in rugbytaal geeft drie paar een logische reden, zonder doorhaling of verzonnen deadline.",
+      "rechten": "Geen. Niets over 1+1 of Performance Days. Controleer op de dag van livegang prijs en gratis verzending.",
+      "aanbevolen": "B"
+    },
+    {
+      "id": "rugby_vergelijking",
+      "primair_A": "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).\n\nDe Performance Gripsokken 2.0 van HÏ Grip zijn gripsokken met siliconen gripzones, voor scrum, ruck en sprint. 3 paar voor €44,95, gratis verzending.",
+      "primair_B": "Twijfel je aan gripsokken? Dat snappen we.\n\nWetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022).\n\nDe Performance Gripsokken 2.0 van HÏ Grip zijn gripsokken met siliconen gripzones. Gratis verzending.",
+      "kop_A": {"tekst": "Gripsokken: 95% meer grip (Apps 2022)", "hoek": "performance"},
+      "kop_B": {"tekst": "Twijfel je aan gripsokken?", "hoek": "emotie"},
+      "beschrijving": "Bron: Apps et al. 2022",
+      "cta_A": {"knop": "Meer informatie", "reden": "Bewijs vraagt om uitleg en bron, niet om een directe koop."},
+      "cta_B": {"knop": "Bekijk meer", "reden": "Twijfel wegnemen begint met kijken, nog niet met kopen."},
+      "claims": [
+        "Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17, 95% meer grip (Apps et al. 2022)",
+        "Feature 2.0: siliconen gripzones",
+        "3-pack €44,95 (alleen in A), gratis verzending"
+      ],
+      "waarom_dit_werkt": "Neemt de twijfel van rugbyers serieus met onderzoek naar de categorie, en noemt HÏ Grip pas daarna.",
+      "rechten": "Geen. Het onderzoek ging niet over rugby en niet over een meting van HÏ Grip: rugby staat alleen in een aparte zin bij het product. Bij A valt de snede van Meta (±125 tekens) midden in de bronvermelding, bij B niet.",
+      "aanbevolen": "B"
+    }
+  ]
+}

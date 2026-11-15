@@ -1878,16 +1878,16 @@
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#0496d928": {
-   "bewijs": "pasvorm 5x, maat 8x, lengte 0x, clubkous 0x - nog geen keuzegids-uitbreiding",
+   "bewijs": "higrip.nl/pages/gripsokken-voor-voetbal: pasvorm 4x, maat 4x, lengte 0x, clubkous 0x - nog geen keuzegids-uitbreiding",
    "controle": "pasvorm/maat/lengte/clubkous-termen op de voetbalpagina opnieuw geteld",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
-   "bewijs": "meta bevat nog letterlijk komt u alles te weten en witte gripsokken, ongewijzigd",
+   "bewijs": "meta description bevat nog letterlijk komt u alles te weten en witte gripsokken, ongewijzigd",
    "controle": "meta description van wat-zijn-gripsokken opnieuw gecontroleerd op komt u/witte gripsokken",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1899,9 +1899,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
-   "bewijs": "beide URLs (/collections/witte-gripsokken, /collections/zwarte-gripsokken) geven nog 404, collecties bestaan nog niet",
+   "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide nog HTTP 404, collecties bestaan nog niet",
    "controle": "status van de collecties witte en zwarte gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2009,16 +2009,16 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#a37c4e83": {
-   "bewijs": "verhaaltekst nog kort: 1 alinea van circa 23 woorden plus 3 korte founder-quotes, geen uitgebouwd oprichtersverhaal",
+   "bewijs": "higrip.nl/pages/ons-verhaal bevat nog maar 1 korte alinea (Wij versnellen de beweging van iedere sporter) plus 3 korte founder-quotes, geen uitgebouwd oprichtersverhaal",
    "controle": "lengte van het verhaal op /pages/ons-verhaal opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-seo-audit-weekdelta#a938ea37": {
-   "bewijs": "REFUND_POLICY nog 14 dagen/25%/ongeopend, SHIPPING_POLICY nog voor 16:00, TERMS_OF_SERVICE art.4 nog EUR 4,25 - nieuwe beleidstekst nog niet geplakt",
-   "controle": "geplakte beleidstekst in Instellingen - Beleid opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "bewijs": "REFUND_POLICY nog 14 dagen/25% herbevoorradingskosten/ongeopend, SHIPPING_POLICY nog voor 16:00, TERMS_OF_SERVICE art.4 nog EUR 4,25 - nieuwe beleidstekst uit beleid-plakken.md nog niet geplakt",
+   "controle": "geplakte beleidstekst in Instellingen - Beleid opnieuw gecontroleerd via Admin API shopPolicies",
+   "gecontroleerd": "2026-11-15",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2030,16 +2030,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "0 treffers voor een inhoudelijke EN-vertalingscheck op feiten/bedragen/termijnen in SEO.md (opvolger van de SEO-regressiecheck)",
+   "bewijs": "02_Dashboard/Routines/SEO.md Module A noemt /en wel in de URL-lijst en een generieke feiten-tegenspraakcheck, maar bevat geen specifieke wekelijkse check op verouderde EN-vertalingen van tijden/bedragen/termijnen/aantallen",
    "controle": "EN-vertalingscheck opnieuw gecontroleerd in de opvolger-routine SEO.md",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "actiepunt staat nog als niet afgevinkt P3, geen uitgewerkt mini-plan met CSS/Liquid/JS gevonden",
+   "bewijs": "backlogpunt in 02_Dashboard/B2B-en-leveranciers/2026-10-12-b2b-pagina-inspiratie.md staat nog als niet afgevinkt (- [ ] P3), geen uitgewerkt mini-plan met CSS/Liquid/JS gevonden in de vault",
    "controle": "mini-plan voor de zakelijke pagina opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2116,7 +2116,7 @@
   "2026-10-12-blogs-stappenplan#308272a7": {
    "bewijs": "beste-gripsokken-voetbal, welke-gripsokken-bestaan, afgeknipte-voetbalsokken en zijn-gripsokken-toegestaan-door-de-knvb geven alle 4 nog 404",
    "controle": "status van de 4 voetbal-blog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2128,23 +2128,23 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "4-wekentermijn (9-11) blijft verstreken zonder herhaling; geen nieuwe per-blog GSC-meting toegevoegd aan de notitie",
+   "bewijs": "nulmeting in 02_Dashboard/SEO/2026-10-12-blogs-stappenplan.md stamt nog uit 12-10-2026, geen nieuwe per-blog GSC-vergelijking toegevoegd (4-wekentermijn 9-11 nov al verstreken)",
    "controle": "4-wekentermijn opnieuw gecontroleerd op een herhaalde per-blog meting",
-   "gecontroleerd": "2026-11-14",
-   "methode": "gsc",
+   "gecontroleerd": "2026-11-15",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
-   "bewijs": "URL geeft nog HTTP 404 zonder Location-header, dus nog geen 301",
+   "bewijs": "URL geeft nog HTTP 404 zonder redirect, dus nog geen 301 naar /pages/ontdek-jouw-sport",
    "controle": "status van voor-welke-sport-zijn-gripsokken-onmisbaar opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#42cbed6f": {
-   "bewijs": "sitemap telt nog steeds dezelfde 5 artikelen, geen grippatroon/geschiedenis/sportclubs/krachttraining/blaren-artikel erbij",
+   "bewijs": "sitemap_articles_1.xml telt nog dezelfde 5 artikelen (wat-zijn-gripsokken, hoe-zorg-ik-voor-mijn-gripsokken, de-wetenschap-achter-gripsokken, welke-maat-gripsokken, waarom-glijdt-je-voet-in-je-schoen), geen grippatroon/geschiedenis/sportclubs/krachttraining/blaren-artikel erbij",
    "controle": "sitemap_articles opnieuw gecontroleerd op de 5 genoemde onderwerpen",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2177,9 +2177,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a248abc5": {
-   "bewijs": "gripsokken-bij-tennis-en-padel-het-verschil en padelsokken-kiezen geven beide nog 404, geen van beide in de sitemap",
+   "bewijs": "gripsokken-bij-tennis-en-padel-het-verschil en padelsokken-kiezen geven beide nog 404, geen van beide in sitemap_articles_1.xml",
    "controle": "status van de tennis/padel-blog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2214,14 +2214,14 @@
   "2026-10-12-blogs-stappenplan#bcecbd1c": {
    "bewijs": "titles nog HI Grip | Trendblogs en HI Grip | Algemene blogs, H1 op beide nog Ga door waar anderen stoppen zonder zoekwoord of intro",
    "controle": "title en H1 van /blogs/trends en /blogs/hi-grip opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
-   "bewijs": "rugbypagina geeft nog 200, maar sitemap_articles bevat nog geen rugbyblog",
+   "bewijs": "higrip.nl/pages/gripsokken-voor-rugby geeft nu 200 en staat in sitemap_pages_1.xml, maar sitemap_articles_1.xml bevat nog geen rugbyblog",
    "controle": "rugbypagina en rugbyblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2248,9 +2248,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-blogs-stappenplan#f73bcbeb": {
-   "bewijs": "meta bevat nog 3x komt u alles te weten en 3x witte gripsokken, ongewijzigd",
+   "bewijs": "meta description van wat-zijn-gripsokken bevat nog komt u alles te weten en witte gripsokken, ongewijzigd",
    "controle": "feitencheck-termen in de meta van wat-zijn-gripsokken opnieuw geteld",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3615,9 +3615,9 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "0 treffers voor 80+/TBT onder/2,5 s/PageSpeed mobiel als vastgelegd doel in de werkthema-02-notitie, alleen gemeten waarden staan er",
-   "controle": "snelheidsdoel opnieuw gecontroleerd in de werkthema-notitie",
-   "gecontroleerd": "2026-11-14",
+   "bewijs": "02_Dashboard/Website-techniek/2026-11-04-snelheid-vergelijking-andere-webshops.md regel 34 staat nog als [ ]; geen vastgelegde doelsectie (PageSpeed 80+/TBT 300ms/LCP 2,5s) gevonden",
+   "controle": "snelheidsdoel opnieuw gecontroleerd in de werkthema-02-notitie",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },

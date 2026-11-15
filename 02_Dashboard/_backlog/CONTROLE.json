@@ -2065,9 +2065,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "oude URL hoe-verleng-je-de-levensduur-van-je-gripsokken geeft nog 404; doelartikel nog ~475 woorden, 0x levensduur/wasvoorschrift",
+   "bewijs": "oude URL hoe-verleng-je-de-levensduur-van-je-gripsokken geeft nog 404; hoe-zorg-ik-voor-mijn-gripsokken bevat 0x levensduur en 0x wasvoorschrift",
    "controle": "samenvoeging levensduur-blog in verzorgingsblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2079,9 +2079,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "beide URLs (gripsokken-tijdens-pilates-en-yoga, waarom-gripsokken-verplicht-zijn-bij-pilates) geven nog 404, sitemap_articles nog 5 artikelen",
+   "bewijs": "beide URLs (gripsokken-tijdens-pilates-en-yoga, waarom-gripsokken-verplicht-zijn-bij-pilates) geven nog 404, sitemap_articles_1.xml nog 5 artikelen",
    "controle": "samenvoeging pilates/yoga-blog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2121,9 +2121,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "/blogs/hi-grip/hoe-is-hi-grip-ontstaan geeft nog 404, geen 301",
+   "bewijs": "https://www.higrip.nl/blogs/hi-grip/hoe-is-hi-grip-ontstaan geeft nog 404, geen 301 naar /pages/over-ons",
    "controle": "status hoe-is-hi-grip-ontstaan en 301 naar over-ons opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2228,7 +2228,7 @@
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
    "bewijs": "alle 3 URLs (waarom-gripsokken-het-verschil-maken, meer-grip-meer-vertrouwen, hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures) geven nog 404, geen samengevoegd artikel live",
    "controle": "samenvoeging in de blessure-blog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },

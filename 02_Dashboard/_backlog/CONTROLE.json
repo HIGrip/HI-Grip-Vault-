@@ -2086,9 +2086,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1448275a": {
-   "bewijs": "alle 3 tonen nog alleen tekst Timo Heijligers, geen foto, geen bio-regel, geen laatst bijgewerkt-tekst",
+   "bewijs": "wat-zijn-gripsokken, hoe-zorg-ik-voor-mijn-gripsokken en de-wetenschap-achter-gripsokken tonen nog alleen tekst Timo Heijligers, geen foto, geen bio-regel, geen laatst bijgewerkt-tekst",
    "controle": "auteursweergave op de 3 live artikelen opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2151,7 +2151,7 @@
   "2026-10-12-blogs-stappenplan#4b1810bd": {
    "bewijs": "title nog HI Grip | Wat zijn gripsokken? Waarom gripsokken dragen? (56 tekens), merknaam nog vooraan i.p.v. het zoekwoord",
    "controle": "titelopbouw van wat-zijn-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2191,9 +2191,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "beide URLs geven nog 404, geen pilatesartikel in sitemap_articles_1.xml",
+   "bewijs": "gripsokken-tijdens-pilates-en-yoga en waarom-gripsokken-verplicht-zijn-bij-pilates geven beide nog 404, geen pilatesartikel in sitemap_articles_1.xml",
    "controle": "status van de pilatesblog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },

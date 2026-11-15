@@ -43,6 +43,10 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Video Productie Checklist]]
 - [[Video-agent Nulmeting]]
 
+### Visuele Productie/Campagne-ads-2026-11-15
+- [[04_Social_Agent/Visuele Productie/Campagne-ads-2026-11-15/COPY|Campagne-ads-2026-11-15/COPY]]
+- [[04_Social_Agent/Visuele Productie/Campagne-ads-2026-11-15/Ontwerpfilosofie|Campagne-ads-2026-11-15/Ontwerpfilosofie]]
+
 ### Visuele Productie/Losse-ads-2026-11-15
 - [[04_Social_Agent/Visuele Productie/Losse-ads-2026-11-15/COPY|Losse-ads-2026-11-15/COPY]]
 

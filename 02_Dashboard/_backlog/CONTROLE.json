@@ -2536,9 +2536,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "actiepunt nog niet afgevinkt, geen 1.0-featuresectie gevonden, de Bevindingen-secties gaan nog alleen over de 2.0",
-   "controle": "1.0-featuresectie opnieuw gecontroleerd in de prototype-notitie",
-   "gecontroleerd": "2026-11-14",
+   "bewijs": "actiepunt nog onafgevinkt in de bronnotitie, geen dedicated 1.0-specificatiesectie gevonden in 00_Brand_Core/Performance Grip Socks 2.0.md (alleen losse vermeldingen van maten en verpakking)",
+   "controle": "1.0-featuresectie opnieuw gecontroleerd in de prototype-notitie en in Performance Grip Socks 2.0",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2626,16 +2626,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#7129fb4d": {
-   "bewijs": "actiepunt nog niet afgevinkt, alleen de algemene regel over echte productfoto's staat er, geen specifieke achtergrond/sfeer-wel-product-nooit-regel",
+   "bewijs": "geen treffers voor 'AI-beeld', 'AI-generated' of een expliciete achtergrond/sfeer-wel-product-nooit-regel in 00_Brand_Core/; actiepunt staat nog onafgevinkt in de bronnotitie",
    "controle": "spelregel voor AI-beeld in ads opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "actiepunt nog niet afgevinkt, swipe file komt alleen als losse vermelding voor in een andere notitie, geen apart aangelegd document met eigen voorbeelden",
+   "bewijs": "actiepunt nog onafgevinkt in de bronnotitie; swipe file komt alleen als losse vermelding voor in deze notitie en in 2026-11-04-ads-resultaten-verbeteringen.md, geen apart aangelegd document met eigen voorbeelden gevonden",
    "controle": "aanleg van een apart swipe file-document opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3347,9 +3347,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#d279fc2c": {
-   "bewijs": "0 treffers voor capcut, de sectie noemt nog alleen de ffmpeg-motor en Canva",
+   "bewijs": "0 treffers voor 'capcut' in de Editing Stijl Gids Video; sectie Software noemt nog alleen de ffmpeg-motor (EDL-gedreven)",
    "controle": "sectie Software in de Editing Stijl Gids Video opnieuw gecontroleerd op CapCut",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3361,16 +3361,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "0 treffers voor hook-eerst of binnen 2 sec",
+   "bewijs": "0 treffers voor 'hook-eerst' of 'binnen 2 sec' in de Editing Stijl Gids Video",
    "controle": "Editing Stijl Gids Video opnieuw gecontroleerd op de hook-eerst-regel",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "0 treffers voor match-cut",
+   "bewijs": "0 treffers voor 'match-cut' in de Editing Stijl Gids Video",
    "controle": "Editing Stijl Gids Video opnieuw gecontroleerd op match-cut als uitzondering",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3543,9 +3543,9 @@
    "uitkomst": "open"
   },
   "2026-11-03-sportretail-nederland#99ac7353": {
-   "bewijs": "actiepunt staat nog als niet afgevinkt, tabel noemt nog alleen categorieën zonder shortlist met specifieke winkelnamen of adressen",
+   "bewijs": "actiepunt staat nog als onafgevinkt ('- [ ] P2 ·'), tabel noemt nog alleen categorieën/aantallen (DAKA 17, SPORT 2000 48, PadelShop.com 1) zonder shortlist met specifieke winkelnamen of adressen van Absolute Teamsport/Soccer Center",
    "controle": "B2B-shortlist retail opnieuw gecontroleerd in de bronnotitie",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3691,9 +3691,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "beide productpaginas 2.0 zwart en wit tonen nog woordelijk Naadloze afwerking, geen blaren zonder nuance of bronvermelding",
-   "controle": "claim geen blaren op de productpagina 2.0 opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "bewijs": "zwart (performance-gripsokken-2-0-zwart) en wit (performance-gripsokken-2-0-wit) tonen nog woordelijk 'Naadloze afwerking, geen blaren' zonder nuance of bronvermelding",
+   "controle": "claim 'geen blaren' op de productpagina 2.0 opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3876,9 +3876,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "zelfde stale Ads-telling (9 i.p.v. 10 bestanden) aangetroffen, vault_nav.py nog niet opnieuw gedraaid",
+   "bewijs": "zelfde stale telling: Waar staat wat.md noemt nog 'Ads: 9 notities' terwijl de map 10 bestanden telt en de nieuwste twee notities ontbreken in de compacte lijst; vault_nav.py niet opnieuw gedraaid",
    "controle": "navigatie en registratie van de Ads-map opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },

@@ -2156,9 +2156,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "niet te controleren: /blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar geeft nog 404, meta niet leesbaar",
+   "bewijs": "niet te controleren: https://www.higrip.nl/blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar geeft nog 404, meta niet leesbaar",
    "controle": "meta van de voor-welke-sport-blog, vereist de live pagina",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2200,14 +2200,14 @@
   "2026-10-12-blogs-stappenplan#b12308d8": {
    "bewijs": "/blogs/trends linkt nog 4x naar collections/all en 0x naar collections/gripsokken; wat-zijn-gripsokken linkt nog 5x/0x",
    "controle": "blog-CTA-links naar collections/all vs collections/gripsokken opnieuw geteld",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "waarom-hi-grip-gripsokken geeft nog 301 naar wat-zijn-gripsokken (~632 woorden, 0x toekomst), geen samengevoegd artikel; toekomst-sportoutfit geeft nog 404",
+   "bewijs": "waarom-hi-grip-gripsokken geeft nog 301 naar wat-zijn-gripsokken, geen samengevoegd artikel; gripsokken-de-toekomst-van-jouw-sportoutfit geeft nog 404",
    "controle": "samenvoeging wat-zijn-gripsokken/toekomst-sportoutfit in waarom-hi-grip-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },

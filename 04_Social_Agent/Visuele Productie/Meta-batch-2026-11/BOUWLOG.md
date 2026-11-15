@@ -1,7 +1,5 @@
 # Bouwlog Meta-batch november 2026
 
-> Map: [[04 Social Agent — Index]]
-
 Stand: 10 november 2026. Gebouwd volgens `spec.json` (leidend) en `CREATIEVE-RICHTING.md`. Niets gepubliceerd of geüpload, niets buiten deze map gewijzigd, geen AI-beeld van product of personen.
 
 ## Wat er is gebouwd
@@ -52,3 +50,5 @@ Tekst identiek aan spec.json, niets afgesneden of overlappend (controlerapport m
 - **9:16 voetbal_vergelijking**: de fotoband heeft een harde onderrand op y 1482 (spec geeft daar geen fade). Ligt in de onderste interface-zone van Reels.
 - **Rechten en bewoording**: beide klantwoord-ads vragen toestemming van de reviewers vóór livegang (staat in de spec); de review van juni 2025 staat naast beeld van de 2.0.
 - **Kwaliteitscontrole van het quoteteken** tegen het echte merkmateriaal (zie afwijking 7).
+
+> Map: [[04 Social Agent — Index]]

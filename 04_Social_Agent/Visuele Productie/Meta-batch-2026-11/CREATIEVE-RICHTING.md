@@ -1,7 +1,5 @@
 # Creatieve richting Meta-batch november 2026
 
-> Map: [[04 Social Agent — Index]]
-
 Stand: 10 november 2026. Dit is de creatieve richting vóór de productie. De machineleesbare versie staat in `spec.json` in dezelfde map en is bij verschil leidend voor maten en posities. Er worden hier geen eindbeelden gemaakt en er gaat niets live: een mens richt Ads Manager in.
 
 ## De strategische keuze in het kort
@@ -40,7 +38,6 @@ Stand: 10 november 2026. Dit is de creatieve richting vóór de productie. De ma
 - Het product komt altijd uit een echte foto. Geen AI voor product of personen.
 - Geen leesbaar woordmerk van een ander merk in beeld.
 - Alle stijlen, de uitsnede van de sok en de regel voor passend maken staan in `spec.json` onder `tokens`.
-
 
 ## De wereld per sport
 
@@ -481,3 +478,5 @@ Formaat: 9:16, 1080x1920, 22 tot 24 seconden, verticaal gefilmd met een telefoon
 - Akkoord op het grote rode woord in het rugbyprobleem, anders de fallback.
 - De korte bronregel in 9:16 bij de vergelijking.
 - Wie de video inspreekt en in welke rol.
+
+> Map: [[04 Social Agent — Index]]

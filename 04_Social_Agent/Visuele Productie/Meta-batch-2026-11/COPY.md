@@ -1,7 +1,5 @@
 # Meta-advertentieteksten batch november 2026
 
-> Map: [[04 Social Agent — Index]]
-
 Stand: 10 november 2026. Acht concepten (6 live, 2 wissels), elk met twee varianten (A en B). Alleen tekst: er is niets gepland of gepubliceerd. Een mens richt Ads Manager in. Machineleesbare versie: `copy.json` in dezelfde map.
 
 ## Aanbeveling per set
@@ -236,3 +234,5 @@ De Performance Gripsokken 2.0 van HÏ Grip zijn gripsokken met siliconen gripzon
 - **Claims:** de volledige formulering uit Feiten & Actuele Staat (Apps et al. 2022); siliconen gripzones; 3-pack €44,95 (alleen A), gratis verzending.
 - **Rechten:** geen. Het onderzoek ging niet over rugby en niet over een meting van HÏ Grip: rugby staat alleen in een aparte zin bij het product. Bij A valt de snede van Meta midden in de bronvermelding.
 - **Aanbevolen:** B
+
+> Map: [[04 Social Agent — Index]]

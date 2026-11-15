@@ -43,4 +43,15 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Video Productie Checklist]]
 - [[Video-agent Nulmeting]]
 
+### Visuele Productie/Losse-ads-2026-11-15
+- [[04_Social_Agent/Visuele Productie/Losse-ads-2026-11-15/COPY|Losse-ads-2026-11-15/COPY]]
+
+### Visuele Productie/Meta-batch-2026-11
+- [[BOUWLOG]]
+- [[04_Social_Agent/Visuele Productie/Meta-batch-2026-11/COPY|Meta-batch-2026-11/COPY]]
+- [[CREATIEVE-RICHTING]]
+
+### Visuele Productie/Meta-batch-2026-11/video
+- [[UGC-sceptische-sporter]]
+
 > Map: [[Home]]

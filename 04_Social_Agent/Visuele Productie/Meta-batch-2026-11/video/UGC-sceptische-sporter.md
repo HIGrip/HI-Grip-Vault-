@@ -1,7 +1,5 @@
 # UGC-video: de sceptische sporter
 
-> Map: [[04 Social Agent — Index]]
-
 Stand: 10 november 2026. Productiepakket voor het eigen team: wat je regelt, hoe je filmt, wat er in beeld en geluid staat, hoe je monteert en exporteert. Er wordt niets gepubliceerd: de bestanden gaan eerst naar de eigenaar voor akkoord, en een mens richt Ads Manager in.
 
 Bronnen: `spec.json` (blok `ugc_video`) en `CREATIEVE-RICHTING.md` in de map hierboven zijn leidend. Vakkennis uit `Reel & TikTok Format Gids`, `Editing Stijl Gids Video`, `Tekst-overlay Gids`, `Muziek & Licenties` en `Video Productie Checklist`. Claims en klantquotes volgen de gedeelde briefing van de batch.
@@ -400,3 +398,5 @@ Een 4:5-versie maak je door de montage opnieuw te renderen in een tijdlijn van 1
 - Is een 4:5-versie nodig voor de feed?
 - Akkoord op de bewijskaart met de volledige bronregel (leesbaarheid in 4 s).
 - Vergoeding en gebruiksduur (12 maanden als voorstel) vastleggen met de spreker.
+
+> Map: [[04 Social Agent — Index]]

@@ -4224,14 +4224,6 @@
    "methode": "site",
    "uitkomst": "open"
   },
-  "backlog#2f69e0df": {
-   "bewijs": "INP p75 nu uitgesplitst per paginatype: product 88ms, index (homepage) 104ms — beide binnen 'goed' (<200ms), geen slechte score dus geen zware JS-boosdoener aan te wijzen",
-   "controle": "Core Web Vitals-INP per paginatype opgevraagd via Shopify web_performance (PSI blijft 429) voor productpagina en homepage",
-   "gecontroleerd": "2026-11-12",
-   "methode": "ga4",
-   "sinds": "2026-11-12",
-   "uitkomst": "gedaan"
-  },
   "backlog#32925dba": {
    "bewijs": "pagina geeft nog 200 met title INTERN | HÏ Grip, nog geen meta name=robots",
    "controle": "indexeerbaarheid van /blogs/intern opnieuw gecontroleerd",
@@ -4266,14 +4258,6 @@
    "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
-  },
-  "backlog#4eb5ed8e": {
-   "bewijs": "EN-titel is nu Grip Socks Maximum Grip for Every Sport HI Grip en de EN-description noemt padel soccer en tennis, duidelijk anders dan en gericht op de Engelse zoekintentie t.o.v. de NL-titel",
-   "controle": "titel en meta description van de EN productpagina vergeleken met de NL-versie",
-   "gecontroleerd": "2026-11-08",
-   "methode": "site",
-   "sinds": "2026-11-08",
-   "uitkomst": "gedaan"
   },
   "backlog#886d413d": {
    "bewijs": "oude artikel-URL geeft nog HTTP 404 zonder 301, /blogs/trends toont nog 'Nog geen artikelen in deze blog'",

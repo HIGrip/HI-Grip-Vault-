@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 14 november 2026 (actiecontrole)
-Open: 35 · Afgerond: 14 (2 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
+Laatst bijgewerkt: 15 november 2026 (actiecontrole)
+Open: 35 · Afgerond: 16
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -155,14 +155,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Update 12 okt 2026 (verouderd-check):** beide prijsupdates hierboven zijn achterhaald. Live per paar: €14,95 / €11,98 / €10,99 (1-, 3- en 5-pack via het Section Store bundle-block op de 1.0-pagina). De pack-keuze bestaat alleen op de 1.0; de 2.0 heeft geen packs. De actiecontrole keek op de 2.0-pagina, dus haar bewijs zegt hier niets over.
 **Inspanning:** 1-2 uur
 
-### [x] 14. Controleer INP op productpagina en homepage — eigen JS is de waarschijnlijke boosdoener (nieuw 21 sep 2026)
-**Bevestigd:** 12 november 2026 door actiecontrole — INP p75 nu uitgesplitst per paginatype: product 88ms, index (homepage) 104ms — beide binnen 'goed' (<200ms), geen slechte score dus geen zware JS-boosdoener aan te wijzen
-**Waarom:** 2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.
-**Waar:** Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).
-**Wat:** Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps.
-**Effect:** Core Web Vitals wegen mee in mobiele ranking; een slechte INP-score is bovendien vaak voelbaar in de conversie zelf.
-**Inspanning:** 1 uur meten, vervolgacties afhankelijk van bevindingen.
-
 ### [ ] 15. Bekijk het nieuwe Search Console-rapport voor generatieve AI-impressies (nieuw 22 sep 2026)
 **Waarom:** Google heeft het "Prestaties in generatieve AI-functies"-rapport in Search Console op 3 juni 2026 gefaseerd uitgerold en dit is sinds 31 augustus 2026 wereldwijd beschikbaar. Het toont impressies uit AI Overviews, AI Mode en generatieve Discover per pagina, land en datum (nog geen kliks/CTR/zoekterm). Search Console staat al ingericht voor higrip.nl — dit is dus een gratis, direct beschikbare check.
 **Waar:** Google Search Console → higrip.nl-property → nieuw AI-rapport
@@ -204,13 +196,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Waar:** `/blogs/hi-grip/waarom-hi-grip-gripsokken` — titel en meta description via Shopify admin
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 8 oktober 2026 (Search Console & rankings)
-
-### [x] 26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)
-**Bevestigd:** 8 november 2026 door actiecontrole — EN-titel is nu Grip Socks Maximum Grip for Every Sport HI Grip en de EN-description noemt padel soccer en tennis, duidelijk anders dan en gericht op de Engelse zoekintentie t.o.v. de NL-titel
-**Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.
-**Waar:** `/en/products/performance-gripsokken` — titel en meta description via Shopify admin
-**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
-**Gevonden op:** 14 oktober 2026 (Search Console & rankings)
 
 ### [ ] 27. [search-console] Positieval `/pages/gripsokken-voor-voetbal` (NL) uitzoeken — derde week op rij slechter (nieuw 21 okt 2026)
 **Waarom:** Search Console-meting (routine "Search Console & rankings", vijfde run): de gemiddelde positie van deze pagina daalt al drie metingen op rij — 6,4 (7 okt) → 12,2 (14 okt) → 15,7 (21 okt), over steeds vergelijkbaar volume (64-80 vertoningen/7 dagen). Geen kannibalisatie: de zoekterm "gripsokken voetbal" zelf rankt wél nog op de juiste pagina (positie 27,4, maar slechts 14 vertoningen — te weinig voor een zoekterm-conclusie). De daling zit dus in de bredere mix van zoektermen die op deze URL binnenkomen, niet in één specifieke term.

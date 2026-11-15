@@ -6,6 +6,25 @@ Archief van afgevinkte punten uit `ACTIEBACKLOG.md`. De routine verplaatst ze hi
 
 ---
 
+## 15 november 2026
+
+### [x] 14. Controleer INP op productpagina en homepage — eigen JS is de waarschijnlijke boosdoener (nieuw 21 sep 2026)
+**Bevestigd:** 12 november 2026 door actiecontrole — INP p75 nu uitgesplitst per paginatype: product 88ms, index (homepage) 104ms — beide binnen 'goed' (<200ms), geen slechte score dus geen zware JS-boosdoener aan te wijzen
+**Waarom:** 2026-onderzoek naar Core Web Vitals op Shopify-winkels wijst INP (Interaction to Next Paint) aan als het metric waar winkels het vaakst op struikelen — en de oorzaak is bijna altijd eigen of app-JavaScript, niet het thema zelf. Landelijk haalt inmiddels 48% van mobiele sites alle drie de Core Web Vitals (was 44% in 2024), dus de lat ligt hoger dan voorheen.
+**Waar:** Homepage en productpagina, plus eventuele resterende custom secties met eigen JS (bijv. `assets/hi-wk-promo.js` — geverifieerd op 21 sep 2026: de sectie zelf staat niet meer op de homepage, maar controleer of het script-bestand nog wordt geladen).
+**Wat:** Draai PageSpeed Insights of het Core Web Vitals-rapport in Search Console, filter specifiek op INP (niet alleen LCP/CLS). Bij een slechte INP-score: zoek naar zware event-handlers in custom secties of apps.
+**Effect:** Core Web Vitals wegen mee in mobiele ranking; een slechte INP-score is bovendien vaak voelbaar in de conversie zelf.
+**Inspanning:** 1 uur meten, vervolgacties afhankelijk van bevindingen.
+**Stond op:** P2
+
+### [x] 26. [search-console] Titel/meta van `/en/products/performance-gripsokken` herschrijven (nieuw 14 okt 2026)
+**Bevestigd:** 8 november 2026 door actiecontrole — EN-titel is nu Grip Socks Maximum Grip for Every Sport HI Grip en de EN-description noemt padel soccer en tennis, duidelijk anders dan en gericht op de Engelse zoekintentie t.o.v. de NL-titel
+**Waarom:** Search Console-meting (routine "Search Console & rankings", vierde run): de pagina rankt op positie 5,9 (7 dagen, 58 vertoningen) resp. 6,3 (28 dagen, 98 vertoningen), met 0% CTR in beide periodes.
+**Waar:** `/en/products/performance-gripsokken` — titel en meta description via Shopify admin
+**Wat:** SERP-titel en meta description herschrijven voor de Engelse zoekintentie; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
+**Gevonden op:** 14 oktober 2026 (Search Console & rankings)
+**Stond op:** P2
+
 ## 8 november 2026
 
 ### [x] 1. Toon de gratis-verzendingsdrempel op de productpagina (herzien 24 sep 2026)

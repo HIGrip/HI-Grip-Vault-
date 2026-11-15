@@ -3890,9 +3890,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "H1 is al Nederlands (Je winkelwagen is leeg), winkelwagen is leeg waardoor de dubbele prijsregel nog steeds niet te verifiëren is",
+   "bewijs": "H1 nog altijd Nederlands (Je winkelwagen is leeg); winkelwagen op www.higrip.nl/cart staat nog leeg, dubbele prijsregel blijft daardoor niet te verifiëren",
    "controle": "H1 en prijsregel op /cart opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3918,9 +3918,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
-   "bewijs": "niet te controleren: knopstyling is alleen zichtbaar na JS-rendering, curl toont alleen de statische HTML",
+   "bewijs": "niet te controleren: knopstyling (volledig gevuld of niet) is alleen zichtbaar na JS-rendering, curl van www.higrip.nl/cart toont alleen statische HTML",
    "controle": "cookiebanner-knopstyling opnieuw proberen te controleren",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3967,9 +3967,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
-   "bewijs": "02_Dashboard/Ads/ heeft nog 10 bestanden, Waar staat wat.md toont nog Ads: 9 notities, vault_nav.py nog niet opnieuw gedraaid",
+   "bewijs": "navigatieregel aanwezig in de twee nieuwe notities, maar 02_Dashboard/Waar staat wat.md toont nog 'Ads: 9 notities' terwijl de map 10 bestanden telt en de twee nieuwe notities niet in de compacte lijst staan; vault_nav.py niet opnieuw gedraaid",
    "controle": "navigatie en registratie van de Ads-map opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-14",
+   "gecontroleerd": "2026-11-15",
    "methode": "vault",
    "uitkomst": "open"
   },

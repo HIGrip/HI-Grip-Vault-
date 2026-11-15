@@ -23,6 +23,6 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Inspiratie Video-stijlanalyse]]
 
 ### Ontwerpbestanden/Prijslijst-retail-2026
-- [[ontwerpfilosofie]]
+- [[07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026/ontwerpfilosofie|Prijslijst-retail-2026/ontwerpfilosofie]]
 
 > Map: [[Home]]

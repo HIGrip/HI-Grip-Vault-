@@ -100,11 +100,11 @@ FitSockr, Proskary, Voetbalshop en GXOX tonen assortiment en keuzehulp. De histo
 
 De rankende pagina is feitelijk de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL (zie "In het kort"). Optie B betekent dus: die eindpagina beschermen en optimaliseren. De collectie heeft de titel "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens, net te lang) en de kop "Kies je gripsok."
 
-| Optie | Voordeel | Nadeel en risico voor positie 5,7 | Advies |
-|---|---|---|---|
-| A. Collectie als hoofdpagina | Past bij het zoekwoord en bij kiezen tussen modellen | Nu vrijwel onzichtbaar; forceren kan de huidige positie kosten | Eindrichting, gefaseerd opbouwen |
-| B. Rankende eindpagina behouden | Beschermt wat nu werkt | Past minder bij een brede zoekvraag en gaat over één model | Nu starten |
-| C. Homepage of gids | Goed voor merk en uitleg | Homepage staat op 35,9 en een gids past bij een andere zoekintentie | Alleen ondersteunen |
+| Optie                           | Voordeel                                             | Nadeel en risico voor positie 5,7                                   | Advies                           |
+| ------------------------------- | ---------------------------------------------------- | ------------------------------------------------------------------- | -------------------------------- |
+| A. Collectie als hoofdpagina    | Past bij het zoekwoord en bij kiezen tussen modellen | Nu vrijwel onzichtbaar; forceren kan de huidige positie kosten      | Eindrichting, gefaseerd opbouwen |
+| B. Rankende eindpagina behouden | Beschermt wat nu werkt                               | Past minder bij een brede zoekvraag en gaat over één model          | Nu starten                       |
+| C. Homepage of gids             | Goed voor merk en uitleg                             | Homepage staat op 35,9 en een gids past bij een andere zoekintentie | Alleen ondersteunen              |
 
 Geen doorsturing van de verkoopbare productpagina naar de collectie. Eén voorstel voor een mens (besluit hierboven): de keten van twee stappen inkorten tot één en de hoofdversie laten toetsen via URL-inspectie. Nooit tegelijk een webadres, titel en navigatie wijzigen. Overlappende pagina's (`/pages/collection`, `/winkel`, `/collections/all`, `/collections/frontpage`) eerst inspecteren. Details en de inspectiebrief staan in de bijlage.
 

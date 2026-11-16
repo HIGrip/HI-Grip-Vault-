@@ -30,15 +30,15 @@ Drie acties die niets installeren en niets live zetten. Alle uren zijn aannames.
 
 Op het zoekwoord "gripsokken" staan we in Nederland gemiddeld op positie 5,7. Bijna alle vertoningen komen van de oude URL `/products/hi-grip-gripsokken-1`, niet van de collectie `/collections/gripsokken`.
 
-**Geverifieerd door Denzel op 16-11 (live HTTP-controle):** die oude URL is een doorsturing in twee stappen. `/products/hi-grip-gripsokken-1` geeft een 301 naar `/products/hi-grip-gripsokken`, en die geeft een 301 naar `/products/performance-gripsokken` (status 200). Dit staat al sinds 25-9 zo (ook in Feiten & Actuele Staat). De pagina die feitelijk rankt is dus de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL. Search Console toont na 7 weken nog de oude URL: Google heeft de doorsturing nog niet volledig verwerkt.
+**Geverifieerd door Denzel op 16-11 (live HTTP-controle):** die oude URL is een doorsturing in twee stappen. `/products/hi-grip-gripsokken-1` geeft een 301 naar `/products/hi-grip-gripsokken`, en die geeft een 301 naar `/products/performance-gripsokken` (status 200). Dit staat al sinds 25-9 zo (ook in Feiten & Actuele Staat). De pagina die feitelijk rankt is dus de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL. Aanname (niet gecontroleerd): Search Console toont na 7 weken nog de oude URL, dus Google heeft de doorsturing vermoedelijk nog niet volledig verwerkt.
 
 Mijn advies in één zin: **nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De rankende productpagina is `/products/performance-gripsokken`. De verkoopbare productpagina wordt nooit doorgestuurd naar de collectie.
 
-**De zichtbaarheid onder de oude URL is tijdelijk.** Ze wordt pas definitief zodra Google de nieuwe URL als hoofdversie kiest. Dan kan de positie in Search Console meeschuiven. Daarom meten we op queryniveau (de zoekterm gripsokken, alle pagina's samen) en niet alleen per URL. De hoofdversie (canonical) en de huidige metabeschrijving zijn nog niet vastgesteld.
+**Aanname: de zichtbaarheid onder de oude URL is tijdelijk** (afgeleid uit het feit dat Search Console nog de oude URL toont). Zodra Google de nieuwe URL als hoofdversie kiest, kan de positie meeschuiven. Daarom meten we op queryniveau (de zoekterm gripsokken, alle pagina's samen) en niet alleen per URL. De hoofdversie (canonical) en de huidige metabeschrijving zijn nog niet vastgesteld.
 
 Over de kans op de eerste plek ben ik eerlijk. Top 10 halen we al gemiddeld. Top 3 binnen 3 tot 9 maanden is een redelijke inschatting (kans: middel). Stabiel nummer 1 binnen zes maanden is onwaarschijnlijk (kans: laag); binnen 9 tot 18 maanden is het een hypothese (kans: middel). Dit zijn kwalitatieve inschattingen, geen berekende percentages, want we kennen de autoriteit van concurrenten niet.
 
-Het volume is klein: tientallen tot enkele honderden extra klikken per 28 dagen. [Bijlage met briefs, links, tools, bewijs en auditstatus](2026-11-16-seo-plan-gripsokken-bijlage.md). Website-QA toetst nog. E-mail Marketing is overgeslagen (niet relevant); Design krijgt alleen voorstellen voor het uiterlijk.
+Het volume is klein: tientallen tot enkele honderden extra klikken per 28 dagen. [Bijlage met briefs, links, tools, bewijs en auditstatus](2026-11-16-seo-plan-gripsokken-bijlage.md). Onafhankelijke QA: 3 rondes, laatste verdict CORRIGEER op kleine punten; ronde 3 verwerkt, laatste herkeuring volgt. E-mail Marketing is overgeslagen (niet relevant); Design krijgt alleen voorstellen voor het uiterlijk.
 
 ## Route naar #1
 
@@ -67,7 +67,7 @@ Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor 
 - [ ] P2 · Besluit (Lars): wordt de hoofdkop van de collectie "Gripsokken voor padel, tennis, voetbal en rugby"? Voorstel: ja. Zonder besluit blijft "Kies je gripsok." staan.
 - [ ] P2 · Besluit (Lars): mag er een korte keuzehulp (model 1.0 of 2.0) op de collectie komen? Voorstel: ja. Zonder besluit verwijst de collectie niet beter naar het juiste model.
 - [ ] P2 · Besluit (Lars): mag het productraster vroeg op de collectie komen, direct onder de korte uitleg? Voorstel: ja. Zonder besluit blijft de collectie ongewijzigd en kan zij geen tractie opbouwen.
-- [ ] P2 · Besluit (Lars): reserveren we als aanname 40 tot 60 uur voor de eerste drie maanden? Voorstel: ja. Zonder besluit doen we alleen week 1 en 2.
+- [ ] P2 · Besluit (Lars): reserveren we als aanname 40 tot 60 uur voor de eerste drie maanden, daarna 4 tot 6 uur per maand (totaal ongeveer 52 tot 78 uur in zes maanden)? Voorstel: ja. Zonder besluit doen we alleen week 1 en 2.
 - [ ] P2 · Besluit (Lars of Timo): mogen we eerst drie alleen-lezen SEO-vaardigheden (seo-page, seo-technical, seo-schema) laten beoordelen voor import? Voorstel: ja. Zonder besluit blijft het handmatig werk.
 - [ ] P3 · Besluit (Lars): budget tot 50 euro per maand voor één zoekwoord- of positietool? Voorstel: nu nee, heroverwegen na 90 dagen. Zonder besluit werken we met gratis Search Console.
 - [ ] P1 · Besluit (Lars): retourbeleid en verzendbelofte. Alleen `/policies/refund-policy` noemt 14 dagen, ongeopend en 25%; Feiten zegt 30 dagen retour. De verzendpagina noemt verzending voor 16:00, Feiten zegt binnen 1 werkdag. Dit staat al in de [[Compliance To-Do Lijst]]. Het is een besluit voor Lars, geen herstel door deze agent; tot dan zetten we geen retour- of verzendclaim in titels of beschrijvingen.
@@ -141,12 +141,12 @@ De klok start op de goedgekeurde startdatum. Bezoekers uit Google meten we in Go
 
 **Doelen, geen voorspellingen.** Zoekterm gripsokken, Nederland, laatste 28 dagen, alle pagina's samen. Klikken zijn vertoningen maal klikratio. Na 30 dagen is het doel een vloer: het huidige niveau vasthouden.
 
-| Moment | Positie | Vertoningen | Klikratio | Klikken | Doel voor de collectie |
-|---|---|---|---|---|---|
-| Na 30 dagen vanaf de goedgekeurde start | 6,5 of beter | 1.200 of meer | 1,0% of meer | 12 | Webadres en indexering onderzocht |
-| Na 60 dagen | 5,5 of beter | 1.250 of meer | 1,2% of meer | 15 | 50 vertoningen, 1 klik |
-| Na 90 dagen | 4,5 of beter | 1.350 of meer | 1,5% of meer | 20 | 150 vertoningen, 3 klikken |
-| Na 180 dagen | 3,5 of beter | 1.500 of meer | 2,0% of meer | 30 | 400 vertoningen, 10 klikken |
+| Moment                                  | Positie      | Vertoningen   | Klikratio    | Klikken | Doel voor de collectie            |
+| --------------------------------------- | ------------ | ------------- | ------------ | ------- | --------------------------------- |
+| Na 30 dagen vanaf de goedgekeurde start | 6,5 of beter | 1.200 of meer | 1,0% of meer | 12      | Webadres en indexering onderzocht |
+| Na 60 dagen                             | 5,5 of beter | 1.250 of meer | 1,2% of meer | 15      | 50 vertoningen, 1 klik            |
+| Na 90 dagen                             | 4,5 of beter | 1.350 of meer | 1,5% of meer | 20      | 150 vertoningen, 3 klikken        |
+| Na 180 dagen                            | 3,5 of beter | 1.500 of meer | 2,0% of meer | 30      | 400 vertoningen, 10 klikken       |
 
 Beslisregels: gaat de positie in twee vergelijkbare periodes na een wijziging naar slechter dan 7, of vallen de klikken onder 8, dan stoppen we met opschalen en zoeken we de oorzaak. Er is geen automatisch terugdraaien. Is de collectie na 90 dagen nog onzichtbaar maar de productpagina stabiel, dan blijft B en wegen we A opnieuw. Verliezen beide, dan zoeken we eerst de oorzaak. Een meetgat is geen groen licht.
 

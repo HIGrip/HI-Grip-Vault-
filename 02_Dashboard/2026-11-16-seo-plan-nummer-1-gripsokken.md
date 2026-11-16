@@ -32,7 +32,7 @@ Op het zoekwoord "gripsokken" staan we in Nederland gemiddeld op positie 5,7. Bi
 
 **Geverifieerd door Denzel op 16-11 (live HTTP-controle):** die oude URL is een doorsturing in twee stappen. `/products/hi-grip-gripsokken-1` geeft een 301 naar `/products/hi-grip-gripsokken`, en die geeft een 301 naar `/products/performance-gripsokken` (status 200). Dit staat al sinds 25-9 zo (ook in Feiten & Actuele Staat). De pagina die feitelijk rankt is dus de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL. Search Console toont na 7 weken nog de oude URL: Google heeft de doorsturing nog niet volledig verwerkt.
 
-Mijn advies in één zin: **nu die eindpagina beschermen en optimaliseren (optie B); de collectie gefaseerd opbouwen en alleen tot hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De verkoopbare productpagina wordt nooit doorgestuurd naar de collectie.
+Mijn advies in één zin: **nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De rankende productpagina is `/products/performance-gripsokken`. De verkoopbare productpagina wordt nooit doorgestuurd naar de collectie.
 
 **De zichtbaarheid onder de oude URL is tijdelijk.** Ze wordt pas definitief zodra Google de nieuwe URL als hoofdversie kiest. Dan kan de positie in Search Console meeschuiven. Daarom meten we op queryniveau (de zoekterm gripsokken, alle pagina's samen) en niet alleen per URL. De hoofdversie (canonical) en de huidige metabeschrijving zijn nog niet vastgesteld.
 
@@ -59,7 +59,7 @@ Het volume is klein: tientallen tot enkele honderden extra klikken per 28 dagen.
 
 Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor dit plan. Elk besluit is een aparte ja/nee-vraag. **P1** betekent nu, **P2** binnen een maand, **P3** later.
 
-- [ ] P1 · Besluit (Lars): akkoord met de stelling "nu de rankende eindpagina `/products/performance-gripsokken` beschermen en optimaliseren (B), de collectie gefaseerd opbouwen en pas hoofdpagina maken na 90 dagen tractie (A)"? Voorstel: ja. Zonder besluit wijzigen we niets aan beide pagina's en blijft het bij meten.
+- [ ] P1 · Besluit (Lars): akkoord met de stelling "nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont (optie A)"? De rankende productpagina is `/products/performance-gripsokken`. Voorstel: ja. Zonder besluit wijzigen we niets aan beide pagina's en blijft het bij meten.
 - [ ] P1 · Besluit (Lars of Timo): startdatum van de aanpak. Voorstel: de maandag na bevestigd einde van de novemberkernupdate van Google, uiterlijk 1 december. Zonder besluit blijft het bij meten en start de klok van de doelen niet.
 - [ ] P1 · Besluit (Lars of Timo): mag een mens de nieuwe titel en beschrijving voor de productpagina `/products/performance-gripsokken` (huidige titel "Performance Gripsokken - HÏ Grip") in Shopify invoeren, na toets door Website-QA? Voorstel: ja. Zonder besluit blijft de klikratio rond 1%.
 - [ ] P2 · Besluit (Lars of Timo): mag een mens in Shopify de doorsturingsketen inkorten tot één stap (`/products/hi-grip-gripsokken-1` rechtstreeks naar `/products/performance-gripsokken`) en de hoofdversie (canonical) laten toetsen via URL-inspectie in Search Console? Voorstel: ja, pas na de inspectie van week 1 en 2. Niet uitgevoerd door deze agent. Zonder besluit blijft de keten van twee stappen en meten we op queryniveau.
@@ -113,7 +113,7 @@ Geen doorsturing van de verkoopbare productpagina naar de collectie. Eén voorst
 Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. Lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd. Zolang het beleidsbesluit openstaat staat er geen retour- of verzendclaim in.
 
 - **Productpagina `/products/performance-gripsokken`.** Huidige titel: "Performance Gripsokken - HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (134 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
-- **Collectie `/collections/gripsokken`.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (134 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip."
+- **Collectie `/collections/gripsokken`.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (135 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip."
 
 De claim over 95% meer grip op de productpagina moet eerst tegen Feiten worden gehouden. De eerste tien interne links staan in de [bijlage](2026-11-16-seo-plan-gripsokken-bijlage.md).
 

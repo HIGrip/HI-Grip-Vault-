@@ -20,7 +20,7 @@ deadline: ""
 
 ## In het kort
 
-[Hoofdplan](2026-11-16-seo-plan-nummer-1-gripsokken.md), [GSC-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md), [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). Correctieronde 1, concept, niets live. Nulmeting: Search Console, Nederland, 17-10 t/m 13-11-2026 (gecorrigeerd; eerder stond 19-10 t/m 15-11). Onderstaande briefs behouden bruikbaar detail uit het eerdere vaultconcept. Oude scratchsubrapporten zijn niet meer vindbaar en hebben geen werkende link; nieuwe SEO/Copy/Conversie-bijdragen zijn hier samengevat. Feiten en september-Actieplan opnieuw gelezen. Geen onafhankelijke QA afgerond.
+[Hoofdplan](2026-11-16-seo-plan-nummer-1-gripsokken.md), [GSC-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md), [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). Correctieronde 2, concept, niets live. Uitgangspositie: de rankende pagina is feitelijk `/products/performance-gripsokken`, bereikt via de oude URL `/products/hi-grip-gripsokken-1` (301 naar `/products/hi-grip-gripsokken`, 301 naar `/products/performance-gripsokken`, 200; door Denzel geverifieerd op 16-11, live HTTP-controle). Alle doelen voor titels en interne links wijzen daarom naar de nieuwe handle. Nulmeting: Search Console, Nederland, 17-10 t/m 13-11-2026 (gecorrigeerd; eerder stond 19-10 t/m 15-11). Onderstaande briefs behouden bruikbaar detail uit het eerdere vaultconcept. Oude scratchsubrapporten zijn niet meer vindbaar en hebben geen werkende link; nieuwe SEO/Copy/Conversie-bijdragen zijn hier samengevat. Feiten en september-Actieplan opnieuw gelezen. Geen onafhankelijke QA afgerond.
 
 ## Bevindingen
 
@@ -31,12 +31,12 @@ Alle paden onder https://www.higrip.nl. Bestaand, tenzij onzeker gemarkeerd; gee
 | Pagina / URL | Keyword / intentie | H/T/M-richting | Richtminimum / blokken | Links in / uit |
 |---|---|---|---|---|
 | Home `/` | HÏ Grip, performance gripsokken; merk/ingang | H: Performance gripsokken voor sporters behouden. T: HÏ Grip en performance gripsokken. M: sportkeuze en assortiment, geen nieuwe claims | 600 incl. FAQ; korte definitie, producten, sportkeuze, bewijs, FAQ, zakelijke ingang | In: logo/footer. Uit: hub, vier sportpagina's, hoofdgids, zakelijk |
-| Hub `/collections/gripsokken` | gripsokken, grip sokken, gripsokken kopen; kiezen/kopen | H: Gripsokken voor padel, tennis, voetbal en rugby, besluit. T: Gripsokken kopen voor sport, HÏ Grip. M: kies 1.0/2.0, maat en sport | 450; intro 40 tot 60, raster, vergelijking, maattabel, bron, FAQ, zakelijke ingang | In: home, SHOP na akkoord, sport, producten, gidsen. Uit: sport, drie producten, vier gidsen, zakelijk |
+| Hub `/collections/gripsokken` | gripsokken, grip sokken, gripsokken kopen; kiezen/kopen | H: Gripsokken voor padel, tennis, voetbal en rugby, besluit. T: Gripsokken kopen: vergelijk 1.0 en 2.0 \| HÏ Grip (gelijk aan het voorstel in het hoofdplan). M: kies 1.0/2.0, maat en sport, zonder verzend- of retourclaim | 450; intro 40 tot 60, raster, vergelijking, maattabel, bron, FAQ, zakelijke ingang | In: home, SHOP na akkoord, sport, producten, gidsen. Uit: sport, drie producten, vier gidsen, zakelijk |
 | Tennis `/pages/gripsokken-voor-tennis` | gripsokken tennis; sportkoop | H: bestaande Gripsokken voor tennis behouden. T: Gripsokken voor tennis, kopen alleen na besluit. M: keuze en maat voor tennis | 500 incl. FAQ; bestaand koopblok, vergelijking, bron, FAQ; specifieke vraag eerst bevestigen | In: home/hub/hoofdgids. Uit: hub, drie producten, maatgids, hoofdgids, andere sporten waar relevant |
 | Padel `/pages/gripsokken-voor-padel` | gripsokken padel; sportkoop | H: Gripsokken voor padel behouden. T: sport en merk. M: keuzehulp bij schuiven in padelschoen, zonder garantie | 500; koopblok, FAQ over maat/keuze en schuiven, correcte bronlabels | In: home/hub/hoofdgids/probleemgids. Uit: hub, producten, maat- en probleemgids |
 | Voetbal `/pages/gripsokken-voor-voetbal` | gripsokken voetbal; sportkoop | H: Gripsokken voor voetbal behouden. T: sport en merk. M: maat, keuze, draagwijze | 500; koopblok, FAQ draagwijze, vergelijking 1.0/2.0, bron; regels alleen na officiële bron | In: home/hub/gidsen. Uit: hub, producten, maatgids, probleemgids, hoofdgids |
 | Rugby `/pages/gripsokken-voor-rugby` | gripsokken rugby; sportkoop | H: Gripsokken voor rugby behouden. T: sport en merk. M: maat en keuze, geen onbewezen scrumclaim | 500; koopblok, FAQ, vergelijking, bron; sportvraag nog bevestigen | In: home/hub/hoofdgids. Uit: hub, producten, maatgids, hoofdgids |
-| V1 `/products/performance-gripsokken` | Performance Gripsokken 1.0; productkoop | H: Performance Gripsokken behouden. T: Performance Gripsokken 1.0, HÏ Grip. M: eigen maten en keuze, geen collectiebelofte | 250 naast koopblok; voordeel, bevestigde specs, maat, bezwaren/FAQ, echt bewijs, CTA | In: hub/home/sport/maatgids. Uit: hub, 2.0-vergelijking, maatgids. Blijft verkoopbaar, geen redirect |
+| V1 `/products/performance-gripsokken` (rankende eindpagina; huidige titel "Performance Gripsokken - HÏ Grip") | Gripsokken, Performance Gripsokken 1.0; productkoop | H: Performance Gripsokken behouden. T: Gripsokken voor padel, tennis en voetbal \| HÏ Grip (gelijk aan het voorstel in het hoofdplan). M: maten, model 1.0 en 2.0 vergelijken, geen collectiebelofte | 250 naast koopblok; voordeel, bevestigde specs, maat, bezwaren/FAQ, echt bewijs, CTA | In: hub/home/sport/maatgids. Uit: hub, 2.0-vergelijking, maatgids. Blijft verkoopbaar, geen redirect |
 | 2.0 zwart `/products/performance-gripsokken-2-0-zwart` | Performance Gripsokken 2.0 zwart; productkoop | H: Performance Gripsokken 2.0 Zwart. T: model/kleur/merk. M: maat en bevestigde kenmerken, kleur expliciet | 300; koopblok, specs uit productbron, maat, onderhoud, vergelijking V1, bewijs/FAQ | In: hub/home/sport/maatgids. Uit: hub, V1, wit, maatgids en relevante sport |
 | 2.0 wit `/products/performance-gripsokken-2-0-wit` | Performance Gripsokken 2.0 wit; productkoop | H: Performance Gripsokken 2.0 Wit. T: model/kleur/merk. M: maat en bevestigde kenmerken, geen verzonnen kleurvoordelen | 300; koopblok, specs, maat, onderhoud, vergelijking V1, bewijs/FAQ | In: hub/home/sport/maatgids. Uit: hub, V1, zwart, maatgids en relevante sport |
 | Hoofdgids `/blogs/hi-grip/wat-zijn-gripsokken` | wat zijn gripsokken; uitleg | H: Wat zijn gripsokken? T: uitleg en keuzehulp, HÏ Grip. M: werking, verschillen en maat | 1000; directe definitie, werking, gewone sokken vergelijken, bron/beperkingen, sportkeuze, maat, FAQ | In: home/hub/sport/andere gidsen. Uit: hub, sport, maat-, probleem- en wetenschapsgids |
@@ -107,14 +107,14 @@ Bron direct gelezen: september-Actieplan. Onderstaande rijen verwijzen naar best
 | 3 | Intern blog uit publicatie | Onbekend; publicatie en sitemap controleren |
 | 4 | Padelcontent herstellen | Deels: Conversie las 16-11 inhoud/FAQ/vergelijking/productlinks; dekking en mobiel onbekend |
 | 5 | Rugbypagina en navigatie | Deels: inhoud/FAQ/productlinks gelezen 16-11; indexering/navigatie onbekend |
-| 6 | Feiten harmoniseren | Open: Feiten bestaat, collectie noemt nog 3000+; policies wijken af; niet sitebreed opgelost |
+| 6 | Feiten harmoniseren | Open: Feiten bestaat, collectie noemt nog 3000+; refund-policy en shipping-policy wijken af; niet sitebreed opgelost |
 | 7 | EN-sportpagina's/over-ons | Onbekend; vertaling en marktinstellingen uitlezen |
 | 8 | Sportnavigatie en blog-CTA's | SHOP-route historisch /pages/collection; volledige linkcontrole open |
 | 9 | Sportcontent verdiepen | Onbekend; oude 800-woordeneis geen rankingvereiste; H1/H2 behouden |
 | 10 | Product/Organization/BlogPosting-schema | Historische aanwezigheid geen validatie; ieder onderdeel hercontroleren; sameAs niet invullen zonder feiten |
 | 11 | Mobiele performance | Onbekend; meten, niet op oude scriptomvang besluiten |
 | 12 | Mobiel koopblok/ATC | Onbekend; preview op mobiel testen |
-| 13 | V1-positionering | Redirectoptie vervallen binnen deze opdracht: V1 blijft verkoopbaar. SEO zag oude handle eindigen op huidige V1; title productgericht. SC/canonicaltoeschrijving open. Tekstuitlezing 16-11 toonde de oude URL als zelfstandige productpagina (14,99 euro), tegenstrijdig met de browserwaarneming; HTTP-keten onbekend |
+| 13 | V1-positionering | Geverifieerd door Denzel 16-11: oude URL is een doorsturing in twee stappen (301, 301) naar V1 (200), al sinds 25-9. De eerdere tekstuitlezing als zelfstandige productpagina is achterhaald. V1 blijft verkoopbaar en wordt niet doorgestuurd naar de collectie. Canonical, hoofdversie en SC-toeschrijving open; keten inkorten is een besluit voor Lars of Timo |
 | 14 | Collectieroutes/H1/meta | Deels: collectie H1 Kies je gripsok., title Performance Gripsokken voor voetbal, tennis & rugby. Routes/links/backlinks open; geen 301 besloten |
 | 15 | Gezondheids-/gripclaims | Open: V1 absolute glij-/krachtbeloftes en bronprobleem gelezen. Padel/rugby-FAQ begrenst studie, niet sitebreed opgelost |
 | 16 | Blogconsolidatie/hoofdgids | Onbekend; oorspronkelijke redirectmapping en huidig bereik eerst controleren |
@@ -151,7 +151,7 @@ Bron direct gelezen: [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). His
 | Collection versus collectie | Open onderzoek | GSC toont productdominantie, collectie 1 kerntermvertoning; /pages/collection nog geen actuele query-/indexinspectie |
 | Adviesprijsvergelijking | Open besluit | Oud conflict deels achterhaald door Feiten-besluit 29-10; huidige tekst onbekend |
 | Profielpad en onafhankelijke QA | Open besluit | Skills geladen met huidige vault; historische padfout niet herhaald aangetoond; onafhankelijke QA concept pending |
-| Oude product-/http-ketens | Bevinding | Deels: browser eindadres huidige V1 bevestigd; HTTP-redirecttype/tussenstappen/http-keten onbekend, niet historisch overnemen |
+| Oude product-/http-ketens | Bevinding | Deels: keten van oude handle naar V1 geverifieerd door Denzel 16-11 (301, 301, 200). Canonical en meta op de eindpagina, en andere ketens, onbekend; niet historisch overnemen |
 | Self-canonical/hreflang/status/robots/sitemap/headers | Historische steekproef positief | Geen huidige sitebrede goedkeuring; per kernroute hercontroleren |
 | Hoofdgids zonder links, collectie met oude handles | Bevinding | Deels: hoofdgids heeft kooplink /collections/all; geen sportlinks/vergelijking in extractie. Geen-links te absoluut; collectiehandle-inventaris open |
 | Generieke/missende productalts | Bevinding | Volledige beeldinventaris nodig |
@@ -160,11 +160,15 @@ Bron direct gelezen: [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). His
 
 ### Overdracht en brongebruik
 
-Deze bijlage schrijft geen bestaande backlogstatus om. Read-only tekststeekproef wel uitgevoerd; geen schema/code gemaakt, niets geïnstalleerd of live gewijzigd. Producthandles/claimgrenzen uit Feiten. HTTP-keten, canonicals, indexering, volledige altinventaris, mobiel, EN, CWV en rich-resultvalidatie niet uitgevoerd. Oude werkmaplinks verwijderd; bestaande hoofdplan/nulmeting/audit relatief gelinkt.
+Deze bijlage schrijft geen bestaande backlogstatus om. Read-only tekststeekproef wel uitgevoerd; geen schema/code gemaakt, niets geïnstalleerd of live gewijzigd. Producthandles/claimgrenzen uit Feiten. De HTTP-keten van de oude URL is door Denzel geverifieerd (16-11) en hier overgenomen. Canonicals, indexering, volledige altinventaris, mobiel, EN, CWV en rich-resultvalidatie niet uitgevoerd. Oude werkmaplinks verwijderd; bestaande hoofdplan/nulmeting/audit relatief gelinkt.
 
 ### Hoofdpagina-stelling
 
-Eén stelling, identiek in hoofdplan, bijlage en nulmeting: **nu de rankende productpagina beschermen en optimaliseren (B); de collectie gefaseerd opbouwen en alleen tot hoofdpagina maken als zij na 90 dagen vanaf de goedgekeurde start tractie toont (A).** Tractie betekent minstens 150 vertoningen en 3 klikken voor "gripsokken" op de collectie. Zonder tractie blijft B en wordt A herbeoordeeld. Optie C (homepage of gids) ondersteunt alleen. Waar elders in deze bijlage "A als eindrichting" of "hub" staat, geldt deze stelling. Waarneming over de oude URL: SEO zag 16-11 in de browser een eindadres op `/products/performance-gripsokken`; Website las 16-11 via tekstuitlezing de oude URL als zelfstandige productpagina (14,99 euro) terwijl de collectie 14,95 euro toont. Welke is juist, is niet bewezen. Prijsverschil gemeld als signaal, niet gewijzigd.
+Eén stelling, letterlijk gelijk in hoofdplan, bijlage en nulmeting: **nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De rankende productpagina is `/products/performance-gripsokken`. Tractie betekent minstens 150 vertoningen en 3 klikken voor \"gripsokken\" op de collectie, gemeten vanaf de goedgekeurde start. Zonder tractie blijft B en wordt A herbeoordeeld. Optie C (homepage of gids) ondersteunt alleen. Waar elders in deze bijlage "A als eindrichting" of "hub" staat, geldt deze stelling.
+
+Feit over de oude URL (Denzel, 16-11, live HTTP-controle): `/products/hi-grip-gripsokken-1` geeft 301 naar `/products/hi-grip-gripsokken`, die geeft 301 naar `/products/performance-gripsokken` (200). De zichtbaarheid onder de oude URL is tijdelijk en wordt pas definitief zodra Google de nieuwe URL als hoofdversie kiest. Daarbij kan de positie in Search Console meeschuiven; meet daarom op queryniveau (export 1 hieronder), niet alleen per URL.
+
+**Besluit voor Lars of Timo (niet uitgevoerd door deze agent):** een mens kort in Shopify de keten in tot één stap (`/products/hi-grip-gripsokken-1` rechtstreeks naar `/products/performance-gripsokken`) en laat de hoofdversie (canonical) toetsen via URL-inspectie in Search Console. Voorstel: pas na de inspectie van week 1 en 2, en nooit tegelijk met een titelwijziging.
 
 ### Titel- en metavoorstellen
 
@@ -172,32 +176,32 @@ Alleen voorstellen, geen wijziging. Een mens voert ze in Shopify Admin in na akk
 
 | Pagina | Huidige titel | Voorstel titel | Huidige beschrijving | Voorstel beschrijving |
 |---|---|---|---|---|
-| `/products/hi-grip-gripsokken-1` (rankt) | Gripsokken \| Maximale Grip voor Elke Sport \| HÏ Grip | Gripsokken voor padel, tennis en voetbal \| HÏ Grip (50 tekens) | Huidige tekst niet gecontroleerd | Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip. (135 tekens) |
-| `/collections/gripsokken` | Performance Gripsokken voor voetbal, tennis & rugby \| HÏ Grip (61 tekens) | Gripsokken kopen: vergelijk 1.0 en 2.0 \| HÏ Grip (48 tekens) | Huidige tekst niet gecontroleerd | Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Verzonden binnen 1 werkdag. (136 tekens) |
+| `/products/performance-gripsokken` (rankende eindpagina) | Performance Gripsokken - HÏ Grip | Gripsokken voor padel, tennis en voetbal \| HÏ Grip (50 tekens) | Huidige tekst niet gecontroleerd; canonical niet vastgesteld | Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip. (134 tekens) |
+| `/collections/gripsokken` | Performance Gripsokken voor voetbal, tennis & rugby \| HÏ Grip (61 tekens) | Gripsokken kopen: vergelijk 1.0 en 2.0 \| HÏ Grip (48 tekens) | Huidige tekst niet gecontroleerd | Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip. (135 tekens) |
 
-Toelichting: de productpagina houdt "gripsokken" vooraan zodat de bestaande relevantie niet abrupt verdwijnt (beschermfase B). De collectie krijgt een koop- en vergelijkingshoek zodat de twee titels elkaar niet kannibaliseren. Eerst tegen Feiten toetsen: de verzendtermijn (productpagina noemt "voor 22:00 besteld, dezelfde werkdag verzonden", collectie "binnen 1 werkdag") en de claim "95% meer grip" op de productpagina. De verzendgrens verschilt ook (30 euro op het product, 35 euro op de collectie); dat is een signaal voor het beleidsbesluit.
+Toelichting: de productpagina houdt "gripsokken" vooraan zodat de bestaande relevantie niet abrupt verdwijnt (beschermfase B). De collectie krijgt een koop- en vergelijkingshoek zodat de twee titels elkaar niet kannibaliseren. De collectiebeschrijving noemt bewust geen verzending: de zin "Verzonden binnen 1 werkdag" is eruit zolang het beleidsbesluit openstaat (de productpagina noemt "voor 22:00 besteld, dezelfde werkdag verzonden", de collectie "binnen 1 werkdag", de verzendpagina "voor 16:00"). Eerst tegen Feiten toetsen: de claim "95% meer grip" op de productpagina. De verzendgrens verschilt ook (30 euro op het product, 35 euro op de collectie); dat is een signaal voor het beleidsbesluit.
 
 ### Eerste 10 interne links
 
-Alleen toevoegen in het werkthema en na akkoord door een mens live. Bestaande navigatie en het SHOP-menu niet wijzigen. Eerst per bronpagina controleren of de link al bestaat (niet gecontroleerd). Golf 1 in week 3 en 4, golf 2 in maand 2, golf 3 in maand 3, telkens met toets op positie en klikken voordat de volgende golf volgt.
+Alleen toevoegen in het werkthema en na akkoord door een mens live. Bestaande navigatie en het SHOP-menu niet wijzigen. Eerst per bronpagina controleren of de link al bestaat (niet gecontroleerd). Alle linkdoelen naar het product wijzen naar de nieuwe handle `/products/performance-gripsokken`, nooit naar de oude; staat in een bestaande kaartlink nog de oude handle, dan wordt die in het werkthema aangepast. De volgorde in de tabel is de golfvolgorde: golf 1 in week 3 en 4, golf 2 in maand 2, golf 3 in maand 3, telkens met toets op positie en klikken voordat de volgende golf volgt.
 
-| Volgorde | Bronpagina | Ankertekst | Doelpagina | Golf en opmerking |
-|---|---|---|---|---|
-| 1 | `/collections/gripsokken` | Performance Gripsokken 1.0 | `/products/hi-grip-gripsokken-1` | 1; bestaande kaartlink behouden, beschermt de rankende pagina |
-| 2 | `/blogs/hi-grip/welke-maat-gripsokken` | gripsokken in jouw maat | `/products/hi-grip-gripsokken-1` | 1; productintentie behouden |
-| 3 | `/blogs/hi-grip/wat-zijn-gripsokken` | gripsokken kiezen | `/collections/gripsokken` | 1; hoofdgids linkt nu naar /collections/all |
-| 4 | `/` (homepage) | alle gripsokken bekijken | `/collections/gripsokken` | 2; geen navigatiewijziging |
-| 5 | `/pages/gripsokken-voor-padel` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
-| 6 | `/pages/gripsokken-voor-voetbal` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
-| 7 | `/pages/gripsokken-voor-tennis` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
-| 8 | `/pages/gripsokken-voor-rugby` | alle gripsokken vergelijken | `/collections/gripsokken` | 3 |
-| 9 | `/blogs/hi-grip/waarom-hi-grip-gripsokken` | HÏ Grip gripsokken | `/products/hi-grip-gripsokken-1` | 1; heeft eigen zichtbaarheid, eerst inspecteren |
-| 10 | `/blogs/hi-grip/waarom-glijdt-je-voet-in-je-schoen` | gripsokken voor padel | `/pages/gripsokken-voor-padel` | 3 |
+| Volgorde | Golf | Bronpagina | Ankertekst | Doelpagina | Opmerking |
+|---|---|---|---|---|---|
+| 1 | 1 | `/collections/gripsokken` | Performance Gripsokken 1.0 | `/products/performance-gripsokken` | Bestaande kaartlink controleren en zo nodig naar de nieuwe handle; beschermt de rankende pagina |
+| 2 | 1 | `/blogs/hi-grip/welke-maat-gripsokken` | gripsokken in jouw maat | `/products/performance-gripsokken` | Productintentie behouden |
+| 3 | 1 | `/blogs/hi-grip/wat-zijn-gripsokken` | gripsokken kiezen | `/collections/gripsokken` | Hoofdgids linkt nu naar /collections/all |
+| 4 | 1 | `/blogs/hi-grip/waarom-hi-grip-gripsokken` | HÏ Grip gripsokken | `/products/performance-gripsokken` | Heeft eigen zichtbaarheid, eerst inspecteren |
+| 5 | 2 | `/` (homepage) | alle gripsokken bekijken | `/collections/gripsokken` | Geen navigatiewijziging |
+| 6 | 2 | `/pages/gripsokken-voor-padel` | alle gripsokken vergelijken | `/collections/gripsokken` | |
+| 7 | 2 | `/pages/gripsokken-voor-voetbal` | alle gripsokken vergelijken | `/collections/gripsokken` | |
+| 8 | 2 | `/pages/gripsokken-voor-tennis` | alle gripsokken vergelijken | `/collections/gripsokken` | |
+| 9 | 3 | `/pages/gripsokken-voor-rugby` | alle gripsokken vergelijken | `/collections/gripsokken` | |
+| 10 | 3 | `/blogs/hi-grip/waarom-glijdt-je-voet-in-je-schoen` | gripsokken voor padel | `/pages/gripsokken-voor-padel` | |
 
 ### Veilige URL-fasering en on-page oplevercheck
 
-1. SEO vraagt URL-inspectie voor oude handle, tussenhandle, huidige V1, collectie, /pages/collection en twee hoofdgidsroutes. Noteer Google-canonical, user-canonical, indexstatus en laatste crawl. Een extractietool die invoer-URL herhaalt bewijst geen afwezige redirect.
-2. Tot diagnose én eerste vergelijkbare 28-daagse nul-/vergelijkingsmeting geen handle-/redirect-/canonicalwijziging. Die poort geldt voor eventuele URL-migratie/consolidatie, niet voor veilig voorbereiden van collectiecopy op de bestaande URL. V1 krijgt ook daarna geen hubredirect. SC kan achterlopen; geselecteerde canonical kan afwijken: hypotheses, geen diagnose.
+1. SEO vraagt URL-inspectie voor oude handle, tussenhandle (`/products/hi-grip-gripsokken`), eindpagina `/products/performance-gripsokken`, collectie, /pages/collection en twee hoofdgidsroutes. Noteer Google-canonical, user-canonical, indexstatus en laatste crawl. De keten zelf is door Denzel geverifieerd (16-11); wat Google als hoofdversie kiest is nog open.
+2. Tot diagnose én eerste vergelijkbare 28-daagse nul-/vergelijkingsmeting geen handle-/redirect-/canonicalwijziging. Dit geldt ook voor het inkorten van de keten naar één stap: dat is een apart besluit voor Lars of Timo (zie Hoofdpagina-stelling) en gebeurt niet tegelijk met een titelwijziging. Veilig voorbereiden van collectiecopy op de bestaande URL mag wel. V1 krijgt nooit een hubredirect. SC kan achterlopen; geselecteerde canonical kan afwijken: hypotheses, geen diagnose.
 3. Beschermfase B: V1 bronnen/claims herstellen en bescheiden snippetvoorstel, bestaande generieke relevantie niet abrupt verwijderen. Leg exacte oude/nieuwe tekst, datum en scope vast. Mens voert Admin-wijziging uit na akkoord.
 4. A opbouwen op bestaande collectie: korte definitie, bestaand raster vroeg, model-/maatkeuze, sportingangen, zichtbare FAQ en bronnen. Geen collectie verkopen als onafhankelijke test. Design bepaalt eventuele uiterlijkwijziging; Website technische bouw uitsluitend werkthema.
 5. Na preview/QA/menselijke uitrol van copy op bestaande collectie-URL opnieuw één vergelijkbaar venster analyseren. Dit is geen URL-migratie. Interne links daarna in beperkte tranche, productlinks voor productintentie behouden. Geen gegarandeerde rankingoverdracht.
@@ -257,6 +261,30 @@ Partnershiptijd aanname 3 tot 5 uur/maand shortlist/concepten, mens 1 tot 2 uur 
 
 ### Tools en skillimport
 
+Statusoverzicht (volgens Denzels gecontroleerde inventaris; kosten zijn aannames, geen offertes). P1 is nu, P2 binnen een maand, P3 later.
+
+| Tool | Status | Gratis alternatief | Kosten (aanname) | Eigenaar | Prioriteit | Gevolg zonder |
+|---|---|---|---|---|---|---|
+| Search Console | Werkt, alleen lezen bij Denzel | Handmatige export | Geen extra | Denzel | P1 | Basisdata is er |
+| Google Analytics 4 | Werkt niet in de standaard Python-omgeving, wel in de analytics-mcp-omgeving | Handmatig rapport | Geen extra | Denzel of Lars | P1 | Gedrag van bezoekers blijft onbekend |
+| SEO-vaardigheden (plugin) | Niet in het website-profiel | Handmatig, webtools | 0 euro, wel beoordelingstijd | Lars of Timo | P2 | Briefs kunnen zonder |
+| Positie- en zoekwoordtool | Ontbreekt | Search Console, vaste steekproef | Plafond 50 euro per maand | Lars | P3 | Geen dagelijkse positie |
+| Backlinks | Ontbreekt | Search Console Links | 0 euro, later offerte | Lars of Partnership | P2 | Kansenlijst kan wel |
+| Paginasnelheid | Geen sleutel | PageSpeed-website | 0 euro | Lars of SEO | P1 | Niet schatten |
+| Structured data testen | Niet aangetoond | Openbare validators | 0 euro | SEO of Lars | P1 | Geen validatie |
+| Shopify-CLI (opdrachtregelprogramma van Shopify voor themabestanden) | Geïnstalleerd, werking niet getest | Mens in Shopify Admin | Geen | Lars of Timo | P1 | Themawerk blijft handwerk; live zetten doet altijd een mens |
+
+Uitvoeringsplan per periode (uren zijn aannames, in totaal 40 tot 60 uur zonder mensen, Design en Partnership):
+
+| Periode | Werk en eigenaar | Uren | Afhankelijk van |
+|---|---|---|---|
+| Week 1 | Google Analytics-meting herstellen (Denzel of Lars); Search Console-uitsplitsingen en URL-inspectie (SEO, Conversie) | 5 tot 7 | Niets live |
+| Week 2 | Brief collectie en productpagina, linkplan, claims (Copy, SEO) | 6 tot 8 | Besluit over A of B |
+| Week 3 en 4 | Concept collectie en hoofdgids in werkthema (Copy, Website) | 9 tot 13 | Toegang, Design, QA, mens live |
+| Maand 2 | Bestaande gidsen en sportvragen verbeteren (Copy, SEO) | 10 tot 15 | Meting na 60 dagen |
+| Maand 3 | Eén verbetercyclus en besluit na 90 dagen | 10 tot 17 | Geen bulkuitrol |
+| Maand 4 tot 6 | Onderhoud en evaluatie | 4 tot 6 per maand | Evaluatie na 180 dagen |
+
 Inventaris letterlijk uit briefing overgenomen: website heeft higrip-vault en higrip-website-agent plus algemene research/webskills; Claude SEO-plugin niet geïmporteerd. Geen SEO-MCP, wel section OAuth. Geen SERP-, keyword-, backlink-, Moz-, DataForSEO- of PageSpeed-sleutels. Geen profiel-/secretinventaris opnieuw uitgevoerd. Model gpt-6.1-sol tot Claude beschikbaar is volgens Lars; geen modelwijziging hier.
 
 Read-only importsuggestie uit agricidaniel/claude-seo v2.3.1, **elke skill nog te auditen op inhoud/dependencies** volgens het bestaande higrip-denzel third-party-importprotocol. Aanwezig in Claude-cache is niet beschikbaar in Hermes. Onderstaande prioriteiten en kosten zijn voorstel, geen tarief-/licentiecontrole. Alleen benodigde bestanden, geen hooks/agents/MCP's/installers of schrijfrechten stilzwijgend meenemen.
@@ -305,7 +333,7 @@ Mensentijd aanname: beoordeling/publicatie 1 tot 2 uur per goedgekeurde tranche,
 
 ### Bewijs, conflicten en beperkingen
 
-Website verifieerde zelf via web_extract 16-11: [collectie](https://www.higrip.nl/collections/gripsokken), [oude product-URL](https://www.higrip.nl/products/hi-grip-gripsokken-1), [refund-policy](https://www.higrip.nl/policies/refund-policy), [shipping-policy](https://www.higrip.nl/policies/shipping-policy). Product/H1 en beleidsconflicten overeenkomend met specialiststeekproef. SEO's browser-eindadres is diens waarneming, HTTP-keten niet door Website bewezen.
+Website verifieerde zelf via web_extract 16-11: [collectie](https://www.higrip.nl/collections/gripsokken), [oude product-URL](https://www.higrip.nl/products/hi-grip-gripsokken-1), [refund-policy](https://www.higrip.nl/policies/refund-policy), [shipping-policy](https://www.higrip.nl/policies/shipping-policy). Beleidsconflicten overeenkomend met specialiststeekproef. Daarna is de HTTP-keten van de oude URL door Denzel live gecontroleerd (301, 301, 200 op `/products/performance-gripsokken`); de eerdere tekstuitlezing van de oude URL als zelfstandige productpagina (14,99 euro) is daarmee achterhaald en wordt niet gebruikt.
 
 Conversie las home, padel, rugby en hoofdgids. Copy las maat/probleem/wetenschap, V1 en collectie. Dit zijn tekstextracties, geen volledige actuele DOM/checkout-/mobieltests. Copy kreeg op V1 afwijkende prijs-/claimtekst tegenover Website/SEO-extractie; belangrijk bronconflict, geen actuele prijs vaststellen uit die mix. Geen wijziging of oordeel over prijs nodig voor dit plan. Voor nieuwe copy actuele bron/toestand in preview bevestigen. Collectieclaims 'geen wrijving', 'zelfde grippatroon' en voorraad niet blind overnemen; productspecificaties eerst broncheck.
 

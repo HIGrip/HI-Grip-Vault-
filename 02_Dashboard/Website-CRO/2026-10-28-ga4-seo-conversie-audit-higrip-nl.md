@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Eerst meetvalidatie tegen Shopify-orders: 7 aankopen op ongeveer 417 sessies (28 dagen) en 0 aankopen op desktop (220 sessies) zijn te klein en te onzeker voor conclusies. De grootste lekken in de eventfunnel zijn view_item naar add_to_cart (75,7% afval) en de stap naar add_payment_info (50%); 7 van 10 weken zitten onder 100 sessies, dus alles is indicatief."
-gerelateerd: [2026-10-27-seo-audit-higrip-nl, 2026-10-11-concurrentie-seo-per-merk]
+gerelateerd: [2026-10-27-seo-audit-higrip-nl]
 vervangt: []
 bronbestand: "C:\\Users\\lars\\AppData\\Local\\hermes\\cache\\scratch\\ga4_audit_2026_10_28_data.json"
 deadline: ""

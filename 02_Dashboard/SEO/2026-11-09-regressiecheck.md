@@ -1,15 +1,15 @@
 ---
 id: 2026-11-09-regressiecheck
 titel: "SEO-regressiecheck — 9 november 2026"
-kerntitel: "Duplicaten 2-0/2-1 nog open; -a/-b zijn geen noindex meer; verkeer -41,8%, 0 aankopen"
-samenvatting: "Handmatige hermeting op verzoek van Lars (geen routine-run), omdat er sinds 2 november veel veranderd is. Het verkeer zakte van 340 naar 198 sessies (-41,8%), vooral door Paid Social (139 → 26) nu de oktobercampagne is afgelopen; er waren 0 aankopen (vorige week 2). De campagnepagina's /pages/gripsokken-2-0 en -2-1 hebben nog steeds geen meta description en geen robots-meta. De bekende varianten /-a en /-b zijn bovendien niet meer als noindex herkend (geen robots-meta in de HTML) en hebben een canonical naar de andere pagina gekregen. Nieuw: FAQPage staat nu op de homepage, /en/, teamorder en de rugby- en voetbalpagina, maar nog niet op de drie productpagina's."
+kerntitel: "Nieuwste blogartikel verdwenen: directe 404 zonder redirect, blog /blogs/trends nu leeg"
 datum: 2026-11-09
 bron: routine
 routine: "seo-regressiecheck"
 categorie: SEO
 status: nieuw
-prioriteit: P2
-gerelateerd: [2026-11-02-regressiecheck, 2026-11-09-search-console, 2026-10-27-seo-audit-higrip-nl]
+prioriteit: P1
+samenvatting: "Het artikel dat sinds 28 september elke week als 'nieuwste artikel' in de sitemap stond, is verwijderd en geeft nu een directe 404 zonder 301 — de blog /blogs/trends zelf is leeg geworden, terwijl 4 nieuwe artikelen onder /blogs/hi-grip zijn verschenen. Daarnaast telt de homepage nu 13 lege alt-teksten op contentafbeeldingen (grens 12), en meldt GA4 deze week 0 key events ondanks 198 sessies."
+gerelateerd: [2026-11-09-search-console, 2026-11-09-seo-conversietest-run-7]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -20,74 +20,85 @@ deadline: ""
 
 ## In het kort
 
-Dit is een **handmatige hermeting** (op verzoek van Lars, uitgevoerd in een Claude Code-sessie), geen run van de geplande routine. Referentiepunt: [[2026-11-02-regressiecheck]]. Verkeer en funnel komen uit GA4 (2–8 nov vs. 26 okt–1 nov), de paginacontrole is live gedaan op 9 november.
-
-Het verkeer zakte van 340 naar **198 sessies (-41,8%)**. Dat komt vrijwel volledig door Paid Social (139 → 26, -81%) nu de oktobercampagne is afgelopen; de opvolgende ads gaan deze week online (besluit Lars, 9-11). Aankopen: **0** (vorige week 2); GA4 en Shopify melden onafhankelijk van elkaar dezelfde nul. Op de site zelf zijn de twee open punten van vorige week niet opgelost, en bij de varianten `-a`/`-b` is iets veranderd dat bevestiging nodig heeft.
+De verplichte URL-lijst blijft qua samenstelling gelijk aan 2 november (16 URL's), maar het "nieuwste artikel" is gewisseld: `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters` — dat sinds 28 september elke week als nieuwste artikel werd gecontroleerd — is uit de sitemap verdwenen en geeft nu een directe 404 zonder redirect. De hele blog `/blogs/trends` is leeg ("geen artikelen in deze blog"). Tegelijk zijn er 4 nieuwe artikelen onder `/blogs/hi-grip` verschenen (lastmod ~5 nov), met `waarom-glijdt-je-voet-in-je-schoen` als nieuwste. Verder nieuw: de homepage telt 13× `alt=""` op echte contentafbeeldingen (grens is 12, waarschijnlijk een dubbele `<img>/<source>`-render van 6 foto's). Alle 16 URL's zijn verder technisch schoon (200, <1,5s, 1 title/H1, canonicals/hreflang correct, `aggregateRating` blijft schoon). GA4 laat deze week 0 key events zien (vorige week 2) bij een daling naar 198 sessies (−41,8%, door het aflopen van de betaalde social-campagne) — net als op 15 september een week met 0 geregistreerde key events, mogelijk gewoon een week zonder aankopen via dat kanaal, geen directe actie.
 
 ## Kerncijfers
 
-- **198** · GA4-sessies (2–8 nov) · -41,8% t.o.v. vorige week (340)
-- **26** · Paid Social-sessies · -81% (was 139)
-- **0** · aankopen en key events (vorige week 2 aankopen, €105,90)
-- **72 / 8 / 2 / 0** · view_item / add_to_cart / begin_checkout / purchase (vorige week 213 / 16 / 6 / 2)
+- **16** · gecontroleerde URL's
+- **2** · nieuwe afwijkingen (beide P1 regressie)
+- **198** · GA4-sessies (7 dagen) · −41,8% t.o.v. vorige week (340)
+- **0** · GA4 key events (7 dagen) · vorige week 2, omzet €0 (vorige €105,90)
 
 ## Acties
 
-- [ ] P2 · `/pages/gripsokken-2-0` en `/pages/gripsokken-2-1` hebben nog steeds geen meta description en geen robots-meta (indexeerbare, bijna-identieke campagnepagina's) — bevestigen of ze tijdelijk zijn (dan noindex,nofollow) of permanent (dan unieke meta's). Onveranderd t.o.v. 2 november
-- [ ] P2 · `/pages/gripsokken-2-0-a` en `-b`: eerder noindex,nofollow, nu geen robots-meta meer in de HTML en canonical naar de andere pagina (`-a` → `-2-1`, `-b` → `-2-0`). Controleren of de noindex bewust is vervangen door canonicals (kan ook via een HTTP-header lopen, die is hier niet gemeten)
-- [ ] P2 · `/pages/teamorder` mist nog een meta description (onveranderd)
+- [ ] P1 · [regressie] `/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters` geeft nu een directe 404 zonder redirect; de blog `/blogs/trends` zelf is leeg
+- [ ] P1 · [regressie] Homepage: 13× `alt=""` op contentafbeeldingen (grens 12), waarschijnlijk een dubbele render van 6 foto's
 
 ## Bevindingen
 
-Live gecontroleerd via de browser (fetch vanaf higrip.nl; directe curl-verzoeken kregen HTTP 429 van Shopify). 17 URL's, allemaal HTTP 200, elk met precies één `<h1>` en een canonical.
+Referentiepunt: [[2026-11-02-regressiecheck]]. Verplichte URL-lijst dit keer (16): homepage, de drie productpagina's, de collectie `gripsokken`, de vijf `/pages/gripsokken-*`-pagina's (padel, tennis, voetbal, rugby, vergelijken), de twee campagnepagina's `gripsokken-2-0`/`-2-1`, beide blogindexen (`hi-grip`, `trends`), het nieuwste artikel en `/en/`.
 
-| URL | Meta description | Robots-meta | Canonical |
-|---|---|---|---|
-| `/pages/gripsokken-2-0` | **nee** | geen | zelf |
-| `/pages/gripsokken-2-1` | **nee** | geen | zelf |
-| `/pages/gripsokken-2-0-a` | nee | **geen (was noindex)** | → `/pages/gripsokken-2-1` |
-| `/pages/gripsokken-2-0-b` | nee | **geen (was noindex)** | → `/pages/gripsokken-2-0` |
-| `/pages/teamorder` | **nee** | geen | zelf |
-| `/pages/terugbetalingsbeleid` | **nee** (titel "Betalingsbeleid") | geen | zelf |
-| `/collections/all` | **nee** | geen | zelf |
-| `/blogs/intern` | nee | geen (nog publiek, HTTP 200) | zelf |
+### Wijziging t.o.v. 2 nov
 
-Alle andere gecontroleerde pagina's (homepage, `/en/`, collectie gripsokken, de drie productpagina's, vergelijken, rugby, voetbal) hebben een meta description en geen afwijkingen.
+Geen nieuwe of verdwenen pagina's in de verplichte lijst zelf, maar het nieuwste artikel wisselde: zie Afwijkingen. `sitemap_metaobject_pages_1.xml` (altijd al leeg) staat deze week niet meer in de hoofd-`sitemap.xml` — geen actie.
 
-### Vooruitgang
+### Afwijkingen (nieuw)
 
-- **FAQPage-schema** staat nu op de homepage, `/en/`, `/pages/teamorder`, `/pages/gripsokken-voor-rugby` en `/pages/gripsokken-voor-voetbal`. Op de drie productpagina's ontbreekt het nog (bekend backlogpunt blijft open).
-- **`aggregateRating`**: op geen enkele van de 17 gecontroleerde pagina's aanwezig (kritieke check schoon).
+1. **`/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters`: directe 404, geen redirect; `/blogs/trends` is leeg (nieuw, 9 nov 2026)**
+   Deze URL stond minimaal sinds 28 september elke week in de verplichte lijst als "nieuwste artikel" en was dus geïndexeerd. Hij is nu uit `sitemap_articles_1.xml` verwijderd en geeft 404 in plaats van een 301. De blog `/blogs/trends` zelf bestaat nog maar toont "geen artikelen in deze blog. Kom snel terug." Tegelijk zijn er 4 nieuwe/andere artikelen onder `/blogs/hi-grip` verschenen (lastmod ~5 nov): `hoe-zorg-ik-voor-mijn-gripsokken`, `de-wetenschap-achter-gripsokken`, `welke-maat-gripsokken`, `waarom-glijdt-je-voet-in-je-schoen` (nieuwste, als verplichte check gebruikt).
+   **Fix:** of het artikel herstellen/verplaatsen met een 301 vanaf de oude URL naar een vervangend artikel of naar `/blogs/hi-grip`, zodat eventuele backlinks en resterende ranking niet verloren gaan; of, als bewust verwijderd, alsnog een 301 zetten.
+2. **Homepage: 13× `alt=""` op contentafbeeldingen (nieuw, 9 nov 2026)**
+   Het gaat om echte product-/sfeerfoto's (o.a. `hp-sh-sok-10`, `hp-sh-sok-20-zwart`, `IMG_0269`, `IMG_0231`, `IMG_0252`, `IMG_0258`, elk 2×, waarschijnlijk door een dubbele `<img>/<source>`-render), niet om decoratieve iconen.
+   **Fix:** beschrijvende alt-tekst toevoegen (bv. "HÏ Grip gripsokken 2.0 zwart in actie").
 
-### Trend (GA4, sessies per kanaal)
+### Al bekend, blijft open (staat open in de backlog — geen nieuw punt, niet gewijzigd)
 
-| Kanaal | 2–8 nov | 26 okt–1 nov |
+- **`/pages/terugbetalingsbeleid`**: titel is "Betalingsbeleid" (opgelost), meta description ontbreekt nog steeds.
+- **Verzend/retour-tegenspraak**: `/policies/shipping-policy` toont nog "vóór 16:00", `/policies/refund-policy` toont nog "14 dagen" + "25%"; de nieuwe `/pages/verzendbeleid` en `/pages/retourbeleid` zijn zelf al correct (€4,50/€35-drempel, 30 dagen zonder 25%/ongeopend-eis).
+- **`FAQPage`-schema op de drie productpagina's**: ontbreekt nog (Product/ProductGroup/Offer, inclusief correcte `MerchantReturnPolicy` van 30 dagen, is wel compleet).
+- **`/pages/gripsokken-2-0` en `/pages/gripsokken-2-1`**: missen nog steeds meta description én `robots`-meta, blijven bijna-identieke duplicaten. Vooruitgang: beide hebben inmiddels wél Product/ProductGroup/Offer/Brand-schema (was er bij de vorige check nog niet) — geen apart punt, alleen een verbetering.
+- **`/pages/teamorder`**: mist nog steeds meta description.
+- **`/blogs/intern`**: nog steeds publiek, zonder `noindex`.
+- **`/collections/all`** (200, los van de sitemap) en **`/collections/frontpage`** (404): ongewijzigd.
+- **Sporters-claim 3500+**: bevestigd op homepage, EN-homepage, alle sportpagina's, producten, vergelijkpagina en teamorder; alleen `/collections/gripsokken` toont nog "3000+ sporters" (JSON-LD description én zichtbare USP-balk) — bekend sinds 12 okt via [[2026-10-11-seo-audit-weekdelta]], geen apart backlogpunt.
+- **Redirect-keten** `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken`: nog steeds 2 stappen (meer dan de toegestane 1), eindigt op 200.
+
+### Ongewijzigd / schoon
+
+- Alle 16 URL's: HTTP 200, responstijd 0,30–0,90s (ruim onder 1,5s). Precies 1 niet-lege document-`<title>` + 1 niet-lege meta description (behalve de 3 bekende lege-meta-URL's) en precies 1 `<h1>` op elke pagina.
+- Canonical naar www.higrip.nl en hreflang (nl/en/x-default) correct op alle 16.
+- **`aggregateRating`** op geen van de 16 pagina's gevonden — kritieke check blijft schoon.
+- 8 van de 16 URL's volledig schoon: `/pages/gripsokken-voor-padel`, `-tennis`, `-voetbal`, `-rugby`, `/pages/gripsokken-vergelijken`, `/blogs/hi-grip`, `/blogs/hi-grip/waarom-glijdt-je-voet-in-je-schoen`, `/en/`.
+- `shopify theme check`: niet uitgevoerd — thema-map niet beschikbaar in de cloudomgeving.
+
+### Trend
+
+GA4, sessies per kanaal, laatste 7 dagen (2–8 nov) vs. de 7 dagen daarvoor (26 okt–1 nov):
+
+| Kanaal | Deze week | Vorige week |
 |---|---|---|
-| Direct | 84 | 105 |
-| Organic Search | 38 | 42 |
-| Referral | 31 | 6 |
 | Paid Social | 26 | 139 |
-| Organic Social | 5 | 26 |
-| Unassigned | 4 | 1 |
-| Cross-network | 3 | 0 |
-| Organic Shopping | 3 | 3 |
-| Paid Other | 2 | 12 |
-| AI Assistant | 1 | 1 |
-| Email | 1 | 5 |
+| Organic Search | 38 | 42 |
 | **Totaal** | **198** | **340** |
 
-De daling zit dus niet alleen in Paid Social: ook Organic Social (-81%), Direct (-20%) en Paid Other (-83%) zakten, wat past bij het einde van een campagne. Referral steeg van 6 naar 31 sessies (niet uitgezocht welke bron). Landingspagina's: homepage 92 sessies (53% bounce); `/products/performance-gripsokken-2-0-wit` 7 sessies (86% bounce). In de top 15 staan ook testverkeer-URL's (`?preview_theme_id=…`, `slScreenshot=true`).
+De daling (−41,8%) komt grotendeels door het aflopen van de betaalde social-campagne (Paid Social −81%); Organic Search bleef vrijwel stabiel (−9,5%). **Key events: 0 (vorige 2), omzet €0 (vorige €105,90)** — net als bij de allereerste meting (15 sep) een week zonder geregistreerde aankopen via GA4; of dit een echte lege week is of een hernieuwd meetgat, wordt duidelijk uit de Shopify Analytics-cijfers van module C van vandaag.
+
+30 dagen: 716 sessies (vorige periode 439, +63%), key events 5 (vorige 7), omzet €276,65 (vorige €168,92).
+
+AI Assistant-kanaal, laatste 30 dagen: **3 sessies** (vorige meting 2 nov, 30-daags venster: 4), key events 0 — te klein voor een trend.
+
+PageSpeed Insights (mobiel): **niet gemeten** — openbaar PSI-quotum zit nog vast op HTTP 429 voor het project `higrip-analytics`, zelfde beperking als elke eerdere run.
 
 ## Wat niet lukte
 
-- **PageSpeed Insights** en **`shopify theme check`**: niet gemeten (zelfde beperking als eerdere runs; niet opnieuw geprobeerd).
-- **HTTP-headers** (X-Robots-Tag) en de **sitemap**: niet gecontroleerd, dus nieuwe URL's in de sitemap sinds 2 november zijn niet beoordeeld.
-- **Prijzen** op de productpagina's en de redirect-keten `hi-grip-gripsokken-1` zijn niet opnieuw gemeten.
-- GA4 via de koppeling (analytics-mcp); het dashboardscript `google_data.py ga4` draaide niet omdat de GA4-module lokaal ontbreekt.
+- **PageSpeed Insights** (homepage, 1 collectie, 1 product): HTTP 429, quotum op. Nodig: `PageSpeed Insights API` aanzetten in `higrip-analytics` of een `PAGESPEED_API_KEY`.
+- **`shopify theme check`**: thema-map niet beschikbaar in deze cloudomgeving.
+- De Google-pakketten (`google-analytics-data`, `google-api-python-client`, `google-auth`) ontbraken aanvankelijk onder de `python3`-interpreter van deze cloudsessie; opgelost met `python3 -m pip install cffi google-analytics-data google-api-python-client google-auth` — geen vault-wijziging nodig, werkt nu ook voor module B en C.
 
 ## Bronnen
 
-- GA4-property 476032345, `run_report` via analytics-mcp, 9 november 2026.
-- Live site: fetch vanaf higrip.nl in de browser, 9 november 2026.
+- Live site: curl op de 16 verplichte URL's + sitemap-bestanden (NL en EN), 9 november 2026.
+- `python3 02_Dashboard/_tools/google_data.py ga4 --dagen 7` / `--dagen 30`.
+- Feitenbestand: `00_Brand_Core/Feiten & Actuele Staat.md`.
 
 ## Aantekeningen

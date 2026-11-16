@@ -1,12 +1,23 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-10-01
+bijgewerkt: 2026-11-16
 ---
 
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.
+
+---
+
+## 2026-11-16 — Ads-creatives bij Design, Ads schrijft tekst, mens zet online; Design-QA D1–D12 geldend
+
+**Besluit Lars (16-11-2026, mondeling via Denzel):** (1) de Design Agent maakt de advertentiecreatives (beeld, video, layout, Meta Ads); Rol en Output van Design bevatten nu ads. (2) De Ads Agent schrijft de advertentietekst (copy, captions, varianten) en levert die met een brief aan Design; Ads maakt geen beeld- of videocreatives, er is geen Ads-creator. (3) Een mens van Team HÏ Grip doet alleen de laatste stap: online zetten. Overige Ads-grenzen blijven zoals 06-11 (nooit zelf uitvoeren, klaarzetten alleen na akkoord).
+**Tweede besluit Lars (16-11-2026):** Design-QA D1 t/m D12 (sectie 5 van Agents Design Agent) is vastgesteld en geldend; Lars hoeft hierover niets meer te beslissen. Toetser is een onafhankelijk profiel (niet de maker); bij ads gelden aanvullend de meetregels R1–R16 (`07_Design_Agent/Ads-Workflow/`, WORKFLOW §3, `Tools/check.py`) en `Leerregels-Ads-Design.md`; bij D5 een echte review letterlijk met bron, nooit een placeholder. De opdracht om een voorstel op te stellen is daarmee vervallen; er is geen voorstelnotitie gemaakt.
+**Reden:** de ketenronde van 09-11 liep vast op de scheiding Ads-plan, Social-tekst en Design-beeld, en op een ontbrekende onafhankelijke Design-QA. Eén eigenaar voor beeld en één voor tekst maakt de keten korter.
+**Bronnen (door Denzel aangepast; door mij alleen gecontroleerd, niet hersteld):** Agents Design Agent, Agents Ads Agent, Agent Hiërarchie & Structuurschema, user, Toetsregels, Agents Social Agent, Routeringsgids, 09_Ads_Agent (Profiel, Index, Installatieprompt), Stappenplan — Verdere Bouw, 02_Dashboard/Ads/2026-10-30-ads-agent-onderzoek, hermes-profiel ads (SOUL, skill higrip-ads-analyse), skill higrip-denzel (references/ads-statics-keten). Rapporten van 09-11 en archief zijn historisch en bewust niet aangepast.
+**Leerregel:** vastgelegd in [[Leerregels per Agent]] (Voor alle agents): bij een grenswijziging alle kopieën zoeken en gelijktijdig aanpassen.
+**Grenzen:** administratieve vastlegging; geen eigen leerregel, geen sterren, niets afgevinkt, niets in 00_Brand_Core gewijzigd.
 
 ---
 
@@ -26,6 +37,28 @@ bijgewerkt: 2026-10-01
 **Vastgelegd bij Denzel in [[Leerregels per Agent]]:** vóór routering meetcontrole, creatieve vergelijking of aankoopvalidatie expliciteren; domeinagent budget laten afleiden uit benodigde waarnemingen; QA-GOED voor documentinhoud bewijst geen geschiktheid voor een anders bedoeld doel. Administratieve vastlegging van de aangereikte leerregels, geen eigen nieuwe regel.
 **Herziening op gebruikersfeedback, geen extra correctieronde van de oude bron-QA:** maker t_a051a04d (Ads Agent, bij controle in uitvoering); QA t_b5c3fea6 (wacht via parent-link op maker). Resultaatpad blijft `02_Dashboard/Ads/2026-11-06-meta-plan-minimaal-2-weken.md`. Eerdere herkeuring t_791d91d5 gaf GOED uitsluitend voor documentinhoud van de eerdere meetproef; geen goedkeuring voor het herziene doel en geen budgetvrijgave. Maker en QA zijn afzonderlijke kaarten onder hetzelfde profiel `ads`; onafhankelijkheid niet zelfstandig aangetoond. Nieuwe QA-uitkomst en menselijke vrijgave staan nog open. Zie [[Agent Werk & Kwaliteit Overzicht]], sectie Denzel.
 **Grenzen:** geen planinhoud, instructie-/profielbestanden of backlog gewijzigd; niets afgevinkt. Historische registratie hieronder blijft intact.
+
+## 2026-11-16 — Denzel: zelfde "geen vangnet in de backlog"-patroon, nu met echt verlies (content-voorstel 5-10)
+
+**Wat er gebeurde:** op 9 november werd al gesignaleerd dat een deadline-actie uit een weekoverzicht (EK rugby) geen vangnet heeft in de centrale backlog. Deze week bleek diezelfde systeemfout zich te herhalen, maar nu met materieel verlies: het content-voorstel van 5 oktober (5 ideeën) stond alleen als openstaand besluit in de notitie `2026-10-05-weekoverzicht` — die notitie is, bij de bewaartermijn-opruiming (21 dagen voor weekoverzichten), daadwerkelijk verwijderd vóórdat de beoordeling naar `ACTIEBACKLOG.md` werd gemigreerd. Het besluit "content-voorstel week 2026-10-05 beoordelen" is nu nergens meer te vinden: geen notitie, geen backlogpunt, geen `CONTROLE.json`-vermelding. Team HÏ Grip heeft die 5 ideeën nooit beoordeeld en kan dat nu ook niet meer doen.
+
+**Waarom dit opnieuw gebeurde:** de les van 9 november ("How to apply") ging over het *signaleren* van een verstreken deadline, maar loste het onderliggende gat niet op: een besluit dat alleen in een weekoverzicht leeft, overleeft de bewaartermijn-opruiming alleen als het vóór de zondag-cyclus is gemigreerd naar de backlog of een domeinmap (besluit Lars 26-10). Voor de Website-/SEO-gerelateerde P1/P2's gebeurt die migratie al (ze komen terug als consolidatiepunt in `## Acties` van het weekoverzicht zelf, en die regel wordt dan ook los in de backlog teruggevonden — zie bijv. de homepage-herontwerp- en blog-SEO-stappenplan-punten deze week). Voor het content-voorstel is dat nooit gebeurd: de Social Agent-route heeft geen eigen stap die een onbeoordeeld voorstel ouder dan ~3 weken alsnog naar de backlog zet zodra de stapelrem een nieuw voorstel toestaat.
+
+**Les:** "signaleren dat een besluit al weken/weken open staat" is niet voldoende als de drager van dat besluit (de notitie) een bewaartermijn heeft. Elk besluit dat langer dan de kortste bewaartermijn (21 dagen) relevant kan blijven, moet uiterlijk bij het bereiken van die termijn een eigen regel in `ACTIEBACKLOG.md` krijgen — niet pas wanneer het al te laat is.
+
+**How to apply:** de Denzel-weekoverzicht-routine migreert vanaf nu, in stap 6b (Notities die binnenkort verdwijnen), élk nog onbeoordeeld besluit dat alleen in de verdwijnende notitie zelf staat (dus niet al als consolidatiepunt elders) naar een eigen regel in `ACTIEBACKLOG.md`, vóór de eerstvolgende zondag-opruiming — niet alleen de Website-/SEO-type acties zoals nu al gebeurt, maar ook contentvoorstellen en andere hoofdagent-besluiten. Is migreren niet meer mogelijk omdat de notitie al weg is (zoals deze week), dan meldt de routine het verlies expliciet in plaats van het besluit stilzwijgend te laten vallen.
+
+---
+
+## 2026-11-09 — Denzel: tijdsgevoelig P1-besluit (EK rugby) buiten de backlog om weggezakt
+
+**Wat er gebeurde:** het EK rugby U18/U20-plan ([[2026-10-27-ek-rugby-u18-u20-plan]]) kreeg op 2 november een harde deadline van 3 november in het weekoverzicht ("zonder besluit deze week is de editie niet meer haalbaar"). Bij het schrijven van het weekoverzicht van 9 november bleek die deadline ongemerkt verstreken: geen vastgelegd besluit in de notitie zelf, en geen enkel spoor in `02_Dashboard/_backlog/ACTIEBACKLOG.md` (de EK-besluiten stonden nooit als los backlogpunt, alleen als tijdelijke actie in het weekoverzicht van 2-11 — dat weekoverzicht verdwijnt over enkele weken net als elke andere notitie).
+
+**Waarom dit gebeurde:** deadline-acties uit een weekoverzicht leven alleen in dat weekoverzicht (met bewaartermijn), niet in de centrale backlog die geen bewaartermijn heeft. Zodra een week verstrijkt zonder dat iemand het checkbox-item oppakt, is er geen vangnet dat een gemiste, tijdsgevoelige deadline apart markeert — hij verdwijnt gewoon in de stapel "oude, onbeoordeelde besluiten".
+
+**Les:** een actie met een harde deadline (eerder dan de volgende zondag-opruiming) verdient een eigen signaal als die deadline verstrijkt zonder afhandeling — niet alleen opnieuw genoemd worden als "nog open", maar expliciet gemeld als **gemiste deadline**, zodat Team HÏ Grip weet dat het venster (vermoedelijk) gesloten is in plaats van gewoon "laat".
+
+**How to apply:** de Denzel-weekoverzicht-routine checkt voortaan, naast "staat dit besluit nog open", ook of een eerder genoemde `deadline`-datum (frontmatter of tekst) inmiddels verstreken is zonder vastgelegde uitkomst — en meldt dat expliciet in plaats van de deadline stilzwijgend te laten verlopen in de reguliere "nog open"-tekst.
 
 ---
 

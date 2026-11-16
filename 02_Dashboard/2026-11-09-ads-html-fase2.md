@@ -1,4 +1,22 @@
+---
+id: "2026-11-09-ads-html-fase2"
+titel: "Ads HTML fase 2 (Design)"
+kerntitel: "16 ads (4 types x 2 sporten x 2 formaten) gerenderd in HTML"
+datum: "2026-11-09"
+bron: "los"
+routine: ""
+categorie: "Social"
+status: "nieuw"
+prioriteit: "P3"
+samenvatting: "Tweede ronde HTML-ads: 16 PNG's in 4:5 en 9:16 met contactsheets en crop-overzichten. Niets gepubliceerd of geüpload."
+gerelateerd: []
+vervangt: []
+bronbestand: ""
+deadline: ""
+---
 # Ads HTML fase 2 (Design, 09-11-2026)
+
+> Map: [[Waar staat wat]]
 
 Map: `C:\Users\lars\HiGripMedia\_Output\design\ads-html\` (src/ HTML+CSS, img/, out/). Fase 1 staat in `out\v1\`.
 Niets gepubliceerd of geüpload. 16 PNG's: `out\{vb,rb}-{1-situatie,2-klantwoord,3-aanbod,4-vergelijking}_{4x5,9x16}.png`. Contactsheets: `out\contactsheet_4x5.png`, `out\contactsheet_9x16.png`. Crop-overzicht (zonder tekst | met tekst) per ad: `out\review\<naam>_review.png`.

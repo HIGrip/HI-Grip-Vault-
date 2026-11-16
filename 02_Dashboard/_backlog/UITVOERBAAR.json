@@ -2297,6 +2297,12 @@
   "wat_claude_doet": "het onderzoek herhalen zodra de termijn verstreken is",
   "wat_jij_doet": "niets, loopt automatisch mee in een volgende routine"
  },
+ "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
+  "beoordeeld": "2026-11-09",
+  "claude": "ja",
+  "wat_claude_doet": "GA4-purchases en Shopify-orders/omzet over dezelfde periode naast elkaar leggen en het meetgat vastleggen in de vault",
+  "wat_jij_doet": "besluiten nemen op de cijfers met het gemelde meetgat in het achterhoofd"
+ },
  "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
   "beoordeeld": "2026-10-29",
   "claude": "ja",
@@ -2831,6 +2837,18 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Campagne opzetten op 20 euro per dag"
  },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#c3867a0c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptstatics van de soort vergelijking in 4 op 5 en 9 op 16 als ontwerp of beeldmateriaal",
+  "wat_jij_doet": "keurt de statics goed en zet ze klaar in Ads Manager vóór 14 november"
+ },
+ "2026-11-05-meta-opbouw-getoetst-start-6-november#d1a1e69e": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "vervangt op 14 november de zwakste ad-soort in Meta Ads Manager"
+ },
  "2026-11-05-meta-opbouw-getoetst-start-6-november#d5b80c53": {
   "beoordeeld": "2026-11-06",
   "claude": "nee",
@@ -3011,6 +3029,12 @@
   "wat_claude_doet": "Conceptfix voor de Nederlandse kop en de dubbele prijsregel op cart in het testthema",
   "wat_jij_doet": "Controleren en live zetten"
  },
+ "2026-11-05-winkelwagen-section-store-weer-actief#17cdcf53": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bekijkt de eerste toevoeging aan een lege winkelwagen op een echte telefoon"
+ },
  "2026-11-05-winkelwagen-section-store-weer-actief#2377a2b7": {
   "beoordeeld": "2026-11-06",
   "claude": "deels",
@@ -3028,6 +3052,138 @@
   "claude": "deels",
   "wat_claude_doet": "Conceptvoorstel voor de knopstijl volgens de merkregel",
   "wat_jij_doet": "Visueel controleren in de browser en live zetten"
+ },
+ "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "test de kortingscode op een 5-pack in de live cart en past zo nodig de instelling aan"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#017f9a90": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt via Denzel welk plan geldt en wat er feitelijk live staat"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#17d64a8c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "levert op dag 7 en dag 14 de meettotalen en beslist volgens de regels"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#1abc292a": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt doel, KPI, budget, doelgroep, rechten, goedkeuringen en stopprocedure met naam datum en bewijs"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#2c341cf8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "accepteert het winkelwagen-leerdoel en de meetregels"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#51037036": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "keurt de proefscope, databronnen en het mediabudget goed"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "controleert de navigatieregel en registratie van de notitie zelf in de vault",
+  "wat_jij_doet": "laat Operations de domeinbestanden inhoudelijk controleren"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#9689ee0c": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigt fysieke voorraad, verkoopbaarheid en prijs van de 2.0 voor de proefperiode"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#b87a3ca7": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "wijst een uitvoerder en vervanger aan en bevestigt de instellingen in Ads Manager"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "controleert de betaalmethode-instellingen in Shopify-admin en past indien nodig iDEAL aan"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#276d5760": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor de Trustpilot-tekst en link in de lade, met het huidige aantal reviews, in de vault",
+  "wat_jij_doet": "beslist definitief en zet de tekst live"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#483ac362": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor wel of geen expresknoppen in de lade, met voor- en nadelen, in de vault",
+  "wat_jij_doet": "neemt het besluit en past de instelling toe in het werkthema"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#8915f8d8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor de knopvorm pill met 8px hoeken, afgestemd op Brand Core en de site, in de vault",
+  "wat_jij_doet": "beslist en zet de wijziging door in Brand Core en op de site"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#caf07eae": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "loopt de witte lade na op een echte telefoon en besluit of die live gaat"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#de291d3a": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "legt de kostprijs per paar vast, dit is bedrijfsgevoelige informatie"
+ },
+ "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#f2450ec8": {
+  "beoordeeld": "2026-11-08",
+  "claude": "deels",
+  "wat_claude_doet": "na aanmaak van de korting een concept voor de voortgangskaart en het tweede doel op de balk, als code of ontwerp in het testthema",
+  "wat_jij_doet": "maakt de korting zelf aan in Shopify en keurt het kaartontwerp goed"
+ },
+ "2026-11-06-zwart-of-wit-achtergrond-conversie#88c29a32": {
+  "beoordeeld": "2026-11-08",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "kiest zwart of wit op merkgevoel en zet dit zo nodig zelf live om te testen"
+ },
+ "2026-11-09-weekoverzicht#0ebf861a": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "concrete content- en redirectconcepten uit het blog-SEO-stappenplan voorbereiden in de vault",
+  "wat_jij_doet": "besluiten om de uitvoering te starten en de wijzigingen live zetten"
+ },
+ "2026-11-09-weekoverzicht#450c2816": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "de 24 losse besluitpunten over het homepage-herontwerp samenvatten tot een overzicht in de vault",
+  "wat_jij_doet": "de keuzes daadwerkelijk maken"
+ },
+ "2026-11-09-weekoverzicht#be6f9509": {
+  "beoordeeld": "2026-11-10",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigen of er een live Meta-campagne is en zo nodig het geadviseerde plan starten"
+ },
+ "2026-11-09-weekoverzicht#d348b118": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvarianten voor de identiteit van de voordelenpagina opstellen in de vault",
+  "wat_jij_doet": "de keuze over URL, tekst en sportpagina-links definitief maken"
+ },
+ "2026-11-09-weekoverzicht#f1340076": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "conceptinhoud voor de Shopify Knowledge Base opstellen in de vault",
+  "wat_jij_doet": "de inhoud in Shopify Admin onder Sales channels, Agentic plaatsen vóór 15 januari 2027"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
@@ -3064,6 +3220,12 @@
   "claude": "ja",
   "wat_claude_doet": "Conceptteksten voor verzendbeleid/retourbeleid/terugbetalingsbeleid en de oude policies-pagina's, gelijkgetrokken",
   "wat_jij_doet": "Teksten in Instellingen → Policies plakken en publiceren"
+ },
+ "backlog#2e5c5044": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "voorstel voor de ontbrekende alt-teksten opstellen in de vault",
+  "wat_jij_doet": "de alt-teksten invullen bij de afbeeldingen in Shopify"
  },
  "backlog#2f69e0df": {
   "beoordeeld": "2026-09-26",
@@ -3137,6 +3299,12 @@
   "wat_claude_doet": "Bouwt de verzenddrempel-balk (Liquid + CSS + vanilla JS, rekent mee per pack) in het testthema.",
   "wat_jij_doet": "Testthema bekijken en live publiceren."
  },
+ "backlog#886d413d": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "redirectvoorstel en herstelde inhoud voor de blogpagina voorbereiden in de vault",
+  "wat_jij_doet": "de redirect of nieuwe inhoud in Shopify aanmaken en live zetten"
+ },
  "backlog#8a590428": {
   "beoordeeld": "2026-11-03",
   "claude": "ja",
@@ -3160,6 +3328,12 @@
   "claude": "ja",
   "wat_claude_doet": "Controleert of higrip.nl naar de VS verzendt en meldt of het punt geblokkeerd blijft.",
   "wat_jij_doet": "Besluiten of VS-verzending gewenst is."
+ },
+ "backlog#91b14a85": {
+  "beoordeeld": "2026-11-10",
+  "claude": "ja",
+  "wat_claude_doet": "de positieval van de NL-homepage onderzoeken en vastleggen als notitie",
+  "wat_jij_doet": "beoordelen en eventueel vervolgstappen besluiten"
  },
  "backlog#927dc23c": {
   "beoordeeld": "2026-10-22",
@@ -3251,6 +3425,18 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Merchant API aanzetten in Google Cloud, de servicesleutel als lezer toevoegen in Merchant Center en het account-ID invullen in instellingen.json"
  },
+ "backlog#df9a37ab": {
+  "beoordeeld": "2026-11-10",
+  "claude": "ja",
+  "wat_claude_doet": "het waardebalk-blok overzetten naar het huidige testthema en koppelen aan templates/product.json",
+  "wat_jij_doet": "beoordelen en eventueel live zetten"
+ },
+ "backlog#e920d0ff": {
+  "beoordeeld": "2026-11-10",
+  "claude": "deels",
+  "wat_claude_doet": "de terugbetalingsbeleid-conceptteksten controleren en als voorstel vastleggen in de vault",
+  "wat_jij_doet": "eerst de iDEAL-vraag beantwoorden en daarna de tekst in de paginainstellingen plakken"
+ },
  "backlog#eaa40e7c": {
   "beoordeeld": "2026-10-14",
   "claude": "deels",
@@ -3262,6 +3448,12 @@
   "claude": "deels",
   "wat_claude_doet": "Schrijft een prestatiemodel (affiliate-%, codes) en een conceptvoorstel voor creators.",
   "wat_jij_doet": "Creators benaderen en afspraken maken."
+ },
+ "backlog#ee52eb3f": {
+  "beoordeeld": "2026-11-10",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "besluiten of iDEAL als betaalmethode wordt toegevoegd en dit instellen in Shopify Payments"
  },
  "backlog#fac26f6c": {
   "beoordeeld": "2026-09-26",

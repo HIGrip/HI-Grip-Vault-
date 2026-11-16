@@ -32,6 +32,7 @@ beheer: Stafchef (03_Denzel)
 - **QA beoordeelt nooit alleen de samenvatting.** Lees het volledige rapport en reken getallen na. Reden: bij Performance Days stond de rekenfout (regel 100) niet in de summary. Inhoudelijke bundeling gaat naar de domeinhoofdagent (hier Website); de Stafchef beheert alleen documentatie en schrijft geen inhoud. (2026-11-05, Denzel; bewijs: kaarten t_33949113, t_e05f6574, t_a87a674a)
 - **Gebruik bij zoeken in profielmappen het verboden mapwoord niet in de zoekterm.** Een zoekopdracht raakte de verbodsregel voor de privémap en werd geblokkeerd; geen schade, niets gelezen. Zoek op een ander kenmerk (bestandsnaam of onderwerp). (2026-11-05, Denzel)
 - **Een wijziging in de skill higrip-vault moet op vier plekken (content, design, ads, website) plus de eigen kopie van elk ander profiel, en daarna controleer je op identieke checksum.** Voorstel: één centrale bron of een checksumcontrole na elke wijziging. Laatste stand: 4 bestanden identiek, checksum fded5b89. (2026-11-05, Denzel)
+- **Bij een grenswijziging van een agent alle kopieën van de regel zoeken (Agents-bestanden, user.md, Structuurschema, Toetsregels, Routeringsgids, 09_Ads_Agent, hermes-profielen, skills) en gelijktijdig aanpassen.** Reden: anders blijft een oude kopie de agent blokkeren. (2026-11-16, Lars/Denzel, via kaart t_fea3fc38)
 
 ## Denzel en zijn vroegere team
 
@@ -89,6 +90,7 @@ beheer: Stafchef (03_Denzel)
 - **Geen fotokaart met tekst op een donker verloop als standaardoplossing.** Elk sportbeeld krijgt een eigen crop en compositie, of het beeld vervalt. Eigen foto's van wisselende kwaliteit niet gelijkwaardig naast elkaar zetten. (2026-10-14, Lars ★1 op homepage-prototype)
 - **Bij een rekenformule in een rapport staat de formule met invulling en grondslag (incl. btw-basis) erbij, en elk mechanisme (bv. 1+1, verzending) is gemarkeerd als aanname zolang het niet in Shopify is getest.** Reden: Performance Days had een omgekeerde factor (1-i), een onduidelijke ROAS-btw-basis en een ongetest verzendmechaniek als feit; herkeuring GOED na correctie. (2026-11-05, Denzel; bronnen: kaarten t_e05f6574, t_de11ce50)
 - **Een CTA-knop krijgt nooit de accentkleur.** (2026-11-05, Denzel, via kaart t_a87a674a.) Let op: [[Design Elementen]] (CTA-knop, regel 147) staat nog 'gevuld met accentkleur' toe; tegenstrijdigheid gemeld aan Denzel, niet opgelost.
+- **Ontwerp- en workflowbestanden na elke ronde in de vault zetten, zonder computerpaden, met portabiliteitstest.** Reden: wat alleen op de computer van één persoon staat, is onbruikbaar voor een andere laptop, collega of agent (basisregel 16 in [[user]]). Map: 07_Design_Agent/Ads-Workflow/. (2026-11-16, Lars, via kaart t_a38b1b0d)
 
 ### Website Copy Agent
 - **Nooit zelf een cijfer kiezen.** Klantenaantal en ratings moeten overal identiek zijn; twijfel = **[HÏ GRIP]**. (2026-09-17)

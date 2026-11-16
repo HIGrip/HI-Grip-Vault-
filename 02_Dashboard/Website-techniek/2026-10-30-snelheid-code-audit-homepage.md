@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P1
 samenvatting: "De homepage scoort 5 op 10 (PSI: mobiel LCP 5,3 s, desktop TBT 2.750 ms), en de grootste oorzaak is dat de gedeelde homepage-laag met fonts, hp-home.css en hp-home.js 12 keer in de pagina staat: één keer laden haalde in een lokaal experiment 93% van de blokkeertijd op desktop weg. Daarnaast laden carrouselkopieën, video-posters en dubbele beeldbreedtes ruim 1 MB aan beelden die bij binnenkomst niet in beeld staan, en dat is met kleine codewijzigingen te verhelpen."
-gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-13-homepage-redesign, 2026-10-27-seo-audit-higrip-nl, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-11-03-snelheid-werkthema-02]
+gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-27-seo-audit-higrip-nl, 2026-11-03-snelheid-nulmeting-alle-paginas, 2026-11-03-snelheid-werkthema-02]
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -29,10 +29,10 @@ De vraag was een volledige snelheids- en code-audit van de homepage, mobiel en d
 
 ## Acties
 - [x] P1 · hg-deelcode.js en de scripttag uit live (layout/theme.liquid:25) in het werkthema zetten vóór het live zetten, anders verdwijnt de deelcode
-- [ ] P1 · Carrouselkopieën van hp-07 en hp-09 pas aanmaken bij naderen (hp-home.js:1079-1090 en 1360-1368): 721 KB minder vóór scrollen op mobiel
+- [x] P1 · Carrouselkopieën van hp-07 en hp-09 pas aanmaken bij naderen (hp-home.js:1079-1090 en 1360-1368): 721 KB minder vóór scrollen op mobiel
 - [x] P1 · Video-posters in hp-06 als data-poster en pas in load() zetten: 92 KB uit het LCP-venster op mobiel
 - [x] P1 · hp-04 en hp-08 dezelfde breedteladder geven als hp-07 (500,1000,1500,2000): 222 KB dubbele downloads minder op mobiel
-- [ ] P2 · Productmodules en de quick-add-modal niet laden op de homepage (scripts.liquid:155-264, theme.liquid:196-198), daarna drawers en zoeken testen
+- [x] P2 · Productmodules en de quick-add-modal niet laden op de homepage (scripts.liquid:155-264, theme.liquid:196-198), daarna drawers en zoeken testen
 - [ ] P2 · Op de homepage testen welk winkelwagen-drawer opent (Horizon of Section Store) en het andere laten vallen
 - [ ] P2 · Besluit: app-embeds T Lab Translation (beide switchers uit) en Microsoft Clarity (geen output) uitzetten in de thema-editor
 - [ ] P2 · sizes corrigeren in hp-09 (160px en 120px), hp-10 kaart 1 en 2 (46vw) en hp-02 (38vw op desktop)

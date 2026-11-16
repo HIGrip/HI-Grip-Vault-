@@ -1,98 +1,121 @@
 ---
 id: 2026-11-09-search-console
-titel: "Search Console & rankings — week 46 (handmatige hermeting)"
-kerntitel: "Klikken -17%, vertoningen +6%; homepage zakt naar positie 14, 'gripsokken' naar 5,4"
-samenvatting: "Handmatige hermeting op verzoek van Lars (geen routine-run). Over 31 okt–6 nov daalden de klikken met 17,1% (34 tegen 41) bij 5,9% meer vertoningen (1.307); CTR zakte van 3,32% naar 2,60% en de gemiddelde positie bleef gelijk (8,2 tegen 7,9). Over 28 dagen is het beeld gemengd: klikken -13,0% maar vertoningen +21,7%. De kernterm 'gripsokken' verbetert (positie 7,1 → 5,4, 323 vertoningen), terwijl de homepage terugvalt (positie 9,1 → 14,0, nog wel 18 klikken) en 'grip socks'/'grip sokken' verder wegzakken. De EN-homepage haalt nu 3,49% CTR (was 1,88%)."
+titel: "Search Console & rankings — week 46"
+kerntitel: "Klikken en CTR dalen ondanks meer vertoningen; voetbalpagina-herstel zet derde week door"
 datum: 2026-11-09
 bron: routine
 routine: "search-console"
 categorie: SEO
 status: nieuw
 prioriteit: P2
-gerelateerd: [2026-11-02-search-console, 2026-11-09-regressiecheck]
+samenvatting: "Beide vensters laten een lichte terugval zien ondanks meer vertoningen: 7 dagen klikken −17,1%, CTR 2,6% (was 3,32%), positie 0,3 slechter; 28 dagen klikken −13,0%, CTR 2,9% (was 4,06%). Positief: /pages/gripsokken-voor-voetbal (NL) herstelt voor de derde meting op rij (11,6 → 9,7); nieuw gevonden: de NL-homepage verliest flink positie (9,1 → 14,0 over 7 dagen, 8,4 → 11,5 over 28 dagen) ondanks een sterke CTR."
+gerelateerd: [2026-11-02-search-console, 2026-11-09-regressiecheck, 2026-11-09-seo-conversietest-run-7, 2026-11-10-growth-radar-seo-content, 2026-11-16-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""
 ---
-# Search Console & rankings — week 46 (handmatige hermeting)
+# Search Console & rankings — week 46
 
 > Map: [[Waar staat wat]]
 
 ## In het kort
 
-Dit is een **handmatige hermeting** (op verzoek van Lars, via `google_data.py gsc` in een Claude Code-sessie), geen run van de geplande routine. Referentiepunt: [[2026-11-02-search-console]].
-
-**Let op de periode:** Search Console loopt 2–3 dagen achter, dus het meest recente 7-dagenvenster is **31 okt–6 nov** (vorige: 24–30 okt). Dat valt niet samen met de GA4-week van 2–8 nov en ook niet met het venster van de vorige meting (26 okt–1 nov); vergelijk de cijfers daarom niet één-op-één met die notitie. Het 28-dagenvenster (10 okt–6 nov) wordt vergeleken met 12 sep–9 okt.
+Zevende meting van deze routine. Beide vensters draaien dit keer de verbetering van vorige week deels terug: 7 dagen klikken 34 (was 41, −17,1%), vertoningen 1.307 (+5,9%), CTR 2,6% (was 3,32%), positie 8,2 (was 7,9, 0,3 slechter); 28 dagen klikken 140 (was 161, −13,0%), vertoningen 4.822 (+21,7%), CTR 2,9% (was 4,06%), positie 8,3 (was 8,1, 0,2 slechter). Meer vertoningen maar minder klikken en een lagere CTR wijst op SERP-weergave (titel/meta of concurrentie), niet op een rankingprobleem — de gemiddelde positie bleef vrijwel gelijk. Nieuw gevonden: de NL-homepage (`/`) verliest duidelijk positie, zowel over 7 dagen (9,1 → 14,0) als over 28 dagen (8,4 → 11,5), ondanks een nog steeds sterke CTR (7,41%/11,38%) — nieuw backlogpunt. Positief: `/pages/gripsokken-voor-voetbal` (NL) verbetert voor de derde meting op rij (15,7 → 11,6 → 9,7), bestaand backlogpunt 27 bijgewerkt. Geen kannibalisatie op de kernzoektermen deze week.
 
 ## Kerncijfers
 
-- **34** · Klikken (7 dagen) · -17,1% (was 41)
-- **1.307** · Vertoningen (7 dagen) · +5,9%
-- **2,60%** · CTR (7 dagen) · was 3,32%
-- **8,2** · Gemiddelde positie (7 dagen) · was 7,9 (iets slechter)
-- **140** · Klikken (28 dagen) · -13,0% (was 161), bij 4.822 vertoningen (+21,7%) en CTR 2,90% (was 4,06%)
+- **34** · Klikken (7 dagen) · −17,1%
+- **140** · Klikken (28 dagen) · −13,0%
+- **8,2** · Gemiddelde positie (7 dagen) · 0,3 slechter
+- **2,6%** · CTR (7 dagen) · −0,72 pt
 
 ## Acties
 
-- [ ] P2 · Homepage `/`: positie 9,1 → 14,0 (28 dagen: 8,4 → 11,5) bij 243 vertoningen; blijven volgen of dit een blijvende terugval is (de homepage levert nog wel de meeste klikken, vooral via merkzoekopdrachten)
-- [ ] P2 · `/en/products/performance-gripsokken`: 163 vertoningen op positie 8,7 maar 0 klikken (28 dagen: 399 vertoningen, 3 klikken, CTR 0,75%) — titel/meta herschrijven; staat al als open EN-backlogpunt, nu met bijgewerkte cijfers
+- [ ] P2 · [search-console] Positieval NL-homepage (`/`) uitzoeken: 9,1 → 14,0 (7d) en 8,4 → 11,5 (28d), ondanks CTR 7,41%/11,38%
+- [ ] P2 · Zie bijgewerkt backlogpunt 27: derde week op rij herstel `/pages/gripsokken-voor-voetbal` (NL), nog niet afsluiten
 
 ## Bevindingen
+
+Referentiepunt: [[2026-11-02-search-console]]. Meting 7 tegen 7 dagen (2–8 nov vs. 26 okt–1 nov) plus 28 dagen, via `python3 02_Dashboard/_tools/google_data.py gsc --dagen 7 --top 50` en `--dagen 28 --top 50` (Google-pakketten in de cloudomgeving opnieuw geïnstalleerd onder de juiste `python3`-interpreter, zie "Wat niet lukte").
 
 ### Totaal
 
 | Venster | Klikken | Vertoningen | CTR | Positie |
 |---|---|---|---|---|
-| 7 dagen (31 okt–6 nov) | 34 | 1.307 | 2,60% | 8,2 |
-| 7 dagen (24–30 okt) | 41 | 1.234 | 3,32% | 7,9 |
-| 28 dagen (10 okt–6 nov) | 140 | 4.822 | 2,90% | 8,3 |
-| 28 dagen (12 sep–9 okt) | 161 | 3.963 | 4,06% | 8,1 |
+| 7 dagen (nu) | 34 | 1.307 | 2,6% | 8,2 |
+| 7 dagen (vorige) | 41 | 1.234 | 3,32% | 7,9 |
+| 28 dagen (nu) | 140 | 4.822 | 2,9% | 8,3 |
+| 28 dagen (vorige) | 161 | 3.963 | 4,06% | 8,1 |
 
-### Zoektermen (7 dagen)
+### Zoektermen (top, 7 dagen)
 
-| Zoekterm | Positie nu | Vorige | Vertoningen | Klikken |
-|---|---|---|---|---|
-| gripsokken | 5,4 | 7,1 | 323 | 4 |
-| grip socks | 10,2 | 8,8 | 151 | 0 |
-| grip sokken | 14,1 | 12,0 | 41 | 0 |
-| hi grip (merk) | 4,6 | 5,2 | 24 | 13 |
-| higrip (merk) | 1,5 | 1,5 | 11 | 6 |
-| gripsokken kopen | geen data deze week | — | — | — |
-| gripsokken voetbal / padel / tennis / rugby, antislip sokken | geen vertoningen in de top 50 | — | — | — |
+- **gripsokken**: positie 5,4 (was 7,1, +1,7 — beter), 323 vertoningen, 4 klikken, CTR 1,24%. 96,6% van de vertoningen (312/323) loopt nog op de oude URL `/products/hi-grip-gripsokken-1` (vergelijkbaar met vorige weken).
+- **grip socks**: positie 10,2 (was 8,8, −1,4 — slechter), 151 vertoningen, 0 klikken, verdeeld over 4 URL's (`/en` 65, `/en/products/performance-gripsokken` 65, `/` 22, `/en/collections/gripsokken` 1) — kannibalisatie blijft, bekend (backlogpunt 18).
+- **grip sokken** (NL): positie 14,1 (was 12,0, −2,1 — slechter), 41 vertoningen, 0 klikken, verdeeld over 4 URL's (`/` 32, `/products/hi-grip-gripsokken-1` 6, `/collections/all` 5, 1 EN-productpagina) — zelfde patroon, bekend.
+- **gripsokken voetbal**, **gripsokken kopen**, **gripsokken padel/tennis/rugby**, **antislip sokken**: geen of te weinig vertoningen in de top 50 deze week (max 7 vertoningen bij de losse term "grip voetbal") — zelfde structurele beperking als elke voorgaande run.
+- Nieuwe lange staart (grip voetbal, grip socks padel, grip sport, grip sportsokken, grippy socks, grip bal voetbal, e.d.): 1–7 vertoningen, te weinig voor conclusies.
 
-"gripsokken" rankt nu volledig verdeeld over één oude URL: 312 van 323 vertoningen lopen via `/products/hi-grip-gripsokken-1` (positie 5,3), de rest via de homepage (positie 19,6). Nieuwe termen (grip voetbal, grip socks padel, grip sportsokken, grippy socks) hebben elk 3–7 vertoningen: ruis, geen actie.
+### Kernkeywords (verplichte lijst)
 
-### Pagina's (7 dagen)
+| Zoekterm | Positie (7d) | Vorige | Vertoningen (7d) |
+|---|---|---|---|
+| gripsokken | 5,4 | 7,1 | 323 |
+| grip socks | 10,2 | 8,8 | 151 |
+| grip sokken | 14,1 | 12,0 | 41 |
+| gripsokken kopen | te weinig | — | ≤6 |
+| gripsokken voetbal | te weinig | — | ≤1 |
+| gripsokken padel/tennis/rugby, antislip sokken | geen data | — | — |
+
+### Pagina's (top, 7 dagen op klikken)
 
 | Pagina | Klikken | Vertoningen | CTR | Positie | Vorige positie |
 |---|---|---|---|---|---|
-| `/products/hi-grip-gripsokken-1` | 5 | 473 | 1,06% | 5,8 | 7,2 |
 | `/` | 18 | 243 | 7,41% | 14,0 | 9,1 |
 | `/en` | 6 | 172 | 3,49% | 8,2 | 7,8 |
+| `/products/hi-grip-gripsokken-1` | 5 | 473 | 1,06% | 5,8 | 7,2 |
+| `/collections/all` | 1 | 45 | 2,22% | 7,0 | 4,8 |
+| `/collections/gripsokken` | 1 | 34 | 2,94% | 7,6 | 12,1 |
+| `/pages/over-ons` | 1 | 22 | 4,55% | 1,1 | 2,1 |
+| `/blogs/hi-grip/de-wetenschap-achter-gripsokken` | 1 | 21 | 4,76% | 5,4 | 6,3 |
 | `/en/products/performance-gripsokken` | 0 | 163 | 0% | 8,7 | 9,1 |
 | `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 0 | 63 | 0% | 3,7 | 3,9 |
-| `/collections/all` | 1 | 45 | 2,22% | 7,0 | 4,8 |
-| `/products/performance-gripsokken-2-0-zwart` | 0 | 39 | 0% | 6,2 | 4,5 |
-| `/blogs/hi-grip/waarom-hi-grip-gripsokken` | 0 | 37 | 0% | 7,9 | 6,3 |
-| `/collections/gripsokken` | 1 | 34 | 2,94% | 7,6 | 12,1 |
-| `/pages/ontdek-jouw-sport` | 0 | 26 | 0% | 3,5 | 4,1 |
 | `/pages/gripsokken-voor-voetbal` | 0 | 18 | 0% | 9,7 | 11,6 |
+
+De NL-homepage is deze week de grootste daler qua positie (9,1 → 14,0) ondanks een nog steeds hoge CTR — nieuw backlogpunt. `/collections/gripsokken` verbetert sterk (12,1 → 7,6), mogelijk een vroeg signaal van de RUN 2-SEO-titels (zie Doorwerking).
+
+### Kansen
+
+- **Striking distance (positie 5–20, ≥20 vertoningen):** gripsokken (5,4/323), grip socks (10,2/151), grip sokken (14,1/41) — alle drie al bekende kannibalisatie- of oude-URL-punten, geen nieuwe actie.
+- **Lage CTR:** `/en/products/performance-gripsokken` (163 vert., 0% CTR, bekend punt 26 — ondanks de op 8 nov bevestigde titel/meta-herschrijving nog geen klikeffect zichtbaar, 1 dag oud) en `/pages/gripsokken-voor-voetbal` (18 vert., 0% CTR, maar te weinig volume deze week voor een conclusie).
+
+### Kannibalisatie
+
+Geen gevonden op de kernzoektermen: "gripsokken voetbal" rankt alleen via de eigen sportpagina (1 vertoning), "gripsokken kopen" te weinig volume voor een conclusie. "grip socks" en "grip sokken" blijven over meerdere URL's verdeeld (bekend, backlogpunt 18, geen nieuw punt).
+
+### Indexering
+
+Geen tool voor het indexeringsrapport of het generatieve-AI-impressierapport beschikbaar in deze koppeling — zelfde beperking als elke voorgaande meting.
 
 ### Doorwerking
 
-- **EN-homepage `/en`** (nieuw punt van 2 november, 1,88% CTR): CTR is nu 3,49% bij 172 vertoningen. Beter, maar het volume is ook lager (266 → 172); nog niet als opgelost te beschouwen.
-- **`/pages/gripsokken-voor-voetbal`** (backlogpunt 27): positie verbetert verder (11,6 → 9,7), maar met slechts 18 vertoningen; bevestigt het herstel van vorige week voorzichtig, blijft open.
-- **SEO-titels 2.0/collectie gripsokken** (live sinds 11 okt, evaluatievenster ±8 nov): `/collections/gripsokken` verbetert (12,1 → 7,6, 34 vertoningen); `/products/performance-gripsokken-2-0-zwart` zakt iets (4,5 → 6,2, 39 vertoningen, 0 klikken). Volumes zijn te klein voor een oordeel.
-- Blog "waarom HÏ Grip gripsokken" en `/pages/ontdek-jouw-sport`: CTR blijft 0% (37 resp. 26 vertoningen), ongewijzigd open.
+- **Backlogpunt 27** (positieval `/pages/gripsokken-voor-voetbal`, NL): derde meting op rij herstel — 15,7 → 11,6 → 9,7, op afnemend maar consistent volume (18 vertoningen/7d, minder dan voorheen). Backlogpunt bijgewerkt met deze datum; nog niet afsluiten (dat doet alleen de actiecontrole), wel het patroon nu stevig genoeg om als "herstel bevestigd" te labelen.
+- **Punt 26** (`/en/products/performance-gripsokken`): titel/meta op 8 november door de actiecontrole bevestigd als live. Nog maar 1 dag oud, dus nog geen CTR-effect te zien (0% deze week) — te vroeg om te beoordelen.
+- **Punten 19, 21, 22** (resp. `/pages/ontdek-jouw-sport`, blog "hoe zorg ik", blog "waarom HÏ Grip"): niet in de top-15-paginalijst van deze week beland, dus geen directe nieuwe cijfers; geen aanleiding om de bestaande status te wijzigen.
+- **Nieuw backlogpunt `/en` (EN-homepage, 2 nov):** CTR verbetert verder naar 3,49% (was 1,88% op 2 nov) op positie 8,2 — duidelijke verbetering, nog niet afsluiten.
+- **SEO-titels 2.0/collectie gripsokken** (live sinds 11 okt, nu ±4 weken oud): `/collections/gripsokken` verbetert deze week sterk in positie (12,1 → 7,6); evaluatievenster is bereikt — volledige KPI-evaluatie (inclusief Shopify Analytics-conversie) hoort bij module C van deze run.
+
+### Te weinig data
+
+"gripsokken kopen", "gripsokken voetbal", "gripsokken padel/tennis/rugby" en "antislip sokken": allemaal onder de drempel voor een conclusie deze week.
 
 ## Wat niet lukte
 
-- Geen indexeringsrapport en geen generatieve-AI-impressierapport in de koppeling (zelfde beperking als eerdere metingen).
-- Alleen het 7-dagenvenster met top 50 en een 28-dagenvenster met top 10 zijn opgehaald; de uitsplitsing per land of apparaat is niet bekeken.
+- De Google-pakketten (`google-analytics-data`, `google-api-python-client`, `google-auth`) ontbraken bij de start van deze run in de cloudomgeving onder de `python3`-interpreter die `google_data.py` gebruikt (gaf `ModuleNotFoundError`); opgelost met `python3 -m pip install cffi google-analytics-data google-api-python-client google-auth`, verder geen vault-wijziging nodig.
+- Geen tool voor het indexeringsrapport (geïndexeerd vs. niet-geïndexeerd met redenen) of het generatieve-AI-impressierapport (AI Overviews/AI Mode) — zelfde structurele beperking als elke voorgaande meting.
 
 ## Bronnen
 
-- `python google_data.py gsc --dagen 7 --top 50` en `--dagen 28 --top 10`, 9 november 2026 (data t/m 6 november).
-- [[2026-11-09-regressiecheck]] voor GA4 en de live paginacontrole.
+- `python3 02_Dashboard/_tools/google_data.py gsc --dagen 7 --top 50` en `--dagen 28 --top 50`, 9 november 2026.
+- Backlog: `02_Dashboard/_backlog/ACTIEBACKLOG.md`, punten 18, 19, 21, 22, 26, 27, en het EN-homepage-punt van 2 nov.
 
 ## Aantekeningen

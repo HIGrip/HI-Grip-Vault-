@@ -9,7 +9,7 @@ categorie: B2B
 status: nieuw
 prioriteit: P2
 samenvatting: "De beste retailingang voor HÏ Grip zijn DAKA (17 winkels, voetbal, hockey en tennis onder één dak) en de 48 zelfstandige SPORT 2000-ondernemers met eigen teamsport- en voetbalwinkels, aangevuld met PadelShop.com voor padel. Decathlon, Sports World en de sneakerketens zijn groot maar draaien op huismerken, prijs of mode en passen niet bij een premium grip sock."
-gerelateerd: [2026-10-12-b2b-pagina-inspiratie]
+gerelateerd: []
 vervangt: []
 bronbestand: "https://claude.ai/artifact/LQgAjPpA9T5kGiZqk66EDt"
 deadline: ""

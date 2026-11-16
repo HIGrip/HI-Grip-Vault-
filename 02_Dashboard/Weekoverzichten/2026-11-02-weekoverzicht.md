@@ -6,10 +6,10 @@ datum: 2026-11-02
 bron: routine
 routine: "denzel-week"
 categorie: Merk
-status: nieuw
+status: verwerkt
 prioriteit: P1
 samenvatting: "De nul-bestellingen-week van vorige week is niet doorgezet: deze week staan er weer 4 bestellingen/€195,80 (Shopify), bij een forse verkeerspiek (340 vs. 80 sessies) die vooral door de net gestarte Meta-advertentiecampagne komt. Voor higrip.nl betekent dit dat de Ads-funnel nu het belangrijkste aandachtspunt is (een losse test liet 288 klikken zonder verkoop zien, met mobiele snelheid als grootste lek), terwijl drie P1-besluiten voor het EK rugby U18/U20 nog vóór 3 november bij Lars moeten landen."
-gerelateerd: [2026-10-27-seo-audit-higrip-nl, 2026-10-28-ga4-seo-conversie-audit-higrip-nl, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-ads-agent-onderzoek, 2026-10-30-snelheid-code-audit-homepage, 2026-11-01-leveranciersscan-gripsokken, 2026-11-02-growth-radar-seo-technisch, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-27-ek-rugby-u18-u20-plan, 2026-10-27-review-rugby-ads-trustpilot]
+gerelateerd: [2026-10-27-seo-audit-higrip-nl, 2026-10-28-ga4-seo-conversie-audit-higrip-nl, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-30-ads-agent-onderzoek, 2026-10-30-snelheid-code-audit-homepage, 2026-11-01-leveranciersscan-gripsokken, 2026-11-02-growth-radar-seo-technisch, 2026-10-30-e-mailpopup-wat-converteert-het-best, 2026-10-25-ab-test-ads-features-vs-beste, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-10-27-ek-rugby-u18-u20-plan, 2026-10-27-review-rugby-ads-trustpilot, 2026-11-09-weekoverzicht]
 vervangt: []
 bronbestand: ""
 deadline: "2026-11-03"

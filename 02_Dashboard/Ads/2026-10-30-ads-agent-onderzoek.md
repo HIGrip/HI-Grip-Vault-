@@ -9,7 +9,7 @@ categorie: "Techniek"
 status: "nieuw"
 prioriteit: "P2"
 samenvatting: "Ads is een adviserende, read-only hoofdagent: analyse, voorstellen, plannen en checklists voor mensen. Geen content, geen uitvoering. Accounts, meting en kosten zijn nog niet gevalideerd; alles vereist menselijke vrijgave."
-gerelateerd: [2026-10-03-dashboard-agenda-mail-ads-leveranciers]
+gerelateerd: []
 vervangt: []
 bronbestand: ""
 deadline: ""
@@ -54,7 +54,7 @@ Nog te beslissen via Denzel (Lars óf Timo): structuur, tools/rechten, proefvrij
 | B. Tijdelijke read-only workflow | Website levert meetanalyse; Operations bundelt aangeleverde delen; bestaande domein-QA toetst. Eerst handmatige geaggregeerde exports | Versnipperd eigenaarschap; Denzel wijst één proefverantwoordelijke aan binnen bestaand mandaat. Geen stilzwijgende rolverbreding |
 | C. Niet starten | Alleen documentatie bewaren | Geen leerresultaat; passend zolang toestemming, data of meting ontbreekt |
 
-**Scope Social en Design in optie B (aangescherpt na Meta-QA):** Social levert uitsluitend organische prestatie-inzichten en een overzicht van hergebruikbaar materiaal (met rechtencontrole voor betaald gebruik). Social en Design maken in deze proef géén advertentiecontent of creatives; dat valt buiten fasen 0–2 en vraagt een afzonderlijk besluit van Lars. Dit is een voorstel van Operations, nog te bevestigen.
+**Scope Social en Design in optie B (aangescherpt na Meta-QA):** Social levert uitsluitend organische prestatie-inzichten en een overzicht van hergebruikbaar materiaal (met rechtencontrole voor betaald gebruik). Social en Design maken in deze proef géén advertentiecontent of creatives; dat valt buiten fasen 0–2 en vraagt een afzonderlijk besluit van Lars. [Achterhaald 16-11-2026: Lars besloot dat Design de advertentiecreatives maakt en Ads de advertentietekst schrijft; een mens zet alleen online.] Dit is een voorstel van Operations, nog te bevestigen.
 
 Keuzeproef: registreer werkelijke uren, overdrachten, correcties en terugkerende analyses; geen fictieve besparing of succesdrempel. Lars/Timo bepalen vooraf welke belasting een aparte tak rechtvaardigt.
 

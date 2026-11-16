@@ -1,4 +1,22 @@
+---
+id: "2026-11-09-ads-html-fase1"
+titel: "Ads HTML fase 1: 4 ads in 4:5"
+kerntitel: "Design bouwde 4 ads in 4:5 met HTML/CSS en headless Chrome"
+datum: "2026-11-09"
+bron: "los"
+routine: ""
+categorie: "Social"
+status: "nieuw"
+prioriteit: "P3"
+samenvatting: "Eerste ronde HTML/CSS-ads (taak t_144c0efb): vier ads in 4:5 met vast tokenstelsel. Niets gepubliceerd of geüpload."
+gerelateerd: []
+vervangt: []
+bronbestand: ""
+deadline: ""
+---
 # Ads HTML fase 1: 4 ads in 4:5 (09-11-2026)
+
+> Map: [[Waar staat wat]]
 
 Taak t_144c0efb. Map: `C:\Users\lars\HiGripMedia\_Output\design\ads-html\` (src = HTML/CSS/JS, img, fonts, out = PNG 1080x1350, `out\_contactsheet.png`). Niets gepubliceerd of geüpload.
 

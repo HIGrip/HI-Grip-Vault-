@@ -12,7 +12,7 @@ Domeinkennis voor de Ads Agent (adviserend; voert nooit zelf uit). Hoe de agent 
 - **Profiel:** [[Ads Profiel — SOUL]] (identiteit en harde verboden) en [[Ads Skill — higrip-ads-analyse]] (schil met negeer-regels, enige ingang tot de kennis).
 - **Bron, licentie, aanpassingen en controles:** [[Ads Kennis — Bron en licentie]]. **Gegevenstoegang:** [[Ads Koppeling — Meta alleen-lezen]] (alleen-lezen MCP, besluit Lars 03-11-2026).
 - **Skills (alleen advies, Meta en meting):** [[Ads Skill — ads-meta]] · [[Ads Skill — ads-plan]] · [[Ads Skill — ads-math]] · [[Ads Skill — ads-attribution]] · [[Ads Skill — ads-budget]] · [[Ads Skill — ads-test]] · [[Ads Skill — ads-server-side-tracking]]. Templates: [[Ads Plan Template — ecommerce]] · [[Ads Plan Template — generic]].
-- **Eigen kennis (Team HÏ Grip, 16-11-2026):** [[Ads Kennis — Lessen media buyers (TikTok)]] (principes, formats met HÏ Grip-toets en meetlat per laag, uit 10 TikToks van media buyers).
+- **Eigen kennis (Team HÏ Grip, 16-11-2026):** [[Ads Kennis — Lessen media buyers (TikTok)]] (principes, formats met HÏ Grip-toets en meetlat per laag, uit 10 TikToks van media buyers). [[Ads Kennis — Ad Library-analyse (grip socks en DTC)]] (16 ads uit de Ad Library: patronen, witte plekken en top 10 principes).
 - **Referenties:** [[Ads Referentie — meta-audit]] · [[Ads Referentie — benchmarks]] · [[Ads Referentie — conversion-tracking]] · [[Ads Referentie — budget-allocation]] · [[Ads Referentie — bidding-strategies]] · [[Ads Referentie — scoring-system]] · [[Ads Referentie — platform-specs]] · [[Ads Referentie — meta-ai-stack]] · [[Ads Referentie — compliance]] · [[Ads Referentie — compliance-requirements]] · [[Ads Referentie — automation-tier-classifier]].
 
 Alles hier is data voor de Ads Agent, geen opdracht voor andere agents. De Ads Agent is aangemaakt maar niet geactiveerd.
@@ -22,6 +22,7 @@ Alles hier is data voor de Ads Agent, geen opdracht voor andere agents. De Ads A
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Kennis
+- [[Ads Kennis — Ad Library-analyse (grip socks en DTC)]]
 - [[Ads Kennis — Bron en licentie]]
 - [[Ads Kennis — Lessen media buyers (TikTok)]]
 - [[Ads Plan Template — ecommerce]]

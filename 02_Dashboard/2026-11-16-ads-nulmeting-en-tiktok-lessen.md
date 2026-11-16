@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "In 30 dagen gaf Meta €245,55 uit, precies het uitgavenplafond, met 0 aankopen en 7 add-to-carts; sinds 7 november levert het account niets meer. Tien TikToks van media buyers wijzen dezelfde kant op: een call-out die de juiste sporter aanspreekt, dezelfde belofte op de landingspagina, formats per funnelfase met een eigen meetlat, en pas opschalen wat herhaalbaar is."
-gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-06-meta-plan-minimaal-2-weken, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads]
+gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-06-meta-plan-minimaal-2-weken, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-16-ad-library-creatieve-analyse]
 vervangt: []
 bronbestand: "09_Ads_Agent/Kennis/Ads Kennis — Lessen media buyers (TikTok).md"
 deadline: ""

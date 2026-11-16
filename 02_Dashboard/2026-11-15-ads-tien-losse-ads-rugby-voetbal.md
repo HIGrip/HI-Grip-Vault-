@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "In Fitness & Sports scoren Post-it (20% hit rate), Sign, Letter, Statistic en feature-callouts het best, en offer-first banners krijgen overall het meeste budget; daarom zijn vijf van die formats elk in een voetbal- en rugbyversie ontworpen, los van de batch van het ads-plan. De tien ads staan in Claude Design en als PNG in de vault, met A/B-teksten; vóór livegang is toestemming voor de shootfoto's nodig en een besluit over wanneer ze getest worden."
-gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-10-27-review-rugby-ads-trustpilot]
+gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-10-27-review-rugby-ads-trustpilot, 2026-11-16-ads-funnel-trio-rugby-voetbal, 2026-11-16-ads-reverse-engineering-bewezen-elementen]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Losse-ads-2026-11-15"
 deadline: ""

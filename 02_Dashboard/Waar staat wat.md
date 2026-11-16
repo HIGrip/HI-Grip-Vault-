@@ -37,11 +37,11 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 Zoek gericht; lees dit niet in zijn geheel.
 
-- Ads: 12 notities
+- Ads: 10 notities
 - B2B-en-leveranciers: 3 notities
 - Growth-radar: 15 notities
 - Onderzoek: 1 notities
-- Onderzoeksnotities (datum-id in de bestandsnaam): 25 notities
+- Onderzoeksnotities (datum-id in de bestandsnaam): 30 notities
 - Routines: 15 notities
 - SEO: 13 notities
 - Social-en-video: 1 notities

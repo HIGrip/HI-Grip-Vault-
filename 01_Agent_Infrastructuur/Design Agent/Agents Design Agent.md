@@ -58,6 +58,7 @@ Eén stijl, per kanaal vertaald. Per regel alleen de bron:
 - Iconen: [[Iconografie]]
 - Audio en overige merksymbolen: [[Brand Symbolen]]
 - Social: sjablonen en formaten in [[Template Overzicht]]; video- en overlaystijl in [[Editing Stijl Gids Video]] en [[Tekst-overlay Gids]]; per platform in [[Platform Richtlijnen]]
+- Social feedbeelden (4:5): bewezen formats met maten, design-elementen (echte foto, één focuspunt, typografie die het idee uitvoert, accent op wat betekenis draagt), anti-patronen en de beoordelingskaart in [[Ads Bouwboek — bewezen elementen]] (16-11-2026, uit de teambeoordeling van 22 eigen ads)
 - Site: grenzen in sectie 2; werkwijze in Agents Design Agent; thema-/paginawerk in [[Technische Procedures]]
 - E-mail: bestaande ontwerpregels en signature-elementen in [[E-mail Design & Stijlgids]]
 - Merkverhaal (driehoek comfort, vertrouwen, innovatie): [[Brand Identity Overview]]
@@ -77,7 +78,7 @@ Eén stijl, per kanaal vertaald. Per regel alleen de bron:
 
 ## 5. QA
 
-De lijst D1 t/m D12 is **vastgesteld en geldend** (besluit Lars, 16-11-2026: er hoeft hierover niets meer beslist te worden). Afgeleid van de Website-QA (W1, W2, W5, W9, W13) en Content-QA (C8, C10, C12, C13). Toetsing door een onafhankelijk profiel, niet door de maker (zelfde profiel als maker is geen onafhankelijke QA). Bij ads: aanvullend de meetregels R1–R16 (`07_Design_Agent/Ads-Workflow/`, WORKFLOW §3 en `Tools/check.py`) en `Leerregels-Ads-Design.md`; bij D5 geldt: een echte review letterlijk met bron, nooit een placeholder. Verdict, ernst en correctieronden volgens [[Toetsregels]].
+De lijst D1 t/m D13 is **vastgesteld en geldend** (besluit Lars, 16-11-2026: er hoeft hierover niets meer beslist te worden). Afgeleid van de Website-QA (W1, W2, W5, W9, W13) en Content-QA (C8, C10, C12, C13). Toetsing door een onafhankelijk profiel, niet door de maker (zelfde profiel als maker is geen onafhankelijke QA). Bij ads: aanvullend de meetregels R1–R16 (`07_Design_Agent/Ads-Workflow/`, WORKFLOW §3 en `Tools/check.py`) en `Leerregels-Ads-Design.md`; bij D5 geldt: een echte review letterlijk met bron, nooit een placeholder. Verdict, ernst en correctieronden volgens [[Toetsregels]].
 
 | # | Controle | Bewijs | Bij falen |
 |---|---|---|---|
@@ -92,13 +93,14 @@ De lijst D1 t/m D12 is **vastgesteld en geldend** (besluit Lars, 16-11-2026: er 
 | D9 | **Mobiel en leesbaarheid.** Gecontroleerd op klein scherm; contrast voldoende; alt-teksten aanwezig | Mobiele weergave of screenshot, contrastwaarde, lijst alt-teksten | Belangrijk |
 | D10 | **E-mail** (alleen e-mail), volgens [[E-mail Design & Stijlgids]]. Skelet gekozen vóór kleur; accent niet als vulvlak van een sectie; max. 1 rasterelement; dark-mode-hooks gecombineerd in één regel | Skelet-keuze genoteerd; CSS-regel; ontwerp naast de gids | Belangrijk |
 | D11 | **Werkthema en preview** (alleen site). Gewerkt in het werkthema, niet het live thema; preview rendert zonder fouten | Uitvoer `theme list`, `theme check`, preview-URL | Blokkerend |
+| D13 | **Feedbeeld (4:5).** Beoordelingskaart en poort uit [[Ads Bouwboek — bewezen elementen]]; bewezen format gekozen vóór het beeld | Score per punt naast het beeld; poortpunten ja/nee | Belangrijk; poortpunt blokkerend |
 | D12 | **Gaten.** Wat is niet bekeken (andere kanalen, donkere/lichte variant, e-mailclients) | Lijst | Klein |
 
 Verdict met bewijs en altijd "niet gecontroleerd"; correctierondes en escalatie volgens [[Toetsregels]] (maximaal 2 correctierondes).
 
 ## 6. Open punten
 
-- Design-QA bestaat en toetst volgens D1 t/m D12 (vastgesteld door Lars, 16-11-2026), via een kanbankaart; de toetser is een ander profiel dan de maker.
+- Design-QA bestaat en toetst volgens D1 t/m D13 (vastgesteld door Lars, 16-11-2026), via een kanbankaart; de toetser is een ander profiel dan de maker.
 - Autonomie en het blok 'Voorstel, nog te bevestigen' in sectie 1 zijn afgeleid; bevestigen.
 - Map 07_Design_Agent/Referenties is nieuw en nog leeg; beheerder en inhoud bepalen.
 - Eigen Identiteit en Agents Design Agent buiten de Website Agent-map ontbreken; oude bestanden beschrijven nog een Website sub-agent.

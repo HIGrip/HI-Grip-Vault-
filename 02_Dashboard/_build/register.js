@@ -1031,7 +1031,7 @@ window.HI_RESEARCH = {
    "dubbel": 21,
    "gedaan": 38,
    "handmatig": 156,
-   "ongecontroleerd": 142,
+   "ongecontroleerd": 161,
    "open": 118
   },
   "vandaag_gedaan": [
@@ -2176,8 +2176,8 @@ window.HI_RESEARCH = {
    "toegepast": 1
   }
  },
- "gebouwd": "2026-11-16T14:00:01+00:00",
- "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 12 notities\n- B2B-en-leveranciers: 3 notities\n- Growth-radar: 15 notities\n- Onderzoek: 1 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 25 notities\n- Routines: 15 notities\n- SEO: 13 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 7 notities\n- Website-techniek: 7 notities\n- Weekoverzichten: 3 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
+ "gebouwd": "2026-11-16T14:01:14+00:00",
+ "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `C:\\Users\\Test\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `C:\\Users\\Test\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `C:\\Users\\Test\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `C:\\Users\\Test\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `C:\\Users\\Test\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `C:\\Users\\Test\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `C:\\Users\\Test\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `C:\\Users\\Test\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `C:\\Users\\Test\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 10 notities\n- B2B-en-leveranciers: 3 notities\n- Growth-radar: 15 notities\n- Onderzoek: 1 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 30 notities\n- Routines: 15 notities\n- SEO: 13 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 7 notities\n- Website-techniek: 7 notities\n- Weekoverzichten: 3 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
    "acties": [],
@@ -2551,6 +2551,280 @@ window.HI_RESEARCH = {
     {
      "afgevinkt": false,
      "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-16-ads-reverse-engineering-bewezen-elementen#7ef47c32",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: de beoordelingskaart uit het Ads Bouwboek vaststellen als vaste toets vóór livegang, met drempels 12 en 16 van 20 (voorstel Ads Agent, niet getest)",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-reverse-engineering-bewezen-elementen#7fbc6702",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Eerste creatieve test in Meta: native formats (borden 1, 3, 4) tegen specificatie en prijs (borden 2, 5), met dezelfde doelgroep en hetzelfde budget, beslissen op link-CTR",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-reverse-engineering-bewezen-elementen#dd5e88cb",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Borden 1 en 3 (voetbal en rugby) opnieuw exporteren uit het canvas, want de PNG's in `Losse-ads-2026-11-15/png/` tonen nog de oude tekst",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "`.claude/agents/content-maker-agent.md` en `caption-copy-agent.md` laten verwijzen naar een bestaand identiteitsbestand; ze wijzen nu naar `01_Agent_Infrastructuur/Content Agent/`, dat niet bestaat",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Reverse engineering van 22 eigen ads: welke design- en psychologie-elementen werken\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\n**Gevraagd.** Leg de design- en psychologie-elementen van de goed beoordeelde ads via reverse engineering vast in de juiste agents en plekken, zodat er herhaalbaar meer goede ads gemaakt kunnen worden.\n\n**Beoordeling door het team (16-11-2026):**\n- Psychologie erg goed, bij zowel voetbal als rugby: 1, 3, 4, 10 en 11.\n- Visueel erg goed bij voetbal: 1, 3, 4, 6 en 9, vooral 9.\n- Visueel prima bij rugby: 1, 3, 4, 9, 10 en 11.\n\n**Uitkomst.** Eén bron, [Ads Bouwboek — bewezen elementen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Social_Agent/Visuele%20Productie/Ads%20Bouwboek%20%E2%80%94%20bewezen%20elementen.md), met zeven formats, zeven design-elementen, anti-patronen, een beoordelingskaart en hypothesen per maatstaf. Daar verwijzen deze plekken naar:\n\n| Plek | Wat er nu staat |\n|---|---|\n| Ads Agent (`Ads Skill — higrip-ads-analyse`, de enige ingang tot zijn kennis) | Een rij in de kennistabel: eigen creatives toetsen met secties 8 en 9 |\n| `09 Ads Agent — Index` | Een verwijzing onder eigen kennis |\n| `Agents Social Agent`, bij Content Maker | Feedbeeld: eerst een bewezen format, dan bouwen, dan toetsen |\n| `Agents Social Agent`, bij Caption & Copy | De pointe noemt het merk |\n| `Agents Social Agent`, Content-QA | Toetspunt C14: beoordelingskaart en poort bij feedbeelden |\n| `Agents Design Agent` (sectie 3 en toetslijst) | Stijlbron voor social feedbeelden; toetspunt D13: beoordelingskaart en poort |\n| `.claude/agents/content-maker-agent.md` | Lees het bouwboek vóór je een feedbeeld bouwt |\n| `Leerregels per Agent` | Twee regels voor de Content Maker; een nieuwe sectie Ads met twee regels voor de Ads Agent |\n| Vault-`CLAUDE.md`, \"Waar staat wat\" | Een rij voor ads maken of beoordelen, zodat elke sessie het bouwboek vindt |\n| `Template Overzicht` | Een verwijzing onder de vaste formats |\n\nGeen agent krijgt de bevoegdheid om advertentiecontent te maken; die grens uit [Agent Hiërarchie & Structuurschema](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/01_Agent_Infrastructuur/Beheer/Agent%20Hi%C3%ABrarchie%20%26%20Structuurschema.md) blijft staan. Het bouwboek dient:\n- wie ads maakt (een mens, eventueel met Claude in de hoofdsessie);\n- de Ads Agent, om te beoordelen;\n- de Content Maker, voor organische feedposts.\n\n## Acties\n- [ ] P2 · Besluit: de beoordelingskaart uit het Ads Bouwboek vaststellen als vaste toets vóór livegang, met drempels 12 en 16 van 20 (voorstel Ads Agent, niet getest)\n- [ ] P2 · Eerste creatieve test in Meta: native formats (borden 1, 3, 4) tegen specificatie en prijs (borden 2, 5), met dezelfde doelgroep en hetzelfde budget, beslissen op link-CTR\n- [ ] P2 · Borden 1 en 3 (voetbal en rugby) opnieuw exporteren uit het canvas, want de PNG's in `Losse-ads-2026-11-15/png/` tonen nog de oude tekst\n- [ ] P3 · `.claude/agents/content-maker-agent.md` en `caption-copy-agent.md` laten verwijzen naar een bestaand identiteitsbestand; ze wijzen nu naar `01_Agent_Infrastructuur/Content Agent/`, dat niet bestaat\n\n## Bevindingen\n\n### Drie wetten\n1. **Psychologie zit in het format, niet in de sport.** De psychologielijst is voor beide sporten gelijk. Alle vijf de winnaars kent een sporter al: een checklist, een kleedkamerbord, een brief, een chat, een vergelijking.\n2. **Visueel zit in het beeld.** Alle visuele winnaars bij voetbal staan op een echte shootfoto. Voetbal 10 en 11 hebben geen foto en staan er niet tussen. Rugby heeft geen eigen foto's en blijft overal op \"prima\".\n3. **De zwakke ads zijn productinformatie of een slogan.** Dat zijn de specificaties (2), de prijs vóór de reden (5), het kleine ingelijste detail met een dunne lijn (7) en de slogan (8). Ze vragen niets en de kijker herkent zichzelf er niet in.\n\n### Waarom voetbal 9 de topper is\n- Alles in beeld beweegt, behalve één voet: scherpte trekt meer aandacht dan kleur.\n- De kop doet hetzelfde: dun met een spoor tegenover zwaar en stil.\n- Er staan weinig elementen in beeld, en de kop heeft geen accent, zodat niets met de voet concurreert.\n\nVoetbal 9 stopt de kijker, maar overtuigt niet. Daarom staat hij niet in de psychologielijst, en dat past bij de bovenlaag.\n\n### Wat het team zelf aanpaste\nIn het canvas noemen bord 1 (het lege vakje) en bord 3 (regel 3) nu het merk of het product bij naam. Daaruit is de regel \"de pointe noemt het merk\" afgeleid. Het team gaf daar geen reden bij, dus het blijft een afleiding.\n\n### Ontleding gecontroleerd en gecorrigeerd\nDe Ads Agent (alleen lezen) leverde de eerste ontleding. Die is in de hoofdsessie tegen de beelden en de canvasbron gelegd:\n- **Knop in beeld.** Volgens de ontleding hebben de borden 1 tot 5 een eigen knop. In werkelijkheid hebben 1 tot 4 er geen. De winnaars werken dus zonder knop in beeld (element D7).\n- **Rugby 6.** Rugby 6 stond als bewijs in de ontleding, terwijl het team dat bord niet noemde. Het is overal weggehaald; dit is nu een leerregel.\n- **Volt vlak.** Een vol volt vlak (de post-it van bord 1) scoort toch, omdat het een echt object is en geen decoratie. Dat is als nuance opgenomen bij element D3.\n- **Trustpilot.** De ontleding zag een tegenspraak met de funnel-set. Het feitenbestand staat het reviewcijfer in ads toe: 4,6 ★, altijd met de bron Trustpilot (besluit 2-10-2026). De fout zat in de funnel-notitie en de funnel-COPY.md; beide zijn gecorrigeerd.\n\n### Meta-check\nDe Ads Agent las via `meta-ads` (peildatum 16-11-2026) het account, de campagnes, de ads en de insights over de hele looptijd. Geen van de 22 ads, en ook geen ad met een vergelijkbare naam, heeft gedraaid. De beoordeling is dus een team-oordeel; sectie 9 van het bouwboek noemt per element de maatstaf om het te bewijzen.\n\n### Wat open blijft en al elders staat\n- Rugbyshoot plannen: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-15-ads-campagne-zes-foto-ads-merkstijl.md).\n- Toestemming van Concordia en LYRA voor betaald gebruik: de COPY.md-bestanden van de sets en [2026-11-16-ads-funnel-trio-rugby-voetbal](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-funnel-trio-rugby-voetbal.md).\n\nDeze punten zijn niet opnieuw als actie opgenomen.\n\n## Bronnen\n- Canvas \"HÏ Grip Ads Rugby + Voetbal\": https://claude.ai/artifact/N4maEbA75Z1jNPQgwrrTKG\n- [Ads Bouwboek — bewezen elementen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/04_Social_Agent/Visuele%20Productie/Ads%20Bouwboek%20%E2%80%94%20bewezen%20elementen.md), [Ads Kennis — Lessen media buyers (TikTok)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Lessen%20media%20buyers%20%28TikTok%29.md)\n- Claims: [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Ads Bouwboek — bewezen elementen.md",
+   "bronbestand_url": null,
+   "categorie": "Social",
+   "datum": "2026-11-16",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-16-ads-funnel-trio-rugby-voetbal",
+    "2026-11-15-ads-campagne-zes-foto-ads-merkstijl",
+    "2026-11-15-ads-tien-losse-ads-rugby-voetbal"
+   ],
+   "id": "2026-11-16-ads-reverse-engineering-bewezen-elementen",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Psychologie zit in het format, visueel in het beeld: vastgelegd als Ads Bouwboek",
+   "prioriteit": "P2",
+   "routine": "",
+   "samenvatting": "Team HÏ Grip beoordeelde 22 eigen feed-ads. De psychologie-winnaars zijn in beide sporten dezelfde vijf formats: checklist, kleedkamerbord, founderbrief, chat met probleem en oplossing, en vergelijking. De visuele winnaars bij voetbal staan allemaal op een echte shootfoto, met bewegingscontrast (voetbal 9) als topper; rugby blijft zonder eigen foto's op prima. De ontleding staat als Ads Bouwboek in 04_Social_Agent, met formats, maten, anti-patronen, een beoordelingskaart en hypothesen per maatstaf. Het bouwboek is gekoppeld aan de Ads Agent, de Content Maker, Content-QA, de leerregels en de vault-CLAUDE.md. Geen van de 22 ads heeft gedraaid, dus alles is team-oordeel tot er Meta-data is.",
+   "status": "nieuw",
+   "titel": "Reverse engineering van 22 eigen ads: welke design- en psychologie-elementen werken",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-reverse-engineering-bewezen-elementen.md",
+   "vervangt": [],
+   "wat_niet_lukte": ""
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen#dfbbdada",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: uitgavenplafond van het Meta-account (€245,55) verhogen of de stop zo laten, en wie dat doet",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen#d20ffac7",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Ads Manager-export per ad: 3-sec videoweergaven, ThruPlays en gemiddelde kijkduur (17-10 t/m 15-11), aanleveren aan de Ads Agent",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen#a90b912b",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Per sport één call-out-zin en dezelfde belofte op de landingspagina laten uitwerken door Social en Website, vóór nieuwe ads",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen#df1a08ce",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Klanttaal verzamelen uit Trustpilot-reviews en klantmails (alleen totalen en citaten zonder namen) en indelen per type sporter als basis voor invalshoeken",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen#992364ff",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Volgende test: per concept 3 tot 5 ads in een eigen set, Audience Network uit of apart uitgelezen, beoordelen op kosten per ATC",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Ads-nulmeting Meta (30 dagen) en lessen uit 10 TikToks van media buyers\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nDe Ads Agent las het Meta-account alleen-lezend uit (17-10 t/m 15-11-2026, peildatum 16-11; de laatste 7 dagen waren leeg). Er zijn geen aankopen via Meta, het budget staat vermoedelijk stil op het uitgavenplafond, en de verschillen tussen ads zijn te klein om een winnaar aan te wijzen. Daarnaast zijn 10 TikToks van media buyers shot voor shot geanalyseerd; de lessen staan als vaste kennis voor de Ads Agent in [Ads Kennis — Lessen media buyers (TikTok)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Lessen%20media%20buyers%20%28TikTok%29.md).\n\n## Kerncijfers\n- **€245,55** · Uitgaven 30 dagen · gelijk aan het uitgavenplafond\n- **0** · Aankopen via Meta\n- **7** · Add-to-carts, allemaal uit de rugbycampagne Kick-off\n- **750** · Linkklikken Product vs Gevoel · 0 add-to-carts\n\n## Acties\n- [ ] P1 · Besluit: uitgavenplafond van het Meta-account (€245,55) verhogen of de stop zo laten, en wie dat doet\n- [ ] P1 · Ads Manager-export per ad: 3-sec videoweergaven, ThruPlays en gemiddelde kijkduur (17-10 t/m 15-11), aanleveren aan de Ads Agent\n- [ ] P2 · Per sport één call-out-zin en dezelfde belofte op de landingspagina laten uitwerken door Social en Website, vóór nieuwe ads\n- [ ] P2 · Klanttaal verzamelen uit Trustpilot-reviews en klantmails (alleen totalen en citaten zonder namen) en indelen per type sporter als basis voor invalshoeken\n- [ ] P2 · Volgende test: per concept 3 tot 5 ads in een eigen set, Audience Network uit of apart uitgelezen, beoordelen op kosten per ATC\n\n## Bevindingen\n\n### Nulmeting Meta (bron: meta-ads, alleen-lezen, peildatum 16-11-2026)\n- Laatste levering 7 november; de 30-dagenuitgave (€245,55) is gelijk aan `spend_cap` en `amount_spent`. De stop door het plafond is een hypothese: de reden is in de koppeling niet zichtbaar.\n- Kick-off (rugby, 4 ads): €136,85, 291 linkklikken, 65 landingspaginaweergaven (22%), 7 add-to-carts, 2 gestarte checkouts; ongeveer €19,55 per add-to-cart.\n- Product vs Gevoel: €92,16, 750 linkklikken, 0 add-to-carts. De ad met de hoogste CTR (9,7%, \"Lars Merk gevoel\") gaf de minste vervolgacties.\n- Instagram Stories en Audience Network geven veel klikken zonder vervolg; de Landingspage-ad kreeg 89% van zijn impressies op Audience Network.\n- Elke ad had ±€30 en 0 tot 3 add-to-carts: geen statistisch verschil. €5 per dag per set geeft te weinig leersignaal.\n- Videometrics zitten niet in de koppeling; de meeste ads lijken statisch (niet bevestigd).\n\n### Lessen uit de TikToks (details en shots: zie de kennisnotitie)\n1. Call-out: één zin die de juiste koper aanspreekt; het product komt later.\n2. Ad, productpagina en lander met dezelfde belofte; anders gaat de klik verloren. Past precies bij het lek klik → winkelmandje.\n3. Hook (0 tot 7 s), body, CTA.\n4. Drie formats per funnelfase met eigen meetlat: thumbstop bovenin, CTR in het midden, CPA onderin. HÏ Grip draait nu alleen bodem-van-funnel.\n5. Invalshoeken uit echte klanttaal, ingedeeld per type klant.\n6. Specifiek probleem × specifieke doelgroep verslaat realistische beelden.\n7. Opschalen pas als meerdere concepten herhaalbaar boven break-even blijven.\n8. Formats zijn getoetst aan de harde grenzen: verzonnen bewijs (nep-tweet, nep-nieuws, nep-mail, verzonnen voorraad of korting) valt af.\n\n## Wat niet lukte\nVideometrics (3-sec, ThruPlay, kijkduur) zitten niet in de alleen-lezen koppeling. Eén TikTok (sarutalksai) had geen ondertitels; alleen het beeld is geanalyseerd. De plaatsingsuitsplitsing van de laatste ad was afgekapt. Aankopen buiten Meta (Shopify, GA4) zijn niet gecontroleerd. Dashboard niet gesynchroniseerd of gepubliceerd: dat kan alleen vanaf info@.\n\n## Bronnen\n- Ads Agent-run 16-11-2026 via meta-ads (meta_account_info, meta_campaigns, meta_adsets, meta_ads, meta_insights)\n- [Ads Kennis — Lessen media buyers (TikTok)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Lessen%20media%20buyers%20%28TikTok%29.md) met de 10 TikTok-links\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "09_Ads_Agent/Kennis/Ads Kennis — Lessen media buyers (TikTok).md",
+   "bronbestand_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Lessen%20media%20buyers%20%28TikTok%29.md",
+   "categorie": "Social",
+   "datum": "2026-11-16",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-04-ads-resultaten-verbeteringen",
+    "2026-11-06-meta-plan-minimaal-2-weken",
+    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
+    "2026-11-16-ad-library-creatieve-analyse",
+    "2026-11-16-ads-funnel-trio-rugby-voetbal"
+   ],
+   "id": "2026-11-16-ads-nulmeting-en-tiktok-lessen",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Uitgaven 30 dagen",
+     "verschil": "gelijk aan het uitgavenplafond",
+     "waarde": "€245,55"
+    },
+    {
+     "label": "Aankopen via Meta",
+     "verschil": "",
+     "waarde": "0"
+    },
+    {
+     "label": "Add-to-carts, allemaal uit de rugbycampagne Kick-off",
+     "verschil": "",
+     "waarde": "7"
+    },
+    {
+     "label": "Linkklikken Product vs Gevoel",
+     "verschil": "0 add-to-carts",
+     "waarde": "750"
+    }
+   ],
+   "kerntitel": "€245,55 en 0 aankopen: het lek zit tussen klik en winkelmandje, niet in de klik",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "In 30 dagen gaf Meta €245,55 uit, precies het uitgavenplafond, met 0 aankopen en 7 add-to-carts; sinds 7 november levert het account niets meer. Tien TikToks van media buyers wijzen dezelfde kant op: een call-out die de juiste sporter aanspreekt, dezelfde belofte op de landingspagina, formats per funnelfase met een eigen meetlat, en pas opschalen wat herhaalbaar is.",
+   "status": "nieuw",
+   "titel": "Ads-nulmeting Meta (30 dagen) en lessen uit 10 TikToks van media buyers",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-nulmeting-en-tiktok-lessen.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Videometrics (3-sec, ThruPlay, kijkduur) zitten niet in de alleen-lezen koppeling. Eén TikTok (sarutalksai) had geen ondertitels; alleen het beeld is geanalyseerd. De plaatsingsuitsplitsing van de laatste ad was afgekapt. Aankopen buiten Meta (Shopify, GA4) zijn niet gecontroleerd. Dashboard niet gesynchroniseerd of gepubliceerd: dat kan alleen vanaf info@."
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#6e7b24ad",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Concordia-foto IMG_0212 (voetbal_allesbeweegt) meenemen in de lopende toestemmingsvraag aan Concordia vóór die ad live gaat",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#2071bc02",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: funnel-ads eerst bij rugby live zetten, omdat rugby in de nulmeting alle 7 toevoegingen aan de winkelwagen leverde; voetbal daarna met hetzelfde budget per laag",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#fdfdc013",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Funnel-ads alleen in feedplaatsingen zetten (Facebook-feed, Instagram-feed, Explore); voor Stories en Reels eerst 9:16-versies maken",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#446ee042",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Elke laag op zijn eigen maatstaf beoordelen: boven op thumbstop en CPM, midden op link-CTR, onder op kosten per toevoeging aan winkelwagen; een bovenlaag-ad niet uitzetten op lage ROAS",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Nagaan of de link van de onderlaag-ads direct op het 3-pack kan landen (bundel-app), zodat de prijs in de ad gelijk is aan de eerste prijs op de pagina",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ads-funnel-trio-rugby-voetbal#b691109e",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Bubbelteksten in voetbal_probleem en rugby_probleem vervangen door echte woorden van sporters zodra de klantstem-routine die heeft verzameld",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Zes funnel-ads voor rugby en voetbal op basis van tien Pinterest-ads\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nGevraagd: tien Pinterest-ads analyseren op stijl, type ad en CTA, en daarmee plus de kennis van de Ads Agent zes ads maken voor rugby en voetbal die zoveel mogelijk weergaven en conversie halen.\n\nUitkomst: een funnel van drie lagen, elk in een voetbal- en een rugbyversie. Boven moet stoppen (alles beweegt, jouw voet niet), midden moet klikken (jouw probleem, onze oplossing), onder moet verkopen (niet elke sok houdt je vast, met het 3-pack). Gekozen samen met de gebruiker: de veilige variant zonder nagemaakte interface, en voor rugby productbeeld omdat er geen echte rugby-actiefoto's zijn.\n\n- Ontwerp: Claude Design-canvas https://claude.ai/artifact/N4maEbA75Z1jNPQgwrrTKG, rijen \"Voetbal · Funnel\" en \"Rugby · Funnel\"\n- Beelden, A/B-teksten, ad-namen en ontwerpkeuzes: `04_Social_Agent/Visuele Productie/Funnel-ads-2026-11-16/` (`png/`, `COPY.md`, `Ontwerpfilosofie.md`, `overzicht.jpg`)\n\n| Laag | Voetbal (donker, volt) | Rugby (wit, tangerine) | Meet op |\n|---|---|---|---|\n| Boven | Alles beweegt. Jouw voet niet. (Concordia-foto, alleen de standvoet scherp) | De scrum schuift. Jouw voet niet. (zwarte sok, beweging in de letters) | Thumbstop, CPM |\n| Midden | Jouw probleem. Onze oplossing. (vier bubbels, witte sok) | Idem in rugbytaal (scrum, sidestep), zwarte sok | Link-CTR |\n| Onder | Niet elke sok houdt je vast. (vergelijking, 3-pack €44,95) | Idem met zwart 3-pack | Kosten per winkelwagen, CPA |\n\n## Acties\n- [ ] P1 · Concordia-foto IMG_0212 (voetbal_allesbeweegt) meenemen in de lopende toestemmingsvraag aan Concordia vóór die ad live gaat\n- [ ] P2 · Besluit: funnel-ads eerst bij rugby live zetten, omdat rugby in de nulmeting alle 7 toevoegingen aan de winkelwagen leverde; voetbal daarna met hetzelfde budget per laag\n- [ ] P2 · Funnel-ads alleen in feedplaatsingen zetten (Facebook-feed, Instagram-feed, Explore); voor Stories en Reels eerst 9:16-versies maken\n- [ ] P2 · Elke laag op zijn eigen maatstaf beoordelen: boven op thumbstop en CPM, midden op link-CTR, onder op kosten per toevoeging aan winkelwagen; een bovenlaag-ad niet uitzetten op lage ROAS\n- [ ] P3 · Nagaan of de link van de onderlaag-ads direct op het 3-pack kan landen (bundel-app), zodat de prijs in de ad gelijk is aan de eerste prijs op de pagina\n- [ ] P3 · Bubbelteksten in voetbal_probleem en rugby_probleem vervangen door echte woorden van sporters zodra de klantstem-routine die heeft verzameld\n\n## Bevindingen\n\n### Drie van de tien formats doen wat een funnel nodig heeft\nSonnet beoordeelde elke pin op stoppen, helderheid en conversie (eigen inschatting, geen prestatiedata). Hoog op stoppen: het nagemaakte belscherm van AG1 (9), de Nike-poster met de atleet door de kop (9) en de bewogen eventposter (8). Hoog op helderheid: de testimonial met product in de hand (9), de vergelijking van STLLR (9) en de probleem/oplossing-splits (8). Geen enkele ad scoort op alle drie, en de meeste hebben geen CTA in beeld. Daarom krijgt elke laag een eigen format in plaats van één ad die alles moet doen.\n\n### Wat is overgenomen en wat niet\n- **Boven, uit pin 09 en 10:** één scherp punt in een bewogen beeld. Bij voetbal zit de onscherpte in de foto (horizontale bewegingsonscherpte, alleen de standvoet scherp), bij rugby in de kop (dunne cursief met een spoor). Het product is dat scherpe punt; bij pin 09 was de schoen te klein, dat is hier omgedraaid.\n- **Midden, uit pin 01 en 02:** twee kolommen met een haarlijn, problemen als chatbubbels in de taal van de sporter. De zwakte van pin 01 (de oplossing zegt niets concreets) is opgelost met een productzin onder de sok.\n- **Onder, uit pin 07:** kop \"Niet elke sok houdt je vast.\" en een tabel met vinkjes. De gekleurde kolom van STLLR is een vol vlak; hier is de kolom alleen omlijnd en breekt het 3-pack door de rand. De rijen zijn alleen claims uit de Brand Core, dus de vergelijking blijft eerlijk.\n- **Niet gebruikt:** het belscherm (pin 04) en de schakelaars (pin 03), omdat Meta advertenties met nagemaakte knoppen, meldingen of schakelaars afwijst. De testimonial (pin 05) niet, omdat er geen echte, letterlijke reviews voor ads beschikbaar zijn. Het reviewcijfer (pin 06) staat niet in deze set, maar mag volgens [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) wel in ads: 4,6 ★, altijd met de bron Trustpilot (correctie 16-11-2026; hier stond eerst ten onrechte dat dat een betaald abonnement vraagt).\n\n### Psychologie per laag\n- Boven: contrast tussen beweging en stilstand stuurt de blik naar het product; herkenning van een moment uit de eigen sport (scrum, kappen op kunstgras) werkt als groepstaal.\n- Midden: probleem eerst (verliesaversie), in de eigen woorden; wie één bubbel herkent, leest de rest.\n- Onder: vergelijken met een referentiepunt (de gewone sok), prijs per paar als anker (€14,98), één aanbod en één knop.\n\n### Afgestemd op de nulmeting\nDe nulmeting liet zien dat het lek tussen klik en winkelmandje zit. Daarom landt elke ad op de pagina van de sok die in beeld staat (voetbal wit, rugby zwart) en toont de onderlaag de prijs die de bezoeker op de pagina ziet. Ad-namen zijn tegelijk `utm_content`, zodat je per laag ziet waar het lek zit.\n\n### Uitvoering\nAlle zes staan op een marge van 72 pixels, met de kop altijd op dezelfde hoogte en de knop altijd op 1198 pixels. Ze zijn lokaal in Chrome gerenderd en gecontroleerd: geen tekst buiten de marge, Poppins overal geladen. Retouche in de voetbalfoto: het logo van het schoenmerk is weggehaald, de oranje pionnen zijn neutraal grijs gemaakt zodat alleen de witte sok oplicht.\n\n## Bronnen\n- Pinterest-ads: [pin 01](https://nl.pinterest.com/pin/884253708111251332/), [pin 02](https://nl.pinterest.com/pin/481533385179358981/), [pin 03](https://nl.pinterest.com/pin/866098572077762568/), [pin 04](https://nl.pinterest.com/pin/1104930089879311247/), [pin 05](https://nl.pinterest.com/pin/921126930054801170/), [pin 06](https://nl.pinterest.com/pin/932315560372814621/), [pin 07](https://nl.pinterest.com/pin/944911565589075157/), [pin 08](https://nl.pinterest.com/pin/1133429431330840394/), [pin 09](https://nl.pinterest.com/pin/1048775831987237715/), [pin 10](https://nl.pinterest.com/pin/431782683046500334/)\n- Meta-advertentienormen, niet-bestaande functionaliteit: https://transparency.meta.com/policies/ad-standards/deceptive-content/non-existent-functionality/\n- [Ads Kennis — Lessen media buyers (TikTok)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Lessen%20media%20buyers%20%28TikTok%29.md), [2026-11-16-ads-nulmeting-en-tiktok-lessen](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-nulmeting-en-tiktok-lessen.md), [2026-11-15-ads-campagne-zes-foto-ads-merkstijl](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-15-ads-campagne-zes-foto-ads-merkstijl.md), [2026-11-15-ads-tien-losse-ads-rugby-voetbal](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-15-ads-tien-losse-ads-rugby-voetbal.md)\n- Claims: [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) en [Performance Grip Socks 2.0](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Performance%20Grip%20Socks%202.0.md)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Funnel-ads-2026-11-16",
+   "bronbestand_url": null,
+   "categorie": "Social",
+   "datum": "2026-11-16",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-15-ads-campagne-zes-foto-ads-merkstijl",
+    "2026-11-15-ads-tien-losse-ads-rugby-voetbal",
+    "2026-11-16-ads-nulmeting-en-tiktok-lessen",
+    "2026-11-16-ad-library-creatieve-analyse",
+    "2026-11-16-ads-reverse-engineering-bewezen-elementen"
+   ],
+   "id": "2026-11-16-ads-funnel-trio-rugby-voetbal",
+   "kansen": [],
+   "kerncijfers": [],
+   "kerntitel": "Eén belofte in drie lagen: stoppen, klikken, kopen, elk in een voetbal- en rugbyversie",
+   "prioriteit": "P2",
+   "routine": "",
+   "samenvatting": "Van tien Pinterest-ads scoren beweging tegen stilstand (Nike-poster, eventposter), probleem tegenover oplossing met chatbubbels en de vergelijking ons tegen hen het best op stoppen, helderheid en conversie; daarom is één funnel gemaakt met die drie formats als boven-, midden- en onderlaag, elk in een voetbal- en een rugbyversie. Formats die een telefoonscherm of schakelaars nabootsen zijn bewust niet gebruikt, omdat Meta nagemaakte knoppen en meldingen verbiedt; vóór livegang is toestemming nodig voor Concordia-foto IMG_0212.",
+   "status": "nieuw",
+   "titel": "Zes funnel-ads voor rugby en voetbal op basis van tien Pinterest-ads",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-funnel-trio-rugby-voetbal.md",
+   "vervangt": [],
+   "wat_niet_lukte": ""
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
      "besluit": false,
      "controle": null,
      "id": "2026-11-16-ads-canva-vs-html-verschilanalyse#8d102520",
@@ -2571,7 +2845,7 @@ window.HI_RESEARCH = {
      "uitvoerbaar": null
     }
    ],
-   "body_md": "# Ads: Canva (Lars) vs. HTML (agents) — verschilanalyse\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n## In het kort\nWaargenomen op Canva-designs DAHabTgWvSQ en DAHabQHd7PM (3 pack AD, voetbal/rugby), DAHaiTTVyGo (Klantwoord, voetbal/rugby) en de agent-ads in `HiGripMedia/_Output/design/ads-html/out/fase4b/`. Dit is een observatie van Denzel; het verbeterplan en de uitvoering komen van de Design Agent, met onafhankelijke QA.\n\n## Bevindingen\n### Wat Lars' ontwerpen goed doen\n- **Eén held.** 3-pack: de drie échte witte sokken (product, scherp, gecentreerd) vullen 55% van het vlak. Klantwoord: één sporter in kleur, scherp, in beweging.\n- **Eén groot blok.** Prijs €44,95 in zwart op een Volt-balk, ruim groter dan al het andere; kop \"3 PACK\" in wit. Je snapt de ad in 1 seconde.\n- **Minimale tekst.** 4–6 elementen. Geen kleine lettertjes behalve de doorgestreepte prijs.\n- **Sportlabel als anker.** Volt-tag VOETBAL/RUGBY rechtsboven; merkteken `//` als Volt-accent.\n- **Contrast met kleur.** Foto's niet in grijs: echte kleur (groen veld, huid, bal) tegen een donkere gradient; Volt als énige accent.\n- **Sport zit in de achtergrond, niet in de tekst.** Zelfde sjabloon, andere bal/foto.\n\n### Wat onze HTML-ads minder doen\n- **Product ontbreekt** in situatie-, 3.500+- en vergelijkingsads; alleen een afgesneden zwarte sok of silhouet.\n- **Foto's grayscale/te donker/te klein afgesneden** (rugby-3.500+ is bijna zwart; silhouet-ad zonder gezicht of product).\n- **Te veel tekst en te klein:** vergelijkingstabel met 3 rijen + kleine bronvermelding, \"GA DOOR WAAR ANDEREN STOPPEN.\" onderin elke ad.\n- **Geen groot blok:** kop in 3 regels, 3 stijlen (wit/Volt/grijs) = geen duidelijke eerste blik.\n- **Placeholder in klantwoord-ad** (\"[ECHTE REVIEW HIER]\") terwijl Lars er zelf een gemaakt heeft met echte review (Lydia, 13 jan 2026, Trustpilot).\n- **Rugby-variant in rood** in oudere fases (afwijkend accent); fase 4b is weer Volt.\n- **Weinig campagnegevoel:** elke ad ziet er anders uit; Lars' set deelt één sjabloon (zelfde grid, tag, blok).\n\n## Acties\n- [ ] P1 · Design: maak een verbeterplan (sjabloonregels uit deze analyse) en test de workflow eerst op 1 ad voordat de rest volgt\n- [ ] P1 · Besluit: moeten de agent-ads de echte Lars-sjablonen in Canva (copy_design) volgen, of de HTML-route behouden met Lars' sjabloonregels?\n\n## Bronnen\n- Canva: DAHabTgWvSQ, DAHabQHd7PM, DAHaiTTVyGo (alleen lezen; nooit wijzigen)\n- Lokaal: `HiGripMedia/_Output/design/ads-html/out/fase4b/contactsheet_fase4b_4x5.jpg`",
+   "body_md": "# Ads: Canva (Lars) vs. HTML (agents) — verschilanalyse\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nWaargenomen op Canva-designs DAHabTgWvSQ en DAHabQHd7PM (3 pack AD, voetbal/rugby), DAHaiTTVyGo (Klantwoord, voetbal/rugby) en de agent-ads in `HiGripMedia/_Output/design/ads-html/out/fase4b/`. Dit is een observatie van Denzel; het verbeterplan en de uitvoering komen van de Design Agent, met onafhankelijke QA.\n\n## Bevindingen\n### Wat Lars' ontwerpen goed doen\n- **Eén held.** 3-pack: de drie échte witte sokken (product, scherp, gecentreerd) vullen 55% van het vlak. Klantwoord: één sporter in kleur, scherp, in beweging.\n- **Eén groot blok.** Prijs €44,95 in zwart op een Volt-balk, ruim groter dan al het andere; kop \"3 PACK\" in wit. Je snapt de ad in 1 seconde.\n- **Minimale tekst.** 4–6 elementen. Geen kleine lettertjes behalve de doorgestreepte prijs.\n- **Sportlabel als anker.** Volt-tag VOETBAL/RUGBY rechtsboven; merkteken `//` als Volt-accent.\n- **Contrast met kleur.** Foto's niet in grijs: echte kleur (groen veld, huid, bal) tegen een donkere gradient; Volt als énige accent.\n- **Sport zit in de achtergrond, niet in de tekst.** Zelfde sjabloon, andere bal/foto.\n\n### Wat onze HTML-ads minder doen\n- **Product ontbreekt** in situatie-, 3.500+- en vergelijkingsads; alleen een afgesneden zwarte sok of silhouet.\n- **Foto's grayscale/te donker/te klein afgesneden** (rugby-3.500+ is bijna zwart; silhouet-ad zonder gezicht of product).\n- **Te veel tekst en te klein:** vergelijkingstabel met 3 rijen + kleine bronvermelding, \"GA DOOR WAAR ANDEREN STOPPEN.\" onderin elke ad.\n- **Geen groot blok:** kop in 3 regels, 3 stijlen (wit/Volt/grijs) = geen duidelijke eerste blik.\n- **Placeholder in klantwoord-ad** (\"[ECHTE REVIEW HIER]\") terwijl Lars er zelf een gemaakt heeft met echte review (Lydia, 13 jan 2026, Trustpilot).\n- **Rugby-variant in rood** in oudere fases (afwijkend accent); fase 4b is weer Volt.\n- **Weinig campagnegevoel:** elke ad ziet er anders uit; Lars' set deelt één sjabloon (zelfde grid, tag, blok).\n\n## Acties\n- [ ] P1 · Design: maak een verbeterplan (sjabloonregels uit deze analyse) en test de workflow eerst op 1 ad voordat de rest volgt\n- [ ] P1 · Besluit: moeten de agent-ads de echte Lars-sjablonen in Canva (copy_design) volgen, of de HTML-route behouden met Lars' sjabloonregels?\n\n## Bronnen\n- Canva: DAHabTgWvSQ, DAHabQHd7PM, DAHaiTTVyGo (alleen lezen; nooit wijzigen)\n- Lokaal: `HiGripMedia/_Output/design/ads-html/out/fase4b/contactsheet_fase4b_4x5.jpg`",
    "bron": "los",
    "bronbestand": "",
    "bronbestand_url": null,
@@ -2591,6 +2865,99 @@ window.HI_RESEARCH = {
    "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ads-canva-vs-html-verschilanalyse.md",
    "vervangt": [],
    "wat_niet_lukte": ""
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-16-ad-library-creatieve-analyse#d041bbd3",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: eerste creatieve test opbouwen rond grip-demonstratie in frame 0 met categoriebewijs (Apps et al. 2022), voor één sport",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ad-library-creatieve-analyse#67649f97",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Social en Design: per sport (voetbal, rugby, padel) beeldmateriaal van de zool in beweging en het wegglijdmoment verzamelen uit clubshoots",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ad-library-creatieve-analyse#c8e365f2",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Social: vaste eindkaart maken, zwart met witte pill en chevron, en per concept 5 tot 10 hook-varianten plannen",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-16-ad-library-creatieve-analyse#e333a4d5",
+     "prioriteit": "P3",
+     "prioriteit_effectief": "P3",
+     "tekst": "Toestemming regelen voor een kort Nederlands clubtestimonial (15 tot 30 s, ondertiteld) als bewijs-ad",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# Ad Library: creatieve analyse van 16 grip sock-, sport- en DTC-ads\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nUit de openbare Meta Ad Library zijn 100 ads van 20 merken verzameld (grip socks, Nike, adidas, Gymshark, On, True Classic, Ridge, AG1, Manscaped). Daarvan zijn 16 ads met de langste looptijd of de meeste versies frame voor frame geanalyseerd op beeld, compositie, boodschap, psychologie, CTA en stijl. Volledige analyse per ad, patronen en top 10 principes: [Ads Kennis — Ad Library-analyse (grip socks en DTC)](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Ad%20Library-analyse%20%28grip%20socks%20en%20DTC%29.md). Dit vult [2026-10-25-ads-onderzoek-bewezen-grip-sock-ads](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Ads/2026-10-25-ads-onderzoek-bewezen-grip-sock-ads.md) aan, dat alleen de teksten bekeek.\n\n## Kerncijfers\n- **100** · Ads verzameld · 20 merken\n- **16** · Ads visueel geanalyseerd\n- **856** · Langste looptijd in dagen · T1TAN, gratis gripsokken als lokkertje\n- **36** · Meeste versies van één ad · True Classic\n\n## Acties\n- [ ] P1 · Besluit: eerste creatieve test opbouwen rond grip-demonstratie in frame 0 met categoriebewijs (Apps et al. 2022), voor één sport\n- [ ] P2 · Social en Design: per sport (voetbal, rugby, padel) beeldmateriaal van de zool in beweging en het wegglijdmoment verzamelen uit clubshoots\n- [ ] P2 · Social: vaste eindkaart maken, zwart met witte pill en chevron, en per concept 5 tot 10 hook-varianten plannen\n- [ ] P3 · Toestemming regelen voor een kort Nederlands clubtestimonial (15 tot 30 s, ondertiteld) als bewijs-ad\n\n## Bevindingen\n\n### Grip sock-merken verkopen op prijs, de grote merken op bewijs\nGain The Edge, Flair, FitSockr, T1TAN en Elliosa sturen op prijs per paar, bundels, 1+1 en gratis. Flair en T1TAN geven gripsokken zelfs weg bij een ander product. Bewijs is een bronloos groot getal of \"#1\". True Classic, Ridge, STOX en On sturen op één probleem, een demonstratie of sfeer, met weinig tekst in beeld en een herkenbare stijl.\n\n### De sterkste video's volgen dezelfde opbouw\nProduct of probleem in frame 0 met een label van 3 tot 6 woorden, één reden per shot (±2 s), risico-omkering vlak voor de CTA, en een schone eindkaart (STOX: zwart met witte pill). Gain The Edge en FitSockr hebben geen overlays of eindkaart; FitSockr opent op een wit frame.\n\n### Volume per concept\nGrote merken draaien 8 tot 36 versies per ad (True Classic 36, STOX 21, Gymshark 9, Ridge 8); grip sock-merken 1 tot 4.\n\n### Witte plekken voor HÏ Grip\nWetenschappelijk categoriebewijs; het probleem zichtbaar maken (gewone sok tegenover gripsok, zelfde beweging); creatives per sport (rugby is leeg, padel krijgt voetbaltekst); een rustige premium stijl; korte Nederlandse clubtestimonials; vrouwelijke sporters; volt als vaste accentkleur op zwart.\n\n## Wat niet lukte\nGeluid niet beoordeeld (video's stil bekeken). Bij ads met meerdere versies alleen de standaardversie gezien. Video's via steekproefframes; korte overlays ertussen kunnen gemist zijn. Nike- en adidas-ads waren vooral app- en catalogusads en zijn grotendeels buiten de diepe analyse gelaten. STOX en RØFF zijn geen grip sock-merken maar wel meegenomen als Nederlandse DTC-voorbeelden. Dashboard niet gepubliceerd: dat kan alleen vanaf info@.\n\n## Bronnen\n- Meta Ad Library, opgehaald 16-11-2026, zonder inloggen; per ad het Bibliotheek-ID in de kennisnotitie\n- Verzamelronde met Sonnet (100 ads), visuele analyse met Opus (16 ads)\n\n## Aantekeningen",
+   "bron": "los",
+   "bronbestand": "09_Ads_Agent/Kennis/Ads Kennis — Ad Library-analyse (grip socks en DTC).md",
+   "bronbestand_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/09_Ads_Agent/Kennis/Ads%20Kennis%20%E2%80%94%20Ad%20Library-analyse%20%28grip%20socks%20en%20DTC%29.md",
+   "categorie": "Social",
+   "datum": "2026-11-16",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
+    "2026-11-16-ads-nulmeting-en-tiktok-lessen",
+    "2026-11-16-ads-funnel-trio-rugby-voetbal"
+   ],
+   "id": "2026-11-16-ad-library-creatieve-analyse",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Ads verzameld",
+     "verschil": "20 merken",
+     "waarde": "100"
+    },
+    {
+     "label": "Ads visueel geanalyseerd",
+     "verschil": "",
+     "waarde": "16"
+    },
+    {
+     "label": "Langste looptijd in dagen",
+     "verschil": "T1TAN, gratis gripsokken als lokkertje",
+     "waarde": "856"
+    },
+    {
+     "label": "Meeste versies van één ad",
+     "verschil": "True Classic",
+     "waarde": "36"
+    }
+   ],
+   "kerntitel": "Gripsokmerken verkopen op prijs; bewijs, demonstratie en sportfocus zijn onbezet",
+   "prioriteit": "P1",
+   "routine": "",
+   "samenvatting": "De grip sock-markt adverteert op prijs, bundels en bronloze '#1'-claims, met 1 tot 4 versies per ad, terwijl grote DTC-merken op één probleem of demonstratie sturen met 8 tot 36 versies. Voor HÏ Grip liggen categoriebewijs met bron, een eerlijke grip-demonstratie, één sport per creative en een rustige premium stijl vrij.",
+   "status": "nieuw",
+   "titel": "Ad Library: creatieve analyse van 16 grip sock-, sport- en DTC-ads",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-16-ad-library-creatieve-analyse.md",
+   "vervangt": [],
+   "wat_niet_lukte": "Geluid niet beoordeeld (video's stil bekeken). Bij ads met meerdere versies alleen de standaardversie gezien. Video's via steekproefframes; korte overlays ertussen kunnen gemist zijn. Nike- en adidas-ads waren vooral app- en catalogusads en zijn grotendeels buiten de diepe analyse gelaten. STOX en RØFF zijn geen grip sock-merken maar wel meegenomen als Nederlandse DTC-voorbeelden. Dashboard niet…"
   },
   {
    "acties": [
@@ -2651,7 +3018,9 @@ window.HI_RESEARCH = {
     "2026-11-10-ads-plan-bereik-conversie-sales",
     "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
     "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
-    "2026-10-27-review-rugby-ads-trustpilot"
+    "2026-10-27-review-rugby-ads-trustpilot",
+    "2026-11-16-ads-funnel-trio-rugby-voetbal",
+    "2026-11-16-ads-reverse-engineering-bewezen-elementen"
    ],
    "id": "2026-11-15-ads-tien-losse-ads-rugby-voetbal",
    "kansen": [],
@@ -2744,7 +3113,9 @@ window.HI_RESEARCH = {
    "gerelateerd": [
     "2026-11-15-ads-tien-losse-ads-rugby-voetbal",
     "2026-11-10-ads-plan-bereik-conversie-sales",
-    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads"
+    "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
+    "2026-11-16-ads-funnel-trio-rugby-voetbal",
+    "2026-11-16-ads-reverse-engineering-bewezen-elementen"
    ],
    "id": "2026-11-15-ads-campagne-zes-foto-ads-merkstijl",
    "kansen": [],
@@ -3783,7 +4154,7 @@ window.HI_RESEARCH = {
      "uitvoerbaar": null
     }
    ],
-   "body_md": "# Search Console & rankings — week 46 (handmatige hermeting)\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n\n## In het kort\n\nDit is een **handmatige hermeting** (op verzoek van Lars, via `google_data.py gsc` in een Claude Code-sessie), geen run van de geplande routine. Referentiepunt: [2026-11-02-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/SEO/2026-11-02-search-console.md).\n\n**Let op de periode:** Search Console loopt 2–3 dagen achter, dus het meest recente 7-dagenvenster is **31 okt–6 nov** (vorige: 24–30 okt). Dat valt niet samen met de GA4-week van 2–8 nov en ook niet met het venster van de vorige meting (26 okt–1 nov); vergelijk de cijfers daarom niet één-op-één met die notitie. Het 28-dagenvenster (10 okt–6 nov) wordt vergeleken met 12 sep–9 okt.\n\n## Kerncijfers\n\n- **34** · Klikken (7 dagen) · -17,1% (was 41)\n- **1.307** · Vertoningen (7 dagen) · +5,9%\n- **2,60%** · CTR (7 dagen) · was 3,32%\n- **8,2** · Gemiddelde positie (7 dagen) · was 7,9 (iets slechter)\n- **140** · Klikken (28 dagen) · -13,0% (was 161), bij 4.822 vertoningen (+21,7%) en CTR 2,90% (was 4,06%)\n\n## Acties\n\n- [ ] P2 · Homepage `/`: positie 9,1 → 14,0 (28 dagen: 8,4 → 11,5) bij 243 vertoningen; blijven volgen of dit een blijvende terugval is (de homepage levert nog wel de meeste klikken, vooral via merkzoekopdrachten)\n- [ ] P2 · `/en/products/performance-gripsokken`: 163 vertoningen op positie 8,7 maar 0 klikken (28 dagen: 399 vertoningen, 3 klikken, CTR 0,75%) — titel/meta herschrijven; staat al als open EN-backlogpunt, nu met bijgewerkte cijfers\n\n## Bevindingen\n\n### Totaal\n\n| Venster | Klikken | Vertoningen | CTR | Positie |\n|---|---|---|---|---|\n| 7 dagen (31 okt–6 nov) | 34 | 1.307 | 2,60% | 8,2 |\n| 7 dagen (24–30 okt) | 41 | 1.234 | 3,32% | 7,9 |\n| 28 dagen (10 okt–6 nov) | 140 | 4.822 | 2,90% | 8,3 |\n| 28 dagen (12 sep–9 okt) | 161 | 3.963 | 4,06% | 8,1 |\n\n### Zoektermen (7 dagen)\n\n| Zoekterm | Positie nu | Vorige | Vertoningen | Klikken |\n|---|---|---|---|---|\n| gripsokken | 5,4 | 7,1 | 323 | 4 |\n| grip socks | 10,2 | 8,8 | 151 | 0 |\n| grip sokken | 14,1 | 12,0 | 41 | 0 |\n| hi grip (merk) | 4,6 | 5,2 | 24 | 13 |\n| higrip (merk) | 1,5 | 1,5 | 11 | 6 |\n| gripsokken kopen | geen data deze week | — | — | — |\n| gripsokken voetbal / padel / tennis / rugby, antislip sokken | geen vertoningen in de top 50 | — | — | — |\n\n\"gripsokken\" rankt nu volledig verdeeld over één oude URL: 312 van 323 vertoningen lopen via `/products/hi-grip-gripsokken-1` (positie 5,3), de rest via de homepage (positie 19,6). Nieuwe termen (grip voetbal, grip socks padel, grip sportsokken, grippy socks) hebben elk 3–7 vertoningen: ruis, geen actie.\n\n### Pagina's (7 dagen)\n\n| Pagina | Klikken | Vertoningen | CTR | Positie | Vorige positie |\n|---|---|---|---|---|---|\n| `/products/hi-grip-gripsokken-1` | 5 | 473 | 1,06% | 5,8 | 7,2 |\n| `/` | 18 | 243 | 7,41% | 14,0 | 9,1 |\n| `/en` | 6 | 172 | 3,49% | 8,2 | 7,8 |\n| `/en/products/performance-gripsokken` | 0 | 163 | 0% | 8,7 | 9,1 |\n| `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 0 | 63 | 0% | 3,7 | 3,9 |\n| `/collections/all` | 1 | 45 | 2,22% | 7,0 | 4,8 |\n| `/products/performance-gripsokken-2-0-zwart` | 0 | 39 | 0% | 6,2 | 4,5 |\n| `/blogs/hi-grip/waarom-hi-grip-gripsokken` | 0 | 37 | 0% | 7,9 | 6,3 |\n| `/collections/gripsokken` | 1 | 34 | 2,94% | 7,6 | 12,1 |\n| `/pages/ontdek-jouw-sport` | 0 | 26 | 0% | 3,5 | 4,1 |\n| `/pages/gripsokken-voor-voetbal` | 0 | 18 | 0% | 9,7 | 11,6 |\n\n### Doorwerking\n\n- **EN-homepage `/en`** (nieuw punt van 2 november, 1,88% CTR): CTR is nu 3,49% bij 172 vertoningen. Beter, maar het volume is ook lager (266 → 172); nog niet als opgelost te beschouwen.\n- **`/pages/gripsokken-voor-voetbal`** (backlogpunt 27): positie verbetert verder (11,6 → 9,7), maar met slechts 18 vertoningen; bevestigt het herstel van vorige week voorzichtig, blijft open.\n- **SEO-titels 2.0/collectie gripsokken** (live sinds 11 okt, evaluatievenster ±8 nov): `/collections/gripsokken` verbetert (12,1 → 7,6, 34 vertoningen); `/products/performance-gripsokken-2-0-zwart` zakt iets (4,5 → 6,2, 39 vertoningen, 0 klikken). Volumes zijn te klein voor een oordeel.\n- Blog \"waarom HÏ Grip gripsokken\" en `/pages/ontdek-jouw-sport`: CTR blijft 0% (37 resp. 26 vertoningen), ongewijzigd open.\n\n## Wat niet lukte\n\n- Geen indexeringsrapport en geen generatieve-AI-impressierapport in de koppeling (zelfde beperking als eerdere metingen).\n- Alleen het 7-dagenvenster met top 50 en een 28-dagenvenster met top 10 zijn opgehaald; de uitsplitsing per land of apparaat is niet bekeken.\n\n## Bronnen\n\n- `python google_data.py gsc --dagen 7 --top 50` en `--dagen 28 --top 10`, 9 november 2026 (data t/m 6 november).\n- [2026-11-09-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/SEO/2026-11-09-regressiecheck.md) voor GA4 en de live paginacontrole.\n\n## Aantekeningen",
+   "body_md": "# Search Console & rankings — week 46 (handmatige hermeting)\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\n\nDit is een **handmatige hermeting** (op verzoek van Lars, via `google_data.py gsc` in een Claude Code-sessie), geen run van de geplande routine. Referentiepunt: [2026-11-02-search-console](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/SEO/2026-11-02-search-console.md).\n\n**Let op de periode:** Search Console loopt 2–3 dagen achter, dus het meest recente 7-dagenvenster is **31 okt–6 nov** (vorige: 24–30 okt). Dat valt niet samen met de GA4-week van 2–8 nov en ook niet met het venster van de vorige meting (26 okt–1 nov); vergelijk de cijfers daarom niet één-op-één met die notitie. Het 28-dagenvenster (10 okt–6 nov) wordt vergeleken met 12 sep–9 okt.\n\n## Kerncijfers\n\n- **34** · Klikken (7 dagen) · -17,1% (was 41)\n- **1.307** · Vertoningen (7 dagen) · +5,9%\n- **2,60%** · CTR (7 dagen) · was 3,32%\n- **8,2** · Gemiddelde positie (7 dagen) · was 7,9 (iets slechter)\n- **140** · Klikken (28 dagen) · -13,0% (was 161), bij 4.822 vertoningen (+21,7%) en CTR 2,90% (was 4,06%)\n\n## Acties\n\n- [ ] P2 · Homepage `/`: positie 9,1 → 14,0 (28 dagen: 8,4 → 11,5) bij 243 vertoningen; blijven volgen of dit een blijvende terugval is (de homepage levert nog wel de meeste klikken, vooral via merkzoekopdrachten)\n- [ ] P2 · `/en/products/performance-gripsokken`: 163 vertoningen op positie 8,7 maar 0 klikken (28 dagen: 399 vertoningen, 3 klikken, CTR 0,75%) — titel/meta herschrijven; staat al als open EN-backlogpunt, nu met bijgewerkte cijfers\n\n## Bevindingen\n\n### Totaal\n\n| Venster | Klikken | Vertoningen | CTR | Positie |\n|---|---|---|---|---|\n| 7 dagen (31 okt–6 nov) | 34 | 1.307 | 2,60% | 8,2 |\n| 7 dagen (24–30 okt) | 41 | 1.234 | 3,32% | 7,9 |\n| 28 dagen (10 okt–6 nov) | 140 | 4.822 | 2,90% | 8,3 |\n| 28 dagen (12 sep–9 okt) | 161 | 3.963 | 4,06% | 8,1 |\n\n### Zoektermen (7 dagen)\n\n| Zoekterm | Positie nu | Vorige | Vertoningen | Klikken |\n|---|---|---|---|---|\n| gripsokken | 5,4 | 7,1 | 323 | 4 |\n| grip socks | 10,2 | 8,8 | 151 | 0 |\n| grip sokken | 14,1 | 12,0 | 41 | 0 |\n| hi grip (merk) | 4,6 | 5,2 | 24 | 13 |\n| higrip (merk) | 1,5 | 1,5 | 11 | 6 |\n| gripsokken kopen | geen data deze week | — | — | — |\n| gripsokken voetbal / padel / tennis / rugby, antislip sokken | geen vertoningen in de top 50 | — | — | — |\n\n\"gripsokken\" rankt nu volledig verdeeld over één oude URL: 312 van 323 vertoningen lopen via `/products/hi-grip-gripsokken-1` (positie 5,3), de rest via de homepage (positie 19,6). Nieuwe termen (grip voetbal, grip socks padel, grip sportsokken, grippy socks) hebben elk 3–7 vertoningen: ruis, geen actie.\n\n### Pagina's (7 dagen)\n\n| Pagina | Klikken | Vertoningen | CTR | Positie | Vorige positie |\n|---|---|---|---|---|---|\n| `/products/hi-grip-gripsokken-1` | 5 | 473 | 1,06% | 5,8 | 7,2 |\n| `/` | 18 | 243 | 7,41% | 14,0 | 9,1 |\n| `/en` | 6 | 172 | 3,49% | 8,2 | 7,8 |\n| `/en/products/performance-gripsokken` | 0 | 163 | 0% | 8,7 | 9,1 |\n| `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` | 0 | 63 | 0% | 3,7 | 3,9 |\n| `/collections/all` | 1 | 45 | 2,22% | 7,0 | 4,8 |\n| `/products/performance-gripsokken-2-0-zwart` | 0 | 39 | 0% | 6,2 | 4,5 |\n| `/blogs/hi-grip/waarom-hi-grip-gripsokken` | 0 | 37 | 0% | 7,9 | 6,3 |\n| `/collections/gripsokken` | 1 | 34 | 2,94% | 7,6 | 12,1 |\n| `/pages/ontdek-jouw-sport` | 0 | 26 | 0% | 3,5 | 4,1 |\n| `/pages/gripsokken-voor-voetbal` | 0 | 18 | 0% | 9,7 | 11,6 |\n\n### Doorwerking\n\n- **EN-homepage `/en`** (nieuw punt van 2 november, 1,88% CTR): CTR is nu 3,49% bij 172 vertoningen. Beter, maar het volume is ook lager (266 → 172); nog niet als opgelost te beschouwen.\n- **`/pages/gripsokken-voor-voetbal`** (backlogpunt 27): positie verbetert verder (11,6 → 9,7), maar met slechts 18 vertoningen; bevestigt het herstel van vorige week voorzichtig, blijft open.\n- **SEO-titels 2.0/collectie gripsokken** (live sinds 11 okt, evaluatievenster ±8 nov): `/collections/gripsokken` verbetert (12,1 → 7,6, 34 vertoningen); `/products/performance-gripsokken-2-0-zwart` zakt iets (4,5 → 6,2, 39 vertoningen, 0 klikken). Volumes zijn te klein voor een oordeel.\n- Blog \"waarom HÏ Grip gripsokken\" en `/pages/ontdek-jouw-sport`: CTR blijft 0% (37 resp. 26 vertoningen), ongewijzigd open.\n\n## Wat niet lukte\n\n- Geen indexeringsrapport en geen generatieve-AI-impressierapport in de koppeling (zelfde beperking als eerdere metingen).\n- Alleen het 7-dagenvenster met top 50 en een 28-dagenvenster met top 10 zijn opgehaald; de uitsplitsing per land of apparaat is niet bekeken.\n\n## Bronnen\n\n- `python google_data.py gsc --dagen 7 --top 50` en `--dagen 28 --top 10`, 9 november 2026 (data t/m 6 november).\n- [2026-11-09-regressiecheck](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/SEO/2026-11-09-regressiecheck.md) voor GA4 en de live paginacontrole.\n\n## Aantekeningen",
    "bron": "routine",
    "bronbestand": "",
    "bronbestand_url": null,
@@ -5732,7 +6103,8 @@ window.HI_RESEARCH = {
     "2026-11-05-meta-plan-35-euro-per-dag",
     "2026-11-05-meta-opbouw-getoetst-start-6-november",
     "2026-10-30-ads-agent-onderzoek",
-    "2026-11-10-ads-plan-bereik-conversie-sales"
+    "2026-11-10-ads-plan-bereik-conversie-sales",
+    "2026-11-16-ads-nulmeting-en-tiktok-lessen"
    ],
    "id": "2026-11-06-meta-plan-minimaal-2-weken",
    "kansen": [],
@@ -7404,7 +7776,8 @@ window.HI_RESEARCH = {
     "2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby",
     "2026-11-05-meta-plan-35-euro-per-dag",
     "2026-11-05-meta-opbouw-getoetst-start-6-november",
-    "2026-11-10-ads-plan-bereik-conversie-sales"
+    "2026-11-10-ads-plan-bereik-conversie-sales",
+    "2026-11-16-ads-nulmeting-en-tiktok-lessen"
    ],
    "id": "2026-11-04-ads-resultaten-verbeteringen",
    "kansen": [],
@@ -11045,7 +11418,9 @@ window.HI_RESEARCH = {
     "2026-11-05-meta-plan-35-euro-per-dag",
     "2026-11-05-meta-opbouw-getoetst-start-6-november",
     "2026-11-10-ads-plan-bereik-conversie-sales",
-    "2026-11-15-ads-tien-losse-ads-rugby-voetbal"
+    "2026-11-15-ads-tien-losse-ads-rugby-voetbal",
+    "2026-11-16-ads-nulmeting-en-tiktok-lessen",
+    "2026-11-16-ad-library-creatieve-analyse"
    ],
    "id": "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads",
    "kansen": [],
@@ -14040,9 +14415,9 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 171,
-   "P2": 201,
-   "P3": 44
+   "P1": 175,
+   "P2": 212,
+   "P3": 48
   },
   "per_categorie": {
    "B2B": 2,
@@ -14050,7 +14425,7 @@ window.HI_RESEARCH = {
    "Merk": 3,
    "Product": 1,
    "SEO": 21,
-   "Social": 35,
+   "Social": 39,
    "Techniek": 14
   },
   "per_week": [
@@ -14110,12 +14485,12 @@ window.HI_RESEARCH = {
     "week": "2026-W46"
    },
    {
-    "aantal": 7,
+    "aantal": 11,
     "start": "2026-11-16",
     "week": "2026-W47"
    }
   ],
-  "totaal_notities": 93
+  "totaal_notities": 97
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

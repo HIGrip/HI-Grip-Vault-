@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-10-12
+bijgewerkt: 2026-11-16
 beheer: Stafchef (03_Denzel)
 ---
 
@@ -83,6 +83,7 @@ beheer: Stafchef (03_Denzel)
 - **Wijzigingen die alleen via Shopify Admin kunnen (title/meta) zijn geen theme-wijziging.** Schrijf de fix plakklaar uit en zeg wie hem moet doorvoeren. (2026-09-17)
 
 ### Design Agent
+- **Een feedbeeld wint visueel op een echte foto met één scherp focuspunt en typografie die het idee uitvoert.** Alle visuele winnaars bij voetbal staan op een shootfoto; voetbal 9 (alles bewogen, alleen de voet scherp) is de topper. Een vrijstaande productfoto op een vlak haalt 'prima', geen top. Een vol kleurvlak alleen als echt object (post-it), nooit als decoratie. Zie [[Ads Bouwboek — bewezen elementen]]. (2026-11-16, beoordeling Team HÏ Grip van 22 ads)
 - **Grens op de rol `live`, niet op een thema-nummer.** Draai vóór elke theme-actie `shopify theme list`. Actuele ID's staan alleen in [[Technische Procedures]] (werkthema sinds 12-10-2026: `202398040391`). (2026-09-17, bijgewerkt 2026-10-12)
 - **Lees grote templates niet half.** Inventariseer eerst alle secties voordat je zegt wat er wel of niet op de pagina staat. (2026-09-17)
 - **Toets sportpagina's en homepage aan de beachhead-volgorde** (tennis/padel, voetbal, rugby). Rugby ontbrak in de sport-grid. (2026-09-17)
@@ -120,6 +121,8 @@ beheer: Stafchef (03_Denzel)
 
 ### Content Maker
 - **Altijd de echte productfoto's als referentie.** Grip-patroon, logo en de Ï gaan bij AI-beeld als eerste mis. (2026-10-09)
+- **Psychologie zit in het format, visueel in het beeld.** Kies eerst een bewezen format (checklist, kleedkamerbord, brief, chat, vergelijking), daarna het beeld. Zonder echte foto haal je 'prima', geen top. Zie [[Ads Bouwboek — bewezen elementen]]. (2026-11-16, beoordeling Team HÏ Grip van 22 ads)
+- **De pointe noemt het merk.** In een checklist, bord of brief staat het merk of product op de plek waar de aandacht eindigt (het lege vakje, regel 3). (2026-11-16, aanpassing Team HÏ Grip in het canvas)
 
 ### Socials Analyzer
 - **Minder dan 5 posts per vergelijking is een signaal, geen bewijs.** (2026-10-09)
@@ -139,5 +142,11 @@ beheer: Stafchef (03_Denzel)
 - **Signaleer jeugdtoernooien als doelgroeprisico (18–35).** (2026-09-17)
 - **Beachhead-fit eerst:** niet-passende events (basketbal, run) niet als HOOG voorstellen. (2026-09-17)
 - **Een kandidaat is pas outreach-klaar met een contactpersoon of direct contactkanaal.** Een algemeen klantenservice-adres telt niet. (2026-09-21)
+
+## Ads
+
+### Ads Agent
+- **Toets een eigen creative met de beoordelingskaart in [[Ads Bouwboek — bewezen elementen]] en noem de uitkomst een team-oordeel zolang er geen Meta-data is.** Geen van de 22 beoordeelde ads had gedraaid (`meta-ads`, peildatum 16-11-2026). (2026-11-16, Team HÏ Grip)
+- **Gebruik als voorbeeld alleen een ad die het team zelf heeft genoemd.** De eerste ontleding gebruikte rugby 6 als bewijs, terwijl het team dat bord niet noemde; een afgeleid oordeel is geen bewijs. (2026-11-16, controle hoofdsessie)
 
 > Map: [[08 Operations Agent — Index]]

@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "De grote sportmerken winnen met stilstaand beeld waarin één foto het werk doet: On toont het product als object, Gymshark draait een derde van zijn ads zonder aanbod of knop, Nike en adidas zetten een grote kop in het beeld; daarom zijn drie van die formats (kop achter het onderwerp, ingelijste foto met één aanwijslijn, alleen merk en slogan) elk in een voetbal- en rugbyversie gemaakt. De zes ads staan in Claude Design en als PNG in de vault, met A/B-teksten; vóór livegang is toestemming nodig voor de Concordia- en LYRA-foto's en een bevestiging dat de rugby-productfoto's de 2.0 tonen."
-gerelateerd: [2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads]
+gerelateerd: [2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-16-ads-funnel-trio-rugby-voetbal, 2026-11-16-ads-reverse-engineering-bewezen-elementen]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Campagne-ads-2026-11-15"
 deadline: ""

@@ -22,6 +22,8 @@ Altijd in **wit én zwart**. Logo, marges en accenten staan vast — alleen beel
 | **Reel & TikTok** | 9:16 | Performance, Persoonlijk | Premiere / Canva | *nog invullen* |
 | **Pitch · presentatie** | 1920 × 1080 · 16:9 | Sales, B2B | Canva | *nog invullen* |
 
+Feed-ads en feedposts (4:5): bewezen formats, design-elementen en de beoordelingskaart staan in [[Ads Bouwboek — bewezen elementen]].
+
 ---
 
 ## Regels

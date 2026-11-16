@@ -9,7 +9,7 @@ categorie: "Social"
 status: "verwerkt"
 prioriteit: "P1"
 samenvatting: "Advies: maximaal €140 mediabudget voor 14 dagen, één voetbalset en eerst betrouwbare meting. €10 per dag is een gemiddelde en geen bewezen minimum; dag 7 begrenst verlies, dag 14 eindigt de proef zonder automatische verlenging."
-gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november, 2026-10-30-ads-agent-onderzoek, 2026-11-10-ads-plan-bereik-conversie-sales]
+gerelateerd: [2026-11-05-meta-plan-35-euro-per-dag, 2026-11-05-meta-opbouw-getoetst-start-6-november, 2026-10-30-ads-agent-onderzoek, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-11-16-ads-nulmeting-en-tiktok-lessen]
 vervangt: []
 bronbestand: ""
 deadline: ""

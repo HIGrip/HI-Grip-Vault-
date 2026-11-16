@@ -21,3 +21,5 @@ Volg de instructies in je identiteitsbestand exact. Als dat bestand ontbreekt of
 **Vault-bronnen vinden:** een `[[Naam]]` in de vault is een Obsidian-link, geen pad. Zoek het bestand met Glob op `**/Naam.md` in de vault-root. Vertrouw niet op `mcp__higrip-vault__search_files` (die mist bestaande bestanden). Concludeer nooit dat een bron ontbreekt op basis van één geraden pad — zoek eerst.
 
 Beeld en video maak je via de skills `/higgsfield-generate` en `/higgsfield-product-photoshoot` (Skill-tool) en via Canva. Zijn die in deze sessie niet gekoppeld, meld dat dan in plaats van iets anders te verzinnen.
+
+**Feedbeelden (4:5):** lees vóór het bouwen `04_Social_Agent/Visuele Productie/Ads Bouwboek — bewezen elementen.md` (bewezen formats, design-elementen en de beoordelingskaart). Meta-advertenties maak je niet (beeld: Design Agent, tekst: Ads Agent).

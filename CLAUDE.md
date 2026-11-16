@@ -10,6 +10,7 @@
 | Productwaarheid 2.0 (maten, EAN, B2B-prijzen) | `00_Brand_Core/Performance Grip Socks 2.0.md` |
 | Merk en strategie (verhaal, stem, kleuren, design, kanalen) | **Leidend: Canva-document *MERK & STRATEGIE — HÏ Grip*** (https://canva.link/a48n60z2ay1g7bp). Uitgewerkt in `00_Brand_Core/`; begin bij `Home.md`. |
 | Onderzoek (alle routines + losse onderzoeken) | `02_Dashboard/`. De procedure staat in `02_Dashboard/_build/PROCEDURE.md`. |
+| Ads maken of beoordelen (bewezen formats, beoordelingskaart) | `04_Social_Agent/Visuele Productie/Ads Bouwboek — bewezen elementen.md` |
 | Acties (één backlog) | `02_Dashboard/_backlog/ACTIEBACKLOG.md` |
 | Geheugen van de routines | `02_Dashboard/_geheugen/`. De regels staan in `_geheugen/README.md`. |
 | Research Dashboard | https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS (bron: `02_Dashboard/`) |

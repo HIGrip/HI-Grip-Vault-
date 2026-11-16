@@ -78,15 +78,15 @@ Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor 
 
 Bron: [Search Console-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md) van Denzel, alleen lezen, land Nederland, **17-10 t/m 13-11-2026** (28 dagen). Een deel valt in de Google-kernupdate van november, dus de cijfers zijn niet helemaal rustig. Gemiddelde positie is geen vaste plek in de zoekresultaten.
 
-| Zoekterm of pagina | Positie | Vertoningen | Klikken |
-|---|---|---|---|
-| gripsokken (exact) | 5,7 | 1.237 | 12 |
-| grip socks | 9,9 | 335 | 1 |
-| grip sokken | 12,8 | 129 | 1 |
-| gripsok | 8,6 | 37 | niet gegeven |
-| gripsokken via de oude URL hi-grip-gripsokken-1 (stuurt door) | 5,4 | 1.226 | 12 |
-| gripsokken via de collectie | 2,0 | 1 | 0 |
-| gripsokken via de homepage | 35,9 | 15 | 0 |
+| Zoekterm of pagina                                            | Positie | Vertoningen | Klikken      |
+| ------------------------------------------------------------- | ------- | ----------- | ------------ |
+| gripsokken (exact)                                            | 5,7     | 1.237       | 12           |
+| grip socks                                                    | 9,9     | 335         | 1            |
+| grip sokken                                                   | 12,8    | 129         | 1            |
+| gripsok                                                       | 8,6     | 37          | niet gegeven |
+| gripsokken via de oude URL hi-grip-gripsokken-1 (stuurt door) | 5,4     | 1.226       | 12           |
+| gripsokken via de collectie                                   | 2,0     | 1           | 0            |
+| gripsokken via de homepage                                    | 35,9    | 15          | 0            |
 
 Ongeveer 99% van de vertoningen op de kernterm gaat dus naar de oude URL. Over alle Nederlandse zoekopdrachten zijn er 4.464 vertoningen en 146 klikken (positie 7,7). **Een groot deel (ongeveer 43%) van die 146 klikken komt van merkzoekopdrachten** (hi grip 31, higrip 26 en high grip 6, samen 63). Echte nieuwe bezoekers via "gripsokken" zijn er nu dus maar 12. Bij zoektermen met "gripsokken" is de klikratio op mobiel 0,48% (841 vertoningen) en op desktop 1,37% (584); dat bewijst nog niet dat de mobiele pagina slecht is. Niet gemeten: verkeer uit Google in Analytics, indexering en gedrag daarna.
 

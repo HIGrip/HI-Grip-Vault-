@@ -5,6 +5,8 @@ bijgewerkt: 2026-11-16
 
 # Voorbeelden: beste ads (v6) en Lars' Canva-ads
 
+> **LET OP (Lars, 16-11-2026): de eigen v6-voorbeelden hieronder zijn NIET goed en NIET goedgekeurd. Gebruik ze niet als voorbeeld en kopieer ze niet.** Alleen Lars' Canva-ads gelden als referentie. De v6-lijst wordt door de Design Agent herzien (kaart bij Design).
+
 > Map: [[07 Design Agent — Index]]
 
 Status: de 10 beelden komen uit ads v6 (16-11-2026), 16/16 ALLE PASS in `check.py`, onafhankelijke QA CORRIGEER (licht). Lars heeft v6 nog niet formeel goedgekeurd; vervang ze door een goedgekeurde versie zodra die er is. De zwakste ads uit de QA (rb-a 9:16, rb-c 9:16, vb-a 9:16) staan hier bewust niet in. Elk bestand is een JPG van 1080 px breed, <= 300 KB (origineel PNG zit in de werkmap, te herbouwen met `Tools/build.py`). Bronfoto's: [[Foto-index]]. Regels: [[WORKFLOW]].

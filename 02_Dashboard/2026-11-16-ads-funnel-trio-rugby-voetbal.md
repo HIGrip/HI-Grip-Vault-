@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "Van tien Pinterest-ads scoren beweging tegen stilstand (Nike-poster, eventposter), probleem tegenover oplossing met chatbubbels en de vergelijking ons tegen hen het best op stoppen, helderheid en conversie; daarom is één funnel gemaakt met die drie formats als boven-, midden- en onderlaag, elk in een voetbal- en een rugbyversie. Formats die een telefoonscherm of schakelaars nabootsen zijn bewust niet gebruikt, omdat Meta nagemaakte knoppen en meldingen verbiedt; vóór livegang is toestemming nodig voor Concordia-foto IMG_0212."
-gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-16-ad-library-creatieve-analyse]
+gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-16-ad-library-creatieve-analyse, 2026-11-16-ads-reverse-engineering-bewezen-elementen]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Funnel-ads-2026-11-16"
 deadline: ""
@@ -49,7 +49,7 @@ Sonnet beoordeelde elke pin op stoppen, helderheid en conversie (eigen inschatti
 - **Boven, uit pin 09 en 10:** één scherp punt in een bewogen beeld. Bij voetbal zit de onscherpte in de foto (horizontale bewegingsonscherpte, alleen de standvoet scherp), bij rugby in de kop (dunne cursief met een spoor). Het product is dat scherpe punt; bij pin 09 was de schoen te klein, dat is hier omgedraaid.
 - **Midden, uit pin 01 en 02:** twee kolommen met een haarlijn, problemen als chatbubbels in de taal van de sporter. De zwakte van pin 01 (de oplossing zegt niets concreets) is opgelost met een productzin onder de sok.
 - **Onder, uit pin 07:** kop "Niet elke sok houdt je vast." en een tabel met vinkjes. De gekleurde kolom van STLLR is een vol vlak; hier is de kolom alleen omlijnd en breekt het 3-pack door de rand. De rijen zijn alleen claims uit de Brand Core, dus de vergelijking blijft eerlijk.
-- **Niet gebruikt:** het belscherm (pin 04) en de schakelaars (pin 03), omdat Meta advertenties met nagemaakte knoppen, meldingen of schakelaars afwijst. De testimonial (pin 05) en het reviewaantal (pin 06) niet, omdat er geen echte, letterlijke reviews voor ads beschikbaar zijn en Trustpilot in ads een betaald abonnement vraagt.
+- **Niet gebruikt:** het belscherm (pin 04) en de schakelaars (pin 03), omdat Meta advertenties met nagemaakte knoppen, meldingen of schakelaars afwijst. De testimonial (pin 05) niet, omdat er geen echte, letterlijke reviews voor ads beschikbaar zijn. Het reviewcijfer (pin 06) staat niet in deze set, maar mag volgens [[Feiten & Actuele Staat]] wel in ads: 4,6 ★, altijd met de bron Trustpilot (correctie 16-11-2026; hier stond eerst ten onrechte dat dat een betaald abonnement vraagt).
 
 ### Psychologie per laag
 - Boven: contrast tussen beweging en stilstand stuurt de blik naar het product; herkenning van een moment uit de eigen sport (scrum, kappen op kunstgras) werkt als groepstaal.

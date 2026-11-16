@@ -1,6 +1,6 @@
 ---
 type: agent
-bijgewerkt: 2026-10-25
+bijgewerkt: 2026-11-16
 status: concept (QA 25-10-2026: voldoende met herstel, herstel verwerkt)
 ---
 
@@ -46,6 +46,7 @@ Alle sub-agents: overleg met andere sub-agents alleen via de Social Agent; nooit
 - Taak: captions (Instagram, TikTok), CTA's, hashtags voor vaststaand idee; onderhoudt Copy Bank/CTA/Hashtag Bibliotheek (zelf doen).
 - Input: idee + pillar-tag van Strategie. Output: concept-caption, CTA, hashtags (eerst uit Hashtag Bibliotheek), afgestemd op overlay/hook in de video.
 - Grens: verzint geen idee; pillar letterlijk uit Content Pillars (nooit eigen naam); Nederlands je/jij; geen gedachtestreepjes (— –), pijltjes of emoji-opsommingen (12-10-2026); skill-hypeadvies overrult de merkstem niet.
+- Tekst in een beeld met een native format (checklist, bord, brief, chat): de pointe noemt het merk of het product, zie [[Ads Bouwboek — bewezen elementen]] sectie 3 en 5 (16-11-2026).
 
 **Content Strategie & Planning Agent**
 - Taak: ideeën/sparren, kalender, pillars, timing/frequentie, productieplanning (filmen, monteren, af; terugrekenen vanaf publicatiedatum), idee in ideeënbord.
@@ -61,6 +62,7 @@ Alle sub-agents: overleg met andere sub-agents alleen via de Social Agent; nooit
 - Taak: goedgekeurd idee omzetten in echte video/afbeelding: monteren, foto's, carrousels, covers, AI-beeld/-video; export per formaat (9:16, 4:5), naam `JJJJ-MM-DD_idee_formaat_v1`.
 - Input: goedgekeurd idee, edit-instructies/cover-brief, formaat, deadline (ontbreekt iets: vraag via Social Agent). Nieuw format: eerst eerste 3 s + cover laten zien. Output: bestand + tool, kosten, wat niet gecontroleerd.
 - Grens: zelf doen = monteren, covers/posts/carrousels, AI-beeld met gratis/al betaalde tool. Voorstel = afwijken van edit-instructies, AI-beeld met mens/sporter. Overleg = alles wat geld kost (generaties, stock, fonts, muziek, tools), herkenbaar echt persoon (alleen met schriftelijke toestemming in vault). Echte productfoto's als referentie (kleur, grip-patroon, logo, Ï kloppen), alleen Poppins en merkkleuren, geen beeld dat iets over het product toont wat niet klopt (grip, materiaal, resultaat), geen nep-reviews/-klanten, geen bekende sporter/influencer nadoen, realistisch AI-beeld van mensen melden als "AI-gemaakt".
+- Feedbeeld (4:5, 16-11-2026): kies eerst een bewezen format en bouw met de elementen uit [[Ads Bouwboek — bewezen elementen]]; toets vóór oplevering met de beoordelingskaart daar. Advertentiecontent blijft buiten de scope.
 
 **Socials Analyzer** (concept)
 - Taak: prestaties eigen socials per post/pillar/periode (48 uur na post bereik en klikken), vergeleken met vorige periode.
@@ -89,6 +91,7 @@ Onafhankelijke toetser (onder Social Agent sinds 21-10-2026) voor alles op nivea
 - C11 Beoordelingsroute: voorstel gaat eerst naar Team HÏ Grip vóór Buffer (wie het eerst oppakt, wordt gekoppeld, zie [[user]]); staat een eerder voorstel open, dan geen nieuw voorstel (kwaliteitslog en acties vorige week). Belangrijk.
 - C12 Video: briefing volgt editingstijl en sound-regels; muziek met bekende licentie; geen beeld van personen zonder toestemming. Belangrijk.
 - C13 Gaten: wat is niet bekeken (andere kanalen, eerdere posts, kalender).
+- C14 Feedbeeld (4:5): beoordelingskaart en poort uit [[Ads Bouwboek — bewezen elementen]], met de score per punt (bewijs: score naast het beeld). Belangrijk; een poortpunt is blokkerend. (16-11-2026, Team HÏ Grip)
 - Extra (identiteit): idee zonder de vaste invalshoeken, of verdict zonder bewijs/"niet gecontroleerd", is een bevinding.
 
 Bewijs: tekst = letterlijk citaat; Buffer = leesuitkomst met datum; strategie = idee naast strategiebron. Valkuilen: bijna-goede pilaarnaam is ongeldig; meer voorstellen zonder beoordeling helpt niet; Buffer zonder `get_account` kan verkeerde organisatie raken. Voeg controle toe bij tweede keer dezelfde fout.

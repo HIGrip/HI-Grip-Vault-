@@ -37,6 +37,7 @@ Dit is de enige ingang tot de Ads-kennis in dit profiel. De upstream-dirigent (`
 | Experimenten: hypothese, power, looptijd, uitlezing | `ads-test` |
 | Creatives analyseren: invalshoek, hook, format per funnelfase, meetlat per laag, opschalen (HÏ Grip-kennis, 16-11-2026) | [[Ads Kennis — Lessen media buyers (TikTok)]] |
 | Concurrent- en categorie-ads beoordelen: wat grip sock-, sport- en DTC-merken visueel en psychologisch doen, witte plekken (16-11-2026) | [[Ads Kennis — Ad Library-analyse (grip socks en DTC)]] |
+| Eigen creatives toetsen vóór livegang: beoordelingskaart, bewezen formats en anti-patronen uit 22 door het team beoordeelde ads, met per element de maatstaf om in Meta te bewijzen (16-11-2026) | [[Ads Bouwboek — bewezen elementen]] (secties 8 en 9; staat in `04_Social_Agent/Visuele Productie/`) |
 
 Niet aanwezig en niet te gebruiken: `ads-validate`, `ads-create`, `ads-creative`, `ads-generate`, `ads-photoshoot`, `ads-launch`, `ads-optimize`, `ads-monitor`, `ads-setup`, `ads-research`, `ads-report`, `ads-audit`, `ads-landing`, `ads-competitor`, `ads-dna` en alle andere platformen dan Meta (Google alleen via een apart besluit).
 

@@ -198,7 +198,7 @@ Eén paar voor de training, één voor de wedstrijd, één in je kitbag. 3500+ s
 | Gratis verzending vanaf €35, binnen 1 werkdag verzonden | [[Feiten & Actuele Staat]] |
 | 3500+ sporters | [[Feiten & Actuele Staat]] (besluit 11-10) |
 
-Niet gebruikt: Trustpilot-score of -sterren (vraagt een betaald abonnement voor gebruik in ads), "95% meer grip" (hoort bij de wetenschappelijke bron en vraagt bronvermelding die niet in een feedbeeld past), nagemaakte belschermen, meldingen of schakelaars (verboden onder de Meta-regel over niet-bestaande functionaliteit).
+Niet gebruikt: de Trustpilot-score (mag volgens het feitenbestand wel in ads: 4,6 ★, altijd met de bron Trustpilot; correctie 16-11-2026), "95% meer grip" (hoort bij de wetenschappelijke bron en vraagt bronvermelding die niet in een feedbeeld past), nagemaakte belschermen, meldingen of schakelaars (verboden onder de Meta-regel over niet-bestaande functionaliteit).
 
 ## Rechten
 

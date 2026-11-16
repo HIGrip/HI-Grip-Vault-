@@ -32,6 +32,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Posting Frequentie per Platform]]
 
 ### Visuele Productie
+- [[Ads Bouwboek — bewezen elementen]]
 - [[Brand Sound]]
 - [[Creatieve brief — Grip-demo rugby (2026-11)]]
 - [[Editing Stijl Gids Video]]

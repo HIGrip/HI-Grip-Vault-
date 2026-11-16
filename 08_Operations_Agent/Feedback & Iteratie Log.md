@@ -1,12 +1,24 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-11-09
+bijgewerkt: 2026-11-16
 ---
 
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.
+
+---
+
+## 2026-11-16 — Denzel: zelfde "geen vangnet in de backlog"-patroon, nu met echt verlies (content-voorstel 5-10)
+
+**Wat er gebeurde:** op 9 november werd al gesignaleerd dat een deadline-actie uit een weekoverzicht (EK rugby) geen vangnet heeft in de centrale backlog. Deze week bleek diezelfde systeemfout zich te herhalen, maar nu met materieel verlies: het content-voorstel van 5 oktober (5 ideeën) stond alleen als openstaand besluit in de notitie `2026-10-05-weekoverzicht` — die notitie is, bij de bewaartermijn-opruiming (21 dagen voor weekoverzichten), daadwerkelijk verwijderd vóórdat de beoordeling naar `ACTIEBACKLOG.md` werd gemigreerd. Het besluit "content-voorstel week 2026-10-05 beoordelen" is nu nergens meer te vinden: geen notitie, geen backlogpunt, geen `CONTROLE.json`-vermelding. Team HÏ Grip heeft die 5 ideeën nooit beoordeeld en kan dat nu ook niet meer doen.
+
+**Waarom dit opnieuw gebeurde:** de les van 9 november ("How to apply") ging over het *signaleren* van een verstreken deadline, maar loste het onderliggende gat niet op: een besluit dat alleen in een weekoverzicht leeft, overleeft de bewaartermijn-opruiming alleen als het vóór de zondag-cyclus is gemigreerd naar de backlog of een domeinmap (besluit Lars 26-10). Voor de Website-/SEO-gerelateerde P1/P2's gebeurt die migratie al (ze komen terug als consolidatiepunt in `## Acties` van het weekoverzicht zelf, en die regel wordt dan ook los in de backlog teruggevonden — zie bijv. de homepage-herontwerp- en blog-SEO-stappenplan-punten deze week). Voor het content-voorstel is dat nooit gebeurd: de Social Agent-route heeft geen eigen stap die een onbeoordeeld voorstel ouder dan ~3 weken alsnog naar de backlog zet zodra de stapelrem een nieuw voorstel toestaat.
+
+**Les:** "signaleren dat een besluit al weken/weken open staat" is niet voldoende als de drager van dat besluit (de notitie) een bewaartermijn heeft. Elk besluit dat langer dan de kortste bewaartermijn (21 dagen) relevant kan blijven, moet uiterlijk bij het bereiken van die termijn een eigen regel in `ACTIEBACKLOG.md` krijgen — niet pas wanneer het al te laat is.
+
+**How to apply:** de Denzel-weekoverzicht-routine migreert vanaf nu, in stap 6b (Notities die binnenkort verdwijnen), élk nog onbeoordeeld besluit dat alleen in de verdwijnende notitie zelf staat (dus niet al als consolidatiepunt elders) naar een eigen regel in `ACTIEBACKLOG.md`, vóór de eerstvolgende zondag-opruiming — niet alleen de Website-/SEO-type acties zoals nu al gebeurt, maar ook contentvoorstellen en andere hoofdagent-besluiten. Is migreren niet meer mogelijk omdat de notitie al weg is (zoals deze week), dan meldt de routine het verlies expliciet in plaats van het besluit stilzwijgend te laten vallen.
 
 ---
 

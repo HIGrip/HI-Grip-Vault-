@@ -3185,6 +3185,168 @@
   "wat_claude_doet": "conceptinhoud voor de Shopify Knowledge Base opstellen in de vault",
   "wat_jij_doet": "de inhoud in Shopify Admin onder Sales channels, Agentic plaatsen vóór 15 januari 2027"
  },
+ "2026-11-10-ads-plan-bereik-conversie-sales#038f881b": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "UGC-video filmen met schriftelijke toestemming"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#2926d3b1": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "toestemming vragen aan de twee reviewers"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#29f4a4c7": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "conceptontwerp/copy voor de cadeau- en 3-packhoek voorbereiden in het testthema",
+  "wat_jij_doet": "beoordelen en vóór 7-12 live zetten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#393c382a": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "nieuwe campagne inrichten in Meta Ads Manager volgens de inrichtingslijst"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Vault-MCP lokaal opnieuw instellen op het apparaat van Lars"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#5c99e4eb": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "accountlimiet verhogen in Meta Ads Manager"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#73ad1482": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Meta-pixel testen in Events Manager na weigeren/accepteren"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#827f0731": {
+  "beoordeeld": "2026-11-16",
+  "claude": "ja",
+  "wat_claude_doet": "dashboard-sync en publicatie vanaf info@ draaien (gebeurt al aan het eind van elke routine)",
+  "wat_jij_doet": "niets, loopt al automatisch mee"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#8a660c98": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "inventariseren welke gevoelige info (marges, kostprijzen, account-ID's) in de vault staat",
+  "wat_jij_doet": "besluiten en de GitHub-repo privé zetten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#9f7337ec": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "aparte sets voor de Performance Days publiceren in Meta Ads Manager"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
+  "beoordeeld": "2026-11-16",
+  "claude": "ja",
+  "wat_claude_doet": "het identiteitsbestand van de conversie-analyse-agent repareren of aanmaken in de vault",
+  "wat_jij_doet": "controleren"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b8fca7bc": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "batch beoordelen en live-ads uploaden in Meta Ads Manager"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#bd14965a": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "overzicht van voor- en nadelen van 13-11 vs 14-11 start voorbereiden",
+  "wat_jij_doet": "besluiten en de campagne starten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#cc482514": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "orderbron zelf nagaan in Shopify (vraagt orderdetails van klanten)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "de bundelblok-/sectionstore-configuratie in het testthema analyseren en een vermoedelijke oorzaak melden",
+  "wat_jij_doet": "in de browser testen en bevestigen"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d6716dd8": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor de padel-/tennisset voorbereiden zodra de winnende hoek bekend is",
+  "wat_jij_doet": "beoordelen en de set na de winterstop starten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d95d06ba": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "evaluatierapport per set voorbereiden op basis van de data tot 20-11",
+  "wat_jij_doet": "besluiten: doorgaan, wisselen of stoppen"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#ed24832b": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "advies over het optimalisatie-event per testset voorbereiden",
+  "wat_jij_doet": "besluiten en instellen in Meta Ads"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#f7582be3": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "overzicht van budgetopties en stapelregels voorbereiden",
+  "wat_jij_doet": "besluiten over Performance Days-budget en het aanbod"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#5383fe23": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "rugbyshoot met echte spelers plannen"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#91d88fca": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "toestemming vragen aan de LYRA-speler(s)"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#d35f543a": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "laten bevestigen welke productversie op de foto's staat"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#f6ffe290": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "advies voorbereiden of de zes campagneads meegaan in de test",
+  "wat_jij_doet": "besluiten"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
+  "beoordeeld": "2026-11-16",
+  "claude": "ja",
+  "wat_claude_doet": "prijzen op beide productpagina's controleren en een conceptmelding maken in de vault",
+  "wat_jij_doet": "controleren en eventueel corrigeren vóór livegang"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#264e05de": {
+  "beoordeeld": "2026-11-16",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "toestemming vragen aan de Concordia-spelers en de club"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#3ec9c07a": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel voor 9:16-uitsnedes van de winnende formats",
+  "wat_jij_doet": "de uitsnedes laten maken en uploaden naar Meta Ads"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#f0e3d543": {
+  "beoordeeld": "2026-11-16",
+  "claude": "deels",
+  "wat_claude_doet": "advies voor timing/opzet van de test voorbereiden op basis van de evaluatiedata",
+  "wat_jij_doet": "besluiten wanneer en hoe de tien ads getest worden"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

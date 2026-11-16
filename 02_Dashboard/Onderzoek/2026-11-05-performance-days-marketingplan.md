@@ -52,7 +52,7 @@ Aanbod: 1+1 (2 kopen = 2 gratis, 3 kopen = 3 gratis), Black Friday 27-11-2026, l
 - [ ] P2 · Besluit: aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (einddatum 30-11 is beslist; geen harde preheatdatum)
 - [ ] P2 · CTA-kleur afrekenknop in cart-concept 7932 (nu #ccff00 gevuld) blijft open: Design Elementen is hersteld (CTA wit/zwart pill, nooit accentgevuld; QA GOED), de cart wordt pas bij de bouw gecorrigeerd. Besluit Design Agent en Lars
 - [ ] P2 · Over ongeveer 2 weken: Website Agent bouwt na akkoord in het werkthema de landingssectie en campagnestand van de cart en voert T1 tot en met T16 uit in een testomgeving
-- [ ] P3 · Operations controleert navigatieregel en vault_nav van dit en de domeinbestanden
+- [x] P3 · Operations controleert navigatieregel en vault_nav van dit en de domeinbestanden
 
 ## Bevindingen
 

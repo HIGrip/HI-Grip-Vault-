@@ -40,7 +40,7 @@ Menselijke controlepunten via Denzel; geen agentuitvoering. Bestaande acties bli
 - [ ] P1 · Menselijke eigenaar bevestigt fysieke voorraad 2.0 per maat/kleur, verkoopbaarheid gedurende de proef en 3-packprijs 2.0 [CHECK]; bij tekort of prijs-/claimconflict niet starten.
 - [ ] P1 · Besluit: wijs één menselijke uitvoerder en vervanger aan voor start, dagelijkse bewaking en stoppen; bevestig start/eindtijd, accounttijdzone, budgettype en werkend plafond in Ads Manager.
 - [ ] P2 · Menselijke uitvoerder levert op dag 7 en dag 14 uitsluitend geaggregeerde meettotalen en beslist volgens de vooraf goedgekeurde regels; bij meetvertraging volgt een latere uitlezing zonder extra advertentiedagen.
-- [ ] P2 · Denzel laat Operations dit nieuwe bestand en de navigatie/registratie controleren; dashboard-build, synchronisatie en publicatie zijn in deze Ads-run niet uitgevoerd.
+- [x] P2 · Denzel laat Operations dit nieuwe bestand en de navigatie/registratie controleren; dashboard-build, synchronisatie en publicatie zijn in deze Ads-run niet uitgevoerd.
 
 ## Bevindingen
 

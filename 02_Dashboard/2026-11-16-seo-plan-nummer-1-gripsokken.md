@@ -70,7 +70,7 @@ Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor 
 - [ ] P2 · Besluit (Lars): reserveren we als aanname 40 tot 60 uur voor de eerste drie maanden, daarna 4 tot 6 uur per maand (totaal ongeveer 52 tot 78 uur in zes maanden)? Voorstel: ja. Zonder besluit doen we alleen week 1 en 2.
 - [ ] P2 · Besluit (Lars of Timo): mogen we eerst drie alleen-lezen SEO-vaardigheden (seo-page, seo-technical, seo-schema) laten beoordelen voor import? Voorstel: ja. Zonder besluit blijft het handmatig werk.
 - [ ] P3 · Besluit (Lars): budget tot 50 euro per maand voor één zoekwoord- of positietool? Voorstel: nu nee, heroverwegen na 90 dagen. Zonder besluit werken we met gratis Search Console.
-- [ ] P1 · Besluit (Lars): retourbeleid en verzendbelofte. Alleen `/policies/refund-policy` noemt 14 dagen, ongeopend en 25%; Feiten zegt 30 dagen retour. De verzendpagina noemt verzending voor 16:00, Feiten zegt binnen 1 werkdag. Dit staat al in de [[Compliance To-Do Lijst]]. Het is een besluit voor Lars, geen herstel door deze agent; tot dan zetten we geen retour- of verzendclaim in titels of beschrijvingen.
+- [ ] P1 · Besluit (Lars of Timo): pagina's gelijktrekken met Feiten. Het beleid is al besloten (Feiten: 30 dagen retour, verzending binnen 1 werkdag; besluit Lars 25-9). Open is dat `/policies/refund-policy` (14 dagen, ongeopend, 25%) en `/policies/shipping-policy` (voor 16:00) en de product- en collectiepagina's er nog van afwijken. Staat al in de [[Compliance To-Do Lijst]]; herstel door een mens of Copy, niet door deze agent. Tot die pagina's gelijk zijn laten we de verzendzin ("binnen 1 werkdag", Feiten-conform) voorlopig weg uit de collectiemeta en zetten we geen retourclaim in titels of beschrijvingen; daarna mag de zin erin.
 
 ## Bevindingen
 
@@ -88,7 +88,7 @@ Bron: [Search Console-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md) van
 | gripsokken via de collectie                                   | 2,0     | 1           | 0            |
 | gripsokken via de homepage                                    | 35,9    | 15          | 0            |
 
-Ongeveer 99% van de vertoningen op de kernterm gaat dus naar de oude URL. Over alle Nederlandse zoekopdrachten zijn er 4.464 vertoningen en 146 klikken (positie 7,7). **Een groot deel (ongeveer 43%) van die 146 klikken komt van merkzoekopdrachten** (hi grip 31, higrip 26 en high grip 6, samen 63). Echte nieuwe bezoekers via "gripsokken" zijn er nu dus maar 12. Bij zoektermen met "gripsokken" is de klikratio op mobiel 0,48% (841 vertoningen) en op desktop 1,37% (584); dat bewijst nog niet dat de mobiele pagina slecht is. Niet gemeten: verkeer uit Google in Analytics, indexering en gedrag daarna.
+Ongeveer 99% van de vertoningen op de kernterm gaat dus naar de oude URL. Over alle Nederlandse zoekopdrachten zijn er 4.464 vertoningen en 146 klikken (positie 7,7). **Een groot deel (ongeveer 43%) van die 146 klikken komt van merkzoekopdrachten** (hi grip 31, higrip 26 en high grip 6, samen 63). Er zijn 12 klikken op de zoekterm "gripsokken". Bij zoektermen met "gripsokken" is de klikratio op mobiel 0,48% (841 vertoningen) en op desktop 1,37% (584); dat bewijst nog niet dat de mobiele pagina slecht is. Niet gemeten: verkeer uit Google in Analytics, indexering en gedrag daarna.
 
 ### 2. Concurrentie en haalbaarheid
 
@@ -110,7 +110,7 @@ Geen doorsturing van de verkoopbare productpagina naar de collectie. Eén voorst
 
 ### 4. Titel- en beschrijvingsvoorstellen
 
-Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. Lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd. Zolang het beleidsbesluit openstaat staat er geen retour- of verzendclaim in.
+Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. Lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd. Er staat voorlopig geen retour- of verzendclaim in, tot de beleidspagina's gelijk zijn aan Feiten.
 
 - **Productpagina `/products/performance-gripsokken`.** Huidige titel: "Performance Gripsokken - HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (134 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
 - **Collectie `/collections/gripsokken`.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (135 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip."
@@ -123,9 +123,9 @@ Eerst de hoofdpagina's, dan sportvragen, maatadvies en uitleg. Geen gemeten zoek
 
 ### 6. Techniek en pagina's
 
-Op 16-11 zijn vier afwijkingen bevestigd. De collectie noemt 3000+ sporters terwijl Feiten 3500+ zegt. De productpagina noemt absolute grip- en wetenschapsclaims zonder directe bron. De verzendgrens verschilt (30 euro op het product, 35 euro op de collectie). En de retour- en verzendpagina wijken af van Feiten (zie het besluit hierboven). Voor de eerste drie vraagt dat een tekstvoorstel van Copy en akkoord van een mens.
+Op 16-11 zijn afwijkingen van Feiten gezien (tekstuitlezing, mogelijk van de oude URL, dus niet als bevestigde eindtoestand): de collectie noemt 3000+ sporters terwijl Feiten 3500+ zegt; de productpagina noemt absolute grip- en wetenschapsclaims zonder directe bron; de productpagina noemt een verzendgrens van 30 euro terwijl Feiten gratis verzending vanaf 35 euro zegt (afwijking van Feiten, nog te herstellen door mens of Copy); en de retour- en verzendpagina wijken af (zie het besluit hierboven). Elk herstel vraagt een tekstvoorstel van Copy en akkoord van een mens.
 
-Padel en rugby hebben inhoud, maar indexering en navigatie zijn niet nagegaan. De status van de 31 septemberpunten en de oktoberaudit staat in de bijlage; historische vinkjes tellen niet als actueel afgerond. Titels en beschrijvingen worden in Shopify ingevoerd, nooit in themacode. Techniek bouwt alleen in het werkthema en nooit live.
+De status van de 31 septemberpunten en de oktoberaudit staat in de bijlage. Titels en beschrijvingen worden in Shopify ingevoerd, nooit in themacode; Techniek bouwt alleen in het werkthema en nooit live.
 
 ### 7. Autoriteit en links
 
@@ -154,15 +154,15 @@ Beslisregels: gaat de positie in twee vergelijkbare periodes na een wijziging na
 
 Search Console werkt en is alleen-lezen beschikbaar bij Denzel; daarmee is de basisdata er. Google Analytics 4 werkt niet in de standaard Python-omgeving maar wel in de analytics-mcp-omgeving; zonder herstel blijft het gedrag van bezoekers onbekend. Een positie- of zoekwoordtool en een backlinktool ontbreken. Daarvoor gebruiken we de gratis Search Console, het rapport Links en een vaste handmatige steekproef. Paginasnelheid en structured data toetsen we met gratis openbare websites; die cijfers schatten we niet.
 
-De SEO-vaardigheden (plugin) zitten niet in het website-profiel. Het Shopify-CLI is het opdrachtregelprogramma van Shopify waarmee themabestanden naar het werkthema gaan; het is geïnstalleerd maar de werking is niet getest, en live zetten blijft handwerk van een mens. Kosten zijn aannames, geen offertes. De volledige statustabel met eigenaar, prioriteit en gevolg zonder die tool staat in de bijlage.
+De SEO-vaardigheden (plugin) zitten niet in het website-profiel. Het Shopify-CLI is geïnstalleerd maar niet getest; live zetten blijft handwerk van een mens. Kosten zijn aannames. De statustabel staat in de bijlage.
 
-Het startpakket is drie skills: seo-page (controle per pagina), seo-technical (webadressen, sitemap, hoofdversie) en seo-schema (structured data). Zonder de overige skills kunnen we briefs, linkplan, handmatige controles en alle voorstellen in dit plan uitvoeren. De import volgt het derdepartijenprotocol en is niet uitgevoerd.
+Startpakket (P2, binnen een maand, na beoordeling): seo-page, seo-technical en seo-schema. seo-ecommerce en de rest komen later. Zonder deze skills kunnen we alle voorstellen in dit plan handmatig uitvoeren. De import is niet uitgevoerd.
 
 ### 11. Uitvoeringsplan
 
 Website bouwt alleen in het werkthema na `shopify theme list`. Design bepaalt het uiterlijk, SEO valideert, Website-QA toetst, en een mens zet live. Titels en beschrijvingen voert een mens in Admin in.
 
-In totaal gaat het om 40 tot 60 uur (aanname) in de eerste zes maanden, zonder tijd van mensen, Design en Partnership. Week 1 is meten (5 tot 7 uur), week 2 briefs en claims (6 tot 8 uur), week 3 en 4 conceptbouw in het werkthema (9 tot 13 uur), maand 2 gidsen en sportvragen verbeteren (10 tot 15 uur), maand 3 één verbetercyclus en het besluit na 90 dagen (10 tot 17 uur) en maand 4 tot 6 onderhoud en evaluatie (4 tot 6 uur per maand). De tabel met eigenaren, afhankelijkheden en de tien werkpakketten staat in de bijlage.
+In totaal 40 tot 60 uur (aanname) in de eerste drie maanden, daarna 4 tot 6 uur per maand onderhoud; totaal ongeveer 52 tot 78 uur in zes maanden, zonder tijd van mensen, Design en Partnership. Week 1 meten (5 tot 7 uur), week 2 briefs en claims (6 tot 8), week 3 en 4 conceptbouw (9 tot 13), maand 2 gidsen en sportvragen (10 tot 15), maand 3 één verbetercyclus en besluit na 90 dagen (10 tot 17), maand 4 tot 6 onderhoud (4 tot 6 per maand). Tabel en werkpakketten staan in de bijlage.
 
 ### 12. Risico's en eerlijke slotbeoordeling
 
@@ -170,18 +170,7 @@ Risico's: positie verliezen op de eindpagina zonder winst op de collectie, posit
 
 ## Woordenlijst
 
-- **Search Console:** gratis Google-tool die toont hoe vaak onze pagina's in Google staan en worden aangeklikt.
-- **Vertoning:** één keer dat een pagina in de zoekresultaten verschijnt.
-- **Klikratio (CTR):** het deel van de vertoningen dat een klik wordt.
-- **Positie:** gemiddelde plek in de zoekresultaten; geen vaste plaats.
-- **Google Analytics 4 (GA4):** meetsysteem voor websitebezoek.
-- **Hoofdpagina:** de pagina die we voor een zoekterm willen laten ranken.
-- **Hoofdversie van een webadres (canonical):** het adres dat Google als de echte versie kiest.
-- **Doorsturing (301-redirect):** een adres dat bezoekers en Google permanent naar een ander adres brengt.
-- **Shopify-CLI:** opdrachtregelprogramma van Shopify voor themabestanden.
-- **P1, P2, P3:** prioriteit. P1 is nu, P2 binnen een maand, P3 later.
-- **Structured data:** code die Google uitleg geeft over de pagina, bijvoorbeeld voor producten.
-- **Autoriteit:** hoeveel andere betrouwbare sites naar ons linken.
+De woordenlijst (Search Console, vertoning, klikratio, positie, GA4, canonical, 301, Shopify-CLI, P1 tot P3, structured data, autoriteit) staat in de [bijlage](2026-11-16-seo-plan-gripsokken-bijlage.md).
 
 ## Wat niet lukte
 
@@ -193,4 +182,4 @@ Geen scripts, terminal of API-aanroepen gebruikt. De HTTP-keten van de oude URL 
 
 ## Aantekeningen
 
-Correctieronde 2 (kaart t_d27b91ac) op basis van de HTTP-controle van Denzel op 16-11. Eerdere rondes: t_2d26ab2e en t_a503d931. Geen prijzen, live-pagina's, Brand Core of accounts gewijzigd.
+Correctieronde 3 (kaart t_970f5164): uren, beleidsframing, aannames. Eerdere rondes: t_2d26ab2e, t_a503d931, t_d27b91ac. Geen prijzen, live-pagina's, Brand Core of accounts gewijzigd.

@@ -48,6 +48,10 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[04_Social_Agent/Visuele Productie/Campagne-ads-2026-11-15/COPY|Campagne-ads-2026-11-15/COPY]]
 - [[04_Social_Agent/Visuele Productie/Campagne-ads-2026-11-15/Ontwerpfilosofie|Campagne-ads-2026-11-15/Ontwerpfilosofie]]
 
+### Visuele Productie/Funnel-ads-2026-11-16
+- [[04_Social_Agent/Visuele Productie/Funnel-ads-2026-11-16/COPY|Funnel-ads-2026-11-16/COPY]]
+- [[04_Social_Agent/Visuele Productie/Funnel-ads-2026-11-16/Ontwerpfilosofie|Funnel-ads-2026-11-16/Ontwerpfilosofie]]
+
 ### Visuele Productie/Losse-ads-2026-11-15
 - [[04_Social_Agent/Visuele Productie/Losse-ads-2026-11-15/COPY|Losse-ads-2026-11-15/COPY]]
 

@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "De grip sock-markt adverteert op prijs, bundels en bronloze '#1'-claims, met 1 tot 4 versies per ad, terwijl grote DTC-merken op één probleem of demonstratie sturen met 8 tot 36 versies. Voor HÏ Grip liggen categoriebewijs met bron, een eerlijke grip-demonstratie, één sport per creative en een rustige premium stijl vrij."
-gerelateerd: [2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-16-ads-nulmeting-en-tiktok-lessen]
+gerelateerd: [2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-16-ads-funnel-trio-rugby-voetbal]
 vervangt: []
 bronbestand: "09_Ads_Agent/Kennis/Ads Kennis — Ad Library-analyse (grip socks en DTC).md"
 deadline: ""

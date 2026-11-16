@@ -79,6 +79,7 @@ beheer: Stafchef (03_Denzel)
 - **Wijzigingen die alleen via Shopify Admin kunnen (title/meta) zijn geen theme-wijziging.** Schrijf de fix plakklaar uit en zeg wie hem moet doorvoeren. (2026-09-17)
 
 ### Design Agent
+- **Een feedbeeld wint visueel op een echte foto met één scherp focuspunt en typografie die het idee uitvoert.** Alle visuele winnaars bij voetbal staan op een shootfoto; voetbal 9 (alles bewogen, alleen de voet scherp) is de topper. Een vrijstaande productfoto op een vlak haalt 'prima', geen top. Een vol kleurvlak alleen als echt object (post-it), nooit als decoratie. Zie [[Ads Bouwboek — bewezen elementen]]. (2026-11-16, beoordeling Team HÏ Grip van 22 ads)
 - **Grens op de rol `live`, niet op een thema-nummer.** Draai vóór elke theme-actie `shopify theme list`. Actuele ID's staan alleen in [[Technische Procedures]] (werkthema sinds 12-10-2026: `202398040391`). (2026-09-17, bijgewerkt 2026-10-12)
 - **Lees grote templates niet half.** Inventariseer eerst alle secties voordat je zegt wat er wel of niet op de pagina staat. (2026-09-17)
 - **Toets sportpagina's en homepage aan de beachhead-volgorde** (tennis/padel, voetbal, rugby). Rugby ontbrak in de sport-grid. (2026-09-17)

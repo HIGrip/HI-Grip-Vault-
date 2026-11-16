@@ -35,6 +35,7 @@ deadline: ""
 | `Agents Social Agent`, bij Content Maker | Feedbeeld: eerst een bewezen format, dan bouwen, dan toetsen |
 | `Agents Social Agent`, bij Caption & Copy | De pointe noemt het merk |
 | `Agents Social Agent`, Content-QA | Toetspunt C14: beoordelingskaart en poort bij feedbeelden |
+| `Agents Design Agent` (sectie 3 en toetslijst) | Stijlbron voor social feedbeelden; toetspunt D13: beoordelingskaart en poort |
 | `.claude/agents/content-maker-agent.md` | Lees het bouwboek vóór je een feedbeeld bouwt |
 | `Leerregels per Agent` | Twee regels voor de Content Maker; een nieuwe sectie Ads met twee regels voor de Ads Agent |
 | Vault-`CLAUDE.md`, "Waar staat wat" | Een rij voor ads maken of beoordelen, zodat elke sessie het bouwboek vindt |

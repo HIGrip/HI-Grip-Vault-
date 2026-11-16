@@ -13,6 +13,7 @@ bron: beoordeling door Team HÏ Grip op 16-11-2026 van 22 eigen feed-ads op het 
 **Wie gebruikt wat.**
 - **Wie ads maakt.** Dat is altijd een mens, eventueel met Claude in de hoofdsessie. Geen agent maakt advertentiecontent ([[Agent Hiërarchie & Structuurschema]]). Gebruik sectie 3 en 4 als recept en sectie 8 als toets vóór oplevering.
 - **Ads Agent.** Gebruikt sectie 8 en 9 om creatives te beoordelen en testvoorstellen te schrijven, niet om content te maken.
+- **Design Agent.** Maakt de visuele uitwerking van social posts: sectie 3 en 4 als bouwrecept, sectie 7 voor het rugbybeeld, sectie 8 als toets (D13 in zijn toetslijst).
 - **Content Maker.** Voor organische feedposts (4:5) gelden dezelfde formats en elementen.
 - **Content-QA.** Toetst feedbeelden met sectie 8.
 

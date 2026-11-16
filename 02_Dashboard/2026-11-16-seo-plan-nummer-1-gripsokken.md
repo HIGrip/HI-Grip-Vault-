@@ -112,7 +112,7 @@ Geen doorsturing van de verkoopbare productpagina naar de collectie. Eén voorst
 
 Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. Lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd. Zolang het beleidsbesluit openstaat staat er geen retour- of verzendclaim in.
 
-- **Productpagina `/products/performance-gripsokken`.** Huidige titel: "Performance Gripsokken - HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (135 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
+- **Productpagina `/products/performance-gripsokken`.** Huidige titel: "Performance Gripsokken - HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (134 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
 - **Collectie `/collections/gripsokken`.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (134 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip."
 
 De claim over 95% meer grip op de productpagina moet eerst tegen Feiten worden gehouden. De eerste tien interne links staan in de [bijlage](2026-11-16-seo-plan-gripsokken-bijlage.md).
@@ -123,11 +123,13 @@ Eerst de hoofdpagina's, dan sportvragen, maatadvies en uitleg. Geen gemeten zoek
 
 ### 6. Techniek en pagina's
 
-Bevestigd op 16-11: de beleidspagina's wijken af van Feiten (zie besluit hierboven), de collectie noemt 3000+ sporters terwijl Feiten 3500+ zegt, de productpagina noemt absolute grip- en wetenschapsclaims zonder directe bron, en de verzendgrens verschilt (30 euro op het product, 35 euro op de collectie). Dat vraagt een tekstvoorstel van Copy en akkoord van een mens. Padel en rugby hebben inhoud, maar indexering en navigatie zijn niet nagegaan. De bijlage bevat de status van alle 31 septemberpunten en de oktoberaudit. Historische vinkjes tellen niet als actueel afgerond. Titels en beschrijvingen worden in Shopify ingevoerd, nooit in themacode. Techniek bouwt alleen in het werkthema, nooit live.
+Op 16-11 zijn vier afwijkingen bevestigd. De collectie noemt 3000+ sporters terwijl Feiten 3500+ zegt. De productpagina noemt absolute grip- en wetenschapsclaims zonder directe bron. De verzendgrens verschilt (30 euro op het product, 35 euro op de collectie). En de retour- en verzendpagina wijken af van Feiten (zie het besluit hierboven). Voor de eerste drie vraagt dat een tekstvoorstel van Copy en akkoord van een mens.
+
+Padel en rugby hebben inhoud, maar indexering en navigatie zijn niet nagegaan. De status van de 31 septemberpunten en de oktoberaudit staat in de bijlage; historische vinkjes tellen niet als actueel afgerond. Titels en beschrijvingen worden in Shopify ingevoerd, nooit in themacode. Techniek bouwt alleen in het werkthema en nooit live.
 
 ### 7. Autoriteit en links
 
-We kennen de linkprofielen niet. Eerst Search Console Links bekijken. Partnership zoekt als aanname 8 tot 12 gerichte kansen per maand en schrijft als aanname 4 tot 6 contactconcepten. Doel, geen voorspelling: 1 tot 2 relevante plaatsingen per maand vanaf maand 2. Bestaande club- en retailrelaties eerst. Een mens kiest de ontvanger, verstuurt, volgt maximaal één keer op en publiceert. Geen gekochte links en geen reviewruil. Bronnenlijst en uren staan in de bijlage.
+We kennen de linkprofielen van onszelf en van de concurrenten niet. Eerst bekijken we in Search Console het rapport Links. Daarna zoekt Partnership als aanname 8 tot 12 gerichte kansen per maand en schrijft zij 4 tot 6 contactconcepten. Ons doel, geen voorspelling, is 1 tot 2 relevante plaatsingen per maand vanaf maand 2. We beginnen bij bestaande club- en retailrelaties. Een mens kiest de ontvanger, verstuurt het bericht, volgt maximaal één keer op en publiceert. We kopen geen links en doen geen reviewruil. De bronnenlijst en de uren staan in de bijlage.
 
 ### 8. Vertrouwen en vindbaarheid in AI
 
@@ -135,9 +137,9 @@ We kennen de linkprofielen niet. Eerst Search Console Links bekijken. Partnershi
 
 ### 9. Meten en doelen
 
-De klok start op de goedgekeurde startdatum. Bezoekers uit Google meten we in Google Analytics 4 (sessies met bron google en medium organic) en niet via Search Console-klikken. "Vervolg" is het aandeel van die bezoeken dat nog een andere pagina opent. Een baseline daarvoor ontbreekt nog. Wekelijks signaleert de Conversie & Analyse Agent; hij voert niets uit. Onder circa 100 echte sessies per week is gedrag alleen indicatief. We wachten na de Google-update minstens een week met oordelen.
+De klok start op de goedgekeurde startdatum. Bezoekers uit Google meten we in Google Analytics 4 (sessies met bron google en medium organic) en niet via Search Console-klikken. Wekelijks signaleert de Conversie & Analyse Agent; hij voert niets uit. Onder circa 100 echte sessies per week is gedrag alleen indicatief. Na de Google-update wachten we minstens een week met oordelen. Omdat de positie kan meeschuiven zodra Google de nieuwe URL kiest, rapporteren we de zoekterm gripsokken met alle pagina's samen.
 
-**Doelen, geen voorspellingen.** Zoekterm gripsokken, Nederland, laatste 28 dagen, alle pagina's samen. Klikken zijn vertoningen maal klikratio. In de eerste versie lag het klikdoel hoger dan wat vertoningen maal klikratio opleverde (9,7, 14,4 en 19,5 tegen 12, 15 en 20); dat is hersteld door de vertoningsdoelen te verhogen tot het huidige niveau en hoger. Na 30 dagen is het een vloer: het huidige niveau vasthouden.
+**Doelen, geen voorspellingen.** Zoekterm gripsokken, Nederland, laatste 28 dagen, alle pagina's samen. Klikken zijn vertoningen maal klikratio. Na 30 dagen is het doel een vloer: het huidige niveau vasthouden.
 
 | Moment | Positie | Vertoningen | Klikratio | Klikken | Doel voor de collectie |
 |---|---|---|---|---|---|
@@ -146,43 +148,25 @@ De klok start op de goedgekeurde startdatum. Bezoekers uit Google meten we in Go
 | Na 90 dagen | 4,5 of beter | 1.350 of meer | 1,5% of meer | 20 | 150 vertoningen, 3 klikken |
 | Na 180 dagen | 3,5 of beter | 1.500 of meer | 2,0% of meer | 30 | 400 vertoningen, 10 klikken |
 
-Beslisregels: gaat de positie in twee vergelijkbare periodes na een wijziging naar slechter dan 7 of vallen de klikken onder 8, dan stoppen we met opschalen en zoeken we de oorzaak; geen automatisch terugdraaien. Is de klikratio laag bij een stabiele positie, dan onderzoeken we de zoekresultaatweergave. Is de collectie na 90 dagen nog onzichtbaar maar de productpagina stabiel, dan blijft B en wegen we A opnieuw. Verliezen beide, dan zoeken we eerst de oorzaak. Een meetgat is geen groen licht. Winst op de collectie telt niet als succes bij verlies in totaal.
+Beslisregels: gaat de positie in twee vergelijkbare periodes na een wijziging naar slechter dan 7, of vallen de klikken onder 8, dan stoppen we met opschalen en zoeken we de oorzaak. Er is geen automatisch terugdraaien. Is de collectie na 90 dagen nog onzichtbaar maar de productpagina stabiel, dan blijft B en wegen we A opnieuw. Verliezen beide, dan zoeken we eerst de oorzaak. Een meetgat is geen groen licht.
 
 ### 10. Tools en toegang
 
-Status volgens Denzels gecontroleerde inventaris. Kosten zijn aannames, geen offertes.
+Search Console werkt en is alleen-lezen beschikbaar bij Denzel; daarmee is de basisdata er. Google Analytics 4 werkt niet in de standaard Python-omgeving maar wel in de analytics-mcp-omgeving; zonder herstel blijft het gedrag van bezoekers onbekend. Een positie- of zoekwoordtool en een backlinktool ontbreken. Daarvoor gebruiken we de gratis Search Console, het rapport Links en een vaste handmatige steekproef. Paginasnelheid en structured data toetsen we met gratis openbare websites; die cijfers schatten we niet.
 
-| Tool | Status | Gratis alternatief | Kosten (aanname) | Regelt en prioriteit; zonder |
-|---|---|---|---|---|
-| Search Console | Werkt, alleen lezen bij Denzel | Handmatige export | Geen extra | Denzel, P1; basisdata is er |
-| Google Analytics 4 | Werkt niet in de standaard Python-omgeving, wel in de analytics-mcp-omgeving | Handmatig rapport | Geen extra | Denzel of Lars, P1; gedrag blijft onbekend |
-| SEO-vaardigheden (plugin) | Niet in het website-profiel | Handmatig, webtools | 0 euro, wel beoordelingstijd | Lars of Timo, P2; briefs kunnen zonder |
-| Positie- en zoekwoordtool | Ontbreekt | Search Console, vaste steekproef | Plafond 50 euro per maand | Lars, P3; geen dagelijkse positie |
-| Backlinks | Ontbreekt | Search Console Links | 0 euro, later offerte | Lars of Partnership, P2; kansenlijst kan |
-| Paginasnelheid | Geen sleutel | PageSpeed-website | 0 euro | Lars of SEO, P1; niet schatten |
-| Structured data testen | Niet aangetoond | Openbare validators | 0 euro | SEO of Lars, P1 |
-| Shopify-CLI | Geïnstalleerd, werking niet getest | Mens in Admin | Geen | Lars of Timo, P1 |
+De SEO-vaardigheden (plugin) zitten niet in het website-profiel. Het Shopify-CLI is het opdrachtregelprogramma van Shopify waarmee themabestanden naar het werkthema gaan; het is geïnstalleerd maar de werking is niet getest, en live zetten blijft handwerk van een mens. Kosten zijn aannames, geen offertes. De volledige statustabel met eigenaar, prioriteit en gevolg zonder die tool staat in de bijlage.
 
-**Startpakket van drie skills:** seo-page (controle per pagina), seo-technical (webadressen, sitemap, hoofdversie) en seo-schema (structured data inventariseren en valideren). Zonder de overige skills kunnen we: briefs, linkplan, handmatige controles en alle voorstellen in dit plan. De overige skills (seo-audit, seo-cluster, seo-content-brief, seo-ecommerce, seo-geo, seo-drift) kunnen later; seo-dataforseo en seo-backlinks hebben een betaalde sleutel nodig. De import volgt het derdepartijenprotocol en is niet uitgevoerd.
+Het startpakket is drie skills: seo-page (controle per pagina), seo-technical (webadressen, sitemap, hoofdversie) en seo-schema (structured data). Zonder de overige skills kunnen we briefs, linkplan, handmatige controles en alle voorstellen in dit plan uitvoeren. De import volgt het derdepartijenprotocol en is niet uitgevoerd.
 
 ### 11. Uitvoeringsplan
 
 Website bouwt alleen in het werkthema na `shopify theme list`. Design bepaalt het uiterlijk, SEO valideert, Website-QA toetst, en een mens zet live. Titels en beschrijvingen voert een mens in Admin in.
 
-| Periode | Werk en eigenaar | Uren (aanname) | Afhankelijk van |
-|---|---|---|---|
-| Week 1 | **Taak 1: Google Analytics-meting herstellen (Denzel of Lars)**; Search Console-uitsplitsingen en URL-inspectie (SEO, Conversie) | 5 tot 7 | Niets live |
-| Week 2 | Brief collectie en productpagina, linkplan, claims (Copy, SEO) | 6 tot 8 | Besluit over A of B |
-| Week 3 en 4 | Concept collectie en hoofdgids in werkthema (Copy, Website) | 9 tot 13 | Toegang, Design, QA, mens live |
-| Maand 2 | Bestaande gidsen en sportvragen verbeteren (Copy, SEO) | 10 tot 15 | Meting na 60 dagen |
-| Maand 3 | Eén verbetercyclus en besluit na 90 dagen | 10 tot 17 | Geen bulkuitrol |
-| Maand 4 tot 6 | Onderhoud en evaluatie | 4 tot 6 per maand | Evaluatie na 180 dagen |
-
-Samen 40 tot 60 uur, zonder tijd van mensen, Design en Partnership. De tien werkpakketten staan in de bijlage.
+In totaal gaat het om 40 tot 60 uur (aanname) in de eerste zes maanden, zonder tijd van mensen, Design en Partnership. Week 1 is meten (5 tot 7 uur), week 2 briefs en claims (6 tot 8 uur), week 3 en 4 conceptbouw in het werkthema (9 tot 13 uur), maand 2 gidsen en sportvragen verbeteren (10 tot 15 uur), maand 3 één verbetercyclus en het besluit na 90 dagen (10 tot 17 uur) en maand 4 tot 6 onderhoud en evaluatie (4 tot 6 uur per maand). De tabel met eigenaren, afhankelijkheden en de tien werkpakketten staat in de bijlage.
 
 ### 12. Risico's en eerlijke slotbeoordeling
 
-Risico's: positie verliezen op het product zonder winst op de collectie, een Google-update of seizoenseffect, meetgaten, ontbrekende autoriteit en beperkte teamtijd. Oude besluiten uit het septemberplan (doorsturen van het eerste product, dynamische sterren) voeren we niet uit. Top 3 verdient een beperkte proef. Nummer 1 is onzeker en we noemen geen kanspercentage. Na 180 dagen bepalen we of verder investeren loont op basis van bruikbare bezoekers en commerciële context. Onbekend blijft: welke URL Google als hoofdversie ziet, de autoriteit van concurrenten, de actuele zoekresultaten en gevalideerd gedrag.
+Risico's: positie verliezen op de eindpagina zonder winst op de collectie, positie die meeschuift als Google de nieuwe URL kiest, een Google-update of seizoenseffect, meetgaten, ontbrekende autoriteit en beperkte teamtijd. Oude besluiten uit het septemberplan (doorsturen van het eerste product naar de collectie, dynamische sterren) voeren we niet uit. Top 3 verdient een beperkte proef. Nummer 1 is onzeker en we noemen geen kanspercentage. Onbekend blijft: welke URL Google als hoofdversie kiest, de autoriteit van concurrenten en gevalideerd gedrag.
 
 ## Woordenlijst
 
@@ -193,14 +177,15 @@ Risico's: positie verliezen op het product zonder winst op de collectie, een Goo
 - **Google Analytics 4 (GA4):** meetsysteem voor websitebezoek.
 - **Hoofdpagina:** de pagina die we voor een zoekterm willen laten ranken.
 - **Hoofdversie van een webadres (canonical):** het adres dat Google als de echte versie kiest.
-- **Doorsturing (redirect):** een adres dat bezoekers automatisch naar een ander adres brengt.
+- **Doorsturing (301-redirect):** een adres dat bezoekers en Google permanent naar een ander adres brengt.
+- **Shopify-CLI:** opdrachtregelprogramma van Shopify voor themabestanden.
+- **P1, P2, P3:** prioriteit. P1 is nu, P2 binnen een maand, P3 later.
 - **Structured data:** code die Google uitleg geeft over de pagina, bijvoorbeeld voor producten.
 - **Autoriteit:** hoeveel andere betrouwbare sites naar ons linken.
-- **Doel versus voorspelling:** een doel is een ondergrens om op te sturen, geen verwachting.
 
 ## Wat niet lukte
 
-Geen scripts, terminal of API-aanroepen gebruikt. Niet gecontroleerd: de HTTP-keten van de oude URL, de hoofdversie die Google kiest, indexering, backlinks, paginasnelheid, structured data, de huidige metabeschrijvingen, mobiel en de Google NL-ranglijst. Onafhankelijke QA volgt.
+Geen scripts, terminal of API-aanroepen gebruikt. De HTTP-keten van de oude URL is door Denzel gecontroleerd (16-11) en door mij overgenomen, niet zelf herhaald. Niet gecontroleerd: de hoofdversie die Google kiest, indexering, backlinks, paginasnelheid, structured data, de huidige metabeschrijvingen, mobiel en de Google NL-ranglijst. Onafhankelijke QA volgt.
 
 ## Bronnen
 
@@ -208,4 +193,4 @@ Geen scripts, terminal of API-aanroepen gebruikt. Niet gecontroleerd: de HTTP-ke
 
 ## Aantekeningen
 
-Correctieronde 1, uitgevoerd door de Website Agent op kaart t_a503d931 (concept t_2d26ab2e). Eigen tekstuitlezing van de oude URL en de collectie op 16-11. Geen prijzen, live-pagina's, Brand Core of accounts gewijzigd.
+Correctieronde 2 (kaart t_d27b91ac) op basis van de HTTP-controle van Denzel op 16-11. Eerdere rondes: t_2d26ab2e en t_a503d931. Geen prijzen, live-pagina's, Brand Core of accounts gewijzigd.

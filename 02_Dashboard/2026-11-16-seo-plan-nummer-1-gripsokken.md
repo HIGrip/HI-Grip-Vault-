@@ -8,7 +8,7 @@ routine: ""
 categorie: SEO
 status: nieuw
 prioriteit: P1
-samenvatting: "Op gripsokken rankt vrijwel uitsluitend een oude productpagina, niet de collectie. Nu die productpagina beschermen en verbeteren; de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont. Concept, niets live."
+samenvatting: "Op gripsokken rankt vrijwel uitsluitend een oude URL die doorstuurt naar de productpagina /products/performance-gripsokken, niet de collectie. Nu die eindpagina beschermen en verbeteren; de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont. Concept, niets live."
 gerelateerd: [2026-10-27-seo-audit-higrip-nl, 2026-11-16-seo-plan-gripsokken-bijlage, 2026-11-16-seo-gsc-nulmeting-gripsokken]
 vervangt: []
 bronbestand: ""
@@ -23,24 +23,30 @@ deadline: ""
 Drie acties die niets installeren en niets live zetten. Alle uren zijn aannames.
 
 1. **Het meetsysteem Google Analytics 4 herstellen** zodat we bezoekers uit Google kunnen zien. Eigenaar: Denzel of Lars. Circa 2 tot 3 uur.
-2. **Titel- en beschrijvingsvoorstellen laten toetsen** voor de pagina die nu rankt en voor de collectie (voorstellen staan hieronder en in de bijlage). Eigenaar: Website Copy Agent samen met SEO Agent. Circa 1 tot 2 uur. Een mens voert een wijziging pas uit na akkoord.
+2. **Titel- en beschrijvingsvoorstellen laten toetsen** voor de productpagina die nu rankt en voor de collectie (zie sectie 4). Eigenaar: Website Copy Agent samen met SEO Agent. Circa 1 tot 2 uur. Een mens voert een wijziging pas uit na akkoord.
 3. **Vijf extra Search Console-uitsplitsingen opvragen** (exacte lijst in de bijlage). Eigenaar: Denzel. Circa 1 uur.
 
 ## In het kort
 
-Op het zoekwoord "gripsokken" staan we in Nederland gemiddeld op positie 5,7, maar bijna alle vertoningen komen van een oude productpagina (`/products/hi-grip-gripsokken-1`) en niet van de collectie `/collections/gripsokken`. Mijn advies in één zin: **nu de rankende productpagina beschermen en optimaliseren (optie B); de collectie gefaseerd opbouwen en alleen tot hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De verkoopbare productpagina wordt nooit doorgestuurd naar de collectie. Dat bewaart wat al werkt en laat ons toch leren of de collectie het kan overnemen.
+Op het zoekwoord "gripsokken" staan we in Nederland gemiddeld op positie 5,7. Bijna alle vertoningen komen van de oude URL `/products/hi-grip-gripsokken-1`, niet van de collectie `/collections/gripsokken`.
+
+**Geverifieerd door Denzel op 16-11 (live HTTP-controle):** die oude URL is een doorsturing in twee stappen. `/products/hi-grip-gripsokken-1` geeft een 301 naar `/products/hi-grip-gripsokken`, en die geeft een 301 naar `/products/performance-gripsokken` (status 200). Dit staat al sinds 25-9 zo (ook in Feiten & Actuele Staat). De pagina die feitelijk rankt is dus de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL. Search Console toont na 7 weken nog de oude URL: Google heeft de doorsturing nog niet volledig verwerkt.
+
+Mijn advies in één zin: **nu die eindpagina beschermen en optimaliseren (optie B); de collectie gefaseerd opbouwen en alleen tot hoofdpagina maken als zij na 90 dagen tractie toont (optie A).** De verkoopbare productpagina wordt nooit doorgestuurd naar de collectie.
+
+**De zichtbaarheid onder de oude URL is tijdelijk.** Ze wordt pas definitief zodra Google de nieuwe URL als hoofdversie kiest. Dan kan de positie in Search Console meeschuiven. Daarom meten we op queryniveau (de zoekterm gripsokken, alle pagina's samen) en niet alleen per URL. De hoofdversie (canonical) en de huidige metabeschrijving zijn nog niet vastgesteld.
 
 Over de kans op de eerste plek ben ik eerlijk. Top 10 halen we al gemiddeld. Top 3 binnen 3 tot 9 maanden is een redelijke inschatting (kans: middel). Stabiel nummer 1 binnen zes maanden is onwaarschijnlijk (kans: laag); binnen 9 tot 18 maanden is het een hypothese (kans: middel). Dit zijn kwalitatieve inschattingen, geen berekende percentages, want we kennen de autoriteit van concurrenten niet.
 
-Het volume is klein. Het plan gaat om tientallen tot enkele honderden extra klikken per 28 dagen, niet om duizenden. [Bijlage met briefs, links, bewijs en auditstatus](2026-11-16-seo-plan-gripsokken-bijlage.md). De onafhankelijke toets door Website-QA volgt nog. E-mail Marketing is overgeslagen omdat het niet relevant is. Design krijgt alleen voorstellen voor het uiterlijk.
+Het volume is klein: tientallen tot enkele honderden extra klikken per 28 dagen. [Bijlage met briefs, links, tools, bewijs en auditstatus](2026-11-16-seo-plan-gripsokken-bijlage.md). Website-QA toetst nog. E-mail Marketing is overgeslagen (niet relevant); Design krijgt alleen voorstellen voor het uiterlijk.
 
 ## Route naar #1
 
-1. **Meten en uitzoeken (week 1 en 2).** We herstellen de bezoekmeting, vragen extra Search Console-cijfers op en laten Google-inspectie van de oude URL, de huidige productpagina en de collectie uitvoeren. Succes: twee weken betrouwbare meetdata en een antwoord op de vraag welke URL Google als hoofdversie kiest. Onzeker: de oude URL gedraagt zich in een browser anders dan in een tekstuitlezing; dat moet eerst helder zijn.
-2. **De rankende productpagina beschermen en aantrekkelijker maken (week 2 tot 4).** Pagina: `/products/hi-grip-gripsokken-1`. Nieuwe titel en beschrijving voor meer klikken, te sterke claims bijstellen, interne links erheen. Succes na 30 dagen: positie niet slechter dan 6,5 en minstens 12 klikken per 28 dagen. Voor nummer 1 is hier alleen de klikratio (het aandeel vertoningen dat een klik wordt) te winnen, geen autoriteit.
+1. **Meten en uitzoeken (week 1 en 2).** Bezoekmeting herstellen, extra Search Console-cijfers opvragen en Google-inspectie laten uitvoeren van de oude URL, de tussen-URL, de eindpagina en de collectie. Succes: twee weken betrouwbare meetdata en een antwoord op welke URL Google als hoofdversie kiest.
+2. **De rankende eindpagina beschermen en aantrekkelijker maken (week 2 tot 4).** Pagina: `/products/performance-gripsokken`. Nieuwe titel en beschrijving voor meer klikken, te sterke claims bijstellen, interne links erheen (nooit naar de oude URL). Succes na 30 dagen: positie niet slechter dan 6,5 en minstens 12 klikken per 28 dagen. Voor nummer 1 is hier alleen de klikratio (het aandeel vertoningen dat een klik wordt) te winnen, geen autoriteit.
 3. **De collectie opbouwen (week 3 tot maand 3).** Pagina: `/collections/gripsokken`. Korte uitleg bovenaan, keuzehulp voor model 1.0 en 2.0, sportingangen, veelgestelde vragen met bronnen. Succes na 90 dagen: minstens 150 vertoningen en 3 klikken voor "gripsokken" op de collectie. Zonder dat blijft de productpagina de hoofdpagina.
-4. **Autoriteit opbouwen (vanaf maand 2).** Voor positie 1 zijn goede inkomende links vermoedelijk de grootste ontbrekende schakel. We weten niet hoeveel links onze site of die van FitSockr, Proskary, Voetbalshop en GXOX heeft. Succes na 90 dagen: 2 tot 4 relevante plaatsingen (clubs, redacties). Een mens kiest de ontvangers en verstuurt het contact.
-5. **Van positie 3 naar 1 (maand 4 tot 9 en verder).** Inhoud en keuzehulp minstens zo goed maken als die van de genoemde concurrenten en de klikratio verder verbeteren. Succes na 180 dagen: positie 3,5 of beter. Onzeker blijft: de invloed van Google-updates, AI-overzichten in de zoekresultaten en de autoriteit van concurrenten. Plek 1 is hier een hypothese, geen belofte.
+4. **Autoriteit opbouwen (vanaf maand 2).** Voor positie 1 zijn goede inkomende links vermoedelijk de grootste ontbrekende schakel. Succes na 90 dagen: 2 tot 4 relevante plaatsingen (clubs, redacties). Een mens kiest de ontvangers en verstuurt het contact.
+5. **Van positie 3 naar 1 (maand 4 tot 9 en verder).** Inhoud en keuzehulp minstens zo goed maken als die van de concurrenten en de klikratio verder verbeteren. **Het succescriterium is positie 3,5 of beter na 180 dagen.** Of plek 1 daarna haalbaar is, hangt af van autoriteit (inkomende links) en blijft een hypothese, geen belofte.
 
 ## Kerncijfers
 
@@ -51,16 +57,20 @@ Het volume is klein. Het plan gaat om tientallen tot enkele honderden extra klik
 
 ## Acties
 
-Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor dit plan. Elk besluit is een aparte ja/nee-vraag.
+Bestaande auditacties blijven bij hun bron; hier staan alleen de besluiten voor dit plan. Elk besluit is een aparte ja/nee-vraag. **P1** betekent nu, **P2** binnen een maand, **P3** later.
 
-- [ ] P1 · Besluit (Lars): akkoord met de stelling "nu de rankende productpagina beschermen en optimaliseren (B), de collectie gefaseerd opbouwen en pas hoofdpagina maken na 90 dagen tractie (A)"? Voorstel: ja. Zonder besluit wijzigen we niets aan beide pagina's en blijft het bij meten.
-- [ ] P1 · Besluit (Lars of Timo): akkoord dat een mens de nieuwe titel en beschrijving voor de rankende productpagina in Shopify invoert, na toets door Website-QA? Voorstel: ja. Zonder besluit blijft de klikratio rond 1%.
+- [ ] P1 · Besluit (Lars): akkoord met de stelling "nu de rankende eindpagina `/products/performance-gripsokken` beschermen en optimaliseren (B), de collectie gefaseerd opbouwen en pas hoofdpagina maken na 90 dagen tractie (A)"? Voorstel: ja. Zonder besluit wijzigen we niets aan beide pagina's en blijft het bij meten.
+- [ ] P1 · Besluit (Lars of Timo): startdatum van de aanpak. Voorstel: de maandag na bevestigd einde van de novemberkernupdate van Google, uiterlijk 1 december. Zonder besluit blijft het bij meten en start de klok van de doelen niet.
+- [ ] P1 · Besluit (Lars of Timo): mag een mens de nieuwe titel en beschrijving voor de productpagina `/products/performance-gripsokken` (huidige titel "Performance Gripsokken - HÏ Grip") in Shopify invoeren, na toets door Website-QA? Voorstel: ja. Zonder besluit blijft de klikratio rond 1%.
+- [ ] P2 · Besluit (Lars of Timo): mag een mens in Shopify de doorsturingsketen inkorten tot één stap (`/products/hi-grip-gripsokken-1` rechtstreeks naar `/products/performance-gripsokken`) en de hoofdversie (canonical) laten toetsen via URL-inspectie in Search Console? Voorstel: ja, pas na de inspectie van week 1 en 2. Niet uitgevoerd door deze agent. Zonder besluit blijft de keten van twee stappen en meten we op queryniveau.
+- [ ] P2 · Besluit (Lars): mag de collectie een nieuwe titel en beschrijving krijgen (voorstel in sectie 4)? Voorstel: ja. Zonder besluit blijft de huidige collectietitel (61 tekens, net te lang).
 - [ ] P2 · Besluit (Lars): wordt de hoofdkop van de collectie "Gripsokken voor padel, tennis, voetbal en rugby"? Voorstel: ja. Zonder besluit blijft "Kies je gripsok." staan.
-- [ ] P2 · Besluit (Lars): mag er een korte keuzehulp en een vroeg productraster bovenaan de collectie? Voorstel: ja. Zonder besluit blijft de collectie ongewijzigd en kan zij geen tractie opbouwen.
+- [ ] P2 · Besluit (Lars): mag er een korte keuzehulp (model 1.0 of 2.0) op de collectie komen? Voorstel: ja. Zonder besluit verwijst de collectie niet beter naar het juiste model.
+- [ ] P2 · Besluit (Lars): mag het productraster vroeg op de collectie komen, direct onder de korte uitleg? Voorstel: ja. Zonder besluit blijft de collectie ongewijzigd en kan zij geen tractie opbouwen.
 - [ ] P2 · Besluit (Lars): reserveren we als aanname 40 tot 60 uur voor de eerste drie maanden? Voorstel: ja. Zonder besluit doen we alleen week 1 en 2.
 - [ ] P2 · Besluit (Lars of Timo): mogen we eerst drie alleen-lezen SEO-vaardigheden (seo-page, seo-technical, seo-schema) laten beoordelen voor import? Voorstel: ja. Zonder besluit blijft het handmatig werk.
 - [ ] P3 · Besluit (Lars): budget tot 50 euro per maand voor één zoekwoord- of positietool? Voorstel: nu nee, heroverwegen na 90 dagen. Zonder besluit werken we met gratis Search Console.
-- [ ] P1 · Besluit (Lars): retourbeleid en verzendbelofte. De beleidspagina's noemen 14 dagen, ongeopend en 25% (retour) en verzending voor 16:00; Feiten zegt 30 dagen retour en verzending binnen 1 werkdag. Dit staat al in de [[Compliance To-Do Lijst]]. Het is een besluit voor Lars, geen herstel door deze agent; tot dan zetten we geen retour- of verzendclaim in titels of beschrijvingen.
+- [ ] P1 · Besluit (Lars): retourbeleid en verzendbelofte. Alleen `/policies/refund-policy` noemt 14 dagen, ongeopend en 25%; Feiten zegt 30 dagen retour. De verzendpagina noemt verzending voor 16:00, Feiten zegt binnen 1 werkdag. Dit staat al in de [[Compliance To-Do Lijst]]. Het is een besluit voor Lars, geen herstel door deze agent; tot dan zetten we geen retour- of verzendclaim in titels of beschrijvingen.
 
 ## Bevindingen
 
@@ -74,38 +84,38 @@ Bron: [Search Console-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md) van
 | grip socks | 9,9 | 335 | 1 |
 | grip sokken | 12,8 | 129 | 1 |
 | gripsok | 8,6 | 37 | niet gegeven |
-| gripsokken via oude productpagina hi-grip-gripsokken-1 | 5,4 | 1.226 | 12 |
+| gripsokken via de oude URL hi-grip-gripsokken-1 (stuurt door) | 5,4 | 1.226 | 12 |
 | gripsokken via de collectie | 2,0 | 1 | 0 |
 | gripsokken via de homepage | 35,9 | 15 | 0 |
 
-Ongeveer 99% van de vertoningen op de kernterm gaat dus naar de oude productpagina. Over alle Nederlandse zoekopdrachten zijn er 4.464 vertoningen en 146 klikken (positie 7,7). **De meeste van die 146 klikken komen van merkzoekopdrachten** (hi grip 31, higrip 26), dus echte nieuwe bezoekers via "gripsokken" zijn er nu maar 12. Bij zoektermen die "gripsokken" bevatten is de klikratio op mobiel 0,48% (841 vertoningen) en op desktop 1,37% (584). Dat bewijst nog niet dat de mobiele pagina slecht is. Niet gemeten: verkeer uit Google in Analytics, indexering en wat bezoekers daarna doen.
+Ongeveer 99% van de vertoningen op de kernterm gaat dus naar de oude URL. Over alle Nederlandse zoekopdrachten zijn er 4.464 vertoningen en 146 klikken (positie 7,7). **Een groot deel (ongeveer 43%) van die 146 klikken komt van merkzoekopdrachten** (hi grip 31, higrip 26 en high grip 6, samen 63). Echte nieuwe bezoekers via "gripsokken" zijn er nu dus maar 12. Bij zoektermen met "gripsokken" is de klikratio op mobiel 0,48% (841 vertoningen) en op desktop 1,37% (584); dat bewijst nog niet dat de mobiele pagina slecht is. Niet gemeten: verkeer uit Google in Analytics, indexering en gedrag daarna.
 
 ### 2. Concurrentie en haalbaarheid
 
-FitSockr, Proskary, Voetbalshop en GXOX tonen assortiment en keuzehulp. De historische lijsten staan in de bijlage; ze zijn geen echte Google-ranglijst. Backlinks, merkbekendheid en de reden van hun positie kennen we niet.
+FitSockr, Proskary, Voetbalshop en GXOX tonen assortiment en keuzehulp. De historische lijsten staan in de bijlage; ze zijn geen echte Google-ranglijst. Backlinks en merkbekendheid van concurrenten kennen we niet.
 
-**Scenario, geen voorspelling.** Een oude CTR-studie (SISTRIX, uit 2020, over Shopping-resultaten op mobiel) geeft 13,7%, 8,0% en 6,4% op positie 1, 2 en 3. Blijft het aantal vertoningen gelijk aan nu (1.237), dan levert dat ongeveer 157, 87 en 67 extra klikken per 28 dagen op boven de huidige 12. Dit zijn Shopping-percentages uit 2020 en dus een zwakke basis voor onze Nederlandse gewone zoekresultaten. **Eerlijke band: ruwweg 70 tot 160 extra klikken per 28 dagen bij positie 3 tot 1, mogelijk lager.** De doelen verderop liggen bewust lager: zij zijn een vloer die we willen halen, geen voorspelling. Er is geen belofte voor omzet of rendement.
+**Scenario, geen voorspelling.** Met oude Shopping-klikratio's (SISTRIX, 2020) en gelijkblijvende vertoningen komt positie 3 tot 1 neer op ruwweg 70 tot 160 extra klikken per 28 dagen boven de huidige 12, mogelijk lager. De rekensom staat in de bijlage. De doelen verderop liggen bewust lager: zij zijn een vloer, geen voorspelling. Er is geen belofte voor omzet of rendement.
 
 ### 3. Welke pagina wordt de hoofdpagina?
 
-Twee waarnemingen over de oude URL spreken elkaar tegen. De SEO Agent zag op 16-11 in de browser dat de oude URL uitkomt op `/products/performance-gripsokken`. Een tekstuitlezing door de Website Agent op 16-11 toonde de oude URL juist als zelfstandige productpagina met de titel "Gripsokken | Maximale Grip voor Elke Sport | HÏ Grip" en prijs 14,99 euro, terwijl de collectie 14,95 euro toont voor het model dat ernaar verwijst. Wat de oude URL feitelijk is, en of hij doorstuurt, is dus niet bewezen. Het prijsverschil is gemeld als signaal en niet aangepast. De collectie heeft de titel "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens, net te lang) en de kop "Kies je gripsok."
+De rankende pagina is feitelijk de 1.0-productpagina `/products/performance-gripsokken`, bereikt via de oude URL (zie "In het kort"). Optie B betekent dus: die eindpagina beschermen en optimaliseren. De collectie heeft de titel "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens, net te lang) en de kop "Kies je gripsok."
 
 | Optie | Voordeel | Nadeel en risico voor positie 5,7 | Advies |
 |---|---|---|---|
 | A. Collectie als hoofdpagina | Past bij het zoekwoord en bij kiezen tussen modellen | Nu vrijwel onzichtbaar; forceren kan de huidige positie kosten | Eindrichting, gefaseerd opbouwen |
-| B. Rankende productpagina behouden | Beschermt wat nu werkt | Past minder bij een brede zoekvraag en gaat over één model | Nu starten |
+| B. Rankende eindpagina behouden | Beschermt wat nu werkt | Past minder bij een brede zoekvraag en gaat over één model | Nu starten |
 | C. Homepage of gids | Goed voor merk en uitleg | Homepage staat op 35,9 en een gids past bij een andere zoekintentie | Alleen ondersteunen |
 
-Geen doorsturing van de verkoopbare productpagina. Overlappende pagina's (`/pages/collection`, `/winkel`, `/collections/all`, `/collections/frontpage`) eerst inspecteren voordat we iets besluiten. Nooit tegelijk een webadres, titel en navigatie wijzigen. Details en de inspectiebrief staan in de bijlage.
+Geen doorsturing van de verkoopbare productpagina naar de collectie. Eén voorstel voor een mens (besluit hierboven): de keten van twee stappen inkorten tot één en de hoofdversie laten toetsen via URL-inspectie. Nooit tegelijk een webadres, titel en navigatie wijzigen. Overlappende pagina's (`/pages/collection`, `/winkel`, `/collections/all`, `/collections/frontpage`) eerst inspecteren. Details en de inspectiebrief staan in de bijlage.
 
 ### 4. Titel- en beschrijvingsvoorstellen
 
-Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. De lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd.
+Alleen voorstellen; een mens voert ze in Shopify uit na akkoord. Lengtes zijn met de hand geteld en moeten nog met een tool worden gecontroleerd. Zolang het beleidsbesluit openstaat staat er geen retour- of verzendclaim in.
 
-- **Rankende productpagina.** Huidige titel: "Gripsokken | Maximale Grip voor Elke Sport | HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (135 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
-- **Collectie.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (136 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Verzonden binnen 1 werkdag."
+- **Productpagina `/products/performance-gripsokken`.** Huidige titel: "Performance Gripsokken - HÏ Grip". Huidige beschrijving: niet gecontroleerd. Voorstel titel (50 tekens): "Gripsokken voor padel, tennis en voetbal | HÏ Grip". Voorstel beschrijving (135 tekens): "Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip."
+- **Collectie `/collections/gripsokken`.** Huidige titel: "Performance Gripsokken voor voetbal, tennis & rugby | HÏ Grip" (61 tekens). Huidige beschrijving: niet gecontroleerd. Voorstel titel (48 tekens): "Gripsokken kopen: vergelijk 1.0 en 2.0 | HÏ Grip". Voorstel beschrijving (134 tekens): "Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Bestel direct bij HÏ Grip."
 
-De verzendtermijn en de claim over 95% meer grip op de productpagina moeten eerst tegen Feiten worden gehouden. De eerste tien interne links staan in de [bijlage](2026-11-16-seo-plan-gripsokken-bijlage.md).
+De claim over 95% meer grip op de productpagina moet eerst tegen Feiten worden gehouden. De eerste tien interne links staan in de [bijlage](2026-11-16-seo-plan-gripsokken-bijlage.md).
 
 ### 5. Zoekwoordclusters en inhoud
 

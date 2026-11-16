@@ -20,7 +20,7 @@ deadline: ""
 
 ## In het kort
 
-[Hoofdplan](2026-11-16-seo-plan-nummer-1-gripsokken.md), [GSC-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md), [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). Correctieronde 1, concept, niets live. Onderstaande briefs behouden bruikbaar detail uit het eerdere vaultconcept. Oude scratchsubrapporten zijn niet meer vindbaar en hebben geen werkende link; nieuwe SEO/Copy/Conversie-bijdragen zijn hier samengevat. Feiten en september-Actieplan opnieuw gelezen. Geen onafhankelijke QA afgerond.
+[Hoofdplan](2026-11-16-seo-plan-nummer-1-gripsokken.md), [GSC-nulmeting](2026-11-16-seo-gsc-nulmeting-gripsokken.md), [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). Correctieronde 1, concept, niets live. Nulmeting: Search Console, Nederland, 17-10 t/m 13-11-2026 (gecorrigeerd; eerder stond 19-10 t/m 15-11). Onderstaande briefs behouden bruikbaar detail uit het eerdere vaultconcept. Oude scratchsubrapporten zijn niet meer vindbaar en hebben geen werkende link; nieuwe SEO/Copy/Conversie-bijdragen zijn hier samengevat. Feiten en september-Actieplan opnieuw gelezen. Geen onafhankelijke QA afgerond.
 
 ## Bevindingen
 
@@ -114,7 +114,7 @@ Bron direct gelezen: september-Actieplan. Onderstaande rijen verwijzen naar best
 | 10 | Product/Organization/BlogPosting-schema | Historische aanwezigheid geen validatie; ieder onderdeel hercontroleren; sameAs niet invullen zonder feiten |
 | 11 | Mobiele performance | Onbekend; meten, niet op oude scriptomvang besluiten |
 | 12 | Mobiel koopblok/ATC | Onbekend; preview op mobiel testen |
-| 13 | V1-positionering | Redirectoptie vervallen binnen deze opdracht: V1 blijft verkoopbaar. SEO zag oude handle eindigen op huidige V1; title productgericht. SC/canonicaltoeschrijving open |
+| 13 | V1-positionering | Redirectoptie vervallen binnen deze opdracht: V1 blijft verkoopbaar. SEO zag oude handle eindigen op huidige V1; title productgericht. SC/canonicaltoeschrijving open. Tekstuitlezing 16-11 toonde de oude URL als zelfstandige productpagina (14,99 euro), tegenstrijdig met de browserwaarneming; HTTP-keten onbekend |
 | 14 | Collectieroutes/H1/meta | Deels: collectie H1 Kies je gripsok., title Performance Gripsokken voor voetbal, tennis & rugby. Routes/links/backlinks open; geen 301 besloten |
 | 15 | Gezondheids-/gripclaims | Open: V1 absolute glij-/krachtbeloftes en bronprobleem gelezen. Padel/rugby-FAQ begrenst studie, niet sitebreed opgelost |
 | 16 | Blogconsolidatie/hoofdgids | Onbekend; oorspronkelijke redirectmapping en huidig bereik eerst controleren |
@@ -140,7 +140,7 @@ Bron direct gelezen: [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). His
 
 | Bronitem | Historische registratie | Hercontrole / correctie |
 |---|---|---|
-| Retourbeleid | Open besluit | Open, 16-11 bevestigd: refund-policy 14 dagen/ongeopend/25%; vastgesteld 30 dagen. Juridische toets aanbevolen |
+| Retourbeleid | Open besluit | Open, 16-11 bevestigd: refund-policy 14 dagen/ongeopend/25%; vastgesteld 30 dagen. Juridische toets aanbevolen. Staat al in de [[Compliance To-Do Lijst]]; Besluit voor Lars, geen herstel door deze agent |
 | Verzendbelofte/policylinks | Open besluit | Open, 16-11 bevestigd: shipping-policy vóór 16:00 dezelfde dag; vastgesteld binnen 1 werkdag. Alle linkbronnen onbekend |
 | Blessurerisico/95%-claims | Aangevinkt | Open op V1: absolute glij-/krachtclaim en geen directe bron in extractie; schema onbekend. Padel/rugby-FAQ heeft beperking |
 | EN/2.0-zwart feitencheck | Aangevinkt | Actuele taal, beleid en productwaarden controleren, geen prijsaanpassing door agent |
@@ -162,6 +162,38 @@ Bron direct gelezen: [oktober-audit](SEO/2026-10-27-seo-audit-higrip-nl.md). His
 
 Deze bijlage schrijft geen bestaande backlogstatus om. Read-only tekststeekproef wel uitgevoerd; geen schema/code gemaakt, niets geïnstalleerd of live gewijzigd. Producthandles/claimgrenzen uit Feiten. HTTP-keten, canonicals, indexering, volledige altinventaris, mobiel, EN, CWV en rich-resultvalidatie niet uitgevoerd. Oude werkmaplinks verwijderd; bestaande hoofdplan/nulmeting/audit relatief gelinkt.
 
+### Hoofdpagina-stelling
+
+Eén stelling, identiek in hoofdplan, bijlage en nulmeting: **nu de rankende productpagina beschermen en optimaliseren (B); de collectie gefaseerd opbouwen en alleen tot hoofdpagina maken als zij na 90 dagen vanaf de goedgekeurde start tractie toont (A).** Tractie betekent minstens 150 vertoningen en 3 klikken voor "gripsokken" op de collectie. Zonder tractie blijft B en wordt A herbeoordeeld. Optie C (homepage of gids) ondersteunt alleen. Waar elders in deze bijlage "A als eindrichting" of "hub" staat, geldt deze stelling. Waarneming over de oude URL: SEO zag 16-11 in de browser een eindadres op `/products/performance-gripsokken`; Website las 16-11 via tekstuitlezing de oude URL als zelfstandige productpagina (14,99 euro) terwijl de collectie 14,95 euro toont. Welke is juist, is niet bewezen. Prijsverschil gemeld als signaal, niet gewijzigd.
+
+### Titel- en metavoorstellen
+
+Alleen voorstellen, geen wijziging. Een mens voert ze in Shopify Admin in na akkoord en toets door Website-QA. Lengtes met de hand geteld (titel hoogstens 60, beschrijving 120 tot 155 tekens) en nog te controleren met een tool. Geen retour- of verzendclaim zolang het beleidsbesluit openstaat.
+
+| Pagina | Huidige titel | Voorstel titel | Huidige beschrijving | Voorstel beschrijving |
+|---|---|---|---|---|
+| `/products/hi-grip-gripsokken-1` (rankt) | Gripsokken \| Maximale Grip voor Elke Sport \| HÏ Grip | Gripsokken voor padel, tennis en voetbal \| HÏ Grip (50 tekens) | Huidige tekst niet gecontroleerd | Gripsokken met grippatroon voor padel, tennis, voetbal en rugby. Vergelijk model 1.0 en 2.0, kies je maat en bestel direct bij HÏ Grip. (135 tekens) |
+| `/collections/gripsokken` | Performance Gripsokken voor voetbal, tennis & rugby \| HÏ Grip (61 tekens) | Gripsokken kopen: vergelijk 1.0 en 2.0 \| HÏ Grip (48 tekens) | Huidige tekst niet gecontroleerd | Kies je gripsokken: vergelijk model 1.0 en 2.0, bekijk de maten en kies de sport waar je ze voor nodig hebt. Verzonden binnen 1 werkdag. (136 tekens) |
+
+Toelichting: de productpagina houdt "gripsokken" vooraan zodat de bestaande relevantie niet abrupt verdwijnt (beschermfase B). De collectie krijgt een koop- en vergelijkingshoek zodat de twee titels elkaar niet kannibaliseren. Eerst tegen Feiten toetsen: de verzendtermijn (productpagina noemt "voor 22:00 besteld, dezelfde werkdag verzonden", collectie "binnen 1 werkdag") en de claim "95% meer grip" op de productpagina. De verzendgrens verschilt ook (30 euro op het product, 35 euro op de collectie); dat is een signaal voor het beleidsbesluit.
+
+### Eerste 10 interne links
+
+Alleen toevoegen in het werkthema en na akkoord door een mens live. Bestaande navigatie en het SHOP-menu niet wijzigen. Eerst per bronpagina controleren of de link al bestaat (niet gecontroleerd). Golf 1 in week 3 en 4, golf 2 in maand 2, golf 3 in maand 3, telkens met toets op positie en klikken voordat de volgende golf volgt.
+
+| Volgorde | Bronpagina | Ankertekst | Doelpagina | Golf en opmerking |
+|---|---|---|---|---|
+| 1 | `/collections/gripsokken` | Performance Gripsokken 1.0 | `/products/hi-grip-gripsokken-1` | 1; bestaande kaartlink behouden, beschermt de rankende pagina |
+| 2 | `/blogs/hi-grip/welke-maat-gripsokken` | gripsokken in jouw maat | `/products/hi-grip-gripsokken-1` | 1; productintentie behouden |
+| 3 | `/blogs/hi-grip/wat-zijn-gripsokken` | gripsokken kiezen | `/collections/gripsokken` | 1; hoofdgids linkt nu naar /collections/all |
+| 4 | `/` (homepage) | alle gripsokken bekijken | `/collections/gripsokken` | 2; geen navigatiewijziging |
+| 5 | `/pages/gripsokken-voor-padel` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
+| 6 | `/pages/gripsokken-voor-voetbal` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
+| 7 | `/pages/gripsokken-voor-tennis` | alle gripsokken vergelijken | `/collections/gripsokken` | 2 |
+| 8 | `/pages/gripsokken-voor-rugby` | alle gripsokken vergelijken | `/collections/gripsokken` | 3 |
+| 9 | `/blogs/hi-grip/waarom-hi-grip-gripsokken` | HÏ Grip gripsokken | `/products/hi-grip-gripsokken-1` | 1; heeft eigen zichtbaarheid, eerst inspecteren |
+| 10 | `/blogs/hi-grip/waarom-glijdt-je-voet-in-je-schoen` | gripsokken voor padel | `/pages/gripsokken-voor-padel` | 3 |
+
 ### Veilige URL-fasering en on-page oplevercheck
 
 1. SEO vraagt URL-inspectie voor oude handle, tussenhandle, huidige V1, collectie, /pages/collection en twee hoofdgidsroutes. Noteer Google-canonical, user-canonical, indexstatus en laatste crawl. Een extractietool die invoer-URL herhaalt bewijst geen afwezige redirect.
@@ -169,7 +201,7 @@ Deze bijlage schrijft geen bestaande backlogstatus om. Read-only tekststeekproef
 3. Beschermfase B: V1 bronnen/claims herstellen en bescheiden snippetvoorstel, bestaande generieke relevantie niet abrupt verwijderen. Leg exacte oude/nieuwe tekst, datum en scope vast. Mens voert Admin-wijziging uit na akkoord.
 4. A opbouwen op bestaande collectie: korte definitie, bestaand raster vroeg, model-/maatkeuze, sportingangen, zichtbare FAQ en bronnen. Geen collectie verkopen als onafhankelijke test. Design bepaalt eventuele uiterlijkwijziging; Website technische bouw uitsluitend werkthema.
 5. Na preview/QA/menselijke uitrol van copy op bestaande collectie-URL opnieuw één vergelijkbaar venster analyseren. Dit is geen URL-migratie. Interne links daarna in beperkte tranche, productlinks voor productintentie behouden. Geen gegarandeerde rankingoverdracht.
-6. D90: hub groeit én totaal stabiel/groeiend: uitbreiden. Product stabiel/hub onzichtbaar: B behouden, A herbeoordelen. Beide verliezen: diagnose indexering/SERP/update en herstelvoorstel, niet meer redirects.
+6. Na 90 dagen vanaf de goedgekeurde start: hub groeit én totaal stabiel/groeiend: uitbreiden. Product stabiel/hub onzichtbaar: B behouden, A herbeoordelen. Beide verliezen: diagnose indexering/SERP/update en herstelvoorstel, niet meer redirects.
 
 Oplevercheck per familie: home Organization/WebSite, collectie CollectionPage/ItemList, producten Product met zichtbare juiste specs/beleid, gidsen Article/BlogPosting, passende BreadcrumbList. FAQ alleen identiek aan zichtbare antwoorden en geen rich-resultgarantie. Geen aggregateRating, sameAs blijft leeg. H1/H2 sport behouden. Title-richtlijn maximaal 60 tekens, meta 120 tot 155 volgens Blog uitrol; definitieve teksten nog te tellen. Geen meta in Liquid aanpassen. Controleer ook canonical/hreflang EN, sitemap, robots, echte beeldalts en mobiele kooproute. Alleen validatoruitvoer bewijst schema-validatie; hier geen schema-code geleverd.
 
@@ -179,7 +211,7 @@ Geen scripts in deze unattended sessie. Onderstaande opdrachten zijn aanvragen v
 
 #### Search Console
 
-Periode A **2026-10-19 t/m 2026-11-15**, vergelijking B **2026-09-21 t/m 2026-10-18**. Zelfde SC-property als nulmeting, search type web, country NLD/NL overeenkomstig API/interface. Data-state/vertraging vastleggen. Voor vervolg wekelijks laatste volledige 28 dagen met dezelfde vertraging en vorige niet-overlappende 28 dagen; geen tussentijdse dag als volledige dag.
+Periode A **2026-10-17 t/m 2026-11-13** (gecorrigeerde, geverifieerde nulmeting, 28 dagen), vergelijking B **2026-09-19 t/m 2026-10-16**. Zelfde SC-property als nulmeting, search type web, country NLD/NL overeenkomstig API/interface. Data-state/vertraging vastleggen. Voor vervolg wekelijks laatste volledige 28 dagen met dezelfde vertraging en vorige niet-overlappende 28 dagen; geen tussentijdse dag als volledige dag.
 
 | Export | Exacte filters en dimensies | Uitvoer / reden |
 |---|---|---|
@@ -203,11 +235,11 @@ Funnel apart: sessies met view_item, add_to_cart, begin_checkout, purchase; eige
 
 #### Wekelijks signaalblad
 
-Conversie rapporteert datum/filters, kernquerytotaal, URL-verschuiving, exact/mobile, bezoekers/vervolg met teller/noemer, meetgaten, technische steekproef, changelog en updatecontext. SEO krijgt index/CTR-signalen, Copy intentie-/tekstgaten, Website technische afwijkingen, Design uiterlijk, Partnership autoriteit. Geen autonome uitvoering. D30/60/90/180-doelen en escalatieregels staan in hoofdplan. Als baseline ontbreekt: eerst nulmeting, absolute vervolgdoelen blijven slechts richtdoel.
+Conversie rapporteert datum/filters, kernquerytotaal, URL-verschuiving, exact/mobile, bezoekers/vervolg met teller/noemer, meetgaten, technische steekproef, changelog en updatecontext. SEO krijgt index/CTR-signalen, Copy intentie-/tekstgaten, Website technische afwijkingen, Design uiterlijk, Partnership autoriteit. Geen autonome uitvoering. De doelen na 30/60/90/180 dagen vanaf de goedgekeurde start en de beslisregels staan in het hoofdplan (sectie Meten en doelen). Als baseline ontbreekt: eerst nulmeting, absolute vervolgdoelen blijven slechts richtdoel.
 
 ### Outreach en bronnenlijst
 
-Alles **voorstel**, niet verstuurd. Partnership levert 8 tot 12 gekwalificeerde kansen per maand; 4 tot 6 contactconcepten voor menselijk akkoord. Maximaal één menselijke opvolging na 10 tot 14 dagen, geen massamailing. Doel 1 tot 2 relevante plaatsingen per maand vanaf maand 2, niet als gegarandeerd aantal verwijzende domeinen begroten.
+Alles **voorstel**, niet verstuurd. Partnership levert (aanname) 8 tot 12 gekwalificeerde kansen per maand en (aanname) 4 tot 6 contactconcepten voor menselijk akkoord. Maximaal één menselijke opvolging na 10 tot 14 dagen, geen massamailing. Doel 1 tot 2 relevante plaatsingen per maand vanaf maand 2, niet als gegarandeerd aantal verwijzende domeinen begroten.
 
 | Bronnen/kans | Wie en aanbod | Kwalificatie / grens |
 |---|---|---|
@@ -243,6 +275,8 @@ Read-only importsuggestie uit agricidaniel/claude-seo v2.3.1, **elke skill nog t
 | seo-dataforseo | Externe volumes/ranks/marktdata | Ontbreekt + API-key nodig; SC is eigen vraagdata | Betaald gebruik, offerte vereist; Lars P3; uitstel mogelijk |
 | seo-backlinks | Eigen/concurrent linkanalyse | Ontbreekt + API-key nodig; SC Links/handmatig | Betaald/gratis limiet onbekend; Lars P2; outreach kan zonder |
 
+Startpakket: begin met drie skills (seo-page, seo-technical, seo-schema) na beoordeling door een bevoegde beheerder. Zonder de overige skills kunnen briefs, linkplan, handmatige controles en alle voorstellen in dit plan gewoon doorgaan; seo-audit, seo-cluster, seo-content-brief, seo-ecommerce, seo-geo en seo-drift zijn later aan de beurt, seo-dataforseo en seo-backlinks hebben een betaalde sleutel nodig.
+
 Budgetkeuze: eerst €0 extra licenties. Eén proefdienst pas na behoefte, maandplafond €50 voorgesteld. Vergelijk Mangools/SE Ranking als voorbeelden van diensten, DataForSEO als gebruiks-API; actuele tarieven, minimale afname, NL/mobile-dekking en datavolume **niet gecontroleerd**. Geen product binnen plafond beloofd. Alternatief: gratis SC + vaste handmatige browsercheck, zonder extern zoekvolume. Backlinkabonnement niet tegelijk starten; eerste maand alleen SC Links. PSI/CrUX zonder key via handmatige interface; velddata kan ontbreken, lab is niet field.
 
 Importbeoordeling aanname 2 tot 4 uur door bevoegde beheerder/reviewer, buiten inhoudstranche; bron/licentie/dependencies/leakrisico/toolrechten toetsen. Protocolbestand hier niet geopend, dus geen protocolconformiteit geclaimd. API-toegang via mens en beveiligde kluis, nooit in notitie/chat. Geen installatie of aanschaf uitgevoerd.
@@ -253,6 +287,7 @@ Geen onderstaande regel is een dubbel backlog-vinkje; dit zijn werkpakketten voo
 
 | Werkpakket | Maker / concreet resultaat | Uren | Afhankelijkheid / vrijgave |
 |---|---|---:|---|
+| 0 (eerst) GA4-meting herstellen | Denzel of Lars, analytics-mcp-omgeving laten werken zodat sessies google/organic en vervolgklik meetbaar zijn | 2 tot 3 | Bestaande toegang; geen nieuwe tracking, geen installatie |
 | 1 URL/canonical-aanvraag | SEO, inspectielijst en mapping oude/current product versus hub | 1 tot 2 | SC read-only bij Denzel; geen live |
 | 2 SC-baselinebrief | Conversie/SEO, exportspecificatie en vaste filters | 1 | Bovenstaande opdracht; geen live |
 | 3 GA4-meetbrief | Conversie, teller/noemer/eventvalidatie en export | 2 tot 3 | Bestaande toegang; geen nieuwe tracking |
@@ -264,7 +299,7 @@ Geen onderstaande regel is een dubbel backlog-vinkje; dit zijn werkpakketten voo
 | 9 Partnershipcriteria | Website/SEO, bovenstaand selectieformat | 1 | Partnership uitvoering later apart, geen bericht |
 | 10 Preview/QA-brief | Website, templatescope, controlelijst, live-handoff | 1 | Werkthema/toegang later testen; geen themahandeling nu |
 
-Week 1 meetbriefs/exports, week 2 copy/link/claimvoorbereiding, week 3 hubpreview en week 4 hoofdgidspreview, uitsluitend na bron/toegangsbesluiten. Maand 2 eerst maat/probleem/wetenschap herstellen, daarna beperkte sport-FAQ-aanvulling; geen vier volledige sportherschrijvingen. Maand 3 één verbeterronde en D90-besluit. Eerste drie maanden 40 tot 60 uur inhoudelijk Website-team; mens QA/publicatie, Design en Partnership apart. Bij capaciteitstekort eerst hub/hoofdgids en meetbaarheid, overige productie niet stil in zelfde budget opnemen.
+Week 1 meetbriefs/exports, week 2 copy/link/claimvoorbereiding, week 3 hubpreview en week 4 hoofdgidspreview, uitsluitend na bron/toegangsbesluiten. Maand 2 eerst maat/probleem/wetenschap herstellen, daarna beperkte sport-FAQ-aanvulling; geen vier volledige sportherschrijvingen. Maand 3 één verbeterronde en besluit na 90 dagen vanaf de goedgekeurde start. Eerste drie maanden 40 tot 60 uur inhoudelijk Website-team; mens QA/publicatie, Design en Partnership apart. Bij capaciteitstekort eerst hub/hoofdgids en meetbaarheid, overige productie niet stil in zelfde budget opnemen.
 
 Mensentijd aanname: beoordeling/publicatie 1 tot 2 uur per goedgekeurde tranche, onafhankelijke QA 2 tot 4 uur eerste tranche, Design alleen bij nodig uiterlijk 2 tot 4 uur apart. Kosten niet naar euro omrekenen zonder afgesproken uurtarief. Geen belofte dat 40 tot 60 uur alle compliance/techniekproblemen volledig oplost.
 
@@ -288,13 +323,13 @@ Oude vijf subrapporten niet beschikbaar in voormalige werkmap of kaartbijlagen. 
 
 Zelfcheck: nulmeting uit bron; A/B/C-consistentie; 15 briefs tekstueel nageteld door preflight; meetopdrachten/tempo/uren aanwezig; audititems apart. Calculator-uitvoer via gewone browser-UI, zonder scripts, in preflight gecontroleerd; Website las de uitvoer terug. Niet gecontroleerd: technische livebron, volledige site/EN/mobiel, onafhankelijke QA en dashboardbuild. Experttoevoeging: canonical-/indexdiagnose en gevalideerd gedrag vóór migratiebesluit. Geen GOED-verdict.
 
-Rekenbewijs CTR-scenario bij constant 1.237 vertoningen, extra klikken boven 12, geen voorspelling:
+Rekenbewijs CTR-scenario bij constant 1.237 vertoningen, extra klikken boven 12, geen voorspelling. Afgerond; gemeten is 28 dagen, niet per maand. De percentages zijn Shopping-CTR's uit 2020 (zwakke basis voor Nederlandse gewone zoekresultaten). Eerlijke band: ruwweg 70 tot 160 extra klikken per 28 dagen bij positie 3 tot 1, mogelijk lager. De doelen in het hoofdplan liggen bewust lager: zij zijn een vloer, geen voorspelling.
 
 | Scenario | Formule | Calculator-uitvoer extra / 28 dagen |
 |---|---|---:|
-| Positie 3 Shopping | 1237*0.064-12 | 67,168 |
-| Positie 2 Shopping | 1237*0.08-12 | 86,96 |
-| Positie 1 Shopping | 1237*0.137-12 | 157,469 |
-| Positie 1 algemeen gemiddelde | 1237*0.285-12 | 340,545 |
+| Positie 3 Shopping | 1237*0.064-12 | ongeveer 67 |
+| Positie 2 Shopping | 1237*0.08-12 | ongeveer 87 |
+| Positie 1 Shopping | 1237*0.137-12 | ongeveer 157 |
+| Positie 1 algemeen gemiddelde | 1237*0.285-12 | ongeveer 341 |
 
 Berekening via web2.0calc-browserinvoer door redactionele preflight, resultaten uitgelezen; geen terminal/execute_code/JS-evaluatie. CTR-aannames zijn uit oude mobiele SISTRIX-data, geen actuele NL-curve. De algemene positie-1-uitkomst is gevoeligheidsscenario, niet de basisbegroting. Lagere CTR blijft mogelijk. Toekomstig vertoningsbereik, seizoen, AI/Shopping-layout en conversie ontbreken; geen traffic- of omzetgarantie.

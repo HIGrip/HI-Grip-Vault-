@@ -33,6 +33,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Visuele Productie
 - [[Brand Sound]]
+- [[Creatieve brief — Grip-demo rugby (2026-11)]]
 - [[Editing Stijl Gids Video]]
 - [[Geluidseffecten Bibliotheek]]
 - [[Muziek & Licenties]]

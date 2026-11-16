@@ -74,9 +74,9 @@ Gecontroleerd op 375 en 1440 px (headless Chrome in een iframe van exacte breedt
 GA4 verversen (analytics-mcp maakte geen verbinding, geen Python in de agentomgeving). Desktop-nulmeting van de live site (browserpaneel blokkeerde JS; de meting van 13-10 is gebruikt). Lighthouse, CrUX/INP en een echt iOS-toestel zijn niet gemeten. In het verborgen browserpaneel staat requestAnimationFrame stil, dus de scrollanimaties zijn alleen in code en in headless Chrome gecontroleerd. Het Research Dashboard is niet gesynct of gepubliceerd: het is van info@ en deze sessie draaide op het persoonlijke account.
 
 ## Bronnen
-- Prototype: https://claude.ai/artifact/BMpbfMzvEP5NnjS3TVuVLy (bron en bouwspec: `C:\Users\Test\.claude\plans\homepage-herontwerp-2026-10\build\index.html` en `SPEC.md`)
-- Analyses: `C:\Users\Test\.claude\plans\homepage-herontwerp-2026-10\` (BRIEF, input-probleemanalyse, out-design-materiaal, out-copy-analyse, out-copy-B, out-cro-analyse, out-seo-eisen, out-referenties, out-360-meting, out-concepten, out-design-critique)
-- Werkthema "AI website workspace 2.0" `201133490503`, read-only gepulld naar `C:\Users\Test\ai-workspace-2.0-herontwerp`
+- Prototype: https://claude.ai/artifact/BMpbfMzvEP5NnjS3TVuVLy (bron en bouwspec: `<gebruikersmap>\.claude\plans\homepage-herontwerp-2026-10\build\index.html` en `SPEC.md`)
+- Analyses: `<gebruikersmap>\.claude\plans\homepage-herontwerp-2026-10\` (BRIEF, input-probleemanalyse, out-design-materiaal, out-copy-analyse, out-copy-B, out-cro-analyse, out-seo-eisen, out-referenties, out-360-meting, out-concepten, out-design-critique)
+- Werkthema "AI website workspace 2.0" `201133490503`, read-only gepulld naar `<gebruikersmap>\ai-workspace-2.0-herontwerp`
 - 360°-materiaal: artifact QL6Whv59zVzW4rKgVgKJ94 (bestandslijst en WebP-header)
 - Live: https://www.higrip.nl/ (14-10)
 - Feiten: [[Feiten & Actuele Staat]]; grip: Apps et al. 2022 (doi 10.1080/02640414.2022.2080163)

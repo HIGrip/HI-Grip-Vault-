@@ -14,7 +14,7 @@ bijgewerkt: 2026-10-29
 
 > **Bijgewerkt 2026-11-05 (lars, in chat):** nieuw werkthema is **`204029296967`** (editor: https://admin.shopify.com/store/hi-grip/themes/204029296967/editor). Eerder werkthema was `203461034311` (daarna `203928076615` "Live website 04-11-2026"). Controleer rol en naam eerst met `shopify theme list`; de live-regel in de tabel hieronder kan achterlopen.
 >
-> *Vorige stand — bijgewerkt 2026-10-29:* werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `C:\Users\Test\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
+> *Vorige stand — bijgewerkt 2026-10-29:* werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `<gebruikersmap>\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
 >
 > *Vorige stand — bijgewerkt 2026-10-26 (lars, bevestigd in chat):* nieuw werkthema is **`202669916487` "Live HÏ Grip WEBSITE + contactpagina"** (unpublished; bevat o.a. de A/B-templates `page.ab-a`, `product.ab-a`, `product.ab-b`). Live is nu **`202667458887`** ("Live HÏ Grip WEBSITE", rol `live`, geverifieerd met `shopify theme list` op 26-10). `202398040391` en `202394272071` zijn unpublished. Op 26-10 is in `202398040391` ook de fotogrootte-slider aan `gripsocks2-photo` toegevoegd (onschadelijk, default = oude grootte).
 >
@@ -31,17 +31,17 @@ bijgewerkt: 2026-10-29
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
 | **Werkthema (sinds 5-11)** | `204029296967` (aangewezen door lars) | unpublished (check met `theme list`) | **Ja** — enige werkkopie |
-| Live op www.higrip.nl (Horizon 4.4.0, "Bijgewerkte kopie van Live website 04-11-2026") | `203954520391` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203928076615`; lokale kopie met git: `C:\Users\Test\Werk\theme-snelheid\update-04`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
-| Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
+| Live op www.higrip.nl (Horizon 4.4.0, "Bijgewerkte kopie van Live website 04-11-2026") | `203954520391` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203928076615`; lokale kopie met git: `<gebruikersmap>\Werk\theme-snelheid\update-04`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `<gebruikersmap>\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
 | Ouder live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished) | unpublished | Nee |
 | Ouder live-thema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (2-11: unpublished) | unpublished | Nee |
 | Alle overige — oude werkthema's (`202398040391` "Bijgewerkte kopie van AI website workspace 2.0", `201133490503` "AI website workspace 2.0", `200269168967`, `200981578055` "AI website workspace", `198505464135` — bestaat niet meer, `199814873415`, `199980286279`), oude live-ID's (`202667458887`, `202394272071`, `201132507463`, `198094127431`, `199039975751`, `200269398343`), Horizon-duplicaten, SEO TEST, Kopie/Test-versies, WK Campagne (×2) | overige | unpublished | **Nee** — geen actieve werkkopie |
 
 Vóór elke theme-actie (pull/push) het actuele ID uit `shopify theme list` halen — vertrouw nooit blind op een hier genoteerd nummer.
 
-> **Toegevoegd 2026-10-12:** werkthema `202398040391` = "Bijgewerkte kopie van AI website workspace 2.0" (unpublished); live = `202394272071`. De lokale map `C:\Users\lars\ai-workspace-2.0` hoort bij het vórige werkthema — altijd vers pullen van `202398040391`.
+> **Toegevoegd 2026-10-12:** werkthema `202398040391` = "Bijgewerkte kopie van AI website workspace 2.0" (unpublished); live = `202394272071`. De lokale map `<gebruikersmap>\ai-workspace-2.0` hoort bij het vórige werkthema — altijd vers pullen van `202398040391`.
 >
-> *Toegevoegd 2026-09-21:* werkthema `201133490503` = "AI website workspace 2.0" (unpublished); live = `201132507463`. De lokale map **`C:\Users\lars\ai-workspace-2.0`** vervangt de verouderde `shopify-ai-workspace-theme*`-mappen.
+> *Toegevoegd 2026-09-21:* werkthema `201133490503` = "AI website workspace 2.0" (unpublished); live = `201132507463`. De lokale map **`<gebruikersmap>\ai-workspace-2.0`** vervangt de verouderde `shopify-ai-workspace-theme*`-mappen.
 >
 > **Echte product-handles:** `performance-gripsokken-2-0-wit` en `performance-gripsokken-2-0-zwart` (dus `/products/performance-gripsokken-2-0-wit|zwart`) — **niet** `performance-grip-socks-2-0-*`.
 >
@@ -66,7 +66,7 @@ Geen Admin API-token, geen custom app. Het Starter-Shopify-abonnement blokkeert 
 
 ## Werkwijze per wijziging
 
-1. **Pull** het AI Workspace-thema lokaal (map: `C:\Users\lars\ai-workspace-2.0`; de oude `shopify-ai-workspace-theme*`-mappen zijn verouderd). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `202669916487` — verifieer met `theme list`):
+1. **Pull** het AI Workspace-thema lokaal (map: `<gebruikersmap>\ai-workspace-2.0`; de oude `shopify-ai-workspace-theme*`-mappen zijn verouderd). Vul het actuele werkthema-ID in (zie tabel hierboven, nu `202669916487` — verifieer met `theme list`):
    ```
    shopify theme pull --store hi-grip.myshopify.com --theme 202669916487
    ```

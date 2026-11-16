@@ -499,7 +499,7 @@ De dashboardsync (procedure B) en het publiceren van het dashboard lukten niet. 
 - Lighthouse 12.8.2 lokaal, 3 runs per profiel (mobiel met 4G- en 4× CPU-vertraging, desktop)
 - Eigen metingen met puppeteer-core en het Chrome DevTools Protocol: alle requests, JS- en CSS-coverage, beeldmaten (bestanden opnieuw opgehaald en met PIL uitgelezen), initiator-stacks en traces
 - Experimenten met lokaal geserveerde HTML-varianten: A/B/C en A/B/D op desktop, A/B/C op mobiel, elk 3 runs
-- Live thema 202669916487, read-only gepulld na `shopify theme list`; werkthema `C:\Users\Test\Werk\theme-snelheid\werkthema` (alleen gelezen)
+- Live thema 202669916487, read-only gepulld na `shopify theme list`; werkthema `<gebruikersmap>\Werk\theme-snelheid\werkthema` (alleen gelezen)
 - Code-review door drie subagents (secties, snippets/blocks/layout, assets): 70 + 172 bestanden plus 11 assets in detail en 201 assets gescand op dode code
 - Bestaande acties over EcomSend, FD/Bundler/Essential, het Shop-accounticoon en het live zetten van het werkthema: [[2026-10-29-ads-funnel-en-snelheid-productpagina]]
 

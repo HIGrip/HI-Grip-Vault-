@@ -11,7 +11,7 @@ bijgewerkt: 2026-11-05
 
 ## Waar
 
-`C:\Users\lars\HiGripMedia\`
+`<HiGripMedia>/` = de map `HiGripMedia` in je eigen gebruikersmap (op elke computer anders; in de vault schrijven we alleen deze plaatshouder, nooit een computerpad).
 
 - Dit is een **lokale kopie** van de gedeelde Drive "HÏ GRIP WORKSPACE", niet de vault (te groot voor git).
 - Gesynchroniseerd: `Content - HÏ Grip` (Sporten, Over Ons, Designen, Productfoto's, Campagnes & Events, Soundtracks & FX, Emailmarketing, Infographics, Ads, Social Proof) en `Inspiratie - HÏ Grip`.

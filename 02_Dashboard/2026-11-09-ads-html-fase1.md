@@ -18,7 +18,7 @@ deadline: ""
 
 > Map: [[Waar staat wat]]
 
-Taak t_144c0efb. Map: `C:\Users\lars\HiGripMedia\_Output\design\ads-html\` (src = HTML/CSS/JS, img, fonts, out = PNG 1080x1350, `out\_contactsheet.png`). Niets gepubliceerd of geüpload.
+Taak t_144c0efb. Map: `<HiGripMedia>/_Output/design/ads-html/` (src = HTML/CSS/JS, img, fonts, out = PNG 1080x1350, `out\_contactsheet.png`). Niets gepubliceerd of geüpload.
 
 ## Systeem
 - `src/style.css`: tokens (zwart #0A0A0A, wit, volt #CCFF00, rood #E10600, marge 72 px), Poppins via @font-face (relatief), lagen: foto mono, vignet, SVG-filmkorrel (overlay), halftone-raster, schuine balk, tag-parallellogram, wordmark. `src/fit.js` schaalt koppen op doelbreedte (936 px) en schrijft tekstblokken weg voor meting. `src/render.py` rendert (Chrome headless, eigen user-data-dir) en `src/measure.py` meet contrast.

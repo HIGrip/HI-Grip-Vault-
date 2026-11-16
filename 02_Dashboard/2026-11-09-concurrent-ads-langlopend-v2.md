@@ -109,7 +109,7 @@ Zoektermen: rugby grip socks (NL, BE, DE, GB, US, AU, FR, ES, IE; actief; GB en 
 - Zoekopdrachten 'performance socks' en 'anti-slip socks' leveren vooral ruis (lifestyle, pilates, ouderen): alleen relevante adverteerders zijn hierboven opgenomen.
 
 ## Bronnen
-- Meta Ad Library (zonder inloggen), 9-11-2026. Schermafbeeldingen (alleen referentie, niet hergebruiken): `C:\Users\lars\HiGripMedia\_Output\content\ad-library-v2\` (8 PNG's: stepzz-rugby-grip-socks-AU-actief, stepzz-AU-actief-oudste-ads, gain-the-edge-GB-actief, tapedesign-DE-actief, rugby-socks-GB-actief, gripsokken-NL-actief, fitsockr-NL-alle, markka-football-AU-actief).
+- Meta Ad Library (zonder inloggen), 9-11-2026. Schermafbeeldingen (alleen referentie, niet hergebruiken): `<HiGripMedia>/_Output/content/ad-library-v2/` (8 PNG's: stepzz-rugby-grip-socks-AU-actief, stepzz-AU-actief-oudste-ads, gain-the-edge-GB-actief, tapedesign-DE-actief, rugby-socks-GB-actief, gripsokken-NL-actief, fitsockr-NL-alle, markka-football-AU-actief).
 - Eerder: [[2026-11-09-concurrent-ads-langlopend]], [[2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]].
 
 ## Aantekeningen

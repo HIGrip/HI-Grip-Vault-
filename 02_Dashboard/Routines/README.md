@@ -96,7 +96,7 @@ Het dashboard (https://claude.ai/artifact/JEmxjrviuoSPGWHvGyJszS) schrijft allee
 
 ### Google-sleutel in de cloud zetten (eenmalig)
 1. Op de pc met het sleutelbestand, in PowerShell. Dit kopieert de sleutel naar je klembord zonder hem te tonen:
-   `[Convert]::ToBase64String([IO.File]::ReadAllBytes("C:\Users\Test\.claude\ga4-mcp-key.json")) | Set-Clipboard`
+   `[Convert]::ToBase64String([IO.File]::ReadAllBytes("<gebruikersmap>\.claude\ga4-mcp-key.json")) | Set-Clipboard`
 2. Ingelogd als info@: claude.ai/code → instellingen van de omgeving → omgevingsvariabelen → naam `GOOGLE_SA_JSON_B64`, waarde = plakken (`Ctrl + V`). Setup-script zoals hierboven. Opslaan.
 3. Plak de sleutel nergens anders (niet in een chat, niet in de vault).
 4. Test het met een routine of sessie in die omgeving: `python 02_Dashboard/_tools/google_data.py check` moet bij beide "ok" geven, en `... dashboard` toont per onderdeel de status.

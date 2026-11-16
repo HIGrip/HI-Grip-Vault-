@@ -19,7 +19,7 @@ deadline: ""
 > Map: [[Waar staat wat]]
 
 ## In het kort
-Opdracht: maak de site drie keer zo snel, in een kopie van live met "02" achter de naam. Live ("WERKTHEMA", `203461034311`) is op 3-11 gedupliceerd naar **WERKTHEMA 02** (`203928076615`, unpublished; lokale kopie met git in `C:\Users\Test\Werk\theme-snelheid\werkthema-02`). Alle wijzigingen staan alleen daar.
+Opdracht: maak de site drie keer zo snel, in een kopie van live met "02" achter de naam. Live ("WERKTHEMA", `203461034311`) is op 3-11 gedupliceerd naar **WERKTHEMA 02** (`203928076615`, unpublished; lokale kopie met git in `<gebruikersmap>\Werk\theme-snelheid\werkthema-02`). Alle wijzigingen staan alleen daar.
 
 De nulmeting ([[2026-11-03-snelheid-nulmeting-alle-paginas]]) liet zien dat de last vooral in JavaScript zit die op elke pagina meekomt. Daar is op ingegrepen. Resultaat: de hoeveelheid rekenwerk op de telefoon (wat een pagina traag en hakkerig maakt) is 3 tot 5 keer lager. Bytes en verzoeken dalen 30 tot 40%. Wat níet beter werd: de gesimuleerde LCP van de homepage in Lighthouse. In de echte (niet-gesimuleerde) tijdlijn van dezelfde meting verschijnen de eerste tekst en de hero juist eerder dan op live; het verschil komt door hoe Lighthouse de laadtijd terugrekent (zie Bevindingen 3).
 
@@ -154,5 +154,5 @@ Na de ingrepen zit het meeste rekenwerk in Shopify zelf (pixels/web-pixels-manag
 
 ## Bronnen
 - Lighthouse-uitvoer en meetscripts: lokale scratchpad van deze sessie (niet in de vault)
-- Thema-git: `C:\Users\Test\Werk\theme-snelheid\werkthema-02` (commits e874c49 basis, 44fa5f2 optimalisaties, d332908 hero, daarna srcset 540w/720w)
+- Thema-git: `<gebruikersmap>\Werk\theme-snelheid\werkthema-02` (commits e874c49 basis, 44fa5f2 optimalisaties, d332908 hero, daarna srcset 540w/720w)
 - Preview: https://www.higrip.nl/?preview_theme_id=203928076615

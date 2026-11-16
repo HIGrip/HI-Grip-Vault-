@@ -44,7 +44,7 @@ Het Python-script [`scripts/ig_find_creators.py`](https://github.com/HIGrip/HI-G
 | Taal | NL-signaal in bio → anders status "review" i.p.v. automatisch afwijzen |
 | Dedupe | Handles die al in [[Influencer Database]] staan worden overgeslagen |
 
-**Output:** `C:\Users\lars\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
+**Output:** `<gebruikersmap>\Downloads\HiGrip_Creators.txt`, met aparte secties "KANDIDATEN" en "HANDMATIG CHECKEN (taal onduidelijk)".
 
 > **Beachhead-strategie (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026):** kernsporten zijn tennis/padel, voetbal en rugby (zie
 > [[Evaluatiecriteria]] en [[Doelgroep & Persona's]]). **TODO:** de hashtag-configuratie hieronder
@@ -70,7 +70,7 @@ playwright install chromium
 python "$env:USERPROFILE\HI-Grip-claude-setup\scripts\ig_find_creators.py"
 ```
 
-Vereist een opgeslagen IG-sessie in `C:\Users\lars\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py` (lokaal, niet in de git-repo — bevat inloggegevens).
+Vereist een opgeslagen IG-sessie in `<gebruikersmap>\.ig_session.json` (automatisch aangemaakt bij eerste login) en inloggegevens (`USERNAME`/`PASSWORD`) in `ig_search_higrip.py` (lokaal, niet in de git-repo — bevat inloggegevens).
 
 ---
 

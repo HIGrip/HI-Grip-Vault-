@@ -46,7 +46,7 @@ Vervangt SEO-regressiecheck, SEO- en conversietest, Search Console & rankings en
 8. **Tegenspraak met de feiten:** vergelijk zichtbare prijzen, verzenddrempel, verzendbelofte en retourtermijn met de "bevestigde waarde" in het feitenbestand. Meld elke afwijking.
 
 **Extra:**
-- `shopify theme check`, alleen als de thema-map beschikbaar is (lokaal `C:\Users\Test\higrip-theme`). Niet melden: JSONMissingBlock (Bundler), ImgWidthAndHeight, ParserBlockingScript. Vraagt de CLI om in te loggen: melden en overslaan.
+- `shopify theme check`, alleen als de thema-map beschikbaar is (lokaal `<gebruikersmap>\higrip-theme`). Niet melden: JSONMissingBlock (Bundler), ImgWidthAndHeight, ParserBlockingScript. Vraagt de CLI om in te loggen: melden en overslaan.
 - GA4: sessies per kanaal laatste 7 dagen tegenover de 7 daarvoor, aantal key events (0 = conversiemeting werkt nog niet) en kanaal "AI Assistant" over 30 dagen.
 - PageSpeed Insights (mobiel) voor de homepage, 1 collectie en 1 product: LCP, INP, CLS. Lukt het niet (quotum): melden.
 

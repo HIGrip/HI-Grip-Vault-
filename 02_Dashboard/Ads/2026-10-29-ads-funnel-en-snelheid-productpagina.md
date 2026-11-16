@@ -94,7 +94,7 @@ Lighthouse mobiel op WERKTHEMA, 2 runs per variant, met geblokkeerde scripts om 
 ## Bronnen
 - Meta Ads Manager (screenshots van de gebruiker), Shopify Analytics, GA4 property 476032345.
 - Lighthouse 12.6.0, lokaal; rapporten in de sessie-scratchpad.
-- Thema-werkkopie met git-historie: `C:\Users\Test\Werk\theme-snelheid\werkthema`.
+- Thema-werkkopie met git-historie: `<gebruikersmap>\Werk\theme-snelheid\werkthema`.
 - Preview: https://hi-grip.myshopify.com/products/performance-gripsokken-2-0-zwart?preview_theme_id=203461034311
 
 ## Aantekeningen

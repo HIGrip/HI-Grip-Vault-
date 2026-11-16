@@ -19,7 +19,7 @@ deadline: ""
 > Map: [[Waar staat wat]]
 
 ## In het kort
-Shopify maakte de kopie "Bijgewerkte kopie van Live website 04-11-2026" (`203954520391`, Horizon 4.4.0). Ik heb die vergeleken met live (`203928076615`, WERKTHEMA 02, Horizon 4.3.0). Daarvoor heb ik de code vergeleken (lokale kopie met git in `C:\Users\Test\Werk\theme-snelheid\update-04`) en in de preview getest. Tests: foutscan op 10 pagina's (telefoon en desktop), winkelwagenflow, snelheid met echte vertraging, fonts en afbeeldingsmaten, en een vergelijking van de paginatemplates.
+Shopify maakte de kopie "Bijgewerkte kopie van Live website 04-11-2026" (`203954520391`, Horizon 4.4.0). Ik heb die vergeleken met live (`203928076615`, WERKTHEMA 02, Horizon 4.3.0). Daarvoor heb ik de code vergeleken (lokale kopie met git in `<gebruikersmap>\Werk\theme-snelheid\update-04`) en in de preview getest. Tests: foutscan op 10 pagina's (telefoon en desktop), winkelwagenflow, snelheid met echte vertraging, fonts en afbeeldingsmaten, en een vergelijking van de paginatemplates.
 
 Conclusie: de update is bruikbaar, maar **niet zoals hij nu is**. Eerst moeten de 12 paginatemplates terug en moet de titelafbreking op de productpagina opgelost worden.
 
@@ -125,7 +125,7 @@ Op opdracht van de gebruiker is `203954520391` op 4-11 gepubliceerd. Vooraf geco
 
 ## Bronnen
 - Preview-tests met puppeteer op www.higrip.nl met `?preview_theme_id=` voor 203928076615 en 203954520391
-- Codevergelijking: `C:\Users\Test\Werk\theme-snelheid\update-04` (git) tegen `C:\Users\Test\Werk\theme-snelheid\werkthema-02`
+- Codevergelijking: `<gebruikersmap>\Werk\theme-snelheid\update-04` (git) tegen `<gebruikersmap>\Werk\theme-snelheid\werkthema-02`
 - [[2026-11-03-snelheid-werkthema-02]]
 
 ## Aantekeningen

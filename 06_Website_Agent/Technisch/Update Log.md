@@ -108,7 +108,7 @@ Uit [[2026-10-30-snelheid-code-audit-homepage]]. Gepusht met `--only` na `theme 
 
 **Wat:** `assets/hi-headings.css` (kopstijl h1-h3), `assets/hi-faq-hero.css`, `sections/faq-geo.liquid`, `sections/sport-guide.liquid`, `layout/theme.liquid`, `templates/page.sport-tennis.json`, `page.sport-padel.json`, `page.sport-voetbal.json` en `page.veelgestelde-vragen.json`. In de drie sportpagina-templates is de 22:00-verzendbelofte vervangen door "Binnen 1 werkdag verzonden". De sportpagina-templates zijn gebouwd uit de live-template plus alleen de FAQ-sectie uit het werkthema, zodat de live-foto's behouden bleven.
 
-**Hoe:** `shopify theme push` met `--only`, `--nodelete` en `--allow-live`, alleen die 9 bestanden. Back-up van de volledige live-stand van vóór de push: `C:\Users\lars\live-backup-0210`; het gepushte pakket staat in `C:\Users\lars\live-push`. Terugdraaien = die 9 bestanden uit de back-up terugpushen (de nieuwe `hi-*.css`, `faq-geo` en `sport-guide` mogen blijven staan).
+**Hoe:** `shopify theme push` met `--only`, `--nodelete` en `--allow-live`, alleen die 9 bestanden. Back-up van de volledige live-stand van vóór de push: `<gebruikersmap>\live-backup-0210`; het gepushte pakket staat in `<gebruikersmap>\live-push`. Terugdraaien = die 9 bestanden uit de back-up terugpushen (de nieuwe `hi-*.css`, `faq-geo` en `sport-guide` mogen blijven staan).
 
 **Niet mee:** de rest van het werkthema (o.a. 14 `ai_gen`-blocks, gripsocks2-secties, collection-, index- en product-templates, `ss-*`-secties).
 
@@ -138,7 +138,7 @@ Uit [[2026-10-30-snelheid-code-audit-homepage]]. Gepusht met `--only` na `theme 
 
 ## 2026-09-21 — Nieuw werkthema `201133490503` en sportlanding-systeem
 
-**Waar:** theme `201133490503` "AI website workspace 2.0" (unpublished; lokaal `C:\Users\lars\ai-workspace-2.0`), opvolger van `200269168967`. Lars wisselde live intussen naar `201132507463`; het schema-herstel van 21-09 (WebSite, FAQPage en Breadcrumb) is daar meegekomen.
+**Waar:** theme `201133490503` "AI website workspace 2.0" (unpublished; lokaal `<gebruikersmap>\ai-workspace-2.0`), opvolger van `200269168967`. Lars wisselde live intussen naar `201132507463`; het schema-herstel van 21-09 (WebSite, FAQPage en Breadcrumb) is daar meegekomen.
 
 **Wat:** sportlanding-systeem: secties `sport-hero`, `sport-proof`, `sport-story`, `sport-product`, `sport-faq`, `sport-related`, `sport-teaser`, stijl `assets/sport-landing.css`, templates `page.sport-{tennis,rugby,voetbal,padel}.json` en een homepage-teaser. Alle `ai_gen_*`-blocks en `gripsocks2-hero` kregen de setting `heading_tag` (H1-H4); de verborgen H1 in de header werd een `<p>`, zodat er precies één H1 per pagina is. Details: [[Sportlanding-systeem (21-9-2026)]].
 
@@ -150,7 +150,7 @@ Uit [[2026-10-30-snelheid-code-audit-homepage]]. Gepusht met `--only` na `theme 
 
 ## 2026-09-04 — Werkdossier doorgevoerd in theme `200269168967` (inmiddels vervangen door `201133490503`)
 
-**Waar:** theme `200269168967` ("Bijgewerkte kopie van Bijgewerkte kopie van HÏ Grip WEBSITE", unpublished), op verzoek van lars. Lokale werkkopie: `C:\Users\Test\higrip-theme-ai2`. Bron van het werk: [[Stand van Zaken — Werkdossier 2026-09-04]].
+**Waar:** theme `200269168967` ("Bijgewerkte kopie van Bijgewerkte kopie van HÏ Grip WEBSITE", unpublished), op verzoek van lars. Lokale werkkopie: `<gebruikersmap>\higrip-theme-ai2`. Bron van het werk: [[Stand van Zaken — Werkdossier 2026-09-04]].
 
 **Live was op dat moment `199814873415` (historisch: het live-ID is sindsdien gewisseld; de actuele stand staat alleen in [[Technische Procedures]]). Daar is niets naartoe gegaan en gaat ook nooit iets naartoe zonder expliciete opdracht.**
 

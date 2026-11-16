@@ -72,8 +72,8 @@ bijgewerkt: 2026-10-01
 
 **Status:** klaargezet 2026-08-01, wordt actief na herstart van de sessie/MCP-verbinding (zelfde patroon als de higrip-vault-fix).
 
-- Wrapper: `C:\Users\lars\.claude\shopify-dev-mcp.cmd` → `npx -y @shopify/dev-mcp@latest`
-- Geregistreerd in `C:\Users\lars\.claude\mcp.json` onder de naam `shopify-dev`
+- Wrapper: `<gebruikersmap>\.claude\shopify-dev-mcp.cmd` → `npx -y @shopify/dev-mcp@latest`
+- Geregistreerd in `<gebruikersmap>\.claude\mcp.json` onder de naam `shopify-dev`
 - Geen authenticatie nodig — alleen documentatie/GraphQL-schema/Liquid-validatie, **geen** toegang tot echte storedata of theme-bestanden
 
 ## Shopify — Admin API (theme-bewerking, nog niet actief)
@@ -119,10 +119,10 @@ Deze token werkt zowel als `X-Shopify-Access-Token`-header voor directe Admin RE
 
 | Onderdeel | Waarde |
 |---|---|
-| Server | `analytics-mcp` 0.7.0 (officiële `google-analytics-mcp` van Google), via `pipx` → `C:\Users\lars\.local\bin\google-analytics-mcp.exe` |
-| Wrapper | `C:\Users\lars\.claude\analytics-mcp.cmd` (zet `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_CLOUD_PROJECT`) |
-| Config | geregistreerd in **`C:\Users\lars\.claude.json`** (dat leest de VS Code-extensie) én in `C:\Users\lars\.claude\mcp.json` (CLI/SDK) |
-| Auth | **service account** `ga4-mcp@higrip-analytics.iam.gserviceaccount.com`, key op `C:\Users\lars\.claude\ga4-mcp-key.json` (secret — niet in vault/repo), toegevoegd als Viewer op de GA4-property |
+| Server | `analytics-mcp` 0.7.0 (officiële `google-analytics-mcp` van Google), via `pipx` → `<gebruikersmap>\.local\bin\google-analytics-mcp.exe` |
+| Wrapper | `<gebruikersmap>\.claude\analytics-mcp.cmd` (zet `GOOGLE_APPLICATION_CREDENTIALS` + `GOOGLE_CLOUD_PROJECT`) |
+| Config | geregistreerd in **`<gebruikersmap>\.claude.json`** (dat leest de VS Code-extensie) én in `<gebruikersmap>\.claude\mcp.json` (CLI/SDK) |
+| Auth | **service account** `ga4-mcp@higrip-analytics.iam.gserviceaccount.com`, key op `<gebruikersmap>\.claude\ga4-mcp-key.json` (secret — niet in vault/repo), toegevoegd als Viewer op de GA4-property |
 | Cloud project | `higrip-analytics` — API's aan: `analyticsdata.googleapis.com`, `analyticsadmin.googleapis.com` |
 | GA4 property | `www.higrip.nl` = `properties/476032345` |
 | Tools | `run_report`, `run_realtime_report`, `run_funnel_report`, `run_conversions_report`, `get_account_summaries`, `get_property_details`, `get_custom_dimensions_and_metrics`, `list_google_ads_links`, `list_property_annotations` |
@@ -175,8 +175,8 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 | Onderdeel | Waarde |
 |---|---|
 | Server | `buffer` — HTTP MCP-transport, endpoint `https://mcp.buffer.com/mcp` (officiële Buffer MCP-server, gelanceerd 27 mei 2026, werkt op elk abonnement incl. gratis) |
-| Auth | **API-key als Bearer-token** (aangemaakt op `https://publish.buffer.com/settings/api`). Opgeslagen als `headers.Authorization` in `C:\Users\lars\.mcp.json` én `C:\Users\lars\.claude\mcp.json`, en als env `BUFFER_ACCESS_TOKEN` in `C:\Users\lars\.claude\settings.local.json`. Secret — **niet in vault/repo**. |
-| Config | geregistreerd als `buffer` in beide `mcp.json`-bestanden (zelfde patroon als `shopify-dev` / `analytics-mcp`). Als de VS Code-extensie 'm niet oppikt: ook in `C:\Users\lars\.claude.json` zetten (zoals bij `analytics-mcp` bleek). |
+| Auth | **API-key als Bearer-token** (aangemaakt op `https://publish.buffer.com/settings/api`). Opgeslagen als `headers.Authorization` in `<gebruikersmap>\.mcp.json` én `<gebruikersmap>\.claude\mcp.json`, en als env `BUFFER_ACCESS_TOKEN` in `<gebruikersmap>\.claude\settings.local.json`. Secret — **niet in vault/repo**. |
+| Config | geregistreerd als `buffer` in beide `mcp.json`-bestanden (zelfde patroon als `shopify-dev` / `analytics-mcp`). Als de VS Code-extensie 'm niet oppikt: ook in `<gebruikersmap>\.claude.json` zetten (zoals bij `analytics-mcp` bleek). |
 | Account | HÏ Grip (`info@higrip.nl`), org-id `69b6d476e4bc4b63e1f6854d`, tijdzone Europe/Amsterdam, week start maandag |
 | Planlimieten | 3 kanalen, 10 geplande posts, 3 tags, 100 ideeën |
 | Tools | `get_account`, `list_channels`, `get_channel`, `list_posts`, `get_post`, `create_post`, `edit_post`, `delete_post`, `list_idea_groups`, `list_ideas`, `create_idea`, `get_aggregated_post_metrics`, `list_post_templates` + `get_` / `create_` / `update_` / `delete_post_template`, `introspect_schema`, `execute_query`, `execute_mutation` |
@@ -220,7 +220,7 @@ Zodra lars project-ID, credentials-pad en Property-ID doorgeeft: agent registree
 3. MCP Server-URL doorgeven (zit er een token in: als env-var, niet in vault/chat — zelfde patroon als Buffer/GA4).
 
 **Wat de agent daarna doet:**
-- Registreren als `bigin` in `C:\Users\lars\.claude.json` én `C:\Users\lars\.claude\mcp.json` (HTTP MCP-transport, zelfde patroon als `buffer`).
+- Registreren als `bigin` in `<gebruikersmap>\.claude.json` én `<gebruikersmap>\.claude\mcp.json` (HTTP MCP-transport, zelfde patroon als `buffer`).
 - OAuth-autorisatie via `/mcp` in een **interactieve** Claude Code-sessie (kan niet non-interactief), daarna herstart → actief.
 
 **Open beslissing — waar landen agent-prospects:**

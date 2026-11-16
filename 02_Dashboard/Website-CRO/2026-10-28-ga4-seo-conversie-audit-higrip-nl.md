@@ -73,8 +73,8 @@ Niet gecontroleerd: Shopify-orders, bots, consent, live UX, SERP, kpi-meetgat-no
 
 ## Bronnen
 
-- GA4-ruwe data: `C:\Users\lars\AppData\Local\hermes\cache\scratch\ga4_audit_2026_10_28_data.json`
-- GSC-ruwe data: `C:\Users\lars\AppData\Local\hermes\cache\scratch\gsc_audit_2026_10_28.json`
+- GA4-ruwe data: `<gebruikersmap>\AppData\Local\hermes\cache\scratch\ga4_audit_2026_10_28_data.json`
+- GSC-ruwe data: `<gebruikersmap>\AppData\Local\hermes\cache\scratch\gsc_audit_2026_10_28.json`
 - Kaarten t_370b3ad0 (QA), t_45e2cb0c (funnel/conversie), t_eda2c7b1 (SEO x conversie)
 
 ## Aantekeningen

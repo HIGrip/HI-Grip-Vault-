@@ -18,7 +18,7 @@ deadline: ""
 
 > Map: [[Waar staat wat]]
 
-Map: `C:\Users\lars\HiGripMedia\_Output\design\ads-html\` (src/ HTML+CSS, img/, out/). Fase 1 staat in `out\v1\`.
+Map: `<HiGripMedia>/_Output/design/ads-html/` (src/ HTML+CSS, img/, out/). Fase 1 staat in `out\v1\`.
 Niets gepubliceerd of geüpload. 16 PNG's: `out\{vb,rb}-{1-situatie,2-klantwoord,3-aanbod,4-vergelijking}_{4x5,9x16}.png`. Contactsheets: `out\contactsheet_4x5.png`, `out\contactsheet_9x16.png`. Crop-overzicht (zonder tekst | met tekst) per ad: `out\review\<naam>_review.png`.
 
 ## Per ad

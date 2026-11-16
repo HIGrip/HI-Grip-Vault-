@@ -63,7 +63,7 @@ Eerlijk over originaliteit: Social zegt zelf dat originaliteit niet is bewezen. 
 Vertaling per kanaal:
 - **Social (Social-kaart):** tascheckcarrousel (4 nov), reserve-Storypoll (5 nov), founderslog (6 nov), herinneringsstory zonder uitslag 7 en 8 nov, tasroutine-Reel (10 nov), reservecheck (13 nov), afsluiting 15 nov. Captions staan in de Social-kaart.
 - **Website (Website-kaart):** uitbreiding van https://higrip.nl/pages/gripsokken-voor-rugby met koppen "Gripsokken voor jouw rugbyweek", "Schuift je voet in je boot?", "Voor ouders: eerst de praktische vragen", "Wat weten we echt?"; CTA's "Bekijk de gripsokken" en "Bekijk de maten" (de laatste bestaat nog niet op de pagina, te koppelen aan de FAQ "Welke maat en kleur kies ik?").
-- **Design (Design-kaart):** donker, hard licht, macro van mesh/grip (de bestaande landing toont wel rugbyspelers, zie Risico's); drie schuine balken = drie vakken; één accent per uiting. Schets in `C:\Users\lars\AppData\Local\hermes\kanban\attachments\t_c9c0a41d\ek-rugby-sleutelbeelden-schets.svg`.
+- **Design (Design-kaart):** donker, hard licht, macro van mesh/grip (de bestaande landing toont wel rugbyspelers, zie Risico's); drie schuine balken = drie vakken; één accent per uiting. Schets in `<gebruikersmap>\AppData\Local\hermes\kanban\attachments\t_c9c0a41d\ek-rugby-sleutelbeelden-schets.svg`.
 - **Partnership:** geen publiek actieconcept; kleine proef met 18+ clubspelers (training/wedstrijd/reserve), anoniem terugmelden, alleen na akkoord. Drie conceptmails (Rugby Nederland, jeugdclub, studentenclub), allemaal niet verstuurd; teksten alleen in de kaartcomment van t_d043da1d.
 
 ## Fasenplan

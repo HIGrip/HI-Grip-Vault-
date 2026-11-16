@@ -22,7 +22,7 @@ deadline: "2026-11-12"
 Alleen concepten. Niets geüpload, gepubliceerd of live gezet. Canva-ontwerpen van Lars ("3 pack AD", DAHaLImDhz4) zijn gezien (alleen thumbnail, lezen) en niet gewijzigd.
 
 ## In het kort
-- **Bestanden:** `C:\Users\lars\HiGripMedia\_Output\design\ads-voetbal-rugby\` — `vb-` (voetbal) en `rb-` (rugby), `1-situatie`, `2-klantwoord`, `3-aanbod`, `4-vergelijking-A` (HOUDT VAST, Lars' tekst) en `4-vergelijking-B-grijpt` (zachter), elk `_4x5.png` en `_9x16.png`. Totaal 20 bestanden (16 hoofdbestanden + 4 B-varianten).
+- **Bestanden:** `<HiGripMedia>/_Output/design/ads-voetbal-rugby/` — `vb-` (voetbal) en `rb-` (rugby), `1-situatie`, `2-klantwoord`, `3-aanbod`, `4-vergelijking-A` (HOUDT VAST, Lars' tekst) en `4-vergelijking-B-grijpt` (zachter), elk `_4x5.png` en `_9x16.png`. Totaal 20 bestanden (16 hoofdbestanden + 4 B-varianten).
 - **Stijl:** zwart #0A0A0A, Poppins Black hoofdletters (tracking -0,04 em), één accent per ad: voetbal volt #CCFF00, rugby Tangerine #E10600 (accent per kernsport, Logo & Kleurenpalet). Eén rasterelement per uiting (halftone-hoek; bij aanbod een grijs dotveld achter de packshot), schuine vormen, sportwoord in parallellogram, wordmark klein linksonder.
 - **Beeld:** alleen eigen packshot (Performance Gripsokken 2.0 Wit 3-pack, bij aanbod) en logo uit de mediabibliotheek. Situatie en klantwoord zijn typografisch: geen actiefoto's gebruikt (zie Besluit).
 - **9:16:** bovenste 150 px en onderste 250 px bevatten geen tekst of logo (pixelcontrole: onderste 250 px leeg; bovenste 150 px alleen halftone-dots, geen tekst).

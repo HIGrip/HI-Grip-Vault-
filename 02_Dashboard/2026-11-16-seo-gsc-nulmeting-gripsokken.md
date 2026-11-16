@@ -38,6 +38,7 @@ Exacte query "gripsokken", NL, per pagina:
 | /products/hi-grip-gripsokken-1 | 12 | 1.226 | 5,4 |
 | / (homepage) | 0 | 15 | 35,9 |
 | /collections/gripsokken | 0 | 1 | 2,0 |
+| /products/performance-gripsokken?variant=...&utm_source=google (productfeed) | 0 | 1 | 2,0 |
 
 Query's met "gripsokken" (bevat), NL, per pagina: oude productpagina 1.331 vertoningen (pos. 5,9); `/blogs/hi-grip/waarom-hi-grip-gripsokken` 36 (7,7); homepage 27 (23,4); `/collections/gripsokken` 11 (19,1); `/pages/gripsokken-voor-voetbal` 19 (26,5); `/pages/gripsokken-voor-padel` 3 (31,7); `/products/performance-gripsokken-2-0-zwart` 7 (19,4).
 
@@ -45,7 +46,7 @@ Varianten, NL: grip socks 335 vertoningen (pos. 9,9, 1 klik); grip sokken 129 (1
 
 Apparaat (query bevat gripsokken, NL): mobiel 841 vertoningen (CTR 0,48%), desktop 584 (CTR 1,37%), tablet 16.
 
-Merkzoekopdrachten NL: hi grip (31 klikken, pos. 1), higrip (26, pos. 1), high grip (6). Dat is het grootste deel van de 146 klikken.
+Merkzoekopdrachten NL: hi grip (31 klikken, pos. 1), higrip (26, pos. 1), high grip (6). Samen zijn dat 63 van de 146 klikken (ongeveer 43%); het merkverkeer is dus een groot deel, niet de meerderheid.
 
 ## Wat dit betekent
 
@@ -55,7 +56,7 @@ Merkzoekopdrachten NL: hi grip (31 klikken, pos. 1), higrip (26, pos. 1), high g
 
 ## Acties
 
-- [ ] P1 · Besluit: welke URL wordt de hoofdpagina voor "gripsokken": de collectie (nu bijna onzichtbaar) of de oude productpagina (rankt nu)? Voorstel (zie het plan): nu de rankende productpagina beschermen en optimaliseren, de collectie gefaseerd opbouwen als eindhub.
+- [ ] P1 · Besluit: welke URL wordt de hoofdpagina voor "gripsokken": de collectie (nu bijna onzichtbaar) of de oude productpagina (rankt nu)? Voorstel (zie het plan): nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont (optie A). Aanvulling 16-11: de oude URL `hi-grip-gripsokken-1` stuurt sinds 25-9 door (301, 2 stappen) naar `/products/performance-gripsokken`; Search Console toont nog de oude URL.
 
 ## Wat niet lukte
 

@@ -99,7 +99,7 @@ Alle FitSockr-ads: landing fitsockr.nl (productcollectie of webshop), hoofdlabel
 - Beeldelementen zijn afgeleid uit screenshots; niet per pixel gecontroleerd.
 
 ## Bronnen
-- Meta Ad Library NL, bekeken 9-11-2026. Screenshots (alleen referentie, nooit hergebruiken): `C:\Users\lars\HiGripMedia\_Output\content\ad-library-2026-11-09\` (14 PNG's, bestandsnaam met merk, startdatum en Ad-ID).
+- Meta Ad Library NL, bekeken 9-11-2026. Screenshots (alleen referentie, nooit hergebruiken): `<HiGripMedia>/_Output/content/ad-library-2026-11-09/` (14 PNG's, bestandsnaam met merk, startdatum en Ad-ID).
 - Eerder: [[2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]].
 
 ## Aantekeningen

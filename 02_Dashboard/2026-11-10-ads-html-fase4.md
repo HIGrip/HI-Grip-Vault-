@@ -18,7 +18,7 @@ deadline: ""
 
 > Map: [[Waar staat wat]]
 
-Uitvoer: `C:\Users\lars\HiGripMedia\_Output\design\ads-html\out\fase4\` (24 PNG: 6 ads x 2 sporten x 4:5 en 9:16, plus contactsheet_fase4_4x5.jpg en _9x16.jpg; `_notext_*` zijn controlebestanden).
+Uitvoer: `<HiGripMedia>/_Output/design/ads-html/out/fase4/` (24 PNG: 6 ads x 2 sporten x 4:5 en 9:16, plus contactsheet_fase4_4x5.jpg en _9x16.jpg; `_notext_*` zijn controlebestanden).
 Bron: `src\style4.css`, `src\*_f4.html`, `tools\gen_fase4.py` (HTML + render), `tools\f4photo2.py` (grade + crops), `tools\f4_measure.py` (marges/logo). Fase 3 (`src_fase3_backup`, `out\fase3`) ongemoeid.
 
 Grade: diepe zwarten, S-curve, belichting omlaag, gras gedempt (verzadiging -80%, helderheid -26%), tinten behouden, korrel + vignet. Accent alleen #CCFF00; geen rood in UI.

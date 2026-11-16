@@ -63,4 +63,4 @@ Camera laag (10–30 cm boven gras), 24–70 mm of 35 mm macro, hoge sluitertijd
 Geen: dit is een plan. Er is niets gefotografeerd of gecontroleerd, en geen onafhankelijke Design-QA.
 
 ## Bronnen
-Huidige set: C:\Users\lars\HiGripMedia\_Output\design\ads-html\out\fase4b (rb-1-situatie, rb-2-klantwoord, rb-4A/4B-vergelijking, rb-5-top; 4x5 en 9x16)
+Huidige set: <HiGripMedia>/_Output/design/ads-html/out/fase4b (rb-1-situatie, rb-2-klantwoord, rb-4A/4B-vergelijking, rb-5-top; 4x5 en 9x16)

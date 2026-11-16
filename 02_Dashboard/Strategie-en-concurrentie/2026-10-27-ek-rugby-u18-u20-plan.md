@@ -6,7 +6,7 @@ datum: 2026-10-27
 bron: los
 routine: ""
 categorie: Merk
-status: nieuw
+status: bekeken
 prioriteit: P1
 samenvatting: "HÏ Grip kan in 10 dagen nog inspelen op het U18/U20-toernooi met één concept (\"Drie vakken, één rugbyweek\": TRAINING, WEDSTRIJD, RESERVE), de bestaande rugbylanding en organische social, zonder merkrechten en zonder nieuw spelersbeeld. Lean vraagt geen extra cash maar wel 35 uur werk; de optionele advertentie (€150) en sokken voor een clubproef zijn wel kosten. Alle vier de QA-hoeken gaven CORRIGEER (licht, niets blokkerend); die punten zijn verwerkt, er is nog geen tweede QA-ronde. Opbrengst is niet te voorspellen en kan nul zijn; de kans zit vooral in een herbruikbare rugby-basis en B2B-gesprekken na het toernooi."
 gerelateerd: [2026-10-28-ga4-seo-conversie-audit-higrip-nl, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby]
@@ -166,3 +166,5 @@ Niet gevonden of niet gecontroleerd: productkostprijs; contractuele sokkenexclus
 - [[2026-10-28-ga4-seo-conversie-audit-higrip-nl]] (GA4-baseline).
 
 ## Aantekeningen
+
+- **9-11-2026 · Besluit Lars: ON HOLD.** HÏ Grip speelt voorlopig niet in op het EK rugby U18/U20 (Praag). De deadline van 3 november is daarmee bewust verlopen, geen vergeten besluit. Niets uit dit plan wordt uitgevoerd; de plan-acties en de P1-besluiten (concept, capaciteit/tarief, voorraad 2.0, persoon-in-beeld) vervallen tot Lars het zelf heropent. Het plan blijft staan als basis voor een volgende rugbyeditie of -toernooi.

@@ -183,7 +183,7 @@ Dataroute: primair de reeds geregistreerde alleen-lezen Meta MCP. Accounttoegang
 | Design Volt-campagne-uitzondering | t_c95394d9, QA t_21a52b5e | GOED (2 kanttekeningen) | QA noemt zichzelf een zelfcheck-toets zonder visuele render; cart 7932 buiten scope |
 | Ads-advies v1 | t_29555ffc, QA t_32570060 | CORRIGEER | Niet overgenomen |
 | Ads-advies v2 | t_d598365c, QA t_2ae5e0ed | Ads v3: ESCALEER (na ronde 1 en 2 CORRIGEER; QA t_cdd48098) | Na twee correctierondes formeel ESCALEER, inhoudelijke QA-punten opgelost, maar 455 woorden > zelf opgelegd maximum 400; geen Ads-GOED en geen accountdata. QA ruw 550-600, toolgeteld 455 whitespace-woorden (Denzel): 455 > 400. Niet als goedgekeurd overgenomen [ADS-INHOUDELIJK-ONGEKEURD] |
-| Dit rapport | t_e8144db7, QA t_c561c46a | GOED (2 opmerkingen, verwerkt) | Eerdere versie t_33949113, QA t_e05f6574 en t_de11ce50. Deze bundeling (t_e08a71ed) is nog niet onafhankelijk getoetst; QA volgt |
+| Dit rapport | t_e8144db7, QA t_c561c46a | GOED (2 opmerkingen, verwerkt) | Eerdere versie t_33949113, QA t_e05f6574 en t_de11ce50. Bundeling t_e08a71ed: Website-QA t_aef7ca55 GOED (Ads-status ESCALEER), t_696e37ca GOED (vroege toegang), t_dba8b50b GOED (marge en Ads-dataroute); QA-rol en maker zijn dezelfde agent, geen onafhankelijke menselijke toets. Deze verwerking (t_eea0bfb7): eind-QA t_f1c35493 volgt |
 
 ### 10. Acquisitiestrategie, meting en onbekenden (Website-redactie)
 Alleen uit besluiten van Lars en gevalideerde delen. Het betaalde-kanaaldeel (Meta) volgt pas na Ads-QA GOED. Voorstel, geen besluit.
@@ -208,7 +208,7 @@ Alleen uit besluiten van Lars en gevalideerde delen. Het betaalde-kanaaldeel (Me
 2. Mixen van 1.0 en 2.0; B2B, teamorders en ambassadeurs uitsluiten?
 3. Wanneer is CM1 en maximale CAC intern geverifieerd (alleen grens of ja/nee delen is genoeg)?
 4. Gedeeltelijke 1+1-retour en actievoorwaarden; juridische toets van het beleidsherstel.
-5. Aank/modelondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (geen harde preheatdatum).
+5. Aankondigingsdatum video en mail, en hoeveel eerder de vroege toegang is (geen harde preheatdatum).
 6. Veilige credential-vrijgave voor de Meta MCP en live toets door een mens; geaggregeerde export alleen als terugval (na besluit over vraag 7).
 7. **Beslissing Lars (Ads-advies, voorstel):** maximaal 2 normale correcties zijn verbruikt en het advies telt 455 woorden bij een zelf opgelegd maximum van 400. Kies: (a) 455 accepteren als uitzondering, of (b) een extra inkortingsronde toestaan. Zonder besluit blijft het Ads-advies ongekeurd en wordt er niets overgenomen.
 

@@ -10,6 +10,15 @@ bijgewerkt: 2026-10-01
 
 ---
 
+## 2026-11-09 — Ads-keten: v1 afgekeurd door Lars; v2 herstart; vijf leerregelkandidaten
+
+**Feedback Lars (via Denzel, kaart t_dd66a788, 13:02):** de eerste ketenronde was te zwak: Meta Ad Library-research te oppervlakkig; ads hadden bijna geen foto's, stonden niet in Canva en niet in de inspiratiestijl. **Agents:** Social (research), Design (visuals), Design-QA v1 (zelfde profiel). **Sterren:** niet gegeven; geen cijfer geregistreerd.
+**Reden (door Denzel aangereikt):** zie kandidaten. **Leerregelkandidaten, Denzel bepaalt, nog NIET vastgelegd in [[Leerregels per Agent]]:** (1) briefing "alleen foto's met bevestigde rechten" terwijl eigen HiGripMedia-foto's vrij zijn voor ads; (2) Design kreeg niet expliciet "maak in Canva" en de Canva-route (higrip-denzel references/canva-ads.md) staat niet in Designs skills; (3) inspiratie was bron maar niet verplicht per ad; (4) v1-QA was dezelfde Design-agent in QA-rol en gaf GOED op "geen actiefoto's/rechten": QA moet doelgeschiktheid toetsen tegen Lars' schema en inspiratie; (5) geen visuele zelfcontrole-lus.
+**Herstel:** v2-keten 13:08 tot 14:22 (zie [[2026-11-09-ads-keten-v2-proces-en-log]] en [[Agent Werk & Kwaliteit Overzicht]], sectie Denzel). Alle QA's in v2 gaven CORRIGEER in ronde 1, geen herstelkaart gevonden. Aanvullend punt: teksten-kaart "op basis van goedgekeurd plan" na Ads-QA CORRIGEER, mogelijk tweede keer de Denzel-regel van 6 november.
+**Grenzen:** administratieve vastlegging; geen eigen leerregel, geen sterren, niets afgevinkt.
+
+---
+
 ## 2026-11-06 — Denzel: doelcorrectie adsbudget op gebruikersfeedback
 
 **Feedback Lars:** budget van het minimale adsplan is te laag voor echt advertenties testen en data opbouwen; vraagt of drie sets met elk vier ads nodig zijn. Dit is een vraag/hypothese, geen goedgekeurde testopzet. **Agent:** Denzel. **Sterren:** niet gegeven.

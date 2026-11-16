@@ -5,14 +5,26 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 16 november 2026 (growth-radar)
-Open: 35 · Afgerond: 16
+Laatst bijgewerkt: 16 november 2026 (seo)
+Open: 37 · Afgerond: 16
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
 ---
 
 ## P1 — Deze week
+
+### [ ] [conversietest] Collectiebeschrijving `/collections/gripsokken` verdwenen na thema-wissel (nieuw 16 nov 2026)
+**Waarom:** De collectiebeschrijving van 222 woorden die RUN 2 (28 sep) schreef en die op 19 okt bevestigd live ging, stond nog op 9 nov op de pagina. Live gecontroleerd op 16 nov is er geen collectietekst meer te zien en de pagina linkt niet meer intern naar de sportpagina's (padel, tennis, voetbal, rugby) of de vergelijkingspagina. SEO-titel, meta description en de alt-teksten van RUN 2 staan nog wel overeind. Waarschijnlijke oorzaak: de volledige thema-wissel van begin november (MAIN nu 203954520391) nam dit contentblok niet over uit de oude themalijn. RUN 2 liet voor deze pagina een positieverbetering zien (12,1 → 7,6) die mogelijk weer verloren gaat.
+**Waar:** `/collections/gripsokken`
+**Wat:** Conceptcollectiebeschrijving (161 woorden, met interne links) + kortere SEO-titel (57 tekens, huidige is 61) staan klaar in de verborgen Shopify-pagina `seo-routine-logboek`, RUN 8 sectie 9.2. Team bepaalt of de tekst terugkomt als los contentblok of als `descriptionHtml`, en plakt/publiceert.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, auditblok B)
+
+### [ ] [conversietest] Negatieve voorraad op alle 6 varianten van Performance Gripsokken 2.0, Product-schema meldt nog InStock (nieuw 16 nov 2026)
+**Waarom:** Via de Shopify Admin API gecontroleerd op 16 nov: alle zes varianten (PGSZ201/202/203 zwart, PGSW201/202/203 wit) tonen een negatieve `inventoryQuantity` (bv. PGSZ203 43–47: −30), terwijl `totalInventory` per product 0 toont — wijst op doorverkopen bij backorder. Het Product-schema meldt voor deze varianten nog steeds InStock (al bekend open punt sinds het weekoverzicht van 2 nov), waardoor het risico op een Google Shopping-afkeuring toeneemt.
+**Waar:** Performance Gripsokken 2.0 Zwart en Wit, alle varianten — Shopify Admin (voorraad) en het Product-schema in het thema
+**Wat:** Besluit nodig: welke voorraadstatus klopt (backorder toestaan en schema aanpassen naar `BackOrder`/`OutOfStock`, of voorraad aanvullen). Claude wijzigt geen voorraad of schema-instellingen; dit is een melding voor het team.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, auditblok B)
 
 ### [ ] [regressie] `/pages/terugbetalingsbeleid` heeft titel "American Express" en geen meta description (nieuw 19 okt 2026)
 **Waarom:** De pagina `/pages/terugbetalingsbeleid` (sinds deze week in de sitemap) gaat over het betalingsbeleid (H1: "Betalingsbeleid", met uitleg over betaalmethodes), maar de `<title>` die Google en browsers tonen is simpelweg "American Express" — een betaalmethode, geen paginatitel — en er is helemaal geen meta description. Dat is zowel verwarrend (het lijkt een American Express-pagina) als een gemiste SEO-kans.

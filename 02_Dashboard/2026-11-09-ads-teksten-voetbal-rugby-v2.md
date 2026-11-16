@@ -14,9 +14,10 @@ vervangt: [2026-11-09-ads-teksten-voetbal-rugby]
 bronbestand: ""
 deadline: "2026-11-12"
 ---
-> Map: [[Waar staat wat]]
 
 # Ads v2: teksten voor 2 x 4 statics voetbal en rugby
+
+> Map: [[Waar staat wat]]
 
 Alleen concepten. Niets geplaatst, geüpload of live gezet; dat doet een mens. Door Social geschreven, nog niet door Content-QA getoetst (ronde 2 volgt). Beeldrichting is een korte aanwijzing voor Design, geen ontwerp. Lars' Canva-ontwerpen zijn alleen gelezen (tekst opgehaald), niet gewijzigd.
 

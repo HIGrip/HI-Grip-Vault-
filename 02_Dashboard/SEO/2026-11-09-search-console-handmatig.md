@@ -18,7 +18,6 @@ deadline: ""
 
 > Map: [[Waar staat wat]]
 
-
 ## In het kort
 
 Dit is een **handmatige hermeting** (op verzoek van Lars, via `google_data.py gsc` in een Claude Code-sessie), geen run van de geplande routine. Referentiepunt: [[2026-11-02-search-console]].

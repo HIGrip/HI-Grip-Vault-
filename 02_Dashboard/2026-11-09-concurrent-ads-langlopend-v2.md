@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: ""
 ---
-> Map: [[Waar staat wat]]
 
 # Concurrent-ads langlopend v2 (Meta Ad Library)
+
+> Map: [[Waar staat wat]]
 
 ## In het kort
 - Bron: facebook.com/ads/library, zonder inloggen, 9-11-2026 tussen 13:15 en 13:50. Eén browser-sessie, niets aangeklikt behalve zoekresultaten, kaartdetails en 'Meer weergeven'. 127 zoekruns, 2.432 kaarten gelezen, 1.263 verschillende ads. Volledige tabel (zoekopdracht, land, status, totaal, kaarten geladen, relevante ads): [[2026-11-09-concurrent-ads-langlopend-v2-zoektabel]].

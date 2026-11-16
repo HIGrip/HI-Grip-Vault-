@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: "2026-11-13"
 ---
-> Map: [[Waar staat wat]]
 
 # Ads voetbal en rugby v2 (Design, 09-11-2026)
+
+> Map: [[Waar staat wat]]
 
 Status: DEELS OPGELEVERD. 6 van 16 gevraagde varianten (3 adtypes x 2 sporten, alleen 4:5). Niet af: aanbod-ad (ad 4), 9:16, Canva-commit, onafhankelijke toetsing.
 

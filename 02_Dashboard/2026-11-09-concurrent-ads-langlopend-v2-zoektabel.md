@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: ""
 ---
-> Map: [[Waar staat wat]]
 
 # Ad Library v2: zoektabel
+
+> Map: [[Waar staat wat]]
 
 Peildatum 9-11-2026 (13:15 tot 13:50). Hoofdnotitie: [[2026-11-09-concurrent-ads-langlopend-v2]]. Kolom 'Totaal' is wat de Ad Library zelf meldt (inclusief versies); 'Geladen' is wat ik daadwerkelijk heb uitgelezen. Staat er 30 bij een totaal boven 30, dan is de rest niet geladen (rate limit). Staat er een getal gelijk aan het totaal, dan is de lijst compleet. 'Relevante ads' = aantal actieve ads met start op of voor 9 jun 2026 in de geladen kaarten, plus de gripsok- of sportadverteerders daarbij.
 

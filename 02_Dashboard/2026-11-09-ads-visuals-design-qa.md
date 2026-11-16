@@ -19,7 +19,7 @@ deadline: "2026-11-12"
 
 > Map: [[Waar staat wat]]
 
-Alleen gelezen en gemeten; geen ontwerp gewijzigd, niets gepubliceerd. Toetser: Design Agent in QA-rol (D1 t/m D12 is voorstel; geen onafhankelijke tweede toetser beschikbaar, dit is dus geen goedgekeurde QA).
+Alleen gelezen en gemeten; geen ontwerp gewijzigd, niets gepubliceerd. Toetser: Design Agent in QA-rol (D1 t/m D12 was op 09-11 voorstel, sinds 16-11-2026 geldend; geen onafhankelijke tweede toetser beschikbaar, dit is dus geen goedgekeurde QA).
 
 ## Verdict: CORRIGEER
 

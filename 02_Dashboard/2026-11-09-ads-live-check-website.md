@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: "2026-11-13"
 ---
-> Map: [[Waar staat wat]]
 
 # Ads live check website
+
+> Map: [[Waar staat wat]]
 
 Alleen gelezen. Niets gewijzigd aan thema, prijzen, voorraad of checkout. Peildatum 9 november 2026, ca. 11:30 tot 11:45, via browser (Nederlands netwerk) op de live site. Live thema is `t/39` (uit de asset-URL's; geen `shopify theme list` gedraaid, want er is niets aan het thema gedaan).
 

@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: "2026-11-13"
 ---
-> Map: [[Waar staat wat]]
 
 # Ads v2: psychologie en plan voetbal en rugby, live deze week
+
+> Map: [[Waar staat wat]]
 
 Alleen advies. Ads voert niets uit en maakt geen advertentiecontent (geen koppen, copy of beelden; richtlijnen in woorden). Meta alleen gelezen via de alleen-lezen koppeling, peildatum 9-11-2026 ca. 14:00. Concurrentiedata uit [[2026-11-09-concurrent-ads-langlopend-v2]] (Ad Library, door Social), sitedata uit [[2026-11-09-ads-live-check-website]]. Verbeterd t.o.v. v1: echte accountbaseline, psychologie per Ad-ID, beperkingen per bron, rekenwerk op gemeten waarden, en de FitSockr-tellingen en prijsbron uit de Ads-QA gecorrigeerd (zie onderaan).
 

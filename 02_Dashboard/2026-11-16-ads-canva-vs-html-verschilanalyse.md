@@ -16,7 +16,7 @@ deadline: ""
 ---
 # Ads: Canva (Lars) vs. HTML (agents) — verschilanalyse
 
-> Map: [[Home]]
+> Map: [[Waar staat wat]]
 
 ## In het kort
 Waargenomen op Canva-designs DAHabTgWvSQ en DAHabQHd7PM (3 pack AD, voetbal/rugby), DAHaiTTVyGo (Klantwoord, voetbal/rugby) en de agent-ads in `HiGripMedia/_Output/design/ads-html/out/fase4b/`. Dit is een observatie van Denzel; het verbeterplan en de uitvoering komen van de Design Agent, met onafhankelijke QA.

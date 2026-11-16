@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: ""
 ---
-> Map: [[Waar staat wat]]
 
 # Concurrent-ads langlopend (Meta Ad Library NL)
+
+> Map: [[Waar staat wat]]
 
 ## In het kort
 - Bron: facebook.com/ads/library, land Nederland, alle advertentiestatussen, zonder inloggen, 9-11-2026 (peildatum). Zoektermen: fitsockr, proskary, tapedesign, optigrip, stepzz, stanno, gripsokken, grip socks, voetbal sokken, rugby sokken, rugby grip.

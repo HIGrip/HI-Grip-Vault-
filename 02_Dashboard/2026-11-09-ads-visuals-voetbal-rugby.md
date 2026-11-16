@@ -33,7 +33,7 @@ Alleen concepten. Niets geüpload, gepubliceerd of live gezet. Canva-ontwerpen v
 - [ ] P1 · Besluit: aanbod toont "3-PACK €44,95 · GRATIS VERZENDING" en geen was-prijs (€53,85 is een som, geen eerdere prijs; open besluit uit tekstnotitie). €44,95 en €14,98 staan niet in Feiten [CHECK]; Lars' Canva-ad leek in de thumbnail €53,95 te tonen: controleer dat het €53,85 moet zijn
 - [ ] P1 · Besluit: ad 4 A ("HOUDT VAST") of B ("GRIJPT"); beide staan klaar, bronregel uit de formuleringsregel staat in beeld
 - [ ] P2 · Besluit: Rox-quote niet gebruikt (geen vrijgave voor betaald); klantwoord = 3.500+ (schrijfwijze met punt zoals schema)
-- [ ] P2 · Content-QA/Design-QA: onafhankelijke toetsing ontbreekt (D1 t/m D12 is nog voorstel)
+- [ ] P2 · Content-QA/Design-QA: onafhankelijke toetsing ontbreekt (D1 t/m D12 was op 09-11 voorstel; sinds 16-11-2026 geldend, toetser is een onafhankelijk profiel)
 - [ ] P2 · Besluit: rugby-accent rood (sportaccent) versus algemene regel "donker = volt"; ik koos de sportregel. Rood op zwart heeft ca. 3,6:1: alleen grote koppen, geen kleine tekst in rood
 - [ ] P2 · Performance Days: aanbod-visuals (vb-3, rb-3) noemen prijs; per 27-11 pauzeren (advies Ads-plan)
 

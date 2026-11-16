@@ -26,6 +26,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[2026-10-27]]
 - [[2026-11-02]]
 
+### Vault-onderhoud
+- [[2026-11-10]]
+
 ### _archief
 - [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]
 

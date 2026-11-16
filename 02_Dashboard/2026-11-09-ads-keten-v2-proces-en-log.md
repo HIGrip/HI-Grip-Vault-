@@ -14,9 +14,10 @@ vervangt: []
 bronbestand: ""
 deadline: "2026-11-12"
 ---
-> Map: [[Waar staat wat]]
 
 # Ads-keten v2 op 9 november: proces en tool-gebruik
+
+> Map: [[Waar staat wat]]
 
 Feiten uit de kanbankaarten (`task_runs`, kaartresultaat) en de sessielogs per profiel (`state.db`, berichten met aanroepen; alleen gelezen). Tijden zijn 9 november 2026, claim tot afronding. Geen oordeel over inhoud, geen sterren (geen sterren is geen cijfer), geen prioriteiten. Eerste ronde: [[2026-11-09-ads-keten-proces-en-log]].
 

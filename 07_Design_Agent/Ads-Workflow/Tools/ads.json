@@ -1,0 +1,257 @@
+{
+ "_media_root": "Paden hieronder zijn relatief aan MEDIA_ROOT (omgevingsvariabele HIGRIP_MEDIA_ROOT; lokale kopie van de gedeelde Drive HiGripMedia).",
+ "_regel": "Eén bestand = alle ads. Wijzig hier foto of copy en draai: python Tools/build.py [id ...]. Copy komt uit goedgekeurde fase 4b-copy en Feiten & Actuele Staat (3500+, verplichte grip-formulering).",
+ "foto_voetbal": "Content - HÏ Grip/Sporten/VOETBAL/",
+ "foto_rugby": "Content - HÏ Grip/Sporten/RUGBY/",
+ "PROOF": "*Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17 — 95% meer grip (Apps et al. 2022).",
+ "ads": [
+  {
+   "id": "vb-a-situatie",
+   "sport": "VOETBAL",
+   "dir": "voetbal",
+   "src": "IMG_1975.JPG",
+   "kop": [
+    "JE VOET SCHUIFT",
+    "IN JE SCHOEN."
+   ],
+   "blok": "BIJ ELKE DRAAI.",
+   "proof": false,
+   "alt": "Voeten in voetbalschoenen met witte gripsokken op gras, voetbal, geen gezicht",
+   "foto": {
+    "hero": [
+     0.28,
+     0.22,
+     0.95,
+     0.65
+    ],
+    "target": {
+     "4x5": [
+      0.17,
+      0.5
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "vb-b-sporters",
+   "sport": "VOETBAL",
+   "dir": "voetbal",
+   "src": "IMG_3702.JPG",
+   "kop": [
+    "3.500+",
+    "SPORTERS"
+   ],
+   "blok": "DRAGEN HÏ GRIP.",
+   "proof": false,
+   "alt": "Voetballer met witte gripsokken op een voetbalveld, voetbal, geen gezicht",
+   "foto": {
+    "hero": [
+     0.0,
+     0.3,
+     0.45,
+     0.55
+    ],
+    "target": {
+     "4x5": [
+      0.17,
+      0.5
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "vb-c-vergelijking",
+   "sport": "VOETBAL",
+   "dir": "voetbal",
+   "src": "IMG_1479.JPG",
+   "kop": [
+    "ZONDER GRIP",
+    "GLIJDT."
+   ],
+   "blok": "95% MEER GRIP*",
+   "proof": true,
+   "alt": "Voet met witte gripsok in voetbalschoen op gras, vergelijking gripsok en gewone sok",
+   "foto": {
+    "hero": [
+     0.0,
+     0.3,
+     0.55,
+     0.6
+    ],
+    "target": {
+     "4x5": [
+      0.15,
+      0.5
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "vb-d-top",
+   "sport": "VOETBAL",
+   "dir": "voetbal",
+   "src": "IMG_1483.JPG",
+   "kop": [
+    "JE DRAAIT.",
+    "JE VOET NIET."
+   ],
+   "blok": "DAT IS HOUVAST.",
+   "proof": false,
+   "alt": "Close-up voet met witte gripsok in voetbalschoen, houvast bij draaien",
+   "foto": {
+    "hero": [
+     0.45,
+     0.05,
+     0.75,
+     0.45
+    ],
+    "target": {
+     "4x5": [
+      0.17,
+      0.5
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "rb-a-situatie",
+   "sport": "RUGBY",
+   "dir": "rugby",
+   "src": "HI_Grip_Instagram_Post_1080x1350.png",
+   "kop": [
+    "JE VOET SCHUIFT",
+    "IN JE SCHOEN."
+   ],
+   "blok": "BIJ ELKE TACKLE.",
+   "proof": false,
+   "alt": "Rugbyspeler schopt een bal in zwarte gripsokken van HÏ Grip op het rugbyveld",
+   "foto": {
+    "hero": [
+     0.35,
+     0.45,
+     0.92,
+     0.9
+    ],
+    "target": {
+     "4x5": [
+      0.1,
+      0.58
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "rb-b-sporters",
+   "sport": "RUGBY",
+   "dir": "rugby",
+   "src": "HI_Grip_Instagram_Post_1080x1350.png",
+   "kop": [
+    "3.500+",
+    "SPORTERS"
+   ],
+   "blok": "DRAGEN HÏ GRIP.",
+   "proof": false,
+   "alt": "Rugbyspeler in beweging met zwarte gripsokken van HÏ Grip op het rugbyveld",
+   "foto": {
+    "hero": [
+     0.2,
+     0.1,
+     0.7,
+     0.75
+    ],
+    "target": {
+     "4x5": [
+      0.08,
+      0.58
+     ],
+     "9x16": [
+      0.12,
+      0.5
+     ]
+    }
+   }
+  },
+  {
+   "id": "rb-c-vergelijking",
+   "sport": "RUGBY",
+   "dir": "rugby",
+   "src": "HI_Grip_Instagram_Post_1080x1350.png",
+   "kop": [
+    "ZONDER GRIP",
+    "GLIJDT."
+   ],
+   "blok": "95% MEER GRIP*",
+   "proof": true,
+   "alt": "Rugbyschoen en gripsok bij een trap op gras, vergelijking gripsok en gewone sok",
+   "foto": {
+    "hero": [
+     0.55,
+     0.62,
+     0.92,
+     0.88
+    ],
+    "target": {
+     "4x5": [
+      0.12,
+      0.52
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  },
+  {
+   "id": "rb-d-top",
+   "sport": "RUGBY",
+   "dir": "rugby",
+   "src": "HI_Grip_Instagram_Post_1080x1350.png",
+   "kop": [
+    "KRACHT BEGINT",
+    "ONDERAAN."
+   ],
+   "blok": "BIJ HOUVAST.",
+   "proof": false,
+   "alt": "Rugbyspeler schopt vanaf de grond, kracht begint onderaan bij de voet en gripsok",
+   "foto": {
+    "hero": [
+     0.33,
+     0.5,
+     0.55,
+     0.92
+    ],
+    "target": {
+     "4x5": [
+      0.12,
+      0.52
+     ],
+     "9x16": [
+      0.14,
+      0.46
+     ]
+    }
+   }
+  }
+ ]
+}

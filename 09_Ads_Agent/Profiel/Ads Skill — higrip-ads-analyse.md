@@ -35,6 +35,7 @@ Dit is de enige ingang tot de Ads-kennis in dit profiel. De upstream-dirigent (`
 | Conversiedefinities, vensters, GA4-afstemming | `ads-attribution` |
 | Server-side tagging, deduplicatie, datakwaliteit | `ads-server-side-tracking` |
 | Experimenten: hypothese, power, looptijd, uitlezing | `ads-test` |
+| Creatives analyseren: invalshoek, hook, format per funnelfase, meetlat per laag, opschalen (HÏ Grip-kennis, 16-11-2026) | [[Ads Kennis — Lessen media buyers (TikTok)]] |
 
 Niet aanwezig en niet te gebruiken: `ads-validate`, `ads-create`, `ads-creative`, `ads-generate`, `ads-photoshoot`, `ads-launch`, `ads-optimize`, `ads-monitor`, `ads-setup`, `ads-research`, `ads-report`, `ads-audit`, `ads-landing`, `ads-competitor`, `ads-dna` en alle andere platformen dan Meta (Google alleen via een apart besluit).
 

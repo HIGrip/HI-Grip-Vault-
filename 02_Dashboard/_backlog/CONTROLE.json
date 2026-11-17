@@ -2065,9 +2065,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "oude URL hoe-verleng-je-de-levensduur-van-je-gripsokken geeft nog 404; hoe-zorg-ik-voor-mijn-gripsokken bevat 0x levensduur en 0x wasvoorschrift",
-   "controle": "samenvoeging levensduur-blog in verzorgingsblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "oude URL geeft nog HTTP 404; doelartikel bevat nog geen \"levensduur\"/\"wasvoorschrift\", nog niet samengevoegd",
+   "controle": "status van levensduur-artikel en inhoud van hoe-zorg-ik-voor-mijn-gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2079,9 +2079,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "beide URLs (gripsokken-tijdens-pilates-en-yoga, waarom-gripsokken-verplicht-zijn-bij-pilates) geven nog 404, sitemap_articles_1.xml nog 5 artikelen",
-   "controle": "samenvoeging pilates/yoga-blog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide URL's geven nog HTTP 404, sitemap telt nog 5 artikelen zonder deze titels",
+   "controle": "status van twee pilates/yoga-blogtitels opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2093,23 +2093,23 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#16eea17b": {
-   "bewijs": "title/H1 op wat-zijn-gripsokken nog HI Grip | Wat zijn gripsokken? Waarom gripsokken dragen?, tekst nog ver onder 1400-1600 woorden",
-   "controle": "woordaantal en titel/H1 van waarom-hi-grip-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "title en H1 ongewijzigd, pagina telt circa 730 woorden, ver onder de vereiste 1.400-1.600",
+   "controle": "title, H1 en woordaantal van wat-zijn-gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "https://www.higrip.nl/blogs/hi-grip/waarom-sporten-meer-is-dan-bewegen geeft nog 404; sitemap_articles_1.xml telt nog 5 artikelen, dit artikel ontbreekt",
-   "controle": "status van de bewegen-blogpost en de 301 opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "pagina geeft nog HTTP 404, sitemap telt nog 5 artikelen zonder dit artikel",
+   "controle": "status van waarom-sporten-meer-is-dan-bewegen en sitemap_articles_1.xml opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "https://www.higrip.nl/blogs/hi-grip/sportvoeding geeft nog HTTP 404, geen 301 naar /blogs/trends",
-   "controle": "status van de sportvoeding-blogpost en de 301 opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "pagina geeft nog HTTP 404, geen 301 naar /blogs/trends",
+   "controle": "status van /blogs/hi-grip/sportvoeding opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2121,9 +2121,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "https://www.higrip.nl/blogs/hi-grip/hoe-is-hi-grip-ontstaan geeft nog 404, geen 301 naar /pages/over-ons",
-   "controle": "status hoe-is-hi-grip-ontstaan en 301 naar over-ons opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "pagina geeft nog HTTP 404, geen 301 naar /pages/over-ons",
+   "controle": "status van hoe-is-hi-grip-ontstaan opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2156,9 +2156,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "niet te controleren: https://www.higrip.nl/blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar geeft nog 404, meta niet leesbaar",
-   "controle": "meta van de voor-welke-sport-blog, vereist de live pagina",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "niet te controleren: pagina geeft nog HTTP 404",
+   "controle": "meta van voor-welke-sport-zijn-gripsokken-onmisbaar opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2198,16 +2198,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "/blogs/trends linkt nog 4x naar collections/all en 0x naar collections/gripsokken; wat-zijn-gripsokken linkt nog 5x/0x",
-   "controle": "blog-CTA-links naar collections/all vs collections/gripsokken opnieuw geteld",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "/blogs/trends linkt nog 4x naar collections/all en 0x naar collections/gripsokken; wat-zijn-gripsokken 5x/0x",
+   "controle": "blog-CTA-links naar collections/all vs collections/gripsokken geteld op /blogs/trends en wat-zijn-gripsokken",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "waarom-hi-grip-gripsokken geeft nog 301 naar wat-zijn-gripsokken, geen samengevoegd artikel; gripsokken-de-toekomst-van-jouw-sportoutfit geeft nog 404",
-   "controle": "samenvoeging wat-zijn-gripsokken/toekomst-sportoutfit in waarom-hi-grip-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "eerste geeft nog 301 naar wat-zijn-gripsokken (geen samengevoegd artikel op eigen URL), tweede geeft nog HTTP 404",
+   "controle": "status van waarom-hi-grip-gripsokken en gripsokken-de-toekomst-van-jouw-sportoutfit opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2226,16 +2226,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "alle 3 URLs (waarom-gripsokken-het-verschil-maken, meer-grip-meer-vertrouwen, hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures) geven nog 404, geen samengevoegd artikel live",
-   "controle": "samenvoeging in de blessure-blog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "alle drie URL's geven nog HTTP 404, geen samengevoegd artikel live",
+   "controle": "status van drie samen te voegen blogtitels opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "doel-URL /blogs/hi-grip/het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters geeft nog 404, oude /blogs/2590799_het-innovatieve ook nog 404; geen krachttraining-artikel in sitemap_articles_1.xml",
-   "controle": "gebroken link in de krachttraining-blog en het doelartikel opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "doel-URL geeft nog HTTP 404, sitemap telt 5 artikelen zonder een krachttraining-artikel",
+   "controle": "doel-URL grippatroon-artikel en sitemap_articles_1.xml opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2262,9 +2262,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-voordelenpagina-analyse#6b326f42": {
-   "bewijs": "sitemap_pages_1.xml op higrip.nl bevat 26 pagina's, geen voordeel/voordelen-pagina; conceptpagina staat nog alleen in een Artifact",
-   "controle": "aanwezigheid van een voordelenpagina in de live sitemap opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "sitemap telt nog 26 pagina's, geen /pages/voordeel of /pages/voordelen",
+   "controle": "sitemap_pages_1.xml opnieuw doorzocht op een voordelenpagina",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2328,9 +2328,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: event-configuratie en baseline-meting zijn niet zichtbaar via curl/statische HTML",
-   "controle": "GA4-events voor sportkiezer/360/scrolldiepte en 4-weken-baseline, vereist JS en GA4-toegang",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "niet te controleren: event-configuratie en baseline-data niet zichtbaar in statische HTML",
+   "controle": "nagegaan of GA4-events en baseline-meting statisch te verifiëren zijn",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2413,9 +2413,9 @@
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#ff235e99": {
-   "bewijs": "header-group.json announcement_mARzei nog DE KEUZE VAN 3500+ SPORTERS; higrip.nl/pages/over-ons nog 3x 3500+ en 1x 3000+",
-   "controle": "sportersaantal op homepage/2.0-productpaginas/over-ons opnieuw geteld",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "announcementbar nog \"DE KEUZE VAN 3500+ SPORTERS\"; over-ons gemengd (3x 3500+, 1x 3000+); productpagina's uitsluitend 3500+",
+   "controle": "sportersaantal op homepage, /pages/over-ons en de drie productpagina's opnieuw geteld",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2441,9 +2441,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
-   "bewijs": "Organization JSON-LD op higrip.nl heeft nog geen description-key (alleen WebSite en FAQPage ernaast, ook zonder description)",
-   "controle": "description-key in het Organization-schema van de homepage opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "3 JSON-LD-blokken (Organization, WebSite, FAQPage) aanwezig, geen heeft een description-key",
+   "controle": "Organization JSON-LD op de homepage gecontroleerd op een description-key",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2647,9 +2647,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#022f1382": {
-   "bewijs": "Bekijk de maten komt 0x voor op higrip.nl/pages/gripsokken-voor-rugby; FAQ-tekst Welke maat en kleur kies staat er wel (1x) maar zonder gekoppelde CTA",
-   "controle": "CTA Bekijk de maten op de rugbylanding opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "\"Bekijk de maten\" komt 0x voor; FAQ staat er zonder gekoppelde CTA",
+   "controle": "CTA \"Bekijk de maten\" en FAQ-koppeling op /pages/gripsokken-voor-rugby opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2738,9 +2738,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
-   "bewijs": "higrip.nl/pages/gripsokken-voor-rugby bevat nog Geen doorglijden, Kracht komt aan, zet scherper af, Minder schuiven (2x), Fris tot de laatste minuut; gemengd komt 0x voor",
-   "controle": "absolute claims op de rugbylanding opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "pagina bevat nog meerdere absolute claims (Geen doorglijden, Kracht komt aan, etc.), \"gemengd\" komt 0x voor",
+   "controle": "absolute claims op /pages/gripsokken-voor-rugby opnieuw geteld",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2818,9 +2818,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "beide pagina's hebben nog self-canonical (higrip.nl/pages/collection en higrip.nl/collections/gripsokken), geen redirect/canonical ingesteld; geen losse koopintentie-analyse-notitie gevonden",
-   "controle": "canonical/redirect tussen /pages/collection en /collections/gripsokken opnieuw gecontroleerd, geen koopintentie-analyse in vault gevonden",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide geven HTTP 200 met self-canonical, geen redirect of cross-canonical",
+   "controle": "canonical-tags en redirectgedrag van /pages/collection en /collections/gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2854,9 +2854,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "homepage 6x 3500+/0x 3000+/0x 1000+, /en 6x 3500+/0x/0x, nog niet geharmoniseerd (higrip.nl/ en higrip.nl/en)",
-   "controle": "sportersaantal op homepage en /en opnieuw geteld",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "homepage en /en nog uitsluitend 3500+ (10x elk), /collections/gripsokken gemengd (2x 3000+/2x 3500+) - nog niet geharmoniseerd",
+   "controle": "sportersaantal geteld op /, /en en /collections/gripsokken",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3024,9 +3024,9 @@
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
-   "bewijs": "niet te controleren: de popup wordt alleen via JS getoond, niet aanwezig in de curl-HTML; EcomSend staat ook niet in appInstallations",
-   "controle": "EcomSend-popupknop opnieuw proberen te controleren",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "niet te controleren: EcomSend laadt via een JS-bundle, popup-DOM en knopkleur staan niet in de statische HTML",
+   "controle": "homepage doorzocht op de EcomSend-popup en kleurcode #0011A7",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3045,9 +3045,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96379ed9": {
-   "bewijs": "curl op /products/performance-grip-socks-1 en -2 geeft nog beide HTTP 404 zonder redirect (vers getest)",
-   "controle": "status van de twee EcomSend-paginalinks opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide URL's geven nog HTTP 404, geen redirect",
+   "controle": "status van /products/performance-grip-socks-1 en -2 opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3455,9 +3455,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
-   "bewijs": "niet te controleren: vereist mobiele lab-rendering in een browser, curl levert alleen statische HTML zonder performance-timing",
-   "controle": "cookiebanner-rendersnelheid opnieuw proberen te controleren",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "niet te controleren: render-timing vereist browser/lab-meting, curl geeft alleen statische HTML zonder timing",
+   "controle": "nagegaan of cookiebanner-rendersnelheid statisch te meten is op /cart en /pages/contact",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },

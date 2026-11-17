@@ -1,7 +1,7 @@
 ---
 id: 2026-11-16-seo-plan-nummer-1-gripsokken
 titel: "SEO-plan: groeien op gripsokken"
-kerntitel: "Bescherm positie 5,7 op de productpagina achter de oude URL; bouw de collectie gefaseerd op"
+kerntitel: "Bescherm positie 5,7 op de productpagina achter de oude URL; bouw de collectie gefaseerd"
 datum: 2026-11-16
 bron: los
 routine: ""

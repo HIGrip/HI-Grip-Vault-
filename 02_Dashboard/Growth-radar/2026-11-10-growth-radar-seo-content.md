@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Een meting van 4.000+ zoekwoorden en bijna 40.000 Google-productgrids (Kevin Indig/Growth Memo, maart 2026, nog steeds actueel via een Search Engine Roundtable-bericht van 30 september 2026) laat zien dat categoriepagina's 97% van de actief rankende grid-plekken innemen en productpagina's maar 3%. Voor higrip.nl versterkt dit het bestaande backlogpunt 18: de term 'grip socks' is nu juist verdeeld over `/en` (homepage), `/en/products/performance-gripsokken` (productpagina) en `/en/collections/gripsokken` (collectiepagina) — die laatste zou volgens dit patroon de sterkste papieren hebben."
-gerelateerd: [2026-11-09-search-console, 2026-11-02-search-console]
+gerelateerd: [2026-11-09-search-console, 2026-11-02-search-console, 2026-11-17-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

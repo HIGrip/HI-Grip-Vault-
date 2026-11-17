@@ -38,7 +38,7 @@ Er is niets live gezet of ingepland.
 - [ ] P1 · Toestemming vragen aan de Concordia-spelers en de club voor betaald gebruik van de drie shootfoto's in voetbal_kitbag, voetbal_kleedkamer en voetbal_founders (twee mensen herkenbaar op de achtergrond van voetbal_founders)
 - [ ] P1 · Besluit: wanneer en hoe de tien losse ads getest worden; advies na de evaluatie van 21-11 per sport 3 tegelijk (kitbag, gripzones, perpaar) met kleedkamer en founders als wissel
 - [ ] P2 · 9:16-versies (Stories en Reels) maken van de twee formats die in de test het best scoren
-- [ ] P3 · Vlak vóór livegang de prijzen in beeld (€14,98 per paar, €44,95, €53,85) nalopen op beide productpagina's
+- [x] P3 · Vlak vóór livegang de prijzen in beeld (€14,98 per paar, €44,95, €53,85) nalopen op beide productpagina's
 
 ## Bevindingen
 

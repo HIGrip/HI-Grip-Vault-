@@ -1878,16 +1878,16 @@
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#0496d928": {
-   "bewijs": "higrip.nl/pages/gripsokken-voor-voetbal: pasvorm 4x, maat 4x, lengte 0x, clubkous 0x - nog geen keuzegids-uitbreiding",
-   "controle": "pasvorm/maat/lengte/clubkous-termen op de voetbalpagina opnieuw geteld",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "pasvorm 6x, maat 8x, maar lengte en clubkous 0x; keuzegids-uitbreiding nog niet toegevoegd",
+   "controle": "pasvorm/maat/lengte/clubkous-termen op /pages/gripsokken-voor-voetbal opnieuw geteld",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
-   "bewijs": "meta description bevat nog letterlijk komt u alles te weten en witte gripsokken, ongewijzigd",
-   "controle": "meta description van wat-zijn-gripsokken opnieuw gecontroleerd op komt u/witte gripsokken",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "meta description bevat nog 'komt u alles te weten' en 'witte gripsokken', ongewijzigd",
+   "controle": "meta description van wat-zijn-gripsokken opnieuw gecontroleerd op komt-u/witte-gripsokken",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1899,9 +1899,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
-   "bewijs": "/collections/witte-gripsokken en /collections/zwarte-gripsokken geven beide nog HTTP 404, collecties bestaan nog niet",
-   "controle": "status van de collecties witte en zwarte gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide collectie-URL's geven nog HTTP 404, bestaan nog niet",
+   "controle": "status van /collections/witte-gripsokken en /collections/zwarte-gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2009,9 +2009,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#a37c4e83": {
-   "bewijs": "higrip.nl/pages/ons-verhaal bevat nog maar 1 korte alinea (Wij versnellen de beweging van iedere sporter) plus 3 korte founder-quotes, geen uitgebouwd oprichtersverhaal",
-   "controle": "lengte van het verhaal op /pages/ons-verhaal opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "nog circa 85 woorden tekst, geen uitgebouwd oprichtersverhaal",
+   "controle": "lengte van het oprichtersverhaal op /pages/ons-verhaal opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2072,9 +2072,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "hoe-zorg-ik-voor-mijn-gripsokken nog kort, 0x wasvoorschrift en 0x levensduur, meta nog in u-vorm (Hier kan u terecht, uw gripsokken)",
-   "controle": "woordaantal en inhoud van de verzorgingsblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "artikel nog kort (circa 184 woorden), 0x wasvoorschrift/levensduur/fout, meta description nog in u-vorm",
+   "controle": "woordaantal en inhoud van hoe-zorg-ik-voor-mijn-gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2086,9 +2086,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1448275a": {
-   "bewijs": "wat-zijn-gripsokken, hoe-zorg-ik-voor-mijn-gripsokken en de-wetenschap-achter-gripsokken tonen nog alleen tekst Timo Heijligers, geen foto, geen bio-regel, geen laatst bijgewerkt-tekst",
-   "controle": "auteursweergave op de 3 live artikelen opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "alle 3 tonen nog alleen platte tekst 'Timo Heijligers' naast de datum, geen auteursfoto/bio, 0x 'laatst bijgewerkt'",
+   "controle": "auteursweergave op drie blogartikelen opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2114,9 +2114,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#308272a7": {
-   "bewijs": "beste-gripsokken-voetbal, welke-gripsokken-bestaan, afgeknipte-voetbalsokken en zijn-gripsokken-toegestaan-door-de-knvb geven alle 4 nog 404",
-   "controle": "status van de 4 voetbal-blog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "alle 4 URL's geven nog HTTP 404, geen in sitemap_articles_1.xml",
+   "controle": "status van vier voetbal-blogtitels opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2135,23 +2135,23 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
-   "bewijs": "URL geeft nog HTTP 404 zonder redirect, dus nog geen 301 naar /pages/ontdek-jouw-sport",
+   "bewijs": "URL geeft nog HTTP 404 zonder 301 naar /pages/ontdek-jouw-sport",
    "controle": "status van voor-welke-sport-zijn-gripsokken-onmisbaar opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#42cbed6f": {
-   "bewijs": "sitemap_articles_1.xml telt nog dezelfde 5 artikelen (wat-zijn-gripsokken, hoe-zorg-ik-voor-mijn-gripsokken, de-wetenschap-achter-gripsokken, welke-maat-gripsokken, waarom-glijdt-je-voet-in-je-schoen), geen grippatroon/geschiedenis/sportclubs/krachttraining/blaren-artikel erbij",
-   "controle": "sitemap_articles opnieuw gecontroleerd op de 5 genoemde onderwerpen",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "sitemap telt nog dezelfde 5 artikelen, geen van de onderwerpen toegevoegd",
+   "controle": "sitemap_articles_1.xml opnieuw gecontroleerd op vijf voorgestelde nieuwe artikelonderwerpen",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#4b1810bd": {
-   "bewijs": "title nog HI Grip | Wat zijn gripsokken? Waarom gripsokken dragen? (56 tekens), merknaam nog vooraan i.p.v. het zoekwoord",
+   "bewijs": "title ongewijzigd (56 tekens), merknaam staat nog vooraan i.p.v. het zoekwoord",
    "controle": "titelopbouw van wat-zijn-gripsokken opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2170,30 +2170,30 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#9602726a": {
-   "bewijs": "title van de-wetenschap-achter-gripsokken is nog HI Grip | Zijn gripsokken wetenschappelijk bewezen beter?, nog niet herschreven",
-   "controle": "bewezen beter-tekst in de wetenschapsblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "title nog 'Zijn gripsokken wetenschappelijk bewezen beter?'; Friedl et al. 2023 staat los in de bronnenlijst zonder specifieke +9,3%-claim in de tekst",
+   "controle": "title, bronnenlijst en bewezen-beter-tekst van de-wetenschap-achter-gripsokken opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a248abc5": {
-   "bewijs": "gripsokken-bij-tennis-en-padel-het-verschil en padelsokken-kiezen geven beide nog 404, geen van beide in sitemap_articles_1.xml",
-   "controle": "status van de tennis/padel-blog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide URL's geven nog HTTP 404, geen in sitemap_articles_1.xml",
+   "controle": "status van twee tennis/padel-blogtitels opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a2c621ef": {
-   "bewijs": "hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures geeft nog 404, sitemap_articles_1.xml bevat nog alleen de 5 bekende artikelen",
-   "controle": "status van de blessureblog-URL en sitemap opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "URL geeft nog HTTP 404, sitemap telt nog dezelfde 5 artikelen",
+   "controle": "status van het blessure-artikel en sitemap_articles_1.xml opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "gripsokken-tijdens-pilates-en-yoga en waarom-gripsokken-verplicht-zijn-bij-pilates geven beide nog 404, geen pilatesartikel in sitemap_articles_1.xml",
-   "controle": "status van de pilatesblog-URLs opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "beide URL's geven nog HTTP 404, geen pilatesartikel in de sitemap",
+   "controle": "status van twee pilates/yoga-URL's en sitemap_articles_1.xml opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2212,16 +2212,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#bcecbd1c": {
-   "bewijs": "titles nog HI Grip | Trendblogs en HI Grip | Algemene blogs, H1 op beide nog Ga door waar anderen stoppen zonder zoekwoord of intro",
-   "controle": "title en H1 van /blogs/trends en /blogs/hi-grip opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "titles en H1 ongewijzigd zonder zoekwoord, intro circa 24 woorden (niet 100-150)",
+   "controle": "title, H1 en introlengte van /blogs/trends en /blogs/hi-grip opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
-   "bewijs": "higrip.nl/pages/gripsokken-voor-rugby geeft nu 200 en staat in sitemap_pages_1.xml, maar sitemap_articles_1.xml bevat nog geen rugbyblog",
-   "controle": "rugbypagina en rugbyblog opnieuw gecontroleerd",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "rugbypagina bestaat als pages-URL, maar sitemap_articles_1.xml bevat nog geen rugbyblog",
+   "controle": "/pages/gripsokken-voor-rugby en sitemap_articles_1.xml opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2248,9 +2248,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-blogs-stappenplan#f73bcbeb": {
-   "bewijs": "meta description van wat-zijn-gripsokken bevat nog komt u alles te weten en witte gripsokken, ongewijzigd",
-   "controle": "feitencheck-termen in de meta van wat-zijn-gripsokken opnieuw geteld",
-   "gecontroleerd": "2026-11-15",
+   "bewijs": "meta description bevat nog 'komt u alles te weten' en 'witte gripsokken', ongewijzigd",
+   "controle": "feitencheck-termen in de meta description van wat-zijn-gripsokken opnieuw geteld",
+   "gecontroleerd": "2026-11-17",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4418,6 +4418,13 @@
    "methode": "geen",
    "uitkomst": "open"
   },
+  "2026-11-09-ads-teksten-voetbal-rugby-v2#ad3e062e": {
+   "bewijs": "niet te controleren: betreft een schrijfwijze-keuze voor nog te maken ad-ontwerpen, geen live sitecontent; de homepage zelf gebruikt al 3500+",
+   "controle": "gecontroleerd of de schrijfwijze 3.500+ vs 3500+ al live/consistent is",
+   "gecontroleerd": "2026-11-17",
+   "methode": "geen",
+   "uitkomst": "open"
+  },
   "2026-11-09-ads-teksten-voetbal-rugby-v2#d771b562": {
    "bewijs": "vereist een beslissing van een mens, niet automatisch waar te nemen",
    "controle": "besluit-actie voor Lars/Timo",
@@ -4602,6 +4609,27 @@
    "gecontroleerd": "2026-11-10",
    "methode": "geen",
    "uitkomst": "dubbel"
+  },
+  "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
+   "bewijs": "beide pagina's hebben nog geen meta description en geen robots-meta, onveranderd",
+   "controle": "meta description en robots-meta van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
+   "methode": "site",
+   "uitkomst": "open"
+  },
+  "2026-11-09-regressiecheck-handmatig#811c3f82": {
+   "bewijs": "nog geen meta description, onveranderd",
+   "controle": "meta description van /pages/teamorder opnieuw gecontroleerd",
+   "gecontroleerd": "2026-11-17",
+   "methode": "site",
+   "uitkomst": "open"
+  },
+  "2026-11-09-regressiecheck-handmatig#96ba1592": {
+   "bewijs": "situatie veranderd: beide geven nu een echte HTTP 301-redirect (x-redirect-reason: shop_redirect) i.p.v. een canonical-tag; geen bevestigde canonical-keuze zoals de actie vraagt",
+   "controle": "robots-meta en redirectgedrag van /pages/gripsokken-2-0-a en -b opnieuw gecontroleerd (headers zonder -L)",
+   "gecontroleerd": "2026-11-17",
+   "methode": "site",
+   "uitkomst": "open"
   },
   "2026-11-09-search-console#a3999643": {
    "bewijs": "zelfde positiemonitoring gripsokken-voor-voetbal NL als backlogpunt 27, alleen nieuwere stand",
@@ -5014,6 +5042,14 @@
    "gecontroleerd": "2026-11-17",
    "methode": "geen",
    "uitkomst": "handmatig"
+  },
+  "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
+   "bewijs": "beide pagina's tonen €44,95 doorgestreept €53,85 voor het 3-pack; €44,95/3 = €14,98 per paar, klopt met de live site",
+   "controle": "prijzen €14,98/€44,95/€53,85 nagelopen op beide 2.0-productpagina's",
+   "gecontroleerd": "2026-11-17",
+   "methode": "site",
+   "sinds": "2026-11-17",
+   "uitkomst": "gedaan"
   },
   "2026-11-15-ads-tien-losse-ads-rugby-voetbal#264e05de": {
    "bewijs": "vraagt toestemming van spelers en club, mensenwerk",

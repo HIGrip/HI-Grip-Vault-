@@ -5,8 +5,6 @@ bijgewerkt: 2026-11-16
 
 # Foto-index ads v6
 
-> Map: [[07 Design Agent — Index]]
-
 Welke bronfoto bij welke ad hoort. De foto's staan op de gedeelde Drive (HiGripMedia) en zijn NIET in de vault gekopieerd. Pad = relatief aan `MEDIA_ROOT` (omgevingsvariabele `HIGRIP_MEDIA_ROOT`, lokale kopie van de Drive). Het resultaat reproduceer je met `python Tools/build.py <id>`; de bron staat ook in `Tools/ads.json`. Regels: [[WORKFLOW]].
 
 | Ad | Klasse | Drive-submap | Bestandsnaam | Held-bbox (x0,y0,x1,y1) | Doel 4:5 | Doel 9:16 | Kop | Blok | Bewijs |
@@ -27,3 +25,5 @@ Welke bronfoto bij welke ad hoort. De foto's staan op de gedeelde Drive (HiGripM
 - Rugby: alle vier de ads gebruiken dezelfde Instagram-post (mogelijk derde-merk-bal in beeld, bestaande overlay). Vlag voor Team HÏ Grip; nieuwe foto's na de rugbyshoot van 17-11.
 - Voetbalfoto's: op enkele is een bal van een ander merk zichtbaar (QA-vlag).
 - Nieuwe foto toevoegen: raster met `Tools/gridsheet.py`, bbox in `Tools/ads.json`, rij hier bijwerken.
+
+> Map: [[07 Design Agent — Index]]

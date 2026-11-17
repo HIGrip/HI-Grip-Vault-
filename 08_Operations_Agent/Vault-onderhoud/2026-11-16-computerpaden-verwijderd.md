@@ -17,3 +17,5 @@ Aanleiding: basisregel 16 (geen computerpaden in de vault). Taak t_6ec5756a, doo
 
 ## Controle
 Treffers `C:\Users` in .md (00–09): 28 bestanden aangepast (65 regels); na de ingreep 19 bestanden met een treffer over (18 alleen frontmatter-veld `bronbestand` + ACTIEBACKLOG, 2 treffers). Een aantal bestanden stond in zowel de tekst- als de frontmatterlijst.. `vault_nav.py --dry-run` draait (11 nav-wijzigingen staan open, niet van deze taak; niet uitgevoerd). `build_register.py --check`: OK, 0 FOUT. Niets afgevinkt, niet gecommit.
+
+> Map: [[08 Operations Agent — Index]]

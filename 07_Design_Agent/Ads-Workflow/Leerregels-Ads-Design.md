@@ -5,8 +5,6 @@ bijgewerkt: 2026-11-16
 
 # Leerregels Ads-Design
 
-> Map: [[07 Design Agent — Index]]
-
 Eén rij per regel. Nieuwe correctie van Lars: onderaan toevoegen met datum en reden. Lees dit vóór elke ads-ronde. Toepassing in [[WORKFLOW]].
 
 | # | Regel | Datum | Reden |
@@ -26,3 +24,5 @@ Eén rij per regel. Nieuwe correctie van Lars: onderaan toevoegen met datum en r
 | 13 | Drempels alleen verruimen met reden en vastlegging in WORKFLOW §3. | 16-11-2026 | In v6 zijn R10 en R14 na de eerste meting verruimd (tekstzware klassen, 9:16 safe zones); dat moet zichtbaar blijven. |
 | 14 | Bronregel/kleine tekst moet op 400 px breed leesbaar blijven (QA: ~11 px is te klein). | 16-11-2026 | QA v6 (CORRIGEER licht): zwaarste punt. Oplossing nog open, zie VERBETERPLAN. |
 | 15 | Eigen ads niet als 'beste ads' tonen vóór Lars ze goedkeurt; Voorbeelden bevat alleen Lars' ads of door hem goedgekeurde ads. Een voorbeeld toont een echte HÏ Grip-productsok, geen artefacten, geen afgesneden elementen, geen bal of ander merk, en een claim alleen met de verplichte formulering en bron. | 16-11-2026 | Lars: 'wat er nu staat in Voorbeelden is niet goed'. De 10 v6-beelden haalden check.py (13 PASS-regels) maar hadden artefacten, afgesneden bal, donkere sok, claim-twijfel en rugby uit één bronfoto: de meting dekt beeldkwaliteit en productwaarheid niet. |
+
+> Map: [[07 Design Agent — Index]]

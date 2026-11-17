@@ -9,7 +9,7 @@ categorie: Techniek
 status: verwerkt
 prioriteit: P1
 samenvatting: "De Shopify-update naar Horizon 4.4.0 (kopie 203954520391) houdt alle eigen aanpassingen van WERKTHEMA 02 intact, maar voegt aan 12 paginatemplates een standaard paginatitel toe; op de twee A/B-pagina's (gripsokken-2-0 en gripsokken-2-1) vervangt die zelfs de productsectie, waardoor product, pakketten en de knop In winkelwagen verdwijnen. Daarnaast breekt op desktop de producttitel midden in een woord. Snelheid, winkelwagen, betaalknoppen en fonts zijn gelijk aan live. Niet live zetten voordat de templates zijn teruggezet; niets gewijzigd aan live."
-gerelateerd: [2026-11-03-snelheid-werkthema-02]
+gerelateerd: [2026-11-03-snelheid-werkthema-02, 2026-11-16-horizon-4-5-update-check]
 vervangt: []
 bronbestand: ""
 deadline: ""

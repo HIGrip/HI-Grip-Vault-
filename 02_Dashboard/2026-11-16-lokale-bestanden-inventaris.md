@@ -16,6 +16,8 @@ deadline: ""
 ---
 # Inventaris: belangrijke bestanden die alleen buiten de vault staan
 
+> Map: [[Waar staat wat]]
+
 ## In het kort
 Opdracht Lars, 16-11-2026 (basisregel 16 in [[user]]). Gekeken naar de scripts-map van Hermes, de skills higrip-* en ads-*, SOUL/config per profiel en HiGripMedia/_Output. Niet bekeken: de privé-map, .env, tokens en mcp-tokens. Pad-types staan zonder gebruikerspad: `<hermes>` = de Hermes-installatiemap van Lars, `<media>` = de lokale kopie van HiGripMedia. Ik heb niets verplaatst; de voorstellen zijn aan Lars.
 

@@ -5,8 +5,6 @@ bijgewerkt: 2026-11-16
 
 # Verbeterplan ads (v5 fase 1, bijgewerkt na v6 en QA)
 
-> Map: [[07 Design Agent — Index]]
-
 Doel: HTML-ads op het niveau van Lars' Canva-ads (zie [[Voorbeelden]]). Sjabloonregels: [[WORKFLOW]].
 
 ## Kern (v5, nog geldig)
@@ -35,3 +33,5 @@ Grootste hefboom: fotokeuze (volledige actie, held buiten de tekstzone) en korte
 2. Eén wijziging per ronde, daarna opnieuw meten (`check.py`) én kijken.
 3. Beste goedgekeurde resultaat: kopieer naar `Voorbeelden/` (max ~10, <= 300 KB) met stijlnotitie in [[Voorbeelden]].
 4. Drempel verruimen mag alleen met reden in [[WORKFLOW]] §3 (de twee verruimingen van v6 staan er al in).
+
+> Map: [[07 Design Agent — Index]]

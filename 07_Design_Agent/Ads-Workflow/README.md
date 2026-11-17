@@ -5,8 +5,6 @@ bijgewerkt: 2026-11-16
 
 # Ads-Workflow (Design Agent)
 
-> Map: [[07 Design Agent — Index]]
-
 Alles wat de Design Agent leert en bouwt voor ads staat hier, zodat elke laptop, collega of agent verder kan. Niets hiervan hoeft op de computer van Lars te staan. Foto's en video's staan op de gedeelde Drive (HiGripMedia) en zijn hier alleen verwezen, niet gekopieerd.
 
 ## Lees in deze volgorde
@@ -40,3 +38,5 @@ Geen computerpaden, geen tokens, geen foto's of video's, geen `__pycache__` of l
 - Wat ontbrak / wat misging: (1) de eerste testrun faalde door een fout van mij in `build.py` bij het ontkoppelen van paden (variabele `p`), meteen hersteld; (2) `HIGRIP_MEDIA_ROOT` moet een pad zijn dat de gebruikte Python begrijpt (Windows: `C:/...`, niet `/c/...` uit git-bash); (3) niets anders ontbrak: lettertypen, CSS, fit.js en logo worden door `config.prepare_work()` naar de werkmap gekopieerd.
 - Niet getest: andere laptop, macOS/Linux, Edge i.p.v. Chrome, en de andere 15 ads (alleen build-pad van 1 ad en 1 formaat; `--set`, `sheet.py`, `probe.py`, `grade`-reflect-pad in 9:16 niet opnieuw gedraaid). De hulpscripts `sheet.py`, `pilot_sheet.py` en `probe.py` zijn alleen aangepast op paden.
 - Zoekopdracht naar Windows- en macOS-gebruikerspaden (de patronen "C:" + backslash of slash + "Users" en slash + "Users" + slash) in alle tekstbestanden en in de binaire bestanden (logo, fonts, JPG's): **0 treffers**.
+
+> Map: [[07 Design Agent — Index]]

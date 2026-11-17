@@ -25,9 +25,11 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Kanban-naleving
 - [[2026-10-27]]
 - [[2026-11-02]]
+- [[2026-11-16]]
 
 ### Vault-onderhoud
 - [[2026-11-10]]
+- [[2026-11-16-computerpaden-verwijderd]]
 
 ### _archief
 - [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]

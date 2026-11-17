@@ -7,8 +7,6 @@ bijgewerkt: 2026-11-16
 
 > **LET OP (Lars, 16-11-2026): ALLE 10 eigen v6-beelden zijn slecht en afgekeurd. Niet gebruiken, niet kopiëren.** Alleen Lars' Canva-ads gelden als voorbeeld. Verwijder deze waarschuwing pas als Lars een nieuwe set heeft gezien en goedgekeurd.
 
-> Map: [[07 Design Agent — Index]]
-
 Status: onder 'Voorbeelden' staan alleen Lars' Canva-ads. Een eigen ad komt hier pas bij na (1) toetsing door een ander profiel dan de Design Agent en (2) akkoord van Lars. Een ad die `check.py` passeert is niet automatisch goed: `check.py` meet contrast, ruimte en variatie, niet of foto, product en claim kloppen (zie [[Leerregels-Ads-Design]] #15). Bronfoto's: [[Foto-index]]. Regels: [[WORKFLOW]].
 
 ## Voorbeelden: Lars' Canva-ads (alleen lezen, nooit wijzigen)
@@ -38,3 +36,5 @@ Gemeenschappelijk (tegenover Lars' ads): geen witte HÏ Grip-sok als held, held 
 
 ## Nieuwe set (nog niet gebouwd)
 Eisen: één held (echte HÏ Grip-sok, bij voorkeur wit), één groot Volt-blok, minimale tekst (max 6 elementen), geen artefacten of afgesneden elementen, geen ander merk, claims alleen met de verplichte formulering uit Feiten & Actuele Staat. Rugby wacht op de shoot van 17-11. Open vraag voor Lars: mag de zwarte 2.0-sok (echt product) held zijn, of alleen wit?
+
+> Map: [[07 Design Agent — Index]]

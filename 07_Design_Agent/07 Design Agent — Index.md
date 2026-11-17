@@ -18,6 +18,16 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Iconografie]]
 - [[Logo & Kleurenpalet]]
 
+### Ads-Workflow
+- [[Foto-index]]
+- [[Leerregels-Ads-Design]]
+- [[07_Design_Agent/Ads-Workflow/README|Ads-Workflow/README]]
+- [[VERBETERPLAN]]
+- [[WORKFLOW]]
+
+### Ads-Workflow/Voorbeelden
+- [[Voorbeelden]]
+
 ### Inspiratie
 - [[Inspiratie Beeld-stijlanalyse]]
 - [[Inspiratie Video-stijlanalyse]]

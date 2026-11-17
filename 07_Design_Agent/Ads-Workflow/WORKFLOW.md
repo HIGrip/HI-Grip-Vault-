@@ -6,8 +6,6 @@ status: actueel (ads v6)
 
 # Ads-workflow v6: sjabloonregels en stappen
 
-> Map: [[07 Design Agent — Index]]
-
 Alleen HTML/CSS + headless Chrome (Canva is niet voor AI-agents; Canva alleen lezen). Uitvoer komt in de werkmap buiten de vault (zie `Tools/config.py`), niets uploaden of publiceren. Dit is de v6-stand (iteratie op v5). Waarom elke regel er is: [[Leerregels-Ads-Design]].
 
 ## 1. Sjabloon = vaste stijlregels + 4 toegestane layout-klassen
@@ -80,3 +78,5 @@ Held-venster: `Tools/grade2.py` snijdt het venster uit de bronfoto zodat de held
 
 ## 6. Niet gecontroleerd (stand v6)
 Weergave in Meta (UI-overlays), kleurprofiel, SEO-zoekwoorden in alt-teksten, reflect-pad artefacten in 9:16 close-ups. Onafhankelijke QA (v6): CORRIGEER (licht), zie [[VERBETERPLAN]] voor de open punten.
+
+> Map: [[07 Design Agent — Index]]

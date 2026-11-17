@@ -42,7 +42,7 @@ Alleen gelezen en gemeten; geen ontwerp gewijzigd, niets gepubliceerd. Toetser: 
 - [ ] P1 · Design: woordspatie vergroten (min. 0,25 em) in "GEWONE SOK", "3 PAAR" en dezelfde kop in alle 4:5 en 9:16; opnieuw exporteren en opnieuw meten
 - [ ] P1 · Design: bronregel ad 4 groter (min. 32 px) of korter, in 4:5 en 9:16
 - [ ] P1 · Design: ad 3 afstemmen op Lars' 3-pack-ad of Lars laat bewust twee stijlen toe
-- [ ] P1 · Website/Ads: €44,95 en €14,98 bevestigen in Feiten voordat ad 3 live gaat; ook 3-pack 2.0 als product en voorraad 2.0 (5-11 negatief)
+- [x] P1 · Website/Ads: €44,95 en €14,98 bevestigen in Feiten voordat ad 3 live gaat; ook 3-pack 2.0 als product en voorraad 2.0 (5-11 negatief)
 - [ ] P2 · Design: Canva-versiegeschiedenis van "3 pack AD" controleren (Lars) en €53,95 vs €53,85 rechtzetten
 - [ ] P2 · Design: officiële logobestanden naast wordmark leggen
 - [ ] P2 · Design: contrast of rood alleen groot gebruiken vastleggen (3,98:1)

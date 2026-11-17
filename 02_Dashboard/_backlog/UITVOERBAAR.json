@@ -3089,6 +3089,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "keurt de proefscope, databronnen en het mediabudget goed"
  },
+ "2026-11-06-meta-plan-minimaal-2-weken#5bed9d89": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: bevestig vóór start bestaande goedgekeurde ads per sport, geaggregeerde bronnen, Website-bewijs voor tracking/consent,..."
+ },
  "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
   "beoordeeld": "2026-11-08",
   "claude": "deels",
@@ -3106,6 +3112,12 @@
   "claude": "nee",
   "wat_claude_doet": "niets",
   "wat_jij_doet": "wijst een uitvoerder en vervanger aan en bevestigt de instellingen in Ads Manager"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#edd6e6d2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: kies via Denzel na QA één 14-dagen-scenario met rugby én voetbal, zichtbaar sportbudget en meetdoel, maximaal leerverlies plus..."
  },
  "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
   "beoordeeld": "2026-11-08",
@@ -3155,6 +3167,504 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "kiest zwart of wit op merkgevoel en zet dit zo nodig zelf live om te testen"
  },
+ "2026-11-09-ads-keten-proces-en-log#2dc86ecb": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Denzel beslist over herstelkaarten en herkeuring voor de drie CORRIGEER-verdicten (t_17034fe5, t_18aaa1ce, t_cbb5a114); nog niet..."
+ },
+ "2026-11-09-ads-keten-proces-en-log#4a8ec20f": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-09-ads-keten-proces-en-log#7665d0c3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Denzel bepaalt welke leerregelpunten uit de tabel hieronder worden vastgelegd; de Stafchef legt ze daarna vast in Leerregels per..."
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#2c33e23c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Denzel bepaalt welke van de vijf leerregelkandidaten (hieronder) en de nieuwe punten worden vastgelegd in Leerregels per Agent; de..."
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#a42ee8a5": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Denzel beslist over herstel en herkeuring na CORRIGEER op Ads-QA v2 (t_403c4169) en Design-QA v3 (t_d28b28f5); er is geen..."
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#c202eb48": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-09-ads-live-check-website#3a34049c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Door een mens: testbestelling of winkelwagen met 3-pack 2.0 en de prijs op checkout noteren (zie punt 2)"
+ },
+ "2026-11-09-ads-live-check-website#5ce01a10": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "maakt een conceptvoorstel voor de tekst/meta/structured data in de vault",
+  "wat_jij_doet": "controleren en zelf in Shopify naar de pagina/instellingen overzetten"
+ },
+ "2026-11-09-ads-live-check-website#7e2cdff7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: ads sturen op de productpagina 2.0 (bundelblok zichtbaar) of de landingspagina krijgt het 3-pack-blok; nu ziet de bezoeker na een..."
+ },
+ "2026-11-09-ads-live-check-website#85ff3c5f": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Door een mens in Events Manager: checklist onder punt 4 afvinken"
+ },
+ "2026-11-09-ads-live-check-website#96f831c1": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: consent. Is de standaard \"alles toegestaan zonder banner\" bewust (AVG/ePrivacy)? Zo niet, vóór betaald verkeer laten oplossen door..."
+ },
+ "2026-11-09-ads-live-check-website#a8aa19f2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "maakt een conceptvoorstel voor de tekst/meta/structured data in de vault",
+  "wat_jij_doet": "controleren en zelf in Shopify naar de pagina/instellingen overzetten"
+ },
+ "2026-11-09-ads-live-check-website#ec609e8b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "past de code aan in het Shopify-testthema",
+  "wat_jij_doet": "controleren en naar het live-thema overzetten"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#1563483d": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een mens: Events Manager-checklist (Website-notitie punt 4), testbestelling 3-pack 2.0 met prijs op checkout noteren, en in Ads Manager..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#1877ec2c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Performance Days: de 3-pack-ad pauzeren vanaf 27 nov 00:00 of vervangen door een PD-ad (door Social/Design); extra PD-budget is..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#3471cc40": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: mag de Rox-review (higrip.nl, 15 sep 2026) in betaalde ads, en met welke naamweergave? Zonder uitdrukkelijk ja wordt de..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#46edb13c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo beslist over standaard consent op \"toestaan\" zonder banner vóór het eerste betaalde verkeer; verandert dit midden in..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#47ae7927": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo toetst of \"GEWONE SOK GLIJDT. GRIPSOK HOUDT VAST.\" volstaat met de formuleringsregel (bronregel Apps et al. 2022,..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#4adbbe8c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars (via Denzel) beslist uiterlijk do 12 nov over voorraad 2.0 (negatief op 5 nov, nu niet vast te stellen) en de verzendbelofte;..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#5fe9f51f": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: bestemming van de 3-pack-ad: productpagina 2.0 (bundelblok zichtbaar) of landing met nieuw 3-pack-blok; Ads adviseert de..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#a4158b22": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: leeftijdsafbakening en optimalisatie-event (zie Plan, instellingen)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#b23505bd": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#c0c750e6": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: leerverlies en budget: accepteer €280 mediabudget (14 dagen) als leerbudget zonder rendementsstop, of stel een toelaatbare CPA en..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#db617a68": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: bevestig dat \"vervangt de zwakste soort\" betekent dat de vergelijking per 14 nov wordt toegevoegd als vierde ad (Ads leest het zo;..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#0b85bd71": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een mens: in Ads Manager de bestedingslimiet van account act_581294088143656 nakijken (limiet = besteed bedrag) en vaststellen of campagne..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#16465235": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo: ad 4 variant A (absoluut) of B (relatief) volgens de formuleringsregel; en Rox-quote in betaalde ads ja of nee"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#2ce2342e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars (via Denzel) beslist of de lopende campagne HG_3PACK20 wordt gepauzeerd op het moment dat de nieuwe live gaat (anders €40 per..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#2df4f1e2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo: consent zonder banner (Website: ROOD) vóór betaald verkeer"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#332d5114": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars: vergelijking op 14 nov als vierde ad erbij (advies) of een van de drie vervangen; op 14 nov is er te weinig data om de..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#3ee99288": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars: accepteer €280 (€260 bij start za 14) als leerbudget; een aankoop kost naar verwachting meer dan de marge (±€24,50, niet..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#4a21f8f4": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars: optimalisatie-event: landingspagina-weergave (advies, zie Plan C) of winkelwagen (zoals de lopende set)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#895291a9": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars (via Denzel): voorraad 2.0 per maat en kleur (5 nov negatief), verzendbelofte, en bestemming van ad 3 (productpagina 2.0 of..."
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#9a61f2f2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#c17452e3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Een mens: plaatsing Audience Network uitsluiten en geen automatische creative-verbeteringen aan zetten (tekst in beeld)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#d4c6beab": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars (via Denzel) legt de 3-pack 2.0-prijzen (€44,95, €14,98 per paar, €53,85 als som) vast in Feiten & Actuele Staat of schrapt..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#09813f7a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#16db792a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#1a62c129": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: prijzen van de 3-pack 2.0 (€44,95, €14,98 per paar, €53,85) staan niet in Feiten & Actuele Staat (daar alleen 2.0 per stuk €17,95..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#6fe9b9ff": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: mag \"was €53,85\" (som van 3 losse paren, geen eerdere packprijs) als doorgestreepte prijs? Social adviseert de formulering \"los..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#a707baa6": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: mag de Rox-review (higrip.nl, 15 sep 2026, 5 sterren) in betaalde ads, en met welke naamweergave? Zonder uitdrukkelijk ja..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#f0f719a7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo kiest voor ad 4 headline A (\"HOUDT VAST\", Lars' tekst, met bron en formuleringsregel in beeld) of B (zachtere..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#f9ca1416": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: voetbal-reservekop kiezen (Lars' schema liet \"IN DE ...\" open; twee voorstellen hieronder)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#77bcaf5d": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: 3-pack 2.0 (€44,95, €14,98 per paar, €53,85 als som) staat niet in Feiten & Actuele Staat (daar alleen 2.0 per paar €17,95 en 1.0..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#8ad673b0": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9092be74": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: voorraad 2.0 (5 nov negatief) en verzendbelofte. Daarom staat \"binnen 1 werkdag verzonden\" in ad 3 als optionele zin, niet in de..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9aca4c6e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Rox-quote in betaalde ads ja of nee. In de vault staat geen vrijgave voor betaald gebruik. Zonder uitdrukkelijk ja gaat 3.500+ live"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9d71c32d": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: voetbal-reservekop. Lars' schema liet \"IN DE ...\" open; drie voorstellen onder ad 1"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#a0f86c13": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Lars: controleer de doorgestreepte som in de Canva 3-pack-ad. De tekstopvraag geeft €53,85 (klopt: 3 x €17,95), maar een thumbnail van lage"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#ad3e062e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#d771b562": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars of Timo kiest ad 4 headline A (\"HOUDT VAST\", absoluut, alleen met bronregel in beeld) of B/C (relatief). Zonder besluit gaat..."
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#dc7e3134": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-design-qa#5f0f6fed": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-design-qa#69f4fdb1": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-design-qa#8ea89d22": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-design-qa#a26004ad": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Design: Canva-versiegeschiedenis van \"3 pack AD\" controleren (Lars) en €53,95 vs €53,85 rechtzetten"
+ },
+ "2026-11-09-ads-visuals-design-qa#a2a43786": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Design: ad 3 afstemmen op Lars' 3-pack-ad of Lars laat bewust twee stijlen toe"
+ },
+ "2026-11-09-ads-visuals-design-qa#c99f66a1": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#07b26882": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#1c167881": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: aanbod toont \"3-PACK €44,95 · GRATIS VERZENDING\" en geen was-prijs (€53,85 is een som, geen eerdere prijs; open besluit uit..."
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#40058766": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Rox-quote niet gebruikt (geen vrijgave voor betaald); klantwoord = 3.500+ (schrijfwijze met punt zoals schema)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#69872cc2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#87408ec4": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: rugby-accent rood (sportaccent) versus algemene regel \"donker = volt\"; ik koos de sportregel. Rood op zwart heeft ca. 3,6:1:..."
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#9a56c861": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Canva-links. Uploaden naar Canva is volgens de mediabibliotheek-regel (\"niets uploaden of delen\") aan Lars; zeg of ik de PNG's als..."
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#b6958656": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars levert actiebeeld vanaf de taille zonder gezicht (rugby tackle, voetbal draai) of bevestigt rechten voor betaald gebruik van..."
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#b6aefd49": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: ad 4 A (\"HOUDT VAST\") of B (\"GRIJPT\"); beide staan klaar, bronregel uit de formuleringsregel staat in beeld"
+ },
+ "2026-11-09-concurrent-ads-langlopend#12bec0e3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-concurrent-ads-langlopend#2725325b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-concurrent-ads-langlopend#d0eb1023": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars/Denzel: wil je dat de Ad Library nog eens met een eigen advertiserpagina-ID per merk wordt doorzocht (meer dan 26 kaarten per..."
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#3ec2ae2f": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#46e2bf2e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#ce7af399": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars/Denzel: wil je dat ik 'Meer weergeven' later vandaag of morgen nog eens probeer als de Meta-limiet is verlopen (FitSockr ~340..."
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#cfac1a89": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Social: Tapedesign, Stepzz, FitSockr, T1TAN en Optigrip hebben geen numerieke pagina-ID in de kaarten (slug-URL); Ads of Lars kan die via..."
+ },
+ "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-regressiecheck-handmatig#811c3f82": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-regressiecheck-handmatig#96ba1592": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-search-console-handmatig#b57358d7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "haalt de data op en schrijft de analyse in de vault",
+  "wat_jij_doet": "de analyse beoordelen en eventueel een besluit nemen"
+ },
+ "2026-11-09-search-console-handmatig#c24ec193": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "haalt de data op en schrijft de analyse in de vault",
+  "wat_jij_doet": "de analyse beoordelen en eventueel een besluit nemen"
+ },
+ "2026-11-09-social-qa-ads-teksten#1d33cb29": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-social-qa-ads-teksten#7c1f195a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-09-social-qa-ads-teksten#accc5cae": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Ads/Lars: aanbod-visuals zijn nieuw gerenderd; Lars' eigen Canva 3-pack-ads zijn niet vergeleken (briefing: hergebruiken). Thumbnail toonde..."
+ },
+ "2026-11-09-social-qa-ads-teksten#d014ca56": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Social/Design: ad 2 toont sportwoord VOETBAL/RUGBY boven \"3.500+ SPORTERS GINGEN JE VOOR\". Dat leest als 3.500+ voetballers/rugbyers,..."
+ },
+ "2026-11-09-social-qa-ads-teksten#df37cdcc": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Social: ad 1 \"Dat is niet in je hoofd, dat gebeurt echt\" en bronregel \"geen feit\" kloppen niet samen. Onderzoek (Apps et al. 2022, minder..."
+ },
  "2026-11-09-weekoverzicht#0ebf861a": {
   "beoordeeld": "2026-11-10",
   "claude": "deels",
@@ -3184,6 +3694,468 @@
   "claude": "deels",
   "wat_claude_doet": "conceptinhoud voor de Shopify Knowledge Base opstellen in de vault",
   "wat_jij_doet": "de inhoud in Shopify Admin onder Sales channels, Agentic plaatsen vóór 15 januari 2027"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#038f881b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "UGC-video de sceptische sporter filmen volgens video/UGC-sceptische-sporter.md, met schriftelijke toestemming voor betaald gebruik"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#2926d3b1": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming vragen aan de twee reviewers (Trustpilot, 18 juni 2025 en 25 juni 2025) voor gebruik in betaalde ads; zonder toestemming gaan..."
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#29f4a4c7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#393c382a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Nieuwe campagne inrichten volgens de inrichtingslijst in bevinding 3 (ABO, 2 × €10, Audience Network uit, oorspronkelijke doelgroepopties,..."
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#5c99e4eb": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Accountlimiet pas na het pauzeren van HG_3PACK20 verhogen, getrapt: trap 1 tot €440,55 (start 13-11) of €420,55 (start 14-11), trap 2 pas..."
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#73ad1482": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Website: toestemmingspercentage uit Shopify halen en de Meta-pixel testen zonder keuze, na weigeren en na accepteren (Events Manager, testge"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#8a660c98": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: vault-repo op GitHub privé maken; hij is nu publiek en bevat marges, kostprijzen en account-ID's"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#9f7337ec": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b8fca7bc": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Batch beoordelen in Meta-batch-2026-11 (overzicht.jpg, COPY.md) en per set de 3 live-ads uploaden met 4:5 en 9:16 als plaatsingsassets"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#bd14965a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: startdag van de nieuwe campagne, vrijdag 13-11 of zaterdag 14-11 om 00:01, en de lopende campagne HG_3PACK20 pauzeren (niet..."
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#cc482514": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d6716dd8": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d95d06ba": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#ed24832b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: optimalisatie-event voor de twee testsets; advies ViewContent in de test en AddToCart in de aparte sets voor de Performance Days"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#f7582be3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Performance Days-budget, maximaal verlies (voorstel €40), 3+3 als hoofdaanbod in de ads en of 3-pack plus 3 gratis mag stapelen"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#1252bf51": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: spelers kiezen; zijn ze minderjarig, dan schriftelijke toestemming van ouders of bond vooraf"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#2ce69b5c": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Kleding: neutrale of zwarte kit zonder clubmerk of sponsor; gripsok + HÏ GRIP-logo moeten vrij liggen"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#867495df": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: lichtplan: avond/schemer met kunstlicht of flitser, of daglicht bij bewolking"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#b4405a6e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Na de shoot: bestanden naar HiGripMedia\\Content - HÏ Grip\\Rugby\\2026-11-17\\ (RAW + JPG), niets uploaden of publiceren"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#ced21aa5": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Props klaarleggen: 3 paar gripsokken (schoon, gedragen, modder), natte grasplaggen, rugbybal, kegels, zwarte doek, spuitfles water"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#f53a64c6": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: locatie kiezen (veld met nat gras, zo mogelijk onder lichten voor avondlicht)"
+ },
+ "2026-11-10-rugby-shoot-videolijst#0a7d5dc7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Gripsokken in alle maten en 2 setjes schone sokken meenemen; HÏ GRIP-logo naar buiten gedraaid"
+ },
+ "2026-11-10-rugby-shoot-videolijst#23073c3a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Na de shoot: bestanden in HiGripMedia\\Rugby-shoot-2026-11-17\\video\\ (naam: rb-v01-tackle-voet.mp4 enzovoort); Lars zet ze in de gedeelde Dri"
+ },
+ "2026-11-10-rugby-shoot-videolijst#8010126a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: Lars bevestigt locatie, spelers (volwassen of jeugd) en kleding (donker shirt, gripsok + schoen goed zichtbaar) vóór ma 16-11"
+ },
+ "2026-11-10-rugby-shoot-videolijst#d16f88e4": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Schriftelijke toestemming per speler, bij minderjarigen van ouders en/of bond, vóór di 17-11"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#5383fe23": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Rugbyshoot plannen met echte spelers in HÏ Grip (scrum, line-out, ruck), want rugby heeft nu alleen productfoto's en geen eigen actiebeeld..."
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#91d88fca": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming voor betaald gebruik vragen aan de LYRA-speler(s) van IMG_2101 en IMG_2228 (voetbal_nietziet, voetbal_gadoor) en Concordia-foto..."
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#d35f543a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Laten bevestigen of de productfoto's IMG_1578, IMG_0364 en IMG_1569 in de rugby-campagneads de 2.0 tonen; zo niet, dan landingspagina of..."
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#f6ffe290": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: de zes campagneads meenemen in de test naast de tien losse ads; advies per sport format A tegen B bij koude doelgroepen en format..."
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#264e05de": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming vragen aan de Concordia-spelers en de club voor betaald gebruik van de drie shootfoto's in voetbal_kitbag, voetbal_kleedkamer..."
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#3ec9c07a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#f0e3d543": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: wanneer en hoe de tien losse ads getest worden; advies na de evaluatie van 21-11 per sport 3 tegelijk (kitbag, gripzones, perpaar)..."
+ },
+ "2026-11-16-ad-library-creatieve-analyse#67649f97": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Social en Design: per sport (voetbal, rugby, padel) beeldmateriaal van de zool in beweging en het wegglijdmoment verzamelen uit clubshoots"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#c8e365f2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#d041bbd3": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: eerste creatieve test opbouwen rond grip-demonstratie in frame 0 met categoriebewijs (Apps et al. 2022), voor één sport"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#e333a4d5": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toestemming regelen voor een kort Nederlands clubtestimonial (15 tot 30 s, ondertiteld) als bewijs-ad"
+ },
+ "2026-11-16-ads-canva-vs-html-verschilanalyse#8d102520": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-ads-canva-vs-html-verschilanalyse#dc9b4fff": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: moeten de agent-ads de echte Lars-sjablonen in Canva (copy_design) volgen, of de HTML-route behouden met Lars' sjabloonregels?"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#2071bc02": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: funnel-ads eerst bij rugby live zetten, omdat rugby in de nulmeting alle 7 toevoegingen aan de winkelwagen leverde; voetbal daarna..."
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#446ee042": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#6e7b24ad": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Concordia-foto IMG_0212 (voetbal_allesbeweegt) meenemen in de lopende toestemmingsvraag aan Concordia vóór die ad live gaat"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#b691109e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#fdfdc013": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "haalt de data op en schrijft de analyse in de vault",
+  "wat_jij_doet": "de analyse beoordelen en eventueel een besluit nemen"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#992364ff": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Volgende test: per concept 3 tot 5 ads in een eigen set, Audience Network uit of apart uitgelezen, beoordelen op kosten per ATC"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#a90b912b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#d20ffac7": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Ads Manager-export per ad: 3-sec videoweergaven, ThruPlays en gemiddelde kijkduur (17-10 t/m 15-11), aanleveren aan de Ads Agent"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#df1a08ce": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#dfbbdada": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: uitgavenplafond van het Meta-account (€245,55) verhogen of de stop zo laten, en wie dat doet"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#7ef47c32": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: de beoordelingskaart uit het Ads Bouwboek vaststellen als vaste toets vóór livegang, met drempels 12 en 16 van 20 (voorstel Ads..."
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#7fbc6702": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Eerste creatieve test in Meta: native formats (borden 1, 3, 4) tegen specificatie en prijs (borden 2, 5), met dezelfde doelgroep en..."
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#dd5e88cb": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Borden 1 en 3 (voetbal en rugby) opnieuw exporteren uit het canvas, want de PNG's in `Losse-ads-2026-11-15/png/` tonen nog de oude tekst"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#49630a03": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#94ec3681": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: de SOUL.md van elk profiel (design, content, partnership, website, operations) naast het bestaande Ads-SOUL in de vault leggen,..."
+ },
+ "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
+  "beoordeeld": "2026-11-17",
+  "claude": "deels",
+  "wat_claude_doet": "maakt een eerste analyse of conceptvoorstel in de vault",
+  "wat_jij_doet": "beoordelen, aanvullen met wat alleen een mens kan nagaan, en eventueel besluiten"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#bb0f5137": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: de Hermes-skills (higrip-vault, higrip-denzel, higrip-content-agent, higrip-website-agent, higrip-partnership-agent en de 9..."
+ },
+ "2026-11-16-lokale-bestanden-inventaris#c4e7b8e4": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: scripts uit `<hermes>/scripts` naar `01_Agent_Infrastructuur/Hermes-scripts/` voor de gedeelde (drive-sync, kanban-archief,..."
+ },
+ "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
+  "beoordeeld": "2026-11-17",
+  "claude": "ja",
+  "wat_claude_doet": "schrijft of corrigeert het gevraagde direct in de vault",
+  "wat_jij_doet": "controleren of het klopt"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#fcd243a2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: HiGripMedia/_Output (420 MB) als lokale werkmap behandelen en alleen de ads-v6 en de ad-library-v2 naar de Drive-map `_Output`..."
+ },
+ "2026-11-16-seo-gsc-nulmeting-gripsokken#fc464418": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: welke URL wordt de hoofdpagina voor \"gripsokken\": de collectie (nu bijna onzichtbaar) of de oude productpagina (rankt nu)?..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#04afb56e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars of Timo): mogen we eerst drie alleen-lezen SEO-vaardigheden (seo-page, seo-technical, seo-schema) laten beoordelen voor..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#141f2f1a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): reserveren we als aanname 40 tot 60 uur voor de eerste drie maanden, daarna 4 tot 6 uur per maand (totaal ongeveer 52 tot..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#24b82ec4": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars of Timo): mag een mens in Shopify de doorsturingsketen inkorten tot één stap (`/products/hi-grip-gripsokken-1` rechtstreeks..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#380a969e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): akkoord met de stelling \"nu de rankende productpagina beschermen en optimaliseren (optie B), de collectie gefaseerd..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#3bbf7178": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars of Timo): startdatum van de aanpak. Voorstel: de maandag na bevestigd einde van de novemberkernupdate van Google, uiterlijk 1..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#4f5be09a": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): mag de collectie een nieuwe titel en beschrijving krijgen (voorstel in sectie 4)? Voorstel: ja. Zonder besluit blijft de..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#5d3718b9": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): wordt de hoofdkop van de collectie \"Gripsokken voor padel, tennis, voetbal en rugby\"? Voorstel: ja. Zonder besluit blijft..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#7a690fe2": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): mag het productraster vroeg op de collectie komen, direct onder de korte uitleg? Voorstel: ja. Zonder besluit blijft de..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#8705a124": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): mag er een korte keuzehulp (model 1.0 of 2.0) op de collectie komen? Voorstel: ja. Zonder besluit verwijst de collectie..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#9032719e": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars of Timo): mag een mens de nieuwe titel en beschrijving voor de productpagina `/products/performance-gripsokken` (huidige..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#a11e6eb9": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars of Timo): pagina's gelijktrekken met Feiten. Het beleid is al besloten (Feiten: 30 dagen retour, verzending binnen 1 werkdag;..."
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#e8961a2b": {
+  "beoordeeld": "2026-11-17",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit (Lars): budget tot 50 euro per maand voor één zoekwoord- of positietool? Voorstel: nu nee, heroverwegen na 90 dagen. Zonder besluit..."
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

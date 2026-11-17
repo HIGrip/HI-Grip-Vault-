@@ -24,8 +24,8 @@ Alleen gelezen, niets gewijzigd. Getoetst: tekstnotitie (volledig), visualnotiti
 ## Verdict: CORRIGEER
 
 ## Acties
-- [ ] P1 · Social: ad 4 primary text (tabel in tekstnotitie) vervangen door de veilige variant ("Dat onderzoek gaat over gripsokken in het algemeen. Dit is waarom wij ze maken."). De notitie noemt die als standaard, maar de tabel bevat nog de zin "In PERFORMANCE GRIP SOCKS 2.0 vind je die grip terug" (C8, blokkerend: koppelt algemeen onderzoek aan ons product, regel "nooit HÏ Grip getest")
-- [ ] P1 · Social: in ad 4 primary text "wrijving tussen voet en sok" vervangen door de formulering uit Feiten ("statische wrijvingscoëfficiënt van gripsokken"); "tussen voet en sok" staat nergens in Feiten of Performance Grip Socks 2.0 (C8)
+- [x] P1 · Social: ad 4 primary text (tabel in tekstnotitie) vervangen door de veilige variant ("Dat onderzoek gaat over gripsokken in het algemeen. Dit is waarom wij ze maken."). De notitie noemt die als standaard, maar de tabel bevat nog de zin "In PERFORMANCE GRIP SOCKS 2.0 vind je die grip terug" (C8, blokkerend: koppelt algemeen onderzoek aan ons product, regel "nooit HÏ Grip getest")
+- [x] P1 · Social: in ad 4 primary text "wrijving tussen voet en sok" vervangen door de formulering uit Feiten ("statische wrijvingscoëfficiënt van gripsokken"); "tussen voet en sok" staat nergens in Feiten of Performance Grip Socks 2.0 (C8)
 - [ ] P2 · Social/Design: ad 2 toont sportwoord VOETBAL/RUGBY boven "3.500+ SPORTERS GINGEN JE VOOR". Dat leest als 3.500+ voetballers/rugbyers, terwijl de tekstnotitie zelf zegt dat het getal merkbreed is. Schema van Lars vraagt het label; voeg in primary text "sporters in alle sporten" toe of laat Lars kiezen
 - [ ] P2 · Social: ad 1 "Dat is niet in je hoofd, dat gebeurt echt" en bronregel "geen feit" kloppen niet samen. Onderzoek (Apps et al. 2022, minder voorvoetverschuiving) staat in Performance Grip Socks 2.0 §3. Zet die bron in de bronregel of zacht de zin af
 - [ ] P2 · Design: wordmark op de PNG's leest als "HiGRIP"; merknaam is HÏ Grip met trema. Controleer tegen het officiële logo (logo-wordmark kan bewust zonder trema zijn, niet gecontroleerd)

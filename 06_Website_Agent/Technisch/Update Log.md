@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: website-agent
-bijgewerkt: 2026-11-04
+bijgewerkt: 2026-11-18
 ---
 
 # Update Log — Website Agent
@@ -13,6 +13,18 @@ bijgewerkt: 2026-11-04
 > **Werkthema (5-10-2026, lars): alleen `201133490503` "AI website workspace 2.0".** Eerdere werkthema's (`200269168967` en ouder) zijn niet meer in gebruik en staan hieronder alleen als historie. Live is `201132507463`; check altijd `shopify theme list`, ID's schuiven. De entries van 21-09 t/m 02-10 zijn op 5-10 achteraf bijgewerkt uit de vaultnotities (Agent Werk & Kwaliteit Overzicht, [[Sportlanding-systeem (21-9-2026)]], [[Technische Procedures]]). Kleinere wijzigingen daartussen staan er niet bij, want de theme-map is geen git-repo.
 
 ---
+
+## 2026-11-18 — Horizon 4.5.0 `204874187079` live gezet
+
+Op uitdrukkelijke opdracht van de gebruiker in de chat ("zet maar live"). Eerst `theme list`: `203954520391` stond live en de update-kopie `204874187079` stond unpublished. Daarna live opnieuw opgehaald en vergeleken met de stand van 16-11: één wijziging, de app-embed Essential A/B Testing was op live aangezet. Die instelling is in de kopie overgenomen (`config/settings_data.json` is daarna identiek aan live), zodat de lopende A/B-test doorloopt. Toen `shopify theme publish`. Nu is `204874187079` live en staat `203954520391` unpublished als terugvaloptie.
+- **Vóór publicatie hersteld in de kopie:** 14 templates teruggezet uit live (12 paginatemplates, `blog.json`, `article.json`); de update had er main-page, main-blog en main-blog-post in gezet.
+- **Na publicatie op de live site gecontroleerd:**
+  - geen JS- of Liquid-fouten op 12 pagina's, telefoon en desktop;
+  - één H1 per pagina en In winkelwagen op de A/B- en productpagina's;
+  - 3-pack 2.0 zwart in de winkelwagen (€44,95), de lade opent en Afrekenen opent de Shopify-checkout (geen bestelling geplaatst);
+  - quick add op /collections/all met maat 40-46 komt goed in de winkelwagen.
+- **Details:** zie [[2026-11-16-horizon-4-5-update-check]].
+- **Bij de volgende update controleren:** alle templates (ook blog en artikel) en de app-embeds in settings_data.
 
 ## 2026-11-04 — Horizon 4.4.0 `203954520391` live gezet
 

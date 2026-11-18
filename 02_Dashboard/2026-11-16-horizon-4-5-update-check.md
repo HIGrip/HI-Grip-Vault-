@@ -6,7 +6,7 @@ datum: 2026-11-16
 bron: los
 routine: ""
 categorie: Techniek
-status: nieuw
+status: verwerkt
 prioriteit: P1
 samenvatting: "De Shopify-update naar Horizon 4.5.0 (kopie 204874187079) houdt alle eigen HÏ-code intact, maar overschrijft 14 templates: de A/B-pagina's verliezen hun productsectie en knop In winkelwagen, de blog verliest het eigen overzicht, artikelen staan er dubbel en 10 pagina's krijgen een tweede H1. Na het terugzetten van die templates uit live is de kopie gelijk aan live, plus een quick add met maatkeuze en snellere collectiepagina's; live is niet aangeraakt."
 gerelateerd: [2026-11-04-horizon-4-4-update-check]
@@ -31,8 +31,8 @@ Conclusie: dezelfde fout als bij 4.4, maar groter. De update zet Horizon-standaa
 
 ## Acties
 - [x] P1 · Update-kopie 204874187079: 14 templates (page.*.json, blog.json, article.json) terugzetten uit live, alleen die bestanden pushen, daarna opnieuw testen
-- [ ] P1 · Besluit: update-kopie 204874187079 live zetten na de hertest (vooraf controleren dat live sinds 16-11 niet is gewijzigd)
-- [ ] P2 · Na livegang: quick add op /collections/all met beide maten testen tot in de winkelwagen
+- [x] P1 · Besluit: update-kopie 204874187079 live zetten na de hertest (vooraf controleren dat live sinds 16-11 niet is gewijzigd)
+- [x] P2 · Na livegang: quick add op /collections/all met beide maten testen tot in de winkelwagen
 - [ ] P3 · Instelling "winkelvoorraad tonen" (show_physical_stores) in het blok Koopknoppen uitzetten; scheelt het laden van local-pickup.js op elke productpagina
 - [ ] P3 · Na livegang de snelheid van de collectiepagina opnieuw meten (5 runs) om de LCP-winst te bevestigen
 
@@ -79,6 +79,14 @@ Hertest na het herstel, 14 pagina's op telefoon en desktop naast live:
 - **H1:** precies 1 per pagina, ook op blog en artikel.
 - **A/B-pagina's:** productsectie en In winkelwagen terug.
 - **Foutscan:** geen JS- of Liquid-fouten.
+
+### Live gezet (18-11)
+Op opdracht van de gebruiker is `204874187079` op 18-11 gepubliceerd. Vooraf is live opnieuw opgehaald en vergeleken met de stand van 16-11. Eén wijziging: de app-embed Essential A/B Testing stond op live aan en in de kopie uit. Die instelling is eerst in de kopie overgenomen, zodat de lopende A/B-test niet stopte. `203954520391` staat nu unpublished als terugvaloptie.
+
+Na publicatie op de live site gecontroleerd:
+- **12 pagina's:** geen JS- of Liquid-fouten, één H1 per pagina, In winkelwagen op de A/B- en productpagina's (telefoon en desktop).
+- **Winkelwagen:** 3-pack 2.0 zwart voor €44,95; de lade opent en Afrekenen opent de Shopify-checkout. Er is geen bestelling geplaatst.
+- **Quick add:** maat 40-46 gekozen op /collections/all, en die variant komt goed in de winkelwagen.
 
 ## Wat niet lukte
 Theme Check (linter) is door Claude Code gestopt wegens geheugentekort op de computer en niet opnieuw gestart. De foutscan in de browser en de volledige code-diff zijn wel gedaan. Niet getest: een echte bestelling afronden en de thema-editor. Het dashboard is niet gepubliceerd: dat kan alleen vanaf info@.

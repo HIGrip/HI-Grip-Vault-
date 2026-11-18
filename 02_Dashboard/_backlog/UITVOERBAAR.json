@@ -3089,6 +3089,12 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "keurt de proefscope, databronnen en het mediabudget goed"
  },
+ "2026-11-06-meta-plan-minimaal-2-weken#5bed9d89": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
  "2026-11-06-meta-plan-minimaal-2-weken#93fc5cc7": {
   "beoordeeld": "2026-11-08",
   "claude": "deels",
@@ -3106,6 +3112,12 @@
   "claude": "nee",
   "wat_claude_doet": "niets",
   "wat_jij_doet": "wijst een uitvoerder en vervanger aan en bevestigt de instellingen in Ads Manager"
+ },
+ "2026-11-06-meta-plan-minimaal-2-weken#edd6e6d2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
  },
  "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48": {
   "beoordeeld": "2026-11-08",
@@ -3155,6 +3167,528 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "kiest zwart of wit op merkgevoel en zet dit zo nodig zelf live om te testen"
  },
+ "2026-11-09-ads-keten-proces-en-log#2dc86ecb": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-keten-proces-en-log#4a8ec20f": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-keten-proces-en-log#7665d0c3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#2c33e23c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#a42ee8a5": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-keten-v2-proces-en-log#c202eb48": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-live-check-website#3a34049c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-live-check-website#5ce01a10": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-live-check-website#7e2cdff7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-live-check-website#85ff3c5f": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-instructies voor de GA4/Events Manager-instelling in de vault",
+  "wat_jij_doet": "de instelling zelf doorvoeren in GA4/Meta Events Manager (geen koppeling)"
+ },
+ "2026-11-09-ads-live-check-website#96f831c1": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-live-check-website#a8aa19f2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-live-check-website#ec609e8b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#1563483d": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#1877ec2c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#3471cc40": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#46edb13c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#47ae7927": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#4adbbe8c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#5fe9f51f": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#a4158b22": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#b23505bd": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#c0c750e6": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie#db617a68": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#0b85bd71": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-instructies voor de GA4/Events Manager-instelling in de vault",
+  "wat_jij_doet": "de instelling zelf doorvoeren in GA4/Meta Events Manager (geen koppeling)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#16465235": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#2ce2342e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#2df4f1e2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#332d5114": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#3ee99288": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#4a21f8f4": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#895291a9": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#9a61f2f2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#c17452e3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#d4c6beab": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#09813f7a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#16db792a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#1a62c129": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#6fe9b9ff": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#a707baa6": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#f0f719a7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby#f9ca1416": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#77bcaf5d": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#8ad673b0": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9092be74": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9aca4c6e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#9d71c32d": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#a0f86c13": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#ad3e062e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#d771b562": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-teksten-voetbal-rugby-v2#dc7e3134": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-ads-visuals-design-qa#5a408b36": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-ads-visuals-design-qa#5f0f6fed": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "bestandscorrectie in de vault",
+  "wat_jij_doet": "de wijziging controleren"
+ },
+ "2026-11-09-ads-visuals-design-qa#69f4fdb1": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-design-qa#8ea89d22": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-design-qa#a26004ad": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-design-qa#a2a43786": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-design-qa#c99f66a1": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#07b26882": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#1c167881": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#40058766": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#69872cc2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#87408ec4": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#9a56c861": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#b6958656": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-ads-visuals-voetbal-rugby#b6aefd49": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-concurrent-ads-langlopend#12bec0e3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-concurrent-ads-langlopend#2725325b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-concurrent-ads-langlopend#d0eb1023": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#3ec2ae2f": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#46e2bf2e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#ce7af399": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-09-concurrent-ads-langlopend-v2#cfac1a89": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-09-regressiecheck-handmatig#811c3f82": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-regressiecheck-handmatig#96ba1592": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-search-console-handmatig#b57358d7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-search-console-handmatig#c24ec193": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-09-social-qa-ads-teksten#1d33cb29": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-social-qa-ads-teksten#2039bb38": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-social-qa-ads-teksten#7c1f195a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-social-qa-ads-teksten#accc5cae": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-social-qa-ads-teksten#b9b7c6c5": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-09-social-qa-ads-teksten#d014ca56": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-09-social-qa-ads-teksten#df37cdcc": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "onderzoek/concept in de vault",
+  "wat_jij_doet": "het concept beoordelen"
+ },
  "2026-11-09-weekoverzicht#0ebf861a": {
   "beoordeeld": "2026-11-10",
   "claude": "deels",
@@ -3184,6 +3718,498 @@
   "claude": "deels",
   "wat_claude_doet": "conceptinhoud voor de Shopify Knowledge Base opstellen in de vault",
   "wat_jij_doet": "de inhoud in Shopify Admin onder Sales channels, Agentic plaatsen vóór 15 januari 2027"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#038f881b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#2926d3b1": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#29f4a4c7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#393c382a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de account-/systeeminstelling zelf wijzigen (buiten de vault)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#5c99e4eb": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#73ad1482": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#827f0731": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de account-/systeeminstelling zelf wijzigen (buiten de vault)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#8a660c98": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#9f7337ec": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "bestandscorrectie in de vault",
+  "wat_jij_doet": "de wijziging controleren"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#b8fca7bc": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#bd14965a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#cc482514": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d6716dd8": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#d95d06ba": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#ed24832b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-ads-plan-bereik-conversie-sales#f7582be3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#1252bf51": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#2ce69b5c": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#867495df": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#b4405a6e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#ced21aa5": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-10-rugby-shoot-fotolijst#f53a64c6": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-rugby-shoot-videolijst#0a7d5dc7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-10-rugby-shoot-videolijst#23073c3a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-10-rugby-shoot-videolijst#8010126a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-10-rugby-shoot-videolijst#d16f88e4": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#5383fe23": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#91d88fca": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#d35f543a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-15-ads-campagne-zes-foto-ads-merkstijl#f6ffe290": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#264e05de": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#3ec9c07a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-15-ads-tien-losse-ads-rugby-voetbal#f0e3d543": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#67649f97": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de fysieke shoot/productie zelf uitvoeren"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#c8e365f2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#d041bbd3": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ad-library-creatieve-analyse#e333a4d5": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-16-ads-canva-vs-html-verschilanalyse#8d102520": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "conceptvoorstel in de vault",
+  "wat_jij_doet": "de uitvoering in Canva/het visuele werk zelf doen"
+ },
+ "2026-11-16-ads-canva-vs-html-verschilanalyse#dc9b4fff": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#2071bc02": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#446ee042": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#6e7b24ad": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept-toestemmingsbericht in de vault",
+  "wat_jij_doet": "het bericht beoordelen, versturen en de toestemming vastleggen"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#b691109e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-ads-funnel-trio-rugby-voetbal#fdfdc013": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#992364ff": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#a90b912b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#d20ffac7": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#df1a08ce": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-ads-nulmeting-en-tiktok-lessen#dfbbdada": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#7ef47c32": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#7fbc6702": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-16-ads-reverse-engineering-bewezen-elementen#dd5e88cb": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-horizon-4-5-update-check#156f3d99": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "code/aanpassing in het Shopify-testthema",
+  "wat_jij_doet": "de wijziging controleren en naar het live-thema overzetten"
+ },
+ "2026-11-16-horizon-4-5-update-check#417115ae": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "conceptteksten/meta's in de vault",
+  "wat_jij_doet": "de tekst controleren en op de site plakken"
+ },
+ "2026-11-16-horizon-4-5-update-check#88e5fdb2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-horizon-4-5-update-check#c651af70": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de wijziging zelf doorvoeren in Meta Ads Manager (geen koppeling beschikbaar)"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#49630a03": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#94ec3681": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
+  "beoordeeld": "2026-11-18",
+  "claude": "deels",
+  "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
+  "wat_jij_doet": "het resterende mensenwerk afmaken"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#bb0f5137": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#c4e7b8e4": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
+  "beoordeeld": "2026-11-18",
+  "claude": "ja",
+  "wat_claude_doet": "bestandscorrectie in de vault",
+  "wat_jij_doet": "de wijziging controleren"
+ },
+ "2026-11-16-lokale-bestanden-inventaris#fcd243a2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-gsc-nulmeting-gripsokken#fc464418": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#04afb56e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#141f2f1a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#24b82ec4": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#380a969e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#3bbf7178": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#4f5be09a": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#5d3718b9": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#7a690fe2": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#8705a124": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#9032719e": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#a11e6eb9": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
+ },
+ "2026-11-16-seo-plan-nummer-1-gripsokken#e8961a2b": {
+  "beoordeeld": "2026-11-18",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
  },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",

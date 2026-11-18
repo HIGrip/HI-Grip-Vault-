@@ -38,7 +38,7 @@ Alleen gelezen. Niets gewijzigd aan thema, prijzen, voorraad of checkout. Peilda
 - [ ] P1 · Door een mens in Events Manager: checklist onder punt 4 afvinken
 - [ ] P2 · Landingspagina's: "Geen doorglijden" en "Je voet staat vast" omzetten naar vergelijkende of onderzoeksformulering, en de doorgestreepte €19,95 laten controleren
 - [ ] P2 · Productpagina: ★★★★½ en de slogan "Meer grip. Meer controle. Meer winnen." controleren tegen Feiten (4,6 Trustpilot met bron); de 4,5 sterren staan zonder bronvermelding
-- [ ] P2 · Paginatitel van de landingspagina's begint met een paardemoji ("🐴 Gripsokken voor voetbal"): oorzaak zoeken in Shopify Admin en weghalen (zichtbaar in tab en zoekresultaten)
+- [x] P2 · Paginatitel van de landingspagina's begint met een paardemoji ("🐴 Gripsokken voor voetbal"): oorzaak zoeken in Shopify Admin en weghalen (zichtbaar in tab en zoekresultaten)
 
 ## Bevindingen
 

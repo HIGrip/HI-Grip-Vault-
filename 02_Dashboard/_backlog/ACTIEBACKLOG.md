@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 18 november 2026 (actiecontrole)
+Laatst bijgewerkt: 18 november 2026 (growth-radar)
 Open: 35 · Afgerond: 16
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -236,6 +236,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Inspanning:** Verkenning en aanmelding een half dagdeel; app-koppeling en catalogus-setup 1 dag.
 
 ### [ ] 28. Check Shopify Catalog-geschiktheid en het agent-kennisbestand na de Fall '26 Edition (nieuw 4 nov 2026)
+**Update 18 nov 2026 (Growth Radar, AI-search):** Google's eigen checkout-ervaring (native "direct checkout" binnen Search AI Mode/Gemini, onderdeel van Universal Cart/UCP) is op 4 november 2026 pas uitgebreid naar de tweede markt, Canada, na de VS — Nederland/EU staat er nog niet bij (blog.google, Google Canada). Dat is los van het Shopify-agentkennisbestand hieronder, dat zelf geen VS-beperking kent: alleen de Google-checkout-UI blijft dus voorlopig marktgebonden. Alleen volgen, geen aparte actie.
 **Update 11 nov 2026 (Growth Radar, AI-search):** het agent-kennisbestand is bevestigd op Shopify's eigen changelog (26 okt 2026, "Knowledge base is now built into your admin"): het staat nu onder Sales channels → Agentic → Knowledge base, vervangt de losse Knowledge Base-app (die stopt na 15 januari 2027) en heeft een goedkeuringsstap — Shopify zegt zelf "nothing Shopify drafted reaches AI agents until you publish it." Dat bevestigt dat de controle uit dit punt (feiten tegen het feitenbestand checken vóór goedkeuring) ook echt werkt zoals aangenomen, en de app-afschaffing per 15 januari 2027 geeft een harde deadline om dit vóór die datum te doen.
 **Waarom:** Shopify's Fall '26 Edition (shopify.com/editions/fall2026, eind oktober 2026) breidt agentic commerce fors uit: een "shop skill" waarmee elke AI-agent (ChatGPT, Claude, Grok, Gemini) kan zoeken en afrekenen met Shop Pay, agentic storefronts die producten tonen in Google Search AI Mode en de Gemini-app, en een nieuw agent-kennisbestand (Sales channels → Agentic controls) waarmee een winkel zelf bepaalt welke feiten (beleid, FAQ) agents te zien krijgen. In tegenstelling tot de eerdere Agentic Storefronts (maart 2026, toen nog alleen voor verkoop aan Amerikaanse kopers) noemt de Fall '26-pagina geen VS-beperking voor deze onderdelen.
 **Waar:** Shopify admin `raqds3-tb` → Sales channels → Shopify Catalog (geschiktheidscheck) en Sales channels → Agentic controls (kennisbestand)

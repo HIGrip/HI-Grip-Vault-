@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Shopify's eigen changelog (26 okt 2026) bevestigt dat het agent-kennisbestand uit backlogpunt 28 nu in de admin staat met een goedkeuringsstap, en zet een harde deadline: de losse Knowledge Base-app stopt op 15 januari 2027. Verder alleen een kleine, zwak bruikbare Google-bevestiging over meer inline links in AI Overviews/AI Mode; de overige vier sporen leverden niets op."
-gerelateerd: [2026-11-04-growth-radar-ai-search]
+gerelateerd: [2026-11-04-growth-radar-ai-search, 2026-11-18-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

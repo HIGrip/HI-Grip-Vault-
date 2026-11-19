@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-18T04:02:30+01:00",
+ "laatste_run": "2026-11-19T04:03:09+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -2072,9 +2072,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2128,9 +2128,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2191,9 +2191,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2328,9 +2328,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd",
-   "controle": "meetfundament (events sportkiezer/360°/scrolldiepte) en 4 weken baseline",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2818,9 +2818,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd",
-   "controle": "koopintentie /pages/collection vs /collections/gripsokken met Search Console-data",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2861,37 +2861,37 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2903,37 +2903,37 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -4250,9 +4250,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -4646,16 +4646,16 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-search-console-handmatig#b57358d7": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-11-09-search-console-handmatig#c24ec193": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -4906,9 +4906,9 @@
    "uitkomst": "open"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "GA4-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -5258,7 +5258,7 @@
   "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
    "bewijs": "niet te controleren: lokale map buiten de vault/repository",
    "controle": "lokale mediamap-inhoud vergelijken",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5382,9 +5382,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#01dc4258": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd (bekend probleem sinds 14-11), geen werkende omweg toegestaan",
-   "controle": "Search Console-cijfers opvragen voor deze actie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -5501,16 +5501,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd",
-   "controle": "positieval NL-homepage",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "niet te controleren: het analytics-hulpscript wordt deze sessie door de privacy-plugin geblokkeerd",
-   "controle": "positieval /pages/gripsokken-voor-voetbal (NL)",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "niet te controleren: het analytics-hulpscript is deze sessie geblokkeerd door de privacy-plugin",
+   "controle": "GA4/Search Console-cijfers voor deze actie",
+   "gecontroleerd": "2026-11-19",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -5642,7 +5642,6 @@
   }
  },
  "runs": [
-  "2026-11-02",
   "2026-11-03",
   "2026-11-04",
   "2026-11-05",
@@ -5655,7 +5654,8 @@
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
-  "2026-11-18"
+  "2026-11-18",
+  "2026-11-19"
  ],
  "volgende_run": "dagelijks 05:00"
 }

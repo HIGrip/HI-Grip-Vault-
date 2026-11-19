@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Rugby checklist kleedkamer</title>
+<style>
+@font-face { font-family: Poppins; font-weight: 400; src: url(../../Meta-batch-2026-11/fonts/Poppins-Regular.ttf); }
+@font-face { font-family: Poppins; font-weight: 500; src: url(../../Meta-batch-2026-11/fonts/Poppins-Medium.ttf); }
+@font-face { font-family: Poppins; font-weight: 600; src: url(../../Meta-batch-2026-11/fonts/Poppins-SemiBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 700; src: url(../../Meta-batch-2026-11/fonts/Poppins-Bold.ttf); }
+@font-face { font-family: Poppins; font-weight: 800; src: url(../../Meta-batch-2026-11/fonts/Poppins-ExtraBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; font-style: italic; src: url(../../Meta-batch-2026-11/fonts/Poppins-BlackItalic.ttf); }
+
+:root {
+  --hi-black: #0A0A0A;
+  --hi-white: #FFFFFF;
+  --hi-red: #E10600;
+  --hi-near-black: #111111;
+  --hi-trust: #00b67a;
+
+  /* 4:5 */
+  --w: 1080px; --h: 1350px;
+  --foto-h: 800px; --fade-start: 560px;
+  --note-top: 372px;
+  --kop-top: 872px;
+}
+.f9x16 {
+  --h: 1920px;
+  --foto-h: 1000px; --fade-start: 720px;
+  --note-top: 520px;
+  --kop-top: 1150px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: var(--w); height: var(--h); overflow: hidden; background: var(--hi-near-black); }
+body { font-family: Poppins, system-ui, sans-serif; color: var(--hi-white); -webkit-font-smoothing: antialiased; }
+
+.ad { position: relative; width: var(--w); height: var(--h); overflow: hidden; background: var(--hi-near-black); }
+
+.foto { position: absolute; inset: 0 0 auto 0; height: var(--foto-h); background: url(../bron/foto_4x5.jpg) center / cover no-repeat; }
+.f9x16 .foto { background-image: url(../bron/foto_9x16.jpg); }
+.foto::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(17,17,17,0) 0, rgba(17,17,17,0) var(--fade-start), var(--hi-near-black) 100%),
+    radial-gradient(120% 90% at 70% 35%, rgba(0,0,0,0) 40%, rgba(0,0,0,.28) 100%);
+}
+
+.logo { position: absolute; left: 72px; top: 22px; display: flex; align-items: center; gap: 12px; }
+.f9x16 .logo { top: 268px; }
+.f9x16 .logo span { color: var(--hi-white); }
+.logo .wit, .f9x16 .logo .zwart { display: none; }
+.f9x16 .logo .wit { display: block; }
+.logo img { height: 40px; }
+.logo span { font: 800 27px/1 Poppins; letter-spacing: .5px; color: var(--hi-black); }
+
+/* Post-it, met de hand op de kleedkamermuur geplakt */
+.note {
+  position: absolute; left: 60px; top: var(--note-top);
+  width: 448px; padding: 50px 40px 46px 44px;
+  background: var(--hi-red);
+  transform: rotate(-3deg);
+  box-shadow: 0 28px 40px -12px rgba(0,0,0,.55), 0 6px 12px rgba(0,0,0,.3);
+}
+.note::before {
+  content: ""; position: absolute; left: 50%; top: -18px; width: 150px; height: 40px;
+  transform: translateX(-50%) rotate(4deg);
+  background: rgba(232, 226, 210, .82);
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.note h2 { font: 800 33px/1.08 Poppins; letter-spacing: -.01em; margin-bottom: 26px; }
+.note ul { list-style: none; display: grid; gap: 16px; }
+.note li { display: flex; align-items: flex-start; gap: 16px; font: 500 29px/1.15 Poppins; }
+.note li svg { flex: 0 0 34px; width: 34px; height: 34px; margin-top: 1px; }
+.note li.open { font-weight: 800; font-size: 28px; line-height: 1.1; }
+
+.tekst { position: absolute; left: 72px; right: 72px; top: var(--kop-top); }
+.kop { font: italic 900 112px/.92 Poppins; letter-spacing: -.045em; text-transform: uppercase; }
+.sub { margin-top: 30px; max-width: 880px; font: 400 31px/1.42 Poppins; color: rgba(255,255,255,.82); }
+
+.trust {
+  margin-top: 46px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.16);
+  display: flex; align-items: center; flex-wrap: nowrap; gap: 20px; white-space: nowrap;
+  font: 600 22px/1 Poppins; letter-spacing: -.005em; color: rgba(255,255,255,.9);
+}
+.trust .tp { display: flex; align-items: center; gap: 12px; }
+.trust .sterren { display: flex; gap: 3px; }
+.trust .sterren svg { width: 24px; height: 24px; }
+.trust .bron { font-weight: 400; color: rgba(255,255,255,.62); }
+.trust .sep { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,.35); }
+
+.label { position: absolute; left: 72px; bottom: 64px; font: 700 21px/1 Poppins; letter-spacing: 3.5px; text-transform: uppercase; color: rgba(255,255,255,.55); }
+.f9x16 .label { bottom: 360px; }
+</style>
+</head>
+<body>
+<div class="ad" id="ad">
+  <div class="foto"></div>
+
+  <div class="logo"><img class="zwart" src="../bron/logo_mark_zwart.png" alt=""><img class="wit" src="../bron/logo_mark_wit.png" alt=""><span>HÏ GRIP</span></div>
+
+  <div class="note">
+    <h2>Checklist voor de wedstrijd</h2>
+    <ul>
+      <li><svg viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="7" fill="none" stroke="#fff" stroke-width="3"/><path d="M10 17.5l5 5 9-11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Bitje</li>
+      <li><svg viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="7" fill="none" stroke="#fff" stroke-width="3"/><path d="M10 17.5l5 5 9-11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Tape</li>
+      <li><svg viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="7" fill="none" stroke="#fff" stroke-width="3"/><path d="M10 17.5l5 5 9-11" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Schoenen</li>
+      <li class="open"><svg viewBox="0 0 34 34"><rect x="2" y="2" width="30" height="30" rx="7" fill="none" stroke="#fff" stroke-width="3"/></svg>HÏ Grip Performance Grip Socks 2.0</li>
+    </ul>
+  </div>
+
+  <div class="tekst">
+    <h1 class="kop">Vink hem af.</h1>
+    <p class="sub">Voor scrum, ruck en sprint: siliconen gripzones houden je voet vast in je schoen.</p>
+    <div class="trust">
+      <div class="tp">
+        <span class="sterren">
+          <svg viewBox="0 0 24 24"><path fill="#00b67a" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#00b67a" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#00b67a" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+          <svg viewBox="0 0 24 24"><path fill="#00b67a" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+          <svg viewBox="0 0 24 24"><defs><linearGradient id="half"><stop offset="60%" stop-color="#00b67a"/><stop offset="60%" stop-color="rgba(255,255,255,.28)"/></linearGradient></defs><path fill="url(#half)" d="M12 1.8l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.3 5.6 21l1.6-7.1L1.8 9.1 9 8.4z"/></svg>
+        </span>
+        <span>4,6 <span class="bron">op Trustpilot</span></span>
+      </div>
+      <span class="sep"></span>
+      <span>Binnen 1 werkdag verzonden</span>
+      <span class="sep"></span>
+      <span>30 dagen retour</span>
+    </div>
+  </div>
+
+  <div class="label">Performance Grip Socks 2.0</div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get('f') === '9x16') document.documentElement.classList.add('f9x16');
+</script>
+</body>
+</html>

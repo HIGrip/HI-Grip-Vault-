@@ -64,4 +64,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Visuele Productie/Meta-batch-2026-11/video
 - [[UGC-sceptische-sporter]]
 
+### Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19
+- [[04_Social_Agent/Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19/COPY|Rugby-checklist-kleedkamer-2026-11-19/COPY]]
+
 > Map: [[Home]]

@@ -2100,16 +2100,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "de URL geeft een directe 404 zonder redirect",
+   "bewijs": "/blogs/trends/waarom-sporten-meer-is-dan-bewegen en /blogs/hi-grip/waarom-sporten-meer-is-dan-bewegen geven allebei een directe 404, geen 301 naar /blogs/trends",
    "controle": "blogpost 'waarom sporten meer is dan bewegen' verwijderen en 301 naar /blogs/trends",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "de URL geeft een directe 404 zonder redirect (geen 301 naar /blogs/trends)",
-   "controle": "blogpost sportvoeding verwijderen en 301 naar /blogs/trends",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "/blogs/trends/de-laatste-gezonde-trends-sportvoeding en /blogs/hi-grip/de-laatste-gezonde-trends-sportvoeding geven allebei een directe 404, geen 301 naar /blogs/trends",
+   "controle": "blogpost sportvoeding (de-laatste-gezonde-trends-sportvoeding) verwijderen en 301 naar /blogs/trends",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2156,9 +2156,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "niet dit keer opgehaald; te controleren op /blogs/.../voor-welke-sport-zijn-gripsokken-onmisbaar meta description",
+   "bewijs": "niet te controleren: /blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar geeft nu 404, de blog bestaat niet meer op die URL",
    "controle": "'nu beperkt op voorraad' in de meta van de blog voor-welke-sport",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2198,16 +2198,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "niet dit keer specifiek opgehaald in de blog-templates",
+   "bewijs": "op /blogs/hi-grip/wat-zijn-gripsokken komt 'href=\"/collections/all\"' nog 5x voor, 'href=\"/collections/gripsokken\"' 0x",
    "controle": "globale blog-CTA van /collections/all naar /collections/gripsokken",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "er is een 301 van waarom-hi-grip-gripsokken naar wat-zijn-gripsokken (omgekeerde richting dan gevraagd); gripsokken-de-toekomst-van-jouw-sportoutfit geeft 404, niet bevestigd of hij naar wat-zijn-gripsokken redirect",
-   "controle": "wat-zijn-gripsokken en gripsokken-de-toekomst-van-jouw-sportoutfit samenvoegen",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "waarom-hi-grip-gripsokken redirect (301) juist naar wat-zijn-gripsokken (omgekeerde richting dan gevraagd); gripsokken-de-toekomst-van-jouw-sportoutfit geeft 404 zonder redirect naar wat-zijn-gripsokken",
+   "controle": "wat-zijn-gripsokken en gripsokken-de-toekomst-van-jouw-sportoutfit samenvoegen in waarom-hi-grip-gripsokken",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2226,16 +2226,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "niet dit keer specifiek opgehaald",
+   "bewijs": "niet te controleren: alle drie de URL's (waarom-gripsokken-het-verschil-maken, meer-grip-meer-vertrouwen, hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures) geven nu 404 — de blogstructuur is sinds de vorige run ingrijpend veranderd",
    "controle": "waarom-gripsokken-het-verschil-maken en meer-grip-meer-vertrouwen samenvoegen in de blessureblog",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "niet dit keer specifiek opgehaald",
+   "bewijs": "niet te controleren: de krachttraining-blog zelf ('voorkom-uitglijden') geeft nu 404 op zowel /blogs/hi-grip/ als /blogs/trends/, en de linkbestemming (het-innovatieve-hi-grip-grippatroon-...) geeft ook 404 — de blogstructuur is sinds de vorige run ingrijpend veranderd",
    "controle": "gebroken link in de krachttraining-blog vervangen",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2415,7 +2415,7 @@
   "2026-10-13-homepage-redesign#ff235e99": {
    "bewijs": "homepage toont nog 10x '3500+' en 0x '3000+'",
    "controle": "'3500+ sporters' naar 3000+ in announcementbar, Over ons, presets",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2441,9 +2441,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
-   "bewijs": "niet dit keer exact vergeleken met het prototype; geen directe aanwijzing van een wijziging",
+   "bewijs": "niet opnieuw woord-voor-woord vergeleken met het prototype; geen aanwijzing dat de tekst is aangepast sinds de vorige run",
    "controle": "entiteitsalinea/schema-description vs prototype (58 woorden)",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2647,9 +2647,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#022f1382": {
-   "bewijs": "op https://www.higrip.nl/pages/gripsokken-voor-rugby komt 'Bekijk de maten' niet voor in de HTML",
-   "controle": "rugbylanding: CTA 'Bekijk de maten' koppelen aan FAQ, UTM rugby_praag_2026",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "'Bekijk de maten' komt niet voor op /pages/gripsokken-voor-rugby; UTM-campagnegedrag niet te controleren zonder browser",
+   "controle": "rugbylanding: CTA 'Bekijk de maten' en UTM rugby_praag_2026",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2738,9 +2738,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
-   "bewijs": "'Geen doorglijden', 'Kracht komt aan' staan nog letterlijk op /pages/gripsokken-voor-rugby, niet herformuleerd",
+   "bewijs": "'Geen doorglijden', 'Kracht komt aan', 'zet scherper af', 'Fris tot de laatste minuut' staan nog letterlijk op /pages/gripsokken-voor-rugby, niet herformuleerd",
    "controle": "absolute claims op de rugbylanding herformuleren",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2854,9 +2854,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "homepage toont nog 10x '3500+' en 0x '3000+'; nog niet geharmoniseerd",
-   "controle": "sportersaantal harmoniseren (3000+/1000+/3500+)",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "homepage toont nog 10x '3500+' en 0x '3000+'",
+   "controle": "sportersaantal harmoniseren (3000+/1000+/3500+) op de homepage",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3088,9 +3088,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "homepage toont nog 2x href=mailto: en 0x href=tel: (niet gewijzigd)",
+   "bewijs": "homepage toont nog 2x href=\"mailto:\" en 0x href=\"tel:\"",
    "controle": "telefoonlink in de footer (mailto: naar tel:)",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3693,9 +3693,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "de letterlijke tekst 'Geen blaren' staat nog op /products/performance-gripsokken-2-0-zwart, niet herformuleerd",
-   "controle": "'Geen blaren'-claim op productpagina 2.0 toetsen aan de claimregels",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "de tekst 'geen blaren' staat nog letterlijk ('Naadloze afwerking, geen blaren'), niet herformuleerd",
+   "controle": "'Geen blaren'-claim op /products/performance-gripsokken-2-0-zwart",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3892,9 +3892,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "titel is al Nederlands ('Je winkelwagen'), maar prijsweergave (mogelijke dubbele prijs onder titel en rechts) niet dit keer visueel bevestigd",
-   "controle": "kop 'Cart' naar Nederlands; prijs dubbel in de regel",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "kop is al Nederlands ('Je winkelwagen is leeg'); dubbele-prijsweergave niet te verifiëren omdat de winkelwagen leeg is (geen artikelregel zonder iets te bestellen)",
+   "controle": "kop 'Cart' naar Nederlands; prijs dubbel in de regel op /cart",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3921,8 +3921,8 @@
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
    "bewijs": "niet te controleren: cookiebannergedrag alleen zichtbaar na JavaScript-rendering, geen browser-tool beschikbaar",
-   "controle": "cookiebanner-knopstijl (Accepteren/Afwijzen) op de live site",
-   "gecontroleerd": "2026-11-18",
+   "controle": "cookiebanner-knopstijl (Accepteren/Afwijzen)",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4117,9 +4117,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#5ce01a10": {
-   "bewijs": "beide absolute claims staan nog letterlijk op /pages/gripsokken-voor-rugby, niet omgezet naar vergelijkende/onderzoeksformulering",
+   "bewijs": "beide claims staan nog letterlijk op /pages/gripsokken-voor-rugby (niet vergelijkend/onderzoek geformuleerd); '19,95' komt 5x voor op de pagina",
    "controle": "rugbylanding 'Geen doorglijden'/'Je voet staat vast' omzetten, doorgestreepte €19,95",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4145,9 +4145,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#a8aa19f2": {
-   "bewijs": "een sterrenbeoordeling-element is aanwezig op de productpagina, bronvermelding niet dit keer specifiek gecontroleerd",
-   "controle": "sterrenrating en slogan op de productpagina vs Feiten",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "★★★★½ (4,5) en de slogan 'Meer grip. Meer controle. Meer winnen.' staan in de hi-social-strip zonder Trustpilot-bronvermelding in de buurt; Feiten vraagt 4,6★ met bron Trustpilot",
+   "controle": "sterrenrating en slogan op /products/performance-gripsokken vs Feiten",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4159,9 +4159,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
-   "bewijs": "beide claims staan nog letterlijk op /pages/gripsokken-voor-rugby",
-   "controle": "landingsteksten 'Geen doorglijden'/'Je voet staat vast' omzetten",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "beide zinnen staan nog 1x letterlijk op /pages/gripsokken-voor-rugby, niet omgezet",
+   "controle": "landingsteksten 'Geen doorglijden'/'Je voet staat vast' op /pages/gripsokken-voor-rugby",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4616,9 +4616,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#811c3f82": {
-   "bewijs": "bevestigd: meta description ontbreekt nog (onveranderd)",
+   "bewijs": "meta description ontbreekt nog steeds op /pages/teamorder",
    "controle": "meta description /pages/teamorder",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },

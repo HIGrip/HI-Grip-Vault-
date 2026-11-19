@@ -4609,9 +4609,9 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
-   "bewijs": "bevestigd: beide pagina's missen nog een meta description en een robots-meta",
+   "bewijs": "bevestigd: beide pagina's missen nog een meta description en een robots-meta, onveranderd",
    "controle": "meta description en robots-meta /pages/gripsokken-2-0 en -2-1",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4623,9 +4623,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#96ba1592": {
-   "bewijs": "canonical klopt (-a wijst naar -2-1, -b naar -2-0), maar een robots-meta ontbreekt nog op beide",
+   "bewijs": "canonical klopt nog (-a naar -2-1, -b naar -2-0), robots-meta ontbreekt nog op beide",
    "controle": "robots-meta en canonical /pages/gripsokken-2-0-a en -b",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5039,9 +5039,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
-   "bewijs": "geen van deze prijzen komt voor op /products/performance-gripsokken of /products/performance-gripsokken-2-0-zwart; die prijzen horen bij het 3-pack 2.0, nog niet in Feiten/op de site bevestigd",
+   "bewijs": "variantprijzen op /products/performance-gripsokken.js (14,95) en /products/performance-gripsokken-2-0-zwart.js (17,95) bevatten geen van deze drie prijzen",
    "controle": "prijzen €14,98/€44,95/€53,85 op beide productpagina's",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5391,7 +5391,7 @@
   "backlog#072e2482": {
    "bewijs": "beide pagina's missen nog een meta description en een robots-meta",
    "controle": "meta description en robots-meta /pages/gripsokken-2-0 en -2-1",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5410,9 +5410,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "geen aanwijzing van een nieuwe 'bewijspagina' gevonden op de site",
+   "bewijs": "/pages/onderzoek en /pages/waarom-hi-grip-werkt geven beide 404, geen bewijspagina gevonden",
    "controle": "bewijspagina rond eigen meetdata",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5424,16 +5424,16 @@
    "uitkomst": "open"
   },
   "backlog#2e5c5044": {
-   "bewijs": "homepage telt nog 13 keer alt=\"\" op contentafbeeldingen (onveranderd)",
+   "bewijs": "homepage telt nog 13x alt=\"\" (boven de grens van 12, onveranderd)",
    "controle": "aantal alt=\"\" op de homepage",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#32925dba": {
-   "bewijs": "/blogs/intern staat nog publiek (200) zonder robots-meta in de HTML",
+   "bewijs": "/blogs/intern staat nog publiek (200) zonder robots-meta",
    "controle": "robots-meta /blogs/intern",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5461,35 +5461,35 @@
   "backlog#49691d90": {
    "bewijs": "meta description ontbreekt nog",
    "controle": "meta description /collections/all",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#886d413d": {
-   "bewijs": "de specifieke blog-URL geeft nog een directe 404; /blogs/trends zelf toont wel weer 9 artikelkaarten (niet leeg)",
+   "bewijs": "de blog-URL geeft nog een directe 404 (geen 301); /blogs/trends toont nu weer 'Nog geen artikelen in deze blog' (leeg, anders dan de 9 kaarten op 18-11)",
    "controle": "404 van de sportwereld-blog en status van /blogs/trends",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8a590428": {
-   "bewijs": "titel en meta zijn aanwezig en vertaald, niet gecontroleerd of dit al de specifieke herschrijving is",
+   "bewijs": "titel 'HÏ Grip | Performance Grip Socks for Athletes', meta aanwezig en vertaald, niet te bevestigen of dit al de specifieke herschrijving is",
    "controle": "titel/meta /en",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8d435a25": {
-   "bewijs": "titel is nog 'HÏ Grip | Wat zijn gripsokken? Waarom gripsokken dragen?' met u-vorm in de meta, niet herschreven",
+   "bewijs": "titel nog 'Wat zijn gripsokken? Waarom gripsokken dragen?' met u-vorm in de meta ('u alles te weten'), niet herschreven",
    "controle": "titel/meta blog 'waarom HÏ Grip gripsokken' herschrijven",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8f8db388": {
-   "bewijs": "niet dit keer specifiek opgehaald welke 4 URL's bedoeld zijn",
-   "controle": "'Grip socks' URL-consolidatie",
-   "gecontroleerd": "2026-11-18",
+   "bewijs": "alle 4 URL's canonicaliseren nog naar zichzelf, geen consolidatie doorgevoerd",
+   "controle": "canonical van /, /collections/gripsokken, /en/collections/gripsokken, /collections/all",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5515,16 +5515,16 @@
    "uitkomst": "open"
   },
   "backlog#a1f3e1a2": {
-   "bewijs": "titel is nog 'HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?' en meta nog met 'uw gripsokken' (u-vorm), niet herschreven",
+   "bewijs": "NL-titel nog 'Hoe was ik mijn gripsokken? Op hoeveel graden?' met u-vorm in de meta ('u terecht'/'uw gripsokken'); EN-titel is de letterlijke vertaling, ook nog niet herschreven",
    "controle": "titel/meta blog 'hoe zorg ik voor mijn gripsokken' NL en EN",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#a2e3406d": {
    "bewijs": "'per paar' komt niet voor op /products/performance-gripsokken",
    "controle": "prijs per paar naast de pack-selector",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5543,9 +5543,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#b1876b36": {
-   "bewijs": "padel en tennis komen wel voor op beide productpagina's, maar 'rugby' ontbreekt nog op allebei; geen <code>-tag gevonden (dat deel lijkt al opgelost)",
+   "bewijs": "padel en tennis staan op alle 3 productpagina's, 'rugby' ontbreekt nog op alle 3; geen <code>-tag gevonden",
    "controle": "productbeschrijvingen 1.0/2.0: padel/tennis/rugby en <code>-tag",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5557,23 +5557,23 @@
    "uitkomst": "open"
   },
   "backlog#b81d4226": {
-   "bewijs": "geen <video>-element of youtube/vimeo-embed gevonden op /products/performance-gripsokken",
+   "bewijs": "geen <video>-element of youtube/vimeo-embed op /products/performance-gripsokken",
    "controle": "productvideo 30-60s op de productpagina",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#bf53be16": {
-   "bewijs": "titel 'HÏ Grip | Ontdek Jouw Sport' en meta description zijn generiek, niet gecontroleerd of dit al de voorgestelde herschrijving uit search-console is",
+   "bewijs": "titel 'HÏ Grip | Ontdek Jouw Sport', meta generiek sportkeuze-tekst, niet te bevestigen of dit al de specifieke herschrijving uit search-console is",
    "controle": "titel/meta /pages/ontdek-jouw-sport",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#c51a9579": {
-   "bewijs": "titel is nu 'Betalingsbeleid | HÏ Grip' (niet meer 'American Express'), maar meta description ontbreekt nog steeds",
+   "bewijs": "titel is 'Betalingsbeleid | HÏ Grip' (gefixt), maar meta description ontbreekt nog steeds",
    "controle": "titel en meta description /pages/terugbetalingsbeleid",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5585,9 +5585,9 @@
    "uitkomst": "open"
   },
   "backlog#d6d843f3": {
-   "bewijs": "meta description ontbreekt nog",
+   "bewijs": "titel aanwezig, meta description ontbreekt nog steeds",
    "controle": "meta description /pages/teamorder",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5606,9 +5606,9 @@
    "uitkomst": "open"
   },
   "backlog#e920d0ff": {
-   "bewijs": "/pages/terugbetalingsbeleid heeft nog geen meta description en shop.shopPolicies REFUND_POLICY toont nog de oude tekst (14 dagen/25%)",
+   "bewijs": "/pages/terugbetalingsbeleid heeft nog geen meta description; iDEAL-vraag niet gecontroleerd (buiten site-methode)",
    "controle": "terugbetalingsbeleid-conceptteksten controleren en plakken",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "site",
    "uitkomst": "open"
   },

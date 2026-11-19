@@ -2030,16 +2030,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "02_Dashboard/Routines/SEO.md bevat geen vermelding van een wekelijkse EN-vertalingscheck",
+   "bewijs": "02_Dashboard/Routines/SEO.md bevat geen vermelding van 'vertaling' of een wekelijkse EN-vertalingscheck",
    "controle": "EN-vertaling-check in de SEO-routine",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "geen bestand gevonden met 'mini-plan' en 'zakelijk' in de naam",
+   "bewijs": "geen bestand gevonden met 'mini-plan' of 'zakelijke pagina' in de naam",
    "controle": "mini-plan voor de zakelijke pagina in de vault",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2536,9 +2536,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "Feiten & Actuele Staat en Performance Grip Socks 2.0 bevatten alleen prijs/maten voor de 1.0, geen bredere specificatievergelijking",
+   "bewijs": "Performance Grip Socks 2.0.md en Feiten & Actuele Staat.md bevatten voor de 1.0 nog alleen maten/prijzen (regel 55/83/207-209), geen bredere specificatievergelijking (materiaal e.d.)",
    "controle": "1.0-specificaties in Feiten/Performance Grip Socks 2.0 voor de 1.0/2.0-vergelijking",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2633,9 +2633,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "geen bestand met 'swipe' en 'file' in de naam gevonden in de vault",
+   "bewijs": "geen swipe file-document gevonden in de vault (alleen losse screenshotbestanden met 'swipe' in de bestandsnaam, geen verzameldocument)",
    "controle": "swipe file in de vault",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3365,14 +3365,14 @@
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
    "bewijs": "geen vermelding van 'hook-eerst' of 'binnen 2 sec' in 04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md",
    "controle": "regel 'hook-eerst' in Editing Stijl Gids Video.md",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
    "bewijs": "geen vermelding van 'match-cut' in 04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md",
    "controle": "match-cut-uitzondering in Editing Stijl Gids Video.md",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3616,16 +3616,16 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "02_Dashboard/Website-techniek/2026-11-03-snelheid-werkthema-02.md bevat geen vastgelegd doel (PageSpeed 80+/TBT<300ms/LCP<2,5s), alleen metingen",
+   "bewijs": "02_Dashboard/Website-techniek/2026-11-03-snelheid-werkthema-02.md bevat nog geen vastgelegd doel (PageSpeed 80+/TBT<300ms/LCP<2,5s)",
    "controle": "snelheidsdoel in de werkthema-notitie",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
    "bewijs": "geen vermelding van 'upfront' in 02_Dashboard/Website-techniek/2026-11-03-snelheid-werkthema-02.md",
    "controle": "Upfront-referentie in de werkthema-notitie",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3878,9 +3878,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "navigatieregel '> Map: [[Waar staat wat]]' is aanwezig in 02_Dashboard/Onderzoek/2026-11-05-performance-days-marketingplan.md; vault_nav.py niet gedraaid om breder te bevestigen",
+   "bewijs": "navigatieregel '> Map: [[Waar staat wat]]' staat op regel 19 van 02_Dashboard/Onderzoek/2026-11-05-performance-days-marketingplan.md; vault_nav.py niet gedraaid om breder te bevestigen",
    "controle": "navigatieregel van deze notitie en domeinbestanden",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4838,7 +4838,7 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
    "bewijs": "niet te controleren: lokale MCP-instelling op de machine van een mens, niet zichtbaar in deze repository",
    "controle": "Vault-MCP-configuratie (higrip-vault toegestane map)",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4859,7 +4859,7 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#827f0731": {
    "bewijs": "niet te controleren: geen aparte publicatie-log per notitie; dagelijkse routines draaien inmiddels standaard vanaf info@",
    "controle": "dashboard-sync/publicatie-account voor deze notitie",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4878,9 +4878,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
-   "bewijs": ".claude/agents/conversie-analyse-agent.md wijst nu naar '01_Agent_Infrastructuur/Website Agent/Conversie & Analyse Agent/Identiteit Conversie & Analyse Agent.md' (niet meer naar 04_Agent_Infrastructuur), maar dat bestand bestaat nog niet",
+   "bewijs": ".claude/agents/conversie-analyse-agent.md wijst naar '01_Agent_Infrastructuur/Website Agent/Conversie & Analyse Agent/Identiteit Conversie & Analyse Agent.md' (niet meer naar 04_Agent_Infrastructuur), maar die map/dat bestand bestaat nog niet",
    "controle": "identiteitsbestand-verwijzing conversie-analyse-agent.md",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5186,9 +5186,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9": {
-   "bewijs": ".claude/agents/content-maker-agent.md en caption-copy-agent.md verwijzen nog naar '01_Agent_Infrastructuur/Content Agent/.../Identiteit ....md', dat bestand bestaat niet",
+   "bewijs": ".claude/agents/content-maker-agent.md wijst nu naar '01_Agent_Infrastructuur/Content Agent/Content Maker/Identiteit Content Maker.md' en caption-copy-agent.md naar '.../Caption & Copy Agent/Identiteit Caption & Copy Agent.md' (pad is gewijzigd, niet meer de generieke map), maar beide bestanden bestaan nog niet",
    "controle": "identiteitsbestand-verwijzing in content-maker-agent.md en caption-copy-agent.md",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5277,9 +5277,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
-   "bewijs": "output/ bevat nog 131 bestanden in de vault-root (nog niet verplaatst of verwijderd)",
+   "bewijs": "output/ bevat nu 121 bestanden in de vault-root (was 131 op 18-11; minder maar nog niet verplaatst/verwijderd), laatste wijziging in output/ op 2026-11-16",
    "controle": "aantal bestanden in vault-root output/",
-   "gecontroleerd": "2026-11-18",
+   "gecontroleerd": "2026-11-19",
    "methode": "vault",
    "uitkomst": "open"
   },

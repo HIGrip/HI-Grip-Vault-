@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HÏ Grip · early-access e-mailgalerij · 17-11-2026</title>
+<style>
+  :root{--bg:#0A0A0A;--line:#2a2a2a;--mute:#909194;}
+  *{box-sizing:border-box}
+  body{margin:0;background:#050505;color:#fff;font-family:'Helvetica Neue',Arial,sans-serif;font-weight:400;font-style:normal;}
+  header p,.slot small,.slot a,footer{font-weight:400;font-style:normal;}
+  header{padding:28px 32px;border-bottom:1px solid var(--line);}
+  h1{margin:0 0 8px;font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-.04em;font-size:28px;}
+  header p{margin:4px 0;color:var(--mute);font-size:13px;line-height:1.5;max-width:900px;}
+  .bar{position:sticky;top:0;z-index:5;background:#050505;border-bottom:1px solid var(--line);padding:12px 32px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .bar button{font:600 13px 'Poppins',Arial,sans-serif;background:transparent;color:#fff;border:1px solid #555;border-radius:999px;padding:9px 18px;cursor:pointer;}
+  .bar button[aria-pressed=true]{background:#fff;color:#0A0A0A;border-color:#fff;}
+  .bar span{color:var(--mute);font-size:12px;margin-right:6px;}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding:32px;align-items:start;}
+  .slot h2{margin:0 0 4px;font-size:15px;font-weight:700;}
+  .slot small{display:block;color:var(--mute);font-size:12px;line-height:1.45;margin-bottom:12px;min-height:34px;}
+  .slot a{color:#fff;font-size:12px;}
+  .frame{border:1px solid #333;border-radius:12px;overflow:hidden;background:#111;margin:0 auto;}
+  .frame iframe{display:block;width:100%;border:0;background:#050505;}
+  body.m .frame{width:375px;max-width:100%;}
+  body.m .frame iframe{height:1500px;}
+  body.d .frame{width:100%;}
+  body.d .frame iframe{height:1100px;}
+  body.m .grid{grid-template-columns:repeat(3,minmax(375px,1fr));overflow-x:auto;}
+  body.d .grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;border:1px solid #555;border-radius:999px;padding:2px 9px;margin-right:8px;color:#fff;}
+  footer{padding:24px 32px 48px;color:var(--mute);font-size:12px;line-height:1.6;border-top:1px solid var(--line);max-width:1000px;}
+  @media (max-width:900px){.grid{grid-template-columns:1fr !important;padding:20px;}}
+</style>
+</head>
+<body class="m">
+<header>
+  <h1>Early access · zes e-mailconcepten</h1>
+  <p>A1–A3: aanmelding early access. C1–C3: kortingscode. Elk een eigen skelet. Alleen lokaal te bekijken, niets verstuurd of gepubliceerd.</p>
+  <p><b style="color:#fff">Copy-status:</b> Website na correctieronde 1 (06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md). Copyherkeuring: GOED uitsluitend op copy. Design, e-mailclients, links en campagne zijn niet goedgekeurd. Design heeft geen tekst herschreven. Gestippelde velden [INVUL] zijn open feiten.</p>
+  <p><b style="color:#fff">Beeld en font:</b> foto-, logo- en fontbestanden verwijzen naar assets/ (zie assets-manifest.md). Zolang die kopieën ontbreken, tonen de previews plaatshouders en Helvetica Neue / Arial. In echte e-mailclients werkt Poppins alleen via webfont (Apple Mail), anders fallback.</p>
+</header>
+<div class="bar">
+  <span>Weergave</span>
+  <button id="bm" aria-pressed="true" onclick="setV('m')">Mobiel 375 px</button>
+  <button id="bd" aria-pressed="false" onclick="setV('d')">Desktop 600 px+</button>
+</div>
+<main class="grid">
+  <section class="slot"><h2><span class="tag">A1</span>Chevron-doorgang</h2><small>Aanmelding · foto boven, chevron-trio als enig accent</small><div class="frame"><iframe src="a1.html" title="A1" loading="eager"></iframe></div><p><a href="a1.html">Open A1 los</a></p></section>
+  <section class="slot"><h2><span class="tag">A2</span>Startblok</h2><small>Aanmelding · foto-vrij, groot gezet, drie genummerde stappen op rasterverloop</small><div class="frame"><iframe src="a2.html" title="A2"></iframe></div><p><a href="a2.html">Open A2 los</a></p></section>
+  <section class="slot"><h2><span class="tag">A3</span>Podium</h2><small>Aanmelding · productvlak met hoekmarkeringen op dotveld</small><div class="frame"><iframe src="a3.html" title="A3"></iframe></div><p><a href="a3.html">Open A3 los</a></p></section>
+  <section class="slot"><h2><span class="tag">C1</span>Ticket-stub op foto</h2><small>Kortingscode · stub direct op foto met scrim</small><div class="frame"><iframe src="c1.html" title="C1"></iframe></div><p><a href="c1.html">Open C1 los</a></p></section>
+  <section class="slot"><h2><span class="tag">C2</span>Gestempeld document</h2><small>Kortingscode · foto-vrij, code in scherpe perforatiebox</small><div class="frame"><iframe src="c2.html" title="C2"></iframe></div><p><a href="c2.html">Open C2 los</a></p></section>
+  <section class="slot"><h2><span class="tag">C3</span>Schuine snede</h2><small>Kortingscode · donker boven, wit onder, zwarte pill-CTA</small><div class="frame"><iframe src="c3.html" title="C3"></iframe></div><p><a href="c3.html">Open C3 los</a></p></section>
+</main>
+<footer>
+  Niet gecontroleerd: render in echte e-mailclients (Gmail, Outlook, Apple Mail), dark-mode-omkering, SendWILL. De iframes tonen browserweergave, geen clientweergave. CSS-verlopen, rasters en SVG-chevrons zijn in productie PNG's (zie commentaar in de bestanden). Onafhankelijke Design-QA volgt apart.
+</footer>
+<script>
+function setV(v){document.body.className=v;document.getElementById('bm').setAttribute('aria-pressed',v==='m');document.getElementById('bd').setAttribute('aria-pressed',v==='d');}
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>A2 · Startblok</title>
+<!-- COPY-BRON: Website na correctieronde 1 (06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md; copyherkeuring GOED uitsluitend op copy; Design/clients/links niet goedgekeurd). Design heeft niets herschreven. Genummerde stappen zijn vervallen (bron).
+     ONDERWERP: Early access: [INVUL: wat de klant krijgt door aan te melden]
+     PREHEADER: Meld je aan en ontvang [INVUL: wat de klant krijgt door aan te melden]. Aanmelden is [BEVESTIG V1: vrijblijvend].
+     FONT: zie preview-font-regel hieronder. -->
+<style>
+  /* Preview-fonts: Poppins uit assets/fonts/ (kopie uit de mediabibliotheek, zie assets-manifest.md). Ontbreekt de map, dan Helvetica Neue / Arial. In echte e-mailclients werken lokale fonts niet. */
+  @font-face{font-family:'Poppins';font-style:italic;font-weight:900;src:url(assets/fonts/Poppins-BlackItalic.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(assets/fonts/Poppins-Regular.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:600;src:url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:700;src:url(assets/fonts/Poppins-Bold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:900;src:url(assets/fonts/Poppins-Black.ttf) format('truetype');}
+  body{margin:0;padding:0;background:#050505;}
+  .f{font-family:'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;}
+  .keep-dark, [data-ogsc] .keep-dark, [data-ogsb] .keep-dark{background-color:#0A0A0A !important;color:#FFFFFF !important;}
+  .h1{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.92;margin:0;}
+  .body{font-weight:400;letter-spacing:-0.02em;line-height:1.55;margin:0;}
+  .inv{outline:1px dashed rgba(255,255,255,.45);outline-offset:4px;}
+  .cta{display:inline-block;background:#FFFFFF;color:#0A0A0A !important;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;line-height:1;}
+  .chev{display:inline-block;margin-left:14px;font-size:24px;line-height:0.7;font-weight:700;vertical-align:-2px;}
+  @media (max-width:480px){
+    .h1{font-size:46px !important;}
+    .pad{padding-left:24px !important;padding-right:24px !important;}
+    .raster{height:240px !important;}
+  }
+</style>
+</head>
+<body class="f" style="margin:0;background:#050505;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Aanmelden is [BEVESTIG V1: vrijblijvend].</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050505"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="keep-dark" style="width:100%;max-width:600px;background:#0A0A0A;color:#FFFFFF;">
+
+  <tr><td class="pad f" style="padding:22px 32px;"><img src="assets/logo/embleem-wit.png" alt="HÏ GRIP" height="30" style="display:block;height:30px;width:auto;border:0;color:#FFFFFF;font-weight:900;font-size:18px;"></td></tr>
+
+  <!-- SKELET A2: foto-vrij, typografie draagt alles. Kop (volle breedte, schuin gestapeld) → speed-strepen → raster-verloop-blok met tekst + CTA -->
+  <!-- COMPONENT: h1-field groot (foto-vrij) -->
+  <tr><td class="pad" style="padding:52px 32px 0 32px;">
+    <h1 class="h1 f" style="font-size:64px;color:#FFFFFF;">Dit krijg je met early access.</h1>
+  </td></tr>
+
+  <!-- COMPONENT: speed-strepen (dunne dubbele slant, divider) · productie: PNG assets/speed-strepen-wit.png -->
+  <tr><td class="pad" style="padding:28px 32px 0 32px;">
+    <svg width="72" height="14" viewBox="0 0 72 14" role="img" aria-label="" style="display:block"><path d="M10 14 L22 0 M26 14 L38 0" stroke="#FFFFFF" stroke-width="2.5" fill="none"/></svg>
+  </td></tr>
+
+  <tr><td class="pad" style="padding:32px 32px 0 32px;">
+    <p class="body f" style="font-size:16px;color:#D6D6D8;">Hoi <span class="inv">[INVUL: voornaam]</span>,</p>
+  </td></tr>
+
+  <!-- COMPONENT: voordeel-blok (het ene rasterelement; dotafstand 14 px, van vol naar leeg). PRODUCTIE: PNG-achtergrond, fallback bgcolor #0A0A0A -->
+  <tr><td bgcolor="#0A0A0A" style="background-color:#0A0A0A;background-image:linear-gradient(to bottom left,rgba(10,10,10,0) 0%,rgba(10,10,10,.55) 45%,#0A0A0A 90%),radial-gradient(circle,rgba(255,255,255,.5) 1.2px,transparent 1.7px);background-size:100% 100%,14px 14px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="pad" style="padding:40px 32px;">
+      <p class="body f" style="font-size:16px;color:#D6D6D8;">Als je je aanmeldt, krijg je:</p>
+      <p class="voordeel f" style="margin:14px 0 0 0;font-weight:900;font-style:italic;font-size:28px;line-height:1.1;letter-spacing:-0.03em;color:#FFFFFF;"><span class="inv">[INVUL: wat de klant krijgt door aan te melden]</span></p>
+    </td></tr></table>
+  </td></tr>
+
+  <tr><td class="pad" style="padding:8px 32px 0 32px;">
+    <p class="body f" style="font-size:16px;color:#D6D6D8;">Zo werkt aanmelden: <span class="inv">[INVUL: wat de klant doet bij het aanmelden, en wat daarna volgt en wanneer; alleen invullen als vastgesteld]</span></p>
+  </td></tr>
+<!--STAPPEN-START-->
+  <!--STAPPEN-EINDE-->
+  <tr><td class="pad" style="padding:30px 32px 0 32px;">
+    <a href="#" class="cta f" title="[INVUL: aanmeldlink]" style="display:inline-block;background:#FFFFFF;color:#0A0A0A;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;">Aanmelden<span class="chev">&#8250;</span></a>
+  </td></tr>
+  <tr><td class="pad f" style="padding:16px 32px 8px 32px;font-size:13px;color:#909194;line-height:1.5;">Aanmelden is <span class="inv">[BEVESTIG V1: vrijblijvend]</span>.</td></tr>
+
+  <tr><td class="pad f" style="padding:48px 32px 36px 32px;font-size:12px;line-height:1.6;color:#909194;">
+    <span class="inv">[INVUL: afzender]</span> · <span class="inv">[INVUL: bedrijfsgegevens]</span><br>
+    <a href="#" style="color:#909194;text-decoration:underline;" title="[INVUL: afmeldlink]">[INVUL: afmeldlink]</a>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>

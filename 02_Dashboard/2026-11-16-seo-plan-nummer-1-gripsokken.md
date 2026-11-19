@@ -11,7 +11,7 @@ prioriteit: P1
 samenvatting: "Op gripsokken rankt vrijwel uitsluitend een oude URL die doorstuurt naar de productpagina /products/performance-gripsokken, niet de collectie. Nu die eindpagina beschermen en verbeteren; de collectie gefaseerd opbouwen en pas hoofdpagina maken als zij na 90 dagen tractie toont. Concept, niets live."
 gerelateerd: [2026-10-27-seo-audit-higrip-nl, 2026-11-16-seo-plan-gripsokken-bijlage, 2026-11-16-seo-gsc-nulmeting-gripsokken]
 vervangt: []
-bronbestand: ""
+bronbestand: "02_Dashboard/_uitvoer/2026-11-17-seo-plan-gripsokken-visueel/index.html"
 deadline: ""
 ---
 # SEO-plan: groeien op gripsokken

@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-11-16
+bijgewerkt: 2026-11-17
 beheer: Stafchef (03_Denzel)
 ---
 
@@ -39,6 +39,8 @@ beheer: Stafchef (03_Denzel)
 > Sinds 21-10-2026 is Denzel alleen orchestrator. De QA-agents vallen onder hun eigen hoofdagent, de Stafchef en de Vooruitblik-agent onder de Operations Agent. De regels hieronder blijven gelden.
 
 ### Denzel
+- **Presenteer correcte merktoepassing of technische rendering niet als bewijs van goed creatief ontwerp; meld herhaalde smaakafkeuring als patroon en start niet nóg een ongevraagd ontwerp.** Reden: Lars keurt opnieuw de standaardlook af; technische correctheid bewijst geen creatieve kwaliteit. (2026-11-17, Denzel op feedback Lars; bron t_0f17b9cb)
+- **Denzel en Design hervatten de gepauzeerde early-access/designrichting pas wanneer Lars zijn aangekondigde toelichting geeft of expliciet om vervolg vraagt.** Reden: eerdere ontwerpen zijn afgekeurd en gepauzeerd; Lars komt zelf terug met richting. Geen nieuwe ontwerpopdracht of ongevraagde correctieronde. Deze pauze geldt ook bij de Design-leerregel over nieuwe artdirection. (2026-11-17, Denzel op feedback Lars; bron t_0f17b9cb)
 - **Expliciteer vóór routering of het minimale budget bedoeld is voor meetcontrole, creatieve vergelijking of aankoopvalidatie.** Reden: Denzel erkent dat een meetproef is aangeboden terwijl Lars een betekenisvolle advertentietest en dataopbouw bedoelde. (2026-11-06, correctie Lars en leerregel Denzel; bron: t_bcbbbbd1, makerbriefing t_a051a04d.)
 - **Laat de domeinagent het budget afleiden uit de benodigde waarnemingen voor het expliciete testdoel, niet uit een willekeurig bedrag.** Reden: Lars vond het budget te laag om echt te testen en vroeg of drie sets met elk vier ads nodig zijn; die opzet is een te toetsen hypothese, geen vastgesteld besluit. (2026-11-06, correctie Lars en leerregel Denzel; bron: t_bcbbbbd1 en t_a051a04d.)
 - **QA-GOED voor documentinhoud bewijst geen geschiktheid voor een anders bedoeld doel.** Reden: het GOED van de eerdere meetproef dekt niet automatisch de door Lars bedoelde advertentietest; herziening en nieuwe QA blijven nodig, evenals afzonderlijke menselijke vrijgave. (2026-11-06, leerregel Denzel; bronnen: t_bcbbbbd1, eerder verdict t_791d91d5, herziening t_a051a04d en QA t_b5c3fea6.)
@@ -59,6 +61,7 @@ beheer: Stafchef (03_Denzel)
 - **Kaarten die iets verwijderen of verplaatsen (zoals opruiming van ontwerpversies) gaan eerst naar REVIEW voor akkoord van Lars.** Pas daarna uitvoeren. (2026-11-02, Lars)
 - **Een besluit dat de autonomie van een agent verruimt voer je op alle plekken tegelijk door** (definitie, profiel-SOUL, basisregels in `user.md`, hiërarchie, dashboard, Denzel-bestand) en controleer je daarna met zoeken op de oude formulering. Reden: de oude regel "read-only" (Ads Agent) stond op negen plekken. Het besluit zelf: de Ads Agent voert niets zelf uit, hooguit klaarzetten (status uit) na akkoord en een hele goede controle door Team HÏ Grip; een mens zet aan. (2026-11-03, Lars)
 - **De videotool werkt niet met het huidige model (geen video-ondersteuning).** Een modelwissel vereist toestemming van HÏ Grip en is niet gedaan; videoanalyse is gedaan via contactbladen en shot-telling (geluid niet beoordeeld). (2026-11-05, Denzel)
+- **Communiceer copy-QA en Design-QA afzonderlijk; copy-GOED is geen goed ontwerp en geen voltooide 6-mailsoplevering.** Reden: copy-GOED werd naast een afgekeurd design gelezen als bijna klaar. (2026-11-17, Denzel; correctie Lars; bron t_ee5438ae)
 
 ### Stafchef
 - **Afvinken alleen in het dashboard, en alleen met bewijs.** Een link naar bestand, commit of pagina. Nooit rechtstreeks in de actiebacklog. (2026-10-12, Lars)
@@ -78,20 +81,30 @@ beheer: Stafchef (03_Denzel)
 
 ## Website
 
+### Website hoofdagent
+- **Zet de daadwerkelijk relevante maker-sub-agent in en leg de herkomst eerlijk vast; een onafhankelijke review achteraf vervangt de makerroute niet.** Reden: de early-access concepten waren zelf gemaakt zonder sub-agent, in strijd met [[Agents Website Agent]] r15/36. Bestaande regel toegepast, geen nieuwe autonomie. (2026-11-17, Denzel; bron QA deleg_97bd7504, correctie t_112492e0)
+
 ### SEO Agent
 - **Eerst meten of het meetprobleem opgelost is.** Zie ook Conversie & Analyse. (2026-09-17)
 - **Wijzigingen die alleen via Shopify Admin kunnen (title/meta) zijn geen theme-wijziging.** Schrijf de fix plakklaar uit en zeg wie hem moet doorvoeren. (2026-09-17)
 
 ### Design Agent
+> Voor gepauzeerde early-access/designrichting geldt ook de hervatregel onder [[#Denzel]]: wachten op Lars’ toelichting of expliciete vervolgvraag.
 - **Een feedbeeld wint visueel op een echte foto met één scherp focuspunt en typografie die het idee uitvoert.** Alle visuele winnaars bij voetbal staan op een shootfoto; voetbal 9 (alles bewogen, alleen de voet scherp) is de topper. Een vrijstaande productfoto op een vlak haalt 'prima', geen top. Een vol kleurvlak alleen als echt object (post-it), nooit als decoratie. Zie [[Ads Bouwboek — bewezen elementen]]. (2026-11-16, beoordeling Team HÏ Grip van 22 ads)
 - **Grens op de rol `live`, niet op een thema-nummer.** Draai vóór elke theme-actie `shopify theme list`. Actuele ID's staan alleen in [[Technische Procedures]] (werkthema sinds 12-10-2026: `202398040391`). (2026-09-17, bijgewerkt 2026-10-12)
 - **Lees grote templates niet half.** Inventariseer eerst alle secties voordat je zegt wat er wel of niet op de pagina staat. (2026-09-17)
 - **Toets sportpagina's en homepage aan de beachhead-volgorde** (tennis/padel, voetbal, rugby). Rugby ontbrak in de sport-grid. (2026-09-17)
-- **Een designlat als checklist levert checklist-design op.** Eyebrow + oversized kop + lead per sectie, fotokaart met donker verloop, outline-cijfers en volt-labels zijn samen herkenbaar als AI-template. Begin bij één visueel idee en echte art direction (beeldkeuze, crop, compositie); vink de lat pas achteraf af. (2026-10-14, Lars ★1 op homepage-prototype)
+- **Ontwerprichtlijnen zijn een kader, geen verplicht visueel recept: ontwerp eerst een eigen creatief idee en compositie, toets daarna aan de merkregels.** Reden: herhaalde standaardlook en mechanisch afvinken; een designlat als checklist levert checklist-design op. Eyebrow + oversized kop + lead per sectie, fotokaart met donker verloop, outline-cijfers en volt-labels zijn samen herkenbaar als AI-template. Harde merkregels blijven gelden. (2026-10-14, Lars ★1 op homepage-prototype; aangescherpt 2026-11-17, Denzel op feedback Lars, bron t_0f17b9cb; samengevoegd, zie [[Feedback & Iteratie Log]])
+- **Stapel niet automatisch zware cursieve kapitalen, neonaccenten, diagonalen, harde blokken en veel verkoopelementen; kies schaal, witruimte, beeld en contrast bewust bij het gewenste gevoel.** Reden: Lars ervaart alles als te hard. Dit is geen verbod op losse merkelementen en geen toestemming om harde merkregels te negeren. (2026-11-17, Denzel op feedback Lars; bron t_0f17b9cb)
 - **Geen fotokaart met tekst op een donker verloop als standaardoplossing.** Elk sportbeeld krijgt een eigen crop en compositie, of het beeld vervalt. Eigen foto's van wisselende kwaliteit niet gelijkwaardig naast elkaar zetten. (2026-10-14, Lars ★1 op homepage-prototype)
 - **Bij een rekenformule in een rapport staat de formule met invulling en grondslag (incl. btw-basis) erbij, en elk mechanisme (bv. 1+1, verzending) is gemarkeerd als aanname zolang het niet in Shopify is getest.** Reden: Performance Days had een omgekeerde factor (1-i), een onduidelijke ROAS-btw-basis en een ongetest verzendmechaniek als feit; herkeuring GOED na correctie. (2026-11-05, Denzel; bronnen: kaarten t_e05f6574, t_de11ce50)
 - **Een CTA-knop krijgt nooit de accentkleur.** (2026-11-05, Denzel, via kaart t_a87a674a.) Let op: [[Design Elementen]] (CTA-knop, regel 147) staat nog 'gevuld met accentkleur' toe; tegenstrijdigheid gemeld aan Denzel, niet opgelost.
 - **Ontwerp- en workflowbestanden na elke ronde in de vault zetten, zonder computerpaden, met portabiliteitstest.** Reden: wat alleen op de computer van één persoon staat, is onbruikbaar voor een andere laptop, collega of agent (basisregel 16 in [[user]]). Map: 07_Design_Agent/Ads-Workflow/. (2026-11-16, Lars, via kaart t_a38b1b0d)
+- **Bij e-maildesign eerst assettoegang, binaire-kopieerroute en beeldtoestemming oplossen vóór de full build; foto's blijven in de media-map, niet in de vault.** Reden: anders werden zes schetsen zonder beeld "klaar" genoemd. (2026-11-17, Denzel; bron: kaart t_7b2ca18f, vastgelegd via t_265a3f25)
+- **Presenteer een early-accessmail nooit als oplevering met lege foto-/productvlakken of ontbrekende assets.** Campagne-invulvelden (korting, code, data, links) zijn iets anders dan een onvolledig ontwerp. Reden: Lars keurde v1 af ("niks ingevuld qua afbeelding"). (2026-11-17, Denzel; correctie Lars 17-11; bron t_7b2ca18f, herontwerp t_ca1c07ef)
+- **Bekijk bij concrete visuele voorbeelden eerst alle voorbeelden echt en toets op compositie, beeldritme en typografische schaal; een merkchecklist alleen bewijst geen premium ontwerp.** Reden: v1 haalde de regels maar niet de smaak (zelfde patroon als ★1 op 14-10). (2026-11-17, Denzel; correctie Lars; bron t_ca1c07ef)
+- **Terugkerende feedback "saai/standaard" vraagt nieuwe artdirection, niet dezelfde bloktemplate met andere koppen.** (2026-11-17, Denzel; correctie Lars; bron t_ca1c07ef)
+- **VOORSTEL (nog niet geldend tot Lars akkoord geeft): Design werkt met Design DNA (vast/vrij gescheiden) en de creatieve loop (3 concepten, render echt bekijken, 2 verbeterronden); meetregels en afkeurdrempels zijn vangnet achteraf, geen stuurmiddel.** Reden: correctie Lars 19-11-2026: Design-output is te grijs en veilig; ontwerpen die Lars rechtstreeks met Claude maakt zijn beter. Diagnose Denzel: afkeurregels en meetdrempels stuurden het ontwerp; vast en vrij waren niet gescheiden; de agent keek niet kritisch naar zijn eigen render; er waren geen goede referenties. Versoepelt geen harde merkregel of grens. Concepten: [[Design DNA]], [[Creatieve loop]], [[Regelvoorstel Design DNA]]. (2026-11-19, Denzel-diagnose op correctie Lars; bron t_d4679d0f, voorgaand t_c06bded9)
 
 ### Website Copy Agent
 - **Nooit zelf een cijfer kiezen.** Klantenaantal en ratings moeten overal identiek zijn; twijfel = **[HÏ GRIP]**. (2026-09-17)
@@ -103,6 +116,10 @@ beheer: Stafchef (03_Denzel)
 ### E-mail Marketing Agent
 - **Geen claims als "getest door tennissers" zonder bron.** (2026-09-17)
 - **De platformverdeling ligt vast.** Shopify verstuurt de transactiemails (orderbevestiging, pakket onderweg); SendWILL doet alle automatiseringen, pop-ups, campagnes en nieuwsbrieven. (2026-10-12, Lars)
+- **Controleer de geografische scope van elke verzendclaim naast [[Feiten & Actuele Staat]].** Reden: het buitenlandbedrag verschilt (C1: €4,50 zonder NL-scope, buitenland €5). (2026-11-17, Denzel; bron QA deleg_97bd7504, correctie t_112492e0)
+- **Een gemakbelofte moet overeenkomen met de echte aanmeldstappen; ook een aanmeldmail maakt het voordeel expliciet.** Reden: A2 beloofde één stap terwijl er drie genoemd werden. (2026-11-17, Denzel; bron QA deleg_97bd7504, correctie t_112492e0)
+- **Een kortingscodemail maakt voordeel en code/koopactie direct herkenbaar.** Reden: C2, het voordeel was verstopt. (2026-11-17, Denzel; bron QA deleg_97bd7504, correctie t_112492e0)
+- **Mailcopy mag niet als AI-tekst klinken: schrijf zoals een sporter praat, concreet en met eigen beeld, geen lege slogans of sjabloonzinnen.** Reden: Lars op de codemail Performance Days: "echt slechte AI-tekst", terwijl hij de donkere variant van het ontwerp de beste tot nu toe vond. Copy-GOED op regels is geen goede tekst. (2026-11-19, Lars, via Denzel)
 
 ## Content
 

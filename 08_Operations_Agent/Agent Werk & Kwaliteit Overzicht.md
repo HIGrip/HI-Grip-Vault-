@@ -200,7 +200,44 @@ bijgewerkt: 2026-11-09
 | Design-QA D1–D12 (sectie 5 [[Agents Design Agent]]) geldend; toetser onafhankelijk profiel; ads: R1–R16 en Leerregels-Ads-Design; D5 echte review letterlijk | 2026-11-16 | ✅ OK (besluit Lars) | Geen voorstel meer en niets te beslissen voor Lars. De opmerking "nog voorstel" in twee dashboardnotities van 09-11 is bijgewerkt. |
 | Leerregel: bij grenswijziging alle kopieën zoeken en gelijktijdig aanpassen | 2026-11-16 | ✅ OK | Zie [[Leerregels per Agent]], Voor alle agents. |
 
+### Registratie 17-11-2026 — briefing zes early-access e-mailconcepten
+
+| Actie | Datum | Status | Toelichting |
+|---|---|---|---|
+| Briefing vastgelegd door Stafchef (kaart t_c63a1759): 3 aanmeld- en 3 codemails, B2C, alleen concept. Website Agent: copy en kooppsychologie; Design Agent: ontwerp | 2026-11-17 | ⏳ Overdracht aan Denzel (routering) | Pad: `02_Dashboard/2026-11-17-briefing-early-access-emails.md`. Open invulvelden: korting, code, geldigheid, datums, aanmeldlink, aanbodvoorwaarden, merge-tags (SendWILL-syntax onbevestigd), afmeldlink. Preflight marketingtoestemming vastgelegd, niet getoetst. Onafhankelijke Website-QA en Design-QA nog niet gedaan; geen goedkeuringsclaim. TikTok-referenties van Lars: bron niet te openen, niet geanalyseerd, alleen links geregistreerd; wacht op screenshots of transcript van Lars. `build_register --check` niet gedraaid (geen terminal in deze taak). Geen vervolgkaarten aangemaakt. |
+
+| Onafhankelijke Website-QA (deleg_97bd7504) op de early-access e-mailconcepten: **CORRIGEER copy, ESCALEER proces**. C1: verzendbelofte €4,50 zonder NL-scope (Feiten: buitenland €5). A2: ongeonderbouwd "Eén stap" terwijl drie stappen genoemd zijn en geen expliciet voordeel. C2: voordeel en actie onvoldoende zichtbaar. Proces: Website verklaart de concepten zelf, zonder sub-agent, gemaakt te hebben (strijd met [[Agents Website Agent]] r15/36) | 2026-11-17 | 🔁 Teruggestuurd (correctieronde 1 Website, kaart t_112492e0) | Denzel toetste de bevindingen aan teruggelezen bronnen en laat herstellen; geen stil herstel. Geen GOED, niets afgevinkt (bewijs van herstel ontbreekt). Design-QA (t_7b2ca18f) loopt nog. Bronstatus TikTok blijft: niet geanalyseerd. Bronkaarten: briefing t_c63a1759, Website t_fab06fb6. Alleen administratief vastgelegd; geen inhoudelijk oordeel door Stafchef. |
+
+### Statusupdate 17-11-2026 — early-access: copy goedgekeurd, geheel NIET klaar
+
+| Actie | Datum | Status | Toelichting |
+|---|---|---|---|
+| **COPY-herkeuring** door onafhankelijke verse child (herkeuring deleg_0330414e; eerste QA deleg_97bd7504): **GOED, uitsluitend COPY**, geen belangrijke restpunten. C1 verzendregel geschrapt; A2 voordeel en aanmeldproces eerlijk; C2 korting en koopactie duidelijk. Makers: t_fab06fb6, correctie t_112492e0 | 2026-11-17 | ✅ Copy GOED (alleen tekst; opgave Denzel, rapport niet zelf gelezen door Stafchef) | Bron: `06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md`. Geen goedkeuring van beeld, design of verzending; `[INVUL]`-velden blijven bij Team HÏ Grip. Niets afgevinkt. |
+| **Design (t_7b2ca18f): BLOCKED needs_input.** Beeldkeuze Team HÏ Grip: A1/IMG_1975 (Adidas zichtbaar, sokmerk onduidelijk), C1/IMG_1479 (New Balance zichtbaar). Galerij `index.html` + 6 HTML (a1–a3, c1–c3) bestaan, beeld niet af | 2026-11-17 | ⛔ Geblokkeerd, geen Design-QA | Pad: `07_Design_Agent/Ontwerpbestanden/Early-access-2026-11-17/`. Denzel opende de galerij in een echte browser: oude v1-status en ontbrekende beelden; eindrendercheck nog niet gedaan. Fonts (6) en wit embleem (1) = 7 bestanden lokaal naar de vault gekopieerd, SHA256 bron = doel (opgave Denzel; niet door Stafchef nagerekend). Foto's niet gekopieerd (basisregel 16). |
+| **Totaalstatus early-access** | 2026-11-17 | ⏳ NIET klaar | Copy goedgekeurd ≠ pakket klaar. Open: beeldbesluit Team HÏ Grip, beeldroute via media-map, Design-QA, eindrendercheck, invulvelden. Geen "af", niets afgevinkt. |
+| Assets-manifest: alleen het computerpad vervangen door `<HiGripMedia>/Content - HÏ Grip/`; nav-regel `> Map: [[07 Design Agent — Index]]` toegevoegd | 2026-11-17 | ✅ OK (administratief) | Inhoud niet gewijzigd. Achterhaald, aan Design/Website om bij te werken: manifest-status "kopieën nog NIET gemaakt" (fonts/embleem zijn er nu) en frontmatter-status zes-concepten ("wacht op herkeuring"). |
+| Leerregel (Denzel): e-maildesign, eerst assettoegang/kopieerroute en beeldtoestemming | 2026-11-17 | ✅ OK (vastgelegd) | Zie [[Leerregels per Agent]], Design Agent. |
+
+### Registratie 17-11-2026 — correctie Lars op early-access design (v1 afgekeurd)
+
+| Actie | Datum | Status | Toelichting |
+|---|---|---|---|
+| **Correctie Lars:** design "slaat nergens op", beelden niet ingevuld, "lelijke saaie oude standaardstijl" waar hij eerder op wees. Eerste design (t_7b2ca18f) | 2026-11-17 | ❌ Afgekeurd / onvolledig, geen GOED | Copy-GOED (zie hierboven) blijft uitsluitend copy. Herhaling van ★1-feedback 14-10 (homepage-prototype, "AI slop"): patroon, gesignaleerd aan Denzel/Lars; geen nieuw model- of toolvoorstel. Door Lars aangeleverd: 3 visuele voorbeelden uit zijn Downloads, door Denzel alle drie bekeken; hier niet opgeslagen of gekopieerd. |
+| Herstel: Design t_ca1c07ef (herontwerp beeldgedreven, 6 mails); Website t_11a81cd8 (opbouw/kooppsychologie afstemmen) | 2026-11-17 | ⏳ Lopend | Geen afvinking. Totaalstatus early-access blijft NIET klaar. Design-QA door verse reviewer volgt; eigen check Design is geen GOED. Alleen administratief vastgelegd. |
+
 ---
+
+### Statusupdate 17-11-2026 — beide ads afgekeurd; designrichting gepauzeerd
+
+| Agent / werk | Datum | Status | Reden en bron |
+|---|---|---|---|
+| Design: voetbal-ad ‘Elke afzet telt’ (t_f54a642b) | 2026-11-17 | ❌ Afgekeurd; NIET klaar/publicatiegeschikt | Beoordelaar Lars: ‘echt veel te lelijk en te standaard’, ‘alles voelt zo hard’; verwacht creativiteit binnen richtlijnen. Bron: opdracht t_0f17b9cb. Geen sterren gegeven. |
+| Design: productad ‘Grip waar het telt’ (t_82471cd6) | 2026-11-17 | ❌ Afgekeurd; NIET klaar/publicatiegeschikt | Zelfde feedback Lars en bron t_0f17b9cb; geen eigen ontwerpoordeel Operations, geen sterren gegeven. |
+| Denzel: terugkerende ontwerpaanpak en kwaliteitsclaims | 2026-11-17 | Patroon gemeld; geen nieuwe ontwerpopdracht | Herhaalde smaakafkeuring bij ads én early-access. Correcte merktoepassing of technische rendering bewijst geen goed creatief ontwerp. Vier aangeleverde leerregels geregistreerd in [[Leerregels per Agent]]; achtergrond in [[Feedback & Iteratie Log]]. Bron: t_0f17b9cb, Lars’ feedback en Denzels leerregels; geen sterren. |
+| Design en Denzel: early-access / designrichting | 2026-11-17 | ⏸ Gepauzeerd; ontwerpen afgekeurd, NIET klaar | Lars komt zelf terug met richting. Hervatten pas na zijn aangekondigde toelichting of expliciete vervolgvraag. Geen nieuw ontwerp of ongevraagde correctieronde. Dit actualiseert de eerdere registratie ‘herstel lopend’ hierboven; historische rij behouden. Copy-GOED blijft uitsluitend copy. Bron: t_0f17b9cb. |
+| Website (E-mail Marketing + Design): early-access-codemail Performance Days | 2026-11-19 | ⏳ Wacht op Lars; voorstel, NIET verstuurd | Opdracht Lars (/goal, zelfstandig). Brief+copy E-mail Marketing, ontwerp+HTML Design, 8 rondes met steeds een nieuwe onafhankelijke reviewer. Laatste review (r8): eigenheid, typografie, focus, mobiel, leerregels 8; niveau 7 en art-direction 6 door slotbeeld. Na r8 slotretouche teruggedraaid (defect). Map: Downloads\HI-Grip-codemail-performance-days, VOORSTEL.md. |
+
+Administratieve vastlegging door Operations; geen andere kanbankaarten of ontwerpen aangepast, geen nieuwe kaart, niets afgevinkt.
 
 ## Gerelateerde bestanden
 

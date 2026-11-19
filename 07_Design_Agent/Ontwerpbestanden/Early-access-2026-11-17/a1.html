@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>A1 · Chevron-doorgang</title>
+<!-- COPY-BRON: Website-werkversie v1 (06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md). Copy-QA: A1 niet genoemd in CORRIGEER, maar niet finaal vóór herstelde bron (t_112492e0). Design heeft niets herschreven.
+     ONDERWERP: [INVUL: voornaam], jij koos al voor grip -->
+  
+<!-- FONT: Poppins staat NIET lokaal in deze map. Clients zonder Poppins vallen terug op Helvetica Neue / Arial (zwaarte 900 wordt daar bold 700).
+     Optie voor productie (Website/techniek beslist, werkt in Apple Mail/iOS, niet in Gmail/Outlook):
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet"> -->
+<style>
+  /* Preview-fonts: Poppins uit assets/fonts/ (kopie uit de mediabibliotheek, zie assets-manifest.md). Ontbreekt de map, dan Helvetica Neue / Arial. In echte e-mailclients werken lokale fonts niet. */
+  @font-face{font-family:'Poppins';font-style:italic;font-weight:900;src:url(assets/fonts/Poppins-BlackItalic.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(assets/fonts/Poppins-Regular.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:600;src:url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:700;src:url(assets/fonts/Poppins-Bold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:900;src:url(assets/fonts/Poppins-Black.ttf) format('truetype');}
+  body{margin:0;padding:0;background:#050505;}
+  .f{font-family:'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;}
+  /* Gmail dark-mode hooks: ALTIJD als één regel */
+  .keep-dark, [data-ogsc] .keep-dark, [data-ogsb] .keep-dark{background-color:#0A0A0A !important;color:#FFFFFF !important;}
+  .h1{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.95;margin:0;}
+  .body{font-weight:400;letter-spacing:-0.02em;line-height:1.55;margin:0;}
+  .inv{outline:1px dashed rgba(255,255,255,.45);outline-offset:4px;}
+  .cta{display:inline-block;background:#FFFFFF;color:#0A0A0A !important;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;letter-spacing:-0.01em;text-decoration:none;line-height:1;}
+  .chev{display:inline-block;margin-left:14px;font-size:24px;line-height:0.7;font-weight:700;vertical-align:-2px;}
+  .ph{background-color:#141414;background-image:radial-gradient(circle,rgba(255,255,255,.10) 1px,transparent 1.4px);background-size:14px 14px;}
+  .phl{font:600 11px/1.4 'Poppins',Arial,sans-serif;letter-spacing:.08em;color:#909194;padding:20px 28px;text-transform:uppercase;}
+  @media (max-width:480px){
+    .h1{font-size:40px !important;}
+    .pad{padding-left:24px !important;padding-right:24px !important;}
+    .hero-ph{height:300px !important;}
+  }
+</style>
+</head>
+<body class="f" style="margin:0;background:#050505;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Meld je aan voor early access bij HÏ Grip.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050505"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="keep-dark" style="width:100%;max-width:600px;background:#0A0A0A;color:#FFFFFF;">
+
+  <!-- COMPONENT: wordmark (productie: logo-PNG wit op zwart, min. 24 px hoog, vrije ruimte = hoogte piek) -->
+  <tr><td class="pad f" style="padding:22px 32px;font-weight:900;font-size:18px;letter-spacing:-0.04em;color:#FFFFFF;">HÏ GRIP</td></tr>
+
+  <!-- SKELET A1: foto (één focuspunt, géén tekst op de foto) → chevron-trio met snelheidslijn → kop → tekst → CTA -->
+  <!-- COMPONENT: photo-slot -->
+  <tr><td class="ph hero-ph" height="420" valign="bottom"
+      style="height:420px;background-image:url(assets/a1-hero.jpg),radial-gradient(circle,rgba(255,255,255,.10) 1px,transparent 1.4px);background-size:cover,14px 14px;background-position:center,0 0;background-repeat:no-repeat,repeat;">
+    <div class="phl">[INVUL: actiefoto, één focuspunt, eigen crop (Foto-index/HiGripMedia Sporten) · verwijder dit label bij plaatsing]</div>
+  </td></tr>
+
+  <!-- COMPONENT: chevron-trio (het ene accent-element van deze mail; één accentkleur: Volt, alleen lijn, geen vlak) -->
+  <!-- PRODUCTIE: inline SVG wordt door Gmail/Outlook gestript → exporteer als PNG (assets/chevron-trio-volt.png) -->
+  <tr><td class="pad" style="padding:30px 32px 0 32px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td width="104" valign="middle" style="width:104px;">
+        <svg width="96" height="40" viewBox="0 0 96 56" role="img" aria-label="" style="display:block"><path d="M6 4 L30 28 L6 52 M38 4 L62 28 L38 52 M70 4 L94 28 L70 52" fill="none" stroke="#CCFF00" stroke-width="6" stroke-linejoin="miter"/></svg>
+      </td>
+      <td valign="middle"><div style="height:1px;line-height:1px;font-size:1px;background:#3a3a3a;">&nbsp;</div></td>
+    </tr></table>
+  </td></tr>
+
+  <tr><td class="pad" style="padding:26px 32px 0 32px;">
+    <h1 class="h1 f" style="font-size:52px;color:#FFFFFF;">Jij koos al voor grip.</h1>
+  </td></tr>
+  <tr><td class="pad" style="padding:22px 32px 0 32px;">
+    <p class="body f" style="font-size:16px;color:#D6D6D8;">Hoi <span class="inv">[INVUL: voornaam]</span>,<br><br>Je koos HÏ Grip al. Daarom nodigen we jou uit voor early access.<br><br><span class="inv">[INVUL: wat early access inhoudt, één zin]</span></p>
+  </td></tr>
+
+  <!-- COMPONENT: cta-pill-white (nooit accentkleur; chevron in tekst, productie: PNG-chevron of ›) -->
+  <tr><td class="pad" style="padding:32px 32px 0 32px;">
+    <a href="#" class="cta f" title="[INVUL: aanmeldlink]" style="display:inline-block;background:#FFFFFF;color:#0A0A0A;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;">Meld je aan<span class="chev">&#8250;</span></a>
+  </td></tr>
+  <tr><td class="pad f" style="padding:16px 32px 8px 32px;font-size:13px;color:#909194;line-height:1.5;"><span class="inv">[INVUL: early-access-datum of moment]</span></td></tr>
+
+  <!-- COMPONENT: footer -->
+  <tr><td class="pad f" style="padding:48px 32px 36px 32px;font-size:12px;line-height:1.6;color:#909194;">
+    <span class="inv">[INVUL: afzender]</span> · <span class="inv">[INVUL: bedrijfsgegevens]</span><br>
+    <a href="#" style="color:#909194;text-decoration:underline;" title="[INVUL: afmeldlink]">[INVUL: afmeldlink]</a>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>

@@ -16,10 +16,12 @@ Dit is het verschil met de losse `/shopify-seo`, `/shopify-design`, `/shopify-co
 | subagent_type | Specialisme | Wanneer inschakelen |
 |---|---|---|
 | `seo-agent` | Keyword-strategie, meta title/description, structured data | Nieuwe pagina/product, of bestaande content scoort niet goed |
-| `design-agent` | Secties/theme-blocks/kleuren/spacing in het Shopify-testtheme | Een pagina/sectie moet gebouwd of aangepast worden |
+| `design-agent` | Secties/theme-blocks/kleuren/spacing in het Shopify-testtheme, én het ontwerp en de HTML van e-mails | Een pagina/sectie moet gebouwd of aangepast worden, of een mail moet ontworpen worden |
 | `website-copy-agent` | Homepage-/productpagina-copy | Nieuwe of aan te passen pagina die tekst nodig heeft |
 | `conversie-analyse-agent` | KPI's/analytics lezen, CRO-signalering | Wekelijkse monitoring, of een pagina/funnel onderpresteert |
 | `email-marketing-agent` | E-mailflows en nieuwsbrieven | Nieuwe blogpost, reguliere nieuwsbrief-cadans, of nieuwe/aangepaste flow |
+
+**Een mail maken = altijd `email-marketing-agent` (brief + copy) én daarna `design-agent` (ontwerp + HTML).** Geef beide in de briefing mee: lees eerst `07_Design_Agent/Email-Workflow/` (README, Leerregels-Email-Design, WORKFLOW-Email). Dat is de kwaliteitslat: het niveau van de goedgekeurde Performance Days-mails, maar met een eigen concept en opbouw, max 5 secties, desktop- en mobiel-screenshot naast de referenties vóór oplevering. Sequentieel: Design wacht op de brief.
 
 ## Proces
 

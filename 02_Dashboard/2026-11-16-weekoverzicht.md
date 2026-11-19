@@ -32,6 +32,12 @@ Na twee nul-omzetweken op rij meldt Shopify deze week (9-15 nov) weer **3 bestel
 
 Geen nieuwe besluiten deze week: de openstaande punten (EK rugby, B2B-outreach, homepage-herontwerp, blog-SEO-stappenplan, voordelenpagina-identiteit, Meta-campagnestatus) stonden al als besluit open — zie Openstaande beslissingen voor Lars. Het regressie- en SEO-werk van 9 november (blog-404, homepage-alt-teksten, NL-homepage-positieval) staat al in de backlog.
 
+Design-verbetering (correctie Lars 19-11, bron kaart t_d4679d0f; concepten [[Design DNA]], [[Creatieve loop]], [[Regelvoorstel Design DNA]]):
+
+- [ ] P1 · Lars vult map Inspiratie - HÏ Grip > Design voorbeelden (Ads/Social/E-mail/Website + Niet goed)
+- [ ] P1 · Lars kiest proefkanaal voor de Design-proefopdracht
+- [ ] P1 · Besluit: Lars keurt Design DNA en regelwijzigingen goed
+
 ## Bevindingen
 
 ### Voortgang per hoofdagent

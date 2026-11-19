@@ -10,6 +10,8 @@ bijgewerkt: 2026-10-01
 >
 > **[LARS]** De productie-HTML van die 5 ontwerpen zelf stond alleen in een tijdelijke scratchpad en is niet bewaard in de vault — alleen het artifact-overzicht is er nog. Voor een nieuwe e-mail moet het artifact (of de export daarvan) eerst opnieuw geraadpleegd/opgehaald worden als stijlbron; onderstaande punten zijn de losse ontwerpregels die daarbij wél al vastliggen.
 
+> **Leidend sinds 17-11-2026:** het premium niveau en de werkwijze staan in `07_Design_Agent/Email-Workflow/` ([[WORKFLOW-Email]], [[Leerregels-Email-Design]]). Waar deze gids daarmee botst (zoals Volt-gevulde knoppen of tekstblokken met losse foto's), gaat de Email-Workflow voor.
+
 ---
 
 ## Visueel systeem (uit de iteratieronde van 2026-08-25, definitief bevestigd)

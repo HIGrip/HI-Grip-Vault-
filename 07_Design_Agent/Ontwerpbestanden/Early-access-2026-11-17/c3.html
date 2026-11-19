@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>C3 · Schuine snede</title>
+<!-- COPY-BRON: Website-werkversie v1 (06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md). Copy-QA: C3 niet genoemd in CORRIGEER, maar niet finaal vóór herstelde bron (t_112492e0). Niet door Design herschreven.
+     ONDERWERP: De keuze van 3500+ sporters. Nu met jouw code.
+     FONT: Poppins niet meegeleverd; fallback Helvetica Neue / Arial. Webfont-optie: zie a1.html. -->
+<style>
+  /* Preview-fonts: Poppins uit assets/fonts/ (kopie uit de mediabibliotheek, zie assets-manifest.md). Ontbreekt de map, dan Helvetica Neue / Arial. In echte e-mailclients werken lokale fonts niet. */
+  @font-face{font-family:'Poppins';font-style:italic;font-weight:900;src:url(assets/fonts/Poppins-BlackItalic.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(assets/fonts/Poppins-Regular.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:600;src:url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:700;src:url(assets/fonts/Poppins-Bold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:900;src:url(assets/fonts/Poppins-Black.ttf) format('truetype');}
+  body{margin:0;padding:0;background:#050505;}
+  .f{font-family:'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;}
+  .keep-dark, [data-ogsc] .keep-dark, [data-ogsb] .keep-dark{background-color:#0A0A0A !important;color:#FFFFFF !important;}
+  .h1{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.95;margin:0;}
+  .body{font-weight:400;letter-spacing:-0.02em;line-height:1.55;margin:0;}
+  .inv{outline:1px dashed rgba(255,255,255,.45);outline-offset:4px;}
+  .inv-l{outline:1px dashed rgba(10,10,10,.45);outline-offset:4px;}
+  .cta-b{display:inline-block;background:#0A0A0A;color:#FFFFFF !important;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;line-height:1;}
+  .chev{display:inline-block;margin-left:14px;font-size:24px;line-height:0.7;font-weight:700;vertical-align:-2px;}
+  @media (max-width:480px){
+    .h1{font-size:40px !important;}
+    .pad{padding-left:24px !important;padding-right:24px !important;}
+    .col{display:block !important;width:100% !important;padding:0 0 24px 0 !important;}
+    .code{font-size:28px !important;}
+    .seam{height:44px !important;}
+  }
+</style>
+</head>
+<body class="f" style="margin:0;background:#050505;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Je early-access-code: [INVUL: kortingscode]</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050505"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;">
+
+  <!-- SKELET C3: donker bovenvlak → schuine snede → wit ondervlak met code. Eén sterk idee: licht/donker gescheiden door een scherpe diagonaal (snelheid, richting). Hier de zwarte pill-variant (zwart op wit). -->
+  <tr><td class="keep-dark" bgcolor="#0A0A0A" style="background:#0A0A0A;color:#FFFFFF;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr><td class="pad f" style="padding:22px 32px;font-weight:900;font-size:18px;letter-spacing:-0.04em;color:#FFFFFF;">HÏ GRIP</td></tr>
+      <tr><td class="pad" style="padding:40px 32px 24px 32px;">
+        <h1 class="h1 f" style="font-size:52px;color:#FFFFFF;">De keuze van 3500+ sporters.</h1>
+      </td></tr>
+      <tr><td class="pad" style="padding:0 32px 36px 32px;">
+        <p class="body f" style="font-size:16px;color:#C9C9CB;">Hoi <span class="inv">[INVUL: voornaam]</span>,<br><br>Sporters kiezen voor grip. Beoordeeld met 4,6 op Trustpilot. <span class="inv">[BEVESTIG V4: actuele score vóór verzending, met bron]</span></p>
+      </td></tr>
+    </table>
+  </td></tr>
+
+  <!-- COMPONENT: diagonal-seam · CSS-gradient werkt in Apple Mail/iOS en deels Gmail; fallback = rechte horizontale rand (bgcolor). PRODUCTIE-optie: PNG-strook 1200×112 -->
+  <tr><td class="seam" height="64" bgcolor="#0A0A0A" style="height:64px;font-size:1px;line-height:1px;background-color:#0A0A0A;background-image:linear-gradient(to bottom right,#0A0A0A 49.5%,#FFFFFF 50.5%);">&nbsp;</td></tr>
+
+  <!-- wit onderdeel: code + product -->
+  <tr><td bgcolor="#FFFFFF" style="background:#FFFFFF;color:#0A0A0A;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr><td class="pad" style="padding:8px 32px 0 32px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td class="col" width="220" valign="middle" style="padding-right:24px;">
+            <!-- COMPONENT: photo-slot licht (productfoto op lichte achtergrond past hier zonder bewerking) -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td align="center" valign="middle" height="220" bgcolor="#EDEDED" style="height:220px;background-color:#EDEDED;background-image:url(assets/c3-product.jpg);background-size:contain;background-position:center;background-repeat:no-repeat;">
+                <div style="font:600 11px/1.4 'Poppins',Arial,sans-serif;letter-spacing:.08em;color:#6b6b6e;text-transform:uppercase;padding:14px;">[INVUL: echt productbeeld Performance Gripsokken 2.0, ongewijzigd · label verwijderen bij plaatsing]</div>
+              </td></tr></table>
+          </td>
+          <td class="col" valign="middle">
+            <!-- COMPONENT: codebox-zwart (op wit: zwart vlak, witte code, scherpe hoeken) -->
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td bgcolor="#0A0A0A" style="background:#0A0A0A;padding:22px 20px;">
+                <div class="code f" style="font-weight:900;font-size:30px;letter-spacing:0.08em;color:#FFFFFF;line-height:1.1;"><span class="inv">[INVUL: kortingscode]</span></div>
+                <div class="f" style="font-size:12px;color:#909194;margin-top:12px;line-height:1.5;"><span class="inv">[INVUL: kortingshoogte]</span><br>Geldig: <span class="inv">[INVUL: periode of einddatum, alleen als vastgesteld]</span><br>Voorwaarden: <span class="inv">[INVUL: aanbodvoorwaarden]</span></div>
+              </td></tr></table>
+          </td>
+        </tr></table>
+      </td></tr>
+
+      <tr><td class="pad" style="padding:34px 32px 8px 32px;">
+        <a href="#" class="cta-b f" title="[INVUL: link naar early access]" style="display:inline-block;background:#0A0A0A;color:#FFFFFF;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;">Gebruik je code<span class="chev">&#8250;</span></a>
+      </td></tr>
+
+      <tr><td class="pad f" style="padding:44px 32px 36px 32px;font-size:12px;line-height:1.6;color:#4a4a4d;">
+        <span class="inv-l">[INVUL: afzender en bedrijfsgegevens]</span><br>
+        <a href="#" style="color:#4a4a4d;text-decoration:underline;" title="[INVUL: afmeldlink]">[INVUL: afmeldlink]</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>

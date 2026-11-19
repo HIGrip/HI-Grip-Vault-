@@ -1,12 +1,24 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-11-16
+bijgewerkt: 2026-11-17
 ---
 
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.
+
+---
+
+## 2026-11-17 — Design en Denzel: herhaalde smaakafkeuring; designrichting gepauzeerd
+
+**Bron:** opdracht t_0f17b9cb, correctie Lars van 17-11-2026; leerregels aangereikt door Denzel. **Feedback:** voetbal-ad ‘Elke afzet telt’ (t_f54a642b) en productad ‘Grip waar het telt’ (t_82471cd6) zijn afgekeurd: ‘echt veel te lelijk en te standaard’, ‘alles voelt zo hard’. Lars verwacht creativiteit binnen de richtlijnen, geen mechanisch visueel recept. **Agents:** Design (ontwerpaanpak) en Denzel (kwaliteitsclaims en opvolging). **Sterren:** niet gegeven; geen cijfer geregistreerd.
+
+**Status:** beide ads NIET klaar/publicatiegeschikt. Eerdere early-accessontwerpen eveneens afgekeurd en gepauzeerd; Lars komt zelf terug met richting. De eerdere registratie ‘herstel lopend’ is historisch, geen opdracht om nu door te gaan. Geen nieuwe ontwerpen of ongevraagde correctieronde; hervatten pas na Lars’ toelichting of expliciete vervolgvraag.
+
+**Leerregels:** vier door Denzel bepaalde punten vastgelegd in [[Leerregels per Agent]]: creatief idee vóór merktoets; geen automatische stapeling van harde verkoopelementen; merktoepassing/rendering is geen bewijs van creatieve kwaliteit; pauze respecteren. Eerste punt samengevoegd met de bestaande Design-regel ‘Een designlat als checklist levert checklist-design op’ van 14-10; oorspronkelijke aanleiding behouden. Pauzeregel staat bij Denzel en geldt tevens voor Design. Geen verbod op losse merkelementen, geen versoepeling van harde merkregels.
+
+**Controle/grenzen:** Operations registreert de aangeleverde feedback, geen eigen inhoudelijk ontwerpoordeel of nieuwe QA. Historische kwaliteitslogrijen behouden; geen basisrichtlijnen, Brand Core, autonomie, tools of modellen gewijzigd; niets verwijderd, afgevinkt of gepubliceerd. Zie [[Agent Werk & Kwaliteit Overzicht]], statusupdate 17-11-2026 over beide ads en de designpauze.
 
 ---
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>C2 · Gestempeld document</title>
+<!-- COPY-BRON: Website na correctieronde 1 (06_Website_Agent/E-mail Marketing/2026-11-17-early-access-zes-concepten.md; copyherkeuring GOED uitsluitend op copy; Design/clients/links niet goedgekeurd). Design heeft niets herschreven.
+     ONDERWERP: Aangemeld: [INVUL: kortingshoogte] met je early-access-code
+     PREHEADER: Bedankt, [INVUL: voornaam]. Je code [INVUL: kortingscode] staat klaar.
+     FONT: Poppins niet meegeleverd; fallback Helvetica Neue / Arial. Webfont-optie: zie a1.html. -->
+<style>
+  /* Preview-fonts: Poppins uit assets/fonts/ (kopie uit de mediabibliotheek, zie assets-manifest.md). Ontbreekt de map, dan Helvetica Neue / Arial. In echte e-mailclients werken lokale fonts niet. */
+  @font-face{font-family:'Poppins';font-style:italic;font-weight:900;src:url(assets/fonts/Poppins-BlackItalic.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(assets/fonts/Poppins-Regular.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:600;src:url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:700;src:url(assets/fonts/Poppins-Bold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:900;src:url(assets/fonts/Poppins-Black.ttf) format('truetype');}
+  body{margin:0;padding:0;background:#050505;}
+  .f{font-family:'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;}
+  .keep-dark, [data-ogsc] .keep-dark, [data-ogsb] .keep-dark{background-color:#0A0A0A !important;color:#FFFFFF !important;}
+  .h1{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.95;margin:0;}
+  .body{font-weight:400;letter-spacing:-0.02em;line-height:1.55;margin:0;}
+  .inv{outline:1px dashed rgba(255,255,255,.45);outline-offset:4px;}
+  .cta{display:inline-block;background:#FFFFFF;color:#0A0A0A !important;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;line-height:1;}
+  .chev{display:inline-block;margin-left:14px;font-size:24px;line-height:0.7;font-weight:700;vertical-align:-2px;}
+  @media (max-width:480px){
+    .h1{font-size:40px !important;}
+    .pad{padding-left:24px !important;padding-right:24px !important;}
+    .code{font-size:28px !important;letter-spacing:0.08em !important;}
+  }
+</style>
+</head>
+<body class="f" style="margin:0;background:#050505;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Bedankt, [INVUL: voornaam]. Je code [INVUL: kortingscode] staat klaar.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050505"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="keep-dark" style="width:100%;max-width:600px;background:#0A0A0A;color:#FFFFFF;">
+
+  <!-- SKELET C2 (conform stijlgids herinnering-mail): volledig donker, foto-vrij, bewust typografisch. Eén sterk idee: de code als gestempeld document met scherpe (niet afgeronde) rand.
+       Grip-dot micro-textuur (±5% opacity, 15 px tegel) is het ene rasterelement. Géén groot cijfer dat op een klok lijkt: het grote moment is de code, geen tijd. -->
+  <tr><td bgcolor="#0A0A0A" style="background-color:#0A0A0A;background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1.3px);background-size:15px 15px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+      <!-- COMPONENT: logo-muntje (klein wit rond badge voor leesbaarheid op zwart). Productie: logo-PNG zwart op wit in cirkel -->
+      <tr><td class="pad" align="left" style="padding:30px 32px 0 32px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td width="44" height="44" align="center" valign="middle" bgcolor="#FFFFFF" style="width:44px;height:44px;background:#FFFFFF;border-radius:22px;font-family:'Poppins','Helvetica Neue',Arial,sans-serif;font-weight:900;font-size:13px;letter-spacing:-0.04em;color:#0A0A0A;">HÏ</td>
+        </tr></table>
+      </td></tr>
+
+      <tr><td class="pad" style="padding:56px 32px 0 32px;">
+        <h1 class="h1 f" style="font-size:52px;color:#FFFFFF;">Bedankt. Jouw voordeel: <span class="inv" style="outline-color:rgba(255,255,255,.45);">[INVUL: kortingshoogte]</span>.</h1>
+      </td></tr>
+      <tr><td class="pad" style="padding:22px 32px 0 32px;">
+        <p class="body f" style="font-size:16px;color:#D6D6D8;">Hoi <span class="inv">[INVUL: voornaam]</span>,<br><br>Je zei ja tegen early access. Wij leggen de basis, jij presteert.<br><br>Jouw voordeel: <span class="inv">[INVUL: kortingshoogte]</span> met code <span class="inv">[INVUL: kortingscode]</span><br><br>Dit staat verder voor je klaar: <span class="inv">[INVUL: wat early access inhoudt, datum of moment]</span></p>
+      </td></tr>
+
+      <!-- COMPONENT: codebox (scherpe hoeken, 2 px witte rand, perforatiegaten links/rechts; code als tekst, selecteerbaar/kopieerbaar) -->
+      <tr><td class="pad" style="padding:44px 32px 0 32px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:2px solid #FFFFFF;border-collapse:separate;">
+          <tr>
+            <td width="22" style="width:22px;background:#0A0A0A;"></td>
+            <td align="center" style="padding:30px 8px 26px 8px;border-left:2px dotted #5a5a5c;border-right:2px dotted #5a5a5c;">
+              <div class="code f inv" style="font-weight:900;font-size:40px;letter-spacing:0.12em;color:#FFFFFF;line-height:1.1;">[INVUL: kortingscode]</div>
+              <div class="f inv" style="font-size:13px;color:#909194;margin-top:14px;line-height:1.5;">[INVUL: kortingshoogte]<br>Geldig: [INVUL: periode of einddatum, alleen als vastgesteld]<br>Voorwaarden: [INVUL: aanbodvoorwaarden]</div>
+            </td>
+            <td width="22" style="width:22px;background:#0A0A0A;"></td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <tr><td class="pad" style="padding:36px 32px 8px 32px;">
+        <a href="#" class="cta f" title="[INVUL: link naar early access]" style="display:inline-block;background:#FFFFFF;color:#0A0A0A;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;">Koop met early access<span class="chev">&#8250;</span></a>
+      </td></tr>
+
+      <tr><td class="pad f" style="padding:64px 32px 36px 32px;font-size:12px;line-height:1.6;color:#909194;">
+        <span class="inv">[INVUL: afzender en bedrijfsgegevens]</span><br>
+        <a href="#" style="color:#909194;text-decoration:underline;" title="[INVUL: afmeldlink]">[INVUL: afmeldlink]</a>
+      </td></tr>
+    </table>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>

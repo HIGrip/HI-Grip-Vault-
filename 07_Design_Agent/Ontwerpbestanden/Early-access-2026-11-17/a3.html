@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>A3 · Podium</title>
+<style>
+  /* Preview-fonts: Poppins uit assets/fonts/ (kopie uit de mediabibliotheek, zie assets-manifest.md). Ontbreekt de map, dan Helvetica Neue / Arial. In echte e-mailclients werken lokale fonts niet. */
+  @font-face{font-family:'Poppins';font-style:italic;font-weight:900;src:url(assets/fonts/Poppins-BlackItalic.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:400;src:url(assets/fonts/Poppins-Regular.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:600;src:url(assets/fonts/Poppins-SemiBold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:700;src:url(assets/fonts/Poppins-Bold.ttf) format('truetype');}
+  @font-face{font-family:'Poppins';font-style:normal;font-weight:900;src:url(assets/fonts/Poppins-Black.ttf) format('truetype');}
+  body{margin:0;padding:0;background:#050505;}
+  .f{font-family:'Poppins','Helvetica Neue',Helvetica,Arial,sans-serif;}
+  .keep-dark, [data-ogsc] .keep-dark, [data-ogsb] .keep-dark{background-color:#0A0A0A !important;color:#FFFFFF !important;}
+  .h1{font-weight:900;font-style:italic;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.95;margin:0;}
+  .body{font-weight:400;letter-spacing:-0.02em;line-height:1.55;margin:0;}
+  .inv{outline:1px dashed rgba(255,255,255,.45);outline-offset:4px;}
+  .cta{display:inline-block;background:#FFFFFF;color:#0A0A0A !important;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;line-height:1;}
+  .chev{display:inline-block;margin-left:14px;font-size:24px;line-height:0.7;font-weight:700;vertical-align:-2px;}
+  @media (max-width:480px){
+    .h1{font-size:40px !important;}
+    .pad{padding-left:24px !important;padding-right:24px !important;}
+    .tile{width:240px !important;height:240px !important;}
+  }
+</style>
+</head>
+<body class="f" style="margin:0;background:#050505;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">Early access voor sporters die HÏ Grip al dragen.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#050505"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="keep-dark" style="width:100%;max-width:600px;background:#0A0A0A;color:#FFFFFF;">
+
+  <tr><td class="pad f" style="padding:22px 32px;font-weight:900;font-size:18px;letter-spacing:-0.04em;color:#FFFFFF;">HÏ GRIP</td></tr>
+
+  <!-- SKELET A3: kop → podium (product op wit vlak, technische hoekmarkeringen + meetlijn, zacht dotveld erachter) → tekst → CTA -->
+  <tr><td class="pad" style="padding:44px 32px 0 32px;">
+    <h1 class="h1 f" style="font-size:48px;color:#FFFFFF;">Ga door waar anderen stoppen.</h1>
+  </td></tr>
+
+  <!-- COMPONENT: podium = raster-veld (één rasterelement) + product-tile + hoekmarkeringen (technische look, bewust zonder cijfers: geen getal dat een claim kan zijn)
+       PRODUCTIE: raster-veld als PNG-achtergrond; hoekmarkeringen als PNG of weglaten -->
+  <tr><td align="center" bgcolor="#0A0A0A" style="padding:48px 0;background-color:#0A0A0A;background-image:radial-gradient(circle,rgba(255,255,255,.16) 1.1px,transparent 1.5px);background-size:14px 14px;">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td valign="middle" style="padding-right:14px;"><div style="width:1px;height:260px;background:#909194;font-size:1px;line-height:1px;">&nbsp;</div></td>
+      <td>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;">
+          <tr><td style="font-size:0;line-height:0;"><div style="width:18px;height:18px;border-top:2px solid #FFFFFF;border-left:2px solid #FFFFFF;"></div></td><td></td><td align="right" style="font-size:0;line-height:0;"><div style="width:18px;height:18px;border-top:2px solid #FFFFFF;border-right:2px solid #FFFFFF;margin-left:auto;"></div></td></tr>
+          <tr><td></td>
+            <td class="tile" width="300" height="300" align="center" valign="middle" bgcolor="#EDEDED"
+                style="width:300px;height:300px;background-color:#EDEDED;background-image:url(assets/a3-product.jpg);background-size:contain;background-position:center;background-repeat:no-repeat;">
+              <div style="font:600 11px/1.4 'Poppins',Arial,sans-serif;letter-spacing:.08em;color:#6b6b6e;text-transform:uppercase;padding:16px;">[INVUL: echt productbeeld Performance Gripsokken 2.0 (vrijstaand, ongewijzigd) · label verwijderen bij plaatsing]</div>
+            </td><td></td></tr>
+          <tr><td style="font-size:0;line-height:0;"><div style="width:18px;height:18px;border-bottom:2px solid #FFFFFF;border-left:2px solid #FFFFFF;"></div></td><td></td><td align="right" style="font-size:0;line-height:0;"><div style="width:18px;height:18px;border-bottom:2px solid #FFFFFF;border-right:2px solid #FFFFFF;margin-left:auto;"></div></td></tr>
+        </table>
+      </td>
+    </tr></table>
+  </td></tr>
+
+  <tr><td class="pad" style="padding:8px 32px 0 32px;">
+    <p class="body f" style="font-size:16px;color:#D6D6D8;">Hoi <span class="inv">[INVUL: voornaam]</span>,<br><br>Jij blijft gaan. Daarom nodigen we jou uit voor early access.<br><br>De keuze van 3500+ sporters. More grip, better performance.<br><br><span class="inv">[INVUL: wat early access inhoudt, één zin]</span></p>
+  </td></tr>
+  <tr><td class="pad" style="padding:32px 32px 8px 32px;">
+    <a href="#" class="cta f" title="[INVUL: aanmeldlink]" style="display:inline-block;background:#FFFFFF;color:#0A0A0A;border-radius:999px;padding:17px 26px 17px 34px;font-weight:700;font-size:15px;text-decoration:none;">Doe mee<span class="chev">&#8250;</span></a>
+  </td></tr>
+
+  <tr><td class="pad f" style="padding:48px 32px 36px 32px;font-size:12px;line-height:1.6;color:#909194;">
+    <span class="inv">[INVUL: afzender]</span> · <span class="inv">[INVUL: bedrijfsgegevens]</span><br>
+    <a href="#" style="color:#909194;text-decoration:underline;" title="[INVUL: afmeldlink]">[INVUL: afmeldlink]</a>
+  </td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>

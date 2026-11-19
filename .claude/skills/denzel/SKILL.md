@@ -24,7 +24,7 @@ Je maakt zelf geen content, copy of code. Je bepaalt welke hoofdagent het moet d
 
 | Onderwerp | Hoofdagent | Activeer |
 |---|---|---|
-| www.higrip.nl — SEO, design, copy, conversie, e-mail | Website Agent | `/website-agent <opdracht>` |
+| www.higrip.nl — SEO, design, copy, conversie, e-mail (ook mails ontwerpen: Website Agent zet E-mail Marketing + Design Agent in, met `07_Design_Agent/Email-Workflow/`) | Website Agent | `/website-agent <opdracht>` |
 | Social content — planning, captions, video | Content Agent | `/content-agent <opdracht>` |
 | Influencers, B2B-klanten, events/samenwerkingen | Partnership Agent | `/partnership-agent <opdracht>` |
 

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Vergelijking 3-pack</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.kop { font-size: 104px; }
+
+/* Drie sokken, drie momenten: de kijker verdeelt de pack zelf al (mentale boekhouding) */
+.drie { position: absolute; left: 72px; top: 452px; font: 500 30px/1.5 Poppins; color: var(--hi-titanium); }
+.drie strong { color: var(--hi-white); font-weight: 700; }
+
+.kaart { position: absolute; left: 560px; top: 580px; width: 260px; height: 536px; background: var(--hi-white); border-radius: 32px; }
+.pack { position: absolute; left: 512px; top: 388px; width: 356px; filter: drop-shadow(0 16px 14px rgba(0,0,0,.18)); }
+
+.kol { position: absolute; top: 752px; font: 800 24px/1 Poppins; letter-spacing: .5px; text-align: center; }
+.kol.hi { left: 560px; width: 260px; color: var(--hi-black); }
+.kol.gewoon { left: 836px; width: 172px; color: var(--hi-titanium); }
+
+.rij { position: absolute; left: 72px; width: 936px; height: 106px; border-top: 1.5px solid var(--line); }
+.rij span { position: absolute; left: 0; top: 50%; transform: translateY(-50%); font: 500 30px/1.25 Poppins; width: 460px; }
+.rij .v, .rij .x { position: absolute; top: 50%; transform: translateY(-50%); }
+.rij .v { left: 488px; width: 260px; display: flex; justify-content: center; }
+.rij .x { left: 764px; width: 172px; display: flex; justify-content: center; }
+.rij svg { width: 44px; height: 44px; }
+.r1 { top: 796px; } .r2 { top: 902px; } .r3 { top: 1008px; }
+
+.prijs { position: absolute; left: 72px; top: 1160px; }
+.prijs .groot { font: italic 900 64px/1 Poppins; letter-spacing: -.03em; text-transform: uppercase; display: flex; align-items: baseline; gap: 18px; }
+.prijs .groot em { font-style: inherit; color: var(--hi-yellow); }
+.prijs .groot s { font: 500 28px/1 Poppins; color: var(--hi-titanium); letter-spacing: 0; text-decoration-thickness: 2px; }
+.prijs .klein { margin-top: 14px; font: 400 24px/1.4 Poppins; color: #cfcfcf; }
+.prijs .klein s { color: var(--hi-titanium); text-decoration-thickness: 2px; }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="logo"><img src="../bron/logo_mark_wit.png" alt=""><span>HÏ GRIP</span></div>
+
+  <h1 class="kop">Niet elke sok<br>houdt je vast.</h1>
+
+  <p class="drie">Eén voor de <strong>training.</strong><br>Eén voor de <strong>wedstrijd.</strong><br>Eén in de <strong>was.</strong></p>
+
+  <div class="kaart"></div>
+  <img class="pack" src="../bron/pack3_zwart.png" alt="">
+
+  <div class="kol hi">HÏ GRIP</div>
+  <div class="kol gewoon">GEWONE SOK</div>
+
+  <div class="rij r1"><span>Siliconen gripzones</span>
+    <i class="v"><svg viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></i>
+    <i class="x"><svg viewBox="0 0 24 24" fill="none" stroke="#909194" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></i></div>
+  <div class="rij r2"><span>Voet vast in je schoen</span>
+    <i class="v"><svg viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></i>
+    <i class="x"><svg viewBox="0 0 24 24" fill="none" stroke="#909194" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></i></div>
+  <div class="rij r3"><span>Compressie 15 tot 20 mmHg</span>
+    <i class="v"><svg viewBox="0 0 24 24" fill="none" stroke="#0A0A0A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></i>
+    <i class="x"><svg viewBox="0 0 24 24" fill="none" stroke="#909194" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></i></div>
+
+  <div class="prijs">
+    <div class="groot">3 paar <em>€44,95</em></div>
+    <div class="klein">€14,98 per paar in plaats van <s>€17,95</s><br>Gratis verzending. 30 dagen retour.</div>
+  </div>
+
+  <div class="pill">Shop 3-pack<i><svg viewBox="0 0 24 24" fill="none" stroke="#CCFF00" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></i></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@font-face { font-family: Poppins; font-weight: 400; src: url(../../Meta-batch-2026-11/fonts/Poppins-Regular.ttf); }
+@font-face { font-family: Poppins; font-weight: 500; src: url(../../Meta-batch-2026-11/fonts/Poppins-Medium.ttf); }
+@font-face { font-family: Poppins; font-weight: 600; src: url(../../Meta-batch-2026-11/fonts/Poppins-SemiBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 700; src: url(../../Meta-batch-2026-11/fonts/Poppins-Bold.ttf); }
+@font-face { font-family: Poppins; font-weight: 800; src: url(../../Meta-batch-2026-11/fonts/Poppins-ExtraBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; src: url(../../Meta-batch-2026-11/fonts/Poppins-Black.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; font-style: italic; src: url(../../Meta-batch-2026-11/fonts/Poppins-BlackItalic.ttf); }
+
+/* Gedeeld systeem: donker = de wereld van het probleem, wit = HÏ Grip. Volt alleen op de chevron en de prijs. */
+:root {
+  --hi-black: #0A0A0A;
+  --hi-white: #FFFFFF;
+  --hi-yellow: #CCFF00;
+  --hi-near-black: #111111;
+  --hi-trust: #00b67a;
+  --hi-titanium: #909194;
+  --bubble: #262626;
+  --line: rgba(255,255,255,.12);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; background: var(--hi-near-black); }
+body { font-family: Poppins, system-ui, sans-serif; color: var(--hi-white); -webkit-font-smoothing: antialiased; }
+.ad { position: relative; width: 1080px; height: 1350px; overflow: hidden; background: var(--hi-near-black); }
+
+.logo { position: absolute; left: 72px; top: 72px; display: flex; align-items: center; gap: 14px; }
+.logo img { height: 40px; }
+.logo span { font: 800 28px/1 Poppins; letter-spacing: .5px; }
+
+.kop { position: absolute; left: 72px; top: 176px; font: italic 900 112px/.9 Poppins; letter-spacing: -.04em; text-transform: uppercase; }
+
+.pill {
+  position: absolute; right: 72px; top: 1198px; height: 80px;
+  display: flex; align-items: center; gap: 28px; padding: 0 12px 0 44px;
+  border-radius: 40px; background: var(--hi-white); color: var(--hi-black);
+  font: 800 30px/1 Poppins;
+}
+.pill i { width: 56px; height: 56px; border-radius: 50%; background: var(--hi-black); display: grid; place-items: center; }
+.pill svg { width: 22px; height: 22px; }

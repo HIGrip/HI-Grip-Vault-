@@ -80,8 +80,6 @@ Eén paar voor de training, één voor de wedstrijd, één in de was. Zo sta je 
 
 **Prijs in beeld:** €44,95, €14,98 en €17,95. Verandert een van die prijzen, dan gaat deze ad eerst uit.
 
-> Map: [[04 Social Agent — Index]]
-
 ## funnel_v2_twijfel (onder: kopen, 19-11)
 
 Bezwaarbreker voor warm publiek (bezoekers, winkelwagen, engagers). Gebouwd op de koopdata van de laatste 30 dagen: alleen de ads die het product en de features laten zien leverden winkelwagens op (Tigo Sport, Timo Rugby features); gevoel-ads gaven goedkope klikken zonder productweergave.
@@ -181,3 +179,5 @@ Siliconen gripzones houden je voet vast in je schoen. 3 paar voor €44,95, grat
 ## funnel_v2_twijfel3 (onder: kopen, 19-11, gekozen richting)
 
 Feedback team 19-11: de originele achtergrond (vervaagd veld, `bron/veld_vervaagd.jpg`) was goed, alleen de indeling niet. Daarom de achtergrond van funnel_v2_twijfel met de bezwaren en copy van funnel_v2_twijfel2. Geen retour en geen zwevende sokken: één zwarte sok staat op zijn zool met een contactschaduw. Landingspagina `performance-gripsokken-2-0-zwart`. Primaire tekst en velden: zie funnel_v2_twijfel2.
+
+> Map: [[04 Social Agent — Index]]

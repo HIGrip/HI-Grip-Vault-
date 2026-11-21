@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over TikTok/Instagram-platformalgoritmes, Reels, creators en sportcontent-formats haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. De enige wél primair gesourcete vondst — TikTok's eigen Q4 2026 Product Preview — gaat over advertentieproducten, niet over content of algoritmes, en valt buiten de focus van vandaag."
-gerelateerd: []
+gerelateerd: [2026-11-21-growth-radar-social-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

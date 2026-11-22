@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P2
 samenvatting: "Zesde run (modus CONCEPT): Shopify Analytics bevestigt de in GA4 gesignaleerde piek — sessies +68,6% w/w (536 vs. 318) en omzet +235,6% (€150,85 vs. €44,95), gedreven door een actieve betaald-social-campagne richting de nieuwe pagina's /pages/gripsokken-2-0 en -2-1. De diepe audit van blok C (content en AI-zichtbaarheid) vindt geen nieuwe contentgaten; de eerder gebouwde conceptitems (Waardebalk, GTIN/productType) staan ongewijzigd en nog te vroeg om te evalueren."
-gerelateerd: [2026-10-19-seo-conversietest-run-5, 2026-11-02-regressiecheck, 2026-10-27-seo-audit-higrip-nl, 2026-10-29-ads-funnel-en-snelheid-productpagina]
+gerelateerd: [2026-11-02-regressiecheck, 2026-10-27-seo-audit-higrip-nl, 2026-10-29-ads-funnel-en-snelheid-productpagina]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

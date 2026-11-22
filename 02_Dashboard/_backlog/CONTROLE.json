@@ -1878,16 +1878,16 @@
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#0496d928": {
-   "bewijs": "bevat 'pasvorm' en 'maat', maar geen 'lengte' of 'kous'; geen volledige keuzegids waargenomen",
+   "bewijs": "bevat 5x 'pasvorm' en 8x 'maat', maar 0x 'lengte' en 0x 'kous' - geen volledige keuzegids",
    "controle": "/pages/gripsokken-voor-voetbal op keuzegids-inhoud",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
    "bewijs": "meta bevat nog 'komt u alles te weten' en 'witte gripsokken', niet herschreven",
    "controle": "meta description wat-zijn-gripsokken gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -1901,7 +1901,7 @@
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
    "bewijs": "beide 404, nog niet aangemaakt",
    "controle": "/collections/witte-gripsokken en /collections/zwarte-gripsokken opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2009,16 +2009,16 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#a37c4e83": {
-   "bewijs": "pagina bestaat, geen duidelijke uitbreiding tot volledig oprichtersverhaal waargenomen",
+   "bewijs": "pagina bestaat (200), geen duidelijke uitbreiding tot volledig oprichtersverhaal waargenomen",
    "controle": "/pages/ons-verhaal opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-seo-audit-weekdelta#a938ea37": {
    "bewijs": "REFUND_POLICY nog 14 dagen/25%, TERMS_OF_SERVICE art.4 nog €4,25 — concept nog niet geplakt",
    "controle": "shop.shopPolicies vergeleken met het _uitvoer-concept",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2032,14 +2032,14 @@
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
    "bewijs": "geen vermelding van een wekelijkse EN-vertalingscheck in 02_Dashboard/Routines/SEO.md",
    "controle": "'vertaling' gezocht in de SEO-routineprocedure",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "geen apart mini-plan-document gevonden; alleen de actietekst zelf in de backlog/weekoverzichten noemt 'mini-plan'",
+   "bewijs": "geen apart mini-plan-document gevonden; alleen vermeldingen in weekoverzichten (2026-11-09, 2026-11-16) en de eigen notitie",
    "controle": "mini-plan zakelijke pagina gezocht in de vault",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2065,23 +2065,23 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "404 zonder 301 naar hoe-zorg-ik-voor-mijn-gripsokken",
-   "controle": "hoe-verleng-je-de-levensduur opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "404 zonder redirect naar hoe-zorg-ik-voor-mijn-gripsokken",
+   "controle": "/blogs/hi-grip/hoe-verleng-je-de-levensduur-van-je-gripsokken opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "beide blogs bestaan niet meer onder de genoemde URL's (404)",
-   "controle": "pilates-blog-samenvoeging opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "404, beide blogs bestaan niet meer onder de genoemde URL's",
+   "controle": "/blogs/hi-grip/gripsokken-tijdens-pilates-en-yoga opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2093,72 +2093,72 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#16eea17b": {
-   "bewijs": "titel nog merk-eerst en meta nog u-vorm, geen zichtbare herschrijving tot hoofdgids",
-   "controle": "wat-zijn-gripsokken/waarom-hi-grip-gripsokken gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "<title>HÏ Grip | Wat zijn gripsokken? Waarom gripsokken dragen?</title>, <h1>Wat zijn gripsokken?</h1> - nog niet herschreven tot de gevraagde titel/H1 'Wat zijn gripsokken? Voordelen en verschil met gewone sokken'",
+   "controle": "titel/H1/lengte wat-zijn-gripsokken",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "404 zonder 301 naar /blogs/trends",
-   "controle": "blog 'waarom sporten meer is dan bewegen' opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "404 zonder redirect naar /blogs/trends; blog niet in huidige artikellijst",
+   "controle": "/blogs/hi-grip/waarom-sporten-meer-is-dan-bewegen opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "404 zonder 301 naar /blogs/trends",
-   "controle": "blog sportvoeding opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "https://www.higrip.nl/blogs/hi-grip/sportvoeding geeft 404 zonder redirect naar /blogs/trends; blog niet in huidige lijst van 6 artikelen op /blogs/hi-grip",
+   "controle": "/blogs/hi-grip/sportvoeding opgevraagd, blog niet in huidige artikellijst",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#308272a7": {
-   "bewijs": "bronblog (welke-gripsokken-bestaan) bestaat niet meer (404) en /blogs/hi-grip/beste-gripsokken-voetbal bestaat nog niet (404)",
+   "bewijs": "bronblog (welke-gripsokken-bestaan-er) 404, https://www.higrip.nl/blogs/hi-grip/beste-gripsokken-voetbal geeft ook 404 - nog niet aangemaakt",
    "controle": "voetbalblog en doel-URL opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "404 zonder 301 naar /pages/over-ons",
-   "controle": "hoe-is-hi-grip-ontstaan opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "404 zonder redirect naar /pages/over-ons",
+   "controle": "/blogs/hi-grip/hoe-is-hi-grip-ontstaan opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
-   "bewijs": "404 zonder 301 naar /pages/ontdek-jouw-sport",
-   "controle": "voor-welke-sport-zijn-gripsokken-onmisbaar opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "pagina bestaat (200), maar geen href naar /pages/gripsokken-voor-* gevonden - hub linkt nog niet naar de sportpagina's, voorwaarde niet voldaan",
+   "controle": "/pages/ontdek-jouw-sport op links naar sportpagina's",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#42cbed6f": {
    "bewijs": "geen van deze URL's bestaat nog (404), bijwerken dus niet van toepassing",
-   "controle": "grippatroon/geschiedenis/sportclubs-blogs opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "controle": "grippatroon/geschiedenis/sportclubs/krachttraining/blaren-blogs opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#4b1810bd": {
-   "bewijs": "titels zijn nog 'HÏ Grip | ...' (merk vooraan), niet zoekwoord-eerst",
+   "bewijs": "wat-zijn-gripsokken titel is nog 'HÏ Grip | Wat zijn gripsokken? Waarom gripsokken dragen?' (merk vooraan, niet zoekwoord-eerst)",
    "controle": "titels van overgebleven blogs gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "404, meta niet meer aan te passen op die URL",
-   "controle": "blog voor-welke-sport opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "404, pagina bestaat niet meer, meta dus niet aan te passen op die URL",
+   "controle": "/blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2170,72 +2170,72 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#9602726a": {
-   "bewijs": "geen 'Apps et al'-vermelding met de verplichte formulering in de zichtbare tekst van de-wetenschap-achter-gripsokken; 'Friedl' komt wel voor",
-   "controle": "wetenschapsblog doorzocht op bronvermelding",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "https://www.higrip.nl/blogs/hi-grip/de-wetenschap-achter-gripsokken: 0x 'Apps et al', 1x 'Friedl', nog 3x 'bewezen beter' in de tekst",
+   "controle": "wetenschapsblog doorzocht op bronvermelding en claim",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a248abc5": {
-   "bewijs": "geen van de voorgestelde URL's bestaat (404)",
+   "bewijs": "geen van de voorgestelde URL's bestaat, niet in huidige artikellijst van 6 blogs",
    "controle": "nieuwe tennis/padel-blogs opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a2c621ef": {
-   "bewijs": "blog bestaat niet meer onder de genoemde URL (404)",
+   "bewijs": "blog bestaat niet meer onder de genoemde URL (404), niet in huidige artikellijst",
    "controle": "blessureblog opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "CTA's wijzen nog elk 5x naar /collections/all, niet naar /collections/gripsokken",
-   "controle": "blog-CTA op overgebleven blogs (wat-zijn-gripsokken, de-wetenschap, hoe-zorg)",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "beide blogs tonen nog 5x href=\"/collections/all\" en 0x href=\"/collections/gripsokken\"",
+   "controle": "blog-CTA op wat-zijn-gripsokken en de-wetenschap-achter-gripsokken",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "waarom-hi-grip-gripsokken redirect nog steeds náár wat-zijn-gripsokken (omgekeerde richting dan gevraagd)",
-   "controle": "samenvoeging wat-zijn-gripsokken/toekomst gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "https://www.higrip.nl/blogs/hi-grip/waarom-hi-grip-gripsokken geeft 301 -> wat-zijn-gripsokken, omgekeerde richting dan gevraagd (samenvoeging naar waarom-hi-grip-gripsokken is niet gebeurd)",
+   "controle": "redirectrichting waarom-hi-grip-gripsokken",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#bcecbd1c": {
-   "bewijs": "titels zijn nog 'Trendblogs'/'Algemene blogs', niet herschreven",
-   "controle": "titel/H1 van /blogs/trends en /blogs/hi-grip gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "/blogs/hi-grip titel is nog 'HÏ Grip | Algemene blogs', /blogs/trends titel is nog 'HÏ Grip | Trendblogs' - niet herschreven met zoekwoord",
+   "controle": "titel/H1 van /blogs/trends en /blogs/hi-grip",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
-   "bewijs": "/pages/gripsokken-voor-rugby bestaat (voorwaarde voldaan), rugbyblog zelf nog niet gemaakt",
-   "controle": "rugbyblog opgevraagd, voorwaarde gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "/pages/gripsokken-voor-rugby bestaat (200, 73x 'rugby'), voorwaarde dus voldaan, maar rugbyblog zelf nog niet gemaakt",
+   "controle": "rugbyblog en voorwaarde /pages/gripsokken-voor-rugby gecontroleerd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "doel- en bronblog bestaan niet meer onder de genoemde URL's (404)",
+   "bewijs": "bron- en doelartikel bestaan niet meer onder de genoemde URL's (404), niet in huidige artikellijst",
    "controle": "blessureblog-samenvoeging opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "doelblog (grippatroon) bestaat niet meer (404), link dus niet te repareren",
-   "controle": "krachttraining-blog en doel-URL (grippatroon) opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "https://www.higrip.nl/blogs/hi-grip/het-innovatieve-hi-grip-grippatroon-op-basis-van-de-drukpunten-van-sporters geeft 404, doelblog bestaat niet meer, link dus niet te repareren",
+   "controle": "doel-URL grippatroon-blog opgevraagd",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2248,9 +2248,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-blogs-stappenplan#f73bcbeb": {
-   "bewijs": "geen bevestiging gevonden dat een feitencheck tegen het feitenbestand is gedaan",
-   "controle": "feitencheck op overgebleven blogs",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "meta description bevat nog 'komt u alles te weten' (u-vorm), geen bevestiging van een feitencheck tegen het feitenbestand",
+   "controle": "feitencheck op wat-zijn-gripsokken (u-vorm/claims)",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2262,9 +2262,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-voordelenpagina-analyse#6b326f42": {
-   "bewijs": "geen bestand gevonden dat op een voordelen-blogsjabloon wijst (templates/sections/snippets volledig doorgenomen)",
-   "controle": "volledige themabestandenlijst (live-thema) doorzocht op een voordelenpagina/blogsjabloon",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "geen bestand gevonden dat op een voordelen-blogsjabloon wijst in het doorzochte deel; vorige volledige doorzoeking (NOT_FOUND) bevestigd op het deel dat wel bekeken is",
+   "controle": "themabestandenlijst (live-thema, eerste ~300 bestanden) doorzocht op een voordelenpagina/blogsjabloon",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2291,9 +2291,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-werkthema-vs-live#c757fc2d": {
-   "bewijs": "niet te controleren: live-thema recent gewisseld naar 204874187079, geen stuk-voor-stuk werkthema-vergelijking deze run",
-   "controle": "niet te controleren check",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "live-thema ongewijzigd 204874187079 (MAIN, bevestigd via themes(first:50)); geen stuk-voor-stuk werkthema-vs-live-vergelijking deze run uitgevoerd",
+   "controle": "live-thema-rol opnieuw bevestigd",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2315,7 +2315,7 @@
   "2026-10-13-homepage-redesign#4867b36b": {
    "bewijs": "antwoord 4 begint nog met 'Was uw gripsokken', niet aangepast naar 'je'",
    "controle": "snippets/faq-schema.liquid antwoord 4 gecontroleerd (live-thema)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2328,9 +2328,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2349,9 +2349,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
-   "bewijs": "geen bestanden met '360' in de naam gevonden in assets/sections/snippets/templates, de 206-delige reeks is niet geüpload",
-   "controle": "volledige themabestandenlijst (live-thema) doorzocht op '360'-reeks",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "geen bestanden met '360' in de naam gevonden in de doorzochte bestandenlijst; volledige lijst (duizenden assets) niet elke run opnieuw volledig gepagineerd, vorige uitkomst (niet geüpload) bevestigd op het deel dat wel bekeken is",
+   "controle": "themabestandenlijst (live-thema, eerste ~300 bestanden) doorzocht op een '360'-reeks",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2408,14 +2408,14 @@
   "2026-10-13-homepage-redesign#f2c44e5d": {
    "bewijs": "NOT_FOUND",
    "controle": "templates/page.home-nieuw.json gezocht in thema 201133490503",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#ff235e99": {
-   "bewijs": "homepage toont nog 10× 3500+ en geen 3000+",
-   "controle": "3000+/3500+ op homepage",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "https://www.higrip.nl/ toont 10x '3500+', 0x '3000+'; /pages/over-ons toont 3x '3500+' en 1x '3000+' - nog niet overal gecorrigeerd",
+   "controle": "3000+/3500+ op homepage en over-ons",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2429,7 +2429,7 @@
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
    "bewijs": "NOT_FOUND; geen apart 800-italic-preload",
    "controle": "snippets/fonts.liquid gezocht in live-thema",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2464,7 +2464,7 @@
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
    "bewijs": "fd-product-groups en section-store block-cart staan nog volledig op disabled:true, niet per paginatype beperkt",
    "controle": "settings_data.json app-embeds gecontroleerd (live-thema)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2538,7 +2538,7 @@
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
    "bewijs": "nog geen bredere materiaalvergelijking 1.0 vs 2.0, alleen maten/prijzen/EAN",
    "controle": "1.0-specificaties gecontroleerd in Performance Grip Socks 2.0.md",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2633,9 +2633,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "geen verzameldocument gevonden; alleen losse screenshotbestanden met 'swipe' in de naam (06_Website_Agent/Homepage-prototype/.../375-swipe.png) en een circulaire verwijzing in 2026-11-04-ads-resultaten-verbeteringen.md",
+   "bewijs": "geen verzameldocument gevonden; alleen losse verwijzingen in 02_Dashboard/Ads/2026-10-25-ads-onderzoek-bewezen-grip-sock-ads.md en 2026-11-04-ads-resultaten-verbeteringen.md",
    "controle": "swipe file-document gezocht in de vault",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2738,9 +2738,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
-   "bewijs": "'Geen doorglijden', 'Kracht komt aan', 'zet scherper af', 'Minder schuiven', 'Fris tot de laatste minuut' staan nog letterlijk op de pagina",
+   "bewijs": "\"Geen doorglijden\", \"Kracht komt aan\", \"zet scherper af\", \"Minder schuiven\", \"Fris tot de laatste minuut\" staan nog allemaal letterlijk op de pagina, onveranderd",
    "controle": "absolute claims op /pages/gripsokken-voor-rugby",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2818,9 +2818,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2854,44 +2854,44 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "homepage en /en tonen 3500+ (10x), /collections/gripsokken toont zowel 3500+ (2x) als 3000+ (2x) naast elkaar",
+   "bewijs": "homepage toont 10x 3500+, onveranderd; /collections/gripsokken niet apart hergecontroleerd deze batch",
    "controle": "sportersaantal op homepage, /en en /collections/gripsokken",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2903,37 +2903,37 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -2969,7 +2969,7 @@
   "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
    "bewijs": "geen gtag/googletagmanager-tag gevonden in layout/theme.liquid van het live-thema (204874187079)",
    "controle": "layout/theme.liquid van het live-thema doorzocht op GA4",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2983,7 +2983,7 @@
   "2026-10-29-ads-funnel-en-snelheid-productpagina#b36f0e48": {
    "bewijs": "Bundler niet meer in appInstallations, maar FD Combined Listings en Essential A/B Testing staan er nog in — niet volledig",
    "controle": "appInstallations gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3088,9 +3088,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "footer gebruikt nog 2× mailto:, geen tel:-link",
+   "bewijs": "footer gebruikt nog 2x mailto:, geen tel:-link",
    "controle": "footer-telefoonlink op de homepage",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3120,28 +3120,28 @@
   "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
    "bewijs": "hp-06-brandvideo.liquid heeft nog los video_lo_url naast video_m_url; geen bevestiging van lichtere encodering of dat de lichte versie standaard is",
    "controle": "video_lo_url/video_m_url in hp-06 gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
    "bewijs": "NOT_FOUND",
    "controle": "build.py gezocht in live-thema",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#64c67434": {
    "bewijs": "hp-09 sizes nog '200px' (doel 160px/120px); hp-10 sizes '(min-width:900px) 30vw, 92vw' (mobiel nog 92vw, doel 46vw); hp-02 sizes nog vlak '(min-width:769px) 50vw, 50vw' (doel 38vw desktop) — niet volledig",
    "controle": "sizes gecontroleerd in hp-09/hp-10/hp-02 (live-thema 204874187079)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
-   "bewijs": "hpLightbox nog 4x aanwezig in hp-home.js; hp-urltest.webp staat nog als los, ongebruikt bestand in assets (0 referenties in hp-home.js) — niet volledig",
+   "bewijs": "hpLightbox nog 4x aanwezig in hp-home.js (0 referenties naar hp-urltest in de JS); hp-urltest.webp staat nog als los bestand in assets — niet volledig",
    "controle": "hp-home.js doorzocht op genoemde dode code, hp-urltest.webp gezocht in assets",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3186,14 +3186,14 @@
   "2026-10-30-snelheid-code-audit-homepage#96b379ab": {
    "bewijs": "image en image_mobile zijn nog exact dezelfde foto (IMG_3844...), geen eigen staande uitsnede",
    "controle": "hp_01 image/image_mobile vergeleken in templates/index.json",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "index LCP p75 1130ms (30d); geen losse PSI-vergelijking met de nulmeting van 30-10 uitgevoerd",
+   "bewijs": "index LCP p75 1160ms (30d); geen losse PSI-vergelijking met de nulmeting van 30-10 uitgevoerd",
    "controle": "web_performance homepage (30d)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3365,14 +3365,14 @@
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
    "bewijs": "geen vermelding gevonden in 04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md",
    "controle": "'hook-eerst'/'binnen 2 sec' gezocht in de stijlgids",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
    "bewijs": "geen vermelding gevonden in 04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md",
    "controle": "'match-cut' gezocht in de stijlgids",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3430,14 +3430,14 @@
   "2026-11-03-snelheid-nulmeting-alle-paginas#6b972637": {
    "bewijs": "hi-site.css NOT_FOUND in 204029296967; hi-sale-price.css/hi-headings.css/hi-app-fixes.css bestaan nog los naast elkaar in het live-thema",
    "controle": "hi-site.css gezocht in werkthema 204029296967, losse CSS-bestanden gecontroleerd in live-thema",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#9ceb0075": {
-   "bewijs": "product LCP p75 1049ms, INP 88ms (30d); geen apart doorlicht-rapport gevonden",
+   "bewijs": "product LCP p75 1054ms, INP 94ms (30d); geen apart doorlicht-rapport gevonden",
    "controle": "web_performance product (30d)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3517,9 +3517,9 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-werkthema-02#aacd5803": {
-   "bewijs": "huidige 30d-cijfers: index 1130ms, product 1049ms, collection 1512ms; geen apart voor/na-livegang-vergelijking uitgevoerd",
+   "bewijs": "huidige 30d-cijfers: index 1160ms, product 1054ms, collection 1512ms; geen apart voor/na-livegang-vergelijking uitgevoerd",
    "controle": "web_performance per paginatype (30d)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3540,7 +3540,7 @@
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
    "bewijs": "niet te controleren: vraagt een visuele vergelijking in de browser op telefoon en desktop, geen browsertool beschikbaar",
    "controle": "niet te controleren check",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3618,14 +3618,14 @@
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
    "bewijs": "geen vastgelegd doel (PageSpeed 80+/TBT<300ms/LCP<2,5s) gevonden, alleen gemeten TBT/LCP-cijfers",
    "controle": "PageSpeed/TBT/LCP-doel gezocht in de werkthema-notitie",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
    "bewijs": "geen vermelding van 'upfront' in 02_Dashboard/Website-techniek/2026-11-03-snelheid-werkthema-02.md",
    "controle": "'upfront' gezocht in de werkthema-notitie",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3693,9 +3693,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "claim staat nog op de pagina, geen bevestiging van toetsing aan de claimregels",
-   "controle": "'Geen blaren'-claim op productpagina 2.0 zwart",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "claim \"geen blaren\" staat nog letterlijk op de pagina, geen bevestiging van toetsing aan de claimregels",
+   "controle": "\"Geen blaren\"-claim op productpagina 2.0 zwart",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3878,9 +3878,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "navigatieregel '> Map: [[Waar staat wat]]' staat op regel 19; vault_nav.py niet gedraaid om breder te bevestigen",
+   "bewijs": "navigatieregel '> Map: [[Waar staat wat]]' staat nog op regel 19 (notitie staat nu in Onderzoek/); vault_nav.py niet gedraaid om breder te bevestigen",
    "controle": "navigatieregel van de notitie gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3892,9 +3892,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "toont al 'Winkelwagen' (NL); prijsdubbeling niet te controleren met een lege kar",
+   "bewijs": "toont \"Je winkelwagen is leeg\" (NL, h1), prijsdubbeling niet te controleren met een lege kar",
    "controle": "/cart kop en prijsweergave",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4145,16 +4145,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#a8aa19f2": {
-   "bewijs": "★★★★½ aanwezig zonder Trustpilot-bronvermelding in de buurt; slogan 'Meer grip. Meer controle. Meer winnen.' aanwezig",
+   "bewijs": "★★★★½ aanwezig zonder Trustpilot-bronvermelding in de buurt; slogan \"Meer grip. Meer controle. Meer winnen.\" aanwezig, onveranderd",
    "controle": "sterren en slogan op productpagina 2.0 zwart",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-ads-live-check-website#ec609e8b": {
    "bewijs": "1.0 95/63 (positief); 2.0 zwart -6/-23/-30, wit -8/-15/-24 (nog steeds negatief); oorzaak niet te verklaren via de connector",
    "controle": "voorraad 2.0/1.0 opgevraagd per variant",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -4250,9 +4250,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -4611,21 +4611,21 @@
   "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
    "bewijs": "onveranderd: nog geen meta description, geen robots-meta",
    "controle": "meta description en robots-meta gripsokken-2-0/-2-1 herhaald",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#811c3f82": {
    "bewijs": "onveranderd: nog geen meta description",
    "controle": "meta description /pages/teamorder herhaald",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#96ba1592": {
-   "bewijs": "geen robots-meta; canonical -a→-2-1, -b→-2-0, onveranderd",
+   "bewijs": "niet apart opnieuw gecurled deze batch; vorige bevinding (geen robots-meta, canonical -a→-2-1/-b→-2-0) blijft het laatst gemeten resultaat",
    "controle": "robots-meta en canonical gripsokken-2-0-a/-b herhaald",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4646,16 +4646,16 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-search-console-handmatig#b57358d7": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-11-09-search-console-handmatig#c24ec193": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -4838,7 +4838,7 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
    "bewijs": "niet te controleren: lokale MCP-instelling op de machine van een mens, niet zichtbaar in deze repository",
    "controle": "niet te controleren check",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4859,7 +4859,7 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#827f0731": {
    "bewijs": "niet te controleren: geen aparte publicatie-log per notitie; dagelijkse routines draaien al standaard vanaf info@",
    "controle": "niet te controleren check",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4880,7 +4880,7 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
    "bewijs": "wijst nog naar '01_Agent_Infrastructuur/Website Agent/Conversie & Analyse Agent/Identiteit Conversie & Analyse Agent.md', dat bestand bestaat nog niet",
    "controle": "conversie-analyse-agent.md identiteitsverwijzing gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4901,14 +4901,14 @@
   "2026-11-10-ads-plan-bereik-conversie-sales#cc482514": {
    "bewijs": "niet te controleren: vraagt ordergegevens van individuele orders, Shopify-cijfers mogen alleen als totalen",
    "controle": "harde grens gecontroleerd (alleen totalen, geen ordergegevens)",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -5039,9 +5039,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-15-ads-tien-losse-ads-rugby-voetbal#0813295a": {
-   "bewijs": "toont €44,95 en €53,85; prijs per paar toont €14,95, niet de genoemde €14,98",
+   "bewijs": "toont €44,95 en €53,85 (klopt), prijs per paar toont €14,95 (2x), niet de genoemde €14,98 — onveranderd",
    "controle": "prijzen op productpagina 2.0 zwart",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5139,7 +5139,7 @@
   "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e": {
    "bewijs": "Amplify | Bundles & Upsell staat nog geïnstalleerd; welke linkoptie het 3-pack direct kan tonen is niet via de connector te bepalen",
    "controle": "appInstallations gecontroleerd op bundel-apps",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5188,7 +5188,7 @@
   "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9": {
    "bewijs": "beide wijzen nog naar '01_Agent_Infrastructuur/Content Agent/.../Identiteit....md'; die bestanden bestaan nog niet",
    "controle": "content-maker-agent.md en caption-copy-agent.md identiteitsverwijzingen gecontroleerd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5214,16 +5214,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-horizon-4-5-update-check#156f3d99": {
-   "bewijs": "0 treffers voor show_physical_stores in settings_data.json — niet uitgezet of niet op themaniveau te bevestigen",
+   "bewijs": "0 treffers voor show_physical_stores — niet uitgezet of niet op themaniveau te bevestigen",
    "controle": "show_physical_stores gezocht in config/settings_data.json van live-thema 204874187079",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-16-horizon-4-5-update-check#417115ae": {
    "bewijs": "collection LCP p75 1512ms (30d via run-analytics-query); geen losse 5-PSI-run-vergelijking met de nulmeting uitgevoerd",
    "controle": "web_performance LCP collectiepagina (30d) opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5277,9 +5277,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
-   "bewijs": "output/ bevat nog 131 bestanden in de vault-root, niet verplaatst of verwijderd",
+   "bewijs": "output/ bevat nog 121 bestanden in de vault-root (was 131 op 21-11), niet verplaatst of verwijderd",
    "controle": "output/ in de vault-root geteld",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5382,16 +5382,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#01dc4258": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#072e2482": {
-   "bewijs": "beide pagina's: geen meta description, geen robots-meta in de HTML",
+   "bewijs": "beide pagina's onveranderd: geen meta description, geen robots-meta in de HTML",
    "controle": "meta description en robots-meta van gripsokken-2-0/-2-1",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5417,30 +5417,30 @@
    "uitkomst": "open"
   },
   "backlog#246c61d9": {
-   "bewijs": "shop.shopPolicies toont nog de oude teksten: refund 14 dagen/25%/ongeopend, shipping 'vóór 16:00', terms art.4 €4,25 — nog niet opgelost",
+   "bewijs": "shop.shopPolicies toont nog de oude teksten: REFUND_POLICY 14 dagen/25%/ongeopend, SHIPPING_POLICY 'vóór 16:00', TERMS_OF_SERVICE art.4 €4,25 — nog niet opgelost",
    "controle": "shop.shopPolicies vergeleken met oude/nieuwe beleidspagina's",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#2e5c5044": {
-   "bewijs": "13× alt=\"\" op contentafbeeldingen, onveranderd",
+   "bewijs": "13x alt=\"\" op contentafbeeldingen, onveranderd",
    "controle": "alt=\"\" op de homepage geteld",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#32925dba": {
-   "bewijs": "200, publiek bereikbaar, geen noindex-meta",
+   "bewijs": "200, publiek bereikbaar, nog geen robots/noindex-meta in de HTML",
    "controle": "/blogs/intern op robots-meta",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#380ede66": {
-   "bewijs": "niet te controleren: nog geen GraphQL-veld voor Catalog-geschiktheid, alleen catalog/catalogs (B2B-prijslijsten)",
+   "bewijs": "niet te controleren: geen GraphQL-veld voor Catalog-geschiktheid, alleen catalog/catalogs (B2B-prijslijsten)",
    "controle": "GraphQL-schema gecontroleerd op Shopify Catalog-geschiktheid",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5459,37 +5459,37 @@
    "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
-   "bewijs": "geen meta description aanwezig",
+   "bewijs": "nog steeds geen meta description aanwezig",
    "controle": "meta description /collections/all",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#886d413d": {
-   "bewijs": "404 zonder 301; /blogs/trends toont vandaag 'Nog geen' (leeg)",
+   "bewijs": "404 zonder 301 op het artikel; /blogs/trends toont nog \"Nog geen artikelen\" (leeg)",
    "controle": "/blogs/trends/de-twee-grootste-problemen... en /blogs/trends opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8a590428": {
-   "bewijs": "titel nog 'HÏ Grip | Performance Grip Socks for Athletes', meta nog '3500+ athletes'",
+   "bewijs": "titel nog \"HÏ Grip | Performance Grip Socks for Athletes\", meta nog \"3500+ athletes\", niet herschreven",
    "controle": "titel/meta /en",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8d435a25": {
-   "bewijs": "redirect (200) naar wat-zijn-gripsokken, geen losse titel/meta meer op deze URL",
+   "bewijs": "blijft een 301/redirect (200 na -L) naar wat-zijn-gripsokken, geen losse titel/meta op deze URL",
    "controle": "/blogs/hi-grip/waarom-hi-grip-gripsokken opgevraagd",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8f8db388": {
-   "bewijs": "alle vier nog apart bereikbaar (200); canonical -a→-2-1, -b→-2-0, niet geconsolideerd tot één URL",
-   "controle": "status/canonical van gripsokken-2-0/-2-1/-2-0-a/-2-0-b",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "canonical van /collections/gripsokken wijst naar zichzelf, /en/collections/gripsokken naar zichzelf; geen consolidatie naar één URL, onveranderd",
+   "controle": "canonical van /collections/gripsokken en /en/collections/gripsokken",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5501,30 +5501,30 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "niet te controleren: Bash-permissie geweigerd door privacy-plugin op google_data.py (calendar_id-fallback info@higrip.nl naast Google Calendar API-aanroep gedetecteerd als e-mailadres+clientidentiteit), geen enkel subcommando draait deze sessie",
+   "bewijs": "niet te controleren: google_data.py (keyevents/ga4/gsc) wordt deze run geblokkeerd door plugin cc-plugin-privacy (leest info@higrip.nl als standaard Calendar-ID in de code, los van het aangeroepen subcommando); geen GA4/GSC-cijfers op te halen",
    "controle": "google_data.py (ga4/gsc) aanroepen",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#a1f3e1a2": {
-   "bewijs": "NL-titel nog merk-eerst ('HÏ Grip | Hoe was ik...'); NL-meta nog u-vorm ('kan u terecht', 'uw gripsokken')",
+   "bewijs": "NL-titel nog merk-eerst (\"HÏ Grip | Hoe was ik...\"), NL-meta nog u-vorm (\"kan u terecht\", \"uw gripsokken\"); EN ongewijzigd",
    "controle": "titel/meta blog hoe-zorg-ik-voor-mijn-gripsokken NL+EN",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#a2e3406d": {
-   "bewijs": "geen 'per paar'/'/paar'-tekst aangetroffen naast de variant-selector",
+   "bewijs": "geen \"/paar\"-tekst aangetroffen naast de variant-selector; €14,95 komt wel 2x op de pagina voor maar niet als losse per-paar-regel",
    "controle": "prijs-per-paar-tekst naast de pack-selector op productpagina 2.0 zwart",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5543,16 +5543,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#b1876b36": {
-   "bewijs": "padel en tennis staan op beide pagina's, rugby ontbreekt nog; <code>-tag niet aangetroffen",
-   "controle": "productbeschrijvingen 1.0 en 2.0 zwart doorzocht op padel/tennis/rugby en <code>",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "2.0 (zwart+wit) noemt in de sportzin nog alleen \"tennis, basketbal, fitness en pilates\" (geen padel, geen rugby); <code>-tag niet aangetroffen op beide varianten",
+   "controle": "productbeschrijvingen 1.0, 2.0 zwart en 2.0 wit doorzocht op padel/tennis/rugby en <code>",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
-   "bewijs": "scriptTags blijft 'Access denied'; Bundler staat niet in appInstallations (18 apps), Trustpilot wel; migratie van scripttags zelf niet te bevestigen",
-   "controle": "appInstallations gecontroleerd op Bundler/Trustpilot, scriptTags-veld geprobeerd",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "Bundler staat niet in appInstallations, Trustpilot wel; scriptTags-migratie zelf niet te bevestigen via de connector",
+   "controle": "appInstallations gecontroleerd op Bundler/Trustpilot (18 apps)",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5564,16 +5564,16 @@
    "uitkomst": "open"
   },
   "backlog#bf53be16": {
-   "bewijs": "titel nog 'HÏ Grip | Ontdek Jouw Sport', merk-eerst, niet herschreven",
+   "bewijs": "titel nog \"HÏ Grip | Ontdek Jouw Sport\" (merk-eerst), niet herschreven",
    "controle": "titel/meta /pages/ontdek-jouw-sport",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#c51a9579": {
-   "bewijs": "titel is 'Betalingsbeleid | HÏ Grip' (gefixt), meta description blijft leeg",
+   "bewijs": "titel blijft \"Betalingsbeleid | HÏ Grip\" (gefixt), meta description nog steeds leeg",
    "controle": "titel en meta description /pages/terugbetalingsbeleid",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5585,9 +5585,9 @@
    "uitkomst": "open"
   },
   "backlog#d6d843f3": {
-   "bewijs": "geen meta description aanwezig",
+   "bewijs": "titel \"Teamorder – HÏ Grip\" aanwezig, meta description nog steeds afwezig",
    "controle": "meta description /pages/teamorder",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5601,14 +5601,14 @@
   "backlog#df9a37ab": {
    "bewijs": "NOT_FOUND onder blocks/ en snippets/ in 204029296967",
    "controle": "hi-pack-value-bar.liquid gezocht in blocks/snippets van werkthema 204029296967",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#e920d0ff": {
-   "bewijs": "meta description ontbreekt nog steeds, concepttekst niet zichtbaar geplakt",
+   "bewijs": "meta description ontbreekt nog steeds op /pages/terugbetalingsbeleid, concepttekst niet zichtbaar geplakt",
    "controle": "terugbetalingsbeleid-tekst vergeleken met conceptvoorstel",
-   "gecontroleerd": "2026-11-21",
+   "gecontroleerd": "2026-11-22",
    "methode": "site",
    "uitkomst": "open"
   },

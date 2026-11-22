@@ -31,7 +31,7 @@ De vraag was: welke e-mailpopup converteert het best, en is een gamified popup (
 - [ ] P1 · EcomSend-abonnement controleren: het gratis plan stopt bij 30 nieuwe inschrijvers per maand, Essential bij 150
 - [ ] P2 · EcomSend-frequentie terugbrengen van 2 keer per dag naar 1 keer per 7 dagen na wegklikken
 - [ ] P2 · EcomSend-popup alleen tonen aan nieuwe bezoekers en niet aan ingelogde klanten
-- [ ] P2 · Paginaregels in EcomSend herstellen: ze verwijzen naar /products/performance-grip-socks-1 en -2, die 404 geven
+- [x] P2 · Paginaregels in EcomSend herstellen: ze verwijzen naar /products/performance-grip-socks-1 en -2, die 404 geven
 - [ ] P2 · Popupknop merkconform maken: pill met chevron, wit op zwart, in plaats van gevuld blauw (#0011A7)
 - [ ] P2 · Besluit: A/B-test verbeterde standaardpopup tegen EcomSend spin-the-wheel, minimaal 3.800 vertoningen per variant
 - [ ] P2 · Besluit: nieuwe popup in twee stappen bouwen, eerst sport kiezen met één tik, daarna e-mail; nagaan of EcomSend dit kan of dat stap 1 in het thema komt

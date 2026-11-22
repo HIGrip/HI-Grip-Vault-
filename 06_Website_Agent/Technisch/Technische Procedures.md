@@ -31,7 +31,7 @@ bijgewerkt: 2026-10-29
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
 | **Werkthema (sinds 5-11)** | `204029296967` (aangewezen door lars) | unpublished (check met `theme list`) | **Ja** — enige werkkopie |
-| Live op www.higrip.nl (Horizon 4.4.0, "Bijgewerkte kopie van Live website 04-11-2026") | `203954520391` (4-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203928076615`; lokale kopie met git: `<gebruikersmap>\Werk\theme-snelheid\update-04`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
+| Live op www.higrip.nl (Horizon 4.5.0, "Bijgewerkte kopie van Live website 04-11-2026") | `204874187079` (18-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203954520391`, nu unpublished als terugvaloptie; lokale kopie met git: `<gebruikersmap>\Werk\theme-snelheid\update-45`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
 | Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `<gebruikersmap>\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
 | Ouder live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished) | unpublished | Nee |
 | Ouder live-thema ("Live HÏ Grip WEBSITE + contactpagina") | `202669916487` (2-11: unpublished) | unpublished | Nee |

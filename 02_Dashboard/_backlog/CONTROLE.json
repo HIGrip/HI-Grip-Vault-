@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-21T04:02:31+01:00",
+ "laatste_run": "2026-11-22T04:02:09+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -2441,9 +2441,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
-   "bewijs": "niet te controleren: vraagt vergelijking met een specifieke prototype-alinea (58 woorden), niet uit de live HTML te isoleren",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: vraagt vergelijking met een specifieke prototype-alinea (58 woorden), niet uit de live HTML te isoleren, ongewijzigd",
+   "controle": "Entiteitsalinea/schema-description vs prototype-alinea",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2647,9 +2647,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#022f1382": {
-   "bewijs": "niet te controleren: vraagt mobiele controle en UTM-test in de browser, geen browsertool beschikbaar",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: vraagt mobiele controle en UTM-test in de browser, geen browsertool beschikbaar, ongewijzigd",
+   "controle": "Rugbylanding mobiele controle en UTM-test",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -2945,16 +2945,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4dfeda5e": {
-   "bewijs": "niet te controleren: app-eigen EcomSend-timinginstelling niet leesbaar via de connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: app-eigen EcomSend-timinginstelling niet leesbaar via de connector, ongewijzigd",
+   "controle": "EcomSend-popup timing/vervanging",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4e776330": {
-   "bewijs": "niet te controleren: app-eigen instelling (Section Store), niet zichtbaar via de Shopify Admin GraphQL-connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: app-eigen instelling (Section Store), niet zichtbaar via de Shopify Admin GraphQL-connector, ongewijzigd",
+   "controle": "Shine-effect Section Store-badge uitgezet",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -3017,16 +3017,16 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
-   "bewijs": "niet te controleren: EcomSend-abonnementsplan niet zichtbaar via de Shopify-connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: EcomSend-abonnementsplan niet zichtbaar via de Shopify-connector, ongewijzigd",
+   "controle": "EcomSend-abonnementsplan/limiet controleren",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
-   "bewijs": "niet te controleren: EcomSend-popupknop is een app-eigen UI-instelling, niet zichtbaar via de connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: EcomSend-popupknop is een app-eigen UI-instelling, niet zichtbaar via de connector, ongewijzigd",
+   "controle": "EcomSend-popupknop merkconform (pill/chevron)",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -3052,16 +3052,16 @@
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
-   "bewijs": "niet te controleren: app-eigen EcomSend-frequentie-instelling niet leesbaar via de connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: app-eigen EcomSend-frequentie-instelling niet leesbaar via de connector, ongewijzigd",
+   "controle": "EcomSend-popupfrequentie na wegklikken",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
-   "bewijs": "niet te controleren: app-eigen EcomSend-instelling niet leesbaar via de connector",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: app-eigen EcomSend-instelling niet leesbaar via de connector, ongewijzigd",
+   "controle": "EcomSend-popup alleen aan nieuwe bezoekers",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -3456,9 +3456,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
-   "bewijs": "niet te controleren: cookiebanner-rendering vereist browser/JS-weergave",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: cookiebanner-rendering vereist browser/JS-weergave, ongewijzigd",
+   "controle": "Cookiebanner-rendersnelheid op winkelwagen/contact",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -3920,9 +3920,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
-   "bewijs": "niet te controleren: cookiebannerstijl (volle knopkleur) is alleen na JS-rendering zichtbaar",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: cookiebannerstijl (volle knopkleur) is alleen na JS-rendering zichtbaar, ongewijzigd",
+   "controle": "Cookiebanner-knoppen niet vol gevuld",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4117,9 +4117,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#5ce01a10": {
-   "bewijs": "niet te controleren: exacte landingspagina-URL voor deze ad niet eenduidig vast te stellen zonder adslink",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: exacte landingspagina-URL voor deze ad niet eenduidig vast te stellen zonder adslink, ongewijzigd",
+   "controle": "Landingspagina's omzetten naar vergelijkende/onderzoeksformulering",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4159,9 +4159,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
-   "bewijs": "niet te controleren: exacte landingspagina-URL voor deze ad niet eenduidig vast te stellen zonder adslink",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: exacte landingspagina-URL voor deze ad niet eenduidig vast te stellen zonder adslink, ongewijzigd",
+   "controle": "Landingspagina omzetten vóór ad 4 live gaat",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5256,9 +5256,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
-   "bewijs": "niet te controleren: lokale map buiten de vault/repository",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: lokale map buiten de vault/repository, ongewijzigd",
+   "controle": "ads-v6-output vs Voorbeelden-map vergelijken",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5410,9 +5410,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "niet te controleren: vraagt een nieuwe pagina met eigen meetdata, mensenwerk/concept",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: vraagt een nieuwe pagina met eigen meetdata, mensenwerk/concept, ongewijzigd",
+   "controle": "Bewijspagina met eigen meetdata live",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5557,9 +5557,9 @@
    "uitkomst": "open"
   },
   "backlog#b81d4226": {
-   "bewijs": "niet te controleren: vraagt het maken van een productvideo, mensenwerk",
-   "controle": "haalbaarheid van automatische controle",
-   "gecontroleerd": "2026-11-21",
+   "bewijs": "niet te controleren: vraagt het maken van een productvideo, mensenwerk, ongewijzigd",
+   "controle": "Productvideo 30-60s op productpagina",
+   "gecontroleerd": "2026-11-22",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5642,7 +5642,6 @@
   }
  },
  "runs": [
-  "2026-11-05",
   "2026-11-06",
   "2026-11-08",
   "2026-11-09",
@@ -5655,7 +5654,8 @@
   "2026-11-18",
   "2026-11-19",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-22"
  ],
  "volgende_run": "dagelijks 05:00"
 }

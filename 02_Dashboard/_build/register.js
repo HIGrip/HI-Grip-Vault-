@@ -32,7 +32,7 @@ window.HI_RESEARCH = {
    "afgevinkt": false,
    "beheer": null,
    "besluit": false,
-   "body_md": "**Update 22 nov 2026 (weekonderhoud):** staat sinds 30 okt (23 dagen) zonder beweging op P1 — de drieweken-regel slaat aan. Niet verlaagd naar P2: de advertentiecampagne is inmiddels gestart (besluit 26 okt) en zonder CAPI loopt de meting vanaf dag 1 mis, precies het risico waarvoor dit punt op P1 staat. Wel expliciet als blokkade gemarkeerd: de resterende stap (pixel + CAPI instellen in Meta Events Manager) is mensenwerk, geen Claude-taak — Growth Radar kan dit alleen blijven volgen.\n**Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op \"Betaalproces starten\" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar \"Content bekijken\" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.\n**Update 26 okt 2026 (besluit Team HÏ Grip, opgewaardeerd naar P1):** de advertentiebudget-beslissing waarop dit punt wachtte is genomen — deze week starten met Ads. CAPI vanaf dag 1 van de eerste campagne inrichten (zie ook punt 24, ChatGPT Ads, zelfde besluit).\n**Update 9 okt 2026:** Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks; likes, shares, saves en video-views van 5+ seconden tellen sindsdien apart mee als \"engage-through-attributie\", standaard aan met een venster van 1 dag (Search Engine Land). Meenemen bij de Ads Manager-inrichting zodra het budget besloten is: anders telt de gerapporteerde ROAS ook niet-klik-conversies mee.\n**Update 25 sep 2026:** Op higrip.nl draait op dit moment géén Meta- of TikTok-pixel. Een nieuw geïnstalleerde pixel zonder advertentieverkeer valt precies in Shopify's Optimized-pauzeprofiel. Zet hem daarom bij installatie meteen op **Always on** (Instellingen → Klantgebeurtenissen → App-pixels). Meta's one-click CAPI (sinds 15 apr 2026) staat in Events Manager.\n**Waarom:** Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro.\n**Wachten op:** Een lopende advertentiebudget-beslissing — genomen, zie Update 26 okt 2026 hierboven.\n**Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.\n**Inspanning:** half dagdeel (pixel + CAPI), zodra het ads-platform gekozen is\n\n---",
+   "body_md": "**Update 22 nov 2026 (weekonderhoud):** staat sinds 30 okt (23 dagen) zonder beweging op P1 — de drieweken-regel slaat aan. Niet verlaagd naar P2: de advertentiecampagne is inmiddels gestart (besluit 26 okt) en zonder CAPI loopt de meting vanaf dag 1 mis, precies het risico waarvoor dit punt op P1 staat. Wel expliciet als blokkade gemarkeerd: de resterende stap (pixel + CAPI instellen in Meta Events Manager) is mensenwerk, geen Claude-taak — Growth Radar kan dit alleen blijven volgen.\n**Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op \"Betaalproces starten\" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar \"Content bekijken\" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.\n**Update 26 okt 2026 (besluit Team HÏ Grip, opgewaardeerd naar P1):** de advertentiebudget-beslissing waarop dit punt wachtte is genomen — deze week starten met Ads. CAPI vanaf dag 1 van de eerste campagne inrichten (zie ook punt 24, ChatGPT Ads, zelfde besluit).\n**Update 9 okt 2026:** Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks; likes, shares, saves en video-views van 5+ seconden tellen sindsdien apart mee als \"engage-through-attributie\", standaard aan met een venster van 1 dag (Search Engine Land). Meenemen bij de Ads Manager-inrichting zodra het budget besloten is: anders telt de gerapporteerde ROAS ook niet-klik-conversies mee.\n**Update 25 sep 2026:** Op higrip.nl draait op dit moment géén Meta- of TikTok-pixel. Een nieuw geïnstalleerde pixel zonder advertentieverkeer valt precies in Shopify's Optimized-pauzeprofiel. Zet hem daarom bij installatie meteen op **Always on** (Instellingen → Klantgebeurtenissen → App-pixels). Meta's one-click CAPI (sinds 15 apr 2026) staat in Events Manager.\n**Waarom:** Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro.\n**Wachten op:** Een lopende advertentiebudget-beslissing — genomen, zie Update 26 okt 2026 hierboven.\n**Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.\n**Inspanning:** half dagdeel (pixel + CAPI), zodra het ads-platform gekozen is",
    "controle": {
     "bewijs": "wacht op een advertentiebudget-beslissing van Lars, puur mensenwerk/besluit",
     "controle": "Conversions API (CAPI) instellen",
@@ -52,6 +52,42 @@ window.HI_RESEARCH = {
    },
    "velden": {
     "Waarom": "Zonder server-side signalen optimaliseert Meta op incomplete data. Relevant zodra je serieus gaat adverteren, niet eerder. Meta verwijderde op 12 januari 2026 de 7- en 28-dagen view-attributievensters uit de Ads Insights API (gerapporteerde conversies daalden 15-40% bij veel adverteerders) en mobiele Safari-pixeltracking is door iOS-privacybeperkingen nagenoeg dood (gaten tot 50-70%). CAPI is daarmee geen latere optimalisatie meer, maar de meetbasis vanaf de eerste advertentie-euro."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": true,
+   "body_md": "**Waarom:** Alle zes 2.0-varianten (zwart en wit, alle drie maten) tonen al minstens sinds 16 november een negatieve voorraad in de Shopify Admin API: PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24 (cijfers 23 nov, ongewijzigd t.o.v. 16 nov). `totalInventory` toont per product 0. Tegelijk meldt het Product-schema op de productpagina's nog steeds `InStock` (al los bekend sinds 2 nov) — dat risico op een Google Shopping/Merchant Center-afkeuring (markup zegt op voorraad, werkelijkheid is uitverkocht/backorder) wordt met deze cijfers groter, niet kleiner.\n**Waar:** Shopify admin → voorraadbeheer Performance Gripsokken 2.0 Zwart/Wit; Product-schema (`availability`)\n**Wat:** Team HÏ Grip bevestigt de echte voorraadstatus (backorder toestaan, bijbestellen, of verkoop pauzeren) en past de voorraad en/of het schema daarop aan. Claude wijzigt geen voorraad of instellingen.\n**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])",
+   "controle": null,
+   "id": "backlog#cff701df",
+   "kop": "Besluit: negatieve voorraad op alle zes 2.0-varianten ondanks InStock-schema (nieuw 16 nov 2026, bevestigd 23 nov 2026)",
+   "prioriteit": "P1",
+   "prioriteit_effectief": "P1",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])",
+    "Waar": "Shopify admin → voorraadbeheer Performance Gripsokken 2.0 Zwart/Wit; Product-schema (`availability`)",
+    "Waarom": "Alle zes 2.0-varianten (zwart en wit, alle drie maten) tonen al minstens sinds 16 november een negatieve voorraad in de Shopify Admin API: PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24 (cijfers 23 nov, ongewijzigd t.o.v. 16 nov). `totalInventory` toont per product 0. Tegelijk meldt het Product-schema op de productpagina's nog steeds `InStock` (al los bekend sinds 2 nov) — dat risico op een Google Shopping/Merchant Center-afkeuring (markup zegt op voorraad, werkelijkheid is uitverkocht/backorder) wordt met deze cijfers groter, niet kleiner.",
+    "Wat": "Team HÏ Grip bevestigt de echte voorraadstatus (backorder toestaan, bijbestellen, of verkoop pauzeren) en past de voorraad en/of het schema daarop aan. Claude wijzigt geen voorraad of instellingen."
+   }
+  },
+  {
+   "afgevinkt": false,
+   "beheer": null,
+   "besluit": false,
+   "body_md": "**Waarom:** De collectiebeschrijving van 222 woorden (RUN 2, 28 sep, bevestigd live 19 okt) staat niet meer op `/collections/gripsokken`, en de pagina linkt niet meer intern naar de sportpagina's (padel, tennis, voetbal, rugby) of de vergelijkingspagina — vermoedelijk nam de volledige thema-wissel van begin november dit contentblok niet over. SEO-titel, meta description en alt-teksten van RUN 2 staan nog overeind. De huidige SEO-titel is bovendien 61 tekens (1 te lang). Dit viel samen met het verdwijnen van de positieverbetering die RUN 2 liet zien (12,1 → 7,6 in Search Console).\n**Waar:** `/collections/gripsokken` — Shopify admin\n**Wat:** Een kant-en-klare conceptbeschrijving (161 woorden, met interne links) + kortere titel (57 tekens) staan al in het Shopify-logboek `seo-routine-logboek`, sectie 9.2. `[CHECK]` in dat concept: als los contentblok of als `descriptionHtml` teruggezet, afhankelijk van hoe het huidige thema collectiebeschrijvingen rendert — een mens kiest en plakt.\n**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])\n\n---",
+   "controle": null,
+   "id": "backlog#5d65bfbd",
+   "kop": "[conversietest] Collectiebeschrijving en interne links op /collections/gripsokken verdwenen (nieuw 16 nov 2026, bevestigd 23 nov 2026)",
+   "prioriteit": "P1",
+   "prioriteit_effectief": "P1",
+   "uitvoerbaar": null,
+   "velden": {
+    "Gevonden op": "16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])",
+    "Waar": "`/collections/gripsokken` — Shopify admin",
+    "Waarom": "De collectiebeschrijving van 222 woorden (RUN 2, 28 sep, bevestigd live 19 okt) staat niet meer op `/collections/gripsokken`, en de pagina linkt niet meer intern naar de sportpagina's (padel, tennis, voetbal, rugby) of de vergelijkingspagina — vermoedelijk nam de volledige thema-wissel van begin november dit contentblok niet over. SEO-titel, meta description en alt-teksten van RUN 2 staan nog overeind. De huidige SEO-titel is bovendien 61 tekens (1 te lang). Dit viel samen met het verdwijnen van de positieverbetering die RUN 2 liet zien (12,1 → 7,6 in Search Console).",
+    "Wat": "Een kant-en-klare conceptbeschrijving (161 woorden, met interne links) + kortere titel (57 tekens) staan al in het Shopify-logboek `seo-routine-logboek`, sectie 9.2. `[CHECK]` in dat concept: als los contentblok of als `descriptionHtml` teruggezet, afhankelijk van hoe het huidige thema collectiebeschrijvingen rendert — een mens kiest en plakt."
    }
   },
   {
@@ -1067,7 +1103,7 @@ window.HI_RESEARCH = {
    "dubbel": 21,
    "gedaan": 40,
    "handmatig": 308,
-   "ongecontroleerd": 6,
+   "ongecontroleerd": 12,
    "open": 132
   },
   "vandaag_gedaan": [],
@@ -2210,7 +2246,7 @@ window.HI_RESEARCH = {
    "toegepast": 0
   }
  },
- "gebouwd": "2026-11-23T05:11:30+00:00",
+ "gebouwd": "2026-11-23T05:26:18+00:00",
  "kaart_md": "# Waar staat wat — onderzoek, routines en werkbestanden\n\n> Map: [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md)\n\n> Kaart van alle plekken waar HÏ Grip-onderzoek, routines en werkbestanden leven. De vault is de bron van waarheid; het dashboard toont wat hier staat. Bijgewerkt 2026-10-02.\n\n| Wat                                                                            | Waar                                                                                                                                                                                                                          | Bijgewerkt                           | Hoe kom je erbij                                                                                                                            |\n| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |\n| **Onderzoeksnotities** (één bestand per onderzoek, vast formaat; root = inbox, themamappen: Weekoverzichten, Growth-radar, Ads, SEO, Website-CRO, Website-techniek, B2B-en-leveranciers, Strategie-en-concurrentie, Social-en-video, Dashboard-en-vault)               | `02_Dashboard\\` in de vault                                                                                                                                                                                                   | bij elk onderzoek (routine of los)   | Obsidian, of het dashboard (feed + detailpaneel)                                                                                            |\n| **Dashboard**                                                                  | HÏ Grip Research Dashboard (artifact, gepind in de sidebar)                                                                                                                                                                   | na elke build/publish                | link in [Home](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/Home.md) en `CLAUDE.md` §15; bewerken alleen met interact-rechten                                                                   |\n| **Register + buildscript**                                                     | `02_Dashboard\\_build\\` (`build_register.py`, `register.js`, `PROCEDURE.md`)                                                                                                                                                   | bij elke build                       | `python 02_Dashboard\\_build\\build_register.py`                                                                                              |\n| **Dashboard-bron (HTML)**                                                      | `02_Dashboard\\_dashboard\\index.html`                                                                                                                                                                                          | bij elke wijziging aan de pagina     | publish volgens `PROCEDURE.md`                                                                                                              |\n| **Actiebacklog** (één backlog voor alle routines, P1/P2/P3)                    | `02_Dashboard\\_backlog\\ACTIEBACKLOG.md` + `AFGEROND.md` (sinds 25-09 in de vault)                                                                                                                                             | door de routines                     | Obsidian, of de pagina Acties in het dashboard                                                                                              |\n| **Geheugen van de routines** (anti-herhaling)                                  | `02_Dashboard\\_geheugen\\<routine>.md`; de regel staat in `_geheugen\\README.md`                                                                                                                                                | aan het eind van elke run            | Obsidian                                                                                                                                    |\n| **Feiten** (prijzen, handles, URL's, ID's, claims)                             | [Feiten & Actuele Staat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/00_Brand_Core/Feiten%20%26%20Actuele%20Staat.md) (`00_Brand_Core\\`)                                                                                                                                                                                 | bij elke wijziging of live afwijking | Obsidian; routines lezen dit als eerste                                                                                                     |\n| **Gedeelde Claude-instructies**                                                | `CLAUDE.md` in de hoofdmap van de vault                                                                                                                                                                                       | bij merk- of werkafspraak            | laadt automatisch bij elke Claude die in de vault werkt                                                                                     |\n| **Routine-prompts + rolverdeling**                                             | `01_Agent_Infrastructuur\\Routines\\` (`README.md` = rolverdeling en status)                                                                                                                                                    | bij wijziging van een routine        | Obsidian; de routines op info@ verwijzen hiernaar                                                                                           |\n| **Growth-radar-dagrapporten (archief)**                                        | `<gebruikersmap>\\.claude\\research\\growth-radar\\rapporten\\` (tot 25-09)                                                                                                                                                          | —                                    | nieuwe rapporten staan alleen als notitie in `02_Dashboard\\`                                                                                |\n| **Geplande lokale routines**                                                   | `<gebruikersmap>\\.claude\\scheduled-tasks\\`                                                                                                                                                                                      | —                                    | **staan sinds 25-09 uit**; alle routines draaien als cloudroutine op info@ (status en tijden: `01_Agent_Infrastructuur\\Routines\\README.md`) |\n| **Denzel-weekoverzicht** (cloud-routine, maandag; tijd in de Routines-README)  | claude.ai routine `trig_01D9XwMiVvuq1FWr7CLoYTmN`; beschrijving in [Denzel Weekoverzicht — Routine](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Weekoverzichten/Denzel%20Weekoverzicht%20%E2%80%94%20Routine.md); output tot 14-09 in `01_Agent_Infrastructuur\\Beheer\\Weekoverzicht\\`, daarna `02_Dashboard\\JJJJ-MM-DD-weekoverzicht.md` | wekelijks                            | claude.ai → Routines (account info@higrip.nl)                                                                                               |\n| **Skills / commands** (`/shopify-seo`, `/research-nieuw`, `/research-sync`, …) | `<gebruikersmap>\\.claude\\commands\\*.md`                                                                                                                                                                                         | bij wijziging                        | typ `/naam` in Claude Code                                                                                                                  |\n| **Claude-geheugen** (werkafspraken, projectcontext)                            | `<gebruikersmap>\\.claude\\memory\\` (`MEMORY.md` = index)                                                                                                                                                                         | bij nieuwe afspraak                  | wordt automatisch geladen; `project_higrip.md` = webshopcontext, `project_higrip_seo.md` = audit sep 2026                                   |\n| **Merkregels voor Claude**                                                     | `<gebruikersmap>\\.claude\\CLAUDE.md`                                                                                                                                                                                             | bij merkbesluit                      | wordt automatisch geladen in elke sessie                                                                                                    |\n| **Plannen**                                                                    | `<gebruikersmap>\\.claude\\plans\\`                                                                                                                                                                                                | per project                          | bestanden; `research-dashboard.md` = dit systeem                                                                                            |\n| **Projectmappen**                                                              | `<gebruikersmap>\\.claude\\projects\\higrip-padel\\`, `higrip-redesign\\`, `higrip-skisokken\\`                                                                                                                                       | per project                          | bestanden (Liquid/CSS-werk, geen onderzoek)                                                                                                 |\n| **Shopify-thema (werkkopie)**                                                  | thema-ID's en lokale werkmappen staan alleen in [Technische Procedures](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Technische%20Procedures.md)                                                                                                                                                     | bij themawerk                        | Shopify CLI — eerst `shopify theme list`, nooit naar live zonder opdracht van Lars                                                          |\n| **Website-analyse in de vault**                                                | `06_Website_Agent\\Analyse\\` ([Stand van Zaken — Werkdossier 2026-09-04](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Stand%20van%20Zaken%20%E2%80%94%20Werkdossier%202026-09-04.md), [Analytics & KPI Dashboard](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Analytics%20%26%20KPI%20Dashboard.md), [Conversie Optimalisatie Checklist](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Analyse/Conversie%20Optimalisatie%20Checklist.md))                                                                              | bij audit                            | Obsidian                                                                                                                                    |\n| **Doorgevoerde themawijzigingen**                                              | [Update Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/06_Website_Agent/Technisch/Update%20Log.md) (`06_Website_Agent\\Technisch\\`)                                                                                                                                                                                | bij elke push                        | Obsidian                                                                                                                                    |\n| **Procesleerpunten agents**                                                    | [Feedback & Iteratie Log](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Feedback%20%26%20Iteratie%20Log.md) (`01_Agent_Infrastructuur\\Beheer\\`)                                                                                                                                                               | per iteratie                         | Obsidian                                                                                                                                    |\n| **Compliance**                                                                 | [Compliance To-Do Lijst](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/08_Operations_Agent/Compliance%20To-Do%20Lijst.md) (`00_Brand_Core\\Compliance\\`) + notitie `2026-09-07-compliance-todo`                                                                                                                               | 2026-09-14                           | Obsidian / dashboard                                                                                                                        |\n| **Archief (oud werk)**                                                         | `<gebruikersmap>\\.claude\\archief\\` met `README.md`                                                                                                                                                                              | 2026-09-17                           | bestanden; KNVB-scraper en oude landingsprojecten                                                                                           |\n| **KNVB-clubdata (B2B-outreach)**                                               | `<gebruikersmap>\\.claude\\archief\\knvb-scraper\\` (`knvb_clubs_v7.xlsx` = deliverable)                                                                                                                                            | 2026-06-23                           | zie `memory\\project_knvb_scraper.md`                                                                                                        |\n\n## Alle notities in deze map (automatisch)\n\nAutomatisch (`vault_nav.py`), niet met de hand bewerken.\n\nZoek gericht; lees dit niet in zijn geheel.\n\n- Ads: 35 notities\n- B2B-en-leveranciers: 3 notities\n- Growth-radar: 14 notities\n- Onderzoek: 4 notities\n- Onderzoeksnotities (datum-id in de bestandsnaam): 1 notities\n- Routines: 15 notities\n- SEO: 16 notities\n- Social-en-video: 1 notities\n- Strategie-en-concurrentie: 3 notities\n- Website-CRO: 7 notities\n- Website-techniek: 8 notities\n- Weekoverzichten: 4 notities\n- _backlog: 2 notities\n- _build: 1 notities\n- _geheugen: 13 notities\n- _uitvoer: 4 notities\n",
  "notities": [
   {
@@ -2297,6 +2333,98 @@ window.HI_RESEARCH = {
      "beheer": null,
      "besluit": true,
      "controle": null,
+     "id": "2026-11-23-seo-conversietest-run-9#94152b81",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "Besluit: negatieve voorraad op alle zes 2.0-varianten (PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24) terwijl Product-schema InStock blijft melden — risico op Merchant Center-afkeuring; bevestig de echte voorraadstatus.",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-23-seo-conversietest-run-9#c1e63263",
+     "prioriteit": "P1",
+     "prioriteit_effectief": "P1",
+     "tekst": "[conversietest] Collectiebeschrijving en interne links naar de sportpagina's op /collections/gripsokken zijn sinds de thema-wissel van begin november verdwenen (ontdekt 16 nov, nu opnieuw bevestigd) — concepttekst + kortere titel staan al klaar in het logboek §9.2.",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
+     "id": "2026-11-23-seo-conversietest-run-9#81f37ff1",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "Besluit: bevestig vóór publicatie dat thema 204029296967 nog het juiste/actuele unpublished thema is — het MAIN-thema is op 23 nov alweer gewisseld (nu 204874187079) en dit thema is niet gegarandeerd een actuele kopie.",
+     "uitvoerbaar": null
+    },
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": false,
+     "controle": null,
+     "id": "2026-11-23-seo-conversietest-run-9#fcf47c4c",
+     "prioriteit": "P2",
+     "prioriteit_effectief": "P2",
+     "tekst": "De `theme_bash`-connector (Shopify MCP) weigert deze run met \"This connector requires additional permissions\" — moet opnieuw gekoppeld worden met extra rechten; themawerk liep nu via directe GraphQL-mutaties (trager, foutgevoeliger).",
+     "uitvoerbaar": null
+    }
+   ],
+   "body_md": "# SEO- en conversietest run 9 — auditblok D (conversie), RUN 8 nooit geregistreerd\n\n> Map: [Waar staat wat](https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/Waar%20staat%20wat.md)\n\n## In het kort\nHet Shopify-logboek (`seo-routine-logboek`) bevatte al een volledige \"RUN 8 — 16 november 2026\" met twee P1-bevindingen en een gebouwd concept, maar geen van beide is ooit in de vault aangekomen: geen notitie, geen backlogpunt, geen geheugenregel. Die twee punten staan nu, een week te laat, alsnog in de backlog. Deze run (RUN 9) deed daarnaast de diepe audit van blok D (conversie — rotatie liep al door naar blok D volgens het logboek, niet blok B zoals het verouderde vault-geheugen nog zei), herbouwde het Waardebalk-concept in het actuele unpublished testthema, en meette een vierde nul-omzetweek in zes weken.\n\n## Kerncijfers\n- **358** · Sessies deze week (17-23 nov) · +122% t.o.v. vorige week (161)\n- **0** · Orders deze week · vorige week 3 (€91,16)\n- **1,86% → 0%** · Conversieratio, vorige week vs. deze week\n- **-30** · Laagste variant-voorraad (PGSZ203 43–47), ondanks InStock-schema\n\n## Acties\n- [ ] P1 · Besluit: negatieve voorraad op alle zes 2.0-varianten (PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24) terwijl Product-schema InStock blijft melden — risico op Merchant Center-afkeuring; bevestig de echte voorraadstatus.\n- [ ] P1 · [conversietest] Collectiebeschrijving en interne links naar de sportpagina's op /collections/gripsokken zijn sinds de thema-wissel van begin november verdwenen (ontdekt 16 nov, nu opnieuw bevestigd) — concepttekst + kortere titel staan al klaar in het logboek §9.2.\n- [ ] P2 · Besluit: bevestig vóór publicatie dat thema 204029296967 nog het juiste/actuele unpublished thema is — het MAIN-thema is op 23 nov alweer gewisseld (nu 204874187079) en dit thema is niet gegarandeerd een actuele kopie.\n- [ ] P2 · De `theme_bash`-connector (Shopify MCP) weigert deze run met \"This connector requires additional permissions\" — moet opnieuw gekoppeld worden met extra rechten; themawerk liep nu via directe GraphQL-mutaties (trager, foutgevoeliger).\n\n## Bevindingen\n### Procesgat: RUN 8 (16 november) nooit geregistreerd\nHet Shopify-logboek `seo-routine-logboek` bevat sinds 16 november een volledige sectie \"RUN 8\" met twee P1-bevindingen (collectiebeschrijving + interne links verdwenen op /collections/gripsokken; negatieve voorraad op de zes 2.0-varianten) en een gebouwd concept (nieuwe collectiebeschrijving + kortere titel). Geen van beide kwam in de vault terecht: er bestaat geen `02_Dashboard/2026-11-16-seo-conversietest-run-8.md`, geen backlogpunt, geen geheugenregel voor die datum. Het vault-geheugen (`_geheugen/seo.md`) liep daardoor een volle auditrotatie-cyclus achter (zei nog \"volgende: blok B\", terwijl het logboek na RUN 8 al \"volgende: blok D\" meldde). Oorzaak niet te achterhalen vanuit deze sessie (geen git-geschiedenis van een gestopte run gevonden); vermoedelijk is een eerdere run gestopt na de Shopify-stap maar vóór de vault-registratie. Beide RUN 8-bevindingen staan nu, een week te laat, als backlogpunten hierboven.\n\n### Audit — blok D (conversie): bevestigd, geen nieuwe bevindingen\nGecontroleerd op de productpagina (Performance Gripsokken 2.0 Zwart): iDEAL/Wero ontbreken nog in de betaalicoon-rij (al open, backlog); USP-balk, sticky add-to-cart en de bundels (3-pack/5-pack, \"Meest gekozen\") zijn aanwezig en ongewijzigd; geen sterren/reviewwidget en geen FAQPage (geblokkeerd op de reviewapp-keuze, backlog#10ef70ca); geen cross-sell-sectie. Het Product-schema meldt InStock op alle zes 2.0-varianten terwijl de werkelijke voorraad negatief is — zie de actie hierboven.\n\n### Meting (Shopify Analytics, 7 dagen / 7 daarvoor)\n| Metric | 17-23 nov | 10-16 nov |\n|---|---|---|\n| Sessies | 358 | 161 |\n| Orders | 0 | 3 |\n| Omzet | €0 | €91,16 |\n| Add-to-cart sessies | 10 | 9 |\n| Bereikte checkout | 3 | 7 |\n| Voltooide checkout | 0 | 3 |\n| Conversieratio | 0% | 1,86% |\n\nSessies stegen sterk (vooral direct 80→210 en social 23→104) maar leverden geen enkele order op: de vierde nul-omzetweek in zes weken. Dit bevestigt verder het patroon achter het al openstaande backlogpunt \"patroon van herhaalde nul-omzetweken laten onderzoeken\" (geen nieuw punt). Top landingspagina's: `/` (175), `/products/performance-gripsokken-2-0-wit` (76), `/pages/early-access` (24, nieuw), `/products/performance-gripsokken-2-0-zwart` (23), `/password` (15, nieuw en opvallend voor een live store — mogelijk een tijdelijke campagne-/preview-afscherming, niet verder onderzocht).\n\n### Gebouwd (concept): Waardebalk herbouwd in het actuele unpublished thema\nHet `hi-pack-value-bar`-blok (RUN 3, backlogpunt 1+12 — gratis-verzenddrempel + prijs per paar) stond sinds de thema-wissel van begin november alleen nog in het verlaten testthema 200249901383 (zie RUN 7). Vandaag overgezet naar thema `204029296967` (UNPUBLISHED, \"Bijgewerkte kopie van Live website 04-11-2026\"): `blocks/hi-pack-value-bar.liquid` en `assets/hi-pack-value-bar.js` 1-op-1 overgenomen, en toegevoegd aan `templates/product.json` van dat thema, direct na de variant-picker. Via directe GraphQL-mutaties (`themeFilesUpsert`), omdat de `theme_bash`-sandbox deze run een permissiefout gaf. Gecontroleerd door het bestand na upload terug te lezen: identiek aan wat verstuurd is. **[CHECK]**: bevestig vóór publicatie dat dit nog het actuele unpublished thema is — het themalandschap wisselde op 23 nov alweer (nieuw MAIN 204874187079).\n\n**Testplan:** hypothese: de balk verhoogt de add-to-cart-ratio op productpagina's (nulmeting RUN 3: 9/276 = 3,3%). KPI: add-to-cart-ratio op productpaginasessies. Startdatum: zodra gepubliceerd. Evaluatiedatum: 4-8 weken na publicatie.\n\n### Evaluatie lopende testplannen\n- **RUN 2 (/collections/gripsokken):** label blijft **werkt niet meer** — vandaag opnieuw bevestigd dat collectiebeschrijving en interne links nog ontbreken.\n- **RUN 5 (productType/GTIN):** label blijft **live, te vroeg voor evaluatie** — geen nieuwe controle vandaag.\n- **Waardebalk:** van **te vroeg/risico op verlies** naar **opnieuw gebouwd, nog niet gepubliceerd**; testklok start pas bij publicatie.\n\n## Wat niet lukte\n`python 02_Dashboard/_tools/google_data.py` (elke subcommand) werd deze run volledig geblokkeerd door een Bash-permissieplugin (cc-plugin-privacy: het script bevat het service-account-e-mailadres), en er was geen GA4-MCP beschikbaar in deze sessie. Daardoor geen GA4-kruisverwijzing en geen Search Console-hergebruik mogelijk deze week (module B kon om dezelfde reden niet draaien); gemeten is uitsluitend met Shopify Analytics. De `theme_bash`-connector weigerde met een permissiefout; themawerk liep via directe GraphQL-mutaties (zie Acties).\n\n## Bronnen\n- Shopify Analytics (ShopifyQL) — sessies, conversie, add-to-cart, landingspagina's\n- Shopify Admin API — voorraad, productType/vendor/barcode, thema-lijst\n- `https://www.higrip.nl/collections/gripsokken`, `/products/performance-gripsokken-2-0-zwart` (live curl-controle)\n- Shopify-logboek `seo-routine-logboek` (RUN 7, 8, 9)\n- `02_Dashboard/_geheugen/seo.md`, `02_Dashboard/_backlog/ACTIEBACKLOG.md`",
+   "bron": "routine",
+   "bronbestand": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "bronbestand_url": "https://admin.shopify.com/store/raqds3-tb/pages/168287895879",
+   "categorie": "CRO",
+   "datum": "2026-11-23",
+   "deadline": "",
+   "gerelateerd": [
+    "2026-11-23-regressiecheck",
+    "2026-11-09-seo-conversietest-run-7"
+   ],
+   "id": "2026-11-23-seo-conversietest-run-9",
+   "kansen": [],
+   "kerncijfers": [
+    {
+     "label": "Sessies deze week (17-23 nov)",
+     "verschil": "+122% t.o.v. vorige week (161)",
+     "waarde": "358"
+    },
+    {
+     "label": "Orders deze week",
+     "verschil": "vorige week 3 (€91,16)",
+     "waarde": "0"
+    },
+    {
+     "label": "Conversieratio, vorige week vs. deze week",
+     "verschil": "",
+     "waarde": "1,86% → 0%"
+    },
+    {
+     "label": "Laagste variant-voorraad (PGSZ203 43–47), ondanks InStock-schema",
+     "verschil": "",
+     "waarde": "-30"
+    }
+   ],
+   "kerntitel": "RUN 8 (16 nov) nooit vastgelegd; negatieve voorraad 2.0-varianten ondanks InStock",
+   "prioriteit": "P1",
+   "routine": "seo-conversietest",
+   "samenvatting": "Een volledige RUN (16 november, blok B) is in het Shopify-logboek geschreven maar nooit in de vault-backlog, -notities of -geheugen terechtgekomen; die twee P1-bevindingen staan nu, een week te laat, alsnog in de backlog. De diepe audit van blok D (conversie) bevestigt dat de negatieve voorraad op alle zes 2.0-varianten aanhoudt terwijl het Product-schema nog InStock meldt, en dat deze week de vierde nul-omzetweek in zes weken is ondanks een sterke stijging in sessies.",
+   "status": "nieuw",
+   "titel": "SEO- en conversietest run 9 — auditblok D (conversie), RUN 8 nooit geregistreerd",
+   "vault_url": "https://github.com/HIGrip/HI-Grip-Vault-/blob/H%C3%8F-Grip-Vault-obsidian/02_Dashboard/2026-11-23-seo-conversietest-run-9.md",
+   "vervangt": [],
+   "wat_niet_lukte": "`python 02_Dashboard/_tools/google_data.py` (elke subcommand) werd deze run volledig geblokkeerd door een Bash-permissieplugin (cc-plugin-privacy: het script bevat het service-account-e-mailadres), en er was geen GA4-MCP beschikbaar in deze sessie. Daardoor geen GA4-kruisverwijzing en geen Search Console-hergebruik mogelijk deze week (module B kon om dezelfde reden niet draaien); gemeten is uitsl…"
+  },
+  {
+   "acties": [
+    {
+     "afgevinkt": false,
+     "beheer": null,
+     "besluit": true,
+     "controle": null,
      "id": "2026-11-23-regressiecheck#12bc123c",
      "prioriteit": "P2",
      "prioriteit_effectief": "P2",
@@ -2323,7 +2451,8 @@ window.HI_RESEARCH = {
    "datum": "2026-11-23",
    "deadline": "",
    "gerelateerd": [
-    "2026-11-09-regressiecheck"
+    "2026-11-09-regressiecheck",
+    "2026-11-23-seo-conversietest-run-9"
    ],
    "id": "2026-11-23-regressiecheck",
    "kansen": [],
@@ -16640,13 +16769,13 @@ window.HI_RESEARCH = {
  ],
  "stats": {
   "open_per_prioriteit": {
-   "P1": 175,
-   "P2": 220,
+   "P1": 179,
+   "P2": 222,
    "P3": 51
   },
   "per_categorie": {
    "B2B": 2,
-   "CRO": 16,
+   "CRO": 17,
    "Merk": 3,
    "Product": 1,
    "SEO": 21,
@@ -16710,12 +16839,12 @@ window.HI_RESEARCH = {
     "week": "2026-W47"
    },
    {
-    "aantal": 3,
+    "aantal": 4,
     "start": "2026-11-23",
     "week": "2026-W48"
    }
   ],
-  "totaal_notities": 99
+  "totaal_notities": 100
  },
  "vault_branch": "HÏ-Grip-Vault-obsidian"
 };

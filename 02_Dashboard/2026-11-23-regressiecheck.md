@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "higripsportswear.com bestaat, is live en staat als hreflang-doel voor 11 EU-landen op elke higrip.nl-pagina, maar stond nergens in de vault. Verder blijven alle bekende technische afwijkingen (meta's, 404-artikel, alt-teksten) ongewijzigd open en zijn er 2 nieuwe kleine afwijkingen op twee campagnepagina's."
-gerelateerd: [2026-11-09-regressiecheck]
+gerelateerd: [2026-11-09-regressiecheck, 2026-11-23-seo-conversietest-run-9]
 vervangt: []
 bronbestand: ""
 deadline: ""

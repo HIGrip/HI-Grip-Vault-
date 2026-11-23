@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 23 november 2026 (growth-radar)
-Open: 35 · Afgerond: 16
+Laatst bijgewerkt: 23 november 2026 (seo)
+Open: 39 · Afgerond: 16
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -33,6 +33,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wachten op:** Een lopende advertentiebudget-beslissing — genomen, zie Update 26 okt 2026 hierboven.
 **Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.
 **Inspanning:** half dagdeel (pixel + CAPI), zodra het ads-platform gekozen is
+
+### [ ] Besluit: negatieve voorraad op alle zes 2.0-varianten ondanks InStock-schema (nieuw 16 nov 2026, bevestigd 23 nov 2026)
+**Waarom:** Alle zes 2.0-varianten (zwart en wit, alle drie maten) tonen al minstens sinds 16 november een negatieve voorraad in de Shopify Admin API: PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24 (cijfers 23 nov, ongewijzigd t.o.v. 16 nov). `totalInventory` toont per product 0. Tegelijk meldt het Product-schema op de productpagina's nog steeds `InStock` (al los bekend sinds 2 nov) — dat risico op een Google Shopping/Merchant Center-afkeuring (markup zegt op voorraad, werkelijkheid is uitverkocht/backorder) wordt met deze cijfers groter, niet kleiner.
+**Waar:** Shopify admin → voorraadbeheer Performance Gripsokken 2.0 Zwart/Wit; Product-schema (`availability`)
+**Wat:** Team HÏ Grip bevestigt de echte voorraadstatus (backorder toestaan, bijbestellen, of verkoop pauzeren) en past de voorraad en/of het schema daarop aan. Claude wijzigt geen voorraad of instellingen.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])
+
+### [ ] [conversietest] Collectiebeschrijving en interne links op /collections/gripsokken verdwenen (nieuw 16 nov 2026, bevestigd 23 nov 2026)
+**Waarom:** De collectiebeschrijving van 222 woorden (RUN 2, 28 sep, bevestigd live 19 okt) staat niet meer op `/collections/gripsokken`, en de pagina linkt niet meer intern naar de sportpagina's (padel, tennis, voetbal, rugby) of de vergelijkingspagina — vermoedelijk nam de volledige thema-wissel van begin november dit contentblok niet over. SEO-titel, meta description en alt-teksten van RUN 2 staan nog overeind. De huidige SEO-titel is bovendien 61 tekens (1 te lang). Dit viel samen met het verdwijnen van de positieverbetering die RUN 2 liet zien (12,1 → 7,6 in Search Console).
+**Waar:** `/collections/gripsokken` — Shopify admin
+**Wat:** Een kant-en-klare conceptbeschrijving (161 woorden, met interne links) + kortere titel (57 tekens) staan al in het Shopify-logboek `seo-routine-logboek`, sectie 9.2. `[CHECK]` in dat concept: als los contentblok of als `descriptionHtml` teruggezet, afhankelijk van hoe het huidige thema collectiebeschrijvingen rendert — een mens kiest en plakt.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])
 
 ---
 

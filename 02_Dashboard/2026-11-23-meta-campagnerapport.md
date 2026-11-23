@@ -56,7 +56,8 @@ De Ads Agent las de campagnes alleen-lezend uit Meta (26-10 t/m 23-11-2026, peil
 ### Waarom de een beter werkt
 - Het optimalisatie-event bepaalt wie Meta vindt: klikdoelen leveren klikkers, het winkelwagen-doel levert winkelwagens.
 - "Wat houdt je nog tegen?" (€15,91, 20 klikken, 4 winkelwagens, €3,98 per winkelwagen) combineert product, prijsanker €53,85 → €44,95, sociaal bewijs en één CTA. De 2 aankopen die Meta eraan toekent, kwamen via de mail.
-- Lifestyle voetbal kreeg €120,72 (71%) met 8 winkelwagens en 0 aankopen; de sok is klein en er staat geen prijs. Acht van de elf advertenties kregen minder dan €5 en zijn niet getest.
+- Opstartfout (gemeld door het team): in NL Rugby/Voetbal/Product stond tot 22-11 13:48 per ongeluk alleen Lifestyle voetbal live. Daardoor ging €97,98 (7, 20 en 21-11) naar die ene advertentie. Sinds alle 11 live staan (€74,55 t/m peiling): groep Product 46%, Lifestyle voetbal 30%, de andere zes 24%; op 23-11 kreeg Lifestyle voetbal nog €0,97. De vergelijking tussen advertenties is dus pas anderhalve dag eerlijk, en 23-11 is vertekend door de Early Access-mail.
+- Lifestyle voetbal: €120,72 totaal, 8 winkelwagens, 0 aankopen; de sok is klein en er staat geen prijs.
 - Founders-brieven hebben de laagste klikratio (rugby 0,36%): te veel leestekst voor koud publiek in de feed.
 - Reels en Stories zijn per klik 30 tot 40% goedkoper dan de feed.
 - 45+ krijgt 54% van de uitgaven in NL Rugby/Voetbal/Product en 62% in BE.

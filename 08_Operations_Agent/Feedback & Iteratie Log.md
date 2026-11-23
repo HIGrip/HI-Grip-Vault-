@@ -1,12 +1,21 @@
 ---
 type: kennis
 gebied: agent-infrastructuur
-bijgewerkt: 2026-11-16
+bijgewerkt: 2026-11-23
 ---
 
 # Feedback & Iteratie Log
 
 > Bevindingen uit het bouwen/gebruiken van sub-agents — vastgelegd per iteratie, zodat de volgende sub-agent niet dezelfde uitzoek-omweg hoeft te maken. Zie [[Stappenplan — Verdere Bouw]] voor de fasering.
+
+---
+
+## 2026-11-23 — GA4-koppeling in de cloudsessie nu 2 weken op rij geblokkeerd
+
+**Wat er gebeurde:** `python3 02_Dashboard/_tools/google_data.py check` werd op 16-11 en opnieuw op 23-11 door een sandbox/privacyregel van de cloudsessie geweigerd (de regel ziet kennelijk iets in het script of de omgeving dat lijkt op een combinatie van het account-e-mailadres met een klant-/organisatie-identiteit, en blokkeert het hele commando preventief). Beide keren is de routine correct gestopt zonder cijfers te verzinnen en is uitgeweken naar alleen de Shopify-omzet, zoals de regels voorschrijven.
+**Patroon (voor de tweede keer):** dit is nu structureel, geen incident. Zonder GA4 ontbreken sessies, kanalen, landingspagina's en de funnel tot en met `begin_checkout` al twee weken op rij in het weekoverzicht — precies de cijfers die boven de Shopify-omzet uitleggen *waarom* iets gebeurt (bijv. of de derde nul-omzetweek van 23-11 samenvalt met een verkeersdip).
+**Les:** bij een herhaalde, identieke toolblokkade (niet een incidentele fout) niet elke week opnieuw proberen en melden als los feit, maar het expliciet als open infrastructuurpunt agenderen bij Lars/Timo (wie de cloudomgeving beheert) in plaats van alleen in het weekoverzicht te laten terugkomen. Voorstel voor een volgende sessie: controleer of `google_data.py` een e-mailadres of klantnaam in een URL, header of foutmelding plaatst (zie de sandboxmelding) en vervang dat door een generieke client-aanduiding, of laat de gebruiker zelf de env-var zetten — dat is precies de uitzondering die de sandboxregel toestaat.
+**Grenzen:** administratieve vastlegging; geen toegang tot het script zelf om de oorzaak te bevestigen (alleen de foutmelding van de sandbox was zichtbaar), geen sterren, niets afgevinkt.
 
 ---
 

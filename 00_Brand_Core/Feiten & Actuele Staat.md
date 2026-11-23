@@ -24,6 +24,7 @@ laatst-geverifieerd: 2026-10-11
 | Feit | Waarde | Geverifieerd |
 |---|---|---|
 | Domein | https://www.higrip.nl (higrip.nl redirect naar www) | 2026-09-25 |
+| Internationaal domein | **Nieuw gevonden 23-11-2026 (regressiecheck):** `higripsportswear.com` bestaat, is live (Shopify, zelfde thema-assets `hi-sale-price.css`/`hi-headings.css`/`hi-app-fixes.css`) en staat als hreflang-doel voor AT/BE/DE/FR/IT/LU/PL/PT/RO/CH/GB op elke higrip.nl-pagina. Niet eerder in dit bestand of in een notitie vastgelegd — vermoedelijk een Shopify Markets-opzet voor overige EU-landen. **Besluit nodig:** bevestigen of dit bewust en actueel is (zie backlogpunt). | 2026-11-23 (regressiecheck, nog niet door Lars bevestigd) |
 | Shopify-winkel | `hi-grip.myshopify.com` · admin-slug `raqds3-tb` | 2026-09-23 |
 | Thema | Horizon (Online Store 2.0) | 2026-09-15 |
 | Live thema-ID | Wisselt. **Altijd `shopify theme list` draaien** en live beschermen op rol (`live`/`main`), niet op nummer. Het laatst bekende werk- en live-ID staat alleen in [[Technische Procedures]]. Nooit naartoe pushen zonder opdracht van Lars. | zie [[Technische Procedures]] |

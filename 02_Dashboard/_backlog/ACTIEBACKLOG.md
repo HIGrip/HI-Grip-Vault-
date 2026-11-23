@@ -252,6 +252,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
 **Update 22 nov 2026 (weekonderhoud):** stond sinds 19 okt (34 dagen) zonder beweging op P1 — verlaagd naar P2. Geen blokkade: pushen van de resterende schema-bestanden is een reguliere Design Agent-taak, alleen nog niet ingepland.
 
+### [ ] Besluit: `higripsportswear.com` bevestigen als bewust internationaal domein (nieuw 23 nov 2026)
+**Waarom:** De regressiecheck van vandaag ontdekte dat `higripsportswear.com` bestaat, live is (Shopify, dezelfde thema-assets `hi-sale-price.css`/`hi-headings.css`/`hi-app-fixes.css` als het hoofdthema) en als hreflang-doel staat voor AT, BE, DE, FR, IT, LU, PL, PT, RO, CH en GB op **elke** higrip.nl-pagina (homepage, producten, collectie). Dit domein staat nergens in het feitenbestand of een eerdere notitie — het is dus of een bewuste Shopify Markets-opzet voor overige EU-landen die nooit is vastgelegd, of een niet-afgestemde test die per ongeluk in de hreflang-tags is gekomen.
+**Waar:** `higripsportswear.com` (hele site) en de hreflang-tags op www.higrip.nl
+**Wat:** Lars of Timo bevestigt of dit domein bewust en actueel is. Zo ja: vastleggen in [[Feiten & Actuele Staat]] (voorlopig al genoteerd met `[CHECK]`-status) en controleren of prijzen/voorraad daar kloppen. Zo nee: hreflang-tags opschonen en het domein uitzetten of op noindex zetten.
+**Gevonden op:** 23 november 2026 (regressiecheck)
+
+### [ ] [regressie] `/pages/early-access` en `/pages/early-access-bedankt` missen een meta description (nieuw 23 nov 2026)
+**Waarom:** Beide pagina's staan deze week voor het eerst in `sitemap_pages_1.xml` (campagnepagina's voor "HÏ Performance Days", zie de lopende Ads-planning). Titels zijn aanwezig en kloppen ("Early access HÏ Performance Days – HÏ Grip" / "Early access bedankt – HÏ Grip"), maar er is geen `<meta name="description">` en geen `robots`-meta (dus standaard indexeerbaar).
+**Waar:** `/pages/early-access`, `/pages/early-access-bedankt` — Shopify admin
+**Wat:** Bevestigen of dit tijdelijke campagnepagina's zijn (dan `noindex,nofollow`, zoals de bekende `-a`/`-b`-testpagina's) of dat ze een meta description moeten krijgen voor de duur van de campagne.
+**Gevonden op:** 23 november 2026 (regressiecheck)
+
 ---
 
 ## P3 — Op de radar

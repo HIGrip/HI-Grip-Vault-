@@ -1,14 +1,14 @@
 ---
 id: 2026-11-23-meta-campagnerapport
 titel: "Meta-campagnerapport: vier actieve campagnes en Product VS Gevoel"
-kerntitel: "Sok, prijs en twijfelantwoord verkopen; sfeer geeft alleen klikken. ROAS 0,31"
+kerntitel: "Meta's 3 aankopen kwamen via de Early Access-mail; via advertentieklik 0"
 datum: 2026-11-23
 bron: los
 routine: ""
 categorie: Social
 status: nieuw
 prioriteit: P1
-samenvatting: "Vijf campagnes kostten samen €361,78 voor 3 aankopen en €112,70 omzet (ROAS 0,31); de enige advertentie met aankopen ('Wat houdt je nog tegen?') toont de sok, het prijsanker en antwoorden op bezwaren, terwijl sfeerbeelden en klikdoelen alleen goedkope klikken opleveren. Het uitgavenplafond is bij €130 per dag binnen ongeveer 3 dagen bereikt, en de meting (Early Access-event, aankoopwaarde) klopt deels niet."
+samenvatting: "Vijf campagnes kostten samen €361,78; Meta meldt 3 aankopen (€112,70), maar in Shopify kwamen alle drie als laatste via de Early Access-mail binnen, dus via een advertentieklik is er niets verkocht. Advertenties met de sok, het prijsanker en antwoorden op bezwaren ('Wat houdt je nog tegen?') geven de goedkoopste winkelwagens, sfeerbeelden en klikdoelen alleen goedkope klikken; het uitgavenplafond is bij €130 per dag binnen ongeveer 3 dagen bereikt."
 gerelateerd: [2026-11-16-ads-nulmeting-en-tiktok-lessen]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/5gZqck1Miihp2AVvjDG5y6"
@@ -23,8 +23,8 @@ De Ads Agent las de campagnes alleen-lezend uit Meta (26-10 t/m 23-11-2026, peil
 
 ## Kerncijfers
 - **€361,78** · Uitgaven vijf campagnes
-- **3** · Aankopen via Meta · €112,70 omzet
-- **0,31** · ROAS over de vijf campagnes
+- **3** · Aankopen volgens Meta · alle drie via de mail in Shopify
+- **0** · Aankopen met een advertentieklik als laatste bezoek
 - **€14,13** · Kosten per winkelwagen NL Rugby/Voetbal/Product
 
 ## Acties
@@ -33,7 +33,8 @@ De Ads Agent las de campagnes alleen-lezend uit Meta (26-10 t/m 23-11-2026, peil
 - [ ] P1 · Besluit: Early Access niet verlengen tot het aanbod "Verdubbel jouw order" in het feitenbestand staat en het optimalisatie-event op aankoop staat
 - [ ] P2 · Besluit: 3-pack-actie stoppen of samenvoegen (dubbele advertenties in twee sets, zelfde doelgroep als NL Rugby/Voetbal/Product)
 - [ ] P2 · Besluit: België pauzeren tot duidelijk is waarom 65% van de klikkers de pagina niet ziet; "Beperkte voorraad" uit de BE-advertenties halen als de voorraad niet beperkt is
-- [ ] P2 · Pixelwaarden laten controleren: aankoopwaarde €89,75 bij 2 × 3-pack en winkelwagenwaarde €35,90
+- [ ] P1 · Ads beoordelen op attributie "7 dagen na klikken" in Ads Manager en wekelijks naast Shopify (laatste bezoek en UTM) leggen
+- [ ] P2 · Mails (SendWILL) en advertenties elk een eigen UTM-campagne geven zodat Shopify het verschil laat zien
 - [ ] P2 · Retargetingset (€10/dag) voor websitebezoekers en winkelwagen-afhakers van 14 dagen, bestaande kopers uitgesloten
 - [ ] P2 · Lifestyle voetbal-beeld dichter op voet en gripzones uitsnijden en prijsregel toevoegen (krijgt 71% van het budget)
 - [ ] P3 · Claim "Gedragen door jouw favoriete topsporters" in "Wat houdt je nog tegen?" toetsen aan het feitenbestand
@@ -46,16 +47,22 @@ De Ads Agent las de campagnes alleen-lezend uit Meta (26-10 t/m 23-11-2026, peil
 - 3-pack-actie (gestart 23-11): €18,20, 6 klikken, 1 winkelwagen. Te weinig data.
 - Product VS Gevoel (gestopt): €92,16, 750 klikken, 546 paginaweergaven, 23 productweergaven, 0 winkelwagens. Optimalisatie op klikken en paginabezoek; 67% van de vertoningen via Audience Network.
 
+### Herkomst van de aankopen (Shopify, alleen totalen)
+- Meta meldt alle 3 aankopen op 23-11: 2 bij "Wat houd je tegen AD product" (€89,75) en 1 bij "Early Access AD" (€22,95).
+- Shopify had op 23-11 vier bestellingen (€22,95, €35,90, €53,85, €35,90). Bij drie stond als laatste bezoek de Early Access-mail (SendWILL, campagne "EARLY ACCES LIVE"); bij de vierde was de herkomst nog niet verwerkt. Geen enkele had een advertentieklik als laatste bezoek.
+- €89,75 is precies €35,90 + €53,85: twee mailbestellingen. De eerder vermoede pixelfout in de aankoopwaarde bestaat dus niet.
+- Meta rekent ze toe via de attributie (1 dag na weergave, 7 dagen na klik). Of de advertentie naast de mail meehielp, is niet aan te tonen.
+
 ### Waarom de een beter werkt
 - Het optimalisatie-event bepaalt wie Meta vindt: klikdoelen leveren klikkers, het winkelwagen-doel levert winkelwagens.
-- "Wat houdt je nog tegen?" (€15,91, 2 aankopen, ROAS 5,64) combineert product, prijsanker €53,85 → €44,95, sociaal bewijs en één CTA. n=2, dus richting en geen bewijs.
+- "Wat houdt je nog tegen?" (€15,91, 20 klikken, 4 winkelwagens, €3,98 per winkelwagen) combineert product, prijsanker €53,85 → €44,95, sociaal bewijs en één CTA. De 2 aankopen die Meta eraan toekent, kwamen via de mail.
 - Lifestyle voetbal kreeg €120,72 (71%) met 8 winkelwagens en 0 aankopen; de sok is klein en er staat geen prijs. Acht van de elf advertenties kregen minder dan €5 en zijn niet getest.
 - Founders-brieven hebben de laagste klikratio (rugby 0,36%): te veel leestekst voor koud publiek in de feed.
 - Reels en Stories zijn per klik 30 tot 40% goedkoper dan de feed.
 - 45+ krijgt 54% van de uitgaven in NL Rugby/Voetbal/Product en 62% in BE.
 
 ## Wat niet lukte
-De Meta-koppeling geeft geen creatives, teksten of landings-URL's terug; beelden zijn op naam gekoppeld via de Ad Library en horen bij de versie van 23-11 (alle advertenties zijn die dag opnieuw opgeslagen). Winkelwagens per plaatsing en per leeftijd zijn niet opgehaald. Omzet buiten Meta (Shopify, GA4) is niet vergeleken. Dashboard niet gesynchroniseerd of gepubliceerd: dat kan alleen vanaf info@.
+De Meta-koppeling geeft geen creatives, teksten of landings-URL's terug; beelden zijn op naam gekoppeld via de Ad Library en horen bij de versie van 23-11 (alle advertenties zijn die dag opnieuw opgeslagen). Winkelwagens per plaatsing en per leeftijd zijn niet opgehaald. De alleen-lezen koppeling kan aankopen niet splitsen naar klik of weergave. GA4 is niet vergeleken. Dashboard niet gesynchroniseerd of gepubliceerd: dat kan alleen vanaf info@.
 
 ## Bronnen
 - Ads Agent-run 23-11-2026 via meta-ads (meta_account_info, meta_campaigns, meta_adsets, meta_ads, meta_insights, meta_pixels)

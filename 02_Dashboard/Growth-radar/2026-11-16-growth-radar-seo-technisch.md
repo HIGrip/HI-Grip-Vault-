@@ -9,7 +9,7 @@ categorie: Techniek
 status: nieuw
 prioriteit: P2
 samenvatting: "Google startte op 10 november 2026 de novemberkernupdate (derde van 2026), die volgens Google zelf tot twee weken kan duren en dus doorloopt tot kort vóór Black Friday; positieschommelingen in Search Console in die periode zijn daarom niet automatisch een technisch of content-probleem. De overige sporen (Core Web Vitals/INP, Merchant Center, structured data, Shopify-changelog) leverden geen nieuwe, bronbare ontwikkeling met een concrete koppeling aan higrip.nl op."
-gerelateerd: [2026-11-09-growth-radar-seo-technisch, 2026-11-09-search-console]
+gerelateerd: [2026-11-09-growth-radar-seo-technisch, 2026-11-09-search-console, 2026-11-23-growth-radar-seo-technisch]
 vervangt: []
 bronbestand: ""
 deadline: ""

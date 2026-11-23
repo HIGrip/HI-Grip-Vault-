@@ -5,7 +5,7 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 23 november 2026 (actiecontrole)
+Laatst bijgewerkt: 23 november 2026 (growth-radar)
 Open: 35 · Afgerond: 16
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
@@ -139,6 +139,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.
 **Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.
 **Inspanning:** 15 minuten
+**Update 23 nov 2026 (Growth Radar, [[2026-11-23-growth-radar-seo-technisch]]):** Google heeft een datalogbug in dit rapport bevestigd voor 9-11 november 2026, die impressies in die dagen kunstmatig liet dalen. Lees een eventuele dip rond die data niet als een echte terugval.
 
 ### [ ] 18. "Grip socks" consolideren — vier eigen URL's concurreren om dezelfde term (nieuw 25 sep 2026)
 **Waarom:** Search Console-meting: de zoekterm "grip socks" (112 vertoningen/7 dagen, 613/28 dagen) rankt afwisselend via `/en/collections/gripsokken`, `/collections/gripsokken`, `/collections/all` en `/`, zonder dat één pagina domineert. De gemiddelde positie voor de hele term (10,3) is zwakker dan wat de sterkste pagina alleen zou moeten kunnen halen — kannibalisatie.

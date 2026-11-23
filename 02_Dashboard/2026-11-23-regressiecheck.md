@@ -16,6 +16,8 @@ deadline: ""
 ---
 # SEO-regressiecheck — 23 november 2026
 
+> Map: [[Waar staat wat]]
+
 ## In het kort
 Grootste vondst van deze run: `higripsportswear.com`, een volledig werkende Shopify-site met dezelfde theme-assets als higrip.nl, staat als hreflang-doel voor 11 EU-landen (AT, BE, DE, FR, IT, LU, PL, PT, RO, CH, GB) op elke higrip.nl-pagina — en dat domein kwam nergens in de vault voor. Voorlopig vastgelegd in Feiten met `[CHECK]`; een mens moet bevestigen of dit bewust is. Verder: alle 16 verplichte URL's geven HTTP 200 binnen 1,5s, geen `aggregateRating` gevonden, geen prijs/verzend-tegenspraak. Twee nieuwe campagnepagina's (`/pages/early-access`, `/pages/early-access-bedankt`) missen een meta description. Alle eerder bekende afwijkingen (gripsokken-2-0/-2-1, teamorder, het 404-blogartikel, 13× lege alt-tekst op de homepage, /blogs/intern, /collections/all, terugbetalingsbeleid, de oude verzend/retour-policies, schema-push) staan ongewijzigd open — geen van die zes weken tot nu opgelost.
 

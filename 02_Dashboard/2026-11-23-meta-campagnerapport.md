@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "Vijf campagnes kostten samen €361,78; Meta meldt 3 aankopen (€112,70), maar in Shopify kwamen alle drie als laatste via de Early Access-mail binnen, dus via een advertentieklik is er niets verkocht. Advertenties met de sok, het prijsanker en antwoorden op bezwaren ('Wat houdt je nog tegen?') geven de goedkoopste winkelwagens, sfeerbeelden en klikdoelen alleen goedkope klikken; het uitgavenplafond is bij €130 per dag binnen ongeveer 3 dagen bereikt."
-gerelateerd: [2026-11-16-ads-nulmeting-en-tiktok-lessen]
+gerelateerd: [2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-24-landingspaginas-live-ads-message-match]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/5gZqck1Miihp2AVvjDG5y6"
 deadline: ""

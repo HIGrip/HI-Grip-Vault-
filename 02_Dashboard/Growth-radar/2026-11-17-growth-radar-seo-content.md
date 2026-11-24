@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen relevante ontwikkelingen vandaag: SERP-features, long-tail-keywordonderzoek, categorie- vs. productpagina-intentie, sport-landingspagina-cases en Marketingfacts/Emerce/Twinkle leverden niets op dat de harde filter doorstond. De nieuwste *-concurrentie.md ([[2026-10-11-concurrentie-seo-per-merk]]) is gelezen en niet herhaald."
-gerelateerd: [2026-11-10-growth-radar-seo-content]
+gerelateerd: [2026-11-10-growth-radar-seo-content, 2026-11-24-growth-radar-seo-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

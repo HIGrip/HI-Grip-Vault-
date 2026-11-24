@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 23 november 2026 (seo)
-Open: 39 · Afgerond: 16
+Laatst bijgewerkt: 24 november 2026 (actiecontrole)
+Open: 35 · Afgerond: 16 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -93,7 +93,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk).
 **Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)
 
-### [ ] [conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)
+### [x] [conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — het blok bestaat (4646 tekens) en staat gekoppeld als blok 'hi_pack_value_bar_seoconv4' in block_order van templates/product.json.
 **Waarom:** Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` ("SEO TEST") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf "Live website 04-11-2026"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.
 **Waar:** Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`
 **Wat:** Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet.
@@ -176,7 +177,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 30 september 2026 (Search Console & rankings)
 
-### [ ] 21. [search-console] Titel/meta van de blog "hoe zorg ik voor mijn gripsokken" herschrijven, NL en EN (nieuw 8 okt 2026)
+### [x] 21. [search-console] Titel/meta van de blog "hoe zorg ik voor mijn gripsokken" herschrijven, NL en EN (nieuw 8 okt 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — NL: titel 'HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?' met meta over wastemperatuur/binnenstebuiten; EN: titel 'HÏ Grip | How do I wash my grip socks? What temperature?' met bijpassende meta — beide in vraagvorm die de zoekintentie direct dekt, consistent met de CTR-verbetering (1,x% → 3,33%/2,08%) die de Search Console-notitie van 2 nov al signaleerde.
 **Waarom:** Search Console-meting (routine "Search Console & rankings", derde run): de NL-blogpagina rankt goed — gemiddelde positie 4,7 over 28 dagen — maar trok daarbij maar 1,0% CTR op 200 vertoningen. De EN-versie rankt met positie 7,8 over 154 vertoningen en trok in 28 dagen geen enkele klik (0% CTR). Net als bij `/pages/ontdek-jouw-sport` (punt 19) wijst een goede positie met vrijwel geen klikken op een titel/omschrijving die niet aansluit bij de zoekintentie.
 **Waar:** `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` en `/en/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` — titel en meta description via Shopify admin
 **Wat:** SERP-titel en meta description herschrijven voor beide taalversies zodat ze de zoekintentie dekken; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
@@ -197,7 +199,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Update 9 november 2026:** positie verbetert een derde meting op rij, naar 9,7 (was 11,6), op afnemend volume (18 vertoningen/7 dagen). Herstel lijkt bevestigd; oorzaak nog niet gevonden. Blijft open, geen nieuwe actie nodig.
 **Update 16 nov 2026 (Growth Radar, SEO-technisch):** Google startte 10 nov 2026 een brede kernupdate, naar schatting tot ~24 nov in rollout — de volgende meting van dit herstel valt middenin die periode en is dus extra onzeker (zie [[2026-11-16-growth-radar-seo-technisch]]).
 
-### [ ] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
+### [x] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — Titel is nu 'HÏ Grip | Performance Grip Socks for Athletes' en de meta description noemt expliciet 'Performance grip socks ... football, tennis, padel and rugby', wat de zoekterm 'grip socks' direct dekt; de Search Console-notitie van 9 nov meldt al een CTR-verbetering (1,88% → 3,49%) voor deze pagina.
 **Waarom:** Search Console-meting (routine "Search Console & rankings"): `/en` staat op positie 7,8 met 266 vertoningen (7 dagen) maar slechts 1,88% CTR — ruim onder wat op die positie en dat volume haalbaar is, en de laagste CTR van alle pagina's in de top-15 op klikken deze week.
 **Waar:** `/en` — titel en meta description via Shopify admin (Online Store → Voorkeuren, Engelse taalinstelling)
 **Wat:** SERP-titel en meta description voor de Engelse zoekintentie herschrijven; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft (overwegend "grip socks", positie 8,7 op 106 vertoningen).
@@ -280,7 +283,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 ## P3 — Op de radar
 
-### [ ] [conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)
+### [x] [conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — het beleidsveld bevat volledige retour- en betalingstekst, inclusief iDEAL, creditcard, Klarna, Bancontact en Apple Pay als betaalmethoden; de conceptteksten staan geplakt in de paginainstellingen.
 **Waarom:** SEO- en conversietest (RUN 7): concept-SEO-titel en meta description voor `/pages/terugbetalingsbeleid` staan klaar in het logboek (sluit het al openstaande punt over de ontbrekende meta description af naar concrete tekst). De tekst bevat een `[CHECK]`: ze gaat ervan uit dat iDEAL een actieve betaalmethode is, wat nog niet bevestigd is (zie het Besluit-punt over iDEAL hierboven).
 **Waar:** Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`
 **Wat:** Eerst de iDEAL-vraag beantwoorden, dan de conceptteksten controleren en in de paginainstellingen plakken.

@@ -4211,6 +4211,90 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
  },
+ "2026-11-23-meta-campagnerapport#3ea7adf0": {
+  "beoordeeld": "2026-11-24",
+  "claude": "deels",
+  "wat_claude_doet": "een UTM-naamgevingsvoorstel voor mails en advertenties opstellen",
+  "wat_jij_doet": "de UTM-campagnes daadwerkelijk instellen in SendWILL en Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#5a5b210b": {
+  "beoordeeld": "2026-11-24",
+  "claude": "deels",
+  "wat_claude_doet": "de claim toetsen aan het feitenbestand zodra de exacte ad-tekst wordt aangeleverd",
+  "wat_jij_doet": "de ad-tekst aanleveren en de advertentie zo nodig aanpassen in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#63951d3b": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het beeld bijsnijden, de prijsregel toevoegen en de advertentie vervangen in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#63f73df4": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de retargetingset instellen in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#895904c1": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over het samenvoegen van de advertentiesets en dit uitvoeren in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#8b3c3ce2": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over het uitgavenplafond en dit aanpassen in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#9029416a": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over het pauzeren van de België-campagne en dit uitvoeren in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#9db5381e": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "wekelijks in Meta Ads Manager en Shopify controleren op 7-dagen-attributie"
+ },
+ "2026-11-23-meta-campagnerapport#a3a769bd": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over de 3-pack-actie (stoppen/samenvoegen) en dit uitvoeren in Meta Ads Manager"
+ },
+ "2026-11-23-meta-campagnerapport#f9f4a945": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over het al dan niet verlengen van Early Access en dit aanpassen in Meta Ads Manager"
+ },
+ "2026-11-23-seo-conversietest-run-9#81f37ff1": {
+  "beoordeeld": "2026-11-24",
+  "claude": "deels",
+  "wat_claude_doet": "de huidige thema-status opzoeken en rapporteren (welk thema nu MAIN/live is, welke UNPUBLISHED-kopieën er zijn)",
+  "wat_jij_doet": "bevestigen welk thema het juiste/actuele werkthema is en het al dan niet live zetten"
+ },
+ "2026-11-23-seo-conversietest-run-9#fcf47c4c": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de theme_bash-connector (Shopify MCP) opnieuw koppelen met extra rechten"
+ },
+ "2026-11-23-weekoverzicht#0e93898c": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigen of de Meta-campagne-evaluatie van 21 november klopt en ingezet wordt"
+ },
+ "2026-11-23-weekoverzicht#36091f0e": {
+  "beoordeeld": "2026-11-24",
+  "claude": "deels",
+  "wat_claude_doet": "een analyse van de nul-omzetweken (checkout, betaalmethoden, tracking) voorbereiden in een notitie",
+  "wat_jij_doet": "besluiten of en hoe dit verder onderzocht of opgelost wordt"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",
@@ -4301,11 +4385,23 @@
   "wat_claude_doet": "Conceptteksten (titel/meta) voor /en/products/performance-gripsokken in de vault",
   "wat_jij_doet": "Teksten in Shopify plakken en publiceren"
  },
+ "backlog#4ec33dde": {
+  "beoordeeld": "2026-11-24",
+  "claude": "ja",
+  "wat_claude_doet": "conceptmeta descriptions voor /pages/early-access en /pages/early-access-bedankt schrijven",
+  "wat_jij_doet": "het concept controleren en plakken in de paginainstellingen in Shopify admin"
+ },
  "backlog#52886b90": {
   "beoordeeld": "2026-09-26",
   "claude": "deels",
   "wat_claude_doet": "Checkt indexatie en SERP-titel van oude en nieuwe URL via Search Console en schrijft een nieuwe title/meta.",
   "wat_jij_doet": "URL opnieuw indienen in Search Console en de meta in Shopify plakken."
+ },
+ "backlog#5d65bfbd": {
+  "beoordeeld": "2026-11-24",
+  "claude": "ja",
+  "wat_claude_doet": "de klaarstaande conceptbeschrijving (161 woorden) en titel (57 tekens) uit het Shopify-logboek seo-routine-logboek §9.2 controleren en klaarzetten",
+  "wat_jij_doet": "het concept controleren en plakken als collectiebeschrijving op /collections/gripsokken in Shopify admin"
  },
  "backlog#6050edaa": {
   "beoordeeld": "2026-09-26",
@@ -4438,6 +4534,18 @@
   "claude": "deels",
   "wat_claude_doet": "Checkt via connector en site welke trackingscripts vuren en of pixels via officiele apps lopen; levert een rapport met wat ontbreekt.",
   "wat_jij_doet": "Ontbrekende apps (Meta, Google) in Shopify installeren of koppelen."
+ },
+ "backlog#cff701df": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "beslissen over de voorraadstatus (backorder toestaan, bijbestellen of verkoop pauzeren) en voorraad/schema aanpassen in Shopify"
+ },
+ "backlog#d13130cb": {
+  "beoordeeld": "2026-11-24",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "bevestigen of higripsportswear.com een bewust en actueel internationaal domein is"
  },
  "backlog#d6d843f3": {
   "beoordeeld": "2026-11-03",

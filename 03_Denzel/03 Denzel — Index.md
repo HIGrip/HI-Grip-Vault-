@@ -23,7 +23,6 @@ status: concept
 |---|---|
 | [[Agents Website Agent\|Website Agent]] | SEO, Website Copy, Conversie & Analyse, E-mail Marketing, Website-QA |
 | [[Agents Social Agent\|Social Agent]] | Content Strategie & Planning, Caption & Copy, Video & Visuele Productie, Content Maker, Socials Analyzer, Content-QA |
-| [[Agents Partnership Agent\|Partnership Agent]] | Influencer & Creator, B2B Klanten, Partnerships & Events, Partnership-QA |
 | [[Agents Design Agent\|Design Agent]] | visuele uitwerking voor Social en Website (QA nog voorstel) |
 | [[Agents Operations Agent\|Operations Agent]] | Stafchef, Vooruitblik-agent |
 

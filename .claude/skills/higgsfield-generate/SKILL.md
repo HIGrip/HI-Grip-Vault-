@@ -1,7 +1,7 @@
 ---
 version: 0.3.0
 name: higgsfield-generate
-description: |
+description: "|"
   Generate images/videos via Higgsfield AI. Default: GPT
   Image 2 for images/design/text, Seedance 2.0 for video,
   Nano Banana 2/Pro for character/reference image work,

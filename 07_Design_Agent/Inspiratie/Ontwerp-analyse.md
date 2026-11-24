@@ -2,13 +2,13 @@
 type: kennis
 gebied: design-agent
 status: concept
-bijgewerkt: 2026-11-19
+bijgewerkt: 2026-11-20
 bron: Gedeelde Drive > Inspiratie - HÏ Grip > Foto's (incl. Thumnails, Ads); Content - HÏ Grip > Ads, Emailmarketing, Infographics, Designen > BRANDPICS; goedgekeurde Performance Days-mails (07_Design_Agent/Email-Workflow/Voorbeelden); afgekeurde ads-v5/v6/ads-html (HiGripMedia _Output design)
 ---
 
 # Ontwerp-analyse: wat maakt goed materiaal goed?
 
-> **Status: concept, door Design Agent (taak t_787e03b5, 19-11-2026).** Aanleiding: Lars vindt Design-output te grijs en te veilig; zijn eigen ontwerpen met Claude zijn beter. Dit is eerst een leesbeurt, geen regelwijziging. Alleen beschrijving van wat er is; regels aanpassen is een volgende stap voor Lars. Voorbeelden van derden zijn referentie: alleen samengevatte lessen, niets overnemen. Gelezen met beeldanalyse; de waarnemingen zijn mijn lezing, niet door Lars bevestigd. De mappen 'Design voorbeelden' en 'Niet goed' stonden bij het schrijven nog niet in de lokale kopie.
+> **Status: concept, door Design Agent (taak t_787e03b5, 19-11-2026).** Aanleiding: Lars vindt Design-output te grijs en te veilig; zijn eigen ontwerpen met Claude zijn beter. Dit is eerst een leesbeurt, geen regelwijziging. Alleen beschrijving van wat er is; regels aanpassen is een volgende stap voor Lars. Voorbeelden van derden zijn referentie: alleen samengevatte lessen, niets overnemen. **Lars (19/20-11-2026): voorbeelden van andere merken zijn referentie voor opbouw, compositie, mechanisme en creatieve keuzes, nooit voor kleur of branding; die kleuren zijn de branding van dat merk. Mails 7, 8 en 10 (blauw, geel, donkerblauw) zijn dus geen tegenspraak met het accentanker.** Gelezen met beeldanalyse; de waarnemingen zijn mijn lezing, niet door Lars bevestigd. De mappen 'Design voorbeelden' en 'Niet goed' stonden bij het schrijven nog niet in de lokale kopie.
 
 Leeswijzer kolommen: **Opbouw** · **Creatief** (waar de wow zit) · **Merk-vast / vrij** · **Waarom het werkt** · **Leren / niet overnemen**.
 
@@ -106,6 +106,38 @@ Aanname: merk-vast blijft: Poppins-schuin vet, Volt als hoofdaccent of het sport
 - Contactvellen (E) zijn klein bekeken; losse ads niet allemaal. Beeldbeschrijvingen komen van een beeldmodel en kunnen afwijken (bijvoorbeeld kleurnamen).
 - Goedgekeurd-status van mails 6 tot 10 en infographics is niet door Lars bevestigd; alleen Performance Days A/B en de twee ads in A zijn als goed bekend.
 - Wat niet bekeken is: video's (Inspiratie > Video's), overige thumbnails 2, 4 en 6, rest van BRANDPICS (ca. 1.150 bestanden), overige e-mails (affiliate, new subscribers #2 tot #4, discount reminder).
+
+## E-mail: psychologie en ontwerp
+
+**Aanvulling 20-11-2026 · concept.** Bron: door Lars aangewezen TikTok-referenties drippityemail (v1) en wellcopymax, ranking van welkomstmails (v3). Zelf frames met ffmpeg genomen: v1 contactvel om de 3 seconden plus 00:21; v3 contactvel om de 4 seconden plus 00:03, 00:33, 00:45 en 00:56. Bekeken met beeldanalyse. Alleen samengevatte lessen; geen derdenbeeld of copy overgenomen. De map Inspiratie > Design voorbeelden > E-mail ontbreekt lokaal op deze datum; Lars' nieuwe voorbeelden met psychologie-uitleg zijn dus niet beoordeeld. Audio niet getranscribeerd. Effect op gedrag is een **hypothese**, geen bewezen conversiewinst.
+
+### Waarneming per voorbeeld
+
+| Voorbeeld | Mechanisme / plek in de mail | Visuele drager en beperking |
+|---|---|---|
+| v1, donkere modecompositie (00:21) | Aandachtsfocus en aspiratie: groot modebeeld boven een korte tekst en primaire actie | Donker/licht-contrast, grote beeldlaag, weinig tekst en één herkenbare primaire knop. Een model is geen klantbewijs; beeld alleen is geen personalisatie. |
+| v1, groene modecompositie (00:21) | Samenhang en aspiratie: beeldwereld loopt door rond titel, model en knop | Groene/botanische compositie vormt één kleurwereld. Les is samenhang, niet het overnemen van palet of modebeeld. |
+| v3, eerste welkomstmail (00:03) | Personalisatie die faalt: lege naampositie in de aanhef | Zichtbaar gat in een korte tekstmail; de beoordelaar wijst dit aan. Fallback moet ook zonder naam een complete, verzorgde compositie geven. |
+| v3, golfmail (00:33) | Aanbodherkenning en handelingsgemak: aanbod bovenaan, productbeeld en herhaalde actie | Aanbod en knoppen zijn herkenbare ankerpunten in een langere mail. Geen betrouwbaar leesbaar cijfermatig klantbewijs vastgesteld. |
+| v3, groene producteducatiemail (00:45) | Onzekerheid verminderen: uitleg en productblokken onder de hero | Afwisselende tekst-/productzones en contrasterende actieknoppen. Uitleg is niet automatisch bewijs van werkzaamheid. |
+| v3, vier welkomstvarianten (00:56) | Relevantie door segmentatie: andere behoefte in kop en beeld, binnen één merkfamilie | Naast elkaar getoonde varianten; videotekst koppelt personalisatie aan een eerder ingevulde voorkeur. De daadwerkelijke segmentatietechniek is niet gecontroleerd. |
+
+**Correctie op de aangeleverde beschrijving.** Twee samenhangende beeldrijke composities met korte tekst en herkenbare primaire knop zijn in v1 zichtbaar; 'precies één knop in de hele mail', auteurschap en Adobe XD zijn niet betrouwbaar vastgesteld. Appkeuze volgt niet uit artboardvormen. In v3 zijn lege naam, merkgebonden vormgeving en behoeftevarianten herkenbaar. De scores zijn meningen van de videomaker, **geen klantreviews, experimentresultaten of conversiedata**. Kleine knop als specifieke reden voor een lage score en bewijs in cijfers als reden voor een hoge score zijn niet bevestigd. Beeldanalyse verwarde de score-overlay met sociaal bewijs; die conclusie is verworpen.
+
+### Visuele vertaling voor HÏ Grip
+
+Alle onderstaande toepassingen zijn conceptlessen, geen nieuwe sjablonen of regelwijzigingen. Claims, aantallen, ratings, kortingen en voorwaarden uitsluitend uit [[Feiten & Actuele Staat]] en de goedgekeurde brief; ontbrekend of verouderd bewijs niet als feit vormgeven.
+
+| Mechanisme | Wat Design visueel mag uitwerken | Grens / vraag aan E-mail Marketing Agent |
+|---|---|---|
+| Aandachtsfocus / aspiratie | Echt sport-/productbeeld als held; korte aangeleverde kop; lucht en één duidelijke primaire actie. Witte brede knop onder hero volgens [[Leerregels-Email-Design]]. | Geen aangenomen prestatieverbetering door een pose of effect. Welk gevoel en welke ene actie draagt de brief? |
+| Personalisatie / relevantie | Zelfde merkraster, passend echt sportbeeld per aangeleverd segment; naamloos fallback-ontwerp naast naamvariant. | Geen interesses raden of persoonlijke gegevens in ontwerpnotities. Welke segmenten en fallback-copy zijn goedgekeurd? |
+| Begrip / onzekerheid verminderen | Echt productdetail en rustige callout bij een aangeleverde, onderbouwde uitleg; bewijs leesbaar naast de claim. | Technische lijnen zijn geen wetenschappelijk bewijs. Welke exacte claim met bron en verplichte nuance mag worden getoond? |
+| Sociaal bewijs (niet bevestigd in deze frames) | Compact bewijsanker bij de afweging/actie: echte quote met bron of actueel toegestaan aantal/rating. | Alleen controleerbare gegevens via Feiten en aangeleverde bron; geen nep-reviews, verzonnen klanten of TikTok-score als klantbewijs. Welk bewijs is beschikbaar? |
+| Schaarste / urgentie (niet vastgesteld in deze frames) | Alleen een echte aangeleverde einddatum of aantoonbare beschikbaarheid rustig hiërarchiseren. | Geen nep-countdown, herstartende timer of verzonnen lage voorraad. E-mail Marketing moet actualiteit en gedrag na afloop bevestigen; een introductie op zich is geen schaarste. |
+| Participatie / keuze (alleen indirect gesuggereerd bij v3-varianten) | Duidelijke keuzevlakken voor een echte voorkeurenpagina; selectie krijgt herkenbare feedback in die pagina, niet als nepstatus in de mail. | Geen schijnformulier, voorgewende deelname of persoonsgegevens in URL's. Welke echte bestemming en keuze-uitkomst ondersteunt de techniek? |
+
+**Zelfcheck en overdracht.** Performance: echt actiebeeld; Whitespace: rust rond kop en actie; Emoties: relevant sportgevoel, geen angstdruk; Branding: comfort, vertrouwen en innovatie met echte onderbouwing; Stijl: sportieve compositie met terughoudend merkraster. Dit toetst de richting, niet een nog ongebouwd ontwerp. Mobiel, contrast, fallback, echte links en e-mailclients moeten per latere mail worden getest. Strategie, segmentkeuze, copy, techniek en verzending blijven bij E-mail Marketing (Website Agent). Design DNA, Creatieve loop en Regelvoorstel zijn op 20-11-2026 herschreven (concept) en wachten op goedkeuring van Lars. Onafhankelijke toetsing en beoordeling door Lars ontbreken.
 
 ## Verwijzingen
 

@@ -1,7 +1,7 @@
 ---
 version: 0.3.0
 name: higgsfield-marketplace-cards
-description: |
+description: "|"
   Generate marketplace product image cards through Higgsfield: compliant
   main image, secondary product images, and A+ style content modules. Use when
   the user asks for marketplace listing images, product detail cards,

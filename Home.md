@@ -18,7 +18,6 @@ Leidend voor merk en strategie: Canva *MERK & STRATEGIE — HÏ Grip* (30-9-2026
 - **02_Dashboard** — onderzoek, routines, weekoverzichten, actiebacklog → [[Waar staat wat]]
 - **03_Denzel** — orchestrator → [[03 Denzel — Index]]
 - **04_Social_Agent** — social content → [[04 Social Agent — Index]]
-- **05_Partnership_Agent** — B2B, events, influencers → [[05 Partnership Agent — Index]]
 - **06_Website_Agent** — higrip.nl: SEO, copy, techniek, conversie, e-mail → [[06 Website Agent — Index]]
 - **07_Design_Agent** — visuele uitwerking en stijl → [[07 Design Agent — Index]]
 - **08_Operations_Agent** — feedback, leerregels, kwaliteit, compliance → [[08 Operations Agent — Index]]

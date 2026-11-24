@@ -15,7 +15,7 @@ status: concept — ter beoordeling door Lars en Timo
 |---|---|---|
 | higrip.nl: zoekmachines, techniek van thema en secties, paginacopy, conversie en analytics, e-mailflows en nieuwsbrief | **Website Agent** | `higrip-website-agent` |
 | Social content: ideeën, kalender, captions, hashtags, video- en reelstijl | **Social Agent** (voorheen Content Agent) | `higrip-content-agent` |
-| Influencers en creators, B2B-klanten (clubs, retail, gyms), events en samenwerkingen | **Partnership Agent** | `higrip-partnership-agent` |
+| Influencers, B2B-klanten en samenwerkingen | Geen agent meer (Partnership vervallen 20-11-2026). Denzel pakt het op als Lars erom vraagt (besluit Lars 20-11-2026, verwacht ca. 1x per 2 maanden), met `05_Partnership_Agent/` als kennisbron. Alleen concepten: nooit zelf outreach versturen | n.v.t. |
 | Visuele uitwerking (uiterlijk, kleur, beeld, e-mailontwerp) voor Social en Website | **Design Agent** | nog geen skill |
 | Briefings uitschrijven, open lussen, kwaliteitslog, leerregels, dashboard afvinken, weekoverzicht samenstellen, vooruitblik (evenementen, regels, platformwijzigingen) | **Operations Agent** | nog geen skill |
 
@@ -35,7 +35,7 @@ Denzel heeft geen eigen sub-agents meer (sinds 21-10-2026). Wat vroeger naar zij
 | Een opdracht van gewicht moet worden uitgeschreven en het postvak in | Operations Agent (Stafchef) |
 | Wat staat er te lang open? Waar wacht iets op Team HÏ Grip? | Operations Agent (Stafchef) |
 | Een resultaat van een hoofdagent is klaar en moet getoetst worden | Die hoofdagent zelf, met zijn eigen QA-agent. Denzel krijgt een kopie van het verdict |
-| Het weekoverzicht moet worden samengesteld | Operations Agent maakt het, Partnership en anderen leveren aan. Denzel geeft het door aan Team HÏ Grip en controleert het niet zelf |
+| Het weekoverzicht moet worden samengesteld | Operations Agent maakt het. Denzel geeft het door aan Team HÏ Grip en controleert het niet zelf |
 
 ## Raakt de opdracht meerdere agents?
 
@@ -45,10 +45,10 @@ Denzel bepaalt wie levert aan wie en wat parallel kan. Voorbeelden:
 |---|---|
 | Nieuwe landingspagina of sportpagina | Website Agent: SEO, Website Copy en Conversie & Analyse, meestal parallel, de Design Agent voor het uiterlijk. Daarna Website-QA |
 | Blogartikel met bijbehorende e-mail | Website Agent: Website Copy en E-mail Marketing |
-| Contentidee over een B2B-partner die ook op de site moet | Social, Website en Partnership raken elkaar. Denzel bundelt en bepaalt de volgorde, de hoofdagenten werken niet los door elkaar |
-| Evenement dat ook een samenwerkingskans is | Operations Agent (Vooruitblik) meldt het, Denzel geeft het door. Partnerships & Events beoordeelt de samenwerking. Social krijgt een opdracht als er content bij moet |
+| Contentidee over een B2B-partner die ook op de site moet | Social en Website raken elkaar. Denzel bundelt en bepaalt de volgorde, de hoofdagenten werken niet los door elkaar |
+| Evenement dat ook een samenwerkingskans is | Operations Agent (Vooruitblik) meldt het, Denzel geeft het door. Denzel legt de samenwerkingskans voor aan Lars. Social krijgt een opdracht als er content bij moet |
 | Nieuwe regel die de site raakt (bijvoorbeeld cookies of beleidspagina's) | Operations Agent: Vooruitblik meldt, Stafchef maakt de opdracht. Website Agent voert uit, zijn Website-QA toetst, wie volgens [[user]] daarover beslist, beslist over live zetten |
-| Rugbypartnerlijst of vergelijkbaar onderzoek met meerdere onderdelen | Partnership Agent: Influencer & Creator, B2B Klanten en Partnerships & Events parallel. Zijn Partnership-QA toetst de steekproef |
+| Rugbypartnerlijst of vergelijkbaar onderzoek met meerdere onderdelen | Geen agent meer; Denzel legt aan Lars voor welke route past |
 
 ## Bij twijfel
 

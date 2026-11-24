@@ -97,6 +97,8 @@ De lijst D1 t/m D13 is **vastgesteld en geldend** (besluit Lars, 16-11-2026: er 
 | D13 | **Feedbeeld (4:5).** Beoordelingskaart en poort uit [[Ads Bouwboek — bewezen elementen]]; bewezen format gekozen vóór het beeld | Score per punt naast het beeld; poortpunten ja/nee | Belangrijk; poortpunt blokkerend |
 | D12 | **Gaten.** Wat is niet bekeken (andere kanalen, donkere/lichte variant, e-mailclients) | Lijst | Klein |
 
+**Voorstel D10-aanvulling (20-11-2026, nog niet vastgesteld door Team HÏ Grip; D1 t/m D13 verder ongewijzigd):** *Eén geheel*: de e-mail voelt als één doorlopend geheel (regel van Lars, E15). Bewijs: full-length screenshot desktop en mobiel, per sectiegrens benoemd wat overloopt, fallback in effen kleur bekeken ([[WORKFLOW-Email]] §5). Ernst: Belangrijk; een harde snede zonder uitleg of een naad is correctie, geen blokkade. Max 5 secties en ander beeld per sectie blijven; de secties moeten er wel in elkaar overlopen.
+
 Verdict met bewijs en altijd "niet gecontroleerd"; correctierondes en escalatie volgens [[Toetsregels]] (maximaal 2 correctierondes).
 
 ## 6. Open punten

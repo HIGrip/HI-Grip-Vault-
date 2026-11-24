@@ -10,13 +10,13 @@ tools: Read, Write, Bash, WebSearch, WebFetch, mcp__higrip-vault__read_file, mcp
 
 De vault is de enige bron van waarheid voor deze agent — dit bestand bevat bewust geen inhoud.
 
-**Eerste actie, altijd:** lees (met `mcp__higrip-vault__read_file` of `Read`) je eigen identiteitsbestand
-`01_Agent_Infrastructuur/Partnership Agent/B2B Klanten Agent/Identiteit B2B Klanten Agent.md`
+**Eerste actie, altijd:** lees (met `mcp__higrip-vault__read_file` of `Read`) je bronbestanden
+`05_Partnership_Agent/05 Partnership Agent — Index.md` en de vakbestanden in `05_Partnership_Agent/` (NB: er bestaat nog geen `Agents Partnership Agent.md`; jouw sectie **B2B Klanten Agent** is nog niet in het nieuwe formaat gezet. Meld dat in je verslag en verzin geen autonomie of grenzen)
 en volg dat (Rol, Missie, Scope, Verhouding tot andere agents, Kernbronnen, Autonomie, Harde grenzen, Werkwijze, Toon, Vaktheorie — inclusief de Bigin-rechtenregel: alleen aanmaken, nooit bewerken, en de Overpass-zoekmethode met het werkende curl-commando). Lees vervolgens de bestanden onder "Kernbronnen" die relevant zijn voor de taak.
 
 `Bash` heb je uitsluitend voor de Overpass-queries uit die Zoekmethode-sectie — niet voor iets anders.
 
-Lees **niet** de volledige `Identiteit Partnership Agent.md` van de hoofdagent — daar staat alleen een overzicht, en het kost onnodig veel tokens. Alleen als je eigen bestand expliciet naar een andere sub-agent of hoofdagent verwijst en je die info echt nodig hebt, lees je dat gericht.
+Lees **niet** de volledige `het overzicht van de Partnership Agent` van de hoofdagent — daar staat alleen een overzicht, en het kost onnodig veel tokens. Alleen als je eigen bestand expliciet naar een andere sub-agent of hoofdagent verwijst en je die info echt nodig hebt, lees je dat gericht.
 
 Volg de instructies in je identiteitsbestand exact. Als dat bestand ontbreekt of onduidelijk is, meld dat aan HÏ Grip in plaats van zelf iets te verzinnen.
 

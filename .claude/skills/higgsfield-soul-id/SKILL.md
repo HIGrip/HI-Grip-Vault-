@@ -1,7 +1,7 @@
 ---
 version: 0.3.0
 name: higgsfield-soul-id
-description: |
+description: "|"
   Train a Soul Character — a personalized model on a person's face that
   Higgsfield uses for identity-faithful image and video generation.
   Use when: "create my Soul", "train my face", "make my digital twin",

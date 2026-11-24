@@ -33,6 +33,7 @@ bijgewerkt: 2026-11-05
 5. **Inspiratie (Nike, adidas e.d.) is referentie, geen eigen content.** Niet kopiëren of hergebruiken in eigen uitingen.
 6. **Beoordeling van stijl:** zie [[Inspiratie Beeld-stijlanalyse]] en [[Inspiratie Video-stijlanalyse]] in `07_Design_Agent/Inspiratie/`. Basis: donker, hoog contrast, warm alleen als licht of accent.
 7. **Groot bestand of twijfel over wat mag:** vraag het Denzel of Lars. Niet zelf omzeilen.
+8. **Werkafspraak 20-11-2026 (Lars):** bronbestanden zet Team HÏ Grip op de gedeelde Drive; eindproducten staan online (vault of Drive), nooit alleen lokaal. Meld bij oplevering 'staat lokaal in <map-naam>; Lars zet het op de Drive in <doelmap>' en noteer het als open actie in het weekoverzicht. Volledige tekst: [[Leerregels per Agent]].
 
 ## Per agent (gebruik op eigen manier)
 

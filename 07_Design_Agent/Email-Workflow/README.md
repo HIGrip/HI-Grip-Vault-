@@ -7,6 +7,8 @@ bijgewerkt: 2026-11-17
 
 Dit is de lat voor elke HÏ Grip-mail. Hij komt uit de early-access-mails van de HÏ Performance Days, die Lars op 17-11-2026 na 7 rondes goedkeurde ("Super"). Ronde 1 werd afgekeurd als "echt lelijk" en "crimineel" om op te leveren.
 
+**Algemene regel (Lars, 20-11-2026): een e-mail voelt als één geheel.** De secties lopen in elkaar over; zie [[WORKFLOW-Email]] §5 en E15 in [[Leerregels-Email-Design]]. Concepten over familie, referenties, creatieve loop, psychologie en werkafspraak staan als E16 t/m E20 en in [[WORKFLOW-Email]] §6.
+
 **Belangrijk:** dit gaat om het **niveau**, niet om een sjabloon. Kopieer niet elke keer dezelfde opbouw (hero met woord achter de sporter, ticket, dealkaarten, slotbeeld). Neem de werkwijze en de kwaliteitslat over, en kies per mail een eigen idee, eigen beelden en een eigen opbouw.
 
 ## Lees in deze volgorde

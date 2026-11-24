@@ -35,8 +35,11 @@ Geen nieuwe besluiten deze week: de openstaande punten (EK rugby, B2B-outreach, 
 Design-verbetering (correctie Lars 19-11, bron kaart t_d4679d0f; concepten [[Design DNA]], [[Creatieve loop]], [[Regelvoorstel Design DNA]]):
 
 - [ ] P1 · Lars vult map Inspiratie - HÏ Grip > Design voorbeelden (Ads/Social/E-mail/Website + Niet goed)
+- [ ] P1 · Lars zet TikTok-frames en e-mailvoorbeelden op de Drive (Inspiratie - HÏ Grip > Design voorbeelden; werkafspraak 20-11, bron kaart t_96d6bef0)
 - [ ] P1 · Lars kiest proefkanaal voor de Design-proefopdracht
 - [ ] P1 · Besluit: Lars keurt Design DNA en regelwijzigingen goed
+- [ ] P1 · Lars keurt e-mailregels (concept E16, E18, E19 en D10-aanvulling 'één geheel') goed of stelt bij (bron kaart t_21d5014d)
+- [ ] P1 · Lars beslist over profielvoorstellen Design en Website (zie voorstel Denzel, bron kaart t_21d5014d)
 
 ## Bevindingen
 

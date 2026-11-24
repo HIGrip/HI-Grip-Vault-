@@ -17,6 +17,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Fotografie & Art-Direction]]
 - [[Iconografie]]
 - [[Logo & Kleurenpalet]]
+- [[Smaakkompas]] (10 vragen om zelf kritisch te kijken vóór oplevering)
 
 ### Ads-Workflow
 - [[Foto-index]]

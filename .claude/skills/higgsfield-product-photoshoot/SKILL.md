@@ -1,7 +1,7 @@
 ---
 version: 0.3.0
 name: higgsfield-product-photoshoot
-description: |
+description: "|"
   Generate brand-quality product images through Higgsfield product-photoshoot
   prompt enhancement on GPT Image 2 / gpt_image_2. Entry point for professional
   brand/product visuals.

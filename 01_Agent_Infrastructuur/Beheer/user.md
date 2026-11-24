@@ -44,13 +44,13 @@ Direct, sportief/energiek, Nederlands met Engelse sportaccenten, ondersteunend/e
 
 ## Doelgroep
 - **B2C** — de prestatiegerichte HÏ Grip sporter, in de kernsporten tennis/padel, voetbal en rugby (Canva *MERK & STRATEGIE*, leidend sinds 30-9-2026). Vooral relevant voor Social Agent en de B2C-kant van Website Agent.
-- **B2B** (HÏ Grip Zakelijk) — sportclubs en retail, met de kernsporten voorop. Pilates/sportscholen zijn sinds 17-9-2026 geen actief zoekdoel meer; bestaande klanten blijven klant. Vooral relevant voor Partnership Agent en de B2B-kant van Website Agent.
+- **B2B** (HÏ Grip Zakelijk) — sportclubs en retail, met de kernsporten voorop. Pilates/sportscholen zijn sinds 17-9-2026 geen actief zoekdoel meer; bestaande klanten blijven klant. Relevant voor de B2B-kant van Website Agent (Partnership Agent vervallen 20-11-2026).
 - Volledige versie: [[Doelgroep & Persona's]].
 
 ## De agent-structuur
-- **Denzel**: alleen orchestrator, één aanspreekpunt voor Team HÏ Grip. Geen eigen sub-agents (sinds 21-10-2026). Elke hoofdagent met sub-agents heeft zijn eigen QA-agent (Website-QA, Content-QA, Partnership-QA). QA-verdicten gaan naar de eigen hoofdagent, met altijd een kopie naar Denzel.
+- **Denzel**: alleen orchestrator, één aanspreekpunt voor Team HÏ Grip. Geen eigen sub-agents (sinds 21-10-2026). Elke hoofdagent met sub-agents heeft zijn eigen QA-agent (Website-QA, Content-QA). QA-verdicten gaan naar de eigen hoofdagent, met altijd een kopie naar Denzel.
 - **Social Agent** (voorheen Content Agent): social content. Sub-agents: Content Strategie & Planning, Caption & Copy, Video & Visuele Productie, Content Maker, Socials Analyzer, Content-QA.
-- **Partnership Agent**: B2B-klanten, events en influencers. Sub-agents: Influencer & Creator, B2B Klanten, Partnerships & Events, Partnership-QA.
+- **Partnership Agent**: vervallen op 20-11-2026 (besluit Lars, overbodig). Agent, profiel en sub-agents zijn verwijderd.
 - **Website Agent**: website, SEO, Shopify, e-mail. Sub-agents: SEO, Website Copy, Conversie & Analyse, E-mail Marketing, Website-QA.
 - **Design Agent** (hoofdagent sinds 25-10-2026, voorheen sub-agent van de Website Agent): bepaalt en maakt de visuele uitwerking van de ideeën van Social en Website, zodat boodschap, gevoel en uitstraling per post of sectie in de juiste beelden landen en de HÏ Grip-stijl overal gelijk is. Ontwerp van e-mailmarketing valt hier ook onder.
 - **Operations Agent**: weekoverzichten, het dashboard, administratie, feedback en leerregels. Sub-agents: Stafchef en Vooruitblik-agent.

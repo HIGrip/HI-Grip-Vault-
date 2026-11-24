@@ -20,7 +20,6 @@ Het huidige overzicht is één tabel van tientallen lange rijen. Dat leest niema
 | Kwaliteitslog Overzicht (dit bestand) | Alleen "⏳ Wacht op Lars", "🚩 Geëscaleerd naar Lars", lopende correcties |
 | Log Website | Alle rijen van de Website Agent en zijn sub-agents |
 | Log Content | Alle rijen van de Content Agent en zijn sub-agents |
-| Log Partnership | Alle rijen van de Partnership Agent en zijn sub-agents |
 
 ## Regels
 

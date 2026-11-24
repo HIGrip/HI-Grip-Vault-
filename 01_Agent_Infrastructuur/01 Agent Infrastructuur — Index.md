@@ -35,9 +35,6 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Operations Agent
 - [[Agents Operations Agent]]
 
-### Partnership Agent
-- [[Agents Partnership Agent]]
-
 ### Social Agent
 - [[Agents Social Agent]]
 

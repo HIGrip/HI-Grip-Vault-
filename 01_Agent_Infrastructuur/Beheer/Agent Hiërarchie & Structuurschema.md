@@ -21,7 +21,6 @@ Denzel, alleen orchestrator (03_Denzel), geen eigen sub-agents
    ▼
 Hoofdagents (01_Agent_Infrastructuur, één Agents-bestand per hoofdagent)
    ├── Social Agent       → Content Strategie & Planning · Caption & Copy · Video & Visuele Productie · Content Maker · Socials Analyzer · Content-QA
-   ├── Partnership Agent  → Influencer & Creator · B2B Klanten · Partnerships & Events · Partnership-QA
    ├── Website Agent      → SEO · Website Copy · Conversie & Analyse · E-mail Marketing · Website-QA
    ├── Design Agent       → visuele uitwerking voor Social en Website (QA nog voorstel)
    ├── Operations Agent   → Stafchef · Vooruitblik-agent

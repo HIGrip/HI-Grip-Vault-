@@ -10,6 +10,38 @@ bijgewerkt: 2026-11-17
 
 ---
 
+## 2026-11-23 — Lars: publieke mails moeten bij eerste mobiele blik direct duidelijk zijn
+
+**Bron:** feedback Lars via opdracht t_bd241bd7; briefing al op t_cb349417, t_e29877b6 en t_295c8844 (gecontroleerd, niet herhaald). Alle drie v1-mails "rommelig en druk"; herontwerp toegestaan.
+
+**Borging (geen dubbele regel):** nieuwe E24 in [[Leerregels-Email-Design]] (alleen het nieuwe: eerste-blik-toets); één aanscherping bij de bestaande eerste-opzetregel in [[Leerregels per Agent]]. Raakpunten E2, E7, E8, E12, E15 en E21 blijven staan en zijn niet herhaald.
+
+**Grenzen:** geen Brand Core, geen dealgegevens, geen ontwerp; QA-toets is visuele review, geen klanttest.
+
+---
+
+## 2026-11-23 — Performance Days publieke mails v1: onafhankelijke QA CORRIGEER, QA-lessen geborgd
+
+**Bron:** QA-kaart t_31f62b24 (op bouwkaart t_aefc5396), vastlegging t_9b3f54ba. Drie lokale concepten (A, B, C) en zes renders (600 en 390) bewezen door Denzel; alle drie **CORRIGEER**, niet verzendklaar. Correctieketen t_cb349417 → t_e29877b6 → t_295c8844 ingepland.
+
+**Lessen (bestaande regels aangescherpt in [[Leerregels per Agent]], geen nieuwe regels):** (1) alle zichtbare CTA-knoppen toetsen op kleur, ook de tweede; (2) sectieovergangen ontwerpen en toetsen op werkelijke renders (E15); (3) tekst-beeldmatch en impliciete claims verifiëren; (4) vision-only of niet-menselijke randcontrole, E5-vergelijking en mobiele overflow zijn onbewezen, niet gehaald.
+
+**Structureel aandachtspunt:** het README van deze mails verwijst mogelijk naar een lokaal pad; of dit portabel is staat niet vast (basisregel 16 in [[user]]). Inhoud en bestanden laat Operations aan de domeinagenten.
+
+**Grenzen:** administratieve vastlegging; geen eigen oordeel over ontwerp of claims, geen sterren, geen Brand Core, geen externe acties.
+
+---
+
+## 2026-11-23 — Design en Denzel: E5-afwerkingslat geborgd
+
+**Bron en reden:** Lars' feedback via opdracht t_c43dace4, met bronkaart t_aea76b5d en eerdere oogtoets t_a1f10484. De eerste getoonde e-mailopzet moet al een bijna-afgewerkte, complete campagne zijn; E5 is het eindvoorbeeld voor afwerking, niet een vast recept.
+
+**Gerichte aanscherping:** bestaande Design-regel over onvolledige e-mailopleveringen en Denzels algemene oogtoetsregel in [[Leerregels per Agent]] aangevuld; E21 in [[Leerregels-Email-Design]] en de kwaliteitspoort in [[WORKFLOW-Email]] §3 bijgewerkt. Oorspronkelijke aanleiding behouden, geen leerregel vervallen verklaard. Mobiel én desktop vergelijken, grootste verschillen vóór oplevering herstellen en verzend-/testgaten apart melden.
+
+**Controle en grenzen:** administratieve verwerking door Operations, geen eigen visueel oordeel over E5 en geen clienttest. Kwaliteitslog aangevuld in [[Agent Werk & Kwaliteit Overzicht]]; historische rijen intact. Geen sterren gegeven. Geen nieuwe merkregel, sjabloon, campagnewaarden, computerpaden, ontwerp of publicatie. E5-assets staan lokaal; geen Drive-beschikbaarheid geclaimd.
+
+---
+
 ## 2026-11-17 — Design en Denzel: herhaalde smaakafkeuring; designrichting gepauzeerd
 
 **Bron:** opdracht t_0f17b9cb, correctie Lars van 17-11-2026; leerregels aangereikt door Denzel. **Feedback:** voetbal-ad ‘Elke afzet telt’ (t_f54a642b) en productad ‘Grip waar het telt’ (t_82471cd6) zijn afgekeurd: ‘echt veel te lelijk en te standaard’, ‘alles voelt zo hard’. Lars verwacht creativiteit binnen de richtlijnen, geen mechanisch visueel recept. **Agents:** Design (ontwerpaanpak) en Denzel (kwaliteitsclaims en opvolging). **Sterren:** niet gegeven; geen cijfer geregistreerd.

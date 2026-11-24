@@ -1,6 +1,6 @@
 ---
 name: email-marketing-bible
-description: >
+description: ">"
   Data-backed email marketing skill for AI agents. Use when building or running
   email automation, driving an ESP from an agent (MCP/connectors), diagnosing
   deliverability, writing or de-slopping email copy, directing AI email design,

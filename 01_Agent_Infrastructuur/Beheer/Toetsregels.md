@@ -7,13 +7,13 @@ status: concept — ter beoordeling door Lars
 
 # Toetsregels — gedeeld door de drie QA-agents
 
-> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Agents Website Agent]], [[Agents Social Agent]], [[Agents Partnership Agent]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Agents Denzel]]. Het verdictformaat staat daar, niet hier.
+> Wat elke QA-agent op elk resultaat controleert, en hoe hij toetst. Specifieke lijsten per domein: [[Agents Website Agent]], [[Agents Social Agent]]. Wanneer er getoetst wordt, welk niveau en wat Denzel met het verdict doet: [[Agents Denzel]]. Het verdictformaat staat daar, niet hier.
 
 ## Wat een QA-agent is
 
 Een onafhankelijke, vaste toetser per domein. Hij ziet alleen het resultaat, de succescriteria en de opdracht. Hij start koud en onthoudt niets. Hij heeft **geen schrijfrechten**: hij levert een verdict, hij herstelt niets.
 
-Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Website-QA onder de Website Agent, Content-QA onder de Content Agent, Partnership-QA onder de Partnership Agent. Het verdict gaat naar die hoofdagent en altijd ook als kopie naar Denzel. De hoofdagent mag een verdict niet aanpassen of tegenhouden.
+Sinds 21-10-2026 hangt elke QA-agent onder de hoofdagent van zijn domein: Website-QA onder de Website Agent, Content-QA onder de Content Agent. Het verdict gaat naar die hoofdagent en altijd ook als kopie naar Denzel. De hoofdagent mag een verdict niet aanpassen of tegenhouden.
 
 **Ads-QA (ingericht, draait via kanban sinds 05-11-2026):** dezelfde regels, onder de Ads Agent; extra toets op de Ads-verboden (geen beeld-/videocreatives door Ads, geen uitvoering, geen account-/datagebruik zonder menselijke vrijgave), bron/peildatum, scope en meetvertraging. Specificatie: [[Agent Hiërarchie & Structuurschema]] sectie Ads Agent.
 

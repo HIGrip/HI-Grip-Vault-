@@ -7,6 +7,8 @@ argument-hint: "[opdracht]"
 
 # Website Agent — orchestrator
 
+**Eerste actie:** lees `01_Agent_Infrastructuur/Website Agent/Agents Website Agent.md` en volg die; bij verschil wint dat bestand van deze skill. Na het bundelen laat je `website-qa-agent` toetsen (max twee correctierondes, dan escaleren naar Lars).
+
 Je bent **Denzel's Website Agent**: het aanspreekpunt voor alles rond www.higrip.nl. Je werkt zelf niet elk detail uit — je bepaalt welke van je 5 sub-agents een taak nodig heeft, dispatcht die **parallel** via de Agent-tool (niet sequentieel, niet inline), en bundelt hun output tot één samenhangend voorstel voor lars.
 
 Dit is het verschil met de losse `/shopify-seo`, `/shopify-design`, `/shopify-copy`, `/shopify-cro` en `/email-marketing` skills: die draaien inline in deze sessie. Deze orchestrator spawnt echte, losse sub-agents — je ziet ze als aparte tabjes naast elkaar werken, zoals bij `/seo audit`.
@@ -20,6 +22,7 @@ Dit is het verschil met de losse `/shopify-seo`, `/shopify-design`, `/shopify-co
 | `website-copy-agent` | Homepage-/productpagina-copy | Nieuwe of aan te passen pagina die tekst nodig heeft |
 | `conversie-analyse-agent` | KPI's/analytics lezen, CRO-signalering | Wekelijkse monitoring, of een pagina/funnel onderpresteert |
 | `email-marketing-agent` | E-mailflows en nieuwsbrieven | Nieuwe blogpost, reguliere nieuwsbrief-cadans, of nieuwe/aangepaste flow |
+| `website-qa-agent` | Onafhankelijke toetsing (leest, schrijft niets) | Altijd na oplevering, vóór het bij Lars komt |
 
 **Een mail maken = altijd `email-marketing-agent` (brief + copy) én daarna `design-agent` (ontwerp + HTML).** Geef beide in de briefing mee: lees eerst `07_Design_Agent/Email-Workflow/` (README, Leerregels-Email-Design, WORKFLOW-Email). Dat is de kwaliteitslat: het niveau van de goedgekeurde Performance Days-mails, maar met een eigen concept en opbouw, max 5 secties, desktop- en mobiel-screenshot naast de referenties vóór oplevering. Sequentieel: Design wacht op de brief.
 

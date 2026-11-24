@@ -2,45 +2,56 @@
 type: merkregel
 gebied: design-agent
 status: concept
-bijgewerkt: 2026-11-19
-bron: taak t_c06bded9 (voorstel Design Agent; niets geactiveerd, Lars beslist)
+bijgewerkt: 2026-11-20
+bron: taak t_856f7143 (herschrijving na correctie Lars 19-11-2026; niets geactiveerd)
 ---
 
-# Design DNA — vast en vrij
+# Design DNA: één familie, elke keer anders
 
-> **Voorstel, status concept.** Doel: binnen het merk echt creatief kunnen zijn. Eerst wat vaststaat, dan wat de ontwerper zelf kiest. Gebaseerd op [[Ontwerp-analyse]]; de bestaande regels blijven gelden tot Lars dit goedkeurt.
+> **Concept.** Elke post, mail en ad ziet er anders uit; samen herkent men de HÏ Grip-stijl. Een familie, geen sjabloon. Basis: [[Ontwerp-analyse]]. Maten en details staan in [[Logo & Kleurenpalet]] en [[Design Elementen]]; hier staan alleen de principes.
 
-## VAST (harde grens; hier verandert niets)
+**Over de bronnen (Lars, 19/20-11-2026).** Voorbeelden van andere merken (mails, ads, video's) zijn referentie voor opbouw, compositie, mechanisme en creatieve keuzes, nooit voor kleur of branding: dat is de branding van dat merk en geen maatstaf voor HÏ Grip. Blauwe, gele of donkerblauwe voorbeeldmails zijn dus geen tegenspraak met anker 2.
 
-| Punt | Bron |
-|---|---|
-| Font: Poppins, gewichten en hoofdlettergebruik | [[Logo & Kleurenpalet]] (Typografie) |
-| Kleur: zwart en wit dragen; accent is Volt of het sportaccent van de uiting | [[Logo & Kleurenpalet]] (Kleurenpalet) |
-| Logo, lockups, vrije ruimte, merknaam **HÏ Grip** met trema | [[Logo & Kleurenpalet]] |
-| Echt product en echte beelden; geen beeld dat iets over het product toont dat niet klopt | [[Fotografie & Art-Direction]] |
-| Geen verzonnen claims, cijfers, reviews, keurmerken of nep-mechanismen; alleen uit de feitenbron, 95%-claim alleen met verplichte formulering | Feiten & Actuele Staat (00_Brand_Core) |
-| Wettelijke en platformgrenzen; niets publiceren | [[Agents Design Agent]] |
-| De vijf designprincipes zijn de toets: valt er één weg, dan is het geen HÏ Grip-design | [[Design Elementen]] |
+## Herkenningsankers (de vaste laag)
 
-## VRIJ (eigen keuze van de ontwerper)
+Richtwaarde: een stuk draagt minstens vier van deze vijf, en minstens één speelt de hoofdrol. Dit is geen harde regel; het helpt bij de herkenningstest. Elk anker heeft zijn bron.
 
-Compositie, uitsnede en hoek, schaalcontrast (één woord of beeld 5 tot 10 keer groter dan de rest), typografische spanning, ritme en aantal elementen, kleurplek (waar het accent landt), het ene onverwachte element, tekst als beeldlaag. Patronen: [[Ontwerp-analyse]] (a).
+1. **Typografische stem.** Poppins, schuin en vet, stellig en groot; de kop klinkt als een uitspraak, niet als een label. *Bron: [[Logo & Kleurenpalet]]; patroon: [[Ontwerp-analyse]] (a) 2.*
+2. **Zwart en wit met één accent op één plek.** Zwart en wit dragen, het accent is een punt van aandacht en geen behang (kleur uit het palet). *Bron: [[Design Elementen]] (kleur als accent, nooit vlakvulling) en [[Logo & Kleurenpalet]]; patroon: [[Ontwerp-analyse]] (a) 3.*
+3. **Grid en halftone als handtekening.** Het raster van de sok, doorvertaald naar dots, mesh en dunne technische lijnen; zichtbaar of subtiel aanwezig. *Bron: [[Design Elementen]], 'Het halftone-raster — onze handtekening': maximaal één rasterelement per uiting, één accentkleur, accent en geen behang.* De goedgekeurde ads tonen het raster maar licht; dat is een kans voor nieuwe ontwerpen (het raster als hoofdrol), geen fout.
+4. **Echt product of echte sporter, hard in contrast.** Dynamisch beeld met licht en schaduw dat iets doet; geen frontale of neutrale foto. *Bron: [[Fotografie & Art-Direction]]; patroon: [[Ontwerp-analyse]] (a) 4.*
+5. **Logo en merknaam.** Het logo staat herkenbaar en met vrije ruimte; de naam is altijd HÏ Grip, met trema. *Bron: [[Logo & Kleurenpalet]].*
 
-| Kanaal | Vrij |
-|---|---|
-| Ads | kopschaal, kop over het beeld, uitsnede en diagonaal, callout-laag, positie en grootte van het accentvlak, wit vlak als breuk, eigen verhaal per sport |
-| Social | reuzentypo als held, monochroom met één accentwoord, laag-hoek, scherp tegen onscherp, serie-ritme |
-| E-mail | volgorde van blokken, één grafisch element, witte kaart als anker, schaalsprong, aantal blokken |
-| Site | schaal en uitsnede per sectie, blueprint-callouts, zwart/wit-wisseling, productdiagonaal |
+## De vrije laag (wat per stuk mag verschillen)
+
+Compositie en indeling, uitsnede en hoek, schaal en schaalsprong, ritme en hoeveel elementen, sfeer (stil of luid, licht of donker), de plek waar het accent landt, het ene onverwachte element, tekst als beeldlaag, en welke ankers de hoofdrol spelen en welke op de achtergrond blijven. Kanaalvoorbeelden: [[Ontwerp-analyse]] (b).
+
+## Twee toetsen
+
+**a) Herkenningstest.** Leg het stuk naast de vaste referentieset van 5 eigen stukken (zie [[Creatieve loop]]). Zou iemand zonder logo zeggen dat het van hetzelfde merk is?
+
+**b) Variatietest.** Leg 9 stukken naast elkaar (feedvel of mailcontactvel). Zie je 9 verschillende ideeën in één familie, of 9 keer hetzelfde? Richtwaarde: maximaal 2 van de 9 met dezelfde indeling; geen harde regel, het gaat om het oordeel of je 9 ideeën ziet.
+
+Te los = herkenningstest faalt (voeg een anker toe); te gelijk = variatietest faalt (verander de indeling, niet de kleur). Kijken gebeurt in de [[Creatieve loop]].
+
+## E-mail (concept, 20-11-2026)
+
+Een mail is één stuk uit de familie: minstens vier ankers, eigen indeling en held per mail; dezelfde twee toetsen gelden (contactvel van 9 mails). Daarbovenop geldt voor e-mail de algemene regel van Lars: een e-mail voelt als één geheel; de secties lopen in elkaar over ([[WORKFLOW-Email]] §5). Referenties van andere merken leveren alleen opbouw, compositie en mechanisme.
+
+## Harde grenzen (blijven, geen smaakkwestie)
+
+Echt product en echte beelden; geen verzonnen claims, cijfers, reviews, keurmerken of nep-mechanismen (feiten uit Feiten & Actuele Staat, 95%-claim alleen met verplichte formulering); leesbaar op klein scherm; veilige zones van het platform; niets publiceren. De vijf designprincipes uit [[Design Elementen]] blijven de toets: valt er één weg, dan is het geen HÏ Grip-design.
+
+## Besluit van Lars
+
+De vangnetregels in [[Regelvoorstel Design DNA]] (QA D1 t/m D12, unieke foto per ad, alleen HTML/CSS voor ads en social) blijven staan op basis van eerdere besluiten van Lars (16-11-2026: D1 t/m D12 vastgesteld en geldend; Leerregels-Ads-Design regel 5 en 11). Of Lars dit op 20-11-2026 opnieuw bevestigde is onzeker (antwoord van Lars was niet eenduidig); niet herzien tot hij het zegt.
 
 ## Eén regel
 
-Binnen het merk mag je een regel buigen als het ontwerp er duidelijk beter van wordt. Leg in de oplevering uit welke regel je boog en waarom. Een buiging mag nooit een VAST-punt raken. Twijfel of het merkbreuk is: stel het voor via Denzel.
+Een regel buigen mag als het stuk er duidelijk beter van wordt; benoem in de oplevering welke en waarom. Nooit een harde grens. Twijfel of het merkbreuk is: stel het voor.
 
-## Tegenspraken: voorstel, Lars beslist
+## Open tegenspraken, opgelost
 
-1. **'Accent nooit als vlakvulling' (Design Elementen) tegenover de ticket-stub (e-mailgids) en de ads-regel 'Volt-blok >= 85% breed, >= 11% vlak' (Leerregels ads 9).** Voorstel: de regel gaat over de *hele uiting en grote achtergronden*. Een *begrensd* accentvlak mag als object (ticket-tab, badge, knop, kopblok) tot ongeveer een zesde van het vlak, op zwart of wit. Een volledig verzadigde achtergrond blijft afgekeurd (mail-evaluatie 25-08). Het ads-blok >= 85% breed vervalt als maat en wordt ontwerpkeuze: het accent mag op één plek groot zijn, het hoeft niet. Dit past bij patroon 3 uit de analyse (één kleur, één plek).
-2. **Accent per sport.** Goede stukken gebruiken oranje, blauw of geel, het palet kent een accent per sport. Voorstel: dat is toegestaan, niet 'Volt als enige'. Open: ad GRIP toont oranje bij rugby, het palet zegt rood (Tangerine) voor rugby; Lars bevestigt de bedoeling.
-3. **Sportnaam.** Een los sportlabel blijft afgekeurd (leerregel 2); de sport als kopwoord mag.
+Principe gekozen: **het accent is een plek, geen vlakvulling; de verhouding staat vast, de invulling mag meebewegen.** Daarom mag een begrensd accentobject (ticket-stub, badge, knop, kopblok) op zwart of wit, maar blijft een volledig verzadigde achtergrond afgekeurd ([[Design Elementen]]: kleur nooit als vlakvulling over de hele uiting); een vaste blokmaat voor het accent is geen regel meer, want die maakt elke ad gelijk. De kleur komt uit het palet van de uiting (Volt of het sportaccent): dat past bij 'één familie, elke keer anders', omdat zwart en wit dragen en één plek kleur vaststaat terwijl de kleur zelf met de sport mag meebewegen. Het sportlabel als los etiket blijft afgekeurd; de sport als kopwoord mag.
 
 > Map: [[07 Design Agent — Index]]

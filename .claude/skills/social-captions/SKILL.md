@@ -1,7 +1,7 @@
 ---
 name: social-captions
 version: 2.0.0
-description: |
+description: "|"
   Write algorithm-optimized captions/descriptions for social media posts and reels.
   Supports Instagram (Reels, Feed, Carousel), TikTok, Threads, Facebook, and YouTube Shorts.
   The user sends material (text, image, script, competitor post, screenshot) and

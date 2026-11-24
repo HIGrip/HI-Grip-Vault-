@@ -12,7 +12,11 @@ bijgewerkt: 2026-10-29
 
 ## Harde regel — theme-ID's (nooit negeren)
 
-> **Bijgewerkt 2026-11-05 (lars, in chat):** nieuw werkthema is **`204029296967`** (editor: https://admin.shopify.com/store/hi-grip/themes/204029296967/editor). Eerder werkthema was `203461034311` (daarna `203928076615` "Live website 04-11-2026"). Controleer rol en naam eerst met `shopify theme list`; de live-regel in de tabel hieronder kan achterlopen.
+> **Toegevoegd 2026-11-24 (Lars, in chat: "het werkthema black Friday"):** Black Friday-werk gebeurt in **`205415153991` "BLACK FRIDAY werkthema 24-11-2026"** (unpublished, gezien met `theme list` op 24-11; lokale kopie met git: `<gebruikersmap>\Downloads\theme-bf-2411`). `205342998855` blijft het algemene werkthema. Live: `204874187079` "Live website 23-11-2026".
+
+> **Bijgewerkt 2026-11-23 (lars, in chat):** nieuw werkthema is **`205342998855`** (editor: https://admin.shopify.com/store/hi-grip/themes/205342998855/editor), "Bijgewerkte kopie van Bijgewerkte kopie van Live website 04-11-2026", unpublished (gezien via Admin API op 23-11). Opvolger van `204029296967`; live blijft `204874187079`.
+>
+> *Vorige stand — bijgewerkt 2026-11-05 (lars, in chat):* werkthema was **`204029296967`** (editor: https://admin.shopify.com/store/hi-grip/themes/204029296967/editor). Eerder werkthema was `203461034311` (daarna `203928076615` "Live website 04-11-2026"). Controleer rol en naam eerst met `shopify theme list`; de live-regel in de tabel hieronder kan achterlopen.
 >
 > *Vorige stand — bijgewerkt 2026-10-29:* werkthema is nu **`203461034311` "WERKTHEMA"**; live is `202669916487` ("Live HÏ Grip WEBSITE + contactpagina"), beide gezien met `shopify theme list` op 29-10. Snelheidswerk van 29-10 (lokale kopie `<gebruikersmap>\Werk\theme-snelheid\werkthema`, git) staat in dit thema: zie [[2026-10-29-ads-funnel-en-snelheid-productpagina]]. Let op: de lazy-load-fix in `snippets/product-media-gallery-content.liquid` is een Horizon-kernbestand en moet na een Horizon-update opnieuw.
 >
@@ -30,7 +34,8 @@ bijgewerkt: 2026-10-29
 
 | Theme | ID | Rol | Mag de agent bewerken? |
 |---|---|---|---|
-| **Werkthema (sinds 5-11)** | `204029296967` (aangewezen door lars) | unpublished (check met `theme list`) | **Ja** — enige werkkopie |
+| **Werkthema (sinds 23-11)** | `205342998855` (aangewezen door lars) | unpublished (check met `theme list`) | **Ja** — enige werkkopie |
+| Vorig werkthema (5-11 t/m 23-11) | `204029296967` | unpublished | Nee, vervangen door `205342998855` |
 | Live op www.higrip.nl (Horizon 4.5.0, "Bijgewerkte kopie van Live website 04-11-2026") | `204874187079` (18-11 gepubliceerd op opdracht van de gebruiker, gezien met `theme list`; was `203954520391`, nu unpublished als terugvaloptie; lokale kopie met git: `<gebruikersmap>\Werk\theme-snelheid\update-45`) — **altijd `theme list` checken** | **live** | **NOOIT, onder geen enkele voorwaarde** |
 | Vorig live-thema ("Live website 04-11-2026", WERKTHEMA 02, Horizon 4.3.0) | `203928076615` (4-11: unpublished, terugvaloptie; git: `<gebruikersmap>\Werk\theme-snelheid\werkthema-02`) | unpublished | Nee |
 | Ouder live-thema ("WERKTHEMA") | `203461034311` (4-11: unpublished) | unpublished | Nee |

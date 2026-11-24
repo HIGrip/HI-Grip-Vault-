@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-23T04:03:24+01:00",
+ "laatste_run": "2026-11-24T04:02:54+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -2633,11 +2633,11 @@
    "uitkomst": "handmatig"
   },
   "2026-10-25-ads-onderzoek-bewezen-grip-sock-ads#e067d292": {
-   "bewijs": "geen verzameldocument gevonden; alleen losse verwijzingen in de bestaande notities, ongewijzigd",
-   "controle": "Is er een verzameldocument (swipe file) aangelegd?",
-   "gecontroleerd": "2026-11-23",
-   "methode": "vault",
-   "uitkomst": "open"
+   "bewijs": "niet te controleren: swipe file staat buiten de vault/repository",
+   "controle": "swipe file met ad-voorbeelden aanleggen",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
   },
   "2026-10-26-weekoverzicht#2195bab1": {
    "bewijs": "besluit over de duiding van de nul-bestellingenweek vraagt om een afweging van Lars, geen technische check",
@@ -4857,11 +4857,11 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#827f0731": {
-   "bewijs": "niet te controleren: geen aparte publicatie-log per notitie; dagelijkse routines draaien al standaard vanaf info@, ongewijzigd",
-   "controle": "Draait dashboard-sync/publicatie voor deze notitie al vanaf info@?",
-   "gecontroleerd": "2026-11-23",
+   "bewijs": "mensenwerk: moet vanaf het info@-account, niet automatisch waar te nemen",
+   "controle": "dashboard-sync en publicatie vanaf het info@-account draaien",
+   "gecontroleerd": "2026-11-24",
    "methode": "geen",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#8a660c98": {
    "bewijs": "niet automatisch waar te nemen",
@@ -4899,11 +4899,11 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#cc482514": {
-   "bewijs": "niet te controleren: vraagt ordergegevens van individuele orders, Shopify-cijfers mogen alleen als totalen, ongewijzigd",
-   "controle": "Is de bron van 2 specifieke 3-pack-orders na te gaan?",
-   "gecontroleerd": "2026-11-23",
+   "bewijs": "niet te controleren: vereist handmatige orderanalyse zonder vastgelegd, automatisch waarneembaar eindresultaat",
+   "controle": "herkomst van twee specifieke 3-pack-orders nagaan",
+   "gecontroleerd": "2026-11-24",
    "methode": "geen",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
    "bewijs": "niet te controleren: analytics-hulpscript niet beschikbaar deze sessie, ongewijzigd",
@@ -5381,6 +5381,122 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-11-23-meta-campagnerapport#3ea7adf0": {
+   "bewijs": "mensenwerk in SendWILL/Meta Ads Manager, geen koppeling beschikbaar voor de actiecontrole",
+   "controle": "eigen UTM-campagnes instellen voor mails (SendWILL) en advertenties (Meta)",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#5a5b210b": {
+   "bewijs": "niet te controleren: de ad-inhoud op Meta is niet zichtbaar via een beschikbare connector",
+   "controle": "claim in een lopende Meta-ad toetsen aan het feitenbestand",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#63951d3b": {
+   "bewijs": "mensenwerk in Meta Ads/ontwerp, geen koppeling beschikbaar voor de actiecontrole",
+   "controle": "ontwerpwerk aan een Meta-ad-creative (beeld uitsnijden, prijsregel toevoegen)",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#895904c1": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over samenvoegen advertentiesets NL Rugby/Voetbal/Product",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#8b3c3ce2": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over het Meta-uitgavenplafond",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#9029416a": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over het pauzeren van de België-campagne",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#a3a769bd": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over de 3-pack-actie (stoppen of samenvoegen)",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-meta-campagnerapport#f9f4a945": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over het al dan niet verlengen van Early Access",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-regressiecheck#12bc123c": {
+   "bewijs": "zelfde besluit als backlog#d13130cb; --dubbel-van wijst naar de backlog-variant",
+   "controle": "vergeleken met open acties over higripsportswear.com-besluit",
+   "dubbel_van": "backlog#d13130cb",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-23-regressiecheck#4ea9d69f": {
+   "bewijs": "zelfde pagina's/eindtoestand als backlog#4ec33dde; --dubbel-van wijst naar de backlog-variant",
+   "controle": "vergeleken met open acties over ontbrekende meta description /pages/early-access",
+   "dubbel_van": "backlog#4ec33dde",
+   "gecontroleerd": "2026-11-24",
+   "methode": "site",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-23-seo-conversietest-run-9#81f37ff1": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig om te bevestigen welk thema het actuele unpublished werkthema is",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-seo-conversietest-run-9#94152b81": {
+   "bewijs": "zelfde systeem/eindtoestand als backlog#cff701df (al open sinds 16-11); --dubbel-van wijst naar de backlog-variant",
+   "controle": "vergeleken met open acties over dezelfde negatieve 2.0-voorraad",
+   "dubbel_van": "backlog#cff701df",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-23-seo-conversietest-run-9#c1e63263": {
+   "bewijs": "zelfde pagina/eindtoestand als backlog#5d65bfbd (al open sinds 16-11); --dubbel-van wijst naar de backlog-variant",
+   "controle": "vergeleken met open acties over dezelfde verdwenen collectiebeschrijving /collections/gripsokken",
+   "dubbel_van": "backlog#5d65bfbd",
+   "gecontroleerd": "2026-11-24",
+   "methode": "site",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-23-seo-conversietest-run-9#fcf47c4c": {
+   "bewijs": "mensenwerk: alleen een mens kan de connector herkoppelen, niet automatisch waar te nemen",
+   "controle": "Shopify theme_bash-connector opnieuw koppelen met extra rechten",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-weekoverzicht#0e93898c": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over de Meta-campagne-evaluatie van 21 november",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-23-weekoverzicht#36091f0e": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over onderzoek naar nul-omzetweken",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
   "backlog#01dc4258": {
    "bewijs": "niet te controleren: analytics-hulpscript niet beschikbaar deze sessie, ongewijzigd",
    "controle": "Is het analytics-hulpscript deze run beschikbaar voor een nieuwe meting?",
@@ -5584,6 +5700,20 @@
    "methode": "shopify",
    "uitkomst": "open"
   },
+  "backlog#cff701df": {
+   "bewijs": "mensenwerk: alleen Lars kan dit besluiten, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig over voorraadstatus",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "backlog#d13130cb": {
+   "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
+   "controle": "besluit van Lars nodig of higripsportswear.com een bewust internationaal domein is",
+   "gecontroleerd": "2026-11-24",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
   "backlog#d6d843f3": {
    "bewijs": "titel \"Teamorder – HÏ Grip\" aanwezig, maar geen <meta name=\"description\"> in de HTML",
    "controle": "meta description gecontroleerd op https://www.higrip.nl/pages/teamorder (curl, 200)",
@@ -5642,7 +5772,6 @@
   }
  },
  "runs": [
-  "2026-11-08",
   "2026-11-09",
   "2026-11-10",
   "2026-11-11",
@@ -5655,7 +5784,8 @@
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ],
  "volgende_run": "dagelijks 05:00"
 }

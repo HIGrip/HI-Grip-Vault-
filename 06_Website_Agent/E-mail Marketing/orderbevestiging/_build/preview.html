@@ -1,0 +1,66 @@
+<title>Orderbevestiging HÏ Grip</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap">
+<style>
+/* Eén kolom: keuzebalk boven, de mail als afbeelding eronder op ware grootte */
+:root{--bg:#EDEDEE;--fg:#0A0A0A;--mut:#55565A;--card:#FFFFFF;--line:#D6D6D9;--on:#0A0A0A;--onfg:#FFFFFF;--f:'Poppins',Arial,Helvetica,sans-serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111111;--fg:#FFFFFF;--mut:#909194;--card:#1A1A1A;--line:#2A2A2A;--on:#FFFFFF;--onfg:#0A0A0A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111111;--fg:#FFFFFF;--mut:#909194;--card:#1A1A1A;--line:#2A2A2A;--on:#FFFFFF;--onfg:#0A0A0A;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:980px;margin:0 auto;padding-block:32px 64px;display:grid;gap:24px}
+h1{font-size:28px;font-weight:800;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.sub{color:var(--mut);margin:6px 0 0;font-size:14px}
+.bar{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}
+.grp{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
+.grp button{font:600 13px var(--f);border:0;background:transparent;color:var(--fg);padding:8px 16px;border-radius:999px;cursor:pointer}
+.grp button[aria-pressed="true"]{background:var(--on);color:var(--onfg)}
+.grp button:focus-visible{outline:2px solid var(--on);outline-offset:2px}
+.why{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-size:14px;line-height:1.6;max-width:65ch}
+.why b{font-weight:600}
+.stage{display:flex;justify-content:center}
+.stage img{display:block;width:100%;height:auto;box-shadow:0 2px 24px rgba(0,0,0,.12);border-radius:6px}
+.note{color:var(--mut);font-size:12px;text-align:center}
+</style>
+<div class="wrap">
+  <div><h1>Orderbevestiging</h1><p class="sub">Voorstel, niet in Shopify gezet. Ingevuld met testorders.</p></div>
+  <div class="bar">
+    <div class="grp" id="opt" role="group" aria-label="Optie">
+      <button data-v="optie-d-statusbalk" aria-pressed="true">D · Statusbalk (nieuw)</button>
+      <button data-v="optie-a-bonnetje" aria-pressed="false">A · Bonnetje</button>
+      <button data-v="optie-b-dark-hero" aria-pressed="false">B · Dark hero</button>
+      <button data-v="optie-c-raster" aria-pressed="false">C · Raster</button>
+    </div>
+    <div class="grp" id="dev" role="group" aria-label="Scherm">
+      <button data-v="desktop" aria-pressed="true">Desktop</button>
+      <button data-v="mobiel" aria-pressed="false">Mobiel</button>
+    </div>
+    <div class="grp" id="ord" role="group" aria-label="Testorder">
+      <button data-v="order1" aria-pressed="true">2 regels, korting</button>
+      <button data-v="order2" aria-pressed="false">België, €5,00</button>
+      <button data-v="afhalen" aria-pressed="false">Afhalen</button>
+    </div>
+  </div>
+  <div class="why" id="why"></div>
+  <div class="stage"><img id="shot" alt=""></div>
+  <p class="note" id="note"></p>
+</div>
+<script>
+const why={
+ "optie-d-statusbalk":"<b>Statusbalk.</b> Nieuw, naar jouw voorbeelden: donker en gecentreerd, Volt-chevronstrook onder het logo, grote kop, statusbalk (bevestigd, verzonden, bezorgd), overzicht met adres, artikeltabel en een servicebalk.",
+ "optie-a-bonnetje":"<b>Bonnetje.</b> Wit en typografisch, de ordertabel in de hoofdrol, één zwart merkblok onderaan. De rustigste en de veiligste in Outlook.",
+ "optie-b-dark-hero":"<b>Dark hero.</b> Zwarte hero met Volt-glow en grip-dots, een witte bonkaart op doorlopend zwart. Dichtst bij de huidige mails; voorkeur van de bouwer.",
+ "optie-c-raster":"<b>Raster.</b> Zwarte kop met één halftone-raster, een strook met bestelling, datum en artikelen, grote productfoto's. Nieuwste richting uit de stijlgids."};
+const s={opt:"optie-d-statusbalk",dev:"desktop",ord:"order1"};
+function draw(){
+  if(s.ord==="afhalen")s.dev="mobiel";
+  document.querySelectorAll(".grp").forEach(g=>g.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.v===s[g.id])));
+  const img=document.getElementById("shot");
+  img.src=`screenshots/${s.opt}--${s.ord}--${s.dev}.png`;
+  img.alt=`${s.opt} ${s.ord} ${s.dev}`;
+  img.style.maxWidth=s.dev==="mobiel"?"375px":"680px";
+  document.getElementById("why").innerHTML=why[s.opt];
+  document.getElementById("note").textContent=s.ord==="afhalen"?"Afhalen is alleen op mobiel gerenderd.":"";
+}
+document.querySelectorAll(".grp").forEach(g=>g.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;s[g.id]=b.dataset.v;draw();}));
+draw();
+</script>

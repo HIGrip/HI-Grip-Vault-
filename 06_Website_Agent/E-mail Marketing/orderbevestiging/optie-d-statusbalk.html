@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no,address=no,email=no,date=no">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Bestelling {{ name }} bevestigd | HÏ Grip</title>
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><style>body,table,td,a,div,span{font-family:Arial,Helvetica,sans-serif !important;}</style><![endif]-->
+<!--[if !mso]><!--><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"><!--<![endif]-->
+<style>
+body{margin:0;padding:0;width:100%!important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+table{border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0;}
+img{border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;}
+@media only screen and (max-width:620px){
+.wrap{width:100%!important;}
+.px{padding-left:20px!important;padding-right:20px!important;}
+.stack{display:block!important;width:100%!important;}
+.stack-gap{padding-top:22px!important;padding-left:0!important;}
+.h1{font-size:32px!important;line-height:36px!important;}
+.btn{display:block!important;text-align:center!important;}
+.hide-m{display:none!important;}
+}
+:root{color-scheme:light;supported-color-schemes:light;}
+body{background-color:#0A0A0A;}
+.bg-ink, [data-ogsc] .bg-ink, [data-ogsb] .bg-ink{background-color:#0A0A0A!important;}
+.bg-panel, [data-ogsc] .bg-panel, [data-ogsb] .bg-panel{background-color:#1A1A1A!important;}
+.keep-white, [data-ogsc] .keep-white, [data-ogsb] .keep-white{color:#FFFFFF!important;}
+.keep-volt, [data-ogsc] .keep-volt, [data-ogsb] .keep-volt{color:#CCFF00!important;}
+@media only screen and (max-width:620px){.qty{display:none!important;}.thumb{width:56px!important;height:56px!important;}.usp td{padding:16px 8px!important;}.usp .big{font-size:18px!important;white-space:nowrap;}.stack-gap{border-left:0!important;}.ov td{font-size:13px!important;line-height:20px!important;}.h1{font-size:32px!important;line-height:36px!important;}}
+
+</style>
+</head>
+<body style="margin:0;padding:0;background-color:#0A0A0A;background-image:url(https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-achtergrond.jpg);" bgcolor="#0A0A0A">
+{%- comment -%} HÏ Grip orderbevestiging. Feiten: 00_Brand_Core/Feiten & Actuele Staat.md. [CHECK] TikTok-URL en vestigingsadres staan niet in de vault; shop.email en shop.address zijn geen gedocumenteerde notificatievariabelen. {%- endcomment -%}
+{%- assign maanden = "januari,februari,maart,april,mei,juni,juli,augustus,september,oktober,november,december" | split: "," -%}
+{%- assign m_idx = created_at | date: "%-m" | minus: 1 -%}
+{%- capture besteldatum -%}{{ created_at | date: "%-d" }} {{ maanden[m_idx] }} {{ created_at | date: "%Y" }}{%- endcapture -%}
+{%- assign delivery_types = delivery_agreements | map: 'delivery_method_type' | uniq | join: ',' -%}
+{%- assign is_pickup = false -%}{%- if delivery_types contains 'pick-up' -%}{%- assign is_pickup = true -%}{%- endif -%}
+{%- assign is_local = false -%}{%- if delivery_types contains 'local' -%}{%- assign is_local = true -%}{%- endif -%}
+{%- assign is_shipping = true -%}{%- if is_pickup or is_local -%}{%- assign is_shipping = false -%}{%- endif -%}
+{%- assign voornaam = shipping_address.first_name | default: billing_address.first_name -%}
+{%- assign codes = '' -%}{%- for d in discount_applications -%}{%- if d.type == 'discount_code' -%}{%- if codes != '' -%}{%- assign codes = codes | append: ', ' -%}{%- endif -%}{%- assign codes = codes | append: d.title -%}{%- endif -%}{%- endfor -%}
+{%- assign regels_totaal = 0 -%}{%- for line in subtotal_line_items -%}{%- assign regels_totaal = regels_totaal | plus: line.final_line_price -%}{%- endfor -%}
+{%- assign orderkorting = regels_totaal | minus: subtotal_price -%}
+{%- assign betaling = '' -%}{%- for t in transactions -%}{%- if betaling == '' -%}{%- if t.status == 'success' or t.status == 'pending' -%}{%- if t.kind == 'sale' or t.kind == 'authorization' or t.kind == 'capture' -%}{%- capture betaling -%}{{ t.gateway_display_name }}{% if t.payment_details.credit_card_last_four_digits and t.payment_details.credit_card_last_four_digits != '' %} eindigend op {{ t.payment_details.credit_card_last_four_digits }}{% endif %}{%- endcapture -%}{%- endif -%}{%- endif -%}{%- endif -%}{%- endfor -%}
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:transparent;opacity:0;">Bestelling {{ name }} van {{ besteldatum }}. {% if is_shipping %}Binnen 1 werkdag verzonden.{% endif %} 30 dagen retour.&#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp; &#847; &zwnj; &nbsp;</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" background="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-achtergrond.jpg" bgcolor="#0A0A0A" class="bg-ink" style="background-color:#0A0A0A;background-image:url(https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-achtergrond.jpg);background-repeat:repeat;">
+<tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" class="wrap" style="width:600px;max-width:600px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+
+<tr><td align="center" style="padding:40px 40px 0;"><a href="https://www.higrip.nl" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-logo.jpg" width="44" height="36" alt="HÏ Grip" style="display:block;width:44px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td></tr>
+
+<tr><td align="center" class="px" style="padding:40px 48px 0;">
+
+<div style="padding-top:12px;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-titel.jpg" width="520" height="96" alt="Je bestelling is bevestigd." style="display:block;width:520px;max-width:100%;height:auto;border:0;margin:0 auto;"></div>
+<div style="padding-top:14px;">{%- if is_pickup -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-intro-afhalen.jpg" width="335" height="52" alt="Je bestelling is rond. Je koos voor afhalen." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- elsif is_local -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-intro-lokaal.jpg" width="335" height="52" alt="Je bestelling is rond. Je koos voor lokale levering." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- else -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-intro-verzending.jpg" width="335" height="52" alt="Je bestelling is rond. Binnen 1 werkdag gaat hij de deur uit." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- endif -%}</div>
+</td></tr>
+<tr><td align="center" style="padding:30px 40px 0;" class="px">{%- if is_pickup -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-status-afhalen.jpg" width="335" height="60" alt="Bevestigd. Daarna: klaar, opgehaald." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- elsif is_local -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-status-lokaal.jpg" width="335" height="60" alt="Bevestigd. Daarna: onderweg, bezorgd." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- else -%}<img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-status-verzending.jpg" width="335" height="60" alt="Bevestigd. Daarna: verzonden, bezorgd." style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;">{%- endif -%}</td></tr>
+<tr><td align="center" style="padding:34px 40px 44px;"><a href="{{ order_status_url }}" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-knop-bestelling.jpg" width="280" height="52" alt="Bekijk je bestelling" style="display:block;width:280px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td></tr>
+
+<tr><td class="px" style="padding:0 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1A1A1A" class="bg-panel" style="background-color:#1A1A1A;border-radius:18px;border-collapse:separate;">
+<tr><td class="px" style="padding:22px 28px 26px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td colspan="2" style="padding-bottom:18px;"><div class="keep-white" style="font-size:16px;line-height:24px;color:#FFFFFF;">{% if voornaam != blank %}Hoi <strong style="font-weight:700;">{{ voornaam }}</strong>, hier is je bestelling.{% else %}Hier is je bestelling.{% endif %}</div><div style="font-size:13px;line-height:20px;color:#909194;">Bestelling {{ name }} &middot; {{ besteldatum }}</div></td></tr>
+<tr><td style="padding-bottom:12px;"><div style="font-size:11px;line-height:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;text-align:left;">Artikelen</div></td><td width="90" style="width:90px;padding-bottom:12px;"><div style="font-size:11px;line-height:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;text-align:right;">Prijs</div></td></tr>
+{%- for line in subtotal_line_items -%}
+<tr>
+<td valign="middle" style="padding:16px 0;border-top:1px solid #2C2C2E;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td valign="middle" width="72" style="width:72px;">{% if line.image %}<img class="thumb" src="{{ line.image | img_url: '160x160' }}" width="72" height="72" alt="{{ line.product.title | default: line.title | escape }}" style="display:block;width:72px;height:72px;border-radius:12px;object-fit:cover;">{% endif %}</td>
+<td valign="middle" style="padding-left:16px;"><div class="keep-white" style="font-size:15px;line-height:22px;font-weight:600;color:#FFFFFF;">{{ line.product.title | default: line.title }}</div>{%- unless line.variant.title == blank or line.variant.title == 'Default Title' -%}<div style="font-size:13px;line-height:20px;color:#909194;">Maat {{ line.variant.title }}</div>{%- endunless -%}
+<div style="font-size:13px;line-height:20px;color:#909194;">Aantal {{ line.quantity }}</div>
+{%- if line.groups.size > 0 -%}<div style="font-size:13px;line-height:20px;color:#909194;">Onderdeel van {{ line.groups.first.display_title }}</div>{%- endif -%}
+{%- for a in line.discount_allocations -%}{%- if a.discount_application.target_selection != 'all' -%}<div style="font-size:13px;line-height:20px;color:#909194;">{{ a.discount_application.title }} (&minus;{{ a.amount | money }})</div>{%- endif -%}{%- endfor -%}</td>
+</tr></table></td>
+<td valign="middle" align="right" width="90" style="width:90px;padding:16px 0;border-top:1px solid #2C2C2E;">{%- if line.original_line_price != line.final_line_price -%}<div style="font-size:13px;line-height:20px;color:#909194;text-decoration:line-through;">{{ line.original_line_price | money }}</div>{%- endif -%}<div class="keep-white" style="font-size:15px;line-height:22px;font-weight:600;color:#FFFFFF;white-space:nowrap;">{{ line.final_line_price | money }}</div></td>
+</tr>
+{%- endfor -%}
+</table>
+<div style="border-top:1px solid #2C2C2E;padding-top:14px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="right" style="padding:4px 16px 4px 0;font-size:14px;line-height:22px;color:#909194;">Subtotaal</td><td align="right" width="110" style="width:110px;padding:4px 0;font-size:14px;line-height:22px;color:#FFFFFF;white-space:nowrap;" class="keep-white">{{ regels_totaal | money }}</td></tr>{% if orderkorting > 0 %}<tr><td align="right" style="padding:4px 16px 4px 0;font-size:14px;line-height:22px;color:#909194;">Korting{% if codes != '' %} ({{ codes }}){% endif %}</td><td align="right" width="110" style="width:110px;padding:4px 0;font-size:14px;line-height:22px;color:#FFFFFF;white-space:nowrap;" class="keep-white">&minus;{{ orderkorting | money }}</td></tr>{% endif %}<tr><td align="right" style="padding:4px 16px 4px 0;font-size:14px;line-height:22px;color:#909194;">{% if is_pickup %}Afhalen{% else %}Verzending{% endif %}</td><td align="right" width="110" style="width:110px;padding:4px 0;font-size:14px;line-height:22px;color:#FFFFFF;white-space:nowrap;" class="keep-white">{% if shipping_price == 0 %}Gratis{% else %}{{ shipping_price | money }}{% endif %}</td></tr><tr><td colspan="2" style="padding-top:10px;border-bottom:1px solid #2C2C2E;font-size:0;line-height:0;">&nbsp;</td></tr><tr><td align="right" style="padding:14px 16px 0 0;font-size:16px;line-height:24px;font-weight:600;color:#FFFFFF;" class="keep-white">Totaal</td><td align="right" style="padding:14px 0 0;font-size:28px;line-height:32px;font-weight:800;color:#FFFFFF;white-space:nowrap;" class="keep-white">{{ total_price | money }}</td></tr>{% if tax_price > 0 %}<tr><td colspan="2" align="right" style="padding:4px 0 0;font-size:12px;line-height:18px;color:#909194;">incl. {{ tax_price | money }} btw{% if betaling != "" %} &middot; {{ betaling }}{% endif %}</td></tr>{% endif %}</table></div>
+</td></tr></table>
+</td></tr>
+
+<tr><td class="px" style="padding:16px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#1A1A1A" class="bg-panel" style="background-color:#1A1A1A;border-radius:18px;border-collapse:separate;">
+<tr><td class="px" style="padding:24px 28px;">
+<div style="font-size:11px;line-height:16px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;text-align:left;">Overzicht</div>
+<table role="presentation" class="ov" cellpadding="0" cellspacing="0" border="0" style="margin-top:8px;"><tr><td style="padding:3px 12px 3px 0;font-size:14px;line-height:22px;color:#909194;white-space:nowrap;">Bestelling</td><td style="padding:3px 0;font-size:14px;line-height:22px;color:#FFFFFF;" class="keep-white">{{ name }}</td></tr><tr><td style="padding:3px 12px 3px 0;font-size:14px;line-height:22px;color:#909194;white-space:nowrap;">Datum</td><td style="padding:3px 0;font-size:14px;line-height:22px;color:#FFFFFF;" class="keep-white">{{ besteldatum }}</td></tr><tr><td style="padding:3px 12px 3px 0;font-size:14px;line-height:22px;color:#909194;white-space:nowrap;">Totaal</td><td style="padding:3px 0;font-size:14px;line-height:22px;color:#FFFFFF;" class="keep-white">{{ total_price | money }}</td></tr></table>
+<div style="border-top:1px solid #2C2C2E;margin-top:16px;font-size:0;line-height:0;">&nbsp;</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="50%" valign="top" style="width:50%;padding:14px 12px 0 0;"><div style="font-size:10px;line-height:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;">{% if is_pickup %}Afhalen{% elsif is_local %}Lokale levering{% else %}Bezorgadres{% endif %}</div><div class="keep-white" style="font-size:12px;line-height:18px;color:#D6D6D9;padding-top:4px;">{%- if is_pickup -%}{{ shipping_method.title }}{%- else -%}{{ shipping_address.name }}<br><span style="color:#909194;">{{ shipping_address.address1 }}{% if shipping_address.address2 and shipping_address.address2 != '' %} {{ shipping_address.address2 }}{% endif %}, {{ shipping_address.zip }} {{ shipping_address.city }}{% if shipping_address.country != "Nederland" and shipping_address.country != "Netherlands" %}, {{ shipping_address.country }}{% endif %}</span>{%- endif -%}{%- if is_local and delivery_instructions != blank -%}<br>{{ delivery_instructions }}{%- endif -%}</div></td><td width="50%" valign="top" style="width:50%;padding:14px 12px 0 0;"><div style="font-size:10px;line-height:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;">Factuuradres</div><div class="keep-white" style="font-size:12px;line-height:18px;color:#D6D6D9;padding-top:4px;">{%- if billing_address == blank or billing_address.address1 == shipping_address.address1 and billing_address.zip == shipping_address.zip -%}Gelijk aan bezorgadres{%- else -%}{{ billing_address.name }}<br><span style="color:#909194;">{{ billing_address.address1 }}{% if billing_address.address2 and billing_address.address2 != '' %} {{ billing_address.address2 }}{% endif %}, {{ billing_address.zip }} {{ billing_address.city }}{% if billing_address.country != "Nederland" and billing_address.country != "Netherlands" %}, {{ billing_address.country }}{% endif %}</span>{%- endif -%}</div></td></tr><tr><td width="50%" valign="top" style="width:50%;padding:14px 12px 0 0;"><div style="font-size:10px;line-height:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;">Verzendmethode</div><div class="keep-white" style="font-size:12px;line-height:18px;color:#D6D6D9;padding-top:4px;">{{ shipping_method.title | default: "-" }}</div></td><td width="50%" valign="top" style="width:50%;padding:14px 12px 0 0;"><div style="font-size:10px;line-height:14px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#909194;">Betaalmethode</div><div class="keep-white" style="font-size:12px;line-height:18px;color:#D6D6D9;padding-top:4px;">{%- if betaling != "" -%}{{ betaling }}{%- else -%}-{%- endif -%}</div></td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<tr><td class="px" align="center" style="padding:40px 48px 8px;"><a href="mailto:info@higrip.nl" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-notitie.jpg" width="335" height="178" alt="Fijn dat je voor HÏ Grip kiest. Vraag over je maat of je bestelling? Mail ons op info@higrip.nl, dan helpen we je verder. Vriendelijke groet, Lars Cretz, co-founder HÏ Grip" style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;"></a>
+<div style="padding-top:22px;"><a href="https://www.instagram.com/higrip.nl/" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-knop-instagram.jpg" width="236" height="44" alt="Volg ons op Instagram" style="display:block;width:236px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></div>
+</td></tr></table>
+</td></tr>
+
+<tr><td class="px" style="padding:16px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="usp" style="border-top:1px solid #2C2C2E;border-bottom:1px solid #2C2C2E;"><tr>
+<td width="33%" align="center" style="width:33%;"><a href="https://www.higrip.nl/pages/verzendbeleid" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-usp-verzending.jpg" width="110" height="84" alt="1 werkdag verzonden" style="display:block;width:110px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td width="34%" align="center" style="width:34%;border-left:1px solid #2C2C2E;"><a href="https://www.higrip.nl/pages/retourbeleid" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-usp-retour.jpg" width="110" height="84" alt="30 dagen retour" style="display:block;width:110px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td width="33%" align="center" style="width:33%;border-left:1px solid #2C2C2E;"><a href="mailto:info@higrip.nl" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-usp-vragen.jpg" width="110" height="84" alt="Vragen? info@higrip.nl" style="display:block;width:110px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td>
+</tr></table>
+</td></tr>
+
+<tr><td class="px" style="padding:40px 24px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #2C2C2E;"><tr><td align="center" style="padding:32px 16px 40px;font-family:'Poppins',Arial,Helvetica,sans-serif;">
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;"><tr><td style="padding:0 7px;"><a href="https://www.higrip.nl/pages/verzendbeleid" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-verzending.jpg" width="69" height="20" alt="Verzending" style="display:block;width:69px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td style="padding:0 7px;"><a href="https://www.higrip.nl/pages/retourbeleid" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-retour.jpg" width="77" height="20" alt="Retourneren" style="display:block;width:77px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td style="padding:0 7px;"><a href="{{ order_status_url }}" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-bestelling.jpg" width="86" height="20" alt="Mijn bestelling" style="display:block;width:86px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td></tr></table>
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" style="margin:8px auto 0;"><tr><td style="padding:0 7px;"><a href="mailto:info@higrip.nl" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-mail.jpg" width="84" height="20" alt="info@higrip.nl" style="display:block;width:84px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td style="padding:0 7px;"><a href="https://www.instagram.com/higrip.nl/" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-instagram.jpg" width="65" height="20" alt="Instagram" style="display:block;width:65px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td><td style="padding:0 7px;"><a href="https://www.higrip.nl" style="text-decoration:none;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-link-site.jpg" width="49" height="20" alt="higrip.nl" style="display:block;width:49px;max-width:100%;height:auto;border:0;margin:0 auto;"></a></td></tr></table>
+<div style="padding-top:20px;"><img src="https://cdn.shopify.com/s/files/1/0935/0918/9959/files/higrip-orderbev-voet.jpg" width="335" height="76" alt="Ga door waar anderen stoppen. Je ontvangt deze e-mail omdat je een bestelling plaatste op higrip.nl. HÏ Grip" style="display:block;width:335px;max-width:100%;height:auto;border:0;margin:0 auto;"></div>
+</td></tr></table>
+</td></tr>
+</table>
+</td></tr></table>
+</body></html>

@@ -1,0 +1,995 @@
+<!doctype html><html lang="nl"><head><meta name="viewport" content="width=device-width,initial-scale=1"></head><body><meta charset="utf-8">
+<title>HÏ Grip Ad-landingspagina's</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,800;1,900&display=swap">
+<style>
+/* Layout v1.3: packs zoals op higrip.nl, onderste helft opnieuw: reviews, foto's, meting, vergelijking, FAQ, aanbod. Eerder v1.2: geen herhaling van de ad-foto. De ad-kop loopt door als titel van een productpagina-hero (galerij + koopblok boven de vouw), daarna het verkoopverhaal per sport */
+:root{
+  --black:#0A0A0A; --onyx:#111111; --carbon:#1a1a1a; --white:#FFFFFF; --titanium:#909194;
+  --volt:#CCFF00; --red:#E10600; --trust:#00b67a;
+  --ink-soft:#5b5b5d;
+  --line-d:rgba(255,255,255,.14); --line-l:rgba(10,10,10,.12);
+  --acc:var(--volt);
+  --f:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --gut:max(16px,env(safe-area-inset-left,0px));
+  --gutr:max(16px,env(safe-area-inset-right,0px));
+  --max:1240px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--onyx);color:var(--white);font:400 16px/1.6 var(--f);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--gut);padding-right:var(--gutr)}
+h1,h2,h3{margin:0;text-transform:uppercase;letter-spacing:-.035em;text-wrap:balance}
+p{margin:0}
+
+/* ---------- prototypebalk (alleen in deze artifact) ---------- */
+.proto{background:#2a2a2c;color:#d9d9db;font-size:12px;border-bottom:1px solid #3a3a3c}
+.proto .wrap{display:flex;gap:16px;align-items:center;padding-block:6px;flex-wrap:nowrap}
+.proto b{color:#fff;font-weight:600}
+.proto__groups{display:flex;gap:18px;overflow-x:auto;padding-bottom:2px;max-width:100%}
+.pgroup{display:flex;gap:6px;align-items:center;flex:none}
+.pgroup span{font-weight:600;color:#fff;margin-right:4px;white-space:nowrap}
+.pchip{display:flex;align-items:center;gap:6px;border:1px solid #4a4a4c;background:#1d1d1f;border-radius:10px;padding:3px 8px 3px 3px;cursor:pointer;white-space:nowrap;font-size:11px;color:#cfcfd1}
+.pchip img{width:16px;height:28px;object-fit:cover;border-radius:6px}
+.pchip[aria-current="true"]{border-color:#fff;color:#fff;background:#000}
+.proto__note{display:none}
+.proto .wrap>div:first-child{white-space:nowrap}
+@media (max-width:700px){.proto .wrap>div:first-child{display:none}}
+
+/* ---------- kop van de pagina ---------- */
+.top{position:absolute;left:0;right:0;z-index:5}
+.top .wrap{display:flex;justify-content:center;padding-block:22px}
+.top img{height:30px;width:auto}
+
+/* ---------- knop: pill met chevron (zoals in de ads) ---------- */
+.cta{display:inline-flex;align-items:center;gap:22px;background:var(--white);color:var(--black);border-radius:999px;padding:8px 8px 8px 26px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.cta i{width:40px;height:40px;border-radius:50%;background:var(--black);display:grid;place-items:center;transition:transform .25s}
+.cta i svg{width:14px;height:14px;stroke:var(--volt);transition:transform .25s}
+.cta:hover i svg{transform:translateX(3px)}
+.cta:active{transform:scale(.98)}
+.cta--dark{background:var(--black);color:var(--white)}
+.cta--dark i{background:var(--white)} .cta--dark i svg{stroke:var(--black)}
+.cta--wide{width:100%;justify-content:space-between;font-size:17px;padding-left:30px}
+
+/* ---------- trust-regel ---------- */
+.stars{display:inline-flex;gap:2px;vertical-align:-2px}
+.stars i{width:15px;height:15px;background:var(--trust);display:grid;place-items:center}
+.stars i svg{width:11px;height:11px;fill:#fff}
+.stars i.half{background:linear-gradient(90deg,var(--trust) 60%,#c8c8c8 60%)}
+.trust{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:rgba(255,255,255,.78);align-items:center}
+.trust b{color:#fff;font-weight:600}
+.trust .dot{width:3px;height:3px;border-radius:50%;background:rgba(255,255,255,.4)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--black);overflow:hidden}
+.hero__media{position:absolute;inset:0}
+.hero__media img{width:100%;height:100%;object-fit:cover}
+.hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.65) 0%,rgba(10,10,10,0) 22%,rgba(10,10,10,0) 45%,rgba(10,10,10,.92) 78%,var(--black) 100%)}
+.hero__in{position:relative;min-height:min(880px,100svh);display:flex;flex-direction:column;justify-content:flex-end;gap:22px;padding-top:110px;padding-bottom:40px}
+.hero__sub{font-size:17px;max-width:30ch;color:rgba(255,255,255,.92)}
+.hero__price{font-size:14px;color:rgba(255,255,255,.8)}.hero__price b{color:#fff;font-weight:700}
+.hero__row{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:center}
+
+.h-echo{font-weight:300;font-style:italic;font-size:clamp(52px,13vw,112px);line-height:.88;text-shadow:-12px 0 rgba(255,255,255,.2),-28px 0 rgba(255,255,255,.1),-48px 0 rgba(255,255,255,.05);display:block}
+.h-heavy{font-weight:900;font-style:italic;font-size:clamp(56px,14vw,124px);line-height:.88;display:block}
+.h-big{font-weight:900;font-style:italic;font-size:clamp(50px,12vw,104px);line-height:.9}
+.h-plain{font-weight:800;font-size:clamp(48px,11.5vw,104px);line-height:.92;letter-spacing:-.03em}
+
+@media (min-width:900px){
+  .hero--split .hero__media{left:auto;width:46%;inset-block:0;right:0}
+  .hero--split .hero__media::after{background:linear-gradient(90deg,var(--black) 0%,rgba(10,10,10,0) 30%),linear-gradient(0deg,rgba(10,10,10,.5),rgba(10,10,10,0) 30%)}
+  .hero--split .hero__in{justify-content:center;max-width:var(--max);padding-top:120px;padding-bottom:80px}
+  .hero--split .hero__text{max-width:62%}
+  .hero--split .h-heavy{font-size:clamp(56px,7.4vw,108px)}
+  .hero--split .h-echo{font-size:clamp(52px,6.8vw,100px)}
+  .hero__in{min-height:min(820px,100svh)}
+}
+
+/* post-it */
+.postit{position:absolute;z-index:2;width:min(60vw,330px);padding:26px 26px 24px;color:var(--black);background:var(--acc);box-shadow:0 18px 40px rgba(0,0,0,.45),0 2px 6px rgba(0,0,0,.3);transform:rotate(3deg)}
+.postit h3{text-transform:none;letter-spacing:-.01em;font-size:22px;font-weight:800;line-height:1.1;margin-bottom:16px}
+.postit ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:17px;font-weight:500}
+.postit li{display:flex;gap:12px;align-items:flex-start;line-height:1.2}
+.postit li:last-child{font-weight:800}
+.box{flex:none;width:22px;height:22px;border:2.5px solid currentColor;border-radius:5px;display:grid;place-items:center}
+.box svg{width:14px;height:14px;stroke:currentColor;stroke-width:3.2;fill:none;stroke-dasharray:24;stroke-dashoffset:0}
+.box--open svg{stroke-dashoffset:24;transition:stroke-dashoffset .45s cubic-bezier(.6,0,.2,1)}
+.is-ticked .box--open svg{stroke-dashoffset:0}
+.postit--red{--acc:var(--red);color:#fff;transform:rotate(-3deg)}
+@media (max-width:899px){.postit{width:220px;padding:18px 18px 16px}.postit h3{font-size:17px;margin-bottom:10px}.postit ul{font-size:14px;gap:7px}.box{width:18px;height:18px}.hero--note .hero__in{justify-content:flex-start;padding-top:330px;min-height:0;padding-bottom:44px}.hero--note .hero__media .postit{top:72px!important;right:16px!important}}
+@media (min-width:900px){.postit--red{left:auto!important;right:8%;top:120px!important}.hero--note .hero__copy{margin-top:0!important}}
+.postit .tape{position:absolute;top:-14px;left:50%;width:110px;height:28px;margin-left:-55px;background:rgba(255,255,255,.55);transform:rotate(-2deg)}
+
+/* brief */
+.letter{background:var(--white);color:var(--black);border-radius:6px;padding:34px 30px 30px;max-width:620px;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+.letter h1{text-transform:none;letter-spacing:-.01em;font-size:22px;font-weight:800;margin-bottom:16px}
+.letter p{font-size:16px;line-height:1.55;margin-bottom:14px}
+.letter .sig{display:flex;align-items:center;gap:10px;font-weight:800;font-style:italic;font-size:20px;margin:6px 0 12px}
+.letter .sig img{width:30px}
+.letter .ps{font-size:15px;margin-bottom:22px}
+.letter .ps b{font-weight:700}
+
+/* meter (ad 09) */
+.specgrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.35);font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;max-width:640px}
+.specgrid div{padding:12px 12px 12px 0;border-bottom:1px solid rgba(255,255,255,.35)}
+.specgrid div:nth-child(odd){border-right:1px solid rgba(255,255,255,.35)}
+.specgrid div:nth-child(even){padding-left:18px}
+.ruler{position:relative;height:26px;max-width:var(--max)}
+.ruler::before{content:"";position:absolute;inset:0 0 auto;height:100%;background:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 1px,transparent 1px 22px);mask:linear-gradient(180deg,#000 40%,transparent 40%)}
+.ruler::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.55)}
+.ruler i{position:absolute;top:0;width:3px;height:26px;background:var(--volt);left:4%;animation:tick 2.6s cubic-bezier(.2,.8,.2,1) .4s forwards}
+@keyframes tick{to{left:78%}}
+.h-meter{font-size:clamp(48px,7vw,104px)}
+.hero--bw .hero__media img{filter:grayscale(1) contrast(1.05)}
+
+/* product-hero's */
+.hero--product{background:radial-gradient(70% 60% at 75% 35%,#262626 0%,var(--black) 70%)}
+.hero--product .hero__in{justify-content:center}
+.pgrid{display:grid;gap:28px;align-items:center}
+.pgrid__media{position:relative;display:grid;place-items:center}
+.pgrid__media img{max-height:min(560px,62vh);width:auto;filter:drop-shadow(0 40px 50px rgba(0,0,0,.6))}
+@media (min-width:900px){.pgrid{grid-template-columns:1.1fr .9fr}.hero--product .h-big{font-size:clamp(46px,5.4vw,78px)!important}.hero--product .pgrid>div:first-child{gap:20px!important}.hero--product .hero__in{padding-top:96px;padding-bottom:48px}.qa div{padding:10px 0}}
+.duo{font-size:22px;line-height:1.5;color:rgba(255,255,255,.55)}
+.duo b{color:#fff;font-weight:700}
+.mini{color:var(--white);width:100%;border-collapse:collapse;font-size:15px;max-width:560px}
+.mini th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:10px 8px;color:rgba(255,255,255,.55)}
+.mini th.hi{color:var(--black);background:var(--white);border-radius:14px 14px 0 0}
+.mini td{padding:14px 8px;border-top:1px solid var(--line-d);text-align:center}
+.mini td:first-child{text-align:left;padding-left:0}
+.mini td.hi{background:var(--white);color:var(--black)}
+.mini tr:last-child td.hi{border-radius:0 0 14px 14px}
+.mini svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.4;fill:none;vertical-align:-3px}
+.mini td.no{color:rgba(255,255,255,.4)}
+.price{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.price b{font-weight:900;font-style:italic;font-size:44px;letter-spacing:-.03em;line-height:1}
+.price em{font-style:italic;font-weight:900;font-size:44px;color:var(--volt);letter-spacing:-.03em;line-height:1}
+.price s{font-weight:800;font-size:22px;color:rgba(255,255,255,.55);text-decoration-color:var(--red);text-decoration-thickness:3px}
+.price-note{font-size:14px;color:rgba(255,255,255,.6)}
+.strike{display:block;font-weight:900;font-style:italic;font-size:clamp(50px,12vw,112px);line-height:.95;color:rgba(255,255,255,.4);position:relative;width:fit-content}
+.strike::after{content:"";position:absolute;left:-4px;right:-10px;top:52%;height:7px;border-radius:4px;background:#fff;transform:scaleX(0);transform-origin:left;animation:strike .5s cubic-bezier(.7,0,.2,1) forwards}
+.strike:nth-child(2)::after{animation-delay:.55s}.strike:nth-child(3)::after{animation-delay:.9s}.strike:nth-child(4)::after{animation-delay:1.25s}
+@keyframes strike{to{transform:scaleX(1)}}
+.qa{display:grid;gap:0;max-width:540px}
+.qa div{padding:14px 0;border-bottom:1px solid var(--line-d)}
+.qa p:first-child{font-size:15px;color:rgba(255,255,255,.55)}
+.qa p:last-child{font-size:19px;font-weight:700;line-height:1.3}
+
+/* ---------- secties ---------- */
+.sec{padding-block:clamp(72px,11vw,150px)}
+.sec--onyx{background:var(--onyx)}
+.sec--black{background:var(--black)}
+.sec--white{background:var(--white);color:var(--black)}
+.h2{font-weight:800;font-size:clamp(36px,6.4vw,64px);line-height:.98}
+.lead{font-size:18px;line-height:1.6;max-width:56ch;color:rgba(255,255,255,.78)}
+.sec--white .lead{color:var(--ink-soft)}
+
+/* probleem + demo */
+.prob{display:grid;gap:48px;align-items:center}
+@media (min-width:900px){.prob{grid-template-columns:1fr 1fr;gap:80px}}
+.prob__text{display:grid;gap:24px;min-width:0}
+.demo{background:var(--carbon);border-radius:28px;padding:22px;display:grid;gap:18px}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:var(--black);border-radius:999px;padding:4px;position:relative}
+.seg button{border:0;background:none;padding:11px 10px;border-radius:999px;font-weight:600;font-size:14px;cursor:pointer;position:relative;z-index:1;color:rgba(255,255,255,.6);transition:color .3s}
+.seg button[aria-pressed="true"]{color:var(--black)}
+.seg::before{content:"";position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:999px;background:#fff;transition:transform .35s cubic-bezier(.6,0,.2,1)}
+.seg[data-on="grip"]::before{transform:translateX(100%)}
+.stage{position:relative;aspect-ratio:16/10;border-radius:18px;background:#0d0d0d;overflow:hidden}
+.stage svg{width:100%;height:100%;display:block}
+.foot{transition:transform .3s}
+.demo[data-on="los"] .foot{animation:slip 1.6s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes slip{0%,30%{transform:translateX(0)}45%{transform:translateX(34px)}70%,100%{transform:translateX(0)}}
+.demo[data-on="los"] .shoe{animation:brake 1.6s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes brake{0%,30%{transform:translateX(0)}42%{transform:translateX(6px)}60%,100%{transform:translateX(0)}}
+.tri{fill:#333;transition:fill .4s}
+.demo[data-on="grip"] .tri{fill:var(--acc)}
+.slipline{stroke:#fff;stroke-width:3;stroke-linecap:round;opacity:0}
+.demo[data-on="los"] .slipline{animation:lines 1.6s infinite}
+@keyframes lines{0%,32%{opacity:0}42%{opacity:.8}60%,100%{opacity:0}}
+.gap{fill:none;stroke:var(--red);stroke-width:2;stroke-dasharray:4 4;opacity:0}
+.demo[data-on="los"] .gap{animation:lines 1.6s infinite}
+.demo[data-on="los"] .lbl--grip,.demo[data-on="grip"] .lbl--los{display:none}
+.demo__cap{font-size:15px;min-height:3em;color:rgba(255,255,255,.85)}
+.sci{display:grid;gap:12px;border-top:1px solid var(--line-d);padding-top:26px}
+.sci__n{font-weight:900;font-size:clamp(64px,10vw,96px);line-height:.85;letter-spacing:-.04em;color:var(--acc-text,var(--volt))}
+.sci__n small{font-size:.38em;color:rgba(255,255,255,.4);font-weight:700;letter-spacing:-.01em;margin-left:6px}
+.sci p{font-size:15px;color:rgba(255,255,255,.78);max-width:52ch}
+.sci .src{font-size:12px;color:rgba(255,255,255,.45)}
+
+/* features met hotspots */
+.feat{display:grid;gap:48px;align-items:center}
+@media (min-width:900px){.feat{grid-template-columns:.9fr 1.1fr;gap:72px}}
+.sock{position:relative;max-width:400px;margin:0 auto;width:100%;aspect-ratio:556/1000}
+.sock img{width:100%}
+@media (max-width:899px){.sock{max-width:250px}}
+.hs{position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;border:0;background:rgba(10,10,10,.85);cursor:pointer;display:grid;place-items:center;transition:transform .25s,background .25s}
+.hs::before{content:"";width:10px;height:10px;border-radius:50%;background:#fff;transition:transform .25s}
+.hs::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid rgba(10,10,10,.5);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:1}100%{transform:scale(1.5);opacity:0}}
+.hs[aria-pressed="true"]{background:var(--black);transform:scale(1.15)}
+.hs[aria-pressed="true"]::before{background:var(--volt);transform:scale(1.2)}
+.flist{list-style:none;margin:32px 0 0;padding:0;display:grid}
+.flist li{border-top:1px solid var(--line-l)}
+.flist li:last-child{border-bottom:1px solid var(--line-l)}
+.flist button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:1fr auto;gap:4px 16px;width:100%;padding:18px 0;cursor:pointer}
+.flist button:focus-visible{outline:2px solid var(--black);outline-offset:2px}
+.flist b{font-weight:700;font-size:19px;line-height:1.3}
+.flist span{font-size:13px;font-weight:600;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;align-self:center;text-align:right}
+.flist p{grid-column:1/-1;font-size:15px;color:var(--ink-soft);max-height:0;overflow:hidden;transition:max-height .35s ease,margin .35s}
+.flist li.on p{max-height:6em;margin-top:4px}
+.flist li.on b::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--black);margin-right:10px;vertical-align:4px}
+
+/* bewijs */
+.proof{position:relative;overflow:hidden}
+.proof__bg{position:absolute;inset:0;opacity:.32}
+.proof__bg img{width:100%;height:100%;object-fit:cover}
+.proof__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--black) 0%,rgba(10,10,10,.6) 40%,var(--black) 100%)}
+.proof .wrap{position:relative;display:grid;gap:56px}
+.proof__head{display:grid;gap:18px}
+.proof__big{font-weight:900;font-style:italic;font-size:clamp(46px,9vw,100px);line-height:.92;letter-spacing:-.04em;text-transform:uppercase}
+.proof__score{display:flex;align-items:center;gap:12px;font-size:15px;color:rgba(255,255,255,.85);flex-wrap:wrap}
+.reviews{display:grid;gap:16px}
+@media (min-width:760px){.reviews{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.rev{background:rgba(26,26,26,.86);backdrop-filter:blur(6px);border:1px solid var(--line-d);border-radius:22px;padding:26px;display:grid;gap:16px;align-content:start}
+.rev q{font-size:18px;line-height:1.45;quotes:"“" "”"}
+.rev small{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--titanium);font-weight:600}
+.rev-src{font-size:12px;color:rgba(255,255,255,.45)}
+.founders{display:grid;gap:22px;border-top:1px solid var(--line-d);padding-top:40px}
+@media (min-width:900px){.founders{grid-template-columns:1fr 1fr;gap:80px;align-items:end}}
+.founders p{font-size:20px;line-height:1.5;max-width:40ch}
+.founders .sig{display:flex;align-items:center;gap:10px;font-weight:800;font-style:italic;font-size:20px}
+.founders .sig img{width:28px}
+.clubs{font-size:14px;color:rgba(255,255,255,.6);line-height:1.8}
+.clubs b{color:#fff;font-weight:600}
+
+/* koopblok */
+.buy{display:grid;gap:48px;align-items:start}
+@media (min-width:980px){.buy{grid-template-columns:1fr 1fr;gap:72px}}
+.gal{display:grid;gap:12px}
+.buy__media{position:relative;background:#f4f4f4;border-radius:24px;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden}
+.buy__media img{width:100%;height:100%;object-fit:contain}
+.buy__media img.cover{object-fit:cover}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.thumbs button{border:0;padding:0;border-radius:14px;overflow:hidden;background:#f4f4f4;aspect-ratio:1/1;cursor:pointer;outline:2px solid transparent;outline-offset:2px}
+.thumbs button[aria-pressed="true"]{outline-color:var(--black)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.pay{font-size:13px;color:var(--ink-soft)}
+.minirev{margin:0;border-top:1px solid var(--line-l);padding-top:18px;display:grid;gap:6px}
+.minirev q{font-size:16px;font-weight:600;line-height:1.4}
+.minirev figcaption{font-size:12px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
+#koop{padding-block:clamp(48px,7vw,110px)}
+@media (max-width:979px){.buy{gap:28px}}
+.cmp{color:var(--black);width:100%;border-collapse:collapse;font-size:15px;margin-top:28px}
+.cmp th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;padding:12px 6px;color:var(--ink-soft)}
+.cmp th.hi{background:var(--black);color:#fff;border-radius:14px 14px 0 0}
+.cmp td{padding:13px 6px;border-top:1px solid var(--line-l);text-align:center}
+.cmp td:first-child{text-align:left;padding-left:0}
+.cmp td.hi{background:var(--black);color:var(--volt)}
+.cmp tr:last-child td.hi{border-radius:0 0 14px 14px}
+.cmp td.no{color:#b0b0b2}
+.cmp svg{width:16px;height:16px;stroke:currentColor;stroke-width:2.6;fill:none;vertical-align:-3px}
+.form{display:grid;gap:26px;min-width:0}
+.form h2{font-weight:800;font-size:clamp(30px,4.6vw,44px);line-height:1}
+.opt-l{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;display:flex;justify-content:space-between}
+.opt-l em{font-style:normal;color:var(--red);text-transform:none;letter-spacing:0;font-weight:500}
+.packs{display:grid;gap:10px}
+.pack{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;align-items:center;border:1.5px solid var(--line-l);border-radius:18px;padding:16px 18px;cursor:pointer;position:relative;text-align:left;background:#fff;color:var(--black)}
+.pack input{position:absolute;opacity:0}
+.pack .rad{width:20px;height:20px;border-radius:50%;border:2px solid #c9c9cb;grid-row:span 2}
+.pack strong{font-weight:700;font-size:17px}
+.pack .p{font-weight:800;font-size:17px;text-align:right}
+.pack .p s{font-weight:500;font-size:13px;color:#9a9a9c;margin-right:6px}
+.pack small{grid-column:2/4;font-size:13px;color:var(--ink-soft)}
+.pack .tag{position:absolute;top:-10px;right:16px;background:var(--black);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.pack:has(input:checked){border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+.pack:has(input:checked) .rad{border:6px solid var(--black)}
+.pack:has(input:focus-visible){outline:2px solid var(--black);outline-offset:3px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0}
+.chip span{display:flex;align-items:center;gap:10px;border:1.5px solid var(--line-l);border-radius:999px;padding:10px 18px;font-weight:600;font-size:15px;cursor:pointer}
+.chip span i{width:16px;height:16px;border-radius:50%;border:1px solid #bbb}
+.chip input:checked+span{border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+.chip input:focus-visible+span{outline:2px solid var(--black);outline-offset:3px}
+.sizes.err .chip span{border-color:var(--red)}
+.assure{display:grid;gap:8px;font-size:14px;color:var(--ink-soft)}
+.assure div{display:flex;gap:10px;align-items:center}
+.assure svg{width:16px;height:16px;stroke:var(--black);stroke-width:2.4;fill:none;flex:none}
+.added{background:var(--black);color:#fff;border-radius:16px;padding:16px 18px;font-size:14px;display:grid;gap:12px}
+.added b{font-size:16px}
+.added small{color:rgba(255,255,255,.55)}
+
+/* faq */
+.faq{display:grid;gap:40px}
+@media (min-width:900px){.faq{grid-template-columns:.8fr 1.2fr;gap:80px}}
+.faq details{border-top:1px solid var(--line-d)}
+.faq details:last-child{border-bottom:1px solid var(--line-d)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 0;font-weight:700;font-size:19px;display:flex;justify-content:space-between;gap:20px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:400;font-size:26px;line-height:1;transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 22px;color:rgba(255,255,255,.75);max-width:60ch}
+
+/* slot */
+.end{position:relative;overflow:hidden;background:var(--black)}
+.end__bg{position:absolute;inset:0}
+.end__bg img{width:100%;height:100%;object-fit:cover;opacity:.5}
+.end__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--black) 0%,rgba(10,10,10,.35) 60%,var(--black) 100%)}
+.end .wrap{position:relative;display:grid;gap:30px;justify-items:start;padding-block:clamp(110px,16vw,200px)}
+.foot-l{background:var(--black);border-top:1px solid var(--line-d);font-size:13px;color:rgba(255,255,255,.5)}
+.foot-l .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;padding-block:28px;align-items:center}
+.foot-l img{height:22px;width:auto;margin-right:auto}
+
+/* sticky balk */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(10,10,10,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line-d);transform:translateY(110%);transition:transform .35s cubic-bezier(.6,0,.2,1);padding-bottom:env(safe-area-inset-bottom,0px)}
+.sticky.show{transform:none}
+.sticky .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:10px}
+.sticky p{font-size:12px;line-height:1.3;color:rgba(255,255,255,.7)}
+.st__info{display:grid;gap:8px;min-width:0}
+.st__sizes{display:flex;gap:6px}
+.st__sizes label{position:relative}
+.st__sizes input{position:absolute;opacity:0}
+.st__sizes span{display:block;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
+.st__sizes input:checked+span{background:#fff;color:var(--black);border-color:#fff}
+.st__sizes input:focus-visible+span{outline:2px solid var(--volt);outline-offset:2px}
+.st__sizes.err span{border-color:var(--red)}
+.added[hidden]{display:none}
+.sticky .wrap{flex-wrap:wrap;row-gap:8px}
+.st__info{display:contents}
+.sticky p{order:1;flex:1;min-width:0}
+#stickyBtn{order:2}
+.st__sizes{order:3;flex-basis:100%}
+.st__sizes label{flex:1}.st__sizes span{text-align:center;padding:7px 0;font-size:13px}
+@media (min-width:700px){.sticky .wrap{flex-wrap:nowrap}.st__sizes{order:2;flex-basis:auto}.st__sizes label{flex:none}.st__sizes span{padding:6px 14px}#stickyBtn{order:3}}
+.sticky p b{display:block;font-size:16px;color:#fff;font-weight:800}
+.sticky .cta{padding-left:20px;font-size:15px;gap:14px;white-space:nowrap;flex:none}
+.sticky .cta i{width:36px;height:36px}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .strike::after{transform:none}
+  .ruler i{left:78%}
+}
+
+/* ---------- v1.2: productpagina-hero met de ad-kop als scent ---------- */
+.top{position:relative;background:var(--black)}
+.top .wrap{padding-block:14px}
+.top img{height:24px}
+.ph{background:var(--white);color:var(--black);padding:20px 0 64px}
+.ph__grid{display:grid;gap:18px}
+.ph__h{font-weight:900;font-style:italic;font-size:clamp(34px,9vw,64px);line-height:.92;letter-spacing:-.035em}
+.ph__h .e{font-weight:300;display:block}
+.ph__h--plain{font-style:normal;font-weight:800}
+.ph__h--letter{text-transform:none;font-style:normal;font-weight:800;letter-spacing:-.02em;font-size:clamp(30px,7vw,48px)}
+.ph__h .strike{display:inline-block;font-size:inherit;line-height:inherit;color:rgba(10,10,10,.32)}
+.ph__h .strike::after{background:var(--black);height:5px;top:50%}
+.ph__sub{font-size:16px;line-height:1.55;color:var(--ink-soft);max-width:46ch;margin-top:12px}
+.ph__sig{display:flex;align-items:center;gap:8px;font-weight:800;font-style:italic;margin-top:10px}
+.ph__sig img{width:22px}
+.ph__meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-top:14px;font-size:14px}
+.ph__name{font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:13px}
+.ph__rate{display:inline-flex;gap:8px;align-items:center;color:var(--ink-soft);text-decoration:none}
+.ph__rate b{color:var(--black)}
+.ph__opts{display:grid;gap:22px}
+.ph .buy__media{border-radius:20px}
+.ph .buy__media img.bw{filter:grayscale(1) contrast(1.05)}
+.assure--qa{font-size:14px;gap:10px}
+.assure--qa div{align-items:flex-start}
+.assure--qa svg{margin-top:3px}
+.assure--qa b{color:var(--black);font-weight:600}
+.note{position:absolute;z-index:2;left:12px;top:12px;width:168px;padding:12px 12px 10px;background:var(--volt);color:var(--black);transform:rotate(-2.5deg);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.note--red{background:var(--red);color:#fff;transform:rotate(2.5deg)}
+.note[hidden]{display:none}
+.note b{display:block;font-size:12px;font-weight:800;line-height:1.15;margin-bottom:7px}
+.note ul{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:11.5px;font-weight:500}
+.note li{display:flex;gap:7px;align-items:flex-start;line-height:1.2}
+.note li:last-child{font-weight:800}
+.note .box{width:14px;height:14px;border-width:2px;border-radius:3px}
+.note .box svg{width:9px;height:9px}
+@media (min-width:980px){
+  .ph{padding:40px 0 96px}
+  .ph__grid{grid-template-columns:1.1fr .9fr;column-gap:64px;row-gap:26px;align-items:start}
+  .ph .gal{grid-column:1;grid-row:1/span 2;position:sticky;top:24px}
+  .ph__head{grid-column:2;grid-row:1}
+  .ph .form{grid-column:2;grid-row:2;gap:22px}
+  .ph__opts{grid-template-columns:auto 1fr;gap:22px 28px}
+  .ph__h{font-size:clamp(40px,4.4vw,62px)}
+  .note{left:22px;top:22px;width:230px;padding:18px 18px 14px}
+  .note b{font-size:15px;margin-bottom:10px}.note ul{font-size:14px;gap:7px}.note .box{width:17px;height:17px}.note .box svg{width:11px;height:11px}
+}
+@media (max-width:979px){.ph .buy__media{aspect-ratio:5/4}}
+@media (min-width:980px){
+  .ph{padding:28px 0 96px}
+  .ph .pack{padding:11px 16px}.ph .packs{gap:8px}.ph .pack small{font-size:12px}
+  .ph .form{gap:18px!important}
+  .ph__h{font-size:clamp(38px,3.8vw,56px)!important}
+  .ph__h--letter{font-size:clamp(30px,2.8vw,40px)!important}
+  .ph__sub{font-size:15px;margin-top:10px}
+  .ph .minirev{display:none}
+}
+@media (min-width:980px){
+  .ph .packs{grid-template-columns:repeat(3,1fr);gap:10px}
+  .ph .pack{grid-template-columns:auto 1fr;padding:14px 14px 12px;gap:2px 10px;align-items:start}
+  .ph .pack .rad{grid-row:auto;width:18px;height:18px;margin-top:3px}
+  .ph .pack .p{grid-column:1/3;text-align:left;font-size:18px}
+  .ph .pack .p s{display:block;margin:0}
+  .ph .pack small{grid-column:1/3;font-size:11.5px;line-height:1.35}
+  .ph .pack .tag{right:auto;left:12px}
+}
+
+/* ---------- v1.3 ---------- */
+.ph .form{gap:16px}
+.ph__rate{display:inline-flex;gap:8px;align-items:center;color:var(--ink-soft);text-decoration:none;font-size:14px;margin-top:14px}
+.ph__rate b{color:var(--black)}
+.ph__meta,.ph__name{display:none}
+.ph__qa{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:14px;color:var(--ink-soft)}
+.ph__qa b{color:var(--black);font-weight:600;margin-right:4px}
+.sw{border:0;padding:0;margin:0}
+.sw__l{font-size:14px;padding:0;margin-bottom:8px;color:var(--ink-soft)}.sw__l b{color:var(--black);font-weight:600}
+.sw__row{display:flex;gap:8px}
+.sw__o{position:relative;cursor:pointer}
+.sw__o input{position:absolute;opacity:0}
+.sw__o img{width:54px;height:54px;object-fit:contain;border:1.5px solid var(--line-l);border-radius:10px;padding:4px;background:#fff}
+.sw__o input:checked+img{border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+.sw__o input:focus-visible+img{outline:2px solid var(--black);outline-offset:2px}
+.bundle{display:grid;gap:10px}
+.bo{position:relative;border:1.5px solid var(--line-l);border-radius:14px;background:#fff;transition:border-color .2s}
+.bo:has(.bo__radio[name=pack]:checked){border-color:var(--black);box-shadow:0 0 0 1px var(--black)}
+.bo__radio{position:absolute;opacity:0;pointer-events:none}
+.bo__card{display:grid;grid-template-columns:56px 1fr auto;gap:2px 12px;align-items:center;padding:12px 14px;cursor:pointer}
+.bo__img{width:56px;height:56px;object-fit:contain;grid-row:span 2}
+.bo__text{display:grid;gap:4px;justify-items:start;min-width:0}
+.bo__title{font-weight:600;font-size:14px;line-height:1.25}
+.bo__save{font-size:11px;font-weight:700;background:var(--black);color:var(--volt);border-radius:6px;padding:2px 7px}
+.bo__prices{display:grid;justify-items:end;line-height:1.15}
+.bo__price{font-weight:800;font-size:18px}
+.bo__prices s{font-size:12px;color:#9a9a9c}
+.bo__ben{grid-column:2/4;display:flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--black)}
+.bo__ben svg{width:13px;height:13px;stroke:var(--black);stroke-width:2.6;fill:none}
+.bo__ben--muted{color:var(--ink-soft)}
+.bo__per{margin-left:auto;color:var(--ink-soft);font-weight:500}
+.bo__badge{position:absolute;top:-9px;right:12px;background:var(--black);color:#fff;font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:2px 9px;border-radius:999px}
+.bo__sizes{border:0;margin:0;padding:0 14px 14px;min-width:0}.bo__sz{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.bo__sizes legend{padding:0;font-size:12px;font-weight:600;margin-bottom:6px;display:flex;gap:8px}
+.bo__sizes legend em{font-style:normal;color:var(--red);font-weight:500}
+.bo__size{display:grid;place-items:center;height:42px;border:1.5px solid var(--line-l);border-radius:10px;font-weight:600;font-size:14px;cursor:pointer}
+.bo__radio:checked+.bo__size{background:var(--black);color:#fff;border-color:var(--black)}
+.bo__radio:focus-visible+.bo__size{outline:2px solid var(--black);outline-offset:2px}
+.bo__sizes.err .bo__size{border-color:var(--red)}
+.ship{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--black);background:#f4f4f4;border-radius:12px;padding:10px 14px}
+.ship svg,.usp svg{width:20px;height:20px;stroke:var(--black);stroke-width:1.7;fill:none;flex:none;stroke-linejoin:round;stroke-linecap:round}
+.usp{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.usp li{display:grid;justify-items:center;text-align:center;gap:4px;font-size:12px;color:var(--ink-soft);line-height:1.3}
+.usp b{display:block;color:var(--black);font-weight:700;font-size:13px}
+.pay{font-size:12px;color:var(--ink-soft);text-align:center}
+@media (min-width:980px){
+  .ph .form{gap:14px!important}
+  .bo__card{padding:10px 14px}
+  .usp{display:none}
+}
+
+/* reviews */
+.rv{background:var(--onyx);padding-block:clamp(64px,9vw,110px)}
+.rv__head{display:grid;gap:18px;margin-bottom:32px}
+.rv__score{display:flex;align-items:center;gap:14px}
+.rv__score>b{font-size:64px;font-weight:900;line-height:.9;letter-spacing:-.04em}
+.rv__score div{display:grid;gap:4px;font-size:13px;color:rgba(255,255,255,.6)}
+.rv__h{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1;max-width:14ch}
+.rv__row{display:grid;grid-auto-flow:column;grid-auto-columns:min(82%,340px);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}
+.rv__row::-webkit-scrollbar{display:none}
+.rv__c{margin:0;scroll-snap-align:start;background:var(--carbon);border-radius:16px;padding:22px;display:grid;gap:14px;align-content:start}
+.rv__c q{font-size:16px;line-height:1.5;quotes:none}
+.rv__c figcaption{font-size:12px;color:var(--titanium);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.rv__clubs{margin-top:28px;font-size:14px;color:rgba(255,255,255,.65)}.rv__clubs b{color:#fff;font-weight:600}
+@media (min-width:980px){.rv__head{grid-template-columns:1fr auto;align-items:end}.rv__score{order:2}.rv__row{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);grid-auto-columns:auto;overflow:visible}}
+
+/* tegels */
+.ft{background:var(--white);color:var(--black);padding-block:clamp(64px,9vw,110px)}
+.ft__h{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1;margin-bottom:28px}
+.ft__grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ft__t{margin:0;position:relative;border-radius:16px;overflow:hidden;background:#f4f4f4;aspect-ratio:1/1}
+.ft__t--big{grid-column:1/3;aspect-ratio:4/3}
+.ft__t img{width:100%;height:100%;object-fit:cover}
+.ft__t img[src$=".png"],.ft__t img[src$=".webp"]{object-fit:contain;padding:14% 14% 30%}
+.ft__t figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;background:linear-gradient(0deg,rgba(10,10,10,.85),rgba(10,10,10,0));color:#fff;display:grid;gap:2px}
+.ft__t figcaption b{font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:-.01em}
+.ft__t figcaption span{font-size:13px;line-height:1.35;color:rgba(255,255,255,.85)}
+@media (min-width:980px){.ft__grid{grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:620px}.ft__t{aspect-ratio:auto}.ft__t--big{grid-column:1;grid-row:1/3;aspect-ratio:auto}.ft__t:nth-child(4){grid-column:2/4}.ft__t figcaption b{font-size:18px}}
+
+/* meting + vergelijking */
+.sci2{background:var(--black);padding-block:clamp(64px,9vw,110px)}
+.sci2__grid{display:grid;gap:48px}
+.sci2__h{font-size:clamp(36px,6vw,64px);font-weight:900;font-style:italic;line-height:.95}
+.sci2__p{margin-top:14px;color:rgba(255,255,255,.75);max-width:40ch}
+.bars{display:grid;gap:14px;margin-top:28px}
+.bar{display:grid;grid-template-columns:96px 1fr 44px;gap:12px;align-items:center;font-size:14px}
+.bar i{height:14px;border-radius:7px;background:rgba(255,255,255,.08);position:relative;overflow:hidden}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:#5b5b5d;border-radius:7px}
+.bar--hi i::after{background:var(--volt)}
+.bar b{font-weight:800;text-align:right}.bar--hi b{color:var(--volt)}
+.src{margin-top:16px;font-size:12px;color:rgba(255,255,255,.45)}
+.vs{width:100%;border-collapse:collapse;font-size:14px;color:#fff;align-self:center}
+.vs th{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:10px 8px;color:rgba(255,255,255,.5)}
+.vs th.hi{color:var(--volt)}
+.vs td{padding:13px 8px;border-top:1px solid var(--line-d)}
+.vs td.hi,.vs td.no{text-align:center;width:28%}
+.vs td.hi svg{width:18px;height:18px;stroke:var(--volt);stroke-width:2.6;fill:none}
+.vs td.no svg{width:14px;height:14px;stroke:#5b5b5d;stroke-width:2.4;fill:none}
+.vs td.no{color:rgba(255,255,255,.45)}.vs td.hi b{color:var(--volt)}
+@media (min-width:980px){.sci2__grid{grid-template-columns:1fr 1fr;gap:96px}}
+
+/* faq */
+.fq{background:var(--white);color:var(--black);padding-block:clamp(64px,9vw,110px)}
+.fq__grid{display:grid;gap:24px}
+.fq__h{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1}
+.fq details{border-top:1px solid var(--line-l);padding:16px 0}
+.fq details:last-child{border-bottom:1px solid var(--line-l)}
+.fq summary{cursor:pointer;font-weight:600;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"+";font-size:22px;line-height:1;transition:transform .2s}
+.fq details[open] summary::after{transform:rotate(45deg)}
+.fq details p{margin-top:8px;color:var(--ink-soft);font-size:15px}
+@media (min-width:980px){.fq__grid{grid-template-columns:1fr 2fr;gap:64px}}
+
+/* slotaanbod */
+.of{position:relative;background:var(--black);overflow:hidden}
+.of__bg{position:absolute;inset:0}
+.of__bg img{width:100%;height:100%;object-fit:cover;opacity:.45}
+.of__grid{position:relative;display:grid;gap:28px;padding-block:clamp(80px,12vw,150px)}
+.of__h{font-size:clamp(40px,8vw,88px);font-weight:900;font-style:italic;line-height:.92}
+.of__card{background:#fff;color:var(--black);border-radius:20px;padding:16px;display:grid;grid-template-columns:72px 1fr;gap:12px 14px;align-items:center;max-width:440px}
+.of__card img{width:72px;height:72px;object-fit:contain}
+.of__t{font-size:15px;font-weight:600}.of__t b{font-size:22px;font-weight:800;margin-left:4px}.of__t s{color:#9a9a9c;font-size:13px;margin-left:4px}
+.of__s{font-size:13px;color:var(--ink-soft)}
+.of__card .cta{grid-column:1/3;background:var(--black);color:#fff}
+.of__card .cta i{background:#fff}.of__card .cta i svg{stroke:var(--black)}
+@media (min-width:980px){.of__grid{grid-template-columns:1fr 440px;align-items:end}}
+@media (max-width:979px){
+  .ph{padding:16px 0 48px}
+  .ph__grid{gap:14px}
+  .ph__h{font-size:clamp(30px,8.4vw,40px)}
+  .ph__h--letter{font-size:28px}
+  .ph__sub{font-size:15px;margin-top:8px}
+  .ph__rate{margin-top:10px;font-size:13px}
+  .ph .buy__media{aspect-ratio:4/3}
+  .ph .thumbs{grid-template-columns:repeat(4,56px);gap:8px}
+  .sw{display:flex;align-items:center;justify-content:space-between}
+  .sw__l{margin:0}
+  .sw__o img{width:46px;height:46px}
+}
+@media (min-width:980px){
+  .ph{padding:20px 0 80px}
+  .ph__grid{row-gap:16px}
+  .ph__h{font-size:clamp(34px,3.3vw,50px)!important}
+  .ph__h--letter{font-size:clamp(28px,2.4vw,36px)!important}
+  .ph__h .strike{font-size:.82em}
+  .ph__rate{margin-top:10px}
+  .sw{display:flex;align-items:center;gap:14px}
+  .sw__l{margin:0}
+  .sw__o img{width:44px;height:44px}
+  .bundle{gap:9px}
+  .bo__card{padding:8px 12px;grid-template-columns:48px 1fr auto}
+  .bo__img{width:48px;height:48px}
+  .bo__ben{font-size:11.5px}
+  .bo__sizes{padding:0 12px 10px}
+  .bo__size{height:38px}
+  .ph .form{gap:12px!important}
+  .ship{padding:8px 12px;font-size:13px}
+}
+@media (min-width:980px){.pchip img{display:none}.pchip{padding:3px 9px}.proto .wrap{padding-block:4px}}
+
+/* ---------- v1.4 ---------- */
+.pay{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.pay img{width:38px;height:24px}
+.ph__ath{display:flex;align-items:center;gap:0;margin-top:10px;font-size:13px;color:var(--ink-soft)}
+.ph__ath img{width:30px;height:30px;border-radius:50%;border:2px solid #fff;object-fit:cover}
+.ph__ath img+img{margin-left:-10px}
+.ph__ath span{margin-left:10px}.ph__ath b{color:var(--black);font-weight:600}
+.at{background:var(--hi-offwhite,#EAE8E5);color:var(--black);padding-block:clamp(64px,9vw,110px)}
+.at__head{display:grid;gap:10px;margin-bottom:28px}
+.at__h{font-size:clamp(30px,5vw,52px);font-weight:800;line-height:1;max-width:16ch}
+.at__p{color:var(--ink-soft);max-width:44ch}
+.at__grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.at__c{margin:0;position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:#d9d6d2}
+.at__c img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.at__c figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 12px 12px;background:linear-gradient(0deg,rgba(10,10,10,.85),rgba(10,10,10,0));color:#fff;display:grid}
+.at__c b{font-weight:800;font-size:15px;text-transform:uppercase}
+.at__c span{font-size:12px;color:rgba(255,255,255,.8)}
+.at__team{grid-column:1/3;margin:0;border-radius:16px;overflow:hidden;background:var(--black);color:#fff;display:grid}
+.at__team img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.at__team ul{list-style:none;margin:0;padding:6px 16px 10px;display:grid}
+.at__team li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px solid var(--line-d);font-size:14px}
+.at__team li:first-child{border-top:0}
+.at__team li span{color:rgba(255,255,255,.6);text-align:right}
+.at__note{margin-top:14px;font-size:12px;color:var(--ink-soft)}
+@media (min-width:980px){
+  .at__head{grid-template-columns:1fr 1fr;align-items:end}
+  .at__grid{grid-template-columns:1fr 1fr 2fr;gap:14px}
+  .at__team{grid-column:auto;grid-template-rows:1fr auto}
+  .at__team img{aspect-ratio:auto;height:100%;min-height:0}
+  .at__c b{font-size:18px}
+}
+@media (max-width:979px){.pay{gap:4px}.pay img{width:34px;height:22px}.at__team li{display:grid;gap:0}.at__team li span{text-align:left;font-size:13px}}
+
+/* ---------- v1.5 ---------- */
+.ft__t img[src$=".jpg"]{object-position:center 70%}
+.ft__t:nth-child(4){grid-column:1/3;aspect-ratio:16/10}
+@media (min-width:980px){.ft__t:nth-child(4){grid-column:2/4;aspect-ratio:auto}}
+.ph .buy__media img.cover{object-position:center 65%}
+
+/* ---------- v1.6 ---------- */
+.at__c{aspect-ratio:auto;background:var(--black);display:grid;align-content:start}
+.at__c img{height:auto;aspect-ratio:4/5}
+.at__c figcaption{position:static;background:none;padding:14px;gap:2px}
+.at__c q,.at__team q{display:block;font-style:italic;font-weight:600;line-height:1.3;quotes:"“" "”"}
+.at__c q{font-size:15px;margin-bottom:10px}
+.at__team ul{padding:8px 18px 14px}
+.at__team li{display:grid;justify-content:stretch;gap:2px;padding:14px 0}
+.at__team li q{font-size:16px;margin-bottom:6px;color:#fff}
+.at__team li span{text-align:left}
+@media (min-width:980px){.at__c q{font-size:17px}.at__team li q{font-size:18px}}
+
+/* ---------- v1.7 ---------- */
+.thumbs{display:flex;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;padding:3px;margin:-3px;scrollbar-width:none}
+.thumbs::-webkit-scrollbar{display:none}
+.thumbs button{flex:0 0 64px;height:64px;scroll-snap-align:start}
+.ph .thumbs{display:flex}
+.thumbs img[src$=".webp"]{object-fit:contain;padding:4px}
+.ft__t img[src*="/d-"]{object-position:center}
+@media (min-width:980px){.thumbs button{flex-basis:68px;height:68px}}
+
+/* ---------- v1.8 ---------- */
+.ph .thumbs button{flex-basis:72px;height:72px}
+@media (max-width:979px){
+  .note{left:8px;top:8px;width:132px;padding:9px 9px 8px}
+  .note b{font-size:10.5px;margin-bottom:5px}.note ul{font-size:10px;gap:4px}
+  .note .box{width:12px;height:12px}.note .box svg{width:8px;height:8px}
+}
+</style>
+
+<div class="proto" role="navigation" aria-label="Prototype: kies de ad">
+  <div class="wrap">
+    <div><b>Prototype</b> · landingspagina per live ad · v1.8</div>
+    <div class="proto__groups" id="protoGroups"></div>
+    <div class="proto__note">Drie pagina's. De kop wisselt per ad; de foto is een ander beeld uit dezelfde shoot. Linkt in Meta met <code>?ad=</code>.</div>
+  </div>
+</div>
+
+<main id="page"></main>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="wrap">
+    <div class="st__info"><p><b>3 paar €44,95</b><span id="stSub">Gratis verzonden · kies je maat</span></p>
+      <div class="st__sizes" id="stickySizes" role="radiogroup" aria-label="Maat">
+        <label><input type="radio" name="smaat" id="smaat0" value="35–38"><span>35–38</span></label><label><input type="radio" name="smaat" id="smaat1" value="39–42"><span>39–42</span></label><label><input type="radio" name="smaat" id="smaat2" value="43–47"><span>43–47</span></label>
+      </div></div>
+    <button type="button" class="cta" id="stickyBtn" tabindex="-1"><span>In winkelwagen</span><i><svg viewBox="0 0 14 14" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2l5 5-5 5"/></svg></i></button>
+  </div>
+</div>
+
+<script>
+const CHEV='<i><svg viewBox="0 0 14 14" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2l5 5-5 5"/></svg></i>';
+const CHECK='<svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const CROSS='<svg viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg>';
+const STAR='<svg viewBox="0 0 12 12"><path d="M6 .8l1.5 3.4 3.7.3-2.8 2.4.9 3.6L6 8.6 2.7 10.5l.9-3.6L.8 4.5l3.7-.3z"/></svg>';
+const STARS=`<span class="stars" aria-label="4,6 van 5 sterren">${('<i>'+STAR+'</i>').repeat(4)}<i class="half">${STAR}</i></span>`;
+const cta=(t='Shop 3-pack',cls='')=>`<a class="cta ${cls}" href="#koop" data-cta><span>${t}</span>${CHEV}</a>`;
+const PRICE=`<span class="hero__price"><b>3 paar €44,95</b> · €14,98 per paar · gratis verzonden</span>`;
+const TRUST=`<div class="trust">${STARS}<b>4,6 op Trustpilot</b><span class="dot"></span><span>3500+ sporters</span><span class="dot"></span><span>Binnen 1 werkdag verzonden</span><span class="dot"></span><span>30 dagen retour</span></div>`;
+
+/* ---------- per ad: kop als scent, ander beeld uit dezelfde shoot ---------- */
+const NOTE=(items,red)=>`<div class="note${red?' note--red':''}" id="postit"><b>Checklist voor de wedstrijd</b><ul>${items.map(t=>`<li><span class="box">${CHECK}</span>${t}</li>`).join('')}<li><span class="box box--open">${CHECK}</span>HÏ Grip Performance Grip Socks 2.0</li></ul></div>`;
+const LETTER=who=>({h:`Beste ${who},`,letter:1,sub:'Wij zijn drie founders die naast onze studie een sportmerk bouwen. Eén sok waar we alles in stoppen: gripzones, compressie, naadloos, Coolmax en special cushioning. 3500+ sporters gingen je voor. Nu ben jij aan de beurt.'});
+const AD={
+ 'alles-beweegt':{h:'<span class="e">Alles beweegt.</span> Jouw voet niet.',sub:'Siliconen gripzones houden je voet vast in je schoen. Bij elke kap, draai en sprint.',lead:['img/v-trap.jpg','Voetballer in witte HÏ Grip-sokken raakt de bal op kunstgras'],lc:'wit'},
+ 'checklist-voetbal':{h:'Vink hem af.',sub:'Het anatomisch gevormde grippatroon houdt je voet vast in je schoen. Zaterdag sta je er klaar voor.',note:NOTE(['Voetbalschoenen','Scheenbeschermers','Tenue']),lead:['img/v-grip.jpg','Witte HÏ Grip-sok met grippatroon onder de voet, op kunstgras'],lc:'wit'},
+ 'brief-voetballer':{...LETTER('voetballer'),lead:['img/g-grip-wit.jpg','Witte HÏ Grip-sokken op het veld, zool met grippatroon'],lc:'wit'},
+ 'checklist-rugby':{h:'Vink hem af.',sub:'Voor scrum, ruck, sprint en sidesteps: anatomisch gevormde gripzones houden je voet vast in je schoen.',note:NOTE(['Bitje','Tape','Schoenen'],1)},
+ 'brief-rugbyspeler':{...LETTER('rugbyspeler')},
+ 'geef-geen-meter-weg':{h:'Geef geen meter weg.',plain:1,sub:'Anatomisch gevormd grippatroon. Coolmax 30%. Binnen 1 werkdag verzonden.'},
+ 'niet-elke-sok':{h:'Niet elke sok houdt je vast.',sub:'Eén voor de wedstrijd. Twee en drie voor de training.'},
+ 'nooit-meer':{h:'Nooit meer <span class="strike">schuiven.</span> <span class="strike">glijden.</span> <span class="strike">blaren.</span>',sub:'Ons anatomisch gevormde grippatroon is gebaseerd op de drukpunten van je voet. Zo sta jij stevig in je schoenen.'},
+ 'wat-houdt-je-tegen':{h:'Wat houdt je nog tegen?',qa:1}
+};
+const HERO=AD;
+let curAd='alles-beweegt';
+const galBase=k=>(AD2PAGE[curAd]==='rugby'?GAL_RUGBY:AD2PAGE[curAd]==='product'?GAL_PRODUCT:GAL)[k];
+const galList=k=>{const A=AD[curAd],G=galBase(k);if(!A.lead||A.lc!==k)return G;const R=G.filter(g=>g[0]!==A.lead[0]);return [R[0],R[1],A.lead,...R.slice(2)].slice(0,4)};
+
+const ICO={
+ truck:'<svg viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>',
+ back:'<svg viewBox="0 0 24 24"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 010 10h-3"/></svg>',
+ box:'<svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg>'
+};
+const PACKS=[
+ {n:1,t:'1-Pack Performance Gripsokken 2.0',p:'€17,95'},
+ {n:3,t:'3-Pack Performance Gripsokken 2.0',p:'€44,95',c:'€53,85',save:'€9,- korting',badge:'Meest gekozen',per:'€14,98 per paar'},
+ {n:5,t:'5-Pack Performance Gripsokken 2.0',p:'€69,95',c:'€89,75',save:'€20,- korting',badge:'Meest voordelig',per:'€13,99 per paar'}
+];
+const packThumb=(n,k)=>`img/t-${n===1?'sok':'pack'+n}-${k}.webp`;
+function phero(adKey,P){
+  const A=AD[adKey],g=galList(P.color),k=P.color;
+  const bundle=PACKS.map(o=>`<div class="bo${o.badge?' bo--badge':''}">
+      <input class="bo__radio" type="radio" name="pack" id="pack${o.n}" value="${o.n}" ${o.n===3?'checked':''}>
+      <label class="bo__card" for="pack${o.n}">${o.badge?`<span class="bo__badge">${o.badge}</span>`:''}
+        <img class="bo__img" data-n="${o.n}" src="${packThumb(o.n,k)}" alt="" width="64" height="64">
+        <span class="bo__text"><span class="bo__title">${o.t}</span>${o.save?`<span class="bo__save">${o.save}</span>`:''}</span>
+        <span class="bo__prices"><span class="bo__price">${o.p}</span>${o.c?`<s>${o.c}</s>`:''}</span>
+        ${o.per?`<span class="bo__ben">${TICK}Gratis verzending<span class="bo__per">${o.per}</span></span>`:`<span class="bo__ben bo__ben--muted">+ €4,50 verzending</span>`}
+      </label>
+    </div>`).join('');
+  const qa=A.qa?`<ul class="ph__qa">
+      <li><b>Werkt het echt?</b> 3500+ sporters gingen je voor.</li>
+      <li><b>Is het niet te duur?</b> €9 korting bij 3 paar.</li>
+      <li><b>Zaterdag al nodig?</b> Binnen 1 werkdag verstuurd.</li>
+      <li><b>Wat als hij niet past?</b> 30 dagen retour.</li></ul>`:'';
+  return `<section class="ph" id="koop"><div class="wrap ph__grid">
+    <div class="ph__head">
+      <h1 class="ph__h${A.letter?' ph__h--letter':''}${A.plain?' ph__h--plain':''}">${A.h}</h1>
+      ${A.sub?`<p class="ph__sub">${A.sub}</p>`:''}
+      ${A.letter?`<p class="ph__sig"><img src="img/mark-zwart.png" alt="">Team HÏ Grip</p>`:''}
+      <a href="#reviews" class="ph__rate">${STARS}<span><b>4,6</b> uit 21 reviews · 3500+ sporters</span></a>
+      ${AD2PAGE[adKey]==='rugby'?`<p class="ph__ath"><img src="img/av-atleet-1.webp" alt=""><img src="img/av-atleet-2.webp" alt=""><span>“Ik heb ze tegen Roemenië gebruikt en vond ze heel prettig zitten!” <b>Mike Hansen</b>, Oranje</span></p>`:''}
+    </div>
+    <div class="gal"><div class="buy__media"><img id="galMain" src="${g[0][0]}" alt="${g[0][1]}" fetchpriority="high">${A.note||''}</div>
+      <div class="thumbs" id="thumbs">${thumbsHtml(k)}</div></div>
+    <form class="form" id="buyForm" novalidate>
+      <fieldset class="sw"><legend class="sw__l">Kleur: <b id="kleurNaam">${k==='wit'?'Wit':'Zwart'}</b></legend>
+        <div class="sw__row">
+          <label class="sw__o"><input type="radio" name="kleur" value="wit" ${k==='wit'?'checked':''}><img src="img/t-sok-wit.webp" alt="Wit"></label>
+          <label class="sw__o"><input type="radio" name="kleur" value="zwart" ${k==='zwart'?'checked':''}><img src="img/t-sok-zwart.webp" alt="Zwart"></label>
+        </div></fieldset>
+      <div class="bundle" role="radiogroup" aria-label="Aantal">${bundle}</div>
+      <fieldset class="bo__sizes" id="sizes"><legend>Maat <em id="sizeErr" hidden>kies eerst je maat</em></legend>
+        <div class="bo__sz">${['35–38','39–42','43–47'].map((s,i)=>`<input class="bo__radio" type="radio" name="maat" id="maat${i}" value="${s}"><label class="bo__size" for="maat${i}">${s}</label>`).join('')}</div>
+      </fieldset>
+      <button class="cta cta--dark cta--wide" type="submit" id="buyBtn"><span>In winkelwagen · €44,95</span>${CHEV}</button>
+      <div class="added" id="added" hidden></div>
+      ${qa}
+      <p class="ship">${ICO.truck}<span id="shipLine">Binnen 1 werkdag verzonden</span></p>
+      <ul class="usp">
+        <li>${ICO.box}<span><b>Gratis</b>verzending vanaf €35</span></li>
+        <li>${ICO.back}<span><b>30 dagen</b>retour</span></li>
+        <li>${ICO.truck}<span><b>1 werkdag</b>verzonden</span></li>
+      </ul>
+      <div class="pay" aria-label="Betaalmethodes">${[['klarna','Klarna'],['paypal','PayPal'],['apple_pay','Apple Pay'],['google_pay','Google Pay'],['bancontact','Bancontact'],['visa','Visa'],['master','Mastercard'],['maestro','Maestro']].map(x=>`<img src="img/pay/${x[0]}.svg" alt="${x[1]}" width="38" height="24">`).join('')}</div>
+    </form>
+  </div></section>`;
+}
+
+/* ---------- pagina's ---------- */
+const TILES_RUGBY={
+ wit:[['img/rb-zool-wit.jpg','Gripzones onder een witte HÏ Grip-sok naast een rugbybal','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-wit-rib.jpg','Geribde schacht van de witte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-wit-mesh.jpg','Ademend mesh-vlak op de wreef van de witte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-wit-hiel.jpg','Gedempte voet en hiel van de witte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']],
+ zwart:[['img/d-zwart-grip.jpg','Gripzones onder de zwarte HÏ Grip-sok','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-zwart-rib.jpg','Geribde schacht van de zwarte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-zwart-mesh.jpg','Ademend mesh-vlak op de wreef van de zwarte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-zwart-hiel.jpg','Gedempte voet en hiel van de zwarte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']]
+};
+const TILES_PRODUCT={
+ wit:[['img/d-wit-grip.jpg','Gripzones onder de witte HÏ Grip-sok','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-wit-rib.jpg','Geribde schacht van de witte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-wit-mesh.jpg','Ademend mesh-vlak op de wreef van de witte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-wit-hiel.jpg','Gedempte voet en hiel van de witte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']],
+ zwart:[['img/d-zwart-grip.jpg','Gripzones onder de zwarte HÏ Grip-sok','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-zwart-rib.jpg','Geribde schacht van de zwarte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-zwart-mesh.jpg','Ademend mesh-vlak op de wreef van de zwarte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-zwart-hiel.jpg','Gedempte voet en hiel van de zwarte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']]
+};
+const TILES={
+ wit:[['img/vb-zool-bal.jpg','Voetballer laat de gripzones onder zijn witte HÏ Grip-sok zien, voet op de bal','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-wit-rib.jpg','Geribde schacht van de witte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-wit-mesh.jpg','Ademend mesh-vlak op de wreef van de witte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-wit-hiel.jpg','Gedempte voet en hiel van de witte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']],
+ zwart:[['img/d-zwart-grip.jpg','Gripzones onder de zwarte HÏ Grip-sok','Siliconen gripzones','Op de drukpunten van je voet. Je voet blijft staan in je schoen.'],
+      ['img/d-zwart-rib.jpg','Geribde schacht van de zwarte HÏ Grip-sok','Compressie 15–20 mmHg','Steviger om je kuit.'],
+      ['img/d-zwart-mesh.jpg','Ademend mesh-vlak op de wreef van de zwarte sok','Coolmax 30%','Voert vocht af van je huid.'],
+      ['img/d-zwart-hiel.jpg','Gedempte voet en hiel van de zwarte sok','Naadloos en gedempt','Geen naden die schuren, extra laag onder je hiel.']]
+};
+const ATHLETES=[
+ {n:'Vikas Meijer',r:'Flyhalf · Oranje',q:'Vind het super fijne sokken. Ze zitten lekker en veel grip.',img:'img/atleet-1-portret.webp',alt:'Portret van rugbyspeler Vikas Meijer in een oranje shirt'},
+ {n:'Mike Hansen',r:'Voorwaarts · Cardiff Met, Oranje',q:'Ik heb ze tegen Roemenië gebruikt en vond ze heel prettig zitten!',img:'img/atleet-2-uitsnede.webp',alt:'Portret van rugbyspeler Mike Hansen in een oranje shirt'},
+ {n:'Daan van der Avoird',r:'Vleugel · RC \'t Gooi, Oranje',q:'Ze bevallen erg goed. Ik heb ze ook al aangeraden bij teamgenoten.'},
+ {n:'Juun Pieters',r:'Rugby',q:'Het zit erg goed.'}
+];
+const ATH_HTML=()=>`<section class="at"><div class="wrap">
+    <div class="at__head"><h2 class="at__h">Gedragen door spelers van Oranje.</h2><p class="at__p">Vier rugbyspelers spelen op HÏ Grip. In hun eigen woorden.</p></div>
+    <div class="at__grid">
+      ${ATHLETES.filter(a=>a.img).map(a=>`<figure class="at__c"><img src="${a.img}" alt="${a.alt}" loading="lazy"><figcaption><q>${a.q}</q><b>${a.n}</b><span>${a.r}</span></figcaption></figure>`).join('')}
+      <figure class="at__team"><img src="img/oranje-team.webp" alt="Rugbyspelers van Oranje op het veld" loading="lazy">
+        <ul>${ATHLETES.filter(a=>!a.img).map(a=>`<li><q>${a.q}</q><b>${a.n}</b><span>${a.r}</span></li>`).join('')}</ul></figure>
+    </div>
+    <p class="at__note">Onze athletes krijgen producten van HÏ Grip. Teamfoto: Rugby-Shots.</p>
+  </div></section>`;
+const REVIEWS=[
+ {q:'De sokken doen echt wat er beloofd word, je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil. Kwaliteit ook super na diverse keren wassen.',n:'Adri N.',d:'31 aug 2025'},
+ {q:'Het zijn goede sokken met een tof design en de website werkt handig. Ik heb meteen 3 paar gekocht voor kerstcadeaus. Iedereen blij.',n:'Rox',d:'18 dec 2025'},
+ {q:'Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming.',n:'Priscilla V.',d:'8 mei 2025'},
+ {q:'Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken. Snelle levering.',n:'Dick',d:'12 jun 2025'},
+ {q:'Wat een top service! Snel geleverd en goede kwaliteit!',n:'Sharon B.',d:'4 sep 2025'},
+ {q:'De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop.',n:'Lydia',d:'13 jan 2026'}
+];
+const PAGES={
+ voetbal:{
+  name:'Voetbal',acc:'#CCFF00',color:'wit',slogan:['Alles beweegt.','Jouw voet niet.'],
+  ads:[['01','alles-beweegt','Alles beweegt'],['02','checklist-voetbal','Checklist'],['03','brief-voetballer','Founderbrief']],
+  probT:'Elke kap kost je grip.',
+  probP:'Bij een kap, een draai of een sprint uit stilstand schuift je voet een stukje in je schoen. Dat stukje verlies je bij elke actie. Je afzet komt later, je enkel staat minder stevig en na negentig minuten voel je het aan je hielen.',
+  capLos:'Gewone sok: bij elke rem schuift je voet naar voren in je schoen.',
+  capGrip:'HÏ Grip: gripzones op je drukpunten houden je voet op zijn plek. Je kracht gaat recht de grond in.',
+  sciP:'Onderzoek bij voetballers: met gripsokken liepen ze sneller over een slalomparcours en schoof hun voorvoet minder in de schoen bij afremmen.',
+  featImg:'img/sok-wit.png',proofImg:'img/v-trap.jpg',
+  clubs:'Gedragen bij onder meer <b>V.V. Lyra</b>, <b>V.V. Spirit</b>, <b>SVS</b> en <b>Concordia</b>, en te koop bij <b>Sport 2000</b>.',
+  endImg:'img/v-grip.jpg'
+ },
+ rugby:{
+  name:'Rugby',acc:'#E10600',color:'wit',slogan:['Geef geen','meter weg.'],
+  ads:[['04','checklist-rugby','Checklist'],['05','brief-rugbyspeler','Founderbrief'],['09','geef-geen-meter-weg','Geef geen meter weg']],
+  probT:'In de scrum telt elke centimeter.',
+  probP:'In de scrum, de ruck en bij elke sidestep zet je al je kracht op je schoen. Schuift je voet daarin, dan lekt die kracht weg voordat hij de grond raakt. En na tachtig minuten op nat gras merk je het aan je hielen.',
+  capLos:'Gewone sok: je duwt, je voet schuift, en de meter gaat naar de tegenstander.',
+  capGrip:'HÏ Grip: gripzones op je drukpunten houden je voet op zijn plek. Je kracht gaat recht de grond in.',
+  sciP:'Onderzoek naar gripsokken: sporters waren sneller op een slalomparcours en hun voorvoet schoof minder in de schoen bij afremmen.',
+  featImg:'img/sok-wit.png',proofImg:'img/r-afzet.jpg',clubs:'',
+  endImg:'img/rb-zwart-veld.jpg'
+ },
+ product:{
+  name:'Product',acc:'#CCFF00',color:'zwart',slogan:['Niet elke sok','houdt je vast.'],
+  ads:[['06','niet-elke-sok','Vergelijking'],['07','nooit-meer','Nooit meer'],['08','wat-houdt-je-tegen','Bezwaren']],
+  probT:'Schuiven. Glijden. Blaren.',
+  probP:'Een gewone sportsok ligt los in je schoen. Bij elke rem, draai of afzet schuift je voet mee. Dat kost je snelheid en stabiliteit, en het geeft blaren. Een gripsok zit vast aan je voet én aan je zool.',
+  capLos:'Gewone sok: bij elke rem schuift je voet naar voren in je schoen.',
+  capGrip:'HÏ Grip: gripzones op je drukpunten houden je voet op zijn plek.',
+  sciP:'Sporters met gripsokken waren sneller op een slalomparcours en hun voorvoet schoof minder in de schoen bij afremmen.',
+  featImg:'img/sok-zwart.png',proofImg:'img/g-trap-zwart.jpg',
+  clubs:'Gedragen bij voetbal- en rugbyclubs en te koop bij <b>Sport 2000</b>.',
+  endImg:'img/g-trap-zwart.jpg'
+ }
+};
+const GAL={
+ wit:[['img/pack3-wit.webp','3-pack wit'],['img/p-wit-achter.webp','Witte HÏ Grip-sok met gripzones onder de voet'],['img/v-trap.jpg','Voetballer in witte HÏ Grip-sokken raakt de bal op kunstgras'],['img/vb-zool-bal.jpg','Voetballer laat de gripzones onder zijn witte sok zien, voet op de bal']],
+ zwart:[['img/pack3-zwart.webp','3-pack zwart'],['img/p-zwart-achter.webp','Zwarte HÏ Grip-sok met gripzones onder de voet'],['img/g-trap-zwart.jpg','Zwarte HÏ Grip-sokken in voetbalschoenen tijdens een trap']]
+};
+const GAL_RUGBY={
+ wit:[['img/pack3-wit.webp','3-pack wit'],['img/p-wit-achter.webp','Witte HÏ Grip-sok met gripzones onder de voet'],['img/rb-zool-wit.jpg','Witte HÏ Grip-sokken met gripzones onder de voet, naast een rugbybal']],
+ zwart:[['img/pack3-zwart.webp','3-pack zwart'],['img/p-zwart-achter.webp','Zwarte HÏ Grip-sok met gripzones onder de voet'],['img/rb-zwart-veld.jpg','Zwarte HÏ Grip-sokken in rugbyschoenen op het veld']]
+};
+const GAL_PRODUCT={
+ wit:[['img/pack3-wit.webp','3-pack wit'],['img/p-wit-achter.webp','Witte HÏ Grip-sok met gripzones onder de voet'],['img/v-trap.jpg','Voetballer in witte HÏ Grip-sokken raakt de bal op kunstgras']],
+ zwart:[['img/pack3-zwart.webp','3-pack zwart'],['img/p-zwart-achter.webp','Zwarte HÏ Grip-sok met gripzones onder de voet'],['img/g-trap-zwart.jpg','Zwarte HÏ Grip-sokken in voetbalschoenen tijdens een trap']]
+};
+const thumbsHtml=k=>galList(k).map((g,i)=>`<button type="button" aria-pressed="${i===0}" data-i="${i}" aria-label="Foto ${i+1}: ${g[1]}"><img src="${g[0]}" alt=""></button>`).join('');
+const TICK='<svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+// binnen 1 werkdag verzonden: vandaag besteld gaat uiterlijk de eerstvolgende werkdag de deur uit (weekend: dinsdag)
+function shipDay(){const dn=['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];const d=new Date(),wd=d.getDay();
+ const add=wd===5?3:wd===6?3:wd===0?2:1;const n=new Date(d);n.setDate(d.getDate()+add);return dn[n.getDay()]}
+const AD2PAGE={};for(const[k,p]of Object.entries(PAGES))for(const a of p.ads)AD2PAGE[a[1]]=k;
+
+function render(adKey){
+  curAd=adKey;
+  const pk=AD2PAGE[adKey]||'voetbal'; const P=PAGES[pk];
+  document.documentElement.style.setProperty('--acc',P.acc);
+  document.documentElement.style.setProperty('--acc-text',pk==='rugby'?'#ffffff':'#CCFF00');
+  const isLetter=adKey.startsWith('brief');
+  const packImg=c=>c==='wit'?'img/pack3-wit.webp':'img/pack3-zwart.webp';
+  document.getElementById('page').innerHTML=`
+  <header class="top"><div class="wrap"><img src="img/logo-wit.png" alt="HÏ Grip Performance Sportswear"></div></header>
+  ${phero(adKey,P)}
+
+  ${pk==='rugby'?ATH_HTML():''}
+  <section class="rv" id="reviews"><div class="wrap">
+    <div class="rv__head">
+      <div class="rv__score"><b>4,6</b><div>${STARS}<span>21 reviews op Trustpilot</span></div></div>
+      <h2 class="rv__h">3500+ sporters gingen je voor.</h2>
+    </div>
+    <div class="rv__row">${REVIEWS.map(r=>`<figure class="rv__c">${STARS}<q>${r.q}</q><figcaption>${r.n} · ${r.d}</figcaption></figure>`).join('')}</div>
+    ${P.clubs?`<p class="rv__clubs">${P.clubs}</p>`:''}
+  </div></section>
+
+  <section class="ft"><div class="wrap">
+    <h2 class="ft__h">Wat je krijgt</h2>
+    <div class="ft__grid">${(pk==='rugby'?TILES_RUGBY:pk==='product'?TILES_PRODUCT:TILES)[P.color].map((t,i)=>`<figure class="ft__t${i===0?' ft__t--big':''}"><img src="${t[0]}" alt="${t[1]}" loading="lazy"><figcaption><b>${t[2]}</b><span>${t[3]}</span></figcaption></figure>`).join('')}</div>
+  </div></section>
+
+  <section class="sci2"><div class="wrap sci2__grid">
+    <div>
+      <h2 class="sci2__h">95% meer grip</h2>
+      <p class="sci2__p">Gemeten bij gripsokken als categorie: de wrijving tussen voet en schoen bijna verdubbelt.</p>
+      <div class="bars" role="img" aria-label="Wrijvingscoëfficiënt: gewone sok 0,60, gripsok 1,17">
+        <div class="bar"><span>Gewone sok</span><i style="--w:51%"></i><b>0,60</b></div>
+        <div class="bar bar--hi"><span>Gripsok</span><i style="--w:100%"></i><b>1,17</b></div>
+      </div>
+      <p class="src">Statische wrijvingscoëfficiënt. Bron: Apps et al. 2022, Journal of Sports Sciences.</p>
+    </div>
+    <table class="vs"><thead><tr><th></th><th class="hi">HÏ Grip 2.0</th><th>Gewone sok</th></tr></thead><tbody>
+      ${['Siliconen gripzones','Compressie 15–20 mmHg','Coolmax 30%','Naadloos','Demping en versterkte hiel'].map(r=>`<tr><td>${r}</td><td class="hi">${CHECK}</td><td class="no">${CROSS}</td></tr>`).join('')}
+    </tbody></table>
+  </div></section>
+
+  <section class="fq"><div class="wrap fq__grid">
+    <h2 class="fq__h">Vragen</h2>
+    <div>
+      <details open><summary>Welke maat kies ik?</summary><p>Kies de maat waar je schoenmaat in valt: 35–38, 39–42 of 43–47.</p></details>
+      <details><summary>Heb ik ze op tijd voor de wedstrijd?</summary><p>We versturen je bestelling binnen 1 werkdag.</p></details>
+      <details><summary>Wat als hij niet past?</summary><p>Je hebt 30 dagen om je bestelling te retourneren.</p></details>
+      <details><summary>Wat kost verzending?</summary><p>Vanaf €35 is verzending gratis, dus het 3-pack en 5-pack altijd. Daaronder kost het binnen Nederland €4,50.</p></details>
+      <details><summary>Hoe kan ik betalen?</summary><p>Met Klarna, PayPal, Apple Pay, Google Pay, Bancontact, Visa, Mastercard of Maestro.</p></details>
+    </div>
+  </div></section>
+
+  <section class="of"><div class="of__bg"><img src="${P.endImg}" alt="" loading="lazy"></div>
+    <div class="wrap of__grid">
+      <h2 class="of__h">${P.slogan[0]}<br>${P.slogan[1]}</h2>
+      <div class="of__card">
+        <img src="${packThumb(3,P.color)}" alt="3-pack ${P.color}">
+        <div><p class="of__t">3 paar <b>€44,95</b> <s>€53,85</s></p><p class="of__s">€14,98 per paar · gratis verzonden · 30 dagen retour</p></div>
+        <a class="cta cta--wide" href="#koop"><span>Kies je maat</span>${CHEV}</a>
+      </div>
+    </div></section>
+
+  <footer class="foot-l"><div class="wrap"><img src="img/logo-wit.png" alt="HÏ Grip"><span>Verzendbeleid</span><span>Retourbeleid</span><span>Contact</span><span>© HÏ Grip</span></div></footer>`;
+
+  wire(adKey);
+  document.querySelectorAll('.pchip').forEach(c=>c.setAttribute('aria-current',c.dataset.ad===adKey));
+  window.scrollTo({top:0});
+}
+
+function wire(adKey){
+  // post-it: laatste vakje vinkt zichzelf af
+  const pi=document.getElementById('postit');
+  if(pi){setTimeout(()=>pi.classList.add('is-ticked'),1400)}
+
+  // koopblok
+  const f=document.getElementById('buyForm'),btn=document.getElementById('buyBtn'),added=document.getElementById('added');
+  const main=document.getElementById('galMain'),thumbs=document.getElementById('thumbs');
+  const price={1:'€17,95',3:'€44,95',5:'€69,95'},nm={1:'1 paar',3:'3-pack',5:'5-pack'};
+  document.getElementById('shipLine').innerHTML=`Bestel je nu, dan gaat je pakket <b>uiterlijk ${shipDay()}</b> de deur uit`;
+  const showGal=i=>{const k=f.kleur.value,L=galList(k),g=L[i],A=AD[curAd];main.src=g[0];main.alt=g[1];main.classList.toggle('cover',/\.jpg$/.test(g[0]));main.classList.toggle('bw',!!A.bw&&A.lead&&g[0]===A.lead[0]);const n=document.getElementById('postit');if(n)n.hidden=i!==0;thumbs.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-pressed',j===i))};
+  thumbs.addEventListener('click',e=>{const b=e.target.closest('button');if(b)showGal(+b.dataset.i)});
+  const moveSizes=()=>{const o=f.querySelector('.bo__radio[name=pack]:checked').closest('.bo');o.appendChild(document.getElementById('sizes'))};moveSizes();
+  const sync=()=>{const p=f.pack.value;btn.querySelector('span').textContent=`In winkelwagen · ${price[p]}`;document.querySelector('#sticky b').textContent=`${p==='1'?'1 paar':p+' paar'} ${price[p]}`;document.getElementById('stSub').textContent=(p==='1'?'+ €4,50 verzending':'Gratis verzonden')+' · '+(f.maat.value?'maat '+f.maat.value:'kies je maat')};
+  f.addEventListener('change',e=>{
+    if(e.target.name==='kleur'){const k=f.kleur.value;thumbs.innerHTML=thumbsHtml(k);showGal(0);document.getElementById('kleurNaam').textContent=k==='wit'?'Wit':'Zwart';f.querySelectorAll('.bo__img').forEach(im=>im.src=packThumb(+im.dataset.n,k))}
+    if(e.target.name==='pack')moveSizes();
+    if(e.target.name==='maat'){document.getElementById('sizeErr').hidden=true;document.getElementById('sizes').classList.remove('err');document.querySelectorAll('#stickySizes input').forEach(x=>x.checked=x.value===f.maat.value)}
+    sync();added.hidden=true;
+  });
+  window._addToCart=()=>{
+    if(!f.maat.value){document.getElementById('sizeErr').hidden=false;document.getElementById('sizes').classList.add('err');document.getElementById('sizes').scrollIntoView({block:'center'});return false}
+    added.hidden=false;
+    added.innerHTML=`<b>Toegevoegd: ${nm[f.pack.value]} ${f.kleur.value}, maat ${f.maat.value}</b><a class="cta cta--wide" href="#koop"><span>Afrekenen · ${price[f.pack.value]}</span>${CHEV}</a><small>Prototype. Live zet deze knop je keuze in de winkelwagen${f.pack.value==='1'?'':', met bundelkorting'}.</small>`;
+    return true;
+  };
+  f.addEventListener('submit',e=>{e.preventDefault();if(!window._addToCart())document.getElementById('maat0').focus()});
+  showGal(0);
+
+  // sticky balk: zichtbaar zolang de koopknop niet in beeld is (mobiel dus al bij binnenkomst)
+  const sticky=document.getElementById('sticky'),buyBtn=document.getElementById('buyBtn');
+  const upd=s=>{sticky.classList.toggle('show',s);sticky.setAttribute('aria-hidden',!s);document.getElementById('stickyBtn').tabIndex=s?0:-1};
+  if(!window._stWired){window._stWired=1;
+    document.getElementById('stickySizes').addEventListener('change',e=>{const f=document.getElementById('buyForm');const t=[...f.maat].find(x=>x.value===e.target.value);if(t){t.checked=true;t.dispatchEvent(new Event('change',{bubbles:true}))}document.getElementById('stickySizes').classList.remove('err')});
+    document.getElementById('stickyBtn').addEventListener('click',()=>{const f=document.getElementById('buyForm');if(!f.maat.value){document.getElementById('stickySizes').classList.add('err');return}window._addToCart();document.getElementById('added').scrollIntoView({behavior:'smooth',block:'center'})});}
+  document.querySelectorAll('#stickySizes input').forEach(x=>x.checked=false);
+  if(window._io)window._io.forEach(o=>o.disconnect());
+  const a=new IntersectionObserver(([en])=>upd(!en.isIntersecting));
+  a.observe(buyBtn);window._io=[a];
+  const first=()=>{const r=buyBtn.getBoundingClientRect();upd(r.top>innerHeight||r.bottom<0)};requestAnimationFrame(first);setTimeout(first,400);
+}
+
+// prototypebalk
+const groups=document.getElementById('protoGroups');
+groups.innerHTML=Object.entries(PAGES).map(([k,p])=>`<div class="pgroup"><span>${p.name}</span>${p.ads.map(a=>`<button type="button" class="pchip" data-ad="${a[1]}" aria-current="false"><img src="img/ad-${a[0]}.jpg" alt="">${a[0]} · ${a[2]}</button>`).join('')}</div>`).join('');
+groups.addEventListener('click',e=>{const b=e.target.closest('.pchip');if(b)location.hash=b.dataset.ad});
+
+const start=()=>{const h=location.hash.slice(1);render(HERO[h]?h:'alles-beweegt')};
+window.addEventListener('hashchange',start);
+start();
+</script>

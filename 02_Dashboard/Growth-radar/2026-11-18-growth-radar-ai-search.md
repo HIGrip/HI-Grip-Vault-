@@ -9,7 +9,7 @@ categorie: SEO
 status: nieuw
 prioriteit: P3
 samenvatting: "Google breidde zijn native 'direct checkout' binnen Search AI Mode en de Gemini-app op 4 november 2026 uit naar Canada, als tweede markt na de VS; Nederland staat er nog niet bij. Voor higrip.nl is dit alleen een signaal om te volgen: het Shopify-agentkennisbestand uit backlogpunt 28 blijft los van deze geografische beperking."
-gerelateerd: [2026-11-11-growth-radar-ai-search, 2026-11-04-growth-radar-ai-search]
+gerelateerd: [2026-11-11-growth-radar-ai-search, 2026-11-04-growth-radar-ai-search, 2026-11-25-growth-radar-ai-search]
 vervangt: []
 bronbestand: ""
 deadline: ""

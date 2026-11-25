@@ -1899,10 +1899,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
-   "bewijs": "Beide geprobeerde URL's geven 404; er is nog geen eigen collectiepagina voor \"witte gripsokken\" of \"zwarte gripsokken\" naast het algemene /collections/gripsokken.",
-   "controle": "Gecontroleerd of /collections/witte-gripsokken en /collections/zwarte-gripsokken (of vergelijkbare collectiepagina's) bestaan.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "er bestaat maar 1 collectie (Gripsokken); geen witte/zwarte-gripsokken-collecties aangemaakt",
+   "controle": "collections opgevraagd in Shopify Admin",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#d2cc641d": {
@@ -2038,9 +2038,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
-   "bewijs": "niet te controleren: dit is een planningsactie (mini-plan opstellen met de Design Agent), geen Shopify-status.",
-   "controle": "gecontroleerd of dit een waarneembare Shopify-status is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen mini-plan-document (CSS/Liquid/JS) gevonden, alleen de oorspronkelijke inspiratienotitie",
+   "controle": "vault doorzocht op een mini-plan voor de zakelijke pagina",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2157,9 +2157,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "niet te controleren: geen artikel met die handle gevonden in de huidige lijst van 15 artikelen; mogelijk hernoemd of verwijderd bij de blog-reductie, niet te verifiëren welke meta nu geldt.",
-   "controle": "articles(first:50) opgehaald en gezocht naar een blog 'voor-welke-sport'.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "artikel niet gevonden (mogelijk al verwijderd/samengevoegd), metatekst niet te controleren",
+   "controle": "artikel voor-welke-sport-zijn-gripsokken-onmisbaar opgezocht via handle-query",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2263,9 +2263,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-voordelenpagina-analyse#6b326f42": {
-   "bewijs": "geen pagina of templates/page.voordelen.json gevonden; de conceptpagina en het blogsjabloon bestaan nog niet.",
-   "controle": "gezocht naar een pagina of template met 'voordelen' in de naam.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen blogsjabloon of vervolgnotitie gevonden die bevestigt dat de conceptpagina als blogsjabloon in het thema staat",
+   "controle": "vault en blog-articlelijst doorzocht op een vervolgnotitie/blogsjabloon",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2315,9 +2315,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4867b36b": {
-   "bewijs": "de hp-11-sectie zelf gebruikt al 'je'-vorm in antwoord 4 ('Waarom glijdt mijn voet...') en 7 ('Wat is het verschil...'), geen 'uw' gevonden — maar de losse, bekend-verouderde snippets/faq-schema.liquid (andere 8 vragen, incl. 'Was uw gripsokken' in antwoord 4 volgens eerdere controle) is deze run niet opnieuw gecontroleerd, dus niet de HELE actie bevestigd",
-   "controle": "FAQPage-schema in de hp-11-sectie op de homepage gelezen (vraag 4 en 7); snippets/faq-schema.liquid niet los gecontroleerd deze run",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "faq_a4 begint nog met 'Was uw gripsokken...' (uw-vorm, niet omgezet naar je)",
+   "controle": "snippets/faq-schema.liquid van het live thema opgehaald, antwoord 4 en 7 nagelezen",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2351,10 +2351,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
-   "bewijs": "Geen 360°-productviewer met losse frames gevonden; de enige '360'-treffer is het bestand hp-logo-concordia-360.webp, een clublogo (360 duidt hier een breedte aan), geen frame-sequentie van 206 beelden.",
-   "controle": "Homepage-broncode doorzocht op een 360°-frame-viewer of beeldsequentie",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "geen reeks framebestanden gevonden, alleen toevallige treffers; de 206 frames zijn niet terug te vinden",
+   "controle": "Shopify Files doorzocht op 360-framebestanden",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#98beb4c6": {
@@ -2408,9 +2408,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#f2c44e5d": {
-   "bewijs": "bestand bestaat niet (NOT_FOUND); de testtemplate is nog niet gebouwd.",
-   "controle": "templates/page.home-nieuw.json opgezocht in thema 201133490503.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "bestand NOT_FOUND, testtemplate niet aangemaakt",
+   "controle": "gezocht naar templates/page.home-nieuw.json in thema 201133490503",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2429,10 +2429,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
-   "bewijs": "De enige font-preload is poppins_i9.c9d778...woff2, en dat font-face-blok heeft font-weight:900 (niet 800); het 800-italic-bestand (poppins_i8) staat wel gedefinieerd maar wordt niet gepreload.",
-   "controle": "<link rel=preload as=font> en @font-face-definities voor Poppins italic op de homepage gelezen",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "fonts.liquid bestaat niet; alleen een italic 900-variant wordt gepreload en alleen op de homepage, 800 italic wordt niet gepreload",
+   "controle": "gezocht naar snippets/fonts.liquid en de preload-logica in layout/theme.liquid",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#410fff71": {
@@ -2464,9 +2464,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
-   "bewijs": "block-cart en fd-product-groups staan globaal uitgeschakeld (disabled:true), maar een scoping specifiek tot product- en cartpagina's is niet gevonden/mogelijk via app-embeds.",
-   "controle": "config/settings_data.json van het live thema opgehaald en gecontroleerd op scoping van block-cart en fd-product-groups per paginatype.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide app-embed-blocks staan volledig disabled, niet specifiek beperkt tot cart/product-pagina's zoals gevraagd",
+   "controle": "config/settings_data.json doorzocht op section-store/block-cart en fd-product-groups",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2649,11 +2649,11 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#022f1382": {
-   "bewijs": "de CTA 'Bekijk de maten' bestaat nog niet op de pagina; de UTM-test is een live/publieke check buiten mijn bucket.",
-   "controle": "templates/page.sport-rugby.json doorzocht op een CTA 'Bekijk de maten' gekoppeld aan de FAQ.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "zelfde template gecontroleerd plus de EK-rugbyplan-notitie gelezen voor status",
+   "controle": "shopify",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
-   "uitkomst": "open"
+   "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#164c7e1e": {
    "bewijs": "besluit voor Lars, niet automatisch waar te nemen.",
@@ -2740,9 +2740,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
-   "bewijs": "'Geen doorglijden', 'Kracht komt aan', 'zet scherper af', 'Minder schuiven. Meer kracht.' en 'Fris tot de laatste minuut' staan nog woordelijk op de rugbypagina; Friedl 2023 en Apps 2022 staan nog zonder de gevraagde aangepaste formulering.",
-   "controle": "templates/page.sport-rugby.json van het live thema opgehaald en de genoemde absolute claims en bronvermeldingen gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "bevat nog letterlijk 'Geen doorglijden...', 'Kracht komt aan' en 'Minder schuiven. Meer kracht.' — niet afgezwakt",
+   "controle": "templates/page.sport-rugby.json van het live thema opgehaald",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2856,10 +2856,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "Homepage-meta/og-description toont al 3500+ (klopt met vastgestelde waarde); /en toont ook al 3500+; maar /collections/gripsokken toont nog '3000+ sporters gingen je voor' — nog niet geharmoniseerd. Presets zijn niet publiek te checken.",
-   "controle": "Sportersaantal gecontroleerd op homepage-meta, /collections/gripsokken en /en",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "collectie zegt nog 'Al 3000+ sporters', SEO-description 'Performance Gripsokken' zegt al 3500+ sporters; nog niet geharmoniseerd",
+   "controle": "collectiebeschrijving en product-SEO-description vergeleken op sportersaantal",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
@@ -2955,9 +2955,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4e776330": {
-   "bewijs": "niet te controleren: geen shine- of badge-instelling gevonden in de thema-bestanden; dit is waarschijnlijk een app-interne instelling van Section Store die niet via de Admin API te zien is.",
-   "controle": "templates/product.json en config/settings_data.json doorzocht op 'shine'/'badge'/'bundle'-instellingen.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "settings_data.json toont alleen dat block-cart-embed disabled staat; het glans-effect is een app-eigen instelling, niet zichtbaar via de API",
+   "controle": "app-eigen (Section Store) block-niveau-instelling, niet via de connector leesbaar",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -2984,10 +2984,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#b36f0e48": {
-   "bewijs": "niet te controleren: dit is een Shopify-admin/app-verwijdering (FD Product Groups, Bundler, Essential A/B Testing), buiten mijn bucket (publieke URL's op higrip.nl).",
-   "controle": "Vastgesteld of dit via een publieke URL te checken is",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "Essential A/B Testing staat nog actief; Bundler is weg; fd-product-groups-app-embed staat nog (disabled) in settings_data.json",
+   "controle": "appInstallations opgevraagd in Shopify Admin",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#b92e7ccf": {
@@ -3020,17 +3020,17 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
-   "bewijs": "niet te controleren: EcomSend-abonnementslimieten staan in de app-admin van EcomSend, niet op de publieke site.",
-   "controle": "Gezocht naar een publieke manier om het EcomSend-abonnement/plan te controleren",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "appInstallations bevestigt de nieuwe naam; abonnementsgegevens zijn app-eigen en niet opvraagbaar via GraphQL",
+   "controle": "app hernoemd naar CWILL/SendWILL, app-eigen instellingen niet via de connector leesbaar",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
-   "bewijs": "niet te controleren: de EcomSend-popup wordt dynamisch via een extern JS-bundel geladen (na interactie of 10s) en staat niet in de statische HTML; de 4 treffers van #0011a7 op de pagina horen bij de padel-sportkleur in hp-07, niet bij de popupknop.",
-   "controle": "Homepage-broncode doorzocht op #0011A7 en op de EcomSend-popupknop",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "knopstijl/kleur van de popup wordt binnen de app-widget ingesteld en is niet via GraphQL te verifiëren",
+   "controle": "app hernoemd naar CWILL/SendWILL, app-eigen instellingen niet via de connector leesbaar",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#87a520dc": {
@@ -3055,17 +3055,17 @@
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
-   "bewijs": "niet te controleren: de frequentie-instelling staat in de EcomSend-app-admin en is alleen over meerdere dagen/sessies gedrags-matig te meten, niet via een eenmalige fetch.",
-   "controle": "Gezocht of de popup-hertoonfrequentie na wegklikken publiek waarneembaar is",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "popup-frequentie-instelling is app-eigen en niet via GraphQL op te vragen",
+   "controle": "app hernoemd naar CWILL/SendWILL, app-eigen instellingen niet via de connector leesbaar",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
-   "bewijs": "niet te controleren: vereist een sessie als ingelogde klant plus herhaald bezoek; niet vast te stellen via een anonieme curl-fetch van de homepage.",
-   "controle": "Gezocht of 'alleen nieuwe bezoekers, niet ingelogde klanten' publiek te verifiëren is",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "doelgroepinstelling is app-eigen en niet via GraphQL op te vragen",
+   "controle": "app hernoemd naar CWILL/SendWILL, app-eigen instellingen niet via de connector leesbaar",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c8219092": {
@@ -3121,31 +3121,31 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
-   "bewijs": "De hoofd-mobielvideo (data-src, 739650e8...mp4) is nog 3.801.411 bytes (≈3714 KB, ongewijzigd); hp-home.js laadt de lichtere data-src-lo versie (1.347.108 bytes) alleen als navigator.connection.saveData of effectiveType 2g/3g is gedetecteerd, niet standaard op mobiel.",
-   "controle": "Bestandsgrootte van de mobiele ('tall') merkvideo en de laadlogica in hp-home.js gecontroleerd op higrip.nl",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "geen aanwijzing gevonden dat de mobiele video opnieuw is gecodeerd of dat de lichte versie standaard is gezet",
+   "controle": "gezocht naar een lichtere video-encode voor hp-06 in thema en vault",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
-   "bewijs": "De homepage laadt nog één ongesplitste hp-home.css (121.554 bytes ruw) zonder inline kritieke CSS; de losgehaalde hp-home.css bevat nog volledig de hp-05-klassen (o.a. hp-05-bg, hp-05-cta, hp-05-dial) — niet gesplitst en hp-05 niet verwijderd.",
-   "controle": "Gecheckt of hp-home.css gesplitst is in kritiek/inline + per sectie, en of hp-05/hp-13 nog in de bundel zitten.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "ORDER-array bevat nog '05' en '13'; hp-home.css wordt nog als één bestand geschreven, geen kritiek/inline-deel gesplitst",
+   "controle": "06_Website_Agent/Homepage-prototype/shopify/build.py gelezen",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#64c67434": {
-   "bewijs": "hp-09 heeft nog steeds sizes=\"200px\" (zou (min-width:769px) 160px, 120px moeten zijn); hp-10 heeft nog steeds \"(min-width: 900px) 30vw, 92vw\" (zou 46vw per kaart moeten zijn); hp-02 heeft nog steeds \"(min-width: 769px) 50vw, 50vw\" (zou 38vw op desktop moeten zijn) — alle drie onveranderd.",
-   "controle": "sizes-attributen van hp-09, hp-10 en hp-02 op de homepage uitgelezen met een Python-regex.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "sizes staan nog op de oude waarden in alle drie, niets gecorrigeerd",
+   "controle": "sections hp-09/hp-10/hp-02 van het live thema opgehaald",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
-   "bewijs": "chat-drawer-render, hpLightbox en hp-urltest.webp komen niet meer voor (0 treffers), maar de klasse hp-07-wave (mogelijk de 'kleurgolf') staat er nog; dode hp-home.css-klassen, 31 dode eigen secties en dode snippets zijn niet te verifiëren via de gerenderde HTML (vereist CSS/themabestanden).",
-   "controle": "Homepage-broncode (www.higrip.nl) doorzocht op de genoemde dode-code-termen",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "chat-drawer-render staat nog in theme.liquid; hp-07 lijkt wel opgeschoond, maar opruiming is niet compleet",
+   "controle": "layout/theme.liquid en hp-07 van het live thema opgehaald",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#6d8f318b": {
@@ -3432,17 +3432,17 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#6b972637": {
-   "bewijs": "de 3 losse bestanden bestaan nog los; hi-site.css bestaat niet (NOT_FOUND); de actieprijs-kleur staat nog hardcoded op #e10600, niet op var(--hi-red).",
-   "controle": "assets/hi-sale-price.css, hi-headings.css, hi-app-fixes.css en hi-site.css opgehaald uit het live thema.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "hi-site.css bestaat niet (NOT_FOUND), de drie losse bestanden worden nog apart ingeladen",
+   "controle": "gezocht naar assets/hi-site.css en de 3 losse CSS-bestanden in het live thema",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#9ceb0075": {
-   "bewijs": "niet te controleren: FCP/LCP zijn labmetingen (PageSpeed Insights/Lighthouse) en niet af te leiden uit een curl van de HTML.",
-   "controle": "Gecheckt of FCP/LCP van de productpagina 2.0 via curl alleen vast te stellen is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "product-LCP p75 nu 1010 ms (sterk verbeterd), maar een apart diepte-onderzoek van productpagina 2.0 is niet als afgeronde notitie terug te vinden",
+   "controle": "web_performance-query voor LCP p75 van productpagina's (28d)",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#c8a3c793": {
@@ -3460,9 +3460,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
-   "bewijs": "niet te controleren: vereist een lab-snelheidsmeting (Lighthouse), niet waarneembaar via de Shopify-connector.",
-   "controle": "gecontroleerd of de LCP-rendersnelheid van de cookiebanner via de connector te meten is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen vastgelegde uitkomst gevonden, 'nagaan'-vraag nog niet beantwoord",
+   "controle": "gezocht naar een vervolgnotitie over het sneller renderen van de cookiebanner",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3521,9 +3521,9 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-werkthema-02#aacd5803": {
-   "bewijs": "niet te controleren: geen van de beschikbare ShopifyQL-schema's bevat LCP/INP-webvitals (Shopify web_performance); vereist 30 dagen voor/na-vergelijking die hier niet beschikbaar is.",
-   "controle": "beschikbare ShopifyQL-schema's (sales, sessions, customers, payments, inventory, fulfillments) gecontroleerd op webvitals-metrics.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pas 21 dagen verstreken sinds livegang, nog geen volledige 30-dagen-vergelijking vastgelegd",
+   "controle": "web_performance-query (28d) en livegangdatum (4-11) gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3542,9 +3542,9 @@
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
-   "bewijs": "niet te controleren: vereist een handmatige functionele test op meerdere apparaten, niet waar te nemen via een enkele Shopify-call.",
-   "controle": "gecontroleerd of een functionele vergelijking (telefoon/desktop, kortingscode, deel-link) via de connector te doen is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "de nieuwe Horizon-eigen winkelwagen staat live en is getest, maar de specifieke deel-link HI30 uit de actietekst is nergens terug te vinden",
+   "controle": "snippets/cart-drawer.liquid, hi-cart-extras.liquid en de werkthema-02-notitie gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -3620,16 +3620,16 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "niet te controleren: dit is een doel vastleggen in een werkthema-notitie, geen Shopify-status.",
-   "controle": "gecontroleerd of dit een waarneembare Shopify-status is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen 'mobiel 80+'-doel aangetroffen in de notitie",
+   "controle": "werkthema-02-notitie doorzocht op een vastgelegd PageSpeed-doel",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
-   "bewijs": "niet te controleren: dit is een vastleggen-taak (per-app laadbeslissing documenteren), geen Shopify-status.",
-   "controle": "gecontroleerd of dit een waarneembare Shopify-status is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen vermelding van Upfront gevonden, referentie niet gebruikt bij de app-besluiten",
+   "controle": "werkthema-02-notitie doorzocht op 'Upfront'",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -4156,9 +4156,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-ads-live-check-website#ec609e8b": {
-   "bewijs": "2.0 zwart en wit staan nog op negatieve voorraad (van -6 tot -36); er is geen verklaring voor de negatieve telling in de Shopify-data gevonden.",
-   "controle": "inventoryQuantity van de 1.0- en 2.0-varianten opgehaald.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "voorraad 2.0 nog negatief (zwart -6/-26/-36, wit -10/-17/-29), geen verklaring voor de negatieve telling vastgelegd",
+   "controle": "voorraad 1.0 en 2.0 gecontroleerd via inventoryQuantity",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -4673,20 +4673,18 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-seo-conversietest-run-7#a76ea6d5": {
-   "bewijs": "zelfde terugbetalingsbeleid-conceptteksten, backlogvariant van dezelfde dag",
-   "controle": "vergeleken met open conversietest-acties",
-   "dubbel_van": "backlog#e920d0ff",
-   "gecontroleerd": "2026-11-10",
-   "methode": "geen",
-   "uitkomst": "dubbel"
+   "bewijs": "toont nu een iDEAL-rij, maar de specifieke SEO-conceptteksten uit het logboek zijn niet via de API te bevestigen als geplakt",
+   "controle": "betalingsbeleidpagina van het live thema opgehaald",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
+   "uitkomst": "open"
   },
   "2026-11-09-seo-conversietest-run-7#fd13c344": {
-   "bewijs": "zelfde waardebalk-blok herbouwen, backlogvariant van dezelfde dag",
-   "controle": "vergeleken met open conversietest-acties",
-   "dubbel_van": "backlog#df9a37ab",
-   "gecontroleerd": "2026-11-10",
-   "methode": "geen",
-   "uitkomst": "dubbel"
+   "bewijs": "bestand NOT_FOUND in alle 3 thema's, waardebalk-blok niet herbouwd",
+   "controle": "gezocht naar snippets/hi-pack-value-bar.liquid in live en 2 unpublished werkthema's",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
+   "uitkomst": "open"
   },
   "2026-11-09-social-qa-ads-teksten#1d33cb29": {
    "bewijs": "niet automatisch waar te nemen",
@@ -5143,10 +5141,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e": {
-   "bewijs": "niet te controleren vanuit GA4/GSC/vault: vereist Meta Ads Manager- en Shopify-bundelapp-configuratie; de bronnotitie (02_Dashboard/Ads/2026-11-16-ads-funnel-trio-rugby-voetbal.md, regel 40) toont de vraag nog als open, onafgevinkt actiepunt, geen vervolgnotitie met een antwoord gevonden.",
-   "controle": "Nagegaan of al bepaald is of de onderlaag-ad-link direct op het 3-pack kan landen via de bundel-app.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "staat nog als open P3-actiepunt in de notitie zelf, geen vervolg of uitkomst vastgelegd",
+   "controle": "notitie 2026-11-16-ads-funnel-trio-rugby-voetbal.md nagelezen op status",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-16-ads-funnel-trio-rugby-voetbal#fdfdc013": {
@@ -5228,9 +5226,9 @@
    "uitkomst": "gedaan"
   },
   "2026-11-16-horizon-4-5-update-check#417115ae": {
-   "bewijs": "niet te controleren: vereist een losse Lighthouse/PageSpeed-meting (5 runs), niet waarneembaar via de Shopify-connector.",
-   "controle": "gezocht naar een manier om LCP van de collectiepagina via de connector te meten.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "collectie-LCP p75 1790 ms, maar de gevraagde 5 losse Lighthouse-labruns zijn niet uitgevoerd/vastgelegd",
+   "controle": "web_performance-query voor LCP p75 van de collectiepagina (28d)",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5438,10 +5436,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-23-meta-campagnerapport#9db5381e": {
-   "bewijs": "niet volledig te controleren: beoordeling \"in Ads Manager\" vereist toegang buiten GA4/GSC/vault; de bronnotitie zelf bevat één eenmalige vergelijking met Shopify-orders (laatste bezoek/UTM) voor 23-11, maar staat daar zelf nog als nieuw, onafgevinkt P1-actiepunt — nog geen aantoonbare wekelijkse herhaling.",
-   "controle": "Nagegaan of advertenties wekelijks op attributie \"7 dagen na klikken\" worden beoordeeld en naast Shopify (laatste bezoek/UTM) gelegd.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "niet te controleren via de Shopify-connector (vereist Meta Ads Manager); is bovendien een doorlopende taak, geen eenmalige afronding",
+   "controle": "gecontroleerd of Meta-attributie wekelijks naast Shopify-cijfers gelegd wordt",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-23-meta-campagnerapport#a3a769bd": {
@@ -5576,10 +5574,10 @@
    "uitkomst": "open"
   },
   "backlog#246c61d9": {
-   "bewijs": "Tegenspraak nog aanwezig: nieuwe pagina's zeggen 30 dagen retour, geen herbevoorradingskosten, €4,50/gratis vanaf €35, \"binnen 1 werkdag\"; /policies/refund-policy zegt nog 14 dagen, \"ongeopend\", 25% herbevoorradingskosten, u-vorm; /policies/shipping-policy noemt nog een 16:00-cutoff en u-vorm. Geen 301 tussen oud en nieuw; beide sets staan los naast elkaar live.",
-   "controle": "Inhoud van /pages/verzendbeleid, /pages/retourbeleid, /pages/terugbetalingsbeleid vergeleken met /policies/shipping-policy en /policies/refund-policy.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "bevestigde tegenspraak: nieuwe verzendpagina zegt €4,50/binnen 1 werkdag tegenover de oude policy €4,25/vóór 16:00; nieuwe retourpagina zegt 30 dagen/geen kosten tegenover de oude policy 14 dagen/25% herbevoorradingskosten",
+   "controle": "nieuwe beleidspagina's vergeleken met shop.shopPolicies",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#2e5c5044": {
@@ -5597,9 +5595,9 @@
    "uitkomst": "open"
   },
   "backlog#380ede66": {
-   "bewijs": "niet te controleren: geen GraphQL-veld voor Shopify Catalog-geschiktheid beschikbaar.",
-   "controle": "gezocht naar een GraphQL-veld voor Shopify Catalog-geschiktheid.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "niet te controleren: geen Admin GraphQL-veld hiervoor, agent-kennisbestand niet via connector te verifiëren",
+   "controle": "gezocht naar een GraphQL-veld voor Catalog-geschiktheid/Agentic-commerce",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },
@@ -5632,10 +5630,10 @@
    "uitkomst": "open"
   },
   "backlog#5d65bfbd": {
-   "bewijs": "Direct na de H1 volgen alleen de verzend/retour-trustbadges en meteen de productgrid; er staat geen beschrijvende tekst of interne links — de beschrijving is nog steeds afwezig.",
-   "controle": "Gecontroleerd of /collections/gripsokken een collectiebeschrijving met interne links tussen H1 en productgrid heeft.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "beschrijving staat terug, maar bevat geen interne links; herstel van de links niet bevestigd",
+   "controle": "collectiebeschrijving en interne links op /collections/gripsokken gecontroleerd via descriptionHtml",
+   "gecontroleerd": "2026-11-25",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "backlog#886d413d": {
@@ -5725,9 +5723,9 @@
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
-   "bewijs": "geen app met de naam 'Bundler' (meer) geïnstalleerd, maar er is geen Trustpilot-app-embed-blok gevonden in settings_data.json; de publieke paginabron-check op `var urls=[...]` valt buiten de Shopify-adminscope.",
-   "controle": "appInstallations en config/settings_data.json (app-embeds) van het live thema opgehaald.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "scriptTags geeft Access denied (bekende beperking); Bundler is weg uit appInstallations, maar zonder scriptTags-toegang niet volledig te bevestigen",
+   "controle": "appInstallations gecontroleerd; scriptTags-veld geprobeerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "shopify",
    "uitkomst": "open"
   },

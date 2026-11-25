@@ -7,9 +7,9 @@ bron: routine
 routine: "denzel-week"
 categorie: CRO
 prioriteit: P2
-status: nieuw
+status: gearchiveerd
 samenvatting: "Shopify meldt deze week (9-15 nov) weer 3 bestellingen/€91,16 na twee nul-omzetweken op rij, terwijl de Meta-proef zelf stilligt omdat de accountlimiet van €245,55 is bereikt zonder één toegeschreven aankoop; GA4-sessies, kanalen en funnel konden deze run niet opgehaald worden (tool geblokkeerd). Voor higrip.nl betekent dit dat de omzet weer organisch/direct binnenkomt terwijl de betaalde kant op een startcontrole en een nieuwe campagne wacht, en dat het EK rugby-besluit niet meer in te halen is: het toernooi zelf (7-15 nov) is nu ook afgelopen."
-gerelateerd: [2026-11-09-weekoverzicht, 2026-11-09-regressiecheck, 2026-11-09-search-console, 2026-11-09-seo-conversietest-run-7, 2026-10-27-ek-rugby-u18-u20-plan, 2026-10-11-omzetgroei-koersbepaling, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-growth-radar-seo-technisch, 2026-11-11-growth-radar-ai-search, 2026-11-10-growth-radar-seo-content]
+gerelateerd: [2026-11-09-weekoverzicht, 2026-11-09-regressiecheck, 2026-11-09-search-console, 2026-11-09-seo-conversietest-run-7, 2026-10-27-ek-rugby-u18-u20-plan, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-growth-radar-seo-technisch, 2026-11-11-growth-radar-ai-search, 2026-11-10-growth-radar-seo-content, 2026-11-23-weekoverzicht]
 vervangt: []
 bronbestand: ""
 deadline: ""

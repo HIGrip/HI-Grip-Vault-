@@ -38,7 +38,7 @@ De vraag was een volledige snelheids- en code-audit van de homepage, mobiel en d
 - [ ] P2 · sizes corrigeren in hp-09 (160px en 120px), hp-10 kaart 1 en 2 (46vw) en hp-02 (38vw op desktop)
 - [x] P2 · Sectie-inits in hp-home.js pas starten bij naderen (IntersectionObserver in initIn, 150% marge): 550 tot 650 ms reflow minder op desktop
 - [ ] P2 · build.py: hp-home.css splitsen in een klein kritiek deel (inline) en CSS per sectie, en hp-05 en hp-13 uit de bundel halen
-- [ ] P2 · Staande hero-uitsnede voor mobiel uploaden als image_mobile in hp-01 en de hero opnieuw comprimeren (PSI: 122 KiB te besparen)
+- [x] P2 · Staande hero-uitsnede voor mobiel uploaden als image_mobile in hp-01 en de hero opnieuw comprimeren (PSI: 122 KiB te besparen)
 - [ ] P2 · Besluit: vaste prijzen in de hp-02-kaarten leegmaken, zodat de live productprijs getoond wordt
 - [ ] P2 · Na het live zetten PSI mobiel en desktop opnieuw draaien en vergelijken met deze nulmeting (score mobiel 76, desktop 60)
 - [x] P3 · Poppins alleen via Shopify font_face laden en de Google Fonts-link schrappen

@@ -1,0 +1,351 @@
+<title>Meta-campagnes november</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap">
+<style>
+/* Layout: één kolom rapport, cijfers eerst, daarna per campagne beeld naast analyse */
+:root{
+  --bg:#FFFFFF; --fg:#0A0A0A; --muted:#5f6064; --line:#E4E2DE; --soft:#F3F2EF;
+  --accent:#0A0A0A; --hl:#CCFF00; --bar:#0A0A0A; --bar2:#B9B8B4;
+  --good:#1f7a4d; --warn:#9a6400; --bad:#c0392b; --none:#6b6c70;
+  --font:'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --fg:#FFFFFF; --muted:#A3A4A8; --line:#2a2a2a; --soft:#1a1a1a;
+  --accent:#FFFFFF; --bar:#FFFFFF; --bar2:#555; --good:#4cc38a; --warn:#e3a53a; --bad:#ff6b5e; --none:#909194; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --fg:#FFFFFF; --muted:#A3A4A8; --line:#2a2a2a; --soft:#1a1a1a;
+  --accent:#FFFFFF; --bar:#FFFFFF; --bar2:#555; --good:#4cc38a; --warn:#e3a53a; --bad:#ff6b5e; --none:#909194; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:400 15px/1.6 var(--font);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 80px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:72px}
+h1,h2,h3{text-transform:uppercase;letter-spacing:-0.03em;line-height:1;margin:0;text-wrap:balance}
+h1{font-weight:900;font-style:italic;font-size:clamp(36px,7vw,72px)}
+h2{font-weight:800;font-size:clamp(26px,4vw,38px)}
+h3{font-weight:800;font-size:20px}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+section{display:flex;flex-direction:column;gap:24px}
+header{display:flex;flex-direction:column;gap:20px}
+.lead{font-size:18px;max-width:60ch}
+.meta{font-size:12px;color:var(--muted)}
+/* kerncijfers */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--fg)}
+.stat{padding:18px 16px 4px 0;display:flex;flex-direction:column;gap:6px}
+.stat b{font-weight:900;font-size:clamp(30px,5vw,48px);line-height:1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.stat.key b{background:var(--hl);color:#0A0A0A;padding:2px 6px;align-self:flex-start}
+.alert{border:2px solid var(--fg);padding:18px 20px;display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline}
+.alert strong{font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.5px}
+/* tabellen en balken */
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th{font-weight:600;font-size:12px;color:var(--muted);text-align:right;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+td.name{font-weight:600;white-space:normal;min-width:170px}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;border:1px solid currentColor;white-space:nowrap}
+.p-good{color:var(--good)} .p-warn{color:var(--warn)} .p-bad{color:var(--bad)} .p-none{color:var(--none)}
+.rows{display:flex;flex-direction:column;gap:14px}
+.row{display:grid;grid-template-columns:200px 1fr 90px;gap:14px;align-items:center}
+.row .lbl{font-weight:600;font-size:14px;line-height:1.3}
+.row .val{text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
+.track{height:14px;background:var(--soft);border-radius:0 4px 4px 0;position:relative}
+.fill{height:100%;background:var(--bar);border-radius:0 4px 4px 0}
+.fill.dim{background:var(--bar2)}
+/* trechter */
+.funnel{display:grid;grid-template-columns:200px repeat(4,1fr);gap:0;font-variant-numeric:tabular-nums}
+.funnel>div{padding:12px 10px;border-bottom:1px solid var(--line)}
+.funnel .h{font-size:12px;color:var(--muted);font-weight:600}
+.funnel .c{font-weight:600;font-size:14px}
+.cell{display:flex;flex-direction:column;gap:6px}
+.cell b{font-size:18px;font-weight:800}
+.cell i{font-style:normal;font-size:12px;color:var(--muted)}
+.mini{height:6px;background:var(--soft);border-radius:3px}
+.mini span{display:block;height:100%;background:var(--bar);border-radius:3px}
+/* inzichten */
+.insights{display:grid;grid-template-columns:repeat(2,1fr);gap:32px 40px}
+.insight{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--fg);padding-top:14px}
+.insight h3{font-size:18px}
+/* campagnes */
+.camp{display:flex;flex-direction:column;gap:20px;border-top:2px solid var(--fg);padding-top:20px}
+.camp-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;align-items:baseline}
+.camp-head .figs{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--muted)}
+.camp-head .figs b{color:var(--fg);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.list{display:flex;flex-direction:column;gap:8px;padding:0;margin:0;list-style:none}
+.list li{padding-left:18px;position:relative;max-width:68ch}
+.list li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:2px;background:var(--fg)}
+.lbl-s{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:24px}
+.ad{display:flex;flex-direction:column;gap:10px;min-width:0}
+.ad img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;border:1px solid var(--line);background:var(--soft)}
+.ad .t{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.ad .t b{font-size:14px;font-weight:700;line-height:1.25}
+.ad .k{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ad p{font-size:13px;line-height:1.5}
+.ad .fix{font-size:13px;border-top:1px solid var(--line);padding-top:8px}
+.ad .fix b{font-weight:700}
+/* acties */
+.actions{display:flex;flex-direction:column}
+.action{display:grid;grid-template-columns:70px 1fr 200px;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);align-items:start}
+.action .pr{font-weight:900;font-size:22px}
+.action h3{font-size:16px;margin-bottom:6px;line-height:1.2}
+.action .euro{font-weight:700;font-size:14px;text-align:right;font-variant-numeric:tabular-nums}
+.action .euro span{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.note{background:var(--soft);padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.note h3{font-size:15px}
+footer{font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+@media (max-width:760px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .row{grid-template-columns:1fr 70px}.row .lbl{grid-column:1/-1}
+  .insights,.two{grid-template-columns:1fr}
+  .funnel{grid-template-columns:110px repeat(4,1fr)}.funnel>div{padding:10px 4px}.cell b{font-size:15px}
+  .action{grid-template-columns:44px 1fr}.action .euro{grid-column:2;text-align:left}
+  .alert{grid-template-columns:1fr}
+}
+</style>
+
+<div class="wrap">
+
+<header>
+  <h1>Meta-campagnes november</h1>
+  <p class="lead">Geen enkele campagne verdient zijn geld terug. De 3 aankopen die Meta meldt, kwamen in Shopify binnen via de Early Access-mail en niet via een klik op een advertentie. Wel is er een patroon in winkelwagens: advertenties met de sok, de prijs en een antwoord op twijfel brengen mensen tot de winkelwagen, sfeerbeelden alleen tot een klik.</p>
+  <p class="meta">Vijf campagnes: de vier actieve en Product VS Gevoel. Periode 26 oktober tot en met 23 november 2026 (23-11 is een halve dag). Cijfers uit Meta Ads, alleen gelezen. Beelden uit de Meta Ad Library.</p>
+</header>
+
+<section aria-label="Kerncijfers">
+  <div class="stats">
+    <div class="stat"><b>€361,78</b><span>uitgegeven aan deze vijf campagnes</span></div>
+    <div class="stat"><b>0</b><span>aankopen na een klik op een advertentie (Meta meldt er 3)</span></div>
+    <div class="stat"><b>€112,70</b><span>omzet die Meta claimt, binnengekomen via de mail</span></div>
+    <div class="stat key"><b>0,31</b><span>ROAS volgens Meta; via klikken is het 0</span></div>
+  </div>
+  <div class="alert">
+    <strong>Waar de 3 aankopen vandaan komen</strong>
+    <p>Alle drie zijn op 23-11 besteld. In Shopify kwam bij geen van de drie de koper als laatste via een advertentie binnen: het laatste bezoek kwam telkens uit de Early Access-mail. Meta telt een aankoop mee als iemand binnen 1 dag de advertentie zag of binnen 7 dagen klikte. Wie de advertentie in de feed zag en daarna via de mail bestelde, staat dus bij Meta als aankoop. De €89,75 bij "Wat houdt je tegen" is precies twee mailbestellingen samen (€35,90 + €53,85); de €22,95 bij Early Access is een derde mailbestelling.</p>
+  </div>
+  <div class="alert">
+    <strong>Eerst dit</strong>
+    <p>Het account heeft een uitgavenplafond van €876,18. Er is nog ongeveer <b>€376</b> ruimte. Met de huidige €130 per dag is die over ongeveer <b>3 dagen</b> op, en dan stoppen alle advertenties tegelijk. Dat gebeurde op 7 november ook al.</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-geld">
+  <h2 id="h-geld">Waar het geld bleef</h2>
+  <p class="muted">Uitgaven per campagne (balk) met de omzet die eruit kwam.</p>
+  <div class="rows">
+    <div class="row"><div class="lbl">NL Rugby / Voetbal / Product <span class="pill p-warn">twijfel</span></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">€169,51</div></div>
+    <div class="row"><div class="lbl">Product VS Gevoel <span class="pill p-bad">werkt niet</span></div><div class="track"><div class="fill" style="width:54.4%"></div></div><div class="val">€92,16</div></div>
+    <div class="row"><div class="lbl">Early Access <span class="pill p-bad">meting klopt niet</span></div><div class="track"><div class="fill" style="width:28%"></div></div><div class="val">€47,46</div></div>
+    <div class="row"><div class="lbl">BE Gripsok vs Sportsok <span class="pill p-none">te weinig data</span></div><div class="track"><div class="fill" style="width:20.3%"></div></div><div class="val">€34,45</div></div>
+    <div class="row"><div class="lbl">3-pack-actie <span class="pill p-none">te weinig data</span></div><div class="track"><div class="fill" style="width:10.7%"></div></div><div class="val">€18,20</div></div>
+  </div>
+  <div class="scroll"><table>
+    <thead><tr><th>Campagne</th><th>Uitgaven</th><th>Linkklikken</th><th>Kosten per klik</th><th>In winkelwagen</th><th>Kosten per winkelwagen</th><th>Aankopen</th><th>Omzet</th><th>ROAS</th></tr></thead>
+    <tbody>
+      <tr><td class="name">NL Rugby / Voetbal / Product</td><td>€169,51</td><td>168</td><td>€1,01</td><td>12</td><td>€14,13</td><td>2</td><td>€89,75</td><td>0,53</td></tr>
+      <tr><td class="name">Product VS Gevoel</td><td>€92,16</td><td>750</td><td>€0,12</td><td>0</td><td>geen</td><td>0</td><td>€0</td><td>0</td></tr>
+      <tr><td class="name">Early Access</td><td>€47,46</td><td>22</td><td>€2,16</td><td>11</td><td>€4,31</td><td>1</td><td>€22,95</td><td>0,48</td></tr>
+      <tr><td class="name">BE Gripsok vs Sportsok</td><td>€34,45</td><td>31</td><td>€1,11</td><td>0</td><td>geen</td><td>0</td><td>€0</td><td>0</td></tr>
+      <tr><td class="name">3-pack-actie</td><td>€18,20</td><td>6</td><td>€3,03</td><td>1</td><td>€18,20</td><td>0</td><td>€0</td><td>0</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section aria-labelledby="h-trechter">
+  <h2 id="h-trechter">Waar mensen afhaken</h2>
+  <p class="muted">Per 100 mensen die op de advertentie klikken: hoeveel er de pagina zien, iets in de winkelwagen doen en kopen.</p>
+  <div class="scroll"><div class="funnel" role="table">
+    <div class="h" role="columnheader">Campagne</div><div class="h">Klikken</div><div class="h">Zien pagina</div><div class="h">In winkelwagen</div><div class="h">Kopen</div>
+    <div class="c">NL Rugby / Voetbal / Product</div>
+    <div class="cell"><b>100</b><div class="mini"><span style="width:100%"></span></div></div>
+    <div class="cell"><b>54</b><div class="mini"><span style="width:54%"></span></div></div>
+    <div class="cell"><b>7</b><div class="mini"><span style="width:7%"></span></div></div>
+    <div class="cell"><b>1,2</b><div class="mini"><span style="width:1.2%"></span></div></div>
+    <div class="c">Product VS Gevoel</div>
+    <div class="cell"><b>100</b><div class="mini"><span style="width:100%"></span></div></div>
+    <div class="cell"><b>73</b><div class="mini"><span style="width:73%"></span></div></div>
+    <div class="cell"><b>0</b><i>3 bekijken product</i></div>
+    <div class="cell"><b>0</b></div>
+    <div class="c">BE Gripsok vs Sportsok</div>
+    <div class="cell"><b>100</b><div class="mini"><span style="width:100%"></span></div></div>
+    <div class="cell"><b>35</b><div class="mini"><span style="width:35%"></span></div></div>
+    <div class="cell"><b>0</b></div>
+    <div class="cell"><b>0</b></div>
+    <div class="c">Early Access</div>
+    <div class="cell"><b>100</b><div class="mini"><span style="width:100%"></span></div></div>
+    <div class="cell"><b>18</b><div class="mini"><span style="width:18%"></span></div></div>
+    <div class="cell"><b>50</b><i>meer dan paginabezoek</i></div>
+    <div class="cell"><b>4,5</b></div>
+  </div></div>
+  <p class="small muted">De 3-pack-actie staat er niet in: 6 klikken is te weinig. Bij Early Access komen meer mensen in de winkelwagen dan er de pagina zien. Dat kan niet, dus de meting telt daar ook mensen mee die de advertentie alleen zagen of al eerder op de site waren.</p>
+</section>
+
+<section aria-labelledby="h-waarom">
+  <h2 id="h-waarom">Waarom de ene beter werkt</h2>
+  <div class="insights">
+    <div class="insight">
+      <h3>Meta zoekt wat je vraagt</h3>
+      <p>Product VS Gevoel was ingesteld op klikken en paginabezoek. Meta vond dus de goedkoopste klikkers: €0,12 per klik, 750 klikken, 0 keer in de winkelwagen. Twee derde van de vertoningen liep via Audience Network, apps van derden met toevallige klikken. Rugby / Voetbal / Product is ingesteld op winkelwagen. Minder klikken, maar 12 winkelwagens en 2 aankopen.</p>
+    </div>
+    <div class="insight">
+      <h3>Sok en prijs geven winkelwagens, sfeer niet</h3>
+      <p>"Wat houdt je nog tegen?" haalde de goedkoopste winkelwagens van de campagne: 4 voor €15,91, €3,98 per stuk. De sok staat groot in beeld, met de doorgestreepte prijs, vier bezwaren met antwoord en één knop. Sfeerbeelden waarop de sok klein of wazig is, halen wel klikken maar nauwelijks winkelwagens. Dat zag je in oktober al: "Lars Merk gevoel" had 9,7% klikratio en 0 winkelwagens.</p>
+    </div>
+    <div class="insight">
+      <h3>De eerlijke vergelijking is pas één dag oud</h3>
+      <p>Tot 22 november 13:48 stond in Rugby / Voetbal / Product per ongeluk alleen Lifestyle voetbal live. Daardoor ging €97,98 naar die ene advertentie. Sinds alle 11 live staan, verdeelt Meta het geld anders: 46% naar de groep Product en 30% naar Lifestyle voetbal, en op 23-11 kreeg Lifestyle voetbal nog maar €0,97. Over welke advertentie wint, valt na anderhalve dag nog niets te zeggen.</p>
+    </div>
+    <div class="insight">
+      <h3>Deels klopt de meting niet</h3>
+      <p>Early Access is ingesteld op registraties, maar er is geen enkele registratie gemeten. De aankopen die Meta meldt, zijn mailbestellingen die Meta zichzelf toerekent omdat de koper de advertentie zag. Meta's ROAS zegt daarom weinig. Kijk in Ads Manager naar de attributie "7 dagen na klikken" om te zien wat echt via een klik kwam.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-camp">
+  <h2 id="h-camp">Per campagne</h2>
+  <p class="muted">Op volgorde van wat het meeste zegt. De beelden zijn de versies die nu live staan. Alle advertenties zijn op 23-11 opnieuw opgeslagen, dus een deel van de cijfers hoort bij een eerdere versie.</p>
+
+  <article class="camp">
+    <div class="camp-head">
+      <h3>NL Rugby / Voetbal / Product</h3>
+      <div class="figs"><span><b>€169,51</b> uitgaven</span><span><b>12</b> in winkelwagen</span><span><b>2</b> aankopen volgens Meta, beide via de mail</span><span>doel: winkelwagen</span></div>
+    </div>
+    <div class="two">
+      <div><div class="lbl-s">Goed</div><ul class="list">
+        <li>De enige campagne met genoeg data. €14,13 per winkelwagen.</li>
+        <li>Reels en Stories zijn per klik 30 tot 40% goedkoper dan de feed.</li>
+        <li>De groep Product haalt de goedkoopste winkelwagens, vooral door "Wat houdt je tegen".</li>
+      </ul></div>
+      <div><div class="lbl-s">Slecht</div><ul class="list">
+        <li>Van 12 winkelwagens kwam geen enkele aankoop via een klik. De 2 aankopen die Meta meldt, kwamen via de Early Access-mail.</li>
+        <li>Van 8 tot en met 19 november gaf de campagne niets uit, en tot 22-11 13:48 stond alleen Lifestyle voetbal live. De campagne draait dus pas sinds 22-11 zoals bedoeld.</li>
+        <li>54% van het geld gaat naar mensen van 45 jaar en ouder. Kijk of dat de koper is die je wilt.</li>
+      </ul></div>
+    </div>
+    <div>
+      <div class="lbl-s">Uitgaven per dag</div>
+      <div class="rows">
+        <div class="row"><div class="lbl">7 november <span class="muted small">alleen Lifestyle voetbal</span></div><div class="track"><div class="fill dim" style="width:27%"></div></div><div class="val">€14,88</div></div>
+        <div class="row"><div class="lbl">20 november <span class="muted small">alleen Lifestyle voetbal</span></div><div class="track"><div class="fill dim" style="width:72.7%"></div></div><div class="val">€40,01</div></div>
+        <div class="row"><div class="lbl">21 november <span class="muted small">alleen Lifestyle voetbal</span></div><div class="track"><div class="fill dim" style="width:78.3%"></div></div><div class="val">€43,09</div></div>
+        <div class="row"><div class="lbl">22 november <span class="muted small">alle 11 live vanaf 13:48</span></div><div class="track"><div class="fill" style="width:100%"></div></div><div class="val">€55,06</div></div>
+        <div class="row"><div class="lbl">23 november <span class="muted small">tot de peiling, dag van de mail</span></div><div class="track"><div class="fill" style="width:35.4%"></div></div><div class="val">€19,49</div></div>
+      </div>
+      <p class="small muted" style="margin-top:10px">Sinds 22-11 13:48 (€74,55): groep Product 46%, Lifestyle voetbal 30%, de andere zes samen 24%. Op 23-11 ging de Early Access-mail uit; winkelwagens van die dag komen deels uit de mail.</p>
+    </div>
+    <div class="ads">
+      <div class="ad"><img src="img/wat_houdt_je_tegen.jpg" alt="Advertentie Wat houdt je nog tegen: zwarte sok, vier bezwaren met antwoord, 3 paar €44,95"><div class="t"><b>Wat houdt je tegen</b><span class="pill p-good">beste</span></div><div class="k">€15,91 · 20 klikken · 4 winkelwagen · 2 aankopen volgens Meta (via mail)</div><p>Hoogste klikratio (2,7%) en goedkoopste winkelwagens van de campagne, al vallen 3 van de 4 op de maildag. Sok groot, prijsanker €53,85 naar €44,95, bewijs (3500+, 4,6) en één knop. Spreekt de twijfel van iemand die al bijna koopt.</p><div class="fix"><b>Aanpassen:</b> niets aan het idee. Maak een 9:16-versie. Controleer "Gedragen door jouw favoriete topsporters" tegen het feitenbestand.</div></div>
+      <div class="ad"><img src="img/alles_beweegt.jpg" alt="Advertentie Alles beweegt, jouw voet niet: voetballer op trainingsveld"><div class="t"><b>Lifestyle voetbal</b><span class="pill p-warn">twijfel</span></div><div class="k">€120,72 · 117 klikken · 8 winkelwagen · 0 aankopen</div><p>€97,98 daarvan kwam toen dit de enige live advertentie was. Met de andere ernaast kreeg hij 30%, en op 23-11 bijna niets. Sterke kop, maar de sok is een klein wit vlak naast een felle schoen. Je ziet geen grip en geen prijs.</p><div class="fix"><b>Aanpassen beeld:</b> dichter op de voet zodat de gripzones te zien zijn, en een regel met "3 paar €44,95" onderin.</div></div>
+      <div class="ad"><img src="img/niet_elke_sok.jpg" alt="Advertentie Niet elke sok houdt je vast: vergelijking HÏ Grip tegen gewone sok"><div class="t"><b>Vergelijking</b><span class="pill p-none">niet getest</span></div><div class="k">€2,34 · 2 klikken</div><p>Zelfde recept als de winnaar: product, vergelijking, prijsanker. Kreeg maar €2,34 en is dus nooit echt getest.</p><div class="fix"><b>Aanpassen:</b> beeld laten zo, wel budget geven in de nieuwe opzet.</div></div>
+      <div class="ad"><img src="img/checklist_voetbal.jpg" alt="Advertentie Vink hem af: checklist voor de wedstrijd met de sok als laatste vakje"><div class="t"><b>Checklist voetbal</b><span class="pill p-none">niet getest</span></div><div class="k">€0,95 · 1 klik</div><p>Slim: de sok is het enige vakje dat nog niet is afgevinkt. Dat open vakje trekt (Zeigarnik-effect). Kreeg geen budget.</p><div class="fix"><b>Aanpassen beeld:</b> de checklist mag groter, en de sok zelf moet in beeld. Nu zie je alleen schoenen.</div></div>
+      <div class="ad"><img src="img/checklist_rugby.jpg" alt="Advertentie Vink hem af, rugbyversie in de kleedkamer"><div class="t"><b>Checklist rugby</b><span class="pill p-none">te weinig</span></div><div class="k">€4,56 · 6 klikken · 2,1% klikratio</div><p>Goede klikratio voor een koude doelgroep. Het rode kaartje valt op, maar bedekt het beeld.</p><div class="fix"><b>Aanpassen beeld:</b> zet de sok in het onderste derde van het beeld, waar nu een leeg zwart vlak zit.</div></div>
+      <div class="ad"><img src="img/geef_geen_meter.jpg" alt="Advertentie Geef geen meter weg: zwart-witte wazige rugbyfoto"><div class="t"><b>Lifestyle rugby</b><span class="pill p-none">te weinig</span></div><div class="k">€4,09 · 6 klikken · 2,6% klikratio</div><p>Klikt goed, maar de sok is in de wazige zwart-witfoto niet als sok te herkennen. Zelfde valkuil als "More Grip".</p><div class="fix"><b>Aanpassen beeld:</b> een scherpe uitsnede van voet en sok in de hoek, of een foto waar de sok wel scherp is.</div></div>
+      <div class="ad"><img src="img/nooit_meer.jpg" alt="Advertentie Nooit meer schuiven, glijden, blaren met doorgestreepte woorden"><div class="t"><b>Nooit meer</b><span class="pill p-bad">zwak</span></div><div class="k">€14,64 · 12 klikken · 0 winkelwagen</div><p>Veel tekst en de doorgestreepte woorden zijn op een telefoon lastig te lezen. Het probleem is wel herkenbaar.</p><div class="fix"><b>Aanpassen beeld:</b> één woord doorstrepen in plaats van drie, en de prijs toevoegen. Lage prioriteit.</div></div>
+      <div class="ad"><img src="img/founders_voetbal.jpg" alt="Advertentie brief van de founders aan de voetballer"><div class="t"><b>Founders voetbal</b><span class="pill p-none">niet getest</span></div><div class="k">€2,01 · 3 klikken</div><p>Een brief vraagt om lezen, maar in de feed scrolt iemand in een halve seconde. Het verhaal is sterk, alleen niet op deze plek.</p><div class="fix"><b>Aanpassen:</b> gebruik de brief voor mensen die de site al kennen. Voor koud publiek: twee regels en de handtekening.</div></div>
+      <div class="ad"><img src="img/founders_rugby.jpg" alt="Advertentie brief van de founders aan de rugbyspeler"><div class="t"><b>Founders rugby</b><span class="pill p-bad">zwak</span></div><div class="k">€4,29 · 1 klik · 0,36% klikratio</div><p>Laagste klikratio van de campagne. Zelfde reden als de voetbalversie.</p><div class="fix"><b>Aanpassen:</b> zie Founders voetbal.</div></div>
+    </div>
+  </article>
+
+  <article class="camp">
+    <div class="camp-head">
+      <h3>Early Access (Performance Days)</h3>
+      <div class="figs"><span><b>€47,46</b> uitgaven</span><span><b>11</b> in winkelwagen</span><span><b>1</b> aankoop volgens Meta (via mail)</span><span>doel: registratie</span><span>stopt 23-11 16:00</span></div>
+    </div>
+    <div class="two">
+      <div><div class="lbl-s">Wat er gebeurt</div><ul class="list">
+        <li>Het doel in Meta is registratie, maar er is geen registratie gemeten. Meta stuurt dus blind.</li>
+        <li>Het goedkoopste winkelwagencijfer (€4,31), maar 11 winkelwagens op 4 paginabezoeken kan niet. Waarschijnlijk telt Meta bezoekers mee die de advertentie alleen zagen.</li>
+        <li>Duurste vertoningen van alles (€21,06 per 1000).</li>
+      </ul></div>
+      <div class="ad" style="max-width:260px"><img src="img/early_access.jpg" alt="Advertentie HÏ Performance Days, meld je aan voor de early access, verdubbel jouw order"><div class="fix"><b>Aanpassen beeld:</b> "Verdubbel jouw order" zegt niet wat je krijgt, en het aanbod staat niet in het feitenbestand. Schrijf het voordeel concreet uit. Het omlijnde vak lijkt een knop maar is het niet; gebruik de pill met pijltje.</div></div>
+    </div>
+  </article>
+
+  <article class="camp">
+    <div class="camp-head">
+      <h3>BE Gripsok vs Sportsok</h3>
+      <div class="figs"><span><b>€34,45</b> uitgaven</span><span><b>31</b> klikken</span><span><b>0</b> in winkelwagen</span><span>doel: winkelwagen</span></div>
+    </div>
+    <div class="two">
+      <div><div class="lbl-s">Wat er gebeurt</div><ul class="list">
+        <li>Maar 35% van de klikkers ziet de pagina, tegen 54% in Nederland. Er gaat iets mis tussen klik en pagina: laadtijd, doorverwijzing of de Belgische winkel. Laat dat eerst checken.</li>
+        <li>De test is één woord verschil (Gripsokken of Sportsokken) in één groep. Meta gaf 75% aan de ene. Met €10 per dag levert dat nooit een uitslag op.</li>
+        <li>0 winkelwagens is bij 31 klikken nog geen bewijs dat het niet werkt.</li>
+      </ul></div>
+      <div class="ads" style="grid-template-columns:repeat(2,1fr)">
+        <div class="ad"><img src="img/be_gripsokken.jpg" alt="Belgische advertentie Gripsokken voor elke actie"><div class="k">Gripsokken · 27 klikken</div></div>
+        <div class="ad"><img src="img/be_sportsokken.jpg" alt="Belgische advertentie Sportsokken voor elke actie"><div class="k">Sportsokken · 4 klikken</div></div>
+      </div>
+    </div>
+    <div class="fix small"><b>Aanpassen beeld:</b> "Beperkte voorraad" mag alleen als de voorraad echt beperkt is; anders eruit. Er staat geen prijs en geen product in beeld, alleen een been. Voeg "3 paar €44,95" toe en laat de grip zien.</div>
+  </article>
+
+  <article class="camp">
+    <div class="camp-head">
+      <h3>3-pack-actie</h3>
+      <div class="figs"><span><b>€18,20</b> uitgaven</span><span><b>6</b> klikken</span><span><b>1</b> in winkelwagen</span><span>gestart 23-11</span></div>
+    </div>
+    <p>Een dag oud, dus nog geen oordeel. Wel een probleem in de opzet: dezelfde twee advertenties staan in twee groepen in deze campagne, en dezelfde doelgroep wordt ook al bediend door Rugby / Voetbal / Product. Je biedt dan tegen jezelf.</p>
+    <div class="ads">
+      <div class="ad"><img src="img/3pack.jpg" alt="Advertentie 3 pack €44,95 met drie witte sokken"><div class="t"><b>3 pack korting</b></div><div class="k">€10,25 · 3 klikken · 1 winkelwagen</div><div class="fix"><b>Beeld:</b> duidelijk prijsanker. Alleen prijs werkt vooral bij mensen die je al kennen. Beter voor de groep die al op de site was.</div></div>
+      <div class="ad"><img src="img/gewone_sok_vs.jpg" alt="Advertentie Gewone sokken vs HÏ Grip met vergelijkingstabel"><div class="t"><b>Gewone sok vs HÏ Grip</b></div><div class="k">€4,52 · 2 klikken</div><div class="fix"><b>Beeld:</b> heldere vergelijking. Zet de prijs onder de tabel, net als bij de winnaar.</div></div>
+      <div class="ad"><img src="img/more_grip.jpg" alt="Advertentie More grip, better performance met wazige rugbyspeler"><div class="t"><b>More Grip, Better Performance</b></div><div class="k">€3,43 · 1 klik</div><div class="fix"><b>Beeld:</b> slogan zonder product. De sok is niet te zien. Dit is het sfeertype dat in oktober 0 winkelwagens gaf.</div></div>
+    </div>
+  </article>
+
+  <article class="camp">
+    <div class="camp-head">
+      <h3>Product VS Gevoel (gestopt)</h3>
+      <div class="figs"><span><b>€92,16</b> uitgaven</span><span><b>750</b> klikken</span><span><b>0</b> in winkelwagen</span><span>doel: leads, geoptimaliseerd op klikken</span></div>
+    </div>
+    <div class="two">
+      <div><div class="lbl-s">De les</div><ul class="list">
+        <li>Goedkope klikken zijn geen klanten. Het doel stond op klikken en paginabezoek, dus Meta zocht klikkers.</li>
+        <li>67% van de vertoningen via Audience Network, met een klikratio van 0,4%.</li>
+        <li>De gevoelsadvertentie won op klikratio (9,7%), maar draaide op websitebezoekers: mensen die HÏ Grip al kenden. Dat is geen eerlijke vergelijking met koud publiek.</li>
+        <li>Van 546 paginabezoekers bekeken er 23 het product (4%). De landingspagina stuurde niet door naar kopen.</li>
+      </ul></div>
+      <div class="ads" style="grid-template-columns:repeat(2,1fr)">
+        <div class="ad"><img src="img/pvg_gevoel.jpg" alt="Gevoelsadvertentie Resultaat telt met rugbyspeler in een stadion"><div class="k">Gevoel · 347 klikken · 0 winkelwagen</div></div>
+        <div class="ad"><img src="img/pvg_product.jpg" alt="Productadvertentie Performance Grip Socks 2.0 met witte sok en prijs €17,95"><div class="k">Product · 97 klikken · 0 winkelwagen</div></div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section aria-labelledby="h-doen">
+  <h2 id="h-doen">Wat we aanpassen</h2>
+  <p class="muted">Op volgorde van impact. Bedragen per maand bij 30 dagen. Dit zijn voorstellen; Lars of Timo beslist en voert uit in Ads Manager.</p>
+  <div class="actions">
+    <div class="action"><div class="pr">1</div><div><h3>Beslis over het uitgavenplafond</h3><p>Nog ongeveer €376 ruimte. Verhogen, of de budgetten zo verlagen dat het plafond de pauze niet bepaalt.</p></div><div class="euro">vandaag<span>anders stopt alles over ~3 dagen</span></div></div>
+    <div class="action"><div class="pr">2</div><div><h3>Early Access laten aflopen</h3><p>Stopt vandaag om 16:00. Niet verlengen tot het aanbod in het feitenbestand staat en het doel op aankoop staat in plaats van registratie.</p></div><div class="euro">€50 per dag minder<span>€1.500 per maand</span></div></div>
+    <div class="action"><div class="pr">3</div><div><h3>Eén campagne, één groep, vier advertenties</h3><p>Rugby / Voetbal / Product terug naar één groep met Wat houdt je tegen, Vergelijking, Lifestyle voetbal (met betere uitsnede) en Checklist voetbal. €45 per dag, 7 dagen niet aanraken. Beoordelen op kosten per winkelwagen en hoeveel winkelwagens kopen.</p></div><div class="euro">blijft €45 per dag<span>€1.350 per maand</span></div></div>
+    <div class="action"><div class="pr">4</div><div><h3>3-pack-actie stoppen of samenvoegen</h3><p>Dubbele advertenties in twee groepen en dezelfde doelgroep als campagne 3. Zet de 3-pack-advertentie in stap 5.</p></div><div class="euro">€25 per dag minder<span>€750 per maand</span></div></div>
+    <div class="action"><div class="pr">5</div><div><h3>Een kleine groep voor mensen die al keken</h3><p>Websitebezoekers en winkelwagen-afhakers van de laatste 14 dagen, met Wat houdt je tegen en de 3-pack. Hier hoort ook de founders-brief. Bestaande kopers uitsluiten.</p></div><div class="euro">€10 per dag erbij<span>€300 per maand</span></div></div>
+    <div class="action"><div class="pr">6</div><div><h3>België pauzeren tot de pagina klopt</h3><p>Eerst uitzoeken waarom 65% van de klikkers de pagina niet ziet, en "Beperkte voorraad" weghalen als dat niet waar is. Daarna opnieuw, met twee groepen met gelijk budget.</p></div><div class="euro">€10 per dag minder<span>€300 per maand</span></div></div>
+    <div class="action"><div class="pr">7</div><div><h3>Beoordeel op klikken, niet op wat Meta claimt</h3><p>Zet in Ads Manager de attributie-kolom op "7 dagen na klikken" en leg de aankopen elke week naast Shopify (laatste bezoek en UTM). Geef de Early Access-mail en andere mails een eigen UTM, zodat je ziet wat de mail deed en wat de advertentie deed.</p></div><div class="euro">geen kosten<span>wekelijks 10 minuten</span></div></div>
+    <div class="action"><div class="pr">8</div><div><h3>Regels voor elk nieuw beeld</h3><p>De sok met grip zichtbaar in de eerste halve seconde. Prijs of aanbod in beeld. Eén kop per sport in plaats van overal "3500+ sporters gingen je voor". Elke advertentie ook in 9:16, omdat Reels en Stories het goedkoopst klikken.</p></div><div class="euro">geen extra budget<span>werk voor Design</span></div></div>
+  </div>
+  <p class="small muted">Samen: van €130 naar €55 per dag (€3.900 naar €1.650 per maand). Het plafond houdt het dan bijna 7 dagen in plaats van 3. Over een week opnieuw kijken. Het was een vergissing als de kosten per winkelwagen in de nieuwe opzet boven de €20 komen.</p>
+</section>
+
+<section class="note" aria-labelledby="h-zeker">
+  <h3 id="h-zeker">Hoe zeker is dit</h3>
+  <ul class="list small">
+    <li>Alleen Rugby / Voetbal / Product en Product VS Gevoel hebben genoeg data om iets te zeggen. Alles onder 30 klikken per advertentie is toeval. In Rugby / Voetbal / Product staan pas sinds 22-11 13:48 alle advertenties live, dus vergelijkingen tussen advertenties daar zijn voorlopig.</li>
+    <li>De 3 aankopen die Meta meldt, zijn in Shopify nagelopen: alle drie kwamen als laatste via de Early Access-mail binnen. Van één bestelling van €35,90 was de herkomst nog niet verwerkt; Meta telt er één van de twee bestellingen van €35,90 mee.</li>
+    <li>Beelden zijn op naam gekoppeld aan de advertenties via de Ad Library; de Meta-koppeling geeft zelf geen beelden of teksten terug.</li>
+    <li>Of de advertentie een rol speelde naast de mail (de koper zag hem eerder), is niet aan te tonen. Marge en break-even-ROAS staan niet in de vault.</li>
+  </ul>
+</section>
+
+<footer>
+  <span>Bron: Meta Ads (account HÏ Grip ADS), alleen gelezen door de Ads Agent op 23-11-2026. Beelden: Meta Ad Library. Analyse: Ads Agent en Claude.</span>
+</footer>
+</div>

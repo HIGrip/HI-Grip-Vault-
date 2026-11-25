@@ -1,7 +1,7 @@
 ---
 type: kennis
 gebied: partnership-agent
-bijgewerkt: 2026-11-09
+bijgewerkt: 2026-11-23
 ---
 
 # Voorbeelden Gevonden Organisaties — B2B Klanten (Lijn A)
@@ -44,6 +44,10 @@ bijgewerkt: 2026-11-09
 | Tennis Only | Tennis-speciaalzaak (fysieke winkel ~1000m², outlet-afdeling, eigen partnerprogramma voor clubs/scholen/trainers) | Jacques Dutilhweg 325, Prinsenland, Rotterdam | ✉️ info@tennisonly.com · 📞 +31 10 410 3453 · [tennisonly.com](https://tennisonly.com/) · partnerprogramma-contact Alexander van den Heuvel (geen rechtstreeks e-mailadres van hem gevonden) | HOOG | Grote tennisspeciaalzaak middenin de Rotterdam-regio (prio 1); eigen partnerprogramma voor clubs/scholen/trainers duidt op openheid voor zakelijke samenwerking. Geen grip-/anti-slip-sok in het assortiment gevonden in een gerichte zoekactie, maar niet uitputtend geverifieerd (tennisonly.com-pagina's kwamen niet goed terug in de zoekresultaten). **Beoordeling (2026-11-09):** ✅ voldoet — type (tennis-specialist retailer), locatie (Rotterdam, prio 1), contact direct (e-mail + telefoon) — **outreach-klaar** | Nieuw (09-11) |
 | XerxesDZB | Amateurvoetbalclub (senioren + jeugdselectieteams) | Sportpark 'Faas Wilkes', Igor Stravinskisingel 1, 3069 MA Rotterdam (Zevenkamp) | ✉️ bestuur@xerxesdzb.nl · penningmeester@xerxesdzb.nl (vragen kleding/sponsoring) · 📞 010-455 8609 · [xerxesdzb.nl](https://www.xerxesdzb.nl/) | HOOG | Actieve club met eigen kledingprogramma: jeugdselectieteams (JO13 t/m JO19) kopen verplicht een trainingspakket via de technisch coördinatoren, wedstrijdtenue (incl. kousen) wordt nu in bruikleen gegeven i.p.v. los verkocht — ruimte om grip socks toe te voegen aan het team- of selectiepakket. Eerste bruikbare voetbalkandidaat sinds voetbal kernsport werd (30-9); de ronde van 26-10 vond geen enkele amateurclub met vindbaar contact. Geen concurrentieconflict gevonden. **Beoordeling (2026-11-09):** ✅ voldoet — type (voetbalclub met bulk-kledingprogramma), locatie (Rotterdam, prio 1), contact direct (bestuur@ + penningmeester@) — **outreach-klaar** | Nieuw (09-11) |
 | Smash Tennis & Padel | Tennis/padel-lesaanbieder (lessen bij partnerverenigingen in Rijnmond/Hoeksche Waard, geen eigen locatie/pro shop) | Westzeedijk 409D, Rotterdam (kantooradres; lessen op locatie bij partnerclubs) | ✉️ info@smash-tennis-padel.nl · 📞 06-483 85 290 · [smash-tennis-padel.nl](https://www.smash-tennis-padel.nl/) | LAAG | Lesaanbieder zonder eigen pro shop of verkooppunt — geen bulk-inkoopmechanisme voor leden/klanten, alleen lessen bij andere clubs. **Beoordeling (2026-11-09):** ❌ voldoet niet — geen retailkanaal en geen eigen vereniging met leden/bulk-inkoop; past niet bij de typecriteria (retailer of club met pro shop/bulk inkoop) | Nieuw (09-11) |
+
+---
+
+> **Zoekactie (2026-11-23, Denzel-weekoverzicht):** lijst 14 dagen oud (grens van de drempel). Kernsporten in volgorde tennis/padel → voetbal → rugby, Rotterdam-regio eerst. Geen WebFetch beschikbaar in deze sessie, dus geen contactgegevens te verifiëren op siteniveau — alleen gewone websearch, geen diepere verificatie. **Geen nieuwe outreach-klare kandidaat gevonden.** Eén los signaal, nog niet toegevoegd omdat contact/locatie niet verifieerbaar was deze ronde: **Just Padel** (padel-webshop, KvK 86873342, [justpadel.com](https://justpadel.com/en/pages/padel-tennis)) — vervolgonderzoek nodig (locatie, zakelijk contact, assortimentsoverlap) voordat hij als kandidaat kan worden opgenomen. Verder niets nieuws t.o.v. de ronde van 09-11; de bekende niet-vindbare tennisretailers (Tennis-Point.nl, Sportzaak Sportief, DAKA, TennisPro.nl) zijn niet opnieuw bevraagd (geen nieuwe zoekterm beschikbaar).
 
 ---
 

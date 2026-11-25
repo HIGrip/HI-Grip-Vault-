@@ -33,7 +33,7 @@ Conclusie: dezelfde fout als bij 4.4, maar groter. De update zet Horizon-standaa
 - [x] P1 · Update-kopie 204874187079: 14 templates (page.*.json, blog.json, article.json) terugzetten uit live, alleen die bestanden pushen, daarna opnieuw testen
 - [x] P1 · Besluit: update-kopie 204874187079 live zetten na de hertest (vooraf controleren dat live sinds 16-11 niet is gewijzigd)
 - [x] P2 · Na livegang: quick add op /collections/all met beide maten testen tot in de winkelwagen
-- [ ] P3 · Instelling "winkelvoorraad tonen" (show_physical_stores) in het blok Koopknoppen uitzetten; scheelt het laden van local-pickup.js op elke productpagina
+- [x] P3 · Instelling "winkelvoorraad tonen" (show_physical_stores) in het blok Koopknoppen uitzetten; scheelt het laden van local-pickup.js op elke productpagina
 - [ ] P3 · Na livegang de snelheid van de collectiepagina opnieuw meten (5 runs) om de LCP-winst te bevestigen
 
 ## Bevindingen

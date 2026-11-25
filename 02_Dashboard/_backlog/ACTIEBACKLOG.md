@@ -5,8 +5,8 @@
 **Dit is het enige bestand dat je dagelijks hoeft te openen.**
 De dagrapporten zijn archief; hier staat wat er te doen is.
 
-Laatst bijgewerkt: 19 november 2026 (actiecontrole)
-Open: 35 · Afgerond: 16
+Laatst bijgewerkt: 24 november 2026 (actiecontrole)
+Open: 35 · Afgerond: 16 (4 afgevinkt, wordt zondag verplaatst naar AFGEROND.md)
 
 Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten elke zondag op en verplaatst ze naar `AFGEROND.md`.
 
@@ -14,29 +14,6 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 
 ## P1 — Deze week
 
-### [ ] [regressie] `/pages/terugbetalingsbeleid` heeft titel "American Express" en geen meta description (nieuw 19 okt 2026)
-**Waarom:** De pagina `/pages/terugbetalingsbeleid` (sinds deze week in de sitemap) gaat over het betalingsbeleid (H1: "Betalingsbeleid", met uitleg over betaalmethodes), maar de `<title>` die Google en browsers tonen is simpelweg "American Express" — een betaalmethode, geen paginatitel — en er is helemaal geen meta description. Dat is zowel verwarrend (het lijkt een American Express-pagina) als een gemiste SEO-kans.
-**Waar:** `/pages/terugbetalingsbeleid` — SEO-titel en meta description via Shopify admin
-**Wat:** Titel vervangen door iets herkenbaars zoals "Betalingsbeleid – HÏ Grip" en een meta description toevoegen die de beschikbare betaalmethodes samenvat.
-**Gevonden op:** 19 oktober 2026 (regressiecheck)
-
-### [ ] [regressie] Nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude beleidspagina's tegen (nieuw 28 sep 2026)
-**Waarom:** Deze week verschenen drie nieuwe pagina's (`/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`) die het besluit van Lars van 25 sep lijken te verwerken, maar dat nog niet volledig doen: `/pages/verzendbeleid` noemt nergens de verzendkosten (€4,50) of de gratis-verzenddrempel (€35); `/pages/retourbeleid` heeft de termijn wel naar 30 dagen gecorrigeerd, maar rekent nog steeds 25% herbevoorradingskosten en eist het product "ongeopend" terug — in strijd met de geest van het besluit en met het juridische risico dat al in de Compliance To-Do Lijst §4.2 staat. Tegelijk bestaan `/policies/refund-policy` (14 dagen, 25%), `/policies/shipping-policy` ("vóór 16:00") en `/policies/terms-of-service` (€4,25) gewoon door met de oude waarden: er zijn nu twee parallelle bronnen voor dezelfde informatie. De vervallen homepage-belofte "vóór 22:00 vandaag verzonden" staat via een gedeelde metafield ook op meerdere van deze pagina's.
-**Waar:** `/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`, `/policies/refund-policy`, `/policies/shipping-policy`, `/policies/terms-of-service`
-**Wat:** Eén bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de "ongeopend"-eis uit het retourbeleid halen, verzendkosten/-drempel op `/pages/verzendbeleid` zetten, en de 22:00-metatekst overal vervangen.
-**Gevonden op:** 28 september 2026 (regressiecheck)
-
-**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** in het werkthema zijn alle thema-teksten al "binnen 1 werkdag verzonden" (sport-hero, sport-proof, shop-intro, padel-onderdelen, rugby-template) en staat `page.json` op 30 dagen retour; live nog niet. Het Shopify-beleid zelf loopt via `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`.
-**Update 19 okt 2026 (regressiecheck):** grote voortgang, live. `/pages/verzendbeleid` noemt nu €4,50 en de €35-drempel; `/pages/retourbeleid` heeft geen 25%-herbevoorradingskosten en geen "ongeopend"-eis meer; `/policies/terms-of-service` toont nu ook €4,50. **Nog open:** `/policies/shipping-policy` zegt nog "vóór 16:00" (niet "binnen 1 werkdag"); `/policies/refund-policy` zegt nog "14 dagen" + 25% herbevoorradingskosten. Alleen deze twee oude `/policies/*`-pagina's resten nog. **Update 19 okt 2026 (Hermes, live gecontroleerd):** de twee `/policies/*`-pagina's zijn ook in de **Engelse** versie fout (`/en/policies/shipping-policy`: "before 16:00"; `/en/policies/refund-policy`: 14 dagen + 25% restocking). Beide NL-pagina's gebruiken de u-vorm ("uw"), tegen de tone of voice. `/en/pages/verzendbeleid` en `/en/pages/retourbeleid` zijn **niet vertaald** (inhoud is Nederlands). `/pages/verzendbeleid` en `/pages/retourbeleid` (NL) kloppen. **Wat:** Website Copy Agent schrijft concepten voor de vier policy-pagina's (NL en EN) op basis van [[Feiten & Actuele Staat]] (€4,50, gratis vanaf €35, binnen 1 werkdag, 30 dagen retour, geen herbevoorradingskosten, jij/je); Lars plakt ze in Shopify.
-### [ ] [regressie] SEO-schema-thema-wijzigingen gedeeltelijk gepusht, nog niet compleet (bijgewerkt 21 sep 2026)
-**Waarom:** Sinds 15 september is een deel van `hi-seo-schema.liquid` kennelijk live gezet: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina — niet op de productpagina, beide collectiepagina's of de blogpagina's. `ItemList` ontbreekt nog op beide collectiepagina's. `FAQPage` ontbreekt nog op de productpagina (de herschreven `product-schema.liquid` lijkt niet meegenomen). `/pages/gripsokken-voetbal` geeft nog steeds 404.
-**Waar:** `C:\Users\Test\higrip-theme` → Shopify test-thema 194761425223
-**Wat:** Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`.
-**Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)
-**Update 19 okt 2026 (regressiecheck):** live, `WebSite` staat nu op alle vier sportpagina's (padel, tennis, voetbal, rugby) naast homepage en `/en/`; ontbreekt nog op de collectie, de drie productpagina's en beide blogindexen. `ItemList` ontbreekt nog op de collectie. `FAQPage` ontbreekt nog op de drie productpagina's — wel inmiddels aanwezig op homepage en `/en/` (nieuw, lost dit punt niet op). De typo-handle `/pages/gripsokken-voetbal` (zonder "voor") geeft nog steeds 404; de echte sportpagina `/pages/gripsokken-voor-voetbal` bestaat en werkt prima.
-
-**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
-**Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
 ### [ ] 2. Reviewapp koppelen — pas dáárna AggregateRating (herzien 15 sep 2026)
 **Waarom:** Sterren in de SERP verhogen de doorklikratio zichtbaar. Maar de volgorde was omgekeerd: `snippets/product-schema.liquid` bevatte al een `aggregateRating` met een hardcoded 4,5 uit 7 beoordelingen, terwijl er geen enkele zichtbare review op de productpagina staat. Dat is precies de overtreding die hieronder gewaarschuwd werd. Bij de audit van 15 september is die node **verwijderd**; het bestand rendeerde nog niet op de remote, dus het is nooit live geweest.
 **Waar:** eerst Shopify admin (reviewapp), daarna pas `snippets/product-schema.liquid`
@@ -47,6 +24,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Inspanning:** Reviewapp een half dagdeel, schema daarna 1 uur
 
 ### [ ] 10. Conversions API (CAPI) instellen (herzien 18 sep 2026, aangevuld 25 sep 2026, 9 okt 2026)
+**Update 22 nov 2026 (weekonderhoud):** staat sinds 30 okt (23 dagen) zonder beweging op P1 — de drieweken-regel slaat aan. Niet verlaagd naar P2: de advertentiecampagne is inmiddels gestart (besluit 26 okt) en zonder CAPI loopt de meting vanaf dag 1 mis, precies het risico waarvoor dit punt op P1 staat. Wel expliciet als blokkade gemarkeerd: de resterende stap (pixel + CAPI instellen in Meta Events Manager) is mensenwerk, geen Claude-taak — Growth Radar kan dit alleen blijven volgen.
 **Update 30 okt 2026 (Growth Radar, Social):** Meta's eigen peak-season-gids (22 okt 2026) geeft het cijfer achter de 0 verkopen uit de lopende A/B-test ([[2026-10-29-ads-funnel-en-snelheid-productpagina]]): een ad set onder de leerdrempel van ~50 conversies/week draait ~28% duurder per aankoop, en de huidige campagne optimaliseert op "Betaalproces starten" — 0 resultaten, dus geen leersignaal (bevestigt het al geplande event-switch naar "Content bekijken" na 3 nov). Blijvende vuistregel voor de herstart: weekbudget ÷ (kosten per resultaat × 50) = het aantal ad sets dat het budget boven de leerdrempel houdt — bij een klein budget dus liever minder, grotere ad sets. Kies bij de Ads Manager-inrichting ook bewust één attributiemodel (standaard/incrementeel/custom) en laat die instelling daarna een maand ongewijzigd: elke wijziging herstart de leerfase.
 **Update 26 okt 2026 (besluit Team HÏ Grip, opgewaardeerd naar P1):** de advertentiebudget-beslissing waarop dit punt wachtte is genomen — deze week starten met Ads. CAPI vanaf dag 1 van de eerste campagne inrichten (zie ook punt 24, ChatGPT Ads, zelfde besluit).
 **Update 9 okt 2026:** Meta heeft begin maart 2026 click-through-attributie beperkt tot echte linkkliks; likes, shares, saves en video-views van 5+ seconden tellen sindsdien apart mee als "engage-through-attributie", standaard aan met een venster van 1 dag (Search Engine Land). Meenemen bij de Ads Manager-inrichting zodra het budget besloten is: anders telt de gerapporteerde ROAS ook niet-klik-conversies mee.
@@ -55,6 +33,18 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wachten op:** Een lopende advertentiebudget-beslissing — genomen, zie Update 26 okt 2026 hierboven.
 **Let op:** Zodra die beslissing valt, CAPI vanaf dag 1 inrichten — niet pas toevoegen als de eerste campagnes al lopen.
 **Inspanning:** half dagdeel (pixel + CAPI), zodra het ads-platform gekozen is
+
+### [ ] Besluit: negatieve voorraad op alle zes 2.0-varianten ondanks InStock-schema (nieuw 16 nov 2026, bevestigd 23 nov 2026)
+**Waarom:** Alle zes 2.0-varianten (zwart en wit, alle drie maten) tonen al minstens sinds 16 november een negatieve voorraad in de Shopify Admin API: PGSZ201 -6, PGSZ202 -23, PGSZ203 -30, PGSW201 -8, PGSW202 -15, PGSW203 -24 (cijfers 23 nov, ongewijzigd t.o.v. 16 nov). `totalInventory` toont per product 0. Tegelijk meldt het Product-schema op de productpagina's nog steeds `InStock` (al los bekend sinds 2 nov) — dat risico op een Google Shopping/Merchant Center-afkeuring (markup zegt op voorraad, werkelijkheid is uitverkocht/backorder) wordt met deze cijfers groter, niet kleiner.
+**Waar:** Shopify admin → voorraadbeheer Performance Gripsokken 2.0 Zwart/Wit; Product-schema (`availability`)
+**Wat:** Team HÏ Grip bevestigt de echte voorraadstatus (backorder toestaan, bijbestellen, of verkoop pauzeren) en past de voorraad en/of het schema daarop aan. Claude wijzigt geen voorraad of instellingen.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])
+
+### [ ] [conversietest] Collectiebeschrijving en interne links op /collections/gripsokken verdwenen (nieuw 16 nov 2026, bevestigd 23 nov 2026)
+**Waarom:** De collectiebeschrijving van 222 woorden (RUN 2, 28 sep, bevestigd live 19 okt) staat niet meer op `/collections/gripsokken`, en de pagina linkt niet meer intern naar de sportpagina's (padel, tennis, voetbal, rugby) of de vergelijkingspagina — vermoedelijk nam de volledige thema-wissel van begin november dit contentblok niet over. SEO-titel, meta description en alt-teksten van RUN 2 staan nog overeind. De huidige SEO-titel is bovendien 61 tekens (1 te lang). Dit viel samen met het verdwijnen van de positieverbetering die RUN 2 liet zien (12,1 → 7,6 in Search Console).
+**Waar:** `/collections/gripsokken` — Shopify admin
+**Wat:** Een kant-en-klare conceptbeschrijving (161 woorden, met interne links) + kortere titel (57 tekens) staan al in het Shopify-logboek `seo-routine-logboek`, sectie 9.2. `[CHECK]` in dat concept: als los contentblok of als `descriptionHtml` teruggezet, afhankelijk van hoe het huidige thema collectiebeschrijvingen rendert — een mens kiest en plakt.
+**Gevonden op:** 16 november 2026 (SEO- en conversietest, Shopify-logboek RUN 8 — nooit in de vault geregistreerd), bevestigd ongewijzigd 23 november 2026 (RUN 9, zie [[2026-11-23-seo-conversietest-run-9]])
 
 ---
 
@@ -103,7 +93,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Vaststellen of iDEAL (en Wero) actief staan in Shopify Payments; zo ja, het icoon toevoegen aan de betaalrij, zo nee, besluiten of dat gewenst is. Dit valt buiten de grens van deze routine (betaalinstellingen zijn mensenwerk).
 **Gevonden op:** 9 november 2026 (SEO- en conversietest, auditblok D)
 
-### [ ] [conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)
+### [x] [conversietest] Waardebalk-concept (`hi-pack-value-bar.liquid`) herbouwen in het huidige testthema (nieuw 9 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — het blok bestaat (4646 tekens) en staat gekoppeld als blok 'hi_pack_value_bar_seoconv4' in block_order van templates/product.json.
 **Waarom:** Het Waardebalk-blok (gratis-verzenddrempel + prijs per paar, gebouwd in RUN 3/4 van deze routine) staat alleen nog in het oude, losstaande testthema `200249901383` ("SEO TEST") — niet in de huidige unpublished kopie van het live thema (`204029296967`). Het MAIN-thema is sinds begin november volledig vervangen door een andere lijn (`203954520391`, bijgewerkt vanaf "Live website 04-11-2026"). Zonder herbouw gaat dit concept stilletjes verloren als het oude testthema ooit gepubliceerd wordt of simpelweg vergeten raakt.
 **Waar:** Shopify-thema `204029296967` (huidige unpublished kopie); bron: `blocks/hi-pack-value-bar.liquid` in testthema `200249901383`
 **Wat:** Het blok overzetten naar het huidige unpublished testthema en opnieuw koppelen aan `templates/product.json`, zodat het testplan (evaluatie 4 weken na publicatie) nog uitvoerbaar blijft zodra de eigenaar het live zet.
@@ -161,6 +152,7 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** Eenmalig bekijken welke pagina's nu al impressies krijgen in AI-functies. Bepaalt of de vraagpagina's uit punt 6 vanaf nul beginnen of al ergens zichtbaar zijn.
 **Effect:** Meetbaarheid — voorkomt dat je blind content bouwt zonder te weten wat al werkt in AI-zoekresultaten.
 **Inspanning:** 15 minuten
+**Update 23 nov 2026 (Growth Radar, [[2026-11-23-growth-radar-seo-technisch]]):** Google heeft een datalogbug in dit rapport bevestigd voor 9-11 november 2026, die impressies in die dagen kunstmatig liet dalen. Lees een eventuele dip rond die data niet als een echte terugval.
 
 ### [ ] 18. "Grip socks" consolideren — vier eigen URL's concurreren om dezelfde term (nieuw 25 sep 2026)
 **Waarom:** Search Console-meting: de zoekterm "grip socks" (112 vertoningen/7 dagen, 613/28 dagen) rankt afwisselend via `/en/collections/gripsokken`, `/collections/gripsokken`, `/collections/all` en `/`, zonder dat één pagina domineert. De gemiddelde positie voor de hele term (10,3) is zwakker dan wat de sterkste pagina alleen zou moeten kunnen halen — kannibalisatie.
@@ -185,7 +177,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Wat:** SERP-titel en meta description herschrijven zodat ze de zoekintentie dekken (waarschijnlijk een sportkeuze-/overzichtspagina); nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
 **Gevonden op:** 30 september 2026 (Search Console & rankings)
 
-### [ ] 21. [search-console] Titel/meta van de blog "hoe zorg ik voor mijn gripsokken" herschrijven, NL en EN (nieuw 8 okt 2026)
+### [x] 21. [search-console] Titel/meta van de blog "hoe zorg ik voor mijn gripsokken" herschrijven, NL en EN (nieuw 8 okt 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — NL: titel 'HÏ Grip | Hoe was ik mijn gripsokken? Op hoeveel graden?' met meta over wastemperatuur/binnenstebuiten; EN: titel 'HÏ Grip | How do I wash my grip socks? What temperature?' met bijpassende meta — beide in vraagvorm die de zoekintentie direct dekt, consistent met de CTR-verbetering (1,x% → 3,33%/2,08%) die de Search Console-notitie van 2 nov al signaleerde.
 **Waarom:** Search Console-meting (routine "Search Console & rankings", derde run): de NL-blogpagina rankt goed — gemiddelde positie 4,7 over 28 dagen — maar trok daarbij maar 1,0% CTR op 200 vertoningen. De EN-versie rankt met positie 7,8 over 154 vertoningen en trok in 28 dagen geen enkele klik (0% CTR). Net als bij `/pages/ontdek-jouw-sport` (punt 19) wijst een goede positie met vrijwel geen klikken op een titel/omschrijving die niet aansluit bij de zoekintentie.
 **Waar:** `/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` en `/en/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken` — titel en meta description via Shopify admin
 **Wat:** SERP-titel en meta description herschrijven voor beide taalversies zodat ze de zoekintentie dekken; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft.
@@ -206,7 +199,8 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Update 9 november 2026:** positie verbetert een derde meting op rij, naar 9,7 (was 11,6), op afnemend volume (18 vertoningen/7 dagen). Herstel lijkt bevestigd; oorzaak nog niet gevonden. Blijft open, geen nieuwe actie nodig.
 **Update 16 nov 2026 (Growth Radar, SEO-technisch):** Google startte 10 nov 2026 een brede kernupdate, naar schatting tot ~24 nov in rollout — de volgende meting van dit herstel valt middenin die periode en is dus extra onzeker (zie [[2026-11-16-growth-radar-seo-technisch]]).
 
-### [ ] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
+### [x] [search-console] Titel/meta van `/en` (EN-homepage) herschrijven (nieuw 2 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — Titel is nu 'HÏ Grip | Performance Grip Socks for Athletes' en de meta description noemt expliciet 'Performance grip socks ... football, tennis, padel and rugby', wat de zoekterm 'grip socks' direct dekt; de Search Console-notitie van 9 nov meldt al een CTR-verbetering (1,88% → 3,49%) voor deze pagina.
 **Waarom:** Search Console-meting (routine "Search Console & rankings"): `/en` staat op positie 7,8 met 266 vertoningen (7 dagen) maar slechts 1,88% CTR — ruim onder wat op die positie en dat volume haalbaar is, en de laagste CTR van alle pagina's in de top-15 op klikken deze week.
 **Waar:** `/en` — titel en meta description via Shopify admin (Online Store → Voorkeuren, Engelse taalinstelling)
 **Wat:** SERP-titel en meta description voor de Engelse zoekintentie herschrijven; nagaan welke zoektermen de vertoningen opleveren voordat je herschrijft (overwegend "grip socks", positie 8,7 op 106 vertoningen).
@@ -245,11 +239,52 @@ Zet een `x` tussen de haken als iets af is. De routine ruimt afgevinkte punten e
 **Inspanning:** 30 minuten, verkennend
 **Gevonden op:** 4 november 2026 (Growth Radar, AI-search)
 
+### [ ] [regressie] `/pages/terugbetalingsbeleid` heeft titel "American Express" en geen meta description (nieuw 19 okt 2026)
+**Waarom:** De pagina `/pages/terugbetalingsbeleid` (sinds deze week in de sitemap) gaat over het betalingsbeleid (H1: "Betalingsbeleid", met uitleg over betaalmethodes), maar de `<title>` die Google en browsers tonen is simpelweg "American Express" — een betaalmethode, geen paginatitel — en er is helemaal geen meta description. Dat is zowel verwarrend (het lijkt een American Express-pagina) als een gemiste SEO-kans.
+**Waar:** `/pages/terugbetalingsbeleid` — SEO-titel en meta description via Shopify admin
+**Wat:** Titel vervangen door iets herkenbaars zoals "Betalingsbeleid – HÏ Grip" en een meta description toevoegen die de beschikbare betaalmethodes samenvat.
+**Gevonden op:** 19 oktober 2026 (regressiecheck)
+**Update 22 nov 2026 (weekonderhoud):** stond sinds 19 okt (34 dagen) zonder beweging op P1 — verlaagd naar P2. Geen blokkade, simpele Shopify-admin-taak die gewoon nog niet gedaan is.
+
+### [ ] [regressie] Nieuwe verzend-/retour-/betalingspagina's zijn onvolledig en spreken de oude beleidspagina's tegen (nieuw 28 sep 2026)
+**Waarom:** Deze week verschenen drie nieuwe pagina's (`/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`) die het besluit van Lars van 25 sep lijken te verwerken, maar dat nog niet volledig doen: `/pages/verzendbeleid` noemt nergens de verzendkosten (€4,50) of de gratis-verzenddrempel (€35); `/pages/retourbeleid` heeft de termijn wel naar 30 dagen gecorrigeerd, maar rekent nog steeds 25% herbevoorradingskosten en eist het product "ongeopend" terug — in strijd met de geest van het besluit en met het juridische risico dat al in de Compliance To-Do Lijst §4.2 staat. Tegelijk bestaan `/policies/refund-policy` (14 dagen, 25%), `/policies/shipping-policy` ("vóór 16:00") en `/policies/terms-of-service` (€4,25) gewoon door met de oude waarden: er zijn nu twee parallelle bronnen voor dezelfde informatie. De vervallen homepage-belofte "vóór 22:00 vandaag verzonden" staat via een gedeelde metafield ook op meerdere van deze pagina's.
+**Waar:** `/pages/verzendbeleid`, `/pages/retourbeleid`, `/pages/terugbetalingsbeleid`, `/policies/refund-policy`, `/policies/shipping-policy`, `/policies/terms-of-service`
+**Wat:** Eén bron van waarheid kiezen (waarschijnlijk de nieuwe `/pages/*`-pagina's), de oude `/policies/*`-pagina's laten doorverwijzen of bijwerken, de 25%-herbevoorradingskosten en de "ongeopend"-eis uit het retourbeleid halen, verzendkosten/-drempel op `/pages/verzendbeleid` zetten, en de 22:00-metatekst overal vervangen.
+**Gevonden op:** 28 september 2026 (regressiecheck)
+
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** in het werkthema zijn alle thema-teksten al "binnen 1 werkdag verzonden" (sport-hero, sport-proof, shop-intro, padel-onderdelen, rugby-template) en staat `page.json` op 30 dagen retour; live nog niet. Het Shopify-beleid zelf loopt via `_uitvoer/2026-10-11-live-fixes/beleid-plakken.md`.
+**Update 19 okt 2026 (regressiecheck):** grote voortgang, live. `/pages/verzendbeleid` noemt nu €4,50 en de €35-drempel; `/pages/retourbeleid` heeft geen 25%-herbevoorradingskosten en geen "ongeopend"-eis meer; `/policies/terms-of-service` toont nu ook €4,50. **Nog open:** `/policies/shipping-policy` zegt nog "vóór 16:00" (niet "binnen 1 werkdag"); `/policies/refund-policy` zegt nog "14 dagen" + 25% herbevoorradingskosten. Alleen deze twee oude `/policies/*`-pagina's resten nog. **Update 19 okt 2026 (Hermes, live gecontroleerd):** de twee `/policies/*`-pagina's zijn ook in de **Engelse** versie fout (`/en/policies/shipping-policy`: "before 16:00"; `/en/policies/refund-policy`: 14 dagen + 25% restocking). Beide NL-pagina's gebruiken de u-vorm ("uw"), tegen de tone of voice. `/en/pages/verzendbeleid` en `/en/pages/retourbeleid` zijn **niet vertaald** (inhoud is Nederlands). `/pages/verzendbeleid` en `/pages/retourbeleid` (NL) kloppen. **Wat:** Website Copy Agent schrijft concepten voor de vier policy-pagina's (NL en EN) op basis van [[Feiten & Actuele Staat]] (€4,50, gratis vanaf €35, binnen 1 werkdag, 30 dagen retour, geen herbevoorradingskosten, jij/je); Lars plakt ze in Shopify.
+**Update 22 nov 2026 (weekonderhoud):** stond sinds 19 okt (34 dagen) zonder beweging op P1 — verlaagd naar P2. Geen blokkade: het resterende werk (conceptteksten voor de twee oude `/policies/*`-pagina's) kan de Website Copy Agent oppakken, het is alleen nog niet ingepland.
+
+### [ ] [regressie] SEO-schema-thema-wijzigingen gedeeltelijk gepusht, nog niet compleet (bijgewerkt 21 sep 2026)
+**Waarom:** Sinds 15 september is een deel van `hi-seo-schema.liquid` kennelijk live gezet: `Organization` en `BreadcrumbList` staan nu overal waar verwacht (vorige week ontbrak `BreadcrumbList` nog op 6 van de 8 URL's). Maar `WebSite` staat alleen op de homepage en de padel-pagina — niet op de productpagina, beide collectiepagina's of de blogpagina's. `ItemList` ontbreekt nog op beide collectiepagina's. `FAQPage` ontbreekt nog op de productpagina (de herschreven `product-schema.liquid` lijkt niet meegenomen). `/pages/gripsokken-voetbal` geeft nog steeds 404.
+**Waar:** `C:\Users\Test\higrip-theme` → Shopify test-thema 194761425223
+**Wat:** Nagaan welk bestand wél en welk niet is gepusht (vermoedelijk alleen een deel van `hi-seo-schema.liquid`), dan de rest alsnog pushen — inclusief `product-schema.liquid` (FAQPage) en `templates/page.gripsokken-voetbal.json`.
+**Gevonden op:** 15 september 2026 (regressiecheck), bijgewerkt 21 september 2026 (regressiecheck)
+**Update 19 okt 2026 (regressiecheck):** live, `WebSite` staat nu op alle vier sportpagina's (padel, tennis, voetbal, rugby) naast homepage en `/en/`; ontbreekt nog op de collectie, de drie productpagina's en beide blogindexen. `ItemList` ontbreekt nog op de collectie. `FAQPage` ontbreekt nog op de drie productpagina's — wel inmiddels aanwezig op homepage en `/en/` (nieuw, lost dit punt niet op). De typo-handle `/pages/gripsokken-voetbal` (zonder "voor") geeft nog steeds 404; de echte sportpagina `/pages/gripsokken-voor-voetbal` bestaat en werkt prima.
+
+**Update 12 okt 2026 (werkthema, [[2026-10-12-werkthema-vs-live]]):** ItemList staat in het werkthema alleen in de nieuwe shop- en vergelijksecties (`sh-1`, `vg-1`); Organization.url via `shop.url` in `header.liquid`. WebSite en FAQPage op de productpagina en de voetbaltemplate staan ook in het werkthema nog niet. Niet live.
+**Update 12 okt 2026 (verouderd-check):** het pad `C:\Users\Test\higrip-theme` en test-thema 194761425223 zijn verouderd. Het werkthema is nu 201133490503 ('AI website workspace 2.0'), live is 201132507463. Pull altijd vers met `shopify theme pull`.
+**Update 22 nov 2026 (weekonderhoud):** stond sinds 19 okt (34 dagen) zonder beweging op P1 — verlaagd naar P2. Geen blokkade: pushen van de resterende schema-bestanden is een reguliere Design Agent-taak, alleen nog niet ingepland.
+
+### [ ] Besluit: `higripsportswear.com` bevestigen als bewust internationaal domein (nieuw 23 nov 2026)
+**Waarom:** De regressiecheck van vandaag ontdekte dat `higripsportswear.com` bestaat, live is (Shopify, dezelfde thema-assets `hi-sale-price.css`/`hi-headings.css`/`hi-app-fixes.css` als het hoofdthema) en als hreflang-doel staat voor AT, BE, DE, FR, IT, LU, PL, PT, RO, CH en GB op **elke** higrip.nl-pagina (homepage, producten, collectie). Dit domein staat nergens in het feitenbestand of een eerdere notitie — het is dus of een bewuste Shopify Markets-opzet voor overige EU-landen die nooit is vastgelegd, of een niet-afgestemde test die per ongeluk in de hreflang-tags is gekomen.
+**Waar:** `higripsportswear.com` (hele site) en de hreflang-tags op www.higrip.nl
+**Wat:** Lars of Timo bevestigt of dit domein bewust en actueel is. Zo ja: vastleggen in [[Feiten & Actuele Staat]] (voorlopig al genoteerd met `[CHECK]`-status) en controleren of prijzen/voorraad daar kloppen. Zo nee: hreflang-tags opschonen en het domein uitzetten of op noindex zetten.
+**Gevonden op:** 23 november 2026 (regressiecheck)
+
+### [ ] [regressie] `/pages/early-access` en `/pages/early-access-bedankt` missen een meta description (nieuw 23 nov 2026)
+**Waarom:** Beide pagina's staan deze week voor het eerst in `sitemap_pages_1.xml` (campagnepagina's voor "HÏ Performance Days", zie de lopende Ads-planning). Titels zijn aanwezig en kloppen ("Early access HÏ Performance Days – HÏ Grip" / "Early access bedankt – HÏ Grip"), maar er is geen `<meta name="description">` en geen `robots`-meta (dus standaard indexeerbaar).
+**Waar:** `/pages/early-access`, `/pages/early-access-bedankt` — Shopify admin
+**Wat:** Bevestigen of dit tijdelijke campagnepagina's zijn (dan `noindex,nofollow`, zoals de bekende `-a`/`-b`-testpagina's) of dat ze een meta description moeten krijgen voor de duur van de campagne.
+**Gevonden op:** 23 november 2026 (regressiecheck)
+
 ---
 
 ## P3 — Op de radar
 
-### [ ] [conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)
+### [x] [conversietest] Terugbetalingsbeleid-conceptteksten controleren en plakken (nieuw 9 nov 2026)
+**Bevestigd:** 24 november 2026 door actiecontrole — het beleidsveld bevat volledige retour- en betalingstekst, inclusief iDEAL, creditcard, Klarna, Bancontact en Apple Pay als betaalmethoden; de conceptteksten staan geplakt in de paginainstellingen.
 **Waarom:** SEO- en conversietest (RUN 7): concept-SEO-titel en meta description voor `/pages/terugbetalingsbeleid` staan klaar in het logboek (sluit het al openstaande punt over de ontbrekende meta description af naar concrete tekst). De tekst bevat een `[CHECK]`: ze gaat ervan uit dat iDEAL een actieve betaalmethode is, wat nog niet bevestigd is (zie het Besluit-punt over iDEAL hierboven).
 **Waar:** Shopify-pagina `seo-routine-logboek`, sectie 8.1; live pagina `/pages/terugbetalingsbeleid`
 **Wat:** Eerst de iDEAL-vraag beantwoorden, dan de conceptteksten controleren en in de paginainstellingen plakken.
@@ -321,5 +356,10 @@ Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus n
 
 **8 nov 2026:** 30 open punten (backlog, momenteel geen dubbel) — nog steeds boven de 15 uit de vuistregel, hoger dan de 29 van 1 nov door vijf nieuwe regressie-/merchant-/Shopify-punten begin november, deels tegengegaan door punt 26 (deze week door de actiecontrole bevestigd, wordt vandaag naar `AFGEROND.md` verplaatst). Geen P1-punt staat al drie weken zonder beweging: de meest gedateerde van de vijf P1-punten (de drie regressiepunten) staan op 19 oktober (20 dagen, nog net onder de grens); punt 2 (reviewapp) staat al sinds 11 oktober expliciet als blokkade gemarkeerd (wacht op een menselijke keuze); punt 10 (CAPI) staat op 30 oktober (9 dagen). De eerste samenvoegkandidaat uit alle vorige weekchecks (27 sep t/m 1 nov) is **vervallen**: punt 1 (gratis-verzendingsdrempel) is inmiddels afgerond en staat in `AFGEROND.md`, dus punt 12 (prijs per paar) staat vanaf nu op zichzelf. De tweede kandidaat blijft, verder genuanceerd op 1 nov:
 - **Punt 8 + 13 + 9**: drie losse P2/P3-punten die nog op dezelfde kanaal-/budgetkeuze wachten (VS-verzending resp. TikTok Shop NL), ongewijzigd. Punt 10 (CAPI) blijft terecht los: al op P1 en actief in uitvoering.
+Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
+Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).
+
+**22 nov 2026:** 35 open punten (backlog, geen dubbel) — nog steeds boven de 15 uit de vuistregel, hoger dan de 30 van 8 nov door vijf nieuwe regressie-/search-console-punten sinds dan. Vijf P1-punten stonden al drie weken of langer zonder beweging: de drie regressiepunten (terugbetalingsbeleid-titel, verzend/retour/beleidspagina's, SEO-schema-thema) stonden alle sinds 19 oktober (34 dagen) en zijn verlaagd naar P2 — geen van de drie is geblokkeerd, het is werk dat gewoon nog niet is opgepakt. Punt 10 (CAPI) stond sinds 30 oktober (23 dagen) en is **niet** verlaagd: de advertentiecampagne is al gestart, dus het blijft P1, maar is nu expliciet als blokkade gemarkeerd (mensenwerk in Meta Events Manager). Punt 2 (reviewapp) staat al sinds 11 oktober als blokkade gemarkeerd — ongewijzigd. De samenvoegkandidaat uit alle vorige weekchecks (27 sep t/m 8 nov) staat nog open:
+- **Punt 8 + 13 + 9**: drie losse P2/P3-punten die nog op dezelfde kanaal-/budgetkeuze wachten (VS-verzending resp. TikTok Shop NL), ongewijzigd.
 Niet zelf samengevoegd — ter beoordeling Lars via het dashboard.
 Toegang tot de dashboard-database werkte deze run (alle 7 collecties leeg, dus niets te importeren uit stap B).

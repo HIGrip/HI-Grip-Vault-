@@ -34,7 +34,7 @@ Het verkeer zakte van 340 naar **198 sessies (-41,8%)**. Dat komt vrijwel volled
 ## Acties
 
 - [ ] P2 · `/pages/gripsokken-2-0` en `/pages/gripsokken-2-1` hebben nog steeds geen meta description en geen robots-meta (indexeerbare, bijna-identieke campagnepagina's) — bevestigen of ze tijdelijk zijn (dan noindex,nofollow) of permanent (dan unieke meta's). Onveranderd t.o.v. 2 november
-- [ ] P2 · `/pages/gripsokken-2-0-a` en `-b`: eerder noindex,nofollow, nu geen robots-meta meer in de HTML en canonical naar de andere pagina (`-a` → `-2-1`, `-b` → `-2-0`). Controleren of de noindex bewust is vervangen door canonicals (kan ook via een HTTP-header lopen, die is hier niet gemeten)
+- [x] P2 · `/pages/gripsokken-2-0-a` en `-b`: eerder noindex,nofollow, nu geen robots-meta meer in de HTML en canonical naar de andere pagina (`-a` → `-2-1`, `-b` → `-2-0`). Controleren of de noindex bewust is vervangen door canonicals (kan ook via een HTTP-header lopen, die is hier niet gemeten)
 - [ ] P2 · `/pages/teamorder` mist nog een meta description (onveranderd)
 
 ## Bevindingen

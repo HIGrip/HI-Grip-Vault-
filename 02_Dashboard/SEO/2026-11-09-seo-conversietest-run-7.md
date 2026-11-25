@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "Het Waardebalk-concept (gratis-verzenddrempel + prijs per paar, gebouwd in oktober) staat alleen nog in het losstaande, verlaten testthema 200249901383 — niet in de huidige unpublished kopie van het live thema — en loopt zo het risico stilletjes te verdwijnen na de volledige thema-wissel van begin november. De diepe audit van blok D (conversie) vindt één nieuwe bevinding: iDEAL en Wero ontbreken in de betaalicoon-rij op de productpagina. RUN 2 (SEO-titels/meta's, live sinds 11 okt) laat voor /collections/gripsokken een eerste positief signaal zien; sessies en omzet zijn deze week ingestort doordat de betaalde social-campagne is afgelopen, niet door SEO."
-gerelateerd: [2026-11-09-regressiecheck, 2026-11-09-search-console, 2026-10-19-seo-conversietest-run-5]
+gerelateerd: [2026-11-09-regressiecheck, 2026-11-09-search-console]
 vervangt: []
 bronbestand: "https://admin.shopify.com/store/raqds3-tb/pages/168287895879"
 deadline: ""

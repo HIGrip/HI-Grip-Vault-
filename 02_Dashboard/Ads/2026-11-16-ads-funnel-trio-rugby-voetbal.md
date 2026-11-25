@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P2
 samenvatting: "Van tien Pinterest-ads scoren beweging tegen stilstand (Nike-poster, eventposter), probleem tegenover oplossing met chatbubbels en de vergelijking ons tegen hen het best op stoppen, helderheid en conversie; daarom is één funnel gemaakt met die drie formats als boven-, midden- en onderlaag, elk in een voetbal- en een rugbyversie. Formats die een telefoonscherm of schakelaars nabootsen zijn bewust niet gebruikt, omdat Meta nagemaakte knoppen en meldingen verbiedt; vóór livegang is toestemming nodig voor Concordia-foto IMG_0212."
-gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-16-ad-library-creatieve-analyse, 2026-11-16-ads-reverse-engineering-bewezen-elementen]
+gerelateerd: [2026-11-15-ads-campagne-zes-foto-ads-merkstijl, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-16-ads-nulmeting-en-tiktok-lessen, 2026-11-16-ad-library-creatieve-analyse, 2026-11-16-ads-reverse-engineering-bewezen-elementen, 2026-11-20-growth-radar-social]
 vervangt: []
 bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Funnel-ads-2026-11-16"
 deadline: ""

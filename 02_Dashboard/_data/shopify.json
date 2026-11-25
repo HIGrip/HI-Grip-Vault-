@@ -1,35 +1,10 @@
 {
- "bijgewerkt": "2026-11-19T03:11:24+00:00",
+ "bijgewerkt": "2026-11-24T03:24:05Z",
  "dagen": [
-  {
-   "dag": "2026-08-21",
-   "orders": 0,
-   "omzet": 0
-  },
-  {
-   "dag": "2026-08-22",
-   "orders": 0,
-   "omzet": 0
-  },
-  {
-   "dag": "2026-08-23",
-   "orders": 0,
-   "omzet": 0
-  },
-  {
-   "dag": "2026-08-24",
-   "orders": 0,
-   "omzet": 0
-  },
-  {
-   "dag": "2026-08-25",
-   "orders": 2,
-   "omzet": 158.91
-  },
   {
    "dag": "2026-08-26",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-08-27",
@@ -49,27 +24,27 @@
   {
    "dag": "2026-08-30",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-08-31",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-01",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-02",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-03",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-04",
@@ -79,62 +54,62 @@
   {
    "dag": "2026-09-05",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-06",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-07",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-08",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-09",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-10",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-11",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-12",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-13",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-14",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-15",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-16",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-17",
@@ -144,17 +119,17 @@
   {
    "dag": "2026-09-18",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-19",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-20",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-21",
@@ -164,62 +139,62 @@
   {
    "dag": "2026-09-22",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-23",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-24",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-25",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-26",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-27",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-28",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-29",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-09-30",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-01",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-02",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-03",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-04",
@@ -229,7 +204,7 @@
   {
    "dag": "2026-10-05",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-06",
@@ -239,12 +214,12 @@
   {
    "dag": "2026-10-07",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-08",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-09",
@@ -254,17 +229,17 @@
   {
    "dag": "2026-10-10",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-11",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-12",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-13",
@@ -279,12 +254,12 @@
   {
    "dag": "2026-10-15",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-16",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-17",
@@ -294,42 +269,42 @@
   {
    "dag": "2026-10-18",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-19",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-20",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-21",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-22",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-23",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-24",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-25",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-26",
@@ -339,7 +314,7 @@
   {
    "dag": "2026-10-27",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-28",
@@ -349,7 +324,7 @@
   {
    "dag": "2026-10-29",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-10-30",
@@ -359,57 +334,57 @@
   {
    "dag": "2026-10-31",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-01",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-02",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-03",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-04",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-05",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-06",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-07",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-08",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-09",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-10",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-11",
@@ -424,12 +399,12 @@
   {
    "dag": "2026-11-13",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-14",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-15",
@@ -439,26 +414,51 @@
   {
    "dag": "2026-11-16",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-17",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-18",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
   },
   {
    "dag": "2026-11-19",
    "orders": 0,
-   "omzet": 0
+   "omzet": 0.0
+  },
+  {
+   "dag": "2026-11-20",
+   "orders": 0,
+   "omzet": 0.0
+  },
+  {
+   "dag": "2026-11-21",
+   "orders": 0,
+   "omzet": 0.0
+  },
+  {
+   "dag": "2026-11-22",
+   "orders": 0,
+   "omzet": 0.0
+  },
+  {
+   "dag": "2026-11-23",
+   "orders": 4,
+   "omzet": 148.6
+  },
+  {
+   "dag": "2026-11-24",
+   "orders": 0,
+   "omzet": 0.0
   }
  ],
  "ytd": {
-  "orders": 53,
-  "omzet": 2124.35
+  "orders": 57,
+  "omzet": 2272.95
  }
 }

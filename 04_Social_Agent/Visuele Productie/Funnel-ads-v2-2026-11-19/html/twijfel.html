@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Twijfel 3-pack</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.ad { background: url(../bron/veld_vervaagd.jpg) center/cover; }
+.ad::before { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(17,17,17,.94) 0%, rgba(17,17,17,.82) 48%, rgba(17,17,17,.35) 100%),
+              linear-gradient(180deg, rgba(17,17,17,0) 55%, rgba(17,17,17,.96) 86%); }
+
+.kop { font-size: 100px; z-index: 2; word-spacing: .14em; }
+
+/* Het 3-pack breekt rechts uit het raster en staat achter de kop */
+.pack { position: absolute; left: 470px; top: 330px; width: 640px; z-index: 1;
+  filter: drop-shadow(0 30px 40px rgba(0,0,0,.55)); }
+
+/* Vier bezwaren in de woorden van de koper, elk direct weggenomen */
+.twijfels { position: absolute; left: 72px; top: 452px; width: 400px; z-index: 2; }
+.twijfel { padding: 26px 0; border-top: 1.5px solid var(--line); }
+.twijfel:first-child { border-top: 0; padding-top: 0; }
+.twijfel p { font: 500 26px/1.2 Poppins; color: var(--hi-titanium); }
+.twijfel strong { display: block; margin-top: 8px; font: 800 34px/1.15 Poppins; }
+.sterren { display: inline-flex; gap: 3px; vertical-align: -2px; margin-right: 6px; }
+.sterren b { width: 26px; height: 26px; background: var(--hi-trust); display: grid; place-items: center; }
+.sterren b.half { background: linear-gradient(90deg, var(--hi-trust) 50%, #5a5a5a 50%); }
+.sterren svg { width: 18px; height: 18px; }
+
+.prijs { position: absolute; left: 72px; top: 1150px; z-index: 2; }
+.prijs .groot { font: italic 900 72px/1 Poppins; letter-spacing: -.03em; text-transform: uppercase; }
+.prijs .groot em { font-style: inherit; color: var(--hi-yellow); }
+.prijs .klein { margin-top: 14px; font: 400 26px/1.3 Poppins; color: #d6d6d6; }
+.prijs .klein s { color: var(--hi-titanium); text-decoration-thickness: 2px; }
+.pill { z-index: 2; top: 1186px; }
+</style>
+</head>
+<body>
+<div class="ad">
+  <div class="logo" style="z-index:2"><img src="../bron/logo_mark_wit.png" alt=""><span>HÏ GRIP</span></div>
+
+  <img class="pack" src="../bron/pack3_zwart.png" alt="">
+
+  <h1 class="kop">Wat houdt je<br>nog tegen?</h1>
+
+  <div class="twijfels">
+    <div class="twijfel"><p>"Als hij niet past?"</p><strong>30 dagen retour.</strong></div>
+    <div class="twijfel"><p>"Verzendkosten?"</p><strong>Gratis vanaf €35.</strong></div>
+    <div class="twijfel"><p>"Zondag al nodig?"</p><strong>Binnen 1 werkdag verzonden.</strong></div>
+    <div class="twijfel"><p>"Werkt het echt?"</p><strong>3500+ sporters gingen je voor.</strong>
+      <p style="margin-top:12px"><span class="sterren"><b><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.5l7.1-.6z"/></svg></b><b><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.5l7.1-.6z"/></svg></b><b><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.5l7.1-.6z"/></svg></b><b><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.5l7.1-.6z"/></svg></b><b class="half"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7-6.3-3.9-6.3 3.9 1.7-7L2 9.5l7.1-.6z"/></svg></b></span>4,6 op Trustpilot</p></div>
+  </div>
+
+  <div class="prijs">
+    <div class="groot">3 paar <em>€44,95</em></div>
+    <div class="klein">€14,98 per paar in plaats van <s>€17,95</s></div>
+  </div>
+
+  <div class="pill">Shop 3-pack<i><svg viewBox="0 0 24 24" fill="none" stroke="#CCFF00" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></i></div>
+</div>
+</body>
+</html>

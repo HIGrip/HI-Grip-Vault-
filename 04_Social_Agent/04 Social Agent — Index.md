@@ -53,6 +53,9 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[04_Social_Agent/Visuele Productie/Funnel-ads-2026-11-16/COPY|Funnel-ads-2026-11-16/COPY]]
 - [[04_Social_Agent/Visuele Productie/Funnel-ads-2026-11-16/Ontwerpfilosofie|Funnel-ads-2026-11-16/Ontwerpfilosofie]]
 
+### Visuele Productie/Funnel-ads-v2-2026-11-19
+- [[04_Social_Agent/Visuele Productie/Funnel-ads-v2-2026-11-19/COPY|Funnel-ads-v2-2026-11-19/COPY]]
+
 ### Visuele Productie/Losse-ads-2026-11-15
 - [[04_Social_Agent/Visuele Productie/Losse-ads-2026-11-15/COPY|Losse-ads-2026-11-15/COPY]]
 
@@ -63,5 +66,8 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Visuele Productie/Meta-batch-2026-11/video
 - [[UGC-sceptische-sporter]]
+
+### Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19
+- [[04_Social_Agent/Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19/COPY|Rugby-checklist-kleedkamer-2026-11-19/COPY]]
 
 > Map: [[Home]]

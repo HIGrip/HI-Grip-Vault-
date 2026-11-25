@@ -1878,16 +1878,16 @@
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#0496d928": {
-   "bewijs": "Pagina bevat al een FAQ met \"pasvorm\" (6x) en \"Welke maat en kleur kies ik?\", en links naar /products/performance-gripsokken-2-0-wit en -zwart, maar \"lengte\" en specifiek \"over/onder de clubkous dragen\" komen nergens in de tekst voor — de keuzegids is dus deels, niet volledig uitgebouwd.",
-   "controle": "Inhoud van /pages/gripsokken-voor-voetbal gecontroleerd op pasvorm, maat, lengte en dragen over/onder de clubkous, plus links naar de 2.0.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pagina (200, ca. 610 woorden) heeft een FAQ over maat/kleur en een link naar de 2.0, maar geen tekst over sokhoogte/lengte/clubkous",
+   "controle": "Gecontroleerd of /pages/gripsokken-voor-voetbal uitgebouwd is tot keuzegids met pasvorm/maat/lengte/clubkous",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-11-concurrentie-seo-per-merk#17bbd9e9": {
-   "bewijs": "Meta description is nog exact: \"...In deze blog komt u alles te weten over gripsokken. Ontdek optimale grip met witte gripsokken\" — zowel de u-vorm als \"witte gripsokken\" staan er nog ongewijzigd in.",
-   "controle": "Meta description van /blogs/hi-grip/wat-zijn-gripsokken gelezen op u-vorm en \"witte gripsokken\".",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "live meta description is ongewijzigd: nog steeds 'komt u alles te weten' en 'witte gripsokken'",
+   "controle": "Gecontroleerd of de meta description van wat-zijn-gripsokken herschreven is zonder u-vorm en zonder 'witte gripsokken'",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2009,9 +2009,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-11-seo-audit-weekdelta#a37c4e83": {
-   "bewijs": "Hoofdcontent van de pagina is nog exact 85 woorden (3 founders + 1 regel per persoon); links naar /pages/over-ons en naar de 2.0-producten staan er wel, maar van een uitgebouwd oprichtersverhaal is geen sprake.",
-   "controle": "Woordaantal en inhoud van /pages/ons-verhaal gecontroleerd (oprichtersverhaal, links naar /pages/over-ons en de 2.0).",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pagina telt nog ca. 85 woorden (titel + 3 founder-quotes) zonder link naar /pages/over-ons of een 2.0-pagina",
+   "controle": "Gecontroleerd of /pages/ons-verhaal uitgebouwd is tot oprichtersverhaal met links naar over-ons en de 2.0",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2066,23 +2066,23 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "De bestemmingsblog bestaat (200), maar bevat geen enkele treffer voor 'levensduur' of 'verleng', dus de samengevoegde inhoud over levensduur-verlenging is niet aangetroffen.",
-   "controle": "/blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken opgehaald en doorzocht op 'levensduur'/'verleng'",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "live blog (ca. 160 woorden) heeft alleen Wassen/Drogen/Opslag, geen levensduur-sectie; bronblog zelf geeft 404 zonder redirect",
+   "controle": "Gecontroleerd of hoe-zorg-ik-voor-mijn-gripsokken een levensduur-sectie uit hoe-verleng-je-de-levensduur heeft opgenomen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0a106c79": {
-   "bewijs": "Artikeltekst is circa 185-400 woorden (ver onder 900-1.200) en gebruikt nog u-vorm: 77x \"u\" en 9x \"U\" in de pagina (titel \"Hoe was ik mijn gripsokken?\", meta \"...kan u terecht...uw gripsokken...u meer...\").",
-   "controle": "Lengte, taalvorm en inhoud van /blogs/hi-grip/hoe-zorg-ik-voor-mijn-gripsokken gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "live telt ca. 160 woorden met alleen Wassen/Drogen/Opslag in je-vorm, geen levensduur- of foutensectie",
+   "controle": "Gecontroleerd of de verzorgingsblog uitgebreid is naar 900-1.200 woorden met wasvoorschrift/levensduur/fouten",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "Zowel de bronblog als de genoemde doelblog geven 404; geen van beide bestaat, dus de samenvoeging is niet waarneembaar.",
-   "controle": "/blogs/hi-grip/gripsokken-tijdens-pilates-en-yoga en /waarom-gripsokken-verplicht-zijn-bij-pilates opgehaald",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide geven 404 en staan niet in sitemap_articles_1.xml; niet te controleren: blogpost bestaat niet (meer), 404 zonder redirect",
+   "controle": "Gecontroleerd of waarom-gripsokken-verplicht-zijn-bij-pilates en de pilates/yoga-bronblog bestaan",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2094,9 +2094,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#16eea17b": {
-   "bewijs": "<title>HÏ Grip | Wat zijn gripsokken? Waarom gripsokken dragen?</title>, H1 alleen \"Wat zijn gripsokken?\" (niet \"...Voordelen en verschil met gewone sokken\"); artikeltekst is nog circa 340-560 woorden, ver onder de vereiste 1.400-1.600.",
-   "controle": "Title, H1 en lengte van /blogs/hi-grip/wat-zijn-gripsokken gecontroleerd (waarom-hi-grip-gripsokken redirect hiernaartoe).",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "301 vanaf waarom-hi-grip-gripsokken werkt, maar artikel telt nog maar ca. 340 woorden en titel/H1 zijn nog de oude tekst, niet de gevraagde",
+   "controle": "Gecontroleerd of wat-zijn-gripsokken herschreven is tot 1.400-1.600 woorden met de gevraagde titel/H1",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2122,9 +2122,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
-   "bewijs": "URL geeft 404 zonder redirect (geen 301, geen Location naar /pages/over-ons); post staat ook niet meer in de bloglijst op /blogs/hi-grip.",
-   "controle": "Opgevraagd https://www.higrip.nl/blogs/hi-grip/hoe-is-hi-grip-ontstaan op 301 naar /pages/over-ons.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "URL geeft 404 (verwijderd, klopt) maar zonder Location-header/301 volgens curl -sI, redirect ontbreekt dus nog",
+   "controle": "Gecontroleerd of hoe-is-hi-grip-ontstaan verwijderd is met 301 naar /pages/over-ons",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2136,16 +2136,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
-   "bewijs": "De blog-URL geeft 404 zonder redirect; /pages/ontdek-jouw-sport bevat geen enkele link naar /pages/gripsokken-voor-* pagina's, dus de voorwaarde (\"zodra de hub naar alle sportpagina's linkt\") is ook nog niet vervuld.",
-   "controle": "Gecontroleerd of /blogs/hi-grip/voor-welke-sport-zijn-gripsokken-onmisbaar 301't naar /pages/ontdek-jouw-sport, en of die hub al naar alle sportpagina's linkt.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "URL geeft nog 404 zonder redirect, en /pages/ontdek-jouw-sport linkt nog naar geen van de /pages/gripsokken-voor-*-pagina's",
+   "controle": "Gecontroleerd of voor-welke-sport-zijn-gripsokken-onmisbaar 301't naar /pages/ontdek-jouw-sport en of die hub linkt",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#42cbed6f": {
-   "bewijs": "Geen van deze posts staat nog in de huidige 6-artikelenlijst op /blogs/hi-grip; bevestigd structureel 404 zonder 301, dus de voorgestelde lichte update is niet waarneembaar (posts bestaan niet meer live).",
-   "controle": "Gezocht naar grippatroon-, geschiedenis-, sportclubs-, krachttraining- en blaren-blog in /blogs/hi-grip.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "alle vijf geven 404 en staan niet in sitemap_articles_1.xml (die bevat nu alleen de 5 overgebleven artikelen); niet te controleren: blogposts bestaan niet (meer), 404 zonder redirect",
+   "controle": "Gecontroleerd of grippatroon/geschiedenis/sportclubs/krachttraining/blaren nog bestaan",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2178,23 +2178,23 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a248abc5": {
-   "bewijs": "Geen tennis- of padel-artikel aanwezig in de huidige 6-artikelenlijst op /blogs/hi-grip.",
-   "controle": "Gezocht naar tennis/padel-artikelen in de bloglijst van /blogs/hi-grip.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen van de geteste slugs bestaat, sitemap_articles_1.xml bevat geen tennis/padel-artikel",
+   "controle": "Gecontroleerd of nieuwe tennis/padel-blogs live staan",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a2c621ef": {
-   "bewijs": "Blessureblog staat niet in de huidige 6-artikelenlijst op /blogs/hi-grip; dit is een van de bevestigd structureel 404-geworden oude blogs, dus herschrijven/laten nakijken is niet waarneembaar.",
-   "controle": "Gezocht naar het blessureblog in de bloglijst van /blogs/hi-grip en losse URL-poging.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen van de kandidaat-URL's bestaat op higrip.nl, niet in sitemap_articles_1.xml; niet te controleren: blogpost bestaat niet (meer), 404 zonder redirect",
+   "controle": "Gecontroleerd of de blessureblog bestaat en herschreven is met bronnen per claim",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#a40f4929": {
-   "bewijs": "Pilatesblog staat niet in de huidige 6-artikelenlijst; bevestigd structureel 404 (oude blog verdwenen zonder 301), opfrissen dus niet waarneembaar.",
-   "controle": "Gezocht naar het pilatesblog in de bloglijst van /blogs/hi-grip.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen pilatesblog aanwezig in sitemap of live op /blogs/hi-grip; niet te controleren: blogpost bestaat niet (meer), 404 zonder redirect",
+   "controle": "Gecontroleerd of er een pilatesblog bestaat die opgefrist kan zijn",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2220,16 +2220,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
-   "bewijs": "/pages/gripsokken-voor-rugby bestaat nu (200, titel/H1 \"Gripsokken voor rugby | HÏ Grip\") — de voorwaarde is dus vervuld — maar er staat nog geen rugby-artikel in de 6-artikelenlijst op /blogs/hi-grip, dus het eigenlijke blog is nog niet geschreven.",
-   "controle": "Gecontroleerd of /pages/gripsokken-voor-rugby bestaat (de voorwaarde) en of er daarna een rugby-blogpost is verschenen.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "de pagina bestaat (200, in sitemap), maar er staat nog geen rugby-artikel in sitemap_articles_1.xml of op /blogs/hi-grip",
+   "controle": "Gecontroleerd of /pages/gripsokken-voor-rugby bestaat (voorwaarde) en of de rugbyblog er is",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "Beide bronartikelen geven 404, en de genoemde doelblog (hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures) geeft zelf ook 404 — die blog zit niet in de huidige set van 6 artikelen, dus de samenvoeging is niet gebeurd.",
-   "controle": "/blogs/hi-grip/waarom-gripsokken-het-verschil-maken, /meer-grip-meer-vertrouwen en de blessure-doelblog opgehaald",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "404 op de doelblog en beide bronblogs; geen van de drie in sitemap_articles_1.xml (nu 5 artikelen); niet te controleren: blogpost bestaat niet (meer), 404 zonder redirect",
+   "controle": "Gecontroleerd of hoe-gripsokken-kunnen-helpen-bij-het-voorkomen-van-blessures de twee bronblogs bevat",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4613,9 +4613,9 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-regressiecheck-handmatig#0d5d5f82": {
-   "bewijs": "Zelfde bevinding als op 9 nov: beide pagina's hebben nog geen <meta name=\"description\"> en geen <meta name=\"robots\"> — onveranderd.",
-   "controle": "HTML-head van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 opnieuw gecheckt op meta description en robots-meta.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "zelfde bevinding als 9 nov: beide pagina's missen nog meta description en robots-meta, onveranderd",
+   "controle": "HTML-head van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 opnieuw gecheckt",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5548,9 +5548,9 @@
    "uitkomst": "open"
   },
   "backlog#072e2482": {
-   "bewijs": "Beide pagina's (200) hebben alleen een canonical naar zichzelf; geen <meta name=\"description\"> en geen <meta name=\"robots\"> in de HTML — onveranderd t.o.v. 2 nov.",
-   "controle": "HTML-head van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 gecheckt op meta description en robots-meta.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide pagina's geven 200 maar missen nog meta description en robots-meta, ongewijzigd t.o.v. 2 nov",
+   "controle": "HTML-head van /pages/gripsokken-2-0 en /pages/gripsokken-2-1 gecontroleerd op meta description en robots-meta",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5569,9 +5569,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#14c6ceb5": {
-   "bewijs": "Beide URL's geven 404; geen bewijspagina rond eigen meetdata gevonden onder deze namen.",
-   "controle": "Gecontroleerd op /pages/onderzoek en /pages/waarom-hi-grip-werkt (de in de actie genoemde voorbeeld-URL's).",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide geven 404, geen bewijspagina rond eigen meetdata gevonden",
+   "controle": "/pages/onderzoek en /pages/waarom-hi-grip-werkt opgevraagd als voorbeeld-URL's",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5583,16 +5583,16 @@
    "uitkomst": "open"
   },
   "backlog#2e5c5044": {
-   "bewijs": "79 <img>-tags op https://www.higrip.nl/, waarvan nog steeds 13 met alt=\"\" — ongewijzigd.",
-   "controle": "Alle <img>-tags op de homepage geteld en alt=\"\" exact geteld met een Python-regex op het originele (niet-geflatte) bestand.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "nog steeds exact 13x alt=\"\" (van 78 alt-attributen totaal), ongewijzigd",
+   "controle": "alle alt-attributen op de homepage geteld met een Python-regex op het originele bestand",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#32925dba": {
-   "bewijs": "/blogs/intern geeft 200, canonical naar zichzelf, geen noindex-meta, en staat nog in https://www.higrip.nl/sitemap_blogs_1.xml (lastmod 2026-02-18).",
-   "controle": "/blogs/intern opgehaald (publiek bereikbaar?) en gecheckt op robots/noindex; sitemap_blogs_1.xml gecheckt op vermelding.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pagina geeft 200 zonder robots-meta en staat nog in de sitemap",
+   "controle": "/blogs/intern opgehaald en sitemap_blogs_1.xml gecontroleerd op vermelding en noindex",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5618,16 +5618,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#49691d90": {
-   "bewijs": "Pagina (200) heeft een canonical naar zichzelf maar geen <meta name=\"description\"> in de HTML.",
-   "controle": "HTML-head van /collections/all gecheckt op meta description.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pagina (200, titel 'Producten – HÏ Grip') heeft nog geen meta description",
+   "controle": "HTML-head van /collections/all gecontroleerd op meta description",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#4ec33dde": {
-   "bewijs": "Beide pagina's (200 OK) hebben geen <meta name=\"description\"> en ook geen noindex/robots-meta; nog niet gekozen/opgelost.",
-   "controle": "Meta description en robots-meta van /pages/early-access en /pages/early-access-bedankt gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide pagina's geven 200 maar hebben geen meta description en geen robots-meta",
+   "controle": "meta description en robots-meta van /pages/early-access en /pages/early-access-bedankt gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5639,9 +5639,9 @@
    "uitkomst": "open"
   },
   "backlog#886d413d": {
-   "bewijs": "https://www.higrip.nl/blogs/trends/de-twee-grootste-problemen-in-de-sportwereld-het-antwoord-van-4-ondernemende-sporters geeft nog een directe 404 (geen 301); /blogs/trends toont vandaag 'Nog geen artikelen in deze blog. Kom snel terug.' — beide onveranderd.",
-   "controle": "Statuscode van de oude artikel-URL opgevraagd en /blogs/trends op inhoud gecheckt.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "de oude URL geeft nog een directe 404 (geen 301) en /blogs/trends toont 0 artikel-links",
+   "controle": "statuscode van de oude blogartikel-URL opgevraagd en inhoud van /blogs/trends opgehaald",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5654,16 +5654,16 @@
    "uitkomst": "gedaan"
   },
   "backlog#8d435a25": {
-   "bewijs": "De URL redirect (301) naar het samengevoegde artikel /blogs/hi-grip/wat-zijn-gripsokken; er is geen eigen titel/meta voor 'waarom-hi-grip-gripsokken' meer herschreven, en de CTR voor deze zoekterm bleef volgens de meting van 9 nov op 0% (37 vertoningen) — geen gerichte herschrijving voor deze pagina zichtbaar.",
-   "controle": "URL /blogs/hi-grip/waarom-hi-grip-gripsokken opgevraagd om te zien of titel/meta van deze pagina zelf zijn herschreven.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geeft 301 naar wat-zijn-gripsokken, geen eigen herschreven titel/meta zichtbaar",
+   "controle": "URL /blogs/hi-grip/waarom-hi-grip-gripsokken opgevraagd",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#8f8db388": {
-   "bewijs": "Beide collectiepagina's hebben nog een canonical naar zichzelf (geen onderlinge doorverwijzing of gekozen primaire pagina); geen consolidatie zichtbaar.",
-   "controle": "Canonical tags van /collections/gripsokken en /en/collections/gripsokken vergeleken op consolidatie.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide geven 200 en bestaan los naast elkaar zonder gekozen primaire pagina of onderlinge doorverwijzing",
+   "controle": "/collections/gripsokken en /en/collections/gripsokken opgehaald en op consolidatie/canonical gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5697,10 +5697,10 @@
    "uitkomst": "gedaan"
   },
   "backlog#a2e3406d": {
-   "bewijs": "geen van deze termen komt voor; de prijs-per-paar-weergave is nog niet gebouwd.",
-   "controle": "snippets/product-information-content.liquid doorzocht op 'paar', '/paar', 'price_per' en de genoemde pack-prijzen.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "komt 0 keer voor, geen prijs per paar getoond naast de pack-selector",
+   "controle": "productpagina met pack-selector doorzocht op 'per paar'",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "backlog#aa17cef9": {
@@ -5718,10 +5718,10 @@
    "uitkomst": "handmatig"
   },
   "backlog#b1876b36": {
-   "bewijs": "1.0 heeft nog steeds 'Geschikt voor padel, voetbal, hockey, fitness en meer' (geen tennis/rugby); 2.0 zwart en wit hebben nog steeds de <code>-tag met 'Voetbalsokken met grip, ook perfect voor tennis, basketbal, fitness en pilates' in plaats van de gevraagde zin.",
-   "controle": "descriptionHtml van de 3 producten opgehaald en vergeleken met de gevraagde tekst.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "1.0 noemt nog geen tennis/rugby en 2.0 zwart/wit bevatten nog letterlijk de storende <code>-tag zonder padel/rugby",
+   "controle": "descriptionHtml van de 3 productpagina's opgehaald via de Shopify Admin API en vergeleken met de gevraagde tekst",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
@@ -5732,23 +5732,23 @@
    "uitkomst": "open"
   },
   "backlog#b81d4226": {
-   "bewijs": "Geen video-element of video-embed gevonden op beide productpagina's (0 treffers op <video|youtube|vimeo|.mp4|wistia).",
-   "controle": "Productpagina's performance-gripsokken-2-0-zwart en -wit doorzocht op <video>, youtube/vimeo-embeds of .mp4-referenties.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "0 treffers op alle drie pagina's, geen productvideo aanwezig",
+   "controle": "3 productpagina's doorzocht op video/youtube/vimeo-embeds en .mp4/.webm-referenties",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#bf53be16": {
-   "bewijs": "Titel 'HÏ Grip | Ontdek Jouw Sport' en meta 'Ontdek welke HÏ Grip gripsokken passen bij jouw sport...' zijn generiek; volgens de laatste handmatige meting (9 nov, vault) bleef de CTR op deze pagina 0% ondanks een goede positie (3,5-4,1) — geen teken van een effectieve herschrijving.",
-   "controle": "Titel en meta description van /pages/ontdek-jouw-sport gelezen en vergeleken met de laatste Search Console-CTR voor deze pagina.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "titel en meta zijn nog generiek, geen zichtbare herschrijving",
+   "controle": "titel en meta description van /pages/ontdek-jouw-sport gelezen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "backlog#c51a9579": {
-   "bewijs": "Titel is al vervangen door 'Betalingsbeleid | HÏ Grip' (niet meer 'American Express'), maar er is nog steeds geen <meta name=\"description\"> aanwezig — deels gedaan.",
-   "controle": "Titel en meta description van /pages/terugbetalingsbeleid gelezen.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "titel is al gewijzigd naar 'Betalingsbeleid | HÏ Grip' (niet meer American Express), maar er is nog geen meta description — deels gedaan, dus nog open",
+   "controle": "titel en meta description van /pages/terugbetalingsbeleid gelezen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -5774,9 +5774,9 @@
    "uitkomst": "handmatig"
   },
   "backlog#d6d843f3": {
-   "bewijs": "Pagina (200) heeft een canonical naar zichzelf maar geen <meta name=\"description\"> in de HTML.",
-   "controle": "HTML-head van /pages/teamorder gecheckt op meta description.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "pagina (200, titel 'Teamorder – HÏ Grip') heeft nog geen meta description",
+   "controle": "HTML-head van /pages/teamorder gecontroleerd op meta description",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },

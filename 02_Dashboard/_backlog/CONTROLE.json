@@ -2101,16 +2101,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "404, geen 301 → /blogs/trends; gelijk aan het bevestigde structurele patroon van 404-zonder-redirect bij oude blogs.",
-   "controle": "https://www.higrip.nl/blogs/hi-grip/waarom-sporten-meer-is-dan-bewegen opgehaald",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "directe 404, geen 301 naar /blogs/trends",
+   "controle": "/blogs/hi-grip/waarom-sporten-meer-is-dan-bewegen opgehaald zonder redirect te volgen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "404, geen 301 → /blogs/trends; gelijk aan het bevestigde structurele patroon van 404-zonder-redirect bij oude blogs.",
-   "controle": "https://www.higrip.nl/blogs/hi-grip/sportvoeding opgehaald",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "directe 404, geen 301 naar /blogs/trends",
+   "controle": "/blogs/hi-grip/sportvoeding opgehaald zonder redirect te volgen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2199,16 +2199,16 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "Beide pagina's linken nog naar href=\"/collections/all\", niet naar /collections/gripsokken.",
-   "controle": "CTA-links op de blogindex (/blogs/hi-grip) en op een artikel (hoe-zorg-ik-voor-mijn-gripsokken) gecontroleerd",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide tonen uitsluitend nog href=/collections/all, niet /collections/gripsokken",
+   "controle": "CTA-links gecontroleerd op de blogindex en op een artikel",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "waarom-hi-grip-gripsokken geeft 301 → wat-zijn-gripsokken (dus precies omgekeerd aan het gevraagde doel-URL in deze actie), en gripsokken-de-toekomst-van-jouw-sportoutfit geeft gewoon 404 zonder samenvoeging/redirect.",
-   "controle": "/blogs/hi-grip/wat-zijn-gripsokken, /waarom-hi-grip-gripsokken en /gripsokken-de-toekomst-van-jouw-sportoutfit opgehaald",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "waarom-hi-grip-gripsokken redirect naar wat-zijn-gripsokken (omgekeerde richting van de actie), en de derde URL geeft een directe 404 zonder samenvoeging of redirect",
+   "controle": "3 betrokken blog-URL's opgehaald en redirectstatus gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2234,9 +2234,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "Geen van de geprobeerde krachttraining-slugs op /blogs/hi-grip/ bestaat nog (404); de krachttraining-blog zelf valt onder de bevestigde groep oude blogs die structureel 404 geven, dus de gevraagde linkvervanging binnen die blog is niet te verifiëren/is niet relevant meer.",
-   "controle": "Geprobeerd de krachttraining-blog op higrip.nl te vinden om de link-vervanging te checken",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "niet te controleren: de krachttraining-blogpost is nergens op de site te vinden (behoort tot de groep oude blogs die 404 geven)",
+   "controle": "gezocht naar de krachttraining-blogpost via blogindex en URL-gissingen",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2415,9 +2415,9 @@
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#ff235e99": {
-   "bewijs": "Announcementbar toont 'DE KEUZE VAN 3500+ SPORTERS' en de Over-ons-kop toont '...naar 3500+ sporters' — dus niet gecorrigeerd náár 3000+ zoals deze actie vraagt (de site volgt inmiddels het latere besluit 3500+, behalve de tijdlijn-mijlpaal juni 2026 die terecht op 3000+ staat). Presets gripsocks2-proof/sport-proof zijn niet publiek te checken.",
-   "controle": "Announcementbar en hoofdkop op homepage en /pages/over-ons gecontroleerd op '3500+' vs '3000+'",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "announcementbar en Over-ons-kop tonen nog '3500+', niet gewijzigd naar 3000+ (de tijdlijn-mijlpaal zelf toont al 3000+); let op: dit botst nu met het vastgestelde besluit dat 3500+ (behalve de mijlpaal) de juiste waarde is",
+   "controle": "announcementbar en de kop boven de tijdlijn op /pages/over-ons gecontroleerd op 3500+ vs 3000+",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2443,9 +2443,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
-   "bewijs": "Meta/og/twitter-description is 22 woorden ('Performance gripsokken gemaakt...verzonden.'); het Organization-schema heeft helemaal geen 'description'-veld; geen alinea van ~58 woorden met een grip-regel+dubbele punt gevonden.",
-   "controle": "Meta-description, JSON-LD Organization-schema en lopende tekst op de homepage doorzocht op een ~58-woorden alinea met dubbele punt",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "meta description is 22 woorden, schema heeft geen description-veld, geen alinea van ~58 woorden met dubbele punt gevonden",
+   "controle": "meta description en JSON-LD Organization-schema van de homepage doorzocht op de gevraagde alinea",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3091,9 +3091,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "Het telefoonnummer +31 6 24 56 65 47 staat nog in <a href=\"mailto:info@higrip.nl\">, dus nog mailto: in plaats van tel:.",
-   "controle": "Footerblok text_TxDeYL op homepage www.higrip.nl bekeken",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "nummer staat nog in een mailto:-link, niet in een tel:-link",
+   "controle": "footer gecontroleerd op het telefoonnummer",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3309,12 +3309,12 @@
    "uitkomst": "dubbel"
   },
   "2026-11-02-search-console#a736f1e2": {
-   "bewijs": "zelfde bevinding (titel/meta /en herschrijven) als backlogpunt",
-   "controle": "vergelijking met open acties",
-   "dubbel_van": "backlog#8a590428",
-   "gecontroleerd": "2026-11-03",
-   "methode": "geen",
-   "uitkomst": "dubbel"
+   "bewijs": "titel is nu 'HÏ Grip | Performance Grip Socks for Athletes' en de meta noemt football/tennis/padel/rugby, in lijn met de gevraagde herschrijving",
+   "controle": "/en opgehaald en titel + meta description gelezen",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
+   "sinds": "2026-11-25",
+   "uitkomst": "gedaan"
   },
   "2026-11-02-seo-conversietest-run-6#e3f90559": {
    "bewijs": "zelfde bevinding (meta description ontbreekt gripsokken-2-0/2-1) als backlogpunt",
@@ -3697,9 +3697,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "De pagina toont nog het ongekwalificeerde 'Naadloze afwerking, geen blaren✓' en elders 'minder risico hebben op blessures of blaren', zonder bronvermelding of nuancering; dit is niet aangepast sinds de eerdere audit die de blessure-/blarenclaim al signaleerde (10-11), dus niet getoetst/aangepast.",
-   "controle": "Productpagina 2.0 doorzocht op de claim 'geen blaren' en getoetst aan de claimregels in het feitenbestand.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "toont nog ongewijzigd 'minder risico hebben op blessures of blaren' zonder nuancering of bronvermelding",
+   "controle": "productpagina 2.0 doorzocht op de blarenclaim",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3896,10 +3896,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "de kop staat nog op \"title\": \"Cart\" (niet vertaald naar Nederlands); de dubbele-prijsweergave kon niet los bevestigd worden maar de kop alleen al toont dat de actie nog niet is afgerond.",
-   "controle": "templates/cart.json van het live thema opgehaald.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "lege status toont al Nederlandse kop; de cart-regel met artikel rendert clientside via JS en is met curl niet volledig te verifiëren, dus niet bevestigd als gedaan",
+   "controle": "/cart opgehaald (leeg en met testartikel) om kop en prijsweergave te checken",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#17cdcf53": {
@@ -3924,10 +3924,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
-   "bewijs": "niet te controleren: Shopify's cookiebanner is een ingebouwde privacy-banner zonder eigen themabestand; de knopstyling is niet op te halen via de Admin API.",
-   "controle": "gezocht naar een thema-bestand voor de cookiebanner (snippets/cookie-banner.liquid).",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "niet te controleren: JS-rendering nodig",
+   "controle": "geen curl-controle mogelijk, cookiebanner-knopstyling is pas na JS-rendering zichtbaar",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#8cd9e63b": {
@@ -4121,10 +4121,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#5ce01a10": {
-   "bewijs": "'Geen doorglijden' en 'Je voet staat vast' staan nog woordelijk op alle drie de sportlandingspagina's; de doorgestreepte prijs klopt wel (compareAtPrice €19,95 op de 2.0-varianten).",
-   "controle": "templates/page.sport-padel.json, page.sport-voetbal.json en page.sport-rugby.json opgehaald en de compareAtPrice van de 2.0-varianten gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "alle drie tonen nog letterlijk 'Geen doorglijden' en 'Je voet staat vast'; de doorgestreepte prijs is al correct (€19,95 naar €17,95)",
+   "controle": "content van 3 sportlandingspagina's doorzocht op de genoemde teksten en de doorgestreepte prijs",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-ads-live-check-website#7e2cdff7": {
@@ -4149,10 +4149,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#a8aa19f2": {
-   "bewijs": "★★★★½ (4,5 sterren) staat nog zonder bronvermelding en de slogan 'Meer grip. Meer controle. Meer winnen.' staat nog ongewijzigd.",
-   "controle": "custom-liquid-blok 'Social proof' in templates/product.json van het live thema opgehaald.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "4,5 sterren staan nog zonder Trustpilot-bronvermelding, slogan staat ongewijzigd",
+   "controle": "productpagina gecontroleerd op sterren, slogan en bronvermelding",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-ads-live-check-website#ec609e8b": {
@@ -4620,9 +4620,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#811c3f82": {
-   "bewijs": "Nog steeds geen <meta name=\"description\"> aanwezig — onveranderd.",
-   "controle": "HTML-head van /pages/teamorder opnieuw gecheckt op meta description.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "geen meta description aangetroffen, bevestigt dat de pagina nog geen meta description heeft",
+   "controle": "HTML-head van /pages/teamorder gecontroleerd op een meta description-tag",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },

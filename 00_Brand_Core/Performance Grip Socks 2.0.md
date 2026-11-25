@@ -234,17 +234,17 @@ Alles in `OneDrive - Hogeschool Rotterdam\…\HÏ Grip WORKSPACE\`:
 
 De site noemt daarnaast **Hogeschool Rotterdam** in "vertrouwd door".
 
-**Reviews van higrip.nl** (opgehaald 15 sep 2026 van de 2.0-productpagina; sitegemiddelde **4,5 / 5**):
+**Reviews van higrip.nl** (opgehaald 15 sep 2026 van de 2.0-productpagina; sitegemiddelde **4,5 / 5**). **Namen en quotes gecorrigeerd op 24-11-2026** naar de live testimonials op de 2.0-productpagina: in de eerste versie stonden quotes bij de verkeerde naam. Sterren per review niet opnieuw gecontroleerd ([CHECK]).
 
 | Reviewer (alleen voornaam + initiaal, AVG) | ★ | Quote |
 |---|---|---|
-| Rox | 5 | "je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil" |
-| Adri N. | 5 | "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming." |
-| Priscilla V. | 5 | "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop" |
-| Lydia | 5 | "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken." |
-| Dick | 5 | "Sokken zitten uitstekend en sterke stof met goede grip. Snelle levering." |
-| Eveline | 5 | "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!" |
-| Sharon B. | 4 | "Snel geleverd en goede kwaliteit!" |
+| Adri N. (31 aug 2025) | [CHECK] | "De sokken doen echt wat er beloofd word, je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil. Kwaliteit ook super na diverse keren wassen. Een top product dus." |
+| Rox (18 dec 2025) | [CHECK] | "Het zijn goede sokken met een tof design en de website werkt handig. Ik heb meteen 3 paar gekocht voor kerstcadeaus. Iedereen blij." |
+| Priscilla V. (8 mei 2025) | [CHECK] | "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming." |
+| Lydia (13 jan 2026) | [CHECK] | "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop en wil het iedereen aanbevelen die kwalitatief goede sokken wil hebben." |
+| Dick (12 jun 2025) | [CHECK] | "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken. Snelle levering." |
+| Eveline (30 jan 2026) | [CHECK] | "leuk jong hip bedrijf, wat de klantbehoefte echt begrijpt en fijne, bruikbare pilates sokken op de markt heeft gebracht van goede kwaliteit!" |
+| Sharon B. (4 sep 2025) | [CHECK] | "Wat een top service! Snel geleverd en goede kwaliteit!" |
 
 > [!note] 4,5 of 4,6? — besloten 2-10-2026
 > Op drukwerk, in de pitch en in ads gebruiken we **4,6 ★ met bron Trustpilot** (besluit Lars). Het sitegemiddelde

@@ -4295,6 +4295,18 @@
   "wat_claude_doet": "een analyse van de nul-omzetweken (checkout, betaalmethoden, tracking) voorbereiden in een notitie",
   "wat_jij_doet": "besluiten of en hoe dit verder onderzocht of opgelost wordt"
  },
+ "2026-11-24-landingspaginas-live-ads-message-match#0b45e6c9": {
+  "beoordeeld": "2026-11-25",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "het besluit nemen welke landingspagina-versie als basis dient en dat laten uitvoeren"
+ },
+ "2026-11-24-landingspaginas-live-ads-message-match#d92e2723": {
+  "beoordeeld": "2026-11-25",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "de A/B-test opzetten en uitvoeren in Meta Ads Manager na livegang van de landingspagina's"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

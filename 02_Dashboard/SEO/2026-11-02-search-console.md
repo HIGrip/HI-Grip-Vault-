@@ -31,7 +31,7 @@ Zesde meting van deze routine. Beide vensters laten herstel zien na de terugval 
 
 ## Acties
 
-- [ ] P2 · [search-console] Titel/meta van `/en` (EN-homepage) herschrijven: positie 7,8, 266 vertoningen (7 dagen), maar 1,88% CTR
+- [x] P2 · [search-console] Titel/meta van `/en` (EN-homepage) herschrijven: positie 7,8, 266 vertoningen (7 dagen), maar 1,88% CTR
 - [ ] P2 · Zie bijgewerkt backlogpunt 27: positieherstel `/pages/gripsokken-voor-voetbal` (NL) volgende week bevestigen
 
 ## Bevindingen

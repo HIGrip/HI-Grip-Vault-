@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-24T04:02:54+01:00",
+ "laatste_run": "2026-11-25T04:02:52+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -2031,10 +2031,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "niet te controleren: dit is een wijziging aan de interne SEO-regressiecheck-procedure in de vault, geen publieke URL-check op higrip.nl.",
-   "controle": "Beoordeeld of dit een publieke site-check is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "geen regel over verouderde EN-vertalingen gevonden in de SEO-routine",
+   "controle": "`02_Dashboard/Routines/SEO.md` doorzocht op een wekelijkse EN-vertalingscheck",
+   "gecontroleerd": "2026-11-25",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
@@ -2115,10 +2115,10 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#308272a7": {
-   "bewijs": "Beide URL's geven 404 (geen artikel, geen 301); geen van de genoemde voetbalartikelen staat in de huidige 6-artikelenlijst op /blogs/hi-grip.",
-   "controle": "Gecontroleerd op /blogs/hi-grip/welke-gripsokken-bestaan (oude URL), /blogs/hi-grip/beste-gripsokken-voetbal (nieuwe URL) en op \"Afgeknipte voetbalsokken\"/KNVB-artikel in de bloglijst.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#382a06c0": {
@@ -2129,10 +2129,10 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "niet te controleren: dit is een Search Console/google_data.py-dataopdracht (nameting na 4/8 weken), geen publieke URL-check op higrip.nl.",
-   "controle": "Beoordeeld of dit een publieke site-check is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
@@ -2150,10 +2150,10 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#4b1810bd": {
-   "bewijs": "welke-maat-gripsokken en waarom-glijdt-je-voet-in-je-schoen volgen het format correct (bv. \"Welke maat gripsokken heb ik nodig? Maattabel | HÏ Grip\", 55 tekens), maar wat-zijn-gripsokken (\"HÏ Grip | Wat zijn gripsokken?...\"), hoe-zorg-ik-voor-mijn-gripsokken (\"HÏ Grip | Hoe was ik...\") en de-wetenschap-achter-gripsokken (\"HÏ Grip | Zijn gripsokken...\") hebben \"HÏ Grip\" nog vooraan in plaats van achteraan.",
-   "controle": "Titelformaat (zoekwoord vooraan, \"| HÏ Grip\" achteraan, max 60 tekens) gecontroleerd op alle 6 huidige blogs.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
@@ -2171,9 +2171,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#9602726a": {
-   "bewijs": "Titel is nog letterlijk \"Zijn gripsokken wetenschappelijk bewezen beter?\" en de tekst/meta bevat \"bewezen beter\" 3x; Apps et al. 2022 staat met doi (10.1080/02640414.2022.2080163), maar Friedl et al. 2023 staat alleen als kale bronvermelding zonder de voorgeschreven \"+9,3% bij afremmen\"-formulering.",
-   "controle": "Claims en titel/tekst van /blogs/hi-grip/de-wetenschap-achter-gripsokken gecontroleerd op \"bewezen beter\" en de Apps/Friedl-formulering.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "'bewezen beter' komt nog 3x voor op de pagina; Friedl wordt wel genoemd maar de formulering is nog niet volledig volgens de regel in het feitenbestand",
+   "controle": "wetenschapsblog (de-wetenschap-achter-gripsokken) opgehaald op 'bewezen beter' en bronvermelding",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2213,10 +2213,10 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#bcecbd1c": {
-   "bewijs": "/blogs/trends: <title>HÏ Grip | Trendblogs</title>; /blogs/hi-grip: <title>HÏ Grip | Algemene blogs</title>; beide hebben nog hetzelfde H1 \"Ga door waar anderen stoppen\", geen zoekwoord-titel of nieuwe intro.",
-   "controle": "Title en H1 van /blogs/trends en /blogs/hi-grip gecontroleerd op zoekwoord i.p.v. \"Trends\"/\"Algemeen\".",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#debc3db4": {
@@ -2249,9 +2249,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-12-blogs-stappenplan#f73bcbeb": {
-   "bewijs": "3500+ sporters staat overal correct; maar hoe-zorg-ik-voor-mijn-gripsokken gebruikt nog 77x \"u\"/9x \"U\"/3x \"uw\" in plaats van \"je\", dus de feitencheck/toonzetting is niet overal doorgevoerd.",
-   "controle": "Feiten (3500+, maten, verzending, retour, je-vorm) gecontroleerd op de 5 bestaande kernblogs.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "3500+ sporters staat consistent op alle 4 gecontroleerde artikelen (geen 3000+ meer), maar eerder gemelde u-vorm-passages zijn niet opnieuw als opgelost bevestigd",
+   "controle": "4 overgebleven blogartikelen gecontroleerd op 3500+ sporters en losse feiten",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -2330,10 +2330,10 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: event-tracking-opzet en een 4-weken-baseline zijn analytics-configuratie/data, niet zichtbaar via een publieke site-fetch.",
-   "controle": "Gezocht of de genoemde analytics-events (sportkiezer-klik, 360°-interactie, scrolldiepte) en baseline publiek te verifiëren zijn",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#5ab8bae9": {
@@ -2538,10 +2538,10 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "niet te controleren: dit is vault-documentatie (specificaties 1.0 vastleggen), geen Shopify-status.",
-   "controle": "gecontroleerd of dit een waarneembare Shopify-status is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "geen apart vastgelegd specificatieoverzicht van de 1.0 gevonden buiten de bestaande prijs/matentabel",
+   "controle": "gezocht op 1.0-specificaties in de vault (feitenbestand en Performance Grip Socks 2.0.md)",
+   "gecontroleerd": "2026-11-25",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#fa6b14e8": {
@@ -2820,10 +2820,10 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "niet te controleren: dit vereist Search Console-data (impressies/klikken/intentie), geen publieke site-check; op de site bestaan beide URL's gewoon naast elkaar zonder dat dat iets zegt over het onderzoek.",
-   "controle": "Gezocht of koopintentie-vergelijking /pages/collection vs /collections/gripsokken publiek vast te stellen is",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-27-seo-audit-higrip-nl#ae873b6b": {
@@ -2863,37 +2863,37 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
-   "bewijs": "niet te controleren: die specifieke datum valt buiten het opvraagbare venster van het script (alleen lopende periodes via --dagen, geen vast datumbereik); checkbox (regel 36) en het weekoverzicht van 23-11 tonen het punt nog als open, geen verklaring gevonden in de vault.",
-   "controle": "Nagegaan of de sessiepiek van 26-27 oktober (92 sessies, 0 aankopen) verklaard is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "niet te controleren: SERP-intentie beoordelen vereist het bekijken van de zoekresultaten zelf, dat valt buiten GA4/GSC-cijfers en de vault; checkbox (regel 41) staat nog op \"[ ]\".",
-   "controle": "Nagegaan of de SERP-intentie voor \"gripsokken\" en \"grip socks\" is gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "keyevents-aanroep toont welke events als key event staan (o.a. purchase, qualify_lead, sinds 30-8-2026), maar consent-instellingen zijn niet uitleesbaar via dit script; checkbox (regel 38) staat nog op \"[ ]\".",
-   "controle": "Gecontroleerd of key events en consent-instellingen zijn nagegaan.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "checkbox (regel 40) staat nog op \"[ ]\"; actuele GA4-data (28d) toont de VS nog als grootste niet-NL-land (168 sessies, engagementRate 16,7%), passend bij eerder vermoed botverkeer, maar geen vastgestelde conclusie in de vault.",
-   "controle": "Nagegaan of het VS-verkeer (84 sessies, 0 aankopen) is onderzocht.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
-   "bewijs": "checkbox (regel 35) staat nog op \"[ ]\"; actuele GA4-data (27 okt-23 nov) toont nog steeds Unassigned-verkeer (48 sessies) en landingspagina \"(not set)\" (27 sessies) — geen aanwijzing dat filters al actief zijn; datastream-filterconfiguratie zelf is niet uitleesbaar via het script.",
-   "controle": "Gecontroleerd of GA4-filters voor intern/preview/admin-verkeer zijn ingesteld.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2905,38 +2905,38 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "checkbox (regel 39) staat nog op \"[ ]\"; actuele GA4-data toont /en nog als apart landingspad (19 sessies/28d) zonder brondetail in dit rapport; geen vervolgnotitie met een verklaring gevonden.",
-   "controle": "Nagegaan of de herkomst van het /en-verkeer (23 sessies, 0 carts) is uitgezocht.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "checkbox (regel 44) staat nog op \"[ ]\"; 4 weken na 28 oktober is pas circa 25 november (vandaag 24 nov) en er is geen nieuwe, vergelijkbare auditnotitie gevonden.",
-   "controle": "Nagegaan of het GA4/SEO-conversieonderzoek van 28 oktober al na 4 weken herhaald is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "niet te controleren vanuit GA4/GSC/vault: vereist Shopify-ordergegevens; checkbox in 02_Dashboard/Website-CRO/2026-10-28-ga4-seo-conversie-audit-higrip-nl.md (regel 34) staat nog op \"[ ]\".",
-   "controle": "Nagegaan of de meetvalidatie (GA4 vs. Shopify-orders) is uitgevoerd.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "De redirect zelf werkt: hi-grip-gripsokken-1 → 301 → hi-grip-gripsokken → 200 performance-gripsokken (consistent met Feiten r48); het eigenlijke onderzoekspunt (waarom dit niet in GA4 organic terugkomt) vereist GA4-toegang en is niet via de publieke site te controleren.",
-   "controle": "Redirectketen van /products/hi-grip-gripsokken-1 getest; gezocht of het GA4-verschil publiek te verklaren is",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "checkbox (regel 42) staat nog op \"[ ]\"; geen branded/non-branded-rapport gevonden in 02_Dashboard.",
-   "controle": "Nagegaan of het branded-vs-non-branded-rapport in GSC is gemaakt.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#e37d3694": {
@@ -2970,10 +2970,10 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
-   "bewijs": "niet te controleren: webPixel geeft 'Access denied' (ontbrekende read_pixels-scope) en er staat geen gtag/GA4-script direct in layout/theme.liquid.",
-   "controle": "webPixel-veld opgevraagd en layout/theme.liquid doorzocht op gtag/GA4.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#9b3c5fb6": {
@@ -3195,10 +3195,10 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "niet te controleren: een PageSpeed Insights-meting (mobiel/desktop) kan niet met curl worden uitgevoerd of nagebouwd vanuit alleen de HTML.",
-   "controle": "Gecheckt of een nieuwe PSI-meting via curl alleen uit te voeren is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#afba67a5": {
@@ -3367,16 +3367,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "geen vermelding gevonden in `04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md` (laatste wijziging 16-11), ongewijzigd.",
-   "controle": "Gecontroleerd of de \"hook-eerst\"-regel is toegevoegd aan de video-stijlgids.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "de regel staat alleen nog in de onderzoeksnotitie zelf, niet toegevoegd aan een echte stijlgids",
+   "controle": "gezocht op 'cuttempo'/'hook-eerst' buiten de eigen onderzoeksnotitie",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "geen vermelding gevonden in `04_Social_Agent/Visuele Productie/Editing Stijl Gids Video.md` (laatste wijziging 16-11), ongewijzigd.",
-   "controle": "Gecontroleerd of match-cut als derde toegestane uitzondering in de video-stijlgids is benoemd.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "de uitzondering staat alleen nog in de onderzoeksnotitie zelf, niet toegevoegd aan een echte stijlgids",
+   "controle": "gezocht op 'match-cut' buiten de eigen onderzoeksnotitie",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3882,11 +3882,11 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#d2b128f5": {
-   "bewijs": "de notitie zelf heeft een correcte navigatieregel (\"> Map: [[Waar staat wat]]\", regel 19), maar er is geen latere commit of vervolgnotitie die een Operations-controle van navigatieregel/vault_nav bevestigt; laatste wijziging aan het bestand is van 16-11.",
-   "controle": "Gecontroleerd of Operations de navigatieregel en vault_nav van deze notitie en de domeinbestanden heeft gecontroleerd.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
-   "uitkomst": "open"
+   "bewijs": "niets; dit is een controletaak voor Operations, geen site-/shopify-/vault-feit om hier af te vinken",
+   "controle": "actie wijst expliciet naar de Operations Agent-routine, niet naar de actiecontrole",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
+   "uitkomst": "handmatig"
   },
   "2026-11-05-performance-days-marketingplan#fb5b8ace": {
    "bewijs": "Open procesvraag wie de rechten per uiting controleert, mensenwerk",
@@ -4163,9 +4163,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
-   "bewijs": "niet te controleren: geen specifieke doel-URL gegeven in de actie en geen pagina met deze exacte koppen aangetroffen tijdens de steekproef van gecontroleerde pagina's.",
-   "controle": "Gezocht naar een landingspagina met de koppen \"Geen doorglijden\" en \"Je voet staat vast\".",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "'Geen doorglijden' en 'Je voet staat vast' staan nog letterlijk op de pagina, niet omgezet",
+   "controle": "rugbylanding (/pages/gripsokken-voor-rugby) opgehaald op de genoemde claims",
+   "gecontroleerd": "2026-11-25",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4254,10 +4254,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
-   "bewijs": "niet te controleren: dit vraagt een Events Manager-checklist en een vergelijking van landingspagina-weergaven vs. ViewContent, data uit Meta Ads Manager/GA4 en pixel-debugging, niet zichtbaar in de publieke site-HTML.",
-   "controle": "Gecheckt of dit via een publieke URL op higrip.nl te verifiëren is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "niet te controleren: Meta Events Manager-checklist en LPV-ViewContent-cijfers zijn alleen in Meta Ads Manager te zien, geen connector beschikbaar",
+   "controle": "Meta Events Manager-data is geen vault- of site-bron",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#16465235": {
@@ -4651,17 +4651,17 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-search-console-handmatig#b57358d7": {
-   "bewijs": "niet te controleren: dit vraagt een site-check (daadwerkelijke titel/meta-wijziging), buiten mijn bucket; actuele GSC-cijfers (25 okt-21 nov) tonen juist een verslechtering: CTR 0,29% (was 0,84%), positie 9,6 (was 6,8), dus geen aanwijzing voor een verbetering door een herschrijving.",
-   "controle": "Gecontroleerd of titel/meta van /en/products/performance-gripsokken al herschreven zijn.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "gsc",
+   "bewijs": "titel is nog generiek 'Grip Socks | Maximum Grip for Every Sport | HÏ Grip' en er is geen meta description aanwezig",
+   "controle": "title en meta description van /en/products/performance-gripsokken opgehaald",
+   "gecontroleerd": "2026-11-25",
+   "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-search-console-handmatig#c24ec193": {
-   "bewijs": "niet te controleren: positie- en vertoningsdata komen uit Search Console, niet van de publieke site.",
-   "controle": "Gecheckt of dit via een publieke URL op higrip.nl te verifiëren is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-11-09-seo-conversietest-run-7#47fddbfa": {
@@ -4841,9 +4841,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
-   "bewijs": "niet te controleren: dit is een lokale MCP-serverinstelling op iemands eigen machine, niet zichtbaar of te verifiëren vanuit deze vault/repository.",
-   "controle": "Gecontroleerd of de Vault-MCP (higrip-vault) toegestane map is herstel van C:\\Windows\\System32.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "niet te controleren: lokale MCP-instelling buiten deze repository, niet zichtbaar vanuit een cloudsessie",
+   "controle": "MCP-configuratie van higrip-vault is geen vault-bestand",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4883,9 +4883,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#b2c194c0": {
-   "bewijs": "`.claude/agents/conversie-analyse-agent.md` verwijst niet meer naar de genoemde map `04_Agent_Infrastructuur` (dat deel is al aangepast), maar nu naar `01_Agent_Infrastructuur/Website Agent/Conversie & Analyse Agent/Identiteit Conversie & Analyse Agent.md`; die map/dat bestand bestaat nog niet (geverifieerd) — de verwijzing is dus nog steeds gebroken, alleen naar een ander pad.",
-   "controle": "Gecontroleerd of het identiteitsbestand van de conversie-analyse-agent naar een bestaand bestand verwijst.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "verwijst naar `01_Agent_Infrastructuur/Website Agent/Conversie & Analyse Agent/Identiteit Conversie & Analyse Agent.md`, die map bestaat niet (niet naar de genoemde 04_Agent_Infrastructuur, maar evengoed niet-bestaand)",
+   "controle": "identiteitspad van `.claude/agents/conversie-analyse-agent.md` gecontroleerd",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4911,10 +4911,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
-   "bewijs": "niet te controleren: dit is een live trackingevent (GTM/pixel); ter info bestaat er nog geen natieve 3-pack-variant van €44,95, de variant staat nog op €17,95.",
-   "controle": "variantprijzen van de 2.0-producten opgehaald; AddToCart-trackingwaarde kan niet via GraphQL worden uitgelezen.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d6716dd8": {
@@ -5192,9 +5192,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-ads-reverse-engineering-bewezen-elementen#47b8d3c9": {
-   "bewijs": "beide verwijzen nog naar `01_Agent_Infrastructuur/Content Agent/.../Identiteit....md`; die map bestaat niet in de vault (geverifieerd met een mapzoekopdracht), ongewijzigd.",
-   "controle": "Gecontroleerd of .claude/agents/content-maker-agent.md en caption-copy-agent.md naar een bestaand identiteitsbestand verwijzen.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "beide verwijzen nog naar `01_Agent_Infrastructuur/Content Agent/...`; die map 'Content Agent' bestaat niet in `01_Agent_Infrastructuur/` (wel Ads/Design/Operations/Partnership/Social/Website Agent)",
+   "controle": "`.claude/agents/content-maker-agent.md` en `caption-copy-agent.md` gecontroleerd op hun identiteitspad",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5263,10 +5263,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
-   "bewijs": "niet te controleren: bestanden staan buiten de vault/repository, niet bereikbaar vanuit deze sessie.",
-   "controle": "Gecontroleerd of <media>/_Output/design/ads-v6 en Ads-Workflow/Voorbeelden vergeleken zijn op dezelfde v6-ads.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "vault",
+   "bewijs": "niet te controleren: lokale mediamappen (<media>/_Output/design/ads-v6, Ads-Workflow/Voorbeelden) zijn niet bereikbaar vanuit deze cloudsessie",
+   "controle": "paden buiten de vault/repository gecontroleerd",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
    "uitkomst": "open"
   },
   "2026-11-16-lokale-bestanden-inventaris#bb0f5137": {
@@ -5284,9 +5284,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
-   "bewijs": "map `output/` bestaat nog in de vault-root met 121 bestanden (ongewijzigd t.o.v. de vorige controle), niet verplaatst of verwijderd.",
-   "controle": "Gecontroleerd of de bestanden in de vault-root `output/` verplaatst of opgeruimd zijn.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "121 bestanden staan nog los in output/, minder dan de eerder genoemde 254 maar nog niet verplaatst of verwijderd",
+   "controle": "aantal bestanden direct in de vault-root output/ geteld",
+   "gecontroleerd": "2026-11-25",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5410,11 +5410,11 @@
    "uitkomst": "handmatig"
   },
   "2026-11-23-meta-campagnerapport#63f73df4": {
-   "bewijs": "niet te controleren: dit is een Meta Ads-instelling (retargetingset), buiten mijn bucket (shopify-only).",
-   "controle": "gecontroleerd of dit een Shopify-controle is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "shopify",
-   "uitkomst": "open"
+   "bewijs": "niets; geen Meta Ads-connector beschikbaar in deze vault, puur mensenwerk in Ads Manager",
+   "controle": "Meta Ads Manager-actie (retargetingset instellen)",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
+   "uitkomst": "handmatig"
   },
   "2026-11-23-meta-campagnerapport#895904c1": {
    "bewijs": "mensenwerk: besluit, niet automatisch waar te nemen",
@@ -5518,10 +5518,32 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-11-24-landingspaginas-live-ads-message-match#0b45e6c9": {
+   "bewijs": "niets; dit is een beslissing voor Lars, geen controletaak",
+   "controle": "Besluit-actie (basisversie landingspagina kiezen)",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-24-landingspaginas-live-ads-message-match#96d42a90": {
+   "bewijs": "zelfde eindtoestand als de oudere actie, dus als dubbel gemarkeerd",
+   "controle": "vergeleken met bestaande open acties over iDEAL in de checkout",
+   "dubbel_van": "2026-11-06-winkelwagen-voorbeelden-en-10-ontwerpen#1bf13e48",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-24-landingspaginas-live-ads-message-match#d92e2723": {
+   "bewijs": "niets; geen Meta Ads-connector beschikbaar, en de test kan nog niet lopen vóór livegang",
+   "controle": "Meta Ads Manager-actie (A/B-test na livegang)",
+   "gecontroleerd": "2026-11-25",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
   "backlog#01dc4258": {
-   "bewijs": "niet te controleren: dit rapport is niet via de Search Console API op te vragen (alleen in de GSC-UI), dus niet automatisch waar te nemen; ACTIEBACKLOG.md punt 15 staat nog op \"[ ]\" en de laatste update (23-11, Growth Radar) voegde alleen een logbug-waarschuwing toe, geen afronding.",
-   "controle": "Nagegaan of het nieuwe Search Console-rapport voor generatieve AI-impressies al eenmalig bekeken/verwerkt is.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -5653,16 +5675,16 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "niet te controleren: dit vraagt Search Console-positiedata per zoekterm en de thema-wisselgeschiedenis, geen van beide is zichtbaar op een publieke URL.",
-   "controle": "Gecheckt of dit via een publieke URL op higrip.nl te verifiëren is.",
-   "gecontroleerd": "2026-11-24",
-   "methode": "site",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "ACTIEBACKLOG.md punt 27 staat nog op \"[ ]\"; update 16-11 meldt herstel (9,7) maar \"oorzaak nog niet gevonden\"; verse GSC-cijfers (25 okt-21 nov) bevestigen verder herstel naar positie 9,3 (was 12,7), nog altijd zonder vastgestelde oorzaak.",
-   "controle": "Nagegaan of de oorzaak van de positieval van /pages/gripsokken-voor-voetbal (NL) is gevonden en het punt is afgesloten.",
-   "gecontroleerd": "2026-11-24",
+   "bewijs": "het analytics-hulpscript wordt door de privacy-plugin van deze sessie geblokkeerd, al sinds half november; geen cijfers op te vragen",
+   "controle": "geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
+   "gecontroleerd": "2026-11-25",
    "methode": "gsc",
    "uitkomst": "open"
   },
@@ -5811,7 +5833,6 @@
   }
  },
  "runs": [
-  "2026-11-09",
   "2026-11-10",
   "2026-11-11",
   "2026-11-12",
@@ -5824,7 +5845,8 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ],
  "volgende_run": "dagelijks 05:00"
 }

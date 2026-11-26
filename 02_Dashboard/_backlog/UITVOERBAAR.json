@@ -3647,6 +3647,18 @@
   "wat_claude_doet": "concept of voorbereiding in de vault waar mogelijk",
   "wat_jij_doet": "het resterende mensenwerk afmaken"
  },
+ "2026-11-09-seo-conversietest-run-7#a76ea6d5": {
+  "beoordeeld": "2026-11-26",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptteksten uit het logboek (sectie 8.1) vergelijken met de live beleidstekst en een gereviseerde versie klaarzetten.",
+  "wat_jij_doet": "De tekst in Shopify Instellingen → Beleid plakken (live winkelinstelling, buiten Claude's grens)."
+ },
+ "2026-11-09-seo-conversietest-run-7#fd13c344": {
+  "beoordeeld": "2026-11-26",
+  "claude": "ja",
+  "wat_claude_doet": "Snippet hi-pack-value-bar.liquid herbouwen in het testthema.",
+  "wat_jij_doet": "Controleren en pas dan in het live thema zetten."
+ },
  "2026-11-09-social-qa-ads-teksten#1d33cb29": {
   "beoordeeld": "2026-11-18",
   "claude": "deels",

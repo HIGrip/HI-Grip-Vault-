@@ -50,7 +50,7 @@ Geen agent krijgt de bevoegdheid om advertentiecontent te maken; die grens uit [
 - [ ] P2 · Besluit: de beoordelingskaart uit het Ads Bouwboek vaststellen als vaste toets vóór livegang, met drempels 12 en 16 van 20 (voorstel Ads Agent, niet getest)
 - [ ] P2 · Eerste creatieve test in Meta: native formats (borden 1, 3, 4) tegen specificatie en prijs (borden 2, 5), met dezelfde doelgroep en hetzelfde budget, beslissen op link-CTR
 - [ ] P2 · Borden 1 en 3 (voetbal en rugby) opnieuw exporteren uit het canvas, want de PNG's in `Losse-ads-2026-11-15/png/` tonen nog de oude tekst
-- [ ] P3 · `.claude/agents/content-maker-agent.md` en `caption-copy-agent.md` laten verwijzen naar een bestaand identiteitsbestand; ze wijzen nu naar `01_Agent_Infrastructuur/Content Agent/`, dat niet bestaat
+- [x] P3 · `.claude/agents/content-maker-agent.md` en `caption-copy-agent.md` laten verwijzen naar een bestaand identiteitsbestand; ze wijzen nu naar `01_Agent_Infrastructuur/Content Agent/`, dat niet bestaat
 
 ## Bevindingen
 

@@ -1,7 +1,7 @@
 ---
 id: 2026-11-23-funnel-ga4-verkeersbronnen
 titel: "Funnel en verkeersbronnen — waar komt verkeer vandaan en waar lopen we klanten mis"
-kerntitel: "Organic Search verdient, Paid Social levert 0 aankopen, en 44% van het verkeer komt uit het buitenland"
+kerntitel: "Organic Search verdient, Paid Social levert 0 aankopen, 44% verkeer komt uit buitenland"
 datum: 2026-11-23
 bron: los
 routine: ""
@@ -97,7 +97,7 @@ GA4 `476032345`, Shopify Analytics als controle. Het Meta-account gaf twee keer 
 - [ ] P1 · Verzendkosten en "gratis vanaf €35" op de productpagina en in de wagen tonen, vóór de checkout (Design + Copy Agent)
 - [ ] P1 · GA4 op alle themaversies, intern verkeer en spam uitsluiten, één vaste UTM-structuur voor Meta (Lars/Timo)
 - [ ] P2 · Aparte landing per kanaal: advertentie → productpagina die bij de creative past (Design + Copy Agent)
-- [ ] P2 · Sticky "in winkelwagen" op mobiel (Design Agent)
+- [x] P2 · Sticky "in winkelwagen" op mobiel (Design Agent)
 - [ ] P2 · Meta-targeting controleren op landen en Instagram-tablet; Meta-uitgaven opnieuw ophalen na de timeout (Ads Agent, adviserend)
 - [ ] P2 · Organic Search uitbouwen, het enige kanaal met omzet (SEO Agent)
 

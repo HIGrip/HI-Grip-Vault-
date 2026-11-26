@@ -4211,6 +4211,60 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "de beslissing nemen en vastleggen (bijvoorbeeld in Feiten & Actuele Staat of de backlog)"
  },
+ "2026-11-17-briefing-early-access-emails#21cfb52d": {
+  "beoordeeld": "2026-11-26",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Toegankelijke screenshots of een transcript van de vier TikTok-referenties aanleveren."
+ },
+ "2026-11-17-briefing-early-access-emails#7b27987d": {
+  "beoordeeld": "2026-11-26",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Korting, code, geldigheid, early-access-datum, aanmeldlink en aanbodvoorwaarden aanleveren, of aangeven dat concepten met invulvelden mogen."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#39b2766d": {
+  "beoordeeld": "2026-11-26",
+  "claude": "ja",
+  "wat_claude_doet": "Al gebouwd (sticky-add-to-cart-balk bestaat al op de productpagina).",
+  "wat_jij_doet": "Niets meer nodig; eventueel visueel controleren op mobiel."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#3b257b12": {
+  "beoordeeld": "2026-11-26",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen om het werkthema live te zetten na eigen controle van de productpagina's en LCP-meting."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#3b9dc834": {
+  "beoordeeld": "2026-11-26",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "GA4-property instellen op alle themaversies, filters voor intern verkeer/spam toevoegen, vaste UTM-structuur afspreken met Meta (GA4-accounttoegang nodig)."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#738ef51d": {
+  "beoordeeld": "2026-11-26",
+  "claude": "ja",
+  "wat_claude_doet": "Meta-targeting (landen, Instagram-tablet) en uitgaven analyseren via de Ads Agent.",
+  "wat_jij_doet": "Aanpassingen doorvoeren in Meta Ads Manager op basis van het advies."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#7612c2d9": {
+  "beoordeeld": "2026-11-26",
+  "claude": "deels",
+  "wat_claude_doet": "Conceptlandingspagina's per kanaal/creative voorstellen en bouwen in het testthema.",
+  "wat_jij_doet": "Kanalen en creatives kiezen, concepten beoordelen en live zetten."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#9cfdf4f5": {
+  "beoordeeld": "2026-11-26",
+  "claude": "deels",
+  "wat_claude_doet": "Onderzoek en contentvoorstellen om Organic Search te laten groeien (SEO Agent).",
+  "wat_jij_doet": "Prioriteiten kiezen en voorstellen laten uitvoeren/publiceren."
+ },
+ "2026-11-23-funnel-ga4-verkeersbronnen#fb38efd9": {
+  "beoordeeld": "2026-11-26",
+  "claude": "ja",
+  "wat_claude_doet": "Conceptteksten en theme-code voor een vrije-verzendbalk op productpagina én cart in het testthema.",
+  "wat_jij_doet": "Controleren en in het live thema zetten."
+ },
  "2026-11-23-meta-campagnerapport#3ea7adf0": {
   "beoordeeld": "2026-11-24",
   "claude": "deels",

@@ -51,7 +51,7 @@ De creatieve batch staat klaar in `04_Social_Agent/Visuele Productie/Meta-batch-
 - [ ] P2 · December: cadeau- en 3-pack-hoek klaarzetten vóór 7-12, zodat hij vóór de winterstop (±21-12) twee weken draait
 - [ ] P2 · Besluit: vault-repo op GitHub privé maken; hij is nu publiek en bevat marges, kostprijzen en account-ID's
 - [ ] P2 · Vault-MCP (higrip-vault) opnieuw instellen: de toegestane map staat op C:\Windows\System32, waardoor agents de vault niet via de MCP kunnen lezen
-- [ ] P2 · Definitie van de conversie-analyse-agent herstellen: het identiteitsbestand verwijst naar de niet-bestaande map 04_Agent_Infrastructuur
+- [x] P2 · Definitie van de conversie-analyse-agent herstellen: het identiteitsbestand verwijst naar de niet-bestaande map 04_Agent_Infrastructuur
 - [ ] P2 · Dashboard-sync en publicatie voor deze notitie vanaf info@ draaien; vanaf het persoonlijke account is er geen schrijfrecht
 - [ ] P3 · Januari: padel- en tennisset voorbereiden met de winnende hoek uit voetbal en rugby, start na de winterstop
 

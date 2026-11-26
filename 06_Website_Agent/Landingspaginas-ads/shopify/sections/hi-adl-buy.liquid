@@ -146,7 +146,8 @@
 
         {%- if deal_active and section.settings.deal_pill != blank -%}
           <p class="adl-gal__pd" data-deal-end="{{ deal_end | times: 1000 }}">
-            <span>{{ section.settings.deal_badge }}</span>{{ section.settings.deal_pill }}
+            <b>{{ section.settings.deal_badge }}</b>
+            <span><strong>{{ section.settings.deal_title }}</strong>{{ section.settings.deal_pill }}</span>
           </p>
         {%- endif -%}
       </div>
@@ -328,11 +329,11 @@
     { "type": "header", "content": "Actie (Performance Days)" },
     { "type": "paragraph", "content": "Zichtbaar tot de eindtijd, daarna verdwijnt de actie vanzelf. Leeg = geen actie. De korting zelf zit in de winkelwagen." },
     { "type": "text", "id": "deal_end", "label": "Eindtijd", "info": "JJJJ-MM-DD UU:MM", "default": "2026-11-30 23:59" },
-    { "type": "text", "id": "deal_badge", "label": "Badge", "default": "1+1" },
+    { "type": "text", "id": "deal_badge", "label": "Badge", "default": "x2" },
     { "type": "text", "id": "deal_title", "label": "Titel", "default": "Verdubbel je order" },
     { "type": "text", "id": "deal_text", "label": "Tekst", "info": "[timer] = aftelling", "default": "HÏ Performance Days · eindigt over [timer]" },
     { "type": "text", "id": "deal_extra", "label": "Extra regel", "info": "[prijs3] = prijs 3-pack, [per_paar] = prijs per paar met actie", "default": "Kies 3 paar, krijg er 3 gratis bij: 6 paar voor [prijs3]" },
-    { "type": "text", "id": "deal_pill", "label": "Label op de eerste foto", "info": "Leeg = geen label", "default": "HÏ Performance Days" },
+    { "type": "text", "id": "deal_pill", "label": "Balk op de eerste foto (onderregel)", "info": "Bovenregel = Titel. Leeg = geen balk", "default": "HÏ Performance Days" },
     { "type": "text", "id": "deal_sticky", "label": "Sticky balk tijdens actie", "default": "6 paar voor [prijs3]" },
     { "type": "header", "content": "Sticky balk (mobiel)" },
     { "type": "checkbox", "id": "show_sticky", "label": "Toon sticky balk", "default": true },

@@ -32,7 +32,7 @@ Shopify-versie van prototype v1.8. Bron van de bestanden in deze map; na de eers
 
 ## Actie (Performance Days)
 
-Het koopblok heeft een actieblok (instellingen "Actie (Performance Days)"): label "1+1 · HÏ Performance Days" rechtsonder op de eerste foto, één dealstrook "1+1 · Verdubbel je order" met aftelling en "6 paar voor €44,95" en de sticky balk. Het slotaanbod heeft geen eigen actiestrook meer (stond dubbel). Alles verdwijnt vanzelf na de eindtijd (standaard 2026-11-30 23:59); leeg = geen actie. De aftelling zit in `hi-adl.js`, zodat ze ook werkt in thema's zonder `hg-pd-timer.js`. De korting zelf (gratis actiepaar) komt uit de winkelwagen.
+Het koopblok heeft een actieblok (instellingen "Actie (Performance Days)"): zwarte balk "x2 · Verdubbel je order · HÏ Performance Days" onderin de eerste foto, één dealstrook "x2 · Verdubbel je order" met aftelling en "6 paar voor €44,95" en de sticky balk. Het slotaanbod heeft geen eigen actiestrook meer (stond dubbel). De actie is "Verdubbel je order" (zelfde aantal paar gratis), dus badge **x2**, niet 1+1. Alles verdwijnt vanzelf na de eindtijd (standaard 2026-11-30 23:59); leeg = geen actie. De aftelling zit in `hi-adl.js`, zodat ze ook werkt in thema's zonder `hg-pd-timer.js`. De korting zelf (gratis actiepaar) komt uit de winkelwagen.
 
 ## Thema's
 

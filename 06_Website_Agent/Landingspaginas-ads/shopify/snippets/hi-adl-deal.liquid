@@ -4,14 +4,14 @@
   De aftelling vult assets/hg-pd-timer.js via [data-pd-cd].
 
   @param {string} end - eindtijd, bijv. '2026-11-30 23:59'
-  @param {string} badge - bijv. '1+1'
+  @param {string} badge - bijv. 'x2'
   @param {string} title - bijv. 'Verdubbel je order'
   @param {string} text - regel onder de titel; [timer] wordt de aftelling
   @param {string} [extra] - extra regel, bijv. de prijs per paar
   @param {string} [modifier] - 'light' voor een lichte achtergrond
 
   @example
-  {% render 'hi-adl-deal', end: s.deal_end, badge: '1+1', title: 'Verdubbel je order', text: 'Eindigt over [timer]' %}
+  {% render 'hi-adl-deal', end: s.deal_end, badge: 'x2', title: 'Verdubbel je order', text: 'Eindigt over [timer]' %}
 {%- enddoc -%}
 {%- liquid
   assign deal_now = 'now' | date: '%s' | plus: 0

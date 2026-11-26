@@ -47,6 +47,19 @@ laatst-geverifieerd: 2026-10-11
 - Adviesprijs retail 2.0: **€19,95** incl. btw (besluit 29-10-2026). De webshop blijft €17,95. Marges op de B2B-staffel worden berekend op €16,49 excl. btw. Vervangt het besluit van 2-10-2026 (adviesprijs gelijk aan de webshop, €17,95).
 - Oude handles redirecten: `hi-grip-gripsokken-1` → `hi-grip-gripsokken` → `performance-gripsokken` (2 stappen, 25 sep). Gebruik altijd de nieuwe handle.
 
+## Lopende actie
+
+| Feit | Waarde | Geverifieerd |
+|---|---|---|
+| Naam | **HÏ Performance Days** | 2026-11-26 (live site) |
+| Aanbod | **Verdubbel je order**: je krijgt hetzelfde aantal paar gratis erbij (1+1 · 3+3 · 5+5). Label **x2**, niet "1+1". Voorbeeld: 3-pack €44,95 = 6 paar. | 2026-11-26 (winkelwagen getest: 3-pack zwart → €44,95 + gratis actiepaar) |
+| Eindtijd | **30-11-2026 23:59** | 2026-11-26 (aftelling op de site) |
+| Hoe het werkt | De Verdubbel-app zet "Gratis actiepaar"-regels in de winkelwagen; geen kortingscode nodig. Announcementbar met aftelling op de hele site; x2-balk en dealstrook op de ad-landingspagina's (zie hieronder). | 2026-11-26 |
+
+Ad-landingspagina's (verborgen, noindex, live sinds 26-11-2026; links per ad in `06_Website_Agent/Landingspaginas-ads/shopify/README.md`): `/pages/gripsokken-voetbal`, `/pages/gripsokken-rugby`, `/pages/performance-gripsokken`, elk met `?ad=NN`. Na de eindtijd verdwijnt de actie daar vanzelf.
+
+Na 30-11 deze sectie leegmaken of naar de volgende actie omzetten.
+
 ## Verzending en retour — vastgesteld door Lars op 25 sep 2026
 
 | Feit | Vastgestelde waarde | Live staat (laatst gezien 19 okt, regressiecheck) |
@@ -105,6 +118,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-11-26 — Sectie "Lopende actie" toegevoegd: HÏ Performance Days, "Verdubbel je order" (x2), tot 30-11-2026 23:59, plus de ad-landingspagina's.
 - 2026-11-10 — Packprijzen 2.0 toegevoegd uit de live productpagina: 3-pack €44,95 en 5-pack €69,95, met gratis verzending. Stonden nog niet in dit bestand terwijl ze sinds begin november live zijn.
 - 2026-11-06 — Verzendkosten buiten Nederland toegevoegd: €5,00, uit de Shopify-instellingen; gratis vanaf €35 geldt in alle landen.
 - 2026-10-29 — Besluit: adviesprijs retail 2.0 wordt €19,95 incl. btw; de webshop blijft €17,95. Toegepast op de nieuwe prijslijst retail (`07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026`).

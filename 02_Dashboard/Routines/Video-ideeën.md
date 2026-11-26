@@ -4,7 +4,7 @@ gebied: agent-infrastructuur
 bijgewerkt: 2026-11-26
 ---
 
-# Routine — Video-ideeën in Buffer (dagelijks, vóór 08:00)
+# Routine — Video-ideeën in Buffer (dagelijks 06:30, klaar vóór 08:00)
 
 > Map: [[Waar staat wat]]
 
@@ -39,11 +39,11 @@ Zoek met de datum van vandaag in je zoektermen:
 - Een **grote naam** die realistisch op te zoeken is (bijvoorbeeld via het rugbynetwerk, een lokale club, een event in de komende weken).
 
 ## Stap 4 — Ideeën bedenken (1 of 2)
-Kies per dag de beste één of twee uit deze vier types en wissel ze af (zie de log):
-1. **Trend vertaald:** een trend die nu op TikTok loopt, omgezet naar een HÏ Grip-concept met grote kans op viraal.
-2. **Grote naam opzoeken:** "Vandaag gaan we … opzoeken om kennis te laten maken met gripsokken." Een profsporter, bekende trainer of creator uit de kernsporten.
-3. **Greenscreen-reactie:** Tigo reageert met een greenscreen op een actueel onderwerp in het nieuws over presteren (stijl @feitjedagelijks): kort, met mening, een feitje en een eigen kijk.
-4. **Kantoorchallenge:** een spontane, trending challenge op kantoor die laat lachen (bijvoorbeeld een push-up challenge, een reactietest, een "wie houdt het langst vol").
+Kies per dag de beste één of twee en wissel de types af (zie de log). Dit zijn vier voorbeeldformats. Je mag ook iets anders bedenken binnen TRENDING, SERIES, CHALLENGES: wees vrij en creatief.
+1. **Trend vertaald** (max 30 tot 40 s): een trend die nu op TikTok loopt, omgezet naar een HÏ Grip-concept met grote kans op viraal.
+2. **Grote naam opzoeken** (max 2 min): "Vandaag gaan we … opzoeken om kennis te laten maken met gripsokken." Een profsporter, bekende trainer of creator uit de kernsporten. **De naam moet realistisch zijn**, dus je geeft een klein plan mee: wanneer en waar die persoon te vinden is (wedstrijd, open training, event, meet and greet), dat we er gratis of goedkoop kunnen komen of dat het in de buurt is, en hoe we hem of haar aanspreken. Controleer datum en locatie via een bron van deze week.
+3. **Greenscreen-reactie** (max 30 s): Tigo reageert met een greenscreen op iets over presteren dat **nu trending is in het nieuws** (afgelopen 48 uur, stijl @feitjedagelijks): kort, met een feitje, een mening en een eigen kijk. Noem de bron en de datum van het nieuws.
+4. **Kantoorchallenge** (max 30 tot 40 s): een spontane, trending challenge op kantoor die leuk is om te kijken en laat lachen (bijvoorbeeld een push-up challenge, een reactietest, een "wie houdt het langst vol").
 
 Elk idee moet door deze check:
 - **Presteren of doorzetten komt terug.** "Ga door waar anderen stoppen." Geen presteerelement, geen idee.
@@ -58,16 +58,17 @@ Elk idee moet door deze check:
 ## Stap 5 — In Buffer zetten
 `create_idea` in **Unassigned**, met de best passende bestaande tag (de API kan geen tags maken en ideeën achteraf niet bewerken, dus meteen goed).
 
-**Titel** (alles in hoofdletters):
-`KORTE KRACHTIGE TITEL | 9 DEC`
-Bijvoorbeeld: `PUSH-UP BATTLE NA DE LUNCH | 2 DEC`
+**Titel** (alles in hoofdletters, het format is REEL of STORY):
+`KORTE KRACHTIGE TITEL | REEL | 9 DEC`
+Bijvoorbeeld: `PUSH-UP BATTLE NA DE LUNCH | REEL | 2 DEC`
 
 **Tekstvak** (kort en overzichtelijk, geen lappen tekst, geen gedachtestreepjes of pijltjes):
 ```
 DOEL: wat dit oplevert in één zin
 FUNNEL: TOFU (of MOFU met reden)
-TYPE: trend / grote naam / greenscreen / kantoorchallenge · SPORT: …
-WAAROM NU: de trend of het nieuws in één zin
+TYPE: trend / grote naam / greenscreen / kantoorchallenge / eigen format · SPORT: …
+WAAROM NU: de trend of het nieuws in één zin (met bron en datum)
+PLAN (alleen bij grote naam): wie, wanneer, waar, kosten, hoe aanspreken
 
 NODIG:
 · wie (Tigo / Timo / Lars / gast)
@@ -80,7 +81,7 @@ CALLSHEET:
 2. SHOT …: …
 3. SHOT …: …
 4. AFSLUITER: slogan of logo
-Lengte: 15-30 s · Opname: ± 30-60 min · Format: 9:16
+Lengte: binnen het maximum van het type · Opname: ± 30-60 min · Format: 9:16, reel of story
 ```
 
 ## Stap 6 — Melden aan Tigo
@@ -97,5 +98,5 @@ Eindig met een kort bericht (vóór 08:00 klaar):
 
 ## Stap 8 — Afsluiten
 Voeg per idee één regel toe aan de log in `02_Dashboard/_geheugen/video-ideeen.md`:
-`JJJJ-MM-DD | type | sport | TITEL | datum | open`
+`JJJJ-MM-DD | type | sport | TITEL (met REEL of STORY) | datum | open`
 Commit (`video-ideeen: <datum> twee ideeën`) en push volgens `CLAUDE.md` sectie 8. Geen dashboardnotitie nodig: dit is geen onderzoek.

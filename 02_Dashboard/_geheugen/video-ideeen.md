@@ -1,5 +1,7 @@
 # Geheugen — Video-ideeën in Buffer
 
+> Map: [[Waar staat wat]]
+
 > Routine: [[Video-ideeën]] (`02_Dashboard/Routines/Video-ideeën.md`). Geen namen of profiellinks van personen in dit bestand.
 
 ## Leerregels (uit Tigo's feedback, gaan boven het promptbestand)
@@ -14,7 +16,6 @@
 - 2026-11-26 | Toets elk idee op: zou ik dit zelf uitkijken en doorsturen? Zo niet, dan niet voorstellen.
 
 - 2026-11-26 | Voorraad: kies eerst uit de sectie Voorraad hieronder, van boven naar beneden. Wijk alleen af als er die ochtend aantoonbaar een sterkere trend of nieuws is, en zeg dat in je eindbericht. Check vóór gebruik of de datum nog vrij en het onderwerp nog actueel is. Zet een gebruikt item op `gebruikt JJJJ-MM-DD`.
-
 
 ## Voorraad (uitgewerkt 26-11-2026, twee keer getoetst)
 

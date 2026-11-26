@@ -22,6 +22,15 @@
   <div class="adl-wrap adl-of__grid">
     <h2 class="adl-of__h">{{ section.settings.heading | newline_to_br }}</h2>
     {%- if offer_product != blank -%}
+      <div class="adl-of__side">
+      {%- if section.settings.deal_end != blank -%}
+        {% render 'hi-adl-deal',
+          end: section.settings.deal_end,
+          badge: section.settings.deal_badge,
+          title: section.settings.deal_title,
+          text: section.settings.deal_text
+        %}
+      {%- endif -%}
       <div class="adl-of__card">
         {%- render 'hi-adl-image', image: section.settings.pack_image, sizes: '72px', width: 216 -%}
         <div>
@@ -32,6 +41,7 @@
           <p class="adl-of__s">{{ per_pair | money }} per paar · {{ section.settings.subline }}</p>
         </div>
         <a class="adl-cta" href="#koop"><span>{{ section.settings.button }}</span><i>{{ chevron }}</i></a>
+      </div>
       </div>
     {%- endif -%}
   </div>
@@ -47,7 +57,12 @@
     { "type": "product", "id": "product", "label": "Product (voor de 3-packprijs)" },
     { "type": "image_picker", "id": "pack_image", "label": "Packfoto" },
     { "type": "text", "id": "subline", "label": "Regel onder de prijs", "default": "gratis verzonden · 30 dagen retour" },
-    { "type": "text", "id": "button", "label": "Knop", "default": "Kies je maat" }
+    { "type": "text", "id": "button", "label": "Knop", "default": "Kies je maat" },
+    { "type": "header", "content": "Actie (Performance Days)" },
+    { "type": "text", "id": "deal_end", "label": "Eindtijd", "info": "JJJJ-MM-DD UU:MM. Leeg = geen actie", "default": "2026-11-30 23:59" },
+    { "type": "text", "id": "deal_badge", "label": "Badge", "default": "3+3" },
+    { "type": "text", "id": "deal_title", "label": "Titel", "default": "3 paar gratis bij je 3-pack" },
+    { "type": "text", "id": "deal_text", "label": "Tekst", "info": "[timer] = aftelling", "default": "HÏ Performance Days · nog [timer]" }
   ],
   "presets": [{ "name": "Ad-landing: slotaanbod" }]
 }

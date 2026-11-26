@@ -30,6 +30,10 @@ Shopify-versie van prototype v1.8. Bron van de bestanden in deze map; na de eers
 - **Winkelwagen:** zelfde route als de productpagina: `hi-bundle` (1/3/5-pack, prijzen uit `hi-pack-data`) + Horizon `product-form-component`. Bundelkorting en Black Friday-actiepaar komen uit de winkelwagen zelf. Getest 26-11: 3-pack zwart → €44,95 + gratis actiepaar.
 - **Foto's:** Shopify Bestanden, naam `adl-*` (30 stuks, met alt-tekst). Vervangen kan per instelling in de editor.
 
+## Actie (Performance Days)
+
+Koopblok en slotaanbod hebben een actieblok (instellingen "Actie (Performance Days)"): label boven de kop, dealstrook "1+1 · Verdubbel je order" met aftelling en "6 paar voor €44,95", sticky balk en een "3+3"-strook bij het slotaanbod. Alles verdwijnt vanzelf na de eindtijd (standaard 2026-11-30 23:59); leeg = geen actie. De aftelling zit in `hi-adl.js`, zodat ze ook werkt in thema's zonder `hg-pd-timer.js`. De korting zelf (gratis actiepaar) komt uit de winkelwagen.
+
 ## Thema's
 
 Gepusht (alleen nieuwe bestanden, `--only`, niets overschreven) naar live `205415153991` "BLACK FRIDAY werkthema 24-11-2026" en `205362889031` "Kopie van Live website 23-11-2026". In de Kopie ontbrak `snippets/hi-pack-data.liquid` (bundelkeuze werkte daar ook op de productpagina niet); die is daar toegevoegd.

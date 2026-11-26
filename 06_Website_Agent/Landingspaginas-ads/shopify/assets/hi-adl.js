@@ -116,4 +116,26 @@ class AdlBuy extends HTMLElement {
   }
 }
 
+// Actie: eigen aftelling (zelfde notatie als hg-pd-timer.js) en verbergen zodra de eindtijd voorbij is
+const adlDeals = [...document.querySelectorAll('[data-deal-end]')];
+const adlPad = (n) => String(n).padStart(2, '0');
+const adlTick = () => {
+  adlDeals.forEach((el) => {
+    const left = Number(el.dataset.dealEnd) - Date.now();
+    if (left <= 0) {
+      el.hidden = true;
+      return;
+    }
+    const s = Math.floor(left / 1000);
+    const text = `${Math.floor(s / 86400)}d ${adlPad(Math.floor((s % 86400) / 3600))}u ${adlPad(Math.floor((s % 3600) / 60))}m ${adlPad(s % 60)}s`;
+    el.querySelectorAll('[data-pd-cd]').forEach((cd) => {
+      cd.textContent = text;
+    });
+  });
+};
+if (adlDeals.length) {
+  adlTick();
+  setInterval(adlTick, 1000);
+}
+
 if (!customElements.get('adl-buy')) customElements.define('adl-buy', AdlBuy);

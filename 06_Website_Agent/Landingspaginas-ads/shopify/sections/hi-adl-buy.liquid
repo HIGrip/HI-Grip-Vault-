@@ -25,6 +25,18 @@
     assign three_pack_price = start_product.price | times: 3
   endif
 
+  # Actie (Performance Days): aan tot de eindtijd, daarna verdwijnt alles vanzelf
+  assign deal_now = 'now' | date: '%s' | plus: 0
+  assign deal_end = section.settings.deal_end | date: '%s' | plus: 0
+  assign deal_active = false
+  if section.settings.deal_end != blank and deal_now < deal_end
+    assign deal_active = true
+  endif
+  assign per_pair_deal = three_pack_price | divided_by: 6
+  assign price_3_text = three_pack_price | money
+  assign per_pair_text = per_pair_deal | money
+  assign deal_extra = section.settings.deal_extra | replace: '[prijs3]', price_3_text | replace: '[per_paar]', per_pair_text
+
   assign chevron = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5"/></svg>'
   assign check = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
   assign box = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg>'
@@ -35,6 +47,11 @@
 <adl-buy class="adl adl-buy" id="koop">
   <div class="adl-wrap adl-buy__grid">
     <div class="adl-buy__head">
+      {%- if deal_active -%}
+        <a class="adl-pill" href="#koop" data-deal-end="{{ deal_end | times: 1000 }}">
+          <span>{{ section.settings.deal_badge }}</span>{{ section.settings.deal_pill }} <b data-pd-cd>--</b>
+        </a>
+      {%- endif -%}
       {%- for block in section.blocks -%}
         {%- if block.type == 'ad' -%}
           <div class="adl-ad" data-ad="{{ block.settings.code | escape }}" {{ block.shopify_attributes }}>
@@ -136,6 +153,16 @@
     </div>
 
     <div class="adl-buy__form">
+      {%- if deal_active -%}
+        {% render 'hi-adl-deal',
+          end: section.settings.deal_end,
+          badge: section.settings.deal_badge,
+          title: section.settings.deal_title,
+          text: section.settings.deal_text,
+          extra: deal_extra
+        %}
+      {%- endif -%}
+
       {%- if p_wit != blank and p_zwart != blank -%}
         <fieldset class="adl-sw">
           <legend>Kleur: <b data-color-name>{% if start_color == 'zwart' %}Zwart{% else %}Wit{% endif %}</b></legend>
@@ -254,7 +281,11 @@
   {%- if section.settings.show_sticky and start_product != blank -%}
     <div class="adl-sticky" aria-hidden="true">
       <div class="adl-wrap">
-        <p><b>3 paar {{ three_pack_price | money }}</b>{{ section.settings.sticky_text }}</p>
+        {%- if deal_active -%}
+          <p data-deal-end="{{ deal_end | times: 1000 }}"><b>{{ section.settings.deal_sticky | replace: '[prijs3]', price_3_text }}</b>Eindigt over <span data-pd-cd>--</span></p>
+        {%- else -%}
+          <p><b>3 paar {{ three_pack_price | money }}</b>{{ section.settings.sticky_text }}</p>
+        {%- endif -%}
         <a class="adl-cta adl-cta--light" href="#koop" tabindex="-1"><span>{{ section.settings.sticky_label }}</span><i>{{ chevron }}</i></a>
       </div>
     </div>
@@ -293,6 +324,15 @@
     { "type": "header", "content": "Onder de knop" },
     { "type": "text", "id": "ship_text", "label": "Verzendregel", "info": "[dag] wordt de verzenddag, bijv. maandag", "default": "Bestel je nu, dan gaat je pakket uiterlijk [dag] de deur uit" },
     { "type": "textarea", "id": "usps", "label": "USP's (mobiel)", "info": "Eén per regel: vet|rest", "default": "Gratis|verzending vanaf €35\n30 dagen|retour\n1 werkdag|verzonden" },
+    { "type": "header", "content": "Actie (Performance Days)" },
+    { "type": "paragraph", "content": "Zichtbaar tot de eindtijd, daarna verdwijnt de actie vanzelf. Leeg = geen actie. De korting zelf zit in de winkelwagen." },
+    { "type": "text", "id": "deal_end", "label": "Eindtijd", "info": "JJJJ-MM-DD UU:MM", "default": "2026-11-30 23:59" },
+    { "type": "text", "id": "deal_badge", "label": "Badge", "default": "1+1" },
+    { "type": "text", "id": "deal_title", "label": "Titel", "default": "Verdubbel je order" },
+    { "type": "text", "id": "deal_text", "label": "Tekst", "info": "[timer] = aftelling", "default": "HÏ Performance Days · eindigt over [timer]" },
+    { "type": "text", "id": "deal_extra", "label": "Extra regel", "info": "[prijs3] = prijs 3-pack, [per_paar] = prijs per paar met actie", "default": "Kies 3 paar, krijg er 3 gratis bij: 6 paar voor [prijs3]" },
+    { "type": "text", "id": "deal_pill", "label": "Label boven de kop", "default": "HÏ Performance Days · nog" },
+    { "type": "text", "id": "deal_sticky", "label": "Sticky balk tijdens actie", "default": "6 paar voor [prijs3]" },
     { "type": "header", "content": "Sticky balk (mobiel)" },
     { "type": "checkbox", "id": "show_sticky", "label": "Toon sticky balk", "default": true },
     { "type": "text", "id": "sticky_text", "label": "Tekst", "default": "Gratis verzonden · 30 dagen retour" },

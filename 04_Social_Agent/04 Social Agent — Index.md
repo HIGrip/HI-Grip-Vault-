@@ -69,6 +69,51 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Visuele Productie/Meta-batch-2026-11/video
 - [[UGC-sceptische-sporter]]
 
+### Visuele Productie/Performance-Days-2026-11
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/COPY|Performance-Days-2026-11/COPY]]
+- [[PROMPT]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-3plus3
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-3plus3/COPY|AB-3plus3/COPY]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-agents
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-agents/COPY|AB-agents/COPY]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-chatgpt
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-chatgpt/COPY|AB-chatgpt/COPY]]
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-chatgpt/PROMPTS|AB-chatgpt/PROMPTS]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-claude
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-claude/COPY|AB-claude/COPY]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-doelgroep
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-doelgroep/COPY|AB-doelgroep/COPY]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-ronde3
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-ronde3/BRIEF|AB-ronde3/BRIEF]]
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-ronde3/COPY|AB-ronde3/COPY]]
+- [[OORDEEL]]
+- [[SHORTLIST]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-ronde3/ronde1
+- [[01_klant_padel]]
+- [[02_klant_voetbal]]
+- [[03_klant_pilates]]
+- [[04_klant_scepticus]]
+- [[05_psycholoog]]
+- [[06_art_director]]
+- [[08_design_agent]]
+- [[09_copywriter]]
+- [[10_strategist]]
+
+### Visuele Productie/Performance-Days-2026-11/AB-teens
+- [[CONCEPTEN]]
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-teens/COPY|AB-teens/COPY]]
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/AB-teens/PROMPTS|AB-teens/PROMPTS]]
+
+### Visuele Productie/Performance-Days-2026-11/voor-chatgpt
+- [[04_Social_Agent/Visuele Productie/Performance-Days-2026-11/voor-chatgpt/BRIEF|voor-chatgpt/BRIEF]]
+
 ### Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19
 - [[04_Social_Agent/Visuele Productie/Rugby-checklist-kleedkamer-2026-11-19/COPY|Rugby-checklist-kleedkamer-2026-11-19/COPY]]
 

@@ -57,3 +57,5 @@ Je sport vaker dan je wast. Tijdens de HÏ Performance Days krijg je bij elk 3-p
 - HÏ met trema (logo): ja. Eigen packshots: ja
 - Reel-veilige zone: alles tussen y 250 en ~1335 (op 1080×1920): ja
 - Pixels: 2160×2700 en 2160×3840 (PIL): ja
+
+> Map: [[04 Social Agent — Index]]

@@ -1,0 +1,36 @@
+@font-face { font-family: Poppins; font-weight: 400; src: url(../../../Meta-batch-2026-11/fonts/Poppins-Regular.ttf); }
+@font-face { font-family: Poppins; font-weight: 500; src: url(../../../Meta-batch-2026-11/fonts/Poppins-Medium.ttf); }
+@font-face { font-family: Poppins; font-weight: 600; src: url(../../../Meta-batch-2026-11/fonts/Poppins-SemiBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 700; src: url(../../../Meta-batch-2026-11/fonts/Poppins-Bold.ttf); }
+@font-face { font-family: Poppins; font-weight: 800; src: url(../../../Meta-batch-2026-11/fonts/Poppins-ExtraBold.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; src: url(../../../Meta-batch-2026-11/fonts/Poppins-Black.ttf); }
+@font-face { font-family: Poppins; font-weight: 900; font-style: italic; src: url(../../../Meta-batch-2026-11/fonts/Poppins-BlackItalic.ttf); }
+@font-face { font-family: Poppins; font-weight: 400; font-style: italic; src: url(../../../Meta-batch-2026-11/fonts/Poppins-Italic.ttf); }
+
+:root {
+  --hi-black: #0A0A0A;
+  --hi-white: #FFFFFF;
+  --hi-yellow: #CCFF00;
+  --hi-near-black: #111111;
+  --hi-warm-dark: #1a1a1a;
+  --hi-titanium: #909194;
+  --hi-warm-offwhite: #EAE8E5;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; overflow: hidden; }
+body { font-family: Poppins, system-ui, sans-serif; color: var(--hi-white); -webkit-font-smoothing: antialiased; }
+.ad { position: relative; width: 1080px; overflow: hidden; background: var(--hi-near-black); }
+.feed { height: 1350px; }
+.reel { height: 1920px; }
+.abs { position: absolute; }
+.logo { position: absolute; left: 50%; transform: translateX(-50%); height: 58px; }
+.kop { position: absolute; left: 72px; font-weight: 900; font-style: italic; text-transform: uppercase; line-height: .9; letter-spacing: -.04em; }
+.txt { position: absolute; left: 72px; font: 500 30px/1.4 Poppins; }
+.vol { color: var(--hi-yellow); }
+.dim { color: var(--hi-titanium); }
+
+.pill { display: inline-flex; align-items: center; gap: 22px; height: 80px; padding: 0 12px 0 36px; border-radius: 40px;
+        background: var(--hi-white); color: var(--hi-black); font: 700 30px/1 Poppins; }
+.pill i { width: 56px; height: 56px; border-radius: 50%; background: var(--hi-black); display: grid; place-items: center; }
+.pill svg { width: 22px; height: 22px; }

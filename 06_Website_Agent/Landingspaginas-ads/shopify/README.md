@@ -38,6 +38,8 @@ Het koopblok heeft een actieblok (instellingen "Actie (Performance Days)"): zwar
 
 Gepusht (alleen nieuwe bestanden, `--only`, niets overschreven) naar live `205415153991` "BLACK FRIDAY werkthema 24-11-2026" en `205362889031` "Kopie van Live website 23-11-2026". In de Kopie ontbrak `snippets/hi-pack-data.liquid` (bundelkeuze werkte daar ook op de productpagina niet); die is daar toegevoegd.
 
+26-11: de Performance Days-versie (x2-balk, bol-foto's, één dealstrook) eerst in de Kopie getest, daarna naar live gepusht (secties, `hi-adl-deal`, css, js en de 3 templates). Live templates waren vooraf gelijk aan de vault (geen editorwijzigingen), dus overschrijven was veilig.
+
 Bij een nieuw live thema (kopie van een oud thema): eerst `shopify theme list`, dan deze map pushen met `--only "sections/hi-adl-*" --only "snippets/hi-adl-*" --only "assets/hi-adl.*"`. Templates alleen pushen als het doelthema ze nog niet heeft, anders gaan editorwijzigingen verloren. `_build_templates.py` maakt de templates opnieuw uit de prototype-inhoud.
 
 ## Open

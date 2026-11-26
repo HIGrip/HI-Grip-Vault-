@@ -79,15 +79,15 @@
         "photo_4": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-pack3-wit.webp",
+            "image": "shopify://shop_images/adl-bol-wit.webp",
             "color": "wit",
-            "fit": "contain"
+            "fit": "cover"
           }
         },
         "photo_5": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-p-wit-achter.webp",
+            "image": "shopify://shop_images/adl-pack3-wit.webp",
             "color": "wit",
             "fit": "contain"
           }
@@ -95,12 +95,28 @@
         "photo_6": {
           "type": "photo",
           "settings": {
+            "image": "shopify://shop_images/adl-p-wit-achter.webp",
+            "color": "wit",
+            "fit": "contain"
+          }
+        },
+        "photo_7": {
+          "type": "photo",
+          "settings": {
             "image": "shopify://shop_images/adl-rb-zool-wit.jpg",
             "color": "wit",
             "fit": "cover"
           }
         },
-        "photo_7": {
+        "photo_8": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-bol-zwart.webp",
+            "color": "zwart",
+            "fit": "cover"
+          }
+        },
+        "photo_9": {
           "type": "photo",
           "settings": {
             "image": "shopify://shop_images/adl-pack3-zwart.webp",
@@ -108,7 +124,7 @@
             "fit": "contain"
           }
         },
-        "photo_8": {
+        "photo_10": {
           "type": "photo",
           "settings": {
             "image": "shopify://shop_images/adl-p-zwart-achter.webp",
@@ -116,7 +132,7 @@
             "fit": "contain"
           }
         },
-        "photo_9": {
+        "photo_11": {
           "type": "photo",
           "settings": {
             "image": "shopify://shop_images/adl-rb-zwart-veld.jpg",
@@ -134,7 +150,9 @@
         "photo_6",
         "photo_7",
         "photo_8",
-        "photo_9"
+        "photo_9",
+        "photo_10",
+        "photo_11"
       ]
     },
     "athletes": {

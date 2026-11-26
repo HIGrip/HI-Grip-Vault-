@@ -28,11 +28,11 @@ Shopify-versie van prototype v1.8. Bron van de bestanden in deze map; na de eers
 - **Secties** (alle instellingen in de editor): `hi-adl-buy` (koopblok met blokken *Ad-variant* en *Galerijfoto*), `hi-adl-athletes`, `hi-adl-reviews`, `hi-adl-tiles`, `hi-adl-science`, `hi-adl-faq`, `hi-adl-offer`. Stijl `assets/hi-adl.css`, gedrag `assets/hi-adl.js`, snippets `hi-adl-image` en `hi-adl-stars`.
 - **Ad-variant:** `?ad=<code>` kiest het blok met die code (kop, subtekst, post-it, bezwaren, ad-foto als derde beeld). Zonder code: het eerste blok.
 - **Winkelwagen:** zelfde route als de productpagina: `hi-bundle` (1/3/5-pack, prijzen uit `hi-pack-data`) + Horizon `product-form-component`. Bundelkorting en Black Friday-actiepaar komen uit de winkelwagen zelf. Getest 26-11: 3-pack zwart → €44,95 + gratis actiepaar.
-- **Foto's:** Shopify Bestanden, naam `adl-*` (30 stuks, met alt-tekst). Vervangen kan per instelling in de editor.
+- **Foto's:** Shopify Bestanden, naam `adl-*` (32 stuks, met alt-tekst). Vervangen kan per instelling in de editor. Eerste foto per kleur is de losse sok: `adl-bol-wit.webp` (bron: "Bol voorkant foto 2.0" op de drive) en `adl-bol-zwart.webp` ("Zwart voorkant"), met marge rondom zodat de uitsnede op mobiel (4:3) en desktop (1:1) past.
 
 ## Actie (Performance Days)
 
-Koopblok en slotaanbod hebben een actieblok (instellingen "Actie (Performance Days)"): label boven de kop, dealstrook "1+1 · Verdubbel je order" met aftelling en "6 paar voor €44,95", sticky balk en een "3+3"-strook bij het slotaanbod. Alles verdwijnt vanzelf na de eindtijd (standaard 2026-11-30 23:59); leeg = geen actie. De aftelling zit in `hi-adl.js`, zodat ze ook werkt in thema's zonder `hg-pd-timer.js`. De korting zelf (gratis actiepaar) komt uit de winkelwagen.
+Het koopblok heeft een actieblok (instellingen "Actie (Performance Days)"): label "1+1 · HÏ Performance Days" rechtsonder op de eerste foto, één dealstrook "1+1 · Verdubbel je order" met aftelling en "6 paar voor €44,95" en de sticky balk. Het slotaanbod heeft geen eigen actiestrook meer (stond dubbel). Alles verdwijnt vanzelf na de eindtijd (standaard 2026-11-30 23:59); leeg = geen actie. De aftelling zit in `hi-adl.js`, zodat ze ook werkt in thema's zonder `hg-pd-timer.js`. De korting zelf (gratis actiepaar) komt uit de winkelwagen.
 
 ## Thema's
 

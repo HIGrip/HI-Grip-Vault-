@@ -89,6 +89,7 @@ class AdlBuy extends HTMLElement {
       button.setAttribute('aria-pressed', String(i === index));
     });
     if (this.note) this.note.hidden = index !== 0;
+    this.querySelector('.adl-gal__pd')?.classList.toggle('is-off', index !== 0);
   }
 
   // Binnen 1 werkdag verzonden: in het weekend gaat het pakket dinsdag de deur uit

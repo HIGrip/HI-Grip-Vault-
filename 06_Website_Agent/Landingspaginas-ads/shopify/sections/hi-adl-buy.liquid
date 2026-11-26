@@ -47,11 +47,6 @@
 <adl-buy class="adl adl-buy" id="koop">
   <div class="adl-wrap adl-buy__grid">
     <div class="adl-buy__head">
-      {%- if deal_active -%}
-        <a class="adl-pill" href="#koop" data-deal-end="{{ deal_end | times: 1000 }}">
-          <span>{{ section.settings.deal_badge }}</span>{{ section.settings.deal_pill }} <b data-pd-cd>--</b>
-        </a>
-      {%- endif -%}
       {%- for block in section.blocks -%}
         {%- if block.type == 'ad' -%}
           <div class="adl-ad" data-ad="{{ block.settings.code | escape }}" {{ block.shopify_attributes }}>
@@ -148,6 +143,12 @@
             </div>
           {%- endif -%}
         {%- endfor -%}
+
+        {%- if deal_active and section.settings.deal_pill != blank -%}
+          <p class="adl-gal__pd" data-deal-end="{{ deal_end | times: 1000 }}">
+            <span>{{ section.settings.deal_badge }}</span>{{ section.settings.deal_pill }}
+          </p>
+        {%- endif -%}
       </div>
       <div class="adl-gal__thumbs" role="group" aria-label="Foto's"></div>
     </div>
@@ -331,7 +332,7 @@
     { "type": "text", "id": "deal_title", "label": "Titel", "default": "Verdubbel je order" },
     { "type": "text", "id": "deal_text", "label": "Tekst", "info": "[timer] = aftelling", "default": "HÏ Performance Days · eindigt over [timer]" },
     { "type": "text", "id": "deal_extra", "label": "Extra regel", "info": "[prijs3] = prijs 3-pack, [per_paar] = prijs per paar met actie", "default": "Kies 3 paar, krijg er 3 gratis bij: 6 paar voor [prijs3]" },
-    { "type": "text", "id": "deal_pill", "label": "Label boven de kop", "default": "HÏ Performance Days · nog" },
+    { "type": "text", "id": "deal_pill", "label": "Label op de eerste foto", "info": "Leeg = geen label", "default": "HÏ Performance Days" },
     { "type": "text", "id": "deal_sticky", "label": "Sticky balk tijdens actie", "default": "6 paar voor [prijs3]" },
     { "type": "header", "content": "Sticky balk (mobiel)" },
     { "type": "checkbox", "id": "show_sticky", "label": "Toon sticky balk", "default": true },

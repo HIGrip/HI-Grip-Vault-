@@ -80,15 +80,15 @@
         "photo_4": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-pack3-wit.webp",
+            "image": "shopify://shop_images/adl-bol-wit.webp",
             "color": "wit",
-            "fit": "contain"
+            "fit": "cover"
           }
         },
         "photo_5": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-p-wit-achter.webp",
+            "image": "shopify://shop_images/adl-pack3-wit.webp",
             "color": "wit",
             "fit": "contain"
           }
@@ -96,15 +96,15 @@
         "photo_6": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-v-trap.jpg",
+            "image": "shopify://shop_images/adl-p-wit-achter.webp",
             "color": "wit",
-            "fit": "cover"
+            "fit": "contain"
           }
         },
         "photo_7": {
           "type": "photo",
           "settings": {
-            "image": "shopify://shop_images/adl-vb-zool-bal.jpg",
+            "image": "shopify://shop_images/adl-v-trap.jpg",
             "color": "wit",
             "fit": "cover"
           }
@@ -112,12 +112,28 @@
         "photo_8": {
           "type": "photo",
           "settings": {
+            "image": "shopify://shop_images/adl-vb-zool-bal.jpg",
+            "color": "wit",
+            "fit": "cover"
+          }
+        },
+        "photo_9": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-bol-zwart.webp",
+            "color": "zwart",
+            "fit": "cover"
+          }
+        },
+        "photo_10": {
+          "type": "photo",
+          "settings": {
             "image": "shopify://shop_images/adl-pack3-zwart.webp",
             "color": "zwart",
             "fit": "contain"
           }
         },
-        "photo_9": {
+        "photo_11": {
           "type": "photo",
           "settings": {
             "image": "shopify://shop_images/adl-p-zwart-achter.webp",
@@ -125,7 +141,7 @@
             "fit": "contain"
           }
         },
-        "photo_10": {
+        "photo_12": {
           "type": "photo",
           "settings": {
             "image": "shopify://shop_images/adl-g-trap-zwart.jpg",
@@ -144,7 +160,9 @@
         "photo_7",
         "photo_8",
         "photo_9",
-        "photo_10"
+        "photo_10",
+        "photo_11",
+        "photo_12"
       ]
     },
     "reviews": {

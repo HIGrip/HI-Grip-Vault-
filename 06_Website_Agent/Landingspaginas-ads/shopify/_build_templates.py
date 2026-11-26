@@ -24,9 +24,9 @@ def photo(name, color, fit):
 
 
 def photos(wit, zwart):
-    base = [photo('pack3-wit.webp', 'wit', 'contain'), photo('p-wit-achter.webp', 'wit', 'contain')]
+    base = [photo('bol-wit.webp', 'wit', 'cover'), photo('pack3-wit.webp', 'wit', 'contain'), photo('p-wit-achter.webp', 'wit', 'contain')]
     base += [photo(n, 'wit', 'cover') for n in wit]
-    base += [photo('pack3-zwart.webp', 'zwart', 'contain'), photo('p-zwart-achter.webp', 'zwart', 'contain')]
+    base += [photo('bol-zwart.webp', 'zwart', 'cover'), photo('pack3-zwart.webp', 'zwart', 'contain'), photo('p-zwart-achter.webp', 'zwart', 'contain')]
     base += [photo(n, 'zwart', 'cover') for n in zwart]
     return base
 

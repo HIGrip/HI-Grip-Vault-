@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Goede landingspagina's achter een advertentie herhalen de kop, het aanbod en de beeldwereld van de ad, maar niet dezelfde foto: de bezoeker heeft die al gezien en zoekt nu product, prijs en bewijs. Daarom is v1.2 een productpagina-hero met de ad-kop als titel, een ander beeld uit dezelfde shoot en het koopblok boven de vouw."
-gerelateerd: [2026-11-23-meta-campagnerapport, 2026-10-19-productpagina-2-0-inspiratie-en-prototype]
+gerelateerd: [2026-11-23-meta-campagnerapport, 2026-10-19-productpagina-2-0-inspiratie-en-prototype, 2026-11-26-productpagina-2-0-onderzoek-en-prototype]
 vervangt: []
 bronbestand: "https://claude.ai/artifact/HEqx2vynfaRthLzoG5fYFQ"
 deadline: ""

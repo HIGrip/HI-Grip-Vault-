@@ -42,7 +42,7 @@ Zoek gericht; lees dit niet in zijn geheel.
 - Growth-radar: 14 notities
 - Onderzoek: 4 notities
 - Onderzoeksnotities (datum-id in de bestandsnaam): 9 notities
-- Routines: 15 notities
+- Routines: 16 notities
 - SEO: 16 notities
 - Social-en-video: 1 notities
 - Strategie-en-concurrentie: 3 notities
@@ -51,5 +51,5 @@ Zoek gericht; lees dit niet in zijn geheel.
 - Weekoverzichten: 4 notities
 - _backlog: 2 notities
 - _build: 1 notities
-- _geheugen: 13 notities
+- _geheugen: 14 notities
 - _uitvoer: 4 notities

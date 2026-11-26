@@ -11,3 +11,5 @@
 
 ## Log
 <!-- JJJJ-MM-DD | type | sport | TITEL | voorgestelde datum | status (open / inplannen / aanpassen / verwijderen / verdwenen) | reden -->
+2026-11-26 | greenscreen | voetbal | FEYENOORD IN EEN DIP: HOE KOM JE ERUIT? | 28 NOV | open | handmatig gezet in een losse sessie, titel nog zonder REEL (Buffer-ID 6b0833f036b84192ade0637e)
+2026-11-26 | kantoorchallenge | algemeen | STOPPEN OP DE STREEP: SOKKEN VS GRIP | 3 DEC | open | handmatig gezet in een losse sessie, titel nog zonder REEL (Buffer-ID 6b0833f0863efaf8540a948c)

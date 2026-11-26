@@ -312,3 +312,5 @@ De drie versies delen geen kopzin, regel, body-zin of knoplabel. Alleen de produ
 **Wat een expert nog zou toevoegen:** bevestigde livegang, datum en deal in het voordeel-slot en de modules; een echte macro van de siliconen zones; extra rugbymateriaal als rugby de hoek moet blijven; A/B-test van onderwerpen; UTM-structuur; plain-text versie; bij een cijfer voor grip de verplichte formuleringsregel met bron (Brand Core r.145-150).
 
 Map: 06_Website_Agent, E-mail Marketing
+
+> Map: [[06 Website Agent — Index]]

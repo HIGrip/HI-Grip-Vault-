@@ -57,6 +57,14 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Doel
 - [[Website Doel & KPI's]]
 
+### E-mail Marketing
+- [[2026-11-17-early-access-artdirection-overdracht-v2]]
+- [[2026-11-17-early-access-overdracht-design-ronde1]]
+- [[2026-11-17-early-access-zes-concepten]]
+- [[2026-11-23-early-access-opening-brief]]
+- [[2026-11-23-performance-days-publiek-drie-copyversies-v2]]
+- [[2026-11-23-performance-days-publiek-drie-copyversies]]
+
 ### E-mail Marketing/Stijl
 - [[E-mail Design & Stijlgids]]
 - [[E-mail Mailflows Artifact]]
@@ -68,6 +76,12 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### E-mail Marketing/Technisch
 - [[E-mail Verzending & Techniek]]
+
+### E-mail Marketing/orderbevestiging
+- [[06_Website_Agent/E-mail Marketing/orderbevestiging/README|orderbevestiging/README]]
+
+### Landingspaginas-ads/shopify
+- [[06_Website_Agent/Landingspaginas-ads/shopify/README|shopify/README]]
 
 ### SEO
 - [[2026-09-15-seo-audit]]

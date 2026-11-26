@@ -1,0 +1,66 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign value_low = section.settings.value_low | replace: ',', '.' | times: 1.0
+  assign value_high = section.settings.value_high | replace: ',', '.' | times: 1.0
+  assign width_low = 51
+  if value_high > 0
+    assign width_low = value_low | divided_by: value_high | times: 100 | round
+  endif
+  assign rows = section.settings.rows | newline_to_br | split: '<br />'
+  assign check = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  assign cross = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg>'
+-%}
+
+<section class="adl adl-sci">
+  <div class="adl-wrap adl-sci__grid">
+    <div>
+      <h2 class="adl-sci__h">{{ section.settings.heading }}</h2>
+      <p class="adl-sci__p">{{ section.settings.text }}</p>
+      <div class="adl-bars" role="img" aria-label="{{ section.settings.label_low }} {{ section.settings.value_low }}, {{ section.settings.label_high }} {{ section.settings.value_high }}">
+        <div class="adl-bar"><span>{{ section.settings.label_low }}</span><i style="--w: {{ width_low }}%"></i><b>{{ section.settings.value_low }}</b></div>
+        <div class="adl-bar adl-bar--hi"><span>{{ section.settings.label_high }}</span><i style="--w: 100%"></i><b>{{ section.settings.value_high }}</b></div>
+      </div>
+      <p class="adl-sci__src">{{ section.settings.source }}</p>
+    </div>
+
+    <table class="adl-vs">
+      <thead>
+        <tr><th></th><th class="is-hi">{{ section.settings.col_us }}</th><th>{{ section.settings.col_them }}</th></tr>
+      </thead>
+      <tbody>
+        {%- for row in rows -%}
+          {%- assign row = row | strip -%}
+          {%- if row != blank -%}
+            <tr>
+              <td>{{ row }}</td>
+              <td class="is-hi"><span class="visually-hidden">Ja</span>{{ check }}</td>
+              <td class="is-no"><span class="visually-hidden">Nee</span>{{ cross }}</td>
+            </tr>
+          {%- endif -%}
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ad-landing: meting",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "95% meer grip" },
+    { "type": "textarea", "id": "text", "label": "Tekst", "default": "Gemeten bij gripsokken als categorie: de wrijving tussen voet en schoen bijna verdubbelt." },
+    { "type": "text", "id": "label_low", "label": "Label laag", "default": "Gewone sok" },
+    { "type": "text", "id": "value_low", "label": "Waarde laag", "default": "0,60" },
+    { "type": "text", "id": "label_high", "label": "Label hoog", "default": "Gripsok" },
+    { "type": "text", "id": "value_high", "label": "Waarde hoog", "default": "1,17" },
+    { "type": "text", "id": "source", "label": "Bron", "default": "Statische wrijvingscoëfficiënt. Bron: Apps et al. 2022, Journal of Sports Sciences." },
+    { "type": "header", "content": "Vergelijking" },
+    { "type": "text", "id": "col_us", "label": "Kolom HÏ Grip", "default": "HÏ Grip 2.0" },
+    { "type": "text", "id": "col_them", "label": "Kolom anders", "default": "Gewone sok" },
+    { "type": "textarea", "id": "rows", "label": "Rijen", "info": "Eén kenmerk per regel", "default": "Siliconen gripzones\nCompressie 15–20 mmHg\nCoolmax 30%\nNaadloos\nDemping en versterkte hiel" }
+  ],
+  "presets": [{ "name": "Ad-landing: meting" }]
+}
+{% endschema %}

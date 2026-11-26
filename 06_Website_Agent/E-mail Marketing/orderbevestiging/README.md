@@ -7,8 +7,6 @@ bijgewerkt: 2026-11-24
 
 # Orderbevestiging
 
-> Map: [[E-mail Marketing]]
-
 Opdracht: [[2026-11-24-orderbevestiging-drie-opties-prompt]]. Gekozen: **optie D "Statusbalk"** (25-11-2026, akkoord Lars). Opties A tot en met C hieronder zijn afgewezen ("allemaal slecht") en blijven alleen als archief.
 
 ## Optie D: Statusbalk (gekozen)
@@ -123,3 +121,5 @@ Niet onafhankelijk bewezen: QA draaide in dezelfde sessie als de bouwer.
 | Niets in Shopify gezet of verstuurd | ja | ja | ja |
 
 Mijn voorkeur: **B**, omdat de witte bon op doorlopend zwart het meest als één geheel leest en het dichtst bij de bestaande mails staat. **A** is de veiligste keuze voor Outlook.
+
+> Map: [[06 Website Agent — Index]]

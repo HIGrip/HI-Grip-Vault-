@@ -2,7 +2,6 @@
 titel: Early-access openingsmail 23-11-2026, herontwerp v2
 status: concept, niets verstuurd
 ---
-> Map: [[Home]]
 
 # Early-access openingsmail, v2 (herontwerp)
 
@@ -63,3 +62,5 @@ Echte e-mailclients, dark mode (alleen hooks), spamtest, SendWILL-import, het af
 
 ## Werkscripts
 `bron/` bevat de drie scripts (beeldbouw, html-generator, render). Ze lezen de Drive-kopie, wijzigen geen origineel.
+
+> Map: [[07 Design Agent — Index]]

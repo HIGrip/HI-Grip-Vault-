@@ -1,0 +1,383 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+{{ 'product-improvements.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hi-adl.js' | asset_url }}" defer></script>
+{% render 'add-to-cart-button-styles' %}
+{% render 'fly-to-cart-styles' %}
+
+{%- liquid
+  assign p_wit = section.settings.product_wit
+  assign p_zwart = section.settings.product_zwart
+  assign start_color = section.settings.start_color
+  assign colors = 'wit,zwart' | split: ','
+
+  # Prijs van het 3-pack voor de sticky balk, uit dezelfde bron als de bundelkeuze
+  if start_color == 'zwart'
+    assign start_product = p_zwart
+  else
+    assign start_product = p_wit
+  endif
+  capture pack_data
+    render 'hi-pack-data', product_id: start_product.id
+  endcapture
+  assign pack_prices = pack_data | strip | split: '|' | last | split: ','
+  assign three_pack_price = pack_prices[1] | plus: 0
+  if three_pack_price == 0
+    assign three_pack_price = start_product.price | times: 3
+  endif
+
+  assign chevron = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M5 2l5 5-5 5"/></svg>'
+  assign check = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  assign box = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg>'
+  assign back = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 010 10h-3"/></svg>'
+  assign truck = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>'
+-%}
+
+<adl-buy class="adl adl-buy" id="koop">
+  <div class="adl-wrap adl-buy__grid">
+    <div class="adl-buy__head">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'ad' -%}
+          <div class="adl-ad" data-ad="{{ block.settings.code | escape }}" {{ block.shopify_attributes }}>
+            <h1 class="adl-buy__h adl-buy__h--{{ block.settings.style }}">
+              {%- if block.settings.heading_light != blank -%}
+                <span class="adl-buy__light">{{ block.settings.heading_light }}</span>
+              {% endif -%}
+              {{ block.settings.heading }}
+              {%- if block.settings.strike_words != blank -%}
+                {%- assign strike_words = block.settings.strike_words | split: ',' -%}
+                {%- for word in strike_words %} <span class="adl-strike">{{ word | strip }}</span>{% endfor -%}
+              {%- endif -%}
+            </h1>
+            {%- if block.settings.sub != blank -%}
+              <p class="adl-buy__sub">{{ block.settings.sub }}</p>
+            {%- endif -%}
+            {%- if block.settings.signature != blank -%}
+              <p class="adl-buy__sig">
+                {%- render 'hi-adl-image', image: section.settings.signature_mark, sizes: '22px', width: 88 -%}
+                {{ block.settings.signature }}
+              </p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+
+      <a href="#reviews" class="adl-buy__rate">
+        {%- render 'hi-adl-stars' -%}
+        <span>{{ section.settings.rating_text }}</span>
+      </a>
+
+      {%- if section.settings.athlete_quote != blank -%}
+        <p class="adl-buy__ath">
+          {%- render 'hi-adl-image', image: section.settings.athlete_avatar_1, sizes: '30px', width: 90, alt: '' -%}
+          {%- render 'hi-adl-image', image: section.settings.athlete_avatar_2, sizes: '30px', width: 90, alt: '' -%}
+          <span>“{{ section.settings.athlete_quote }}” <b>{{ section.settings.athlete_name }}</b>{% if section.settings.athlete_role != blank %}, {{ section.settings.athlete_role }}{% endif %}</span>
+        </p>
+      {%- endif -%}
+    </div>
+
+    <div class="adl-gal">
+      <div class="adl-gal__media">
+        {%- for color in colors -%}
+          <div class="adl-gal__set" data-color="{{ color }}"{% if color != start_color %} hidden{% endif %}>
+            {%- assign slide_count = 0 -%}
+            {%- for block in section.blocks -%}
+              {%- liquid
+                assign slide_image = blank
+                assign slide_lead = ''
+                assign slide_fit = 'cover'
+                if block.type == 'photo' and block.settings.color == color
+                  assign slide_image = block.settings.image
+                  assign slide_fit = block.settings.fit
+                elsif block.type == 'ad' and block.settings.lead_color == color
+                  assign slide_image = block.settings.lead_image
+                  assign slide_lead = block.settings.code
+                endif
+                if slide_image == blank
+                  continue
+                endif
+                assign is_first = false
+                if color == start_color and slide_count == 0
+                  assign is_first = true
+                endif
+                assign slide_count = slide_count | plus: 1
+              -%}
+              <figure
+                class="adl-gal__slide"
+                data-fit="{{ slide_fit }}"
+                data-thumb="{{ slide_image | image_url: width: 160 }}"
+                {% if slide_lead != '' %}data-lead="{{ slide_lead | escape }}"{% endif %}
+                {% unless is_first %}hidden{% endunless %}
+              >
+                {%- render 'hi-adl-image', image: slide_image, sizes: '(min-width: 980px) 55vw, 100vw', eager: is_first -%}
+              </figure>
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'ad' and block.settings.note_items != blank -%}
+            {%- assign note_items = block.settings.note_items | newline_to_br | split: '<br />' -%}
+            <div class="adl-note{% if block.settings.note_color == 'red' %} adl-note--red{% endif %}" data-ad="{{ block.settings.code | escape }}">
+              <b>{{ block.settings.note_title }}</b>
+              <ul>
+                {%- for item in note_items -%}
+                  {%- assign item = item | strip -%}
+                  {%- if item != blank -%}
+                    <li><span class="adl-box">{{ check }}</span>{{ item }}</li>
+                  {%- endif -%}
+                {%- endfor -%}
+                <li><span class="adl-box adl-box--open">{{ check }}</span>{{ block.settings.note_last }}</li>
+              </ul>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="adl-gal__thumbs" role="group" aria-label="Foto's"></div>
+    </div>
+
+    <div class="adl-buy__form">
+      {%- if p_wit != blank and p_zwart != blank -%}
+        <fieldset class="adl-sw">
+          <legend>Kleur: <b data-color-name>{% if start_color == 'zwart' %}Zwart{% else %}Wit{% endif %}</b></legend>
+          <div class="adl-sw__row">
+            <label class="adl-sw__o">
+              <input type="radio" name="adl-kleur-{{ section.id }}" value="wit" data-label="Wit"{% if start_color == 'wit' %} checked{% endif %}>
+              {%- render 'hi-adl-image', image: section.settings.swatch_wit, sizes: '46px', width: 138, alt: 'Wit' -%}
+            </label>
+            <label class="adl-sw__o">
+              <input type="radio" name="adl-kleur-{{ section.id }}" value="zwart" data-label="Zwart"{% if start_color == 'zwart' %} checked{% endif %}>
+              {%- render 'hi-adl-image', image: section.settings.swatch_zwart, sizes: '46px', width: 138, alt: 'Zwart' -%}
+            </label>
+          </div>
+        </fieldset>
+      {%- endif -%}
+
+      {%- for color in colors -%}
+        {%- liquid
+          if color == 'zwart'
+            assign panel_product = p_zwart
+          else
+            assign panel_product = p_wit
+          endif
+          if panel_product == blank
+            continue
+          endif
+          assign variant = panel_product.selected_or_first_available_variant
+          assign form_id = 'AdlForm-' | append: section.id | append: '-' | append: color
+          assign submit_id = form_id | append: '-submit'
+        -%}
+        <div class="adl-buy__panel" data-color="{{ color }}"{% if color != start_color %} hidden{% endif %}>
+          {%- capture bundle_html -%}{% render 'hi-bundle', product: panel_product %}{%- endcapture -%}
+          {%- comment -%} hi-bundle laadt zijn script zelf; bij de tweede kleur niet nog een keer {%- endcomment -%}
+          {%- if bundle_script_done -%}
+            {{ bundle_html | split: '<script' | first }}
+          {%- else -%}
+            {{ bundle_html }}
+            {%- assign bundle_script_done = true -%}
+          {%- endif -%}
+
+          <product-form-component
+            id="AdlProductForm-{{ section.id }}-{{ color }}"
+            data-section-id="{{ section.id }}"
+            data-product-id="{{ panel_product.id }}"
+            data-product-url="{{ panel_product.url }}"
+            data-quantity-default="1"
+            on:submit="/handleSubmit"
+          >
+            <div class="visually-hidden" aria-live="assertive" role="status" aria-atomic="true" ref="liveRegion"></div>
+            {%- form 'product', panel_product, id: form_id, data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" ref="variantId" value="{{ variant.id }}">
+              <span class="product-form-text__error hidden" ref="addToCartTextError"></span>
+              {%- liquid
+                if variant.available
+                  assign can_add = true
+                  assign add_text = 'products.product.add_to_cart' | t
+                else
+                  assign can_add = false
+                  assign add_text = 'products.product.sold_out' | t
+                endif
+              -%}
+              {% render 'add-to-cart-button',
+                id: submit_id,
+                class: 'add-to-cart-button button',
+                can_add_to_cart: can_add,
+                show_icon: can_add,
+                product: panel_product,
+                add_to_cart_text: add_text
+              %}
+            {%- endform -%}
+          </product-form-component>
+        </div>
+      {%- endfor -%}
+
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'ad' and block.settings.qa != blank -%}
+          {%- assign qa_lines = block.settings.qa | newline_to_br | split: '<br />' -%}
+          <ul class="adl-buy__qa" data-ad="{{ block.settings.code | escape }}">
+            {%- for line in qa_lines -%}
+              {%- assign parts = line | strip | split: '|' -%}
+              {%- if parts.size > 1 -%}
+                <li><b>{{ parts[0] | strip }}</b> {{ parts[1] | strip }}</li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- if section.settings.ship_text != blank -%}
+        <p class="adl-ship">
+          {{ truck -}}
+          <span>{{ section.settings.ship_text | replace: '[dag]', '<b data-ship-day>binnen 1 werkdag</b>' }}</span>
+        </p>
+      {%- endif -%}
+
+      {%- if section.settings.usps != blank -%}
+        {%- assign usp_lines = section.settings.usps | newline_to_br | split: '<br />' -%}
+        <ul class="adl-usp">
+          {%- for line in usp_lines -%}
+            {%- assign parts = line | strip | split: '|' -%}
+            {%- if parts.size > 1 -%}
+              <li>{%- case forloop.index -%}{%- when 1 -%}{{ box }}{%- when 2 -%}{{ back }}{%- else -%}{{ truck }}{%- endcase -%}<span><b>{{ parts[0] | strip }}</b>{{ parts[1] | strip }}</span></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      <div class="adl-pay" aria-label="Betaalmethodes">
+        {%- for type in shop.enabled_payment_types -%}
+          {{ type | payment_type_svg_tag }}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  {%- if section.settings.show_sticky and start_product != blank -%}
+    <div class="adl-sticky" aria-hidden="true">
+      <div class="adl-wrap">
+        <p><b>3 paar {{ three_pack_price | money }}</b>{{ section.settings.sticky_text }}</p>
+        <a class="adl-cta adl-cta--light" href="#koop" tabindex="-1"><span>{{ section.settings.sticky_label }}</span><i>{{ chevron }}</i></a>
+      </div>
+    </div>
+  {%- endif -%}
+</adl-buy>
+
+{% schema %}
+{
+  "name": "Ad-landing: koopblok",
+  "tag": "section",
+  "class": "section-adl-buy",
+  "settings": [
+    { "type": "paragraph", "content": "De ad-kop wisselt met ?ad=<code> in de link, bijv. ?ad=02. Zonder code verschijnt de eerste ad. De bundelprijzen komen uit dezelfde bundel als de productpagina." },
+    { "type": "product", "id": "product_wit", "label": "Product wit" },
+    { "type": "product", "id": "product_zwart", "label": "Product zwart" },
+    {
+      "type": "select",
+      "id": "start_color",
+      "label": "Startkleur",
+      "options": [
+        { "value": "wit", "label": "Wit" },
+        { "value": "zwart", "label": "Zwart" }
+      ],
+      "default": "wit"
+    },
+    { "type": "image_picker", "id": "swatch_wit", "label": "Kleurknop wit" },
+    { "type": "image_picker", "id": "swatch_zwart", "label": "Kleurknop zwart" },
+    { "type": "header", "content": "Vertrouwen" },
+    { "type": "text", "id": "rating_text", "label": "Reviewregel", "default": "4,6 uit 21 reviews · 3500+ sporters" },
+    { "type": "text", "id": "athlete_quote", "label": "Atleetquote (leeg = verbergen)" },
+    { "type": "text", "id": "athlete_name", "label": "Naam atleet" },
+    { "type": "text", "id": "athlete_role", "label": "Team atleet" },
+    { "type": "image_picker", "id": "athlete_avatar_1", "label": "Avatar 1" },
+    { "type": "image_picker", "id": "athlete_avatar_2", "label": "Avatar 2" },
+    { "type": "image_picker", "id": "signature_mark", "label": "Beeldmerk bij ondertekening" },
+    { "type": "header", "content": "Onder de knop" },
+    { "type": "text", "id": "ship_text", "label": "Verzendregel", "info": "[dag] wordt de verzenddag, bijv. maandag", "default": "Bestel je nu, dan gaat je pakket uiterlijk [dag] de deur uit" },
+    { "type": "textarea", "id": "usps", "label": "USP's (mobiel)", "info": "Eén per regel: vet|rest", "default": "Gratis|verzending vanaf €35\n30 dagen|retour\n1 werkdag|verzonden" },
+    { "type": "header", "content": "Sticky balk (mobiel)" },
+    { "type": "checkbox", "id": "show_sticky", "label": "Toon sticky balk", "default": true },
+    { "type": "text", "id": "sticky_text", "label": "Tekst", "default": "Gratis verzonden · 30 dagen retour" },
+    { "type": "text", "id": "sticky_label", "label": "Knop", "default": "Kies je maat" }
+  ],
+  "blocks": [
+    {
+      "type": "ad",
+      "name": "Ad-variant",
+      "settings": [
+        { "type": "text", "id": "code", "label": "Ad-code", "info": "Twee cijfers, gelijk aan ?ad= in de link", "default": "01" },
+        {
+          "type": "select",
+          "id": "style",
+          "label": "Kopstijl",
+          "options": [
+            { "value": "italic", "label": "Zwaar cursief" },
+            { "value": "plain", "label": "Recht" },
+            { "value": "letter", "label": "Brief" }
+          ],
+          "default": "italic"
+        },
+        { "type": "text", "id": "heading_light", "label": "Lichte eerste regel" },
+        { "type": "text", "id": "heading", "label": "Kop", "default": "Vink hem af." },
+        { "type": "text", "id": "strike_words", "label": "Doorgestreepte woorden", "info": "Gescheiden door komma's" },
+        { "type": "textarea", "id": "sub", "label": "Subtekst" },
+        { "type": "text", "id": "signature", "label": "Ondertekening (brief)" },
+        { "type": "header", "content": "Post-it op de eerste foto" },
+        { "type": "text", "id": "note_title", "label": "Titel", "default": "Checklist voor de wedstrijd" },
+        { "type": "textarea", "id": "note_items", "label": "Afgevinkte items", "info": "Eén per regel. Leeg = geen post-it" },
+        { "type": "text", "id": "note_last", "label": "Laatste item", "default": "HÏ Grip Performance Grip Socks 2.0" },
+        {
+          "type": "select",
+          "id": "note_color",
+          "label": "Kleur post-it",
+          "options": [
+            { "value": "volt", "label": "Volt" },
+            { "value": "red", "label": "Rood" }
+          ],
+          "default": "volt"
+        },
+        { "type": "header", "content": "Ad-foto in de galerij" },
+        { "type": "image_picker", "id": "lead_image", "label": "Foto (komt als derde beeld)" },
+        {
+          "type": "select",
+          "id": "lead_color",
+          "label": "Bij kleur",
+          "options": [
+            { "value": "wit", "label": "Wit" },
+            { "value": "zwart", "label": "Zwart" }
+          ],
+          "default": "wit"
+        },
+        { "type": "header", "content": "Bezwaren" },
+        { "type": "textarea", "id": "qa", "label": "Vraag en antwoord", "info": "Eén per regel: Vraag?|Antwoord" }
+      ]
+    },
+    {
+      "type": "photo",
+      "name": "Galerijfoto",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Foto" },
+        {
+          "type": "select",
+          "id": "color",
+          "label": "Kleur",
+          "options": [
+            { "value": "wit", "label": "Wit" },
+            { "value": "zwart", "label": "Zwart" }
+          ],
+          "default": "wit"
+        },
+        {
+          "type": "select",
+          "id": "fit",
+          "label": "Weergave",
+          "options": [
+            { "value": "contain", "label": "Packshot (heel product)" },
+            { "value": "cover", "label": "Foto (vullend)" }
+          ],
+          "default": "contain"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Ad-landing: koopblok" }]
+}
+{% endschema %}

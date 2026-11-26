@@ -10,8 +10,6 @@ verzending: Lars, handmatig via SendWILL, maandag 23-11-2026 12:00
 
 # Early-access openingsmail 23-11-2026: brief voor Design
 
-> Map: [[06 Website Agent — Index]]
-
 Voor Design: lees dit hele bestand. Strategie en tekst staan vast; beeld, vorm en ritme bepaalt Design. Niets verstuurd, ingepland of aangemaakt; geen lijst of klantdata gelezen; geen code of korting gemaakt. Alles tussen `[INVUL: ...]` is een open feit dat Team HÏ Grip vaststelt en blijft zichtbaar in previews. Geen merge-tags geraden: de SendWILL-syntax is niet bevestigd ([[E-mail Verzending & Techniek]]).
 
 ## 1. Doel en plan
@@ -155,3 +153,5 @@ Wat een expert nog zou toevoegen: een echt vaststaande "extra informatie" voor s
 ## 7. Overdracht
 
 Design Agent: lees dit bestand, `2026-11-23-early-access-opening-brief`. Tekst en volgorde liggen vast, beeld en vorm zijn aan Design, binnen [[Leerregels-Email-Design]] (E6, E8, E9, E10, E13, E15) en [[Ontwerp-analyse]].
+
+> Map: [[06 Website Agent — Index]]

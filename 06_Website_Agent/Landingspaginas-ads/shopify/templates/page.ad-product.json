@@ -1,0 +1,325 @@
+{
+  "sections": {
+    "buy": {
+      "type": "hi-adl-buy",
+      "settings": {
+        "product_wit": "performance-gripsokken-2-0-wit",
+        "product_zwart": "performance-gripsokken-2-0-zwart",
+        "start_color": "zwart",
+        "swatch_wit": "shopify://shop_images/adl-t-sok-wit.webp",
+        "swatch_zwart": "shopify://shop_images/adl-t-sok-zwart.webp",
+        "rating_text": "4,6 uit 21 reviews · 3500+ sporters",
+        "signature_mark": "shopify://shop_images/adl-mark-zwart.png",
+        "ship_text": "Bestel je nu, dan gaat je pakket uiterlijk [dag] de deur uit",
+        "usps": "Gratis|verzending vanaf €35\n30 dagen|retour\n1 werkdag|verzonden",
+        "show_sticky": true,
+        "sticky_text": "Gratis verzonden · 30 dagen retour",
+        "sticky_label": "Kies je maat",
+        "athlete_quote": "",
+        "athlete_name": "",
+        "athlete_role": ""
+      },
+      "blocks": {
+        "ad_1": {
+          "type": "ad",
+          "settings": {
+            "code": "06",
+            "style": "italic",
+            "heading_light": "",
+            "heading": "Niet elke sok houdt je vast.",
+            "strike_words": "",
+            "sub": "Eén voor de wedstrijd. Twee en drie voor de training.",
+            "signature": "",
+            "note_title": "Checklist voor de wedstrijd",
+            "note_items": "",
+            "note_last": "HÏ Grip Performance Grip Socks 2.0",
+            "note_color": "volt",
+            "lead_color": "wit",
+            "qa": ""
+          }
+        },
+        "ad_2": {
+          "type": "ad",
+          "settings": {
+            "code": "07",
+            "style": "italic",
+            "heading_light": "",
+            "heading": "Nooit meer",
+            "strike_words": "schuiven.,glijden.,blaren.",
+            "sub": "Ons anatomisch gevormde grippatroon is gebaseerd op de drukpunten van je voet. Zo sta jij stevig in je schoenen.",
+            "signature": "",
+            "note_title": "Checklist voor de wedstrijd",
+            "note_items": "",
+            "note_last": "HÏ Grip Performance Grip Socks 2.0",
+            "note_color": "volt",
+            "lead_color": "wit",
+            "qa": ""
+          }
+        },
+        "ad_3": {
+          "type": "ad",
+          "settings": {
+            "code": "08",
+            "style": "italic",
+            "heading_light": "",
+            "heading": "Wat houdt je nog tegen?",
+            "strike_words": "",
+            "sub": "",
+            "signature": "",
+            "note_title": "Checklist voor de wedstrijd",
+            "note_items": "",
+            "note_last": "HÏ Grip Performance Grip Socks 2.0",
+            "note_color": "volt",
+            "lead_color": "wit",
+            "qa": "Werkt het echt?|3500+ sporters gingen je voor.\nIs het niet te duur?|€9 korting bij 3 paar.\nZaterdag al nodig?|Binnen 1 werkdag verstuurd.\nWat als hij niet past?|30 dagen retour."
+          }
+        },
+        "photo_4": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-pack3-wit.webp",
+            "color": "wit",
+            "fit": "contain"
+          }
+        },
+        "photo_5": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-p-wit-achter.webp",
+            "color": "wit",
+            "fit": "contain"
+          }
+        },
+        "photo_6": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-v-trap.jpg",
+            "color": "wit",
+            "fit": "cover"
+          }
+        },
+        "photo_7": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-pack3-zwart.webp",
+            "color": "zwart",
+            "fit": "contain"
+          }
+        },
+        "photo_8": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-p-zwart-achter.webp",
+            "color": "zwart",
+            "fit": "contain"
+          }
+        },
+        "photo_9": {
+          "type": "photo",
+          "settings": {
+            "image": "shopify://shop_images/adl-g-trap-zwart.jpg",
+            "color": "zwart",
+            "fit": "cover"
+          }
+        }
+      },
+      "block_order": [
+        "ad_1",
+        "ad_2",
+        "ad_3",
+        "photo_4",
+        "photo_5",
+        "photo_6",
+        "photo_7",
+        "photo_8",
+        "photo_9"
+      ]
+    },
+    "reviews": {
+      "type": "hi-adl-reviews",
+      "settings": {
+        "score": "4,6",
+        "score_label": "21 reviews op Trustpilot",
+        "heading": "3500+ sporters gingen je voor.",
+        "clubs": "<p>Gedragen bij voetbal- en rugbyclubs en te koop bij <strong>Sport 2000</strong>.</p>"
+      },
+      "blocks": {
+        "review_1": {
+          "type": "review",
+          "settings": {
+            "quote": "De sokken doen echt wat er beloofd word, je merkt echt verschil in vergelijking met andere sokken, de grip maakt het verschil. Kwaliteit ook super na diverse keren wassen.",
+            "name": "Adri N.",
+            "date": "31 aug 2025"
+          }
+        },
+        "review_2": {
+          "type": "review",
+          "settings": {
+            "quote": "Het zijn goede sokken met een tof design en de website werkt handig. Ik heb meteen 3 paar gekocht voor kerstcadeaus. Iedereen blij.",
+            "name": "Rox",
+            "date": "18 dec 2025"
+          }
+        },
+        "review_3": {
+          "type": "review",
+          "settings": {
+            "quote": "Gripsokken zitten lekker en grip werkt top! Team heeft passie voor hun onderneming.",
+            "name": "Priscilla V.",
+            "date": "8 mei 2025"
+          }
+        },
+        "review_4": {
+          "type": "review",
+          "settings": {
+            "quote": "Sokken zitten uitstekend en sterke stof met goede grip. Ook voor wandelen fijne sokken. Snelle levering.",
+            "name": "Dick",
+            "date": "12 jun 2025"
+          }
+        },
+        "review_5": {
+          "type": "review",
+          "settings": {
+            "quote": "Wat een top service! Snel geleverd en goede kwaliteit!",
+            "name": "Sharon B.",
+            "date": "4 sep 2025"
+          }
+        },
+        "review_6": {
+          "type": "review",
+          "settings": {
+            "quote": "De sokken zitten echt super lekker! Heb absoluut geen spijt van de aankoop.",
+            "name": "Lydia",
+            "date": "13 jan 2026"
+          }
+        }
+      },
+      "block_order": [
+        "review_1",
+        "review_2",
+        "review_3",
+        "review_4",
+        "review_5",
+        "review_6"
+      ]
+    },
+    "tiles": {
+      "type": "hi-adl-tiles",
+      "settings": {
+        "heading": "Wat je krijgt"
+      },
+      "blocks": {
+        "tile_1": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/adl-d-zwart-grip.jpg",
+            "title": "Siliconen gripzones",
+            "text": "Op de drukpunten van je voet. Je voet blijft staan in je schoen."
+          }
+        },
+        "tile_2": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/adl-d-zwart-rib.jpg",
+            "title": "Compressie 15–20 mmHg",
+            "text": "Steviger om je kuit."
+          }
+        },
+        "tile_3": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/adl-d-zwart-mesh.jpg",
+            "title": "Coolmax 30%",
+            "text": "Voert vocht af van je huid."
+          }
+        },
+        "tile_4": {
+          "type": "tile",
+          "settings": {
+            "image": "shopify://shop_images/adl-d-zwart-hiel.jpg",
+            "title": "Naadloos en gedempt",
+            "text": "Geen naden die schuren, extra laag onder je hiel."
+          }
+        }
+      },
+      "block_order": [
+        "tile_1",
+        "tile_2",
+        "tile_3",
+        "tile_4"
+      ]
+    },
+    "science": {
+      "type": "hi-adl-science",
+      "settings": {}
+    },
+    "faq": {
+      "type": "hi-adl-faq",
+      "settings": {
+        "heading": "Vragen"
+      },
+      "blocks": {
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "question": "Welke maat kies ik?",
+            "answer": "<p>Kies de maat waar je schoenmaat in valt: 35–38, 39–42 of 43–47.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "question": "Heb ik ze op tijd voor de wedstrijd?",
+            "answer": "<p>We versturen je bestelling binnen 1 werkdag.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "question": "Wat als hij niet past?",
+            "answer": "<p>Je hebt 30 dagen om je bestelling te retourneren.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "question": "Wat kost verzending?",
+            "answer": "<p>Vanaf €35 is verzending gratis, dus het 3-pack en 5-pack altijd. Daaronder kost het binnen Nederland €4,50.</p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "question": "Hoe kan ik betalen?",
+            "answer": "<p>Met Klarna, PayPal, Apple Pay, Google Pay, Bancontact, Visa, Mastercard of Maestro.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5"
+      ]
+    },
+    "offer": {
+      "type": "hi-adl-offer",
+      "settings": {
+        "background": "shopify://shop_images/adl-g-trap-zwart.jpg",
+        "heading": "Niet elke sok\nhoudt je vast.",
+        "product": "performance-gripsokken-2-0-zwart",
+        "pack_image": "shopify://shop_images/adl-t-pack3-zwart.webp",
+        "subline": "gratis verzonden · 30 dagen retour",
+        "button": "Kies je maat"
+      }
+    }
+  },
+  "order": [
+    "buy",
+    "reviews",
+    "tiles",
+    "science",
+    "faq",
+    "offer"
+  ]
+}

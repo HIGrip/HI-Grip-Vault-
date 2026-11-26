@@ -229,6 +229,18 @@ De **officiële policies** onder `/policies/` lopen nu achter op de site. Verzen
 
 ---
 
+## 2026-11-26
+
+**Wat:** drie ad-landingspagina's live (voetbal, rugby, product) voor de 9 Meta-ads, op opdracht van de gebruiker ("graag pushen naar live, en ook naar Kopie van Live website 23-11-2026"). Volledig aanpasbaar in de editor; koopblok via `hi-bundle` + Horizon-productformulier.
+
+**Waar:** live `205415153991` en `205362889031`. Nieuwe bestanden `sections/hi-adl-*.liquid`, `snippets/hi-adl-*.liquid`, `assets/hi-adl.css/js`, `templates/page.ad-*.json`; in de Kopie ook `snippets/hi-pack-data.liquid` (ontbrak). Pagina's `gripsokken-voetbal`, `gripsokken-rugby`, `performance-gripsokken` met `seo.hidden`. 30 foto's in Bestanden (`adl-*`). Details: `Landingspaginas-ads/shopify/README.md`.
+
+**Status:** live, getest op 375 en 1440 (Kopie) en live: noindex, juiste kop per `?ad=`, winkelwagen met bundelkorting.
+
+**Wie:** Website Agent, via Shopify CLI en Admin API.
+
+---
+
 ## 2026-08-02
 
 **Wat:** Organization/WebSite structured data + FAQPage structured data toegevoegd op de homepage.

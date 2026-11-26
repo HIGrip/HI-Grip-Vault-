@@ -13,11 +13,14 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Hoofdmap
 - [[Brand Symbolen]]
+- [[Creatieve loop]]
+- [[Design DNA]]
 - [[Design Elementen]]
 - [[Fotografie & Art-Direction]]
 - [[Iconografie]]
 - [[Logo & Kleurenpalet]]
-- [[Smaakkompas]] (10 vragen om zelf kritisch te kijken vóór oplevering)
+- [[Regelvoorstel Design DNA]]
+- [[Smaakkompas]]
 
 ### Ads-Workflow
 - [[Foto-index]]
@@ -29,11 +32,46 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 ### Ads-Workflow/Voorbeelden
 - [[Voorbeelden]]
 
+### Email-Workflow
+- [[Leerregels-Email-Design]]
+- [[Performance-Days-publiek-mails-README]]
+- [[Performance-Days-publiek-v2-README]]
+- [[07_Design_Agent/Email-Workflow/README|Email-Workflow/README]]
+- [[WORKFLOW-Email]]
+
 ### Inspiratie
 - [[Inspiratie Beeld-stijlanalyse]]
 - [[Inspiratie Video-stijlanalyse]]
+- [[Ontwerp-analyse]]
+
+### Ontwerpbestanden
+- [[Early-access-E5-dubbel-OVERDRACHT-Claude]]
+- [[Early-access-E5-dubbel-VOORSTEL]]
+
+### Ontwerpbestanden/Early-access-2026-11-17
+- [[assets-manifest]]
+
+### Ontwerpbestanden/Early-access-2026-11-17-v2
+- [[07_Design_Agent/Ontwerpbestanden/Early-access-2026-11-17-v2/README|Early-access-2026-11-17-v2/README]]
+
+### Ontwerpbestanden/Early-access-opening-2026-11-23
+- [[07_Design_Agent/Ontwerpbestanden/Early-access-opening-2026-11-23/README|Early-access-opening-2026-11-23/README]]
+
+### Ontwerpbestanden/Early-access-opening-2026-11-23-v2
+- [[07_Design_Agent/Ontwerpbestanden/Early-access-opening-2026-11-23-v2/README|Early-access-opening-2026-11-23-v2/README]]
+
+### Ontwerpbestanden/Early-access-opening-2026-11-23-v3
+- [[07_Design_Agent/Ontwerpbestanden/Early-access-opening-2026-11-23-v3/README|Early-access-opening-2026-11-23-v3/README]]
+
+### Ontwerpbestanden/Early-access-opening-2026-11-23-v4
+- [[07_Design_Agent/Ontwerpbestanden/Early-access-opening-2026-11-23-v4/README|Early-access-opening-2026-11-23-v4/README]]
 
 ### Ontwerpbestanden/Prijslijst-retail-2026
 - [[07_Design_Agent/Ontwerpbestanden/Prijslijst-retail-2026/ontwerpfilosofie|Prijslijst-retail-2026/ontwerpfilosofie]]
+
+### _archief
+- [[Leerregels-Ads-Design (vóór Design DNA)]]
+- [[QA-lijst D1-D13 (vóór Design DNA)]]
+- [[WORKFLOW Ads (vóór Design DNA)]]
 
 > Map: [[Home]]

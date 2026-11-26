@@ -36,6 +36,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Agents Denzel]]
 
 ### Handboek
+- [[Claude Code installeren — prompt]]
 - [[Routeringsgids]]
 
 ### Kwaliteitslog

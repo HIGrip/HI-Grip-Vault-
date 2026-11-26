@@ -25,3 +25,5 @@ Knop `#CTA-BESTEMMING-LARS`, afmeldlink, afzender/bedrijfsgegevens. Geen merge-t
 - Vision-controle is automatisch en onbetrouwbaar (las merknaam wisselend). Geen pixel-voor-pixel menselijke 100%-controle.
 - Niet gedaan: SendWILL-/clienttest (Outlook, Gmail, dark mode), lange/lege merge-tags (geen tags aanwezig), spam-score, gewicht per mail (beelden A 0,56 MB, B 0,7 MB, C 1,1 MB: C is zwaar, verder comprimeren vóór upload; beelden staan nog niet op Shopify-CDN, `assets/` is lokaal).
 - Webfont via Google Fonts (Outlook valt terug op Arial).
+
+> Map: [[07 Design Agent — Index]]

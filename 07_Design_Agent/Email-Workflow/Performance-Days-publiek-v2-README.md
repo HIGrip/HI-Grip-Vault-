@@ -17,3 +17,5 @@ CTA-bestemming, afmeldlink, afzender, opt-in-tekst, voordeel-slot (leeg), livega
 ## Niet gecontroleerd
 Echte e-mailclients, lege/lange merge-tags (er zijn geen merge-tags gebruikt), dark mode-gedrag in clients, Poppins-fallback in Outlook.
 Voet-compleetheid in de C-hero (rugbyspeler): vision-controle gaf wisselende antwoorden; ogen van Lars nodig op volledige render.
+
+> Map: [[07 Design Agent — Index]]

@@ -4,8 +4,6 @@ datum: 2026-11-20
 ---
 # Early-access openingsmail 23-11, v3 (drie versies)
 
-> Map: [[Home]]
-
 Concept, niets verzonden of ingepland. Copy en feiten uit `06_Website_Agent/E-mail Marketing/2026-11-23-early-access-opening-brief.md`; de kop "Jij bent er als eerste bij." is ongewijzigd uit de brief. Lars doet zelf de smaaktoets. v1 en v2 zijn niet aangepast.
 
 ## Inspiratie (gedeelde Drive > Content - HÏ Grip > Emailmarketing)
@@ -65,3 +63,5 @@ Kop en code live tekst met bgcolor-fallback, Outlook-VML-knop, alt-teksten, dark
 ## Niet getest
 Echte mailclients (Outlook, Gmail, Apple Mail), dark mode, spamtest, SendWILL-import, contrast gemeten. Previews zijn Chrome-renders met stand-in tekst voor de invulvelden. Geen onafhankelijke QA.
 Previews per versie: `preview/*-desktop-standin.png` (640 px) en `*-mobiel-standin.png` (375 px), full-length.
+
+> Map: [[07 Design Agent — Index]]

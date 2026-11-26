@@ -27,9 +27,13 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[2026-11-02]]
 - [[2026-11-16]]
 
+### Vault-controle
+- [[2026-11-19]]
+
 ### Vault-onderhoud
 - [[2026-11-10]]
 - [[2026-11-16-computerpaden-verwijderd]]
+- [[2026-11-24]]
 
 ### _archief
 - [[Stappenplan — Verdere Bouw (Claude Code-tijd)]]

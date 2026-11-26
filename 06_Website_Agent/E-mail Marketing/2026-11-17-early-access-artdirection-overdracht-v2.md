@@ -7,8 +7,6 @@ status: concept, wacht op QA
 
 # Early access: overdracht voor beeldgedreven campagne (v2)
 
-> Map: [[06 Website Agent — Index]]
-
 Bron-copy (COPY-GOED na ronde 1, ongewijzigd): [[2026-11-17-early-access-zes-concepten]]. Designkaart: t_ca1c07ef. Referenties zijn principes, geen beeld, copy, claim, merk of gele CTA. Ik dicteer geen blok, kleur, spacing of beeldkeuze.
 
 ## a. Per optie
@@ -50,3 +48,5 @@ Bron-copy: [[2026-11-17-early-access-zes-concepten]]; Design ronde 1: [[2026-11-
 - ⚠️ De sectie "Voor alle agents" is niet gevonden als kop in Agents Website Agent.md; alleen de verwijzing (regel 36) naar Leerregels per Agent. Dat bestand vond ik niet. Alleen sectie E-mail Marketing Agent gelezen.
 - ⚠️ De drie voorbeeldbeelden niet zelf gezien; gebaseerd op de beschrijving in de kaart.
 - Niet gecontroleerd: Feiten & Actuele Staat (geen nieuw feit gebruikt), render, QA.
+
+> Map: [[06 Website Agent — Index]]

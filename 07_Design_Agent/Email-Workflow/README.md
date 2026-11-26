@@ -38,3 +38,5 @@ Dit is de lat voor elke HÏ Grip-mail. Hij komt uit de early-access-mails van de
 - Geen computerpaden, geen tokens en geen bronfoto's of uitsneden in de vault. Foto's staan op de gedeelde Drive of in Shopify Files.
 - Na elke goedgekeurde of afgekeurde ronde [[Leerregels-Email-Design]] bijwerken. Een nieuwe goedgekeurde mail gaat in `Voorbeelden/`, maximaal ~300 KB per beeld.
 - Niets versturen of uploaden zonder akkoord. Lars of Team HÏ Grip verstuurt.
+
+> Map: [[07 Design Agent — Index]]

@@ -1,0 +1,47 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+
+<section class="adl adl-ft">
+  <div class="adl-wrap">
+    <h2 class="adl-ft__h">{{ section.settings.heading }}</h2>
+    <div class="adl-ft__grid">
+      {%- for block in section.blocks -%}
+        <figure class="adl-ft__t" {{ block.shopify_attributes }}>
+          {%- if forloop.first -%}
+            {%- assign tile_sizes = '(min-width: 980px) 50vw, 100vw' -%}
+          {%- else -%}
+            {%- assign tile_sizes = '(min-width: 980px) 25vw, 50vw' -%}
+          {%- endif -%}
+          {%- render 'hi-adl-image', image: block.settings.image, sizes: tile_sizes -%}
+          <figcaption>
+            <b>{{ block.settings.title }}</b>
+            <span>{{ block.settings.text }}</span>
+          </figcaption>
+        </figure>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ad-landing: tegels",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Wat je krijgt" },
+    { "type": "paragraph", "content": "Vier tegels: de eerste is groot, de vierde breed." }
+  ],
+  "blocks": [
+    {
+      "type": "tile",
+      "name": "Tegel",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Foto" },
+        { "type": "text", "id": "title", "label": "Titel" },
+        { "type": "text", "id": "text", "label": "Tekst" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [{ "name": "Ad-landing: tegels" }]
+}
+{% endschema %}

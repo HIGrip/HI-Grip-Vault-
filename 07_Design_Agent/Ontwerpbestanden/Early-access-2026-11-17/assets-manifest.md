@@ -1,7 +1,5 @@
 # Assets-manifest early-access e-mails (17-11-2026)
 
-> Map: [[07 Design Agent — Index]]
-
 Status: bronnen bestaan, kopieën naar `assets/` zijn nog NIET gemaakt (Design mag geen terminal gebruiken en kan geen binaire bestanden schrijven). Denzel kopieert mechanisch; keuze van beeld, crop en gebruik staat hieronder (Design). Bronmap: `<HiGripMedia>/Content - HÏ Grip/`. Rechten per beeld niet vastgesteld door Design; het gaat om eigen merkmateriaal uit de mediabibliotheek.
 
 ## Fonts (Poppins, OFL.txt staat in de bronmap)
@@ -42,3 +40,5 @@ Geen herkenbare personen in beide beelden. Merkzichtbaarheid van derden is een o
 - A1 heeft géén kopie nodig als IMG_1975 wordt afgekeurd: alternatief is foto-vrije A1 (skeletwijziging, Design-voorstel).
 - Echte Poppins-weergave in e-mailclients: niet te garanderen.
 - chevron-trio in A1 en speed-strepen zijn SVG; productie vereist PNG-export (niet gemaakt).
+
+> Map: [[07 Design Agent — Index]]

@@ -283,3 +283,5 @@ Bij elke module: geen countdown, geen "bijna op", geen schaarstetaal tenzij voor
 - ⚠️ De klanktest op "AI-tekst" (E14) is door deze agent zelf gedaan; Lars of Denzel moet apart toetsen.
 
 Map: 06_Website_Agent, E-mail Marketing.
+
+> Map: [[06 Website Agent — Index]]

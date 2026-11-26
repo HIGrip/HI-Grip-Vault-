@@ -39,3 +39,5 @@ Niveau 7, eigenheid 8, art-direction 7, typografie 8, focus 7, mobiel 8, leerreg
 
 ## Wat Lars invult of beslist
 Deal en data bevestigen, knoplink invullen, merge-tags bevestigen, bedrijfsgegevens in de footer, toestemming voor de foto, welke versie hij wil.
+
+> Map: [[07 Design Agent — Index]]

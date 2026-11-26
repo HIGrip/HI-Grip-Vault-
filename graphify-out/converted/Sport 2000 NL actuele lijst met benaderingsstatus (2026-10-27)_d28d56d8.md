@@ -150,3 +150,5 @@
 | - Wijzig Volgende actie en Status via het uitklapmenu in de cel. De kleur van de hele rij past zich automatisch aan. |
 | - Filter op Regio (pijltje in de kolomkop) om per regio te bellen. |
 | - Vul Laatste contact in na elk gesprek of mail: Dagen geleden wordt oranje na 30 dagen en rood na 60 dagen. |
+
+> Map: [[Home]]

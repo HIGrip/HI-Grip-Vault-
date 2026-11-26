@@ -11,8 +11,6 @@ briefing: 02_Dashboard/2026-11-17-briefing-early-access-emails.md
 
 # Early access: zes e-mailconcepten (B2C)
 
-> Map: [[06 Website Agent — Index]]
-
 Alleen concept. Niets verstuurd, ingepland of aangemaakt; geen klantdata of lijst gelezen; geen kortingscode of instelling gemaakt. Alles tussen `[INVUL: ...]` is een open feit dat Team HÏ Grip vaststelt. `[BEVESTIG Vn]` verwijst naar een aanname in sectie 6. Geen merge-tags geraden: de SendWILL-syntax is niet bevestigd ([[E-mail Verzending & Techniek]]).
 
 **Herkomst (eerlijk).** De eerste versie (t_fab06fb6) is door de Website Agent hoofdagent zelf geschreven, zonder sub-agent. Dat was een procesafwijking tegen Agents Website Agent (regel 15 en 36: de hoofdagent doet het werk van een sub-agent niet zelf). Correctieronde 1 (t_112492e0) is uitgevoerd door een E-mail Marketing/Copy sub-agent, aangestuurd door de Website Agent, na een CORRIGEER van onafhankelijke QA (deleg_97bd7504). Herkeuring is nog niet gedaan; die volgt van een onafhankelijk Website-QA-profiel. Dit bestand claimt geen QA-GOED.
@@ -189,3 +187,5 @@ Wat een expert nog zou toevoegen: tweede onderwerpregel per optie voor een test 
 3. **C2 (belangrijk):** onderwerp, preheader, kop en body tonen `[INVUL: kortingshoogte]` en de code; CTA "Bekijk early access" vervangen door "Koop met early access". Commitment en consistentie behouden.
 4. **Herkomst:** status, frontmatter, herkomstblok en zelfcheck rij 6 aangepast; `correctie-kaart` toegevoegd.
 5. **Ongewijzigd:** A1, A3, C3 volledig; C1 behalve punt 1. Sectie 4 kreeg een regel over ronde 1 en een verwijzing.
+
+> Map: [[06 Website Agent — Index]]

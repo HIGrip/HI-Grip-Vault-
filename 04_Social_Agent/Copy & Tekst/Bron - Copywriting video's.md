@@ -70,3 +70,5 @@ Beide komen uit de Amerikaanse/Australische direct-response-wereld (verkopen via
 ## Open punten
 
 - Copy Bank (regel 45) noemt nog 'De keuze van 3000+ sporters'; Feiten & Actuele Staat schrijft 3500+ voor (besluit Lars 11-10-2026). Voor de Social Agent om te corrigeren, na akkoord.
+
+> Map: [[04 Social Agent — Index]]

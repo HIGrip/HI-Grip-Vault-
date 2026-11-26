@@ -1,0 +1,73 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+
+<section class="adl adl-at">
+  <div class="adl-wrap">
+    <div class="adl-at__head">
+      <h2 class="adl-at__h">{{ section.settings.heading }}</h2>
+      {%- if section.settings.text != blank -%}
+        <p class="adl-at__p">{{ section.settings.text }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="adl-at__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.image != blank -%}
+          <figure class="adl-at__c" {{ block.shopify_attributes }}>
+            {%- render 'hi-adl-image', image: block.settings.image, sizes: '(min-width: 980px) 25vw, 50vw', width: 900 -%}
+            <figcaption>
+              <q>{{ block.settings.quote }}</q>
+              <b>{{ block.settings.name }}</b>
+              <span>{{ block.settings.role }}</span>
+            </figcaption>
+          </figure>
+        {%- endif -%}
+      {%- endfor -%}
+
+      <figure class="adl-at__team">
+        {%- render 'hi-adl-image', image: section.settings.team_image, sizes: '(min-width: 980px) 50vw, 100vw', width: 1400 -%}
+        <ul>
+          {%- for block in section.blocks -%}
+            {%- if block.settings.image == blank -%}
+              <li {{ block.shopify_attributes }}>
+                <q>{{ block.settings.quote }}</q>
+                <b>{{ block.settings.name }}</b>
+                <span>{{ block.settings.role }}</span>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </figure>
+    </div>
+
+    {%- if section.settings.note != blank -%}
+      <p class="adl-at__note">{{ section.settings.note }}</p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ad-landing: atleten",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Gedragen door spelers van Oranje." },
+    { "type": "text", "id": "text", "label": "Tekst" },
+    { "type": "image_picker", "id": "team_image", "label": "Teamfoto" },
+    { "type": "text", "id": "note", "label": "Kleine tekst onderaan" }
+  ],
+  "blocks": [
+    {
+      "type": "athlete",
+      "name": "Atleet",
+      "settings": [
+        { "type": "paragraph", "content": "Met foto: eigen kaart. Zonder foto: in de lijst bij de teamfoto. Quotes letterlijk overnemen." },
+        { "type": "image_picker", "id": "image", "label": "Portret" },
+        { "type": "textarea", "id": "quote", "label": "Quote" },
+        { "type": "text", "id": "name", "label": "Naam" },
+        { "type": "text", "id": "role", "label": "Positie en team" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Ad-landing: atleten" }]
+}
+{% endschema %}

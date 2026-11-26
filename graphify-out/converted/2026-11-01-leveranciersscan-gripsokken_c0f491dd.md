@@ -55,3 +55,5 @@
 | Prijs | 10% | publieke prijs die onder de B2B-verkoopprijs (€ 7,70 bij 200) ruim marge laat |
 | Contact | 10% | directe e-mail en telefoon, snelle offerte |
 | Let op |  | 'onbekend' scoort laag. De score is een voorselectie op openbare info; de offerte-antwoorden beslissen. |
+
+> Map: [[Home]]

@@ -61,3 +61,5 @@
 | Producten: indicatief, op basis van winkelnaam/formule; per winkel niet gepubliceerd. Check op de winkelsite of in het gesprek. |
 | Let op: Sport 2000-winkels zijn zelfstandige ondernemers; bel de eigenaar/inkoper, niet het hoofdkantoor. |
 | Controleer vóór mailing de AVG/e-mailregels (B2B-mail naar zakelijke info@-adressen is toegestaan, bied een afmeldoptie). |
+
+> Map: [[Home]]

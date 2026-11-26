@@ -1,0 +1,36 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+
+<section class="adl adl-fq">
+  <div class="adl-wrap adl-fq__grid">
+    <h2 class="adl-fq__h">{{ section.settings.heading }}</h2>
+    <div>
+      {%- for block in section.blocks -%}
+        <details {% if forloop.first %}open{% endif %} {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <div class="adl-fq__a">{{ block.settings.answer }}</div>
+        </details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ad-landing: vragen",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Kop", "default": "Vragen" }
+  ],
+  "blocks": [
+    {
+      "type": "question",
+      "name": "Vraag",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Vraag" },
+        { "type": "richtext", "id": "answer", "label": "Antwoord" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Ad-landing: vragen" }]
+}
+{% endschema %}

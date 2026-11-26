@@ -18,3 +18,5 @@ Afgeleiden maken: `python tools/make_assets.py <map>` (HIGRIP_MEDIA_ROOT instelb
 | C3 | wit, 5-pack, zwart codeblok, code dominant |
 
 Open: A2-invulveld voor aanmeldstappen blijft zichtbaar. Alle [INVUL]/[BEVESTIG]-velden zijn gestippeld omrand.
+
+> Map: [[07 Design Agent — Index]]

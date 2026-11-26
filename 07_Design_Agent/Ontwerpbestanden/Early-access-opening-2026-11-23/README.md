@@ -3,8 +3,6 @@ status: concept
 ---
 # Early-access openingsmail 23-11-2026 (Design)
 
-> Map: [[Home]]
-
 Concept, niets verstuurd of ingepland. Verzending door Lars via SendWILL op 23-11-2026 12:00. Copy komt uit `06_Website_Agent/E-mail Marketing/2026-11-23-early-access-opening-brief.md`; er is geen tekst verzonnen.
 
 ## Gevoel en één idee
@@ -53,3 +51,5 @@ Alle bestanden in `assets/` (behalve `scene-bg.jpg`) moeten online gehost staan 
 
 ## Niet getest
 Echte clients (Gmail, Outlook, Apple Mail), dark-mode in de praktijk, spamtest, SendWILL-import, linkcontrole. Poppins wordt geladen via Google Fonts en valt terug op Arial. Preview is een Chrome-render.
+
+> Map: [[07 Design Agent — Index]]

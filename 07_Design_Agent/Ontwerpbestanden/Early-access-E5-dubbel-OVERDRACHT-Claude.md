@@ -35,3 +35,5 @@ Zie het blok 'Waarom E5 werkt' in de skill higrip-email-design-build: één idee
 
 ## Regels om te bewaren
 Leerregels E1-E20 in [[Leerregels-Email-Design]]: wit knop nooit Volt, geen eyebrows, max 5 secties, ander beeld per sectie, uitsneden zonder halo, echte packshots, mobiel 390 px, geen verzonnen claims.
+
+> Map: [[07 Design Agent — Index]]

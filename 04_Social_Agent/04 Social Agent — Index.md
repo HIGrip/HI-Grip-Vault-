@@ -15,6 +15,7 @@ Terug naar [[Home]].
 Automatisch (`vault_nav.py`), niet met de hand bewerken.
 
 ### Copy & Tekst
+- [[Bron - Copywriting video's]]
 - [[CTA Bibliotheek]]
 - [[Caption Gids per Platform]]
 - [[Copy Bank]]
@@ -42,6 +43,7 @@ Automatisch (`vault_nav.py`), niet met de hand bewerken.
 - [[Stock Bronnen]]
 - [[Tekst-overlay Gids]]
 - [[Template Overzicht]]
+- [[TikTok-referenties e-mail en copy (19-11-2026)]]
 - [[Video Productie Checklist]]
 - [[Video-agent Nulmeting]]
 

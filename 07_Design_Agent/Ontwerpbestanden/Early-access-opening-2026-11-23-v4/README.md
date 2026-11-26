@@ -45,3 +45,5 @@ Uploaden: de afbeeldingen in `assets/` online hosten en de paden in `mail.html` 
 
 ## Aanbeveling
 v2 voor de sterkste merkherkenning (sok als held, één wow-beweging), v1 als je het product niet centraal wilt. v3 is het zwakst. Lars kiest.
+
+> Map: [[07 Design Agent — Index]]

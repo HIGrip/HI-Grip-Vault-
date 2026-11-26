@@ -12,6 +12,8 @@ bijgewerkt: 2026-10-29
 
 ## Harde regel — theme-ID's (nooit negeren)
 
+> **Bijgewerkt 2026-11-26 (`theme list`):** live is nu **`205415153991` "BLACK FRIDAY werkthema 24-11-2026"**. `204874187079` "Live website 23-11-2026" en `205362889031` "Kopie van Live website 23-11-2026" zijn unpublished.
+
 > **Toegevoegd 2026-11-24 (Lars, in chat: "het werkthema black Friday"):** Black Friday-werk gebeurt in **`205415153991` "BLACK FRIDAY werkthema 24-11-2026"** (unpublished, gezien met `theme list` op 24-11; lokale kopie met git: `<gebruikersmap>\Downloads\theme-bf-2411`). `205342998855` blijft het algemene werkthema. Live: `204874187079` "Live website 23-11-2026".
 
 > **Bijgewerkt 2026-11-23 (lars, in chat):** nieuw werkthema is **`205342998855`** (editor: https://admin.shopify.com/store/hi-grip/themes/205342998855/editor), "Bijgewerkte kopie van Bijgewerkte kopie van Live website 04-11-2026", unpublished (gezien via Admin API op 23-11). Opvolger van `204029296967`; live blijft `204874187079`.

@@ -1,0 +1,53 @@
+{{ 'hi-adl.css' | asset_url | stylesheet_tag }}
+
+<section class="adl adl-rv" id="reviews">
+  <div class="adl-wrap">
+    <div class="adl-rv__head">
+      <div class="adl-rv__score">
+        <b>{{ section.settings.score }}</b>
+        <div>{% render 'hi-adl-stars' %}<span>{{ section.settings.score_label }}</span></div>
+      </div>
+      <h2 class="adl-rv__h">{{ section.settings.heading }}</h2>
+    </div>
+
+    <div class="adl-rv__row">
+      {%- for block in section.blocks -%}
+        <figure class="adl-rv__c" {{ block.shopify_attributes }}>
+          {% render 'hi-adl-stars', label: '5 van 5 sterren' %}
+          <q>{{ block.settings.quote }}</q>
+          <figcaption>{{ block.settings.name }}{% if block.settings.date != blank %} · {{ block.settings.date }}{% endif %}</figcaption>
+        </figure>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.clubs != blank -%}
+      <div class="adl-rv__clubs">{{ section.settings.clubs }}</div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Ad-landing: reviews",
+  "tag": "div",
+  "settings": [
+    { "type": "paragraph", "content": "Alleen echte reviews van Trustpilot, letterlijk overgenomen." },
+    { "type": "text", "id": "score", "label": "Score", "default": "4,6" },
+    { "type": "text", "id": "score_label", "label": "Onder de sterren", "default": "21 reviews op Trustpilot" },
+    { "type": "text", "id": "heading", "label": "Kop", "default": "3500+ sporters gingen je voor." },
+    { "type": "richtext", "id": "clubs", "label": "Clubs en winkels" }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "textarea", "id": "quote", "label": "Review" },
+        { "type": "text", "id": "name", "label": "Naam" },
+        { "type": "text", "id": "date", "label": "Datum" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Ad-landing: reviews" }]
+}
+{% endschema %}

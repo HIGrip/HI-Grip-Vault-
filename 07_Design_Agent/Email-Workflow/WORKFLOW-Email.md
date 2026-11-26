@@ -80,3 +80,5 @@ Tegenspraak of spanning met E15 in [[E-mail Design & Stijlgids]]:
 3. 'Herinnering-mail: scherpe codebox, gestempeld document': is een bewuste harde vorm; toegestaan als uitgelegde keuze, maar vermelden.
 4. Ontbreekt: de regel 'een e-mail voelt als één geheel' en de fallbacks uit §5. Gewenst: één verwijzing naar deze pagina onder 'Vaste ontwerpregels'.
 Geen tegenspraak gevonden bij accent-als-pop-kleur, Gmail-hooks en geen nep-countdown.
+
+> Map: [[07 Design Agent — Index]]

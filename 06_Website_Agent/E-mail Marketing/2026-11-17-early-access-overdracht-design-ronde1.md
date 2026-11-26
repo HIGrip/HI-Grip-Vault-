@@ -6,8 +6,6 @@ datum: 2026-11-17
 
 # Overdracht Design: early access, correctieronde 1
 
-> Map: [[06 Website Agent — Index]]
-
 Bron: [[2026-11-17-early-access-zes-concepten]] (t_112492e0). Status: concept, wacht op herkeuring door onafhankelijke Website-QA; geen QA-GOED. Open feiten blijven zichtbare `[INVUL: ...]` in previews.
 
 ## Gewijzigd
@@ -40,3 +38,5 @@ A1, A3, C3 volledig. C1 behalve de verzendregel. Eén CTA per optie, geen eyebro
 ## Voor Design onthouden
 - CTA's C1 (Shop met je code), C2 (Koop met early access), C3 (Gebruik je code) zijn onderscheidend; niet gelijktrekken.
 - Previews niet gedaan door deze ronde; Design-QA nog niet gedraaid.
+
+> Map: [[06 Website Agent — Index]]

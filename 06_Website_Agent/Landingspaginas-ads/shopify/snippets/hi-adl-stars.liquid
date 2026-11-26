@@ -1,0 +1,13 @@
+{%- doc -%}
+  Trustpilot-sterren voor de ad-landingspagina's (4,5 ster = vier volle en een halve).
+
+  @param {string} [label] - toegankelijke omschrijving, bijv. '4,6 van 5 sterren'
+
+  @example
+  {% render 'hi-adl-stars', label: '4,6 van 5 sterren' %}
+{%- enddoc -%}
+{%- capture star -%}<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 .8l1.5 3.4 3.7.3-2.8 2.4.9 3.6L6 8.6 2.7 10.5l.9-3.6L.8 4.5l3.7-.3z"/></svg>{%- endcapture -%}
+<span class="adl-stars" role="img" aria-label="{{ label | default: '4,6 van 5 sterren' | escape }}">
+  {%- for i in (1..4) -%}<i>{{ star }}</i>{%- endfor -%}
+  <i class="is-half">{{ star }}</i>
+</span>

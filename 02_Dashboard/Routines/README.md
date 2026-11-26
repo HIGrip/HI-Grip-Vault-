@@ -18,6 +18,7 @@ bijgewerkt: 2026-10-01
 |---|---|---|
 | **Actiecontrole** (dagelijks 05:00) | **De enige die automatisch afvinkt:** alle open acties controleren met bewijs (`CONTROLE.json`), dubbelen markeren, backlogkop bijwerken, zondag opruimen. Daarnaast: dashboard-sync, eenmalig per actie beoordelen of Claude hem kan doen (`UITVOERBAAR.json`) en de dashboardcijfers verversen (`_data/`) | Onderzoek, notities, nieuwe acties, actieteksten wijzigen |
 | **Growth Radar** (dagelijks 05:30) | Nieuws en trends uit de markt (SEO, AI-search, CRO, social) vertalen naar HÏ Grip | De eigen site controleren |
+| **Video-ideeën** (dagelijks 06:47) | Elke ochtend 1 of 2 video-ideeën (alleen TRENDING, SERIES, CHALLENGES) in Buffer, ideeënkolom Unassigned; Tigo geeft feedback in de sessie | Inplannen, publiceren, ideeën verwijderen, HÏLIGHTS/announcements/campagnes bedenken |
 | **Uitvoerder** (dagelijks 06:15) | Goedgekeurde opdrachten van het dashboard uitvoeren binnen de grenzen: concepten in de vault, code in het testthema, met een resultaat en de stap voor een mens | Live zetten, versturen, afvinken, eigen onderzoek |
 | **SEO, module A: regressiecheck** (maandag) | **De enige technische controle van de site:** status, titels, H1, canonicals, schema, redirects, sitemap, theme check | Verbeteringen bouwen, trends zoeken, bestaande backlogpunten opnieuw controleren of afvinken |
 | **SEO, module C: conversietest** (maandag) | Meten → verbeteringen bouwen als concept in Shopify → testen of eerdere verbeteringen werken | Technische regressies zoeken |
@@ -43,6 +44,7 @@ Alle tijden zijn Nederlandse tijd. Ze staan bewust vroeg: zo begint het gebruiks
 |---|---|---|---|---|
 | HÏ Grip — Actiecontrole | `Actiecontrole.md` | dagelijks 05:00 | claude-sonnet-5-5 | ✅ Cloud op info@ (repository gekoppeld 11-10; eerste geslaagde run 11-10, daarna 12-10 05:01) |
 | HÏ Grip — Growth Radar | `Growth Radar.md` | dagelijks 05:30 | claude-sonnet-5-5 | ✅ Cloud op info@ (sinds 25-09) |
+| HÏ Grip — Video-ideeën | `Video-ideeën.md` | dagelijks 06:47 | standaard | ✅ Aangemaakt 26-11-2026 (Buffer-connector nodig) |
 | HÏ Grip — Uitvoerder | `Uitvoerder.md` | dagelijks 06:15 | claude-sonnet-5-5 | Nog aanmaken op info@ |
 | HÏ Grip — SEO | `SEO.md` (vervangt SEO-regressiecheck, SEO- en conversietest, Search Console & rankings en Backlinks & Merchant Center) | maandag 06:00 (module D alleen de eerste maandag) | claude-sonnet-5-5 | Nog aanmaken op info@ (de vier oude uitzetten na de eerste geslaagde run) |
 | Denzel-weekoverzicht | `Denzel-weekoverzicht.md` (oude prompt: `Denzel-weekoverzicht — origineel tot 2026-09-25.md`) | maandag 06:45 | claude-sonnet-5-5 | ✅ Cloud op info@ |
@@ -65,6 +67,7 @@ De lokale taken op de pc van Timo (`~/.claude/scheduled-tasks/`) staan sinds 25-
 | Actiecontrole, Uitvoerder, SEO, Denzel | Shopify | de rest |
 | Productradar | Shopify (alleen lezen) | de rest |
 | Concurrentie-monitor | Meta | de rest |
+| Video-ideeën | Buffer | de rest |
 | Growth Radar, Klantstem, Website-UX, Materialen, Verbanden | geen | alle |
 
 ## Werken vanuit het dashboard

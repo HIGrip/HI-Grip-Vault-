@@ -8,6 +8,7 @@ Elke routine heeft hier één geheugenbestand. Omdat het in de vault staat (git)
 |---|---|
 | `actiecontrole.md` | Actiecontrole: welke controlemethode per soort actie werkt, wat niet te controleren is |
 | `growth-radar.md` | Growth Radar: behandelde onderwerpen (anti-herhaling) |
+| `video-ideeen.md` | Video-ideeën: leerregels uit Tigo's feedback en log van voorgestelde ideeën |
 | `uitvoerder.md` | Uitvoerder: uitgevoerde opdrachten en werkwijzen die werkten |
 | `seo.md` | SEO (vier modules): per module URL-lijst en afwijkingen, kerncijfers en keywords, gebouwde items en testplannen, linkinventaris en Merchant-stand |
 | `denzel-week.md` | Denzel-weekoverzicht: wat is gesignaleerd en hoe lang het al openstaat |

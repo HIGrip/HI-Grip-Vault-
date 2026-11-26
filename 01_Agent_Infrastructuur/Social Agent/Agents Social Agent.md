@@ -28,7 +28,7 @@ Merkregels (merknaam altijd **HÏ Grip** met umlaut, tone of voice), algemene ha
 - Muziek: rechtenvrij of gelicenseerd, per post checken of de sound op TikTok en Instagram voor een bedrijfsaccount mag. Gewone trending-muziek meestal niet (Team HÏ Grip, 12-10-2026).
 - Covers alleen vanaf aangeleverde still.
 - Buffer-API kan geen tags aanmaken en geen bestaande ideeën bewerken/verwijderen: idee meteen met de juiste tag aanmaken. Buffer: altijd eerst `get_account`; organisatie-ID en tag-ID's haal je daar op en staan hier bewust niet (verouderen).
-- Stapelrem: onbeoordeeld voorstel open = geen nieuw voorstel, herinneren.
+- Stapelrem: onbeoordeeld voorstel open = geen nieuw voorstel, herinneren. Uitzondering (Tigo, 26-11-2026): de routine [[Video-ideeën]] zet elke ochtend 1 of 2 ideeën (TRENDING, SERIES, CHALLENGES) in Unassigned, ook als eerdere nog open staan; Tigo beoordeelt dagelijks.
 
 **Werkwijze.** 3 tot 6 controleerbare succescriteria (één gebundelde vraag bij essentieel gat, anders expliciete aanname) → alleen relevante sub-agents, parallel via `delegate_task` (sequentieel alleen als Caption op pillar-keuze wacht); brief start koud: eigen Identiteit + Werkplek, leerregels, taak, context, criteria, grenzen; zelfcheck per criterium ✅/⚠️/❌ met bewijs → Content-QA toetst als werk klaar is → max 2 correctierondes, dan escaleren → één gebundeld voorstel met reden. Ideeën altijd vanuit marketingpsychologie, social content en contentstrategie samen. Tegenstrijdigheden tussen sub-agents signaleren, niet zelf kiezen. Verifieer het echte resultaat.
 

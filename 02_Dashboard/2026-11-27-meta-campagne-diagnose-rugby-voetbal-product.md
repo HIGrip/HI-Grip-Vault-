@@ -37,6 +37,7 @@ Volledige doorlichting van campagne `HG_NL_Rugby_Voetbal_Product_2026-11-20` (ID
 - [ ] P2 · Elke week 2 nieuwe concepten aanleveren (Design Agent) die echt anders zijn: grip-demo op video, vergelijking gewone sok tegen HÏ Grip, aanbod x2, sociaal bewijs; de zwakste advertentie eruit
 - [ ] P2 · Alle advertenties dezelfde UTM-opbouw met namen in plaats van {{campaign.id}}: nu komt deze campagne onder twee utm_campaign-waarden binnen
 - [ ] P2 · Meten op Shopify-omzet gedeeld door advertentie-uitgaven (MER) per week naast Meta-ROAS met attributie alleen klik
+- [ ] P1 · Website Agent: uitzoeken welke app of welk blok extra AddToCart-events afvuurt (één paar, een 3-pack en een x2-pack los testen in Gebeurtenissen testen) en zorgen dat één klik op Toevoegen één event geeft
 - [ ] P3 · Vanaf 01-12 Facebook Stories, rechterkolom, Marketplace, zoeken, notificaties en instream uitzetten (samen minder dan €10, geen resultaat)
 - [ ] P2 · Brief aan Design voor Nooit meer: de video stopt mensen (12,3% kijkt) maar 4% kijkt door en er komt geen winkelwagen; product en prijs eerder in beeld
 - [ ] P3 · Advertenties naar de ad-landingspagina's (/pages/gripsokken-voetbal, /pages/gripsokken-rugby) laten verwijzen en na 7 dagen verblijftijd en winkelwagens per pagina vergelijken met de productpagina
@@ -148,6 +149,22 @@ Opnieuw gedraaid met koppeling 1.1.0 (27 Meta-datasets), GA4 en Shopify, langs d
 2. *01-12 tot 07-12:* AddToCart-meting laten rechtzetten (Website), dan één nieuwe CBO-adset breed NL met 4 tot 6 advertenties (Founders rugby, Wat houd je tegen, Lifestyle voetbal, Nooit meer en een nieuw concept), Checklist voetbal en Founders voetbal uit, kleine plaatsingen uit, €45 per dag, 7 dagen niet aanraken. Optimaliseren op winkelwagen houden.
 3. *Daarna:* pas naar ongeveer €90 per dag (stappen van maximaal 20%) als Shopify echte aankopen vanuit Meta laat zien; elke week twee echt andere concepten (grip-video, vergelijking, aanbod, reviews), meten op Shopify-omzet gedeeld door uitgaven.
 4. *Grootste hefboom blijft de pagina:* 179 sessies, 0 bestellingen. Break-even vraagt ongeveer 4% van de paginaweergaven naar aankoop bij een 3-pack (€1,85 per paginaweergave / €44,95). Dat is werk voor de Website Agent.
+
+### 11. Events Manager-export AddToCart (pixel, 20 t/m 26-11)
+Export uit Events Manager (27-11, aantallen per uur, browser tegen server, vóór ontdubbeling), naast Shopify-sessies met winkelwagen (hele site):
+| Dag | Browser (pixel) | Server (CAPI) | Shopify-sessies met winkelwagen |
+|---|---|---|---|
+| 20-11 | 3 | 3 | 1 |
+| 21-11 | 1 | 1 | 1 |
+| 22-11 | 4 | 4 | 4 |
+| 23-11 | 73 | 73 | 15 |
+| 24-11 | 15 | 18 | 7 |
+| 25-11 | 16 | 31 | 6 |
+| 26-11 | 6 | 11 | 6 |
+- Pixel en server sturen elk event allebei (normaal bij de Shopify-koppeling van Meta). Tot en met 23-11 precies 1 op 1, wat past bij werkende ontdubbeling: Meta rapporteerde voor de campagne 27 winkelwagens, niet honderden. Het ontdubbelingspercentage zelf staat niet in de export.
+- **Meerdere events per winkelwagen-sessie:** 118 browser-events tegen 40 sessies met winkelwagen (ongeveer 3 per sessie), op 23-11 zelfs 73 tegen 15 (28 in één uur, 13:00). Vermoedelijk vuurt het toevoegen van een pack (bundelblok) een event per paar, of voegen mensen meerdere keren toe.
+- **Sinds 24-11 extra events alleen via de server:** 23 meer dan via de pixel, vooral 25-11 tussen 20:00 en 23:00 (26 server tegen 11 browser). Dat valt samen met de winkelwagen-piek die Meta deze campagne op 25-11 rond 22:00 toerekende. Vermoedelijk voegt een app (Verdubbel-app met het gratis actiepaar, of de bundel-app) via de server regels toe, die Meta als winkelwagen telt zonder dat de bezoeker iets deed.
+- Gevolg: Meta optimaliseert deze campagne op een winkelwagensignaal dat per echte winkelwagen 1 tot 5 keer telt en deels door apps ontstaat.
 
 ## Wat niet lukte
 De GA4-koppeling (analytics-mcp) startte niet; GA4 is direct via de Data API met de service-account van de koppeling uitgelezen. Tijdens de analyse gaf de Meta-koppeling geen ThruPlay, hook rate, rankings of attributie per venster; de koppeling is daarna uitgebreid (zie 9). Leerfase-status geeft Meta voor deze adsets niet terug, ook niet na de uitbreiding. Ads-QA is overgeslagen (geen QA-agent voor het Ads-domein beschikbaar in deze sessie); de cijfers zijn wel tegen elkaar gelegd (Meta-dagsommen = totalen, GA4 en Shopify naast Meta). Stap B (research-sync) en publicatie van het dashboard overgeslagen: dat lukt alleen vanaf info@, deze sessie draait op het persoonlijke account.

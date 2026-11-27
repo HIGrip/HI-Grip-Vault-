@@ -34,7 +34,7 @@ Onderzoek via de Website Agent (copy, CRO, SEO, design) naar de beste productpag
 - [ ] P2 · Besluit: toestemming atleten en clubs voor quotes en logo's op de productpagina vastleggen
 - [ ] P2 · Beschrijving speciale demping en wasvoorschrift controleren tegen het label
 - [ ] P2 · Advies "op de grens kies de grotere maat" toetsen bij klantenservice-ervaring
-- [ ] P2 · Schemafouten live thema herstellen (http-context, Organization zonder sameAs, Product zonder GTIN en verzend- en retourgegevens)
+- [x] P2 · Schemafouten live thema herstellen (http-context, Organization zonder sameAs, Product zonder GTIN en verzend- en retourgegevens)
 - [ ] P3 · Beleidspagina's verzending en retour bijwerken zodat de productpagina ernaar kan linken
 
 ## Bevindingen

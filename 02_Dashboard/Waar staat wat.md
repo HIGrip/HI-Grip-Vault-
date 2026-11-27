@@ -41,7 +41,7 @@ Zoek gericht; lees dit niet in zijn geheel.
 - B2B-en-leveranciers: 3 notities
 - Growth-radar: 14 notities
 - Onderzoek: 4 notities
-- Onderzoeksnotities (datum-id in de bestandsnaam): 11 notities
+- Onderzoeksnotities (datum-id in de bestandsnaam): 13 notities
 - Routines: 16 notities
 - SEO: 16 notities
 - Social-en-video: 1 notities

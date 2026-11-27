@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P2
 samenvatting: "Bezoekers die vanuit een Meta-ad op een productpagina landen, zijn daar gemiddeld 13 seconden actief (372 sessies), tegen 58 seconden voor Google organisch en 92 voor e-mail. Ads die het product en de features laten zien houden mensen 20 tot 36 seconden vast; Product VS Gevoel en /pages/gripsokken-2-1 leveren vrijwel 0 seconden op, wat past bij het eerder vermoede botverkeer."
-gerelateerd: [2026-11-23-funnel-ga4-verkeersbronnen, 2026-11-23-meta-campagnerapport, 2026-11-10-ads-plan-bereik-conversie-sales]
+gerelateerd: [2026-11-23-funnel-ga4-verkeersbronnen, 2026-11-23-meta-campagnerapport, 2026-11-10-ads-plan-bereik-conversie-sales, 2026-11-27-meta-campagne-diagnose-rugby-voetbal-product, 2026-11-27-landingspaginas-ads-effectmeting-dag-1]
 vervangt: []
 bronbestand: ""
 deadline: ""

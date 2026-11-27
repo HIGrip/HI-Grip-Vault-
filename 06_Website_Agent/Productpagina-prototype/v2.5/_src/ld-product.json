@@ -1,0 +1,343 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "ProductGroup",
+   "@id": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart#group",
+   "name": "Performance Gripsokken 2.0",
+   "description": "Gripsokken met siliconen gripzones onder de voet, 15–20 mmHg compressie, 30% Coolmax®, versterkte hiel en naadloze constructie. Voor padel, tennis, voetbal en rugby.",
+   "brand": {
+    "@type": "Brand",
+    "name": "HÏ Grip"
+   },
+   "productGroupID": "PGS20",
+   "variesBy": [
+    "https://schema.org/color",
+    "https://schema.org/size"
+   ],
+   "hasVariant": [
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Zwart 35–38",
+     "sku": "PGSZ201",
+     "gtin13": "9110024809242",
+     "color": "Zwart",
+     "size": "35–38",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    },
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Zwart 39–42",
+     "sku": "PGSZ202",
+     "gtin13": "9110024809259",
+     "color": "Zwart",
+     "size": "39–42",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    },
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Zwart 43–47",
+     "sku": "PGSZ203",
+     "gtin13": "9110024809266",
+     "color": "Zwart",
+     "size": "43–47",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-zwart",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    },
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Wit 35–38",
+     "sku": "PGSW201",
+     "gtin13": "9110024809211",
+     "color": "Wit",
+     "size": "35–38",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    },
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Wit 39–42",
+     "sku": "PGSW202",
+     "gtin13": "9110024809228",
+     "color": "Wit",
+     "size": "39–42",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    },
+    {
+     "@type": "Product",
+     "name": "Performance Gripsokken 2.0 Wit 43–47",
+     "sku": "PGSW203",
+     "gtin13": "9110024809235",
+     "color": "Wit",
+     "size": "43–47",
+     "offers": {
+      "@type": "Offer",
+      "url": "https://www.higrip.nl/products/performance-gripsokken-2-0-wit",
+      "price": "17.95",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "shippingDetails": {
+       "@type": "OfferShippingDetails",
+       "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "4.50",
+        "currency": "EUR"
+       },
+       "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "NL"
+       },
+       "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "handlingTime": {
+         "@type": "QuantitativeValue",
+         "minValue": 0,
+         "maxValue": 1,
+         "unitCode": "DAY"
+        }
+       }
+      },
+      "hasMerchantReturnPolicy": {
+       "@type": "MerchantReturnPolicy",
+       "applicableCountry": "NL",
+       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+       "merchantReturnDays": 30
+      }
+     }
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Werkt het echt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 (gewone sok) naar 1,17. Dat is 95% meer grip (Apps et al. 2022, Journal of Sports Sciences). In dat onderzoek liepen sporters ook sneller een slalomparcours en verschoof de voorvoet minder bij het afremmen. Het gaat om onderzoek naar gripsokken in het algemeen, niet om een test van de HÏ Grip-sok zelf."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Welke maat kies ik?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Je kiest op je schoenmaat: 35–38, 39–42 of 43–47. Schoenmaat 39 is dus maat 39–42, schoenmaat 43 is maat 43–47. Zit je op de grens of heb je een halve maat, bijvoorbeeld 38,5? Kies dan de grotere maat. Past hij toch niet? Je hebt 30 dagen om te retourneren."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "In welke schoen draag ik ze?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In de sportschoen die je al hebt: voetbalschoenen, tennis- en padelschoenen, rugbyschoenen en zaalschoenen. Trek de sok glad aan, zodat de gripzones onder je voetzool liggen, en trek daarna je schoen aan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wat is het verschil met de 1.0?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "De 2.0 komt in drie maten (35–38, 39–42, 43–47), de 1.0 in twee (34–39 en 40–46). De 2.0 heeft 15–20 mmHg compressie, is naadloos gebreid en bevat 30% Coolmax®. De 2.0 kost €17,95 per paar, de 1.0 €14,95."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Krijg ik blaren van gripsokken?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "De sok is rondom gebreid zonder stiksels, de hiel is extra dik en Coolmax® voert vocht van je huid af. Dat haalt een deel van de wrijving weg. Kies de maat die bij je schoenmaat hoort en trek de sok glad aan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hoe was ik ze?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Binnenstebuiten op een zacht programma (30–40°C) met een mild wasmiddel. Laat ze aan de lucht drogen en gebruik geen droger: hitte tast de elasticiteit en de grip aan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hoe snel is het binnen en wat kost verzending?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Je bestelling wordt binnen 1 werkdag verzonden. Verzending binnen Nederland kost €4,50 en is gratis vanaf €35. Naar België, Duitsland, Oostenrijk, Frankrijk, het Verenigd Koninkrijk, Italië, Luxemburg, Portugal en Zwitserland kost het €5,00, ook daar gratis vanaf €35."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kan ik retourneren?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Je hebt 30 dagen om je bestelling te retourneren."
+     }
+    }
+   ]
+  }
+ ]
+}

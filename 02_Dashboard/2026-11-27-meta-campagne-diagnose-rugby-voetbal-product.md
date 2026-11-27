@@ -19,24 +19,26 @@ deadline: "2026-11-30"
 > Map: [[Waar staat wat]]
 
 ## In het kort
-Volledige doorlichting van campagne `HG_NL_Rugby_Voetbal_Product_2026-11-20` (ID 120247407556860449) over 07-11 t/m 26-11, met Meta (alleen-lezen koppeling), GA4 en Shopify naast elkaar, getoetst aan hoe Meta-bureaus in 2026 werken. De advertenties zelf doen wat ze moeten doen: een link-CTR van 1,53% en geen vermoeidheid. Wat niet werkt, zit eromheen. (1) De opzet versnippert het signaal: drie identieke adsets met één doelgroep op €45 per dag, waardoor geen adset uit de leerfase kan. (2) Advantage audience stuurt het budget naar 45+, die wel klikken maar niet kopen. (3) Meta telt 27 winkelwagens (22 na een klik, 5 na alleen zien), terwijl Shopify er 7 ziet en GA4 4: Meta optimaliseert op een winkelwagenmeting die niet gelijkloopt met de winkel. (4) Na de klik haakt bijna iedereen binnen seconden af. Daarbij bereikt het uitgavenplafond van het account vandaag of morgen zijn grens, midden in HÏ Performance Days (tot 30-11).
+Volledige doorlichting van campagne `HG_NL_Rugby_Voetbal_Product_2026-11-20` (ID 120247407556860449) over 07-11 t/m 26-11, met Meta (alleen-lezen koppeling), GA4 en Shopify naast elkaar, getoetst aan hoe Meta-bureaus in 2026 werken. De advertenties zelf doen wat ze moeten doen: een link-CTR van 1,53% en geen vermoeidheid. Wat niet werkt, zit eromheen. (1) De opzet versnippert het signaal: drie identieke adsets met één doelgroep op €45 per dag, waardoor geen adset uit de leerfase kan. (2) Advantage audience stuurt het budget naar 45+, die wel klikken maar niet kopen. (3) Meta telt 27 winkelwagens (22 na een klik, 5 na alleen zien), terwijl Shopify er 7 ziet en GA4 4: Meta optimaliseert op een winkelwagenmeting die niet gelijkloopt met de winkel. (4) Na de klik haakt bijna iedereen binnen seconden af. Het uitgavenplafond is later op 27-11 verhoogd naar €1.876,18 (€1.035 ruimte). Heranalyse met alle gegevens en de aanbeveling: bevinding 10.
 
 ## Kerncijfers
 - **1,53%** · Link-CTR (293 klikken op 19.195 vertoningen) · stabiel per dag
 - **27 / 7 / 4** · Winkelwagens volgens Meta / Shopify-sessies / GA4
 - **12 s** · Actieve tijd per sessie vanuit deze campagne (GA4, 166 sessies)
-- **€42,63** · Ruimte onder het uitgavenplafond van het account (27-11)
+- **0** · Shopify-bestellingen met Facebook of Instagram als herkomst (07-11 t/m 27-11, 14 bestellingen totaal)
 
 ## Acties
 - [ ] P1 · Besluit: uitgavenplafond account (€876,18, nog €42,63) verhogen zodat de campagne niet stilvalt vóór het einde van Performance Days op 30-11, of bewust laten stoppen
-- [ ] P1 · Besluit: de drie adsets (Voetbal, Rugby, Product) samenvoegen tot één adset met breed NL en 5 tot 6 advertenties, en daarna 7 dagen niets wijzigen
+- [ ] P1 · Besluit: tot en met 30-11 niets aan deze campagne wijzigen; vanaf 01-12 de drie adsets vervangen door één nieuwe adset (breed NL, 5 tot 6 advertenties) en daarna 7 dagen niets wijzigen
 - [ ] P3 · Besluit: attributie op "7 dagen na klik" zetten; nu komen 5 van de 27 winkelwagens uit alleen zien (1 dag na weergave)
-- [ ] P1 · Besluit: leeftijd begrenzen op 25 tot 54 jaar als harde grens (Advantage audience uit voor leeftijd of minimumleeftijd in de accountinstellingen), 7 dagen meten tegen de huidige €/winkelwagen per leeftijd
+- [ ] P2 · Besluit: leeftijd niet hard begrenzen; hooguit 45 tot 54 uitsluiten als test vanaf 01-12 (de andere leeftijdsverschillen komen van een paar bezoekers)
 - [ ] P1 · In Events Manager controleren of AddToCart dubbel binnenkomt (pixel én Conversions API zonder deduplicatie): Meta telt 22 winkelwagens na een klik, Shopify ziet 7 sessies met winkelwagen
 - [ ] P2 · Bij de volgende run de hook rate, ThruPlay en kwaliteitsrankings per advertentie meenemen (kan sinds de uitbreiding van de koppeling op 27-11)
 - [ ] P2 · Elke week 2 nieuwe concepten aanleveren (Design Agent) die echt anders zijn: grip-demo op video, vergelijking gewone sok tegen HÏ Grip, aanbod x2, sociaal bewijs; de zwakste advertentie eruit
 - [ ] P2 · Alle advertenties dezelfde UTM-opbouw met namen in plaats van {{campaign.id}}: nu komt deze campagne onder twee utm_campaign-waarden binnen
 - [ ] P2 · Meten op Shopify-omzet gedeeld door advertentie-uitgaven (MER) per week naast Meta-ROAS met attributie alleen klik
+- [ ] P3 · Vanaf 01-12 Facebook Stories, rechterkolom, Marketplace, zoeken, notificaties en instream uitzetten (samen minder dan €10, geen resultaat)
+- [ ] P2 · Brief aan Design voor Nooit meer: de video stopt mensen (12,3% kijkt) maar 4% kijkt door en er komt geen winkelwagen; product en prijs eerder in beeld
 - [ ] P3 · Advertenties naar de ad-landingspagina's (/pages/gripsokken-voetbal, /pages/gripsokken-rugby) laten verwijzen en na 7 dagen verblijftijd en winkelwagens per pagina vergelijken met de productpagina
 
 ## Bevindingen
@@ -125,6 +127,27 @@ De advertentie trekt de aandacht; daarna gaat het mis. Rekenvoorbeeld: bij €1,
 - **Kwaliteitsrankings:** voor alle advertenties "onbekend" (Meta geeft ze pas bij meer vertoningen per advertentie).
 - **Uitgaande klikken:** gelijk aan linkklikken (273 in 20 tot 26-11); unieke uitgaande klikken Founders rugby 64 van 70.
 - **Video:** Founders rugby 56 videoweergaven van 3 seconden op 4.323 vertoningen (1,3%), 1 ThruPlay; de advertenties zijn vrijwel alleen beeld, dus hook rate is hier geen bruikbare maat.
+
+### 10. Heranalyse met alle gegevens en aanbeveling (27-11, avond)
+Opnieuw gedraaid met koppeling 1.1.0 (27 Meta-datasets), GA4 en Shopify, langs de vaste lijst in [[Agents Ads Agent]]. Door de Ads Agent opgesteld, door de hoofdsessie nagerekend.
+
+**Wat er nieuw bij komt**
+- **Uitgavenplafond:** €1.876,18 met €840,75 uitgegeven, dus €1.035 ruimte. Het plafond is op 27-11 verhoogd; stilvallen vóór 30-11 is geen risico meer.
+- **Nooit rustig gedraaid:** grote wijzigingen op 20-11 (budget €20 naar €45, pauze en herstart), 22-11 (campagne hernoemd van een 3-pack-campagne, twee adsets en negen advertenties nieuw) en 26-11 (nieuwe beelden in alle advertenties). Geen enkele periode is een stabiele meting.
+- **34% van de uitgaven (€117,86) zit op verwijderde advertenties**, met 7 van de 27 winkelwagens.
+- **Winkelwagens komen in pieken:** 19 van de 27 op 23 en 25-11, 15 in twee uren (12:00 en 22:00). iPhone: 21 winkelwagens, 0 aankopen; Android: 6 winkelwagens, 2 aankopen. Samen met Shopify (6 sessies met winkelwagen tegen Meta 27) wijst dit op dubbel of herhaald gemeten AddToCart.
+- **Leeftijd zwakker dan gedacht:** 6 van de 14 winkelwagens bij 25 tot 34 komen van één advertentie op €7,44 uitgaven (waarschijnlijk één of twee mensen). Alleen 45 tot 54 is redelijk aannemelijk zwak (1 winkelwagen op 60 klikken).
+- **Video:** Nooit meer 12,3% hook rate (208 van 1.685), Wat houd je tegen 6,5%; ThruPlay onder 4% van de starts, gemiddeld 2 tot 3 seconden kijken. De rest is beeld.
+- **Stories-succes is één advertentie:** Wat houd je tegen haalde 5 winkelwagens en beide aankopen op €5,61 in Instagram Stories; sinds 25-11 krijgt die advertentie bijna geen budget meer.
+- **Rankings** onbekend (te weinig vertoningen), **leerfase-status** en **frequentieverdeling** geeft Meta niet terug.
+- **GA4 07-11 t/m 27-11:** 179 sessies, 12 seconden actief per sessie, 4 winkelwagens, 0 aankopen; terugkerende bezoekers (12 sessies) leveren 3 van de 4 winkelwagens.
+- **Concurrentie in het account:** naast deze campagne lopen de 3-pack-campagne (NL, €112 tot nu toe, ROAS 0,40) en sinds 27-11 een Black Friday-campagne op leads.
+
+**Aanbeveling**
+1. *Tot en met 30-11 (Performance Days):* niets aan deze campagne wijzigen (elke wijziging zet de leerfase weer op nul en er is net op 26-11 gereset), budget €45 per dag laten staan. Wel nu: in Events Manager AddToCart controleren (pixel én Conversions API, deduplicatie via event_id) en besluiten of drie campagnes tegelijk op NL moeten blijven bieden.
+2. *01-12 tot 07-12:* AddToCart-meting laten rechtzetten (Website), dan één nieuwe CBO-adset breed NL met 4 tot 6 advertenties (Founders rugby, Wat houd je tegen, Lifestyle voetbal, Nooit meer en een nieuw concept), Checklist voetbal en Founders voetbal uit, kleine plaatsingen uit, €45 per dag, 7 dagen niet aanraken. Optimaliseren op winkelwagen houden.
+3. *Daarna:* pas naar ongeveer €90 per dag (stappen van maximaal 20%) als Shopify echte aankopen vanuit Meta laat zien; elke week twee echt andere concepten (grip-video, vergelijking, aanbod, reviews), meten op Shopify-omzet gedeeld door uitgaven.
+4. *Grootste hefboom blijft de pagina:* 179 sessies, 0 bestellingen. Break-even vraagt ongeveer 4% van de paginaweergaven naar aankoop bij een 3-pack (€1,85 per paginaweergave / €44,95). Dat is werk voor de Website Agent.
 
 ## Wat niet lukte
 De GA4-koppeling (analytics-mcp) startte niet; GA4 is direct via de Data API met de service-account van de koppeling uitgelezen. Tijdens de analyse gaf de Meta-koppeling geen ThruPlay, hook rate, rankings of attributie per venster; de koppeling is daarna uitgebreid (zie 9). Leerfase-status geeft Meta voor deze adsets niet terug, ook niet na de uitbreiding. Ads-QA is overgeslagen (geen QA-agent voor het Ads-domein beschikbaar in deze sessie); de cijfers zijn wel tegen elkaar gelegd (Meta-dagsommen = totalen, GA4 en Shopify naast Meta). Stap B (research-sync) en publicatie van het dashboard overgeslagen: dat lukt alleen vanaf info@, deze sessie draait op het persoonlijke account.

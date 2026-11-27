@@ -17,6 +17,9 @@
 
 - 2026-11-26 | Voorraad: kies eerst uit de sectie Voorraad hieronder, van boven naar beneden. Wijk alleen af als er die ochtend aantoonbaar een sterkere trend of nieuws is, en zeg dat in je eindbericht. Check vóór gebruik of de datum nog vrij en het onderwerp nog actueel is. Zet een gebruikt item op `gebruikt JJJJ-MM-DD`.
 
+- 2026-11-27 | Challenges moeten volwassen en sportief voelen, zoals sporters die serieus de strijd aangaan. Geen kinderachtige gimmicks (chocoladeletter als prijs, spullen op schoot, quizjes als straf). | Tigo vond WALL SIT VOOR DE CHOCOLADELETTER kinderachtig, saai en raar
+- 2026-11-27 | Werkt wel: greenscreen die uitlegt waarom profs iets doen, met echte informatie en een link naar grip. Meer van dit soort (gewoontes, uitrusting en rituelen van profs in de kernsporten), altijd met bron. | Tigo keurde WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? goed
+
 ## Voorraad (uitgewerkt 26-11-2026, twee keer getoetst)
 
 Toets 1, merk: presteren of doorzetten, door de founders te brengen, kernsport, merkregels, geen claims buiten het feitenbestand. Toets 2, haalbaarheid en kijkplezier: zonder budget, binnen een uur, veilig, en spanning, humor, falen of echte informatie (leerregels van 26-11).
@@ -74,10 +77,10 @@ Lengte: max 40 s · Opname: ± 30 min · Format: 9:16, reel
 Veilig: knieën op 90 graden, opgeven mag altijd, papier mag van de schoot
 ```
 
-### V3 · kantoorchallenge · algemeen · open
+### V3 · kantoorchallenge · algemeen · afgevallen 2026-11-27 (te kinderachtig, zelfde soort als V2)
 `PLANK, MAAR WIE LACHT VERLIEST | REEL | <vrije dag>`. Eén founder in plank, de andere twee proberen hem binnen 60 s te laten lachen (zonder aanraken). Lukt het, dan wisselen. Humor plus doorzetten, nul props. Alleen gebruiken als V2 al gebruikt is (te dicht bij elkaar op dezelfde week).
 
-### V4 · reactietest · alle kernsporten · open
+### V4 · reactietest · alle kernsporten · open, alleen serieus en sportief gebracht (geen spelletje)
 `HOE SNEL REAGEER JIJ ECHT? | REEL | <vrije dag>`. Liniaaltest: iemand laat een liniaal vallen, jij vangt. Centimeters omrekenen naar milliseconden (tabel op beeld), ranking van het team, slechtste doet 20 push-ups, kijker wordt uitgedaagd om het thuis te doen en zijn score te commenten. [CHECK] de omrekentabel vóór gebruik (valformule, geen merkclaim).
 
 ### V5 · serie · algemeen · open, eerst akkoord vragen
@@ -98,5 +101,5 @@ HYROX Utrecht, Jaarbeurs, 26 t/m 30 nov 2026: de grootste doorzetters van Nederl
 <!-- JJJJ-MM-DD | type | sport | TITEL | voorgestelde datum | status (open / inplannen / aanpassen / verwijderen / verdwenen) | reden -->
 2026-11-26 | greenscreen | voetbal | FEYENOORD IN EEN DIP: HOE KOM JE ERUIT? | 28 NOV | verwijderen | Tigo: niet leuk om te kijken, de informatie is niet waardevol en het is gek om te posten (Buffer-ID 6b0833f036b84192ade0637e)
 2026-11-26 | kantoorchallenge | algemeen | STOPPEN OP DE STREEP: SOKKEN VS GRIP | 3 DEC | verwijderen | Tigo: naar een streep rennen is niet leuk om te kijken (Buffer-ID 6b0833f0863efaf8540a948c)
-2026-11-27 | greenscreen | voetbal | WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV | open | uit voorraad V1 (Buffer-ID 6b09300c468a0666659dd544)
-2026-11-27 | kantoorchallenge | voetbal, rugby, padel | WALL SIT VOOR DE CHOCOLADELETTER | REEL | 3 DEC | open | uit voorraad V2, 4 DEC was bezet (Buffer-ID 6b09300d541dcb037dfcef9e)
+2026-11-27 | greenscreen | voetbal | WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV | inplannen | Tigo: goed, mag erin; uit voorraad V1 (Buffer-ID 6b09300c468a0666659dd544)
+2026-11-27 | kantoorchallenge | voetbal, rugby, padel | WALL SIT VOOR DE CHOCOLADELETTER | REEL | 3 DEC | verwijderen | Tigo: kinderachtig, saai en raar; uit voorraad V2, 4 DEC was bezet (Buffer-ID 6b09300d541dcb037dfcef9e)

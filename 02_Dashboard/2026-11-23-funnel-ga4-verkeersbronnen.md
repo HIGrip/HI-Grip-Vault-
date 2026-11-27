@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Over 24 okt–22 nov haakt 56% van de sessies af vóór een productpagina, levert Paid Social (266 sessies) 0 aankopen en Organic Search (182 sessies) 3 aankopen en €138. Na de winkelwagen kopen er 3 van 29. GA4 mist ongeveer een derde van de omzet (5 tegenover 7 orders in Shopify)."
-gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-09-03-analytics-kpi-meetgat, 2026-11-26-productpagina-2-0-onderzoek-en-prototype]
+gerelateerd: [2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-09-03-analytics-kpi-meetgat, 2026-11-26-productpagina-2-0-onderzoek-en-prototype, 2026-11-27-meta-ads-verblijftijd-productpagina]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "De lopende Meta-proef heeft sinds 7 november niets uitgegeven, omdat de accountlimiet van €245,55 bereikt is; over alle campagnes samen staat het account op €245,55 uitgaven, 7 winkelwagens en 0 toegeschreven aankopen. Het grootste lek zit in meting en plaatsing (Audience Network, pixel die op toestemming wacht, geen CAPI), niet in de creatives: daarom eerst de startcontrole, dan een nieuwe campagne met twee sets en 6 nieuwe ads, evaluatie op 21 november en de Performance Days met 3+3 als hoofdaanbod."
-gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-meta-opbouw-getoetst-start-6-november, 2026-11-06-meta-plan-minimaal-2-weken, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-performance-days-marketingplan, 2026-11-09-weekoverzicht, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-11-15-ads-tien-losse-ads-rugby-voetbal]
+gerelateerd: [2026-11-04-ads-resultaten-verbeteringen, 2026-11-05-meta-opbouw-getoetst-start-6-november, 2026-11-06-meta-plan-minimaal-2-weken, 2026-10-25-ads-onderzoek-bewezen-grip-sock-ads, 2026-11-05-meta-opbouw-statische-ads-voetbal-en-rugby, 2026-11-05-performance-days-marketingplan, 2026-11-09-weekoverzicht, 2026-10-29-ads-funnel-en-snelheid-productpagina, 2026-10-27-review-rugby-ads-trustpilot, 2026-11-15-ads-tien-losse-ads-rugby-voetbal, 2026-11-27-meta-ads-verblijftijd-productpagina]
 vervangt: [2026-11-06-meta-plan-minimaal-2-weken]
 bronbestand: "C:\\Users\\Test\\Werk\\HI-Grip-Vault-\\04_Social_Agent\\Visuele Productie\\Meta-batch-2026-11"
 deadline: 2026-11-21

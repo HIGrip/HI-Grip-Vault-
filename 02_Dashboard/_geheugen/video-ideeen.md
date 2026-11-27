@@ -21,7 +21,7 @@
 
 Toets 1, merk: presteren of doorzetten, door de founders te brengen, kernsport, merkregels, geen claims buiten het feitenbestand. Toets 2, haalbaarheid en kijkplezier: zonder budget, binnen een uur, veilig, en spanning, humor, falen of echte informatie (leerregels van 26-11).
 
-### V1 · greenscreen · voetbal · open
+### V1 · greenscreen · voetbal · gebruikt 2026-11-27
 **Titel:** `WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV`  (houdbaar tot 30 NOV; daarna "Gezien bij de Klassieker?" als hook)
 **Tag:** PERSOONLIJKE CONTENT
 **Waarom sterk:** iedereen ziet het elke topwedstrijd, bijna niemand weet waarom. Nieuwsgierigheidskloof in de hook; HÏ Grip legt uit als expert (autoriteit zonder claim). Echte informatie, dus niet de fout van FEYENOORD IN EEN DIP.
@@ -48,7 +48,7 @@ Lengte: max 30 s · Opname: ± 15 min · Format: 9:16, reel
 [CHECK] alleen een screenshot van een nieuwsartikel met de bron in beeld, geen losse persfoto
 ```
 
-### V2 · kantoorchallenge · voetbal, rugby, padel · open
+### V2 · kantoorchallenge · voetbal, rugby, padel · gebruikt 2026-11-27 (datum 3 DEC, want 4 DEC bezet)
 **Titel:** `WALL SIT VOOR DE CHOCOLADELETTER | REEL | 4 DEC`
 **Tag:** PERFORMANCE / LIFESTYLE / INFLUENCER CONTENT
 **Waarom sterk:** echte strijd met een prijs die iedereen in Nederland herkent (pakjesavond 5 dec), trillende benen en foute antwoorden zijn de humor, en het draait om wie het langst doorzet. Gripsokken zijn gewoon aan op een gladde vloer; geen vergelijkingsronde nodig. Geen rennen naar een streep.
@@ -98,3 +98,5 @@ HYROX Utrecht, Jaarbeurs, 26 t/m 30 nov 2026: de grootste doorzetters van Nederl
 <!-- JJJJ-MM-DD | type | sport | TITEL | voorgestelde datum | status (open / inplannen / aanpassen / verwijderen / verdwenen) | reden -->
 2026-11-26 | greenscreen | voetbal | FEYENOORD IN EEN DIP: HOE KOM JE ERUIT? | 28 NOV | verwijderen | Tigo: niet leuk om te kijken, de informatie is niet waardevol en het is gek om te posten (Buffer-ID 6b0833f036b84192ade0637e)
 2026-11-26 | kantoorchallenge | algemeen | STOPPEN OP DE STREEP: SOKKEN VS GRIP | 3 DEC | verwijderen | Tigo: naar een streep rennen is niet leuk om te kijken (Buffer-ID 6b0833f0863efaf8540a948c)
+2026-11-27 | greenscreen | voetbal | WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV | open | uit voorraad V1 (Buffer-ID 6b09300c468a0666659dd544)
+2026-11-27 | kantoorchallenge | voetbal, rugby, padel | WALL SIT VOOR DE CHOCOLADELETTER | REEL | 3 DEC | open | uit voorraad V2, 4 DEC was bezet (Buffer-ID 6b09300d541dcb037dfcef9e)

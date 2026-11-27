@@ -83,6 +83,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 | Meer grip | 95% meer grip | Afgeleid: 1,17 ÷ 0,60 = 1,95. Zelfde bron. **Alleen met de formuleringsregel hieronder** |
 | Reviewscore | **4,6 ★** (Trustpilot, 21 reviews op 5 nov; 19 op 27 okt) | Het cijfer voor drukwerk, pitch en ads (besluit Lars 2-10-2026). Altijd met bron "Trustpilot"; nooit als schema-rating. De reviews op higrip.nl zelf staan op 4,5 / 5 (15 sep): noem dat cijfer niet als merkscore. |
 | Vertrouwd door | 10+ organisaties | Niet geteld; voorzichtig gebruiken |
+| Oranje | "Gedragen door spelers van Oranje" | Bevestigd door Team HÏ Grip 27-11-2026: spelers van Rugby Nederland dragen HÏ Grip. Schrijf "spelers van Oranje" zonder te noemen welk team. |
 
 > [!danger] Formuleringsregel voor grip-claims (verplicht in elke uiting)
 > Het onderzoek gaat over gripsokken in het algemeen, niet over een test van de HÏ Grip-sok zelf. Schrijf dus: *"Wetenschappelijk aangetoond: gripsokken verhogen de statische wrijvingscoëfficiënt van 0,60 naar 1,17 — 95% meer grip (Apps et al. 2022)"*. Nooit: *"HÏ Grip getest: 95% meer grip"*, tenzij er een eigen meetrapport ligt. Zet de bronregel bij elk getal.
@@ -118,6 +119,7 @@ Bron: besluit van Lars van 25 sep 2026, vastgelegd in [[Performance Grip Socks 2
 
 ## Wijzigingslog
 
+- 2026-11-27 — Claim "Gedragen door spelers van Oranje" toegevoegd (bevestigd door Team HÏ Grip). Materiaal 2.0 volgens de live productpagina: 30% Coolmax · 28% katoen · 25% polyester · 14% nylon · 3% spandex (nog niet tegen het label gecontroleerd).
 - 2026-11-26 — Sectie "Lopende actie" toegevoegd: HÏ Performance Days, "Verdubbel je order" (x2), tot 30-11-2026 23:59, plus de ad-landingspagina's.
 - 2026-11-10 — Packprijzen 2.0 toegevoegd uit de live productpagina: 3-pack €44,95 en 5-pack €69,95, met gratis verzending. Stonden nog niet in dit bestand terwijl ze sinds begin november live zijn.
 - 2026-11-06 — Verzendkosten buiten Nederland toegevoegd: €5,00, uit de Shopify-instellingen; gratis vanaf €35 geldt in alle landen.

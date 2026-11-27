@@ -37,7 +37,8 @@ Volledige doorlichting van campagne `HG_NL_Rugby_Voetbal_Product_2026-11-20` (ID
 - [ ] P2 · Elke week 2 nieuwe concepten aanleveren (Design Agent) die echt anders zijn: grip-demo op video, vergelijking gewone sok tegen HÏ Grip, aanbod x2, sociaal bewijs; de zwakste advertentie eruit
 - [ ] P2 · Alle advertenties dezelfde UTM-opbouw met namen in plaats van {{campaign.id}}: nu komt deze campagne onder twee utm_campaign-waarden binnen
 - [ ] P2 · Meten op Shopify-omzet gedeeld door advertentie-uitgaven (MER) per week naast Meta-ROAS met attributie alleen klik
-- [ ] P1 · Website Agent: uitzoeken welke app of welk blok extra AddToCart-events afvuurt (één paar, een 3-pack en een x2-pack los testen in Gebeurtenissen testen) en zorgen dat één klik op Toevoegen één event geeft
+- [ ] P1 · Website Agent: de Verdubbel-extensie (hi-grip-verdubbel) past na elke winkelwagenklik de gratis regel aan via de Storefront API (zie 12); bevestigen in Gebeurtenissen testen (met marketingtoestemming) of dat een extra AddToCart geeft en zo ja de gratis regel zo toevoegen dat één klik op Toevoegen één event geeft
+- [ ] P2 · Website Agent: nagaan waarom de cookiebanner op higrip.nl niet verscheen terwijl Shopify aangaf dat hij getoond moest worden (testbrowser 27-11); zonder banner geen marketingtoestemming en dus geen pixel
 - [ ] P3 · Vanaf 01-12 Facebook Stories, rechterkolom, Marketplace, zoeken, notificaties en instream uitzetten (samen minder dan €10, geen resultaat)
 - [ ] P2 · Brief aan Design voor Nooit meer: de video stopt mensen (12,3% kijkt) maar 4% kijkt door en er komt geen winkelwagen; product en prijs eerder in beeld
 - [ ] P3 · Advertenties naar de ad-landingspagina's (/pages/gripsokken-voetbal, /pages/gripsokken-rugby) laten verwijzen en na 7 dagen verblijftijd en winkelwagens per pagina vergelijken met de productpagina
@@ -165,6 +166,18 @@ Export uit Events Manager (27-11, aantallen per uur, browser tegen server, vóó
 - **Meerdere events per winkelwagen-sessie:** 118 browser-events tegen 40 sessies met winkelwagen (ongeveer 3 per sessie), op 23-11 zelfs 73 tegen 15 (28 in één uur, 13:00). Vermoedelijk vuurt het toevoegen van een pack (bundelblok) een event per paar, of voegen mensen meerdere keren toe.
 - **Sinds 24-11 extra events alleen via de server:** 23 meer dan via de pixel, vooral 25-11 tussen 20:00 en 23:00 (26 server tegen 11 browser). Dat valt samen met de winkelwagen-piek die Meta deze campagne op 25-11 rond 22:00 toerekende. Vermoedelijk voegt een app (Verdubbel-app met het gratis actiepaar, of de bundel-app) via de server regels toe, die Meta als winkelwagen telt zonder dat de bezoeker iets deed.
 - Gevolg: Meta optimaliseert deze campagne op een winkelwagensignaal dat per echte winkelwagen 1 tot 5 keer telt en deels door apps ontstaat.
+
+### 12. Winkelwagentest op higrip.nl (27-11, avond)
+Op de live productpagina van Performance Gripsokken 2.0 wit drie handelingen uitgevoerd en per handeling de winkelwagenverzoeken geteld. Daarna is de winkelwagen leeggemaakt; er is niets besteld.
+| Handeling | Verzoek van de pagina | Extra verzoek erna | Winkelwagen daarna |
+|---|---|---|---|
+| 1-pack toevoegen | 1× `/cart/add.js` | 1× Storefront API (`graphql.json`) | 1 betaald paar + regel "Gratis actiepaar" ×1 |
+| 3-pack toevoegen | 1× `/cart/add.js` (aantal 3) | 1× Storefront API | gratis regel van 1 naar 4 |
+| In de winkelwagen + (3 naar 4) | 1× `/cart/change` | 1× Storefront API | gratis regel van 4 naar 5 |
+- **Oorzaak gevonden:** de eigen extensie `hi-grip-verdubbel` (Verdubbel je order, Performance Days) controleert na elke winkelwagenwijziging de gratis regel en past die aan via `Shopify.actions.updateCart` (Storefront API). Elke klik geeft zo twee winkelwagenwijzigingen: die van de bezoeker en die van de extensie. De gratis regel is een apart product (`gratis-actiepaar-…`).
+- Het 3-pack (bundelblok) voegt één regel met aantal 3 toe, geen drie losse regels.
+- Dit past bij het patroon in 11: extra events vanaf 24-11, vooral server-side. De Storefront API-wijziging komt niet als gewone klik in de browser binnen, maar Shopify kan hem wel als winkelwagen-event aan de serverkant doorgeven.
+- **Niet direct gezien:** de Meta-pixel vuurde in de testbrowser niet, omdat er geen marketingtoestemming was. Er verscheen ook geen cookiebanner, terwijl Shopify aangaf dat die getoond moest worden. Serverevents (CAPI) zijn vanuit de browser niet te zien. Dat de extra wijziging ook een AddToCart bij Meta oplevert, is dus waarschijnlijk maar niet bewezen. Bewijs: dezelfde test met marketingtoestemming en Gebeurtenissen testen open in Events Manager.
 
 ## Wat niet lukte
 De GA4-koppeling (analytics-mcp) startte niet; GA4 is direct via de Data API met de service-account van de koppeling uitgelezen. Tijdens de analyse gaf de Meta-koppeling geen ThruPlay, hook rate, rankings of attributie per venster; de koppeling is daarna uitgebreid (zie 9). Leerfase-status geeft Meta voor deze adsets niet terug, ook niet na de uitbreiding. Ads-QA is overgeslagen (geen QA-agent voor het Ads-domein beschikbaar in deze sessie); de cijfers zijn wel tegen elkaar gelegd (Meta-dagsommen = totalen, GA4 en Shopify naast Meta). Stap B (research-sync) en publicatie van het dashboard overgeslagen: dat lukt alleen vanaf info@, deze sessie draait op het persoonlijke account.

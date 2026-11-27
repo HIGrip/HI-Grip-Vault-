@@ -10,12 +10,12 @@ Dezelfde alleen-lezen Meta-koppeling draait in Hermes (profiel `ads`) en in Clau
 
 ## Bestanden (in de vault)
 - `09_Ads_Agent/Koppeling/meta_ads_readonly_mcp.py`: het programma (alleen Python-standaardbibliotheek, alleen HTTP GET naar Meta).
-- `09_Ads_Agent/Koppeling/test_meta_ads_readonly_mcp.py`: 49 tests met een nagebootste Meta-server (`python -m unittest test_meta_ads_readonly_mcp` in die map; verwijder daarna `__pycache__` en het logbestand).
+- `09_Ads_Agent/Koppeling/test_meta_ads_readonly_mcp.py`: 60 tests met een nagebootste Meta-server (`python -m unittest test_meta_ads_readonly_mcp` in die map; verwijder daarna `__pycache__` en het logbestand).
 
 ## Vaste waarden (gelijk voor iedereen)
 - Advertentieaccount: `act_581294088143656` (omgevingsvariabele `META_AD_ACCOUNT_ID`; het voorvoegsel `act_` wordt zo nodig aangevuld). Geen ander account kiesbaar.
 - Token: Windows-referentiekluis, doel `HIGRIP_META_ADS_TOKEN`. Nooit in een bestand, `.env`, config of de chat.
-- Tools: `meta_account_info`, `meta_campaigns`, `meta_adsets`, `meta_ads`, `meta_insights`, `meta_pixels`.
+- Tools: `meta_account_info`, `meta_campaigns`, `meta_adsets`, `meta_ads`, `meta_insights`, `meta_activities`, `meta_pixels`. Na een update van het programma: Claude Code of Hermes herstarten.
 
 ## Token zetten (elke gebruiker zelf, in een eigen terminal)
 Een beheerder maakt in Meta Business Settings een token voor de systeemgebruiker met alleen leesrechten (`ads_read`). Daarna, in de eigen terminal van die gebruiker:
@@ -48,7 +48,7 @@ Controle: `claude mcp list` toont `meta-ads` als Connected. Zet nooit het token 
 ## Agent en command in Claude Code
 Kant-en-klare bestanden staan in de vault (`09_Ads_Agent/Koppeling/Claude Code/`: agentbestand en commandbestand, als .txt zodat ze niet als vaultnotitie meetellen). Kopieer ze zonder wijziging naar de Claude Code-gebruikersmap (`agents/ads-agent.md` en `commands/ads-agent.md`). Een collega die alles door Claude laat doen gebruikt [[Ads Koppeling — Installatieprompt voor collega]].
 
-- Agent `ads-agent` (bestand `ads-agent.md` in de map `agents` van de Claude Code-gebruikersmap): alleen Read/Grep/Glob, vault lezen en de zes `meta-ads`-tools. Geen Bash, Write of Edit. Leest bij de start `01_Agent_Infrastructuur/Ads Agent/Agents Ads Agent.md` en `09_Ads_Agent/Profiel/Ads Profiel — SOUL.md`.
+- Agent `ads-agent` (bestand `ads-agent.md` in de map `agents` van de Claude Code-gebruikersmap): alleen Read/Grep/Glob, vault lezen en de zeven `meta-ads`-tools. Geen Bash, Write of Edit. Leest bij de start `01_Agent_Infrastructuur/Ads Agent/Agents Ads Agent.md` en `09_Ads_Agent/Profiel/Ads Profiel — SOUL.md`.
 - Command `/ads-agent <opdracht>` (bestand `ads-agent.md` in de map `commands`): start de agent als sub-agent met een zelfstandige briefing.
 
 ## Bekend

@@ -42,13 +42,31 @@ LEVELS = ["account", "campaign", "adset", "ad"]
 DATE_PRESETS = ["today", "yesterday", "last_3d", "last_7d", "last_14d", "last_28d",
                 "last_30d", "this_month", "last_month"]
 TIME_INCREMENTS = ["1", "7", "monthly", "all_days"]
-BREAKDOWNS = ["age", "gender", "country", "publisher_platform", "platform_position",
-              "device_platform", "impression_device"]
-INSIGHT_FIELDS = ["impressions", "reach", "frequency", "clicks", "inline_link_clicks", "spend",
-                  "cpm", "cpc", "ctr", "actions", "action_values", "purchase_roas",
-                  "cost_per_action_type", "campaign_name", "adset_name", "ad_name"]
-DEFAULT_INSIGHT_FIELDS = ["impressions", "reach", "clicks", "inline_link_clicks", "spend", "cpm",
-                          "ctr", "actions", "action_values", "purchase_roas"]
+BREAKDOWNS = ["age", "gender", "country", "region", "publisher_platform", "platform_position",
+              "device_platform", "impression_device", "frequency_value",
+              "hourly_stats_aggregated_by_advertiser_time_zone"]
+# Alle niet-visuele cijfers (besluit Timo 27-11-2026): de agent neemt alles mee in zijn conclusie.
+# Beeld, tekst en link van een advertentie zitten hier bewust niet in; die komen alleen op verzoek.
+INSIGHT_FIELDS = ["impressions", "reach", "frequency", "clicks", "unique_clicks", "inline_link_clicks",
+                  "unique_inline_link_clicks", "outbound_clicks", "unique_outbound_clicks", "spend",
+                  "cpm", "cpp", "cpc", "ctr", "unique_ctr", "inline_link_click_ctr", "outbound_clicks_ctr",
+                  "cost_per_inline_link_click", "cost_per_outbound_click", "cost_per_unique_click",
+                  "actions", "unique_actions", "action_values", "conversions", "conversion_values",
+                  "cost_per_action_type", "cost_per_unique_action_type", "cost_per_conversion",
+                  "purchase_roas", "website_purchase_roas", "website_ctr",
+                  "video_play_actions", "video_thruplay_watched_actions", "cost_per_thruplay",
+                  "video_p25_watched_actions", "video_p50_watched_actions", "video_p75_watched_actions",
+                  "video_p95_watched_actions", "video_p100_watched_actions", "video_30_sec_watched_actions",
+                  "video_avg_time_watched_actions",
+                  "quality_ranking", "engagement_rate_ranking", "conversion_rate_ranking",
+                  "attribution_setting", "objective", "optimization_goal",
+                  "campaign_id", "campaign_name", "adset_id", "adset_name", "ad_id", "ad_name"]
+DEFAULT_INSIGHT_FIELDS = ["impressions", "reach", "frequency", "clicks", "inline_link_clicks", "outbound_clicks",
+                          "spend", "cpm", "cpc", "ctr", "inline_link_click_ctr", "actions", "action_values",
+                          "cost_per_action_type", "purchase_roas", "video_play_actions",
+                          "video_thruplay_watched_actions", "attribution_setting"]
+ATTRIBUTION_WINDOWS = ["1d_click", "7d_click", "28d_click", "1d_view", "7d_view", "1d_ev", "default"]
+ACTIVITY_FIELDS = "event_time,event_type,translated_event_type,object_id,object_name,object_type,extra_data"
 EFFECTIVE_STATUS = ["ACTIVE", "PAUSED", "ARCHIVED", "DELETED", "IN_PROCESS", "WITH_ISSUES",
                     "CAMPAIGN_PAUSED", "ADSET_PAUSED", "DISAPPROVED", "PENDING_REVIEW"]
 
@@ -238,7 +256,8 @@ def t_account_info(args):
 def t_campaigns(args):
     acc = get_account()
     p = {"fields": "id,name,objective,status,effective_status,buying_type,daily_budget,lifetime_budget,"
-                   "budget_remaining,bid_strategy,special_ad_categories,start_time,stop_time,updated_time"}
+                   "budget_remaining,bid_strategy,special_ad_categories,spend_cap,smart_promotion_type,configured_status,"
+                   "issues_info,start_time,stop_time,created_time,updated_time"}
     st = pick_list(args.get("effective_status"), EFFECTIVE_STATUS, "effective_status")
     if st:
         p["effective_status"] = json.dumps(st)
@@ -250,7 +269,8 @@ def t_adsets(args):
     acc = get_account()
     p = {"fields": "id,name,campaign_id,status,effective_status,optimization_goal,billing_event,bid_strategy,"
                    "daily_budget,lifetime_budget,budget_remaining,start_time,end_time,promoted_object,"
-                   "attribution_spec,targeting,learning_stage_info,updated_time"}
+                   "attribution_spec,targeting,learning_stage_info,destination_type,pacing_type,frequency_control_specs,"
+                   "is_dynamic_creative,configured_status,issues_info,created_time,updated_time"}
     if args.get("campaign_id"):
         p["filtering"] = json.dumps([{"field": "campaign.id", "operator": "EQUAL",
                                       "value": numeric_id(args["campaign_id"], "campaign_id")}])
@@ -264,7 +284,7 @@ def t_adsets(args):
 def t_ads(args):
     acc = get_account()
     p = {"fields": "id,name,adset_id,campaign_id,status,effective_status,issues_info,"
-                   "creative{id,name,object_type},updated_time"}
+                   "configured_status,creative{id,name,object_type,url_tags},created_time,updated_time"}
     flt = []
     if args.get("adset_id"):
         flt.append({"field": "adset.id", "operator": "EQUAL", "value": numeric_id(args["adset_id"], "adset_id")})
@@ -295,8 +315,29 @@ def t_insights(args):
     bd = pick_list(args.get("breakdowns"), BREAKDOWNS, "breakdowns")
     if bd:
         p["breakdowns"] = ",".join(bd)
+    aw = pick_list(args.get("attribution_windows"), ATTRIBUTION_WINDOWS, "attribution_windows")
+    if aw:
+        p["action_attribution_windows"] = json.dumps(aw)
+    flt = [{"field": f + ".id", "operator": "EQUAL", "value": numeric_id(args[f + "_id"], f + "_id")}
+           for f in ("campaign", "adset", "ad") if args.get(f + "_id")]
+    if flt:
+        p["filtering"] = json.dumps(flt)
     paging(args, p)
     return finish(*http_get(acc + "/insights", p))
+
+
+def t_activities(args):
+    """Wijzigingsgeschiedenis van het account (wat, wanneer, welk object). Bewust zonder actor_name: geen namen."""
+    acc = get_account()
+    p = {"fields": ACTIVITY_FIELDS}
+    since, until = args.get("since"), args.get("until")
+    for n, v in (("since", since), ("until", until)):
+        if v not in (None, ""):
+            if not re.fullmatch(r"[0-9]{4}-[0-9]{2}-[0-9]{2}", str(v)):
+                raise ToolError("%s moet JJJJ-MM-DD zijn." % n)
+            p[n] = v
+    paging(args, p)
+    return finish(*http_get(acc + "/activities", p))
 
 
 def t_pixels(args):
@@ -316,11 +357,11 @@ TOOLS = {
                           {"type": "object", "properties": {}}),
     "meta_campaigns": (t_campaigns, "Lijst campagnes met doel, status, budget en biedstrategie. Alleen lezen.",
                        {"type": "object", "properties": dict(PAGE, **STATUS)}),
-    "meta_adsets": (t_adsets, "Lijst advertentiesets met optimalisatiedoel, budget, targeting en attributie-instelling. Alleen lezen.",
+    "meta_adsets": (t_adsets, "Lijst advertentiesets met optimalisatiedoel, budget, targeting, attributie-instelling en leerfase-status. Alleen lezen.",
                     {"type": "object", "properties": dict(PAGE, campaign_id={"type": "string"}, **STATUS)}),
     "meta_ads": (t_ads, "Lijst advertenties met status en eventuele problemen (geen creatives genereren of wijzigen). Alleen lezen.",
                  {"type": "object", "properties": dict(PAGE, adset_id={"type": "string"}, campaign_id={"type": "string"}, **STATUS)}),
-    "meta_insights": (t_insights, "Prestatiecijfers (vertoningen, klikken, uitgaven, aankopen, ROAS) per niveau, periode en optionele uitsplitsing. Alleen lezen, geaggregeerd.",
+    "meta_insights": (t_insights, "Prestatiecijfers per niveau, periode en optionele uitsplitsing: bereik, frequentie, klikken (ook uitgaande en unieke), uitgaven, conversies, ROAS, video (ThruPlay, kijkpercentages), kwaliteitsrankings en attributie per venster. Alleen lezen, geaggregeerd.",
                       {"type": "object", "properties": dict(PAGE,
                           level={"type": "string", "enum": LEVELS},
                           date_preset={"type": "string", "enum": DATE_PRESETS},
@@ -328,7 +369,14 @@ TOOLS = {
                           until={"type": "string", "description": "JJJJ-MM-DD"},
                           time_increment={"type": "string", "enum": TIME_INCREMENTS},
                           breakdowns={"type": "array", "items": {"type": "string", "enum": BREAKDOWNS}},
+                          attribution_windows={"type": "array", "items": {"type": "string", "enum": ATTRIBUTION_WINDOWS},
+                                               "description": "Splits conversies per venster, bv. 7d_click naast 1d_view."},
+                          campaign_id={"type": "string"}, adset_id={"type": "string"}, ad_id={"type": "string"},
                           fields={"type": "array", "items": {"type": "string", "enum": INSIGHT_FIELDS}})}),
+    "meta_activities": (t_activities, "Wijzigingsgeschiedenis van het account (wat is wanneer aangepast, bv. budget, status, nieuwe advertentie), zonder namen van personen. Alleen lezen.",
+                        {"type": "object", "properties": dict(PAGE,
+                            since={"type": "string", "description": "JJJJ-MM-DD"},
+                            until={"type": "string", "description": "JJJJ-MM-DD"})}),
     "meta_pixels": (t_pixels, "Pixels van het account met laatst gevuurd moment. Kan extra rechten vragen; dan volgt een duidelijke foutmelding. Alleen lezen.",
                     {"type": "object", "properties": {"limit": PAGE["limit"]}}),
 }
@@ -355,7 +403,7 @@ def handle(msg):
         pv = (msg.get("params") or {}).get("protocolVersion", "2024-11-05")
         return {"jsonrpc": "2.0", "id": mid, "result": {
             "protocolVersion": pv, "capabilities": {"tools": {}},
-            "serverInfo": {"name": "meta-ads-readonly", "version": "1.0.0"}}}
+            "serverInfo": {"name": "meta-ads-readonly", "version": "1.1.0"}}}
     if method == "ping":
         return {"jsonrpc": "2.0", "id": mid, "result": {}}
     if method == "tools/list":

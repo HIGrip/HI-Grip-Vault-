@@ -1,7 +1,7 @@
 ---
 type: koppeling
 bijgewerkt: 2026-11-06
-status: gebouwd, getest met nagebootste Meta-server, code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID; token staat in de Windows-referentiekluis; live `meta_account_info` via Claude Code geeft op 06-11-2026 echte accountdata; overige vijf tools en de koppeling in Hermes live nog niet getest (Ads-profiel draait alleen-lezen via kanban)
+status: gebouwd, getest met nagebootste Meta-server, code-QA ronde 1 CORRIGEER verwerkt (ronde 2 loopt), geregistreerd in profiel `ads` met account-ID; token staat in de Windows-referentiekluis; versie 1.1.0 (27-11-2026): alle zeven tools live getest via Claude Code; de koppeling in Hermes live nog niet getest (Ads-profiel draait alleen-lezen via kanban)
 ---
 
 # Ads Koppeling — Meta alleen-lezen (MCP)
@@ -11,8 +11,10 @@ Besluit Lars (03-11-2026): de Ads Agent leest Meta Ads-cijfers en -instellingen 
 ## Wat het is
 Een klein Python-programma zonder externe afhankelijkheden: `09_Ads_Agent/Koppeling/meta_ads_readonly_mcp.py` (vault-pad, gedeeld met het hele team), met tests in `09_Ads_Agent/Koppeling/test_meta_ads_readonly_mcp.py` (25 geslaagd, 0 mislukt, nagebootste Meta-server). Het praat MCP over stdin/stdout met Hermes.
 
-## Zes alleen-lees-tools
-`meta_account_info` · `meta_campaigns` · `meta_adsets` · `meta_ads` · `meta_insights` (cijfers per niveau, periode en optionele uitsplitsing) · `meta_pixels` (kan extra rechten vragen).
+## Zeven alleen-lees-tools
+`meta_account_info` · `meta_campaigns` · `meta_adsets` (met leerfase-status) · `meta_ads` · `meta_insights` (cijfers per niveau, periode, uitsplitsing en attributievenster, filter op campagne, adset of advertentie) · `meta_activities` (wijzigingsgeschiedenis, zonder namen van personen) · `meta_pixels` (kan extra rechten vragen).
+
+**Uitbreiding 27-11-2026 (besluit Timo: alles behalve visuele inhoud).** Versie 1.1.0. Erbij: unieke en uitgaande klikken, video (ThruPlay, 3s-weergaven, kijkpercentages, gemiddelde kijktijd), kwaliteitsrankings, conversies en kosten per unieke actie, attributie per venster, uitsplitsingen regio, uur en frequentie, wijzigingsgeschiedenis, UTM-opbouw van de advertentie (`url_tags`). Bewust niet: beeld, tekst en link van advertenties; die komen pas als Team HÏ Grip erom vraagt. 60 tests geslaagd; alle zeven tools live getest op 27-11-2026. Live bevinding: Meta geeft `learning_stage_info` voor de huidige adsets niet terug, en de uitsplitsing `frequency_value` gaf een lege lijst.
 
 ## Waarom dit veilig is (ontwerp)
 - **Token kan niets wijzigen:** alleen `ads_read`. Dit is de eigenlijke beveiliging, niet het gedrag van de agent.
@@ -43,6 +45,6 @@ De agent voert nooit zelf iets uit; hooguit zet hij iets klaar in status **uit**
 Eigenaar: Lars (te bevestigen) · looptijd: 4 weken, daarna evalueren (te bevestigen) · kostenplafond: €0, geen advertentie-uitgaven (te bevestigen) · beoordelingscriteria: zie onderzoeksnotitie §7 fase 1.
 
 ## Niet gecontroleerd
-Live bewezen op 06-11-2026: alleen `meta_account_info` via Claude Code, met API-versie `v26.0` en toegangslaag `development_access`. Nog niet live getest: `meta_campaigns`, `meta_adsets`, `meta_ads`, `meta_insights`, `meta_pixels` en de koppeling in Hermes. Dus ook nog onbekend: of `ads_read` alle bedoelde velden dekt, vooral pixel en CAPI, en of de ontwikkeltoegang genoeg is voor routinematig gebruik.
+Live bewezen op 06-11-2026: alleen `meta_account_info` via Claude Code (bijgewerkt 27-11-2026: alle zeven tools live getest, zie hierboven), met API-versie `v26.0` en toegangslaag `development_access`. Nog niet live getest: `meta_campaigns`, `meta_adsets`, `meta_ads`, `meta_insights`, `meta_pixels` en de koppeling in Hermes. Dus ook nog onbekend: of `ads_read` alle bedoelde velden dekt, vooral pixel en CAPI, en of de ontwikkeltoegang genoeg is voor routinematig gebruik.
 
 > Map: [[09 Ads Agent — Index]]

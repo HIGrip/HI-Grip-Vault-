@@ -32,7 +32,7 @@ byid = {o["id"]: o for o in out}
 check("initialize geeft serverInfo", byid[1]["result"]["serverInfo"]["name"] == "meta-ads-readonly")
 check("notificatie krijgt geen antwoord", len(out) == 4)
 names = [t["name"] for t in byid[2]["result"]["tools"]]
-check("6 tools, allemaal alleen-lezen namen", len(names) == 6 and all(n.startswith("meta_") for n in names), names)
+check("7 tools, allemaal alleen-lezen namen", len(names) == 7 and all(n.startswith("meta_") for n in names), names)
 check("geen schrijf/maak/verwijder-tool",
       not any(re.search(r"create|update|delete|pause|set_|post|write|launch|upload", n) for n in names), names)
 check("call zonder account/token = nette FOUT", byid[3]["result"]["isError"] and "META_" in byid[3]["result"]["content"][0]["text"])
@@ -71,6 +71,29 @@ check("agent kan geen ander account kiezen (geen account-parameter)",
       all(not any("account" in prop for prop in t["inputSchema"].get("properties", {})) for t in m.tools_list()))
 m.call_tool("meta_adsets", {"campaign_id": "123456789"})
 check("filter campagne netjes als JSON", "campaign.id" in calls[-1][1]["filtering"])
+
+# --- 2b. uitbreiding 27-11-2026: alle niet-visuele cijfers, geen creative-inhoud
+m.call_tool("meta_insights", {"level": "ad", "campaign_id": "123456789", "attribution_windows": ["7d_click", "1d_view"],
+                              "fields": ["video_thruplay_watched_actions", "quality_ranking", "outbound_clicks"],
+                              "breakdowns": ["frequency_value"]})
+q = calls[-1][1]
+check("insights: attributievensters als JSON", json.loads(q["action_attribution_windows"]) == ["7d_click", "1d_view"])
+check("insights: filter op campagne-id", "campaign.id" in q["filtering"] and "123456789" in q["filtering"])
+check("insights: video, ranking en uitgaande klikken toegestaan", q["fields"] == "video_thruplay_watched_actions,quality_ranking,outbound_clicks")
+check("onbekend attributievenster geweigerd", raises(m.call_tool, "meta_insights", {"attribution_windows": ["99d_click"]}))
+check("insights: ad-id met injectie geweigerd", raises(m.call_tool, "meta_insights", {"ad_id": "1;DROP"}))
+m.call_tool("meta_adsets", {})
+check("adsets: leerfase-status gevraagd", "learning_stage_info" in calls[-1][1]["fields"])
+m.call_tool("meta_ads", {})
+af = calls[-1][1]["fields"]
+check("ads: geen creative-inhoud (beeld, tekst, link)",
+      not re.search(r"image|thumbnail|body|title|object_story|link_url|video_id|asset_feed|preview", af), af)
+m.call_tool("meta_activities", {"since": "2026-11-20", "until": "2026-11-27"})
+check("activities: pad act_<id>/activities", calls[-1][0] == "act_1234567890/activities")
+check("activities: geen namen van personen", "actor" not in calls[-1][1]["fields"])
+check("activities: ongeldige datum geweigerd", raises(m.call_tool, "meta_activities", {"since": "gisteren"}))
+check("geen visuele velden in INSIGHT_FIELDS",
+      not any(re.search(r"image|thumbnail|body|title|creative", f) for f in m.INSIGHT_FIELDS))
 
 # --- 3. statische controle van de broncode
 src = open(SRV, encoding="utf-8").read()

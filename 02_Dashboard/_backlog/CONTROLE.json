@@ -2032,7 +2032,7 @@
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
    "bewijs": "geen regel over verouderde EN-vertalingen gevonden in 02_Dashboard/Routines/SEO.md",
-   "controle": "Check op verouderde EN-vertalingen toevoegen aan de regressiecheck",
+   "controle": "Is een wekelijkse EN-vertalingscheck toegevoegd aan de SEO-regressiecheck",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
@@ -2538,8 +2538,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "geen apart 1.0-specificatieoverzicht gevonden in het feitenbestand, alleen losse vermeldingen van maten/prijzen/voorraad",
-   "controle": "Specificaties van de 1.0 vastleggen in de vault",
+   "bewijs": "alleen losse vermeldingen van maten/prijzen/voorraad in het feitenbestand, nog geen apart 1.0-specificatieoverzicht gevonden",
+   "controle": "Zijn de 1.0-specificaties apart vastgelegd in de vault",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
@@ -3367,15 +3367,15 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "geen treffers van hook-eerst buiten de eigen onderzoeksnotitie, nog niet aan een stijlgids toegevoegd",
-   "controle": "Regel hook-eerst toevoegen aan de stijlgids",
+   "bewijs": "hook-eerst/cuttempo-tabel komt alleen voor in de oorspronkelijke onderzoeksnotitie zelf, geen treffer in een apart stijlgidsbestand",
+   "controle": "Is de hook-eerst-regel toegevoegd aan een stijlgids",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "geen treffers van match-cut buiten de eigen onderzoeksnotitie, nog niet aan een stijlgids toegevoegd",
-   "controle": "Match-cut als derde uitzondering benoemen in de stijlgids",
+   "bewijs": "match-cut komt alleen voor in de oorspronkelijke onderzoeksnotitie zelf, geen treffer in een apart stijlgidsbestand",
+   "controle": "Is match-cut benoemd als derde uitzondering in de stijlgids",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
@@ -4254,8 +4254,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
-   "bewijs": "niet te controleren: Meta Events Manager-gegevens alleen zichtbaar in Meta Ads Manager, geen connector beschikbaar",
-   "controle": "Events Manager-checklist en LPV-ViewContent-verschil",
+   "bewijs": "niet te controleren: Meta Events Manager-cijfers zijn alleen in Meta Ads Manager te zien, geen connector beschikbaar",
+   "controle": "Zijn de Events Manager-checklist en het LPV-ViewContent-verschil verklaard",
    "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
@@ -4842,7 +4842,7 @@
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
    "bewijs": "niet te controleren: lokale MCP-instelling buiten deze repository, niet zichtbaar vanuit een cloudsessie",
-   "controle": "Vault-MCP toegestane map herstellen",
+   "controle": "Is de Vault-MCP toegestane map aangepast",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
@@ -5266,7 +5266,7 @@
   },
   "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
    "bewijs": "niet te controleren: lokale mediamappen zijn niet bereikbaar vanuit deze cloudsessie",
-   "controle": "Lokale mediamappen ads-v6 vergelijken",
+   "controle": "Bevatten de lokale ads-v6-mappen dezelfde v6-ads",
    "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
@@ -5286,8 +5286,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
-   "bewijs": "output/ heeft nu 131 losse bestanden, nog niet verplaatst of verwijderd",
-   "controle": "Output-bestanden uit vault-root verplaatsen",
+   "bewijs": "output/ heeft nu 131 losse bestanden (was 121 op 25-11, dus niet verplaatst of verminderd)",
+   "controle": "Zijn de losse bestanden in de vault-root output verplaatst of verwijderd",
    "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
@@ -5428,7 +5428,7 @@
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#738ef51d": {
    "bewijs": "niet te controleren: geen Meta Ads-connector beschikbaar in deze routine",
-   "controle": "Meta-targeting en Meta-uitgaven controleren",
+   "controle": "Is Meta-targeting op landen en Instagram-tablet gecontroleerd en Meta-uitgaven opnieuw opgehaald",
    "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"

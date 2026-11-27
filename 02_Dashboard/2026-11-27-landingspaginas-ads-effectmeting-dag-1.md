@@ -1,7 +1,7 @@
 ---
 id: 2026-11-27-landingspaginas-ads-effectmeting-dag-1
 titel: "Effect nieuwe landingspagina's voetbal, rugby, product: eerste meting na livegang"
-kerntitel: "Nog geen effect meetbaar: 6 echte bezoeken op de nieuwe pagina's, de helft landt nog op de oude"
+kerntitel: "Nog geen effect meetbaar: 6 echte bezoeken, de helft landt nog op de oude pagina"
 datum: 2026-11-27
 bron: los
 routine: ""
@@ -9,7 +9,7 @@ categorie: CRO
 status: nieuw
 prioriteit: P1
 samenvatting: "Anderhalve dag na de livegang (26-11, ~16:00) is er nog geen effect te meten: de nieuwe pagina's kregen 6 echte bezoeken (18 s per sessie, 0 winkelwagens) en 13 van de 24 campagnesessies op 26-11 landden nog op de oude productpagina. De 21 sessies van 0 seconden tussen 16 en 18 uur op 26-11 zijn testverkeer rond de livegang en moeten uit elke meting."
-gerelateerd: [2026-11-24-landingspaginas-live-ads-message-match, 2026-11-27-meta-ads-verblijftijd-productpagina]
+gerelateerd: [2026-11-24-landingspaginas-live-ads-message-match, 2026-11-27-meta-ads-verblijftijd-productpagina, 2026-11-27-meta-campagne-diagnose-rugby-voetbal-product]
 vervangt: []
 bronbestand: ""
 deadline: "2026-12-03"

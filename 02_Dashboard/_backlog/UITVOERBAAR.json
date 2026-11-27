@@ -4373,6 +4373,48 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "de A/B-test opzetten en uitvoeren in Meta Ads Manager na livegang van de landingspagina's"
  },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#0f6e052b": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: voorwaarden gratis actiepaar Performance Days vaststellen"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#8ee94f7b": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: prototype v2.0 goedkeuren als basis"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#95522d57": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Beschrijving tegen het fysieke productlabel controleren"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#c309992d": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: toestemming atleten en clubs vastleggen"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#c9e6dfe9": {
+  "beoordeeld": "2026-11-27",
+  "claude": "ja",
+  "wat_claude_doet": "Zet de schemafixes (http-context, sameAs, GTIN, verzend/retourgegevens) klaar in het testthema",
+  "wat_jij_doet": "Controleren en live zetten"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#e04ed243": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit: besparingslabels en doorhaalprijs vaststellen"
+ },
+ "2026-11-26-productpagina-2-0-onderzoek-en-prototype#fb576e33": {
+  "beoordeeld": "2026-11-27",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Maatadvies toetsen bij klantenservice-ervaring"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

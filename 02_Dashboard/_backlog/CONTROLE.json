@@ -1,5 +1,5 @@
 {
- "laatste_run": "2026-11-26T04:02:45+01:00",
+ "laatste_run": "2026-11-27T04:02:46+01:00",
  "resultaten": {
   "2026-09-03-analytics-kpi-meetgat#872bb605": {
    "bewijs": "kpi.json-weken bevatten nog alleen GA4/GSC-velden (gsc_* en de GA4-gebaseerde velden), geen apart Shopify-omzetveld; shopify.json blijft het losse bestand, ongewijzigd",
@@ -2031,9 +2031,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-seo-audit-weekdelta#e9957d88": {
-   "bewijs": "geen regel over verouderde EN-vertalingen gevonden in de SEO-routine",
-   "controle": "02_Dashboard/Routines/SEO.md doorzocht op een wekelijkse EN-vertalingscheck",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "02_Dashboard/Routines/SEO.md bevat geen regel over verouderde EN-vertalingen",
+   "controle": "Staat de EN-vertaling-check in de SEO-routine?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2129,9 +2129,9 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2330,9 +2330,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2538,9 +2538,9 @@
    "uitkomst": "handmatig"
   },
   "2026-10-19-productpagina-2-0-inspiratie-en-prototype#f4f1b984": {
-   "bewijs": "nog alleen losse vermeldingen van maten/prijzen/voorraad, geen apart vastgelegd 1.0-specificatieoverzicht",
-   "controle": "gezocht op een los 1.0-specificatieoverzicht in het feitenbestand en Performance Grip Socks 2.0.md",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "Feiten & Actuele Staat.md bevat geen apart 1.0-specificatieoverzicht buiten prijs/maten/kleur",
+   "controle": "Staat er een apart 1.0-specificatieoverzicht in de vault?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -2820,9 +2820,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2863,37 +2863,37 @@
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -2905,38 +2905,38 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#e37d3694": {
@@ -2970,9 +2970,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -3091,9 +3091,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "+31 6 24 56 65 47 staat nog in een <a href=\"mailto:info@higrip.nl\">-link, niet in een tel:-link",
-   "controle": "footer (text_TxDeYL) gecontroleerd op het telefoonnummer en het linktype",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "homepage footer toont nog href=mailto:info@higrip.nl, geen tel:-link",
+   "controle": "Is de footer-telefoonlink tel: i.p.v. mailto:",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3195,9 +3195,9 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -3367,16 +3367,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#dc4aa633": {
-   "bewijs": "geen treffers buiten 2026-11-02-video-edit-en-stijl-onderzoek.md — nog niet toegevoegd aan een stijlgids",
-   "controle": "gezocht op 'hook-eerst' buiten de eigen onderzoeksnotitie",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "grep op hook-eerst/cuttempo-tabel geeft alleen de oorspronkelijke notitie 2026-11-02-video-edit-en-stijl-onderzoek.md, geen aparte stijlgids",
+   "controle": "Staat de hook-eerst-regel in een stijlgids naast de cuttempo-tabel?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-02-video-edit-en-stijl-onderzoek#e04d3741": {
-   "bewijs": "geen treffers buiten 2026-11-02-video-edit-en-stijl-onderzoek.md — nog niet toegevoegd aan een stijlgids",
-   "controle": "gezocht op 'match-cut' buiten de eigen onderzoeksnotitie",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "grep op match-cut geeft alleen de oorspronkelijke notitie, geen aparte stijlgids met deze uitzondering",
+   "controle": "Is match-cut als derde uitzondering benoemd in de stijlgids?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -3697,9 +3697,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "beide tonen nog ongewijzigd '...waardoor sporters stabieler bewegen en minder risico hebben op blessures of blaren' zonder nuancering of bronvermelding",
-   "controle": "productpagina 2.0 (zwart/wit) doorzocht op de blarenclaim",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "www.higrip.nl/products/performance-gripsokken-2-0-zwart toont nog ongewijzigd ...minder risico hebben op blessures of blaren zonder nuancering of bron",
+   "controle": "Is de blaren-claim op de 2.0-productpagina genuanceerd of met bron",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3896,9 +3896,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "titel/kop is al Nederlands ('Je winkelwagen – HÏ Grip', 'Winkelwagen' in de HTML, geen 'Cart'), maar de cart-regel met artikel en eventuele dubbele prijsweergave rendert clientside via JS en is met curl niet te verifiëren",
-   "controle": "/cart opgehaald om kop en prijsweergave te checken",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "www.higrip.nl/cart toont al Winkelwagen i.p.v. Cart; dubbele prijsweergave rendert clientside via JS en blijft met curl niet te verifieren",
+   "controle": "Is de Cart-kop Nederlands en staat de prijs niet meer dubbel",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -3924,9 +3924,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
-   "bewijs": "niet te controleren: knopstyling (volgevuld of niet) is pas na JS-rendering in de browser zichtbaar, niet via de ruwe HTML",
-   "controle": "geen curl-controle mogelijk voor cookiebanner-knopstyling",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: knopstyling is pas na JS-rendering in de browser zichtbaar, niet via de ruwe HTML",
+   "controle": "Zijn de cookiebanner-knoppen volgevuld",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4121,9 +4121,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#5ce01a10": {
-   "bewijs": "alle vier tonen nog letterlijk 'Geen doorglijden'/'Je voet staat vast'/'Je voet blijft staan'; de doorgestreepte €19,95 naast €17,95 staat nog ongewijzigd op voetbal en rugby",
-   "controle": "content van de sportlandingspagina's (voetbal, rugby, padel, tennis) doorzocht op de genoemde teksten en de doorgestreepte prijs",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "4 landingspaginas tonen de claims nog letterlijk en 5x doorgestreept 19,95 naast 17,95, ongewijzigd",
+   "controle": "Zijn de claims omgezet en is de doorgestreepte 19,95 gecontroleerd",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4149,9 +4149,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#a8aa19f2": {
-   "bewijs": "★★★★½ en de slogan \"Meer grip. Meer controle. Meer winnen.\" staan nog in dezelfde social-strip zonder enige Trustpilot-vermelding; alleen '3.500+ sporters gingen je voor' ernaast",
-   "controle": "productpagina (2.0 wit) gecontroleerd op sterren, slogan en bronvermelding",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "www.higrip.nl/products/performance-gripsokken toont nog 4,5 en de slogan zonder Trustpilot-vermelding, ongewijzigd",
+   "controle": "Staat de 4,5-sterren/slogan nu met Trustpilot-bronvermelding",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4163,9 +4163,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
-   "bewijs": "'Geen doorglijden', 'Je voet staat vast' en 'Je voet blijft staan' staan nog letterlijk op de pagina",
-   "controle": "rugbylanding (/pages/gripsokken-voor-rugby) opgehaald op de genoemde claims",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "voetbal/rugby/tennis/padel-landingspaginas tonen alle vier nog 1x Geen doorglijden en Je voet staat vast/blijft staan, ongewijzigd",
+   "controle": "Staan Geen doorglijden/Je voet staat vast nog op de landingspaginas",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4254,9 +4254,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie-v2#132aaefd": {
-   "bewijs": "niet te controleren: Meta Events Manager-checklist en LPV-ViewContent-cijfers zijn alleen in Meta Ads Manager te zien, geen connector beschikbaar in deze routine",
-   "controle": "Meta Events Manager-data is geen vault- of site-bron",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: Meta Events Manager-data is alleen in Meta Ads Manager te zien, geen connector beschikbaar",
+   "controle": "Is de Events Manager-checklist en het LPV/ViewContent-verschil verklaard?",
+   "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -4620,9 +4620,9 @@
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#811c3f82": {
-   "bewijs": "nog geen <meta name=\"description\"> aangetroffen",
-   "controle": "HTML-head van /pages/teamorder gecontroleerd op een meta description-tag",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "www.higrip.nl/pages/teamorder: geen meta name=description tag in de HTML, ongewijzigd",
+   "controle": "Heeft /pages/teamorder nu een meta description",
+   "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
@@ -4658,10 +4658,10 @@
    "uitkomst": "open"
   },
   "2026-11-09-search-console-handmatig#c24ec193": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-09-seo-conversietest-run-7#47fddbfa": {
@@ -4840,8 +4840,8 @@
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#571cd3d3": {
    "bewijs": "niet te controleren: lokale MCP-instelling buiten deze repository, niet zichtbaar vanuit een cloudsessie",
-   "controle": "MCP-configuratie van higrip-vault is geen vault-bestand",
-   "gecontroleerd": "2026-11-26",
+   "controle": "Is de vault-MCP-instelling lokaal aangepast?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -4910,9 +4910,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
@@ -5263,9 +5263,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#b461ff30": {
-   "bewijs": "niet te controleren: lokale mediamappen (<media>/_Output/design/ads-v6, Ads-Workflow/Voorbeelden) zijn niet bereikbaar vanuit deze cloudsessie",
-   "controle": "paden buiten de vault/repository gecontroleerd",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: lokale mediamappen zijn niet bereikbaar vanuit deze cloudsessie",
+   "controle": "Bevatten de lokale mediamappen dezelfde v6-ads?",
+   "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5284,9 +5284,9 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-lokale-bestanden-inventaris#c52cc499": {
-   "bewijs": "output/ heeft nog 121 losse bestanden, ongewijzigd t.o.v. 25-11, nog niet verplaatst of verwijderd",
-   "controle": "aantal bestanden direct in de vault-root output/ geteld",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "output/ heeft nu 131 losse bestanden (was 121 op 25-11), nog niet verplaatst of verwijderd",
+   "controle": "Staan de output/-bestanden nog in de vault-root?",
+   "gecontroleerd": "2026-11-27",
    "methode": "vault",
    "uitkomst": "open"
   },
@@ -5418,16 +5418,16 @@
    "uitkomst": "handmatig"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#3b9dc834": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin",
-   "controle": "Geprobeerd via het analytics-hulpscript om GA4-instellingen per themaversie te controleren",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#738ef51d": {
-   "bewijs": "niet te controleren: geen Meta Ads-connector beschikbaar in deze routine (Ads Agent heeft die wel, maar adviserend/apart)",
-   "controle": "Meta Ads-targeting- en uitgavendata is geen vault- of site-bron",
-   "gecontroleerd": "2026-11-26",
+   "bewijs": "niet te controleren: geen Meta Ads-connector beschikbaar in deze routine",
+   "controle": "Is Meta-targeting gecontroleerd en zijn Meta-uitgaven opnieuw opgehaald?",
+   "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
   },
@@ -5439,10 +5439,10 @@
    "uitkomst": "open"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#9cfdf4f5": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin",
-   "controle": "Geprobeerd via het analytics-hulpscript om organic-searchgroei te meten",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#fb38efd9": {
@@ -5604,11 +5604,61 @@
    "methode": "geen",
    "uitkomst": "handmatig"
   },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#0f6e052b": {
+   "bewijs": "Besluit-actie, mensenwerk, nooit automatisch af te vinken",
+   "controle": "Is dit een besluit van Lars/Team HI Grip?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#8ee94f7b": {
+   "bewijs": "Besluit-actie, mensenwerk, nooit automatisch af te vinken",
+   "controle": "Is dit een besluit van Lars/Team HI Grip?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#95522d57": {
+   "bewijs": "niet te controleren: vereist het fysieke productlabel, niet beschikbaar in deze sessie",
+   "controle": "Is de beschrijving van demping en wasvoorschrift gecontroleerd tegen het fysieke label?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "open"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#c309992d": {
+   "bewijs": "Besluit-actie, mensenwerk, nooit automatisch af te vinken",
+   "controle": "Is dit een besluit van Lars/Team HI Grip?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#d84a75c7": {
+   "bewijs": "Zelfde systeem/eindtoestand als backlog#246c61d9 (verzend-/retourbeleidspagina's correct en compleet maken)",
+   "controle": "Is dit dezelfde eindtoestand als het bestaande beleidspagina-backlogpunt?",
+   "dubbel_van": "backlog#246c61d9",
+   "gecontroleerd": "2026-11-27",
+   "methode": "site",
+   "uitkomst": "dubbel"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#e04ed243": {
+   "bewijs": "Besluit-actie, mensenwerk, nooit automatisch af te vinken",
+   "controle": "Is dit een besluit van Lars/Team HI Grip?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
+  "2026-11-26-productpagina-2-0-onderzoek-en-prototype#fb576e33": {
+   "bewijs": "Vereist menselijke klantenservice-ervaring, geen tool of connector hiervoor",
+   "controle": "Is het maatadvies getoetst bij klantenservice-ervaring?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "geen",
+   "uitkomst": "handmatig"
+  },
   "backlog#01dc4258": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "backlog#072e2482": {
@@ -5739,17 +5789,17 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "niet te controleren: analytics-hulpscript (google_data.py) blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen",
-   "controle": "Geprobeerd via het analytics-hulpscript en de bijbehorende rapportages",
-   "gecontroleerd": "2026-11-26",
-   "methode": "gsc",
+   "bewijs": "niet te controleren: analytics-hulpscript blijft geblokkeerd door de privacy-plugin sinds half november; geen GA4/GSC-cijfers op te vragen deze run",
+   "controle": "Is dit met verse GA4/GSC-cijfers te bevestigen?",
+   "gecontroleerd": "2026-11-27",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "backlog#a1f3e1a2": {
@@ -5897,7 +5947,6 @@
   }
  },
  "runs": [
-  "2026-11-11",
   "2026-11-12",
   "2026-11-13",
   "2026-11-14",
@@ -5910,7 +5959,8 @@
   "2026-11-23",
   "2026-11-24",
   "2026-11-25",
-  "2026-11-26"
+  "2026-11-26",
+  "2026-11-27"
  ],
  "volgende_run": "dagelijks 05:00"
 }

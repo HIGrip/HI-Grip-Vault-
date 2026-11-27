@@ -67,6 +67,20 @@ Shopify-sessies 27-11: 4 sessies met utm-campagne 120247746090730449 (deze campa
 - Twee adsets van €30 per dag. Adset "Instagram Ads" heeft geen Instagram-plaatsing en een leeftijdsbereik van 18 tot 35 naast 18 tot 65.
 - Pixel "HÏ Grip" (3125677007638719) beschikbaar; `last_fired_time` staat op 27-11 00:07 en lijkt niet actueel.
 
+### 7. Test cookiebanner (27-11, avond)
+- **Opzet:** ingebouwde browser, mobiel formaat (375 px), cookies en opslag van higrip.nl gewist. Daarna de productpagina zwart geopend met een fbclid, zoals na een advertentieklik.
+- **Wat er gebeurde:**
+  - De pagina laadde, maar de cookiebanner verscheen niet vanzelf.
+  - Het toestemmingsscript van Shopify (`consent-tracking-api`) werd niet geladen.
+  - Er gingen geen verzoeken naar Facebook.
+- **Wat er wel is:**
+  - De banner is ingesteld. Met de hand opgeroepen (`privacyBanner.showBanner()`) toont hij "COOKIETOESTEMMING".
+  - Shopify geeft na handmatig laden aan dat de banner getoond moet worden: regio NLNH, `shouldShowBanner` waar.
+  - De toestemming stond op nee voor alle vier categorieën.
+- **Voorbehoud:** in deze browser was eerder vandaag toestemming op nee gezet (bevinding 12 van [[2026-11-27-meta-campagne-diagnose-rugby-voetbal-product]]). Een cookie die Shopify niet voor scripts zichtbaar maakt, kan die keuze bewaren. De test is dus niet volledig schoon. In de eerste ronde van die eerdere test, zonder eerdere keuze, verscheen de banner ook niet.
+- **Ongeldige test:** een test met curl en de user-agents van de Facebook- en Instagram-app gaf eerst een Cloudflare-controlepagina (403). Bij herhaling kreeg gewone Safari die ook, en daarna volgde 429. Cloudflare reageerde op de testverzoeken zelf, niet op de app. Daar volgt niets uit.
+- **Nog nodig:** een test op een echte telefoon in de Facebook- en Instagram-app, of in een schone browser.
+
 ## Wat niet lukte
 De websitelink per advertentie geeft de Meta-koppeling niet terug (type SHARE). De cookiebannercheck in de ingebouwde browser was niet bruikbaar: die browser had nog toestemmingsinstellingen van een eerdere test, en Meta-pixelverzoeken lopen via een afgeschermd frame van Shopify. GA4 (analytics-mcp) en playwright maakten geen verbinding. Ads-QA overgeslagen: geen QA-agent voor het Ads-domein. Stap B (research-sync) en publicatie van het dashboard overgeslagen: dat lukt alleen vanaf info@, deze sessie draait op het persoonlijke account.
 

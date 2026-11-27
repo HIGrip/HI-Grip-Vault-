@@ -33,7 +33,7 @@ Zevende run van de wekelijkse SEO- en conversietest (modus CONCEPT: niets live g
 
 - [ ] P2 · Besluit: staat iDEAL actief als betaalmethode in Shopify Payments, en waarom ontbreekt het icoon in de betaalrij op de productpagina (naast Amex, Apple Pay, Google Pay, Klarna, Maestro, PayPal, Visa)?
 - [x] P2 · [conversietest] Waardebalk-blok (`hi-pack-value-bar.liquid`) herbouwen in het huidige unpublished thema (204029296967) vóórdat het oude testthema 200249901383 ooit gepubliceerd wordt of in de vergetelheid raakt
-- [ ] P3 · [conversietest] Terugbetalingsbeleid-conceptteksten (logboek, sectie 8.1) controleren en in Shopify plakken — bevat een `[CHECK]` die wacht op de iDEAL-beslissing hierboven
+- [x] P3 · [conversietest] Terugbetalingsbeleid-conceptteksten (logboek, sectie 8.1) controleren en in Shopify plakken — bevat een `[CHECK]` die wacht op de iDEAL-beslissing hierboven
 
 ## Bevindingen
 

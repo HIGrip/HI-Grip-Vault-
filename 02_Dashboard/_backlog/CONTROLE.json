@@ -1899,8 +1899,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-11-concurrentie-seo-per-merk#5c78540b": {
-   "bewijs": "er bestaat nog maar 1 collectie Gripsokken, bevestigd via collections-query, geen aparte witte of zwarte gripsokken-collecties aangemaakt",
-   "controle": "Collectiepaginas witte en zwarte gripsokken maken",
+   "bewijs": "er bestaat nog maar 1 collectie Gripsokken, geen aparte witte of zwarte gripsokken-collecties",
+   "controle": "Bestaan er eigen collecties voor witte en zwarte gripsokken",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2039,7 +2039,7 @@
   },
   "2026-10-12-b2b-pagina-inspiratie#2a9d5001": {
    "bewijs": "niet te controleren via de Shopify-connector: het mini-plan is een vault-document, geen Shopify-thema- of winkeldata",
-   "controle": "Mini-plan nieuwe zakelijke pagina opstellen",
+   "controle": "Is er een mini-plan voor de zakelijke pagina opgesteld in het testthema",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2066,8 +2066,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-blogs-stappenplan#04c7ed95": {
-   "bewijs": "de bronpagina geeft nog 404 zonder redirect, en het woord levensduur komt 0x voor op hoe-zorg-ik-voor-mijn-gripsokken",
-   "controle": "Is hoe-verleng-je-de-levensduur samengevoegd in hoe-zorg-ik-voor-mijn-gripsokken",
+   "bewijs": "bronartikel geeft nog 404, doelartikel bevat het woord levensduur nog 0x",
+   "controle": "hoe-verleng-je-de-levensduur samenvoegen",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2080,8 +2080,8 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#0ad43436": {
-   "bewijs": "beide URLs geven nog 404 zonder redirect, geen van beide in sitemap_articles_1.xml",
-   "controle": "Zijn de twee pilates-blogposts samengevoegd",
+   "bewijs": "beide artikelen inclusief het doelartikel geven nog 404 zonder redirect, geen van beide in sitemap_articles_1.xml",
+   "controle": "Pilates-blogs samenvoegen",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2101,15 +2101,15 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#1b7a34a5": {
-   "bewijs": "nog gewoon 404 zonder Location-header",
-   "controle": "Is de blogpost waarom-sporten-meer-is-dan-bewegen verwijderd met 301",
+   "bewijs": "404 zonder redirect - ongewijzigd",
+   "controle": "Blogpost waarom sporten meer is dan bewegen verwijderen en 301",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#287aebbc": {
-   "bewijs": "zowel blogs/trends/sportvoeding als blogs/hi-grip/sportvoeding geven nog directe 404 zonder redirect",
-   "controle": "Is de sportvoedingsblog verwijderd met 301 naar blogs-trends",
+   "bewijs": "404 zonder redirect - ongewijzigd",
+   "controle": "Blogpost sportvoeding verwijderen en 301 naar /blogs/trends",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2129,10 +2129,10 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#40c4a507": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Search Console per blog opnieuw draaien na 4/8 weken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is Search Console per blog na 4 en 8 weken opnieuw gedraaid",
    "gecontroleerd": "2026-11-27",
-   "methode": "ga4",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#41609879": {
@@ -2157,8 +2157,8 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#6fc78586": {
-   "bewijs": "artikel niet gevonden, handle levert geen resultaat, metatekst niet te controleren",
-   "controle": "Nu beperkt op voorraad uit meta blog voor-welke-sport halen",
+   "bewijs": "niet te controleren: er bestaat geen artikel met voor-welke-sport in de titel, dus geen meta om te controleren",
+   "controle": "Is nu beperkt op voorraad uit de meta van voor-welke-sport gehaald",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2199,15 +2199,15 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b12308d8": {
-   "bewijs": "blogs/hi-grip en hoe-zorg-ik-voor-mijn-gripsokken linken nog 2x resp 3x naar collections/all en 0x naar collections/gripsokken",
-   "controle": "Wijst de globale blog-CTA nu naar collections/gripsokken",
+   "bewijs": "/blogs/hi-grip toont nog 2x /collections/all en 0x /collections/gripsokken, hoe-zorg-ik-blog nog 3x /collections/all",
+   "controle": "Globale blog-CTA naar /collections/gripsokken zetten",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#b56317d8": {
-   "bewijs": "waarom-hi-grip-gripsokken redirect nog steeds de omgekeerde kant op naar wat-zijn-gripsokken, en gripsokken-de-toekomst-van-jouw-sportoutfit geeft nog 404 zonder redirect",
-   "controle": "Zijn wat-zijn-gripsokken en gripsokken-de-toekomst samengevoegd in waarom-hi-grip-gripsokken",
+   "bewijs": "waarom-hi-grip-gripsokken blijft 301 naar wat-zijn-gripsokken (omgekeerde richting), gripsokken-de-toekomst-van-jouw-sportoutfit blijft 404 zonder redirect",
+   "controle": "Blogs samenvoegen in waarom-hi-grip-gripsokken",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2227,15 +2227,15 @@
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#e2a7fd66": {
-   "bewijs": "alle drie URLs geven nog 404 zonder redirect, geen van de drie staat in sitemap_articles_1.xml",
-   "controle": "Zijn de drie blogposts samengevoegd in de blessureblog",
+   "bewijs": "alle drie inclusief het doelartikel (blessure-blog) geven nog 404 zonder redirect, geen van de drie in sitemap_articles_1.xml",
+   "controle": "Blogs samenvoegen in de blessure-blog",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-10-12-blogs-stappenplan#eb0152d7": {
-   "bewijs": "doelartikel grippatroon geeft nog 404; de krachttraining-blogpost zelf bestaat nergens meer op de site (niet in sitemap_articles_1.xml), dus niet te controleren of de link daarin is aangepast",
-   "controle": "Is de gebroken grippatroon-link vervangen",
+   "bewijs": "doelartikel geeft 404, bronartikel staat niet in sitemap_articles_1.xml (nog steeds maar 5 artikelen) en is nergens te vinden",
+   "controle": "Gebroken link krachttraining-blog vervangen",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2263,8 +2263,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-12-voordelenpagina-analyse#6b326f42": {
-   "bewijs": "templates/page.voordelen.json en templates/article.voordelen.json blijven NOT_FOUND, geen blogsjabloon aangetroffen",
-   "controle": "Conceptpagina voordelen bouwen als blogsjabloon",
+   "bewijs": "templates/page.voordelen.json en templates/article.voordelen.json bestaan geen van beide NOT_FOUND",
+   "controle": "Bestaat er een voordelenpagina-template of blogsjabloon in het testthema",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2315,8 +2315,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4867b36b": {
-   "bewijs": "faq_a4 in snippets/faq-schema.liquid begint nog met Was uw gripsokken, faq_a7 is al onpersoonlijk geformuleerd zonder wijziging",
-   "controle": "FAQ-antwoorden 4 en 7 van uw naar je",
+   "bewijs": "faq_a4 in snippets/faq-schema.liquid begint nog met Was uw gripsokken bij voorkeur, niet omgezet; faq_a7 was al onpersoonlijk",
+   "controle": "Zijn FAQ-antwoorden 4 en 7 van uw naar je gezet in sectie en schema",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2330,8 +2330,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-13-homepage-redesign#4bf416c7": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Meetfundament events sportkiezer en 360 en scrolldiepte",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Staat het meetfundament voor de homepage-bouw klaar met 4 weken baseline",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -2351,8 +2351,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#907cdb2d": {
-   "bewijs": "geen treffers gevonden, geen 360-framereeks aangetroffen in theme-secties of snippets",
-   "controle": "206 frames 360-artifact exporteren naar Shopify Files",
+   "bewijs": "een files-zoekopdracht op frame geeft 0 treffers, de frames staan nog niet in Shopify Files",
+   "controle": "Zijn de 206 frames van het 360 graden-artifact naar Shopify Files geexporteerd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2408,15 +2408,15 @@
    "uitkomst": "handmatig"
   },
   "2026-10-13-homepage-redesign#f2c44e5d": {
-   "bewijs": "templates/page.home-nieuw.json blijft NOT_FOUND in thema 201133490503",
-   "controle": "Nieuwe homepage als testtemplate page.home-nieuw.json bouwen",
+   "bewijs": "templates/page.home-nieuw.json bestaat nog niet NOT_FOUND in het live thema",
+   "controle": "Is de testtemplate page.home-nieuw.json gebouwd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-13-homepage-redesign#ff235e99": {
-   "bewijs": "homepage toont nog 8x 3500+ en 0x 3000+; over-ons toont nu beide (1x 3500+ en 1x 3000+ naast elkaar), nog niet geharmoniseerd",
-   "controle": "Is 3500+ gecorrigeerd naar 3000+ op homepage en over-ons",
+   "bewijs": "homepage toont nog 8x 3500+ en 0x 3000+, over-ons toont beide 3500+ en 3000+ naast elkaar",
+   "controle": "3500+ corrigeren naar 3000+ in announcementbar en over ons",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2429,8 +2429,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#3f7d8e91": {
-   "bewijs": "snippets/fonts.liquid blijft NOT_FOUND, alleen de 900-italic hero-variant wordt in theme.liquid gepreload, 800 italic krijgt alleen een font-face-declaratie",
-   "controle": "Poppins 800 italic preloaden in snippets/fonts.liquid",
+   "bewijs": "snippets/fonts.liquid bestaat nog niet in het live thema NOT_FOUND",
+   "controle": "Is Poppins 800 italic gepreload in snippets fonts.liquid",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2443,8 +2443,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#5f6a6839": {
-   "bewijs": "meta description op de homepage is ongewijzigd de 22-woorden versie zonder dubbele punt",
-   "controle": "Is de meta description gelijkgetrokken met de 58-woorden prototype-alinea",
+   "bewijs": "meta description telt nog 22 woorden zonder dubbele punt, geen description-veld in de JSON-LD op de homepage",
+   "controle": "Entiteitsalinea en schema-description gelijktrekken",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -2464,8 +2464,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-14-homepage-herontwerp-vanaf-leeg-canvas-richting-b-doorgaan#953fb3ba": {
-   "bewijs": "fd-product-groups en section-store block-cart staan nog volledig disabled sitewide in settings_data.json, niet specifiek beperkt tot product-/cartpaginas",
-   "controle": "App-embeds beperken tot product- en cartpaginas",
+   "bewijs": "section-store block-cart en fd-product-groups staan in settings_data.json van het live thema nog sitewide disabled true met lege settings, niet specifiek beperkt tot product of cartpaginas",
+   "controle": "Zijn de app-embeds beperkt tot product en cartpaginas",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2740,11 +2740,11 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-ek-rugby-u18-u20-plan#ff7cd53c": {
-   "bewijs": "besluit Lars 9-11: niets uit dit EK-rugby-plan wordt uitgevoerd, geen verdere automatische check nodig",
-   "controle": "EK-rugby-plan staat on hold",
+   "bewijs": "pages/gripsokken-voor-rugby bevat nog letterlijk Kracht komt aan, zet scherper af, Minder schuiven, Meer kracht en Fris tot de laatste minuut; Friedl staat nog ongemarkeerd in de bronnenregel",
+   "controle": "Zijn de absolute claims op de rugbylanding geherformuleerd en Friedl gemarkeerd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
-   "uitkomst": "handmatig"
+   "uitkomst": "open"
   },
   "2026-10-27-review-rugby-ads-trustpilot#39c7bc2d": {
    "bewijs": "A/B-ad-creatief gelijktrekken is handwerk in Meta Ads Manager",
@@ -2820,10 +2820,10 @@
    "uitkomst": "gedaan"
   },
   "2026-10-27-seo-audit-higrip-nl#908f0c6a": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Koopintentie /pages/collection versus /collections/gripsokken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is de koopintentie van page collection versus collections gripsokken met Search Console onderzocht",
    "gecontroleerd": "2026-11-27",
-   "methode": "ga4",
+   "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-27-seo-audit-higrip-nl#ae873b6b": {
@@ -2856,43 +2856,43 @@
    "uitkomst": "handmatig"
   },
   "2026-10-27-seo-audit-higrip-nl#f3e9102c": {
-   "bewijs": "collectiepagina /collections/gripsokken toont in de broncode nog 3000+, niet 3500+",
-   "controle": "Sportersaantal harmoniseren naar 3500+",
+   "bewijs": "collectiebeschrijving van gripsokken zegt nog Al 3000+ sporters, niet geupdatet naar 3500+",
+   "controle": "Is het sportersaantal geharmoniseerd naar de vastgestelde 3500+",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#022f2841": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Piekonderzoek 26-27 oktober",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Zijn de pieken van 26-27 oktober onderzocht",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#05a4ba78": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "SERP-intentie gripsokken en grip socks",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is de SERP-intentie voor gripsokken en grip socks gecontroleerd",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#0f8f7d4a": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Key events en consent controleren",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Zijn key events en consent gecontroleerd",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#131b4d5e": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Verkeer uit de VS onderzoeken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is het VS-verkeer zonder aankopen onderzocht",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#3cdf2d8b": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "GA4-filters intern/preview/admin-verkeer",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Zijn GA4-filters voor intern verkeer ingesteld",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -2905,36 +2905,36 @@
    "uitkomst": "handmatig"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#70e252f5": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Herkomst /en-verkeer uitzoeken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is de herkomst van het EN-verkeer uitgezocht",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#88ab2246": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Onderzoek herhalen na 4 weken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is het onderzoek na 4 weken herhaald",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#bf42d05d": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Meetvalidatie GA4 versus Shopify-orders",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run; Shopify-orders ytd ongewijzigd beschikbaar via de connector",
+   "controle": "Is GA4 tegen Shopify-orders gevalideerd",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#c6898431": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Redirect/URL-verschil GA4 versus GSC",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is het redirect-/URL-verschil tussen GSC en GA4 nagegaan",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "2026-10-28-ga4-seo-conversie-audit-higrip-nl#ca3f2800": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Branded versus non-branded rapport GSC",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is een branded versus non-branded rapport gemaakt",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
@@ -2955,8 +2955,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#4e776330": {
-   "bewijs": "niet te controleren: block-cart-blok staat disabled met lege settings, het glans-effect is een app-eigen instelling niet zichtbaar via de API",
-   "controle": "Glans-effect Section Store-bundelbadge uitzetten",
+   "bewijs": "het section-store block-cart-blok staat nog op disabled true met lege settings, het glans-effect is app-eigen en niet via de API zichtbaar",
+   "controle": "Is het glans-effect op het bundelbadge uitgezet",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -2970,8 +2970,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#8dc8b275": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "GA4 koppelen op alle thema-versies",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is GA4 op alle themaversies gekoppeld",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -2984,8 +2984,8 @@
    "uitkomst": "handmatig"
   },
   "2026-10-29-ads-funnel-en-snelheid-productpagina#b36f0e48": {
-   "bewijs": "Essential A/B Testing staat nog in appInstallations (19 apps), fd-product-groups (nu FD Combined Listings) staat nog als app-embed-blok (disabled maar aanwezig), alleen Bundler is weg",
-   "controle": "FD Product Groups Bundler en Essential A/B Testing verwijderen uit admin",
+   "bewijs": "Essential A/B Testing en FD Combined Listings staan nog in appInstallations (19 apps); alleen Bundler is weg",
+   "controle": "Zijn FD Product Groups Bundler en Essential A B Testing uit de admin verwijderd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3020,15 +3020,15 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#05ca9962": {
-   "bewijs": "niet te controleren: app heet nu CWILL(SendWILL) Popup Email en staat nog actief, abonnementsgegevens zijn app-eigen en niet via GraphQL op te vragen",
-   "controle": "EcomSend-abonnement controleren op inschrijverslimiet",
+   "bewijs": "niet te controleren: abonnementsgegevens van CWILL(SendWILL) Popup Email zijn app-eigen, niet via GraphQL op te vragen",
+   "controle": "Is het CWILL-abonnement onder de grens van 150 inschrijvers gecontroleerd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#337d9d57": {
-   "bewijs": "niet te controleren: knopstijl/kleur van de popup is app-eigen, niet via GraphQL op te vragen",
-   "controle": "Popupknop merkconform maken",
+   "bewijs": "niet te controleren: knopstijl en kleur van de popup zijn app-eigen, niet via GraphQL op te vragen",
+   "controle": "Is de popupknop merkconform (pill chevron wit op zwart)",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3056,14 +3056,14 @@
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#96bc6d33": {
    "bewijs": "niet te controleren: popup-frequentie-instelling is app-eigen, niet via GraphQL op te vragen",
-   "controle": "EcomSend-frequentie terugbrengen",
+   "controle": "Is de popup-frequentie terugbracht naar 1 keer per 7 dagen",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-e-mailpopup-wat-converteert-het-best#c3b10d02": {
    "bewijs": "niet te controleren: doelgroepinstelling van de popup is app-eigen, niet via GraphQL op te vragen",
-   "controle": "EcomSend-popup alleen aan nieuwe bezoekers tonen",
+   "controle": "Toont de popup alleen aan nieuwe bezoekers",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3091,8 +3091,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#0d3f9d8c": {
-   "bewijs": "homepage toont de telefoon nog 2x in een mailto link naar info@higrip.nl, geen tel-link gevonden",
-   "controle": "Is de footer-telefoonlink van mailto naar tel gewijzigd",
+   "bewijs": "homepage toont het telefoonnummer nog in een mailto-link, niet in een tel-link",
+   "controle": "Footer telefoonlink van mailto naar tel",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -3121,29 +3121,29 @@
    "uitkomst": "handmatig"
   },
   "2026-10-30-snelheid-code-audit-homepage#32cf7103": {
-   "bewijs": "video_lo_url bestaat nog als losse instelling/fallback bij trage verbinding, geen standaard lichte versie voor alle mobiel, bestandsgrootte niet via de connector te meten",
-   "controle": "Mobiele merkvideo lichter coderen of standaard de lichte versie tonen",
+   "bewijs": "er bestaat nog een losse video_lo_url-instelling als fallback, geen standaard lichte versie voor alle mobiel; bestandsgroottes niet via de connector te meten",
+   "controle": "Is de mobiele merkvideo lichter gemaakt of de lichte versie standaard",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#5000cc68": {
-   "bewijs": "build.py bestaat nog niet in het live thema (NOT_FOUND), en hp-05-features.liquid en hp-13-footer.liquid bestaan nog als losse sectiebestanden",
-   "controle": "Is build.py gebouwd en zijn hp-05 en hp-13 uit de bundel gehaald",
+   "bewijs": "hp-05-features.liquid en hp-13-footer.liquid bestaan nog als losse secties in het live thema; build.py blijft een vault-bestand, niet via de connector te bevestigen, ongewijzigd",
+   "controle": "Is hp-home.css gesplitst via build.py en zijn hp-05/hp-13 uit de bundel",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#64c67434": {
-   "bewijs": "door de volledige homepage-herbouw sinds dit punt is dit niet aan te wijzen als een bewuste, bevestigde correctie van dit specifieke punt",
-   "controle": "Zijn de sizes-attributen in hp-09 hp-10 en hp-02 bewust gecorrigeerd",
+   "bewijs": "hp-09 toont nog sizes 200px, hp-10 (min-width:900px) 30vw 92vw, hp-02 (min-width:769px) 50vw 50vw - de oude foutwaarden komen niet meer voor, maar door de volledige homepage-herbouw niet aan te wijzen als bewuste correctie van dit punt, ongewijzigd",
+   "controle": "Zijn de sizes-waarden in hp-09/hp-10/hp-02 gecorrigeerd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-10-30-snelheid-code-audit-homepage#66ac6df4": {
-   "bewijs": "render chat-drawer staat nog in layout/theme.liquid, hp-07-wave element nog aanwezig in hp-07-kies-je-sport.liquid, hpLightbox nog 4x in hp-home.js - opruiming niet compleet, hp-urltest.webp is wel al weg",
-   "controle": "Dode code opruimen chat-drawer hpLightbox kleurgolf en dode secties",
+   "bewijs": "layout/theme.liquid rendert chat-drawer nog, hp-07-kies-je-sport.liquid bevat nog 1x hp-07-wave, hp-home.js bevat hpLightbox nog 4x, en assets/hp-urltest.webp bestaat nog in het live thema",
+   "controle": "Is de dode code opgeruimd chat-drawer hpLightbox hp-07-wave urltest-webp",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3195,8 +3195,8 @@
    "uitkomst": "gedaan"
   },
   "2026-10-30-snelheid-code-audit-homepage#9955ab84": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "PSI mobiel en desktop opnieuw draaien na livegang",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen PSI-cijfers op te vragen deze run",
+   "controle": "Is PSI mobiel en desktop opnieuw gedraaid na livegang",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -3432,15 +3432,15 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#6b972637": {
-   "bewijs": "hi-sale-price.css, hi-headings.css en hi-app-fixes.css bestaan nog als 3 losse bestanden in het live thema en worden los geladen in layout/theme.liquid; hi-site.css bestaat nog niet, en de actieprijs staat nog op de vaste hexcode e10600 in plaats van een var(--hi-red)",
-   "controle": "Zijn de 3 losse CSS-bestanden samengevoegd tot hi-site.css met var hi-red",
+   "bewijs": "hi-site.css blijft NOT_FOUND in theme 204029296967; hi-sale-price.css/hi-headings.css/hi-app-fixes.css staan nog los naast elkaar en de actieprijs staat nog op het vaste hexcode #e10600, niet op var(--hi-red), ongewijzigd",
+   "controle": "Zijn de 3 CSS-bestanden samengevoegd tot hi-site.css met var(--hi-red)",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#9ceb0075": {
-   "bewijs": "product-LCP p75 nu 960 ms, maar een apart diepte-onderzoek is nog niet als afgeronde notitie of thema-wijziging vast te stellen",
-   "controle": "Is er een apart diepteonderzoek van productpagina 2.0 vastgelegd",
+   "bewijs": "product-LCP p75 (28 dagen) is nu 960 ms (verder verbeterd), maar een apart diepte-onderzoek van productpagina 2.0 is niet als afgeronde wijziging vast te stellen via de connector",
+   "controle": "Is productpagina 2.0 apart doorgelicht op FCP/LCP",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3460,10 +3460,10 @@
    "uitkomst": "handmatig"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#e7a00e37": {
-   "bewijs": "niet te controleren: vereist een browser-rendertest; settings_data.json van het live thema toont geen apart cookiebanner-app-embed-blok om te beoordelen",
-   "controle": "Kan de Shopify-cookiebanner sneller renderen",
+   "bewijs": "niet te controleren: vereist een browser-rendertest; settings_data.json van het live thema heeft geen apart cookiebanner-app-embed-blok, ongewijzigd",
+   "controle": "Kan de cookiebanner sneller renderen",
    "gecontroleerd": "2026-11-27",
-   "methode": "geen",
+   "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-nulmeting-alle-paginas#fa8c546f": {
@@ -3521,8 +3521,8 @@
    "uitkomst": "gedaan"
   },
   "2026-11-03-snelheid-werkthema-02#aacd5803": {
-   "bewijs": "sinds de livegang zijn nog geen 30 dagen verstreken, dus nog geen volledige voor-na-vergelijking mogelijk",
-   "controle": "Is er al een 30-dagen voor-na-vergelijking van LCP en INP mogelijk",
+   "bewijs": "sinds livegang zijn nog geen 30 dagen verstreken, volledige voor/na-vergelijking nog niet mogelijk",
+   "controle": "Is er 30 dagen voor/na-velddata op LCP/INP per paginatype vergeleken",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3542,8 +3542,8 @@
    "uitkomst": "open"
   },
   "2026-11-03-snelheid-werkthema-02#f19dbfa6": {
-   "bewijs": "cart-drawer.liquid en cart-drawer.js in thema 204029296967 bevatten geen enkele vermelding van HI30",
-   "controle": "Werkt de kortingscode en deel-link HI30 in de nieuwe winkelwagen",
+   "bewijs": "snippets/cart-drawer.liquid van het live thema bevat geen HI30, ongewijzigd",
+   "controle": "Komt de deel-link HI30 voor in de nieuwe winkelwagen-drawer",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -3620,17 +3620,17 @@
    "uitkomst": "gedaan"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8ba73351": {
-   "bewijs": "niet te controleren: betreft een doelsectie in een vault-notitie, niet via de Shopify-connector te lezen",
+   "bewijs": "niet te controleren via de Shopify-connector: betreft een doelsectie in een vault-notitie, ongewijzigd",
    "controle": "Is het snelheidsdoel vastgelegd in de werkthema-notitie",
    "gecontroleerd": "2026-11-27",
-   "methode": "geen",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-04-snelheid-vergelijking-andere-webshops#8eb09d9b": {
-   "bewijs": "niet te controleren: betreft een vastlegging in een vault-werkthema-notitie, niet in Shopify-data op te vragen",
-   "controle": "Is Upfront als referentie vastgelegd bij de app-besluiten",
+   "bewijs": "niet te controleren via de Shopify-connector: betreft een vastlegging in een vault-notitie, ongewijzigd",
+   "controle": "Is de Upfront-referentie per app vastgelegd in de werkthema-notitie",
    "gecontroleerd": "2026-11-27",
-   "methode": "geen",
+   "methode": "vault",
    "uitkomst": "open"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#30c868e9": {
@@ -3697,8 +3697,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-meta-opbouw-getoetst-start-6-november#fa630e90": {
-   "bewijs": "beide 2.0-varianten tonen nog ongewijzigd de blaren-tekst zonder nuancering of bronvermelding",
-   "controle": "Is de blaren-claim op de 2.0-productpagina genuanceerd of onderbouwd",
+   "bewijs": "beide 2.0-paginas tonen nog ongewijzigd de blaren-claim zonder nuancering of bronvermelding",
+   "controle": "Geen blaren-claim toetsen aan claimregels",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -3896,8 +3896,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#05e08e33": {
-   "bewijs": "de kop is al Nederlands (titel Je winkelwagen HI Grip), maar de cart-regel met eventuele dubbele prijsweergave rendert clientside via JS en is met curl niet te verifieren",
-   "controle": "Is de kop van cart naar Nederlands en staat de prijs niet meer dubbel",
+   "bewijs": "kop is al Nederlands (Winkelwagen), maar de cart-regel met eventuele dubbele prijs rendert clientside via JS en is met curl niet te verifieren",
+   "controle": "Cart-kop naar Nederlands en dubbele prijs",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -3924,8 +3924,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-05-winkelwagen-section-store-weer-actief#7deeb4bb": {
-   "bewijs": "niet te controleren: knopstyling is pas na JS-rendering in de browser zichtbaar, niet via ruwe HTML",
-   "controle": "Zijn de cookiebanner-knoppen volgevuld",
+   "bewijs": "niet te controleren: knopstyling is pas na JS-rendering in de browser zichtbaar",
+   "controle": "Cookiebanner-knoppen volgevuld",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -4121,8 +4121,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#5ce01a10": {
-   "bewijs": "Geen doorglijden/Je voet staat vast/Je voet blijft staan staan nog op beide landingspaginas en de doorgestreepte 19,95 staat nog op voetbal en rugby",
-   "controle": "Zijn de claims omgezet en is de doorgestreepte 19,95 gecontroleerd",
+   "bewijs": "voetbal-landingspagina toont nog Geen doorglijden, Je voet staat vast en de doorgestreepte 19,95 - ongewijzigd",
+   "controle": "Landingspaginas claims omzetten en doorgestreepte 19,95 controleren",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -4149,22 +4149,22 @@
    "uitkomst": "handmatig"
   },
   "2026-11-09-ads-live-check-website#a8aa19f2": {
-   "bewijs": "de sterren en de slogan Meer grip Meer controle Meer winnen staan nog zonder brontekst in de social-strip; de enige trustpilot-link op de pagina is een losse knop naar de reviewpagina, niet een citatie bij de sterren",
-   "controle": "Staat er een Trustpilot-bron bij de 4,5 sterren op de productpagina",
+   "bewijs": "vier-en-een-halve ster en de slogan staan nog zonder Trustpilot-vermelding op de productpagina - ongewijzigd",
+   "controle": "Sterren en slogan controleren tegen Feiten",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
   },
   "2026-11-09-ads-live-check-website#ec609e8b": {
-   "bewijs": "voorraad 2.0 nog negatief: zwart -6/-27/-37, wit -10/-18/-35; geen verklaring beschikbaar via de connector, geen Admin-toegang",
-   "controle": "Is de negatieve 2.0-voorraad nagekeken en verklaard",
+   "bewijs": "voorraad 2.0 nog negatief: zwart -6/-27/-37, wit -10/-18/-32 (ongewijzigd), geen verklaring beschikbaar via de connector",
+   "controle": "Is de negatieve 2.0-voorraad verklaard",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
   },
   "2026-11-09-ads-plan-voetbal-rugby-psychologie#03f1fb1e": {
-   "bewijs": "Geen doorglijden, Je voet staat vast en Je voet blijft staan staan nog letterlijk op pages/gripsokken-voor-voetbal en pages/gripsokken-voor-rugby",
-   "controle": "Zijn de claims Geen doorglijden en Je voet staat vast omgezet",
+   "bewijs": "Geen doorglijden, Je voet staat vast en Je voet blijft staan staan nog letterlijk op de voetbal-landingspagina",
+   "controle": "Landing Geen doorglijden en Je voet staat vast omzetten",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -4620,8 +4620,8 @@
    "uitkomst": "open"
   },
   "2026-11-09-regressiecheck-handmatig#811c3f82": {
-   "bewijs": "nog geen meta name description op pages/teamorder aangetroffen",
-   "controle": "Heeft teamorder nu een meta description",
+   "bewijs": "nog geen meta description aangetroffen - ongewijzigd",
+   "controle": "Meta description /pages/teamorder",
    "gecontroleerd": "2026-11-27",
    "methode": "site",
    "uitkomst": "open"
@@ -4658,8 +4658,8 @@
    "uitkomst": "open"
   },
   "2026-11-09-search-console-handmatig#c24ec193": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Homepage positieval blijven volgen",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is de positieval van de homepage een blijvende terugval",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
@@ -4673,15 +4673,16 @@
    "uitkomst": "dubbel"
   },
   "2026-11-09-seo-conversietest-run-7#a76ea6d5": {
-   "bewijs": "REFUND_POLICY bevat de iDEAL-rij nog steeds onder Betalingsbeleid, en pages/retourbeleid en verzendbeleid hebben nog een lege body, dus de conceptteksten staan nog niet geplakt",
-   "controle": "Zijn de terugbetalingsbeleid-conceptteksten geplakt en de iDEAL-rij opgelost",
+   "bewijs": "/pages/terugbetalingsbeleid toont nu volledige tekst met iDEAL/creditcard/Klarna/Bancontact/Apple Pay en Mollie-beveiliging, geen CHECK-placeholder meer aanwezig",
+   "controle": "Staat de terugbetalingsbeleid-conceptteksten zonder CHECK-placeholder op de pagina",
    "gecontroleerd": "2026-11-27",
-   "methode": "shopify",
-   "uitkomst": "open"
+   "methode": "site",
+   "sinds": "2026-11-27",
+   "uitkomst": "gedaan"
   },
   "2026-11-09-seo-conversietest-run-7#fd13c344": {
-   "bewijs": "blocks/hi-pack-value-bar.liquid bestaat nu volledig uitgewerkt in thema gid 204029296967, met gratis-verzenddrempel en prijs-per-paar-instellingen, niet meer NOT_FOUND",
-   "controle": "Is het waardebalk-blok hi-pack-value-bar.liquid herbouwd in thema 204029296967",
+   "bewijs": "blocks/hi-pack-value-bar.liquid bestaat nu wel in theme 204029296967: volledig uitgewerkt blok met gratis-verzenddrempel en prijs-per-paar-instellingen (voorheen NOT_FOUND in alle 3 themes)",
+   "controle": "Bestaat blocks/hi-pack-value-bar.liquid in het unpublished thema 204029296967",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "sinds": "2026-11-27",
@@ -4911,8 +4912,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-10-ads-plan-bereik-conversie-sales#d0f685d6": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Bundelblok 3-pack AddToCart-waarde controleren",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-events op te vragen deze run",
+   "controle": "Stuurt het bundelblok bij een 3-pack een AddToCart met waarde 44,95",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -5143,8 +5144,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-16-ads-funnel-trio-rugby-voetbal#d8950a1e": {
-   "bewijs": "niet te controleren: betreft de link in een Meta-advertentie, niet via de Shopify-connector op te vragen",
-   "controle": "Landt de onderlaag-ad direct op het 3-pack",
+   "bewijs": "niet te controleren: betreft een link in een Meta-advertentie, niet op te vragen via de Shopify-connector, ongewijzigd",
+   "controle": "Landt de onderlaag-ad direct op het 3-pack tegen gelijke prijs",
    "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
@@ -5229,8 +5230,8 @@
    "uitkomst": "gedaan"
   },
   "2026-11-16-horizon-4-5-update-check#417115ae": {
-   "bewijs": "collectie-LCP p75 nu 784 ms (ongewijzigd goed), maar 5 losse labruns zijn nog niet via de connector vast te leggen of te bevestigen",
-   "controle": "Is de LCP-winst op de collectiepagina bevestigd met 5 losse Lighthouse-runs",
+   "bewijs": "collectie-LCP p75 (28 dagen) is nu 784 ms, maar 5 losse Lighthouse-labruns zijn niet via de connector vast te leggen, ongewijzigd",
+   "controle": "Is de collectiesnelheid met 5 losse runs bevestigd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -5419,8 +5420,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#3b9dc834": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "GA4 op alle themaversies en UTM-structuur",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is GA4 op alle themaversies gekoppeld met een vaste UTM-structuur",
    "gecontroleerd": "2026-11-27",
    "methode": "ga4",
    "uitkomst": "open"
@@ -5440,10 +5441,10 @@
    "uitkomst": "open"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#9cfdf4f5": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Organic Search uitbouwen",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GA4-cijfers op te vragen deze run",
+   "controle": "Is Organic Search verder uitgebouwd",
    "gecontroleerd": "2026-11-27",
-   "methode": "gsc",
+   "methode": "ga4",
    "uitkomst": "open"
   },
   "2026-11-23-funnel-ga4-verkeersbronnen#fb38efd9": {
@@ -5503,8 +5504,8 @@
    "uitkomst": "handmatig"
   },
   "2026-11-23-meta-campagnerapport#9db5381e": {
-   "bewijs": "niet te controleren: vereist Meta Ads Manager, bovendien een doorlopende taak zonder eenmalige afronding",
-   "controle": "Is 7-dagen-attributie wekelijks naast Shopify gelegd",
+   "bewijs": "niet te controleren: vereist Meta Ads Manager en is een doorlopende taak zonder eenmalige afronding, ongewijzigd",
+   "controle": "Is de 7-dagen-attributie wekelijks naast Shopify gelegd",
    "gecontroleerd": "2026-11-27",
    "methode": "geen",
    "uitkomst": "open"
@@ -5664,8 +5665,8 @@
    "uitkomst": "handmatig"
   },
   "backlog#01dc4258": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "GA4/GSC-rapport generatieve AI-impressies",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is het AI Overviews-impressierapport bekeken",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
@@ -5699,8 +5700,8 @@
    "uitkomst": "open"
   },
   "backlog#246c61d9": {
-   "bewijs": "retourbeleid en verzendbeleid-paginas hebben nog een lege body; shopPolicies REFUND_POLICY heeft nog 25 procent herbevoorradingskosten en ongeopend, SHIPPING_POLICY nog voor 16 00 uur, TERMS_OF_SERVICE nog 4,25 euro verzendkosten, tegenspraak blijft",
-   "controle": "Spreken de nieuwe beleidspaginas de oude policies nog tegen",
+   "bewijs": "de 3 nieuwe /pages/verzendbeleid, retourbeleid en terugbetalingsbeleid-paginas zijn niet langer leeg en tonen nu de juiste waarden (1 werkdag, 30 dagen, geen herbevoorradingskosten, iDEAL/creditcard/Klarna/Bancontact/Apple Pay) - de onvolledigheid is dus opgelost; maar shopPolicies van /policies/refund-policy, shipping-policy en terms-of-service bevatten nog steeds de oude afwijkende waarden (25% herbevoorradingskosten + ongeopend, voor 16:00, euro 4,25) - de tegenspraak tussen nieuw en oud bestaat dus nog",
+   "controle": "Zijn de nieuwe beleidspaginas compleet en kloppen ze met de oude beleidspaginas",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -5720,8 +5721,8 @@
    "uitkomst": "open"
   },
   "backlog#380ede66": {
-   "bewijs": "niet te controleren: nog geen Admin GraphQL-veld voor Catalog-geschiktheid of het agent-kennisbestand",
-   "controle": "Is er een Admin-veld voor Catalog-geschiktheid of het agent-kennisbestand",
+   "bewijs": "niet te controleren: geen Admin GraphQL-veld voor Catalog-geschiktheid of het agent-kennisbestand, ongewijzigd",
+   "controle": "Is Catalog-geschiktheid gecontroleerd",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -5755,8 +5756,8 @@
    "uitkomst": "open"
   },
   "backlog#5d65bfbd": {
-   "bewijs": "descriptionHtml bevat weer tekst maar nog geen enkele a-link naar sportpaginas of vergelijkingspagina; seo.title is nog 61 tekens",
-   "controle": "Heeft collections-gripsokken interne links en een seo-title van 60 tekens of minder",
+   "bewijs": "descriptionHtml van collectie gripsokken bevat tekst maar geen enkele a-link naar sportpaginas; seo.title is 61 tekens, nog 1 te lang, ongewijzigd",
+   "controle": "Heeft de collectiebeschrijving nu interne links en is seo.title 60 tekens of korter",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"
@@ -5798,15 +5799,15 @@
    "uitkomst": "handmatig"
   },
   "backlog#91b14a85": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Positieval NL-homepage uitzoeken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is de positieval van de NL-homepage uitgezocht",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
   },
   "backlog#927dc23c": {
-   "bewijs": "niet te controleren: analytics-hulpscript blijft structureel geblokkeerd door de privacy-plugin",
-   "controle": "Positieval /pages/gripsokken-voor-voetbal NL uitzoeken",
+   "bewijs": "niet te controleren: het analytics-hulpscript blijft structureel geblokkeerd, geen GSC-cijfers op te vragen deze run",
+   "controle": "Is de positieval op de voetbalpagina uitgezocht",
    "gecontroleerd": "2026-11-27",
    "methode": "gsc",
    "uitkomst": "open"
@@ -5848,8 +5849,8 @@
    "uitkomst": "open"
   },
   "backlog#b34063f3": {
-   "bewijs": "Bundler staat nog niet in appInstallations (19 apps), scriptTags-veld blijft niet rechtstreeks op te vragen via deze connector, dus niet te bevestigen dat de scripttags leeg zijn",
-   "controle": "Zijn alle scripttag-apps overgezet en Bundler-restanten weg",
+   "bewijs": "Bundler staat niet in appInstallations (19 apps); settings_data.json van het live thema (205415153991) heeft geen Trustpilot-app-embed-blok tussen de aanwezige blocks (sendwill/seoant/clarity/fd-product-groups/t-lab/section-store/essential-a-b-testing/hi-grip-verdubbel); scriptTags blijft Access denied, ongewijzigd",
+   "controle": "Is Bundler weg en heeft Trustpilot een app-embed-blok",
    "gecontroleerd": "2026-11-27",
    "methode": "shopify",
    "uitkomst": "open"

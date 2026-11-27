@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P1
 samenvatting: "€341,77 leverde 293 linkklikken (CTR 1,53%, CPC €1,17, CPM €17,81) en geen enkele aankoop met een advertentieklik als laatste bezoek; creative-vermoeidheid is er niet (frequentie per ad max 1,69). Het probleem zit in de opzet: drie gelijke adsets delen €45 per dag en halen elk maar 6 tot 13 winkelwagens per week, Meta stuurt 54% van het budget naar 45+ (22% van de winkelwagens), Meta telt 27 winkelwagens waar Shopify er 7 en GA4 er 4 ziet, en bezoekers zijn 12 seconden actief op de pagina."
-gerelateerd: [2026-11-23-meta-campagnerapport, 2026-11-27-meta-ads-verblijftijd-productpagina, 2026-11-23-funnel-ga4-verkeersbronnen, 2026-11-24-landingspaginas-live-ads-message-match, 2026-11-27-landingspaginas-ads-effectmeting-dag-1]
+gerelateerd: [2026-11-27-meta-black-friday-klikken-vs-paginaweergaven, 2026-11-23-meta-campagnerapport, 2026-11-27-meta-ads-verblijftijd-productpagina, 2026-11-23-funnel-ga4-verkeersbronnen, 2026-11-24-landingspaginas-live-ads-message-match, 2026-11-27-landingspaginas-ads-effectmeting-dag-1]
 vervangt: []
 bronbestand: ""
 deadline: "2026-11-30"

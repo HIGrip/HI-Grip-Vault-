@@ -4415,6 +4415,150 @@
   "wat_claude_doet": "niets",
   "wat_jij_doet": "Maatadvies toetsen bij klantenservice-ervaring"
  },
+ "2026-11-27-landingspaginas-ads-effectmeting-dag-1#e13b5071": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "Effectmeting op 3 december herhalen met GA4/Shopify-data",
+  "wat_jij_doet": "Resultaten beoordelen"
+ },
+ "2026-11-27-landingspaginas-ads-effectmeting-dag-1#eb0c346b": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Beschikbare ad-/sessiedata ophalen en vergelijken via de Ads Agent waar mogelijk",
+  "wat_jij_doet": "Per advertentie de link controleren en corrigeren in Meta Ads Manager"
+ },
+ "2026-11-27-meta-ads-verblijftijd-productpagina#f58c5ad5": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen over Product VS Gevoel/Audience Network en dit doorvoeren in Meta Ads Manager"
+ },
+ "2026-11-27-meta-ads-verblijftijd-productpagina#f7af4c30": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Voorstel voor één uniforme UTM-regel opstellen",
+  "wat_jij_doet": "UTM's doorvoeren in Meta Ads Manager"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#0975987e": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "Adset-instellingen (plaatsingen/leeftijd) ophalen en analyseren via de Ads Agent",
+  "wat_jij_doet": "Wijziging doorvoeren in Meta Ads Manager indien nodig"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#23279fa0": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Beschikbare ad-data ophalen en vergelijken via de Ads Agent",
+  "wat_jij_doet": "De websitelinks per advertentie naast elkaar leggen in Meta Ads Manager"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#5364909e": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "UTM-parameters toevoegen aan de advertenties in Meta Ads Manager"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#6092b452": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen over doel/optimalisatie van de campagne"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#d182ff0e": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "Het rapport op 28-11 herhalen met Shopify-sessies per utm_id",
+  "wat_jij_doet": "Events Manager (PageView/toestemming) blijft mensenwerk om te controleren"
+ },
+ "2026-11-27-meta-black-friday-klikken-vs-paginaweergaven#d371d150": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Cookiebanner en pixel testen in de native FB/IG-app op een telefoon"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#15ee07d4": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Code voorbereiden in het testthema zodat de gratis actiepaar-regel geen AddToCart naar Meta stuurt",
+  "wat_jij_doet": "Events Manager-diagnose uitvoeren en de wijziging live zetten"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#28894404": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Plaatsingen uitzetten in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#2d1a7f17": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Na 7 dagen de verblijftijd/winkelwagens per landingspagina analyseren met GA4/Shopify-data",
+  "wat_jij_doet": "De advertentielinks zelf aanpassen in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#44fd8518": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "Hook rate, ThruPlay en kwaliteitsrankings meenemen in het volgende Ads-rapport",
+  "wat_jij_doet": "Rapport beoordelen"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#63df6674": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Concept-briefing voorbereiden voor de nieuwe brede NL-adset (5-6 advertenties)",
+  "wat_jij_doet": "Vanaf 01-12 de adset in Ads Manager aanmaken en live zetten"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#6fd86078": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Attributie-instelling wijzigen in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#7c01c2e2": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen over het uitgavenplafond en dit aanpassen in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#7c9af936": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "MER (Shopify-omzet/advertentie-uitgaven) per week berekenen naast Meta-ROAS",
+  "wat_jij_doet": "Cijfers beoordelen"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#8db7af93": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Besluit nemen en leeftijdstargeting testen in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#d7567f5a": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "Cookiebannergedrag in een echte browser testen (JS-rendering, geen tool beschikbaar)"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#e0aafad7": {
+  "beoordeeld": "2026-11-28",
+  "claude": "nee",
+  "wat_claude_doet": "niets",
+  "wat_jij_doet": "AddToCart-deduplicatie controleren in Meta Events Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#e92ac1cd": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "2 nieuwe adconcepten per week voorbereiden (Design Agent)",
+  "wat_jij_doet": "Concepten goedkeuren, uploaden in Ads Manager en de zwakste advertentie verwijderen"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#ecc39cdc": {
+  "beoordeeld": "2026-11-28",
+  "claude": "deels",
+  "wat_claude_doet": "Voorstel voor een uniforme UTM-naamgeving opstellen",
+  "wat_jij_doet": "UTM's doorvoeren per advertentie in Meta Ads Manager"
+ },
+ "2026-11-27-meta-campagne-diagnose-rugby-voetbal-product#fcc8bcd5": {
+  "beoordeeld": "2026-11-28",
+  "claude": "ja",
+  "wat_claude_doet": "Brief aan Design Agent opstellen over de video (product/prijs eerder in beeld)",
+  "wat_jij_doet": "Brief beoordelen en inplannen bij Design Agent"
+ },
  "backlog#01dc4258": {
   "beoordeeld": "2026-09-26",
   "claude": "nee",

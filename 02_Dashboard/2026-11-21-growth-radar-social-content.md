@@ -9,7 +9,7 @@ categorie: Social
 status: nieuw
 prioriteit: P3
 samenvatting: "Geen van de vandaag gevonden berichten over TikTok/Instagram-platformalgoritmes, Reels, creators en sportcontent-formats haalde de drempel van een primaire bron, nieuwheid of een concrete koppeling aan higrip.nl. TikTok Shop-, Meta Creator Marketing Hub- en sport-contentcijfers die wél opdoken zijn al bekend of niet dateerbaar op november 2026."
-gerelateerd: [2026-11-14-growth-radar-social-content]
+gerelateerd: [2026-11-14-growth-radar-social-content, 2026-11-28-growth-radar-social-content]
 vervangt: []
 bronbestand: ""
 deadline: ""

@@ -80,7 +80,7 @@ Veilig: knieën op 90 graden, opgeven mag altijd, papier mag van de schoot
 ### V3 · kantoorchallenge · algemeen · afgevallen 2026-11-27 (te kinderachtig, zelfde soort als V2)
 `PLANK, MAAR WIE LACHT VERLIEST | REEL | <vrije dag>`. Eén founder in plank, de andere twee proberen hem binnen 60 s te laten lachen (zonder aanraken). Lukt het, dan wisselen. Humor plus doorzetten, nul props. Alleen gebruiken als V2 al gebruikt is (te dicht bij elkaar op dezelfde week).
 
-### V4 · reactietest · alle kernsporten · open, alleen serieus en sportief gebracht (geen spelletje)
+### V4 · reactietest · alle kernsporten · gebruikt 2026-11-28 (als fris tegen na 30 burpees, 8 DEC)
 `HOE SNEL REAGEER JIJ ECHT? | REEL | <vrije dag>`. Liniaaltest: iemand laat een liniaal vallen, jij vangt. Centimeters omrekenen naar milliseconden (tabel op beeld), ranking van het team, slechtste doet 20 push-ups, kijker wordt uitgedaagd om het thuis te doen en zijn score te commenten. [CHECK] de omrekentabel vóór gebruik (valformule, geen merkclaim).
 
 ### V5 · serie · algemeen · open, eerst akkoord vragen
@@ -103,3 +103,6 @@ HYROX Utrecht, Jaarbeurs, 26 t/m 30 nov 2026: de grootste doorzetters van Nederl
 2026-11-26 | kantoorchallenge | algemeen | STOPPEN OP DE STREEP: SOKKEN VS GRIP | 3 DEC | verwijderen | Tigo: naar een streep rennen is niet leuk om te kijken (Buffer-ID 6b0833f0863efaf8540a948c)
 2026-11-27 | greenscreen | voetbal | WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV | inplannen | Tigo: goed, mag erin; uit voorraad V1 (Buffer-ID 6b09300c468a0666659dd544)
 2026-11-27 | kantoorchallenge | voetbal, rugby, padel | WALL SIT VOOR DE CHOCOLADELETTER | REEL | 3 DEC | verwijderen | Tigo: kinderachtig, saai en raar; uit voorraad V2, 4 DEC was bezet (Buffer-ID 6b09300d541dcb037dfcef9e)
+2026-11-28 | controle | voetbal | WAAROM KNIPPEN PROFS GATEN IN HUN SOKKEN? | REEL | 28 NOV | inplannen, datum verschoven | Tigo zette de titel op "DEC/JAN?" en het staat nog in Nog inplannen: niet op 28 nov geplaatst, hook dan "Gezien bij de Klassieker?"
+2026-11-28 | greenscreen | rugby | WAAROM TAPEN RUGBYSPELERS HUN DIJEN? | REEL | 3 DEC | open | nieuw, zelfde soort als het goedgekeurde sokkenidee (gewoonte van profs, met bron Rugby World); afsluiter noemt zaterdag, check of er dan rugby is (Buffer-ID 6b0a98584a32ee9f5a6bdf37)
+2026-11-28 | kantoorchallenge | alle kernsporten | HOE SNEL REAGEER JIJ NA 30 BURPEES? | REEL | 8 DEC | open | uit voorraad V4, serieus gebracht als test fris tegen kapot (Buffer-ID 6b0a985971b16c854c6ff11e)
